@@ -1,9 +1,5 @@
 # Next chapters
 
-3. Django - why you even need a web framework?
-
-What is Django? Why it’s useful? What does it do?
-
 4. Start virtualenv, create django project - see files
 
 5. Models, views, urls - how it works together
