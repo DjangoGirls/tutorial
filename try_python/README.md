@@ -64,7 +64,7 @@ If you want to get a number of letters in your name, there is a method for that 
     >>> len("Ola")
     3
 
-Wonder why sometimes you call methods by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a method and add string in brackets? Well, in some cases, methods belong to objects, like `upper` that can only be performed on Strings. But sometimes, methods don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` method.
+Wonder why sometimes you call methods by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a method and add string in parentheses? Well, in some cases, methods belong to objects, like `upper` that can only be performed on Strings. But sometimes, methods don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` method.
 
 ### Summary
 
@@ -97,15 +97,102 @@ It worked! We used `str` method inside of `len` method. `str` is converting ever
 
 As long as we can convert numbers into text, we can't convert text into numbers.
 
-## Lists
-
-empty list
-list with elements
-methods on lists
-
 ## Variables
 
+There is a concept in programming: variable. This is nothing more than a name for something so you can use the name rather than the something as you code. Programmers use these variable names to make their code more readable and so they won't forget what something is.
+
+Let's say we want to create a new variable called `name`:
+
+    >>> name = "Ola"
+
+You see? It's easy! Simply: name equals Ola.
+
+As you've noticed, your program didn't return anything as it did before. How do we now that the variable actually is there? Simply enter `name` and hit Enter:
+
+    >>> name
+    'Ola'
+
+Yikes! Your first variable :) You can always change what it means:
+
+    >>> name = "Sonja"
+    >>> name
+    'Sonja'
+
+You can use it in methods too:
+
+    >>> len(name)
+    5
+
+Awesome, right? Of course, variables can be anything, numbers too! Try this:
+
+    >>> a = 4
+    >>> b = 6
+    >>> a * b
+    24
+
+Play with this for a while and see what you can do!
+
+## Lists
+
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce another one called __lists__. List is the exact thing you think about now: object that is a list of objects :)
+
+Go ahead and create a list:
+
+    >>> []
+    []
+
+Yes, it's empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repear ourselves all the time, so we will put it in a variable, too:
+
+    >>> lottery = [3, 42, 12, 19, 30, 59]
+
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there is in a list. Do you have an idea which method you should use for that? You've know this already!
+
+    >>> len(lottery)
+    6
+
+Yes! `len` can give you a number of objects in a list. Handy, right? Let's sort this list now.
+
+    >>> lottery.sort()
+
+This doesn't return anything... because we didn't print it! Let's try this:
+
+    >>> print(lottery)
+    [3, 12, 19, 30, 42, 59]
+
+As you can see, numbers are now sorted from lowest to highest in your list. Congrats!
+
+Maybe we want to reverse the order? Let's do that!
+
+    >>> lottery.reverse()
+    >>> print(lottery)
+    [59, 42, 30, 19, 12, 3]
+
+It worked! If you want to add something to the list, you can do this by typing this command:
+
+    >>> lottery.append(199)
+    >>> print(lottery)
+    [59, 42, 30, 19, 12, 3, 199]
+
+If you want to only read the first number, you can do this by using index. The first objects of list is an object number 0, next one is 1, and so on. Try this:
+
+    >>> print(lottery[0])
+    59
+    >>> print(lottery[1])
+    42
+
+As you can see, you can access different objects in your list by using its name and index number inside of brackets.
+
+You can find a list of all available list methods here in Python documentation: https://docs.python.org/2/tutorial/datastructures.html
+
 ### Summary
+
+Awesome! You know a lot about programming now. In the last part you learned about:
+
+- __errors__ - you now know how to read and understand errors that show up if Python doesn't understand your command
+- __variables__ - names for objects that allow to code more easily and make your code more readable
+- __lists__ - list of objects stored in particular order.
+
+Exicted for the next part? :)
 
 ## Dicts
 
@@ -113,11 +200,11 @@ creating dicts
 reading dicts
 editing dicts
 
-## Boolean
+## Comparisions, boolean
 
 true, false
 
-## If, then, comparisions (>, <)
+## If, then
 
 ### Sumarry
 
