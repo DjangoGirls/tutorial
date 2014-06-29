@@ -10,7 +10,7 @@ to grasp at first, but your web browsers (like Chrome, Safari, Firefox or else) 
 follow the instructions and present all this files that your website is made of exactly the way you want them to be presented.
 
 As every file, we need to store files somewhere on a computer disks. For the Internet, we use a special, powerful computers called servers. They don't have
-a screen, mouse or a keyboard, because they main purpose is to store data and serve it. That's why they're all call *servers* -- because they *serve* you data.
+a screen, mouse or a keyboard, because they main purpose is to store data and serve it. That's why they're all called *servers* -- because they *serve* you data.
 
 The Internet looks like this:
 
@@ -20,13 +20,13 @@ Looks like a mess, right? But in fact it is a network of connected machines (ser
 
 ![Figure 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So to reach a machine (for example the one where djangogirls.org is) we need to pass a request through many different machines.
+It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So to reach a machine (for example the one where http://djangogirls.org is) we need to pass a request through many different machines.
 
 It looks like this:
 
 ![Figure 1.3](images/internet_2.png)
 
-Imagine that when you type djangogirls.org you send a letter that says: "Dear DjangoGirls, I want to see djangogirls.org website. Send it to me, please!"
+Imagine that when you type http://djangogirls.org you send a letter that says: "Dear DjangoGirls, I want to see djangogirls.org website. Send it to me, please!"
 
 Your letter goes to the post office. Then it goes to another that is nearer your addressee, then to another and another till it is delivered to the destination. The only difference is that if you send letters (data packets) frequently to the same place, each letter could go through totally different post offices (routers), depending how they are distributed in each office.
 
