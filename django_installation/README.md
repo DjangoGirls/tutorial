@@ -1,41 +1,30 @@
-# Python & Django installation
+# Django installation
 
 *This chapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/) and django-marcador (http://django-marcador.keimlink.de/).*
 
-## Python Installation
+## Virtual environment
 
-Django is written in Python. We need it to do anything in Django. Let's start with installing it!
+Before we will install Django, we will make you install something very handy and useful, that will help you with keeping everything tidy on your computer. It is possible to skip this step, but we think, that you should start with the best setup possible to save a lot of troubles in a future.
+
+That's why we want you to create a Virtual environment (also called `virtualenv`). It will isolate things you do from your computer, so you will have everything important in one place. Neat, right?
+
+All you need to do is find a folder in which you want to create the `virtualenv`, for example your home directory. In Windows it could look like: `C:\Users\Ala\` (where Ala is the name of the user).
 
 ### Windows
 
-You can download Python for Windows from website https://www.python.org/download/releases/3.4.0/. After downloading ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where we installed the Python. It will be needed later.
+To create `virtualenv` you need to open command line `cmd` and type there `C:\Python\python -m venv blog`. It will look like this:
+
+    C:\Users\Ala> C:\Python34\python -m venv blog
+
+where `C:\Python34\python` is folder in which you previously installed Python and `blog` is a name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short :).
 
 ### Linux
 
-It is very probable, that you already have Python installed out of the box. To check if you have it installed (and which version it is), you type in a console:
-
-    $ python --version
-    Python 3.4.0
-
-If you don't have Python instaled or you want different version, you can install it as follows.
-
-#### Ubuntu
-
-You type in the console:
-
-    sudo apt-get install python3.4
-
-
-#### Fedora
-
-Yout type in the console:
-
-    sudo yum install python3.4
-
 ### OS X
 
-You need to go to the website https://www.python.org/download/releases/3.4.0/ and install the appropriate package for you operating system.
 
-----
 
-If you have any doubts or something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help someone with more experience.
+
+
+
+

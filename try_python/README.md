@@ -21,7 +21,7 @@ It is very probable, that you already have Python installed out of the box. To c
     $ python --version
     Python 3.4.0
 
-If you don't have Python instaled or you want different version, you can install it as follows.
+If you don't have Python installed or you want different version, you can install it as follows.
 
 #### Ubuntu
 
