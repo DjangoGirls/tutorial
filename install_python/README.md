@@ -23,7 +23,7 @@ It is very probable, that you already have Python installed out of the box. To c
     $ python --version
     Python 3.4.0
 
-If you don't have Python instaled or you want different version, you can install it as follows.
+If you don't have Python installed or you want different version, you can install it as follows.
 
 #### Ubuntu
 
@@ -40,9 +40,8 @@ Yout type in the console:
 
 ### OS X
 
-You need to go to the website https://www.python.org/download/releases/3.4.0/ and install the appropriate package for you operating system.
+You need to go to the website https://www.python.org/downloads/release/python-340/ and install the appropriate package for you operating system.
 
 ----
 
 If you have any doubts or something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help someone with more experience.
-
