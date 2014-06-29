@@ -456,7 +456,3 @@ That's it. __You totally rock!__ It really wasn't so easy, so you should feel pr
 Grab yourself a cupcake and go to the next chapter :)
 
 ![Cupcake](images/cupcake.png)
-
-
-
-
