@@ -1,4 +1,4 @@
-# Starting Django project
+# Your first Django project!
 
 *This chapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/) and django-marcador (http://django-marcador.keimlink.de/).*
 
