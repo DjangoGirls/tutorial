@@ -1,50 +1,8 @@
-# Let’s start with Python
+# Introduction to Python
 
-Huh, it's exciting, right?! You'll write your first line of code in just minutes!
+Let's write some code!
 
-But first, let me tell you what Python is. Python is a very popular programming language that can be used to write websites, games, science, graphics, and many, many more. Python was conceived in the late 1980s and it's main goal is to be readable by human beings (not only machines!) that's why it looks much simpler than other programming laungages. That also makes it easy to learn, but don't worry, Python is also really powerful!
-
-## Python Installation
-
-*This subchapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/)*
-
-Django is written in Python. We need it to do anything in Django. Let's start with installing it!
-
-### Windows
-
-You can download Python for Windows from website https://www.python.org/download/releases/3.4.0/. After downloading ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where we installed the Python. It will be needed later.
-
-### Linux
-
-It is very probable, that you already have Python installed out of the box. To check if you have it installed (and which version it is), you type in a console:
-
-    $ python --version
-    Python 3.4.0
-
-If you don't have Python instaled or you want different version, you can install it as follows.
-
-#### Ubuntu
-
-You type in the console:
-
-    sudo apt-get install python3.4
-
-
-#### Fedora
-
-Yout type in the console:
-
-    sudo yum install python3.4
-
-### OS X
-
-You need to go to the website https://www.python.org/download/releases/3.4.0/ and install the appropriate package for you operating system.
-
-----
-
-If you have any doubts or something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help someone with more experience.
-
-## Python Prompt
+## Python prompt
 
 To start tinkering with Python, we need to open up a *prompt* on your computer. On Mac OS X you can do this by launching `Terminal` application (It's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
 
@@ -234,26 +192,271 @@ Awesome! You know a lot about programming now. In the last part you learned abou
 
 Exicted for the next part? :)
 
-## Dicts
+## Compare things
 
-creating dicts
-reading dicts
-editing dicts
+The big part of programming includes comparing things together. What's the easiest thing to compare? Numbers, of course. Let's see how it works:
 
-## Comparisions, boolean
+    >>> 5 > 2
+    True
+    >>> 3 < 1
+    False
+    >>> 5 > 2 * 2
+    True
+    >>> 1 == 1
+    True
 
-true, false
+We gave Python some numbers to compare. As you can see, Python can compare not only numbers, but it can also compare method results. Nice, huh?
 
-## If, then
+Do you wonder why we put two `==` next to each other to compare if numbers are equal? We use single `=` for asserting value to variables, so Python would think that we're trying to do that. You always, __always__ need to put two `==` if you want to check if things are equal to each other.
 
-### Sumarry
+Let's give Python two more tasks:
 
-## If, then, else
+    >>> 6 >= 12 / 2
+    True
+    >>> 3 <= 2
+    False
 
-## For loops
+`>` and `<` are easy, but what `>=` and `<=` means? Read this like that:
 
-## While loops
+- x `>` y - x is greater than y
+- x `<` y - x is smaller than y
+- x `<=` y - x is smaller or equal to y
+- x `>=` y - x is greater or equal to y
 
-### Sumarry
+Awesome! Wanna do one more? Let's try this:
+
+    >>> 6 > 2 and 2 < 3
+    True
+    >>> 3 > 2 and 2 < 1
+    False
+    >>> 3 > 2 or 2 < 1
+    True
+
+You can give Python as many numbers to compare as you want, and he will give you an answer! Pretty smart, right?
+
+- __and__ - if you use `and` operator, both of the comparisions have to be True in order for the whole thing to be True
+- __or__ - if you use `or` operator, only one of the comparisions has to be True in order for the whole thing to be True
+
+## Boolean
+
+Accidantely, you just learned about a new type of object in Python. It's __boolean__ -- probably the easiest type there is.
+
+Boolean can be only two things:
+- True
+- False
+
+But for Python to understand it, you need to always write it as True (first letter uppercased, rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__
+
+Booleans can be variables, too! See:
+
+    >>> a = True
+    >>> a
+    True
+
+You can also do it this way:
+
+    >>> a = 2 > 5
+    >>> a
+    False
+
+Practice and have fun with Boolean by trying to run following commands:
+
+- `True and True`
+- `False and True`
+- `True or 1 == 1`
+- `1 != 2`
+
+Congrats! You can know move on to the essence of programming:
+
+## If...elif...else
+
+Lots of things in code should only be exectured when given conditions are met. That's why Python has something called __if statements__.
+
+Try this:
+
+    >>> if 3 > 2:
+    ...
+
+So far nothing has happened, as evidenced by dots `...` instead of incentives `>>>`, which we saw so far. Python expects us to give further instructions which are supposed to be executed if the condition `3 > 2` turns to be true. Let’s try to make Python print “It works!”:
+
+    >>> if 3 > 2:
+    ... print('It works!')
+      File "<stdin>", line 2
+        print('It works')
+            ^
+    IndentationError: expected an indented block
+
+Well...something went wrong. Python needs to know whether the instruction we have written is a continuation of if or it is the next instruction not covered by the condition. To this purpose we need to indent our code:
+
+    >>> if 3 > 2:
+    ...     print('It works!')
+    ...
+    It works!
+
+All you need is one space or `TAB` after `...`. To avoid chaos, most of the Python programmers use four spaces for each level of indentation.
+
+Everything that is indented after `if` statement will be executed if conditions are met. See:
+
+    >>> if 3 > 2:
+    ...     print('It works!')
+    ...     print('Another command')
+    ...
+    It works!
+    Another command
+
+### What if not?
+
+In previous examples, code was executed only when conditions are True. But Python also has `elif` and `else` statements:
+
+    >>> if 5 > 2:
+    ...     print('5 is indeed greater than 2')
+    ... else:
+    ...     print('5 is not greater than 2')
+    ...
+    5 is indeed greater than 2
+
+If 2 would be greater than 5, then the second command will be executed. Easy, right? Let's see how `elif` works:
+
+    >>> name = 'Sonja'
+    >>> if name == 'Ola':
+    ...     print('Hey Ola!')
+    ... elif name == 'Sonja':
+    ...     print('Hey Sonja!')
+    ... else:
+    ...     print('Hey anonymous!')
+    ...
+    Sonja!
+
+See what happened there?
+
+### Summary
+
+In the last three exercises you learned about:
+
+- __comparing things__ - in Python you can compare things together using `>`, `>=`, `==`, `<=`, `<` and `and`, `or` operators
+- __boolean__ - type of object that can only held two values: `True` and `False`
+- __if...elif...else__ - statements that are helpful to execute only code that meet given conditions.
+
+Time for the last part of this chapter!
+
+## Methods (functions)
+
+Remember about methods like `len` that you can execute in Python? Well, good news, you will learn how to write you own functions now!
+
+Function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with easy one:
+
+    >>> def hi():
+    ...
+
+As you can see, there are the dots again! This means that nothing really happen yet.. and yes, we need to do a `TAB` before giving our instructions:
+
+    >>> def hi():
+    ...     print('Hi there!')
+    ...     print('How are you?')
+    ...
+
+Ok, our first function is ready! Let's execute it:
+
+    >>> hi()
+    Hi there!
+    How are you?
+
+Great! You're now a programmer, congratulate yourself :)
+
+That was easy, so let's build our first function with parameters. We will use previous example with names:
+
+    >>> def hi(name):
+    ...
+
+As you can see, we now gave our function a parameter that we called `name`:
+
+    >>> def hi(name):
+    ...     if name == 'Ola':
+    ...         print('Hi Ola!')
+    ...     elif name == 'Sonja':
+    ...         print('Hi Sonja!')
+    ...     else:
+    ...         print('Hi anonymous!')
+    ...
+
+As you can see, we needed to put two tabs before `print` function, because `if` needs to know what should happen when condition is met. Let's see how it works now:
+
+    >>> hi("Ola")
+    Hi Ola!
+    >>> hi("Sonja")
+    Hi Sonja!
+    >>> hi("Anja")
+    Hi anonymous!
+
+Awesome, right? This way you don't have to repeat yourself everytime you want to change the name. And that's exactly why we need functions - you never want to repeat your code!
+
+Let's do something smarter -- there is more names than two, and writing a condition for each would be hard, right?
+
+    >>> def hi(name):
+    ...     print('Hi '+name+'!')
+    ...
+
+Let's call the function now:
+
+    >>> hi("Rachel")
+    Hi Rachel!
+
+Congrats! :)
+
+## Loops
+
+That's the last part already. That was quick, right?:)
+
+As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every girl by their name manually, right? That's where loops come handy.
+
+Remember lists yet? Let's do a list of all the girls:
+
+    >>> girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+
+We want to greet all of them by they name. We have `hi` function to do that, so let's use it in a loop:
+
+    >>> for name in girls:
+    ...
+
+Dots again! Remember what goes after dots? Yes, tab :)
+
+    >>> for name in girls:
+    ...     hi(name)
+    ...     print('Next girl')
+    ...
+    Hi Rachel!
+    Next girl
+    Hi Monica!
+    Next girl
+    Hi Pheobe!
+    Next girl
+    Hi Ola!
+    Next girl
+    Hi You!
+
+As you can see, everything you will put inside `for` statement with `tab` will be repeated for every element of the list `girls`.
+
+You can also do `for` on numbers using `range` method:
+
+    >>> for i in range(1, 6):
+    ...     print(i)
+    ...
+    1
+    2
+    3
+    4
+    5
+
+`range` is a method that creates a list of numbers from one number to another (numbers are given by you as parameters).
+
+## Summary
+
+That's it. __You totally rock!__ It really wasn't so easy, so you should feel proud about yourself. We're definitely proud of you for making it here!
+
+Grab yourself a cupcake and go to the next chapter :)
+
+![Cupcake](images/cupcake.png)
+
+
 
 
