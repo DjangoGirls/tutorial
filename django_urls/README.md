@@ -43,11 +43,9 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 ## Your first Django url!
 
-Time to create our first urls! We want to build two of them:
-1. http://127.0.0.1:8000/ - which will be a homepage of our blog and will display a list posts
-- http://127.0.0.1:8000/post/__ID__/ - which will show only a post with given __ID__ (id is your post identifier, it's a unique identification of your post)
+Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list posts.
 
-We want to keep `mysite/urls.py` file clean, so we will import urls from our `blog` application to main `mysite/urls.py` file.
+We also want to keep `mysite/urls.py` file clean, so we will import urls from our `blog` application to main `mysite/urls.py` file.
 Go ahead, delete comment lines and add a line that will import `blog.urls` into main url (`''`).
 
 Your `mysite/urls.py` file should now look like this:
@@ -87,31 +85,11 @@ If you put this two signs together, it looks like we're looking for empty string
 
 Everything all right? Open http://127.0.0.1:8000/ in our browser to see results.
 
-### http://127.0.0.1:8000/
+![Error](images/error1.png)
 
 There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful:
 
-![Error](images/error1.png)
-
 You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is how we called our view! This means that everything is in place, we just didn't create our view yet. No worries, we will get there.
-
-### http://127.0.0.1:8000/post/1/
-
-Let's do one more URL. We know want to create an URL to point Django to view called `post_detail`, that will show entire blog post. Add second line:
-
-    urlpatterns = patterns('',
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    )
-
-That one looks scary, but we can understand it:
-- it's starts with `^` again -- "the beginning"
-- `post/` only means that after the beginning, URL should contain the word __post__ and __/__. So far so good.
-- `(?P<pk>[0-9]+)` - this part is trickier. It means that Django will take everything that you'll place here and transfer it to view as variable called `pk`. `[0-9]` also tells us that it can only be a number, not a letter.
-- `/` - then we need __/__ again
-- `$` - "the end"!
-
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you look for a view called `post_detail` and transfer the information that `pk` equals `5`.
 
 
 

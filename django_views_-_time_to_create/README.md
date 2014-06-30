@@ -20,7 +20,7 @@ Not too much stuff here yet. The simplest view can look like that.
 
         return render(request, 'blog/post_list.html', {})
 
-As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a template. Easy, right?
+As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a method `render` that will render (put together) our template `blog/post_list.html`. Easy, right?
 
 Save a file, go to http://127.0.0.1:8000/ and see what we got know.
 
