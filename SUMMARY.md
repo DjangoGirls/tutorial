@@ -5,7 +5,7 @@
 * [Introduction to Python](try_python/README.md)
 * [What is Django?](django_-_why_you_need_a_webframework/README.md)
 * [Django installation](django_installation/README.md)
-* [Your first Django project!](starting_django_project/README.md)
+* [Starting Django project](starting_django_project/README.md)
 * [Django models](django_models/README.md)
 * [Django admin](next_chapters/django_admin.md)
 * [Django urls](django_urls/README.md)
