@@ -1,4 +1,6 @@
-# Introduction
+# Django Girls Tutorial
+
+## Introduction
 
 Have you ever felt that world is more and more about technology and you are somehow left behind? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that software world is too complicated for you to even try doing something on your own?
 
