@@ -49,7 +49,7 @@ There is number of different database systems that store data for you. We will u
 
 To create a database for our blog we will type in console/command-line `python manage.py syncdb`. It should look like this:
 
-    (blog) ~/carrots$ python manage.py syncdb
+    (blog) ~/mysite python manage.py syncdb
     Creating tables ...
     Creating table auth_permission
     Creating table auth_group_permissions
@@ -73,12 +73,22 @@ To create a database for our blog we will type in console/command-line `python m
     Installing indexes ...
     Installed 0 object(s) from 0 fixture(s)
 
-It will ask you if you want to create a superuser. Type `yes`, press Enter and type your username (lowercase, no spaces), email address and password when you will be asked to type it.
+It will ask you if you want to create a superuser. Type `yes`, press Enter and type your username (lowercase, no spaces), email address and password when you will be asked to type it. Remember this username and password! We will use it later.
 
 And you are done. Time to start web server and see if our website is working!
 
 You need to be in a folder that contains `manage.py` file (in `mysite` directory). In console/command-line we will start the web server by typing `python manage.py runserver`:
 
     (blog) ~/mysite python manage.py runserver
+
+Now all you need to do is checking if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
+
+    http://localhost:8000/
+
+Congratulations! You created your first website and run it using web server! Isn't it awesome?
+
+![It worked!](images/it_worked.png)
+
+Ready for next steps? It's time to create a content!
 
 
