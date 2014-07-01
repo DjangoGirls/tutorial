@@ -36,30 +36,24 @@ Try this in your template.
 
 It works! But we want them to be display in a way we created earlier, like the static posts we put there before. You can mix HTML and template tags. Our `body` will look like that:
 
-    <h1>Django Girls blog</h1>
-    <h3>Posts:</h3>
-    <ul>
-        {% for post in posts %}
-            <li><a href="">{{ post }}</a> (published: 14.06.2014, 12:12)</li>
-        {% endfor %}
-    </ul>
+    <div>
+        <h1><a href="">Django Girls Blog</a></h1>
+    </div>
+
+    {% for post in posts %}
+        <div>
+            <small>published: {{ post.published_date }}</small>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text }}</p>
+        </div>
+    {% endfor %}
 
 Everything you put between {% for %} and {% endfor %} will be repeated for each object in the list. Refresh your page:
 
 ![Figure 13.3](images/step3.png)
 
-Yay! But something is not quite right yet. Dates don't work! Fix this:
-
-    {% for post in posts %}
-        <li><a href="">{{ post }}</a> (published: {{ post.published_date }})</li>
-    {% endfor %}
-
-Save file and refresh to see if it works:
-
-![Figure 13.3](images/step4.png)
-
 Congrats! Now go ahead and try add a new post in your Django admin, then refresh your page to see if post appeared there.
 
 Works like a charm? We're proud! Treat yourself something sweet, you have earned it :)
 
-![Figure 13.3](images/donut.png)
+![Figure 13.4](images/donut.png)

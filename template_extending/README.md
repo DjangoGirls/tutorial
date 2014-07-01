@@ -19,17 +19,27 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
-
         <body>
-            <h1>Django Girls blog</h1>
-            <h3>Posts:</h3>
-            <ul>
-                {% for post in posts %}
-                    <li><a href="">{{ post }}</a> (published: {{ post.published_date }})</li>
-                {% endfor %}
-            </ul>
+            <div class="page-header">
+                <h1><a href="">Django Girls Blog</a></h1>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <small>published: {{ post.published_date }}</small>
+                            <h1><a href="">{{ post.title }}</a></h1>
+                            <p>{{ post.text }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
         </body>
     </html>
 
@@ -44,13 +54,23 @@ What does it mean? You just created a `block`, which is a template tag that allo
 
 Now save it, and open your `post_list.html` again. Delete everything else than what's inside the body:
 
-    <h1>Django Girls blog</h1>
-    <h3>Posts:</h3>
-    <ul>
-        {% for post in posts %}
-            <li><a href="">{{ post }}</a> (published: {{ post.published_date }})</li>
-        {% endfor %}
-    </ul>
+    <div class="page-header">
+        <h1><a href="">Django Girls Blog</a></h1>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <small>published: {{ post.published_date }}</small>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text }}</p>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
 
 And now add this line on the beginning:
 
@@ -61,13 +81,23 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
     {% extends 'mysite/base.html' %}
 
     {% block content %}
-        <h1>Django Girls blog</h1>
-        <h3>Posts:</h3>
-        <ul>
-            {% for post in posts %}
-                <li><a href="">{{ post }}</a> (published: {{ post.published_date }})</li>
-            {% endfor %}
-        </ul>
+        <div class="page-header">
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <small>published: {{ post.published_date }}</small>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     {% endblock content %}
 
 That's it! Check if your website is still working properly :)

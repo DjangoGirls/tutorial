@@ -71,6 +71,8 @@ You can now have a little fun and try to customize your template! Here is a coup
 - `<br />` goes to another line (you can't put anything inside br)
 - `<a href="http://google.com/">link</a>` creates a clickable link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+- `<div>` defines a section of our website
+- `<small>` creates a small text
 
 We've built something like this:
 
@@ -79,17 +81,31 @@ We've built something like this:
             <title>Django Girls blog</title>
         </head>
         <body>
-            <h1>Django Girls blog</h1>
-            <h3>Posts:</h3>
-            <ul>
-                <li><a href="">Post number 1</a> (published: 14.06.2014, 12:12)</li>
-                <li><a href="">Post number 2</a> (published: 10.06.2014, 22:39)</li>
-            </ul>
+            <div>
+                <h1><a href="">Django Girls Blog</a></h1>
+            </div>
+
+            <div>
+                <small>published: 14.06.2014, 12:14</small>
+                <h2><a href="">My first post</a></h1>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+
+            <div>
+                <small>published: 14.06.2014, 12:14</small>
+                <h2><a href="">My second post</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            </div>
         </body>
     </html>
 
-Which gives us this effect:
+We've created three `div` sections here.
 
-![Figure 11.4](images/step5.png)
+- First `div` contain the title of our blog that is a header and is clickable
+- Another two `div`s contain our blogposts with a `small` published date, `h2` with a post title that is clickable and a `p` (paragraph) of text, which is our blogpost.
+
+It gives us this effect:
+
+![Figure 11.4](images/step6.png)
 
 Yaaay! But wait, we want to display real posts added in our Django admin, right? We will, of course, get there! Read on in the next chapter.
