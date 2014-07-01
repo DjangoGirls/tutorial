@@ -19,9 +19,7 @@ It was written by programmers who worked for Twitter and is now developed by vol
 To install Bootstrap, you need to add this to your `head`:
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 Then just go ahead, open your website and refresh page. Here it is!
@@ -89,5 +87,8 @@ Nice work! Maybe we would also like to give our website a little air and increas
 Add this to your CSS, save a file and see how it works!
 
 ![Figure 14.3](images/margin.png)
+
+We have only one day, so we need to speed things up a little! Go to the next chapter to learn about extending your templates.
+
 
 
