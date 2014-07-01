@@ -120,3 +120,30 @@ It worked! But what happens when you click a link in blog post title?
 Oh no! Error once again. But we already know how to deal with it, right? We need to add a template!
 
 We will create a file in `blog/template/blog` called `post_detail.html`.
+
+It will look like this:
+    {% extends 'mysite/base.html' %}
+    {% load future %}
+
+    {% block content %}
+        <div class="date">
+            {% if post.published_date %}
+                {{ post.published_date }}
+            {% endif %}
+        </div>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text }}</p>
+    {% endblock %}
+
+Once again we are extending `base.html`. In `content` block we want to display post's published_date (if exists), title and text. But we should discuss some important things, right?
+
+`{% if ... %} ... {% endif %}` is a templatetag we can use when we want to check something. In this scenario we want to check if post's `published_date` is not empty.
+
+Ok we can refresh our page and see if `Page not found` is gone now.
+
+![Post detail page](images/post_detail.png)
+
+Yay! It works!
+
+You should be proud of yourself!
+

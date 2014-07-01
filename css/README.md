@@ -44,13 +44,13 @@ Now we need to tell Django how it can find it. Open up a `mysite/mysite/settings
         os.path.join(BASE_DIR, "static"),
     )
 
-This way Django will now where your static files are.
+This way Django will know where your static files are.
 
 That's it! Time to see if it works :)
 
 ## Your first CSS file!
 
-First things first: let's now create a CSS file. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
+First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
 Time to write some CSS! Open up your `blog.css` file in code editor.
 
