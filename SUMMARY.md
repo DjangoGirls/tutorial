@@ -16,8 +16,7 @@
 * [CSS - make it pretty](css/README.md)
 * [Template extending](template_extending/README.md)
 * [Extend your application](extend_your_application/README.md)
-* [Django Forms](django_forms/README.md)
 * [Deploy!](deploy/README.md)
-* [Customize your blog](customize_blog/README.md)
+* [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 
