@@ -4,7 +4,7 @@ Time to display some data! Django gives us some helpful, built-in __template tag
 
 ## What are template tags?
 
-You see, in HTML, you can't really put Python code, because browsers don't understand it. They only know HTML. We know, that HTML is rather static, while Python is much more dynamic.
+You see, in HTML, you can't really put Python code, because browsers don't understand it. They only know HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 __Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Yikes!
 
@@ -12,11 +12,11 @@ __Django template tags__ allow us to transfer Python-like things into HTML, so y
 
 In previous chapter we gave our template a list of posts in a `posts` variable. Now we will display it in HTML.
 
-To print a variable in Django template, we use double curly brackets with variable name inside, like this:
+To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
 
     {{ posts }}
 
-Try this in your `post_list.html` template, save file and refresh page to see results:
+Try this in your `post_list.html` template, save the file and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
@@ -34,7 +34,7 @@ Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want them to be display in a way we created earlier, like the static posts we put there before. You can mix HTML and template tags. Our `body` will look like that:
+It works! But we want them to be displayed in a way we created earlier, like the static posts we put there before. You can mix HTML and template tags. Our `body` will look like that:
 
     <div>
         <h1><a href="">Django Girls Blog</a></h1>
@@ -52,7 +52,7 @@ Everything you put between {% for %} and {% endfor %} will be repeated for each 
 
 ![Figure 13.3](images/step3.png)
 
-Congrats! Now go ahead and try add a new post in your Django admin, then refresh your page to see if post appeared there.
+Congrats! Now go ahead and try adding a new post in your Django admin, then refresh your page to see if the post appeared there.
 
 Works like a charm? We're proud! Treat yourself something sweet, you have earned it :)
 

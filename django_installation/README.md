@@ -4,7 +4,7 @@
 
 ## Virtual environment
 
-Before we will install Django, we will make you install something very handy and useful, that will help you with keeping everything tidy on your computer. It is possible to skip this step, but we think, that you should start with the best setup possible to save a lot of troubles in a future.
+Before we will install Django, we will make you install something very handy and useful, that will help you with keeping everything tidy on your computer. It is possible to skip this step, but we think, that you should start with the best setup possible to save a lot of troubles in the future.
 
 That's why we want you to create a Virtual environment (also called `virtualenv`). It will isolate things you do from your computer, so you will have everything important in one place. Neat, right?
 
@@ -12,7 +12,7 @@ All you need to do is find a folder in which you want to create the `virtualenv`
 
 ### Windows
 
-To create `virtualenv` you need to open command line `cmd` and type there `C:\Python\python -m venv blog`. It will look like this:
+To create `virtualenv` you need to open the command line `cmd` and type there `C:\Python\python -m venv blog`. It will look like this:
 
     C:\Users\Name> C:\Python34\python -m venv blog
 

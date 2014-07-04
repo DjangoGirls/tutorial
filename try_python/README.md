@@ -6,7 +6,7 @@ Let's write some code!
 
 ## Python prompt
 
-To start tinkering with Python, we need to open up a *prompt* on your computer. On Mac OS X you can do this by launching `Terminal` application (It's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
+To start tinkering with Python, we need to open up a *prompt* on your computer. On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
 
 A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python` and hit Enter.
 
@@ -15,7 +15,7 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
     Type "copyright", "credits" or "license" for more information.
     >>>
 
-After running the python command, prompt changed to `>>>`. For us it means that for now we may use commands only in Python language. You don't have to type in `>>>` - Python will do that for you.
+After running the python command, the prompt changed to `>>>`. For us it means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
 
 ## Your first Python command!
 
@@ -31,7 +31,7 @@ Nice! See how the answer popped out? Python knows math! You could try other comm
 
 Have fun with this for a little while and then get back here :)
 
-As you can see, Python is a great calculator. If you're wonder what else you can do...
+As you can see, Python is a great calculator. If you're wondering what else you can do...
 
 ## Strings
 
@@ -40,14 +40,14 @@ Maybe your name? Type your first name in quotes like this:
     >>> "Ola"
     'Ola'
 
-You now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be an apostrophe (`'`) or double quotes (`"`) - they tell Python that it is a string.
+You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be an apostrophe (`'`) or double quotes (`"`) - they tell Python that it is a string.
 
 Strings can be added. Try this:
 
     >>> "Hi there " + "Ola"
     'Hi there Ola'
 
-You can also multiply strings by number:
+You can also multiply strings by a number:
 
     >>> "Ola" * 3
     'OlaOlaOla'
@@ -57,14 +57,14 @@ Nice, huh? To see your name in uppercase, simply type:
     >>> "Ola".upper()
     'OLA'
 
-You just used the `upper` __method__ on your string! Method (`upper`) is a set of instructions that Python has to perform on given object (`"Ola"`) once you call it.
+You just used the `upper` __method__ on your string! A method (`upper`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to get a number of letters in your name, there is a method for that too!
+If you want to get the number of letters in your name, there is a method for that too!
 
     >>> len("Ola")
     3
 
-Wonder why sometimes you call methods by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a method and place string in parentheses? Well, in some cases, methods belong to objects, like `upper` that can only be performed on Strings. But sometimes, methods don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` method.
+Wonder why sometimes you call methods by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a method and place the string in parentheses? Well, in some cases, methods belong to objects, like `upper` that can only be performed on Strings. But sometimes, methods don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` method.
 
 ### Summary
 
@@ -85,7 +85,7 @@ Let's try something. Can we know the length of a number, the same way we learn a
       File "<stdin>", line 1, in <module>
     TypeError: object of type 'int' has no len()
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) doesn't have a length. So what can we do know? Maybe we can write our number as string? Strings have length, right?
+We got our first error! It says that objects of type "int" (integers, whole numbers) don't have a length. So what can we do now? Maybe we can write our number as string? Strings have length, right?
 
     >>> len(str(304023))
     6
@@ -234,7 +234,7 @@ Awesome! Wanna do one more? Try this:
     >>> 3 > 2 or 2 < 1
     True
 
-You can give Python as many numbers to compare as you want, and he will give you an answer! Pretty smart, right?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - __and__ - if you use `and` operator, both of the comparisons have to be True in order for the whole thing to be True
 - __or__ - if you use `or` operator, only one of the comparisons has to be True in order for the whole thing to be True
@@ -288,7 +288,7 @@ So far nothing has happened, as evidenced by dots `...` instead of incentives `>
             ^
     IndentationError: expected an indented block
 
-Well...something went wrong. Python needs to know whether the instruction we have written is a continuation of if or it is the next instruction not covered by the condition. To this purpose we need to indent our code:
+Well...something went wrong. Python needs to know whether the instruction we have written is a continuation of `if` or it is the next instruction not covered by the condition. To this purpose we need to indent our code:
 
     >>> if 3 > 2:
     ...     print('It works!')
@@ -345,12 +345,12 @@ Time for the last part of this chapter!
 
 Remember about methods like `len` that you can execute in Python? Well, good news, you will learn how to write you own functions now!
 
-Function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with easy one:
+A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with an easy one:
 
     >>> def hi():
     ...
 
-As you can see, there are the dots again! This means that nothing really happen yet.. and yes, we need to do a `TAB` before giving our instructions:
+As you can see, there are the dots again! This means that nothing has really happenned yet.. and yes, we need to do a `TAB` before giving our instructions:
 
     >>> def hi():
     ...     print('Hi there!')
@@ -395,7 +395,7 @@ Awesome, right? This way you don't have to repeat yourself every time you want t
 Let's do something smarter -- there is more names than two, and writing a condition for each would be hard, right?
 
     >>> def hi(name):
-    ...     print('Hi '+name+'!')
+    ...     print('Hi ' + name + '!')
     ...
 
 Let's call the function now:

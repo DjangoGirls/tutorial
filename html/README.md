@@ -56,7 +56,7 @@ Save a file and refresh your website.
 
 ![Figure 11.3](images/step4.png)
 
-You can that browser understood that "Ola's blog" should be a title of your website? Nice!
+You can that browser understood that "Ola's blog" should be the title of your website? Nice!
 
 You should have also noticed that you have to nest your tags and always close them with the same tag containing `/`. Otherwise browser won't understand you.
 
@@ -101,7 +101,7 @@ We've built something like this:
 
 We've created three `div` sections here.
 
-- First `div` contain the title of our blog that is a header and is clickable
+- The first `div` contains the title of our blog that is a header and is clickable
 - Another two `div`s contain our blogposts with a `small` published date, `h2` with a post title that is clickable and a `p` (paragraph) of text, which is our blogpost.
 
 It gives us this effect:

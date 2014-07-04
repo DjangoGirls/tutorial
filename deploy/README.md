@@ -2,15 +2,15 @@
 
 Until now your website was only available on your computer, now we will learn how to deploy it! Deploying is a process of publishing your application on the Internet so people can finally go and see your app :)
 
-As you learned, website has to be located on the server. There is a lot of providers, but we will use the one with simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too much visitors, it'll be definitely enough for you too.
+As you learned, a website has to be located on a server. There are a lot of providers, but we will use the one with the simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too many visitors, it'll definitely be enough for you too.
 
 We will be following this tutorial: https://devcenter.heroku.com/articles/getting-started-with-django, but we pasted it here so it's easier for you.
 
 ## Requirements.txt
 
-We need to create a `requirements.txt` file to tell Heroku what Python packages needs to be installed on our server.
+We need to create a `requirements.txt` file to tell Heroku what Python packages need to be installed on our server.
 
-But first, Heroku needs us to install `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
+But first, Heroku needs us to install the `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
 
     $ pip install django-toolbelt
 
@@ -22,7 +22,7 @@ This will create a file called `requirements.txt` with a list of your installed 
 
 ## Procfile
 
-Another thing we need to create is a Profile. Open up your code editor, create a file called `Procfile` in `mysite` directory and add this line:
+Another thing we need to create is a Procfile. Open up your code editor, create a file called `Procfile` in `mysite` directory and add this line:
 
     web: gunicorn mysite.wsgi
 
@@ -30,7 +30,7 @@ Then save it. Done!
 
 ## mysite/settings.py
 
-Another thing we need to modify is our website `settings.py` file. Open `mysite/settings.py` in your editor and add following lines:
+Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines:
 
     import dj_database_url
     DATABASES['default'] =  dj_database_url.config()
@@ -41,11 +41,11 @@ Another thing we need to modify is our website `settings.py` file. Open `mysite/
 
     STATIC_ROOT = 'staticfiles'
 
-Then save a file.
+Then save the file.
 
 ## mysite/urls.py
 
-Open `mysite/urls.py` file and add this two line in the begining of the file:
+Open `mysite/urls.py` file and add these two line in the begining of the file:
 
     from django.conf.urls.static import static
     from django.conf import settings
@@ -63,7 +63,7 @@ The whole thing should look like this:
 
 ## mysite/wsgi.py
 
-Open `mysite/wsgi.py` file and replace this line:
+Open the `mysite/wsgi.py` file and replace this line:
 
     application = get_wsgi_application()
 

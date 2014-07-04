@@ -4,7 +4,7 @@ Huh, it's exciting, right?! You'll write your first line of code in just minutes
 
 But first, let me tell you what Python is. Python is a very popular programming language that can be used to write websites, games, science, graphics, and many, many more.
 
-Python was conceived in the late 1980s and it's main goal is to be readable by human beings (not only machines!) that's why it looks much simpler than other programming laungages. That also makes it easy to learn, but don't worry, Python is also really powerful!
+Python was conceived in the late 1980s and its main goal is to be readable by human beings (not only machines!) that's why it looks much simpler than other programming languages. That also makes it easy to learn, but don't worry, Python is also really powerful!
 
 # Python installation
 
@@ -14,16 +14,16 @@ Django is written in Python. We need it to do anything in Django. Let's start wi
 
 ### Windows
 
-You can download Python for Windows from website https://www.python.org/download/releases/3.4.0/. After downloading ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where we installed the Python. It will be needed later.
+You can download Python for Windows from the website https://www.python.org/download/releases/3.4.0/. After downloading the ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where we installed Python. It will be needed later.
 
 ### Linux
 
-It is very probable, that you already have Python installed out of the box. To check if you have it installed (and which version it is), you type in a console:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), you type in a console:
 
     $ python --version
     Python 3.4.0
 
-If you don't have Python installed or you want different version, you can install it as follows.
+If you don't have Python installed or you want a different version, you can install it as follows.
 
 #### Ubuntu
 
@@ -44,4 +44,4 @@ You need to go to the website https://www.python.org/downloads/release/python-34
 
 ----
 
-If you have any doubts or something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help someone with more experience.
+If you have any doubts or something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help from someone with more experience.
