@@ -4,15 +4,15 @@ We're about to build our first webpage -- a homepage for your blog! But first, l
 
 ## What is URL?
 
-URL is nothing else like web address, you can see an URL every time you any website - it is visible in your browser's address bar:
+A URL is simply like a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar:
 
 ![Url](images/url.png)
 
-Every page on the internet needs its own URL. This way your application knows what it should show to the user who open an URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match to received URL to find correct view.
+Every page on the internet needs its own URL. This way your application knows what it should show to the user who opens a URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
 
 ## How URLs work in Django?
 
-Let's open up a `mysite/urls.py` file and see how it looks:
+Let's open up the `mysite/urls.py` file and see how it looks:
 
     from django.conf.urls import patterns, include, url
 
@@ -31,7 +31,7 @@ As you can see, Django already put something for us here.
 
 Lines that starts with `#` are comments - it means that those lines won't be executed by Python. Pretty handy, right?
 
-Admin url, which you visited in previous chapter is already here:
+The admin url, which you visited in previous chapter is already here:
 
     url(r'^admin/', include(admin.site.urls)),
 
@@ -39,7 +39,7 @@ It means that for every url that starts with `admin/` Django will find a corresp
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expression. Regex has a a lot (a lot!) of rules that forms a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a a lot (a lot!) of rules that forms a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
 
 ## Your first Django url!
 
@@ -83,7 +83,7 @@ As you can see, we're now assigning `view` called `post_list` to `^$` URL. But w
 
 If you put this two signs together, it looks like we're looking for empty string! And that's correct, because in Django url resolvers, `http://127.0.0.1:8000/` is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enter your website on `http://127.0.0.1:8000/` address.
 
-Everything all right? Open http://127.0.0.1:8000/ in our browser to see results.
+Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
 
 ![Error](images/error1.png)
 

@@ -4,9 +4,9 @@
 
 Let's build a simple blog!
 
-The first step to create it is starting a new Django project. Basically that means that we will run some script from Django that will create for us a skeleton of Django project: bunch of directories and files that we will later use.
+The first step to create it is starting a new Django project. Basically that means that we will run some script from Django that will create for us a skeleton of a Django project: bunch of directories and files that we will later use.
 
-Names of some files and directories are very important for Django. You should not rename files that we are about to create. Moving them to different place is also not a good idea. Django needs a certain folder/files structure to be able to find important things.
+The names of some files and directories are very important for Django. You should not rename files that we are about to create. Moving them to different place is also not a good idea. Django needs a certain folder/files structure to be able to find important things.
 
 In console/command-line you should type:
 
@@ -30,7 +30,7 @@ File `settings.py` contains a configuration of your website.
 
 Remember when we talked about a postman checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Let's ignore for now other files - we will not change them, so we will skip expalining what they actually do. The only thing to remember is to not delete them by accident!
+Let's ignore the other files for now - we will not change them, so we will skip explaining what they actually do. The only thing to remember is to not delete them by accident!
 
 ## Changing settings
 
@@ -43,9 +43,9 @@ It would be nice to have a correct time on our website. You should find lines th
 
 ## Creating a database
 
-Most of web application have their own database. Database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
+Most of web application have their own database. A database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
 
-There is number of different database systems that store data for you. We will use one of the simpliest: `sqlite3`, which was installed with Django. But if you plan to do some serious websites in a future we recommends looking at `PostgreSQL`.
+There is a number of different database systems that store data for you. We will use one of the simpliest: `sqlite3`, which was installed with Django. But if you plan to do some serious websites in the future we recommend looking at `PostgreSQL`.
 
 To create a database for our blog we will type in console/command-line `python manage.py syncdb`. It should look like this:
 
@@ -81,14 +81,14 @@ You need to be in a folder that contains `manage.py` file (in `mysite` directory
 
     (blog) ~/mysite python manage.py runserver
 
-Now all you need to do is checking if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
+Now all you need to do is to check if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
 
     http://localhost:8000/
 
-Congratulations! You created your first website and run it using web server! Isn't it awesome?
+Congratulations! You've just created your first website and run it using a web server! Isn't it awesome?
 
 ![It worked!](images/it_worked.png)
 
-Ready for next steps? It's time to create a content!
+Ready for the next steps? It's time to create some content!
 
 

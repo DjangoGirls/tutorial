@@ -63,9 +63,9 @@ into these ones:
         <a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Publish</a>
     {% endif %}
 
-As you noticed, we added `{% else %}` line here. That means, that if the condition from `{% if post.published_date %}` is not fulfilled (so if there is no `published_date`), then we want to do the line `<a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>`. Note that we are passing `pk` variable in the `{% url %}`.
+As you noticed, we added `{% else %}` line here. That means, that if the condition from `{% if post.published_date %}` is not fulfilled (so if there is no `published_date`), then we want to do the line `<a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>`. Note that we are passing a `pk` variable in the `{% url %}`.
 
-Time to create an url (in `blog/urls.py`):
+Time to create a url (in `blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/publish/$', views.post_publish, name='post_publish'),
 
@@ -82,9 +82,9 @@ Remember, when we created a `Post` model we wrote a method `publish`. It looked 
         self.published_date = timezone.now()
         self.save()
 
-Now we are finally can use this!
+Now we can finally use this!
 
-And once again after publishing the post we are immediatelly go to `post_detail` page!
+And once again after publishing the post we are immediately redirected to the `post_detail` page!
 
 ![Publish button](images/publish.png)
 
@@ -109,7 +109,7 @@ Now, time for a view! Open `blog/views.py` and add this code:
         post.delete()
         return HttpResponseRedirect(reverse(post_list))
 
-The only new thing is actual deleting a post. Every Django model can be deleted by `.delete()`. It is as simple as that!
+The only new thing is to actually delete a post. Every Django model can be deleted by `.delete()`. It is as simple as that!
 
 And this time, after deleting a post we want to go to the webpage with a list of posts, so we are using `HttpResponseRedirect`.
 

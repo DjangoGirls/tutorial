@@ -6,9 +6,9 @@ In this chapter we will teach you how to buy a domain and direct it to Heroku!
 
 ## Where to register a domain?
 
-Typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There is a lot of companies that you can buy a domain from, simple [google search](https://www.google.pl/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=register%20domain) give hundreds of options.
+A typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There are a lot of companies that you can buy a domain from: a simple [google search](https://www.google.pl/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=register%20domain) give hundreds of options.
 
-Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless. We asked them if they want to support Django Girls and they gave us a 20% discount code for you! :) As organizers or coaches for it!
+Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless. We asked them if they wanted to support Django Girls and they gave us a 20% discount code for you! :) Ask organizers or coaches for it!
 
 ## How to register domain in IWantMyName?
 
@@ -16,7 +16,7 @@ Go to [iwantmyname](http://iwantmyname.com) and type a domain you want to have i
 
 ![](images/1.png)
 
-You should now see a list of all available domains with the term you put in search box. As you can see, smiley face indicate tht domain is available for buy, and sad face that this is already taken.
+You should now see a list of all available domains with the term you put in the search box. As you can see, a smiley face indicate that the domain is available for you to buy, and a sad face that it is already taken.
 
 ![](images/2.png)
 
@@ -24,7 +24,7 @@ We've decided to buy `djangogirls.in`:
 
 ![](images/3.png)
 
-Go to a checkout. You should now sign up for iwantmyname if you don't have your account yet. After that, provide your discount code, credit card info and buy a domain!
+Go to checkout. You should now sign up for iwantmyname if you don't have your account yet. After that, provide your discount code, credit card info and buy a domain!
 
 After that, click into `Domains` in menu and choose your newly purchased domain. Then locate and click on `manage DNS records` link:
 

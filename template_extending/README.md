@@ -1,12 +1,12 @@
 # Template extending
 
-Another nice thing Django prepared for you is __template extending__. What it means? It means that you can use the same parts of your HTML for different pages of your website.
+Another nice thing Django prepared for you is __template extending__. What does it mean? It means that you can use the same parts of your HTML for different pages of your website.
 
 This way you don't have to write it every time, you don't repeat yourself and if you want to change something, you don't have to do it in every template, just once!
 
 ## Create base template
 
-Base template is the most basic template that you then use to extend it on every page of your website.
+A base template is the most basic template that you then use to extend it on every page of your website.
 
 Create a `mysite/templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
 

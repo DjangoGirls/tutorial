@@ -1,6 +1,6 @@
 # CSS - make it pretty!
 
-Our blog looks still pretty ugly, right? Time to make it nice! We will use CSS for that.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
 ## What is CSS?
 
@@ -32,13 +32,13 @@ Looking nicer already!
 
 Another thing you will learn about today is called __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content don't depend on request context and will be the same for every user.
 
-CSS is a static file, so in order to customize CSS, we need to first configure static files in Django. You'll only do it once for all. Let's start:
+CSS is a static file, so in order to customize CSS, we need to first configure static files in Django. You'll only do it once and for all. Let's start:
 
 ### Configure static files in Django
 
 First, we need to create a folder to store our static files in. Go ahead and create folder called `static` inside your `mysite` folder.
 
-Now we need to tell Django how it can find it. Open up a `mysite/mysite/settings.py` file, scroll to the bottom of it and add following lines:
+Now we need to tell Django how it can find it. Open up the `mysite/mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
@@ -52,9 +52,9 @@ That's it! Time to see if it works :)
 
 First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-Time to write some CSS! Open up your `blog.css` file in code editor.
+Time to write some CSS! Open up the `blog.css` file in your code editor.
 
-We won't be going to deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
+We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters and numbers. You can find color codes for example here: http://www.colorpicker.com/
 
@@ -74,7 +74,7 @@ We're just loading static files here :) Then, in the `<head>` section, add this 
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
-We just told our template where our CSS file is located. Ok, save a file and refresh the site!
+We just told our template where our CSS file is located. Ok, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
@@ -84,11 +84,11 @@ Nice work! Maybe we would also like to give our website a little air and increas
         margin-left: 15px;
     }
 
-Add this to your CSS, save a file and see how it works!
+Add this to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize a font in our header? Paste this into your `<head>` in `post_list.html` file:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `post_list.html` file:
 
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
@@ -181,7 +181,7 @@ Then also replace this:
         </div>
     {% endfor %}
 
-in a `<body>` of your `post_list.html` with this:
+in the `<body>` of your `post_list.html` with this:
 
     <div class="content">
         <div class="row">
