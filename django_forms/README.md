@@ -183,13 +183,13 @@ Basically we have two things here: we save the form with `form.save` and we add 
 Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need more imports:
 
     from django.core.urlresolvers import reverse
-    from django.http import HttpResponseRedirect
+    from django.shortcuts import redirect
 
 Add them at the very beginning of your file. And now we can say: go to `post_detail` page for a post.
 
-    return HttpResponseRedirect(reverse(post_detail, kwargs={'pk': post.pk}))
+    return redirect('blog.views.post_detail', pk=post.pk)
 
-`post_detail` is a name of the view we want to go to. Remember that this view required a `pk` variable? To pass it to the views we use `kwargs={'pk': post.pk}`, where post is newly created blog post!
+`blog.views.post_detail` is a name of the view we want to go to. Remember that this view required a `pk` variable? To pass it to the views we use `pk=post.pk`, where post is newly created blog post!
 
 Ok, we talked a lot, but we probably would like to see how the whole view looks like, right?
 
@@ -200,7 +200,7 @@ Ok, we talked a lot, but we probably would like to see how the whole view looks 
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return HttpResponseRedirect(reverse(post_detail, kwargs={'pk': post.pk}))
+                return redirect('blog.views.post_detail', pk=post.pk)
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -256,7 +256,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return HttpResponseRedirect(reverse(post_detail, kwargs={'pk': post.pk}))
+                return redirect('blog.views.post_detail', pk=post.pk)
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
