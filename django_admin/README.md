@@ -29,7 +29,7 @@ Make sure that at least two or three (but not all) have publish date set. It wil
 
 ![Django admin](images/edit_post.png)
 
-If you want to know more about the Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/dev/ref/contrib/admin/
+If you want to know more about the Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.6/ref/contrib/admin/
 
 It is probably a good moment to grab a coffee (or tea) and eat something sweet. You created your first Django model - you deserve a little treat!
 

@@ -282,7 +282,7 @@ Feel free to change the title or the text and save changes!
 
 Congratulations! Your application is more and more complete!
 
-If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/dev/topics/forms/
+If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.6/topics/forms/
 
 We prepared some extra tasks for you, but they are not very hard. You can do them as a homework:
 - create a page with all __draft__ posts
