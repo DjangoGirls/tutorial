@@ -182,7 +182,7 @@ If you want to only read the first number, you can do this by using index. The f
 
 As you can see, you can access different objects in your list by using its name and index number inside of brackets.
 
-You can find a list of all available list methods here in Python documentation: https://docs.python.org/2/tutorial/datastructures.html
+You can find a list of all available list methods here in Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ### Summary
 

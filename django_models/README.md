@@ -113,7 +113,7 @@ Let's open `blog/models.py`, remove everything from it and write code like this:
             self.published_date = timezone.now()
             self.save()
 
-        def __unicode__(self):
+        def __str__(self):
             return self.title
 
 It is scary, right? But no worries, we will explain what these lines mean!
@@ -137,7 +137,7 @@ We will not explain every bit of code here, since it would take too much time. Y
 
 What about `def publish(self):`? It is exactly our `publish` method we were talking about. `def` means that this is a function/method. `publish` is a name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have method that calculates average price you could call it `calculate_average_price`).
 
-Methods very often `return` something. There is an example of that in the `__unicode__` method. In this scenario, when we call `__unicode__()` we will get a text (**string**) with a Post title.
+Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 If something is still not clear about models, feel free to ask you coach! We know, it is very complicated, especially when you learn what objects and functions (method) are at the same time. But hopefully, it looks sligthly less magic for you now!
 

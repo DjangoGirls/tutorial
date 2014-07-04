@@ -91,7 +91,7 @@ Heroku uses git repository to manage your project files, so we need to use it to
 Create `.gitignore` file with following content:
 
     venv
-    *.pyc
+    __pycache__
     staticfiles
 
 and save it. The dot on the begining of the name file is important! This will tell Heroku to ignore this file and don't use it.
