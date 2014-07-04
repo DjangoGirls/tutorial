@@ -6,7 +6,7 @@ In this chapter we will teach you how to buy a domain and direct it to Heroku!
 
 ## Where to register a domain?
 
-A typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There are a lot of companies that you can buy a domain from: a simple [google search](https://www.google.pl/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=register%20domain) give hundreds of options.
+A typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There are a lot of companies that you can buy a domain from: a simple [google search](https://www.google.com/search?q=register%20domain) give hundreds of options.
 
 Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless. We asked them if they wanted to support Django Girls and they gave us a 20% discount code for you! :) Ask organizers or coaches for it!
 
