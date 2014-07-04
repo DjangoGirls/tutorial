@@ -11,7 +11,7 @@ To start tinkering with Python, we need to open up a *prompt* on your computer. 
 A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python` and hit Enter.
 
     (workshops) ~$ python
-    Python 3.4.0 (...)
+    Python 3.4.1 (...)
     Type "copyright", "credits" or "license" for more information.
     >>>
 
