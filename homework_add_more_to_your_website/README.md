@@ -27,7 +27,6 @@ This line `Post.objects.filter(published_date__isnull=True).order_by('created_da
 Ok, the last bit is of course a template! Create a file `blog/templates/blog/post_draft_list.html` and add the following:
 
     {% extends 'mysite/base.html' %}
-    {% load future %}
 
     {% block content %}
         {% for post in posts %}

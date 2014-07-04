@@ -228,7 +228,6 @@ Open `blog/post_detail.html` and add this line:
 so that the template will look like:
 
     {% extends 'mysite/base.html' %}
-    {% load future %}
 
     {% block content %}
         <div class="date">
