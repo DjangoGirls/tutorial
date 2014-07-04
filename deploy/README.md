@@ -2,7 +2,7 @@
 
 Until now your website was only available on your computer, now we will learn how to deploy it! Deploying is a process of publishing your application on the Internet so people can finally go and see your app :)
 
-As you learned, website has to be located on the server. There is a lot of providers, but we will use a free and very easy one: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too much visitors, it'll be definitely enough for you too.
+As you learned, website has to be located on the server. There is a lot of providers, but we will use the one with simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too much visitors, it'll be definitely enough for you too.
 
 We will be following this tutorial: https://devcenter.heroku.com/articles/getting-started-with-django, but we pasted it here so it's easier for you.
 
@@ -115,9 +115,9 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
 
 ## Deploy to Heroku!
 
-It's as simple as running this command:
+It's as simple as running this command, replacing `djangogirlsblog` with your own application name:
 
-    $ heroku create
+    $ heroku create djangogirlsblog
 
 This automatically added the Heroku remote for our app  to our repository. Now we can do a simple git push to deploy our application:
 
