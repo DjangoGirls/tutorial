@@ -48,10 +48,10 @@ Ok, we have all important things in place. We can finally install Django!
 
 ## Installing Django
 
-Now, when you have your `virtualenv` started, you can install Django using PIP. In console/command-line you type `pip install django==1.6.4`.
+Now, when you have your `virtualenv` started, you can install Django using PIP. In console/command-line you type `pip install django==1.6.5`.
 
-    (blog) ~$ pip install django==1.6.4
-    Downloading/unpacking django==1.6.4
+    (blog) ~$ pip install django==1.6.5
+    Downloading/unpacking django==1.6.5
     Installing collected packages: django
     Successfully installed django
     Cleaning up...

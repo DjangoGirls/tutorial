@@ -105,7 +105,7 @@ Let's open `blog/models.py`, remove everything from it and write code like this:
         title = models.CharField(max_length=200)
         text = models.TextField()
         created_date = models.DateTimeField(
-                default=timezone.now())
+                default=timezone.now)
         published_date = models.DateTimeField(
                 blank=True, null=True)
 
@@ -113,7 +113,7 @@ Let's open `blog/models.py`, remove everything from it and write code like this:
             self.published_date = timezone.now()
             self.save()
 
-        def __unicode__(self):
+        def __str__(self):
             return self.title
 
 It is scary, right? But no worries, we will explain what these lines mean!
@@ -133,11 +133,11 @@ Now we define properties we where talking about: `title`, `text`, `created_date`
 - `models.DateTimeField` - this is a date
 - `models.ForeignKey` - this is a link to another model
 
-We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you need to know more about Model fields (properties) and how to define things other than things described above (https://docs.djangoproject.com/en/dev/ref/models/fields/#field-types).
+We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you need to know more about Model fields (properties) and how to define things other than things described above (https://docs.djangoproject.com/en/1.6/ref/models/fields/#field-types).
 
 What about `def publish(self):`? It is exactly our `publish` method we were talking about. `def` means that this is a function/method. `publish` is a name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have method that calculates average price you could call it `calculate_average_price`).
 
-Methods very often `return` something. There is an example of that in the `__unicode__` method. In this scenario, when we call `__unicode__()` we will get a text (**string**) with a Post title.
+Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 If something is still not clear about models, feel free to ask you coach! We know, it is very complicated, especially when you learn what objects and functions (method) are at the same time. But hopefully, it looks sligthly less magic for you now!
 

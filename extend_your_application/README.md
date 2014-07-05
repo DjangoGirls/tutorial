@@ -123,7 +123,6 @@ We will create a file in `blog/template/blog` called `post_detail.html`.
 
 It will look like this:
     {% extends 'mysite/base.html' %}
-    {% load future %}
 
     {% block content %}
         <div class="date">

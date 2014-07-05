@@ -27,7 +27,6 @@ This line `Post.objects.filter(published_date__isnull=True).order_by('created_da
 Ok, the last bit is of course a template! Create a file `blog/templates/blog/post_draft_list.html` and add the following:
 
     {% extends 'mysite/base.html' %}
-    {% load future %}
 
     {% block content %}
         {% for post in posts %}
@@ -74,7 +73,7 @@ and finally, a view (as always, in `blog/views.py`):
     def post_publish(request, pk):
         post = get_object_or_404(Post, pk=pk)
         post.publish()
-        return HttpResponseRedirect(reverse(post_detail, kwargs={'pk': pk}))
+        return redirect('blog.views.post_detail', pk=pk)
 
 Remember, when we created a `Post` model we wrote a method `publish`. It looked like this:
 
@@ -107,11 +106,11 @@ Now, time for a view! Open `blog/views.py` and add this code:
     def post_remove(request, pk):
         post = get_object_or_404(Post, pk=pk)
         post.delete()
-        return HttpResponseRedirect(reverse(post_list))
+        return redirect('blog.views.post_list')
 
 The only new thing is to actually delete a post. Every Django model can be deleted by `.delete()`. It is as simple as that!
 
-And this time, after deleting a post we want to go to the webpage with a list of posts, so we are using `HttpResponseRedirect`.
+And this time, after deleting a post we want to go to the webpage with a list of posts, so we are using `redirect`.
 
 Let's test it! Go to the page with a post and try to delete it!
 
