@@ -51,6 +51,7 @@ To create a database for our blog we will type in console/command-line `python m
 
     (blog) ~/mysite python manage.py syncdb
     Creating tables ...
+    Creating table django_admin_log
     Creating table auth_permission
     Creating table auth_group_permissions
     Creating table auth_group
@@ -59,8 +60,6 @@ To create a database for our blog we will type in console/command-line `python m
     Creating table auth_user
     Creating table django_content_type
     Creating table django_session
-    Creating table django_site
-    Creating table django_admin_log
 
     You just installed Django's auth system, which means you don't have any superusers defined.
     Would you like to create one now? (yes/no): yes
