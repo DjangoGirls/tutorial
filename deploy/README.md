@@ -28,6 +28,12 @@ Another thing we need to create is a Procfile. Open up your code editor, create 
 
 Then save it. Done!
 
+## Runtime.txt
+
+We need to tell Heroku which Python version we want to use. This is simply done by creating a `runtime.txt` and puttin the following text inside:
+
+    python-3.4.1
+
 ## mysite/settings.py
 
 Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines:
@@ -112,6 +118,7 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
      create mode 100644 mysite/wsgi.py
      create mode 100644 manage.py
      create mode 100644 requirements.txt
+     create mode 100644 runtime.txt
 
 ## Deploy to Heroku!
 
