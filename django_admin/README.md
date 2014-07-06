@@ -13,7 +13,7 @@ As you can see, we import (include) the Post model defined in the previous chapt
 
 Ok, time to look at our Post model. Go to the browser and type an address:
 
-    http://localhost:8000/admin/
+    http://127.0.0.1:8000/admin/
 
 You will see a login page like this:
 
