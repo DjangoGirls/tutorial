@@ -4,7 +4,7 @@ Django (_/ˈdʒæŋɡoʊ/ jang-goh_) is a free and open source web application f
 
 You see, when you're building a website, you always need a similiar set of components: a way to handle user authentication (signing up, signing in, signing out), management panel for your website, forms, uploading files, etc.
 
-Luckily for you other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django is one of them) that givs you ready components you can use.
+Luckily for you other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django is one of them) that gives you ready components you can use.
 
 Frameworks exist to save you from having to re-invent the wheel and help alleviate some of the overhead when you’re building a new site.
 
@@ -16,7 +16,7 @@ Imagine a mailbox (port) which is monitored for incoming letters (requests). It 
 
 ## What happen when someone request a website from your server?
 
-When a request comes to a web server it passes it to Django. Django tries to figure out what actually is requested. It takes a webpage address used and tries to figure out what to do. This part is done by Django's urlresolver (Note that a website address is called URL - Uniform Resource Locator, so the name 'urlresolver' makes sense). It is not very smart here - it takes a list of patterns and tries to match the URL. Django checks patterns from top to the bottom and if something is matched then Django passes the request to the associated function called view.
+When a request comes to a web server it's passed to Django which tries to figure out what actually is requested. It takes a webpage address used and tries to figure out what to do. This part is done by Django's urlresolver (Note that a website address is called URL - Uniform Resource Locator, so the name 'urlresolver' makes sense). It is not very smart here - it takes a list of patterns and tries to match the URL. Django checks patterns from top to the bottom and if something is matched then Django passes the request to the associated function called view.
 
 Imagine a postman with a letter who is walking down the street and checks each house number with the one on the letter. If it matches, they put the letter there.
 
