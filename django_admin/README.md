@@ -2,7 +2,7 @@
 
 To add, edit and delete posts we have just modeled, we will use the Django admin.
 
-Let's open `blog/admin.py` file and replace its content with this:
+Let's open `mysite/blog/admin.py` file and replace its content with this:
 
     from django.contrib import admin
     from .models import Post

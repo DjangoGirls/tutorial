@@ -52,7 +52,7 @@ Then in `base.html`, replace your whole `<body>` with this:
 
 What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`.
 
-Now save it, and open your `post_list.html` again. Delete everything else than what's inside the body:
+Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body:
 
     <div class="page-header">
         <h1><a href="">Django Girls Blog</a></h1>

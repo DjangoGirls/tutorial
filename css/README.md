@@ -52,13 +52,13 @@ That's it! Time to see if it works :)
 
 First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-Time to write some CSS! Open up the `blog.css` file in your code editor.
+Time to write some CSS! Open up the `mysite/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters and numbers. You can find color codes for example here: http://www.colorpicker.com/
 
-In your `blog.css` file you should add following code:
+In your `mysite/static/css/blog.css` file you should add following code:
 
     h1 a {
         color: #FCA205;
@@ -66,7 +66,7 @@ In your `blog.css` file you should add following code:
 
 `a` inside of `h1` is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`. Of course, you can put your own color here!
 
-Then, we need to also tell our HTML template that we added some CSS. Open the `post_list.html` file and add this line at the very beginning of it:
+Then, we need to also tell our HTML template that we added some CSS. Open the `mysite/blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
     {% load staticfiles %}
 
@@ -88,13 +88,13 @@ Add this to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `post_list.html` file:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `mysite/blog/templates/blog/post_list.html` file:
 
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 This line will import a font called Lobster from Google Fonts.
 
-Now add this line in `blog.css`:
+Now add this line in `mysite/static/css/blog.css`:
 
     h1 a {
         color: #FCA205;
@@ -121,7 +121,7 @@ And now add a class `post` to your `div` containing blogposts.
         <p>{{ post.text }}</p>
     </div>
 
-All right. We have only one day, so we need to speed things up a little! We can't explain you every little detail about CSS. For now just copy and paste following code into your `blog.css` file:
+All right. We have only one day, so we need to speed things up a little! We can't explain you every little detail about CSS. For now just copy and paste following code into your `mysite/static/css/blog.css` file:
 
     .page-header {
         background-color: #ff9400;
@@ -181,7 +181,7 @@ Then also replace this:
         </div>
     {% endfor %}
 
-in the `<body>` of your `post_list.html` with this:
+in the `<body>` of your `mysite/blog/templates/blog/post_list.html` with this:
 
     <div class="content">
         <div class="row">

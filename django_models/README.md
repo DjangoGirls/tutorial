@@ -77,7 +77,7 @@ You will notice that a new `blog` folder is created and it contains a number of 
         ├── tests.py
         └── views.py
 
-After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/setting.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add `mysite` application (which was created for us when we started a new project in last chapter). So the final product should look like this:
+After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/mysite/setting.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add `mysite` application (which was created for us when we started a new project in last chapter). So the final product should look like this:
 
     INSTALLED_APPS = (
         'django.contrib.admin',
@@ -94,7 +94,7 @@ After creating an application we also need to tell Django that it should use it.
 
 In a file `models.py` we define all objects called `Models` - this is a place in which we will define our blog post.
 
-Let's open `blog/models.py`, remove everything from it and write code like this:
+Let's open `mysite/blog/models.py`, remove everything from it and write code like this:
 
     from django.db import models
     from django.utils import timezone
