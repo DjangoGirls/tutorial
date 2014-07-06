@@ -48,7 +48,7 @@ It works! But we want them to be displayed in a way we created earlier, like the
         </div>
     {% endfor %}
 
-Everything you put between {% for %} and {% endfor %} will be repeated for each object in the list. Refresh your page:
+Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:
 
 ![Figure 13.3](images/step3.png)
 
