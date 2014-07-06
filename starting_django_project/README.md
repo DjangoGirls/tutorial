@@ -82,7 +82,7 @@ You need to be in a folder that contains `manage.py` file (in `mysite` directory
 
 Now all you need to do is to check if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
 
-    http://localhost:8000/
+    http://127.0.0.1:8000/
 
 Congratulations! You've just created your first website and run it using a web server! Isn't it awesome?
 
