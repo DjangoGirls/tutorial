@@ -45,7 +45,7 @@ Then save the file.
 
 ## mysite/urls.py
 
-Open `mysite/urls.py` file and add these two line in the begining of the file:
+Open `mysite/urls.py` file and add these two line in the beginning of the file:
 
     from django.conf.urls.static import static
     from django.conf import settings
@@ -94,7 +94,7 @@ Create `.gitignore` file with following content:
     __pycache__
     staticfiles
 
-and save it. The dot on the begining of the name file is important! This will tell Heroku to ignore this file and don't use it.
+and save it. The dot on the beginning of the name file is important! This will tell Heroku to ignore this file and don't use it.
 
 Next, we’ll create a new git repository and save our changes. Go to your console/command-line and run this commands:
 

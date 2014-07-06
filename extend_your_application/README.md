@@ -89,7 +89,7 @@ But this code has a problem. If there is no `Post` with given `primary key` we w
 
 ![DoesNotExist error](images/does_not_exist.png)
 
-We don't want it! But, of course, Django comes with somthing that will handle that for us: `get_object_or_404`. In case there is no `Post` with given `pk` it will display much nicer page (called `Page Not Found 404` page).
+We don't want it! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with given `pk` it will display much nicer page (called `Page Not Found 404` page).
 
 ![Page not found](images/404.png)
 
@@ -122,6 +122,7 @@ Oh no! Error once again. But we already know how to deal with it, right? We need
 We will create a file in `blog/template/blog` called `post_detail.html`.
 
 It will look like this:
+
     {% extends 'mysite/base.html' %}
 
     {% block content %}

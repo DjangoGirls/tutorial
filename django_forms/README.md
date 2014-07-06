@@ -271,11 +271,11 @@ or we just opened a form with this post without saving anything yet:
 
 Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in top right corner:
 
-    ![Edit button](images/edit_button.png)
+![Edit button](images/edit_button.png)
 
 When you click it you will see the form with our blog post:
 
-    ![Edit form](images/edit_form.png)
+![Edit form](images/edit_form.png)
 
 Feel free to change the title or the text and save changes!
 
