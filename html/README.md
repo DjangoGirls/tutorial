@@ -33,7 +33,7 @@ How your website look like know? Click to find out: http://127.0.0.1:8000/
 
 It worked! Nice work there :)
 
-- The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is the end. As you can see, the whole content of the website goes between the begining tag `<html>` and closing tag `</html>`
+- The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 - `<p>` is a tag for paragraphs
 
 ## Head & body

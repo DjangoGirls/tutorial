@@ -66,7 +66,7 @@ In your `blog.css` file you should add following code:
 
 `a` inside of `h1` is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`. Of course, you can put your own color here!
 
-Then, we need to also tell our HTML template that we added some CSS. Open `post_list.html` file and add this file on the very begining of it:
+Then, we need to also tell our HTML template that we added some CSS. Open the `post_list.html` file and add this line at the very beginning of it:
 
     {% load staticfiles %}
 
