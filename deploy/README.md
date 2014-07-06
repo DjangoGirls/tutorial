@@ -90,6 +90,8 @@ Then authenticate Heroku account on you computer by running this command:
 
     $ heroku login
 
+In case you don't have SSH key that command would automatically create one. SSH keys are required to push code to the heroku.
+
 ## Git
 
 Heroku uses git repository to manage your project files, so we need to use it to.
