@@ -12,11 +12,11 @@ Let's add a link in `mysite/templates/mysite/base.html` near the button for addi
 
     <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
 
-Next: urls! In `blog/urls.py` we add:
+Next: urls! In `mysite/blog/urls.py` we add:
 
     url(r'^drafts/$', views.post_draft_list, name='post_draft_list'),
 
-Time to create a view in `blog/views.py`:
+Time to create a view in `mysite/blog/views.py`:
 
     def post_draft_list(request):
         posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
@@ -24,7 +24,7 @@ Time to create a view in `blog/views.py`:
 
 This line `Post.objects.filter(published_date__isnull=True).order_by('created_date')` makes sure we take only unpublished posts (`published_date__isnull=True`) and order them by `created_date` (`order_by('created_date')`).
 
-Ok, the last bit is of course a template! Create a file `blog/templates/blog/post_draft_list.html` and add the following:
+Ok, the last bit is of course a template! Create a file `mysite/blog/templates/blog/post_draft_list.html` and add the following:
 
     {% extends 'mysite/base.html' %}
 
@@ -48,7 +48,7 @@ Yay! First task is done!
 
 It would be nice to have a button on post detail page that will immediatelly publish the post, right?
 
-Let's open `blog/template/blog/post_detail.html` and change these lines:
+Let's open `mysite/blog/template/blog/post_detail.html` and change these lines:
 
     {% if post.published_date %}
         {{ post.published_date }}
@@ -64,11 +64,11 @@ into these ones:
 
 As you noticed, we added `{% else %}` line here. That means, that if the condition from `{% if post.published_date %}` is not fulfilled (so if there is no `published_date`), then we want to do the line `<a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>`. Note that we are passing a `pk` variable in the `{% url %}`.
 
-Time to create a url (in `blog/urls.py`):
+Time to create a url (in `mysite/blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/publish/$', views.post_publish, name='post_publish'),
 
-and finally, a view (as always, in `blog/views.py`):
+and finally, a view (as always, in `mysite/blog/views.py`):
 
     def post_publish(request, pk):
         post = get_object_or_404(Post, pk=pk)
@@ -91,17 +91,17 @@ Congratulations! You are almost there. The last step is adding a delete button!
 
 ## Delete post
 
-Let's open `blog/templates/blog/post_detail.html` once again and add this line:
+Let's open `mysite/blog/templates/blog/post_detail.html` once again and add this line:
 
     <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
 
 just under a line with edit button.
 
-Now we need an url (`blog/urls.py`):
+Now we need an url (`mysite/blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/remove/$', views.post_remove, name='post_remove'),
 
-Now, time for a view! Open `blog/views.py` and add this code:
+Now, time for a view! Open `mysite/blog/views.py` and add this code:
 
     def post_remove(request, pk):
         post = get_object_or_404(Post, pk=pk)

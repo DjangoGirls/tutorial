@@ -10,7 +10,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Create a link in the template
 
-We will start with adding a link inside `post_list.html` (in `blog/template/blog` directory) file. So far it should look like:
+We will start with adding a link inside `mysite/blog/templates/blog/post_list.html` file. So far it should look like:
 
     <html>
         <head>
@@ -97,7 +97,7 @@ The good news is that you actually can create your own `Page not found` page and
 
 Ok, time to add a view to our `views.py` file!
 
-We should open `blog/views.py` and add the following code:
+We should open `mysite/blog/views.py` and add the following code:
 
     from django.shortcuts import render, get_object_or_404
 
@@ -119,7 +119,7 @@ It worked! But what happens when you click a link in blog post title?
 
 Oh no! Error once again. But we already know how to deal with it, right? We need to add a template!
 
-We will create a file in `blog/template/blog` called `post_detail.html`.
+We will create a file in `mysite/blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 

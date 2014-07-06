@@ -30,7 +30,7 @@ Then save it. Done!
 
 ## mysite/settings.py
 
-Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines:
+Another thing we need to do is modify our website's `settings.py` file. Open `mysite/mysite/settings.py` in your editor and add the following lines:
 
     import dj_database_url
     DATABASES['default'] =  dj_database_url.config()
@@ -45,7 +45,7 @@ Then save the file.
 
 ## mysite/urls.py
 
-Open `mysite/urls.py` file and add these two line in the beginning of the file:
+Open `mysite/mysite/urls.py` file and add these two line in the beginning of the file:
 
     from django.conf.urls.static import static
     from django.conf import settings
@@ -63,7 +63,7 @@ The whole thing should look like this:
 
 ## mysite/wsgi.py
 
-Open the `mysite/wsgi.py` file and replace this line:
+Open the `mysite/mysite/wsgi.py` file and replace this line:
 
     application = get_wsgi_application()
 
@@ -88,7 +88,7 @@ Then authenticate Heroku account on you computer by running this command:
 
 Heroku uses git repository to manage your project files, so we need to use it to.
 
-Create `.gitignore` file with following content:
+Create `mysite/.gitignore` file with following content:
 
     venv
     __pycache__
