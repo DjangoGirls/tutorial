@@ -38,7 +38,7 @@ Now when we go to:
 
 we will have an error (as suspected, since we don't have a url or a view for `post_detail`). It will look like this:
 
-![NoReverseMatch error](images/no_reverse_match.png)
+![NoReverseMatch error](images/no_reverse_match2.png)
 
 Let's create a url in `urls.py` for our `post_detail` view!
 
@@ -73,7 +73,7 @@ Ok! Let's refresh the page:
 
 Boom! Yet another error! As expected!
 
-![AttributeError](images/attribute_error.png)
+![AttributeError](images/attribute_error2.png)
 
 Do you remember what the next step is? Of course: adding a view!
 
@@ -87,11 +87,11 @@ Now, we want to get one and only one blog post. To do this we can use querysets 
 
 But this code has a problem. If there is no `Post` with given `primary key` we will have super ugly error!
 
-![DoesNotExist error](images/does_not_exist.png)
+![DoesNotExist error](images/does_not_exist2.png)
 
 We don't want it! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with given `pk` it will display much nicer page (called `Page Not Found 404` page).
 
-![Page not found](images/404.png)
+![Page not found](images/404_2.png)
 
 The good news is that you actually can create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
@@ -111,11 +111,11 @@ Yes. It is time to refresh the page:
 
     http://127.0.0.1:8000/
 
-![Post list view](images/post_list.png)
+![Post list view](images/post_list2.png)
 
 It worked! But what happens when you click a link in blog post title?
 
-![TemplateDoesNotExist error](images/template_does_not_exist.png)
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
 Oh no! Error once again. But we already know how to deal with it, right? We need to add a template!
 
@@ -141,7 +141,7 @@ Once again we are extending `base.html`. In `content` block we want to display a
 
 Ok we can refresh our page and see if `Page not found` is gone now.
 
-![Post detail page](images/post_detail.png)
+![Post detail page](images/post_detail2.png)
 
 Yay! It works!
 

@@ -123,7 +123,7 @@ We need to create a file `post_edit.html` in the `mysite/blog/template/blog` dir
 - we need a `Save` button. We do that with HTML: `<button type="submit">Save</button>`
 - and finally just after the `<form ...>` tag we need to add `{% csfr_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
 
-![CSFR Forbidden page](images/csrf.png)
+![CSFR Forbidden page](images/csrf2.png)
 
 Ok, so let's see how the HTML should look like:
 
@@ -139,7 +139,7 @@ Ok, so let's see how the HTML should look like:
 
 Time to refresh! Yay! Your form is displayed!
 
-![New form](images/new_form.png)
+![New form](images/new_form2.png)
 
 But, wait a minute! When you type something in `title` and `text` fields and try to save it - what will happen?
 
@@ -213,7 +213,7 @@ Now, we will show you how cool Django forms are. Blog post needs to have `title`
 
 Try to save the form without `title` and `text`. Guess, what will happen!
 
-![Form validation](images/form_validation.png)
+![Form validation](images/form_validation2.png)
 
 Django is taking care of validating that all fields in our form are correct. Isn't it awesome?
 
@@ -271,11 +271,11 @@ or we just opened a form with this post without saving anything yet:
 
 Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in top right corner:
 
-![Edit button](images/edit_button.png)
+![Edit button](images/edit_button2.png)
 
 When you click it you will see the form with our blog post:
 
-![Edit form](images/edit_form.png)
+![Edit form](images/edit_form2.png)
 
 Feel free to change the title or the text and save changes!
 

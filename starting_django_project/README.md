@@ -86,7 +86,7 @@ Now all you need to do is to check if your website is running :). Open your brow
 
 Congratulations! You've just created your first website and run it using a web server! Isn't it awesome?
 
-![It worked!](images/it_worked.png)
+![It worked!](images/it_worked2.png)
 
 Ready for the next steps? It's time to create some content!
 

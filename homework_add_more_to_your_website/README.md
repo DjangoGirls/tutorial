@@ -85,7 +85,7 @@ Now we can finally use this!
 
 And once again after publishing the post we are immediately redirected to the `post_detail` page!
 
-![Publish button](images/publish.png)
+![Publish button](images/publish2.png)
 
 Congratulations! You are almost there. The last step is adding a delete button!
 
@@ -114,7 +114,7 @@ And this time, after deleting a post we want to go to the webpage with a list of
 
 Let's test it! Go to the page with a post and try to delete it!
 
-![Delete button](images/delete.png)
+![Delete button](images/delete3.png)
 
 Yes, it is the last thing! You completed this tutorial! You are awesome!
 
