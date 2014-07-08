@@ -41,11 +41,33 @@ It would be nice to have a correct time on our website. You should find lines th
     USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
 
-## Creating a database
+## Setup a database
 
-Most of web application have their own database. A database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
+There is a number of different database systems that store data for you. We will use one of the best ones: `PostgreSQL`, which we installed in __Database__ chapter.
 
-There is a number of different database systems that store data for you. We will use one of the simpliest: `sqlite3`, which was installed with Django. But if you plan to do some serious websites in the future we recommend looking at `PostgreSQL`.
+Find this part in your `mysite/settings.py` file:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+And replace it with this:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'djangogirls',
+            'USER': 'yourname',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+
+Make sure to replace `yourname` with a user name you created in __Database__ section. Then save a file.
 
 To create a database for our blog we will type in console/command-line `python manage.py syncdb`. It should look like this:
 

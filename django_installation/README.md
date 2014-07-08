@@ -56,6 +56,14 @@ Now, when you have your `virtualenv` started, you can install Django using PIP. 
     Successfully installed django
     Cleaning up...
 
+### Installing PostgreSQL package for Python
+
+    (blog) ~$ pip install psycopg2
+    Downloading/unpacking psycopg2
+    Installing collected packages: psycopg2
+    Successfully installed psycopg2
+    Cleaning up...
+
 That's it! Now you are finally ready to create a Django application.
 
 
