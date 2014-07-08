@@ -4,15 +4,15 @@
 
 ## Virtual environment
 
-Before we will install Django, we will make you install something very handy and useful, that will help you with keeping everything tidy on your computer. It is possible to skip this step, but we think, that you should start with the best setup possible to save a lot of troubles in the future.
+Before we will install Django, we will make you install something very, very handy and useful, that will help you keeping everything tidy on your computer. It is possible to skip this step, but we think, that you should start with the best setup possible to save a lot of troubles in the future!
 
-That's why we want you to create a Virtual environment (also called `virtualenv`). It will isolate things you do from your computer, so you will have everything important in one place. Neat, right?
+That's why, we want you to create a Virtual environment (also called `virtualenv`). It will isolate things you do from your computer, so you will have everything important in one place. Neat, right?
 
-All you need to do is find a folder in which you want to create the `virtualenv`, for example your home directory. In Windows it could look like: `C:\Users\Name\` (where `Name` is a name of the user).
+All you need to do is finding a folder in which you want to create the `virtualenv`, for example your home directory. In Windows it could look like: `C:\Users\Name\` (where `Name` is a name of the user).
 
 ### Windows
 
-To create `virtualenv` you need to open the command line `cmd` and type there `C:\Python\python -m venv blog`. It will look like this:
+To create a new `virtualenv` you need to open the console (we already told you how to open it, remember?) and type there `C:\Python\python -m venv blog`. It will look like this:
 
     C:\Users\Name> C:\Python34\python -m venv blog
 
@@ -34,7 +34,9 @@ for Windows users, or:
 
     ~$ source blog/bin/activate
 
-You will know that you have `virtualenv` started when you see that the prompt in your command line or console looks like:
+for OS X and Linux.
+
+You will know that you have `virtualenv` started when you see that the prompt in your console looks like:
 
     (blog) C:\Users\Name>
 
@@ -48,7 +50,7 @@ Ok, we have all important things in place. We can finally install Django!
 
 ## Installing Django
 
-Now, when you have your `virtualenv` started, you can install Django using PIP. In console/command-line you type `pip install django==1.6.5`.
+Now, when you have your `virtualenv` started, you can install Django using PIP. In console you type `pip install django==1.6.5`.
 
     (blog) ~$ pip install django==1.6.5
     Downloading/unpacking django==1.6.5
@@ -64,6 +66,6 @@ Now, when you have your `virtualenv` started, you can install Django using PIP. 
     Successfully installed psycopg2
     Cleaning up...
 
-That's it! Now you are finally ready to create a Django application.
+That's it! Now you are finally ready to create a Django application! But to do that, you need some nice program to edit the code...
 
 

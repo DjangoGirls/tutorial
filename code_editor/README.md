@@ -2,7 +2,7 @@
 
 You're about to create your first file of code, so it's time to download a code editor!
 
-There is a lot of different ones and it really depends on your needs. Most Python programmers use a complex, but super powerful IDE, like PyCharm. But for you, as a beginner, we're recommending something simple, yet powerful.
+There is a lot of different ones and it really depends on your needs. Most Python programmers use complex, but super powerful IDEs (Integrated Development Environment), like PyCharm. But for you, as a beginner, we're recommending something simple, yet powerful.
 
 Our suggestions are below, but feel free to ask your coach what is their preference, as it'll be easier to get help from them :)
 
@@ -20,6 +20,6 @@ Sublime Text is a very popular editor with a free evaluation period (you can use
 
 ## Atom
 
-Atom is a rather new code editor created by [Github](http://github.com/). It's free, open-sourced, easy to install and use editor, but available only for Mac OS X for now. It'll be available for other systems in the future.
+Atom is rather new code editor created by [Github](http://github.com/). It's free, open-sourced, easy to install and use editor, but available only for Mac OS X for now. It'll be available for other systems in the future.
 
 [Download it here.](https://atom.io/)
