@@ -1,6 +1,6 @@
 # Extend your application
 
-We've' already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
 Time to practice!
 
@@ -12,39 +12,49 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 We will start with adding a link inside `mysite/blog/templates/blog/post_list.html` file. So far it should look like:
 
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div class="post">
-                <h1>{{ post.title }}</h1>
-                <p>{{ post.text|truncatechars:200 }}</p>
-            </div>
-        </body>
-    </html>
+    {% extends 'mysite/base.html' %}
 
-We want to have a link to a post detail page on the post's title. Let's change `<h1>{{ post.title }}</h1>` with a link:
+    {% block content %}
+        <div class="page-header">
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <small>published: {{ post.published_date }}</small>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endblock content %}
+
+We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:
 
     <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 
-Time to explain mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you suspect `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!
+Time to explain mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you suspect `{% %}` notation means that we are using Django template tags. This time we will use one that will create an URL for us!
 
-`blog.views.post_detail` is a path to a `post_detail` view we want to create. Please note: `blog` is the name of our application (in folder `blog`), `views` is from the name of the `views.py` file and the last bit: `post_detail` is the name of the view.
+`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (in folder `blog`), `views` is from the name of the `views.py` file and the last bit: `post_detail` is the name of the *view*.
 
 Now when we go to:
 
     http://127.0.0.1:8000/
 
-we will have an error (as suspected, since we don't have a url or a view for `post_detail`). It will look like this:
+we will have an error (as suspected, since we don't have an URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-Let's create a url in `urls.py` for our `post_detail` view!
+Let's create an URL in `urls.py` for our `post_detail` *view*!
 
 ### URL: http://127.0.0.1:8000/post/1/
 
-We now want to create a URL to point Django to a view called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `urls.py` file. It should look like this:
+We want to create an URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `mysite/blog/urls.py` file. It should look like this:
 
     from django.conf.urls import patterns, include, url
 
@@ -63,7 +73,7 @@ That one looks scary, but no worries - we will explain it for you:
 - `/` - then we need __/__ again
 - `$` - "the end"!
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you look for a view called `post_detail` and transfer the information that `pk` equals `5`.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you look for a *view* called `post_detail` and transfer the information that `pk` equals `5`.
 
 `pk` is shortcut from `primary key`. This name is very often used in many Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
 
@@ -79,13 +89,13 @@ Do you remember what the next step is? Of course: adding a view!
 
 ## post_detail view
 
-This time our view is given an extra parameter `pk`. Our view needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Ommiting this variable is also incorrect!
+This time our *view* is given an extra parameter `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Ommiting this variable is incorrect and will result in error!
 
 Now, we want to get one and only one blog post. To do this we can use querysets like this:
 
     Post.objects.get(pk=pk)
 
-But this code has a problem. If there is no `Post` with given `primary key` we will have super ugly error!
+But this code has a problem. If there is no `Post` with given `primary key` (`pk`) we will have super ugly error!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
@@ -95,13 +105,13 @@ We don't want it! But, of course, Django comes with something that will handle t
 
 The good news is that you actually can create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-Ok, time to add a view to our `views.py` file!
+Ok, time to add a *view* to our `views.py` file!
 
 We should open `mysite/blog/views.py` and add the following code:
 
     from django.shortcuts import render, get_object_or_404
 
-Near other `from` lines. And at the end of the file we will add our view:
+Near other `from` lines. And at the end of the file we will add our *view*:
 
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
@@ -117,7 +127,7 @@ It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Error once again. But we already know how to deal with it, right? We need to add a template!
+Oh no! Error once again! But we already know how to deal with it, right? We need to add a template!
 
 We will create a file in `mysite/blog/templates/blog` called `post_detail.html`.
 
@@ -137,13 +147,13 @@ It will look like this:
 
 Once again we are extending `base.html`. In `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-`{% if ... %} ... {% endif %}` is a templatetag we can use when we want to check something. In this scenario we want to check if a post's `published_date` is not empty.
+`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something (remember `if ... else ..` from __Introduction to Python__ chapter?). In this scenario we want to check if a post's `published_date` is not empty.
 
-Ok we can refresh our page and see if `Page not found` is gone now.
+Ok, we can refresh our page and see if `Page not found` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
 Yay! It works!
 
-You should be proud of yourself!
+You should be proud of yourself! You already did __a lot__!
 

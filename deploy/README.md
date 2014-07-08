@@ -1,6 +1,6 @@
 # Deploy!
 
-Until now your website was only available on your computer, now we will learn how to deploy it! Deploying is a process of publishing your application on the Internet so people can finally go and see your app :)
+Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is a process of publishing your application on the Internet so people can finally go and see your app :)
 
 As you learned, a website has to be located on a server. There are a lot of providers, but we will use the one with the simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too many visitors, it'll definitely be enough for you too.
 

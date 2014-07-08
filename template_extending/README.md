@@ -1,14 +1,20 @@
 # Template extending
 
-Another nice thing Django prepared for you is __template extending__. What does it mean? It means that you can use the same parts of your HTML for different pages of your website.
+Another nice thing Django has for you is __template extending__. What does it mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-This way you don't have to write it every time, you don't repeat yourself and if you want to change something, you don't have to do it in every template, just once!
+This way you don't have to write it every time in every single html file you have, you don't repeat yourself and if you want to change something, you don't have to do it in every template, just once!
 
 ## Create base template
 
-A base template is the most basic template that you then use to extend it on every page of your website.
+A base template is the most basic template that you  use to extend on every page of your website.
 
 Create a `mysite/templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
+
+    mysite
+        └───mysite
+            └───templates
+                └───mysite
+                    base.html
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
@@ -43,14 +49,14 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
         </body>
     </html>
 
-Then in `base.html`, replace your whole `<body>` with this:
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
     <body>
         {% block content %}
         {% endblock %}
     </body>
 
-What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`.
+What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`. We will show you how to do that in a moment.
 
 Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body:
 
@@ -72,11 +78,11 @@ Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. De
         </div>
     </div>
 
-And now add this line on the beginning:
+And now add this line on the beginning of the file:
 
     {% extends 'mysite/base.html' %}
 
-It means that we're now extending `base.html` template in `post_list.html`. Only one thing left: put everything else between `{% block content %}` and `{% endblock content %}`. Like this:
+It means that we're now extending `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:
 
     {% extends 'mysite/base.html' %}
 
