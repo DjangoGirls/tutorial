@@ -1,17 +1,18 @@
 # Django Forms
 
-The last thing we want to do with our website is to add some nice way to add and edit blog post. Django's '`admin` is cool, but it is rather hard to customize. With `forms` we will have absolute power over forms - we can do almost anything we can imagine with it!
+The last thing we want to do with our website is to add some nice way to add and edit blog post. Django's `admin` is cool, but it is rather hard to customize and make it pretty. With `forms` we will have absolute power over forms - we can do almost anything we can imagine!
 
 The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
-This is exactly what we want to do: we will create a form for our `Post`.
+This is exactly what we want to do: we will create a form for our `Post` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
 We need to create a file with this name in the `mysite/blog` folder.
 
-    └── blog
-        └── forms.py
+    mysite
+        └── blog
+            forms.py
 
 Ok, let's open it and type the following code:
 
@@ -27,15 +28,15 @@ Ok, let's open it and type the following code:
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-`PostForm`, as you probably suspect is a name of our form. We need to tell Django, that this form is a `ModelForm` (so Django will do some magic for us) - `forms.ModelForm` is responsible of that.
+`PostForm`, as you probably suspect is a name of our form. We need to tell Django, that this form is a `ModelForm` (so Django will do some magic for us) - `forms.ModelForm` is responsible for that.
 
 Next, we have `class Meta`, where we say Django which model should be used to create this form (`model = Post`).
 
-Finally we can say which field should end up in our form. In this scenario we want only `title` and `text` to be exposed - `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set in code, right?
+Finally, we can say which field should end up in our form. In this scenario we want only `title` and `text` to be exposed - `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set in code, right?
 
-And that's it! All we need to do now is use the form in a view and display it in a template.
+And that's it! All we need to do now is useing the form in a *view* and display it in a template.
 
-So once again we will create: a link to the page, a url, a view and a template.
+So once again we will create: a link to the page, an URL, a view and a template.
 
 ## Link to page with the form
 
@@ -81,7 +82,7 @@ After adding the line your html file should look like this now:
 
 After saving and refreshing the page `http://127.0.0.1:8000` you will obviously see a familiar `NoReverseMatch` error, right?
 
-## Url
+## URL
 
 We open `mysite/blog/urls.py` and add a line:
 
@@ -106,26 +107,26 @@ Time to open the `mysite/blog/views.py` file and add the following lines:
 
     from .forms import PostForm
 
-under all `from` rows and our view:
+under all `from` rows and our *view*:
 
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-To create a new Post form, we need to call `PostForm()` and pass it to the template. We will go back to this view, but for now, let's create quickly a template for the form.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's create quickly a template for the form.
 
 ## Template
 
 We need to create a file `post_edit.html` in the `mysite/blog/template/blog` directory. To make a form work we need several things:
 
-- we need to display the form. We can do that for example with a `{{ form.as_p }}`.
+- we have to display the form. We can do that for example with a `{{ form.as_p }}`.
 - the line above have to be wrapped with HTML form tag: <`form method="POST">...</form>`
 - we need a `Save` button. We do that with HTML: `<button type="submit">Save</button>`
-- and finally just after the `<form ...>` tag we need to add `{% csfr_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
+- and finally just after the opening `<form ...>` tag we need to add `{% csfr_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Ok, so let's see how the HTML should look like:
+Ok, so let's see how the HTML in `post_edit.html` should look like:
 
     {% extends 'mysite/base.html' %}
 
@@ -145,7 +146,7 @@ But, wait a minute! When you type something in `title` and `text` fields and try
 
 Nothing! We are once again on the same page and our text is gone... and no new post is added. So what went wrong?
 
-The answer is: nothing. We need to do a little bit more work in our view.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Saving the form
 
@@ -155,9 +156,9 @@ Open `mysite/blog/views.py` once again. Currently all we have in `post_new` view
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-When we submit form, we are back in the same view, but this time we have some more data in `request`, more specifically in `request.POST`. Remember that in HTML file our `<form>` definition had variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+When we submit the form, we are back in the same view, but this time we have some more data in `request`, more specifically in `request.POST`. Remember that in HTML file our `<form>` definition had variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-So in our view we have two separate situations to handle. First one: when we access the page for the first time and we want a blank form. Second one: when we go back to the view with all form's data we just typed. So we need to add a condition (we will use `if` for that).
+So in our *view* we have two separate situations to handle. First one: when we access the page for the first time and we want a blank form. Second one: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
 
     if request.method == "POST":
         [...]
@@ -168,30 +169,30 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 
     form = PostForm(request.POST)
 
-Easy! Next thing is to check if the form is correct (all required fields are set and no incorrect values are saved). We do that with `form.is_valid()`.
+Easy! Next thing is to check if the form is correct (all required fields are set and no incorrect values will be saved). We do that with `form.is_valid()`.
 
-We can check if the form is valid and if so, we can save it!
+We check if the form is valid and if so, we can save it!
 
     if form.is_valid():
         post = form.save(commit=False)
         post.author = request.user
         post.save()
 
-Basically we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `post` yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
-`post.save()` preserve changes (with author) and a new blog post is created!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
+`post.save()` preserve changes (adding author) and a new blog post is created!
 
 Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need more imports:
 
     from django.core.urlresolvers import reverse
     from django.shortcuts import redirect
 
-Add them at the very beginning of your file. And now we can say: go to `post_detail` page for a post.
+Add them at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
     return redirect('blog.views.post_detail', pk=post.pk)
 
-`blog.views.post_detail` is a name of the view we want to go to. Remember that this view required a `pk` variable? To pass it to the views we use `pk=post.pk`, where post is newly created blog post!
+`blog.views.post_detail` is a name of the view we want to go to. Remember that this *view* require a `pk` variable? To pass it to the views we use `pk=post.pk`, where `post` is the newly created blog post!
 
-Ok, we talked a lot, but we probably would like to see how the whole view looks like, right?
+Ok, we talked a lot, but we probably would like to see how the whole *view* looks like, right?
 
     def post_new(request):
         if request.method == "POST":
@@ -205,7 +206,9 @@ Ok, we talked a lot, but we probably would like to see how the whole view looks 
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-Let's try if it works. Go to the page `http://127.0.0.1:8000/post/new/`, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page.
+Let's try if it works. Go to the page `http://127.0.0.1:8000/post/new/`, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
+
+That is awesome!
 
 ## Form validation
 
@@ -219,7 +222,7 @@ Django is taking care of validating that all fields in our form are correct. Isn
 
 ## Edit form
 
-Now we know how to add new form. But what if we want to edit an existing one? It is very similar to the thing we just did. Let's create some important things quickly (if you don't understand something - you should ask your coach or look at the previous chapters, since we covered all the steps already).
+Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to the thing we just did. Let's create some important things quickly (if you don't understand something - you should ask your coach or look at the previous chapters, since we covered all the steps already).
 
 Open `mysite/blog/post_detail.html` and add this line:
 
@@ -244,7 +247,7 @@ In `mysite/blog/urls.py` we add this line:
 
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
 
-We will reuse the template `mysite/blog/templates/blog/post_edit.html`, so last the thing missing is a view.
+We will reuse the template `mysite/blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
 Let's open a `mysite/blog/views.py` and add at the very end of the file:
 
@@ -269,7 +272,7 @@ or we just opened a form with this post without saving anything yet:
 
     form = PostForm(instance=post)
 
-Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in top right corner:
+Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in top-right corner:
 
 ![Edit button](images/edit_button2.png)
 
@@ -283,7 +286,7 @@ Congratulations! Your application is more and more complete!
 
 If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.6/topics/forms/
 
-We prepared some extra tasks for you, but they are not very hard. You can do them as a homework:
+We prepared some extra tasks for you, but they are not very hard. You can do them as a homework (they are described in __Homework: add more to your website__ chapter):
 - create a page with all __draft__ posts
 - adding __publish__ button, which will make your post visible on `post_list` page
 - deleting post
