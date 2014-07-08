@@ -46,7 +46,7 @@ Yay! First task is done!
 
 ## Add publish button
 
-It would be nice to have a button on post detail page that will immediatelly publish the post, right?
+It would be nice to have a button on blog post detail page that will immediately publish the post, right?
 
 Let's open `mysite/blog/template/blog/post_detail.html` and change these lines:
 
@@ -54,7 +54,7 @@ Let's open `mysite/blog/template/blog/post_detail.html` and change these lines:
         {{ post.published_date }}
     {% endif %}
 
-into these ones:
+into these:
 
     {% if post.published_date %}
         {{ post.published_date }}
@@ -64,11 +64,11 @@ into these ones:
 
 As you noticed, we added `{% else %}` line here. That means, that if the condition from `{% if post.published_date %}` is not fulfilled (so if there is no `published_date`), then we want to do the line `<a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>`. Note that we are passing a `pk` variable in the `{% url %}`.
 
-Time to create a url (in `mysite/blog/urls.py`):
+Time to create an URL (in `mysite/blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/publish/$', views.post_publish, name='post_publish'),
 
-and finally, a view (as always, in `mysite/blog/views.py`):
+and finally, a *view* (as always, in `mysite/blog/views.py`):
 
     def post_publish(request, pk):
         post = get_object_or_404(Post, pk=pk)
@@ -97,7 +97,7 @@ Let's open `mysite/blog/templates/blog/post_detail.html` once again and add this
 
 just under a line with edit button.
 
-Now we need an url (`mysite/blog/urls.py`):
+Now we need an URL (`mysite/blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/remove/$', views.post_remove, name='post_remove'),
 
@@ -108,7 +108,7 @@ Now, time for a view! Open `mysite/blog/views.py` and add this code:
         post.delete()
         return redirect('blog.views.post_list')
 
-The only new thing is to actually delete a post. Every Django model can be deleted by `.delete()`. It is as simple as that!
+The only new thing is to actually delete a blog post. Every Django model can be deleted by `.delete()`. It is as simple as that!
 
 And this time, after deleting a post we want to go to the webpage with a list of posts, so we are using `redirect`.
 

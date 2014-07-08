@@ -44,7 +44,7 @@ And fill it like this:
 
 Click Add button and Save changes at the bottom.
 
-It can take up to couple of hours for your domain to start working.
+It can take up to couple of hours for your domain to start working, so be patient!
 
 ## Configure domain in Heroku
 
