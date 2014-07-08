@@ -2,7 +2,7 @@
 
 Huh, it's exciting, right?! You'll write your first line of code in just minutes!
 
-But first, let me tell you what Python is. Python is a very popular programming language that can be used to write websites, games, science, graphics, and many, many more.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used to write websites, games, science, graphics, and many, many more.
 
 Python was conceived in the late 1980s and its main goal is to be readable by human beings (not only machines!) that's why it looks much simpler than other programming languages. That also makes it easy to learn, but don't worry, Python is also really powerful!
 
@@ -14,7 +14,7 @@ Django is written in Python. We need it to do anything in Django. Let's start wi
 
 ### Windows
 
-You can download Python for Windows from the website https://www.python.org/download/releases/3.4.1/. After downloading the ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where we installed Python. It will be needed later.
+You can download Python for Windows from the website https://www.python.org/download/releases/3.4.1/. After downloading the ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the folder) where you installed Python. It will be needed later!
 
 ### Linux
 
@@ -34,13 +34,13 @@ You type in the console:
 
 #### Fedora
 
-Yout type in the console:
+You type in the console:
 
     sudo yum install python3.4
 
 ### OS X
 
-You need to go to the website https://www.python.org/downloads/release/python-341/ and install the appropriate package for you operating system.
+You need to go to the website https://www.python.org/downloads/release/python-341/ and install the appropriate package for your operating system.
 
 ----
 
