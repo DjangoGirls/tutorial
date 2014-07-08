@@ -1,8 +1,13 @@
 # Introduction to HTML
 
-You may ask, what's a template? Template contains all your HTMLs! Yes, HTML we mentioned in the first chapter "How the Internet works". HTML is a code that is later processed by your web browser (like Chrome, Firefox or Safari) to display a website for user.
+You may ask, what's a template? Template contains all your HTMLs! Yes, HTML we mentioned in the first chapter __How the Internet works__. HTML is a code that is later processed by your web browser (like Chrome, Firefox or Safari) to display a website for user.
 
 Templates are saved in `mysite/blog/templates/blog` folder. So first create a folder called _templates_ inside your blog folder. Then create another folder called `blog` inside your templates folder.
+
+    mysite
+        └───blog
+            └───templates
+                └───blog
 
 ## What is HTML?
 
@@ -27,7 +32,7 @@ Go ahead and write something in this file, just like that:
         <p>It works!</p>
     </html>
 
-How your website look like know? Click to find out: http://127.0.0.1:8000/
+How your website look like now? Click to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
@@ -38,7 +43,7 @@ It worked! Nice work there :)
 
 ## Head & body
 
-Each website is also divided in two parts: __head__ and __body__. __Head__ contains information about the document that is not displayed on the screen and __body__ contains everything else that is displayed as part of the web page. We use `<head>` to tell the browser about the configuration of the website, and `<body>` to tell it how it should look like.
+Each website is also divided into two parts: __head__ and __body__. __Head__ contains information about the document that is not displayed on the screen and __body__ contains everything else that is displayed as part of the web page. We use `<head>` to tell the browser about the configuration of the website, and `<body>` to tell it how it should look like.
 
 For example, you can setup a website title inside of `<head>`, like this:
 
@@ -56,9 +61,11 @@ Save a file and refresh your website.
 
 ![Figure 11.3](images/step4.png)
 
-You can that browser understood that "Ola's blog" should be the title of your website? Nice!
+You can see, that the browser understood that "Ola's blog" should be the title of your website? Nice!
 
 You should have also noticed that you have to nest your tags and always close them with the same tag containing `/`. Otherwise browser won't understand you.
+
+It's like puting things into boxes. You have one big box (i.e. `<body></body>` and you put smaller boxes inside `<p></p>`).
 
 ## Customize your template
 
