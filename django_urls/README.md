@@ -4,15 +4,15 @@ We're about to build our first webpage -- a homepage for your blog! But first, l
 
 ## What is URL?
 
-A URL is simply like a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar:
+A URL is simply like a web address, you can see an URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is an URL! And http://djangogirls.com is also an URL):
 
 ![Url](images/url.png)
 
-Every page on the internet needs its own URL. This way your application knows what it should show to the user who opens a URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens an URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
 
 ## How URLs work in Django?
 
-Let's open up the `mysite/mysite/urls.py` file and see how it looks:
+Let's open up the `mysite/mysite/urls.py` file and see how it looks like:
 
     from django.conf.urls import patterns, include, url
 
@@ -35,18 +35,18 @@ The admin url, which you visited in previous chapter is already here:
 
     url(r'^admin/', include(admin.site.urls)),
 
-It means that for every url that starts with `admin/` Django will find a corresponding view. In this case we're including a lot of admin urls so it isn't all packed into this small file -- it's more readable and cleaner.
+It means that for every url that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin urls so it isn't all packed into this small file -- it's more readable and cleaner.
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a a lot (a lot!) of rules that forms a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a lot (a lot!) of rules that forms a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
 
 ## Your first Django url!
 
-Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list posts.
+Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
 
 We also want to keep `mysite/mysite/urls.py` file clean, so we will import urls from our `blog` application to main `mysite/mysite/urls.py` file.
-Go ahead, delete comment lines and add a line that will import `blog.urls` into main url (`''`).
+Go ahead, delete comment lines (lines started with `#`) and add a line that will import `blog.urls` into main url (`''`).
 
 Your `mysite/mysite/urls.py` file should now look like this:
 
@@ -64,7 +64,7 @@ Django will now redirect everything that comes into `http://127.0.0.1:8000/` to 
 
 ## blog.urls
 
-Create a new `mysite/blog/urls.py` empty file. All right! Add this two first lines:
+Create a new `mysite/blog/urls.py` empty file. All right! Add these two first lines:
 
     from django.conf.urls import patterns, include, url
     from . import views
@@ -89,7 +89,7 @@ Everything all right? Open http://127.0.0.1:8000/ in your browser to see the res
 
 There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful:
 
-You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is how we called our view! This means that everything is in place, we just didn't create our view yet. No worries, we will get there.
+You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is how we called our view! This means that everything is in place, we just didn't create our *view* yet. No worries, we will get there.
 
 
 

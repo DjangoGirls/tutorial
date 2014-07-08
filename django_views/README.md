@@ -2,9 +2,9 @@
 
 Time to get rid of the bug we created in last chapter :)
 
-A view is where put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template` that you will create in next chapter. Views are just Python methods that are a little bit more complicated than what we did in "Introduction to Python" chapter.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template` that you will create in next chapter. Views are just Python methods that are a little bit more complicated than the thing we did in __Introduction to Python__ chapter.
 
-Views are placed in `mysite/blog/views.py` file.
+Views are placed in `views.py` file. We will add our *views* to `mysite/blog/views.py` file.
 
 ## blog/views.py
 
@@ -14,13 +14,13 @@ Ok, let's open up this file and see what's in there:
 
     # Create your views here.
 
-Not too much stuff here yet. The simplest view can look like that.
+Not too much stuff here yet. The simplest *view* can look like that.
 
     def post_list(request):
 
         return render(request, 'blog/post_list.html', {})
 
-As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a method `render` that will render (put together) our template `blog/post_list.html`. Easy, right?
+As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a method `render` that will render (put together) our template `blog/post_list.html`.
 
 Save the file, go to http://127.0.0.1:8000/ and see what we got now.
 
