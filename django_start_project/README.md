@@ -4,11 +4,11 @@
 
 Let's build a simple blog!
 
-The first step to create it is starting a new Django project. Basically that means that we will run some script from Django that will create for us a skeleton of a Django project: bunch of directories and files that we will later use.
+The first step to create it is starting a new Django project. Basically, that means that we will run some script from Django that will create for us a skeleton of a Django project: bunch of directories and files that we will later use.
 
-The names of some files and directories are very important for Django. You should not rename files that we are about to create. Moving them to different place is also not a good idea. Django needs a certain folder/files structure to be able to find important things.
+The names of some files and directories are very important for Django. You should not rename files that we are about to create. Moving them to a different place is also not a good idea. Django needs a certain folder/files structure to be able to find important things.
 
-In console/command-line you should type:
+In console you should type (remember that you don't type `(blog) ~$`, ok?):
 
     (blog) ~$ django-admin.py startproject mysite
 
@@ -24,13 +24,13 @@ In console/command-line you should type:
             __init__.py
 
 
-`manage.py` is a script that helps with administration of the page. Thanks to it we will be able to start a web server on our computer without installing anything else.
+`manage.py` is a script that helps with administration of the web page. Thanks to it we will be able to start a web server on our computer without installing anything else!
 
 File `settings.py` contains a configuration of your website.
 
 Remember when we talked about a postman checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Let's ignore the other files for now - we will not change them, so we will skip explaining what they actually do. The only thing to remember is to not delete them by accident!
+Let's ignore the other files for now - we will not change them. The only thing to remember is to not delete them by accident!
 
 ## Changing settings
 
@@ -67,9 +67,9 @@ And replace it with this:
         }
     }
 
-Make sure to replace `yourname` with a user name you created in __Database__ section. Then save a file.
+Make sure to replace `yourname` with a username you created in __Database__ section. Then save a file.
 
-To create a database for our blog we will type in console/command-line `python manage.py syncdb`. It should look like this:
+To create a database for our blog we will type in console `python manage.py syncdb`. It should look like this:
 
     (blog) ~/mysite python manage.py syncdb
     Creating tables ...
@@ -96,13 +96,13 @@ To create a database for our blog we will type in console/command-line `python m
 
 It will ask you if you want to create a superuser. Type `yes`, press Enter and type your username (lowercase, no spaces), email address and password when you will be asked to type it. Remember this username and password! We will use it later.
 
-And you are done. Time to start web server and see if our website is working!
+And you are done! Time to start web server and see if our website is working!
 
-You need to be in a folder that contains `manage.py` file (in `mysite` directory). In console/command-line we will start the web server by typing `python manage.py runserver`:
+You need to be in a folder that contains `manage.py` file (in `mysite` directory). In console we will start the web server by typing `python manage.py runserver`:
 
     (blog) ~/mysite python manage.py runserver
 
-Now all you need to do is to check if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
+Now all you need to do is checking if your website is running :). Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and type the address:
 
     http://127.0.0.1:8000/
 
