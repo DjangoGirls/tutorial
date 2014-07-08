@@ -1,8 +1,8 @@
 # Database
 
-Most of web application have their own database. A database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
+Most of web applications have their own database. A database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
 
-We will be using a PostgreSQL database to store our data. It would be easier to just use a default Django database called sqlite, but it's not good for a production use. If you want to have your application available in the Internet, not only your computer, you will need PostgreSQL.
+We will be using a PostgreSQL database to store our data. It would be easier to use a default Django database called *sqlite*, but it's not good for a production use (by *production* we mean: real, running websites). If you want to have your application available in the Internet, not only on your computer, you will need PostgreSQL.
 
 # PostgreSQL installation
 
@@ -24,7 +24,7 @@ Of course, installation depends on Linux distribution. We've added most popular 
 
 ### Ubuntu
 
-Go to your console and run following command:
+Go to your console and run a following command:
 
     sudo apt-get install postgresql postgresql-contrib
 
@@ -34,9 +34,10 @@ Go to your console and run following command:
 
 # Create database
 
-Now we need to create our database user and our first database!
+Now we need to create our database user and our first database. You can add many databases in PostgreSQL, so if you have more than one website, you should have a separate database for each one!
 
-First, let's make our console into postgres mode:
+First, let's make our console into postgres mode by typing `psql`. Remember the part about console?
+>On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
 
     $ psql
     psql (9.3.4)
@@ -48,11 +49,15 @@ Our `$` now changed into `#`, it means that we're now giving commands to Postgre
     # CREATE USER name;
     CREATE ROLE
 
-Of course, replace `name` with your own name. Now it's time for a database for your Django project:
+Of course, replace `name` with your own name. Remember that you should not use diacritic letters and whitespaces, i.e. `bożena maria` is invalid! You need to transform it into `bozena_maria`.
+
+Now it's time to create a database for your Django project:
 
     # CREATE DATABASE djangogirls OWNER name;
     CREATE DATABASE
 
-Awesome! All ready.
+Remember to replace `name` with the name you've chosen (i.e. `bozena_maria`).
+
+Awesome! All ready!
 
 

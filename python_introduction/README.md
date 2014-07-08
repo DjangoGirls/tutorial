@@ -29,7 +29,7 @@ Nice! See how the answer popped out? Python knows math! You could try other comm
 - `5 - 1`
 - `40 / 2`
 
-Have fun with this for a little while and then get back here :)
+Have fun with this for a little while and then get back here :).
 
 As you can see, Python is a great calculator. If you're wondering what else you can do...
 
@@ -74,18 +74,18 @@ Ok, enough of strings. So far you've learned about:
 - __numbers and strings__ - in Python it's math and text objects
 - __methods__ - are actions in Python. You've used both English-language methods (upper, len) and symbolic ones (+, *).
 
-That's the basic of every programming language you learn. Ready for something harder? I bet you are!
+That's the basic of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Errors
 
-Let's try something. Can we know the length of a number, the same way we learn about the length of our name? Try typing `len(304023)` and hit Enter:
+Let's try something. Can we get a length of a number, the same way we learn about the length of our name? Try typing `len(304023)` and hit Enter:
 
     >>> len(304023)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: object of type 'int' has no len()
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) don't have a length. So what can we do now? Maybe we can write our number as string? Strings have length, right?
+We got our first error! It says that objects of type "int" (integers, whole numbers) don't have a length. So what can we do now? Maybe we can write our number as a string? Strings have length, right?
 
     >>> len(str(304023))
     6
@@ -112,7 +112,7 @@ As you've noticed, your program didn't return anything like it did before. How d
     >>> name
     'Ola'
 
-Yikes! Your first variable :) You can always change what it is:
+Yikes! Your first variable :)! You can always change what it is:
 
     >>> name = "Sonja"
     >>> name
@@ -134,7 +134,7 @@ Play with this for a while and see what you can do!
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce another one called __lists__. List is the exact thing you think about now: object that is a list of objects :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. List is the exact thing you think about now: object that is a list of objects :)
 
 Go ahead and create a list:
 
@@ -145,7 +145,7 @@ Yes, it's empty. Not very useful, right? Let's create a list of lottery numbers.
 
     >>> lottery = [3, 42, 12, 19, 30, 59]
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there is in a list. Do you have an idea which method you should use for that? You know this already!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have an idea which method you should use for that? You know this already!
 
     >>> len(lottery)
     6
@@ -167,13 +167,13 @@ Maybe we want to reverse the order? Let's do that!
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3]
 
-It worked! If you want to add something to the list, you can do this by typing this command:
+Easy, right? If you want to add something to the list, you can do this by typing this command:
 
     >>> lottery.append(199)
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
 
-If you want to only read the first number, you can do this by using index. The first objects of list is an object number 0, next one is 1, and so on. Try this:
+If you want to read only the first number, you can do this by using index. The first object of the list is an object number 0, next one is 1, and so on. Try this:
 
     >>> print(lottery[0])
     59
@@ -268,7 +268,7 @@ Practice and have fun with Boolean by trying to run following commands:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! You can know move on to the essence of programming:
+Congrats! You can now move on to the essence of programming:
 
 ## If...elif...else
 
@@ -288,7 +288,7 @@ So far nothing has happened, as evidenced by dots `...` instead of incentives `>
             ^
     IndentationError: expected an indented block
 
-Well...something went wrong. Python needs to know whether the instruction we have written is a continuation of `if` or it is the next instruction not covered by the condition. To this purpose we need to indent our code:
+Well...something went wrong! Python needs to know whether the instruction we have written is a continuation of `if` or it is the next instruction not covered by the condition. We need to indent our code to make it work:
 
     >>> if 3 > 2:
     ...     print('It works!')
@@ -343,14 +343,14 @@ Time for the last part of this chapter!
 
 ## Methods (functions)
 
-Remember about methods like `len` that you can execute in Python? Well, good news, you will learn how to write you own functions now!
+Remember about methods like `len` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
 A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with an easy one:
 
     >>> def hi():
     ...
 
-As you can see, there are the dots again! This means that nothing has really happenned yet.. and yes, we need to do a `TAB` before giving our instructions:
+As you can see, there are the dots again! This means that nothing has really happenned yet... and yes, we need to do a `TAB` before giving our instructions:
 
     >>> def hi():
     ...     print('Hi there!')
@@ -363,9 +363,9 @@ Ok, our first function is ready! Let's execute it:
     Hi there!
     How are you?
 
-Great! You're now a programmer, congratulate yourself :)
+Great! You're now a programmer, congratulate yourself :)!
 
-That was easy, so let's build our first function with parameters. We will use previous example with names:
+That was easy! Let's build our first function with parameters. We will use the previous example with names:
 
     >>> def hi(name):
     ...
@@ -403,19 +403,19 @@ Let's call the function now:
     >>> hi("Rachel")
     Hi Rachel!
 
-Congrats! :)
+Congratulations! You just learned how to write  functions :)!
 
 ## Loops
 
 That's the last part already. That was quick, right?:)
 
-As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every girl by their name manually, right? That's where loops come handy.
+As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every girl by their name manually, right? That's where loops come in handy.
 
 Remember lists yet? Let's do a list of all the girls:
 
     >>> girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 
-We want to greet all of them by they name. We have `hi` function to do that, so let's use it in a loop:
+We want to greet all of them by their name. We have `hi` function to do that, so let's use it in a loop:
 
     >>> for name in girls:
     ...
@@ -453,7 +453,7 @@ You can also do `for` on numbers using `range` method:
 
 ## Summary
 
-That's it. __You totally rock!__ It really wasn't so easy, so you should feel proud about yourself. We're definitely proud of you for making it here!
+That's it. __You totally rock!__ It really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it here!
 
 Grab yourself a cupcake and go to the next chapter :)
 
