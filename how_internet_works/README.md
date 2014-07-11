@@ -1,4 +1,4 @@
-# How the Internet works?
+# How the Internet works
 
 *This chapter is inspired by a talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).*
 
@@ -15,11 +15,11 @@ a screen, mouse or a keyboard, because their main purpose is to store data and s
 
 Ok, but you want to know how the Internet looks like, right?
 
-We made a picture for you! It looks like this:
+We drew you a picture! It looks like this:
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? But in fact it is a network of connected machines (*servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com/) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact it is a network of connected machines (*servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com/) to see how complicated the net is. Here is a screenshot from the website:
 
 ![Figure 1.2](images/internet_3.png)
 
@@ -41,7 +41,7 @@ Instead of address with street name, city, zipcode and country, we use IP addres
 
 When you send a letter it needs to have certain features to be delivered correctly: address, postmark etc.. You also use language that the receiver understands, right? The same is with *data packets* you send in order to see a website: you use a protocol called HTTP (HyperText TransferProtocol).
 
-So basically, when you have a website you need to have a *server* (machine) on which it is. The *server* is waiting for any incoming *requests* (letters that ask you to send your website) and it sends back your website (in another letter).
+So basically, when you have a website you need to have a *server* (machine) where it lives. The *server* is waiting for any incoming *requests* (letters that ask you to send your website) and it sends back your website (in another letter).
 
 Since it is a Django tutorial, you will ask what Django does? When you send a response you don't always want to send the same thing to everybody. It is so much better if your letters are personalized especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters :).
 

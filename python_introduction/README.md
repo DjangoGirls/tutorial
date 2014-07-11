@@ -19,7 +19,7 @@ After running the python command, the prompt changed to `>>>`. For us it means t
 
 ## Your first Python command!
 
-Let's start with something really simple. For example, try typing some math, like `2+3` and hit Enter.
+Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
 
     >>> 2 + 3
     5
@@ -57,14 +57,14 @@ Nice, huh? To see your name in uppercase, simply type:
     >>> "Ola".upper()
     'OLA'
 
-You just used the `upper` __method__ on your string! A method (`upper`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __function__ on your string! A function (`upper`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to get the number of letters in your name, there is a method for that too!
+If you want to get the number of letters in your name, there is a function for that too!
 
     >>> len("Ola")
     3
 
-Wonder why sometimes you call methods by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a method and place the string in parentheses? Well, in some cases, methods belong to objects, like `upper` that can only be performed on Strings. But sometimes, methods don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` method.
+Wonder why sometimes you call functions by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper` that can only be performed on Strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` function.
 
 ### Summary
 
@@ -72,9 +72,9 @@ Ok, enough of strings. So far you've learned about:
 
 - __the prompt__ - typing commands (code) into prompt give you Python answers
 - __numbers and strings__ - in Python it's math and text objects
-- __methods__ - are actions in Python. You've used both English-language methods (upper, len) and symbolic ones (+, *).
+- __functions__ - are actions in Python. You've used both English-language functions (upper, len) and symbolic ones (+, *).
 
-That's the basic of every programming language you learn. Ready for something harder? We bet you are!
+That's the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Errors
 
@@ -90,16 +90,16 @@ We got our first error! It says that objects of type "int" (integers, whole numb
     >>> len(str(304023))
     6
 
-It worked! We used `str` method inside of `len` method. `str` is converting everything to strings.
+It worked! We used `str` function inside of `len` function. `str` is converting everything to strings.
 
-- `str` method convert things into __strings__
-- `int` method convert things into __integers__
+- The `str` function converts things into __strings__
+- The `int` function converts things into __integers__
 
-> Important: we can convert numbers into text, but we can't convert text into numbers.
+> Important: we can convert numbers into text, but we can't necessarily convert text into numbers - what would `int('hello')` be anyway?
 
 ## Variables
 
-There is a concept in programming called variables. A variable is nothing more than a name for something so you can use it easier. Programmers use these variables to store data, make their code more readable and to not forget what something is.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and to not help them remember what things are.
 
 Let's say we want to create a new variable called `name`:
 
@@ -112,13 +112,13 @@ As you've noticed, your program didn't return anything like it did before. How d
     >>> name
     'Ola'
 
-Yikes! Your first variable :)! You can always change what it is:
+Yippee! Your first variable :)! You can always change what it is:
 
     >>> name = "Sonja"
     >>> name
     'Sonja'
 
-You can use it in methods too:
+You can use it in functions too:
 
     >>> len(name)
     5
@@ -134,7 +134,7 @@ Play with this for a while and see what you can do!
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. List is the exact thing you think about now: object that is a list of objects :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: they are objects which are lists of other objects :)
 
 Go ahead and create a list:
 
@@ -145,7 +145,7 @@ Yes, it's empty. Not very useful, right? Let's create a list of lottery numbers.
 
     >>> lottery = [3, 42, 12, 19, 30, 59]
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have an idea which method you should use for that? You know this already!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have an idea which function you should use for that? You know this already!
 
     >>> len(lottery)
     6
@@ -154,7 +154,7 @@ Yes! `len` can give you a number of objects in a list. Handy, right? Maybe we wi
 
     >>> lottery.sort()
 
-This doesn't return anything... because we didn't print it! Try this:
+This doesn't return anything, it just changed the list in place. Let's print it out again and see what happened:
 
     >>> print(lottery)
     [3, 12, 19, 30, 42, 59]
@@ -173,14 +173,14 @@ Easy, right? If you want to add something to the list, you can do this by typing
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
 
-If you want to read only the first number, you can do this by using index. The first object of the list is an object number 0, next one is 1, and so on. Try this:
+If you want to read only the first number, you can do this by using __indexes__. Computer people like to start counting at 0, so the first object of the list is at number 0, next one is 1, and so on. Try this:
 
     >>> print(lottery[0])
     59
     >>> print(lottery[1])
     42
 
-As you can see, you can access different objects in your list by using its name and index number inside of brackets.
+As you can see, you can access different objects in your list by using its name and index number inside of square brackets.
 
 You can find a list of all available list methods here in Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
@@ -241,9 +241,9 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 ## Boolean
 
-Accidently, you just learned about a new type of object in Python. It's __boolean__ -- probably the easiest type there is.
+Accidently, you just learned about a new type of object in Python. It's called a __boolean__ -- probably the easiest type there is.
 
-Boolean can be only two things:
+There are only two boolean objects::
 - True
 - False
 
@@ -336,21 +336,21 @@ See what happened there?
 In the last three exercises you learned about:
 
 - __comparing things__ - in Python you can compare things together using `>`, `>=`, `==`, `<=`, `<` and `and`, `or` operators
-- __boolean__ - type of object that can only held two values: `True` and `False`
-- __if...elif...else__ - statements that are helpful to execute only code that meet given conditions.
+- __boolean__ - a type of object that can only have two values: `True` and `False`
+- __if...elif...else__ - statements that allow you to execute code only when certain conditions are met.
 
 Time for the last part of this chapter!
 
-## Methods (functions)
+## Your own functions!
 
-Remember about methods like `len` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
+Remember functions like `len` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
 A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with an easy one:
 
     >>> def hi():
     ...
 
-As you can see, there are the dots again! This means that nothing has really happenned yet... and yes, we need to do a `TAB` before giving our instructions:
+As you can see, there are the dots again! This means that nothing has really happened yet... and yes, we need to do a `TAB` before giving our instructions:
 
     >>> def hi():
     ...     print('Hi there!')
@@ -403,7 +403,7 @@ Let's call the function now:
     >>> hi("Rachel")
     Hi Rachel!
 
-Congratulations! You just learned how to write  functions :)!
+Congratulations! You just learned how to write functions :)!
 
 ## Loops
 
@@ -435,6 +435,7 @@ Dots again! Remember what goes after dots? Yes, tab :)
     Hi Ola!
     Next girl
     Hi You!
+    Next girl
 
 As you can see, everything you will put inside `for` statement with `tab` will be repeated for every element of the list `girls`.
 
@@ -449,7 +450,7 @@ You can also do `for` on numbers using `range` method:
     4
     5
 
-`range` is a method that creates a list of numbers from one number to another (numbers are given by you as parameters).
+`range` is a function that creates a list of numbers from one number to another (numbers are given by you as parameters).
 
 ## Summary
 
