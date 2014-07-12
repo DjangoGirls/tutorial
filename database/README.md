@@ -2,7 +2,7 @@
 
 Most of web applications have their own database. A database is a collection of data. This is a place in which you will store all information about users, all your blog post texts, etc..
 
-We will be using a PostgreSQL database to store our data. It would be easier to use a default Django database called *sqlite*, but it's not good for a production use (by *production* we mean: real, running websites). If you want to have your application available in the Internet, not only on your computer, you will need PostgreSQL.
+We will be using a PostgreSQL database to store our data. It would be easier to use a default Django database called *sqlite*, but it's not good for production use (by *production* we mean: real, running websites). If you want to have your application available in the Internet, not only on your computer, you will need PostgreSQL.
 
 # PostgreSQL installation
 
@@ -10,7 +10,7 @@ We will be using a PostgreSQL database to store our data. It would be easier to 
 
 PostgreSQL is recommending to install it using a program you can find here: http://www.enterprisedb.com/products-services-training/pgdownload#windows
 
-Choose a newest version available for your operating system. Download this Installer, run it and then follow the instructions available here: http://www.postgresqltutorial.com/install-postgresql/
+Choose a newest version available for your operating system. Download this Installer, run it and then follow the instructions available here: http://www.postgresqltutorial.com/install-postgresql/. Take note of the installation directory, you will need it in the next step (most likely it will be C:\Program Files\PostgreSQL\9.3).
 
 ## Mac OS X
 
@@ -36,8 +36,18 @@ Go to your console and run a following command:
 
 Now we need to create our database user and our first database. You can add many databases in PostgreSQL, so if you have more than one website, you should have a separate database for each one!
 
+## Windows
+
+If you're using Windows, there is a little bit more we need to do. For now you don't need to understand these steps, but feel free to ask your coach if you're curious!
+
+1. Open the Command Prompt (Start menu → All Programs → Accessories → Command Prompt)
+2. Type the following `setx PATH "%PATH%;C:\Program Files\PostgreSQL\9.3\bin"` (you can also paste things into the Command Prompt by right clicking and selecting `Paste`). Make sure that the path is the same as you noted during installation with `\bin` added at the end. You should see the message `SUCCESS: Specified value was saved.`.
+3. Close the Command Prompt and it open again.
+
+## Create the database
+
 First, let's make our console into postgres mode by typing `psql`. Remember the part about console?
->On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
+>On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Linux, it's probably under Applications → Accessories → Terminal. On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. Further, on Windows, `psql` might require logging in using the username and password you chose during installation. If `psql` is asking you for password and doesn't seem to work, try `psql -U <username> -W` first and enter the password later.
 
     $ psql
     psql (9.3.4)
