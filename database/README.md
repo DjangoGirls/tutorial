@@ -10,7 +10,7 @@ We will be using a PostgreSQL database to store our data. It would be easier to 
 
 PostgreSQL is recommending to install it using a program you can find here: http://www.enterprisedb.com/products-services-training/pgdownload#windows
 
-Choose a newest version available for your operating system. Download this Installer, run it and then follow the instructions available here: http://www.postgresqltutorial.com/install-postgresql/. Take note of the installation directory, you will need it in the next step (most likely it will be C:\Program Files\PostgreSQL\9.3).
+Choose a newest version available for your operating system. Download this Installer, run it and then follow the instructions available here: http://www.postgresqltutorial.com/install-postgresql/. Take note of the installation directory, you will need it in the next step (most likely it will be `C:\Program Files\PostgreSQL\9.3`).
 
 ## Mac OS X
 
