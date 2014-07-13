@@ -8,9 +8,9 @@ Let's write some code!
 
 To start tinkering with Python, we need to open up a *prompt* on your computer. On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
 
-A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python` and hit Enter.
+A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
 
-    (workshops) ~$ python
+    (workshops) ~$ python3
     Python 3.4.1 (...)
     Type "copyright", "credits" or "license" for more information.
     >>>
