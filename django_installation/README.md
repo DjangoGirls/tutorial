@@ -46,7 +46,7 @@ or:
 
 so the prefix `(blog)` appears!
 
-Ok, we have all important things in place. We can finally install Django!
+OK, we have all important things in place. We can finally install Django!
 
 ## Installing Django
 
@@ -65,6 +65,14 @@ Now, when you have your `virtualenv` started, you can install Django using PIP. 
     Installing collected packages: psycopg2
     Successfully installed psycopg2
     Cleaning up...
+
+On Windows, you will probably have to replace the first line with
+`pip install git+https://github.com/nwcell/psycopg2-windows.git@win32-py34#egg=psycopg2`
+or
+`pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2`
+depending on whether you have 32 or 64 bit Windows.
+
+Once it's completed execute `python -c "import psycopg2"`. If you get no errors, everything works.
 
 That's it! Now you are finally ready to create a Django application! But to do that, you need some nice program to edit the code...
 
