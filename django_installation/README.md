@@ -22,7 +22,7 @@ where `C:\Python34\python` is folder in which you previously installed Python an
 
 Creating `virtualenv` in both Linux and OS X is as simple as typing in console (remember, that we expect that you have python 3.4 installed):
 
-    ~$ python -m venv blog
+    ~$ python3 -m venv blog
 
 ### Working with virtualenv
 
@@ -46,7 +46,9 @@ or:
 
 so the prefix `(blog)` appears!
 
-OK, we have all important things in place. We can finally install Django!
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+
+Ok, we have all important things in place. We can finally install Django!
 
 ## Installing Django
 
@@ -75,5 +77,3 @@ depending on whether you have 32 or 64 bit Windows.
 Once it's completed execute `python -c "import psycopg2"`. If you get no errors, everything works.
 
 That's it! Now you are finally ready to create a Django application! But to do that, you need some nice program to edit the code...
-
-
