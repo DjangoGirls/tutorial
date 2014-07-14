@@ -6,18 +6,33 @@ Let's write some code!
 
 ## Python prompt
 
-To start tinkering with Python, we need to open up a *prompt* on your computer. On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt. On Linux, it's probably under Applications → Accessories → Terminal.
+To start tinkering with Python, we need to open up a *prompt* on your computer. How you get there depends on the operating system but once it's open, everything is equal.
 
-A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python` and hit Enter.
+### Windows
 
-    (workshops) ~$ python
+On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt.
+
+A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
+
+    C:\Users\Name> C:\Python34\python
     Python 3.4.1 (...)
     Type "copyright", "credits" or "license" for more information.
     >>>
 
-After running the python command, the prompt changed to `>>>`. For us it means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
+### Linux and OX X
+
+On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Linux, it's probably under Applications → Accessories → Terminal.
+
+A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
+
+    $ python3
+    Python 3.4.1 (...)
+    Type "copyright", "credits" or "license" for more information.
+    >>>
 
 ## Your first Python command!
+
+After running the Python command, the prompt changed to `>>>`. For us it means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
 
 Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
 
