@@ -62,17 +62,20 @@ Now, when you have your `virtualenv` started, you can install Django using PIP. 
 
 ### Installing PostgreSQL package for Python
 
+#### OS X and Linux
     (blog) ~$ pip install psycopg2
     Downloading/unpacking psycopg2
     Installing collected packages: psycopg2
     Successfully installed psycopg2
     Cleaning up...
 
-On Windows, you will probably have to replace the first line with
-`pip install git+https://github.com/nwcell/psycopg2-windows.git@win32-py34#egg=psycopg2`
-or
-`pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2`
-depending on whether you have 32 or 64 bit Windows.
+#### Windows
+On Windows, first make sure you install Heroku Toolbelt from [https://toolbelt.heroku.com/]. This means you can skip this step once we get to deployment -- hurray! After it's installed, run the commands below (if you have 32 bit Windows you'll have to replace "win64" below with "win32").
+
+    (blog) ~$ pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2`
+    ...
+    Successfully installed psycopg2
+    Cleaning up...
 
 Once it's completed execute `python -c "import psycopg2"`. If you get no errors, everything works.
 
