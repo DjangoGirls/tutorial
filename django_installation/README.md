@@ -68,11 +68,17 @@ Now, when you have your `virtualenv` started, you can install Django using PIP. 
     Successfully installed psycopg2
     Cleaning up...
 
-On Windows, you will probably have to replace the first line with
-`pip install git+https://github.com/nwcell/psycopg2-windows.git@win32-py34#egg=psycopg2`
-or
-`pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2`
-depending on whether you have 32 or 64 bit Windows.
+#### Windows
+
+For Windows, download the pre-built file from http://www.stickpeople.com/projects/python/win-psycopg/
+
+Make sure you get the one corresponding to your Python version (3.4 should be the last line) and to the correct architecture (32 bit in the left column or 64 bit in the right column).
+
+Rename the dowloaded file and move it so that it's now available at `C:\psycopg2.exe`.
+
+Once that's done, enter the following command in the terminal (make sure your virtualenv is activated):
+
+    easy_install C:\psycopg2.exe
 
 Once it's completed execute `python -c "import psycopg2"`. If you get no errors, everything works.
 
