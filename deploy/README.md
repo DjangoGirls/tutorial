@@ -87,11 +87,11 @@ with this:
 
 All right!
 
-## Install Heroku toolbelt
+## Heroku account
 
-You need to install your Heroku toolbelt which you can find here: https://toolbelt.heroku.com/
+You need to install your Heroku toolbelt which you can find here (you can skip the installation if you've already installed it during setup): https://toolbelt.heroku.com/
 
-You can also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
+Please also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
 
 Then authenticate Heroku account on you computer by running this command:
 
