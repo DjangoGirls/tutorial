@@ -10,7 +10,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for user.
 
-HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<`, and ends with `>`.
+HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<`, and ends with `>`. These tags markup __elements__.
 
 ## Your first template!
 
@@ -47,19 +47,19 @@ So how does your website look now? Click to find out: http://127.0.0.1:8000/
 It worked! Nice work there :)
 
 - The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-- `<p>` is a tag for paragraphs; `</p>` closes each paragraph
+- `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head & body
 
-Each HTML page is also divided into two parts: __head__ and __body__.
+Each HTML page is also divided into two elements: __head__ and __body__.
 
-- __head__ contains information about the document that is not displayed on the screen.
+- __head__ is an element that contains information about the document that is not displayed on the screen.
 
-- __body__ contains everything else that is displayed as part of the web page.
+- __body__ is an element that contains everything else that is displayed as part of the web page.
 
 We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually in the page.
 
-For example, you can setup a webpage title inside `<head>`, like this:
+For example, you can put a webpage title element inside the `<head>`, like this:
 
     <html>
         <head>
@@ -77,11 +77,11 @@ Save a file and refresh your page.
 
 Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-You will probably also have noticed that each opening tag is matched by a _closing tag_, with a `/`, and that tags are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+You will probably also have noticed that each opening tag is matched by a _closing tag_, with a `/`, and that elements are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
 It's like putting things into boxes. You have one big box, `<html></html>`; inside it is `<body></body>`, and that contains smaller boxes still: `<p></p>`.
 
-You need to follow these rules of _closing_ tags, and of _nesting_ them - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+You need to follow these rules of _closing_ tags, and of _nesting_ elements - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
 ## Customize your template
 
@@ -124,8 +124,8 @@ Here's an example of a full template:
 
 We've created three `div` sections here.
 
-- The first `div` contains the title of our blog - it's a heading and a link
-- Another two `div`s contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+- The first `div` element contains the title of our blogpost - it's a heading and a link
+- Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
 It gives us this effect:
 
