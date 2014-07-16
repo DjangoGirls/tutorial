@@ -16,7 +16,7 @@ To print a variable in Django template, we use double curly brackets with the va
 
     {{ posts }}
 
-Try this in your `mysite/blog/templates/blog/post_list.html` template (replace everything between `<body></body>` tags with `{{ post }}` line), save the file and refresh the page to see the results:
+Try this in your `mysite/blog/templates/blog/post_list.html` template (replace everything between a second `<div></div>` tags with `{{ post }}` line), save the file and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
@@ -37,12 +37,12 @@ Try this in your template.
 It works! But we want them to be displayed in a way we created earlier in __Introduction to HTML__ chapter - like the static posts we put there before. You can mix HTML and template tags. Our `body` will look like that:
 
     <div>
-        <h1><a href="">Django Girls Blog</a></h1>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
 
     {% for post in posts %}
         <div>
-            <small>published: {{ post.published_date }}</small>
+            <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text }}</p>
         </div>

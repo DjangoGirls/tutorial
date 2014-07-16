@@ -59,24 +59,20 @@ After adding the line your html file should look like this now:
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-8">
-                    {% for post in posts %}
-                        <div class="post">
-                            <small>published: {{ post.published_date }}</small>
-                            <h1><a href="">{{ post.title }}</a></h1>
-                            <p>{{ post.text }}</p>
+            <body>
+                <div class="page-header">
+                    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                    <h1><a href="/">Django Girls Blog</a></h1>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-8">
+                            {% block content %}
+                            {% endblock %}
                         </div>
-                    {% endfor %}
                     </div>
                 </div>
-            </div>
+            </body>
         </body>
     </html>
 
@@ -122,7 +118,7 @@ We need to create a file `post_edit.html` in the `mysite/blog/template/blog` dir
 - we have to display the form. We can do that for example with a `{{ form.as_p }}`.
 - the line above have to be wrapped with HTML form tag: <`form method="POST">...</form>`
 - we need a `Save` button. We do that with HTML: `<button type="submit">Save</button>`
-- and finally just after the opening `<form ...>` tag we need to add `{% csfr_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
+- and finally just after the opening `<form ...>` tag we need to add `{% csrf_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -132,7 +128,7 @@ Ok, so let's see how the HTML in `post_edit.html` should look like:
 
     {% block content %}
         <h1>New post</h1>
-        <form method="POST" class="post-form">
+        <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Save</button>
         </form>

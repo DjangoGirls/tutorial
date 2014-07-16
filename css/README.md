@@ -36,7 +36,7 @@ CSS is a static file, so in order to customize CSS, we need to first configure s
 
 ### Configure static files in Django
 
-First, we need to create a folder to store our static files in. Go ahead and create a folder called `static` inside your `mysite` folder.
+First, we need to create a folder to store our static files in. Go ahead and create a folder called `static` inside your (parent) `mysite` folder.
 
     mysite
         └───static
@@ -97,12 +97,12 @@ Your file should look like this at this point:
         </head>
         <body>
             <div>
-                <h1><a href="">Django Girls Blog</a></h1>
+                <h1><a href="/">Django Girls Blog</a></h1>
             </div>
 
             {% for post in posts %}
                 <div>
-                    <small>published: {{ post.published_date }}</small>
+                    <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text }}</p>
                 </div>
@@ -144,13 +144,13 @@ CSS has a concept of classes, which basically allows you to name a part of our H
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains header, like this:
 
     <div class="page-header">
-        <h1><a href="">Django Girls Blog</a></h1>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
 
 And now add a class `post` to your `div` containing blogposts.
 
     <div class="post">
-        <small>published: {{ post.published_date }}</small>
+        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text }}</p>
     </div>
@@ -209,20 +209,20 @@ Then also replace this:
 
     {% for post in posts %}
         <div class="post">
-            <small>published: {{ post.published_date }}</small>
+            <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text }}</p>
         </div>
     {% endfor %}
 
-in the `<body>` of your `mysite/blog/templates/blog/post_list.html` with this:
+in the `mysite/blog/templates/blog/post_list.html` with this:
 
     <div class="content">
         <div class="row">
             <div class="col-md-8">
                 {% for post in posts %}
                     <div class="post">
-                        <small>published: {{ post.published_date }}</small>
+                        <p>published: {{ post.published_date }}</p>
                         <h1><a href="">{{ post.title }}</a></h1>
                         <p>{{ post.text }}</p>
                     </div>

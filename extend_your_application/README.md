@@ -15,23 +15,13 @@ We will start with adding a link inside `mysite/blog/templates/blog/post_list.ht
     {% extends 'mysite/base.html' %}
 
     {% block content %}
-        <div class="page-header">
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
-
-        <div class="content">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <small>published: {{ post.published_date }}</small>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text }}</p>
-                    </div>
-                {% endfor %}
-                </div>
+        {% for post in posts %}
+            <div class="post">
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text }}</p>
             </div>
-        </div>
+        {% endfor %}
     {% endblock content %}
 
 We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:
@@ -57,9 +47,7 @@ Let's create an URL in `urls.py` for our `post_detail` *view*!
 We want to create an URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `mysite/blog/urls.py` file. It should look like this:
 
     from django.conf.urls import patterns, include, url
-
-    from django.contrib import admin
-    admin.autodiscover()
+    from . import views
 
     urlpatterns = patterns('',
         url(r'^$', views.post_list),

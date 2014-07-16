@@ -10,6 +10,8 @@ The names of some files and directories are very important for Django. You shoul
 
 In console you should type (remember that you don't type `(blog) ~$`, ok?):
 
+> Remember to run everything in the virtualenv. If you don't see a prefix `(blog)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
+
     (blog) ~$ django-admin.py startproject mysite
 
 `django-admin.py` is a script that will create folders and files for you. It should look like this:
@@ -34,7 +36,7 @@ Let's ignore the other files for now - we will not change them. The only thing t
 
 ## Changing settings
 
-Let's do some changes in `mysite/settings.py`.
+Let's do some changes in `mysite/mysite/settings.py`.
 
 It would be nice to have a correct time on our website. You should find lines that contain `USE_TZ` and `TIME_ZONE` and change them to look like this:
 
@@ -45,7 +47,7 @@ It would be nice to have a correct time on our website. You should find lines th
 
 There is a number of different database systems that store data for you. We will use one of the best ones: `PostgreSQL`, which we installed in __Database__ chapter.
 
-Find this part in your `mysite/settings.py` file:
+Find this part in your `mysite/mysite/settings.py` file:
 
     DATABASES = {
         'default': {
@@ -69,7 +71,7 @@ And replace it with this:
 
 Make sure to replace `yourname` with a username you created in __Database__ section. Then save a file.
 
-To create a database for our blog we will type in console `python manage.py syncdb`. It should look like this:
+To create a database for our blog we will type in console `python manage.py syncdb` (we need to be in a parent `mysite` directory that contains `manage.py` file). It should look like this:
 
     (blog) ~/mysite python manage.py syncdb
     Creating tables ...
@@ -95,6 +97,12 @@ To create a database for our blog we will type in console `python manage.py sync
     Installed 0 object(s) from 0 fixture(s)
 
 It will ask you if you want to create a superuser. Type `yes`, press Enter and type your username (lowercase, no spaces), email address and password when you will be asked to type it. Remember this username and password! We will use it later.
+
+> If `python manage.py syncdb` is not working and the error looks like this:
+
+        raise ImproperlyConfigured("Error loading psycopg2 module: %s" % e)
+    django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 module: No module named 'psycopg2'
+> you need to run `pip install psycopg2` in the console. It should solve the problem.
 
 And you are done! Time to start web server and see if our website is working!
 

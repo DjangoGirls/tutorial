@@ -31,7 +31,7 @@ Ok, the last bit is of course a template! Create a file `mysite/blog/templates/b
     {% block content %}
         {% for post in posts %}
             <div class="post">
-                <small class="date">created: {{ post.created_date|date:'d-m-Y' }}</small>
+                <p class="date">created: {{ post.created_date|date:'d-m-Y' }}</p>
                 <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                 <p>{{ post.text|truncatechars:200 }}</p>
             </div>

@@ -30,7 +30,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
         </head>
         <body>
             <div class="page-header">
-                <h1><a href="">Django Girls Blog</a></h1>
+                <h1><a href="/">Django Girls Blog</a></h1>
             </div>
 
             <div class="content">
@@ -38,7 +38,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
                     <div class="col-md-8">
                     {% for post in posts %}
                         <div class="post">
-                            <small>published: {{ post.published_date }}</small>
+                            <p>published: {{ post.published_date }}</p>
                             <h1><a href="">{{ post.title }}</a></h1>
                             <p>{{ post.text }}</p>
                         </div>
@@ -52,31 +52,36 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
     <body>
-        {% block content %}
-        {% endblock %}
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
     </body>
+
+We basically replaced everything between `{% for post in posts %}{% endfor %}` with:
+
+    {% block content %}
+    {% endblock %}
 
 What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`. We will show you how to do that in a moment.
 
-Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body:
+Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body and then delete also `<div class="page-header"></div>`, so the file will look like this:
 
-    <div class="page-header">
-        <h1><a href="">Django Girls Blog</a></h1>
-    </div>
 
-    <div class="content">
-        <div class="row">
-            <div class="col-md-8">
-            {% for post in posts %}
-                <div class="post">
-                    <small>published: {{ post.published_date }}</small>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text }}</p>
-                </div>
-            {% endfor %}
-            </div>
+    {% for post in posts %}
+        <div class="post">
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text }}</p>
         </div>
-    </div>
+    {% endfor %}
 
 And now add this line on the beginning of the file:
 
@@ -87,26 +92,17 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
     {% extends 'mysite/base.html' %}
 
     {% block content %}
-        <div class="page-header">
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
-
-        <div class="content">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <small>published: {{ post.published_date }}</small>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text }}</p>
-                    </div>
-                {% endfor %}
-                </div>
+        {% for post in posts %}
+            <div class="post">
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text }}</p>
             </div>
-        </div>
+        {% endfor %}
     {% endblock content %}
 
 That's it! Check if your website is still working properly :)
 
+> If you have an error `TemplateDoesNotExists` that says that there is no `mysite/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+c - Control and C buttons together) and restart it with `python manage.py runserver`.
 
 
