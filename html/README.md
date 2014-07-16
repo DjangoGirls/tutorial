@@ -1,51 +1,65 @@
 # Introduction to HTML
 
-You may ask, what's a template? Template contains all your HTMLs! Yes, HTML we mentioned in the first chapter __How the Internet works__. HTML is a code that is later processed by your web browser (like Chrome, Firefox or Safari) to display a website for user.
+What's a template, you may ask?
 
-Templates are saved in `mysite/blog/templates/blog` folder. So first create a folder called _templates_ inside your blog folder. Then create another folder called `blog` inside your templates folder.
+A template is a file that we can re-use to present different information in a consistent format - for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter __How the Internet works__).
+
+## What is HTML?
+
+HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for user.
+
+HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<`, and ends with `>`. These tags markup __elements__.
+
+## Your first template!
+
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+
+Templates are saved in `mysite/blog/templates/blog` folder. So first create a folder called `templates` inside your blog folder. Then create another folder called `blog` inside your templates folder:
 
     mysite
         └───blog
             └───templates
                 └───blog
 
-## What is HTML?
+(You might wonder why we need two folders both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports (hyper)links between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is build with tags, that starts with `<`, and ends with `>`.
+And now create a `post_list.html` file (just leave it blank for now) inside the `mysite/blog/templates/blog` folder.
 
-## Your first template!
-
-First, you need to create a file. Everything is a file, right? You probably have noticed this already.
-
-Create an empty `post_list.html` file inside of `mysite/blog/templates/blog` folder.
-
-See how your website looks like now: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congrats :) However, your website is now empty, because everything you want to display needs to be placed in your HTML file.
+No error anymore! Congratulations :) However, your website is isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Go ahead and write something in this file, just like that:
+Add the following to your template file:
 
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
 
-How your website look like now? Click to find out: http://127.0.0.1:8000/
+So how does your website look now? Click to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
 It worked! Nice work there :)
 
-- The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-- `<p>` is a tag for paragraphs
+- The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+- `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head & body
 
-Each website is also divided into two parts: __head__ and __body__. __Head__ contains information about the document that is not displayed on the screen and __body__ contains everything else that is displayed as part of the web page. We use `<head>` to tell the browser about the configuration of the website, and `<body>` to tell it how it should look like.
+Each HTML page is also divided into two elements: __head__ and __body__.
 
-For example, you can setup a website title inside of `<head>`, like this:
+- __head__ is an element that contains information about the document that is not displayed on the screen.
+
+- __body__ is an element that contains everything else that is displayed as part of the web page.
+
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually in the page.
+
+For example, you can put a webpage title element inside the `<head>`, like this:
 
     <html>
         <head>
@@ -57,31 +71,33 @@ For example, you can setup a website title inside of `<head>`, like this:
         </body>
     </html>
 
-Save a file and refresh your website.
+Save a file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
-You can see, that the browser understood that "Ola's blog" should be the title of your website? Nice!
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-You should have also noticed that you have to nest your tags and always close them with the same tag containing `/`. Otherwise browser won't understand you.
+You will probably also have noticed that each opening tag is matched by a _closing tag_, with a `/`, and that elements are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-It's like puting things into boxes. You have one big box (i.e. `<body></body>` and you put smaller boxes inside `<p></p>`).
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it is `<body></body>`, and that contains smaller boxes still: `<p></p>`.
+
+You need to follow these rules of _closing_ tags, and of _nesting_ elements - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
 ## Customize your template
 
-You can now have a little fun and try to customize your template! Here is a couple of useful tags for that:
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-- `<h1>Header nr 1</h1>` makes a big header
-- `<h2>Header nr 2</h2>` makes a smaller header... and so on
-- `<b>text</b>` bolds your text
-- `<i>text</i>` makes it cursive
+- `<h1>A heading</h1>` - for your most important heading
+- `<h2>A sub-heading</h2>` for a heading at the next level
+- `<h3>A sub-sub-heading</h3>` ... and so on, up to `<h6>`
+- `<em>text</em>` emphasizes your text
+- `<strong>text</strongly>` strongly emphasizes your text
 - `<br />` goes to another line (you can't put anything inside br)
-- `<a href="http://google.com/">link</a>` creates a clickable link
+- `<a href="http://google.com/">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-- `<div>` defines a section of our website
-- `<small>` creates a small text
+- `<div></div>` defines a section of the page
 
-We've built something like this:
+Here's an example of a full template:
 
     <html>
         <head>
@@ -93,13 +109,13 @@ We've built something like this:
             </div>
 
             <div>
-                <small>published: 14.06.2014, 12:14</small>
+                <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My first post</a></h1>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             </div>
 
             <div>
-                <small>published: 14.06.2014, 12:14</small>
+                <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My second post</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
             </div>
@@ -108,11 +124,13 @@ We've built something like this:
 
 We've created three `div` sections here.
 
-- The first `div` contains the title of our blog that is a header and is clickable
-- Another two `div`s contain our blogposts with a `small` published date, `h2` with a post title that is clickable and a `p` (paragraph) of text, which is our blogpost.
+- The first `div` element contains the title of our blogpost - it's a heading and a link
+- Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
 It gives us this effect:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But wait, we want to display real posts added in our Django admin, right? We will, of course, get there! Read on in the next chapter.
+Yaaay! But so far, our template only ever displays exactly __the same information__ - whereas earlier we were talking about templates as allowing us to display __different__ information in the __same format__.
+
+What we want really want to do is display real posts added in our Django admin - and that's where we're going next.
