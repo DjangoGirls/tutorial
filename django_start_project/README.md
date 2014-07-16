@@ -98,12 +98,6 @@ To create a database for our blog we will type in console `python manage.py sync
 
 It will ask you if you want to create a superuser. Type `yes`, press Enter and type your username (lowercase, no spaces), email address and password when you will be asked to type it. Remember this username and password! We will use it later.
 
-> If `python manage.py syncdb` is not working and the error looks like this:
-
-        raise ImproperlyConfigured("Error loading psycopg2 module: %s" % e)
-    django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 module: No module named 'psycopg2'
-> you need to run `pip install psycopg2` in the console. It should solve the problem.
-
 And you are done! Time to start web server and see if our website is working!
 
 You need to be in a folder that contains `manage.py` file (in `mysite` directory). In console we will start the web server by typing `python manage.py runserver`:
