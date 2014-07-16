@@ -2,17 +2,17 @@
 
 We're about to build our first webpage -- a homepage for your blog! But first, let's learn a little bit about Django urls.
 
-## What is URL?
+## What is a URL?
 
-A URL is simply like a web address, you can see an URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is an URL! And http://djangogirls.com is also an URL):
+A URL is simply like a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens an URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens a URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
 
-## How URLs work in Django?
+## How do URLs work in Django?
 
-Let's open up the `mysite/mysite/urls.py` file and see how it looks like:
+Let's open up the `mysite/mysite/urls.py` file and see what it looks like:
 
     from django.conf.urls import patterns, include, url
 
@@ -27,9 +27,9 @@ Let's open up the `mysite/mysite/urls.py` file and see how it looks like:
         url(r'^admin/', include(admin.site.urls)),
     )
 
-As you can see, Django already put something for us here.
+As you can see, Django already put something here for us.
 
-Lines that starts with `#` are comments - it means that those lines won't be executed by Python. Pretty handy, right?
+Lines that start with `#` are comments - it means that those lines won't be executed by Python. Pretty handy, right?
 
 The admin url, which you visited in previous chapter is already here:
 
@@ -39,14 +39,14 @@ It means that for every url that starts with `admin/` Django will find a corresp
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a lot (a lot!) of rules that forms a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a lot (a lot!) of rules that form a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
 
 ## Your first Django url!
 
 Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
 
-We also want to keep `mysite/mysite/urls.py` file clean, so we will import urls from our `blog` application to main `mysite/mysite/urls.py` file.
-Go ahead, delete comment lines (lines started with `#`) and add a line that will import `blog.urls` into main url (`''`).
+We also want to keep the `mysite/mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/mysite/urls.py` file.
+Go ahead, delete comment lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
 
 Your `mysite/mysite/urls.py` file should now look like this:
 
@@ -77,11 +77,11 @@ After that, we can add our first URL pattern:
         url(r'^$', views.post_list),
     )
 
-As you can see, we're now assigning `view` called `post_list` to `^$` URL. But what `^$` means? It's regex magic :) Let's break it down:
-- `^` in regex means "the beginning", from this sign we can start looking for our pattern
-- `$` matches only "the end" of the string, which means that we will finish looking for our pattern here.
+As you can see, we're now assigning a `view` called `post_list` to `^$` URL. But what does `^$` mean? It's regex magic :) Let's break it down:
+- `^` in regex means "the beginning"; from this sign we can start looking for our pattern
+- `$` matches only "the end" of the string, which means that we will finish looking for our pattern here
 
-If you put this two signs together, it looks like we're looking for empty string! And that's correct, because in Django url resolvers, `http://127.0.0.1:8000/` is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enter your website on `http://127.0.0.1:8000/` address.
+If you put these two signs together, it looks like we're looking for an empty string! And that's correct, because in Django url resolvers, `http://127.0.0.1:8000/` is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the `http://127.0.0.1:8000/` address.
 
 Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
 
