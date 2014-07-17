@@ -68,19 +68,15 @@ Next up, we need to install a package which lets Python talk to PostgreSQL - thi
 
 ### Windows
 
-The installation steps vary slightly depending on whether your computer runs 32 or 64 bit Windows. If you're not sure which you're running, ask your coach.
+For Windows, download the pre-built file from http://www.stickpeople.com/projects/python/win-psycopg/
 
-#### 32-bit
+Make sure you get the one corresponding to your Python version (3.4 should be the last line) and to the correct architecture (32 bit in the left column or 64 bit in the right column).
 
-Run the following in your console:
+Rename the downloaded file and move it so that it's now available at `C:\psycopg2.exe`.
 
-    (blog) C:\Users\Name> pip install git+https://github.com/nwcell/psycopg2-windows.git@win32-py34#egg=psycopg2
+Once that's done, enter the following command in the terminal (make sure your `virtualenv` is activated):
 
-#### 64-bit
-
-Run the following in your console:
-
-    (blog) C:\Users\Name> pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2
+    easy_install C:\psycopg2.exe
 
 ### Linux and OS X
 
@@ -88,14 +84,14 @@ Run the following in your console:
 
     (blog) ~$ pip install psycopg2
 
----
-
 If that goes well, you'll see something like this
 
     Downloading/unpacking psycopg2
     Installing collected packages: psycopg2
     Successfully installed psycopg2
     Cleaning up...
+
+---
 
 Once that's completed, run `python -c "import psycopg2"`. If you get no errors, everything's installed successfully.
 
