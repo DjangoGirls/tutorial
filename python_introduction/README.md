@@ -14,7 +14,7 @@ On Windows you need to go to Start menu → All Programs → Accessories → Com
 
 A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
 
-    C:\Users\Name> C:\Python34\python
+    C:\Users\Name> python3
     Python 3.4.1 (...)
     Type "copyright", "credits" or "license" for more information.
     >>>
