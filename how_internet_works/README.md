@@ -41,7 +41,7 @@ Instead of addresses with street name, city, zipcode and country, we use IP addr
 
 When you send a letter it needs to have certain features to be delivered correctly: address, postmark etc. You also use a language that the receiver understands, right? The same is with *data packets* you send in order to see a website: you use a protocol called HTTP (Hypertext Transfer Protocol).
 
-So basically, when you have a website you need to have a *server* (machine) where it lives. The *server* is waiting for any incoming *requests* (letters that ask you to send your website) and it sends back your website (in another letter).
+So basically, when you have a website you need to have a *server* (machine) where it lives. The *server* is waiting for any incoming *requests* (letters that ask it to send your website) and it sends back your website (in another letter).
 
 Since it is a Django tutorial, you will ask what Django does? When you send a response you don't always want to send the same thing to everybody. It is so much better if your letters are personalized especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters :).
 
