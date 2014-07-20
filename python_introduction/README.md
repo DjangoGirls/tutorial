@@ -19,7 +19,7 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
     Type "copyright", "credits" or "license" for more information.
     >>>
 
-### Linux and OX X
+### Linux and OS X
 
 On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Linux, it's probably under Applications → Accessories → Terminal.
 
