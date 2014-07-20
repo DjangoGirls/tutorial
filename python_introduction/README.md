@@ -19,7 +19,7 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
     Type "copyright", "credits" or "license" for more information.
     >>>
 
-### Linux and OX X
+### Linux and OS X
 
 On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Linux, it's probably under Applications → Accessories → Terminal.
 
@@ -122,7 +122,7 @@ Let's say we want to create a new variable called `name`:
 
 You see? It's easy! Simply: name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. How do we now that the variable actually is there? Simply enter `name` and hit Enter:
+As you've noticed, your program didn't return anything like it did before. How do we know that the variable actually is there? Simply enter `name` and hit Enter:
 
     >>> name
     'Ola'
