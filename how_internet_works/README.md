@@ -4,13 +4,13 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like http://djangogirls.org in your browser and press 'Enter'?
 
-First thing you need to understand is that a website is just a bunch of files saved on a computer disk. Just like your movies, music or pictures.
+First thing you need to understand is that a website is just a bunch of files saved on a harddisk. Just like your movies, music or pictures.
 However, there is one part that is unique for websites: they include computer code called HTML.
 
-If you're not familiar with programming, it can be hard to grasp at first, but your web browsers (like Chrome, Safari, Firefox, etc) love HTML. Web browsers are designed to understand this code,
+If you're not familiar with programming, it can be hard to grasp at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love HTML. Web browsers are designed to understand this code,
 follow the instructions and present all these files that your website is made of exactly the way you want them to be presented.
 
-As every file, we need to store them somewhere on a computer disk. For the Internet, we use special, powerful computers called *servers*. They don't have
+As every file, we need to store them somewhere on a harddisk. For the Internet, we use special, powerful computers called *servers*. They don't have
 a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're all called *servers* -- because they *serve* you data.
 
 Ok, but you want to know how the Internet looks like, right?
@@ -37,11 +37,11 @@ Your letter goes to the post office. Then it goes to another that is nearer your
 
 Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-Instead of address with street name, city, zipcode and country, we use IP addresses. Your computer asks DNS (Domain Name System) first to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you could look for the name of the person and find their phone number and address.
+Instead of addresses with street name, city, zipcode and country, we use IP addresses. Your computer asks the DNS (Domain Name System) first to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you could look for the name of the person and find their phone number and address.
 
-When you send a letter it needs to have certain features to be delivered correctly: address, postmark etc.. You also use language that the receiver understands, right? The same is with *data packets* you send in order to see a website: you use a protocol called HTTP (HyperText TransferProtocol).
+When you send a letter it needs to have certain features to be delivered correctly: address, postmark etc. You also use a language that the receiver understands, right? The same is with *data packets* you send in order to see a website: you use a protocol called HTTP (Hypertext Transfer Protocol).
 
-So basically, when you have a website you need to have a *server* (machine) where it lives. The *server* is waiting for any incoming *requests* (letters that ask you to send your website) and it sends back your website (in another letter).
+So basically, when you have a website you need to have a *server* (machine) where it lives. The *server* is waiting for any incoming *requests* (letters that ask it to send your website) and it sends back your website (in another letter).
 
 Since it is a Django tutorial, you will ask what Django does? When you send a response you don't always want to send the same thing to everybody. It is so much better if your letters are personalized especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters :).
 

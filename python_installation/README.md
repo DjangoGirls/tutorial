@@ -2,7 +2,7 @@
 
 Huh, it's exciting, right?! You'll write your first line of code in just minutes!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, science, graphics, and much, much more.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, science, graphics and much, much more.
 
 Python was conceived in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. That makes it easy to learn, but don't worry, Python is also really powerful!
 
