@@ -125,6 +125,8 @@ You need to install your Heroku toolbelt which you can find here (you can skip t
 
 > When running the Heroku toolbelt installation program on Windows make sure to choose "Custom Installation" when being asked which components to install. In the list of components that shows up after that please additionally check the checkbox in front of "Git and SSH".
 
+> On Windows you also must run the following command to add Git and SSH to your command prompt's `PATH`: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Restart the command prompt program afterwards to enable the change.
+
 Please also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
 
 Then authenticate Heroku account on you computer by running this command:
