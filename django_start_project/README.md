@@ -114,6 +114,8 @@ Now all you need to do is check that your website is running - open your browser
 
     http://127.0.0.1:8000/
 
+You can stop the web server again (e.g. to type other commands on the command prompt) by pressing CTRL+C - Control and C buttons together.
+
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
 ![It worked!](images/it_worked2.png)
