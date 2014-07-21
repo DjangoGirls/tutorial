@@ -12,7 +12,13 @@ In console you should run (remember that you don't type `(blog) ~$`, ok?):
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(blog)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
 
+Run on Linux or Mac OS:
+
     (blog) ~$ django-admin.py startproject mysite
+
+or on Windows:
+
+    (blog) ~$ python blog\Scripts\django-admin.py startproject mysite
 
 `django-admin.py` is a script that will create the folders and files for you. You should now have a folder structure which looks like this:
 
