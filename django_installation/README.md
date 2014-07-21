@@ -60,6 +60,8 @@ Now that you have your `virtualenv` started, you can install Django using `pip`.
     Successfully installed django
     Cleaning up...
 
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+
 ### Installing PostgreSQL package for Python
 
 First, install Heroku Toolbelt from https://toolbelt.heroku.com/ While we will need this mostly for deploying your site later on, it also includes Git, which might come in handy already.
