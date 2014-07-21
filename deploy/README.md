@@ -73,7 +73,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
 At the end of the `mysite/mysite/settings.py`, copy and paste this:
 
     try:
-        from local_settings import *
+        from .local_settings import *
     except:
         pass
 
