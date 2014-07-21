@@ -34,6 +34,27 @@ We need to tell Heroku which Python version we want to use. This is simply done 
 
     python-3.4.1
 
+## mysite/local_settings.py
+
+There is a difference between settings we are using locally (on our computer) and settings for our server. For example, we don't want the errors to be visible to the user in the browser. That's why we need to create a seperate file for settings that will only be available for our local enviroment.
+
+Go ahead and create `mysite/mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/mysite/settings.py` file and `DEBUG` set to `True`. Just like that:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'djangogirls',
+            'USER': 'yourname',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+
+    DEBUG = True
+
+Then just save it! :)
+
 ## mysite/settings.py
 
 Another thing we need to do is modify our website's `settings.py` file. Open `mysite/mysite/settings.py` in your editor and add the following lines at the end of the file:
@@ -46,7 +67,17 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     ALLOWED_HOSTS = ['*']
 
     STATIC_ROOT = 'staticfiles'
+
     DEBUG = False
+
+At the end of the `mysite/mysite/settings.py`, copy and paste this:
+
+    try:
+        from local_settings import *
+    except:
+        pass
+
+It'll import all of your local settings if the file exists.
 
 Then save the file.
 
@@ -109,8 +140,9 @@ Create `mysite/.gitignore` file with following content:
     venv
     __pycache__
     staticfiles
+    local_settings.py
 
-and save it. The dot on the beginning of the file name is important! This will tell Heroku to ignore this file and don't use it.
+and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
 
 Next, we’ll create a new git repository and save our changes. Go to your console and run this commands:
 
