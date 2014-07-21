@@ -46,6 +46,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     ALLOWED_HOSTS = ['*']
 
     STATIC_ROOT = 'staticfiles'
+    DEBUG = False
 
 Then save the file.
 
