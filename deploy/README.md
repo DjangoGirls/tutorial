@@ -36,9 +36,9 @@ We need to tell Heroku which Python version we want to use. This is simply done 
 
 ## mysite/local_settings.py
 
-There is a difference between settings we are using locally (on our computer) and settings for our server. For example, we don't want the errors to be visible to the user in the browser. That's why we need to create a seperate file for settings that will only be available for our local enviroment.
+There is a difference between settings we are using locally (on our computer) and settings for our server. Heroku is using one database, and your computer is using a different database.  That's why we need to create a seperate file for settings that will only be available for our local enviroment.
 
-Go ahead and create `mysite/mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/mysite/settings.py` file and `DEBUG` set to `True`. Just like that:
+Go ahead and create `mysite/mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/mysite/settings.py` file. Just like that:
 
     DATABASES = {
         'default': {
@@ -50,8 +50,6 @@ Go ahead and create `mysite/mysite/local_settings.py` file. It should contain yo
             'PORT': '',
         }
     }
-
-    DEBUG = True
 
 Then just save it! :)
 
@@ -67,8 +65,6 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     ALLOWED_HOSTS = ['*']
 
     STATIC_ROOT = 'staticfiles'
-
-    DEBUG = False
 
 At the end of the `mysite/mysite/settings.py`, copy and paste this:
 
