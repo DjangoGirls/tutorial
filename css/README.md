@@ -115,7 +115,7 @@ Your file should look like this at this point:
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
     body {
-        margin-left: 15px;
+        padding-left: 15px;
     }
 
 Add this to your CSS, save the file and see how it works!
