@@ -51,7 +51,7 @@ Time to put this piece of code inside `post_list`, right?
         posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
 
-Please note that we create an *variable* for our queryset: `posts`. Treat it as a name of our queryset. From now on we can refer to it by this name.
+Please note that we create a *variable* for our queryset: `posts`. Treat it as a name of our queryset. From now on we can refer to it by this name.
 The last missing part is to pass the `posts` queryset to the template (we will cover how to display it in a next chapter).
 
 In the `render` function we already have parameter with `request` (so everything we receive from the user via the Internet) and a template file `'blog/post_list.html'`. The last parameter, which looks like this: `{}` is a place in which we can add some things to template. We need to give them names (we will stick to `'posts'` right now :)). It should look like this: `{'posts': posts}`. Please note that the part before `:` is wrapped with quotes `''`.
