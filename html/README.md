@@ -110,7 +110,7 @@ Here's an example of a full template:
 
             <div>
                 <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h1>
+                <h2><a href="">My first post</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             </div>
 
