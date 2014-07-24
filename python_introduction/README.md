@@ -1,6 +1,6 @@
 # Introduction to Python
 
-*This chapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/)*
+> Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
 
 Let's write some code!
 

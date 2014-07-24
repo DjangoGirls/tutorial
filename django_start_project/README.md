@@ -1,6 +1,11 @@
 # Your first Django project!
 
-*This chapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/) and django-marcador (http://django-marcador.keimlink.de/).*
+> Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
+
+> Parts of this chapter is based on the [django-marcador
+tutorial](http://django-marcador.keimlink.de/) licensed under Creative Commons
+Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
+is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a simple blog!
 
