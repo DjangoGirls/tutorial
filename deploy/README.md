@@ -12,11 +12,11 @@ We need to create a `requirements.txt` file to tell Heroku what Python packages 
 
 But first, Heroku needs us to install the `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
 
-    (blog) $ pip install django-toolbelt
+    (venv) $ pip install django-toolbelt
 
 After the installation is finished, run this command:
 
-    (blog) $ pip freeze > requirements.txt
+    (venv) $ pip freeze > requirements.txt
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
 
