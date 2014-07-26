@@ -1,18 +1,18 @@
-# Security
+# Homework: Adding security to your website
 
-You might have noticed that you didn't have to use your password apart from back when we used the admin-interface. And you might notice that this means that everyone can add or edit posts in your blog. I don't know about you, but I don't want just anyone to post on my blog. So lets do something about it.
+You might have noticed that you didn't have to use your password, apart from back when we used the admin interface. You might also have noticed that this means that anyone can add or edit posts in your blog. I don't know about you, but I don't want just anyone to post on my blog. So lets do something about it.
 
 ## Authorizing add/edit of posts
 
-First lets make things secure. We will protect our `post_new`, `post_edit` and `post_publish` views so that only logged-in users can access them. Django ships with some nice helpers for that using a kind-of advanced topic of _decorators_. Don't worry about the technicalities now, you can read up on these later. The decorator to use is shipped in Django in a module `django.contrib.auth.decorators` and is named `login_required`.
+First lets make things secure. We will protect our `post_new`, `post_edit` and `post_publish` views so that only logged-in users can access them. Django ships with some nice helpers for that using, the kind of advanced topic, _decorators_. Don't worry about the technicalities now, you can read up on these later. The decorator to use is shipped in Django in the module `django.contrib.auth.decorators` and is called `login_required`.
 
-So edit your `mysite/views.py` and add these lines at the top where all the imports are:
+So edit your `mysite/views.py` and add these lines at the top along with the rest of the imports:
 
 ```
 from django.contrib.auth.decorators import login_required
 ```
 
-Then add a line before each of the `post_new`, `post_edit` and `post_publish` like the following:
+Then add a line before each of the `post_new`, `post_edit` and `post_publish` views (decorating them) like the following:
 
 ```
 @login_required
@@ -20,11 +20,11 @@ def post_new(request):
     [...]
 ```
 
-Thats it! Now try again to access `http://localhost:8000/post/new/`, notice the difference?
+Thats it! Now try to access `http://localhost:8000/post/new/`, notice the difference?
 
 > If you just got the empty form, you are probably still logged in from the chapter on the admin-interface. Go to `http://localhost:8000/admin/logout/` to log out, then goto `http://localhost:8000/post/new` again.
 
-You should get one of the beloved errors again. This one is quite interesting actually: The decorator we added before will redirect you to the login page. But that isn't available yet, so it raises a "Page not found (404)".
+You should get one of the beloved errors. This one is quite interesting actually: The decorator we added before will redirect you to the login page. But that isn't available yet, so it raises a "Page not found (404)".
 
 Don't forget to add the decorator from above to `post_edit` and `post_publish` too.
 
@@ -32,9 +32,9 @@ Horray, we reached part of the goal! Other people can't just create posts on our
 
 ## Login users
 
-Now we could try to do lots of magic stuff to implement users and passwords and authentication but doing this kind of stuff right is rather complicated. And as Django is "batteries included", we will make further use of the authentication stuff provided.
+Now we could try to do lots of magic stuff to implement users and passwords and authentication but doing this kind of stuff correctly is rather complicated. As Django is "batteries included", someone has done the hard work for us, so we will make further use of the authentication stuff provided.
 
-In your `mysite/urls.py` add an url `url(r'^accounts/login/$', 'django.contrib.auth.views.login')`. So the file should now look similar to this:
+In your `mysite/urls.py` add a url `url(r'^accounts/login/$', 'django.contrib.auth.views.login')`. So the file should now look similar to this:
 
 ```
 from django.conf.urls import patterns, include, url
@@ -49,7 +49,7 @@ urlpatterns = patterns('',
 )
 ```
 
-Then we need a template for the login-page, so create a directory `mysite/templates/registration` and a file inside named `login.html`:
+Then we need a template for the login page, so create a directory `mysite/templates/registration` and a file inside named `login.html`:
 
 ```
 {% extends "mysite/base.html" %}
@@ -116,9 +116,9 @@ So now we made sure that only authorized users (ie. us) can add, edit or publish
     </body>
 ```
 
-You might recognize the pattern here. There is an if-condition inside the template that checks for authenticated users to show the edit-buttons. Otherwise it shows a login button.
+You might recognize the pattern here. There is an if-condition inside the template that checks for authenticated users to show the edit buttons. Otherwise it shows a login button.
 
-*Homework*: Edit the template `blog/templates/blog/post_detail.html` to only show the edit-buttons for authenticated users.
+*Homework*: Edit the template `blog/templates/blog/post_detail.html` to only show the edit buttons for authenticated users.
 
 ## More on authenticated users
 
@@ -137,11 +137,11 @@ Lets add some nice sugar to our templates while we are at it. First we will add 
         </div>
 ```
 
-This adds a nice "Hello &lt;username&gt;" to remind us who we are and that we are authenticated. Also this adds link to log out of the blog. But as you might notice this isn't working yet. Oh nooz, we broke the internez! Lets fix it!
+This adds a nice "Hello &lt;username&gt;" to remind us who we are and that we are authenticated. Also this adds a link to log out of the blog. But as you might notice this isn't working yet. Oh nooz, we broke the internetz! Lets fix it!
 
-We decided to rely on django to handle log-in, lets see if Django can also handle log-out for us. Check https://docs.djangoproject.com/en/1.6/topics/auth/default/ and see if you find something.
+We decided to rely on django to handle login, lets see if Django can also handle logout for us. Check https://docs.djangoproject.com/en/1.6/topics/auth/default/ and see if you find something.
 
-Done reading? You should by now think about adding a url (in `mysite/urls.py`) pointing to the `django.contrib.auth.views.logout` view. Like that:
+Done reading? You should by now think about adding a url (in `mysite/urls.py`) pointing to the `django.contrib.auth.views.logout` view. Like this:
 
 ```
 from django.conf.urls import patterns, include, url
@@ -159,7 +159,7 @@ urlpatterns = patterns('',
 
 Thats it! If you followed all of the above until this point (and did the homework), you now have a blog where you
 
- - need username and password to log in,
+ - need a username and password to log in,
  - need to be logged in to add/edit/publish(/delete) posts
  - and can log out again
 
