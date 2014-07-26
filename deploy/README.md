@@ -10,7 +10,7 @@ We will be following this tutorial: https://devcenter.heroku.com/articles/gettin
 
 We need to create a `requirements.txt` file to tell Heroku what Python packages need to be installed on our server.
 
-But first, Heroku needs us to install the `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
+But first, Heroku needs us to install a few packages. Go to your console with `virtualenv` activated and type this:
 
     (myvenv) $ pip install dj-database-url gunicorn whitenoise
 
