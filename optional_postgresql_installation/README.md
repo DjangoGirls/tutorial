@@ -124,7 +124,7 @@ Once that's done, enter the following command in the terminal (make sure your `v
 
 Run the following in your console:
 
-    (venv) ~/djangogirls$ pip install psycopg2
+    (myvenv) ~/djangogirls$ pip install psycopg2
 
 If that goes well, you'll see something like this
 

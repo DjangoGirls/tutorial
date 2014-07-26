@@ -12,11 +12,11 @@ We need to create a `requirements.txt` file to tell Heroku what Python packages 
 
 But first, Heroku needs us to install the `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
 
-    (venv) $ pip install dj-database-url gunicorn whitenoise
+    (myvenv) $ pip install dj-database-url gunicorn whitenoise
 
 After the installation is finished, run this command:
 
-    (venv) $ pip freeze > requirements.txt
+    (myvenv) $ pip freeze > requirements.txt
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
 
@@ -118,7 +118,7 @@ Heroku uses git repository to manage your project files, so we need to use it to
 
 Create `.gitignore` file with following content:
 
-    venv
+    myvenv
     __pycache__
     staticfiles
     local_settings.py
