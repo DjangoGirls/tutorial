@@ -134,11 +134,11 @@ Now we define properties we were talking about: `title`, `text`, `created_date`,
 
 We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.6/ref/models/fields/#field-types).
 
-What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is a name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have method that calculates average price you could call it `calculate_average_price`).
+What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is a name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
 
 Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
-If something is still not clear about models, feel free to ask your coach! We know it is very complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks sligthly less magic for you now!
+If something is still not clear about models, feel free to ask your coach! We know it is very complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Create tables for models in your database
 
