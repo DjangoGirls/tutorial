@@ -42,7 +42,7 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
 The command above will create a folder called `venv` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
 
-    C:\Users\Name> venv\Scripts\activate
+    C:\Users\Name\djangogirls> venv\Scripts\activate
 
 on Windows, or:
 
