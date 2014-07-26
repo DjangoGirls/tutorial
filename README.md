@@ -30,4 +30,4 @@ Ok, [let's start at the beginning...](how_internet_works/README.md)
 
 ## About and contributing
 
-This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](contributing/README.md).
+This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing_guidelines](contributing_and_editing_this_book/README.md).
