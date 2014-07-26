@@ -16,7 +16,7 @@ It was written by programmers who worked for Twitter and is now developed by vol
 
 ## Install Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`mysite/blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`blog/templates/blog/post_list.html`):
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -42,7 +42,7 @@ First, we need to create a folder to store our static files in. Go ahead and cre
     mysite
         └───static
 
-Now we need to tell Django where it can find it. Open up the `mysite/mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Now we need to tell Django where it can find it. Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
@@ -59,13 +59,13 @@ Let's create a CSS file now, to add your own style to your web-page. Create a ne
             └───css
                 blog.css
 
-Time to write some CSS! Open up the `mysite/static/css/blog.css` file in your code editor.
+Time to write some CSS! Open up the `static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
-In your `mysite/static/css/blog.css` file you should add following code:
+In your `static/css/blog.css` file you should add following code:
 
     h1 a {
         color: #FCA205;
