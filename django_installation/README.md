@@ -20,7 +20,9 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
 
     mkdir djangogirls
 
-We will make a virtualenv called `venv`. The general command will be in the format python -m venv `name_of_venv`.
+We will make a virtualenv called `venv`. The general command will be in the format:
+
+    python -m venv `name_of_venv`.
 
 ### Windows
 
@@ -73,40 +75,5 @@ Now that you have your `virtualenv` started, you can install Django using `pip`.
     Cleaning up...
 
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
-
-### Installing PostgreSQL package for Python
-
-First, install Heroku Toolbelt from https://toolbelt.heroku.com/ While we will need this mostly for deploying your site later on, it also includes Git, which might come in handy already.
-
-Next up, we need to install a package which lets Python talk to PostgreSQL - this is called `psycopg2`. The installation instructions differ slightly between Windows and Linux/OS X.
-
-### Windows
-
-For Windows, download the pre-built file from http://www.stickpeople.com/projects/python/win-psycopg/
-
-Make sure you get the one corresponding to your Python version (3.4 should be the last line) and to the correct architecture (32 bit in the left column or 64 bit in the right column).
-
-Rename the downloaded file and move it so that it's now available at `C:\psycopg2.exe`.
-
-Once that's done, enter the following command in the terminal (make sure your `virtualenv` is activated):
-
-    easy_install C:\psycopg2.exe
-
-### Linux and OS X
-
-Run the following in your console:
-
-    (venv) ~/djangogirls$ pip install psycopg2
-
-If that goes well, you'll see something like this
-
-    Downloading/unpacking psycopg2
-    Installing collected packages: psycopg2
-    Successfully installed psycopg2
-    Cleaning up...
-
----
-
-Once that's completed, run `python -c "import psycopg2"`. If you get no errors, everything's installed successfully.
 
 That's it! You're now (finally) ready to create a Django application! But to do that, you need a nice program to write your code in...
