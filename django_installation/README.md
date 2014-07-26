@@ -16,41 +16,47 @@ So, let's create a **virtual environment** (also called a *virtualenv*). It will
 
 All you need to do is find a folder in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name\` (where `Name` is the name of your login).
 
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
+
+    mkdir djangogirls
+
+We will make a virtualenv called `venv`. The general command will be in the format python -m venv `name_of_venv`.
+
 ### Windows
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few tutorials ago - remember?) and run `C:\Python\python -m venv blog`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few tutorials ago - remember?) and run `C:\Python\python -m venv venv`. It will look like this:
 
-    C:\Users\Name> C:\Python34\python -m venv blog
+    C:\Users\Name\djangogirls> C:\Python34\python -m venv venv
 
-where `C:\Python34\python` is the folder in which you previously installed Python and `blog` is a name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
+where `C:\Python34\python` is the folder in which you previously installed Python and the second `venv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
 
 ### Linux and OS X
 
 Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
-    ~$ python3 -m venv blog
+    ~/djangogirls$ python3 -m venv venv
 
 ## Working with virtualenv
 
-The command above will create a folder called `blog` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
+The command above will create a folder called `venv` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
 
-    C:\Users\Name> blog\Scripts\activate
+    C:\Users\Name> venv\Scripts\activate
 
 on Windows, or:
 
-    ~$ source blog/bin/activate
+    ~/djangogirls$ source venv/bin/activate
 
 on OS X and Linux.
 
 You will know that you have `virtualenv` started when you see that the prompt in your console looks like:
 
-    (blog) C:\Users\Name>
+    (venv) C:\Users\Name\djangogirls>
 
 or:
 
-    (blog) ~$
+    (venv) ~/djangogirls$
 
-Notice the prefix `(blog)` appears!
+Notice the prefix `(venv)` appears!
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
@@ -60,7 +66,7 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django==1.6.5` (note that we use a double equal sign: `==`).
 
-    (blog) ~$ pip install django==1.6.5
+    (venv) ~$ pip install django==1.6.5
     Downloading/unpacking django==1.6.5
     Installing collected packages: django
     Successfully installed django
@@ -90,7 +96,7 @@ Once that's done, enter the following command in the terminal (make sure your `v
 
 Run the following in your console:
 
-    (blog) ~$ pip install psycopg2
+    (venv) ~/djangogirls$ pip install psycopg2
 
 If that goes well, you'll see something like this
 

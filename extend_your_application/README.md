@@ -10,7 +10,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Create a link in the template
 
-We will start with adding a link inside `mysite/blog/templates/blog/post_list.html` file. So far it should look like:
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
 
     {% extends 'mysite/base.html' %}
 
@@ -44,7 +44,7 @@ Let's create an URL in `urls.py` for our `post_detail` *view*!
 
 ### URL: http://127.0.0.1:8000/post/1/
 
-We want to create an URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `mysite/blog/urls.py` file. It should look like this:
+We want to create an URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `blog/urls.py` file. It should look like this:
 
     from django.conf.urls import patterns, include, url
     from . import views
@@ -95,7 +95,7 @@ The good news is that you actually can create your own `Page not found` page and
 
 Ok, time to add a *view* to our `views.py` file!
 
-We should open `mysite/blog/views.py` and add the following code:
+We should open `blog/views.py` and add the following code:
 
     from django.shortcuts import render, get_object_or_404
 
@@ -117,7 +117,7 @@ It worked! But what happens when you click a link in blog post title?
 
 Oh no! Error once again! But we already know how to deal with it, right? We need to add a template!
 
-We will create a file in `mysite/blog/templates/blog` called `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 
