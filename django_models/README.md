@@ -57,26 +57,26 @@ A model in Django is a special kind of object - it is saved in the `database` (d
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our `mysite` project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `mysite` folder where `manage.py` file is) `python manage.py startapp blog`.
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `djangogirls` folder where `manage.py` file is) `python manage.py startapp blog`.
 
-    (blog) ~/mysite python manage.py startapp blog
+    (venv) ~/djangogirls$ python manage.py startapp blog
 
 You will notice that a new `blog` folder is created and it contains a number of files now. Our folders and files in our project should look like this:
 
-    ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   ├── wsgi.py
-    ├── manage.py
-    └── blog
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+    mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    ├── wsgi.py
+    manage.py
+    blog
+    ├── __init__.py
+    ├── admin.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
 
-After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add the `mysite` application (which was created for us when we started a new project in the last chapter). So the final product should look like this:
+After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add the `mysite` application (which was created for us when we started a new project in the last chapter). So the final product should look like this:
 
     INSTALLED_APPS = (
         'django.contrib.admin',
@@ -93,7 +93,7 @@ After creating an application we also need to tell Django that it should use it.
 
 In a file `models.py` we define all objects called `Models` - this is a place in which we will define our blog post.
 
-Let's open `mysite/blog/models.py`, remove everything from it and write code like this:
+Let's open `blog/models.py`, remove everything from it and write code like this:
 
     from django.db import models
     from django.utils import timezone
@@ -144,7 +144,7 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 The last step here is to add our new model to our database. It is as easy as typing `python manage.py syncdb`. It will look like this:
 
-    (blog) ~/mysite python manage.py syncdb
+    (venv) ~/djangogirls$ python manage.py syncdb
     Creating tables ...
     Creating table blog_post
     Installing custom SQL ...

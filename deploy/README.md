@@ -38,7 +38,7 @@ We need to tell Heroku which Python version we want to use. This is simply done 
 
 There is a difference between settings we are using locally (on our computer) and settings for our server. Heroku is using one database, and your computer is using a different database.  That's why we need to create a seperate file for settings that will only be available for our local enviroment.
 
-Go ahead and create `mysite/mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/mysite/settings.py` file. Just like that:
+Go ahead and create `mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/settings.py` file. Just like that:
 
     DATABASES = {
         'default': {
@@ -55,7 +55,7 @@ Then just save it! :)
 
 ## mysite/settings.py
 
-Another thing we need to do is modify our website's `settings.py` file. Open `mysite/mysite/settings.py` in your editor and add the following lines at the end of the file:
+Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines at the end of the file:
 
     import dj_database_url
     DATABASES['default'] =  dj_database_url.config()
@@ -66,7 +66,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
 
     STATIC_ROOT = 'staticfiles'
 
-At the end of the `mysite/mysite/settings.py`, copy and paste this:
+At the end of the `mysite/settings.py`, copy and paste this:
 
     try:
         from .local_settings import *
@@ -79,7 +79,7 @@ Then save the file.
 
 ## mysite/urls.py
 
-Open `mysite/mysite/urls.py` file and add these two lines in the beginning of the file:
+Open `mysite/urls.py` file and add these two lines in the beginning of the file:
 
     from django.conf.urls.static import static
     from django.conf import settings
@@ -104,7 +104,7 @@ The whole thing should look like this:
 
 ## mysite/wsgi.py
 
-Open the `mysite/mysite/wsgi.py` file and replace this line:
+Open the `mysite/wsgi.py` file and replace this line:
 
     application = get_wsgi_application()
 
@@ -135,7 +135,7 @@ In case you don't have SSH key that command would automatically create one. SSH 
 
 Heroku uses git repository to manage your project files, so we need to use it to.
 
-Create `mysite/.gitignore` file with following content:
+Create `.gitignore` file with following content:
 
     venv
     __pycache__

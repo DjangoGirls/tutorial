@@ -16,7 +16,7 @@ It was written by programmers who worked for Twitter and is now developed by vol
 
 ## Install Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in you `.html` file (`mysite/blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in you `.html` file (`blog/templates/blog/post_list.html`):
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -36,12 +36,12 @@ CSS is a static file, so in order to customize CSS, we need to first configure s
 
 ### Configure static files in Django
 
-First, we need to create a folder to store our static files in. Go ahead and create a folder called `static` inside your (parent) `mysite` folder.
+First, we need to create a folder to store our static files in. Go ahead and create a folder called `static` inside your `djangogirls` folder.
 
-    mysite
-        └───static
+    static
+    manage.py
 
-Now we need to tell Django how it can find it. Open up the `mysite/mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Now we need to tell Django how it can find it. Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
@@ -55,18 +55,17 @@ That's it! Time to see if it works :)
 
 First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-    mysite
-        └───static
-            └───css
-                blog.css
+    static
+    └───css
+        blog.css
 
-Time to write some CSS! Open up the `mysite/static/css/blog.css` file in your code editor.
+Time to write some CSS! Open up the `static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/
 
-In your `mysite/static/css/blog.css` file you should add following code:
+In your `static/css/blog.css` file you should add following code:
 
     h1 a {
         color: #FCA205;
@@ -74,7 +73,7 @@ In your `mysite/static/css/blog.css` file you should add following code:
 
 `a` inside of `h1` (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`. Of course, you can put your own color here!
 
-Then, we need to also tell our HTML template that we added some CSS. Open the `mysite/blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+Then, we need to also tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
     {% load staticfiles %}
 
@@ -122,13 +121,13 @@ Add this to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `mysite/blog/templates/blog/post_list.html` file:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Now add this line in `mysite/static/css/blog.css` and refresh the page:
+Now add this line in `static/css/blog.css` and refresh the page:
 
     h1 a {
         color: #FCA205;
@@ -155,7 +154,7 @@ And now add a class `post` to your `div` containing blogposts.
         <p>{{ post.text }}</p>
     </div>
 
-All right. We have only one day, so we need to speed things up a little! We can't explain you every little detail about CSS. For now just copy and paste following code into your `mysite/static/css/blog.css` file:
+All right. We have only one day, so we need to speed things up a little! We can't explain you every little detail about CSS. For now just copy and paste following code into your `static/css/blog.css` file:
 
     .page-header {
         background-color: #ff9400;
@@ -215,7 +214,7 @@ Then also replace this:
         </div>
     {% endfor %}
 
-in the `mysite/blog/templates/blog/post_list.html` with this:
+in the `blog/templates/blog/post_list.html` with this:
 
     <div class="content">
         <div class="row">

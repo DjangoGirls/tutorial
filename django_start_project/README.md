@@ -13,22 +13,21 @@ The first step towards creating it is starting a new Django project. Basically, 
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
 
-In console you should run (remember that you don't type `(blog) ~$`, ok?):
+In console you should run (remember that you don't type `(venv) ~/djangogirls$`, ok?):
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(blog)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(venv)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
 
 Run on Linux or Mac OS:
 
-    (blog) ~$ django-admin.py startproject mysite
+    (venv) ~/djangogirls$ django-admin.py startproject mysite .
 
 or on Windows:
 
-    (blog) ~$ python blog\Scripts\django-admin.py startproject mysite
+    (venv) ~/djangogirls$ python venv\Scripts\django-admin.py startproject mysite .
 
 `django-admin.py` is a script that will create the folders and files for you. You should now have a folder structure which looks like this:
 
-    mysite
-    │   manage.py
+    manage.py
     │
     └───mysite
             settings.py
@@ -47,7 +46,7 @@ Let's ignore the other files for now - we won't change them. The only thing to r
 
 ## Changing settings
 
-Let's make some changes in `mysite/mysite/settings.py`.
+Let's make some changes in `mysite/settings.py`.
 
 It would be nice to have the correct time on our website. You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this:
 
@@ -58,7 +57,7 @@ It would be nice to have the correct time on our website. You should find lines 
 
 There's a lot of different database software that can store data for your site. We'll use one of the best ones, `PostgreSQL`, which we installed in __Database__ chapter.
 
-Find this part in your `mysite/mysite/settings.py` file:
+Find this part in your `mysite/settings.py` file:
 
     DATABASES = {
         'default': {
@@ -84,7 +83,7 @@ Make sure to replace `yourname` with the username you created in __Database__ se
 
 To create a database for our blog, let's run the following in the console: `python manage.py syncdb` (we need to be in a parent `mysite` directory that contains `manage.py` file). If that goes well, you should see something like this:
 
-    (blog) ~/mysite python manage.py syncdb
+    (venv) ~/djangogirls$ python manage.py syncdb
     Creating tables ...
     Creating table django_admin_log
     Creating table auth_permission
@@ -113,7 +112,7 @@ And we're done! Time to start the web server and see if our website is working!
 
 You need to be in the folder that contains the `manage.py` file (the `mysite` folder). In the console, we can start the web server by running `python manage.py runserver`:
 
-    (blog) ~/mysite python manage.py runserver
+    (venv) ~/djangogirls$ python manage.py runserver
 
 Now all you need to do is check that your website is running - open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
 

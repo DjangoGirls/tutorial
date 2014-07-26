@@ -8,13 +8,12 @@ This way you don't have to write it every time in every single html file you hav
 
 A base template is the most basic template that you  use to extend on every page of your website.
 
-Create a `mysite/templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
+Create a `templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
 
     mysite
+    └───templates
         └───mysite
-            └───templates
-                └───mysite
-                    base.html
+            base.html
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
@@ -72,7 +71,7 @@ We basically replaced everything between `{% for post in posts %}{% endfor %}` w
 
 What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`. We will show you how to do that in a moment.
 
-Now save it, and open your `mysite/blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body and then delete also `<div class="page-header"></div>`, so the file will look like this:
+Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body and then delete also `<div class="page-header"></div>`, so the file will look like this:
 
 
     {% for post in posts %}

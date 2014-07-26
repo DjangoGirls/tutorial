@@ -12,7 +12,7 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 ## How do URLs work in Django?
 
-Let's open up the `mysite/mysite/urls.py` file and see what it looks like:
+Let's open up the `mysite/urls.py` file and see what it looks like:
 
     from django.conf.urls import patterns, include, url
 
@@ -45,10 +45,10 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
 
-We also want to keep the `mysite/mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/mysite/urls.py` file.
+We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
 Go ahead, delete comment lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
 
-Your `mysite/mysite/urls.py` file should now look like this:
+Your `mysite/urls.py` file should now look like this:
 
     from django.conf.urls import patterns, include, url
 
@@ -64,7 +64,7 @@ Django will now redirect everything that comes into `http://127.0.0.1:8000/` to 
 
 ## blog.urls
 
-Create a new `mysite/blog/urls.py` empty file. All right! Add these two first lines:
+Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
     from django.conf.urls import patterns, include, url
     from . import views
