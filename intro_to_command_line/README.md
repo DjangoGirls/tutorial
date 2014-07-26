@@ -7,7 +7,7 @@ Hey girls, the following steps will show you how to use the black window.  This 
 Each operating system has a set of commands for the command line.
 Here is a summary of some useful commands:
 
-| Command (WIN)      | Command (Mac OS / Linux)    | Description | Example|
+| Command (Windows)      | Command (Mac OS / Linux)    | Description | Example|
 | ------------- |-----------|-------------| -----|
 | exit    | exit | close the window | **exit** |
 | cd      | cd   | change directory      |   **cd test** |
@@ -41,21 +41,21 @@ For example if you are in a directory called c:\test, and there were three direc
 * The **cd ..**  command - this will take you to the next folder up.
 
 
-* The **dir** (WIN) and **ls** (others) command - this will list the files and directories contained in your current directory. If I typed **dir \test** or **ls test** I would see the contents of the c:\test directory.
+* The **dir** (Windows) and **ls** (others) command - this will list the files and directories contained in your current directory. If I typed **dir \test** or **ls test** I would see the contents of the c:\test directory.
 Also note for many commands you can use the \* symbol which stands for wildcard. With this in mind, typing **dir *.txt** on WIN or **ls *.txt** on other OS will only list those files that end with .txt.
 
 
-* The **copy** (WIN) or **cp** (others) command - this allows you to copy files from one location to another. To use this command you would type **copy *sourcefile targetfile***. For example if you have the file c:\test\test.txt and would like to copy it to c:\windows\test.txt you would type
+* The **copy** (Windows) or **cp** (others) command - this allows you to copy files from one location to another. To use this command you would type **copy *sourcefile targetfile***. For example if you have the file c:\test\test.txt and would like to copy it to c:\windows\test.txt you would type
 **copy c:\test\test.txt c:\windows\test.txt** and press enter.
 
 
-* The **move** (WIN) or **mv** (others) command - this allows you to move files from one location to another. The syntax you use is the same as for the **copy** command.
+* The **move** (Windows) or **mv** (others) command - this allows you to move files from one location to another. The syntax you use is the same as for the **copy** command.
 
 
-* The **md** (WIN) or **mkdir** (others) command - this allows you to create a new directory.  For example **md temp** creates a new folder called temp in the current directory.
+* The **md** (Windows) or **mkdir** (others) command - this allows you to create a new directory.  For example **md temp** creates a new folder called temp in the current directory.
 
 
-* The **del** (WIN) or **rm** command (others) - this allows you to delete the specified file.  For example, **del test.txt** deletes the test.txt file from the current directory.
+* The **del** (Windows) or **rm** command (others) - this allows you to delete the specified file.  For example, **del test.txt** deletes the test.txt file from the current directory.
 
 
 
