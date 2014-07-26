@@ -1,27 +1,27 @@
 # How to contribute
 
-Django Girls Tutorial is licensed under *Creative Commons Attribution-ShareAlike 4.0* license. Everyone is free to add, edit and correct the tutorial.
+The Django Girls Tutorial is licensed under a *Creative Commons Attribution-ShareAlike 4.0* license. Everyone is free to add, edit and correct the tutorial.
 
 # Editing basics
 
-The source code of the tutorial is [hosted on Github](). Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+The source code of the tutorial is [hosted on Github](). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
-The tutorial uses [GitBook](https://www.gitbook.io/) service for the publishing the documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
+The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
-You can find any discussion about the content of the tutorial on [Github issue tracker](https://github.com/DjangoGirls/tutorial/issues).
+You can find any discussions about the contents of the tutorial on the [Github issue tracker](https://github.com/DjangoGirls/tutorial/issues).
 
 # Getting started and prerequisites
 
-For contributing the tutorial the following is needed to get started.
+For contributing to the tutorial the following is needed to get started:
 
-* You have a [Github account](https://github.com)
-* For complex changes you need to be familiar with [Git command line basics](https://help.github.com/articles/set-up-git) or you are using an app ([Windows](https://windows.github.com/), [Mac](https://mac.github.com/)) to push your edits on a local computer to Github
+* a [Github account](https://github.com)
+* in the case of complex edits familiarity with [Git command line basics](https://help.github.com/articles/set-up-git) or familiarity with an app ([Windows](https://windows.github.com/), [Mac](https://mac.github.com/)) to push your edits made on your computer to Github.
 
 ## Fork the repository
 
-First fork [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) project into your personal Github repository:
+First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) repository to your personal Github account:
 
 ![Fork button](images/fork.png)
 
@@ -29,25 +29,27 @@ First fork [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) proje
 
 ## Simple changes
 
-For a simple changes like typo corrections you can use Github online editor.
+For simple changes like typo corrections you can use the Github online editor:
 
-* Open your local fork page on Github
-* Go to *README.md* file in any chapter
-* Press *Edit* icon (pen) and you can edit the chapter in Github's online editor
+* Open your local fork page on Github,
+* go to *README.md* file in any chapter,
+* press the *Edit* icon (pen)
+
+and you can edit the chapter directly on github.com.
 
 ![Edit button](images/edit.png)
 
-Now you can edit the page in Markdown syntax.
+Markdown syntax is used to edit the individual pages of the tutorial.
 
 ![Github editor](images/github_editor.png)
 
-Save changes and make a pull request as explained below.
+Save your changes and create a pull request as explained below.
 
 ## New content and complex changes
 
-For adding new chapters, writing longer snippets of text or adding images you need to get the copy of the tutorial to your local computer.
+For adding new chapters, writing longer snippets of text or adding images, you need to get a copy of the tutorial to your local computer.
 
-Either use Github app (above) or `git` command line to get the repository locally. You get the repository address from the front page of your own Github repository fork:
+Either use the Github app for your operating system (mentioned above) or `git` command line to get the repository locally. You get the repository address from the front page of your own Github repository fork:
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
