@@ -26,7 +26,7 @@ It will (more or less) look like this:
 
 ![Figure 0.1](images/application.png)
 
-Ok, let's start at the beginning...
+Ok, [let's start at the beginning...](how_internet_works/README.md)
 
 ## About and contributing
 
