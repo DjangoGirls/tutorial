@@ -4,9 +4,9 @@ Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS f
 
 ## What is CSS?
 
-Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as a make-up for our webpage ;).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as make-up for our webpage ;).
 
-But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, reinventing the wheel is no fun.
+But we don't want to start from scratch again, right? We will, once more, use something that has already been done by programmers and released on the Internet for free. You know, reinventing the wheel is no fun.
 
 ## Let's use Bootstrap!
 
@@ -33,7 +33,7 @@ Looking nicer already!
 
 Another thing you will learn about today is called __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on request context and will be the same for every user.
 
-CSS is a static file, so in order to customize CSS, we need to first configure static files in Django. You'll only do it once and for all. Let's start:
+CSS is a static file, so in order to customize CSS, we need to first configure static files in Django. You'll only need to do it once. Let's start:
 
 ### Configure static files in Django
 
@@ -42,13 +42,13 @@ First, we need to create a folder to store our static files in. Go ahead and cre
     static
     manage.py
 
-Now we need to tell Django where it can find it. Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
     )
 
-This way Django will know where your static files are.
+This way Django will know where to find your static files.
 
 ## Your first CSS file!
 
@@ -70,9 +70,9 @@ In your `static/css/blog.css` file you should add following code:
         color: #FCA205;
     }
 
-`h1 a` is a CSS Selector. `a` element inside of `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. Any `a` element inside of an `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the element class or the element id. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point out to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the element class or the element id. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 
@@ -88,7 +88,7 @@ We're just loading static files here :). Then, between the `<head>` and `</head>
 
 We just told our template where our CSS file is located. Ok, save the file and refresh the site!
 
-Your file should look like this at this point:
+Your file should now look like this:
 
     {% load staticfiles %}
     <html>
@@ -132,7 +132,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Now add the line `font-family: 'Lobster';` in the CSS file `mysite/static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
+Now add the line `font-family: 'Lobster';` in the CSS file `static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
 
     h1 a {
         color: #FCA205;
@@ -146,7 +146,7 @@ Great!
 
 As mentioned above, CSS has a concept of classes, which basically allows you to name a part of the HTML code and apply styles only to this part, not affecting others. It's super helpful if you have two divs, but they're doing something very different (like your header and your post), so you don't want them to look the same.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains header, like this:
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
@@ -242,9 +242,9 @@ Save those files and refresh your website.
 
 Wohoo! Looks awesome, right? The code we just pasted is not really so hard to understand and you should be able to understand most of it just by reading it.
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. If you break something, don't worry, you can always undo this!
+Don't be afraid to tinker with this CSS a little bit and try to change some things. If you break something, don't worry, you can always undo it!
 
-Anyway, we really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) as a post-workshop homework to learn everything you need to know about making your websites prettier with CSS.
+Anyway, we really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) as some post-workshop homework to learn everything you need to know about making your websites prettier with CSS.
 
-Ready for next chapter?! :)
+Ready for the next chapter?! :)
 

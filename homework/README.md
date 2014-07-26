@@ -1,8 +1,8 @@
 # Homework: add more to your website!
 
-Yes, this is the last thing we will do in this tutorial. You already have learned a lot! Time to use this knowledge.
+Yes, this is the last thing we will do in this tutorial. You have already learned a lot! Time to use this knowledge.
 
-## Page with list of not published posts
+## Page with list of unpublished posts
 
 Remember the chapter about querysets? We created a view `post_list` that displays only published blog posts (those with non-empty `published_date`).
 
@@ -42,11 +42,11 @@ It looks very similar to our `post_list.html`, right?
 
 Now when you go to `http://127.0.0.1:8000/drafts/` you will see the list of unpublished posts.
 
-Yay! First task is done!
+Yay! Your first task is done!
 
 ## Add publish button
 
-It would be nice to have a button on blog post detail page that will immediately publish the post, right?
+It would be nice to have a button on the blog post detail page that will immediately publish the post, right?
 
 Let's open `blog/template/blog/post_detail.html` and change these lines:
 
@@ -64,7 +64,7 @@ into these:
 
 As you noticed, we added `{% else %}` line here. That means, that if the condition from `{% if post.published_date %}` is not fulfilled (so if there is no `published_date`), then we want to do the line `<a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>`. Note that we are passing a `pk` variable in the `{% url %}`.
 
-Time to create an URL (in `blog/urls.py`):
+Time to create a URL (in `blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/publish/$', views.post_publish, name='post_publish'),
 
@@ -95,9 +95,9 @@ Let's open `blog/templates/blog/post_detail.html` once again and add this line:
 
     <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
 
-just under a line with edit button.
+just under a line with the edit button.
 
-Now we need an URL (`blog/urls.py`):
+Now we need a URL (`blog/urls.py`):
 
     url(r'^post/(?P<pk>[0-9]+)/remove/$', views.post_remove, name='post_remove'),
 
@@ -116,7 +116,7 @@ Let's test it! Go to the page with a post and try to delete it!
 
 ![Delete button](images/delete3.png)
 
-Yes, it is the last thing! You completed this tutorial! You are awesome!
+Yes, this is the last thing! You completed this tutorial! You are awesome!
 
 
 

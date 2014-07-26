@@ -1,6 +1,6 @@
 # Deploy!
 
-Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is a process of publishing your application on the Internet so people can finally go and see your app :).
+Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
 As you learned, a website has to be located on a server. There are a lot of providers, but we will use the one with the simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
 
@@ -14,7 +14,7 @@ But first, Heroku needs us to install a few packages. Go to your console with `v
 
     (myvenv) $ pip install dj-database-url gunicorn whitenoise
 
-After the installation is finished, go to the `mysite` directory and run this command:
+After the installation is finished, go to the `djangogirls` directory and run this command:
 
     (myvenv) $ pip freeze > requirements.txt
 
@@ -29,7 +29,7 @@ This line is needed for your application to work on Heroku.
 
 ## Procfile
 
-Another thing we need to create is a Procfile. Open up your code editor, create a file called `Procfile` in `mysite` directory and add this line:
+Another thing we need to create is a Procfile. Open up your code editor, create a file called `Procfile` in `djangogirls` directory and add this line:
 
     web: gunicorn mysite.wsgi
 
@@ -106,17 +106,17 @@ You need to install your Heroku toolbelt which you can find here (you can skip t
 
 Please also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
 
-Then authenticate Heroku account on you computer by running this command:
+Then authenticate your Heroku account on your computer by running this command:
 
     $ heroku login
 
-In case you don't have SSH key that command would automatically create one. SSH keys are required to push code to the Heroku.
+In case you don't have an SSH key this command will automatically create one. SSH keys are required to push code to the Heroku.
 
 ## Git
 
-Heroku uses git repository to manage your project files, so we need to use it to.
+Heroku uses a git repository to manage your project files, so we need to use it too.
 
-Create `.gitignore` file with following content:
+Create `.gitignore` file with the following content:
 
     myvenv
     __pycache__
@@ -126,10 +126,10 @@ Create `.gitignore` file with following content:
 
 and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
 
-Next, we’ll create a new git repository and save our changes. Go to your console and run this commands:
+Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
 
     $ git init
-    Initialized empty Git repository in /Users/kreitz/hellodjango/.git/
+    Initialized empty Git repository in ~/djangogirls/.git/
     $ git add .
     $ git commit -m "My Django Girls app"
     [master (root-commit) 2943412] My Django Girls
@@ -172,6 +172,6 @@ As you can see, there is an error. Heroku created a new database for us and it's
 
     $ heroku run python manage.py syncdb
 
-You should now see your website in a browser! Congrats :)!
+You should now be able to see your website in a browser! Congrats :)!
 
 
