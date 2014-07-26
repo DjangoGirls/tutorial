@@ -1,12 +1,12 @@
 # Template extending
 
-Another nice thing Django has for you is __template extending__. What does it mean? It means that you can use the same parts of your HTML for different pages of your website.
+Another nice thing Django has for you is __template extending__. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-This way you don't have to write it every time in every single html file you have, you don't repeat yourself and if you want to change something, you don't have to do it in every template, just once!
+This way you don't have to repeat yourself in every file, when you want to use the same information/layout and, if you want to change something, you don't have to do it in every template, just once!
 
 ## Create base template
 
-A base template is the most basic template that you  use to extend on every page of your website.
+A base template is the most basic template that you extend on every page of your website.
 
 Create a `templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
 
@@ -69,10 +69,9 @@ We basically replaced everything between `{% for post in posts %}{% endfor %}` w
     {% block content %}
     {% endblock %}
 
-What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this place in templates that are extending `base.html`. We will show you how to do that in a moment.
+What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this block in other templates that extend `base.html`. We will show you how to do this in a moment.
 
-Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else than what's inside the body and then delete also `<div class="page-header"></div>`, so the file will look like this:
-
+Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else other than what's inside the body and then also delete `<div class="page-header"></div>`, so the file will look like this:
 
     {% for post in posts %}
         <div class="post">
@@ -82,7 +81,7 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
         </div>
     {% endfor %}
 
-And now add this line on the beginning of the file:
+And now add this line to the beginning of the file:
 
     {% extends 'mysite/base.html' %}
 

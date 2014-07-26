@@ -66,21 +66,6 @@ This is already set up in this part of your `mysite/settings.py` file:
         }
     }
 
-And replace it with this:
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'djangogirls',
-            'USER': 'yourname',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-    }
-
-Make sure to replace `yourname` with the username you created in __Database__ section, then save the file.
-
 To create a database for our blog, let's run the following in the console: `python manage.py syncdb` (we need to be in a parent `mysite` directory that contains `manage.py` file). If that goes well, you should see something like this:
 
     (myvenv) ~/djangogirls$ python manage.py syncdb
