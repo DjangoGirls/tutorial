@@ -6,7 +6,7 @@ You might have noticed that you didn't have to use your password apart from back
 
 First lets make things secure. We will protect our `post_new`, `post_edit` and `post_publish` views so that only logged-in users can access them. Django ships with some nice helpers for that using a kind-of advanced topic of _decorators_. Don't worry about the technicalities now, you can read up on these later. The decorator to use is shipped in Django in a module `django.contrib.auth.decorators` and is named `login_required`.
 
-So edit your `mysite/views.py` and add these lines at the top where all the imports are:
+So edit your `blog/views.py` and add these lines at the top where all the imports are:
 
 ```
 from django.contrib.auth.decorators import login_required
