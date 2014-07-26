@@ -14,7 +14,7 @@ Here is a summary of some useful commands:
 | dir     | ls   |list folders/files      | **dir** |
 | copy    | cp   | copy file | **copy c:\test\test.txt c:\windows\test.txt** |
 | move | mv | move file | **move c:\test\test.txt c:\windows\test.txt** |
-| md | mkdir | create a new folder | **md testfolder** |
+| mkdir | mkdir | create a new folder | **mkdir testfolder** |
 |del | rm | delete a folder/file | **del c:\test\test.txt**
 For more about the above commands,  check out the Further Information section below.
 
@@ -52,7 +52,7 @@ Also note for many commands you can use the \* symbol which stands for wildcard.
 * The **move** (Windows) or **mv** (others) command - this allows you to move files from one location to another. The syntax you use is the same as for the **copy** command.
 
 
-* The **md** (Windows) or **mkdir** (others) command - this allows you to create a new directory.  For example **md temp** creates a new folder called temp in the current directory.
+* The **mkdir** command - this allows you to create a new directory.  For example **mkdir temp** creates a new folder called temp in the current directory.
 
 
 * The **del** (Windows) or **rm** command (others) - this allows you to delete the specified file.  For example, **del test.txt** deletes the test.txt file from the current directory.
