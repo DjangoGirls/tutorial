@@ -34,7 +34,7 @@ These are just a very few of the possible black window commands.
 * The **exit** commmand - this will cause the window to close; it makes sense, right? No need to explain too much ...
 
 
-* The **cd** command - this command allows you to **c**hange your current **d**irectory. To use the cd command you type cd directoryname and press enter.
+* The **cd** command - this command allows you to **c** hange your current **d** irectory. To use the cd command you type cd directoryname and press enter.
 For example if you are in a directory called c:\test, and there were three directories in that the test directory called A, B, and C, you could just type **cd A** and press enter. You would then be in the c:\test\A.
 
 
