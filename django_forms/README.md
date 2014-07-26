@@ -267,7 +267,7 @@ and when we just opened a form with this post to edit:
 
     form = PostForm(instance=post)
 
-Ok, let's test if it works! Let's go to `post_detaito edit:
+Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in the top-right corner::
 
 ![Edit button](images/edit_button2.png)
 
