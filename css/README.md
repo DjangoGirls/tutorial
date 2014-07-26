@@ -6,6 +6,10 @@ Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS f
 
 Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as a make-up for our webpage ;).
 
+In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the element class or the element id. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point out to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+
+    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+
 But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, inventing a wheel once again is no fun.
 
 ## Let's use Bootstrap!
@@ -16,12 +20,13 @@ It was written by programmers who worked for Twitter and is now developed by vol
 
 ## Install Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in you `.html` file (`mysite/blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`mysite/blog/templates/blog/post_list.html`):
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+This doesn't add any files to your project. It just points to files that exist on the internet.
 Then just go ahead, open your website and refresh page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
@@ -65,6 +70,7 @@ Time to write some CSS! Open up the `mysite/static/css/blog.css` file in your co
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/
+You may also use predefined colors, such as 'red' and 'green'.
 
 In your `mysite/static/css/blog.css` file you should add following code:
 
@@ -72,13 +78,14 @@ In your `mysite/static/css/blog.css` file you should add following code:
         color: #FCA205;
     }
 
-`a` inside of `h1` (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`. Of course, you can put your own color here!
+'h1 a' is a CSS Selector. `a` element inside of `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`, which is orange. Of course, you can put your own color here!
+Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp)
 
 Then, we need to also tell our HTML template that we added some CSS. Open the `mysite/blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
     {% load staticfiles %}
 
-We're just loading static files here :). Then, between the `<head>` and `</head>` add this line:
+We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
@@ -91,8 +98,8 @@ Your file should look like this at this point:
         <head>
             <title>Django Girls blog</title>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
