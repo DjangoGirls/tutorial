@@ -199,6 +199,50 @@ As you can see, you can access different objects in your list by using its name 
 
 You can find a list of all available list methods here in Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
+## Dictionaries
+
+A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define a dictionary is:
+    >>> {}
+    {}
+
+This shows that you just created an empty dictionary. Hurray!
+
+Now, try writing the following command:
+    >>> django_dolls = {'Dottie' : 15, 'Lottie' : 305, 'EmmyLou' : 17}
+
+Don't be surprised with the weird names. Go to the link: http://hubpages.com/hub/50-Doll-Names to look for more cute doll names. :P Just Kidding (You should do this if and only if you have a lot of time). 
+
+Above, you just created a variable named django_dolls with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17. 
+
+When to use a dictionary or a list? Well, a good point to ponder on. Just have a soltuion in mind before looking at the answer in the next line.
+
+- Do you just need an ordered sequence of items? Go for a list.
+- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+
+Dictionaries are mutable like "lists" meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
+    >>> django_dolls['Jilly'] = 67
+
+Like the lists, using len() method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+    >>> len(django_dolls)
+    4
+
+I hope it makes sense uptil now. :) Ready for some more fun with Dictionaries? Hop on the next line for some amazing things. 
+
+You can use del() command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key Dottie, just type in the following command:
+
+    >>> del django_dolls['Dottie']
+    >>> django_dolls
+    {'Jilly': 67, 'EmmyLou': 17, 'Lottie': 305}
+
+As you can see from the output, the key-value pair corresponding to 'Dottie' key has been deleted.
+
+Apart from this, you can also change a value associated with an already created key in the dictionary. Type:
+    >>> django_dolls['Jilly'] = 100
+    >>> django_dolls
+    {'Jilly': 100, 'EmmyLou': 17, 'Lottie': 305}
+
+As you can see, the value of the key 'Jilly' has been altered from 67 to 100. :) Exciting? Hurrah! You just learnt another amazing thing. 
+
 ### Summary
 
 Awesome! You know a lot about programming now. In the last part you learned about:
