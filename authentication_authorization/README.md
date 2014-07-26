@@ -116,6 +116,51 @@ So now we made sure that only authorized users (ie. us) can add, edit or publish
     </body>
 ```
 
-You should might the pattern here. There is an if-condition inside the template that checks for authenticated users to show the edit-buttons. Otherwise it shows a login button.
+You might recognize the pattern here. There is an if-condition inside the template that checks for authenticated users to show the edit-buttons. Otherwise it shows a login button.
 
 *Homework*: Edit the template `blog/templates/blog/post_detail.html` to only show the edit-buttons for authenticated users.
+
+## More on authenticated users
+
+Lets add some nice sugar to our templates while we are at it. First we will add some stuff to show that we are logged in. Edit `mysite/templates/mysite/base.html` like this:
+
+```
+        <div class="page-header">
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+            <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</p>
+            {% else %}
+            <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+            {% endif %}
+            <h1><a href="{% url 'blog.views.post_list' %}">Django Girls</a></h1>
+        </div>
+```
+
+This adds a nice "Hello &lt;username&gt;" to remind us who we are and that we are authenticated. Also this adds link to log out of the blog. But as you might notice this isn't working yet. Oh nooz, we broke the internez! Lets fix it!
+
+We decided to rely on django to handle log-in, lets see if Django can also handle log-out for us. Check https://docs.djangoproject.com/en/1.6/topics/auth/default/ and see if you find something.
+
+Done reading? You should by now think about adding a url (in `mysite/urls.py`) pointing to the `django.contrib.auth.views.logout` view. Like that:
+
+```
+from django.conf.urls import patterns, include, url
+
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+    url(r'', include('blog.urls')),
+)
+```
+
+Thats it! If you followed all of the above until this point (and did the homework), you now have a blog where you
+
+ - need username and password to log in,
+ - need to be logged in to add/edit/publish(/delete) posts
+ - and can log out again
+
+ Treat yourself to a drink now because now your page is both great and secured!
