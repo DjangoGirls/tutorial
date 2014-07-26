@@ -45,7 +45,7 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
 > To get around this, use the `virtualenv` command instead.
                                                                             
->     sudo apt-get install python-virtualenv
+>     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv myvenv
 
 
