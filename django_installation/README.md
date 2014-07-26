@@ -36,9 +36,9 @@ The command above will create a folder called `blog` that contains our virtual e
 
     C:\Users\Name> blog\Scripts\activate
 
-on Windows, or:
+on Windows, or use shell command `.` to load the environment to your shell on
 
-    ~$ source blog/bin/activate
+    ~$ . blog/bin/activate
 
 on OS X and Linux.
 
