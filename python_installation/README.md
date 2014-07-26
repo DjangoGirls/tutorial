@@ -4,7 +4,7 @@ Huh, it's exciting, right?! You'll write your first line of code in just minutes
 
 But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, science, graphics and much, much more.
 
-Python was conceived in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. That makes it easy to learn, but don't worry, Python is also really powerful!
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. That makes it easy to learn, but don't worry, Python is also really powerful!
 
 # Python installation
 
@@ -18,7 +18,7 @@ You can download Python for Windows from the website https://www.python.org/down
 
 ### Linux
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), you type in a console:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type:
 
     $ python3 --version
     Python 3.4.1

@@ -6,7 +6,7 @@ Let's write some code!
 
 ## Python prompt
 
-To start tinkering with Python, we need to open up a *prompt* on your computer. How you get there depends on the operating system but once it's open, everything is equal.
+To start playing with Python, we need to open up a *prompt* on your computer. How you get there depends on the operating system but once it's open, everything is equal.
 
 ### Windows
 
@@ -34,7 +34,9 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
 
 After running the Python command, the prompt changed to `>>>`. For us it means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
 
-Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
+If you want to exit the Python console at any point, just type `exit()` or hit `Ctrl + D`. You won't see `>>>` any longer.
+
+But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
 
     >>> 2 + 3
     5
@@ -83,7 +85,7 @@ Wonder why sometimes you call functions by adding `.` at the end of the string (
 
 ### Summary
 
-Ok, enough of strings. So far you've learned about:
+OK, enough of strings. So far you've learned about:
 
 - __the prompt__ - typing commands (code) into prompt give you Python answers
 - __numbers and strings__ - in Python it's math and text objects
@@ -114,7 +116,7 @@ It worked! We used `str` function inside of `len` function. `str` is converting 
 
 ## Variables
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and to not help them remember what things are.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and to help them remember what things are.
 
 Let's say we want to create a new variable called `name`:
 
