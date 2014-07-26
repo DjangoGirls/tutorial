@@ -4,7 +4,9 @@ Django Girls Tutorial is licensed under *Creative Commons Attribution-ShareAlike
 
 # Editing basics
 
-The source code of the tutorial is [hosted on Github](). The tutorial uses [GitBook](https://www.gitbook.io/) service for the publishing the documentation. Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+The source code of the tutorial is [hosted on Github](). Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+
+The tutorial uses [GitBook](https://www.gitbook.io/) service for the publishing the documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
@@ -55,7 +57,7 @@ Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
 ![Gitbook](images/gitbook.png)
 
-Make any changes in the tutorial using the editor.
+Make any changes in the tutorial using the editor and then save changes (*Book* > *Save all*).
 
 Then commin the changes using `git` and push the changes to your remote Github repository.
 
