@@ -8,11 +8,10 @@ This is exactly what we want to do: we will create a form for our `Post` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
-We need to create a file with this name in the `mysite/blog` folder.
+We need to create a file with this name in the `blog` folder.
 
-    mysite
-        └── blog
-            forms.py
+    blog
+       └── forms.py
 
 Ok, let's open it and type the following code:
 
@@ -40,7 +39,7 @@ So once again we will create: a link to the page, an URL, a view and a template.
 
 ## Link to page with the form
 
-It's time to open `mysite/mysite/templates/mysite/base.html`. We will add a link in `div` named `page-header`:
+It's time to open `mysite/templates/mysite/base.html`. We will add a link in `div` named `page-header`:
 
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 
@@ -80,7 +79,7 @@ After saving and refreshing the page `http://127.0.0.1:8000` you will obviously 
 
 ## URL
 
-We open `mysite/blog/urls.py` and add a line:
+We open `blog/urls.py` and add a line:
 
     url(r'^post/new/$', views.post_new),
 
@@ -99,7 +98,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have `post
 
 ## post_new view
 
-Time to open the `mysite/blog/views.py` file and add the following lines:
+Time to open the `blog/views.py` file and add the following lines:
 
     from .forms import PostForm
 
@@ -113,7 +112,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 ## Template
 
-We need to create a file `post_edit.html` in the `mysite/blog/template/blog` directory. To make a form work we need several things:
+We need to create a file `post_edit.html` in the `blog/template/blog` directory. To make a form work we need several things:
 
 - we have to display the form. We can do that for example with a `{{ form.as_p }}`.
 - the line above have to be wrapped with HTML form tag: <`form method="POST">...</form>`
@@ -146,7 +145,7 @@ The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Saving the form
 
-Open `mysite/blog/views.py` once again. Currently all we have in `post_new` view is:
+Open `blog/views.py` once again. Currently all we have in `post_new` view is:
 
     def post_new(request):
         form = PostForm()
@@ -220,7 +219,7 @@ Django is taking care of validating that all fields in our form are correct. Isn
 
 Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to the thing we just did. Let's create some important things quickly (if you don't understand something - you should ask your coach or look at the previous chapters, since we covered all the steps already).
 
-Open `mysite/blog/post_detail.html` and add this line:
+Open `blog/post_detail.html` and add this line:
 
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 
@@ -239,13 +238,13 @@ so that the template will look like:
         <p>{{ post.text }}</p>
     {% endblock %}
 
-In `mysite/blog/urls.py` we add this line:
+In `blog/urls.py` we add this line:
 
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
 
-We will reuse the template `mysite/blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Let's open a `mysite/blog/views.py` and add at the very end of the file:
+Let's open a `blog/views.py` and add at the very end of the file:
 
     def post_edit(request, pk):
         post = get_object_or_404(Post, pk=pk)

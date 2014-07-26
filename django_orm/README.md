@@ -6,7 +6,7 @@ This is exactly what *views* are supposed to do: connect models and templates. I
 
 Ok, so how we will achieve it?
 
-We need to open our `mysite/blog/views.py`. So far `post_list` *view* looks like this:
+We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
     from django.shortcuts import render
 
@@ -56,7 +56,7 @@ The last missing part is to pass the `posts` queryset to the template (we will c
 
 In the `render` function we already have parameter with `request` (so everything we receive from the user via the Internet) and a template file `'blog/post_list.html'`. The last parameter, which looks like this: `{}` is a place in which we can add some things to template. We need to give them names (we will stick to `'posts'` right now :)). It should look like this: `{'posts': posts}`. Please note that the part before `:` is wrapped with quotes `''`.
 
-So finally our `mysite/blog/views.py` file should look like this:
+So finally our `blog/views.py` file should look like this:
 
     from django.shortcuts import render
     from .models import Post
