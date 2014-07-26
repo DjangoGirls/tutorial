@@ -27,3 +27,7 @@ It will (more or less) look like this:
 ![Figure 0.1](images/application.png)
 
 Ok, let's start at the beginning...
+
+## About and contributing
+
+This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](contributing/README.md).
