@@ -32,7 +32,7 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
 
 ## Your first Python command!
 
-After running the Python command, the prompt changed to `>>>`. For us it means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
 
 If you want to exit the Python console at any point, just type `exit()` or hit `Ctrl + D`. You won't see `>>>` any longer.
 
@@ -52,62 +52,62 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 
 ## Strings
 
-Maybe your name? Type your first name in quotes like this:
+How about your name? Type your first name in quotes like this:
 
     >>> "Ola"
     'Ola'
 
-You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be an apostrophe (`'`) or double quotes (`"`) - they tell Python that it is a string.
+You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be an apostrophe (`'`) or double quotes (`"`) - they tell Python that what's inside of them is a string.
 
-Strings can be added. Try this:
+Strings can be strung together. Try this:
 
     >>> "Hi there " + "Ola"
     'Hi there Ola'
 
-You can also multiply strings by a number:
+You can also multiply strings with a number:
 
     >>> "Ola" * 3
     'OlaOlaOla'
 
-Nice, huh? To see your name in uppercase, simply type:
+Nice, huh? To see your name in uppercase letters, simply type:
 
     >>> "Ola".upper()
     'OLA'
 
-You just used the `upper` __function__ on your string! A function (`upper`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __function__ on your string! A function (like `upper()`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to get the number of letters in your name, there is a function for that too!
+If you want to know the number of letters contained in your name, there is a function for that too!
 
     >>> len("Ola")
     3
 
-Wonder why sometimes you call functions by adding `.` at the end of the string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper` that can only be performed on Strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len`. That's why we're giving `"Ola"` as a parameter to `len` function.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
 OK, enough of strings. So far you've learned about:
 
-- __the prompt__ - typing commands (code) into prompt give you Python answers
-- __numbers and strings__ - in Python it's math and text objects
-- __functions__ - are actions in Python. You've used both English-language functions (upper, len) and symbolic ones (+, *).
+- __the prompt__ - typing commands (code) into the Python prompt results in answers in Python
+- __numbers and strings__ - in Python numbers are used for math and strings for text objects
+- __functions__ - are actions in Python. You've used both English-language functions (upper(), len()) and symbolic ones (+, *).
 
-That's the basics of every programming language you learn. Ready for something harder? We bet you are!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Errors
 
-Let's try something. Can we get a length of a number, the same way we learn about the length of our name? Try typing `len(304023)` and hit Enter:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit Enter:
 
     >>> len(304023)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: object of type 'int' has no len()
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) don't have a length. So what can we do now? Maybe we can write our number as a string? Strings have length, right?
+We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
     >>> len(str(304023))
     6
 
-It worked! We used `str` function inside of `len` function. `str` is converting everything to strings.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - The `str` function converts things into __strings__
 - The `int` function converts things into __integers__
@@ -116,20 +116,20 @@ It worked! We used `str` function inside of `len` function. `str` is converting 
 
 ## Variables
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and to help them remember what things are.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 Let's say we want to create a new variable called `name`:
 
     >>> name = "Ola"
 
-You see? It's easy! Simply: name equals Ola.
+You see? It's easy! It's simply: name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. How do we know that the variable actually is there? Simply enter `name` and hit Enter:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit Enter:
 
     >>> name
     'Ola'
 
-Yippee! Your first variable :)! You can always change what it is:
+Yippee! Your first variable :)! You can always change what it refers to:
 
     >>> name = "Sonja"
     >>> name
@@ -140,7 +140,7 @@ You can use it in functions too:
     >>> len(name)
     5
 
-Awesome, right? Of course, variables can be anything, numbers too! Try this:
+Awesome, right? Of course, variables can be anything, so numbers too! Try this:
 
     >>> a = 4
     >>> b = 6
@@ -158,62 +158,62 @@ Go ahead and create a list:
     >>> []
     []
 
-Yes, it's empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
     >>> lottery = [3, 42, 12, 19, 30, 59]
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have an idea which function you should use for that? You know this already!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
     >>> len(lottery)
     6
 
-Yes! `len` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
     >>> lottery.sort()
 
-This doesn't return anything, it just changed the list in place. Let's print it out again and see what happened:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
     >>> print(lottery)
     [3, 12, 19, 30, 42, 59]
 
-As you can see, numbers are now sorted from lowest to highest in your list. Congrats!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Maybe we want to reverse the order? Let's do that!
+Maybe we want to reverse that order? Let's do that!
 
     >>> lottery.reverse()
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3]
 
-Easy, right? If you want to add something to the list, you can do this by typing this command:
+Easy, right? If you want to add something to your list, you can do this by typing this command:
 
     >>> lottery.append(199)
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
 
-If you want to read only the first number, you can do this by using __indexes__. Computer people like to start counting at 0, so the first object of the list is at number 0, next one is 1, and so on. Try this:
+If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list an item occurs. Computer people like to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
     >>> print(lottery[0])
     59
     >>> print(lottery[1])
     42
 
-As you can see, you can access different objects in your list by using its name and index number inside of square brackets.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-You can find a list of all available list methods here in Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ### Summary
 
-Awesome! You know a lot about programming now. In the last part you learned about:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
-- __errors__ - you now know how to read and understand errors that show up if Python doesn't understand your command
-- __variables__ - names for objects that allow to code more easily and make your code more readable
-- __lists__ - list of objects stored in particular order.
+- __errors__ - you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
+- __variables__ - names for objects that allow you to code more easily and to make your code more readable
+- __lists__ - lists of objects stored in a particular order.
 
 Excited for the next part? :)
 
 ## Compare things
 
-The big part of programming includes comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how it works:
+A big part of programming includes comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
     >>> 5 > 2
     True
@@ -226,7 +226,7 @@ The big part of programming includes comparing things. What's the easiest thing 
 
 We gave Python some numbers to compare. As you can see, Python can compare not only numbers, but it can also compare method results. Nice, huh?
 
-Do you wonder why we put two `==` next to each other to compare if numbers are equal? We use single `=` for assigning value to variables, so Python would think that we're trying to do that. You always, __always__ need to put two `==` if you want to check if things are equal to each other.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, __always__ need to put two `==` if you want to check if things are equal to each other.
 
 Give Python two more tasks:
 
@@ -235,12 +235,12 @@ Give Python two more tasks:
     >>> 3 <= 2
     False
 
-`>` and `<` are easy, but what `>=` and `<=` means? Read this like that:
+`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y - x is greater than y
-- x `<` y - x is smaller than y
-- x `<=` y - x is smaller or equal to y
-- x `>=` y - x is greater or equal to y
+- x `>` y means: x is greater than y
+- x `<` y means: x is smaller than y
+- x `<=` y means: x is smaller or equal to y
+- x `>=` y means: x is greater or equal to y
 
 Awesome! Wanna do one more? Try this:
 
@@ -253,20 +253,20 @@ Awesome! Wanna do one more? Try this:
 
 You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
-- __and__ - if you use `and` operator, both of the comparisons have to be True in order for the whole thing to be True
-- __or__ - if you use `or` operator, only one of the comparisons has to be True in order for the whole thing to be True
+- __and__ - if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
+- __or__ - if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
 ## Boolean
 
-Accidently, you just learned about a new type of object in Python. It's called a __boolean__ -- probably the easiest type there is.
+Accidently, you just learned about a new type of object in Python. It's called a __boolean__ -- and it probably is the easiest type there is.
 
-There are only two boolean objects::
+There are only two boolean objects:
 - True
 - False
 
-But for Python to understand it, you need to always write it as True (first letter uppercased, rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__
+But for Python to understand this, you need to always write it as True (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__ (The same applies to False as well, of course.)
 
-Booleans can be variables, too! See:
+Booleans can be variables, too! See here:
 
     >>> a = True
     >>> a
@@ -278,14 +278,14 @@ You can also do it this way:
     >>> a
     False
 
-Practice and have fun with Boolean by trying to run following commands:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! You can now move on to the essence of programming:
+Congrats! You can now move on to an essential tool in programming:
 
 ## If...elif...else
 
@@ -296,7 +296,7 @@ Try this:
     >>> if 3 > 2:
     ...
 
-So far nothing has happened, as evidenced by dots `...` instead of incentives `>>>`, which we saw so far. Python expects us to give further instructions which are supposed to be executed if the condition `3 > 2` turns to be true. Let’s try to make Python print “It works!”:
+So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true. Let’s try to make Python print “It works!”:
 
     >>> if 3 > 2:
     ... print('It works!')
@@ -305,16 +305,16 @@ So far nothing has happened, as evidenced by dots `...` instead of incentives `>
             ^
     IndentationError: expected an indented block
 
-Well...something went wrong! Python needs to know whether the instruction we have written is a continuation of `if` or it is the next instruction not covered by the condition. We need to indent our code to make it work:
+Well... something went wrong here! Python needs to know whether the instruction we have written is a continuation of `if` or a next instruction not covered by the condition. We need to indent our code to make it work:
 
     >>> if 3 > 2:
     ...     print('It works!')
     ...
     It works!
 
-All you need is one space or `TAB` after `...`. To avoid chaos, most of the Python programmers use four spaces for each level of indentation.
+All you need is one space or `TAB` after `...`. To avoid chaos, most Python programmers use four spaces for each level of indentation.
 
-Everything that is indented after `if` statement will be executed if conditions are met. See:
+Everything that is indented after the `if` statement will be executed if the condition is met. See:
 
     >>> if 3 > 2:
     ...     print('It works!')
@@ -325,7 +325,7 @@ Everything that is indented after `if` statement will be executed if conditions 
 
 ### What if not?
 
-In previous examples, code was executed only when conditions are True. But Python also has `elif` and `else` statements:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
     >>> if 5 > 2:
     ...     print('5 is indeed greater than 2')
@@ -334,7 +334,7 @@ In previous examples, code was executed only when conditions are True. But Pytho
     ...
     5 is indeed greater than 2
 
-If 2 would be greater than 5, then the second command will be executed. Easy, right? Let's see how `elif` works:
+If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
     >>> name = 'Sonja'
     >>> if name == 'Ola':
@@ -352,29 +352,29 @@ See what happened there?
 
 In the last three exercises you learned about:
 
-- __comparing things__ - in Python you can compare things together using `>`, `>=`, `==`, `<=`, `<` and `and`, `or` operators
-- __boolean__ - a type of object that can only have two values: `True` and `False`
+- __comparing things__ - in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- __boolean__ - a type of object that can only have one of two values: `True` or `False`
 - __if...elif...else__ - statements that allow you to execute code only when certain conditions are met.
 
 Time for the last part of this chapter!
 
 ## Your own functions!
 
-Remember functions like `len` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
+Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
-A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, has a name and can have some parameters. Let's start with an easy one:
+A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one:
 
     >>> def hi():
     ...
 
-As you can see, there are the dots again! This means that nothing has really happened yet... and yes, we need to do a `TAB` before giving our instructions:
+As you can see, there are those dots again! This means that nothing has really happened yet... and yes, we need to press the `TAB` key before giving our instructions:
 
     >>> def hi():
     ...     print('Hi there!')
     ...     print('How are you?')
     ...
 
-Ok, our first function is ready! Let's execute it:
+Ok, our first function is ready! Press Enter to get back to the Python prompt again. Now let's execute our function:
 
     >>> hi()
     Hi there!
@@ -382,7 +382,7 @@ Ok, our first function is ready! Let's execute it:
 
 Great! You're now a programmer, congratulate yourself :)!
 
-That was easy! Let's build our first function with parameters. We will use the previous example with names:
+That was easy! Let's build our first function with parameters. We will use the previous example - a function that says hi to the person running it - with a name:
 
     >>> def hi(name):
     ...
@@ -398,7 +398,7 @@ As you can see, we now gave our function a parameter that we called `name`:
     ...         print('Hi anonymous!')
     ...
 
-As you can see, we needed to put two tabs before `print` function, because `if` needs to know what should happen when condition is met. Let's see how it works now:
+As you can see, we needed to put two tabs before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
     >>> hi("Ola")
     Hi Ola!
@@ -407,7 +407,7 @@ As you can see, we needed to put two tabs before `print` function, because `if` 
     >>> hi("Anja")
     Hi anonymous!
 
-Awesome, right? This way you don't have to repeat yourself every time you want to change the name. And that's exactly why we need functions - you never want to repeat your code!
+Awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
 
 Let's do something smarter -- there is more names than two, and writing a condition for each would be hard, right?
 
@@ -424,20 +424,20 @@ Congratulations! You just learned how to write functions :)!
 
 ## Loops
 
-That's the last part already. That was quick, right?:)
+That's the last part already. That was quick, right? :)
 
-As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every girl by their name manually, right? That's where loops come in handy.
+As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Remember lists yet? Let's do a list of all the girls:
+Remember lists yet? Let's do a list of girls:
 
     >>> girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 
-We want to greet all of them by their name. We have `hi` function to do that, so let's use it in a loop:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
     >>> for name in girls:
     ...
 
-Dots again! Remember what goes after dots? Yes, tab :)
+Dots again! Remember what goes after the dots? Yes, a tab :)
 
     >>> for name in girls:
     ...     hi(name)
@@ -454,9 +454,9 @@ Dots again! Remember what goes after dots? Yes, tab :)
     Hi You!
     Next girl
 
-As you can see, everything you will put inside `for` statement with `tab` will be repeated for every element of the list `girls`.
+As you can see, everything you will put inside a `for` statement with `TAB` will be repeated for every element of the list `girls`.
 
-You can also do `for` on numbers using `range` method:
+You can also use `for` on numbers using the `range` method:
 
     >>> for i in range(1, 6):
     ...     print(i)
@@ -467,11 +467,13 @@ You can also do `for` on numbers using `range` method:
     4
     5
 
-`range` is a function that creates a list of numbers from one number to another (numbers are given by you as parameters).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6).
 
 ## Summary
 
-That's it. __You totally rock!__ It really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it here!
+That's it. __You totally rock!__ This really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it to here!
 
 Grab yourself a cupcake and go to the next chapter :)
 
