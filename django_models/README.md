@@ -59,7 +59,7 @@ A model in Django is a special kind of object - it is saved in the `database` (d
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `djangogirls` folder where `manage.py` file is) `python manage.py startapp blog`.
 
-    (venv) ~/djangogirls$ python manage.py startapp blog
+    (myvenv) ~/djangogirls$ python manage.py startapp blog
 
 You will notice that a new `blog` folder is created and it contains a number of files now. Our folders and files in our project should look like this:
 
@@ -144,7 +144,7 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 The last step here is to add our new model to our database. It is as easy as typing `python manage.py syncdb`. It will look like this:
 
-    (venv) ~/djangogirls$ python manage.py syncdb
+    (myvenv) ~/djangogirls$ python manage.py syncdb
     Creating tables ...
     Creating table blog_post
     Installing custom SQL ...
