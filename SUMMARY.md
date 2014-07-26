@@ -23,7 +23,7 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [Homework: add more to your website!](homework/README.md)
-* [Homework: add authentication to your website!](authentication_authorization/README.md)
+* [Homework: add security to your website!](authentication_authorization/README.md)
 * [Contributing and editing](contributing_and_editing_this_book/README.md)
 * [Optional: PostgreSQL installation!](optional_postgresql_installation/README.md)
 

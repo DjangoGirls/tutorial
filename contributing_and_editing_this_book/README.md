@@ -53,7 +53,7 @@ Either use the Github app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
-Download [Gitbook Editor](http://help.gitbook.io/editor/README.html) app to your computer.
+Download the [Gitbook Editor](http://help.gitbook.io/editor/README.html) app to your computer.
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
@@ -96,7 +96,7 @@ In your own repository on Github press do *Compare & pull request*
 
 ![Gitbook](images/pull_request.png)
 
-Fill in the information *why* this change is being made. The reviewer can see the details of actual change, so you don't need repeat the content of the change.
+Fill in the information *why* this change is being made. The reviewer can see the details of the actual change, so you don't need repeat the content of the change.
 
 Then press *Create pull request*.
 
