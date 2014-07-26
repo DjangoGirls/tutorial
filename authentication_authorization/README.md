@@ -162,5 +162,3 @@ Thats it! If you followed all of the above until this point (and did the homewor
  - need a username and password to log in,
  - need to be logged in to add/edit/publish(/delete) posts
  - and can log out again
-
- Treat yourself to a drink now because now your page is both great and secured!
