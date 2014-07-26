@@ -22,4 +22,5 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [Homework: add more to your website!](homework/README.md)
+* [Optional: PostgreSQL installation!](optional_postgresql_installation/README.md)
 
