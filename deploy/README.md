@@ -6,19 +6,26 @@ As you learned, a website has to be located on a server. There are a lot of prov
 
 We will be following this tutorial: https://devcenter.heroku.com/articles/getting-started-with-django, but we pasted it here so it's easier for you.
 
-## Requirements.txt
+## The `requirements.txt` file
 
 We need to create a `requirements.txt` file to tell Heroku what Python packages need to be installed on our server.
 
 But first, Heroku needs us to install the `django-toolbelt` package. Go to your console with `virtualenv` activated and type this:
 
-    (venv) $ pip install django-toolbelt
+    (venv) $ pip install dj-database-url gunicorn whitenoise
 
 After the installation is finished, run this command:
 
     (venv) $ pip freeze > requirements.txt
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
+
+Open this file and add the following line at the bottom:
+    
+    pyscopg2==2.5.3
+
+This line is needed for your application to work on Heroku.
+
 
 ## Procfile
 
@@ -28,7 +35,7 @@ Another thing we need to create is a Procfile. Open up your code editor, create 
 
 Then save it. Done!
 
-## Runtime.txt
+## The `runtime.txt` file
 
 We need to tell Heroku which Python version we want to use. This is simply done by creating a `runtime.txt` and putting the following text inside:
 
@@ -40,16 +47,17 @@ There is a difference between settings we are using locally (on our computer) an
 
 Go ahead and create `mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/settings.py` file. Just like that:
 
+    import os
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'djangogirls',
-            'USER': 'yourname',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '',
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
+    DEBUG = True
 
 Then just save it! :)
 
@@ -65,6 +73,8 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     ALLOWED_HOSTS = ['*']
 
     STATIC_ROOT = 'staticfiles'
+    
+    DEBUG = False
 
 At the end of the `mysite/settings.py`, copy and paste this:
 
@@ -77,41 +87,12 @@ It'll import all of your local settings if the file exists.
 
 Then save the file.
 
-## mysite/urls.py
-
-Open `mysite/urls.py` file and add these two lines in the beginning of the file:
-
-    from django.conf.urls.static import static
-    from django.conf import settings
-
-And add this line after last `)`:
-
-     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-The whole thing should look like this:
-
-    from django.conf.urls.static import static
-    from django.conf import settings
-    from django.conf.urls import patterns, include, url
-
-    from django.contrib import admin
-    admin.autodiscover()
-
-    urlpatterns = patterns('',
-        url(r'', include('blog.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
 ## mysite/wsgi.py
 
-Open the `mysite/wsgi.py` file and replace this line:
-
-    application = get_wsgi_application()
-
-with this:
-
-    from dj_static import Cling
-    application = Cling(get_wsgi_application())
+Open the `mysite/wsgi.py` file and add these lines at the end:
+    
+    from whitenoise.django import DjangoWhiteNoise
+    application = DjangoWhiteNoise(application)
 
 All right!
 
@@ -141,6 +122,7 @@ Create `.gitignore` file with following content:
     __pycache__
     staticfiles
     local_settings.py
+    db.sqlite3
 
 and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
 

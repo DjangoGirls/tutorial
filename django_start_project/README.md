@@ -55,9 +55,9 @@ It would be nice to have the correct time on our website. You should find lines 
 
 ## Setup a database
 
-There's a lot of different database software that can store data for your site. We'll use one of the best ones, `PostgreSQL`, which we installed in __Database__ chapter.
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
 
-Find this part in your `mysite/settings.py` file:
+This is already set up in this part of your `mysite/settings.py` file:
 
     DATABASES = {
         'default': {
