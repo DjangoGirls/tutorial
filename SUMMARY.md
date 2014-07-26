@@ -22,4 +22,5 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [Homework: add more to your website!](homework/README.md)
+* [Contributing and editing this book](contributing_and_editing_this_book/README.md)
 
