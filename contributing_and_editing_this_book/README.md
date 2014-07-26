@@ -61,7 +61,7 @@ Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
 Make any changes in the tutorial using the editor and then save changes (*Book* > *Save all*).
 
-Then commin the changes using `git` and push the changes to your remote Github repository.
+Then commit the changes using `git` and push the changes to your remote Github repository.
 
 Example:
 
