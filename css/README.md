@@ -6,7 +6,7 @@ Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS f
 
 Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as a make-up for our webpage ;).
 
-But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, inventing a wheel once again is no fun.
+But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, reinventing the wheel is no fun.
 
 ## Let's use Bootstrap!
 
@@ -23,7 +23,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 This doesn't add any files to your project. It just points to files that exist on the internet.
-Then just go ahead, open your website and refresh page. Here it is!
+Just go ahead, open your website and refresh the page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -42,7 +42,7 @@ First, we need to create a folder to store our static files in. Go ahead and cre
     mysite
         └───static
 
-Now we need to tell Django how it can find it. Open up the `mysite/mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Now we need to tell Django where it can find it. Open up the `mysite/mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
@@ -50,11 +50,9 @@ Now we need to tell Django how it can find it. Open up the `mysite/mysite/settin
 
 This way Django will know where your static files are.
 
-That's it! Time to see if it works :)
-
 ## Your first CSS file!
 
-First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web-page. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     mysite
         └───static
@@ -65,7 +63,7 @@ Time to write some CSS! Open up the `mysite/static/css/blog.css` file in your co
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
 In your `mysite/static/css/blog.css` file you should add following code:
 
