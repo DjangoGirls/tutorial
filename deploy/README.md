@@ -14,14 +14,14 @@ But first, Heroku needs us to install the `django-toolbelt` package. Go to your 
 
     (myvenv) $ pip install dj-database-url gunicorn whitenoise
 
-After the installation is finished, run this command:
+After the installation is finished, go to the `mysite` directory and run this command:
 
     (myvenv) $ pip freeze > requirements.txt
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
 
 Open this file and add the following line at the bottom:
-    
+
     pyscopg2==2.5.3
 
 This line is needed for your application to work on Heroku.
@@ -73,7 +73,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     ALLOWED_HOSTS = ['*']
 
     STATIC_ROOT = 'staticfiles'
-    
+
     DEBUG = False
 
 At the end of the `mysite/settings.py`, copy and paste this:
@@ -90,7 +90,7 @@ Then save the file.
 ## mysite/wsgi.py
 
 Open the `mysite/wsgi.py` file and add these lines at the end:
-    
+
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(application)
 

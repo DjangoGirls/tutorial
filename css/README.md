@@ -6,7 +6,7 @@ Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS f
 
 Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as a make-up for our webpage ;).
 
-But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, inventing a wheel once again is no fun.
+But we don't want to start from scratch again, right? We will, again, use something that has already been done by programmers and released in the Internet for free. You know, reinventing the wheel is no fun.
 
 ## Let's use Bootstrap!
 
@@ -16,13 +16,14 @@ It was written by programmers who worked for Twitter and is now developed by vol
 
 ## Install Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in you `.html` file (`blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`blog/templates/blog/post_list.html`):
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-Then just go ahead, open your website and refresh page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the internet.
+Just go ahead, open your website and refresh the page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -41,7 +42,7 @@ First, we need to create a folder to store our static files in. Go ahead and cre
     static
     manage.py
 
-Now we need to tell Django how it can find it. Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Now we need to tell Django where it can find it. Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
@@ -49,11 +50,9 @@ Now we need to tell Django how it can find it. Open up the `mysite/settings.py` 
 
 This way Django will know where your static files are.
 
-That's it! Time to see if it works :)
-
 ## Your first CSS file!
 
-First things first: let's create a CSS file now. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web-page. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     static
     └───css
@@ -63,7 +62,7 @@ Time to write some CSS! Open up the `static/css/blog.css` file in your code edit
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computer use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
 In your `static/css/blog.css` file you should add following code:
 
@@ -71,13 +70,19 @@ In your `static/css/blog.css` file you should add following code:
         color: #FCA205;
     }
 
-`a` inside of `h1` (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. `a` element inside of `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change color to `#FCA205`, which is orange. Of course, you can put your own color here!
+
+In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the element class or the element id. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point out to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+
+    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+
+Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
 Then, we need to also tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
     {% load staticfiles %}
 
-We're just loading static files here :). Then, between the `<head>` and `</head>` add this line:
+We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
@@ -90,8 +95,8 @@ Your file should look like this at this point:
         <head>
             <title>Django Girls blog</title>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
@@ -127,7 +132,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Now add this line in `static/css/blog.css` and refresh the page:
+Now add the line `font-family: 'Lobster';` in the CSS file `mysite/static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
 
     h1 a {
         color: #FCA205;
@@ -138,7 +143,8 @@ Now add this line in `static/css/blog.css` and refresh the page:
 
 Great!
 
-CSS has a concept of classes, which basically allows you to name a part of our HTML code and apply styles only to this part, not affecting others. It's super helpful if you have two divs, but they're doing something very different (like your header and your post), so you don't want them to look the same.
+
+As mentioned above, CSS has a concept of classes, which basically allows you to name a part of the HTML code and apply styles only to this part, not affecting others. It's super helpful if you have two divs, but they're doing something very different (like your header and your post), so you don't want them to look the same.
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains header, like this:
 
@@ -154,7 +160,7 @@ And now add a class `post` to your `div` containing blogposts.
         <p>{{ post.text }}</p>
     </div>
 
-All right. We have only one day, so we need to speed things up a little! We can't explain you every little detail about CSS. For now just copy and paste following code into your `static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `mysite/static/css/blog.css` file:
 
     .page-header {
         background-color: #ff9400;
@@ -204,7 +210,7 @@ All right. We have only one day, so we need to speed things up a little! We can'
         color: #000000;
     }
 
-Then also replace this:
+Then surround the HTML code which desplayes the posts with declarations of classes. Replace this:
 
     {% for post in posts %}
         <div class="post">
@@ -238,7 +244,7 @@ Wohoo! Looks awesome, right? The code we just pasted is not really so hard to un
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. If you break something, don't worry, you can always undo this!
 
-Anyway, we really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) as a post-workshop homework to learn everything you need to know about making your websites more pretty with CSS.
+Anyway, we really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) as a post-workshop homework to learn everything you need to know about making your websites prettier with CSS.
 
 Ready for next chapter?! :)
 
