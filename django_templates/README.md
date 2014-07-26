@@ -44,7 +44,7 @@ It works! But we want them to be displayed in a way we created earlier in the __
         <div>
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|safe|linebreaks }}</p>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 
@@ -52,7 +52,7 @@ Everything you put between `{% for %}` and `{% endfor %}` will be repeated for e
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`. We are accessing data in each of the fields defined in our `Post` model. Also the `|safe|linebreaks` is piping the posts text through filters so it preserves html and converts line-breaks to paragraphs.
+Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`. We are accessing data in each of the fields defined in our `Post` model. Also the `|linebreaks` is piping the posts text through a filter to convert line-breaks into paragraphs.
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
 
