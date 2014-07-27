@@ -18,7 +18,7 @@ Remember when we talked about including code written in different files? Now is 
     from django.shortcuts import render
     from .models import Post
 
-Dot after `from` means *current folder* or *current application*. Since `views.py` and `models.py` are in the same directory we can simply use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Dot after `from` means *current directory* or *current application*. Since `views.py` and `models.py` are in the same directory we can simply use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
 But what's next? To take actual blog posts from `Post` model we need something called a `Queryset`.
 

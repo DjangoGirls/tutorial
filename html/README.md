@@ -16,15 +16,15 @@ HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of 
 
 Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Templates are saved in `blog/templates/blog` folder. So first create a folder called `templates` inside your blog folder. Then create another folder called `blog` inside your templates folder:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
         └───blog
 
-(You might wonder why we need two folders both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` folder.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
 See how your website looks now: http://127.0.0.1:8000/
 

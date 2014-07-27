@@ -18,7 +18,7 @@ Choose the newest version available for your operating system. Download the inst
 
 The easiest way is to download the free [Postgres.app](http://postgresapp.com/) and install it like any other application on your operating system.
 
-Download it, drag to the Applications folder and run by double clicking. That's it!
+Download it, drag to the Applications directory and run by double clicking. That's it!
 
 You'll also have to add the Postgres command line tools to your `PATH` variable, what is described [here](http://postgresapp.com/documentation/cli-tools.html).
 
