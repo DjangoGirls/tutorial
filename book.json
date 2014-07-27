@@ -16,7 +16,7 @@
         }
     },
 
-    "plugins": ["ga"],
+    "plugins": ["ga", "anchors"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-51680040-3"
