@@ -27,11 +27,7 @@ These are just a very few of the possible black window commands.
 * **Up arrow** - rerun previous commands.  You can avoid typing the same commands again by using the up arrow key to rerun recently used commands.
 
 
-<<<<<<< HEAD
-* Tab key - the tab key will autocomplete directory and file names. For example, typing **dir t ** + Tab will autocomplete to all directories starting with t in the current directory (such as task, test, tutorial).
-=======
 * **Tab key** - the tab key will autocomplete directory and file names. For example, typing `dir t` + `Tab` will autocomplete to all directories starting with `t` in the current directory (such as task, test, tutorial).
->>>>>>> upstream/master
 
 
 ## Further information about the commands above
