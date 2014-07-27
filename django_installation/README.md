@@ -14,7 +14,7 @@ Before we install Django, we'll get you to install an extremely useful tool that
 
 So, let's create a **virtual environment** (also called a *virtualenv*). It will isolate your Python/Django setup on a per-project basis, meaning that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-All you need to do is find a folder in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name\` (where `Name` is the name of your login).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name\` (where `Name` is the name of your login).
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
@@ -30,7 +30,7 @@ To create a new `virtualenv`, you need to open the console (we told you about th
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
 
-where `C:\Python34\python` is the folder in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
+where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
 
 ### Linux and OS X
 
@@ -51,7 +51,7 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
 ## Working with virtualenv
 
-The command above will create a folder called `myvenv` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
+The command above will create a directory called `myvenv` that contains our virtual environment (basically bunch of directory and files). All we want to do now is starting it by running:
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
 

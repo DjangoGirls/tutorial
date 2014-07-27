@@ -25,7 +25,7 @@ or on Windows:
 
     (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
 
-`django-admin.py` is a script that will create the folders and files for you. You should now have a folder structure which looks like this:
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     manage.py
     │
@@ -66,7 +66,7 @@ This is already set up in this part of your `mysite/settings.py` file:
         }
     }
 
-To create a database for our blog, let's run the following in the console: `python manage.py syncdb` (we need to be in a parent `mysite` directory that contains `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py syncdb` (we need to be the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
     (myvenv) ~/djangogirls$ python manage.py syncdb
     Creating tables ...
@@ -95,7 +95,7 @@ It will ask you if you want to create a *superuser* - a user which has control o
 
 And we're done! Time to start the web server and see if our website is working!
 
-You need to be in the folder that contains the `manage.py` file (the `mysite` folder). In the console, we can start the web server by running `python manage.py runserver`:
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
     (myvenv) ~/djangogirls$ python manage.py runserver
 

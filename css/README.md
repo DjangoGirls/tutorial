@@ -37,7 +37,7 @@ CSS is a static file, so in order to customize CSS, we need to first configure s
 
 ### Configure static files in Django
 
-First, we need to create a folder to store our static files in. Go ahead and create a folder called `static` inside your `djangogirls` folder.
+First, we need to create a directory to store our static files in. Go ahead and create a directory called `static` inside your `djangogirls` directory.
 
     static
     manage.py
@@ -52,7 +52,7 @@ This way Django will know where to find your static files.
 
 ## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web-page. Create a new folder called `css` inside your `static` folder. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web-page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     static
     └───css

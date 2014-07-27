@@ -12,11 +12,11 @@ Each operating system has a slightly different set of commands for the command l
 | ------------- |-----------|-------------| -----|
 | exit    | exit | close the window | **exit** |
 | cd      | cd   | change directory      |   **cd test** |
-| dir     | ls   |list folders/files      | **dir** |
+| dir     | ls   |list directories/files      | **dir** |
 | copy    | cp   | copy file | **copy c:\test\test.txt c:\windows\test.txt** |
 | move | mv | move file | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir | mkdir | create a new folder | **mkdir testfolder** |
-|del | rm | delete a folder/file | **del c:\test\test.txt**
+| mkdir | mkdir | create a new directory | **mkdir testdirectory** |
+|del | rm | delete a directory/file | **del c:\test\test.txt**
 To learn more about the above commands,  check out the Further Information section below.
 
 These are just a very few of the possible black window commands.
@@ -27,7 +27,11 @@ These are just a very few of the possible black window commands.
 * **Up arrow** - rerun previous commands.  You can avoid typing the same commands again by using the up arrow key to rerun recently used commands.
 
 
-* **Tab key** - the tab key will autocomplete folder and file names. For example, typing `dir t` + `Tab` will autocomplete to all directories starting with `t` in the current directory (such as task, test, tutorial).
+<<<<<<< HEAD
+* Tab key - the tab key will autocomplete directory and file names. For example, typing **dir t ** + Tab will autocomplete to all directories starting with t in the current directory (such as task, test, tutorial).
+=======
+* **Tab key** - the tab key will autocomplete directory and file names. For example, typing `dir t` + `Tab` will autocomplete to all directories starting with `t` in the current directory (such as task, test, tutorial).
+>>>>>>> upstream/master
 
 
 ## Further information about the commands above
@@ -62,7 +66,7 @@ Note that for many commands you can use the `*` symbol which stands for *all* or
 * **move** (Windows) / **mv** (others) - it allows you to move files from one location to another. The syntax you use is the same as for the `copy` command.
 
 
-* **mkdir** - it allows you to create a new directory.  For example, `mkdir temp` creates a new folder called `temp` in the current directory.
+* **mkdir** - it allows you to create a new directory.  For example, `mkdir temp` creates a new directory called `temp` in the current directory.
 
 
 * **del** (Windows) / **rm** (others) - it allows you to delete the specified file.  For example, `del test.txt` deletes the `test.txt` file from the current directory.
