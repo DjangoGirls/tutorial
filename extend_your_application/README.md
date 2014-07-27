@@ -30,7 +30,7 @@ We want to have a link to a post detail page on the post's title. Let's change `
 
 Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you suspect `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!
 
-`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (in the directory `djangogirls`), `views` is from the name of the `views.py` file and the last bit: `post_detail` is the name of the *view*.
+`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit: `post_detail` is the name of the *view*.
 
 Now when we go to:
 
