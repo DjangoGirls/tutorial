@@ -215,6 +215,11 @@ Try to save the form without `title` and `text`. Guess, what will happen!
 
 Django is taking care of validating that all the fields in our form are correct. Isn't it awesome?
 
+> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user. Head to the admin page `http://127.0.0.1:8000/admin` and login again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
+
+![Logged in error](images/post_create_error.png)
+
+
 ## Edit form
 
 Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to what we just did. Let's create some important things quickly (if you don't understand something - you should ask your coach or look at the previous chapters, since we covered all the steps already).
