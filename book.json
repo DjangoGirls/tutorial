@@ -1,12 +1,26 @@
 {
     "links": {
+        "about": false,
+        "issues": false,
+        "contribute": false,
+
         "custom": {
-            "Custom link name": "https://customlink.com"
+            "Django Girls": "http://djangogirls.org",
+            "Django documentation": "http://docs.djangoproject.com",
+            "Contributing": "http://tutorial.djangogirls.org/contributing_and_editing_this_book/README.html",
         },
         "sharing": {
-            "google": null,
-            "facebook": null,
-            "twitter": null
+            "google": false,
+            "facebook": "https://www.facebook.com/djangogirls",
+            "twitter": "http://twitter.com/djangogirls"
         }
-    }
+    },
+
+    "plugins": ["ga"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-51680040-3"
+        }
+    },
+
 }
