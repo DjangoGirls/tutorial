@@ -8,7 +8,7 @@ This way you don't have to repeat yourself in every file, when you want to use t
 
 A base template is the most basic template that you extend on every page of your website.
 
-Create a `templates/mysite/base.html` file. You also need to create `templates` and `mysite` folders, but you probably have noticed this pattern already :)
+Create a `templates/mysite/base.html` file. You also need to create `templates` and `mysite` directories, but you probably have noticed this pattern already :)
 
     mysite
     └───templates

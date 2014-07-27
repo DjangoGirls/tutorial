@@ -57,11 +57,11 @@ A model in Django is a special kind of object - it is saved in the `database` (d
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `djangogirls` folder where `manage.py` file is) `python manage.py startapp blog`.
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `djangogirls` directory where `manage.py` file is) `python manage.py startapp blog`.
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
 
-You will notice that a new `blog` folder is created and it contains a number of files now. Our folders and files in our project should look like this:
+You will notice that a new `blog` directory is created and it contains a number of files now. Our directories and files in our project should look like this:
 
     mysite
     ├── __init__.py

@@ -8,7 +8,7 @@ This is exactly what we want to do: we will create a form for our `Post` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
-We need to create a file with this name in the `blog` folder.
+We need to create a file with this name in the `blog` directory.
 
     blog
        └── forms.py
