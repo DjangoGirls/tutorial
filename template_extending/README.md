@@ -39,7 +39,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
                         <div class="post">
                             <p>published: {{ post.published_date }}</p>
                             <h1><a href="">{{ post.title }}</a></h1>
-                            <p>{{ post.text }}</p>
+                            <p>{{ post.text|linebreaks }}</p>
                         </div>
                     {% endfor %}
                     </div>
@@ -77,7 +77,7 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
         <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text }}</p>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 
@@ -94,7 +94,7 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
             <div class="post">
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text }}</p>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
         {% endfor %}
     {% endblock content %}
@@ -102,5 +102,3 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
 That's it! Check if your website is still working properly :)
 
 > If you have an error `TemplateDoesNotExists` that says that there is no `mysite/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+c - Control and C buttons together) and restart it with `python manage.py runserver`.
-
-
