@@ -1,0 +1,16 @@
+{
+    "links": {
+        "home": null,
+        "about": null,
+        "issues": null,
+        "contribute": null,
+        "custom": {
+            "Custom link name": "https://customlink.com"
+        },
+        "sharing": {
+            "google": null,
+            "facebook": null,
+            "twitter": null
+        }
+    }
+}
