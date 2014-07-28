@@ -14,10 +14,5 @@
             "twitter": "http://twitter.com/djangogirls"
         }
     },
-    "plugins": ["ga", "anchors"],
-    "pluginsConfig": {
-        "ga": {
-            "token": "UA-51680040-3"
-        }
-    }
+
 }
