@@ -14,5 +14,6 @@
             "twitter": "http://twitter.com/djangogirls"
         }
     },
+    "packages": ["anchors"]
 
 }
