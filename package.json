@@ -1,0 +1,13 @@
+{
+  "name": "djangogirls-tutorial",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DjangoGirls/tutorial.git"
+  },
+  "author": "Ola Sitarska <ola@sitarska.com>",
+  "dependencies": {
+    "gitbook-plugin-anchors": "^0.3.0"
+  }
+}
