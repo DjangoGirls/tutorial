@@ -8,14 +8,24 @@
         "custom": {
             "Django documentation": "http://docs.djangoproject.com"
         },
-        
+
         "sharing": {
             "google": false,
             "facebook": "https://www.facebook.com/djangogirls",
             "twitter": "http://twitter.com/djangogirls"
         }
     },
+
     "plugins": [
-        "anchors"
-    ]
+        "anchors", "ga", "richquotes"
+    ],
+
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-51680040-3"
+        },
+        "richquotes" : {
+            "todos" : true
+        }
+    }
 }
