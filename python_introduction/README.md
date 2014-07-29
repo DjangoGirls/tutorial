@@ -204,12 +204,14 @@ You can find a list of all available list methods in this chapter of the Python 
 ## Dictionaries
 
 A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define a dictionary is:
+
     >>> {}
     {}
 
 This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command:
+
     >>> django_dolls = {'Dottie' : 15, 'Lottie' : 305, 'EmmyLou' : 17}
 
 Don't be surprised with the weird names. Go to the link: http://hubpages.com/hub/50-Doll-Names to look for more cute doll names. :P Just Kidding (You should do this if and only if you have a lot of time). 
@@ -222,9 +224,11 @@ When to use a dictionary or a list? Well, a good point to ponder on. Just have a
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
 Dictionaries are mutable like "lists" meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
+
     >>> django_dolls['Jilly'] = 67
 
 Like the lists, using len() method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+
     >>> len(django_dolls)
     4
 
@@ -239,6 +243,7 @@ You can use del() command to delete an item in the dictionary which has particul
 As you can see from the output, the key-value pair corresponding to 'Dottie' key has been deleted.
 
 Apart from this, you can also change a value associated with an already created key in the dictionary. Type:
+
     >>> django_dolls['Jilly'] = 100
     >>> django_dolls
     {'Jilly': 100, 'EmmyLou': 17, 'Lottie': 305}
