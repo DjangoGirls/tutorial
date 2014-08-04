@@ -118,6 +118,7 @@ Heroku uses a git repository to manage your project files, so we need to use it 
 
 Create `.gitignore` file with the following content:
 
+    *.pyc
     myvenv
     __pycache__
     staticfiles
