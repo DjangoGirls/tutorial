@@ -8,7 +8,7 @@ In this chapter we will teach you how to buy a domain and direct it to Heroku!
 
 A typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There are a lot of companies that you can buy a domain from: a simple [google search](https://www.google.com/search?q=register%20domain) give hundreds of options.
 
-Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless. We asked them if they wanted to support Django Girls and they gave us a 20% discount code for you! :) Ask organizers or coaches for it!
+Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless.
 
 ## How to register domain in IWantMyName?
 
@@ -24,7 +24,7 @@ We've decided to buy `djangogirls.in`:
 
 ![](images/3.png)
 
-Go to checkout. You should now sign up for iwantmyname if you don't have an account yet. After that, provide your discount code, credit card info and buy a domain!
+Go to checkout. You should now sign up for iwantmyname if you don't have an account yet. After that, provide your credit card info and buy a domain!
 
 After that, click `Domains` in the menu and choose your newly purchased domain. Then locate and click on the `manage DNS records` link:
 
