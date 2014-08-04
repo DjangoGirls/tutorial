@@ -361,7 +361,7 @@ Well... something went wrong here! Python needs to know whether the instruction 
     ...
     It works!
 
-All you need is one space or `TAB` after `...`. To avoid chaos, most Python programmers use four spaces for each level of indentation.
+All you need is one space after `...`. To avoid chaos, most Python programmers use four spaces for each level of indentation.
 
 Everything that is indented after the `if` statement will be executed if the condition is met. See:
 
@@ -416,7 +416,7 @@ A function is a set of instructions that Python should execute. Each function in
     >>> def hi():
     ...
 
-As you can see, there are those dots again! This means that nothing has really happened yet... and yes, we need to press the `TAB` key before giving our instructions:
+As you can see, there are those dots again! This means that nothing has really happened yet... and yes, we need to press the `Space` key before giving our instructions:
 
     >>> def hi():
     ...     print('Hi there!')
@@ -447,7 +447,7 @@ As you can see, we now gave our function a parameter that we called `name`:
     ...         print('Hi anonymous!')
     ...
 
-As you can see, we needed to put two tabs before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
+As you can see, we needed to put two spaces before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
     >>> hi("Ola")
     Hi Ola!
@@ -486,7 +486,7 @@ We want to greet all of them by their name. We have the `hi` function to do that
     >>> for name in girls:
     ...
 
-Dots again! Remember what goes after the dots? Yes, a tab :)
+Dots again! Remember what goes after the dots? Yes, a space :)
 
     >>> for name in girls:
     ...     hi(name)
@@ -503,7 +503,7 @@ Dots again! Remember what goes after the dots? Yes, a tab :)
     Hi You!
     Next girl
 
-As you can see, everything you will put inside a `for` statement with `TAB` will be repeated for every element of the list `girls`.
+As you can see, everything you will put inside a `for` statement with space will be repeated for every element of the list `girls`.
 
 You can also use `for` on numbers using the `range` method:
 
