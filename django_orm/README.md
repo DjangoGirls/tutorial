@@ -24,7 +24,7 @@ But what's next? To take actual blog posts from `Post` model we need something c
 
 ## Queryset
 
-So now we are interested in a list of blog posts, right? But all we have is model `Post`. A Queryset will give us a collection we are looking for. All we need to do is:
+So now we are interested in a list of blog posts, right? But all we have is model `Post`. A Queryset will give us a collection we are looking for. All we need to do is use:
 
     Post.objects.all()
 
@@ -34,7 +34,7 @@ And we have our first queryset! Now we can take each element out of it and displ
 
 But before we pass this queryset to the template and display blog posts we will do some magic and select only posts that are published (they have a `published_date` set).
 
-This is where we introduce a `filter`. We will use it instead of `all` in a previous line of code. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `published_date` that is not empty. The way to write it in Django is: `published_date__isnull=False` (`null` in programming means *empty*).
+This is where we introduce a `filter`. We will use it instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `published_date` that is not empty. The way to write it in Django is: `published_date__isnull=False` (`null` in programming means *empty*). Now our piece of code looks like:
 
     Post.objects.filter(published_date__isnull=False)
 
@@ -42,7 +42,7 @@ Finally, it would be good to have our posts ordered by publish date, right? We c
 
     Post.objects.filter(published_date__isnull=False).order_by('published_date')
 
-Time to put this piece of code inside `post_list`, right?
+Now we put this piece of code inside the `post_list` file, by adding it to the function `def post_list(request)`:
 
     from django.shortcuts import render
     from .models import Post

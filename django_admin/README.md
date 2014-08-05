@@ -11,7 +11,7 @@ Let's open the `blog/admin.py` file and replace its content with this:
 
 As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Ok, time to look at our Post model. Go to the browser and type the address:
+Ok, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to the browser and type the address:
 
     http://127.0.0.1:8000/admin/
 

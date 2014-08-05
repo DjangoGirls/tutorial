@@ -17,13 +17,13 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
 
-Run on Linux or Mac OS:
-
-    (myvenv) ~/djangogirls$ django-admin.py startproject mysite .
-
-or on Windows:
+Run on Windows:
 
     (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
+
+or on Linux or Mac OS:
+
+    (myvenv) ~/djangogirls$ django-admin.py startproject mysite .
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
@@ -46,7 +46,7 @@ Let's ignore the other files for now - we won't change them. The only thing to r
 
 ## Changing settings
 
-Let's make some changes in `mysite/settings.py`.
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
 It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` ) 
 
@@ -54,6 +54,8 @@ You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to l
 
     USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
+
+(But with the correct country and city for your timezone.)
 
 ## Setup a database
 
