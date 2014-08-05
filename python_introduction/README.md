@@ -34,7 +34,7 @@ A window should pop up on your screen. This window is a prompt, waiting for comm
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
 
-If you want to exit the Python console at any point, just type `exit()` or hit `Ctrl + D`. You won't see `>>>` any longer.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
 
