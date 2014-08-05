@@ -150,6 +150,22 @@ Awesome, right? Of course, variables can be anything, so numbers too! Try this:
 
 Play with this for a while and see what you can do!
 
+
+## The print function
+
+Try this:
+
+    >>> message = 'hello'
+    >>> message
+    'hello'
+    >>> print(message)
+    hello
+
+When you just type `message`, the Python interpreter responds with the string *representation* of the variable 'message', which is the letters h-e-l-l-o, surrounded by single quotes, ''.  When you say `print(message)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+
+
 ## Lists
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: they are objects which are lists of other objects :)
