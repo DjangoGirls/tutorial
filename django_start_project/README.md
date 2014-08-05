@@ -46,7 +46,7 @@ Let's ignore the other files for now - we won't change them. The only thing to r
 
 ## Changing settings
 
-Let's make some changes in `mysite/settings.py`.
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
 It would be nice to have the correct time on our website. You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this:
 
