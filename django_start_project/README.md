@@ -53,6 +53,8 @@ It would be nice to have the correct time on our website. You should find lines 
     USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
 
+(But with the correct country and city for your timezone.)
+
 ## Setup a database
 
 There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
