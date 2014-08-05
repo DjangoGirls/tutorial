@@ -34,10 +34,12 @@ where `C:\Python34\python` is the directory in which you previously installed Py
 
 ### Linux and OS X
 
-Creating a `virtualenv` on both Linux and OS X is as simple as running:
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
+It will look like this:
 
     ~/djangogirls$ python3 -m venv myvenv
 
+and just like the Windows instructions above, `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
 
 > __NOTE:__ Initiating the virtual environment on Ubuntu 14.04 like this currently gives the following error:
 
