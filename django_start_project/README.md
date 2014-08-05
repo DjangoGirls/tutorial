@@ -17,13 +17,13 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
 
-Run on Linux or Mac OS:
-
-    (myvenv) ~/djangogirls$ django-admin.py startproject mysite .
-
-or on Windows:
+Run on Windows:
 
     (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
+
+or on Linux or Mac OS:
+
+    (myvenv) ~/djangogirls$ django-admin.py startproject mysite .
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
