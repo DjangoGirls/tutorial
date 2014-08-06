@@ -31,11 +31,11 @@ As you can see, Django already put something here for us.
 
 Lines that start with `#` are comments - it means that those lines won't be executed by Python. Pretty handy, right?
 
-The admin url, which you visited in previous chapter is already here:
+The admin URL, which you visited in previous chapter is already here:
 
     url(r'^admin/', include(admin.site.urls)),
 
-It means that for every url that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin urls so it isn't all packed into this small file -- it's more readable and cleaner.
+It means that for every URL that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file -- it's more readable and cleaner.
 
 ## Regex
 

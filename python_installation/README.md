@@ -8,7 +8,7 @@ Python originated in the late 1980s and its main goal is to be readable by human
 
 # Python installation
 
-*This subchapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/)*
+> This subchapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/)
 
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
@@ -42,7 +42,7 @@ Use this command in your console:
 
 You need to go to the website https://www.python.org/downloads/release/python-341/ and download the Python installer:
 
-* Download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
+* download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
 * double click to open it,
 * double click *Python.mpkg* to run the installer.
 

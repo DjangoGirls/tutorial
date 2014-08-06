@@ -39,8 +39,9 @@ CSS is a static file, so in order to customize CSS, we need to first configure s
 
 First, we need to create a directory to store our static files in. Go ahead and create a directory called `static` inside your `djangogirls` directory.
 
-    static
-    manage.py
+    djangogirls
+    ├─── static
+    └─── manage.py
 
 Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
@@ -55,8 +56,8 @@ This way Django will know where to find your static files.
 Let's create a CSS file now, to add your own style to your web-page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     static
-    └───css
-        blog.css
+    └─── css
+            blog.css
 
 Time to write some CSS! Open up the `static/css/blog.css` file in your code editor.
 
@@ -72,7 +73,7 @@ In your `static/css/blog.css` file you should add following code:
 
 `h1 a` is a CSS Selector. Any `a` element inside of an `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the element class or the element id. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 
@@ -86,7 +87,7 @@ We're just loading static files here :). Then, between the `<head>` and `</head>
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
-We just told our template where our CSS file is located. Ok, save the file and refresh the site!
+We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
@@ -113,6 +114,8 @@ Your file should now look like this:
             {% endfor %}
         </body>
     </html>
+
+OK, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
@@ -152,7 +155,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
 
-And now add a class `post` to your `div` containing blogposts.
+And now add a class `post` to your `div` containing a blog post.
 
     <div class="post">
         <p>published: {{ post.published_date }}</p>
@@ -210,7 +213,7 @@ We will now add declaration blocks to different selectors. Selectors starting wi
         color: #000000;
     }
 
-Then surround the HTML code which desplayes the posts with declarations of classes. Replace this:
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
     {% for post in posts %}
         <div class="post">

@@ -217,9 +217,14 @@ Now, try writing the following command:
 
 Don't be surprised with the weird names. Go to the link: http://hubpages.com/hub/50-Doll-Names to look for more cute doll names. :P Just Kidding (You should do this if and only if you have a lot of time).
 
-Above, you just created a variable named django_dolls with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17.
+Above, you just created a variable named *django_dolls* with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17. Do you want to check? Type:
 
-When to use a dictionary or a list? Well, a good point to ponder on. Just have a soltuion in mind before looking at the answer in the next line.
+    >>> print(django_dolls['Dottie'])
+    15
+
+See, it's similar to a list. But you don't need to remember the index - just the name.
+
+When to use a dictionary or a list? Well, a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
 
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
@@ -228,14 +233,14 @@ Dictionaries are mutable like "lists" meaning that they can be changed after the
 
     >>> django_dolls['Jilly'] = 67
 
-Like the lists, using len() method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+Like the lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
 
     >>> len(django_dolls)
     4
 
 I hope it makes sense uptil now. :) Ready for some more fun with Dictionaries? Hop on the next line for some amazing things.
 
-You can use del() command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key Dottie, just type in the following command:
+You can use `del()` command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key 'Dottie', just type in the following command:
 
     >>> del django_dolls['Dottie']
     >>> django_dolls
@@ -249,7 +254,7 @@ Apart from this, you can also change a value associated with an already created 
     >>> django_dolls
     {'Jilly': 100, 'EmmyLou': 17, 'Lottie': 305}
 
-As you can see, the value of the key 'Jilly' has been altered from 67 to 100. :) Exciting? Hurrah! You just learnt another amazing thing.
+As you can see, the value of the key 'Jilly' has been altered from *67* to *100*. :) Exciting? Hurrah! You just learnt another amazing thing.
 
 ### Summary
 
@@ -308,7 +313,7 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 ## Boolean
 
-Accidently, you just learned about a new type of object in Python. It's called a __boolean__ -- and it probably is the easiest type there is.
+Accidently, you just learned about a new type of object in Python. It's called a __Boolean__ -- and it probably is the easiest type there is.
 
 There are only two boolean objects:
 - True
@@ -346,7 +351,7 @@ Try this:
     >>> if 3 > 2:
     ...
 
-So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true. Let’s try to make Python print “It works!”:
+So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or True for that matter). Let’s try to make Python print “It works!”:
 
     >>> if 3 > 2:
     ... print('It works!')
@@ -403,7 +408,7 @@ See what happened there?
 In the last three exercises you learned about:
 
 - __comparing things__ - in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- __boolean__ - a type of object that can only have one of two values: `True` or `False`
+- __Boolean__ - a type of object that can only have one of two values: `True` or `False`
 - __if...elif...else__ - statements that allow you to execute code only when certain conditions are met.
 
 Time for the last part of this chapter!
@@ -424,7 +429,7 @@ As you can see, there are those dots again! This means that nothing has really h
     ...     print('How are you?')
     ...
 
-Ok, our first function is ready! Press Enter to get back to the Python prompt again. Now let's execute our function:
+OK, our first function is ready! Press Enter to get back to the Python prompt again. Now let's execute our function:
 
     >>> hi()
     Hi there!
@@ -432,7 +437,7 @@ Ok, our first function is ready! Press Enter to get back to the Python prompt ag
 
 Great! You're now a programmer, congratulate yourself :)!
 
-That was easy! Let's build our first function with parameters. We will use the previous example - a function that says hi to the person running it - with a name:
+That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
 
     >>> def hi(name):
     ...
@@ -478,7 +483,7 @@ That's the last part already. That was quick, right? :)
 
 As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Remember lists yet? Let's do a list of girls:
+Still remember lists? Let's do a list of girls:
 
     >>> girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 
