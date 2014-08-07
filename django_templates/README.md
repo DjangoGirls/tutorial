@@ -24,7 +24,7 @@ As you can see, all we've got is this:
 
     [<Post: My second post>, <Post: My first post>]
 
-This means that Django understand it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
+This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
 
     {% for post in posts %}
         {{ post }}

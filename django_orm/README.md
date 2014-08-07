@@ -4,7 +4,7 @@ We have different pieces in place: the `Post` model is defined in `models.py`, w
 
 This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take models we want to display and pass them to the template. So basically in a *view* we decide what (model) will be displayed in a template.
 
-OK, so how we will achieve it?
+OK, so how will we achieve it?
 
 We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 

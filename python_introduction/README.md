@@ -217,7 +217,7 @@ Now, try writing the following command:
 
 Don't be surprised with the weird names. Go to the link: http://hubpages.com/hub/50-Doll-Names to look for more cute doll names. :P Just Kidding (You should do this if and only if you have a lot of time).
 
-Above, you just created a variable named *django_dolls* with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17. Do you want to check? Type:
+Above, you just created a variable named `django_dolls` with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17. Do you want to check? Type:
 
     >>> print(django_dolls['Dottie'])
     15
@@ -240,7 +240,7 @@ Like the lists, using `len()` method on the dictionaries, returns the number of 
 
 I hope it makes sense uptil now. :) Ready for some more fun with Dictionaries? Hop on the next line for some amazing things.
 
-You can use `del()` command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key 'Dottie', just type in the following command:
+You can use `del` command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key 'Dottie', just type in the following command:
 
     >>> del django_dolls['Dottie']
     >>> django_dolls
@@ -315,7 +315,7 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 Accidently, you just learned about a new type of object in Python. It's called a __Boolean__ -- and it probably is the easiest type there is.
 
-There are only two boolean objects:
+There are only two Boolean objects:
 - True
 - False
 
@@ -351,7 +351,7 @@ Try this:
     >>> if 3 > 2:
     ...
 
-So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or True for that matter). Let’s try to make Python print “It works!”:
+So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”:
 
     >>> if 3 > 2:
     ... print('It works!')
