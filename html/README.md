@@ -10,7 +10,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for user.
 
-HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<`, and ends with `>`. These tags markup __elements__.
+HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags markup __elements__.
 
 ## Your first template!
 
@@ -30,7 +30,7 @@ See how your website looks now: http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website is isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Add the following to your template file:
 
@@ -56,7 +56,7 @@ Each HTML page is also divided into two elements: __head__ and __body__.
 
 - __body__ is an element that contains everything else that is displayed as part of the web page.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually in the page.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
 For example, you can put a webpage title element inside the `<head>`, like this:
 
@@ -70,15 +70,15 @@ For example, you can put a webpage title element inside the `<head>`, like this:
         </body>
     </html>
 
-Save a file and refresh your page.
+Save the file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
 Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-You will probably also have noticed that each opening tag is matched by a _closing tag_, with a `/`, and that elements are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Probably you have also noticed that each opening tag is matched by a _closing tag_, with a `/`, and that elements are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it is `<body></body>`, and that contains smaller boxes still: `<p></p>`.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
 You need to follow these rules of _closing_ tags, and of _nesting_ elements - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 

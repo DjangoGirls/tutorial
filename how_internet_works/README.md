@@ -1,6 +1,6 @@
 # How the Internet works
 
-*This chapter is inspired by a talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).*
+> This chapter is inspired by a talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like http://djangogirls.org into your browser and press 'Enter'?
 
@@ -13,7 +13,7 @@ follow its instructions and present all these files that your website is made of
 As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have
 a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* -- because they *serve* you data.
 
-Ok, but you want to know how the Internet looks like, right?
+OK, but you want to know how the Internet looks like, right?
 
 We drew you a picture! It looks like this:
 

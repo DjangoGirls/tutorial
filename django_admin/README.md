@@ -11,7 +11,7 @@ Let's open the `blog/admin.py` file and replace its content with this:
 
 As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Ok, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to the browser and type the address:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to the browser and type the address:
 
     http://127.0.0.1:8000/admin/
 
@@ -25,7 +25,7 @@ You should use the username and password you chose when you were creating a data
 
 Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content - you can simply copy-paste some text from this tutorial as your posts' content to save time :).
 
-Make sure that at least two or three posts (but not all) have a publish date set. It will be helpful later.
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
 ![Django admin](images/edit_post3.png)
 

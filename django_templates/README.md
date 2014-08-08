@@ -10,7 +10,7 @@ __Django template tags__ allow us to transfer Python-like things into HTML, so y
 
 ## Display post list template
 
-In the previous chapter we gave our template a list of posts in a `posts` variable. Now we will display it in HTML.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
 To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
 
@@ -24,7 +24,7 @@ As you can see, all we've got is this:
 
     [<Post: My second post>, <Post: My first post>]
 
-This means that Django understand it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template, you do them this way:
+This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
 
     {% for post in posts %}
         {{ post }}
@@ -34,7 +34,7 @@ Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want them to be displayed in a way we created earlier in the __Introduction to HTML__ chapter - like the static posts we put there before. You can mix HTML and template tags. Our `body` will look like this:
+It works! But we want them to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
 
     <div>
         <h1><a href="/">Django Girls Blog</a></h1>

@@ -57,24 +57,25 @@ A model in Django is a special kind of object - it is saved in the `database` (d
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run in the console (from `djangogirls` directory where `manage.py` file is) `python manage.py startapp blog`.
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
 
 You will notice that a new `blog` directory is created and it contains a number of files now. Our directories and files in our project should look like this:
 
-    mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    ├── wsgi.py
-    manage.py
-    blog
-    ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
+    djangogirls
+    ├── mysite
+    |       __init__.py
+    |       settings.py
+    |       urls.py
+    |       wsgi.py
+    ├── manage.py
+    └── blog
+            __init__.py
+            admin.py
+            models.py
+            tests.py
+            views.py
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add the `mysite` application (which was created for us when we started a new project in the last chapter). So the final product should look like this:
 
@@ -91,7 +92,7 @@ After creating an application we also need to tell Django that it should use it.
 
 ### Creating a blog post model
 
-In a file `models.py` we define all objects called `Models` - this is a place in which we will define our blog post.
+In the `models.py` file we define all objects called `Models` - this is a place in which we will define our blog post.
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 

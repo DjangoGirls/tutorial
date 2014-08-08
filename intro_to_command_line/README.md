@@ -36,7 +36,7 @@ These are just a very few of the commands you can run in your command line. To l
 * **exit** - closes your command prompt. This makes sense, right? No need to explain too much...
 
 
-* **cd** - allows you to go to another directory. To use it to go to a directory contained within your current directory, type `cd subdirectory` (where you replace subdirectory with the name of the directory you want to go to) and press enter.
+* **cd** - allows you to go to another directory. To go to a directory contained within your current directory, type `cd subdirectory` (where you replace subdirectory with the name of the directory you want to go to) and press enter.
 
 **For example:** let's say you are in a directory called `c:\test` with three sub-directories: `documents`, `photos` and `music`.
 
@@ -46,7 +46,7 @@ These are just a very few of the commands you can run in your command line. To l
             photos
             music
 
-To go from `test` to the `documents` subdirectory, simply type `cd documents` and press enter. You are now in `c:\test\A`.
+To go from `test` to the `documents` subdirectory, simply type `cd documents` and press enter. You are now in `c:\test\documents`.
 
 To move back to the `c:\test` directory (or generally, to move 'up' one level), type `cd ..` (`cd` followed by two full stops).
 

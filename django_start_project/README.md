@@ -13,9 +13,9 @@ The first step towards creating it is starting a new Django project. Basically, 
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
 
-In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, ok?):
+In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to that in __Django installation__ chapter in __Working with virtualenv__ part.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part.
 
 Run on Windows:
 
@@ -27,8 +27,8 @@ or on Linux or Mac OS:
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
-    manage.py
-    │
+    djangogirls
+    ├───manage.py
     └───mysite
             settings.py
             urls.py
@@ -48,7 +48,7 @@ Let's ignore the other files for now - we won't change them. The only thing to r
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` ) 
+It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
 
 You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this, substituting `Europe/Berlin` with your relevant time zone:
 
