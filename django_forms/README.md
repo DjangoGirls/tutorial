@@ -112,7 +112,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/template/blog` directory. To make a form work we need several things:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
 - we have to display the form. We can do that for example with a simple `{{ form.as_p }}`.
 - the line above needs to be wrapped with an HTML form tag: <`form method="POST">...</form>`
