@@ -8,7 +8,7 @@ Remember the chapter about querysets? We created a view `post_list` that display
 
 Time to do something similar, but for draft posts.
 
-Let's add a link in `mysite/templates/mysite/base.html` near the button for adding new posts (just above `<h1><a href="{% url 'blog.views.post_list' %}">Django Girls</a></h1>` line!):
+Let's add a link in `mysite/templates/mysite/base.html` near the button for adding new posts (just above `<h1><a href="/">Django Girls Blog</a></h1>` line!):
 
     <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
 
