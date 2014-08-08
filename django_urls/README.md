@@ -46,7 +46,7 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
-Go ahead, delete comment lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
+Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
 
 Your `mysite/urls.py` file should now look like this:
 
