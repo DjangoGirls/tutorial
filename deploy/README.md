@@ -29,9 +29,12 @@ This line is needed for your application to work on Heroku.
 
 ## Procfile
 
-Another thing we need to create is a Procfile. Open up your code editor, create a file called `Procfile` in `djangogirls` directory and add this line:
+Another thing we need to create is a Procfile. This will let Heroku know which commands to run in order to start our website.
+Open up your code editor, create a file called `Procfile` in `djangogirls` directory and add this line:
 
     web: gunicorn mysite.wsgi
+
+This line means that we're going to be deploying a `web` application, and we'll do that by running the command `gunicorn mysite.wsgi` (`gunicorn` is a program that's like a more powerful version of Django's `runserver` command).
 
 Then save it. Done!
 
@@ -160,11 +163,14 @@ This automatically added the Heroku remote for our app  to our repository. Now w
 
 ## Visit your application
 
-You’ve deployed your code to Heroku, and specified the process types in a `Procfile`. You can now instruct Heroku to execute a process type.
+You’ve deployed your code to Heroku, and specified the process types in a `Procfile` (we chose a `web` process type earlier).
+We can now tell Heroku to start this `web process`.
 
-Let’s ensure we have one dyno running the web process type:
+To do that, run the following command:
 
     $ heroku ps:scale web=1
+
+This tells Heroku to run just one instance of our `web` process. Since our blog application is quite simple, we don't need too much power and so it's fine to run just one process. It's possible to ask Heroku to run more processes (by the way, Heroku calls these processes "Dynos" so don't be surprised if you see this term) but it will no longer be free.
 
 We can now visit the app in our browser with `heroku open`.
 
