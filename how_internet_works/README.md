@@ -45,4 +45,4 @@ So, basically, when you have a website you need to have a *server* (machine) whe
 
 Since this is a Django tutorial, you will ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters :).
 
-Enough talk, time to create! But first the boring part - installation!
+Enough talk, time to create!

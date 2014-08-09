@@ -1,7 +1,7 @@
 # Introduction to Command Line
 
+## What is command line?
 
-## Introduction
 The following steps will show you how to use the black window all hackers use. It might look a bit scary at first, but really, it is just a prompt, waiting for commands from you.
 
 The window, which is usually called the *command line*, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *prompt*, *console* or *terminal*.
@@ -18,7 +18,6 @@ Each operating system has a slightly different set of commands for the command l
 | mkdir | mkdir | create a new directory | **mkdir testdirectory** |
 |del | rm | delete a directory/file | **del c:\test\test.txt**
 
-
 These are just a very few of the commands you can run in your command line. To learn more about them, check out the **Further Information** section below.
 
 [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
@@ -27,14 +26,11 @@ These are just a very few of the commands you can run in your command line. To l
 
 * **Up arrow** - rerun previous commands. You can avoid typing the same commands again and again by using the up arrow key to cycle through recently used commands.
 
-
 * **Tab key** - the tab key autocompletes directory and file names. For example, if you type `dir t` and then use `TAB`, the command line will try to match this to existing files in your current directory and autocomplete the name for you. Meaning, if your directory contains a file called `test.txt`, typing `dir t` and `TAB` will autocomplete to `dir test.txt`.
-
 
 ## Further information on some of the above commands
 
 * **exit** - closes your command prompt. This makes sense, right? No need to explain too much...
-
 
 * **cd** - allows you to go to another directory. To go to a directory contained within your current directory, type `cd subdirectory` (where you replace subdirectory with the name of the directory you want to go to) and press enter.
 

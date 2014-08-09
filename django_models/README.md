@@ -47,13 +47,13 @@ What kind of things could be done with a blog post? It would be nice to have som
 
 So we will need `publish` method.
 
-Since we already know what we want to achieve, we can start modelling it in Django!
+Since we already know what we want to achieve, we can start modeling it in Django!
 
 ## Django model
 
 Knowing what an object is, we can create a Django model for our blog post.
 
-A model in Django is a special kind of object - it is saved in the `database` (database we created in the __Database__ chapter).
+A model in Django is a special kind of object - it is saved in the `database`. You can think of model in a database as of a spreadsheet with columns and rows.
 
 ### Creating an application
 
@@ -77,7 +77,7 @@ You will notice that a new `blog` directory is created and it contains a number 
             tests.py
             views.py
 
-After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. We should also add the `mysite` application (which was created for us when we started a new project in the last chapter). So the final product should look like this:
+After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line `blog` just above `)`. So the final product should look like this:
 
     INSTALLED_APPS = (
         'django.contrib.admin',
@@ -87,12 +87,11 @@ After creating an application we also need to tell Django that it should use it.
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'blog',
-        'mysite',
     )
 
 ### Creating a blog post model
 
-In the `models.py` file we define all objects called `Models` - this is a place in which we will define our blog post.
+In the `blog/models.py` file we define all objects called `Models` - this is a place in which we will define our blog post.
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 
@@ -120,7 +119,7 @@ It is scary, right? But no worries, we will explain what these lines mean!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
-`class Post(models.Model):` - this line defines our model (it is an `object`!).
+`class Post(models.Model):` - this line defines our model (it is an `object`).
 
 - `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model, we can give it a different name (but we must avoid special characters and whitespaces). Always start a name with an uppercase letter.

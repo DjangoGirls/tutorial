@@ -2,7 +2,7 @@
 
 You're about to write your first line of code, so it's time to download a code editor!
 
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however - that's probably less suitable; our recommendations are equally powerful, but a lot more simple.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however - that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are - it'll be easier to get help from them.
 

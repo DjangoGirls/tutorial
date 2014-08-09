@@ -8,13 +8,13 @@ Python originated in the late 1980s and its main goal is to be readable by human
 
 # Python installation
 
-> This subchapter is based on awesome tutorials by Geek Girls Carrots (http://django.carrots.pl/)
+> This subchapter is based on tutorial by Geek Girls Carrots (http://django.carrots.pl/)
 
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
 ### Windows
 
-You can download Python for Windows from the website https://www.python.org/download/releases/3.4.1/. After downloading the ***.msi** file, you should execute it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
+You can download Python for Windows from the website https://www.python.org/download/releases/3.4.1/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
 
 ### Linux
 
@@ -30,7 +30,6 @@ If you don't have Python installed or if you want a different version, you can i
 Type this command into your console:
 
     sudo apt-get install python3.4
-
 
 #### Fedora
 

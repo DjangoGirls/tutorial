@@ -2,9 +2,9 @@
 
 We're about to build our first webpage -- a homepage for your blog! But first, let's learn a little bit about Django urls.
 
-## What is a URL?
+## What is an URL?
 
-A URL is simply like a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
+An URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
 
 ![Url](images/url.png)
 
@@ -29,7 +29,7 @@ Let's open up the `mysite/urls.py` file and see what it looks like:
 
 As you can see, Django already put something here for us.
 
-Lines that start with `#` are comments - it means that those lines won't be executed by Python. Pretty handy, right?
+Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
 
 The admin URL, which you visited in previous chapter is already here:
 
@@ -43,9 +43,10 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 ## Your first Django url!
 
-Time to create our first urls! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
+Time to create our first URL! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
+
 Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
 
 Your `mysite/urls.py` file should now look like this:
@@ -77,7 +78,7 @@ After that, we can add our first URL pattern:
         url(r'^$', views.post_list),
     )
 
-As you can see, we're now assigning a `view` called `post_list` to `^$` URL. But what does `^$` mean? It's regex magic :) Let's break it down:
+As you can see, we're now assigning a `view` called `post_list` to `^$` URL. But what does `^$` mean? It's a regex magic :) Let's break it down:
 - `^` in regex means "the beginning"; from this sign we can start looking for our pattern
 - `$` matches only "the end" of the string, which means that we will finish looking for our pattern here
 

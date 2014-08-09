@@ -2,7 +2,7 @@
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
 
-> Parts of this chapter is based on the [django-marcador
+> Part of this chapter is based on the [django-marcador
 tutorial](http://django-marcador.keimlink.de/) licensed under Creative Commons
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
 is copyrighted by Markus Zapke-Gründemann et al.
@@ -27,7 +27,7 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 
 ### Windows
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few tutorials ago - remember?) and run `C:\Python\python -m venv venv`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago - remember?) and run `C:\Python\python -m venv venv`. It will look like this:
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
 
@@ -40,7 +40,7 @@ It will look like this:
 
     ~/djangogirls$ python3 -m venv myvenv
 
-and just like the Windows instructions above, `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
 
 > __NOTE:__ Initiating the virtual environment on Ubuntu 14.04 like this currently gives the following error:
 
