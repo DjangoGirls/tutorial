@@ -148,6 +148,16 @@ Awesome, right? Of course, variables can be anything, so numbers too! Try this:
     >>> a * b
     24
 
+But what if we used the wrong name? Can you guess what would happen? Let's try!
+
+    >>> name = "Maria"
+    >>> names
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'names' is not defined
+
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+
 Play with this for a while and see what you can do!
 
 
@@ -215,6 +225,8 @@ If you want to show only the first number, you can do this by using __indexes__.
     42
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
 You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
@@ -326,6 +338,16 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 - __and__ - if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - __or__ - if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+
+    >>> 1 > 'django'
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: unorderable types: int() > str()
+
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`).
+Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
@@ -470,6 +492,15 @@ As you can see, we now gave our function a parameter that we called `name`:
     ...
 
 As you can see, we needed to put two spaces before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
+
+    >>> hi()
+        Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: hi() missing 1 required positional argument: 'name'
+
+Oops, an error. Luckily, Python gives us a pretty useful error message.
+It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function.
+Let's fix it then:
 
     >>> hi("Ola")
     Hi Ola!
