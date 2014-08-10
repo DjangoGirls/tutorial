@@ -232,25 +232,38 @@ You can find a list of all available list methods in this chapter of the Python 
 
 ## Dictionaries
 
-A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define a dictionary is:
+A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define an empty dictionary is:
 
     >>> {}
     {}
 
 This shows that you just created an empty dictionary. Hurray!
 
-Now, try writing the following command:
+Now, try writing the following command (try replacing your own information too):
 
-    >>> django_dolls = {'Dottie' : 15, 'Lottie' : 305, 'EmmyLou' : 17}
+    >>> participant = {'name' : 'Ola', 'country' : 'Poland', 'favorite_numbers' : [7, 42, 92]}
 
-Don't be surprised with the weird names. Go to the link: http://hubpages.com/hub/50-Doll-Names to look for more cute doll names. :P Just Kidding (You should do this if and only if you have a lot of time).
+With this command, you just created a variable named `participant` with three key-value pairs:
 
-Above, you just created a variable named `django_dolls` with three key-value pairs. The key Dottie points to the value 15, Lottie points to the value 305, EmmyLou points to the value 17. Do you want to check? Type:
+- The key `name` points to the value `'Ola'` (a `string` object),
+- `country` points to `'Poland'` (another `string`),
+- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
-    >>> print(django_dolls['Dottie'])
-    15
+You can check the content of individual keys with this syntax:
+
+    >>> print(participant['name'])
+    Ola
 
 See, it's similar to a list. But you don't need to remember the index - just the name.
+
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+
+    >>> participant['age']
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    KeyError: 'age'
+
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
 When to use a dictionary or a list? Well, a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
 
@@ -259,30 +272,30 @@ When to use a dictionary or a list? Well, a good point to ponder on. Just have a
 
 Dictionaries are mutable like "lists" meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
 
-    >>> django_dolls['Jilly'] = 67
+    >>> participant['favorite_language'] = 'Python'
 
 Like the lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
 
-    >>> len(django_dolls)
+    >>> len(participant)
     4
 
-I hope it makes sense uptil now. :) Ready for some more fun with Dictionaries? Hop on the next line for some amazing things.
+I hope it makes sense uptil now. :) Ready for some more fun with dictionaries? Hop on the next line for some amazing things.
 
-You can use `del` command to delete an item in the dictionary which has particular. Say, if you want to delete the entry corresponding to the key 'Dottie', just type in the following command:
+You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
-    >>> del django_dolls['Dottie']
-    >>> django_dolls
-    {'Jilly': 67, 'EmmyLou': 17, 'Lottie': 305}
+    >>> del participant['favorite_numbers']
+    >>> participant
+    {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 
-As you can see from the output, the key-value pair corresponding to 'Dottie' key has been deleted.
+As you can see from the output, the key-value pair corresponding to 'favorite_numbers' key has been deleted.
 
 Apart from this, you can also change a value associated with an already created key in the dictionary. Type:
 
-    >>> django_dolls['Jilly'] = 100
-    >>> django_dolls
-    {'Jilly': 100, 'EmmyLou': 17, 'Lottie': 305}
+    >>> participant['country'] = 'Germany'
+    >>> participant
+    {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 
-As you can see, the value of the key 'Jilly' has been altered from *67* to *100*. :) Exciting? Hurrah! You just learnt another amazing thing.
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learnt another amazing thing.
 
 ### Summary
 
