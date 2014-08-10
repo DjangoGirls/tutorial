@@ -3,7 +3,7 @@
         "home": false,
         "about": "http://djangogirls.org",
         "issues": false,
-        "contribute": "http://github.com/DjangoGirls/tutorial/CONTRIBUTING.md",
+        "contribute": "https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md",
 
         "custom": {
             "Django documentation": "http://docs.djangoproject.com"
