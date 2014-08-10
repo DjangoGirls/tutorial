@@ -4,7 +4,7 @@ The Django Girls Tutorial is licensed under a *Creative Commons Attribution-Shar
 
 # Editing basics
 
-The source code of the tutorial is [hosted on Github](). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+The source code of the tutorial is [hosted on Github](http://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
 The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
@@ -23,7 +23,7 @@ For contributing to the tutorial the following is needed to get started:
 
 First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) repository to your personal Github account:
 
-![Fork button](images/fork.png)
+![Fork button](contributing/images/fork.png)
 
 # Editing chapter content
 
@@ -37,11 +37,11 @@ For simple changes like typo corrections you can use the Github online editor:
 
 and you can edit the chapter directly on github.com.
 
-![Edit button](images/edit.png)
+![Edit button](contributing/images/edit.png)
 
 Markdown syntax is used to edit the individual pages of the tutorial.
 
-![Github editor](images/github_editor.png)
+![Github editor](contributing/images/github_editor.png)
 
 Save your changes and create a pull request as explained below.
 
@@ -57,7 +57,7 @@ Download the [Gitbook Editor](http://help.gitbook.io/editor/README.html) app to 
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
-![Gitbook](images/gitbook.png)
+![Gitbook](contributing/images/gitbook.png)
 
 Make any changes in the tutorial using the editor and then save changes (*Book* > *Save all*).
 
@@ -94,7 +94,7 @@ After you have finished your changes you need to create [a pull request](https:/
 
 In your own repository on Github press do *Compare & pull request*
 
-![Gitbook](images/pull_request.png)
+![Gitbook](contributing/images/pull_request.png)
 
 Fill in the information *why* this change is being made. The reviewer can see the details of the actual change, so you don't need repeat the content of the change.
 

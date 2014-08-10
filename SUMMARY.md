@@ -23,5 +23,4 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [What's next?](whats_next/README.md)
-* [Contributing and editing](contributing_and_editing_this_book/README.md)
 
