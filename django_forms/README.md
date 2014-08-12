@@ -286,7 +286,7 @@ Congratulations! Your application is more and more complete!
 
 If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.6/topics/forms/
 
-We prepared some extra tasks for you, but they are not very hard. You can do them as homework (they are described in __Homework: add more to your website__ chapter):
+We prepared some extra tasks for you, but they are not very hard. You can do them as [homework and find the instructions by clicking here](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/homework/README.html):
 - create a page with all __draft__ posts
 - adding a __publish__ button, which will make your post visible on `post_list` page
 - deleting a post
