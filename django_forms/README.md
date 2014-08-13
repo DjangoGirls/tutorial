@@ -203,6 +203,8 @@ Ok, we talked a lot, but we probably want to see what the whole *view* looks lik
 
 Let's see if it works. Go to the page `http://127.0.0.1:8000/post/new/`, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
 
+You problably have noticed that we are not setting publish date at all. We will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
+
 That is awesome!
 
 ## Form validation
