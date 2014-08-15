@@ -101,4 +101,4 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
 
 That's it! Check if your website is still working properly :)
 
-> If you have an error `TemplateDoesNotExists` that says that there is no `mysite/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+c - Control and C buttons together) and restart it with `python manage.py runserver`.
+> If you have an error `TemplateDoesNotExists` that says that there is no `mysite/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+C - Control and C buttons together) and restart it by running a `python manage.py runserver` command.
