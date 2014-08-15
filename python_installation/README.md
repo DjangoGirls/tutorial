@@ -1,6 +1,6 @@
 # Let’s start with Python
 
-Huh, it's exciting, right?! You'll write your first line of code in just a few minutes!
+We're finally here!
 
 But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics and much, much more.
 
