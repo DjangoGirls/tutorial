@@ -6,24 +6,11 @@ Let's write some code!
 
 ## Python prompt
 
-To start playing with Python, we need to open up a *prompt* on your computer. How you get there depends on the operating system but once it's open, everything is equal.
+To start playing with Python, we need to open up a *command line* on your computer. You should have already knew how to do that -- you have learned that in [Intro to Command Line](/intro_to_command_line/README.html) chapter.
 
-### Windows
+Once you're ready, follow instructions below.
 
-On Windows you need to go to Start menu → All Programs → Accessories → Command Prompt.
-
-A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
-
-    C:\Users\Name> python3
-    Python 3.4.1 (...)
-    Type "copyright", "credits" or "license" for more information.
-    >>>
-
-### Linux and OS X
-
-On Mac OS X you can do this by launching the `Terminal` application (it's in Applications → Utilities). On Linux, it's probably under Applications → Accessories → Terminal.
-
-A window should pop up on your screen. This window is a prompt, waiting for commands from you. We want to open up a Python console, so type in `python3` and hit Enter.
+We want to open up a Python console, so type in `python3` and hit Enter.
 
     $ python3
     Python 3.4.1 (...)

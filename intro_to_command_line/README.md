@@ -1,12 +1,231 @@
-# Introduction to Command Line
+# Introduction to command-line interface
 
-## What is command line?
+Huh, it's exciting, right?! You'll write your first line of code in just a few minutes :)
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first, but really, it is just a prompt, waiting for commands from you.
+__Let us first introduce you to your first new friend: the command line!__
 
-The window, which is usually called the *command line*, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *prompt*, *console* or *terminal*.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-Each operating system has a slightly different set of commands for the command line. Here is a summary of some useful commands:
+## What is a command line?
+
+The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+
+## Open the command-line interface
+
+To start some experiments we need to open our command-line interface first.
+
+### Windows
+
+Go to Start menu → All Programs → Accessories → Command Prompt.
+
+### Mac OS X
+
+Applications → Utilities → Terminal.
+
+### Linux
+
+It's probably under Applications → Accessories → Terminal, but that may depend on your version system. If it's not there, just Google it :)
+
+## Prompt
+
+You know should see a white or black window that is waiting for your commands.
+
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+    $
+
+On Windows, it's a `>` sign, like this:
+
+    >
+
+Each command will be prepended by this and one space, but you don't have to type it. Your computer will do it for you :)
+
+> Just a small note: in your case there maybe something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
+
+## Your first command! \o/
+
+Let's start with something simple. Type this command:
+
+    $ whoami
+
+or
+
+    > whoami
+
+And then hit Enter. This is our result:
+
+    $ whoami
+    olasitarska
+
+As you can see, computer just presented you your username. Neat, huh?:)
+
+> Try to type each command, do not copy paste. You'll remember more this way!
+
+## Basics
+
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+
+### Current directory
+
+It'd be nice to know where are we now, right? Let's see. Type this command and hit enter:
+
+    $ pwd
+    /Users/olasitarska
+
+If you're on Windows:
+
+    > cd
+    C:\Users\olasitarska
+
+You'll probably see something similiar on your machine. Once you open command line you usually start at your user's home directory.
+
+---
+
+### List files and directories
+
+What's in it? It'd be cool to find out. Let's see:
+
+    $ ls
+    Applications
+    Desktop
+    Downloads
+    Music
+    ...
+
+ Windows:
+
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
+    ...
+
+---
+
+### Change current directory
+
+Maybe we can now go to our Desktop directory?
+
+    $ cd Desktop
+
+Windows:
+
+    > cd Desktop
+
+Check if it's really changed:
+
+    $ pwd
+    /Users/olasitarska/Desktop
+
+Windows:
+
+    > cd
+    C:\Users\olasitarska\Desktop
+
+Here it is!
+
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, command line will automatically autofill the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit `tab` button twice to get a list of options.
+
+---
+
+### Create directory
+
+How about creating Django Girls directory on your desktop? You can do it this way:
+
+    $ mkdir djangogirls
+
+Windows:
+
+    > mkdir djangogirls
+
+This little command will create a folder with name `djangogirls` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls`/`dir` command! Try it :)
+
+> PRO tip: If you don't want to type the same commands over and over, try clicking `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+---
+
+### Exercise!
+
+Small challenge for you: in your newly created `djangogirls` directory create a directory called `test`. Use `cd` and `mkdir` commands.
+
+#### Solution:
+
+    $ cd djangogirls
+    $ mkdir test
+    $ ls
+    test
+
+Windows:
+
+    > cd djangogirls
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
+
+Congrats! :)
+
+---
+
+### Clean up
+
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+    $ cd ..
+
+Windows:
+
+    > cd ..
+
+Making `cd` to `..` will change your current directory to the parent directory (which means directory that contain your current directory).
+
+Check where you are:
+
+    $ pwd
+    /Users/olasitarska/Desktop
+
+Windows:
+
+    > cd
+    C:\Users\olasitarska\Desktop
+
+Now time to delete `djangogirls` directory:
+
+    $ rm -r djangogirls
+
+Windows:
+
+    > rmdir /S djangogirls
+    djangogirls, Are you sure <Y/N>? Y
+
+Done! To be sure it's actually deleted, let's check it:
+
+    $ ls
+
+Windows:
+
+    > dir
+
+> __Attention__: eleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
+
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, all right?:)
+
+    $ exit
+
+Windows:
+
+    > exit
+
+Cool, huh?:)
+
+## Summary
+
+ Here is a summary of some useful commands:
 
 | Command (Windows)      | Command (Mac OS / Linux)    | Description | Example|
 | ------------- |-----------|-------------| -----|
@@ -18,56 +237,10 @@ Each operating system has a slightly different set of commands for the command l
 | mkdir | mkdir | create a new directory | **mkdir testdirectory** |
 |del | rm | delete a directory/file | **del c:\test\test.txt**
 
-These are just a very few of the commands you can run in your command line. To learn more about them, check out the **Further Information** section below.
+These are just a very few of the commands you can run in your command line but you're not going to use anything more than that today.
 
-[ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Useful shortcuts
+## Ready?
 
-* **Up arrow** - rerun previous commands. You can avoid typing the same commands again and again by using the up arrow key to cycle through recently used commands.
-
-* **Tab key** - the tab key autocompletes directory and file names. For example, if you type `dir t` and then use `TAB`, the command line will try to match this to existing files in your current directory and autocomplete the name for you. Meaning, if your directory contains a file called `test.txt`, typing `dir t` and `TAB` will autocomplete to `dir test.txt`.
-
-## Further information on some of the above commands
-
-* **exit** - closes your command prompt. This makes sense, right? No need to explain too much...
-
-* **cd** - allows you to go to another directory. To go to a directory contained within your current directory, type `cd subdirectory` (where you replace subdirectory with the name of the directory you want to go to) and press enter.
-
-**For example:** let's say you are in a directory called `c:\test` with three sub-directories: `documents`, `photos` and `music`.
-
-    c
-    └───test
-            documents
-            photos
-            music
-
-To go from `test` to the `documents` subdirectory, simply type `cd documents` and press enter. You are now in `c:\test\documents`.
-
-To move back to the `c:\test` directory (or generally, to move 'up' one level), type `cd ..` (`cd` followed by two full stops).
-
-
-* **dir** (Windows) / **ls** (others) - lists files and directories located in your current directory. If you type `dir` or `ls`, respectively, you will see the contents of the directory you're currently in.
-Note that for some commands you can use the `*` (asterisk) symbol, which stands for *all* and is often called a *wildcard*. With this in mind, try typing `dir *.txt` for Windows or `ls *.txt` for other OS to only list files that end with `.txt`.
-
-
-* **copy** (Windows) / **cp** (others) - allows you to copy files from one location to another. To use this command, type `copy sourcefile targetfile` (where sourcefile is the name/path of the file you want to copy, and targetfile is the name you want to give to the copy you are creating).
-
-**For example**: if you have the file `c:\test\test.txt` and you would like to create a copy at `c:\windows\test.txt`, type:
-
-    copy c:\test\test.txt c:\windows\test.txt
-
-
-* **move** (Windows) / **mv** (others) - allows you to move files from one location to another. The syntax you use is the same as for the `copy`/`cp` command.
-
-
-* **mkdir** - allows you to create a new directory.  For example, `mkdir temp` creates a new directory called `temp` in the current directory.
-
-
-* **del** (Windows) / **rm** (others) - allows you to delete the specified file.  For example, `del test.txt` deletes the `test.txt` file from the current directory. **!!!ATTENTION!!!** Deleting files using `del` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
-
-
-
-
-
-
+Let's dive into Python!
