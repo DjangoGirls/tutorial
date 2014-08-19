@@ -13,7 +13,7 @@ Create a `templates/mysite/base.html` file. You also need to create `templates` 
     mysite
     └───templates
         └───mysite
-            base.html
+            └───base.html
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
