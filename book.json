@@ -17,12 +17,15 @@
     },
 
     "plugins": [
-        "anchors", "ga"
+        "anchors", "ga", "richquotes"
     ],
 
     "pluginsConfig": {
         "ga": {
             "token": "UA-51680040-3"
+        },
+        "richquotes" : {
+            "todos" : true
         }
     }
 }
