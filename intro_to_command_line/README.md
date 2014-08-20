@@ -1,12 +1,12 @@
-# Introduction to command-line interface
+# Introduction to the command-line interface
 
 Huh, it's exciting, right?! You'll write your first line of code in just a few minutes :)
 
-__Let us first introduce you to your first new friend: the command line!__
+__Let us introduce you to your first new friend: the command line!__
 
 The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-## What is a command line?
+## What is the command line?
 
 The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
@@ -57,7 +57,7 @@ And then hit Enter. This is our result:
     $ whoami
     olasitarska
 
-As you can see, computer just presented you your username. Neat, huh?:)
+As you can see, the computer just presented you your username. Neat, huh?:)
 
 > Try to type each command, do not copy paste. You'll remember more this way!
 
@@ -77,7 +77,7 @@ If you're on Windows:
     > cd
     C:\Users\olasitarska
 
-You'll probably see something similiar on your machine. Once you open command line you usually start at your user's home directory.
+You'll probably see something similiar on your machine. Once you open the command line you usually start at your user's home directory.
 
 ---
 
@@ -126,13 +126,13 @@ Windows:
 
 Here it is!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, command line will automatically autofill the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit `tab` button twice to get a list of options.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically autofill the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
 
 ---
 
 ### Create directory
 
-How about creating Django Girls directory on your desktop? You can do it this way:
+How about creating a Django Girls directory on your desktop? You can do it this way:
 
     $ mkdir djangogirls
 
@@ -140,9 +140,9 @@ Windows:
 
     > mkdir djangogirls
 
-This little command will create a folder with name `djangogirls` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls`/`dir` command! Try it :)
+This little command will create a folder with the name `djangogirls` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls`/`dir` command! Try it :)
 
-> PRO tip: If you don't want to type the same commands over and over, try clicking `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 ---
 
@@ -180,7 +180,7 @@ Windows:
 
     > cd ..
 
-Making `cd` to `..` will change your current directory to the parent directory (which means directory that contain your current directory).
+Making `cd` to `..` will change your current directory to the parent directory (which means the directory that contain your current directory).
 
 Check where you are:
 
@@ -192,7 +192,7 @@ Windows:
     > cd
     C:\Users\olasitarska\Desktop
 
-Now time to delete `djangogirls` directory:
+Now time to delete the `djangogirls` directory:
 
     $ rm -r djangogirls
 
@@ -209,7 +209,7 @@ Windows:
 
     > dir
 
-> __Attention__: eleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
+> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
 ### Exit
 
@@ -227,15 +227,15 @@ Cool, huh?:)
 
  Here is a summary of some useful commands:
 
-| Command (Windows)      | Command (Mac OS / Linux)    | Description | Example|
-| ------------- |-----------|-------------| -----|
-| exit    | exit | close the window | **exit** |
-| cd      | cd   | change directory      |   **cd test** |
-| dir     | ls   |list directories/files      | **dir** |
-| copy    | cp   | copy file | **copy c:\test\test.txt c:\windows\test.txt** |
-| move | mv | move file | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir | mkdir | create a new directory | **mkdir testdirectory** |
-|del | rm | delete a directory/file | **del c:\test\test.txt**
+| Command (Windows) | Command (Mac OS / Linux) | Description             | Example                                       |
+| ----------------- | ------------------------ | ----------------------- | --------------------------------------------- |
+| exit              | exit                     | close the window        | **exit**                                      |
+| cd                | cd                       | change directory        | **cd test**                                   |
+| dir               | ls                       | list directories/files  | **dir**                                       |
+| copy              | cp                       | copy file               | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file               | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory  | **mkdir testdirectory**                       |
+|del                | rm                       | delete a directory/file | **del c:\test\test.txt**                      |
 
 These are just a very few of the commands you can run in your command line but you're not going to use anything more than that today.
 
