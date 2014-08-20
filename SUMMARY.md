@@ -5,7 +5,6 @@
 * [Python installation](python_installation/README.md)
 * [Introduction to Python](python_introduction/README.md)
 * [What is Django?](django/README.md)
-* [Database](database/README.md)
 * [Django installation](django_installation/README.md)
 * [Code editor](code_editor/README.md)
 * [Starting Django project](django_start_project/README.md)
@@ -23,4 +22,3 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [What's next?](whats_next/README.md)
-

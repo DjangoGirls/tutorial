@@ -53,7 +53,9 @@ Since we already know what we want to achieve, we can start modeling it in Djang
 
 Knowing what an object is, we can create a Django model for our blog post.
 
-A model in Django is a special kind of object - it is saved in the `database`. You can think of model in a database as of a spreadsheet with columns and rows.
+A model in Django is a special kind of object - it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter -- it'll be enough for us right now.
+
+You can think of a model in the database as of a spreadsheet with columns (fields) and rows (data).
 
 ### Creating an application
 
@@ -153,6 +155,3 @@ The last step here is to add our new model to our database. It is as easy as typ
     Installed 0 object(s) from 0 fixture(s)
 
 It would be nice to see this Post model, right? Jump to the next chapter to see what your Post looks like!
-
-
-
