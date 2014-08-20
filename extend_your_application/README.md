@@ -143,5 +143,12 @@ Ok, we can refresh our page and see if `Page not found` is gone now.
 
 Yay! It works!
 
-You should be proud of yourself! You already did __a lot__!
+## One more thing: deploy time!
 
+It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+
+    heroku push --app djangogirlsblog
+
+> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+
+And that should be it! Congrats :)

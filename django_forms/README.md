@@ -288,9 +288,12 @@ Congratulations! Your application is more and more complete!
 
 If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.6/topics/forms/
 
-We prepared some extra tasks for you, but they are not very hard. You can do them as [homework and find the instructions by clicking here](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/homework/README.html):
-- create a page with all __draft__ posts
-- adding a __publish__ button, which will make your post visible on `post_list` page
-- deleting a post
+## One more thing: deploy time!
 
-If you are ready for more: go to the next chapter and see if you can complete all the tasks!
+It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+
+    heroku push --app djangogirlsblog
+
+> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+
+And that should be it! Congrats :) 

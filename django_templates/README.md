@@ -54,6 +54,15 @@ Everything you put between `{% for %}` and `{% endfor %}` will be repeated for e
 
 Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`. We are accessing data in each of the fields defined in our `Post` model. Also the `|linebreaks` is piping the posts text through a filter to convert line-breaks into paragraphs.
 
+
+## One more thing
+
+It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+
+    heroku push --app djangogirlsblog
+
+> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Treat yourself something sweet, you have earned it :)
