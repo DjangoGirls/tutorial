@@ -115,9 +115,9 @@ Then authenticate your Heroku account on your computer by running this command:
 
 In case you don't have an SSH key this command will automatically create one. SSH keys are required to push code to the Heroku.
 
-## Git
+## Ignore some files
 
-Heroku uses a git repository to manage your project files, so we need to use it too.
+We don't want to send all of our project files to Heroku. Some of them, like `local_settings.py` or our database, need to stay only on our local computer. In order to tell Heroku which files should it ignore, we need to create a `.gitignore` file in our project main directory.
 
 Create `.gitignore` file with the following content:
 
@@ -127,39 +127,27 @@ Create `.gitignore` file with the following content:
     local_settings.py
     db.sqlite3
 
-and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
+and save it. The dot on the beginning of the file name is important!
 
-__NOTE:__ Remember to replace `myvenv` with the name you gave your `virtualenv`!
-
-Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
-
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git add .
-    $ git commit -m "My Django Girls app"
-    [master (root-commit) 2943412] My Django Girls
-     7 files changed, 230 insertions(+)
-     create mode 100644 .gitignore
-     create mode 100644 Procfile
-     create mode 100644 mysite/__init__.py
-     create mode 100644 mysite/settings.py
-     create mode 100644 mysite/urls.py
-     create mode 100644 mysite/wsgi.py
-     create mode 100644 manage.py
-     create mode 100644 requirements.txt
-     create mode 100644 runtime.txt
+> __Note:__ Remember to replace `myvenv` with the name you gave your `virtualenv`!
 
 ## Deploy to Heroku!
 
-It was a lot of configuration and installing, right? But you need to do that once! Now you can deploy!
+It was a lot of configuration and installing, right? But you only need to do that once! Now you can deploy:
 
 It's as simple as running this command, replacing `djangogirlsblog` with your own application name:
 
     $ heroku create djangogirlsblog
 
-This automatically added the Heroku remote for our app  to our repository. Now we can do a simple git push to deploy our application:
+One more thing: let's install [heroku-push plugin](https://github.com/ddollar/heroku-push) by running this command:
 
-    $ git push heroku master
+    $ heroku plugins:install https://github.com/ddollar/heroku-push
+
+Now we can do a simple push to deploy our application:
+
+    $ heroku push --app djangogirlsblog
+
+> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
 
 ## Visit your application
 
@@ -176,10 +164,8 @@ We can now visit the app in our browser with `heroku open`.
 
     $ heroku open
 
-As you can see, there is an error. Heroku created a new database for us and it's empty.  We also need to sync it:
+As you can see, there is an error. Heroku created a new database for us but it's empty. We also need to sync it:
 
     $ heroku run python manage.py syncdb
 
 You should now be able to see your website in a browser! Congrats :)!
-
-
