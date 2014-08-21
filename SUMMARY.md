@@ -16,7 +16,7 @@
 * [Django urls](django_urls/README.md)
 * [Django views - time to create!](django_views/README.md)
 * [Introduction to HTML](html/README.md)
-* [Dynamic data in templates](dynamic_data_in_templates/README)
+* [Dynamic data in templates](dynamic_data_in_templates/README.md)
 * [Django templates](django_templates/README.md)
 * [CSS - make it pretty](css/README.md)
 * [Template extending](template_extending/README.md)
