@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [How the Internet works?](how_internet_works/README.md)
 * [Intro to Command Line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
@@ -9,12 +10,13 @@
 * [Code editor](code_editor/README.md)
 * [Starting Django project](django_start_project/README.md)
 * [Django models](django_models/README.md)
+* [Django ORM (Querysets)](django_orm/README.md)
 * [Django admin](django_admin/README.md)
 * [Deploy!](deploy/README.md)
 * [Django urls](django_urls/README.md)
 * [Django views - time to create!](django_views/README.md)
 * [Introduction to HTML](html/README.md)
-* [Django ORM (Querysets)](django_orm/README.md)
+* [Dynamic data in templates](dynamic_data_in_templates/README)
 * [Django templates](django_templates/README.md)
 * [CSS - make it pretty](css/README.md)
 * [Template extending](template_extending/README.md)
@@ -22,3 +24,4 @@
 * [Django Forms](django_forms/README.md)
 * [Domain](domain/README.md)
 * [What's next?](whats_next/README.md)
+
