@@ -79,7 +79,7 @@ You will notice that a new `blog` directory is created and it contains a number 
             tests.py
             views.py
 
-After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add two lines: `'mysite',` and `'blog',` just above `)`. So the final product should look like this:
+After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
     INSTALLED_APPS = (
         'django.contrib.admin',
@@ -88,7 +88,6 @@ After creating an application we also need to tell Django that it should use it.
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'mysite',
         'blog',
     )
 

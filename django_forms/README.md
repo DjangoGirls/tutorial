@@ -39,7 +39,7 @@ So once again we will create: a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-It's time to open `mysite/templates/mysite/base.html`. We will add a link in `div` named `page-header`:
+It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 
@@ -123,7 +123,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 Ok, so let's see how the HTML in `post_edit.html` should look:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
     {% block content %}
         <h1>New post</h1>
@@ -232,7 +232,7 @@ Open `blog/post_detail.html` and add this line:
 
 so that the template will look like:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
     {% block content %}
         <div class="date">
