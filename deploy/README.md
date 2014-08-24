@@ -83,7 +83,7 @@ At the end of the `mysite/settings.py`, copy and paste this:
 
     try:
         from .local_settings import *
-    except:
+    except ImportError:
         pass
 
 It'll import all of your local settings if the file exists.
