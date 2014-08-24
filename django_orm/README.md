@@ -19,7 +19,7 @@ The effect should be like this:
 	(InteractiveConsole)
 	>>>
 
-You're know in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course. 
+You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course. 
 
 ### All objects
 
@@ -64,7 +64,7 @@ Cool! Let's get an instance of the user now:
 
 As you can see, we know `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
 
-Now we can finally create our first po that:
+Now we can finally create our first post:
 
 	>>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
 
@@ -79,7 +79,7 @@ You can know have a little fun and add more posts to see how it works. Add 2-3 m
 
 ### Filter objects
 
-Big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use it instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like that:
+Big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like that:
 
 	>>> Post.objects.filter(author = user)
 	[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
