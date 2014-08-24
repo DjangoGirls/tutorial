@@ -2,9 +2,9 @@
 
 We're about to build our first webpage -- a homepage for your blog! But first, let's learn a little bit about Django urls.
 
-## What is an URL?
+## What is a URL?
 
-An URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
+A URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
 
 ![Url](images/url.png)
 
