@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [How the Internet works?](01_how_internet_works/README.md)
+* [How the Internet works?](01_how_the_internet_works/README.md)
 * [Intro to Command Line](02_intro_to_command_line/README.md)
 * [Python installation](03_python_installation/README.md)
 * [Introduction to Python](04_python_introduction/README.md)

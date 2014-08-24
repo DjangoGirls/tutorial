@@ -23,7 +23,7 @@ It will (more or less) look like this:
 
 ![Figure 0.1](images/application.png)
 
-OK, [let's start at the beginning...](01_how_internet_works/README.md)
+OK, [let's start at the beginning...](01_how_the_internet_works/README.md)
 
 ## About and contributing
 
