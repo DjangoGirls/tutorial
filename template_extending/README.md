@@ -16,7 +16,15 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 base.html
                 post_list.html
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Now have to tell Django that you're making a template file and it's right there in the templates directory! Open up the `mysite/settings.py` file and add the following lines at the bottom:
+
+    TEMPLATE_DIRS = (
+        os.path.join(BASE_DIR, "templates"),
+    )
+
+This way Django will know where to find your it.
+
+Then open up the `base.html` file you just made and copy everything from `post_list.html` to it, like this:
 
     {% load staticfiles %}
     <html>
