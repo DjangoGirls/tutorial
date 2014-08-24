@@ -8,12 +8,13 @@ This way you don't have to repeat yourself in every file, when you want to use t
 
 A base template is the most basic template that you extend on every page of your website.
 
-Create a `templates/mysite/base.html` file. You also need to create `templates` and `mysite` directories, but you probably have noticed this pattern already :)
+Let's create a `base.html` file in `blog/templates/blog/`:
 
-    mysite
+    blog
     └───templates
-        └───mysite
-            └───base.html
+        └───blog
+                base.html
+                post_list.html
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
@@ -83,11 +84,11 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
 
 And now add this line to the beginning of the file:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
 It means that we're now extending `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
     {% block content %}
         {% for post in posts %}
@@ -101,4 +102,4 @@ It means that we're now extending `base.html` template in `post_list.html`. Only
 
 That's it! Check if your website is still working properly :)
 
-> If you have an error `TemplateDoesNotExists` that says that there is no `mysite/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+C - Control and C buttons together) and restart it by running a `python manage.py runserver` command.
+> If you have an error `TemplateDoesNotExists` that says that there is no `blog/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+C - Control and C buttons together) and restart it by running a `python manage.py runserver` command.

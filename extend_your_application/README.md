@@ -12,7 +12,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
     {% block content %}
         {% for post in posts %}
@@ -121,7 +121,7 @@ We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 
-    {% extends 'mysite/base.html' %}
+    {% extends 'blog/base.html' %}
 
     {% block content %}
         <div class="date">
