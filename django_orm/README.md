@@ -45,7 +45,7 @@ It's an empty list. That seems to be correct, right? We didn't add any post yet!
 
 This is how you create a Post object in database:
 
-    >>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
+    >>> Post.objects.create(author=user, title='Sample title', text='Test')
 
 But we have one missing ingredient here: `user`. We need to pass an instance of `User` model as an author. How to do that?
 
@@ -81,12 +81,12 @@ You can know have a little fun and add more posts to see how it works. Add 2-3 m
 
 Big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like that:
 
-    >>> Post.objects.filter(author = user)
+    >>> Post.objects.filter(author=user)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
 Or maybe we want to see all the posts that contain a word 'title' in the `title` field?
 
-    >>> Post.objects.filter(title__contains = 'title')
+    >>> Post.objects.filter(title__contains='title')
     [<Post: Sample title>, <Post: 4th title of post>]
 
 You can also get a list of all published posts. We do it by filtering all the posts that have `published_date`:
@@ -96,7 +96,7 @@ You can also get a list of all published posts. We do it by filtering all the po
 
 Unfortunately, none of our posts is published now. We can change that! First get an instance of a post we want to publish:
 
-    >>> post = Post.objects.get(id = 1)
+    >>> post = Post.objects.get(id=1)
 
 And then publish it with our `publish` method!
 
