@@ -4,7 +4,7 @@ In this chapter you'll learn how Django connects to database and store data in i
 
 ## What is a QuerySet?
 
-A QuerySet, in essence, is a list of objects of a given Model. QuerySet allows you to read the data from database, filter it and order. 
+A QuerySet, in essence, is a list of objects of a given Model. QuerySet allows you to read the data from database, filter it and order.
 
 It's the easiest to learn by example. Let's try this, shall we?
 
@@ -14,16 +14,16 @@ Open up your console and type this command:
 
     > $ python manage.py shell
 
-The effect should be like this: 
+The effect should be like this:
 
     (InteractiveConsole)
     >>>
 
-You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course. 
+You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course.
 
 ### All objects
 
-Let's try to display all of our posts first. You can do it with the following command: 
+Let's try to display all of our posts first. You can do it with the following command:
 
     >>> Post.objects.all()
     Traceback (most recent call last):
@@ -87,7 +87,7 @@ Big part of QuerySets is an ability to filter them. Let's say, we want to find a
 Or maybe we want to see all the posts that contain a word 'title' in the `title` field?
 
     >>> Post.objects.filter(title__contains = 'title')
-    [<Post: Sample title>, <Post: 4th title of post>]    
+    [<Post: Sample title>, <Post: 4th title of post>]
 
 You can also get a list of all published posts. We do it by filtering all the posts that have `published_date`:
 
@@ -110,12 +110,12 @@ Now try to get list of published posts again (press the up arrow button 3 times 
 ### Ordering objects
 
 QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-    
+
     >>> Post.objects.all().order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
 We can also reverse the ordering by adding `-` at the beggining:
-    
+
     >>> Post.objects.all().order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 
@@ -123,10 +123,3 @@ Cool! You're now ready for the next part! To close shell, type this:
 
     >>> exit()
     $
-
-
-
-
-
-
-
