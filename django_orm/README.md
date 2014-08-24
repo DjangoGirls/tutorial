@@ -19,7 +19,7 @@ The effect should be like this:
 	(InteractiveConsole)
 	>>>
 
-You're know in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course. 
+You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :) You can use all Python commands here too, of course. 
 
 ### All objects
 
@@ -64,7 +64,7 @@ Cool! Let's get an instance of the user now:
 
 As you can see, we know `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
 
-Now we can finally create our first po that:
+Now we can finally create our first post:
 
 	>>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
 
