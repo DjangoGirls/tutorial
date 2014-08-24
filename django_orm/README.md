@@ -111,12 +111,12 @@ Now try to get list of published posts again (press the up arrow button 3 times 
 
 QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
 
-    >>> Post.objects.all().order_by('created_date')
+    >>> Post.objects.order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
 We can also reverse the ordering by adding `-` at the beggining:
 
-    >>> Post.objects.all().order_by('-created_date')
+    >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 
 Cool! You're now ready for the next part! To close shell, type this:
