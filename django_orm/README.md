@@ -79,7 +79,7 @@ You can know have a little fun and add more posts to see how it works. Add 2-3 m
 
 ### Filter objects
 
-Big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use it instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like that:
+Big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like that:
 
 	>>> Post.objects.filter(author = user)
 	[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
