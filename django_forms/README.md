@@ -58,20 +58,18 @@ After adding the line, your html file should now look like this:
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
-            <body>
-                <div class="page-header">
-                    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                    <h1><a href="/">Django Girls Blog</a></h1>
-                </div>
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-8">
-                            {% block content %}
-                            {% endblock %}
-                        </div>
+            <div class="page-header">
+                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                        {% block content %}
+                        {% endblock %}
                     </div>
                 </div>
-            </body>
+            </div>
         </body>
     </html>
 
