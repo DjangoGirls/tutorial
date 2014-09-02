@@ -70,7 +70,7 @@ Now we can finally create our first post:
 
 Hurray! Wanna check if it worked?
 
-    >>> Post.object.all()
+    >>> Post.objects.all()
     [<Post: Sample title>]
 
 ### Add more posts
