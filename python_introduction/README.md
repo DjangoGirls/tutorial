@@ -44,7 +44,7 @@ How about your name? Type your first name in quotes like this:
     >>> "Ola"
     'Ola'
 
-You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be an apostrophe (`'`) or double quotes (`"`) - they tell Python that what's inside of them is a string.
+You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes - they tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
@@ -252,21 +252,21 @@ What happens if we ask Python the value of a key that doesn't exist? Can you gue
 
 Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-When to use a dictionary or a list? Well, a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
+When to use a dictionary or a list? Well, that's a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
 
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
-Dictionaries are mutable like "lists" meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
 
     >>> participant['favorite_language'] = 'Python'
 
-Like the lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+Like lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
 
     >>> len(participant)
     4
 
-I hope it makes sense uptil now. :) Ready for some more fun with dictionaries? Hop on the next line for some amazing things.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Hop onto the next line for some amazing things.
 
 You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
@@ -274,9 +274,9 @@ You can use the `del` command to delete an item in the dictionary. Say, if you w
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 
-As you can see from the output, the key-value pair corresponding to 'favorite_numbers' key has been deleted.
+As you can see from the output, the key-value pair corresponding to  the 'favorite_numbers' key has been deleted.
 
-Apart from this, you can also change a value associated with an already created key in the dictionary. Type:
+As well as this, you can also change a value associated with an already created key in the dictionary. Type:
 
     >>> participant['country'] = 'Germany'
     >>> participant
@@ -290,7 +290,8 @@ Awesome! You know a lot about programming now. In this last part you learned abo
 
 - __errors__ - you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - __variables__ - names for objects that allow you to code more easily and to make your code more readable
-- __lists__ - lists of objects stored in a particular order.
+- __lists__ - lists of objects stored in a particular order
+- __dictionaries__ - objects stored as key-value pairs
 
 Excited for the next part? :)
 
@@ -351,7 +352,7 @@ Instead, it shows a **TypeError** and tells us the two types can't be compared t
 
 ## Boolean
 
-Accidently, you just learned about a new type of object in Python. It's called a __Boolean__ -- and it probably is the easiest type there is.
+Incidentally, you just learned about a new type of object in Python. It's called a __Boolean__ -- and it probably is the easiest type there is.
 
 There are only two Boolean objects:
 - True
@@ -437,7 +438,7 @@ If 2 were a greater number than 5, then the second command would be executed. Ea
     ... else:
     ...     print('Hey anonymous!')
     ...
-    Sonja!
+    Hey Sonja!
 
 See what happened there?
 
@@ -491,7 +492,7 @@ As you can see, we now gave our function a parameter that we called `name`:
     ...         print('Hi anonymous!')
     ...
 
-As you can see, we needed to put two spaces before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
+As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
     >>> hi()
         Traceback (most recent call last):
@@ -511,7 +512,7 @@ Let's fix it then:
 
 Awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
 
-Let's do something smarter -- there is more names than two, and writing a condition for each would be hard, right?
+Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
 
     >>> def hi(name):
     ...     print('Hi ' + name + '!')
@@ -556,7 +557,7 @@ Dots again! Remember what goes after the dots? Yes, a space :)
     Hi You!
     Next girl
 
-As you can see, everything you will put inside a `for` statement with space will be repeated for every element of the list `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
 You can also use `for` on numbers using the `range` method:
 

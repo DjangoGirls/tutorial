@@ -54,7 +54,7 @@ It will look like this:
 
 ## Working with virtualenv
 
-The command above will create a directory called `myvenv` (or whichever name you chose) that contains our virtual environment (basically bunch of directory and files). All we want to do now is starting it by running:
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files). All we want to do now is start it by running:
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
 

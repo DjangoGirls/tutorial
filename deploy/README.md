@@ -164,7 +164,7 @@ We can now visit the app in our browser with `heroku open`.
 
     $ heroku open
 
-As you can see, there is an error. Heroku created a new database for us but it's empty. We also need to sync it:
+One final step; Heroku created a new database for us but we also need to sync it:
 
     $ heroku run python manage.py syncdb
 

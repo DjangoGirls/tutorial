@@ -28,7 +28,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 ## Prompt
 
-You know should see a white or black window that is waiting for your commands.
+You now should see a white or black window that is waiting for your commands.
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
@@ -38,7 +38,7 @@ On Windows, it's a `>` sign, like this:
 
     >
 
-Each command will be prepended by this and one space, but you don't have to type it. Your computer will do it for you :)
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you :)
 
 > Just a small note: in your case there maybe something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
 
@@ -79,11 +79,13 @@ If you're on Windows:
 
 You'll probably see something similiar on your machine. Once you open the command line you usually start at your user's home directory.
 
+> Note: 'pwd' stands for 'print working directory'.
+
 ---
 
 ### List files and directories
 
-What's in it? It'd be cool to find out. Let's see:
+So what's in it? It'd be cool to find out. Let's see:
 
     $ ls
     Applications
@@ -180,7 +182,7 @@ Windows:
 
     > cd ..
 
-Making `cd` to `..` will change your current directory to the parent directory (which means the directory that contain your current directory).
+Making `cd` to `..` will change your current directory to the parent directory (which means the directory that contains your current directory).
 
 Check where you are:
 

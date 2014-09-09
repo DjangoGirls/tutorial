@@ -52,12 +52,12 @@ Everything you put between `{% for %}` and `{% endfor %}` will be repeated for e
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`. We are accessing data in each of the fields defined in our `Post` model. Also the `|linebreaks` is piping the posts text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`? We are accessing data in each of the fields defined in our `Post` model. Also the `|linebreaks` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 
 ## One more thing
 
-It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. Open up your console and type this:
 
     heroku push --app djangogirlsblog
 

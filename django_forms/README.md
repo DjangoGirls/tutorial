@@ -27,7 +27,7 @@ Ok, let's open it and type the following code:
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-`PostForm`, as you probably suspect is the name of our form. We need to tell Django, that this form is a `ModelForm` (so Django will do some magic for us) - `forms.ModelForm` is responsible for that.
+`PostForm`, as you probably suspect, is the name of our form. We need to tell Django, that this form is a `ModelForm` (so Django will do some magic for us) - `forms.ModelForm` is responsible for that.
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
@@ -151,9 +151,9 @@ Open `blog/views.py` once again. Currently all we have in `post_new` view is:
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-When we submit the form, we are back in the same view, but this time we have some more data in `request`, more specifically in `request.POST`. Remember that in HTML file our `<form>` definition had variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+When we submit the form, we are back in the same view, but this time we have some more data in `request`, more specifically in `request.POST`. Remember that in the HTML file our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-So in our *view* we have two separate situations to handle. First one: when we access the page for the first time and we want a blank form. Second one: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
+So in our *view* we have two separate situations to handle. First: when we access the page for the first time and we want a blank form. Second: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
 
     if request.method == "POST":
         [...]
@@ -209,7 +209,7 @@ That is awesome!
 
 ## Form validation
 
-Now, we will show you how cool Django forms are. Blog post needs to have `title` and `text` fields. In our `Post` model we did not say (as opposed to `published_date`) that these fields are not required, so Django, by default, expects them to be set.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say (as opposed to `published_date`) that these fields are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess, what will happen!
 
@@ -217,14 +217,14 @@ Try to save the form without `title` and `text`. Guess, what will happen!
 
 Django is taking care of validating that all the fields in our form are correct. Isn't it awesome?
 
-> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user. Head to the admin page `http://127.0.0.1:8000/admin` and login again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
+> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user, head to the admin page `http://127.0.0.1:8000/admin` and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
 
 ## Edit form
 
-Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to what we just did. Let's create some important things quickly (if you don't understand something - you should ask your coach or look at the previous chapters, since we covered all the steps already).
+Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to what we just did. Let's create some important things quickly (if you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already).
 
 Open `blog/post_detail.html` and add this line:
 
@@ -266,7 +266,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. First thing: we pass an extra `pk` parameter from urls. Next - we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form we pass this post as an `instance` both when we save the form:
+This looks almost exactly the same as our `post_new` view, right? But not entirely. First thing: we pass an extra `pk` parameter from urls. Next: we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form we pass this post as an `instance` both when we save the form:
 
     form = PostForm(request.POST, instance=post)
 
@@ -284,7 +284,7 @@ When you click it you will see the form with our blog post:
 
 Feel free to change the title or the text and save changes!
 
-Congratulations! Your application is more and more complete!
+Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.6/topics/forms/
 

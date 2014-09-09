@@ -2,14 +2,14 @@
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
 
-> Parts of this chapter is based on the [django-marcador
+> Parts of this chapter are based on the [django-marcador
 tutorial](http://django-marcador.keimlink.de/) licensed under Creative Commons
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
 is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a simple blog!
 
-The first step towards creating it is starting a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us: a bunch of directories and files that we will later use.
+The first step towards creating it is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us: a bunch of directories and files that we will later use.
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
 
@@ -42,7 +42,7 @@ The `settings.py` file contains the configuration of your website.
 
 Remember when we talked about a postman checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Let's ignore the other files for now - we won't change them. The only thing to remember is to not delete them by accident!
+Let's ignore the other files for now - we won't change them. The only thing to remember is not to delete them by accident!
 
 ## Changing settings
 

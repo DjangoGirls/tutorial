@@ -65,13 +65,13 @@ We won't be going too deep into customizing and learning about CSS here, because
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
-In your `static/css/blog.css` file you should add following code:
+In your `static/css/blog.css` file you should add the following code:
 
     h1 a {
         color: #FCA205;
     }
 
-`h1 a` is a CSS Selector. Any `a` element inside of an `h1` element (i.e. when we have in code something like: `<h1><a href="">link</a></h1>`) is the tag we're applying our styles to, and we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (e.g. when we have in code something like: `<h1><a href="">link</a></h1>`).  In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
 In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -243,7 +243,7 @@ Save those files and refresh your website.
 
 ![Figure 14.4](images/final.png)
 
-Wohoo! Looks awesome, right? The code we just pasted is not really so hard to understand and you should be able to understand most of it just by reading it.
+Woohoo! Looks awesome, right? The code we just pasted is not really so hard to understand and you should be able to understand most of it just by reading it.
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. If you break something, don't worry, you can always undo it!
 

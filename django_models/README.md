@@ -6,9 +6,9 @@ What we want to create now is something that will store all posts in our blog. B
 
 There is a concept in programming called `Object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions we can model things and define how they interact with each other.
 
-So what is an object? It is a number of properties and actions. It sounds weird, but we will give you an example.
+So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
-If we want to model a cat we will create an object `Cat` that has some properties, i.e. `color`, `age`, `mood` (i.e. good, bad, sleepy ;)), `owner` (that is a `Person` object or maybe, in case of a strayed cat, this property is empty).
+If we want to model a cat we will create an object `Cat` that has some properties, i.e. `color`, `age`, `mood` (i.e. good, bad, sleepy ;)), `owner` (that is a `Person` object or maybe, in case of a stray cat, this property is empty).
 
 And then the `Cat` has some actions: `purr`, `scratch` or `feed` (in which we will give the cat some `CatFood`, which could be a separate object with properties, i.e. `taste`).
 
@@ -55,7 +55,7 @@ Knowing what an object is, we can create a Django model for our blog post.
 
 A model in Django is a special kind of object - it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter -- it'll be enough for us right now.
 
-You can think of a model in the database as of a spreadsheet with columns (fields) and rows (data).
+You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
 ### Creating an application
 
@@ -124,7 +124,7 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 `class Post(models.Model):` - this line defines our model (it is an `object`).
 
 - `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model, we can give it a different name (but we must avoid special characters and whitespaces). Always start a name with an uppercase letter.
+- `Post` is the name of our model, we can give it a different name (but we must avoid special characters and whitespaces). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
 Now we define properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define a type of field (is it text? A number? A date? A relation to another object, i.e. a User?).
@@ -136,7 +136,7 @@ Now we define properties we were talking about: `title`, `text`, `created_date`,
 
 We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.6/ref/models/fields/#field-types).
 
-What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is a name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
+What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is the name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
 
 Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 

@@ -13,9 +13,9 @@ After that make sure to:
 
 ### Can you recommend any further resources?
 
-Yes! First, go ahead and try our another book, called [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
 
-Later on, you can try recources listed below. They're all very recommended!
+Later on, you can try recources listed below. They're all highly recommended!
 - [Django's official tutorial](https://docs.djangoproject.com/en/1.6/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python course](http://www.codecademy.com/en/tracks/python)

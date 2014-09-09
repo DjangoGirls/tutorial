@@ -28,15 +28,15 @@ We want to have a link to a post detail page on the post's title. Let's change `
 
     <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 
-Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you suspect `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!
+Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!
 
-`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit: `post_detail` is the name of the *view*.
+`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit - `post_detail` - is the name of the *view*.
 
 Now when we go to:
 
     http://127.0.0.1:8000/
 
-we will have an error (as suspected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
+we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -55,15 +55,15 @@ We want to create a URL to point Django to a *view* called `post_detail`, that w
     )
 
 That one looks scary, but no worries - we will explain it for you:
-- it's starts with `^` again -- "the beginning"
+- it starts with `^` again -- "the beginning"
 - `post/` only means that after the beginning, the URL should contain the word __post__ and __/__. So far so good.
-- `(?P<pk>[0-9]+)` - this part is trickier. It means that Django will take everything that you'll place here and transfer it to a view as a variable called `pk`. `[0-9]` also tells us that it can only be a number, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly ok!
+- `(?P<pk>[0-9]+)` - this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. `[0-9]` also tells us that it can only be a number, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly ok!
 - `/` - then we need __/__ again
 - `$` - "the end"!
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-`pk` is shortcut for `primary key`. This name is often used in many Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
+`pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
 
 Ok! Let's refresh the page:
 
