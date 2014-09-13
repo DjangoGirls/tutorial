@@ -19,7 +19,16 @@ You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
-You should use the username and password you chose when you were creating a database (in the __Starting Django project__ chapter). After logging in, you should see the Django admin dashboard.
+In order to log in you need to create a *superuser* - a user which has control over everything on the site. Go back to you command-line and type `python manage.py createsuperuser`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. The output should look like this (where username and email should be your own ones):
+
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+
+Return to your browser and log in with the superuser's credentials you chose, you should see the Django admin dashboard.
 
 ![Django admin](images/django_admin3.png)
 
@@ -29,7 +38,7 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.6/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.7/ref/contrib/admin/
 
 It is probably a good moment to grab a coffee (or tea) and eat something sweet. You created your first Django model - you deserve a little treat!
 

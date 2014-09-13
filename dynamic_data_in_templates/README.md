@@ -56,7 +56,7 @@ So finally our `blog/views.py` file should look like this:
 
 That's it! Time to go back to our template and display this QuerySet!
 
-If you want to read a little bit more about QuerySets in Django you should look here: https://docs.djangoproject.com/en/1.6/ref/models/querysets/
+If you want to read a little bit more about QuerySets in Django you should look here: https://docs.djangoproject.com/en/1.7/ref/models/querysets/
 
 
 
