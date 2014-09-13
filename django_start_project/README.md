@@ -68,32 +68,16 @@ This is already set up in this part of your `mysite/settings.py` file:
         }
     }
 
-To create a database for our blog, let's run the following in the console: `python manage.py syncdb` (we need to be the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
-    (myvenv) ~/djangogirls$ python manage.py syncdb
-    Creating tables ...
-    Creating table django_admin_log
-    Creating table auth_permission
-    Creating table auth_group_permissions
-    Creating table auth_group
-    Creating table auth_user_groups
-    Creating table auth_user_user_permissions
-    Creating table auth_user
-    Creating table django_content_type
-    Creating table django_session
-
-    You just installed Django's auth system, which means you don't have any superusers defined.
-    Would you like to create one now? (yes/no): yes
-    Username (leave blank to use 'Name'):
-    Email address: admin@example.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    Installing custom SQL ...
-    Installing indexes ...
-    Installed 0 object(s) from 0 fixture(s)
-
-It will ask you if you want to create a *superuser* - a user which has control over everything on the site. Type `yes`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. Remember this username and password! We'll use it later.
+    (myvenv) ~/djangogirls$ python manage.py migrate
+    Operations to perform:
+      Apply all migrations: admin, contenttypes, auth, sessions
+    Running migrations:
+      Applying contenttypes.0001_initial... OK
+      Applying auth.0001_initial... OK
+      Applying admin.0001_initial... OK
+      Applying sessions.0001_initial... OK
 
 And we're done! Time to start the web server and see if our website is working!
 

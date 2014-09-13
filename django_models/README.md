@@ -73,11 +73,13 @@ You will notice that a new `blog` directory is created and it contains a number 
     |       wsgi.py
     ├── manage.py
     └── blog
-            __init__.py
-            admin.py
-            models.py
-            tests.py
-            views.py
+        ├── migrations
+        |       __init__.py
+        ├── __init__.py
+        ├── admin.py
+        ├── models.py
+        ├── tests.py
+        └── views.py
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
@@ -134,7 +136,7 @@ Now we define properties we were talking about: `title`, `text`, `created_date`,
 - `models.DateTimeField` - this is a date and time.
 - `models.ForeignKey` - this is a link to another model.
 
-We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.6/ref/models/fields/#field-types).
+We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
 
 What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is the name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
 
@@ -144,13 +146,19 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 ### Create tables for models in your database
 
-The last step here is to add our new model to our database. It is as easy as typing `python manage.py syncdb`. It will look like this:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it), type `python manage.py makemigrations blog`. It will look like this:
 
-    (myvenv) ~/djangogirls$ python manage.py syncdb
-    Creating tables ...
-    Creating table blog_post
-    Installing custom SQL ...
-    Installing indexes ...
-    Installed 0 object(s) from 0 fixture(s)
+    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+    Migrations for 'blog':
+      0001_initial.py:
+      - Create model Post
 
-It would be nice to see this Post model, right? Jump to the next chapter to see what your Post looks like!
+Django prepared for us a migration file that we have to apply now to our database, type `python manage.py migrate blog`, the output should be:
+
+    (myvenv) ~/djangogirls$ python manage.py migrate blog
+    Operations to perform:
+      Apply all migrations: blog
+    Running migrations:
+      Applying blog.0001_initial... OK
+
+Hurray! Our Post model is now in our database, it would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
