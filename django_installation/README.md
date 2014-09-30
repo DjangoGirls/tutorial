@@ -49,7 +49,7 @@ It will look like this:
 > To get around this, use the `virtualenv` command instead.
 
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv myvenv
+>     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 
 
 ## Working with virtualenv
