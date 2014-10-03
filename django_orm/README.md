@@ -56,6 +56,16 @@ Let's import User model first:
 What users do we have in our database? Try this:
 
     >>> User.objects.all()
+    []
+
+No users! lets create a user:
+
+    >>> User.objects.create(username='ola')
+    <User: ola>
+
+What users do we now have in our database? Try this:
+
+    >>> User.objects.all()
     [<User: ola>]
 
 Cool! Let's get an instance of the user now:
