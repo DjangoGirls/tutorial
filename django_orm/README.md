@@ -72,7 +72,7 @@ Cool! Let's get an instance of the user now:
 
     user = User.objects.get(username='ola')
 
-As you can see, we know `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
+As you can see, we now `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
 
 Now we can finally create our first post:
 
