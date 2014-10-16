@@ -85,7 +85,7 @@ Hurray! Wanna check if it worked?
 
 ### Add more posts
 
-You can know have a little fun and add more posts to see how it works. Add 2-3 more and go ahead to the next part.
+You can now have a little fun and add more posts to see how it works. Add 2-3 more and go ahead to the next part.
 
 ### Filter objects
 
