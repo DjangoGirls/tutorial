@@ -30,7 +30,7 @@ So now we are interested in a list of blog posts that are published and sorted b
  
     Post.objects.filter(published_date__isnull=False).order_by('published_date')
 
-Now we put this piece of code inside the `post_list` file, by adding it to the function `def post_list(request)`:
+Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`:
 
     from django.shortcuts import render
     from .models import Post
