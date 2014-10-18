@@ -240,7 +240,7 @@ so that the template will look like:
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         </div>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     {% endblock %}
 
 In `blog/urls.py` we add this line:

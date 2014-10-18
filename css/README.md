@@ -109,7 +109,7 @@ Your file should now look like this:
                 <div>
                     <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text }}</p>
+                    <p>{{ post.text|linebreaks }}</p>
                 </div>
             {% endfor %}
         </body>
@@ -160,7 +160,7 @@ And now add a class `post` to your `div` containing a blog post.
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `mysite/static/css/blog.css` file:
@@ -219,7 +219,7 @@ Then surround the HTML code which displays the posts with declarations of classe
         <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text }}</p>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 
@@ -232,7 +232,7 @@ in the `blog/templates/blog/post_list.html` with this:
                     <div class="post">
                         <p>published: {{ post.published_date }}</p>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text }}</p>
+                        <p>{{ post.text|linebreaks }}</p>
                     </div>
                 {% endfor %}
             </div>
