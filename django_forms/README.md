@@ -224,7 +224,7 @@ Django is taking care of validating that all the fields in our form are correct.
 
 Now we know how to add a new form. But what if we want to edit an existing one? It is very similar to what we just did. Let's create some important things quickly (if you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already).
 
-Open `blog/post_detail.html` and add this line:
+Open `blog/templates/blog/post_detail.html` and add this line:
 
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 
