@@ -19,7 +19,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
             <div class="post">
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text }}</p>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
         {% endfor %}
     {% endblock content %}
@@ -130,7 +130,7 @@ It will look like this:
             {% endif %}
         </div>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     {% endblock %}
 
 Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
