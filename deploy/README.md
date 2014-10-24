@@ -166,6 +166,6 @@ We can now visit the app in our browser with `heroku open`.
 
 One final step; Heroku created a new database for us but we also need to sync it:
 
-    $ heroku run python manage.py syncdb --app djangogirlsblog
+    $ heroku run python manage.py migrate --app djangogirlsblog
 
 You should now be able to see your website in a browser! Congrats :)!
