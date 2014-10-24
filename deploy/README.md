@@ -141,10 +141,11 @@ It's as simple as running this command, replacing `djangogirlsblog` with your ow
 
 One more thing: let's install [heroku-push plugin](https://github.com/ddollar/heroku-push) by running this command:
 
-    $ heroku plugins:install https://github.com/ddollar/heroku-push
+    $ heroku plugins:install https://github.com/andriykohut/heroku-push
 
 Now we can do a simple push to deploy our application:
-
+    
+    $ git init
     $ heroku push --app djangogirlsblog
 
 > __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
