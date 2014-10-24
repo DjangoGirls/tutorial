@@ -41,6 +41,10 @@ It means that for every URL that starts with `admin/` Django will find a corresp
 
 Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a lot (a lot!) of rules that form a search pattern. It is not so easy to understand so we won't worry about it today and you'll definitely get to know them in the future. Today we will only use the ones we need.
 
+Here is a simple example just to ne leave you stuck in this sentence :D
+
+Imagine you will have your website like that: www.mysite.com/post/12345 , do i have to write views for all the post numbers? of course not! the easiest way, is to tell Django that, my post links should be `www.mysite.com/post/<a number>` and he will deal with that ;) .
+
 ## Your first Django url!
 
 Time to create our first URL! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
