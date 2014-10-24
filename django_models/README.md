@@ -142,6 +142,8 @@ What about `def publish(self):`? It is exactly our `publish` method we were talk
 
 Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
+If you are using `Python 2.7`, and you want to use a non-ascii characters ( `é` character for example ) you have to replace `__str__()` with `__unicode()__`, but if you are using `Python 3.x` you just keep the `__str()__`.
+
 If something is still not clear about models, feel free to ask your coach! We know it is very complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Create tables for models in your database
