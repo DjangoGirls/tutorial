@@ -4,7 +4,7 @@ We're about to build our first webpage -- a homepage for your blog! But first, l
 
 ## What is a URL?
 
-A URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
+A URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL, but then you will ask: why http://djangogirls.com is in letters while `127.0.0.1:8000` is a number? Well, it is easy, you just think to your cellphone; if you want to call your friend, you dont have to remember his number, you just browse his name, and you phone will bring his phone number: cellphones will deal with the number, you will deal with the names, this is called [DNS][1], and you notice that the `127.0.0.1:8000`contains two parts: `127.0.0.1` , `8000` separated with `:`, well, the first one is called the `IP Address` and the second one is the `port number`, and if you dident -and dont- see port number in http://djangogirls.com this is because `http` uses the port `80`, the browser and the webserver already know that last number, so, http://djangogirls.com is the same as http://djangogirls.com:80 ):
 
 ![Url](images/url.png)
 
@@ -94,3 +94,4 @@ You can read that there is __no attribute 'post_list'__. Is *post_list* remindin
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.7/topics/http/urls/
 
+[1]: http://en.wikipedia.org/wiki/Domain_Name_System
