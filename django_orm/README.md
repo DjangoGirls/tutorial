@@ -124,7 +124,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
     >>> Post.objects.order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
-We can also reverse the ordering by adding `-` at the beggining:
+We can also reverse the ordering by adding `-` at the beginning:
 
     >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
