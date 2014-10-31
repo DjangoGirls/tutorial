@@ -143,7 +143,7 @@ Because our application needs a database, let's create a free [PostgreSQL](http:
 
     $ heroku addons:add heroku -postgresql --app djangogirlsblog
 
-> In addition to creating a database for us, Heroku will also provide our application information on how to connect to the database. This information will be read and used by `dj_database_url.config()` in our `mysite/settings.py file`.
+> In addition to creating a database for us, this command will also configure our application with the information on how to connect to the database. This information will be read and used by `dj_database_url.config()` in our `mysite/settings.py file`.
 
 One more thing: let's install [heroku-push plugin](https://github.com/ddollar/heroku-push) by running this command:
 
