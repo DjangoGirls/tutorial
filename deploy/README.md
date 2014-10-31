@@ -139,6 +139,12 @@ It's as simple as running this command, replacing `djangogirlsblog` with your ow
 
     $ heroku create djangogirlsblog
 
+Because our application needs a database, let's create a free [PostgreSQL](http://www.postgresql.org) instance on Heroku. It's as simple as running this command:
+
+    $ heroku addons:add heroku -postgresql --app djangogirlsblog
+
+> In addition to creating a database for us, Heroku will also provide our application information on how to connect to the database. This information will be read and used by `dj_database_url.config()` in our `mysite/settings.py file`.
+
 One more thing: let's install [heroku-push plugin](https://github.com/ddollar/heroku-push) by running this command:
 
     $ heroku plugins:install https://github.com/ddollar/heroku-push
