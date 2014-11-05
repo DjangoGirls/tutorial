@@ -1,5 +1,7 @@
 # Deploy!
 
+__Note__ Following chapter can be sometimes a bit harder to get through. Insist on finishing it, deployment is an important part of website development process. Chapter is placed in the middle of tutorial so that mentor can help you get your website online while you can still finish the tutorial alone if you run out of time.
+
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
 As you learned, a website has to be located on a server. There are a lot of providers, but we will use the one with the simplest deployment process: [Heroku](http://heroku.com/). Heroku is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
