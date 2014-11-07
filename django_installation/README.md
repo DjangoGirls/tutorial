@@ -27,7 +27,7 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 
 ### Windows
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago - remember?) and run `C:\Python\python -m venv venv`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago - remember?) and run `C:\Python34\python -m venv myvenv`. It will look like this:
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
 
