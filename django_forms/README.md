@@ -62,7 +62,7 @@ After adding the line, your html file should now look like this:
                 <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
-            <div class="content">
+            <div class="content container">
                 <div class="row">
                     <div class="col-md-8">
                         {% block content %}

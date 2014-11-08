@@ -225,7 +225,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 
 in the `blog/templates/blog/post_list.html` with this:
 
-    <div class="content">
+    <div class="content container">
         <div class="row">
             <div class="col-md-8">
                 {% for post in posts %}
