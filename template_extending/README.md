@@ -38,7 +38,9 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
                     <div class="col-md-8">
                     {% for post in posts %}
                         <div class="post">
-                            <p>published: {{ post.published_date }}</p>
+                            <div class="date">
+                                {{ post.published_date }}
+                            </div>
                             <h1><a href="">{{ post.title }}</a></h1>
                             <p>{{ post.text|linebreaks }}</p>
                         </div>
@@ -76,7 +78,9 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
 
     {% for post in posts %}
         <div class="post">
-            <p>published: {{ post.published_date }}</p>
+            <div class="date">
+                {{ post.published_date }}
+            </div>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaks }}</p>
         </div>
@@ -93,7 +97,9 @@ It means that we're now extending the `base.html` template in `post_list.html`. 
     {% block content %}
         {% for post in posts %}
             <div class="post">
-                <p>published: {{ post.published_date }}</p>
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaks }}</p>
             </div>

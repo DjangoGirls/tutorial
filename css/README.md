@@ -230,7 +230,9 @@ in the `blog/templates/blog/post_list.html` with this:
             <div class="col-md-8">
                 {% for post in posts %}
                     <div class="post">
-                        <p>published: {{ post.published_date }}</p>
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
                         <h1><a href="">{{ post.title }}</a></h1>
                         <p>{{ post.text|linebreaks }}</p>
                     </div>
