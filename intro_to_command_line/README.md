@@ -194,7 +194,9 @@ Windows:
     > cd
     C:\Users\olasitarska\Desktop
 
-Now time to delete the `djangogirls` directory:
+Now time to delete the `djangogirls` directory.
+
+> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
     $ rm -r djangogirls
 
@@ -210,8 +212,6 @@ Done! To be sure it's actually deleted, let's check it:
 Windows:
 
     > dir
-
-> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
 ### Exit
 
