@@ -13,7 +13,7 @@ Once you're ready, follow the instructions below.
 We want to open up a Python console, so type in `python3` and hit Enter.
 
     $ python3
-    Python 3.4.1 (...)
+    Python 3.4.2 (...)
     Type "copyright", "credits" or "license" for more information.
     >>>
 

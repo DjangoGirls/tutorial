@@ -44,7 +44,7 @@ Then save it. Done!
 
 We need to tell Heroku which Python version we want to use. This is simply done by creating a `runtime.txt` and putting the following text inside:
 
-    python-3.4.1
+    python-3.4.2
 
 ## mysite/local_settings.py
 
