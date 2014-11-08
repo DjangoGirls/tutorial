@@ -174,12 +174,11 @@ We check if the form is valid and if so, we can save it!
 Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
 `post.save()` will preserve changes (adding author) and a new blog post is created!
 
-Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need more imports:
+Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
-    from django.core.urlresolvers import reverse
     from django.shortcuts import redirect
 
-Add them at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
+Add it at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
     return redirect('blog.views.post_detail', pk=post.pk)
 
