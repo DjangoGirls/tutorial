@@ -15,9 +15,7 @@ Every page on the Internet needs its own URL. This way your application knows wh
 Let's open up the `mysite/urls.py` file and see what it looks like:
 
     from django.conf.urls import patterns, include, url
-
     from django.contrib import admin
-    admin.autodiscover()
 
     urlpatterns = patterns('',
         # Examples:
@@ -55,9 +53,7 @@ Go ahead, delete the commented lines (lines starting with `#`) and add a line th
 Your `mysite/urls.py` file should now look like this:
 
     from django.conf.urls import patterns, include, url
-
     from django.contrib import admin
-    admin.autodiscover()
 
     urlpatterns = patterns('',
         url(r'^admin/', include(admin.site.urls)),
@@ -96,4 +92,3 @@ There is no "It works" anymore, huh? Don't worry, it's just an error page, nothi
 You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is how we called our view! This means that everything is in place, we just didn't create our *view* yet. No worries, we will get there.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.7/topics/http/urls/
-
