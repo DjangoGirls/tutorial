@@ -42,7 +42,7 @@ Each command will be prepended by this sign and one space, but you don't have to
 
 > Just a small note: in your case there maybe something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
 
-## Your first command! \o/
+## Your first command (YAY!)
 
 Let's start with something simple. Type this command:
 
