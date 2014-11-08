@@ -19,13 +19,13 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 Run on Windows:
 
-    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
+    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin startproject mysite .
 
 or on Linux or Mac OS:
 
-    (myvenv) ~/djangogirls$ django-admin.py startproject mysite .
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
     ├───manage.py
