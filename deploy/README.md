@@ -173,6 +173,8 @@ We can now visit the app in our browser with `heroku open`.
 
     $ heroku open --app djangogirlsblog
 
+This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
+
 We created a new database on Heroku, but we also need to sync it:
 
     $ heroku run python manage.py migrate --app djangogirlsblog
