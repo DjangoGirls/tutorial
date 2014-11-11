@@ -9,7 +9,6 @@ Take a break and relax. You have just done something really huge.
 After that make sure to:
 
 - Follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](http://twitter.com/djangogirls) to stay up to date
-- [Join our community](http://community.djangogirls.org/): ask questions, share your progress, get to know us better :)
 
 ### Can you recommend any further resources?
 
