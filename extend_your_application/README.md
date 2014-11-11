@@ -17,7 +17,9 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
     {% block content %}
         {% for post in posts %}
             <div class="post">
-                <p>published: {{ post.published_date }}</p>
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaks }}</p>
             </div>

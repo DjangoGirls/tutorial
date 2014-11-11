@@ -62,7 +62,7 @@ After adding the line, your html file should now look like this:
                 <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
-            <div class="content">
+            <div class="content container">
                 <div class="row">
                     <div class="col-md-8">
                         {% block content %}
@@ -113,7 +113,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
 - we have to display the form. We can do that for example with a simple `{{ form.as_p }}`.
-- the line above needs to be wrapped with an HTML form tag: <`form method="POST">...</form>`
+- the line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`
 - we need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`
 - and finally just after the opening `<form ...>` tag we need to add `{% csrf_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
 
@@ -174,12 +174,11 @@ We check if the form is valid and if so, we can save it!
 Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
 `post.save()` will preserve changes (adding author) and a new blog post is created!
 
-Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need more imports:
+Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
-    from django.core.urlresolvers import reverse
     from django.shortcuts import redirect
 
-Add them at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
+Add it at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
     return redirect('blog.views.post_detail', pk=post.pk)
 
@@ -272,7 +271,7 @@ and when we just opened a form with this post to edit:
 
     form = PostForm(instance=post)
 
-Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in the top-right corner::
+Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in the top-right corner:
 
 ![Edit button](images/edit_button2.png)
 
