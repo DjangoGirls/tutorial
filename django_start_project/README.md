@@ -19,7 +19,7 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 Run on Windows:
 
-    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin startproject mysite .
+    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
 
 or on Linux or Mac OS:
 
