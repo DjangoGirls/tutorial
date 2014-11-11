@@ -58,7 +58,7 @@ What users do we have in our database? Try this:
     >>> User.objects.all()
     []
 
-No users! lets create a user:
+No users! Let's create a user:
 
     >>> User.objects.create(username='ola')
     <User: ola>
