@@ -240,7 +240,7 @@ This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try replacing your own information too):
 
-    >>> participant = {'name' : 'Ola', 'country' : 'Poland', 'favorite_numbers' : [7, 42, 92]}
+    >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 
 With this command, you just created a variable named `participant` with three key-value pairs:
 
