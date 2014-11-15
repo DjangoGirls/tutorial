@@ -57,11 +57,16 @@ Have you noticed that we used a slightly different notation this time `{{ post.t
 
 ## One more thing
 
-It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. Open up your console and type this:
+It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter 15:
 
-    heroku push --app djangogirlsblog
-
-> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+    $ git status
+    ...
+    $ git add -A .
+    $ git status
+    ...
+    $ git commit -m "Used Django templates instead of static HTML."
+    ...
+    $ git push heroku master
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
 

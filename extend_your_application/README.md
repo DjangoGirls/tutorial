@@ -147,10 +147,15 @@ Yay! It works!
 
 ## One more thing: deploy time!
 
-It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter 15:
 
-    heroku push --app djangogirlsblog
-
-> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+    $ git status
+    ...
+    $ git add -A .
+    $ git status
+    ...
+    $ git commit -m "Added more views to the website."
+    ...
+    $ git push heroku master
 
 And that should be it! Congrats :)
