@@ -172,23 +172,23 @@ We can now tell Heroku to start this `web process`.
 
 To do that, run the following command:
 
-    $ heroku ps:scale web=1 --app djangogirlsblog
+    $ heroku ps:scale web=1
 
 This tells Heroku to run just one instance of our `web` process. Since our blog application is quite simple, we don't need too much power and so it's fine to run just one process. It's possible to ask Heroku to run more processes (by the way, Heroku calls these processes "Dynos" so don't be surprised if you see this term) but it will no longer be free.
 
 We can now visit the app in our browser with `heroku open`.
 
-    $ heroku open --app djangogirlsblog
+    $ heroku open
 
 This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
 
 We created a new database on Heroku, but we also need to sync it:
 
-    $ heroku run python manage.py migrate --app djangogirlsblog
+    $ heroku run python manage.py migrate
 
 As you can see, there is an error. Heroku created a new database for us and it's empty.  We also need to sync it:
 
-    $ heroku run python manage.py createsuperuser --app djangogirlsblog
+    $ heroku run python manage.py createsuperuser
 
 You should now be able to see your website in a browser! Congrats :)!
 

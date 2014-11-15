@@ -138,10 +138,30 @@ What we want really want to do is display real posts added in our Django admin -
 
 ## One more thing
 
-It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again. Open up your console and type this:
+It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again.
 
-    heroku push --app djangogirlsblog
+First off, let's see what files have changed since we last deployed:
 
-> __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+    $ git status
+
+Let's tell `git` to include all the changes from the current directory:
+
+    $ git add -A .
+
+> __Note__ `-A` (short for "all") means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+
+    $ git status
+
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+
+    $ git commit -m "Changed the HTML for the site."
+
+> __Note__ Make sure you use double quotes around the commit message.
+
+Once we've done that, we can finally upload (push) our changes to the website on heroku:
+
+    git push heroku master
 
 And that should be it! Once Heroku is finished, you can go ahead and refresh your website in the browser. Changes should be visible!
