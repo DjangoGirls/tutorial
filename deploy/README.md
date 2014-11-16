@@ -133,7 +133,7 @@ and save it. The dot on the beginning of the file name is important! As you can 
 
 __NOTE:__ Remember to replace `myvenv` with the name you gave your `virtualenv`!
 
-Next, we’ll create a new git repository with the following commands:
+Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
