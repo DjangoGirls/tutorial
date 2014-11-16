@@ -131,8 +131,6 @@ Create `.gitignore` file with the following content:
 
 and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
 
-__NOTE:__ Remember to replace `myvenv` with the name you gave your `virtualenv`!
-
 Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
 
     $ git init
