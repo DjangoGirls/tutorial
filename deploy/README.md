@@ -1,6 +1,6 @@
 # Deploy!
 
-__Note__ Following chapter can be sometimes a bit harder to get through. Insist on finishing it, deployment is an important part of website development process. Chapter is placed in the middle of tutorial so that mentor can help you get your website online while you can still finish the tutorial alone if you run out of time.
+> __Note__ The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of thewebsite development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
@@ -118,10 +118,9 @@ Then authenticate your Heroku account on your computer by running this command:
 In case you don't have an SSH key this command will automatically create one. SSH keys are required to push code to the Heroku.
 
 ## Git
+Git is a version control system used by a lot of programmers.  Heroku uses a git repository to manage your project files, so we need to use it too.
 
-Heroku uses a git repository to manage your project files, so we need to use it too.
-
-Create `.gitignore` file with the following content:
+Create a file named `.gitignore` in your `djangogirls` directory with the following content:
 
     myvenv
     __pycache__
@@ -151,7 +150,7 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
 
 ## Deploy to Heroku!
 
-It was a lot of configuration and installing, right? But you need to do that once! Now you can deploy!
+That was a lot of configuration and installing, right? But you only need to do that once! Now you can deploy!
 
 It's as simple as running this command, replacing `djangogirlsblog` with your own application name:
 
@@ -159,7 +158,7 @@ It's as simple as running this command, replacing `djangogirlsblog` with your ow
 
 > __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
 
-This automatically added the Heroku remote for our app  to our repository. Now we can do a simple git push to deploy our application:
+This automatically added the Heroku remote for our app to our repository. Now we can do a simple git push to deploy our application:
 
     $ git push heroku master
 
@@ -178,13 +177,13 @@ We can now visit the app in our browser with `heroku open`.
 
     $ heroku open
 
-This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
+> __Note__: you will see an error page! We'll talk about that in a minute
 
-We created a new database on Heroku, but we also need to sync it:
+This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser, and at the moment you will probably see an error page. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
+
+The error you saw was because we when we deployed to Heroku, we created a new database and it's empty.  We also need to sync it:
 
     $ heroku run python manage.py migrate
-
-As you can see, there is an error. Heroku created a new database for us and it's empty.  We also need to sync it:
 
     $ heroku run python manage.py createsuperuser
 
