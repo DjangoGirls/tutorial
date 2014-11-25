@@ -31,3 +31,12 @@ OK, [let's start at the beginning...](how_internet_works/README.md)
 ## About and contributing
 
 This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+
+## Would you like to help us translate the tutorial to other languages?
+
+currently, translations are being kept on crowdin.com platform in:
+
+https://crowdin.com/project/django-girls-tutorial
+
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it
+
