@@ -91,7 +91,7 @@ Now all you need to do is check that your website is running - open your browser
 
     http://127.0.0.1:8000/
 
-You can stop the web server again (e.g. to type other commands on the command prompt) by pressing CTRL+C - Control and C buttons together.
+The web server will take over your command prompt until you stop it: to type more commands either open a new terminal window (and don't forget to activate your virtualenv in it too), or stop the web server by switching back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
