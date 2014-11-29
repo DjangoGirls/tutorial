@@ -187,6 +187,6 @@ The error you saw was because we when we deployed to Heroku, we created a new da
 
     $ heroku run python manage.py createsuperuser
 
-You should now be able to see your website in a browser! Congrats :)!
+You should now be able to see your website's admin page in a browser! Congrats :)!
 
 
