@@ -171,6 +171,8 @@ This automatically added the Heroku remote for our app to our repository. Now we
 
     $ git push heroku master
 
+> __Note__: This will probably produce a *lot* of output the first time you run it, as Heroku compiles and installs psycopg. You'll know it's succeeded if you see something like `https://yourapplicationname.herokuapp.com/ deployed to Heroku` near the end of the output.
+
 ## Visit your application
 
 You’ve deployed your code to Heroku, and specified the process types in a `Procfile` (we chose a `web` process type earlier).
