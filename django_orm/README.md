@@ -12,7 +12,7 @@ It's easiest to learn by example. Let's try this, shall we?
 
 Open up your console and type this command:
 
-    > $ python manage.py shell
+    (myvenv) ~/djangogirls$ python manage.py shell
 
 The effect should be like this:
 

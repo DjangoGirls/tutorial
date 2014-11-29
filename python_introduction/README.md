@@ -6,7 +6,7 @@ Let's write some code!
 
 ## Python prompt
 
-To start playing with Python, we need to open up a *command line* on your computer. You should have already knew how to do that -- you have learned it in the [Intro to Command Line](/intro_to_command_line/README.html) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that -- you learned it in the [Intro to Command Line](/intro_to_command_line/README.html) chapter.
 
 Once you're ready, follow the instructions below.
 
