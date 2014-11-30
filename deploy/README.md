@@ -22,6 +22,8 @@ After the installation is finished, go to the `djangogirls` directory and run th
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
 
+> __Note__: `pip freeze` outputs a list of all the Python libraries installed in your virtualenv, and the `>` takes the output of `pip freeze` and puts it into a file. Try running `pip freeze` without the `> requirements.txt` to see what happens!
+
 Open this file and add the following line at the bottom:
 
     psycopg2==2.5.3
