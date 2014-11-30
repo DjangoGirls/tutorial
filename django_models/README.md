@@ -118,7 +118,7 @@ Let's open `blog/models.py`, remove everything from it and write code like this:
         def __str__(self):
             return self.title
 
-> **Note** Double-check that you used two undescore characters (`_`) on each side of `str`. Those are used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you used two undescore characters (`_`) on each side of `str`. Those are used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It is scary, right? But no worries, we will explain what these lines mean!
 
