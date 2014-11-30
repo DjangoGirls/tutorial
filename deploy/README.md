@@ -22,6 +22,8 @@ After the installation is finished, go to the `djangogirls` directory and run th
 
 This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
 
+> __Note__: `pip freeze` outputs a list of all the Python libraries installed in your virtualenv, and the `>` takes the output of `pip freeze` and puts it into a file. Try running `pip freeze` without the `> requirements.txt` to see what happens!
+
 Open this file and add the following line at the bottom:
 
     psycopg2==2.5.3
@@ -42,7 +44,7 @@ Then save it. Done!
 
 ## The `runtime.txt` file
 
-We need to tell Heroku which Python version we want to use. This is simply done by creating a `runtime.txt` and putting the following text inside:
+We need to tell Heroku which Python version we want to use. This is done by creating a `runtime.txt` in the `djangogirls` directory using your editor's "new file" command, and putting the following text (and nothing else!) inside:
 
     python-3.4.2
 
