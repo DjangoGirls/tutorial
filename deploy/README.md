@@ -44,7 +44,7 @@ Then save it. Done!
 
 ## The `runtime.txt` file
 
-We need to tell Heroku which Python version we want to use. This is simply done by creating a `runtime.txt` and putting the following text inside:
+We need to tell Heroku which Python version we want to use. This is done by creating a `runtime.txt` in the `djangogirls` directory using your editor's "new file" command, and putting the following text (and nothing else!) inside:
 
     python-3.4.2
 
