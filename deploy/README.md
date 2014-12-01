@@ -150,17 +150,27 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
      create mode 100644 requirements.txt
      create mode 100644 runtime.txt
 
-## Deploy to Heroku!
+## Pick an application name
 
-That was a lot of configuration and installing, right? But you only need to do that once! Now you can deploy!
+We'll be making your blog available on the Web at `[your blog's name].herokuapp.com`, so we need to choose a name that nobody else has taken and that will work as part of an Internet domain name. In particular, it mustn't contain any spaces. This name doesn't need to be related to the Django `blog` app or to `mysite` or anything we've created so far - your name (without spaces!) might do.
 
-It's as simple as running this command, replacing `djangogirlsblog` with your own application name:
+Once you've thought of a name, run this command, replacing `djangogirlsblog` with your own application name:
 
     $ heroku create djangogirlsblog
 
 > __Note__: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
 
-This automatically added the Heroku remote for our app to our repository. Now we can do a simple git push to deploy our application:
+If you can't think of a name, you can instead run
+
+    $ heroku create
+
+and Heroku will pick an unused name for you (probably something like `enigmatic-cove-2527`).
+
+## Deploy to Heroku!
+
+That was a lot of configuration and installing, right? But you only need to do that once! Now you can deploy!
+
+When you ran `heroku create`, it automatically added the Heroku remote for our app to our repository. Now we can do a simple git push to deploy our application:
 
     $ git push heroku master
 
