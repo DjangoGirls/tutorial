@@ -8,7 +8,7 @@ Python originated in the late 1980s and its main goal is to be readable by human
 
 # Python installation
 
-> This subchapter is based on tutorial by Geek Girls Carrots (http://django.carrots.pl/)
+> This subchapter is based on a tutorial by Geek Girls Carrots (http://django.carrots.pl/)
 
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
