@@ -55,14 +55,14 @@ You can also multiply strings with a number:
 
     >>> "Ola" * 3
     'OlaOlaOla'
-    
+
 If you need to put an apostrophe inside your string, you have two ways to do it.
 
 Using double quotes:
 
     >>> "Runnin' down the hill"
     "Runnin' down the hill"
-    
+
 or escaping apostrophe with a backslash (`\`):
 
     >>> 'Runnin\' down the hill'
@@ -391,65 +391,95 @@ Practice and have fun with Booleans by trying to run the following commands:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! You can now move on to an essential tool in programming:
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+
+# Save it!
+
+So far we've been writing all our python code in the intepreter, which limits us to one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compilier__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+
+- Exit the Python interpreter
+- Open up our code editor of choice
+- Save some code into a new python file
+- Run it!
+
+To exit from the Python interpreter that we've been using, simply type the ```exit()``` function:
+
+    >>>exit()
+    $
+
+This will put you back into the command prompt.
+
+Earlier, we picked out a code editor from the [code editor](code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+
+    print('Hello, Django girls!')
+
+Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
+
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, the important part here is to make sure the file ends in __.py__, this tells our computer that this is a **python executable file** and Python can run it.
+
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, **change directories** to the desktop and then use Python to execute the code in the file like this:
+
+    $ python3 python_intro.py
+    Hello, Django girls!
+
+Alright! You just ran your first python program that was saved to a file. Feel awesome?
+
+You can now move on to an essential tool in programming:
 
 ## If...elif...else
 
 Lots of things in code should only be executed when given conditions are met. That's why Python has something called __if statements__.
 
-Try this:
+Replace the code in your **python_intro.py** file to this:
 
-    >>> if 3 > 2:
-    ...
+    if 3 > 2:
 
-So far nothing has happened, as evidenced by the dots `...` instead of incentives `>>>` which we saw so far. Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”:
+If we saved this and ran it, we'd see an error like this:
 
-    >>> if 3 > 2:
-    ... print('It works!')
-      File "<stdin>", line 2
-        print('It works')
-            ^
-    IndentationError: expected an indented block
+    $ python3 python_intro.py
+    File "python_intro.py", line 2
+             ^
+    SyntaxError: unexpected EOF while parsing
 
-Well... something went wrong here! Python needs to know whether the instruction we have written is a continuation of `if` or a next instruction not covered by the condition. We need to indent our code to make it work:
+Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
-    >>> if 3 > 2:
-    ...     print('It works!')
-    ...
+    if 3 > 2:
+        print('It works!')
+
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the code results in true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
+
+Save it and give it another run:
+
+    $ python3 python_intro.py
     It works!
-
-All you need is one space after `...`. To avoid chaos, most Python programmers use four spaces for each level of indentation.
-
-Everything that is indented after the `if` statement will be executed if the condition is met. See:
-
-    >>> if 3 > 2:
-    ...     print('It works!')
-    ...     print('Another command')
-    ...
-    It works!
-    Another command
 
 ### What if not?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
-    >>> if 5 > 2:
-    ...     print('5 is indeed greater than 2')
-    ... else:
-    ...     print('5 is not greater than 2')
-    ...
+    if 5 > 2:
+        print('5 is indeed greater than 2')
+    else:
+        print('5 is not greater than 2')
+
+When this was run it would print out:
+
+    $ python3 python_intro.py
     5 is indeed greater than 2
 
 If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
-    >>> name = 'Sonja'
-    >>> if name == 'Ola':
-    ...     print('Hey Ola!')
-    ... elif name == 'Sonja':
-    ...     print('Hey Sonja!')
-    ... else:
-    ...     print('Hey anonymous!')
-    ...
+    name = 'Sonja'
+    if name == 'Ola':
+        print('Hey Ola!')
+    elif name == 'Sonja':
+        print('Hey Sonja!')
+    else:
+        print('Hey anonymous!')
+
+and executed:
+
+    $ python3 python_intro.py
     Hey Sonja!
 
 See what happened there?
@@ -460,6 +490,7 @@ In the last three exercises you learned about:
 
 - __comparing things__ - in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
 - __Boolean__ - a type of object that can only have one of two values: `True` or `False`
+- __Saving files__ - storing code in files so you can execute larger programs.
 - __if...elif...else__ - statements that allow you to execute code only when certain conditions are met.
 
 Time for the last part of this chapter!
@@ -468,71 +499,85 @@ Time for the last part of this chapter!
 
 Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
-A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one:
+A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
-    >>> def hi():
-    ...
+    def hi():
+        print('Hi there!')
+        print('How are you?')
 
-As you can see, there are those dots again! This means that nothing has really happened yet... and yes, we need to press the `Space` key before giving our instructions:
+    if __name__ == '__main__':
+        hi()
 
-    >>> def hi():
-    ...     print('Hi there!')
-    ...     print('How are you?')
-    ...
+Okay, our first function is ready!
 
-OK, our first function is ready! Press Enter to get back to the Python prompt again. Now let's execute our function:
+You may wonder what the code on the last two lines is doing? This is some Python syntax that says "If this file is being ran by the Python interpreter, run the following code". Because we're running the file with the Python interpreter, we're telling it to execute the ```hi()``` function we just built. Make sense?
 
-    >>> hi()
+    $ python3 python_intro.py
     Hi there!
     How are you?
 
-Great! You're now a programmer, congratulate yourself :)!
-
 That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
 
-    >>> def hi(name):
-    ...
+    def hi(name):
 
 As you can see, we now gave our function a parameter that we called `name`:
 
-    >>> def hi(name):
-    ...     if name == 'Ola':
-    ...         print('Hi Ola!')
-    ...     elif name == 'Sonja':
-    ...         print('Hi Sonja!')
-    ...     else:
-    ...         print('Hi anonymous!')
-    ...
+    def hi(name):
+        if name == 'Ola':
+            print('Hi Ola!')
+        elif name == 'Sonja':
+            print('Hi Sonja!')
+        else:
+            print('Hi anonymous!')
+
+    if __name__ == '__main__':
+        hi()
 
 As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
-    >>> hi()
-        Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
+    $ python3 python_intro.py
+    Traceback (most recent call last):
+    File "python_intro.py", line 10, in <module>
+      hi()
     TypeError: hi() missing 1 required positional argument: 'name'
 
 Oops, an error. Luckily, Python gives us a pretty useful error message.
 It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function.
-Let's fix it then:
+Let's fix it at the bottom of the file:
 
-    >>> hi("Ola")
+    if __name__ == '__main__':
+        hi("Ola")
+
+and run it again:
+
+    $ python3 python_intro.py
     Hi Ola!
-    >>> hi("Sonja")
-    Hi Sonja!
-    >>> hi("Anja")
-    Hi anonymous!
 
-Awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
+And if we change the name?
+
+    if __name__ == '__main__':
+        hi("Sonja")
+
+and run it:
+
+    $ python3 python_intro.py
+    Hi Sonja!
+
+Now what do you think will happen if you write another name in there? Give it a try and see if you're right!
+
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
 
 Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
 
-    >>> def hi(name):
-    ...     print('Hi ' + name + '!')
-    ...
+    def hi(name):
+        print('Hi ' + name + '!')
 
-Let's call the function now:
+    if __name__ == '__main__':
+        hi("Rachel")
 
-    >>> hi("Rachel")
+Let's call the code now:
+
+    $ python3 python_intro.py
     Hi Rachel!
 
 Congratulations! You just learned how to write functions :)!
@@ -545,19 +590,28 @@ As we mentioned, programmers are lazy, they don't like to repeat themselves. Pro
 
 Still remember lists? Let's do a list of girls:
 
-    >>> girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+    girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 
 We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
-    >>> for name in girls:
-    ...
+    for name in girls:
 
-Dots again! Remember what goes after the dots? Yes, a space :)
+Colon again! Remember what goes after the colon? Yes, four spaces (or one tab) :)
 
-    >>> for name in girls:
-    ...     hi(name)
-    ...     print('Next girl')
-    ...
+Here is the full code that will be in the file:
+
+    def hi(name):
+        print('Hi ' + name + '!')
+
+    if __name__ == "__main__":
+        girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+        for name in girls:
+            hi(name)
+            print('Next girl')
+
+and when we run it:
+
+    $ python3 python_intro.py
     Hi Rachel!
     Next girl
     Hi Monica!
@@ -573,9 +627,11 @@ As you can see, everything you put inside a `for` statement with an indent will 
 
 You can also use `for` on numbers using the `range` method:
 
-    >>> for i in range(1, 6):
-    ...     print(i)
-    ...
+    for i in range(1, 6):
+        print(i)
+
+Which would print:
+
     1
     2
     3
@@ -585,10 +641,6 @@ You can also use `for` on numbers using the `range` method:
 `range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6).
-
-## Exiting Python
-
-You can exit Python and return to the command line using `exit()`.
 
 ## Summary
 
