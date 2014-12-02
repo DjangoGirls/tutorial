@@ -417,7 +417,13 @@ Obviously, you're a pretty seasoned python developer now, so feel free to write 
 
 Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, the important part here is to make sure the file ends in __.py__, this tells our computer that this is a **python executable file** and Python can run it.
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, **change directories** to the desktop and then use Python to execute the code in the file like this:
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop:
+
+    cd /Users/<your_name>/Desktop
+
+If you get stuck, just ask for help.
+
+and then use Python to execute the code in the file like this:
 
     $ python3 python_intro.py
     Hello, Django girls!
@@ -505,12 +511,13 @@ A function is a set of instructions that Python should execute. Each function in
         print('Hi there!')
         print('How are you?')
 
-    if __name__ == '__main__':
-        hi()
+    hi()
 
 Okay, our first function is ready!
 
-You may wonder what the code on the last two lines is doing? This is some Python syntax that says "If this file is being ran by the Python interpreter, run the following code". Because we're running the file with the Python interpreter, we're telling it to execute the ```hi()``` function we just built. Make sense?
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+
+Let's run this now and see what happens:
 
     $ python3 python_intro.py
     Hi there!
@@ -530,8 +537,7 @@ As you can see, we now gave our function a parameter that we called `name`:
         else:
             print('Hi anonymous!')
 
-    if __name__ == '__main__':
-        hi()
+    hi()
 
 As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
@@ -545,8 +551,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message.
 It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function.
 Let's fix it at the bottom of the file:
 
-    if __name__ == '__main__':
-        hi("Ola")
+    hi("Ola")
 
 and run it again:
 
@@ -555,15 +560,16 @@ and run it again:
 
 And if we change the name?
 
-    if __name__ == '__main__':
-        hi("Sonja")
+    hi("Sonja")
 
 and run it:
 
     $ python3 python_intro.py
     Hi Sonja!
 
-Now what do you think will happen if you write another name in there? Give it a try and see if you're right!
+Now what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
+
+    Hi anonymous!
 
 This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
 
@@ -572,8 +578,7 @@ Let's do something smarter -- there are more names than two, and writing a condi
     def hi(name):
         print('Hi ' + name + '!')
 
-    if __name__ == '__main__':
-        hi("Rachel")
+    hi("Rachel")
 
 Let's call the code now:
 
@@ -596,18 +601,17 @@ We want to greet all of them by their name. We have the `hi` function to do that
 
     for name in girls:
 
-Colon again! Remember what goes after the colon? Yes, four spaces (or one tab) :)
+The ```for``` statement behaves similarly to the ```if``` statement, code below both of these need to be indented four spaces.
 
 Here is the full code that will be in the file:
 
     def hi(name):
         print('Hi ' + name + '!')
 
-    if __name__ == "__main__":
-        girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-        for name in girls:
-            hi(name)
-            print('Next girl')
+    girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+    for name in girls:
+        hi(name)
+        print('Next girl')
 
 and when we run it:
 
