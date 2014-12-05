@@ -417,9 +417,19 @@ Obviously, you're a pretty seasoned python developer now, so feel free to write 
 
 Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, the important part here is to make sure the file ends in __.py__, this tells our computer that this is a **python executable file** and Python can run it.
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop:
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+
+On a Mac, the command will look something like this:
 
     cd /Users/<your_name>/Desktop
+
+On Linux, it will be like this (the word "Desktop" might be translated to your language):
+
+    cd /home/<your_name>/Desktop
+
+And on windows, it will be like this:
+
+    cd C:\Users\<your_name>\Desktop
 
 If you get stuck, just ask for help.
 
