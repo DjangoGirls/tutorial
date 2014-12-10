@@ -45,9 +45,9 @@ It's an empty list. That seems to be correct, right? We didn't add any posts yet
 
 This is how you create a Post object in database:
 
-    >>> Post.objects.create(author=user, title='Sample title', text='Test')
+    >>> Post.objects.create(author=me, title='Sample title', text='Test')
 
-But we have one missing ingredient here: `user`. We need to pass an instance of `User` model as an author. How to do that?
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How to do that?
 
 Let's import User model first:
 
@@ -70,13 +70,13 @@ What users do we now have in our database? Try this:
 
 Cool! Let's get an instance of the user now:
 
-    user = User.objects.get(username='ola')
+    me = User.objects.get(username='ola')
 
 As you can see, we now `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
 
 Now we can finally create our first post:
 
-    >>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
+    >>> Post.objects.create(author = me, title = 'Sample title', text = 'Test')
 
 Hurray! Wanna check if it worked?
 
@@ -89,9 +89,9 @@ You can now have a little fun and add more posts to see how it works. Add 2-3 mo
 
 ### Filter objects
 
-A big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like this:
+A big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `me`. The way to write it in Django is: `author=me`. Now our piece of code looks like this:
 
-    >>> Post.objects.filter(author=user)
+    >>> Post.objects.filter(author=me)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
 Or maybe we want to see all the posts that contain a word 'title' in the `title` field?
