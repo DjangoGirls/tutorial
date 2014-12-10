@@ -36,7 +36,7 @@ Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. 
 
 Now when we go to:
 
-    http://127.0.0.1:8000/
+  http://127.0.0.1:8000/
 
 we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
 
@@ -69,7 +69,7 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 Ok! Let's refresh the page:
 
-    http://127.0.0.1:8000/
+  http://127.0.0.1:8000/
 
 Boom! Yet another error! As expected!
 
@@ -109,7 +109,7 @@ Near other `from` lines. And at the end of the file we will add our *view*:
 
 Yes. It is time to refresh the page:
 
-    http://127.0.0.1:8000/
+  http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
