@@ -34,11 +34,7 @@ Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. 
 
 `blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit - `post_detail` - is the name of the *view*.
 
-Now when we go to:
-
-  http://127.0.0.1:8000/
-
-we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
+Now when we go to: http://127.0.0.1:8000/ we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -67,11 +63,7 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 `pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
 
-Ok! Let's refresh the page:
-
-  http://127.0.0.1:8000/
-
-Boom! Yet another error! As expected!
+Ok! Let's refresh the page: http://127.0.0.1:8000/ Boom! Yet another error! As expected!
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -107,9 +99,7 @@ Near other `from` lines. And at the end of the file we will add our *view*:
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
 
-Yes. It is time to refresh the page:
-
-  http://127.0.0.1:8000/
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
