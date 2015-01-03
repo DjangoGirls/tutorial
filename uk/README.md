@@ -6,6 +6,10 @@
 
 > Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0. Щоб переглянути копію цієї ліцензії, відвідайте http://creativecommons.org/licenses/by-sa/4.0/
 
+## Translation
+
+100% of this tutorial has been translated from English by a volunteer: [chupakabra](https://github.com/chupakabra). Special thanks for all the free time you sacrificed to make that happen! <3
+
 ## Вступ
 
 Чи ви колись відчували, що світ крутиться все більше і більше навколо технологій, а ви в певній мірі пасете задніх? Чи вас колись цікавило як створити веб сайт, однак, ніколи не вистачало достатньої мотивації щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?

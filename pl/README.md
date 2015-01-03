@@ -4,6 +4,11 @@
 
 > Niniejsza praca jest licencjonowana zgodnie z Creative Commons Attribution-ShareAlike License 4.0 International. Aby zobaczyć kopię niniejszej licencji, odwiedź http://creativecommons.org/licenses/by-sa/4.0/
 
+## Tłumaczenie
+
+Ten kurs został przetłumaczony z języka angielskiego przez grupę wolontariuszy. Specjalne podziękowania dla [Łukasza Wójcika](http://lukaszwojcik.net/), który poświęcił
+ogromną ilość swojego wolnego czasu tłumacząc ponad 80% całego kursu. Dodatkowe podziękowania za pomoc dla: Oli Sitarskiej, Anny Warzechy, CrazyHorse, Kingi Kieczkowskiej, Maćka Zająca oraz Mariusza Zielińskiego.
+
 ## Wprowadzenie
 
 Czy kiedykolwiek czułaś, że wokół jest coraz więcej nowych technologii, a Ty zostajesz w tyle? Zastanawiałaś się kiedyś jak zrobić stronę internetową, ale nie miałaś motywacji by zacząć? Czy zdarzyło Ci się pomyśleć, że świat programowania jest dla Ciebie zbyt skomplikowany by nawet spróbować zrobić coś samej?
