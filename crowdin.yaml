@@ -4,14 +4,14 @@ base_path: /Users/olasitarska/Desktop/Events/Django Girls/tutorial
 
 files:
   -
-    source: "/**/*.md"
+    source: "/en/**/*.md"
     translation: "/%two_letters_code%/%original_path%/%original_file_name%"
     ignore:
       - /_book
       - /node_modules
       - /CONTRIBUTING.md
   -
-    source: "*.md"
+    source: "/en/*.md"
     translation: "/%two_letters_code%/%original_file_name%"
     ignore:
       - /_book
