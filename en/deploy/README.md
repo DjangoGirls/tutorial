@@ -136,7 +136,14 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git add .
+    $ git config user.name "Your Name"
+    $ git config user.email you@example.com
+
+Initializing the git repository is something we only need to do once per project.
+
+And finally we save our changes. Go to your console and run these commands:
+
+    $ git add -A .
     $ git commit -m "My Django Girls app"
     [master (root-commit) 2943412] My Django Girls
      7 files changed, 230 insertions(+)
