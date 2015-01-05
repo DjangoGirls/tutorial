@@ -264,7 +264,9 @@ To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
 A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
 
-    >>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
+    >>> uczestniczka = {'imie' : 'Ola', 
+                        'kraj' : 'Polska',
+                        'ulubione_liczby' : [7, 42, 92]}
 
 
 Za pomocą tej instrukcji stworzyłaś właśnie zmienną o nazwie `uczestniczka` zawierającą trzy pary klucz-wartość:
