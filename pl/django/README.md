@@ -12,7 +12,7 @@ Frameworki istnieją, by oszczędzić Ci wyważania otwartych drzwi i ułatwić 
 
 By zrozumieć do czego naprawdę służy Django, musimy lepiej przyjrzeć się serwerom. Pierwszą rzeczą którą musi wiedzieć serwer jest to, że chcesz, żeby wyświetlił Ci stronę.
 
-Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta list, i odsyła z powrotem odpowiedź w formie strony internetowej. Ale gdy chesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
+Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta list, i odsyła z powrotem odpowiedź w formie strony internetowej. Ale gdy chcesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
 
 ## Co się dzieje, gdy ktoś chce otworzyć stronę z Twojego serwera?
 
