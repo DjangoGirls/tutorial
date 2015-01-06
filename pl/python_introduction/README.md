@@ -438,7 +438,7 @@ Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do
 *   Zapisać kod do nowego pliku Pythona
 *   Uruchomić go!
 
-Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji ~~~ exit()~~~ :
+Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji ```exit()``` :
 
     >>> exit()
     $
@@ -675,7 +675,7 @@ Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `witaj`, zatem 
     for imie in dziewczyny:
 
 
-Wyrażenie ~~~ for~~~ zachowuje się podobnie jak ~~~ if~~~ , a więc kod pod nimi musi być wcięty 4 spacjami.
+Wyrażenie  `for` zachowuje się podobnie jak `if`, a więc kod pod nimi musi być wcięty 4 spacjami.
 
 Oto kompletny kod, który umieścimy w pliku:
 
