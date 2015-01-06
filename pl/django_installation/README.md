@@ -1,6 +1,6 @@
 # Instalowanie Django
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (http://django.carrots.pl/).
+> Fragment tego rozdziału jest oparty na tutoriale Geek Girls Carrots (http://django.carrots.pl/).
 > 
 > Fragmenty tego rozdziału są oparte o [tutorial django-marcador][1] na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 
@@ -14,7 +14,7 @@ Stwórzmy zatem **środowisko wirtualne** (zwane też *virtualenv*). Jego zadani
 
 Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. W systemie Windows może on wyglądać tak: `C:\Użytkownicy\Nazwa` (gdzie `Nazwa` to twoja nazwa użytkownika, której używasz przy logowaniu się do komputera).
 
-Na potrzeby kursu będziemy stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
+Na potrzeby kursu stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
 
     mkdir djangogirls
     cd djangogirls
@@ -27,7 +27,7 @@ Stwórzmy nowe środowisko wirtualne o nazwie `myvenv`. Polecenie ma następują
 
 ### Windows
 
-Aby stworzyć nowego `virtualenv`'a, musisz otworzyć konsolę (wspominaliśmy o tym parę rozdziałów temu, pamiętasz?) i uruchom `C:\ Python34\python -m venv venv`. Polecenie będzie wyglądać następująco:
+Aby stworzyć nowego `virtualenv`'a, musisz otworzyć konsolę (wspominaliśmy o tym parę rozdziałów temu, pamiętasz?) i uruchom `C:\Python34\python -m venv venv`. Polecenie będzie wyglądać następująco:
 
     C:\Użytkownicy\Nazwa\djangogirls> C:\Python34\python -m venv myvenv
     
