@@ -19,6 +19,11 @@ Musimy otworzyć konsolę Pythona. Wpisz `python3` i wciśnij Enter.
     Type "copyright", "credits" or "license" for more information.
     >>>
 
+Dla windowsa:
+
+```
+C:\Python34\python
+```
 
 ## Twoje pierwsze polecenie w Pythonie!
 
@@ -264,7 +269,7 @@ To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
 A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
 
-    >>> uczestniczka = {'imie' : 'Ola', 
+    >>> uczestniczka = {'imie' : 'Ola',
                         'kraj' : 'Polska',
                         'ulubione_liczby' : [7, 42, 92]}
 

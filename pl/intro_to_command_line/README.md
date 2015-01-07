@@ -32,12 +32,12 @@ Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje poleceni
 
 Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
 
-$
+    $
 
 
 W systemie Windows ujrzysz znak `>`, o tak:
 
->
+    >
 
 
 Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie musisz ich przepisywać. Twój komputer zrobi to za Ciebie :)
@@ -48,18 +48,18 @@ Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie mu
 
 Zacznijmy od czegoś łatwego. Wpisz to polecenie:
 
-$ whoami
+    $ whoami
 
 
 lub
 
-> whoami
+    > whoami
 
 
 A następnie wciśnij Enter. Oto rezulat:
 
-$ whoami
-olasitarska
+    $ whoami
+    olasitarska
 
 
 Jak widzisz, komputer właśnie wyświetlił Twoją nazwę użytkownika. Prawda, że sprytne? :)
@@ -74,36 +74,38 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij Enter:
 
-$ pwd
-/Users/olasitarska
+    $ pwd
+    /Users/olasitarska
 
 
 Jeżeli używasz Windows:
 
-> cd
-C:\Users\olasitarska
+    > cd
+    C:\Users\olasitarska
 
 
 Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiersz poleceń, zwykle jest on uruchamiany w miejscu folderu głównego Twojego konta użytkownika.
 
->
+>  Ciekawostka: `pwd` oznacza print working directory czyli w wolnym tłumaczeniu "wypisz folder roboczy"
 
 * * *
 
 ### Lista plików i folderów
 
 Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
-
+```
 $ ls
 Applications
 Desktop
 Downloads
 Music
 ...
+```
 
 
 Windows:
 
+```
 > dir
 Directory of C:\Users\olasitarska
 05/08/2014 07:28 PM <DIR>      Applications
@@ -111,7 +113,7 @@ Directory of C:\Users\olasitarska
 05/08/2014 07:28 PM <DIR>      Downloads
 05/08/2014 07:28 PM <DIR>      Music
 ...
-
+```
 
 * * *
 
@@ -124,20 +126,23 @@ $ cd Desktop
 
 Windows:
 
+```
 > cd Desktop
-
+```
 
 Sprawdźmy, czy coś się faktycznie zmieniło:
 
+```
 $ pwd
 /Users/olasitarska/Desktop
-
+```
 
 Windows:
 
+```
 > cd
 C:\Users\olasitarska\Desktop
-
+```
 
 Tak, to tutaj!
 
@@ -149,13 +154,15 @@ Tak, to tutaj!
 
 Co powiesz na stworzenie folderu Django Girls na swoim pulpicie? Zrób to w ten sposób:
 
+```
 $ mkdir djangogirls
-
+```
 
 Windows:
 
+```
 > mkdir djangogirls
-
+```
 
 To niepozorne polecenie doda do twojego pulpitu folder o nazwie `djangogirls`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls`/`dir`! Spróbuj :)
 
@@ -169,19 +176,21 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `djangogirls`
 
 #### Rozwiązanie:
 
+```
 $ cd djangogirls
 $ mkdir test
 $ ls
 test
-
+```
 
 Windows:
 
+```
 > cd djangogirls
 > mkdir test
 > dir
 05/08/2014 07:28 PM <DIR>      test
-
+```
 
 Gratulacje! :)
 
@@ -193,62 +202,70 @@ Nie chcemy zostawić bałaganu, a zatem wyrzućmy wszystko, co do tej pory zrobi
 
 Najpierw musimy wrócić do Pulpitu:
 
+```
 $ cd ..
-
+```
 
 Windows:
 
+```
 > cd ..
-
+```
 
 Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego, w którym znajduje się Twój aktualny katalog).
 
 Sprawdź, gdzie jesteś:
 
+```
 $ pwd
 /Users/olasitarska/Desktop
-
+```
 
 Windows:
-
+```
 > cd
 C:\Users\olasitarska\Desktop
-
+```
 
 A teraz czas na usunięcie katalogu `djangogirls`.
 
 > **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
 
+```
 $ rm -r djangogirls
-
+```
 
 Windows:
 
+```
 > rmdir /S djangogirls
 djangogirls, Are you sure <Y/N>? Y
-
+```
 
 Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
+```
 $ ls
-
+```
 
 Windows:
-
+```
 > dir
-
+```
 
 ### Wyjście
 
 To na razie tyle! Możesz teraz spokojnie zamknąć wiersz poleceń. To co, zrobimy to po hakersku? :)
 
+```
 $ exit
-
+```
 
 Windows:
 
+```
 > exit
-
+```
 
 Fajnie, nie? :)
 

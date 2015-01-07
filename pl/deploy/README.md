@@ -117,8 +117,10 @@ Doskonale!
 Zainstaluj pakiet narzędziowy Heroku, który znajduje się tutaj (możesz pominąć ten krok, jeśli jeżeli zainstalowałaś go już wcześniej): https://toolbelt.heroku.com/
 
 > Jeżeli używasz pakietu narzędziowego Heroku pod Windows, pamiętaj, aby w trakcie wyboru składników do instalacji wybrać opcję "Custom installation". Z listy, która się pojawi, zaznacz pole wyboru przy pozycji "Git and SSH".
-> 
-> Dodatkowo, w systemie Windows dodaj Gita i SSH do zmiennej `PATH` swojej ścieżki poleceń następującą instrukcją: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Zamknij wiersz poleceń i uruchom go ponownie, aby zmiana odniosła efekt.
+>
+> Dodatkowo, w systemie Windows dodaj Gita i SSH do zmiennej `PATH` swojej ścieżki poleceń następującą instrukcją: `setx PATH "%PATH%;C:\Program Files\Git\bin"` lub `setx PATH "%PATH%;C:\Program Files (x86)\Git\bin"` - możesz sprawdzić w którym z katalogów zainstalował się Git przed wprowadzeniem tej komendy. Mentor na pewno Ci z tym pomoże.
+
+> Zamknij wiersz poleceń i uruchom go ponownie, aby zmiana odniosła efekt.
 
 Utwórz proszę darmowe konto Heroku tutaj: https://id.heroku.com/signup/www-home-top
 
