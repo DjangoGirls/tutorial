@@ -53,13 +53,11 @@ Either use the Github app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
-Download the [Gitbook Editor](http://help.gitbook.io/editor/README.html) app to your computer.
+Go to the [Gitbook Website](http://gitbook.com) and sign up for free.
 
-Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
+Then you can open the tutorial in your browser (*File* > *Open book*).
 
-![Gitbook](contributing/images/gitbook.png)
-
-Make any changes in the tutorial using the editor and then save changes (*Book* > *Save all*).
+Make any changes in the tutorial using Gitbook and then save changes (*Book* > *Save all*).
 
 Then commit the changes using `git` and push the changes to your remote Github repository.
 
