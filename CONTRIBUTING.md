@@ -86,7 +86,7 @@ Example:
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
        
-If you don't want to download the Gitbook Editor app you can also go to the [Gitbook Website](http://gitbook.com), sign up for free and work direclty in your browser.
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
 
 # Making a pull request
 
