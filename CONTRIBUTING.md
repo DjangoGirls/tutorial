@@ -53,13 +53,11 @@ Either use the Github app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
-Download the [Gitbook Editor](http://help.gitbook.io/editor/README.html) app to your computer.
+Download the [Gitbook Editor](https://github.com/GitbookIO/editor/releases) app to your computer.
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
-![Gitbook](contributing/images/gitbook.png)
-
-Make any changes in the tutorial using the editor and then save changes (*Book* > *Save all*).
+Make any changes in the tutorial using Gitbook and then save changes (*Book* > *Save all*).
 
 Then commit the changes using `git` and push the changes to your remote Github repository.
 
@@ -87,6 +85,8 @@ Example:
     Total 5 (delta 1), reused 0 (delta 0)
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
+       
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
 
 # Making a pull request
 
@@ -104,5 +104,7 @@ Github emails will notify you for the follow up process.
 
 # Further information and help
 
-For any questions please [contact DjangoGirls](http://djangogirls.org/).
+GitHub has an excellent [documentation](https://help.github.com/). Check it out if you need help!
+
+For further questions please [contact DjangoGirls](http://djangogirls.org/).
 
