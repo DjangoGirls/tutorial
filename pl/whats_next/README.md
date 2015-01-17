@@ -1,6 +1,6 @@
 # Co dalej?
 
-Możesz z siebie być dumna! **Jesteś absolutnie świetna**. Jesteśmy takie dumne! < 3
+Możesz być z siebie zadowolona! **Jesteś absolutnie świetna**. Jesteśmy takie dumne! <3
 
 ### Co teraz?
 
@@ -8,18 +8,18 @@ Zrób sobie przerwę i zrelaksuj się. Odwaliłaś kawał dobrej roboty!
 
 Zaraz po tym, upewnij się że:
 
-*   Obserwujesz Django Girls na [Facebooku][1] lub [Twitterze][2] żeby być na bieżąco
+*   Obserwujesz Django Girls na [Facebooku][1] lub [Twitterze][2], żeby być na bieżąco
 
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
 
 ### Czy możesz polecić kolejne materiały?
 
-Tak! Najpierw możesz spróbować naszej kolejnej książki: [Django Girls Tutorial: Extensions][3] -- to rozszerzenia i dodatkowe zadania do tego co już zrobiłaś.
+Tak! Najpierw możesz spróbować naszej kolejnej książki: [Django Girls Tutorial: Extensions][3] - zawiera rozszerzenia i dodatkowe zadania związane z tym, co już tutaj przerobiłaś.
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Później możesz także spróbować któregoś z materiałów poniżej. Wszystkie są bardzo polecane!
+Możesz też spróbować któregoś z materiałów poniżej. Wszystkie bardzo polecamy!
 
 - [Oficjalna dokumentacja Django][4]
 - [instrukcje New Coder][5]
