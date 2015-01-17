@@ -142,7 +142,7 @@ Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym
 
 ## Jeszcze jedno
 
-Byłoby dobrze, aby zobaczyć, jeśli Twoja strona będzie nadal dobrze działa na Heroku, prawda? Spróbujmy zaktualizować naszą strone na serwerze.
+Byłoby dobrze zobaczyć, czy Twoja strona będzie nadal dobrze działała na Heroku, prawda? Spróbujmy zaktualizować naszą stronę na serwerze.
 
 Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji:
 

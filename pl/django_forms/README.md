@@ -29,9 +29,9 @@ Dobrze, a teraz otwórzmy go i wprowadźmy następujący kod:
 
 Musimy najpierw zaimportować formularze Django (`from django import forms`) oraz, naturalnie, nasz model wpisu (`from .models import Post`).
 
-`PostForm`, jak zapewne podejrzewasz, to nazwa naszego formularza. Musimy poinformować Django, że ten formularz formularzem modelu (`ModelForm`), dzięki czemu Django wyręczy nas w pewnych czynnościach - właśnie za to odpowiada `forms.ModelForm`.
+`PostForm`, jak zapewne podejrzewasz, to nazwa naszego formularza. Musimy poinformować Django, że ten formularz jest  formularzem modelu (`ModelForm`), dzięki czemu Django wyręczy nas w pewnych czynnościach - właśnie za to odpowiada `forms.ModelForm`.
 
-Dalej mam `class Meta`, gdzie przekazujemy Django informację o tym, jaki model powinien być wykorzystany do stworzenia tego formularza (`model = Post`).
+Dalej mamy `class Meta`, gdzie przekazujemy Django informację o tym, jaki model powinien być wykorzystany do stworzenia tego formularza (`model = Post`).
 
 I wreszcie możemy wskazać, które pole (lub pola) powinny pojawić się w naszym formularzu. W tym przypaku chcemy udostępnić tylko pola `title` (tytuł) i `text` (treść wpisu) - pole autora, czyli `author` powinno zawierać aktualnie zalogowanego użytkownika (Ciebie!), zaś data stworzenia wpisu (`created_date`) powinna być ustawiana automatycznie gdy stworzymy wpis (czyli za pomocą kodu) - zgadza się?
 
@@ -235,7 +235,7 @@ Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzup
 
 ## Edycja formularza
 
-Teraz już wimy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy zmienić już istniejący? Proces jest bardzo podobny do tego, który przeszłyśmy przed chwilą. Dodajmy szybko potrzebne elementy (jeżeli masz problem ze zrozumieniem czegoś - zapytaj osobę prowadzącą kurs lub przejrzyj poprzednie rozdziały, gdyż wszystkie kroki mamy już omówione).
+Teraz już wiemy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy zmienić już istniejący? Proces jest bardzo podobny do tego, który przeszłyśmy przed chwilą. Dodajmy szybko potrzebne elementy (jeżeli masz problem ze zrozumieniem czegoś - zapytaj osobę prowadzącą kurs lub przejrzyj poprzednie rozdziały, gdyż wszystkie kroki mamy już omówione).
 
 Otwórz `blog/templates/blog/post_detail.html` i dodaj poniższą linijkę:
 
@@ -307,7 +307,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 ## Jeszcze jedno: czas na wdrożenie!
 
-Byłoby dobrze, aby zobaczyć, jeśli witryna nadal będzie działać na Heroku, prawda? Spróbuj ponownie ją zaktualizować. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału 15:
+Dobrze byłoby wiedzieć, że nasza witryna nadal działa na Heroku, prawda? Spróbuj ponownie ją zaktualizować. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału 15:
 
     $ git status
     ...

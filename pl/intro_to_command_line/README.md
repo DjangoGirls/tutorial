@@ -2,9 +2,9 @@
 
 Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana? :)
 
-**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz poleceń!**
+**Pozwól, że przedstawimy Ci Twojego pierwszego przyjaciela: wiersz poleceń!**
 
-Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 ## Czym jest wiersz poleceń?
 
