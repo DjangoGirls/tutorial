@@ -6,7 +6,7 @@ Nasz blog nadal wygląda dość surowo, prawda? Czas, aby to zmienić! Użyjemy 
 
 Kaskadowe arkusze stylów (ang. Cascading Style Sheets, CSS) to język używany do określania wyglądu i formatowania strony internetowej napisanej w języku znaczników (np. HTML). Traktuj go jak make-up dla naszej strony :).
 
-Ale nie chcemy znów zaczynać od samego początku, prawda? Użyjemy, raz jeszcze, narzędzia uprzednio stworzonego przez programistów i opublikowanego przez nich w Internecie, za darmo. Nie ma sensu ponownie wynajdować koła.
+Ale nie chcemy znów zaczynać od samego początku, prawda? Użyjemy, raz jeszcze, narzędzia uprzednio stworzonego przez programistów i opublikowanego przez nich w Internecie, za darmo. Nie ma sensu ponownie wymyślać koła.
 
 ## Użyjmy Bootstrap!
 
@@ -37,7 +37,7 @@ Arkusz CSS jest plikiem statycznym, więc aby modyfikować style kaskadowe, musi
 
 ### Konfigurowanie plików statycznych w Django
 
-Pierw, musimy stworzyć katalog w którym będziemy przetrzymywać nasze pliki statyczne. Utwórz katalog o nazwie `static` w folderze `djangogirls`.
+Teraz musimy stworzyć katalog, w którym będziemy przetrzymywać nasze pliki statyczne. Utwórz katalog o nazwie `static` w folderze `djangogirls`.
 
     djangogirls
     ├─── static
