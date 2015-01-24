@@ -93,10 +93,10 @@
 
 ## Встановлення Django
 
-Наразі, коли ваше віртуальне середовище активоване, можна встановлювати Django використавши `pip`. В консолі, запустіть `pip install django==1.7.1` (зазначте, що тут ми користуємося подвійним знаком рівності: `==`).
+Наразі, коли ваше віртуальне середовище активоване, можна встановлювати Django використавши `pip`. В консолі, запустіть `pip install django==1.7.3` (зазначте, що тут ми користуємося подвійним знаком рівності: `==`).
 
-    (myvenv) ~$ pip install django==1.7.1
-    Downloading/unpacking django==1.7.1
+    (myvenv) ~$ pip install django==1.7.3
+    Downloading/unpacking django==1.7.3
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
