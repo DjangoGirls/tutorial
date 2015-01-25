@@ -15,16 +15,10 @@ Nazwy niektórych plików i katalogów są bardzo ważne dla Django. Nie powinna
 Uruchom w konsoli (pamiętaj, że nie musisz pisać `(myvenv) ~/djangogirls$`, OK?):
 
 > Pamiętaj, aby uruchamiać wszystko w virtualenv. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalowanie Django** w części **Praca z virtualenv**.
+ 
+Uruchom komende:
 
-Uruchom w Windows:
-
-    (myvenv) ~/djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
-
-
-a w Linuksie lub Mac OS:
-
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
-
+    django-admin startproject mysite .
 
 > **Uwaga:** Pamiętaj koniecznie o kropce (`.`) na końcu polecenia, ona jest tam niezbędna.
 
