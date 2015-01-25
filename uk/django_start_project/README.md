@@ -16,14 +16,9 @@
 
 > Пам'ятайте, що усе треба запускати у віртуальному середовищі. Якщо ви не бачите префікс `(myvenv)` в консолі, то потрібно активувати ваше віртуальне середовище. Ми пояснювали як це зробити у розділі **Встановлення Django** в частині **Робота з віртуальним середовищем**.
 
-Запустіть на Windows:
+Запустіть:
 
-    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
-    
-
-або на Linux чи Mac OS:
-
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    django-admin startproject mysite .
     
 
 > **Зауваження** Переконайтесь, що ви включили (`.`) вкінці команди, це важливо.

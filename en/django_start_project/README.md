@@ -17,13 +17,9 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part.
 
-Run on Windows:
+Run the command:
 
-    (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
-
-or on Linux or Mac OS:
-
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    django-admin startproject mysite .
 
 > **Note** Double-check that you included the period (`.`) at the end of the command, it's important.
 
