@@ -130,11 +130,11 @@ Jego treść będzie wyglądać tak:
     {% extends 'blog/base.html' %}
 
     {% block content %}
-        <div class="date">
-            {% if post.published_date %}
+        {% if post.published_date %}
+            <div class="date">
                 {{ post.published_date }}
-            {% endif %}
-        </div>
+            </div>
+        {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
     {% endblock %}
