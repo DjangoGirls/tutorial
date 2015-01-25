@@ -30,7 +30,7 @@ W ten sposób zostanie utworzony plik `requirements.txt` zawierający listę zai
 
 Otwórz ten plik i dodaj na samym końcu następującą linijkę:
 
-    psycopg2==2.5.3
+    psycopg2==2.5.4
     
 
 Jest ona niezbędna, aby Twoja aplikacja działa na Heroku.
