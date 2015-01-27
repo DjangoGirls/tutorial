@@ -610,7 +610,7 @@ Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `name`:
     hi()
 
 
-Jak zauważyłaś, musiałyśmy dodać dwie spacje przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
+Jak zauważyłaś, musiałyśmy dodać osiem spacji przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
 
     $ python3 python_intro.py
     Traceback (most recent call last):
