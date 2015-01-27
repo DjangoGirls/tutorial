@@ -519,7 +519,7 @@ Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy
 Zapisz plik i uruchom go jeszcze raz:
 
     $ python3 python_intro.py
-    It works!
+    To działa!
 
 
 ### A co jeśli nie?
