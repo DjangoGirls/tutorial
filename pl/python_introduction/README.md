@@ -359,7 +359,7 @@ Istotną częścią programowania jest porównywanie różnych rzeczy. Co najła
     True
 
 
-Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać listy, ale również wyniki działań. Fajnie, nie?
+Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
 Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe.
 
