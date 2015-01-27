@@ -359,7 +359,7 @@ Istotną częścią programowania jest porównywanie różnych rzeczy. Co najła
     True
 
 
-Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać listy, ale również wyniki działań. Fajnie, nie?
+Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
 Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe.
 
@@ -519,7 +519,7 @@ Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy
 Zapisz plik i uruchom go jeszcze raz:
 
     $ python3 python_intro.py
-    It works!
+    To działa!
 
 
 ### A co jeśli nie?
@@ -610,7 +610,7 @@ Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `name`:
     hi()
 
 
-Jak zauważyłaś, musiałyśmy dodać dwie spacje przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
+Jak zauważyłaś, musiałyśmy dodać osiem spacji przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
 
     $ python3 python_intro.py
     Traceback (most recent call last):

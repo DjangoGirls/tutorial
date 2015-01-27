@@ -18,7 +18,7 @@ Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przych
 
 Kiedy serwer otrzymuje żądanie, przekazuje je dalej do Django, aby ten ustalił, czego właściwie ono dotyczy. Django sprawdza najpierw adres strony i decyduje, co zrobić dalej. Ta część jest wykonywana przez obecny w Django mechanizm rozpoznawania adresów (ang. **urlresolver** - zwróć uwagę, że adres strony to inaczej adres URL, czyli angielska nazwa tego modułu nie jest przypadkowa). Nie jest on zbyt inteligentny - jego działanie sprowadza się do porównania adresu URL z listą wzorców. Django sprawdza wzorce od góry do dołu i jeśli uda mu się znaleźć pasującą regułę, jest on przekazywana do odpowiedniej funkcji (zwanej *widokiem*).
 
-Wyobraź sobie listonoszkę z listem w dłoni. Idzie przed siebie ulicą i patrzy na numery kolejnych domów, szukając tego, który jest napisany na kopercie. Gdy już go znajdzie, zostawia tam list. Tak właśnie działa mechanizm rozpoznawania adresów!
+Wyobraź sobie panią listonosz z listem w dłoni. Idzie przed siebie ulicą i patrzy na numery kolejnych domów, szukając tego, który jest napisany na kopercie. Gdy już go znajdzie, zostawia tam list. Tak właśnie działa mechanizm rozpoznawania adresów!
 
 W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy połączyć się z bazą danych i wyszukać potrzebne nam informacje. Może użytkownik poprosił o zmianę danych? To tak, jakbyś wysłała list o treści "proszę o zmianę opisu mojego stanowiska w pracy" - *widok* może sprawdzić, czy masz takie uprawnienie, a następnie dokona zmiany opisu i odeśle odpowiedź "Zrobione!". Wówczas *widok* generuje odpowiedź, a Django wysyła ją do przeglądarki użytkownika.
 
