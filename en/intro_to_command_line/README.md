@@ -24,7 +24,7 @@ Applications → Utilities → Terminal.
 
 ### Linux
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your version system. If it's not there, just Google it :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it :)
 
 ## Prompt
 
