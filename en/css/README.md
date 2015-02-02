@@ -163,7 +163,7 @@ And now add a class `post` to your `div` containing a blog post.
         <p>{{ post.text|linebreaks }}</p>
     </div>
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `mysite/static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `djangogirls/static/css/blog.css` file:
 
     .page-header {
         background-color: #ff9400;

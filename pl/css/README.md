@@ -181,7 +181,7 @@ Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
     </div>
 
 
-A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `mysite/static/css/blog.css`:
+A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `djangogirls/static/css/blog.css`:
 
     .page-header {
         background-color: #ff9400;
