@@ -13,13 +13,11 @@ The first step towards creating it is to start a new Django project. Basically, 
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
 
-In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
-
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part.
 
-Run the command:
+In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
 
-    django-admin startproject mysite .
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
 
 > **Note** Double-check that you included the period (`.`) at the end of the command, it's important.
 
