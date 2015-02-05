@@ -639,7 +639,7 @@ and when we run it:
 
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-You can also use `for` on numbers using the `range` method:
+You can also use `for` on numbers using the `range` function:
 
     for i in range(1, 6):
         print(i)
