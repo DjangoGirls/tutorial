@@ -710,7 +710,7 @@ a gdy go uruchomimy:
 
 Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
-Możesz także użyć `for` na liczbach, używając metody `range`:
+Możesz także użyć `for` na liczbach, używając funkcji `range`:
 
     for i in range(1, 6):
         print(i)
