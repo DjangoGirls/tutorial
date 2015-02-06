@@ -660,6 +660,6 @@ Note that the second of these two numbers is not included in the list that is ou
 
 That's it. __You totally rock!__ This really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it to here!
 
-Grab yourself a cupcake and go to the next chapter :)
+You might want to briefly do something else - stretch, walk around for a bit, rest your eyes - before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)

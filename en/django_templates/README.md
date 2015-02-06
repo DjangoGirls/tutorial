@@ -70,6 +70,6 @@ It'd be good to see if your website will still be working on Heroku, right? Let'
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
 
-Works like a charm? We're proud! Treat yourself something sweet, you have earned it :)
+Works like a charm? We're proud! Step away from your computer for a bit, you have earned a break. :)
 
 ![Figure 13.4](images/donut.png)

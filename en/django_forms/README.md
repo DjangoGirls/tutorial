@@ -298,4 +298,4 @@ It'd be good to see if your website will still be working on Heroku, right? Let'
     ...
     $ git push heroku master
 
-And that should be it! Congrats :) 
+And that should be it! Congrats :)

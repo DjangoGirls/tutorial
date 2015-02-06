@@ -24,10 +24,10 @@ But what's next? To take actual blog posts from `Post` model we need something c
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about it in [Django ORM (QuerySets) chapter](/django_orm/README.html). 
+You should already be familiar with how QuerySets work. We talked about it in [Django ORM (QuerySets) chapter](/django_orm/README.html).
 
 So now we are interested in a list of blog posts that are published and sorted by `published_date`, right? We already did that in QuerySets chapter!
- 
+
     Post.objects.filter(published_date__isnull=False).order_by('published_date')
 
 Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`:
