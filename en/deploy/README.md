@@ -83,14 +83,12 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
 
     DEBUG = False
 
-At the end of the `mysite/settings.py`, copy and paste this:
-
     try:
         from .local_settings import *
     except ImportError:
         pass
 
-It'll import all of your local settings if the file exists.
+It'll do necessary configuration for Heroku and also it'll import all of your local settings if the file exists.
 
 Then save the file.
 
