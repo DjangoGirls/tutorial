@@ -36,7 +36,7 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 The `settings.py` file contains the configuration of your website.
 
-Remember when we talked about a postman checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
 Let's ignore the other files for now - we won't change them. The only thing to remember is not to delete them by accident!
 
