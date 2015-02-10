@@ -77,7 +77,7 @@ Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
     </html>
 
 
-Po zapisaniu i odświeżeniu strony `http://127.0.0.1:8000` zobaczyłaś oczywiście znajomo wyglądający błąd `NoReverseMatch`, zgadza się?
+Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś oczywiście znajomo wyglądający błąd `NoReverseMatch`, zgadza się?
 
 ## URL
 
@@ -213,7 +213,7 @@ No dobrze, pogadałyśmy sobie, to może teraz zobaczymy, jak wygląda cały nas
         return render(request, 'blog/post_edit.html', {'form': form})
 
 
-Zobaczmy, czy zadziała. Przejdź na stronę `http://127.0.0.1:8000/post/new/`, dodaj tytuł i tekst, zapisz... i voilà! Nowy wpis został dodany, a my zostałyśmy przekierowane na stronę `post_detail`!
+Zobaczmy, czy zadziała. Przejdź na stronę http://127.0.0.1:8000/post/new/, dodaj tytuł i tekst, zapisz... i voilà! Nowy wpis został dodany, a my zostałyśmy przekierowane na stronę `post_detail`!
 
 Zapewne dostrzegłaś, że w ogóle nie zajęłyśmy się ustawianiem daty publikacji. Wprowadzimy *przycisk publikowania* w **Django Girls Tutorial: Rozszerzenia**.
 
@@ -229,7 +229,7 @@ Spróbuj zapisać formularz bez uzupełnionych pól `title` i `text`. Zgadnij, c
 
 Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzupełnione poprawnie. Prawda że niesamowite?
 
-> Jako że niedawno używałyśmy interfejsu admina Django, system w tym momencie jest przekonany, że jesteśmy zalogowane. Niektóre sytuacje mogą doprowadzić do tego, że zostaniemy wylogowane (np. zamknięcie przeglądarki czy restart bazy danych). Jeżeli zauważysz, że przy tworzeniu wpisu pojawia się błąd związany z brakiem zalogowanego użytkownika, przejdź na stronę stronę panelu admina `http://127.0.0.1:8000/admin` i zaloguj się jeszcze raz. Na pewien czas problem się rozwiąże. W rozdziale **Praca domowa: zabezpiecz swoją stronę!** - zaraz po głównym kursie - czeka na Ciebie permanentne rozwiązanie tego problemu.
+> Jako że niedawno używałyśmy interfejsu admina Django, system w tym momencie jest przekonany, że jesteśmy zalogowane. Niektóre sytuacje mogą doprowadzić do tego, że zostaniemy wylogowane (np. zamknięcie przeglądarki czy restart bazy danych). Jeżeli zauważysz, że przy tworzeniu wpisu pojawia się błąd związany z brakiem zalogowanego użytkownika, przejdź na stronę stronę panelu admina http://127.0.0.1:8000/admin i zaloguj się jeszcze raz. Na pewien czas problem się rozwiąże. W rozdziale **Praca domowa: zabezpiecz swoją stronę!** - zaraz po głównym kursie - czeka na Ciebie permanentne rozwiązanie tego problemu.
 
 ![Błąd logowania użytkownika](images/post_create_error.png)
 

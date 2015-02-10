@@ -4,7 +4,7 @@ Za chwilę zbudujemy naszą pierwszą stronę -- stronę główną Twojego bloga
 
 ## Czym jest URL?
 
-Adres URL to po prostu adres w internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! `127.0.0.1:8000` jest adresem URL! http://djangogirls.com również):
+Adres URL to po prostu adres w internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! 127.0.0.1:8000 jest adresem URL! http://djangogirls.com również):
 
 ![Adres URL](images/url.png)
 
@@ -62,7 +62,7 @@ Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
     )
 
 
-Od tej pory Django przekieruje wszystkie reguły z adresu `http://127.0.0.1:8000/` do `blog.urls` i tam będzie szukał dalszych wskazówek.
+Od tej pory Django przekieruje wszystkie reguły z adresu http://127.0.0.1:8000/ do `blog.urls` i tam będzie szukał dalszych wskazówek.
 
 ## blog.urls
 
@@ -83,7 +83,7 @@ Potem możemy dodać nasz pierwszy wzorzec adresu URL:
 
 Jak widzisz, przyporządkowujemy widok (`view`) o nazwie `post_list` do adresu `^$`. A co oznacza `^$`? Tutaj kłania się magia wyrażeń regularnych. :) Rozłóżmy to na cześci: - `^` w wyrażeniu oznacza "początek"; od tego znaku rozpoczynamy poszukiwanie naszego wzorca - `$` oznacza "koniec" ciągu znaków, czyli tutaj kończymy poszukiwanie naszego wzorca
 
-Połączenie tych dwóch znaków oznaczałoby, że szukamy pustego ciągu znaków! I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django (ang. resolvers) `http://127.0.0.1:8000/` nie jest częścią adresu URL. Wzorzec ten będzie wskazówką dla Django, że `views.post_list` jest właściwym kierunkiem dla każdego, kto wejdzie na stronę poprzez adres `http://127.0.0.1:8000/`.
+Połączenie tych dwóch znaków oznaczałoby, że szukamy pustego ciągu znaków! I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django (ang. resolvers) http://127.0.0.1:8000/ nie jest częścią adresu URL. Wzorzec ten będzie wskazówką dla Django, że `views.post_list` jest właściwym kierunkiem dla każdego, kto wejdzie na stronę poprzez adres http://127.0.0.1:8000/.
 
 Wszystko gra? Otwórz http://127.0.0.1:8000/ w przeglądarce, żeby zobaczyć rezultat.
 

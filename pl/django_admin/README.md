@@ -12,12 +12,7 @@ Otwórzmy plik `blog/admin.py` i zastąpmy jego zawartość poniższym:
 
 Jak widać, importujemy (dołączamy) model Post, który zdefiniowałyśmy w poprzednim rozdziale. Aby nasz model był widoczny w panelu admina, musimy go zarejestrować za pomocą polecenia `admin.site.register(Post)`.
 
-OK, czas rzucić okiem na nasz model Post. Nie zapomnij uruchomić serwera za pomocą polecenia `python manage.py runserver` w swojej konsoli. Przejdź do swojej przeglądarki i wpisz adres:
-
-    http://127.0.0.1:8000/admin/
-
-
-Zobaczysz stronę logowania podobną do tej:
+OK, czas rzucić okiem na nasz model Post. Nie zapomnij uruchomić serwera za pomocą polecenia `python manage.py runserver` w swojej konsoli. Przejdź do swojej przeglądarki i wpisz adres: http://127.0.0.1:8000/admin/. Zobaczysz stronę logowania podobną do tej:
 
 ![Strona logowania](images/login_page2.png)
 

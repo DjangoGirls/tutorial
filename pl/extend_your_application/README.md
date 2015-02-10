@@ -36,12 +36,7 @@ Czas wyjaśnić, co oznacza to tajemnicze `{% url 'blog.views.post_detail' pk=po
 
 `blog.views.post_detail` to ścieżka do *widoku* `post_detail`, który chcemy stworzyć. Zwróć uwagę: `blog` to nazwa Twojej aplikacji (folder `blog`), `views` pochodzi od nazwy pliku `views.py`, zaś ostatnia część - `post_detail` - to nazwa naszego *widoku*.
 
-Teraz, gdy przejdziemy pod adres:
-
-    http://127.0.0.1:8000/
-
-
-ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani *widoku* dla `post_detail`). Będzie to wyglądać tak:
+Teraz, gdy przejdziemy pod adres http://127.0.0.1:8000/ ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani *widoku* dla `post_detail`). Będzie to wyglądać tak:
 
 ![Błąd NoReverseMatch](images/no_reverse_match2.png)
 
@@ -66,9 +61,7 @@ To oznacza, że gdy wpiszesz w przeglądarce adres `http://127.0.0.1:8000/post/5
 
 `pk` to skrót od `primary key` (ang. klucz główny). Nazwa ta jest często używana w projektach Django. Ale możesz nazwać tę zmienną jak Ci się żywnie podoba (tylko pamiętaj: same małe litery i znak `_` zamiast spacji!). Dla przykładu, zamiast `(?P<pk>[0-9]+)` możemy mieć zmienną `post_id`. Wówczas ten fragment wyglądałby tak: `(?P<post_id>[0-9]+)`.
 
-OK! No to odświeżmy stronę:
-
-    http://127.0.0.1:8000/
+OK! No to odświeżmy stronę http://127.0.0.1:8000/
 
 
 Bum! Znowu błąd! Tak jak myślałyśmy!
@@ -110,9 +103,7 @@ w pobliżu innych linii zawierających `from`. Z kolei na końcu pliku dodajemy 
         return render(request, 'blog/post_detail.html', {'post': post})
 
 
-Właśnie tak. Czas na odświeżenie strony:
-
-    http://127.0.0.1:8000/
+Właśnie tak. Czas na odświeżenie strony: http://127.0.0.1:8000/
 
 
 ![Widok listy wpisów](images/post_list2.png)
