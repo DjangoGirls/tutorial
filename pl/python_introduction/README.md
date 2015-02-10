@@ -6,9 +6,9 @@ Napiszmy jakiś kod!
 
 ## Wiersz poleceń Pythona
 
-Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Już umiesz to robić -- nauczyłaś się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń][1].
+Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Już umiesz to robić -- nauczyłaś się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń](http://tutorial.djangogirls.org/pl/intro_to_command_line/README.html).
 
- [1]: /intro_to_command_line/README.html
+
 
 Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
 
