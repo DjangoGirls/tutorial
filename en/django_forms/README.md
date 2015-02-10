@@ -73,7 +73,7 @@ After adding the line, your html file should now look like this:
         </body>
     </html>
 
-After saving and refreshing the page `http://127.0.0.1:8000` you will obviously see a familiar `NoReverseMatch` error, right?
+After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
 ## URL
 
@@ -198,7 +198,7 @@ Ok, we talked a lot, but we probably want to see what the whole *view* looks lik
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-Let's see if it works. Go to the page `http://127.0.0.1:8000/post/new/`, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
 
 You problably have noticed that we are not setting publish date at all. We will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
 
@@ -214,7 +214,7 @@ Try to save the form without `title` and `text`. Guess, what will happen!
 
 Django is taking care of validating that all the fields in our form are correct. Isn't it awesome?
 
-> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user, head to the admin page `http://127.0.0.1:8000/admin` and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
+> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 

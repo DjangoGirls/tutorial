@@ -44,7 +44,7 @@ imagine you have a website with the address like that: `http://www.mysite.com/po
 
 ## Your first Django url!
 
-Time to create our first URL! We want http://127.0.0.1:8000/ to be a homepage of our blog and display a list of posts.
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be a homepage of our blog and display a list of posts.
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
 
@@ -60,7 +60,7 @@ Your `mysite/urls.py` file should now look like this:
         url(r'', include('blog.urls')),
     )
 
-Django will now redirect everything that comes into `http://127.0.0.1:8000/` to `blog.urls` and look for further instructions there.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
 ## blog.urls
 
@@ -81,7 +81,7 @@ As you can see, we're now assigning a `view` called `post_list` to `^$` URL. But
 - `^` in regex means "the beginning"; from this sign we can start looking for our pattern
 - `$` matches only "the end" of the string, which means that we will finish looking for our pattern here
 
-If you put these two signs together, it looks like we're looking for an empty string! And that's correct, because in Django url resolvers, `http://127.0.0.1:8000/` is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the `http://127.0.0.1:8000/` address.
+If you put these two signs together, it looks like we're looking for an empty string! And that's correct, because in Django url resolvers, 'http://127.0.0.1:8000/' is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
 Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
 
