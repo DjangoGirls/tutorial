@@ -6,7 +6,7 @@ Napiszmy jakiś kod!
 
 ## Wiersz poleceń Pythona
 
-Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Już umiesz to robić -- nauczyłaś się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń](./intro_to_command_line/README.md).
+Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Już umiesz to robić -- nauczyłaś się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń](../intro_to_command_line/README.md).
 
 
 
@@ -453,7 +453,7 @@ W ten sposób znajdziesz się z powrotem w wierszu poleceń.
 
 Nieco wcześniej, w sekcji [Edytor kodu][2], dokonałyśmy wyboru programu używanego przez nas do pisania kodu. Musimy go teraz otworzyć i zapisać kod w nowym pliku:
 
- [2]: ./code_editor/README.md
+ [2]: ../code_editor/README.md
 
     print('Hello, Django girls!')
 

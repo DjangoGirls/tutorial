@@ -28,7 +28,7 @@ Ale co dalej? Żeby pobrać wpisy naszego bloga z modelu `Post` potrzebujemy cze
 
 Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. Rozmawiałyśmy o tym w rozdziale [Django ORM (QuerySets)][1].
 
- [1]: ./django_orm/README.md
+ [1]: ../django_orm/README.md
 
 Więc teraz interesuje nas lista wpisów, które zostały opublikowane i posortowane według daty publikacji (`published_date`), zgadza się? Już to zrobiłyśmy w rozdziale o QuerySetach!
 
