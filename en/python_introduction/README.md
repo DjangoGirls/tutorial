@@ -6,7 +6,7 @@ Let's write some code!
 
 ## Python prompt
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that -- you learned it in the [Intro to Command Line](/en/intro_to_command_line/README.html) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that -- you learned it in the [Intro to Command Line](./intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
@@ -409,7 +409,7 @@ To exit from the Python interpreter that we've been using, simply type the ```ex
 
 This will put you back into the command prompt.
 
-Earlier, we picked out a code editor from the [code editor](/en/code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+Earlier, we picked out a code editor from the [code editor](./code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
     print('Hello, Django girls!')
 
