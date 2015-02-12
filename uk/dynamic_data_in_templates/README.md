@@ -32,16 +32,17 @@
 
 Отже, наразі ми зацікавлені у списку опублікованих і відсортованих за параметром `published_date` блог постів, чи не так? Ми вже робили це у розділі QuerySets!
 
-    Post.objects.filter(published_date__isnull=False).order_by('published_date')
+    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
 А тепер вставимо цей шматок коду у файл `blog/views.py` додавши його до функції `def post_list(request)`:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
     
 
@@ -54,10 +55,11 @@
 Отже, врешті-решт наш файл `blog/views.py` матиме наступний вигляд:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
     
 

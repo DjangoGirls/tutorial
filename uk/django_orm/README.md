@@ -118,7 +118,8 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 
 Також можна отримати список усіх опублікованих постів. Зробимо це відфільтрувавши усі пости, що мають `published_date`:
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     []
     
 
@@ -134,7 +135,7 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 
 А тепер спробуйте вивести список усіх опублікованих постів знову (натисніть 3 рази кнопку із стрілочкою вверх і після цього - Enter):
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
     
 

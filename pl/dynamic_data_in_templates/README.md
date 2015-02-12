@@ -32,16 +32,17 @@ Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. R
 
 Więc teraz interesuje nas lista wpisów, które zostały opublikowane i posortowane według daty publikacji (`published_date`), zgadza się? Już to zrobiłyśmy w rozdziale o QuerySetach!
 
-    Post.objects.filter(published_date__isnull=False).order_by('published_date')
+    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
 Teraz umieśćmy ten kod wewnątrz pliku `blog/views.py` poprzez dodanie go do funkcji `def post_list(request)`:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
     
 
@@ -54,10 +55,11 @@ W funkcji `render` mamy już parametr `request` (czyli wszystko to, co odbieramy
 Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
     
 

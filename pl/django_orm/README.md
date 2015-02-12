@@ -116,9 +116,10 @@ A gdybyśmy chciały wyświetlić wszystkie wpisy zawierające słowo 'title' w 
 
 > **Uwaga:** Pomiędzy `title` a `contains` znajdują się dwa znaki podkreślenia (`_`). ORM w Django używa takiej składni, aby oddzielić nazwy pól ("title") od operacji lub filtrów ("contains"). Jeśli użyjesz tylko jednego, zobaczysz błąd o treści "FieldError: Cannot resolve keyword title_contains".
 
-Możemy także wyświetlić listę wszystkich opublikowanych wpisów. W tym celu odfiltrujmy wszystkie wpisy, które mają ustawioną datę publikacji (`published_date`):
+Możemy także wyświetlić listę wszystkich opublikowanych wpisów. W tym celu odfiltrujmy wszystkie wpisy, które mają ustawioną datę publikacji (`published_date`) w przeszłości:
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     []
     
 
@@ -134,7 +135,7 @@ A następnie opublikuj go za pomocą metody `publish`!
 
 Teraz spróbujmy jeszcze raz wyświetlić listę opublikowanych wpisów (wciśnij trzykrotnie klawisz ze strzałką do góry, a następnie zatwierdź klawiszem Enter):
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
     
 
