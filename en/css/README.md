@@ -20,7 +20,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 This doesn't add any files to your project. It just points to files that exist on the internet.
 Just go ahead, open your website and refresh the page. Here it is!
@@ -97,7 +97,6 @@ Your file should now look like this:
             <title>Django Girls blog</title>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
