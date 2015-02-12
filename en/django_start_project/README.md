@@ -19,9 +19,13 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
 
+On Windows:
+
+    (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
+
 > **Note** Double-check that you included the period (`.`) at the end of the command, it's important.
 
-`django-admin` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
     ├───manage.py

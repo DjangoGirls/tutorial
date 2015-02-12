@@ -18,7 +18,11 @@ Uruchom w konsoli (pamiętaj, że nie musisz pisać `(myvenv) ~/djangogirls$`, O
  
 Uruchom komende:
 
-    django-admin startproject mysite .
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+
+Dla Windows:
+
+    (myvenv) C:\Users\Nazwa\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
 
 > **Uwaga:** Pamiętaj koniecznie o kropce (`.`) na końcu polecenia, ona jest tam niezbędna.
 

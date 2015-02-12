@@ -19,11 +19,15 @@
 Запустіть:
 
     django-admin startproject mysite .
-    
+
+для Windows:
+
+    (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
+
 
 > **Зауваження** Переконайтесь, що ви включили (`.`) вкінці команди, це важливо.
 
-`django-admin` - це скрипт, що створить для вас усі необхідні папки і файли. Наразі ви повинні мати структуру, котра виглядає наступним чином:
+`django-admin.py` - це скрипт, що створить для вас усі необхідні папки і файли. Наразі ви повинні мати структуру, котра виглядає наступним чином:
 
     djangogirls
     ├───manage.py
