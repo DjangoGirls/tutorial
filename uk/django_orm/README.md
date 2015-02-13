@@ -116,9 +116,10 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 
 > **Зауваження** Тут використано два знаки підкреслювання (`_`) між `title` і `contains`. Django ORM використовує цей синтаксис щоб відокремити імена полів ("title") і операції або фільтри ("contains"). Якщо ви раптом використаєте одне підкреслювання, то отримаєте помилку на кшталт "FieldError: Cannot resolve keyword title_contains".
 
-Також можна отримати список усіх опублікованих постів. Зробимо це відфільтрувавши усі пости, що мають `published_date`:
+Також можна отримати список усіх опублікованих постів. Зробимо це відфільтрувавши усі пости, що мають published_date`: задану в минулому часі
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     []
     
 
@@ -134,7 +135,7 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 
 А тепер спробуйте вивести список усіх опублікованих постів знову (натисніть 3 рази кнопку із стрілочкою вверх і після цього - Enter):
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
     
 

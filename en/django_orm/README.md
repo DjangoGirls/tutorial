@@ -101,9 +101,9 @@ Or maybe we want to see all the posts that contain a word 'title' in the `title`
 
 > **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this syntax to separate field names ("title") and operations or filters ("contains"). If you only use one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do it by filtering all the posts that have `published_date`:
-
-    >>> Post.objects.filter(published_date__isnull=False)
+You can also get a list of all published posts. We do it by filtering all the posts that have `published_date` set in the past:
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     []
 
 Unfortunately, none of our posts are published yet. We can change that! First get an instance of a post we want to publish:
@@ -116,7 +116,7 @@ And then publish it with our `publish` method!
 
 Now try to get list of published posts again (press the up arrow button 3 times and hit Enter):
 
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
 
 ### Ordering objects
