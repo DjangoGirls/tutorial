@@ -16,7 +16,7 @@ Musimy utworzyć plik `requirements.txt` aby poinformować Heroku, jakie pakiety
 
 Jednak na początku to Heroku wymaga od nas zainstalowania kilku pakietów. Przejdź do konsoli z uruchomionym `virtualenv` i wpisz:
 
-    (myvenv) $ pip install dj-database-url waitress whitenoise
+    (myvenv) $ pip install dj-database-url gunicorn whitenoise
     
 
 Gdy instalacja się zakończy, przejdź do katalogu `djangogirls` i wykonaj polecenie:
@@ -39,10 +39,10 @@ Jest ona niezbędna, aby Twoja aplikacja działa na Heroku.
 
 Kolejną rzeczą, którą musimy stworzyć, jest Procfile. W ten sposób poinformujemy Heroku, jakie polecenia muszą zostać wykonane w celu uruchomienia naszej strony. Otwórz swój edytor, utwórz plik o nazwie `Procfile` w katalogu `djangogirls` i dodaj poniższy wiersz:
 
-    web: waitress-serve --port=$PORT mysite.wsgi:application
+    web: gunicorn mysite.wsgi
     
 
-Ta linijka oznacza, że zamierzamy wdrożyć aplikację internetową (`web`); do wykonania tej operacji służy polecenie `waitress-serve --port=$PORT mysite.wsgi:application` (`waitress-serve` jest programem przypominającym bardziej rozbudowaną wersję polecenia `runserver` w Django).
+Ta linijka oznacza, że zamierzamy wdrożyć aplikację internetową (`web`); do wykonania tej operacji służy polecenie `gunicorn mysite.wsgi:application` (`gunicorn` jest programem przypominającym bardziej rozbudowaną wersję polecenia `runserver` w Django).
 
 Zapisz zmiany w pliku. Gotowe!
 

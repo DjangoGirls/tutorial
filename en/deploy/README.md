@@ -14,7 +14,7 @@ We need to create a `requirements.txt` file to tell Heroku what Python packages 
 
 But first, Heroku needs us to install a few packages. Go to your console with `virtualenv` activated and type this:
 
-    (myvenv) $ pip install dj-database-url waitress whitenoise
+    (myvenv) $ pip install dj-database-url gunicorn whitenoise
 
 After the installation is finished, go to the `djangogirls` directory and run this command:
 
@@ -36,9 +36,9 @@ This line is needed for your application to work on Heroku.
 Another thing we need to create is a Procfile. This will let Heroku know which commands to run in order to start our website.
 Open up your code editor, create a file called `Procfile` in `djangogirls` directory and add this line:
 
-    web: waitress-serve --port=$PORT mysite.wsgi:application
+    web: gunicorn mysite.wsgi
 
-This line means that we're going to be deploying a `web` application, and we'll do that by running the command `waitress-serve --port=$PORT mysite.wsgi:application` (`waitress-serve` is a program that's like a more powerful version of Django's `runserver` command).
+This line means that we're going to be deploying a `web` application, and we'll do that by running the command `gunicorn mysite.wsgi:application` (`gunicorn` is a program that's like a more powerful version of Django's `runserver` command).
 
 Then save it. Done!
 

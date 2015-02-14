@@ -16,7 +16,7 @@
 
 Але спочатку, Heroku потребує встановлення декількох пакетів. Перейдіть до вашої консолі із активованою `virtualenv` та наберіть наступне:
 
-    (myvenv) $ pip install dj-database-url waitress whitenoise
+    (myvenv) $ pip install dj-database-url gunicorn whitenoise
     
 
 По завершенню інсталяції перейдіть до папки `djangogirls` та запустіть цю команду:
@@ -39,10 +39,10 @@
 
 Інша річ, яку ми повинні створити -- Procfile. Це дозволить Heroku знати які команди виконувати для того, щоб запустити наш веб-сайт. Відкрийте кодовий редактор, створіть файл із назвою `Procfile` у папці `djangogirls` і додайте цей рядок:
 
-    web: waitress-serve --port=$PORT mysite.wsgi:application
+    web: gunicorn mysite.wsgi
     
 
-Цей рядок означає що ми збираємось розгорнути `web` додаток, і ми зробимо це шляхом запуску команди `waitress-serve --port=$PORT mysite.wsgi:application` (`waitress-serve` -- програма на зразок більш потужної версії Django команди `runserver`).
+Цей рядок означає що ми збираємось розгорнути `web` додаток, і ми зробимо це шляхом запуску команди `gunicorn mysite.wsgi` (`gunicorn` -- програма на зразок більш потужної версії Django команди `runserver`).
 
 Далі збережіть файл. Є!
 
