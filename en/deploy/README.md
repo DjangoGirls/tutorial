@@ -38,7 +38,7 @@ Open up your code editor, create a file called `Procfile` in `djangogirls` direc
 
     web: gunicorn mysite.wsgi
 
-This line means that we're going to be deploying a `web` application, and we'll do that by running the command `gunicorn mysite.wsgi:application` (`gunicorn` is a program that's like a more powerful version of Django's `runserver` command).
+This line means that we're going to be deploying a `web` application, and we'll do that by running the command `gunicorn mysite.wsgi` (`gunicorn` is a program that's like a more powerful version of Django's `runserver` command).
 
 Then save it. Done!
 

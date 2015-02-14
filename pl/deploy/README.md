@@ -42,7 +42,7 @@ Kolejną rzeczą, którą musimy stworzyć, jest Procfile. W ten sposób poinfor
     web: gunicorn mysite.wsgi
     
 
-Ta linijka oznacza, że zamierzamy wdrożyć aplikację internetową (`web`); do wykonania tej operacji służy polecenie `gunicorn mysite.wsgi:application` (`gunicorn` jest programem przypominającym bardziej rozbudowaną wersję polecenia `runserver` w Django).
+Ta linijka oznacza, że zamierzamy wdrożyć aplikację internetową (`web`); do wykonania tej operacji służy polecenie `gunicorn mysite.wsgi` (`gunicorn` jest programem przypominającym bardziej rozbudowaną wersję polecenia `runserver` w Django).
 
 Zapisz zmiany w pliku. Gotowe!
 
