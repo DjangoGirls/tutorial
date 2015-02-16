@@ -286,7 +286,7 @@ If you need more information about Django forms you should read the documentatio
 
 ## One more thing: deploy time!
 
-It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter 15:
+It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter [Deploy](../deploy/README.md):
 
     $ git status
     ...

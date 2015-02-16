@@ -143,7 +143,7 @@ Hura! Działa!
 
 ## Jeszcze jedno: czas na wdrożenie!
 
-Byłoby dobrze, aby zobaczyć, jeśli witryna nadal będzie nad Heroku, prawa? Spróbuj ponownie wdrażania. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału 15:
+Byłoby dobrze, aby zobaczyć, jeśli witryna nadal będzie nad Heroku, prawa? Spróbuj ponownie wdrażania. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału [Wdrażanie](../deploy/README.md):
 
     $ git status
     ...

@@ -306,7 +306,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 ## Jeszcze jedno: czas na wdrożenie!
 
-Dobrze byłoby wiedzieć, że nasza witryna nadal działa na Heroku, prawda? Spróbuj ponownie ją zaktualizować. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału 15:
+Dobrze byłoby wiedzieć, że nasza witryna nadal działa na Heroku, prawda? Spróbuj ponownie ją zaktualizować. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału [Wdrażanie](../deploy/README.md):
 
     $ git status
     ...
