@@ -110,4 +110,4 @@ w systemie Linux
 
 > Jeśli po użyciu polecenia pip w Ubuntu 12.04 otrzymasz błąd, użyj polecenia `python -m pip install -U --force-reinstall pip`, aby naprawić instalacją pip'a w środowisku wirtualnym.
 
-To wszystko! Teraz (nareszcie) jesteś gotowa do stworzenia aplikacji w Django! Ale aby to zrobić, potrzebujesz jakiegoś wygodnego programu do pisania kodu...
+To wszystko! Teraz (nareszcie) jesteś gotowa do stworzenia aplikacji w Django!

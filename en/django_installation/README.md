@@ -102,4 +102,4 @@ on Windows
 on Linux
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
-That's it! You're now (finally) ready to create a Django application! But to do that, you need a nice program to write your code in...
+That's it! You're now (finally) ready to create a Django application!
