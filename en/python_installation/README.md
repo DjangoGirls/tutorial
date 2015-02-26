@@ -14,14 +14,14 @@ Django is written in Python. We need Python to do anything in Django. Let's star
 
 ### Windows
 
-You can download Python for Windows from the website https://www.python.org/downloads/release/python-342/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
+You can download Python for Windows from the website https://www.python.org/downloads/release/python-343/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
 
 ### Linux
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
     $ python3 --version
-    Python 3.4.2
+    Python 3.4.3
 
 If you don't have Python installed or if you want a different version, you can install it as follows:
 
@@ -48,7 +48,7 @@ You need to go to the website https://www.python.org/downloads/release/python-34
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
     $ python3 --version
-    Python 3.4.2
+    Python 3.4.3
 
 ----
 
