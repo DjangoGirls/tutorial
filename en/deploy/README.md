@@ -46,7 +46,7 @@ Then save it. Done!
 
 We need to tell Heroku which Python version we want to use. This is done by creating a `runtime.txt` in the `djangogirls` directory using your editor's "new file" command, and putting the following text (and nothing else!) inside:
 
-    python-3.4.2
+    python-3.4.3
 
 ## mysite/local_settings.py
 
