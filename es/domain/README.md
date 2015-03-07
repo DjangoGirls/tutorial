@@ -1,22 +1,22 @@
 # Dominio
 
-Heroku gave you a domain, but it's long, hard to remember, and ugly. It'd be awesome to have a domain name that is short and easy to remember, right?
+Heroku le entregó un dominio pero es largo, dificil de recordar y feo. Seria asombroso contar con un nombre de dominio que sea sencillo y facil de recordar, ¿verdad?
 
-In this chapter we will teach you how to buy a domain and direct it to Heroku!
+En este capitulo te enseñaremos como adquirir un dominio dirigirlo a Heroku!
 
-## Where to register a domain?
+## ¿Donde registrar un dominio?
 
-A typical domain costs around $15 a year. There are cheaper and more expensive options, depending on the provider. There are a lot of companies that you can buy a domain from: a simple [google search][1] will give hundreds of options.
+Un dominio normalmente cuesta alrededor de 15 dolares estadounidenses anuales. Existen opciones un poco mas baratas y otras un poco mas caras pero esto depende del proveedor. Existen muchas compañias donde puedes adquirir un dominio: una simple [busqueda en google][1] te dara miles de opciones. Hay opciones más baratas y más caras, dependiendo del proveedor. Hay una gran cantidad de empresas que se pueden comprar un dominio de: una simple [búsqueda en google][1] dará cientos de opciones.
 
  [1]: https://www.google.com/search?q=register%20domain
 
-Our favourite one is [I want my name][2]. They advertise as "painless domain management" and it really is painless.
+Nuestra opción predilecta es [I Want my name][2]. Ellos se promueven como una opción "indolora para el manejo de dominios" y realmente lo son.
 
- [2]: https://iwantmyname.com/
+ [2]: https://iwantmyname.com
 
-## How to register domain in IWantMyName?
+## ¿Como registrar un dominio en IWantMyName?
 
-Go to [iwantmyname][3] and type a domain you want to have in the search box.
+Dirígete a [iwantmyname][3] y escriba un dominio que deseas tener en el cuadro de búsqueda.
 
  [3]: http://iwantmyname.com
 
@@ -24,48 +24,48 @@ Go to [iwantmyname][3] and type a domain you want to have in the search box.
 
  [4]: images/1.png
 
-You should now see a list of all available domains with the term you put in the search box. As you can see, a smiley face indicates that the domain is available for you to buy, and a sad face that it is already taken.
+Ahora deberías ver una lista de todos los dominios disponibles con el término que pusiste en el cuadro de búsqueda. Como puedes ver, una cara sonriente indica que el dominio está disponible para comprarlo, y una cara triste indica que no se encuentra disponible.
 
 ![][5]
 
  [5]: images/2.png
 
-We've decided to buy `djangogirls.in`:
+Hemos decidido comprar `djangogirls.in`:
 
 ![][6]
 
  [6]: images/3.png
 
-Go to checkout. You should now sign up for iwantmyname if you don't have an account yet. After that, provide your credit card info and buy a domain!
+Dirígete a la caja. Ahora debes registrare en iwantmyname, si todavía no tienes una cuenta. Después de eso, debes de proporcionar la información de tu tarjeta de crédito y finalmente podrás comprar el dominio!
 
-After that, click `Domains` in the menu and choose your newly purchased domain. Then locate and click on the `manage DNS records` link:
+Después de eso, Haz clic en `Dominios` en el menú y elige el dominio que acabas de adquirir. A continuación, busca y da clic en el enlace de `manage DNS records`:
 
 ![][7]
 
  [7]: images/4.png
 
-Now you need to locate this form:
+Ahora necesitas localizar este formulario:
 
 ![][8]
 
  [8]: images/5.png
 
-And fill it in with the following details: - Hostname: www - Type: CNAME - Value: your domain from Heroku (for example djangogirls.herokuapp.com) - TTL: 3600
+Y llenarlo con los siguientes datos: - Nombre de hosting: www - Tipo: CNAME - Valor: tu dominio de Heroku (por ejemplo djangogirls.herokuapp.com) - TTL: 3600
 
 ![][9]
 
  [9]: images/6.png
 
-Click the Add button and Save changes at the bottom.
+En la parte inferior, da clic en el botón Agregar y poder guardar los cambios.
 
-It can take up to a couple of hours for your domain to start working, so be patient!
+Puede tomar un par de horas para que tu dominio empece a trabajar, así que mantente paciente!
 
-## Configure domain in Heroku
+## Configurar dominio en Heroku
 
-You also need to tell Heroku that you want to use your custom domain.
+También tienes que decirle a Heroku que deseas utilizar su dominio personalizado.
 
-Go to the [Heroku Dashboard][10], login to your Heroku account and choose your app. Then go into app Settings and add your domain in the `Domains` section and save your changes.
+Dirígete a [Heroku Dashboard][10], inicia sesión con tu cuenta de Heroku y elije tu aplicación. Enseguida, configura tu aplicación y agrega tu dominio en la sección de `dominios` y guardar los cambios.
 
  [10]: https://dashboard.heroku.com/apps
 
-That's it!
+Eso es todo!

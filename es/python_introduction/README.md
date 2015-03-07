@@ -54,7 +54,7 @@ Las cadenas pueden ser concatenadas. Prueba esto:
     'Hola alli Ola'
     
 
-También puedes multiplicar los strings con un número:
+También puedes multiplicar las cadenas con un número:
 
     >>> "Ola" * 3
     'OlaOlaOla'
@@ -68,7 +68,7 @@ Usar comillas dobles:
     "Runnin' down the hill"
     
 
-or escaping apostrophe with a backslash (``):
+o escapa el apóstrofo con una barra invertida (``):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
@@ -80,30 +80,30 @@ Bien, ¿eh? Para ver tu nombre en letras mayúsculas, simplemente escribe:
     'OLA'
     
 
-Usaste la **función** `upper` en tu string! A function (like `upper()`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Usaste la **función** `upper` en tu cadena! Una función (como `upper()`) es un conjunto de instrucciones que Python tiene que realizar a un objeto determinado (`"Ola"`) una vez que se llama.
 
-If you want to know the number of letters contained in your name, there is a function for that too!
+Si quisieras saber el número de letras que contiene tu nombre, también existe una función para esto.
 
     >>> len("Ola")
     3
     
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Te preguntarás porque a veces se llama a las funciones con un `.` al final de un string (p. ej. `"Ola".upper()`), y a veces primero se llama a una función y se coloca el string entre paréntesis. Bueno, en algunos casos las funciones pertenecen a objetos, como `upper()`, que pueden solo ser utilizadas en strings (cadena de caracteres) En este caso, llamamos a la función de un **método**. Otra veces, las funciones no pertenecen a ninguno especifico y pueden ser usados en diferentes objetos, como `len()`. Eso es porque estamos dando `"Ola"` cono un parámetro a la función `len`.
 
-### Índice
+### Resumen
 
-OK, enough of strings. So far you've learned about:
+Ok, suficiente de strings. Hasta ahora has aprendido sobre:
 
-*   **the prompt** - typing commands (code) into the Python prompt results in answers in Python
-*   **numbers and strings** - in Python numbers are used for math and strings for text objects
-*   **operators** - like + and *, combine values to produce a new one
-*   **functions** - like upper() and len(), perform actions on objects.
+*   **la terminal** - teclea comandos (código) dentro de la terminal de Python para obtener resultados en preguntas en Python
+*   **números y strings** - en Python los números son usados para matemáticas y strings para objetos de texto
+*   **operadores** - como + y *, combinan valores para producir uno nuevo
+*   **funciones** como upper() y len(), realizan opciones sobre los objetos.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje de programación. ¿Listo para algo un poco más fuerte? ¡Apostamos que lo estás!
 
-## Errors
+## Errores
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit Enter:
+Intentemos con algo nuevo. ¿Podríamos obtener la longitud de un número de la misma manera que obtuvimos la longitud de nuestro nombre? Teclea `len(304023)` y presiona Enter:
 
     >>> len(304023)
     Traceback (most recent call last):
@@ -111,50 +111,50 @@ Let's try something new. Can we get the length of a number the same way we could
     TypeError: object of type 'int' has no len()
     
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Tenemos nuestro primer error! Dice que los objetos de tipo "int" (números enteros) no tienen ninguna longitud. ¿Qué podemos hacer ahora? Quizás podemos escribir el numero como un string. Strings tienen longitud, ¿cierto?
 
     >>> len(str(304023))
     6
     
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+¡Funcionó! Utilizamos la función `str` dentro de la función `len` . `str()` convierte todo a strings.
 
-*   The `str` function converts things into **strings**
-*   The `int` function converts things into **integers**
+*   La función `str` convierte cosas en **strings**
+*   La función `int` convierte cosas en **integers**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers - what would `int('hello')` be anyway?
+> Importante: podemos convertir números en texto, pero no podemos necesariamente convertir texto en números - ¿qué sería de `int('hello')`?
 
 ## Variables
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa que tu puedes usar más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando que hace cada cosa.
 
-Let's say we want to create a new variable called `name`:
+Supongamos que queremos crear una nueva variable llamada `nombre`:
 
     >>> name = "Ola"
     
 
-You see? It's easy! It's simply: name equals Ola.
+¿Ves? ¡Es fácil! Es simplemente: name equivale a Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit Enter:
+Como te has dado cuenta, el programa no regresa algo como lo hacia antes. Entonces, ¿Cómo sabemos que la variable existe realmente? Simplemente introduce `name` y pulsa Enter:
 
     >>> name
     'Ola'
     
 
-Yippee! Your first variable :)! You can always change what it refers to:
+Súper! La primera variable :). Siempre podrás cambiar lo que se refiere a:
 
     >>> name = "Sonja"
     >>> name
     'Sonja'
     
 
-You can use it in functions too:
+Puedes usarla dentro de las funciones:
 
     >>> len(name)
     5
     
 
-Awesome, right? Of course, variables can be anything, so numbers too! Try this:
+¿Increíble, cierto? Por supuesto, las variables pueden ser cualquier cosa, también números! Prueba esto:
 
     >>> a = 4
     >>> b = 6
@@ -162,7 +162,7 @@ Awesome, right? Of course, variables can be anything, so numbers too! Try this:
     24
     
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Pero ¿qué pasa si usamos el nombre equivocado? ¿Puedes adivinar qué pasaría? Vamos a probar!
 
     >>> name = "Maria"
     >>> names
@@ -171,13 +171,13 @@ But what if we used the wrong name? Can you guess what would happen? Let's try!
     NameError: name 'names' is not defined
     
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Un error! Como puedes ver, Python tiene diferentes tipos de errores y estos se llaman **NameError**. Python te dará este error si intenta utilizar una variable que no ha sido definida aún. Si más adelante te encuentra con este error, verifica tu código para ver si es que no haya ningún nombre.
 
-Play with this for a while and see what you can do!
+Juega con esto por un rato y mira que puedes hacer!
 
-## The print function
+## La función print
 
-Try this:
+Intenta esto:
 
     >>> name = 'Maria'
     >>> name
@@ -186,59 +186,59 @@ Try this:
     Maria
     
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Cuando sólo se escribe `name`, el intérprete de Python responde con la *representación* de la variable 'name', que es las letras M-a-r-i-a, rodeadas de comillas simples ''. Cuando dices `print(name)`, Python va a "Imprimir" el contenido de la variable a la pantalla, sin las comillas, que es mejor.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Como veremos después, print() también es útil cuando queremos imprimir cosas dentro de las funciones, o bien cuando queremos imprimir cosas en múltiples lineas.
 
-## Lists
+## Listas
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: they are objects which are lists of other objects :)
+Entre string e integers, Python tiene todo tipo de diferentes tipos de objetos. Ahora vamos a introducir una llamada **list**. Las listas son exactamente lo que piensas que son: son objetos que son listas de otros objetos :)
 
-Go ahead and create a list:
+Adelante y crear una lista:
 
     >>> []
     []
     
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Sí, esta lista está vacía. No es muy útil, ¿verdad? Vamos a crear una lista de números de la lotería. No queremos repetirlos todo el tiempo, así que lo pondremos en una variable, también:
 
     >>> lottery = [3, 42, 12, 19, 30, 59]
     
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Muy bien, tenemos una lista! ¿Qué podemos hacer con él? Vamos a ver cuántos números de la lotería. ¿Tienes alguna idea de función que debe usar para eso? Ya sabes esto!
 
     >>> len(lottery)
     6
     
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+¡ Sí! `Len()` puede dar un número de objetos en una lista. ¿Wow, verdad? Tal vez lo resolvamos ahora:
 
     >>> lottery.sort()
     
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Esto no devuelve nada, sólo cambia el orden en que los números aparecen en la lista. Vamos a imprimir otra vez y ver que pasó:
 
     >>> print(lottery)
     [3, 12, 19, 30, 42, 59]
     
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Como puedes ver, los números en la lista ahora están ordenados de menor a mayor. ¡ Felicidades!
 
-Maybe we want to reverse that order? Let's do that!
+¿Tal vez queremos invertir ese orden? Vamos a hacerlo!
 
     >>> lottery.reverse()
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3]
     
 
-Easy, right? If you want to add something to your list, you can do this by typing this command:
+Fácil, verdad? Si quieres añadir algo a tu lista, puedes hacerlo escribiendo este comando:
 
     >>> lottery.append(199)
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Computer people like to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Si desea mostrar sólo el primer número, puede hacerlo mediante el uso de **indixes**. Un index es el numero que se muestra en una lista como una ocurrencia. La computadora inicia la cuenta en 0, así que el primer objeto en la lista es en el índice 0, el siguiente es 1, y así sucesivamente. Intenta esto:
 
     >>> print(lottery[0])
     59
@@ -246,42 +246,42 @@ If you want to show only the first number, you can do this by using **indexes**.
     42
     
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Como puedes ver, puedes acceder a diferentes objetos en la lista utilizando el nombre de la lista y el índice del objeto dentro de corchetes.
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Para diversión adicional, prueba algunos otros índices: 6, 7, 1000, -1, -6 ó -1000. A ver si se puede predecir el resultado antes de intentar el comando. ¿Tienen sentido los resultados?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Puedes encontrar una lista de todos los métodos disponibles de la lista en este capítulo de la documentación de Python: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Diccionarios
 
-A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define an empty dictionary is:
+Un diccionario es similar a una lista, pero accedes a valores mediante una llave en lugar de un índice. Una llave puede ser cualquier cadena o número. La sintaxis para definir un diccionario vacío es:
 
     >>> {}
     {}
     
 
-This shows that you just created an empty dictionary. Hurray!
+Esto demuestra que acabas de crear un diccionario vacío. ¡Hurra!
 
-Now, try writing the following command (try replacing your own information too):
+Ahora, trata de escribir el siguiente comando (trata de reemplazando tu propia información):
 
     >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
     
 
-With this command, you just created a variable named `participant` with three key-value pairs:
+Con este comando, que acaba de crear una variable denominada `participante` con tres pares de clave y valor:
 
-*   The key `name` points to the value `'Ola'` (a `string` object),
-*   `country` points to `'Poland'` (another `string`),
-*   and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+*   El `name` apunta al valor `'Ola'` (un objeto `string`),
+*   `country` apunta a `'Poland'` (otro `string`),
+*   y `favorite_numbers` apunta a `[7, 42, 92]` (una `list` con tres números en el).
 
-You can check the content of individual keys with this syntax:
+Puedes verificar el contenido de llaves individuales con esta sintaxis:
 
     >>> print(participant['name'])
     Ola
     
 
-See, it's similar to a list. But you don't need to remember the index - just the name.
+Mira, es similar a una lista. Pero no necesitas recordar el índice - sólo el nombre.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+¿Qué pasa si pedimos a Python el valor de una llave que no existe? ¿Puedes adivinar? ¡Pruébalo y verá!
 
     >>> participant['age']
     Traceback (most recent call last):
@@ -289,58 +289,58 @@ What happens if we ask Python the value of a key that doesn't exist? Can you gue
     KeyError: 'age'
     
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+¡Mira, otro error! Este es un **KeyError**. Python es de ayuda y te dice que la llave `'age'` no existe en este diccionario.
 
-When to use a dictionary or a list? Well, that's a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
+¿Cuándo utilizar un diccionario o una lista? Bueno, eso es un buen punto para reflexionar. Sólo ten una solución en mente antes de mirar la siguiente respuesta.
 
-*   Do you just need an ordered sequence of items? Go for a list.
-*   Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+*   ¿Sólo necesitas una secuencia ordenada de elementos? Usa una lista.
+*   ¿Necesita asociar valores claves, así que puedas consultarlos eficientemente (por llaves) más adelante? Utiliza un diccionario.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
+Diccionarios, parecen listas, son *mutables*, lo que significa que pueden ser cambiados después de ser creados. Puedes agregar nuevos pares clave-valor en el diccionario después de que se crea, ejemplo:
 
     >>> participant['favorite_language'] = 'Python'
     
 
-Like lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+Como listas, método en los diccionarios, `len()` devuelve el número de pares clave-valor en el diccionario. Adelante, escribe el comando:
 
     >>> len(participant)
     4
     
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Hop onto the next line for some amazing things.
+Espero tenga sentido hasta ahora. :) ¿Lista para más diversión con los diccionarios? Salta a la siguiente línea para algunas cosas sorprendentes.
 
-You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Puedes utilizar el comando `del` para borrar un elemento en el diccionario. Si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, sólo tienes que escribir el siguiente comando:
 
     >>> del participant['favorite_numbers']
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
     
 
-As you can see from the output, the key-value pair corresponding to the 'favorite_numbers' key has been deleted.
+Como puedes ver en la salida, el par de clave y valor correspondiente a la tecla de 'favorite_numbers' ha sido eliminado.
 
-As well as this, you can also change a value associated with an already created key in the dictionary. Type:
+Además, también puedes cambiar un valor asociado a una clave ya creada en el diccionario. Teclea:
 
     >>> participant['country'] = 'Germany'
     >>> participant
     {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
     
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learnt another amazing thing.
+Como puedes ver, el valor de la clave `'country'` ha sido alterado de `'Poland'` a `'Germany'`. :) ¿Emocionante? ¡Hurra! Has aprendido otra cosa asombrosa.
 
-### Índice
+### Resumen
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Impresionante! Sabes mucho sobre programación ahora. En esta última parte aprendiste sobre:
 
-*   **errors** - you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-*   **variables** - names for objects that allow you to code more easily and to make your code more readable
-*   **lists** - lists of objects stored in a particular order
-*   **dictionaries** - objects stored as key-value pairs
+*   **errors** - ahora sabe cómo leer y entender los errores que aparecen si Python no entiende un comando que has dado
+*   **variables** - nombres para los objetos que permiten codificar más fácilmente y hacer el código más legible
+*   **lists** - las listas de objetos almacenados en un orden determinado
+*   **dictionaries** - objetos almacenados como pares de clave y valor
 
-Excited for the next part? :)
+¿Emocionada por la siguiente parte? :)
 
-## Compare things
+## Compara cosas
 
-A big part of programming includes comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Una gran parte de la programación incluye comparar cosas. ¿Qué es más fácil comparar? Números, por supuesto. Vamos a ver cómo funciona:
 
     >>> 5 > 2
     True
@@ -352,11 +352,11 @@ A big part of programming includes comparing things. What's the easiest thing to
     True
     
 
-We gave Python some numbers to compare. As you can see, Python can compare not only numbers, but it can also compare method results. Nice, huh?
+Le dimos a Python algunos números para comparar. Como puedes ver, Python puede comparar no sólo números, pero también puede comparar resultados de método. Bien, ¿eh?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two `==` if you want to check if things are equal to each other.
+¿Te preguntas por qué pusimos dos signos de igual `==` al lado del otro para comparar si los números son iguales? Utilizamos un solo `=` para asignar valores a las variables. Siempre, **siempre** es necesario poner dos `==` Si desea comprobar si las cosas son iguales entre sí.
 
-Give Python two more tasks:
+Dan a Python dos tareas más:
 
     >>> 6 >= 12 / 2
     True
@@ -364,29 +364,29 @@ Give Python two more tasks:
     False
     
 
-`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
+`>` y `<` son fáciles, pero ¿qué es significa `> =` y `< =`? Se leen así:
 
-*   x `>` y means: x is greater than y
-*   x `<` y means: x is smaller than y
-*   x `<=` y means: x is smaller or equal to y
-*   x `>=` y means: x is greater or equal to y
+*   x `>` y significa: x es mayor grande que y
+*   x `<` y significa: x es menor que y
+*   x `< =` y significa: x es menor o igual a y
+*   x `> =` y significa: x es mayor o igual a y
 
-Awesome! Wanna do one more? Try this:
+¡Genial! ¿Quieres hacer uno mas? Intenta esto:
 
-    >>> 6 > 2 and 2 < 3
+    >>> 6 > 2 y 2 < 3
     True
-    >>> 3 > 2 and 2 < 1
+    >>> 3 > 2 y 2 < 1
     False
-    >>> 3 > 2 or 2 < 1
+    >>> 3 > 2 ó 2 < 1
     True
     
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Puedes darle a Python muchos números para comparar, y te dará una respuesta! Muy inteligente, verdad?
 
-*   **and** - if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-*   **or** - if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+*   **and** - Si utilizas el operador `and`, las comparaciones deben estar en orden para que sea True
+*   **or** - Si utilizas el operador `or`, sólo una de las comparaciones tiene que ser verdadera para ser True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+¿Has oído la expresión "comparar manzanas con naranjas"? Vamos a probar el equivalente en Python:
 
     >>> 1 > 'django'
     Traceback (most recent call last):
@@ -394,106 +394,106 @@ Have you heard of the expression "comparing apples to oranges"? Let's try the Py
     TypeError: unorderable types: int() > str()
     
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y una string (`str`). En cambio, se muestra un **TypeError** y nos dice que no se puede comparar los dos tipos.
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called a **Boolean** -- and it probably is the easiest type there is.
+Por cierto, acabas de aprender acerca de un nuevo tipo de objeto en Python. Se llama un **boolean**--y es probable el más sencillo.
 
-There are only two Boolean objects: - True - False
+Hay sólo dos objetos Boolean: - True - False
 
-But for Python to understand this, you need to always write it as True (first letter uppercased, with the rest of the letter lowercased). **true, TRUE, tRUE won't work -- only True is correct.** (The same applies to False as well, of course.)
+Pero para que Python entender esto, es necesario siempre escribir como True (primera letra mayúscula, con el resto de la letra minúscula). **true, TRUE, tRUE no funcionan -- sólo True es correcto.** (Lo mismo aplica a False, por supuesto.)
 
-Booleans can be variables, too! See here:
+Valores booleans pueden ser variables, también! Ve aquí:
 
     >>> a = True
     >>> a
     True
     
 
-You can also do it this way:
+También puedes hacerlo de esta manera:
 
     >>> a = 2 > 5
     >>> a
     False
     
 
-Practice and have fun with Booleans by trying to run the following commands:
+Practica y diviértete con booleanos corriendo los siguientes comandos:
 
 *   `True and True`
 *   `False and True`
 *   `True or 1 == 1`
 *   `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+¡Felicidades! Los booleans son de las mejores funciones en la programación y acabas de aprender como usarlos.
 
-# Save it!
+# ¡Guárdalo!
 
-So far we've been writing all our python code in the intepreter, which limits us to one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compilier**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Hasta ahora hemos estado escribiendo nuestro código de python en el intérprete, lo cual nos limita a una línea de código a la vez. Programas normales son guardados en archivos y ejecutados por el **intérprete** o **compiler** de nuestro idioma de programación. Hemos estado corriendo nuestros programas una linea a la vez en el **intérprete** de Python. Necesitaremos mas de una linea de código para las siguientes tareas, entonces necesitaremos hacer rápidamente lo siguiente:
 
-*   Exit the Python interpreter
-*   Open up our code editor of choice
-*   Save some code into a new python file
-*   Run it!
+*   Salir del intérprete de Python
+*   Abrir el editor de texto de nuestra elección
+*   Guardar algo de código en un nuevo archivo de python
+*   ¡Correrlo!
 
-To exit from the Python interpreter that we've been using, simply type the ~~~ exit()~~~ function:
+Para salir del interprete de Python que hemos estado usando, simplemente escribe la función de ~~~ exit() ~~~:
 
     >>>exit()
     $
     
 
-This will put you back into the command prompt.
+Esto te llevará de vuelta a la linea de comando.
 
-Earlier, we picked out a code editor from the [code editor][2] section. We'll need to open the editor now and write some code into a new file:
+Anteriormente, elegimos un editor de código en la sección de [code editor][2]. Tendremos que abrir el editor ahora y escribir algo de código en un archivo nuevo:
 
  [2]: code_editor/README.md
 
     print('Hello, Django girls!')
     
 
-Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
+Obviamente, ahora eres una desarrolladora Python muy experimentada, así que siéntete libre de escribir algún código que has aprendido hoy.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, the important part here is to make sure the file ends in **.py**, this tells our computer that this is a **python executable file** and Python can run it.
+Ahora tenemos que guardar el archivo y asignarle un nombre. Vamos a llamar al archivo **python_intro.py** y guárdalo en tu escritorio. Podemos nombrar el archivo de cualquier manera que queramos, lo importante aquí es asegurarse que el archivo finalice con **.py**, esto indica nuestro ordenador que este es un **archivo ejecutable de Python**.
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Con el archivo guardado, es hora de ejecutarlo. Utilizando las habilidades que has aprendido en la sección de línea de comandos, utiliza la terminal para **cambiar los directorios** al escritorio.
 
-On a Mac, the command will look something like this:
+En un Mac, el comando se verá algo como esto:
 
     cd /Users/<your_name>/Desktop
     
 
-On Linux, it will be like this (the word "Desktop" might be translated to your language):
+En Linux, va a ser así (la palabra "Desktop" puede ser traducido a su idioma):
 
     cd /home/<your_name>/Desktop
     
 
-And on windows, it will be like this:
+Y en windows, será así:
 
     cd C:\Users\<your_name>\Desktop
     
 
-If you get stuck, just ask for help.
+Si te quedas atascada, sólo pide ayuda.
 
-and then use Python to execute the code in the file like this:
+y luego usa Python para ejecutar el código en el archivo como este:
 
     $ python3 python_intro.py
     Hello, Django girls!
     
 
-Alright! You just ran your first python program that was saved to a file. Feel awesome?
+Muy bien! Ejecutaste tu primer programa de Python. ¿Se siente increíble?
 
-You can now move on to an essential tool in programming:
+Ahora puedes moverte a una herramienta esencial en la programación:
 
 ## If...elif...else
 
-Lots of things in code should only be executed when given conditions are met. That's why Python has something called **if statements**.
+Un montón de cosas en el código sólo son ejecutadas cuando se cumplen las condiciones. Por eso Python tiene algo llamado **sentencias if**.
 
-Replace the code in your **python_intro.py** file to this:
+Reemplace el código en el archivo **python_intro.py** por esto:
 
     if 3 > 2:
     
 
-If we saved this and ran it, we'd see an error like this:
+Si guardamos y ejecutams, veríamos un error como este:
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -501,23 +501,23 @@ If we saved this and ran it, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python da más instrucciones para lo que se suponen se ejecutará si la condición `3 > 2` resulta ser verdadera (o `True` para el caso). Intentemos hacer Python print "¡ funciona!". Cambiar tu código en el archivo **python_intro.py** a esto:
 
     if 3 > 2:
         print('It works!')
     
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the code results in true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
+¿Observa cómo nos hemos puesto una sangría en la siguiente línea de código por 4 espacios? Tenemos que hacer esto para que Python sepa que el código resulta ser verdad. Puedes hacer un espacio, pero casi todos los programadores Python hacen 4 para hacerlo más legible. Una solo Tab también contará como 4 espacios.
 
-Save it and give it another run:
+Guarda y ejecútalo de nuevo:
 
     $ python3 python_intro.py
     It works!
     
 
-### What if not?
+### ¿Qué pasa si no?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+En ejemplos anteriores, el código fue ejecutado sólo cuando las condiciones eran ciertas. Pero Python también tiene declaraciones `elif` y `else`:
 
     if 5 > 2:
         print('5 is indeed greater than 2')
@@ -525,13 +525,13 @@ In previous examples, code was executed only when the conditions were True. But 
         print('5 is not greater than 2')
     
 
-When this was run it would print out:
+Cuando esto se ejecute imprimiría:
 
     $ python3 python_intro.py
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
+Si 2 fuera un número mayor que 5, entonces el segundo comando sería ejecutado. Fácil, verdad? Vamos a ver cómo funciona `elif`:
 
     name = 'Sonja'
     if name == 'Ola':
@@ -542,30 +542,30 @@ If 2 were a greater number than 5, then the second command would be executed. Ea
         print('Hey anonymous!')
     
 
-and executed:
+y ejecutado:
 
     $ python3 python_intro.py
     Hey Sonja!
     
 
-See what happened there?
+¿Ves lo que pasó ahí?
 
-### Índice
+### Resumen
 
-In the last three exercises you learned about:
+En los últimos tres ejercicios aprendiste acerca de:
 
-*   **comparing things** - in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-*   **Boolean** - a type of object that can only have one of two values: `True` or `False`
-*   **Saving files** - storing code in files so you can execute larger programs.
-*   **if...elif...else** - statements that allow you to execute code only when certain conditions are met.
+*   **comparando cosas** - en Python puedes comparar cosas mediante el uso de `>`, `> =`, `==`, `< =`, `<` y las `y` los operadores `o`
+*   **Boolean** - un tipo de objeto que sólo puede tener uno de dos valores: `True` o `False`
+*   **Guardar archivos** - almacenar código en archivos y puede ejecutar programas más grandes.
+*   **si... elif... else** - las sentencias permiten ejecutar código sólo cuando se cumplan ciertas condiciones.
 
-Time for the last part of this chapter!
+Sigue la última parte de este capítulo.
 
-## Your own functions!
+## Tus propias funciones!
 
-Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
+¿Recuerdas las funciones como `len()` que puedes ejecutar en Python? Buenas noticias, aprenderás cómo escribir tus propias funciones ahora!
 
-A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+Una función es un conjunto de instrucciones que deben ser ejecutadas en Python. Cada función en Python comienza con la palabra clave `def`, se asigna un nombre y puede tener algunos parámetros. Vamos a empezar con algo fácil. Reemplace el código en **python_intro.py** con lo siguiente:
 
     def hi():
         print('Hi there!')
@@ -574,23 +574,23 @@ A function is a set of instructions that Python should execute. Each function in
     hi()
     
 
-Okay, our first function is ready!
+Bien, nuestra primera función está lista!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Te preguntarás por qué hemos escrito el nombre de la función en la parte inferior del archivo. Esto es porque Python lee el archivo y ejecuta desde arriba hacia abajo. Así que para poder utilizar nuestra función, tenemos que escribirla en la parte inferior.
 
-Let's run this now and see what happens:
+Hay que ejecutar esto y ver lo que sucede:
 
     $ python3 python_intro.py
     Hi there!
     How are you?
     
 
-That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
+Eso fue fácil! Vamos a construir nuestra primera función con parámetros. Utilizaremos el ejemplo anterior - una función que dice 'Hi' a la persona - con un nombre:
 
     def hi(name):
     
 
-As you can see, we now gave our function a parameter that we called `name`:
+Como puedes ver, ahora dimos a nuestra función un parámetro que llamamos `name`:
 
     def hi(name):
         if name == 'Ola':
@@ -603,7 +603,7 @@ As you can see, we now gave our function a parameter that we called `name`:
     hi()
     
 
-As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
+Como puedes ver, teníamos que poner dos guiones antes de la función `print`, porque `if` necesita saber lo que debe ocurrir cuando se cumple la condición. Vamos a ver cómo funciona:
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -612,36 +612,36 @@ As you can see, we needed to put two indents before the `print` function, becaus
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ops, un error. Por suerte, Python nos da un mensaje de error bastante útil. Nos dice que la función `hi()` tiene un argumento requerido `(name)` y que se nos olvidó pasarlo al llamar a la función. Vamos a arreglarlo en la parte inferior del archivo:
 
     hi("Ola")
     
 
-and run it again:
+y otra vez:
 
     $ python3 python_intro.py
     Hi Ola!
     
 
-And if we change the name?
+¿Y si cambiamos el nombre?
 
     hi("Sonja")
     
 
-and run it:
+y ejecutamos:
 
     $ python3 python_intro.py
     Hi Sonja!
     
 
-Now what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
+Ahora ¿qué crees que pasará si escribes otro nombre allí? (No Ola o Sonja) Prueba y verás si tienes razón. Esto debe imprimir:
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
+Esto es increíble, ¿verdad? Así no tienes que repetirlo cada vez que deseas cambiar el nombre de la persona. Y eso es exactamente por qué necesitamos funciones - para no repetir tu código!
 
-Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
+Vamos a hacer algo más inteligente - hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿no?
 
     def hi(name):
         print('Hi ' + name + '!')
@@ -649,33 +649,33 @@ Let's do something smarter -- there are more names than two, and writing a condi
     hi("Rachel")
     
 
-Let's call the code now:
+Ahora vamos a llamar al código:
 
     $ python3 python_intro.py
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions :)!
+¡Felicidades! Acabas de aprender cómo escribir funciones :)
 
 ## Loops
 
-That's the last part already. That was quick, right? :)
+Ya es la última parte. ¿Eso fue rápido, verdad? :)
 
-As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Como hemos mencionado, los programadores son perezosos, no les gusta repetir. Programación es automatizar las cosas, así que no queremos saludar a cada persona por su nombre manualmente, ¿verdad? Es ahí donde los ciclos son muy útil.
 
-Still remember lists? Let's do a list of girls:
+¿Todavía recuerda las listas? Hagamos una lista de las chicas:
 
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
     
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Queremos saludar a todas ellas por su nombre. Tenemos la función `Hi` que hace eso, así que vamos a usarlo en un ciclo:
 
     for name in girls:
     
 
-The ~~~ for~~~ statement behaves similarly to the ~~~ if~~~ statement, code below both of these need to be indented four spaces.
+La sentencia ~ ~ ~ for ~ ~ ~ se comporta de manera similar a la sentencia ~ ~ ~ if ~ ~ ~, ve el código a continuación ambos necesitan ser ident a cuatro espacios.
 
-Here is the full code that will be in the file:
+Aquí está el código completo que estará en el archivo:
 
     def hi(name):
         print('Hi ' + name + '!')
@@ -686,7 +686,7 @@ Here is the full code that will be in the file:
         print('Next girl')
     
 
-and when we run it:
+y cuando lo eejcutamos:
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -701,15 +701,15 @@ and when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Como puedes ver, se repetirá todo lo que pones dentro de una instrucción `for` con una sangría para cada elemento de la lista de `girls`.
 
-You can also use `for` on numbers using the `range` method:
+También puedes usar `for` en números usando el método `range`:
 
     for i in range(1, 6):
         print(i)
     
 
-Which would print:
+Lo cual imprime:
 
     1
     2
@@ -718,15 +718,15 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` es una función que crea una lista de números en serie (estos números son proporcionados por ti como parámetros).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6).
+Ten en cuenta que la segunda de estas dos cifras no está incluida en la lista que es de salida en Python (significado `range(1, 6)` cuenta desde 1 a 5, pero no incluye el número 6).
 
-## Índice
+## Resumen
 
-That's it. **You totally rock!** This really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it to here!
+Eso es todo. **Eres totalmente genial!** Esto realmente no fue tan fácil, así que deberías sentirte orgullosa de ti misma. Estamos definitivamente orgullosos de que hayas llegado hasta aquí!
 
-Grab yourself a cupcake and go to the next chapter :)
+Agarra un cupcake y vamos al siguiente capítulo :)
 
 ![Cupcake][3]
 

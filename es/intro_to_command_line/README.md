@@ -28,71 +28,70 @@ Esta probablemente en Aplicaciones → Accesorios → Terminal, pero eso depende
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Si estás en Mac o Linux, probablemente veráz `$`, como este:
 
     $
     
 
-On Windows, it's a `>` sign, like this:
+En Windows, es un signo así `>`, como este:
 
     >
     
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you :)
+Cada comando sera antepuesto por este signo y un espacio, pero no tienes que escribirlo. Tu computadora lo hará por ti :)
 
-> Just a small note: in your case there maybe something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
+> Sólo una pequeña nota: en su caso, tal vez hay algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del prompt y eso es 100% correcto. En este tutorial sólo lo hemos simplificado a lo mínimo.
 
-## Your first command (YAY!)
+## Tu primer comando (¡ YAY!)
 
-Let's start with something simple. Type this command:
+Vamos a empezar con algo simple. Escribe este comando:
 
     $ whoami
     
 
-or
+o
 
     > whoami
     
 
-And then hit Enter. This is our result:
+Y luego oprime la tecla Enter. Este es el resultado:
 
-    $ whoami
-    olasitarska
+    $ whoami olasitarska
     
 
-As you can see, the computer just presented you your username. Neat, huh?:)
+Como puedes ver, la computadora sólo te presento su nombre de usuario. Bien, eh? :)
 
-> Try to type each command, do not copy paste. You'll remember more this way!
+> Trato de escribir cada comando, no copiar pegar. Te acordarás de más de esta manera!
 
-## Basics
+## Básicos
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?
 
-### Current directory
+### Directorio actual
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit enter:
+Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este comando y oprime Enter:
 
     $ pwd
-    /Users/olasitarska
+    /usuarios/olasitarska
     
 
-If you're on Windows:
+Si estás en Windows:
 
-    > cd
+    > cd 
     C:\Users\olasitarska
     
 
-You'll probably see something similiar on your machine. Once you open the command line you usually start at your user's home directory.
+Probablemente verás algo similar en tu máquina. Una vez que abres la línea de comandos generalmente empiezan en el directorio home del usuario.
 
-> Note: 'pwd' stands for 'print working directory'.
+> Nota: 'pwd' significa 'mostrar directorio de trabajo'.
 
 * * *
 
-### List files and directories
+### Lista de archivos y directorios
 
-So what's in it? It'd be cool to find out. Let's see:
+¿Qué es? Sería bueno saber. Veamos:
 
     $ ls
     Applications
@@ -105,19 +104,19 @@ So what's in it? It'd be cool to find out. Let's see:
 Windows:
 
     > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR> Applications
+    05/08/2014 07:28 PM <DIR> Desktop
+    05/08/2014 07:28 PM <DIR> Downloads
+    05/08/2014 07:28 PM <DIR> Music
     ...
     
 
 * * *
 
-### Change current directory
+### Cambie el directorio actual
 
-Maybe we can now go to our Desktop directory?
+¿Quizás podemos ir a nuestro directorio de escritorio?
 
     $ cd Desktop
     
@@ -127,27 +126,27 @@ Windows:
     > cd Desktop
     
 
-Check if it's really changed:
+Comprobar si realmente ha cambiado:
 
-    $ pwd
+    $ pwd 
     /Users/olasitarska/Desktop
     
 
 Windows:
 
-    > cd
+    > cd 
     C:\Users\olasitarska\Desktop
     
 
-Here it is!
+¡ Aquí está!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically autofill the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
+> PRO tip: si escribes `cd D` y luego oprimes `tab` en el teclado, la línea de comandos automáticamente Autorrellenara el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta a partir de "D", presiona el botón `tab` dos veces para obtener una lista de opciones.
 
 * * *
 
-### Create directory
+### Crear directorio
 
-How about creating a Django Girls directory on your desktop? You can do it this way:
+¿Cómo crear un directorio de Django Girls en tu escritorio? Puedes hacerlo de esta manera:
 
     $ mkdir djangogirls
     
@@ -157,41 +156,40 @@ Windows:
     > mkdir djangogirls
     
 
-This little command will create a folder with the name `djangogirls` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls`/`dir` command! Try it :)
+Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. Puede comprobar si está allí buscando en tu escritorio o ejecutando un `ls/dir`! Inténtalo :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para recorrer a recientes comandos utilizados.
 
 * * *
 
-### Exercise!
+### Ejercicios!
 
-Small challenge for you: in your newly created `djangogirls` directory create a directory called `test`. Use `cd` and `mkdir` commands.
+Un pequeño reto para ti: en el directorio recién creado `djangogirls` crear un directorio llamado `test`. Utilice los comandos `cd` y `mkdir`.
 
-#### Solution:
+#### Solución:
 
-    $ cd djangogirls
+    $ cd djangogirls 
     $ mkdir test
     $ ls
-    test
     
 
 Windows:
 
-    > cd djangogirls
+    > cd djangogirls 
     > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+    > dir 
+    08/05/2014 19:28 < DIR > test
     
 
-Congrats! :)
+¡ Felicidades! :)
 
 * * *
 
-### Clean up
+### Limpiar
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+No queremos dejar un desorden, así que vamos a eliminar todo lo que hicimos hasta ese momento.
 
-First, we need to get back to Desktop:
+En primer lugar, tenemos que volver al escritorio:
 
     $ cd ..
     
@@ -201,34 +199,34 @@ Windows:
     > cd ..
     
 
-Making `cd` to `..` will change your current directory to the parent directory (which means the directory that contains your current directory).
+Haciendo `cd` `..` cambiará el directorio actual al directorio padre (que significa el directorio que contiene el directorio actual).
 
-Check where you are:
+Revisa dónde estás:
 
-    $ pwd
+    $ pwd 
     /Users/olasitarska/Desktop
     
 
 Windows:
 
-    > cd
+    > cd 
     C:\Users\olasitarska\Desktop
     
 
-Now time to delete the `djangogirls` directory.
+Ahora es hora de eliminar el directorio `djangogirls`.
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *deleted files will be gone forever*! So, be very careful with this command.
+> **Atención**: eliminar archivos utilizando `del`, `rmdir` o `rm` es irrecuperable, lo que significa *archivos borrados desaparecerá para siempre*! Entonces, ser muy cuidadosa con este comando.
 
-    $ rm -r djangogirls
+    $ rm - r djangogirls
     
 
 Windows:
 
-    > rmdir /S djangogirls
-    djangogirls, Are you sure <Y/N>? Y
+    > rmdir/s djangogirls 
+    djangogirls, ¿estás seguro < Y/N >? Y
     
 
-Done! To be sure it's actually deleted, let's check it:
+Hecho! Asegurémonos que en verdad fueron borrados, vamos a ver:
 
     $ ls
     
@@ -238,9 +236,9 @@ Windows:
     > dir
     
 
-### Exit
+### Salida
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, all right?:)
+Eso es todo por ahora! Ahora con seguridad puedes cerrar la línea de comandos. Vamos a hacerlo al estilo hacker, bien? :)
 
     $ exit
     
@@ -250,25 +248,25 @@ Windows:
     > exit
     
 
-Cool, huh?:)
+Bueno, no? :)
 
 ## Índice
 
-Here is a summary of some useful commands:
+Aquí está una lista de algunos comandos útiles:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description             | Example                                           |
-| ----------------- | ------------------------ | ----------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window        | **exit**                                          |
-| cd                | cd                       | change directory        | **cd test**                                       |
-| dir               | ls                       | list directories/files  | **dir**                                           |
-| copy              | cp                       | copy file               | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file               | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory  | **mkdir testdirectory**                           |
-| del               | rm                       | delete a directory/file | **del c:\test\test.txt**                        |
+| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                           |
+| ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
+| exit              | exit                     | cierra la ventana             | **exit**                                          |
+| cd                | cd                       | Cambia el directorio          | **cd test**                                       |
+| dir               | ls                       | lista de directorios/archivos | **dir**                                           |
+| copy              | cp                       | copia el archivo              | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | mueve el archivo              | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | Crea un nuevo directorio      | **mkdir testdirectory**                           |
+| del               | rm                       | elimina un archivo/directorio | **del c:\test\test.txt**                        |
 
-These are just a very few of the commands you can run in your command line but you're not going to use anything more than that today.
+Estos son sólo muy pocos de los comandos en la línea de comandos que puedes utilizar pero no vas a usar algo más hoy.
 
-If you're curious, [ss64.com][1] contains a complete reference of commands for all operating systems.
+Si tienes curiosidad, [ss64.com][1] contiene una referencia completa de comandos para todos los sistemas operativos.
 
  [1]: http://ss64.com
 

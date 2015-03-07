@@ -1,14 +1,14 @@
-# Extendiendo Platinllas
+# Extendiendo Plantillas
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Otra cosa buena que Django tiene para tí es la **extensión de plantillas** ¿Qué significa esto? Significa que puedes usar las mismas partes de tu HTML en diferentes páginas de tu sitio.
 
-This way you don't have to repeat yourself in every file, when you want to use the same information/layout. And if you want to change something, you don't have to do it in every template, just once!
+De esta manera no tienes que repetir lo mismo en cada archivo, cuando quieras usar la misma información/layout. Y si quieres cambiar algo,no tienes que hacerlo en cada plantilla, ¡solo una vez!
 
-## Create base template
+## Creando una plantilla base
 
-A base template is the most basic template that you extend on every page of your website.
+Una plantilla base es la más básica de las plantillas que quieras extender en cada página de tu sitio.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Vamos a crear un archivo `base.html` en `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Luego abrelo y copia todo de `post_list.html` al archivo `base.html`, de la siguiente manera:
 
     {% load staticfiles %}
     <html>
@@ -53,7 +53,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
     </html>
     
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Luego en `base.html`, remplaza completamente tu `<body>` (todo entre `<body>` and `</body>`) con esto:
 
     <body>
         <div class="page-header">
@@ -70,15 +70,15 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
     </body>
     
 
-We basically replaced everything between `{% for post in posts %}{% endfor %}` with:
+Nosotros básicamente remplazamos todo entre `{% for post in posts %}{% endfor %}` con:
 
     {% block content %}
     {% endblock %}
     
 
-What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this block in other templates that extend `base.html`. We will show you how to do this in a moment.
+¿Qué significa esto? Acabas de crear un `block`, el cual es una etiqueta de plantilla que te permite insertar HTML en este bloque en otros templates que extiendan de `base.html`. Te mostraremos como hacer esto en un momento.
 
-Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else other than what's inside the body and then also delete `<div class="page-header"></div>`, so the file will look like this:
+Ahora guardalo, y abre `blog/templates/blog/post_list.html` de nuevo. Elimina todo lo demás que está dentro del body y luego elimina `<div class="page-header"></div>`, de forma que el archivo se vea de la siguiente manera:
 
     {% for post in posts %}
         <div class="post">
@@ -91,12 +91,12 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
     {% endfor %}
     
 
-And now add this line to the beginning of the file:
+Y ahora agrega esta linea al inicio del archivo:
 
     {% extends 'blog/base.html' %}
     
 
-It means that we're now extending the `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:
+Significa que ahora estamos extendiendo del template `base.html` en `post_list.html`. Solo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block content %}` y `{% endblock content %}`. Como esto:
 
     {% extends 'blog/base.html' %}
     
@@ -113,6 +113,6 @@ It means that we're now extending the `base.html` template in `post_list.html`. 
     {% endblock content %}
     
 
-That's it! Check if your website is still working properly :)
+¡Eso es todo! Verifica que tu sitio web aún funcione apropiadamente :)
 
-> If you have an error `TemplateDoesNotExists` that says that there is no `blog/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+C - Control and C buttons together) and restart it by running a `python manage.py runserver` command.
+> Si tienes un error `TemplateDoesNotExists` que diga que no hay un archivo `blog/base.html` y tienes `runserver` ejecutandose en la consola, intenta pararlo (presionando Ctrl+C - Botones Control y C juntos) y reinicialo ejecutando el comando `python manage.py runserver`.

@@ -1,37 +1,37 @@
 # Vistas de Django - es hora de crear!
 
-Time to get rid of the bug we created in the last chapter :)
+Es hora de deshacerse de el error que hemos creado en el último capítulo :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template` that you will create in the next chapter. Views are just Python methods that are a little bit more complicated than the thing we did in the **Introduction to Python** chapter.
+Una *View* es un lugar donde ponemos la «lógica» de nuestra aplicación. Se solicitará información del `model` que se creo anteriormente y pasarlo a una `view` que va a crearse en el próximo capítulo. Las vistas son sólo métodos de Python que son un poco más complicados que lo que hicimos en el capítulo de **Introducción a Python**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Las Vistas se colocan en el archivo `views.py`. Agregaremos nuestras *vistas* al archivo `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+Bien, vamos abrir este archivo y ver lo que contiene:
 
     from django.shortcuts import render
     
     # Create your views here.
     
 
-Not too much stuff here yet. The simplest *view* can look like this.
+No, demasiadas cosas aquí todavía. La simple *view* puede verse como esto:
 
     def post_list(request):
     
         return render(request, 'blog/post_list.html', {})
     
 
-As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a method `render` that will render (put together) our template `blog/post_list.html`.
+Como puedes ver, hemos creado un método (`def`) llamado `post_list` que contiene un `request` y `return` de un método, el `render` se redirigira a nuestra plantilla `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we have got now.
+En seguida, guarde el archivo, y dirígete a tu navegador a http://127.0.0.1:8000 / para ver lo que tenemos ahora.
 
-Another error! Read what's going on now:
+Otro error! Lee lo que está pasando ahora:
 
 ![Error][1]
 
  [1]: images/error.png
 
-This one is easy: *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Esto es fácil: *TemplateDoesNotExist*. Vamos a arreglar este error, creando una plantilla en el siguiente capítulo!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.7/topics/http/views/
+> Aprenda más acerca de las vistas de Django mediante la lectura de la documentación oficial: https://docs.djangoproject.com/en/1.7/topics/http/views/

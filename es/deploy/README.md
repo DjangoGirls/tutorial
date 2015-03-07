@@ -1,63 +1,63 @@
 # Deploy!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Nota** El siguiente capítulo puede ser un poco difícil de seguir a veces. Se persistente y acábalo. El despliegue es una parte importante del proceso en el desarrollo web. Este capítulo está situado a la mitad del tutorial, de esta manera tu mentor puede ayudarte en el proceso de poner tu sitio web en línea. Esto significa que podrás acabar el tutorial por tu cuenta si se te acaba el tiempo.
 
-Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
+Hasta ahora tu sitio web estaba disponible sólo en tu ordenador, ahora aprenderás como desplegarlo! El despliegue es el proceso de publicar tu aplicación en internet para que la gente pueda acceder y ver tu aplicación :).
 
-As you learned, a website has to be located on a server. There are a lot of providers, but we will use the one with the simplest deployment process: [Heroku][1]. Heroku is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
+Como ya has aprendido, un sitio web tiene que estar en un servidor. Hay un montón de proveedores, pero usaremos el que tiene el proceso de despliegue más sencillo: [Heroku][1]. Heroku es gratis para pequeñas aplicaciones que no tienen demasiadas visitas, será más que suficiente por ahora.
 
  [1]: http://heroku.com/
 
-We will be following this tutorial: https://devcenter.heroku.com/articles/getting-started-with-django, but we pasted it here so it's easier for you.
+Seguiremos este tutorial: https://devcenter.heroku.com/articles/getting-started-with-django, pero lo hemos copiado a continuación para que sea más fácil para ti.
 
-## The `requirements.txt` file
+## El fichero `requirements.txt`
 
-We need to create a `requirements.txt` file to tell Heroku what Python packages need to be installed on our server.
+Necesitamos crear un fichero de requisitos `requirements.txt` para decirle a Heroku que paquetes Python necesitan ser instalados en nuestro servidor.
 
-But first, Heroku needs us to install a few packages. Go to your console with `virtualenv` activated and type this:
+Pero primero Heroku necesita que instalemos unos cuantos paquetes. Ves a tu consola con `virtualenv` activado y escribe esto:
 
     (myvenv) $ pip install dj-database-url waitress whitenoise
     
 
-After the installation is finished, go to the `djangogirls` directory and run this command:
+Cuando haya acabado la instalación, ves al directorio `djangogirls` y ejecuta el siguiente comando:
 
     (myvenv) $ pip freeze > requirements.txt
     
 
-This will create a file called `requirements.txt` with a list of your installed packages (i.e. Python libraries that you are using, for example Django :)).
+Esto creará un fichero llamado `requirements.txt` con la lista de los paquetes que tienes instalados (i.e. librerías Python que estés utilizando, por ejemplo Django :)).
 
-> **Note**: `pip freeze` outputs a list of all the Python libraries installed in your virtualenv, and the `>` takes the output of `pip freeze` and puts it into a file. Try running `pip freeze` without the `> requirements.txt` to see what happens!
+> **Nota**: `pip freeze` devuelve una lista de todas las librerías Python instaladas en tu virtualenv y `>` toma la salida de `pip freeze` y la pone en un fichero. Prueba a ejecutar `pip freeze` sin el `> requirements.txt` para ver que pasa!
 
-Open this file and add the following line at the bottom:
+Abre este archivo y añade la siguiente línea al final:
 
     psycopg2==2.5.3
     
 
-This line is needed for your application to work on Heroku.
+Esta línea es necesaria para que tu aplicación funcione en Heroku.
 
 ## Procfile
 
-Another thing we need to create is a Procfile. This will let Heroku know which commands to run in order to start our website. Open up your code editor, create a file called `Procfile` in `djangogirls` directory and add this line:
+Otra cosa que necesitamos crear es un Procfile. Eso ayudará a Heroku a saber que comandos debe ejecutar para poner en marcha nuestro sitio web. Abre tu editor de código, crea un fichero llamado `Procfile` en el directorio `djangogirls` y añade esta línea:
 
     web: waitress-serve --port=$PORT mysite.wsgi:application
     
 
-This line means that we're going to be deploying a `web` application, and we'll do that by running the command `waitress-serve --port=$PORT mysite.wsgi:application` (`waitress-serve` is a program that's like a more powerful version of Django's `runserver` command).
+Esta línea quiere decir que vamos a desplegar una aplicación `web` y para hacerlo ejecutaremos el comando `waitress-serve --port=$PORT mysite.wsgi:application` (`waitress-serve` es un programa que es como una versión más potente que el comando de Django `runserver`).
 
-Then save it. Done!
+Ahora salva los cambios. Hecho!
 
-## The `runtime.txt` file
+## El fichero `runtime.txt`
 
-We need to tell Heroku which Python version we want to use. This is done by creating a `runtime.txt` in the `djangogirls` directory using your editor's "new file" command, and putting the following text (and nothing else!) inside:
+Tenemos que decirle a Heroku que versión de Python queremos utilizar. Esto se hace creando un fichero `runtime.txt` en el directorio `djangogirls` usando el comando de tu editor "new file" y poniendo el siguiente texto (y nada más!) en él:
 
     python-3.4.2
     
 
 ## mysite/local_settings.py
 
-There is a difference between settings we are using locally (on our computer) and settings for our server. Heroku is using one database, and your computer is using a different database. That's why we need to create a seperate file for settings that will only be available for our local enviroment.
+Hay diferencias entre la configuración que utilizamos en local (en nuestro ordenador) y la configuración para nuestro servidor. Heroku utiliza una base de datos y tu ordenador utiliza otra diferente. Por eso necesitamos crear ficheros separados para la configuración de nuestro entorno local.
 
-Go ahead and create `mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/settings.py` file. Just like that:
+Crea el fichero `mysite/local_settings.py`. Debería contener la configuración de la `BASE DE DATOS` de tu fichero `mysite/settings.py`. Simplemente como esto:
 
     import os
     BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -72,11 +72,11 @@ Go ahead and create `mysite/local_settings.py` file. It should contain your `DAT
     DEBUG = True
     
 
-Then just save it! :)
+Ahora guarda los cambios! :)
 
 ## mysite/settings.py
 
-Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines at the end of the file:
+Otra cosa que tenemos que hacer es modificar el fichero `settings.py` de nuestro sitio web. Abre `mysite/settings.py` en tu editor y añade las siguientes líneas al final del fichero:
 
     import dj_database_url
     DATABASES['default'] =  dj_database_url.config()
@@ -90,7 +90,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     DEBUG = False
     
 
-At the end of the `mysite/settings.py`, copy and paste this:
+Al final del fichero `mysite/settings.py`, copia y pega esto:
 
     try:
         from .local_settings import *
@@ -98,42 +98,42 @@ At the end of the `mysite/settings.py`, copy and paste this:
         pass
     
 
-It'll import all of your local settings if the file exists.
+Esto importará tu configuración local si el fichero existe.
 
-Then save the file.
+Ahora guarda los cambios.
 
 ## mysite/wsgi.py
 
-Open the `mysite/wsgi.py` file and add these lines at the end:
+Abre el fichero `mysite/wsgi.py` y añade estas líneas al final:
 
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(application)
     
 
-All right!
+Genial!
 
-## Heroku account
+## Cuenta Heroku
 
-You need to install your Heroku toolbelt which you can find here (you can skip the installation if you've already installed it during setup): https://toolbelt.heroku.com/
+Necesitas instalar Heroku toolbelt, puedes encontrarlo aquí (puedes saltarte la instalación si ya lo has instalado durante la configuración): https://toolbelt.heroku.com/
 
-> When running the Heroku toolbelt installation program on Windows make sure to choose "Custom Installation" when being asked which components to install. In the list of components that shows up after that please additionally check the checkbox in front of "Git and SSH".
+> Cuando estés ejecutando la instalación de Heroku toolbel en Windows asegúrate de escoger la "Instalación personalizada" cuando te pregunte por los componentes que quieres instalar. En la lista de componentes que te aparecerá, selecciona adicionalmente la casilla de "Git and SSH".
 > 
-> On Windows you also must run the following command to add Git and SSH to your command prompt's `PATH`: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Restart the command prompt program afterwards to enable the change.
+> En Windows también debes ejecutar el siguiente comando para añadir Git y SSH a tu ruta `PATH`: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Reinicia la consola de línea de comandos después para que los cambios se hagan efectivos.
 
-Please also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
+Por favor, crea también una cuenta gratis Heroku en: https://id.heroku.com/signup/www-home-top
 
-Then authenticate your Heroku account on your computer by running this command:
+Ahora autentícate en tu cuenta de Heroku en tu ordenador ejecutando el siguiente comando:
 
     $ heroku login
     
 
-In case you don't have an SSH key this command will automatically create one. SSH keys are required to push code to the Heroku.
+En el caso de no tener una clave SSH, este comando creará una automáticamente. Las claves SSH son necesarias para subir el código a Heroku.
 
 ## Git
 
-Git is a version control system used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later. Heroku uses a git repository to manage your project files, so we need to use it too.
+Git es un sistema de control de versiones que usan muchos programadores-software que guarda el registro de cambios en el tiempo de un fichero o un conjunto de ficheros de manera que puedes volver a una versión anterior en el futuro. Heroku utiliza un repositorio git para administrar los ficheros de tus proyectos, así que también tenemos que utilizarlo.
 
-Create a file named `.gitignore` in your `djangogirls` directory with the following content:
+Crea un fichero llamado `.gitignore` en tu directorio `djangogirls` con el siguiente contenido:
 
     myvenv
     __pycache__
@@ -142,13 +142,21 @@ Create a file named `.gitignore` in your `djangogirls` directory with the follow
     db.sqlite3
     
 
-and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
+y guarda los cambios. El punto al principio del nombre del fichero es importante! Como puedes ver, ahora le estamos diciendo a Heroku que ignore el fichero `local_settings.py` y no lo descargue, para que esté disponible solamente en tu ordenador (en local).
 
-Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
+A continuación crearemos un nuevo repositorio git y guardaremos nuestros cambios. Ve a la consola y ejecuta los siguientes comandos:
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git add .
+    $ git config user.name "Your Name"
+    $ git config user.email you@example.com
+    
+
+Solo necesitamos inicializar el repositorio git una única vez por proyecto.
+
+Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comandos:
+
+    $ git add -A .
     $ git commit -m "My Django Girls app"
     [master (root-commit) 2943412] My Django Girls
      7 files changed, 230 insertions(+)
@@ -163,67 +171,67 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
      create mode 100644 runtime.txt
     
 
-## Pick an application name
+## Escoge un nombre de aplicación
 
-We'll be making your blog available on the Web at `[your blog's name].herokuapp.com`, so we need to choose a name that nobody else has taken. This name doesn't need to be related to the Django `blog` app or to `mysite` or anything we've created so far. The name can be anything you want, but Heroku is quite strict as to what characters you can use: you're only allowed to use simple lowercase letters (no capital letters or accents), numbers, and dashes (`-`).
+Tu blog estará disponible en la Web en `[el nombre de tu blog].herokuapp.com`, así que necesitas escoger un nombre que nadie haya cogido anteriormente. Este nombre no tiene porque estar relacionado con la aplicación `blog` de Django ni con `mysite` ni con nada de lo que hemos creado anteriormente. El nombre puede ser el que tu quieras, pero Heroku es un poco estricto en cuanto a los caracteres que puedes utilizar: solo puedes usar caracteres simples en minúscula (ni mayúsculas ni acentos) números y guiones (`-`).
 
-Once you've thought of a name (maybe something with your name or nickname in it), run this command, replacing `djangogirlsblog` with your own application name:
+Una vez hayas pensado en un nombre (quizás algo con tu nombre o tu alias), ejecuta este comando, remplazando `djangogirlsblog` con el nombre de tu aplicación:
 
     $ heroku create djangogirlsblog
     
 
-> **Note**: Remember to replace `djangogirlsblog` with the name of your application on Heroku.
+> **Nota**: Recuerda que tienes que reemplazar `djangogirlsblog` con el nombre de tu aplicación en Heroku.
 
-If you can't think of a name, you can instead run
+Si no se te ocurre ningún nombre, puedes ejecutar
 
     $ heroku create
     
 
-and Heroku will pick an unused name for you (probably something like `enigmatic-cove-2527`).
+y Heroku escogerá un nombre para ti (probablemente algo como `enigmatic-cove-2527`).
 
-If you ever feel like changing the name of your Heroku application, you can do so at any time with this command (replace `the-new-name` with the new name you want to use):
+Si en algún momento quisieras cambiar el nombre de tu aplicación Heroku, puedes hacerlo ejecutando el siguiente comando (reemplazando `tu-nuevo-nombre` por el nuevo nombre que quieras utilizar):
 
-    $ heroku apps:rename the-new-name
+    $ heroku apps:rename tu-nuevo-nombre
     
 
-> **Note**: Remember that after you change your application's name, you'll need to visit `[the new name].herokuapp.com` to see your site.
+> **Nota**: Recuerda que después de haber cambiado el nombre de tu aplicación, tienes que acceder `el nuevo nombre].herokuapp.com` para ver tu sitio web.
 
-## Deploy to Heroku!
+## Despliegue en Heroku!
 
-That was a lot of configuration and installing, right? But you only need to do that once! Now you can deploy!
+Hemos hecho un montón de configuración e instalación, verdad? Pero sólo tienes que hacer esto una única vez! Ahora ya puedes hacer el depliegue!
 
-When you ran `heroku create`, it automatically added the Heroku remote for our app to our repository. Now we can do a simple git push to deploy our application:
+Cuando ejecutaste `heroku create`, automáticamente se añadió el Heroku remoto para nuestra aplicación a nuestro repositorio. Ahora podemos hacer un simple <0>git push</0> para desplegar nuestra aplicación:
 
     $ git push heroku master
     
 
-> **Note**: This will probably produce a *lot* of output the first time you run it, as Heroku compiles and installs psycopg. You'll know it's succeeded if you see something like `https://yourapplicationname.herokuapp.com/ deployed to Heroku` near the end of the output.
+> **Nota**: Esto probablemente producirá una salida *muy larga* la primera vez, porque Heroku compila e instala psycopg. Sabrás que todo ha ido bien si ves algo como `https://elnombre detuaplicacion.herokuapp.com/ deployed to Heroku` hacia el final de la salida.
 
-## Visit your application
+## Accede a tu aplicación
 
-You’ve deployed your code to Heroku, and specified the process types in a `Procfile` (we chose a `web` process type earlier). We can now tell Heroku to start this `web process`.
+Ya has desplegado tu código en Heroku y has especificado el tipo de proceso en un `Procfile` (especificamos un proces de tipo `web` anteriormente). Ahora ya podemos decirle a Heroku que inicie este `proceso web`.
 
-To do that, run the following command:
+Para hacer esto, ejecuta el siguiente comando:
 
     $ heroku ps:scale web=1
     
 
-This tells Heroku to run just one instance of our `web` process. Since our blog application is quite simple, we don't need too much power and so it's fine to run just one process. It's possible to ask Heroku to run more processes (by the way, Heroku calls these processes "Dynos" so don't be surprised if you see this term) but it will no longer be free.
+Esto le dice a Heroku que ejecute sólo una instancia de nuestro proceso `web`. Como la aplicación de nuestro blog es bastante sencilla, no necesitamos demasiado así que es suficiente ejecutar un solo proceso. Es posible decirle a Heroku que ejecute más procesos (por cierto, Heroku llama a estos procesos "Dynos" así que no te sorprendas si ves este término) pero entonces ya no será gratis.
 
-We can now visit the app in our browser with `heroku open`.
+Ahora podemos acceder a la aplicación en nuestro navegador con `heroku open`.
 
     $ heroku open
     
 
-> **Note**: you will see an error page! We'll talk about that in a minute
+> **Nota**: Verás una página de error! Hablaremos de esto en seguida
 
-This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser, and at the moment you will probably see an error page. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
+Esto abrirá una url como [https://djangogirlsblog.herokuapp.com/]() en tu navegador y probablemente verás una página de error. Como de momento sólo hemos creado la vista de administración para la aplicación, añade `admin/` a la url (i.e. [https://djangogirlsblog.herokuapp.com/admin/]()) para poder ver una versión de tu aplicación web funcionando.
 
-The error you saw was because we when we deployed to Heroku, we created a new database and it's empty. We need to run the ~~~ migrate~~~ command like we did when we first started our project to set our database up properly:
+El error que veías era debido a que cuando desplegamos en Heroku creamos una nueva base de dados y ésta está vacía. Necesitamos ejecutar el comando ~~~ migrate~~~ como hicimos cuando empezamos nuestro proyecto para configurar nuestra base de datos correctamente:
 
     $ heroku run python manage.py migrate
     
     $ heroku run python manage.py createsuperuser
     
 
-You should now be able to see your website in a browser! Congrats :)!
+Ahora deberías poder acceder a tu sitio web desde el navegador! Felicidades :)!

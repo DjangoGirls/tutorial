@@ -1,54 +1,54 @@
-# Let’s start with Python
+# Vamos a empezar con Python
 
-We're finally here!
+Por fin estamos aquí!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics and much, much more.
+Pero primero, déjenos decirte qué es Python. Python es un lenguaje de programación muy popular que puede utilizarse para la creación de sitios web, juegos, software de cálculo, gráficos y mucho más.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry, Python is also really powerful!
+Python se originó en la década de 1980 y su objetivo principal es ser legible por los seres humanos (no sólo las máquinas!), por eso parece mucho más simple que otros lenguajes de programación. Esto lo hace fácil de aprender, pero no te preocupes, Python es también muy poderoso!
 
 # Instalación de Python
 
-> This subchapter is based on a tutorial by Geek Girls Carrots (http://django.carrots.pl/)
+> Este subcapítulo se basa en un tutorial de Geek Girls Carrots (http://django.carrots.pl/)
 
-Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
+Django está escrito en Python. Necesitamos Python para cualquier cosa en Django. Vamos a empezar con la instalación! Queremos que instales Python 3.4, así que si tienes alguna versión anterior, deberás actualizarla.
 
 ### Windows
 
-You can download Python for Windows from the website https://www.python.org/downloads/release/python-342/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
+Puedes descargar Python para Windows desde el sitio web https://www.python.org/downloads/release/python-342/. Después de descargar el archivo ***.msi**, debes ejecutarlo (has doble clic en el archivo) y sige las instrucciones. Es importante recordar el camino (el directorio) donde se ha instalado Python. Será necesario más adelante!
 
 ### Linux
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Es muy probable que ya tengas Python instalado. Para verificar si lo tienes (y que versión es), abrir la consola y escribe el siguiente comando:
 
     $ python3 --version
     Python 3.4.2
     
 
-If you don't have Python installed or if you want a different version, you can install it as follows:
+Si no tienes instalado Python o si deseas una versión diferente, se puede instalar de la siguiente manera:
 
 #### Ubuntu
 
-Type this command into your console:
+Escribe este comando en la consola:
 
     sudo apt-get install python3.4
     
 
 #### Fedora
 
-Use this command in your console:
+Usa este comando en la consola:
 
     sudo yum install python3.4
     
 
 ### OS X
 
-You need to go to the website https://www.python.org/downloads/release/python-342/ and download the Python installer:
+Tienes que ir a la página web https://www.python.org/downloads/release/python-342/ y descargar al instalador de Python:
 
-*   download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
-*   double click to open it,
-*   double click *Python.mpkg* to run the installer.
+*   descarga el archivo *DMG* titulado *Mac OS X 64-bit/32-bit installer*,
+*   has doble click para abrirlo,
+*   Doble click en *Python.mpkg* para ejecutar al instalador.
 
-Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
+Verifica que la instalación se realizó correctamente abriendo la aplicación *Terminal* y ejecutando el comando `python3`:
 
     $ python3 --version
     Python 3.4.2
@@ -56,4 +56,4 @@ Verify the installation was successful by opening the *Terminal* application and
 
 * * *
 
-If you have any doubts or if something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help from someone with more experience.
+Si tienes alguna duda o si algo salió mal y no tienes ni idea de qué hacer - por favor, preguntale a tu coach! A veces las cosas no van bien y que es mejor pedir ayuda a alguien con más experiencia.

@@ -1,10 +1,10 @@
 # Índice
 
 *   [Introducción][1]
-*   [Cómo funciona internet][2]
+*   [Cómo funciona el internet][2]
 *   [Introducción a la línea de comandos][3]
 *   [Instalación de Python][4]
-*   [El editor de código][5]
+*   [Editor de código][5]
 *   [Introducción a Python][6]
 *   [¿Qué es Django?][7]
 *   [Instalación de Django][8]
@@ -19,7 +19,7 @@
 *   [Datos dinámicos en plantillas][17]
 *   [Plantillas de Django][18]
 *   [CSS - Hazlo bonito][19]
-*   [Extendiendo Platinllas][20]
+*   [Extendiendo plantillas][20]
 *   [Extiende tu aplicación][21]
 *   [Formularios en Django][22]
 *   [Dominio][23]

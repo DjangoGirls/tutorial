@@ -1,34 +1,34 @@
-# Your first Django project!
+# Tu primer proyecto en Django!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
+> Parte de este capitulo esta basado en los tutoriales de Geek Girls Carrots (http://django.carrots.pl/).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial][1] licensed under Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Parte de este capítulo se basa en el [django-marcador tutorial][1] bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
  [1]: http://django-marcador.keimlink.de/
 
-We're going to create a simple blog!
+Vamos a crear un simple blog!
 
-The first step towards creating it is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us: a bunch of directories and files that we will later use.
+El primer paso para crearlo es para iniciar un nuevo proyecto en Django. Básicamente, esto significa que podrás correr algunos scripts proporcionados por Django que creará el esqueleto de un proyecto para nosotros: un montón de directorios y archivos que vamos a utilizar más adelante.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
+Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es una buena idea. Django tiene que mantener una cierta estructura para ser capaz de encontrar cosas importantes.
 
-In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
+En la consola debe ejecutar (Recuerde de no escribir `(myvenv) ~/djangogirls$`, OK?):
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part.
+> Recuerde correr to en el entorno virtual. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **instalación de Django** en el capitulo **Trabajando con virtualenv**.
 
-Run on Windows:
+Ejecutar en Windows:
 
     (myvenv) ~/djangogirls$ python myvenv\Scripts\django-admin.py startproject mysite .
     
 
-or on Linux or Mac OS:
+o en Linux o Mac OS:
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> **Note** Double-check that you included the period (`.`) at the end of the command, it's important.
+> **Nota** Verifica que incluiste el punto (`.`) al final del comando, es importante.
 
-`django-admin` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin` es un script que creará los archivos y directorios para ti. Ahora debes tener un directorio de la estructura que se parece a esto:
 
     djangogirls
     ├───manage.py
@@ -39,31 +39,31 @@ or on Linux or Mac OS:
             __init__.py
     
 
-`manage.py` is a script that helps with management of the site. With it we will be able to start a web server on our computer without installing anything else, amongst other things.
+`manage.py` es un script que ayuda con la administración del sitio. Con ello podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada, entre otras cosas.
 
-The `settings.py` file contains the configuration of your website.
+El archivo `settings.py` contiene la configuración de tu sitio Web.
 
-Remember when we talked about a postman checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+¿Recuerdas cuando hablamos de un cartero que debía comprobar donde entregar una carta? `URLs.py` contiene una lista de los patrones utilizados por `urlresolver`.
 
-Let's ignore the other files for now - we won't change them. The only thing to remember is not to delete them by accident!
+Ignoremos los otros archivos por ahora - no los cambiaremos. Lo único que debes recordar es no borrarlos por accidente!
 
-## Changing settings
+## Cambiando la configuración
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Vamos a hacer algunos cambios en `mysite/settings.py`. Abre el archivo usando el editor de código que has instalado anteriormente.
 
-It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
+Sería bueno tener la hora correcta en nuestra página web. Vaya a http://en.wikipedia.org/wiki/List_of_tz_database_time_zones y copia tu zona horaria correspondiente (TZ). (eg. `Europe/Berlin`)
 
-You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this, substituting `Europe/Berlin` with your relevant time zone:
+Encuentra las líneas que contienen `USE_TZ` y `TIME_ZONE` y modificalas para parecerse a esto, sustituyendo `Europe/Berlin` con tu zona horaria correspondiente:
 
     USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
     
 
-## Setup a database
+## Configurar una base de datos
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Hay un montón de software de base de datos diferente que puede almacenar datos para tu sitio. Utilizaremos uno por defecto, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Este ya está configurado en esta parte del archivo `mysite/settings.py`:
 
     DATABASES = {
         'default': {
@@ -73,7 +73,7 @@ This is already set up in this part of your `mysite/settings.py` file:
     }
     
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Para crear una base de datos para nuestro blog, hagamos lo siguiente en la consola: `python manage.py migrate` (tenemos que estar en el directorio `djangogirls` que contiene el archivo `manage.py`). Si todo va bien, deberías ver algo como esto:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -85,24 +85,24 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Y terminamos! Tiempo para iniciar el servidor web y ver si está funcionando nuestro sitio web!
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Tienes que estar en el directorio que contiene el archivo `manage.py` (el directorio `djangogirls`). En la consola, podemos empezar el servidor web mediante la ejecución de `python manage.py runserver`:
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Now all you need to do is check that your website is running - open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
+Ahora todo lo que necesitas hacer es verificar que tu sitio web esté ejecutándose - abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o lo que utilices) e introduce la dirección:
 
     http://127.0.0.1:8000/
     
 
-The web server will take over your command prompt until you stop it: to type more commands either open a new terminal window (and don't forget to activate your virtualenv in it too), or stop the web server by switching back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
+El servidor web se encargará de su terminal de comando hasta detenerlo: para escribir más comandos abre una nueva ventana de terminal (y no te olvides de activar tu virtualenv en él también), o detener el servidor web y presionar CTRL + C - (en Windows, tendrás que presione Ctrl+Inter).
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+¡Felicidades! Has creado tu primer sitio web y ejecutado un servidor web. ¿No es genial?
 
-![It worked!][2]
+![¡Funcionó!][2]
 
  [2]: images/it_worked2.png
 
-Ready for the next step? It's time to create some content!
+¿Listo para el siguiente paso? Es hora de crear algo de contenido!

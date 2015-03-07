@@ -4,7 +4,7 @@
 
  [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-> Este trabajo esta licenciado bajo la licencia internacional Creative Commons Attribution-ShareAlike 4.0. Para ver una copia de esta licencia, visitar el siguiente enlace http://creativecommons.org/licenses/by-sa/4.0/
+> Este trabajo esta licenciado bajo la licencia internacional Creative Commons Attribution-ShareAlike 4.0. Para ver una copia de esta licencia, visita el siguiente enlace http://creativecommons.org/licenses/by-sa/4.0/
 
 ## Introducción
 
@@ -12,9 +12,9 @@
 
 Bueno, Tenemos buenas noticias para ti! programar no es tan difícil como aparenta y queremos mostrarte cuán divertido que puede llegar a ser.
 
-Este tutorial no convertirá mágicamente en un programador. Sí quieres ser bueno en eso, necesitaras meses o inclusos años de aprendizaje y práctica. sin embargo queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicarte en pequeñas partes tan bien como podamos, para que no te sientas intimidado por la tecnología.
+Este tutorial no convertirá mágicamente en un programador. Sí quieres ser buena en eso, necesitaras meses o inclusos años de aprendizaje y práctica. sin embargo queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicarte en pequeñas partes tan bien como podamos, para que no te sientas intimidada por la tecnología.
 
-¡Esperamos poder hacerte amar la tecnología tanto como nosotros lo hacemos!
+¡Esperamos poder hacerte amar la tecnología tanto como nosotras lo hacemos!
 
 ## ¿Qué aprenderás con este tutorial?
 
@@ -26,7 +26,7 @@ se verá (más o menos) como ésta:
 
  [2]: images/application.png
 
-> Sí estás siguiendo este tutorial por tu cuenta y no tienes nadie que te ayude en caso de surgir algún problema, nosotros tenemos un chat para ti:[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. ¡Varios nuestros mentores y quienes ya han terminado el tutorial siempre pasan por ahí para ayudar a quien lo necesite con sus dudas e inquietudes! ¡No dudes dejar tus preguntas allí!
+> Sí estás siguiendo este tutorial por tu cuenta y no tienes nadie que te ayude a resolver algún problema, tenemos un chat para ti:[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. ¡Hemos pedido a nuestros coaches y asistentes anteriores estar ahi de vez en cuando para ayudar a otros con el tutorial! ¡No dudes dejar tus preguntas allí!
 
 Esta bien, [empecemos desde el inicio...][3]
 

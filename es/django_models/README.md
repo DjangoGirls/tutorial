@@ -136,24 +136,24 @@ Todas las líneas a partir `from` o de `import` son líneas para añadir algo de
 *   `Post` Es el nombre de nuestro modelo, podemos darle un nombre diferente(pero debemos evitar espacios en blanco y caracteres especiales). Una clase siempre comienza con su primera letra en mayúscula.
 *   `models.Model` Significa que Post es un modelo de Django, así Django sabe que debe guardarlo en la base de datos.
 
-Now we define properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. Para hacer eso tenemos que definir un tipo de campo (¿es texto? ¿Un número? ¿Una fecha? Una relación con otro objeto, es decir, un usuario?).
+Ahora definimos las propiedades que hablábamos: `title`, `text`, `created_date`, `published_date` y `author`. Para hacer eso tenemos que definir un tipo de campo (¿es texto? ¿Un número? ¿Una fecha? Una relación con otro objeto, es decir, un usuario?).
 
 *   `models.CharField` - esto es como defines un texto con un numero limitado de caracteres.
 *   `modelos.TextField`-esto es para textos largos sin un límite. ¿Será ideal para un blog post contenido, verdad?
 *   `models.DateTimeField` - esta es la fecha y hora.
 *   `modelos.ForeignKey`-este es una relación a otro modelo.
 
-No vamos a explicar cada pedacito de código, ya que nos tomaría demasiado tiempo. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
+No vamos a explicar cada pedacito de código, ya que nos tomaría demasiado tiempo. Debes echar un vistazo a la documentación de Django. Si quieres saber más sobre los campos de Modelos y cómo definir cosas diferentes a las descritas anteriormente (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
 
-What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is the name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
+¿Y qué sobre `def publish(self):`? Es exactamenteel método `publish` del que hablábamos antes. `def` significa que se trata de una función o método. `publish` es el nombre del método. Puedes cambiarlo, si quieres. La regla es que usamos minúscula y guiones bajos en lugar de espacios (es decir, si quieres tener un método que calcule el precio medio, este podría llamarse `calculate_average_price`).
 
-Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Los métodos muy a menudo `devuelven` algo. Hay un ejemplo de esto en el método `__str__`. En este escenario, cuando llamamos a `__str__()` obtendremos un texto (**string**) con un título de Post.
 
-If something is still not clear about models, feel free to ask your coach! We know it is very complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Si algo todavía no está claro sobre modelos, ¡no dudes en preguntar a tu tutor! Sabemos que es muy complicado, sobre todo cuando estás entendiendo qué funciones y objetos son mientras sigues este documento. Con suerte, ¡todo tiene un poco más sentido para ti ahora!
 
-### Create tables for models in your database
+### Crear tablas para los modelos en tu base de datos
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it), type `python manage.py makemigrations blog`. It will look like this:
+El último paso es añadir nuestro nuevo modelo a nuestra base de datos. Primero tenemos que hacer Django sepa que tenemos algunos cambios en nuestro modelo (acabamos de crearlo), escribe `python manage.py makemigrations blog`. Se verá así:
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
@@ -161,7 +161,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-Django prepared for us a migration file that we have to apply now to our database, type `python manage.py migrate blog`, the output should be:
+Django nos prepara un archivo de migración que tenemos que aplicar ahora a nuestra base de datos, escribe `python manage.py migrate blog`, el resultado debe ser:
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
@@ -170,4 +170,4 @@ Django prepared for us a migration file that we have to apply now to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database, it would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+¡ Hurra! Nuestro modelo de Post está ahora en nuestra base de datos, sería bueno verlo, ¿no? Dirígete al siguiente capítulo para ver cómo luce tu Post!

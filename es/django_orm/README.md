@@ -1,31 +1,31 @@
-# Django ORM and QuerySets
+# ORM de Django y QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+En este capítulo aprenderás cómo Django se conecta a la base de datos y almacena los datos en ella. ¡Vamos a sumergirnos!
 
-## What is a QuerySet?
+## ¿Qué es un QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySet allows you to read the data from database, filter it and order it.
+Un QuerySet es, en esencia, una lista de objetos de un modelo determinado. Un QuerySet te permite leer los datos de base de datos, filtrarlos y ordenarlos.
 
-It's easiest to learn by example. Let's try this, shall we?
+Es más fácil de aprender con ejemplos. Vamos a intentarlo, ¿de acuerdo?
 
 ## Django shell
 
-Open up your console and type this command:
+Abre la consola y escribe este comando:
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+El resultado debería ser:
 
     (InteractiveConsole)
     >>>
     
 
-You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :). You can use all the Python commands here too, of course.
+Ahora estás en la consola interactiva de Django. Es como la consola de Python, pero con un toque de magia Django :). Puedes utilizar todos los comandos Python aquí también, por supuesto.
 
-### All objects
+### Ver todos los objetos
 
-Let's try to display all of our posts first. You can do that with the following command:
+Vamos a mostrar todos nuestros objetos Posts primero. Puedes hacerlo con el siguiente comando:
 
     >>> Post.objects.all()
     Traceback (most recent call last):
@@ -33,126 +33,126 @@ Let's try to display all of our posts first. You can do that with the following 
     NameError: name 'Post' is not defined
     
 
-Oops! An error showed up. It tells us that there is no Post. It's correct -- we forgot to import it first!
+¡ Uy! Apareció un error. Nos dice que no hay ningún objeto Post. Esto es correcto, nos olvidamos de importarlo primero!
 
     >>> from blog.models import Post
     
 
-This is simple: we import model `Post` from `blog.models`. Let's try displaying all posts again:
+Esto es simple: importamos el modelo `Post` de `blog.models`. Vamos a intentar mostrar todos los Posts nuevamente:
 
     >>> Post.objects.all()
     []
     
 
-It's an empty list. That seems to be correct, right? We didn't add any posts yet! Let's fix that.
+Es una lista vacía. Esto es correcto, ¿verdad?¡Todavía no hemos añadido ningún Post! Vamos a arreglarlo.
 
-### Create object
+### Crear objetos
 
-This is how you create a Post object in database:
+Esta es la forma de crear un objeto Post en la base de datos:
 
-    >>> Post.objects.create(author=user, title='Sample title', text='Test')
+    >>> Post.objects.create(author=me, title='Sample title', text='Test')
     
 
-But we have one missing ingredient here: `user`. We need to pass an instance of `User` model as an author. How to do that?
+Pero hay un ingrediente faltante: `me`. Necesitamos pasar una instancia del modelo `User` como autor. ¿Cómo hacemos eso?
 
-Let's import User model first:
+Primero importemos el modelo User:
 
     >>> from django.contrib.auth.models import User
     
 
-What users do we have in our database? Try this:
+¿Qué usuarios tenemos en nuestra base de datos? Veamos:
 
     >>> User.objects.all()
     []
     
 
-No users! Let's create a user:
+¡Ninguno! Creemos un usuario:
 
     >>> User.objects.create(username='ola')
     <User: ola>
     
 
-What users do we now have in our database? Try this:
+Veamos nuevamente qué usuarios tenemos:
 
     >>> User.objects.all()
     [<User: ola>]
     
 
-Cool! Let's get an instance of the user now:
+¡ Genial! Ahora usemos una instancia del usuario:
 
-    user = User.objects.get(username='ola')
+    me = User.objects.get(username='ola')
     
 
-As you can see, we now `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
+Como puedes ver, ahora `get` un `User` con un `username` que es igual a 'ola'. Limpio! Por supuesto, tienes que ajustarlo a tu nombre de usuario.
 
-Now we can finally create our first post:
+Ahora por fin podemos crear nuestro primer post:
 
-    >>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
+    >>> Post.objects.create(author = me, title = 'Titulo simple', text = 'Test')
     
 
-Hurray! Wanna check if it worked?
+¡Hurra! ¿Quieres comprobar si ha funcionado?
 
     >>> Post.objects.all()
-    [<Post: Sample title>]
+    [<Post: Título simple>]
     
 
-### Add more posts
+### Agrega más posts
 
-You can now have a little fun and add more posts to see how it works. Add 2-3 more and go ahead to the next part.
+Ahora puedes divertirte un poco y añadir más posts para ver cómo funciona. Añade 2 - 3 más y avanzar a la siguiente parte.
 
-### Filter objects
+### Filtrar Objetos
 
-A big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `user`. The way to write it in Django is: `author=user`. Now our piece of code looks like this:
+En gran parte los QuerySets tienen la habilidad de filtrar. Digamos que queremos encontrar todos los mensajes que son escritos por el usuario ola. Utilizaremos el `filter` en lugar de `all` en `Post.objects.all()`. Entre paréntesis indicará qué condición(es) debe coincidir por una entrada de blog en nuestro queryset. En nuestra situación es `author` que es igual a `me`. La manera de escribirlo en Django es: `author = me`. Ahora nuestro código tiene este aspecto:
 
-    >>> Post.objects.filter(author=user)
+    >>> Post.objects.filter(author=me)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
     
 
-Or maybe we want to see all the posts that contain a word 'title' in the `title` field?
+¿O tal vez queremos ver todos los mensajes que contienen una palabra 'título' en el campo `title`?
 
     >>> Post.objects.filter(title__contains='title')
     [<Post: Sample title>, <Post: 4th title of post>]
     
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this syntax to separate field names ("title") and operations or filters ("contains"). If you only use one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Nota** Hay dos caracteres de subrayado (`_`) entre el `title` y `contains`. Django ORM utiliza esta sintaxis para separar los nombres de campo ("title") y operaciones o filtros ("contains"). Si sólo utilizas un carácter de subrayado, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do it by filtering all the posts that have `published_date`:
+También puedes obtener una lista de todos los mensajes publicados. Lo hacemos filtrando todos los post que tienen `published_date`:
 
     >>> Post.objects.filter(published_date__isnull=False)
     []
     
 
-Unfortunately, none of our posts are published yet. We can change that! First get an instance of a post we want to publish:
+Lamentablemente, ninguno de nuestros mensajes son publicado todavía. Podemos cambiar eso. Primero obtener una instancia de un post que queremos publicar:
 
     >>> post = Post.objects.get(id=1)
     
 
-And then publish it with our `publish` method!
+Y luego publicarlo con nuestro método de `publish`!
 
     >>> post.publish()
     
 
-Now try to get list of published posts again (press the up arrow button 3 times and hit Enter):
+Ahora intenta obtener lista de mensajes publicados otra vez (presiona 3 veces el botón de la flecha hacia arriba y pulse Enter):
 
     >>> Post.objects.filter(published_date__isnull=False)
     [<Post: Sample title>]
     
 
-### Ordering objects
+### Ordenando Objetos
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Los QuerySets también permite ordenar la lista de objetos. Tratemos de pedirlos por `created_date` :
 
     >>> Post.objects.order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
     
 
-We can also reverse the ordering by adding `-` at the beginning:
+También podemos invertir el orden agregando `–` al principio:
 
     >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
     
 
-Cool! You're now ready for the next part! To close the shell, type this:
+¡Genial! Ahora estás listo para la siguiente parte! Para cerrar el shell, escribe esto:
 
     >>> exit()
     $

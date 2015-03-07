@@ -1,8 +1,8 @@
 # Administrador de Django
 
-To add, edit and delete posts we've just modeled, we will use Django admin.
+Para agregar, editar y borrar los mensajes que hemos modelamos, utilizaremos el administrador de Django.
 
-Let's open the `blog/admin.py` file and replace its content with this:
+Vamos a abrir el archivo `blog/admin.py` y reemplazar su contenido con esto:
 
     from django.contrib import admin
     from .models import Post
@@ -10,20 +10,20 @@ Let's open the `blog/admin.py` file and replace its content with this:
     admin.site.register(Post)
     
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Como puedes ver, importamos (incluimos) el modelo Post definido en el capítulo anterior. Para hacer nuestro modelo visible en la página del administrador, tenemos que registrar el modelo con `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to the browser and type the address:
+Es hora de mirar a nuestro modelo de Post. Recuerde que debe ejecutar `python manage.py runserver` en la consola para ejecutar el servidor web. Vaya al navegador y escriba la dirección:
 
     http://127.0.0.1:8000/admin/
     
 
-You will see a login page like this:
+Usted verá una página de inicio de sesión como esta:
 
-![Login page][1]
+![Página de inicio de sesión][1]
 
  [1]: images/login_page2.png
 
-In order to log in you need to create a *superuser* - a user which has control over everything on the site. Go back to you command-line and type `python manage.py createsuperuser`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. The output should look like this (where username and email should be your own ones):
+Para poder entrar necesitas crear un *superusuario* - un usuario que tiene control sobre todo en el sitio. Vuelve a la línea de comandos y escribe `python manage.py createsuperuser`, presione enter y escriba su nombre de usuario (en minúscula, sin espacios), dirección de correo electrónico y contraseña cuando te pregunten por ellos. La salida debe ser así (donde nombre de usuario y correo electrónico deben ser los tuyos):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
@@ -33,20 +33,20 @@ In order to log in you need to create a *superuser* - a user which has control o
     Superuser created successfully.
     
 
-Return to your browser and log in with the superuser's credentials you chose, you should see the Django admin dashboard.
+Regresa a tu navegador e inicia sesión con las credenciales de superusuario que elegiste, deberías ver el tablero de administración de Django.
 
 ![Administrador de Django][2]
 
  [2]: images/django_admin3.png
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content - you can simply copy-paste some text from this tutorial as your posts' content to save time :).
+Ve a Posts y experimentar un poco con él. Agrega cinco o seis entradas en el blog. No te preocupes por el contenido - puedes simplemente copiar y pegar algún texto de este tutorial como contenido de tus mensajes para ahorrar tiempo :).
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Asegúrate que al menos dos o tres entradas (pero no todas) tengan la fecha de publicación. Será de ayuda más tarde.
 
 ![Administrador de Django][3]
 
  [3]: images/edit_post3.png
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.7/ref/contrib/admin/
+Sí quieres sabes más sobre Django admin, deberías revisar la documentación de Django: https://docs.djangoproject.com/en/1.7/ref/contrib/admin/
 
-It is probably a good moment to grab a coffee (or tea) and eat something sweet. You created your first Django model - you deserve a little treat!
+Probablemente sea un buen momento para tomar un café (o té) y comer algo dulce. Haz creado tu primer modelo Django - te mereces un regalito!

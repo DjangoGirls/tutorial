@@ -1,72 +1,60 @@
 # Plantillas de Django
 
-Time to display some data! Django gives us some helpful, built-in **template tags** for that.
+Es hora de mostrar algunos datos! Django nos da algo de ayuda, construyendo **template tags** para ello.
 
-## What are template tags?
+## ¿Qué son las etiquetas de plantilla?
 
-You see, in HTML, you can't really put Python code, because browsers don't understand it. They only know HTML. We know that HTML is rather static, while Python is much more dynamic.
+Verás en HTML, no puedes realmente poner código Python, porque los navegadores no lo entienden. Ellos sólo saben HTML. Sabemos que HTML es algo estático, mientras que Python es mucho más dinámico.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Yikes!
+**Etiquetas de plantilla Django** nos permiten transferir Python-como cosas en HTML, así que usted puede construir sitios web dinámicos más rápido y fácil. ¡ Huy!
 
-## Display post list template
+## Plantillas de listas de Post
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+En el capítulo anteriordimos a nuestra plantilla una lista de posts en la variable `posts`. Ahora lo mostraremos en HTML.
 
-To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
+Para imprimir una variable en la plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
 
     {{ posts }}
     
 
-Try this in your `blog/templates/blog/post_list.html` template (replace everything between the second `<div></div>` tags with `{{ posts }}` line), save the file and refresh the page to see the results:
+Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza todo entre la segunda etiqueta `<div></div>` con `{{ posts }}`), guarda el archivo y actualiza la página para ver el resultado:
 
-![Figure 13.1][1]
+![Figura 13.1][1]
 
  [1]: images/step1.png
 
-As you can see, all we've got is this:
+Como puedes ver, todo lo que obtenemos es esto:
 
-    [<Post: My second post>, <Post: My first post>]
+    [< post: mi segundo post >, < Post: mi primer post >]
     
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
+Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python,** ¿cómo podemos mostrar listas? Sí, con el ciclo for! En una plantilla de Django, los haces de esta manera:
 
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+    {% for post in posts %} {{ post }}{% endfor %}
     
 
-Try this in your template.
+Pruebe esto en tu plantilla.
 
-![Figure 13.2][2]
+![Figura 13.2][2]
 
  [2]: images/step2.png
 
-It works! But we want them to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+¡ Funciona! Pero queremos que se muestre como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
 
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+    < div >< h1 >< a href = "/" > Django chicas Blog < /a >< / h1 >< / div >{% for post in posts %} < div >< p > publicado: {{ post.published_date }} < /p >< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >< p >{{ post.text|linebreaks }} < /p >< / div >{% endfor %}
     
 
-Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:
+Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualizar la página:
 
-![Figure 13.3][3]
+![Figura 13.3][3]
 
  [3]: images/step3.png
 
-Have you noticed that we used a slightly different notation this time `{{ post.title }}` or `{{ post.text }}`? We are accessing data in each of the fields defined in our `Post` model. Also the `|linebreaks` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+¿Has notado que utilizamos una notación diferente esta vez `{{ post.title }}` o `{{ post.text }}`? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaks` es un filtro para convertir saltos de línea en los párrafos.
 
-## One more thing
+## Una cosa más
 
-It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter 15:
+Sería bueno ver si tu sitio sigue funcionando en Heroku, ¿no? Intentemos implementarlo nuevamente. Si olvidaste como hacerlo, revisa el final del capítulo 15:
 
     $ git status
     ...
@@ -78,10 +66,10 @@ It'd be good to see if your website will still be working on Heroku, right? Let'
     $ git push heroku master
     
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
+¡ Felicidades! Ahora seguir adelante y trata de agregar un nuevo post en tu administración de Django (recuerde añadir published_date!), luego actualizar lau página para ver si aparece el nuevo post.
 
-Works like a charm? We're proud! Treat yourself something sweet, you have earned it :)
+¿Funciona como un encanto?. Estamos orgullosos! Regálate algo dulce, te lo has ganado :)
 
-![Figure 13.4][4]
+![Figura 13.4][4]
 
  [4]: images/donut.png

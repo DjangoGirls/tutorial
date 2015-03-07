@@ -1,43 +1,43 @@
 # Introducción a HTML
 
-What's a template, you may ask?
+Qué es una plantilla, te estarás preguntando?
 
-A template is a file that we can re-use to present different information in a consistent format - for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Una plantilla es un archivo que podemos utilizar nuevamente para presentar información en un formato homogéneo - por ejemplo, se podría utilizar una plantilla para ayudarte a escribir una carta, porque aunque cada carta puede contener un mensaje distinto y dirigirse a una persona diferente, compartirán el mismo formato.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter **How the Internet works**).
+El formato de una plantilla de Django se describe en un lenguaje llamado HTML (que es el código HTML que mencionamos en el primer capítulo **Como funciona Internet**).
 
-## What is HTML?
+## ¿Qué es HTML?
 
-HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for the user.
+HTML es un simple código que es interpretado por el navegador web - como Chrome, Firefox o Safari - para mostrar una página web al usuario.
 
-HTML stands for "HyperText Markup Language." **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags markup **elements**.
+HTML por separado es "Lenguaje Marcado de HiperTexto". **HiperTexto** significa que es un tipo de texto que soporta hipervínculos entre páginas. **Marcado** significa que hemos tomado un documento y lo marca con código para decirte cómo interpretar la página (en este caso, un navegador). El código HTML está construido con las **etiquetas**, cada uno a partir de `<` y terminando con `>`. Estas etiquetas de marcado son **elementos**.
 
-## Your first template!
+## Tu primera plantilla!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Crear una plantilla significa crear un archivo de plantilla. Todo es un archivo, ¿verdad? Probablemente hayas notado esto ya.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+Las plantillas se guardan en el directorio de `blog/templates/blog`. Así que primero crear un directorio llamado `templates` dentro de tu directorio de blog. Luego cree otro directorio llamado `blog` dentro de su directorio de templates:
 
     blog
     └───templates
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(Tal vez te preguntes por qué necesitamos dos directorios llamados `blog` - como usted descubrirá más adelante, esto es simplemente una útil convención de nomenclatura que hace la vida más fácil cuando las cosas empiezan a complicarse más.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Y ahora a crear un archivo `post_list.html` (Déjalo en blanco por ahora) dentro del directorio de `blog/templates/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+Cómo se ve su sitio web ahora: http://127.0.0.1:8000 /
 
-> If you still have an error `TemplateDoesNotExists`, try to restart your server. Go into command line, stop the reserver by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
+> Si todavía tienes un error `TemplateDoesNotExists`, intenta reiniciar el servidor. Ve a la línea de comandos, detén el servidor pulsando Ctrl + C (teclas Control y C juntas) y comienza de nuevo mediante la ejecución del comando `python manage.py runserver`.
 
-![Figure 11.1][1]
+![Figura 11.1][1]
 
  [1]: images/step1.png
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Ningún error ya! Felicidades :) Sin embargo, tu sitio de Internet en realidad no publica nada, excepto una página en blanco, porque la plantilla también está vacía. Tenemos que arreglarlo.
 
-Add the following to your template file:
+Añade lo siguiente a su archivo de plantilla:
 
     <html>
         <p>Hi there!</p>
@@ -45,28 +45,28 @@ Add the following to your template file:
     </html>
     
 
-So how does your website look now? Click to find out: http://127.0.0.1:8000/
+¿Cómo luce ahora tu sitio de Internet? Haga clic para ver: http://127.0.0.1:8000 /
 
-![Figure 11.2][2]
+![Figura 11.2][2]
 
  [2]: images/step3.png
 
-It worked! Nice work there :)
+¡Funcionó! Buen trabajo :)
 
-*   The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-*   `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+*   La etiqueta más básica, `<html >`, es siempre el principio de cualquier página web y `</html >` es siempre el final. Como puedes ver, todo el contenido de la página web va al principio de la etiqueta `<html >` y entre la etiqueta de cierre `</html >`
+*   `< p >` es una etiqueta para los elementos de párrafo; `< /p >` cierra cada párrafo
 
-## Head & body
+## Cabeza & Cuerpo
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Cada página HTML también se divide en dos elementos: **head** y **body**.
 
-*   **head** is an element that contains information about the document that is not displayed on the screen.
+*   **head** es un elemento que contiene información sobre el documento que no aparece en la pantalla.
 
-*   **body** is an element that contains everything else that is displayed as part of the web page.
+*   **body** es un elemento que contiene todo lo que se muestra como parte de la página web.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Usamos `<head>` para decirle el navegador acerca de la configuración de la página y `<body>` para decir lo que realmente está en la página.
 
-For example, you can put a webpage title element inside the `<head>`, like this:
+Por ejemplo, puedes ponerle un título a la página web dentro de la `<head>`, así:
 
     <html>
         <head>
@@ -79,35 +79,35 @@ For example, you can put a webpage title element inside the `<head>`, like this:
     </html>
     
 
-Save the file and refresh your page.
+Guarda el archivo y actualiza tu página.
 
-![Figure 11.3][3]
+![Figura 11.3][3]
 
  [3]: images/step4.png
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+¿Observa cómo el navegador ha comprendido que "Ola's Blog" es el título de su página? Ha interpretado `<title>Ola's blog</title>` y coloca el texto en la barra de título del navegador (también se utilizará para marcadores y así sucesivamente).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Probablemente también hayas notado que cada etiqueta de apertura es comparable con una *etiqueta de cierre*, con un `/`, y que elementos *anidados* (es decir, no puede cerrar una etiqueta particular hasta que todos los que estaban en su interior se hayan cerrado también).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Es como poner las cosas en cajas. Tienes una caja grande, `<html></html>`; en su interior hay `<body></body>`, y que contiene las cajas aún más pequeñas: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Tienes que seguir estas reglas de etiquetas *de cierre* y de *anidar* elementos - si no lo haces, el navegador puede no ser capaz de interpretarlos correctamente y tu página se mostrará incorrectamente.
 
-## Customize your template
+## Personaliza tu plantilla
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Ahora puedes divertirte un poco y tratar de personalizar tu plantilla! Aquí están algunas etiquetas útiles para eso:
 
-*   `<h1>A heading</h1>` - for your most important heading
-*   `<h2>A sub-heading</h2>` for a heading at the next level
-*   `<h3>A sub-sub-heading</h3>` ... and so on, up to `<h6>`
-*   `<em>text</em>` emphasizes your text
-*   `<strong>text</strong>` strongly emphasizes your text
-*   `<br />` goes to another line (you can't put anything inside br)
-*   `<a href="http://djangogirls.org">link</a>` creates a link
-*   `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-*   `<div></div>` defines a section of the page
+*   `<h1>Un Titulo</h1>` - para tu titulo más importante
+*   `<h2>Un sub-titulo</h2>` para el siguiente nivel
+*   `<h3>Un sub-sub-titulo</h3>` ... y así hasta `<h6>`
+*   `<em>texto</em>` Pone en cursiva tu texto
+*   `<strong>texto</strong>` Pone en negrita tu texto
+*   `<br />` Un salto de línea (No puedes colocar nada dentro de br)
+*   `<a href="http://djangogirls.org">link</a>` crea un link
+*   `<ul><li>primer elemento</li><li>segundo elemento</li></ul>` crea una lista, igual que esta!
+*   `<div></div>` defina una sección de la página
 
-Here's an example of a full template:
+Aquí hay un ejemplo de una plantilla completa:
 
     <html>
         <head>
@@ -133,52 +133,52 @@ Here's an example of a full template:
     </html>
     
 
-We've created three `div` sections here.
+Hemos creado tres secciones `div` aquí.
 
-*   The first `div` element contains the title of our blogpost - it's a heading and a link
-*   Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+*   El primer elemento `div` contiene el título de nuestro post - es un encabezado y un enlace
+*   Otros dos elementos `div` contengan nuestro blog con fecha publicada, `h2` con un título puesto que es clicable y dos s `p` (párrafo) de texto, uno para la fecha y uno de nuestro blogpost.
 
-It gives us this effect:
+Nos da este efecto:
 
-![Figure 11.4][4]
+![Figura 11.4][4]
 
  [4]: images/step6.png
 
-Yaaay! But so far, our template only ever displays exactly **the same information** - whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Pero hasta el momento, nuestra plantilla sólo muestra exactamente **la misma información** - considerando que antes hablábamos de plantillas como permitiéndonos Mostrar información **diferente** en el **mismo formato**.
 
-What we want really want to do is display real posts added in our Django admin - and that's where we're going next.
+Lo que queremos realmente es mostrar mensajes reales añadidos en nuestra administración de Django - y eso es a donde vamos.
 
-## One more thing
+## Una cosa más
 
-It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again.
+¿Sería bueno ver si tu sitio de Internet esta trabajando todavía en Heroku, cierto? Vamos a intentar implementar otra vez.
 
-First off, let's see what files have changed since we last deployed:
+En primer lugar, veamos qué archivos han cambiado desde que hicimos deploy:
 
     $ git status
     
 
-Let's tell `git` to include all the changes from the current directory:
+Vamos a decirle a `git` para incluir todos los cambios desde el directorio actual:
 
     $ git add -A .
     
 
-> **Note** `-A` (short for "all") means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **Nota** `-A` (abreviatura de "all") significa que `git` también reconocerá si se han eliminado los archivos (de forma predeterminada, sólo reconoce archivos nuevos/modificados). También recuerda (capítulo 3) que `.` significa el directorio actual.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Antes de que subamos todos los archivos, vamos a ver qué `git` va subiendo (todos los archivos que `git` cargará ahora deberían aparecer en verde):
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Ya casi estamos, ahora es tiempo de decirle que guarde estos cambios en su historial. Vamos a dar un "mensaje de comentar" donde se describe lo que hemos cambiado. Puedes escribir cualquier cosa que te gustaría en esta etapa, pero es útil escribir algo descriptivo para que puedes recordar lo que has hecho en el futuro.
 
-    $ git commit -m "Changed the HTML for the site."
+    $ git commit -m "Cambiando el html para la página."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Nota** Asegúrate de usar comillas dobles alrededor del mensaje de confirmación.
 
-Once we've done that, we can finally upload (push) our changes to the website on heroku:
+Una vez que hemos hecho eso, por fin podemos subir (push) nuestros cambios en el sitio web en heroku:
 
     git push heroku master
     
 
-And that should be it! Once Heroku is finished, you can go ahead and refresh your website in the browser. Changes should be visible!
+Y eso es todo! Una vez terminado Heroku, tu puedes seguir adelante y actualizar tu sitio web en el navegador. Los cambios deberian ser visibles!
