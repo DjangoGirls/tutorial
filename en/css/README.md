@@ -14,7 +14,7 @@ Bootstrap is one of the most popular HTML and CSS frameworks for developing beau
 
 It was written by programmers who worked for Twitter and is now developed by volunteers from all over the world.
 
-## Install Boostrap
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`blog/templates/blog/post_list.html`):
 
