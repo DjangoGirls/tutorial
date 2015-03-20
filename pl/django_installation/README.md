@@ -93,14 +93,14 @@ W trakcie pracy ze środowiskiem wirtualnym `python` będzie automatycznie odnos
 
 ## Instalowanie Django
 
-Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować django za pomocą narzędzia `pip`. W konsoli uruchom polecenie `pip install django==1.7.5` (zwróć uwagę, że używamy podwójnego znaku równości: `==`).
+Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować django za pomocą narzędzia `pip`. W konsoli uruchom polecenie `pip install django==1.7.7` (zwróć uwagę, że używamy podwójnego znaku równości: `==`).
 
-    (myvenv) ~$ pip install django==1.7.5
-    Downloading/unpacking django==1.7.5
+    (myvenv) ~$ pip install django==1.7.7
+    Downloading/unpacking django==1.7.7
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
-    
+
 
 w systemie Windows
 
