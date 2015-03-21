@@ -44,7 +44,7 @@ How about your name? Type your first name in quotes like this:
     >>> "Ola"
     'Ola'
 
-You've now created your first string! It's a set of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes - they tell Python that what's inside of them is a string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes - they tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
@@ -73,7 +73,7 @@ Nice, huh? To see your name in uppercase letters, simply type:
     >>> "Ola".upper()
     'OLA'
 
-You just used the `upper` __function__ on your string! A function (like `upper()`) is a set of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __function__ on your string! A function (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a function for that too!
 
@@ -517,7 +517,7 @@ Time for the last part of this chapter!
 
 Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
-A function is a set of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
     def hi():
         print('Hi there!')
