@@ -37,13 +37,13 @@ Oops! An error showed up. It tells us that there is no Post. It's correct -- we 
 This is simple: we import model `Post` from `blog.models`. Let's try displaying all posts again:
 
     >>> Post.objects.all()
-    []
+    [<Post: my post title>, <Post: another post title>]
 
-It's an empty list. That seems to be correct, right? We didn't add any posts yet! Let's fix that.
+It's a list of the posts we created earlier! We created these posts using the Django admin interface. However, now we want to create new posts using python, so how do we do that?
 
 ### Create object
 
-This is how you create a Post object in database:
+This is how you create a new Post object in database:
 
     >>> Post.objects.create(author=me, title='Sample title', text='Test')
 
@@ -56,19 +56,9 @@ Let's import User model first:
 What users do we have in our database? Try this:
 
     >>> User.objects.all()
-    []
-
-No users! Let's create a user:
-
-    >>> User.objects.create(username='ola')
-    <User: ola>
-
-What users do we now have in our database? Try this:
-
-    >>> User.objects.all()
     [<User: ola>]
 
-Cool! Let's get an instance of the user now:
+It's the superuser we created earlier! Let's get an instance of the user now:
 
     me = User.objects.get(username='ola')
 
