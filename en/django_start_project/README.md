@@ -14,7 +14,7 @@ The first step towards creating it is to start a new Django project. Basically, 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. You can do that by typing the following command: `myvenv\Scripts\activate` on Windows or 
-`myvenv/bin/activate` on Mac Os/ Linux.
+`myvenv/bin/activate` on Mac OS / Linux.
 
 
 In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
