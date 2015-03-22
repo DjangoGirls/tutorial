@@ -33,7 +33,7 @@ se verá (más o menos) como ésta:
 
 Esta bien, [empecemos desde el inicio...][3]
 
- [3]: how_internet_works/README.md
+ [3]: how_the_internet_works/README.md
 
 ## Sobre nosotros y cómo contribuir
 

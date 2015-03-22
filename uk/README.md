@@ -33,7 +33,7 @@
 
 Гаразд, [почнемо з самого початку...][3]
 
- [3]: ./how_internet_works/README.md
+ [3]: ./how_the_internet_works/README.md
 
 ## Коротка інформація та вклад
 
