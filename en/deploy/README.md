@@ -1,6 +1,6 @@
 # Deploy!
 
-> __Note__ The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> __Note__: The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
@@ -50,7 +50,7 @@ We need to tell Heroku which Python version we want to use. This is done by crea
 
 ## mysite/local_settings.py
 
-There is a difference between settings we are using locally (on our computer) and settings for our server. Heroku is using one database, and your computer is using a different database.  That's why we need to create a seperate file for settings that will only be available for our local enviroment.
+There is a difference between settings we are using locally (on our computer) and settings for our server. Heroku is using one database, and your computer is using a different database. That's why we need to create a separate file for settings that will only be available for our local environment.
 
 Go ahead and create `mysite/local_settings.py` file. It should contain your `DATABASE` setup from your `mysite/settings.py` file. Just like that:
 
@@ -73,7 +73,7 @@ Then just save it! :)
 Another thing we need to do is modify our website's `settings.py` file. Open `mysite/settings.py` in your editor and add the following lines at the end of the file:
 
     import dj_database_url
-    DATABASES['default'] =  dj_database_url.config()
+    DATABASES['default'] = dj_database_url.config()
 
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -88,7 +88,7 @@ Another thing we need to do is modify our website's `settings.py` file. Open `my
     except ImportError:
         pass
 
-It'll do necessary configuration for Heroku and also it'll import all of your local settings if the file exists.
+It'll do necessary configuration for Heroku and also it'll import all of your local settings if `mysite/local_settings.py` exists.
 
 Then save the file.
 
@@ -109,7 +109,7 @@ You need to install your Heroku toolbelt which you can find here (you can skip t
 
 > On Windows you also must run the following command to add Git and SSH to your command prompt's `PATH`: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Restart the command prompt program afterwards to enable the change.
 
-> After restarting your command prompt, don't forget to go to your `djangogirls` folder again and activate your virtualenv! (Hint: [Check the django installation chapter](../django_installation/README.md#working-with-virtualenv))
+> After restarting your command prompt, don't forget to go to your `djangogirls` folder again and activate your virtualenv! (Hint: [Check the Django installation chapter](../django_installation/README.md#working-with-virtualenv))
 
 Please also create a free Heroku account here: https://id.heroku.com/signup/www-home-top
 
@@ -120,7 +120,7 @@ Then authenticate your Heroku account on your computer by running this command:
 In case you don't have an SSH key this command will automatically create one. SSH keys are required to push code to the Heroku.
 
 ## Git
-Git is a version control system used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later.  Heroku uses a git repository to manage your project files, so we need to use it too.
+Git is a version control system used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later. Heroku uses a git repository to manage your project files, so we need to use it too.
 
 Create a file named `.gitignore` in your `djangogirls` directory with the following content:
 
@@ -177,7 +177,7 @@ If you ever feel like changing the name of your Heroku application, you can do s
 
     $ heroku apps:rename the-new-name
 
-> __Note__: Remember that after you change your application's name, you'll need to visit `[the new name].herokuapp.com` to see your site.
+> __Note__: Remember that after you change your application's name, you'll need to visit `[the-new-name].herokuapp.com` to see your site.
 
 ## Deploy to Heroku!
 
@@ -204,18 +204,16 @@ We can now visit the app in our browser with `heroku open`.
 
     $ heroku open
 
-> __Note__: you will see an error page! We'll talk about that in a minute
+> __Note__: you will see an error page! We'll talk about that in a minute.
 
 This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser, and at the moment you will probably see an error page. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
 
-The error you saw was because we when we deployed to Heroku, we created a new database and it's empty.  We need to run the  ```migrate``` command like we did when we first started our project to set our database up properly:
+The error you saw was because we when we deployed to Heroku, we created a new database and it's empty. We need to run the ```migrate``` command like we did when we first started our project to set our database up properly:
 
     $ heroku run python manage.py migrate
 
     $ heroku run python manage.py createsuperuser
-    
+
 The command prompt will ask you to choose a username and a password again. These will be your login details on your live website's admin page. Refresh it in your browser, and you're good to go!
 
 You should now be able to see your website in a browser! Congrats :)!
-
-
