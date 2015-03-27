@@ -34,9 +34,8 @@ This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you fi
 
 ## Would you like to help us translate the tutorial to other languages?
 
-currently, translations are being kept on crowdin.com platform in:
+Currently, translations are being kept on crowdin.com platform in:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it
-
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it.
