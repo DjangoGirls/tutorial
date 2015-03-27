@@ -21,7 +21,7 @@ You can download Python for Windows from the website https://www.python.org/down
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.4.2
 
 If you don't have Python installed or if you want a different version, you can install it as follows:
 
@@ -48,7 +48,7 @@ You need to go to the website https://www.python.org/downloads/release/python-34
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.4.2
 
 ----
 

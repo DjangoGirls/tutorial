@@ -21,7 +21,7 @@ Możesz ściągnąć Pythona dla Windowsa z tej strony: https://www.python.org/d
 Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.4.2
     
 
 Jeżeli nie masz zainstalowanego Pythona, lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
@@ -51,7 +51,7 @@ Przejdź na stronę https://www.python.org/downloads/release/python-342/ i pobie
 Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz aplikację *Terminal* i uruchom polecenie `python3`:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.4.2
     
 
 * * *
