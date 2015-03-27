@@ -4,7 +4,7 @@ Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana
 
 **Pozwól, że przedstawimy Ci Twojego pierwszego przyjaciela: wiersz poleceń!**
 
-Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco, ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 ## Czym jest wiersz poleceń?
 
@@ -56,7 +56,7 @@ lub
     > whoami
 
 
-A następnie wciśnij Enter. Oto rezulat:
+A następnie wciśnij Enter. Oto rezultat:
 
     $ whoami
     olasitarska
@@ -283,7 +283,7 @@ Oto podsumowanie przydatnych poleceń:
 | mkdir               | mkdir                      | tworzenie nowego katalogu | **mkdir testdirectory**                           |
 | del                 | rm                         | usunięcie katalogu/pliku  | **del c:\test\test.txt**                        |
 
-To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz używała niczego więcej.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
 Jeżeli temat Cię zainteresował, to [ss64.com][1] zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 
