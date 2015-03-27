@@ -19,7 +19,7 @@ Musimy otworzyć konsolę Pythona. Wpisz `python3` i wciśnij Enter.
     Type "copyright", "credits" or "license" for more information.
     >>>
 
-Dla windowsa:
+Dla Windowsa:
 
 ```
 C:\Python34\python
@@ -31,13 +31,13 @@ Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla
 
 Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
 
-Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Na przykład spróbuj wpisać jakieś działanie matematyczne, jak `2 + 3`, i wciśnij Enter.
+Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, jak `2 + 3`, i wciśnij 'Enter'.
 
     >>> 2 + 3
     5
 
 
-Świetnie! Zauważyłaś, że na ekranie pojawiła się podpowiedź? Python umie liczyć! Spróbuj użyć innych poleceń takich jak: - `4 * 5` - `5 - 1` - `40 / 2`
+Świetnie! Zauważyłaś, że na ekranie pojawiła się odpowiedź? Python umie liczyć! Spróbuj użyć innych poleceń takich jak: - `4 * 5` - `5 - 1` - `40 / 2`
 
 Pobaw się tym przez chwilę, a potem wróć tutaj :).
 
@@ -101,7 +101,7 @@ OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
 *   **wierszu poleceń** - wpisywanie instrukcji (kodu) w wierszu poleceń Pythona powoduje wyświetlenie odpowiedzi przez Pythona
 *   **liczbach i stringach** - Python używa liczb w działaniach matematycznych oraz stringów dla obiektów tekstowych
-*   **operatorach** - takich jak + czy *, które tworzą nową wartość z już istniejących
+*   **operatorach** - takich jak + czy *, które tworzą nową wartość z tych już istniejących
 *   **funkcjach** - takich jak upper() czy len(), wykonywania działań na obiektach.
 
 Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć. Gotowa na coś trudniejszego? Mamy nadzieję, że tak!
@@ -140,7 +140,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
 Widzisz? Nietrudne! Po prostu: "imie" równa się Ola.
 
-Jak już zauważyłaś, Twój program nie wyświetlił niczego tak jak to robił poprzednio. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij Enter:
+Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił poprzednio. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij Enter:
 
     >>> imie
     'Ola'
@@ -176,9 +176,9 @@ Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się s
     NameError: name 'imiona is not defined
 
 
-Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
+Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci (wyświetli) Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie masz literówek w nazwach zmiennych.
 
-Poświęć chwilę czasu na zabawę i przekonaj się co możesz z tym zrobić!
+Poświęć chwilę na zabawę i przekonaj się, co możesz z tym zrobić!
 
 ## Funkcja print
 
@@ -197,7 +197,7 @@ Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcem
 
 ## Listy
 
-Oprócz stringów i liczb całkowitych, Python dysponuje bogactwem różnym typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów :)
+Oprócz stringów i liczb całkowitych, Python dysponuje bogactwem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów :)
 
 Śmiało, stwórzmy listę:
 
@@ -253,7 +253,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-Żeby było zabawniej, sprawdź inne indeksy: 6, 7, 1000, -1, -6 czy -1000. Sprawdż, czy jesteś w stanie przewidzieć rezultat przed użyciem instrukcji. Czy otrzymane rezultaty mają sens?
+Żeby było zabawniej, sprawdź inne indeksy: 6, 7, 1000, -1, -6 czy -1000. Sprawdź, czy jesteś w stanie przewidzieć rezultat przed użyciem instrukcji. Czy otrzymane rezultaty mają sens?
 
 Wykaz wszystkich metod dostępnych dla list znajdziesz w odpowiednim rozdziale dokumentacji Pythona: https://docs.python.org/3/tutorial/datastructures.html
 
@@ -267,7 +267,7 @@ Słownik przypomina nieco listę, jednak różni się tym, że dostęp do warto�
 
 To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
-A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
+A teraz spróbuj wpisać poniższą instrukcję (możesz użyć własnych danych):
 
     >>> uczestniczka = {'imie' : 'Ola',
                         'kraj' : 'Polska',
@@ -316,7 +316,7 @@ Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość
 
 Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-Za pomocą polecenia `del` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
+Za pomocą polecenia `del` możesz usunąć element ze słownika. Załóżmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
 
     >>> del uczestniczka['ulubione_liczby']
     >>> uczestniczka
@@ -341,13 +341,13 @@ Doskonale! Wiesz już sporo o programowaniu. W tej części nauczyłaś się o:
 *   **błędach** - umiesz już czytać ze zrozumieniem błędy pojawiające się, gdy Python nie rozumie polecenia, które mu wydałaś
 *   **zmiennych** - nazwach dla obiektów, dzięki którym programuje się łatwiej, a Twój kod jest czytelniejszy
 *   **listach** - listach obiektów uporządkowanych w określonej kolejności
-*   **słowniki** - obiekty przechowywane w postaci par klucz-wartość
+*   **słownikach** - obiektach przechowywanych w postaci par klucz-wartość
 
 Gotowa na następną część? :)
 
 ## Porównywanie rzeczy
 
-Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
+Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby, oczywiście. Zobaczmy, jak to działa:
 
     >>> 5 > 2
     True
@@ -361,7 +361,7 @@ Istotną częścią programowania jest porównywanie różnych rzeczy. Co najła
 
 Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
-Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe.
+Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są sobie równe.
 
 Użyjmy Pythona do wykonania dwóch innych zadań:
 
@@ -390,8 +390,8 @@ Użyjmy Pythona do wykonania dwóch innych zadań:
 
 Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci Ci wynik! Prawda, że sprytne?
 
-*   **and** - gdy używasz operatora `and` , oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
-*   **or** - gdy używasz operatora `or`, tylko jedno z obu porównań musi być prawdziwe, aby całe wyrażenie było prawdziwe
+*   **and** - gdy używasz operatora `and` (z ang. 'oraz'), oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
+*   **or** - gdy używasz operatora `or` (z ang. 'lub'), tylko jedno z obu porównań musi być prawdziwe, aby całe wyrażenie było prawdziwe
 
 Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego odpowiednik w Pythonie:
 
@@ -405,9 +405,9 @@ Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać licz
 
 ## Obiekt logiczny (Boolean)
 
-Przez przypadek poznałaś nowy typ obiektu w Pythonie. Nazywa się **obiektem logicznym (Boolean)** -- i jest chyba najprostszym typem jaki istnieje.
+Przez przypadek poznałaś nowy typ obiektu w Pythonie. Nazywa się: **obiekt logiczny (Boolean)** -- i jest chyba najprostszym typem jaki istnieje.
 
-Są tylko dwa obiekty logiczne: - True (prawda) - False (fałsz)
+Są tylko dwa obiekty logiczne:
 
 Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy False.)
 
