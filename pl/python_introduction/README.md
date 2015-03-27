@@ -408,6 +408,8 @@ Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać licz
 Przez przypadek poznałaś nowy typ obiektu w Pythonie. Nazywa się: **obiekt logiczny (Boolean)** -- i jest chyba najprostszym typem jaki istnieje.
 
 Są tylko dwa obiekty logiczne:
+*   **True** - prawda
+*   **False** - fałsz
 
 Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy False.)
 
@@ -432,7 +434,7 @@ Poćwicz i pobaw się wartościami logicznymi wpisując następujące instrukcje
 *   `True or 1 == 1`
 *   `1 != 2`
 
-Gratulacje! Wartości logiczne są jedną z najfajniejszych możliwości w programaniu, a Ty właśnie nauczyłaś się ich używać!
+Gratulacje! Wartości logiczne są jedną z najfajniejszych możliwości w programowaniu, a Ty właśnie nauczyłaś się ich używać!
 
 # Zapisujemy!
 
@@ -481,7 +483,7 @@ A w systemie Windows będzie to wyglądać tak:
 
 Jeżeli coś jest dla Ciebie niejasne, nie wahaj się poprosić o pomoc.
 
-a następnie użyć Pythona do uruchomienia kod z pliku w następujący sposób:
+A następnie użyć Pythona do uruchomienia kod z pliku w następujący sposób:
 
     $ python3 python_intro.py
     Hello, Django girls!
@@ -500,7 +502,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
     if 3 > 2:
 
 
-Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
+Gdybyśmy ten plik teraz zapisały i uruchomiły, pojawiłby się błąd podobny do poniższego:
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -564,7 +566,7 @@ W ostatnich trzech ćwiczeniach nauczyłaś się o:
 *   **porównywaniu rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
 *   **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
 *   **Zapisywaniu plików** - przechowywaniu kodu w plikach, co pozwala nam uruchamiać bardziej rozbudowane programy.
-*   **if...elif...else** - wyrażenia, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
+*   **if...elif...else** - wyrażeniach, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
 
 Czas na ostatnią część tego rozdziału!
 
@@ -619,7 +621,7 @@ Jak zauważyłaś, musiałyśmy dodać osiem spacji przed funkcją `print`, poni
     TypeError: hi() missing 1 required positional argument: 'name'
 
 
-Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `witaj()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `witaj()` (ta, którą stworzyłyśmy) posiada jeden wymagany argument (zwany `name`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
     hi("Ola")
 
@@ -666,7 +668,7 @@ Gratulacje! Właśnie nauczyłaś się pisać funkcje :)!
 
 ## Pętle
 
-To już ostatnia cześć. Prawda, że szybko poszło? :)
+To już ostatnia część. Prawda, że szybko poszło? :)
 
 Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
 
@@ -731,7 +733,7 @@ Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej prze
 
 ## Podsumowanie
 
-To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My jesteśmy zdecydowanie dumne z Ciebie, że dotarłaś do tego miejsca!
+To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy dumne z Ciebie, że dotarłaś do tego miejsca!
 
 Poczęstuj się babeczką i przejdź do następnego rozdziału :)
 
