@@ -149,11 +149,11 @@ Awesome, right? Of course, variables can be anything, so numbers too! Try this:
 
 But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-    >>> name = "Maria"
-    >>> names
+    >>> city = "Tokyo"
+    >>> ctiy
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    NameError: name 'names' is not defined
+    NameError: name 'ctiy' is not defined
 
 An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
