@@ -23,7 +23,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-    python -m venv myvenv
+    python3 -m venv myvenv
 
 ### Windows
 
