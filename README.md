@@ -26,7 +26,7 @@ It will (more or less) look like this:
 
 > If you work with the tutorial on your own and don't have a coach that will help you in case of any problem, we have a chat for you: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-OK, [let's start at the beginning...](./how_internet_works/README.md)
+OK, [let's start at the beginning...](./en/how_the_internet_works/README.md)
 
 ## About and contributing
 

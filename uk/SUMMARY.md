@@ -1,7 +1,7 @@
 # Зміст
 
 *   [Вступ](README.md)
-*   [Як працює Інтернет?](how_internet_works/README.md)
+*   [Як працює Інтернет?](how_the_internet_works/README.md)
 *   [Вступ до командного рядку](intro_to_command_line/README.md)
 *   [Встановлення Python](python_installation/README.md)
 *   [Редактор коду](code_editor/README.md)

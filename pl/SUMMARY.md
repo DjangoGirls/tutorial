@@ -1,7 +1,7 @@
 # Podsumowanie
 
 *   [Wprowadzenie](README.md)
-*   [Jak działa internet?](how_internet_works/README.md)
+*   [Jak działa internet?](how_the_internet_works/README.md)
 *   [Wprowadzenie do linii poleceń](intro_to_command_line/README.md)
 *   [Instalowanie Pythona](python_installation/README.md)
 *   [Edytor kodu](code_editor/README.md)
