@@ -32,7 +32,7 @@ Będzie to wyglądać mniej więcej tak:
 
 Ok, [zacznijmy od początku...][3]
 
-[3]: ./how_internet_works/README.md
+[3]: ./how_the_internet_works/README.md
 
 ## Jak możesz pomóc?
 
