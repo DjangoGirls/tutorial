@@ -23,7 +23,7 @@ On Windows:
 
     (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
 
-> **Note** Double-check that you included the period (`.`) at the end of the command, it's important.
+> **Note** Double-check that you included the period (`.`) at the end of the command, it's important because it tells the script to install Django in your current directory.
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
@@ -52,8 +52,9 @@ It would be nice to have the correct time on our website. Go to http://en.wikipe
 
 You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this, substituting `Europe/Berlin` with your relevant time zone:
 
-    USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
+
+    USE_TZ = False
 
 ## Setup a database
 
