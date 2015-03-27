@@ -52,8 +52,9 @@ It would be nice to have the correct time on our website. Go to http://en.wikipe
 
 You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this, substituting `Europe/Berlin` with your relevant time zone:
 
-    USE_TZ = False
     TIME_ZONE = 'Europe/Berlin'
+
+    USE_TZ = False
 
 ## Setup a database
 
