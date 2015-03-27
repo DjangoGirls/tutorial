@@ -164,11 +164,11 @@ Puedes usarla dentro de las funciones:
 
 Pero ¿qué pasa si usamos el nombre equivocado? ¿Puedes adivinar qué pasaría? Vamos a probar!
 
-    >>> name = "Maria"
-    >>> names
+    >>> city = "Tokyo"
+    >>> ctiy
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    NameError: name 'names' is not defined
+    NameError: name 'ctiy' is not defined
     
 
 Un error! Como puedes ver, Python tiene diferentes tipos de errores y estos se llaman **NameError**. Python te dará este error si intenta utilizar una variable que no ha sido definida aún. Si más adelante te encuentra con este error, verifica tu código para ver si es que no haya ningún nombre.

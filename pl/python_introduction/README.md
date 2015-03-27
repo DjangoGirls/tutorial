@@ -169,11 +169,11 @@ Ekstra, co? Oczywiście zmienne mogą reprezentować cokolwiek, także liczby! S
 
 Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się stać? Sprawdźmy!
 
-    >>> imie = "Maria"
-    >>> imiona
+    >>> city = "Tokyo"
+    >>> ctiy
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    NameError: name 'imiona is not defined
+    NameError: name 'ctiy' is not defined
 
 
 Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
