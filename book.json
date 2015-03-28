@@ -16,5 +16,7 @@
         "richquotes" : {
             "todos" : true
         }
-    }
+    },
+
+    "gitbook": "1.5.0"
 }
