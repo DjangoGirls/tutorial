@@ -1,6 +1,6 @@
 # Czym jest Django?
 
-Django (czytaj: dżango) to darmowy, open-source framework do tworzenia aplikacji webowych, napisany w Pythonie. To web framework – zestaw narzędzi ułatwiającyh szybsze i prostsze tworzenie stron internetowych.
+Django (czytaj: dżango) to darmowy, open-source'owy framework do tworzenia aplikacji webowych, napisany w Pythonie. To web framework – zestaw narzędzi ułatwiającyh szybsze i prostsze tworzenie stron internetowych.
 
 Gdy budujesz stronę internetową, zawsze potrzebujesz podobnych rzeczy: sposobu do uporania się z uwierzytelnianiem (rejestracja, logowanie, wylogowywanie), panelu zarządzania stroną, formularzy, przesyłania plików, itd.
 
@@ -12,7 +12,7 @@ Frameworki istnieją, by oszczędzić Ci wyważania otwartych drzwi i ułatwić 
 
 By zrozumieć do czego naprawdę służy Django, musimy lepiej przyjrzeć się serwerom. Pierwszą rzeczą którą musi wiedzieć serwer jest to, że chcesz, żeby wyświetlił Ci stronę.
 
-Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta list, i odsyła z powrotem odpowiedź w formie strony internetowej. Ale gdy chcesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
+Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta list, i odsyła z powrotem odpowiedź w formie strony internetowej. Ale gdy chcesz coś wysłać, musisz mieć jakąś treść. Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
 
 ## Co się dzieje, gdy ktoś chce otworzyć stronę z Twojego serwera?
 
@@ -24,4 +24,4 @@ W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy poł�
 
 Oczywiście powyższy opis jest nieco uproszczony, ale znajomość niuansów technicznych nie jest Ci na razie potrzebna. Wystarczy, że zrozumiesz ogólną zasadę działania.
 
-Dlatego nie będziemy się zbyt mocno zagłębiać w szczegóły i zacznijmy po prostu budować coś w Django. Wszystkich potrzebnych rzeczy nauczymy się po drodze!
+Dlatego nie będziemy się zbyt mocno zagłębiać w szczegóły i zaczniemy po prostu budować coś w Django. Wszystkich potrzebnych rzeczy nauczymy się po drodze!

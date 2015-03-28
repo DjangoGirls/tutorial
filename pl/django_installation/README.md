@@ -56,7 +56,7 @@ Stworzenie `virtualenv`'a w Linuksie i OS X ogranicza się jedynie do użycia po
 
 ## Praca z virtualenv
 
-Powyższa instrukcja utworzy katalog o nazwie `myvenv` (albo o nazwie, którą wybrałaś) zawierający nasze środowisko wirtualne (czyli w zasadzie zbiór katalogów i plików). Pozostało nam już tylko uruchomienie go za pomocą polecenia:
+Powyższa instrukcja utworzy katalog o nazwie `myvenv` (albo o innej, którą wybrałaś) zawierający nasze środowisko wirtualne (czyli w zasadzie zbiór katalogów i plików). Pozostało nam już tylko uruchomienie go za pomocą polecenia:
 
     C:\Użytkownicy\Nazwa\djangogirls> myvenv\Scripts\activate
     
@@ -102,11 +102,11 @@ Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować djang
     Cleaning up...
 
 
-w systemie Windows
+w systemie Windows:
 
 > Jeżeli w trakcie wywoływania polecenia pip w Windows otrzymasz błąd, sprawdź czy ścieżka Twojego projektu nie zawiera spacji (np. `C:\Users\Imię Nazwisko\djangogirls`). Jeżeli tak, sugerujemy przeniesienie projektu do innego katalogu bez spacji w nazwie (proponujemy `C:\djangogirls`). Gdy już to zrobisz, spróbuj wykonać powyższe polecenie jeszcze raz.
 
-w systemie Linux
+w systemie Linux:
 
 > Jeśli po użyciu polecenia pip w Ubuntu 12.04 otrzymasz błąd, użyj polecenia `python -m pip install -U --force-reinstall pip`, aby naprawić instalacją pip'a w środowisku wirtualnym.
 

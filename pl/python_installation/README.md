@@ -14,11 +14,11 @@ Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić c
 
 ### Windows
 
-Możesz ściągnąć Pythona dla Windowsa z tej strony: https://www.python.org/downloads/release/python-343/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+Możesz ściągnąć Pythona dla Windowsa z tej strony: https://www.python.org/downloads/release/python-343/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj katalog (ścieżkę), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
 
 ### Linux
 
-Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
+Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję), otwórz konsolę i wpisz następujące polecenie:
 
     $ python3 --version
     Python 3.4.2
