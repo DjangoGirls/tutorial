@@ -143,7 +143,7 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 *   `models.DateTimeField` - to jest data i godzina.
 *   `models.ForeignKey` - to jest odnośnik do innego modelu.
 
-Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Powinnaś zajrzeć do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
+Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Powinnaś zajrzeć do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 A co to takiego `def publish(self):`? To nic innego, jak nasza metoda publikująca wpis, o której wspominałyśmy wcześniej. Słowo `def` oznacza, że mamy do czynienia z funkcją/metodą. Z kolei `publish` to nazwa metody. Możesz użyć innej, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji (czyli gdybyś chciała dodać metodę, która oblicza średnią cen, mogłabyś ją nazwać `calculate_average_price` lub <0>oblicz_srednia_cene</0>).
 

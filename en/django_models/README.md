@@ -137,7 +137,7 @@ Now we define properties we were talking about: `title`, `text`, `created_date`,
 - `models.DateTimeField` - this is a date and time.
 - `models.ForeignKey` - this is a link to another model.
 
-We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
+We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation, if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method. `publish` is the name of the method. You can change it, if you want. The rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
 

@@ -282,7 +282,7 @@ Feel free to change the title or the text and save changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.7/topics/forms/
+If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## One more thing: deploy time!
 

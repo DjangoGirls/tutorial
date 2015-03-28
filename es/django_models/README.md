@@ -143,7 +143,7 @@ Ahora definimos las propiedades que hablábamos: `title`, `text`, `created_date`
 *   `models.DateTimeField` - esta es la fecha y hora.
 *   `modelos.ForeignKey`-este es una relación a otro modelo.
 
-No vamos a explicar cada pedacito de código, ya que nos tomaría demasiado tiempo. Debes echar un vistazo a la documentación de Django. Si quieres saber más sobre los campos de Modelos y cómo definir cosas diferentes a las descritas anteriormente (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
+No vamos a explicar cada pedacito de código, ya que nos tomaría demasiado tiempo. Debes echar un vistazo a la documentación de Django. Si quieres saber más sobre los campos de Modelos y cómo definir cosas diferentes a las descritas anteriormente (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 ¿Y qué sobre `def publish(self):`? Es exactamenteel método `publish` del que hablábamos antes. `def` significa que se trata de una función o método. `publish` es el nombre del método. Puedes cambiarlo, si quieres. La regla es que usamos minúscula y guiones bajos en lugar de espacios (es decir, si quieres tener un método que calcule el precio medio, este podría llamarse `calculate_average_price`).
 

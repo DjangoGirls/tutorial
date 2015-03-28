@@ -65,4 +65,4 @@ Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
 I to wszystko! Czas, żebyśmy wróciły do naszego szablonu i wyświetliły ten QuerySet!
 
-Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.7/ref/models/querysets/
+Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.8/ref/models/querysets/

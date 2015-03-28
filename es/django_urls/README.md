@@ -97,4 +97,4 @@ No "funciona", ¿eh? No te preocupes, es sólo una página de error, nada que te
 
 Se puede leer que no existe ningún atributo **'post_list'**. *¿Post_list* lo recuerdas? Esto es lo que llamamos nuestro punto de vista! Esto significa que todo esté en su lugar, simplemente no creamos nuestra *view* todavía. No te preocupes, llegaremos ahí.
 
-> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.7/topics/http/urls/
+> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.8/topics/http/urls/
