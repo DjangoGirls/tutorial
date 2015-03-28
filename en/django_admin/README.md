@@ -15,7 +15,7 @@ OK, time to look at our Post model. Remember to run `python manage.py runserver`
 
 ![Login page](images/login_page2.png)
 
-In order to log in you need to create a *superuser* - a user which has control over everything on the site. Go back to you command-line and type `python manage.py createsuperuser`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. The output should look like this (where username and email should be your own ones):
+In order to log in you need to create a *superuser* - a user which has control over everything on the site. Go back to you command-line and type `python manage.py createsuperuser`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press 'Enter' to continue. The output should look like this (where username and email should be your own ones):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
