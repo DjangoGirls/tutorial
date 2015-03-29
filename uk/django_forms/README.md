@@ -87,14 +87,14 @@ Ok, відкриймо цей файл і наберемо наступний к
 
 Остаточно код буде виглядати так:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
         url(r'^post/new/$', views.post_new, name='post_new'),
-    )
+    ]
     
 
 Після оновлення сайту бачимо помилку `AttributeError`, оскільки вид `post_new` не є реалізованим. Давайте додамо цей вид прямо зараз.

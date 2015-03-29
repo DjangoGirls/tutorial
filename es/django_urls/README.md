@@ -16,16 +16,16 @@ Cada página en la Internet necesita su propia dirección URL. De esta manera su
 
 Vamos a abrir el archivo `mysite/urls.py` y ver lo que aparece:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
     
         url(r'^admin/', include(admin.site.urls)),
-    )
+    ]
     
 
 Como puedes ver, Django ya puso algo aquí para nosotros.
@@ -55,13 +55,13 @@ Adelante, eliminar las líneas comentadas (líneas que comienzan con `#`) y aña
 
 El archivo `mysite/urls.py` ahora debe verse así:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
-    )
+    ]
     
 
 Django redirigirá ahora todo lo que entre en `http://127.0.0.1:8000 /` a `blog.urls` y esperara para más instrucciones.
@@ -70,7 +70,7 @@ Django redirigirá ahora todo lo que entre en `http://127.0.0.1:8000 /` a `blog.
 
 Cree un nuevo archivo vacío `blog/urls.py`. ¡Muy bien! Añade estas dos primeras líneas:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
     
 
@@ -78,9 +78,9 @@ Aquí nosotros sólo importaremos métodos de Django y todas nuestras `vistas` d
 
 Después de eso, podemos agregar nuestro primer patrón de URL:
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
-    )
+    ]
     
 
 Como puedes ver, estamos asignando una `vista` denominada `post_list` a la `^ $` URL. Pero, ¿qué hace`^ $`? Es una magia regex :) Lo desglosemos:-`^` en regex significa "el principio"; de este signo podemos empezar buscando nuestro patrón - `$` si coincide sólo "el fin" de la cadena, lo que significa que vamos a terminar buscando nuestro patrón aquí

@@ -14,16 +14,16 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file and see what it looks like:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
 
         url(r'^admin/', include(admin.site.urls)),
-    )
+    ]
 
 As you can see, Django already put something here for us.
 
@@ -52,13 +52,13 @@ Go ahead, delete the commented lines (lines starting with `#`) and add a line th
 
 Your `mysite/urls.py` file should now look like this:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
-    )
+    ]
 
 Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
@@ -66,16 +66,16 @@ Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to 
 
 Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
 Here we're just importing Django's methods and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
 
 After that, we can add our first URL pattern:
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
-    )
+    ]
 
 As you can see, we're now assigning a `view` called `post_list` to `^$` URL. But what does `^$` mean? It's a regex magic :) Let's break it down:
 - `^` in regex means "the beginning"; from this sign we can start looking for our pattern

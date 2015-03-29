@@ -46,13 +46,13 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku* `post_detail`!
 
 Potrzebujemy stworzyć adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Dodaj wiersz `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` w pliku `blog/urls.py`. Powinna wyglądać tak:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    )
+    ]
 
 
 Strasznie to wygląda, ale spokojnie - wyjaśniamy: - zaczyna się od `^` again -- "początek" - `post/` oznacza tylko, że zaraz po początku adres URL powinien zawierać słowo **post** i **/**. Na razie nie jest źle. - `(?P<pk>[0-9]+)` - ta część jest trudniejsza. Oznacza ona, że Django pobierze wszystko, co umieścisz w tym miejscu i przekaże to do widoku w zmiennej o nazwie `pk`. `[0-9]` dodatkowo mówi nam, że może to być tylko cyfra, nie litera (czyli wszystko pomiędzy 0 a 9). `+` oznacza, że to musi być jedna lub więcej cyfr. Czyli coś takiego: `http://127.0.0.1:8000/post//` nie jest poprawne, ale już `http://127.0.0.1:8000/post/1234567890/` jest jak najbardziej w porządku! - `/` - znów potrzebujemy **/** - `$` - "koniec"!

@@ -88,14 +88,14 @@ Abrimos el `blog/urls.py` y añadimos una línea:
 
 Y el código final tendrá este aspecto:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
         url(r'^post/new/$', views.post_new, name='post_new'),
-    )
+    ]
     
 
 Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementado. Vamos a añadir ahora.
