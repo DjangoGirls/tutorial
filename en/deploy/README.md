@@ -133,7 +133,11 @@ Create a file named `.gitignore` in your `djangogirls` directory with the follow
 
 and save it. The dot on the beginning of the file name is important! As you can see, we're now telling Heroku to ignore `local_settings.py` and don't download it, so it's only available on your computer (locally).
 
-Next, we’ll create a new git repository and save our changes. Go to your console and run these commands:
+Next, we’ll create a new git repository and save our changes.
+
+> __Note__: Check out your current working directory with a `pwd` command before initializing the repository. You should be in the `djangogirls` folder.
+
+Go to your console and run these commands:
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
@@ -141,6 +145,28 @@ Next, we’ll create a new git repository and save our changes. Go to your conso
     $ git config user.email you@example.com
 
 Initializing the git repository is something we only need to do once per project.
+
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what will be done, to prevent any surprises from happening (e.g. wrong files will be added or commited). The `git status` command returns information about any untracked/modifed/staged files, branch status and much more. The output should be similar to:
+
+    $ git status
+    On branch master
+
+    Initial commit
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+      .gitignore
+      Procfile
+      mysite/__init__.py
+      mysite/settings.py
+      mysite/urls.py
+      mysite/wsgi.py
+      manage.py
+      requirements.txt
+      runtime.txt
+
+    nothing added to commit but untracked files present (use "git add" to track)
 
 And finally we save our changes. Go to your console and run these commands:
 
