@@ -142,7 +142,7 @@ Utwórz w katalogu `djangogirls` plik `.gitignore` i wstaw w nim następującą 
     staticfiles
     local_settings.py
     db.sqlite3
-    
+    *.py[co]
 
 a następnie zapisz go. Kropka na początku nazwy pliku jest ważna! Jak widzisz, nakazujemy Heroku ignorować plik `local_settings.py` i nie pobierać go, dzięki czemu pozostaje on dostępny tylko i wyłącznie na Twoim komputerze (lokalnie).
 

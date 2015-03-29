@@ -140,7 +140,7 @@ Crea un fichero llamado `.gitignore` en tu directorio `djangogirls` con el sigui
     staticfiles
     local_settings.py
     db.sqlite3
-    
+    *.py[co]
 
 y guarda los cambios. El punto al principio del nombre del fichero es importante! Como puedes ver, ahora le estamos diciendo a Heroku que ignore el fichero `local_settings.py` y no lo descargue, para que esté disponible solamente en tu ordenador (en local).
 
