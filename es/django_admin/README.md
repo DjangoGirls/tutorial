@@ -47,6 +47,6 @@ Asegúrate que al menos dos o tres entradas (pero no todas) tengan la fecha de p
 
  [3]: images/edit_post3.png
 
-Sí quieres sabes más sobre Django admin, deberías revisar la documentación de Django: https://docs.djangoproject.com/en/1.7/ref/contrib/admin/
+Sí quieres sabes más sobre Django admin, deberías revisar la documentación de Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
 Probablemente sea un buen momento para tomar un café (o té) y comer algo dulce. Haz creado tu primer modelo Django - te mereces un regalito!

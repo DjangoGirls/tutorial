@@ -93,10 +93,10 @@ Tenemos todas las dependencias importantes en su lugar. ¡Finalmente podemos ins
 
 ## Instalar Django
 
-Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django usando `pip`. En la consola, ejecuta `pip install django == 1.7.1` (fíjate que utilizamos un doble signo igual): `==`).
+Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django usando `pip`. En la consola, ejecuta `pip install django == 1.8` (fíjate que utilizamos un doble signo igual): `==`).
 
-    (myvenv) ~$ pip install django==1.7.1
-    Downloading/unpacking django==1.7.1
+    (myvenv) ~$ pip install django==1.8
+    Downloading/unpacking django==1.8
     Installing collected packages: django
     Successfully installed django
     Cleaning up...

@@ -87,14 +87,14 @@ Otwieramy plik `blog/urls.py` i dodajemy wiersz:
 
 Ostatecznie kod będzie wyglądał tak:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
         url(r'^post/new/$', views.post_new, name='post_new'),
-    )
+    ]
 
 
 Po odświeżeniu strony zobaczymy błąd `AttributeError`, ponieważ nie mamy jeszcze zaimplementowanego widoku `post_new`. Dodajmy go teraz.
@@ -302,7 +302,7 @@ Zmodyfikuj jego tytuł lub treść wedle uznania, a następnie zapisz zmiany!
 
 Gratulacje! Twoja aplikacja staje się coraz bardziej kompletna!
 
-Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokumentacji: https://docs.djangoproject.com/en/1.7/topics/forms/
+Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokumentacji: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Jeszcze jedno: czas na wdrożenie!
 

@@ -31,7 +31,7 @@ To create a new `virtualenv`, you need to open the console (we told you about th
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
 
-where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
+where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short - you'll be referencing it a lot!
 
 ### Linux and OS X
 
@@ -88,16 +88,16 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django
 
-Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django==1.7.7` (note that we use a double equal sign: `==`).
+Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django==1.8` (note that we use a double equal sign: `==`).
 
-    (myvenv) ~$ pip install django==1.7.7
-    Downloading/unpacking django==1.7.7
+    (myvenv) ~$ pip install django==1.8
+    Downloading/unpacking django==1.8
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
 
 on Windows
-> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces (i.e. `C:\Users\User Name\djangogirls`). If it does please consider moving it to another place without spaces (suggestion is: `C:\djangogirls`). After the move please try the above command again.
+> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (i.e. `C:\Users\User Name\djangogirls`). If it does please consider moving it to another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). After the move please try the above command again.
 
 on Linux
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.

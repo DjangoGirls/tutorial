@@ -10,7 +10,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for the user.
 
-HTML stands for "HyperText Markup Language." __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags markup __elements__.
+HTML stands for "HyperText Markup Language". __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags markup __elements__.
 
 ## Your first template!
 
@@ -28,7 +28,7 @@ And now create a `post_list.html` file (just leave it blank for now) inside the 
 
 See how your website looks now: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExists`, try to restart your server. Go into command line, stop the reserver by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExists`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
@@ -125,7 +125,7 @@ Here's an example of a full template:
 
 We've created three `div` sections here.
 
-- The first `div` element contains the title of our blogpost - it's a heading and a link
+- The first `div` element contains the title of our blog - it's a heading and a link
 - Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
 It gives us this effect:
@@ -134,7 +134,7 @@ It gives us this effect:
 
 Yaaay! But so far, our template only ever displays exactly __the same information__ - whereas earlier we were talking about templates as allowing us to display __different__ information in the __same format__.
 
-What we want really want to do is display real posts added in our Django admin - and that's where we're going next.
+What we really want to do is display real posts added in our Django admin - and that's where we're going next.
 
 ## One more thing
 
