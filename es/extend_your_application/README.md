@@ -53,13 +53,13 @@ Vamos a crear una dirección URL en `urls.py` para nuestro `post_detail` *view*!
 
 Queremos crear una dirección URL de Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. ¿Agrega la línea `url (r'^ poste / (?P < pk >[0-9] +) / $', views.post_detail),` en el archivo `blog/urls.py`. Debe tener este aspecto:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    )
+    ]
     
 
 Da miedo, pero no te preocupes - lo explicaremos para ti: - comienza con `^` otra vez, "el principio" - `post /` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. - `(?P < pk >[0-9] +)`-esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no es una carta (entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Por algo como `http://127.0.0.1:8000/post / /` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! -`/` - entonces necesitamos **/** de nuevo - `$` - "the end"!

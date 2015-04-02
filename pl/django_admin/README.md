@@ -36,6 +36,6 @@ Postaraj się, aby przynajmniej dwa - trzy wpisy (ale nie wszystkie!) miały ust
 
 ![Administracja Django (admin)](images/edit_post3.png)
 
-Jeśli chcesz dowiedzieć się więcej o panelu admina Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.7/ref/contrib/admin/
+Jeśli chcesz dowiedzieć się więcej o panelu admina Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
 To zdecydowanie dobra okazja na filiżankę kawy (lub herbaty) i schrupanie czegoś słodkiego. Stworzyłaś swój pierwszy model w Django - zasługujesz na małą nagrodę!

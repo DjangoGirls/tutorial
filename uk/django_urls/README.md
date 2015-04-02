@@ -14,16 +14,16 @@ URL -- це просто веб адреса. Ви можете побачити
 
 Відкриємо файл `mysite/urls.py` і подивимось як він виглядає:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
     
         url(r'^admin/', include(admin.site.urls)),
-    )
+    ]
     
 
 Як бачите, Django вже щось записав сюди для нас.
@@ -53,13 +53,13 @@ URL адміністратора, котрий ви відвідували у п
 
 Ваш файл `mysite/urls.py` повинен наразі мати такий вигляд:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
     
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
-    )
+    ]
     
 
 Django тепер перенаправлятиме усе, що надходить на http://127.0.0.1:8000/ до `blog.urls` і шукатиме там подальші інструкції.
@@ -68,7 +68,7 @@ Django тепер перенаправлятиме усе, що надходит
 
 Створіть новий пустий файл `blog/urls.py`. Добре! Додайте наступні перші два рядки:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
     
 
@@ -76,9 +76,9 @@ Django тепер перенаправлятиме усе, що надходит
 
 Після цього, ми можемо додати наш перший URL шаблон:
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
-    )
+    ]
     
 
 Як бачите, ми присвоюємо відображення із назвою `post_list` значенню URL `^$`. Але що означає `^$`? Це магія регулярних виразів :) Давайте розберемось по порядку: - `^` в регулярному виразі означає "початок"; з цього знаку ми можемо розпочати пошук нашого шаблону - `$` відповідає лише "закінченню" рядка, що означає, що ми будемо тут завершувати наш пошук
@@ -93,4 +93,4 @@ Django тепер перенаправлятиме усе, що надходит
 
 Можете прочитати тут: **no attribute 'post_list'**. Чи *post_list* не нагадує вам про щось? Це назва нашого відображення! Це означає, що усе на місці, ми просто ще не створили відповідне відображення. Не переймайтесь, ми його отримаємо.
 
-> Якщо бажаєте дізнатися більше про Django URLconf, зверніться до офіційної документації: https://docs.djangoproject.com/en/1.7/topics/http/urls/
+> Якщо бажаєте дізнатися більше про Django URLconf, зверніться до офіційної документації: https://docs.djangoproject.com/en/1.8/topics/http/urls/

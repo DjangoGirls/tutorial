@@ -14,16 +14,16 @@ Każda strona w internecie potrzebuje własnego adresu URL. W ten sposób aplika
 
 Otwórzmy plik `mysite/urls.py` i przyjrzyjmy się jego treści:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
 
         url(r'^admin/', include(admin.site.urls)),
-    )
+    ]
 
 
 Jak zauważyłaś, Django coś nam już tu umieścił.
@@ -53,13 +53,13 @@ Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego
 
 Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from django.contrib import admin
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
-    )
+    ]
 
 
 Od tej pory Django przekieruje wszystkie reguły z adresu http://127.0.0.1:8000/ do `blog.urls` i tam będzie szukał dalszych wskazówek.
@@ -68,7 +68,7 @@ Od tej pory Django przekieruje wszystkie reguły z adresu http://127.0.0.1:8000/
 
 Stwórz nowy pusty plik `blog/urls.py`. W porządku! Teraz dodaj dwie pierwsze linijki:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
 
@@ -76,9 +76,9 @@ Tutaj po prostu importujemy metody Django oraz wszystkie widoki (`views`) z nasz
 
 Potem możemy dodać nasz pierwszy wzorzec adresu URL:
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
-    )
+    ]
 
 
 Jak widzisz, przyporządkowujemy widok (`view`) o nazwie `post_list` do adresu `^$`. A co oznacza `^$`? Tutaj kłania się magia wyrażeń regularnych. :) Rozłóżmy to na cześci: - `^` w wyrażeniu oznacza "początek"; od tego znaku rozpoczynamy poszukiwanie naszego wzorca - `$` oznacza "koniec" ciągu znaków, czyli tutaj kończymy poszukiwanie naszego wzorca
@@ -93,4 +93,4 @@ Gdzieś zniknęło "It works", zgadza się? Spokojnie, to tylko strona błędu, 
 
 Jest napisane, iż **brakuje atrybutu 'post_list'**. Czy *post_list* czegoś Ci nie przypomina? Tak samo nazwaliśmy nasz widok! Czyli wszystko jest w porządku, po prostu nie stworzyliśmy jeszcze naszego *widoku*. Nie martw się, zajmiemy się tym.
 
-> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/1.7/topics/http/urls/
+> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/1.8/topics/http/urls/

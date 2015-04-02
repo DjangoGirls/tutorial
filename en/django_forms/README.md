@@ -82,14 +82,14 @@ We open `blog/urls.py` and add a line:
 
 And the final code will look like this:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
         url(r'^post/new/$', views.post_new, name='post_new'),
-    )
+    ]
 
 After refreshing the site, we see an `AttributeError`, since we don't have `post_new` view implemented. Let's add it right now.
 
@@ -282,7 +282,7 @@ Feel free to change the title or the text and save changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.7/topics/forms/
+If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## One more thing: deploy time!
 

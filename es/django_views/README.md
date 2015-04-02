@@ -34,4 +34,4 @@ Otro error! Lee lo que está pasando ahora:
 
 Esto es fácil: *TemplateDoesNotExist*. Vamos a arreglar este error, creando una plantilla en el siguiente capítulo!
 
-> Aprenda más acerca de las vistas de Django mediante la lectura de la documentación oficial: https://docs.djangoproject.com/en/1.7/topics/http/views/
+> Aprenda más acerca de las vistas de Django mediante la lectura de la documentación oficial: https://docs.djangoproject.com/en/1.8/topics/http/views/

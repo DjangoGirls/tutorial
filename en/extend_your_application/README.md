@@ -44,13 +44,13 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want to create a URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `blog/urls.py` file. It should look like this:
 
-    from django.conf.urls import patterns, include, url
+    from django.conf.urls import include, url
     from . import views
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    )
+    ]
 
 That one looks scary, but no worries - we will explain it for you:
 - it starts with `^` again -- "the beginning"
