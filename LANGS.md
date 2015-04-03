@@ -1,4 +1,4 @@
 * [English](en)
 * [Polski](pl)
-* [Український](uk)
+* [Українська](uk)
 * [Español (beta)](es)
