@@ -144,7 +144,7 @@ First off, let's see what files have changed since we last deployed:
 
     $ git status
 
-Let's tell `git` to include all the changes from the current directory:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
     $ git add -A .
 
