@@ -1,8 +1,6 @@
 # Tutoriel Django Girls
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution-ShareAlike 4.0 International. Pour obtenir une copie de cette licence, visitez http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -26,7 +24,7 @@ Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimo
 
  [2]: images/application.png
 
-> Si vous travaillez sur ce tutoriel dans votre coin et que vous n'avez pas de coach pour vous aider en cas de problème, venez sur le chat : [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur d'y poser vos questions !
+> Si vous travaillez sur ce tutoriel dans votre coin et que vous n'avez pas de coach pour vous aider en cas de problème, venez sur le chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur d'y poser vos questions !
 
 Okay, [commençons par le commencement...][3]
 
