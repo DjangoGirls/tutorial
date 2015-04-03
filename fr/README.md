@@ -4,6 +4,10 @@
 
 > Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution-ShareAlike 4.0 International. Pour obtenir une copie de cette licence, visitez http://creativecommons.org/licenses/by-sa/4.0/
 
+## Translation
+
+This tutorial has been translated from English to French by a group of awesome volunteers. Special thanks for help go to Lucie Daeye and Georges Dubus. <3 <3
+
 ## Introduction
 
 Avez vous déjà eu l'impression que la technologie prend une place de plus en plus importante, mais que vous êtes en quelque sort laissé·e à la traîne ? Avez vous déjà été curieux·se de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
