@@ -2,3 +2,4 @@
 * [Polski](pl)
 * [Українська](uk)
 * [Español (beta)](es)
+* [Français (beta)](fr)
