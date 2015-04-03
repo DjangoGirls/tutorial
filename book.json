@@ -6,7 +6,7 @@
     },
 
     "plugins": [
-        "anchors", "ga", "richquotes"
+        "anchors", "ga", "richquotes", "edit-link"
     ],
 
     "pluginsConfig": {
@@ -15,6 +15,10 @@
         },
         "richquotes" : {
             "todos" : true
+        },
+        "edit-link": {
+            "base": "https://github.com/djangogirls/tutorial/edit/master",
+            "label": "Edit This Page"
         }
     },
 
