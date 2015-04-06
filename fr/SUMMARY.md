@@ -7,7 +7,7 @@
 *   [L'éditeur de texte](code_editor/README.md)
 *   [Introduction à Python](python_introduction/README.md)
 *   [Django](django/README.md)
-*   [Installation de Django](django_start_project/README.md)
+*   [Installation de Django](django_installation/README.md)
 *   [Votre premier projet Django!](django_start_project/README.md)
 *   [Les modèles dans Django](django_models/README.md)
 *   [Django ORM and QuerySets](django_orm/README.md)
