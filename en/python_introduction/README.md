@@ -336,9 +336,9 @@ Give Python two more tasks:
 `>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
 - x `>` y means: x is greater than y
-- x `<` y means: x is smaller than y
-- x `<=` y means: x is smaller or equal to y
-- x `>=` y means: x is greater or equal to y
+- x `<` y means: x is less than y
+- x `<=` y means: x is less than or equal to y
+- x `>=` y means: x is greater than or equal to y
 
 Awesome! Wanna do one more? Try this:
 
