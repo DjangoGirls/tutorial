@@ -1,8 +1,6 @@
 # جانگو برای دختران
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > این پروژه تحت لیسانس Creative Commons Attribution-ShareAlike 4.0 می باشد. این لیسانس بین المللی بوده٫ برای نمایش و کپی این لیسانس٫ مراجعه کنید به http://creativecommons.org/licenses/by-sa/4.0/
 
