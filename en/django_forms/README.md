@@ -142,13 +142,13 @@ The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Saving the form
 
-Open `blog/views.py` once again. Currently all we have in `post_new` view is:
+Open `blog/views.py` once again. Currently all we have in the `post_new` view is:
 
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
 
-When we submit the form, we are back in the same view, but this time we have some more data in `request`, more specifically in `request.POST`. Remember that in the HTML file our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post", it's to do with the fact that we're "posting" data). Remember that in the HTML file our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle. First: when we access the page for the first time and we want a blank form. Second: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
 
