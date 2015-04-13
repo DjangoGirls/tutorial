@@ -80,7 +80,7 @@ Avons-nous bien créé un utilisateur dans notre base de données ? Pour le savo
 
 Cool ! L'utilisateur que nous avons créé dans cet exemple s'appelle Ola. Essayons maintenant d'obtenir l'instance de cet utilisateur :
 
-    me = User.objects.get(username='ola')
+    moi = User.objects.get(username='ola')
     
 
 Comme vous pouvez le voir, nous obtenons (`get`) un utilisateur (`User`) avec comme nom d'utilisateur (`username`) 'ola'. Cool ! Bien sûr, vous pouvez utiliser votre nom si vous le souhaitez.

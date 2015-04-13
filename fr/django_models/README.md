@@ -85,7 +85,7 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
         └── views.py
     
 
-Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour faire ça, nous allons nous servir du fichier `blog`. Vous allez devoir trouver la section `INSTALLED_APPS` et ajouter à la fin de la liste la ligne `'blog',``)`. Après ajout, cette section doit ressembler à ceci :
+Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour faire ça, nous allons nous servir du fichier `mysite/settings.py`. Vous allez devoir trouver la section `INSTALLED_APPS` et ajouter à la fin de la liste la ligne `'blog',``)`. Après ajout, cette section doit ressembler à ceci :
 
     INSTALLED_APPS = (
         'django.contrib.admin',
