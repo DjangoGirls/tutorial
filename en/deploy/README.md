@@ -11,9 +11,32 @@ The other external service we'll be using is [Github](http://www.github.com), wh
 We'll use Github as a stepping stone to transport our code to & from PythonAnywhere.
 
 
-## Git
+# Git
 
 Git is a "version control system" used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later. 
+
+
+## Installing Git
+
+### Windows
+
+You can download Git from [git-scm.com](http://git-scm.com/).  You can hit "next next next" on all steps except for one; in the 5th step entitled "Adjusting your PATH environment", choose "Run Git and associated Unix tools from the Windows command-line" (the bottom option).  Other than that, the defaults are fine.  Checkout Windows-style, commit Unix-style line endings is good.
+
+### MacOS
+
+Download Git from [git-scm.com](http://git-scm.com/) and just follow the instructions and just follow the instructions.
+
+
+### Linux
+
+Most distros will have this packaged, so try
+
+    sudo apt-get install git  # on debian, ubuntu
+    # or
+    sudo yum install git  # on fedora etc
+
+
+## Starting our Git repository
 
 Go to your console and run these commands, in the `djangogirls` directory:
 
