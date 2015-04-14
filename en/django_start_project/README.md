@@ -50,13 +50,15 @@ Let's ignore the other files for now - we won't change them. The only thing to r
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
+It would be nice to have the correct time on our website. Go to the [wikipedia timezones list](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
 
-You should find lines that contains `TIME_ZONE` and modify it to choose your own timezone (here's a full [list of timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
+In settings.py, find the line that contains `TIME_ZONE` and modify it to choose your own timezone:
 
 ```python
 TIME_ZONE = 'Europe/Berlin'
 ```
+
+Modifying "Europe/Berlin" as appropriate
 
 
 ## Setup a database
