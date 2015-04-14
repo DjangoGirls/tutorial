@@ -74,7 +74,7 @@ Go to [www.github.com](http://www.github.com') and sign up for a new, free user 
 
 On the next screen, you'll be shown your repo's clone URL.  Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
-<img src="images/github_get_repo_url_screenshotn.png" />
+<img src="images/github_get_repo_url_screenshot.png" />
 
 Now we need to hook up the Git repository on your computer to the one up on Github.
 
