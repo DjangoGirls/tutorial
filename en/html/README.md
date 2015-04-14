@@ -36,10 +36,12 @@ No error anymore! Congratulations :) However, your website isn't actually publis
 
 Add the following to your template file:
 
-    <html>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </html>
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
 So how does your website look now? Click to find out: http://127.0.0.1:8000/
 
@@ -62,15 +64,17 @@ We use `<head>` to tell the browser about the configuration of the page, and `<b
 
 For example, you can put a webpage title element inside the `<head>`, like this:
 
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </body>
-    </html>
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
 
 Save the file and refresh your page.
 
@@ -100,28 +104,30 @@ You can now have a little fun and try to customize your template! Here are a few
 
 Here's an example of a full template:
 
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 We've created three `div` sections here.
 

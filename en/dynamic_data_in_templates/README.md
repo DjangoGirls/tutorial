@@ -8,15 +8,19 @@ OK, so how will we achieve it?
 
 We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
-    from django.shortcuts import render
+```python
+from django.shortcuts import render
 
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Remember when we talked about including code written in different files? Now it is the moment when we have to include the model we have written in `models.py`. We will add this line `from .models import Post` like this:
 
-    from django.shortcuts import render
-    from .models import Post
+```python
+from django.shortcuts import render
+from .models import Post
+```
 
 Dot after `from` means *current directory* or *current application*. Since `views.py` and `models.py` are in the same directory we can simply use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
@@ -32,13 +36,15 @@ So now we are interested in a list of blog posts that are published and sorted b
 
 Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`:
 
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
+```
 
 Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
@@ -48,18 +54,17 @@ In the `render` function we already have parameter with `request` (so everything
 
 So finally our `blog/views.py` file should look like this:
 
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {'posts': posts})
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
 
 That's it! Time to go back to our template and display this QuerySet!
 
 If you want to read a little bit more about QuerySets in Django you should look here: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
-
-
-
 

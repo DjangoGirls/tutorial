@@ -15,15 +15,17 @@ We need to create a file with this name in the `blog` directory.
 
 Ok, let's open it and type the following code:
 
-    from django import forms
+```python
+from django import forms
 
-    from .models import Post
+from .models import Post
 
-    class PostForm(forms.ModelForm):
+class PostForm(forms.ModelForm):
 
-        class Meta:
-            model = Post
-            fields = ('title', 'text',)
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
+```
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
@@ -41,36 +43,40 @@ So once again we will create: a link to the page, a URL, a view and a template.
 
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```html
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Note that we want to call our new view `post_new`.
 
 After adding the line, your html file should now look like this:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
+```
 
 After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
@@ -78,32 +84,40 @@ After saving and refreshing the page http://127.0.0.1:8000 you will obviously se
 
 We open `blog/urls.py` and add a line:
 
+```python
     url(r'^post/new/$', views.post_new, name='post_new'),
+```
 
 And the final code will look like this:
 
-    from django.conf.urls import include, url
-    from . import views
+```python
+from django.conf.urls import include, url
+from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-        url(r'^post/new/$', views.post_new, name='post_new'),
-    ]
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+]
+```
 
 After refreshing the site, we see an `AttributeError`, since we don't have `post_new` view implemented. Let's add it right now.
 
-## post_new view
+## `post_new` view
 
 Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
-    from .forms import PostForm
+```python
+from .forms import PostForm
+```
 
 and our *view*:
 
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+```python
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's create quickly a template for the form.
 
@@ -120,15 +134,17 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 Ok, so let's see how the HTML in `post_edit.html` should look:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
 
 Time to refresh! Yay! Your form is displayed!
 
@@ -144,64 +160,79 @@ The answer is: nothing. We need to do a little bit more work in our *view*.
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is:
 
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+```python
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post", it's to do with the fact that we're "posting" data). Remember that in the HTML file our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle. First: when we access the page for the first time and we want a blank form. Second: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
 
-    if request.method == "POST":
-        [...]
-    else:
-        form = PostForm()
+```python
+if request.method == "POST":
+    [...]
+else:
+    form = PostForm()
+```
 
 It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that with:
 
-    form = PostForm(request.POST)
+```python
+form = PostForm(request.POST)
+```
 
 Easy! Next thing is to check if the form is correct (all required fields are set and no incorrect values will be saved). We do that with `form.is_valid()`.
 
 We check if the form is valid and if so, we can save it!
 
-    if form.is_valid():
-        post = form.save(commit=False)
-        post.author = request.user
-        post.save()
+```python
+if form.is_valid():
+    post = form.save(commit=False)
+    post.author = request.user
+    post.save()
+```
 
 Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
 `post.save()` will preserve changes (adding author) and a new blog post is created!
 
 Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
-    from django.shortcuts import redirect
+```python
+from django.shortcuts import redirect
+```
 
 Add it at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
-    return redirect('blog.views.post_detail', pk=post.pk)
+```python
+return redirect('blog.views.post_detail', pk=post.pk)
+```
 
 `blog.views.post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views we use `pk=post.pk`, where `post` is the newly created blog post!
 
 Ok, we talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
-    def post_new(request):
-        if request.method == "POST":
-            form = PostForm(request.POST)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+```python
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
 
 You problably have noticed that we are not setting publish date at all. We will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
 
 That is awesome!
+
 
 ## Form validation
 
@@ -224,51 +255,63 @@ Now we know how to add a new form. But what if we want to edit an existing one? 
 
 Open `blog/templates/blog/post_detail.html` and add this line:
 
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```python
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
 so that the template will look like:
 
+```html
     {% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="date">
-        {% if post.published_date %}
-            {{ post.published_date }}
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+{% block content %}
+    <div class="date">
+    {% if post.published_date %}
+        {{ post.published_date }}
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
 
 In `blog/urls.py` we add this line:
 
+```python
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
+```
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
 Let's open a `blog/views.py` and add at the very end of the file:
 
-    def post_edit(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm(instance=post)
-        return render(request, 'blog/post_edit.html', {'form': form})
+```python
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 This looks almost exactly the same as our `post_new` view, right? But not entirely. First thing: we pass an extra `pk` parameter from urls. Next: we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form we pass this post as an `instance` both when we save the form:
 
-    form = PostForm(request.POST, instance=post)
+```python
+form = PostForm(request.POST, instance=post)
+```
 
 and when we just opened a form with this post to edit:
 
-    form = PostForm(instance=post)
+```python
+form = PostForm(instance=post)
+```
 
 Ok, let's test if it works! Let's go to `post_detail` page. There should be an edit button in the top-right corner:
 

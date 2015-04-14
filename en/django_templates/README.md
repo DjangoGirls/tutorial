@@ -14,7 +14,9 @@ In the previous chapter we gave our template a list of posts in the `posts` vari
 
 To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
 
-    {{ posts }}
+```html
+{{ posts }}
+```
 
 Try this in your `blog/templates/blog/post_list.html` template (replace the second and third pair of `<div></div>` tags with `{{ posts }}` line), save the file and refresh the page to see the results:
 
@@ -26,9 +28,11 @@ As you can see, all we've got is this:
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
 
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
 Try this in your template.
 
@@ -36,17 +40,19 @@ Try this in your template.
 
 It works! But we want them to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```
 
 Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:
 
@@ -68,7 +74,7 @@ It'd be good to see if your website will still be working on Heroku, right? Let'
     ...
     $ git push heroku master
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add `published_date`!), then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit, you have earned a break. :)
 
