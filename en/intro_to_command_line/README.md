@@ -5,17 +5,19 @@
 - You will also hear it called a **"terminal"** or "command prompt".  In this version of linux the program is called **Konsole**
 - Windows has one, too
 - Your **home** directory is where the terminal always starts when you open a new one.  The symbol for it is **~**
-- It looks like this: ![Terminal](https://github.com/k0d3k1ttn/tutorial/blob/master/en/images/terminal.jpg)
+- It looks like this: 
+
+![Terminal](https://github.com/k0d3k1ttn/tutorial/blob/master/en/images/terminal.jpg)
 
 ## HowTo ##
 
 - Open a new terminal window
-	- Click the Konsole icon on the quickstart panel
-//TODO add image
-	- **OR** open the Mint menu
-//TODO add image
+	- Click the Konsole icon on the quickstart panel ![Konsole Toolbar](https://github.com/k0d3k1ttn/tutorial/blob/master/en/images/konsole_toolbar.jpg)
+	- **OR** open the Mint menu ![Mint Toolbar](https://github.com/k0d3k1ttn/tutorial/blob/master/en/images/mint_toolbar.jpg)
 	- Type ```konsole``` in the search bar
 	- ```Enter```
+
+![Mint Search](https://github.com/k0d3k1ttn/tutorial/blob/master/en/images/searchbar.jpg)
 
 - Find out where you are on the computer
 	- Print working directory
