@@ -92,7 +92,7 @@ Enter your github username and password, and you should see something like this:
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
 
-//TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention
+<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
 Your code is now on Github.  Go and check it out!  You'll find it's in fine company - Django, the djangogirls tutorial, and many other great open source software projects also host their code on Github :)
 
@@ -155,7 +155,7 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     Successfully installed django-1.8 whitenoise-1.0.6
 
 
-// TODO: think about using requirements.txt instead of pip install.
+<!--TODO: think about using requirements.txt instead of pip install.-->
 
 
 ### Collecting static files.
