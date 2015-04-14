@@ -52,11 +52,12 @@ Let's make some changes in `mysite/settings.py`. Open the file using the code ed
 
 It would be nice to have the correct time on our website. Go to http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
 
-You should find lines that contain `USE_TZ` and `TIME_ZONE` and modify them to look like this, substituting `Europe/Berlin` with your relevant time zone:
+You should find lines that contains `TIME_ZONE` and modify it to choose your own timezone (here's a full [list of timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
 
-    TIME_ZONE = 'Europe/Berlin'
+```python
+TIME_ZONE = 'Europe/Berlin'
+```
 
-    USE_TZ = False
 
 ## Setup a database
 
