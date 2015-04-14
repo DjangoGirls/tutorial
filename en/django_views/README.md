@@ -10,15 +10,20 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 
 OK, let's open up this file and see what's in there:
 
-    from django.shortcuts import render
+```python
+from django.shortcuts import render
 
-    # Create your views here.
+# Create your views here.
+```
+
 
 Not too much stuff here yet. The simplest *view* can look like this.
 
-    def post_list(request):
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
-        return render(request, 'blog/post_list.html', {})
 
 As you can see, we created a method (`def`) called `post_list` that takes `request` and `return` a method `render` that will render (put together) our template `blog/post_list.html`.
 
