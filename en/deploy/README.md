@@ -11,9 +11,6 @@ The other external service we'll be using is [Github](http://www.github.com), wh
 We'll use Github as a stepping stone to transport our code to & from PythonAnywhere.
 
 
-TODO: STATIC_ROOT in settings.py
-
-
 ## Git
 
 Git is a "version control system" used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later. 
