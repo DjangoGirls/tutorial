@@ -413,7 +413,9 @@ This will put you back into the command prompt.
 
 Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
-    print('Hello, Django girls!')
+```python
+print('Hello, Django girls!')
+```
 
 Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
 
@@ -450,7 +452,9 @@ Lots of things in code should only be executed when given conditions are met. Th
 
 Replace the code in your **python_intro.py** file to this:
 
-    if 3 > 2:
+```python
+if 3 > 2:
+```
 
 If we saved this and ran it, we'd see an error like this:
 
@@ -461,8 +465,10 @@ If we saved this and ran it, we'd see an error like this:
 
 Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
-    if 3 > 2:
-        print('It works!')
+```python
+if 3 > 2:
+    print('It works!')
+```
 
 Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the code results in true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
 
@@ -475,10 +481,12 @@ Save it and give it another run:
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
-    if 5 > 2:
-        print('5 is indeed greater than 2')
-    else:
-        print('5 is not greater than 2')
+```python
+if 5 > 2:
+    print('5 is indeed greater than 2')
+else:
+    print('5 is not greater than 2')
+```
 
 When this was run it would print out:
 
@@ -487,13 +495,15 @@ When this was run it would print out:
 
 If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
-    name = 'Sonja'
-    if name == 'Ola':
-        print('Hey Ola!')
-    elif name == 'Sonja':
-        print('Hey Sonja!')
-    else:
-        print('Hey anonymous!')
+```python
+name = 'Sonja'
+if name == 'Ola':
+    print('Hey Ola!')
+elif name == 'Sonja':
+    print('Hey Sonja!')
+else:
+    print('Hey anonymous!')
+```
 
 and executed:
 
@@ -519,11 +529,13 @@ Remember functions like `len()` that you can execute in Python? Well, good news,
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
-    def hi():
-        print('Hi there!')
-        print('How are you?')
+```python
+def hi():
+    print('Hi there!')
+    print('How are you?')
 
-    hi()
+hi()
+```
 
 Okay, our first function is ready!
 
@@ -537,19 +549,23 @@ Let's run this now and see what happens:
 
 That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
 
-    def hi(name):
+```python
+def hi(name):
+```
 
 As you can see, we now gave our function a parameter that we called `name`:
 
-    def hi(name):
-        if name == 'Ola':
-            print('Hi Ola!')
-        elif name == 'Sonja':
-            print('Hi Sonja!')
-        else:
-            print('Hi anonymous!')
+```python
+def hi(name):
+    if name == 'Ola':
+        print('Hi Ola!')
+    elif name == 'Sonja':
+        print('Hi Sonja!')
+    else:
+        print('Hi anonymous!')
 
-    hi()
+hi()
+```
 
 As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
 
@@ -563,7 +579,9 @@ Oops, an error. Luckily, Python gives us a pretty useful error message.
 It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function.
 Let's fix it at the bottom of the file:
 
-    hi("Ola")
+```python
+hi("Ola")
+```
 
 and run it again:
 
@@ -572,7 +590,9 @@ and run it again:
 
 And if we change the name?
 
-    hi("Sonja")
+```python
+hi("Sonja")
+```
 
 and run it:
 
@@ -587,10 +607,12 @@ This is awesome, right? This way you don't have to repeat yourself every time yo
 
 Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
 
-    def hi(name):
-        print('Hi ' + name + '!')
+```python
+def hi(name):
+    print('Hi ' + name + '!')
 
-    hi("Rachel")
+hi("Rachel")
+```
 
 Let's call the code now:
 
@@ -607,23 +629,29 @@ As we mentioned, programmers are lazy, they don't like to repeat themselves. Pro
 
 Still remember lists? Let's do a list of girls:
 
-    girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+```python
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+```
 
 We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
-    for name in girls:
+```python
+for name in girls:
+```
 
 The ```for``` statement behaves similarly to the ```if``` statement, code below both of these need to be indented four spaces.
 
 Here is the full code that will be in the file:
 
-    def hi(name):
-        print('Hi ' + name + '!')
+```python
+def hi(name):
+    print('Hi ' + name + '!')
 
-    girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    for name in girls:
-        hi(name)
-        print('Next girl')
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+for name in girls:
+    hi(name)
+    print('Next girl')
+```
 
 and when we run it:
 
