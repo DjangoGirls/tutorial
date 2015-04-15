@@ -1,8 +1,9 @@
 # Domain
 
-Heroku gave you a domain, but it's long, hard to remember, and ugly. It'd be awesome to have a domain name that is short and easy to remember, right?
+PythonAnywhere gave you a free domain, but maybe you don't want to have ".pythonanywhere.com" at the end of your blog URL.  Maybe you want your blog to just live at "www.infinite-kitten-pictures.org" or "www.3d-printed-steam-engine-parts.com" or "www.antique-buttons.com" or "www.mutant-unicornz.net", or whatever it'll be.
 
-In this chapter we will teach you how to buy a domain and direct it to Heroku!
+Here we'll talk a bit about where to get a domain, and how to hook it up to your web app on PythonAnywhere.  However, you should know that most domains cost money, and PythonAnywere also charges a monthly fee to use your own domain name -- it's not much money in total, but this is probably something you only want to do if you're really committed!
+
 
 ## Where to register a domain?
 
@@ -10,23 +11,12 @@ A typical domain costs around $15 a year. There are cheaper and more expensive o
 
 Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless.
 
-## How to register domain in IWantMyName?
+You can also get domains for free.  [dot.tk](http://www.dot.tk) is one place to get one, but you should be aware that free domains sometimes feel a bit cheap -- if your site is going to be for a professional business, you might want to think about paying for a "proper" domain that ends in `.com`.
 
-Go to [iwantmyname](http://iwantmyname.com) and type a domain you want to have in the search box.
 
-![](images/1.png)
+## How to point your domain at PythonAnywhere
 
-You should now see a list of all available domains with the term you put in the search box. As you can see, a smiley face indicates that the domain is available for you to buy, and a sad face that it is already taken.
-
-![](images/2.png)
-
-We've decided to buy `djangogirls.in`:
-
-![](images/3.png)
-
-Go to checkout. You should now sign up for iwantmyname if you don't have an account yet. After that, provide your credit card info and buy a domain!
-
-After that, click `Domains` in the menu and choose your newly purchased domain. Then locate and click on the `manage DNS records` link:
+If you went through *iwantmyname.com*, click `Domains` in the menu and choose your newly purchased domain. Then locate and click on the `manage DNS records` link:
 
 ![](images/4.png)
 
@@ -37,19 +27,43 @@ Now you need to locate this form:
 And fill it in with the following details:
 - Hostname: www
 - Type: CNAME
-- Value: your domain from Heroku (for example djangogirls.herokuapp.com)
-- TTL: 3600
+- Value: your domain from PythonAnywhere (for example djangogirls.pythonanywhere.com)
+- TTL: 60
 
 ![](images/6.png)
 
 Click the Add button and Save changes at the bottom.
 
-It can take up to a couple of hours for your domain to start working, so be patient!
 
-## Configure domain in Heroku
+> **Note** If you used a different domain provider, the exact UI for finding your DNS / CNAME settings will be different, but your objective is the same: to set up a CNAME that points your new domain at `yourusername.pythonanywhere.com`.
 
-You also need to tell Heroku that you want to use your custom domain.
+It can take a few minutes for your domain to start working, so be patient!
 
-Go to the [Heroku Dashboard](https://dashboard.heroku.com/apps), login to your Heroku account and choose your app. Then go into app Settings and add your domain in the `Domains` section and save your changes.
 
-That's it!
+## Configure the domain via a web app on PythonAnywhere.
+
+You also need to tell PythonAnywhere that you want to use your custom domain.
+
+Go to the [PythonAnywhere Accounts page](https://www.pythonanywhere.com/account/) and upgrade your account.  The cheapest option (a "Hacker" plan) is fine to start with, you can always upgrade it later when you get super-famous and have millions of hits.
+
+Next, go over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and note down a couple of things:
+
+* Copy the **path to your virtualenv** and put it somewhere safe
+* Click through to your **wsgi config file**, copy the contents, and paste them somewhere safe.
+
+Next, **Delete** your old web app.  Don't worry, this doesn't delete any of your code, it just switches off the domain at *yourusername.pythonanywhere.com*.  Next, create a new web app, and follow these steps:
+
+* Enter your new domain name
+* Choose "manual configuration"
+* Pick Python 3.4
+* And we're done!
+
+When you get taken back to the web tab.
+
+* Paste in the virtualenv path you saved earlier
+* Click through to the wsgi configuration file, and paste in the contents from your old config file
+
+Hit reload web app, and you should find your site is live on its new domain!
+
+If you run into any problems, hit the "Send feedback" link on the PythonAnywhere site, and one of their friendly admins will be there to help you in no time.
+
