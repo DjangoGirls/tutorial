@@ -133,7 +133,7 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 > __Note__: PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from github onto PythonAnywhere by creating a "clone" of the repo:
+Let's pull down our code from github onto PythonAnywhere by creating a "clone" of the repo.  Type this into the console on PythonAnywhere:
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
