@@ -88,7 +88,7 @@ OK, enough of strings. So far you've learned about:
 
 - __the prompt__ - typing commands (code) into the Python prompt results in answers in Python
 - __numbers and strings__ - in Python numbers are used for math and strings for text objects
-- __operators__ - like + and *, combine values to produce a new one
+- __operators__ - like + and \*, combine values to produce a new one
 - __functions__ - like upper() and len(), perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
@@ -416,6 +416,9 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 ```python
 print('Hello, Django girls!')
 ```
+
+> **Note** You should notice one of the coolest thing about code editors: colours!  In the Python console, everything was the same colour, but now you should see that the `print` function is a different colour from the string inside it. That's called "syntax highlighting", and it's a really useful helping hand when coding.  Watch out for the colour of things, and you'll get a hint for when you forget to close a string, or make a typo in a keyword name (like the `def` in a function, which we'll see below).  This is one of the reasons we use a code editor :)
+
 
 Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
 
