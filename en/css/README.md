@@ -95,6 +95,7 @@ We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
+```
     {% load staticfiles %}
     <html>
         <head>
@@ -117,6 +118,7 @@ Your file should now look like this:
             {% endfor %}
         </body>
     </html>
+```
 
 OK, save the file and refresh the site!
 
