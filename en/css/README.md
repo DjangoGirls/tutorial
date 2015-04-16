@@ -93,7 +93,9 @@ Then, we need to also tell our HTML template that we added some CSS. Open the `b
 We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
 
 ```
+```
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 ```
 
 We just told our template where our CSS file is located.
