@@ -100,7 +100,7 @@ We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
-```
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -131,7 +131,7 @@ OK, save the file and refresh the site!
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
-```
+```css
     body {
         padding-left: 15px;
     }
@@ -143,7 +143,7 @@ Add this to your CSS, save the file and see how it works!
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
-```
+```html
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
@@ -151,7 +151,7 @@ This line will import a font called *Lobster* from Google Fonts (https://www.goo
 
 Now add the line `font-family: 'Lobster';` in the CSS file `static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
 
-```
+```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
@@ -167,7 +167,7 @@ As mentioned above, CSS has a concept of classes, which basically allows you to 
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
-```
+```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
@@ -175,7 +175,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 
 And now add a class `post` to your `div` containing a blog post.
 
-```
+```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
@@ -185,7 +185,7 @@ And now add a class `post` to your `div` containing a blog post.
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `djangogirls/static/css/blog.css` file:
 
-```
+```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -236,7 +236,7 @@ We will now add declaration blocks to different selectors. Selectors starting wi
 ```
 
 Then surround the HTML code which displays the posts with declarations of classes. Replace this:
-```
+```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -248,7 +248,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 
 in the `blog/templates/blog/post_list.html` with this:
 
-```
+```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
