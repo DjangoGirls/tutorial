@@ -18,6 +18,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
+```
     {% load staticfiles %}
     <html>
         <head>
@@ -49,9 +50,11 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
             </div>
         </body>
     </html>
+```
 
 Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
+```
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -65,16 +68,20 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
             </div>
         </div>
     </body>
+```
 
 We basically replaced everything between `{% for post in posts %}{% endfor %}` with:
 
+```
     {% block content %}
     {% endblock %}
+```
 
 What does it mean? You just created a `block`, which is a template tag that allows you to insert HTML in this block in other templates that extend `base.html`. We will show you how to do this in a moment.
 
 Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else other than what's inside the body and then also delete `<div class="page-header"></div>`, so the file will look like this:
 
+```
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -84,13 +91,17 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
+```
 
 And now add this line to the beginning of the file:
 
+```
     {% extends 'blog/base.html' %}
+```
 
 It means that we're now extending the `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:
 
+```
     {% extends 'blog/base.html' %}
 
     {% block content %}
@@ -104,6 +115,7 @@ It means that we're now extending the `base.html` template in `post_list.html`. 
             </div>
         {% endfor %}
     {% endblock content %}
+```
 
 That's it! Check if your website is still working properly :)
 
