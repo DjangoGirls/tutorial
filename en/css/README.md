@@ -1,10 +1,8 @@
-# CSS - make it pretty!
+# Appendix B: CSS #
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+## What is it ? ##
 
-## What is CSS?
-
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as make-up for our webpage ;).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in markup language (like HTML).
 
 But we don't want to start from scratch again, right? We will, once more, use something that has already been done by programmers and released on the Internet for free. You know, reinventing the wheel is no fun.
 

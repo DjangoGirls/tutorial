@@ -1,4 +1,4 @@
-# Template extending
+# Appendix C: Get Crazy with Templates #
 
 Another nice thing Django has for you is __template extending__. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
@@ -120,3 +120,6 @@ It means that we're now extending the `base.html` template in `post_list.html`. 
 That's it! Check if your website is still working properly :)
 
 > If you have an error `TemplateDoesNotExists` that says that there is no `blog/base.html` file and you have `runserver` running in the console, try to stop it (by pressing Ctrl+C - Control and C buttons together) and restart it by running a `python manage.py runserver` command.
+
+
+[Use These Template Skills to Make Forms](django_forms/README.md)
