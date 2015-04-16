@@ -91,8 +91,9 @@ O selektorach CSS możesz przeczytać więcej tutaj: [CSS Selectors in w3schools
 
 Następnie musimy także pokazać naszemu szablonowi HTML że dodaliśmy nowe style CSS. Otwórz plik `blog/templates/blog/post_list.html` i dodaj tą linijkę na samym jego początku:
 
+```
     {% load staticfiles %}
-
+```
 
 Tym sposobem HTML załaduje nasze style CSS :) Następnie, pomiędzy `<head>` i `</head>`, zaraz za linkami do Boostrapa, dodaj poniższą linijkę. Przeglądarka czyta pliki w kolejności w której je wpiszesz, dzięki temu możemy nadpisać niektóre style Bootstrapa.
 

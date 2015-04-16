@@ -94,8 +94,9 @@ Leer sobre [Selectores de CSS en w3schools][4].
 
 Entonces, necesitamos decirle a nuestra plantilla HTML que hemos añadido CSS. Abra el fichero `blog/templates/blog/post_list.html` y añade esta línea al principio:
 
+```
     {% load staticfiles %}
-    
+```    
 
 Estamos cargando archivos estáticos aquí:). Luego, entre el `< head >` `y/< / head >`, después de los enlaces a los archivos CSS Bootstrap (el navegador lee los archivos en el orden que los das, así que nuestro archivo de código puede sobreescribir partes del código en de Bootstrap), añade la siguiente línea:
 
