@@ -7,7 +7,7 @@
 * [Introduction to HTML](html/README.md)
 * [Django Models](django_models/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
-* [Using Templates](django_templates/README.md)
+* [Using Templates](dynamic_data_in_templates/README.md)
 * [Adding Another View -- A Review](django_review/README.md)
 * [Appendix A: Deploy with Heroku](deploy/README.md)
 * [Appendix B: CSS](css/README.md)

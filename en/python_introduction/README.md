@@ -27,6 +27,9 @@
     student@adminuser-VirtualBox:~/workspace > python3 hello.py 
     Hello, world!
 
+
+- Set up virtualenv
+
 - Assign a variable
 	- ```<variable> = <value>```
 
