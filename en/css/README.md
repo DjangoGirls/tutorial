@@ -44,10 +44,10 @@ First, we need to create a directory to store our static files in. Go ahead and 
 
 Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
-```python
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static"),
-    )
+```Python
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 ```
 
 This way Django will know where to find your static files.
