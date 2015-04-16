@@ -44,7 +44,7 @@ First, we need to create a directory to store our static files in. Go ahead and 
 
 Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
-```
+```python
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
     )
@@ -68,7 +68,7 @@ But let's do at least a little. Maybe we could change the color of our header? T
 
 In your `static/css/blog.css` file you should add the following code:
 
-```
+```css
     h1 a {
         color: #FCA205;
     }
@@ -84,14 +84,14 @@ Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_sele
 
 Then, we need to also tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-```
-     {% load staticfiles %}
+```html
+{% load staticfiles %}
 ```
 
 We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
 
-```
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
 We just told our template where our CSS file is located.
