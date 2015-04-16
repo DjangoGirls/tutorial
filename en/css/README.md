@@ -81,7 +81,9 @@ Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_sele
 
 Then, we need to also tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-    {% load staticfiles %}
+```
+     {% load staticfiles %}
+```
 
 We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
 
