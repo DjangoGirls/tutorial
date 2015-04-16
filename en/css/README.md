@@ -18,9 +18,10 @@ It was written by programmers who worked for Twitter and is now developed by vol
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file (`blog/templates/blog/post_list.html`):
 
+```
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
+```
 
 This doesn't add any files to your project. It just points to files that exist on the internet.
 Just go ahead, open your website and refresh the page. Here it is!
@@ -45,9 +46,11 @@ First, we need to create a directory to store our static files in. Go ahead and 
 
 Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
 
+```
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, "static"),
     )
+```
 
 This way Django will know where to find your static files.
 
@@ -67,9 +70,11 @@ But let's do at least a little. Maybe we could change the color of our header? T
 
 In your `static/css/blog.css` file you should add the following code:
 
+```
     h1 a {
         color: #FCA205;
     }
+```
 
 `h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (e.g. when we have in code something like: `<h1><a href="">link</a></h1>`).  In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
@@ -126,9 +131,11 @@ OK, save the file and refresh the site!
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
+```
     body {
         padding-left: 15px;
     }
+```
 
 Add this to your CSS, save the file and see how it works!
 
@@ -136,16 +143,20 @@ Add this to your CSS, save the file and see how it works!
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
+```
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
 Now add the line `font-family: 'Lobster';` in the CSS file `static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
 
+```
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
     }
+```
 
 ![Figure 14.3](images/font.png)
 
@@ -156,20 +167,25 @@ As mentioned above, CSS has a concept of classes, which basically allows you to 
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
+```
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
+```
 
 And now add a class `post` to your `div` containing a blog post.
 
+```
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
+```
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `djangogirls/static/css/blog.css` file:
 
+```
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -217,9 +233,10 @@ We will now add declaration blocks to different selectors. Selectors starting wi
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+```
 
 Then surround the HTML code which displays the posts with declarations of classes. Replace this:
-
+```
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -227,9 +244,11 @@ Then surround the HTML code which displays the posts with declarations of classe
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
+```
 
 in the `blog/templates/blog/post_list.html` with this:
 
+```
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -245,6 +264,7 @@ in the `blog/templates/blog/post_list.html` with this:
             </div>
         </div>
     </div>
+```
 
 Save those files and refresh your website.
 
