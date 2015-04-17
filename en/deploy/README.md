@@ -231,7 +231,10 @@ Now our code is on PythonAnywhere, our virtualenv is ready, the static files are
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab, and hit **Add a new web app**.
 
-In the dialog, after confirming your domain name, choose **manual configuration** (not "Django". We're too cool for the default PythonAnywhere Django setup). Next, choose **Python 3.4**, and click Next to finish the wizard.  
+In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
+
+> **Note** make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
+
 
 ### Setting the virtualenv
 
@@ -252,7 +255,7 @@ Django works using the "WSGI protocol", a standard for serving websites using Py
 Click the link to it at the top of the web tab (it'll be named something like 
 `/var/www/yourusername_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
-Delete all the current contents, and replace them with:
+Delete all the current contents, and replace them with something like this -- you'll need to change "edith" to your own username:
 
 ```python
 import os
@@ -268,6 +271,8 @@ from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
+
+> **Note** don't forget to substitute in your own username instead of "edith"
 
 This file's job is to tell PythonAnywhere where our web app lives (so make sure to substitute your own username for "edith" above) and what the Django settings file's name is.  It also sets up the "whitenoise" static files tool.
 
