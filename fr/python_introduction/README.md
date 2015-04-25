@@ -438,7 +438,7 @@ Pour l'instant, on a écrit tout notre code python directement dans l'interprét
 
 Pour quitter l'interpréteur Python que nous sommes en train d'utiliser, il suffit de taper la fonction ~ ~ ~ exit() ~ ~ ~ :
 
-    >>>exit()
+    >>> exit()
     $
     
 
