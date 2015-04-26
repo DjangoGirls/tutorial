@@ -14,16 +14,18 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file and see what it looks like:
 
-    from django.conf.urls import include, url
-    from django.contrib import admin
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
 
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
 
-        url(r'^admin/', include(admin.site.urls)),
-    ]
+    url(r'^admin/', include(admin.site.urls)),
+]
+```
 
 As you can see, Django already put something here for us.
 
@@ -31,7 +33,9 @@ Lines that start with `#` are comments - it means that those lines won't be run 
 
 The admin URL, which you visited in previous chapter is already here:
 
+```python
     url(r'^admin/', include(admin.site.urls)),
+```
 
 It means that for every URL that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file -- it's more readable and cleaner.
 
@@ -70,13 +74,15 @@ Go ahead, delete the commented lines (lines starting with `#`) and add a line th
 
 Your `mysite/urls.py` file should now look like this:
 
-    from django.conf.urls import include, url
-    from django.contrib import admin
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
 
-    urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
-        url(r'', include('blog.urls')),
-    ]
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
+]
+```
 
 Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
@@ -87,16 +93,20 @@ When writing regular expressions in Python it is always done with `r` in front o
 
 Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
-    from django.conf.urls import include, url
-    from . import views
+```python
+from django.conf.urls import include, url
+from . import views
+```
 
 Here we're just importing Django's methods and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
 
 After that, we can add our first URL pattern:
 
-    urlpatterns = [
-        url(r'^$', views.post_list),
-    ]
+```python
+urlpatterns = [
+    url(r'^$', views.post_list),
+]
+```
 
 As you can see, we're now assigning a `view` called `post_list` to `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) - so only an empty string will match. And that's correct, because in Django url resolvers, 'http://127.0.0.1:8000/' is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 

@@ -83,15 +83,17 @@ You will notice that a new `blog` directory is created and it contains a number 
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+```
 
 ### Creating a blog post model
 
@@ -99,24 +101,26 @@ In the `blog/models.py` file we define all objects called `Models` - this is a p
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 
-    from django.db import models
-    from django.utils import timezone
+```python
+from django.db import models
+from django.utils import timezone
 
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
 
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
-        def __str__(self):
-            return self.title
+    def __str__(self):
+        return self.title
+```
 
 > Double-check that you used two undescore characters (`_`) on each side of `str`. Those are used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 

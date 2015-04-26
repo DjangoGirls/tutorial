@@ -2,11 +2,13 @@
 
 In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
+
 ## What is a QuerySet?
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySet allows you to read the data from database, filter it and order it.
 
 It's easiest to learn by example. Let's try this, shall we?
+
 
 ## Django shell
 
@@ -20,6 +22,7 @@ The effect should be like this:
     >>>
 
 You're now in Django's interactive console. It's just like Python prompt but with some additional Django magic :). You can use all the Python commands here too, of course.
+
 
 ### All objects
 
@@ -40,6 +43,7 @@ This is simple: we import model `Post` from `blog.models`. Let's try displaying 
     [<Post: my post title>, <Post: another post title>]
 
 It's a list of the posts we created earlier! We created these posts using the Django admin interface. However, now we want to create new posts using python, so how do we do that?
+
 
 ### Create object
 
@@ -73,9 +77,11 @@ Hurray! Wanna check if it worked?
     >>> Post.objects.all()
     [<Post: Sample title>]
 
+
 ### Add more posts
 
 You can now have a little fun and add more posts to see how it works. Add 2-3 more and go ahead to the next part.
+
 
 ### Filter objects
 
@@ -108,6 +114,7 @@ Now try to get list of published posts again (press the up arrow button 3 times 
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
+
 
 ### Ordering objects
 
