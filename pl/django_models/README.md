@@ -145,7 +145,7 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 
 Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Powinnaś zajrzeć do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
-A co to takiego `def publish(self):`? To nic innego, jak nasza metoda publikująca wpis, o której wspominałyśmy wcześniej. Słowo `def` oznacza, że mamy do czynienia z funkcją/metodą. Z kolei `publish` to nazwa metody. Możesz użyć innej, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji (czyli gdybyś chciała dodać metodę, która oblicza średnią cen, mogłabyś ją nazwać `calculate_average_price` lub <0>oblicz_srednia_cene</0>).
+A co to takiego `def publish(self):`? To nic innego, jak nasza metoda publikująca wpis, o której wspominałyśmy wcześniej. Słowo `def` oznacza, że mamy do czynienia z funkcją/metodą. Z kolei `publish` to nazwa metody. Możesz użyć innej, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji (czyli gdybyś chciała dodać metodę, która oblicza średnią cen, mogłabyś ją nazwać `calculate_average_price` lub `oblicz_srednia_cene`).
 
 Bardzo często metody coś zwracają (`return`). Przykład tego znajdziesz w metodzie `__str__`. W tym przypadku wywołując metodę `__str__()` otrzymamy tekst (**string**) zawierający tytuł wpisu.
 
