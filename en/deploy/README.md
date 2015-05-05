@@ -1,19 +1,19 @@
 # Deploy!
 
-> __Note__: The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Note**: The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
-As you learned, a website has to be located on a server. There are a lot of providers, but we will one of the ones with the simplest deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
+As you learned, a website has to be located on a server. There are a lot of providers, but we will use one of the ones with the simplest deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
 
 The other external service we'll be using is [Github](http://www.github.com), which is a code hosting service.  There are others out there, but almost all programmers have a Github account these days, and now so will you!
 
-We'll use Github as a stepping stone to transport our code to & from PythonAnywhere.
+We'll use Github as a stepping stone to transport our code to and from PythonAnywhere.
 
 
 # Git
 
-Git is a "version control system" used by a lot of programmers - software which keeps track of changes to a file or set of files over time so that you can recall specific versions later. 
+Git is a "version control system" used by a lot of programmers - software which tracks changes to files over time so that you can recall specific versions later.  A bit like "track changes" in Microsoft Word, but much more powerful.
 
 
 ## Installing Git
@@ -24,12 +24,12 @@ You can download Git from [git-scm.com](http://git-scm.com/).  You can hit "next
 
 ### MacOS
 
-Download Git from [git-scm.com](http://git-scm.com/) and just follow the instructions and just follow the instructions.
+Download Git from [git-scm.com](http://git-scm.com/) and just follow the instructions.
 
 
 ### Linux
 
-Most distros will have this packaged, so try
+You probably have this installed already, so just try:
 
     sudo apt-get install git  # on debian, ubuntu
     # or
@@ -40,12 +40,12 @@ Most distros will have this packaged, so try
 
 Go to your console and run these commands, in the `djangogirls` directory:
 
+> **Note**: Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config user.name "Your Name"
     $ git config user.email you@example.com
-
-> __Note__: Check your current working directory with a `pwd` command before initializing the repository. You should be in the `djangogirls` folder.
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever)
 
@@ -56,7 +56,7 @@ Git will track changes to all the files and folders in this directory, but there
     myvenv
     db.sqlite3
 
-The dot on the beginning of the file name is important!
+> **Note**: The dot on the beginning of the file name is important!
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what will be done, to prevent any surprises from happening (e.g. wrong files will be added or commited). The `git status` command returns information about any untracked/modifed/staged files, branch status and much more. The output should be similar to:
 
@@ -86,9 +86,9 @@ And finally we save our changes. Go to your console and run these commands:
      create mode 100644 mysite/wsgi.py
 
 
-## Pushing our code to github
+## Pushing our code to GitHub
 
-Go to [www.github.com](http://www.github.com') and sign up for a new, free user account.  Then, create a new repository, giving it the name "my-first-blog".  Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Go to [GitHub.com](http://www.github.com') and sign up for a new, free user account.  Then, create a new repository, giving it the name "my-first-blog".  Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 <img src="images/new_github_repo.png" />
 
@@ -103,7 +103,7 @@ Now we need to hook up the Git repository on your computer to the one up on Gith
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
 
-Enter your github username and password, and you should see something like this:
+Enter your GitHub username and password, and you should see something like this:
 
     Username for 'https://github.com': hjwp
     Password for 'https://hjwp@github.com':
@@ -116,7 +116,7 @@ Enter your github username and password, and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-Your code is now on Github.  Go and check it out!  You'll find it's in fine company - Django, the djangogirls tutorial, and many other great open source software projects also host their code on Github :)
+Your code is now on Github.  Go and check it out!  You'll find it's in fine company - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on Github :)
 
 
 # Setting up our blog on PythonAnywhere
@@ -126,7 +126,7 @@ Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 
-> __Note__: When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so either choose your own nickname, or a name for what your blog is all about.
+> **Note**: When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so either choose your own nickname, or a name for what your blog is all about.
 
 
 ## Pulling our code down on PythonAnywhere
@@ -182,7 +182,7 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 
 ### Collecting static files.
 
-We you wondering what "whitenoise" thing was?  It's a tool for serve so-called "static files".  Static files work differently on servers compared to on our own computer, and we need a tool like "whitenoise" to serve them.
+Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called "static files".  Static files work differently on servers compared to on our own computer, and we need a tool like "whitenoise" to serve them.
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
@@ -233,7 +233,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, the static files are
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab, and hit **Add a new web app**.
 
-In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
+In the dialog, after confirming your domain name, choose **manual configuration** (*not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
 
 > **Note** make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
 
