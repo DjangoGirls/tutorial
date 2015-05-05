@@ -233,7 +233,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, the static files are
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab, and hit **Add a new web app**.
 
-In the dialog, after confirming your domain name, choose **manual configuration** (*not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
+In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
 
 > **Note** make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
 
