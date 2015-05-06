@@ -16,6 +16,7 @@ The names of some files and directories are very important for Django. You shoul
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. You can do that by typing the following command: `myvenv\Scripts\activate` on Windows or 
 `myvenv/bin/activate` on Mac OS / Linux.
 
+> **Note** Double-check that you included the period (`.`) at the end of the command, it's important because it tells the script to install Django in your current directory.
 
 In console you should run (remember that you don't type `(myvenv) ~/djangogirls$`, OK?):
 
@@ -23,9 +24,7 @@ In console you should run (remember that you don't type `(myvenv) ~/djangogirls$
 
 On Windows:
 
-    (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
-
-> **Note** Double-check that you included the period (`.`) at the end of the command, it's important because it tells the script to install Django in your current directory.
+    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
