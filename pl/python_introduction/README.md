@@ -73,7 +73,7 @@ Za pomocą cudzysłowu:
     "Runnin' down the hill"
 
 
-lub poprzedzając apostrof odwróconym ukośnikiem (``):
+lub poprzedzając apostrof odwróconym ukośnikiem (`\`):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
