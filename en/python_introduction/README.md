@@ -406,7 +406,7 @@ So far we've been writing all our python code in the intepreter, which limits us
 
 To exit from the Python interpreter that we've been using, simply type the ```exit()``` function:
 
-    >>>exit()
+    >>> exit()
     $
 
 This will put you back into the command prompt.

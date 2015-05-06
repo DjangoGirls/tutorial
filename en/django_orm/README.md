@@ -70,7 +70,7 @@ As you can see, we now `get` a `User` with a `username` that equals to 'ola'. Ne
 
 Now we can finally create our first post:
 
-    >>> Post.objects.create(author = me, title = 'Sample title', text = 'Test')
+    >>> Post.objects.create(author=me, title='Sample title', text='Test')
 
 Hurray! Wanna check if it worked?
 

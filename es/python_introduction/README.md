@@ -438,7 +438,7 @@ Hasta ahora hemos estado escribiendo nuestro código de python en el intérprete
 
 Para salir del interprete de Python que hemos estado usando, simplemente escribe la función de ~~~ exit() ~~~:
 
-    >>>exit()
+    >>> exit()
     $
     
 
