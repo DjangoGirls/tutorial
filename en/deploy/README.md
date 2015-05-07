@@ -166,10 +166,12 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 
     20:20 ~ $ cd my-first-blog
 
-    20:20 ~ $ virtualenv --python=/usr/bin/python3.4 myvenv
+    20:20 ~ $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
+
+    20:20 ~ $ source myenv/bin/activate
 
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
