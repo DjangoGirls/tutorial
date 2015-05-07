@@ -247,7 +247,7 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 <img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
-In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  */home/yourusername/my-first-blog/myvenv/*
+In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  */home/<your-username>/my-first-blog/myvenv/*
 
 > __Note__: substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
@@ -257,7 +257,7 @@ In the "Virtualenv" section, click the red text that says "Enter the path to a v
 Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports.  The way we configure PythonAnywhere to recognise our django blog is by editing a WSGI configuration file.  
 
 Click the link to it at the top of the web tab (it'll be named something like 
-`/var/www/yourusername_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+`/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
 Delete all the current contents, and replace them with something like this -- you'll need to change "edith" to your own username:
 
