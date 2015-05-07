@@ -4,7 +4,7 @@
 
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
-As you learned, a website has to be located on a server. There are a lot of providers, but we will use one of the ones with the simplest deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
+As you learned, a website has to be located on a server. There are a lot of providers, but we will use one that has a relatively simple deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
 
 The other external service we'll be using is [Github](http://www.github.com), which is a code hosting service.  There are others out there, but almost all programmers have a Github account these days, and now so will you!
 
@@ -29,16 +29,16 @@ Download Git from [git-scm.com](http://git-scm.com/) and just follow the instruc
 
 ### Linux
 
-You probably have this installed already, so just try:
+If it isn't installed already, git should be available via your package manager, so try:
 
-    sudo apt-get install git  # on debian, ubuntu
+    sudo apt-get install git
     # or
-    sudo yum install git  # on fedora etc
+    sudo yum install git
 
 
 ## Starting our Git repository
 
-Go to your console and run these commands, in the `djangogirls` directory:
+Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
 > **Note**: Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
@@ -135,7 +135,7 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 > __Note__: PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from github onto PythonAnywhere by creating a "clone" of the repo.  Type this into the console on PythonAnywhere:
+Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo.  Type this into the console on PythonAnywhere:
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
@@ -186,7 +186,7 @@ Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
-For now we just need to run an extra command called "collectstatic", on the server.  It tells django to gather up all the static files it needs on the server.  Mostly, these are the static files that make the admin site look pretty at the moment.
+For now we just need to run an extra command called "collectstatic", on the server.  It tells Django to gather up all the static files it needs on the server.  Mostly, these are the static files that make the admin site look pretty at the moment.
 
 
     20:20 ~ $ python manage.py collectstatic

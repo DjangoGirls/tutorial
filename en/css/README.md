@@ -33,12 +33,10 @@ Looking nicer already!
 
 ## Static files in Django
 
-Finally we will take a closer look at these things we've been calling __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on request context and will be the same for every user.
-
-CSS is a static file, so in order to customize CSS, we need to store them in a place that Django knows to look for static files.  
+Finally we will take a closer look at these things we've been calling __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on the request context and will be the same for every user.
 
 
-### Where to put static files in Django
+### Where to put static files for Django
 
 As you saw when we ran `collectstatic` on the server, Django already knows where to find the static files for the built-in "admin" app.  Now we just need to add some static files for our own app, `blog`.  
 
