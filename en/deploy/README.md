@@ -6,9 +6,9 @@ Until now your website was only available on your computer, now you will learn h
 
 As you learned, a website has to be located on a server. There are a lot of providers, but we will use one that has a relatively simple deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
 
-The other external service we'll be using is [Github](http://www.github.com), which is a code hosting service.  There are others out there, but almost all programmers have a Github account these days, and now so will you!
+The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service.  There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-We'll use Github as a stepping stone to transport our code to and from PythonAnywhere.
+We'll use GitHub as a stepping stone to transport our code to and from PythonAnywhere.
 
 
 # Git
@@ -49,14 +49,16 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever)
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore.  We do this by creating a file called `.gitignore` in the base directory:
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore.  We do this by creating a file called `.gitignore` in the base directory.  Open up your editor and create a new file with the following contents:
 
     *.pyc
     __pycache__
     myvenv
     db.sqlite3
 
-> **Note**: The dot on the beginning of the file name is important!
+And save it as `.gitignore` in the top-level "djangogirls" folder.
+
+> **Note**: The dot at the beginning of the file name is important!
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what will be done, to prevent any surprises from happening (e.g. wrong files will be added or commited). The `git status` command returns information about any untracked/modifed/staged files, branch status and much more. The output should be similar to:
 
@@ -98,7 +100,7 @@ On the next screen, you'll be shown your repo's clone URL.  Choose the "HTTPS" v
 
 <img src="images/github_get_repo_url_screenshot.png" />
 
-Now we need to hook up the Git repository on your computer to the one up on Github.
+Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
@@ -116,7 +118,7 @@ Enter your GitHub username and password, and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-Your code is now on Github.  Go and check it out!  You'll find it's in fine company - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on Github :)
+Your code is now on GitHub.  Go and check it out!  You'll find it's in fine company - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub :)
 
 
 # Setting up our blog on PythonAnywhere
@@ -254,18 +256,17 @@ In the "Virtualenv" section, click the red text that says "Enter the path to a v
 
 ### Configuring the WSGI file
 
-Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports.  The way we configure PythonAnywhere to recognise our django blog is by editing a WSGI configuration file.  
+Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports.  The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file.  
 
-Click the link to it at the top of the web tab (it'll be named something like 
-`/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
-Delete all the current contents, and replace them with something like this -- you'll need to change "edith" to your own username:
+Delete all the current contents, and replace them with something like this:
 
 ```python
 import os
 import sys
 
-path = '/home/edith/my-first-blog'   # this should have your username in
+path = '/home/<your-username>/my-first-blog'  # use your own username here
 if path not in sys.path:
     sys.path.append(path)
 
@@ -276,9 +277,9 @@ from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
 
-> **Note** don't forget to substitute in your own username instead of "edith"
+> **Note** don't forget to substitute in your own username where it says `<your-username>`
 
-This file's job is to tell PythonAnywhere where our web app lives (so make sure to substitute your own username for "edith" above) and what the Django settings file's name is.  It also sets up the "whitenoise" static files tool.
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.  It also sets up the "whitenoise" static files tool.
 
 Hit **Save**, and then go back to the **Web** tab.  
 
@@ -289,7 +290,7 @@ We're all done!  Hit the big green **Reload** button and you'll be able to go vi
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab.  See if there are any error messages in there.  The most recent ones are at the bottom.   Common problems include
 
-- forgetting one of the steps we did in the console: creating the virtualenv, installing django into it, running collectstatic, initialising the database
+- forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, initialising the database
 - making a mistake in the virtualenv path on the web tab -- there will usually be a little red error message on there, if there is a problem
 - making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
 
