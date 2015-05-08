@@ -6,21 +6,21 @@ Until now your website was only available on your computer, now you will learn h
 
 As you learned, a website has to be located on a server. There are a lot of providers, but we will use one that has a relatively simple deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors, it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service.  There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
 We'll use GitHub as a stepping stone to transport our code to and from PythonAnywhere.
 
 
 # Git
 
-Git is a "version control system" used by a lot of programmers - software which tracks changes to files over time so that you can recall specific versions later.  A bit like "track changes" in Microsoft Word, but much more powerful.
+Git is a "version control system" used by a lot of programmers - software which tracks changes to files over time so that you can recall specific versions later. A bit like "track changes" in Microsoft Word, but much more powerful.
 
 
 ## Installing Git
 
 ### Windows
 
-You can download Git from [git-scm.com](http://git-scm.com/).  You can hit "next next next" on all steps except for one; in the 5th step entitled "Adjusting your PATH environment", choose "Run Git and associated Unix tools from the Windows command-line" (the bottom option).  Other than that, the defaults are fine.  Checkout Windows-style, commit Unix-style line endings is good.
+You can download Git from [git-scm.com](http://git-scm.com/). You can hit "next next next" on all steps except for one; in the 5th step entitled "Adjusting your PATH environment", choose "Run Git and associated Unix tools from the Windows command-line" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
 ### MacOS
 
@@ -49,7 +49,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever)
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore.  We do this by creating a file called `.gitignore` in the base directory.  Open up your editor and create a new file with the following contents:
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
 ```
 *.pyc
@@ -93,13 +93,13 @@ And finally we save our changes. Go to your console and run these commands:
 
 ## Pushing our code to GitHub
 
-Go to [GitHub.com](http://www.github.com') and sign up for a new, free user account.  Then, create a new repository, giving it the name "my-first-blog".  Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Go to [GitHub.com](http://www.github.com') and sign up for a new, free user account. Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 <img src="images/new_github_repo.png" />
 
-> **Note** The name `my-first-blog` is important -- you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time.  It's probably easier to just stick with the name `my-first-blog`.
+> **Note** The name `my-first-blog` is important -- you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL.  Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
 <img src="images/github_get_repo_url_screenshot.png" />
 
@@ -121,12 +121,12 @@ Enter your GitHub username and password, and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-Your code is now on GitHub.  Go and check it out!  You'll find it's in fine company - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub :)
+Your code is now on GitHub. Go and check it out!  You'll find it's in fine company - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub :)
 
 
 # Setting up our blog on PythonAnywhere
 
-Next it's time to sign up for a free "Beginner" account on PythonAnywhere.  
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere. 
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
@@ -136,15 +136,15 @@ Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 ## Pulling our code down on PythonAnywhere
 
-When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page.  Choose the option to start a "Bash" console -- that's the PythonAnywhere version of a console, just like the one on your PC
+When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console -- that's the PythonAnywhere version of a console, just like the one on your PC
 
 > __Note__: PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo.  Type this into the console on PythonAnywhere:
+Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo. Type this into the console on PythonAnywhere:
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
-This will pull down a copy of your code onto PythonAnywhere.  Check it out by typing:
+This will pull down a copy of your code onto PythonAnywhere. Check it out by typing:
 
     $ tree my-first-blog
     my-first-blog/
@@ -167,7 +167,7 @@ This will pull down a copy of your code onto PythonAnywhere.  Check it out by ty
 
 ### Creating a virtualenv on PythonAnywhere
 
-Just like you did on your own computer, you can create a virtualenv on PythonAnywhere.  In the Bash console, type:
+Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
     20:20 ~ $ cd my-first-blog
 
@@ -189,11 +189,11 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 
 ### Collecting static files.
 
-Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called "static files".  Static files work differently on servers compared to on our own computer, and we need a tool like "whitenoise" to serve them.
+Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called "static files". Static files work differently on servers compared to on our own computer, and we need a tool like "whitenoise" to serve them.
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
-For now we just need to run an extra command called "collectstatic", on the server.  It tells Django to gather up all the static files it needs on the server.  Mostly, these are the static files that make the admin site look pretty at the moment.
+For now we just need to run an extra command called "collectstatic", on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
 
 
     20:20 ~ $ python manage.py collectstatic
@@ -208,7 +208,7 @@ For now we just need to run an extra command called "collectstatic", on the serv
 
     Type 'yes' to continue, or 'no' to cancel: yes
 
-Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it.  Brp, brp brp...
+Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
 
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
@@ -220,7 +220,7 @@ Type "yes", and away it goes!  Don't you love making computers print out pages a
 
 ### Creating the database on PythonAnywhere
 
-Here's another thing that's different between your own computer and the server -- it uses a different database.  So, the user accounts and posts can be different on the server and on your computer.
+Here's another thing that's different between your own computer and the server -- it uses a different database. So, the user accounts and posts can be different on the server and on your computer.
 
 So we initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
@@ -240,7 +240,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, the static files are
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab, and hit **Add a new web app**.
 
-In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard.  
+In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard. 
 
 > **Note** make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
 
@@ -259,7 +259,7 @@ In the "Virtualenv" section, click the red text that says "Enter the path to a v
 
 ### Configuring the WSGI file
 
-Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports.  The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file.  
+Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file. 
 
 Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
@@ -282,16 +282,16 @@ application = DjangoWhiteNoise(get_wsgi_application())
 
 > **Note** don't forget to substitute in your own username where it says `<your-username>`
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.  It also sets up the "whitenoise" static files tool.
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is. It also sets up the "whitenoise" static files tool.
 
-Hit **Save**, and then go back to the **Web** tab.  
+Hit **Save**, and then go back to the **Web** tab. 
 
-We're all done!  Hit the big green **Reload** button and you'll be able to go view your application.  You'll find a link to it at the top of the page.
+We're all done!  Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
 
 
 ## Debugging tips
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab.  See if there are any error messages in there.  The most recent ones are at the bottom.   Common problems include
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab. See if there are any error messages in there. The most recent ones are at the bottom.  Common problems include
 
 - forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, initialising the database
 - making a mistake in the virtualenv path on the web tab -- there will usually be a little red error message on there, if there is a problem
@@ -302,9 +302,9 @@ Your coach is here to help!
 
 # You are live!
 
-The default page for your site should say "Welcome to Django", just like it does on your local PC.  Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site.  Log in with the username and password, and you'll see you can add new Posts on the server.
+The default page for your site should say "Welcome to Django", just like it does on your local PC. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
 
-Give yourself a *HUGE* pat on the back -- server deployments are one of the trickiest parts of web development, and it often takes people several days before they get them working.  But you've got your site live, on the real Internet, just like that!
+Give yourself a *HUGE* pat on the back -- server deployments are one of the trickiest parts of web development, and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
 
 
