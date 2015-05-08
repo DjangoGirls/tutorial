@@ -1,8 +1,8 @@
 # Domain
 
-PythonAnywhere gave you a free domain, but maybe you don't want to have ".pythonanywhere.com" at the end of your blog URL.  Maybe you want your blog to just live at "www.infinite-kitten-pictures.org" or "www.3d-printed-steam-engine-parts.com" or "www.antique-buttons.com" or "www.mutant-unicornz.net", or whatever it'll be.
+PythonAnywhere gave you a free domain, but maybe you don't want to have ".pythonanywhere.com" at the end of your blog URL. Maybe you want your blog to just live at "www.infinite-kitten-pictures.org" or "www.3d-printed-steam-engine-parts.com" or "www.antique-buttons.com" or "www.mutant-unicornz.net", or whatever it'll be.
 
-Here we'll talk a bit about where to get a domain, and how to hook it up to your web app on PythonAnywhere.  However, you should know that most domains cost money, and PythonAnywere also charges a monthly fee to use your own domain name -- it's not much money in total, but this is probably something you only want to do if you're really committed!
+Here we'll talk a bit about where to get a domain, and how to hook it up to your web app on PythonAnywhere. However, you should know that most domains cost money, and PythonAnywere also charges a monthly fee to use your own domain name -- it's not much money in total, but this is probably something you only want to do if you're really committed!
 
 
 ## Where to register a domain?
@@ -11,7 +11,7 @@ A typical domain costs around $15 a year. There are cheaper and more expensive o
 
 Our favourite one is [I want my name](https://iwantmyname.com/). They advertise as "painless domain management" and it really is painless.
 
-You can also get domains for free.  [dot.tk](http://www.dot.tk) is one place to get one, but you should be aware that free domains sometimes feel a bit cheap -- if your site is going to be for a professional business, you might want to think about paying for a "proper" domain that ends in `.com`.
+You can also get domains for free. [dot.tk](http://www.dot.tk) is one place to get one, but you should be aware that free domains sometimes feel a bit cheap -- if your site is going to be for a professional business, you might want to think about paying for a "proper" domain that ends in `.com`.
 
 
 ## How to point your domain at PythonAnywhere
@@ -44,14 +44,14 @@ It can take a few minutes for your domain to start working, so be patient!
 
 You also need to tell PythonAnywhere that you want to use your custom domain.
 
-Go to the [PythonAnywhere Accounts page](https://www.pythonanywhere.com/account/) and upgrade your account.  The cheapest option (a "Hacker" plan) is fine to start with, you can always upgrade it later when you get super-famous and have millions of hits.
+Go to the [PythonAnywhere Accounts page](https://www.pythonanywhere.com/account/) and upgrade your account. The cheapest option (a "Hacker" plan) is fine to start with, you can always upgrade it later when you get super-famous and have millions of hits.
 
 Next, go over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and note down a couple of things:
 
 * Copy the **path to your virtualenv** and put it somewhere safe
 * Click through to your **wsgi config file**, copy the contents, and paste them somewhere safe.
 
-Next, **Delete** your old web app.  Don't worry, this doesn't delete any of your code, it just switches off the domain at *yourusername.pythonanywhere.com*.  Next, create a new web app, and follow these steps:
+Next, **Delete** your old web app. Don't worry, this doesn't delete any of your code, it just switches off the domain at *yourusername.pythonanywhere.com*. Next, create a new web app, and follow these steps:
 
 * Enter your new domain name
 * Choose "manual configuration"

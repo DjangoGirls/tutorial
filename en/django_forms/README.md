@@ -329,7 +329,7 @@ If you need more information about Django forms you should read the documentatio
 
 ## One more thing: deploy time!
 
-Let's see if all this works on PythonAnywhere.  Time for another deploy!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to Github
 

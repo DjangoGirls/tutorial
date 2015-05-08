@@ -170,7 +170,7 @@ Try this:
     >>> print(name)
     Maria
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''.  When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
@@ -417,7 +417,7 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-> **Note** You should notice one of the coolest thing about code editors: colours!  In the Python console, everything was the same colour, but now you should see that the `print` function is a different colour from the string inside it. That's called "syntax highlighting", and it's a really useful helping hand when coding.  Watch out for the colour of things, and you'll get a hint for when you forget to close a string, or make a typo in a keyword name (like the `def` in a function, which we'll see below).  This is one of the reasons we use a code editor :)
+> **Note** You should notice one of the coolest thing about code editors: colours!  In the Python console, everything was the same colour, but now you should see that the `print` function is a different colour from the string inside it. That's called "syntax highlighting", and it's a really useful helping hand when coding. Watch out for the colour of things, and you'll get a hint for when you forget to close a string, or make a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
 
 
 Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.

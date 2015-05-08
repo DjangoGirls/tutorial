@@ -34,5 +34,5 @@ The first is that code needs to be **plain text**, and the problem with programs
 
 The second reason is that code editors are specialised in editing code, so they can provide helpful features, like highlighting code with colour according to its meaning, or automatically closing quotes for you.
 
-We'll see all this in action later.  Soon, you'll come to think of your trusty old code editor as one of your favourite tools :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favourite tools :)
 

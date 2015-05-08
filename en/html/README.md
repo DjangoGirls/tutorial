@@ -175,14 +175,14 @@ Once we've done that, we upload (push) our changes up to PythonAnywhere:
 
 ### Pull your new code down to PythonAnywhere, and reload your web app
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one).  Then, run:
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 
     $ cd ~/my-first-blog
     $ git pull
     [...]
 
-And watch your code get downloaded.  If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.

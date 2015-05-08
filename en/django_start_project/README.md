@@ -61,7 +61,7 @@ TIME_ZONE = 'Europe/Berlin'
 Modifying "Europe/Berlin" as appropriate
 
 
-We'll also need to add a path for static files (we'll find out all about static files and CSS later in the tutorial).  Go down to  the *end* of the file, and just underneath  the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+We'll also need to add a path for static files (we'll find out all about static files and CSS later in the tutorial). Go down to  the *end* of the file, and just underneath  the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 ```python
 STATIC_URL = '/static/'

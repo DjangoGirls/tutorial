@@ -63,7 +63,7 @@ Have you noticed that we used a slightly different notation this time `{{ post.t
 
 ## One more thing
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again.  Here's a recap of the steps...
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps...
 
 * First, push your code to Github
 
@@ -85,7 +85,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
 
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.  Your update should be live!
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live!
 
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
