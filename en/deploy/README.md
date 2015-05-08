@@ -51,10 +51,12 @@ Initializing the git repository is something we only need to do once per project
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore.  We do this by creating a file called `.gitignore` in the base directory.  Open up your editor and create a new file with the following contents:
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+```
 
 And save it as `.gitignore` in the top-level "djangogirls" folder.
 
@@ -70,10 +72,10 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
 
-      .gitignore
-      blog/
-      manage.py
-      mysite/
+    .gitignore
+    blog/
+    manage.py
+    mysite/
 
     nothing added to commit but untracked files present (use "git add" to track)
 
