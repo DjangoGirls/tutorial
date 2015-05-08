@@ -56,6 +56,7 @@ Git will track changes to all the files and folders in this directory, but there
 __pycache__
 myvenv
 db.sqlite3
+.DS_Store
 ```
 
 And save it as `.gitignore` in the top-level "djangogirls" folder.
