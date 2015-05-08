@@ -60,7 +60,7 @@ db.sqlite3
 
 And save it as `.gitignore` in the top-level "djangogirls" folder.
 
-> **Note**: The dot at the beginning of the file name is important!
+> **Note**: The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what will be done, to prevent any surprises from happening (e.g. wrong files will be added or commited). The `git status` command returns information about any untracked/modifed/staged files, branch status and much more. The output should be similar to:
 
