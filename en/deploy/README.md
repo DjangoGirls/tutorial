@@ -291,7 +291,7 @@ We're all done!  Hit the big green **Reload** button and you'll be able to go vi
 
 ## Debugging tips
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab. See if there are any error messages in there. The most recent ones are at the bottom.  Common problems include
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab. See if there are any error messages in there. The most recent ones are at the bottom. Common problems include
 
 - forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, initialising the database
 - making a mistake in the virtualenv path on the web tab -- there will usually be a little red error message on there, if there is a problem
