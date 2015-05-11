@@ -142,9 +142,11 @@ Yaaay! But so far, our template only ever displays exactly __the same informatio
 
 What we really want to do is display real posts added in our Django admin - and that's where we're going next.
 
-## One more thing
+## One more thing:  deploy!
 
-It'd be good to see if your website will be still working on Heroku, right? Let's try deploying again.
+It'd be good to see all this out and live on the Internet, right?  Let's do another PythonAnywhere deploy:
+
+### Commit, and push your code up to Github
 
 First off, let's see what files have changed since we last deployed:
 
@@ -166,8 +168,24 @@ We're almost there, now it's time to tell it to save this change in its history.
 
 > __Note__ Make sure you use double quotes around the commit message.
 
-Once we've done that, we can finally upload (push) our changes to the website on heroku:
+Once we've done that, we upload (push) our changes up to PythonAnywhere:
 
-    git push heroku master
+    git push
 
-And that should be it! Once Heroku is finished, you can go ahead and refresh your website in the browser. Changes should be visible!
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible :)
+

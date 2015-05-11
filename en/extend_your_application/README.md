@@ -137,17 +137,24 @@ Ok, we can refresh our page and see if `Page not found` is gone now.
 
 Yay! It works!
 
+
 ## One more thing: deploy time!
 
-It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter [Deploy](../deploy/README.md):
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
     $ git status
-    ...
     $ git add -A .
     $ git status
-    ...
-    $ git commit -m "Added more views to the website."
-    ...
-    $ git push heroku master
+    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git push
+
+* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
 And that should be it! Congrats :)

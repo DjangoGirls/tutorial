@@ -63,16 +63,30 @@ Have you noticed that we used a slightly different notation this time `{{ post.t
 
 ## One more thing
 
-It'd be good to see if your website will still be working on Heroku, right? Let's try deploying again. If you forgot how to do it, check the end of chapter 15:
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps...
+
+* First, push your code to Github
 
     $ git status
-    ...
+    [...]
     $ git add -A .
     $ git status
-    ...
-    $ git commit -m "Used Django templates instead of static HTML."
-    ...
-    $ git push heroku master
+    [...]
+    $ git commit -m "Added views to create/edit blog post inside the site."
+    [...]
+    $ git push
+
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live!
+
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!), then refresh your page to see if the post appears there.
 

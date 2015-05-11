@@ -33,45 +33,42 @@ Looking nicer already!
 
 ## Static files in Django
 
-Another thing you will learn about today is called __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on request context and will be the same for every user.
-
-CSS is a static file, so in order to customize CSS, we need to first configure static files in Django. You'll only need to do it once. Let's start:
+Finally we will take a closer look at these things we've been calling __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on the request context and will be the same for every user.
 
 
-### Configure static files in Django
+### Where to put static files for Django
 
-First, we need to create a directory to store our static files in. Go ahead and create a directory called `static` inside your `djangogirls` directory.
+As you saw when we ran `collectstatic` on the server, Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`. 
+
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
-    ├─── static
-    └─── manage.py
+    ├── blog
+    │   ├── migrations
+    │   └── static
+    └── mysite
 
-Open up the `mysite/settings.py` file, scroll to the bottom of it and add the following lines:
+Django will automatically find any folders called "static" inside any of your apps' folders, and it will be able to use their contents as static files.
 
-```python
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
-```
-
-This way Django will know where to find your static files.
 
 
 ## Your first CSS file!
 
 Let's create a CSS file now, to add your own style to your web-page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-    static
-    └─── css
-            blog.css
+    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
 
-Time to write some CSS! Open up the `static/css/blog.css` file in your code editor.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
 
 But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
-In your `static/css/blog.css` file you should add the following code:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 ```css
 h1 a {
@@ -79,7 +76,7 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (e.g. when we have in code something like: `<h1><a href="">link</a></h1>`).  In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (e.g. when we have in code something like: `<h1><a href="">link</a></h1>`). In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
 In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -154,7 +151,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Now add the line `font-family: 'Lobster';` in the CSS file `static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
+Now add the line `font-family: 'Lobster';` in the CSS file `blog/static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
 
 ```css
 h1 a {
@@ -188,7 +185,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `djangogirls/static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 ```css
 .page-header {
