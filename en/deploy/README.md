@@ -1,6 +1,6 @@
 # Deploy!
 
-> **Note**: The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly tricker process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
@@ -40,7 +40,7 @@ If it isn't installed already, git should be available via your package manager,
 
 Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
-> **Note**: Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
@@ -61,7 +61,7 @@ db.sqlite3
 
 And save it as `.gitignore` in the top-level "djangogirls" folder.
 
-> **Note**: The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
+> **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what will be done, to prevent any surprises from happening (e.g. wrong files will be added or commited). The `git status` command returns information about any untracked/modifed/staged files, branch status and much more. The output should be similar to:
 
@@ -131,14 +131,14 @@ Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 
-> **Note**: When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so either choose your own nickname, or a name for what your blog is all about.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so either choose your own nickname, or a name for what your blog is all about.
 
 
 ## Pulling our code down on PythonAnywhere
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console -- that's the PythonAnywhere version of a console, just like the one on your PC
 
-> __Note__: PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
 Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo. Type this into the console on PythonAnywhere:
 
@@ -242,7 +242,7 @@ Click back to the PythonAnywhere dashboard by clicking on its logo, and go click
 
 In the dialog, after confirming your domain name, choose **manual configuration** (NB *not* the "Django" option). Next, choose **Python 3.4**, and click Next to finish the wizard. 
 
-> **Note** make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
+> **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
 
 
 ### Setting the virtualenv
@@ -254,7 +254,7 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`
 
-> __Note__: substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+> **Note** Substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
 
 ### Configuring the WSGI file
@@ -280,7 +280,7 @@ from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
 
-> **Note** don't forget to substitute in your own username where it says `<your-username>`
+> **Note** Don't forget to substitute in your own username where it says `<your-username>`
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is. It also sets up the "whitenoise" static files tool.
 
