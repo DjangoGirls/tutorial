@@ -177,10 +177,13 @@ Once we've done that, we upload (push) our changes up to PythonAnywhere:
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
-
-    $ cd ~/my-first-blog
-    $ git pull
-    [...]
+```
+$ cd ~/my-first-blog
+$ git pull
+[...]
+$ python manage.py collectstatic
+[...]
+```
 
 And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 

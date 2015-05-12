@@ -156,6 +156,8 @@ $ git push
 $ cd my-first-blog
 $ git pull
 [...]
+$ python manage.py collectstatic
+[...]
 ```
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
