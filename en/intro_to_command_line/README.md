@@ -40,7 +40,7 @@ On Windows, it's a `>` sign, like this:
 
 Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you :)
 
-> Just a small note: in your case there maybe something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct. In this tutorial we will just simplify it to the bare minimum.
 
 ## Your first command (YAY!)
 

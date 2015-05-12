@@ -47,7 +47,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
 
-Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever)
+Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever).
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
