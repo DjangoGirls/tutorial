@@ -67,23 +67,24 @@ It'd be good to see if your website will still be working on the public Internet
 
 * First, push your code to Github
 
-    $ git status
-    [...]
-    $ git add -A .
-    $ git status
-    [...]
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    [...]
-    $ git push
-
+```
+$ git status
+[...]
+$ git add -A .
+$ git status
+[...]
+$ git commit -m "Added views to create/edit blog post inside the site."
+[...]
+$ git push
+```
 
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
-
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live!
 
