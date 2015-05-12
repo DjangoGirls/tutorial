@@ -44,8 +44,8 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config user.name "Your Name"
-    $ git config user.email you@example.com
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email you@example.com
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever)
 
@@ -73,10 +73,10 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
 
-    .gitignore
-    blog/
-    manage.py
-    mysite/
+            .gitignore
+            blog/
+            manage.py
+            mysite/
 
     nothing added to commit but untracked files present (use "git add" to track)
 
@@ -176,7 +176,7 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     [...]
     Installing setuptools, pip...done.
 
-    20:20 ~ $ source myenv/bin/activate
+    20:20 ~ $ source myvenv/bin/activate
 
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
