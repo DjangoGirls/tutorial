@@ -262,7 +262,7 @@ Open `blog/templates/blog/post_detail.html` and add this line:
 so that the template will look like:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="date">
@@ -333,18 +333,23 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to Github
 
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
+```
+$ cd my-first-blog
+$ git pull
+[...]
+$ python manage.py collectstatic
+[...]
+```
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 

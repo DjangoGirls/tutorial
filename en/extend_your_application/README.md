@@ -142,18 +142,23 @@ Yay! It works!
 
 It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-    $ cd my-first-blog
-    $ git pull
-    [...]
-
+```
+$ cd my-first-blog
+$ git pull
+[...]
+$ python manage.py collectstatic
+[...]
+```
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 

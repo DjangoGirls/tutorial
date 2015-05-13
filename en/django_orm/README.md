@@ -68,14 +68,16 @@ It's the superuser we created earlier! Let's get an instance of the user now:
 
 As you can see, we now `get` a `User` with a `username` that equals to 'ola'. Neat! Of course, you have to adjust it to your username.
 
-Now we can finally create our first post:
+Now we can finally create our post:
 
     >>> Post.objects.create(author=me, title='Sample title', text='Test')
 
 Hurray! Wanna check if it worked?
 
     >>> Post.objects.all()
-    [<Post: Sample title>]
+    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+
+There it is, one more post in the list!
 
 
 ### Add more posts
@@ -102,9 +104,9 @@ You can also get a list of all published posts. We do it by filtering all the po
     >>> Post.objects.filter(published_date__lte=timezone.now())
     []
 
-Unfortunately, none of our posts are published yet. We can change that! First get an instance of a post we want to publish:
+Unfortunately, the post we added from the Python console is not published yet. We can change that! First get an instance of a post we want to publish:
 
-    >>> post = Post.objects.get(id=1)
+    >>> post = Post.objects.get(title="Sample title")
 
 And then publish it with our `publish` method!
 
