@@ -145,6 +145,8 @@ a następnie zapisz go. Kropka na początku nazwy pliku jest ważna! Jak widzisz
 
 Następnie stwórzmy nowe repozytorium Gita i zapiszmy nasze zmiany. Przejdź do konsoli i uruchom poniższe polecenia:
 
+> **Note** Zanim utworzysz repozytorium, za pomocą polecenia `pwd` (OSX/Linux) lub `cd` (Windows) sprawdź, w jakim folderze się znajdujesz. Powinnaś być w katalogu `djangogirls`.
+
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git add .
