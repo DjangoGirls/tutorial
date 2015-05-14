@@ -44,7 +44,7 @@ Nic skomplikowanego: importujemy model `Post` z `blog.models`. Spróbujmy jeszcz
     [<Post: tytuł>, <Post: inny tytuł>]
 
 
-Pojawiła się lista wpisów, które dodałyśmy wcześniej przy pomocy panelu administracyjnego Django! Teraz jednak chciałybyśmy dodać nowy wpis używając interaktywnej konsoli.
+Pojawiła się lista wpisów, które dodałyśmy wcześniej przy pomocy panelu administracyjnego Django! Teraz jednak chciałybyśmy dodać nowy wpis używając interaktywnej konsoli. Jak to zrobimy?
 
 ### Tworzenie obiektu
 
