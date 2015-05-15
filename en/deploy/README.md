@@ -93,7 +93,7 @@ And finally we save our changes. Go to your console and run these commands:
 
 ## Pushing our code to GitHub
 
-Go to [GitHub.com](http://www.github.com') and sign up for a new, free user account. Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Go to [GitHub.com](http://www.github.com) and sign up for a new, free user account. Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 <img src="images/new_github_repo.png" />
 
