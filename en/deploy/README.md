@@ -184,6 +184,8 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     Successfully installed django-1.8 whitenoise-1.0.6
 
 
+> **Note** The pip install step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
+
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
 
@@ -193,7 +195,7 @@ Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
-For now we just need to run an extra command called "collectstatic", on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
+For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
 
 
     20:20 ~ $ python manage.py collectstatic
