@@ -293,13 +293,19 @@ We're all done!  Hit the big green **Reload** button and you'll be able to go vi
 
 ## Debugging tips
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab. See if there are any error messages in there. The most recent ones are at the bottom. Common problems include
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere Web tab. See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-- forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, initialising the database
-- making a mistake in the virtualenv path on the web tab -- there will usually be a little red error message on there, if there is a problem
-- making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, migrating the database
 
-Your coach is here to help!
+- Making a mistake in the virtualenv path on the Web tab -- there will usually be a little red error message on there, if there is a problem
+
+- Making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
+
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.4.
+
+- There are some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError)
+
+And remember, your coach is here to help!
 
 
 # You are live!
