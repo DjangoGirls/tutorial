@@ -101,6 +101,11 @@ You need to be in the directory that contains the `manage.py` file (the `djangog
 
     (myvenv) ~/djangogirls$ python manage.py runserver
 
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+
+
 Now all you need to do is check that your website is running - open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
 
     http://127.0.0.1:8000/
