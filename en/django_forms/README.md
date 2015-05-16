@@ -265,14 +265,16 @@ so that the template will look like:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="date">
-    {% if post.published_date %}
-        {{ post.published_date }}
-    {% endif %}
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.text|linebreaks }}</p>
 {% endblock %}
 ```
 
