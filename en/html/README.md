@@ -179,9 +179,10 @@ Once we've done that, we upload (push) our changes up to PythonAnywhere:
 
 ```
 $ cd ~/my-first-blog
-$ git pull
+$ source myvenv/bin/activate
+(myvenv)$ git pull
 [...]
-$ python manage.py collectstatic
+(myvenv)$ python manage.py collectstatic
 [...]
 ```
 

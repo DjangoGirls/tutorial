@@ -347,9 +347,10 @@ $ git push
 
 ```
 $ cd my-first-blog
-$ git pull
+$ source myvenv/bin/activate
+(myvenv)$ git pull
 [...]
-$ python manage.py collectstatic
+(myvenv)$ python manage.py collectstatic
 [...]
 ```
 

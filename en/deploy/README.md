@@ -184,6 +184,8 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     Successfully installed django-1.8 whitenoise-1.0.6
 
 
+> **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
+
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
 
@@ -193,7 +195,7 @@ Were you wondering what "whitenoise" thing was?  It's a tool for serve so-called
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
-For now we just need to run an extra command called "collectstatic", on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
+For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
 
 
     20:20 ~ $ python manage.py collectstatic
@@ -210,11 +212,11 @@ For now we just need to run an extra command called "collectstatic", on the serv
 
 Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
 
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
 
 
@@ -291,13 +293,19 @@ We're all done!  Hit the big green **Reload** button and you'll be able to go vi
 
 ## Debugging tips
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere web tab. See if there are any error messages in there. The most recent ones are at the bottom. Common problems include
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log** -- you'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-- forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, initialising the database
-- making a mistake in the virtualenv path on the web tab -- there will usually be a little red error message on there, if there is a problem
-- making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, migrating the database
 
-Your coach is here to help!
+- Making a mistake in the virtualenv path on the Web tab -- there will usually be a little red error message on there, if there is a problem
+
+- Making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
+
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.4.
+
+- There are some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError)
+
+And remember, your coach is here to help!
 
 
 # You are live!
