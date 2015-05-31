@@ -26,19 +26,26 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
 
 Jeżeli nie masz zainstalowanego Pythona, lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
-#### Ubuntu
+#### Debian lub Ubuntu
 
 Wpisz w konsoli poniższe polecenie:
 
-    sudo apt-get install python3.4
-    
+    $ sudo apt-get install python3.4
 
-#### Fedora
+
+#### Fedora (<=21)
 
 Użyj następującego polecenia w konsoli:
 
-    sudo yum install python3.4
-    
+    $ sudo yum install python3.4
+
+
+#### Fedora (22+)
+
+Użyj następującego polecenia w konsoli:
+
+    $ sudo dnf install python3.4
+
 
 ### OS X
 

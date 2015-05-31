@@ -26,18 +26,25 @@ Python для Windows можна завантажити з сайту https://ww
 
 Якщо Python не встановлено або ви бажаєте встановити іншу версію, то можете виконати встановлення наступним чином:
 
-#### Ubuntu
+#### Debian або Ubuntu
 
 Наберіть наступну команду в консолі:
 
-    sudo apt-get install python3.4
+    $ sudo apt-get install python3.4
     
 
-#### Fedora
+#### Fedora (<=21)
 
 Скористайтеся наступною командою в консолі:
 
-    sudo yum install python3.4
+    $ sudo yum install python3.4
+    
+
+#### Fedora (22+)
+
+Скористайтеся наступною командою в консолі:
+
+    $ sudo dnf install python3.4
     
 
 ### OS X
