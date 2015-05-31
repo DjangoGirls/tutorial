@@ -10,7 +10,7 @@ To start playing with Python, we need to open up a *command line* on your comput
 
 Once you're ready, follow the instructions below.
 
-We want to open up a Python console, so type in `python3` and hit Enter.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit Enter.
 
     $ python3
     Python 3.4.2 (...)
