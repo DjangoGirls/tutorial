@@ -6,11 +6,13 @@ But first, let us tell you what Python is. Python is a very popular programming 
 
 Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry, Python is also really powerful!
 
+
 # Python installation
 
 > This subchapter is based on a tutorial by Geek Girls Carrots (http://django.carrots.pl/)
 
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
+
 
 ### Windows
 
@@ -19,6 +21,7 @@ You can download Python for Windows from the website https://www.python.org/down
 One thing to watch out for:  on the second screen of the installation wizard, marked "Customize", make sure you scroll down and choose the "Add python.exe to the Path" option, as in 
 
 ![Don't forget to add Python to the Path](images/add_python_to_windows_path.png)
+
 
 ### Linux
 
@@ -29,25 +32,35 @@ It is very likely that you already have Python installed out of the box. To chec
 
 If you don't have Python installed or if you want a different version, you can install it as follows:
 
-#### Ubuntu
+
+#### Debian or Ubuntu
 
 Type this command into your console:
 
-    sudo apt-get install python3.4
+    $ sudo apt-get install python3.4
 
-#### Fedora
+
+#### Fedora (up to 21)
 
 Use this command in your console:
 
-    sudo yum install python3.4
+    $ sudo yum install python3.4
+
+
+#### Fedora (22+)
+
+Use this command in your console:
+
+    $ sudo dnf install python3.4
+
 
 ### OS X
 
 You need to go to the website https://www.python.org/downloads/release/python-342/ and download the Python installer:
 
-* download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
-* double click to open it,
-* double click *Python.mpkg* to run the installer.
+* Download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
+* Double click to open it,
+* Double click *Python.mpkg* to run the installer.
 
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 

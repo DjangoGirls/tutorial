@@ -6,15 +6,18 @@ Pero primero, déjenos decirte qué es Python. Python es un lenguaje de programa
 
 Python se originó en la década de 1980 y su objetivo principal es ser legible por los seres humanos (no sólo las máquinas!), por eso parece mucho más simple que otros lenguajes de programación. Esto lo hace fácil de aprender, pero no te preocupes, Python es también muy poderoso!
 
+
 # Instalación de Python
 
 > Este subcapítulo se basa en un tutorial de Geek Girls Carrots (http://django.carrots.pl/)
 
 Django está escrito en Python. Necesitamos Python para cualquier cosa en Django. Vamos a empezar con la instalación! Queremos que instales Python 3.4, así que si tienes alguna versión anterior, deberás actualizarla.
 
+
 ### Windows
 
 Puedes descargar Python para Windows desde el sitio web https://www.python.org/downloads/release/python-342/. Después de descargar el archivo ***.msi**, debes ejecutarlo (has doble clic en el archivo) y sige las instrucciones. Es importante recordar el camino (el directorio) donde se ha instalado Python. Será necesario más adelante!
+
 
 ### Linux
 
@@ -26,19 +29,27 @@ Es muy probable que ya tengas Python instalado. Para verificar si lo tienes (y q
 
 Si no tienes instalado Python o si deseas una versión diferente, se puede instalar de la siguiente manera:
 
-#### Ubuntu
+
+#### Debian o Ubuntu
 
 Escribe este comando en la consola:
 
-    sudo apt-get install python3.4
-    
+    $ sudo apt-get install python3.4
 
-#### Fedora
+
+#### Fedora (<=21)
 
 Usa este comando en la consola:
 
-    sudo yum install python3.4
-    
+    $ sudo yum install python3.4
+
+
+#### Fedora (22+)
+
+Usa este comando en la consola:
+
+    $ sudo yum install python3.4
+
 
 ### OS X
 
