@@ -6,6 +6,8 @@ __Let us introduce you to your first new friend: the command line!__
 
 The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangably but they are one and the same thing.
+
 ## What is the command line?
 
 The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
