@@ -17,7 +17,7 @@ OK, time to look at our Post model. Remember to run `python manage.py runserver`
 
 ![Login page](images/login_page2.png)
 
-In order to log in you need to create a *superuser* - a user which has control over everything on the site. Go back to you command-line and type `python manage.py createsuperuser`, press enter and type your username (lowercase, no spaces), email address and password when you're asked for them. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press 'Enter' to continue. The output should look like this (where username and email should be your own ones):
+To log in, you need to create a *superuser* - a user which has control over everything on the site. Go back to the command-line and type `python manage.py createsuperuser`, and press enter. When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press 'Enter' to continue. The output should look like this (where username and email should be your own ones):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
@@ -26,11 +26,11 @@ In order to log in you need to create a *superuser* - a user which has control o
     Password (again):
     Superuser created successfully.
 
-Return to your browser and log in with the superuser's credentials you chose, you should see the Django admin dashboard.
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content - you can simply copy-paste some text from this tutorial as your posts' content to save time :).
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content - you can simply copy-paste some text from this tutorial to save time :).
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
