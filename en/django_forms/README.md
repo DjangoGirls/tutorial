@@ -191,7 +191,7 @@ We check if the form is valid and if so, we can save it!
 if form.is_valid():
     post = form.save(commit=False)
     post.author = request.user
-    post.published_date=timezone.now()
+    post.published_date = timezone.now()
     post.save()
 ```
 
@@ -221,7 +221,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date=timezone.now()
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -298,7 +298,7 @@ def post_edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date=timezone.now()
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
