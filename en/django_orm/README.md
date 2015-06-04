@@ -12,7 +12,7 @@ It's easiest to learn by example. Let's try this, shall we?
 
 ## Django shell
 
-Open up your console and type this command:
+Open up your local console (not on PythonAnywhere) and type this command:
 
     (myvenv) ~/djangogirls$ python manage.py shell
 
