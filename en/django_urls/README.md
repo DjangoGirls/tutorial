@@ -12,7 +12,7 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 ## How do URLs work in Django?
 
-Let's open up the `mysite/urls.py` file and see what it looks like:
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
 ```python
 from django.conf.urls import include, url
