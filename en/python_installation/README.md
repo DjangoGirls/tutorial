@@ -18,7 +18,7 @@ Django is written in Python. We need Python to do anything in Django. Let's star
 
 You can download Python for Windows from the website https://www.python.org/downloads/release/python-343/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
 
-One thing to watch out for:  on the second screen of the installation wizard, marked "Customize", make sure you scroll down and choose the "Add python.exe to the Path" option, as in 
+One thing to watch out for:  on the second screen of the installation wizard, marked "Customize", make sure you scroll down and choose the "Add python.exe to the Path" option, as shown here:
 
 ![Don't forget to add Python to the Path](images/add_python_to_windows_path.png)
 
