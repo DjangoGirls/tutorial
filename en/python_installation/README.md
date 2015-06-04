@@ -2,9 +2,9 @@
 
 We're finally here!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics and much, much more.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!), which is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry, Python is also really powerful!
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry, Python is also really powerful!
 
 
 # Python installation
@@ -30,7 +30,7 @@ It is very likely that you already have Python installed out of the box. To chec
     $ python3 --version
     Python 3.4.2
 
-If you don't have Python installed or if you want a different version, you can install it as follows:
+If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 
 #### Debian or Ubuntu
@@ -69,4 +69,4 @@ Verify the installation was successful by opening the *Terminal* application and
 
 ----
 
-If you have any doubts or if something went wrong and you have no idea what to do next - please ask your coach! Sometimes things are not going smoothly and it's better to ask for help from someone with more experience.
+If you have any doubts, or if something went wrong and you have no idea what to do next - please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
