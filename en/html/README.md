@@ -168,7 +168,7 @@ We're almost there, now it's time to tell it to save this change in its history.
 
 > __Note__ Make sure you use double quotes around the commit message.
 
-Once we've done that, we upload (push) our changes up to PythonAnywhere:
+Once we've done that, we upload (push) our changes up to Github:
 
     git push
 
@@ -192,4 +192,3 @@ And watch your code get downloaded. If you want to check that it's arrived, you 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible :)
-
