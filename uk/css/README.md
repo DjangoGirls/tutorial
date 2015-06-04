@@ -91,40 +91,46 @@ CSS -- статичний файл, отже для того щоб налашт
 
 Далі, нам треба також повідомити наш HTML шаблон про те, що ми додали CSS. Відкрийте файл `blog/templates/blog/post_list.html` і цей рядок до самого початку:
 
-    {% load staticfiles %}
+```html
+{% load staticfiles %}
+```
     
 
 Тут ми лише завантажуємо статичні файли:). Далі, між `<head>` і `</head>`, після лінків на файли Bootstrap CSS (браузер читає файли за порядком їх слідування, отже код нашого файлу перекриває код в файлах Bootstrap), додайте цей рядок:
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
     
 
 Ми щойно повідомили наш шаблон де розташовані наші CSS файли.
 
 Тепер ваш файл має виглядати наступним чином:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
             <div>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
-    
-            {% for post in posts %}
-                <div>
-                    <p>published: {{ post.published_date }}</p>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
-                </div>
-            {% endfor %}
-        </body>
-    </html>
+        {% endfor %}
+    </body>
+</html>
+```
     
 
 OK, збережіть файл і перезавантажте сторінку!
@@ -172,11 +178,13 @@ OK, збережіть файл і перезавантажте сторінку
 
 А тепер додайте клас `post` до вашого блоку `div`, що містить сам допис.
 
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
-    </div>
+```html
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaks }}</p>
+</div>
+```
     
 
 А тепер додамо визначення блоків для різних селекторів. Селектори, які починають із символу `.` стосуються класів. Існує багато хороших довідників про CSS в Інтернеті, які можуть допомогти вам зрозуміти наступний код. Поки що, просто скопіюйте і вставте це у ваш файл `djangogirls/static/css/blog.css`:
@@ -232,32 +240,36 @@ OK, збережіть файл і перезавантажте сторінку
 
 Далі модифікуйте HTML код, що відображує пости. Замініть:
 
-    {% for post in posts %}
-        <div class="post">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+```html
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```
     
 
 в `blog/templates/blog/post_list.html` на:
 
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+```html
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        {{ post.published_date }}
                     </div>
-                {% endfor %}
-            </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
+</div>
+```
     
 
 Збережіть файли і перезавантажте свій сайт.

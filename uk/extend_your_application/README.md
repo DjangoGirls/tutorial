@@ -12,24 +12,28 @@
 
 Почнемо із додавання посилання в `blog/templates/blog/post_list.html`. Таким чином, матимемо:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
     
 
 Ми хочемо мати посилання на сторінку із деталями про окремий пост, яке міститиметься в заголовку поста. Змінимо `<h1><a href="">{{ post.title }}</a></h1>` на посилання:
 
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```html
+<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
     
 
 Час пояснити містичне `{% url 'blog.views.post_detail' pk=post.pk %}`. Як можна було очікувати, `{% %}` означає, що ми використовуємо шаблонні теги Django. Цього разу скористаємось таким, що створить для нас URL!
@@ -118,17 +122,19 @@
 
 Це буде виглядати так:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% if post.published_date %}
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+    {% endif %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 Знову розширюємо `base.html`. Всередині блоку `content` ми хотіли б відобразити такі параметри як: published_date (якщо існує), title і text. Але, мусимо обговорити певні важливі речі, правда ж?
@@ -145,14 +151,16 @@ Ok, можемо перезавантажити нашу сторінку і п�
 
 Було б непогано побачити чи ваш сайт все ще працює на Heroku, чи не так? Давайте спробуємо розгорнути його знову. Якщо ви вже забули як це зробити, зверніться до кінцевої частини розділу [Розгортання](../deploy/README.md):
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Added more views to the website."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Added more views to the website."
+...
+$ git push heroku master
+```
     
 
 І це все! Вітання :)

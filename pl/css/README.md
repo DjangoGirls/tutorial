@@ -91,41 +91,45 @@ O selektorach CSS możesz przeczytać więcej tutaj: [CSS Selectors in w3schools
 
 Następnie musimy także pokazać naszemu szablonowi HTML że dodaliśmy nowe style CSS. Otwórz plik `blog/templates/blog/post_list.html` i dodaj tą linijkę na samym jego początku:
 
-    {% load staticfiles %}
-
+```html
+{% load staticfiles %}
+```
 
 Tym sposobem HTML załaduje nasze style CSS :) Następnie, pomiędzy `<head>` i `</head>`, zaraz za linkami do Boostrapa, dodaj poniższą linijkę. Przeglądarka czyta pliki w kolejności w której je wpiszesz, dzięki temu możemy nadpisać niektóre style Bootstrapa.
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```html  
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
 
 Właśnie pokazaliśmy naszemu szablonowi gdzie znajduje się nasz plik CSS.
 
 Twój plik powinien teraz wyglądać tak:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
             <div>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
-
-            {% for post in posts %}
-                <div>
-                    <p>published: {{ post.published_date }}</p>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
-                </div>
-            {% endfor %}
-        </body>
-    </html>
-
+        {% endfor %}
+    </body>
+</html>
+```
 
 Ok, teraz zapisz plik i odśwież stronę!
 
@@ -144,7 +148,9 @@ Dodaj powyższy CSS do twojego pliku, zapisz go i sprawdź jak zadziałał!
 
 Może zmienimy też rodzaj czcionki w naszym nagłówku? Wklej to do sekcji `<head>` w pliku `blog/templates/blog/post_list.html`:
 
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```html
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
 
 Ta linia zaimportuje czcionkę zwaną *Lobster*, jedną z czcionek Google (<https://www.google.com/fonts>)
@@ -172,11 +178,13 @@ Jak wspomniano wcześniej, arkusze stylów kaskadowe używają pojęcia klasy, k
 
 Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
 
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
-    </div>
+```html
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaks }}</p>
+</div>
+```
 
 
 A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `djangogirls/static/css/blog.css`:
@@ -243,21 +251,23 @@ Teraz otocz kod HTML wyświetlający posty deklaracjami klas. Zamień to:
 
 w pliku `blog/templates/blog/post_list.html` na to:
 
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+```html
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        {{ post.published_date }}
                     </div>
-                {% endfor %}
-            </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
+</div>
+```
 
 
 Zapisz te pliki i odśwież swoją stronę.

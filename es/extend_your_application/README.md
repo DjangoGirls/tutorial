@@ -12,27 +12,31 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debe verse así:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
     
 
-Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >` dentro del enlace:
+Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href = "">{{ post.title }} </a></h1>` dentro del enlace:
 
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```html
+<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
     
 
-Tiempo para explicar lo misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como sospechas, la notación `{% %}` significa que estamos utilizando Django template tags. Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!
+{% raw %}Tiempo para explicar lo misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como sospechas, la notación `{% %}` significa que estamos utilizando Django template tags. Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!{% endraw %}
 
 `blog.views.post_detail` es una ruta hacia `post_detail` *view* que queremos crear. Por favor nota: `blog` es el nombre de nuestra aplicación (el `blog` de directorio), `views` es el nombre del archivo `views.py` y `post_detail` - es el nombre de la *view*.
 
@@ -53,13 +57,15 @@ Vamos a crear una dirección URL en `urls.py` para nuestro `post_detail` *view*!
 
 Queremos crear una dirección URL de Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. ¿Agrega la línea `url (r'^ poste / (?P < pk >[0-9] +) / $', views.post_detail),` en el archivo `blog/urls.py`. Debe tener este aspecto:
 
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    ]
+```python
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+]
+```
     
 
 Da miedo, pero no te preocupes - lo explicaremos para ti: - comienza con `^` otra vez, "el principio" - `post /` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. - `(?P < pk >[0-9] +)`-esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no es una carta (entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Por algo como `http://127.0.0.1:8000/post / /` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! -`/` - entonces necesitamos **/** de nuevo - `$` - "the end"!
@@ -139,22 +145,24 @@ Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 
 Se verá así:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="date">
-            {% if post.published_date %}
-                {{ post.published_date }}
-            {% endif %}
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="date">
+        {% if post.published_date %}
+            {{ post.published_date }}
+        {% endif %}
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 Una vez más estamos extendiendo `base.html`. En el bloque de `content` queremos mostrar un post published_date (si existe), título y texto. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
-`{% if ... %} ... {% endif %}` es una template tag que podemos usar cuando queramos ver algo (recuerdas `if... else...` desde el capítulo de **Introducción a Python**?). En este escenario queremos comprobar si `published_date de un post` no está vacío.
+{% raw %}`{% if ... %} ... {% endif %}` es una template tag que podemos usar cuando queramos ver algo (recuerdas `if... else...` desde el capítulo de **Introducción a Python**?). En este escenario queremos comprobar si `published_date de un post` no está vacío.{% endraw %}
 
 Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
@@ -168,14 +176,16 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
 Sería bueno ver si tu sitio sigue funcionando en Heroku, ¿no? Intentemos implementarlo nuevamente. Si olvidaste como hacerlo, revisa el final del capítulo 15:
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Added more views to the website."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Added more views to the website."
+...
+$ git push heroku master
+```
     
 
 ¡Y eso debería ser todo! Felicidades :)

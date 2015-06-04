@@ -54,7 +54,7 @@ It works! But we want them to be displayed like the static posts we created earl
 {% endfor %}
 ```
 
-Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
 ![Figure 13.3](images/step3.png)
 

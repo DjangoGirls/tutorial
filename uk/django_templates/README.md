@@ -14,8 +14,9 @@
 
 Щоб надрукувати змінну в Django шаблоні, ми використовуємо подвійні фігурні дужки з іменем змінної всередині:
 
-    {{ posts }}
-    
+```html
+{{ posts }}
+```
 
 Спробуйте це у вашому шаблоні `blog/templates/blog/post_list.html` (замініть усе між другими тегами `<div></div>` на рядок `{{ posts }}`), збережіть файл і перезавантажте сторінку щоб побачити результати:
 
@@ -28,9 +29,11 @@
 
 Означає, що Django розуміє це як список об'єктів. Пам'ятаєте із розділу **Вступ до Python** як ми можемо виводити списки? Так, за допомогою циклів for! В Django шаблоні, вони реалізуються наступним чином:
 
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
     
 
 Спробуйте це у вашому шаблоні.
@@ -39,17 +42,19 @@
 
 Працює! Однак, бажано щоб вони були виведені як статичні пости, які ми створили раніше у розділі **Вступ до HTML**. Ви можете компонувати теги HTML і шаблонні теги. Наша частина `body` буде виглядати так:
 
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% endfor %}
+```
     
 
 Усе, що міститься між `{% for %}` і `{% endfor %}` буде повторюватись для кожного об'єкту у списку. Перезавантажте вашу сторінку:
@@ -62,14 +67,16 @@
 
 Було б непогано побачити чи ваш сайт все ще працює на Heroku, чи не так? Давайте спробуємо розгорнути його знову. Якщо ви вже забули як це зробити, зверніться до кінцевої частини розділу 15:
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Used Django templates instead of static HTML."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Used Django templates instead of static HTML."
+...
+$ git push heroku master
+```
     
 
 Вітаємо! А тепер спробуйте додати новий пост у вашому Django адміністраторі (не забудьте додати published_date!), потім перезавантажте сторінку щоб переконатись що новий пост з'явився.

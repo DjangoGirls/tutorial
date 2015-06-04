@@ -128,7 +128,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 - we have to display the form. We can do that for example with a simple `{{ form.as_p }}`.
 - the line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`
 - we need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`
-- and finally just after the opening `<form ...>` tag we need to add `{% csrf_token %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
+- and finally just after the opening `<form ...>` tag we need to add `{% raw %}{% csrf_token %}{% endraw %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 

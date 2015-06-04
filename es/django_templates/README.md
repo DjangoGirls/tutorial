@@ -14,8 +14,9 @@ En el capítulo anteriordimos a nuestra plantilla una lista de posts en la varia
 
 Para imprimir una variable en la plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
 
-    {{ posts }}
-    
+```html
+{{ posts }}
+```
 
 Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza todo entre la segunda etiqueta `<div></div>` con `{{ posts }}`), guarda el archivo y actualiza la página para ver el resultado:
 
@@ -30,7 +31,9 @@ Como puedes ver, todo lo que obtenemos es esto:
 
 Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python,** ¿cómo podemos mostrar listas? Sí, con el ciclo for! En una plantilla de Django, los haces de esta manera:
 
-    {% for post in posts %} {{ post }}{% endfor %}
+```html
+{% for post in posts %} {{ post }}{% endfor %}
+```
     
 
 Pruebe esto en tu plantilla.
@@ -41,7 +44,22 @@ Pruebe esto en tu plantilla.
 
 ¡ Funciona! Pero queremos que se muestre como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
 
-    < div >< h1 >< a href = "/" > Django chicas Blog < /a >< / h1 >< / div >{% for post in posts %} < div >< p > publicado: {{ post.published_date }} < /p >< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >< p >{{ post.text|linebreaks }} < /p >< / div >{% endfor %}
+```html
+<div>
+    <h1>
+        <a href = "/">Django chicas Blog</a>
+    </h1>
+</div>
+{% for post in posts %}
+    <div>
+        <p> publicado: {{ post.published_date }} </p>
+        <h1>
+            <a href = "" >{{ post.title }} </a>
+        </h1>
+        <p>{{ post.text|linebreaks }} </p>
+    </div>
+{% endfor %}
+```
     
 
 Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualizar la página:
@@ -56,14 +74,16 @@ Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada obje
 
 Sería bueno ver si tu sitio sigue funcionando en Heroku, ¿no? Intentemos implementarlo nuevamente. Si olvidaste como hacerlo, revisa el final del capítulo 15:
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Used Django templates instead of static HTML."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Used Django templates instead of static HTML."
+...
+$ git push heroku master
+```
     
 
 ¡ Felicidades! Ahora seguir adelante y trata de agregar un nuevo post en tu administración de Django (recuerde añadir published_date!), luego actualizar lau página para ver si aparece el nuevo post.
