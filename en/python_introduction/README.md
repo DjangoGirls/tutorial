@@ -63,7 +63,7 @@ Using double quotes:
     >>> "Runnin' down the hill"
     "Runnin' down the hill"
 
-or escaping apostrophe with a backslash (`\`):
+or escaping  apostrophe with a backslash (`\`):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
@@ -177,7 +177,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: they are objects which are lists of other objects :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: objects which are lists of other objects :)
 
 Go ahead and create a list:
 
@@ -372,7 +372,7 @@ There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as True (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__ (The same applies to False as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__ (The same applies to 'False' as well, of course.)
 
 Booleans can be variables, too! See here:
 
@@ -417,7 +417,7 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-> **Note** You should notice one of the coolest thing about code editors: colours!  In the Python console, everything was the same colour, but now you should see that the `print` function is a different colour from the string inside it. That's called "syntax highlighting", and it's a really useful helping hand when coding. Watch out for the colour of things, and you'll get a hint for when you forget to close a string, or make a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
+> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour, now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings, or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
 
 
 Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
@@ -466,14 +466,14 @@ If we saved this and ran it, we'd see an error like this:
              ^
     SyntaxError: unexpected EOF while parsing
 
-Python expects us to give further instructions to it which are supposed to be executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 ```python
 if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the code results in true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
 
 Save it and give it another run:
 
@@ -491,7 +491,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this was run it would print out:
+When this is ran it will print out:
 
     $ python3 python_intro.py
     5 is indeed greater than 2
@@ -530,7 +530,7 @@ Time for the last part of this chapter!
 
 Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and it can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
 ```python
 def hi():
@@ -570,7 +570,7 @@ def hi(name):
 hi()
 ```
 
-As you can see, we needed to put two indents before the `print` function, because `if` needs to know what should happen when the condition is met. Let's see how it works now:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -586,7 +586,7 @@ Let's fix it at the bottom of the file:
 hi("Ola")
 ```
 
-and run it again:
+And run it again:
 
     $ python3 python_intro.py
     Hi Ola!
@@ -597,12 +597,12 @@ And if we change the name?
 hi("Sonja")
 ```
 
-and run it:
+And run it:
 
     $ python3 python_intro.py
     Hi Sonja!
 
-Now what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
 
     Hi anonymous!
 
@@ -622,11 +622,11 @@ Let's call the code now:
     $ python3 python_intro.py
     Hi Rachel!
 
-Congratulations! You just learned how to write functions :)!
+Congratulations! You just learned how to write functions! :)
 
 ## Loops
 
-That's the last part already. That was quick, right? :)
+This is the last part already. That was quick, right? :)
 
 As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
@@ -642,7 +642,7 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement, code below both of these need to be indented four spaces.
+The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
 
 Here is the full code that will be in the file:
 
@@ -656,7 +656,7 @@ for name in girls:
     print('Next girl')
 ```
 
-and when we run it:
+And when we run it:
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -691,7 +691,7 @@ Note that the second of these two numbers is not included in the list that is ou
 
 ## Summary
 
-That's it. __You totally rock!__ This really wasn't so easy, so you should feel proud of yourself. We're definitely proud of you for making it to here!
+That's it. __You totally rock!__ This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 You might want to briefly do something else - stretch, walk around for a bit, rest your eyes - before going on to the next chapter. :)
 
