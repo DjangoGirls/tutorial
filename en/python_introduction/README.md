@@ -397,7 +397,7 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 
 # Save it!
 
-So far we've been writing all our python code in the intepreter, which limits us to one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+So far we've been writing all our python code in the interpreter, which limits us to one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
 - Open up our code editor of choice
@@ -453,7 +453,7 @@ You can now move on to an essential tool in programming:
 
 Lots of things in code should only be executed when given conditions are met. That's why Python has something called __if statements__.
 
-Replace the code in your **python_intro.py** file to this:
+Replace the code in your **python_intro.py** file with this:
 
 ```python
 if 3 > 2:
