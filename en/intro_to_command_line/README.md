@@ -77,7 +77,7 @@ If you're on Windows:
     > cd
     C:\Users\olasitarska
 
-You'll probably see something similiar on your machine. Once you open the command line you usually start at your user's home directory.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 > Note: 'pwd' stands for 'print working directory'.
 
