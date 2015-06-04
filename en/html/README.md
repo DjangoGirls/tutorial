@@ -148,7 +148,7 @@ It'd be good to see all this out and live on the Internet, right?  Let's do anot
 
 ### Commit, and push your code up to Github
 
-First off, let's see what files have changed since we last deployed:
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
     $ git status
 
