@@ -8,7 +8,7 @@ The following steps will show you how to use the black window all hackers use. I
 
 ## What is the command line?
 
-The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling and manipulating files on your computer (much like e.g. Windows Explorer or Finder on Mac, but without the graphical interface). Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling, and manipulating files on your computer. Much like Windows Explorer or Finder on Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Open the command-line interface
 
@@ -52,14 +52,14 @@ or
 
     > whoami
 
-And then hit Enter. This is our result:
+And then hit 'Enter'. This is our result:
 
     $ whoami
     olasitarska
 
-As you can see, the computer just presented you your username. Neat, huh?:)
+As you can see, the computer has just printed your username. Neat, huh?:)
 
-> Try to type each command, do not copy paste. You'll remember more this way!
+> Try to type each command, do not copy-paste. You'll remember more this way!
 
 ## Basics
 
@@ -67,7 +67,7 @@ Each operating system has a slightly different set of commands for the command l
 
 ### Current directory
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit enter:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit 'Enter':
 
     $ pwd
     /Users/olasitarska
@@ -108,7 +108,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 ### Change current directory
 
-Maybe we can now go to our Desktop directory?
+Now, let's go to our Desktop directory:
 
     $ cd Desktop
 
@@ -182,7 +182,7 @@ Windows:
 
     > cd ..
 
-Making `cd` to `..` will change your current directory to the parent directory (which means the directory that contains your current directory).
+Using `..` with the `cd` command will change your current directory to the parent directory (this is the directory that contains your current directory).
 
 Check where you are:
 
@@ -194,7 +194,7 @@ Windows:
     > cd
     C:\Users\olasitarska\Desktop
 
-Now time to delete the `djangogirls` directory.
+Now time to delete the `djangogirls` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
@@ -215,7 +215,7 @@ Windows:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, all right?:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright?:)
 
     $ exit
 
@@ -239,7 +239,7 @@ Cool, huh?:)
 | mkdir             | mkdir                    | create a new directory  | **mkdir testdirectory**                       |
 |del                | rm                       | delete a directory/file | **del c:\test\test.txt**                      |
 
-These are just a very few of the commands you can run in your command line but you're not going to use anything more than that today.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
