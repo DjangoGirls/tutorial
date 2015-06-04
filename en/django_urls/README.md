@@ -94,7 +94,7 @@ When writing regular expressions in Python it is always done with `r` in front o
 Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 ```
 
