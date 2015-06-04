@@ -12,27 +12,31 @@ Nous avons déjà un modèle `Post`, nous n'avons donc pas besoin de retourner �
 
 Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templates/blog/post_list.html`. Pour le moment, ce fichier doit ressembler à ceci :
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
     
 
-Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page nous détaillant celui-ci. Pour cela, changeons `<h1><a href="">{{ post.title }}</a></h1>` et transformons-le en lien :
+{% raw %}Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page nous détaillant celui-ci. Pour cela, changeons `<h1><a href="">{{ post.title }}</a></h1>` et transformons-le en lien:{% endraw %}
 
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```html
+<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
-C'est le parfait moment pour expliquer le mystérieux `{% url 'blog.views.post_detail' pk=post.pk %}`. Vous vous souvenez peut-être que la notation `{% %}` nous permet d'utiliser les balises de template Django. Cette fois, nous allons utiliser des balises qui vont s'occuper de créer des URLs à notre place.
+
+{% raw %}C'est le parfait moment pour expliquer le mystérieux `{% url 'blog.views.post_detail' pk=post.pk %}`. Vous vous souvenez peut-être que la notation `{% %}` nous permet d'utiliser les balises de template Django. Cette fois, nous allons utiliser des balises qui vont s'occuper de créer des URLs à notre place.{% endraw %}
 
 `blog.views.post_detail` est le chemin d'accès vers la *vue* `post_detail` que nous aimerions créer. Attention : `blog` désigne notre application (le dossier `blog`) et `views` le fichier `views.py`. Enfin, `post_detail` est le nom de notre *vue*.
 
@@ -139,22 +143,24 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 
 Ça ressemblera à ça :
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="date">
-            {% if post.published_date %}
-                {{ post.published_date }}
-            {% endif %}
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="date">
+        {% if post.published_date %}
+            {{ post.published_date }}
+        {% endif %}
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block, nous voulons que s'affiche la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non ?
 
-`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose : souvenez-vous de `if ... else ..` de la section **Introduction to Python**. Dans notre exemple, nous aimerions vérifier si un post possède une date de publication (`published_date`).
+{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose : souvenez-vous de `if ... else ..` de la section **Introduction to Python**. Dans notre exemple, nous aimerions vérifier si un post possède une date de publication (`published_date`).{% endraw %}
 
 Ok, vous pouvez maintenant rafraîchir votre page et voir si la page `Page not found` a enfin disparu.
 
@@ -168,14 +174,16 @@ Yay ! Ça marche !
 
 Ce serait génial si nous pouvions aller sur notre site web hébergé sur Heroku et voir toutes ces nouvelles fonctionnalités ! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15 :
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Ajout de vues supplémentaires pour le site."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Ajout de vues supplémentaires pour le site."
+...
+$ git push heroku master
+```
     
 
 Normalement, ça devrait suffire ! Encore bravo :)

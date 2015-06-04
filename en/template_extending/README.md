@@ -97,7 +97,7 @@ And now add this line to the beginning of the file:
 
     {% extends 'blog/base.html' %}
 
-It means that we're now extending the `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:
+{% raw %}It means that we're now extending the `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}

@@ -30,9 +30,11 @@ Comme vous pouvez le voir, tout ce que nous avons, c'est ceci :
 
 Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous rappeler comment afficher des listes en Python. Si vous avez un trou de mémoire, allez voir dans le chapitre **Introduction to Python**. Vous avez trouvé ? Avec des boucles ! Dans un template Django, vous pouvez les écrire de cette façon :
 
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
     
 
 Essayez-la dans votre template.
@@ -43,39 +45,43 @@ Essayez-la dans votre template.
 
 Ça marche ! Cependant, nous aimerions plutôt les afficher à la manière des posts statiques, comme lorsque nous les avions créés dans le chapitre **Introduction to HTML**. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci :
 
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% endfor %}
+```
     
 
-Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet dans la liste. Rafraichissez votre page :
+{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet dans la liste. Rafraichissez votre page:{% endraw %}
 
 ![Figure 13.3][3]
 
  [3]: images/step3.png
 
-Avez-vous remarqué que nous utilisons une notation légèrement différente cette fois (`{{ post.title }}` or `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, les `|barres verticales` nous permettent de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.
+{% raw %}Avez-vous remarqué que nous utilisons une notation légèrement différente cette fois (`{{ post.title }}` or `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, les `|barres verticales` nous permettent de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.{% endraw %}
 
 ## Une dernière chose
 
 Ce serait génial si nous pouvions aller sur notre site web hébergé sur Heroku et voir toutes ces nouvelles fonctionnalités ! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15 :
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Utilisation de template Django à la place de HTML statique"
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Utilisation de template Django à la place de HTML statique"
+...
+$ git push heroku master
+```
     
 
 Félicitations ! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration ? N'oubliez pas d'ajouter une date de publication ! Ensuite, rafraîchissez votre page et regardez si votre post apparaît.

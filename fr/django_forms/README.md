@@ -43,39 +43,42 @@ Nous allons donc une nouvelle fois suivre le processus suivant et créer : un li
 
 C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons ajouter un lien dans un `div` appelé `page-header` :
 
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```html
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
     
 
 Remarquez que notre nouvelle vue s'appelle `post_new`.
 
 Après avoir ajouté cette ligne, votre fichier html devrait maintenant ressembler à ceci :
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
-    
+        </div>
+    </body>
+</html>
+```
 
 Normalement, après avoir rechargé la page `http://127.0.0.1:8000`, vous devriez encore tomber sur l'erreur `NoReverseMatch`.
 
@@ -123,7 +126,7 @@ Nous avons pour cela besoin de créer un fichier `post_edit.html` dans le dossie
 *   Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser `{{ form.as_p }}`.
 *   La ligne précédente va avoir besoin d'être enveloppée dans des balises HTML : `<form method="POST">...</form>`
 *   Nous avons besoin d'un bouton `Save (sauvegarder)`. Nous allons le créer à l'aide d'un bouton HTML : `<button type="submit">Save</button>`
-*   Enfin, nous avons besoin d'ajouter `{% csrf_token %}` juste après la balise `<form ...>`. C'est très important : c'est ce qui va permettre de sécuriser votre formulaire ! De toute manière, si vous avez oublié ce petit morceau, Django va se plaindre lors de la sauvegarde du formulaire :
+*   Enfin, nous avons besoin d'ajouter `{% raw %}{% csrf_token %}{% endraw %}` juste après la balise `<form ...>`. C'est très important : c'est ce qui va permettre de sécuriser votre formulaire ! De toute manière, si vous avez oublié ce petit morceau, Django va se plaindre lors de la sauvegarde du formulaire :
 
 ![CSFR Forbidden page][1]
 
@@ -131,15 +134,17 @@ Nous avons pour cela besoin de créer un fichier `post_edit.html` dans le dossie
 
 Ok, voyons maintenant à quoi devrait ressembler le fichier `post_edit.html` :
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
     
 
 Rafraîchissons la page ! Et voilà : le formulaire s'affiche !
@@ -247,23 +252,26 @@ Maintenant, nous savons comme ajouter un nouveau formulaire. Comment faire si no
 
 Ouvrez le fichier `blog/templates/blog/post_detail.html` et ajoutez la ligne suivante :
 
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
 Votre template doit ressembler à ceci :
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="date">
-        {% if post.published_date %}
-            {{ post.published_date }}
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="date">
+    {% if post.published_date %}
+        {{ post.published_date }}
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 Maintenant, dans `blog/urls.py`, ajoutez cette ligne :
@@ -321,14 +329,16 @@ Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas �
 
 Ce serait génial si nous pouvions aller sur notre site web hébergé sur Heroku et voir toutes ces nouvelles fonctionnalités ! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15 :
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Ajout des vues qui permettent d'ajouter et éditer des blog posts directement sur le site"
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Ajout des vues qui permettent d'ajouter et éditer des blog posts directement sur le site"
+...
+$ git push heroku master
+```
     
 
 Normalement, ça devrait suffire ! Encore bravo :)

@@ -43,37 +43,40 @@ Oto, co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 Czas otworzyć plik `blog/templates/blog/base.html`. Wewnątrz `div`-a o nazwie `page-header` dodajmy odnośnik:
 
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-
+```html
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Zauważ, że chcemy odwołać się do naszego nowego widoku `post_new`.
 
 Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
+```
 
 
 Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś oczywiście znajomo wyglądający błąd `NoReverseMatch`, zgadza się?
@@ -122,21 +125,23 @@ Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog`. Aby nas
 *   musimy wyświetlić formularz. Możemy to zrobić np. za pomocą prostego polecenia `{{ form.as_p }}`.
 *   powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: <`form method="POST">...</form>`
 *   potrzebny nam przycisk `Zapisz`. Tworzymy go jako przycisk w HTML: `<button type="submit">Save</button>`
-*   i na koniec jeszcze, zaraz po znaczniku otwierającym `<form ...>`, musimy dodać `{% csrf_token %}`. To bardzo ważne, gdyż ta linijka sprawia, że Twoje formularze są bezpieczne! Jeśli o tym zapomnisz i spróbujesz zapisać formularz, Django nie pozostawi tego bez komentarza:
+*   i na koniec jeszcze, zaraz po znaczniku otwierającym `<form ...>`, musimy dodać `{% raw %}{% csrf_token %}{% endraw %}`. To bardzo ważne, gdyż ta linijka sprawia, że Twoje formularze są bezpieczne! Jeśli o tym zapomnisz i spróbujesz zapisać formularz, Django nie pozostawi tego bez komentarza:
 
 ![Strona CSRF Forbidden](images/csrf2.png)
 
 OK. Podsumujmy, jak powinien wyglądać kod HTML w pliku `post_edit.html`:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
 
 
 Czas odświeżyć stronę! Hura! Twój formularz został wyświetlony!
@@ -238,23 +243,26 @@ Teraz już wiemy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy
 
 Otwórz `blog/templates/blog/post_detail.html` i dodaj poniższą linijkę:
 
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+````
 
 dzięki czemu nasz szablon będzie wyglądał tak:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="date">
-        {% if post.published_date %}
-            {{ post.published_date }}
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+{% block content %}
+    <div class="date">
+    {% if post.published_date %}
+        {{ post.published_date }}
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
 
 
 W pliku `blog/urls.py` dodajmy wiersz:
@@ -308,14 +316,16 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Dobrze byłoby wiedzieć, że nasza witryna nadal działa na Heroku, prawda? Spróbuj ponownie ją zaktualizować. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału [Wdrażanie](../deploy/README.md):
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Dodano widoki do edycji i tworzenia blog postow"
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Dodano widoki do edycji i tworzenia blog postow"
+...
+$ git push heroku master
+```
 
 
 I to już wszystko! Gratulacje :)

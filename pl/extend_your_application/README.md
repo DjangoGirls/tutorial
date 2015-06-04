@@ -12,24 +12,28 @@ Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
 Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`. Do tej pory plik powinien wyglądać tak:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
 
 
 Chcemy, aby tytuł wpisu był linkiem prowadzącym do strony ze szczegółami wpisu. Zmieńmy `<h1><a href="">{{ post.title }}</a></h1>` w link:
 
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```html
+<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
 
 Czas wyjaśnić, co oznacza to tajemnicze `{% url 'blog.views.post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje za nas adres strony!
@@ -118,17 +122,19 @@ W folderze `blog/templates/blog` stwórzmy plik o nazwie `post_detail.html`.
 
 Jego treść będzie wyglądać tak:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+{% block content %}
+    {% if post.published_date %}
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+    {% endif %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
 
 
 Znów rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić datę opublikowania wpisu (o ile istnieje), tytuł oraz treść. Ale jest kilka ważnych rzeczy do omówienia, nieprawdaż?
@@ -145,14 +151,16 @@ Hura! Działa!
 
 Byłoby dobrze, aby zobaczyć, jeśli witryna nadal będzie nad Heroku, prawa? Spróbuj ponownie wdrażania. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału [Wdrażanie](../deploy/README.md):
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Dodane widoki do strony"
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Dodane widoki do strony"
+...
+$ git push heroku master
+```
 
 
 I to już wszystko! Gratulacje :)

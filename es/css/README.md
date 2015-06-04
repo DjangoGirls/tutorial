@@ -94,41 +94,45 @@ Leer sobre [Selectores de CSS en w3schools][4].
 
 Entonces, necesitamos decirle a nuestra plantilla HTML que hemos añadido CSS. Abra el fichero `blog/templates/blog/post_list.html` y añade esta línea al principio:
 
-    {% load staticfiles %}
-    
+```html
+{% load staticfiles %}
+```
 
 Estamos cargando archivos estáticos aquí:). Luego, entre el `< head >` `y/< / head >`, después de los enlaces a los archivos CSS Bootstrap (el navegador lee los archivos en el orden que los das, así que nuestro archivo de código puede sobreescribir partes del código en de Bootstrap), añade la siguiente línea:
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
 Le acabamos de decir a nuestra plantilla donde se encuentra nuestro archivo CSS.
 
 Tu archivo ahora debe verse así:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
             <div>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
-    
-            {% for post in posts %}
-                <div>
-                    <p>published: {{ post.published_date }}</p>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
-                </div>
-            {% endfor %}
-        </body>
-    </html>
+        {% endfor %}
+    </body>
+</html>
+```
     
 
 OK, guarde el archivo y actualiza el sitio!
@@ -139,9 +143,11 @@ OK, guarde el archivo y actualiza el sitio!
 
 ¡ Buen trabajo! Tal vez también nos gustaría dar un poco de aire a nuestro sitio web y aumentar el margen en el lado izquierdo. Vamos a intentarlo!
 
-    body {
-        padding-left: 15px;
-    }
+```css
+body {
+    padding-left: 15px;
+}
+```
     
 
 Añade esto a tu CSS, guarda el archivo y mira cómo funciona!
@@ -152,17 +158,20 @@ Añade esto a tu CSS, guarda el archivo y mira cómo funciona!
 
 ¿Tal vez podemos personalizar la tipografía en nuestra cabecera? Pegue esto en `< head >` del archivo `blog/templates/blog/post_list.html`:
 
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    
+```html
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
 Esta línea va a importar una tipografía llamada *Lobster* de Google Fonts (https://www.google.com/fonts).
 
 Ahora agrega la linea `font-family: 'Lobster';` en el archivo CSS `static/css/blog.css` dentro del bloque `h1 a` (el codigo entre las llaves `{` and `}`) y actualiza la página:
 
-    h1 a {
-        color: #FCA205;
-        font-family: 'Lobster';
-    }
+```css
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+```
     
 
 ![Figure 14.3][7]
@@ -175,99 +184,109 @@ Como se mencionó anteriormente, CSS tiene un concepto de clases, que básicamen
 
 Adelante! Nombra algunas partes del código HTML. Añade una clase llamada `page-header` a tu `div` que contiene el encabezado, así:
 
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+```html
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+```
     
 
 Y ahora añade la clase `post` a tu `div` que contiene una entrada del blog.
 
+```html
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaks }}</p>
+</div>
+```
+    
+
+Ahora añadiremos bloques de declaración a diferentes selectores. Selectores a partir de `.` se refieren a las clases. Hay muchos tutoriales y explicaciones sobre CSS en la web para ayudarte entender el siguiente codigo. Por ahora, sólo copia y pega en tu archivo `mysite/static/css/blog.css`:
+
+```css
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+```
+    
+
+Luego envuelve el código HTML que muestra los mensajes con las declaraciones de clases. Cambia esto:
+
+```html
+{% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
-    
-
-Ahora añadiremos bloques de declaración a diferentes selectores. Selectores a partir de `.` se refieren a las clases. Hay muchos tutoriales y explicaciones sobre CSS en la web para ayudarte entender el siguiente codigo. Por ahora, sólo copia y pega en tu archivo `mysite/static/css/blog.css`:
-
-    .page-header {
-        background-color: #ff9400;
-        margin-top: 0;
-        padding: 20px 20px 20px 40px;
-    }
-    
-    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-        color: #ffffff;
-        font-size: 36pt;
-        text-decoration: none;
-    }
-    
-    .content {
-        margin-left: 40px;
-    }
-    
-    h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
-    }
-    
-    .date {
-        float: right;
-        color: #828282;
-    }
-    
-    .save {
-        float: right;
-    }
-    
-    .post-form textarea, .post-form input {
-        width: 100%;
-    }
-    
-    .top-menu, .top-menu:hover, .top-menu:visited {
-        color: #ffffff;
-        float: right;
-        font-size: 26pt;
-        margin-right: 20px;
-    }
-    
-    .post {
-        margin-bottom: 70px;
-    }
-    
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
-    }
-    
-
-Luego envuelve el código HTML que muestra los mensajes con las declaraciones de clases. Cambia esto:
-
-    {% for post in posts %}
-        <div class="post">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% endfor %}
+```
     
 
 En `blog/templates/blog/post_list.html` con esto:
 
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+```html
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        {{ post.published_date }}
                     </div>
-                {% endfor %}
-            </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
+</div>
+```
     
 
 Guarda los archivos y actualiza tu sitio.

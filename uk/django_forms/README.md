@@ -43,37 +43,41 @@ Ok, відкриймо цей файл і наберемо наступний к
 
 Час відкрити `blog/templates/blog/base.html`. Додамо лінк всередині блоку `div` із ім'ям `page-header`:
 
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```html
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```    
+
 
 Зауважте, що ми хочемо запустити наш новий блок view `post_new`.
 
 Після додавання відповідного рядка, ваш html файл має виглядати наступним чином:
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
+```
     
 
 Після збереження і перезапуску сторінки http://127.0.0.1:8000 ви, очевидніше за все, побачите знайому помилку `NoReverseMatch`, вірно?
@@ -122,21 +126,23 @@ Ok, відкриймо цей файл і наберемо наступний к
 *   ми маємо відобразити форму. Можемо це зробити, наприклад, за допомогою простого `{{ form.as_p }}`.
 *   верхній рядок має бути розміщений всередині тега HTML для форми: `<form method="POST">...</form>`
 *   нам знадобиться кнопка Зберегти - `Save`. Створимо її в HTML за допомогою: `<button type="submit">Save</button>`
-*   і врешті-решт одразу після відкриття тегу для форми `<form ...>` потрібно додати `{% csrf_token %}`. Це дуже важливо з міркувань безпеки вашої форми! Django наголосить на цьому, якщо ви раптом забудете вказати згадану вказівку і будете намагатися зберегти форму:
+*   і врешті-решт одразу після відкриття тегу для форми `<form ...>` потрібно додати `{% raw %}{% csrf_token %}{% endraw %}`. Це дуже важливо з міркувань безпеки вашої форми! Django наголосить на цьому, якщо ви раптом забудете вказати згадану вказівку і будете намагатися зберегти форму:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
 Добре, отже давайте подивимось як має виглядати HTML код в `post_edit.html`:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
     
 
 Час перезавантажитись! Йой! Ваша форма відображується!
@@ -238,23 +244,27 @@ Django турбується про те, щоб усі поля нашої фо�
 
 Відкрийте `blog/templates/blog/post_detail.html` і додайте наступний рядок:
 
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
     
 
 таким чином, шаблон буде виглядати подібним чином:
 
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="date">
-        {% if post.published_date %}
-            {{ post.published_date }}
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="date">
+    {% if post.published_date %}
+        {{ post.published_date }}
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 В `blog/urls.py` додамо цей рядок:
@@ -308,14 +318,16 @@ Django турбується про те, щоб усі поля нашої фо�
 
 Було б непогано побачити чи ваш сайт все ще працює на Heroku, чи не так? Давайте спробуємо розгорнути його знову. Якщо ви вже забули як це зробити, зверніться до кінцевої частини розділу [Розгортання](../deploy/README.md):
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Added views to create/edit blog post inside the site."
+...
+$ git push heroku master
+```
     
 
 І це все! Вітання :)

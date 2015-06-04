@@ -11,26 +11,30 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 ## Create a link in the template
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
+```html
+{% extends 'blog/base.html' %}
 
-    {% extends 'blog/base.html' %}
-
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
 
-We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:
+```
 
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+{% raw %}We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:{% endraw %}
 
-Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!
+```html
+<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
+
+{% raw %}Time to explain the mysterious `{% url 'blog.views.post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 `blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit - `post_detail` - is the name of the *view*.
 
@@ -44,13 +48,15 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want to create a URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `blog/urls.py` file. It should look like this:
 
-    from django.conf.urls import include, url
-    from . import views
+```python
+from django.conf.urls import include, url
+from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    ]
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+]
+```
 
 That one looks scary, but no worries - we will explain it for you:
 - it starts with `^` again -- "the beginning"
@@ -113,23 +119,25 @@ We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something (remember `if ... else ..` from __Introduction to Python__ chapter?). In this scenario we want to check if a post's `published_date` is not empty.
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something (remember `if ... else ..` from __Introduction to Python__ chapter?). In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 Ok, we can refresh our page and see if `Page not found` is gone now.
 

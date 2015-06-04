@@ -94,41 +94,46 @@ Nous vous conseillons d'en apprendre un peu plus sur les sélecteurs CSS sur [w3
 
 Afin que nos modifications fonctionnent, nous devons aussi signaler à notre template HTML que nous utilisons des CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` et ajoutez cette ligne au tout début de celui-ci :
 
-    {% load staticfiles %}
+```html
+{% load staticfiles %}
+```
     
 
 Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés : en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci :
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
 Nous venons simplement de dire à notre template où nous avons rangé notre fichier CSS.
 
 Maintenant, votre fichier doit ressembler à ceci :
 
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
             <div>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
             </div>
-    
-            {% for post in posts %}
-                <div>
-                    <p>published: {{ post.published_date }}</p>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
-                </div>
-            {% endfor %}
-        </body>
-    </html>
+        {% endfor %}
+    </body>
+</html>
+```
     
 
 Ok, on sauvegarde et on rafraîchit la page !
@@ -242,32 +247,35 @@ Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs
 
 Nous allons maintenant nous intéresser au code concernant les posts. Remplacer le code suivant :
 
-    {% for post in posts %}
-        <div class="post">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
-    
+```html
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```    
 
 Ce code se trouve dans le fichier `blog/templates/blog/post_list.html` et doit être remplacé par celui-ci :
 
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+```html
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        {{ post.published_date }}
                     </div>
-                {% endfor %}
-            </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
+</div>
+```
     
 
 Sauvegardez les fichiers modifiés et rafraîchissez votre site web.
