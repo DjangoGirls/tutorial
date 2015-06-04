@@ -63,7 +63,7 @@ Using double quotes:
     >>> "Runnin' down the hill"
     "Runnin' down the hill"
 
-or escaping  apostrophe with a backslash (`\`):
+or escaping the apostrophe with a backslash (`\`):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
