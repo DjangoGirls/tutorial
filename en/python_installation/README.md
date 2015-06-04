@@ -56,7 +56,7 @@ Use this command in your console:
 
 ### OS X
 
-You need to go to the website https://www.python.org/downloads/release/python-342/ and download the Python installer:
+You need to go to the website https://www.python.org/downloads/release/python-343/ and download the Python installer:
 
 * Download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
 * Double click to open it,

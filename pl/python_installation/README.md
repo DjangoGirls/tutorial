@@ -49,7 +49,7 @@ Użyj następującego polecenia w konsoli:
 
 ### OS X
 
-Przejdź na stronę https://www.python.org/downloads/release/python-342/ i pobierz instalator Pythona:
+Przejdź na stronę https://www.python.org/downloads/release/python-343/ i pobierz instalator Pythona:
 
 *   pobierz plik *DMG* o nazwie *Mac OS X 64-bit/32-bit installer*,
 *   kliknij dwukrotnie, aby go otworzyć,

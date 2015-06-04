@@ -49,7 +49,7 @@ Python для Windows можна завантажити з сайту https://ww
 
 ### OS X
 
-Вам необхідно перейти на веб сайт https://www.python.org/downloads/release/python-342/ і завантажити Python інсталятор:
+Вам необхідно перейти на веб сайт https://www.python.org/downloads/release/python-343/ і завантажити Python інсталятор:
 
 *   завантажте файл *Mac OS X 64-bit/32-bit installer* *DMG*,
 *   натисніть двічі, щоб відкрити його,
