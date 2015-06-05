@@ -12,20 +12,23 @@ If we want to model a cat we will create an object `Cat` that has some propertie
 
 Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which we will give the cat some `CatFood`, which could be a separate object with properties, i.e. `taste`).
 
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+```
+Cat
+--------
+color
+age
+mood
+owner
+purr()
+scratch()
+feed(cat_food)
+```
 
-
-    CatFood
-    --------
-    taste
+```
+CatFood
+--------
+taste
+```
 
 So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
@@ -35,13 +38,15 @@ We need to answer the question: What is a blog post? What properties should it h
 
 Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it - so we need an author. Finally, we want to know when the post was created and published.
 
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
+```
+Post
+--------
+title
+text
+author
+created_date
+published_date
+```
 
 What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
 
@@ -61,29 +66,33 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
+```:command-line
+(myvenv) ~/djangogirls$ python manage.py startapp blog
+```
 
 You will notice that a new `blog` directory is created and it contains a number of files now. Our directories and files in our project should look like this:
 
-    djangogirls
-    ├── mysite
+```:command-line
+djangogirls
+├── mysite
+|       __init__.py
+|       settings.py
+|       urls.py
+|       wsgi.py
+├── manage.py
+└── blog
+    ├── migrations
     |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
-    ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+    ├── __init__.py
+    ├── admin.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+```
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
-```python
+```python:settings.py
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -101,7 +110,7 @@ In the `blog/models.py` file we define all objects called `Models` - this is a p
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 
-```python
+```python:models.py
 from django.db import models
 from django.utils import timezone
 
@@ -154,18 +163,30 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Type `python manage.py makemigrations blog`. It will look like this:
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      0001_initial.py:
-      - Create model Post
+```:command-line
+(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for 'blog':
+  0001_initial.py:
+  - Create model Post
+```
 
 Django prepared for us a migration file that we have to apply now to our database. Type `python manage.py migrate blog` and the output should be:
 
+<<<<<<< HEAD
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
+=======
+```:command-line
+(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Applying blog.0001_initial... OK
+```
+>>>>>>> Chapters 9-11
 
 Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!

@@ -26,16 +26,18 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 > **Note** Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+```:command-line
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Your Name"
+$ git config --global user.email you@example.com
+```
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever).
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
-```
+```:.gitignore
 *.pyc
 __pycache__
 myvenv
@@ -52,30 +54,33 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help stop any surprises from happening, such as wrong files being added or commited. The `git status` command returns information about any untracked/modifed/staged files, branch status, and much more. The output should be similar to:
 
-    $ git status
-    On branch master
+```:command-line
+$ git status
+On branch master
 
-    Initial commit
+Initial commit
 
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
 
-            .gitignore
-            blog/
-            manage.py
-            mysite/
+        .gitignore
+        blog/
+        manage.py
+        mysite/
 
-    nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 And finally we save our changes. Go to your console and run these commands:
-
-    $ git add -A .
-    $ git commit -m "My Django Girls app, first commit"
-     [...]
-     13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-     [...]
-     create mode 100644 mysite/wsgi.py
+```:command-line
+$ git add -A .
+$ git commit -m "My Django Girls app, first commit"
+ [...]
+ 13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+ [...]
+ create mode 100644 mysite/wsgi.py
+ ```
 
 
 ## Pushing our code to GitHub
@@ -96,19 +101,23 @@ Now we need to hook up the Git repository on your computer to the one up on GitH
 
 Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
 
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
+```:command-line
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+$ git push -u origin master
+```
 
 Enter your GitHub username and password and you should see something like this:
 
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/hjwp/my-first-blog.git
-     * [new branch]      master -> master
-    Branch master set up to track remote branch master from origin.
+```:command-line
+Username for 'https://github.com': hjwp
+Password for 'https://hjwp@github.com':
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hjwp/my-first-blog.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -130,34 +139,38 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 
-    $ git clone https://github.com/<your-github-username>/my-first-blog.git
+```:command-line
+$ git clone https://github.com/<your-github-username>/my-first-blog.git
+```
 
 This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
 
-    $ tree my-first-blog
-    my-first-blog/
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── migrations
-    │   │   ├── 0001_initial.py
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+```:command-line
+$ tree my-first-blog
+my-first-blog/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
 
 
 ### Creating a virtualenv on PythonAnywhere
 
 Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
-```
+```:command-line
 $ cd my-first-blog
 
 $ virtualenv --python=python3.4 myvenv
@@ -185,28 +198,29 @@ Were you wondering what the "whitenoise" thing was?  It's a tool for serving so-
 
 We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
+<<<<<<< HEAD
 For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. At the moment these are mostly files that make the admin site look pretty.
 
-    (mvenv) $ python manage.py collectstatic
+```:command-line
+(mvenv) $ python manage.py collectstatic
+/home/edith/my-first-blog/static
 
-    You have requested to collect static files at the destination
-    location as specified in your settings:
+This will overwrite existing files!
+Are you sure you want to do this?
 
-        /home/edith/my-first-blog/static
-
-    This will overwrite existing files!
-    Are you sure you want to do this?
-
-    Type 'yes' to continue, or 'no' to cancel: yes
+Type 'yes' to continue, or 'no' to cancel: yes
+```
 
 Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/my-first-blog/static'.
+```:command-line
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+[...]
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+62 static files copied to '/home/edith/my-first-blog/static'.
+```
 
 
 ### Creating the database on PythonAnywhere
@@ -215,15 +229,15 @@ Here's another thing that's different between your own computer and the server: 
 
 We can initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
+```:command-line
+(mvenv) $ python manage.py migrate
+Operations to perform:
+[...]
+  Applying sessions.0001_initial... OK
 
-    (mvenv) $ python manage.py migrate
-    Operations to perform:
-    [...]
-      Applying sessions.0001_initial... OK
 
-
-    (mvenv) $ python manage.py createsuperuser
-
+(mvenv) $ python manage.py createsuperuser
+```
 
 ## Publishing our blog as a web app
 
@@ -256,7 +270,7 @@ Click on the "WSGI configuration file" link (in the "Code" section near the top 
 
 Delete all the contents and replace them with something like this:
 
-```python
+```python:&lt;your-username&gt;_pythonanywhere_com_wsgi.py
 import os
 import sys
 
@@ -270,6 +284,7 @@ from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
+
 
 > **Note** Don't forget to substitute in your own username where it says `<your-username>`
 
