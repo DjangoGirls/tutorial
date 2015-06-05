@@ -14,18 +14,18 @@ Y luego el `Gato` tiene algunas acciones: `ronronear`, `rasguñar` o `alimentars
 
     Gato
     ---------
-    color 
-    edad 
-    humor 
-    dueño 
-    ronronear() 
-    rasguñar() 
-    alimientarse(comida_de_gato) 
-    
+    color
+    edad
+    humor
+    dueño
+    ronronear()
+    rasguñar()
+    alimientarse(comida_de_gato)
+
     ComidaDeGato
     ----------
     sabor
-    
+
 
 Básicamente se trata de describir cosas reales en el código con propiedades (llamadas `Propiedades del objeto`) y las acciones (llamadas `métodos`).
 
@@ -37,13 +37,13 @@ Bueno, seguro que nuestras entradas necesitan un texto con su contenido y un tí
 
     Entrada
     ---------
-    
+
     título
     texto
     autor
     fecha_creacion
     fecha_publicacion
-    
+
 
 ¿Qué tipo de cosas podría hacerse con una entrada del blog? Sería bueno tener algún `método` que publique la entrada, ¿no?
 
@@ -64,7 +64,7 @@ Piensa en el modelo como una hoja de cálculo con columnas (campos) y filas (dat
 Para mantener todo en orden, crearemos una aplicación separada dentro de nuestro proyecto. Es muy bueno tener todo organizado desde el principio. Para crear una aplicación necesitamos ejecutar el siguiente comando en la consola (dentro `djangogirls` donde está el archivo `manage.py`):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 Vas notar que se crea un nuevo directorio llamado `blog` y contiene una serie de archivos. Nuestros directorios y archivos en nuestro proyecto deberían parecerse a esto:
 
@@ -83,7 +83,7 @@ Vas notar que se crea un nuevo directorio llamado `blog` y contiene una serie de
     ├── models.py
     ├── tests.py
     └── views.py
-    
+
 
 Después de crear una aplicación también necesitamos decirle a Django que debe utilizarla. Lo hacemos en el archivo `mysite/settings.py`. Tenemos que encontrar `INSTALLED_APPS` y añadir una línea que contiene `'blog',` justo por encima de `)`. El producto final debe tener este aspecto:
 
@@ -96,7 +96,7 @@ Después de crear una aplicación también necesitamos decirle a Django que debe
         'django.contrib.staticfiles',
         'blog',
     )
-    
+
 
 ### Creando el Modelo post
 
@@ -106,7 +106,7 @@ Vamos abrir `blog/models.py`, quitamos todo y escribimos un código como este:
 
     from django.db import models
     from django.utils import timezone
-    
+
     class Post(models.Model):
         author = models.ForeignKey('auth.User')
         title = models.CharField(max_length=200)
@@ -115,14 +115,14 @@ Vamos abrir `blog/models.py`, quitamos todo y escribimos un código como este:
                 default=timezone.now)
         published_date = models.DateTimeField(
                 blank=True, null=True)
-    
+
         def publish(self):
             self.published_date = timezone.now()
             self.save()
-    
+
         def __str__(self):
             return self.title
-    
+
 
 > Vuelva a verificar que usaste dos caracteres undescore (`_`) en cada lado del `str`. Los que se utilizan con frecuencia en Python y a veces también los llamamos "dunder" (diminutivo de "doble-subrayado").
 
@@ -159,7 +159,7 @@ El último paso es añadir nuestro nuevo modelo a nuestra base de datos. Primero
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 Django nos prepara un archivo de migración que tenemos que aplicar ahora a nuestra base de datos, escribe `python manage.py migrate blog`, el resultado debe ser:
 
@@ -168,6 +168,6 @@ Django nos prepara un archivo de migración que tenemos que aplicar ahora a nues
       Apply all migrations: blog
     Running migrations:
       Applying blog.0001_initial... OK
-    
 
-¡ Hurra! Nuestro modelo de Post está ahora en nuestra base de datos, sería bueno verlo, ¿no? Dirígete al siguiente capítulo para ver cómo luce tu Post!
+
+¡Hurra! Nuestro modelo de Post está ahora en nuestra base de datos, sería bueno verlo, ¿no? Dirígete al siguiente capítulo para ver cómo luce tu Post!

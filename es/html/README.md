@@ -21,13 +21,13 @@ Las plantillas se guardan en el directorio de `blog/templates/blog`. Así que pr
     blog
     └───templates
         └───blog
-    
+
 
 (Tal vez te preguntes por qué necesitamos dos directorios llamados `blog` - como usted descubrirá más adelante, esto es simplemente una útil convención de nomenclatura que hace la vida más fácil cuando las cosas empiezan a complicarse más.)
 
 Y ahora a crear un archivo `post_list.html` (Déjalo en blanco por ahora) dentro del directorio de `blog/templates/blog`.
 
-Cómo se ve su sitio web ahora: http://127.0.0.1:8000 /
+Cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
 > Si todavía tienes un error `TemplateDoesNotExists`, intenta reiniciar el servidor. Ve a la línea de comandos, detén el servidor pulsando Ctrl + C (teclas Control y C juntas) y comienza de nuevo mediante la ejecución del comando `python manage.py runserver`.
 
@@ -43,9 +43,9 @@ Añade lo siguiente a su archivo de plantilla:
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
 
-¿Cómo luce ahora tu sitio de Internet? Haga clic para ver: http://127.0.0.1:8000 /
+
+¿Cómo luce ahora tu sitio de Internet? Haga clic para ver: http://127.0.0.1:8000/
 
 ![Figura 11.2][2]
 
@@ -53,8 +53,8 @@ Añade lo siguiente a su archivo de plantilla:
 
 ¡Funcionó! Buen trabajo :)
 
-*   La etiqueta más básica, `<html >`, es siempre el principio de cualquier página web y `</html >` es siempre el final. Como puedes ver, todo el contenido de la página web va al principio de la etiqueta `<html >` y entre la etiqueta de cierre `</html >`
-*   `< p >` es una etiqueta para los elementos de párrafo; `< /p >` cierra cada párrafo
+*   La etiqueta más básica, `<html>`, es siempre el principio de cualquier página web y `</html>` es siempre el final. Como puedes ver, todo el contenido de la página web va al principio de la etiqueta `<html>` y entre la etiqueta de cierre `</html>`
+*   `<p>` es una etiqueta para los elementos de párrafo; `</p>` cierra cada párrafo
 
 ## Cabeza & Cuerpo
 
@@ -77,7 +77,7 @@ Por ejemplo, puedes ponerle un título a la página web dentro de la `<head>`, a
             <p>It works!</p>
         </body>
     </html>
-    
+
 
 Guarda el archivo y actualiza tu página.
 
@@ -117,13 +117,13 @@ Aquí hay un ejemplo de una plantilla completa:
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My first post</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My second post</a></h2>
@@ -131,7 +131,7 @@ Aquí hay un ejemplo de una plantilla completa:
             </div>
         </body>
     </html>
-    
+
 
 Hemos creado tres secciones `div` aquí.
 
@@ -155,30 +155,30 @@ Lo que queremos realmente es mostrar mensajes reales añadidos en nuestra admini
 En primer lugar, veamos qué archivos han cambiado desde que hicimos deploy:
 
     $ git status
-    
+
 
 Vamos a decirle a `git` para incluir todos los cambios desde el directorio actual:
 
     $ git add -A .
-    
+
 
 > **Nota** `-A` (abreviatura de "all") significa que `git` también reconocerá si se han eliminado los archivos (de forma predeterminada, sólo reconoce archivos nuevos/modificados). También recuerda (capítulo 3) que `.` significa el directorio actual.
 
 Antes de que subamos todos los archivos, vamos a ver qué `git` va subiendo (todos los archivos que `git` cargará ahora deberían aparecer en verde):
 
     $ git status
-    
+
 
 Ya casi estamos, ahora es tiempo de decirle que guarde estos cambios en su historial. Vamos a dar un "mensaje de comentar" donde se describe lo que hemos cambiado. Puedes escribir cualquier cosa que te gustaría en esta etapa, pero es útil escribir algo descriptivo para que puedes recordar lo que has hecho en el futuro.
 
     $ git commit -m "Cambiando el html para la página."
-    
+
 
 > **Nota** Asegúrate de usar comillas dobles alrededor del mensaje de confirmación.
 
 Una vez que hemos hecho eso, por fin podemos subir (push) nuestros cambios en el sitio web en heroku:
 
     git push heroku master
-    
+
 
 Y eso es todo! Una vez terminado Heroku, tu puedes seguir adelante y actualizar tu sitio web en el navegador. Los cambios deberian ser visibles!

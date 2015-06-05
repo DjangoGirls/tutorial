@@ -16,12 +16,12 @@ Fue escrito por programadores que trabajaban para Twitter y ahora colaboran en �
 
 ## Instalar Bootstrap
 
-Para instalar Bootstrap, tienes que añadir esto al `< head >` en el archivo `.html` (`blog/templates/blog/post_list.html`):
+Para instalar Bootstrap, tienes que añadir esto al `<head>` en el archivo `.html` (`blog/templates/blog/post_list.html`):
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
+
 
 Esa línea no incluye ningún fichero a tu proyecto, simplemente utiliza uno existente en internet. Adelante, abre tu página web y actualízala. ¡Ahí lo tienes!
 
@@ -44,14 +44,14 @@ En primer lugar, necesitamos crear un directorio para almacenar nuestros archivo
     djangogirls
     ├─── static
     └─── manage.py
-    
+
 
 Abre el fichero `mysite/settings.py`, desplázate hasta el fondo del fichero y agregue las siguientes líneas:
 
     STATICFILES_DIRS = (
        os.path.join(BASE_DIR, "static"),
     )
-    
+
 
 De esta manera Django sabrá dónde encontrar los archivos estáticos.
 
@@ -62,7 +62,7 @@ Vamos ahora a crear un fichero CSS para añadir tu propio estilo a tu página we
     static
     └─── css
             blog.css
-    
+
 
 Hora de escribir CSS! Abra el archivo `static/css/blog.css` en el editor de código.
 
@@ -79,14 +79,14 @@ En el fichero `static/css/blog.css` debes añadir el siguiente código:
     h1 a {
         color: #FCA205;
     }
-    
 
-`h1 un` es un Selector de CSS. Esto significa que estamos aplicando nuestros estilos a `cualquier elemento dentro de un elemento <code>h1`</code> (por ejemplo cuando tenemos en código algo como: `< h1 >< a href = "" > enlace < /a >< / h1 >`). En este caso, estamos diciendo que cambie su color a `#FCA205`, que es de color naranja. Por supuesto, puedes poner tu propio color aquí!
+
+`h1 un` es un Selector de CSS. Esto significa que estamos aplicando nuestros estilos a `cualquier elemento dentro de un elemento <code>h1`</code> (por ejemplo cuando tenemos en código algo como: `<h1><a href = ""> enlace </a></h1>`). En este caso, estamos diciendo que cambie su color a `#FCA205`, que es de color naranja. Por supuesto, puedes poner tu propio color aquí!
 
 En el fichero CSS se definen los estilos de los elementos que se encuentran en el fichero HTML. Los elementos se identifican por el nombre del elemento (es decir, `a` `h1`, `body`), el atributo `class` o el atributo `id`. Class y id son nombres que le das al elemento tu mismo. Classes definen grupos de elementos y ids apuntan a elementos específicos. Por ejemplo, la siguiente etiqueta puede identificarse mediante CSS usando el nombre `a`, la clase `external_link` o el id `link_to_wiki_page`:
 
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-    
+
 
 Leer sobre [Selectores de CSS en w3schools][4].
 
@@ -98,7 +98,7 @@ Entonces, necesitamos decirle a nuestra plantilla HTML que hemos añadido CSS. A
 {% load staticfiles %}
 ```
 
-Estamos cargando archivos estáticos aquí:). Luego, entre el `< head >` `y/< / head >`, después de los enlaces a los archivos CSS Bootstrap (el navegador lee los archivos en el orden que los das, así que nuestro archivo de código puede sobreescribir partes del código en de Bootstrap), añade la siguiente línea:
+Estamos cargando archivos estáticos aquí:). Luego, entre el `<head>` y `</head>`, después de los enlaces a los archivos CSS Bootstrap (el navegador lee los archivos en el orden que los das, así que nuestro archivo de código puede sobreescribir partes del código en de Bootstrap), añade la siguiente línea:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -133,7 +133,7 @@ Tu archivo ahora debe verse así:
     </body>
 </html>
 ```
-    
+
 
 OK, guarde el archivo y actualiza el sitio!
 
@@ -141,14 +141,14 @@ OK, guarde el archivo y actualiza el sitio!
 
  [5]: images/color2.png
 
-¡ Buen trabajo! Tal vez también nos gustaría dar un poco de aire a nuestro sitio web y aumentar el margen en el lado izquierdo. Vamos a intentarlo!
+¡Buen trabajo! Tal vez también nos gustaría dar un poco de aire a nuestro sitio web y aumentar el margen en el lado izquierdo. Vamos a intentarlo!
 
 ```css
 body {
     padding-left: 15px;
 }
 ```
-    
+
 
 Añade esto a tu CSS, guarda el archivo y mira cómo funciona!
 
@@ -156,7 +156,7 @@ Añade esto a tu CSS, guarda el archivo y mira cómo funciona!
 
  [6]: images/margin2.png
 
-¿Tal vez podemos personalizar la tipografía en nuestra cabecera? Pegue esto en `< head >` del archivo `blog/templates/blog/post_list.html`:
+¿Tal vez podemos personalizar la tipografía en nuestra cabecera? Pegue esto en `<head>` del archivo `blog/templates/blog/post_list.html`:
 
 ```html
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -172,7 +172,7 @@ h1 a {
     font-family: 'Lobster';
 }
 ```
-    
+
 
 ![Figure 14.3][7]
 
@@ -189,7 +189,7 @@ Adelante! Nombra algunas partes del código HTML. Añade una clase llamada `page
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 ```
-    
+
 
 Y ahora añade la clase `post` a tu `div` que contiene una entrada del blog.
 
@@ -200,7 +200,7 @@ Y ahora añade la clase `post` a tu `div` que contiene una entrada del blog.
     <p>{{ post.text|linebreaks }}</p>
 </div>
 ```
-    
+
 
 Ahora añadiremos bloques de declaración a diferentes selectores. Selectores a partir de `.` se refieren a las clases. Hay muchos tutoriales y explicaciones sobre CSS en la web para ayudarte entender el siguiente codigo. Por ahora, sólo copia y pega en tu archivo `mysite/static/css/blog.css`:
 
@@ -253,7 +253,7 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 ```
-    
+
 
 Luego envuelve el código HTML que muestra los mensajes con las declaraciones de clases. Cambia esto:
 
@@ -266,7 +266,7 @@ Luego envuelve el código HTML que muestra los mensajes con las declaraciones de
     </div>
 {% endfor %}
 ```
-    
+
 
 En `blog/templates/blog/post_list.html` con esto:
 
@@ -287,7 +287,7 @@ En `blog/templates/blog/post_list.html` con esto:
     </div>
 </div>
 ```
-    
+
 
 Guarda los archivos y actualiza tu sitio.
 

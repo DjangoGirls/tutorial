@@ -27,14 +27,14 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
     {% endfor %}
 {% endblock content %}
 ```
-    
+
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href = "">{{ post.title }} </a></h1>` dentro del enlace:
 
 ```html
 <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
-    
+
 
 {% raw %}Tiempo para explicar lo misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como sospechas, la notación `{% %}` significa que estamos utilizando Django template tags. Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!{% endraw %}
 
@@ -43,7 +43,7 @@ Queremos tener un enlace a una página de detalle sobre el título del post. Vam
 Ahora cuando vayamos a:
 
     http://127.0.0.1:8000/
-    
+
 
 Tendremos un error (como era de esperar, ya que no tenemos una dirección URL o una *viwe* para `post_detail`). Se verá así:
 
@@ -55,7 +55,7 @@ Vamos a crear una dirección URL en `urls.py` para nuestro `post_detail` *view*!
 
 ### URL: http://127.0.0.1:8000/post/1/
 
-Queremos crear una dirección URL de Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. ¿Agrega la línea `url (r'^ poste / (?P < pk >[0-9] +) / $', views.post_detail),` en el archivo `blog/urls.py`. Debe tener este aspecto:
+Queremos crear una dirección URL de Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. ¿Agrega la línea `url (r'^ poste / (?P <pk>[0-9] +) / $', views.post_detail),` en el archivo `blog/urls.py`. Debe tener este aspecto:
 
 ```python
 from django.conf.urls import include, url
@@ -66,18 +66,18 @@ urlpatterns = [
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
 ]
 ```
-    
 
-Da miedo, pero no te preocupes - lo explicaremos para ti: - comienza con `^` otra vez, "el principio" - `post /` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. - `(?P < pk >[0-9] +)`-esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no es una carta (entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Por algo como `http://127.0.0.1:8000/post / /` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! -`/` - entonces necesitamos **/** de nuevo - `$` - "the end"!
+
+Da miedo, pero no te preocupes - lo explicaremos para ti: - comienza con `^` otra vez, "el principio" - `post /` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. - `(?P <pk>[0-9] +)`-esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no es una carta (entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Por algo como `http://127.0.0.1:8000/post / /` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! -`/` - entonces necesitamos **/** de nuevo - `$` - "the end"!
 
 Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *view* denominada `post_detail` y transferirá la información de `pk` que es igual a `5` a la *view*.
 
-`PK` es atajo para la `llave principal`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variable como te gusta (Recuerda: minúscula y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?.¿P < pk >[0-9] +)` podríamos tener variable `post_id`, así que esto lo verías como: `(?P < post_id > [0-9] +)`.
+`PK` es atajo para la `llave principal`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variable como te gusta (Recuerda: minúscula y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?.¿P <pk>[0-9] +)` podríamos tener variable `post_id`, así que esto lo verías como: `(?P <post_id> [0-9] +)`.
 
 ¡Bien! Vamos a actualizar la página:
 
     http://127.0.0.1:8000/
-    
+
 
 ¡Boom! Sin embargo otro error! Como era de esperarse!
 
@@ -94,7 +94,7 @@ Esta vez nuestra *view* tendrá un parámetro adicional `pk`. ¿Nuestra *view* n
 Ahora, queremos sólo una entrada del blog. Para ello podemos usar querysets como esta:
 
     Post.objects.get(pk=pk)
-    
+
 
 Pero este código tiene un problema. Si no hay ningún `Post` con `llave primaria` (`pk`) tendremos un error muy feo!
 
@@ -115,31 +115,31 @@ Es hora de agregar una *view* a nuestro archivo `views.py`!
 Deberíamos abrir `blog/views.py` y agregue el siguiente código:
 
     from django.shortcuts import render, get_object_or_404
-    
+
 
 Cerca de la líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
-    
+
 
 Sí. Es hora de actualizar la página:
 
     http://127.0.0.1:8000/
-    
+
 
 ![Post list view][5]
 
  [5]: images/post_list2.png
 
-¡ Funcionó! Pero ¿qué pasa cuando haces clic en un enlace en el título del post?
+¡Funcionó! Pero ¿qué pasa cuando haces clic en un enlace en el título del post?
 
 ![TemplateDoesNotExist error][6]
 
  [6]: images/template_does_not_exist2.png
 
-¡ Oh no! Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? Tenemos que añadir una plantilla!
+¡Oh no! Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? Tenemos que añadir una plantilla!
 
 Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 
@@ -158,7 +158,7 @@ Se verá así:
     <p>{{ post.text|linebreaks }}</p>
 {% endblock %}
 ```
-    
+
 
 Una vez más estamos extendiendo `base.html`. En el bloque de `content` queremos mostrar un post published_date (si existe), título y texto. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
@@ -170,7 +170,7 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
  [7]: images/post_detail2.png
 
-¡ Yay! ¡ Funciona!
+¡Yay! ¡Funciona!
 
 ## Una cosa más: ¡Tiempo de implementación!
 
@@ -186,6 +186,6 @@ $ git commit -m "Added more views to the website."
 ...
 $ git push heroku master
 ```
-    
+
 
 ¡Y eso debería ser todo! Felicidades :)

@@ -6,7 +6,7 @@ Es hora de mostrar algunos datos! Django nos da algo de ayuda, construyendo **te
 
 Verás en HTML, no puedes realmente poner código Python, porque los navegadores no lo entienden. Ellos sólo saben HTML. Sabemos que HTML es algo estático, mientras que Python es mucho más dinámico.
 
-**Etiquetas de plantilla Django** nos permiten transferir Python-como cosas en HTML, así que usted puede construir sitios web dinámicos más rápido y fácil. ¡ Huy!
+**Etiquetas de plantilla Django** nos permiten transferir Python-como cosas en HTML, así que usted puede construir sitios web dinámicos más rápido y fácil. ¡Huy!
 
 ## Plantillas de listas de Post
 
@@ -26,15 +26,15 @@ Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza todo
 
 Como puedes ver, todo lo que obtenemos es esto:
 
-    [< post: mi segundo post >, < Post: mi primer post >]
-    
+    [<post: mi segundo post>, <Post: mi primer post>]
+
 
 Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python,** ¿cómo podemos mostrar listas? Sí, con el ciclo for! En una plantilla de Django, los haces de esta manera:
 
 ```html
 {% for post in posts %} {{ post }}{% endfor %}
 ```
-    
+
 
 Pruebe esto en tu plantilla.
 
@@ -42,7 +42,7 @@ Pruebe esto en tu plantilla.
 
  [2]: images/step2.png
 
-¡ Funciona! Pero queremos que se muestre como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
+¡Funciona! Pero queremos que se muestre como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
 
 ```html
 <div>
@@ -54,13 +54,13 @@ Pruebe esto en tu plantilla.
     <div>
         <p> publicado: {{ post.published_date }} </p>
         <h1>
-            <a href = "" >{{ post.title }} </a>
+            <a href="">{{ post.title }}</a>
         </h1>
-        <p>{{ post.text|linebreaks }} </p>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endfor %}
 ```
-    
+
 
 Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualizar la página:
 
@@ -84,11 +84,11 @@ $ git commit -m "Used Django templates instead of static HTML."
 ...
 $ git push heroku master
 ```
-    
 
-¡ Felicidades! Ahora seguir adelante y trata de agregar un nuevo post en tu administración de Django (recuerde añadir published_date!), luego actualizar lau página para ver si aparece el nuevo post.
 
-¿Funciona como un encanto?. Estamos orgullosos! Regálate algo dulce, te lo has ganado :)
+¡Felicidades! Ahora seguir adelante y trata de agregar un nuevo post en tu administración de Django (recuerda añadir published_date!), luego actualizar tu página para ver si aparece el nuevo post.
+
+¿Funciona bien? Estamos orgullosos! Regálate algo dulce, te lo has ganado :)
 
 ![Figura 13.4][4]
 
