@@ -34,11 +34,15 @@ You now should see a white or black window that is waiting for your commands.
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
-    $
+```:command-line
+$
+```
 
 On Windows, it's a `>` sign, like this:
 
-    >
+```:command-line
+>
+```
 
 Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you :)
 
@@ -48,18 +52,24 @@ Each command will be prepended by this sign and one space, but you don't have to
 
 Let's start with something simple. Type this command:
 
-    $ whoami
+```:command-line
+$ whoami
+```
 
 or
 
-    > whoami
+```:command-line
+> whoami
+```
 
 And then hit `enter`. This is our result:
 
-    $ whoami
-    olasitarska
+```:command-line
+$ whoami
+olasitarska
+```
 
-As you can see, the computer has just printed your username. Neat, huh?:)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command, do not copy-paste. You'll remember more this way!
 
@@ -71,13 +81,17 @@ Each operating system has a slightly different set of commands for the command l
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-    $ pwd
-    /Users/olasitarska
+```:command-line
+$ pwd
+/Users/olasitarska
+```
 
 If you're on Windows:
 
-    > cd
-    C:\Users\olasitarska
+```:command-line
+> cd
+C:\Users\olasitarska
+```
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
@@ -89,22 +103,26 @@ You'll probably see something similar on your machine. Once you open the command
 
 So what's in it? It'd be cool to find out. Let's see:
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
+```:command-line
+$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+```
 
  Windows:
 
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
+```:command-line
+> dir
+ Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM <DIR>      Applications
+05/08/2014 07:28 PM <DIR>      Desktop
+05/08/2014 07:28 PM <DIR>      Downloads
+05/08/2014 07:28 PM <DIR>      Music
+...
+```
 
 ---
 
@@ -112,21 +130,29 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-    $ cd Desktop
+```:command-line
+$ cd Desktop
+```
 
 Windows:
 
-    > cd Desktop
+```:command-line
+> cd Desktop
+```
 
 Check if it's really changed:
 
-    $ pwd
-    /Users/olasitarska/Desktop
+```:command-line
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
+```:command-line
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Here it is!
 
@@ -138,11 +164,15 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
-    $ mkdir practice
+```:command-line
+$ mkdir djangogirls
+```
 
 Windows:
 
-    > mkdir practice
+```:command-line
+> mkdir djangogirls
+```
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it :)
 
@@ -156,17 +186,21 @@ Small challenge for you: in your newly created `practice` directory create a dir
 
 #### Solution:
 
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
+```:command-line
+$ cd djangogirls
+$ mkdir test
+$ ls
+test
+```
 
 Windows:
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+```:command-line
+> cd djangogirls
+> mkdir test
+> dir
+05/08/2014 07:28 PM <DIR>      test
+```
 
 Congrats! :)
 
@@ -178,52 +212,72 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
-    $ cd ..
+```:command-line
+$ cd ..
+```
 
 Windows:
 
-    > cd ..
+```:command-line
+> cd ..
+```
 
 Using `..` with the `cd` command will change your current directory to the parent directory (this is the directory that contains your current directory).
 
 Check where you are:
 
-    $ pwd
-    /Users/olasitarska/Desktop
+```:command-line
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
+```:command-line
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
-    $ rm -r practice
+```:command-line
+$ rm -r djangogirls
+```
 
 Windows:
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+```:command-line
+> rmdir /S djangogirls
+djangogirls, Are you sure <Y/N>? Y
+```
 
 Done! To be sure it's actually deleted, let's check it:
 
-    $ ls
+```:command-line
+$ ls
+```
 
 Windows:
 
-    > dir
+```:command-line
+> dir
+```
 
 ### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright?:)
 
-    $ exit
+```:command-line
+$ exit
+```
 
 Windows:
 
-    > exit
+```:command-line
+> exit
+```
 
 Cool, huh?:)
 

@@ -4,9 +4,12 @@
             "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
         }
     },
-
     "plugins": [
-        "anchors@0.4.0", "ga@0.2.1", "richquotes@0.0.5", "edit-link@1.4.1"
+        "anchors@0.4.0",
+        "ga@0.2.1",
+        "richquotes@0.0.5",
+        "edit-link@1.4.1",
+        "codeblock-filename@0.0.6"
     ],
     "pluginsConfig": {
         "ga": {
