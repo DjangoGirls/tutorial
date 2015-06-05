@@ -11,20 +11,20 @@ Las Vistas se colocan en el archivo `views.py`. Agregaremos nuestras *vistas* al
 Bien, vamos abrir este archivo y ver lo que contiene:
 
     from django.shortcuts import render
-    
+
     # Create your views here.
-    
+
 
 No, demasiadas cosas aquí todavía. La simple *view* puede verse como esto:
 
     def post_list(request):
-    
+
         return render(request, 'blog/post_list.html', {})
-    
+
 
 Como puedes ver, hemos creado un método (`def`) llamado `post_list` que contiene un `request` y `return` de un método, el `render` se redirigira a nuestra plantilla `blog/post_list.html`.
 
-En seguida, guarde el archivo, y dirígete a tu navegador a http://127.0.0.1:8000 / para ver lo que tenemos ahora.
+En seguida, guarde el archivo, y dirígete a tu navegador a http://127.0.0.1:8000/ para ver lo que tenemos ahora.
 
 Otro error! Lee lo que está pasando ahora:
 

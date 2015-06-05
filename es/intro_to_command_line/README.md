@@ -33,33 +33,33 @@ Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 Si estás en Mac o Linux, probablemente veráz `$`, como este:
 
     $
-    
+
 
 En Windows, es un signo así `>`, como este:
 
     >
-    
+
 
 Cada comando sera antepuesto por este signo y un espacio, pero no tienes que escribirlo. Tu computadora lo hará por ti :)
 
 > Sólo una pequeña nota: en su caso, tal vez hay algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del prompt y eso es 100% correcto. En este tutorial sólo lo hemos simplificado a lo mínimo.
 
-## Tu primer comando (¡ YAY!)
+## Tu primer comando (¡YAY!)
 
 Vamos a empezar con algo simple. Escribe este comando:
 
     $ whoami
-    
+
 
 o
 
     > whoami
-    
+
 
 Y luego oprime la tecla Enter. Este es el resultado:
 
     $ whoami olasitarska
-    
+
 
 Como puedes ver, la computadora sólo te presento su nombre de usuario. Bien, eh? :)
 
@@ -75,13 +75,13 @@ Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este com
 
     $ pwd
     /usuarios/olasitarska
-    
+
 
 Si estás en Windows:
 
-    > cd 
+    > cd
     C:\Users\olasitarska
-    
+
 
 Probablemente verás algo similar en tu máquina. Una vez que abres la línea de comandos generalmente empiezan en el directorio home del usuario.
 
@@ -99,7 +99,7 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
     Downloads
     Music
     ...
-    
+
 
 Windows:
 
@@ -110,7 +110,7 @@ Windows:
     05/08/2014 07:28 PM <DIR> Downloads
     05/08/2014 07:28 PM <DIR> Music
     ...
-    
+
 
 * * *
 
@@ -119,26 +119,26 @@ Windows:
 ¿Quizás podemos ir a nuestro directorio de escritorio?
 
     $ cd Desktop
-    
+
 
 Windows:
 
     > cd Desktop
-    
+
 
 Comprobar si realmente ha cambiado:
 
-    $ pwd 
+    $ pwd
     /Users/olasitarska/Desktop
-    
+
 
 Windows:
 
-    > cd 
+    > cd
     C:\Users\olasitarska\Desktop
-    
 
-¡ Aquí está!
+
+¡Aquí está!
 
 > PRO tip: si escribes `cd D` y luego oprimes `tab` en el teclado, la línea de comandos automáticamente Autorrellenara el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta a partir de "D", presiona el botón `tab` dos veces para obtener una lista de opciones.
 
@@ -149,12 +149,12 @@ Windows:
 ¿Cómo crear un directorio de Django Girls en tu escritorio? Puedes hacerlo de esta manera:
 
     $ mkdir djangogirls
-    
+
 
 Windows:
 
     > mkdir djangogirls
-    
+
 
 Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. Puede comprobar si está allí buscando en tu escritorio o ejecutando un `ls/dir`! Inténtalo :)
 
@@ -168,20 +168,20 @@ Un pequeño reto para ti: en el directorio recién creado `djangogirls` crear un
 
 #### Solución:
 
-    $ cd djangogirls 
+    $ cd djangogirls
     $ mkdir test
     $ ls
-    
+
 
 Windows:
 
-    > cd djangogirls 
+    > cd djangogirls
     > mkdir test
-    > dir 
-    08/05/2014 19:28 < DIR > test
-    
+    > dir
+    08/05/2014 19:28 <DIR> test
 
-¡ Felicidades! :)
+
+¡Felicidades! :)
 
 * * *
 
@@ -192,61 +192,61 @@ No queremos dejar un desorden, así que vamos a eliminar todo lo que hicimos has
 En primer lugar, tenemos que volver al escritorio:
 
     $ cd ..
-    
+
 
 Windows:
 
     > cd ..
-    
+
 
 Haciendo `cd` `..` cambiará el directorio actual al directorio padre (que significa el directorio que contiene el directorio actual).
 
 Revisa dónde estás:
 
-    $ pwd 
+    $ pwd
     /Users/olasitarska/Desktop
-    
+
 
 Windows:
 
-    > cd 
+    > cd
     C:\Users\olasitarska\Desktop
-    
+
 
 Ahora es hora de eliminar el directorio `djangogirls`.
 
 > **Atención**: eliminar archivos utilizando `del`, `rmdir` o `rm` es irrecuperable, lo que significa *archivos borrados desaparecerá para siempre*! Entonces, ser muy cuidadosa con este comando.
 
     $ rm - r djangogirls
-    
+
 
 Windows:
 
-    > rmdir/s djangogirls 
-    djangogirls, ¿estás seguro < Y/N >? Y
-    
+    > rmdir/s djangogirls
+    djangogirls, ¿estás seguro <Y/N>? Y
+
 
 Hecho! Asegurémonos que en verdad fueron borrados, vamos a ver:
 
     $ ls
-    
+
 
 Windows:
 
     > dir
-    
+
 
 ### Salida
 
 Eso es todo por ahora! Ahora con seguridad puedes cerrar la línea de comandos. Vamos a hacerlo al estilo hacker, bien? :)
 
     $ exit
-    
+
 
 Windows:
 
     > exit
-    
+
 
 Bueno, no? :)
 
