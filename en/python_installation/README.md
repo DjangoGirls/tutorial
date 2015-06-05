@@ -27,8 +27,10 @@ One thing to watch out for:  on the second screen of the installation wizard, ma
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-    $ python3 --version
-    Python 3.4.2
+```:command-line
+$ python3 --version
+Python 3.4.2
+```
 
 If you don't have Python installed, or if you want a different version, you can install it as follows:
 
@@ -37,21 +39,27 @@ If you don't have Python installed, or if you want a different version, you can 
 
 Type this command into your console:
 
-    $ sudo apt-get install python3.4
+```:command-line
+$ sudo apt-get install python3.4
+```
 
 
 #### Fedora (up to 21)
 
 Use this command in your console:
 
-    $ sudo yum install python3.4
+```:command-line
+$ sudo yum install python3.4
+```
 
 
 #### Fedora (22+)
 
 Use this command in your console:
 
-    $ sudo dnf install python3.4
+```:command-line
+$ sudo dnf install python3.4
+```
 
 
 ### OS X
@@ -64,8 +72,10 @@ You need to go to the website https://www.python.org/downloads/release/python-34
 
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
-    $ python3 --version
-    Python 3.4.2
+```:command-line
+$ python3 --version
+Python 3.4.2
+```
 
 ----
 

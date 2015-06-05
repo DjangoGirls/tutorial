@@ -12,10 +12,12 @@ Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit Enter.
 
-    $ python3
-    Python 3.4.2 (...)
-    Type "copyright", "credits" or "license" for more information.
-    >>>
+```:command-line
+$ python3
+Python 3.4.2 (...)
+Type "copyright", "credits" or "license" for more information.
+>>>
+```
 
 ## Your first Python command!
 
@@ -25,8 +27,10 @@ If you want to exit the Python console at any point, just type `exit()` or use t
 
 But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
 
-    >>> 2 + 3
-    5
+```python:command-line
+>>> 2 + 3
+5
+```
 
 Nice! See how the answer popped out? Python knows math! You could try other commands like:
 - `4 * 5`
@@ -41,44 +45,58 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 
 How about your name? Type your first name in quotes like this:
 
-    >>> "Ola"
-    'Ola'
+```python:command-line
+>>> "Ola"
+'Ola'
+```
 
 You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes - they tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
-    >>> "Hi there " + "Ola"
-    'Hi there Ola'
+```python:command-line
+>>> "Hi there " + "Ola"
+'Hi there Ola'
+```
 
 You can also multiply strings with a number:
 
-    >>> "Ola" * 3
-    'OlaOlaOla'
+```python:command-line
+>>> "Ola" * 3
+'OlaOlaOla'
+```
 
 If you need to put an apostrophe inside your string, you have two ways to do it.
 
 Using double quotes:
 
-    >>> "Runnin' down the hill"
-    "Runnin' down the hill"
+```python:command-line
+>>> "Runnin' down the hill"
+"Runnin' down the hill"
+```
 
 or escaping the apostrophe with a backslash (`\`):
 
-    >>> 'Runnin\' down the hill'
-    "Runnin' down the hill"
+```python:command-line
+>>> 'Runnin\' down the hill'
+"Runnin' down the hill"
+```
 
 Nice, huh? To see your name in uppercase letters, simply type:
 
-    >>> "Ola".upper()
-    'OLA'
+```python:command-line
+>>> "Ola".upper()
+'OLA'
+```
 
 You just used the `upper` __function__ on your string! A function (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a function for that too!
 
-    >>> len("Ola")
-    3
+```python:command-line
+>>> len("Ola")
+3
+```
 
 Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
@@ -97,15 +115,19 @@ These are the basics of every programming language you learn. Ready for somethin
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit Enter:
 
-    >>> len(304023)
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: object of type 'int' has no len()
+```python:command-line
+>>> len(304023)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'int' has no len()
+```
 
 We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
-    >>> len(str(304023))
-    6
+```python:command-line
+>>> len(str(304023))
+6
+```
 
 It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
@@ -120,40 +142,52 @@ An important concept in programming is variables. A variable is nothing more tha
 
 Let's say we want to create a new variable called `name`:
 
-    >>> name = "Ola"
+```python:command-line
+>>> name = "Ola"
+```
 
 You see? It's easy! It's simply: name equals Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit Enter:
 
-    >>> name
-    'Ola'
+```python:command-line
+>>> name
+'Ola'
+```
 
 Yippee! Your first variable :)! You can always change what it refers to:
 
-    >>> name = "Sonja"
-    >>> name
-    'Sonja'
+```python:command-line
+>>> name = "Sonja"
+>>> name
+'Sonja'
+```
 
 You can use it in functions too:
 
-    >>> len(name)
-    5
+```python:command-line
+>>> len(name)
+5
+```
 
 Awesome, right? Of course, variables can be anything, so numbers too! Try this:
 
-    >>> a = 4
-    >>> b = 6
-    >>> a * b
-    24
+```python:command-line
+>>> a = 4
+>>> b = 6
+>>> a * b
+24
+```
 
 But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-    >>> city = "Tokyo"
-    >>> ctiy
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'ctiy' is not defined
+```python:command-line
+>>> city = "Tokyo"
+>>> ctiy
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ctiy' is not defined
+```
 
 An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
@@ -164,11 +198,13 @@ Play with this for a while and see what you can do!
 
 Try this:
 
-    >>> name = 'Maria'
-    >>> name
-    'Maria'
-    >>> print(name)
-    Maria
+```python:command-line
+>>> name = 'Maria'
+>>> name
+'Maria'
+>>> print(name)
+Maria
+```
 
 When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
@@ -181,47 +217,63 @@ Beside strings and integers, Python has all sorts of different types of objects.
 
 Go ahead and create a list:
 
-    >>> []
-    []
+```python:command-line
+>>> []
+[]
+```
 
 Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
-    >>> lottery = [3, 42, 12, 19, 30, 59]
+```python:command-line
+>>> lottery = [3, 42, 12, 19, 30, 59]
+```
 
 All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
-    >>> len(lottery)
-    6
+```python:command-line
+>>> len(lottery)
+6
+```
 
 Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
-    >>> lottery.sort()
+```python:command-line
+>>> lottery.sort()
+```
 
 This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
-    >>> print(lottery)
-    [3, 12, 19, 30, 42, 59]
+```python:command-line
+>>> print(lottery)
+[3, 12, 19, 30, 42, 59]
+```
 
 As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
 Maybe we want to reverse that order? Let's do that!
 
-    >>> lottery.reverse()
-    >>> print(lottery)
-    [59, 42, 30, 19, 12, 3]
+```python:command-line
+>>> lottery.reverse()
+>>> print(lottery)
+[59, 42, 30, 19, 12, 3]
+```
 
 Easy, right? If you want to add something to your list, you can do this by typing this command:
 
-    >>> lottery.append(199)
-    >>> print(lottery)
-    [59, 42, 30, 19, 12, 3, 199]
+```python:command-line
+>>> lottery.append(199)
+>>> print(lottery)
+[59, 42, 30, 19, 12, 3, 199]
+```
 
 If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
-    >>> print(lottery[0])
-    59
-    >>> print(lottery[1])
-    42
+```python:command-line
+>>> print(lottery[0])
+59
+>>> print(lottery[1])
+42
+```
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
@@ -245,14 +297,18 @@ You can find a list of all available list methods in this chapter of the Python 
 
 A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define an empty dictionary is:
 
-    >>> {}
-    {}
+```python:command-line
+>>> {}
+{}
+```
 
 This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try replacing your own information too):
 
-    >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+```python:command-line
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+```
 
 With this command, you just created a variable named `participant` with three key-value pairs:
 
@@ -262,17 +318,21 @@ With this command, you just created a variable named `participant` with three ke
 
 You can check the content of individual keys with this syntax:
 
-    >>> print(participant['name'])
-    Ola
+```python:command-line
+>>> print(participant['name'])
+Ola
+```
 
 See, it's similar to a list. But you don't need to remember the index - just the name.
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-    >>> participant['age']
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    KeyError: 'age'
+```python:command-line
+>>> participant['age']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'age'
+```
 
 Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
@@ -283,28 +343,36 @@ When to use a dictionary or a list? Well, that's a good point to ponder on. Just
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
 
-    >>> participant['favorite_language'] = 'Python'
+```python:command-line
+>>> participant['favorite_language'] = 'Python'
+```
 
 Like lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
 
-    >>> len(participant)
-    4
+```python:command-line
+>>> len(participant)
+4
+```
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Hop onto the next line for some amazing things.
 
 You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
-    >>> del participant['favorite_numbers']
-    >>> participant
-    {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+```python:command-line
+>>> del participant['favorite_numbers']
+>>> participant
+{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+```
 
 As you can see from the output, the key-value pair corresponding to  the 'favorite_numbers' key has been deleted.
 
 As well as this, you can also change a value associated with an already created key in the dictionary. Type:
 
-    >>> participant['country'] = 'Germany'
-    >>> participant
-    {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+```python:command-line
+>>> participant['country'] = 'Germany'
+>>> participant
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learnt another amazing thing.
 
@@ -323,16 +391,18 @@ Excited for the next part? :)
 
 A big part of programming includes comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
-    >>> 5 > 2
-    True
-    >>> 3 < 1
-    False
-    >>> 5 > 2 * 2
-    True
-    >>> 1 == 1
-    True
-    >>> 5 != 2
-    True
+```python:command-line
+>>> 5 > 2
+True
+>>> 3 < 1
+False
+>>> 5 > 2 * 2
+True
+>>> 1 == 1
+True
+>>> 5 != 2
+True
+```
 
 We gave Python some numbers to compare. As you can see, Python can compare not only numbers, but it can also compare method results. Nice, huh?
 
@@ -340,10 +410,12 @@ Do you wonder why we put two equal signs `==` next to each other to compare if n
 
 Give Python two more tasks:
 
-    >>> 6 >= 12 / 2
-    True
-    >>> 3 <= 2
-    False
+```python:command-line
+>>> 6 >= 12 / 2
+True
+>>> 3 <= 2
+False
+```
 
 `>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
@@ -354,12 +426,14 @@ Give Python two more tasks:
 
 Awesome! Wanna do one more? Try this:
 
-    >>> 6 > 2 and 2 < 3
-    True
-    >>> 3 > 2 and 2 < 1
-    False
-    >>> 3 > 2 or 2 < 1
-    True
+```python:command-line
+>>> 6 > 2 and 2 < 3
+True
+>>> 3 > 2 and 2 < 1
+False
+>>> 3 > 2 or 2 < 1
+True
+```
 
 You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
@@ -368,10 +442,12 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-    >>> 1 > 'django'
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+```python:command-line
+>>> 1 > 'django'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unorderable types: int() > str()
+```
 
 Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`).
 Instead, it shows a **TypeError** and tells us the two types can't be compared together.
@@ -388,15 +464,19 @@ But for Python to understand this, you need to always write it as 'True' (first 
 
 Booleans can be variables, too! See here:
 
-    >>> a = True
-    >>> a
-    True
+```python:command-line
+>>> a = True
+>>> a
+True
+```
 
 You can also do it this way:
 
-    >>> a = 2 > 5
-    >>> a
-    False
+```python:command-line
+>>> a = 2 > 5
+>>> a
+False
+```
 
 Practice and have fun with Booleans by trying to run the following commands:
 
@@ -418,8 +498,10 @@ So far we've been writing all our python code in the interpreter, which limits u
 
 To exit from the Python interpreter that we've been using, simply type the ```exit()``` function:
 
-    >>> exit()
-    $
+```python:command-line
+>>> exit()
+$
+```
 
 This will put you back into the command prompt.
 
@@ -440,22 +522,30 @@ With the file saved, it's time to run it! Using the skills you've learned in the
 
 On a Mac, the command will look something like this:
 
-    cd /Users/<your_name>/Desktop
+```:command-line
+cd /Users/<your_name>/Desktop
+```
 
 On Linux, it will be like this (the word "Desktop" might be translated to your language):
 
-    cd /home/<your_name>/Desktop
+```:command-line
+cd /home/<your_name>/Desktop
+```
 
 And on windows, it will be like this:
 
-    cd C:\Users\<your_name>\Desktop
+```:command-line
+cd C:\Users\<your_name>\Desktop
+```
 
 If you get stuck, just ask for help.
 
 and then use Python to execute the code in the file like this:
 
-    $ python3 python_intro.py
-    Hello, Django girls!
+```:command-line
+$ python3 python_intro.py
+Hello, Django girls!
+```
 
 Alright! You just ran your first python program that was saved to a file. Feel awesome?
 
@@ -467,20 +557,22 @@ Lots of things in code should only be executed when given conditions are met. Th
 
 Replace the code in your **python_intro.py** file with this:
 
-```python
+```python:python_intro.py
 if 3 > 2:
 ```
 
 If we saved this and ran it, we'd see an error like this:
 
-    $ python3 python_intro.py
-    File "python_intro.py", line 2
-             ^
-    SyntaxError: unexpected EOF while parsing
+```:command-line
+$ python3 python_intro.py
+File "python_intro.py", line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+```
 
 Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
-```python
+```python:python_intro.py
 if 3 > 2:
     print('It works!')
 ```
@@ -489,14 +581,16 @@ Notice how we've indented the next line of code by 4 spaces? We need to do this 
 
 Save it and give it another run:
 
-    $ python3 python_intro.py
-    It works!
+```python:python_intro.py
+$ python3 python_intro.py
+It works!
+```
 
 ### What if not?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
-```python
+```python:python_intro.py
 if 5 > 2:
     print('5 is indeed greater than 2')
 else:
@@ -505,12 +599,14 @@ else:
 
 When this is ran it will print out:
 
-    $ python3 python_intro.py
-    5 is indeed greater than 2
+```:command-line
+$ python3 python_intro.py
+5 is indeed greater than 2
+```
 
 If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
-```python
+```python:python_intro.py
 name = 'Sonja'
 if name == 'Ola':
     print('Hey Ola!')
@@ -522,8 +618,10 @@ else:
 
 and executed:
 
-    $ python3 python_intro.py
-    Hey Sonja!
+```:command-line
+$ python3 python_intro.py
+Hey Sonja!
+```
 
 See what happened there?
 
@@ -544,7 +642,7 @@ Remember functions like `len()` that you can execute in Python? Well, good news,
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and it can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
-```python
+```python:python_intro.py
 def hi():
     print('Hi there!')
     print('How are you?')
@@ -558,19 +656,21 @@ You may wonder why we've written the name of the function at the bottom of the f
 
 Let's run this now and see what happens:
 
-    $ python3 python_intro.py
-    Hi there!
-    How are you?
+```:command-line
+$ python3 python_intro.py
+Hi there!
+How are you?
+```
 
 That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
 
-```python
+```python:python_intro.py
 def hi(name):
 ```
 
 As you can see, we now gave our function a parameter that we called `name`:
 
-```python
+```python:python_intro.py
 def hi(name):
     if name == 'Ola':
         print('Hi Ola!')
@@ -584,45 +684,53 @@ hi()
 
 Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-    $ python3 python_intro.py
-    Traceback (most recent call last):
-    File "python_intro.py", line 10, in <module>
-      hi()
-    TypeError: hi() missing 1 required positional argument: 'name'
+```:command-line
+$ python3 python_intro.py
+Traceback (most recent call last):
+File "python_intro.py", line 10, in <module>
+  hi()
+TypeError: hi() missing 1 required positional argument: 'name'
+```
 
 Oops, an error. Luckily, Python gives us a pretty useful error message.
 It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function.
 Let's fix it at the bottom of the file:
 
-```python
+```python:python_intro.py
 hi("Ola")
 ```
 
 And run it again:
 
-    $ python3 python_intro.py
-    Hi Ola!
+```:command-line
+$ python3 python_intro.py
+Hi Ola!
+```
 
 And if we change the name?
 
-```python
+```python:python_intro.py
 hi("Sonja")
 ```
 
 And run it:
 
-    $ python3 python_intro.py
-    Hi Sonja!
+```:command-line
+$ python3 python_intro.py
+Hi Sonja!
+```
 
 Now, what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
 
-    Hi anonymous!
+```:command-line
+Hi anonymous!
+```
 
 This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
 
 Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
 
-```python
+```python:python_intro.py
 def hi(name):
     print('Hi ' + name + '!')
 
@@ -631,8 +739,10 @@ hi("Rachel")
 
 Let's call the code now:
 
-    $ python3 python_intro.py
-    Hi Rachel!
+```:command-line
+$ python3 python_intro.py
+Hi Rachel!
+```
 
 Congratulations! You just learned how to write functions! :)
 
@@ -644,13 +754,13 @@ Programmers don't like to repeat themselves. Programming is all about automating
 
 Still remember lists? Let's do a list of girls:
 
-```python
+```python:python_intro.py
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
 We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
-```python
+```python:python_intro.py
 for name in girls:
 ```
 
@@ -658,7 +768,7 @@ The ```for``` statement behaves similarly to the ```if``` statement; code below 
 
 Here is the full code that will be in the file:
 
-```python
+```python:python_intro.py
 def hi(name):
     print('Hi ' + name + '!')
 
@@ -670,32 +780,38 @@ for name in girls:
 
 And when we run it:
 
-    $ python3 python_intro.py
-    Hi Rachel!
-    Next girl
-    Hi Monica!
-    Next girl
-    Hi Phoebe!
-    Next girl
-    Hi Ola!
-    Next girl
-    Hi You!
-    Next girl
+```:command-line
+$ python3 python_intro.py
+Hi Rachel!
+Next girl
+Hi Monica!
+Next girl
+Hi Phoebe!
+Next girl
+Hi Ola!
+Next girl
+Hi You!
+Next girl
+```
 
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
 You can also use `for` on numbers using the `range` function:
 
-    for i in range(1, 6):
-        print(i)
+```python:python_intro.py
+for i in range(1, 6):
+    print(i)
+```
 
 Which would print:
 
-    1
-    2
-    3
-    4
-    5
+```:command-line
+1
+2
+3
+4
+5
+```
 
 `range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
