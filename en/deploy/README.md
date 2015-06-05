@@ -105,6 +105,8 @@ On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" ve
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
+Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, and there should be no angle-brackets):
+
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
 
@@ -140,7 +142,7 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo. Type this into the console on PythonAnywhere:
+Let's pull down our code from GitHub onto PythonAnywhere by creating a "clone" of the repo. Type this into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`:
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
