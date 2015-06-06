@@ -216,7 +216,7 @@ Easy, right? If you want to add something to your list, you can do this by typin
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
 
-If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list an item occurs. Computer people like to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
     >>> print(lottery[0])
     59
@@ -224,6 +224,18 @@ If you want to show only the first number, you can do this by using __indexes__.
     42
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+
+To delete something from your list you will need to use __indexes__ as we learnt above and the __del__ statement (del is an abbreviation for delete). Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
+
+    >>> print(lottery)
+    [59, 42, 30, 19, 12, 3, 199]
+    >>> print(lottery[0])
+    59
+    >>> del lottery[0]
+    >>> print(lottery)
+    [42, 30, 19, 12, 3, 199]
+
+That worked like a charm!
 
 For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
@@ -628,7 +640,7 @@ Congratulations! You just learned how to write functions! :)
 
 This is the last part already. That was quick, right? :)
 
-As we mentioned, programmers are lazy, they don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
 Still remember lists? Let's do a list of girls:
 
@@ -687,7 +699,7 @@ Which would print:
 
 `range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6).
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and with that we mean it includes the first value, but not the last.
 
 ## Summary
 
