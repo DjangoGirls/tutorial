@@ -11,9 +11,9 @@ ogromną ilość swojego wolnego czasu tłumacząc ponad 80% całego kursu. Doda
 
 ## Wprowadzenie
 
-Czy chciałabyś nauczyć się czarować? Z perspektywy osoby niemagicznej rzecz wydaje się dość złożona. Nie każdy wie, jak zacząć. Nie jest też łatwo znaleźć sklep z różdżkami. Jak ich używać? Na samym początku nie wiadomo nawet kogo i o co pytać. Nie każdy dostaje bilet wstępu do specjalistycznych szkół, gdzie sporą cześć wąptliwości rozwiewa kontakt z profesorami. Przez to sztuka czarowania uchodzi za dziedzinę tylko dla wybranych. Podobnie jest z programowaniem, czyli sztuką czarowania przy użyciu komputera. Komputer sam w sobie nie jest przedmiotem magicznym. Większość z osób niemagicznych posiada nawet jego wersje zminiaturyzowane z dotykowym interfejsem. Czy zastanawiałaś się jak działa komputer? Czym są programy, które nim sterują? Czy postawiłaś sobie za cel napisanie takiego programu? Co chciałabyś, żeby zrobił? Zdajemy sobie sprawę, że początki bywają trudne, a część  internetowych serwisów, gdzie szukałaś pomocy, zasiedlają kosmici (nie kwestionujemy jednak ich wiedzy). Po takim starciu łatwo się zniechęcić, nawet dojść do wniosku "to nie dla mnie, nie nadaję się do tego". A  co jeśli nie? Zdradzimy Ci pewien sekret: programowanie nie jest takie trudne. Pokażemy Ci, że może być niezłą zabawą.
+Czy chciałabyś nauczyć się czarować? Z perspektywy osoby niemagicznej rzecz wydaje się dość złożona. Nie każdy wie, jak zacząć. Nie jest też łatwo znaleźć sklep z różdżkami. Jak ich używać? Na samym początku nie wiadomo nawet kogo i o co pytać. Nie każdy dostaje bilet wstępu do specjalistycznych szkół, gdzie sporą cześć wąptliwości rozwiewa kontakt z profesorami. Przez to sztuka czarowania uchodzi za dziedzinę tylko dla wybranych. Podobnie jest z programowaniem, czyli sztuką czarowania przy użyciu komputera. Komputer sam w sobie nie jest przedmiotem magicznym. Wiele osób niemagicznych posiada nawet jego wersje zminiaturyzowane z dotykowym interfejsem. Programowanie sprawia, że urządzenie słucha Twoich rozkazów - wtedy dzieje się magia. Czy zastanawiałaś się, czym są programy, które nim sterują? Czy postawiłaś sobie kiedyś za cel napisanie takiego programu? Co chciałabyś, żeby robił? Zdajemy sobie sprawę, że początki bywają trudne, a część  internetowych serwisów, gdzie mogłaś szukać pomocy, zasiedlają kosmici (nie kwestionujemy jednak ich wiedzy). Po takim starciu łatwo się zniechęcić, dojść do wniosku "to nie dla mnie, nie nadaję się do tego". A  co, jeśli to nieprawda? Zdradzimy Ci pewien sekret: programowanie nie jest takie trudne. Pokażemy Ci, że może być niezłą zabawą.
 
-Ten kurs nie uczyni z Ciebie eksperta. Jeśli chcesz dobrze programować, musisz spędzić miesiące lub nawet lata na nauce i ćwiczeniach. Ale chcielibyśmy pokazać, że programowanie i pisanie stron internetowych nie jest czarną magią. Spróbujemy wyjaśnić Ci to i owo w taki sposób, abyś nie czuła się przytłoczona nadmiarem informacji.
+Ten kurs nie uczyni z Ciebie eksperta. Jeśli chcesz dobrze programować, musisz spędzić lata na nauce i ćwiczeniach. Ale chcielibyśmy pokazać, że programowanie i pisanie stron internetowych nie jest czarną magią. Spróbujemy wyjaśnić Ci to i owo w taki sposób, abyś nie czuła się przytłoczona nadmiarem informacji.
 
 Mamy nadzieję, że pokochasz programowanie tak jak my!
 
@@ -23,6 +23,7 @@ Zapoznasz się z:
 - podstawami języka programowania Python
 - tworzeniem środowiska programistycznego
 - tworzeniem projektów w frameworku Django
+- pisaniem stron internetowych
 
 Gdy skończysz kurs, będziesz mieć gotową aplikację internetową: swój własny blog. Pokażemy Ci jak go udostępnić w Internecie, abyś mogła pochwalić się znajomym!
 
