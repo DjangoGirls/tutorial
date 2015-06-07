@@ -11,17 +11,20 @@ ogromną ilość swojego wolnego czasu tłumacząc ponad 80% całego kursu. Doda
 
 ## Wprowadzenie
 
-Czy kiedykolwiek czułaś, że wokół jest coraz więcej nowych technologii, a Ty zostajesz w tyle? Zastanawiałaś się kiedyś jak zrobić stronę internetową, ale nie miałaś motywacji by zacząć? Czy zdarzyło Ci się pomyśleć, że świat programowania jest dla Ciebie zbyt skomplikowany by nawet spróbować zrobić coś samej?
+Czy chciałabyś nauczyć się czarować? Z perspektywy osoby niemagicznej rzecz wydaje się dość złożona. Nie każdy wie, jak zacząć. Nie jest też łatwo znaleźć sklep z różdżkami. Jak ich używać? Na samym początku nie wiadomo nawet kogo i o co pytać. Nie każdy dostaje bilet wstępu do specjalistycznych szkół, gdzie sporą cześć wąptliwości rozwiewa kontakt z profesorami. Przez to sztuka czarowania uchodzi za dziedzinę tylko dla wybranych. Podobnie jest z programowaniem, czyli sztuką czarowania przy użyciu komputera. Komputer sam w sobie nie jest przedmiotem magicznym. Większość z osób niemagicznych posiada nawet jego wersje zminiaturyzowane z dotykowym interfejsem. Czy zastanawiałaś się jak działa komputer? Czym są programy, które nim sterują? Czy postawiłaś sobie za cel napisanie takiego programu? Co chciałabyś, żeby zrobił? Zdajemy sobie sprawę, że początki bywają trudne, a część  internetowych serwisów, gdzie szukałaś pomocy, zasiedlają kosmici (nie kwestionujemy jednak ich wiedzy). Po takim starciu łatwo się zniechęcić, nawet dojść do wniosku "to nie dla mnie, nie nadaję się do tego". A  co jeśli nie? Zdradzimy Ci pewien sekret: programowanie nie jest takie trudne. Pokażemy Ci, że może być niezłą zabawą.
 
-No więc mamy dla Ciebie dobre nowiny! Programowanie nie jest tak trudne, jak się wydaje, a my chcemy Ci pokazać, że może być też niezłą zabawą.
+Ten kurs nie uczyni z Ciebie eksperta. Jeśli chcesz dobrze programować, musisz spędzić miesiące lub nawet lata na nauce i ćwiczeniach. Ale chcielibyśmy pokazać, że programowanie i pisanie stron internetowych nie jest czarną magią. Spróbujemy wyjaśnić Ci to i owo w taki sposób, abyś nie czuła się przytłoczona nadmiarem informacji.
 
-Ten kurs nie zamieni Cię w zawodowego programistę. Jeżeli chcesz być w tym naprawdę dobra, musisz spędzić miesiące lub nawet lata na nauce i ćwiczeniach. Ale chcielibyśmy Ci pokazać, że programowanie i pisanie stron internetowych nie jest tak złożone, jak mogłoby się wydawać. Spróbujemy wyjaśnić to i owo jak tylko potrafimy w taki sposób, abyś nie czuła się przytłoczona nową technologią.
-
-Mamy nadzieję sprawić, że pokochasz to tak jak my!
+Mamy nadzieję, że pokochasz programowanie tak jak my!
 
 ## Czego nauczysz się w trakcie kursu?
 
-Gdy skończysz kurs, będziesz mieć gotową prostą aplikacje internetową: swój własny blog. Pokażemy Ci jak udostępnić go w internecie, abyś mogła pochwalić się znajomym!
+Zapoznasz się z:
+- podstawami języka programowania Python
+- tworzeniem środowiska programistycznego
+- tworzeniem projektów w frameworku Django
+
+Gdy skończysz kurs, będziesz mieć gotową aplikację internetową: swój własny blog. Pokażemy Ci jak go udostępnić w Internecie, abyś mogła pochwalić się znajomym!
 
 Będzie to wyglądać mniej więcej tak:
 
@@ -47,6 +50,6 @@ Obecnie przechowujemy wersje językowe na platformie Crowdin.com:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Jeżeli nie znajdziesz tam swojego języka, prosimy o [otwarcie nowego zgłoszenia][6] z brakującym językiem - postaramy się go dodać.
+Jeżeli nie znajdziesz tam swojego języka, prosimy o [stworzenie nowego zgłoszenia][6] z brakującym językiem - postaramy się go dodać.
 
 [6]: https://github.com/DjangoGirls/tutorial/issues/new
