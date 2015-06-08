@@ -10,15 +10,17 @@ A base template is the most basic template that you extend on every page of your
 
 Let's create a `base.html` file in `blog/templates/blog/`:
 
+```
     blog
     └───templates
         └───blog
                 base.html
                 post_list.html
+```
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
-```html
+```html:blog/templates/blog/base.html
 {% load staticfiles %}
 <html>
     <head>
@@ -54,7 +56,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 
 Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
-```html
+```html:blog/templates/blog/base.html
 <body>
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
@@ -72,7 +74,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 We basically replaced everything between `{% for post in posts %}{% endfor %}` with:
 
-```html
+```html:blog/templates/blog/base.html
 {% block content %}
 {% endblock %}
 ```
@@ -81,7 +83,7 @@ What does it mean? You just created a `block`, which is a template tag that allo
 
 Now save it, and open your `blog/templates/blog/post_list.html` again. Delete everything else other than what's inside the body and then also delete `<div class="page-header"></div>`, so the file will look like this:
 
-```html
+```html:blog/templates/blog/post_list.html
 {% for post in posts %}
     <div class="post">
         <div class="date">
@@ -95,11 +97,13 @@ Now save it, and open your `blog/templates/blog/post_list.html` again. Delete ev
 
 And now add this line to the beginning of the file:
 
-    {% extends 'blog/base.html' %}
+```html:blog/templates/blog/post_list.html
+{% extends 'blog/base.html' %}
+```
 
 {% raw %}It means that we're now extending the `base.html` template in `post_list.html`. Only one thing left: put everything (except the line we just added) between `{% block content %}` and `{% endblock content %}`. Like this:{% endraw %}
 
-```html
+```html:blog/templates/blog/post_list.html
 {% extends 'blog/base.html' %}
 
 {% block content %}

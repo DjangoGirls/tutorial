@@ -10,7 +10,7 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 
 OK, let's open up this file and see what's in there:
 
-```python
+```python:blog/views.py
 from django.shortcuts import render
 
 # Create your views here.
@@ -19,7 +19,7 @@ from django.shortcuts import render
 
 Not too much stuff here yet. The simplest *view* can look like this.
 
-```python
+```python:blog/views.py
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```

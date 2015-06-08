@@ -18,9 +18,11 @@ Creating a template means creating a template file. Everything is a file, right?
 
 Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
+```
     blog
     └───templates
         └───blog
+```
 
 (You might wonder why we need two directories both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
@@ -36,7 +38,7 @@ No error anymore! Congratulations :) However, your website isn't actually publis
 
 Add the following to your template file:
 
-```html
+```html:blog/templates/blog/post_list.html
 <html>
     <p>Hi there!</p>
     <p>It works!</p>
@@ -64,7 +66,7 @@ We use `<head>` to tell the browser about the configuration of the page, and `<b
 
 For example, you can put a webpage title element inside the `<head>`, like this:
 
-```html
+```html:blog/templates/blog/post_list.html
 <html>
     <head>
         <title>Ola's blog</title>
@@ -104,7 +106,7 @@ You can now have a little fun and try to customize your template! Here are a few
 
 Here's an example of a full template:
 
-```html
+```html:blog/templates/blog/post_list.html
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -150,34 +152,44 @@ It'd be good to see all this out and live on the Internet, right?  Let's do anot
 
 First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
-    $ git status
+```:command-line
+$ git status
+```
 
 Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
-    $ git add -A .
+```:command-line
+$ git add -A .
+```
 
 > __Note__ `-A` (short for "all") means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
-    $ git status
+```:command-line
+$ git status
+```
 
 We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
-    $ git commit -m "Changed the HTML for the site."
+```:command-line
+$ git commit -m "Changed the HTML for the site."
+```
 
 > __Note__ Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to Github:
 
-    git push
+```:command-line
+$ git push
+```
 
 
 ### Pull your new code down to PythonAnywhere, and reload your web app
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
-```
+```:command-line
 $ cd ~/my-first-blog
 $ source myvenv/bin/activate
 (myvenv)$ git pull
