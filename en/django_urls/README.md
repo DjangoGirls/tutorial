@@ -14,7 +14,7 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-```python
+```python:mysite/urls.py
 from django.conf.urls import include, url
 from django.contrib import admin
 
@@ -33,7 +33,7 @@ Lines that start with `#` are comments - it means that those lines won't be run 
 
 The admin URL, which you visited in previous chapter is already here:
 
-```python
+```python:mysite/urls.py
     url(r'^admin/', include(admin.site.urls)),
 ```
 
@@ -45,11 +45,13 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 If you still wish to understand how we created the patterns, here is an example of the process - we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-	^ for beginning of the text
-	$ for end of text
-	\d for a digit
-	+ to indicate that the previous item should be repeated at least once
-	() to capture part of the pattern
+```
+^ for beginning of the text
+$ for end of text
+\d for a digit
++ to indicate that the previous item should be repeated at least once
+() to capture part of the pattern
+```
 
 Anything else in the url definition will be taken literally.
 
@@ -74,7 +76,7 @@ Go ahead, delete the commented lines (lines starting with `#`) and add a line th
 
 Your `mysite/urls.py` file should now look like this:
 
-```python
+```python:mysite/urls.py
 from django.conf.urls import include, url
 from django.contrib import admin
 
@@ -93,7 +95,7 @@ When writing regular expressions in Python it is always done with `r` in front o
 
 Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
-```python
+```python:blog/urls.py
 from django.conf.urls import url
 from . import views
 ```
@@ -102,7 +104,7 @@ Here we're just importing Django's methods and all of our `views` from `blog` ap
 
 After that, we can add our first URL pattern:
 
-```python
+```python:blog/urls.py
 urlpatterns = [
     url(r'^$', views.post_list),
 ]

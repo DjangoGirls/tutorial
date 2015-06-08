@@ -14,7 +14,7 @@ In the previous chapter we gave our template a list of posts in the `posts` vari
 
 To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
 
-```html
+```html:blog/templates/blog/post_list.html
 {{ posts }}
 ```
 
@@ -24,11 +24,13 @@ Try this in your `blog/templates/blog/post_list.html` template (replace the seco
 
 As you can see, all we've got is this:
 
-    [<Post: My second post>, <Post: My first post>]
+```html:blog/templates/blog/post_list.html
+[<Post: My second post>, <Post: My first post>]
+```
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
 
-```html
+```html:blog/templates/blog/post_list.html
 {% for post in posts %}
     {{ post }}
 {% endfor %}
@@ -40,7 +42,7 @@ Try this in your template.
 
 It works! But we want them to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-```html
+```html:blog/templates/blog/post_list.html
 <div>
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
@@ -67,7 +69,7 @@ It'd be good to see if your website will still be working on the public Internet
 
 * First, push your code to Github
 
-```
+```:command-line
 $ git status
 [...]
 $ git add -A .
@@ -80,7 +82,7 @@ $ git push
 
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
-```
+```:command-line
 $ cd my-first-blog
 $ git pull
 [...]
