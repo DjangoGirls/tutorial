@@ -64,7 +64,7 @@ It would be nice to have the correct time on our website. Go to the [wikipedia t
 
 In settings.py, find the line that contains `TIME_ZONE` and modify it to choose your own timezone:
 
-```python:settings.py
+```python:mysite/settings.py
 TIME_ZONE = 'Europe/Berlin'
 ```
 
@@ -73,7 +73,7 @@ Modifying "Europe/Berlin" as appropriate
 
 We'll also need to add a path for static files (we'll find out all about static files and CSS later in the tutorial). Go down to  the *end* of the file, and just underneath  the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
-```python:settings.py
+```python:mysite/settings.py
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
@@ -85,7 +85,7 @@ There's a lot of different database software that can store data for your site. 
 
 This is already set up in this part of your `mysite/settings.py` file:
 
-```python:settings.py
+```python:mysite/settings.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

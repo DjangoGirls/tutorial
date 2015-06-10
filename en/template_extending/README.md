@@ -10,12 +10,12 @@ A base template is the most basic template that you extend on every page of your
 
 Let's create a `base.html` file in `blog/templates/blog/`:
 
-```
-    blog
-    └───templates
-        └───blog
-                base.html
-                post_list.html
+```:command-line
+blog
+└───templates
+    └───blog
+            base.html
+            post_list.html
 ```
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:

@@ -92,7 +92,7 @@ djangogirls
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
-```python:settings.py
+```python:mysite/settings.py
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -110,7 +110,7 @@ In the `blog/models.py` file we define all objects called `Models` - this is a p
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 
-```python:models.py
+```python:blog/models.py
 from django.db import models
 from django.utils import timezone
 

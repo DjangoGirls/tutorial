@@ -34,7 +34,7 @@ Lines that start with `#` are comments - it means that those lines won't be run 
 The admin URL, which you visited in previous chapter is already here:
 
 ```python:mysite/urls.py
-    url(r'^admin/', include(admin.site.urls)),
+url(r'^admin/', include(admin.site.urls)),
 ```
 
 It means that for every URL that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file -- it's more readable and cleaner.

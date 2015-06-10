@@ -9,7 +9,7 @@
         "ga@0.2.1",
         "richquotes@0.0.5",
         "edit-link@1.4.1",
-        "codeblock-filename@0.0.7"
+        "gitbook-plugin-codeblock-filename@git+https://github.com/aniav/gitbook-plugin-codeblock-filename.git"
     ],
     "pluginsConfig": {
         "ga": {
