@@ -11,7 +11,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 ## Create a link in the template
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
-```html
+```html:blog/templates/blog/post_list.html
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% raw %}We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:{% endraw %}
 
-```html
+```html:blog/templates/blog/post_list.html
 <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
@@ -48,7 +48,7 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want to create a URL to point Django to a *view* called `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` to the `blog/urls.py` file. It should look like this:
 
-```python
+```python:blog/urls.py
 from django.conf.urls import include, url
 from . import views
 
@@ -81,7 +81,9 @@ This time our *view* is given an extra parameter `pk`. Our *view* needs to catch
 
 Now, we want to get one and only one blog post. To do this we can use querysets like this:
 
-    Post.objects.get(pk=pk)
+```python
+Post.objects.get(pk=pk)
+```
 
 But this code has a problem. If there is no `Post` with given `primary key` (`pk`) we will have a super ugly error!
 
@@ -97,13 +99,17 @@ Ok, time to add a *view* to our `views.py` file!
 
 We should open `blog/views.py` and add the following code:
 
-    from django.shortcuts import render, get_object_or_404
+```python:blog/views.py
+from django.shortcuts import render, get_object_or_404
+```
 
 Near other `from` lines. And at the end of the file we will add our *view*:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
+```python:blog/views.py
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
@@ -119,7 +125,7 @@ We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 
-```html
+```html:blog/templates/blog/post_detail.html
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -150,7 +156,7 @@ Yay! It works!
 
 It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
-```
+```:command-line
 $ git status
 $ git add -A .
 $ git status
@@ -160,7 +166,7 @@ $ git push
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-```
+```:command-line
 $ cd my-first-blog
 $ source myvenv/bin/activate
 (myvenv)$ git pull
