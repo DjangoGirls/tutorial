@@ -112,7 +112,7 @@ And then publish it with our `publish` method!
 
     >>> post.publish()
 
-Now try to get list of published posts again (press the up arrow button 3 times and hit Enter):
+Now try to get list of published posts again (press the up arrow button 3 times and hit `enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]

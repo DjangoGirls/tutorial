@@ -2,7 +2,7 @@
 
 > Este capitulo está inspirado por la charla "How the Internet works" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Apostamos que utilizas Internet cada día. Pero, ¿sabes lo que pasa cuando escribe una dirección como http://djangogirls.org en tu navegador y presionas 'Enter'?
+Apostamos que utilizas Internet cada día. Pero, ¿sabes lo que pasa cuando escribe una dirección como http://djangogirls.org en tu navegador y presionas `enter`?
 
 Lo primero que tienes que entender es que un sitio web es sólo un montón de archivos guardados en un disco duro. Al igual que tus películas, música o fotos. Sin embargo, los sitios web poseen una peculiaridad: ellos incluyen un código de computadoras llamado HTML.
 

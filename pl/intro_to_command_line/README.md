@@ -56,7 +56,7 @@ lub
     > whoami
 
 
-A następnie wciśnij Enter. Oto rezultat:
+A następnie wciśnij `enter`. Oto rezultat:
 
     $ whoami
     olasitarska
@@ -72,7 +72,7 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 ### Bieżący katalog
 
-Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij Enter:
+Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
 
     $ pwd
     /Users/olasitarska

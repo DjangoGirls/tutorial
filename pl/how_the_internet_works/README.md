@@ -2,7 +2,7 @@
 
 > Niniejszy rozdział został zainspirowany prelekcją "Jak działa internet" Jessiki McKellar (http://web.mit.edu/jesstess/www/).
 
-Założymy się, że używasz internetu codziennie. Ale czy wiesz co dzieje się kiedy wpisujesz w oknie przeglądarki adres taki jak http://djangogirls.org i naciskasz "Enter"?
+Założymy się, że używasz internetu codziennie. Ale czy wiesz co dzieje się kiedy wpisujesz w oknie przeglądarki adres taki jak http://djangogirls.org i naciskasz `enter`?
 
 Aby zrozumieć jak działa internet powinnaś najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Dokładnie tak samo jak filmy, muzyka czy zdjęcia na Twoim komputerze. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
