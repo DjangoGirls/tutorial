@@ -39,7 +39,7 @@ Ok, [zacznijmy od początku...][3]
 Kurs jest prowadzony przez [DjangoGirls][4]. Jeżeli znajdziesz błąd lub chcesz dodać coś nowego, zapoznaj się z [tymi informacjami][5].
 
 [4]: http://djangogirls.org/
-[5]: https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md
+[5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Pomożesz nam przetłumaczyć tutorial na inne języki?
 

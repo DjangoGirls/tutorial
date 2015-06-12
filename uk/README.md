@@ -40,7 +40,7 @@
 Цей посібник підтримується спільнотою [DjangoGirls][4]. Якщо ви знайдете якісь помилки або захочете зробити певні оновлення, будь ласка, [виконуйте вказівки з частини про вклад][5].
 
  [4]: http://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md
+ [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Чи не бажаєте допомогти нам із перекладом посібника на інші мови?
 

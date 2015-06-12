@@ -39,7 +39,7 @@ Okay, [commençons par le commencement...][3]
 Ce tutoriel est maintenu par [DjangoGirls][4]. Si vous trouvez des erreurs ou souhaitez mettre à jour le tutoriel veuillez [suivre les instructions de contribution][5].
 
  [4]: http://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md
+ [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Voulez vous nous aider à traduire le tutoriel dans d'autres langues ?
 
