@@ -146,7 +146,7 @@ C:\Users\olasitarska\Desktop
 
 Tak, to tutaj!
 
-> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
+> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 

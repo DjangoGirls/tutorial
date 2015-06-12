@@ -507,7 +507,7 @@ Python da más instrucciones para lo que se suponen se ejecutará si la condici�
         print('It works!')
 
 
-¿Observa cómo nos hemos puesto una sangría en la siguiente línea de código por 4 espacios? Tenemos que hacer esto para que Python sepa que el código resulta ser verdad. Puedes hacer un espacio, pero casi todos los programadores Python hacen 4 para hacerlo más legible. Una solo Tab también contará como 4 espacios.
+¿Ves cómo nos hemos puesto una sangría en la siguiente línea de código con 4 espacios? Tenemos que hacer esto para que Python sepa que el código resulta ser verdad. Puedes hacer un espacio, pero casi todos los programadores Python hacen 4 para hacerlo más legible. Un solo `tab` también contará como 4 espacios.
 
 Guarda y ejecútalo de nuevo:
 
