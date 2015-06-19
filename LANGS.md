@@ -3,3 +3,4 @@
 * [Українська](uk)
 * [Español (beta)](es)
 * [Français (beta)](fr)
+* [Brazilian Portuguese (beta)] (bp)
