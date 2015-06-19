@@ -277,20 +277,20 @@ Clique no link "AWSGI configuration file" (na seção "Code" perto do topo da p�
 
 Exclua todo o conteúdo atual e substitua com algo parecido com isto:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<your-username>/my-first-blog'  # use your own username here
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-    
+```python
+import os
+import sys
+
+path = '/home/<your-username>/my-first-blog'  # use your own username here
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
 
 > **Nota** não se esqueça de substituir em seu próprio nome de usuário onde diz `<your-username>`
 

@@ -170,7 +170,10 @@ $ git push
 
 *   Então, em um [console PythonAnywhere Bash][8]:
     
-    $ cd my-first-blog $ git pull [...]
+```
+$ cd my-first-blog 
+$ git pull
+```
 
 *   Finalmente, pule para a [Web tab][9] e aperte **Reload**.
 

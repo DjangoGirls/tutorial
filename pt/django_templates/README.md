@@ -15,7 +15,7 @@ No capitulo anterior, nós fornecemos ao nosso template uma lista de postagens e
 Para exibir uma variável no Django template, nós usamos colchetes duplos com o nome da variável dentro, exemplo:
 
 ```html
-    {{ posts }}
+{{ posts }}
 ```
 
 Tentar fazer isso no seu template `blog/templates/blog/post_list.html` (substituia o segundo e o terceiro par de tags `< div >< / div >` pela linha `{{ posts }}`), salve o arquivo e atualize a página para ver os resultados:
@@ -32,9 +32,9 @@ Você pode ver, tudo que temos é:
 Isto significa que o Django a entende como uma lista de objetos. Lembre-se de **introdução ao Python** como podemos exibir listas? Sim, com os loops! Em um template Django, fazemos isso da seguinte maneira:
 
 ```html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
 ```
 
 Tente fazer isso no seu template.
@@ -46,17 +46,17 @@ Tente fazer isso no seu template.
 Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, como os que criamos anteriormente no capítulo de **Introdução a HTML**. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
 
 ```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% endfor %}
 ```
 
 Tudo que você põe enrte `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página:
@@ -73,11 +73,20 @@ Seria bom ver se seu site ainda estará funcionando na internet, certo? Vamos te
 
 *   Primeiro, envie seu código para o Github
     
-    $ git status [...] $ git add -A . $ git status [...] $ git commit -m "Added views to create/edit blog post inside the site." [...] $ git push
+    ```
+    $ git status 
+    $ git add -A . 
+    $ git status 
+    $ git commit -m "Added views to create/edit blog post inside the site." 
+    $ git push
+    ```
 
 *   Em seguida, faça login em [PythonAnywhere][4] e vá para seu **Bash console** (ou comece um novo) e execute:
     
-    $ cd my-first-blog $ git pull [...]
+    ```
+    $ cd my-first-blog 
+    $ git pull 
+    ``
 
 *   Finalmente, pule para a [Web tab][5] e aperte **Reload** em seu aplicativo web. Sua atualização deve estar live!
 

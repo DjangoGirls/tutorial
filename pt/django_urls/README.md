@@ -17,16 +17,16 @@ Cada página na Internet precisa de sua própria URL. Desta forma seu aplicativo
 Vamos abrir o arquivo `mysite/urls.py` e ver com que ele se parece:
 
 ```python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
-    
-        url(r'^admin/', include(admin.site.urls)),
-    ]
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^admin/', include(admin.site.urls)),
+]
 ```
 
 Como você pode ver, o Django já colocou alguma coisa lá pra nós.
@@ -35,9 +35,9 @@ As linhas que começam com `#` são comentários - isso significa que essas linh
 
 A URL do admin, que você visitou no capítulo anterior já está aqui:
 
-    python
-        url(r'^admin/', include(admin.site.urls)),
-    
+```python
+    url(r'^admin/', include(admin.site.urls)),
+```
 
 Isso significa que para cada URL que começa com `admin /` o Django irá encontrar um correspondente *modo de exibição*. Neste caso nós estamos incluindo um monte de admin URLs para que isso não fique tudo embalado neste pequeno arquivo..--é mais legível e mais limpo.
 
@@ -76,13 +76,13 @@ Vá em frente, apague as linhas comentadas (as linhas que começam com `#`) e ad
 O seu arquivo `mysite/urls.py` deve agora se parecer com isto:
 
 ```python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
-        url(r'', include('blog.urls')),
-    ]
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
+]
 ```
 
 O Django agora irá redirecionar tudo o que entra em 'http://127.0.0.1:8000 /'para `blog.urls` e procurar por novas instruções lá.
@@ -94,8 +94,8 @@ Ao escrever as expressões regulares em Python é sempre feito com `r` na frente
 Crie um novo arquivo vazio `blog/urls.py`. Tudo bem! Adicione estas duas primeiras linhas:
 
 ```python
-    from django.conf.urls import include, url
-    from . import views
+from django.conf.urls import include, url
+from . import views
 ```
 
 Aqui nós estamos apenas importando métodos do Django e todos os nossos `views` do aplicativo `blog` (ainda não temos nenhuma, mas teremos em um minuto!)
@@ -103,9 +103,9 @@ Aqui nós estamos apenas importando métodos do Django e todos os nossos `views`
 Depois disso nós podemos adicionar nosso primeira URL padrão:
 
 ```python
-    urlpatterns = [
-        url(r'^$', views.post_list),
-    ]
+urlpatterns = [
+    url(r'^$', views.post_list),
+]
 ``` 
 
 Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para `^ $` URL. Essa expressão regular corresponderá a `^` (um começo) seguido por `$` (fim) - então somente uma seqüência vazia irá corresponder. E isso é correto, porque em resolvedores de Django url, ' http://127.0.0.1:8000 /' não é uma parte da URL. Este padrão irá mostrar o Django que `views.post_list` é o lugar certo para ir, se alguém entra em seu site no endereço 'http://127.0.0.1:8000 /'.

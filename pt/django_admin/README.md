@@ -5,10 +5,10 @@ Para adicionar, editar e remover postagens que nós criamos usaremos o Django ad
 Vamos abrir o arquivo `blog/admin.py` e substituir seu conteúdo por:
 
 ```python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
 ```
 
 Como você pode ver, nós importamos (incluímos) o modelo Post definido no capítulo anterior. Para tornar nosso modelo visível na página de administração, nós precisamos registrá-lo com: `admin.site.register(Post)`.

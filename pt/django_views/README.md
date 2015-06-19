@@ -11,16 +11,16 @@ As views são postas no arquivo `views.py`. Nós vamos adicionar nossas *views* 
 OK, vamos abrir o arquivo e ver o que tem nele:
 
 ```python
-    from django.shortcuts import render
-    
-    # Create your views here.
+from django.shortcuts import render
+
+# Create your views here.
 ```
 
 Não tem muita coisa. A *view* mais básica se parece com isto.
 
 ```python
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 ```
 
 Como você pode ver, nós criamos um método (`def`) chamado `post_list` que aceita o `pedido` e `retornar` um método `render` será processado (para montar) nosso modelo `blog/post_list.html`.

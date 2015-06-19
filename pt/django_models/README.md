@@ -88,15 +88,15 @@ Você vai notar que um novo diretório `blog` é criado e que ele agora contém 
 Depois de criar um aplicativo também precisamos dizer ao Django que deve usá-lo. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `)`. É assim que o produto final deve ficar assim:
 
 ```python
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
 ```
 
 ### Criando o modelo Post do nosso blog
@@ -106,24 +106,24 @@ No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` - este
 Vamos abrir `blog/models.py`, remova tudo dele e escreva o código como este:
 
 ```python
-    from django.db import models
-    from django.utils import timezone
-    
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
-    
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.title
+from django.db import models
+from django.utils import timezone
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
 ```
 
 > Certifique-se de ter usado dois caracteres (`_`) em cada lado do `str`. Aqueles caracteres são usados freqüentemente em Python e às vezes os chamamos de "dunder" (abreviação de "double-underscore" ou "duplo sublinhado").

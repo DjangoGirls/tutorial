@@ -55,18 +55,18 @@ Seria bom ter a hora correta no nosso site. Vá para a <[wikipedia timezones lis
 
 Em settings.py, localize a linha que contém `TIME_ZONE` e modifique para escolher seu próprio fuso horário:
 
-    python
-    TIME_ZONE = 'Europe/Berlin'
-    
+```python
+TIME_ZONE = 'Europe/Berlin'
+```    
 
 Modifique "Europa/Berlim", conforme o caso
 
 Nós também precisaramos adicionar um caminho para arquivos estáticos (nós vamos descobrir tudo sobre arquivos estáticos e CSS mais tarde no tutorial). Desça até o *final* do arquivo e logo abaixo da entrada `STATIC_URL`, adicione um novo um chamado `STATIC_ROOT`:
 
-    python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
-    
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+```    
 
 ## Instalação de um banco de dados
 
@@ -74,14 +74,14 @@ Há um monte de software de banco de dados diferente que pode armazenar dados pa
 
 Isto já está configurado nesta parte do seu arquivo `mysite/settings.py`:
 
-    python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-    
+}
+```
 
 Para criar um banco de dados para o nosso blog, vamos fazer o seguinte no console. Digite: `python manage.py migrate` (precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`). Se isso der certo, você deve ver algo como isto:
 

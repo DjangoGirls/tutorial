@@ -40,10 +40,10 @@ Acabaram-se os erros! Parabéns :) Entretanto, nosso site não mostra nada a nã
 Adicione a seguinte linha dentro do template:
 
 ```html
-    <html>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </html>
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
 ```
 
 Como nosso site se parece agora? Clique para descobrir: http://127.0.0.1:8000/
@@ -70,15 +70,15 @@ Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da p
 Por exemplo, você pode por o elemento título de uma página web dentro da tag `<head>`. Veja:
 
 ```html
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </body>
-    </html>
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
 ```    
 
 Salve o arquivo e atualize sua página.
@@ -112,28 +112,28 @@ Agora você pode se divertir um pouco tentando customizar o seu template! Aqui e
 Aqui está um exemplo de um template completo:
 
 ```html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
 ```
 
 Nós criamos três seções `div` aqui.

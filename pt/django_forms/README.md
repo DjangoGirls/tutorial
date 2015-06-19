@@ -167,9 +167,9 @@ A resposta é: nada. Precisamos trabalhar um pouco mais na nossa *view*.
 Abra `blog/views.py` mais uma vez. Atualmente tudo que temos na visão `post_new` é:
 
 ``` python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 Quando nós enviamos o formulário, somos trazidos de volta para a mesma visão, mas desta vez temos mais alguns dados no `request`, mais especificamente em `request.POST` (o nome não tem nada com "post" de blog , tem a ver com o fato de que estamos "postando" dados). Você se lembra que no arquivo HTML nossa definição de ` <form> ` tem a variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Você não deveria renomear `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
@@ -177,16 +177,16 @@ Quando nós enviamos o formulário, somos trazidos de volta para a mesma visão,
 Então na nossa *view* nós temos duas situações separadas para lidar. A primeira é quanto acessamos a página pela primeira vez e queremos um formulário em branco. E a segunda, é quando nós temos que voltar para a *view* com todos os dados do formulário que nós digitamos. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso).
 
 ``` python
-    if request.method == "POST":
-        [...]
-    else:
-        form = PostForm()
+if request.method == "POST":
+    [...]
+else:
+    form = PostForm()
 ``` 
 
 Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que veem do formulário, certo? Nós iremos fazer assim:
 
 ```python
-    form = PostForm(request.POST)
+form = PostForm(request.POST)
 ```   
 
 Fácil! Próxima coisa é verificar se o formulário está correto(todos os campos requeridos são definidos e valores incorretos não serão salvos). Fazemos isso com `form.is_valid()`.
@@ -194,10 +194,10 @@ Fácil! Próxima coisa é verificar se o formulário está correto(todos os camp
 Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-lo!
 
 ```python
-    if form.is_valid():
-        post = form.save(commit=False)
-        post.author = request.user
-        post.save()
+if form.is_valid():
+    post = form.save(commit=False)
+    post.author = request.user
+    post.save()
 ```
 
 Basicamente, temos duas coisas aqui: Salvamos o formulário com `form.save` e adicionados um autor(desde que não haja o campo `author` em `PostForm`, e este campo é obrigatório!). `commit=False` significa que não queremos salvar o modelo `Post` ainda - queremos adicionar autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações(adicionando autor) e é criado um novo post no blog!
@@ -205,13 +205,13 @@ Basicamente, temos duas coisas aqui: Salvamos o formulário com `form.save` e ad
 Finalmente, não seria fantástico se nós pudéssemos imediatamente ir à página de `post_detail` para o recém-criado blog post, certo? Para fazer isso nós precisaremos de mais uma importação:
 
 ```python
-    from django.shortcuts import redirect
+from django.shortcuts import redirect
 ```
 
 Adicione-o logo no início do seu arquivo. E agora podemos dizer: vá para a página `post_detail` para um recém-criado post.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+return redirect('blog.views.post_detail', pk=post.pk)
 ```
 
 `blog.views.post_detail` é o nome da view que queremos ir. Lembre-se que essa *view* exige uma variável `pk`? Para passar isso nas `views` usamos `pk=post.pk`, onde post é o recém-criado blog post.
@@ -219,17 +219,17 @@ Adicione-o logo no início do seu arquivo. E agora podemos dizer: vá para a pá
 Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá parecer agora, certo?
 
 ```python
-    def post_new(request):
-        if request.method == "POST":
-            form = PostForm(request.POST)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/novo /, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
@@ -262,8 +262,8 @@ Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um j
 
 Abra `blog/templates/blog/post_detail.html` e adicione a linha:
 
-```python
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
     
 
@@ -287,39 +287,39 @@ Agora o modelo estará parecido com:
 
 Em `blog/urls.py` adicionamos esta linha:
 
-    ```python
-        url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
-    ```
+```python
+url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
+```
 
 Nós reutilizaremos o modelo `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
 Vamos abrir `blog/views.py` e adicionar no final do arquivo:
 
 ```python
-    def post_edit(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm(instance=post)
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. Primeira coisa: passamos um parâmetro extra da url `pk`. Em seguida: pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário passamos este post como uma `instância`, tanto quando salvamos o formulário:
 
 ```python
-    form = PostForm(request.POST, instance=post)
+form = PostForm(request.POST, instance=post)
 ```
 
 como quando nós apenas abrimos um formulário com este post para editar:
 
 ```python
-    form = PostForm(instance=post)
+form = PostForm(instance=post)
 ```
 
 Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
@@ -346,11 +346,20 @@ Vamos ver se tudo isso funciona na PythonAnywhere. Tempo para outro deploy!
 
 *   Primeiro, commit o seu novo código e coloque no Github
     
-    $ git status $ git add -A . $ git status $ git commit -m "Added views to create/edit blog post inside the site." $ git push
+```bash
+$ git status 
+$ git add -A . 
+$ git status 
+$ git commit -m "Added views to create/edit blog post inside the site." 
+$ git push
+```
 
 *   Então, em um [console PythonAnywhere Bash][7]:
     
-    $ cd my-first-blog $ git pull [...]
+```bash
+$ cd my-first-blog 
+$ git pull
+```
 
 *   Finalmente, pule para a [Web tab][8] e aperte **Reload**.
 
