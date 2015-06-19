@@ -16,16 +16,17 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
 Ok, vamos abri-lo e escrever nele o seguinte:
 
-   ``` python
-    from django import forms
-    
-    from .models import Post
-    
-    class PostForm(forms.ModelForm):
-    
-        class Meta:
-            model = Post
-            fields = ('title', 'text',)```
+```python
+from django import forms
+
+from .models import Post
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
+```
     
 
 Primeiro precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, nosso modelo `Post` (`from .models import Post`).
@@ -45,7 +46,7 @@ Então, mais uma vez, nós iremos criar: um link para a página, uma URL, uma vi
 É hora de abrir `blog/templates/blog/base.html`. Nós iremos adicionar um link em `div` nomeado `page-header`:
 
 ```html
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 Note que nós queremos chamar nossa nova visão `post_new`.
@@ -53,30 +54,30 @@ Note que nós queremos chamar nossa nova visão `post_new`.
 Depois de adicionar a linha, seu html deve se parecer com isso:
 
 ```html
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
 ```
 
 Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obviamente, um erro familiar `NoReverseMatch` certo?
@@ -86,20 +87,20 @@ Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obv
 Vamos abrir o arquivo `blog/urls.py` e escrever:
 
 ```python
-        url(r'^post/new/$', views.post_new, name='post_new'),
+url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
 O código final deve se parecer com isso:
 
 ``` python
-    from django.conf.urls import include, url
-    from . mport views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-        url(r'^post/new/$', views.post_new, name='post_new'),
-    ]
+from django.conf.urls import include, url
+from . mport views
+
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+]
 ``` 
 
 Após recarregar o site, nós veremos um `AttributeError`, desde que nós não temos a visão `post_new` implementada. Vamos adicioná-la agora.
@@ -109,15 +110,15 @@ Após recarregar o site, nós veremos um `AttributeError`, desde que nós não t
 Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o resto das linhas `from`:
 
 ``` python
-    from .forms import PostForm
+from .forms import PostForm
 ``` 
 
 e nossa *view*:
 
 ``` python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ``` 
 
 Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Nós iremos voltar para esta *view*, mas por agora vamos criar rapidamente um template para o formulário.
@@ -137,7 +138,7 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra
 
 Beleza, então vamos ver como ficou o HTML `post_edit.html`:
 
-    ```html
+```html
 {% extends 'blog/base.html' %}
 
 {% block content %}

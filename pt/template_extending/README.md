@@ -19,70 +19,93 @@ Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
 
 Abra-o e copie tudo que está no arquivo `post_list.html` para `base.html`, desse jeito:
 
-    ```html
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-    
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                    {% for post in posts %}
-                        <div class="post">
-                            <div class="date">
-                                {{ post.published_date }}
-                            </div>
-                            <h1><a href="">{{ post.title }}</a></h1>
-                            <p>{{ post.text|linebreaks }}</p>
-                        </div>
-                    {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </body>
-    </html>
-    ```
-
-Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</body>`) com isso:
-
-    ```html
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaks }}</p>
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </div>
     </body>
-    ```
+</html>
+```
+
+Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</body>`) com isso:
+
+```html
+<body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+```
 
 {% raw %}Basicamente nós substituimos tudo entre `{% for post in posts %}{% endfor %}` por:{% endraw %}
 
-    ```html
-    {% block content %}
-    {% endblock %}
-    ```
+```html
+{% block content %}
+{% endblock %}
+```
 
 O que isso significa? Você acabou de criar um `block` (bloco), que é uma tag de template que te permite inserir HTML neste bloco em outros templates que estendem `base.html`. Nós vamos te mostrar como fazer isso já já.
 
 Salve e abra o arquivo `blog/templates/blog/post_list.html` novamente. Apague exatamente tudo que não estiver dentro da tag body e apague também `<div class="page-header"></div>`, de forma que o arquivo fique da seguinte maneira:
 
-    ```html
+```html
+{% for post in posts %}
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```
+
+Agora adicione esta linha ao início do arquivo:
+
+```html
+{% extends 'blog/base.html' %}
+```
+
+Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block content %}` e `{% endblock content %}`. Como a seguir:
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -92,31 +115,8 @@ Salve e abra o arquivo `blog/templates/blog/post_list.html` novamente. Apague ex
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    ```
-
-Agora adicione esta linha ao início do arquivo:
-
-```html
-    {% extends 'blog/base.html' %}
+{% endblock content %}
 ```
-
-Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block content %}` e `{% endblock content %}`. Como a seguir:
-
-    ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
-            </div>
-        {% endfor %}
-    {% endblock content %}
-    ```
 
 É isso! Veja se o seu site ainda está funcionando direito :)
 
