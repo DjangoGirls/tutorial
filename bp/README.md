@@ -6,6 +6,10 @@
 
 > Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite http://creativecommons.org/licenses/by-sa/4.0/
 
+## Translation
+
+This tutorial has been translated from English to Spanish by a group of awesome volunteers. Special thanks for help goes out to Willie Lawrence, Vivian Macedo, Cleiton Lima, danieltex, Leandro Silva Araujo, Adailton do Nascimento, Pablo Palacios, Paulo Alem, Eric Hidecki, Joao Luiz Lorencetti, clemente.jnr, Leonardo Alves dos Santos, joepreludian, Gabriela Cavalcante da Silve, Rafael Biagioni de Fazio, Fabio C. Barrionuevo da Luz, ffabiorj, Lucas Magnum, 1pedro, Adjamilton Junior, Leandro Barbosa, Kleber C Pinheiro, Katyanna Moura, Annanda Sousa, Flavio Barros, Marcel Ribeiro Dantas, Adam Victor Nazareth Brandizzi, Bernardo Fontes, Antonio Luis, Raony Guimares Correo do Carmo Lisboa Cardenas, Camilla Achutti and Carla Suarez. Wow! <3 <3 
+
 ## Introdução
 
 Você já sentiu como se o mundo fosse cada vez mais sobre tecnologia e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até para tentar fazer alguma coisa sozinho?
