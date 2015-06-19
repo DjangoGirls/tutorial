@@ -16,7 +16,7 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
 Ok, vamos abri-lo e escrever nele o seguinte:
 
-    python
+   ``` python
     from django import forms
     
     from .models import Post
@@ -25,7 +25,7 @@ Ok, vamos abri-lo e escrever nele o seguinte:
     
         class Meta:
             model = Post
-            fields = ('title', 'text',)
+            fields = ('title', 'text',)```
     
 
 Primeiro precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, nosso modelo `Post` (`from .models import Post`).
@@ -44,15 +44,15 @@ Então, mais uma vez, nós iremos criar: um link para a página, uma URL, uma vi
 
 É hora de abrir `blog/templates/blog/base.html`. Nós iremos adicionar um link em `div` nomeado `page-header`:
 
-    html
+```html
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```
 
 Note que nós queremos chamar nossa nova visão `post_new`.
 
 Depois de adicionar a linha, seu html deve se parecer com isso:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -77,7 +77,7 @@ Depois de adicionar a linha, seu html deve se parecer com isso:
             </div>
         </body>
     </html>
-    
+```
 
 Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obviamente, um erro familiar `NoReverseMatch` certo?
 
@@ -85,13 +85,13 @@ Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obv
 
 Vamos abrir o arquivo `blog/urls.py` e escrever:
 
-    python
+```python
         url(r'^post/new/$', views.post_new, name='post_new'),
-    
+```
 
 O código final deve se parecer com isso:
 
-    python
+``` python
     from django.conf.urls import include, url
     from . mport views
     
@@ -100,7 +100,7 @@ O código final deve se parecer com isso:
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
         url(r'^post/new/$', views.post_new, name='post_new'),
     ]
-    
+``` 
 
 Após recarregar o site, nós veremos um `AttributeError`, desde que nós não temos a visão `post_new` implementada. Vamos adicioná-la agora.
 
@@ -108,17 +108,17 @@ Após recarregar o site, nós veremos um `AttributeError`, desde que nós não t
 
 Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o resto das linhas `from`:
 
-    python
+``` python
     from .forms import PostForm
-    
+``` 
 
 e nossa *view*:
 
-    python
+``` python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+``` 
 
 Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Nós iremos voltar para esta *view*, mas por agora vamos criar rapidamente um template para o formulário.
 
@@ -129,7 +129,7 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra
 *   Temos que exibir o formulário. Podemos fazer isso simplesmente com um `{{ form.as_p }}`.
 *   A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`
 *   Precisamos de um botão `Salvar`. Fazemos isso com um botão HTML: `<button type="submit">Save</button>`
-*   E finalmente, depois de abrir a tag `<form ...>` precisamos adicionar um `{% csrf_token %}`. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! O DJango vai reclamar se você esquecer de adicionar isso e simplesmente salvar o formulário:
+*   E finalmente, depois de abrir a tag `<form ...>` precisamos adicionar um `{% raw %}{% csrf_token %}{endraw}`. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! O DJango vai reclamar se você esquecer de adicionar isso e simplesmente salvar o formulário:
 
 ![CSFR Página proíbida][1]
 
@@ -137,7 +137,7 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra
 
 Beleza, então vamos ver como ficou o HTML `post_edit.html`:
 
-    html
+    ```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -147,7 +147,7 @@ Beleza, então vamos ver como ficou o HTML `post_edit.html`:
             <button type="submit" class="save btn btn-default">Save</button>
         </form>
     {% endblock %}
-    
+    ```
 
 Hora de atualizar! Há! Seu formulário apareceu!
 
@@ -165,59 +165,59 @@ A resposta é: nada. Precisamos trabalhar um pouco mais na nossa *view*.
 
 Abra `blog/views.py` mais uma vez. Atualmente tudo que temos na visão `post_new` é:
 
-    python
+``` python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```
 
 Quando nós enviamos o formulário, somos trazidos de volta para a mesma visão, mas desta vez temos mais alguns dados no `request`, mais especificamente em `request.POST` (o nome não tem nada com "post" de blog , tem a ver com o fato de que estamos "postando" dados). Você se lembra que no arquivo HTML nossa definição de ` <form> ` tem a variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Você não deveria renomear `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
 
 Então na nossa *view* nós temos duas situações separadas para lidar. A primeira é quanto acessamos a página pela primeira vez e queremos um formulário em branco. E a segunda, é quando nós temos que voltar para a *view* com todos os dados do formulário que nós digitamos. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso).
 
-    python
+``` python
     if request.method == "POST":
         [...]
     else:
         form = PostForm()
-    
+``` 
 
 Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que veem do formulário, certo? Nós iremos fazer assim:
 
-    python
+ ```python
     form = PostForm(request.POST)
-    
+ ```   
 
 Fácil! Próxima coisa é verificar se o formulário está correto(todos os campos requeridos são definidos e valores incorretos não serão salvos). Fazemos isso com `form.is_valid()`.
 
 Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-lo!
 
-    python
+ ```python
     if form.is_valid():
         post = form.save(commit=False)
         post.author = request.user
         post.save()
-    
+ ```
 
 Basicamente, temos duas coisas aqui: Salvamos o formulário com `form.save` e adicionados um autor(desde que não haja o campo `author` em `PostForm`, e este campo é obrigatório!). `commit=False` significa que não queremos salvar o modelo `Post` ainda - queremos adicionar autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações(adicionando autor) e é criado um novo post no blog!
 
 Finalmente, não seria fantástico se nós pudéssemos imediatamente ir à página de `post_detail` para o recém-criado blog post, certo? Para fazer isso nós precisaremos de mais uma importação:
 
-    python
+ ```python
     from django.shortcuts import redirect
-    
+    ```
 
 Adicione-o logo no início do seu arquivo. E agora podemos dizer: vá para a página `post_detail` para um recém-criado post.
 
-    python
+ ```python
     return redirect('blog.views.post_detail', pk=post.pk)
-    
+    ```
 
 `blog.views.post_detail` é o nome da view que queremos ir. Lembre-se que essa *view* exige uma variável `pk`? Para passar isso nas `views` usamos `pk=post.pk`, onde post é o recém-criado blog post.
 
 Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá parecer agora, certo?
 
-    python
+ ```python
     def post_new(request):
         if request.method == "POST":
             form = PostForm(request.POST)
@@ -229,7 +229,7 @@ Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá 
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+    ```
 
 Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/novo /, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
 
@@ -261,13 +261,13 @@ Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um j
 
 Abra `blog/templates/blog/post_detail.html` e adicione a linha:
 
-    python
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    ```python
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>```
     
 
 Agora o modelo estará parecido com:
 
-    html
+    ```html
         {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -279,20 +279,20 @@ Agora o modelo estará parecido com:
         </div>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}
+    {% endblock %}```
     
 
 Em `blog/urls.py` adicionamos esta linha:
 
-    python
+    ```python
         url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
-    
+    ```
 
 Nós reutilizaremos o modelo `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
 Vamos abrir `blog/views.py` e adicionar no final do arquivo:
 
-    ython
+    ```python
     def post_edit(request, pk):
         post = get_object_or_404(Post, pk=pk)
         if request.method == "POST":
@@ -305,19 +305,19 @@ Vamos abrir `blog/views.py` e adicionar no final do arquivo:
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+    ```
 
 Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. Primeira coisa: passamos um parâmetro extra da url `pk`. Em seguida: pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário passamos este post como uma `instância`, tanto quando salvamos o formulário:
 
-    python
+    ```python
     form = PostForm(request.POST, instance=post)
-    
+    ```
 
 como quando nós apenas abrimos um formulário com este post para editar:
 
-    python
+    ```python
     form = PostForm(instance=post)
-    
+    ```
 
 Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 
