@@ -138,16 +138,16 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra
 Beleza, então vamos ver como ficou o HTML `post_edit.html`:
 
     ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
-    ```
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% raw %}{% csrf_token %}{% endraw %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Guardar</button>
+    </form>
+{% endblock %}
+```
 
 Hora de atualizar! Há! Seu formulário apareceu!
 
@@ -267,19 +267,20 @@ Abra `blog/templates/blog/post_detail.html` e adicione a linha:
 
 Agora o modelo estará parecido com:
 
-    ```html
-        {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="date">
-        {% if post.published_date %}
-            {{ post.published_date }}
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        </div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
-    {% endblock %}```
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="date">
+    {% if post.published_date %}
+        {{ post.published_date }}
+    {% endif %}
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaks }}</p>
+{% endblock %}
+```
     
 
 Em `blog/urls.py` adicionamos esta linha:
