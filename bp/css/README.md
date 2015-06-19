@@ -18,9 +18,9 @@ Foi escrito por programadores que trabalharam no Twitter e agora é desenvolvido
 
 Para instalar o Bootstrap, você precisa adicionar ao seu cabeçalho (na tag `<head>` dentro do seu arquivo `.html`)(`blog/templates/blog/post_list.html`):
 
-    html
+    ```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">```
     
 
 Isso não adiciona nenhum arquivo ao seu projeto. O código apenas aponta para arquivos que existem na internet. Apenas siga em frente, abra seu site e atualize a página. Aqui ele está!
@@ -73,18 +73,18 @@ Mas vamos fazer pelo menos um pouco. Talvez possamos mudar a cor do nosso cabeç
 
 Em seu arquivo `static/css/blog.css` você deve adicionar o seguinte código:
 
-    css
+    ```css
     h1 a {
         color: #FCA205;
-    }
+    }```
     
 
 `h1 a` é um seletor de CSS. Isso significa que nós estamos aplicando nossos estilos para qualquer elemento `a` dentro de um elemento `h1`(i.e. quando tivermos no código algo como: `<h1><a href="">link</a></h1>`). Neste caso nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Claro, você pode colocar a cor que você quiser aqui!
 
 Em um arquivo CSS podemos determinar estilos para elementos no arquivo HTML. Os elementos são identificados pelo nome do elemento (ou seja, `a`, `h1`, `body`), o atributo de `class` ou o atributo `id`. Classe e id são nomes que você mesmo dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a seguinte tag pode ser identificada por CSS usando a tag de nome `a`, a classe `link_externo` ou a identificação de `link_para_a_pagina_wiki`:
 
-    html
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+    ```html
+    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">```
     
 
 Leia sobre [Seletores CSS em w3schools][4].
@@ -93,21 +93,21 @@ Leia sobre [Seletores CSS em w3schools][4].
 
 Então, precisamos também contar o nosso template HTML que nós adicionamos CSS. Abra o arquivo `blog/templates/blog/post_list.html` e adicione essa linha no início do mesmo:
 
-    html
-    {% load staticfiles %}
+    ```html
+    {% load staticfiles %}```
     
 
 Estamos apenas carregando arquivos estáticos aqui :). Depois, entre o `<head>` `e/</head>`, depois dos links para os arquivos de CSS do Bootstrap (o navegador lê os arquivos na ordem que eles são dados, então o código em nosso arquivo pode substituir o código em arquivos de inicialização), adicione esta linha:
 
-    html
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    ```html
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">```
     
 
 Só dissemos que nosso modelo onde se encontra nosso arquivo CSS.
 
 Agora, seu arquivo deve ficar assim:
 
-    html
+    ```html
     {% load staticfiles %}
     <html>
         <head>
@@ -129,7 +129,7 @@ Agora, seu arquivo deve ficar assim:
                 </div>
             {% endfor %}
         </body>
-    </html>
+    </html>```
     
 
 OK, salve o arquivo e atualize o site!
@@ -140,10 +140,10 @@ OK, salve o arquivo e atualize o site!
 
 Bom trabalho! Talvez a gente também queira dar um pouco de ar ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
 
-    css
+    ```css
     body {
         padding-left: 15px;
-    }
+    }```
     
 
 Adicione isto ao seu arquivo CSS, salve e veja como ele funciona!
@@ -154,19 +154,19 @@ Adicione isto ao seu arquivo CSS, salve e veja como ele funciona!
 
 Talvez a gente possa customizar a fonte no nosso cabeçalho? Cole na seção `<head>` do arquivo `blog/templates/blog/post_list.html` o seguinte:
 
-    html
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    ```html
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">```
     
 
 Essa linha irá importar uma fonte chamada *Lobster* do Google Fonts (https://www.google.com/fonts).
 
 Agora adicione a linha `font-family: 'Lobster';` no CSS do arquivo `static/css/blog.css` dentro do bloco de declaração `h1 a` (o código entre as chaves `{` e `}`) e atualize a página:
 
-    css
+    ```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
-    }
+    }```
     
 
 ![Figura 14.3][7]
@@ -179,25 +179,25 @@ Como mencionado acima, CSS usa o conceito de classes, que basicamente permite qu
 
 Vá em frente e o nomeie algumas partes do código HTML. Adicione uma classe chamada de `page-header` para o `div` que contém o cabeçalho, assim:
 
-    html
+    ```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+    </div>```
     
 
 E agora, adicione uma classe `post` em sua `div` que contém um post de blog.
 
-    html
+    ```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
-    </div>
+    </div>```
     
 
 Agora adicionaremos blocos de declaração de seletores diferentes. Seletores começando com `.` se referem às classes. Existem muitos tutoriais e explicações sobre CSS na Web para ajudar você a entender o código a seguir. Por enquanto, basta copiar e colá-lo em seu arquivo `mysite/static/css/blog.css`:
 
-    css
+    ```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -244,24 +244,24 @@ Agora adicionaremos blocos de declaração de seletores diferentes. Seletores co
     
     .post h1 a, .post h1 a:visited {
         color: #000000;
-    }
+    }```
     
 
 Então envolva o código HTML que exibe as mensagens com declarações de classes. Substitua isto:
 
-    html
+    ```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaks }}</p>
         </div>
-    {% endfor %}
+    {% endfor %}```
     
 
 no arquivo `blog/templates/blog/post_list.html` por isto:
 
-    html
+    ```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -276,7 +276,7 @@ no arquivo `blog/templates/blog/post_list.html` por isto:
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </div>```
     
 
 Salve esses arquivos e atualize seu site.
