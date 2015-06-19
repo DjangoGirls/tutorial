@@ -129,7 +129,7 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra
 *   Temos que exibir o formulário. Podemos fazer isso simplesmente com um `{{ form.as_p }}`.
 *   A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`
 *   Precisamos de um botão `Salvar`. Fazemos isso com um botão HTML: `<button type="submit">Save</button>`
-*   E finalmente, depois de abrir a tag `<form ...>` precisamos adicionar um `{% raw %}{% csrf_token %}{endraw}`. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! O DJango vai reclamar se você esquecer de adicionar isso e simplesmente salvar o formulário:
+*   E finalmente, depois de abrir a tag `<form ...>` precisamos adicionar um `{% raw %}{% csrf_token %}{% endraw %}`. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! O DJango vai reclamar se você esquecer de adicionar isso e simplesmente salvar o formulário:
 
 ![CSFR Página proíbida][1]
 
