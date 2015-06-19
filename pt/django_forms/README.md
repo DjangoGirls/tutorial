@@ -185,40 +185,40 @@ Então na nossa *view* nós temos duas situações separadas para lidar. A prime
 
 Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que veem do formulário, certo? Nós iremos fazer assim:
 
- ```python
+```python
     form = PostForm(request.POST)
- ```   
+```   
 
 Fácil! Próxima coisa é verificar se o formulário está correto(todos os campos requeridos são definidos e valores incorretos não serão salvos). Fazemos isso com `form.is_valid()`.
 
 Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-lo!
 
- ```python
+```python
     if form.is_valid():
         post = form.save(commit=False)
         post.author = request.user
         post.save()
- ```
+```
 
 Basicamente, temos duas coisas aqui: Salvamos o formulário com `form.save` e adicionados um autor(desde que não haja o campo `author` em `PostForm`, e este campo é obrigatório!). `commit=False` significa que não queremos salvar o modelo `Post` ainda - queremos adicionar autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações(adicionando autor) e é criado um novo post no blog!
 
 Finalmente, não seria fantástico se nós pudéssemos imediatamente ir à página de `post_detail` para o recém-criado blog post, certo? Para fazer isso nós precisaremos de mais uma importação:
 
- ```python
+```python
     from django.shortcuts import redirect
-    ```
+```
 
 Adicione-o logo no início do seu arquivo. E agora podemos dizer: vá para a página `post_detail` para um recém-criado post.
 
- ```python
+```python
     return redirect('blog.views.post_detail', pk=post.pk)
-    ```
+```
 
 `blog.views.post_detail` é o nome da view que queremos ir. Lembre-se que essa *view* exige uma variável `pk`? Para passar isso nas `views` usamos `pk=post.pk`, onde post é o recém-criado blog post.
 
 Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá parecer agora, certo?
 
- ```python
+```python
     def post_new(request):
         if request.method == "POST":
             form = PostForm(request.POST)
@@ -230,7 +230,7 @@ Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá 
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    ```
+```
 
 Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/novo /, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
 
@@ -262,8 +262,9 @@ Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um j
 
 Abra `blog/templates/blog/post_detail.html` e adicione a linha:
 
-    ```python
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>```
+```python
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
     
 
 Agora o modelo estará parecido com:
@@ -294,7 +295,7 @@ Nós reutilizaremos o modelo `blog/templates/blog/post_edit.html`, então a últ
 
 Vamos abrir `blog/views.py` e adicionar no final do arquivo:
 
-    ```python
+```python
     def post_edit(request, pk):
         post = get_object_or_404(Post, pk=pk)
         if request.method == "POST":
@@ -307,19 +308,19 @@ Vamos abrir `blog/views.py` e adicionar no final do arquivo:
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
-    ```
+```
 
 Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. Primeira coisa: passamos um parâmetro extra da url `pk`. Em seguida: pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário passamos este post como uma `instância`, tanto quando salvamos o formulário:
 
-    ```python
+```python
     form = PostForm(request.POST, instance=post)
-    ```
+```
 
 como quando nós apenas abrimos um formulário com este post para editar:
 
-    ```python
+```python
     form = PostForm(instance=post)
-    ```
+```
 
 Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 

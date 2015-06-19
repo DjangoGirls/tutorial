@@ -69,7 +69,7 @@ Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da p
 
 Por exemplo, você pode por o elemento título de uma página web dentro da tag `<head>`. Veja:
 
-    html
+```html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -79,7 +79,7 @@ Por exemplo, você pode por o elemento título de uma página web dentro da tag 
             <p>It works!</p>
         </body>
     </html>
-    
+```    
 
 Salve o arquivo e atualize sua página.
 
@@ -111,7 +111,7 @@ Agora você pode se divertir um pouco tentando customizar o seu template! Aqui e
 
 Aqui está um exemplo de um template completo:
 
-    html
+```html
     <html>
         <head>
             <title>Django Girls blog</title>
@@ -134,7 +134,7 @@ Aqui está um exemplo de um template completo:
             </div>
         </body>
     </html>
-    
+```
 
 Nós criamos três seções `div` aqui.
 
