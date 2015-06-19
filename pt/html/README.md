@@ -39,12 +39,12 @@ Acabaram-se os erros! Parabéns :) Entretanto, nosso site não mostra nada a nã
 
 Adicione a seguinte linha dentro do template:
 
-    html
+```html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
+```
 
 Como nosso site se parece agora? Clique para descobrir: http://127.0.0.1:8000/
 

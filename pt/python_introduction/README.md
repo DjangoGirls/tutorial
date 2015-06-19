@@ -444,9 +444,9 @@ Para sair do interpretador Python que estamos usando, simplesmente digite o ~~~ 
 Isso vai colocá-lo no prompt de comando.
 
 Anteriormente, nós escolhemos um editor de código da seção do [editor de código][4]. Nós precisamos abrir o editor agora e escrever algum código em um novo arquivo:</p> 
-    python
+```python
     print('Hello, Django girls!')
-    
+```
 
 > **Nota** Você deve observar que uma das coisas mais legais sobre editores de código: cores! No console do Python, tudo era da mesma cor, mas agora você deve ver que a função de `Imprimir` é uma cor diferente da sequência de caracteres no seu interior. Isso é chamado de "realce de sintaxe", e é uma ajuda muito útil quando está programando. Perceba a cor das coisas e você vai obter uma dica para quando você esquecer de fechar uma seqüência de caracteres, ou fazer um erro de digitação em um nome de palavra-chave (como `def` em uma função, que veremos abaixo). Esta é uma das razões pelas quais que nós usamos um editor de código :)
 
@@ -489,9 +489,9 @@ Muitas coisas no código só podem ser executadas se determinadas condições fo
 
 Substitua o código no arquivo **python_intro.py** para isto:
 
-    python
+```python
     if 3 > 2:
-    
+```    
 
 Se salvou este e ele foi executado, nós veríamos um erro como este:
 
@@ -503,10 +503,10 @@ Se salvou este e ele foi executado, nós veríamos um erro como este:
 
 Python espera que fornecemos mais instruções que serão supostamente executadas caso a condição `3 > 2` venha a ser verdadeira (ou `True` nesse caso). Vamos tentar fazer o Python imprimir "It works!". Altere o seu código no seu arquivo **python_intro.py** para isto:
 
-    python
+```python
     if 3 > 2:
         print('It works!')
-    
+```
 
 Observe como podemos ter recuado a próxima linha de código por 4 espaços? Precisamos fazer isso para que Python sabe que código a ser executado se o código resulta em true. Você pode fazer um espaço, mas quase todos os programadores Python fazem com 4 para tornar as coisas um olhar puro. Um único tab também vai contar como 4 espaços.
 
@@ -520,12 +520,12 @@ Salvá-lo e execute novamente:
 
 Nos exemplos anteriores, o código foi executado somente quando as condições eram verdade. Mas o Python também tem instruções `elif` e `else`:
 
-    python
+```python
     if 5 > 2:
         print('5 is indeed greater than 2')
     else:
         print('5 is not greater than 2')
-    
+```
 
 Quando for executado irá imprimir:
 
@@ -535,7 +535,7 @@ Quando for executado irá imprimir:
 
 Se 2 for um número maior do que 5, então o segundo comando será executado. Fácil, né? Vamos ver como funciona o `elif`:
 
-    python
+```python
     name = 'Sonja'
     if name == 'Ola':
         print('Hey Ola!')
@@ -543,7 +543,7 @@ Se 2 for um número maior do que 5, então o segundo comando será executado. F�
         print('Hey Sonja!')
     else:
         print('Hey anonymous!')
-    
+``` 
 
 e executado:
 
@@ -570,13 +570,13 @@ Se lembra de funções como `len()` que você pode executar no Python? Bem, boas
 
 Uma função é um sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra-chave `def`, seguido de um nome para a função e opcionalmente uma lista de parâmetros. Vamos começar com uma função simples. Substitua o código no **python_intro.py** com o seguinte:
 
-    python
+```python
     def hi():
         print('Hi there!')
         print('How are you?')
     
     hi()
-    
+``` 
 
 Ok, nossa primeira função está pronta!
 
@@ -591,13 +591,13 @@ Vamos executa-lo agora e ver o que acontece:
 
 Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'hi' para quem o executa - com um name:
 
-    python
+```python
     def hi(name):
-    
+``` 
 
 Como você pode ver, agora demos um parâmetro chamado `name` para nossa função:
 
-    python
+```python
     def hi(name):
         if name == 'Ola':
             print('Hi Ola!')
@@ -607,7 +607,7 @@ Como você pode ver, agora demos um parâmetro chamado `name` para nossa funçã
             print('Hi anonymous!')
     
     hi()
-    
+``` 
 
 Como você pode ver, nós precisamos colocar dois espaços antes da função `print`, porque `if` precisa saber o que deve acontecer quando a condição for atendida. Vamos ver como isso funciona agora:
 
@@ -620,9 +620,9 @@ Como você pode ver, nós precisamos colocar dois espaços antes da função `pr
 
 Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que declaramos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Vamos corrigi-lo na parte inferior do arquivo:
 
-    python
+```python
     hi("Ola")
-    
+```
 
 e execute novamente:
 
@@ -632,9 +632,9 @@ e execute novamente:
 
 E se mudarmos o nome?
 
-    python
+```python
     hi("Sonja")
-    
+``` 
 
 e executá-lo:
 
@@ -651,12 +651,12 @@ Isto é incrível, não? Dessa maneira você não precisa se repetir (DRY - don'
 
 Vamos fazer algo mais inteligente..--existem mais que dois nomes, e escrever uma condição para cada um seria difícil, certo?
 
-    python
+```python
     def hi(name):
         print('Hi ' + name + '!')
     
     hi("Rachel")
-    
+``` 
 
 Vamos chamar o código agora:
 
@@ -674,21 +674,21 @@ Como mencionamos, os programadores são preguiçosos, não gostam de repetir as 
 
 Ainda se lembra das listas? Vamos fazer uma lista de garotas:
 
-    python
+```python
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    
+```
 
 Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fazer isso, então vamos usá-la em um loop:
 
-    python
+```python
     for name in girls:
-    
+```
 
 O ~~~ for ~~~ declaração se comporta da mesma forma para o ~~~ if ~~~ declaração, código abaixo esses dois precisam ser recuados quatro espaços.
 
 Aqui está o código completo que será salvo no arquivo:
 
-    python
+```python
     def hi(name):
         print('Hi ' + name + '!')
     
@@ -696,7 +696,7 @@ Aqui está o código completo que será salvo no arquivo:
     for name in girls:
         hi(name)
         print('Next girl')
-    
+```
 
 e quando executá-lo:
 

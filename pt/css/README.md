@@ -18,9 +18,10 @@ Foi escrito por programadores que trabalharam no Twitter e agora é desenvolvido
 
 Para instalar o Bootstrap, você precisa adicionar ao seu cabeçalho (na tag `<head>` dentro do seu arquivo `.html`)(`blog/templates/blog/post_list.html`):
 
-    ```html
+```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">```
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+```
     
 
 Isso não adiciona nenhum arquivo ao seu projeto. O código apenas aponta para arquivos que existem na internet. Apenas siga em frente, abra seu site e atualize a página. Aqui ele está!
@@ -111,7 +112,7 @@ Só dissemos que nosso modelo onde se encontra nosso arquivo CSS.
 
 Agora, seu arquivo deve ficar assim:
 
-    ```html
+```html
     {% load staticfiles %}
     <html>
         <head>
