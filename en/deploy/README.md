@@ -256,7 +256,7 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 <img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
-In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`
+In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`. Click the blue box with the check mark to save the path before moving on.
 
 > **Note** Substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
