@@ -183,7 +183,7 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
     [...]
-    Successfully installed django-1.8 whitenoise-1.0.6
+    Successfully installed django-1.8.2 whitenoise-2.0
 
 
 > **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
