@@ -183,7 +183,7 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
     [...]
-    Successfully installed django-1.8 whitenoise-1.0.6
+    Successfully installed django-1.8.2 whitenoise-2.0
 
 
 > **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
@@ -256,7 +256,7 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 <img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
-In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`
+In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`. Click the blue box with the check mark to save the path before moving on.
 
 > **Note** Substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
