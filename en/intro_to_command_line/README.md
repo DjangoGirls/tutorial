@@ -54,7 +54,7 @@ or
 
     > whoami
 
-And then hit 'Enter'. This is our result:
+And then hit `enter`. This is our result:
 
     $ whoami
     olasitarska
@@ -69,7 +69,7 @@ Each operating system has a slightly different set of commands for the command l
 
 ### Current directory
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit 'Enter':
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
     $ pwd
     /Users/olasitarska

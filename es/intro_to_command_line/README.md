@@ -56,7 +56,7 @@ o
     > whoami
 
 
-Y luego oprime la tecla Enter. Este es el resultado:
+Y luego oprime la tecla `enter`. Este es el resultado:
 
     $ whoami olasitarska
 
@@ -71,7 +71,7 @@ Cada sistema operativo tiene un conjunto diferente de comandos para la línea de
 
 ### Directorio actual
 
-Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este comando y oprime Enter:
+Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este comando y oprime `enter`:
 
     $ pwd
     /usuarios/olasitarska

@@ -12,7 +12,7 @@ Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na s
 
 Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
 
-Musimy otworzyć konsolę Pythona. Wpisz `python3` i wciśnij Enter.
+Musimy otworzyć konsolę Pythona. Wpisz `python3` i wciśnij `enter`.
 
     $ python3
     Python 3.4.2 (...)
@@ -31,7 +31,7 @@ Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla
 
 Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
 
-Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, jak `2 + 3`, i wciśnij 'Enter'.
+Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, jak `2 + 3`, i wciśnij `enter`.
 
     >>> 2 + 3
     5
@@ -101,14 +101,14 @@ OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
 *   **wierszu poleceń** - wpisywanie instrukcji (kodu) w wierszu poleceń Pythona powoduje wyświetlenie odpowiedzi przez Pythona
 *   **liczbach i stringach** - Python używa liczb w działaniach matematycznych oraz stringów dla obiektów tekstowych
-*   **operatorach** - takich jak + czy *, które tworzą nową wartość z tych już istniejących
+*   **operatorach** - takich jak + czy \*, które tworzą nową wartość z tych już istniejących
 *   **funkcjach** - takich jak upper() czy len(), wykonywania działań na obiektach.
 
 Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć. Gotowa na coś trudniejszego? Mamy nadzieję, że tak!
 
 ## Błędy
 
-Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób, jak długość naszego imienia? Wpisz `len(304023)` i wciśnij Enter:
+Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób, jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
 
     >>> len(304023)
     Traceback (most recent call last):
@@ -140,7 +140,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
 Widzisz? Nietrudne! Po prostu: "imie" równa się Ola.
 
-Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił poprzednio. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij Enter:
+Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił poprzednio. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij `enter`:
 
     >>> imie
     'Ola'

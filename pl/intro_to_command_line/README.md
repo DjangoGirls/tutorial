@@ -56,7 +56,7 @@ lub
     > whoami
 
 
-A następnie wciśnij Enter. Oto rezultat:
+A następnie wciśnij `enter`. Oto rezultat:
 
     $ whoami
     olasitarska
@@ -72,7 +72,7 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 ### Bieżący katalog
 
-Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij Enter:
+Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
 
     $ pwd
     /Users/olasitarska
@@ -146,7 +146,7 @@ C:\Users\olasitarska\Desktop
 
 Tak, to tutaj!
 
-> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
+> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 

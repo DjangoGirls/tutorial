@@ -133,7 +133,7 @@ A następnie opublikuj go za pomocą metody `publish`!
     >>> post.publish()
 
 
-Teraz spróbujmy jeszcze raz wyświetlić listę opublikowanych wpisów (wciśnij trzykrotnie klawisz ze strzałką do góry, a następnie zatwierdź klawiszem Enter):
+Teraz spróbujmy jeszcze raz wyświetlić listę opublikowanych wpisów (wciśnij trzykrotnie klawisz ze strzałką do góry, a następnie zatwierdź klawiszem `enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]

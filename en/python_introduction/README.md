@@ -10,7 +10,7 @@ To start playing with Python, we need to open up a *command line* on your comput
 
 Once you're ready, follow the instructions below.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit Enter.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
     $ python3
     Python 3.4.2 (...)
@@ -23,7 +23,7 @@ After running the Python command, the prompt changed to `>>>`. For us this means
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit Enter.
+But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
     >>> 2 + 3
     5
@@ -95,7 +95,7 @@ These are the basics of every programming language you learn. Ready for somethin
 
 ## Errors
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit Enter:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
     >>> len(304023)
     Traceback (most recent call last):
@@ -124,7 +124,7 @@ Let's say we want to create a new variable called `name`:
 
 You see? It's easy! It's simply: name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit Enter:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
     >>> name
     'Ola'
@@ -485,7 +485,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single tab will also count as 4 spaces.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
 Save it and give it another run:
 

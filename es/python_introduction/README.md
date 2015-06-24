@@ -12,7 +12,7 @@ Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en n
 
 Una vez que estés listo, sigue las siguientes instrucciones.
 
-Queremos abrir una consola de Python, así que escribe `python3` y pulsa Enter.
+Queremos abrir una consola de Python, así que escribe `python3` y pulsa `enter`.
 
     $ python3
     Python 3.4.2 (...)
@@ -26,7 +26,7 @@ Después de ejecutar el comando de Python, el cursor cambia a `>>>`. Para nosotr
 
 Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usar el atajo `Ctrl + Z` para Windows y `Ctrl + D` para Mac/Linux. Entonces no verás `>>>`.
 
-Pero ahora, no queremos salir de la consola de Python. Queremos aprender más sobre él. Vamos a empezar con algo muy simple. Por ejemplo, trata de escribir algo de matemáticas, como `2 + 3` y pulsa Enter.
+Pero ahora, no queremos salir de la consola de Python. Queremos aprender más sobre él. Vamos a empezar con algo muy simple. Por ejemplo, trata de escribir algo de matemáticas, como `2 + 3` y pulsa `enter`.
 
     >>> 2 + 3
     5
@@ -96,14 +96,14 @@ Ok, suficiente de strings. Hasta ahora has aprendido sobre:
 
 *   **la terminal** - teclea comandos (código) dentro de la terminal de Python para obtener resultados en preguntas en Python
 *   **números y strings** - en Python los números son usados para matemáticas y strings para objetos de texto
-*   **operadores** - como + y *, combinan valores para producir uno nuevo
+*   **operadores** - como + y \*, combinan valores para producir uno nuevo
 *   **funciones** como upper() y len(), realizan opciones sobre los objetos.
 
 Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje de programación. ¿Listo para algo un poco más fuerte? ¡Apostamos que lo estás!
 
 ## Errores
 
-Intentemos con algo nuevo. ¿Podríamos obtener la longitud de un número de la misma manera que obtuvimos la longitud de nuestro nombre? Teclea `len(304023)` y presiona Enter:
+Intentemos con algo nuevo. ¿Podríamos obtener la longitud de un número de la misma manera que obtuvimos la longitud de nuestro nombre? Teclea `len(304023)` y presiona `enter`:
 
     >>> len(304023)
     Traceback (most recent call last):
@@ -135,7 +135,7 @@ Supongamos que queremos crear una nueva variable llamada `nombre`:
 
 ¿Ves? ¡Es fácil! Es simplemente: name equivale a Ola.
 
-Como te has dado cuenta, el programa no regresa algo como lo hacia antes. Entonces, ¿Cómo sabemos que la variable existe realmente? Simplemente introduce `name` y pulsa Enter:
+Como te has dado cuenta, el programa no regresa algo como lo hacia antes. Entonces, ¿Cómo sabemos que la variable existe realmente? Simplemente introduce `name` y pulsa `enter`:
 
     >>> name
     'Ola'
@@ -507,7 +507,7 @@ Python da más instrucciones para lo que se suponen se ejecutará si la condici�
         print('It works!')
 
 
-¿Observa cómo nos hemos puesto una sangría en la siguiente línea de código por 4 espacios? Tenemos que hacer esto para que Python sepa que el código resulta ser verdad. Puedes hacer un espacio, pero casi todos los programadores Python hacen 4 para hacerlo más legible. Una solo Tab también contará como 4 espacios.
+¿Ves cómo nos hemos puesto una sangría en la siguiente línea de código con 4 espacios? Tenemos que hacer esto para que Python sepa que el código resulta ser verdad. Puedes hacer un espacio, pero casi todos los programadores Python hacen 4 para hacerlo más legible. Un solo `tab` también contará como 4 espacios.
 
 Guarda y ejecútalo de nuevo:
 

@@ -132,7 +132,7 @@ Y luego publicarlo con nuestro método de `publish`!
     >>> post.publish()
 
 
-Ahora intenta obtener lista de mensajes publicados otra vez (presiona 3 veces el botón de la flecha hacia arriba y pulse Enter):
+Ahora intenta obtener lista de mensajes publicados otra vez (presiona 3 veces el botón de la flecha hacia arriba y pulse `enter`):
 
     >>> Post.objects.filter(published_date__isnull=False)
     [<Post: Sample title>]

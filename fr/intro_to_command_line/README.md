@@ -33,12 +33,12 @@ Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos comman
 Si vous être sous Max ou Linux, vous verrez probablement un `$`, comme ça :
 
     $
-    
+
 
 Sur Windows, c'est un signe `>`, comme ça :
 
     >
-    
+
 
 Chaque commande commence par ce signe, puis un espace. Mais vous n'avez pas besoin de le taper, votre ordinateur le fait pour vous :)
 
@@ -49,18 +49,18 @@ Chaque commande commence par ce signe, puis un espace. Mais vous n'avez pas beso
 Commençons par quelque chose de simple. Tapez la commande suivante :
 
     $ whoami
-    
+
 
 ou
 
     > whoami
-    
+
 
 Et puis appuyez sur Entrée. Chez nous, ça donne ça :
 
     $ whoami
     olasitarska
-    
+
 
 Vous pouvez constater que l'ordinateur vient juste de vous montrer votre nom d'utilisateur. Pas mal, hein ? :)
 
@@ -76,13 +76,13 @@ Ce serait pas mal de savoir où on est, non ? Voyons voir. Tapez cette commande 
 
     $ pwd
     /Users/olasitarska
-    
+
 
 Si vous êtes sous Windows :
 
     > cd
     C:\Users\olasitarska
-    
+
 
 Vous verrez probablement quelque chose de similaire sur votre machine. Quand vous ouvrez une ligne de commande, vous démarrez habituellement dans le dossier personnel de votre utilisateur.
 
@@ -100,7 +100,7 @@ Du coup, y'a quoi dans ce dossier personnel ? Ce serait pas mal de le savoir. Es
     Musique
     Téléchargements
     ...
-    
+
 
 Windows :
 
@@ -111,7 +111,7 @@ Windows :
     05/08/2014 07:28 PM <DIR>      Musique
     05/08/2014 07:28 PM <DIR>      Téléchargements
     ...
-    
+
 
 * * *
 
@@ -120,28 +120,28 @@ Windows :
 Et si on allait voir dans notre dossier Bureau ?
 
     $ cd Bureau
-    
+
 
 Windows :
 
     > cd Bureau
-    
+
 
 Vérifions que ça a bien changé :
 
     $ pwd
     /Users/olasitarska/Bureau
-    
+
 
 Windows :
 
     > cd
     C:\Users\olasitarska\Bureau
-    
+
 
 Et voilà !
 
-> Pro tip : si vous tapez `cd B` puis que vous appuyez sur la touche `TAB`, la ligne de commande va automatiquement compléter le reste du nom, pour vous permettre d'aller plus vite. Si plusieurs dossiers commencent par un "B", appuyez sur `TAB` deux fois pour avoir une liste des options.
+> Pro tip : si vous tapez `cd B` puis que vous appuyez sur la touche `tab`, la ligne de commande va automatiquement compléter le reste du nom, pour vous permettre d'aller plus vite. Si plusieurs dossiers commencent par un "B", appuyez sur `tab` deux fois pour avoir une liste des options.
 
 * * *
 
@@ -150,12 +150,12 @@ Et voilà !
 Et si on créait un dossier Django Girls sur votre bureau ? Vous pouvez faire comme ça :
 
     $ mkdir djangogirls
-    
+
 
 Windows :
 
     > mkdir djangogirls
-    
+
 
 Cette petite commande crée un dossier nommé `djangogirls` sur votre bureau. Vous pouvez vérifier qu'il est bien là en regardant votre bureau, ou en lançant la commande `ls` ou `dir` ! Essayez donc :)
 
@@ -173,7 +173,7 @@ Petit défi pour vous : dans votre nouveau dossier `djangogirls`, créez un doss
     $ mkdir test
     $ ls
     test
-    
+
 
 Windows :
 
@@ -181,7 +181,7 @@ Windows :
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
-    
+
 
 Félicitation ! :)
 
@@ -194,12 +194,12 @@ Supprimons tout ce qu'on vient de faire, histoire d'éviter de laisser du bazar.
 D'abord, revenons au Bureau :
 
     $ cd ..
-    
+
 
 Windows :
 
     > cd ..
-    
+
 
 Faire un `cd` vers `..` permet de changer le dossier courant vers le dossier parent (c'est à dire le dossier qui contient le dossier courant).
 
@@ -207,48 +207,48 @@ Vérifiez où vous êtes :
 
     $ pwd
     /Users/olasitarska/Bureau
-    
+
 
 Windows :
 
     > cd
     C:\Users\olasitarska\Bureau
-    
+
 
 Maintenant, supprimons le dossier `djangogirls`.
 
 > **Attention** : Supprimer des fichiers avec `del`, `rmdir` ou `rm` est irrévocable, ce qui veut dire que *les fichiers supprimés sont perdus à jamais* ! Du coup, faites très attention avec cette commande.
 
     $ rm -r djangogirls
-    
+
 
 Windows :
 
     > rmdir /S djangogirls
     djangogirls, Are you sure <Y/N>? Y
-    
+
 
 Et voilà. Pour être sûrs que le dossier a bien été supprimé, vérifions :
 
     $ ls
-    
+
 
 Windows :
 
     > dir
-    
+
 
 ### Sortir
 
 C'est tout pour le moment ! Vous pouvez fermer maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses. :)
 
     $ exit
-    
+
 
 Windows :
 
     > exit
-    
+
 
 Cool, non ? :)
 
