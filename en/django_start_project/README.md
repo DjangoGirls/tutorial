@@ -22,7 +22,7 @@ In your MacOS or Linux console you should run the following command; **don't for
 
 On Windows; **don't forget to add the period (or dot) `.` at the end**:
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+    (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference)
 
