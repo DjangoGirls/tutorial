@@ -12,7 +12,7 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
     blog
        └── forms.py
-    
+
 
 Ok, vamos abri-lo e escrever nele o seguinte:
 
@@ -27,7 +27,7 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ('title', 'text',)
 ```
-    
+
 
 Primeiro precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, nosso modelo `Post` (`from .models import Post`).
 
@@ -101,7 +101,7 @@ urlpatterns = [
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]
-``` 
+```
 
 Após recarregar o site, nós veremos um `AttributeError`, desde que nós não temos a visão `post_new` implementada. Vamos adicioná-la agora.
 
@@ -111,7 +111,7 @@ Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o re
 
 ``` python
 from .forms import PostForm
-``` 
+```
 
 e nossa *view*:
 
@@ -119,7 +119,7 @@ e nossa *view*:
 def post_new(request):
     form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
-``` 
+```
 
 Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Nós iremos voltar para esta *view*, mas por agora vamos criar rapidamente um template para o formulário.
 
@@ -143,7 +143,7 @@ Beleza, então vamos ver como ficou o HTML `post_edit.html`:
 
 {% block content %}
     <h1>New post</h1>
-    <form method="POST" class="post-form">{% raw %}{% csrf_token %}{% endraw %}
+    <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Guardar</button>
     </form>
@@ -181,13 +181,13 @@ if request.method == "POST":
     [...]
 else:
     form = PostForm()
-``` 
+```
 
 Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que veem do formulário, certo? Nós iremos fazer assim:
 
 ```python
 form = PostForm(request.POST)
-```   
+```
 
 Fácil! Próxima coisa é verificar se o formulário está correto(todos os campos requeridos são definidos e valores incorretos não serão salvos). Fazemos isso com `form.is_valid()`.
 
@@ -265,7 +265,7 @@ Abra `blog/templates/blog/post_detail.html` e adicione a linha:
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
-    
+
 
 Agora o modelo estará parecido com:
 
@@ -283,7 +283,7 @@ Agora o modelo estará parecido com:
     <p>{{ post.text|linebreaks }}</p>
 {% endblock %}
 ```
-    
+
 
 Em `blog/urls.py` adicionamos esta linha:
 
@@ -345,19 +345,19 @@ Se você precisar de mais informações sobre formulários do Django você deve 
 Vamos ver se tudo isso funciona na PythonAnywhere. Tempo para outro deploy!
 
 *   Primeiro, commit o seu novo código e coloque no Github
-    
+
 ```bash
-$ git status 
-$ git add -A . 
-$ git status 
-$ git commit -m "Added views to create/edit blog post inside the site." 
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
 ```
 
 *   Então, em um [console PythonAnywhere Bash][7]:
-    
+
 ```bash
-$ cd my-first-blog 
+$ cd my-first-blog
 $ git pull
 ```
 
