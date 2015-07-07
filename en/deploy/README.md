@@ -18,23 +18,9 @@ Git is a "version control system" used by a lot of programmers - software which 
 
 ## Installing Git
 
-### Windows
+> **Note** If you already did the Installation steps, no need to do this again - you can skip to the next section and start creating your Git repository.
 
-You can download Git from [git-scm.com](http://git-scm.com/). You can hit "next next next" on all steps except for one; in the 5th step entitled "Adjusting your PATH environment", choose "Run Git and associated Unix tools from the Windows command-line" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
-
-### MacOS
-
-Download Git from [git-scm.com](http://git-scm.com/) and just follow the instructions.
-
-
-### Linux
-
-If it isn't installed already, git should be available via your package manager, so try:
-
-    sudo apt-get install git
-    # or
-    sudo yum install git
-
+{% include "deploy/install_git.md" %}
 
 ## Starting our Git repository
 
@@ -93,7 +79,9 @@ And finally we save our changes. Go to your console and run these commands:
 
 ## Pushing our code to GitHub
 
-Go to [GitHub.com](http://www.github.com) and sign up for a new, free user account. Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Go to [GitHub.com](http://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+
+Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 <img src="images/new_github_repo.png" />
 
@@ -128,12 +116,9 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 # Setting up our blog on PythonAnywhere
 
-Next it's time to sign up for a free "Beginner" account on PythonAnywhere. 
+> **Note** You might have already created a PythonAnywhere account earlier during the install steps - if so, no need to do it again.
 
-* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
-
-
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so either choose your own nickname, or a name for what your blog is all about.
+{% include "deploy/signup_pythonanywhere.md" %}
 
 
 ## Pulling our code down on PythonAnywhere
