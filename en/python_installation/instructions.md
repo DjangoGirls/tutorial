@@ -18,7 +18,7 @@ One thing to watch out for:  on the second screen of the installation wizard, ma
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
     $ python3 --version
-    Python 3.4.2
+    Python 3.4.3
 
 If you don't have Python installed, or if you want a different version, you can install it as follows:
 
@@ -46,16 +46,15 @@ Use this command in your console:
 
 ### OS X
 
-You need to go to the website https://www.python.org/downloads/release/python-342/ and download the Python installer:
+You need to go to the website https://www.python.org/downloads/release/python-343/ and download the Python installer:
 
-* Download the *Mac OS X 64-bit/32-bit installer* *DMG* file,
-* Double click to open it,
-* Double click *Python.mpkg* to run the installer.
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.4.3-macosx10.6.pkg* to run the installer.
 
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
     $ python3 --version
-    Python 3.4.2
+    Python 3.4.3
 
 ----
 
