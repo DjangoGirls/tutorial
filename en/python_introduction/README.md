@@ -13,8 +13,8 @@ Once you're ready, follow the instructions below.
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
     $ python3
-    Python 3.4.2 (...)
-    Type "copyright", "credits" or "license" for more information.
+    Python 3.4.3 (...)
+    Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
 ## Your first Python command!
@@ -23,7 +23,7 @@ After running the Python command, the prompt changed to `>>>`. For us this means
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-But now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
     >>> 2 + 3
     5
@@ -276,16 +276,16 @@ What happens if we ask Python the value of a key that doesn't exist? Can you gue
 
 Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-When to use a dictionary or a list? Well, that's a good point to ponder on. Just have a solution in mind before looking at the answer in the next line.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to the dictionary after it is created, like:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to a dictionary after it is created, like:
 
     >>> participant['favorite_language'] = 'Python'
 
-Like lists, using `len()` method on the dictionaries, returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+Like lists, using the `len()` method on the dictionaries returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
 
     >>> len(participant)
     4
@@ -409,7 +409,7 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 
 # Save it!
 
-So far we've been writing all our python code in the interpreter, which limits us to one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
 - Open up our code editor of choice
@@ -429,12 +429,12 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour, now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings, or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
+> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour, now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
 
 
-Obviously, you're a pretty seasoned python developer now, so feel free to write some code that you've learned today.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, the important part here is to make sure the file ends in __.py__, this tells our computer that this is a **python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **python executable file** and Python can run it.
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
@@ -452,12 +452,12 @@ And on windows, it will be like this:
 
 If you get stuck, just ask for help.
 
-and then use Python to execute the code in the file like this:
+Now use Python to execute the code in the file like this:
 
     $ python3 python_intro.py
     Hello, Django girls!
 
-Alright! You just ran your first python program that was saved to a file. Feel awesome?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
 You can now move on to an essential tool in programming:
 
@@ -492,7 +492,7 @@ Save it and give it another run:
     $ python3 python_intro.py
     It works!
 
-### What if not?
+### What if a condition isn't True?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
@@ -503,7 +503,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is ran it will print out:
+When this is run it will print out:
 
     $ python3 python_intro.py
     5 is indeed greater than 2
@@ -540,9 +540,9 @@ Time for the last part of this chapter!
 
 ## Your own functions!
 
-Remember functions like `len()` that you can execute in Python? Well, good news, you will learn how to write your own functions now!
+Remember functions like `len()` that you can execute in Python? Well, good news - you will learn how to write your own functions now!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and it can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
 ```python
 def hi():
