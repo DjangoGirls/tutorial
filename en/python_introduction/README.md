@@ -440,15 +440,15 @@ With the file saved, it's time to run it! Using the skills you've learned in the
 
 On a Mac, the command will look something like this:
 
-    cd /Users/<your_name>/Desktop
+    $ cd /Users/<your_name>/Desktop
 
 On Linux, it will be like this (the word "Desktop" might be translated to your language):
 
-    cd /home/<your_name>/Desktop
+    $ cd /home/<your_name>/Desktop
 
 And on windows, it will be like this:
 
-    cd C:\Users\<your_name>\Desktop
+    > cd C:\Users\<your_name>\Desktop
 
 If you get stuck, just ask for help.
 
