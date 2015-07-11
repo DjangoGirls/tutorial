@@ -156,16 +156,16 @@ This will pull down a copy of your code onto PythonAnywhere. Check it out by typ
 
 Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
-    20:20 ~ $ cd my-first-blog
+   $ cd my-first-blog
 
-    20:20 ~ $ virtualenv --python=python3.4 myvenv
+   $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
 
-    20:20 ~ $ source myvenv/bin/activate
+   $ source myvenv/bin/activate
 
-    (mvenv)20:20 ~ $  pip install django whitenoise
+    (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
@@ -185,7 +185,7 @@ We'll find out a bit more about static files later in the tutorial, when we edit
 For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. Mostly, these are the static files that make the admin site look pretty at the moment.
 
 
-    20:20 ~ $ python manage.py collectstatic
+    $ python manage.py collectstatic
 
     You have requested to collect static files at the destination
     location as specified in your settings:
@@ -214,13 +214,13 @@ Here's another thing that's different between your own computer and the server -
 So we initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
 
-    (mvenv)20:20 ~ $ python manage.py migrate
+    (mvenv) $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
 
 
-    (mvenv)20:20 ~ $ python manage.py createsuperuser
+    (mvenv) $ python manage.py createsuperuser
 
 
 ## Publishing our blog as a web app
