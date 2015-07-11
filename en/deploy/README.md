@@ -156,19 +156,21 @@ This will pull down a copy of your code onto PythonAnywhere. Check it out by typ
 
 Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
-   $ cd my-first-blog
+```
+$ cd my-first-blog
 
-   $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
-    [...]
-    Installing setuptools, pip...done.
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
 
-   $ source myvenv/bin/activate
+$ source myvenv/bin/activate
 
-    (mvenv) $  pip install django whitenoise
-    Collecting django
-    [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
+(mvenv) $  pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
+```
 
 
 > **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
