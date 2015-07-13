@@ -108,9 +108,9 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) - so only an empty string will match. And that's correct, because in Django url resolvers, 'http://127.0.0.1:8000/' is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+As you can see, we're now assigning a `view` called `post_list` to `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) - so only an empty string will match. And that's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
-The last part `name='post_list'` is the name of the url that will be used to identify the view. This can be the same as the name of the view but it can also be something completelly different. We will be using the named urls later in the project but it is important to name each url in the app and to try to keep the names of urls unique and easy to remember.
+The last part `name='post_list'` is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project but it is important to name each URL in the app and to try to keep the names of URLs unique and easy to remember.
 
 Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
 
