@@ -124,7 +124,7 @@ Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler
 Nous avons pour cela besoin de créer un fichier `post_edit.html` dans le dossier `blog/templates/blog`. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses:
 
 *   Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser `{{ form.as_p }}`.
-*   La ligne précédente va avoir besoin d'être enveloppée dans des balises HTML : `<form method="POST">...</form>`
+*   La ligne précédente va avoir besoin d'être enveloppée dans des balises HTML: `<form method="POST">...</form>`
 *   Nous avons besoin d'un bouton `Save (sauvegarder)`. Nous allons le créer à l'aide d'un bouton HTML: `<button type="submit">Save</button>`
 *   Enfin, nous avons besoin d'ajouter `{% raw %}{% csrf_token %}{% endraw %}` juste après la balise `<form ...>`. C'est très important: c'est ce qui va permettre de sécuriser votre formulaire! De toute manière, si vous avez oublié ce petit morceau, Django va se plaindre lors de la sauvegarde du formulaire:
 
@@ -200,7 +200,7 @@ Enfin, ce serait génial si nous pouvions tout de suite obtenir la page `post_de
     from django.shortcuts import redirect
     
 
-Ajoutez-le au tout début de votre page. Maintenant, nous allons ajouter la ligne qui signifie : "aller à la page `post_detail` pour le nouveau post qui vient d'être créé".
+Ajoutez-le au tout début de votre page. Maintenant, nous allons ajouter la ligne qui signifie: "aller à la page `post_detail` pour le nouveau post qui vient d'être créé".
 
     return redirect('blog.views.post_detail', pk=post.pk)
     

@@ -175,7 +175,7 @@ Enfin, sauvegardons nos changements. Une nouvelle fois, prenez votre console et 
 
 Nous allons rendre votre blog accessible en ligne à l'adresse `[nom de votre blog].herokuapp.com`. Pour cela, il va être nécessaire de choisir un nom qui n'est pas encore pris. Ce nom n'a pas besoin d'être en lien avec l'application `blog` de Django, `mysite`, où n'importe quoi d'autre que nous avons pu créer jusqu'à présent. Vous pouvez choisir le nom que vous voulez, tant qu'il est conforme aux règles strictes définies par Heroku: pas de majuscules, pas d'accents, pas de nombres ni de tirets (`-`).
 
-Si vous ne savez pas quoi prendre, pourquoi ne pas chercher quelque chose en rapport avec votre nom ou votre surnom ? Une fois que vous avez choisi, lancez cette commande en remplaçant `djangogirlsblog` par le nom de votre application:
+Si vous ne savez pas quoi prendre, pourquoi ne pas chercher quelque chose en rapport avec votre nom ou votre surnom? Une fois que vous avez choisi, lancez cette commande en remplaçant `djangogirlsblog` par le nom de votre application:
 
     $ heroku create djangogirlsblog
     

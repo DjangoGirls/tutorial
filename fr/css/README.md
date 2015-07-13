@@ -18,9 +18,11 @@ Il fut codé par d'anciens programmeurs de chez Twitter et est maintenant dével
 
 Pour installer Bootstrap, vous avez besoin d'ajouter ceci dans le `<head>` de votre fichier `.html` (`blog/templates/blog/post_list.html`):
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+```
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+```
     
 
 En faisant ceci, vous n'ajoutez aucun nouveau fichier à votre projet: vous reliez simplement des fichiers hébergés sur Internet à votre projet. Essayez maintenant de rafraichir votre page. Et voilà!
@@ -41,27 +43,33 @@ Comme la CSS est un fichier statique, nous devons tout d'abord configurer les fi
 
 Tout d'abord, nous devons créer un dossier pour y ranger nos fichiers statiques. Allez-y: créez un dossier appelé `static` à l'intérieur de votre dossier `djangogirls`.
 
-    djangogirls
-    ├─── static
-    └─── manage.py
+```
+djangogirls
+├─── static
+└─── manage.py
+```
     
 
 Ouvrez le fichier `mysite/settings.py` et allez à la fin de celui-ci pour ajouter les lignes suivantes:
 
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static"),
-    )
+```
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+```
     
 
 Maintenant, Django sait où se trouvent vos fichiers statiques.
 
 ## Votre première CSS!
 
-Nous allons créer un fichier CSS afin de personnaliser notre page web. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prêt·e·s ?
+Nous allons créer un fichier CSS afin de personnaliser notre page web. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prêt·e·s?
 
-    static
-    └─── css
-            blog.css
+```
+static
+└─── css
+        blog.css
+```
     
 
 Maintenant, écrivons un peu de CSS: ouvrez le fichier `static/css/blog.css` dans votre éditeur de texte.
@@ -85,8 +93,9 @@ Ajoutez ceci dans votre fichier `static/css/blog.css`:
 
 Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. Les différents éléments sont identifiés par leur nom (`a`, `h1`, `body`), l’attribut `class` ou l’attribut `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. Par exemple, l'élément suivant peut être identifié par CSS à la fois par son nom `a`, sa classe `external_link`, ou son identifiant `link_to_wiki_page`:
 
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-    
+```html
+<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```    
 
 Nous vous conseillons d'en apprendre un peu plus sur les sélecteurs CSS sur [w3schools][4].
 
@@ -99,7 +108,7 @@ Afin que nos modifications fonctionnent, nous devons aussi signaler à notre tem
 ```
     
 
-Hop, nous chargeons les fichiers statiques:). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés: en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci:
+Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés: en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -144,9 +153,11 @@ Ok, on sauvegarde et on rafraîchit la page!
 
 Bravo! Peut-être que nous pourrions un peu aérer notre page web en augmentant la marge du côté gauche? Essayons pour voir!
 
-    body {
-        padding-left: 15px;
-    }
+```
+body {
+    padding-left: 15px;
+}
+```
     
 
 Ajoutez ceci à votre fichier CSS, sauvegardez-le et voyons le résultat!
@@ -157,17 +168,20 @@ Ajoutez ceci à votre fichier CSS, sauvegardez-le et voyons le résultat!
 
 Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans la partie `<head>` de votre fichier `blog/templates/blog/post_list.html`:
 
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    
+```
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```    
 
 Cette ligne nous permet d'importer la police de caractères *Lobster* depuis Google Fonts (https://www.google.com/fonts).
 
 Maintenant, ajouter la ligne `font-family: 'Lobster';` dans votre fichier CSS `static/css/blog.css`. Attention à bien la placer à l'intérieur du block déclaratif `h1 a` (c'est à dire entre les accolades `{` et `}`). Ensuite, rechargez la page. Votre code doit ressembler à ceci:
 
-    h1 a {
-        color: #FCA205;
-        font-family: 'Lobster';
-    }
+```
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+```
     
 
 ![Figure 14.3][7]
@@ -180,70 +194,75 @@ Comme nous l'avions mentionné précédemment, il existe une notion de classe da
 
 Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci:
 
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+```
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+```
     
 
 Maintenant, ajouter la classe `post` à votre `div` contenant votre blog post.
 
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
-    </div>
+```
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaks }}</p>
+</div>
+```
     
 
 Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs. Les sélecteurs qui commencent par `.` sont reliés aux classes. Le net regorge de bons tutoriels sur CSS qui vous permettront de comprendre le code que nous allons maintenant rajouter à notre fichier. Comme nous n'avons malheureusement pas le temps d'entrer dans les détails, copiez le code suivant dans votre fichier `mysite/static/css/blog.css`:
 
-    .page-header {
-        background-color: #ff9400;
-        margin-top: 0;
-        padding: 20px 20px 20px 40px;
-    }
-    
-    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-        color: #ffffff;
-        font-size: 36pt;
-        text-decoration: none;
-    }
-    
-    .content {
-        margin-left: 40px;
-    }
-    
-    h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
-    }
-    
-    .date {
-        float: right;
-        color: #828282;
-    }
-    
-    .save {
-        float: right;
-    }
-    
-    .post-form textarea, .post-form input {
-        width: 100%;
-    }
-    
-    .top-menu, .top-menu:hover, .top-menu:visited {
-        color: #ffffff;
-        float: right;
-        font-size: 26pt;
-        margin-right: 20px;
-    }
-    
-    .post {
-        margin-bottom: 70px;
-    }
-    
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
-    }
-    
+```
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+``` 
 
 Nous allons maintenant nous intéresser au code concernant les posts. Remplacer le code suivant:
 

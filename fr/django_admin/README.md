@@ -4,18 +4,20 @@ Pour ajouter, éditer et supprimer les posts que nous venons de modéliser, nous
 
 Ouvrons le fichier `blog/admin.py` et remplaçons son contenu par ceci:
 
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
-    
+```
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```    
 
 Comme vous pouvez le voir, nous importons le modèle « Post » que nous avons écrit dans le chapitre précédent. Afin que notre modèle soit visible dans l'interface d'administration, nous avons besoin d'enregistrer notre modèle à l'aide de `admin.site.register(Post)`.
 
 Ok, allons voir notre modèle « Post ». N'oubliez pas de lancer le server web en tapant `python manage.py runserver` dans la console. À l'aide de votre navigateur, allez à l'adresse suivante:
 
-    http://127.0.0.1:8000/admin/
-    
+```
+http://127.0.0.1:8000/admin/
+``` 
 
 Vous verrez une page de login qui ressemble à celle-ci:
 
@@ -25,13 +27,14 @@ Vous verrez une page de login qui ressemble à celle-ci:
 
 Afin de pouvoir vous connecter, vous avez besoin de créer un *superuser ou superutilisateur*. C'est un utilisateur qui peut contrôler l'intégralité du site. Reprenez votre ligne de commande et taper `python manage.py createsuperuser` et appuyez sur entrée. Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe lorsqu'on vous le demande. Ce qui apparaît dans votre console doit ressembler à ceci, au détail près que « username » et « email » doivent être ceux que vous avez entrés:
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
+```
+(myvenv) ~/djangogirls$ python manage.py createsuperuser
+Username: admin
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
+``` 
 
 Retournez dans votre navigateur et connectez-vous en tant que superutilisateur grâce à l'utilisateur que vous venez de créer. Vous devriez accéder à l'interface d'administration de Django.
 

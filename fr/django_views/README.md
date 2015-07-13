@@ -1,4 +1,4 @@
-# Créons nos vues Django !
+# Créons nos vues Django!
 
 Il est enfin temps de se débarrasser du bug que nous avons créé dans le chapitre précédent :)
 
@@ -8,14 +8,14 @@ Les vues sont placées dans le fichier `views.py`. Nous allons créer nos *vues*
 
 ## blog/views.py
 
-Ok, allons-y ! Ouvrons ce fichier pour voir ce qu'il contient :
+Ok, allons-y! Ouvrons ce fichier pour voir ce qu'il contient:
 
     from django.shortcuts import render
     
     # Create your views here.
     
 
-Il n'y pas encore grand chose dans ce fichier. La vue la plus simple que l'on peut créer ressemble à ceci :
+Il n'y pas encore grand chose dans ce fichier. La vue la plus simple que l'on peut créer ressemble à ceci:
 
     def post_list(request):
     
@@ -26,12 +26,12 @@ Comme vous pouvez le voir, nous avons créé une méthode (`def`) appelé `post_
 
 Sauvegardez votre fichier et allez à l'adresse http://127.0.0.1:8000/ pour voir ce qui s'affiche maintenant.
 
-Une autre erreur ! Voyons ce qu'elle nous dit :
+Une autre erreur! Voyons ce qu'elle nous dit:
 
 ![Erreur][1]
 
  [1]: images/error.png
 
-Celle-là est plutôt simple : *TemplateDoesNotExist*. Corrigeons ça en créant un template dans la section suivante !
+Celle-là est plutôt simple: *TemplateDoesNotExist*. Corrigeons ça en créant un template dans la section suivante!
 
-> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/en/1.7/topics/http/views/
+> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle: https://docs.djangoproject.com/en/1.7/topics/http/views/
