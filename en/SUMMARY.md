@@ -23,5 +23,4 @@
 * [Template extending](template_extending/README.md)
 * [Extend your application](extend_your_application/README.md)
 * [Django Forms](django_forms/README.md)
-* [Domain](domain/README.md)
 * [What's next?](whats_next/README.md)
