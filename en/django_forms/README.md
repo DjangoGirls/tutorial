@@ -44,7 +44,7 @@ So once again we will create: a link to the page, a URL, a view and a template.
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
 ```html
-<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 Note that we want to call our new view `post_new`.
@@ -63,7 +63,7 @@ After adding the line, your html file should now look like this:
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div class="content container">
@@ -95,8 +95,8 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]
 ```
