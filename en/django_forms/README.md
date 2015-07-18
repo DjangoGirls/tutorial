@@ -125,7 +125,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
-- we have to display the form. We can do that for example with a simple `{{ form.as_p }}`.
+- we have to display the form. We can do that for example with a simple `{% raw %}{{ form.as_p }}{% endraw %}`.
 - the line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`
 - we need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`
 - and finally just after the opening `<form ...>` tag we need to add `{% raw %}{% csrf_token %}{% endraw %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
