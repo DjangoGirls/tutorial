@@ -18,7 +18,7 @@ To print a variable in Django template, we use double curly brackets with the va
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template (replace the second and third pair of `<div></div>` tags with `{{ posts }}` line), save the file and refresh the page to see the results:
+Try this in your `blog/templates/blog/post_list.html` template (replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`), save the file and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
