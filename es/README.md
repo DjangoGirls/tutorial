@@ -10,11 +10,11 @@ This tutorial has been translated from English to Spanish by a group of awesome 
 
 ## Introducción
 
-¿Te has sentido que el mundo está cada vez más cercano a la tecnología y de cierto modo te has quedado atrás? ¿Te has preguntado cómo crear un sitio web pero nunca has tenido la suficiente motivación para empezar? ¿Has pensado que el mundo del software is demasiado complicado para intentar hacer algo por tu cuenta?
+¿Te has sentido que el mundo está cada vez más cercano a la tecnología y de cierto modo te has quedado atrás? ¿Te has preguntado cómo crear un sitio web pero nunca has tenido la suficiente motivación para empezar? ¿Has pensado que el mundo del software es demasiado complicado para intentar hacer algo por tu cuenta?
 
-Bueno, Tenemos buenas noticias para ti! programar no es tan difícil como aparenta y queremos mostrarte cuán divertido que puede llegar a ser.
+Bueno, Tenemos buenas noticias para ti! programar no es tan difícil como aparenta y queremos mostrarte cuán divertido puede llegar a ser.
 
-Este tutorial no convertirá mágicamente en un programador. Sí quieres ser buena en eso, necesitaras meses o inclusos años de aprendizaje y práctica. sin embargo queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicarte en pequeñas partes tan bien como podamos, para que no te sientas intimidada por la tecnología.
+Este tutorial no te convertirá mágicamente en una programadora. Sí quieres ser buena en eso, necesitaras meses o incluso años de aprendizaje y práctica. sin embargo queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicarte en pequeñas partes tan bien como podamos, para que no te sientas intimidada por la tecnología.
 
 ¡Esperamos poder hacerte amar la tecnología tanto como nosotras lo hacemos!
 
@@ -29,7 +29,7 @@ se verá (más o menos) como ésta:
  [2]: images/application.png
 
 > Sí estás siguiendo este tutorial por tu cuenta y no tienes nadie que te ayude a resolver algún problema, tenemos un chat para ti: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-. ¡Hemos pedido a nuestros coaches y asistentes anteriores estar ahi de vez en cuando para ayudar a otros con el tutorial! ¡No dudes dejar tus preguntas allí!
+. ¡Hemos pedido a nuestr@s coaches y asistentes anteriores estar ahi de vez en cuando para ayudar a otr@s con el tutorial! ¡No dudes dejar tus preguntas allí!
 
 Esta bien, [empecemos desde el inicio...][3]
 
