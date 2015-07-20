@@ -6,6 +6,9 @@
 
 > Este trabajo está bajo la licencia internacional Creative Commons Attribution-ShareAlike 4.0. Para ver una copia de esta licencia, visita el siguiente enlace http://creativecommons.org/licenses/by-sa/4.0/
 
+## Translation
+This tutorial has been translated from English into Spanish by a wonderful group of volunteers. Special thanks goes to Victoria Martinez de la Cruz, Kevin Morales, Joshua Aranda, Silvia Frias, Leticia, Andrea Gonzalez, Adrian Manjarres, Rodrigo Caicedo, Maria Chavez, Marcelo Nicolas Manso, Rosa Durante, Moises, Israel Martinez Vargas, JuanCarlos_, N0890Dy, Ivan Yivoff, Khaterine Castellano, Erick Navarro, cyncyncyn, ZeroSoul13, Erick Aguayo, Ernesto Rico-Schmidt, Miguel Lozano, osueboy, dynarro and Geraldina Garcia Alvarez.
+
 ## Introducción
 
 ¿Alguna vez has sentido que el mundo está cada vez más cercano a la tecnología y de cierto modo te has quedado atrás? ¿Alguna vez te has preguntado cómo crear un sitio web pero nunca has tenido la suficiente motivación para empezar? ¿Has pensado alguna vez que el mundo del software es demasiado complicado para ti como para intentar hacer algo por tu cuenta?
