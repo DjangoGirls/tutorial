@@ -11,7 +11,7 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 ## Crea un enlace en la plantilla
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así:
-
+```
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -25,12 +25,12 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
             </div>
         {% endfor %}
     {% endblock content %}
-    
+```    
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` dentro del enlace:
-
+```
     <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```    
 
 Es hora de explicar el misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como probablemente sospeches, la notación `{% %}` significa que estamos utilizando Django template tags. ¡Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!
 
@@ -48,14 +48,14 @@ Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-    from django.conf.urls import include, url
+``` from django.conf.urls import include, url
     from . import views
     
     urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
     ]
-    
+``` 
 
 Ese da un poco de miedo, pero no te preocupes - lo explicaremos para ti: comienza con `^` otra vez, "el principio". `post/` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. `(?P<pk>[0-9]+)` - esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no una letra (todo debería estar entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Entonces algo como `http://127.0.0.1:8000/post//` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! - `/` - entonces necesitamos **/** de nuevo - `$` - ¡"el final"!
 
@@ -103,10 +103,10 @@ Deberíamos abrir `blog/views.py` y agregar el siguiente código:
 
 Cerca de otras líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
-    def post_detail(request, pk):
+``` def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
-    
+```    
 
 Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
@@ -126,6 +126,7 @@ Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 
 Se verá así:
 
+```
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -139,7 +140,7 @@ Se verá así:
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endblock %}
-    
+```    
 
 Una vez más estamos extendiendo `base.html`. En el bloque `content` queremos mostrar la fecha de publicación (si existe), título y texto de nuestros posts. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
@@ -156,13 +157,13 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 ## Una cosa más: ¡Tiempo de implementación!
 
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
-
+```
     $ git status
     $ git add -A .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
-    
+```    
 
 *   Luego, en una [consola Bash de PythonAnywhere][8]
     

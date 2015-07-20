@@ -450,9 +450,9 @@ Anteriormente, elegimos un editor de código en la sección de [Editor de códig
 
  [2]: code_editor/README.md
 
-    python
+``` python
     print('Hello, Django girls!')
-    
+```
 
 > **Nota** Deberías notar una de las cosas más geniales de los editores de código: ¡los colores! En la consola de Python, todo era del mismo color, pero ahora puedes ver que la función `print` es de un color diferente del string que está adentro de ella. Eso se denomina "resaltado de sintaxis", y es una gran ayuda cuando estás programando. Presta atención a los colores, y obtendrás una pista cuando te olvides de cerrar un string o cometes un error al escribir una palabra clave (como el `def` en una función, que veremos abajo). Esta es una de las razones por las cuales usar un editor de código :)
 
@@ -495,9 +495,9 @@ Un montón de cosas en el código sólo son ejecutadas cuando se cumplen las con
 
 Reemplaza el código en tu archivo **python_intro.py** por esto:
 
-    python
+``` python
     if 3 > 2:
-    
+```
 
 Si lo guardáramos y lo ejecutáramos, veríamos un error como este:
 
@@ -509,10 +509,10 @@ Si lo guardáramos y lo ejecutáramos, veríamos un error como este:
 
 Python espera que le demos más instrucciones que se supone serán ejecutadas si la condición `3 > 2` resulta ser verdadera (o `True` en este caso). Intentemos hacer que Python imprima "It works!". Cambia tu código en el archivo **python_intro.py** para que se vea como esto:
 
-    python
+``` python
     if 3 > 2:
         print('It works!')
-    
+```
 
 ¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Tenemos que hacer esto para que Python sepa qué código ejecutar si la comparación resulta verdadera. Puedes poner un espacio, pero casi todos los programadores Python hacen 4 espacios para hacer que el código sea más legible. Un solo tab también contará como 4 espacios.
 
@@ -526,12 +526,12 @@ Guárdalo y ejecútalo de nuevo:
 
 En ejemplos anteriores, el código fue ejecutado sólo cuando las condiciones eran ciertas. Pero Python también tiene declaraciones `elif` y `else`:
 
-    python
+```python
     if 5 > 2:
         print('5 is indeed greater than 2')
     else:
         print('5 is not greater than 2')
-    
+```
 
 Al ejecutar esto se imprimirá:
 
@@ -541,7 +541,7 @@ Al ejecutar esto se imprimirá:
 
 Si 2 fuera un número mayor que 5, entonces el segundo comando sería ejecutado. Fácil, ¿verdad? Vamos a ver cómo funciona `elif`:
 
-    python
+``` python
     name = 'Sonja'
     if name == 'Ola':
         print('Hey Ola!')
@@ -549,7 +549,7 @@ Si 2 fuera un número mayor que 5, entonces el segundo comando sería ejecutado.
         print('Hey Sonja!')
     else:
         print('Hey anonymous!')
-    
+```
 
 y al ejecutarlo:
 
@@ -576,13 +576,13 @@ En los últimos tres ejercicios aprendiste acerca de:
 
 Una función es una secuencia de instrucciones que Python debe ejecutar. Cada función en Python comienza con la palabra clave `def`, se le asigna un nombre y puede tener algunos parámetros. Vamos a empezar con algo fácil. Reemplaza el código en **python_intro.py** con lo siguiente:
 
-    python
+``` python
     def hi():
         print('Hi there!')
         print('How are you?')
     
     hi()
-    
+```
 
 Bien, ¡nuestra primera función está lista!
 
@@ -597,13 +597,13 @@ Ejecutemos esto y veamos qué sucede:
 
 ¡Eso fue fácil! Vamos a construir nuestra primera función con parámetros. Utilizaremos el ejemplo anterior - una función que dice 'Hi' a la persona que ejecuta el programa - con un nombre:
 
-    python
+``` python
     def hi(name):
-    
+```
 
 Como puedes ver, ahora dimos a nuestra función un parámetro que llamamos `name`:
 
-    python
+``` python
     def hi(name):
         if name == 'Ola':
             print('Hi Ola!')
@@ -613,7 +613,7 @@ Como puedes ver, ahora dimos a nuestra función un parámetro que llamamos `name
             print('Hi anonymous!')
     
     hi()
-    
+``` 
 
 Como puedes notar, tuvimos que poner dos indentaciones antes de la función `print` porque `if` necesita saber lo que debería ocurrir cuando se cumple la condición. Vamos a ver cómo funciona:
 
@@ -626,9 +626,9 @@ Como puedes notar, tuvimos que poner dos indentaciones antes de la función `pri
 
 Oops, un error. Por suerte, Python nos da un mensaje de error bastante útil. Nos dice que la función `hi()` (la que definimos) tiene un argumento requerido (llamado `name`) y que se nos olvidó pasarlo al llamar a la función. Vamos a arreglarlo en la parte inferior del archivo:
 
-    python
+``` python
     hi("Ola")
-    
+```
 
 y lo ejecutamos otra vez:
 
@@ -638,9 +638,9 @@ y lo ejecutamos otra vez:
 
 ¿Y si cambiamos el nombre?
 
-    python
+``` python
     hi("Sonja")
-    
+```    
 
 y lo corremos:
 
@@ -657,12 +657,12 @@ Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez 
 
 Vamos a hacer algo más inteligente - hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿no?
 
-    python
+``` python
     def hi(name):
         print('Hi ' + name + '!')
     
     hi("Rachel")
-    
+```    
 
 Ahora vamos a llamar al código:
 
@@ -680,21 +680,21 @@ Como hemos mencionado, los programadores son perezosos, no les gusta repetir cos
 
 ¿Todavía recuerdas las listas? Hagamos una lista de las chicas:
 
-    python
+``` python
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    
+```    
 
 Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace eso, así que vamos a usarla en un bucle:
 
-    python
+``` python
     for name in girls:
-    
+```    
 
 La sentencia for se comporta de manera similar a la sentencia if, el código que sigue continuación debe estar indentado usando cuatro espacios.
 
 Aquí está el código completo que estará en el archivo:
 
-    python
+``` python
     def hi(name):
         print('Hi ' + name + '!')
     
@@ -702,7 +702,7 @@ Aquí está el código completo que estará en el archivo:
     for name in girls:
         hi(name)
         print('Next girl')
-    
+```    
 
 y cuando lo ejecutamos:
 

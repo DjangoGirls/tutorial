@@ -19,7 +19,7 @@ Vamos a crear un archivo `base.html` en `blog/templates/blog/`:
 
 Luego ábrelo y copia todo lo que hay en `post_list.html` al archivo `base.html`, de la siguiente manera:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -51,11 +51,11 @@ Luego ábrelo y copia todo lo que hay en `post_list.html` al archivo `base.html`
             </div>
         </body>
     </html>
-    
+```    
 
 Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre `<body>` and `</body>`) con esto:
 
-    html
+``` html
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -69,20 +69,20 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
             </div>
         </div>
     </body>
-    
+```
 
 Básicamente remplazamos todo entre `{% for post in posts %}{% endfor %}` con:
 
-    html
+``` html
     {% block content %}
     {% endblock %}
-    
+```
 
 ¿Qué significa esto? Acabas de crear un `block`, una template tag que te permite insertar HTML en este bloque en otras plantillas que extiendan a `base.html`. Te mostraremos como hacer esto en un momento.
 
 Ahora guárdalo y abre tu archivo `blog/templates/blog/post_list.html` de nuevo. Elimina todo lo que no esté dentro del body y luego elimina también `<div class="page-header"></div>`, de forma que tu archivo se verá asi:
 
-    html
+``` html
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -92,16 +92,16 @@ Ahora guárdalo y abre tu archivo `blog/templates/blog/post_list.html` de nuevo.
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```
 
 Y ahora agrega esta línea al inicio del archivo:
-
+```
     {% extends 'blog/base.html' %}
-    
+``` 
 
 Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_list.html`. Sólo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block content %}` y `{% endblock content %}`. Como esto:
 
-    html
+``` html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -115,7 +115,7 @@ Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_lis
             </div>
         {% endfor %}
     {% endblock content %}
-    
+```
 
 ¡Eso es todo! Verifica que tu sitio web aún funcione apropiadamente :)
 

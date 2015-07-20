@@ -39,12 +39,12 @@ Mira cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
 Añade lo siguiente a tu archivo de plantilla:
 
-    html
+``` html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
+```
 
 ¿Cómo luce ahora tu sitio web? Haz click para ver: http://127.0.0.1:8000/
 
@@ -69,7 +69,7 @@ Usamos `<head>` para decirle el navegador acerca de la configuración de la pág
 
 Por ejemplo, puedes ponerle un título a la página web dentro de la `<head>`, así:
 
-    html
+``` html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -79,7 +79,7 @@ Por ejemplo, puedes ponerle un título a la página web dentro de la `<head>`, a
             <p>It works!</p>
         </body>
     </html>
-    
+```
 
 Guarda el archivo y actualiza tu página.
 
@@ -111,7 +111,7 @@ Tienes que seguir estas reglas de etiquetas de *cierre* y de *anidación* de ele
 
 Aquí hay un ejemplo de una plantilla completa:
 
-    html
+``` html
     <html>
         <head>
             <title>Django Girls blog</title>
@@ -134,7 +134,7 @@ Aquí hay un ejemplo de una plantilla completa:
             </div>
         </body>
     </html>
-    
+```
 
 Aquí hemos creado tres secciones `div`.
 

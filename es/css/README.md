@@ -18,10 +18,10 @@ Lo escribieron programadores que trabajaban para Twitter y ahora lo desarrollan 
 
 Para instalar Bootstrap tienes que añadir esto al `<head>` de tu fichero `.html` (`blog/templates/blog/post_list.html`):
 
-    html
+```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    
+```    
 
 Esto no añade ningún fichero a tu proyecto. Simplemente apunta a ficheros que existen en Internet. Adelante, abre tu sitio web y actualiza la página. ¡Aquí está!
 
@@ -73,19 +73,19 @@ Pero vamos a hacer un poco al menos. ¿Tal vez podríamos cambiar el color de nu
 
 En tu fichero `blog/static/css/blog.css` deberías añadir el siguiente código:
 
-    css
+```css
     h1 a {
         color: #FCA205;
     }
-    
+```    
 
 `h1 a` es un selector CSS. Quiere decir que estamos aplicando nuestros estilos a cualquier elemento `a` que se encuentre dentro de un elemento `h1` (por ejemplo cuando tenemos en código algo como: `<h1><a href="">enlace</a></h1>`). En este caso le estamos diciendo que cambie el color a `#FCA205`, que es naranja. Por supuesto, ¡puedes poner tu propio color aquí!
 
 En un fichero CSS definimos los estilos para los elementos del fichero HTML. Los elementos se identifican por el nombre del elemento (es decir, `a`, `h1`, `body`), el atributo `class` (clase) o el atributo `id` (identificador). Class e id son nombres que le asignas tú misma al elemento. Las clases definen grupos de elementos y los ids apuntan a elementos específicos. Por ejemplo, la siguiente etiqueta se puede identificar con CSS usando el nombre `a`, la clase `external_link` o el id `link_to_wiki_page`:
 
-    html
+```html
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-    
+```    
 
 Puedes leer más sobre [selectores de CSS en w3schools][4].
 
@@ -93,21 +93,21 @@ Puedes leer más sobre [selectores de CSS en w3schools][4].
 
 También necesitamos decirle a nuestra plantilla HTML que hemos añadido CSS. Abre el fichero `blog/templates/blog/post_list.html` y añade esta línea justo al principio:
 
-    html
+```html
     {% load staticfiles %}
-    
+```    
 
 Aquí sólo estamos cargando ficheros estáticos :). Luego, entre el `<head>` y `</head>`, después de los enlaces a los ficheros CSS de Bootstrap (el navegador lee los ficheros en el orden en que están, así que nuestro fichero podría sobrescribir partes del código de Bootstrap), añade la siguiente línea:
 
-    html
+```html
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+```    
 
 Le acabamos de decir a nuestra plantilla dónde se encuentra nuestro fichero CSS.
 
 Ahora tu fichero debería tener este aspecto:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -130,7 +130,7 @@ Ahora tu fichero debería tener este aspecto:
             {% endfor %}
         </body>
     </html>
-    
+```    
 
 De acuerdo, ¡guarda el fichero y actualiza el sitio!
 
@@ -140,11 +140,11 @@ De acuerdo, ¡guarda el fichero y actualiza el sitio!
 
 ¡Buen trabajo! ¿Quizá nos gustaría darle un poco de aire a nuestro sitio web y aumentar también el margen en el lado izquierdo? ¡Vamos a intentarlo!
 
-    css
+```css
     body {
         padding-left: 15px;
     }
-    
+```    
 
 Añade esto a tu CSS, guarda el fichero y ¡mira cómo funciona!
 
@@ -154,20 +154,20 @@ Añade esto a tu CSS, guarda el fichero y ¡mira cómo funciona!
 
 ¿Quizá podríamos personalizar la tipografía del título? Pega esto en la sección `<head>` del fichero `blog/templates/blog/post_list.html`:
 
-    html
+```html
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    
+```    
 
 Esta línea va a importar una tipografía llamada *Lobster* de Google Fonts (https://www.google.com/fonts).
 
 Ahora añade la línea `font-family: 'Lobster';` en el fichero CSS `blog/static/css/blog.css` dentro del bloque de declaración `h1 a` (el código entre llaves `{` y `}`) y actualiza la página:
 
-    css
+```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
     }
-    
+```    
 
 ![Figure 14.3][7]
 
@@ -179,25 +179,25 @@ Como se mencionó anteriormente, CSS tiene un concepto de clases que básicament
 
 ¡Adelante! Nombra algunas partes del código HTML. Añade una clase llamada `page-header` al `div` que contiene el encabezado, así:
 
-    html
+```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-    
+```    
 
 Y ahora añade la clase `post` al `div` que contiene una entrada del blog.
 
-    html
+```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
-    
+```    
 
 Ahora añadiremos bloques de declaración a diferentes selectores. Los selectores que comienzan con `.` hacen referencia a las clases. Hay muchos tutoriales y explicaciones sobre CSS en la web que te ayudarán a entender el siguiente código. Por ahora, simplemente copia y pega este bloque de código en tu fichero `blog/static/css/blog.css`:
 
-    css
+```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -245,11 +245,11 @@ Ahora añadiremos bloques de declaración a diferentes selectores. Los selectore
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
-    
+```    
 
 Luego rodea el código HTML que muestra las entradas con las declaraciones de clases. Sustituye esto:
 
-    html
+```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -257,11 +257,11 @@ Luego rodea el código HTML que muestra las entradas con las declaraciones de cl
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```    
 
 en `blog/templates/blog/post_list.html` por esto:
 
-    html
+```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -277,7 +277,7 @@ en `blog/templates/blog/post_list.html` por esto:
             </div>
         </div>
     </div>
-    
+```    
 
 Guarda los ficheros y actualiza tu sitio.
 

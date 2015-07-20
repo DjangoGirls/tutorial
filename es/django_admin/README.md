@@ -4,12 +4,12 @@ Para agregar, editar y borrar los posts que hemos modelado, utilizaremos el admi
 
 Vamos a abrir el archivo `blog/admin.py` y reemplazar su contenido con esto:
 
-    python
+```python
     from django.contrib import admin
     from .models import Post
     
     admin.site.register(Post)
-    
+```
 
 Como puedes ver, importamos (incluimos) el modelo Post definido en el capítulo anterior. Para hacer nuestro modelo visible en la página del administrador, tenemos que registrar el modelo con `admin.site.register(Post)`.
 

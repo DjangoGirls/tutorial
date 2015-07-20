@@ -86,7 +86,7 @@ Vas notar que se crea un nuevo directorio llamado `blog` y contiene una serie de
 
 Después de crear una aplicación también necesitamos decirle a Django que debe utilizarla. Lo hacemos en el archivo `mysite/settings.py`. Tenemos que encontrar `INSTALLED_APPS` y añadir una línea que contiene `'blog',` justo por encima de `)`. El producto final debe tener este aspecto:
 
-    python
+```python
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -96,7 +96,7 @@ Después de crear una aplicación también necesitamos decirle a Django que debe
         'django.contrib.staticfiles',
         'blog',
     )
-    
+```
 
 ### Creando el Modelo Post
 
@@ -104,7 +104,7 @@ En el archivo `blog/models.py` definimos todos los objetos llamados `Models` - e
 
 Vamos abrir `blog/models.py`, quitamos todo y escribimos un código como este:
 
-    python
+```python
     from django.db import models
     from django.utils import timezone
     
@@ -123,7 +123,7 @@ Vamos abrir `blog/models.py`, quitamos todo y escribimos un código como este:
     
         def __str__(self):
             return self.title
-    
+```    
 
 > Vuelve a verificar que usaste dos guiones bajos (`_`) en cada lado del `str`. Estos se utilizan con frecuencia en Python y a veces también los llamamos "dunder" (diminutivo en inglés de "double-underscore").
 

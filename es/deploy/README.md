@@ -277,7 +277,7 @@ Haz clic en el enlace "WSGI configuration file" (en la sección "Code" en la par
 
 Elimina todo el contenido actual y reemplázalo con algo como esto:
 
-    python
+``` python
     import os
     import sys
     
@@ -290,7 +290,7 @@ Elimina todo el contenido actual y reemplázalo con algo como esto:
     from django.core.wsgi import get_wsgi_application
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(get_wsgi_application())
-    
+```    
 
 > **Nota** no olvides sustituir tu propio nombre de usuario donde dice `<tu-usuario>`
 

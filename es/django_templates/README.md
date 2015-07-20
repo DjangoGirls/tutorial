@@ -14,9 +14,9 @@ En el capítulo anterior dimos a nuestra plantilla una lista de posts en la vari
 
 Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
 
-    html
+``` html
     {{ posts }}
-    
+```    
 
 Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza el segundo y el tercer par de etiquetas `<div></div>` con la línea `{{ posts }}`), guarda el archivo y actualiza la página para ver los resultados:
 
@@ -31,11 +31,11 @@ Como puedes ver, todo lo que obtenemos es esto:
 
 Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python** cómo podemos mostrar listas? Sí, ¡con los ciclos for! En una plantilla de Django, lo haces de esta manera:
 
-    html
+``` html
     {% for post in posts %}
         {{ post }}
     {% endfor %}
-    
+``` 
 
 Prueba esto en tu plantilla.
 
@@ -45,7 +45,7 @@ Prueba esto en tu plantilla.
 
 ¡Funciona! Pero queremos que se muestren como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Puedes mezclar HTML y template tags. Nuestro `body` se verá así:
 
-    html
+``` html
     <div>
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
@@ -57,7 +57,7 @@ Prueba esto en tu plantilla.
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```    
 
 Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualiza tu página:
 
