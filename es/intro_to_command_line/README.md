@@ -4,15 +4,15 @@ Es emocionante, ¿verdad? Vas a escribir tu primera línea de código en pocos m
 
 **Permítenos presentarte a tu primer nuevo amigo: la línea de comandos!**
 
-En los siguientes pasos te mostraran como usar aquella ventana negra que todos los hackers usan. Puede parecer un aterrador al principio pero es solo un mensaje en pantalla que espera a que le des órdenes.
+En los siguientes pasos te mostraran como usar aquella ventana negra que todos los hackers usan. Puede parecer aterrador al principio pero es solo un mensaje en pantalla que espera a que le des órdenes.
 
 ## ¿Qué es la línea de comandos?
 
-La ventana, que generalmente es llamada **línea de comandos** o **interfaz de línea de comandos**, es una aplicación basada en texto para la ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: *cmd*, *CLI*, *el símbolo del sistema*, *consola* o *terminal*.
+La ventana, que generalmente es llamada **línea de comandos** o **interfaz de línea de comandos**, es una aplicación basada en texto para ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: *cmd*, *CLI*, *el símbolo del sistema*, *consola* o *terminal*.
 
 ## Abrir la interfaz de línea de comandos
 
-para empezar a experimentar con nuestra interfaz de linea de comandos lo primero que debemos hacer es abrirla.
+Para empezar a experimentar con nuestra interfaz de linea de comandos lo primero que debemos hacer es abrirla.
 
 ### Windows
 
@@ -63,7 +63,7 @@ Y luego oprime la tecla `enter`. Este es el resultado:
 
 Como puedes ver, la computadora sólo te presento su nombre de usuario. Bien, eh? :)
 
-> Trato de escribir cada comando, no copiar pegar. Te acordarás de más de esta manera!
+> Trata de escribir cada comando, no copiar pegar. Te acordarás de más de esta manera!
 
 ## Básicos
 
@@ -158,13 +158,13 @@ Windows:
 
 Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. Puede comprobar si está allí buscando en tu escritorio o ejecutando un `ls/dir`! Inténtalo :)
 
-> PRO tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para recorrer a recientes comandos utilizados.
+> PRO tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para recorrer comandos utilizados recientemente.
 
 * * *
 
 ### Ejercicios!
 
-Un pequeño reto para ti: en el directorio recién creado `djangogirls` crear un directorio llamado `test`. Utilice los comandos `cd` y `mkdir`.
+Un pequeño reto para ti: en el directorio recién creado `djangogirls` crear un directorio llamado `test`. Utiliza los comandos `cd` y `mkdir`.
 
 #### Solución:
 
