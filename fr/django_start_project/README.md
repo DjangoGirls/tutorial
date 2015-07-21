@@ -10,7 +10,7 @@ Nous allons créer un petit blog!
 
 La première étape consiste à démarrer un nouveau projet Django. En gros, ça veut dire que nous allons lancer quelques scripts fournis par Django qui vont nous créer un squelette de projet Django (une poignée de fichiers qui vont nous être utiles).
 
-Il y a certains fichiers et dossiers dont les noms sur extrêmement importants pour Django. Il ne faut pas renommer les fichiers que nous sommes sur le point de créer. Ce n'est pas non plus une bonne idée de les déplacer. Django a besoin de maintenir une certaine structure pour retrouver les éléments importants.
+Il y a certains fichiers et dossiers dont les noms sont extrêmement importants pour Django. Il ne faut pas renommer les fichiers que nous sommes sur le point de créer. Ce n'est pas non plus une bonne idée de les déplacer. Django a besoin de maintenir une certaine structure pour retrouver les éléments importants.
 
 Dans une console, lancez ça (n'oubliez pas, pas besoin de taper `(myvenv) ~/djangogirls$`):
 
@@ -45,7 +45,7 @@ Le fichier `settings.py` contient la configuration de votre site web.
 
 Vous vous souvenez de l'histoire du postier qui livre des lettres? `urls.py` contient une liste de modèles d'urls utilisés par `urlresolver`.
 
-Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y toucher. Le seul truc aucun il faut faire attention est de ne pas les supprimer par accident!
+Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y toucher. Le seul truc auquel il faut faire attention est de ne pas les supprimer par accident!
 
 ## Changer la configuration
 
@@ -73,7 +73,7 @@ Il est déjà configuré dans ce morceau de votre fichier `mysite/settings.py`:
     }
     
 
-Pour créer la base de donnée de votre blog, il fait lancer la commande suivante dans la console: `python manage.py migrate` (on a besoin d'être dans le dossier `djangogirls` qui contient le fichier `manage.py`). Si tout se passe bien, vous devriez voir quelque chose comme ça:
+Pour créer la base de donnée de votre blog, il faut lancer la commande suivante dans la console: `python manage.py migrate` (on a besoin d'être dans le dossier `djangogirls` qui contient le fichier `manage.py`). Si tout se passe bien, vous devriez voir quelque chose comme ça:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -85,19 +85,19 @@ Pour créer la base de donnée de votre blog, il fait lancer la commande suivant
       Applying sessions.0001_initial... OK
     
 
-Et voilà! Il ne plus qu'à lancer le server et voir si le site web marche!
+Et voilà! Il n'y a plus qu'à lancer le serveur et voir si le site web fonctionne!
 
 Pour ça, vous avez besoin d'être dans le dossier qui contient le fichier `manage.py` (le dossier `djangogirls`). Dans la console, vous pouvez lancer le serveur en tapant `python manage.py runserver`:
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Ensuite, il ne vous reste plus qu'à vérifier que le site tourne. Ouvrez votre navigateur (Firefox, Chrome, Safari, Internet Explorer, ou n'importe quel autre), et entre l'adresse:
+Ensuite, il ne vous reste plus qu'à vérifier que le site tourne. Ouvrez votre navigateur (Firefox, Chrome, Safari, Internet Explorer, ou n'importe quel autre), et entrez l'adresse:
 
     http://127.0.0.1:8000/
     
 
-Le serveur web remplace la ligne de commande tant que vous ne l’arrêtez pas. Pour pouvoir taper de nouvelles commandes, vous devez soit lancer une nouvelle fenêtre de terminal (et n'oubliez pas d'y activer votre virtualenv), ou arrêter le serveur web en sélectionnant la fenêtre de terminal et où tourne le serveur et en appuyant sur CTRL+C (Contrôle et C en même temps). Sous Windows, ça sera Ctrl+Arrêt défil.
+Le serveur web remplace la ligne de commande tant que vous ne l’arrêtez pas. Pour pouvoir taper de nouvelles commandes, vous devez soit lancer une nouvelle fenêtre de terminal (et n'oubliez pas d'y activer votre virtualenv), ou arrêter le serveur web en sélectionnant la fenêtre de terminal où tourne le serveur et en appuyant sur CTRL+C (Contrôle et C en même temps). Sous Windows, ça sera Ctrl+Arrêt défil.
 
 Bravo! Vous venez de créer votre premier site web, et de le lancer avec un serveur web! C'est génial, non?
 

@@ -132,7 +132,7 @@ Ensuite, publions-le grâce à notre méthode `publish`!
     >>> post.publish()
     
 
-Réessayons d'obtenir une liste des posts publiés (pour aller plus vite, appuyez trois fois sur la flèche du haut de votre clavier et appuyer sur entrer):
+Réessayons d'obtenir une liste des posts publiés (pour aller plus vite, appuyez trois fois sur la flèche du haut de votre clavier et appuyez sur entrer):
 
     >>> Post.objects.filter(published_date__isnull=False)
     [<Post: Exemple de titre>]
