@@ -2,7 +2,7 @@
 
 Vous allez bientôt écrire vos premières lignes de code : il vous faut tout d'abord télécharger un éditeur de texte !
 
-Choisir un éditeur de texte parmi tous ceux disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs Python utilisent des IDE (Environnement de développement intégré) complexes mais très puissant, comme Pycharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
+Choisir un éditeur de texte parmi tous ceux disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs Python utilisent des IDE (Environnement de développement intégré) complexes mais très puissants, comme Pycharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
 
 Vous pouvez choisir l'un des éditeurs de la liste ci-dessous mais n'hésiter pas à demander à votre coach l'éditeur qu'il·elle préfère.
 

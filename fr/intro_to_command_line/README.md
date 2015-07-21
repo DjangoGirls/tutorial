@@ -30,7 +30,7 @@ Vous la trouverez probablement dans Applications → Accessoires → Terminal, m
 
 Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos commandes.
 
-Si vous être sous Max ou Linux, vous verrez probablement un `$`, comme ça:
+Si vous être sous Mac ou Linux, vous verrez probablement un `$`, comme ça:
 
     $
 
@@ -159,13 +159,13 @@ Windows:
 
 Cette petite commande crée un dossier nommé `djangogirls` sur votre bureau. Vous pouvez vérifier qu'il est bien là en regardant votre bureau, ou en lançant la commande `ls` ou `dir`! Essayez donc :)
 
-> Pro tip: Si vous voulez éviter de taper les mêmes commandes plein de fois, essayer d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapé.
+> Pro tip: Si vous voulez éviter de taper les mêmes commandes plein de fois, essayer d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapées.
 
 * * *
 
 ### Un peu d'exercice!
 
-Petit défi pour vous: dans votre nouveau dossier `djangogirls`, créez un dossier appelé `test`. Pour ça, utilisez les commands `cd` et `mkdir`.
+Petit défi pour vous: dans votre nouveau dossier `djangogirls`, créez un dossier appelé `test`. Pour ça, utilisez les commandes `cd` et `mkdir`.
 
 #### Solutions:
 
@@ -240,7 +240,7 @@ Windows:
 
 ### Sortir
 
-C'est tout pour le moment! Vous pouvez fermer maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses. :)
+C'est tout pour le moment! Vous pouvez maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses. :)
 
     $ exit
 

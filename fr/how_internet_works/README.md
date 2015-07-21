@@ -6,13 +6,13 @@ Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce que ce passe
 
 Avant tout, il faut savoir qu'un site web n'est rien de plus qu'un tas de fichiers sauvegardés sur un disque dur. Exactement comme vos vidéos, vos musiques ou vos photos. Cependant, les sites web ont quelque chose d'unique: ils contiennent du code informatique appelé HTML.
 
-Si vous n'avez pas l'habitude de la programmation, il peut être difficile de comprendre HTML au débit, mais vos navigateurs web (comme Chrome, Safari, Firefox, etc.) adorent ça. Les navigateurs web sont conçus pour comprendre ce code, pour suivre les instructions qu'il contient et présenter les fichiers de votre site web exactement comme vous voulez qu'ils soient présentés.
+Si vous n'avez pas l'habitude de la programmation, il peut être difficile de comprendre HTML au début, mais vos navigateurs web (comme Chrome, Safari, Firefox, etc.) adorent ça. Les navigateurs web sont conçus pour comprendre ce code, pour suivre les instructions qu'il contient et présenter les fichiers de votre site web exactement comme vous voulez qu'ils soient présentés.
 
 Comme pour n'importe quel autre fichier, il faut stocker les fichiers HTML sur un disque dur quelque part. Pour Internet, on utilise des ordinateurs spéciaux, très puissants, appelés *serveurs*. Ils n'ont pas d'écran, de clavier ou de souris, car leur rôle est de stocker des données, et de les servir. C'est pour ça qu'on les appelle des *serveurs* -- parce qu'ils sont là pour vous *servir* des données.
 
 Bon, d'accord. Mais vous avez envie de savoir à quoi Internet ressemble, n'est-ce-pas?
 
-On va a fait un dessin! Internet ressemble à ça:
+On vous a fait un dessin! Internet ressemble à ça:
 
 ![Figure 1.1][1]
 
@@ -26,7 +26,7 @@ C'est le bazar, non? En fait, c'est un réseau de machines connectées entre ell
 
 Fascinant, non? Mais, il n'est évidemment pas possible de tirer un câble de chaque machine connecté à Internet vers chaque autre. Du coup, pour atteindre une machine (par exemple, celle où http://djangogirls.org est sauvegardé), on doit faire passer une requête par plein d'autres machines.
 
-Ça ressemble ça:
+Ça ressemble à ça:
 
 ![Figure 1.3][3]
 
@@ -34,7 +34,7 @@ Fascinant, non? Mais, il n'est évidemment pas possible de tirer un câble de ch
 
 C'est un peu comme si, quand vous tapez http://djangogirls.org, vous envoyiez une lettre que dit "Chères Django Girls, je voudrais voir le site djangogirls.org. Pouvez-vous me l'envoyer?"
 
-Votre lettre part vers le bureau de post le plus proche. Ensuite, il file vers un autre, qui est plus proche de votre destinataire. Puis un autre, et encore une autre, jusqu'à sa destination. Pour Internet, c'est pareil. La seule différence, c'est que si vous envoyez plusieurs lettres (*des paquets de données*) vers le même endroit, chaque lettre peut emprunter une route différente, et voir différents bureaux de post (*routeurs*), selon la manière dont chaque bureau de poste distribue chaque lettre.
+Votre lettre part vers le bureau de poste le plus proche. Ensuite, il file vers un autre, qui est plus proche de votre destinataire. Puis un autre, et encore un autre, jusqu'à sa destination. Pour Internet, c'est pareil. La seule différence, c'est que si vous envoyez plusieurs lettres (*des paquets de données*) vers le même endroit, chaque lettre peut emprunter une route différente, et voir différents bureaux de poste (*routeurs*), selon la manière dont chaque bureau de poste distribue chaque lettre.
 
 ![Figure 1.4][4]
 
@@ -50,4 +50,4 @@ Donc, au final, pour avoir un site web il faut qu'il soit sur un *serveur* (c'es
 
 Puisqu'on est dans un tutoriel sur Django, vous devez vous demander ce que Django fait. Quand vous envoyez une réponse, vous ne renvoyez pas toujours la même réponse à tout le monde. C'est bien mieux quand les lettres sont personnalisées, surtout quand elles s'adressent à quelqu'un qui vient de vous écrire, non? Et bien Django vous aide à écrire les lettres personnalisées et intéressantes :).
 
-Assez parler, il est temps de commencer à créer des trucs!
+Assez parlé, il est temps de commencer à créer des trucs!
