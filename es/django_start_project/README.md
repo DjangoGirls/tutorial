@@ -1,20 +1,19 @@
 # Tu primer proyecto en Django!
 
-> Parte de este capitulo esta basado en los tutoriales de Geek Girls Carrots (http://django.carrots.pl/).
-> 
-> Parte de este capítulo se basa en el [django-marcador tutorial][1] bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
+> Parte de este capitulo esta basado en los tutoriales de Geek Girls Carrots (http://django.carrots.pl/) y
+> en el [django-marcador tutorial][1] bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
  [1]: http://django-marcador.keimlink.de/
 
 Vamos a crear un simple blog!
 
-El primer paso para crearlo es para iniciar un nuevo proyecto en Django. Básicamente, esto significa que podrás correr algunos scripts proporcionados por Django que creará el esqueleto de un proyecto para nosotros: un montón de directorios y archivos que vamos a utilizar más adelante.
+El primer paso para crearlo es iniciar un nuevo proyecto en Django, esto significa que podrás ejecutar los scripts proporcionados por Django en el esqueleto del proyecto que nos ha creado o dicho en otras palabras: un montón de directorios y archivos que vamos a utilizar más adelante.
 
-Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es una buena idea. Django tiene que mantener una cierta estructura para ser capaz de encontrar cosas importantes.
+Los nombres de algunos archivos y directorios son muy importantes para Django, no deberías renombrarlos ni moverlos a un lugar diferente, ya que Django mantiene una cierta estructura para ser capaz de encontrarlos.
 
-En la consola debe ejecutar (Recuerde de no escribir `(myvenv) ~/djangogirls$`, OK?):
+Al lío! En la consola debes ejecutar (Recuerde de no escribir el "prompt" -> `(myvenv) ~/djangogirls$` <-, solo lo que está después de "$", OK? :D ):
 
-> Recuerde correr to en el entorno virtual. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **instalación de Django** en el capitulo **Trabajando con virtualenv**.
+> Recuerda correr todo en el entorno virtual. Si no ves un prefijo `(myvenv)` en tu consola, entonces necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **instalación de Django** en el capitulo **Trabajando con virtualenv**.
 
 Ejecutar en Windows:
 
@@ -26,7 +25,7 @@ o en Linux o Mac OS:
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> **Nota** Verifica que incluiste el punto (`.`) al final del comando, es importante.
+> **Nota** Verifica que incluiste el punto (`.`) al final del comando, es importante, este punto indica que donde queremos crear el proyecto es en el directorio en el que estamos.
 
 `django-admin` es un script que creará los archivos y directorios para ti. Ahora debes tener un directorio de la estructura que se parece a esto:
 
@@ -45,7 +44,7 @@ El archivo `settings.py` contiene la configuración de tu sitio Web.
 
 ¿Recuerdas cuando hablamos de un cartero que debía comprobar donde entregar una carta? `URLs.py` contiene una lista de los patrones utilizados por `urlresolver`.
 
-Ignoremos los otros archivos por ahora - no los cambiaremos. Lo único que debes recordar es no borrarlos por accidente!
+Ignoremos los otros archivos por ahora, no los cambiaremos. Lo único que debes recordar es no borrarlos por accidente!
 
 ## Cambiando la configuración
 
@@ -92,12 +91,12 @@ Tienes que estar en el directorio que contiene el archivo `manage.py` (el direct
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Ahora todo lo que necesitas hacer es verificar que tu sitio web esté ejecutándose - abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o lo que utilices) e introduce la dirección:
+Ahora todo lo que necesitas hacer es verificar que tu sitio web esté ejecutándose, abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o lo que utilices) e introduce la dirección:
 
     http://127.0.0.1:8000/
     
 
-El servidor web se encargará de su terminal de comando hasta detenerlo: para escribir más comandos abre una nueva ventana de terminal (y no te olvides de activar tu virtualenv en él también), o detener el servidor web y presionar CTRL + C - (en Windows, tendrás que presione Ctrl+Inter).
+Como el proceso no está en segundo plano, nuestro terminal de comando estará ocupado por él hasta que lo detengamos: para escribir más comandos abre una nueva ventana de terminal (y no te olvides de activar tu virtualenv en él también), o detener el servidor web presionando CTRL + C (en Windows, tendrás que presione Ctrl+Enter).
 
 ¡Felicidades! Has creado tu primer sitio web y ejecutado un servidor web. ¿No es genial?
 
