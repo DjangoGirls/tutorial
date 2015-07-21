@@ -10,7 +10,7 @@ Entonces ¿qué es un objeto? Es un conjunto de propiedades y acciones, suena ra
 
 Si queremos modelar un gato, crearemos un objeto `Gato` que tiene diversas propiedades, como `color`, `edad`, `estado de ánimo` (es decir, bueno, malo, sueño ;)), `dueño` (que es un objeto `persona` o tal vez, en el caso de que el gato sea callejero, esta propiedad estara vacía).
 
-Y luego el `Gato` tiene algunas acciones: `ronronear`, `arañar` o `alimentarse` (en la cual daremos el gato algunos `ComidaDeGato`, que podría ser un objeto independiente con propiedades, como por ejemplo, `sabor`).
+Y luego el `Gato` tiene algunas acciones: `ronronear`, `aranar` (es recomendable no utilizar caracteres especiales, ¡la "ñ" lo es!) o `alimentarse` (en la cual daremos el gato algunos `ComidaDeGato`, que podría ser un objeto independiente con propiedades, como por ejemplo, `sabor`).
 
     Gato
     ---------
@@ -19,7 +19,7 @@ Y luego el `Gato` tiene algunas acciones: `ronronear`, `arañar` o `alimentarse`
     humor
     dueño
     ronronear()
-    arañar()
+    aranar()
     alimientarse(comida_de_gato)
 
     ComidaDeGato
@@ -29,7 +29,7 @@ Y luego el `Gato` tiene algunas acciones: `ronronear`, `arañar` o `alimentarse`
 
 Básicamente se trata de describir cosas reales en el código a través de las propiedades (llamadas `Propiedades del objeto`) y las acciones (llamadas `métodos`).
 
-Y ahora ¿cómo modelamos las entradas en el blog? porque queremos construir un blog, ¿no?
+Y ahora ¿cómo modelamos las entradas en el blog? Porque queremos construir un blog, ¿no?
 
 Primero tenemos que responder algunas preguntas: ¿qué es una entrada de un blog? ¿qué características debería tener?
 
@@ -49,7 +49,7 @@ Bueno, seguro que nuestras entradas necesitan un texto con su contenido y un tí
 
 Así que vamos a necesitar el método `publicar`.
 
-Puesto que ya sabemos lo que queremos hacer, podemos empezar a crear nuestro Modelo en Django!
+Puesto que ya sabemos lo que queremos hacer, ¡podemos empezar a crear nuestro Modelo en Django!
 
 ## Modelo en Django
 
@@ -100,7 +100,7 @@ Después de crear una aplicación, también necesitaremos decirle a Django que d
 
 ### Creando el Modelo post
 
-En el archivo `blog/models.py` definiremos todos los objetos llamados `Models`, así que este es elxº lugar en el cual definiremos nuestro modelo post.
+En el archivo `blog/models.py` definiremos todos los objetos llamados `Models`, así que este es el lugar en el cual definiremos nuestro modelo post.
 
 Vamos abrir `blog/models.py`, eliminamos todo y escribimos un código como este:
 
