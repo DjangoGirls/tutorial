@@ -95,12 +95,13 @@ Tenemos todas las dependencias importantes en su lugar. ¡Finalmente podemos ins
 
 Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django usando `pip`. En la consola, ejecuta `pip install django == 1.8` (fíjate que utilizamos un doble signo igual): `==`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
+    (myvenv) ~$ pip install django==1.8.3
+    Downloading/unpacking django==1.8.3
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
     
+
 
 En Windows
 
@@ -108,6 +109,6 @@ En Windows
 
 en Linux
 
-> Si obtienes un error al correr pip en Ubuntu 12.04 ejecuta `python -m pip install- U - force-resintall pip` para arreglar la instalación de pip en el virtualenv.
+> Si obtienes un error al correr pip en Ubuntu 12.04 ejecuta `python -m pip install -U --force-reinstall pip` para arreglar la instalación de pip en el virtualenv.
 
 ¡Eso es todo. Ahora estás listo (por fin) para crear una aplicación Django! Pero para hacer eso, necesitas un buen programa en el cual escribir código...
