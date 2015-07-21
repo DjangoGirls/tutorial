@@ -25,11 +25,11 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
 
 Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
-Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `blog/templates/blog`.
 
 Allons regarder à quoi ressemble notre site maintenant: http://127.0.0.1:8000/
 
-> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande, arrêtez votre server en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier) et relancer le en tapant la commande `python manage.py runserver`.
+> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande, arrêtez votre serveur en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier) et relancer le en tapant la commande `python manage.py runserver`.
 
 ![Figure 11.1][1]
 
@@ -174,7 +174,7 @@ On y est presque: nous devons maintenant lui dire de sauvegarder ces changements
     $ git commit -m "Modification du HTML du site"
     
 
-> **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
+> **Note** N'oubliez pas d'utiliser des doubles guillemets autour de votre message de commit.
 
 Une fois que vous avez terminé, vous pouvez enfin uploader (pusher) vos modifications sur Heroku:
 
