@@ -10,7 +10,7 @@ Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en n
 
  [1]: /intro_to_command_line/README.html
 
-Una vez que estés listo, sigue las siguientes instrucciones.
+Una vez que estés lista, sigue las siguientes instrucciones.
 
 Queremos abrir una consola de Python, así que escribe `python3` y pulsa `enter`.
 
@@ -22,7 +22,7 @@ Queremos abrir una consola de Python, así que escribe `python3` y pulsa `enter`
 
 ## Tu primer comando en Python!
 
-Después de ejecutar el comando de Python, el cursor cambia a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos en el lenguaje Python. No tienes que escribir en `>>>`-Python lo hará por ti.
+Después de ejecutar el comando de Python, el cursor cambia a `>>>`. Para nosotras esto significa que por ahora sólo podemos utilizar comandos en el lenguaje Python. No tienes que escribir en `>>>`-Python lo hará por ti.
 
 Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usar el atajo `Ctrl + Z` para Windows y `Ctrl + D` para Mac/Linux. Entonces no verás `>>>`.
 
@@ -40,7 +40,7 @@ Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué m
 
 ## Strings
 
-¿Y tu nombre? Escriba tu nombre de pila en frases como ésta:
+¿Y tu nombre? Escribe tu nombre de pila en frases como ésta:
 
     >>> "Ola"
     'Ola'
@@ -88,7 +88,7 @@ Si quisieras saber el número de letras que contiene tu nombre, también existe 
     3
 
 
-Te preguntarás porque a veces se llama a las funciones con un `.` al final de un string (p. ej. `"Ola".upper()`), y a veces primero se llama a una función y se coloca el string entre paréntesis. Bueno, en algunos casos las funciones pertenecen a objetos, como `upper()`, que pueden solo ser utilizadas en strings (cadena de caracteres) En este caso, llamamos a la función de un **método**. Otra veces, las funciones no pertenecen a ninguno especifico y pueden ser usados en diferentes objetos, como `len()`. Eso es porque estamos dando `"Ola"` cono un parámetro a la función `len`.
+Te preguntarás porque a veces se llama a las funciones con un `.` al final de un string (p. ej. `"Ola".upper()`), y a veces primero se llama a una función y se coloca el string entre paréntesis. Bueno, en algunos casos las funciones pertenecen a objetos, como `upper()`, que pueden solo ser utilizadas en strings (cadena de caracteres) En este caso, llamamos a la función de un **método**. Otra veces, las funciones no pertenecen a ninguno especifico y pueden ser usados en diferentes objetos, como `len()`. Eso es porque estamos dando `"Ola"` como un parámetro a la función `len`.
 
 ### Resumen
 
@@ -96,10 +96,10 @@ Ok, suficiente de strings. Hasta ahora has aprendido sobre:
 
 *   **la terminal** - teclea comandos (código) dentro de la terminal de Python para obtener resultados en preguntas en Python
 *   **números y strings** - en Python los números son usados para matemáticas y strings para objetos de texto
-*   **operadores** - como + y \*, combinan valores para producir uno nuevo
+*   **operadores** - como + y \ *, combinan valores para producir uno nuevo
 *   **funciones** como upper() y len(), realizan opciones sobre los objetos.
 
-Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje de programación. ¿Listo para algo un poco más fuerte? ¡Apostamos que lo estás!
+Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje de programación. ¿Lista para algo un poco más fuerte? ¡Apostamos que lo estás!
 
 ## Errores
 
@@ -126,7 +126,7 @@ Tenemos nuestro primer error! Dice que los objetos de tipo "int" (números enter
 
 ## Variables
 
-Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa que tu puedes usar más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando que hace cada cosa.
+Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa que tu puedes usar más tarde. Las programadoras usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando que hace cada cosa.
 
 Supongamos que queremos crear una nueva variable llamada `nombre`:
 
@@ -171,7 +171,7 @@ Pero ¿qué pasa si usamos el nombre equivocado? ¿Puedes adivinar qué pasaría
     NameError: name 'ctiy' is not defined
 
 
-Un error! Como puedes ver, Python tiene diferentes tipos de errores y estos se llaman **NameError**. Python te dará este error si intenta utilizar una variable que no ha sido definida aún. Si más adelante te encuentra con este error, verifica tu código para ver si es que no haya ningún nombre.
+Un error! Como puedes ver, Python tiene diferentes tipos de errores y estos se llaman **NameError**. Python te dará este error si intenta utilizar una variable que no ha sido definida aún. Si más adelante te encuentras con este error, verifica tu código para ver si es que no hay ningún nombre.
 
 Juega con esto por un rato y mira que puedes hacer!
 
@@ -205,7 +205,7 @@ Sí, esta lista está vacía. No es muy útil, ¿verdad? Vamos a crear una lista
     >>> lottery = [3, 42, 12, 19, 30, 59]
 
 
-Muy bien, tenemos una lista! ¿Qué podemos hacer con él? Vamos a ver cuántos números de la lotería. ¿Tienes alguna idea de función que debe usar para eso? Ya sabes esto!
+Muy bien, tenemos una lista! ¿Qué podemos hacer con él? Vamos a ver cuántos números de la lotería. ¿Tienes alguna idea que función se debe usar para eso? Ya sabes esto!
 
     >>> len(lottery)
     6
@@ -238,7 +238,7 @@ Fácil, verdad? Si quieres añadir algo a tu lista, puedes hacerlo escribiendo e
     [59, 42, 30, 19, 12, 3, 199]
 
 
-Si desea mostrar sólo el primer número, puede hacerlo mediante el uso de **indixes**. Un index es el numero que se muestra en una lista como una ocurrencia. La computadora inicia la cuenta en 0, así que el primer objeto en la lista es en el índice 0, el siguiente es 1, y así sucesivamente. Intenta esto:
+Si desea mostrar sólo el primer número, puedes hacerlo mediante el uso de **indixes**. Un index es el numero que se muestra en una lista como una ocurrencia. La computadora inicia la cuenta en 0, así que el primer objeto en la lista es en el índice 0, el siguiente es 1, y así sucesivamente. Intenta esto:
 
     >>> print(lottery[0])
     59
@@ -267,7 +267,7 @@ Ahora, trata de escribir el siguiente comando (trata de reemplazando tu propia i
     >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 
 
-Con este comando, que acaba de crear una variable denominada `participante` con tres pares de clave y valor:
+Con este comando, que acaba de crear una variable denominada `participant` con tres pares de clave y valor:
 
 *   El `name` apunta al valor `'Ola'` (un objeto `string`),
 *   `country` apunta a `'Poland'` (otro `string`),
@@ -281,7 +281,7 @@ Puedes verificar el contenido de llaves individuales con esta sintaxis:
 
 Mira, es similar a una lista. Pero no necesitas recordar el índice - sólo el nombre.
 
-¿Qué pasa si pedimos a Python el valor de una llave que no existe? ¿Puedes adivinar? ¡Pruébalo y verá!
+¿Qué pasa si pedimos a Python el valor de una llave que no existe? ¿Puedes adivinar? ¡Pruébalo y verás!
 
     >>> participant['age']
     Traceback (most recent call last):
@@ -356,7 +356,7 @@ Le dimos a Python algunos números para comparar. Como puedes ver, Python puede 
 
 ¿Te preguntas por qué pusimos dos signos de igual `==` al lado del otro para comparar si los números son iguales? Utilizamos un solo `=` para asignar valores a las variables. Siempre, **siempre** es necesario poner dos `==` Si desea comprobar si las cosas son iguales entre sí.
 
-Dan a Python dos tareas más:
+Da a Python dos tareas más:
 
     >>> 6 >= 12 / 2
     True
@@ -402,7 +402,7 @@ Por cierto, acabas de aprender acerca de un nuevo tipo de objeto en Python. Se l
 
 Hay sólo dos objetos Boolean: - True - False
 
-Pero para que Python entender esto, es necesario siempre escribir como True (primera letra mayúscula, con el resto de la letra minúscula). **true, TRUE, tRUE no funcionan -- sólo True es correcto.** (Lo mismo aplica a False, por supuesto.)
+Pero para que Python entienda esto, es necesario siempre escribir como True (primera letra mayúscula, con el resto de la letra minúscula). **true, TRUE, tRUE no funcionan -- sólo True es correcto.** (Lo mismo aplica a False, por supuesto.)
 
 Valores booleans pueden ser variables, también! Ve aquí:
 
@@ -488,7 +488,7 @@ Ahora puedes moverte a una herramienta esencial en la programación:
 
 Un montón de cosas en el código sólo son ejecutadas cuando se cumplen las condiciones. Por eso Python tiene algo llamado **sentencias if**.
 
-Reemplace el código en el archivo **python_intro.py** por esto:
+Reemplaza el código en el archivo **python_intro.py** por esto:
 
     if 3 > 2:
 
@@ -542,7 +542,7 @@ Si 2 fuera un número mayor que 5, entonces el segundo comando sería ejecutado.
         print('Hey anonymous!')
 
 
-y ejecutado:
+y ejecutalo:
 
     $ python3 python_intro.py
     Hey Sonja!
@@ -661,9 +661,9 @@ Ahora vamos a llamar al código:
 
 Ya es la última parte. ¿Eso fue rápido, verdad? :)
 
-Como hemos mencionado, los programadores son perezosos, no les gusta repetir. Programación es automatizar las cosas, así que no queremos saludar a cada persona por su nombre manualmente, ¿verdad? Es ahí donde los ciclos son muy útil.
+Como hemos mencionado, las programadoras son perezosas, no les gusta repetir. Programación es automatizar las cosas, así que no queremos saludar a cada persona por su nombre manualmente, ¿verdad? Es ahí donde los ciclos son muy útil.
 
-¿Todavía recuerda las listas? Hagamos una lista de las chicas:
+¿Todavía recuerdas las listas? Hagamos una lista de las chicas:
 
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 
@@ -673,7 +673,7 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `Hi` que hace 
     for name in girls:
 
 
-La sentencia ~ ~ ~ for ~ ~ ~ se comporta de manera similar a la sentencia ~ ~ ~ if ~ ~ ~, ve el código a continuación ambos necesitan ser ident a cuatro espacios.
+La sentencia ~ ~ ~ for ~ ~ ~ se comporta de manera similar a la sentencia ~ ~ ~ if ~ ~ ~, ve el código a continuación ambos necesitan ser identados a cuatro espacios.
 
 Aquí está el código completo que estará en el archivo:
 
@@ -686,7 +686,7 @@ Aquí está el código completo que estará en el archivo:
         print('Next girl')
 
 
-y cuando lo eejcutamos:
+y cuando lo ejecutamos:
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -724,7 +724,7 @@ Ten en cuenta que la segunda de estas dos cifras no está incluida en la lista q
 
 ## Resumen
 
-Eso es todo. **Eres totalmente genial!** Esto realmente no fue tan fácil, así que deberías sentirte orgullosa de ti misma. Estamos definitivamente orgullosos de que hayas llegado hasta aquí!
+Eso es todo. **Eres totalmente genial!** Esto realmente no fue tan fácil, así que deberías sentirte orgullosa de ti misma. Estamos definitivamente orgullos@s de que hayas llegado hasta aquí!
 
 Agarra un cupcake y vamos al siguiente capítulo :)
 
