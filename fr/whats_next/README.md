@@ -8,7 +8,7 @@ Faites une pause et détendez-vous. Vous venez d'accomplir quelque chose de vrai
 
 Après ça, vous pouvez :
 
-*   Suivez Django Girls sur [Facebook][1] ou [Twitter][2] pour être tenu·e au courant
+*   Suivre Django Girls sur [Facebook][1] ou [Twitter][2] pour être tenu·e au courant
 
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
