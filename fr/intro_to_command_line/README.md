@@ -183,7 +183,7 @@ Windows:
     05/08/2014 07:28 PM <DIR>      test
 
 
-Félicitation! :)
+Félicitations! :)
 
 * * *
 

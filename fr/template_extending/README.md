@@ -106,7 +106,7 @@ Maintenant, ajoutez cette ligne au début du fichier:
 ```
     
 
-Vous venez de permettre à `post_list.html` d'hériter du template de `base.html`. Une dernière chose à faire: déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock content %}`. Attention à ne pas déplacer la ligne que vous venons juste d'insérer. Votre fichier doit maintenant ressembler à ceci:
+Vous venez de permettre à `post_list.html` d'hériter du template de `base.html`. Une dernière chose à faire: déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock content %}`. Attention à ne pas déplacer la ligne que vous venez juste d'insérer. Votre fichier doit maintenant ressembler à ceci:
 
 ```html
 {% extends 'blog/base.html' %}
@@ -127,4 +127,4 @@ Vous venez de permettre à `post_list.html` d'hériter du template de `base.html
 
 Et voilà! Vérifiez que votre site fonctionne toujours correctement:)
 
-> Si jamais vous rencontrez une erreur de type `TemplateDoesNotExists` qui signale que le fichier `blog/base.html` n'existe pas et que `runserver` tourne dans votre console, tuez le (en appuyant sur les touches Ctrl+C en même temps) et relancez votre server à l'aide de la commande `python manage.py runserver`.
+> Si jamais vous rencontrez une erreur de type `TemplateDoesNotExists` qui signale que le fichier `blog/base.html` n'existe pas et que `runserver` tourne dans votre console, tuez le (en appuyant sur les touches Ctrl+C en même temps) et relancez votre serveur à l'aide de la commande `python manage.py runserver`.

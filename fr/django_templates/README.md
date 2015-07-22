@@ -6,7 +6,7 @@ Il est temps d'afficher des données! Pour nous aider, Django fournit des balise
 
 En HTML, vous ne pouvez pas mettre directement du code Python car les navigateurs seraient incapables de le comprendre. Les navigateurs ne connaissent que le HTML. Nous vous avons signalé précédemment que HTML est du genre statique, alors que Python est bien plus dynamique.
 
-Les **Balises de template Django** nous permettent de transfert des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement et facilement. Cool, non?
+Les **Balises de template Django** nous permettent de transférer des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement et facilement. Cool, non?
 
 ## Template d'affichage de la liste des posts
 
@@ -28,7 +28,7 @@ Comme vous pouvez le voir, tout ce que nous avons, c'est ceci:
     [<Post: Mon second post>, <Post: Mon premier post>]
     
 
-Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous rappeler comment afficher des listes en Python. Si vous avez un trou de mémoire, allez voir dans le chapitre **Introduction to Python**. Vous avez trouvé? Avec des boucles! Dans un template Django, vous pouvez les écrire de cette façon:
+Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous rappeler comment afficher des listes en Python. Si vous avez un trou de mémoire, allez voir dans le chapitre **Introduction à Python**. Vous avez trouvé? Avec des boucles! Dans un template Django, vous pouvez les écrire de cette façon:
 
 ```html
 {% for post in posts %}
@@ -43,7 +43,7 @@ Essayez-la dans votre template.
 
  [2]: images/step2.png
 
-Ça marche! Cependant, nous aimerions plutôt les afficher à la manière des posts statiques, comme lorsque nous les avions créés dans le chapitre **Introduction to HTML**. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci:
+Ça marche! Cependant, nous aimerions plutôt les afficher à la manière des posts statiques, comme lorsque nous les avions créés dans le chapitre **Introduction au HTML**. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci:
 
 ```html
 <div>
