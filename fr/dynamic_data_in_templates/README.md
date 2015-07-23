@@ -47,9 +47,9 @@ Il ne nous reste plus qu'à mettre cette ligne de code à l'intérieur de notre 
 
 Veuillez noter que nous créons une *variable* pour notre QuerySet: `posts`. Considérez que c'est le nom de notre QuerySet. À partir de maintenant, nous allons pouvoir faire référence à notre QuerySet en utilisant ce nom.
 
-Il nous manque encore un petit quelque chose: passer notre QuerySet `posts` à notre template. Nous intéresserons plus particulièrement à celui-ci dans la section suivante.
+Il nous manque encore un petit quelque chose: passer notre QuerySet `posts` à notre template. Nous nous intéresserons plus particulièrement à celui-ci dans la section suivante.
 
-Dans la fonction `render`, nous avons déjà un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un fichier template appelé `'blog/post_list.html'`. Le dernier paramètre, qui ressemble à `{}`, va nous permettre de glisser des instructions que notre template va suivre. Nous avons par exemple de lui donner des noms: nous allons rester sur `'posts'` pour le moment :). Ça va ressembler à ça: `{'posts': posts}`. Attention! La partie située avant les `:` est entourée de guillemets simples `''`.
+Dans la fonction `render`, nous avons déjà un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un fichier template appelé `'blog/post_list.html'`. Le dernier paramètre, qui ressemble à `{}`, va nous permettre de glisser des instructions que notre template va suivre. Nous avons par exemple besoin de lui donner des noms: nous allons rester sur `'posts'` pour le moment :). Ça va ressembler à ça: `{'posts': posts}`. Attention! La partie située avant les `:` est entourée de guillemets simples `''`.
 
 Au final, notre fichier `blog/views.py` doit ressembler à ceci maintenant:
 

@@ -55,7 +55,7 @@ Allons créer notre URL dans le fichier `urls.py` pour notre *vue* `post_detail`
 
 ### URL: http://127.0.0.1:8000/post/1/
 
-Nous voulons crer une URL pour pointer Django vers une *vue* appelée `post_detail`, ce qui nous permettra d'afficher l'intégralité d'un blog post. Ajoutez la ligne `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` au fichier `blog/urls.py`. Ça devrait ressembler à ceci:
+Nous voulons créer une URL pour pointer Django vers une *vue* appelée `post_detail`, ce qui nous permettra d'afficher l'intégralité d'un blog post. Ajoutez la ligne `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` au fichier `blog/urls.py`. Ça devrait ressembler à ceci:
 
     from django.conf.urls import patterns, include, url
     from . import views
@@ -66,9 +66,9 @@ Nous voulons crer une URL pour pointer Django vers une *vue* appelée `post_deta
     )
     
 
-Une nouvelle fois, ce bout de code a l'air effrayant! Ne vous inquiétez pas, nous allons le décortiquer ensemble: - Il commence par `^`, qui désigne le "début" - `post/` signifie seulement qu'après le début, l'URL doit contenir le mot **post** et **/**. Jusque-là, tout va bien. - `(?P<pk>[0-9]+)`: ok, là, on s'accroche:). Cela signifie que Django va prendre tout ce que vous placez là et le transférer à une vue sous la forme d'une variable appelée `pk`. `[0-9]` nous dit aussi que nous ne voulons que des nombres (tout ce qui est entre 0 et 9 inclus) et non des lettres. `+` signifie qu'il faut, au minimum, un chiffre à cet endroit. Du coup, quelque chose comme `http://127.0.0.1:8000/post//` n'est pas valide tandis que `http://127.0.0.1:8000/post/1234567890/` l'est complètement! - `/` - nous avons encore besoin d'un **/** - `$` - "la fin"!
+Une nouvelle fois, ce bout de code a l'air effrayant! Ne vous inquiétez pas, nous allons le décortiquer ensemble: - Il commence par `^`, qui désigne le "début" - `post/` signifie seulement qu'après le début, l'URL doit contenir le mot **post** et **/**. Jusque-là, tout va bien. - `(?P<pk>[0-9]+)`: ok, là, on s'accroche :). Cela signifie que Django va prendre tout ce que vous placez là et le transférer à une vue sous la forme d'une variable appelée `pk`. `[0-9]` nous dit aussi que nous ne voulons que des nombres (tout ce qui est entre 0 et 9 inclus) et non des lettres. `+` signifie qu'il faut, au minimum, un chiffre à cet endroit. Du coup, quelque chose comme `http://127.0.0.1:8000/post//` n'est pas valide tandis que `http://127.0.0.1:8000/post/1234567890/` l'est complètement! - `/` - nous avons encore besoin d'un **/** - `$` - "la fin"!
 
-Concrètement, cela signifie que si vous entrez `http://127.0.0.1:8000/post/5/` dans votre barre d'adresse, Django va comprendre que vous cherchez à atteindre une *vue* appelée `post_detail` et qu'il doit communiquer l'information que `pk` est égal `5` dans cette *vue*.
+Concrètement, cela signifie que si vous entrez `http://127.0.0.1:8000/post/5/` dans votre barre d'adresse, Django va comprendre que vous cherchez à atteindre une *vue* appelée `post_detail` et qu'il doit communiquer l'information que `pk` est égal à `5` dans cette *vue*.
 
 `pk` est un raccourci pour `primary key`. Ce nom est très souvent utilisé dans les projets Django. Cependant, vous pouvez appeler cette variable comme bon vous semble, toujours dans la limite des règles suivantes: pas d'accents, pas de caractères spéciaux, des minuscules et des `_` à la place des espaces! Par exemple, à la place de `(?P<pk>[0-9]+)`, nous pourrions utiliser la variable `post_id`, ce qui donnerait: `(?P<post_id>[0-9]+)`.
 
@@ -94,7 +94,7 @@ Maintenant, nous aimerions obtenir qu'un seul blog post. Pour cela, nous allons 
     Post.objects.get(pk=pk)
     
 
-Cependant, il y a un petit problème dans cette ligne de code. Si aucun de nos `Posts` ne possèdent cette `primary key (clef primaire)` (`pk`), nous allons nous retrouver avec une super erreur bien cracra!
+Cependant, il y a un petit problème dans cette ligne de code. Si aucun de nos `Posts` ne possèdent cette `primary key (clef primaire)` (`pk`), nous allons nous retrouver avec une superbe erreur bien cracra!
 
 ![Erreur DoesNotExist][3]
 
@@ -160,7 +160,7 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 
 Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block, nous voulons que s'affiche la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non?
 
-{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose: souvenez-vous de `if ... else ..` de la section **Introduction to Python**. Dans notre exemple, nous aimerions vérifier si un post possède une date de publication (`published_date`).{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose: souvenez-vous de `if ... else ..` de la section **Introduction à Python**. Dans notre exemple, nous aimerions vérifier si un post possède une date de publication (`published_date`).{% endraw %}
 
 Ok, vous pouvez maintenant rafraîchir votre page et voir si la page `Page not found` a enfin disparu.
 

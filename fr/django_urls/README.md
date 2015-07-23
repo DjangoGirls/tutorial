@@ -83,7 +83,7 @@ Ensuite, nous pouvons ajouter notre premier pattern d'URL:
     )
     
 
-Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL `^$`. Mais qu'est-ce que `^$` signifie? C'est une formule regex magique :) Découpons-la en petits morceaux: - `^` signifie en regex "le début". C'est à partir de ce site que nous pouvons commencer à chercher les correspondances par rapport à notre pattern - `$` signifie "la fin". Ça signifie que nous arrêterons de cherchons notre pattern à cet endroit
+Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL `^$`. Mais qu'est-ce que `^$` signifie? C'est une formule regex magique :) Découpons-la en petits morceaux: - `^` signifie en regex "le début". C'est à partir de ce site que nous pouvons commencer à chercher les correspondances par rapport à notre pattern - `$` signifie "la fin". Ça signifie que nous arrêterons de chercher notre pattern à cet endroit
 
 Si nous mettons ces deux symboles ensemble, ça donne l'impression que nous sommes à la recherche d'une chaine de caractère (string) vide! C'est exactement ce que nous voulons! En effet, pour l'url resolver de Django, `http://127.0.0.1:8000/` ne fait pas partie de l'URL. Ce pattern va montrer à Django que la vue `views.post_list` doit être affichée lorsqu'un utilisateur de votre site web se rend à l'adresse `http://127.0.0.1:8000/`.
 

@@ -46,7 +46,7 @@ On essaye votre nom? Tapez votre prénom entre guillemets comme ça:
     'Ola'
     
 
-Vous venez de créer votre première chaîne de caractères! C'est une suite de caractères qui peut être traitée par un ordinateur. Une chaine de caractères doit toujours commencer et terminer par le même caractère. Ça peut être une guillement simple (`'`) ou une guillemet double (`"`). Ces guillements permettent à Python de savoir que tout ce qu'il y a à l'intérieur d'une chaîne de caractères.
+Vous venez de créer votre première chaîne de caractères! C'est une suite de caractères qui peut être traitée par un ordinateur. Une chaine de caractères doit toujours commencer et terminer par le même caractère. Ça peut être un guillemet simple (`'`) ou un guillemet double (`"`). Ces guillemets permettent à Python de savoir tout ce qu'il y a à l'intérieur d'une chaîne de caractères.
 
 On peut assembler des chaînes de caractères comme ça:
 
@@ -92,7 +92,7 @@ Vous vous demandez pourquoi des fois on appelle des fonctions avec un `.` après
 
 ### Résumé
 
-OK, assez parlé de chaînes de caractères. Jusque-là, nous découvert:
+OK, assez parlé de chaînes de caractères. Jusque-là, nous avons découvert:
 
 *   **le prompt** - taper des commandes (du code) dans le prompt Python donne des réponses dans Python
 *   **les nombres et les chaînes de caractères** - dans Python, les nombres sont utilisés pour faire des calculs, et les chaînes de caractères pour manipuler du texte
@@ -171,9 +171,9 @@ Mais qu'est-ce qui se passe si on utilise le mauvais nombre? Vous sauriez devine
     NameError: name 'names' is not defined
     
 
-Une erreur! Comme vous pouvez le voir, Python a différents types d'erreurs, et celle-ci est une **NameError**. Python vous donne cette erreur quand vous essayez d'utiliser une variable qui n'a pas encore été définie. Si vous rencontrez cette erreur par la suite, vérifier dans votre code que vous n'avez pas fait une faute de frappe dans une variable.
+Une erreur! Comme vous pouvez le voir, Python a différents types d'erreurs, et celle-ci est une **NameError**. Python vous donne cette erreur quand vous essayez d'utiliser une variable qui n'a pas encore été définie. Si vous rencontrez cette erreur par la suite, vérifiez dans votre code que vous n'avez pas fait une faute de frappe dans une variable.
 
-Jouez un peu avez ça, et voyez ce que vous arrivez à faire!
+Jouez un peu avec ça, et voyez ce que vous arrivez à faire!
 
 ## La fonction print
 
@@ -200,7 +200,7 @@ Allez-y, créez une liste:
     []
     
 
-Oui, cette liste est vide. Pas très utile, hey? Créons maintenant une liste de numéro de loterie. Nous ne voulons pas nous répéter tout le donc, donc mettons la dans une variable:
+Oui, cette liste est vide. Pas très utile, hey? Créons maintenant une liste de numéros de loterie. Nous ne voulons pas nous répéter tout le temps, donc mettons la dans une variable:
 
     >>> lottery = [3, 42, 12, 19, 30, 59]
     
@@ -222,7 +222,7 @@ Hé oui! `len()` peut aussi vous donner le nombre d'objets dans une liste. Prati
     [3, 12, 19, 30, 42, 59]
     
 
-Comme vous pouvez le voir, les nombres de la liste sont maintenant triés sur plus petit au plus grand. Bravo!
+Comme vous pouvez le voir, les nombres de la liste sont maintenant triés du plus petit au plus grand. Bravo!
 
 Est-ce qu'on peut inverser l'ordre? Faisons ça!
 
@@ -254,7 +254,7 @@ Vous pouvez trouver une liste complète des méthodes disponibles pour les liste
 
 ## Dictionnaires
 
-Un dictionnaire est un peu comme une liste, mais on accède aux valeurs en utilisant une clef plutôt qu'un indice. Une clef peut être n'importe quelle chaîne de caractère ou n'importe quel nombre. La syntaxe pour définir un dictionnaire vide est:
+Un dictionnaire est un peu comme une liste, mais on accède aux valeurs en utilisant une clef plutôt qu'un indice. Une clef peut être n'importe quelle chaîne de caractères ou n'importe quel nombre. La syntaxe pour définir un dictionnaire vide est:
 
     >>> {}
     {}
@@ -269,7 +269,7 @@ Maintenant, essayer d'écrire la commande suivante (et mettez vos propres inform
 
 Avec cette commande, vous venez de créer une variable nommée `participant` avec trois paires clef-valeur:
 
-*   La clef `name` pointe vers la valeur `'Ola'` (un object `chaîne de caractère`),
+*   La clef `name` pointe vers la valeur `'Ola'` (un object `chaîne de caractères`),
 *   `country` pointe vers `'Poland'` (une autre ` chaîne de caractères`),
 *   et `favorite_numbers` pointe vers `[7, 42, 92]` (une `liste` contenant trois nombres).
 
@@ -281,7 +281,7 @@ Vous pouvez vérifier le contenu de chaque clef avec cette syntaxe:
 
 Vous voyez, c'est un peu comme une liste. Sauf que l'on a pas besoin de se souvenir de l'indice, juste du nom.
 
-Qu'est ce que se passe quand on demande à Python la valeur correspondant à une clef qui n'existe pas? Pouvez vous le deviner? Essayons voir!
+Qu'est ce que se passe quand on demande à Python la valeur correspondant à une clef qui n'existe pas? Pouvez vous le deviner? Essayons pour voir!
 
     >>> participant['age']
     Traceback (most recent call last):
@@ -354,7 +354,7 @@ Comparer des choses, c'est vachement important en programmation. Quelle est la c
 
 On a donné à Python des nombres à comparer. Comme vous pouvez voir, Python peut comparer des nombres, mais aussi des résultats de méthodes. Pas mal, non?
 
-Vous vous demander pourquoi on a mis deux signes `==` côte à côte pour savoir si deux nombres sont égaux? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales.
+Vous vous demandez pourquoi on a mis deux signes `==` côte à côte pour savoir si deux nombres sont égaux? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales.
 
 Donnons encore un peu de boulot à Python:
 
@@ -364,7 +364,7 @@ Donnons encore un peu de boulot à Python:
     False
     
 
-`>` et `<` sont faciles, mais qu'est ce que `>=` et `<=` veulent dire? Ils se lisent comment ça:
+`>` et `<` sont faciles, mais qu'est ce que `>=` et `<=` veulent dire? Ils se lisent comme ça:
 
 *   x `>` u veut dire: x est plus grand que y
 *   x `<` y veut dire: x est plus petit que y
@@ -398,7 +398,7 @@ Voilà, Python n'est pas capable de comparer un nombre (`int`) et une chaîne de
 
 ## Booléen
 
-Au passage, vous venez de découvrir un nouveau type d'objets en Python. On l'appelle **Booléen**, et c'est probablement le type le plus simple que existe.
+Au passage, vous venez de découvrir un nouveau type d'objets en Python. On l'appelle **Booléen**, et c'est probablement le type le plus simple qui existe.
 
 Il n'y a que deux objets Booléens: True et False
 
@@ -423,7 +423,7 @@ Entrainez-vous et amusez-vous avec les Booleéns en essayant de lancer les comma
 *   `True and True`
 *   `False and True`
 *   `True or 1 == 1`
-*   `1!= 2`
+*   `1 != 2`
 
 Bravo! Les Booléens sont une des fonctionnalités les plus cools en programmation, et vous venez d'apprendre comment les utiliser!
 
@@ -453,7 +453,7 @@ Tout à l'heure, dans la section [L'éditeur de texte][2], nous avons choisi un 
 
 Alors forcément, vous avez maintenant pas mal de connaissances en python, donc n'hésitez pas à écrire du code avec ce que vous avez appris aujourd'hui.
 
-Sauvegardons maintenant le fichier en lui donnant un nom descriptif. On n'a qu'à l'appeler **python_intro.py** et le sauvegarder sur le bureau. On peut lui n'importe quel nom, tant qu'on s'assure que le nom de fichier se termine par **.py**, ça permet à l'ordinateur de savoir que c'est un **fichier exécutable python** et que Python peut l'exécuter.
+Sauvegardons maintenant le fichier en lui donnant un nom descriptif. On n'a qu'à l'appeler **python_intro.py** et le sauvegarder sur le bureau. On peut lui donner n'importe quel nom, tant qu'on s'assure que le nom de fichier se termine par **.py**, ça permet à l'ordinateur de savoir que c'est un **fichier exécutable python** et que Python peut l'exécuter.
 
 Une fois que le fichier est sauvegardé, on peut le lancer! En utilisant les compétences que vous avez apprises dans la section sur la ligne de commande, utilisez le terminal pour **changer le dossier courant** vers le bureau.
 
@@ -486,7 +486,7 @@ Et maintenant, passons à un autre outil essentiel de la programmation:
 
 ## If...elif...else
 
-Quand on code, il y a plein choses qui ne doivent être exécutées que dans certaines conditions. Pour ça, Python a quelque chose qui s'appelle le l'instruction **if**.
+Quand on code, il y a plein de choses qui ne doivent être exécutées que dans certaines conditions. Pour ça, Python a quelque chose qui s'appelle l'instruction **if**.
 
 Remplacer le code dans votre fichier **python_intro.py** par ça:
 
@@ -501,7 +501,7 @@ Si on sauvegardait ça et qu'on le lançait tel quel, on aurait l'erreur suivant
     SyntaxError: unexpected EOF while parsing
     
 
-Python s'attend à se qu'on lui donne des instructions sur ce qu'il faut exécuter quand la condition `3 > 2` est vraie (ou plutôt, `True`). Faisons-lui afficher "Ça marche!". Remplacez le code dans **python_intro.py** par ça:
+Python s'attend à ce qu'on lui donne des instructions sur ce qu'il faut exécuter quand la condition `3 > 2` est vraie (ou plutôt, `True`). Faisons-lui afficher "Ça marche!". Remplacez le code dans **python_intro.py** par ça:
 
     if 3 > 2:
         print('Ça marche!')
@@ -557,7 +557,7 @@ Avec ces trois derniers exercices, vous avez appris:
 *   **comparer des choses** - en Python, vous pouvez comparer des choses avec `>`, `>=`, `==`, `<=`, `<` et avec les opérateurs `and`, `or`
 *   **Booléen** - un type d'objet qui n'a que deux valeurs possibles: `True` et `False`
 *   **Sauvegarder des fichiers** - stocker votre code dans des fichiers pour pouvoir écrire des programmes plus longs.
-*   **if...elif...else** - des instructions que vous permettent de n'exécuter du code que dans certaines conditions.
+*   **if...elif...else** - des instructions qui vous permettent de n'exécuter du code que dans certaines conditions.
 
 Il est temps d'attaquer la dernière partie de ce chapitre!
 
@@ -585,7 +585,7 @@ Lançons le pour voir ce qui se passe:
     How are you?
     
 
-C'était facile! Construisons maintenant notre première fonction avec des paramètres. Dans l'exemple précédent, on avait une fonction que dit "Salut" à la personne qui la lance. Faisons pareil, mais avec un nom:
+C'était facile! Construisons maintenant notre première fonction avec des paramètres. Dans l'exemple précédent, on avait une fonction qui dit "Salut" à la personne qui la lance. Faisons pareil, mais avec un nom:
 
     def hi(name):
     
@@ -603,7 +603,7 @@ Comme vous le voyez, on a donné à notre fonction un paramètre appelé `name`:
     hi()
     
 
-Comme vous voyez, on a dur mettre deux indentations avant la fonction `print`, parce que le `if` a besoin de savoir ce qui doit se passer quand la condition est vraie. Voyons voir comment ça marche:
+On a du mettre deux indentations avant la fonction `print`, parce que le `if` a besoin de savoir ce qui doit se passer quand la condition est vraie. Voyons voir comment ça marche:
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -612,7 +612,7 @@ Comme vous voyez, on a dur mettre deux indentations avant la fonction `print`, p
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oups, une erreur. Heureusement, Python nous donne un message d'erreur assez utile. Il nous dit que la fonction `hi()` (celle qu'on a définie) a besoin d'un argument (qu'on a appelé `name`) et que nous avons oublier de le passer quand nous avons appelé la fonction. Corrigeons la dernière ligne du fichier:
+Oups, une erreur. Heureusement, Python nous donne un message d'erreur assez utile. Il nous dit que la fonction `hi()` (celle qu'on a définie) a besoin d'un argument (qu'on a appelé `name`) et que nous avons oublié de le passer quand nous avons appelé la fonction. Corrigeons la dernière ligne du fichier:
 
     hi("Ola")
     
@@ -623,7 +623,7 @@ et relançons le:
     Hi Ola!
     
 
-Ey si on change le nom?
+Et si on change le nom?
 
     hi("Sonja")
     
@@ -634,7 +634,7 @@ et qu'on le lance:
     Hi Sonja!
     
 
-Et maintenant, qu'est-ce qui se passera si on met un autre nom (Ni Ola ni Sonja)? Essayez et voyez si vous arriver à deviner. Ça devrait afficher ça:
+Et maintenant, qu'est-ce qui se passera si on met un autre nom (Ni Ola ni Sonja)? Essayez et voyez si vous arrivez à deviner. Ça devrait afficher ça:
 
     Hi anonymous!
     
@@ -661,7 +661,7 @@ Bravo! Vous venez d'apprendre à écrire des fonctions :)!
 
 Et voici la dernière partie. Ça a été vite, non? :)
 
-On l'a déjà dit: les programmeur⋅euse⋅s sont fénéant⋅e⋅s, et n'aiment pas se répéter. Programmer, c'est automatiser des choses: on ne veut pas avoir à saluer chaque personne par son nom manuellement, non? C'est là que les boucles interviennent.
+On l'a déjà dit: les programmeur⋅euse⋅s sont fainéant⋅e⋅s, et n'aiment pas se répéter. Programmer, c'est automatiser des choses: on ne veut pas avoir à saluer chaque personne par son nom manuellement, non? C'est là que les boucles interviennent.
 
 Vous vous souvenez des listes? Faisons une liste de Django Girls:
 

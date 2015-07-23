@@ -10,7 +10,7 @@ Je suppose que vous n'avez pas envie de partir de rien et de tout construire vou
 
 ## Utilisons Bootstrap!
 
-Bootsrap est l'un des frameworks HTML et CSS les plus populaires. Il est utilisé pour créer de très beaux sites web: http://getbootstrap.com/
+Bootstrap est l'un des frameworks HTML et CSS les plus populaires. Il est utilisé pour créer de très beaux sites web: http://getbootstrap.com/
 
 Il fut codé par d'anciens programmeurs de chez Twitter et est maintenant développé par des bénévoles aux quatre coins du monde.
 
@@ -108,7 +108,7 @@ Afin que nos modifications fonctionnent, nous devons aussi signaler à notre tem
 ```
     
 
-Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés: en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci:
+Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés: en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Bootstrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Bootstrap, ajoutez ceci:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -174,7 +174,7 @@ Et si nous changions aussi la police de caractères de notre entête ? Collez ce
 
 Cette ligne nous permet d'importer la police de caractères *Lobster* depuis Google Fonts (https://www.google.com/fonts).
 
-Maintenant, ajouter la ligne `font-family: 'Lobster';` dans votre fichier CSS `static/css/blog.css`. Attention à bien la placer à l'intérieur du block déclaratif `h1 a` (c'est à dire entre les accolades `{` et `}`). Ensuite, rechargez la page. Votre code doit ressembler à ceci:
+Maintenant, ajouter la ligne `font-family: 'Lobster';` dans votre fichier CSS `static/css/blog.css`. Attention à bien la placer à l'intérieur du bloc déclaratif `h1 a` (c'est à dire entre les accolades `{` et `}`). Ensuite, rechargez la page. Votre code doit ressembler à ceci:
 
 ```
 h1 a {

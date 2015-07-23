@@ -33,7 +33,7 @@ Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulair
 
 Ensuite, nous avons une `Meta Classe` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seul `title` et `text` apparaissent dans notre formulaire, car nous obtiendrons les autres données différemment. En effet, nous nous attendons à ce qu'`author` soit le nom de la personne connectée (en l’occurrence, vous! ) et `created_date` soit générée automatiquement lors de la création du post (cf code que nous avons écrit).
+Enfin, nous précisons quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seul `title` et `text` apparaissent dans notre formulaire, car nous obtiendrons les autres données différemment. En effet, nous nous attendons à ce qu'`author` soit le nom de la personne connectée (en l’occurrence, vous! ) et `created_date` soit générée automatiquement lors de la création du post (cf code que nous avons écrit).
 
 Et voilà, c'est tout! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
@@ -321,7 +321,7 @@ Lorsque vous cliquez dessus, vous devez voir le formulaire du blog post apparaî
 
 Essayez de manipuler un peu ce que vous venez de créer: ajoutez du texte, changez le titre puis sauvegardez ces changements!
 
-Bravo! Votre application se complexifie et contient de plus en plus de fonctionnalité!
+Bravo! Votre application se complexifie et contient de plus en plus de fonctionnalités!
 
 Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée: https://docs.djangoproject.com/en/1.7/topics/forms/
 
