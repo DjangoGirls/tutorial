@@ -8,9 +8,9 @@ is copyrighted by Markus Zapke-Gründemann et al.
 
 ## Virtual environment
 
-Before we install Django, we'll get you to install an extremely useful tool that will help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended not to - starting with the best possible setup will save you a lot of trouble in the future!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). It will isolate your Python/Django setup on a per-project basis, meaning that any changes you make to one website won't affect any others you're also developing. Neat, right?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name\` (where `Name` is the name of your login).
 
@@ -38,7 +38,7 @@ It will look like this:
 
     ~/djangogirls$ python3 -m venv myvenv
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short - you'll be referencing it a lot!
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > __NOTE:__ Initiating the virtual environment on Ubuntu 14.04 like this currently gives the following error:
 
@@ -52,7 +52,7 @@ It will look like this:
 
 ## Working with virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files). All we want to do now is start it by running:
+The command above will create a directory called `myvenv` (or whatever name you chose). This directory contains our virtual environment (basically a bunch of directory and files). We can start it by running:
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
 

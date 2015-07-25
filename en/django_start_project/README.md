@@ -9,12 +9,12 @@ is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a simple blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us: a bunch of directories and files that we will later use.
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure in order to be able to find important things.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. You can do that by typing the following command: `myvenv\Scripts\activate` on Windows or
-`myvenv/bin/activate` on Mac OS / Linux.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `myvenv\Scripts\activate` on Windows or
+`myvenv/bin/activate` on Mac OS / Linux will do this for you.
 
 In your MacOS or Linux console you should run the following command; **don't forget to add the period (or dot) `.` at the end**:
 
@@ -47,7 +47,7 @@ The `settings.py` file contains the configuration of your website.
 
 Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Let's ignore the other files for now - we won't change them. The only thing to remember is not to delete them by accident!
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
 
 ## Changing settings
@@ -122,11 +122,11 @@ If you are on Windows and this fails with `UnicodeDecodeError`, use this command
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
 
 
-Now all you need to do is check that your website is running - open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
 
     http://127.0.0.1:8000/
 
-The web server will take over your command prompt until you stop it: to type more commands either open a new terminal window (and don't forget to activate your virtualenv in it too), or stop the web server by switching back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
+The web server will take over your command prompt until you stop it. To type more commands whilst it is running open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
