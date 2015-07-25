@@ -131,7 +131,7 @@ We can also reverse the ordering by adding `-` at the beginning:
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 
 
-### Chaining querysets
+### Chaining QuerySets 
 
 You can also combine QuerySets by **chaining** them together:
 
