@@ -1,6 +1,6 @@
 # Django models
 
-What we want to create now is something that will store all posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
 ## Objects
 
@@ -31,7 +31,7 @@ So basically the idea is to describe real things in code with properties (called
 
 How will we model blog posts then? We want to build a blog, right?
 
-We need to answer the question: what is a blog post? What properties should it have?
+We need to answer the question: What is a blog post? What properties should it have?
 
 Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it - so we need an author. Finally, we want to know when the post was created and published.
 
@@ -47,7 +47,7 @@ What kind of things could be done with a blog post? It would be nice to have som
 
 So we will need a `publish` method.
 
-Since we already know what we want to achieve, we can start modeling it in Django!
+Since we already know what we want to achieve, let's start modeling it in Django!
 
 ## Django model
 
@@ -123,9 +123,9 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you used two undescore characters (`_`) on each side of `str`. Those are used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two undescore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
-It is scary, right? But no worries, we will explain what these lines mean!
+It looks scary, right? But no worries we will explain what these lines mean!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
@@ -142,13 +142,13 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 - `models.DateTimeField` - this is a date and time.
 - `models.ForeignKey` - this is a link to another model.
 
-We will not explain every bit of code here, since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
-What about `def publish(self):`? It is exactly our `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method, if you want. The naming rule is that we use lowercase and underscores instead of whitespaces (i.e. if you want to have a method that calculates average price you could call it `calculate_average_price`).
+What about `def publish(self):`? It is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method, if you want. The naming rule is that we use lowercase and underscores instead of whitespaces. For example,  a method that calculates average price could be called `calculate_average_price`.
 
-Methods very often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
-If something is still not clear about models, feel free to ask your coach! We know it is very complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Create tables for models in your database
 
