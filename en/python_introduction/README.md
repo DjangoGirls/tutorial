@@ -525,7 +525,30 @@ and executed:
     $ python3 python_intro.py
     Hey Sonja!
 
-See what happened there?
+See what happened there? `elif` lets you add extra tests that run if the previous tests fail. 
+
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
+
+```python
+volume = 57
+if volume < 20:
+    print("It's kinda quiet.")
+elif 20 <= volume < 40:
+    print("It's nice for background music")
+elif 40 <= volume < 60:
+    print("Perfect, I can hear all the details")
+elif 60 <= volume < 80:
+    print("Nice for parties")
+elif 80 <= volume < 100:
+    print("A bit loud!")
+else:
+    print("My ears are hurting! :(")
+```
+
+Python runs through each test in sequence and prints:
+     
+    $ python3 python_intro.py
+    Perfect, I can hear all the details
 
 ### Summary
 
