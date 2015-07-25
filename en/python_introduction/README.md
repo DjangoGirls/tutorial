@@ -525,7 +525,7 @@ and executed:
     $ python3 python_intro.py
     Hey Sonja!
 
-See what happened there? `elif` lets you add extra tests that run if the previous tests fail. 
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail. 
 
 You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
