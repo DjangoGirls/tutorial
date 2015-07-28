@@ -8,7 +8,16 @@ As you learned, a website has to be located on a server. There are a lot of serv
 
 The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-We'll use GitHub as a stepping stone to transport our code to and from PythonAnywhere.
+We'll use GitHub as a stepping stone to transport our code to and from PythonAnywhere.  Once the initial setup is complete, your workflow will look like:
+
+1. Modify your program on your own computer
+2. Test your program (`python manage.py runserver`)
+3. Save your work in your local change tracking system, called "git" (see below)
+4. Save a copy of your work on a public git server, namely GitHub
+5. Log into the server hosting your web application, PythonAnywhere in this tutorial
+6. Tell the application host to get the current version of your application from a public place
+7. Tell PythonAnywhere to reload your application
+8. Check the newly deployed version for any problems
 
 
 # Git
@@ -48,6 +57,8 @@ db.sqlite3
 And save it as `.gitignore` in the top-level "djangogirls" folder.
 
 > **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
+
+> **Note** Did you notice that "db.sqlite3" was ignored?  That file is where we keep all of our posts.  Why would we skip it?  Your local system is your test setup and it is configured to use SQLite (`mysite/settings.py`).  Your application host, PythonAnywhere, will use something else.  In the case of PythonAnywhere, they use a more robust database called MySQL which holds more records and can deal with a lot more site visitors than SQLite can handle.  SQLite is perfect for test and development.  **All of the posts and users in your test environment are __NOT__ copied to PythonAnywhere, which leaves the deployed application feeling empty at first.  You will have to create users and posts just like you did in your test environment.**  Remember that your posts and user accounts are data.  Data is treated separately from your program.  Your test database is a great place to keep a copy of data that broke your system in the past as a way to make sure bugs stay closed days and months later as you improve your application.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help stop any surprises from happening, such as wrong files being added or commited. The `git status` command returns information about any untracked/modifed/staged files, branch status, and much more. The output should be similar to:
 
