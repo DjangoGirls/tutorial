@@ -1,10 +1,10 @@
 # ¿Qué sigue?
 
-Felicitaciones! **Eres increible**. Estamos orgullosos! <3
+¡Date muchas felicitaciones! **¡Eres increíble!**. ¡Estamos orgullosos! <3
 
 ### ¿Qué hacer ahora?
 
-Toma un descanso y relajate. Acabas de hacer algo realmente grande.
+Toma un descanso y relájate. Acabas de hacer algo realmente grande.
 
 Después de eso, asegúrate de:
 
@@ -13,22 +13,22 @@ Después de eso, asegúrate de:
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
 
-### ¿Me puede recomendar cualquier recurso adicional?
+### ¿Me puedes recomendar recursos adicionales?
 
 ¡Sí! En primer lugar, sigue adelante y prueba nuestro libro llamado [Django Girls Tutorial: Extensiones][3].
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Más adelante, puedes intentar los recursos enumerados a continuación. Todos muy recomendados!
+Más adelante, puedes intentar los recursos listados a continuación. ¡Están todos muy recomendados! 
 
-- [Django's official tutorial][4]
-- [New Coder tutorials][5]
-- [Code Academy Python course][6]
-- [Code Academy HTML & CSS course][7]
-- [Django Carrots tutorial][8]
-- [Learn Python The Hard Way book][9]
-- [Getting Started With Django video lessons][10]
-- [Two Scoops of Django: Best Practices for Django book][11] 
+- [Django's official tutorial][4] 
+- [New Coder tutorials][5] 
+- [Code Academy Python course][6] 
+- [Code Academy HTML & CSS course][7] 
+- [Django Carrots tutorial][8] 
+- [Learn Python The Hard Way book][9] 
+- [Getting Started With Django video lessons][10] 
+- [Two Scoops of Django: Best Practices for Django][11] book
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
