@@ -44,7 +44,7 @@ How about your name? Type your first name in quotes like this:
     >>> "Ola"
     'Ola'
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes - they tell Python that what's inside of them is a string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
