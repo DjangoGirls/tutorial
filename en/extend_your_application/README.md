@@ -154,7 +154,7 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
 $ git status
 $ git add -A .
 $ git status
-$ git commit -m "Added views to create/edit blog post inside the site."
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push
 ```
 
