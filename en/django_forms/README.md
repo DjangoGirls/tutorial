@@ -189,14 +189,13 @@ We check if the form is valid and if so, we can save it!
 
 ```python
 if form.is_valid():
-    post = form.save(commit=False)
+    post = form.get_updated_model()
     post.author = request.user
     post.published_date = timezone.now()
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
-`post.save()` will preserve changes (adding author) and a new blog post is created!
+Basically, we have two things here: we get a `post` model containing the new data from the form and we add an author (since there was no `author` field in the `PostForm` and this field is required!), as well as a published date. Then`post.save()` saves the model into the database and a new blog post is created!
 
 Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
@@ -219,7 +218,7 @@ def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
+            post = form.get_updated_model()
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
@@ -296,7 +295,7 @@ def post_edit(request, pk):
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
-            post = form.save(commit=False)
+            post = form.get_updated_model()
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
