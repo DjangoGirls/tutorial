@@ -194,12 +194,13 @@ Comprobamos que el formulario es válido y, si es así, ¡lo podemos salvar!
 
 ```python
     if form.is_valid():
-        post = form.save(commit=False)
+        post = form.get_updated_model()
         post.author = request.user
+        post.published_date = timezone.now()
         post.save()
 ```    
 
-Básicamente, tenemos que hacer dos cosas aquí: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` todavía - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo a autor) y se creará una nuevo post en el blog.
+Básicamente, tenemos que hacer dos cosas aquí: obtenemos un modelo actualizado con los nuevos datos del formulario y le añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio), además de la fecha de publicación. A continuación `post.save()` guarda el modelo en la base de datos, y se crea un nuevo post en el blog!
 
 Por último, sería genial si podemos inmediatamente ir a la página `post_detail` del nuevo post de blog, ¿no? Para hacerlo necesitamos importar algo más:
 
@@ -222,8 +223,9 @@ Bien, hablamos mucho, pero probablemente queremos ver como se ve ahora la *vista
         if request.method == "POST":
             form = PostForm(request.POST)
             if form.is_valid():
-                post = form.save(commit=False)
+                post = form.get_updated_model()
                 post.author = request.user
+                post.published_date = timezone.now()
                 post.save()
                 return redirect('blog.views.post_detail', pk=post.pk)
         else:
@@ -298,8 +300,9 @@ Abramos el archivo `blog/views.py` y añadamos al final esta línea:
         if request.method == "POST":
             form = PostForm(request.POST, instance=post)
             if form.is_valid():
-                post = form.save(commit=False)
+                post = form.get_updated_model()
                 post.author = request.user
+                post.published_date = timezone.now()
                 post.save()
                 return redirect('blog.views.post_detail', pk=post.pk)
         else:
