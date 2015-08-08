@@ -42,7 +42,7 @@ This is simple: we import model `Post` from `blog.models`. Let's try displaying 
     >>> Post.objects.all()
     [<Post: my post title>, <Post: another post title>]
 
-It's a list of the posts we created earlier! We created these posts using the Django admin interface. However, now we want to create new posts using python, so how do we do that?
+It's a list of the posts we created earlier! We created these posts using the Django admin interface. However, now we want to create new posts using Python, so how do we do that?
 
 
 ### Create object
