@@ -2,23 +2,24 @@
 
 > **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
-Until now your website was only available on your computer, now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
+Until now, your website was only available on your computer.  Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
 As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
 The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-We'll use GitHub as a stepping stone to transport our code to and from PythonAnywhere.  Once the initial setup is complete, your workflow will look like:
+In the future, after completing this section, you will follow these steps to update your code on PythonAnywhere:
 
 1. Modify your program on your own computer
 2. Test your program (`python manage.py runserver`)
-3. Save your work in your local change tracking system, called "git" (see below)
-4. Save a copy of your work on a public git server, namely GitHub
-5. Log into the server hosting your web application, PythonAnywhere in this tutorial
-6. Tell the application host to get the current version of your application from a public place
-7. Tell PythonAnywhere to reload your application
-8. Check the newly deployed version for any problems
+3. Commit your chages to Git using `git add -A .` and `git commit -m "[Commit message]"`
+4. Push your changes to GitHub, using `git push` 
+5. At PythonAnywhere, open a bash console and change the working directory to your program (`cd djangogirls`)
+6. In the bash console, use Git to contact GitHub and get the latest version of your program with `git pull`
+7. Use the PythonAnywhere "Web" tab to reload your program
+8. Check the new, public version of your program for any problems
 
+Remember that the posts and users in the public version will be different than the posts and users you see on your own computer.
 
 # Git
 
@@ -314,4 +315,7 @@ The default page for your site should say "Welcome to Django", just like it does
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
 
+# Some of these words confuse me  
+
+An _application_, _app_, _program_, and _code_ are generally the same thing.  The words "applications," "apps," and "programs" mean the same thing and are interchangeable.  In this tutorial, there is only one application, `djangogirls`.  That application is made of many pieces, some of which are Python code (the `.py` extension), although Python is also stitched into your templates with the `{%`, `%}`, `{{`, and `}}` tags.  The word "code" can be used to mean the collection of pieces of your program or it can reference just one specific file. When a person sounds like they are talking about the collection of pieces with phrases like "check in your code," they are including static elements like CSS, Javascript, and images.  One application has lots of pieces, only some of which are Python code.
 
