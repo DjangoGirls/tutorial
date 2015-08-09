@@ -186,7 +186,7 @@ We'll find out a bit more about static files later in the tutorial, when we edit
 
 For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. At the moment these are mostly files that make the admin site look pretty.
 
-    $ python manage.py collectstatic
+    (mvenv) $ python manage.py collectstatic
 
     You have requested to collect static files at the destination
     location as specified in your settings:
