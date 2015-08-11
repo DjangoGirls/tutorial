@@ -209,7 +209,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
+    float: none;
     color: #828282;
 }
 
@@ -258,7 +258,7 @@ in the `blog/templates/blog/post_list.html` with this:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        <p>published: {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaks }}</p>
