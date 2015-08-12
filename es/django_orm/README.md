@@ -13,146 +13,132 @@ Es más fácil de aprender con ejemplos. Vamos a intentarlo, ¿de acuerdo?
 Abre la consola y escribe este comando:
 
     (myvenv) ~/djangogirls$ python manage.py shell
-
+    
 
 El resultado debería ser:
 
     (InteractiveConsole)
     >>>
-
+    
 
 Ahora estás en la consola interactiva de Django. Es como la consola de Python, pero con un toque de magia Django :). Puedes utilizar todos los comandos Python aquí también, por supuesto.
 
 ### Ver todos los objetos
 
-Vamos a mostrar todos nuestros objetos Posts primero. Puedes hacerlo con el siguiente comando:
+Vamos a mostrar todos nuestros posts primero. Puedes hacerlo con el siguiente comando:
 
     >>> Post.objects.all()
     Traceback (most recent call last):
           File "<console>", line 1, in <module>
     NameError: name 'Post' is not defined
+    
 
-
-¡Uy! Apareció un error. Nos dice que no hay ningún objeto Post. Esto es correcto, nos olvidamos de importarlo primero!
+¡Uy! Apareció un error. Nos dice que no hay ningún objeto Post. Esto es correcto, ¡nos olvidamos de importarlo primero!
 
     >>> from blog.models import Post
+    
 
-
-Esto es simple: importamos el modelo `Post` de `blog.models`. Vamos a intentar mostrar todos los Posts nuevamente:
+Esto es simple: importamos el modelo `Post` de `blog.models`. Vamos a intentar mostrar todos los posts nuevamente:
 
     >>> Post.objects.all()
-    []
+    [<Post: my post title>, <Post: another post title>]
+    
 
-
-Es una lista vacía. Esto es correcto, ¿verdad?¡Todavía no hemos añadido ningún Post! Vamos a arreglarlo.
+Esta es una lista de las posts creadas anteriormente. Hemos creado estos posts usando la interfaz del administrador de Django. Sin embargo, ahora queremos crear nuevos posts usando Python, ¿cómo lo hacemos?
 
 ### Crear objetos
 
-Esta es la forma de crear un objeto Post en la base de datos:
+Esta es la forma de crear un nuevo objeto Post en la base de datos:
 
     >>> Post.objects.create(author=me, title='Sample title', text='Test')
-
+    
 
 Pero hay un ingrediente faltante: `me`. Necesitamos pasar una instancia del modelo `User` como autor. ¿Cómo hacemos eso?
 
 Primero importemos el modelo User:
 
     >>> from django.contrib.auth.models import User
-
+    
 
 ¿Qué usuarios tenemos en nuestra base de datos? Veamos:
 
     >>> User.objects.all()
-    []
-
-
-¡Ninguno! Creemos un usuario:
-
-    >>> User.objects.create(username='ola')
-    <User: ola>
-
-
-Veamos nuevamente qué usuarios tenemos:
-
-    >>> User.objects.all()
     [<User: ola>]
+    
 
-
-¡Genial! Ahora usemos una instancia del usuario:
+Este es el super usuario que creamos anteriormente, Vamos a obtener una instancia de ese usuario ahora:
 
     me = User.objects.get(username='ola')
+    
 
+Como puedes ver, hicimos un `get` de un `User` con el `username` que sea igual a 'ola'. ¡Genial! Acuérdate de poner tu nombre de usuario para obtener tu usuario.
 
-Como puedes ver, ahora `get` un `User` con un `username` que es igual a 'ola'. Limpio! Por supuesto, tienes que ajustarlo a tu nombre de usuario.
+Ahora finalmente podemos crear nuestro primer post:
 
-Ahora por fin podemos crear nuestro primer post:
+    >>> Post.objects.create(author=me, title='Sample title', text='Test')
+    
 
-    >>> Post.objects.create(author = me, title = 'Titulo simple', text = 'Test')
-
-
-¡Hurra! ¿Quieres comprobar si ha funcionado?
+¡Hurra! ¿Quieres probar si funcionó?
 
     >>> Post.objects.all()
-    [<Post: Título simple>]
-
+    [<Post: Sample title>]
+    
 
 ### Agrega más posts
 
-Ahora puedes divertirte un poco y añadir más posts para ver cómo funciona. Añade 2 - 3 más y avanzar a la siguiente parte.
+Ahora puedes divertirte un poco y añadir más posts para ver cómo funciona. Añade 2 ó 3 más y avanza a la siguiente parte.
 
-### Filtrar Objetos
+### Filtrar objetos
 
-En gran parte los QuerySets tienen la habilidad de filtrar. Digamos que queremos encontrar todos los mensajes que son escritos por el usuario ola. Utilizaremos el `filter` en lugar de `all` en `Post.objects.all()`. Entre paréntesis indicará qué condición(es) debe coincidir por una entrada de blog en nuestro queryset. En nuestra situación es `author` que es igual a `me`. La manera de escribirlo en Django es: `author = me`. Ahora nuestro código tiene este aspecto:
+Una parte importante de los QuerySets es la habilidad para filtrarlos. Digamos que queremos encontrar todos los posts cuyo autor es el User ola. Usaremos `filter` en vez de `all` en `Post.objects.all()`. En los paréntesis estableceremos qué condición o conduciones deben cumplirse por un post del blog para terminar en nuestro queryset. En nuestro caso sería `author` es igual a `me`. La forma de escribirlo en Django es: `author=me`. Ahora nuestro bloque de código se ve como esto:
 
     >>> Post.objects.filter(author=me)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    
 
-
-¿O tal vez queremos ver todos los mensajes que contienen una palabra 'título' en el campo `title`?
+¿O tal vez querramos ver todos los posts que contengan la palabra 'title' en el campo `title`?
 
     >>> Post.objects.filter(title__contains='title')
     [<Post: Sample title>, <Post: 4th title of post>]
+    
 
+> **Nota** Hay dos guiones bajos (`_`) entre `title` y `contains`. Django ORM utiliza esta sintaxis para separar los nombres de los campos ("title") y operaciones o filtros ("contains"). Si sólo utilizas un guión bajo, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
 
-> **Nota** Hay dos caracteres de subrayado (`_`) entre el `title` y `contains`. Django ORM utiliza esta sintaxis para separar los nombres de campo ("title") y operaciones o filtros ("contains"). Si sólo utilizas un carácter de subrayado, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
+También puedes obtener una lista de todos los posts publicados. Lo hacemos filtrando los posts que tienen el campo `published_date` en el pasado:
 
-También puedes obtener una lista de todos los mensajes publicados. Lo hacemos filtrando todos los post que tienen `published_date`:
+> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
 
-    >>> Post.objects.filter(published_date__isnull=False)
-    []
-
-
-Lamentablemente, ninguno de nuestros mensajes son publicado todavía. Podemos cambiar eso. Primero obtener una instancia de un post que queremos publicar:
+Desafortunadamente, ninguno de nuestros posts han sido publicados todavía. ¡Vamos a cambiar esto! Primero obtén una instancia de un post que querramos publicar:
 
     >>> post = Post.objects.get(id=1)
+    
 
-
-Y luego publicarlo con nuestro método de `publish`!
+¡Luego utiliza el método `publish` para publicarlo!
 
     >>> post.publish()
+    
 
+Ahora intenta obtener la lista de posts publicados nuevamente (presiona la tecla con la flecha hacia arriba 3 veces y presiona Enter):
 
-Ahora intenta obtener lista de mensajes publicados otra vez (presiona 3 veces el botón de la flecha hacia arriba y pulse Enter):
-
-    >>> Post.objects.filter(published_date__isnull=False)
+    >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
+    
 
+### Ordenando objetos
 
-### Ordenando Objetos
-
-Los QuerySets también permite ordenar la lista de objetos. Tratemos de pedirlos por `created_date` :
+Los QuerySets también te permiten ordenar la lista de objetos. Intentemos ordenarlos por el campo `created_date`:
 
     >>> Post.objects.order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    
 
-
-También podemos invertir el orden agregando `–` al principio:
+También podemos invertir el ordenamiento agregando `-` al principio:
 
     >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    
 
-
-¡Genial! Ahora estás listo para la siguiente parte! Para cerrar el shell, escribe esto:
+¡Genial! ¡Ahora estás lista para la siguiente parte! Para cerrar la consola, tipea:
 
     >>> exit()
     $

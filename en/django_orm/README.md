@@ -112,7 +112,7 @@ And then publish it with our `publish` method!
 
     >>> post.publish()
 
-Now try to get list of published posts again (press the up arrow button 3 times and hit Enter):
+Now try to get list of published posts again (press the up arrow button 3 times and hit `enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
@@ -129,6 +129,15 @@ We can also reverse the ordering by adding `-` at the beginning:
 
     >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+
+
+### Chaining QuerySets 
+
+You can also combine QuerySets by **chaining** them together:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+
+This is really powerful and lets you write quite complex queries.
 
 Cool! You're now ready for the next part! To close the shell, type this:
 

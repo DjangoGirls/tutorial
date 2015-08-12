@@ -1,14 +1,14 @@
 # Django urls
 
-We're about to build our first webpage -- a homepage for your blog! But first, let's learn a little bit about Django urls.
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django urls.
 
 ## What is a URL?
 
-A URL is simply a web address, you can see a URL every time you visit any website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And http://djangogirls.com is also a URL):
+A URL is simply a web address. You can see a URL every time you visit a website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.com` is also a URL):
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens a URL. In Django we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match with the received URL to find the correct view.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens a URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the received URL to find the correct view.
 
 ## How do URLs work in Django?
 
@@ -41,7 +41,7 @@ It means that for every URL that starts with `admin/` Django will find a corresp
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex` -- regular expressions. Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process - we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -61,7 +61,6 @@ Writing separate views for all the post numbers would be really annoying. With r
 * **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
 * **/** tells django that another `/` character should follow
 * **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
-
 
 
 ## Your first Django url!
@@ -86,7 +85,7 @@ urlpatterns = [
 
 Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
-When writing regular expressions in Python it is always done with `r` in front of the string - this is just a helpful hint to Python that the string may contain special characters that are not meant for Python itself but are instead part of the regular expression.
+When writing regular expressions in Python it is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
 
 ## blog.urls
@@ -104,11 +103,13 @@ After that, we can add our first URL pattern:
 
 ```python
 urlpatterns = [
-    url(r'^$', views.post_list),
+    url(r'^$', views.post_list, name='post_list'),
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) - so only an empty string will match. And that's correct, because in Django url resolvers, 'http://127.0.0.1:8000/' is not a part of URL. This pattern will show Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+As you can see, we're now assigning a `view` called `post_list` to `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) - so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+
+The last part `name='post_list'` is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
 
@@ -116,6 +117,6 @@ Everything all right? Open http://127.0.0.1:8000/ in your browser to see the res
 
 There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful:
 
-You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is how we called our view! This means that everything is in place, we just didn't create our *view* yet. No worries, we will get there.
+You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.8/topics/http/urls/

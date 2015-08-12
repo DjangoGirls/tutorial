@@ -13,13 +13,13 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 Відкрийте консоль і наберіть команду:
 
     (myvenv) ~/djangogirls$ python manage.py shell
-    
+
 
 Результат повинен бути наступним:
 
     (InteractiveConsole)
     >>>
-    
+
 
 Ви опинетесь в інтерактивній консолі Django. Це щось подібне на командний рядок із запитом в Python, але має додаткову магію Django:). Звичайно, тут ви також можете використовувати усі команди Python.
 
@@ -31,18 +31,18 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
     Traceback (most recent call last):
           File "<console>", line 1, in <module>
     NameError: name 'Post' is not defined
-    
+
 
 Ой! З'явилась помилка. Вона повідомляє нам, що немає ніяких постів. І це правильно, адже ми забули спочатку імпортувати їх!
 
     >>> from blog.models import Post
-    
+
 
 Усе просто: імпортуємо модель `Post` з `blog.models`. Спробуємо вивести усі пости знову:
 
     >>> Post.objects.all()
     []
-    
+
 
 В результаті отримаємо пустий список. Здається правильно, правда ж? Адже ми ще не додали жодного поста! То ж виправимо це.
 
@@ -51,50 +51,50 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 Мова йдеться про те як створити об'єкт Post в базі даних:
 
     >>> Post.objects.create(author=user, title='Sample title', text='Test')
-    
+
 
 Однак, маємо тут один пропущений елемент: користувач -`user`. Ми маємо передати екземпляр моделі `User` як автора. Як це зробити?
 
 Спочатку імпортуємо модель User:
 
     >>> from django.contrib.auth.models import User
-    
+
 
 Які користувачі присутні в нашій базі даних? Спробуймо це:
 
     >>> User.objects.all()
     []
-    
+
 
 Жодного користувача! Давайте створимо одного:
 
     >>> User.objects.create(username='ola')
     <User: ola>
-    
+
 
 Яких користувачів ми маємо в нашій базі даних тепер? Спробуйте знову:
 
     >>> User.objects.all()
     [<User: ola>]
-    
+
 
 Круто! Давайте тепер отримаємо екземпляр користувача:
 
     user = User.objects.get(username='ola')
-    
+
 
 Як бачимо, ми отримали користувача із іменем, що дорівнює 'ola'. Чудово! Звісно, ви мали б використовувати ваше ім'я.
 
 Тепер зрештою можемо створити наш перший пост:
 
     >>> Post.objects.create(author = user, title = 'Sample title', text = 'Test')
-    
+
 
 Урра! Бажаєте перевірити чи це працює?
 
     >>> Post.objects.all()
     [<Post: Sample title>]
-    
+
 
 ### Додайте більше постів
 
@@ -106,13 +106,13 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
 
     >>> Post.objects.filter(author=user)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-    
+
 
 Чи, можливо, ми хочемо побачити усі пости, що містять слово 'title'в полі `title`?
 
     >>> Post.objects.filter(title__contains='title')
     [<Post: Sample title>, <Post: 4th title of post>]
-    
+
 
 > **Зауваження** Тут використано два знаки підкреслювання (`_`) між `title` і `contains`. Django ORM використовує цей синтаксис щоб відокремити імена полів ("title") і операції або фільтри ("contains"). Якщо ви раптом використаєте одне підкреслювання, то отримаєте помилку на кшталт "FieldError: Cannot resolve keyword title_contains".
 
@@ -121,23 +121,23 @@ A QuerySet є, по суті, списком об'єктів заданої Mode
     >>> from django.utils import timezone
     >>> Post.objects.filter(published_date__lte=timezone.now())
     []
-    
+
 
 Нажаль, ще жоден наш пост не було опубліковано. Це можна змінити! Спершу отримаємо екземпляр поста, який ми хочемо опублікувати:
 
     >>> post = Post.objects.get(id=1)
-    
+
 
 А далі опублікуємо його за допомогою нашого методу `publish`!
 
     >>> post.publish()
-    
 
-А тепер спробуйте вивести список усіх опублікованих постів знову (натисніть 3 рази кнопку із стрілочкою вверх і після цього - Enter):
+
+А тепер спробуйте вивести список усіх опублікованих постів знову (натисніть 3 рази кнопку із стрілочкою вверх і після цього - `enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
     [<Post: Sample title>]
-    
+
 
 ### Впорядкування об'єктів
 
@@ -145,13 +145,13 @@ QuerySets також дозволяє впорядковувати список 
 
     >>> Post.objects.order_by('created_date')
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-    
+
 
 Також можна здійснити впорядкування у зворотньому напрямку додавши `-` на початку:
 
     >>> Post.objects.order_by('-created_date')
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-    
+
 
 Клас! Тепер ви готові до наступної частини! Щоб закрити командну оболонку, наберіть:
 

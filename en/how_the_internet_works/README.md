@@ -2,7 +2,7 @@
 
 > This chapter is inspired by a talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like http://djangogirls.org into your browser and press 'Enter'?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like http://djangogirls.org into your browser and press `enter`?
 
 The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures.
 However, there is one part that is unique for websites: they include computer code called HTML.
@@ -19,7 +19,7 @@ We drew you a picture! It looks like this:
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com/) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact it is a network of connected machines (the above mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
 ![Figure 1.2](images/internet_3.png)
 

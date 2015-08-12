@@ -16,7 +16,7 @@ OK, czas rzucić okiem na nasz model Post. Nie zapomnij uruchomić serwera za po
 
 ![Strona logowania](images/login_page2.png)
 
-Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - czyli użytkownika, który posiada nieograniczony dostęp do całej strony. Wróć do wiersza poleceń i wpisz `python manage.py createsuperuser`. Zatwierdź klawiszem Enter. Zostaniesz poproszona o wpisanie swojej nazwy użytkownika (małymi literami, bez spacji i polskich znaków), adresu e-mail oraz hasła. Gdy będziesz wpisywała hasło, litery nie będą widoczne - tak ma być, więc nie martw się, wpisz hasło i wciśnij 'Enter'. Treść widoczna na ekranie powinna wyglądać następująco (wpisz własną nazwę użytkownika i adres email):
+Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - czyli użytkownika, który posiada nieograniczony dostęp do całej strony. Wróć do wiersza poleceń i wpisz `python manage.py createsuperuser`. Zatwierdź klawiszem `enter`. Zostaniesz poproszona o wpisanie swojej nazwy użytkownika (małymi literami, bez spacji i polskich znaków), adresu e-mail oraz hasła. Gdy będziesz wpisywała hasło, litery nie będą widoczne - tak ma być, więc nie martw się, wpisz hasło i wciśnij `enter`. Treść widoczna na ekranie powinna wyglądać następująco (wpisz własną nazwę użytkownika i adres email):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin

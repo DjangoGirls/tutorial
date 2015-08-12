@@ -1,6 +1,6 @@
 # Héritage de template
 
-Django vous réserve encore bien des surprises : une assez géniale est **l'héritage de template**. Qu'est ce que ça signifie ? C'est une fonctionnalité qui vous permet de réutiliser certains morceaux de HTML dans différentes pages de votre site web.
+Django vous réserve encore bien des surprises: une assez géniale est **l'héritage de template**. Qu'est ce que ça signifie? C'est une fonctionnalité qui vous permet de réutiliser certains morceaux de HTML dans différentes pages de votre site web.
 
 Concrètement, cela permet de vous éviter de vous répéter dans chaque fichier lorsque vous voulez utiliser la même information ou mise en page. Ainsi, lorsque vous voudrez changer quelque chose, vous n'aurez à le faire que dans un seul template!
 
@@ -82,9 +82,9 @@ Puis, dans le fichier `base.html`, remplacer tout ce qui se trouve dans `<body>`
 ```
 
 
-Qu'est-ce que cela signifie ? Vous venez simplement de créer un `block` : c'est une balise de template qui vous permet d'insérer le HTML de ce block dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
+Qu'est-ce que cela signifie? Vous venez simplement de créer un `block`: c'est une balise de template qui vous permet d'insérer le HTML de ce block dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
 
-Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blog/post_list.html`. Supprimez tout ce qui n'est pas dans body. Supprimez aussi `<div class="page-header"></div>`. Votre fichier doit maintenant ressembler à ça :
+Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blog/post_list.html`. Supprimez tout ce qui n'est pas dans body. Supprimez aussi `<div class="page-header"></div>`. Votre fichier doit maintenant ressembler à ça:
 
 ```html
 {% for post in posts %}
@@ -125,6 +125,6 @@ Vous venez de permettre à `post_list.html` d'hériter du template de `base.html
 ```
     
 
-Et voilà ! Vérifiez que votre site fonctionne toujours correctement :)
+Et voilà! Vérifiez que votre site fonctionne toujours correctement:)
 
 > Si jamais vous rencontrez une erreur de type `TemplateDoesNotExists` qui signale que le fichier `blog/base.html` n'existe pas et que `runserver` tourne dans votre console, tuez le (en appuyant sur les touches Ctrl+C en même temps) et relancez votre server à l'aide de la commande `python manage.py runserver`.

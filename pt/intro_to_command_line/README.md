@@ -4,7 +4,7 @@
 
 **Deixe-nos apresentá-lo ao seu primeiro novo amigo: a linha de comando!**
 
-As etapas a seguir mostraram a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
+As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
 
 ## Qual é a linha de comando?
 

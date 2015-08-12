@@ -1,8 +1,8 @@
 # What is Django?
 
-Django (_/ˈdʒæŋɡoʊ/ jang-goh_) is a free and open source web application framework, written in Python. It's a web framework - a set of components that helps you to develop websites faster and easier.
+Django (_/ˈdʒæŋɡoʊ/ jang-goh_) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-You see, when you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
 Luckily for you other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django is one of them) that give you ready-made components you can use.
 
@@ -20,7 +20,7 @@ When a request comes to a web server it's passed to Django which tries to figure
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-In the *view* function all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying "Please change description of my job."  The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!". Then the *view* generates a response and Django can send it to the user's web browser.
+In the *view* function all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying "Please change the description of my job."  The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!". Then the *view* generates a response and Django can send it to the user's web browser.
 
 Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 

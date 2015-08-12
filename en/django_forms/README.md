@@ -44,7 +44,7 @@ So once again we will create: a link to the page, a URL, a view and a template.
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
 ```html
-<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 Note that we want to call our new view `post_new`.
@@ -63,7 +63,7 @@ After adding the line, your html file should now look like this:
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div class="content container">
@@ -95,8 +95,8 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]
 ```
@@ -125,7 +125,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
-- we have to display the form. We can do that for example with a simple `{{ form.as_p }}`.
+- we have to display the form. We can do that for example with a simple `{% raw %}{{ form.as_p }}{% endraw %}`.
 - the line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`
 - we need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`
 - and finally just after the opening `<form ...>` tag we need to add `{% raw %}{% csrf_token %}{% endraw %}`. This is very important, since it makes your forms secure! Django will complain if you forget about this bit if you try to save the form:
@@ -231,7 +231,7 @@ def post_new(request):
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
 
-You problably have noticed that we are not setting publish date at all. We will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
+You might have noticed that we are setting publish date before saving the post. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
 
 That is awesome!
 
@@ -331,6 +331,28 @@ Feel free to change the title or the text and save changes!
 Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.8/topics/forms/
+
+## Security
+
+Being able to create new posts just by clicking a link is awesome! But, right now, anyone that visits your site will be able to post a new blog post and that's probably not something you want. Let's make it so the button shows up for you but not far anyone else.
+
+In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
+
+We're going to add another `{% if %}` tag to this which will make the link only show up for users that are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+
+```html
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+```
+
+This `{% if %}` will cause the link to only be sent to the browser if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a new browser or an incognito window, though, and you'll see that the link doesn't show up!
 
 ## One more thing: deploy time!
 

@@ -1,71 +1,76 @@
 # Dominio
 
-Heroku le entregó un dominio pero es largo, dificil de recordar y feo. Seria asombroso contar con un nombre de dominio que sea sencillo y facil de recordar, ¿verdad?
+PythonAnywhere te ha dado un dominio gratuito, pero tal vez no quieras tener ".pythonanywhere.com" al final de la URL de tu blog. Quizás quiera que tu blog viva en "www.infinite-kitten-pictures.org" o "www.3d-printed-steam-engine-parts.com" o "www.antique-buttons.com" o "www.mutant-unicornz.net", o lo que quieras que sea.
 
-En este capitulo te enseñaremos como adquirir un dominio dirigirlo a Heroku!
+Aquí hablaremos brevemente sobre cómo obtener un dominio y veremos cómo vincularlo a tu aplicación web en PythonAnywhere. Sin embargo, deberías saber que la mayoría de los dominios son pagos, y PythonAnywhere te cobrará un valor adicional para usar tu propio nombre de dominio -- no es demasiado dinero en total, pero es probablemente algo que quieras hacer sólo si estás muy comprometida con la causa.
 
 ## ¿Donde registrar un dominio?
 
-Un dominio normalmente cuesta alrededor de 15 dolares estadounidenses anuales. Existen opciones un poco mas baratas y otras un poco mas caras pero esto depende del proveedor. Existen muchas compañias donde puedes adquirir un dominio: una simple [busqueda en google][1] te dara miles de opciones. Hay opciones más baratas y más caras, dependiendo del proveedor. Hay una gran cantidad de empresas que se pueden comprar un dominio de: una simple [búsqueda en google][1] dará cientos de opciones.
+Un dominio típico cuesta alrededor de 15 dólares estadounidenses anuales. Hay opciones más baratas y más caras, dependiendo del proveedor. Hay una gran cantidad de empresas a las que puedes comprar un dominio: una simple [búsqueda en google][1] dará cientos de opciones.
 
  [1]: https://www.google.com/search?q=register%20domain
 
-Nuestra opción predilecta es [I Want my name][2]. Ellos se promueven como una opción "indolora para el manejo de dominios" y realmente lo son.
+Nuestra opción favorita es [I want my name][2]. Ellos se promocionan como una opción "indolora para el manejo de dominios" y realmente lo son.
 
- [2]: https://iwantmyname.com
+ [2]: https://iwantmyname.com/
 
-## ¿Como registrar un dominio en IWantMyName?
+También puedes obtener dominios gratuitos. [dot.tk][3] es un lugar para obtener uno, pero deberíamos advertirte que los dominios gratuitos a veces se sienten algo "baratos" -- si tu sitio va a ser un sitio para un negocio profesional, seguramente quieras considerar comprar un dominio "apropiado" que termine en `.com`.
 
-Dirígete a [iwantmyname][3] y escriba un dominio que deseas tener en el cuadro de búsqueda.
+ [3]: http://www.dot.tk
 
- [3]: http://iwantmyname.com
+## Cómo apuntar tu dominio a PythonAnywhere
+
+Si elegiste la opción de *iwantmyname.com*, haz click en `Domains` en el menú y elije tu nuevo dominio. Luego encuentra el vínculo a `manage DNS records`:
 
 ![][4]
 
- [4]: images/1.png
+ [4]: images/4.png
 
-Ahora deberías ver una lista de todos los dominios disponibles con el término que pusiste en el cuadro de búsqueda. Como puedes ver, una cara sonriente indica que el dominio está disponible para comprarlo, y una cara triste indica que no se encuentra disponible.
+Ahora necesitas encontrar este formulario:
 
 ![][5]
 
- [5]: images/2.png
+ [5]: images/5.png
 
-Hemos decidido comprar `djangogirls.in`:
+Y completarlo con los siguientes detalles: - Hostname: www - Type: CNAME - Value: tu dominio de PythonAnywhere (por ejemplo, djangogirls.pythonanywhere.com) - TTL: 60
 
 ![][6]
 
- [6]: images/3.png
+ [6]: images/6.png
 
-Dirígete a la caja. Ahora debes registrare en iwantmyname, si todavía no tienes una cuenta. Después de eso, debes de proporcionar la información de tu tarjeta de crédito y finalmente podrás comprar el dominio!
+En la parte inferior, haz click en el botón "Agregar" y guarda los cambios.
 
-Después de eso, Haz clic en `Dominios` en el menú y elige el dominio que acabas de adquirir. A continuación, busca y da clic en el enlace de `manage DNS records`:
+> **Nota** Si utilizaste un proveedor de dominios diferente, la interfaz exacta para encontrar tus configuraciones de DNS / CNAME será diferente, pero tu objetivo es el mismo: configurar un CNAME que apunte a tu nuevo dominio en `yourusername.pythonanywhere.com`.
 
-![][7]
+Puede tomar unos minutos para tu dominio para empezar a funcionar, ¡sé paciente!
 
- [7]: images/4.png
+## Configura el dominio a través de la aplicación web en PythonAnywhere
 
-Ahora necesitas localizar este formulario:
+También necesitarás decirle a PythonAnywhere que quieres usar tu dominio personalizado.
 
-![][8]
+Ve a la página [PythonAnywhere Accounts][7] y haz una actualización del tipo de cuenta. La opción más económica (el plan "Hacker") está bien para empezar. Siempre puedes elegir un plan con mayores prestaciones después cuando te vuelvas super-famosa y tengas millones de visitas.
 
- [8]: images/5.png
+ [7]: https://www.pythonanywhere.com/account/
 
-Y llenarlo con los siguientes datos: - Nombre de hosting: www - Tipo: CNAME - Valor: tu dominio de Heroku (por ejemplo djangogirls.herokuapp.com) - TTL: 3600
+Luego, ve a la pestaña [Web][8] y anota un par de cosas:
 
-![][9]
+ [8]: https://www.pythonanywhere.com/web_app_setup/
 
- [9]: images/6.png
+*   Copia la **ruta a tu virtualenv** y ponla en algún lugar seguro
+*   Abre tu **archivo de configuración WSGI**, copia el contenido, y pégalo en algún lugar seguro
 
-En la parte inferior, da clic en el botón Agregar y poder guardar los cambios.
+Luego, haz click en **Delete** de tu vieja aplicación web. No te preocupes, esto no eliminará tu código, solamente cambiará el dominio *yourusername.pythonanywhere.com*. Luego, crea una nueva aplicación web y sigue estos pasos:
 
-Puede tomar un par de horas para que tu dominio empece a trabajar, así que mantente paciente!
+*   Ingresa tu nombre de dominio
+*   Elije "configuración manual"
+*   Elije Python 3.4
+*   ¡Y listo!
 
-## Configurar dominio en Heroku
+Cuando seas redirigida a la pestaña web.
 
-También tienes que decirle a Heroku que deseas utilizar su dominio personalizado.
+*   Pega la ruta al virtualenv que guardaste anteriormente
+*   Abre tu nuevo archivo de configuración WSGI y pega el contenido de tu viejo archivo de configuración
 
-Dirígete a [Heroku Dashboard][10], inicia sesión con tu cuenta de Heroku y elije tu aplicación. Enseguida, configura tu aplicación y agrega tu dominio en la sección de `dominios` y guardar los cambios.
+Haz click en actualizar, ¡deberías ver que tu sitio está en línea en el nuevo dominio!
 
- [10]: https://dashboard.heroku.com/apps
-
-Eso es todo!
+Si te encuentras con algún problema, haz click en el vínculo "Send feedback" en el sitio de PythonAnywhere, y uno de sus amigables administradores te contactará para ayudarte en breve.

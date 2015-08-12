@@ -1,8 +1,8 @@
-# La suite ?
+# La suite?
 
-Un immense bravo à vous ! **Vous êtes totalement géniale**. Nous sommes fièr·e·s de vous ! < 3
+Un immense bravo à vous! **Vous êtes totalement géniale**. Nous sommes fièr·e·s de vous! < 3
 
-### Que faire maintenant ?
+### Que faire maintenant?
 
 Faites une pause et détendez-vous. Vous venez d'accomplir quelque chose de vraiment énorme.
 
@@ -13,7 +13,7 @@ Après ça, vous pouvez :
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
 
-### À la recherche de ressources supplémentaires ?
+### À la recherche de ressources supplémentaires?
 
 Jetez un coup d’œil à notre autre livre, [Django Girls Tutorial: Extensions][3] (en anglais).
 

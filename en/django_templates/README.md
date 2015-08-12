@@ -1,10 +1,10 @@
 # Django templates
 
-Time to display some data! Django gives us some helpful, built-in __template tags__ for that.
+Time to display some data! Django gives us some helpful built-in __template tags__ for that.
 
 ## What are template tags?
 
-You see, in HTML, you can't really put Python code, because browsers don't understand it. They only know HTML. We know that HTML is rather static, while Python is much more dynamic.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They only know HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 __Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Yikes!
 
@@ -12,13 +12,13 @@ __Django template tags__ allow us to transfer Python-like things into HTML, so y
 
 In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-To print a variable in Django template, we use double curly brackets with the variable's name inside, like this:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
 ```html
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template (replace the second and third pair of `<div></div>` tags with `{{ posts }}` line), save the file and refresh the page to see the results:
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
@@ -26,7 +26,7 @@ As you can see, all we've got is this:
 
     [<Post: My second post>, <Post: My first post>]
 
-This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with the for loops! In a Django template, you do them this way:
+This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 ```html
 {% for post in posts %}
@@ -73,7 +73,7 @@ $ git status
 $ git add -A .
 $ git status
 [...]
-$ git commit -m "Added views to create/edit blog post inside the site."
+$ git commit -m "Modified templates to display posts from database."
 [...]
 $ git push
 ```

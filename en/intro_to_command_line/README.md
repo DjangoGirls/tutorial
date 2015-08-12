@@ -54,7 +54,7 @@ or
 
     > whoami
 
-And then hit 'Enter'. This is our result:
+And then hit `enter`. This is our result:
 
     $ whoami
     olasitarska
@@ -69,7 +69,7 @@ Each operating system has a slightly different set of commands for the command l
 
 ### Current directory
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit 'Enter':
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
     $ pwd
     /Users/olasitarska
@@ -136,15 +136,15 @@ Here it is!
 
 ### Create directory
 
-How about creating a Django Girls directory on your desktop? You can do it this way:
+How about creating a practice directory on your desktop? You can do it this way:
 
-    $ mkdir djangogirls
+    $ mkdir practice
 
 Windows:
 
-    > mkdir djangogirls
+    > mkdir practice
 
-This little command will create a folder with the name `djangogirls` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls`/`dir` command! Try it :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
@@ -152,18 +152,18 @@ This little command will create a folder with the name `djangogirls` on your des
 
 ### Exercise!
 
-Small challenge for you: in your newly created `djangogirls` directory create a directory called `test`. Use `cd` and `mkdir` commands.
+Small challenge for you: in your newly created `practice` directory create a directory called `test`. Use `cd` and `mkdir` commands.
 
 #### Solution:
 
-    $ cd djangogirls
+    $ cd practice
     $ mkdir test
     $ ls
     test
 
 Windows:
 
-    > cd djangogirls
+    > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -196,16 +196,16 @@ Windows:
     > cd
     C:\Users\olasitarska\Desktop
 
-Now time to delete the `djangogirls` directory:
+Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
 
-    $ rm -r djangogirls
+    $ rm -r practice
 
 Windows:
 
-    > rmdir /S djangogirls
-    djangogirls, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
 
 Done! To be sure it's actually deleted, let's check it:
 
