@@ -8,7 +8,7 @@ The first thing we need in our blog is, obviously, a page to display one post, r
 
 We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-## Create a link in the template
+## Create a template link to a post's detail
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
 ```html
@@ -28,7 +28,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 ```
 
-{% raw %}We want to have a link to a post detail page on the post's title. Let's change `<h1><a href="">{{ post.title }}</a></h1>` into a link:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
@@ -42,11 +42,13 @@ Now when we go to: http://127.0.0.1:8000/ we will have an error (as expected, si
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
+## Create a URL to a post's detail
+
 Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-### URL: http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-We want to create a URL to point Django to a *view* named `post_detail` in the `blog/urls.py` file, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. It should look like this:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
 ```python
 from django.conf.urls import include, url
@@ -58,7 +60,7 @@ urlpatterns = [
 ]
 ```
 
-That one looks scary, but no worries - we will explain it for you:
+This part ``^post/(?P<pk>[0-9]+)/$`` looks scary, but no worries - we will explain it for you:
 - it starts with `^` again -- "the beginning"
 - `post/` only means that after the beginning, the URL should contain the word __post__ and __/__. So far so good.
 - `(?P<pk>[0-9]+)` - this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. `[0-9]` also tells us that it can only be a number, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly ok!
@@ -69,13 +71,13 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 `pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
 
-Ok! Let's refresh the page: http://127.0.0.1:8000/ Boom! Yet another error! As expected!
+Ok, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! Yet another error! As expected!
 
 ![AttributeError](images/attribute_error2.png)
 
 Do you remember what the next step is? Of course: adding a view!
 
-## post_detail view
+## Add a post's detail view
 
 This time our *view* is given an extra parameter `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
@@ -115,6 +117,8 @@ It worked! But what happens when you click a link in blog post title?
 
 Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
+## Create a template for post detail
+
 We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
@@ -144,7 +148,6 @@ Ok, we can refresh our page and see if `Page not found` is gone now.
 ![Post detail page](images/post_detail2.png)
 
 Yay! It works!
-
 
 ## One more thing: deploy time!
 
