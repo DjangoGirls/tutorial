@@ -44,7 +44,24 @@ Use this command in your console:
     $ sudo dnf install python3.4
 
 
-### OS X
+### UNIX
+
+
+#### FreeBSD
+
+Use this command in your console:
+
+    # pkg install python34
+
+
+#### OpenBSD
+
+Use this command in your console:
+
+    # pkg_add -r python34
+
+
+#### OS X
 
 You need to go to the website https://www.python.org/downloads/release/python-343/ and download the Python installer:
 
