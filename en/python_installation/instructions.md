@@ -4,7 +4,7 @@
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
 
-### GNU/Linux
+### Debian or Ubuntu
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
@@ -20,7 +20,7 @@ Type this command into your console:
     $ sudo apt-get install python3.4
 
 
-#### OS X
+### Mac OS X
 
 You need to go to the website https://www.python.org/downloads/release/python-343/ and download the Python installer:
 
@@ -46,17 +46,24 @@ One thing to watch out for:  on the second screen of the installation wizard, ma
 ![Don't forget to add Python to the Path](../python_installation/images/add_python_to_windows_path.png)
 
 
+## other operating systems
 
-#### Fedora (up to 21)
+If you are using one of the above-noted operating systems ([Debian or Ubuntu](./#debian-or-ubuntu), [Mac OS X](./#mac-os-x) or [Windows](./#windows)) this section is not necessary for you.
 
-Use this command in your console:
+Otherwise, if you are using a non mainstream operating systems and you are unfamiliar with it, this section might help you.
+
+
+### GNU/Linux
+
+
+#### Fedora
+
+If you using Fedora (22+), use this command in your console:
 
     $ sudo yum install python3.4
 
 
-#### Fedora (22+)
-
-Use this command in your console:
+Otherwise (up to 21) use this command in your console:
 
     $ sudo dnf install python3.4
 
@@ -64,7 +71,7 @@ Use this command in your console:
 ### UNIX
 
 
-#### FreeBSD
+#### FreeBSD or PC-BSD
 
 Use this command in your console:
 
