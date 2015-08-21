@@ -50,7 +50,7 @@ Zapisz zmiany w pliku. Gotowe!
 
 Musimy poinformować Heroku, z której wersji Pythona chcemy korzystać. Odbywa się to poprzez utworzenie pliku `runtime.txt` w katalogu `djangogirls` (polecenie "Nowy plik" w Twoim edytorze kodu) i umieszczenie w nim następującej treści (tak, tylko tyle!):
 
-    python-3.4.2
+    python-3.4.3
 
 
 ## mysite/local_settings.py
