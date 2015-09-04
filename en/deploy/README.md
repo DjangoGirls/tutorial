@@ -315,7 +315,4 @@ The default page for your site should say "Welcome to Django", just like it does
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
 
-# Some of these words confuse me  
-
-An _application_, _app_, _program_, and _code_ are generally the same thing.  The words "applications," "apps," and "programs" mean the same thing and are interchangeable.  In this tutorial, there is only one application, `djangogirls`.  That application is made of many pieces, some of which are Python code (the `.py` extension), although Python is also stitched into your templates with the `{%`, `%}`, `{{`, and `}}` tags.  The word "code" can be used to mean the collection of pieces of your program or it can reference just one specific file. When a person sounds like they are talking about the collection of pieces with phrases like "check in your code," they are including static elements like CSS, Javascript, and images.  One application has lots of pieces, only some of which are Python code.
 
