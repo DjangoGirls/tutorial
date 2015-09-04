@@ -8,23 +8,11 @@ As you learned, a website has to be located on a server. There are a lot of serv
 
 The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-In the future, after completing this section, you will follow these steps to update your code on PythonAnywhere:
-
-1. Modify your program on your own computer
-2. Test your program (`python manage.py runserver`)
-3. Commit your chages to Git using `git add -A .` and `git commit -m "[Commit message]"`
-4. Push your changes to GitHub, using `git push` 
-5. At PythonAnywhere, open a bash console and change the working directory to your program (`cd djangogirls`)
-6. In the bash console, use Git to contact GitHub and get the latest version of your program with `git pull`
-7. Use the PythonAnywhere "Web" tab to reload your program
-8. Check the new, public version of your program for any problems
-
-Remember that the posts and users in the public version will be different than the posts and users you see on your own computer.
+These three places will be important to you.  Your local computer will be the place where you do development and testing.  When you're happy with the changes, you will place a copy of your program on GitHub.  Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
-
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful. 
 
 ## Installing Git
 
@@ -59,7 +47,7 @@ And save it as `.gitignore` in the top-level "djangogirls" folder.
 
 > **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
 
-> **Note** Did you notice that "db.sqlite3" was ignored?  That file is where we keep all of our posts.  Why would we skip it?  Your local system is your test setup and it is configured to use SQLite (`mysite/settings.py`).  Your application host, PythonAnywhere, will use something else.  In the case of PythonAnywhere, they use a more robust database called MySQL which holds more records and can deal with a lot more site visitors than SQLite can handle.  SQLite is perfect for test and development.  **All of the posts and users in your test environment are __NOT__ copied to PythonAnywhere, which leaves the deployed application feeling empty at first.  You will have to create users and posts just like you did in your test environment.**  Remember that your posts and user accounts are data.  Data is treated separately from your program.  Your test database is a great place to keep a copy of data that broke your system in the past as a way to make sure bugs stay closed days and months later as you improve your application.
+> **Note** One of the files you specified in your`.gitignore` file is `db.sqlite3`. That file is your local database, where all or your posts are stored. We don't want to add this to your repository, because your website on PythonAnywhere is going to be using a different database.  That database could be SQLite, like your development machine, but usually, you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're gonna have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help stop any surprises from happening, such as wrong files being added or commited. The `git status` command returns information about any untracked/modifed/staged files, branch status, and much more. The output should be similar to:
 
