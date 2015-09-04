@@ -221,7 +221,6 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -231,7 +230,7 @@ def post_new(request):
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it... and voilà! The new blog post is added and we are redirected to `post_detail` page!
 
-You might have noticed that we are setting publish date before saving the post. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
+You might have noticed that we are not setting publish date at all. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
 
 That is awesome!
 
