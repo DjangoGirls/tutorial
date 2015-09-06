@@ -41,3 +41,8 @@ Congratulations, you are are all set up and ready to go! If you still have some 
 * [Introduction to Python](../intro_to_command_line/README.md)
 
 * [What is Django?](../django/README.md)
+
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
