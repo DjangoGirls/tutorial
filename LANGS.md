@@ -4,3 +4,4 @@
 * [Español (beta)](es)
 * [Français (beta)](fr)
 * [Português-brasileiro (beta)](pt/)
+* [Русский (beta)](ru)
