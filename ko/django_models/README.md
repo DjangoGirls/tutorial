@@ -1,6 +1,6 @@
 # Django 모델
 
-이번에 우리가 만들고자 하는 부분은 블로그 내 모든 포스트를 저장하는 부분이에요. 먼저 우리는 `객체(object)`에 대해서 조금 알고 있어야해요.
+이번에는 블로그 내 모든 포스트를 저장하는 부분을 만들 거에요. 먼저 우리는 `객체(object)`에 대해서 조금 알고 있어야해요.
 
 ## 객체(Object)
 
@@ -21,11 +21,11 @@
     야옹야옹하기()
     긁기()
     먹기(음식)
-    
+
     고양이먹이
     --------
     맛
-    
+
 
 기본적으로 객체지향설계 개념은 현실에 존재하는 것을 속성과 행위로 나타내는 것입니다. 여기서 속성은 `객체 속성(properties)`, 행위는 `메서드(methods)`로 구현됩니다).
 
@@ -42,7 +42,7 @@
     author
     created_date
     published_date
-    
+
 
 블로그 글로 할 수 있는 것은 어떤 것들이 있을까요? 글을 출판하는 `메서드(method)`가 있으면 좋겠죠?
 
@@ -63,9 +63,9 @@
 잘 정돈된 상태에서 시작하기 위해, 프로젝트 내부에 별도의 어플리케이션을 만들어볼 거에요. 처음부터 모든 것이 잘 준비되어있다면 훌륭하죠. 어플리케이션을 만들기 위해 콘솔창(`djangogirls` 디렉토리에서 `manage.py` 파일)에서 아래 명령어를 실행하세요.
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
 
-이제 `blog` 디렉토리가 생성되고 그 안에 여러 파일들도 같이 들어있는 것을 알 수 있어요. 현재 디렉토리와 파일들은 다음과 같을 거에요:
+
+이제 `blog` 디렉토리가 생성되고 그 안에 여러 파일들도 같이 들어있는 것을 알 수 있어요. 현재 디렉토리와 파일들은 다음과 같을 거에요. :
 
     djangogirls
     ├── mysite
@@ -82,7 +82,7 @@
         ├── models.py
         ├── tests.py
         └── views.py
-    
+
 
 어플리케이션을 생성한 후 장고에게 사용해야한다고 알려줘야 합니다. 이 역할을 하는 파일이 `mysite/settings.py`입니다. 이 파일 안에서 `INSTALLED_APPS`를 열어, `)`바로 위에 `'blog'`를 추가하세요. 최종 결과물은 아래와 다음과 같을 거에요.
 
@@ -96,19 +96,19 @@
         'django.contrib.staticfiles',
         'blog',
     )
-    
+
 
 ### 블로그 글 모델 만들기
 
 모든 `Model` 객체는 `blog/models.py` 파일에 선언하여 모델을 만듭니다. 이 파일에 우리의 블로그 글 모델도 정의할 거에요.
 
-`blog/models.py` 파일을 열어서 안에 모든 내용을 삭제한 후 아래 코드를 추가하세요:
+`blog/models.py` 파일을 열어서 안에 모든 내용을 삭제한 후 아래 코드를 추가하세요. :
 
     python
     from django.db import models
     from django.utils import timezone
-    
-    
+
+
     class Post(models.Model):
         author = models.ForeignKey('auth.User')
         title = models.CharField(max_length=200)
@@ -117,14 +117,14 @@
                 default=timezone.now)
         published_date = models.DateTimeField(
                 blank=True, null=True)
-    
+
         def publish(self):
             self.published_date = timezone.now()
             self.save()
-    
+
         def __str__(self):
             return self.title
-    
+
 
 > `str`양 옆에 언더스코어(`_`) 를 두 개씩 넣었는지 다시 확인하세요. 이건 관습은 파이썬에서 자주 사용되는데, "던더(dunder; 더블-언더스코어의 준말)"라고도 불려요.
 
@@ -138,7 +138,7 @@
 *   `Post`는 모델의 이름입니다. (특수문자와 공백 제외한다면) 다른 이름을 붙일 수도 있습니다. 항상 클래스 이름의 첫 글자는 대문자로 써야 합니다.
 *   `models.Model`은 Post가 장고 모델임을 의미합니다. 이 코드 때문에 장고는 Post가 데이터베이스에 저장되어야 된다고 알게 됩니다.
 
-이제 속성을 정의하는 것에 대해서 이야기해볼게요: `title`, `text`, `created_date`, `published_date`, `author`에 대해서 말할 거에요. 속성을 정의하기 위해, 각 필드마다 어떤 종류의 데이터 타입을 가지는지를 정해야해요. 여기서 데이터 타입에는 텍스트, 숫자, 날짜, 유저 같은 다른 객체 참조 등이 있습니다. 
+이제 속성을 정의하는 것에 대해서 이야기 해볼게요. : `title`, `text`, `created_date`, `published_date`, `author`에 대해서 말할 거에요. 속성을 정의하기 위해, 각 필드마다 어떤 종류의 데이터 타입을 가지는지를 정해야해요. 여기서 데이터 타입에는 텍스트, 숫자, 날짜, 유저 같은 다른 객체 참조 등이 있습니다.
 
 *   `models.CharField` - 글자 수가 제한된 텍스트를 정의할 때 사용합니다. 글 제목같이 대부분의 짧은 문자열 정보를 저장할 때 사용합니다.
 *   `models.TextField` - 글자 수에 제한이 없는 긴 텍스트를 위한 속성입니다. 블로그 콘텐츠를 담기 좋겠죠?
@@ -161,7 +161,7 @@
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 장고는 데이터베이스에 지금 반영할 수 있도록 마이그레이션 파일(migration file)이라는 것을 준비해 두었답니다. 이제 `python manage.py migrate blog` 명령을 실행해, 실제 데이터베이스에 모델 추가를 반영하겠습니다. :
 
@@ -171,6 +171,6 @@
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+
 
 만세! 드디어 글 모델이 데이터베이스에 저장되었습니다. 너무 멋지 않나요? 빨리 다음 장으로 넘어가서 블로그 글을 확인하러 가요!

@@ -4,16 +4,16 @@
 
 ### 이제 무엇을 해야하나요?
 
-잠시 휴식을 가지고 여유를 가지세요. 여러분은 이제 막 정말 큰 일 마쳤으니까요
+잠시 휴식을 가지고 여유를 가지세요. 여러분은 이제 막 정말 큰 일 마쳤으니까요.
 
-잊지 말고 꼭 하세요. :
+잊지 말고 꼭 해보세요. :
 
 *   [Facebook][1] 또는 [Twitter][2] 에서 Django Girls를 구독하셔서 최신 정보를 얻으세요!
 
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
 
-### 다음에 해볼만한 자료를 추천해주실래요?
+### 다음에 해 볼만한 자료를 추천해주실래요?
 
 그럼요! [장고 걸스: 심화 (Django Girls Tutorial: Extensions)][3]를 읽어보세요.
 

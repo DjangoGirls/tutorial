@@ -4,7 +4,7 @@
 
 ## URL이란 무엇인가요?
 
-URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을 볼 수 있죠. 브라우저의 주소창에 보이죠, 맞아요! `127.0.0.1:8000`가 바로 URL이에요! 그리고 `https://djangogirls.com` 또한 URL이랍니다:
+URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을 볼 수 있죠. 브라우저의 주소창에 보이죠, 맞아요! `127.0.0.1:8000`가 바로 URL이에요! 그리고 `https://djangogirls.com` 또한 URL이랍니다. :
 
 ![URL][1]
 
@@ -19,15 +19,15 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
     python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
-    
+
         url(r'^admin/', include(admin.site.urls)),
     ]
-    
+
 
 장고가 이미 어떤 내용을 넣어 두었네요.
 
@@ -37,7 +37,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
     python
         url(r'^admin/', include(admin.site.urls)),
-    
+
 
 이 의미는 `admin/`으로 시작하는 모든 URL을 장고가 *view*와 대조해 찾아낸다는 뜻입니다. 이 경우 많은 admin URL을 포함해야 하기 때문에 작은 파일안에 모두 들어가지 않아요. 여기에 좀 더 읽기 좋고 깔끔한 방법이 있어요.
 
@@ -52,7 +52,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
     \d 숫자
     + 바로 앞에 나오는 항목이 계속 나올 때
     () 패턴의 부분을 저장할 때
-    
+
 
 이외에 url 정의는 문자적으로 만들 수 있어요.
 
@@ -71,19 +71,19 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 또한 `mysite/urls.py`파일을 깨끗한 상태로 유지하기 위해, `blog` 어플리케이션에서 메인 `mysite/urls.py`파일로 url들을 가져올 거에요.
 
-먼저 `#`로 시작하는 줄을 삭제하고 main url ('')로 `blog.urls`를 가져오는 행을 추가해 봅시다`''`).
+먼저 `#`로 시작하는 줄을 삭제하고 main url ('')로 `blog.urls`를 가져오는 행을 추가해 봅시다.
 
 이제 `mysite/urls.py` 파일은 아래처럼 보일 거에요.
 
     python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
     ]
-    
+
 
 지금 장고는 'http://127.0.0.1:8000/'로 들어오는 모든 접속 요청을 `blog.urls`로 전송하고 추가 명령을 찾을 거에요.
 
@@ -96,7 +96,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
     python
     from django.conf.urls import url
     from . import views
-    
+
 
 우리는 장고의 메소드와 `blog` 어플리케이션에서 사용할 모든 `views`들을 불러오고 있어요. (물론 아직 뷰를 하나도 안 만들었지만, 곧 만들거니 조금만 기다리세요!)
 
@@ -106,7 +106,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
     urlpatterns = [
         url(r'^$', views.post_list, name='post_list'),
     ]
-    
+
 
 이제 `post_list`라는 이름의 `view`가 `^$` URL에 할당되었습니다. 이 정규표현식은 `^`에서 시작해 `$`로 끝나는 지를 매칭할 것입니다. 즉 문자열이 아무것도 없는 경우만 매칭하겠죠. 틀린 것이 아니에요. 왜냐하면 장고 URL 확인자(resolver)는 'http://127.0.0.1:8000/' 는 URL의 일부가 아니기 때문입니다. 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때`views.post_list`를 보여주라고 말할 거에요.
 

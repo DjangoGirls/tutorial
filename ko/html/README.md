@@ -4,7 +4,7 @@
 
 템플릿이란 서로 다른 정보를 일정한 형태로 표시하기 위해 재사용 가능한 파일이예요. 예를 들면 편지를 쓸때도 템플릿을 사용할 수 있어요. 편지의 내용이나 수신인 주소는 달라져도 동일한 디자인, 레이아웃을 사용하는 경우가 있으니까요.
 
-장고의 템플릿 양식은 HTML을 사용합니다. (HTML은 첫 번째 장 **인터넷은 어떻게 작동할까요**에서 들어봤죠).
+장고의 템플릿 양식은 HTML을 사용합니다. (HTML은 첫 번째 장 **인터넷은 어떻게 작동할까요**에서 들어봤죠.)
 
 ## HTML이란 무엇일까요?
 
@@ -21,7 +21,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
     blog
     └───templates
         └───blog
-    
+
 
 (왜 `blog` 디렉토리를 하나 더 만들어야하는지 궁금할 거에요. 나중에 알게 되겠지만, 작업이 좀더 복잡해질 때 편하게 만들기 위해 사용하는 관습같은 거에요.)
 
@@ -37,14 +37,14 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 이제 에러가 사라졌어요! 축하합니다. :) 하지만 웹사이트가 비어있어 아무 내용도 보여지지 않네요. 이제 고쳐나가 봅시다.
 
-템플릿 파일 post_list.html에 아래 내용을 넣어주세요:
+템플릿 파일 post_list.html에 아래 내용을 넣어주세요. :
 
     html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
+
 
 웹 사이트가 어떻게 보이나요? 확인해보세요. : http://127.0.0.1:8000/
 
@@ -79,7 +79,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
             <p>It works!</p>
         </body>
     </html>
-    
+
 
 파일을 저장하고 페이지를 새로고침 해보세요.
 
@@ -97,7 +97,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 ## 맞춤형 템플릿 만들기
 
-여러분은 이제 좀 더 재밌어질 것입니다. 여러분만의 템플릿을 만들어봅시다! 여기 몇 가지 유용한 태그들이 있습니다:
+여러분은 이제 좀 더 재밌어질 것입니다. 여러분만의 템플릿을 만들어봅시다! 여기 몇 가지 유용한 태그들이 있습니다. :
 
 *   `<h1>A heading</h1>` - 가장 중요한 머리말에 사용하는 태그
 *   `<h2>A sub-heading</h2>` 그 다음 수준의 머리말에 사용하는 태그
@@ -109,7 +109,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 *   `<ul><li>first item</li><li>second item</li></ul>` 목록을 만듭니다. 지금 여러분이 보고 있는 목록처럼요!
 *   `<div></div>` 페이지의 섹션을 정의합니다.
 
-여기에 완전한 템플릿 예제가 있습니다:
+여기에 완전한 템플릿 예제가 있습니다. :
 
     html
     <html>
@@ -120,13 +120,13 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My first post</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">My second post</a></h2>
@@ -134,7 +134,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
             </div>
         </body>
     </html>
-    
+
 
 이 템플릿에는 세 개의 `div` 섹션이 있습니다.
 
@@ -157,34 +157,34 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 ### Github에 코드를 커밋, 푸시하세요!
 
-제일 먼저, 마지막 배포 이후 수정된 파일을 확인해 봅시다. (PythonAnywhere가 아닌 로컬에서 실행하세요) :
+제일 먼저, 마지막 배포 이후 수정된 파일을 확인해 봅시다. (PythonAnywhere가 아닌 로컬에서 실행하세요.) :
 
     $ git status
-    
+
 
 `djangogirls` 디렉토리에서 `git`에게 현재 폴더에 있는 모든 변경 내용을 포함라고 말합니다.
 
     $ git add -A .
-    
+
 
 > **참고** `-A` ("all"의 축약어) 는 `git`이 삭제한 파일을 인식합니다. (기본적으로, 새로 추가하거나 변경한 파일만 인지합니다.) 또한 `.`의미가 현재 디렉토리라는 것을 기억하고 있죠? (3장에서 언급한 내용이에요.)
 
 파일 업로드 전, `git`으로 업로드 할 파일들을 확인해봅시다. (`git`에서 업로드 할 모든 파일들이 녹색으로 나타나야 합니다.) :
 
     $ git status
-    
+
 
 거의 다 왔습니다. 이제 저장소에 변경 사항을 저장할 단계예요. 우리는 "커밋 메시지(commit message)"를 주어, 어떤 것이 수정 변경되었는지 알려줄 거에요. 이번에는 아무거나 적어도 괜찮습니다. 하지만 앞으로는 내가 수정한 내용을 간략하게 적어 다음에 기억할 수 있도록 하는 것이 좋을 거에요.
 
     $ git commit -m "Changed the HTML for the site."
-    
+
 
 > **주의** 커밋 메시지는 쌍따옴표(")로 감싸주세요.
 
 완성되면, Github으로 업로드(푸쉬) 하세요. :
 
     git push
-    
+
 
 ### PythonAnywhere에서 새 코드를 가져와, 웹 앱을 다시 불러옵니다.
 
@@ -198,7 +198,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 그러면 코드가 다운되는 것을 볼 수 있어요. 다 되었는지 확인하고 싶으면 **파일 탭(Files tab)**에 가서 내 코드가 PythonAnywhere에 있는지 확인합니다.
 

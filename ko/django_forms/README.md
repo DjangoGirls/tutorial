@@ -38,7 +38,7 @@ class PostForm(forms.ModelForm):
 
 마쳤습니다! 이제 *뷰* 에서 이 폼을 사용해 템플릿에서 보여주기만 하면 되네요.
 
-다음에는 링크, URL, 뷰 그리고 템플릿을 만들거에요.
+다음에는 링크, URL, 뷰 그리고 템플릿을 만들 거에요.
 
 ## 폼과 페이지 링크
 
@@ -48,9 +48,9 @@ class PostForm(forms.ModelForm):
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-이 새로운 뷰를 `post_new` 라고 부를게요..
+이 새로운 뷰를 `post_new` 라고 부를게요.
 
-위 구문을 추가하고 나면, 이제 html 파일이 아래처럼 보일거에요.
+위 구문을 추가하고 나면, 이제 html 파일이 아래처럼 보일 거에요.
 
 ```html
 {% load staticfiles %}
@@ -129,7 +129,7 @@ def post_new(request):
 - 먼저 폼이 보여져야합니다. 그 예로, `{% raw %}{{ form.as_p }}{% endraw %}`로 간단히 만들 수 있어요..
 - 위 코드를 HTML태그로 폼을 감싸세요. `<form method="POST">...</form>`
 - `Save` 버튼이 필요합니다. 이 것은 HTML 버튼으로 만들 수 있어요: `<button type="submit">Save</button>`
--  마지막으로 `<form ...>`을 열어 `{% raw %}{% csrf_token %}{% endraw %}`를 추가하세요. 이 작업은 폼 보안을 위해 중요하답니다! 이 작업을 빼먹고 저장하면 장고는 아래처럼 불평할거에요.
+-  마지막으로 `<form ...>`을 열어 `{% raw %}{% csrf_token %}{% endraw %}`를 추가하세요. 이 작업은 폼 보안을 위해 중요하답니다! 이 작업을 빼먹고 저장하면 장고는 이렇게 불평할 거에요.
 
 ![CSFR 서버가 허용하지 않는 웹 페이지(Forbidden page)][1]
 
@@ -157,7 +157,7 @@ def post_new(request):
 
 그런데, 잠깐만요! `title`과 `text` 필드에 아무거나 입력하고 저장해보세요. 어떻게 됐나요?
 
-글이 사라졌어요! 한번 더 해봐도 내가 입력한 글들은 어디론가로 사라지고는 새 글이 추가되지 않아요. 뭐가 잘못된걸까요?
+글이 사라졌어요! 한번 더 해봐도 내가 입력한 글들은 어디론가로 사라지고는 새 글이 추가되지 않아요. 뭐가 잘못된 걸까요?
 
 정답은요: 여러분이 잘못한 게 없어요. 단지 *view* 에 조금 작업이 필요할 뿐이에요.
 
@@ -173,7 +173,9 @@ def post_new(request):
 
 폼을 제출할 때, 동일한 뷰를 불러오게 됩니다. 이 때 `request`에는 우리가 입력했던 데이터들을 가지고 있는데, `request.POST`가 이 데이터를 가지고 있습니다. (POST는 글 데이터를 "등록하는(posting)"하는 것을 의미합니다. 블로그 "글"을 의미하는 "post"과 관련이 없어요.) HTML에서 `<form>`정의에 `method="POST"`라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 걸로 바꾸면 안돼요.(`method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET` 같은 것도 있지만 post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요.)
 
-이제 *view* 에서 두 상황으로 나누어 처리해볼게요. 첫번째: 처음 페이지에 접속했을 때입니다. 당연히 우리가 새 글을 쓸 수 있게 폼이 비어있어야겠죠. 두번째: 폼에 입력된 데이터를 *view* 페이지로 가지고 올 때입니다. 여기서 조건문을 추가시켜야해요. (`if`을 사용하세요.)
+이제 *view* 에서 두 상황으로 나누어 처리해볼게요.
+첫 번째: 처음 페이지에 접속했을 때입니다. 당연히 우리가 새 글을 쓸 수 있게 폼이 비어있어야겠죠.
+두번째: 폼에 입력된 데이터를 *view* 페이지로 가지고 올 때입니다. 여기서 조건문을 추가시켜야해요. (`if`을 사용하세요.)
 
 ```python
 if request.method == "POST":
@@ -182,13 +184,13 @@ else:
     form = PostForm()
 ```
 
-이제 생략된 `[...]`부분에 코드를 추가해봅시다. 만약 `method`가 `POST`라면, 폼에서 받은 데이터를 `PostForm`으로 넘겨줘야겠죠? 이렇게 작성하면 됩니다:
+이제 생략된 `[...]`부분에 코드를 추가해봅시다. 만약 `method`가 `POST`라면, 폼에서 받은 데이터를 `PostForm`으로 넘겨줘야겠죠? 이렇게 작성하면 됩니다. :
 
 ```python
 form = PostForm(request.POST)
 ```
 
-참 쉽죠! 다음에는 폼에 들어있는 값들이 올바른지를 확인해야합니다.(모든 필드에는 값이 있어야하고 잘못된 값이 있다면 저장하면 되지 않아야해요.) 이를 위해 `form.is_valid()`을 사용할거에요..
+참 쉽죠! 다음에는 폼에 들어있는 값들이 올바른지를 확인해야합니다.(모든 필드에는 값이 있어야하고 잘못된 값이 있다면 저장하면 되지 않아야해요.) 이를 위해 `form.is_valid()`을 사용할거에요.
 
 폼에 입력된 값이 올바른지 확인한 다음, 저장되는거죠!
 
@@ -200,7 +202,7 @@ if form.is_valid():
     post.save()
 ```
 
-일반적으로, 이 작업을 두 단계로 나눌 수 있어요: `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠!) `commit=False`란 넘겨진 데이터를 바로 `Post` 모델에 저장하지는 말라는 뜻입니다. - 왜냐하면 작성자를 추가한 다음 저장해야하니까요. 대부분의 경우에는 `commit=False`를 쓰지 않고 바로 `form.save()`를 사용해서 저장해요. 다면 여기서는 작성자 정보를 추가하고 저장해야하기 때문에 commit=False를 사용하는 거에요. `post.save()`는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어 질거에요!
+일반적으로, 이 작업을 두 단계로 나눌 수 있어요. : `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠!) `commit=False`란 넘겨진 데이터를 바로 `Post` 모델에 저장하지는 말라는 뜻입니다. - 왜냐하면 작성자를 추가한 다음 저장해야하니까요. 대부분의 경우에는 `commit=False`를 쓰지 않고 바로 `form.save()`를 사용해서 저장해요. 다면 여기서는 작성자 정보를 추가하고 저장해야하기 때문에 commit=False를 사용하는 거에요. `post.save()`는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어질 거에요!
 
 끝으로, 새 블로그 글을 작성한 다음에 `post_detail` 페이지로 이동할 수 있으면 좋겠죠? 이 작업을 하려면 한 가지를 더 불러와야해요.
 
@@ -216,7 +218,7 @@ from django.shortcuts import redirect
 
 `blog.views.post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
 
-잘 했어요. 너무 설명이 길어졌네요... 이제 *view* 의 전체 코드를 확인할게요.
+잘 했어요. 너무 설명이 길어졌네요. 이제 *view* 의 전체 코드를 확인할게요.
 
 ```python
 def post_new(request):
@@ -267,7 +269,7 @@ def post_new(request):
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-이제 템플릿이 아래처럼 보일 거에요:
+이제 템플릿이 아래처럼 보일 거에요. :
 
 ```html
 {% extends 'blog/base.html' %}
@@ -294,7 +296,7 @@ def post_new(request):
 
 우리는 `blog/templates/blog/post_edit.html` 템플릿을 재사용할 거에요. 마지막으로 할 일은 *view* 를 만드는 것입니다.
 
-`blog/views.py` 파일을 열어서 파일의 맨 밑에 코드를 추가해봅시다:
+`blog/views.py` 파일을 열어서 파일의 맨 밑에 코드를 추가해봅시다. :
 
 ```python
 def post_edit(request, pk):
@@ -312,7 +314,9 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-음.. 코드가 `post_new`과 거의 비슷해보이지 않나요? 하지만 완전히 같지는 않아요. 첫 번째: url로부터 추가로 `pk` 매개변수를 받아서 처리합니다. 두번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`로 가져옵니다(원하는 글은 pk를 이용해 찾습니다.). 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다:
+음.. 코드가 `post_new`과 거의 비슷해보이지 않나요? 하지만 완전히 같지는 않아요.
+첫 번째: url로부터 추가로 `pk` 매개변수를 받아서 처리합니다.
+두 번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`로 가져옵니다. (원하는 글은 pk를 이용해 찾습니다.) 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다. :
 
 ```python
 form = PostForm(request.POST, instance=post)
@@ -324,7 +328,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-잘했어요, 이제 잘 작동하는지 확인해보세요! `post_detail` 페이지로 가보세요. 거기에 우측 상단에 수정 버튼이 있어야 합니다.
+잘했어요. 이제 잘 작동하는지 확인해보세요! `post_detail` 페이지로 가보세요. 거기에 우측 상단에 수정 버튼이 있어야 합니다.
 
 ![수정 버튼(Edit button)][5]
 
@@ -340,19 +344,19 @@ form = PostForm(instance=post)
 
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
-장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요: https://docs.djangoproject.com/en/1.8/topics/forms/
+장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## 보안
 
-링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋져요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
+링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋져요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어 볼게요.
 
-`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다:
+`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다. :
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-여기에 `{% if %}` 태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요:
+여기에 `{% if %}` 태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들 거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요. :
 
 ```html
 {% if user.is_authenticated %}
@@ -378,7 +382,7 @@ $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
 ```
 
-* 그 다음 [PythonAnywhere Bash console(배시 콘솔)][7]을 여세요:
+* 그 다음 [PythonAnywhere Bash console(배시 콘솔)][7]을 여세요. :
 
  [7]: https://www.pythonanywhere.com/consoles/
 
@@ -395,4 +399,4 @@ $ git push
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-이제 배포가 완료 되었어요. 잘 작동되는지 확인해 보세요! 축하합니다. :)
+이제 배포가 완료 되었어요. 잘 작동되는지 확인하세요! 축하합니다. :)
