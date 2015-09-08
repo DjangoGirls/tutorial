@@ -1,8 +1,7 @@
 # 장고 걸스 튜토리얼 (Django Girls Tutorial)
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)]
+(https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 라이센스를 따릅니다. 라이센스 전문은http://creativecommons.org/licenses/by-sa/4.0/ 에 있습니다.
 
@@ -26,7 +25,8 @@
 
  [2]: images/application.png
 
-> 만약 이 튜토리얼을 따라가다가 문제가 발생했을 때 도와줄 코치가 없을 때에는 우리와 얘기할 수 있어요: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. 우리는 코치나 전 참가자들에게 이 곳에서 도움이 필요한 사람들을 도와달라고 요청해두었답니다! 어떤 질문이든 물어보는데 주저하지 마세요!
+> 만약 이 튜토리얼을 따라가다가 문제가 발생했을 때 도와줄 코치가 없을 때에는 우리와 얘기할 수 있어요: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+ 우리는 코치나 전 참가자들에게 이 곳에서 도움이 필요한 사람들을 도와달라고 요청해두었답니다! 어떤 질문이든 물어보는데 주저하지 마세요!
 
 자, [기본적인 것부터 시작해볼까요...][3]
 
