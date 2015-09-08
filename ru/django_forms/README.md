@@ -10,23 +10,24 @@
 
 Нам нужно создать файл с таким именем в директории `blog`.
 
+```
     blog
        └── forms.py
-    
+```
 
 Теперь открой его и набери следующее:
 
-    python
+```python
     from django import forms
-    
+
     from .models import Post
-    
+
     class PostForm(forms.ModelForm):
-    
+
         class Meta:
             model = Post
             fields = ('title', 'text',)
-    
+```
 
 Для начала нам нужно импортировать формы Django (`from django import forms`) и, разумеется, нашу модель `Post` (`from .models import Post`).
 
@@ -44,14 +45,16 @@
 
 Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `page-header`:
 
+```
     html
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```
 
 Обрати внимание, что мы назвали новое представление `post_new`.
 
 После добавления строки, твой html-файл должен выглядеть следующим образом:
 
+```
     html
     {% load staticfiles %}
     <html>
@@ -77,7 +80,7 @@
             </div>
         </body>
     </html>
-    
+```
 
 Сохрани файл и перезагрузи страницу по адресу http://127.0.0.1:8000, ты должна увидеть знакомую ошибку `NoReverseMatch`, все верно?
 
@@ -85,22 +88,22 @@
 
 Нам нужно открыть файл `blog/urls.py` и добавить строку:
 
-    python
+```python
         url(r'^post/new/$', views.post_new, name='post_new'),
-    
+```
 
 Окончательная версия файла будет выглядеть следующим образом:
 
-    python
+```python
     from django.conf.urls import include, url
     from . import views
-    
+
     urlpatterns = [
         url(r'^$', views.post_list, name='post_list'),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
         url(r'^post/new/$', views.post_new, name='post_new'),
     ]
-    
+```
 
 После перезагрузки веб-сайта, мы увидим ошибку `AttributeError`, поскольку представление `post_new` не реализовано. Давай добавим его прямо сейчас.
 
@@ -108,17 +111,17 @@
 
 Самое время открыть файл `blog/views.py` и добавить следующую строку к остальным, начинающимся с `from`:
 
-    python
+```python
     from .forms import PostForm
-    
+```
 
 и наше *представление*:
 
-    python
+```python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```
 
 Чтобы создать новую форму `Post`, нам потребуется вызвать `PostForm()` и передать её шаблону. Мы еще вернемся к этому *представлению*, а пока, давай быстро создадим шаблон под форму.
 
@@ -137,9 +140,10 @@
 
 Хорошо, давай посмотрим как должен выглядеть HTML-код в файле `post_edit.html`:
 
+```
     html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
@@ -147,7 +151,7 @@
             <button type="submit" class="save btn btn-default">Save</button>
         </form>
     {% endblock %}
-    
+```
 
 Время обновить страницу! Ура! Форма отображается!
 
@@ -165,60 +169,60 @@
 
 Снова открой файл `blog/views.py`. Все что у нас есть в представлении `post_new` выглядит пока следующим образом:
 
-    python
+```python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```
 
 После отправки формы мы возвращаемся к тому же представлению, но в этот раз с новыми данными в `request`, а точнее в `request.POST` (имя POST не имеет ничего общего с "постом" в блоге, оно связано с тем, что мы "публикуем" данные). Помнишь, что в HTML-файле, определение `<form>` имеет параметр `method="POST"`? Все поля формы теперь находятся в `request.POST`. Ты не должна переименовывать `POST` во что-то другое (другое доступное значение параметра `method` - `GET`, но у нас нет времени объяснять разницу сейчас).
 
 Получается, что в представлении *view* нам нужно обработать две разные ситуации. Первая: когда мы только зашли на страницу и хотим получить пустую форму. Вторая: когда мы возвращаемся к *представлению* со всей информацией, которую мы ввели в форму. Таким образом, нам потребуется ввести условие (мы будем использовать условный оператор `if` для этой цели).
 
-    python
+```python
     if request.method == "POST":
         [...]
     else:
         form = PostForm()
-    
+```
 
 Теперь заполним строку, занятую `[...]`. Если `method` - `POST`, тогда мы хотим построить `PostForm` с данными из формы, верно? Мы добьемся этого следующим образом:
 
-    python
+```python
     form = PostForm(request.POST)
-    
+```
 
 Легко! Дальше мы проверим корректна ли форма (все необходимые поля заполнены и неверные значения не будут сохранены). Мы сделаем это при помощи `form.is_valid()`.
 
 Мы проверяем допустимо ли содержание формы и, если все в порядке, сохраняем её!
 
-    python
+```python
     if form.is_valid():
         post = form.save(commit=False)
         post.author = request.user
         post.published_date = timezone.now()
         post.save()
-    
+```
 
 Практически мы выполняем две операции: сохраняем форму `form.save` и добавляем автора (поскольку обязательного поля `author` нет в `PostForm`!). `commit=False` означает, что мы пока не хотим сохранять модель `Post` - сначала нужно добавить автора. В основном ты будешь использовать `form.save()`, без `commit=False`, но в данном случае нам это пригодится. `post.save()` сохранит изменения (после добавления автора) и новая запись будет создана!
 
 Наконец, будет прекрасно, если мы сможем сразу переходить к странице `post_detail` после добавления новой записи, согласна? Для этого нам понадобится еще один импорт:
 
-    python
+```python
     from django.shortcuts import redirect
-    
+```
 
 Добавь эту строку в начало файла. Теперь мы можем сделать переадресацию на страницу `post_detail` для созданной записи.
 
-    python
+```python
     return redirect('blog.views.post_detail', pk=post.pk)
-    
+```
 
 `blog.views.post_detail`это имя представления, которое нам необходимо. Помнишь, что это *представление* требует переменную `pk`? Чтобы передать её представлению мы используем аргумент `pk=post.pk`, где `post` - это новая запись в блоге!
 
 Хорошо, мы многое обсудили, пора взглянуть на *представление* полностью, верно?
 
-    python
+```python
     def post_new(request):
         if request.method == "POST":
             form = PostForm(request.POST)
@@ -231,7 +235,7 @@
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```
 
 Проверим, все ли работает. Перейди по адресу http://127.0.0.1:8000/post/new/, добавь текст в поля `title` и `text`, затем сохрани... и вуаля! Новая запись создана и мы перешли на страницу `post_detail`!
 
@@ -263,15 +267,15 @@ Django заботится о проверке всех полей в нашей 
 
 Открой `blog/templates/blog/post_detail.html` и добавь следующую строку:
 
-    python
+```python
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    
+```
 
 так, чтобы шаблон выглядел следующим образом:
 
-    html
+```html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         <div class="post">
             {% if post.published_date %}
@@ -284,19 +288,19 @@ Django заботится о проверке всех полей в нашей 
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endblock %}
-    
+```
 
 В файле `blog/urls.py` добавь:
 
-    python
+```python
         url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
-    
+```
 
 Мы будем использовать повторно шаблон `blog/templates/blog/post_edit.html`, так что осталось лишь отсутствующее *представление*.
 
 Let's open a `blog/views.py` and add at the very end of the file:
 
-    python
+```python
     def post_edit(request, pk):
         post = get_object_or_404(Post, pk=pk)
         if request.method == "POST":
@@ -310,19 +314,19 @@ Let's open a `blog/views.py` and add at the very end of the file:
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```
 
 Выглядит практически идентично представлению `post_new`, верно? Но не совсем. Первое: мы передаем параметр `pk` из URL-адреса. Следующее: мы получаем модель `Post` для редактирования при помощи `get_object_or_404(Post, pk=pk)` и передаем экземпляр post в качестве `instance` форме для сохранения:
 
-    python
+```python
     form = PostForm(request.POST, instance=post)
-    
+```
 
 и когда мы открываем форму для редактирования:
 
-    python
+```python
     form = PostForm(instance=post)
-    
+```
 
 Хорошо, давай проверим что все работает! Перейди на страницу `post_detail`. Ты должна увидеть кнопку редактирования в правом верхнем углу:
 
@@ -348,17 +352,17 @@ Let's open a `blog/views.py` and add at the very end of the file:
 
 В файле `blog/templates/blog/base.html`, найди `page-header` `div` и тег &lta&gt который мы добавили ранее. Должно выглядеть примерно так:
 
-    html
+```html
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```
 
 Мы добавим сюда ещё один тэг `{% if %}` чтобы ссылка показывалась только пользователям, вошедшим в админку. То есть, пока что только тебе! Измени тег `< >`, чтобы получилось так:
 
-    html
+```html
     {% if user.is_authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
-    
+```
 
 Из-за этого `{% if %}` ссылка будет отправлена в браузер только если запрашивающий страницу пользователь вошёл в систему. Это не обезопасит создание новых постов полностью, но для начала и это неплохо. Мы подробнее рассмотрим вопросы безопасности в дополнении к учебнику.
 
@@ -370,24 +374,26 @@ Let's open a `blog/views.py` and add at the very end of the file:
 
 *   Сначала нам нужно сделать commit и push нового кода в репозиторий Github
 
+```
     $ git status
     $ git add -A .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
-    
+```
 
 *   Затем набери в [Bash консоли PythonAnywhere][7]:
 
  [7]: https://www.pythonanywhere.com/consoles/
 
+```
     $ cd my-first-blog
     $ source myvenv/bin/activate
     (myvenv)$ git pull
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+```
 
 *   И нажми **Reload** на вкладке [Web tab][8].
 

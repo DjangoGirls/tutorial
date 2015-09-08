@@ -18,10 +18,10 @@ Bootstrap - один из наиболее популярных HTML и CSS фр
 
 Для установки Bootstrap тебе нужно добавить следующие строки в `<head>` твоего `.html` файла (`blog/templates/blog/post_list.html`):
 
-    html
+```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    
+```
 
 Это не добавит ни одного файла к твоему проекту. Эти строки просто указывают на файлы, опубликованные в Интернете. Просто продолжай, открой свой веб-сайт и обнови страницу. Вот и результат!
 
@@ -41,12 +41,13 @@ Bootstrap - один из наиболее популярных HTML и CSS фр
 
 Мы сделаем это, создав папку `static` внутри каталога с нашим приложением:
 
+```
     djangogirls
     ├── blog
     │   ├── migrations
     │   └── static
     └── mysite
-    
+```
 
 Django будет автоматически находить папки "static" внутри всех каталогов твоих приложений и сможет использовать их содержимое в качестве статических файлов.
 
@@ -54,12 +55,13 @@ Django будет автоматически находить папки "static
 
 Давай создадим CSS файл, чтобы добавить свой собственный стиль для твоей web-страницы. Создай новую папку под названием `css` внутри твоей папки `static`. Затем создайте новый файл под названием `blog.css` внутри папки `css`. Готова?
 
+```
     djangogirls
     └─── blog
          └─── static
               └─── css
                    └─── blog.css
-    
+```
 
 Пришло время написать несколько строк CSS! Открой файл `blog/static/css/blog.css` в своем редакторе кода.
 
@@ -73,19 +75,19 @@ Django будет автоматически находить папки "static
 
 В файле `blog/static/css/blog.css` тебе нужно добавить следующий код:
 
-    css
+```css
     h1 a {
         color: #FCA205;
     }
-    
+```
 
 `h1 a` это CSS селектор. Это означает, что мы применяем наши стили к каждому элементу `a` внутри элемента `h1` (например, когда мы имеем в коде что-то вроде: `<h1><a href="">link</a></h1>`). В этом случае мы говорим о том, что нужно изменить цвет элемента на `#FCA205`, то есть на оранжевый. Конечно, ты можешь указать свой собственный цвет!
 
 В CSS файле мы определяем стили для элементов файла HTML. Элементы идентифицируются именами (то есть `a`, `h1`, `body`), атрибутом `class` или атрибутом `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. Например, следующий тег может быть идентифицирован CSS с использованием имени тега `a`, класса `external_link` или идентификатора `link_to_wiki_page`:
 
-    html
+```html
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-    
+```
 
 Почитай про CSS селекторы в [CSS Selectors in w3schools][4].
 
@@ -93,21 +95,21 @@ Django будет автоматически находить папки "static
 
 Затем нам также нужно сообщить нашему HTML-шаблону о том, что мы добавили CSS. Открой файл `blog/templates/blog/post_list.html` и добавь эту строку в самом начале:
 
-    html
+```html
     {% load staticfiles %}
-    
+```
 
 Мы просто загружаем здесь статические файлы :). Далее между `<head>` и `</head>`, после ссылок на файлы Bootstrap CSS (браузер читает файлы в порядке их следования, поэтому код нашего файла может переопределить код в файлах Bootstrap) добавь эту строку:
 
-    html
+```html
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+```
 
 Мы только что сказали нашему шаблону, где находится наш CSS файл.
 
 Твой файл должен теперь выглядеть следующим образом:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -120,7 +122,7 @@ Django будет автоматически находить папки "static
             <div>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
-    
+
             {% for post in posts %}
                 <div>
                     <p>published: {{ post.published_date }}</p>
@@ -130,7 +132,7 @@ Django будет автоматически находить папки "static
             {% endfor %}
         </body>
     </html>
-    
+```
 
 ОК, сохрани файл и обнови страницу!
 
@@ -140,11 +142,11 @@ Django будет автоматически находить папки "static
 
 Отличная работа! Может быть, мы также хотели бы добавить нашему веб-сайту немного пространства и увеличить отступ слева? Давай попробуем!
 
-    css
+```css
     body {
         padding-left: 15px;
     }
-    
+```
 
 Добавь это к твоему CSS, сохрани файл и посмотри, как это работает!
 
@@ -154,20 +156,20 @@ Django будет автоматически находить папки "static
 
 Возможно, мы можем настроить шрифт нашего заголовка? Вставь это внутрь тега `<head>` в файле `blog/templates/blog/post_list.html`:
 
-    html
+```html
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    
+```
 
 Эта строка импортирует шрифт под названием *Lobster* из шрифтов Google (https://www.google.com/fonts).
 
 Теперь добавь строку `font-family: 'Lobster';` в CSS файле `blog/static/css/blog.css` внутри блока определения стиля `h1 a` (код помещается между скобками `{` и `}`) и обнови страницу:
 
-    css
+```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
     }
-    
+```
 
 ![Рисунок 14.3][7]
 
@@ -179,77 +181,77 @@ Django будет автоматически находить папки "static
 
 Дайте имена определенным частям HTML кода. Добавьте класс под названием `page-header` в блок `div`, содержащий ваш заголовок, как это сделано здесь:
 
-    html
+```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-    
+```
 
 А теперь добавьте класс `post` в ваш `div`, содержащий сообщение в блоге.
 
-    html
+```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
-    
+```
 
 А теперь добавим определения блоков для различных селекторов. Селекторы, которые начинают с символа `.` относятся к классам. Существует много хороших справочников о CSS в Интернете, которые могут помочь вам понять следующий код. А теперь, просто скопируй и вставь код в файл `djangogirls/static/css/blog.css`:
 
-    css
+```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
         padding: 20px 20px 20px 40px;
     }
-    
+
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;
         font-size: 36pt;
         text-decoration: none;
     }
-    
+
     .content {
         margin-left: 40px;
     }
-    
+
     h1, h2, h3, h4 {
         font-family: 'Lobster', cursive;
     }
-    
+
     .date {
         float: right;
         color: #828282;
     }
-    
+
     .save {
         float: right;
     }
-    
+
     .post-form textarea, .post-form input {
         width: 100%;
     }
-    
+
     .top-menu, .top-menu:hover, .top-menu:visited {
         color: #ffffff;
         float: right;
         font-size: 26pt;
         margin-right: 20px;
     }
-    
+
     .post {
         margin-bottom: 70px;
     }
-    
+
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
-    
+```
 
 Далее переделайте HTML код, отображающий посты. замените:
 
-    html
+```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -257,11 +259,11 @@ Django будет автоматически находить папки "static
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```
 
 в `blog/templates/blog/post_list.html` этим кодом:
 
-    html
+```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -277,7 +279,7 @@ Django будет автоматически находить папки "static
             </div>
         </div>
     </div>
-    
+```
 
 Сохраните эти файлы и обновить свой веб-сайт.
 

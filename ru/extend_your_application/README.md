@@ -12,9 +12,9 @@
 
 Мы начнем с добавления ссылки внутри файла `blog/templates/blog/post_list.html`. Пока он выглядит следующим образом:
 
-    html
+```html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         {% for post in posts %}
             <div class="post">
@@ -26,14 +26,14 @@
             </div>
         {% endfor %}
     {% endblock content %}
-    
-    
+```
+
 
 {% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу подробной информации о посте. Давай изменим `<h1><a href="">{{ post.title }}</a></h1>` чтобы получилась ссылка на пост:{% endraw %}
 
-    html
+```html
     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```
 
 {% raw %}Самое время разобраться с загадочным `{% url 'post_detail' pk=post.pk %}`. Как можешь предположить, синтаксис `{% %}` означает использование тегов шаблонов Django. На этот раз мы используем тот, что создаст для нас URL!{% endraw %}
 
@@ -53,15 +53,15 @@
 
 Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` в файл `blog/urls.py`. Файл должен выглядеть примерно так:
 
-    python
+```python
     from django.conf.urls import include, url
     from . import views
-    
+
     urlpatterns = [
         url(r'^$', views.post_list, name='post_list'),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
     ]
-    
+```
 
 Фрагмент `^post/(?P<pk>[0-9]+)/$` выглядит страшновато, но не волнуйтесь — мы его сейчас объясним: - он начинается с `^`, что означает, как мы помним, "начало строки" - `post/` значит всего лишь, что после начала строки URL должен содержать слово **post** и косую черту **/**. Пока все в порядке. - `(?P<pk>[0-9]+)` - эта часть посложнее. Она означает, что Django возьмет все, что придется на эту часть строки и передаст представлению в качестве переменной `pk`. `[0-9]` означает, что допустимы только цифры (от 0 до 9), но не буквы. `+` означает, что цифр должно быть от одной и больше. Таким образом адрес `http://127.0.0.1:8000/post//` будет недействительным, а `http://127.0.0.1:8000/post/1234567890/` совершенно правильным! - `/` - затем нам нужен еще один символ **/** - `$` - "конец"!
 
@@ -83,8 +83,9 @@
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet:
 
+```
     Post.objects.get(pk=pk)
-    
+```
 
 Однако в этом коде есть проблема. Если не существует экземпляра объекта `Post` с заданным `primary key` (`pk`) мы получим страшную ошибку!
 
@@ -104,15 +105,17 @@
 
 Нам нужно открыть файл `blog/views.py` и добавить в него следующий код:
 
+```
     from django.shortcuts import render, get_object_or_404
-    
+```
 
 Рядом с другими строками, начинающимися с `from`. В конец же файла мы добавим наше новое *представление*:
 
+```
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
-    
+```
 
 Именно. Теперь обнови страницу http://127.0.0.1:8000/
 
@@ -134,9 +137,9 @@
 
 Он должен содержать следующее:
 
-    html
+```html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         <div class="post">
             {% if post.published_date %}
@@ -148,7 +151,7 @@
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endblock %}
-    
+```
 
 И снова мы расширяем `base.html`. В блоке `content` мы отображаем дату публикации (published_date, если она существует), заголовок и текст. Нам также нужно обсудить пару важных вещей, хорошо?
 
@@ -166,24 +169,26 @@
 
 Было бы неплохо проверить, что веб-сайт все еще будет работать на PythonAnywhere, верно? Давай еще раз проведем развертывание.
 
+```
     $ git status
     $ git add -A .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
-    
+```
 
 *   Затем набери в [Bash консоли PythonAnywhere][8]:
 
  [8]: https://www.pythonanywhere.com/consoles/
 
+```
     $ cd my-first-blog
     $ source myvenv/bin/activate
     (myvenv)$ git pull
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+```
 
 *   И нажми **Reload** на вкладке [Web tab][9].
 

@@ -10,16 +10,17 @@
 
 Давай создадим файл `base.html` в директории `blog/templates/blog/`:
 
+```
     blog
     └───templates
         └───blog
                 base.html
                 post_list.html
-    
+```
 
 Теперь открой его и скопируй все из `post_list.html` в `base.html`:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -33,7 +34,7 @@
             <div class="page-header">
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
-    
+
             <div class="content container">
                 <div class="row">
                     <div class="col-md-8">
@@ -51,11 +52,11 @@
             </div>
         </body>
     </html>
-    
+```
 
 Затем в файле `base.html` замени все между тегами `<body>` и `</body>` следующим кодом:
 
-    html
+```html
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -69,20 +70,20 @@
             </div>
         </div>
     </body>
-    
+```
 
 Мы просто заменили все между `{% for post in posts %}{% endfor %}` следующим:
 
-    html
+```html
     {% block content %}
     {% endblock %}
-    
+```
 
 Что это означает? Ты только что создала `block` - тег шаблона, позволяющий вставлять HTML-код этого блока в другие шаблоны, расширяющие `base.html`. Мы покажем как это сделать через секунду.
 
 Теперь сохрани все и открой `blog/templates/blog/post_list.html` снова. Тебе нужно удалить весь код вне тегов body, а также `<div class="page-header"></div>`, в итоге файл будет выглядеть следующим образом:
 
-    html
+```html
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -92,18 +93,19 @@
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```
 
 А теперь добавь следующую строку в начало файла:
 
+```
     {% extends 'blog/base.html' %}
-    
+```
 
 {% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block content %}` и `{% endblock content %}`. Таким образом:{% endraw %}
 
-    html
+```html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         {% for post in posts %}
             <div class="post">
@@ -115,7 +117,7 @@
             </div>
         {% endfor %}
     {% endblock content %}
-    
+```
 
 Готово! Проверь, что твой веб-сайт работает нормально :)
 
