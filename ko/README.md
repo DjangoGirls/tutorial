@@ -1,14 +1,15 @@
 # 장고 걸스 튜토리얼 (Django Girls Tutorial)
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)]
-(https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 라이센스를 따릅니다. 라이센스 전문은http://creativecommons.org/licenses/by-sa/4.0/ 에 있습니다.
 
 ## 번역
 This tutorial has been translated from English to Korean by a group of awesome volunteers. Special thanks for help go to all.
 이 튜토리얼은 자원 봉사자들에 의해 한국어로 번역되었습니다. 수고해주신 모든 분들에게 진심으로 감사의 말씀을 전합니다.
+
 Translators : Jay Park, Veronique Cho, KwangYoun Jung, innatsu, ssep4u, Jiyoung Moon, Hwi Kyoung Kim, holy1983, Hyungseok Yeo, Hemin Sim
+
 Proofreaders : Sujin Lee, Gihun Ham
 
 ## 들어가며

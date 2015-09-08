@@ -1,4 +1,4 @@
-# Django란 무엇인가?
+# Django란 무엇인가요?
 
 Django (*/ˈdʒæŋɡoʊ/ jang-goh/쟁고/장고*) 는 Python으로 만들어진 무료 오픈소스 웹 어플리케이션 프레임워크(web application framework) 입니다. 쉽고 빠르게 웹사이트를 개발할 수 있도록 돕는 구성요소로 이루어진 웹 프레임워크인 것이죠.
 

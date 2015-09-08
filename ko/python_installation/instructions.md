@@ -16,7 +16,7 @@
 
     $ python3 --version
     Python 3.4.3
-    
+
 
 파이썬이 설치되어 있지 않거나 버전이 다르면 이렇게 해보세요:
 
@@ -25,34 +25,34 @@
 콘솔에서 다음 명령을 실행하세요.
 
     $ sudo apt-get install python3.4
-    
+
 
 #### Fedora (21까지)
 
 콘솔에서 다음 명령을 실행하세요.
 
     $ sudo yum install python3.4
-    
+
 
 #### Fedora (22부터)
 
 콘솔에서 다음 명령을 실행합니다.
 
     $ sudo dnf install python3.4
-    
+
 
 ### OS X
 
 https://www.python.org/downloads/release/python-343/에서 파이썬 설치프로그램을 다운로드 받아야 합니다.
 
   * *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
-  * *python-3.4.3-macosx10.6.pkg*을 더블 클릭해 설치 프로그램을 시작하세요. 
+  * *python-3.4.3-macosx10.6.pkg*을 더블 클릭해 설치 프로그램을 시작하세요.
 
 *터미널*을 열고 `python3` 명령을 실행해서 잘 설치되었는지 확인하세요.
 
     $ python3 --version
     Python 3.4.3
-    
+
 
 * * *
 

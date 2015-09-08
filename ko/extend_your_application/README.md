@@ -28,7 +28,7 @@
 {% endblock content %}
 ```
 
-우리는 post 목록에 있는 제목에서 post의 내용 페이지로 가는 링크를 만들 거에요. `<h1><a href="">{{ post.title }}</a></h1>` 를 변경해 봅시다. post의 상세 페이지는 {% endraw %} 로 연결됩니다.
+{% raw %}우리는 post 목록에 있는 제목에서 post의 내용 페이지로 가는 링크를 만들 거에요. `<h1><a href="">{{ post.title }}</a></h1>` 를 변경해 봅시다. post의 상세 페이지는 {% endraw %} 로 연결됩니다.
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
@@ -146,7 +146,7 @@ urlpatterns = [
 
 다시 한 번 `base.html`을 확장해 봅시다. `content` 블록에서, 블로그 글의 published_date 출판일(존재한다면) 과 제목, 내용을 보이게 할 거에요. 그런데 제일 중요한 것을 얘기해봐야하지 않겠어요?
 
-`{% if ... %} ... {% endif %}` 는 무엇인가를 확인할 때 사용하는 템플릿 태그 입니다. (`if ... else ..` 를 __파이썬 들어가기__ 장에서 본 기억이나나요?) 우리는 post의 `출판 날짜(published_date)`가 비어있는지 아닌지 확인하고 싶어요. {% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` 는 무엇인가를 확인할 때 사용하는 템플릿 태그 입니다. (`if ... else ..` 를 __파이썬 들어가기__ 장에서 본 기억이나나요?) 우리는 post의 `출판 날짜(published_date)`가 비어있는지 아닌지 확인하고 싶어요. {% endraw %}
 
 페이지를 새로고침하면 `페이지 찾을 수 없음(Page not found)` 페이지가 없어진 것을 알 수 있어요.
 
