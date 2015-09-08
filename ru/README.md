@@ -1,6 +1,6 @@
 # Руководство Django Girls
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0 Чтобы ознакомиться с содержанием этой лицензии, посети: http://creativecommons.org/licenses/by-sa/4.0/
 
