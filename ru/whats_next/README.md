@@ -19,7 +19,16 @@
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Позднее ты можешь попробовать ресурсы из списка ниже. Мы очень рекомендуем все из них! - [Django's official tutorial][4] - [New Coder tutorials][5] - [Code Academy Python course][6] - [Code Academy HTML & CSS course][7] - [Django Carrots tutorial][8] - [Learn Python The Hard Way book][9] - [Getting Started With Django video lessons][10] - [Two Scoops of Django: Best Practices for Django 1.8 book][11]
+Позднее ты можешь попробовать ресурсы из списка ниже. Мы очень рекомендуем все из них!
+
+- [Django's official tutorial][4]
+- [New Coder tutorials][5]
+- [Code Academy Python course][6]
+- [Code Academy HTML & CSS course][7]
+- [Django Carrots tutorial][8]
+- [Learn Python The Hard Way book][9]
+- [Getting Started With Django video lessons][10]
+- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
