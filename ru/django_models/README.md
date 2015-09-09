@@ -87,16 +87,17 @@
 
 После того как приложение создано, нам нужно сообщить Django, что теперь он должен его использовать. Мы сделаем это через файл `mysite/settings.py`. Нам нужно найти `INSTALLED_APPS` и добавить к списку `'blog',` прямо перед `)`. Конечный результат должен выглядеть следующим образом:
 
-    python
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+```
     
 
 ### Создание модели записи в блоге
@@ -105,26 +106,27 @@
 
 Открой файл `blog/models.py`, удали весь текст и вставь на его место следующий код:
 
-    python
-    from django.db import models
-    from django.utils import timezone
-    
-    
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
-    
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.title
+```python
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
     
 
 > Убедись, что использовала два символа нижнего подчеркивания (`_`) с обоих сторон от метода `str`. Это соглашение часто используется при программировании на Python, и иногда его называют "dunder" (сокращение от англ. "double-underscore").

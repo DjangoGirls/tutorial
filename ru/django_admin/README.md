@@ -4,11 +4,12 @@
 
 Давай откроем файл `blog/admin.py` и заменим его содержимое на:
 
-    python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
     
 
 Как ты можешь заметить, мы импортировали (включили) модель Post, которая была определена в предыдущей главе. Чтобы наша модель стала доступна на странице администрирования, нам нужно зарегистрировать её при помощи `admin.site.register(Post)`.

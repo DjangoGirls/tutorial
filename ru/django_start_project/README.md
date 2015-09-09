@@ -57,17 +57,19 @@
 
 В файле settings.py найди строку, содержащую `TIME_ZONE`, и модифицируй её в соответствии со своим часовым поясом:
 
-    python
-    TIME_ZONE = 'Europe/Moscow'
+```python
+TIME_ZONE = 'Europe/Moscow'
+```
     
 
 Замени "Europe/Moscow" на соответствующий часовой пояс
 
 Нам также необходимо добавить в настройки информацию о расположении статических файлов (мы познакомимся со статичными файлами и CSS в следующих главах). Спустись в *конец* файла и после переменной `STATIC_URL` добавь новую - `STATIC_ROOT`:
 
-    python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
     
 
 ## Настройка базы данных
@@ -76,13 +78,14 @@
 
 Она уже выбрана по умолчанию в файле `mysite/settings.py`:
 
-    python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
+```
     
 
 Чтобы создать базу данных для нашего блога, набери в командной строке следующее: `python manage.py migrate` (мы должны быть в директории `djangogirls`, где расположен файл `manage.py`). Если все прошло успешно, то ты увидишь следующий результат:
