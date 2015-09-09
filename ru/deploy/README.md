@@ -262,19 +262,20 @@ Django использует протокол WSGI, стандартный про
 
 Удали все содержимое и замени их с чем-то вроде этого:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<your-username>/my-first-blog'  # use your own username here
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
+```python
+import os
+import sys
+
+path = '/home/<your-username>/my-first-blog'  # use your own username here
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
     
 
 > **Примечание**: не забудь заменить имя пользователя на свое там, где это указано `<your-username>`

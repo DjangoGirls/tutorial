@@ -8,18 +8,20 @@
 
 Нам нужно открыть файл `blog/views.py`. Таким образом *представление* `post_list` будет выглядеть следующим образом:
 
-    python
-    from django.shortcuts import render
-    
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
+```python
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
     
 
 Помнишь мы говорили о включении кода из других файлов? Теперь нам нужно включить модель, которую мы определили в файле `models.py`. Мы добавим строку `from .models import Post` следующим образом:
 
-    python
-    from django.shortcuts import render
-    from .models import Post
+```python
+from django.shortcuts import render
+from .models import Post
+```
     
 
 Точка перед `from` означает *текущую директорию* или *текущее приложение*. Поскольку `views.py` и `models.py` находятся в одной директории, мы можем использовать точку `.` и имя файла (без расширения `.py`). Затем мы импортируем модель (`Post`).
@@ -39,14 +41,15 @@
 
 Теперь нам нужно включить эту строку кода в файл`blog/views.py`, добавив её в функцию `def post_list(request)`:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {})
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
+```
     
 
 Пожалуйста, обрати внимание, что мы создали *переменную* для QuerySet: `posts`. Можешь думать о неё как об имени для нашего QuerySet. Теперь мы можем обращаться к нему, используя имя.
@@ -59,14 +62,15 @@
 
 В результате файл `blog/views.py` должен выглядеть следующим образом:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {'posts': posts})
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
     
 
 Вот и все! Теперь пришло время перейти к шаблону и отобразить QuerySet на странице!

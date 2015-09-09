@@ -10,17 +10,19 @@
 
 Хорошо, давай откроем этот файл и посмотрим на его содержимое:
 
-    python
-    from django.shortcuts import render
-    
-    # Create your views here.
+```python
+from django.shortcuts import render
+
+# Create your views here.
+```
     
 
 Не слишком много кода. Простейшее *представление* может выглядеть следующим образом.
 
-    python
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
     
 
 Как ты можешь заметить, мы создали метод (`def`) с именем `post_list`, который принимает в `request` в качестве аргумента и `return` (возвращает) результат работы метода `render`, который соберет наш шаблон страницы `blog/post_list.html`.
