@@ -23,3 +23,4 @@ Later on, you can try the resources listed below. They're all very recommended!
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
 - [Getting Started With Django video lessons](http://gettingstartedwithdjango.com/)
 - [Two Scoops of Django: Best Practices for Django 1.8 book](http://twoscoopspress.com/products/two-scoops-of-django-1-8)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/)
