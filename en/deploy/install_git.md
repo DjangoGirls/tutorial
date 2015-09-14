@@ -12,17 +12,20 @@ Download Git from [git-scm.com](http://git-scm.com/) and just follow the instruc
 
 If it isn't installed already, git should be available via your package manager, so try:
 
-
 #### Debian or Ubuntu
 
-    $ sudo apt-get install git
-
+```:command-line
+$ sudo apt-get install git
+```
 
 #### Fedora (up to 21)
 
-    $ sudo yum install git
-
+```:command-line
+$ sudo yum install git
+```
 
 #### Fedora (22+)
 
-    $ sudo dnf install git
+```:command-line
+$ sudo dnf install git
+```

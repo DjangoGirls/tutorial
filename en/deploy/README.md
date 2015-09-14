@@ -204,12 +204,15 @@ For now we just need to run an extra command called `collectstatic`, on the serv
 ```:command-line
 (mvenv) $ python manage.py collectstatic
 /home/edith/my-first-blog/static
+```
 
 This will overwrite existing files!
 Are you sure you want to do this?
 
+```:command-line
 Type 'yes' to continue, or 'no' to cancel: yes
 ```
+
 
 Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
 
@@ -234,8 +237,6 @@ We can initialise the database on the server just like we did the one on your ow
 Operations to perform:
 [...]
   Applying sessions.0001_initial... OK
-
-
 (mvenv) $ python manage.py createsuperuser
 ```
 
