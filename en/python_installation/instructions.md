@@ -4,47 +4,23 @@
 Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
 
-### Windows
-
-You can download Python for Windows from the website https://www.python.org/downloads/release/python-343/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
-
-One thing to watch out for:  on the second screen of the installation wizard, marked "Customize", make sure you scroll down and choose the "Add python.exe to the Path" option, as shown here:
-
-![Don't forget to add Python to the Path](../python_installation/images/add_python_to_windows_path.png)
-
-
-### Linux
+### Debian or Ubuntu
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
     $ python3 --version
     Python 3.4.3
 
-If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you don't have Python installed, or if you want a different version, you can install it. How to install software like Python depends on you distribution.
 
-
-#### Debian or Ubuntu
+The following example is for Debian or Ubuntu.
 
 Type this command into your console:
 
     $ sudo apt-get install python3.4
 
 
-#### Fedora (up to 21)
-
-Use this command in your console:
-
-    $ sudo yum install python3.4
-
-
-#### Fedora (22+)
-
-Use this command in your console:
-
-    $ sudo dnf install python3
-
-
-### OS X
+### Mac OS X
 
 You need to go to the website https://www.python.org/downloads/release/python-343/ and download the Python installer:
 
@@ -59,3 +35,51 @@ Verify the installation was successful by opening the *Terminal* application and
 ----
 
 If you have any doubts, or if something went wrong and you have no idea what to do next - please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+
+
+### Windows
+
+You can download Python for Windows from the website https://www.python.org/downloads/release/python-343/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
+
+One thing to watch out for:  on the second screen of the installation wizard, marked "Customize", make sure you scroll down and choose the "Add python.exe to the Path" option, as shown here:
+
+![Don't forget to add Python to the Path](../python_installation/images/add_python_to_windows_path.png)
+
+
+## other operating systems
+
+If you are using one of the above-noted operating systems ([Debian or Ubuntu](./#debian-or-ubuntu), [Mac OS X](./#mac-os-x) or [Windows](./#windows)) this section is not necessary for you.
+
+Otherwise, if you are using a non mainstream operating systems and you are unfamiliar with it, this section might help you.
+
+
+### GNU/Linux
+
+
+#### Fedora
+
+If you using Fedora (22+), use this command in your console:
+
+    $ sudo yum install python3.4
+
+
+Otherwise (up to 21) use this command in your console:
+
+    $ sudo dnf install python3
+
+
+### UNIX
+
+
+#### FreeBSD or PC-BSD
+
+Use this command in your console:
+
+    # pkg install python34
+
+
+#### OpenBSD
+
+Use this command in your console:
+
+    # pkg_add -r python34
