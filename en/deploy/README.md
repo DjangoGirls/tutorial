@@ -40,10 +40,11 @@ Git will track changes to all the files and folders in this directory, but there
 __pycache__
 myvenv
 db.sqlite3
+/static
 .DS_Store
 ```
 
-And save it as `.gitignore` in the top-level "djangogirls" folder.
+And save it as `.gitignore` in the "djangogirls" folder.
 
 > **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor, it's bulletproof.
 
