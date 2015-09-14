@@ -36,7 +36,7 @@ where `C:\Python34\python` is the directory in which you previously installed Py
 Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
 It will look like this:
 
-    ~/djangogirls$ python3 -m venv myvenv
+    $ python3 -m venv myvenv
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
@@ -46,8 +46,8 @@ It will look like this:
 
 > To get around this, use the `virtualenv` command instead.
 
->     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
+>     $ sudo apt-get install python-virtualenv
+>     $ virtualenv --python=python3.4 myvenv
 
 
 ## Working with virtualenv
@@ -64,23 +64,15 @@ Start your virtual environment by running:
 
 Start your virtual environment by running:
 
-    ~/djangogirls$ source myvenv/bin/activate
+    $ source myvenv/bin/activate
 
 Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 > __NOTE:__ sometimes `source` might not be available. In those cases try doing this instead:
 
->     ~/djangogirls$ . myvenv/bin/activate
+>     $ . myvenv/bin/activate
 
-You will know that you have `virtualenv` started when you see that the prompt in your console looks like:
-
-    (myvenv) C:\Users\Name\djangogirls>
-
-or:
-
-    (myvenv) ~/djangogirls$
-
-Notice the prefix `(myvenv)` appears!
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 

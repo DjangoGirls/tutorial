@@ -41,7 +41,7 @@ Use this command in your console:
 
 Use this command in your console:
 
-    $ sudo dnf install python3.4
+    $ sudo dnf install python3
 
 
 ### OS X
