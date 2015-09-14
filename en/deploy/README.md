@@ -40,6 +40,7 @@ Git will track changes to all the files and folders in this directory, but there
 __pycache__
 myvenv
 db.sqlite3
+/static
 .DS_Store
 ```
 
