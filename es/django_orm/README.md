@@ -138,7 +138,7 @@ También podemos invertir el ordenamiento agregando `-` al principio:
     [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
     
 
-¡Genial! ¡Ahora estás lista para la siguiente parte! Para cerrar la consola, tipea:
+¡Genial! ¡Ahora estás lista para la siguiente parte! Para cerrar la consola, teclea:
 
     >>> exit()
     $

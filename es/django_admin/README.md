@@ -13,13 +13,13 @@ Vamos a abrir el archivo `blog/admin.py` y reemplazar su contenido con esto:
 
 Como puedes ver, importamos (incluimos) el modelo Post definido en el capítulo anterior. Para hacer nuestro modelo visible en la página del administrador, tenemos que registrar el modelo con `admin.site.register(Post)`.
 
-Ok, es hora de ver tu modelo Post. Recuerda ejecutar `python manage.py runserver` en la consola para correr el servidor web. Ve al navegador y tipea la dirección http://127.0.0.1:8000/admin/. Verás una página de ingreso como la que sigue:
+Ok, es hora de ver tu modelo Post. Recuerda ejecutar `python manage.py runserver` en la consola para correr el servidor web. Ve al navegador y teclea la dirección http://127.0.0.1:8000/admin/. Verás una página de ingreso como la que sigue:
 
 ![Página de inicio de sesión][1]
 
  [1]: images/login_page2.png
 
-Para poder ingresar deberás crear un *superusuario* - un usuario que tiene control sobre todo lo que hay en el sitio. Vuelve hacia atrás a tu línea de comandos y tipea `python manage.py createsuperuser`, presiona enter y tipea tu nombre de usuario (en minúsculas, sin espacios), dirección de email y contraseña cuando sean requeridos. No te preocupes que no puedes ver tu contraseña mientras la tipeas - así es como debe ser. Simplemente tipéala y presiona 'Enter' para continuar. La salida de este comando debería verse así (nombre de usuario y email deberían ser los tuyos):
+Para poder ingresar deberás crear un *superusuario* - un usuario que tiene control sobre todo lo que hay en el sitio. Vuelve hacia atrás a tu línea de comandos y teclea `python manage.py createsuperuser`, presiona enter y teclea tu nombre de usuario (en minúsculas, sin espacios), dirección de email y contraseña cuando sean requeridos. No te preocupes que no puedes ver tu contraseña mientras la tecleas - así es como debe ser. Simplemente tipéala y presiona 'Enter' para continuar. La salida de este comando debería verse así (nombre de usuario y email deberían ser los tuyos):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
