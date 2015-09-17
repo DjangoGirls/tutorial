@@ -48,7 +48,7 @@ Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-``` php
+``` python
     from django.conf.urls import include, url
     from . import views
     
@@ -104,7 +104,7 @@ Deberíamos abrir `blog/views.py` y agregar el siguiente código:
 
 Cerca de otras líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
-``` 
+``` django
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
