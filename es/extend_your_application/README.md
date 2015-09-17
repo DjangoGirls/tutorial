@@ -11,7 +11,7 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 ## Crea un enlace en la plantilla
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así:
-```
+``` html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -28,7 +28,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
 ```    
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` dentro del enlace:
-```
+``` html
     <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```    
 
@@ -48,7 +48,8 @@ Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-``` from django.conf.urls import include, url
+``` php
+    from django.conf.urls import include, url
     from . import views
     
     urlpatterns = [
@@ -103,7 +104,8 @@ Deberíamos abrir `blog/views.py` y agregar el siguiente código:
 
 Cerca de otras líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
-``` def post_detail(request, pk):
+``` 
+    def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
 ```    
@@ -126,7 +128,7 @@ Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 
 Se verá así:
 
-```
+``` html
     {% extends 'blog/base.html' %}
     
     {% block content %}
