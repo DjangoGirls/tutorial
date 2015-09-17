@@ -24,7 +24,7 @@ Algo para tener en cuenta: en la segunda pantalla del asistente de instalación,
 
 ### Linux
 
-Es muy posible que ya tengas Python instalado. Para verificar que ya lo tienes instalado (y qué versión es), abre una consola y tipea el siguiente comando:
+Es muy posible que ya tengas Python instalado. Para verificar que ya lo tienes instalado (y qué versión es), abre una consola y teclea el siguiente comando:
 
     $ python3 --version
     Python 3.4.2
@@ -34,7 +34,7 @@ Si no tienes Python instalado o si quieres una versión diferente, puedes instal
 
 #### Ubuntu
 
-Tipea este comando en tu consola:
+Teclea este comando en tu consola:
 
     sudo apt-get install python3.4
     
