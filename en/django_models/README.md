@@ -169,3 +169,10 @@ Django prepared for us a migration file that we have to apply now to our databas
       Applying blog.0001_initial... OK
 
 Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+
+ (myvenv) ~/djangogirls$ python manage.py migrate blog
+ This might trouble or report some errors so in such case use
+ (myvenv) ~/djangogirls$ python manage.py syncdb
+ 
+
+ 
