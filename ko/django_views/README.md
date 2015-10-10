@@ -10,7 +10,6 @@
 
 좋아요. 이제 이 파일을 열고 안에 있는 내용을 살펴봅시다. :
 
-    python
     from django.shortcuts import render
 
     # Create your views here.
@@ -18,7 +17,6 @@
 
 여기에는 별 내용이 없네요. 가장 간단한 *view*를 이렇게 만들어봅시다.
 
-    python
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
 
@@ -33,6 +31,6 @@
 
  [1]: images/error.png
 
-*TemplateDoesNotExist*는 쉽게 해결할 수 있습니다.: 잘 따라왔다면 이러한 에러가 발생하는게 맞아요. 다음 장에서 이 버그를 해결하기 위해 템플릿 파일을 만들 거에요!
+*TemplateDoesNotExist*는 쉽게 해결할 수 있습니다. : 잘 따라왔다면 이러한 에러가 발생하는게 맞아요. 다음 장에서 이 버그를 해결하기 위해 템플릿 파일을 만들 거에요!
 
 > Django 뷰에 대해 자세히 알고 싶으시면 공식 문서를 읽어 보세요. https://docs.djangoproject.com/en/1.8/topics/http/views/

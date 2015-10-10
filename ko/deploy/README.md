@@ -262,7 +262,6 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 모든 내용을 삭제하고 아래 내용을 넣으세요. :
 
-    python
     import os
     import sys
 

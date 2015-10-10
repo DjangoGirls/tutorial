@@ -8,7 +8,6 @@
 
 이제 `blog/views.py` 파일을 열어봅시다. `post_list` *view* 파일이 아래처럼 보일 거에요.
 
-    python
     from django.shortcuts import render
 
     def post_list(request):
@@ -17,12 +16,11 @@
 
 다른 파일들에 있는 코드를 가져오는 것에 대해서 이야기 했던거 기억나나요? 이제 `models.py` 파일에서 정의한 모델을 가져올 때입니다. 이제 `from .models import Post` 행을 추가해 봅시다. 아래와 같을 거에요. :
 
-    python
     from django.shortcuts import render
     from .models import Post
 
 
-`from` 다음에 있는 마침표(.)는 *현재 디렉토* 또는* 현재 어플리케이션*을 의미합니다. `views.py`와 `models.py` 파일들이 같은 디렉토리에 있기 때문에 우리는 `.`와 (`.py` 확장자를 붙이지 않아도) 파일의 이름만으로도 쉽게 사용할 수 있습니다. 자 다음은 모델(`Post`)의 이름을 불러옵니다.).
+`from` 다음에 있는 마침표(.)는 *현재 디렉토리* 또는* 현재 어플리케이션*을 의미합니다. `views.py`와 `models.py` 파일들이 같은 디렉토리에 있기 때문에 우리는 `.`와 (`.py` 확장자를 붙이지 않아도) 파일의 이름만으로도 쉽게 사용할 수 있습니다. 자 다음은 모델(`Post`)의 이름을 불러옵니다.).
 
 그럼 그 다음은요? `Post` 모델에서 실제 블로그 글들을 가져와야 하는데 이때 필요한 특별한 것이 바로 `QuerySet`입니다.
 
@@ -39,7 +37,7 @@
 
 이제 `blog/views.py` 파일의 `def post_list(request)` 함수에다 이 코드 조각을 넣어봅시다.
 
-    python
+
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
@@ -59,7 +57,7 @@
 
 그래서 최종적으로 `blog/views.py` 파일이 아래처럼 될 거에요. :
 
-    python
+
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
@@ -71,4 +69,4 @@
 
 다 되었습니다! 이제 템플릿 파일로 돌아가서 이 쿼리셋을 보이게 해볼 차례에요.
 
-쿼리셋에 대해서 좀 더 자세히 알고 싶다면 장고 공식 문서를 읽어보세요: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+쿼리셋에 대해서 좀 더 자세히 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.8/ref/models/querysets/

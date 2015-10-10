@@ -86,7 +86,6 @@
 
 어플리케이션을 생성한 후 장고에게 사용해야한다고 알려줘야 합니다. 이 역할을 하는 파일이 `mysite/settings.py`입니다. 이 파일 안에서 `INSTALLED_APPS`를 열어, `)`바로 위에 `'blog'`를 추가하세요. 최종 결과물은 아래와 다음과 같을 거에요.
 
-    python
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -104,7 +103,6 @@
 
 `blog/models.py` 파일을 열어서 안에 모든 내용을 삭제한 후 아래 코드를 추가하세요. :
 
-    python
     from django.db import models
     from django.utils import timezone
 
