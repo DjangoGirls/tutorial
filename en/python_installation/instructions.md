@@ -20,7 +20,7 @@ It is very likely that you already have Python installed out of the box. To chec
     $ python3 --version
     Python 3.4.3
 
-If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you have a different 'micro version' of Python installed, e.g. 3.4.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 
 #### Debian or Ubuntu
