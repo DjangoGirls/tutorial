@@ -86,6 +86,7 @@
 
 어플리케이션을 생성한 후 장고에게 사용해야한다고 알려줘야 합니다. 이 역할을 하는 파일이 `mysite/settings.py`입니다. 이 파일 안에서 `INSTALLED_APPS`를 열어, `)`바로 위에 `'blog'`를 추가하세요. 최종 결과물은 아래와 다음과 같을 거에요.
 
+```python
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -95,7 +96,7 @@
         'django.contrib.staticfiles',
         'blog',
     )
-
+```
 
 ### 블로그 글 모델 만들기
 
@@ -103,6 +104,7 @@
 
 `blog/models.py` 파일을 열어서 안에 모든 내용을 삭제한 후 아래 코드를 추가하세요. :
 
+```python
     from django.db import models
     from django.utils import timezone
 
@@ -122,7 +124,7 @@
 
         def __str__(self):
             return self.title
-
+```
 
 > `str`양 옆에 언더스코어(`_`) 를 두 개씩 넣었는지 다시 확인하세요. 이건 관습은 파이썬에서 자주 사용되는데, "던더(dunder; 더블-언더스코어의 준말)"라고도 불려요.
 

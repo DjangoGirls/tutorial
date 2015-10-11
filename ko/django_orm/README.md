@@ -33,7 +33,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
     NameError: name 'Post' is not defined
 
 
-이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import) 을 잊었네요!
+이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import)을 잊었네요!
 
     >>> from blog.models import Post
 

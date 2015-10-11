@@ -16,6 +16,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 코드 에디터에서 `mysite/urls.py`파일을 열면 아래와 같을 거에요. :
 
+```python
     from django.conf.urls import include, url
     from django.contrib import admin
 
@@ -26,7 +27,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
         url(r'^admin/', include(admin.site.urls)),
     ]
-
+```
 
 장고가 이미 어떤 내용을 넣어 두었네요.
 

@@ -5,17 +5,11 @@
 > 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 저작권을 따르고 있습니다. 라이센스 전문은 http://creativecommons.org/licenses/by-sa/4.0/ 에서 확인하세요.
 
 ## 번역
-이 튜토리얼은 열정있는 한국인 자원 봉사자들에 의해 한국어로 번역되었습니다. 수고해주신 모든 분들에게 진심으로 감사의 말씀을 전합니다.
+이 튜토리얼은 [장고걸스서울](http://djangogirls.org/seoul) 운영진 및 코치들과 열정있는 한국인 자원 봉사자들에 의해 한국어로 번역되었습니다. 수고해주신 모든 분들에게 진심으로 감사의 말씀을 전합니다.
 
-<<<<<<< Updated upstream
-번역 : [Jay Park](http://jinto.pe.kr/), 조혜선, [정광윤](https://twitter.com/initialkommit), innatsu, 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
+번역 : [Jay Park](http://jinto.pe.kr/), [Veronique Cho](https://www.facebook.com/babygirl13xx?fref=ts), [정광윤](https://twitter.com/initialkommit), innatsu, 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
 
-감수 : [이수진](http://sujinlee.me/), 함기훈
-=======
-번역 : Jay Park(http://jinto.pe.kr/), 조혜선, 정광윤, innatsu, 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
-
-감수 : 이수진(http://sujinlee.me/), 함기훈
->>>>>>> Stashed changes
+감수 : [이수진](http://sujinlee.me/), [함기훈](https://www.facebook.com/gihun.ham?fref=ts)
 
 ## 들어가며
 

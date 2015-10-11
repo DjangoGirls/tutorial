@@ -13,7 +13,7 @@
  [1]: http://facebook.com/djangogirls
  [2]: http://twitter.com/djangogirls
 
-### 다음에 해 볼만한 자료를 추천해주실래요?
+### 앞으로 해 볼만한 자료를 추천해주실래요?
 
 그럼요! [장고 걸스: 심화 (Django Girls Tutorial: Extensions)][3]를 읽어보세요.
 
