@@ -8,9 +8,9 @@ There is a concept in programming called `Object-oriented programming`. The idea
 
 So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
-If we want to model a cat we will create an object `Cat` that has some properties such as: `color`, `age`, `mood` (i.e. good, bad, sleepy ;)), and `owner` (that is a `Person` object or maybe, in case of a stray cat, this property is empty).
+If we want to model a cat we will create an object `Cat` that has some properties such as: `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (that is a `Person` object or maybe, in case of a stray cat, this property is empty).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which we will give the cat some `CatFood`, which could be a separate object with properties, i.e. `taste`).
+Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
     Cat
     --------
@@ -135,7 +135,7 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespaces). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define a type of each field (Is it text? A number? A date? A relation to another object, i.e. a User?).
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define a type of each field (Is it text? A number? A date? A relation to another object, like a User?).
 
 - `models.CharField` - this is how you define text with a limited number of characters.
 - `models.TextField` - this is for long text without a limit. Sounds ideal for blog post content, right?
