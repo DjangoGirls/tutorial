@@ -42,7 +42,7 @@ This is simple: we import model `Post` from `blog.models`. Let's try displaying 
     >>> Post.objects.all()
     [<Post: my post title>, <Post: another post title>]
 
-It's a list of the posts we created earlier! We created these posts using the Django admin interface. However, now we want to create new posts using Python, so how do we do that?
+It's a list of the posts we created earlier! We created these posts using the Django admin interface. But, now we want to create new posts using Python, so how do we do that?
 
 
 ### Create object
@@ -87,7 +87,7 @@ You can now have a little fun and add more posts to see how it works. Add 2-3 mo
 
 ### Filter objects
 
-A big part of QuerySets is an ability to filter them. Let's say, we want to find all posts that are authored by User ola. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) needs to be met by a blog post to end up in our queryset. In our situation it is `author` that is equal to `me`. The way to write it in Django is: `author=me`. Now our piece of code looks like this:
+A big part of QuerySets is an ability to filter them. Let's say, we want to find all posts User ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we will state what condition(s) a blog post needs to meet to end up in our queryset. In our situation it is `author` that is equal to `me`. The way to write it in Django is: `author=me`. Now our piece of code looks like this:
 
     >>> Post.objects.filter(author=me)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
@@ -97,7 +97,7 @@ Or maybe we want to see all the posts that contain a word 'title' in the `title`
     >>> Post.objects.filter(title__contains='title')
     [<Post: Sample title>, <Post: 4th title of post>]
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this syntax to separate field names ("title") and operations or filters ("contains"). If you only use one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you only use one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do it by filtering all the posts that have `published_date` set in the past:
     >>> from django.utils import timezone
