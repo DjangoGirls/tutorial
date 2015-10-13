@@ -6,13 +6,13 @@ Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS f
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in markup language (like HTML). Treat it as make-up for our webpage ;).
 
-But we don't want to start from scratch again, right? We will, once more, use something that has already been done by programmers and released on the Internet for free. You know, reinventing the wheel is no fun.
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. You know, reinventing the wheel is no fun.
 
 ## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: http://getbootstrap.com/
 
-It was written by programmers who worked for Twitter and is now developed by volunteers from all over the world.
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
 ## Install Bootstrap
 
@@ -33,7 +33,7 @@ Looking nicer already!
 
 ## Static files in Django
 
-Finally we will take a closer look at these things we've been calling __static files__. Static files are all your CSS and images -- files that are not dynamic, so their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling __static files__. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
 
 ### Where to put static files for Django
@@ -48,7 +48,7 @@ We do that by creating a folder called `static` inside the blog app:
     │   └── static
     └── mysite
 
-Django will automatically find any folders called "static" inside any of your apps' folders, and it will be able to use their contents as static files.
+Django will automatically find any folders called "static" inside any of your apps' folders. Then, it will be able to use their contents as static files.
 
 
 
@@ -64,9 +64,10 @@ Let's create a CSS file now, to add your own style to your web-page. Create a ne
 
 Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-We won't be going too deep into customizing and learning about CSS here, because it's pretty easy and you can learn it on your own after this workshop. We really recommend doing this [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) to learn everything you need to know about making your websites more pretty with CSS.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. They start with `#` and are followed by 6 letters (A-F) and numbers (0-9). You can find color codes for example here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? 
+To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A-F) and numbers (0-9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
@@ -76,9 +77,10 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (e.g. when we have in code something like: `<h1><a href="">link</a></h1>`). In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like: `<h1><a href="">link</a></h1>` the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-In a CSS file we determine styles for elements in the HTML file. The elements are identified by the element name (i.e. `a`, `h1`, `body`), the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, the following tag may be identified by CSS using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. 
+We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -92,12 +94,13 @@ Then, we need to also tell our HTML template that we added some CSS. Open the `b
 {% load staticfiles %}
 ```
 
-We're just loading static files here :). Then, between the `<head>` and `</head>`, after the links to the Bootstrap CSS files (the browser reads the files in the order they're given, so code in our file may override code in Bootstrap files), add this line:
+We're just loading static files here :). 
+Between the `<head>` and `</head>`, after the links to the Bootstrap CSS files add this line:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-
+The browser reads the files in the order they're given, so we need to be make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. 
 We just told our template where our CSS file is located.
 
 Your file should now look like this:
@@ -151,7 +154,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Now add the line `font-family: 'Lobster';` in the CSS file `blog/static/css/blog.css` inside the `h1 a` declaration block (the code between the braces `{` and `}`)  and refresh the page:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file ``blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
 ```css
 h1 a {
@@ -165,7 +168,7 @@ h1 a {
 Great!
 
 
-As mentioned above, CSS has a concept of classes, which basically allows you to name a part of the HTML code and apply styles only to this part, not affecting others. It's super helpful if you have two divs, but they're doing something very different (like your header and your post), so you don't want them to look the same.
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post).  A class can help you make them look different.
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
@@ -273,11 +276,12 @@ Save those files and refresh your website.
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? The code we just pasted is not really so hard to understand and you should be able to understand most of it just by reading it.
+Woohoo! Looks awesome, right? 
+Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise? 
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. If you break something, don't worry, you can always undo it!
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry, you can always undo it! 
 
-Anyway, we really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) as some post-workshop homework to learn everything you need to know about making your websites prettier with CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
 Ready for the next chapter?! :)
 
