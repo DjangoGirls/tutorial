@@ -23,7 +23,7 @@ No console, você deve executar (Lembre-se de que você não pode digitar `~/dja
 
 no Windows:
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+    (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
     
 
 `Django-admin` é um script que irá criar os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
