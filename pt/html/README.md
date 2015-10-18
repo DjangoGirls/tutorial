@@ -190,7 +190,14 @@ Quando fizermos isso, nós fazemos upload (envio) das nossas mudanças para o Py
 
 *   Abra a [página de consoles de PythonAnywhere][5] e vá para o seu **console Bash** (ou começar um novo). Em seguida, execute:
     
-    $ cd ~/my-first-blog $ git pull [...]
+```
+    $ cd ~/my-first-blog
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+```
 
  [5]: https://www.pythonanywhere.com/consoles/
 
