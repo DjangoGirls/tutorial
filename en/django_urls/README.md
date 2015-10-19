@@ -97,7 +97,7 @@ from django.conf.urls import url
 from . import views
 ```
 
-Here we're just importing Django's methods and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
+Here we're importing Django's function `url` and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
 
 After that, we can add our first URL pattern:
 
