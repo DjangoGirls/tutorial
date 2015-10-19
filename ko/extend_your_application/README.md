@@ -85,8 +85,9 @@ urlpatterns = [
 
 이제, 우리는 딱 한 개 블로그만 보고 싶어요. 이를 위해 다음과 같이 쿼리셋(queryset)을 사용해야해요. :
 
+```python
     Post.objects.get(pk=pk)
-
+```
 
 하지만 이 코드에는 문제가 있어요. `primary key` (`pk`)가있는 `Post`가 없다면 보고 싶지 않은 오류가 나올 거에요!
 
@@ -102,15 +103,17 @@ urlpatterns = [
 
 `blog/views.py` 파일을 열어서 아래 코드를 추가하세요. :
 
+```python
     from django.shortcuts import render, get_object_or_404
-
+```
 
 `from`행 근처로 가서, 파일 맨 끝에 *view* 를 추가하세요. :
 
+```python
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
-
+```
 
 브라우저를 새로고침 해보세요. : http://127.0.0.1:8000/
 

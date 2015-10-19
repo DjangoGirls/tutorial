@@ -96,8 +96,9 @@
 
 파일 맨 윗 줄에 아래 내용을 추가합니다.
 
+```html
     {% extends 'blog/base.html' %}
-
+```
 
 `post_list.html` 파일에 있는 {% raw %}는 이제 `base.html` 템플릿을 확장했음을 의미합니다. 이제 한 가지만 더 하면 되어요.: `{% block content %}`과 `{% endblock content %}` 사이에 (우리가 방금 추가한 행들을 빼고) 모든 것을 넣습니다. 아래 처럼요. :{% endraw %}
 
