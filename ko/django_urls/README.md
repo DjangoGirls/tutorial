@@ -16,7 +16,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 코드 에디터에서 `mysite/urls.py`파일을 열면 아래와 같을 거에요. :
 
-    python
+```python
     from django.conf.urls import include, url
     from django.contrib import admin
 
@@ -27,7 +27,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
         url(r'^admin/', include(admin.site.urls)),
     ]
-
+```
 
 장고가 이미 어떤 내용을 넣어 두었네요.
 
@@ -35,7 +35,6 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 이전 장에서 봤던 관리자 URL도 여기에 이미 있어요. :
 
-    python
         url(r'^admin/', include(admin.site.urls)),
 
 
@@ -75,7 +74,6 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 이제 `mysite/urls.py` 파일은 아래처럼 보일 거에요.
 
-    python
     from django.conf.urls import include, url
     from django.contrib import admin
 
@@ -93,7 +91,6 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 `blog/urls.py`이라는 새 파일을 생성하세요. 좋아요! 이제 다음 두 줄을 추가하세요.
 
-    python
     from django.conf.urls import url
     from . import views
 
@@ -102,7 +99,6 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 그 다음, 첫 번째 URL 패턴을 추가하세요.
 
-    python
     urlpatterns = [
         url(r'^$', views.post_list, name='post_list'),
     ]
@@ -112,7 +108,7 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 마지막 부분인 `name='post_list'` 는 URL에 이름을 붙인 것으로 뷰를 식별합니다. 이 부분은 뷰의 이름과 같을 수도 완전히 다를 수도 있습니다. 이름을 붙인 URL은 프로젝트의 후반에 사용할 거에요. 그러니 앱의 각 URL을 이름짓는 것은 중요합니다. 또 URL에 고유한 이름을 붙여, 외우고 부르기 쉽게 만들어야 해요.
 
-모두 잘 되고 있나요? htpp://127.0.0.1:8000/으로 접속해 결과를 확인해보세요.
+모두 잘 되고 있나요? http://127.0.0.1:8000/ 으로 접속해 결과를 확인해보세요.
 
 ![Error][2]
 

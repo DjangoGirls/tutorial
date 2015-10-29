@@ -235,6 +235,10 @@ You might have noticed that we are setting publish date before saving the post. 
 
 That is awesome!
 
+> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
+
+![Logged in error](images/post_create_error.png)
+
 
 ## Form validation
 
@@ -245,10 +249,6 @@ Try to save the form without `title` and `text`. Guess, what will happen!
 ![Form validation](images/form_validation2.png)
 
 Django is taking care of validating that all the fields in our form are correct. Isn't it awesome?
-
-> As we have recently used the Django admin interface the system currently thinks we are logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB etc.). If you find that you are getting errors creating a post referring to a lack of a logged in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
-
-![Logged in error](images/post_create_error.png)
 
 
 ## Edit form
@@ -334,7 +334,7 @@ If you need more information about Django forms you should read the documentatio
 
 ## Security
 
-Being able to create new posts just by clicking a link is awesome! But, right now, anyone that visits your site will be able to post a new blog post and that's probably not something you want. Let's make it so the button shows up for you but not far anyone else.
+Being able to create new posts just by clicking a link is awesome! But, right now, anyone that visits your site will be able to post a new blog post and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 

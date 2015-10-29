@@ -1,6 +1,6 @@
 # 배포하기!
 
-> **참고**: 이번 장은 따라오기 조금 힘들 수도 있어요. 끝까지 따라와주세요. 배포는 웹사이트 개발의 가장 중요한 부분이에요. 튜토리얼 중간에 이번 장이 있는 이유는 여러분이 코치가 여러분의 웹사이트를 온라인에서 볼 수 있게 도와주기 위해서에요. 시간이 모자르더라도 튜토리얼을 끝낼 수 있어요.
+> **Note** 이번 장은 따라오기 조금 힘들 수도 있어요. 끝까지 따라와주세요. 배포는 웹사이트 개발의 가장 중요한 부분이에요. 튜토리얼 중간에 이번 장이 있는 이유는 여러분이 코치가 여러분의 웹사이트를 온라인에서 볼 수 있게 도와주기 위해서에요. 시간이 모자르더라도 튜토리얼을 끝낼 수 있어요.
 
 지금까지는 웹사이트를 내 컴퓨터에서만 볼 수 있었어요. 이제 어떻게 웹사이트를 배포하는지 배워봅시다. 배포(deploy)는 애플리케이션을 인터넷에 올려놓아 다른 사람들도 볼 수 있게 해주는 것 말해요. :)
 
@@ -20,7 +20,7 @@ Git은 많은 프로그래머들이 사용하고 있는 "버전 제어 시스템
 
 ## Git 설치하기
 
-> **참고** 이미 설치를 끝냈다면, 다시 할 필요가 없어요. 이 부분을 넘기고 Git 저장소를 만드는 것부터 시작하세요.
+> **Note** 이미 설치를 끝냈다면, 다시 할 필요가 없어요. 이 부분을 넘기고 Git 저장소를 만드는 것부터 시작하세요.
 
 {% include "deploy/install_git.md" %}
 
@@ -28,7 +28,7 @@ Git은 많은 프로그래머들이 사용하고 있는 "버전 제어 시스템
 
 Git은 코드 저장소(줄여서 "repo"라고 합니다.)에 특정한 파일들 집합의 변화를 추적하여 관리합니다. 이제 프로젝트를 시작해 볼까요? 콘솔창을 열고 `djangogirls` 디렉토리에서 아래 명령어들을 실행하세요. 아래 명령 중에서 Your Name 대신 자신의 이름을, you@example.com 대신에 내 이메일 주소를 입력하세요.
 
-> **주의**: 저장소를 초기화 하기 전에 여러분의 현재 작업 디렉토리가 어디인지 꼭 확인하세요. 맥OS나 Linux라면 `pwd` 명령으로, 윈도우라면 `cd` 명령어를 실행하면 알 수 있을 거에요. 반드시 `djangogirls` 폴더에서 해야합니다.
+> **Note** 저장소를 초기화 하기 전에 여러분의 현재 작업 디렉토리가 어디인지 꼭 확인하세요. 맥OS나 Linux라면 `pwd` 명령으로, 윈도우라면 `cd` 명령어를 실행하면 알 수 있을 거에요. 반드시 `djangogirls` 폴더에서 해야합니다.
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
@@ -49,7 +49,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 그리고 "djangogirls" 폴더의 맨 위에다 `.gitignore` 라는 파일로 저장하세요.
 
-> **주의** : 파일명 앞에 마침표로 시작하는 것이 중요합니다! 꼭 붙여주세요. 만약 파일을 만드는 것이 어렵다면 (예를 들어 맥은 파인더에서 마침표로 시작하는 파일을 생성하는 걸 좋아하지 않아요.) "다른 이름으로 저장(Save As)" 기능을 사용하세요. 대부분 이렇게 하면 될 거에요.
+> **Note** 파일명 앞에 마침표로 시작하는 것이 중요합니다! 꼭 붙여주세요. 만약 파일을 만드는 것이 어렵다면 (예를 들어 맥은 파인더에서 마침표로 시작하는 파일을 생성하는 걸 좋아하지 않아요) "다른 이름으로 저장(Save As)" 기능을 사용하세요. 대부분 이렇게 하면 될 거에요.
 
 `git add`하기 전이나 변경된 것이 있는지 잘 모를 때마다 `git status` 명령어를 사용하는 것은 좋은 방법이에요. 잘못된 파일이 추가된 경우, 이를 멈출 수 있게 도움을 주어요. `git status` 명령은 미추적/수정된/스테이지된 파일들, 브랜치 상태와 그 외 많은 정보들을 보여줍니다. 실행하면 아래와 비슷하게 나타날거에요. :
 
@@ -127,7 +127,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 # PythonAnywhere에 블로그 설정하기
 
-> **참고** 이미 PythonAnywhere 계정이 있으면, 이 부분을 다시 할 필요가 없어요.
+> **Note** 이미 PythonAnywhere 계정이 있으면, 이 부분을 다시 할 필요가 없어요.
 
 {% include "deploy/signup_pythonanywhere.md" %}
 
@@ -135,7 +135,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 PythonAnywhere에 가입하면 대시보드 또는 "콘솔(Consoles)" 페이지를 볼 수 있을 거에요. "배시(Bash)" 콘솔로 시작하는 옵션을 선택하세요. -- PythonAnywhere 버전의 콘솔로 PC에 있는 커맨드라인 같은 것이라 생각해도 됩니다.
 
-> **주의**: PythonAnywhere는 리눅스 기반으로 윈도우의 커맨드라인 창과 조금 다르게 보일 수 있어요.
+> **Note** PythonAnywhere는 리눅스 기반으로 윈도우의 커맨드라인 창과 조금 다르게 보일 수 있어요.
 
 GitHub에 있는 코드를 끌어와 저장소를 "복제"해 PythonAnywhere로 탑재해 볼게요. PythonAnywhere에 있는 콘솔에 다음과 같이 입력하세요. (`<your-github-username>`대신 내 GitHub 유저네임을 입력하는 것을 잊지 마세요. :)
 
@@ -165,7 +165,7 @@ GitHub에 있는 코드를 끌어와 저장소를 "복제"해 PythonAnywhere로 
 
 ### PythonAnywhere에서 가상환경(virtualenv) 생성하기
 
-PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있게 가상 환경(virtualenv) 을 생성할 수 있어요. 배시 콘솔(Bash console)에 다음과 같이 입력하세요. :
+PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있게 가상 환경(virtualenv)을 생성할 수 있어요. 배시 콘솔(Bash console)에 다음과 같이 입력하세요. :
 
     $ cd my-first-blog
 
@@ -182,7 +182,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
     Successfully installed django-1.8.2 whitenoise-2.0
 
 
-> **참고** The `pip install`은 설치가 될 때까지 인내심이 조금 필요해요. 하지만 몇 분 안에 완료될 거니 조금만 기다려보세요. 만약 5분 이상 시간이 지났다면, 무엇인가 잘못된거니 코치에게 물어보세요.
+> **Note** The `pip install`은 설치가 될 때까지 인내심이 조금 필요해요. 하지만 몇 분 안에 완료될 거니 조금만 기다려보세요. 만약 5분 이상 시간이 지났다면, 무엇인가 잘못된거니 코치에게 물어보세요.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
@@ -240,7 +240,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 도메인 이름을 확정한 후, 대화창에 **수동설정(manual configuration)** ("Django"옵션이 *아니에요.*) 을 클릭하세요. 다음, **Python 3.4**을 선택하고 다음(Next)를 클릭하면 마법사가 종료됩니다.
 
-> **주의** " Django"가 아니라 꼭 "수동설정(Manual configuration)"을 선택하세요. 기본 PythonAnywhere Django 설정을 위해서는 이렇게 하는 것이 더 좋아요. ;-)
+> **Note** " Django"가 아니라 꼭 "수동설정(Manual configuration)"을 선택하세요. 기본 PythonAnywhere Django 설정을 위해서는 이렇게 하는 것이 더 좋아요. ;-)
 
 ### 가상환경(virtualenv) 설정하기
 
@@ -262,7 +262,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 모든 내용을 삭제하고 아래 내용을 넣으세요. :
 
-    python
+```python
     import os
     import sys
 
@@ -275,9 +275,9 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
     from django.core.wsgi import get_wsgi_application
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(get_wsgi_application())
+```
 
-
-> **주의** `<your-username>`에 내 유저네임을 넣는 것을 잊지 마세요.
+> **Note** `<your-username>`에 내 유저네임을 넣는 것을 잊지 마세요.
 
 이 파일은 PythonAnywhere에게 작동 할 우리의 web app 위치를 알려주고 장고 세팅 파일 이름을 알려주는 역할을 하죠. 또 "백색소음" 정적 파일 툴을 설정해줍니다.
 

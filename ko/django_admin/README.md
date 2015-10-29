@@ -4,7 +4,6 @@
 
 이제 `blog/admin.py` 파일을 열어서 내용을 다음과 같이 바꾸세요. :
 
-    python
     from django.contrib import admin
     from .models import Post
 
@@ -18,7 +17,7 @@
 
  [1]: images/login_page2.png
 
-로그인을 하기 위해서는, 모든 권한을 가지는 *슈퍼유저(superuser)*를 생성해야해요. 커맨드라인에 다시가서 `python manage.py createsuperuser`을 입력하고 엔터를 누르세요. 메시지가 나타나면 사용자 이름 (소문자, 공백 없이), 이메일 주소 및 암호를 입력합니다. password 를 입력할 때 화면에 글자가 보이지 않는다고 해도 걱정하지 마세요. 원래 password 는 화면에 보이지 않습니다. 작성한 후에 `enter`를 누르세요. 실행화면은 아래와 같을 거에요. (슈퍼유저로 사용 될 username 과 email 주소는 본인 것이어야해요.)
+로그인을 하기 위해서는, 모든 권한을 가지는 *슈퍼유저(superuser)*를 생성해야해요. 커맨드라인으로 돌아가서 `python manage.py createsuperuser`을 입력하고 엔터를 누르세요. 메시지가 나타나면 사용자 이름 (소문자, 공백 없이), 이메일 주소 및 암호를 입력합니다. password 를 입력할 때 화면에 글자가 보이지 않는다고 해도 걱정하지 마세요. 원래 password 는 화면에 보이지 않습니다. 작성한 후에 `enter`를 누르세요. 실행화면은 아래와 같을 거에요. (슈퍼유저로 사용 될 username 과 email 주소는 본인 것이어야해요)
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
@@ -34,7 +33,7 @@
 
  [2]: images/django_admin3.png
 
-게시글로 가서 이 것 저 것 시도해보세요. 5 - 6개 블로그 포스트를 올려보세요. 안에 내용은 걱정하지 마세요. 튜토리얼에 있는 텍스트를 그냥 복사-붙여넣기 할 수 있으니까요.
+게시글로 가서 이것 저것 시도해보세요. 5 - 6개 블로그 포스트를 올려보세요. 안에 내용은 걱정하지 마세요. 튜토리얼에 있는 텍스트를 그냥 복사-붙여넣기 할 수 있으니까요.
 
 최소한 2, 3개의 글들에 게시 날짜가 있는지 확인하세요. (모두 볼 필요는 없어요) 이건 나중에 도움이 될 거에요.
 

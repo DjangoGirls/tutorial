@@ -33,7 +33,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
     NameError: name 'Post' is not defined
 
 
-이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import) 을 잊었네요!
+이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import)을 잊었네요!
 
     >>> from blog.models import Post
 
@@ -104,11 +104,13 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
     [<Post: Sample title>, <Post: 4th title of post>]
 
 
-> **주의하세요** `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, "FieldError: Cannot resolve keyword title_contains"라는 오류가 뜰 거에요.
+> **Note**  `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, "FieldError: Cannot resolve keyword title_contains"라는 오류가 뜰 거에요.
 
 우리는 출판된 글 목록을 볼 수 있어요. 이를 위해 `출판 날짜(published_date)`가 과거인 글들을 필터링하면 가져오면 되겠죠.
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 안타깝게도, 파이썬 콘솔에서 추가한 게시물은 아직 보이지 않네요. 하지만 바꿀 수 있어요! 먼저 게시하려는 게시물의 인스턴스를 얻어야 해요. :
 

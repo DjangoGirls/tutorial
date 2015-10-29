@@ -37,9 +37,9 @@ Bootstrap을 설치하려면, `.html` 파일의 `<head>` 안에 이 링크를 �
 
 ### 어디에 정적 파일을 넣어야 하나요
 
-서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin" 앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 동적파일을 추가하면 됩니다.
+서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin" 앱에서 정적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 정적파일을 추가하면 됩니다.
 
-blog앱 안에 `static`폴더를 만드세요. :
+blog 앱 안에 `static`폴더를 만드세요. :
 
     djangogirls
     ├── blog
@@ -52,7 +52,7 @@ blog앱 안에 `static`폴더를 만드세요. :
 
 ## 나의 첫 번째 CSS 파일!
 
-CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어봐요. `static` 디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
+CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어봐요. `static`디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
 
     djangogirls
     └─── blog
@@ -97,7 +97,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
 {% load staticfiles %}
 ```
 
-동적 파일이 실행되고 있답니다. :)
+정적 파일이 실행되고 있답니다. :)
 
 다음, `<head>`와 `</head>` 사이에, 부트스트랩 CSS파일 링크 다음(브라우저는 순서대로 파일을 읽기 때문에 부트스트랩 파일에 있는 코드를 무시할 수 있어요.) 다음 코드를 추가하세요.
 
@@ -142,11 +142,11 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
 
 잘했어요! 웹사이트 왼쪽 여백을 좀더 주고 싶지 않나요? 한 번 해봐요!
 
-    css
+```css
     body {
         padding-left: 15px;
     }
-
+```
 
 이 코드를 CSS에 붙여넣고, 파일을 저장하고 어떻게 바뀌었는지 확인해봐요!
 
@@ -156,9 +156,9 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
 
 제목의 폰트를 바꾸고 싶나요? `blog/templates/blog/post_list.html`파일 안에 `<head>`에 아래 코드를 붙여넣기 해보세요.
 
-    html
+```html
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
+```
 
 이 코드 라인은 구글 폰트 (https://www.google.com/fonts)에서 *Lobster* 폰트를 불러온 거에요.
 
