@@ -73,9 +73,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
     >>> "Ola".upper()
     'OLA'
 
-You just used the `upper` __function__ on your string! A function (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __method__ on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to know the number of letters contained in your name, there is a function for that too!
+If you want to know the number of letters contained in your name, there is a __function__ for that too!
 
     >>> len("Ola")
     3
@@ -252,7 +252,11 @@ This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try replacing your own information too):
 
-    >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+    >>> participant = {
+    ...     'name': 'Ola',
+    ...     'country': 'Poland',
+    ...     'favorite_numbers': [7, 42, 92]
+    ... }
 
 With this command, you just created a variable named `participant` with three key-value pairs:
 
