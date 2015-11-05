@@ -14,19 +14,19 @@
 
 # Установка Python
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Настрока virtualenv и установка Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Установка редактора кода
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Установка Git
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Создание учётной записи на GitHub
 
@@ -34,7 +34,7 @@
 
 # Создание учётной записи на PythonAnywhere
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Начинай читать
 
