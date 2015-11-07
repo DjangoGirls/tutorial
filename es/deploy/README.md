@@ -265,7 +265,7 @@ Serás redirigida a la pantalla de configuración de PythonAnywhere para tu apli
 
  [10]: images/pythonanywhere_web_tab_virtualenv.png
 
-En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: */home/<your-username>/my-first-blog/myvenv/*
+En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: */home/-your-username-/my-first-blog/myvenv/*
 
 > **Nota**: sustituye tu propio nombre de usuario como corresponda. Si cometes un error, PythonAnywhere te mostrará una pequeña advertencia.
 
