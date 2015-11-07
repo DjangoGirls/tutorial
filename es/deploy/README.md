@@ -191,7 +191,7 @@ Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonA
     [...]
     Installing setuptools, pip...done.
     
-    20:20 ~ $ source myenv/bin/activate
+    20:20 ~ $ source myvenv/bin/activate
     
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
