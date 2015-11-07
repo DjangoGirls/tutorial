@@ -375,11 +375,11 @@ Da dos tareas más a Python:
 
 ¡Genial! ¿Quieres hacer uno mas? Intenta esto:
 
-    >>> 6 > 2 y 2 < 3
+    >>> 6 > 2 and 2 < 3
     True
-    >>> 3 > 2 y 2 < 1
+    >>> 3 > 2 and 2 < 1
     False
-    >>> 3 > 2 ó 2 < 1
+    >>> 3 > 2 or 2 < 1
     True
     
 
