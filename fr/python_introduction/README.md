@@ -446,7 +446,7 @@ Pour quitter l'interpréteur Python que nous sommes en train d'utiliser, il suff
 
 Tout à l'heure, dans la section [L'éditeur de texte][2], nous avons choisi un éditeur de texte. Nous avons maintenant besoin de l'ouvrir et d'écrire du code dans un nouveau fichier:
 
- [2]: code_editor/README.md
+ [2]: ../code_editor/README.md
 
     print('Hello, Django girls!')
     

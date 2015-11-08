@@ -747,4 +747,4 @@ Talvez você queira brevemente fazer algo mais - espreguiçar, andar um pouco, d
 ![Cupcake](images/cupcake.png)
 
  [2]: /intro_to_command_line/README.html
- [4]: code_editor/README.md
+ [4]: ../code_editor/README.md

@@ -448,7 +448,7 @@ Esto te llevará de vuelta a la línea de comandos.
 
 Anteriormente, elegimos un editor de código en la sección de [Editor de código][2]. Tendremos que abrir el editor ahora y escribir algo de código en un archivo nuevo:
 
- [2]: code_editor/README.md
+ [2]: ../code_editor/README.md
 
 ``` python
     print('Hello, Django girls!')
