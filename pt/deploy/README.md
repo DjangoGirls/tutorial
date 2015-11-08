@@ -298,7 +298,7 @@ O que esse arquivo faz é dizer PythonAnywhere onde mora a nossa aplicação web
 
 Aperte **Save** e então volte para a guia **Web**.
 
-Já terminamos! Aperte o botão grande verde de **Reload**e você será capaz de ir ver os seu aplicativo. Você encontrará um link para ele no topo da página.
+Já terminamos! Aperte o botão grande verde de **Reload**e você será capaz de ir ver o seu aplicativo. Você encontrará um link para ele no topo da página.
 
 ## Dicas de debugging
 
