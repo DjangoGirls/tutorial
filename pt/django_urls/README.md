@@ -69,7 +69,7 @@ Escrever views separadas para todos os números de post seria muito chato. Com e
 
 É hora de criar nossa primeira URL! Queremos http://127.0.0.1:8000 / para ser uma página inicial do nosso blog e exibir uma lista de posts.
 
-Também queremos manter o arquivo de `mysite/urls.py` limpo, aí nós importaremosurls da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
+Também queremos manter o arquivo de `mysite/urls.py` limpo, aí nós importaremos urls da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
 
 Vá em frente, apague as linhas comentadas (as linhas que começam com `#`) e adicione uma linha que vai importar `blog.urls` para a url principal (`''`).
 
