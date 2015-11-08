@@ -207,7 +207,7 @@ Você estava imaginando o que é "whitenoise"? É uma ferramenta para servir os 
 
 Vamos descobrir um pouco mais sobre arquivos estáticos mais tarde no tutorial, quando vamos editar o CSS para o nosso site.
 
-Por enaunto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
+Por enquanto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
 
     20:20 ~ $ python manage.py collectstatic
     
