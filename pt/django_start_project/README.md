@@ -102,6 +102,9 @@ Você precisa estar no diretório que contém o arquivo `manage.py` (o diretóri
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
+> Caso apareça o erro 10013, apenas mude a porta na qual o servidor vai ser executado. Por exemplo, colocando na porta 8080:
+> ||| (myvenv) ~/djangogirls$ python manage.py runserver 8080
+
 Agora tudo que você precisa fazer é verificar se seu site está sendo executado - abra seu navegador (Firefox, Chrome, Safari, Internet Explorer ou o que você usa) e digite o endereço:
 
     http://127.0.0.1:8000/
