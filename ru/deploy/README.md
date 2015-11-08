@@ -22,7 +22,7 @@ Git — это "система управления версиями", испо�
 
 > **Примечание** Если вы уже выполнили установку, незачем повторять её вновь — вы можете сразу переходить к следующему разделу и начать создание собственного Git репозитория.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Создаём Git-репозиторий
 
@@ -34,7 +34,7 @@ Git отслеживает изменения определенного наб�
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
-    
+
 
 Инициализировать git-репозиторий придется только один раз за проект (и тебе больше не придется вводить имя пользователя и адрес электронной почты).
 
@@ -45,7 +45,7 @@ Git будет отслеживать изменения всех файлов �
     myvenv
     db.sqlite3
     .DS_Store
-    
+
 
 И сохрани его как `.gitignore` в корневом каталоге "djangogirls".
 
@@ -55,19 +55,19 @@ Git будет отслеживать изменения всех файлов �
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 И, наконец, мы сохраним наши изменения. Переключись на консоль и набери:
 
@@ -78,7 +78,7 @@ Git будет отслеживать изменения всех файлов �
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Загружаем код в репозиторий GitHub
 
@@ -104,7 +104,7 @@ Git будет отслеживать изменения всех файлов �
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Введи свое имя пользователя и пароль от аккаунта GitHub, и ты должна увидеть что-то подобное:
 
@@ -116,7 +116,7 @@ Git будет отслеживать изменения всех файлов �
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -129,7 +129,7 @@ Git будет отслеживать изменения всех файлов �
 
 > **Примечание** Возможно, ты уже завела учётную запись на PythonAnywhere ранее — если так, нет нужды повторять это вновь.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Загружаем код на PythonAnywhere
 
@@ -140,7 +140,7 @@ Git будет отслеживать изменения всех файлов �
 Давай загрузим наш код из GitHub на PythonAnywhere, создав "клон" репозитория. Введи следующую команду в консоли на PythonAnywhere (на забудь заменить `<your-github-username>` на свою учётку GitHub):
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Эта команда загрузит копию твоего кода на PythonAnywhere. Проверь это, набрав `tree my-first-blog`:
 
@@ -161,26 +161,26 @@ Git будет отслеживать изменения всех файлов �
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Создаём виртуальное окружение на PythonAnywhere
 
 Также как ты делала на своем компьютере, ты можешь создать виртуальное окружение на PythonAnywhere. В Bash консоли введи следующую команду:
 
     $ cd my-first-blog
-    
+
     $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
     (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
-    
+
 
 > **Примечание** Выполнение команды `pip install` может занять несколько минут. Терпение, терпение! Однако, если это занимает больше 5 минут, что-то не так. Спроси своего инструктора.
 
@@ -195,17 +195,17 @@ Git будет отслеживать изменения всех файлов �
 А пока что нам просто нужно запускать дополнительную команду под названием `collectstatic`, на сервере. Это даст Django знать, что он должен собрать все статические файлы, которые потребуются серверу. На данный момент эти файлы главным образом позволят админке хорошо выглядеть.
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 Набери "yes" и жди! Как тебе нравятся страницы непонятного текста, которые выводятся в терминале? Я всегда сопровождаю их звуками. Брп, брп, брп...
 
@@ -215,7 +215,7 @@ Git будет отслеживать изменения всех файлов �
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### Создаем базу данных на PythonAnywhere
 
@@ -227,10 +227,10 @@ Git будет отслеживать изменения всех файлов �
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv)20:20 ~ $ python manage.py createsuperuser
-    
+
 
 ## Публикация нашего блога как веб-приложения
 
@@ -276,7 +276,7 @@ from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
-    
+
 
 > **Примечание**: не забудь заменить имя пользователя на свое там, где это указано `<your-username>`
 

@@ -14,19 +14,19 @@
 
 # Python 설치하기
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # virtualenv 설정하고 Django 설치하기
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # 코드 에디터 설치하기
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Git 설치하기
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # GitHub 계정 만들기
 
@@ -34,7 +34,7 @@
 
 # PythonAnywhere 계정 만들기
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # 코딩 시작
 
