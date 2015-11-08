@@ -23,7 +23,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Como você pode ver, nós criamos um método (`def`) chamado `post_list` que aceita o `pedido` e `retornar` um método `render` será processado (para montar) nosso modelo `blog/post_list.html`.
+Como você pode ver, nós criamos um método (`def`) chamado `post_list` que aceita o `request` (pedido) e `return` (retorna) um método `render` será processado (para montar) nosso modelo `blog/post_list.html`.
 
 Salve o arquivo, vá para http://127.0.0.1:8000 / e veja o que temos agora.
 
