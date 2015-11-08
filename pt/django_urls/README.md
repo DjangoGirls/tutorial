@@ -100,7 +100,7 @@ from . import views
 
 Aqui nós estamos apenas importando métodos do Django e todos os nossos `views` do aplicativo `blog` (ainda não temos nenhuma, mas teremos em um minuto!)
 
-Depois disso nós podemos adicionar nosso primeira URL padrão:
+Depois disso nós podemos adicionar nossa primeira URL padrão:
 
 ```python
 urlpatterns = [
