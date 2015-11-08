@@ -302,7 +302,7 @@ Já terminamos! Aperte o botão grande verde de **Reload**e você será capaz de
 
 ## Dicas de debugging
 
-Se você vir um erro quando você tenta visitar o seu site, o primeiro lugar para procurar alguma informação de debugging é no seu **error log** -- você encontrará um link para isso na guia web PythonAnywhere. Ver se há mensagens de erro lá. As mais recentes estão na parte inferior. Problemas comuns incluem
+Se você vir um erro quando você tenta visitar o seu site, o primeiro lugar para procurar alguma informação de debugging é no seu **error log** -- você encontrará um link para isso na guia web PythonAnywhere. Veja se há mensagens de erro lá. As mais recentes estão na parte inferior. Problemas comuns incluem:
 
 *   esquecer um dos passos que fizemos no console: criando o virtualenv, ativá-lo, instalando o Django, collectstatic, inicializando o banco de dados
 *   cometer um erro no caminho do virtualenv na guia web -- haverá geralmente uma pequena mensagem de erro vermelho lá, se há um problema
@@ -312,6 +312,6 @@ O treinador está aqui para ajudar!
 
 # Você está live!
 
-A página padrão para seu site deve dizer "Bem-vindo ao Django", como acontece no seu PC local. Tente adicionar `/admin/` para o final da URL, e você será levado ao site admin. Fazer login com o nome de usuário e senha, e você verá que você pode adicionar novas mensagens no servidor.
+A página padrão para seu site deve dizer "Bem-vindo ao Django", como acontece no seu PC local. Tente adicionar `/admin/` para o final da URL, e você será levado ao site admin. Faça login com o nome de usuário e senha, e você verá que você pode adicionar novas mensagens no servidor.
 
-Dë em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva as pessoas vários dias antes de fazer funcionar. Mas você tem seu site publicado, na internet, assim!
+Dê em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva as pessoas vários dias antes de fazer funcionar. Mas você tem seu site publicado, na internet, assim!
