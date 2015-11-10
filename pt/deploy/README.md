@@ -4,7 +4,7 @@
 
 Até agora nosso site só estava disponível no seu computador, agora você vai aprender como publicar ele na internet! A implantação é o processo de publicação do seu aplicativo na Internet de tal forma que as pessoas possam, finalmente, ver seu aplicativo :).
 
-Como você aprendeu, um website precisa estar localizado num servidor. Existem muitos provedores, mas iremos utilizar o que tem um processo de deploy relativamente simples: [Python Anywhere][1] PythonAnywhere é gratuito para aplicações pequenas que não possuem muitos visitantes, então será suficiente para você por enquanto.
+Como você aprendeu, um website precisa estar localizado num servidor. Existem muitos provedores, mas iremos utilizar o que tem um processo de deploy relativamente simples: [PythonAnywhere][1]. PythonAnywhere é gratuito para aplicações pequenas que não possuem muitos visitantes, então será suficiente para você por enquanto.
 
  [1]: http://pythonanywhere.com/
 
