@@ -6,3 +6,4 @@
 * [Português-brasileiro (beta)](pt/)
 * [Русский (beta)](ru)
 * [한국어 (beta)](ko)
+* [Italian (beta)](it)
