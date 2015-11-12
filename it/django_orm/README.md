@@ -108,7 +108,9 @@ O magari vogliamo vedere tutti i post che contengono la parola 'titolo' nel camp
 
 Puoi anche ottenere una lista di tutti i post pubblicati. Lo facciamo filtrando tutti i post che hanno una `published_date` impostata in passato:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 Purtroppo, il post che abbiamo aggiunto dalla console Python non è ancora pubblicato. Possiamo modificarlo! In primo luogo ottenere un'istanza di un post che vogliamo pubblicare:
 

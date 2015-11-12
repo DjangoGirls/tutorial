@@ -463,9 +463,9 @@ Prima, abbiamo preso un editore di codice dalla sezione [code editor][2]. Dovrem
 
  [2]: ../code_editor/README.md
 
-    python
-    print('Ciao, Django girls!')
-    
+```python
+print('Ciao, Django girls!')
+```
 
 > **Nota** Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione `print` di un colore differente rispetto alla stringa che la segue. Questa viene chiamata "sintassi evidenziata", ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la `def` per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice :)
 
@@ -508,9 +508,9 @@ Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condiz
 
 Sostituisci il codice nel file **python_intro.py** con questo:
 
-    python
-    if 3 > 2:
-    
+```python
+if 3 > 2:
+```
 
 Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:
 
@@ -522,10 +522,10 @@ Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:
 
 Python si aspetta che gli vengano fornite ulteriori istruzioni che saranno eseguite se la condizione `3 > 2` risulterà vera (o `True` se vogliamo). Proviamo a fare in modo che Python stampi "Funziona!". Modifica il tuo codice nel tuo file **python_intro.py** con questo:
 
-    python
-    if 3 > 2:
-         print('Funziona!')
-    
+```python
+if 3 > 2:
+     print('Funziona!')
+```
 
 Vedi come abbiamo indentato la riga successiva usando 4 spazi? Si deve fare così in modo tale che Python sappia quale codice eseguire se il risultato è True. Puoi fare uno spazio, ma circa tutti i programmatori di Python ne fanno 4 per far vedere le cose più ordinate. Anche un signolo `tab` conta come 4 spazi.
 
@@ -539,12 +539,12 @@ Salvalo ed eseguilo di nuovo:
 
 In esempi precedenti, il codice è stato eseguito solo quando le condizioni erano True. Ma Python ha anche gli `elif` e `else` statements:
 
-    python
-    if 5 > 2:
-         print('5 è maggiore di 2') 
-    else:
-         print('5 non è maggiore di 2')
-    
+```python
+if 5 > 2:
+     print('5 è maggiore di 2') 
+else:
+     print('5 non è maggiore di 2')
+```
 
 Quando viene lanciato, mostrerà:
 
@@ -554,15 +554,15 @@ Quando viene lanciato, mostrerà:
 
 Se 2 fosse un numero maggiore di 5, allora andrebbe in esecuzione il secondo comando. Facile, vero? Andiamo a vedere come funziona `elif`:
 
-    python
-    nome = 'Sonja'
-    if nome == 'Ola':
-        print('Ciao Ola!')
-    elif nome == 'Sonja':
-        print('Ciao Sonja!')
-    else:
-        print('Caio anonimo!')
-    
+```python
+nome = 'Sonja'
+if nome == 'Ola':
+    print('Ciao Ola!')
+elif nome == 'Sonja':
+    print('Ciao Sonja!')
+else:
+    print('Caio anonimo!')
+```
 
 ed eseguito:
 
@@ -574,21 +574,21 @@ Hai visto cosa è successo? `elif` ti consente di aggiungere condizioni suppleme
 
 Allo statement iniziale `if` puoi far seguire tutti gli statement `elif` che vuoi. Per esempio:
 
-    python
-    volume = 57
-    if volume < 20:
-        print("Piuttosto basso.")
-    elif 20 <= volume < 40:
-        print("Adatto per musica di sottofondo")
-    elif 40 <= volume < 60:
-        print("Perfetto per apprezzare ogni dettaglio")
-    elif 60 <= volume < 80:
-        print("Ideale per le feste")
-    elif 80 <= volume < 100:
-        print("Un po' altino!")
-    else:
-        print("Oddio, le mie orecchie! :(")
-    
+```python
+volume = 57
+if volume < 20:
+    print("Piuttosto basso.")
+elif 20 <= volume < 40:
+    print("Adatto per musica di sottofondo")
+elif 40 <= volume < 60:
+    print("Perfetto per apprezzare ogni dettaglio")
+elif 60 <= volume < 80:
+    print("Ideale per le feste")
+elif 80 <= volume < 100:
+    print("Un po' altino!")
+else:
+    print("Oddio, le mie orecchie! :(")
+```
 
 Python esegue ogni singolo test in sequenza e scrive:
 
@@ -613,13 +613,13 @@ Ti ricordi quelle funzioni che puoi eseguire in Python come `len()`? Beh, buone 
 
 Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Ogni funzione in Python inizia con la parola chiave `def`, viene assegnato un nome e può avere alcuni parametri. Iniziamo con una facile. Sostituisci il codice nel file **python_intro.py** con il seguente:
 
-    python
-    def ciao():
-        print('Ciao!')
-        print('Come stai?')
-    
-    ciao()
-    
+```python
+def ciao():
+    print('Ciao!')
+    print('Come stai?')
+
+ciao()
+```
 
 Okay, la nostra prima funzione è pronta!
 
@@ -634,23 +634,23 @@ Eseguiamolo e vediamo cosa succede:
 
 E' stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
 
-    python
-    def ciao(nome):
-    
+```python
+def ciao(nome):
+```
 
 Come puoi vedere, abbiamo dato alla nostra funzione un parametro chiamato `nome`:
 
-    python
-    def ciao(nome):
-        if nome == 'Ola':
-            print('Ciao Ola!')
-        elif nome == 'Sonja':
-            print('Ciao Sonja!')
-        else:
-            print('Ciao anonimo!')
-    
-    ciao()
-    
+```python
+def ciao(nome):
+    if nome == 'Ola':
+        print('Ciao Ola!')
+    elif nome == 'Sonja':
+        print('Ciao Sonja!')
+    else:
+        print('Ciao anonimo!')
+
+ciao()
+```
 
 Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if`. Infatti, la funzione viene eseguita quando la condizione viene soddisfatta. Vediamo ora come funziona:
 
@@ -663,9 +663,9 @@ Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if
 
 Ops, un errore. Fortunatamente, Python ci fornisce un messaggio di errore che ci può servire. Ci dice che la funzione `ciao()` (quella che abbiamo definito) ha un argomento richiesto (chiamato `nome`) e che ci siamo dimenticati di metterlo quando abbiamo chiamato la funzione. Sistemiamolo alla fine del file:
 
-    python
-    ciao("Ola")
-    
+```python
+ciao("Ola")
+```
 
 Ed eseguiamo di nuovo:
 
@@ -675,9 +675,9 @@ Ed eseguiamo di nuovo:
 
 E se cambiamo il nome?
 
-    python
-    ciao("Sonja")
-    
+```python
+ciao("Sonja")
+```
 
 Ed eseguilo:
 
@@ -694,12 +694,12 @@ Fantastico, vero? In questo modo non devi ripetere tutto ogni volta che vuoi mod
 
 Facciamo una cosa più intelligente -- ci sono più di due nomi, e scrivere una condizione per ognuno sarebbe complicato, vero?
 
-    python
-    def ciao(nome):
-        print('Ciao ' + nome + '!')
-    
-    ciao("Rachel")
-    
+```python
+def ciao(nome):
+    print('Ciao ' + nome + '!')
+
+ciao("Rachel")
+```
 
 Ora chiamiamo il codice:
 
@@ -717,29 +717,29 @@ I programmatori non amano ripetere ciò che scrivono. La programmazione mira a a
 
 Ti ricordi ancora delle liste? Facciamo una lista di ragazze:
 
-    python
-    ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
-    
+```python
+ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
+```
 
 Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, quindi usiamola in loop:
 
-    python
-    for nome in ragazze:
-    
+```python
+for nome in ragazze:
+```
 
 Lo statement ~~~ for~~~ si comporta in modo simile allo statement ~~~ if~~~; il codice sottostante deve essere rientrato di quattro spazi.
 
 Qua c'è l'intero codice che sarà nel file:
 
-    python
-    def hi(nome):
-        print('Ciao ' + nome + '!') 
-    
-    ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
-    for nome in ragazze:
-        hi(name)
-        print('Prossima ragazza')
-    
+```python
+def hi(nome):
+    print('Ciao ' + nome + '!') 
+
+ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
+for nome in ragazze:
+    hi(name)
+    print('Prossima ragazza')
+```
 
 E quando lo eseguiamo:
 
@@ -760,9 +760,10 @@ Come puoi vedere, tutto quello che metti all'interno di un `for` statement con u
 
 Puoi anche utilizzare `for` su numeri usando la funzione `range`:
 
-    for i in range(1, 6):
-        print(i)
-    
+```python
+for i in range(1, 6):
+    print(i)
+```
 
 Che stamperà:
 
@@ -785,4 +786,4 @@ Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due pas
 
 ![Cupcake][3]
 
- [3]: images/cupcake.png
+ [3]: images/cupcake.pngS

@@ -39,12 +39,12 @@ L'errore non c'è più! Congratulazioni :) Tuttavia, il tuo sito in realtà non 
 
 Aggiungi quanto segue nel tuo file template:
 
-    ```html
-    <html>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </html>
-    ```
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
 Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
@@ -69,17 +69,17 @@ Utilizziamo `<head>` per dire al browser come interpretare la configurazione del
 
 Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
 
-    ```html
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </body>
-    </html>
-    ```
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
 
 Salva il file e aggiorna la tua pagina.
 
@@ -111,30 +111,30 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 
 Qui c'è un esempio di un template completo:
 
-    ```html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>pubblicato: 14.06.2014, 12:14</p>
-                <h2><a href="">Il mio secondo postt</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-    ```
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>pubblicato: 14.06.2014, 12:14</p>
+            <h2><a href="">Il mio secondo postt</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Abbiamo creato tre sezioni `div` qui.
 

@@ -12,28 +12,28 @@ Abbiamo già un modello dei `Post`, quindi non abbiamo bisogno di aggiungere nie
 
 Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_list.html`. Per ora dovrebbe avere questo aspetto:
 
-    ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
-    ```
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
     
 
 {% raw %}Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di articoli porti alla pagina di dettaglio. Cambiamo `<h1><a href="">{{ post.title }}</a></h1>` così che linki alla pagina di dettaglio del post:{% endraw %}
 
-    ```html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    ```
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
 {% raw %}È arrivata l'ora di spiegare il misterioso `{% url 'post_detail' pk=post.pk %}`. Come avrai capito, il simbolo `{% %}` significa che stiamo usando i tag del template di Django. Questa volta ne useremo uno che creerà una URL per noi!{% endraw %}
 
@@ -53,15 +53,15 @@ Vogliamo che il nostro primo post venga visualizzato a questo **URL **: http://1
 
 Facciamo sì che l'URL nel file `blog/urls.py` punti Django ad una *view* chiamata `post_detail`, che mostrerà un intero post. Aggiungi la riga `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` al file `blog/urls.py`. Il file dovrebbe assomigliare a questo:
 
-    ```python
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-    ]
-    ```
+```python
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+]
+```
 
 Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo: - inizia ancora con `^` -- "l'inizio" - `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola **post** e **/**. Fin qui tutto bene. - `(?P<pk>[0-9]+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk`. `[0-9]` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto! - `/` Quindi ci serve **/** di nuovo - `$` - "fine"!
 
@@ -109,10 +109,11 @@ Dovremo aprire `blog/views.py` ed aggiungere il seguente codice:
 
 Vicino ad altre righe `from` ed alla fine del file aggiungeremo la nostra *view*:
 
-    ```def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-    ```
+```python
+    def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Si. E' giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
 
@@ -134,21 +135,21 @@ Creeremo un file in `blog/templates/blog` chiamato `post_detail.html`.
 
 Il risultato somiglierà a questo:
 
-    ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-    ```
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 Stiamo estendendo ancora una volta il template di base. `base.html`. Nel blocco `content` vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?
 
