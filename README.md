@@ -58,6 +58,10 @@ Either use the Github app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
+Then, create a branch for your new changes to sit in. It helps to call the branch something related to the changes you are going to make.
+
+    git checkout -b contributing
+
 Download the [Gitbook Editor](https://github.com/GitbookIO/editor-legacy/releases) app to your computer.
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
