@@ -16,7 +16,8 @@ Dobbiamo creare un file con questo nome all'interno della cartella `blog`.
 
 OK, apriamo questo file e inseriamo:
 
-```from django import forms
+```python
+from django import forms
 
 from .models import Post
 
