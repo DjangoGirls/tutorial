@@ -784,6 +784,4 @@ Nota che il secondo di questi due numeri non è incluso nella lista prodotta da 
 
 Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)
 
-![Cupcake][3]
-
- [3]: images/cupcake.pngS
+![Cupcake](images/cupcake.png)
