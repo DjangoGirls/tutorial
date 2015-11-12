@@ -39,12 +39,12 @@ L'errore non c'è più! Congratulazioni :) Tuttavia, il tuo sito in realtà non 
 
 Aggiungi quanto segue nel tuo file template:
 
-    html
+    ```html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
+    ```
 
 Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
@@ -69,7 +69,7 @@ Utilizziamo `<head>` per dire al browser come interpretare la configurazione del
 
 Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
 
-    html
+    ```html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -79,7 +79,7 @@ Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
             <p>It works!</p>
         </body>
     </html>
-    
+    ```
 
 Salva il file e aggiorna la tua pagina.
 
@@ -111,7 +111,7 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 
 Qui c'è un esempio di un template completo:
 
-    html
+    ```html
     <html>
         <head>
             <title>Django Girls blog</title>
@@ -134,7 +134,7 @@ Qui c'è un esempio di un template completo:
             </div>
         </body>
     </html>
-    
+    ```
 
 Abbiamo creato tre sezioni `div` qui.
 

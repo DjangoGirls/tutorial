@@ -8,19 +8,19 @@ OK, quindi come facciamo a farlo?
 
 Dobbiamo aprire il nostro `blog/views.py`. Per ora `post_list` *view* si vede così:
 
-    python
+    ```python
     from django.shortcuts import render
     
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
-    
+    ```
 
 Ricordi quando abbiamo parlato di includere codice scritto in diversi file? Ora è il momento di includere il model che abbiamo scritto in `models.py`. Aggiungeremo questa riga `from .models import Post` così:
 
-    python
+    ```python
     from django.shortcuts import render
     from .models import Post
-    
+    ```
 
 Il punto dopo il `from` significa *directory attuale* oppure *applicazione attuale*. Dal momento che `views.py` e `models.py` sono nella stessa directory possiamo semplicemente utilizzare `.` ed il nome del file (senza `.py`). Allora importiamo il nome del modello (`Post`).
 
@@ -39,7 +39,7 @@ Quindi ora ci interessa una lista di post del blog che sono pubblicati e organiz
 
 Adesso mettiamo questo pezzo di codice nel file `blog/views.py` aggiungendolo alla funzione `def post_list(request)`:
 
-    python
+    ```python
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
@@ -47,7 +47,7 @@ Adesso mettiamo questo pezzo di codice nel file `blog/views.py` aggiungendolo al
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
-    
+    ```
 
 Nota che abbiamo creato una *variabile* per il nostro QuerySet: `posts`. Vedila come il nome del nostro QuerySet. Da qui in avanti possiamo riferirci ad esso con questo nome.
 
@@ -59,7 +59,7 @@ Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto qu
 
 Finalmente il nostro file `blog/views.py` dovrebbe essere così:
 
-    python
+    ```python
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
@@ -67,7 +67,7 @@ Finalmente il nostro file `blog/views.py` dovrebbe essere così:
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
-    
+    ```
 
 E' tutto! Ora di tornare al nostro template e rendere visibile questo QuerySet!
 

@@ -19,7 +19,7 @@ Creiamo un file `base.html` in `blog/templates/blog/`:
 
 Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, così:
 
-    html
+    ```html
     {% load staticfiles %}
     <html>
         <head>
@@ -51,11 +51,11 @@ Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, c
             </div>
         </body>
     </html>
-    
+    ```
 
 Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova tra `<body>` e `</body>`) con questo:
 
-    html
+    ```html
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -69,20 +69,20 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
             </div>
         </div>
     </body>
-    
+    ```
 
 Abbiamo praticamente rimpiazzato tutto quello tra `{% for post in posts %}{% endfor %}` con:
 
-    html
+    ```html
     {% block content %}
     {% endblock %}
-    
+    ```
 
 Che cosa significa? Che hai appena creato un `blocco`, ovvero un tag di template che ti permette di inserire l'HTML presente in questo blocco all'interno di altri template che estendono `base.html`. Ti mostreremo come farlo tra un attimo.
 
 Ora salvalo, e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello che non è all'interno del body e poi cancella anche `<div class="page-header"></div>`, in modo che il file appaia così:
 
-    html
+    ```html
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -92,16 +92,16 @@ Ora salvalo, e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancel
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+    ```
 
 Ed ora aggiungi questa riga all'inizio del file:
 
-    {% extends 'blog/base.html' %}
-    
+    ```{% extends 'blog/base.html' %}
+    ```
 
 {% raw %}Significa che stiamo estendendo il template `base.html` in `post_list.html`. Rimane solo una cosa da fare: metti tutto (tranne la riga che abbiamo appena aggiunto) tra `{% block content %}` e `{% endblock content %}`. Come questo:{% endraw %}
 
-    html
+    ```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -115,7 +115,7 @@ Ed ora aggiungi questa riga all'inizio del file:
             </div>
         {% endfor %}
     {% endblock content %}
-    
+    ```
 
 E' tutto! Controlla se il tuo sito sta ancora funzionando correttamente :)
 
