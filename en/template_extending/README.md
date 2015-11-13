@@ -63,7 +63,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
         <div class="row">
             <div class="col-md-8">
             {% block content %}
-            {% endblock %}
+            {% endblock content %}
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 ```html
 {% block content %}
-{% endblock %}
+{% endblock content %}
 ```
 But why?  You just created a `block`!  You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another templates that extends this template (`base.html`). We will show you how to do this in a moment.
 
@@ -110,7 +110,7 @@ Time to add block tags to this file!
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock %}
+{% endblock content %}
 ```
 Only one thing left. We need to connect these two templates together.  This is what extending templates is all about!  We'll do this by adding an extends tag to the beginning of the file. Like this:
 ```html
@@ -126,7 +126,7 @@ Only one thing left. We need to connect these two templates together.  This is w
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock %}
+{% endblock content %}
 ```
 
 That's it! Check if your website is still working properly :)
