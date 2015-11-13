@@ -8,7 +8,43 @@
 
 ## Translation
 
-This tutorial has been translated from English to Portuguese by a group of awesome volunteers. Special thanks for help goes out to Willie Lawrence, Vivian Macedo, Cleiton Lima, danieltex, Leandro Silva Araujo, Adailton do Nascimento, Pablo Palacios, Paulo Alem, Eric Hideki, Joao Luiz Lorencetti, clemente.jnr, Leonardo Alves dos Santos, joepreludian, Gabriela Cavalcante da Silve, Rafael Biagioni de Fazio, Fabio C. Barrionuevo da Luz, ffabiorj, Lucas Magnum, 1pedro, Adjamilton Junior, Leandro Barbosa, Kleber C Pinheiro, Katyanna Moura, Annanda Sousa, Flavio Barros, Marcel Ribeiro Dantas, Adam Victor Nazareth Brandizzi, Bernardo Fontes, Antonio Luis, Raony Guimares Correo do Carmo Lisboa Cardenas, Camilla Achutti and Carla Suarez. Wow! <3 <3 
+This tutorial has been translated from English to Portuguese by a group of awesome volunteers. 
+
+Special thanks for help goes out to:
+
+*Adailton do Nascimento 
+*Adam Victor Nazareth Brandizzi 
+*Antonio Luis 
+*Annanda Sousa 
+*Adjamilton Junior 
+*Bernardo Fontes 
+*Camilla Achutti
+*Carla Suarez
+*Cleiton Lima 
+*clemente.jnr
+*danieltex 
+*Eric Hideki 
+*Flavio Barros 
+*Fabio C. Barrionuevo da Luz 
+*ffabiorj 
+*Gabriela Cavalcante da Silva 
+*Leandro Silva Araujo 
+*Lucas Magnum 
+*1pedro 
+*Joao Luiz Lorencetti  
+*Katyanna Moura 
+*Kleber C Pinheiro 
+*Leandro Barbosa 
+*Leonardo Alves dos Santos 
+*Marcel Ribeiro Dantas 
+*joepreludian 
+*Rafael Biagioni de Fazio 
+*Pablo Palacios 
+*Paulo Alem 
+*Raony Guimares Correo do Carmo Lisboa Cardenas 
+*Vivian Macedo
+*Willie Lawrence 
+Wow! <3 <3 
 
 ## Introdução
 
