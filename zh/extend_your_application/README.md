@@ -12,7 +12,6 @@
 
 我们将从在`blog/templates/blog/post_list.html`里添加一个链接开始。目前它应该看起来像这样：
 
-    html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -31,7 +30,6 @@
 
 {% raw %}我们在博文列表的博文标题处添加一个链接用于跳转到该博文的详细页面。 让我们编辑 `<h1><a href="">{{ post.title }}</a></h1>` 使得它能链接到博文详情页面：。{% endraw %}
 
-    html
     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
     
 
@@ -53,7 +51,6 @@
 
 让我们在 `blog/urls.py` 文件中增加一个 URL 来指引 Django 到名为 `post_detail` 的 *view*，它将用来显示整篇博客文章。 增加这行 `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` 到 `blog/urls.py` 文件。 文件应当如下所示：
 
-    python
     from django.conf.urls import include, url
     from . import views
     
@@ -134,7 +131,6 @@
 
 它看起来会像这样：
 
-    html
     {% extends 'blog/base.html' %}
     
     {% block content %}

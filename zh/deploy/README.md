@@ -265,7 +265,6 @@ Django 使用 “WSGI 协议”，它是用来服务 Python 网站的一个标�
 
 删除所有的内容并用以下内容替换：
 
-    python
     import os
     import sys
     

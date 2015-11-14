@@ -522,7 +522,6 @@
 
 当条件 `3 > 2` 为真（或者 `True` ），Python 希望我们给它进一步的指示。 我们试着让 Python 打印 “it works!”。 更改您在 **python_intro.py** 文件中的代码变为这样：
 
-    python
     if 3 > 2:
         print('It works!')
     
@@ -539,7 +538,6 @@
 
 在之前的例子里，代码只会在条件被满足的时候被运行。但是 Python 同样有 `elif` 和 `else` 语句：
 
-    python
     if 5 > 2:
         print('5 is indeed greater than 2')
     else:
@@ -554,7 +552,6 @@
 
 如果2是比5大，那么第二个命令会被执行。简单，对吧？在我们看看 `elif` 是怎么工作的：
 
-    python
     name = 'Sonja'
     if name == 'Ola':
         print('Hey Ola!')
@@ -574,7 +571,6 @@
 
 在 `if` 语句之后，你可以添加任意多的 `elif` 语句。例如：
 
-    python
     volume = 57
     if volume < 20:
         print("It's kinda quiet.")
@@ -613,7 +609,6 @@ Python 遍历判断每个测试的条件，并打印：
 
 一个函数就是一些 Python 应该运行的指令集。 每个Python函数都是以关键词 `def` 开始的，我们可以给定一个名字并能指定若干个参数。 让我们从一个简单的开始。 使用下面的替换**python_intro.py**中的代码：
 
-    python
     def hi():
         print('Hi there!')
         print('How are you?')
@@ -634,13 +629,11 @@ Python 遍历判断每个测试的条件，并打印：
 
 那很简单！让我们建立我们第一个有参数的函数。我们使用前面的例子-一个函数打印“hi to the person running it”
 
-    python
     def hi(name):
     
 
 正如你所见的，我们给我们的函数一个叫`name`的参数：
 
-    python
     def hi(name):
         if name == 'Ola':
             print('Hi Ola!')
@@ -663,7 +656,6 @@ Python 遍历判断每个测试的条件，并打印：
 
 哦！一个错误。 幸运的是，Python给我们一个有用的错误提示信息。 告诉我们函数 `hi()`（这是我们定义的）必须有一个参数（称之为`name`），我们调用函数的时候忘记传递它了。 让我们在文件的底部解决它：
 
-    python
     hi("Ola")
     
 
@@ -675,7 +667,6 @@ Python 遍历判断每个测试的条件，并打印：
 
 那如果我们改变名字了呢？
 
-    python
     hi("Sonja")
     
 
@@ -694,7 +685,6 @@ Python 遍历判断每个测试的条件，并打印：
 
 让我们做一些更智能的事情——如果有超过两个或者更多的名字，我们需要为每个都写一个判断，会比较难，对不对？
 
-    python
     def hi(name):
         print('Hi ' + name + '!')
     
@@ -717,13 +707,11 @@ Python 遍历判断每个测试的条件，并打印：
 
 还记得列表吗？让我们做一个女孩的列表：
 
-    python
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
     
 
 我们想要根据他们所有人的名字依次打招呼。我们有一个 `hi` 函数去实现这个，所以让我们在一个循环中使用它：
 
-    python
     for name in girls:
     
 
@@ -731,7 +719,6 @@ for 语句的声明和 if 语句声明类似，下面代码需要缩进。
 
 这是文件中完整的代码：
 
-    python
     def hi(name):
         print('Hi ' + name + '!')
     

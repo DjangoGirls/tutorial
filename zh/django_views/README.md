@@ -10,7 +10,6 @@
 
 好，让我们打开这个文件，看看里面有什么：
 
-    python
     from django.shortcuts import render
     
     # Create your views here.
@@ -18,7 +17,6 @@
 
 这里没有太多的东西。一个最简单的*view*就长得这个样子。
 
-    python
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
     

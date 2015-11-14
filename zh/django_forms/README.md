@@ -16,7 +16,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 好吧，让我们打开它，然后键入以下代码：
 
-    python
     from django import forms
     
     from .models import Post
@@ -44,7 +43,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 是时候打开`blog/templates/blog/base.html`了。我们将添加一个链接到`div`，命名为`page-header`：
 
-    html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     
 
@@ -52,7 +50,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 添加了新的行后，你的html文件现在应该看起来像这样：
 
-    html
     {% load staticfiles %}
     <html>
         <head>
@@ -85,13 +82,11 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 我们打开`blog/urls.py`然后添加一个新行：
 
-    python
         url(r'^post/new/$', views.post_new, name='post_new'),
     
 
 最终代码会看起来像这样：
 
-    python
     from django.conf.urls import include, url
     from . import views
     
@@ -108,13 +103,11 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 现在打开`blog/views.py`文件，加入下面的各行到`from`行下：
 
-    python
     from .forms import PostForm
     
 
 还有我们的*view*：
 
-    python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -137,7 +130,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 好，让我们看看HTML 在`post_edit.html`里应该看起来什么样：
 
-    html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -165,7 +157,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 再一次打开`blog/views,py`。我们在看到`post_new`中的视图内容是:
 
-    python
     def post_new(request):
         form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -175,7 +166,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 所以在我们的*视图*里，我们有了两种不同的情况去处理。 首先：当我们首次访问一个页面，我们想要得到一个空白的页面。 第二：当我们回到*视图*，要有我们所有我们刚刚键入的数据。 所以我们需要添加一个条件判断（我们为此使用`if`）。
 
-    python
     if request.method == "POST":
         [...]
     else:
@@ -184,7 +174,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 现在去填写`[...]`。如果`method` 是 `POST`，那么我们要用表单里的数据构建`PostForm`，对吗？我们会这样做：
 
-    python
     form = PostForm(request.POST)
     
 
@@ -192,7 +181,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 我们检查表单是否正确，如果是我们就保存它！
 
-    python
     if form.is_valid():
         post = form.save(commit=False)
         post.author = request.user
@@ -204,13 +192,11 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 最后，如果我们能够立即去`post_detail`页面创建新的博客内容，那将很酷，对吗？为了做到这点，我们需要再导入一个：
 
-    python
     from django.shortcuts import redirect
     
 
 把它添加到你文件的最开始处。现在我们可以说：创建完新帖子我们就转去`post_detail`页面。
 
-    python
     return redirect('blog.views.post_detail', pk=post.pk)
     
 
@@ -218,7 +204,6 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 
 好吧，我们已经说了很多了，但可能我们想看到整个*视图*现在看起来什么样，对吗？
 
-    python
     def post_new(request):
         if request.method == "POST":
             form = PostForm(request.POST)
@@ -263,13 +248,11 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
 
 打开 `blog/templates/blog/post_detail.html` 并添加以下行：
 
-    python
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     
 
 所以模板看起来像这样：
 
-    html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -287,16 +270,14 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
     
 
 在`blog/urls.py`里我们添加这行：
-
-    python
-        url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
+    
+    url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
     
 
 我们将复用模板`blog/templates/blog/post_edit.html`，所以最后缺失的东西就是 *view*.
 
 让我们打开`blog/views.py`，并在文件的最后加入：
 
-    python
     def post_edit(request, pk):
         post = get_object_or_404(Post, pk=pk)
         if request.method == "POST":
@@ -314,13 +295,11 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
 
 这看起来几乎完全和我们的`post_new`视图一样，对吗？ 但是不完全是。 第一件事：我们从urls里传递了一个额外的`pk`参数。 然后：我们得到了`Post`模型，我们想编辑`get_object_or_404(Post, pk=pk)`，然后当我们创建了一个表单我们用一个`实例`来传递这篇文章，当我们想保存它：
 
-    python
     form = PostForm(request.POST, instance=post)
     
 
 当我们只是打开这篇文章的表单来编辑时：
 
-    python
     form = PostForm(instance=post)
     
 
@@ -348,13 +327,11 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
 
 在 `blog/templates/blog/base.html`中，找到我们 `page-header` `div` 和你早些时候在放那里锚点标记。看起来应该像这样：
 
-    html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     
 
 我们要将另一个 `{% if %}` 标记到这, 这会使链接仅在以管理者身份登录的用户访问时显示。现在来说，管理员就是你！ 像这样修改 `<a>` 标记：
 
-    html
     {% if user.is_authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}

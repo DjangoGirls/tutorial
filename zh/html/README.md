@@ -39,7 +39,6 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 在您的模板文件中添加以下内容：
 
-    html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
@@ -69,7 +68,6 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 例如，你可以把网页标题元素放到 `<head>`里，像这样：
 
-    html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -111,7 +109,6 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 下面是模板的一个完整示例：
 
-    html
     <html>
         <head>
             <title>Django Girls blog</title>

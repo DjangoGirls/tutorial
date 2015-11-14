@@ -73,7 +73,6 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 在你的`blog/static/css/blog.css`文件中添加下面的代码:
 
-    css
     h1 a {
         color: #FCA205;
     }
@@ -83,7 +82,6 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 在 CSS 文件中，我们决定HTML 文件中元素的样式。 由该元素的名称 （即 `a`，`h1`，`body`）、 属性 `class` 或属性 `id` 来标识元素。 类和 id 是你自己给该元素的名称。 类定义元素组，并指向特定元素的 id。 例如，可能由 CSS 使用标记名称 `a`、 类 `external_link` 或 id `link_to_wiki_page` 标识以下标记：
 
-    html
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
     
 
@@ -93,13 +91,11 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 然后，我们还需要告诉我们的 HTML 模板，我们添加一些 CSS。打开 `blog/templates/blog/post_list.html` 文件并在最开始的地方它添加以下行：
 
-    html
     {% load staticfiles %}
     
 
 我们刚刚加载了静态文件到这里（译者注：这里实际上是为模板引入staticfiles相关的辅助方法）：）。 然后，在`<head>` 和 `</head >`之间，在Bootstrap的CSS文件的引导之后（浏览器按照给定文件的顺序读取文件，所以我们的文件中的代码可能会覆盖引导数据库文件中的代码），添加以下行：
 
-    html
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     
 
@@ -107,7 +103,6 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 现在，您的文件应该像这样：
 
-    html
     {% load staticfiles %}
     <html>
         <head>
@@ -140,7 +135,6 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 干得好 ！我想，也许我们也给我们的网站一点空间并增加左边缘。让我们来试试这个 ！
 
-    css
     body {
         padding-left: 15px;
     }

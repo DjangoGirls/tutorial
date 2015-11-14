@@ -16,7 +16,6 @@
 
 还记得当我们谈论过导入在不同文件中编写的代码吗？ 现在是我们必须导入我们已经写在 `models.py` 里的模型的时候了。 我们将添加这行 `from .models import Post`，像这样：
 
-    python
     from django.shortcuts import render
     from .models import Post
     
@@ -38,7 +37,6 @@
 
 现在我们把这段代码插入 `blog/views.py` 文件，添加到函数 `def post_list(request)`里去：
 
-    python
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
@@ -58,7 +56,6 @@
 
 所以最后我们的 `blog/views.py` 文件应如下所示：
 
-    python
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post

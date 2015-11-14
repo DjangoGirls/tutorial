@@ -87,7 +87,6 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
 
 创建应用程序后，我们还需要告诉 Django 它应该使用它。 我们是在 `mysite/settings.py`文件中这样做的。 我们需要找到 `INSTALLED_APPS` 并在它下面添加一行`'blog'` 。 所以最终的代码应如下所示：
 
-    python
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -105,7 +104,6 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
 
 让我们打开 `blog/models.py`，从中删除一切并编写这样的代码：
 
-    python
     from django.db import models
     from django.utils import timezone
     

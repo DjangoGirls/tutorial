@@ -65,7 +65,6 @@ TIME_ZONE = 'Europe/Berlin'
 
 我们还需要添加 (我们会找出在教程后面所提到的静态文件和 CSS文件) 静态文件的路径。 我们下拉到文件的*最底部*, 就是在`STATIC_URL` 条目的下面。添加新的一行内容为 `STATIC_ROOT`:
 
-    python
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     
@@ -76,7 +75,6 @@ TIME_ZONE = 'Europe/Berlin'
 
 这已经在您的 `mysite/settings.py` 文件中设置了：
 
-    python
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
