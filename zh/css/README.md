@@ -18,10 +18,10 @@ Bootstrap是最流行的HTML和CSS框架之一，它可以用来开发炫酷的�
 
 若要安装Bootstrap，您需要将它添加到你的 `<head>` `.html` 文件 （`blog/templates/blog/post_list.html`） 中：
 
-    html
+```
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    
+``` 
 
 这不会向你的项目添加任何文件。它只是指向在互联网上存在的文件。只需要继续打开您的网站并刷新页面。你瞧！
 
