@@ -37,6 +37,40 @@
  [4]: http://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/Contributing.md
 
+## 中文版的项献者
+
+本教程的中文版由下列人员参与翻译,按名字首字母排名:
+- Abraham Kan (abrahamkan)
+- adv_zxy
+- BigBagBOOM
+- c2j
+- classicalmu (zhanyanqiao)
+- cnbabylinke
+- Javen (javen_liu)
+- jeff kit (bbmyth)
+- Joker Qyou (Joker_Qyou)
+- Kate Chan (kateismex0)
+- liuzhongjun
+- meelo
+- neal1991
+- neoblackcap
+- olasitarska
+- pchnet
+- rurong (defrur)
+- Shit_JinP
+- suusatoshigi (SuuSatoshigi)
+- wangjiaxi
+- wangshunping
+- wly522
+- yinhm
+- yobo (yfrancesc)
+- Yue Du (ifduyue)
+- zhangyi2099
+- Zhiheng Lin (onlyice0328)
+- 刘奕聪(MrLYC)
+- 芝加哥中文Meetup (chicagochinesemeetup)
+- 陈艺虹(laceychen1993) 
+
 ## 你愿意帮我们翻译将本教程至其他语言吗？
 
 目前，所有的翻译都储存于crowdin.com的平台，网址是:
