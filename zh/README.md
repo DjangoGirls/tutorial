@@ -1,8 +1,6 @@
 # Django Girls 教程
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+ [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > 这项工作是根据公共创意贡献署名国际协议4.0的要求完成的。若要查看本许可证的副本，请访问http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -37,7 +35,7 @@
 这个教程由[DjangoGirls][4]维护。 如果你发现本网有任何错误或想更新教程，请按照 [贡献指导][5]行动.
 
  [4]: http://djangogirls.org/
- [5]: https://github. com/DjangoGirls/tutorial/blob/master/Contributing. md
+ [5]: https://github.com/DjangoGirls/tutorial/blob/master/Contributing.md
 
 ## 你愿意帮我们翻译将本教程至其他语言吗？
 
