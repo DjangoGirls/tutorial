@@ -1,8 +1,8 @@
 # Introduction à l'interface en ligne de commande
 
-C'est un peu exaltant, non? Dans quelques instants, vous allez écrire votre première ligne de code :)
+C'est un peu exaltant, non ?! Dans quelques instants, vous allez écrire votre première ligne de code :)
 
-**Commençons par vous présenter un nouvel ami: la ligne de commande!**
+**Commençons par vous présenter un nouvel ami : la ligne de commande!**
 
 Les étapes suivantes vont vous montrer comment utiliser la fenêtre noire que tous les bidouilleurs·euses utilisent. Elle est un peu effrayante à première vue, mais en fait, c'est un programme qui attend qu'on lui donne des commandes.
 
