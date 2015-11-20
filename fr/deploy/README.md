@@ -2,236 +2,313 @@
 
 > **Note** Le chapitre suivant peut-être parfois un peu difficile à comprendre. Accrochez-vous et allez jusqu'au bout. Le déploiement fait partie intégrale du processus de développement d'un site internet. Nous avons décidé de placer ce chapitre au milieu du tutoriel afin que votre coach puisse vous aider dans cette tâche compliquée qu'est la mise en ligne d'un site web. Ça signifie que vous serez capable de finir le tutoriel par vous-même plus tard si jamais vous êtes à court de temps à la fin de la journée.
 
-Jusqu'à présent, votre site Internet était seulement disponible sur votre ordinateur. Maintenant, vous allez apprendre à le déployer! Déployer signifie mettre en ligne votre site pour que d'autres personnes puissent enfin voir votre app :).
+Jusqu'à présent, votre site Internet était seulement disponible sur votre ordinateur. Maintenant, vous allez apprendre à le déployer! Déployer signifie mettre en ligne votre site pour que d'autres personnes puissent enfin voir votre app :)
 
-Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de nombreux fournisseurs. Nous allons utiliser celui qui possède le processus de déploiement le plus simple: [Heroku][1]. Heroku est gratuit pour les petits sites qui n'ont pas beaucoup de visiteurs, ce qui devrait vous convenir pour le moment.
+Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de nombreux fournisseurs. Nous allons utiliser celui qui possède le processus de déploiement le plus simple: [PythonAnywhere][1]. PythonAnywhere est gratuit pour les petits sites qui n'ont pas beaucoup de visiteurs, ce qui devrait vous convenir pour le moment.
 
- [1]: http://heroku.com/
+L'autre service externe que nous utiliserons est [GitHub][2], qui est un service d'hébergement de code. Il en existe d'autres, mais presque tous les programmeurs ont un compte GitHub aujourd'hui, et maintenant vous aussi!
 
-Nous allons suivre ce tutoriel: https://devcenter.heroku.com/articles/getting-started-with-django. Nous l'avons reproduit (et traduit!) ici pour que cela soit plus simple pour vous.
+Ces trois emplacement vous serons important. Votre ordinateur sera l'endroit ou vous développerez et testerez. Quand vous êtes satisfait·e des modifications, vous placerez une copie de votre programme sur GitHub. Votre site Internet sera sur PythonAnywhere et vous le mettrez à jour en récupérant une nouvelle copie de votre code depuis GitHub.
 
-## Le fichier `requirements.txt`
+ [1]: http://pythonanywhere.com/
+ [2]: http://www.github.com/
 
-Le fichier `requirements.txt` permet de communiquer à Heroku la liste des paquets Python qui ont besoin d'être installés sur le serveur qui hébergera votre site.
+# Git
 
-Mais avant de créer ce fichier, nous avons besoin d'installer quelques paquets sur Heroku. Reprenez votre console, vérifiez que `virtualenv` est bien activé, puis tapez ceci:
+Git est un "logiciel de gestion de versions" (version control system, abrégé VCS) utilisé par un grand nombre de programmeurs. Ce logiciel permet de suivre les modifications des fichiers à travers le temps afin que vous puissiez rappeler des versions spécifiques ultérieurement. Un peu comme la fonctionnalité de "suivi des modifications" dans Microsoft Word, mais bien plus puissante.
 
-    (myvenv) $ pip install dj-database-url waitress whitenoise
-    
+## Installation de Git
 
-Une fois l'installation terminée, allez dans le dossier `djangogirls` et tapez cette commande:
+<!-- **Note** Si vous avez déjà suivi l'étape d'Installation, il n'est pas utile de le refaire — vous pouvez sauter cette section et commencer à créer votre dépôt Git. -->
 
-    (myvenv) $ pip freeze > requirements.txt
-    
+{% include "/deploy/install_git.md" %}
 
-Cette commande va créer le fichier `requirements.txt` qui contiendra la liste de tous les paquets Python que vous avez installés, c'est-à-dire toutes les librairies Python que vous utilisez, comme Django par exemple :).
 
-> **Note**: `pip freeze` va lister toutes les librairies Python installées dans votre virtualenv tandis que `>` va se charger de mettre cette liste dans un fichier. Essayez de lancer `pip freeze` sans `> requirements.txt` et regardez ce qui se passe!
 
-Ouvrez le fichier créé et ajoutez ceci à la fin:
 
-    psycopg2==2.5.3
-    
+## Lancer notre dépôt Git
 
-Vous avez besoin de cette dernière ligne pour que votre site web fonctionne sur Heroku.
+Git suit les modifications d'un ensemble de fichiers particuliers dans ce que l'on appelle un dépôt (repository, abrégé « repo »). Créons-en un pour notre projet. Ouvrez votre console et exécutez ces commandes, dans le répertoire `djangogirls` :
 
-## Procfile
-
-Nous avons aussi besoin de créer un Procfile. Cela va permettre à Heroku de savoir quelles commandes lancer pour démarrer votre site web. Ouvrez votre éditeur de texte, créez un fichier `Procfile` dans le dossier `djangogirls` et ajoutez y la ligne suivante:
-
-    web: waitress-serve --port=$PORT mysite.wsgi:application
-    
-
-Cela signifie que nous allons déployer une application `web` et que nous allons le faire en lançant la commande `waitress-serve --port=$PORT mysite.wsgi:application`. `waitress-serve` est un programme qui est une sorte de version plus puissante de la commande `runserver` de Django.
-
-N'oubliez pas de sauvegarder votre fichier. Et voilà, c'est fait!
-
-## Le fichier `runtime.txt`
-
-Nous avons besoin de préciser à Heroku la version de Python que nous souhaitons utiliser. Pour cela, nous avons à nouveau besoin de créer un fichier dans le dossier `djangogirls`. Prenez votre éditeur de texte et créez le fichier `runtime.txt` qui contiendra ce tout petit bout de texte:
-
-    python-3.4.2
-    
-
-## mysite/local_settings.py
-
-Il existe une différence entre la configuration que nous utilisons localement (sur notre ordinateur) et la configuration utilisée sur notre serveur. Heroku utilise une base de données qui est différente de celle de votre ordinateur. Nous allons devoir créer un fichier de configuration différent qui ne sera utilisé que dans notre environnement local.
-
-Créez le fichier `mysite/local_settings.py`. Il doit contenir la même chose que la configuration de la partie `DATABASE` de votre fichier `mysite/settings.py`. Ça doit ressembler à ceci:
-
-    import os
-    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-    
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-    
-    DEBUG = True
-    
-
-N'oubliez pas de sauvegarder votre fichier! :)
-
-## mysite/settings.py
-
-il va aussi falloir modifier le fichier `settings.py` de notre site web. Pour cela, ouvrez `mysite/settings.py` dans votre éditeur de texte et ajoutez les lignes suivantes à la toute fin du fichier:
-
-    import dj_database_url
-    DATABASES['default'] =  dj_database_url.config()
-    
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    
-    ALLOWED_HOSTS = ['*']
-    
-    STATIC_ROOT = 'staticfiles'
-    
-    DEBUG = False
-    
-
-Toujours à la fin du fichier `mysite/settings.py`, copier-coller ceci:
-
-    try:
-        from .local_settings import *
-    except ImportError:
-        pass
-    
-
-Si le fichier existe, cela va vous permettre d'importer l'intégralité de votre configuration locale.
-
-Sauvegardez le fichier.
-
-## mysite/wsgi.py
-
-Ouvrez le fichier `mysite/wsgi.py` et ajoutez les lignes suivantes à la toute fin:
-
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(application)
-    
-
-Hop, on enchaine!
-
-## Se créer un compte sur Heroku
-
-Pour continuer, vous allez devoir installer la toolbelt Heroku qui se trouve ici: https://toolbelt.heroku.com/. Vous pouvez passer cette partie si vous l'avez déjà installé avec votre coach.
-
-> Lorsque vous lancez l'installation de la toolbelt d'Heroku sous Windows, n'oubliez pas de choisir "Custom Installation" (installation personnalisée) lorsque l'on vous demandera quels composants vous souhaitez installer. N'oubliez pas de cocher "Git and SSH" dans la liste des composants disponibles à l'installation.
-> 
-> Sous Windows, vous avez aussi besoin de lancer la commande suivante afin que Git et SSH soient ajoutés au `PATH` de votre prompt: `setx PATH "%PATH%;C:\Program Files\Git\bin"`. Relancez votre console afin que les changements soient pris en compte.
-
-Il vous sera nécessaire de vous créer un compte gratuit sur Heroku. Vous pouvez le faire à cette adresse: https://id.heroku.com/signup/www-home-top
-
-Ensuite, authentifiez votre compte Heroku sur votre ordinateur en lançant la commande suivante:
-
-    $ heroku login
-    
-
-Si vous n'avez pas encore de clef SSH, cette commande va vous permettre d'en créer une automatiquement. Les clefs SSH sont obligatoires afin de pusher du code sur Heroku.
-
-## Git
-
-Git est un logiciel de gestion de versions décentralisé utilisé par de nombreux·ses programmeurs⋅ses. C'est un logiciel qui permet de garder un historique des changements d'un ou plusieurs fichiers: cela permet d'aller rechercher une version antérieure plus tard. Heroku utilise un repository git pour gérer les fichiers de votre projet. Nous allons donc devoir nous aussi l'utiliser.
-
-Créez un fichier `.gitignore` dans votre dossier `djangogirls` et copiez y le contenu suivant:
-
-    myvenv
-    __pycache__
-    staticfiles
-    local_settings.py
-    db.sqlite3
-    
-
-Sauvegardez ce fichier. Le point au début du nom de fichier est important! Comme vous pouvez le voir, nous disons à Heroku d'ignorer le fichier `local_settings.py` et de ne pas le télécharger. Il ne sera disponible que sur votre ordinateur (localement).
-
-Ensuite, nous allons créer un nouveau repository git et sauvegarder nos changements. Prenez votre console et lancez les commandes suivantes:
+> **Note** Vérfiez votre répertoire courant à l'aide de la commande `pwd` (OSX/Linux) ou `cd` (Windows) avant d'initialiser le dépôt. Vous devriez être dans le répertoire `djangogirls`.
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config user.name "Votre nom"
-    $ git config user.email you@example.com
-    
+    $ git config --global user.name "Votre nom"
+    $ git config --global user.email vous@example.fr
 
-Initialiser le repository git est quelque chose qu'il est nécessaire de ne faire qu'une fois par projet.
+L'initialisation du dépôt Git n'est nécessaire qu'une fois par projet (et vous n'aurez plus jamais à retaper votre nom et adresse).
 
-Enfin, sauvegardons nos changements. Une nouvelle fois, prenez votre console et lancez les commandes suivantes:
+Git suivra les modifications de tous les fichiers et dossiers dans ce répertoire, mais il y a des fichiers que l'on souhaite ignorer. Pour ce faire, on crée un fichier appelé `.gitignore` dans le répertoire de base. Ouvrez votre éditeur et créez un nouveau fichier avec le contenu suivant :
+
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+```
+
+Et enregistrez le sous `.gitignore` dans le dossier "djangogirls".
+
+> **Note** Le point au début du nom du fichier est important ! Si vous rencontrez des difficultés à le créer (Mac n'aime pas que vous créiez des fichiers qui commencent par un point via Finder, par exemple), utilisez le fonction "Enregistrer sous" de votre éditeur, c'est du béton.
+
+> **Note** Un des fichiers spécifiés dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où sont stockés tous vos posts. On ne veut pas l'ajouter au dépôt car votre site Internet sur PythonAnywhere utilisera une base de données différente. Cette base de données peut être SQLite, comme votre machine de développement, mais généralement, vous en utiliserez une appelée MySQL qui est capable de gérer un nombre beaucoup plus important de visiteurs que SQLite. Dans tous les cas, en omettant votre base de données SQLite de votre copie GitHub, tous les posts que vous aurez ajouté jusque là resteront et ne serons accessibles que localement, donc vous devrez les ajouter à nouveau en production. Vous dvriez voir votre base de données locale comme un bon terrain d'entraînement où vous pouvez essayer diverses choses sans avoir peur de supprimer vos posts réels de votre blog.
+
+C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou lorsque vous n'êtes pas certain·e de ce qui a changé. Ça permet d'éviter des suprises, comme l'ajout ou l'enregistrement de mauvais fichier. La commande `git status` renvoie des informations sur les fichiers non-suivis/modifiés/remis (untracked/modifed/staged), l'état de la branche, et bien plus. La sortie devrait ressembler à :
+
+    $ git status
+    On branch master
+
+    Initial commit
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+Enfin, on enregistre (commit) nos modifications. Allez dans votre console et tapez ces commandes :
 
     $ git add -A .
-    $ git commit -m "My Django Girls app"
-    [master (root-commit) 2943412] My Django Girls
-     7 files changed, 230 insertions(+)
+    $ git commit -m "Mon appli Django Girls, premier commit"
+     [...]
+     13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
-     create mode 100644 Procfile
-     create mode 100644 mysite/__init__.py
-     create mode 100644 mysite/settings.py
-     create mode 100644 mysite/urls.py
+     [...]
      create mode 100644 mysite/wsgi.py
-     create mode 100644 manage.py
-     create mode 100644 requirements.txt
-     create mode 100644 runtime.txt
-    
 
-## Trouver un nom à son application
 
-Nous allons rendre votre blog accessible en ligne à l'adresse `[nom de votre blog].herokuapp.com`. Pour cela, il va être nécessaire de choisir un nom qui n'est pas encore pris. Ce nom n'a pas besoin d'être en lien avec l'application `blog` de Django, `mysite`, où n'importe quoi d'autre que nous avons pu créer jusqu'à présent. Vous pouvez choisir le nom que vous voulez, tant qu'il est conforme aux règles strictes définies par Heroku: pas de majuscules, pas d'accents, pas de nombres ni de tirets (`-`).
+## Pousser notre code sur GitHub
 
-Si vous ne savez pas quoi prendre, pourquoi ne pas chercher quelque chose en rapport avec votre nom ou votre surnom? Une fois que vous avez choisi, lancez cette commande en remplaçant `djangogirlsblog` par le nom de votre application:
+Allez sur [GitHub.com][1] et créez vous un nouveau compte gratuit. <!-- (Si vous l'avez déjà fait pendant la préparation de l'atelier, c'est parfait !) -->
 
-    $ heroku create djangogirlsblog
-    
+ [1]: http://www.github.com/
 
-> **Note**: N'oubliez pas de remplacer `djangogirlsblog` avec le nom de votre application sur Heroku.
+Ensuite, créez un nouveau dépôt (repository) et appelez le "mon-premier-blog". Laisse la case "initialiser avec un LisezMoi" (**initialise with a README**) décochée, laissez l'option .gitignore vierge (on a fait ça manuellement) et laissez la licence sur aucune.
 
-Si jamais vous n'avez vraiment pas d'idées de nom, vous pouvez lancer cette commande:
+<img src="images/new_github_repo.png" />
 
-    $ heroku create
-    
+> **Note** Le nom `mon-premier-blog` est important — vous pourriez choisir quelque chose d'autre, cependant il va apparaître à des nombreuses reprises dans les instructions à venir et vous devriez le substituer à chaque fois. C'est sans doute plus simple de rester sur `mon-premier-blog`.
 
-Heroku choisira alors un nom pour vous. Ce sera probablement quelque chose de l'ordre de `enigmatic-cove-2527`).
+À l'écran suivant, vous disposerez de l'URL de clonage de votre dépôt. Choisissez la version "HTTPS", copiez-la, et on la collera dans la console d'ici peu :
 
-Si jamais vous avez envie de changer le nom de votre application Heroku, vous pouvez le faire facilement et quand vous voulez en tapant cette commande (n'oubliez pas de remplacer `the-new-name` par le nouveau nom que vous avez choisi):
+<img src="images/github_get_repo_url_screenshot.png" />
 
-    $ heroku apps:rename the-new-name
-    
+Maintenant, on doit rattacher le dépôt Git sur votre ordinateur à celui sur GitHub.
 
-> **Note**: N'oubliez pas que lorsque vous aurez changer le nom de votre application, elle ne sera plus disponible à l'ancienne adresse, mais à `[the new name].herokuapp.com`.
+Tapez ce qui suit dans votre console (remplacez `<votre-nom-d'utilisateur-GitHub>` par le nom d'utilisateur que vous avez entré lors de la création de votre compte GitHub, mais sans les chevrons) :
 
-## Déployer sur Heroku!
+    $ git remote add origin https://github.com/<votre-nom-d'utilisateur-GitHub>/mon-premier-blog.git
+    $ git push -u origin master
 
-Nous venons de consacrer énormément de temps à configurer et à installer des choses mais rassurez vous, vous n'avez besoin de faire tout cela qu'une seule fois! Maintenant, nous allons enfin pouvoir passer au déploiement!
+Entrez votre nom d'utilisateur et mot de passe GitHub et vous devriez voir quelque chose qui ressemble à ça :
 
-Lorsque vous lancez `heroku create`, Heroku est alors ajouté à la liste des repository distants. Par conséquent, nous n'avons plus qu'à faire un simple git push pour déployer notre application:
+    Username for 'https://github.com': DjangoGirls
+    Password for 'https://DjangoGirls@github.com':
+    Counting objects: 6, done.
+    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/DjangoGirls/mon-premier-blog.git
+     * [new branch]      master -> master
+    Branch master set up to track remote branch master from origin.
 
-    $ git push heroku master
-    
+Votre code est désormais sur GitHub. Allez voir ! Vous verrez qu'il est bien entouré — [Django][1], le [Tutoriel Django Girls][2], et bien d'autres très bon projets open source hébergent aussi leur code sur GitHub :)
 
-> **Note**: il est probable que cela produise *énormément* d'output (sortie) la première fois que vous lancez cette commande car Heroku va installer et compiler psycopg. Pour savoir si ça a marché, vous allez voir apparaitre `https://yourapplicationname.herokuapp.com/ deployed to Heroku` vers la fin de l'output.
+  [1]: https://github.com/django/django
+  [2]: https://github.com/DjangoGirls/tutorial
 
-## Consulter son application
+# Mettre en place notre blog sur PythonAnywhere
 
-Tout ce que vous venez de faire vous a permis de déployer votre code sur Heroku. Vous avez aussi spécifié le type de processus dans le fichier `Procfile`: rappelez vous, nous avons choisi le processus de type `web` tout à l'heure. Maintenant, nous pouvons dire à Heroku de lancer ce `processus web`.
+> **Note** Il se peut que vous ayez déjà créer un compte PythonAnywhere au cours des étapes précédentes — si c'est le cas, inutile de le refaire.
 
-Pour cela, tapez la commande suivante:
+{% include "/deploy/signup_pythonanywhere.md" %}
 
-    $ heroku ps:scale web=1
-    
+## Récupérer notre code sur PythonAnywhere
 
-Cela dit à Heroku de lancer une seule instance de notre processus `web`. Comme l'application blog que nous avons créée est relativement simple, nous n'avons pas besoin d'énormément de ressources. Un seul processus devrait faire l'affaire. Il est possible de demander à Heroku de lancer plusieurs processus (appelés "Dynos" sur Heroku) mais cette option est payante.
+Une fois inscrit·e sur PythonAnywhere, vous serez amené·e vers votre tableau de bord ou page "Consoles". Choisissez l'option de démarrer une console "Bash" — c'est la version PythonAnywhere d'une console, juste comme celle sur votre ordinateur.
 
-Maintenant, vous pouvez aller sur votre app dans votre navigateur à l'aide de la commande `heroku open`.
+> **Note** PythonAnywhere est basé sur Linux donc si vous êtes sous Windows, la console sera légèrement différente de celle sur votre ordinateur.
 
-    $ heroku open
-    
+Récupérons notre code depuis GitHub et sur PythonAnywhere en créant un "clone" de notre dépôt. Tapez les instructions suivantes dans la console sur PythonAnywhere (n'oubliez pas d'utiliser votre nom d'utilisateur GitHub à la place de `<votre-nom-d'utilisateur-GitHub>`) :
 
-> **Note**: vous allez rencontrer une page d'erreur! Pas de soucis, nous allons y venir dans un instant.
+    $ git clone https://github.com/<votre-nom-d'utilisateur-GitHub>/mon-premier-blog.git
 
-Cette commande va ouvrir une url du type [https://djangogirlsblog.herokuapp.com/]() dans votre navigateur qui affichera une page d'erreur. Nous n'avons, pour l'instant, que créé l'interface d'administration de notre site. Essayez d'ajouter `admin/` à la fin de l'url ([https://djangogirlsblog.herokuapp.com/admin/]()). Cette page doit normalement fonctionner :)
+Ceci créera une copie de votre code sur PythonAnywhere. Vérifiez en tapant `tree mon-premier-blog`:
 
-L'erreur que vous venez de voir est liée au fait que lorsque nous avons déployé notre application sur Heroku, nous avons créé une base de données vide. Pour cela, nous avons besoin de lancer la commande ~~~ migrate~~~ comme lorsque nous avons démarré notre projet pour la première fois. Cela permettra de générer notre base de données correctement:
+    $ tree mon-premier-blog
+    mon-premier-blog/
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── migrations
+    │   │   ├── 0001_initial.py
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── manage.py
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
 
-    $ heroku run python manage.py migrate
-    
-    $ heroku run python manage.py createsuperuser
-    
 
-Normalement, votre site web devrait maintenant pouvoir se charger dans votre navigateur! Félicitations! :)
+### Créer un environnement virtuel sur PythonAnywhere
+
+Comme sur votre propre ordinateur, vous pouvez créer un environnement virtuel sur PythonAnywhere. Dans la console Bash, tapez :
+
+```
+$ cd mon-premier-blog
+
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(mvenv) $  pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
+```
+
+
+> **Note** L'étape `pip install` peut prendre quelques minutes. Patience, patience ! Toutefois, si elle prend plus de 5 minutes, quelque chose ne va pas. Demandez à votre coach.
+
+
+### Collecter les fichiers statiques.
+
+Vous vous demandiez ce qu'était ce "whitenoise" ?  C'est un outil pour servir les fichiers dit "fichiers statiques". Les fichiers statiques sont les fichiers qui ne changent pas régulièrement ou n'exécutent pas de code de programmation, tels que les fichiers HTML et CSS. Ils fonctionnent différemment sur les serveurs par comparaison à notre propre ordinateur et il nous faut un outil tel que "whitenoise" pour les servir.
+
+On en découvrira un peu plus sur les fichiers statiques plus tard dans ce tutoriel, lorsqu'on modifiera le CSS pour notre site.
+
+Pour l'instant, on a juste besoin de lancer une commande supplémentaire appelée `collectstatic`, sur le serveur. Ceci indique à Django de collecter tous les fichiers statiques dont il a besoin sur le serveur. Pour l'instant, c'est essentiellement des fichiers servant à rendre le site administrateur joli.
+
+    (mvenv) $ python manage.py collectstatic
+
+    You have requested to collect static files at the destination
+    location as specified in your settings:
+
+        /home/edith/mon-premier-blog/static
+
+    This will overwrite existing files!
+    Are you sure you want to do this?
+
+    Type 'yes' to continue, or 'no' to cancel: yes
+
+Tapez "yes", et c'est parti ! Est-ce que c'est pas génial de faire imprimer des pages et des pages de texte impénétrable ? Je fais toujours des petits bruits pour aller avec. Brp, brp brp...
+
+    Copying '/home/edith/mon-premier-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/mon-premier-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    [...]
+    Copying '/home/edith/mon-premier-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/mon-premier-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    62 static files copied to '/home/edith/mon-premier-blog/static'.
+
+
+### Créer la base de données sur PythonAnywhere
+
+Voilà encore quelque chose de différent entre votre ordinateur et le serveur : il utilise une base de données différente. Comme ça les comptes utilisateurs et les posts peuvent être différents sur le serveur et sur votre ordinateur.
+
+On peut initialiser la base de données sur le serveur de la même manière qu'on l'avait fait sur votre propre ordinateur, à l'aide de `migrate` et de `createsuperuser` :
+
+
+    (mvenv) $ python manage.py migrate
+    Operations to perform:
+    [...]
+      Applying sessions.0001_initial... OK
+
+
+    (mvenv) $ python manage.py createsuperuser
+
+
+## Publier notre blog comme qu'appli web
+
+Désormais notre code se trouve sur PythonAnywhere, notre environnement virtuel est prêt, les fichiers statiques sont collectés et la base de données est initialisée. On est prêt à le publier comme appli web !
+
+Retourner au tableau de bord PythonAnywhere and cliquant sur son logo et allez dans l'onglet **Web**. Enfin, cliquez sur "Ajouter une nouvelle appli web" (**Add a new web app**).
+
+Après avoir confirmé votre nom de domaine, choisissez la configuration manuelle (**manual configuration**) (N.B. *pas* l'option "Django") dans la boîte de dialogue. Ensuite, choisissez **Python 3.4** et cliquez sur Suivant (**Next**) pour terminer.
+
+> **Note** Assurez-vous de bien choisir l'option "Manual configuration", pas la "Django". On est trop cool pour l'installation Django par défaut de PythonAnywhere ;-)
+
+
+### Régler l'environnement virtuel
+
+Vous serez amené·e à l'interface PythonAnywhere de configuration de votre appli web, c'est là que vous devrez vous rendre lorsque vous voudrez appliquer des changements à l'appli sur le serveur.
+
+
+<img src="images/pythonanywhere_web_tab_virtualenv.png" />
+
+Dans la section "Virtualenv", cliquez sur le texte rouge qui lit "Entrez le chemin vers un environnement virtuel" (**Enter the path to a virtualenv**), et entrez :  `/home/<votre-nom-d'utilisateur>/mon-premier-blog/myvenv/`. Cochez la case bleue pour enregistrer le chemin avant de passer à la suite.
+
+> **Note** Remplacez votre nom d'utilisateur comme il se doit. Si vous vous trompez, PythonAnywhere vous affichera un petit avertissement.
+
+
+### Configurer le fichier WSGI
+
+Django fonctionne à l'aide du "protocole WSGI" (WSGI protocol), un standard pour servir des sites web en Python, ce que supporte PythonAnywhere. Afin que PythonAnywhere reconnaisse notre blog Django, il nous faut éditer un fichier de configuration WSGI.
+
+Cliquez sur le "fichier de configuration WSGI" (**WSGI configuration file**, dans la section "Code" près du haut de la page — il s'appelera quelque chose comme `/var/www/<votre-nom-d'utilisateur>_pythonanywhere_com_wsgi.py`), et vous serez amené·e vers un éditeur.
+
+Supprimez tout son contenu et remplacez le par quelque chose ressemblant à ça :
+
+```python
+import os
+import sys
+
+path = '/home/<votre-nom-d'utilisateur>/mon-premier-blog'  # utilisez votre nom d'utilisateur ici
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
+
+> **Note** N'oubliez pas de remplacer par votre nom d'utilisateur où il est indiqué `<votre-nom-d'utilisateur>`
+
+Le rôle de ce fichier est d'indiquer à PythonAnywhere où réside notre appli web et comment s'appelle le fichier de configuration Django. Il met aussi en place l'outil pour fichiers statiques "whitenoise".
+
+Cliquez sur "Enregistrer" (**Save**) et retournez dans l'onglet **Web**.
+
+Fini ! Cliquez sur le gros bouton vers "Recharger" (**Reload**) et vous pourrez visualiser votre application. Vous trouverez un lien vers cette-dernière en haut de la page.
+
+
+## Conseils de débogage
+
+Si vous rencontrez une erreur lorsque vous consultez votre site, le premier endroit où aller chercher des informations de débogage est dans votre "registre d'erreur" (**error log**). Vous trouverez un lien dans l'onglet [Web][1] de PythonAnywhere vous permettant d'y accéder. Regardez s'il y a des messages d'erreur ; les plus récents se trouvent à la fin. Les problèmes les plus courants comprennent :
+
+  [1]: https://www.pythonanywhere.com/web_app_setup/
+
+- Oublier une des étapes que l'on a réalisé dans la console : créer l'environnement virtuel, l'activer, y installer Django, lancer `collectstatic`, migrer la base de données.
+
+- Faire une erreur dans le chemin de l'environnement virtuel dans l'onglet Web — il y aura généralement un petit message d'erreur rouge s'il y a un problème.
+
+- Faire une erreur dans le fichier de configuration WSGI — est-ce que le chemin vers le dossier mon-premier-blog est correct ?
+
+- Avez-vous choisi la même version de Python pour votre environnement virtuel que pour votre appli web ? Les deux devraient être 3.4.
+
+- Vous trouverez des informations de débogage générales sur le [wiki PythonAnywhere][1] (en Anglais).
+
+  [1]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+
+Et souvenez vous, votre coach est là pour vous aider !
+
+
+# Vous êtes prêt·e !
+
+La page par défaut de votre site devrait désormais indiquer "Welcome to Django", comme il le fait sur votre ordinateur local. Essayez d'ajouter `/admin/` à la fin de l'URL, vous serez amené·e sur le site d'administration. Connectez-vous avec votre nom d'utilisateur et mot de passe, vous verrez que vous pouvez ajouter de nouveaux posts sur le serveur.
+
+
+Prenez le temps de vous faire un **ÉNORME** compliment ! Les déploiements de serveurs sont une des parties les plus délicates du développement web et il faut souvent plusieurs jours aux gens pour y arriver. Mais vous avez mis votre site en ligne, sur le véritable Internet, juste comme ça !

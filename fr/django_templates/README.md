@@ -70,7 +70,7 @@ Essayez-la dans votre template.
 
 ## Une dernière chose
 
-Ce serait génial si nous pouvions aller sur notre site web hébergé sur Heroku et voir toutes ces nouvelles fonctionnalités! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15:
+Ce serait génial si nous pouvions aller sur notre site web hébergé sur PythonAnywhere et voir toutes ces nouvelles fonctionnalités! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15:
 
 ```bash
 $ git status
@@ -80,8 +80,18 @@ $ git status
 ...
 $ git commit -m "Utilisation de template Django à la place de HTML statique"
 ...
-$ git push heroku master
+$ git push
 ```
+
+* Ensuite, dans une [console Bash PythonAnywhere](https://www.pythonanywhere.com/consoles/) :
+
+```
+$ cd mon-premier-blog
+$ git pull
+[...]
+```
+
+* Enfin, faites un saut sur l'[onglet Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur Recharger (**Reload**)
     
 
 Félicitations! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration? N'oubliez pas d'ajouter une date de publication! Ensuite, rafraîchissez votre page et regardez si votre post apparaît.

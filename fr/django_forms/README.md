@@ -327,7 +327,7 @@ Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas �
 
 ## Encore un petit effort: déployons!
 
-Ce serait génial si nous pouvions aller sur notre site web hébergé sur Heroku et voir toutes ces nouvelles fonctionnalités! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15:
+Ce serait génial si nous pouvions aller sur notre site web hébergé sur PythonAnywhere et voir toutes ces nouvelles fonctionnalités! Remontons nos manches et déployons encore une fois. Si vous ne vous souvenez plus de ce que fait chaque commande, consultez la fin du chapitre 15:
 
 ```bash
 $ git status
@@ -337,8 +337,21 @@ $ git status
 ...
 $ git commit -m "Ajout des vues qui permettent d'ajouter et éditer des blog posts directement sur le site"
 ...
-$ git push heroku master
+$ git push
 ```
+
+* Ensuite, dans une [console Bash PythonAnywhere](https://www.pythonanywhere.com/consoles/) :
+
+```
+$ cd mon-premier-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
+
+* Enfin, faites un saut sur l'[onglet Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur Recharger (**Reload**).
     
 
 Normalement, ça devrait suffire! Encore bravo :)
