@@ -38,7 +38,7 @@ Congratulations, you are are all set up and ready to go! If you still have some 
 
 * [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../intro_to_command_line/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
 * [What is Django?](../django/README.md)
 
