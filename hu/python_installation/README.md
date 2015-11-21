@@ -10,4 +10,4 @@ A Pythont a 80-as évek végén alkották meg, és a fő cél az volt, hogy ne c
 
 > **Megjegyzés** Ha már elvégezted az Installáció fejezetet, nem kell újra megtenned - ugorj a következő fejezetre!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}

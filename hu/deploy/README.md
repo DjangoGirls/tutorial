@@ -22,7 +22,7 @@ A Git egy "version control system" (VCS, magyarul verziókezelő rendszer), amit
 
 > **Megjegyzés** Ha már követted a korábbi telepítési utasításokat, ezt a pontot átugorhatod és kezdheted kialakítani a saját Git csomagtáradat!
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Készítsünk Git repository-t
 
@@ -129,7 +129,7 @@ A forráskódod most már fent van a GitHubon. Menj és nézd meg! Láthatod hog
 
 > **Megjegyzés** Valószínűleg már létrehoztál egy PythonAnywhere fiókot korábban a telepítés során - ha így van, ezt nem kell újból megtenned.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Forráskód letöltése a PythonAnywhere-be
 
