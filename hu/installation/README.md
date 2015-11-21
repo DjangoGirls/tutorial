@@ -14,19 +14,19 @@ A workshopon egy blogot fogsz elkészíteni. Ehhez el kell végezned néhány te
 
 # A Python telepítése
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Virtuális környezet létrehozása és a Django telepítése
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Kódszerkesztő telepítése
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # A Git telepítése
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # GitHub fiók létrehozása
 
@@ -34,7 +34,7 @@ Menj a [GitHub.com](http://www.github.com) oldalra, és hozz létre egy új, ing
 
 # PythonAnywhere felhasználó létrehozása
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Kezdheted az olvasást
 

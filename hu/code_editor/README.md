@@ -4,4 +4,4 @@ Nemsokára megírod a kód első sorát, itt az ideje letölteni egy kódszerkes
 
 > **Megjegyzés:** Lehet, hogy ezt már megtetted a Telepítés fejezet olvasása során - ha igen, ugorj előre a következő fejezetre!
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
