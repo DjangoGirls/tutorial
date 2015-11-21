@@ -20,7 +20,7 @@ Amikor beérkezik egy kérés (request) a szerverre, a Django kapja meg, ami meg
 
 Képzelj el egy postást egy levéllel. Ahogy halad az utcán, minden házszámot megnéz, és összehasonlítja a levélen lévővel. Ha megegyezik, bedobja a levelet a postaládába. Így működik az urlresolver!
 
-A *view* vagyis "nézet" rész az, ahol az érdekes dolgok történnek: itt nézhetünk bele adatbázisokba, hogy megkeressünk valamilyen információt. Talán a felhasználó meg szeretne változtatni valamilyen adatot? Mint egy levél, ami azt írja: "Kérlek, változtasd meg a munkám leírását." A *view* megnézi, hogy jogosult vagy-e erre a módosításra, aztán megváltoztatja a munka leírását, és visszaküld egy üzenetet: "Kész!". Aztán a *view* létrehoz egy választ, amit a Django elküld a felhasználó böngészőjének.
+A *view*, vagyis "nézet" rész az, ahol az érdekes dolgok történnek: itt nézhetünk bele adatbázisokba, hogy megkeressünk valamilyen információt. Talán a felhasználó meg szeretne változtatni valamilyen adatot? Mint egy levél, ami azt írja: "Kérlek, változtasd meg a munkám leírását." A *view* megnézi, hogy jogosult vagy-e erre a módosításra, aztán megváltoztatja a munka leírását, és visszaküld egy üzenetet: "Kész!". Aztán a *view* létrehoz egy választ, amit a Django elküld a felhasználó böngészőjének.
 
 Természetesen ez a leírást egy kicsit leegyszerűsítettünk, de még nem kell, hogy minden technikai részletet tudj. Elég, ha van egy általános elképzelésed.
 

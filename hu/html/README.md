@@ -39,12 +39,12 @@ Nincs több hiba! Ügyes vagy :) Azonban a weboldalad csak egy üres oldalt jele
 
 Add hozzá az alábbi sorokat a template fájlodhoz:
 
-    html
+```html
     <html>
         <p>Hi there!</p>
         <p>It works!</p>
     </html>
-    
+```    
 
 Szóval, hogy néz ki most a weboldalad? Kattints és nézd meg: http://127.0.0.1:8000/
 
@@ -69,7 +69,7 @@ A `<head>` elemet használjuk arra, hogy az oldal konfigurációs beállításai
 
 Például a weboldal title elemét rakhatjuk a `<head>`-be:
 
-    html
+```html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -79,7 +79,7 @@ Például a weboldal title elemét rakhatjuk a `<head>`-be:
             <p>It works!</p>
         </body>
     </html>
-    
+```
 
 Mentsd el a fájlt, és frissítsd az oldalt.
 
@@ -111,7 +111,7 @@ Most szórakozásképpen próbáld módosítani a template-edet! Itt van néhán
 
 Itt a példa egy teljes template-re:
 
-    html
+```html
     <html>
         <head>
             <title>Django Girls blog</title>
@@ -134,7 +134,7 @@ Itt a példa egy teljes template-re:
             </div>
         </body>
     </html>
-    
+```
 
 Három `div` elemet hoztunk létre.
 
@@ -159,31 +159,31 @@ Jó lenne lenne látni ezt az egészet élesben az interneten, ugye? Csináljunk
 
 Először nézzük meg, hogy milyen fájlok változtak a legutóbbi deploy óta (futtasd az alábbi parancsot a gépeden, ne PythonAnywhere-en):
 
-    $ git status
+```$ git status```
     
 
 A `djangogirls` mappában kell lenned, és a `git`-tel add hozzá az összes változtatást a könyvtáradon belül:
 
-    $ git add -A .
+```$ git add -A .```
     
 
 > **Megjegytés** `-A` (az "all" rövidítése) azt jelenti, hogy a `git` felismeri, ha fájlokat törölsz (alapból csak az új, és módosított fájlokat ismeri fel). Korábban már volt róla szó (a 3. fejezetben), hogy a `.` az aktuális mappát jelenti.
 
 Mielőtt továbbmegyünk ellenőrizzük, hogy a `git` mit szeretne feltölteni (zölddel jelennek meg azok a fájlok, amiket a `git` fel akar tölteni):
 
-    $ git status
+```$ git status```
     
 
 Már majdnem készen is vagyunk, de előtte el kell mentenünk a változtatásokat az előzményekbe. Egy "commit message"-et adunk meg, ahol leírjuk, hogy mit változtattunk. Akármit beírhatsz, de később hasznos lehet, ha valami olyat adsz meg, ami segít beazonosítani, hogy mit csináltál.
 
-    $ git commit -m "Changed the HTML for the site."
+```$ git commit -m "Changed the HTML for the site."```
     
 
 > **Megjegyzés** Győződj meg róla, hogy idézőjelet használsz a commit üzenetnél.
 
 Miután ezzel megvagy, töltsd fel (push) a változtatásaidat Github-ra:
 
-    $ git push
+```$ git push```
     
 
 ### Pullold az új kódot PythonAnywhere-re, és frissítsd az oldalt
@@ -192,12 +192,13 @@ Miután ezzel megvagy, töltsd fel (push) a változtatásaidat Github-ra:
 
  [5]: https://www.pythonanywhere.com/consoles/
 
-    $ cd ~/my-first-blog
+```$ cd ~/my-first-blog
     $ source myvenv/bin/activate
     (myvenv)$ git pull
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
+```
     
 
 A fájljaid már itt is vannak. Ha le akarod csekkolni, akkor menj át a **Files tab**-ra és nézd meg a kódodat PythonAnywhere-en.

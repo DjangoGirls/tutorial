@@ -8,7 +8,7 @@ Létezik egy `objektumorientált programozás` nevű fogalom a programozáson be
 
 Tehát mi az az objektum? Tulajdonságok és tevékenységek gyűjteménye. Furán hangozhat, de mindjárt mutatunk egy példát.
 
-Ha egy macskát szeretnék modellezni, létrehozunk egy `Cat` (macska) objektumot, aminek van néhány tulajdonsága: `color` (szín), `age` (életkor), `mood` (kedv -például jó, rossz, álmos ;)), és `owner` ) tulajdonos (aki egy `Person` (személy) objektum, és talán, ha kóbor macskáról van szó, ez a tulajdonság üres).
+Ha egy macskát szeretnék modellezni, létrehozunk egy `Cat` (macska) objektumot, aminek van néhány tulajdonsága: `color` (szín), `age` (életkor), `mood` (kedv -például jó, rossz, álmos ;)), és `owner` (tulajdonos - aki egy `Person` (személy) objektum, és talán, ha kóbor macskáról van szó, ez a tulajdonság üres).
 
 Aztán a `Cat`-hez tartozik néhány tevékenység: `purr` (dorombolás), `scratch` (karmolás), vagy `feed` (evés - ahol a macskának adunk egy kis macskaeledelt, vagyis `CatFood`-ot, ami egy külön objektum, saját tulajdonságokkal, mint például `taste` (íz)).
 
@@ -23,13 +23,13 @@ Aztán a `Cat`-hez tartozik néhány tevékenység: `purr` (dorombolás), `scrat
     feed(cat_food)
     
 
-Tehát az egésznek az az alapötlete, hogy a valós dolgokat kódban tulajdonságokkal (vagyis `object property`-kkel) és tevékenységekkel (vagyis `method`-okkal) írjuk le).
+Tehát az egésznek az az alapötlete, hogy a valós dolgokat kódban tulajdonságokkal (vagyis `object property`-kkel) és tevékenységekkel (vagyis `method`-okkal) írjuk le.
 
 Hogyan modellezzük a blogposztokat? Egy blogot szeretnénk fejleszteni, ugye?
 
 Erre a kérdésre keressük a választ: Mi egy blogposzt? Milyen tulajdonságai vannak?
 
-Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne tudni, hogy ki írta - vagyis szükségünk van egy szerzőre is. Végül tudni szeretnénk, mikor lett megírva és publikálva a poszt.
+Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne tudni, hogy ki írta - vagyis szükségünk van egy szerzőre is. Végül tudni szeretnénk, mikor lett megírva és közzétéve a poszt.
 
     Post
     --------
@@ -40,9 +40,9 @@ Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne 
     published_date
     
 
-Milyen dolgokat lehet csinálni egy blogbejegyzéssel? Jó lenne, ha lenne valamiféle `method`, ami publikálja a posztot, nem?
+Milyen dolgokat lehet csinálni egy blogbejegyzéssel? Jó lenne, ha lenne valamiféle `method`, ami közzéteszi a posztot, nem?
 
-Tehát szükségünk van egy `method` methodra.
+Tehát szükségünk van egy `publish` methodra.
 
 Most, hogy tudjuk, mit szeretnénk elérni, kezdjük el modellezni Django-ban!
 
@@ -134,7 +134,7 @@ Azok a sorok, amik úgy kezdődnek, hogy `from` vagy `import`, más fájlokban l
 *   a `Post` a modellünk neve. Más nevet is adhatnál neki (de kerüld el a speciális karaktereket - pl ékezetes karakterek - és a szóközt). Az osztályok (classok) nevét mindig nagybetűvel kezdjük.
 *   a `models.Model` azt jelenti, hogy a Post egy Django Model, így a Django tudni fogja, hogy el kell menteni az adatbázisba.
 
-Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:`title` (cím), `text` (szöveg), `created_date` (létrehozás dátuma), `published_date` (publikálás dátuma) és `author` (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog tartozni, például egy User-hez (felhasználó)?).
+Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:`title` (cím), `text` (szöveg), `created_date` (létrehozás dátuma), `published_date` (közzététel dátuma) és `author` (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog tartozni, például egy User-hez (felhasználó)?).
 
 *   `models.CharField` - így definiálsz olyan szövegmezőt, ami meghatározott számú karaktert tartalmazhat.
 *   `models.TextField` - ez hosszú szövegekhez van, korlátozás nélkül. Pont jó egy blogbejegyzéshez, igaz?
@@ -143,7 +143,7 @@ Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltü
 
 Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
-És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (publikálás) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
+És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (közzététel) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
 
 A methodok gyakran `return`-ölnek (visszaadnak) valamit. Erre van is egy példa a `__str__` methodban. Ebben az esetben amikor meghívjuk a `__str__()`-t, egy szöveget kapunk vissza (**string**), ami a Post címe.
 

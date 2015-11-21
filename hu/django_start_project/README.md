@@ -128,7 +128,7 @@ Most nincs más dolgod, mint ellenőrizni, hogy fut-e a weboldalad. Nyisd meg a 
 
 A webszerver átvette az irányítást a parancssorod fölött, egészen addig, amíg le nem állítod. Hogy újabb parancsokat írhass be, amíg fut a szerver, új terminálablakot kell nyitnod, és újraaktiválni a virtuális környezetedet. Hogy leállítsd a szervert, lépj vissza az ablakba, ahol fut, és nyomd meg a CTRL + C (Control és C billentyű egyszerre) billentyűkombinációt. (Windowson lehet, hogy a Ctrl+Break fog működni).
 
-Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver segítségével! Nem fantasztikus?
+Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver segítségével! Hát nem fantasztikus?
 
 ![It worked!][3]
 

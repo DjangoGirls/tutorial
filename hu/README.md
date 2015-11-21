@@ -1,10 +1,11 @@
 # Django Girls Tutorial
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Ez az anyag Creative Commons Attribution-ShareAlike 4.0 International License jogvédelme alatt áll. A licenc megtekintéséhez látogass el ide: http://creativecommons.org/licenses/by-sa/4.0/
+
+## Fordítás
+A tutorial magyar fordítását egy csapat lelkes önkéntes készítette el: Czapári Dóri, Hanna Kollo, Erő Julcsi, Bónis Balázs, Kádár Szilvi, Szelle Erika, Téglássy Anna, Szabó Adrienn, Nádudvari György. Köszönjük nekik! <3
 
 ## Bevezetés
 
@@ -26,7 +27,7 @@ Körülbelül így fog kinézni:
 
  [2]: images/application.png
 
-> Ha egyedül dolgozol a tutorialon és nincs melletted coach, aki segíthetne, ha bármi probléma felmerül, használd a chatet, amit neked tartunk fenn: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. Megkértük a segítőinket és korábbi résztvevőket, hogy legyenek fent, ahogy idejük engedi, és segítsenek másoknak a tutorialban. Kérdezz tőlük bátran!
+> Ha egyedül dolgozol a tutorialon és nincs melletted coach, aki segíthetne, ha bármi probléma felmerül, használd a chatet, amit neked tartunk fenn: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Megkértük a segítőinket és korábbi résztvevőket, hogy legyenek fent, ahogy idejük engedi, és segítsenek másoknak a tutorialban. Kérdezz tőlük bátran!
 
 Oké, [kezdjük az elejénél...][3]
 

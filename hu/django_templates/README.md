@@ -14,9 +14,9 @@ Az előző fejezetben hozzáadtuk a template-hez a bejegyzéseink listáját a `
 
 Ahhoz, hogy kiírjunk egy változót a Django template-ben, dupla kapcsos zárójelet használunk, benne a változó nevével, mint itt:
 
-    html
+```html
     {{ posts }}
-    
+```    
 
 Próbáld ki a `blog/templates/blog/post_list.html` template-ben. Cserélj ki mindent a második `<div>` -től a harmadikig a következővel: `{{ posts }}`. Mentsd el a fájlt és frissítsd az oldalt, hogy lásd az eredményt:
 
@@ -31,11 +31,11 @@ Ahogy látod, ez minden, amink van:
 
 Ez azt jelenti, hogy a Django objektumok listájaként értelmezi. Emlékszel a **Bevezetés a Python-ba** című fejezetből, hogy hogyan jelenítünk meg listákat? Igen, for loop-okkal! Egy Django template-ben ezt így tudod megtenni:
 
-    html
+```html
     {% for post in posts %}
         {{ post }}
     {% endfor %}
-    
+```   
 
 Próbáld ki a template-edben.
 
@@ -45,7 +45,7 @@ Próbáld ki a template-edben.
 
 És működik! De azt akarjuk, hogy úgy jelenjen meg, mint a statikus bejegyzések, amit korábban készítettünk el a **Bevezetés a HTML-be** című fejezetben. A HTML-t és a template tageket használhatod együtt. A `body` így fog kinézni:
 
-    html
+```html
     <div>
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
@@ -57,7 +57,7 @@ Próbáld ki a template-edben.
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```    
 
 {% raw %} Minden, amit a `{% for %}` és `{% endfor %}` közé írsz, a lista minden egyes elemére meg fog ismétlődni. Frissítsd az oldalt:{% endraw %}
 
@@ -73,7 +73,7 @@ Jó lenne látni, hogy a weblapod még mindig működik az Interneten, nem igaz?
 
 *   Először tedd fel a kódot a Github-ra
 
-    $ git status
+```$ git status
     [...]
     $ git add -A .
     $ git status
@@ -81,16 +81,16 @@ Jó lenne látni, hogy a weblapod még mindig működik az Interneten, nem igaz?
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-    
+```    
 
 *   Ezután a [PythonAnywhere][4]-en menj a **Bash console**-ba (vagy indíts újat), és futtasd le:
 
  [4]: https://www.pythonanywhere.com/consoles/
 
-    $ cd my-first-blog
+```$ cd my-first-blog
     $ git pull
     [...]
-    
+```    
 
 *   Végül, a [Web][5] menüpontban klikkelj a **Reload**-ra. A frissítések ott vannak!
 

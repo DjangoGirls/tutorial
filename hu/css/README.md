@@ -18,10 +18,10 @@ Eredetileg a Twitternél dolgozó programozók készítették, de most önkénte
 
 Hogy telepítsd a Bootstrapet, add hozzá a következő a sorokat a `<head>` részhez a `.html` fájlodban (`blog/templates/blog/post_list.html`):
 
-    html
+```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    
+```    
 
 Ezzel nem adsz hozzá új fájlokat a projektedhez, csak az Interneten létező fájlokra hivatkozol. Nyisd meg újra a weboldaladat, és frissítsd! Itt is van!
 
@@ -73,19 +73,19 @@ De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a header 
 
 A `blog/static/css/blog.css` fájlba írd bele a következő kódot:
 
-    css
+```css
     h1 a {
       color: #FCA205;
     }
-    
+```    
 
 A `h1 a` egy CSS szelektor. Ez azt jelenti, hogy alkalmazzuk a stílusunkat minden olyan `a` elemre, ami egy `h1` elemen belül van (például, mikor valami ilyesmi van a kódban: `<h1><a href="">link</a></h1>`). Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Természetesen nyugodtan használd a saját színedet itt!
 
 A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. Az egyes elemek beazonosíthatók az elemek nevei alapján (pl. `a`, `h1`, `body`), és a `class` vagy az `id` attribútumaik alapján. A class és az id olyan nevek, amelyeket te adhatsz meg az elemeknek. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. A következő tag például beazonosítható akár az "`a`" tag névvel, az `external_link` class-szal vagy a `link_to_wiki_page` id-val:
 
-    html
+```html
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-    
+```    
 
 Olvass utána a [CSS szelektorokról a w3schools oldalán][4].
 
@@ -93,21 +93,21 @@ Olvass utána a [CSS szelektorokról a w3schools oldalán][4].
 
 Mindezek után közölnünk kell a HTML fájlunkkal is, hogy hozzáadtunk pár CSS-t. Nyisd meg a `blog/templates/blog/post_list.html` fájlt és add a következő sort a fájl legelejére:
 
-    html
+```html
     {% load staticfiles %}
-    
+```    
 
 Itt csak betöltünk pár statikus fájlt :). Ezután a `<head>` és a `</head>` tagek közé, a Bootstrap CSS fájlok linkjei után (a böngésző olyan sorrendben olvassa az egyes fájlokat, amilyenben követik egymást, tehát a mi fájlunkban lévő kód lehet, hogy felülír pár kódot a Bootstrap fájlban), a következő sort add:
 
-    html
+```html
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    
+```     
 
 Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
 
 Így kellene kinéznie a fájlodnak:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -130,6 +130,7 @@ Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
             {% endfor %}
         </body>
     </html>
+```
     
 
 Oké, mentsd el a fájlt és frissítsd be az oldalt!
@@ -140,11 +141,11 @@ Oké, mentsd el a fájlt és frissítsd be az oldalt!
 
 Szép munka! Lehet, hogy jó lenne adni egy kis "teret" a weboldalunknak és növelni a bal oldali margót. Próbáljuk meg!
 
-    css
+```css
     body {
         padding-left: 15px;
     }
-    
+```    
 
 Írd hozzá a CSS fájlodhoz, mentsd el és lássuk, működik-e!
 
@@ -154,20 +155,20 @@ Szép munka! Lehet, hogy jó lenne adni egy kis "teret" a weboldalunknak és nö
 
 Lehet, hogy testre szabhatnánk a betű stílusát a header-ünkben. A következő sort másold bele a `<head>`-be a `blog/templates/blog/post_list.html` fájlon belül:
 
-    html
+```html
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    
+```    
 
 Ez a sor beimportál egy *Lobster* nevű betűtípust a Google Fonts-ból (https://www.google.com/fonts).
 
 Most add hozzá a `font-family: 'Lobster';` sort a `blog/static/css/blog.css` fájlodban, a `h1 a` stílusát meghatározó blokkhoz (ez a `{` kapcsos zárójel `}` közötti kód) és frissítsd az oldalt:
 
-    css
+```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
     }
-    
+```
 
 ![14.3 ábra][7]
 
@@ -179,25 +180,25 @@ Ahogy fentebb említettük, a CSS-ben van egy "class" nevű fogalom, ami alapvet
 
 Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` nevű class-t a `div`-edhez, amelyik a header-t tartalmazza, akárcsak így:
 
-    html
+```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-    
+``` 
 
 És most adj egy `post` class-t a `div`-hez, ami a blog postokat tartalmazza.
 
-    html
+```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
-    
+```
 
 Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. Rengeteg szuper tutorial és magyarázat található a weben a CSS-ről, ami segít megérteni a következő kódot. Most csak másold ki és illeszd be a `blog/static/css/blog.css` fájlodba:
 
-    css
+```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -245,11 +246,11 @@ Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal ke
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
-    
+```
 
 Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post" attribútummal. Cseréld le ezt:
 
-    html
+```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -257,11 +258,11 @@ Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post"
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```
 
 a `blog/templates/blog/post_list.html` fájlban ezzel:
 
-    html
+```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -277,7 +278,7 @@ a `blog/templates/blog/post_list.html` fájlban ezzel:
             </div>
         </div>
     </div>
-    
+```
 
 Mentsd el a fájlokat és frissítsd az oldalad.
 
