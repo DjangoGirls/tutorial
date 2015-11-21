@@ -1,6 +1,7 @@
 * [English](en)
 * [Polski](pl)
 * [Українська](uk)
+* [简体中文](zh)
 * [Español (beta)](es)
 * [Français (beta)](fr)
 * [Português-brasileiro (beta)](pt/)
