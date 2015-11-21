@@ -14,19 +14,19 @@
 
 # 安装Python
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # 配置 virtualenv 与安装 Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # 安装一个代码编辑器
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # 安装 Git
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # 创建一个 Github 账户
 
@@ -34,7 +34,7 @@
 
 # 创建一个 PythonAnywhere 帐户
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # 开始阅读
 

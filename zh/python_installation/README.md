@@ -10,4 +10,4 @@ Python 起源于 1980 年代后期，该语言的重要目标是源代码的人�
 
 > 需要说明的是，如果你已经熟悉Python的安装步骤，那你就无需看这章，直接跳到下一章好了。
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
