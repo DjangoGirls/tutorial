@@ -100,7 +100,6 @@ A `Model` nevű objektumokat a `blog/models.py` fájlban definiáljuk - tehát i
 
 Nyisd meg a `blog/models.py`-t, törölj ki mindent, és ezt a kódot írd bele:
 
-    python
     from django.db import models
     from django.utils import timezone
     
