@@ -51,24 +51,24 @@ Most ne foglalkozzunk a többi fájllal, mert azokat nem fogjuk módosítani. Az
 
 Változtassunk meg néhány dolgot a `mysite/settings.py` fájlban. Nyisd meg a fájlt a kódszerkesztővel, amit korábban telepítettél!
 
-Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg a [wikipedia időzóna listát][2], és másold ki az időzónádat (TZ, time zone). (például `Europe/Berlin` )
+Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg a [wikipedia időzóna listát][2], és másold ki az időzónádat (TZ, time zone). (például `Europe/Budapest` )
 
  [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Keresd meg a settings.py azt a sort, ami így keződik: `TIME_ZONE`, és írd át, hogy a saját időzónádat használja:
 
-    python
-    TIME_ZONE = 'Europe/Berlin'
-    
+```python
+    TIME_ZONE = 'Europe/Budapest'
+```
 
-Az "Europe/Berlin"-t változtasd meg kedved szerint.
+Az "Europe/Budapest"-et változtasd meg kedved szerint.
 
 Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elérési útvonalat (később mindent megtudhatsz a statikus fájlokról és a CSS-ről). Menj a fájl *végére*, és a `STATIC_URL` bejegyzés alatt adj hozzá egy következő bejegyzést `STATIC_ROOT` névvel:
 
-    python
+```python
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    
+```
 
 ## Adatbázis létrehozása
 
@@ -76,14 +76,14 @@ Sok különféle adatbázis-szoftver létezik, ami adatokat tud tárolni a webol
 
 Ez már be van állítva a `mysite/settings.py` fájlodban:
 
-    python
+```python
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-    
+```
 
 Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot a konzolban: `python manage.py migrate` (fontos, hogy a `djangogirls` könyvtárban legyél, ami tartalmazza a `djangogirls` fájlt). Ha minden jól megy, valami ilyesmit kell látnod:
 
