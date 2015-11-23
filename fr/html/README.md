@@ -150,7 +150,7 @@ Ce qu'on aimerait pouvoir maintenant, c'est afficher les posts que nous avons cr
 
 ## Encore une chose!
 
-Ce serait bien de savoir si notre site web sera toujours capable de fonctionner correctement une fois sur Heroku. Essayons de le déployer à nouveau.
+Ce serait bien de savoir si notre site web sera toujours capable de fonctionner correctement une fois sur PythonAnywhere. Essayons de le déployer à nouveau.
 
 Tout d'abord, regardons quels fichiers ont été modifiés depuis notre dernier déploiement:
 
@@ -176,9 +176,26 @@ On y est presque: nous devons maintenant lui dire de sauvegarder ces changements
 
 > **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
-Une fois que vous avez terminé, vous pouvez enfin uploader (pusher) vos modifications sur Heroku:
+Une fois que vous avez terminé, vous pouvez enfin uploader (pusher) vos modifications sur GitHub :
 
-    git push heroku master
-    
+    git push
+
+### Récupérer votre nouveau code sur PythonAnywhere, et rechargez votre appli web
+
+* Ouvrez les [console PythonAnywhere](https://www.pythonanywhere.com/consoles/) et rendez vous dans votre **console Bash** (ou créez en une nouvelle). Ensuite, lancez :
+
+```
+$ cd ~/mon-premier-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
+
+Et observez votre code être téléchargé. Si vous voulez vous assurer qu'il est arrivé, vous pour vous rendre dans l'onglet fichier (**Files**) et visionner votre code sur PythonAnywhere.
+
+
+* Enfin, faites un saut sur l'[onglet Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur Recharger (**Reload**).
 
 Normalement, ça devrait marcher! Une fois qu'Heroku a terminé, vous pouvez utiliser votre navigateur pour aller sur la page de votre site et la rafraîchir. Normalement, vous devriez constater du changement!
