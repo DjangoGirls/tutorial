@@ -82,17 +82,17 @@ Azt fogod látni, hogy egy új `blog` könyvtár keletkezett, és már most van 
 
 Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A `mysite/settings.py` tehetjük meg. Keresd meg az `INSTALLED_APPS` részt, és adj hozzá egy sort a `)` fölött, amiben ez áll: `'blog'`. Így kell kinéznie ennek a résznek:
 
-    python
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
-    
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+```
 
 ### Hozzuk létre a blogposzt modelljét
 
@@ -100,27 +100,27 @@ A `Model` nevű objektumokat a `blog/models.py` fájlban definiáljuk - tehát i
 
 Nyisd meg a `blog/models.py`-t, törölj ki mindent, és ezt a kódot írd bele:
 
-    python
-    from django.db import models
-    from django.utils import timezone
-    
-    
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
-    
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.title
-    
+```python
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
 
 > Jól figyelj, hogy mindenképp két underscore (alulvonás) karaktert (`_`) használj a `str` mindkét oldalán. Ez a jelölés gyakran előfordul a Pythonban, és néha "dunder"-nek hívjuk (a "double underscore" - dupla alulvonás rövidítése).
 

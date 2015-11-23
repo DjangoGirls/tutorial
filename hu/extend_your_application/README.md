@@ -13,26 +13,26 @@ Már van egy `Post` modellünk, úgyhogy nem kell hozzáadnunk semmit a `models.
 Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.html` fájlhoz. Eddig így kell kinéznie:
 
 ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
 ```
     
 
 {% raw %}Szükségünk van egy linkre a bejegyzések címei és a bejegyzések részletes oldala között. Cseréljük ki a `<h1><a href="">{{ post.title }}</a></h1>` sort úgy, hogy a bejegyzés részletes oldalára vezet: {% endraw %}
 
 ```html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
 {% raw %}Itt az ideje elmagyarázni a rejtélyes `{% url 'post_detail' pk=post.pk %}` részt. Ahogy gyaníthattad, a `{% %}` jelölés azt jelenti, hogy Django template tag-eket használunk. Ezúttal egy olyat, ami létrehoz egy URL-t nekünk!{% endraw %}
@@ -54,13 +54,13 @@ Az első bejegyzésünk részleteit a kövekező **URL** címen akarjuk megjelen
 Hozzunk létre egy URL-t a `blog/urls.py` fájlban, ami egy `post_detail` nevű *view*-ra mutat -- ez majd egy egész blogbejegyzést jelenít meg. Add hozzá a `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` sort a `blog/urls.py` fájlhoz. Így kell kinéznie a fájlnak:
 
 ```python
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-    ]
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+]
 ```
 
 Ez a rész `^post/(?P<pk>[0-9]+)/$` elég ijesztően néz ki, de ne aggódj,elmagyarázzuk: - `^`-vel kezdődik -- "eleje" - `post/` azt jelenti, hogy az eleje után az URL-nek tartalmaznia kell ezt: **post** és **/**. Eddig jó. - `(?P<pk>[0-9]+)` - ez a rész trükkösebb. Ez azt jelenti, a Django fogja, amit ideraksz, és átirányítja egy nézethez egy `pk` nevű változóként. `[0-9]` azt közli, hogy ez csak egy számjegy lehet, betű nem (tehát minden 0 és 9 között). `+` azt jelenti, hogy egy vagy több számjegynek kell lennie. Tehát `http://127.0.0.1:8000/post//` nem érvényes, de `http://127.0.0.1:8000/post/1234567890/` teljesen jó! - `/` - kell még egy **/** - `$` - "vége"!
@@ -135,19 +135,19 @@ Létrehozunk egy fájlt a `blog/templates/blog` könyvtárban, és elnevezzük: 
 Ez fog történni:
 
 ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
 ```
 
 Itt megint a `base.html`-t bővítjük ki. A `content` blokkban meg szeretnénk jeleníteni a bejegyzés címét, szövegét és a megjelenési idejét (published_date) - ha van. De pár fontos dolgot tisztáznunk kell még, igaz?

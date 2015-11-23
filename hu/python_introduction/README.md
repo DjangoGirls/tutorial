@@ -463,9 +463,9 @@ Egy előző részben már kiválasztottuk a kedvenc [kódszerkesztő][2]nket. Mo
 
  [2]: ../code_editor/README.md
 
-    python
+```python
     print('Hello, Django girls!')
-    
+```
 
 > **Megj.** Vegyük észre a kód editorok legnagyszerűbb tulajdonságát: a színeket! A Python konzolban minden egyszínű volt, most a `print` függvény más színű, mint a string. Ezt úgy hívják: "syntax highlighting" (szintaxis-kiemelés), és kódoláshoz nagyon hasznos. A kód színe mindenféle utalásokat hordoz magában, pl. egy lezáratlan string vagy egy elírás egy kulcsszó nevében (pl. a `def` a függvényeknél, amint látni fogjuk mindjárt). Ez az egyik oka annak, hogy kódszerkesztőt használuk :)
 
@@ -508,9 +508,9 @@ Sokszor előfordul a programozásban, hogy egyes kódrészleteknek csak akkor ke
 
 Cseréld ki a **python_intro.py** fájlban lévő kódot erre:
 
-    python
+```python
     if 3 > 2:
-    
+```
 
 Ha ezt elmented és lefuttatod, ezt a hibaüzenetet fogod látni:
 
@@ -522,10 +522,10 @@ Ha ezt elmented és lefuttatod, ezt a hibaüzenetet fogod látni:
 
 A Python arra számít, hogy további utasításokat kap arra az esetre, ha a `3 > 2` teljesül, vagyis `True` lesz. Vegyük rá a Pythont, hogy kiírja: "It works!" ("Működik!"). Változtasd meg erre a **python_intro.py** fájlban lévő kódot:
 
-    python
+```python
     if 3 > 2:
         print('It works!')
-    
+```
 
 Megfigyelted, hogy a következő sort 4 szóközzel indentáltuk? Erre azért van szükség, hogy a Python tudja, melyik kódrészletet kell lefuttatnia, ha a feltétel teljesül. Egy szóközt is használhatnál, de szinte az összes Python programozó 4 szóközt használ, hogy rendezetten nézzen ki a kód. Egy `tab` is 4 szóköznek számít.
 
@@ -539,12 +539,12 @@ Mentsd el, és futtasd le még egyszer:
 
 A korábbi példákban a kód csak akkor futott le, ha a feltétel teljesült. De a Pythonnak van `elif` és `else` statementje is:
 
-    python
+```python
     if 5 > 2:
         print('5 is indeed greater than 2')
     else:
         print('5 is not greater than 2')
-    
+```
 
 Ha ezt lefuttatod, a következőt kapod:
 
@@ -554,7 +554,7 @@ Ha ezt lefuttatod, a következőt kapod:
 
 Ha a 2 nagyobb lenne, mint az 5, a második parancs futott volna le. Egyszerű, igaz? Nézzük, hogy működik az `elif`:
 
-    python
+```python
     name = 'Sonja'
     if name == 'Ola':
         print('Hey Ola!')
@@ -562,7 +562,7 @@ Ha a 2 nagyobb lenne, mint az 5, a második parancs futott volna le. Egyszerű, 
         print('Hey Sonja!')
     else:
         print('Hey anonymous!')
-    
+```
 
 lefuttatva:
 
@@ -574,7 +574,7 @@ Látod, mi történt itt? Az `elif` arra jó, hogy plusz feltételeket írhass a
 
 Az első `if` statement után annyi `elif` állítást írhatsz, amennyit csak akarsz. Például:
 
-    python
+```python
     volume = 57
     if volume < 20:
         print("It's kinda quiet.")
@@ -588,7 +588,7 @@ Az első `if` statement után annyi `elif` állítást írhatsz, amennyit csak a
         print("A bit loud!")
     else:
         print("My ears are hurting!:(")! :(")
-    
+```
 
 A Python sorban mindegyik feltételt megnézi, és kiírja:
 
@@ -613,13 +613,13 @@ Emlékszel például a `len()` fügvényre, amit lefuttathatsz Pythonban? Jó h�
 
 A függvény utasítások sorozata, amit a Python lefuttat. Minden Python függvény a `def` kulcsszóval kezdődik, van neve, és lehetnek paraméterei. Kezdjük egy könnyűvel. Cseréld ki a **python_intro.py** kódját erre:
 
-    python
+```python
     def hi():
         print('Hi there!')
         print('How are you?')
     
     hi()
-    
+```
 
 Oké, kész is az első függvény!
 
@@ -634,13 +634,13 @@ Futtassuk le, és nézzük meg, mi történik:
 
 Ez könnyű volt! Most írjuk meg az első olyan függvényt, aminek vannak paraméterei. Az előző példát fogjuk használni - egy függvény, ami köszön annak, aki futtatja, de most nevet is adunk hozzá:
 
-    python
+```python
     def hi(name):
-    
+```
 
 Ahogy láthattad, a függvény most kapott egy paramétert, amit `name`-nek hívunk:
 
-    python
+```python
     def hi(name):
         if name == 'Ola':
             print('Hi Ola!')
@@ -650,7 +650,7 @@ Ahogy láthattad, a függvény most kapott egy paramétert, amit `name`-nek hív
             print('Hi anonymous!')
     
     hi()
-    
+```
 
 Fontos: a `print` függvény 4 szóközzel van indentálva az `if` statementen belül. Erre azért van szükség, hogy ez a függvény a feltétel teljesülése esetén fusson le. Nézzük, hogy működik:
 
@@ -663,9 +663,9 @@ Fontos: a `print` függvény 4 szóközzel van indentálva az `if` statementen b
 
 Hoppá, egy hiba. Szerencsére a Python elég hasznos hibaüzeneteket ad nekünk. Azt mondja, a `hi()` függvénynek (vagyis annak, amit az előbb definiáltunk) egy kötelező paramétere van (amit `name`-nek hívnak), és ezt elfelejtettük beadni, amikor meghívtuk a függvényt. Javítsuk ki a fájl alján:
 
-    python
+```python
     hi("Ola")
-    
+```
 
 És futtassuk le újra:
 
@@ -675,9 +675,9 @@ Hoppá, egy hiba. Szerencsére a Python elég hasznos hibaüzeneteket ad nekünk
 
 És ha megváltoztatjuk a nevet?
 
-    python
+```python
     hi("Sonja")
-    
+```
 
 Futtasd le:
 
@@ -694,12 +694,12 @@ Ez fantasztikus, nem? Így nem kell állandóan ismételned magad, ha meg szeret
 
 Most csináljunk valami okosabbat - több mint két név van a világon, és nehéz lenne mindegyikhez egy külön feltételt írni, nem?
 
-    python
+```python
     def hi(name):
         print('Hi ' + name + '!')
     
     hi("Rachel")
-    
+```
 
 Most hívjuk meg a kódot:
 
@@ -717,21 +717,21 @@ A programozók nem szeretik ismételni magukat. A programozás arról szól, hog
 
 Még emlékszel a listákra? Írjunk egy listát lányokból:
 
-    python
+```python
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    
+```
 
 Mindegyiküket üdvözölni szeretnénk. Ehhez már megvan a `hi` függvényünk, tegyük bele egy loopba:
 
-    python
+```python
     for name in girls:
-    
+```
 
 A ~~~for~~~ statement hasonlóan működik, mint az ~~~if~~~statement; mindkettő alatt 4 szóközzel kell indentálni a következő sort.
 
 Itt a teljes kód, ami a fájlban lesz:
 
-    python
+```python
     def hi(name):
         print('Hi ' + name + '!')
     
@@ -739,7 +739,7 @@ Itt a teljes kód, ami a fájlban lesz:
     for name in girls:
         hi(name)
         print('Next girl')
-    
+```
 
 És amikor futtatjuk:
 

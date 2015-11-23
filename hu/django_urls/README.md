@@ -16,18 +16,18 @@ Az interneten minden oldalnak szüksége van egy saját URL-re. Innen tudja az a
 
 Nyisd meg a `mysite/urls.py` fájlt a kódszerkesztőben, és nézd meg:
 
-    python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
-    
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^admin/', include(admin.site.urls)),
+]
+```
 
 Amint láthatod, a Django már előre iderakott nekünk pár dolgot.
 
@@ -35,9 +35,9 @@ Azok a sorok, amik így kezdődnek: `#`, kommentek - ez azt jelenti, hogy ezeket
 
 Az admin URL, amit az előző fejezetben már meglátogattál, már itt van:
 
-    python
-        url(r'^admin/', include(admin.site.urls)),
-    
+```python
+    url(r'^admin/', include(admin.site.urls)),
+```
 
 Ez azt jelenti, hogy minden URL-nél, ami `admin/`-nal kezdődik, a Django meg fogja találni a hozzátartozó *view*-t. Ebben az esetben sok admin URL-t hozzáadunk, hogy ne kelljen az egészet ebbe a kis fájlba tömni - így olvashatóbb és letisztultabb.
 
@@ -75,15 +75,15 @@ Töröld ki a kikommentelt soroket (azokat, amik `#` jellel kezdődnek), és adj
 
 A `mysite/urls.py` fájlod most így néz ki:
 
-    python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
-        url(r'', include('blog.urls')),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
+]
+```
 
 Mostantól a Django mindent, ami a 'http://127.0.0.1:8000/'-re jön, átirányít a `blog.urls`-re, és ott fogja keresni a további tennivalókat.
 
@@ -93,20 +93,20 @@ Amikor Pythonban írunk reguláris kifejezéseket, a stringek előtt mindig egy 
 
 Hozz létre egy új, üres fájlt `blog/urls.py` néven. Nagyszerű! Most írd be az első két sort:
 
-    python
-    from django.conf.urls import url
-    from . import views
-    
+```python
+from django.conf.urls import url
+from . import views
+```
 
 Itt csak annyi történik, hogy importáljuk a Django methodjait és az összes `view`nkat a `blog` alkalmazásból (még egyet sem írtunk meg, de mindjárt ezzel is foglalkozunk!)
 
 Ezután megírhatjuk az első URL mintát:
 
-    python
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-    ]
-    
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
 
 Amint láthatod, itt egy `post_list` nevű `view`t rendeltünk hozzá a `^$` URL-hez. Ez a regex a `^` karaktert (string kezdete) és az utána következő `$` karaktert (string vége) fogja keresni - vagyis csak az üres string felel meg neki. Ez így helyes, mert a Django URL resolverében a 'http://127.0.0.1:8000/' nem számít az URL részének. Ez a minta mondja meg a Django-nak, hogy ha valaki a 'http://127.0.0.1:8000/' címen lép be a weboldaladra, a `views.post_list` a helyes lépés.
 

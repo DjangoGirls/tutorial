@@ -4,12 +4,12 @@ Az előbb elkészítettük a bejegyzések modelljeit. Ahhoz, hogy létrehozhassu
 
 Nyisd meg a `blog/admin.py` fájlt, és cseréld ki a benne lévő kódot erre:
 
-    python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
-    
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
 
 Amint láthatod, importáljuk az előző fejezet végén definiált Post modellt, vagyis elérhetővé tesszük ebben a fájlban is. Hogy a modell látszódjon az admin oldalon, regisztrálnunk kell a `admin.site.register(Post)` sorral.
 

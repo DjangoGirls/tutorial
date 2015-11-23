@@ -8,19 +8,19 @@ OK, hogyan fogjuk ezt megvalósítani?
 
 Meg kell nyitni a `blog/views.py` fájlt. Eddig így nézett ki a `post_list` *view*:
 
-    python
-    from django.shortcuts import render
-    
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Emlékszel, amikor azt magyaráztuk, hogyan tudsz korábban megírt kódot beletenni más fájlokba? Most itt az alkalom, hogy beletegyük a modelt, amit a `models.py`-ba írtunk. A `from .models import Post` sort a következőképpen adjuk hozzá:
 
-    python
-    from django.shortcuts import render
-    from .models import Post
-    
+```python
+from django.shortcuts import render
+from .models import Post
+```
 
 A pont a `from` után az *aktuális könyvtárt*, vagy az *aktuális applikációt* jelenti. Mivel a `views.py` és a `models.py` ugyanabban a könyvtárban vannak, elég annyit használnunk, hogy `.` és a fájl nevét (`.py` nélkül). Ezután importáljuk a model nevét.).
 
@@ -39,15 +39,15 @@ Most azok a bejegyzések érdekelnek minket, amik publikálva vannak és a `publ
 
 Most ezt a kódrészletet rakjuk a `blog/views.py` fájlba, hozzáadva a `def post_list(request)` function-hoz:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
+```
 
 Figyeld meg, hogy létrehozunk egy *változót* a QuerySethez: `posts`. Vedd úgy, hogy ez a QuerySet neve. Innentől kezdve erre a névre hivatkozva használjuk.
 
@@ -59,15 +59,15 @@ A `render` function-ban már van egy `request` paraméterünk (vagyis minden, am
 
 Végül a `blog/views.py` fájlnak így kell kinéznie:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {'posts': posts})
-    
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
 
 És megvan! Itt az idő visszatérni a template-hez és megjeleníteni ezt a QuerySet-et!
 
