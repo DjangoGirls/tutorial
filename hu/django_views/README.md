@@ -10,18 +10,18 @@ A nézetek a `views.py` fájlban találhatók. A *view-kat* a `blog/views.py` f�
 
 Ok, nyissuk ki ezt a fájlt és nézzük, mi van benne:
 
-    python
-    from django.shortcuts import render
-    
-    # Create your views here.
-    
+```python
+from django.shortcuts import render
+
+# Create your views here.
+```
 
 Egyelőre nem túl sok minden. A legegyszerűbb *view* így néz ki.
 
-    python
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Mint látod, létrehoztunk egy `post_list` elnevezésű metódust (`def`), ami vesz egy `request`-et és `return`-öl (visszaad) egy `render` metódust, ami összeállítja a `blog/post_list.html` template-et.
 
