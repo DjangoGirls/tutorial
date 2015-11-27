@@ -3,7 +3,7 @@
 * [Українська](uk)
 * [简体中文](zh)
 * [Español (beta)](es)
-* [Français (beta)](fr)
+* [Français](fr)
 * [Português-brasileiro (beta)](pt/)
 * [Русский (beta)](ru)
 * [한국어 (beta)](ko)
