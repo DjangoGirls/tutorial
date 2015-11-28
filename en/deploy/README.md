@@ -272,6 +272,7 @@ application = DjangoWhiteNoise(get_wsgi_application())
 ```
 
 > **Note** Don't forget to substitute in your own username where it says `<your-username>`
+> **Note** In line three, we make sure Pyhthon anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is. It also sets up the "whitenoise" static files tool.
 
