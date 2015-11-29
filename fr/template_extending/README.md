@@ -1,14 +1,14 @@
 # Héritage de template
 
-Django vous réserve encore bien des surprises: une assez géniale est **l'héritage de template**. Qu'est ce que ça signifie? C'est une fonctionnalité qui vous permet de réutiliser certains morceaux de HTML dans différentes pages de votre site web.
+Django vous réserve encore bien des surprises : une assez géniale est **l'héritage de template**. Qu'est ce que ça signifie ? C'est une fonctionnalité qui vous permet de réutiliser certains morceaux de HTML dans différentes pages de votre site web.
 
-Concrètement, cela permet de vous éviter de vous répéter dans chaque fichier lorsque vous voulez utiliser la même information ou mise en page. Ainsi, lorsque vous voudrez changer quelque chose, vous n'aurez à le faire que dans un seul template!
+Concrètement, cela permet d'éviter de vous répéter dans chaque fichier lorsque vous voulez utiliser la même information ou mise en page. Ainsi, lorsque vous voudrez changer quelque chose, vous n'aurez à le faire qu'une seule fois!
 
 ## Créer un template de base
 
 Un template de base est le template le plus simple que vous pouvez faire hériter à chaque page de votre site web.
 
-Créons le fichier `base.html` dans le dossier `blog/templates/blog/`:
+Créons le fichier `base.html` dans le dossier `blog/templates/blog/` :
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Créons le fichier `base.html` dans le dossier `blog/templates/blog/`:
                 post_list.html
     
 
-Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le fichier `post_list.html`. Ça devrait ressembler à ça:
+Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le fichier `post_list.html`. Ça devrait ressembler à ça :
 
 ```html
 {% load staticfiles %}
@@ -26,7 +26,6 @@ Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -53,9 +52,8 @@ Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le
     </body>
 </html>
 ```
-    
 
-Puis, dans le fichier `base.html`, remplacer tout ce qui se trouve dans `<body>` (de `<body>` à `</body>`) par ceci:
+Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>` (de `<body>` à `</body>`) par ceci :
 
 ```html
 <body>
@@ -72,19 +70,17 @@ Puis, dans le fichier `base.html`, remplacer tout ce qui se trouve dans `<body>`
     </div>
 </body>
 ```
-    
 
-{% raw %}Nous venons concrètement de remplacer tout ce qui se trouve entre `{% for post in posts %}{% endfor %}` par:{% endraw %}
+Nous venons concrètement de remplacer tout ce qui se trouve entre `{% for post in posts %}{% endfor %}` par :
 
 ```html
 {% block content %}
 {% endblock %}
 ```
 
+Qu'est-ce que cela signifie ? Vous venez simplement de créer un `block` : c'est une balise de template qui vous permet d'insérer le HTML de ce block dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
 
-Qu'est-ce que cela signifie? Vous venez simplement de créer un `block`: c'est une balise de template qui vous permet d'insérer le HTML de ce block dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
-
-Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blog/post_list.html`. Supprimez tout ce qui n'est pas dans body. Supprimez aussi `<div class="page-header"></div>`. Votre fichier doit maintenant ressembler à ça:
+Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blog/post_list.html`. Supprimez tout ce qui n'est pas dans body. Supprimez aussi `<div class="page-header"></div>`. Votre fichier doit maintenant ressembler à ça :
 
 ```html
 {% for post in posts %}
@@ -97,16 +93,14 @@ Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blo
     </div>
 {% endfor %}
 ```
-    
 
-Maintenant, ajoutez cette ligne au début du fichier:
+Maintenant, ajoutez cette ligne au début du fichier :
 
 ```html
 {% extends 'blog/base.html' %}
 ```
-    
 
-Vous venez de permettre à `post_list.html` d'hériter du template de `base.html`. Une dernière chose à faire: déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock content %}`. Attention à ne pas déplacer la ligne que vous venons juste d'insérer. Votre fichier doit maintenant ressembler à ceci:
+{% raw %}Cela signifie que nous sommes en train d'étendre le modèle du template `base.html` dans `post_list.html`. Une dernière chose à faire : déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock content %}`. Attention à ne pas déplacer la ligne que vous venons juste d'insérer. Comme ceci :{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -123,8 +117,7 @@ Vous venez de permettre à `post_list.html` d'hériter du template de `base.html
     {% endfor %}
 {% endblock content %}
 ```
-    
 
-Et voilà! Vérifiez que votre site fonctionne toujours correctement:)
+Et voilà ! Vérifiez que votre site fonctionne toujours correctement :)
 
 > Si jamais vous rencontrez une erreur de type `TemplateDoesNotExists` qui signale que le fichier `blog/base.html` n'existe pas et que `runserver` tourne dans votre console, tuez le (en appuyant sur les touches Ctrl+C en même temps) et relancez votre server à l'aide de la commande `python manage.py runserver`.

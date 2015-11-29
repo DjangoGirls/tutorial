@@ -22,7 +22,7 @@ Git è un "sistema di controllo versione" utilizzato da un sacco di programmator
 
 > **Nota** Se hai già fatto la procedura di installazione, non devi farlo di nuovo - si può passare alla sezione successiva e iniziare a creare il tuo repository Git.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Inizializzare un repository Git
 
@@ -129,7 +129,7 @@ Adesso Il tuo codice è su GitHub. Ora controlla! Scoprirai che è in bella comp
 
 > **Nota** Potresti aver già creato un account di PythonAnywhere precedentemente, durante i passaggi di istallazione - se è così, non c'è bisogno di farlo nuovamente.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Scaricare il nostro codice su PythonAnywhere
 
