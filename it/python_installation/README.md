@@ -10,4 +10,4 @@ Python ha avuto origine alla fine degli anni '80 ed il suo obiettivo principale 
 
 > **Nota** Se hai fatto la procedura di installazione, non c'è bisogno di farlo di nuovo - puoi saltare dritto/a al prossimo capitolo!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}

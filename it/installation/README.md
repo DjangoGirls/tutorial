@@ -14,19 +14,19 @@ Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'impostazione
 
 # Installare Python
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Preparare virtualenv e installare Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Installare un editor di codice
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Installare Git
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Creare un account GitHub
 
@@ -34,7 +34,7 @@ Vai su [GitHub.com](http://www.github.com) e iscriviti per un nuovo account grat
 
 # Creare un account PythonAnywhere
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Inizia la lettura
 

@@ -1,12 +1,12 @@
 # Nom de domaine
 
-Heroku vous a donné un nom de domaine, mais il est long, difficile à retenir, et franchement moche... Ce serait quand même mieux d'avoir un nom de domaine plus court et plus facile à retenir, n'est-ce pas?
+Heroku vous a donné un nom de domaine, mais il est long, difficile à retenir, et franchement moche... Ce serait quand même mieux d'avoir un nom de domaine plus court et plus facile à retenir, n'est-ce pas ?
 
-C'est ce que nous allons voir dans ce chapitre: comment acheter un nom de domaine et le faire pointer vers Heroku!
+C'est ce que nous allons voir dans ce chapitre : comment acheter un nom de domaine et le faire pointer vers Heroku !
 
-## Où enregistrer son nom de domaine?
+## Où enregistrer son nom de domaine ?
 
-Un nom de domaine coûte environ 15$ par an. Vous pouvez en trouver des plus cher ou des moins cher, tout dépend de votre provider. Il existe de très nombreuses compagnies spécialisées dans l'enregistrement de nom de domaine: une simple recherche sur [Google][1] vous listera plusieurs centaines de possibilités.
+Un nom de domaine coûte environ 15$ par an. Vous pouvez en trouver des plus ou moins cher : tout dépend de votre provider. Il existe de très nombreuses compagnies spécialisées dans l'enregistrement de nom de domaine : une simple recherche sur [Google][1] vous listera plusieurs centaines de possibilités.
 
  [1]: https://www.google.com/search?q=register%20domain
 
@@ -14,7 +14,7 @@ Notre petit favori est [I want my name][2]. Ils revendiquent un "management de n
 
  [2]: https://iwantmyname.com/
 
-## Comment enregistrer mon nom de domaine sur IWantMyName?
+## Comment enregistrer mon nom de domaine sur IWantMyName ?
 
 Allez sur [iwantmyname][3] et tapez le nom de domaine que vous souhaiteriez enregistrer dans le champ de recherche.
 
@@ -30,27 +30,27 @@ Une liste des noms de domaines disponibles avec le nom que vous souhaiteriez va 
 
  [5]: images/2.png
 
-Nous avons décidé d'acheter `djangogirls.in`:
+Nous avons décidé d'acheter `djangogirls.in` :
 
 ![][6]
 
  [6]: images/3.png
 
-Allez dans votre panier et confirmez-le. Vous allez devoir vous créer un compte sur iwantmyname. Ensuite, vous allez pouvoir sortir votre carte bleue et acheter votre nom de domaine!
+Allez dans votre panier et confirmez-le. Vous allez devoir vous créer un compte sur iwantmyname. Ensuite, vous allez pouvoir sortir votre carte bleue et acheter votre nom de domaine !
 
-Une fois ces étapes franchies, cliquez sur `Domains` dans le menu et sélectionnez votre tout nouveau nom de domaine. Ensuite, trouvez et cliquez sur le lien `manage DNS records`:
+Une fois ces étapes franchies, cliquez sur `Domains` dans le menu et sélectionnez votre tout nouveau nom de domaine. Ensuite, trouvez et cliquez sur le lien `manage DNS records` :
 
 ![][7]
 
  [7]: images/4.png
 
-Cherchez ce formulaire:
+Cherchez ce formulaire :
 
 ![][8]
 
  [8]: images/5.png
 
-Remplissez le avec les informations suivantes: - Hostname: www - Type: CNAME - Value: votre nom de domaine chez Heroku (par exemple djangogirls.herokuapp.com) - TTL: 3600
+Remplissez le avec les informations suivantes : - Hostname: www - Type: CNAME - Value: votre nom de domaine chez Heroku (par exemple djangogirls.herokuapp.com) - TTL: 3600
 
 ![][9]
 
@@ -58,7 +58,7 @@ Remplissez le avec les informations suivantes: - Hostname: www - Type: CNAME - V
 
 Cliquez sur le bouton "Add" puis le bouton "Save changes" en bas de la page.
 
-Il va falloir attendre quelques heures avant que votre nom de domaine fonctionne, soyez patient⋅e!
+Il va falloir attendre quelques heures avant que votre nom de domaine fonctionne, soyez patient⋅e !
 
 ## Configurer un nom de domaine dans Heroku
 
@@ -68,4 +68,4 @@ Pour cela, allez dans le [Dashboard d'Heroku][10], connectez-vous avec votre com
 
  [10]: https://dashboard.heroku.com/apps
 
-Et voilà, c'est tout!
+Et voilà, c'est tout !
