@@ -77,7 +77,7 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
 
     $ pwd
-    /utenti/olasitarska
+    /Users/olasitarska
     
 
 Se sei su Windows:
