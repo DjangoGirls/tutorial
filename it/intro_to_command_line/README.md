@@ -60,7 +60,8 @@ oppure
 
 Premi `invio`. Questo è il nostro risultato:
 
-    $ whoami olasitarska
+    $ whoami
+    olasitarska
     
 
 Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh?:)
@@ -75,12 +76,14 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 
 Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
 
-    $ pwd/utenti/olasitarska
+    $ pwd
+    /utenti/olasitarska
     
 
 Se sei su Windows:
 
-    > cd C:\Users\olasitarska
+    > cd
+    C:\Users\olasitarska
     
 
 Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.
@@ -140,7 +143,7 @@ Windows:
 
 Ecco fatto!
 
-> Suggerimento PRO:se digiti `cd D` e poi premi `tab` sulla tastiera, la command-line completerà automaticamente il resto del nome per cui puoi navigare più velocemente. Se c'è più di una cartella che comincia con "D", premi `tab` due volte per ottenere la lista con tutte le opzioni.
+> Suggerimento PRO: se digiti `cd D` e poi premi `tab` sulla tastiera, la command-line completerà automaticamente il resto del nome per cui puoi navigare più velocemente. Se c'è più di una cartella che comincia con "D", premi `tab` due volte per ottenere la lista con tutte le opzioni.
 
 * * *
 
@@ -216,7 +219,7 @@ Windows:
 
 Adesso è l'ora di cancellare la directory `practice`:
 
-> **Attenzione**:cancellare un file usando `del`, `rmdir` o `rm` è irreversibile, *i file cancellati andranno perduti per sempre*! Per cui sii molto prudente nell'utilizzare questi comandi.
+> **Attenzione**: cancellare un file usando `del`, `rmdir` o `rm` è irreversibile, *i file cancellati andranno perduti per sempre*! Per cui sii molto prudente nell'utilizzare questi comandi.
 
     $ rm -r practice
     
@@ -239,7 +242,7 @@ Windows:
 
 ### Uscire dalla command line
 
-Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. facciamolo alla maniera degli hacker, va bene?:)
+Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. Facciamolo alla maniera degli hacker, va bene?:)
 
     $ exit
     
@@ -257,11 +260,11 @@ Questo è un riepilogo di alcuni comandi utili:
 
 | Comandi(Windows) | Comandi (Mac OS / Linux) | Descrizione                 | Esempio                                           |
 | ---------------- | ------------------------ | --------------------------- | ------------------------------------------------- |
-| esci             | exit                     | chiudi la finestra          | **exit**                                          |
+| exit             | exit                     | chiudi la finestra          | **exit**                                          |
 | cd               | cd                       | cambiare directory          | **cd test**                                       |
 | dir              | ls                       | elenco directory/file       | **dir**                                           |
-| copia            | cp                       | copia un file               | **copy c:\test\test.txt c:\windows\test.txt** |
-| sposta           | mv                       | spostare un file            | **move c:\test\test.txt c:\windows\test.txt** |
+| copy             | cp                       | copia un file               | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                       | spostare un file            | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir            | mkdir                    | creare una nuova directory  | **mkdir testdirectory**                           |
 | del              | rm                       | eliminare un file/directory | **del c:\test\test.txt**                        |
 
