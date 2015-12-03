@@ -12,7 +12,7 @@ Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di c
 
 Una volta pronta, segui le istruzioni riportate di seguito.
 
-Vogliamo aprire una console Pythom, quindi digita `python` su Windows o `python3` su Mac OS/Linux e premi `invio`.
+Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3` su Mac OS/Linux e premi `invio`.
 
     $ python3
     Python 3.4.3 (...)
