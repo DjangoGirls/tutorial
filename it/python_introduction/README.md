@@ -154,7 +154,7 @@ La puoi utilizzare anche nelle funzioni:
     5
     
 
-Fantastico, vero? certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
+Fantastico, vero? Certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
 
     >>> a = 4
     >>> b = 6
