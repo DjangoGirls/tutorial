@@ -127,7 +127,7 @@ Adesso Il tuo codice è su GitHub. Ora controlla! Scoprirai che è in bella comp
 
 # Configurare il nostro blog su PythonAnywhere
 
-> **Nota** Potresti aver già creato un account di PythonAnywhere precedentemente, durante i passaggi di istallazione - se è così, non c'è bisogno di farlo nuovamente.
+> **Nota** Potresti aver già creato un account di PythonAnywhere precedentemente, durante i passaggi di installazione - se è così, non c'è bisogno di farlo nuovamente.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

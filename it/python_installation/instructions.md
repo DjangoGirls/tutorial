@@ -1,6 +1,6 @@
 > Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (http://django.carrots.pl/)
 
-Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'istallazione! Vogliamo che sul tuo pc sia installato Python 3.4 quindi se hai una versione precedente, dovrai aggiornarlo.
+Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.4 quindi se hai una versione precedente, dovrai aggiornarlo.
 
 ### Windows
 
@@ -43,10 +43,10 @@ Usa questo comando nella tua console:
 
 ### OS X
 
-Devi andare sul sito https://www.python.org/downloads/release/python-343/ e scarica il programma d'istallazione di Python:
+Devi andare sul sito https://www.python.org/downloads/release/python-343/ e scarica il programma d'installazione di Python:
 
   * Scarica il file *Mac OS X 64-bit/32-bit installer*
-  * Fai doppio click su *python-3.4.3-macosx10.6.pkg* per eseguire il programma d'istallazione.
+  * Fai doppio click su *python-3.4.3-macosx10.6.pkg* per eseguire il programma d'installazione.
 
 Verifica che l'installazione si sia conclusa correttamente aprendo l'applicazione *Terminal* ed eseguendo il comando `python3`:
 

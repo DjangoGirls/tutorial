@@ -12,7 +12,7 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
+> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **installazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
 Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dimenticarti di aggiungere il punto `.` alla fine **:
 
