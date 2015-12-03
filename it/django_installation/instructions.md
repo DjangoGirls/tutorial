@@ -28,7 +28,7 @@ Per creare un nuovo `virtualenv` è necessario aprire la console (ti abbiamo spi
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
     
 
-dove `C:\Python34\python` è la directory in cui precedentemente hai installato Python e `myvenv` è il nome del tuo `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. E' meglio usare un nome breve -dal momento che dovrai digitarlo spesso!
+dove `C:\Python34\python` è la directory in cui precedentemente hai installato Python e `myvenv` è il nome del tuo `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. È meglio usare un nome breve dal momento che dovrai digitarlo spesso!
 
 ### Linux e OS X
 
