@@ -49,7 +49,7 @@ Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica c
 
 ## Modificare le impostazioni
 
-Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai istallato prima.
+Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai installato prima.
 
 Sarebbe bello avere l'ora corretta sul nostro sito Web. Vai alla [lista di fusi orari di wikipedia][2] e copia il tuo fuso orario (TZ). (es. `Europe/Berlin`)
 
