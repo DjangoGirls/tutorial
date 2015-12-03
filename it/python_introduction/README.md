@@ -68,7 +68,7 @@ Utilizzando le virgolette doppie:
     "Runnin' down the hill"
     
 
-o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata (``):
+o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
     >>> "Correre"\"giù dalla collina"
     "Correre giù dalla collina"
