@@ -415,7 +415,9 @@ Dall'espressione puoi capire che Python non è in grado di mettere a confronto u
 
 Accidentalmente, hai appena imparato un nuovo tipo di oggetto in Python. Si chiama **Boolean** e probabilmente è il tipo più facile che ci sia.
 
-Ci sono solo due oggetti Boolean: -True -False
+Ci sono solo due oggetti Boolean:
+- True
+- False
 
 Ma perché Python possa capirlo, bisogna sempre scrivere True (prima lettera maiuscola, le altre minuscole). **true, TRUE, tRUE non funzionano -- solo True è corretto.** (Lo stesso vale per False, ovviamente.)
 
