@@ -19,7 +19,7 @@ Later on, you can try the resources listed below. They're all very recommended!
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python course](http://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS course](http://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](http://django.carrots.pl/en/)
+- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
 - [Getting Started With Django video lessons](http://gettingstartedwithdjango.com/)
 - [Two Scoops of Django: Best Practices for Django 1.8 book](http://twoscoopspress.com/products/two-scoops-of-django-1-8)
