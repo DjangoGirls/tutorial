@@ -10,7 +10,7 @@ Gedit è un editor open-source e gratuito, disponibile per tutti i sistemi opera
 
 ## Sublime Text 2
 
-Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratuito. E' molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
+Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratuito. È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
 
 [Scaricalo qui](http://www.sublimetext.com/2)
 
