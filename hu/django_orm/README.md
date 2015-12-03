@@ -94,7 +94,7 @@ A móka kedvéért hozz létre még 2-3 posztot, hogy lásd, hogyan működik. H
 
 A QuerySet-ek egyik nagy előnye, hogy filterezhetjük (szűrhetjük) őket. Mondjuk le szeretnénk kérdezni az összes posztot, amit az ola User írt. Itt a `filter`-t fogjuk használni az `all` helyett a `Post.objects.all()`-ban. A zárójelek között megadhatjuk, hogy milyen feltétel(ek)nek kell teljesülnie ahhoz, hogy egy blogposzt bekerülhessen a querysetünkbe. Ebben az esetben az `author` (szerző) egyenlő `me`-vel (én). Ezt a Django-ban így írjuk le: `author=me`. Most így néz ki a kódunk:
 
-```>>> Post.objects.filter(author=me)
+    >>> Post.objects.filter(author=me)
     [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 
     
@@ -109,9 +109,9 @@ A QuerySet-ek egyik nagy előnye, hogy filterezhetjük (szűrhetjük) őket. Mon
 
 Megkaphatod az összes közzétett poszt listáját is. Ezt úgy tudod megtenni, hogy az összes poszt között szűrsz azokra, amiknél be van állítva múltbéli `published_date` (vagyis közzététel dátuma):
 
-```>>> from django.utils import timezone
->>>Post.objects.filter(published_date__lte=timezone.now()) []
-```
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 Sajnos az a poszt, amit a Python konzolban hoztunk létre, még nem lett közzétéve. De ezen könnyen változtathatunk! Először is, hozzá kell férnünk a poszt instance-éhez, amit közzé szeretnénk tenni:
 

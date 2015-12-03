@@ -20,62 +20,62 @@ Hozz létre egy `base.html` fájlt a `blog/templates/blog/`-ban:
 Majd nyisd meg, és másolj át mindent a `post_list.html`-ből a `base.html`-be, így:
 
 ```html
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-    
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                    {% for post in posts %}
-                        <div class="post">
-                            <div class="date">
-                                {{ post.published_date }}
-                            </div>
-                            <h1><a href="">{{ post.title }}</a></h1>
-                            <p>{{ post.text|linebreaks }}</p>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
                         </div>
-                    {% endfor %}
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaks }}</p>
                     </div>
+                {% endfor %}
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
 ```
 
 Aztán a `base.html`-ben cseréld ki az egész `<body>`-t (mindent a `<body>` és a `</body>` között) erre:
 
 ```html
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
             </div>
         </div>
-    </body>
+    </div>
+</body>
 ```
 
 Lényegében a `{% for post in posts %}{% endfor %}` részt kicseréltük erre:
 
 ```html
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 ```
 
 Ez mit is jelent? Létrehoztál egy `block`-ot. Ez egy olyan template tag, amely segítségével HTML-t illeszthetsz be a blokkba más template-ekben, ezzel kiegészítve a `base.html`-t. Máris megmutatjuk, hogy működik.
@@ -83,15 +83,15 @@ Ez mit is jelent? Létrehoztál egy `block`-ot. Ez egy olyan template tag, amely
 Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. Törölj ki mindent a body-n kívül, és a `<div class="page-header"></div>` részt is, hogy így nézzen ki a fájl:
 
 ```html
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+{% for post in posts %}
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
         </div>
-    {% endfor %}
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
 ```
 
 És most add hozzá ezt a sort a fájl elejéhez:
@@ -102,19 +102,19 @@ Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. T�
 {% raw %}Ez azt jelenti, hogy most a `base.html` template-et egészítjük ki a `post_list.html`-ben. Már csak egy dolog van hátra: az előző sor kivételével rakj mindent `{% block content %}` és `{% endblock content %}` közé. Így:{% endraw %}
 
 ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
 ```
 
 Ez az! Nézd meg, hogy még mindig működik-e a weboldalad :)

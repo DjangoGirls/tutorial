@@ -44,6 +44,6 @@ Gratulálunk, készen állsz a tutorialra! Ha van egy kis időd a workshop előt
 
   * [Bevezetés a parancsssor használatába](../intro_to_command_line/README.md)
 
-  * [Bevezetés a Pythonba](../intro_to_command_line/README.md)
+  * [Bevezetés a Pythonba](../python_introduction/README.md)
 
   * [Mi a Django?](../django/README.md)
