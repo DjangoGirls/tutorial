@@ -453,7 +453,7 @@ Finora abbiamo scritto il codice python nell'interprete, che ci permette di inse
 *   Salvare un po' di codice in un file python
 *   Eseguirlo!
 
-Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ~~~ exit()~~~:
+Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ```exit()``` :
 
     >>> exit()
     $
@@ -543,7 +543,7 @@ In esempi precedenti, il codice è stato eseguito solo quando le condizioni eran
 
 ```python
 if 5 > 2:
-     print('5 è maggiore di 2') 
+     print('5 è infatti maggiore di 2') 
 else:
      print('5 non è maggiore di 2')
 ```
@@ -569,7 +569,7 @@ else:
 ed eseguito:
 
     $ python3 python_intro.py
-    Hey Sonja!
+    Ciao Sonja!
     
 
 Hai visto cosa è successo? `elif` ti consente di aggiungere condizioni supplementari che verranno eseguite se nessuna delle condizioni precedenti viene soddisfatta.
@@ -583,7 +583,7 @@ if volume < 20:
 elif 20 <= volume < 40:
     print("Adatto per musica di sottofondo")
 elif 40 <= volume < 60:
-    print("Perfetto per apprezzare ogni dettaglio")
+    print("Perfetto, posso apprezzare ogni dettaglio")
 elif 60 <= volume < 80:
     print("Ideale per le feste")
 elif 80 <= volume < 100:
@@ -659,7 +659,7 @@ Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hi()
+      ciao()
     TypeError: ciao() missing 1 required positional argument: 'nome'
     
 
@@ -729,17 +729,17 @@ Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, qui
 for nome in ragazze:
 ```
 
-Lo statement ~~~ for~~~ si comporta in modo simile allo statement ~~~ if~~~; il codice sottostante deve essere rientrato di quattro spazi.
+Lo statement `for` si comporta in modo simile allo statement `if`; il codice sottostante deve essere rientrato di quattro spazi.
 
 Qua c'è l'intero codice che sarà nel file:
 
 ```python
-def hi(nome):
+def ciao(nome):
     print('Ciao ' + nome + '!') 
 
 ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
 for nome in ragazze:
-    hi(name)
+    ciao(name)
     print('Prossima ragazza')
 ```
 
