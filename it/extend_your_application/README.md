@@ -115,7 +115,7 @@ Vicino ad altre righe `from` ed alla fine del file aggiungeremo la nostra *view*
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Si. E' giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
+Si, è giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
 
 ![Visualizzazione elenco post][5]
 

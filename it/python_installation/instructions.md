@@ -4,7 +4,7 @@ Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa i
 
 ### Windows
 
-Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/release/python-343/. Dopo aver scaricato il file ***.msi**, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. E' importante ricordare il percorso (la directory) dove ha istallato Python. Più tardi sarà necessario!
+Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/release/python-343/. Dopo aver scaricato il file ***.msi**, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
 Una cosa a cui fare attenzione: sulla seconda schermata dell'installazione guidata, contrassegnata "Customize", assicurati di scorrere verso il basso e di scegliere l'opzione "Add python.exe to the Path", come illustrato qui:
 
@@ -18,7 +18,7 @@ Una cosa a cui fare attenzione: sulla seconda schermata dell'installazione guida
     Python 3.4.3
     
 
-Se non hai Python installato o se vuoi una versione diversa, puoi istallarla come segue:
+Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:
 
 #### Debian o Ubuntu
 

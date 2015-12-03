@@ -21,7 +21,7 @@ L'effetto dovrebbe essere come questo:
     >>>
     
 
-Ora ti trovi nella consolle interattiva di Django. E' come il prompt di python ma con un po' di magia di Django in più :). Qui puoi anche utilizzare tutti i comandi Python, ovviamente.
+Ora ti trovi nella consolle interattiva di Django. È come il prompt di python ma con un po' di magia di Django in più :). Qui puoi anche utilizzare tutti i comandi Python, ovviamente.
 
 ### Tutti gli oggetti
 
@@ -66,7 +66,7 @@ Quali utenti abbiamo nel nostro database? Prova questo:
     [<User: ola>]
     
 
-E' il superuser che abbiamo creato prima! Ora prendiamo un'istanza del user:
+È il superuser che abbiamo creato prima! Ora prendiamo un'istanza del user:
 
     me = User.objects.get(username='ola')
     

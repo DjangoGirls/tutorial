@@ -133,7 +133,7 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
     >>> nome = "Ola"
     
 
-Vedi? E' facile! è semplicemente: nome è uguale a Ola.
+Vedi? È facile! è semplicemente: nome è uguale a Ola.
 
 Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
 
@@ -475,7 +475,7 @@ Ovviamente a questo punto sei una programmatrice Python senior, quindi sentiti l
 
 Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **python_intro.py** e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con **.py**. L'estensione **.py** dice al Sistema Operativo che questo è un **file eseguibile python** e che Python può eseguirlo.
 
-E' ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
+È ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
 
 Su un Mac, il comando assomiglierà a questo:
 
@@ -506,7 +506,7 @@ Ora puoi continuare con uno strumento essenziale nella programmazione:
 
 ## If...elif...else
 
-Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. E' per questo che Python ha gli **if statements**.
+Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. È per questo che Python ha gli **if statements**.
 
 Sostituisci il codice nel file **python_intro.py** con questo:
 
@@ -607,7 +607,7 @@ Nei tre esercizi precedenti hai imparato:
 *   come **Salvare file** - archiviare codice nei file in modo da poter eseguire programmi più lunghi.
 *   **if...elif...else** - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.
 
-E' ora dell'ultima parte del capitolo!
+È ora dell'ultima parte del capitolo!
 
 ## Le funzioni personalizzate!
 
@@ -634,7 +634,7 @@ Eseguiamolo e vediamo cosa succede:
     Come stai?
     
 
-E' stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
+È stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
 
 ```python
 def ciao(nome):

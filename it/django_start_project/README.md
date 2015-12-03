@@ -39,7 +39,7 @@ Su Windows; **non dimenticarti di aggiungere il punto `.` alla fine**:
             __init__.py
     
 
-`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
+`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover installare nient'altro, tra l'altro.
 
 Il file `settings.py` contiene la configurazione del tuo sito web.
 
