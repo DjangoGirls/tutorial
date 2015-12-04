@@ -16,12 +16,12 @@ Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üz
 
 MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; ** sonunda nokta `(.)` koymayı unutmayın **:
 
-    (myvenv) ~/djangogirls$ django admin startproject mysite.
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
 Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
 
-    (myvenv) C:\Users\Name\djangogirls > django admin startproject mysite.
+    (myvenv) C:\Users\Name\djangogirls > django-admin startproject mysite .
     
 
 > Nokta `.` çok önemli çünkü şu an bulunduğunuz dizine Django'yu yüklemek için koda söyler. ( nokta `. ` kısayol referansıdır)
