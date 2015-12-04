@@ -12,28 +12,28 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir�
 
 `blog/templates/blog/post_list.html` dosyasına bir link ekleyerek başlayacağız. Şu ana kadar yaptıklarımız şöyle gözüküyor olması lazım:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
-    
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
     
 
 {% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link'imiz olsun istiyoruz. `<h1><a href="">{{ post.title }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
 
-    html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
 {% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir şablon etiketi kullanacağız!{% endraw %}
 
@@ -53,15 +53,15 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir�
 
 `blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` satırını ekleyin. Dosyanın şu hale gelmiş olması gerekiyor:
 
-    python
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+]
+```
 
 Şu kısım `^post/(?P<pk>[0-9]+)/$` korkutucu gözüküyor, ama endişelenmeyin, açıklayacağız: - Gene `^` ile başlıyor. - "başlangıç' - `post/` sadece URL'nin başlangıçtan sonra **post** ve **/<1> ifadelerinin geçmesi gerektiği anlamına geliyor. Şimdilik iyi gidiyor. - `(?P<pk>[0-9]+)` - bu kısım biraz daha karışık. Buranın anlamı şu: Django bu alana yerleştirdiğimiz herşeyi alacak ve onu `pk` adında bir değişken olarak view'a aktaracak. `[0-9]` bize eşleşenlerin sadece rakam (yani harf olamaz) olabileceğini söylüyor (0 ile 9 arasındaki herşey). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` eşleşmez ama `http://127.0.0.1:8000/post/1234567890/` eşleşir! - `/` - gene **/** - `$` - "son"!</p> 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'a aktarır.
@@ -123,21 +123,21 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 Şöyle görünmeli:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-    
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 Bir kere daha `base.html` dosyasını genişleteceğiz. `content` bloğunda bir gönderinin varsa yayınlanma tarihini (published_date), başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
@@ -153,22 +153,24 @@ Heyo! Çalışıyor!
 
 Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda var, değil mi? Yeniden taşımayı deneyelim.
 
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
-    
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
+```
 
 *   Sonra bir [PythonAnywhere Bash console][8] una gidip:
 
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-    
+```
+$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
 *   Nihayet, [Web tab][9] ına gidip **Reload** edelim.
 

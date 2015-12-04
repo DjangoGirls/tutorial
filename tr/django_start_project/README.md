@@ -57,18 +57,18 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [wikipedia timezones
 
 `settings.py` dosyasında <0>TIME_ZONE</0> ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
-    python
-    TIME_ZONE = 'Europe/Berlin'
-    
+```python
+TIME_ZONE = 'Europe/Berlin'
+```
 
 "Europe/Berlin" uygun şekilde değiştirildi
 
 Sabit dosyalar için de bir tane yol eklememiz gerekecek ( Daha sonra eğitimde sabit dosyalar ve CSS hakkında herşeyi öğreneceğiz ). Dosyanın *sonuna* en aşağı `STATIC_URL` girişinin altına gidin ve `STATIC_ROOT` adında bir şey ekleyin:
 
-    python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
 
 ## Veritabanı Kurulumu
 
@@ -76,14 +76,14 @@ Web uygulamalarınız için farklı birçok veritabanı yazılımı vardır. Biz
 
 Sqlite varsayılan olduğu için zaten `mysite/settings.py` dosyamızda kurulu:
 
-    python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-    
+}
+```
 
 Blogumuzun veritabanını oluşturmak için terminalde şu komutu çalıştırın:`python manage.py migrate` (`manage.py` dosyasının olduğu `djangogirls`'ün içinde olmalıyız ). İşler iyi giderse şöyle bir şey görmelisiniz:
 

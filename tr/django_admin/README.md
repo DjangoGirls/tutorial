@@ -4,12 +4,12 @@ Modelini hazırladığımız yazıları eklemek, düzenlemek ve silmek için Dja
 
 Hadi `blog/admin.py` dosyasını açalım ve içeriğini şununla değiştirelim:
 
-    python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
-    
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
 
 Gördüğünüz gibi, bir önceki bölümde tanımladığımız Post modelini admin.py dosyamıza dahil (import) ettik. Modelimizi admin sayfasında görünür yapmak için modeli `admin.site.register(Post)` ile belirtmemiz gerekir..
 

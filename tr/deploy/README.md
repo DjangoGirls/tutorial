@@ -40,12 +40,13 @@ Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (
 
 Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama takip etmemesini istediğimiz bazı dosyalar var. Bunu dizinin dibinde `.gitignore` adında bir dosya oluşturarak yapıyoruz. Editörünüzü açın ve aşağıdaki içeriklerle yeni bir dosya yaratın:
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    .DS_Store
-    
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+```
 
 Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
@@ -167,20 +168,22 @@ Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blo
 
 Bilgisayarınızda nasıl bir virtualenv oluşturduysanız, aynı şekilde PythonAnywhere üzerinde de oluşturabilirsiniz. Bash konsoluna, aşağıdakileri yazın:
 
-    $ cd ilk-blogum
-    
-    $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
-    [...]
-    Installing setuptools, pip...done.
-    
-    $ source myvenv/bin/activate
-    
-    (mvenv) $  pip install django whitenoise
-    Collecting django
-    [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
-    
+```
+$ cd ilk-blogum
+
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(mvenv) $  pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
+```
+
 
 > **Not** `pip install` birkaç dakika sürebilir. Sabır, sabır! Ama 5 dakikadan uzun sürüyorsa, birşeyler yanlış olmuştur. Eğitmeninize sorun.
 
@@ -262,20 +265,21 @@ Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de 
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burda keni kullanıcı adınızı yazın
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-    
+```
+python
+import os
+import sys
+
+path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burda keni kullanıcı adınızı yazın
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
 
 > **Not** `<kullanıcı-adınız>` diye geçen kısma kendi kullanıcı adınızı yazmayı unutmayın
 

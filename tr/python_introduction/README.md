@@ -277,8 +277,9 @@ Bu boş bir sözlük oluşturduğunuzu gösterir. Yaşasın!
 
 Şimdi, bu komutu yazmayı deneyin (kendi bilgilerinle değiştir):
 
-    >>> participant = {'name': 'Ayşe', 'country': 'Türkiye', 'favorite_numbers': [7, 42, 92]}
-    
+```python
+>>> participant = {'name': 'Ayşe', 'country': 'Türkiye', 'favorite_numbers': [7, 42, 92]}
+```
 
 Bu komut ile üç anahtar-değer çiftine sahip `participant` isminde bir değişken oluşturdun:
 
@@ -451,7 +452,7 @@ Tebrikler! Boolean'lar programlamadaki en havalı özelliklerden, ve az önce on
 *   Yeni Python dosyasına kod kaydedin
 *   Çalıştırın!
 
-Kullandığımız Python yorumlayıcısından çıkmak için sadece ~~~ exit() ~~~ fonksiyonunu yazmanız yeterlidir:
+Kullandığımız Python yorumlayıcısından çıkmak için sadece ```exit()``` fonksiyonunu yazmanız yeterlidir:
 
     >>> exit()
     $
@@ -463,9 +464,9 @@ Biraz önce [kod editörü][2] bölümünden bir kod editörü seçmiştik. Şim
 
  [2]: ../code_editor/README.md
 
-    python
-    print('Hello, Django girls!')
-    
+```python
+print('Hello, Django girls!')
+```
 
 > **Not** Kod editörlerinin en havalı özelliğini fark etmiş olmalısınız: renkler! Python konsolunda her şey aynı renkteydi, şimdi `print` fonksiyonunun stringden farklı bir renkte olduğunu görüyorsunuz. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler sana ipucu verecektir, örneğin metin kullanım hatasında veya dildeki anahtar kelimenin yanlış yazımında (mesela fonksiyondaki `def`, aşağıda göreceğiz). Bu kod düzenleyicisi kullanma nedenlerimizden biri :)
 
@@ -508,9 +509,9 @@ Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırm
 
 **python_intro.py** dosyasındaki kodunuzu şununla değiştirin:
 
-    python
-    if 3 > 2:
-    
+```python
+if 3 > 2:
+```
 
 Eğer bunu kaydedip çalıştırsaydık şu hatayla karşılaşacaktık:
 
@@ -522,10 +523,10 @@ Eğer bunu kaydedip çalıştırsaydık şu hatayla karşılaşacaktık:
 
 Python bizden kendisine `3 > 2` durumu (veya `True`) sağlandığında neyi çalıştıracağını söylememizi bekliyor. Python'a "Çalışıyor!" yazmasını söyleyelim. **python_intro.py** dosyanızdaki kodu şununla değiştirin:
 
-    python
-    if 3 > 2:
-        print('Çalışıyor!')
-    
+```python
+if 3 > 2:
+    print('Çalışıyor!')
+```
 
 4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Bunu yaparak if cümlesine yazdığım durum doğru olduğunda neyi çalıştırması gerektiğini Python'a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Tek `tab` karakteri de 4 boşluk yerine geçecektir.
 
@@ -539,12 +540,12 @@ Kaydedip çalıştırmayı deneyelim:
 
 Önceki örneklerde kod sadece koşullar sadece True olduğunda çalışıyordu. Ama Python ayrıca `elif` ve `else` ifadelerine de sahip:
 
-    python
-    if 5 > 2:    
-        print('5 gerçekten de 2'den büyüktür') 
-    else:     
-        print('5  2'den büyük değildir')
-    
+```python
+if 5 > 2:    
+    print('5 gerçekten de 2'den büyüktür') 
+else:     
+    print('5  2'den büyük değildir')
+```
 
 Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
 
@@ -554,15 +555,15 @@ Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
 
 Eğer 2 5'ten büyük bir sayı olsaydı ikinci komut çalışacaktı. Kolay, değil mi? Şimdi `elif`'in nasıl çalıştığına bakalım:
 
-    python
-    name = 'Zeynep'
-    if name == 'Ayşe':
-        print('Selam Ayşe!')
-    elif name == 'Zeynep':
-        print('Selam Zeynep!')
-    else:
-        print('Selam yabancı!')
-    
+```python
+name = 'Zeynep'
+if name == 'Ayşe':
+    print('Selam Ayşe!')
+elif name == 'Zeynep':
+    print('Selam Zeynep!')
+else:
+    print('Selam yabancı!')
+```
 
 ve çalıştırılınca:
 
@@ -574,21 +575,21 @@ Gördünüz mü? Eğer önceki if cümleleriniz doğru olmazsa kontrol edilmek �
 
 `if` cümlenizden sonra istediğiniz kadar `elif` cümlesi ekleyebilirsiniz. Mesela:
 
-    python
-    volume = 57
-    if volume < 20:
-        print("Çok sessiz.")
-    elif 20 <= volume < 40:
-        print("Güzel bir fon müziği")
-    elif 40 <= volume < 60:
-        print("Harika, her notayı duyabiliyorum")
-    elif 60 <= volume < 80:
-        print("Parti başlasın")
-    elif 80 <= volume < 100:
-        print("Biraz gürültülü!")
-    else:
-        print("Kulaklarım ağrıyor! :(")
-    
+```python
+volume = 57
+if volume < 20:
+    print("Çok sessiz.")
+elif 20 <= volume < 40:
+    print("Güzel bir fon müziği")
+elif 40 <= volume < 60:
+    print("Harika, her notayı duyabiliyorum")
+elif 60 <= volume < 80:
+    print("Parti başlasın")
+elif 80 <= volume < 100:
+    print("Biraz gürültülü!")
+else:
+    print("Kulaklarım ağrıyor! :(")
+```
 
 Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
 
@@ -613,13 +614,13 @@ Python'daki `len()` gibi fonksiyonları hatırlıyor musunuz? Haberler iyi - art
 
 Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da her fonksiyon `def` anahtar kelimesi ile başlar, bir isim verilir ve bazı parameterleri olabilir. Kolay bir tane ile başlayalım. **python_intro.py** içindeki kodu aşağıdaki ile değiştirelim:
 
-    python
-    def hi():
-        print('Merhaba!')
-        print('Nasılsın?')
-    
-    hi()
-    
+```python
+def hi():
+    print('Merhaba!')
+    print('Nasılsın?')
+
+hi()
+```
 
 Tamam, ilk fonksiyonumuz hazır!
 
@@ -634,23 +635,23 @@ Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
 
 Bu epey kolaydı! Şimdi parametreli bir fonksiyon yazalım. Bir önceki örneği kullanabiliriz - fonksiyonumuz yine 'merhaba' desin - ama bu sefer ismini de söylesin:
 
-    python
-    def hi(name):
-    
+```python
+def hi(name):
+```
 
 Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik:
 
-    python
-    def hi(name):
-        if name == 'Ayşe':
-            print('Selam Ayşe!')
-        elif name == 'Zeynep':
-            print('Selam Zeynep!')
-        else:
-            print('Selam yabancı!')
-    
-    hi()
-    
+```python
+def hi(name):
+    if name == 'Ayşe':
+        print('Selam Ayşe!')
+    elif name == 'Zeynep':
+        print('Selam Zeynep!')
+    else:
+        print('Selam yabancı!')
+
+hi()
+```
 
 Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:
 
@@ -663,9 +664,9 @@ Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk v
 
 Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. `hi()` fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (`name` isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:
 
-    python
-    hi("Ayşe")
-    
+```python
+hi("Ayşe")
+```
 
 Ve tekrar çalıştıralım:
 
@@ -675,9 +676,9 @@ Ve tekrar çalıştıralım:
 
 Ve eğer ismi değiştirirsek ne olur?
 
-    python
-    hi("Zeynep")
-    
+```python
+hi("Zeynep")
+```
 
 Ve çalıştırın:
 
@@ -694,12 +695,12 @@ Süper değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde ayn�
 
 Hadi daha akıllıca bir şeyler yapalım -- tabii ki ikiden fazla isim var ve her isim için bir kontrol yazmak zor olurdu, değil mi?
 
-    python
-    def hi(name):
-        print('Selam ' + name + '!')
-    
-    hi("Seda")
-    
+```python
+def hi(name):
+    print('Selam ' + name + '!')
+
+hi("Seda")
+```
 
 Şimdi kodu çağıralım:
 
@@ -717,29 +718,29 @@ Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri o
 
 Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 
-    python
-    girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
-    
+```python
+girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
+```
 
 Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
 
-    python
-    for name in girls:
-    
+```python
+for name in girls:
+```
 
-~~~ for~~~ cümlesi ~~~ if~~~ cümlesine benzer davranır; ikisi için de dört boşluk karakterine ihtiyacımız car.
+```for``` cümlesi ```if``` cümlesine benzer davranır; ikisi için de dört boşluk karakterine ihtiyacımız car.
 
 Dosyada yer alacak tam kod aşağıdadır:
 
-    python
-    def hi(name):
-        print('Selam ' + name + '!')
-    
-    girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
-    for name in girls:
-        hi(name)
-        print('Sıradaki')
-    
+```python
+def hi(name):
+    print('Selam ' + name + '!')
+
+girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
+for name in girls:
+    hi(name)
+    print('Sıradaki')
+```
 
 Ve onu çalıştırdığımız zaman:
 

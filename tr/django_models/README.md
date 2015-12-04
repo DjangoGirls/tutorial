@@ -86,17 +86,17 @@ Yeni bir `blog` klasörü ve içinde bir kaç dosya oluştuğunu fark edeceksini
 
 Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını da söylememiz lazım. Bunu `mysite/settings.py` dosyası ile yapıyoruz. `INSTALLED_APPS` dosyasını bulup `'blog'` u tam `)` karakterinin üzerine yazmamız lazım. Sonunda product şuna benzemelidir:
 
-    python
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
-    
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+```
 
 ### Blog gönderisi modeli oluşturma
 
@@ -104,27 +104,27 @@ Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını da söylememi
 
 Şimdi `blog/models.py` dosyasını açalım ve içindeki herşeyi silelim ve şu kodu yazalım:
 
-    python
-    from django.db import models
-    from django.utils import timezone
-    
-    
-    class Post(models.Model):
-        yazar = models.ForeignKey('auth.User')
-        baslik = models.CharField(max_length=200)
-        yazi = models.TextField()
-        yaratilis_tarihi = models.DateTimeField(
-                default=timezone.now)
-        yayinlanma_tarihi = models.DateTimeField(
-                blank=True, null=True)
-    
-        def yayinla(self):
-            self. yayinlama_tarihi = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.baslik
-    
+```python
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    yazar = models.ForeignKey('auth.User')
+    baslik = models.CharField(max_length=200)
+    yazi = models.TextField()
+    yaratilis_tarihi = models.DateTimeField(
+            default=timezone.now)
+    yayinlanma_tarihi = models.DateTimeField(
+            blank=True, null=True)
+
+    def yayinla(self):
+        self. yayinlama_tarihi = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.baslik
+```
 
 > `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. Bu tarz Python dilinde sık olarak kullanılır ve bazen "dunder" (duble underscore -- yani alt çizgi) olarak ifade edilir.
 

@@ -39,12 +39,12 @@ Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan b
 
 Template dosyamıza şunları ekleyelim:
 
-    html
-    <html>
-            <p>Merhaba!</p>
-            <p>Çalışıyor!</p>
-    </html>
-    
+```html
+<html>
+        <p>Merhaba!</p>
+        <p>Çalışıyor!</p>
+</html>
+```
 
 Web siteniz şimdi nasıl görünüyor? Öğrenmek için tıklayın: http://127.0.0.1:8000 /
 
@@ -69,17 +69,17 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 
 Örneğin, web sayfasının başlık elemanını `<head>` 'in içine böyle koyabilirsiniz:
 
-    html
-    <html>
-        <head>
-            <title>Ola'nın blogu</title>
-        </head>
-        <body>
-            <p>Merhaba!</p>
-            <p>Çalışıyor!</p>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Ola'nın blogu</title>
+    </head>
+    <body>
+        <p>Merhaba!</p>
+        <p>Çalışıyor!</p>
+    </body>
+</html>
+```
 
 Dosyayı kaydedin ve sayfanızı yenileyin.
 
@@ -111,30 +111,30 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
 
 İşte tam bir şablon örneği:
 
-    html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">İlk Blogum</a></h2>
-                <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">İkinci gönderim</a></h2>
-                <p>mefailün feilatün mefailün feilün. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">İlk Blogum</a></h2>
+            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">İkinci gönderim</a></h2>
+            <p>mefailün feilatün mefailün feilün. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Burada üç tane `div` bölümü oluşturduk.
 
@@ -192,13 +192,14 @@ Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak y�
 
  [5]: https://www.pythonanywhere.com/consoles/
 
-    $ cd ~/my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-    
+```
+$ cd ~/my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
 Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 

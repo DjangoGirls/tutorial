@@ -10,18 +10,18 @@ Görünümler `views.py` doyasına yazılır. Şimdi, `blog/views.py` dosyasına
 
 Dosyayı açıp inceleyelim:
 
-    python 
-    from django.shortcuts import render
-    
-    # Görünümler buraya yzaılacak.
-    
+```python 
+from django.shortcuts import render
+
+# Görünümler buraya yzaılacak.
+```
 
 Henüz fazla bir şey görünmüyor. En basitinden *görünüm* şöyle olabilir.
 
-    python 
-    def post_list(request):     
-        return render(request, 'blog/post_list.html', {})
-    
+```python 
+def post_list(request):     
+    return render(request, 'blog/post_list.html', {})
+```
 
 Burada, `request` i alıp şablonumuzu `blog/post_list.html` ile görüntüleyen `render` metodunu `döndüren` `post_list` isimli bir metod yarattık.
 

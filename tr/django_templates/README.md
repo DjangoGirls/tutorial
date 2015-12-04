@@ -14,9 +14,9 @@ Bir önceki bölümde, şablonumuza `posts` değişkeni içinde gönderiler list
 
 Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvırcık parantezi içinde şu şekilde kullanırız:
 
-    html
-    {{ posts }}
-    
+```html
+{{ posts }}
+```
 
 Bunu `blog/templates/blog/post_list.html` template ile deneyelim. İkinci `<div>` den üçüncü `</div>` e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
@@ -31,11 +31,11 @@ Sadece bunu görüyoruz:
 
 Django bunu bir liste nesne olarak algılamış. Python'a Giriş'ten listelerin nasıl gösteridiğini hatırlayalım. Evet, döngülerle! Bir Django şablonunda böyle yapılır:
 
-    html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
-    
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
 Bunu kendi şablonumuzda deneyelim.
 
@@ -45,19 +45,19 @@ Bunu kendi şablonumuzda deneyelim.
 
 İşe yarıyor! Fakat, bunların daha önce **HTML'e Giriş** bölümde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTLM ve şablon etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
 
-    html
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
-    
+{% endfor %}
+```
 
 {% raw %} `{% for %}` ve `{% endfor %}` arasına koyduğumuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
@@ -73,24 +73,26 @@ Web sitemizin İnternet'te hala çalıştığını görmek iyi bir fikir, değil
 
 *   İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
-    $ git status
-    [...]
-    $ git add -A .
-    $ git status
-    [...]
-    $ git commit -m "Veritabanındaki postları görebilmek için şablonları değiştirdim."
-    [...]
-    $ git push
-    
+```
+$ git status
+[...]
+$ git add -A .
+$ git status
+[...]
+$ git commit -m "Veritabanındaki postları görebilmek için şablonları değiştirdim."
+[...]
+$ git push
+```
 
 *   [PythonAnywhere][4] a bağlanalım ve **Bash konsolu** na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
  [4]: https://www.pythonanywhere.com/consoles/
 
-    $ cd my-first-blog
-    $ git pull
-    [...]
-    
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
 *   Nihayet [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload** a basalım. Şimdi uygulamamız güncellenmiş olmalı!
 
