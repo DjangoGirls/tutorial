@@ -13,7 +13,7 @@ Dosyayı açıp inceleyelim:
 ```python 
 from django.shortcuts import render
 
-# Görünümler buraya yzaılacak.
+# Görünümler buraya yazılacak.
 ```
 
 Henüz fazla bir şey görünmüyor. En basitinden *görünüm* şöyle olabilir.
