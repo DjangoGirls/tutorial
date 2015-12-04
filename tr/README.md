@@ -1,8 +1,6 @@
 # Django Girls Eğitimi
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Bu çalışma Creative Commons Attribution-ShareAlike 4.0 International License altında lisanslanmıştır. Lisansın bir kopyasını görmek için http://creativecommons.org/licenses/by-sa/4.0/ adresini ziyaret edin.
 
@@ -26,7 +24,7 @@ Aşağı yukarı şu şekilde gözükecek:
 
  [2]: images/application.png
 
-> Eğer eğitimi kendi başınıza takip ediyorsanız ve bir problem yaşadığınızda yardım edebilecek bir eğitmeniniz yoksa, sizin için bir chat odamız var:[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
+> Eğer eğitimi kendi başınıza takip ediyorsanız ve bir problem yaşadığınızda yardım edebilecek bir eğitmeniniz yoksa, sizin için bir chat odamız var: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
 
 Tamam, [hadi en baştan başlayalım...][3]
 
