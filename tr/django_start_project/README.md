@@ -17,12 +17,10 @@ Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üz
 MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; ** sonunda nokta `(.)` koymayı unutmayın **:
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
-    
 
 Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
 
     (myvenv) C:\Users\Name\djangogirls > django-admin startproject mysite .
-    
 
 > Nokta `.` çok önemli çünkü şu an bulunduğunuz dizine Django'yu yüklemek için koda söyler. ( nokta `. ` kısayol referansıdır)
 > 
@@ -37,11 +35,10 @@ Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
             urls.py
             wsgi.py
             __init__.py
-    
 
 `manage.py` site yönetimine yardımcı olan bir komut dosyasıdır. Biz bununla bilgisayarımızda diğer şeyler arasında hiçbir şey kurmadan bir web sunucusunu başlatabileceğiz.
 
-`Settings.py` dosyası, web sitesinizin yapılandırmasını içerir.
+`settings.py` dosyası, web sitesinizin yapılandırmasını içerir.
 
 Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver` tarafından kullanılan desenler listesi içerir.
 
@@ -51,19 +48,17 @@ Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştu�
 
 Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
 
-Web sitemizin doğru bir saate sahip olması güzel olurdu. [wikipedia timezones list][2] 'e gidin ve ilgili saat diliminizi (TZ -time zone-) kopyalayın. (örn. `Europe/Berlin` )
+Web sitemizin doğru bir saate sahip olması güzel olurdu. [wikipedia timezones list][2]'e gidin ve ilgili saat diliminizi (TZ -time zone-) kopyalayın. (örn. `Europe/Berlin` )
 
  [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-`settings.py` dosyasında <0>TIME_ZONE</0> ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
+`settings.py` dosyasında `TIME_ZONE` ifadesini içeren satırı bulun ve "Europe/Berlin" yazan kısmı uygun şekilde değiştirerek (örneğin "Europe/Istanbul") kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
 ```python
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-"Europe/Berlin" uygun şekilde değiştirildi
-
-Sabit dosyalar için de bir tane yol eklememiz gerekecek ( Daha sonra eğitimde sabit dosyalar ve CSS hakkında herşeyi öğreneceğiz ). Dosyanın *sonuna* en aşağı `STATIC_URL` girişinin altına gidin ve `STATIC_ROOT` adında bir şey ekleyin:
+Sabit dosyalar için de bir tane yol (path) eklememiz gerekecek (Daha sonra eğitimde sabit dosyalar ve CSS hakkında herşeyi öğreneceğiz). Dosyanın *sonuna* en aşağıya `STATIC_URL` girdisinin altına gidin ve `STATIC_ROOT` adında bir girdi ekleyin:
 
 ```python
 STATIC_URL = '/static/'
@@ -85,7 +80,7 @@ DATABASES = {
 }
 ```
 
-Blogumuzun veritabanını oluşturmak için terminalde şu komutu çalıştırın:`python manage.py migrate` (`manage.py` dosyasının olduğu `djangogirls`'ün içinde olmalıyız ). İşler iyi giderse şöyle bir şey görmelisiniz:
+Blogumuzun veritabanını oluşturmak için terminalde şu komutu çalıştırın:`python manage.py migrate` (komutu çalıştırırken `manage.py` dosyasının olduğu `djangogirls` klasörünün içinde olmalıyız ). İşler iyi giderse şöyle bir şey görmelisiniz:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -107,31 +102,27 @@ Blogumuzun veritabanını oluşturmak için terminalde şu komutu çalıştırı
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying sessions.0001_initial... OK
-    
 
-Bu kadar! Web server'ı çalıştırma ve websitemizin çalıştığını görme zamanı!
+Bu kadar! Şimdi web sunucumuzu ayağa kaldırma ve websitemizin çalıştığını görme zamanı!
 
-`manage.py` dosyasının bulunduğu dizinde olmalıyız (`djangogirls` klasörü). Terminale geçin, `python manage.py runserver` komutunu çalıştırarak web servere başlatabilirsiniz:
+Öncelikle `manage.py` dosyasının bulunduğu dizinde olmalısınız (`djangogirls` klasörü). `python manage.py runserver` komutunu çalıştırarak terminal'den web sunucunuzu başlatabilirsiniz:
 
     (myvenv) ~/djangogirls$ python manage.py runserver
-    
 
 Eğer Windows'taysanız ve `UnicodeDecodeError` hatası varsa, bu komutu kullanın:
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
 
-Şimdi tek yapmanız gereken şey sitenizin çalışıp çalışmadığını kontrol etmek. Tarayıcınızı (Firefox, Chrome, Safari, Internet Explorer ya da ne kullanıyorsanız) açın ve şu adresi girin:
+Şimdi tek yapmanız gereken şey sitenizin çalışıp çalışmadığını kontrol etmek. Tarayıcınızı açın (Firefox, Chrome, Safari, Internet Explorer ya da ne kullanıyorsanız) ve şu adresi girin:
 
     http://127.0.0.1:8000/
-    
 
-Siz durdurana kadar web sunucusu komut istemi alacaktır. Server çalışıyorken daha fazla komut girebilmek için yeni bir terminal penceresi açın ve virtualenv'inizi aktive edin. Web server'ı durdurmak için çalıştığı pencereye tekrar gelin ve CTRL+C ye -Control ve C butonlarına birlikte - basın (Windows için Ctrl+Break'e basmanız gerekiyor olabilir).
+Siz durdurana kadar web sunucusu komut istemi alacaktır. Sunucu çalışıyorken daha fazla komut girebilmek için yeni bir terminal penceresi açın ve virtualenv'inizi aktive edin. Web sunucunuzu durdurmak için çalıştığı pencereye tekrar gelin ve CTRL+C ye - Control ve C butonlarına aynı anda - basın (Windows için Ctrl+Break'e basmanız gerekiyor olabilir).
 
-Tebrikler! ilk websiteni oluşturdun ve web server kullanarak çalıştırdın! Harika, değil mi?
+Tebrikler! ilk websitenizi oluşturdunuz ve bunu bir web sunucusu kullanarak yaptınız! Harika, değil mi?
 
 ![İşte çalışıyor!][3]
 
  [3]: images/it_worked2.png
 
-Sonraki adım için hazır mısın? İçerikleri oluşturma zamanı!
+Sonraki adım için hazır mısınız? İçerikleri oluşturma zamanı geldi!
