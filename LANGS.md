@@ -9,3 +9,4 @@
 * [한국어 (beta)](ko)
 * [Italian (beta)](it)
 * [Magyar (beta)](hu)
+* [Türkçe (beta)](tr)
