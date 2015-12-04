@@ -46,7 +46,7 @@ Lo facciamo creando una cartella denominata `static` all'interno dela nostra app
     │   ├── migrations
     │   └── static
     └── mysite
-    
+
 
 Django troverà automaticamente tutte le cartelle chiamate "static" dentro le cartelle delle tua app, e sarà in grado di utilizzare il loro contenuto come file statici.
 
@@ -59,9 +59,9 @@ Ora, creiamo un file CSS, per poter aggiungere il tuo stile personale al tuo sit
          └─── static
               └─── css
                    └─── blog.css
-    
 
-È il giunto il momento di scrivere un po' di CSS! Apri il file `static/css/blog.css` nel tuo editor di codice.
+
+È giunto il momento di scrivere un po' di CSS! Apri il file `static/css/blog.css` nel tuo editor di codice.
 
 Non ci dilungheremo troppo sul come personalizzare e imparare CSS in questo momento, dal momento che è abbastanza facile e puoi impararlo da solo/a alla fine di questo workshop. Ti raccomandiamo caldamente di seguire questo corso [Codeacademy HTML & CSS course][2] per imparare tutto quello che serve sapere per poter rendere più bello un sito internet con CSS.
 
@@ -189,7 +189,7 @@ E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
 
 ```html
 <div class="post">
-    <p>pubblicato: {{ post.published_date }}</p>
+    <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaks }}</p>
 </div>
@@ -252,7 +252,7 @@ Ora aggiungi all'esterno del codice HTML riguardante i posts all'interno del blo
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>pubblicato: {{ post.published_date }}</p>
+        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
