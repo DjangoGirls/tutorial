@@ -82,7 +82,7 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
 
 ## Pubblichiamo il nostro codice su GitHub
 
-Vai su [GitHub.com][2] e registrati per ottenere un nuovo account gratuito. (se l'hai già fatto nella preparazione di laboratorio, è fantastico!)
+Vai su [GitHub.com][2] e registrati per ottenere un nuovo account gratuito. (Se l'hai già fatto nella preparazione di laboratorio, è fantastico!)
 
 Quindi, crea un nuovo repository, dandogli il nome "my-first-blog". Lascia deselezionata la casella di controllo "initialise with a README", lascia l'opzione di .gitignore vuota (lo abbiamo fatto manualmente) e License su None.
 
@@ -202,12 +202,12 @@ Per ora abbiamo solo bisogno di eseguire un comando supplementare chiamato `coll
         /home/edith/my-first-blog/static
     
     This will overwrite existing files!
-    Sei sicura di volerlo fare?
+    Are you sure you want to do this?
     
-    Digita 'sì' per continuare o 'no' per annullare: sì
+    Type 'yes' to continue, or 'no' to cancel: yes
     
 
-Digita "sì" e si parte! Non ti piace far stampare al computer pagine e pagine di testo incomprensibile? Faccio sempre piccoli versi per accompagnarlo. Brp, brp brp...
+Digita "yes" e si parte! Non ti piace far stampare al computer pagine e pagine di testo incomprensibile? Faccio sempre piccoli versi per accompagnarlo. Brp, brp brp...
 
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
