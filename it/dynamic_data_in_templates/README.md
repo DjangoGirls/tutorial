@@ -1,6 +1,6 @@
 # I dati dinamici nei templates
 
-Abbiamo diversi pezzi: il modello `Post` è definito in `models.py`, abbiamo `post_list` nel file `views.py` ed abbiamo aggiunto il template. Ma come faremo a far comparire i nostri post nel nostro template HTML? Perché è quello che vogliamo: prendere qualche contenuto (modelli salvati nel database) e farlo vedere in modo carino nel nostro template, giusto?
+Abbiamo diversi pezzi: il modello `Post` è definito in `models.py`, abbiamo `post_list` nel file `views.py` ed abbiamo aggiunto il template. Ma come faremo a far comparire i nostri post nel nostro template HTML? Perché questo è quello che vogliamo: prendere qualche contenuto (modelli salvati nel database) e farlo vedere in modo carino nel nostro template, giusto?
 
 Questo è esattamente quello che le *views* dovrebbero fare: collegare i modelli ed i template. Nella nostra `post_list` *view* avremo bisogno di prendere i modelli che vogliamo far vedere e passarli nel template. Quindi praticamente nella *view* decidiamo cosa (modello) renderemo visibile nel template.
 
@@ -35,7 +35,7 @@ Dovresti già sapere come funziona QuerySet. Ne abbiamo parlato nel capitolo [Dj
 Quindi ora ci interessa una lista di post del blog che sono pubblicati e organizzati da `published_date`, giusto? Lo abbiamo già fatto nel capitolo sulle QuerySet!
 
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+
 
 Adesso mettiamo questo pezzo di codice nel file `blog/views.py` aggiungendolo alla funzione `def post_list(request)`:
 
@@ -57,7 +57,7 @@ L'ultima cosa che manca è passare la QuerySet `posts` nel template (ci occupere
 
 Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto quello che riceviamo dal nostro utente via internet) e un file template `'blog/post_list.html'`. Nell'ultimo parametro, che è simile a questo: `{}` possiamo aggiungere cose che il template possa utilizzare. Dobbiamo dargli un nome (ci atterremo a `'posts'` per il momento :)). Si vede così: `{'posts': posts}`. Ti preghiamo di notare che la parte prima di `:` è una stringa; devi metterla tra virgolette `''`.
 
-Finalmente il nostro file `blog/views.py` dovrebbe essere così:
+Il nostro file `blog/views.py` dovrà risultare così:
 
 ```python
 from django.shortcuts import render
