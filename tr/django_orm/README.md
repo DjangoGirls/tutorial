@@ -50,7 +50,7 @@ Daha önce yarattığımız gönderilerin listesi! Bu gönderileri Django yönet
 
 Veritabanına yeni bir gönderi eklemek için:
 
-    >>> Post.objects.create(author=ben, title='Örnek Başlık', text='Test')
+    >>> Post.objects.create(yazar=ben, baslik=u'Örnek Başlık', yazi=u'Test')
     
 
 Ancak bir eksiğimiz var: `ben`. Gönderinin yazar özelliğine `User` modelinden türetilen bir nesneyi parametre olarak vermemiz gerekiyor. Nasıl verebiliriz?
@@ -75,7 +75,7 @@ Gördüğünüz gibi, `username` özelliği 'Ahmet' olan `User` nesnesini `get` 
 
 Gönderimizi artık kaydedebiliriz:
 
-    >>> Post.objects.create(author=ben, title='Örnek Başlık', text='Test')
+    >>> Post.objects.create(yazar=ben, baslik=u'Örnek Başlık', yazi=u'Test')
     
 
 Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
@@ -94,25 +94,27 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 QuerySets in büyük bir parçası nesneleri filtreleyebilme kabiliyetidir. Diyelim ki, kullanıcı Ola tarafından yazılmış tüm gönderileri bulmak istiyoruz. `Post.objects.all()` yapısı içindeki `all` yerine `filter` kullanacağız. Parantez içinde, bir blog gönderisinin sorgu setimizin içinde yer alması için hangi şartı(ları) sağlaması gerektiğini belirteceğiz. Örneğimizde, `author` özelliği `ben` nesnesine eşitti. Django'da bu filtre şöyle yazılır: `author=me`. Şuan bizim kod parçacığımız şöyle görünüyor:
 
-    >>> Post.objects.filter(author=ben)
+    >>> Post.objects.filter(yazar=ben)
     [<Post: Örnek başlık>, <Post: Gönderi Numarası 2>, <Post: Üçüncü postum!>, <Post: Gönderinin dördüncü başlığı>]
     
 
 Ya da belki `title` alanında içinde 'başlık' kelimesini içeren tüm gönderileri görmek istiyoruz?
 
-    >>> Post.objects.filter(title__contains='başlık')
+    >>> Post.objects.filter(baslik__contains=u'başlık')
     [<Post: Örnek başlık>, <Post: gönderinin dördüncü başlığı>]
     
 
-> **Not** `title` and `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Sadece tek alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" hatası alırsınız.
+> **Not** `baslik` ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("baslik") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Sadece tek alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" hatası alırsınız.
 
-Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `published_date` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
+Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `yayinlanma_tarihi` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone     
+    >>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()) 
+    []
 
 Maalesef, Python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Bunu değiştirebiliriz! İlk olarak yayınlamak istediğimiz gönderinin bir örneğini alalım:
 
-    >>> post = Post.objects.get(title="Örnek başlık")
+    >>> post = Post.objects.get(baslik=u"Örnek başlık")
     
 
 Ardından `publish` metodu ile gönderiyi yayınlayalım!
