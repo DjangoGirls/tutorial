@@ -2,4 +2,4 @@
 
 > **Not** Eğer kurulum adımlarını zaten yaptıysanız diğer adıma geçebilirsiniz!
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}

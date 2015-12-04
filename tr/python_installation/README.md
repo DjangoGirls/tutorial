@@ -10,4 +10,4 @@ Python'un kökleri 1980'li yılların sonlarına dayanmaktadır ve ana hedefi sa
 
 > **Not** Eğer kurulum aşamalarını zaten tamamladıysanız, tekrar yapmanıza gerek yok - direkt olarak diğer aşamaya geçebilirsiniz!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
