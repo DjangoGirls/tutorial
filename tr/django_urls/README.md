@@ -67,7 +67,7 @@ Her gönderi için ayrı bir görünüm yazmak hakkaten can sıkıcı olurdu. D�
 
 ## İlk Django url'niz!
 
-İlk URL'imizi oluşturma zamanı! 'http://127.0.0.1:8000/'ın blogumuzun ana sayfası olmasını istiyoruz ve bize bir gönderi listesi göstermesini istiyoruz.
+İlk URL'imizi oluşturma zamanı! 'http://127.0.0.1:8000/' adresinin blogumuzun ana sayfası olmasını istiyoruz ve bize bir gönderi listesi göstermesini istiyoruz.
 
 Aynı zamanda `mysite/urls.py` dosyasını basit tutmak istiyoruz, bunun için ana `mysite/urls.py` dosyasına `blog` uygulamamızdan url'leri import edeceğiz (içeri alacağız).
 
@@ -85,7 +85,7 @@ urlpatterns = [
 ]
 ```
 
-Django artık 'http://127.0.0.1:8000/'ye gelen herşeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
+Django artık 'http://127.0.0.1:8000/' adresine gelen herşeyi `blog.urls`'e yönlendirecek ve oradaki yönergelere bakacak.
 
 Python'da düzenli ifadeler her zaman string'in başına `r` ekleyerek yapılır. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
 
@@ -112,7 +112,7 @@ Gördüğünüz üzere, `^$` URL'sine `post_list` adında bir `view` (görünüm
 
 Son kısım olan `name='post_list'` görünümü (view'ü) tanımlamak için kullanılan URL'nin adı. Bu görünümün adı ile aynı olabilir ama tamamen farklı birşey de olabilir. Named URL'leri (isimlendirilmiş URL'leri) projenin ilerleyen kısımlarında kullanacağız, o yüzden uygulamadaki her URL'yi isimlendirmemiz önemli. Aynı zamanda URL isimlerini tekil ve kolay hatırlanabilir yapmamız gerekir.
 
-Herşey tamam mı? Tarayıcınızda http://127.0.0.1:8000/'ye gidin ve sonuçları görün.
+Herşey tamam mı? Tarayıcınızda http://127.0.0.1:8000/' adresine gidin ve sonuçları görün.
 
 ![Hata][2]
 
@@ -120,6 +120,6 @@ Herşey tamam mı? Tarayıcınızda http://127.0.0.1:8000/'ye gidin ve sonuçlar
 
 Artık "It works" demiyor, di mi? Meraklanmayın, sadece bir hata sayfası, korkacak birşey yok! Aslında çok kullanışlılar:
 
-Sayfada gördüğünüz şey: **no attribute 'post_list'**. *post_list* size birşey hatırlatıyor mu? Bu görünümüzün ismi! Bu herşey yerli yerinde sadece henüz *view*'ümüz yok manasına geliyor. Hiç merak etmeyin, oraya geleceğiz.
+Sayfada gördüğünüz şey: **no attribute 'post_list'**. Peki *post_list* size birşey hatırlatıyor mu? Bu görünümüzün ismi! Bu herşey yerli yerinde sadece henüz *view*'ımız yok manasına geliyor. Hiç merak etmeyin, oraya da geleceğiz.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.8/topics/http/urls/
