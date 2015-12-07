@@ -14,18 +14,18 @@ Eğer bir kediyi modellemek istiyorsak `Kedi` nesnesini oluştururuz ve bu nesne
 
     Kedi
      --------
-    renk 
-    yaş 
-    ruh_hali 
-    sahibi 
-    miyavla() 
-    tırmala() 
-    beslen(kedi_maması) 
-    
+    renk
+    yaş
+    ruh_hali
+    sahibi
+    miyavla()
+    tırmala()
+    beslen(kedi_maması)
+
     KediMaması
-     -------- 
+     --------
     tat
-    
+
 
 Yani aslında ana fikir, gerçek nesneleri kod içinde özellikleriyle (`nesne özellikleri`) ve hareketleriyle (`metodlar`) tanımlamak.
 
@@ -42,7 +42,7 @@ Tabii ki blog gönderimizin (post) içeriği için bir metin, bir de başlık la
     yazar
     yaratma_tarihi
     yayinlama_tarihi
-    
+
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `metod` olması güzel olurdu, değil mi?
 
@@ -60,10 +60,10 @@ Veritabanındaki bir modeli, sütünları (alan adı) ve satırları (veri) olan
 
 ### Uygulama Oluşturma
 
-Herşeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Herşeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor (`manage.py` dosyasının olduğu `djangogirls` klasörünün içinde olmalıyız): 
+Herşeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Herşeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor (`manage.py` dosyasının olduğu `djangogirls` klasörünün içinde olmalıyız):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 Yeni bir `blog` klasörü ve içinde bir kaç dosya oluştuğunu fark edeceksiniz. Projemizdeki klasörler ve dosyalar şöyle olmalı:
 
@@ -82,7 +82,7 @@ Yeni bir `blog` klasörü ve içinde bir kaç dosya oluştuğunu fark edeceksini
         ├── models.py
         ├── tests.py
         └── views.py
-    
+
 
 Bir uygulama oluşturduktan sonra, Django'ya bunu kullanmasını da söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS` girdisini bulup `'blog'`u tam `)` karakterinin üzerine yazmamız lazım. Sonunda yüklenilen uygulamalar (INSTALLED_APPS) listesi şuna benzemelidir:
 
@@ -161,7 +161,7 @@ Son adımımız yeni modelimizin veritabanına eklemesini sağlamak. İlk önce 
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 Django bize bir migrasyon dosyası oluşturdu ve bunu veritabanımıza uygulamamız lazım. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
@@ -171,6 +171,6 @@ Django bize bir migrasyon dosyası oluşturdu ve bunu veritabanımıza uygulamam
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+
 
 Yaşasın! Post modelimiz artık veritabanımızda! Görsek ne güzel olur, değil mi? Gelecek bölümde Post'un nasıl göründügünü göreceğiz!
