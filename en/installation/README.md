@@ -32,7 +32,7 @@ Go to [GitHub.com](http://www.github.com) and sign up for a new, free user accou
 
 # Start reading
 
-Congratulations, you are are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
