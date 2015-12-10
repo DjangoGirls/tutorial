@@ -101,7 +101,7 @@ Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:
 
 Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir şey için hazır mısın? İddiaya gireriz öylesin!
 
-## Errors - Hatalar
+## Errors (Hatalar)
 
 Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bu görmek için `len(304023)` yazıp `enter`a basalım:
 
@@ -120,11 +120,11 @@ Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir ş
 İşe yaradı! `str` fonksiyonunu `len` fonksiyonunun içinde kullandık. `str` her şeyi string'e çeviriyor.
 
 *   `str` fonksiyonu, değişkenleri **stringe** çeviriyor
-*   `int` fonksiyonu değişkenleri **integera** çeviriyor
+*   `int` fonksiyonu değişkenleri **integera**(tamsayıya) çeviriyor
 
 > Önemli: Tamsayıları yazıya çevirebiliriz, fakat yazıları(text) sayılara çeviremeyiz - `int('selamlar')` bir anlam ifade etmiyor.
 
-## Değişkenler
+## Variables(Değişkenler)
 
 Programlamada en önemli konulardan biri değişkenlerdir. Değişken, daha sonra kullanmak istediğiniz bir yapıya verdiğiniz isimdir. Programcılar değişkenleri verileri tutmak ya da kodlarını daha okunabilir ve anlaşılabilir kılmak için kullanırlar ve böylece her şeyi sürekli akıllarında tutmaya gerek kalmaz.
 
@@ -190,7 +190,7 @@ Sadece `name` yazdığınız zaman, Python yorumlayıcısından 'name' değişke
 
 Daha ileride göreceğimiz gibi `print()`, işlevlerin içindeyken bir şey yazdırmak istediğimizde ya da bazı şeyleri birden fazla satırda yazdırmak istediğimizde de kullanışlıdır.
 
-## Listeler
+## Lists(Listeler)
 
 Python, string ve integerın yanı sıra, çok değişik türlerde nesnelere sahiptir. Şimdi, **list** türünü tanıtacağız. Listeler tam da düşündüğünüz gibidir: diğer nesnelerin listesi olan nesne :)
 
@@ -265,9 +265,9 @@ Daha fazla eğlence için diğer indeksleri de deneyin: 6, 7, 1000, -1, -6 veya 
 
 Bütün liste fonksiyonlarını Python dökümantasyonunun bu bölümünde bulabilirsin: https://docs.python.org/3/tutorial/datastructures.html
 
-## Sözlükler
+## Dictionaries(Sözlükler)
 
-Sözlük listeye benzerdir ancak sözlük değerlerine indeks yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:
+Dictionary(Sözlük) listeye benzerdir ancak sözlük değerlerine indeks(indis) yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:
 
     >>> {}
     {}
@@ -303,7 +303,7 @@ Python'a olmayan bir anahtarın değerini sorarsak ne olur? Tahmin edebiliyor mu
     KeyError: 'age'
     
 
-Bir başka hata! **KeyError** hatası. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
+Bir başka hata! **KeyError**(Anahtar hatası) verdi. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
 
 Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satırdaki cevaba bakmadan önce kafanızda bir çözüm oluşturun.
 

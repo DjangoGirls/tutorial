@@ -133,7 +133,8 @@ Windows:
 
 Gerçekten değişmiş mi bir bakalım:
 
-    $ pwd /Users/olasitarska/Masaüstü
+    $ pwd
+     /Users/olasitarska/Masaüstü
     
 
 Windows:
@@ -208,7 +209,8 @@ Windows:
 
 Nerede olduğunuzu kontrol edin:
 
-    $ pwd /Users/olasitarska/Masaüstü
+    $ pwd 
+    /Users/olasitarska/Masaüstü
     
 
 Windows:
