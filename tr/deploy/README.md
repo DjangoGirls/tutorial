@@ -50,6 +50,7 @@ db.sqlite3
 Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
 > **Not** Dosya adının başındaki nokta önemli! Eğer dosyayı oluştururken zorlanırsanız (örneğin Mac'ler Finder ile nokta ile başlayan dosya yaratmanızdan hoşlanmıyor), editörünüzdeki "Farklı Kaydet" özelliğini kullanın, kesin çalışır.
+> **Not** db.sqlite3 dosyası .gitignore dosyasının içinde belirlediğiniz dosyalardan biridir. Bu dosya yerel -sizin bilgisayarınızdaki- tüm bilgileri depoladığınız veritabanıdır. PythonAnywhere'deki websiteniz farklı bir veritabanı kullanacağından,  bu dosyayı kod reponuza eklemek istemiyoruz. Bu farklı veritabanı SQLite olabilir -sizin geliştirmede kullandığınız gibi- ama genellikle SQLite'dan daha çok site ziyaretçisini kabul edebilen MySQL veritabanını kullanacağız. Ayrıca Github'daki kopyanızda SQLite veritabanınızı göz ardı ettiğinizde, yarattığınız postlar kendi bilgisayarınızda kalarak sadece yerel olarak ulaşılacaktır. Ama bu verileri uygulamanıza (production) ekleyebilirsiniz. Yerel veritabanınızı iyi bir oyun alanı gibi düşünebilirsiniz, farklı şeyler deneyebilecek, blogunuzdaki gerçek postları silmekten korkmayacaksınız.
 
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 

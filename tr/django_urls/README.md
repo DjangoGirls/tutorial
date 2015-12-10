@@ -110,7 +110,7 @@ urlpatterns = [
 
 Gördüğünüz üzere, `^$` URL'sine `post_list` adında bir `view` (görünüm) atıyoruz. Bu düzenli ifade `^` (başlangıç) ve `$` (bitiş)'e uyan stringlerle eşleşir - yani sadece boş string'lerle eşleşir. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
-Son kısım olan `name='post_list'` görünümü (view'ü) tanımlamak için kullanılan URL'nin adı. Bu görünümün adı ile aynı olabilir ama tamamen farklı birşey de olabilir. Named URL'leri (isimlendirilmiş URL'leri) projenin ilerleyen kısımlarında kullanacağız, o yüzden uygulamadaki her URL'yi isimlendirmemiz önemli. Aynı zamanda URL isimlerini tekil ve kolay hatırlanabilir yapmamız gerekir.
+Son kısım olan `name='post_list'` görünümü (view'ü) tanımlamak için kullanılan URL'nin adı. Bu görünümün adı ile aynı olabilir ama tamamen farklı birşey de olabilir. İsimlendirilmiş URL'leri (named URLs) projenin ilerleyen kısımlarında kullanacağız, o yüzden uygulamadaki her URL'yi isimlendirmemiz önemli. Aynı zamanda URL isimlerini tekil ve kolay hatırlanabilir yapmamız gerekir.
 
 Herşey tamam mı? Tarayıcınızda http://127.0.0.1:8000/' adresine gidin ve sonuçları görün.
 
@@ -120,6 +120,6 @@ Herşey tamam mı? Tarayıcınızda http://127.0.0.1:8000/' adresine gidin ve so
 
 Artık "It works" demiyor, di mi? Meraklanmayın, sadece bir hata sayfası, korkacak birşey yok! Aslında çok kullanışlılar:
 
-Sayfada gördüğünüz şey: **no attribute 'post_list'**. Peki *post_list* size birşey hatırlatıyor mu? Bu görünümüzün ismi! Bu herşey yerli yerinde sadece henüz *view*'ımız yok manasına geliyor. Hiç merak etmeyin, oraya da geleceğiz.
+Sayfada gördüğünüz şey: **no attribute 'post_list'**. Peki *post_list* size birşey hatırlatıyor mu? Bu görünümüzün ismi! Bu herşey yerli yerinde sadece henüz *view*'ımız (görünümümüz) yok manasına geliyor. Hiç merak etmeyin, oraya da geleceğiz.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.8/topics/http/urls/

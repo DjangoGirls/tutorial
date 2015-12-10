@@ -82,7 +82,7 @@ h1 a {
 
 `h1 a` bir CSS Seçicisidir (Selector). Bu demek oluyor ki biz stilimizi, bir `h1` öğesi içerisinde olan tüm `a` öğelerine (örneğin kodumuzun içerisinde `<h1><a href="">link</a></h1>` gibi bir şey olduğunda) uyguluyoruz. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `class`(sınıf) özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Class ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
 ```html
 <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">

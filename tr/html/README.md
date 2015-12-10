@@ -147,7 +147,7 @@ Bize yaşattığı duygu:
 
  [4]: images/step6.png
 
-Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi ** görüntüledi - öncesinde ise şablonların b **farklı** bilgiyi **aynı formatta** görüntülememize izin verdiğinden bahsetmiştik.
+Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi ** görüntüledi - öncesinde ise şablonların **farklı** bilgiyi **aynı formatta** görüntülememize izin verdiğinden bahsetmiştik.
 
 Gerçekten yapmak istediğimiz ise Django adminde ekli gerçek gönderileri göstermek - ve bir sonraki adımımız da bu.
 
@@ -157,7 +157,7 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
 ### Kodumuzu commit ve push ile Github'a yükleyelim
 
-İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
+İlk önce son yayınlamadan (deployment) sonra hangi dosyaların değiştiğine bakalım. Bu komutları yerel(local) bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
     $ git status
     
@@ -203,7 +203,7 @@ $ source myvenv/bin/activate
 
 Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 
-*   Son olarak, [Web sekmesi][6]ne gidip uygulamanızın **Yenile** butonuna basın.
+*   Son olarak, [Web sekmesi][6]ne gidip uygulamanızın **Reload(Yenile)** butonuna basın.
 
  [6]: https://www.pythonanywhere.com/web_app_setup/
 
