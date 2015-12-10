@@ -8,7 +8,7 @@ QuerySet, esas olarak, verilen bir modelin nesnelerinin listesidir. QuerySet ver
 
 En kolayı örnekle öğrenmektir. Hadi deneyelim, olur mu?
 
-## Django çekirdeği
+## Django çekirdeği(shell)
 
 Lokal konsolumuzu açalım (PythonAnywhere'de değil) ve şu komutu yazalım:
 
@@ -92,7 +92,7 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 ### Nesneleri filtrelemek
 
-QuerySets in büyük bir parçası nesneleri filtreleyebilme kabiliyetidir. Diyelim ki, kullanıcı Ola tarafından yazılmış tüm gönderileri bulmak istiyoruz. `Post.objects.all()` yapısı içindeki `all` yerine `filter` kullanacağız. Parantez içinde, bir blog gönderisinin sorgu setimizin içinde yer alması için hangi şartı(ları) sağlaması gerektiğini belirteceğiz. Örneğimizde, `author` özelliği `ben` nesnesine eşitti. Django'da bu filtre şöyle yazılır: `author=me`. Şuan bizim kod parçacığımız şöyle görünüyor:
+QuerySets in büyük bir parçası nesneleri filtreleyebilme kabiliyetidir. Diyelim ki, kullanıcı Ola tarafından yazılmış tüm gönderileri bulmak istiyoruz. `Post.objects.all()` yapısı içindeki `all` yerine `filter` kullanacağız. Parantez içinde, bir blog gönderisinin sorgu setimizin içinde yer alması için hangi şartı(ları) sağlaması gerektiğini belirteceğiz. Örneğimizde, `yazar` özelliği `ben` nesnesine eşitti. Django'da bu filtre şöyle yazılır: `yazar=ben`. Şuan bizim kod parçacığımız şöyle görünüyor:
 
     >>> Post.objects.filter(yazar=ben)
     [<Post: Örnek başlık>, <Post: Gönderi Numarası 2>, <Post: Üçüncü postum!>, <Post: Gönderinin dördüncü başlığı>]
@@ -117,28 +117,28 @@ Maalesef, Python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Bunu d
     >>> post = Post.objects.get(baslik=u"Örnek başlık")
 
 
-Ardından `publish` metodu ile gönderiyi yayınlayalım!
+Ardından `yayinla` metodu ile gönderiyi yayınlayalım!
 
-    >>> post.publish()
+    >>> post.yayinla()
 
 
 Şimdi yayınlanmış gönderileri tekrar almaya çalışalım (3 kez yukarı yön ve ardından `enter` tuşuna basın):
 
-    >>> Post.objects.filter(published_date__lte=timezone.now())
+    >>> Post.objects.filter(yayinlama_tarihi__lte=timezone.now())
     [<Post: Örnek başlık>]
 
 
 ### Nesneleri Sıralama
 
-QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `created_date` özelliğine göre sıralamayı deneyelim:
+QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `yaratilis_tarihi` özelliğine göre sıralamayı deneyelim:
 
-    >>> Post.objects.order_by('created_date')
+    >>> Post.objects.order_by('yaratilis_tarihi')
     [<Post: Örnek başlık>, <Post: Gönderi Numarası 2>, <Post: Üçüncü postum!>, <Post: Gönderinin dördüncü başlığı>]
 
 
 Başlangıçta `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 
-    >>> Post.objects.order_by('-created_date')
+    >>> Post.objects.order_by('-yaratilis_tarihi')
     [<Post: Gönderinin dördüncü başlığı>, <Post: Üçüncü postum!>, <Post: Gönderi Numarası 2>, <Post: Örnek başlık>]
 
 
@@ -146,7 +146,7 @@ Başlangıçta `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 
 Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    >>> Post.objects.filter(yayinlama_tarihi__lte=timezone.now()).order_by('published_date')
 
 
 Zincirleme gerçekten çok güçlüdür ve oldukça kompleks sorgular yazmanıza imkan sağlar.

@@ -38,15 +38,15 @@ Tabii ki blog gönderimizin (post) içeriği için bir metin, bir de başlık la
     Post
     ------
     baslik
-    icerik
+    yazi
     yazar
-    yaratma_tarihi
+    yaratilis_tarihi
     yayinlama_tarihi
 
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `metod` olması güzel olurdu, değil mi?
 
-Bu yüzden `publish` yöntemine ihitiyacımız olacak.
+Bu yüzden `yayinla` yöntemine ihtiyacımız olacak.
 
 Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye başlayalım!
 
