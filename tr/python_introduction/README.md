@@ -38,7 +38,7 @@ Bunları biraz kurcalayıp eğlen, sonra tekrar burada buluşalım :).
 
 Gördüğün üzere Python çok iyi bir hesap makinesi. Eğer başka neler yapabileceğini merak ediyorsan...
 
-## String'ler (dizeler)
+## String'ler (dizgiler)
 
 Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:
 
@@ -46,7 +46,7 @@ Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:
     'Ola'
     
 
-İlk string'ini oluşturdun! String (katar), bilgisayar tarafından işlenebilen ve karakterlerden oluşan dizilerin genel adıdır. Bir string her zaman aynı özel karakterle başlamalı ve aynı özel karakterle bitmelidir. Tek tırnak (`'`) veya çift tırnak (`"`) olabilir (aralarında herhangi bir fark yok!). Tırnak işaretleri Python'da içlerinde olan şeyin bir string olduğunu ifade eder.
+İlk string'ini oluşturdun! String (dizgi), bilgisayar tarafından işlenebilen ve karakterlerden oluşan dizilerin genel adıdır. Bir string her zaman aynı özel karakterle başlamalı ve aynı özel karakterle bitmelidir. Tek tırnak (`'`) veya çift tırnak (`"`) olabilir (aralarında herhangi bir fark yok!). Tırnak işaretleri Python'da içlerinde olan şeyin bir string olduğunu ifade eder.
 
 Stringler birbirlerine eklenebilir. Şunu dene:
 
@@ -60,7 +60,7 @@ Ayrıca stringleri bir sayı ile çarpabilirsin:
     'OlaOlaOla'
     
 
-Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için iki seçeneğin var.
+Eğer stringinin içerisine kesme işareti koymak istiyorsan, bunun için iki seçeneğin var.
 
 Çift tırnak kullanarak:
 
@@ -68,7 +68,7 @@ Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için 
     "Runnin' down the hill"
     
 
-veya sola eğik çizgi (``) kullanarak:
+veya sola eğik çizgi (\) kullanarak:
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
@@ -80,7 +80,7 @@ Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazm
     'OLA'
     
 
-Stringin üzerinde `upper` **fonksiyon**unu kullandın! Bir fonksiyon (`upper()` gibi) , çağırıldığında(calling) Python'un bir obje (`"Ola"`) üzerinde gerçekleştirmesi gereken bir dizi işleme denilir.
+Stringin üzerinde `upper` **fonksiyon**unu kullandın! Fonksiyon (`upper()` gibi) , çağırıldığında(calling) Python'un verilen bir obje (`"Ola"`) üzerinde gerçekleştirmesi gereken bir dizi işleme denilir.
 
 Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir fonksiyon var!
 
@@ -88,7 +88,7 @@ Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir f
     3
     
 
-Fonksiyonları bazen string sonunda bir `.` ile (`"Ola".upper()` gibi) ve bazen önce fonksiyonu çağırıp sonra parantezler içerisine stringi yerleştirerek kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela `upper()`, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz **method** ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı `len()` gibi. İşte bu nedenle `"Ola"` stringini `len` fonksiyonuna bir parametre olarak veriyoruz.
+Fonksiyonları neden bazen stringin sonunda bir `.` ile (`"Ola".upper()` gibi) ve bazen de önce fonksiyonu çağırıp sonra parantez içerisine stringi yazarak kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela `upper()`, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz **method** ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı `len()` gibi. İşte bu nedenle `"Ola"` stringini `len` fonksiyonuna bir parametre olarak veriyoruz.
 
 ### Özet
 
@@ -238,7 +238,7 @@ Kolay, değil mi? Listeye yeni bir eleman eklemek isterseniz, bu komutu yazarak 
     [59, 42, 30, 19, 12, 3, 199]
     
 
-Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indeksler) ile yapabilirsiniz. İndeks elemanın listede nerede olduğunu belirten numaradır. Programcılar sıfırdan başlamayı tercih ederler, bu yüzden listedeki ilk eleman listenin 0. indeksindedir, sonraki 1. indeksindedir ve böyle devam eder. Şunu deneyin:
+Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indisler) ile yapabilirsiniz. İndis elemanın listede nerede olduğunu belirten numaradır. Programcılar sıfırdan başlamayı tercih ederler, bu yüzden listedeki ilk eleman listenin 0. indeksindedir, sonraki 1. indeksindedir ve böyle devam eder. Şunu deneyin:
 
     >>> print(lottery[0])
     59
@@ -714,7 +714,7 @@ Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
 
 Bu da zaten son parça. Hızlı oldu, değil mi? :)
 
-Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selam istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
+Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatikleştirmek ise, herkesin ismini tek tek elle yazarak selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
 
 Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 

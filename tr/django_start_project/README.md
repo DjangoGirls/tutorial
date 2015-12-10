@@ -40,7 +40,7 @@ Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
 
 `settings.py` dosyası, web sitesinizin yapılandırmasını içerir.
 
-Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver` tarafından kullanılan desenler listesi içerir.
+Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver` tarafından kullanılan url örnekleri listesi içerir.
 
 Şu an için değişiklik yapmayacağımız diğer dosyaları yoksayalım. Unutmamanız gereken tek şey kazayla onları silmeyin!
 

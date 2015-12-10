@@ -6,7 +6,7 @@ Django, Python ile yazılmıştır. Django ile bir şey yapmak için Python dili
 
 Windows için Python indirmek için resmi siteyi ziyaret edebilirsiniz: https://www.python.org/downloads/release/python-343/. ***.msi** dosyasını indirdikten sonra, dosyayı çalıştırın (çift-tık) ve yönergeleri izleyin. Python kurulumunu yaptığınız dizinin yolunu unutmamanız önemli. Daha sonra lazım olacak!
 
-Dikkat: Özelleştir olarak seçilmiş kurulum sihirbazının ikinci ekranında seçenekleri aşağıya kaydırın ve "Add python.exe to the Path" (python.exe yolunu ekle) seçeneğini seçin:
+Dikkat: "Customize" (Özelleştir) olarak seçilmiş kurulum sihirbazının ikinci ekranında seçenekleri aşağıya kaydırın ve "Add python.exe to the Path" (python.exe yolunu ekle) seçeneğinin üzerine gelip "Will be installed on local hard drive" seçeneğini seçin:  
 
 ![Python'u arama yoluna eklemeyi unutmayın](../python_installation/images/add_python_to_windows_path.png)
 
@@ -45,7 +45,7 @@ Terminalde kullanmanız gereken komut:
 
 Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-342/:
 
-  * *Mac OS X 64-bit/32-bit yükleyici* dosyasını indirin,
+  * *Mac OS X 64-bit/32-bit installer* dosyasını indirin,
   * *python-3.4.3-macosx10.6.pkg* dosyasına çift tıklayarak yükleyiciyi çalıştırın.
 
 Kurulumun başarılı olup olmadığını kontrol etmek için *Terminal* uygulamasını açın ve aşağıdaki `python3` komutunu çalıştırın:

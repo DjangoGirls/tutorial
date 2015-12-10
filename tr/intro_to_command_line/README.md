@@ -28,7 +28,7 @@ Uygulamalar → Araçlar → Terminal.
 
 Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet'te arayın :)
 
-## İstemci
+## Komut İstemi
 
 Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
 
@@ -45,6 +45,10 @@ Windows'da ise `>` işareti göreceksiniz, bunun gibi:
 Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır :)
 
 > Ufak bir not: sizin durumunuzda bu `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` ve benzeri bir şekilde olabilir ve bu kesinlikle doğru. Bu eğitimde bunu sade ve basit bir şekilde anlatacağız.
+
+Yukarıdaki $ ve > işaretlerini gösteren kısım komut istemi ya da kısaca istemci diye adlandırılır. Sizden girdi isteminde bulunur.
+
+Eğitim boyunca, komut yazmanızı istediğimizde $ ve > kısımlarını yazmanıza gerek yok, kalan kısmı yazmanızı isteyeceğiz.
 
 ## İlk komutunuz(Yaşasın!)
 
