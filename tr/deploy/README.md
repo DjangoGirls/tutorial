@@ -34,7 +34,6 @@ Git, kod reposu (veya "repository") denen belli dosyaların değişikliklerini i
     Initialized empty Git repository in ~/djangogirls/.git/ 
     $ git config --global user.name "Adınız" 
     $ git config --global user.email you@example.com
-    
 
 Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (ayrıca kullanıcı adı ve eposta adresini tekrar girmenize gerek olmayacak).
 
@@ -68,7 +67,6 @@ Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
              mysite/ 
     
     nothing added to commit but untracked files present (use "git add" to track)
-    
 
 Ve son olarak değişikliklerimizi kaydediyoruz. Konsole gidin ve aşağıdaki komutları çalıştırın:
 
@@ -79,7 +77,6 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Konsole gidin ve aşağıdaki k
      create mode 100644 .gitignore
      [...]
     create mode 100644 mysite/wsgi.py
-    
 
 ## Kodunuzu Github'a gönderme
 
@@ -105,7 +102,6 @@ Aşağıdakini konsolounuza yazın (`<github-kullanıcı-adınız>` kısmını G
 
     $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
     $ git push -u origin master
-    
 
 Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer birşey görmeniz gerekiyor:
 
@@ -117,7 +113,6 @@ Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer b
     To https://github.com/hjwp/my-first-blog.git 
      * [new branch] master -> master 
     Branch master set up to track remote branch master from origin.
-    
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -141,7 +136,6 @@ PythonAnywhere'de hesap açtığınızda, 'dashboard' sayfanıza veya "Consoles"
 Reponuzun bir klonunu yaratarak kodumuzu Github'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna yazın (`<github-kullanıcı-adınız>` yerine kendı Github kullanıcı adınızı yazmayı unutmayın):
 
     $ git clone https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
-    
 
 Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blogum` yazarak kontrol edin:
 
@@ -162,7 +156,6 @@ Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blo
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
 
 ### PythonAnywhere üzerine bir virtualenv oluşturmak
 
@@ -195,7 +188,7 @@ Successfully installed django-1.8.2 whitenoise-2.0
 
 Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dosyalar konusuna biraz daha fazla gireceğiz.
 
-Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucdaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
+Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucudaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
 
     (mvenv) $ python manage.py collectstatic
     
@@ -208,7 +201,6 @@ Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dos
     Are you sure you want to do this?
     
     Type 'yes' to continue, or 'no' to cancel: yes
-    
 
 "yes" yazın ve işte başladı! Bilgisayarlara sayfa sayfa yazı yazdırmayı sevmiyor musunuz? Ben hep beraberinde küçük küçük sesler çıkarırım. Trr, trr, trr...
 
@@ -218,7 +210,6 @@ Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dos
     Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/ilk-blogum/static'.
-    
 
 ### PythonAnywhere üzerinde veritabanının oluşturulması
 
@@ -233,7 +224,6 @@ Sunucudaki veritabanına aynen bilgisayardaki gibi `migrate` ve `createsuperuser
     
     
     (mvenv) $ python manage.py createsuperuser
-    
 
 ## Blog'umuzu web uygulaması olarak yayınlama
 
@@ -261,16 +251,15 @@ Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına 
 
 Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de desteklediği Python kullanan websitelerinin servis edilmesi için kullanılan bir standart. PythonAnywhere'in Django blogumuzu anlaması için WSGI ayar dosyasını düzenleyiyoruz.
 
-"WSGI Configuration file" (WSGI ayar dosyası) linkine tıklayın ("Code" denen kısımda, sayfanın üst tarafında -- adı `/var/www/<kullanıcı-adınız>_pythonanywhere_com_wsgi.py`'a benzer birşey olacak). Burdan bir edöitöre yönlendirileceksiniz.
+"WSGI Configuration file" (WSGI ayar dosyası) linkine tıklayın ("Code" denen kısımda, sayfanın üst tarafında -- adı `/var/www/<kullanıcı-adınız>_pythonanywhere_com_wsgi.py`'a benzer birşey olacak). Burdan bir editöre yönlendirileceksiniz.
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-```
-python
+```python
 import os
 import sys
 
-path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burda keni kullanıcı adınızı yazın
+path = '/home/<kullanıcı-adınız>/ilk-blogum'  # buraya kendi kullanici adinizi yazin
 if path not in sys.path:
     sys.path.append(path)
 

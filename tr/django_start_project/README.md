@@ -1,7 +1,7 @@
 # İlk Django projen!
 
 > Bu bölümün kaynağı Geek Girls Carrots (http://django.carrots.pl/) tutorial'ıdır.
-> 
+>
 > Bölümün parçaları Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslı [django-marcador tutorial][1]'a dayanılarak hazırlanmıştır. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
 
  [1]: http://django-marcador.keimlink.de/
@@ -23,7 +23,7 @@ Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
     (myvenv) C:\Users\Name\djangogirls > django-admin startproject mysite .
 
 > Nokta `.` çok önemli çünkü şu an bulunduğunuz dizine Django'yu yüklemek için koda söyler. ( nokta `. ` kısayol referansıdır)
-> 
+>
 > **Not** Yukarıdaki komutları yazarken sadece `django-admin` veya `django-admin.py` ile başlayan bölümü yazmayı unutmayın. Burada gösterilen `(myvenv) ~/djangogirls$` and `(myvenv) C:\Users\Name\djangogirls>` kısımları komut satırınızdaki girdilerinizi çağıracak olan komut isteği örnekleridir.
 
 `django-admin.py` sizin için dosya ve dizinler oluşturacak bir komut dosyasıdır. Şimdi aşağıdaki gibi görünen bir dizin yapınız olmalı:
