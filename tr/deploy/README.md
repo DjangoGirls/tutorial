@@ -256,7 +256,7 @@ Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de 
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-```
+``` python
 import os
 import sys
 

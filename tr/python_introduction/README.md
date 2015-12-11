@@ -4,7 +4,7 @@
 
 Biraz kod yazalım!
 
-## Python komut istemi (prompt)
+## Python komut istemcisi (prompt)
 
 Python'la oynamaya başlamadan önce bilgisayarımızda bir *komut satırı* açmamız gerekiyor. Bunu nasıl yapacağınızı artık biliyorsunuz, [Komut satırına giriş][1] bölümünde öğrenmiştiniz.
 
@@ -22,7 +22,7 @@ Bir Python konsolu açmak istiyoruz; öyleyse Windows'ta `python`, Mac OS/Linux'
 
 ## İlk Python komutunuz!
 
-Python komutunu çalıştırdıktan sonra, komut istemi `>>>` şeklinde değişti. Bizim için bu, şimdi yalnızca Python dilinde komutlar kullanabileceğimiz anlamına geliyor. `>>>` yazmanıza gerek yok, Python sizin için bunu yapıyor.
+Python komutunu çalıştırdıktan sonra, komut istemcisi `>>>` şeklinde değişti. Bizim için bu, şimdi yalnızca Python dilinde komutlar kullanabileceğimiz anlamına geliyor. `>>>` yazmanıza gerek yok, Python sizin için bunu yapıyor.
 
 Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnızca `exit()` yazmanız ya da Windows için `Ctrl + Z`, Mac/Linux için `Ctrl + D` kısa yolunu kullanmanız yeterli. Bunu yaptığınız taktirde artık `>>>` yazısını görmeyeceksiniz.
 
@@ -120,9 +120,9 @@ Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir ş
 İşe yaradı! `str` fonksiyonunu `len` fonksiyonunun içinde kullandık. `str` her şeyi string'e çeviriyor.
 
 *   `str` fonksiyonu, değişkenleri **stringe** çeviriyor
-*   `int` fonksiyonu değişkenleri **integera**(tamsayıya) çeviriyor
+*   `int` fonksiyonu değişkenleri **integera**(tam sayıya) çeviriyor
 
-> Önemli: Tamsayıları yazıya çevirebiliriz, fakat yazıları(text) sayılara çeviremeyiz - `int('selamlar')` bir anlam ifade etmiyor.
+> Önemli: Tam sayıları yazıya çevirebiliriz, fakat yazıları(text) sayılara çeviremeyiz - `int('selamlar')` bir anlam ifade etmiyor.
 
 ## Variables(Değişkenler)
 
@@ -248,7 +248,7 @@ Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indisler) ile 
 
 Gördüğünüz gibi, Listedeki nesnelere listenin ismi ve köşeli parantez içindeki nesnenin indeksini kullanarak ulaşabilirsin.
 
-Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indeksleri** ve **del** komutunu kullanman gerekir (del silmenin(delete) kısaltmasıdır). Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
+Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indisleri** ve **del** komutunu kullanman gerekir (del silmenin(delete) kısaltmasıdır). Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]

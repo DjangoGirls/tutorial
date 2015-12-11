@@ -38,7 +38,7 @@ Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakal
 ### Django'da statik dosyaları nereye koymalı
 
 
-`collectstatic` sunucu da çalıştırdığımızda, gördüğümüz gibi Django "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi kendi uyglamamız owygun `blog`için statik dosyalar eklemeliyiz.
+`collectstatic` sunucu da çalıştırdığımızda, gördüğümüz gibi Django "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi kendi yerleşik uygulamamız `blog`için statik dosyalar eklemeliyiz.
 
 Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
 

@@ -23,7 +23,7 @@ Bu eğitim için giriş dizininizde `djangogirls` adlı bir klasör kullanacağ�
 
 ### Windows
 
-Yeni bir `virtualenv`(sanal ortam) oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şöyl(sanal ortam)e görünmeli:
+Yeni bir `virtualenv` (sanal ortam) oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şu şekilde görünmeli:
 
     C:\Users\İsim\djangogirls> C:\Python34\python -m venv myvenv
     
