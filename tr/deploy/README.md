@@ -30,9 +30,9 @@ Git, kod reposu (veya "repository") denen belli dosyaların değişikliklerini i
 
 > **Not** Reponuzu başlatmadan önce, `pwd` (OS/Linux) veya `cd` (Windows) komutu ile bulunduğunuz dizini kontrol edin. `djangogirls` dizininde olmanız gerekiyor.
 
-    $ git init 
-    Initialized empty Git repository in ~/djangogirls/.git/ 
-    $ git config --global user.name "Adınız" 
+    $ git init
+    Initialized empty Git repository in ~/djangogirls/.git/
+    $ git config --global user.name "Adınız"
     $ git config --global user.email you@example.com
 
 Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (ayrıca kullanıcı adı ve eposta adresini tekrar girmenize gerek olmayacak).
@@ -54,19 +54,19 @@ Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 
-    $ git status 
-    On branch master 
-    
+    $ git status
+    On branch master
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
              .gitignore
              blog/
            &nbsp; manage.py
-             mysite/ 
-    
+             mysite/
+
     nothing added to commit but untracked files present (use "git add" to track)
 
 Ve son olarak değişikliklerimizi kaydediyoruz. Konsole gidin ve aşağıdaki komutları çalıştırın:
@@ -101,18 +101,18 @@ Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTP
 
 Aşağıdakini konsolounuza yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlini eklemeyin):
 
-    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
+    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
     $ git push -u origin master
 
 Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer birşey görmeniz gerekiyor:
 
-    Username for 'https://github.com': hjwp 
-    Password for 'https://hjwp@github.com': 
+    Username for 'https://github.com': hjwp
+    Password for 'https://hjwp@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0) 
-    To https://github.com/hjwp/my-first-blog.git 
-     * [new branch] master -> master 
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/hjwp/my-first-blog.git
+     * [new branch] master -> master
     Branch master set up to track remote branch master from origin.
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
@@ -192,15 +192,15 @@ Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dos
 Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucudaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/ilk-blogum/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
 
 "yes" yazın ve işte başladı! Bilgisayarlara sayfa sayfa yazı yazdırmayı sevmiyor musunuz? Ben hep beraberinde küçük küçük sesler çıkarırım. Trr, trr, trr...
@@ -222,8 +222,8 @@ Sunucudaki veritabanına aynen bilgisayardaki gibi `migrate` ve `createsuperuser
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
 
 ## Blog'umuzu web uygulaması olarak yayınlama
@@ -256,7 +256,7 @@ Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de 
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-``` python
+```python
 import os
 import sys
 
