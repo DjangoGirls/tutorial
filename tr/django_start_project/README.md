@@ -8,7 +8,7 @@
 
 Basit bir blog oluşturacağız!
 
-İlk adım yeni bir Django projesi başlatmaktır. Temel olarak Django tarafından sağlanan bazı scriptleri(komut dizilerini) çalıştırarak, Django projesinin iskeleti oluşturulacaktır. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
+İlk adım yeni bir Django projesi başlatmaktır. Temel olarak Django tarafından sağlanan bazı scriptleri (komut dizilerini) çalıştırarak, Django projesinin iskeleti oluşturulacaktır. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
 
 Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üzere olduğumuz dosyaları yeniden adlandırmamalısınız. Onları başka bir yere taşımak da iyi bir fikir değil. Django önemli şeyleri bulabilmek için belirli yapısını koruması gerekir.
 

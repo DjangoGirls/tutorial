@@ -8,7 +8,7 @@ QuerySet, esas olarak, verilen bir modelin nesnelerinin listesidir. QuerySet ver
 
 En kolayı örnekle öğrenmektir. Hadi deneyelim, olur mu?
 
-## Django çekirdeği(shell)
+## Django çekirdeği (shell)
 
 Lokal konsolumuzu açalım (PythonAnywhere'de değil) ve şu komutu yazalım:
 
@@ -114,7 +114,7 @@ Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmi�
 
 Maalesef, Python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Bunu değiştirebiliriz! İlk olarak yayınlamak istediğimiz gönderinin bir örneğini alalım:
 
-    >>> post = Post.objects.get(baslik=u"Örnek başlık")
+    >>> post = Post.objects.get(baslik="Örnek başlık")
 
 
 Ardından `yayinla` metodu ile gönderiyi yayınlayalım!
