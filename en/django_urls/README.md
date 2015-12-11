@@ -1,10 +1,10 @@
-# Django urls
+# Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django urls.
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
 ## What is a URL?
 
-A URL is simply a web address. You can see a URL every time you visit a website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.com` is also a URL):
+A URL is simply a web address. You can see a URL every time you visit a website - it is visible in your browser's address bar (yes! `http://127.0.0.1:8000` is a URL! And `https://djangogirls.com` is also a URL):
 
 ![Url](images/url.png)
 
@@ -51,25 +51,25 @@ If you still wish to understand how we created the patterns, here is an example 
 	+ to indicate that the previous item should be repeated at least once
 	() to capture part of the pattern
 
-Anything else in the url definition will be taken literally.
+There are [other special characters and sequences](https://docs.python.org/3/library/re.html#regular-expression-syntax), but many of the characters you want to use in an URL are taken literally.
 
 Now imagine you have a website with the address like that: `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-Writing separate views for all the post numbers would be really annoying. With regular expression we can create a pattern that will match the url and extract the number for us: `^post/(\d+)/$`. Let's break it down piece by piece to see what we are doing here:
+Writing separate views for all the post numbers would be really annoying. With regular expressions we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break it down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
 * **/** tells django that another `/` character should follow
 * **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
 
-## Your first Django url!
+## Your first Django URL!
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be a homepage of our blog and display a list of posts.
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
+Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main URL (`''`).
 
 Your `mysite/urls.py` file should now look like this:
 
