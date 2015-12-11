@@ -21,7 +21,7 @@ I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima c
     blog
     └───templates
         └───blog
-    
+
 
 (Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve rendere la vita più facile.)
 
@@ -128,8 +128,8 @@ Qui c'è un esempio di un template completo:
         </div>
 
         <div>
-            <p>pubblicato: 14.06.2014, 12:14</p>
-            <h2><a href="">Il mio secondo postt</a></h2>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
@@ -160,31 +160,31 @@ Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro de
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy (esegui questi comandi localmente, non su PythonAnywhere):
 
     $ git status
-    
+
 
 Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includere tutte le modifiche in questa directory:
 
     $ git add -A .
-    
+
 
 > **Nota** `-A` (diminutivo di "all") significa che `git` riconoscerà anche il fatto che hai cancellato dei file (per impostazione predefinita, esso riconosce soltanto i file nuovi/modificati). Ricorda anche (dal capitolo 3) che il `.` significa la directory attuale.
 
 Prima di caricare tutti i file, proviamo a controllare cosa caricherà `git` (tutti i file che caricherà `git` ora appariranno in verde):
 
     $ git status
-    
+
 
 Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cronologia. Gli daremo un "messaggio di commit" dove descriviamo ciò che abbiamo modificato. Puoi digitare tutto quello che vuoi a questo punto, sarebbe utile scrivere qualcosa di descrittivo in modo da ricordare in futuro cos'hai fatto.
 
     $ git commit -m "Ho cambiato l'HTML per questo sito."
-    
+
 
 > **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
 Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
     git push
-    
+
 
 ### Scarica il tuo nuovo codice su PythonAnywhere, e ricarica la tua web app
 
@@ -198,7 +198,7 @@ Quando hai finito, caricheremo (push) le nostre modifiche su Github:
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 Ed osserva il tuo codice mentre viene scaricato. Se vuoi controllare che sia arrivato, puoi fare un salto alla scheda **Files** e vedere il tuo codice su PythonAnywhere.
 

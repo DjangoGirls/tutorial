@@ -1,6 +1,6 @@
 # Le views di Django - è arrivata l'ora di creare!
 
-E' ora di liberarsi di quel bug che abbiamo creato nel capitolo precedente :)
+È ora di liberarsi di quel bug che abbiamo creato nel capitolo precedente :)
 
 Una *view* è un posto dove viene messa la "logica" della nostra applicazione. Essa richiederà informazioni dal `modello` che hai creato prima e lo passerà ad un `template`. Creeremo un template nel prossimo capitolo. Le views sono solo metodi di Python un po' più complicati di quelli che abbiamo descritto nel capitolo **Introduzione a Python**.
 

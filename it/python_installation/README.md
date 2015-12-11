@@ -6,7 +6,7 @@ Ma prima, permettici di introdurre brevemente cos'è Python. Python è un lingua
 
 Python ha avuto origine alla fine degli anni '80 ed il suo obiettivo principale è quello di essere leggibile dagli esseri umani (non solo dalle macchine!). Per questo motivo sembra molto più semplice di altri linguaggi di programmazione. Questo lo rende facile da imparare, ma non ti preoccupare, Python è anche molto potente!
 
-# Istallazione di Python
+# Installazione di Python
 
 > **Nota** Se hai fatto la procedura di installazione, non c'è bisogno di farlo di nuovo - puoi saltare dritto/a al prossimo capitolo!
 

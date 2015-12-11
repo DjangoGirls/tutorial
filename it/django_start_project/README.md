@@ -12,7 +12,7 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
+> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **installazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
 Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dimenticarti di aggiungere il punto `.` alla fine **:
 
@@ -39,7 +39,7 @@ Su Windows; **non dimenticarti di aggiungere il punto `.` alla fine**:
             __init__.py
     
 
-`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
+`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover installare nient'altro, tra l'altro.
 
 Il file `settings.py` contiene la configurazione del tuo sito web.
 
@@ -49,7 +49,7 @@ Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica c
 
 ## Modificare le impostazioni
 
-Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai istallato prima.
+Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai installato prima.
 
 Sarebbe bello avere l'ora corretta sul nostro sito Web. Vai alla [lista di fusi orari di wikipedia][2] e copia il tuo fuso orario (TZ). (es. `Europe/Berlin`)
 

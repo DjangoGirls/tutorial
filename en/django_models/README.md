@@ -123,7 +123,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two undescore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It looks scary, right? But no worries we will explain what these lines mean!
 
@@ -152,7 +152,7 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 ### Create tables for models in your database
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Type `python manage.py makemigrations blog`. It will look like this:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':

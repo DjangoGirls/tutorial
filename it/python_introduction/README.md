@@ -68,7 +68,7 @@ Utilizzando le virgolette doppie:
     "Runnin' down the hill"
     
 
-o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata (``):
+o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
     >>> "Correre"\"giù dalla collina"
     "Correre giù dalla collina"
@@ -133,7 +133,7 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
     >>> nome = "Ola"
     
 
-Vedi? E' facile! è semplicemente: nome è uguale a Ola.
+Vedi? È facile! è semplicemente: nome è uguale a Ola.
 
 Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
 
@@ -154,7 +154,7 @@ La puoi utilizzare anche nelle funzioni:
     5
     
 
-Fantastico, vero? certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
+Fantastico, vero? Certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
 
     >>> a = 4
     >>> b = 6
@@ -415,7 +415,9 @@ Dall'espressione puoi capire che Python non è in grado di mettere a confronto u
 
 Accidentalmente, hai appena imparato un nuovo tipo di oggetto in Python. Si chiama **Boolean** e probabilmente è il tipo più facile che ci sia.
 
-Ci sono solo due oggetti Boolean: -True -False
+Ci sono solo due oggetti Boolean:
+- True
+- False
 
 Ma perché Python possa capirlo, bisogna sempre scrivere True (prima lettera maiuscola, le altre minuscole). **true, TRUE, tRUE non funzionano -- solo True è corretto.** (Lo stesso vale per False, ovviamente.)
 
@@ -451,7 +453,7 @@ Finora abbiamo scritto il codice python nell'interprete, che ci permette di inse
 *   Salvare un po' di codice in un file python
 *   Eseguirlo!
 
-Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ~~~ exit()~~~:
+Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ```exit()``` :
 
     >>> exit()
     $
@@ -473,7 +475,7 @@ Ovviamente a questo punto sei una programmatrice Python senior, quindi sentiti l
 
 Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **python_intro.py** e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con **.py**. L'estensione **.py** dice al Sistema Operativo che questo è un **file eseguibile python** e che Python può eseguirlo.
 
-E' ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
+È ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
 
 Su un Mac, il comando assomiglierà a questo:
 
@@ -504,7 +506,7 @@ Ora puoi continuare con uno strumento essenziale nella programmazione:
 
 ## If...elif...else
 
-Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. E' per questo che Python ha gli **if statements**.
+Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. È per questo che Python ha gli **if statements**.
 
 Sostituisci il codice nel file **python_intro.py** con questo:
 
@@ -541,7 +543,7 @@ In esempi precedenti, il codice è stato eseguito solo quando le condizioni eran
 
 ```python
 if 5 > 2:
-     print('5 è maggiore di 2') 
+     print('5 è infatti maggiore di 2') 
 else:
      print('5 non è maggiore di 2')
 ```
@@ -567,7 +569,7 @@ else:
 ed eseguito:
 
     $ python3 python_intro.py
-    Hey Sonja!
+    Ciao Sonja!
     
 
 Hai visto cosa è successo? `elif` ti consente di aggiungere condizioni supplementari che verranno eseguite se nessuna delle condizioni precedenti viene soddisfatta.
@@ -581,7 +583,7 @@ if volume < 20:
 elif 20 <= volume < 40:
     print("Adatto per musica di sottofondo")
 elif 40 <= volume < 60:
-    print("Perfetto per apprezzare ogni dettaglio")
+    print("Perfetto, posso apprezzare ogni dettaglio")
 elif 60 <= volume < 80:
     print("Ideale per le feste")
 elif 80 <= volume < 100:
@@ -605,7 +607,7 @@ Nei tre esercizi precedenti hai imparato:
 *   come **Salvare file** - archiviare codice nei file in modo da poter eseguire programmi più lunghi.
 *   **if...elif...else** - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.
 
-E' ora dell'ultima parte del capitolo!
+È ora dell'ultima parte del capitolo!
 
 ## Le funzioni personalizzate!
 
@@ -632,7 +634,7 @@ Eseguiamolo e vediamo cosa succede:
     Come stai?
     
 
-E' stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
+È stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
 
 ```python
 def ciao(nome):
@@ -657,7 +659,7 @@ Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hi()
+      ciao()
     TypeError: ciao() missing 1 required positional argument: 'nome'
     
 
@@ -727,17 +729,17 @@ Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, qui
 for nome in ragazze:
 ```
 
-Lo statement ~~~ for~~~ si comporta in modo simile allo statement ~~~ if~~~; il codice sottostante deve essere rientrato di quattro spazi.
+Lo statement `for` si comporta in modo simile allo statement `if`; il codice sottostante deve essere rientrato di quattro spazi.
 
 Qua c'è l'intero codice che sarà nel file:
 
 ```python
-def hi(nome):
+def ciao(nome):
     print('Ciao ' + nome + '!') 
 
 ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
 for nome in ragazze:
-    hi(name)
+    ciao(name)
     print('Prossima ragazza')
 ```
 
