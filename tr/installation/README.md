@@ -20,7 +20,7 @@ Atölyede bir blog yapıyor olacaksınız, eğitim günü kodlamaya hazır olman
 
 {% include "/django_installation/instructions.md" %}
 
-# Bir kod düzenleyicisi yükleyin
+# Bir kod editörü yükleyin
 
 {% include "/code_editor/instructions.md" %}
 

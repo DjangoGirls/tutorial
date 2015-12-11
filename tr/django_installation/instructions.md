@@ -23,12 +23,12 @@ Bu eğitim için giriş dizininizde `djangogirls` adlı bir klasör kullanacağ�
 
 ### Windows
 
-Yeni bir `virtualenv` oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şöyle görünmeli:
+Yeni bir `virtualenv` (sanal ortam) oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şu şekilde görünmeli:
 
     C:\Users\İsim\djangogirls> C:\Python34\python -m venv myvenv
     
 
-`C:\Python34\python` dizini önceden Python'u kurduğunuz dizin ve `myenv` ise `virtualenv`'inizin ismi olacaktır. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak iyi bir fikir olabilir, zira bu ismi çok kullanıyor olacaksınız!
+`C:\Python34\python` dizini önceden Python'u kurduğunuz dizin ve `myvenv` ise `virtualenv`'inizin ismi olacaktır. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak iyi bir fikir olabilir, zira bu ismi çok kullanıyor olacaksınız!
 
 ### GNU/Linux ve OS X
 
@@ -37,7 +37,7 @@ Linux ve OS X işletim sistemlerinde `virtualenv` (sanal ortam) oluşturmak `pyt
     ~/djangogirls$ python3 -m venv myvenv
     
 
-Burada `myenv` sizin sanal ortamınız olan `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. İsmi çok fazla kullanacağınız için kısa tutmak da işinize yarayacaktır.
+Burada `myvenv` sizin sanal ortamınız olan `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. İsmi çok fazla kullanacağınız için kısa tutmak da işinize yarayacaktır.
 
 > **NOT:** Ubuntu 14.04 işletim sisteminde sanal ortam yaratmaya çalışırken şu hatayla karşılaşabilirsiniz:
 > 

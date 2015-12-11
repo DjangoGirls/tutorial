@@ -37,7 +37,8 @@ Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakal
 
 ### Django'da statik dosyaları nereye koymalı
 
-As you saw when we ran `collectstatic` on the server, Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+
+`collectstatic` sunucu da çalıştırdığımızda, gördüğümüz gibi Django "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi kendi yerleşik uygulamamız `blog`için statik dosyalar eklemeliyiz.
 
 Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
 
@@ -81,7 +82,7 @@ h1 a {
 
 `h1 a` bir CSS Seçicisidir (Selector). Bu demek oluyor ki biz stilimizi, bir `h1` öğesi içerisinde olan tüm `a` öğelerine (örneğin kodumuzun içerisinde `<h1><a href="">link</a></h1>` gibi bir şey olduğunda) uyguluyoruz. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `class` (sınıf) özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Class ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
 ```html
 <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -123,9 +124,9 @@ Dosyanız şu şekilde gözüküyor olmalı:
 
         {% for post in posts %}
             <div>
-                <p>yayınlanma tarihi: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+                <h1><a href="">{{ post.baslik }}</a></h1>
+                <p>{{ post.yazi|linebreaks }}</p>
             </div>
         {% endfor %}
     </body>
@@ -252,9 +253,9 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>yayınlanma tarihi: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+        <h1><a href="">{{ post.baslik }}</a></h1>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
 ```
@@ -268,10 +269,10 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        {{ post.yayinlama_tarihi }}
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <h1><a href="">{{ post.baslik }}</a></h1>
+                    <p>{{ post.yazi|linebreaks }}</p>
                 </div>
             {% endfor %}
         </div>

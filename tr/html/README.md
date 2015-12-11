@@ -21,7 +21,7 @@ Bir şablon oluşturmak bir şablon dosyası oluşturmak demektir. Her şey bir 
     blog
     └───templates
         └───blog
-    
+
 
 (Neden iki tane `blog` adlı klasöre gerek olduğunu merak etmiş olabilirsin. Daha sonra da anlaşılacağı gibi, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
 
@@ -147,7 +147,7 @@ Bize yaşattığı duygu:
 
  [4]: images/step6.png
 
-Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi ** görüntüledi - öncesinde ise şablonların b **farklı** bilgiyi **aynı formatta** görüntülememize izin verdiğinden bahsetmiştik.
+Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi ** görüntüledi - öncesinde ise şablonların **farklı** bilgiyi **aynı formatta** görüntülememize izin verdiğinden bahsetmiştik.
 
 Gerçekten yapmak istediğimiz ise Django adminde ekli gerçek gönderileri göstermek - ve bir sonraki adımımız da bu.
 
@@ -157,34 +157,34 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
 ### Kodumuzu commit ve push ile Github'a yükleyelim
 
-İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
+İlk önce son yayınlamadan (deployment) sonra hangi dosyaların değiştiğine bakalım. Bu komutları yerel (local) bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
     $ git status
-    
+
 
 `djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
 
     $ git add -A .
-    
+
 
 > **Not:** `-A` (hepsi için bir kısaltma - İngilizce'de "all" hepsi demek) `git`'in silinmiş dosyaları tanır (normalde sadece yeni/güncellenmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
 
 Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'in yükleyeceği dosyalar yeşil gösterilir) bakalım:
 
     $ git status
-    
+
 
 Neredeyse bitirdik, şimdi bu değişikliği tarihçesine kaydetmesini söyleyelim. Commit için değişiklikleri açıklayan bir mesaj yazalım. Bu aşamada istediğimizi yazabiliriz, fakat tanımlayıcı yazılar gelecekte neler yapmış olduğumuzu hatırlatması açısından faydalı olacaktır.
 
     $ git commit -m "Site için HTML dosyasını değiştirdim."
-    
+
 
 > **Not** Tamamlama mesajını çift tırnak içerisinde kullandığımızdan emin olalım.
 
 Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak yükleyelim:
 
     git push
-    
+
 
 ### Pull ile yeni kodu PythonAnywhere e alıp web uygulamasını tekrar yükleyelim
 
@@ -203,7 +203,7 @@ $ source myvenv/bin/activate
 
 Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 
-*   Son olarak, [Web sekmesi][6]ne gidip uygulamanızın **Yenile** butonuna basın.
+*   Son olarak, [Web sekmesi][6]ne gidip uygulamanızın **Reload (Yenile)** butonuna basın.
 
  [6]: https://www.pythonanywhere.com/web_app_setup/
 

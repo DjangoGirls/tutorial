@@ -8,7 +8,7 @@
 
 Basit bir blog oluşturacağız!
 
-İlk adım yeni bir Django projesi başlatmaktır. Temel olarak bu Django projesinin iskeletini oluşturacak Django tarafından sağlanan bazı betiklerin çalıştırılması anlamına gelir. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
+İlk adım yeni bir Django projesi başlatmaktır. Temel olarak Django tarafından sağlanan bazı scriptleri (komut dizilerini) çalıştırarak, Django projesinin iskeleti oluşturulacaktır. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
 
 Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üzere olduğumuz dosyaları yeniden adlandırmamalısınız. Onları başka bir yere taşımak da iyi bir fikir değil. Django önemli şeyleri bulabilmek için belirli yapısını koruması gerekir.
 
@@ -40,7 +40,7 @@ Windows'da; ** sonunda nokta `(.)` koymayı unutmayın**:
 
 `settings.py` dosyası, web sitesinizin yapılandırmasını içerir.
 
-Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver` tarafından kullanılan desenler listesi içerir.
+Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver` (url çözücü) tarafından kullanılan url örnekleri listesi içerir.
 
 Şu an için değişiklik yapmayacağımız diğer dosyaları yoksayalım. Unutmamanız gereken tek şey kazayla onları silmeyin!
 
