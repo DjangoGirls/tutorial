@@ -12,7 +12,7 @@ Dobbiamo creare un file con questo nome all'interno della cartella `blog`.
 
     blog
        └── forms.py
-    
+
 
 OK, apriamo questo file e inseriamo:
 
@@ -30,11 +30,11 @@ class PostForm(forms.ModelForm):
 
 Dobbiamo importare prima di tutto i Django Forms (`from django import forms`) e, ovviamente, il nostro `Post` model (`from .models import Post`).
 
-`PostForm`, come probabilmente hai intuito, è nome del nostro form. Dobbiamo ora dire a Django che questa form é una `ModelForm` (così Django farà qualche magia per noi)- `forms.ModelForm` è il comando per farlo.
+`PostForm`, come probabilmente hai intuito, è il nome del nostro form. Dobbiamo ora dire a Django che questa form é una `ModelForm` (così Django farà qualche magia per noi)- `forms.ModelForm` è il comando per farlo.
 
 Successivamente, abbiamo `class Meta`, con cui diciamo a Django quale model utilizzare per creare questo form (`model = Post`).
 
-Finalmente, possiamo indicare uno o più campi che il nostro form deve avere. In questo caso vogliamo che solamente `title` e `text` siano visibili -`author` è la persona attualmente connessa (tu!) e `created_date` dovrebbe generarsi da sola ogni volta che creiamo un post (cioè nel nostro programma), giusto?
+Finalmente possiamo indicare uno o più campi che il nostro form deve avere. In questo caso vogliamo che solamente `title` e `text` siano visibili -`author` è la persona attualmente connessa (tu!) e `created_date` dovrebbe generarsi da sola ogni volta che creiamo un post (cioè nel nostro programma), giusto?
 
 E questo è tutto! Tutto quello che dobbiamo fare ora é usare il form nella nostra *view* e visualizzarlo nel template.
 
@@ -102,7 +102,7 @@ urlpatterns = [
 ]
 ```
 
-Dopo aver aggiornato il sito, vedremo un `AttributeError` dal momento che non abbiamo ancora creato `post_new`. Aggiungiamolo, adesso.
+Dopo aver aggiornato il sito, vedremo un `AttributeError` dal momento che non abbiamo ancora creato `post_new`. Aggiungiamolo adesso.
 
 ## post_new view
 
@@ -155,7 +155,7 @@ Ora aggiorna la pagina! Yeah! Puoi ora visualizzare il tuo form!
 
  [2]: images/new_form2.png
 
-Ma, aspetta un momento!Se provi a scrivere qualcosa in `title` e `text` e cerchi di salvare ciò che hai scritto- che cosa succede?
+Ma, aspetta un momento! Se provi a scrivere qualcosa in `title` e `text` e cerchi di salvare ciò che hai scritto, che cosa succede?
 
 Niente! Siamo di nuovo sulla stessa pagina di prima e il nostro testo é sparito...e non compare nessun nuovo post. Che cosa abbiamo sbagliato?
 
@@ -182,13 +182,13 @@ else:
     form = PostForm()
 ```
 
-È ora di completare i puntini `[...]`. Se `method` chiama il metodo `POST` allora vogliamo costruire il nostro `PostForm` con i dati appena inseriti dall'utente, giusto? Raggiungeremo questo risultato con:
+È ora di completare i puntini `[...]`. Se il `method` è `POST` allora vogliamo costruire il nostro `PostForm` con i dati appena inseriti dall'utente, giusto? Raggiungeremo questo risultato con:
 
 ```python
 form = PostForm(request.POST)
 ```
 
-Facile!Come prossima cosa dobbiamo controllare se il form è corretto (per cui che tutti i campi necessari siano stati impostati e che non ci siano valori sbagliati). Possiamo fare questo con `form.is_valid()`.
+Facile! Come prossima cosa dobbiamo controllare se il form è corretto (per cui che tutti i campi necessari siano stati impostati e che non ci siano valori sbagliati). Possiamo fare questo con `form.is_valid()`.
 
 Se la forma viene ritenuta valida verrà salvata!
 
@@ -200,7 +200,7 @@ if form.is_valid():
     post.save()
 ```
 
-In pratica, ci sono due cose da fare: salviamo il form con `form.save` e aggiungiamo un autore(dal momento che non c'era nessun campo autore `author` nel form `PostForm` e questo campo non può essere lasciato bianco!). `commit=False` significa che non vogliamo salvare `Post` model per il momento-vogliamo prima assicurarci di aggiungere un autore. Per la maggior parte del tempo userai `form.save()`, senza `commit=False`, ma in questo caso abbiamo bisogno di questa extra specificazione. `post.save()` salverà le modifiche (aggiunta di autore) e il nuovo post del tuo blog è stato finalmente creato!
+In pratica, ci sono due cose da fare: salviamo il form con `form.save` e aggiungiamo un autore (dal momento che non c'era nessun campo autore `author` nel form `PostForm` e questo campo non può essere lasciato bianco!). `commit=False` significa che non vogliamo salvare `Post` model per il momento-vogliamo prima assicurarci di aggiungere un autore. Per la maggior parte del tempo userai `form.save()`, senza `commit=False`, ma in questo caso abbiamo bisogno di questa extra specificazione. `post.save()` salverà le modifiche (aggiunta di autore) e il nuovo post del tuo blog è stato finalmente creato!
 
 Infine, non sarebbe fantastico se potessimo immediatamente essere indirizzati alla pagina `post_detail` del nuovo blog post appena creato? Per fare ciò dobbiamo importare:
 
@@ -214,7 +214,7 @@ Aggiungilo all'inizio del file. E ora possiamo dire: vai alla pagina `post_detai
 return redirect('blog.views.post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` é il nome della view che vogliamo visitare. Ti ricordi che questa *view* ha bisogno della `pk` variabile? Per passarla alla nostre views utilizziamo `pk=post.pk`, dove `post` è il post appena creato!
+`blog.views.post_detail` é il nome della view che vogliamo visitare. Ti ricordi che questa *view* ha bisogno della variabile `pk`? Per passarla alla nostre views utilizziamo `pk=post.pk`, dove `post` è il post appena creato!
 
 Ok, abbiamo parlato abbastanza ora e forse sei curioso/a di vedere l'aspetto della nostra *view*, giusto?
 
@@ -235,7 +235,7 @@ def post_new(request):
 
 Vediamo se funziona. Vai sulla pagina http://127.0.0.1:8000/post/new/, aggiungi un `title` e un `text`, salvalo... e voilà! Il tuo nuovo post è stato aggiunto e noi siamo stati reindirizzati automaticamente alla pagina `post_detail` !
 
-Forse hai notato che stiamo impostando una data di pubblicazione prima di salvare il post. Più tardi introdurremo l'uso del *publish button* in **Django Girls Tutorial: Extensions**.
+Forse avrai notato che stiamo impostando una data di pubblicazione prima di salvare il post. Più tardi introdurremo l'uso del *publish button* in **Django Girls Tutorial: Extensions**.
 
 Fantastico!
 
@@ -312,7 +312,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Questo sembra quasi esattamente la view `post_new`, giusto? Ma non del tutto. Prima cosa: si passa un parametro supplementare `pk` dall'URL. Dopo di che: prendiamo il modello ` Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e in seguito, quando creeremo un form, passeremo questo post come `istanza`, sia quando salviamo il form:
+Questo sembra quasi esattamente la view `post_new`, giusto? Ma non del tutto. Prima cosa: si passa un parametro supplementare `pk` dall'URL. Dopo di che: prendiamo il modello ` Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e in seguito, quando creeremo un form, passeremo questo post come `instance`, sia quando salviamo il form:
 
 ```python
 form = PostForm(request.POST, instance=post)
@@ -370,24 +370,26 @@ Vediamo se funziona su PythonAnywhere. È l'ora di un altro deploy!
 
 *   Innanzitutto, fai un commit del tuo nuovo codice e fai il push per caricarlo su Github
 
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Aggiunto le views a create/modificare blog post dal sito."
-    $ git push
-    
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 *   Poi, in una [console PythonAnywhere Bash][7]:
 
  [7]: https://www.pythonanywhere.com/consoles/
 
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-    
+```
+$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
 *   Infine, vai sulla [Web tab][8] e premi **Reload**.
 

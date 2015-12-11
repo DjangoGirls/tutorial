@@ -27,7 +27,7 @@ Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_l
     {% endfor %}
 {% endblock content %}
 ```
-    
+
 
 {% raw %}Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di articoli porti alla pagina di dettaglio. Cambiamo `<h1><a href="">{{ post.title }}</a></h1>` così che linki alla pagina di dettaglio del post:{% endraw %}
 
@@ -81,10 +81,10 @@ Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
 Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Dobbiamo utilizzare esattamente lo stesso nome che abbiamo specificato in urls (`pk`). Omettere questa variabile è sbagliato e genererà un errore!
 
-Ora, noi vogliamo ottenere un' unico post. Per farlo possiamo utilizzare le queryset così:
+Ora, noi vogliamo ottenere un unico post. Per farlo possiamo utilizzare le queryset così:
 
     Post.objects.get(pk=pk)
-    
+
 
 Ma questo codice presenta un problema. Se non c'è `Post` con `primary key` (`pk`) otterremo un errore bruttissimo!
 
@@ -105,17 +105,17 @@ Ok, è arrivata l'ora di aggiungere una *view* al nostro file `views.py`!
 Dovremo aprire `blog/views.py` ed aggiungere il seguente codice:
 
     from django.shortcuts import render, get_object_or_404
-    
+
 
 Vicino ad altre righe `from` ed alla fine del file aggiungeremo la nostra *view*:
 
 ```python
     def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+        post = get_object_or_404(Post, pk=pk)
+        return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Si. E' giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
+Si, è giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
 
 ![Visualizzazione elenco post][5]
 
@@ -172,7 +172,7 @@ Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhe
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
-    
+
 
 *   Poi, in una [console PythonAnywhere Bash][8]:
 
@@ -184,7 +184,7 @@ Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhe
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 *   Infine, vai su il [Web tab][9] e premi **Reload**.
 
