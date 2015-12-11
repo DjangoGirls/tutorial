@@ -138,7 +138,7 @@ Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek o
 *   `Post` modelimizin ismidir. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). Class isimleri her zaman büyük harf ile başlamalıdır.
 *   `models.Model` Post'un bir Django Modeli olduğunu belirtir, bu şekilde Django onu veritabanında tutması gerektiğini bilir.
 
-Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `baslik`,`yazi`, `icerik`, `yaratilis_tarihi`, `yayinlama_tarihi` ve `yazar` (Türkçe karakterleri kullanamadığımız unutmayalım). Bunun için her alanın tipini belirtmemiz lazım (Yazı mı? Numara mı? Tarih mi? Başka bir nesneye referans mı, ör. Kullanıcı?).
+Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `baslik`,`yazi`, `yaratilis_tarihi`, `yayinlama_tarihi` ve `yazar` (Türkçe karakterleri kullanamadığımız unutmayalım). Bunun için her alanın tipini belirtmemiz lazım (Yazı mı? Numara mı? Tarih mi? Başka bir nesneye referans mı, ör. Kullanıcı?).
 
 *   `models.CharField` - kısıtlı uzunlukta yazı tanımlamak için kullanır.
 *   `models.TextField` - karakter limiti olmayan uzun yazıları tanımlar. Blog gönderilerinin içeriği için biçilmiş kaftan, değil mi?
