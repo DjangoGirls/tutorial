@@ -208,7 +208,7 @@ Si, questa lista è vuota. Non serve a molto, giusto? Creiamo una lista di numer
 Abbiamo una lista! Cosa possiamo farne? Vediamo quanti numeri della lotteria ci sono nella lista. Hai idea di quale funzione potresti utilizzare per farlo? Lo abbiamo imparato insieme prima!
 
     >>> len(lotteria)
-    8
+    6
     
 
 Si! `len()` può darti il numero di oggetti in una lista. Utile, vero? Forse abbiamo risolto:
