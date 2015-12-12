@@ -250,12 +250,12 @@ Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome
 
 Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement **del** (del è un'abbreviazione di delete). Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
 
-    >>> print(lottery)
+    >>> print(lotteria)
     [59, 42, 30, 19, 12, 3, 199]
-    >>> print(lottery[0])
+    >>> print(lotteria[0])
     59
-    >>> del lottery[0]
-    >>> print(lottery)
+    >>> del lotteria[0]
+    >>> print(lotteria)
     [42, 30, 19, 12, 3, 199]
     
 
