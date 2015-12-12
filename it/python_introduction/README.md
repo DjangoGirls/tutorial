@@ -64,13 +64,13 @@ Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.
 
 Utilizzando le virgolette doppie:
 
-    >>> "Runnin' down the hill"
-    "Runnin' down the hill"
+    >>> "Correre verso l'albero"
+    "Correre verso l'albero"
     
 
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
-    >>> "Correre"\"giù dalla collina"
+    >>> 'Correre verso l\'albero'
     "Correre giù dalla collina"
     
 
