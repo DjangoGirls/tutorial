@@ -190,7 +190,14 @@ Una vez que hicimos esto, subimos (push) nuestros cambios a PythonAnywhere:
 
 *   Abre la [página de consolas de PythonAnywhere][5] y ve a tu **consola Bash** (o comienza una nueva). Luego, ejecuta:
     
-    $ cd ~/my-first-blog $ git pull [...]
+```
+$ cd ~/my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
  [5]: https://www.pythonanywhere.com/consoles/
 
