@@ -176,7 +176,7 @@ Proprio come hai fatto sul tuo computer, puoi creare un virtualenv su PythonAnyw
     
     $ source myvenv/bin/activate
     
-    (mvenv) $  pip install django whitenoise
+    (mvenv) $  pip install django==1.8 whitenoise==2.0
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
