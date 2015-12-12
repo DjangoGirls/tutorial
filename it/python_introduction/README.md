@@ -739,7 +739,7 @@ def ciao(nome):
 
 ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
 for nome in ragazze:
-    ciao(name)
+    ciao(nome)
     print('Prossima ragazza')
 ```
 
