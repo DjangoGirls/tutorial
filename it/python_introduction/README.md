@@ -563,7 +563,7 @@ if nome == 'Ola':
 elif nome == 'Sonja':
     print('Ciao Sonja!')
 else:
-    print('Caio anonimo!')
+    print('Ciao anonimo!')
 ```
 
 ed eseguito:
