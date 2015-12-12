@@ -262,20 +262,20 @@ Clicca sul link "WSGI configuration file" (nella sezione "Code" nella parte supe
 
 Elimina tutti i contenuti e sostituiscili con qualcosa di simile:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-    
+```python
+import os
+import sys
+
+path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
 
 > **Nota** non dimenticare di mettere il tuo nome utente dove dice `<il-tuo-username>`
 
