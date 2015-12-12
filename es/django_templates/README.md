@@ -72,12 +72,25 @@ Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada obje
 Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿verdad? Intentemos desplegándola en PythonAnywhere nuevamente. Aquí te dejamos un ayuda memoria...
 
 *   Primero, sube tu código a GitHub
-    
-    $ git status [...] $ git add -A . $ git status [...] $ git commit -m "Added views to create/edit blog post inside the site." [...] $ git push
+
+```
+$ git status
+[...]
+$ git add -A .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
+```
 
 *   Luego, identifícate en [PythonAnywhere][4] y ve a tu **consola Bash** (o empieza una nueva), y ejecuta:
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
 *   Finalmente, ve a la [pestaña Web][5] y presiona **Reload** en tu aplicación web. ¡Tu actualización debería poder verse!
 
