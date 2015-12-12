@@ -92,7 +92,7 @@ Quindi, crea un nuovo repository, dandogli il nome "my-first-blog". Lascia desel
 
 > **Nota** Il nome `my-first-blog` è importante -- potresti scegliere qualcos'altro, ma si ripeterà un sacco di volte nelle istruzioni qui sotto, e dovrai sostituirlo ogni volta. Probabilmente è più facile mantenere il nome `my-first-blog`.
 
-Nella schermata successiva, ti verrà mostrato l'URL per clonare il tuo repo. Scegli la versione "HTTPS", copialo, e incollalo nel terminale a breve:
+Nella schermata successiva, ti verrà mostrato l'URL per clonare il tuo repo:
 
 ![][4]
 
