@@ -71,7 +71,7 @@ Utilizzando le virgolette doppie:
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
     >>> 'Correre verso l\'albero'
-    "Correre giù dalla collina"
+    "Correre verso l'albero"
     
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
