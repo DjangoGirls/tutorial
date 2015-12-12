@@ -217,7 +217,7 @@ Ahora es hora de eliminar el directorio `djangogirls`.
 
 > **Atención**: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre* Debes ser muy cuidadosa con este comando.
 
-    $ rm - r djangogirls
+    $ rm -r djangogirls
     
 
 Windows:
