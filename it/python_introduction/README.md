@@ -70,8 +70,8 @@ Utilizzando le virgolette doppie:
 
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
-    >>> "Correre"\"giù dalla collina"
-    "Correre giù dalla collina"
+    >>> 'Runnin\' down the hill'
+    "Runnin' down the hill"
     
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
