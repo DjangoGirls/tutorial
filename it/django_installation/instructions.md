@@ -52,7 +52,7 @@ Creare un `virtualenv` su Linux e OS X è semplice, basta digitare: `python3 -m 
 
 ## Lavorare con virtualenv
 
-Il comando sopra specificato, creerà una cartella dal nome `myenv` (o col nome che hai scelto) che contiene il tuo virtual environment (ovvero un mucchio di files e cartelle).
+Il comando sopra specificato, creerà una cartella dal nome `myvenv` (o col nome che hai scelto) che contiene il tuo virtual environment (ovvero un mucchio di files e cartelle).
 
 #### Windows
 
