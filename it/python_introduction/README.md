@@ -135,7 +135,7 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
 
 Vedi? È facile! è semplicemente: nome è uguale a Ola.
 
-Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
+Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `nome` e premi `enter`:
 
     >>> nome
     'Ola'
@@ -182,11 +182,11 @@ Prova questo:
     >>> nome = 'Maria'
     >>> nome
     'Maria'
-    >>> print(name)
+    >>> print(nome)
     Maria
     
 
-Quando digiti `name`, l'interprete di Python risponde con una stringa *rappresentazione* della variabile 'nome', che contiene le lettere M-a-r-i-a, circondate da singole virgolette, ''. Quando dici `print(nome)`, Python "stamperà" i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.
+Quando digiti `nome`, l'interprete di Python risponde con una stringa *rappresentazione* della variabile 'nome', che contiene le lettere M-a-r-i-a, circondate da singole virgolette, ''. Quando dici `print(nome)`, Python "stamperà" i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.
 
 Come vedremo dopo, `print()` è anche utile quando vogliamo stampare le cose dall'interno delle funzioni, oppure quando vogliamo stampare le cose in molteplici righe.
 
