@@ -64,14 +64,14 @@ Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.
 
 Utilizzando le virgolette doppie:
 
-    >>> "Runnin' down the hill"
-    "Runnin' down the hill"
+    >>> "Correndo giu' per la collina"
+    "Correndo giu' per la collina"
     
 
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
-    >>> "Correre"\"giù dalla collina"
-    "Correre giù dalla collina"
+    >>> 'Correndo giu\' per la collina'
+    "Correndo giu' per la collina"
     
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
