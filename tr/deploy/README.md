@@ -244,7 +244,7 @@ Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına 
 
  [7]: images/pythonanywhere_web_tab_virtualenv.png
 
-"Virtualenv" bölümünde "Enter the path to a virtualenv" (virtualenv için dizin yolu girin) linkini tıklayın ve şunu yazın: `/home/<kullanıcı-adınız>/ilk-blogum/myenv`. Devam etmeden önce, dizin yolunu kaydetmek için tik işareti olan mavi kutuyu tıklayın.
+"Virtualenv" bölümünde "Enter the path to a virtualenv" (virtualenv için dizin yolu girin) linkini tıklayın ve şunu yazın: `/home/<kullanıcı-adınız>/ilk-blogum/myvenv`. Devam etmeden önce, dizin yolunu kaydetmek için tik işareti olan mavi kutuyu tıklayın.
 
 > **Not** İlgili yeri kendi kullanıcı adınızı yazın. Eğer hata yaparsanız, PythonAnywhere size bir uyarı gösterecektir.
 
