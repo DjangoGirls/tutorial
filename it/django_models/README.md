@@ -65,14 +65,14 @@ Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni fil
 
     djangogirls
     ├── mysite
-    | __init__.py
-    | settings.py
-    | urls.py
-    | wsgi.py
+    |       __init__.py
+    |       settings.py
+    |       urls.py
+    |       wsgi.py
     ├── manage.py
     └── blog
         ├── migrations
-        | __init__.py
+        |       __init__.py
         ├── __init__.py
         ├── admin.py
         ├── models.py
