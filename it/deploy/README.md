@@ -262,7 +262,6 @@ Clicca sul link "WSGI configuration file" (nella sezione "Code" nella parte supe
 
 Elimina tutti i contenuti e sostituiscili con qualcosa di simile:
 
-    python
     import os
     import sys
     
