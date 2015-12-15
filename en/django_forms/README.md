@@ -47,7 +47,7 @@ It's time to open `blog/templates/blog/base.html`. We will add a link in `div` n
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`.
+Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us. 
 
 After adding the line, your html file should now look like this:
 
@@ -198,7 +198,7 @@ if form.is_valid():
 Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required!). `commit=False` means that we don't want to save `Post` model yet - we want to add author first. Most of the time you will use `form.save()`, without `commit=False`, but in this case, we need to do that.
 `post.save()` will preserve changes (adding author) and a new blog post is created!
 
-Finally, it would be awesome if we can immediatelly go to `post_detail` page for newly created blog post, right? To do that we need one more import:
+Finally, it would be awesome if we can immediately go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
 ```python
 from django.shortcuts import redirect
@@ -207,10 +207,10 @@ from django.shortcuts import redirect
 Add it at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
 ```python
-return redirect('blog.views.post_detail', pk=post.pk)
+return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views we use `pk=post.pk`, where `post` is the newly created blog post!
 
 Ok, we talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -223,7 +223,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -300,7 +300,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -352,7 +352,23 @@ We're going to add another `{% if %}` tag to this which will make the link only 
 
 This `{% if %}` will cause the link to only be sent to the browser if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a new browser or an incognito window, though, and you'll see that the link doesn't show up!
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+
+Open `blog/templates/blog/post_detail.html` and find:
+
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
+
+Change it to:
+
+```html
+{% if user.is_authenticated %}
+	<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+{% endif %}
+```
+
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a new browser or an incognito window, though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## One more thing: deploy time!
 

@@ -41,11 +41,13 @@ Bootstrap是最流行的HTML和CSS框架之一，它可以用来开发炫酷的�
 
 我们在blog应用的目录下创建一个名为`static`的文件夹，创建后目录结构如下：
 
+```
     djangogirls
     ├── blog
     │   ├── migrations
     │   └── static
     └── mysite
+```
     
 
 Django会自动找到你应用文件夹下全部名字叫“static”的文件夹，并能够使用其中的静态文件。
@@ -54,11 +56,13 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 现在让我们创建一个 CSS 文件，为了在您的 web 页中添加你自己的风格。 创建一个新的目录称为 `css` 里面你 `static` 的目录。 然后，在这个 `css` 目录里创建一个新的文件，称为 `blog.css` 。 准备好了吗？
 
+```
     djangogirls
     └─── blog
          └─── static
               └─── css
                    └─── blog.css
+```
     
 
 是时候来写一些CSS了！首先用你的代码编辑器打开`blog/static/css/blog.css`。
@@ -73,16 +77,20 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 在你的`blog/static/css/blog.css`文件中添加下面的代码:
 
+```css
     h1 a {
         color: #FCA205;
     }
+```
     
 
 `h1 a`是CSS选择器。 这意味着我们要将我们的样式应用于在 `h1` 元素的任何 `a` 元素 （例如当我们的代码中有类似：`<h1><a href="">link</a></h1>`)。 在这种情况下，我们会告诉它要改变其颜色为 `#FCA205`，它是橙色的。 当然，你可以把自己的颜色放在这里！
 
 在 CSS 文件中，我们决定HTML 文件中元素的样式。 由该元素的名称 （即 `a`，`h1`，`body`）、 属性 `class` 或属性 `id` 来标识元素。 类和 id 是你自己给该元素的名称。 类定义元素组，并指向特定元素的 id。 例如，可能由 CSS 使用标记名称 `a`、 类 `external_link` 或 id `link_to_wiki_page` 标识以下标记：
 
+```html
     <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```
     
 
 阅读有关 [CSS Selectors in w3schools][4].
@@ -91,18 +99,23 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 然后，我们还需要告诉我们的 HTML 模板，我们添加一些 CSS。打开 `blog/templates/blog/post_list.html` 文件并在最开始的地方它添加以下行：
 
+```html
     {% load staticfiles %}
+```
     
 
 我们刚刚加载了静态文件到这里（译者注：这里实际上是为模板引入staticfiles相关的辅助方法）：）。 然后，在`<head>` 和 `</head >`之间，在Bootstrap的CSS文件的引导之后（浏览器按照给定文件的顺序读取文件，所以我们的文件中的代码可能会覆盖引导数据库文件中的代码），添加以下行：
 
+```html
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
     
 
 我们只是告诉我们的模板我们的 CSS 文件所在的位置。
 
 现在，您的文件应该像这样：
 
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -125,6 +138,7 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
             {% endfor %}
         </body>
     </html>
+```
     
 
 好的保存该文件并刷新网站 ！
@@ -135,9 +149,11 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 干得好 ！我想，也许我们也给我们的网站一点空间并增加左边缘。让我们来试试这个 ！
 
+```css
     body {
         padding-left: 15px;
     }
+```
     
 
 将它添加到你的 css 代码，保存该文件并查看它如何工作 ！
@@ -148,17 +164,21 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 也许我们可以在我们的头中自定义字体吗？粘贴到你的 `< head >` 在 `blog/templates/blog/post_list.html` 文件中：
 
+```html
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
     
 
 这行将从谷歌的字体 （https://www.google.com/fonts） 中导入称为 *龙虾*的字体 。
 
 现在添加一行 `font-family: 'Lobster';` 到CSS文件 `blog/static/css/blog.css` 的 `h1 a` 声明块中(花括弧 `{` 与 `}` 之间的代码)，然后刷新页面：
 
+```css
     h1 a {
         color: #FCA205;
         font-family: 'Lobster';
     }
+```
     
 
 ![图 14.3][7]
@@ -171,22 +191,27 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 继续命名部分HTML 代码。添加一个称为 `page-header` 的类到您的 `div`中，其中包含您的标头，像这样：
 
+```html
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
+```
     
 
 和现在将包含一篇博客文章的类`post`添加到您的 `div` 。
 
+```html
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>
+```
     
 
 现在，我们将向不同的选择器添加声明块。 选择器以 `.` 开始，关联到类。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 至于现在，就简单地复制粘贴到你的 `blog/static/css/blog.css` 文件中吧。
 
+```css
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -234,10 +259,12 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+```
     
 
 然后将文章的HTML代码用类声明包裹起来。替换以下内容：
 
+```html
     {% for post in posts %}
         <div class="post">
             <p>published: {{ post.published_date }}</p>
@@ -245,10 +272,12 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
+```
     
 
 在 `blog/templates/blog/post_list.html` 是这样的：
 
+```html
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -264,6 +293,7 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
             </div>
         </div>
     </div>
+```
     
 
 保存这些文件并刷新您的网站。

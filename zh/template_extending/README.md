@@ -10,15 +10,18 @@
 
 让我们创建一个`base.html`文件到`blog/templates/blog/`:
 
+```
     blog
     └───templates
         └───blog
                 base.html
                 post_list.html
+```
     
 
 然后将它打开，从`post_list.html`中复制所有东西到`base.html`文件，就像这样：
 
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -50,10 +53,12 @@
             </div>
         </body>
     </html>
+```
     
 
 然后在`base.html`中，替换你所有的 `<body>`(所有的在`<body>` 和 `</body>`之间的内容)像这样：
 
+```html
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -67,18 +72,22 @@
             </div>
         </div>
     </body>
+```
     
 
 用如下内容替换所有在 `{% for post in posts %}{% endfor %}`之间的代码：
 
+```html
     {% block content %}
     {% endblock %}
+```
     
 
 这是什么意思呢？ 你刚刚创建了一个`block（块）`，这个模板标签允许你在其中插入扩展自`base.html`的模板的HTML代码。 我们一会儿将给你展示这个如何使用。
 
 现在保存它，然后再次打开你的`blog/templates/blog/post_list.html`。 删除一切body外的代码，然后删除 `<div class="page-header"></div>`，此时文件会看起来像这样：
 
+```html
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -88,15 +97,19 @@
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
+```
     
 
 然后现在将这行加到文件的开始：
 
+```html
     {% extends 'blog/base.html' %}
+```
     
 
 {% raw %}这意味着我们在 `post_list.html`模板文件中扩展了 `base.html` 模板的内容。 还有一件事：将所有(除了我们刚刚加入的那行) 内容置于`{% block content %}`和 `{% endblock content %}`之间。。 像这样:{% endraw %}
 
+```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -110,6 +123,7 @@
             </div>
         {% endfor %}
     {% endblock content %}
+```
     
 
 好了，就是它了！检查你的网站还能正常工作：）
