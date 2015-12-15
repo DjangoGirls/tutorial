@@ -4,4 +4,4 @@
 
 > **注意**在之前章节你可能已经完成了这一步，如果那样的话，你可以直接进入下一章节。
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}

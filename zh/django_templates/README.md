@@ -14,7 +14,9 @@
 
 为了用模板标签在HTML中显示变量， 我们会使用两个大括号， 并将变量包含在里面，正如这样
 
+```html
     {{ posts }}
+```
     
 
 在你的 `blog/templates/blog/post_list.html` 文件中进行如下的操作。 将所有 `<div>` to the third `</div>` 中的 to the third 用 `{{ posts }}` 代替。 并保存文件，刷新页面后去看看我们做的那些改变。
@@ -25,15 +27,19 @@
 
 如你所见，我们得到如下：
 
+```
     [<Post: My second post>, <Post: My first post>]
+```
     
 
 这意味着Django视它为对象的列表。 还记得在 **Python入门介绍** 里我们怎么展现列表的吗？ 是的， 我们可以使用循环！ 在dajngo模板中使用循环去遍历它们。如下所示：
 
+```html
     {% for post in posts %}
         {{ post }}
     {% endfor %}
-    
+```    
+
 
 在你的模板里试试这个。
 
@@ -43,6 +49,7 @@
 
 它工作了！ 但是想让他们展现的像我们之前在**HTML介绍**章节里创建的静态文章一样 你可以混合HTML和模板标签。 我们的`body`将长得像这样：
 
+```html
     <div>
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
@@ -54,6 +61,7 @@
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
+```
     
 
 {% raw %}所有的在`{% for %}` 和 `{% endfor %}` 之间的内容将会被Django对象列表中的每个对象所代替。刷新页面去看看：{% endraw %}
@@ -70,6 +78,7 @@
 
 *   首先，我们将我们的代码放到Github
 
+```
     $ git status
     [...]
     $ git add -A .
@@ -78,15 +87,18 @@
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
+```
     
 
 *   然后，重新登陆 [PythonAnywhere][4] 并进入**Bash 控制台** (或重开一个)，并运行:
 
  [4]: https://www.pythonanywhere.com/consoles/
 
+```
     $ cd my-first-blog
     $ git pull
     [...]
+```
     
 
 *   最后， 我们返回 [Web tab][5] 重新加载我们的应用程序， 此时我们应该可以看到更新后的程序运行情况了。
