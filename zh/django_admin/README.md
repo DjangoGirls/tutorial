@@ -4,7 +4,6 @@
 
 让我们打开`blog/admin.py`文件，并替换其中的文件像这样：
 
-    python
     from django.contrib import admin
     from .models import Post
     
