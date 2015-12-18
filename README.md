@@ -36,8 +36,8 @@ First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) r
 
 For simple changes like typo corrections you can use the Github online editor:
 
-* Open your local fork page on Github,
-* go to *README.md* file in any chapter,
+* Open your local fork page on Github
+* go to *README.md* file in any chapter
 * press the *Edit* icon (pen)
 
 and you can edit the chapter directly on github.com.
@@ -97,7 +97,7 @@ Example:
        
 If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
 
-# Making a pull request
+# Making a Pull Request
 
 After you have finished your changes you need to create [a pull request](https://help.github.com/articles/using-pull-requests)  on Github. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
 
