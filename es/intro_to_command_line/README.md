@@ -156,7 +156,7 @@ Windows:
     > mkdir djangogirls
     
 
-Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando `ls/dir`! Inténtalo :)
+Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando `ls` (si estás usando Mac o Linux) o `dir` (si estás usando Windows)! Inténtalo :)
 
 > Pro tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para ver recientes comandos utilizados.
 
