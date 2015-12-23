@@ -19,15 +19,15 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 好吧，让我们打开它，然后键入以下代码：
 
 ```python
-    from django import forms
-    
-    from .models import Post
-    
-    class PostForm(forms.ModelForm):
-    
-        class Meta:
-            model = Post
-            fields = ('title', 'text',)
+from django import forms
+
+from .models import Post
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
 ```
     
 
@@ -98,14 +98,14 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 最终代码会看起来像这样：
 
 ```python
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-        url(r'^post/new/$', views.post_new, name='post_new'),
-    ]
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+]
 ```
     
 
@@ -116,16 +116,16 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 现在打开`blog/views.py`文件，加入下面的各行到`from`行下：
 
 ```python
-    from .forms import PostForm
+from .forms import PostForm
 ```
     
 
 还有我们的*view*：
 
 ```python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
     
 
@@ -176,9 +176,9 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 再一次打开`blog/views,py`。我们在看到`post_new`中的视图内容是:
 
 ```python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
     
 
@@ -235,18 +235,18 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
 好吧，我们已经说了很多了，但可能我们想看到整个*视图*现在看起来什么样，对吗？
 
 ```python
-    def post_new(request):
-        if request.method == "POST":
-            form = PostForm(request.POST)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.published_date = timezone.now()
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
     
 
@@ -317,19 +317,19 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
 让我们打开`blog/views.py`，并在文件的最后加入：
 
 ```python
-    def post_edit(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.published_date = timezone.now()
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm(instance=post)
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
     
 

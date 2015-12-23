@@ -24,4 +24,3 @@
 *   [扩展您的应用](extend_your_application/README.md)
 *   [Django表单](django_forms/README.md)
 *   [接下来呢？](whats_next/README.md)
-
