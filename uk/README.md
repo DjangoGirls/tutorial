@@ -1,20 +1,20 @@
 # Навчальний посібник Django Girls
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0.
-Щоб переглянути копію цієї ліцензії, відвідайте
+> Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0
+International License. Щоб переглянути копію цієї ліцензії, відвідайте
 http://creativecommons.org/licenses/by-sa/4.0/
 
 ## Translation
 
-This tutorial has been translated from English by a volunteers: [chupakabra](https://github.com/chupakabra) and others. Special thanks for all the free time they sacrificed to make that happen! <3
+This tutorial has been translated from English by a group of awesome volunteers: [chupakabra](https://github.com/chupakabra), [Oleksandr Redko](https://github.com/alexandear), [Taras Bunyk](https://github.com/bunyk), [msihor](https://crowdin.com/profile/msihor), [Olesia Hrydzhuk](https://github.com/Zlira), [Andriy Kohut](https://github.com/andriykohut), [Artem Suchov](https://crowdin.com/profile/suchov), [Artem Godlevskyi](https://github.com/errno), [Alex Vykalyuk](https://crowdin.com/profile/alekzvik), [Kostyantyn Leschenko](https://crowdin.com/profile/kleschenko). Special thanks for all the free time they sacrificed to make that happen! <3
 
 
 ## Вступ
 
-Чи ви колись відчували, що світ крутиться все більше і більше навколо технологій, а ви в певній мірі пасете задніх? Чи вас колись цікавило, як створити веб сайт, однак, ніколи не вистачало достатньої мотивації, щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?
+Чи ви коли-небудь відчували, що світ крутиться все більше і більше навколо технологій, а ви в певній мірі пасете задніх? Чи вас колись цікавило, як створити веб-сайт, однак, ніколи не вистачало достатньої мотивації, щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?
 
-Що ж, маємо гарні новини для вас! Програмування - це не так складно, як може здатися і ми хочемо вам показати, наскільки веселим цей процес може бути.
+Що ж, маємо гарні новини для вас! Програмування - це не так складно, як може здатися, і ми хочемо вам показати, наскільки веселим цей процес може бути.
 
 Даний навчальний посібник не перетворить вас магічним чином на програміста. Якщо ви хочете розбиратися у цьому, то вам потрібні будуть для цього місяці або навіть роки теорії та практики. Однак ми хочемо показати вам, що програмування або створення веб сайтів не є настільки складним, як це здається. Спробуємо пояснити різні поняття настільки, наскільки зуміємо, то ж ви не будете почуватися заляканими технологіями.
 
@@ -22,7 +22,7 @@ This tutorial has been translated from English by a volunteers: [chupakabra](htt
 
 ## Що ви вивчите під час освоєння посібника?
 
-По завершенню даного посібника, ви будете мати простий робочий веб-додаток - свій власний блог. Ми покажемо вам, як опублікувати його в Інтернеті, тож інші також зможуть оцінити вашу роботу!
+По завершенню даного посібника, ви будете мати простий робочий веб-додаток - свій власний блог. Ми покажемо вам як опублікувати його в Інтернеті, тож інші також зможуть оцінити вашу роботу!
 
 Це буде (в більшій чи меншій мірі) виглядати наступним чином:
 
@@ -42,4 +42,4 @@ This tutorial has been translated from English by a volunteers: [chupakabra](htt
 
 https://crowdin.com/project/django-girls-tutorial
 
-Якщо ваша мова не перерахована на crowdin, будь ласка, [відкрийте нову тему](https://github.com/DjangoGirls/tutorial/issues/new), що інформує про мову, таким чином ми зможемо додати її
+Якщо ваша мова не перерахована на crowdin, будь ласка, [відкрийте нову тему](https://github.com/DjangoGirls/tutorial/issues/new), що інформує про мову, таким чином ми зможемо додати її.

@@ -68,7 +68,7 @@
 
 Не забудьте, що замість `myvenv` повинно бути вибране вами ім'я для віртуального середовища!
 
-> __ЗАУВАЖЕННЯ:__ іноді використання `source` може бути недоступно. В цьому випадку спробуйте зробити наступне: 
+> __ЗАУВАЖЕННЯ:__ іноді використання `source` може бути недоступно. В цьому випадку спробуйте зробити наступне:
 
 >     $ . myvenv/bin/activate
 
@@ -80,10 +80,10 @@
 
 ## Встановлення Django
 
-Наразі, коли ваш `virtualenv` активований, можна встановлювати Django використавши `pip`. В консолі, запустіть `pip install django==1.7.1` (зазначте, що тут ми користуємося подвійним знаком рівності: `==`).
+Наразі, коли ваш `virtualenv` активований, можна встановлювати Django використавши `pip`. В консолі, запустіть `pip install django==1.9` (зазначте, що тут ми користуємося подвійним знаком рівності: `==`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
+    (myvenv) ~$ pip install django==1.9
+    Downloading/unpacking django==1.9
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
@@ -94,7 +94,7 @@
 для Windows 8 чи Windows 10
 > Ваш командний рядок може зависнути, після того як ви спробуєте встановити Django. Якщо це сталось, замість вище зазначеної команди використовуйте:
 
->     C:\Users\Name\djangogirls> python -m pip install django==1.8
+>     C:\Users\Name\djangogirls> python -m pip install django==1.9
 
 для Linux
 > Якщо виникла помилка під час запуску pip на Ubuntu 12.04, будь ласка, запустіть `python -m pip install -U --force-reinstall pip` щоб коректно перевстановити pip у віртуальному середовищі.
