@@ -167,7 +167,7 @@ Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(mvenv) $  pip install django whitenoise
+(myvenv) $  pip install django whitenoise
 Collecting django
 [...]
 Successfully installed django-1.8.2 whitenoise-2.0
@@ -187,7 +187,7 @@ We'll find out a bit more about static files later in the tutorial, when we edit
 
 For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. At the moment these are mostly files that make the admin site look pretty.
 
-    (mvenv) $ python manage.py collectstatic
+    (myvenv) $ python manage.py collectstatic
 
     You have requested to collect static files at the destination
     location as specified in your settings:
@@ -201,11 +201,11 @@ For now we just need to run an extra command called `collectstatic`, on the serv
 
 Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
 
 
@@ -216,13 +216,13 @@ Here's another thing that's different between your own computer and the server: 
 We can initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
 
-    (mvenv) $ python manage.py migrate
+    (myvenv) $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
 
 
-    (mvenv) $ python manage.py createsuperuser
+    (myvenv) $ python manage.py createsuperuser
 
 
 ## Publishing our blog as a web app
