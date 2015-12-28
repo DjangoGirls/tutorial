@@ -193,7 +193,7 @@ Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonA
     
     20:20 ~ $ source myvenv/bin/activate
     
-    (mvenv)20:20 ~ $  pip install django==1.8 whitenoise
+    (myvenv)20:20 ~ $  pip install django==1.8 whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8 whitenoise-1.0.6
@@ -224,11 +224,11 @@ Por ahora sólo necesitamos ejecutar en el servidor un comando adicional llamado
 
 Escribe "yes", ¡y ahí va! ¿No te encanta hacer que las computadoras impriman páginas y páginas de texto imposible de entender? Siempre hago ruiditos para acompañarlo. Brp, brp brp...
 
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
     
 
@@ -238,13 +238,13 @@ Aquí hay otra cosa que es diferente entre tu ordenador y el servidor: éste uti
 
 Así que inicializamos la base de datos en el servidor igual que lo hicimos en nuestro ordenador, con `migrate` y `createsuperuser`:
 
-    (mvenv)20:20 ~ $ python manage.py migrate
+    (myvenv)20:20 ~ $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
     
     
-    (mvenv)20:20 ~ $ python manage.py createsuperuser
+    (myvenv)20:20 ~ $ python manage.py createsuperuser
     
 
 ## Publicar nuestro blog como una aplicación web
