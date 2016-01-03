@@ -127,27 +127,27 @@ Um conceito importante na programação é o conceito de variáveis. Uma variáv
 
 Digamos que queremos criar uma nova variável chamada `nome`:
 
-    >>> name = "Ola"
+    >>> nome = "Ola"
     
 
 Vê? É fácil! É só fazer: nome igual a Ola.
 
 Como você percebeu, seu programa não retornou nada como fez anteriormente. Então como sabemos que a variável realmente existe? Simplesmente digite `nome` e tecle Enter:
 
-    >>> name
+    >>> nome
     'Ola'
     
 
-Yippee! Sua primeira variável:)! Você sempre pode mudar o seu valor:
+Yippee! Sua primeira variável! :) Você sempre pode mudar o seu valor:
 
-    >>> name = "Sonja"
-    >>> name
+    >>> nome = "Sonja"
+    >>> nome
     'Sonja'
     
 
 Você pode usá-la também em funções:
 
-    >>> len(name)
+    >>> len(nome)
     5
     
 
@@ -176,14 +176,14 @@ Brinque com isso por um tempo e veja o que você consegue fazer!
 
 Tente isso:
 
-    >>> name = 'Maria'
-    >>> name
+    >>> nome = 'Maria'
+    >>> nome
     'Maria'
-    >>> print(name)
+    >>> print(nome)
     Maria
     
 
-Quando você apenas digita `name`, o interpretador Python responde com a *representação* como string da variável 'name', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(name)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
+Quando você apenas digita `nome`, o interpretador Python responde com a *representação* como string da variável 'name', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(nome)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções, ou quando queremos imprimir algo em várias linhas.
 
