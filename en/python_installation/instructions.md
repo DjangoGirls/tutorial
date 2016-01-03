@@ -33,7 +33,7 @@ Type this command into your console:
 
 Use this command in your console:
 
-    $ sudo yum install python3.4
+    $ sudo yum install python3
 
 
 #### Fedora (22+)
