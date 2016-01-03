@@ -199,23 +199,23 @@ Vá em frente e crie uma lista:
 
 Sim, esta é uma lista vazia. Não é muito, não é? Vamos criar uma lista dos números da loteria. Como não queremos ficar repetindo o código todo o tempo vamos criar uma variável para ela:
 
-    >>> lottery = [3, 42, 12, 19, 30, 59]
+    >>> loteria = [3, 42, 12, 19, 30, 59]
     
 
 Tudo certo, nós temos uma lista! O que podemos fazer com isso? Vamos ver quantos números de loteria existem nesta lista. Você tem ideia de qual função deve usar para isso? Você já sabe disso!
 
-    >>> len(lottery)
+    >>> len(loteria)
     6
     
 
 Sim! `len()` pode te dar o número de objetos que fazem parte de uma lista. Uma mão na roda, não? Vamos organizar isso agora:
 
-    >>> lottery.sort()
+    >>> loteria.sort()
     
 
 Isso não retorna nada, apenas troca a ordem em que os números aparecem na lista. Vamos imprimir isso outra vez e ver o que acontece:
 
-    >>> print(lottery)
+    >>> print(loteria)
     [3, 12, 19, 30, 42, 59]
     
 
@@ -223,23 +223,23 @@ Como você pode ver, os números na nossa lista estão ordenados do menor para o
 
 Talvez a gente queira inverter essa ordem? Vamos fazer isso!
 
-    >>> lottery.reverse()
-    >>> print(lottery)
+    >>> loteria.reverse()
+    >>> print(loteria)
     [59, 42, 30, 19, 12, 3]
     
 
 Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode fazer isto digitando o seguinte comando:
 
-    >>> lottery.append(199)
-    >>> print(lottery)
+    >>> loteria.append(199)
+    >>> print(loteria)
     [59, 42, 30, 19, 12, 3, 199]
     
 
-Se você quiser mostrar apenas o primeiro número você pode usar **indices**. Um índice é um número que diz onde um item da lista está. Os computadores gostam de iniciar a contagem por 0, então o primeiro objeto tem índice 0, o próximo tem índice 1 e por aí vai. Tente isso:
+Se você quiser mostrar apenas o primeiro número você pode usar **índices**. Um índice é um número que diz onde um item da lista está. Os computadores gostam de iniciar a contagem por 0, então o primeiro objeto tem índice 0, o próximo tem índice 1 e por aí vai. Tente isso:
 
-    >>> print(lottery[0])
+    >>> print(loteria[0])
     59
-    >>> print(lottery[1])
+    >>> print(loteria[1])
     42
     
 
@@ -261,7 +261,7 @@ Isso mostra que você acabou de criar um dicionário vazio. Hurra!
 
 Agora, tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
 
-    >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+    >>> participante = {'nome': 'Ola', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
     
 
 Com esse comando, você acabou de criar uma variável chamada `participant` com três pares de chave-valor:
@@ -272,7 +272,7 @@ Com esse comando, você acabou de criar uma variável chamada `participant` com 
 
 Você pode checar o conteúdo de chaves individuais com a sintaxe:
 
-    >>> print(participant['name'])
+    >>> print(participante['nome'])
     Ola
     
 
@@ -280,13 +280,13 @@ Veja, é similar a uma lista. Mas você não precisa lembrar o índice - apenas 
 
 O que acontece se pedirmos ao Python o valor de uma chave que não existe? Você consegue adivinhar? Vamos tentar e descobrir!
 
-    >>> participant['age']
+    >>> participante['idade']
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     KeyError: 'age'
     
 
-Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'age'` não existe no nesse dicionário.
+Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe no nesse dicionário.
 
 Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
 
@@ -295,34 +295,32 @@ Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense e
 
 Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depois que são criados. Você pode adicionar novos pares de chave/valor para o dicionário após sua criação, como:
 
-    >>> participant['favorite_language'] = 'Python'
+    >>> participante['linguagem_favorita'] = 'Python'
     
 
 Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionario. Vá em frente e digite o comando:
 
-    >>> len(participant)
+    >>> len(participante)
     4
     
 
 Espero que agora faça sentido até agora. :) Pronta para mais diversão com dicionários? Pule na próxima linha para coisas incríveis.
 
-Você pode usar o comando `del` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'favorite_numbers'`, basta digitar o seguinte comando:
+Você pode usar o comando `del` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
 
-    >>> del participant['favorite_numbers']
-    >>> participant
-    {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
-    
+    >>> del participante['numeros_favoritos']
+    >>> participante
+    {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
 
-Como você pode ver no retorno, o par chave-valor correspondente à chave 'favorite_numbers' foi excluído.
+Como você pode ver no retorno, o par chave-valor correspondente à chave 'numeros_favoritos' foi excluído.
 
 Além disso você pode mudar o valor associado com uma chave já criada no dicionário. Digite:
 
-    >>> participant['country'] = 'Germany'
-    >>> participant
-    {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
-    
+    >>> participante['pais'] = 'Alemanha'
+    >>> participante
+    {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
 
-Como você pode ver, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
+Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
