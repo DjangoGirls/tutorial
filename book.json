@@ -6,7 +6,7 @@
     },
 
     "plugins": [
-        "anchors@0.5.0", "ga@1.0.0", "richquotes@0.0.7", "edit-link@2.0.0"
+        "anchors@0.5.0", "ga", "richquotes@0.0.7", "edit-link@2.0.0"
     ],
     "pluginsConfig": {
         "ga": {
