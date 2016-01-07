@@ -267,6 +267,7 @@ if path not in sys.path:
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
 from django.core.wsgi import get_wsgi_application
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "prompt.settings")
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```
