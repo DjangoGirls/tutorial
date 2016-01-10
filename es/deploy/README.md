@@ -314,4 +314,4 @@ Si aparece un error cuando intentas visitar tu sitio, el primer lugar que deber�
 
 La página por defecto de tu sitio debería decir "Welcome to Django", igual que en tu PC local. Intenta añadir `/admin/` al final de la URL y te redirigirá al panel de administración. Ingresa con tu nombre de usuario y contraseña y verás que puedes añadir nuevas entradas en el servidor.
 
-Date una *GRAN* palmada en la espalda; los despliegues en el servidor son una de las partes más complejas del desarrollo web y muchas veces a la gente le cuesta varios días tenerlo funcionando. Pero tú tienes tu sitio en vivo, en Internet de verdad, ¡así como suena!
+*¡Buen trabajo!* - los despliegues en el servidor son una de las partes más complejas del desarrollo web y muchas veces a la gente le cuesta varios días tenerlo funcionando. Pero tú tienes tu sitio en vivo, en Internet de verdad, ¡así como suena!
