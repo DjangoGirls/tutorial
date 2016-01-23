@@ -391,7 +391,7 @@ Já ouviu a expressão "comparar maçãs com laranjas"? Vamos tentar o equivalen
     TypeError: unorderable types: int() > str()
     
 
-Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str</0)>.
+Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str`).
 Em vez disso, ele mostrou um <strong>TypeError</strong> e nos disse que os dois tipos não podem ser comparados juntos.</p>
 
 <h2>Booleano</h2>
