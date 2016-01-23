@@ -1,3 +1,4 @@
+> For readers at home: this chapter is covered in [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
 
 > This section is based on a tutorial by Geek Girls Carrots (http://django.carrots.pl/)
 

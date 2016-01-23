@@ -1,5 +1,7 @@
 # How the Internet works
 
+> For readers at home: this chapter is covered in [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+
 > This chapter is inspired by a talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like http://djangogirls.org into your browser and press `enter`?

@@ -28,6 +28,13 @@ It will (more or less) look like this:
 
 OK, [let's start at the beginning...](./how_the_internet_works/README.md)
 
+## Following the tutorial at home
+
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why, we ecourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still work in progress, but more and more things will be covered soon at [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
+
+
 ## About and contributing
 
 This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
