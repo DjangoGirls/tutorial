@@ -283,10 +283,10 @@ O que acontece se pedirmos ao Python o valor de uma chave que não existe? Você
     >>> participante['idade']
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    KeyError: 'age'
+    KeyError: 'idade'
     
 
-Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe no nesse dicionário.
+Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe nesse dicionário.
 
 Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
 
