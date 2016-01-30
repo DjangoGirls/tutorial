@@ -13,7 +13,7 @@ admin.site.register(Post)
 
 Comme vous pouvez le voir, nous importons le modèle « Post » que nous avons écrit dans le chapitre précédent. Afin que notre modèle soit visible dans l'interface d'administration, nous avons besoin d'enregistrer notre modèle à l'aide de `admin.site.register(Post)`.
 
-Voilà, il est temps de jeter un œil à notre modèle Post. N'oubliez pas d'exécuter `python manage.py runserver` dans votre console afin de lancer le serveur web. Dans votre navigateur, entrez l'adresse <0>http://127.0.0.1:8000/admin/</0>. Si tout va bien, vous verrez une page comme celle-ci:
+Voilà, il est temps de jeter un œil à notre modèle Post. N'oubliez pas d'exécuter `python manage.py runserver` dans votre console afin de lancer le serveur web. Dans votre navigateur, entrez l'adresse http://127.0.0.1:8000/admin/. Si tout va bien, vous verrez une page comme celle-ci:
 
 ![Page de login][1]
 
