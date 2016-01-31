@@ -1,5 +1,7 @@
 # Introduction to the command-line interface
 
+> For readers at home: this chapter is covered in [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+
 Huh, it's exciting, right?! You'll write your first line of code in just a few minutes :)
 
 __Let us introduce you to your first new friend: the command line!__

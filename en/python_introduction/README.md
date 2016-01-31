@@ -6,6 +6,8 @@ Let's write some code!
 
 ## Python prompt
 
+> For readers at home: this chapter is covered in [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+
 To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that -- you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
@@ -242,6 +244,8 @@ For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you c
 You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
+
+> For readers at home: this chapter is covered in [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
 A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define an empty dictionary is:
 
