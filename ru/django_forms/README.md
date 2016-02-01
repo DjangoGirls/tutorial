@@ -19,7 +19,6 @@
 
 ```python
     from django import forms
-
     from .models import Post
 
     class PostForm(forms.ModelForm):
@@ -45,8 +44,7 @@
 
 Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `page-header`:
 
-```
-    html
+```html
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
@@ -54,8 +52,7 @@
 
 После добавления строки, твой html-файл должен выглядеть следующим образом:
 
-```
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -140,8 +137,7 @@
 
 Хорошо, давай посмотрим как должен выглядеть HTML-код в файле `post_edit.html`:
 
-```
-    html
+```html
     {% extends 'blog/base.html' %}
 
     {% block content %}
