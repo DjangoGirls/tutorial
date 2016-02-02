@@ -157,7 +157,7 @@ Django будет автоматически находить папки "static
 Возможно, мы можем настроить шрифт нашего заголовка? Вставь это внутрь тега `<head>` в файле `blog/templates/blog/post_list.html`:
 
 ```html
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 ```
 
 Эта строка импортирует шрифт под названием *Lobster* из шрифтов Google (https://www.google.com/fonts).

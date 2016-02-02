@@ -36,8 +36,9 @@ from .models import Post
 
 Сейчас нас интересует список записей блога, отсортированных по `published_date`, согласна? Мы уже делали это в главе о QuerySets!
 
+```python
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```    
 
 Теперь нам нужно включить эту строку кода в файл`blog/views.py`, добавив её в функцию `def post_list(request)`:
 

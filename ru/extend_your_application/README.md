@@ -83,7 +83,7 @@
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet:
 
-```
+```python
     Post.objects.get(pk=pk)
 ```
 
@@ -105,13 +105,13 @@
 
 Нам нужно открыть файл `blog/views.py` и добавить в него следующий код:
 
-```
+```python
     from django.shortcuts import render, get_object_or_404
 ```
 
 Рядом с другими строками, начинающимися с `from`. В конец же файла мы добавим наше новое *представление*:
 
-```
+```python
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
