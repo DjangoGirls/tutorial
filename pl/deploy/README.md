@@ -22,7 +22,7 @@ Git jest "systemem kontroli wersji", którego używa wielu programistów. Progra
 
 > **Uwaga** Jeśli już wcześniej przeszłaś kroki instalacyjne, nie musisz ich powtarzać - przejdź od razu do następnego podrozdziału, żeby stworzyć repozytrorium Git.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Tworzenie repozytorium Git
 
@@ -34,7 +34,7 @@ Git śledzi zmiany dokonywane w zbiorze plików w czymś, co nazywamy repozytori
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Twoja Nazwa Uzytkownika"
     $ git config --global user.email ty@adres.pl
-    
+
 
 Inicjalizacja repozytorium to coś, co będziesz musiała zrobić tylko raz na dany projekt (i nie będziesz musiała już wpisywać swojej nazwy użytkownika i adresu email).
 
@@ -45,7 +45,7 @@ Git będzie śledzić zmiany we wszyskich plikach i folderach w tym katalogu, al
     myvenv
     db.sqlite3
     .DS_Store
-    
+
 
 Zapisz go jako `.gitignore` w folderze najwyższego poziomu "djangogirls".
 
@@ -55,19 +55,19 @@ Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` 
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia:
 
@@ -78,7 +78,7 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Przesyłanie naszego kodu do GitHuba
 
@@ -104,7 +104,7 @@ Wpisz następujące polecenie do konsoli (Zamień `<your-github-username>` na sw
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć coś takiego:
 
@@ -116,7 +116,7 @@ Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -129,7 +129,7 @@ Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje si�
 
 > **Uwaga** Możliwe, że już wcześniej utworzyłaś konto na PythonAnywhere, jeśli przeszłaś przez wszystkie kroki w rozdziale instalacyjnym - nie ma potrzeby, byś robiła to drugi raz.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Umieszczanie naszego kodu na PythonAnywhere
 
@@ -140,7 +140,7 @@ Kiedy już zakończysz tworzenie konta na PythonAnywhere, zostaniesz przeniesion
 Umieśćmy nasz kod z GitHuba na PythonAnywhere. Zrobimy to "klonując" (ang. "clone") nasze repozytorium. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 To polecenie ściągnie kopię twojego kodu na PythonAnywhere. By to sprawdzić, wpisz `tree my-first-blog`:
 
@@ -161,26 +161,26 @@ To polecenie ściągnie kopię twojego kodu na PythonAnywhere. By to sprawdzić,
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Tworzenie środowiska wirtualnego na PythonAnywhere
 
 Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wirtualne na PythonAnywhere. W konsoli Bash wpisz:
 
     $ cd my-first-blog
-    
+
     $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
     (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
-    
+
 
 > **Uwaga** Polecenie `pip install` może trochę potrwać. Cierpliwości, cierpliwości! Jednak jeśli trwa to dłużej niż 5 min, coś jest nie tak. Spytaj swojego mentora.
 
@@ -195,17 +195,17 @@ Dowiemy się więcej o plikach statycznych później, kiedy będziemy zmieniać 
 Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Polecenie to mówi Django, by zebrał wszystkie pliki statyczne, których potrzebuje na serwerze. W tym momencie chodzi głównie o pliki, które upiększają nam panel admina.
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 Wpisz "yes" i niech hula maszyna! Czy to nie piękne, jak komputer wypluwa z siebie dłuugie strony tekstu? Ja czasami wydaję ciche dźwięki, które mi się z tym kojarzą. Pip, pip, piiiip...
 
@@ -215,7 +215,7 @@ Wpisz "yes" i niech hula maszyna! Czy to nie piękne, jak komputer wypluwa z sie
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### Tworzenie bazy danych na PythonAnywhere
 
@@ -227,10 +227,10 @@ Możemy zainicjować bazę danych na serwerze dokładnie w ten sam sposób, w ja
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-    
+
 
 ## Publikowanie naszego bloga jako aplikacji internetowej
 
@@ -265,17 +265,17 @@ Skasuj całą zawartość pliku i zastąp ją następującym tekstem:
     python
     import os
     import sys
-    
+
     path = '/home/<your-username>/my-first-blog'  # use your own username here
     if path not in sys.path:
         sys.path.append(path)
-    
+
     os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
+
     from django.core.wsgi import get_wsgi_application
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(get_wsgi_application())
-    
+
 
 > **Uwaga** Nie zapomnij zastąpić wszystkich wystąpień `<your-username>` swoją nazwą użytkownika.
 

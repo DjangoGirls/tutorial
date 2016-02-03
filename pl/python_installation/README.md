@@ -10,4 +10,4 @@ Początki Pythona sięgają późnych lat 80., a jego głównym założeniem jes
 
 > **Uwaga** Jeśli zrobiłaś to już wcześniej w rozdziale 'Instalacja', nie ma potrzeby instalować Pythona po raz drugi - przejdź od razu do następnego rozdziału!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}

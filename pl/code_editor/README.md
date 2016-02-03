@@ -4,4 +4,4 @@ Zaraz napiszesz swoją pierwszą linijkę kodu, więc najwyższy czas zainstalow
 
 > **Uwaga** Jeśli zrobiłaś to już wcześniej w rozdziale 'Instalacja' - możesz przejść od razu do następnego rozdziału!
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}

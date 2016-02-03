@@ -14,19 +14,19 @@ Podczas warsztatów będziesz budować bloga, ale abyś mogła zacząć programo
 
 # Zainstaluj Pythona
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Utwórz środowisko wirtualne i zainstaluj Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Zainstaluj edytor kodu
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Zainstaluj Gita
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Utwórz konto na GitHubie
 
@@ -34,7 +34,7 @@ Wejdź na stronę [GitHub.com](http://www.github.com) i załóż darmowe konto u
 
 # Utwórz konto na PythonAnywhere
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Zacznij czytać
 
