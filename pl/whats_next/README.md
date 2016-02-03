@@ -1,6 +1,6 @@
 # Co dalej?
 
-Możesz z siebie być dumna! **Jesteś absolutnie świetna**. Jesteśmy takie dumne! < 3
+Możesz być z siebie dumna! **Jesteś absolutnie świetna**. Jesteśmy takie dumne! <3
 
 ### Co teraz?
 
@@ -19,7 +19,16 @@ Tak! Najpierw możesz spróbować naszej kolejnej książki: [Django Girls Tutor
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Możesz też wypróbować materiały, które wypisałyśmy poniżej. Wszystkie bardzo polecamy! - [Oficjalna dokumentacja Django][4] - [instrukcje New Coder][5] - [kurs Code Academy Python][6] - [kurs Code Academy HTML & CSS][7] - [tutorial Django Carrots][8] - [książka Learn Python The Hard Way][9] - [video lekcje Getting Started With Django][10] - [książka Two Scoops of Django: Best Practices for Django 1.8][11]
+Możesz też wypróbować materiały, które wypisałyśmy poniżej. Wszystkie bardzo polecamy!
+
+- [Oficjalna dokumentacja Django][4]
+- [instrukcje New Coder][5]
+- [kurs Code Academy Python][6]
+- [kurs Code Academy HTML & CSS][7]
+- [tutorial Django Carrots][8]
+- [książka Learn Python The Hard Way][9]
+- [video lekcje Getting Started With Django][10]
+- [książka Two Scoops of Django: Best Practices for Django 1.8][11]
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
