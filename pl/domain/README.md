@@ -16,33 +16,45 @@ Naszą ulubioną firmą jest [I want my name][2]. Reklamują się jako "bezboles
 
 ## Jak zarejestrować domenę w IWantMyName?
 
-Przejdź do [iwantmyname][3] i wpisz nazwę domeny, którą chciałabyś mieć, w polu wyszukiwania.
+Przejdź do [iwantmyname][3] i w polu wyszukiwania wpisz nazwę domeny, którą chciałabyś mieć.
 
  [3]: http://iwantmyname.com
 
-![](images/1.png)
+![][4]
+
+ [4]: images/1.png
 
 Teraz powinnaś zobaczyć listę wszystkich domen zawierających nazwę, którą wpisałaś w polu wyszukiwania. Jak widzisz, uśmiechnięta buźka sygnalizuje, że dana domena jest wolna i można ją kupić, zaś smutna buźka oznacza, że dana domena należy już do kogoś innego.
 
-![](images/2.png)
+![][5]
+
+ [5]: images/2.png
 
 Postanowiłyśmy kupić domenę `djangogirls.in`:
 
-![](images/3.png)
+![][6]
+
+ [6]: images/3.png
 
 Przejdź do podsumowania transakcji. Jeżeli nie masz jeszcze konta w iwantmyname, załóż je teraz. Gdy już to zrobisz, wpisz dane swojej karty kredytowej i domena będzie Twoja!
 
 Następnie wybierz z menu opcję `Domains` i wybierz swoją nową domenę. Znajdź link `manage DNS records` i kliknij go:
 
-![](images/4.png)
+![][7]
+
+ [7]: images/4.png
 
 Teraz musisz znaleźć taki formularz:
 
-![](images/5.png)
+![][8]
+
+ [8]: images/5.png
 
 I wypełnić go w następujący sposób: - Hostname: www - Type: CNAME - Value: twoja domena w Heroku (na przykład djangogirls.herokuapp.com) - TTL: 3600
 
-![](images/6.png)
+![][9]
+
+ [9]: images/6.png
 
 Kliknij przycisk Add oraz Save changes na dole.
 
