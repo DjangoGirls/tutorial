@@ -14,8 +14,9 @@ W poprzednim rozdziale przekazaliśmy listę postów w zmiennej `posts` do nasze
 
 Aby wyświetlić zmienną w szablonie Django, używamy podwójnych nawiasów klamrowych z nazwą zmiennej w środku, w taki sposób:
 
-    {{ posts }}
-
+```html
+{{ posts }}
+```
 
 Wypróbuj tego w szablonie `blog/templates/blog/post_list.html` (zastąp wszystko wewnątrz drugiego `<div></div>` wierszem `{{ posts }}`), zapisz plik i odśwież stronę, aby zobaczyć rezultat:
 
@@ -28,9 +29,11 @@ Jak widzisz, dostaliśmy tylko tyle:
 
 Oznacza to tyle, że Django rozumie to jako listę obiektów. Pamiętasz z rozdziału **Wprowadzenie do Pythona**, jak możemy wyświetlić zawartość listy? Tak, za pomocą pętli! W szablonie Django używamy ich w ten sposób:
 
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
 
 Wypróbuj tego w swoim szablonie.
@@ -39,17 +42,19 @@ Wypróbuj tego w swoim szablonie.
 
 Działa! Ale chcemy je wyświetlić tak samo, jak statyczne wpisy, które tworzyłyśmy wcześniej w rozdziale **Wprowadzenie do HTML**. Możliwe jest łączenie znaczników szablonu z kodem HTML. Nasza sekcja `body` będzie wyglądać tak:
 
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```
 
 
 Wszystko, co zawszesz pomiędzy `{% for %}` a `{% endfor %}` zostanie powtórzone dla każdego obiektu z listy. Odśwież stronę:
@@ -62,14 +67,16 @@ Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: `{{ post.
 
 Dobrze byłoby wiedzieć, że nasza witryna nadal działa na Heroku, prawda? Spróbuj ponownie wdrażania. Jeśli nie pamiętasz jak to zrobić, sprawdź na końcu rozdziału 15:
 
-    $ git status
-    ...
-    $ git add -A .
-    $ git status
-    ...
-    $ git commit -m "Dodane szablony Django"
-    ...
-    $ git push heroku master
+```bash
+$ git status
+...
+$ git add -A .
+$ git status
+...
+$ git commit -m "Dodane szablony Django"
+...
+$ git push heroku master
+```
 
 
 Gratulacje! Teraz śmiało możesz dodać nowy wpis w swoim panelu administratora Django (nie zapomnij dodać published_date!). Następnie odśwież stronę, żeby sprawdzić, czy Twój wpis się tam pojawił.

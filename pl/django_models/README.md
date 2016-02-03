@@ -6,7 +6,7 @@ Teraz zajmiemy się stworzeniem czegoś, co będzie przechowywało wszystkie wpi
 
 W programowaniu istnieje pojęcie `programowania zorientowanego obiektowo`. Chodzi o to, że zamiast wypisywania nudnych sekwencji poleceń, możemy tworzyć modele różnych rzeczy i definiować ich zachowania względem siebie.
 
-Zatem czym są obiekty? To po prostu zbiór pewnych właściwości i czynności. Owszem, brzmi dziwnie, ale przyjrzyjmy się temu na przykładzie.
+Zatem czym są obiekty? To po prostu zbiór pewnych właściwości i czynności. Owszem, brzmi dziwnie, ale przyjrzyjmy się temu na konkretnym przykładzie.
 
 Jeśli chcemy stworzyć model kota, stworzymy obiekt o nazwie `Kot` posiadający jakieś właściwości, np. `kolor`, `wiek`, `nastrój` (np. dobry, zły, senny ;)), `posiadacz` (czyli obiekt typu `Person`, lub pozostawimy tę właściwość pustą w postaci kota-znajdy).
 
@@ -30,7 +30,7 @@ Nasz `Kot` ma określone czynności: `mrucz`, `podrap`, `jedz` (i tu przekażemy
 
 Czyli w zasadzie chodzi o to, że opisujemy prawdziwe rzeczy w kodzie za pomocą właściwości (zwanych `właściwościami obiektu`) oraz czynności (zwanych `metodami`).
 
-W takim razie jak będzie wyglądał model naszego postu na blogu? Chcemy zbudować bloga, zgadza się?
+W takim razie jak będzie wyglądał model naszego posta na blogu? Chcemy zbudować bloga, zgadza się?
 
 Musimy odpowiedzieć sobie na pytanie: czym jest wpis na blogu? Jakie powinien mieć właściwości?
 
@@ -143,9 +143,9 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 *   `models.DateTimeField` - to jest data i godzina.
 *   `models.ForeignKey` - to jest odnośnik do innego modelu.
 
-Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Powinnaś zajrzeć do dokumentacji Django, Jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/1.7/ref/models/fields/#field-types).
+Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Powinnaś zajrzeć do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować typy inne niż opisywane powyżej (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
-A co to takiego `def publish(self):`? To jest nic innego, jak nasza metoda publikująca wpis, o której wspominałyśmy wcześniej. Słowo `def` oznacza, że mamy do czynienia z funkcją/metodą. Z kolei `publish` to nazwa metody. Możesz użyć innej, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji (czyli gdybyś chciała dodać metodę, która oblicza średnią cen, mogłabyś ją nazwać `calculate_average_price` lub <0>oblicz_srednia_cene</0>).
+A co to takiego `def publish(self):`? To nic innego, jak nasza metoda publikująca wpis, o której wspominałyśmy wcześniej. Słowo `def` oznacza, że mamy do czynienia z funkcją/metodą. Z kolei `publish` to nazwa metody. Możesz użyć innej, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji (czyli gdybyś chciała dodać metodę, która oblicza średnią cen, mogłabyś ją nazwać `calculate_average_price` lub `oblicz_srednia_cene`).
 
 Bardzo często metody coś zwracają (`return`). Przykład tego znajdziesz w metodzie `__str__`. W tym przypadku wywołując metodę `__str__()` otrzymamy tekst (**string**) zawierający tytuł wpisu.
 

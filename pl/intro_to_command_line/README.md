@@ -4,7 +4,7 @@ Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana
 
 **Pozwól, że przedstawimy Ci Twojego pierwszego przyjaciela: wiersz poleceń!**
 
-Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco, ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 ## Czym jest wiersz poleceń?
 
@@ -56,7 +56,7 @@ lub
     > whoami
 
 
-A następnie wciśnij Enter. Oto rezulat:
+A następnie wciśnij `enter`. Oto rezultat:
 
     $ whoami
     olasitarska
@@ -72,7 +72,7 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 ### Bieżący katalog
 
-Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij Enter:
+Byłoby miło dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
 
     $ pwd
     /Users/olasitarska
@@ -146,7 +146,7 @@ C:\Users\olasitarska\Desktop
 
 Tak, to tutaj!
 
-> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
+> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 
@@ -283,7 +283,7 @@ Oto podsumowanie przydatnych poleceń:
 | mkdir               | mkdir                      | tworzenie nowego katalogu | **mkdir testdirectory**                           |
 | del                 | rm                         | usunięcie katalogu/pliku  | **del c:\test\test.txt**                        |
 
-To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz używała niczego więcej.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
 Jeżeli temat Cię zainteresował, to [ss64.com][1] zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 

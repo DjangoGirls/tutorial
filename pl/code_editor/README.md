@@ -2,7 +2,7 @@
 
 Zaraz napiszesz swoją pierwszą linijkę kodu, czas na zainstalowanie edytora tekstu!
 
-Tylko który wybrać? To nie takie proste, bo wybór zależy w dużej mierze od tego, co oczekujesz od swojego edytora. Większość programistów Pythona używa bardzo skomplikowanych i niezwykle bogatych w różne funkcjonalności IDE (z ang. Integrated Development Environments - zintegrowane środowisko deweloperskie), takich jak: PyCharm. Jako osoba początkująca nie potrzebujesz jednak aż tak skomplikowanego edytora. Wystarczy coś prostszego, ale nadal dostatecznie użytecznego.
+Tylko który wybrać? To nie takie proste, bo wybór zależy w dużej mierze od tego, co oczekujesz od swojego edytora. Większość programistów Pythona używa bardzo skomplikowanych i niezwykle bogatych w różne funkcjonalności IDE (z ang. zintegrowanych środowisk programistycznych - Integrated Development Environments), takich jak np. PyCharm. Jako osoba początkująca nie potrzebujesz jednak aż tak skomplikowanego edytora. Wystarczy coś prostszego, ale nadal dostatecznie użytecznego.
 
 Poniżej znajdziesz nasze propozycje, ale jeżeli masz taką możliwość, możesz poprosić o rekomendację Twojego coacha -- będzie mu łatwiej pomagać Ci podczas warsztatów.
 

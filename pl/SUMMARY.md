@@ -1,7 +1,7 @@
 # Podsumowanie
 
 *   [Wprowadzenie](README.md)
-*   [Jak działa internet?](how_internet_works/README.md)
+*   [Jak działa internet?](how_the_internet_works/README.md)
 *   [Wprowadzenie do linii poleceń](intro_to_command_line/README.md)
 *   [Instalowanie Pythona](python_installation/README.md)
 *   [Edytor kodu](code_editor/README.md)
@@ -10,12 +10,12 @@
 *   [Instalowanie Django](django_installation/README.md)
 *   [Tworzenie projektu Django](django_start_project/README.md)
 *   [Modele w Django](django_models/README.md)
-*   [ORM Django (obiekty QuerySet)](django_orm/README.md)
 *   [Administracja Django (admin)](django_admin/README.md)
 *   [Wdrażanie!](deploy/README.md)
 *   [Adresy URL w Django](django_urls/README.md)
 *   [Widoki Django - czas je stworzyć!](django_views/README.md)
 *   [Wprowadzenie do HTMLa](html/README.md)
+*   [ORM Django (obiekty QuerySet)](django_orm/README.md)
 *   [Dane dynamiczne w szablonach Django](dynamic_data_in_templates/README.md)
 *   [Szablony Django](django_templates/README.md)
 *   [CSS - upiększ to](css/README.md)

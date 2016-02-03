@@ -6,15 +6,20 @@
     },
 
     "plugins": [
-        "anchors", "ga", "richquotes"
+        "anchors@0.5.0", "ga", "richquotes@0.0.7", "edit-link@2.0.0"
     ],
-
     "pluginsConfig": {
         "ga": {
             "token": "UA-51680040-3"
         },
         "richquotes" : {
-            "todos" : true
+            "default" : false
+        },
+        "edit-link": {
+            "base": "https://github.com/djangogirls/tutorial/edit/master",
+            "label": "Edit This Page"
         }
-    }
+    },
+
+    "gitbook": ">=2.5.2"
 }

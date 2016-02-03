@@ -14,11 +14,11 @@ Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić c
 
 ### Windows
 
-Możesz ściągnąć Pythona dla Windowsa z tej strony: https://www.python.org/downloads/release/python-342/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+Możesz ściągnąć Pythona dla Windowsa z tej strony: https://www.python.org/downloads/release/python-343/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj katalog (ścieżkę), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
 
 ### Linux
 
-Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
+Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję), otwórz konsolę i wpisz następujące polecenie:
 
     $ python3 --version
     Python 3.4.2
@@ -26,19 +26,26 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
 
 Jeżeli nie masz zainstalowanego Pythona, lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
-#### Ubuntu
+#### Debian lub Ubuntu
 
 Wpisz w konsoli poniższe polecenie:
 
-    sudo apt-get install python3.4
-    
+    $ sudo apt-get install python3.4
 
-#### Fedora
+
+#### Fedora (<=21)
 
 Użyj następującego polecenia w konsoli:
 
-    sudo yum install python3.4
-    
+    $ sudo yum install python3.4
+
+
+#### Fedora (22+)
+
+Użyj następującego polecenia w konsoli:
+
+    $ sudo dnf install python3.4
+
 
 ### OS X
 

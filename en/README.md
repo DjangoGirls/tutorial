@@ -26,17 +26,23 @@ It will (more or less) look like this:
 
 > If you work with the tutorial on your own and don't have a coach that will help you in case of any problem, we have a chat for you: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-OK, [let's start at the beginning...](how_internet_works/README.md)
+OK, [let's start at the beginning...](./how_the_internet_works/README.md)
+
+## Following the tutorial at home
+
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why, we ecourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still work in progress, but more and more things will be covered soon at [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
+
 
 ## About and contributing
 
-This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial to other languages?
 
-currently, translations are being kept on crowdin.com platform in:
+Currently, translations are being kept on crowdin.com platform in:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it
-
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it.

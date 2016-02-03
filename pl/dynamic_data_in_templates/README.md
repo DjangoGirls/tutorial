@@ -28,20 +28,21 @@ Ale co dalej? Żeby pobrać wpisy naszego bloga z modelu `Post` potrzebujemy cze
 
 Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. Rozmawiałyśmy o tym w rozdziale [Django ORM (QuerySets)][1].
 
- [1]: /django_orm/README.html
+ [1]: ../django_orm/README.md
 
 Więc teraz interesuje nas lista wpisów, które zostały opublikowane i posortowane według daty publikacji (`published_date`), zgadza się? Już to zrobiłyśmy w rozdziale o QuerySetach!
 
-    Post.objects.filter(published_date__isnull=False).order_by('published_date')
+    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
 Teraz umieśćmy ten kod wewnątrz pliku `blog/views.py` poprzez dodanie go do funkcji `def post_list(request)`:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
     
 
@@ -54,13 +55,14 @@ W funkcji `render` mamy już parametr `request` (czyli wszystko to, co odbieramy
 Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
     from django.shortcuts import render
+    from django.utils import timezone
     from .models import Post
     
     def post_list(request):
-        posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
     
 
 I to wszystko! Czas, żebyśmy wróciły do naszego szablonu i wyświetliły ten QuerySet!
 
-Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.7/ref/models/querysets/
+Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.8/ref/models/querysets/

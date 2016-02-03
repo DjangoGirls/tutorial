@@ -1,42 +1,119 @@
 # Django Girls Tutorial
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
-International License. To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/4.0/
+This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file. 
 
 
-## Introduction
+# How to contribute
 
-Have you ever felt that the world is more and more about technology and you are somehow left behind? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+The Django Girls Tutorial is licensed under a *Creative Commons Attribution-ShareAlike 4.0* license. Everyone is free to add, edit and correct the tutorial.
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+# Editing basics
 
-The tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+The source code of the tutorial is [hosted on Github](http://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
-We hope that we'll be able to make you love technology as much as we do!
+The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
-## What will you learn during the tutorial?
+The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
-Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
+You can find any discussions about the contents of the tutorial on the [Github issue tracker](https://github.com/DjangoGirls/tutorial/issues).
 
-It will (more or less) look like this:
+# Getting started and prerequisites
 
-![Figure 0.1](http://tutorial.djangogirls.org/en/images/application.png)
+For contributing to the tutorial the following is needed to get started:
 
-> If you work with the tutorial on your own and don't have a coach that will help you in case of any problem, we have a chat for you: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+* a [Github account](https://github.com)
+* in the case of complex edits familiarity with [Git command line basics](https://help.github.com/articles/set-up-git) or familiarity with an app ([Windows](https://windows.github.com/), [Mac](https://mac.github.com/)) to push your edits made on your computer to Github.
 
-OK, [let's start at the beginning...](http://tutorial.djangogirls.org/en/how_internet_works/README.html)
+## Fork the repository
 
-## About and contributing
+First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) repository to your personal Github account:
 
-This tutorial is maintained by [DjangoGirls](http://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+![Fork button](contributing/images/fork.png)
 
-## Would you like to help us translate the tutorial to other languages?
+# Editing chapter content
 
-currently, translations are being kept on crowdin.com platform in:
+## Simple changes
 
-https://crowdin.com/project/django-girls-tutorial
+For simple changes like typo corrections you can use the Github online editor:
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing the language so we can add it
+* Open your local fork page on Github,
+* go to *README.md* file in any chapter,
+* press the *Edit* icon (pen)
+
+and you can edit the chapter directly on github.com.
+
+![Edit button](contributing/images/edit.png)
+
+Markdown syntax is used to edit the individual pages of the tutorial.
+
+![Github editor](contributing/images/github_editor.png)
+
+Save your changes and create a pull request as explained below.
+
+## New content and complex changes
+
+For adding new chapters, writing longer snippets of text or adding images, you need to get a copy of the tutorial to your local computer.
+
+Either use the Github app for your operating system (mentioned above) or `git` command line to get the repository locally. You get the repository address from the front page of your own Github repository fork:
+
+    git clone git@github.com:yourgithubusername/tutorial.git
+
+Then, create a branch for your new changes to sit in. It helps to call the branch something related to the changes you are going to make.
+
+    git checkout -b contributing
+
+Download the [Gitbook Editor](https://github.com/GitbookIO/editor-legacy/releases) app to your computer.
+
+Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
+
+Make any changes in the tutorial using Gitbook and then save changes (*Book* > *Save all*).
+
+Then commit the changes using `git` and push the changes to your remote Github repository.
+
+Example:
+
+    $ git status
+    On branch contributing
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+        contributing_and_editing_this_book/images/gitbook.png
+
+    $ git add contributing_and_editing_this_book/images/gitbook.png
+
+    $ git commit -m "Added gitbook editor screenshot"
+    [contributing fe36152] Added gitbook screenshot
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 contributing_and_editing_this_book/images/gitbook.png
+
+    $ git push
+    Counting objects: 11, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (5/5), done.
+    Writing objects: 100% (5/5), 266.37 KiB | 0 bytes/s, done.
+    Total 5 (delta 1), reused 0 (delta 0)
+    To git@github.com:miohtama/tutorial.git
+       b37ca59..fe36152  contributing -> contributing
+       
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
+
+# Making a pull request
+
+After you have finished your changes you need to create [a pull request](https://help.github.com/articles/using-pull-requests)  on Github. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
+
+In your own repository on Github press do *Compare & pull request*
+
+![Gitbook](contributing/images/pull_request.png)
+
+Fill in the information *why* this change is being made. The reviewer can see the details of the actual change, so you don't need repeat the content of the change.
+
+Then press *Create pull request*.
+
+Github emails will notify you for the follow up process.
+
+# Further information and help
+
+GitHub has an excellent [documentation](https://help.github.com/). Check it out if you need help!
+
+For further questions please [contact DjangoGirls](http://djangogirls.org/).
 

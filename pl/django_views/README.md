@@ -32,4 +32,4 @@ Znowu błąd! Przeczytaj, o co chodzi tym razem:
 
 Tym razem jest łatwo: *TemplateDoesNotExist*, Naprawmy ten błąd i stwórzmy szablon - ale to już w następnym rozdziale!
 
-> Więcej na temat widoków Django dowiesz się czytając oficjalną dokumentację: https://docs.djangoproject.com/en/1.7/topics/http/views/
+> Więcej na temat widoków Django dowiesz się czytając oficjalną dokumentację: https://docs.djangoproject.com/en/1.8/topics/http/views/

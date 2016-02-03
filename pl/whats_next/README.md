@@ -30,7 +30,7 @@ Możesz też spróbować któregoś z materiałów poniżej. Wszystkie bardzo po
 - [video lekcje Getting Started With Django][10]
 - [książka Two Scoops of Django: Best Practices for Django][11]
 
- [4]: https://docs.djangoproject.com/en/1.6/intro/tutorial01/
+ [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
  [6]: http://www.codecademy.com/en/tracks/python
  [7]: http://www.codecademy.com/tracks/web
