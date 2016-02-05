@@ -99,13 +99,17 @@ Ok, time to add a *view* to our `views.py` file!
 
 We should open `blog/views.py` and add the following code:
 
-    from django.shortcuts import render, get_object_or_404
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
 Near other `from` lines. And at the end of the file we will add our *view*:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
