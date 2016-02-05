@@ -10,18 +10,18 @@ Widoki (ang. views) są przechowywane w pliku `views.py`. Dodajmy *views* do nas
 
 OK, otwórzmy ten plik i zobaczmy co siedzi w środku:
 
-    python
-    from django.shortcuts import render
-    
-    # Create your views here.
-    
+```python
+from django.shortcuts import render
+
+# Create your views here.
+```
 
 Póki co niewiele. Najprostszy *widok* może wyglądać tak.
 
-    python
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Jak widzisz, stworzyłyśmy metodę (`def`) zwaną `post_list`, która przyjmuje zapytanie (`request`) i zwraca (`return`) metodę zwaną `render`, której zadaniem jest wyrenderowanie (złożenie w całość) naszego szablonu `blog/post_list.html`.
 

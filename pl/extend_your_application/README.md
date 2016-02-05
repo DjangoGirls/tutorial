@@ -12,28 +12,27 @@ Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
 Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`. Do tej pory plik powinien wyglądać tak:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
-    
-    
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
 
 {% raw %}Chcemy, aby tytuł wpisu był linkiem prowadzącym do strony ze szczegółami wpisu. Zmieńmy `<h1><a href="">{{ post.title }}</a></h1>` na link:{% endraw %}
 
-    html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
 {% raw %}Czas by wyjaśnić co oznacza tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje za nas adres strony.{% endraw %}
 
@@ -53,15 +52,15 @@ Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adres
 
 W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Dodaj wiersz `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` w pliku `blog/urls.py`. Jego zawartość powinna wyglądać tak:
 
-    python
-    from django.conf.urls import include, url
-    from . import views
-    
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+]
+```
 
 Ten fragment `^post/(?P<pk>[0-9]+)/$` wygląda trochę przerażająco, ale spokojnie - wyjaśnijmy wszystko krok po kroku: - znów zaczyna się od `^` -- "początek" - `post/` oznacza tylko, że zaraz po początku adres URL powinien zawierać słowo **post** i **/**. Na razie nie jest źle. - `(?P<pk>[0-9]+)` - ta część jest trudniejsza. Oznacza ona, że Django pobierze wszystko, co umieścisz w tym miejscu i przekaże to do widoku w zmiennej o nazwie `pk`. `[0-9]` dodatkowo mówi nam, że może to być tylko cyfra, nie litera (czyli wszystko pomiędzy 0 a 9). `+` oznacza, że to musi być jedna lub więcej cyfr. Czyli coś takiego: `http://127.0.0.1:8000/post//` nie jest poprawne, ale już `http://127.0.0.1:8000/post/1234567890/` jest jak najbardziej w porządku! - `/` - znów potrzebujemy **/** - `$` - "koniec"!
 
@@ -84,7 +83,7 @@ Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "
 Teraz chcemy wyświetlić jeden i tylko jeden wpis na blogu. Aby to zrobić, możemy użyć querysetów w następujący sposób:
 
     Post.objects.get(pk=pk)
-    
+
 
 Ale jest jeden problem. Jeśli nie istnieje żaden wpis (`Post`) zawierający przekazany `klucz główny` (`pk`) , to ujrzymy przepaskudny błąd!
 
@@ -104,15 +103,17 @@ OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
 Musimy otworzyć plik `blog/views.py` i dodać następujący kod:
 
-    from django.shortcuts import render, get_object_or_404
-    
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
 w pobliżu innych linii zawierających `from`. Z kolei na końcu pliku dodajemy nasz *widok*:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-    
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Czas na odświeżenie strony: http://127.0.0.1:8000/
 
@@ -134,21 +135,21 @@ W folderze `blog/templates/blog` stwórzmy plik o nazwie `post_detail.html`.
 
 Efekt będzie wyglądał tak:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-    
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 Znów rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić datę opublikowania wpisu (o ile istnieje), tytuł oraz treść. Ale jest kilka ważnych rzeczy do omówienia, nieprawdaż?
 
@@ -171,7 +172,7 @@ Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na Pyt
     $ git status
     $ git commit -m "Dodano widok i szablon dla poszczegolnego wpisu na stronie."
     $ git push
-    
+
 
 *   Potem, w konsoli [PythonAnywhere Bash][8]:
 
@@ -183,7 +184,7 @@ Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na Pyt
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 *   Na koniec, przejdźmy do podstrony [Web tab][9] i wciśnijmy **Reload** (ang. odśwież).
 

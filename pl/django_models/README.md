@@ -21,12 +21,12 @@ Nasz `Kot` ma określone czynności: `mrucz`, `podrap`, `jedz` (i tu przekażemy
     mrucz()
     podrap()
     jedz(koci_przysmak)
-    
-    
+
+
     KociPrzysmak
     --------
     smak
-    
+
 
 Czyli w zasadzie chodzi o to, że opisujemy prawdziwe rzeczy w kodzie za pomocą właściwości (zwanych `właściwościami obiektu`) oraz czynności (zwanych `metodami`).
 
@@ -43,7 +43,7 @@ Na pewno musi zawierać zawartość tekstową oraz tytuł, prawda? Fajnie byłob
     author
     created_date
     published_date
-    
+
 
 Co możemy zrobić z wpisem na blogu? Przydałaby nam się jakaś `metoda`, która opublikuje nasz wpis, zgadza się?
 
@@ -64,7 +64,7 @@ Możesz sobie wyobrazić model w bazie danych jako arkusz kalkulacyjny z kolumna
 Aby utrzymać wszystko w ładzie, stworzymy osobną aplikację wewnątrz naszego projektu. Przyjemnie jest mieć wszystko uporządkowane od samego początku. Aby stworzyć aplikację, musimy wykonać następujące polecenie w konsoli (z poziomu katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 Z pewnością zauważysz, że pojawił się nowy folder `blog` zawierający kilka plików. Czyli foldery i pliki w naszym projekcie powinny wyglądać tak:
 
@@ -83,21 +83,21 @@ Z pewnością zauważysz, że pojawił się nowy folder `blog` zawierający kilk
         ├── models.py
         ├── tests.py
         └── views.py
-    
+
 
 Po stworzeniu aplikacji musimy dać znać Django, że powinien jej używać. Posługujemy się w tym celu plikiem `mysite/settings.py`. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `)`. Czyli efekt końcowy powinien wyglądać tak:
 
-    python
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
-    
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+```
 
 ### Tworzymy model wpisu na blogu
 
@@ -105,27 +105,27 @@ W pliku `blog/models.py` definiujemy wszystkie obiekty zwane `modelami` - to jes
 
 Otwórz plik `blog/models.py`, usuń z niego całą zawartość i napisz taki kod:
 
-    python
-    from django.db import models
-    from django.utils import timezone
-    
-    
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
-    
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.title
-    
+```python
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
 
 > Upewnij się, czy na początku i końcu `str` używasz dokładnie dwóch znaków podkreślenia (`_`). W Pythonie używa się ich bardzo często i czasem nazywa się je "dunder" (skrót od angielskiej nazwy: "double-underscore").
 
@@ -162,7 +162,7 @@ Został nam ostatni krok, a mianowicie dodanie naszego nowego modelu do bazy dan
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 Django przygotował za nas plik z migracjami, które musimy teraz wykonać na naszej bazie danych. Wpisz `python manage.py migrate blog`. Powinnaś zobaczyć coś takiego:
 
@@ -172,6 +172,6 @@ Django przygotował za nas plik z migracjami, które musimy teraz wykonać na na
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+
 
 Hurra! Nasz model wpisu na blogu znalazł się w bazie danych! Fajnie byłoby go zobaczyć, co? Aby sprawdzić jak wygląda nasz wpis, przejdź do następnego rozdziału!

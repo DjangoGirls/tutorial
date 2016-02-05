@@ -16,18 +16,18 @@ Każda strona w internecie potrzebuje własnego adresu URL. W ten sposób aplika
 
 Otwórzmy plik `mysite/urls.py` i przyjrzyjmy się jego treści:
 
-    python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
-    
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^admin/', include(admin.site.urls)),
+]
+```
 
 Jak zauważyłaś, Django coś nam już tu umieścił.
 
@@ -35,9 +35,9 @@ Wiersze zaczynające się od `#` są komentarzami - co oznacza, że ich treść 
 
 Adres URL panelu administracyjnego, który odwiedzałaś w poprzednim rozdziale, jest już tutaj dodany:
 
-    python
-        url(r'^admin/', include(admin.site.urls)),
-    
+```python
+url(r'^admin/', include(admin.site.urls)),
+```
 
 To znaczy, że dla każdego adresu zaczynającego się od `admin/` Django spróbuje dopasować odpowiedni *widok*. W tym przypadku używamy wielu adresów URL panelu administracyjnego, dlatego nie wypisujemy ich wszystkich w tym jednym małym pliku - tak jest czytelniej i bardziej estetycznie.
 
@@ -52,7 +52,7 @@ Do zrozumienia wzorców, które stworzyłyśmy powyżej, potrzebnych jest tylko 
     \d oznacza cyfrę
     + oznacza, że poprzedni element powinien się powtórzyć przynajmniej raz
     piszemy () aby uchwycić część wzorca
-    
+
 
 Inne znaki we wzorcu url będą rozumiane dosłownie.
 
@@ -75,15 +75,15 @@ Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego
 
 Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 
-    python
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
-        url(r'', include('blog.urls')),
-    ]
-    
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
+]
+```
 
 Django przekieruje wszystkie reguły z adresu 'http://127.0.0.1:8000/' do `blog.urls` i tam będzie szukał dalszych wskazówek.
 
@@ -93,20 +93,20 @@ Kiedy tworzymy wyrażenia regularne w Pythonie, zawsze piszemy `r` na początku 
 
 Stwórz nowy pusty plik `blog/urls.py`. Super! Teraz dodaj dwie pierwsze linijki:
 
-    python
-    from django.conf.urls import url
-    from . import views
-    
+```python
+from django.conf.urls import url
+from . import views
+```
 
 Tutaj po prostu importujemy metody Django oraz wszystkie widoki (`views`) z naszej aplikacji `blog` (jeszcze nie mamy żadnych, ale dojdziemy do tego za chwilkę!)
 
 Potem możemy dodać nasz pierwszy wzorzec adresu URL:
 
-    python
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-    ]
-    
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
 
 Jak widzisz, przyporządkowujemy widok (`view`) o nazwie `post_list` do adresu `^$`. To wyrażenie regularne będzie dopasowywać `^` (początek) i `$` (koniec) — połączenie tych dwóch znaków oznacza, że szukamy pustego ciągu znaków. I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django 'http://127.0.0.1:8000/' nie jest częścią adresu URL. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
 

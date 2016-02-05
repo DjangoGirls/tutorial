@@ -18,7 +18,7 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
     Python 3.4.3 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
-    
+
 
 ## Twoje pierwsze polecenie w Pythonie!
 
@@ -30,7 +30,7 @@ Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauc
 
     >>> 2 + 3
     5
-    
+
 
 Świetnie! Zauważyłaś, że na ekranie pojawiła się podpowiedź? Python umie liczyć! Spróbuj użyć innych poleceń takich jak: - `4 * 5` - `5 - 1` - `40 / 2`
 
@@ -44,7 +44,7 @@ A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłow
 
     >>> "Ola"
     'Ola'
-    
+
 
 Właśnie stworzyłaś swój pierwszy string! Jest to ciąg znaków, który może być przetwarzany przez komputer. String musi zawsze zaczynać się i kończyć tym samym znakiem. Może to być apostrof (`'`) lub cudzysłów (`"`) - nie ma różnicy! Sygnalizują one Pythonowi, że wszystko, co znajduje się pomiędzy nimi, jest stringiem.
 
@@ -52,13 +52,13 @@ Stringi mogą być łączone. Spróbuj tak:
 
     >>> "Czesc " + "Ola"
     'Czesc Ola'
-    
+
 
 Da się również mnożyć stringi za pomocą liczb:
 
     >>> "Ola" * 3
     'OlaOlaOla'
-    
+
 
 Jeśli chciałabyś użyć apostrofu wewnątrz stringu, możesz to zrobić na dwa sposoby.
 
@@ -66,19 +66,19 @@ Za pomocą cudzysłowu:
 
     >>> "Runnin' down the hill"
     "Runnin' down the hill"
-    
 
-lub poprzedzając apostrof odwróconym ukośnikiem (``):
+
+lub poprzedzając apostrof odwróconym ukośnikiem (\'):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
-    
+
 
 Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz po prostu:
 
     >>> "Ola".upper()
     'OLA'
-    
+
 
 Właśnie użyłaś **funkcji** `upper` na swoim stringu! Funkcja (na przykład taka jak `upper()`) jest zestawem poleceń, które Python musi wykonać na danym obiekcie (`"Ola"`) gdy tylko ją wywołasz.
 
@@ -86,7 +86,7 @@ A gdybyś chciała sprawdzić z ilu liter składa się Twoje imię to również 
 
     >>> len("Ola")
     3
-    
+
 
 Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu (jak tutaj: `"Ola".upper()`), a czasami najpierw wywołujemy funkcję, a dopiero potem umieszczamy string w nawiasach? Ano, w niektórych przypadkach funkcje są związane z obiektami. Tak jak `upper()`, która może być użyta wyłącznie na stringach. Taką funkcję nazywamy wówczas **metodą**. Są również funkcje, które nie są powiązane z niczym konkretnym i mogą być używane na różnych typach obiektów, jak na przykład `len()`. Dlatego przekazujemy `"Ola"` jako parametr dla funkcji `len`.
 
@@ -109,13 +109,13 @@ Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam s
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: object of type 'int' has no len()
-    
+
 
 Nasz pierwszy błąd! Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
 
     >>> len(str(304023))
     6
-    
+
 
 Działa! Użyłyśmy funkcji `str` wewnątrz funkcji `len`. Funkcja `str()` konwertuje wszystko do postaci stringów.
 
@@ -131,7 +131,7 @@ Ważnym zagadnieniem w programowaniu są zmienne. Zmienna to nic innego jak nazw
 Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
     >>> imie = "Ola"
-    
+
 
 Widzisz? Nietrudne! Po prostu: "imie" równa się Ola.
 
@@ -139,20 +139,20 @@ Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robi�
 
     >>> imie
     'Ola'
-    
+
 
 Jupi! Twoja pierwsza zmienna :)! Zawsze masz możliwość zmiany tego, do czego ta zmienna się odnosi:
 
     >>> imie = "Sonja"
     >>> imie
     'Sonja'
-    
+
 
 Mozesz także używać jej w funkcjach:
 
     >>> len(imie)
     5
-    
+
 
 Ekstra, co? Oczywiście zmienne mogą reprezentować cokolwiek, także liczby! Spróbuj tak:
 
@@ -160,7 +160,7 @@ Ekstra, co? Oczywiście zmienne mogą reprezentować cokolwiek, także liczby! S
     >>> b = 6
     >>> a * b
     24
-    
+
 
 Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się stać? Sprawdźmy!
 
@@ -169,7 +169,7 @@ Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się s
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'masto' is not defined
-    
+
 
 Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
 
@@ -184,7 +184,7 @@ Spróbuj tego:
     'Maria'
     >>> print(imie)
     Maria
-    
+
 
 Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringu będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie ''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
 
@@ -198,29 +198,29 @@ Oprócz stringów i liczb całkowitych, Python dysponuje bogactwem różnych typ
 
     >>> []
     []
-    
+
 
 Tak, lista jest pusta. Niespecjalnie przydatne, co? Stwórzmy listę numerów totolotka. Nie chcemy się powtarzać za każdym razem, więc tutaj również posłużymy się zmienną:
 
     >>> wyniki = [3, 42, 12, 19, 30, 59]
-    
+
 
 Dobrze, mamy listę! Co możemy z nią zrobić? Zobaczmy ile liczb znajduje się w tej liście. Masz pomysł, jakiej funkcji powinnaś użyć? Już z niej korzystałaś!
 
     >>> len(wyniki)
     6
-    
+
 
 Tak! `len()` może zwrócić Ci liczbę obiektów zawartych w liście. Prawda że przydatne? To może teraz posortujmy listę:
 
     >>> wyniki.sort()
-    
+
 
 Polecenie to niczego nie zwraca, po prostu zmieniło kolejność liczb zawartych w liście. Wypiszmy jej zawartość jeszcze raz i zobaczmy co się stało:
 
     >>> print(wyniki)
     [3, 12, 19, 30, 42, 59]
-    
+
 
 Jak widzisz, liczby na liście są teraz uporządkowane według wartości od najniższej do najwyższej. Gratulacje!
 
@@ -229,14 +229,14 @@ A gdybyśmy zapragnęły odwrócić kolejność? Zróbmy to!
     >>> wyniki.reverse()
     >>> print(wyniki)
     [59, 42, 30, 19, 12, 3]
-    
+
 
 Proste, prawda? Jeśli chcesz dodać coś do swojej listy, możesz to zrobić wpisując polecenie:
 
     >>> wyniki.append(199)
     >>> print(wyniki)
     [59, 42, 30, 19, 12, 3, 199]
-    
+
 
 Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używając **indeksów**. Indeks jest numerem mówiącym nam, w którym miejscu listy znajduje się dany element. Programiści zaczynają liczenie od zera, zatem pierwszy element Twojej listy znajduje się w miejscu oznaczonym indeksem 0, następny z indeksem 1, i tak dalej. Spróbuj tego:
 
@@ -244,7 +244,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
     59
     >>> print(wyniki[1])
     42
-    
+
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
@@ -257,7 +257,7 @@ Aby skasować coś ze swojej listy, będziesz musiała użyć **indeksów**, kt�
     >>> del wyniki[0]
     >>> print(wyniki)
     [42, 30, 19, 12, 3, 199]
-    
+
 
 Wszystko zadziałało zgodnie z planem!
 
@@ -271,14 +271,15 @@ Słownik przypomina nieco listę, jednak różni się tym, że dostęp do warto�
 
     >>> {}
     {}
-    
+
 
 To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
 A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
 
-    >>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
-    
+```python
+>>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
+```
 
 Za pomocą tej instrukcji stworzyłaś właśnie zmienną o nazwie `uczestniczka` zawierającą trzy pary klucz-wartość:
 
@@ -290,7 +291,7 @@ Za pomocą poniższej składni możesz sprawdzać wartości poszczególnych kluc
 
     >>> print(uczestniczka['imie'])
     Ola
-    
+
 
 Widzisz, zupełnie jak w liście. Ale nie trzeba pamiętać numeru indeksu, wystarczy nazwa klucza.
 
@@ -300,7 +301,7 @@ A co się stanie, gdy poprosimy Pythona o wartość klucza, który nie istnieje?
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     KeyError: 'wiek'
-    
+
 
 Spójrz, kolejny błąd! Tym razem **KeyError**. Python próbuje Ci pomóc i wskazuje, że klucz `'wiek'` nie istnieje w tym słowniku.
 
@@ -312,13 +313,13 @@ Kiedy powinniśmy używać słownika, a kiedy listy? To bardzo dobre pytanie! Za
 Słowniki, podobnie jak listy, są *mutowalne*, co oznacza, że po ich utworzeniu można je nadal zmieniać. Możesz dodać do stworzonego już słownika nowe pary klucz-wartość, w taki sposób:
 
     >>> uczestniczka['ulubiony_jezyk'] = 'Python'
-    
+
 
 Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość w danym słowniku. Śmiało, wpisz polecenie:
 
     >>> len(uczestniczka)
     4
-    
+
 
 Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
@@ -327,7 +328,7 @@ Za pomocą polecenia `del` możesz usunąć element ze słownika. Założmy, że
     >>> del uczestniczka['ulubione_liczby']
     >>> uczestniczka
     {'kraj': 'Polska', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
-    
+
 
 Jak widać z wyświetlonego rezultatu, para klucz-wartość odpowiadająca kluczowi 'ulubione_liczby' została usunięta.
 
@@ -336,7 +337,7 @@ Ponadto możesz także zmienić wartość odpowiadającą kluczowi, który już 
     >>> uczestniczka['kraj'] = 'Niemcy'
     >>> uczestniczka
     {'kraj': 'Niemcy', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
-    
+
 
 Jak widać, wartość klucza `'kraj'` została zmieniona z `'Polska'` na `'Niemcy'`. :) Ekscytujące? Hura! Właśnie nauczyłaś się kolejnej niesamowitej rzeczy.
 
@@ -365,7 +366,7 @@ Istotną częścią programowania jest porównywanie różnych rzeczy. Co najła
     True
     >>> 5 != 2
     True
-    
+
 
 Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać listy, ale również wyniki działań. Fajnie, nie?
 
@@ -377,7 +378,7 @@ Użyjmy Pythona do wykonania dwóch innych zadań:
     True
     >>> 3 <= 2
     False
-    
+
 
 `>` i `<` są zrozumiałe, ale co oznaczają `>=` i `<=`? Czytamy je w ten sposób:
 
@@ -394,7 +395,7 @@ Użyjmy Pythona do wykonania dwóch innych zadań:
     False
     >>> 3 > 2 or 2 < 1
     True
-    
+
 
 Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci Ci wynik! Prawda, że sprytne?
 
@@ -407,7 +408,7 @@ Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: unorderable types: int() > str()
-    
+
 
 Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać liczby (`int`) ze stringiem (`str`). Zamiast tego zwraca nam **TypeError** i mówi nam, że te dwa typy nie mogą być porównywane ze sobą.
 
@@ -424,14 +425,14 @@ Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
     >>> a = True
     >>> a
     True
-    
+
 
 Możesz też zrobić tak:
 
     >>> a = 2 > 5
     >>> a
     False
-    
+
 
 Poćwicz i pobaw się wartościami logicznymi wpisując następujące instrukcje:
 
@@ -455,7 +456,7 @@ Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji
 
     >>> exit()
     $
-    
+
 
 W ten sposób znajdziesz się z powrotem w wierszu poleceń.
 
@@ -463,9 +464,9 @@ Nieco wcześniej, w sekcji [Edytor kodu][2], dokonałyśmy wyboru programu używ
 
  [2]: ../code_editor/README.md
 
-    python
-    print('Hello, Django girls!')
-    
+```python
+print('Hello, Django girls!')
+```
 
 > **Uwaga** Powinnaś zauważyć jedną z najfajniejszych rzeczy, jeśli chodzi o edytor kodu: kolory! Gdy pisałaś w konsoli Pythona, wszystko miało ten sam kolor. Teraz powinnaś zobaczyć, że funkcja `print` jest innego koloru niż string. Nazywa się to "podświetlanie składni" i jest naprawdę użyteczne podczas kodowania. Kolor wyrazów w edytorze będzie dla Ciebie wskazówką, np. łatwo rozpoznasz dzięki temu niezamknięty string albo literówkę w słowie kluczowym (tak jak `def` w funkcji). To jeden z powodów, dla których używamy edytora kodu :)
 
@@ -478,17 +479,17 @@ Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości 
 Na Macu polecenie będzie wyglądać mniej-więcej tak:
 
     $ cd /Users/<your_name>/Desktop
-    
+
 
 W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
     $ cd /home/<your_name>/Desktop
-    
+
 
 A w systemie Windows będzie to wyglądać tak:
 
     > cd C:\Users\<your_name>\Desktop
-    
+
 
 Jeżeli coś jest dla Ciebie niejasne, nie wahaj się poprosić o pomoc.
 
@@ -496,7 +497,7 @@ Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 
     $ python3 python_intro.py
     Hello, Django girls!
-    
+
 
 Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspaniałe uczucie, co?
 
@@ -508,9 +509,9 @@ Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zost
 
 Zastąp kod w pliku **python_intro.py** następującym:
 
-    python
-    if 3 > 2:
-    
+```python
+if 3 > 2:
+```  
 
 Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
 
@@ -518,14 +519,14 @@ Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poni
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
-    
+
 
 Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
 
-    python
-    if 3 > 2:
-        print('To dziala!')
-    
+```python
+if 3 > 2:
+    print('To dziala!')
+```
 
 Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy `tabulator` również będzie liczył się jako 4 spacje.
 
@@ -533,67 +534,68 @@ Zapisz plik i uruchom go jeszcze raz:
 
     $ python3 python_intro.py
     To dziala!
-    
+
 
 ### A co jeśli warunek nie jest prawdziwy?
 
 W poprzednich przykładach kod był wykonywany wtedy, gdy warunki okazywały się prawdziwe (True). Ale Python posiada również wyrażenia `elif` i `else`:
 
-    if 5 > 2:
-        print('5 jest jednak większe od 2')
-    else:
-        print('5 nie jest większe od 2')
-    
+```python
+if 5 > 2:
+    print('5 jest jednak większe od 2')
+else:
+    print('5 nie jest większe od 2')
+```
 
 Po uruchomieniu wyświetli się:
 
     $ python3 python_intro.py
     5 jest jednak większe od 2
-    
+
 
 Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Proste, nie? Zobaczmy, jak działa `elif`:
 
-    python
-    name = 'Sonja'
-    if name == 'Ola':
-        print('Hej Ola!')
-    elif name == 'Sonja':
-        print('Hej Sonja!')
-    else:
-        print('Hej nieznajoma!')
-    
+```python
+name = 'Sonja'
+if name == 'Ola':
+    print('Hej Ola!')
+elif name == 'Sonja':
+    print('Hej Sonja!')
+else:
+    print('Hej nieznajoma!')
+```
 
 i uruchommy go:
 
     $ python3 python_intro.py
     Hej Sonja!
-    
+
 
 Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
 Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko Ci się podoba. Na przykład:
 
-    python
-    glosnosc = 57
-    if glosnosc < 20:
-        print("Prawie nic nie slychac.")
-    elif 20 <= volume < 40:
-        print("O, muzyka leci w tle.")
-    elif 40 <= volume < 60:
-        print("Idealnie, moge uslyszec wszystkie detale")
-    elif 60 <= volume < 80:
-        print("Dobre na imprezy")
-    elif 80 <= volume < 100:
-        print("Troszeczke za glosno!")
-    else:
-        print("Ojoj! Moje uszy! :(")
-    
+```python
+glosnosc = 57
+if glosnosc < 20:
+    print("Prawie nic nie slychac.")
+elif 20 <= volume < 40:
+    print("O, muzyka leci w tle.")
+elif 40 <= volume < 60:
+    print("Idealnie, moge uslyszec wszystkie detale")
+elif 60 <= volume < 80:
+    print("Dobre na imprezy")
+elif 80 <= volume < 100:
+    print("Troszeczke za glosno!")
+else:
+    print("Ojoj! Moje uszy! :(")
+```
 
 Python zbada każdy warunek i wyświetli:
 
     $ python3 python_intro.py
     Idealnie, moge uslyszec wszystkie detale
-    
+
 
 ### Podsumowanie
 
@@ -612,13 +614,13 @@ Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dob
 
 Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem `def`, posiada nazwę i może przyjmować parametry. Zacznijmy od prostej funkcji. Zastąp kod w pliku **python_intro.py** następującym:
 
-    python
-    def hej():
-        print('Hej!')
-        print('Jak się masz?')
-    
-    hej()
-    
+```python
+def hej():
+    print('Hej!')
+    print('Jak się masz?')
+
+hej()
+```  
 
 OK, nasza pierwsza funkcja gotowa!
 
@@ -629,27 +631,27 @@ Uruchommy to teraz i sprawdźmy, co się stanie:
     $ python3 python_intro.py
     Hej!
     Jak się masz?
-    
+
 
 To nie było trudne! Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
-    python
-    def hej(imie):
-    
+```python
+def hej(imie):
+```
 
 Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `name`:
 
-    python
-    def hej(imie):
-        if imie == 'Ola':
-            print('Hej Ola!')
-        elif imie == 'Sonja':
-            print('Hej Sonja!')
-        else:
-            print('Hej nieznajoma!')
-    
-    hej()
-    
+```python
+def hej(imie):
+    if imie == 'Ola':
+        print('Hej Ola!')
+    elif imie == 'Sonja':
+        print('Hej Sonja!')
+    else:
+        print('Hej nieznajoma!')
+
+hej()
+```
 
 Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
 
@@ -658,53 +660,53 @@ Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkc
     File "python_intro.py", line 10, in <module>
       hej()
     TypeError: hej() missing 1 required positional argument: 'imie'
-    
+
 
 Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hej()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
-    python
-    hej("Ola")
-    
+```python
+hej("Ola")
+```
 
 I wykonajmy ponownie:
 
     $ python3 python_intro.py
     Hej Ola!
-    
+
 
 A gdybyśmy zmieniły imię?
 
-    python
-    hej("Sonja")
-    
+```python
+hej("Sonja")
+```
 
 I wykonajmy:
 
     $ python3 python_intro.py
     Hej Sonja!
-    
+
 
 A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno sie wyświetlić coś takiego:
 
     Hej nieznajoma!
-    
+
 
 Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
 Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i raczej ciężko byłoby pisać warunek dla każdego, co?
 
-    python
-    def hej(imie):
-        print('Hej ' + imie + '!')
-    
-    hej("Rachel")
-    
+```python
+def hej(imie):
+    print('Hej ' + imie + '!')
+
+hej("Rachel")
+```
 
 Teraz wywołajmy ten kod:
 
     $ python3 python_intro.py
     Hej Rachel!
-    
+
 
 Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
@@ -716,29 +718,29 @@ Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. 
 
 Pamiętasz jeszcze listy? Zróbmy listę dziewczyn:
 
-    python
-    dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    
+```python
+dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+```
 
 Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hej`, zatem użyjmy jej wewnątrz pętli:
 
-    python
-    for imie in dziewczyny:
-    
+```python
+for imie in dziewczyny:
+```
 
 Wyrażenie for zachowuje się podobnie jak if, a więc kod pod nimi musi być wcięty 4 spacjami.
 
 Oto kompletny kod, który umieścimy w pliku:
 
-    python
-    def hej(imie):
-        print('Hej ' + imie + '!')
-    
-    dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
-    for imie in dziewczyny:
-        hej(imie)
-        print('Kolejna dziewczyna')
-    
+```python
+def hej(imie):
+    print('Hej ' + imie + '!')
+
+dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
+for imie in dziewczyny:
+    hej(imie)
+    print('Kolejna dziewczyna')
+```
 
 a gdy go uruchomimy:
 
@@ -753,15 +755,16 @@ a gdy go uruchomimy:
     Kolejna dziewczyna
     Hej Ty!
     Kolejna dziewczyna
-    
+
 
 Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
 Możesz także użyć `for` na liczbach, używając metody `range`:
 
-    for i in range(1, 6):
-        print(i)
-    
+```python
+for i in range(1, 6):
+    print(i)
+```
 
 Co wypisze nam na ekranie:
 
@@ -770,7 +773,7 @@ Co wypisze nam na ekranie:
     3
     4
     5
-    
+
 
 `range` jest funkcją, która tworzy listę liczb jedna po drugiej (liczby te podajesz jako parametry).
 

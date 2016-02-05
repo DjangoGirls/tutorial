@@ -4,12 +4,12 @@ Aby dodawać, modyfikować i usuwać wpisy, do których stworzyliśmy wcześniej
 
 Otwórzmy plik `blog/admin.py` i zastąpmy jego zawartość poniższym:
 
-    python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
-    
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
 
 Jak widać, importujemy (dołączamy) model Post, który zdefiniowałyśmy w poprzednim rozdziale. Aby nasz model był widoczny w panelu admina, musimy go zarejestrować za pomocą polecenia `admin.site.register(Post)`.
 
@@ -27,7 +27,7 @@ By móc się zalogować, musisz stworzyć *konto administratora* (ang. "superuse
     Password:
     Password (again):
     Superuser created successfully.
-    
+
 
 Wróć do przeglądarki i zaloguj się danymi administratora, które wprowadziłaś wcześniej. Powinnaś zobaczyć panel admina Django.
 

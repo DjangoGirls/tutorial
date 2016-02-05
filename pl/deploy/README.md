@@ -40,12 +40,13 @@ Inicjalizacja repozytorium to coś, co będziesz musiała zrobić tylko raz na d
 
 Git będzie śledzić zmiany we wszyskich plikach i folderach w tym katalogu, ale zwróć uwagę, że znajdują się w nim pewne pliki, których zmiany chcemy ignorować. By to zrobić, musimy utworzyć w tym katalogu plik, który nazwiemy `.gitignore`. Otwórz swój edytor kodu i utwórz nowy plik o następującej treści:
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    .DS_Store
-
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+```
 
 Zapisz go jako `.gitignore` w folderze najwyższego poziomu "djangogirls".
 

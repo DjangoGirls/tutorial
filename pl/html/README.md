@@ -21,7 +21,7 @@ Szablony są zapisywane w katalogu `blog/templates/blog`. Zacznij więc od stwor
     blog
     └───templates
         └───blog
-    
+
 
 (być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to po prostu użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
 
@@ -39,12 +39,12 @@ Nie ma błędu! Gratulacje :) Niestety, twoja aplikacja nie wyświetla niczego p
 
 Dodaj następującą treść w pliku z szablonem:
 
-    html
-    <html>
-        <p>Hej!</p>
-        <p>Działa!</p>
-    </html>
-    
+```html
+<html>
+    <p>Hej!</p>
+    <p>Działa!</p>
+</html>
+```
 
 I jak twoja strona wygląda teraz? Kliknij, żeby się dowiedzieć: http://127.0.0.1:8000/
 
@@ -69,17 +69,17 @@ Używamy znacznika `<head>`, aby poinformować przeglądarkę o konfiguracji str
 
 Przykładowo, element tytułu strony możesz umieścić wewnątrz `<head>`, o tak:
 
-    html
-    <html>
-        <head>
-            <title>Blog Oli</title>
-        </head>
-        <body>
-            <p>Hej!</p>
-            <p>Działa!</p>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Blog Oli</title>
+    </head>
+    <body>
+        <p>Hej!</p>
+        <p>Działa!</p>
+    </body>
+</html>
+```
 
 Zapisz plik i odśwież swoją stronę.
 
@@ -111,30 +111,30 @@ Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczn
 
 Poniżej przykład pełnego szablonu:
 
-    html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Stworzyliśmy tutaj trzy sekcje `div`.
 
@@ -160,31 +160,31 @@ Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć "na żywo" w Internecie, a
 Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu poleceń, nie na PythonAnywhere):
 
     $ git status
-    
+
 
 Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
 
     $ git add -A .
-    
+
 
 > **Uwaga:** `-A` (skrót od "all", czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 
     $ git status
-    
+
 
 Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w historii. Dodamy za moment informację o zmianach (ang. "commit message"), gdzie opiszemy, co zostało zmienione. Możesz w tym miejscu wpisać cokolwiek zechcesz, ale warto jednak wpisać kilka słów opisujących, co robiłaś. W ten sposób łatwiej Ci będzie w przyszłości przypomnieć sobie, czego dotyczyły zapisane zmiany.
 
     $ git commit -m "Zmieniony kod HTML na stronie."
-    
+
 
 > **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
 
 Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
     git push
-    
+
 
 ### Prześlij nową wersję kodu do PythonAnywhere i ponownie załaduj swoją stronę
 
@@ -198,7 +198,7 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i przeglądnąć swój kod na PythonAnywhere.
 

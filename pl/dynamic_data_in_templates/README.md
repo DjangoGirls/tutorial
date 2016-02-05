@@ -8,19 +8,19 @@ OK, zatem jak możemy to osiągnąć?
 
 Musimy otworzyć nasz plik `blog/views.py`. Jak dotąd *widok* `post_list` wygląda następująco:
 
-    python
-    from django.shortcuts import render
-    
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Pamiętasz, jak rozmawiałyśmy o dołączaniu kodu zapisanego w odrębnych plikach? Teraz jest przyszedł czas na dołączenie modelu, który napisałyśmy wcześniej w `models.py`. Dodajmy wiersz `from .models import Post` w następujący sposób:
 
-    python
-    from django.shortcuts import render
-    from .models import Post
-    
+```python
+from django.shortcuts import render
+from .models import Post
+```
 
 Kropka po `from` oznacza *bieżący katalog* lub *biężącą aplikację*. Jako że pliki `views.py` i `models.py` są w tym katalogu, możemy użyć po prostu `.` i nazwy pliku (bez `.py`). Następnie importujemy nazwę modelu (`Post`).
 
@@ -35,19 +35,19 @@ Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. R
 Więc teraz interesuje nas lista wpisów, które zostały opublikowane i posortowane według daty publikacji (`published_date`), zgadza się? Już to zrobiłyśmy w rozdziale o QuerySetach!
 
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+
 
 Teraz umieśćmy ten kod wewnątrz pliku `blog/views.py` poprzez dodanie go do funkcji `def post_list(request)`:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {})
-    
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
+```
 
 Zauważ, że tworzymy *zmienną* dla naszego QuerySetu: `posts`. Potraktuj ją jako nazwę naszego QuerySetu. Od tej pory będziemy odnosić się do niej tylko za pomocą tej nazwy.
 
@@ -59,15 +59,15 @@ W funkcji `render` mamy już parametr `request` (czyli wszystko to, co odbieramy
 
 Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {'posts': posts})
-    
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
 
 I to wszystko! Czas, żebyśmy wróciły do naszego szablonu i wyświetliły ten QuerySet!
 
