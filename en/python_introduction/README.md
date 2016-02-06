@@ -444,7 +444,7 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 > **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour, now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
 
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.  (**Note**:  Replace `<your_name>` including the `<` and `>` with your user name)
 
 On a Mac, the command will look something like this:
 
