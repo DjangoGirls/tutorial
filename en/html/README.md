@@ -182,8 +182,6 @@ $ cd ~/my-first-blog
 $ source myvenv/bin/activate
 (myvenv)$ git pull
 [...]
-(myvenv)$ python manage.py collectstatic
-[...]
 ```
 
 And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.

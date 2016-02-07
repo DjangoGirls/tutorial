@@ -167,46 +167,16 @@ Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django whitenoise
+(myvenv) $  pip install django
 Collecting django
 [...]
-Successfully installed django-1.9 whitenoise-2.0
+Successfully installed django-1.9
 ```
 
 
 > **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
-
-
-### Collecting static files.
-
-Were you wondering what the "whitenoise" thing was?  It's a tool for serving so-called "static files". Static files are the files that don't regularly change or don't run programming code, such as HTML or CSS files. They work differently on servers compared to on our own computer and we need a tool like "whitenoise" to serve them.
-
-We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
-
-For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. At the moment these are mostly files that make the admin site look pretty.
-
-    (myvenv) $ python manage.py collectstatic
-
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-
-        /home/edith/my-first-blog/static
-
-    This will overwrite existing files!
-    Are you sure you want to do this?
-
-    Type 'yes' to continue, or 'no' to cancel: yes
-
-Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
-
-    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/my-first-blog/static'.
 
 
 ### Creating the database on PythonAnywhere
@@ -227,7 +197,7 @@ We can initialise the database on the server just like we did the one on your ow
 
 ## Publishing our blog as a web app
 
-Now our code is on PythonAnywhere, our virtualenv is ready, the static files are collected, and the database is initialised. We're ready to publish it as a web app!
+Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialised. We're ready to publish it as a web app!
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab. Finally, hit **Add a new web app**.
 
@@ -267,14 +237,16 @@ if path not in sys.path:
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
 ```
 
 > **Note** Don't forget to substitute in your own username where it says `<your-username>`
-> **Note** In line three, we make sure Pyhthon anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
+> **Note** In line three, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is. It also sets up the "whitenoise" static files tool.
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
 Hit **Save** and then go back to the **Web** tab.
 
@@ -285,7 +257,7 @@ We're all done! Hit the big green **Reload** button and you'll be able to go vie
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, migrating the database.
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
 - Making a mistake in the virtualenv path on the Web tab -- there will usually be a little red error message on there, if there is a problem.
 

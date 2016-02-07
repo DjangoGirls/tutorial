@@ -172,8 +172,6 @@ $ cd my-first-blog
 $ source myvenv/bin/activate
 (myvenv)$ git pull
 [...]
-(myvenv)$ python manage.py collectstatic
-[...]
 ```
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
