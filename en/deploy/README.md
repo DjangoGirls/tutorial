@@ -170,7 +170,7 @@ $ source myvenv/bin/activate
 (myvenv) $  pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.9 whitenoise-2.0
 ```
 
 
@@ -304,5 +304,3 @@ The default page for your site should say "Welcome to Django", just like it does
 
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
-
-
