@@ -119,4 +119,4 @@ There is no "It works" anymore, huh? Don't worry, it's just an error page, nothi
 
 You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/

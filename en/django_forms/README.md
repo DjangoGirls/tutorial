@@ -47,7 +47,7 @@ It's time to open `blog/templates/blog/base.html`. We will add a link in `div` n
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us. 
+Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
 After adding the line, your html file should now look like this:
 
@@ -330,7 +330,7 @@ Feel free to change the title or the text and save changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.8/topics/forms/
+If you need more information about Django forms you should read the documentation: https://docs.djangoproject.com/en/1.9/topics/forms/
 
 ## Security
 
