@@ -6,7 +6,7 @@
     },
 
     "plugins": [
-        "heading-anchors", "ga", "richquotes@0.0.7", "edit-link@2.0.0"
+        "heading-anchors", "ga", "richquotes@0.0.7", "github"
     ],
     "pluginsConfig": {
         "ga": {
@@ -15,9 +15,9 @@
         "richquotes" : {
             "default" : false
         },
-        "edit-link": {
-            "base": "https://github.com/djangogirls/tutorial/edit/master",
-            "label": "Edit This Page"
+        "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/DjangoGirls/tutorial"
         }
     },
 
