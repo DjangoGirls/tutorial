@@ -14,7 +14,7 @@ Los nombres de algunos archivos y directorios son muy importantes para Django. N
 
 > Recuerda correr todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **Instalación de Django** en la sección **Trabajando con virtualenv**. Puedes hacerlo escribiendo el siguiente comando: `myvenv\Scripts\activate` en Windows o `myvenv/bin/activate` en Mac OS / Linux.
 > 
-> **Nota** Controla dos veces que incluiste el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
+> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
 
 En la consola debes ejecutar (recuerda no escribir `(myvenv) ~/djangogirls$`, ¿ok?):
 
