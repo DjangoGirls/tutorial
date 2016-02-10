@@ -18,9 +18,10 @@ Został stworzony przez programistów, którzy pracowali dla Twitter-a i w chwil
 
 Aby zainstalować Bootstrap musisz dodać poniższe linijki do znacznika `<head>` w Twoim pliku `.html` (`blog/templates/blog/post_list.html`):
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+```
 
 Te linijki nie dodają żadnych plików do Twojego projektu. Wskazują one po prostu na pliki, które znajdują się w internecie. Otwórz teraz swoją przeglądarkę i odśwież stronę, a ujrzysz zmianę!
 
@@ -45,10 +46,11 @@ Teraz musimy stworzyć katalog, w którym będziemy przetrzymywać nasze pliki s
 
 Otwórz plik z lokalizacji `mysite/settings.py` i dodaj na końcu następujące linie:
 
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static"),
-    )
-
+```python
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+```
 
 Tym sposobem Django będzie wiedziało gdzie szukać plików statycznych.
 
@@ -73,17 +75,19 @@ Jednak zróbmy chociaż trochę. Może moglibyśmy zmienić kolor naszego nagł�
 
 Do pliku `static/css/blog.css` dodaj następujący kod:
 
-    h1 a {
-        color: #FCA205;
-    }
-
+```css
+h1 a {
+    color: #FCA205;
+}
+```
 
 `h1` to selektor CSS. To oznacza, że nadajemy style do każdego elementu `a` znajdującego się w elemencie `h1` (np. kiedy w kodzie mamy coś takiego: `<h1><a href="">link</a></h1>`). W tym przypadku nadajemy mu kolor `#FCA205`, czyli pomarańczowy. Oczywiście kolor jest dowolny!
 
 W pliku CSS ustalamy styl dla elementów znajdujących się w pliku HTML. Elementy HTML identyfikujemy przez nazwę (n.p. `a`, `h1`, `body`), atrybut `class` lub atrybut `id`. Nazwę klasy lub id ustalasz sama dowolnie. Ta sama nazwa klasy może być przypisana do wielu elementów, ale id musi być unikalne dla całego kodu HTML. Przykładowo następujący tag możemy ostylować w CSS używając nazwy `a`, klasy `external_link` lub id `link_to_wiki_page`:
 
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-
+```html
+<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```
 
 O selektorach CSS możesz przeczytać więcej tutaj: [CSS Selectors in w3schools][4].
 
@@ -100,7 +104,6 @@ Tym sposobem HTML załaduje nasze style CSS :) Następnie, pomiędzy `<head>` i 
 ```html  
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-
 
 Właśnie pokazaliśmy naszemu szablonowi gdzie znajduje się nasz plik CSS.
 
@@ -137,10 +140,11 @@ Ok, teraz zapisz plik i odśwież stronę!
 
 Super! Niezła robota. Może damy teraz naszej stronie trochę świeżego powietrza i zwiększymy margines po lewej stronie? Spróbujmy!
 
-    body {
-        padding-left: 15px;
-    }
-
+```css
+body {
+    padding-left: 15px;
+}
+```
 
 Dodaj powyższy CSS do twojego pliku, zapisz go i sprawdź jak zadziałał!
 
@@ -152,16 +156,16 @@ Może zmienimy też rodzaj czcionki w naszym nagłówku? Wklej to do sekcji `<he
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-
 Ta linia zaimportuje czcionkę zwaną *Lobster*, jedną z czcionek Google (<https://www.google.com/fonts>)
 
 Dodaj teraz linię `font-family: "Lobster";` do pliku CSS `static/css/blog.css` wewnątrz bloku deklaracji `h1` (kod deklaracji pomiędzy nawiasami klamrowymi `{` i `}`), a następnie odśwież stronę:
 
-    h1 a {
-        color: #FCA205;
-        font-family: 'Lobster';
-    }
-
+```css
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+```
 
 ![Rysunek 14.3](images/font.png)
 
@@ -171,9 +175,11 @@ Jak wspomniano wcześniej, arkusze stylów kaskadowe używają pojęcia klasy, k
 
 Śmiało! Nazwijmy kilka części Twojego kodu HTML. Dodaj klasę nazwaną `page-header` do Twojego `div` który zawiera nagłówek:
 
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+```html
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+```
 
 
 Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
@@ -189,65 +195,67 @@ Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
 
 A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `djangogirls/static/css/blog.css`:
 
-    .page-header {
-        background-color: #ff9400;
-        margin-top: 0;
-        padding: 20px 20px 20px 40px;
-    }
+```css
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
 
-    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-        color: #ffffff;
-        font-size: 36pt;
-        text-decoration: none;
-    }
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
 
-    .content {
-        margin-left: 40px;
-    }
+.content {
+    margin-left: 40px;
+}
 
-    h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
-    }
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
 
-    .date {
-        float: right;
-        color: #828282;
-    }
+.date {
+    float: right;
+    color: #828282;
+}
 
-    .save {
-        float: right;
-    }
+.save {
+    float: right;
+}
 
-    .post-form textarea, .post-form input {
-        width: 100%;
-    }
+.post-form textarea, .post-form input {
+    width: 100%;
+}
 
-    .top-menu, .top-menu:hover, .top-menu:visited {
-        color: #ffffff;
-        float: right;
-        font-size: 26pt;
-        margin-right: 20px;
-    }
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
 
-    .post {
-        margin-bottom: 70px;
-    }
+.post {
+    margin-bottom: 70px;
+}
 
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
-    }
-
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+```
 
 Teraz otocz kod HTML wyświetlający posty deklaracjami klas. Zamień to:
 
-    {% for post in posts %}
-        <div class="post">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
-
+```html
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+```
 
 w pliku `blog/templates/blog/post_list.html` na to:
 
@@ -268,7 +276,6 @@ w pliku `blog/templates/blog/post_list.html` na to:
     </div>
 </div>
 ```
-
 
 Zapisz te pliki i odśwież swoją stronę.
 

@@ -2,7 +2,7 @@
 
 Kolejną fajną rzeczą, którą Django daje Ci do dyspozycji, jest możliwość **rozszerzania szablonów**. Co to oznacza? To znaczy, że możesz używać tych samych części Twojego kodu HTML na różnych stronach Twojej aplikacji.
 
-Dzięki temu, gdy zechcesz użyć tych samych informacji/układu w kilku plikach, nie musisz go za każdym razem powtarzać. Ponadto, gdy zechcesz coś zmienić, nie będziesz musiała robić tego we wszystkich plikach szablonu -- tylko raz w jednym miejscu!
+Dzięki temu, jeśli chcesz mieć te same informacje albo ten sam layout to nie musisz się powtarzać w każdym pliku. Tak samo jeśli chcesz coś zmienić - nie musisz edytować kilku plików, robisz to tylko raz!
 
 ## Tworzenie szablonu bazowego
 
@@ -15,7 +15,7 @@ Stwórzmy plik `base.html` w `blog/templates/blog/`:
         └───blog
                 base.html
                 post_list.html
-    
+
 
 Następnie otwórz go i skopiuj całą zawartość pliku `post_list.html` do pliku `base.html`, w taki sposób:
 
@@ -51,7 +51,7 @@ Następnie otwórz go i skopiuj całą zawartość pliku `post_list.html` do pli
         </div>
     </body>
 </html>
-```    
+```
 
 Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co znajduje się pomiędzy `<body>` a `</body>`) na to:
 
@@ -70,7 +70,6 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
     </div>
 </body>
 ```
-    
 
 W zasadzie zastąpiłyśmy całą treść wewnątrz `{% for post in posts %}{% endfor %}` tym:
 
@@ -78,7 +77,6 @@ W zasadzie zastąpiłyśmy całą treść wewnątrz `{% for post in posts %}{% e
 {% block content %}
 {% endblock %}
 ```
-    
 
 Co to znaczy? Stworzyłaś właśnie `block` (blok), który jest znacznikiem szablonu umożliwiającym Ci wstawienie HTML wewnątrz tego bloku w innych szablonach, które rozszerzają `base.html`. Za chwilę pokażemy Ci, jak to się robi.
 
@@ -95,16 +93,14 @@ Teraz zapisz zmiany, a potem otwórz jeszcze raz plik `blog/templates/blog/post_
     </div>
 {% endfor %}
 ```
-    
 
 A teraz dodaj ten wiersz na początku pliku:
 
 ```html
 {% extends 'blog/base.html' %}
-```
-    
+```  
 
-To znaczy, że teraz rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock content %}`. O tak:
+{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock content %}`. O tak:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -120,8 +116,7 @@ To znaczy, że teraz rozszerzamy szablon `base.html` w pliku `post_list.html`. Z
         </div>
     {% endfor %}
 {% endblock content %}
-```
-    
+```  
 
 I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)
 
