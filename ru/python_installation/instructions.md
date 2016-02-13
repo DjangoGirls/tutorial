@@ -43,7 +43,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 ### OS X
 
-Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-342/ и скачать дистрибутив Python:
+Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-343/ и скачать дистрибутив Python:
 
   * Скачай файл *Mac OS X 64-bit/32-bit installer*,
   * Сделай двойной щелчок на *python-3.4.3-macosx10.6.pkg* для запуска установщика.
