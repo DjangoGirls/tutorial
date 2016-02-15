@@ -417,6 +417,9 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 
 # Save it!
 
+> For readers at home: this part is covered in [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+
+
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
