@@ -44,6 +44,7 @@ Git va surveiller et conserver les modifications concernant l'ensemble des fichi
     __pycache__
     myvenv
     db.sqlite3
+    /static
     .DS_Store
     
 
