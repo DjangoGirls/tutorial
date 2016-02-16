@@ -40,13 +40,14 @@ L'initialisation d'un dépôt git ne se fait qu'une fois par projet. De même, v
 
 Git va surveiller et conserver les modifications concernant l'ensemble des fichiers et dossiers présents dans ce répertoire, à l'exception de certains fichiers que nous aimerions exclure. Pour cela, nous allons créer un fichier appelé `.gitignore` dans le répertoire principal du projet. Ouvrez votre éditeur et créez un nouveau fichier en copiant le contenu suivant :
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    /static
-    .DS_Store
-    
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+``` 
 
 Enregistrez ce fichier `.gitignore` dans votre répertoire principal "djangogirls".
 
