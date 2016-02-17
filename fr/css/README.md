@@ -39,7 +39,7 @@ Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arr
 
 Comme vous l'avez probablement remarqué lorsque nous avons exécuté la commande `collectstatic` sur le serveur, Django sait déjà où trouver les fichiers statiques pour la partie "admin". Maintenant, il ne nous reste plus qu'à ajouter les fichiers statiques liés à notre app `blog`.
 
-Pour cela, nous allons créer un fichier appelé `static` à l'intérieur de notre blog app :
+Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre blog app :
 
     djangogirls
     ├── blog
