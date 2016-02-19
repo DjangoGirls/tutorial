@@ -65,7 +65,7 @@ Para mantener todo en orden, crearemos una aplicación separada dentro de nuestr
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
 
-Vas notar que se crea un nuevo directorio llamado `blog` y contiene una serie de archivos. Nuestros directorios y archivos en nuestro proyecto deberían parecerse a esto:
+Vas a notar que se crea un nuevo directorio llamado `blog` y contiene una serie de archivos. Nuestros directorios y archivos en nuestro proyecto deberían parecerse a esto:
 
     djangogirls
     ├── mysite
