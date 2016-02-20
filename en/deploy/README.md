@@ -302,7 +302,7 @@ And remember, your coach is here to help!
 
 The default page for your site should say "Welcome to Django", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in Web development (make changes locally, push those changes to GitHub, pull your changes down to your live Web server). This allows you to work and expirement without breaking your live Web site. Pretty cool, huh?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in Web development (make changes locally, push those changes to GitHub, pull your changes down to your live Web server). This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
