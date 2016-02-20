@@ -13,8 +13,6 @@ El primer paso para crearlo es para iniciar un nuevo proyecto en Django. Básica
 Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es una buena idea. Django tiene que mantener una cierta estructura para ser capaz de encontrar cosas importantes.
 
 > Recuerda correr todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **Instalación de Django** en la sección **Trabajando con virtualenv**. Puedes hacerlo escribiendo el siguiente comando: `myvenv\Scripts\activate` en Windows o `myvenv/bin/activate` en Mac OS / Linux.
-> 
-> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
 
 En la consola debes ejecutar (recuerda no escribir `(myvenv) ~/djangogirls$`, ¿ok?):
 
@@ -25,6 +23,7 @@ En Windows:
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
     
+> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
 
 `django-admin.py` es un script que creará los archivos y directorios para ti. Ahora deberías tener una estructura de directorios parecida a esto:
 
