@@ -33,6 +33,6 @@ Another error! Read what's going on now:
 
 ![Error](images/error.png)
 
-This one is easy: *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful.  You can read that *TemplateDoesNotExist*. This one is easy: Let's fix this bug and create a template in the next chapter!
 
 > Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/views/
