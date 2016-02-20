@@ -68,7 +68,7 @@ Usando comillas dobles:
     "Runnin' down the hill"
     
 
-o escapando el apóstrofe con una barra invertida (``):
+o escapando el apóstrofe con una barra invertida (`\`):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
