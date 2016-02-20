@@ -38,7 +38,7 @@ Finally we will take a closer look at these things we've been calling __static f
 
 ### Where to put static files for Django
 
-As you saw when we ran `collectstatic` on the server, Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`. 
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
 We do that by creating a folder called `static` inside the blog app:
 
@@ -66,7 +66,7 @@ Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-But let's do at least a little. Maybe we could change the color of our header? 
+But let's do at least a little. Maybe we could change the color of our header?
 To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A-F) and numbers (0-9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/cssref/css_colornames.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
@@ -79,7 +79,7 @@ h1 a {
 
 `h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like: `<h1><a href="">link</a></h1>` the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. 
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names.
 We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
@@ -94,13 +94,13 @@ Then, we need to also tell our HTML template that we added some CSS. Open the `b
 {% load staticfiles %}
 ```
 
-We're just loading static files here :). 
+We're just loading static files here :).
 Between the `<head>` and `</head>`, after the links to the Bootstrap CSS files add this line:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. 
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files.
 We just told our template where our CSS file is located.
 
 Your file should now look like this:
@@ -276,10 +276,10 @@ Save those files and refresh your website.
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? 
-Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise? 
+Woohoo! Looks awesome, right?
+Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry, you can always undo it! 
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry, you can always undo it!
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
