@@ -508,8 +508,7 @@ Python espera que fornecemos mais instruções que serão supostamente executada
 if 3 > 2:
     print('It works!')
 ```
-
-Observe como podemos ter recuado a próxima linha de código por 4 espaços? Precisamos fazer isso para que Python sabe que código a ser executado se o código resulta em True. Você pode fazer um espaço, mas quase todos os programadores Python fazem com 4 para tornar as coisas um olhar puro. Um único tab também vai contar como 4 espaços.
+Você percebeu que identamos a próxima linha com 4 espaços? Precisamos fazer isso para que o Python saiba qual código será executado se o resultado for True. Você pode fazer com 1 espaço, mas quase todos os programadores Python fazem com 4 para deixar as coisas arrumadas. Um único tab também vai contar como 4 espaços.
 
 Salvá-lo e execute novamente:
 
@@ -531,7 +530,7 @@ else:
 Quando for executado irá imprimir:
 
     $ python3 python_intro.py
-    5 é maior que 2
+    5 é realmente maior que 2
     
 
 Se 2 for um número maior do que 5, então o segundo comando será executado. Fácil, né? Vamos ver como funciona o `elif`:
@@ -738,7 +737,7 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 ## Sumário
 
-É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhosa de si mesmo. Estamos definitivamente orgulhosas de você por ter chegado até aqui!
+É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhosa de si mesma. Estamos definitivamente orgulhosas de você por ter chegado até aqui!
 
 Talvez você queira brevemente fazer algo mais - espreguiçar, andar um pouco, descansar os olhos - antes de ir para o próximo capítulo. :)
 
