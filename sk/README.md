@@ -1,8 +1,6 @@
 # Príručka k Django Girls
 
-[!\[Gitter\] (https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Toto dielo je zverejnené pod medzinárodnou licenciou Creative Commons Attribution-ShareAlike ("uvedenie autora – rovnaké šírenie") 4.0. Ak chcete zobraziť kópiu tejto licencie, navštívte http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -26,7 +24,7 @@ Výsledok bude vyzerať asi takto:
 
  [2]: images/application.png
 
-> Ak budeš na tomto projekte pracovať sama a nemáš mentora, ktorý ti pomáha, môžeš v prípade problémov navštíviť tento chat: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. Požiadali sme našich mentorov, ale aj absolventky, aby sa na tomto chate občas ukázali a pomohli ostatným, ktorí môžu zápasiť s problémami! Neboj sa pripojiť a opýtať sa, na čo potrebuješ!
+> Ak budeš na tomto projekte pracovať sama a nemáš mentora, ktorý ti pomáha, môžeš v prípade problémov navštíviť tento chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Požiadali sme našich mentorov, ale aj absolventky, aby sa na tomto chate občas ukázali a pomohli ostatným, ktorí môžu zápasiť s problémami! Neboj sa pripojiť a opýtať sa, na čo potrebuješ!
 
 OK, [začnime pekne po poriadku...][3]
 

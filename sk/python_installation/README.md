@@ -10,4 +10,4 @@ Python vznikol koncom 80-tych rokov minulého storočia a jeho hlavným cieľom 
 
 > **Poznámka** Ak si sa už cez kroky inštalácie prepracovala, nemusíš to robiť znova - môžeš preskočiť rovno na nasledujúcu kapitolu!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}

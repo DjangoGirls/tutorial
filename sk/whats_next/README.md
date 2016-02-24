@@ -19,7 +19,16 @@ Potom nezabudni:
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame! - [Django's official tutorial][4] (Oficiálna príručka Django) - [New Coder tutorials][5] (Príručka Nového Kódera) - [Code Academy Python course][6] (kurzy Pythonu na Code Academy) - [Code Academy HTML & CSS course][7] (kurzy HTML a CSS na Code Academy) - [Django Carrots tutorial][8] (Príručka Django Carrots) - [Learn Python The Hard Way book][9] (kniha Naučte sa Python ťažkým spôsobom) - [Getting Started With Django video lessons][10] (video lekcie Začíname s Djangom) - [Two Scoops of Django: Best Practices for Django 1.8 book][11] (kniha Dve naberačky Djanga: Najlepšie cvičenia pre Django 1.8)
+Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame!
+
+- [Django's official tutorial][4]
+- [New Coder tutorials][5]
+- [Code Academy Python course][6]
+- [Code Academy HTML & CSS course][7]
+- [Django Carrots tutorial][8]
+- [Learn Python The Hard Way book][9]
+- [Getting Started With Django video lessons][10]
+- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/

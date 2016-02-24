@@ -14,19 +14,19 @@ Počas workshopu budeš vytvárať blog a v tutoriále je pár nastavení, ktor�
 
 # Inštalácia Pythonu
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Nastavenie virtualenv a inštalácia Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Inštalácia editoru kódu
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Inštalácia Gitu
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Vytvorenie GitHub účtu
 
@@ -34,7 +34,7 @@ Choď na [GitHub.com](http://www.github.com) a založ (Sign Up) si nový účet 
 
 # Vytvor si PythonAnywhere účet
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Začni čítať
 

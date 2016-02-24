@@ -22,7 +22,7 @@ Git je "systém na správu verzií", ktorý využíva množstvo programátorov. 
 
 > **Poznámka** Ak si už kroky inštalácie robila, nemusíš to robiť znova a môžeš preskočiť na ďalšiu časť a začať vytvárať Git repozitár.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Spustenie Git repozitára
 
@@ -129,7 +129,7 @@ Tvoj kód je na GitHube. Kľudne si to over! Zistíš, že sa nachádza vo vyber
 
 > **Poznámka** Možno si už účet na PythonAnywhere vytvorila počas inštalácie - ak áno, nemusíš to robiť znova.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Natiahnutie nášho kódu na PythonAnywhere
 
