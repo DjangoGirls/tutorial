@@ -11,3 +11,4 @@
 * [Magyar (beta)](hu)
 * [Türkçe (beta)](tr)
 * [Czech (beta)](cz)
+* [Slovak (beta)](sk)
