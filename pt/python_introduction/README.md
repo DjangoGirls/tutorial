@@ -442,9 +442,9 @@ Para sair do interpretador Python que estamos usando, simplesmente digite o ~~~ 
     $
     
 
-Isso vai colocá-lo no prompt de comando.
+Isso vai colocá-la no prompt de comando.
 
-Anteriormente, nós escolhemos um editor de código da seção do [editor de código][4]. Nós precisamos abrir o editor agora e escrever algum código em um novo arquivo:</p> 
+Anteriormente, nós escolhemos um editor de código da seção do [editor de código][4]. Nós precisamos abrir o editor agora e escrever algum código em um novo arquivo:
 ```python
 print('Hello, Django girls!')
 ```
@@ -480,7 +480,7 @@ e, em seguida, usar o Python para executar o código no arquivo assim:
     Hello, Django girls!
     
 
-Tudo bem! Você acabou de seu primeiro programa em python que foi salvo em um arquivo. Me sinto ótimo?
+Tudo bem! Você acabou de seu primeiro programa em python que foi salvo em um arquivo. Se sente ótima?
 
 Você pode agora passar para uma ferramenta essencial na programação:
 
@@ -508,8 +508,7 @@ Python espera que fornecemos mais instruções que serão supostamente executada
 if 3 > 2:
     print('It works!')
 ```
-
-Observe como podemos ter recuado a próxima linha de código por 4 espaços? Precisamos fazer isso para que Python sabe que código a ser executado se o código resulta em true. Você pode fazer um espaço, mas quase todos os programadores Python fazem com 4 para tornar as coisas um olhar puro. Um único tab também vai contar como 4 espaços.
+Você percebeu que identamos a próxima linha com 4 espaços? Precisamos fazer isso para que o Python saiba qual código será executado se o resultado for True. Você pode fazer com 1 espaço, mas quase todos os programadores Python fazem com 4 para deixar as coisas arrumadas. Um único tab também vai contar como 4 espaços.
 
 Salvá-lo e execute novamente:
 
@@ -523,15 +522,15 @@ Nos exemplos anteriores, o código foi executado somente quando as condições e
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 é realmente maior que 2')
 else:
-    print('5 is not greater than 2')
+    print('5 não é maior que 2')
 ```
 
 Quando for executado irá imprimir:
 
     $ python3 python_intro.py
-    5 e maior que 2
+    5 é realmente maior que 2
     
 
 Se 2 for um número maior do que 5, então o segundo comando será executado. Fácil, né? Vamos ver como funciona o `elif`:
@@ -561,7 +560,7 @@ Nos últimos três exercícios você aprendeu:
 *   **comparar as coisas** - em Python, você pode comparar as coisas usando os operadores `>`, `>=`, `==`, `<=`, `<` e o `and`, `or`
 *   **Booleano** - um tipo de objeto que só tem um dos dois valores: `True` ou `False`
 *   **Salvando arquivos** - armazenamento de código em arquivos assim você pode executar programas maiores.
-*   **if... elif... else**-instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
+*   **if... elif... else** - instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
 
 É hora da última parte deste capítulo!
 
@@ -581,7 +580,7 @@ hi()
 
 Ok, nossa primeira função está pronta!
 
-Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa-lo de cima para baixo. Então, para usar a nossa função, temos re-escrevê-lo na parte inferior.
+Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa de cima para baixo. Então, para usar a nossa função, temos re-escrevê-lo na parte inferior.
 
 Vamos executa-lo agora e ver o que acontece:
 
@@ -643,12 +642,12 @@ e executá-lo:
     Hi Sonja!
     
 
-Agora, o que acha que vai acontecer se você escrever outro nome lá? (Não Ola ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
+Agora, o que acha que vai acontecer se você escrever outro nome lá? (Sem ser Ola ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
 
     Hi anonymous!
     
 
-Isto é incrível, não? Dessa maneira você não precisa se repetir (DRY - don't repeat yourself) cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você nunca quer repetir seu código!
+Isto é incrível, não? Dessa maneira você não precisa se repetir (DRY - don't repeat yourself, ou em português, não se repita) cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você nunca quer repetir seu código!
 
 Vamos fazer algo mais inteligente..--existem mais que dois nomes, e escrever uma condição para cada um seria difícil, certo?
 
@@ -738,7 +737,7 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 ## Sumário
 
-É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhoso de si mesmo. Estamos definitivamente orgulhosos de você por ter chegado até aqui!
+É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhosa de si mesma. Estamos definitivamente orgulhosas de você por ter chegado até aqui!
 
 Talvez você queira brevemente fazer algo mais - espreguiçar, andar um pouco, descansar os olhos - antes de ir para o próximo capítulo. :)
 
