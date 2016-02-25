@@ -10,4 +10,4 @@
 * [Italian (beta)](it)
 * [Magyar (beta)](hu)
 * [Türkçe (beta)](tr)
-* [Czech (beta)](cz)
+* [Czech (beta)](cs)
