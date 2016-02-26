@@ -1,6 +1,6 @@
 # Tvůj první Django projekt!
 
-> Část této kapitoly je založena na kurzu Geek Girls Carrots (http://django.carrots.pl/).
+> Část této kapitoly je založena na kurzu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 >
 > Části této kapitoly jsou založeny na [django-marcador tutorial][1] licencováno pod Creative Commons Attribution-ShareAlike 4.0 mezinárodní licencí. Ochranou známku pro Django-marcador drží Markus Zapke-Gründemann et al.
 

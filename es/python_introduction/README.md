@@ -1,6 +1,6 @@
 # Introducción a Python
 
-> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (http://django.carrots.pl/).
+> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 ¡Vamos a escribir algo de código!
 

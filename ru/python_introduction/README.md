@@ -1,6 +1,6 @@
 # Введение в Python
 
-> Часть этой главы основана на учебных пособиях Geek Girls Carrots (http://django.carrots.pl/).
+> Часть этой главы основана на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Давай напишем немного кода!
 

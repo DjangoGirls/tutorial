@@ -1,6 +1,6 @@
 # Python 简介
 
-> 本章的部分内容基于 Geek Girls Carrots (http://django.carrots.pl/) 的教程。
+> 本章的部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 的教程。
 
 让我们现在就开始写代码 ！
 

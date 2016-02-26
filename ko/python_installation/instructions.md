@@ -1,4 +1,4 @@
-> 위 내용은 Geek Girls Carrots (http://django.carrots.pl) 을 바탕으로 작성되었습니다.
+> 위 내용은 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 을 바탕으로 작성되었습니다.
 
 장고는 파이썬으로 만들어졌습니다. 장고를 하기 위해서는 파이썬이 있어야 합니다. 우선 설치부터 해볼까요! 우리는 파이썬 3.4를 사용할 거예요. 그보다 낮은 버전이 설치되었다면, 업그레이드가 필요합니다.
 

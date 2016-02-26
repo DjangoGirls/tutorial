@@ -1,4 +1,4 @@
-> Fragmenty tego rozdziału napisane są w oparciu o kurs Geek Girls Carrots (http://django.carrots.pl/).
+> Fragmenty tego rozdziału napisane są w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Fragmenty tego rozdziału są oparte o tutorial [django-marcador](http://django-marcador.keimlink.de/) na licencji Creative Commons Attribution-ShareAlike 4.0 International. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 

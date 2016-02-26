@@ -1,4 +1,4 @@
-> Отдельные части этой главы основаны на учебных пособиях Geek Girls Carrots (http://django.carrots.pl/).
+> Отдельные части этой главы основаны на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Отдельные части этой главы основаны на [учебном пособии django-marcador](http://django-marcador.keimlink.de/), лицензированном под Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
 

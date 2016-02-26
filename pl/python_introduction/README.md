@@ -1,6 +1,6 @@
 # Wprowadzenie do Pythona
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (http://django.carrots.pl/).
+> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Napiszmy jakiś kod!
 

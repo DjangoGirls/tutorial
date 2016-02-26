@@ -1,6 +1,6 @@
 # İlk Django projen!
 
-> Bu bölümün kaynağı Geek Girls Carrots (http://django.carrots.pl/) tutorial'ıdır.
+> Bu bölümün kaynağı Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorial'ıdır.
 >
 > Bölümün parçaları Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslı [django-marcador tutorial][1]'a dayanılarak hazırlanmıştır. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
 

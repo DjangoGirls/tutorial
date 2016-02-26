@@ -1,6 +1,6 @@
 # Python'a Giriş
 
-> Bu bölümün bazı kısımları Geek Girls Carrots (http://django.carrots.pl/) öğreticisinden alınmıştır.
+> Bu bölümün bazı kısımları Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) öğreticisinden alınmıştır.
 
 Biraz kod yazalım!
 

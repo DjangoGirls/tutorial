@@ -1,4 +1,4 @@
-> Частина цього розділу базується на матеріалах Geek Girls Carrots (http://django.carrots.pl/).
+> Частина цього розділу базується на матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 > Частина цього розділу базується на матеріалі [django-marcador tutorial]
 (http://django-marcador.keimlink.de/),
