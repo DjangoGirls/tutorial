@@ -10,7 +10,7 @@ Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en n
 
  [1]: /intro_to_command_line/README.html
 
-Una vez que estés listo, sigue las siguientes instrucciones.
+Una vez que estés lista, sigue las siguientes instrucciones.
 
 Queremos abrir una consola de Python, así que escribe `python3` y pulsa Enter.
 
@@ -20,7 +20,7 @@ Queremos abrir una consola de Python, así que escribe `python3` y pulsa Enter.
     >>>
     
 
-## Tu primer comando en Python!
+## ¡Tu primer comando en Python!
 
 Después de ejecutar el comando de Python, el cursor cambia a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos en el lenguaje Python. No tienes que escribir el `>>>` - Python lo hará por ti.
 
@@ -40,7 +40,7 @@ Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué m
 
 ## Strings
 
-¿Y tu nombre? Escriba tu nombre de pila en frases como ésta:
+¿Y tu nombre? Escribe tu nombre de pila en frases como ésta:
 
     >>> "Ola"
     'Ola'
@@ -126,7 +126,7 @@ Intentemos con algo nuevo. ¿Podríamos obtener la longitud de un número de la 
 
 ## Variables
 
-Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa para que puedas usarla más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando que hace cada cosa.
+Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa para que puedas usarla más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando qué hace cada cosa.
 
 Supongamos que queremos crear una nueva variable llamada `name`:
 
@@ -396,7 +396,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
     TypeError: unorderable types: int() > str()
     
 
-Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y un string (`str`). En cambio, muestra un **TypeError** y nos dice que los dos tipos no se pueden comparados.
+Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y un string (`str`). En cambio, muestra un **TypeError** y nos dice que los dos tipos no se pueden comparar.
 
 ## Boolean
 
@@ -653,7 +653,7 @@ Ahora, ¿qué crees que pasará si escribes otro nombre allí? (No Ola o Sonja).
     Hi anonymous!
     
 
-Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y eso es exactamente por qué necesitamos funciones - ¡para no repetir tu código!
+Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y eso es exactamente el por qué necesitamos funciones - ¡para no repetir tu código!
 
 Vamos a hacer algo más inteligente - hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿no?
 
@@ -690,7 +690,7 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace 
     for name in girls:
 ```    
 
-La sentencia for se comporta de manera similar a la sentencia if, el código que sigue continuación debe estar indentado usando cuatro espacios.
+La sentencia for se comporta de manera similar a la sentencia if, el código que sigue a continuación debe estar indentado usando cuatro espacios.
 
 Aquí está el código completo que estará en el archivo:
 

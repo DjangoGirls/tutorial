@@ -65,7 +65,7 @@ Cada página HTML también se divide en dos elementos: **head** y **body**.
 
 *   **body** es un elemento que contiene todo lo que se muestra como parte de la página web.
 
-Usamos `<head>` para decirle el navegador acerca de la configuración de la página y `<body>` para decir lo que realmente está en la página.
+Usamos `<head>` para decirle al navegador acerca de la configuración de la página y `<body>` para decir lo que realmente está en la página.
 
 Por ejemplo, puedes ponerle un título a la página web dentro de la `<head>`, así:
 
@@ -147,7 +147,7 @@ Nos da este efecto:
 
  [4]: images/step6.png
 
-¡Yaaay! Pero hasta el momento, nuestra plantilla sólo muestra exactamente **la misma información** - considerando que antes hablábamos de plantillas como permitiéndonos mostrar información **diferente** en el **mismo formato**.
+¡Yaaay! Pero hasta el momento, nuestra plantilla sólo muestra exactamente **la misma información** - considerando que antes hablábamos de plantillas que nos permitirían mostrar información **diferente** en el **mismo formato**.
 
 Lo que queremos realmente es mostrar posts reales añadidos en nuestra página de administración de Django - y ahí es a donde vamos a continuación.
 

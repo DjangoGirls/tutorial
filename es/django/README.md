@@ -16,12 +16,12 @@ Imagina un buzón (puerto) el cual es monitoreado por cartas entrantes (peticion
 
 ## ¿Qué sucede cuando alguien solicita una página web de tu servidor?
 
-Cuando llega una petición a un servidor web es pasado a Django que intenta averiguar lo que realmente es solicitado. Toma primero una dirección de página web y trata de averiguar qué hacer. Esta parte es realizada por **urlresolver** de Django (tenga en cuenta que la dirección de un sitio web es llamada URL - Uniform Resource Locator - así que el nombre *urlresolver* tiene sentido). Este no es muy inteligente - toma una lista de patrones y trata de igualar la URL. Django comprueba los patrones de arriba hacia abajo y si algo se coincide entonces Django le pasa la solicitud a la función asociada (que se llama *vista*).
+Cuando llega una petición a un servidor web, ésta es pasada a Django, el cual intenta averiguar lo que realmente es solicitado. Toma primero una dirección de página web y trata de averiguar qué hacer. Esta parte es realizada por el **urlresolver** de Django (ten en cuenta que la dirección de un sitio web es llamada URL - Uniform Resource Locator - así que el nombre *urlresolver* tiene sentido). Este no es muy inteligente - toma una lista de patrones y trata de encontrar la URL. Django comprueba los patrones de arriba hacia abajo y si algo coincide entonces Django le pasa la solicitud a la función asociada (que se llama *vista*).
 
-Imagina a un cartero llevando una carta. Ella está caminando por la calle y comprueba cada número de casa con el que está en la carta. Si coincide, ella deja la carta allí. Así es como funciona el urlresolver!
+Imagina a un cartero llevando una carta. Ella está caminando por la calle y comprueba cada número de casa con el que está en la carta. Si coincide, ella deja la carta allí. ¡Así es como funciona el urlresolver!
 
-En la función de *vista* se hacen todas las cosas interesantes: podemos mirar a una base de datos para buscar alguna información. ¿Tal vez el usuario pidió cambiar algo en los datos? Como una carta diciendo "Por favor cambia la descripción de mi trabajo." La *vista* puede comprobar si tenes permitido hacer eso, entonces actualizar la descripción del trabajo para usted y devolverle un mensaje: "¡hecho!". Entonces la *vista* genera una respuesta y Django puede enviarla al navegador del usuario.
+En la función de *vista* se hacen todas las cosas interesantes: podemos mirar a una base de datos para buscar alguna información. ¿Tal vez el usuario pidió cambiar algo en los datos? Como una carta diciendo "Por favor cambia la descripción de mi trabajo." La *vista* puede comprobar si tenes permitido hacer eso, entonces actualizar la descripción del trabajo para ti y devolverte un mensaje: "¡hecho!". Entonces la *vista* genera una respuesta y Django puede enviarla al navegador del usuario.
 
-Por supuesto, la descripción anterior se simplifica un poco, pero no necesitas saber todas las cosas técnicas aun. Tener una idea general es suficiente.
+Por supuesto, la descripción anterior esta simplificada un poco, pero no necesitas saber todas las cosas técnicas aun. Tener una idea general es suficiente.
 
-Así que en lugar de meternos demasiado en los detalles, simplemente comenzaremos creando algo con Django y aprenderemos todas las piezas importantes en el camino!
+Así que en lugar de meternos demasiado en los detalles, ¡simplemente comenzaremos creando algo con Django y aprenderemos todas las piezas importantes en el camino!

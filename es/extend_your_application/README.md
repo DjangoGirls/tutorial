@@ -42,7 +42,7 @@ Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de e
 
  [1]: images/no_reverse_match2.png
 
-Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
+¡Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 ### URL: http://127.0.0.1:8000/post/1/
 
@@ -80,7 +80,7 @@ Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, 
 
 ## post_detail view
 
-Esta vez nuestra *view* tomará un parámetro adicional `pk`. ¿Nuestra *view* necesita recibirla, cierto? Entonces definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *view* tomará un parámetro adicional `pk`. Nuestra *view* necesita recibirla, ¿cierto? Entonces definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos sólo un post del blog. Para ello podemos usar querysets como este:
 
@@ -151,7 +151,7 @@ Se verá así:
 
 Una vez más estamos extendiendo `base.html`. En el bloque `content` queremos mostrar la fecha de publicación (si existe), título y texto de nuestros posts. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
-`{% if ... %} ... {% endif %}` es un template tag que podemos usar cuando querramos ver algo (¿recuerdas if ... else...</code> del capítulo de **Introducción a Python**?). En este escenario queremos comprobar si el campo `published_date` de un post no está vacío.
+`{% if ... %} ... {% endif %}` es un template tag que podemos usar cuando querramos ver algo (¿recuerdas <code>if ... else...</code> del capítulo de **Introducción a Python**?). En este escenario queremos comprobar si el campo `published_date` de un post no está vacío.
 
 Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
