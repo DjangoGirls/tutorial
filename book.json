@@ -1,12 +1,13 @@
  {
+    "gitbook": "2.x.x",
     "links": {
         "sidebar": {
             "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
         }
     },
-
     "plugins": [
-        "heading-anchors@1.0.3", "ga@1.0.1", "richquotes@0.0.7", "github@2.0.0"
+        "heading-anchors@1.0.3", "ga@1.0.1", "richquotes@0.0.7",
+        "github@2.0.0", "language-picker"
     ],
     "pluginsConfig": {
         "ga": {
@@ -17,8 +18,9 @@
         },
         "github": {
             "url": "https://github.com/DjangoGirls/tutorial"
+        },
+        "language-picker": {
+            "grid-columns": 3
         }
-    },
-
-    "gitbook": "2.6.7"
+    }
 }
