@@ -48,16 +48,23 @@ Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-``` from django.conf.urls import include, url
-    from . import views
+``` python
+from django.conf.urls import include, url
+from . import views
     
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    ]
-``` 
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+]
+```
 
-Ese da un poco de miedo, pero no te preocupes - lo explicaremos para ti: comienza con `^` otra vez, "el principio". `post/` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. `(?P<pk>[0-9]+)` - esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no una letra (todo debería estar entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Entonces algo como `http://127.0.0.1:8000/post//` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! - `/` - entonces necesitamos **/** de nuevo - `$` - ¡"el final"!
+Ese da un poco de miedo, pero no te preocupes - lo explicaremos para
+ti:
+- comienza con `^` otra vez, "el principio".
+- `post/` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien.
+- `(?P<pk>[0-9]+)` - esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no una letra (todo debería estar entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Entonces algo como `http://127.0.0.1:8000/post//` no es válido, pero `http://127.0.0.1:8000/post/1234567890/` es perfectamente aceptable!
+- `/` - entonces necesitamos **/** de nuevo
+- `$` - ¡"el final"!
 
 Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *view* denominada `post_detail` y transferirá la información de `pk` que es igual a `5` a esa *view*.
 
@@ -166,8 +173,11 @@ Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿ci
 ```    
 
 *   Luego, en una [consola Bash de PythonAnywhere][8]
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+    $ cd my-first-blog
+    $ git pull [...]
+```
 
 *   Finalmente, ve a la pestaña [Web][9] y haz click en **Reload**.
 

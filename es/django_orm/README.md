@@ -106,7 +106,9 @@ Una parte importante de los QuerySets es la habilidad para filtrarlos. Digamos q
 
 También puedes obtener una lista de todos los posts publicados. Lo hacemos filtrando los posts que tienen el campo `published_date` en el pasado:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 Desafortunadamente, ninguno de nuestros posts han sido publicados todavía. ¡Vamos a cambiar esto! Primero obtén una instancia de un post que querramos publicar:
 

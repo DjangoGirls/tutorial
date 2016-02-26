@@ -343,12 +343,23 @@ Si necesitas más información sobre los formularios de Django, debes leer la do
 Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegue!
 
 *   Primero, haz un commit con tu nuevo código y súbelo a GitHub
-    
-    $ git status $ git add -A . $ git status $ git commit -m "Added views to create/edit blog post inside the site." $ git push
+
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 *   Luego, en una [consola Bash de PythonAnywhere][7]
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+$ cd my-first-blog
+$ source myvenv/bin/activate
+$ git pull
+[...]
+```
 
 *   Finalmente, ve a la pestaña [Web][8] y haz click en **Reload**.
 

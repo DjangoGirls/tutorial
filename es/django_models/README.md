@@ -69,19 +69,19 @@ Vas a notar que se crea un nuevo directorio llamado `blog` y contiene una serie 
 
     djangogirls
     ├── mysite
-    | __init__.py
-    | settings.py
-    | urls.py
-    | wsgi.py
+    |       __init__.py
+    |       settings.py
+    |       urls.py
+    |       wsgi.py
     ├── manage.py
     └── blog
-    ├── migrations
-    | __init__.py
-    ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
+        ├── migrations
+        |       __init__.py
+        ├── __init__.py
+        ├── admin.py
+        ├── models.py
+        ├── tests.py
+        └── views.py
     
 
 Después de crear una aplicación también necesitamos decirle a Django que debe utilizarla. Lo hacemos en el archivo `mysite/settings.py`. Tenemos que encontrar `INSTALLED_APPS` y añadir una línea que contiene `'blog',` justo por encima de `)`. El producto final debe tener este aspecto:
