@@ -1,6 +1,6 @@
 # Python 시작하기
 
-> 이번 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 바탕으로 작성되었습니다.
+> 이번 장의 일부는 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)의 튜토리얼을 바탕으로 작성되었습니다.
 
 자, 코딩 한 번 해봅시다!
 

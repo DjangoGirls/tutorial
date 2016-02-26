@@ -1,6 +1,6 @@
 # Вступ до Python
 
-> Частина цього розділу базується на матеріалах Geek Girls Carrots (http://django.carrots.pl/).
+> Частина цього розділу базується на матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Давайте напишемо якийсь код!
 

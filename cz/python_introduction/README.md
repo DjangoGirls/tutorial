@@ -1,6 +1,6 @@
 # Úvod do Pythonu
 
-> Část této kapitoly je založena na kurzu Geek Girls Carrots (http://django.carrots.pl/).
+> Část této kapitoly je založena na kurzu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Pojďme napsat nějaký kód!
 
