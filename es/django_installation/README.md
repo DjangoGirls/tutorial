@@ -70,7 +70,7 @@ en OS X y Linux.
 
 ¡Recuerda reemplazar `myvenv` con tu nombre de `virtualenv` que hayas elegido!
 
-> **Nota:** a veces la `fuente` podría no estar disponible. En esos casos trata de hacerlo esto:
+> **Nota:** a veces la `fuente` podría no estar disponible. En esos casos trata de hacer esto:
 > 
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
