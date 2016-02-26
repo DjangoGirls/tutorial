@@ -1,6 +1,6 @@
 # Ваш перший Django проект!
 
-> Частина цього розділу базується на матеріалах Geek Girls Carrots (http://django.carrots.pl/).
+> Частина цього розділу базується на матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 > Частина цього розділу базується на матеріалх [django-marcador tutorial](http://django-marcador.keimlink.de/)
 ліцензованих Creative Commons Attribution-ShareAlike 4.0 International License.

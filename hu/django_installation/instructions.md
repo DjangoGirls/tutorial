@@ -1,4 +1,4 @@
-> Ennek a fejezetnek egy része a Geek Girls Carrots (http://django.carrots.pl/) tutorialjain alapul.
+> Ennek a fejezetnek egy része a Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorialjain alapul.
 > 
 > A fejezet részben a [django-marcador tutorial](http://django-marcador.keimlink.de/)-on alapszik, ami a Creative Commons Attribution-ShareAlike 4.0 International License jogvédelem alatt áll. A django-marcador tutorial jogvédelem alatt áll, Markus Zapke-Gründemann et al által.
 

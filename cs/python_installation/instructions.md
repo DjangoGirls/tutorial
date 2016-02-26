@@ -1,4 +1,4 @@
-> Tato podkapitola čerpá z Geek Girls Carrots (http://django.carrots.pl/)
+> Tato podkapitola čerpá z Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django je napsán v Pythonu. Na to aby jsi mohla cokoliv dělat v Djangu potřebuješ Python. Začněme s instalací! Chceme, aby si nainstalovala verzi Python 3.4, pokud máš starší verzi, musíš jí upgradovat.
 

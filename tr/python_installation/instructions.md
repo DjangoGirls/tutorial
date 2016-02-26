@@ -1,4 +1,4 @@
-> Bu bölüm Geek Girls Carrots tarafından yapılan bir eğitime dayanılarak hazırlanmıştır. (http://django.carrots.pl/)
+> Bu bölüm Geek Girls Carrots tarafından yapılan bir eğitime dayanılarak hazırlanmıştır. (https://github.com/ggcarrots/django-carrots)
 
 Django, Python ile yazılmıştır. Django ile bir şey yapmak için Python diline ihtiyacımız var. Hadi Python kurmaya başlayalım! Biz Python 3.4 kurmak istiyoruz, eğer daha düşük bir sürüme sahipseniz, güncellemelisiniz.
 
