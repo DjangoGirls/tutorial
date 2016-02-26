@@ -1,6 +1,6 @@
 # Twój pierwszy projekt w Django!
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (http://django.carrots.pl/).
+> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 >
 > Fragmenty tego rozdziału są oparte o [tutorial django-marcador][1] na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 

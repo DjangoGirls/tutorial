@@ -1,4 +1,4 @@
-> 本节部分内容基于 Geek Girls Carrots (http://django.carrots.pl/) 教程而来。
+> 本节部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 教程而来。
 > 
 > 本章的部分内容基于 [django-marcador 教程](http://django-marcador.keimlink.de/) ，使用知识共享署名-4.0 国际许可协议许可。 Django-marcador 教程的版权归 Markus Zapke-Gründemann 所有。
 

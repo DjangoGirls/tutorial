@@ -34,7 +34,7 @@
  [5]: http://newcoder.io/tutorials/
  [6]: http://www.codecademy.com/en/tracks/python
  [7]: http://www.codecademy.com/tracks/web
- [8]: http://django.carrots.pl/en/
+ [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
  [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8

@@ -1,6 +1,6 @@
 # Az első Django projekted!
 
-> Ez a fejezet részben a Geek Girls Carrots (http://django.carrots.pl/) tutorial-jain alapszik.
+> Ez a fejezet részben a Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorial-jain alapszik.
 > 
 > A fejezet néhány része a [django-marcador tutorial][1] alapján készült, ami a Creative Commons Attribution-ShareAlike 4.0 International License alatt áll. A django-marcador tutorial jogait, Markus Zapke-Gründemann és társai birtokolják.
 
