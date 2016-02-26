@@ -50,7 +50,7 @@ Si te interesa entender cómo creamos esos patrones, aquí hay un ejemplo del pr
     ^ denota el principio del texto
     $ denota el final del texto
     \d representa un dígito
-    + indica que el ítem anterior debería ser repetido <strong>por lo menos</strong> una vez
+    + indica que el ítem anterior debería ser repetido por lo menos una vez
     () para encerrar una parte del patrón
     
 

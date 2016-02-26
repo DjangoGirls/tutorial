@@ -42,22 +42,29 @@ Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de e
 
  [1]: images/no_reverse_match2.png
 
-Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
+¡Vamos a crear una URL en `urls.py` para nuestro *view* `post_detail`!
 
 ### URL: http://127.0.0.1:8000/post/1/
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-``` from django.conf.urls import include, url
-    from . import views
+``` python
+from django.conf.urls import include, url
+from . import views
     
-    urlpatterns = [
-        url(r'^$', views.post_list),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
-    ]
-``` 
+urlpatterns = [
+    url(r'^$', views.post_list),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+]
+```
 
-Ese da un poco de miedo, pero no te preocupes - lo explicaremos para ti: comienza con `^` otra vez, "el principio". `post/` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien. `(?P<pk>[0-9]+)` - esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no una letra (todo debería estar entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Entonces algo como `http://127.0.0.1:8000/post//` no es válido, pero `1234567890/post/http://127.0.0.1:8000/` es perfectamente aceptable! - `/` - entonces necesitamos **/** de nuevo - `$` - ¡"el final"!
+Ese da un poco de miedo, pero no te preocupes - lo explicaremos para
+ti:
+- comienza con `^` otra vez, "el principio".
+- `post/` sólo significa que después del comienzo, la dirección URL debe contener la palabra **post** y **/**. Hasta ahora, bien.
+- `(?P<pk>[0-9]+)` - esta parte es más complicada. Significa que Django llevará todo lo que coloques aquí y lo transferirá a una vista como una variable llamada `pk`. `[0-9]` también nos dice que sólo puede ser un número, no una letra (todo debería estar entre 0 y 9). `+` significa que tiene que haber uno o más dígitos. Entonces algo como `http://127.0.0.1:8000/post//` no es válido, pero `http://127.0.0.1:8000/post/1234567890/` es perfectamente aceptable!
+- `/` - entonces necesitamos **/** de nuevo
+- `$` - ¡"el final"!
 
 Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *view* denominada `post_detail` y transferirá la información de `pk` que es igual a `5` a esa *view*.
 
@@ -73,7 +80,7 @@ Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, 
 
 ## post_detail view
 
-Esta vez nuestra *view* tomará un parámetro adicional `pk`. ¿Nuestra *view* necesita recibirla, cierto? Entonces definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *view* tomará un parámetro adicional `pk`. Nuestra *view* necesita recibirla, ¿cierto? Entonces definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos sólo un post del blog. Para ello podemos usar querysets como este:
 
@@ -144,7 +151,7 @@ Se verá así:
 
 Una vez más estamos extendiendo `base.html`. En el bloque `content` queremos mostrar la fecha de publicación (si existe), título y texto de nuestros posts. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
-`{% if ... %} ... {% endif %}` es un template tag que podemos usar cuando querramos ver algo (¿recuerdas if ... else...</code> del capítulo de **Introducción a Python**?). En este escenario queremos comprobar si el campo `published_date` de un post no está vacío.
+`{% if ... %} ... {% endif %}` es un template tag que podemos usar cuando querramos ver algo (¿recuerdas <code>if ... else...</code> del capítulo de **Introducción a Python**?). En este escenario queremos comprobar si el campo `published_date` de un post no está vacío.
 
 Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
@@ -166,8 +173,11 @@ Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿ci
 ```    
 
 *   Luego, en una [consola Bash de PythonAnywhere][8]
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+    $ cd my-first-blog
+    $ git pull [...]
+```
 
 *   Finalmente, ve a la pestaña [Web][9] y haz click en **Reload**.
 

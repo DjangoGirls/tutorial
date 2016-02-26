@@ -8,9 +8,9 @@
 
 ## Entorno virtual
 
-Antes de instalar Django, instalaremos una herramienta extremadamente útil que ayudará a mantener tu entorno de desarrollo ordenado en su computadora. Es posible omitir este paso, pero es muy recomendable no hacerlo - ¡comenzar con la mejor configuración posible ayudara a evitar muchos problemas en el futuro!
+Antes de instalar Django, instalaremos una herramienta extremadamente útil que ayudará a mantener tu entorno de desarrollo ordenado en su computadora. Es posible omitir este paso, pero es muy recomendable no hacerlo - ¡comenzar con la mejor configuración posible ayudar a evitar muchos problemas en el futuro!
 
-Así que, vamos a crear un **entorno virtual** (también llamado un *virtualenv*). Aislará la configuración Python/Django en base de cada proyecto, lo que significa que cualquier cambio que realice en un sitio web no afectará a otros que también estés desarrollando. Genial, ¿no?
+Así que, vamos a crear un **entorno virtual** (también llamado un *virtualenv*). Aislará la configuración Python/Django con base en cada proyecto, lo que significa que cualquier cambio que realices en un sitio web no afectará a otros que también estés desarrollando. Genial, ¿no?
 
 Todo lo que necesitas hacer es encontrar un directorio en el que desees crear el `virtualenv`; tu directorio home, por ejemplo. En Windows puede verse como `C:\Users\Name` (donde `nombre` es el nombre de tu usuario).
 
@@ -70,12 +70,12 @@ en OS X y Linux.
 
 ¡Recuerda reemplazar `myvenv` con tu nombre de `virtualenv` que hayas elegido!
 
-> **Nota:** a veces la `fuente` podría no estar disponible. En esos casos trata de hacer esto:
+> **Nota:** a veces el comando `source` podría no estar disponible. En esos casos trata de hacerlo esto:
 > 
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
-Sabrás que tienes `virtualenv` iniciado cuando veas que parece este mensaje en la consola:
+Sabrás que tienes `virtualenv` iniciado cuando veas que aparece este mensaje en la consola:
 
     (myvenv) C:\Users\Name\djangogirls>
     
@@ -110,4 +110,4 @@ en Linux
 
 > Si obtienes un error al correr pip en Ubuntu 12.04 ejecuta `python -m pip install -U --force-reinstall pip` para arreglar la instalación de pip en el virtualenv.
 
-Eso es todo! Ahora estás listo (por fin) para crear una aplicación Django!
+¡Eso es todo! ¡Ahora estás listo (por fin) para crear una aplicación Django!
