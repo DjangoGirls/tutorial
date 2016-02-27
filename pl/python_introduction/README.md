@@ -579,13 +579,13 @@ Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko 
 glosnosc = 57
 if glosnosc < 20:
     print("Prawie nic nie slychac.")
-elif 20 <= volume < 40:
+elif 20 <= glosnosc < 40:
     print("O, muzyka leci w tle.")
-elif 40 <= volume < 60:
+elif 40 <= glosnosc < 60:
     print("Idealnie, moge uslyszec wszystkie detale")
-elif 60 <= volume < 80:
+elif 60 <= glosnosc < 80:
     print("Dobre na imprezy")
-elif 80 <= volume < 100:
+elif 80 <= glosnosc < 100:
     print("Troszeczke za glosno!")
 else:
     print("Ojoj! Moje uszy! :(")
