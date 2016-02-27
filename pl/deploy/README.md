@@ -263,7 +263,6 @@ Kliknij na link "WSGI configuration file" (w sekcji "Code" w górnej części st
 
 Skasuj całą zawartość pliku i zastąp ją następującym tekstem:
 
-    python
     import os
     import sys
 
