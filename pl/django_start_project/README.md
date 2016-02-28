@@ -67,7 +67,7 @@ Musimy także dodać ścieżkę do plików statycznych (dowiesz się więcej o p
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
 ```
 
 ## Ustawienie bazy danych
