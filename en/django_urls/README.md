@@ -119,4 +119,6 @@ There is no "It works" anymore, huh? Don't worry, it's just an error page, nothi
 
 You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
 
+> If you see "This web page is not available" in your browser, check your web server console (the one from `python manage.py runserver`). If you've stopped your web server (with Ctrl-C), or if the server re-loaded itself (it's smart like that), this error may be in your console... which is a good thing!
+
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/
