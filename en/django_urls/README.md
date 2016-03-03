@@ -111,11 +111,11 @@ As you can see, we're now assigning a `view` called `post_list` to `^$` URL. Thi
 
 The last part `name='post_list'` is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
+Everything all right? 
 
 ![Error](images/error1.png)
 
-There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful:
+Your console will return an error but don't worry! It's nothing to be scared of! They're actually pretty useful:
 
 You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
 

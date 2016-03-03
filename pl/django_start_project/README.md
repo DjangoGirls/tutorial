@@ -67,7 +67,7 @@ Musimy także dodać ścieżkę do plików statycznych (dowiesz się więcej o p
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
 ```
 
 ## Ustawienie bazy danych
@@ -85,7 +85,7 @@ DATABASES = {
 }
 ```  
 
-Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie w konsoli: `python manage.py syncdb` (musimy być w katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`). Gdy to się uda, powinnaś zobaczyć coś takiego jak poniżej:
+Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie w konsoli: `python manage.py migrate` (musimy być w katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`). Gdy to się uda, powinnaś zobaczyć coś takiego jak poniżej:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
