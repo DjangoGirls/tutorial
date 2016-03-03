@@ -356,7 +356,6 @@ $ git push
 
 ```
 $ cd my-first-blog
-$ source myvenv/bin/activate
 $ git pull
 [...]
 ```
