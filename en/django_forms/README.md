@@ -212,6 +212,11 @@ return redirect('post_detail', pk=post.pk)
 
 `post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views we use `pk=post.pk`, where `post` is the newly created blog post!
 
+And since we are dealing with time now - we need one more import to continue:
+```python
+from django.utils import timezone
+```
+
 Ok, we talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 ```python
