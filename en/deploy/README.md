@@ -167,7 +167,7 @@ Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django==1.9
+(myvenv) $  pip install "django==1.9.*"
 Collecting django
 [...]
 Successfully installed django-1.9
