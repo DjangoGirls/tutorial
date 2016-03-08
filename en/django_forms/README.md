@@ -388,8 +388,7 @@ $ git push
 
 ```
 $ cd my-first-blog
-$ source myvenv/bin/activate
-(myvenv)$ git pull
+$ git pull
 [...]
 ```
 
