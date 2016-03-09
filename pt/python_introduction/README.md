@@ -431,12 +431,12 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 Até agora nós escrevemos todo nosso código em um interpretador python, que nos limita a uma linha de código em um momento. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora já corremos nossos programas de uma linha de cada vez no **interpretador** Python. Nós vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
-*   Saída do interpretador Python
-*   Abra seu editor de código de sua escolha
-*   Salvar algum código em um novo arquivo de python
+*   Sair do interpretador Python
+*   Abrir o editor de código de sua escolha
+*   Salvar algum código em um novo arquivo python
 *   Executá-lo!
 
-Para sair do interpretador Python que estamos usando, simplesmente digite o ~~~ exit() ~~~ função:
+Para sair do interpretador Python que estamos usando, simplesmente digite a função `exit()`:
 
     >>> exit()
     $
@@ -474,13 +474,13 @@ E no windows, vai ser assim:
 
 Se você ficar preso, só pedir ajuda.
 
-e, em seguida, usar o Python para executar o código no arquivo assim:
+Em seguida, usar o Python para executar o código no arquivo assim:
 
     $ python3 python_intro.py
     Hello, Django girls!
     
 
-Tudo bem! Você acabou de seu primeiro programa em python que foi salvo em um arquivo. Se sente ótima?
+Tudo bem! Você acabou de executar seu primeiro programa em python que foi salvo em um arquivo. Se sente ótima?
 
 Você pode agora passar para uma ferramenta essencial na programação:
 
@@ -502,7 +502,7 @@ Se salvou este e ele foi executado, nós veríamos um erro como este:
     SyntaxError: unexpected EOF while parsing
     
 
-Python espera que fornecemos mais instruções que serão supostamente executadas caso a condição `3 > 2` venha a ser verdadeira (ou `True` nesse caso). Vamos tentar fazer o Python imprimir "It works!". Altere o seu código no seu arquivo **python_intro.py** para isto:
+Python espera que nós forneçamos mais instruções que serão supostamente executadas caso a condição `3 > 2` venha a ser verdadeira (ou `True` nesse caso). Vamos tentar fazer o Python imprimir "It works!". Altere o seu código no seu arquivo **python_intro.py** para isto:
 
 ```python
 if 3 > 2:
@@ -568,7 +568,7 @@ Nos últimos três exercícios você aprendeu:
 
 Se lembra de funções como `len()` que você pode executar no Python? Bem, boas notícias, agora você vai aprender a escrever suas próprias funções!
 
-Uma função é um sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra-chave `def`, seguido de um nome para a função e opcionalmente uma lista de parâmetros. Vamos começar com uma função simples. Substitua o código no **python_intro.py** com o seguinte:
+Uma função é uma sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra-chave `def`, seguido de um nome para a função e opcionalmente uma lista de parâmetros. Vamos começar com uma função simples. Substitua o código no **python_intro.py** com o seguinte:
 
 ```python
 def hi():
@@ -580,7 +580,7 @@ hi()
 
 Ok, nossa primeira função está pronta!
 
-Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa de cima para baixo. Então, para usar a nossa função, temos re-escrevê-lo na parte inferior.
+Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa de cima para baixo. Então, para usar a nossa função, temos de escrevê-lo na parte inferior.
 
 Vamos executa-lo agora e ver o que acontece:
 
@@ -684,7 +684,7 @@ Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fa
 for name in girls:
 ```
 
-O ~~~ for ~~~ declaração se comporta da mesma forma para o ~~~ if ~~~ declaração, código abaixo esses dois precisam ser recuados quatro espaços.
+O `for` se comporta da mesma forma que o `if`, o código abaixo esses dois precisam ser recuados quatro espaços.
 
 Aqui está o código completo que será salvo no arquivo:
 
