@@ -8,7 +8,7 @@
 
 ## Ambiente virtual
 
-Antes de instalarmos o Django, nós iremos instalar uma ferramenta extremamente útil que irá ajudar a manter seu ambiente de desenvolvimento arrumado em seu computador. É possível ignorar este passo, mas é altamente recomendado não começar com a melhor configuração, evitando problemas adiante!
+Antes de instalarmos o Django, nós iremos instalar uma ferramenta extremamente útil que irá ajudar a manter seu ambiente de desenvolvimento arrumado em seu computador. É possível ignorar este passo, mas é altamente recomendado começar com a melhor configuração, evitando problemas adiante!
 
 Então, vamos criar um **ambiente virtual**(também chamado um *virtualenv*). Isso isolará sua configuração Python/Django em uma base por projeto, significa que quaisquer mudanças que fizer em um website não afetará quaisquer outras aplicações que estiver desenvolvendo a parte. Arrumado, certo?
 
@@ -70,7 +70,7 @@ no OS X e no Linux.
 
 Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
 
-> **NOTE:** às vezes `source(fonte)` pode não estar disponível. Nesses casos, tente fazer isso em vez disso:
+> **NOTE:** às vezes `source(fonte)` pode não estar disponível. Nesses casos, tente fazer isso:
 > 
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
