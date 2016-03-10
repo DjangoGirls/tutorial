@@ -19,22 +19,13 @@ Evet! Öncelikle [Django Girls Tutorial: Extensions][3] isimli diğer kitabımı
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öneriyoruz! 
-
- - [Django'nun resmi eğitimi][4]
- - [Kodlamaya Yeni Başlayan (New Coder) eğitimi][5]
- - [Code Academy Python kursu][6]
- - [Code Academy HTML & CSS kursu][7]
- - [Django Carrots eğitimi][8]
- - [Learn Python The Hard Way kitabı][9]
- - [Getting Started With Django görünütülü dersleri][10]
- - [Two Scoops of Django: Best Practices for Django 1.8 kitabı][11]
+Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öneriyoruz! [Django'nun resmi eğitimi][4] - [Kodlamaya Yeni Başlayan (New Coder) eğitimi][5] - [Code Academy Python kursu][6] - [Code Academy HTML & CSS kursu][7] - [Django Carrots eğitimi][8] - [Learn Python The Hard Way kitabı][9] - [Getting Started With Django görünütülü dersleri][10] - [Two Scoops of Django: Best Practices for Django 1.8 kitabı][11]
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
  [6]: http://www.codecademy.com/en/tracks/python
  [7]: http://www.codecademy.com/tracks/web
- [8]: https://github.com/ggcarrots/django-carrots/
+ [8]: http://django.carrots.pl/en/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
  [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8

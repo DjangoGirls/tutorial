@@ -4,11 +4,11 @@
 
 Şimdiye kadar websiteniz sadece kendi makinanızda idi, şimdi yayına nasıl alacağınızı öğreneceksiniz! Yayına alma uygulamanızı internette yayınlama sürecidir, böylelikle insanlar sonunda gidip uygulamanızı görebilirler :).
 
-Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. Internette birçok sunucu sağlayıcı bulunuyor. Görece kolay bir yayına alma süreci olanlardan birini kullanacağız: [PythonAnywhere][1]. PythonAnymwhere çok fazla ziyaretçisi olmayan ufak uygulamalar için ücretisiz yani sizin için kesinlikle yeterli olacaktır.
+Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. Internette birçok sunucu sağlayıcı bulunuyor. Görece kolay bir yayına alma süreci olanlardan birini kullanacağız: [PythonAnywhere][1]. PythonAnymwhere çok fazla ziyaretçisi olmayan ufak uygulamalar için ücretsiz yani sizin için kesinlikle yeterli olacaktır.
 
  [1]: http://pythonanywhere.com/
 
-Dışardan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github][2]. Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
+Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github][2]. Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
 
  [2]: http://www.github.com
 
@@ -18,11 +18,11 @@ Github'ı kodumuzu PythonAnywhere'e taşımak için bir atlama tahtası olarak k
 
 Git, birçok programcı tarafından kullanılan bir "sürüm kontrol sistemi"dir. Bu yazılım dosyaların zaman içindeki değişimlerini izler, böylelikle sonradan eski sürümlere ulaşabilirsiniz. Biraz Microsoft Word'deki "değişiklikleri izle" özelliği gibi, ama çok daha güçlü.
 
-## Git'i Kurmak
+## Git'i kurmak
 
 > **Not** Kurulum adımlarını halihazırda yaptıysanız, bunu tekrar yapmanıza gerek yok - bir sonraki alt bölüme geçip Git reponuzu oluşturabilirsiniz.
 
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 ## Git repomuzu oluşturmak
 
@@ -30,60 +30,62 @@ Git, kod reposu (veya "repository") denen belli dosyaların değişikliklerini i
 
 > **Not** Reponuzu başlatmadan önce, `pwd` (OS/Linux) veya `cd` (Windows) komutu ile bulunduğunuz dizini kontrol edin. `djangogirls` dizininde olmanız gerekiyor.
 
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Adınız"
+    Hatırlatma: Kullanıcı adı seçerken özel Türkçe karakter kullanmayın.
+    $ git init 
+    Initialized empty Git repository in ~/djangogirls/.git/ 
+    $ git config --global user.name "Adınız" 
     $ git config --global user.email you@example.com
+    
 
 Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (ayrıca kullanıcı adı ve eposta adresini tekrar girmenize gerek olmayacak).
 
 Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama takip etmemesini istediğimiz bazı dosyalar var. Bunu dizinin dibinde `.gitignore` adında bir dosya oluşturarak yapıyoruz. Editörünüzü açın ve aşağıdaki içeriklerle yeni bir dosya yaratın:
 
-```
-*.pyc
-__pycache__
-myvenv
-db.sqlite3
-.DS_Store
-```
+    *.pyc
+    __pycache__
+    myvenv
+    db.sqlite3
+    .DS_Store
+    
 
 Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
 > **Not** Dosya adının başındaki nokta önemli! Eğer dosyayı oluştururken zorlanırsanız (örneğin Mac'ler Finder ile nokta ile başlayan dosya yaratmanızdan hoşlanmıyor), editörünüzdeki "Farklı Kaydet" özelliğini kullanın, kesin çalışır.
-> **Not** db.sqlite3 dosyası .gitignore dosyasının içinde belirlediğiniz dosyalardan biridir. Bu dosya yerel -sizin bilgisayarınızdaki- tüm bilgileri depoladığınız veritabanıdır. PythonAnywhere'deki websiteniz farklı bir veritabanı kullanacağından,  bu dosyayı kod reponuza eklemek istemiyoruz. Bu farklı veritabanı SQLite olabilir -sizin geliştirmede kullandığınız gibi- ama genellikle SQLite'dan daha çok site ziyaretçisini kabul edebilen MySQL veritabanını kullanacağız. Ayrıca Github'daki kopyanızda SQLite veritabanınızı göz ardı ettiğinizde, yarattığınız postlar kendi bilgisayarınızda kalarak sadece yerel olarak ulaşılacaktır. Ama bu verileri uygulamanıza (production) ekleyebilirsiniz. Yerel veritabanınızı iyi bir oyun alanı gibi düşünebilirsiniz, farklı şeyler deneyebilecek, blogunuzdaki gerçek postları silmekten korkmayacaksınız.
 
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 
-    $ git status
-    On branch master
-
+    $ git status 
+    On branch master 
+    
     Initial commit
-
+    
     Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-
+      (use "git add <dosya>..." to include in what will be committed)
+    
              .gitignore
              blog/
-           &nbsp; manage.py
-             mysite/
-
+             manage.py
+             mysite/ 
+    
     nothing added to commit but untracked files present (use "git add" to track)
+    
 
-Ve son olarak değişikliklerimizi kaydediyoruz. Konsole gidin ve aşağıdaki komutları çalıştırın:
+Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşağıdaki komutları çalıştırın:
 
     $ git add -A
-    $ git commit -m "My Django Girls app, first commit"
+    $ git commit -m "Django Girls uygulamam, ilk commit"
      [...]
      13 files changed, 200 insertions (+)
      create mode 100644 .gitignore
      [...]
     create mode 100644 mysite/wsgi.py
+    
 
 ## Kodunuzu Github'a gönderme
 
 [GitHub.com>][2] adresine gidin ve kendinize yeni bedava bir kullanıcı hesabı açın. (Bunu atölye hazırlıklarında zaten yaptıysanız, harika!)
 
-Arkasından "my-first-blog" (veya "ilk-blogum") isminde yeni bir repo oluşturun. "Initialize with a README" kutucuğunu işaretlemeden bırakın, .gitignore opsiyonunu boş bırakın (onu elle yaptık) ve 'License'ı 'None' olarak bırakın.
+Arkasından "ilk-blogum" (veya "my-first-blog") isminde yeni bir repo oluşturun. "Initialize with a README" kutucuğunu işaretlemeden bırakın, .gitignore opsiyonunu boş bırakın (onu elle yaptık) ve 'License'ı 'None' olarak bırakın.
 
 ![][3]
 
@@ -99,21 +101,23 @@ Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTP
 
 Şimdi bilgisayarınızdaki Git reposunu Github'daki repo ile ilişkilendirmemiz gerekiyor.
 
-Aşağıdakini konsolounuza yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlini eklemeyin):
+Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlini eklemeyin):
 
-    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
+    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
     $ git push -u origin master
+    
 
-Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer birşey görmeniz gerekiyor:
+Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer bir şey görmeniz gerekiyor:
 
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
+    Username for 'https://github.com': zeynep 
+    Password for 'https://zeynep@github.com': 
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/hjwp/my-first-blog.git
-     * [new branch] master -> master
+    Total 3 (delta 0), reused 0 (delta 0) 
+    To https://github.com/zeynep/my-first-blog.git 
+     * [new branch] master -> master 
     Branch master set up to track remote branch master from origin.
+    
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -126,17 +130,18 @@ Kodunuz artık Github'da. Siteye girin ve kontrol edin! İyi bir çevrede olduğ
 
 > **Not** En baştaki kurulum adımlarında PythonAnywhere hesabını açmış olabilirsiniz - öyleyse bu kısmı tekrar yapmanıza gerek yok.
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "deploy/signup_pythonanywhere.md" %}
 
 ## Kodunuzu PythonAnywhere üzerine çekmek
 
-PythonAnywhere'de hesap açtığınızda, 'dashboard' sayfanıza veya "Consoles" sayfasına yönlendirileceksiniz. "Bash" konsolu başlatma seçeneğini seçin -- bu bilgisayarınızdaki konsolun PythonAnywhere versiyonu.
+PythonAnywhere'de hesap açtığınızda, 'dashboard' (gösterge paneli) sayfanıza veya "Consoles" sayfasına yönlendirileceksiniz. "Bash" konsolu başlatma seçeneğini seçin -- bu bilgisayarınızdaki konsolun PythonAnywhere versiyonu.
 
 > **Not** PythonAnywhere Linux tabanlı, o yüzden kendi makinanız Windows ise konsol biraz farklı gözükecektir.
 
-Reponuzun bir klonunu yaratarak kodumuzu Github'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna yazın (`<github-kullanıcı-adınız>` yerine kendı Github kullanıcı adınızı yazmayı unutmayın):
+Reponuzun bir klonunu yaratarak kodumuzu Github'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna yazın (`<github-kullanıcı-adınız>` yerine kendi Github kullanıcı adınızı yazmayı unutmayın):
 
     $ git clone https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
+    
 
 Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blogum` yazarak kontrol edin:
 
@@ -157,27 +162,26 @@ Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blo
         ├── settings.py
         ├── urls.py
         └── wsgi.py
+    
 
-### PythonAnywhere üzerine bir virtualenv oluşturmak
+### PythonAnywhere üzerine bir virtualenv (sanal ortam) oluşturmak
 
-Bilgisayarınızda nasıl bir virtualenv oluşturduysanız, aynı şekilde PythonAnywhere üzerinde de oluşturabilirsiniz. Bash konsoluna, aşağıdakileri yazın:
+Bilgisayarınızda nasıl bir virtualenv (sanal ortam) oluşturduysanız, aynı şekilde PythonAnywhere üzerinde de oluşturabilirsiniz. Bash konsoluna, aşağıdakileri yazın:
 
-```
-$ cd ilk-blogum
-
-$ virtualenv --python=python3.4 myvenv
-Running virtualenv with interpreter /usr/bin/python3.4
-[...]
-Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(mvenv) $  pip install django whitenoise
-Collecting django
-[...]
-Successfully installed django-1.8.2 whitenoise-2.0
-```
-
+    $ cd ilk-blogum
+    
+    $ virtualenv --python=python3.4 myvenv
+    Running virtualenv with interpreter /usr/bin/python3.4
+    [...]
+    Installing setuptools, pip...done.
+    
+    $ source myvenv/bin/activate
+    
+    (mvenv) $  pip install django whitenoise
+    Collecting django
+    [...]
+    Successfully installed django-1.8.2 whitenoise-2.0
+    
 
 > **Not** `pip install` birkaç dakika sürebilir. Sabır, sabır! Ama 5 dakikadan uzun sürüyorsa, birşeyler yanlış olmuştur. Eğitmeninize sorun.
 
@@ -189,42 +193,45 @@ Successfully installed django-1.8.2 whitenoise-2.0
 
 Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dosyalar konusuna biraz daha fazla gireceğiz.
 
-Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucudaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
+Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucdaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
 
     (mvenv) $ python manage.py collectstatic
-
+    
     You have requested to collect static files at the destination
     location as specified in your settings:
-
-        /home/edith/ilk-blogum/static
-
-    This will overwrite existing files!
-    Are you sure you want to do this?
-
-    Type 'yes' to continue, or 'no' to cancel: yes
+    
+        /home/zeynep/ilk-blogum/static
+    
+    This will overwrite existing files! (Bu işlem halihazırdaki dosyalarınız üzerinde değişiklik yapar!)
+    Are you sure you want to do this? (Bu işlemi yapmak istediğinizden emin misiniz?)
+    
+    Type 'yes' to continue, or 'no' to cancel: yes (Onaylıyorsanız 'yes', vazgeçtiyseniz 'no' yazın)
+    
 
 "yes" yazın ve işte başladı! Bilgisayarlara sayfa sayfa yazı yazdırmayı sevmiyor musunuz? Ben hep beraberinde küçük küçük sesler çıkarırım. Trr, trr, trr...
 
-    Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/ilk-blogum/static'.
+    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    62 static files copied to '/home/zeynep/ilk-blogum/static'.
+    
 
 ### PythonAnywhere üzerinde veritabanının oluşturulması
 
 Bilgisayarınız ve sunucu arasında farklı olan bir başka şey daha: farklı bir veritabanı kullanıyor. Dolayısıyla bilgisayarınızdaki ve sunucudaki kullanıcı hesapları ve blog yazıları farklı olabilir.
 
-Sunucudaki veritabanına aynen bilgisayardaki gibi `migrate` ve `createsuperuser` komutlarıyla oluşturup ilk örnek verilerle ile doldurabiliriz:
+Sunucudaki veritabanına aynen bilgisayardaki gibi `migrate` (taşımak) ve `createsuperuser` (yetkili bir kullanıcı oluşturmak) komutlarıyla oluşturup ilk örnek verilerle ile doldurabiliriz:
 
     (mvenv) $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-
-
+    
+    
     (mvenv) $ python manage.py createsuperuser
+    
 
 ## Blog'umuzu web uygulaması olarak yayınlama
 
@@ -236,7 +243,7 @@ Açılan pencerede alan adınızı kontrol edin, **manual configuration** (elle 
 
 > **Not** "Manual configuration" seçeneğini seçtiğinizden emin olun, "Django" seçeneğini değil. Hazır PythonAnywhere Django kurulumunu seçmek için fazla havalıyız ;-)
 
-### virtualenv'in ayarlanması
+### virtualenv'in (sanal ortamın) ayarlanması
 
 Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına getirecek. Sunucudaki uygulamanızda değişiklik yapmak istediğinizde bu ekranı kullanmanız gerekiyor.
 
@@ -244,7 +251,7 @@ Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına 
 
  [7]: images/pythonanywhere_web_tab_virtualenv.png
 
-"Virtualenv" bölümünde "Enter the path to a virtualenv" (virtualenv için dizin yolu girin) linkini tıklayın ve şunu yazın: `/home/<kullanıcı-adınız>/ilk-blogum/myvenv`. Devam etmeden önce, dizin yolunu kaydetmek için tik işareti olan mavi kutuyu tıklayın.
+"Virtualenv" bölümünde "Enter the path to a virtualenv" (virtualenv için dizin yolu girin) linkini tıklayın ve şunu yazın: `/home/<kullanıcı-adınız>/ilk-blogum/myenv`. Devam etmeden önce, dizin yolunu kaydetmek için tik işareti olan mavi kutuyu tıklayın.
 
 > **Not** İlgili yeri kendi kullanıcı adınızı yazın. Eğer hata yaparsanız, PythonAnywhere size bir uyarı gösterecektir.
 
@@ -252,40 +259,40 @@ Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına 
 
 Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de desteklediği Python kullanan websitelerinin servis edilmesi için kullanılan bir standart. PythonAnywhere'in Django blogumuzu anlaması için WSGI ayar dosyasını düzenleyiyoruz.
 
-"WSGI Configuration file" (WSGI ayar dosyası) linkine tıklayın ("Code" denen kısımda, sayfanın üst tarafında -- adı `/var/www/<kullanıcı-adınız>_pythonanywhere_com_wsgi.py`'a benzer birşey olacak). Burdan bir editöre yönlendirileceksiniz.
+"WSGI Configuration file" (WSGI ayar dosyası) linkine tıklayın ("Code" denen kısımda, sayfanın üst tarafında -- adı `/var/www/<kullanıcı-adınız>_pythonanywhere_com_wsgi.py`'a benzer birşey olacak). Burdan bir edöitöre yönlendirileceksiniz.
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-```python
-import os
-import sys
+    python
+    import os
+    import sys
+    
+    path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burada kendi kullanıcı adınızı yazın
+    if path not in sys.path:
+        sys.path.append(path)
+    
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+    
+    from django.core.wsgi import get_wsgi_application
+    from whitenoise.django import DjangoWhiteNoise
+    application = DjangoWhiteNoise(get_wsgi_application())
+    
 
-path = '/home/<kullanıcı-adınız>/ilk-blogum'  # buraya kendi kullanici adinizi yazin
-if path not in sys.path:
-    sys.path.append(path)
-
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
-```
-
-> **Not** `<kullanıcı-adınız>` diye geçen kısma kendi kullanıcı adınızı yazmayı unutmayın
+> **Not** `<kullanıcı-adınız>` diye geçen kısıma kendi kullanıcı adınızı yazmayı unutmayın
 
 Bu dosyanın işi, PythonAnywhere'e web uygulamamızın nerde yaşadığını ve Django ayar dosyasının adının ne olduğunu söylemek. Aynı zamanda "whitenoise" statik dosya aracını ayarlıyor.
 
 **Save** (kaydet)'e basın. Arkasından **Web** sekmesine geri gidin.
 
-Hazırız! Yeşil ve büyük **Reload** butonuna tıklayın. Uygulamanıza girip görebileceksiniz. Sayfanın tepesinde uygulamaya giden linki bulabilirsiniz.
+Hazırız! Yeşil ve büyük **Reload** (Yeniden yükle) butonuna tıklayın. Uygulamanıza girip görebileceksiniz. Sayfanın tepesinde uygulamaya giden linki bulabilirsiniz.
 
 ## Hata ayıklama önerileri
 
-Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri için ilk bakacağınız yer, **error log**'unuz. Buraya olan linki PythonAnywhere'deki [Web sekme][8]sinde bulabilirsiniz. Burda hata mesajları olup olmadığına bakın; en yeni mesajlar en altta. Sık karşılaşılan problemler şunlar:
+Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri için ilk bakacağınız yer, **error log**'unuz (hata kayıtlarınız). Buraya olan linki PythonAnywhere'deki [Web sekme][8]sinde bulabilirsiniz. Burda hata mesajları olup olmadığına bakın; en yeni mesajlar en altta. Sık karşılaşılan problemler şunlar:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-*   Konsolda yaptığımız adımlardan birinin unutlması: virtualenv'in oluşturulması, çalışır hale getirilmesi, içine Django'nun kurulumu, collectstatic'in çalıştırılması, veritabanının migrate ettirilmesi.
+*   Konsolda yaptığımız adımlardan birinin unutulması: virtualenv'in oluşturulması, çalışır hale getirilmesi, içine Django'nun kurulumu, collectstatic'in çalıştırılması, veritabanının taşınması (migrate ettirilmesi).
 
 *   Web sekmesinde virtualenv dizin yolunda bir hata yapılması -- eğer problem varsa, ilgili yerde küçük kırmızı bir hata mesajı olur.
 
@@ -293,7 +300,7 @@ Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri iç
 
 *   Virtualenv'ınız için seçtiğiniz Python versiyonu web uygulamanız için seçtiğiniz Python versiyonu ile aynı mı? İkisinin de 3.4 olması gerekiyor.
 
-*   [Python Anywhere vikisinde genel hata ayıklama önerileri][9] bulunuyor.
+*   [Python Anywhere vikisinde (bilgi sayfalarında) genel hata ayıklama önerileri][9] bulunuyor.
 
  [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 

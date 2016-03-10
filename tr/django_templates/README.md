@@ -1,106 +1,104 @@
-# Django templateleri(şablonlar) 
+# Django template
 
-Bazı verileri gösterme zamanı! Django bunun için bize bazı faydalı hazır şablon etiketleri sunuyor.
+Bazı verileri gösterme zamanı! Django bunun için bize faydalı bazı yerleşik **template etiketleri** sunuyor.
 
-## Şablon Etiketleri nedir?
+## Template etiketleri nedir?
 
 Görüyoruz ki aslında, HTML'de Python kodu yazamayız, çünkü tarayıcılar bunu anlamaz. Tarayıcılar yalnızca HTML'den anlar. Biliyoruz ki Python daha dinamik bir dil iken, HTML oldukça statiktir.
 
-Django şablon etiketleri Python-benzeri yapıların HTML'e transfer edilmesine olanak sağlar, böylece dinamik web siteleri daha kolay ve hızlı oluşturabiliriz.
+**Django template etiketleri** Python benzeri yapıların HTML'ye aktarılmasını sağlar, böylece dinamik web sitelerini daha kolay ve hızlı oluşturabiliriz!
 
-## Gönderi Listesi Şablonunu Gösterme
+## Gönderi listesi template'ini göster
 
-Bir önceki bölümde, şablonumuza `posts` değişkeni içinde gönderiler listesi verdik. Şimdi, bunu HTML'de göstereceğiz.
+Bir önceki bölümde, template'e `posts` değişkeni içinde gönderiler listesi verdik. Şimdi, bunu HTML'de göstereceğiz.
 
-Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvırcık parantezi içinde şu şekilde kullanırız:
+Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
 
-```html
-{{ posts }}
-```
+    html
+    {{ posts }}
+    
 
-Bunu `blog/templates/blog/post_list.html` template ile deneyelim. İkinci `<div>` den üçüncü `</div>` e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
+Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
 ![Şekil 13.1][1]
 
  [1]: images/step1.png
 
-Sadece bunu görüyoruz:
+Gördüğümüz sadece bu:
 
-    [<Post: İkinci postum>, <Post: Birinci postum>]
+    [<Post: Gönderi 2>, <Post: Gönderi 1>]
     
 
-Django bunu bir liste nesne olarak algılamış. Python'a Giriş'ten listelerin nasıl gösteridiğini hatırlayalım. Evet, döngülerle! Bir Django şablonunda böyle yapılır:
+Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
-```
+    html
+    {% for post in posts %}
+        {{ post }}
+    {% endfor %}
+    
 
-Bunu kendi şablonumuzda deneyelim.
+Bunu kendi template'imizle deneyelim.
 
 ![Şekil 13.2][2]
 
  [2]: images/step2.png
 
-İşe yarıyor! Fakat, bunların daha önce **HTML'e Giriş** bölümde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTLM ve şablon etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
+İşe yarıyor! Fakat bunların daha önce **HTML'ye giriş** bölümünde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTML ve template etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
 
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
+    html
     <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-{% endfor %}
-```
+    
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.yayinlama_tarihi }}</p>
+            <h1><a href="">{{ post.baslik }}</a></h1>
+            <p>{{ post.yazi|linebreaks }}</p>
+        </div>
+    {% endfor %}
+    
 
-{% raw %} `{% for %}` ve `{% endfor %}` arasına koyduğumuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
+{% raw %}`{% for %}` ve `{% endfor %}` arasına koyduğunuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
 ![Şekil 13.3][3]
 
  [3]: images/step3.png
 
-`{{ post.title }}` ve `{{ post.text }}` in biraz farkı şekilde yazıldığı dikkatini çekti mi? `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ek olarak `|linebreaks` postlardaki yeni satırları paragraflara çeviren bir filtreden geçiriyor.
+`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaks` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
 
 ## Bir şey daha
 
-Web sitemizin İnternet'te hala çalıştığını görmek iyi bir fikir, değil mi? PythonAnywhere yükleyelim yine. Adımları hatırlayalım...
+Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil mi? PythonAnywhere yükleyelim yine. Adımları hatırlayalım...
 
 *   İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
-```
-$ git status
-[...]
-$ git add -A .
-$ git status
-[...]
-$ git commit -m "Veritabanındaki postları görebilmek için şablonları değiştirdim."
-[...]
-$ git push
-```
+    $ git status
+    [...]
+    $ git add -A .
+    $ git status
+    [...]
+    $ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."
+    [...]
+    $ git push
+    
 
-*   [PythonAnywhere][4] a bağlanalım ve **Bash konsolu** na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
+*   [PythonAnywhere][4]'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
  [4]: https://www.pythonanywhere.com/consoles/
 
-```
-$ cd my-first-blog
-$ git pull
-[...]
-```
+    $ cd ilk-blogum
+    $ git pull
+    [...]
+    
 
-*   Nihayet [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload** a basalım. Şimdi uygulamamız güncellenmiş olmalı!
+*   Ve son olarak da [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı!
 
  [5]: https://www.pythonanywhere.com/web_app_setup/
 
-Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (published_date eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
+Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlama_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
 
-Mükemmel çalışıyor, değil mi? Kendimizle gurur duyabiliriz! Şimdi bilgisayarımızdan bir süreliğine uzaklaşalım, çünkü bir arayı hak ettik. :)
+Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 
 ![Şekil 13.4][6]
 

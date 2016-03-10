@@ -1,6 +1,6 @@
 # Eğer tutorial'ı evde yapıyorsanız
 
-Eğer tutorial'ı [Django Girls etkinlikleri](http://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [Internet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
+Eğer tutorial'ı [Django Girls etkinlikleri](http://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [İnternet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinlikleri, tutorial sırasında uğraşmamak için herşeyi kurduğumuz bir "kurulum akşamı"nı içeriyor. Bu sayfayı onun için kullanıyoruz.
 
@@ -14,19 +14,19 @@ Atölyede bir blog yapıyor olacaksınız, eğitim günü kodlamaya hazır olman
 
 # Python Yükleyin
 
-{% include "/python_installation/instructions.md" %}
+{% include "python_installation/instructions.md" %}
 
 # Bir "virtualenv" kurun ve Django'yu yükleyin
 
-{% include "/django_installation/instructions.md" %}
+{% include "django_installation/instructions.md" %}
 
-# Bir kod editörü yükleyin
+# Bir kod düzenleyicisi yükleyin
 
-{% include "/code_editor/instructions.md" %}
+{% include "code_editor/instructions.md" %}
 
 # Git yükleyin
 
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 # GitHub hesabı oluşturun
 
@@ -34,7 +34,7 @@ Atölyede bir blog yapıyor olacaksınız, eğitim günü kodlamaya hazır olman
 
 # PythonAnywhere hesabı oluşturun
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "deploy/signup_pythonanywhere.md" %}
 
 # Okumaya başlayın
 

@@ -4,4 +4,4 @@
 
 > **Not** Bunu daha önceki Kurulum bölümünde yapmış olabilirsiniz. Öyleyse, doğrudan bir sonraki bölüme geçebilirsiniz!
 
-{% include "/code_editor/instructions.md" %}
+{% include "code_editor/instructions.md" %}

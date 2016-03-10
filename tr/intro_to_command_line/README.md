@@ -28,7 +28,7 @@ Uygulamalar → Araçlar → Terminal.
 
 Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet'te arayın :)
 
-## Komut İstemcisi
+## İstemci
 
 Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
 
@@ -46,10 +46,6 @@ Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda
 
 > Ufak bir not: sizin durumunuzda bu `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` ve benzeri bir şekilde olabilir ve bu kesinlikle doğru. Bu eğitimde bunu sade ve basit bir şekilde anlatacağız.
 
-Yukarıdaki $ ve > işaretlerini gösteren kısım komut istemcisi ya da kısaca istemci diye adlandırılır. Sizden girdi isteminde bulunur.
-
-Eğitim boyunca, komut yazmanızı istediğimizde $ ve > kısımlarını yazmanıza gerek yok, kalan kısmı yazmanızı isteyeceğiz.
-
 ## İlk komutunuz(Yaşasın!)
 
 Basit bir şeyle başlayalım. Aşağıdaki komutu yazın:
@@ -64,7 +60,7 @@ ya da
 
 Ve ardından `enter` tuşuna basın. Sonucumuz bu:
 
-    $ whoami olasitarska
+    $ whoami zeynep
     
 
 Gördüğünüz gibi, bilgisayar az önce kullanıcı adınızı yazdı. Muntazam, değil mi?:)
@@ -80,13 +76,13 @@ Tüm işletim sistemleri komut satırı için birbirinden biraz farklı komutlar
 Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve `enter` tuşuna basın:
 
     $ pwd
-    /Users/olasitarska
+    /Users/zeynep
     
 
 Windows'ta iseniz:
 
     > cd
-    C:\Users\olasitarska
+    C:\Users\zeynep
     
 
 Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.
@@ -109,7 +105,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 Windows:
 
-    > dir  Directory of C:\Users\olasitarska 
+    > dir  Directory of C:\Users\zeynep 
     05/08/2014 07:28 PM <DIR> Uygulamalar 
     05/08/2014 07:28 PM <DIR> Masaüstü 
     05/08/2014 07:28 PM <DIR> İndirilenler 
@@ -134,13 +130,13 @@ Windows:
 Gerçekten değişmiş mi bir bakalım:
 
     $ pwd
-     /Users/olasitarska/Masaüstü
+    C:\Users\zeynep\Masaüstü
     
 
 Windows:
 
     > cd 
-    C:\Users\olasitarska\Masaüstü
+    C:\Users\zeynep\Masaüstü
     
 
 İşte oldu!
@@ -209,14 +205,14 @@ Windows:
 
 Nerede olduğunuzu kontrol edin:
 
-    $ pwd 
-    /Users/olasitarska/Masaüstü
+    $ pwd
+    C:\Users\zeynep\Masaüstü
     
 
 Windows:
 
     > cd 
-    C:\Users\olasitarska\Masaüstü
+    C:\Users\zeynep\Masaüstü
     
 
 Şimdi `uygulama` dizinini silme vakti:
