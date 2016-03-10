@@ -25,7 +25,7 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
 
 Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
-Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `blog/templates/blog`.
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
