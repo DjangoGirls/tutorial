@@ -69,8 +69,8 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [wikipedia timezones
 Sabit dosyalar için de bir tane yol eklememiz gerekecek (Daha sonra eğitimde sabit dosyalar ve CSS hakkındaki her şeyi öğreneceğiz). Dosyanın *sonuna* en aşağı `STATIC_URL` girdisinin altına gidin ve `STATIC_ROOT` adında bir şey ekleyin:
 
 ```python
-  STATIC_URL = '/static/'
-  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
 ## Veritabanı Kurulumu

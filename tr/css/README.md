@@ -95,9 +95,9 @@ Daha fazla bilgi için [w3schools'da CSS seçicileri][4]ni okuyabilirsin.
 
 Sonrasında, ayrıca HTML şablonumuza (template) bir takım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açın ve en başına şu satırı ekleyin:
 
-    html
-    {% load staticfiles %}
-    
+```html
+{% load staticfiles %}
+```
 
 Burada yaptığımız yalnızca statik dosyaları yüklemek. :) Sonrasında, `<head>` ve `</head>`, tagları arasına, Bootstrap CSS dosyalarına yönelik bağlantılardan sonra (web tarayıcımız dosyaları yazıldıkları sırasıyla okuduğundan, bizim dosyamızdaki kodlar Bootstrap dosyasının içerisindekileri geçersiz kılabilir), şu satırı ekleyin:
 

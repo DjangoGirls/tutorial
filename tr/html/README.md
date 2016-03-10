@@ -40,8 +40,7 @@ Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan b
 
 Template dosyamıza şunları ekleyelim:
 
-```
-html
+```html
 <html>
         <p>Merhaba!</p>
         <p>Çalışıyor!</p>
@@ -71,8 +70,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 
 Örneğin, web sayfasının (title) başlık elemanını `<head>` 'in içine böyle koyabilirsiniz:
 
-```
-html
+```html
 <html>
     <head>
         <title>Zeynep'in blogu</title>

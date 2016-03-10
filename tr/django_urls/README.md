@@ -35,8 +35,7 @@ Gördüğünüz gibi Django bizim için bir şeyler koymuş bile.
 
 Geçen bölümde gittiğimiz admin URL şimdiden burda:
 
-```
-python
+```python
     url(r'^admin/', include(admin.site.urls)),
 ```
 
