@@ -10,6 +10,8 @@ Git'i [git-scm.com](http://git-scm.com/)'den indirin ve yönergeleri izleyin.
 
 Halihazırda yüklü değilse, git'i paket yöneticinizle indirebilirsiniz. Şunlardan birini deneyin:
 
-    sudo apt-get install git
-    # veya
-    sudo yum install git
+```
+sudo apt-get install git
+# veya
+sudo yum install git
+```

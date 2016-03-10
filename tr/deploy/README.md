@@ -30,23 +30,25 @@ Git, kod reposu (veya "repository") denen belli dosyaların değişikliklerini i
 
 > **Not** Reponuzu başlatmadan önce, `pwd` (OS/Linux) veya `cd` (Windows) komutu ile bulunduğunuz dizini kontrol edin. `djangogirls` dizininde olmanız gerekiyor.
 
-    Hatırlatma: Kullanıcı adı seçerken özel Türkçe karakter kullanmayın.
-    $ git init 
-    Initialized empty Git repository in ~/djangogirls/.git/ 
-    $ git config --global user.name "Adınız" 
-    $ git config --global user.email you@example.com
-    
+```
+Hatırlatma: Kullanıcı adı seçerken özel Türkçe karakter kullanmayın.
+$ git init 
+Initialized empty Git repository in ~/djangogirls/.git/ 
+$ git config --global user.name "Adınız" 
+$ git config --global user.email you@example.com
+```
 
 Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (ayrıca kullanıcı adı ve eposta adresini tekrar girmenize gerek olmayacak).
 
 Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama takip etmemesini istediğimiz bazı dosyalar var. Bunu dizinin dibinde `.gitignore` adında bir dosya oluşturarak yapıyoruz. Editörünüzü açın ve aşağıdaki içeriklerle yeni bir dosya yaratın:
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    .DS_Store
-    
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+```
 
 Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
@@ -54,32 +56,34 @@ Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 
-    $ git status 
-    On branch master 
-    
-    Initial commit
-    
-    Untracked files:
-      (use "git add <dosya>..." to include in what will be committed)
-    
-             .gitignore
-             blog/
-             manage.py
-             mysite/ 
-    
-    nothing added to commit but untracked files present (use "git add" to track)
-    
+```
+$ git status 
+On branch master 
+
+Initial commit
+
+Untracked files:
+  (use "git add <dosya>..." to include in what will be committed)
+
+         .gitignore
+         blog/
+         manage.py
+         mysite/ 
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşağıdaki komutları çalıştırın:
 
-    $ git add -A
-    $ git commit -m "Django Girls uygulamam, ilk commit"
-     [...]
-     13 files changed, 200 insertions (+)
-     create mode 100644 .gitignore
-     [...]
-    create mode 100644 mysite/wsgi.py
-    
+```
+$ git add -A
+$ git commit -m "Django Girls uygulamam, ilk commit"
+ [...]
+ 13 files changed, 200 insertions (+)
+ create mode 100644 .gitignore
+ [...]
+create mode 100644 mysite/wsgi.py
+```
 
 ## Kodunuzu Github'a gönderme
 
@@ -103,21 +107,23 @@ Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTP
 
 Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlini eklemeyin):
 
-    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
-    $ git push -u origin master
-    
+```
+$ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
+$ git push -u origin master
+```
 
 Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer bir şey görmeniz gerekiyor:
 
-    Username for 'https://github.com': zeynep 
-    Password for 'https://zeynep@github.com': 
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0) 
-    To https://github.com/zeynep/my-first-blog.git 
-     * [new branch] master -> master 
-    Branch master set up to track remote branch master from origin.
-    
+```
+Username for 'https://github.com': zeynep 
+Password for 'https://zeynep@github.com': 
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0) 
+To https://github.com/zeynep/my-first-blog.git 
+ * [new branch] master -> master 
+Branch master set up to track remote branch master from origin.
+```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -140,48 +146,51 @@ PythonAnywhere'de hesap açtığınızda, 'dashboard' (gösterge paneli) sayfan�
 
 Reponuzun bir klonunu yaratarak kodumuzu Github'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna yazın (`<github-kullanıcı-adınız>` yerine kendi Github kullanıcı adınızı yazmayı unutmayın):
 
-    $ git clone https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
-    
+```
+$ git clone https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
+```
 
 Bu kodunuzun bir kopyasını PythonAnywhere üzerine indirecektir. `tree ilk-blogum` yazarak kontrol edin:
 
-    $ tree ilk-blogum
-    ilk-blogum/
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── migrations
-    │   │   ├── 0001_initial.py
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
+```
+$ tree ilk-blogum
+ilk-blogum/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
 
 ### PythonAnywhere üzerine bir virtualenv (sanal ortam) oluşturmak
 
 Bilgisayarınızda nasıl bir virtualenv (sanal ortam) oluşturduysanız, aynı şekilde PythonAnywhere üzerinde de oluşturabilirsiniz. Bash konsoluna, aşağıdakileri yazın:
 
-    $ cd ilk-blogum
-    
-    $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
-    [...]
-    Installing setuptools, pip...done.
-    
-    $ source myvenv/bin/activate
-    
-    (mvenv) $  pip install django whitenoise
-    Collecting django
-    [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
-    
+```
+$ cd ilk-blogum
+
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(mvenv) $  pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
+```
 
 > **Not** `pip install` birkaç dakika sürebilir. Sabır, sabır! Ama 5 dakikadan uzun sürüyorsa, birşeyler yanlış olmuştur. Eğitmeninize sorun.
 
@@ -195,28 +204,30 @@ Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dos
 
 Şimdilik sadece sunucuda `collectstatic` diye ek bir komut çalıştıracağız. Bu komut, Django'ya sunucdaki bütün statik dosyaları toparlamasını söyler. An itibariyle bunlar çoğunlukla admin sitesini güzelleştiren dosyalar.
 
-    (mvenv) $ python manage.py collectstatic
-    
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-    
-        /home/zeynep/ilk-blogum/static
-    
-    This will overwrite existing files! (Bu işlem halihazırdaki dosyalarınız üzerinde değişiklik yapar!)
-    Are you sure you want to do this? (Bu işlemi yapmak istediğinizden emin misiniz?)
-    
-    Type 'yes' to continue, or 'no' to cancel: yes (Onaylıyorsanız 'yes', vazgeçtiyseniz 'no' yazın)
-    
+```
+(mvenv) $ python manage.py collectstatic
+
+You have requested to collect static files at the destination
+location as specified in your settings:
+
+    /home/zeynep/ilk-blogum/static
+
+This will overwrite existing files! (Bu işlem halihazırdaki dosyalarınız üzerinde değişiklik yapar!)
+Are you sure you want to do this? (Bu işlemi yapmak istediğinizden emin misiniz?)
+
+Type 'yes' to continue, or 'no' to cancel: yes (Onaylıyorsanız 'yes', vazgeçtiyseniz 'no' yazın)
+```
 
 "yes" yazın ve işte başladı! Bilgisayarlara sayfa sayfa yazı yazdırmayı sevmiyor musunuz? Ben hep beraberinde küçük küçük sesler çıkarırım. Trr, trr, trr...
 
-    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/zeynep/ilk-blogum/static'.
-    
+```
+Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+[...]
+Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+Copying '/home/zeynep/ilk-blogum/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+62 static files copied to '/home/zeynep/ilk-blogum/static'.
+```
 
 ### PythonAnywhere üzerinde veritabanının oluşturulması
 
@@ -224,14 +235,15 @@ Bilgisayarınız ve sunucu arasında farklı olan bir başka şey daha: farklı 
 
 Sunucudaki veritabanına aynen bilgisayardaki gibi `migrate` (taşımak) ve `createsuperuser` (yetkili bir kullanıcı oluşturmak) komutlarıyla oluşturup ilk örnek verilerle ile doldurabiliriz:
 
-    (mvenv) $ python manage.py migrate
-    Operations to perform:
-    [...]
-      Applying sessions.0001_initial... OK
-    
-    
-    (mvenv) $ python manage.py createsuperuser
-    
+```
+(mvenv) $ python manage.py migrate
+Operations to perform:
+[...]
+  Applying sessions.0001_initial... OK
+
+
+(mvenv) $ python manage.py createsuperuser
+```
 
 ## Blog'umuzu web uygulaması olarak yayınlama
 
@@ -263,20 +275,21 @@ Django, "WSGI protokolü"nü kullanarak çalışır. WSGI, PythonAnywhere'in de 
 
 Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burada kendi kullanıcı adınızı yazın
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-    
+```
+python
+import os
+import sys
+
+path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burada kendi kullanıcı adınızı yazın
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
 
 > **Not** `<kullanıcı-adınız>` diye geçen kısıma kendi kullanıcı adınızı yazmayı unutmayın
 
