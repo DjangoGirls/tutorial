@@ -125,9 +125,9 @@ Dosyanız şu şekilde gözüküyor olmalı:
 
         {% for post in posts %}
             <div>
-                <p>yayınlanma tarihi: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+                <h1><a href="">{{ post.baslik }}</a></h1>
+                <p>{{ post.yazi|linebreaks }}</p>
             </div>
         {% endfor %}
     </body>
@@ -191,9 +191,9 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 
 ```html
 <div class="post">
-    <p>yayınlanma tarihi: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+    <h1><a href="">{{ post.baslik }}</a></h1>
+    <p>{{ post.yazi|linebreaks }}</p>
 </div>
 ```
 
@@ -254,9 +254,9 @@ Sonra da blog gönderilerimizi gösteren HTML kodunu sınıf bildirimleriyle sar
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>yayınlanma tarihi: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+        <h1><a href="">{{ post.baslik }}</a></h1>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
 ```
@@ -270,10 +270,10 @@ bununla değiştirelim:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        {{ post.yayinlama_tarihi }}
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <h1><a href="">{{ post.baslik }}</a></h1>
+                    <p>{{ post.yazi|linebreaks }}</p>
                 </div>
             {% endfor %}
         </div>
