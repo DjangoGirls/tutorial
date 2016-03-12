@@ -72,7 +72,7 @@ Par exemple, vous pouvez donner un titre à votre site en utilisant l'élément 
 ```html
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Le Blog d'Ola</title>
     </head>
     <body>
         <p>Hi there!</p>
@@ -138,8 +138,8 @@ Voici un exemple de template utilisant plusieurs balises :
 
 Nous avons créé trois sections à l'aide de `div`.
 
-*   Le premier `div` contient le titre de notre blogpost - c'est à la fois un titre et un lien
-*   Les deux autres `div` contiennent nos blogposts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre blogpost.
+*   Le premier `div` contient le titre de notre blog - c'est à la fois un titre et un lien
+*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 

@@ -203,7 +203,8 @@ Windows :
     > cd ..
     
 
-Grâce à `...` et la commande `cd`, vous pouvez aller directement dans le dossier parent de votre répertoire courant (c'est à dire le dossier qui contient le dossier dans lequel vous étiez).
+
+Grâce à `..` et la commande `cd`, vous pouvez aller directement dans le dossier parent de votre répertoire courant (c'est à dire le dossier qui contient le dossier dans lequel vous étiez).
 
 Vérifiez où vous êtes :
 

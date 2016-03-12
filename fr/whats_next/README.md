@@ -19,7 +19,7 @@ Jetez un coup d’œil à notre autre livre, [Django Girls Tutorial: Extensions]
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-Ensuite, vous pouvez essayer les ressources listée ci-dessous. Elles sont toutes recommandables !
+Ensuite, vous pouvez essayer les ressources listées ci-dessous. Elles sont toutes recommandables !
 - [Django's official tutorial][4]
 - [New Coder tutorials][5]
 - [Code Academy Python course][6]
