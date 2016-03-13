@@ -44,6 +44,6 @@
 
   * [Введение в командную строку](../intro_to_command_line/README.md)
 
-  * [Введение в Python](../intro_to_command_line/README.md)
+  * [Введение в Python](../python_introduction/README.md)
 
   * [Что же представляет из себя Django?](../django/README.md)
