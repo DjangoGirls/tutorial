@@ -37,17 +37,17 @@ Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakal
 
 ### Django'da statik dosyaları nereye koymalı
 
-
-`collectstatic` sunucu da çalıştırdığımızda, gördüğümüz gibi Django "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi kendi yerleşik uygulamamız `blog`için statik dosyalar eklemeliyiz.
+Sunucuda `collectstatic` komutunu çalıştırdığımız zaman gördüğün gibi, Django dahili "admin" uygulaması için statik dosyaların nerede olduğunu biliyor. Şimdi de bizim kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
 
 Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
 
-    djangogirls
-    ├── blog
-    │   ├── migrations
-    │   └── static
-    └── mysite
-    
+```
+djangogirls
+├── blog
+│   ├── migrations
+│   └── static
+└── mysite
+```
 
 Django uygulama klasörlerinizin altındaki "static" isimli tüm klasörleri otomatik olarak bulacak ve içindekileri statik dosya olarak kullanabilecektir.
 
@@ -55,12 +55,13 @@ Django uygulama klasörlerinizin altındaki "static" isimli tüm klasörleri oto
 
 Şimdi web sayfamıza kendi stilimizi eklemek için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluşturalım. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
 
-    djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
-    
+```
+djangogirls
+└─── blog
+     └─── static
+          └─── css
+               └─── blog.css
+```
 
 Şimdi CSS yazma zamanı! `blog/static/css/blog.css` dosyasını kod editöründe açın.
 
@@ -78,11 +79,11 @@ Ancak az da olsa yapalım. Acaba başlığımızın rengini mi değiştirsek? Bi
 h1 a {
     color: #FCA205;
 }
-```
+``` 
 
 `h1 a` bir CSS Seçicisidir (Selector). Bu demek oluyor ki biz stilimizi, bir `h1` öğesi içerisinde olan tüm `a` öğelerine (örneğin kodumuzun içerisinde `<h1><a href="">link</a></h1>` gibi bir şey olduğunda) uyguluyoruz. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `class` (sınıf) özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Class ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
 ```html
 <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -98,7 +99,7 @@ Sonrasında, ayrıca HTML şablonumuza (template) bir takım CSS eklemeleri yapt
 {% load staticfiles %}
 ```
 
-Burada yaptığımız yalnızca statik dosyaları yüklemek. :) Sonrasında, `<head>` ve `</head>`, tagları arasına, Bootstrap CSS dosyalarına yönelik linklerden sonra (web tarayıcımız bu satırları yazıldıkları sırası içerinde okuduğundan, bizim dosyamızdaki kodlar Bootstrap dosyasının içerisindekileri geçersiz kılabilir), eklemelisiniz:
+Burada yaptığımız yalnızca statik dosyaları yüklemek. :) Sonrasında, `<head>` ve `</head>`, tagları arasına, Bootstrap CSS dosyalarına yönelik bağlantılardan sonra (web tarayıcımız dosyaları yazıldıkları sırasıyla okuduğundan, bizim dosyamızdaki kodlar Bootstrap dosyasının içerisindekileri geçersiz kılabilir), şu satırı ekleyin:
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -139,7 +140,7 @@ Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
 
  [5]: images/color2.png
 
-Güzel, belki sitemize biraz hava verebiliriz. Sol taraftaki kenar boşluğunu (margin'i) arttırabiliriz. Hadi deneyelim!
+Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu (margin'i) arttırsak mı? Hadi deneyelim!
 
 ```css
 body {
@@ -153,13 +154,13 @@ Bunu CSS dosyanıza ekleyin, dosyayı kaydedin ve nasıl çalıştığını gör
 
  [6]: images/margin2.png
 
-Belki de başlığımızın yazı tipini değiştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` etiketi arasına kopyalayın:
+Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` bölümüne yapıştırın:
 
 ```html
 <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Bu satır Google Font'larından (https://www.google.com/fonts) *Lobster*'ı sayfamıza aktarır.
+Bu satır *Lobster* adlı bir fontu Google Fonts (https://www.google.com/fonts) sitesinden sayfamıza aktarır.
 
 Şimdi `blog/static/css/blog.css` dosyamızdaki `h1 a` deklarasyon bloğunun içine (`{` ve `}` kodları arasına) `font-family: 'Lobster';` satırını ekleyip sayfayı yenileyin:
 
@@ -176,7 +177,7 @@ h1 a {
 
 Harika!
 
-Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir parçasına isim vermenize yarar ve yalnızca o parçanın stilini değiştirirken diğer parçaların etkilenmemesini sağlar. İki tane div'inizin olması son derece yararlı, fakat ikisi da son derece farklı şeyler yapıyorlar (örneğin biri başlık diğeri gönderinin metni), bu nedenle ikisinin de aynı gözükmesini istemezsin.
+Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir parçasına isim vermenize yarar ve yalnızca o parçanın stilini değiştirirken diğer parçaların etkilenmemesini sağlar. İki div'iniz var diyelim; fakat çok farklı şeyler yapıyorlarsa (örneğin biri başlık diğeri gönderinin metni) ve bu nedenle de aynı şekilde gözükmelerini istemiyorsanız, sınıflar müthiş yararlıdır.
 
 Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
 
@@ -186,17 +187,17 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 </div>
 ```
 
-Şimdi de blog postunu içeren `div`'e `post` isimli bir class ekleyelim.
+Şimdi de gönderi metnini içeren `div`'e `post` isimli bir sınıf ekleyelim.
 
 ```html
 <div class="post">
-    <p>yayınlanma tarihi: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
+    <h1><a href="">{{ post.baslik }}</a></h1>
+    <p>{{ post.yazi|linebreaks }}</p>
 </div>
 ```
 
-Şimdi farklı seçicilere (selector'lara) deklarasyon blokları ekleyeceğiz. `.` ile başlayan seçiciler (selector'lar) sınıflara işaret eder. Aşağıdaki kodu anlamanıza yardıcı olacak CSS hakkında pek çok tutorial ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
+Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
 
 ```css
 .page-header {
@@ -248,7 +249,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklarasyonları ile saralım. Aşağıdaki kodları değiştirin:
+Sonra da blog gönderilerimizi gösteren HTML kodunu sınıf bildirimleriyle saralım. <0>blog/templates/blog/post_list. html</0> dosyasındaki şu kodu atıp:
 
 ```html
 {% for post in posts %}
@@ -260,7 +261,7 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
 {% endfor %}
 ```
 
-`blog/templates/blog/post_list.html` dosyasının içierisindeki kodu bununla:
+bununla değiştirelim:
 
 ```html
 <div class="content container">
@@ -280,7 +281,7 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
 </div>
 ```
 
-Bu dosyaları kaydedin ve websayfanızı yenileyin.
+Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
 ![Şekil 14.4][8]
 
@@ -288,7 +289,7 @@ Bu dosyaları kaydedin ve websayfanızı yenileyin.
 
 Heyo! Harika görünüyor, değil mi? Yapıştırdığımız bu kodları anlamak pek de zor değil. Büyük bir kısmını sırf okuyarak anlayabilirsiniz.
 
-Css ile oynamaktan korkmayın. Birşeyleri değiştirmeyi deneyin. Bir şeylerin bozulduğunu düşünürseniz, yaptığınızı her zaman geri alabilirsiniz!
+CSS ile biraz oynamaktan korkmayın ve bazı şeyleri değiştirmeyi deneyin. Bir şeyi bozarsanız tasalanmayın, yaptığınızı her zaman geri alabilirsiniz!
 
 Her durumda atölye sonrası ödevi olarak ücretsiz [Codeacademy HTML & CSS Kursu][2]'nu, websayfanızı CSS ile güzelleştirmeyi öğrenmek için almanızı tavsiye ediyoruz.
 

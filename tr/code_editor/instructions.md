@@ -4,7 +4,7 @@ Bizim önerilerimizi aşağıda bulabilirsiniz, fakat eğitmenlerinize onların 
 
 ## Gedit
 
-Gedit açık kaynaklı, özgür yazılım editörüdür. Tüm işletim sistemlerinde kullanılabilir.
+Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde kullanılabilir.
 
 [Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -16,7 +16,7 @@ Sublime Text ücretsiz deneme sürümüne sahip oldukça popüler bir editördü
 
 ## Atom
 
-Atom [GitHub](http://github.com/) tarafından geliştirilen oldukça yeni bir editör. Atom özgür, açık kaynak kodlu, kurulumu ve kullanımı basit bir editördür. Windows, OSX ve Linux işletim sistemlerinde kullanılabilir.
+Atom [GitHub](http://github.com/) tarafından geliştirilen oldukça yeni bir editör. Atom ücretsiz, açık kaynak kodlu, kurulumu ve kullanımı basit bir editördür. Windows, OSX ve Linux işletim sistemlerinde kullanılabilir.
 
 [Buradan indirin](https://atom.io/)
 
