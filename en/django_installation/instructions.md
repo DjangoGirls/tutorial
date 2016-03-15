@@ -90,10 +90,10 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django
 
-Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a double equal sign: `==`).
+Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a tilde then equal sign: `~=`).
 
     (myvenv) ~$ pip install django~=1.9.0
-    Downloading/unpacking django==1.9
+    Downloading/unpacking django~=1.9.0
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
