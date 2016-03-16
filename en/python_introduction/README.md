@@ -674,6 +674,8 @@ Congratulations! You just learned how to write functions! :)
 
 ## Loops
 
+> For readers at home: this part is covered in [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+
 This is the last part already. That was quick, right? :)
 
 Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
