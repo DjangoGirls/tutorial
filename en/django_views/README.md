@@ -17,7 +17,11 @@ from django.shortcuts import render
 ```
 
 
-Not too much stuff here yet. The simplest *view* can look like this.
+Not too much stuff here yet.
+
+Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+
+The simplest *view* can look like this.
 
 ```python
 def post_list(request):

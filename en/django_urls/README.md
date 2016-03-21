@@ -15,26 +15,26 @@ Every page on the Internet needs its own URL. This way your application knows wh
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
 ```python
-from django.conf.urls import include, url
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'mysite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
 As you can see, Django already put something here for us.
 
-Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+Lines between triple quotes (`'''` or `"""`) are called docstrings - you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
 The admin URL, which you visited in previous chapter is already here:
 
 ```python
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ```
 
 It means that for every URL that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file -- it's more readable and cleaner.
@@ -69,7 +69,7 @@ Time to create our first URL! We want 'http://127.0.0.1:8000/' to be a homepage 
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
+Go ahead, add a line that will import `blog.urls` into the main url (`''`). Note that we are using the `include` function here so you will need to add that to the import on the first line of the file.
 
 Your `mysite/urls.py` file should now look like this:
 
@@ -78,7 +78,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
 ]
 ```
