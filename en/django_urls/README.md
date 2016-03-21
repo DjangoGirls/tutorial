@@ -111,13 +111,13 @@ As you can see, we're now assigning a `view` called `post_list` to `^$` URL. Thi
 
 The last part `name='post_list'` is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-Everything all right? 
+Everything all right? If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. It's not running anymore, huh? Take a look at your server console window.
 
 ![Error](images/error1.png)
 
 Your console will return an error but don't worry! It's nothing to be scared of! They're actually pretty useful:
 
-You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
+It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. No worries, we will get there.
 
 > If you see "This web page is not available" in your browser, check your web server console (the one from `python manage.py runserver`). If you've stopped your web server (with Ctrl-C), or if the server re-loaded itself (it's smart like that), this error may be in your console... which is a good thing!
 
