@@ -20,7 +20,7 @@ Para este tutorial usaremos um novo diretório`djangogirls` do seu diretório ho
     cd djangogirls
     
 
-Nós vamos fazer um virtualenv chamado `meuenv`. O formato geral desse comando é:
+Nós vamos fazer um virtualenv chamado `myvenv`. O formato geral desse comando é:
 
     python3 -m venv myvenv
     
