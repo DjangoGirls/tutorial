@@ -157,7 +157,8 @@ Cuando te hayas registrado en PythonAnywhere serás redirigida a tu panel de con
 Descarguemos nuestro código desde GitHub a PythonAnywhere mediante la creación de un "clon" del repositorio. Escribe lo siguiente en la consola de PythonAnywhere:
 
     $ git clone https://github.com/<tu-usuario-github>/my-first-blog.git
-    
+
+> **Nota**: No pongas los símbolos < y >, solo escribe tu usuario.
 
 Esto va a descargar una copia de tu código en PythonAnywhere. Compruébalo escribiendo:
 
@@ -265,9 +266,9 @@ Serás redirigida a la pantalla de configuración de PythonAnywhere para tu apli
 
  [10]: images/pythonanywhere_web_tab_virtualenv.png
 
-En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: `/home/<-tu-usuario->/my-first-blog/myvenv/`
+En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: `/home/<tu-usuario>/my-first-blog/myvenv/`
 
-> **Nota**: sustituye tu propio nombre de usuario como corresponda. Si cometes un error, PythonAnywhere te mostrará una pequeña advertencia.
+> **Nota**: sustituye tu propio nombre de usuario como corresponda. Si cometes un error, PythonAnywhere te mostrará una pequeña advertencia. ¡No olvides no teclear los simbolos < y >!
 
 ### Configurar el fichero WSGI
 
@@ -281,7 +282,7 @@ Elimina todo el contenido actual y reemplázalo con algo como esto:
     import os
     import sys
     
-    path = '/home/<tu-usuario>/my-first-blog'  # aquí utiliza tu propio usuario
+    path = '/home/<tu-usuario>/my-first-blog'  # aquí utiliza tu propio usuario, sin los simbolos < y >
     if path not in sys.path:
         sys.path.append(path)
     

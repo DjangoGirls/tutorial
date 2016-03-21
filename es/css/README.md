@@ -52,7 +52,7 @@ Django encontrará automáticamente cualquier carpeta que se llame "static" dent
 
 ## ¡Tu primer fichero CSS!
 
-Creemos un fichero CSS ahora, para añadir tu propio estilo a tu página web. Crear un nuevo directorio llamado `css` dentro de tu directorio `static`. Después crea un nuevo fichero llamado `blog.css` dentro de este directorio `css`. ¿Lista?
+Crea un nuevo directorio llamado `css` dentro de tu directorio `static`. Para añadir tu propio estilo a tu página web, crea un nuevo fichero llamado `blog.css` dentro de este directorio `css`. ¿Lista?
 
     djangogirls
     └─── blog

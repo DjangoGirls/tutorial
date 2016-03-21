@@ -6,13 +6,15 @@
 
  [1]: http://django-marcador.keimlink.de/
 
-Vamos a crear un simple blog!
+¡Vamos a crear un simple blog!
 
-El primer paso para crearlo es para iniciar un nuevo proyecto en Django. Básicamente, esto significa que podrás correr algunos scripts proporcionados por Django que crearán el esqueleto de un proyecto para nosotros: un montón de directorios y archivos que vamos a utilizar más adelante.
+El primer paso para crearlo es iniciar un nuevo proyecto en Django. Básicamente, esto significa que podrás correr algunos scripts proporcionados por Django que crearán el esqueleto de un proyecto para nosotros: un montón de directorios y archivos que vamos a utilizar más adelante.
 
 Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es una buena idea. Django tiene que mantener una cierta estructura para ser capaz de encontrar cosas importantes.
 
 > Recuerda correr todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **Instalación de Django** en la sección **Trabajando con virtualenv**. Puedes hacerlo escribiendo el siguiente comando: `myvenv\Scripts\activate` en Windows o `source myvenv/bin/activate` en Mac OS / Linux.
+> 
+> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
 
 En la consola debes ejecutar (recuerda no escribir `(myvenv) ~/djangogirls$`, ¿ok?):
 
@@ -101,7 +103,7 @@ Debes estar en el directorio que contiene el archivo `manage.py` (en la carpeta 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Ahora todo lo que debes hacer es controlar que tu sitio esté corriendo - abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) e ingresa la dirección:
+Ahora todo lo que debes hacer es verificar que tu sitio esté corriendo - abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) e ingresa la dirección:
 
     http://127.0.0.1:8000/
     

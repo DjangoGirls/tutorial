@@ -4,7 +4,7 @@ En este capítulo aprenderás cómo Django se conecta a la base de datos y almac
 
 ## ¿Qué es un QuerySet?
 
-Un QuerySet es, en esencia, una lista de objetos de un modelo determinado. Un QuerySet te permite leer los datos de base de datos, filtrarlos y ordenarlos.
+Un QuerySet es, en esencia, una lista de objetos de un modelo determinado. Un QuerySet te permite leer los datos de una base de datos, filtrarlos y ordenarlos.
 
 Es más fácil de aprender con ejemplos. Vamos a intentarlo, ¿de acuerdo?
 
@@ -81,7 +81,7 @@ Ahora finalmente podemos crear nuestro primer post:
 ¡Hurra! ¿Quieres probar si funcionó?
 
     >>> Post.objects.all()
-    [<Post: Sample title>]
+    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
     
 
 ### Agrega más posts
@@ -106,7 +106,9 @@ Una parte importante de los QuerySets es la habilidad para filtrarlos. Digamos q
 
 También puedes obtener una lista de todos los posts publicados. Lo hacemos filtrando los posts que tienen el campo `published_date` en el pasado:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 Desafortunadamente, ninguno de nuestros posts han sido publicados todavía. ¡Vamos a cambiar esto! Primero obtén una instancia de un post que querramos publicar:
 
