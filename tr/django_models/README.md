@@ -110,7 +110,6 @@ INSTALLED_APPS = (
 Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
 ```
-python
 from django.db import models
 from django.utils import timezone
 
