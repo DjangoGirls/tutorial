@@ -71,7 +71,7 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 `pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>\d+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>\d+)`.
 
-Ok, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! Yet another error! As expected!
+Ok, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console - as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
