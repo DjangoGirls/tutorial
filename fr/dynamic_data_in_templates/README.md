@@ -28,7 +28,8 @@ Ok, et après ? Afin de pouvoir aller chercher les véritables posts de blog de 
 
 ## QuerySet
 
-Normalement, ce mot doit vous évoquer quelque chose. Nous en avons un peu parlé dans la section [Django ORM (QuerySets)][1].</p> 
+Normalement, ce mot doit vous évoquer quelque chose. Nous en avons un peu parlé dans la section [Django ORM (QuerySets)][1].
+
 Maintenant, nous allons nous intéresser à une liste de blog posts qui sont publiés et classés par date de publication (`published_date`). Ça tombe bien, on a déjà fait ça dans la section sur les QuerySets !
 
 ```python
@@ -53,7 +54,7 @@ Notez aussi que notre code utilise la fonction `timezone.now()` que nous allons 
 
 Il nous manque encore un petit quelque chose : passer notre QuerySet `posts` à notre template. Nous intéresserons plus particulièrement à celui-ci dans la section suivante.
 
-Dans la fonction `render`, nous avons déjà un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un fichier template appelé `'blog/post_list.html'`. Le dernier paramètre, qui ressemble à `{}`, va nous permettre de glisser des instructions que notre template va suivre. Nous avons par exemple de lui donner des noms : nous allons rester sur `'posts'` pour le moment :). Ça va ressembler à ça : `{'posts': posts}`. La partie située avant `:` est une chaine de caractères : vous devez donc l'entourer de guillemets `''`.
+Dans la fonction `render`, nous avons déjà un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un fichier template appelé `'blog/post_list.html'`. Le dernier paramètre, qui ressemble à `{}`, va nous permettre de glisser des instructions que notre template va suivre. Nous avons par exemple de lui donner des noms : nous allons rester sur `'posts'` pour le moment :). Ça va ressembler à ça : `{'posts': posts}`. La partie située avant `:` est une chaîne de caractères : vous devez donc l'entourer de guillemets `''`.
 
 Au final, notre fichier `blog/views.py` doit ressembler à ceci maintenant :
 

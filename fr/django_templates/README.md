@@ -99,7 +99,7 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
 
 Félicitations ! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration ? N'oubliez pas d'ajouter une date de publication ! Ensuite, rafraîchissez votre page et regardez si votre post apparaît.
 
-Ça a marché ? Nous sommes super fière de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
+Ça a marché ? Nous sommes super fières de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
 
 ![Figure 13.4][6]
 
