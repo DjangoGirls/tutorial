@@ -99,7 +99,7 @@ Now that you have your `virtualenv` started, you can install Django using `pip`.
     Cleaning up...
 
 on Windows
-> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does please consider moving it to another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). After the move please try the above command again.
+> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does please consider using another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 on Windows 8 and Windows 10
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
