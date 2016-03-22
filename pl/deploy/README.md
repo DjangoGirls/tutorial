@@ -20,7 +20,7 @@ Git jest "systemem kontroli wersji", którego używa wielu programistów. Progra
 
 ## Instalacja Gita
 
-> **Uwaga** Jeśli już wcześniej przeszłaś kroki instalacyjne, nie musisz ich powtarzać - przejdź od razu do następnego podrozdziału, żeby stworzyć repozytrorium Git.
+> **Uwaga** Jeśli już wcześniej przeszłaś kroki instalacyjne, nie musisz ich powtarzać - przejdź od razu do następnego podrozdziału, żeby stworzyć repozytorium Git.
 
 {% include "/deploy/install_git.md" %}
 
