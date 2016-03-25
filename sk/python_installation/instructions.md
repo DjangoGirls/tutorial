@@ -4,7 +4,7 @@ Django je napísané v Pythone. Python potrebujeme na všetko, čo chceme robiť
 
 ### Windows
 
-Python pre Windows si môžeš stiahnuť z webstránky https://www.python.org/downloads/release/python-343/. Po stiahnutí súboru ***.msi**, ho spusti (dvojklikom) a postupuj podľa inštrukcií. Je dôležité zapamätať si cestu (adresár), kde je nainštalovaný Python. Ešte to budeme potrebovať!
+Python pre Windows si môžeš stiahnuť z webstránky https://www.python.org/downloads/release/python-343/. Po stiahnutí súboru ***.msi***, ho spusti (dvojklikom) a postupuj podľa inštrukcií. Je dôležité zapamätať si cestu (adresár), kde je nainštalovaný Python. Ešte to budeme potrebovať!
 
 Jedna vec, na ktorú si treba dať pozor: na druhej obrazovke sprievodcu inštaláciou, označenej ako "Prispôsobiť" (Customize), nezabudni prejsť dole a vybrať možnosť "Pridať python.exe do Cesty", takto:
 
