@@ -4,12 +4,12 @@ Na pridávanie, editovanie a mazanie postov, ktoré sme práve namodelovali, bud
 
 Otvorme súbor `blog/admin.py` a nahraďme jeho obsah týmto:
 
-    python
+```python
     from django.contrib import admin
     from .models import Post
     
     admin.site.register(Post)
-    
+```  
 
 Ako vidíš, importujeme model Post definovaný v predchádzajúcej kapitole. Aby bol náš model viditeľný na adminskej stránke, musíme ho zaregistrovať pomocou `admin.site.register(Post)`.
 
@@ -21,13 +21,14 @@ OK, je čas pozrieť sa na náš Post model. Nezabudni v konzole spustiť web se
 
 Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontrolu nad všetkým na stránke. Vráť sa do príkazového riadku, napíš `python manage.py createsuperuser` a stlač enter. Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. Ak nevidíš heslo, ktoré zadávaš, tým sa netráp - tak to má byť. Len ho zadaj a pokračuj stlačením `enter`. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
 
+```
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
     Email address: admin@admin.com
     Password:
     Password (again):
     Superuser created successfully.
-    
+```    
 
 Vráť sa do prehliadača. Prihlás sa zvolenými údajmi ako superuser, mala by sa ti zobraziť nástenka (dashboard) Django admina.
 

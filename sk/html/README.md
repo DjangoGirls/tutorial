@@ -18,10 +18,11 @@ Vytvorenie šablóny znamená vytvorenie súboru šablóny.
 
 Šablóny sú uložené v zložke `blog/templates/blog`. Takže najprv vytvor v zložke blogu zložku s názvom `templates`. Potom vytvor ďalšiu zložku s názvom `blog` v zložke templates:
 
+```
     blog
     └───templates
         └───blog
-    
+```  
 
 (Možno sa pýtaš prečo potrebujeme dve zložky s menom `blog` - ako neskôr zistíš, je to len užitočna konvencia, ktorá ti uľahčí život keď veci začnú byť komplikovanejšie.)
 
@@ -39,12 +40,12 @@ Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
 Pridaj nasledujúci kód do tvojho súboru šablóny:
 
-    html
+```html
     <html>
         <p>Ahoj!</p>
         <p>Funguje to!</p>
     </html>
-    
+```  
 
 Takže ako momentálne vyzerá tvoja stránka? To môžeš zistiť kliknutím na: http://127.0.0.1:8000/
 
@@ -69,7 +70,7 @@ Každá HTML stránka je taktiež rozdelená do dvoch elementov: **head** a **bo
 
 Napríklad môžeš dať stránke titulok za použitia title elementu vo vnútri `<head>` takto:
 
-    html
+```html
     <html>
         <head>
             <title>Ola's blog</title>
@@ -79,7 +80,7 @@ Napríklad môžeš dať stránke titulok za použitia title elementu vo vnútri
             <p>Funguje to!</p>
         </body>
     </html>
-    
+```  
 
 Ulož súbor a znova načítaj svoju stránku.
 
@@ -111,7 +112,7 @@ Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je 
 
 Tu je príklad celej šablóny:
 
-    html
+```html
     <html>
         <head>
             <title>Django Girls blog</title>
@@ -120,13 +121,13 @@ Tu je príklad celej šablóny:
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">Môj prvý príspevok</a></h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             </div>
-    
+
             <div>
                 <p>published: 14.06.2014, 12:14</p>
                 <h2><a href="">Môj druhý príspevok</a></h2>
@@ -134,7 +135,7 @@ Tu je príklad celej šablóny:
             </div>
         </body>
     </html>
-    
+```  
 
 Vytvorili sme tri `div` sekcie.
 
@@ -159,32 +160,37 @@ Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na Internete
 
 Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto príkazy spusti lokálne, nie na PythonAnywhere):
 
+```
     $ git status
-    
+```  
 
 Uisti sa, že si v zložke `djangogirls` a následne povedzme `gitu` nech zahrnie všetky zmeny v zložke:
 
+```
     $ git add -A .
-    
+```  
 
 > **Poznámka** - `-A` (skratka pre "all" (všetko)) znamená, že `git` rozozná, ak si vymazala súbory (štandardne rozoznáva len nové/modifikované súbory). Pamätaj si tiež (bolo to v kapitole 3), že `.` znamená aktuálny adresár.
 
 Predtým, ako nahrajeme všetky súbory, skontrolujme čo bude `git` nahrávať (všetky súbory, ktoré `git` nahraje by teraz mali byť zelené):
 
+```
     $ git status
-    
+```  
 
 Už sme skoro tam, teraz nastal čas mu povedať, aby uložil tieto zmeny v jeho histórii. Dáme mu "commit správu", kde popíšeme, čo sme zmenili. V tomto štádiu môžeš napísať čokoľvek, čo chceš, ale je nápomocné napísať čosi, čo je popisné natoľko, že si budeš v budúcnosti pamätať, čo si spravila.
 
+```
     $ git commit -m "Zmeny v HTML pre stránku."
-    
+```
 
 > **Poznámka** - Uisti sa, že si použila dvojité úvodzovky okolo commit správy.
 
 Po tom, čo sme to dokončili, nahrajeme (push) naše zmeny na Github:
 
+```
     git push
-    
+```  
 
 ### Stiahni svoj kód na PythonAnywhere a obnov svoju webovú aplikáciu
 
@@ -192,13 +198,14 @@ Po tom, čo sme to dokončili, nahrajeme (push) naše zmeny na Github:
 
  [5]: https://www.pythonanywhere.com/consoles/
 
+```
     $ cd ~/my-first-blog
     $ source myvenv/bin/activate
     (myvenv)$ git pull
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+```  
 
 A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
 

@@ -10,16 +10,17 @@ Základná šablóna je jednoducho šablóna, ktorú rozširuješ na každej str
 
 Vytvorme súbor `base.html` v `blog/templates/blog/`:
 
+```
     blog
     └───templates
         └───blog
                 base.html
                 post_list.html
-    
+```
 
 Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
 
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -51,11 +52,11 @@ Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
             </div>
         </body>
     </html>
-    
+```  
 
 Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) týmto:
 
-    html
+```html
     <body>
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -69,20 +70,20 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
             </div>
         </div>
     </body>
-    
+```    
 
 V podstate sme nahradili všetko medzi `{% for post in posts %}{% endfor %}` týmto:
 
-    html
+```html
     {% block content %}
     {% endblock %}
-    
+```    
 
 Čo to znamená? Práve si vytvorila `block` (blok), čo je vlastne šablóna tagov, ktorá ti umožní vkladať HTML v tomto bloku do ďalších šablón, ktoré rozširujú `base.html`. Hneď ti ukážeme, ako sa to robí.
 
 Teraz to ulož a znova otvor `blog/templates/blog/post_list.html`. Zmaž všetko, okrem toho, čo je vnútri body a tiež zmaž `<div class="page-header"></div>`, takže súbor bude vyzerať takto:
 
-    html
+```html
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -92,16 +93,17 @@ Teraz to ulož a znova otvor `blog/templates/blog/post_list.html`. Zmaž všetko
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
-    
+```    
 
 A teraz pridaj tento riadok na začiatok súboru:
 
+```html
     {% extends 'blog/base.html' %}
-    
+```    
 
 {% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock content %}`. Takto:{% endraw %}
 
-    html
+```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -115,7 +117,7 @@ A teraz pridaj tento riadok na začiatok súboru:
             </div>
         {% endfor %}
     {% endblock content %}
-    
+```  
 
 A je to! Skontroluj či tvoja web stránka funguje tak, ako má :)
 

@@ -16,18 +16,18 @@ Každá stránka na internete potrebuje svoju vlastnú URL. Týmto spôsobom apl
 
 Otvorme súbor `mysite/urls.py` v editore kódu a pozrime sa, ako vyzerá:
 
-    python
+```python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
-    
+
         url(r'^admin/', include(admin.site.urls)),
     ]
-    
+```  
 
 Ako vidíš, Django sem už pre nás niečo umiestnil.
 
@@ -35,9 +35,9 @@ Riadky, ktoré začínajú s `#` sú komentáre - to znamená, že tie riadky Py
 
 Adminská URL, ktorú si navštívila v predchádzajúcej kapitole je už tu:
 
-    python
-        url(r'^admin/', include(admin.site.urls)),
-    
+```python
+         url(r'^admin/', include(admin.site.urls)),
+```  
 
 To znamená, že pre každú URL, ktorá začína na `admin` Django nájde zodpovedajúce *zobrazenie (view)*. V tomto prípade pridávame množstvo adminských URL, takže to nie je všetko natlačené v jednom malom súbore -- je to čitateľnejšie a čistejšie.
 
@@ -46,13 +46,13 @@ To znamená, že pre každú URL, ktorá začína na `admin` Django nájde zodpo
 Zaujíma ťa, ako Django porovnáva URL so zobrazeniami? No, to je trochu zložitejšie. Django používa `regex`, čo je skratka pre "regulárne výrazy". Regex má veľa (veľa!) pravidiel, ktoré tvoria vzor vyhľadávania. Keďže regexy sú pokročilá téma, nebudeme sa nimi veľmi detailne zaoberať.
 
 Ak chceš porozumieť tvorbe vzorov, tu je príklad procesu - budeme potrebovať iba obmedzenú množinu pravidiel, ktorými vyjadríme vzor, ktorý hľadáme, konkrétne:
-
+```
     ^ pre začiatok textu
     $ pre koniec textu
     \d pre číslicu
     + indikuje, že predchádzajúca položka sa má zopakovať aspoň raz
     () ohraničuje časť vzoru
-    
+```
 
 Všetko ostatné v definícii url bude brané doslovne.
 
@@ -75,15 +75,15 @@ Neboj sa, zmaž všetky zakomentované riadky (tie, čo začínajú `#`) a prida
 
 Súbor `mysite/urls.py` by mal teraz vyzerať takto:
 
-    python
+```python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
     ]
-    
+```  
 
 Django teraz presmeruje všetko, čo prichádza na 'http://127.0.0.1:8000/' do `blog.urls` a tam bude hľadať ďalšie inštrukcie.
 
@@ -93,20 +93,20 @@ Pri písaní regulárnych výrazov je vždy dobré pridať pred reťazec `r`. To
 
 Vytvor nový prázdny súbor `blog/urls.py`. Dobre! Pridaj tieto prvé dva riadky:
 
-    python
+```python
     from django.conf.urls import url
     from . import views
-    
+```
 
 Tu iba importujeme Django metódy a všetky naše `views` z aplikácie `blog` (zatiaľ žiadne nemáme, ale k tomu sa o chvíľu dostaneme!)
 
 Potom môžeme pridať náš prvý URL vzor:
 
-    python
+```python
     urlpatterns = [
         url(r'^$', views.post_list, name='post_list'),
     ]
-    
+```  
 
 Ako vidíš, priradili sme `view` s názvom `post_list` tejto URL: `^$`. Tento regulárny výraz sa bude zhodovať iba ak po `^` (začiatku) bude nasledovať `$` (koniec) - takže zodpovedať bude iba prázdny reťazec. To je správne, pretože v Django URL prekladači 'http://127.0.0.1:8000/' nie je súčasťou URL. Tento vzor povie Djangu, že `views.post_list` je to správne miesto, kam treba ísť, ak niekto vstúpi na stránku cez adresu 'http://127.0.0.1:8000/'.
 

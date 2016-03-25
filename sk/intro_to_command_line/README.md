@@ -34,13 +34,15 @@ Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje pr
 
 Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
 
+```
     $
-    
+```  
 
 Na Windowse to je znak `>`, takýto:
 
+```
     >
-    
+```  
 
 Každý príkaz budeš zadávať za tento znak a jednu medzeru. Ty to ale písať nemusíš, urobí to za teba tvoj počítač :)
 
@@ -50,19 +52,22 @@ Každý príkaz budeš zadávať za tento znak a jednu medzeru. Ty to ale písa�
 
 Začnime s niečím jednoduchým. Napíš tento príkaz:
 
+```
     $ whoami
-    
+```  
 
 alebo
 
+```
     > whoami
-    
+```  
 
 A stlač `enter`. Toto je výsledok:
 
+```
     $ whoami
     olasitarska
-    
+```  
 
 Ako vidíš, počítač práve vypísal tvoje užívateľské meno. Milé, nie?:)
 
@@ -76,15 +81,17 @@ Každý operačný systém má trochu iné príkazy pre príkazový riadok, tak�
 
 Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento príkaz a stlač `enter`:
 
+```
     $ pwd
     /Users/olasitarska
-    
+```  
 
 Ak si vo Windowse:
 
+```
     > cd
     C:\Users\olasitarska
-    
+```  
 
 Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazový riadok, zvyčajne začneš vo svojom domovskom adresári.
 
@@ -96,16 +103,18 @@ Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazov
 
 Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
 
+```
     $ ls
     Applications
     Desktop
     Downloads
     Music
     ...
-    
+```
 
 Windows:
 
+```
     > dir
      Directory of C:\Users\olasitarska
     05/08/2014 07:28 PM <DIR>      Applications
@@ -113,7 +122,7 @@ Windows:
     05/08/2014 07:28 PM <DIR>      Downloads
     05/08/2014 07:28 PM <DIR>      Music
     ...
-    
+```
 
 * * *
 
@@ -121,25 +130,29 @@ Windows:
 
 Teraz prejdime do adresára Plochy:
 
+```
     $ cd Desktop
-    
+```  
 
 Windows:
 
+```
     > cd Desktop
-    
+```  
 
 Skontroluj, či sa adresár skutočne zmenil:
 
+```
     $ pwd
     /Users/olasitarska/Desktop
-    
+```  
 
 Windows:
 
+```
     > cd
     C:\Users\olasitarska\Desktop
-    
+```  
 
 A je to!
 
@@ -151,6 +164,7 @@ A je to!
 
 Čo takto vytvoriť pokusný adresár na ploche? Urobíš to takto:
 
+```
     $ mkdir pokus
     
 
@@ -175,15 +189,16 @@ Malá výzva pre teba: v tvojom čerstvo vytvorenom adresári `pokus` vytvor adr
     $ mkdir test
     $ ls
     test
-    
+```  
 
 Windows:
 
-    > cd practice
+```
+    > cd pokus
     > mkdir test
     > dir
     03/20/2016 11:05 AM <DIR>      test
-    
+```
 
 Gratulujeme! :)
 
@@ -195,62 +210,72 @@ Nechceme po sebe nechať neporiadok, takže odstránime všetko, čo sme doteraz
 
 Najkôr sa musíme vrátiť späť na Plochu:
 
+```
     $ cd ..
-    
+```  
 
 Windows:
 
+```
     > cd ..
-    
+```  
 
 Pomocou `..` s príkazom `cd` zmeníš svoj aktuálny adresár na rodičovský adresár (to je ten adresár, v ktorom sa nachádza tvoj aktuálny adresár).
 
 Skontroluj, kde sa nachádzaš:
 
+```
     $ pwd
     /Users/olasitarska/Desktop
-    
+```  
 
 Windows:
 
+```
     > cd
     C:\Users\olasitarska\Desktop
-    
+```  
 
 Je na čase zmazať adresár `pokus`:
 
 > **Pozor**: mazanie súborov pomocou `del` `rmdir` alebo `rm` je neodvolateľné, teda *odstránené súbory budú navždy preč*! Takže s týmito príkazmi buď opatrná.
 
+```
     $ rm -r pokus
-    
+```  
 
 Windows:
 
+```  
     > rmdir /S pous
     pokus, Are you sure <Y/N>? Y
-    
+```
 
 Hotovo! Uistime sa, či je to naozaj vymazané:
 
+```
     $ ls
-    
+```
 
 Windows:
 
+```
     > dir
-    
+```  
 
 ### Ukončenie
 
 Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to hackersky, dobre?:)
 
+```
     $ exit
-    
+```  
 
 Windows:
 
+```
     > exit
-    
+```  
 
 Super, čo?:)
 

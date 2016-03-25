@@ -12,6 +12,7 @@ Ak chceme modelovať mačku, vytvoríme objekt `Macka`, ktorá má nejaké vlast
 
 Ďalej má `Macka` niekoľko akcií: `priast`, `skrabat` alebo `krmit` (v ktorej dáme mačke nejaké `MacacieZradlo`, ktoré by mohlo byť samostatným objektom s vlastnosťami, t.j. `chut`).
 
+```
     Macka
     --------
     farba
@@ -26,7 +27,7 @@ Ak chceme modelovať mačku, vytvoríme objekt `Macka`, ktorá má nejaké vlast
     MacacieZradlo
     --------
     chut
-    
+```
 
 Takže v podstate myšlienka je popísať reálne veci kódom pomocou vlastností (ktorým hovoríme `vlastnosti objektu/object properties`) a akcií (tie nazývame `metódy`).
 
@@ -36,6 +37,7 @@ Musíme odpovedať na otázku: Čo je vlastne blog post? Aké vlastnosti by mal 
 
 No, náš blog post určite potrebuje nejaký text s obsahom a titulkom, nie? Bolo by tiež fajn vedieť, kto ho napísal - takže potrebujeme autora. A nakoniec, chceme vedieť, kedy bol post vytvorený a zverejnený.
 
+```
     Post
     --------
     title
@@ -43,7 +45,7 @@ No, náš blog post určite potrebuje nejaký text s obsahom a titulkom, nie? Bo
     author
     created_date
     published_date
-    
+```
 
 Čo všetko môžeme s blog postom robiť? Bolo by dobré mať nejakú `metódu`, ktorá post publikuje, však?
 
@@ -63,11 +65,13 @@ Model v databáze si môžeš predstaviť ako tabuľku so stĺpcami (polia) a ri
 
 Aby sme mali všetko pekne upratané, vytvoríme vo vnútri nášho projektu samostatnú aplikáciu. Je dobré mať všetko zorganizované hneď od začiatku. Aby sme vytvorili aplikáciu, musíš v konzole spustiť nasledujúci príkaz (v adresári `djangogirls`, kde sa nachádza súbor `manage.py`):
 
+```
     ~/djangogirls$ (myvenv) python manage.py startapp blog
-    
+```
 
 Uvidíš, že bude vytvorený nový adresár `blog`, ktorý obsahuje množstvo súborov. Adresáre a súbory v našom projekte by mali vyzerať takto:
 
+```
     djangogirls
     ├── mysite
     |       __init__.py
@@ -83,11 +87,11 @@ Uvidíš, že bude vytvorený nový adresár `blog`, ktorý obsahuje množstvo s
         ├── models.py
         ├── tests.py
         └── views.py
-    
+```
 
 Po vytvorení aplikácie tiež musíš Djangu povedať, že by ju mal použiť. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`)`. Takže výsledok nášho snaženia bude vyzerať takto:
 
-    python
+```python
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -97,7 +101,7 @@ Po vytvorení aplikácie tiež musíš Djangu povedať, že by ju mal použiť. 
         'django.contrib.staticfiles',
         'blog',
     )
-    
+```  
 
 ### Vytvorenie modelu blog postu
 
@@ -105,11 +109,11 @@ V súbore `blog/models.py` definujeme všetky objekty, ktoré sa nazývajú `mod
 
 Otvor `blog/models.py`, všetko z neho odstráň a napíš tento kód:
 
-    python
+```python
     from django.db import models
     from django.utils import timezone
-    
-    
+
+
     class Post(models.Model):
         author = models.ForeignKey('auth.User')
         title = models.CharField(max_length=200)
@@ -118,14 +122,14 @@ Otvor `blog/models.py`, všetko z neho odstráň a napíš tento kód:
                 default=timezone.now)
         published_date = models.DateTimeField(
                 blank=True, null=True)
-    
+
         def publish(self):
             self.published_date = timezone.now()
             self.save()
-    
+
         def __str__(self):
             return self.title
-    
+```
 
 > Dvakrát skontroluj, či si použila 2 podčiarkovníky (`_`) na oboch stranách `str`. Táto konvencia sa v Pythone často používa a niekedy sa tomu hovorí "dunder" (skratka pre anglické Double-UNDERscore).
 
@@ -158,20 +162,22 @@ Ak čokoľvek nie je jasné, neváhaj a spýtaj sa mentora! Je nám jasné, že 
 
 Posledným krokom je pridať náš nový model do databázy. Najprv musíme Djangu dať vedieť, že sme urobili nejaké zmeny v našom modeli (práve sme ho vytvorili!). Napíš `python manage.py makemigrations blog`. Bude to vyzerať takto:
 
+```
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+```
 
 Django pre nás pripravil migračný súbor, ktorý musíme aplikovať na našu databázu. Napíš `python manage.py migrate blog` a výstup by mal byť:
 
+```
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+```
 
 Hurá! Náš Post model je už v databáze! Bolo by fajn ho vidieť, nie? Prejdi na nasledujúcu kapitolu a uvidíš ako vyzerá tvoj Post!
