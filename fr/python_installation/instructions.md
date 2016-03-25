@@ -1,4 +1,4 @@
-> Note : ce sous-chapitre est en partie inspiré d'un autre tutoriel réalisé par les Geek Girls Carrots (http://django.carrots.pl/)
+> Note : ce sous-chapitre est en partie inspiré d'un autre tutoriel réalisé par les Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django est écrit en Python. Pour réaliser quelque chose en Django, il va nous falloir Python. Commençons par installer ce dernier ! Pour ce tutoriel, nous utilisons la version 3.4 de Python. Si vous avez une version antérieure, il va falloir la mettre à jour.
 

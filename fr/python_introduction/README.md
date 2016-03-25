@@ -1,6 +1,6 @@
 # Introduction à Python
 
-> Note : ce chapitre est en partie inspiré d'un autre tutoriel réalisé par les Geek Girls Carrots (http://django.carrots.pl/).
+> Note : ce chapitre est en partie inspiré d'un autre tutoriel réalisé par les Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Allons écrire du code !
 
@@ -40,7 +40,7 @@ Amusez-vous un peu avec ça, et revenez ici après :).
 
 Comme vous pouvez le constater, Python est une très bonne calculette. Comme vous vous en doutez, il est aussi capable de faire autre chose ...
 
-## Chaines de caractères (Strings)
+## Chaînes de caractères (Strings)
 
 Et si nous essayions avec votre nom ? Tapez votre prénom entre guillemets, comme cela :
 
@@ -49,9 +49,9 @@ Et si nous essayions avec votre nom ? Tapez votre prénom entre guillemets, comm
 'Ola'
 ```
 
-Vous venez de créer votre première chaine de caractères ! C'est une suite de caractères qui peut être traitée par un ordinateur. Une chaine de caractères doit toujours commencer et terminer par le même caractère. Çela peut être un guillemet simple (`'`) ou un guillemet double (`"`), ça n'a pas d'importance. Cela permet à Python de savoir que tout ce qui se trouve à l'intérieur de ces guillemets est une chaine de caractères.
+Vous venez de créer votre première chaîne de caractères ! C'est une suite de caractères qui peut être traitée par un ordinateur. Une chaîne de caractères doit toujours commencer et terminer par le même caractère. Cela peut être un guillemet simple (`'`) ou un guillemet double (`"`), ça n'a pas d'importance. Cela permet à Python de savoir que tout ce qui se trouve à l'intérieur de ces guillemets est une chaîne de caractères.
 
-Il est possible d'assembler des chaines de caractères comme ceci :
+Il est possible d'assembler des chaînes de caractères comme ceci :
 
 ```python
 >>> "Salut  " + "Ola"
@@ -65,7 +65,7 @@ Vous pouvez aussi multiplier une chaîne de caractères par un nombre :
 'OlaOlaOla'
 ```
 
-Si vous avez besoin de mettre une apostrophe dans votre chaine de caractères, vous avez deux possibilités.
+Si vous avez besoin de mettre une apostrophe dans votre chaîne de caractères, vous avez deux possibilités.
 
 Vous pouvez utiliser des guillemets doubles :
 
@@ -74,7 +74,7 @@ Vous pouvez utiliser des guillemets doubles :
 "J'aime la mousse au chocolat"
 ```
 
-ou échapper l’apostrophe avec une barre oblique inversée (un backslash, ``) :
+ou échapper l’apostrophe avec une barre oblique inversée (un backslash, `&#92;`) :
 
 ```python
 >>> 'J\'aime la mousse au chocolat'
@@ -88,7 +88,7 @@ Pas mal, non ? Pour voir votre nom en majuscules, tapez juste :
 'OLA'
 ```    
 
-Vous venez d'utiliser la **fonction** `upper` sur votre chaine de caractères ! Une fonction (comme `upper()`) est un ensemble d'instructions que Python va effectuer sur un objet donné (`"Ola"`) lorsque vous l’appellerez.
+Vous venez d'utiliser la **fonction** `upper` sur votre chaîne de caractères ! Une fonction (comme `upper()`) est un ensemble d'instructions que Python va effectuer sur un objet donné (`"Ola"`) lorsque vous l’appellerez.
 
 Si vous voulez savoir combien il y a de lettres dans votre nom, il y a une fonction pour ça !
 
@@ -97,14 +97,14 @@ Si vous voulez savoir combien il y a de lettres dans votre nom, il y a une fonct
 3
 ```
 
-Vous avez peut-être remarqué que parfois, on appelle la fonction avec `.` en la plaçant après la chaine de caractères (comme `"Ola".upper()`) alors qu'à d'autres moment, on appelle d'abord la fonction puis la chaine de caractères entre parenthèses ? Il s'avère que dans certains cas, les fonctions appartiennent à des objets (c'est le cas de `upper()`) et qu'elles ne peuvent être appliquées qu'à des chaines de caractères. Dans ce cas, on appelle la fonction une **méthode**. D'autres fois, les fonctions n’appartiennent à rien de particulier et peuvent être utilisées sur différents types d'objets (c'est le cas de `len()`). C'est pour ça que nous passons `"Ola"` comme argument à la fonction `len`.
+Vous avez peut-être remarqué que parfois, on appelle la fonction avec `.` en la plaçant après la chaîne de caractères (comme `"Ola".upper()`) alors qu'à d'autres moment, on appelle d'abord la fonction puis la chaîne de caractères entre parenthèses ? Il s'avère que dans certains cas, les fonctions appartiennent à des objets (c'est le cas de `upper()`) et qu'elles ne peuvent être appliquées qu'à des chaînes de caractères. Dans ce cas, on appelle la fonction une **méthode**. D'autres fois, les fonctions n’appartiennent à rien de particulier et peuvent être utilisées sur différents types d'objets (c'est le cas de `len()`). C'est pour ça que nous passons `"Ola"` comme argument à la fonction `len`.
 
 ### Résumé
 
-OK, assez parlé de chaines de caractères. Jusque-là, nous avons découvert :
+OK, assez parlé de chaînes de caractères. Jusque-là, nous avons découvert :
 
 *   **le prompt** - taper des commandes (du code) dans le prompt Python donne des réponses dans Python
-*   **les nombres et les chaines de caractères** - dans Python, les nombres sont utilisés pour faire des calculs, et les chaines de caractères pour manipuler du texte
+*   **les nombres et les chaînes de caractères** - dans Python, les nombres sont utilisés pour faire des calculs, et les chaînes de caractères pour manipuler du texte
 *   **opérateurs** - comme + et * qui combinent des valeurs pour en obtenir de nouvelles
 *   **les fonctions** - comme upper() et len() qui effectuent des actions sur les objets.
 
@@ -121,16 +121,16 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Nous venons d'obtenir notre première erreur ! Elle nous dit que les objets de type "int" (integers, ce qui signifie nombre entier) n'ont pas de longueur. Que pouvons-nous faire, du coup ? Pourquoi ne pas essayer d'écrire notre nombre comme une chaine de caractères ? Après tout, les chaînes de caractères ont bien une taille, non ?
+Nous venons d'obtenir notre première erreur ! Elle nous dit que les objets de type "int" (integers, ce qui signifie nombre entier) n'ont pas de longueur. Que pouvons-nous faire, du coup ? Pourquoi ne pas essayer d'écrire notre nombre comme une chaîne de caractères ? Après tout, les chaînes de caractères ont bien une taille, non ?
 
 ```python
 >>> len(str(304023))
 6
 ```    
 
-Ça a marché ! Nous avons utilisé la fonction `str` à l'intérieur de la fonction `len`. La fonction `str()` convertit n'importe quoi en chaine de caractères.
+Ça a marché ! Nous avons utilisé la fonction `str` à l'intérieur de la fonction `len`. La fonction `str()` convertit n'importe quoi en chaîne de caractères.
 
-*   La fonction `str` convertit des choses en **chaines de caractères**
+*   La fonction `str` convertit des choses en **chaînes de caractères**
 *   La fonction `int` convertit des choses en **entiers**
 
 > Important : il est possible de convertir des nombres en texte, mais il n'est pas toujours possible de convertir du texte en nombres. Parce que, bon, ça vaudrait quoi `int('salut')` ?
@@ -204,13 +204,13 @@ Essayez ça :
 Maria
 ```
 
-Quand vous tapez `name`, l'interpréteur Python répond avec la *représentation* de la chaine de caractères associée à la variable "name", c'est à dire les lettres M-a-r-i-a, entourées par des guillemets simples. Quand vous dites `print(name)`, Python va "imprimer" le contenu de la variable sur l'écran, sans les guillemets, ce qui est plus sympa.
+Quand vous tapez `name`, l'interpréteur Python répond avec la *représentation* de la chaîne de caractères associée à la variable "name", c'est à dire les lettres M-a-r-i-a, entourées par des guillemets simples. Quand vous dites `print(name)`, Python va "imprimer" le contenu de la variable sur l'écran, sans les guillemets, ce qui est plus sympa.
 
 Comme nous le verrons plus tard, `print()` est aussi utile lorsque l'on veut afficher des choses depuis l'intérieur de fonctions ou des choses sur plusieurs lignes.
 
 ## Les listes
 
-En plus des chaines de caractères et des entiers, Python possède tout un tas d'autres types d'objets. Nous allons maintenant vous présenter un type appelé **listes**. Les listes sont exactement ce que vous pensez qu’elles sont : des objets qui sont des listes d’autres objets :)
+En plus des chaînes de caractères et des entiers, Python possède tout un tas d'autres types d'objets. Nous allons maintenant vous présenter un type appelé **listes**. Les listes sont exactement ce que vous pensez qu’elles sont : des objets qui sont des listes d’autres objets :)
 
 Allez-y, créez une liste :
 
@@ -294,7 +294,7 @@ Vous pouvez trouver une liste complète des méthodes disponibles pour les liste
 
 ## Dictionnaires
 
-Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs plutôt que des indices pour accéder aux valeurs. Une clef peut être n'importe quelle chaine de caractère ou n'importe quel nombre. La syntaxe pour définir un dictionnaire vide est la suivante :
+Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs plutôt que des indices pour accéder aux valeurs. Une clef peut être n'importe quelle chaîne de caractère ou n'importe quel nombre. La syntaxe pour définir un dictionnaire vide est la suivante :
 
 ```python
 >>> {}
@@ -311,8 +311,8 @@ Maintenant, essayez d'écrire la commande suivante (et essayez aussi de changer 
 
 Avec cette commande, vous venez de créer une variable nommée `participant` avec trois paires clef-valeur :
 
-*   La clef `name` pointe vers la valeur `'Ola'` (un objet `chaine de caractères`),
-*   `country` pointe vers `'Poland'` (une autre `chaine de caractères`),
+*   La clef `name` pointe vers la valeur `'Ola'` (un objet `chaîne de caractères`),
+*   `country` pointe vers `'Poland'` (une autre `chaîne de caractères`),
 *   et `favorite_numbers` pointe vers `[7, 42, 92]` (une `liste` contenant trois nombres).
 
 Vous pouvez vérifier le contenu de chaque clef avec cette syntaxe :
@@ -420,7 +420,7 @@ False
 
 *   x `>` y veut dire : x est plus grand que y
 *   x `<` y signifie: x est inférieure à y
-*   x `< =` y signifie: x est inférieur ou égal à y
+*   x `<=` y signifie: x est inférieur ou égal à y
 *   x `>=` y veut dire : x est supérieur ou égal à y
 
 Super ! Un dernier ? Essayez ça :
@@ -448,7 +448,7 @@ Traceback (most recent call last):
 TypeError: unorderable types: int() > str()
 ```
 
-Comme vous le voyez, Python n'est pas capable de comparer un nombre (`int`) et une chaine de caractères (`str`). À la place, il nous montre une **TypeError** et nous dit que les deux types ne peuvent pas être comparés.
+Comme vous le voyez, Python n'est pas capable de comparer un nombre (`int`) et une chaîne de caractères (`str`). À la place, il nous montre une **TypeError** et nous dit que les deux types ne peuvent pas être comparés.
 
 ## Booléen
 
@@ -509,7 +509,7 @@ Tout à l'heure, dans la section [L'éditeur de texte][2], nous avons choisi un 
 print('Hello, Django girls!')
 ```
 
-> **Note :** Vous avez probablement constaté que votre code se pare de multiples couleurs : ça fait partie des choses qui rendent la programmation dans un éditeur de texte bien plus agréable. Votre console Python n'avait pas cette fonctionnalité : tout était donc de la même couleur. Dans votre éditeur de texte, vous devriez voir que la fonction `print` possède différentes couleurs. C'est ce qu'on appelle « la coloration syntaxique ». C'est une fonctionnalité très utile lorsque l'on programme. La couleur des choses va vous permettre de détecter des problèmes : une chaine de caractères non fermée, une faute dans un mot (ce sera par exemple le cas dans la fonction `def` que vous verrez un peu plus bas). C'est ce genre de fonctionnalités qui font que vous aimerez rapidement programmer avec un éditeur de code :)
+> **Note :** Vous avez probablement constaté que votre code se pare de multiples couleurs : ça fait partie des choses qui rendent la programmation dans un éditeur de texte bien plus agréable. Votre console Python n'avait pas cette fonctionnalité : tout était donc de la même couleur. Dans votre éditeur de texte, vous devriez voir que la fonction `print` possède différentes couleurs. C'est ce qu'on appelle « la coloration syntaxique ». C'est une fonctionnalité très utile lorsque l'on programme. La couleur des choses va vous permettre de détecter des problèmes : une chaîne de caractères non fermée, une faute dans un mot (ce sera par exemple le cas dans la fonction `def` que vous verrez un peu plus bas). C'est ce genre de fonctionnalités qui font que vous aimerez rapidement programmer avec un éditeur de code :)
 
 Vous avez maintenant pas mal de connaissances en Python : n'hésitez pas à écrire du code avec ce que vous avez appris aujourd'hui !
 
@@ -824,7 +824,7 @@ Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la list
 
 ## Résumé
 
-Et voilà ! **Vous êtes géniale !** Ce chapitre était un peu compliqué et vous devriez être fière de vous ! En tout cas, nous sommes super fière de vous !
+Et voilà ! **Vous êtes géniale !** Ce chapitre était un peu compliqué et vous devriez être fière de vous ! En tout cas, nous sommes super fières de vous !
 
 N'hésitez pas à prendre une pause : étirez-vous, marchez un peu ou reposez-vous les yeux. Une fois que vous avez un peu rechargé vos batteries, vous pouvez attaquer le chapitre suivant :)
 

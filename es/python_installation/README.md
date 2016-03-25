@@ -8,7 +8,7 @@ Python se originó en la década de 1980 y su objetivo principal es ser legible 
 
 # Instalación de Python
 
-> Este subcapítulo se basa en un tutorial de Geek Girls Carrots (http://django.carrots.pl/)
+> Este subcapítulo se basa en un tutorial de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots/)
 
 Django está escrito en Python. Necesitamos Python para cualquier cosa en Django. ¡Vamos a empezar con la instalación! Queremos que instales Python 3.4, así que si tienes alguna versión anterior, deberás actualizarla.
 

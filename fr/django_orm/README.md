@@ -57,7 +57,7 @@ Voici comment créer un nouveau objet Post dans la base de données :
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Cependant, il nous manque un petit quelque chose : `moi`. Nous avons besoin de lui passer une instance du modèle `User` en guise d'auteur (author). Comment faire ?
+Cependant, il nous manque un petit quelque chose : `me`. Nous avons besoin de lui passer une instance du modèle `User` en guise d'auteur (author). Comment faire ?
 
 Tout d'abord, il nous faut importer le modèle User :
 
@@ -158,7 +158,7 @@ On peut aussi inverser l'ordre de tri en ajouter `-` au début:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Chainer les QuerySets
+### Chaîner les QuerySets
 
 Vous pouvez aussi combiner les QuerySets and les **chainant** les unes aux autres :
 

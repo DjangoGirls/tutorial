@@ -28,44 +28,45 @@ Uygulamalar → Araçlar → Terminal.
 
 Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet'te arayın :)
 
-## Komut İstemcisi
+## İstemci
 
 Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
 
 Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
 
-    $
-    
+```
+$
+```
 
 Windows'da ise `>` işareti göreceksiniz, bunun gibi:
 
-    >
-    
+```
+>
+```
 
 Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır :)
 
 > Ufak bir not: sizin durumunuzda bu `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` ve benzeri bir şekilde olabilir ve bu kesinlikle doğru. Bu eğitimde bunu sade ve basit bir şekilde anlatacağız.
 
-Yukarıdaki $ ve > işaretlerini gösteren kısım komut istemcisi ya da kısaca istemci diye adlandırılır. Sizden girdi isteminde bulunur.
-
-Eğitim boyunca, komut yazmanızı istediğimizde $ ve > kısımlarını yazmanıza gerek yok, kalan kısmı yazmanızı isteyeceğiz.
-
 ## İlk komutunuz(Yaşasın!)
 
 Basit bir şeyle başlayalım. Aşağıdaki komutu yazın:
 
-    $ whoami
-    
+```
+$ whoami
+```
 
 ya da
 
-    > whoami
-    
+```
+> whoami
+```
 
 Ve ardından `enter` tuşuna basın. Sonucumuz bu:
 
-    $ whoami olasitarska
-    
+```
+$ whoami zeynep
+```
 
 Gördüğünüz gibi, bilgisayar az önce kullanıcı adınızı yazdı. Muntazam, değil mi?:)
 
@@ -79,15 +80,17 @@ Tüm işletim sistemleri komut satırı için birbirinden biraz farklı komutlar
 
 Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve `enter` tuşuna basın:
 
-    $ pwd
-    /Users/olasitarska
-    
+```
+$ pwd
+/Users/zeynep
+```
 
 Windows'ta iseniz:
 
-    > cd
-    C:\Users\olasitarska
-    
+```
+> cd
+C:\Users\zeynep
+```
 
 Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.
 
@@ -99,23 +102,25 @@ Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtı
 
 Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
-    $ ls
-    Uygulamalar
-    Masaüstü
-    İndirilenler
-    Müzik
-    ...
-    
+```
+$ ls
+Uygulamalar
+Masaüstü
+İndirilenler
+Müzik
+...
+```
 
 Windows:
 
-    > dir  Directory of C:\Users\olasitarska 
-    05/08/2014 07:28 PM <DIR> Uygulamalar 
-    05/08/2014 07:28 PM <DIR> Masaüstü 
-    05/08/2014 07:28 PM <DIR> İndirilenler 
-    05/08/2014 07:28 PM <DIR> Müzik 
-    ...
-    
+```
+> dir  Directory of C:\Users\zeynep 
+05/08/2014 07:28 PM <DIR> Uygulamalar 
+05/08/2014 07:28 PM <DIR> Masaüstü 
+05/08/2014 07:28 PM <DIR> İndirilenler 
+05/08/2014 07:28 PM <DIR> Müzik 
+...
+```    
 
 * * *
 
@@ -123,25 +128,29 @@ Windows:
 
 Şimdi, haydi Masaüstü dizinimize gidelim:
 
-    $ cd Masaüstü
-    
+```
+$ cd Masaüstü
+```    
 
 Windows:
 
-    > cd Masaüstü
-    
+```
+> cd Masaüstü
+```    
 
 Gerçekten değişmiş mi bir bakalım:
 
-    $ pwd
-     /Users/olasitarska/Masaüstü
-    
+```
+$ pwd
+C:\Users\zeynep\Masaüstü
+```    
 
 Windows:
 
-    > cd 
-    C:\Users\olasitarska\Masaüstü
-    
+```
+> cd 
+C:\Users\zeynep\Masaüstü
+```    
 
 İşte oldu!
 
@@ -153,13 +162,15 @@ Windows:
 
 Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu şekilde yapabilirsiniz:
 
-    $ mkdir uygulama
-    
+```
+$ mkdir uygulama
+```
 
 Windows:
 
-    > mkdir uygulama
-    
+```
+> mkdir uygulama
+```
 
 Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. Orada olup olmadığını kontrol etmek için `ls` veya `dir` komutlarını kullanabilirsiniz! Deneyin :)
 
@@ -173,19 +184,21 @@ Sizin için ufak bir alıştırma: yeni oluşturduğunuz `uygulama` dizininde `t
 
 #### Çözüm:
 
-    $ cd uygulama
-    $ mkdir test
-    $ ls
-    test
-    
+```
+$ cd uygulama
+$ mkdir test
+$ ls
+test
+```
 
 Windows:
 
-    > cd uygulama
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
-    
+```
+> cd uygulama
+> mkdir test
+> dir
+05/08/2014 07:28 PM <DIR>      test
+```    
 
 Tebrikler! :)
 
@@ -197,62 +210,72 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 İlk önce masaüstüne geri dönmemiz gerek:
 
-    $ cd ..
-    
+```
+$ cd ..
+```
 
 Windows:
 
-    > cd ..
-    
+```
+> cd ..
+```
 
 `cd` komutu ile `..` kullanmak sizi bir üst dizine götürür (Bu sizin şuanki dizininizi tutan ana dizindir).
 
 Nerede olduğunuzu kontrol edin:
 
-    $ pwd 
-    /Users/olasitarska/Masaüstü
-    
+```
+$ pwd
+C:\Users\zeynep\Masaüstü
+```
 
 Windows:
 
-    > cd 
-    C:\Users\olasitarska\Masaüstü
-    
+```
+> cd 
+C:\Users\zeynep\Masaüstü
+```
 
 Şimdi `uygulama` dizinini silme vakti:
 
 > **Dikkat**: Dosyaları `del`,`rmdir` veya `rm` ile silme işlemi geri alınamaz, bu *silinen dosyalar sonsuza dek yok olur* anlamına gelir! Yani, bu komutları kullanırken çok dikkatli olun.
 
-    $ rm -r uygulama
-    
+```
+$ rm -r uygulama
+```
 
 Windows:
 
-    > rmdir /S uygulama
-    uygulama, Emin misiniz <E/H>? E
-    
+```
+> rmdir /S uygulama
+uygulama, Emin misiniz <E/H>? E
+```
 
 Bitti! Gerçekten silindiğinden emin olalım:
 
-    $ ls
-    
+```
+$ ls
+```
 
 Windows:
 
-    > dir
-    
+```
+> dir
+```
 
 ### Çıkış
 
 Şimdilik bu kadar! Şimdi komut satırını güvenle kapatabilirsiniz. Bunu "hacker" tarzında yapalım, tamam mı?:)
 
-    $ exit
-    
+```
+$ exit
+```    
 
 Windows:
 
-    > exit
-    
+```
+> exit
+```
 
 Harika, değil mi?:)
 

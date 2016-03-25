@@ -1,6 +1,6 @@
 # Twój pierwszy projekt w Django!
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (http://django.carrots.pl/).
+> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 >
 > Fragmenty tego rozdziału są oparte o [tutorial django-marcador][1] na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 
@@ -67,7 +67,7 @@ Musimy także dodać ścieżkę do plików statycznych (dowiesz się więcej o p
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
 ```
 
 ## Ustawienie bazy danych
@@ -85,7 +85,7 @@ DATABASES = {
 }
 ```  
 
-Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie w konsoli: `python manage.py syncdb` (musimy być w katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`). Gdy to się uda, powinnaś zobaczyć coś takiego jak poniżej:
+Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie w konsoli: `python manage.py migrate` (musimy być w katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`). Gdy to się uda, powinnaś zobaczyć coś takiego jak poniżej:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:

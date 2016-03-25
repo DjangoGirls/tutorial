@@ -9,7 +9,7 @@ from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-```
+```    
 
 Gördüğünüz gibi, bir önceki bölümde tanımladığımız Post modelini admin.py dosyamıza dahil (import) ettik. Modelimizi admin sayfasında görünür yapmak için modeli `admin.site.register(Post)` ile belirtmemiz gerekir..
 
@@ -19,14 +19,11 @@ Tamam, artık admin sayfasında Post modelimize göz atabiliriz. Web sunucusunu 
 
  [1]: images/login_page2.png
 
-Giriş yapmak için, sitede her şeyin üzerinde kontrolü olan bir kullanıcı, yani bir *superuser* oluşturmanız gerekiyor. Komut satırında `python manage.py createsuperuser` yazın ve enter tuşuna basın. Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. Parolayı yazarken ekranda bir şey çıkmayacaktır. Sadece yazın ve `enter`'a basıp devam edin. Çıktısı aşağıdaki formatta olacaktır (kullanıcı adı ve email sizinki olacak):
+Giriş yapmak için, sitede her şeyin üzerinde kontrolü olan bir kullanıcı, yani bir *superuser* oluşturmanız gerekiyor. Komut satırında `python manage.py createsuperuser` yazın ve enter tuşuna basın. Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. Parolayı yazarken ekranda bir şey çıkmayacaktır. Sadece yazın ve `enter` tuşuna basıp devam edin. Çıktısı aşağıdaki formatta olacaktır (kullanıcı adı ve email sizinki olacak):
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+```
+(myvenv) ~/djangogirls$ python manage.py createsuperuser Username: admin Email address: admin@admin.com Password: Password (again): Superuser created successfully.
+```
 
 Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yaptığınızda Django'nun admin panelini göreceksiniz.
 
@@ -42,6 +39,6 @@ En azından iki ya da üç yazıya (ama hepsinin değil) yayınlama tarihi girdi
 
  [3]: images/edit_post3.png
 
-Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun dokümantasyonlarına göz atabilirsiniz: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun belgelerine göz atabilirsiniz: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
 Şimdi enerjinizi toplamak için kendinize bir çay veya kahve alabilirsiniz. Ne de olsa ilk Django modelinizi oluşturdunuz - biraz molayı hak ediyorsunuz. :)

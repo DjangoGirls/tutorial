@@ -1,4 +1,4 @@
-# Alan Adı (Domain)
+# Domain (Alan Adı)
 
 Heroku size bir alan adı verdi, ama uzun, hatırlaması zor ve çirkin. Kısa ve kolay hatırlanabilir bir alan adı olsaydı harika olurdu, değil mi?
 
@@ -6,7 +6,7 @@ Bu bölümde size yeni bir alan adı satın alıp Heroku'ya yönlendirmeyi öğr
 
 ## Alan adını nerden alabiliriz?
 
-Bir alan adı ortalamada senelik $15 civarında oluyor. Alan adı sağlayıcısına göre daha ucuzları ve daha pahalıları var. Alan adı satın alabileceğiniz bir sürü şirket var: basir bir [google araması][1] size yüzlerce seçenek getirir.
+Bir alan adı ortalamada senelik $15 civarında oluyor. Alan adı sağlayıcısına göre daha ucuzları ve daha pahalıları var. Alan adı satın alabileceğiniz bir sürü şirket var: basit bir [google araması][1] size yüzlerce seçenek getirir.
 
  [1]: https://www.google.com/search?q=register%20domain
 

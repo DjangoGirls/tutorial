@@ -24,7 +24,7 @@ Atom est un éditeur très récent créé par [GitHub](http://github.com/). Disp
 
 Vous vous demandez sûrement pourquoi nous vous faisons installer un éditeur spécialement créé pour écrire du code. Pourquoi ne pourrions nous pas simplement utiliser un éditeur de texte comme Word ou Notepad ?
 
-La première raison est que votre code doit être écrit en **texte brut**. Le problème avec les applications comme Word ou Textedit, c'est qu'elles ne produisent pas du texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur un standard comme [TRF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La première raison est que votre code doit être écrit en **texte brut**. Le problème avec les applications comme Word ou Textedit, c'est qu'elles ne produisent pas du texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur un standard comme [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 La seconde raison est que les éditeurs de texte dédiés à la programmation contiennent de nombreuses fonctions très utiles. Ils peuvent colorer le texte en fonction du sens de celui-ci (coloration syntaxique) ou ajouter automatiquement un guillemet fermant à chaque fois que vous ouvrez un guillemet.
 

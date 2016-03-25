@@ -1,6 +1,6 @@
 # Wprowadzenie do Pythona
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (http://django.carrots.pl/).
+> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Napiszmy jakiś kod!
 
@@ -579,13 +579,13 @@ Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko 
 glosnosc = 57
 if glosnosc < 20:
     print("Prawie nic nie slychac.")
-elif 20 <= volume < 40:
+elif 20 <= glosnosc < 40:
     print("O, muzyka leci w tle.")
-elif 40 <= volume < 60:
+elif 40 <= glosnosc < 60:
     print("Idealnie, moge uslyszec wszystkie detale")
-elif 60 <= volume < 80:
+elif 60 <= glosnosc < 80:
     print("Dobre na imprezy")
-elif 80 <= volume < 100:
+elif 80 <= glosnosc < 100:
     print("Troszeczke za glosno!")
 else:
     print("Ojoj! Moje uszy! :(")
@@ -719,7 +719,7 @@ Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. 
 Pamiętasz jeszcze listy? Zróbmy listę dziewczyn:
 
 ```python
-dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
 ```
 
 Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hej`, zatem użyjmy jej wewnątrz pętli:

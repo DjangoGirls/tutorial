@@ -46,7 +46,7 @@ Oui oui, c'est aussi simple que ça. Vous envoyez des messages et attendez une r
 
 Quand vous envoyez une lettre, elle a besoin de certaines choses pour transiter correctement, comme une adresse et un timbre. Vous devez aussi utiliser une langue que votre destinataire comprend. C'est la même chose pour les paquets de données que vous envoyez pour voir un site web. Vous utilisez un protocole appelé HTTP (Hypertext Tranfer Protocol).
 
-Donc, au final, pour avoir un site web il faut qu'il soit sur un *serveur* (c'est une machine). Lorsque le *serveur* reçoit une *requête/0> (dans une lettre), il envoie votre site Web (dans une autre lettre).
+Donc, au final, pour avoir un site web il faut qu'il soit sur un *serveur* (c'est une machine). Lorsque le *serveur* reçoit une *requête* (dans une lettre), il envoie votre site Web (dans une autre lettre).
 Puisqu'on est dans un tutoriel sur Django, vous devez vous demander ce que Django fait. Quand vous envoyez une réponse, vous ne renvoyez pas toujours la même réponse à tout le monde. C'est bien mieux quand les lettres sont personnalisées, surtout quand elles s'adressent à quelqu'un qui vient de vous écrire, non ? Et bien Django vous aide à écrire les lettres personnalisées et intéressantes :).
 
 Assez parlé, il est temps de commencer à créer des trucs !

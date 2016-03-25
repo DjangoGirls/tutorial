@@ -1,4 +1,4 @@
-> Část této kapitoly je založena na tutorialu Geek Girls Carrots (http://django.carrots.pl/).
+> Část této kapitoly je založena na tutorialu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 >
 > Další část této kapitoly je založena na [django-marcador tutorial](http://django-marcador.keimlink.de/) licencováno pod Creative Commons Attribution-ShareAlike 4.0, mezinárodní licenci. Ochranou známku pro Django-marcador drží Markus Zapke-Gründemann et al.
 

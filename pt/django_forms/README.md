@@ -94,7 +94,7 @@ O código final deve se parecer com isso:
 
 ``` python
 from django.conf.urls import include, url
-from . mport views
+from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list),
@@ -197,6 +197,7 @@ Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-
 if form.is_valid():
     post = form.save(commit=False)
     post.author = request.user
+    post.published_date = timezone.now()
     post.save()
 ```
 
@@ -225,6 +226,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -303,6 +305,7 @@ def post_edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:

@@ -1,6 +1,6 @@
 # 你的第一个Django 项目 ！
 
-> 本章的部分内容基于 Geek Girls Carrots (http://django.carrots.pl/) 的教程。
+> 本章的部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 的教程。
 > 
 > 本章的部分是基于知识共享署名-4.0 国际许可协议许可的 [django marcador 教程][1]。 Django marcador 教程的版权由Markus Zapke-Gründemann 持有。
 

@@ -25,7 +25,7 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
 
 Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
-Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `blog/templates/blog`.
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
@@ -72,7 +72,7 @@ Par exemple, vous pouvez donner un titre à votre site en utilisant l'élément 
 ```html
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Le Blog d'Ola</title>
     </head>
     <body>
         <p>Hi there!</p>
@@ -138,8 +138,8 @@ Voici un exemple de template utilisant plusieurs balises :
 
 Nous avons créé trois sections à l'aide de `div`.
 
-*   Le premier `div` contient le titre de notre blogpost - c'est à la fois un titre et un lien
-*   Les deux autres `div` contiennent nos blogposts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre blogpost.
+*   Le premier `div` contient le titre de notre blog - c'est à la fois un titre et un lien
+*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 

@@ -1,6 +1,6 @@
 # Formularios en Django
 
-Lo último que haremos en nuestro website es crear un apartado para agregar y editar posts en el blog. Django `admin` está bien, pero es bastante difícil de personalizar y hacerlo bonito. Con `forms` tendremos un poder absoluto sobre nuestra interfaz - podemos hacer casi cualquier cosa que podamos imaginar!
+Lo último que haremos en nuestro website es crear un apartado para agregar y editar posts en el blog. Django `admin` está bien, pero es bastante difícil de personalizar y hacerlo bonito. Con `forms` tendremos un poder absoluto sobre nuestra interfaz - ¡podemos hacer casi cualquier cosa que podamos imaginar!
 
 Lo bueno de Django forms es que podemos definirlo desde cero o creando un `ModelForm` y se guardará el resultado del formulario en el modelo.
 
@@ -14,7 +14,7 @@ Tenemos que crear un archivo con este nombre en el directorio `blog`.
        └── forms.py
     
 
-Ok, vamos abrirlo y vamos a escribir el siguiente código:
+Ok, vamos a abrirlo y vamos a escribir el siguiente código:
     
 ```python
     from django import forms
@@ -126,10 +126,10 @@ Para crear un nuevo formulario `Post`, tenemos que llamar a `PostForm()` y pasar
 
 Tenemos que crear un archivo `post_edit.html` en el directorio `blog/templates/blog`. Para hacer que un formulario funcione necesitamos varias cosas:
 
-*   tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un simple `{{ form.as_p }}`.
+*   tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un simple `{% raw %}{{ form.as_p }}{% endraw %}`.
 *   la línea anterior tiene que estar dentro de una etiqueta de formulario HTML: `<form method="POST">...</form>`
 *   necesitamos un botón `Guardar`. Lo hacemos con un botón HTML: `<button type='submit'>Save</button>`
-*   y finalmente justo después de la apertura de `<form...>` necesitamos agregar `{% raw %}{% csrf_token %}{% endraw %}`. ¡Esto es muy importante ya que hace que tus formularios sean seguros! Django se quejará si te olvidas de esta parte cuando intente guardar el formulario.
+*   y finalmente justo después de la apertura de `<form...>` necesitamos agregar `{% raw %}{% csrf_token %}{% endraw %}`. ¡Esto es muy importante ya que hace que tus formularios sean seguros! Django se quejará si te olvidas de esta parte cuando intentes guardar el formulario.
 
 ![CSFR Forbidden page][1]
 
@@ -199,7 +199,7 @@ Comprobamos que el formulario es válido y, si es así, ¡lo podemos salvar!
         post.save()
 ```    
 
-Básicamente, tenemos que hacer dos cosas aquí: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` todavía - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo a autor) y se creará una nuevo post en el blog.
+Básicamente, tenemos que hacer dos cosas aquí: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` todavía - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo el autor) y se creará una nuevo post en el blog.
 
 Por último, sería genial si podemos inmediatamente ir a la página `post_detail` del nuevo post de blog, ¿no? Para hacerlo necesitamos importar algo más:
 
@@ -256,7 +256,7 @@ Django se encarga de validar que todos los campos en el formulario estén correc
 
  [4]: images/post_create_error.png
 
-## Editar formulario
+## Editar el formulario
 
 Ahora sabemos cómo agregar un nuevo formulario. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Vamos a crear algunas cosas importantes rápidamente (si no entiendes algo, pregúntale a tu tutor o revisa lo capítulos anteriores, son temas que ya hemos cubierto).
 
@@ -343,12 +343,22 @@ Si necesitas más información sobre los formularios de Django, debes leer la do
 Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegue!
 
 *   Primero, haz un commit con tu nuevo código y súbelo a GitHub
-    
-    $ git status $ git add -A . $ git status $ git commit -m "Added views to create/edit blog post inside the site." $ git push
+
+```
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 *   Luego, en una [consola Bash de PythonAnywhere][7]
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
 *   Finalmente, ve a la pestaña [Web][8] y haz click en **Reload**.
 

@@ -1,6 +1,6 @@
 # Introduction to Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Let's write some code!
 
@@ -574,6 +574,8 @@ Time for the last part of this chapter!
 
 ## Your own functions!
 
+> For readers at home: this part is covered in [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+
 Remember functions like `len()` that you can execute in Python? Well, good news - you will learn how to write your own functions now!
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
@@ -671,6 +673,8 @@ Let's call the code now:
 Congratulations! You just learned how to write functions! :)
 
 ## Loops
+
+> For readers at home: this part is covered in [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
 This is the last part already. That was quick, right? :)
 

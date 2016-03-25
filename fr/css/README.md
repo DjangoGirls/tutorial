@@ -67,7 +67,7 @@ Nous n'allons pas trop nous attarder sur les CSS aujourd'hui. Nous vous invitons
 
  [2]: http://www.codecademy.com/tracks/web
 
-Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre entête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ces codes commencent par `#` et sont suivis de 6 lettres (A-F) et chiffres (0-9). Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies][3], comme le `rouge` et le `vert`.
+Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre entête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ces codes commencent par `#` et sont suivis de 6 lettres (A-F) et chiffres (0-9). Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies][3], comme `red` ou `green`.
 
  [3]: http://www.w3schools.com/cssref/css_colornames.asp
 

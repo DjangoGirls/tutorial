@@ -1,4 +1,4 @@
-> Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (http://django.carrots.pl/)
+> Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.4 quindi se hai una versione precedente, dovrai aggiornarlo.
 

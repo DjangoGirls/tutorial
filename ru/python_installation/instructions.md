@@ -1,4 +1,4 @@
-> Этот подраздел основан на руководстве Geek Girls Carrots (http://django.carrots.pl/)
+> Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила Python 3.4, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить.
 

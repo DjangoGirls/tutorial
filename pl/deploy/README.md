@@ -20,7 +20,7 @@ Git jest "systemem kontroli wersji", którego używa wielu programistów. Progra
 
 ## Instalacja Gita
 
-> **Uwaga** Jeśli już wcześniej przeszłaś kroki instalacyjne, nie musisz ich powtarzać - przejdź od razu do następnego podrozdziału, żeby stworzyć repozytrorium Git.
+> **Uwaga** Jeśli już wcześniej przeszłaś kroki instalacyjne, nie musisz ich powtarzać - przejdź od razu do następnego podrozdziału, żeby stworzyć repozytorium Git.
 
 {% include "/deploy/install_git.md" %}
 
@@ -263,20 +263,20 @@ Kliknij na link "WSGI configuration file" (w sekcji "Code" w górnej części st
 
 Skasuj całą zawartość pliku i zastąp ją następującym tekstem:
 
-    python
-    import os
-    import sys
+```python
+import os
+import sys
 
-    path = '/home/<your-username>/my-first-blog'  # use your own username here
-    if path not in sys.path:
-        sys.path.append(path)
+path = '/home/<your-username>/my-first-blog'  # use your own username here
+if path not in sys.path:
+    sys.path.append(path)
 
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+```
 
 > **Uwaga** Nie zapomnij zastąpić wszystkich wystąpień `<your-username>` swoją nazwą użytkownika.
 

@@ -1,6 +1,6 @@
 # Bevezetés a Pythonba
 
-> Ez a fejezet részben a Geek Girls Carrots (http://django.carrots.pl/) tutorialjain alapszik.
+> Ez a fejezet részben a Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorialjain alapszik.
 
 Írjunk egy kis kódot!
 

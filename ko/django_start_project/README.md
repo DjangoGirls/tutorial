@@ -1,6 +1,6 @@
 # 나의 첫 번째 Django 프로젝트!
 
-> 이번 장은 Geek Girls Carrots (http://django.carrots.pl/) 의 튜토리얼을 바탕으로 작성되었습니다.
+> 이번 장은 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 의 튜토리얼을 바탕으로 작성되었습니다.
 >
 > 이번 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License를 준수하여 [django-marcador tutorial][1]을 바탕으로 작성되었습니다. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 

@@ -1,4 +1,4 @@
-> 本节基于 Geek Girls Carrots (http://django.carrots.pl/)的教程
+> 本节基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)的教程
 
 Django 是用 Python 写的。 在 Django 中，我们需要使用 Python 语言去做所有的事情。 让我们从安装开始 ！ 我们希望您能安装 Python 3.4，所以如果你有任何以前的版本，你将需要将其升级。
 

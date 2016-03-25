@@ -17,7 +17,11 @@ from django.shortcuts import render
 ```
 
 
-Not too much stuff here yet. The simplest *view* can look like this.
+Not too much stuff here yet.
+
+Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+
+The simplest *view* can look like this.
 
 ```python
 def post_list(request):
@@ -33,6 +37,6 @@ Another error! Read what's going on now:
 
 ![Error](images/error.png)
 
-This one is easy: *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
 > Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/views/

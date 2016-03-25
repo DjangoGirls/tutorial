@@ -102,7 +102,7 @@ La page suivante vous donne l'URL qui va vous permettre de cloner votre dépôt.
 
 Nous avons maintenant besoin de relier nos deux dépôts : celui sur notre ordinateur et celui sur GitHub. On utilise l'expression "hook" en anglais pour cette décrire cette étape.
 
-Tapez les instructions suivantes dans votre console (remplacez `<your-github-username>` avec le nom d'utilisateur de votre compte GitHub et sans les chevrons) :
+Tapez les instructions suivantes dans votre console (remplacez `<votre-nom-d'utilisateur-github>` avec le nom d'utilisateur de votre compte GitHub et sans les chevrons) :
 
     $ git remote add origin https://github.com/<votre-nom-d'utilisateur-github>/my-first-blog.git
     $ git push -u origin master
@@ -252,7 +252,7 @@ Une fois l'assistant fermé, vous serez automatiquement conduite sur la page de 
 
  [7]: images/pythonanywhere_web_tab_virtualenv.png
 
-Dans la section "Virtualenv", cliquez sur le texte en rouge qui indique "Enter the path to a virtualenv" (ajouter le chemin d'accès de votre environnement virtuel), et ajouter ceci : */home/<your-username>nomdutilisateur</1>/my-first-blog/myvenv/*. Cliquez sur la boite bleue avec la case à cocher pour sauvegarder le chemin d’accès.
+Dans la section "Virtualenv", cliquez sur le texte en rouge qui indique "Enter the path to a virtualenv" (ajouter le chemin d'accès de votre environnement virtuel), et ajouter ceci : */home/<your-username>/my-first-blog/myvenv/*. Cliquez sur la boite bleue avec la case à cocher pour sauvegarder le chemin d’accès.
 
 > **Note** : N'oubliez pas de mettre votre nom d'utilisateur. Ne vous inquiétez pas : si vous faites une erreur, PythonAnywhere vous le signalera.
 

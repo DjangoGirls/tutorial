@@ -48,7 +48,7 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
 ```python
 from django.conf.urls import include, url
@@ -56,22 +56,22 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
 ```
 
-This part ``^post/(?P<pk>[0-9]+)/$`` looks scary, but no worries - we will explain it for you:
+This part ``^post/(?P<pk>\d+)/$`` looks scary, but no worries - we will explain it for you:
 - it starts with `^` again -- "the beginning"
 - `post/` only means that after the beginning, the URL should contain the word __post__ and __/__. So far so good.
-- `(?P<pk>[0-9]+)` - this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. `[0-9]` also tells us that it can only be a number, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly ok!
+- `(?P<pk>\d+)` - this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly ok!
 - `/` - then we need __/__ again
 - `$` - "the end"!
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-`pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>[0-9]+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>[0-9]+)`.
+`pk` is shortcut for `primary key`. This name is often used in Django projects. But you can name your variable as you like (remember: lowercase and `_` instead of whitespaces!). For example instead of `(?P<pk>\d+)` we could have variable `post_id`, so this bit would look like: `(?P<post_id>\d+)`.
 
-Ok, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! Yet another error! As expected!
+Ok, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console - as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -169,8 +169,7 @@ $ git push
 
 ```
 $ cd my-first-blog
-$ source myvenv/bin/activate
-(myvenv)$ git pull
+$ git pull
 [...]
 ```
 
