@@ -1,4 +1,4 @@
- {
+{
     "gitbook": "2.x.x",
     "links": {
         "sidebar": {
@@ -6,15 +6,18 @@
         }
     },
     "plugins": [
-        "heading-anchors@1.0.3", "ga@1.0.1", "richquotes@0.0.7",
-        "github@2.0.0", "language-picker"
+        "heading-anchors@1.0.3",
+        "ga@1.0.1",
+        "richquotes@0.0.7",
+        "github@2.0.0",
+        "language-picker"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-51680040-3"
         },
         "richquotes": {
-            "default" : false
+            "default": false
         },
         "github": {
             "url": "https://github.com/DjangoGirls/tutorial"
