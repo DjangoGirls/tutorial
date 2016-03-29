@@ -120,7 +120,8 @@ Et si nous voulions chercher les posts qui contiennent uniquement le mot "titre"
 Comment obtenir une liste de tous les posts publiés ? Cela se fait facilement en filtrant tous les posts qui ont une date de publication, `published_date`, dans le passé :
 
 ```python
->>> from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
 ```
 
 Malheureusement, le post que nous avons créé dans la console Python n'est pas encore publié. Allons corriger ce problème ! Dans un premier temps, nous aimerions obtenir une instance du post que nous voulons publié :
