@@ -13,7 +13,7 @@
         "ga": {
             "token": "UA-51680040-3"
         },
-        "richquotes" : {
+        "richquotes": {
             "default" : false
         },
         "github": {

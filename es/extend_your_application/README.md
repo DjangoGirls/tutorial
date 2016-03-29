@@ -11,7 +11,7 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 ## Crea un enlace en la plantilla
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así:
-```
+```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -25,7 +25,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
             </div>
         {% endfor %}
     {% endblock content %}
-```    
+```
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` dentro del enlace:
 ```
@@ -133,7 +133,7 @@ Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 
 Se verá así:
 
-```
+```html
     {% extends 'blog/base.html' %}
     
     {% block content %}
@@ -147,7 +147,7 @@ Se verá así:
             <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endblock %}
-```    
+```
 
 Una vez más estamos extendiendo `base.html`. En el bloque `content` queremos mostrar la fecha de publicación (si existe), título y texto de nuestros posts. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
 
