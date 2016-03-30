@@ -90,9 +90,9 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django
 
-Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install "django==1.9.*"` (note that we use a double equal sign: `==`).
+Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a double equal sign: `==`).
 
-    (myvenv) ~$ pip install "django==1.9.*"
+    (myvenv) ~$ pip install django~=1.9.0
     Downloading/unpacking django==1.9
     Installing collected packages: django
     Successfully installed django
@@ -104,7 +104,7 @@ on Windows
 on Windows 8 and Windows 10
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 
->     C:\Users\Name\djangogirls> python -m pip install "django==1.9.*"
+>     C:\Users\Name\djangogirls> python -m pip install django~=1.9.0
 
 on Linux
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
