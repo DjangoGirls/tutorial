@@ -73,7 +73,7 @@ Avez-vous remarqué que nous utilisons une notation légèrement différente cet
 Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur Internet. Nous allons essayer de le re-déployer sur PythonAnywhere. Voici un récapitulatif des étapes...
 
 *   En premier lieu, envoyez votre code sur GitHub (push)
-
+```
     $ git status
     [...]
     $ git add -A .
@@ -82,16 +82,16 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-    
+```
 
 *   Ensuite, reconnectez-vous à [PythonAnywhere][4] et allez sur la "**Bash console**" (ou démarrer-en une nouvelle), et lancez les commandes suivantes :
 
  [4]: https://www.pythonanywhere.com/consoles/
-
+```
     $ cd my-first-blog
     $ git pull
     [...]
-    
+```
 
 *   Finalement, allez sur l'[onglet Web][5] et cliquez sur **Reload** sur votre application web. Votre site mis-à-jour devrait être en ligne !
 
