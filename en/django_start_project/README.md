@@ -92,7 +92,7 @@ To create a database for our blog, let's run the following in the console: `pyth
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions, admin
+      Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
       Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
