@@ -24,7 +24,7 @@ Přejdi na [iwantmyname][3] a zadejte doménu, kterou chceš do pole Search/Hled
 
  [4]: images/1.png
 
-Nyní by jsi měla vidět seznam všech dostupných domén s termínem, který jsi vložila do pole Hledat. Jak vidíš, veselý obličej znamená, že doména je k dispozici pro tvůj nákupu a smutná tvář znamená že je již obsazená.
+Nyní bys měla vidět seznam všech dostupných domén s termínem, který jsi vložila do pole Hledat. Jak vidíš, veselý obličej znamená, že doména je k dispozici pro tvůj nákupu a smutná tvář znamená že je již obsazená.
 
 ![][5]
 
@@ -36,7 +36,7 @@ Rozhodli jsme se koupit `djangogirls.in`:
 
  [6]: images/3.png
 
-Přejdi k pokladně/checkout. Nyní by jsi se měla přihlásit do iwantmyname, pokud ještě nemáš účet. Poté poskytneš informace o kreditní kartě a koupíš doménu!
+Přejdi k pokladně/checkout. Nyní by ses měla přihlásit do iwantmyname, pokud ještě nemáš účet. Poté poskytneš informace o kreditní kartě a koupíš doménu!
 
 Pak klepni na tlačítko `domény` v menu a vyber nově zakoupenou doménu. Vyber ji a klepni na odkaz `Spravovat záznamy DNS/manage DNS record`:
 

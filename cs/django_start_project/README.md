@@ -10,11 +10,11 @@ Chceme vytvořit jednoduchý blog!
 
 Prvním krokem je začít s novým projektem Django. V podstatě to znamená, že budeš spouštět některé skripty z Django, které vytvoří kostru Django projektu pro tebe. To je jen halda adresářů a souborů, které budeme později používat.
 
-Názvy některých souborů a adresářů jsou pro Django velmi důležité. Neměla by jsi přejmenovávat soubory, které vytvoříme. Přesouvat je na jiné místo také není dobrý nápad. V Django je třeba zachovat určitou strukturu, aby jsme mohli najít důležité věci.
+Názvy některých souborů a adresářů jsou pro Django velmi důležité. Neměla bys přejmenovávat soubory, které vytvoříme. Přesouvat je na jiné místo také není dobrý nápad. V Django je třeba zachovat určitou strukturu, abychom mohli najít důležité věci.
 
 > Nezapomeň spouštět vše ve svém virtualenv. Pokud nevidíš předponu `(myvenv)` ve své konzoli je potřeba aktivovat virtualenv. Jak se to dělá jsme vysvětlili v kapitole **Django instalace** v části **práce s virtualenv**. Napiš `myvenv\Scripts\activate` na systému Windows nebo `source myvenv/bin/activate` na systému Mac OS / Linux.
 
-V MacOS a Linux konzoli by jsi měla spustit následující příkaz; **nezapomeň přidat tečku `.` na konci**:
+V MacOS a Linux konzoli bys měla spustit následující příkaz; **nezapomeň přidat tečku `.` na konci**:
 
 ```
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
@@ -112,7 +112,7 @@ Chceš-li vytvořit databázi pro náš blog, spusť následující příkaz v k
       Applying sessions.0001_initial... OK
 ```  
 
-A máme hotovo! Čas spustit webový server a měla by jsi vidět naše fungující webové stránky!
+A máme hotovo! Čas spustit webový server a měla bys vidět naše fungující webové stránky!
 
 Pro spuštění musíš být v adresáři, který obsahuje soubor `manage.py` (adresář `djangogirls`). V konzoli spustíš webový server zadáním `pythonu manage.py runserver`:
 

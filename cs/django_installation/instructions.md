@@ -31,7 +31,7 @@ Chceš-li vytvořit nový `virtualenv`, je potřeba otevřít konzoli (mluvili j
     C:\Users\Name\djangogirls > C:\Python34\python -m venv myvenv
 ```  
 
-kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. Je také dobrý nápad, aby jsi zvolila krátké jméno - budeš ho používat častokrát!
+kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. Je také dobrý nápad, abys zvolila krátké jméno - budeš ho používat častokrát!
 
 ### Linux a OS X
 

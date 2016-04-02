@@ -111,7 +111,7 @@ Poté můžeme přidat náš první URL vzor:
 
 Jak vidíš, právě jsme přiřadili `view` nazvané `post_list` k URL `^$`. Tento regulární výraz znamená `^` (začátek řetězce) následuje `$` (konec řetězce) - výrazu bude odpovídat pouze prázdný řetězec. Tak je to správně, protože v Django URL překladači/resolveru, část adresy ' http://127.0.0.1:8000 /' není součástí adresy URL. Tento vzor řekne Djangu, že `views.post_list` je správné místo, kam jít, když někdo vstoupí na tvé webové stránky na adresu' http://127.0.0.1:8000 /'.
 
-Poslední část `name = 'post_list'` je název adresy URL, která bude použita k identifikaci view. Název URL může být stejný jako název view, ale také může být úplně jiný. Pojmenované URL budeme používat později v projektu je proto důležité pojmenovat všechny adresy URL v aplikaci. Také by jsi se měla snažit udržet názvy adres URL, jedinečné a snadno zapamatovatelné.
+Poslední část `name = 'post_list'` je název adresy URL, která bude použita k identifikaci view. Název URL může být stejný jako název view, ale také může být úplně jiný. Pojmenované URL budeme používat později v projektu je proto důležité pojmenovat všechny adresy URL v aplikaci. Také by ses měla snažit udržet názvy adres URL, jedinečné a snadno zapamatovatelné.
 
 Všechno v pořádku? Otevři http://127.0.0.1:8000 / v prohlížeči a uvidíš výsledek.
 
