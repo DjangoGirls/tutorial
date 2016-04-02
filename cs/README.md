@@ -1,6 +1,6 @@
 # Django Girls Tutoriál
 
-[!\[Gitter\] (https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Tento návod je licencován pod Creative Commons Attribution-ShareAlike 4.0 mezinárodní licenci. Chcete-li zobrazit kopii této licence, navštivte http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -24,7 +24,7 @@ Tvá aplikace (více či méně) bude vypadat takto:
 
  [2]: images/application.png
 
-> Pokud budeš procházet kurz sama bez učitele, který ti by ti pomáhal v případě, že narazíš na nějaký problém, máme pro tebe chat: [!\[Gitter\] (https://badges.gitter.im/Join Chat.svg)][1]. Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem! Neboj se zde zeptat na jakoukoliv otázku!
+> Pokud budeš procházet kurz sama bez učitele, který ti by ti pomáhal v případě, že narazíš na nějaký problém, máme pro tebe chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)][1]. Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem! Neboj se zde zeptat na jakoukoliv otázku!
 
 OK [začněme od začátku...][3]
 
