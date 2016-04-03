@@ -28,7 +28,7 @@ Git je "systém pro správu verzí" používaný spoustou programátorů. Tento 
 
 Git sleduje změny v sadě souborů v takzvaném úložišti kódu/repository (nebo zkráceně "repo"). Založme si jeden pro náš projekt. Otevři konzoli a v `djangogirls` adresáři spusť tyto příkazy:
 
-> **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (OS x/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla by jsi být ve složce `djangogirls`.
+> **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (OS x/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla bys být ve složce `djangogirls`.
 
 ```
     $ git init
@@ -93,7 +93,7 @@ Potom vytvoř nové úložiště, dej mu název "my-first-blog". Ponech zaškrt�
 
  [3]: images/new_github_repo.png
 
-> **Poznámka:** Název `my-first-blog` je důležitý – mohla by si vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela by jsi ho pokaždé nahrazovat. Tak je zřejmě snazší se držet názvu `my-first-blog`.
+> **Poznámka:** Název `my-first-blog` je důležitý – mohla by si vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela bys ho pokaždé nahrazovat. Tak je zřejmě snazší se držet názvu `my-first-blog`.
 
 Na další obrazovce se zobrazí clon URL tvého repo. Zvol verzi "HTTPS", zkopíruj jí, a za chvilku ji použijeme v terminálu:
 
@@ -110,7 +110,7 @@ Zadej následující příkaz do konzole (nahraď `< your-github-username >` už
     $ git push -u origin master
 ```    
 
-Zadej své uživatelské jméno pro GitHub a heslo a měla by jsi vidět něco takového:
+Zadej své uživatelské jméno pro GitHub a heslo a měla bys vidět něco takového:
 
 ```
     Username for 'https://github.com': hjwp
