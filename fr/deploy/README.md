@@ -178,7 +178,7 @@ Tout comme sur votre ordinateur, vous allez devoir créer un environnement virtu
     
     $ source myvenv/bin/activate
     
-    (mvenv) $  pip install django whitenoise
+    (mvenv) $ pip install django~=1.8.0 whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
