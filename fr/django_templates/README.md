@@ -6,7 +6,7 @@ Il est temps d'afficher des données ! Pour nous aider, Django fournit des balis
 
 En HTML, vous ne pouvez pas mettre directement du code Python car les navigateurs seraient incapables de le comprendre. Les navigateurs ne connaissent que le HTML. Nous vous avons signalé précédemment que HTML est du genre statique, alors que Python est bien plus dynamique.
 
-Les **Balises de template Django** nous permettent de transferer des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement et facilement. Cool, non ?
+Les **Balises de template Django** nous permettent de transférer des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement et facilement. Cool, non ?
 
 ## Template d'affichage de la liste des posts
 
@@ -18,7 +18,7 @@ Afin d'afficher une variable dans un template Django, nous utiliserons des doubl
 {{ posts }}
 ```
 
-Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
+Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraîchissez votre page pour voir le résultat :
 
 ![Figure 13.1][1]
 
@@ -60,13 +60,13 @@ Essayez ceci dans votre template.
 {% endfor %}
 ```
 
-{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet présent dans la liste. Rafraichissez votre page :{% endraw %}
+{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet présent dans la liste. Rafraîchissez votre page :{% endraw %}
 
 ![Figure 13.3][3]
 
  [3]: images/step3.png
 
-Avez-vous remarqué que nous utilisons une notation légèrement différente cette fois (`{{ post.title }}` or `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, les `|barres verticales` nous permettent de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.
+Avez-vous remarqué que nous utilisons une notation légèrement différente cette fois (`{{ post.title }}` or `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, les barres verticales `|` nous permettent de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.
 
 ## Encore une chose !
 
@@ -84,7 +84,7 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
     $ git push
 ```
 
-*   Ensuite, reconnectez-vous à [PythonAnywhere][4] et allez sur la "**Bash console**" (ou démarrer-en une nouvelle), et lancez les commandes suivantes :
+*   Ensuite, reconnectez-vous à [PythonAnywhere][4] et allez sur la "**Bash console**" (ou démarrez-en une nouvelle), et lancez les commandes suivantes :
 
  [4]: https://www.pythonanywhere.com/consoles/
 ```
