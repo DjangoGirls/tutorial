@@ -2,7 +2,7 @@
 
 Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](http://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne l'Internet ?](../how_the_internet_works/README.md).
 
-Les informations données ici sont couvertes dans le reste du tutoriel. Cette partie permet simplement de regrouper au même endroit tout ce qu'il est nécessaire d'installer avant de participer à un évènement. Les évènements Django Girls inclue une "soirée d'installation" qui permet de prendre un peu d'avance sur la journée de formation proprement dite.
+Les informations données ici sont couvertes dans le reste du tutoriel. Cette partie permet simplement de regrouper au même endroit tout ce qu'il est nécessaire d'installer avant de participer à un évènement. Les évènements Django Girls incluent une "soirée d'installation" qui permet de prendre un peu d'avance sur la journée de formation proprement dite.
 
 Rien ne vous empêche de tout installer maintenant si vous le souhaitez. Cependant, si vous avez envie d'apprendre des choses avant d'installer plein de trucs sur votre ordinateur : passez ce chapitre et installez ce dont vous avez besoin au fil des chapitres.
 
