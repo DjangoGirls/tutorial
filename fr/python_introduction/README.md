@@ -19,20 +19,20 @@ $ python3
 Python 3.4.3 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
-```    
+```
 
 ## Votre première commande Python !
 
 Après avoir lancé la commande Python, votre prompt (ou invite de commandes) s'est changé en `>>>`. Cela signifie que maintenant, les seules commandes que nous pouvons taper sont dans le langage Python. Vous n'avez pas besoin de taper `>>>` - Python fait ça pour vous.
 
-Quand vous voudrez sortir de la console Python, tapez `exit()` ou utilisez le raccourcit `Ctrl + Z` pour Windows ou `Ctrl + D` pour Mac/Linux. Après ça, vous ne verrez plus le `>>>`.
+Quand vous voudrez sortir de la console Python, tapez `exit()` ou utilisez le raccourci `Ctrl + Z` pour Windows ou `Ctrl + D` pour Mac/Linux. Après ça, vous ne verrez plus le `>>>`.
 
-Pour le moment, nous ne voulons pas quitter la console Python car nous nous aimerions mieux la connaitre. Démarrons avec quelque chose de vraiment simple. Par exemple, faisons un peu de math : tapez `2 + 3` et appuyez sur `entrée`.
+Pour le moment, nous ne voulons pas quitter la console Python car nous nous aimerions mieux la connaître. Démarrons avec quelque chose de vraiment simple. Par exemple, faisons un peu de math : tapez `2 + 3` et appuyez sur `entrée`.
 
 ```python
 >>> 2 + 3
 5
-```    
+```
 
 Pas mal ! Vous voyez comment la réponse est sortie ? Python sait faire des maths ! Vous pouvez essayer d'autres commandes comme : - `4 * 5` - `5 - 1` - `40 / 2`
 
@@ -86,7 +86,7 @@ Pas mal, non ? Pour voir votre nom en majuscules, tapez juste :
 ```python
 >>> "Ola".upper()
 'OLA'
-```    
+```
 
 Vous venez d'utiliser la **fonction** `upper` sur votre chaîne de caractères ! Une fonction (comme `upper()`) est un ensemble d'instructions que Python va effectuer sur un objet donné (`"Ola"`) lorsque vous l’appellerez.
 
@@ -126,7 +126,7 @@ Nous venons d'obtenir notre première erreur ! Elle nous dit que les objets de t
 ```python
 >>> len(str(304023))
 6
-```    
+```
 
 Ça a marché ! Nous avons utilisé la fonction `str` à l'intérieur de la fonction `len`. La fonction `str()` convertit n'importe quoi en chaîne de caractères.
 
@@ -137,7 +137,7 @@ Nous venons d'obtenir notre première erreur ! Elle nous dit que les objets de t
 
 ## Variables
 
-Il y existe un concept super important en programmation : les variables. Une variable, c'est juste un nom pour quelque chose que l'on aimerait utiliser plus tard. Les programmeurs⋅euses utilisent des variables pour stocker des données, rendre leur code plus lisible, et pour ne pas avoir à se rappeler de ce que sont les choses.
+Il existe un concept super important en programmation : les variables. Une variable, c'est juste un nom pour quelque chose que l'on aimerait utiliser plus tard. Les programmeurs⋅euses utilisent des variables pour stocker des données, rendre leur code plus lisible, et pour ne pas avoir à se rappeler de ce que sont les choses.
 
 Disons que nous aimerions créer une variable appelée `name` :
 
@@ -178,7 +178,7 @@ Génial, non ? Et bien sûr, les variables peuvent être n'importe quoi, y compr
 24
 ```
 
-Mais que ce passe-t-il si nous utilisons le mauvais nom ? Essayez de deviner ! C'est parti !
+Mais que se passe-t-il si nous utilisons le mauvais nom ? Essayez de deviner ! C'est parti !
 
 ```python
 >>> city = "Tokyo"
@@ -263,7 +263,7 @@ Facile, non ? Si vous voulez ajouter quelque chose à la liste, vous pouvez le f
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Si vous ne souhaitez afficher que le premier nombre, vous pouvez le faire en utilisant des **indices**. Un indice est un nombre qui dit où l'élément apparait dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
+Si vous ne souhaitez afficher que le premier nombre, vous pouvez le faire en utilisant des **indices**. Un indice est un nombre qui dit où l'élément apparaît dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
 
 ```python
 >>> print(lottery[0])
@@ -288,7 +288,7 @@ Pour supprimer un objet de votre liste, vous aurez besoin de son **indice** ains
 
 Ça marche à merveille !
 
-Jouons encore un peu avec les indices ! Essayez-en des nouveaux : 6, 7, 1000, -1, -6 ou -1000. Est-ce que vous arrivez à prévoir le résultat avant de taper la commande ? Est-ce que ses résultats vous paraissent logiques ?
+Jouons encore un peu avec les indices ! Essayez-en des nouveaux : 6, 7, 1000, -1, -6 ou -1000. Est-ce que vous arrivez à prévoir le résultat avant de taper la commande ? Est-ce que ces résultats vous paraissent logiques ?
 
 Vous pouvez trouver une liste complète des méthodes disponibles pour les listes dans ce chapitre de la documentation de Python : https://docs.python.org/3/tutorial/datastructures.html
 
@@ -299,7 +299,7 @@ Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs 
 ```python
 >>> {}
 {}
-```    
+```
 
 C'est comme ça que l'on crée un dictionnaire vide. Hourra !
 
@@ -320,11 +320,11 @@ Vous pouvez vérifier le contenu de chaque clef avec cette syntaxe :
 ```python
 >>> print(participant['name'])
 Ola
-```    
+```
 
 Vous voyez, c'est un peu comme une liste; Cependant, vous n'avez pas besoin de vous souvenir de l'indice, juste de son nom.
 
-Que ce passe-t-il lorsque nous demandons à Python la valeur correspondant à une clef qui n'existe pas ? Pouvez-vous le deviner ? Essayons voir !
+Que se passe-t-il lorsque nous demandons à Python la valeur correspondant à une clef qui n'existe pas ? Pouvez-vous le deviner ? Essayons voir !
 
 ```python
 >>> participant['age']
@@ -405,7 +405,7 @@ True
 
 Nous avons donné à Python des nombres à comparer. Comme vous pouvez le voir, Python peut comparer des nombres, mais aussi des résultats de méthodes. Pas mal, non ?
 
-Vous vous demandez probablement pourquoi nous avons mis deux signes `==` côte à côte pour savoir si deux nombres étaient égaux ? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales. Nous pouvons aussi dire que certaines choses ne sont pas égales à d'autres Pour cela, nous utilisons le symbole `! =`, comme illustré dans l'exemple ci-dessus.
+Vous vous demandez probablement pourquoi nous avons mis deux signes `==` côte à côte pour savoir si deux nombres étaient égaux ? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales. Nous pouvons aussi dire que certaines choses ne sont pas égales à d'autres Pour cela, nous utilisons le symbole `!=`, comme illustré dans l'exemple ci-dessus.
 
 Donnons encore un peu de boulot à Python :
 
@@ -492,16 +492,16 @@ Pour l'instant, nous avons écrit tout notre code Python directement dans l'inte
 *   Sauvegarder du code dans un nouveau fichier Python
 *   Le lancer !
 
-Pour quitter l'interpréteur Python que nous sommes en train d'utiliser, il suffit de taper la fonction ~~~exit()~~~ :
+Pour quitter l'interpréteur Python que nous sommes en train d'utiliser, il suffit de taper la fonction `exit()` :
 
 ```python
 >>> exit()
 $
-```    
+```
 
 Cela vous ramènera dans la ligne de commande de votre système d'exploitation.
 
-Tout à l'heure, dans la section [L'éditeur de texte][2], nous avons choisi un éditeur de texte. Ouvrez le et écrivez le code suivant dans un nouveau fichier :
+Tout à l'heure, dans la section [L'éditeur de texte][2], nous avons choisi un éditeur de texte. Ouvrez-le et écrivez le code suivant dans un nouveau fichier :
 
  [2]: ../code_editor/README.md
 
@@ -520,17 +520,17 @@ Une fois que le fichier est sauvegardé, vous pouvez le lancer ! En utilisant le
 Sur Mac, ça ressemblera à :
 
     $ cd /Users/<your_name>/Desktop
-    
+
 
 Sous Linux, comme ça (il se peut que le mot Bureau soit dans une autre langue) :
 
     $ cd /home/<your_name>/Desktop
-    
+
 
 Et sous Windows, ce sera comme ça :
 
     > cd C:\Users\<your_name>\Desktop
-    
+
 
 Si vous êtes bloquée, n'hésitez pas à appeler à l'aide.
 
@@ -538,7 +538,7 @@ Maintenant, utilisez Python pour exécuter le code contenu dans votre fichier :
 
     $ python3 python_intro.py
     Hello, Django girls!
-    
+
 
 Super ! Vous venez de lancer votre premier programme python à partir d'un fichier. Cool non ?
 
@@ -561,7 +561,7 @@ $ python3 python_intro.py
 File "python_intro.py", line 2
          ^
 SyntaxError: unexpected EOF while parsing
-```    
+```
 
 Python s'attend à ce que nous lui donnions des instructions sur ce qu'il faut exécuter lorsque la condition `3 > 2` est vraie (ou plutôt, `True`). Essayons de lui faire afficher "Ça marche !". Remplacez le code dans **python_intro.py** par ceci :
 
@@ -576,7 +576,7 @@ Sauvegardez le fichier et relancez le :
 
     $ python3 python_intro.py
     Ça marche !
-    
+
 
 ### Et que se passe-t-il si une condition n’est pas vraie ?
 
@@ -593,7 +593,7 @@ Lorsque vous exécuterez le code, ceci s'affichera :
 
     $ python3 python_intro.py
     5 est effectivement plus grand que 2
-    
+
 
 Et si 2 était plus grand que 5, la seconde commande serait exécutée. Facile, non ? Voyons comment `elif` fonctionne :
 
@@ -611,7 +611,7 @@ Exécutons le code :
 
     $ python3 python_intro.py
     Hey Sonja!
-    
+
 
 Que s'est-il passé ? `elif` vous permet d'ajouter d'autres conditions à exécuter si les précédentes échouent.
 
@@ -637,7 +637,7 @@ Python va tester les différentes conditions puis il affichera ceci :
 
     $ python3 python_intro.py
     Parfait, je peux entendre tous les détails du morceau.
-    
+
 
 ### Résumé
 
@@ -673,9 +673,9 @@ Lançons notre code pour voir ce qui se passe :
     $ python3 python_intro.py
     Hi there!
     How are you?
-    
 
-C'était facile ! Construisons maintenant notre première fonction avec des paramètres. Dans l'exemple précédent, nous avions une fonction que disait "Hi there!" à la personne qui la lançait. Faisons une fonction identique, mais ajoutons un nom cette fois :
+
+C'était facile ! Construisons maintenant notre première fonction avec des paramètres. Dans l'exemple précédent, nous avions une fonction qui disait "Hi there!" à la personne qui la lançait. Faisons une fonction identique, mais ajoutons un nom cette fois :
 
 ```python
 def hi(name):
@@ -715,7 +715,7 @@ Et exécutez votre code à nouveau :
 
     $ python3 python_intro.py
     Hi Ola!
-    
+
 
 Et que se passe-t-il quand on change de nom ?
 
@@ -727,12 +727,12 @@ Exécutez votre code à nouveau :
 
     $ python3 python_intro.py
     Hi Sonja!
-    
+
 
 Maintenant, que pensez-vous qu'il se passera lorsque nous écrirons un autre nom (ni Ola, ni Sonja) ? Faites un essai et regardez si vous avez raison. Ceci devrait s'afficher :
 
     Hi anonymous!
-    
+
 
 Super, non ? Avec ça, vous n'avez pas besoin de vous répéter lorsque vous voulez changer le nom de la personne à saluer. C'est pour cette raison que nous avons besoin de fonctions : vous ne voulez pas avoir à répéter votre code !
 
@@ -749,7 +749,7 @@ Exécutons à nouveau notre code :
 
     $ python3 python_intro.py
     Hi Rachel!
-    
+
 
 Félicitations ! Vous venez juste d’apprendre à écrire des fonctions ! :)
 
@@ -771,7 +771,7 @@ Nous voulons saluer chacune d'entre elles par son nom. Nous avons déjà la fonc
 for name in girls:
 ```
 
-L'instruction ~~~for~~~ se comporte un peu comme ~~~if~~~. Le code qui suit doit donc être indenté de quatre espaces.
+L'instruction `for` se comporte un peu comme `if`. Le code qui suit doit donc être indenté de quatre espaces.
 
 Voilà le code complet à mettre dans votre fichier :
 
@@ -798,7 +798,7 @@ Exécutez votre code :
     Next girl
     Hi You!
     Next girl
-    
+
 
 Comme vous le voyez, tout ce que nous avons mis dans un `for` avec une indentation est répété pour chaque élément de la liste `girls`.
 
@@ -816,11 +816,11 @@ Ce qui affiche :
     3
     4
     5
-    
+
 
 `range` est une fonction qui crée une liste de nombres qui se suivent (c'est vous qui définissez l’intervalle à l'aide de paramètres).
 
-Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la liste que Python nous donne (ce qui signifie que `range(1, 6)` compte de 1 à 5, mais n'inclue pas 6). C'est lié au fait que "range" est à moitié ouvert. Cela signifie qu'il inclue la première valeur mais, pas la dernière.
+Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la liste que Python nous donne (ce qui signifie que `range(1, 6)` compte de 1 à 5, mais n'inclut pas 6). C'est lié au fait que "range" est à moitié ouvert. Cela signifie qu'il inclut la première valeur mais pas la dernière.
 
 ## Résumé
 
