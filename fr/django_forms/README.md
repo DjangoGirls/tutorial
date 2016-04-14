@@ -1,6 +1,6 @@
 # Formulaires Django
 
-La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. `L'interface d'administration` de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les `formulaires` vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !
+La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou d'éditer des blog posts. `L'interface d'administration` de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les `formulaires` vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !
 
 Ce qui est pratique avec les formulaires Django, c'est que nous pouvons aussi bien en définir un à partir de rien ou créer un `ModelForm` qui va enregistrer le résultat du formulaire dans un modèle.
 
@@ -12,7 +12,7 @@ Nous allons devoir créer un fichier avec ce nom dans notre dossier `blog`.
 
     blog
        └── forms.py
-    
+
 
 Ouvrez maintenant ce fichier et tapez le code suivant :
 
@@ -46,7 +46,7 @@ C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```    
+```
 
 Remarquez que notre nouvelle vue s'appelle `post_new`.
 
@@ -171,7 +171,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous avons plus des données dans `request`, et plus particulièrement dans `request.POST`. Prenez garde que "POST" ici n'a aucun lien avec "blog post" : le nom est lié au fait que nous envoyons des données. Rappelez-vous : nous avions défini la variable `method="POST"` dans le fichier HTML qui contient notre `<formulaire>` ? Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST` en quoi que ce soit d'autre : la seule autre valeur autorisée pour `method` est `GET`. Malheureusement, nous n'avons pas le temps de rentrer dans les détails aujourd'hui.
+Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous avons des données dans `request`, et plus particulièrement dans `request.POST`. Prenez garde que "POST" ici n'a aucun lien avec "blog post" : le nom est lié au fait que nous envoyons des données. Rappelez-vous : nous avions défini la variable `method="POST"` dans le fichier HTML qui contient notre `<formulaire>` ? Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST` en quoi que ce soit d'autre : la seule autre valeur autorisée pour `method` est `GET`. Malheureusement, nous n'avons pas le temps de rentrer dans les détails aujourd'hui.
 
 Dans notre *vue*, nous avons donc deux situations différentes à gérer. Tout d'abord, nous avons la situation où nous accédons à la page pour la première fois et que nous voulons un formulaire vide. Ensuite, nous avons la seconde situation où nous retournons sur la *vue* et nous voulons que les champs du formulaire contiennent les informations que nous avions tapées. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si).
 
@@ -188,7 +188,7 @@ Attaquons-nous à remplir ces `[...]`. Si la `method` est `POST`, c'est que nous
 form = PostForm(request.POST)
 ```
 
-Facile ! La prochaine étape est de vérifier si le contenu de notre formulaire est correct. Nous aimerions vérifier, par exemple, que les champs obligatoires soient bien remplis et qu'aucune donnée incorrecte ne soient sauvegardée. Pour cela, nous allons utiliser `form.is_valid()`.
+Facile ! La prochaine étape est de vérifier si le contenu de notre formulaire est correct. Nous aimerions vérifier, par exemple, que les champs obligatoires soient bien remplis et qu'aucune donnée incorrecte ne soit sauvegardée. Pour cela, nous allons utiliser `form.is_valid()`.
 
 Testons donc si notre formulaire est valide et, si c'est le cas, sauvegardons-le !
 
@@ -200,7 +200,7 @@ if form.is_valid():
     post.save()
 ```  
 
-En gros, nous effectuons deux choses ici : nous sauvegardons le formulaire grâce à `form.save` et nous ajoutons un auteur. Rappelez vous, il n'y avait pas de champ `author` dans le `PostForm` mais nous avons obligatoirement besoin d'un auteur pour que le formulaire que nous avons créé soit valide. `commit=False` signifie que nous ne voulons pas encore enregistrer notre modèle `Post`. Nous voulons tout d'abord ajouter un auteur. La plupart du temps, vous utiliserez `form.save()` sans `commit=False`. Cependant, nous en avons besoin ici. `post.save()` va nous permettre de sauvegarder les changements, c'est-à-dire l'ajout d'un auteur. Et voilà, maintenant c'est sûr, un nouveau blog post sera créé !
+En gros, nous effectuons deux choses ici : nous sauvegardons le formulaire grâce à `form.save` et nous ajoutons un auteur. Rappelez-vous, il n'y avait pas de champ `author` dans le `PostForm` mais nous avons obligatoirement besoin d'un auteur pour que le formulaire que nous avons créé soit valide. `commit=False` signifie que nous ne voulons pas encore enregistrer notre modèle `Post`. Nous voulons tout d'abord ajouter un auteur. La plupart du temps, vous utiliserez `form.save()` sans `commit=False`. Cependant, nous en avons besoin ici. `post.save()` va nous permettre de sauvegarder les changements, c'est-à-dire l'ajout d'un auteur. Et voilà, maintenant c'est sûr, un nouveau blog post sera créé !
 
 Enfin, ce serait génial si nous pouvions tout de suite aller à la page `post_detail` du post de blog que nous venons de créer. Pour cela, nous avons besoin d'importer une dernière chose :
 
@@ -235,7 +235,7 @@ def post_new(request):
 
 Voyons si ça marche. Allez à l'adresse http://127.0.0.1:8000/post/new/, ajoutez un `titre` et du `texte`, puis sauvegardez... Et voilà ! Le nouveau post est bien créé et vous êtes redirigé vers la page `post_detail` !
 
-Vous avez peut-être remarqué que nous avons choisit une date de publication avant de sauvegarder le post. Nous en aurons besoin lorsque nous créerons le *publish button* (bouton publier) dans **l'un des extensions du tutoriel Django Girls** (en anglais).
+Vous avez peut-être remarqué que nous avons choisi une date de publication avant de sauvegarder le post. Nous en aurons besoin lorsque nous créerons le *publish button* (bouton publier) dans **l'un des extensions du tutoriel Django Girls** (en anglais).
 
 Encore bravo !
 
@@ -251,7 +251,7 @@ Essayez de sauvegarder un formulaire sans mettre de `titre` ou de `texte`. Devin
 
 Django va s'occuper de la validation : il va regarder si tous les champs de notre formulaire sont en adéquation avec notre modèle. C'est cool, non ?
 
-> Comme nous avons récemment utilisé l'interface d'administration de Django, le système pense que nous sommes encore connectés. Cependant, il y a plusieurs cas qui peuvent amener un utilisateur à être déconnecté : fermer le navigateur, redémarrer la base de données, etc. Si jamais vous obtenez des erreurs lors de la création d'un post qui disent que vous n'êtes pas connecté, retournez sur la page d'administration présente à l'adresse http://127.0.0.1:8000/admin et connectez vous à nouveau. Cependant, vous devinez bien que cette solution n'est pas suffisante à long terme. Afin de corriger ce problème, n'hésitez pas à faire la partie **Devoir : ajouter de la sécurité à son site internet !** qui est située juste après la partie principale du tutoriel.
+> Comme nous avons récemment utilisé l'interface d'administration de Django, le système pense que nous sommes encore connectés. Cependant, il y a plusieurs cas qui peuvent amener un utilisateur à être déconnecté : fermer le navigateur, redémarrer la base de données, etc. Si jamais vous obtenez des erreurs lors de la création d'un post qui disent que vous n'êtes pas connecté, retournez sur la page d'administration présente à l'adresse http://127.0.0.1:8000/admin et connectez-vous à nouveau. Cependant, vous devinez bien que cette solution n'est pas suffisante à long terme. Afin de corriger ce problème, n'hésitez pas à faire la partie **Devoir : ajouter de la sécurité à son site internet !** qui est située juste après la partie principale du tutoriel.
 
 ![Erreur de loggin][4]
 
@@ -312,7 +312,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vous ne trouvez pas que ça ressemble presque à la vue de `post_new` ? Regardons un peu plus en détails. Tout d'abord, nous passons un paramètre `pk` supplémentaire. Ensuite, nous récupérons le modèle `Post` que nous souhaitons éditer à l'aide de `get_object_or_404(Post, pk=pk)`. Puis, lorsque nous créons un formulaire, nous faisons de ce post deux `instances`. Tout d'abord lorsque nous sauvegardons le formulaire :
+Vous ne trouvez pas que ça ressemble presque à la vue de `post_new` ? Regardons un peu plus en détail. Tout d'abord, nous passons un paramètre `pk` supplémentaire. Ensuite, nous récupérons le modèle `Post` que nous souhaitons éditer à l'aide de `get_object_or_404(Post, pk=pk)`. Puis, lorsque nous créons un formulaire, nous faisons de ce post deux `instances`. Tout d'abord lorsque nous sauvegardons le formulaire :
 
 ```python
 form = PostForm(request.POST, instance=post)
@@ -324,13 +324,13 @@ Puis ensuite lorsque nous ouvrons le formulaire associé à ce post afin de l'é
 form = PostForm(instance=post)
 ```
 
-Alors, voyons si ça marche ! Allons à la page `post_detail`. Un bouton d'édition devrait apparaitre dans le coin supérieur droit de la page :
+Alors, voyons si ça marche ! Allons à la page `post_detail`. Un bouton d'édition devrait apparaître dans le coin supérieur droit de la page :
 
 ![Bouton d'édition][5]
 
  [5]: images/edit_button2.png
 
-Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog apparaitre :
+Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog apparaître :
 
 ![Éditer un formulaire][6]
 
@@ -338,9 +338,9 @@ Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog appar
 
 Essayez de manipuler un peu ce que vous venez de créer : ajoutez du texte, changez le titre puis sauvegardez ces changements !
 
-Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalité !
+Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalités !
 
-Si jamais vous voulez en savoir plus sur les formulaire dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/1.8/topics/forms/
+Si jamais vous voulez en savoir plus sur les formulaires dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/1.8/topics/forms/
 
 ## Sécurité
 
@@ -352,7 +352,7 @@ Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la ba
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-On va y ajouter une autre balise `{% if %}` qui ne fera apparaitre le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s dans l’administration : uniquement vous pour le moment ! Changez la balise `<a>` comme ceci :
+On va y ajouter une autre balise `{% if %}` qui ne fera apparaître le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s dans l’administration : uniquement vous pour le moment ! Changez la balise `<a>` comme ceci :
 
 ```html
 {% if user.is_authenticated %}
@@ -362,20 +362,20 @@ On va y ajouter une autre balise `{% if %}` qui ne fera apparaitre le lien qu’
 
 Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’utilisateur⋅trice demandant la page est connecté⋅e. Ce n’est pas une protection complète, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
 
-Comme vous êtes probablement connectée, vous ne verrez aucune différence si vous rafraichissez la page. Mais chargez la page dans un autre navigateur ou dans une fenêtre incognito, et vous verrez que le lien n’apparait pas !
+Comme vous êtes probablement connectée, vous ne verrez aucune différence si vous rafraîchissez la page. Mais chargez la page dans un autre navigateur ou dans une fenêtre incognito, et vous verrez que le lien n’apparaît pas !
 
 ## Encore un petit effort : déployons !
 
 Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déployons à nouveau !
 
-*   Tout d'abord, commiter votre nouveau code et pusher le à nouveau sur Github
+*   Tout d'abord, commitez votre nouveau code et pushez-le à nouveau sur Github
 
     $ git status
     $ git add --all .
     $ git status
     $ git commit -m "Ajout de vues qui permettent de créer et d'éditer un post de blog sur le site."
     $ git push
-    
+
 
 *   Puis, dans la console bash de [PythonAnywhere][7]:
 
@@ -387,7 +387,7 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 *   Enfin, cliquez sur l'onglet [Web][8] et cliquez sur **Reload**.
 
