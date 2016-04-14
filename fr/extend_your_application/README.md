@@ -26,7 +26,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
         </div>
     {% endfor %}
 {% endblock content %}
-```    
+```
 
 {% raw %}Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page avec le contenu de celui-ci. Pour cela, changeons `<h1><a href="">{{ post.title }}</a></h1>` pour qu'il pointe vers la page de contenu du post :{% endraw %}
 
@@ -62,7 +62,12 @@ urlpatterns = [
 ]
 ```
 
-`^post/(?P<pk>[0-9]+)/$` a l'air plutôt effrayant mais, ne vous inquiétez pas : décortiquons-le ensemble : - Il commence par `^`, qui désigne le "début" - `post/` signifie seulement qu'après le début, l'URL doit contenir le mot **post** et **/**. Jusque-là, tout va bien. - `(?P<pk>[0-9]+)` : ok, là, on s'accroche :). Cela signifie que Django va prendre tout ce que vous placez là et le transférer à une vue sous la forme d'une variable appelée `pk`. `[0-9]` nous dit aussi que nous ne voulons que des nombres (tout ce qui est entre 0 et 9 inclus) et non des lettres. `+` signifie qu'il faut, au minimum, un chiffre à cet endroit. Du coup, quelque chose comme `http://127.0.0.1:8000/post//` n'est pas valide tandis que `http://127.0.0.1:8000/post/1234567890/` l'est complètement! - `/` - nous avons encore besoin d'un **/** - `$` - "la fin"!
+`^post/(?P<pk>[0-9]+)/$` a l'air plutôt effrayant mais, ne vous inquiétez pas, décortiquons-le ensemble :
+*   Il commence par `^`, qui désigne le "début"
+*   `post/` signifie seulement qu'après le début, l'URL doit contenir le mot **post** et **/**. Jusque-là, tout va bien.
+*   `(?P<pk>[0-9]+)` : ok, là, on s'accroche :). Cela signifie que Django va prendre tout ce que vous placez là et le transférer à une vue sous la forme d'une variable appelée `pk`. `[0-9]` nous dit aussi que nous ne voulons que des nombres (tout ce qui est entre 0 et 9 inclus) et non des lettres. `+` signifie qu'il faut, au minimum, un chiffre à cet endroit. Du coup, quelque chose comme `http://127.0.0.1:8000/post//` n'est pas valide tandis que `http://127.0.0.1:8000/post/1234567890/` l'est complètement!
+*   `/` - nous avons encore besoin d'un **/**
+*   `$` - "la fin"!
 
 Concrètement, cela signifie que si vous entrez `http://127.0.0.1:8000/post/5/` dans votre barre d'adresse, Django va comprendre que vous cherchez à atteindre une *vue* appelée `post_detail` et qu'il doit communiquer l'information que `pk` est égal `5` dans cette *vue*.
 
@@ -78,15 +83,15 @@ Est-ce que vous vous souvenez de ce que nous devons faire ensuite ? Il falloir a
 
 ## Ajouter une vue pour le contenu du post
 
-Cette fois, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer. Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Attention : notez bien que nous utilisons le même nom que celui que nous avons spécifié dans le fichier url (`pk`). Oublier cette variable est incorrect et va générer une erreur !
+Cette fois, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer. Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Attention : notez bien que nous utilisons le même nom que celui que nous avons spécifié dans le fichier url (`pk`). Oublier cette variable est incorrecte et va générer une erreur !
 
-Maintenant, nous aimerions obtenir qu'un seul blog post. Pour cela, nous allons utiliser des QuerySets qui ressemblent à ceux-ci:
+Maintenant, nous n'aimerions obtenir qu'un seul blog post. Pour cela, nous allons utiliser des QuerySets qui ressemblent à ceux-ci:
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Cependant, il y a un petit problème dans cette ligne de code. Si aucun de nos `Posts` ne possèdent cette `primary key (clef primaire)` (`pk`), nous allons nous retrouver avec une super erreur bien cracra!
+Cependant, il y a un petit problème dans cette ligne de code. Si aucun de nos `Posts` ne possède cette `primary key (clef primaire)` (`pk`), nous allons nous retrouver avec une super erreur bien cracra!
 
 ![Erreur DoesNotExist][3]
 
@@ -122,7 +127,7 @@ Hop, réactualisons la page http://127.0.0.1:8000/
 
  [5]: images/post_list2.png
 
-C'est bon, ça a marché ! Mais que ce passe-t-il lorsque nous cliquons sur un lien dans un titre de blog post ?
+C'est bon, ça a marché ! Mais que se passe-t-il lorsque nous cliquons sur un lien dans un titre de blog post ?
 
 ![Erreur TemplateDoesNotExist][6]
 
@@ -173,7 +178,7 @@ Nous ferions bien de mettre à jour la version de notre site présente sur Pytho
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
-    
+
 
 *   Puis, dans la console bash de [PythonAnywhere][8]:
 
@@ -185,7 +190,7 @@ Nous ferions bien de mettre à jour la version de notre site présente sur Pytho
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 *   Enfin, cliquez sur l'onglet [Web][9] et cliquez sur **Reload**.
 
