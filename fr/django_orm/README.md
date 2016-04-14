@@ -13,13 +13,13 @@ Il est plus simple d'apprendre avec un exemple. Et si nous nous intéressions à
 Ouvrez la console de votre ordinateur (et non celle de PythonAnywhere) et tapez la commande suivante :
 
     (myvenv) ~/djangogirls$ python manage.py shell
-    
+
 
 Ceci devrait maintenant s'afficher dans votre console :
 
     (InteractiveConsole)
     >>>
-    
+
 
 Vous êtes maintenant dans la console interactive de Django. C'est comme celle de Python, mais avec toute la magie qu'apporte Django :). Du coup, les commandes Python sont aussi utilisables dans cette console.
 
@@ -32,7 +32,7 @@ Essayons tout d'abord d'afficher tous nos posts. Vous pouvez le faire à l'aide 
 Traceback (most recent call last):
       File "<console>", line 1, in <module>
 NameError: name 'Post' is not defined
-```    
+```
 
 Ooops ! Voilà que ça nous renvoie une erreur qui nous dit qu'il n'existe pas de Post. En effet, nous avons oublié de commencer par un "import" !
 
@@ -47,7 +47,7 @@ Rien de compliqué : nous importons le modèle `Post` depuis notre `blog.models`
 [<Post: my post title>, <Post: another post title>]
 ```
 
-Cela nous permet d'obtenir une liste des posts que nous avons créé tout à l'heure ! Rappelez-vous : nous avions créé ces posts à l'aide de l'interface d'administration de Django. Cependant, nous aimerions maintenant créer de nouveaux posts à l'aide de python : comment allons-nous nous y prendre ?
+Cela nous permet d'obtenir une liste des posts que nous avons créé tout à l'heure ! Rappelez-vous : nous avions créé ces posts à l'aide de l'interface d'administration de Django. Cependant, nous aimerions maintenant créer de nouveaux posts à l'aide de Python : comment allons-nous nous y prendre ?
 
 ### Créer des objets
 
@@ -97,11 +97,11 @@ Et voilà : un post de plus dans la liste !
 
 ### Ajouter plus de posts
 
-Amusez-vous à ajouter d'autres posts pour vous entrainer un peu. Essayez d'ajouter 2-3 posts en plus puis passez à la partie suivante.
+Amusez-vous à ajouter d'autres posts pour vous entraîner un peu. Essayez d'ajouter 2-3 posts en plus puis passez à la partie suivante.
 
 ### Filtrer les objets
 
-L'intérêt des QuerySets, c'est que l'on peut les filtrer. Disons que nous aimerions retrouver tous les posts écrits par l'utilisateur Ola. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. Les parenthèses vont nous servir à préciser quelles sont conditions auxquelles un post de blog doit se conformer pour être retenu par notre queryset. Dans notre exemple, `author` est égal à `me`. La manière de le dire en Django c'est : `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
+L'intérêt des QuerySets, c'est que l'on peut les filtrer. Disons que nous aimerions retrouver tous les posts écrits par l'utilisateur Ola. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. Les parenthèses vont nous servir à préciser quelles sont les conditions auxquelles un post de blog doit se conformer pour être retenu par notre QuerySet. Dans notre exemple, `author` est égal à `me`. La manière de le dire en Django c'est : `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
 
 ```python
 >>> Post.objects.filter(author=me)
@@ -124,7 +124,7 @@ Comment obtenir une liste de tous les posts publiés ? Cela se fait facilement e
 >>> Post.objects.filter(published_date__lte=timezone.now())
 ```
 
-Malheureusement, le post que nous avons créé dans la console Python n'est pas encore publié. Allons corriger ce problème ! Dans un premier temps, nous aimerions obtenir une instance du post que nous voulons publié :
+Malheureusement, le post que nous avons créé dans la console Python n'est pas encore publié. Allons corriger ce problème ! Dans un premier temps, nous aimerions obtenir une instance du post que nous voulons publier :
 
 ```python
 >>> post = Post.objects.get(title="Sample title")
@@ -136,7 +136,7 @@ Ensuite, publions-le grâce à notre méthode `publish`!
 >>> post.publish()
 ```
 
-Maintenant, essayez d'obtenir à nouveau la liste des posts publiés. Pour cela appuyez trois fois sur la flèche du haut et appuyez sur `entrée` :
+Maintenant, essayez d'obtenir à nouveau la liste des posts publiés. Pour cela, appuyez trois fois sur la flèche du haut et appuyez sur `entrée` :
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
@@ -145,7 +145,7 @@ Maintenant, essayez d'obtenir à nouveau la liste des posts publiés. Pour cela 
 
 ### Classer les objets
 
-Les QuerySets permettent aussi de trier la liste des objets. Essayons de les trier par le champs `created_date` :
+Les QuerySets permettent aussi de trier la liste des objets. Essayons de les trier par le champ `created_date` :
 
 ```python
 >>> Post.objects.order_by('created_date')
@@ -161,7 +161,7 @@ On peut aussi inverser l'ordre de tri en ajouter `-` au début:
 
 ### Chaîner les QuerySets
 
-Vous pouvez aussi combiner les QuerySets and les **chainant** les unes aux autres :
+Vous pouvez aussi combiner les QuerySets and les **chaînant** les unes aux autres :
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

@@ -52,13 +52,13 @@ Si vous avez quand-même envie de comprendre comment nous avons créé nos patte
     \d -> un chiffre
     + -> indique que l'expression précédente doit se répéter au moins une fois
     () -> capture une partie du pattern
-    
+
 
 Tout ce qui ne fait pas partie de ces règles et qui est présent dans la description de ce que l'on cherche sera interprété de manière littérale.
 
 Maintenant, imaginez que vous avez un site web qui a comme adresse : `http://www.mysite.com/post/12345/`. `12345` désigne le numéro de votre post.
 
-Ce serait vraiment pénible de devoir écrire une vue différente pour chaque post que nous aimerions rédiger. Nous allons créer un pattern qui correspond à cette URL et qui nous permettra aussi d'extraire le numéro de post : `^post/(\d+)/$`. Décomposons-là morceau par morceau pour comprendre ce que nous faisons :
+Ce serait vraiment pénible de devoir écrire une vue différente pour chaque post que nous aimerions rédiger. Nous allons créer un pattern qui correspond à cette URL et qui nous permettra aussi d'extraire le numéro de post : `^post/(\d+)/$`. Décomposons-la morceau par morceau pour comprendre ce que nous faisons :
 
 *   **^ post /** indique à Django d'attraper toutes les url qui commencent par `post/` (juste après `^`)
 *   **(\d+)** signifie qu'il y aura un nombre (un ou plusieurs chiffres) que nous souhaitons capturer et extraire
@@ -87,7 +87,7 @@ urlpatterns = [
 
 Django va maintenant rediriger tout ce qui arrive sur "http://127.0.0.1:8000/" vers `blog.urls` puis regardera dans ce fichier pour y trouver la suite des instructions à suivre.
 
-En Python, les expressions régulière commencent toujours par `r` au début de la chaîne de caractères. Cela permet d'indiquer à Python que ce qui va suivre inclus des caractères qu'il ne doit pas interpréter en tant que code python mais en tant qu'expression régulière.
+En Python, les expressions régulière commencent toujours par `r` au début de la chaîne de caractères. Cela permet d'indiquer à Python que ce qui va suivre inclut des caractères qu'il ne doit pas interpréter en tant que code Python mais en tant qu'expression régulière.
 
 ## blog.urls
 
@@ -110,7 +110,7 @@ urlpatterns = [
 
 Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL `^$`. Décomposons cette expression régulière : `^` pour début suivie de `$` pour fin. Si nous mettons ces deux symboles ensemble, cela donne l'impression que nous sommes à la recherche d'une chaîne de caractères (string) vide. Ça tombe bien car c'est exactement ce que nous voulons ! En effet, l'URL resolver de Django ne considère pas 'http://127.0.0.1:8000/' comme faisant partie de l'URL. Ce pattern va donc indiquer à Django d'afficher la vue `views.post_list` à un utilisateur de votre site web qui se rendrait à l'adresse "http://127.0.0.1:8000/".
 
-La dernière partie, `name='post_list'`, est le nom de l'URL qui sera utilisée afin d'identifier la vue. Ce nom peut être le même que celui de la vue ou quelque chose de complètement différent. Plus tard dans ce tutoriel, nous allons utiliser les noms que nous avons donné à nos URLs. Il est donc important de donner un nom unique à chaque URL que nous créons. Pour vous faciliter la tâche, essayez de trouver des nom d'URLs simple à retenir.
+La dernière partie, `name='post_list'`, est le nom de l'URL qui sera utilisée afin d'identifier la vue. Ce nom peut être le même que celui de la vue ou quelque chose de complètement différent. Plus tard dans ce tutoriel, nous allons utiliser les noms que nous avons donné à nos URLs. Il est donc important de donner un nom unique à chaque URL que nous créons. Pour vous faciliter la tâche, essayez de trouver des noms d'URLs simple à retenir.
 
 Est-ce que tout fonctionne toujours ? Ouvrez votre navigateur à l'adresse http://127.0.0.1:8000/ pour vérifier.
 
