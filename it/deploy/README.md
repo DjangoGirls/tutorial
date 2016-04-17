@@ -264,6 +264,7 @@ Elimina tutti i contenuti e sostituiscili con qualcosa di simile:
 
 ```python
 import os
+import sys
 
 path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
 if path not in sys.path:
