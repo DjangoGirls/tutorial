@@ -90,21 +90,21 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django
 
-Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django==1.9` (note that we use a double equal sign: `==`).
+Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a double equal sign: `==`).
 
-    (myvenv) ~$ pip install django==1.9
+    (myvenv) ~$ pip install django~=1.9.0
     Downloading/unpacking django==1.9
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
 
 on Windows
-> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does please consider moving it to another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). After the move please try the above command again.
+> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does please consider using another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 on Windows 8 and Windows 10
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 
->     C:\Users\Name\djangogirls> python -m pip install django==1.9
+>     C:\Users\Name\djangogirls> python -m pip install django~=1.9.0
 
 on Linux
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.

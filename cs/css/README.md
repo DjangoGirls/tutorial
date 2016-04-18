@@ -287,7 +287,7 @@ Tyto soubory ulož a aktualizuj své webové stránky.
 
  [8]: images/final.png
 
-Woohoo! Vypadá to super, ne? Kód, který jsme vložili není opravdu tak těžký pochopit a měla by jsi být schopna pochopit jeho většinu, jen jeho čtením.
+Woohoo! Vypadá to super, ne? Kód, který jsme vložili není opravdu tak těžký pochopit a měla bys být schopna pochopit jeho většinu, jen jeho čtením.
 
 Neobávej se trochu poupravit CSS a pokusit se změnit některé věci. Když něco rozbiješ, neboj se, můžeš jej vždy vrátit zpět!
 

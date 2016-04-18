@@ -188,7 +188,7 @@ Ale co když použijeme nesprávné jméno? Dokážeš odhadnout, co se stane? P
     NameError: name 'ctiy' is not defined
 ```  
 
-Chyba! Jak vidíš, Python má různé typy chyb a tato se nazývá **NameError**. Python ti vrátí tuto chybu pokud se pokusíš použít proměnnou, která nebyla dosud definována. Pokud někdy dojde k této chybě, zkontrolujte svůj kód, aby jsi zjistila jestli jsi nesprávně nezadala nějaké jméno.
+Chyba! Jak vidíš, Python má různé typy chyb a tato se nazývá **NameError**. Python ti vrátí tuto chybu pokud se pokusíš použít proměnnou, která nebyla dosud definována. Pokud někdy dojde k této chybě, zkontrolujte svůj kód, abys zjistila jestli jsi nesprávně nezadala nějaké jméno.
 
 Hraj si s tím chvilku ať vidíš co se s tím dá dělat!
 
@@ -232,7 +232,7 @@ Dobrá máme seznam! Co s ním můžeme dělat? Uvidíme, kolik čísel loterie 
     6
 ```  
 
-Ano! Funkce `len()` ti zjistí počet objektů v seznamu. Šikovné, že? Možná by jsme je teď měli zkusit seřadit:
+Ano! Funkce `len()` ti zjistí počet objektů v seznamu. Šikovné, že? Možná bychom je teď měli zkusit seřadit:
 
 ```
     >>> lottery.sort()
@@ -338,7 +338,7 @@ Podívej, další chyba! Toto je **KeyError**. Python ti napomáhá a řekne ti,
 Kdy použít slovník a kdy seznam? To je dobrý postřeh k zamyšlení. Kdy použít jakou variantu pochopíš, až si přečteš následující řádky.
 
 *   Potřebuješ jen seřazenou sekvenci položek? Použij seznam.
-*   Pokud potřebuješ přiřadit hodnotám klíče, aby jsi je mohla později efektivně vyhledávat (klíčem)? Používej slovník.
+*   Pokud potřebuješ přiřadit hodnotám klíče, abys je mohla později efektivně vyhledávat (klíčem)? Používej slovník.
 
 Slovníky, stejně jako seznamy jsou *mutable/proměnlivé*, což znamená, že je lze změnit po jejich vytvoření. Do slovníku můžeš přidat nové páry klíč/hodnota, po jeho vytvoření:
 
@@ -512,7 +512,7 @@ Dříve jsi si vybrala editor kódu v části [editor kódu][2]. Nyní potřebuj
 
 Samozřejmě teď jsi již pěkně ostřílená python programátorka, tak neváhej napsat nějaký kód, který jsi se dnes naučila.
 
-Teď potřebujeme uložit vytvořený soubor a dát mu popisný název. Pojďme ho nazvat **python_intro.py** a uložte jej na plochu. Soubor můžeš pojmenovat jakkoliv chceš, ale důležitá věc je, aby jsi se ujistila, že soubor končí na **.py**. Přípona **.py** říká našemu operačnímu systému, že jde o **spustitelný soubor Pythonu** a Python ho může spustit.
+Teď potřebujeme uložit vytvořený soubor a dát mu popisný název. Pojďme ho nazvat **python_intro.py** a uložte jej na plochu. Soubor můžeš pojmenovat jakkoliv chceš, ale důležitá věc je, aby ses ujistila, že soubor končí na **.py**. Přípona **.py** říká našemu operačnímu systému, že jde o **spustitelný soubor Pythonu** a Python ho může spustit.
 
 Pokud máš soubor uložen je čas jej spustit! Pomocí dovedností, které jsi se naučila v sekci příkazová řádka, pomocí terminálu **změň adresář** na plochu.
 
@@ -745,7 +745,7 @@ Nyní co si myslíš, že se stane, když tam napíšeš jiné jméno než (Ola 
     Hi anonymous!
 ```
 
-To je paráda, co? Nemusíš se opakovat a měnit touto cestou jméno pokaždé, když chceš aby funkce pozdravila jinou osobu. To je přesně důvodu proč potřebujeme funkce, aby jsme nikdy neopakovali náš kód!
+To je paráda, co? Nemusíš se opakovat a měnit touto cestou jméno pokaždé, když chceš aby funkce pozdravila jinou osobu. To je přesně důvodu proč potřebujeme funkce, abychom nikdy neopakovali náš kód!
 
 Udělejme to ještě chytřeji – existuje více jmen než dvě, a psaní podmínky pro každé by bylo těžké, že?
 

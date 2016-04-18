@@ -171,7 +171,7 @@ Otevři znovu `blog/views.py`. Vše, co máme aktuálně v `post_new` je toto:
          return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Když odešleme formulář, vrátíme se zpět na ten samý view, ale tentokrát obdržíme nějaká další data v `request`, přesněji v `request.POST` (pojmenování nemá nic společného s naším "post" v blogu, vychází to z toho, že "zasíláme" data). Pamatuješ si, že v našem HTML souboru ve `<form>` jsme definovali proměnnou `method="POST"`? Všechna pole z formuláře jsou nyní k dispozici v proměnné `request.POST`. Neměla by jsi přejmenovávat `POST` na něco jiného (jediná další platná hodnota proměnné `method` je `GET`, ale nyní nemáme čas vysvětlovat rozdíly).
+Když odešleme formulář, vrátíme se zpět na ten samý view, ale tentokrát obdržíme nějaká další data v `request`, přesněji v `request.POST` (pojmenování nemá nic společného s naším "post" v blogu, vychází to z toho, že "zasíláme" data). Pamatuješ si, že v našem HTML souboru ve `<form>` jsme definovali proměnnou `method="POST"`? Všechna pole z formuláře jsou nyní k dispozici v proměnné `request.POST`. Neměla bys přejmenovávat `POST` na něco jiného (jediná další platná hodnota proměnné `method` je `GET`, ale nyní nemáme čas vysvětlovat rozdíly).
 
 Takže v našem *view* máme dvě samostatné situace ke zpracování. První: když načteme stránku poprvé a chceme dostat prázdný formulář. Druhou: když se vrátíme zpět do našeho *view* s vyplněnými daty formuláře. Takže musíme přidat podmínku (použijeme na to `-if`).
 
@@ -202,7 +202,7 @@ Zkontrolujeme, je-li formulář platný, a pokud ano, můžeme ho uložit!
 
 V podstatě, tady máme dvě věci: ukládáme formulář pomocí `form.save` a přidáváme autora (vzhledem k tomu, že v `PostForm` nebylo žádné pole `Autor` v a toto pole je požadováno!). `commit=False` znamená, že ještě nechceme `Post` uložit pomocí modelu - chceme nejdříve přidat autora. Většinu času budeš používat `form.save()`, bez `commit=False`, ale v tomto případě to potřebujeme takto udělat. `post.save()` zachová změny (přidá autora) a vytvoří nový příspěvek na blogu!
 
-A nakonec, by bylo úžasné, pokud by jsme okamžitě přešli na stránku `post_detail` s nově vytvořeným příspěvkem, že ano? K tomu potřebujeme jeden další import:
+A nakonec, by bylo úžasné, pokud bychom okamžitě přešli na stránku `post_detail` s nově vytvořeným příspěvkem, že ano? K tomu potřebujeme jeden další import:
 
 ```python
     from django.shortcuts import redirect
@@ -259,7 +259,7 @@ Django se stará o ověřování, že všechna pole v našem formuláři jsou sp
 
 ## Upravit formulář
 
-Teď víme, jak přidat nový formulář. Ale co když chceme upravit stávající? Je to velmi podobné, tomu jsme právě dělali. Vytvoříme teď některé důležité věci rychle (pokud něčemu neporozumíš, měla by jsi požádat svého kouče, nebo se podívat do předchozích kapitol, protože jsme již všechny tyto kroky probírali).
+Teď víme, jak přidat nový formulář. Ale co když chceme upravit stávající? Je to velmi podobné, tomu jsme právě dělali. Vytvoříme teď některé důležité věci rychle (pokud něčemu neporozumíš, měla bys požádat svého kouče, nebo se podívat do předchozích kapitol, protože jsme již všechny tyto kroky probírali).
 
 Otevři `blog/templates/blog/post_detail.html` a přidej následující řádek:
 

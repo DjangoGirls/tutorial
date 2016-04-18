@@ -31,6 +31,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
     5
 
 Nice! See how the answer popped out? Python knows math! You could try other commands like:
+
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
