@@ -1,5 +1,5 @@
-* [Czech (beta)](cs/)
 * [English](en/)
+* [Czech (beta)](cs/)
 * [Español (beta)](es/)
 * [Français](fr/)
 * [Italian (beta)](it/)
