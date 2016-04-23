@@ -72,7 +72,7 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
 E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi comandi:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "La mia app Django Girls, primo commit"
      [...]
      13 files changed, 200 insertions(+)

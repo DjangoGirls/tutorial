@@ -77,7 +77,7 @@ Bylo by dobré vidět, jestli tvá webová stránka bude stále fungovat i na we
 ```
     $ git status
     [...]
-    $ git add -A .
+    $ git add --all .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

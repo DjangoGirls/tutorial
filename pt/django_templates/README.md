@@ -75,7 +75,7 @@ Seria bom ver se seu site ainda estará funcionando na internet, certo? Vamos te
     
     ```
     $ git status 
-    $ git add -A . 
+    $ git add --all . 
     $ git status 
     $ git commit -m "Added views to create/edit blog post inside the site." 
     $ git push

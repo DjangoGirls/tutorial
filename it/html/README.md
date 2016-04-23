@@ -164,7 +164,7 @@ Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy (esegui ques
 
 Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includere tutte le modifiche in questa directory:
 
-    $ git add -A .
+    $ git add --all .
 
 
 > **Nota** `-A` (diminutivo di "all") significa che `git` riconoscerà anche il fatto che hai cancellato dei file (per impostazione predefinita, esso riconosce soltanto i file nuovi/modificati). Ricorda anche (dal capitolo 3) che il `.` significa la directory attuale.

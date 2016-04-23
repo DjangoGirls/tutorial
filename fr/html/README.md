@@ -164,7 +164,7 @@ Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre d
 
 Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
 
-    $ git add -A .
+    $ git add --all .
     
 
 > **Note** `-A` (abréviation de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.

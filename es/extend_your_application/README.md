@@ -166,7 +166,7 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
 ```
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push

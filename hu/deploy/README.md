@@ -71,7 +71,7 @@ Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint 
 
 Végül mentsük le a változtatásokat. A konzolban futtasd le a következő parancsokat:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
