@@ -167,7 +167,7 @@ Nejdříve se podívejme které soubory se změnily od posledního nasazení (de
 Ujisti se, že jsi v `djangogirls` adresáři a řekni `gitu`, ať zahrne všechny nové změny v adresáři:
 
 ```
-    $ git add -A .
+    $ git add --all .
 ```  
 
 > **Poznámka** `-A` (zkratka pro "all", tj. "vše") znamená, že `git` také rozpozná jestli jsi smazala nějaké soubory (defaultně rozpoznává pouze nové a modifikované soubory). Taky si vzpomeň (ze 3. kapitoly), že `.` znamená aktuální adresář.

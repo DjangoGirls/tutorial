@@ -174,7 +174,7 @@ Yay ! Ça marche!
 Nous ferions bien de mettre à jour la version de notre site présente sur PythonAnywhere. On s'accroche et on déploie encore une fois :)
 
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push

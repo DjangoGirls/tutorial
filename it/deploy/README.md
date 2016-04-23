@@ -44,6 +44,7 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
     __pycache__
     myvenv
     db.sqlite3
+    /static
     .DS_Store
     
 
@@ -71,7 +72,7 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
 E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi comandi:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "La mia app Django Girls, primo commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -264,6 +265,7 @@ Elimina tutti i contenuti e sostituiscili con qualcosa di simile:
 
 ```python
 import os
+import sys
 
 path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
 if path not in sys.path:

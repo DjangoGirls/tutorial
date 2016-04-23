@@ -372,7 +372,7 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 *   İlk önce kodumuzu commit edelim, sonra Github'a push edelim
 
 ```$ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Web sitesine güncelleme ve yaratma için view eklendi."
 $ git push

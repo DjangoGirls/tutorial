@@ -75,7 +75,7 @@ Dobrze byłoby sprawdzić, czy Twoja strona dalej działa w internecie, prawda? 
 
     $ git status
     [...]
-    $ git add -A .
+    $ git add --all .
     $ git status
     [...]
     $ git commit -m "Modyfikacja szablonu, by pokazywal posty z bazy danych"

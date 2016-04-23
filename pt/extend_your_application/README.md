@@ -162,7 +162,7 @@ Yay! Funciona!
 Seria bom ver se seu site ainda estará trabalhando em PythonAnywhere, certo? Vamos tentar fazer deploy novamente.
 ```bash
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push

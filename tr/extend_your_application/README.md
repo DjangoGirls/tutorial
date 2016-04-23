@@ -159,7 +159,7 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
 
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Detaylı blog gönderileri için CSS'e ilaveten view ve template eklendi."
 $ git push

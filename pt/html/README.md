@@ -164,7 +164,7 @@ Primeiro de tudo, vejamos quais arquivos foram alterados desde a última implant
 
 Verifique se você está no diretório `djangogirls` e vamos dizer ao `git` para incluir todas as mudanças dentro deste diretório:
 
-    $ git add -A .
+    $ git add --all .
     
 
 > **Nota** `-A` (abreviação de "all", tudo em inglês) significa que o `git` também reconhecerá se você deletou algum arquivo (por padrão, o git apenas reconhece arquivos criados/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.

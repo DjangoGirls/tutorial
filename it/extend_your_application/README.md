@@ -168,7 +168,7 @@ Si! Ha funzionato!
 Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhere, vero? Proviamo a fare un alrto deploy.
 
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push

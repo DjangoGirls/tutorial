@@ -371,7 +371,7 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 *   Po pierwsze zapiszmy nasze zmiany i wyślijmy je na Githuba
 
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Dodano widok tworzenia/edytowania posta bezposrednio na stronie."
     $ git push

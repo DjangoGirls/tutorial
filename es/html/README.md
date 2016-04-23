@@ -164,7 +164,7 @@ En primer lugar, veamos qué archivos han cambiado desde que hicimos el desplieg
 
 Asegúrate de que estás en el directorio `djangogirls` y vamos a decirle a `git` que incluya todos los cambios dentro de este directorio:
 
-    $ git add -A .
+    $ git add --all .
     
 
 > **Nota** `-A` (abreviatura de "all") significa que `git` también reconocerá si has eliminado archivos (por defecto, sólo reconoce archivos nuevos/modificados). También recuerda (del capítulo 3) que `.` significa el directorio actual.

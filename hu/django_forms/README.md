@@ -371,7 +371,7 @@ Nézzük meg, hogy működik-e ez az egész a PythonAnywhere-en. Itt az ideje eg
 *   Először is commitold az új kódodat, és pushold GitHubra
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push

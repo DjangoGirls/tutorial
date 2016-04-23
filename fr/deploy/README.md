@@ -51,7 +51,9 @@ db.sqlite3
 
 Enregistrez ce fichier `.gitignore` dans votre répertoire principal "djangogirls".
 
-> **Attention** : le point au début du nom du fichier est important ! Vous pouvez parfois rencontrer des difficultés à créer ce fichier. Par exemple, Mac ne vous laisse pas enregistrer un fichier qui commence par un point dans Finder. Pour contourner ce problème, utilisez la fonction "enregistrer sous" de votre éditeur : ça marche à tous les coups !
+> **Attention**: le point au début du nom du fichier est important ! Vous pouvez parfois rencontrer des difficultés à créer ce fichier. Par exemple, Mac ne vous laisse pas enregistrer un fichier qui commence par un point dans Finder. Pour contourner ce problème, utilisez la fonction "enregistrer sous" de votre éditeur : ça marche à tous les coups!
+
+> **Note** L'un des fichiers spécifiés dans `.gitignore` est `db.sqlite3`. Ce fichier est votre base de donnée locale, où tous vos posts de blog sont stockés. Ce fichier n'est pas ajouté à la base de données parce que votre site internet sur PythonAnywhere utilise une base de donnée différente.  Cette base de donnée peut être en SQLite, comme celle créée localement sur votre ordinateur mais en général, une base de données appelée MySQL est utilisée parce qu'elle peut gérer beaucoup plus de visiteurs qu'une base de données SQLite. Dans tous les cas, ignorer votre base de donneés SQLite pour la copie sur GitHub signifie que tous les posts que vous avez créé jusqu'à maintenant vont rester sur votre machine locale et ne seront accessible que depuis cette machine. Vous allez devoir les ajouter à nouveau sur votre site internet en production. Considérez votre base de données locale comme une aire de jeu où vous pouvez essayer des choses différentes sans vous souciez de supprimer un de vos vrais post de blog.
 
 Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. Cela permet surtout d'éviter les mauvaises surprises, comme l'ajout ou l'envoi d'un mauvais fichier. La commande `git status` permet d'obtenir des informations sur tous les fichiers non-suivis/modifiés/mis-à-jour, l'état de la branche, et bien plus encore. Voici ce qui se passe lorsque vous tapez cette commande :
 
@@ -73,7 +75,7 @@ Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des c
 
 Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour enregistrer nos changements, nous allons devoir taper les commandes suivantes :
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -178,45 +180,17 @@ Tout comme sur votre ordinateur, vous allez devoir créer un environnement virtu
 
     $ source myvenv/bin/activate
 
-    (mvenv) $  pip install django whitenoise
+
+    (mvenv) $  pip install django~=1.9.0
     Collecting django
     [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
+    Successfully installed django-1.9
 
 
 > **Note** : L'étape `pip install` peut prendre quelques minutes. Patience, patience ! Cependant, si cela prend plus de 5 minutes, c'est que quelque chose ne va pas. N'hésitez pas à solliciter votre coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-### Collecter les fichiers statiques.
-
-Mais qu'est-ce que "whitenoise" ? C'est un outil qui permet de servir des "fichiers statiques". Les fichiers statiques sont des fichiers qui ne changent que très rarement ou qui n’exécutent pas de code de programmation. C'est le cas des fichiers HTML ou CSS. Les fichiers statiques ne se comportent pas de la même façon sur un serveur et sur votre ordinateur : nous avons besoin d'un outil comme "whitenoise" pour qu'ils soient servis.
-
-Pour le moment, vous n'avez pas besoin d'en savoir plus ! Ne vous inquiétez pas : nous reviendrons plus tard sur les fichiers statiques (partie CSS). L'objectif de ce chapitre est de poser toutes les bases nécessaires au déploiement pour passer rapidement à la suite :)
-
-Pour l'instant, il ne nous reste juste qu'à exécuter une dernière commande sur notre serveur : `collectstatic`. Cette instruction va permettre à Django de rassembler tous les fichiers statiques dont il va avoir besoin sur le serveur. Pour le moment, il s'agit surtout des fichiers qui servent à rendre l'interface d'administration plus jolie.
-
-    (mvenv) $ python manage.py collectstatic
-
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-
-        /home/edith/my-first-blog/static
-
-    This will overwrite existing files!
-    Are you sure you want to do this?
-
-    Type 'yes' to continue, or 'no' to cancel: yes
-
-
-Tapez "yes", et c'est parti ! Personnellement, j'adore accompagner l'affichage de ces longues listes de texte impénétrable par un bruit de vieille imprimante : brp, brp, brp...
-
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/my-first-blog/static'.
 
 
 ### Créer une base de données sur PythonAnywhere
@@ -268,20 +242,23 @@ Supprimer le contenu du fichier et le remplacer par ce qui suit :
 import os
 import sys
 
-path = '/home/<your-username>/my-first-blog'  # remplacer your-username par votre nom d’utilisateur
+path = '/home/<your-username>/my-first-blog'  # use your own username here
 if path not in sys.path:
     sys.path.append(path)
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
 ```
 
 > **Note** : N'oubliez pas de remplacer `<your-username>` par votre nom d'utilisateur
+> **Note** : A la ligne 3, on s'assure que PythonAnywhere saura trouver notre application. Il est très important que ce chemin d'accès soit correct, et plus particulièrement qu'il n'y ait pas d'espaces en plus. Dans le cas contraire "ImportError" s'affichera dans le log d'erreur.
 
-Le but de ce fichier est de permettre à PythonAnywhere de savoir où votre application web se situe et de connaître le nom des fichiers de configuration de Django. Cela permet aussi de configurer l'outil "whitenoise" qui s'occupe des fichiers statiques.
+Le but de ce fichier est de permettre à PythonAnywhere de savoir où votre application web se situe et de connaître le nom des fichiers de configuration de Django.
+
+`StaticFilesHandler` sert à gérer notre CSS. Cette étape est réalisée automatiquement en exécutant la commande `runserver`. Nous aborderons un peu plus en détails les fichiers statiques quand nous éditerons le CSS de notre site.
 
 Cliquez sur **Save** puis, retournez dans l'onglet **Web**.
 

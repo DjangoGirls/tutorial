@@ -86,7 +86,7 @@ E salve como `.gitignore` na pasta de nível superior "djangogirls".
 
 E finalmente nós salvamos nossas alterações, Vá para o seu console e execute estes comandos:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)

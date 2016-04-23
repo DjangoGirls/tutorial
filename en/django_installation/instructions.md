@@ -16,12 +16,12 @@ All you need to do is find a directory in which you want to create the `virtuale
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
-    mkdir djangogirls
-    cd djangogirls
+    $ mkdir djangogirls
+    $ cd djangogirls
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-    python3 -m venv myvenv
+    $ python3 -m venv myvenv
 
 ### Windows
 
@@ -90,7 +90,7 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django
 
-Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a double equal sign: `==`).
+Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a tilde followed by an equal sign: `~=`).
 
     (myvenv) ~$ pip install django~=1.9.0
     Downloading/unpacking django==1.9

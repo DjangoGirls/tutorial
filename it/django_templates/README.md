@@ -75,7 +75,7 @@ Sarebbe bello vedere se il tuo sito funziona ancora su Internet, giusto? Proviam
 
     $ git status
     [...]
-    $ git add -A .
+    $ git add --all .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

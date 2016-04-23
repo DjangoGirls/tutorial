@@ -14,7 +14,7 @@ Avez-vous déjà eu l'impression que la technologie prend une place de plus en p
 
 Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
-Ce tutoriel ne va pas vous transformer en programmeuse du jour au lendemain. Devenir vraiment bonne peut prendre des mois, voire même des années d'apprentissage et de pratique. Mais nous voulons vous montrer que programmer ou créer des sites web n'est pas aussi compliqué que ça en a l'air. Nous allons essayer de vous expliquer différents morceaux afin de rendre la technologie moins intimidante.
+Ce tutoriel ne va pas vous transformer en programmeuse du jour au lendemain. Devenir vraiment bonne peut prendre des mois, voire même des années d'apprentissage et de pratique. Mais nous voulons vous montrer que programmer ou créer des sites web n'est pas aussi compliqué que ça en ait l'air. Nous allons essayer de vous expliquer différents morceaux afin de rendre la technologie moins intimidante.
 
 Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimons !
 

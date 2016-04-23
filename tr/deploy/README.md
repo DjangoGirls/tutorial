@@ -76,7 +76,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşağıdaki komutları çalıştırın:
 
 ```
-$ git add -A
+$ git add --all
 $ git commit -m "Django Girls uygulamam, ilk commit"
  [...]
  13 files changed, 200 insertions (+)

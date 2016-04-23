@@ -76,7 +76,7 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
 ```
     $ git status
     [...]
-    $ git add -A .
+    $ git add --all .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

@@ -76,7 +76,7 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
 ```
 $ git status
 [...]
-$ git add -A .
+$ git add --all .
 $ git status
 [...]
 $ git commit -m "Modified templates to display posts from database."

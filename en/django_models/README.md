@@ -64,22 +64,24 @@ To keep everything tidy, we will create a separate application inside our projec
     (myvenv) ~/djangogirls$ python manage.py startapp blog
 
 You will notice that a new `blog` directory is created and it contains a number of files now. Our directories and files in our project should look like this:
-
+    
     djangogirls
-    ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
     ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
+    └── mysite
         ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 

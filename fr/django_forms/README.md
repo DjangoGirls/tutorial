@@ -371,7 +371,7 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
 *   Tout d'abord, commitez votre nouveau code et pushez-le à nouveau sur Github
 
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Ajout de vues qui permettent de créer et d'éditer un post de blog sur le site."
     $ git push
