@@ -18,7 +18,7 @@ Afin d'afficher une variable dans un template Django, nous utiliserons des doubl
 {{ posts }}
 ```
 
-Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraîchissez votre page pour voir le résultat :
+Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
 
 ![Figure 13.1][1]
 
@@ -60,7 +60,7 @@ Essayez ceci dans votre template.
 {% endfor %}
 ```
 
-{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet présent dans la liste. Rafraîchissez votre page :{% endraw %}
+{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet présent dans la liste. Rafraichissez votre page :{% endraw %}
 
 ![Figure 13.3][3]
 
@@ -97,7 +97,7 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
 
  [5]: https://www.pythonanywhere.com/web_app_setup/
 
-Félicitations ! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration ? N'oubliez pas d'ajouter une date de publication ! Ensuite, rafraîchissez votre page et regardez si votre post apparaît.
+Félicitations ! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration ? N'oubliez pas d'ajouter une date de publication ! Ensuite, rafraichissez votre page et regardez si votre post apparait.
 
 Ça a marché ? Nous sommes super fières de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
 
