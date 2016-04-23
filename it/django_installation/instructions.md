@@ -61,7 +61,8 @@ Avvia il tuo virtualenv digitando:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-#### Linux and OS X
+
+#### Linux e OS X
 
 Avvia il tuo virtualenv digitando:
 
