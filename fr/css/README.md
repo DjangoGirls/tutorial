@@ -23,7 +23,7 @@ Pour installer Bootstrap, vous avez besoin d'ajouter ceci dans le `<head>` de vo
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-En faisant ceci, vous n'ajoutez aucun nouveau fichier à votre projet : vous reliez simplement des fichiers hébergés sur Internet à votre projet. Essayez maintenant de rafraîchir votre page. Et voilà !
+En faisant ceci, vous n'ajoutez aucun nouveau fichier à votre projet : vous reliez simplement des fichiers hébergés sur Internet à votre projet. Essayez maintenant de rafraichir votre page. Et voilà !
 
 ![Figure 14.1][1]
 
@@ -67,7 +67,7 @@ Nous n'allons pas trop nous attarder sur les CSS aujourd'hui. Nous vous invitons
 
  [2]: http://www.codecademy.com/tracks/web
 
-Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ces codes commencent par `#` et sont suivis de 6 lettres (A-F) et chiffres (0-9). Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies][3], comme `red` ou `green`.
+Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre entête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ces codes commencent par `#` et sont suivis de 6 lettres (A-F) et chiffres (0-9). Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies][3], comme `red` ou `green`.
 
  [3]: http://www.w3schools.com/cssref/css_colornames.asp
 
@@ -132,7 +132,7 @@ Maintenant, votre fichier doit ressembler à ceci :
 </html>
 ```
 
-Ok, on sauvegarde et on rafraîchit la page !
+Ok, on sauvegarde et on rafraichit la page !
 
 ![Figure 14.2][5]
 
@@ -152,7 +152,7 @@ Ajoutez ceci à votre fichier CSS, sauvegardez-le et voyons le résultat !
 
  [6]: images/margin2.png
 
-Et si nous changions aussi la police de caractères de notre en-tête ? Collez ceci dans la partie `<head>` de votre fichier `blog/templates/blog/post_list.html` :
+Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans la partie `<head>` de votre fichier `blog/templates/blog/post_list.html` :
 
 ```html
 <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -160,7 +160,7 @@ Et si nous changions aussi la police de caractères de notre en-tête ? Collez c
 
 Cette ligne nous permet d'importer la police de caractères *Lobster* depuis Google Fonts (https://www.google.com/fonts).
 
-Maintenant, ajoutons `font-family: 'Lobster';` à l'intérieur du bloc déclaratif `h1 a` dans le fichier CSS `blog/static/css/blog.css`. Le bloc déclaratif est le code situé à l'intérieur des accolades `{` et `}`. N'oubliez pas ensuite de rafraîchir la page.
+Maintenant, ajoutons `font-family: 'Lobster';` à l'intérieur du bloc déclaratif `h1 a` dans le fichier CSS `blog/static/css/blog.css`. Le bloc déclaratif est le code situé à l'intérieur des accolades `{` et `}`. N'oubliez pas ensuite de rafraichir la page.
 
 ```css
 h1 a {
@@ -175,9 +175,9 @@ h1 a {
 
 Super !
 
-Comme nous l'avions mentionné précédemment, il existe une notion de classe dans CSS. En gros, cela vous permet de donner un nom à un morceau de code HTML auquel vous souhaitez appliquer un style particulier sans que cela ne concerne le reste du code. C'est particulièrement pratique lorsque vous avez deux divs qui font quelque chose de différent (par exemple, votre en-tête et votre post) et que vous ne voulez pas qu'ils soient identiques.
+Comme nous l'avions mentionné précédemment, il existe une notion de classe dans CSS. En gros, cela vous permet de donner un nom à un morceau de code HTML auquel vous souhaitez appliquer un style particulier sans que cela ne concerne le reste du code. C'est particulièrement pratique lorsque vous avez deux divs qui font quelque chose de différent (par exemple, votre entête et votre post) et que vous ne voulez pas qu'ils soient identiques.
 
-Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre en-tête. Votre fichier doit ressembler maintenant à ceci :
+Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci :
 
 ```html
 <div class="page-header">
@@ -279,7 +279,7 @@ Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit 
 </div>
 ```
 
-Sauvegardez les fichiers modifiés et rafraîchissez votre site web.
+Sauvegardez les fichiers modifiés et rafraichissez votre site web.
 
 ![Figure 14.4][8]
 
@@ -289,6 +289,6 @@ Woohoo ! C'est pas mal, non ? Le code que nous avons collé n'est pas bien compl
 
 N'ayez pas peur et jouez un peu avec la CSS : essayez par exemple d'en changer des morceaux. Vous avez cassé quelque chose ? Pas de problème : vous pouvez toujours annuler vos modifications !
 
-Voilà pour la partie CSS. Nous vous encourageons vivement à suivre le tutoriel gratuit de [Code Academy][2] : considérez ce tutoriel comme un petit travail à faire une fois rentrée chez vous. Vous connaîtrez ainsi tout ce qu'il y a à savoir pour rendre son site bien plus joli !
+Voilà pour la partie CSS. Nous vous encourageons vivement à suivre le tutoriel gratuit de [Code Academy][2] : considérez ce tutoriel comme un petit travail à faire une fois rentrée chez vous. Vous connaitrez ainsi tout ce qu'il y a à savoir pour rendre son site bien plus joli !
 
 Prête pour le chapitre suivant ? :)
