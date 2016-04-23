@@ -75,7 +75,7 @@ Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des c
 
 Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour enregistrer nos changements, nous allons devoir taper les commandes suivantes :
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)

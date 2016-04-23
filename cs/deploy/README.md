@@ -74,7 +74,7 @@ Je vhodné použít příkaz `git status` před použitím příkazu `git add` n
 A nakonec uložíme naše změny. Přejdi do konzole a spusť tyto příkazy:
 
 ```
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
     [...]
     13 files changed, 200 insertions(+)

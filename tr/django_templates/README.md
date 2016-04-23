@@ -77,7 +77,7 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 ```
 $ git status
 [...]
-$ git add -A .
+$ git add --all .
 $ git status
 [...]
 $ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."

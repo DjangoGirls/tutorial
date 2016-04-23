@@ -163,7 +163,7 @@ PythonAnywhere에서도 웹사이트가 잘 작동하는지 봐야겠죠? 다시
 
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push

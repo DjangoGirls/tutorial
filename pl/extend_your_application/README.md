@@ -168,7 +168,7 @@ Hura! Działa!
 Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć projekt.
 
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Dodano widok i szablon dla poszczegolnego wpisu na stronie."
     $ git push

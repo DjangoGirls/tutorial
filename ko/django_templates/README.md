@@ -76,7 +76,7 @@ __장고 템플릿 태그(Django template tags)__ 는 파이썬을 HTML로 바�
 ```
 $ git status
 [...]
-$ git add -A .
+$ git add --all .
 $ git status
 [...]
 $ git commit -m "Modified templates to display posts from database."

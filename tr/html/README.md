@@ -168,7 +168,7 @@ $ git status
 `djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
 
 ```
-$ git add -A .
+$ git add --all .
 ```
 
 > **Not:** `-A` (hepsi için bir kısaltma - İngilizce'de "all" hepsi demek) `git`'in silinmiş dosyaları tanır (normalde sadece yeni/güncellenmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).

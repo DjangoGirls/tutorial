@@ -346,7 +346,7 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
 
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push

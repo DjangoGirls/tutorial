@@ -69,7 +69,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
 
 And finally we save our changes. Go to your console and run these commands:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)

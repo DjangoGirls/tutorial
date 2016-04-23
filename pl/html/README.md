@@ -164,7 +164,7 @@ Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji 
 
 Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
 
-    $ git add -A .
+    $ git add --all .
 
 
 > **Uwaga:** `-A` (skrót od "all", czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.

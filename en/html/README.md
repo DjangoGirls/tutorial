@@ -154,7 +154,7 @@ First off, let's see what files have changed since we last deployed (run these c
 
 Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
-    $ git add -A .
+    $ git add --all .
 
 > __Note__ `-A` (short for "all") means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 

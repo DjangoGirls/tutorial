@@ -72,7 +72,7 @@ Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` 
 
 I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)

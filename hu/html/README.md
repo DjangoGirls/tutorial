@@ -164,7 +164,7 @@ Először nézzük meg, hogy milyen fájlok változtak a legutóbbi deploy óta 
 
 A `djangogirls` mappában kell lenned, és a `git`-tel add hozzá az összes változtatást a könyvtáradon belül:
 
-    $ git add -A .
+    $ git add --all .
     
 
 > **Megjegytés** `-A` (az "all" rövidítése) azt jelenti, hogy a `git` felismeri, ha fájlokat törölsz (alapból csak az új, és módosított fájlokat ismeri fel). Korábban már volt róla szó (a 3. fejezetben), hogy a `.` az aktuális mappát jelenti.

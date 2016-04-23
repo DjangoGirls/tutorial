@@ -371,7 +371,7 @@ Uvidíme, jestli to funguje na PythonAnywhere. Čas na další nasazení!
 
 ```
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push

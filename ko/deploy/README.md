@@ -71,7 +71,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 자 이제 우리가 만든 코드들을 저장소에 넣어봅시다. 콘솔창에 가서 다음 명령어를 실행하세요. :
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "My Django Girls app, 첫번째 커밋"
      [...]
      13 files changed, 200 insertions(+)
