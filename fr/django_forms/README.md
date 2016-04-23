@@ -79,7 +79,7 @@ Après avoir ajouté cette ligne, votre fichier html devrait maintenant ressembl
 </html>
 ```
 
-Sauvegardez votre fichier et rafraîchissez la page http://127.0.0.1:8000 : vous devez normalement tomber encore une fois sur l'erreur `NoReverseMatch` !
+Sauvegardez votre fichier et rafraichissez la page http://127.0.0.1:8000 : vous devez normalement tomber encore une fois sur l'erreur `NoReverseMatch` !
 
 ## URL
 
@@ -149,7 +149,7 @@ Ok, voyons maintenant à quoi devrait ressembler le fichier `post_edit.html` :
 {% endblock %}
 ```
 
-Rafraîchissons la page ! Et voilà : le formulaire s'affiche !
+Rafraichissons la page ! Et voilà : le formulaire s'affiche !
 
 ![Nouveau formulaire][2]
 
@@ -324,13 +324,13 @@ Puis ensuite lorsque nous ouvrons le formulaire associé à ce post afin de l'é
 form = PostForm(instance=post)
 ```
 
-Alors, voyons si ça marche ! Allons à la page `post_detail`. Un bouton d'édition devrait apparaître dans le coin supérieur droit de la page :
+Alors, voyons si ça marche ! Allons à la page `post_detail`. Un bouton d'édition devrait apparaitre dans le coin supérieur droit de la page :
 
 ![Bouton d'édition][5]
 
  [5]: images/edit_button2.png
 
-Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog apparaître :
+Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog apparaitre :
 
 ![Éditer un formulaire][6]
 
@@ -352,7 +352,7 @@ Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la ba
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-On va y ajouter une autre balise `{% if %}` qui ne fera apparaître le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s dans l’administration : uniquement vous pour le moment ! Changez la balise `<a>` comme ceci :
+On va y ajouter une autre balise `{% if %}` qui ne fera apparaitre le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s dans l’administration : uniquement vous pour le moment ! Changez la balise `<a>` comme ceci :
 
 ```html
 {% if user.is_authenticated %}
@@ -362,7 +362,7 @@ On va y ajouter une autre balise `{% if %}` qui ne fera apparaître le lien qu�
 
 Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’utilisateur⋅trice demandant la page est connecté⋅e. Ce n’est pas une protection complète, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
 
-Comme vous êtes probablement connectée, vous ne verrez aucune différence si vous rafraîchissez la page. Mais chargez la page dans un autre navigateur ou dans une fenêtre incognito, et vous verrez que le lien n’apparaît pas !
+Comme vous êtes probablement connectée, vous ne verrez aucune différence si vous rafraichissez la page. Mais chargez la page dans un autre navigateur ou dans une fenêtre incognito, et vous verrez que le lien n’apparait pas !
 
 ## Encore un petit effort : déployons !
 
