@@ -179,7 +179,7 @@ Once we've done that, we upload (push) our changes up to Github:
 
 ```
 $ cd ~/my-first-blog
-(myvenv)$ git pull
+$ git pull
 [...]
 ```
 
