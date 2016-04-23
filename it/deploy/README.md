@@ -44,6 +44,7 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
     __pycache__
     myvenv
     db.sqlite3
+    /static
     .DS_Store
     
 
