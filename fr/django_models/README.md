@@ -152,7 +152,7 @@ Et sinon, c'est quoi `def publish(self):` ? Il s'agit de notre méthode `publish
 
 Les méthodes renvoient (`return`) souvent quelque chose. C'est le cas de la méthode `__str__`. Dans notre tutoriel, lorsque nous appellerons la méthode `__str__()`, nous allons obtenir du texte (**string**) avec un titre de Post.
 
-Si quelque chose ne vous paraît pas clair au sujet des modèles, n'hésitez pas à demander à votre coach ! Cela peut être compliqué à comprendre la première fois, surtout lorsque l'on apprend les objets et les fonctions en même temps. Gardez espoir ! Avec le temps, tout cela vous paraîtra de moins en moins magique et de plus en plus évident !
+Si quelque chose ne vous parait pas clair au sujet des modèles, n'hésitez pas à demander à votre coach ! Cela peut être compliqué à comprendre la première fois, surtout lorsque l'on apprend les objets et les fonctions en même temps. Gardez espoir ! Avec le temps, tout cela vous paraitra de moins en moins magique et de plus en plus évident !
 
 ### Créer des tables pour votre modèle dans votre base de données
 
