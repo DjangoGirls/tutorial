@@ -252,7 +252,7 @@ Une fois l'assistant fermé, vous serez automatiquement conduite sur la page de 
 
  [7]: images/pythonanywhere_web_tab_virtualenv.png
 
-Dans la section "Virtualenv", cliquez sur le texte en rouge qui indique "Enter the path to a virtualenv" (ajouter le chemin d'accès de votre environnement virtuel), et ajouter ceci : */home/<your-username>/my-first-blog/myvenv/*. Cliquez sur la boîte bleue avec la case à cocher pour sauvegarder le chemin d’accès.
+Dans la section "Virtualenv", cliquez sur le texte en rouge qui indique "Enter the path to a virtualenv" (ajouter le chemin d'accès de votre environnement virtuel), et ajouter ceci : */home/<your-username>/my-first-blog/myvenv/*. Cliquez sur la boite bleue avec la case à cocher pour sauvegarder le chemin d’accès.
 
 > **Note** : N'oubliez pas de mettre votre nom d'utilisateur. Ne vous inquiétez pas : si vous faites une erreur, PythonAnywhere vous le signalera.
 
