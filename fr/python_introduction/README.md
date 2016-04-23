@@ -27,7 +27,7 @@ Après avoir lancé la commande Python, votre prompt (ou invite de commandes) s'
 
 Quand vous voudrez sortir de la console Python, tapez `exit()` ou utilisez le raccourci `Ctrl + Z` pour Windows ou `Ctrl + D` pour Mac/Linux. Après ça, vous ne verrez plus le `>>>`.
 
-Pour le moment, nous ne voulons pas quitter la console Python car nous nous aimerions mieux la connaître. Démarrons avec quelque chose de vraiment simple. Par exemple, faisons un peu de math : tapez `2 + 3` et appuyez sur `entrée`.
+Pour le moment, nous ne voulons pas quitter la console Python car nous nous aimerions mieux la connaitre. Démarrons avec quelque chose de vraiment simple. Par exemple, faisons un peu de math : tapez `2 + 3` et appuyez sur `entrée`.
 
 ```python
 >>> 2 + 3
@@ -263,7 +263,7 @@ Facile, non ? Si vous voulez ajouter quelque chose à la liste, vous pouvez le f
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Si vous ne souhaitez afficher que le premier nombre, vous pouvez le faire en utilisant des **indices**. Un indice est un nombre qui dit où l'élément apparaît dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
+Si vous ne souhaitez afficher que le premier nombre, vous pouvez le faire en utilisant des **indices**. Un indice est un nombre qui dit où l'élément apparait dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
 
 ```python
 >>> print(lottery[0])
@@ -474,7 +474,7 @@ Vous pouvez aussi faire ça :
 False
 ```
 
-Entraînez-vous et amusez-vous avec les Booleéns en essayant de lancer les commandes suivantes :
+Entrainez-vous et amusez-vous avec les Booleéns en essayant de lancer les commandes suivantes :
 
 *   `True and True`
 *   `False and True`
