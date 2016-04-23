@@ -10,7 +10,7 @@ This tutorial has been translated from English to French by a group of awesome v
 
 ## Introduction
 
-Avez-vous déjà eu l'impression que la technologie prend une place de plus en plus importante, mais que vous êtes en quelque sorte laissée à la traîne ? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
+Avez-vous déjà eu l'impression que la technologie prend une place de plus en plus importante, mais que vous êtes en quelque sorte laissée à la traine ? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
 
 Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
