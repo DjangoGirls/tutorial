@@ -97,7 +97,7 @@ Et voilà : un post de plus dans la liste !
 
 ### Ajouter plus de posts
 
-Amusez-vous à ajouter d'autres posts pour vous entraîner un peu. Essayez d'ajouter 2-3 posts en plus puis passez à la partie suivante.
+Amusez-vous à ajouter d'autres posts pour vous entrainer un peu. Essayez d'ajouter 2-3 posts en plus puis passez à la partie suivante.
 
 ### Filtrer les objets
 
@@ -159,9 +159,9 @@ On peut aussi inverser l'ordre de tri en ajouter `-` au début:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Chaîner les QuerySets
+### Chainer les QuerySets
 
-Vous pouvez aussi combiner les QuerySets and les **chaînant** les unes aux autres :
+Vous pouvez aussi combiner les QuerySets and les **chainant** les unes aux autres :
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
