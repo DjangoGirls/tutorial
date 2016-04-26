@@ -14,7 +14,7 @@ Ok, allons-y ! Ouvrons ce fichier pour voir ce qu'il contient :
 from django.shortcuts import render
 
 # Create your views here.
-```    
+```
 
 Il n'y pas encore grand chose dans ce fichier. La vue la plus simple que l'on peut créer ressemble à ceci :
 
@@ -23,7 +23,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Comme vous pouvez le voir, nous avons créé une méthode (`def`) appelé `post_list` qui prend une `request (requête)` et `return (retourne)` une méthode `render` qui va permettre d'assembler tout ça selon notre template `blog/post_list.html`.
+Comme vous pouvez le voir, nous avons créé une méthode (`def`) appelée `post_list` qui prend une `request (requête)` et `return (retourne)` une méthode `render` qui va permettre d'assembler tout ça selon notre template `blog/post_list.html`.
 
 Sauvegardez votre fichier et allez à l'adresse http://127.0.0.1:8000/ pour voir ce qui s'affiche maintenant.
 

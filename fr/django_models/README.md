@@ -1,6 +1,6 @@
 # Les modèles dans Django
 
-Maintenant, nous aimerions créer quelque chose qui permet stocker les articles de notre blog. Mais avant de pour pouvoir faire ça, nous allons tout d'abord devoir vous parler d'un truc qui s'appelle les `objets`.
+Maintenant, nous aimerions créer quelque chose qui permet de stocker les articles de notre blog. Mais avant de pouvoir faire ça, nous allons tout d'abord devoir vous parler d'un truc qui s'appelle les `objets`.
 
 ## Les objets
 
@@ -21,18 +21,18 @@ Ensuite, nous pouvons donner des actions au `Chat` : `ronronner`, `gratter` ou `
     ronronner()
     gratter()
     nourrir(nourriture_pour_chat)
-    
-    
+
+
     NourriturePourChat
     --------
     gout
-    
+
 
 L'idée qu'il faut retenir, c'est que l'on décrit les choses du monde réel avec des propriétés (appelées `propriétés des objets`) et des actions (appelées `méthodes`).
 
 Du coup, comment modéliser les articles de blog ? C'est bien gentil les chats, mais ce qui nous intéresse, ça reste de faire un blog !
 
-Pour ça, il faut réponde à la question : qu'est-ce qu'un article de blog ? Quelles propriétés devrait-il avoir ?
+Pour ça, il faut répondre à la question : qu'est-ce qu'un article de blog ? Quelles propriétés devrait-il avoir ?
 
 Pour commencer, notre blog post doit avoir du texte : il a bien du contenu et un titre, n'est-ce pas ? Et puis, ce serait bien de savoir aussi qui l'a écrit. On a donc besoin d'un auteur. Enfin, on aimerait aussi savoir quand l'article a été écrit et publié.
 
@@ -43,7 +43,7 @@ Pour commencer, notre blog post doit avoir du texte : il a bien du contenu et un
     author
     created_date
     published_date
-    
+
 
 Quel genre d'actions pourrions-nous faire sur un article de blog ? Un bon début serait d'avoir une `méthode` qui permet de publier le post.
 
@@ -64,7 +64,7 @@ Pour vous aider à visualiser ce qu'est une base de données, pensez à un table
 Pour éviter le désordre, nous allons créer une application séparée à l'intérieur de notre projet. Prenez l'habitude de bien tout organiser dès le début. Afin de créer une application, nous avons besoin d'exécuter la commande suivante dans notre console (prenez garde à bien être dans le dossier `djangogirls` où se trouve le fichier `manage.py`) :
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient différents fichiers. Vos dossiers et fichiers liés à votre projet doivent maintenant être organisés selon cette structure :
 
@@ -83,9 +83,9 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
         ├── models.py
         ├── tests.py
         └── views.py
-    
 
-Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour cela, nous allons nous éditer le fichier `mysite/settings.py`. Trouvez la section `INSTALLED_APPS` et ajoutez `'blog',` juste avant `)`. La section doit maintenant ressembler à ceci :
+
+Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour cela, nous allons éditer le fichier `mysite/settings.py`. Trouvez la section `INSTALLED_APPS` et ajoutez `'blog',` juste avant `)`. La section doit maintenant ressembler à ceci :
 
 ```python
 INSTALLED_APPS = (
@@ -136,13 +136,13 @@ Toutes les lignes qui commencent par `from` ou `import` sont des lignes qui perm
 `class Post(models.Model):` - C'est cette ligne qui permet de définir notre modèle. C'est un `object`).
 
 *   Le mot clef spécial `class` permet d'indiquer que nous sommes en train de définir un objet.
-*   `Post` est le nom de notre modèle. Vous pouvez lui donner un autre nom mais vous ne pouvez pas utiliser de caractères spéciaux ou accentués et insérer des espaces. Le nom d'une classe commence toujours par une majuscule.
+*   `Post` est le nom de notre modèle. Vous pouvez lui donner un autre nom mais vous ne pouvez pas utiliser de caractères spéciaux ou accentués ni insérer des espaces. Le nom d'une classe commence toujours par une majuscule.
 *   `models.Model` signifie que Post est un modèle Django. Comme ça, Django sait qu'il doit l'enregistrer dans la base de données.
 
 Maintenant, nous allons pouvoir définir les propriétés dont nous parlions au début de ce chapitre : `title (titre)`, `text (texte)`, `created_date (date de création)`, `published_date (date de publication)` et `author (auteur)`. Pour cela, nous allons avoir besoin de définir le type de chaque champ (Est-ce que c'est du texte? Un nombre ? Une date ? Une relation à un autre objet, un utilisateur par exemple ?).
 
 *   `models.CharField` - Cela nous permet de définir un champ texte avec un nombre limité de caractères.
-*   `models.TextField` - Cela nous permet de définir un champ text sans limite de caractères. Parfait pour le contenu d'un blog post !
+*   `models.TextField` - Cela nous permet de définir un champ texte sans limite de caractères. Parfait pour le contenu d'un blog post !
 *   `models.DateTimeField` - Définit que le champ en question est une date ou une heure.
 *   `models.ForeignKey` - C'est un lien vers un autre modèle.
 
@@ -162,7 +162,7 @@ La dernière étape pour cette section est d'ajouter notre nouveau modèle à no
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 Django vient de nous préparer un fichier de migration que nous allons pouvoir appliquer dès maintenant à notre base de données. Pour cela, tapez `python manage.py migrate blog`. Normalement, vous devrez voir ceci s'afficher dans votre console :
 
@@ -172,6 +172,6 @@ Django vient de nous préparer un fichier de migration que nous allons pouvoir a
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+
 
 Youpi ! Notre modèle Post est maintenant intégré à la base de données. Ce serait cool de voir à quoi il ressemble réellement ! Pour ça, il va falloir attaquer la section suivante ! Au boulot ;)!

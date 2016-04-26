@@ -21,7 +21,7 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
     blog
     └───templates
         └───blog
-    
+
 
 Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
@@ -29,7 +29,7 @@ Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le momen
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
-> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande et arrêtez votre server en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
+> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande et arrêtez votre serveur en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
 
 ![Figure 11.1][1]
 
@@ -44,7 +44,7 @@ Ajoutez ce qui suit à votre fichier template :
     <p>Hi there!</p>
     <p>It works!</p>
 </html>
-```    
+```
 
 Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http://127.0.0.1:8000/
 
@@ -139,7 +139,7 @@ Voici un exemple de template utilisant plusieurs balises :
 Nous avons créé trois sections à l'aide de `div`.
 
 *   Le premier `div` contient le titre de notre blog - c'est à la fois un titre et un lien
-*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre post.
+*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p` (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 
@@ -160,31 +160,31 @@ Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, d�
 Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
     $ git status
-    
+
 
 Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
 
     $ git add --all .
-    
+
 
 > **Note** `-A` (abréviation de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
 
-Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaître en vert) :
+Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaitre en vert) :
 
     $ git status
-    
+
 
 On y est presque : nous devons maintenant lui dire de sauvegarder ces changements dans son historique. Nous allons y ajouter un "message de commit" qui nous permettra de décrire ce qui a été changé. Vous pouvez mettre ce que vous voulez dans un message de commit. Généralement, il est préférable de mettre quelque chose d'utile qui vous permettra de vous souvenir plus tard de ce que vous avez fait.
 
     $ git commit -m "Modification du HTML du site"
-    
+
 
 > **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
 Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos modifications sur GitHub :
 
     git push
-    
+
 
 ### Puller les modifications sur PythonAnywhere et recharger son appli web
 
@@ -198,7 +198,7 @@ Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos mod
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-    
+
 
 Voilà ! Votre code modifié est téléchargé. Si vous voulez vérifier ce que vous venez de récupérer, vous pouvez aller jeter un coup d’œil dans l'onglet **Files** de PythonAnywhere.
 
@@ -206,4 +206,4 @@ Voilà ! Votre code modifié est téléchargé. Si vous voulez vérifier ce que 
 
  [6]: https://www.pythonanywhere.com/web_app_setup/
 
-Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aider à votre coach :)
+Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aide à votre coach :)

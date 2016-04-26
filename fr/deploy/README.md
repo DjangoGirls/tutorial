@@ -34,7 +34,7 @@ Git conserve toutes les modifications apportées à un ensemble de fichiers dans
     Initialise un dépôt Git vide à l'emplacement ~/djangogirls/.git/
     $ git config --global user.name "Votre nom"
     $ git config --global user.email you@exemple.com
-    
+
 
 L'initialisation d'un dépôt git ne se fait qu'une fois par projet. De même, vous n'aurez plus jamais à ré-entrer votre nom d'utilisateur ou votre email.
 
@@ -47,7 +47,7 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
-``` 
+```
 
 Enregistrez ce fichier `.gitignore` dans votre répertoire principal "djangogirls".
 
@@ -55,23 +55,23 @@ Enregistrez ce fichier `.gitignore` dans votre répertoire principal "djangogirl
 
 > **Note** L'un des fichiers spécifiés dans `.gitignore` est `db.sqlite3`. Ce fichier est votre base de donnée locale, où tous vos posts de blog sont stockés. Ce fichier n'est pas ajouté à la base de données parce que votre site internet sur PythonAnywhere utilise une base de donnée différente.  Cette base de donnée peut être en SQLite, comme celle créée localement sur votre ordinateur mais en général, une base de données appelée MySQL est utilisée parce qu'elle peut gérer beaucoup plus de visiteurs qu'une base de données SQLite. Dans tous les cas, ignorer votre base de donneés SQLite pour la copie sur GitHub signifie que tous les posts que vous avez créé jusqu'à maintenant vont rester sur votre machine locale et ne seront accessible que depuis cette machine. Vous allez devoir les ajouter à nouveau sur votre site internet en production. Considérez votre base de données locale comme une aire de jeu où vous pouvez essayer des choses différentes sans vous souciez de supprimer un de vos vrais post de blog.
 
-Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. Cela permet surtout d'éviter les mauvaises surprises, comme l'ajout ou l'envoi d'un mauvais fichiers. La commande `git status` permet d'obtenir des informations sur tous les fichiers non-suivis/modifiés/mis-à-jour, l'état de la branche, et bien plus encore. Voici ce qui se passe lorsque vous tapez cette commande :
+Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. Cela permet surtout d'éviter les mauvaises surprises, comme l'ajout ou l'envoi d'un mauvais fichier. La commande `git status` permet d'obtenir des informations sur tous les fichiers non-suivis/modifiés/mis-à-jour, l'état de la branche, et bien plus encore. Voici ce qui se passe lorsque vous tapez cette commande :
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour enregistrer nos changements, nous allons devoir taper les commandes suivantes :
 
@@ -82,7 +82,7 @@ Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour en
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Publier votre code sur GitHub
 
@@ -108,19 +108,19 @@ Tapez les instructions suivantes dans votre console (remplacez `<votre-nom-d'uti
 
     $ git remote add origin https://github.com/<votre-nom-d'utilisateur-github>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Entrez votre nom d'utilisateur et mot de passe Github. Vous devriez voir quelque chose comme ceci :
 
-    Username for 'https://github.com': votre-nom 
-    Password for 'https://votre-nom@github.com': 
+    Username for 'https://github.com': votre-nom
+    Password for 'https://votre-nom@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
     To https://github.com/votre-nom/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -144,7 +144,7 @@ Une fois enregistré sur PythonAnywhere, vous serez automatiquement redirigée s
 Importons notre code depuis Github vers PythonAnywhere en créant un "clone" de notre dépôt. Tapez la commande suivante dans la console de PythonAnywhere (n'oubliez pas d'utiliser votre nom d'utilisateur Github à la place de `<your-github-username>`):
 
     $ git clone https://github.com/<votre-nom-d'utilisateur-github>/my-first-blog.git
-    
+
 
 Cette commande va permettre d'effectuer une copie de votre code vers PythonAnywhere. La commande `tree my-first-blog` permet d'afficher un aperçu de ce qui se trouve maintenant sur votre serveur :
 
@@ -165,35 +165,37 @@ Cette commande va permettre d'effectuer une copie de votre code vers PythonAnywh
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Créer un virtualenv sur PythonAnywhere
 
 Tout comme sur votre ordinateur, vous allez devoir créer un environnement virtuel et installer Django sur PythonAnywhere. L'opération est identique, à une différence près pour les utilisatrices de Windows : il s'agit ici d'une console Linux. Pas de panique, c'est très simple ! Ouvrez la console Bash de PythonAnywhere et tapez les commandes suivantes :
 
     $ cd my-first-blog
-    
+
     $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
+
     (mvenv) $  pip install django~=1.9.0
     Collecting django
     [...]
     Successfully installed django-1.9
-    
+
 
 > **Note** : L'étape `pip install` peut prendre quelques minutes. Patience, patience ! Cependant, si cela prend plus de 5 minutes, c'est que quelque chose ne va pas. N'hésitez pas à solliciter votre coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
-    
+
+
 
 ### Créer une base de données sur PythonAnywhere
 
-Tout comme l'environnement virtuel, la base de données n'est pas partagée entre le serveur et votre ordinateur. Cela signifie, entre autre, que vous n'aurez plus forcément les mêmes utilisateurs et les mêmes posts sur votre ordinateur et sur PythonAnywhere.
+Tout comme l'environnement virtuel, la base de données n'est pas partagée entre le serveur et votre ordinateur. Cela signifie, entre autre, que vous n'aurez plus forcément les mêmes utilisateurs ni les mêmes posts sur votre ordinateur et sur PythonAnywhere.
 
 Pour créer une base de données sur PythonAnywhere, nous allons taper les mêmes commandes que sur notre ordinateur: d'abord `migrate`, puis `createsuperuser`:
 
@@ -201,14 +203,14 @@ Pour créer une base de données sur PythonAnywhere, nous allons taper les même
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-    
+
 
 ## Faire de votre blog une application web
 
-Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt, les fichiers statiques sont recueillis et la base de données est initialisé. Nous sommes prêts à le publier comme une application web !
+Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt, les fichiers statiques sont recueillis et la base de données est initialisée. Nous sommes prêts à le publier comme une application web !
 
 Retourner sur la page d'accueil de PythonAnywhere en cliquant sur le logo en haut à gauche. Ensuite, cliquez sur l'onglet **Web** et **Add a new web app**.
 
