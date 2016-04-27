@@ -51,7 +51,7 @@ Pojďme vytvořit adresu URL v `urls.py` pro náš `post_detail` *view*!
 
 Chceme, aby se detail našeho prvního příspěvku zobrazil na této **URL**: http://127.0.0.1:8000/post/1 /
 
-Pojďme vytvořit adresu URL v souboru `blog/urls.py` odkazující Django na *view* s názvem `post_detail`, který bude zobrazovat celý příspěvek blogu. Přidej řádek `url (r'^ post/(?)P< pk>[0-9] +)/$', views.post_detail, name='post_detail'),` do souboru `blog/urls.py`. Tento soubor by měl vypadat takto:
+Pojďme vytvořit adresu URL v souboru `blog/urls.py` odkazující Django na *view* s názvem `post_detail`, který bude zobrazovat celý příspěvek blogu. Přidej řádek `url (r'^post/(?)P< pk>[0-9]+)/$', views.post_detail, name='post_detail'),` do souboru `blog/urls.py`. Tento soubor by měl vypadat takto:
 
 ```python
      from django.conf.urls import include, url
