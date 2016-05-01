@@ -222,7 +222,7 @@ In the "Virtualenv" section, click the red text that says "Enter the path to a v
 
 Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file.
 
-Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
 Delete all the contents and replace them with something like this:
 
@@ -230,7 +230,7 @@ Delete all the contents and replace them with something like this:
 import os
 import sys
 
-path = '/home/<your-username>/my-first-blog'  # use your own username here
+path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
 if path not in sys.path:
     sys.path.append(path)
 
@@ -241,7 +241,7 @@ from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
 
-> **Note** Don't forget to substitute in your own username where it says `<your-username>`
+> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`
 > **Note** In line three, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
