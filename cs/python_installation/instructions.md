@@ -1,10 +1,10 @@
 > Tato podkapitola čerpá z Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django je napsán v Pythonu. Na to abys mohla cokoliv dělat v Djangu potřebuješ Python. Začněme s instalací! Chceme, aby si nainstalovala verzi Python 3.4, pokud máš starší verzi, musíš jí upgradovat.
+Django je napsán v Pythonu. Na to, abys mohla cokoliv dělat v Djangu, potřebuješ Python. Začněme s instalací! Chceme, aby sis nainstalovala verzi Python 3.4, takže pokud máš starší verzi, musíš ji upgradovat.
 
 ### Windows
 
-Python pro Windows můžeš stáhnout z webové stránky https://www.python.org/downloads/release/python-343/. Po stažení **msi** souboru, by si jej měla spustit (poklepáním na něj) a postupovat podle uvedených pokynů. Je důležité si zapamatovat cestu (k adresáři), kam jsi Python nainstalovala. Později jej budeš potřebovat!
+Python pro Windows můžeš stáhnout z webové stránky https://www.python.org/downloads/release/python-343/. Po stažení **msi** souboru, by sis jej měla spustit (poklepáním na něj) a postupovat podle uvedených pokynů. Je důležité si zapamatovat cestu (k adresáři), kam jsi Python nainstalovala. Později jej budeš potřebovat!
 
 Pozor na jednu věc: na druhé obrazovce průvodce instalací, označené "Přizpůsobit", se ujisti, že máš zvolenou možnost "Add python.exe to the Path":
 
@@ -61,4 +61,4 @@ Ověř, zda instalace proběhla úspěšně, otevři aplikaci *Terminal* a spus�
 
 * * *
 
-Pokud máš nějaké pochybnosti nebo se něco při instalaci nepovedlo a ty nemáš ponětí co dělat dál - zeptej se svého kouče! Někdy se věci nevyvíjejí hladce a je lepší požádat o pomoc někoho s více zkušenostmi.
+Pokud máš nějaké pochybnosti nebo se něco při instalaci nepovedlo a ty nemáš ponětí, co dělat dál - zeptej se svého kouče! Někdy se věci nevyvíjejí hladce a je lepší požádat o pomoc někoho s více zkušenostmi.
