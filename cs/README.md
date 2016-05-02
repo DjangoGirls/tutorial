@@ -7,15 +7,15 @@
 
 Už jsi někdy měla pocit, že svět je stále více a více o technologii a ty zůstáváš nějak pozadu? Přemýšlela jsi někdy, jak vytvořit webové stránky, ale nikdy jsi neměla dostatek motivace začít? Přemýšlela jsi někdy, že svět softwaru je pro tebe příliš složitý, abys zkusila něco naprogramovat sama?
 
-Máme pro tebe dobrou zprávu! Programování není tak těžké jak se zdá, a zde ti chceme ukázat, jak zábavné to může být.
+Máme pro tebe dobrou zprávu! Programování není tak těžké, jak se zdá, a zde ti chceme ukázat, jak zábavné to může být.
 
-Tento návod tě magicky nepromění v programátora. Jestli chceš být dobrý programátor, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky, tak jednoduše jak dokážeme, aby ses necítila zastrašena technologií.
+Tento návod tě magicky nepromění v programátora. Jestli chceš být dobrý programátor, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky, tak jednoduše, jak dokážeme, aby ses necítila zastrašena technologií.
 
-Doufáme, že se nám podaří ti přiblížit tuto technologii tak, abys ji měla stejně ráda jako my!
+Doufáme, že se nám podaří přiblížit ti tuto technologii tak, abys ji měla stejně ráda jako my!
 
 ## Co se naučíš během kurzu?
 
-Po dokončení kurzu budeš mít jednoduchou, fungující webovou aplikaci: vlastní blog. Ukážeme ti jak ho zprovoznit online, tak aby ostatní mohli vidět tvojí práci!
+Po dokončení kurzu budeš mít jednoduchou, fungující webovou aplikaci: vlastní blog. Ukážeme ti, jak ho zprovoznit online, tak aby ostatní mohli vidět tvoji práci!
 
 Tvá aplikace (více či méně) bude vypadat takto:
 
