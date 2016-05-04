@@ -190,7 +190,7 @@ form = PostForm(request.POST)
 
 Facile! Come prossima cosa dobbiamo controllare se il form è corretto (per cui che tutti i campi necessari siano stati impostati e che non ci siano valori sbagliati). Possiamo fare questo con `form.is_valid()`.
 
-Se la forma viene ritenuta valida verrà salvata!
+Se il form viene ritenuto valido verrà salvato!
 
 ```python
 if form.is_valid():
