@@ -468,6 +468,9 @@ Now use Python to execute the code in the file like this:
 
     $ python3 python_intro.py
     Hello, Django girls!
+Note: on windows 'python3' is not recognized as a command, instead use 'python' to execute the file:
+
+    > python python_intro.py
 
 Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
@@ -503,7 +506,7 @@ Save it and give it another run:
 
     $ python3 python_intro.py
     It works!
-
+Note: Remember for Windows 'python3' is not recognized as a command, Henceforth, Replace 'python3' with 'python' to execute the file
 ### What if a condition isn't True?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
