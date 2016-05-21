@@ -11,9 +11,9 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 ## Crea un enlace en la plantilla
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así:
-```html
+``` html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         {% for post in posts %}
             <div class="post">
@@ -51,7 +51,7 @@ Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`
 ``` python
 from django.conf.urls import include, url
 from . import views
-    
+
 urlpatterns = [
     url(r'^$', views.post_list),
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
@@ -84,8 +84,11 @@ Esta vez nuestra *view* tomará un parámetro adicional `pk`. Nuestra *view* nec
 
 Ahora, queremos sólo un post del blog. Para ello podemos usar querysets como este:
 
+``` python
+
     Post.objects.get(pk=pk)
-    
+
+```
 
 Pero este código tiene un problema. Si no hay ningún `Post` con `llave primaria` (`pk`) tendremos un error muy feo.
 
@@ -105,14 +108,19 @@ La buena noticia es que puedes crear tu propia página `Page Not Found` y diseñ
 
 Deberíamos abrir `blog/views.py` y agregar el siguiente código:
 
+```python
+
     from django.shortcuts import render, get_object_or_404
-    
+
+```
 
 Cerca de otras líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
-``` def post_detail(request, pk):
+```python
+def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
+
 ```    
 
 Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
@@ -135,7 +143,7 @@ Se verá así:
 
 ```html
     {% extends 'blog/base.html' %}
-    
+
     {% block content %}
         <div class="post">
             {% if post.published_date %}
@@ -164,12 +172,15 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 ## Una cosa más: ¡Tiempo de implementación!
 
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
+
 ```
+
     $ git status
     $ git add --all .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
+
 ```    
 
 *   Luego, en una [consola Bash de PythonAnywhere][8]
