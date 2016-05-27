@@ -1,6 +1,6 @@
 # Úvod do HTML
 
-Co je to šablona, se ami ptáš?
+Co je to šablona, se asi ptáš?
 
 Šablona je soubor, který můžeme opakovaně použít pro prezentaci různých informací v konzistentním formátu - například bys mohla šablonu použít pro psaní dopisu, protože přestože každý dopis může obsahovat jinou zprávu a být adresován jiné osobě, všechny dopisy budou sdílet stejný formát.
 
