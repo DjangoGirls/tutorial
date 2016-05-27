@@ -36,7 +36,7 @@ Se parece a esto:
 
 Imagina que cuando escribes http://djangogirls.org, estas enviando una carta que dice: "Queridos Django Girls, me gustaría ver su sitio web djangogrils.org. Por favor, envíenmelo!"
 
-Tu carta va hacia la oficina de correo más cercana. Luego va a otra un poco más cercana de su destinatario, luego a otra y a otra hasta que es entregada en su destino. Lo única cosa diferente es que si tu envías cartas (*paquetes de datos*) con frecuencia al mismo lugar, cada carta puede pasar por oficinas de correos (*routers*) totalmente diferentes, dependiendo de cómo se distribuyen en cada oficina.
+Tu carta va hacia la oficina de correo más cercana. Luego va a otra un poco más cercana de su destinatario, luego a otra y a otra hasta que es entregada en su destino. La única cosa diferente es que si tu envías cartas (*paquetes de datos*) con frecuencia al mismo lugar, cada carta puede pasar por oficinas de correos (*routers*) totalmente diferentes, dependiendo de cómo se distribuyen en cada oficina.
 
 ![Figura 1.4][5]
 
