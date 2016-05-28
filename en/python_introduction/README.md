@@ -228,13 +228,13 @@ If you want to show only the first number, you can do this by using __indexes__.
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-To delete something from your list you will need to use __indexes__ as we learnt above and the __del__ statement (del is an abbreviation for delete). Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
+To delete something from your list you will need to use __indexes__ as we learnt above and the `pop()` method. Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
     59
-    >>> del lottery[0]
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
 
@@ -299,9 +299,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Hop onto the next line for some amazing things.
 
-You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 

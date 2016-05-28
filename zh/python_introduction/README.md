@@ -248,13 +248,13 @@
 
 正如你所见，你可以通过使用列表名和置于方括号中的对象索引来访问列表中的不同元素。
 
-如果需要从列表中删除元素，需要使用 **索引** 和上面学到的 **del** 语句 （del 是 delete 的缩写）来完成。 我们看个例子，删除列表中的第一个数字，以加强我们之前学到的知识。
+如果需要从列表中删除元素，需要使用 **索引** 和上面学到的 `pop()` 语句来完成。 我们看个例子，删除列表中的第一个数字，以加强我们之前学到的知识。
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
     59
-    >>> del lottery[0]
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
     
@@ -324,7 +324,7 @@
 
 你可以使用`del`命令去删除字典里的元素。 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
 
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
     
