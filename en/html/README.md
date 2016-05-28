@@ -95,6 +95,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<h1>A heading</h1>` - for your most important heading
 - `<h2>A sub-heading</h2>` for a heading at the next level
 - `<h3>A sub-sub-heading</h3>` ... and so on, up to `<h6>`
+- `<p>A paragraph of text</p>`
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
 - `<br />` goes to another line (you can't put anything inside br)
