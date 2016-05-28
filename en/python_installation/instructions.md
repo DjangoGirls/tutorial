@@ -13,6 +13,8 @@ One thing to watch out for:  on the second screen of the installation wizard, ma
 
 ![Don't forget to add Python to the Path](../python_installation/images/add_python_to_windows_path.png)
 
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → All Programs → Accessories → Command Prompt. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+
 ### Linux
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
