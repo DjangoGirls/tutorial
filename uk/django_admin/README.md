@@ -36,7 +36,7 @@ admin.site.register(Post)
 
 ![Django адміністратор](images/edit_post3.png)
 
-Якщо бажаєте дізнатися більше про Django admin, гляньте документацію Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Якщо бажаєте дізнатися більше про Django admin, гляньте документацію Django: https://docs.djangoproject.com/en/1.9/ref/contrib/admin/
 
 Це напевне гарний час щоб налити кави (чи чаю) чи з’їсти щось щоб перезарядитися. Ви створили свою першу модель Django і заслуговуєте на короткий тайм-аут!
 
