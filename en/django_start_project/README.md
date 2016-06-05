@@ -72,6 +72,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
+> `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
 ## Setup a database
 
