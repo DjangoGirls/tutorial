@@ -69,7 +69,7 @@ CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 이�
 
 하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. `#`으로 시작해 알파벳(A-F)와 숫자(0-9) 중 6개를 조합해 나타내요. 이 곳에서 색깔 코드를 찾을 수 있어요: http://www.colorpicker.com/ 또는 [미리 정의 된 색][3], 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있습니다.
 
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+ [3]: http://www.w3schools.com/colors/colors_names.asp
 
 `blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
@@ -160,7 +160,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-이 코드 라인은 구글 폰트 (https://www.google.com/fonts)에서 *Lobster* 폰트를 불러온 거에요.
+이 코드 라인은 구글 폰트 (https://www.google.com/fonts) 에서 *Lobster* 폰트를 불러온 거에요.
 
 이제 CSS에 `font-family: 'Lobster';`를 추가하세요 ; `blog/static/css/blog.css`파일 안에 `h1 a` 안에 있는 블록 (다음 표기가 된 부분 안에 `{` and `}`) 에 추가하고 새로고침을 누르세요. :
 
