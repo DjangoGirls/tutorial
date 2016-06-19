@@ -274,14 +274,14 @@ Si vous ne souhaitez afficher que le premier nombre, vous pouvez le faire en uti
 
 Comme vous pouvez le voir, nous pouvons accéder à différents objets dans la liste en utilisant le nom de la liste suivi de l'indice de l'objet entre crochets.
 
-Pour supprimer un objet de votre liste, vous aurez besoin de son **indice** ainsi que de la commande **del** (del est une abréviation de delete (supprimer)). Essayons l'exemple suivant : supprimez le premier numéro de votre liste.
+Pour supprimer un objet de votre liste, vous aurez besoin de son **indice** ainsi que de la commande `pop()`. Essayons l'exemple suivant : supprimez le premier numéro de votre liste.
 
 ```python
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 >>> print(lottery[0])
 59
->>> del lottery[0]
+>>> lottery.pop(0)
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -355,10 +355,10 @@ Comme pour les listes, la fonction `len()` permet d'obtenir le nombre de paires 
 
 J'espère que c'est compréhensible pour l'instant :) Prête pour s'amuser un peu plus avec les dictionnaires ? Passez à la ligne suivante pour voir des trucs géniaux.
 
-Vous pouvez utiliser la commande `del` pour supprimer un élément du dictionnaire. Par exemple, si vous voulez supprimer l'entrée correspondant à la clé `« favorite_numbers »`, tapez la commande suivante :
+Vous pouvez utiliser la commande `pop()` pour supprimer un élément du dictionnaire. Par exemple, si vous voulez supprimer l'entrée correspondant à la clé `« favorite_numbers »`, tapez la commande suivante :
 
 ```python
->>> del participant['favorite_numbers']
+>>> participant.pop('favorite_numbers')
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```

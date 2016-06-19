@@ -274,14 +274,14 @@ Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indeksler) ile
 
 Gördüğünüz gibi, Listedeki nesnelere listenin ismi ve köşeli parantez içindeki nesnenin indeksini kullanarak ulaşabilirsin.
 
-Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indeksleri** ve **del** komutunu kullanman gerekir (del silmenin(delete) kısaltmasıdır). Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
+Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indeksleri** ve `pop()` komutunu kullanman gerekir. Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
 
 ```
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 >>> print(lottery[0])
 59
->>> del lottery[0]
+>>> lottery.pop(0)
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```

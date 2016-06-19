@@ -248,13 +248,13 @@
 
 리스트의 이름이나 대괄호 안에 들어가는 객체의 인덱스를 사용해서, 리스트 안에 있는 다른 객체로도 접근이 가능합니다.
 
-리스트에서 뭔가 지우려면 **indexes** 위에서 이미 배운대로 **del** 문을 사용해야 합니다. (del은 delete의 약자에요) 이제 한번 해보고 이전에 배웠던 것을 다시 떠올려봅시다. ; 목록에서 첫 번째 숫자를 삭제할 것입니다.
+리스트에서 뭔가 지우려면 **indexes** 위에서 이미 배운대로 `pop()` 문을 사용해야 합니다. (del은 delete의 약자에요) 이제 한번 해보고 이전에 배웠던 것을 다시 떠올려봅시다. ; 목록에서 첫 번째 숫자를 삭제할 것입니다.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
     59
-    >>> del lottery[0]
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
 
@@ -324,7 +324,7 @@
 
 `del` 명령어로 딕셔너리에 있는 아이템을 삭제할 수 있습니다. `'favorite_numbers'` 키를 삭제하고 싶으면, 아래와 같은 명령어를 입력하면 됩니다. :
 
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 

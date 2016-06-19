@@ -274,14 +274,14 @@ Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **index�
 
 Jak můžeš vidět, pro přístup k různým objektům ve tvém seznamu použiješ jméno seznamu a index objektu uvnitř hranatých závorek.
 
-Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, jak jsme se dozvěděli výše a příkaz **del** (del je zkratka pro odstranění). Zkusme příklad toho co jsme se naučili dříve a posílit své znalosti; budeme odstraňovat první číslo našeho seznamu.
+Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, jak jsme se dozvěděli výše a příkaz `pop()`. Zkusme příklad toho co jsme se naučili dříve a posílit své znalosti; budeme odstraňovat první číslo našeho seznamu.
 
 ```
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
-    59 >>>
-    del lottery[0]
+    59
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
 ```  
@@ -355,10 +355,10 @@ Stejně jako u seznamů můžeš použít metodu `len()` na slovníky, vrací po
 
 Doufám, že ti to dává nyní větší smysl. :) Připravena na více zábavy se slovníky? Pojďme na další řádek na další úžasné věci.
 
-Příkazem `del` odstraníš položky ve slovníku. Například pokud chceš odstranit záznam, kterému odpovídá klíč `"favorite_numbers"`, zadej následující příkaz:
+Příkazem `pop()` odstraníš položky ve slovníku. Například pokud chceš odstranit záznam, kterému odpovídá klíč `"favorite_numbers"`, zadej následující příkaz:
 
 ```
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```  
