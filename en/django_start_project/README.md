@@ -130,4 +130,6 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![It worked!](images/it_worked2.png)
 
+Go ahead and stop the web server by pressing CTRL+C or CTRL+Break.
+
 Ready for the next step? It's time to create some content!
