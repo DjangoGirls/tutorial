@@ -11,7 +11,7 @@ Stiahni si Git z [git-scm.com](http://git-scm.com/) a riaď sa inštrukciami.
 Ak ho ešte nemáš nainštalovaný, git by mal byť dostupný pomocou správcu balíčkov, takže vyskúšaj:
 
 ```
-    sudo apt-get install git
-    # or
-    sudo yum install git
+sudo apt-get install git
+# or
+sudo yum install git
 ```

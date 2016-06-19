@@ -1,5 +1,5 @@
 > Časť tejto kapitoly je založené na tutorialoch Geek Girls Carrots (http://django.carrots.pl/).
-> 
+>
 > Časť tejto kapitoly je založená na [django-marcador tutorial](http://django-marcador.keimlink.de/) licencovanej pod medzinárodnou licenciou Creative Commons Attribution-ShareAlike 4.0. Tutoriál django-marcador je autorsky chránený Markusom Zapke-Gründemannom et al.
 
 ## Virtuálne prostredie
@@ -13,14 +13,14 @@ Jediné, čo musíš urobiť je nájsť adresár, v ktorom chceš `virtualenv` v
 V tomto tutoriale budeme používať nový adresár `djangogirls` v tvojom domovskom adresári:
 
 ```
-    mkdir djangogirls
-    cd djangogirls
-```  
+mkdir djangogirls
+cd djangogirls
+```
 
 Vytvoríme virtualenv s názvom `myenv`. Všeobecný príkaz má takýto formát:
 
 ```
-    python3 -m venv myvenv
+python3 -m venv myvenv
 ```
 
 ### Windows
@@ -28,7 +28,7 @@ Vytvoríme virtualenv s názvom `myenv`. Všeobecný príkaz má takýto formát
 Ak chceš vytvoriť nový `virtualenv`, musíš otvoriť konzolu (hovorili sme o tom pár kapitol dozadu, pamätáš?) a spusti `C:\Python34\python -m venv myvenv`. Bude to vyzerať takto:
 
 ```
-    C:\Users\Meno\djangogirls> C:\Python34\python -m venv myvenv
+C:\Users\Meno\djangogirls> C:\Python34\python -m venv myvenv
 ```
 
 kde `C:\Python34\python` je adresár, v ktorom máš nainštalovaný Python a `myvenv` je názov tvojho `virtualenv`-u. Môžeš použiť aj iný názov, ale používaj malé písmená a žiadne medzery, diakritiku alebo špeciálne znaky. Je tiež dobré použiť krátky názov - budeš naňho často odkazovať!
@@ -38,21 +38,21 @@ kde `C:\Python34\python` je adresár, v ktorom máš nainštalovaný Python a `m
 Vytvoriť `virtualenv` na Linuxe a OS X vyžaduje iba jednoduché spustenie `python3 -m venv myvenv`. Bude to vyzerať takto:
 
 ```
-    ~/djangogirls$ python3 -m venv myvenv
+~/djangogirls$ python3 -m venv myvenv
 ```
 
 `myvenv` je názov tvojho `virtualenv`-u. Môžeš použiť aj iný názov, ale ostaň pri malých písmenách a nepoužívaj medzery. Je tiež dorbé použiť krátky názov, pretože naň budeš často odkazovať!
 
 > **POZNÁMKA:** Inicializácia virtuálneho prostredie na Ubuntu 14,04 týmto spôsobom v súčasnosti dáva takúto chybu:
-> 
+>
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
->     
-> 
+>
+>
 > Obídeme to týmto príkazom `virtualenv`-u.
-> 
+>
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
->     
+>
 
 ## Práca s virtualenv
 
@@ -63,7 +63,7 @@ Vyššie uvedený príkaz vytvorí adresár s názvom `myvenv` (alebo akékoľve
 Virtuálne prostredie spusti príkazom:
 
 ```
-    C:\Users\Meno\djangogirls> myvenv\Scripts\activate
+C:\Users\Meno\djangogirls> myvenv\Scripts\activate
 ```
 
 #### Linux a OS X
@@ -71,26 +71,26 @@ Virtuálne prostredie spusti príkazom:
 Virtuálne prostredie spusti príkazom:
 
 ```
-    ~/djangogirls$ source myvenv/bin/activate
+~/djangogirls$ source myvenv/bin/activate
 ```
 
 Nezabudni nahradiť `myvenv` názvom svojho `virtualenv`-u!
 
 > **POZNÁMKA:** niekedy `source` nemusí byť k dispozícii. V takom prípade vyskúšaj použiť:
-> 
+>
 >     ~/djangogirls$ . myvenv/bin/activate
->     
+>
 
 To, že je `virtualenv` spustený, zistíš, keď bude príkazový riadok v konzole vyzerať takto:
 
 ```
-    (myvenv) C:\Users\Name\djangogirls>
+(myvenv) C:\Users\Name\djangogirls>
 ```
 
 alebo:
 
 ```
-    (myvenv) ~/djangogirls$
+(myvenv) ~/djangogirls$
 ```
 
 Všimni si, že sa tam objavila predpona `(myenv)`!
@@ -104,12 +104,12 @@ OK, všetko potrebné máme prichystané. Konečne môžeme nainštalovať Djang
 Teraz, keď máš `virtualenv` spustený, môžeš nainštalovať Django pomocou príkazu `pip`. V konzole spusti `pip install django==1.8` (všimni si, že používame dvojité rovná sa: `==`).
 
 ```
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
-    Installing collected packages: django
-    Successfully installed django
-    Cleaning up...
-```  
+(myvenv) ~$ pip install django==1.8
+Downloading/unpacking django==1.8
+Installing collected packages: django
+Successfully installed django
+Cleaning up...
+```
 
 vo Windowse
 

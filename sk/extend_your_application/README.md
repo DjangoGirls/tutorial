@@ -13,25 +13,25 @@ Už máme `Post` model, takže nepotrebujeme do `models.py` pridávať nič iné
 Začneme tak, že pridáme link do súboru `blog/templates/blog/post_list.html`. Zatiaľ by mal vyzerať nejako takto:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
-```  
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
 
 {% raw %}Chceme, aby link z titulku príspevku smeroval na stránku detailov príspevku. Zmeňme `<h1><a href="">{{ post.title }}</a></h1>` tak, aby odkazoval na stránku detailu príspevku:{% endraw %}
 
 ```html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
 {% raw %}Je na čase vysvetliť záhadné `{% url 'post_detail' pk=post.pk %}`. Ako možno tušíš, `{% %}` notácia znamená, že používame tagy Django šablóny. Tentoraz použijeme jeden, ktorý pre nás vytvorí URL!{% endraw %}
@@ -53,14 +53,14 @@ Chceme aby sa detaily nášho prvého príspevku zobrazili na tejto **URL**: htt
 Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Pridaj riadok `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` do súboru `blog/urls.py`. Súbor by mal vyzerať takto:
 
 ```python
-     from django.conf.urls import include, url
-     from . import views
+from django.conf.urls import include, url
+from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-     ]
-```  
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+]
+```
 
 Táto časť `^post/(?P<pk>[0-9]+)/$` vyzerá desivo, ale neboj sa - o chvíľu ti ju vysvetlíme: - znova začína s `^` -- začiatkom - `post/` znamená len, že po začiatku by URL mala obsahovať slová **post** a **/**. Zatiaľ je všetko v poriadku. - `(?P<pk>[0-9]+)` - táto časť je zložitejšia. Znamená to, že Django vezme všetko, čo tu vložíš a premiestni to do premennej s názvom `pk`. `[0-9]` nám tiež hovorí, že to môžu byť len čísla, nie písmená (takže všetko medzi 0 a 9). `+` znamená, že musíme mať aspoň jedno číslo. Takže niečo ako `http://127.0.0.1:8000/post//` nie je validné, ale `http://127.0.0.1:8000/post/1234567890/` je úplne v poriadku! - `/` - potom znova potrebujeme **/** - `$` - "koniec"!
 
@@ -83,8 +83,8 @@ Tentokrát má náš *view* extra parameter `pk`. Náš *view* ho potrebuje zach
 Teraz chceme aby sme dostali jeden a iba jeden príspevok blogu. Na to môžeme použiť querysets takto:
 
 ```python
-    Post.objects.get(pk=pk)
-```    
+Post.objects.get(pk=pk)
+```
 
 Ale tento kód má problém. Pokiaľ tu nie je žiaden `Post` s daným `primárnym kľúčom`(`pk`) budeme mať super škaredú chybu!
 
@@ -104,15 +104,19 @@ Dobre, čas pridať *view* do nášho `views.py` súboru!
 
 Mali by sme otvoriť `blog/views.py` a pridať nasledujúci kód:
 
-    from django.shortcuts import render, get_object_or_404
-    
+```python
+from django.shortcuts import render, get_object_or_404
+```
+
 
 Blízko riadkov `from`. A na konci súboru pridáme náš *view*:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-    
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
+
 
 Áno. Nastal čas obnoviť stránku: http://127.0.0.1:8000/
 
@@ -135,20 +139,20 @@ Vytvoríme súbor v `blog/templates/blog` s názvom `post_detail.html`.
 Bude to vyzerať takto:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-```  
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 Znova raz rozširujeme `base.html`. V bloku `content` chceme zobraziť published_date príspevku (pokiaľ existuje), titulok a text. Ale mali by sme prebrať pár dôležitých vecí, však?
 
@@ -167,25 +171,25 @@ Jupí! Funguje to!
 Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, že? Pokúsme sa ju znova nasadiť.
 
 ```
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Pridaný view a šablóna pre detail príspevku blogu a taktiež CSS pre stránku."
-    $ git push
-```  
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Pridaný view a šablóna pre detail príspevku blogu a taktiež CSS pre stránku."
+$ git push
+```
 
 *   Potom v [Bash konzole PythonAnywhere][8]:
 
  [8]: https://www.pythonanywhere.com/consoles/
 
 ```
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-```  
+$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
 *   A nakoniec preskoč na [kartu Web][9] and klinki na **Reload**.
 

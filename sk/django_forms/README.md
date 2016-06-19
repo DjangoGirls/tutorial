@@ -11,23 +11,23 @@ Tak ako všetky ostatné dôležité časti Djanga, formuláre majú svoj vlastn
 Musíme vytvoriť súbor s týmto názvom v adresári `blog`.
 
 ```
-    blog
-     └── forms.py
-```  
+blog
+ └── forms.py
+```
 
 OK, otvorme to a napíšme tento kód:
 
 ```
-    python
-    from django import forms
-    
-    from .models import Post
-    
-    class PostForm(forms.ModelForm):
-    
-        class Meta:
-            model = Post
-            fields = ('title', 'text',)
+python
+from django import forms
+
+from .models import Post
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
 ```
 
 Najskôr musíme importovať Django formuláre (`from django import forms`) a, samozrejme, náš `Post` model (`from .models import Post`).
@@ -47,39 +47,39 @@ Takže ešte raz vytvoríme: link na stránku, URL, zobrazenie a šablónu.
 Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s názvom `page-header`:
 
 ```html
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```    
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Všimni si, že chceme zavolať náš nový view (zobrazenie) `post_new`.
 
 Po pridaní riadku by tvoj html súbor mal vyzerať asi takto:
 
 ```html
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
-            <div class="page-header">
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <h1><a href="/">Django Girls Blog</a></h1>
-            </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        </body>
-    </html>
-```    
+        </div>
+    </body>
+</html>
+```
 
 Keď uložíš a obnovíš stránku http://127.0.0.1:8000 uvidíš samozrejme známu chybu `NoReverseMatch`, však?
 
@@ -88,21 +88,21 @@ Keď uložíš a obnovíš stránku http://127.0.0.1:8000 uvidíš samozrejme zn
 Otvor `blog/urls.py` a pridaj riadok:
 
 ```python
-        url(r'^post/new/$', views.post_new, name='post_new'),
+url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
 A výsledný kód bude vyzerať takto:
 
 ```python
-    from django.conf.urls import include, url
-    from . import views
+from django.conf.urls import include, url
+from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-        url(r'^post/new/$', views.post_new, name='post_new'),
-    ]
-```    
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+]
+```
 
 Po obnovení stránky uvidíme chybu `AttributeError`, pretože nemáme implementovaný view (zobrazenie) `post_new`. Pridajme ho teraz.
 
@@ -111,16 +111,16 @@ Po obnovení stránky uvidíme chybu `AttributeError`, pretože nemáme implemen
 Teraz otvoríme súbor `blog/views.py` a pridáme tam nasledujúce riadky so zvyškom importovacích riadkov `from`:
 
 ```python
-    from .forms import PostForm
-```  
+from .forms import PostForm
+```
 
 a náš *view*:
 
 ```python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
-```    
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Nový formulár `Post` vytvoríme tak, že sputíme `PostForm()` a prepošleme ho šablóne. K tomuto *view* sa ešte vrátime, ale teraz poďme rýchlo vytvoriť šablónu formulára.
 
@@ -140,16 +140,16 @@ Musíme vytvoriť súbor `post_edit.html` v adresári `blog/ templates/blog`. Ab
 OK, pozrime sa, ako by malo vyzerať HTML v `post_edit.html`:
 
 ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <h1>New post</h1>
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
-        </form>
-    {% endblock %}
-```    
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
 
 Obnovíme stránku! Aha! Tvoj formulár je na svete!
 
@@ -168,9 +168,9 @@ Odpoveď znie: nič. Akurát budeme mať ešte trochu práce v našom *view* (zo
 Znova otvor `blog/views.py`. Momentálne máme v `post_new` len toto:
 
 ```python
-    def post_new(request):
-        form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 Keď odošleme formulár, vrátime sa do rovnakého view, ale teraz už máme v `request` aj nejaké údaje, presnejšie v `request.POST` (názov nemá nič spoločné s "postom" na blogu, ide len o to, že posielame - "postujeme" údaje). Pamätáš si, že naša definícia formuláru `<form>` v HTML súbore mala premennú `method="POST"`? Všetky polia z formulára sú teraz v `request.POST`. `POST` by si nemala premenovať na nič iné (jediná ďalšia platná hodnota pre premennú `method` je `GET`, teraz ale nemáme čas vysvetliť si rozdiel).
@@ -178,62 +178,62 @@ Keď odošleme formulár, vrátime sa do rovnakého view, ale teraz už máme v 
 Takže v našom *view* máme vyriešiť dve samostatné situácie. Po prvé: keď prídeme na stránku po prvýkrát a chceme prázdny formulár. Po druhé: keď sa vrátime do *view* so všetkými vyplnenými údajmi formulára. Takže potrebujeme pridať podmienku (na to použijeme `if`).
 
 ```python
-    if request.method == "POST":
-         [...]
-    else:
-         form = PostForm()
-```    
+if request.method == "POST":
+     [...]
+else:
+     form = PostForm()
+```
 
 Je čas na vyplnenie bodky `[...]`. Ak `method` je `POST` potom chceme vytvoriť `PostForm` s údajmi z formulára, však? To urobíme takto:
 
 ```python
-    form = PostForm(request.POST)
-```  
+form = PostForm(request.POST)
+```
 
 Ľahké! Ďalej skontrolujme či je formulár v poriadku (všetky povinné polia sú vyplnené a nie sú zadané žiadne nesprávne hodnoty). To urobíme pomocou `form.is_valid()`.
 
 Skonotrolujeme, či je formulár platný a ak áno, môžeme ho uložiť!
 
 ```python
-    if form.is_valid():
-        post = form.save(commit=False)
-        post.author = request.user
-        post.published_date = timezone.now()
-        post.save()
-```    
+if form.is_valid():
+    post = form.save(commit=False)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+```
 
 V podstate urobím dve veci: uložíme formulár pomocou `form.save` a pridáme autora (keďže pole `author` nebolo v `PostForm` nebolo, no toto pole je povinné!). `commit=False` znamená, že ešte nechce uložiť model `Post` - najskôr chceme pridať autora. Väčšinou budeš používať `form.save()` bez `commit=False`, no v tomto prípade, to takto musíme spraviť. `post.Save()` uchová zmeny (pridanie autora) a máme vytvorený nový blog post!
 
 A bolo by skvelé, keby sme sa potom ihneď dostali na stránku `post_detail` nášho novovytvoreného blog postu, nie? Na to ale budeme potrebovať ešte jeden import:
 
 ```python
-    from django.shortcuts import redirect
-```    
+from django.shortcuts import redirect
+```
 
 Pridaj to úplne na začiatok súboru. A teraz môžeme povedať: prejdi na stránku `post_detail` novovytvoreného postu.
 
 ```python
     return redirect('blog.views.post_detail', pk=post.pk)
-```  
+```
 
 `blog.views.post_detail` je názov view - zobrazenia, kam chceme ísť. Spomínaš si, že tento *view* vyžaduje premennú `pk`? Aby sme ju odovzdali zobrazenia, použijeme `pk=post.pk`, kde `post` je novo vytvorený blog post!
 
 Ok, dosť sme hovorili, ale asi by bolo dobré pozrieť sa ako celý *view* vyzerá, však?
 
 ```python
-    def post_new(request):
-        if request.method == "POST":
-            form = PostForm(request.POST)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.published_date = timezone.now()
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
-```    
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Pozrime sa, či to funguje. Poď na stránku http://127.0.0.1:8000/post/new/, pridaj `title` a `text`, ulož to... and voilà! Nový blog post je pridaný my sme presmerovaní na stránku `post_detail`!
 
@@ -266,65 +266,65 @@ Teraz už vieme, ako sa pridáva nový formulár. Ale čo ak chceme upravovať e
 Otvor `blog/templates/blog/post_detail.html` a pridaj tento riadok:
 
 ```html
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-```  
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
 takže šablóna teraz bude vyzerať takto:
 
 ```html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-```  
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endblock %}
+```
 
 V `blog/urls.py` pridáme tento riadok:
 
 ```python
          url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
-```  
+```
 
 Znova použijeme šablónu `blog/templates/blog/post_edit.html`, takže posledná vec, čo nám chýba je *view*.
 
 Otvorme 0>blog/views.py</code> a na úplný koniec súboru pridaj toto:
 
 ```python
-    def post_edit(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.published_date = timezone.now()
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm(instance=post)
-        return render(request, 'blog/post_edit.html', {'form': form})
-```    
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('blog.views.post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. Po prvé: odovzdávame navyše parameter `pk` z URL. A ďalej: pomocou `get_object_or_404(Post, pk=pk)` dostaneme model `Post`, ktorý chceme upravovať a potom pri vytváraní formuláru odovzdávame tento post ako parameter `instance`, keď budeme formulár ukladať:
 
 ```python
-    form = PostForm(request.POST, instance=post)
-```  
+form = PostForm(request.POST, instance=post)
+```
 
 a tiež keď sme formulár otvorili s týmto postom určeným na úpravu:
 
 ```python
-    form = PostForm(instance=post)
-```    
+form = PostForm(instance=post)
+```
 
 OK, vyskúšajme, či to funguje! Poďme na stránku `post_detail`. V pravom hornom rohu by malo byť tlačidlo na úpravu:
 
@@ -351,16 +351,16 @@ Možnosť vytvárať nové posty len kliknutím na link je úžasná! Ale, v tej
 V `blog/templates/blog/base.html` nájdi náš `div` `page-header` a kotviaci tag, ktorý si tam umiestnila už predtým. Mal by vyzerať takto:
 
 ```html
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```  
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Do neho pridáme ďalší tag `{% if %}`, vďaka ktorému sa link zobrazí len užívateľom, ktorí sú prihlásení ako admina. Momentálne si to len ty! Zmeň tag `< >`, aby vyzeral takto:
 
 ```html
-    {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    {% endif %}
-```  
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+```
 
 Tento `{% if %}` zabezpečí, aby bol link odoslaný do prehliadača, len ak je používateľ požadujúci stránku prihlásený. Nezabráni to vytváraniu nových postov úplne, ale je to dobrý prvý krok. Viac o bezpečnosti si povieme v rozširujúcich lekciách.
 
@@ -373,25 +373,25 @@ Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasade
 *   Najprv odovzdaj svoj nový kód a pošli ho na Github
 
 ```
-    $ git status
-    $ git add -A .
-    $ git status
-    $ git commit -m "Pridane views na vytvorenie/editovanie blog postu vo vnutri stranky."
-    $ git push
-```  
+$ git status
+$ git add -A .
+$ git status
+$ git commit -m "Pridane views na vytvorenie/editovanie blog postu vo vnutri stranky."
+$ git push
+```
 
 *   Potom v [Bash konzole PythonAnywhere][7]:
 
  [7]: https://www.pythonanywhere.com/consoles/
 
 ```
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-```  
+$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
+```
 
 *   A nakoniec preskoč na [kartu Web][8] and klinki na **Reload**.
 

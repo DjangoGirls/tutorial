@@ -11,17 +11,17 @@ Views sú umiestnené v súbore `views.py`. Naše *views* budeme pridávať do s
 OK, otvorme tento súbor a pozrime sa, čo je v ňom:
 
 ```python
-    from django.shortcuts import render
+from django.shortcuts import render
 
-    # Create your views here.
-```  
+# Create your views here.
+```
 
 Veľa toho nie je. Najjednoduchší *view* môže vyzerať zhruba takto.
 
 ```python
-    def post_list(request):     
-        return render(request, 'blog/post_list.html', {})
-```  
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
 Ako vidíš, vytvorili sme metódu (`def`) nazvanú `post_list`, ktorá použije `request` (žiadosť) a `return` (vráti) metódu `render`, ktorou vykreslí (spojí dokopy) našu šablónu `blog/post_list.html`.
 

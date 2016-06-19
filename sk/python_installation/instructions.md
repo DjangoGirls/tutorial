@@ -15,9 +15,9 @@ Jedna vec, na ktorú si treba dať pozor: na druhej obrazovke sprievodcu inštal
 Je veľmi pravdepodobné, že Python už máš predinštalovaný. Pre kontrolu, či je naozaj nainštalovaný (a ktorá verzia), spusti konzolu a napíš tento príkaz:
 
 ```
-    $ python3 -- version
-    Python 3.4.3
-```  
+$ python3 -- version
+Python 3.4.3
+```
 
 Ak nemáš Python nainštalovaný, alebo ak chceš inú verziu, môžeš ho nainštalovať takto:
 
@@ -26,7 +26,7 @@ Ak nemáš Python nainštalovaný, alebo ak chceš inú verziu, môžeš ho nain
 Zadaj do konzoly tento príkaz:
 
 ```
-    $ sudo apt-get install python3.4
+$ sudo apt-get install python3.4
 ```
 
 #### Fedora (do verzie 21)
@@ -34,7 +34,7 @@ Zadaj do konzoly tento príkaz:
 Použi v konzole tento príkaz:
 
 ```
-    $ sudo yum install python3.4
+$ sudo yum install python3.4
 ```
 
 #### Fedora (od verzie 22)
@@ -42,7 +42,7 @@ Použi v konzole tento príkaz:
 Použi v konzole tento príkaz:
 
 ```
-    $ sudo dnf instal python3.4
+$ sudo dnf instal python3.4
 ```
 
 ### OS X
@@ -55,8 +55,8 @@ Inštalačný program Pythonu si môžeš stiahnuť zo stránky https://www.pyth
 Ak si chceš overiť, že inštalácia bola úspešná, otvor aplikáciu *Terminal* a spusti príkaz `python3`:
 
 ```
-    $ python3 -- version
-    Python 3.4.3
+$ python3 -- version
+Python 3.4.3
 ```
 
 * * *
