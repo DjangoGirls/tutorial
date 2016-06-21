@@ -26,3 +26,8 @@ Git можна завантажити з [git-scm.com](http://git-scm.com/). В�
 #### Fedora (22+)
 
     $ sudo dnf install git
+
+
+#### openSUSE
+
+    $ sudo zypper install git

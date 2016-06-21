@@ -41,6 +41,13 @@ Usa questo comando nella tua console:
     $ sudo dnf install python3.4
     
 
+#### openSUSE
+
+Usa questo comando nella tua console:
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
 Devi andare sul sito https://www.python.org/downloads/release/python-343/ e scarica il programma d'installazione di Python:

@@ -43,6 +43,13 @@
     $ sudo dnf install python3.4
 
 
+#### openSUSE
+
+콘솔에서 다음 명령을 실행합니다.
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
 https://www.python.org/downloads/release/python-343/ 에서 파이썬 설치프로그램을 다운 받아야 합니다.

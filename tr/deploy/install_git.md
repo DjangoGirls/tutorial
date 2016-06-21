@@ -14,4 +14,6 @@ Halihazırda yüklü değilse, git'i paket yöneticinizle indirebilirsiniz. Şun
 sudo apt-get install git
 # veya
 sudo yum install git
+# veya
+sudo zypper install git
 ```

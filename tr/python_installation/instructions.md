@@ -45,6 +45,14 @@ Terminalde kullanmanız gereken komut:
 $ sudo dnf install python3.4
 ```
 
+#### openSUSE
+
+Terminalde kullanmanız gereken komut:
+
+```
+$ sudo zypper install python3
+```
+
 ### OS X
 
 Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-342/:

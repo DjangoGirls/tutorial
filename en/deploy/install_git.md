@@ -26,3 +26,8 @@ If it isn't installed already, git should be available via your package manager,
 #### Fedora (22+)
 
     $ sudo dnf install git
+
+
+#### openSUSE
+
+    $ sudo zypper install git

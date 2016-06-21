@@ -43,6 +43,13 @@ Python для Windows можна завантажити з сайту https://ww
     $ sudo dnf install python3.4
 
 
+#### openSUSE
+
+Скористайтеся наступною командою в консолі:
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
 Вам необхідно перейти на веб сайт https://www.python.org/downloads/release/python-343/ і завантажити Python інсталятор:

@@ -13,3 +13,5 @@ Ha még nincs telepítve, elérhető a a package manager-en keresztül, szóval 
     sudo apt-get install git
      # vagy 
     sudo yum install git
+     # vagy 
+    sudo zypper install git

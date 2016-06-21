@@ -45,6 +45,14 @@ Použi v konzole tento príkaz:
 $ sudo dnf instal python3.4
 ```
 
+#### openSUSE
+
+Použi v konzole tento príkaz:
+
+```
+$ sudo zypper install python3
+```
+
 ### OS X
 
 Inštalačný program Pythonu si môžeš stiahnuť zo stránky https://www.python.org/downloads/release/python-343/:

@@ -13,3 +13,5 @@ Git은 [git-scm.com](http://git-scm.com/)에서 다운로드 할 수 있습니�
     sudo apt-get install git
     # 또는
     sudo yum install git
+    # 또는
+    sudo zypper install git

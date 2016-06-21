@@ -13,3 +13,5 @@ Możliwe, że git jest już zainstalowany domyśle, ale jeśli tak nie jest, pow
     sudo apt-get install git
     # or
     sudo yum install git
+    # or
+    sudo zypper install git

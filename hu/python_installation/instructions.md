@@ -41,6 +41,12 @@ Ha még nincs Pythonod, vagy másik verziót szeretnél telepíteni, így tehete
     $ sudo dnf install python3.4
     
 
+#### openSUSE
+
+Írd be az alábbi programot a konzolba:
+
+    $ sudo zypper install python3
+
 ### OS X
 
 Menj a https://www.python.org/downloads/release/python-343/ oldalra, és töltsd le a Python installert:

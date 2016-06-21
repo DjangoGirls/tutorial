@@ -14,4 +14,6 @@ Pokud již nemáš nainstalovaný, git měl by být k dispozici pomocí Správce
     sudo apt-get install git
     # or
     sudo yum install git
+    # or
+    sudo zypper install git
 ```
