@@ -1,8 +1,8 @@
-> For readers at home: this chapter is covered in [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
 
 > This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start with installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
 
 
 ### Windows
@@ -67,4 +67,4 @@ Verify the installation was successful by opening the *Terminal* application and
 
 ----
 
-If you have any doubts, or if something went wrong and you have no idea what to do next - please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.

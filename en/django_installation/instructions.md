@@ -1,7 +1,7 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 > Part of this section is based on the [django-marcador
-tutorial](http://django-marcador.keimlink.de/) licensed under Creative Commons
+tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
 is copyrighted by Markus Zapke-Gründemann et al.
 
@@ -27,11 +27,11 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 
 ### Windows
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago - remember?) and run `C:\Python34\python -m venv myvenv`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python34\python -m venv myvenv`. It will look like this:
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
 
-where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short - you'll be referencing it a lot!
+where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 ### Linux and OS X
 
@@ -42,7 +42,7 @@ It will look like this:
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
-> __NOTE:__ On some versions of Debian/Ubuntu you may receive the following error
+> __NOTE:__ On some versions of Debian/Ubuntu you may receive the following error:
 
 >     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >       apt-get install python3-venv
@@ -101,7 +101,7 @@ Now that you have your `virtualenv` started, you can install Django using `pip`.
     Cleaning up...
 
 on Windows
-> If you get an error when calling pip on Windows platform please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does please consider using another place without spaces, accents or special characters (suggestion is: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 on Windows 8 and Windows 10
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
