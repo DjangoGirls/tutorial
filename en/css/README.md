@@ -10,7 +10,7 @@ But we don't want to start from scratch again, right? Once more, we'll use somet
 
 ## Let's use Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: http://getbootstrap.com/
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
@@ -83,7 +83,7 @@ In a CSS file we determine styles for elements in the HTML file. The first way w
 We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
@@ -149,7 +149,7 @@ Add this to your CSS, save the file and see how it works!
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
@@ -280,7 +280,7 @@ Look at the code we just pasted to find the places where we added classes in the
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry, you can always undo it!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
 Ready for the next chapter?! :)
 

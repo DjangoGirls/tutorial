@@ -4,7 +4,7 @@ Chystáme se napsat naší první webovou stránku: homepage pro tvůj blog! Ale
 
 ## Co je adresa URL?
 
-Adresa URL je jednoduše webová adresa. Adresu URL můžeš vidět pokaždé, když navštívíš webové stránky - je vidět v adresním řádku tvého prohlížeče (Ano! `127.0.0.1:8000` je adresa URL! A `https://djangogirls.com` je také adresa URL):
+Adresa URL je jednoduše webová adresa. Adresu URL můžeš vidět pokaždé, když navštívíš webové stránky - je vidět v adresním řádku tvého prohlížeče (Ano! `127.0.0.1:8000` je adresa URL! A `https://djangogirls.org` je také adresa URL):
 
 ![Url][1]
 

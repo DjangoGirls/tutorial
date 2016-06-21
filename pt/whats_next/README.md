@@ -11,7 +11,7 @@ Depois disso:
 *   Siga Django girls no [Facebook][1] ou [Twitter][2] para ficar atualizada
 
  [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+ [2]: https://twitter.com/djangogirls
 
 ### Você pode recomendar outras fontes?
 
@@ -31,9 +31,9 @@ Depois você pode tentar as fontes listadas abaixo. Todas elas são recomendadas
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
+ [6]: https://www.codecademy.com/en/tracks/python
+ [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.org/products/two-scoops-of-django-1-6
+ [11]: https://twoscoopspress.org/products/two-scoops-of-django-1-6

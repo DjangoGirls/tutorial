@@ -99,7 +99,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
 - `<br />` goes to another line (you can't put anything inside br)
-- `<a href="http://djangogirls.org">link</a>` creates a link
+- `<a href="https://djangogirls.org">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
 

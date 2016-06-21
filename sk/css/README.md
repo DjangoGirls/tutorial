@@ -10,7 +10,7 @@ Ale asi nechceme začať úplne od nuly, však? Znova použijeme niečo, čo už
 
 ## Používajme Bootstrap!
 
-Bootstrap je jedným z najpopulárnejších HTML a CSS frameworkov pre vývoj krásnych webových stránok: http://getbootstrap.com/
+Bootstrap je jedným z najpopulárnejších HTML a CSS frameworkov pre vývoj krásnych webových stránok: https://getbootstrap.com/
 
 Bol napísaný programátormi, ktorí pracovali pre Twitter a ďalej ho vyvíjajú dobrovoľníci z celého sveta.
 
@@ -67,7 +67,7 @@ Je čas napísať nejaké CSS! Otvor v editore kódu súbor `blog/static/css/blo
 
 Nepôjdeme príliš do hĺbky ohľadne prispôsobovania web stránky a učenia sa CSS, pretože je to celkom jednoduché a môžeš sa to naučiť sama po tomto workshope. Odporúčame ti urobiť si [kurz Codeacademy HTML & CSS][2], tam sa dozvieš všetko, čo potrebuješ vedieť, aby bola tvoja webstránka vďaka CSS krajšia.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Ale urobme aspoň niečo. Čo keby sme zmenili farbu hlavičky? Počítače používajú špeciálne kódy, aby rozumeli farbám. Začínajú `#`, potom nasleduje 6 písmen (A-F) a číslic (0-9). Kódy farieb nájdeš napríklad tu: http://www.colorpicker.com/. Môžeš tiež použiť [preddefinované farby][3] ako napríklad `red` (červená) alebo `green` (zelená).
 
@@ -86,7 +86,7 @@ h1 a {
 V CSS súbore definujeme štýly pre elementy v HTML súbore. Elementy sa identifikujú podľa svojho názvu (t. j. `a` `h1`, `body`), atribútom `class` (trieda) alebo atribútom `id`. Triedy a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a idy poukazujú na konkrétne elementy. Napríklad, nasledujúci tag môže byť identifikovaný v CSS pomocou tagu `a`, triedy `external_link` a idu `link_to_wiki_page`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Prečítaj si o [CSS selektoroch na w3schools][4].
@@ -157,7 +157,7 @@ Pridaj to do svojho CSS, ulož súbor a pozri, ako to funguje!
 Mohli by sme trochu upraviť font v našej hlavičke, nie? Skopíruj toto do svojej hlavičky `<head>` v súbore `blog/templates/blog/post_list.html`:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 Tento riadok naimportuje z Google fontov (https://www.google.com/fonts) font, ktorý sa volá *Lobster*.

@@ -3,7 +3,7 @@
 
 > Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0
 International License. Щоб переглянути копію цієї ліцензії, відвідайте
-http://creativecommons.org/licenses/by-sa/4.0/
+https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Translation
 
@@ -34,7 +34,7 @@ This tutorial has been translated from English by a group of awesome volunteers:
 
 ## Коротка інформація та вклад
 
-Цей посібник підтримується спільнотою [DjangoGirls](http://djangogirls.org/). Якщо ви знайдете якісь помилки або захочете зробити певні оновлення, будь ласка, [виконуйте вказівки з частини про вклад](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Цей посібник підтримується спільнотою [DjangoGirls](https://djangogirls.org/). Якщо ви знайдете якісь помилки або захочете зробити певні оновлення, будь ласка, [виконуйте вказівки з частини про вклад](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Чи не бажаєте допомогти нам із перекладом посібника на інші мови?
 

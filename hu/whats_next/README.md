@@ -11,7 +11,7 @@ Aztán majd ne felejtsd el:
 *   Követni a Django Girlst [Facebook][1]on vagy [Twitter][2]en, hogy mindenről értesülj
 
  [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+ [2]: https://twitter.com/djangogirls
 
 ### Tudunk-e ajánlani bármilyen tananyagot?
 
@@ -32,9 +32,9 @@ Később megpróbálkozhatsz a lenti listában lévő anyagokkal is. Ezeket mind
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
+ [6]: https://www.codecademy.com/en/tracks/python
+ [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+ [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8

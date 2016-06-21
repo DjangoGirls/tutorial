@@ -2,7 +2,7 @@
 
 > Questo capitolo è ispirato ad un discorso di Jessica McKellar "How the Internet Works" (http://web.mit.edu/jesstess/www/).
 
-Scommettiamo che usi Internet tutti i giorni. Ma sai davvero che cosa succede quando digiti un indirizzo come http://djangogirls.org nel tuo browser e premi `invio`?
+Scommettiamo che usi Internet tutti i giorni. Ma sai davvero che cosa succede quando digiti un indirizzo come https://djangogirls.org nel tuo browser e premi `invio`?
 
 La prima cosa da capire è che un sito è solo un gruppo di file salvati su un hard disk. Proprio come i tuoi film, la tua musica e le tue immagini. Tuttavia, c'è una caratteristica tipica dei siti web: includono un codice chiamato HTML.
 
@@ -24,7 +24,7 @@ Sembra caotico, vero? Infatti è una rete di macchine collegate (i *servers* che
 
  [2]: images/internet_3.png
 
-È affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. Quindi, per raggiungere una macchina (per esempio quella in cui è salvato http://djangogirls.org) dobbiamo far passare una richiesta attraverso a molte, molte macchine diverse.
+È affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. Quindi, per raggiungere una macchina (per esempio quella in cui è salvato https://djangogirls.org) dobbiamo far passare una richiesta attraverso a molte, molte macchine diverse.
 
 Assomiglia a questo:
 
@@ -32,7 +32,7 @@ Assomiglia a questo:
 
  [3]: images/internet_2.png
 
-Immagina che quando digiti http://djangogirls.org invii una lettera che dice: "Caro Django Girls, voglio vedere il sito djangogirls.org. inviamelo, per favore!"
+Immagina che quando digiti https://djangogirls.org invii una lettera che dice: "Caro Django Girls, voglio vedere il sito djangogirls.org. inviamelo, per favore!"
 
 La tua lettera arriva nell'ufficio postale più vicino a te. Dopo di che va in un altro ufficio postale, che è un po' più vicino al tuo destinatario, poi in un altro ed in un altro ancora finché viene consegnato a destinazione. L'unica cosa è che se invii molte lettere (*pacchi di dati*) allo stesso posto, potrebbero attraversare uffici postali totalmente diversi (*routers*). Questo dipende da come vengono distribuiti presso ogni ufficio.
 

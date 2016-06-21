@@ -4,7 +4,7 @@
 
  [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-> Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite http://creativecommons.org/licenses/by-sa/4.0/
+> Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Translation
 
@@ -76,7 +76,7 @@ OK, [vamos pelo começo...][3]
 
 Este tutorial é mantido por [DjangoGirls][4]. Se você encontrar quaisquer erros ou quiser atualizar o tutorial, por favor [siga as orientações de contribuição][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Gostaria de nos ajudar a traduzir o tutorial para outros idiomas?

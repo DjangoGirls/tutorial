@@ -52,7 +52,7 @@ Vamos a hacer algunos cambios en `mysite/settings.py`. Abre el archivo usando el
 
 Sería bueno tener el horario correcto en nuestro sitio web. Ve a la [lista de husos horarios de Wikipedia][2] y copia tu zona horaria (TZ). (por ejemplo, `Europe/Berlin` )
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 En settings.py, encuentra la línea que contiene `TIME_ZONE` y modifícala para elegir tu propia zona horaria:
 

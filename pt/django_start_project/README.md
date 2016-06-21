@@ -51,7 +51,7 @@ Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando 
 
 Seria bom ter a hora correta no nosso site. Vá para a <[wikipedia timezones list][2] e copie seu fuso horário. (por exemplo. `America/Sao_Paulo`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Em settings.py, localize a linha que contém `TIME_ZONE` e modifique para escolher seu próprio fuso horário:
 

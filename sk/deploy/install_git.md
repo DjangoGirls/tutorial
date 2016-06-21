@@ -1,10 +1,10 @@
 ### Windows
 
-Git si môžeš stiahnuť z [git-scm.com](http://git-scm.com/). Môžeš bez obáv klikať na "ďalej ďalej ďalej" pri všetkých krokoch okrem jedného. V kroku 5, označenom ako "Nastavenie prostredia PATH", zvoľ "Spustiť Git a príslušné Unixové nástroje z príkazového riadku systému Windows" (spodná možnosť). V ostatných prípadoch sú predvolené nastavenia v poriadku. Možnosť "Checkout Windows-style, commit Unix-style line endings" je OK.
+Git si môžeš stiahnuť z [git-scm.com](https://git-scm.com/). Môžeš bez obáv klikať na "ďalej ďalej ďalej" pri všetkých krokoch okrem jedného. V kroku 5, označenom ako "Nastavenie prostredia PATH", zvoľ "Spustiť Git a príslušné Unixové nástroje z príkazového riadku systému Windows" (spodná možnosť). V ostatných prípadoch sú predvolené nastavenia v poriadku. Možnosť "Checkout Windows-style, commit Unix-style line endings" je OK.
 
 ### MacOS
 
-Stiahni si Git z [git-scm.com](http://git-scm.com/) a riaď sa inštrukciami.
+Stiahni si Git z [git-scm.com](https://git-scm.com/) a riaď sa inštrukciami.
 
 ### Linux
 

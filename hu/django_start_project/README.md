@@ -53,7 +53,7 @@ Változtassunk meg néhány dolgot a `mysite/settings.py` fájlban. Nyisd meg a 
 
 Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg a [wikipedia időzóna listát][2], és másold ki az időzónádat (TZ, time zone). (például `Europe/Budapest` )
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Keresd meg a settings.py azt a sort, ami így keződik: `TIME_ZONE`, és írd át, hogy a saját időzónádat használja:
 

@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Toto dielo je zverejnené pod medzinárodnou licenciou Creative Commons Attribution-ShareAlike ("uvedenie autora – rovnaké šírenie") 4.0. Ak chcete zobraziť kópiu tejto licencie, navštívte http://creativecommons.org/licenses/by-sa/4.0/
+> Toto dielo je zverejnené pod medzinárodnou licenciou Creative Commons Attribution-ShareAlike ("uvedenie autora – rovnaké šírenie") 4.0. Ak chcete zobraziť kópiu tejto licencie, navštívte https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Úvod
 
@@ -34,7 +34,7 @@ OK, [začnime pekne po poriadku...][3]
 
 Tento návod vytvorili a udržiavajú [DjangoGirls][4]. Ak nájdete chyby alebo by ste chceli aktualizovať tento návod, prosím [postupujte podľa pokynov][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Chceš pomôcť s prekladom do iných jayzkov?

@@ -1,6 +1,6 @@
 # Pokud děláš tutoriál doma
 
-Pokud děláš tento tutorial doma, ne na jedné z [Django girls akcí](http://djangogirls.org/events/), můžeš zcela vynechat tuto kapitolu a jít rovnou na kapitolu [jak funguje Internet?](../how_the_internet_works/README.md).
+Pokud děláš tento tutorial doma, ne na jedné z [Django girls akcí](https://djangogirls.org/events/), můžeš zcela vynechat tuto kapitolu a jít rovnou na kapitolu [jak funguje Internet?](../how_the_internet_works/README.md).
 
 To proto, že zde uvedené věci stejně vysvětlíme v průběhu celého kurzu a tato stránka, pouze shromažďuje všechny pokyny pro instalaci na jednom místě. Jedna z Django Girls událostí "Instalační večer" se zaobírá instalováním všeho co budeme potřebovat a již nás to nebude zdržovat během samotného worshopu. Což je pro nás užitečná úspora času.
 
@@ -30,7 +30,7 @@ Při workshopu budeme vytvářet blog a existuje zde několik nastavení, které
 
 # Vytvoření účtu na GitHub
 
-Přejděte na [GitHub.com](http://www.github.com) a vytvořte si zdarma uživatelský účet.
+Přejděte na [GitHub.com](https://www.github.com) a vytvořte si zdarma uživatelský účet.
 
 # Vytvoření účtu PythonAnywhere
 

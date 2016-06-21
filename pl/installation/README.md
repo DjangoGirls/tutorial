@@ -1,6 +1,6 @@
 # Jeśli robisz ten kurs w domu
 
-Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](http://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa internet?](../how_the_internet_works/README.md)
+Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa internet?](../how_the_internet_works/README.md)
 
 Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić, więc zebraliśmy wszystkie potrzebne informacje w jedno miejsce.
 
@@ -30,7 +30,7 @@ Podczas warsztatów będziesz budować bloga, ale abyś mogła zacząć programo
 
 # Utwórz konto na GitHubie
 
-Wejdź na stronę [GitHub.com](http://www.github.com) i załóż darmowe konto użytkownika.
+Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto użytkownika.
 
 # Utwórz konto na PythonAnywhere
 

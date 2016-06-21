@@ -1,7 +1,7 @@
 # Django Girls Tutoriál
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Tento návod je licencován pod Creative Commons Attribution-ShareAlike 4.0 mezinárodní licencí. Chcete-li zobrazit kopii této licence, navštivte http://creativecommons.org/licenses/by-sa/4.0/
+> Tento návod je licencován pod Creative Commons Attribution-ShareAlike 4.0 mezinárodní licencí. Chcete-li zobrazit kopii této licence, navštivte https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Úvod
 
@@ -33,7 +33,7 @@ OK [začněme od začátku...][3]
 
 Tento kurz je provozován [DjangoGirls][4]. Pokud najdeš nějaké chyby, nebo chceš aktualizovat návod, prosím, [postupuj podle pokynů pro přispívající][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Český překlad

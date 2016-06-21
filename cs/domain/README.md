@@ -18,7 +18,7 @@ Naše oblíbené je, [I want my name][2]. Inzerují se jako "bezbolestný domén
 
 Přejdi na [iwantmyname][3] a zadejte doménu, kterou chceš do pole Search/Hledat.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

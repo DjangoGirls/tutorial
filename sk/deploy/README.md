@@ -6,11 +6,11 @@ Až doteraz bola tvoja web stránka dostupná len v tvojom počítači, teraz sa
 
 Ako už vieš, web stránka musí byť umiestnená na serveri. Na internete je množstvo poskytovateľov serverov. My použijeme jedného, ktorý má pomerne jednoduchý proces nasadenia: [PythonAnywhere][1]. PythonAnywhere je bezplatný pre malé aplikácie, ktoré nemajú príliš veľa návštevníkov, takže zatiaľ ti to určite bude stačiť.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 Ďalšou externou službou, ktorú budeme využívať je [GitHub][2], kde sa uchovávajú zdrojové kódy. Existujú aj ďalšie takéto služby, no dnes už majú takmer všetci programátori na GitHube konto a teraz ho budeš mať už aj ty!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 GitHub použijeme ako odrazový mostík na prenos nášho kódu z a do PythonAnywhere.
 

@@ -12,11 +12,11 @@ Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów ope
 
 Sublime Text to bardzo popularny edytor z darmowym okresem testowania. Jest bardzo prosty do zainstalowania i używania, dostępny na wszystkie systemy operacyjne.
 
-[Pobierz tutaj](http://www.sublimetext.com/2)
+[Pobierz tutaj](https://www.sublimetext.com/2)
 
 ## Atom
 
-Atom to nowy edytor kodu stworzony przez [GitHuba](http://github.com/). Jest darmowy, ma otwarte źródła, jest łatwy do zainstalowania i używania. Dostępny na Windowsa, OS X i Linuxa.
+Atom to nowy edytor kodu stworzony przez [GitHuba](https://github.com/). Jest darmowy, ma otwarte źródła, jest łatwy do zainstalowania i używania. Dostępny na Windowsa, OS X i Linuxa.
 
 [Pobierz tutaj](https://atom.io/)
 

@@ -18,7 +18,7 @@ Heroku(헤로쿠) 에서 도메인을 받을 수 있지만 너무 길어 기억�
 
 [iwantmyname][3]에 가셔서 검색창에 내가 원하는 도메인 이름을 입력하세요.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

@@ -6,11 +6,11 @@ Ezidáig a honlapod csak a saját számítógépeden volt elérhető - most tanu
 
 Ahogyan azt már tudod, a honlapot egy szerveren kell elhelyezni. Több szerver szolgáltató is elérhető az interneten. Mi egy olyat fogunk használni, amit viszonylag egyszerű kezelni: [PythonAnywhere][1]. A PythonAnywhere ingyenes olyan kisebb alkalmazások számára, amelyeknek nincs sok látogatójuk, tehát a mi esetünkben ez pont megfelelő lesz.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 A másik külső szolgáltatás, amit igénybe fogunk venni a [GitHub][2], ami egy ún. code hosting service (forráskód tárolására és megosztására alkalmas online tárhely). Vannak más hozzá hasonló szolgáltatók is, de szinte minden programozó ezt használja manapság, és nemsokára te is közéjük tartozhatsz!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 A GitHubról fogjuk a forráskódunkat áthelyezni a PythonAnywhere-be, és fordítva.
 

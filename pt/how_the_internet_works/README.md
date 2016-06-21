@@ -2,7 +2,7 @@
 
 > Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando você digita um endereço como http://djangogirls.org em seu navegador e pressiona 'Enter'?
+Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona 'Enter'?
 
 A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Assim como seus filmes, músicas ou fotos. No entanto, há uma parte que é exclusiva para sites: essa parte inclui códigos de computador chamado HTML.
 
@@ -20,13 +20,13 @@ Que bagunça né? Na verdade é uma rede de máquinas conectadas (os *servidores
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não? Mas, obviamente, não é possível ter um fio conectado a toda máquina ligada na internet. Logo, para chegar em uma máquina (por exemplo aquela onde http://djangogirls.org está salva) nós precisamos passar uma requisição por muitas máquinas diferentes.
+Fascinante, não? Mas, obviamente, não é possível ter um fio conectado a toda máquina ligada na internet. Logo, para chegar em uma máquina (por exemplo aquela onde https://djangogirls.org está salva) nós precisamos passar uma requisição por muitas máquinas diferentes.
 
 Se parece com isso:
 
 ![Figura 1.3](images/internet_2.png)
 
-Imagine que quando você digita http://djangogirls.org você envia uma carta que diz: "Querido Django Girls, eu desejo ver o site djangogirls.org. Envie ele pra mim, por favor!"
+Imagine que quando você digita https://djangogirls.org você envia uma carta que diz: "Querido Django Girls, eu desejo ver o site djangogirls.org. Envie ele pra mim, por favor!"
 
 Sua carta vai para a agência dos correios mais próxima de você. Depois vai para outra que é um pouco mais perto do seu destinatário, depois para outra e outra até que seja entregue ao seu destino. O único diferencial é que se você enviar cartas (*pacotes de dados*) com freqüência para o mesmo lugar, cada carta pode passar por diferentes agências de correios (*roteadores*), dependendo de como elas são distribuídas em cada agência.
 

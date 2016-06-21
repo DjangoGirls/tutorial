@@ -1,11 +1,11 @@
 
 ### Windows
 
-Git можна завантажити з [git-scm.com](http://git-scm.com/). Ви можете натискати "next next next" на всіх кроках окрім одного. На п’ятому кроці, названому "Adjusting your PATH environment", виберіть "Run Git and associated Unix tools from the Windows command-line" (нижня опція). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
+Git можна завантажити з [git-scm.com](https://git-scm.com/). Ви можете натискати "next next next" на всіх кроках окрім одного. На п’ятому кроці, названому "Adjusting your PATH environment", виберіть "Run Git and associated Unix tools from the Windows command-line" (нижня опція). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
 
 ### Mac OS
 
-Завантажте Git з [git-scm.com](http://git-scm.com/) і просто слідуйте вказівкам.
+Завантажте Git з [git-scm.com](https://git-scm.com/) і просто слідуйте вказівкам.
 
 
 ### Linux

@@ -2,7 +2,7 @@
 
 > Táto kapitola je inšpirovaná prednáškou "Ako funguje Internet" od Jessicy McKellar (http://web.mit.edu/jesstess/www/).
 
-Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa deje, keď napíšeš adresu, ako http://djangogirls.org do prehliadača a stlačíš `enter`?
+Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa deje, keď napíšeš adresu, ako https://djangogirls.org do prehliadača a stlačíš `enter`?
 
 Prvá vec, ktorú potrebuješ vedieť je, že webové stránky sú len kopa súborov uložených na pevnom disku. Podobne ako tvoje filmy, hudba a obrázky. Ale je tu jedna časť, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
 
@@ -24,7 +24,7 @@ Vyzerá to ako neporiadok, že? V skutočnosti je to sieť prepojených strojov 
 
  [2]: images/internet_3.png
 
-Nie je to fascinujúce? Ale zjavne nie je možné mať kábel medzi každým strojom pripojeným k Internetu. Takže na to, aby sme boli schopní kontaktovať stroj (napríklad ten na ktorom je uložená stránka http://djangogirls.org) musíme poslať žiadosť cez mnoho, mnoho rozdielnych strojov.
+Nie je to fascinujúce? Ale zjavne nie je možné mať kábel medzi každým strojom pripojeným k Internetu. Takže na to, aby sme boli schopní kontaktovať stroj (napríklad ten na ktorom je uložená stránka https://djangogirls.org) musíme poslať žiadosť cez mnoho, mnoho rozdielnych strojov.
 
 Vyzerá to takto:
 
@@ -32,7 +32,7 @@ Vyzerá to takto:
 
  [3]: images/internet_2.png
 
-Predstav si, že keď napíšeš http://djangogirls.org, pošleš list, v ktorom stojí: "Drahé Django Girls, chcem vidieť stránku djangogirls.org. Prosím pošli mi ju!"
+Predstav si, že keď napíšeš https://djangogirls.org, pošleš list, v ktorom stojí: "Drahé Django Girls, chcem vidieť stránku djangogirls.org. Prosím pošli mi ju!"
 
 Tvoj list ide na najbližšiu poštu. Potom ide na ďalšiu, ktorá je o čosi bližšie adresátovi, potom na ďalšiu a ďalšiu až kým nedorazí do svojej destinácie. Jediná unikátna vec je, že ako pošleš mnoho listov (*data paketov*) na rovnaké miesto, môžu ísť cez úplne odlišné pošty (*routy*). Záleží to na tom, ako sú distribuované na každej pošte.
 

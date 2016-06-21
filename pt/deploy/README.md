@@ -6,11 +6,11 @@ Até agora nosso site só estava disponível no seu computador, agora você vai 
 
 Como você aprendeu, um website precisa estar localizado num servidor. Existem muitos provedores, mas iremos utilizar o que tem um processo de deploy relativamente simples: [PythonAnywhere][1]. PythonAnywhere é gratuito para aplicações pequenas que não possuem muitos visitantes, então será suficiente para você por enquanto.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 O outro serviço externo que usaremos é [GitHub][2], que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora você também!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 Usaremos o GitHub como um trampolim para transportar nosso código para o PythinAnywhere.
 
@@ -24,7 +24,7 @@ Git é "sistema de controle de versão" usado por muitos programadores - um soft
 
 Você pode baixar Git em [git-scm.com][3]. Você pode apertar "next next next" em todos os passos exceto um; no quinto passo chamado "Adjusting your PATH environment", escolha "Run Git and associated Unix tools from the Windows command-line" (a opção de baixo). Além disso, o padrão está ótimo. Checkout estilo Windows, commit Unix-style linhas de confirmação está bom.
 
- [3]: http://git-scm.com/
+ [3]: https://git-scm.com/
 
 ### MacOS
 
@@ -99,7 +99,7 @@ E finalmente nós salvamos nossas alterações, Vá para o seu console e execute
 
 Vá para [GitHub.com][4] e cadastre uma nova e gratuita conta de usuário. Em seguida, crie um novo repositório, e dê o nome "my-first-blog". Deixe o "initialise with a README" desmarcado, deixe a opção .gitignore em branco (já fizemos isso manualmente) e a licença como None.
 
- [4]: http://www.github.com'
+ [4]: https://www.github.com'
 
 ![][5]
 

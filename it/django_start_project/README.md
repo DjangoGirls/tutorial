@@ -53,7 +53,7 @@ Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il cod
 
 Sarebbe bello avere l'ora corretta sul nostro sito Web. Vai alla [lista di fusi orari di wikipedia][2] e copia il tuo fuso orario (TZ). (es. `Europe/Berlin`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 In settings.py, trova la riga che contiene `TIME_ZONE` e modificala per scegliere il tuo fuso orario:
 

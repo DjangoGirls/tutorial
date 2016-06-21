@@ -56,7 +56,7 @@ Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önce
 
 Web sitemizin doğru bir saate sahip olması güzel olurdu. [wikipedia timezones list][2] 'e gidin ve ilgili saat diliminizi (TZ -time zone-) kopyalayın. (örn. `Europe/Istanbul` )
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 `settings.py` dosyasında <0>TIME_ZONE</0> ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 

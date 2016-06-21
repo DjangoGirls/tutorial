@@ -18,7 +18,7 @@ Our favourite one is [I want my name][2]. They advertise as "painless domain man
 
 Go to [iwantmyname][3] and type a domain you want to have in the search box.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

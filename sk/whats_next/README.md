@@ -11,7 +11,7 @@ Potom nezabudni:
 *   Sledovať Django Girls na [Facebooku][1] alebo [Twitteri][2] a zostať informovaná
 
  [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+ [2]: https://twitter.com/djangogirls
 
 ### Viete odporučiť ďalšie zdroje?
 
@@ -32,9 +32,9 @@ Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame!
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
+ [6]: https://www.codecademy.com/en/tracks/python
+ [7]: https://www.codecademy.com/tracks/web
  [8]: http://django.carrots.pl/en/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+ [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8

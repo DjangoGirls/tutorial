@@ -106,7 +106,7 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
 *   `<em>metin</em>` metni vurgular
 *   `<strong>metin</strong>` metni iyice vurgular
 *   `<br />` - alt satıra gider (br etiketi içine bir şey konulmaz)
-*   `<a href = "http://djangogirls.org">bağlantı</a>` bir bağlantı oluşturur
+*   `<a href = "https://djangogirls.org">bağlantı</a>` bir bağlantı oluşturur
 *   `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 *   `<div></div>` - sayfanın bir bölümünü tanımlar
 

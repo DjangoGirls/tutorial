@@ -1,6 +1,6 @@
 # Ha otthon csinálod a tutorialt
 
-Ha otthon csinálod a tutorialt, nem valamelyik [Django Girls eseményen](http://djangogirls.org/events/), át is ugorhatod ezt a fejezetet, és folytathatod a [Hogy működik az Internet?](../how_the_internet_works/README.md) fejezettel.
+Ha otthon csinálod a tutorialt, nem valamelyik [Django Girls eseményen](https://djangogirls.org/events/), át is ugorhatod ezt a fejezetet, és folytathatod a [Hogy működik az Internet?](../how_the_internet_works/README.md) fejezettel.
 
 Ez az oldal csak egy helyre gyűjti az installációk leírását, amikkel később úgyis találkozni fogsz a tutorial során. A Django Girls workshopok előtt mindig van egy installációs esemény, amikor mindent telepítünk, hogy a workshopon már ne kelljen ezzel bajlódni, ezért hasznos nekünk, hogy mindent megtalálunk egy helyen.
 
@@ -30,7 +30,7 @@ A workshopon egy blogot fogsz elkészíteni. Ehhez el kell végezned néhány te
 
 # GitHub fiók létrehozása
 
-Menj a [GitHub.com](http://www.github.com) oldalra, és hozz létre egy új, ingyenes felhasználói fiókot.
+Menj a [GitHub.com](https://www.github.com) oldalra, és hozz létre egy új, ingyenes felhasználói fiókot.
 
 # PythonAnywhere felhasználó létrehozása
 

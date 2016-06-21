@@ -10,7 +10,7 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업랭귀지(markup language
 
 ## Bootstrap을 사용해봐요!
 
-부트스트랩(Bootstrap)은 예쁜 웹사이트를 개발하기 위해 사용되는 가장 유명한 HTML과 CSS 프레임워크입니다: http://getbootstrap.com/
+부트스트랩(Bootstrap)은 예쁜 웹사이트를 개발하기 위해 사용되는 가장 유명한 HTML과 CSS 프레임워크입니다: https://getbootstrap.com/
 
 부트스트랩은 트위터 개발자들에 의해 만들어졌고 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요.
 
@@ -65,7 +65,7 @@ CSS를 쓸 차례에요! 여러분이 사용하고 있는 코드에디터에서 
 
 CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 이번에는 CSS에 대해 심도 있게 살펴보지는 않을 거에요. 우리는 여러분이 더 예쁜 웹사이트를 만들 수 있도록 [Codeacademy HTML & CSS course][2]를 실습해보길 추천해요.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. `#`으로 시작해 알파벳(A-F)와 숫자(0-9) 중 6개를 조합해 나타내요. 이 곳에서 색깔 코드를 찾을 수 있어요: http://www.colorpicker.com/ 또는 [미리 정의 된 색][3], 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있습니다.
 
@@ -84,7 +84,7 @@ h1 a {
 CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 각 요소는 요소 이름(다시 말하면, `a`, `h1`, `body`), `class`상속 아니면 `id`상속에 의해 식별돼요. Class와 id는 여러분들이 붙인 이름을 갖게 되지요. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 CSS에서 태그 이름 `a`, 클래스 `external_link`, id `link_to_wiki_page`을 사용해서 식별해요.
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
@@ -157,7 +157,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요..
 제목의 폰트를 바꾸고 싶나요? `blog/templates/blog/post_list.html`파일 안에 `<head>`에 아래 코드를 붙여넣기 해보세요.
 
 ```html
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 이 코드 라인은 구글 폰트 (https://www.google.com/fonts) 에서 *Lobster* 폰트를 불러온 거에요.

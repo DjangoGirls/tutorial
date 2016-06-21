@@ -20,13 +20,13 @@ Sublime Text es un editor muy popular con un periodo de prueba gratis. Es fácil
 
 [Descárgalo aquí][2]
 
- [2]: http://www.sublimetext.com/2
+ [2]: https://www.sublimetext.com/2
 
 ## Atom
 
 Atom es un editor de código muy nuevo creado por [GitHub][3]. Es gratis, de código abierto, fácil de instalar y fácil de usar. Está disponible para Windows, OSX y Linux.
 
- [3]: http://github.com/
+ [3]: https://github.com/
 
 [Descárgalo aquí][4]
 

@@ -56,7 +56,7 @@ Pojďme udělat nějaké změny v `mysite/settings.py`. Otevři soubor pomocí e
 
 Bylo by hezké mít správný čas na našich stránkách. Přejdi na [wikipedia timezones list][2] a zkopíruj příslušné časové pásmo (TZ). (např. `Europe/Prague`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 V settings.py najdi řádek, který obsahuje `TIME_ZONE` a uprav jej tak, aby obsahoval tvoje vlastní časové pásmo:
 
