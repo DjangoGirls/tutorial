@@ -234,7 +234,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/novo /, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
+Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/new/, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
 
 Você provavelmente notou que nós não estamos definindo a data de publicação em tudo. Vamos introduzir um *botão de publicação* em **Django Girls Tutorial: Extensões**.
 
