@@ -18,18 +18,24 @@ All you need to do is find a directory in which you want to create the `virtuale
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
+```
     $ mkdir djangogirls
     $ cd djangogirls
+```
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
+```
     $ python3 -m venv myvenv
+```
 
 ### Windows
 
 To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python34\python -m venv myvenv`. It will look like this:
 
+```
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
+```
 
 where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
@@ -38,7 +44,9 @@ where `C:\Python34\python` is the directory in which you previously installed Py
 Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
 It will look like this:
 
+```
     $ python3 -m venv myvenv
+```
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
@@ -64,19 +72,30 @@ It will look like this:
 
 ## Working with virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files). 
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
-#### Windows 
+#### Windows
 
 Start your virtual environment by running:
 
+```
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
+```
 
-#### Linux and OS X 
+> __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell says `execution of scripts is disabled on this system`. In those cases open another Windows PowerShell and Run as Administrator try doing this before continue:
+
+>     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+>     Execution Policy Change
+>     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+
+#### Linux and OS X
 
 Start your virtual environment by running:
 
+```
     $ source myvenv/bin/activate
+```
 
 Remember to replace `myvenv` with your chosen `virtualenv` name!
 
@@ -94,11 +113,13 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 Now that you have your `virtualenv` started, you can install Django using `pip`. In the console, run `pip install django~=1.9.0` (note that we use a tilde followed by an equal sign: `~=`).
 
+```
     (myvenv) ~$ pip install django~=1.9.0
     Downloading/unpacking django==1.9
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
+```
 
 on Windows
 > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
