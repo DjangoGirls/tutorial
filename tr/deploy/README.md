@@ -6,11 +6,11 @@
 
 Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. Internette birçok sunucu sağlayıcı bulunuyor. Görece kolay bir yayına alma süreci olanlardan birini kullanacağız: [PythonAnywhere][1]. PythonAnymwhere çok fazla ziyaretçisi olmayan ufak uygulamalar için ücretsiz yani sizin için kesinlikle yeterli olacaktır.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github][2]. Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 Github'ı kodumuzu PythonAnywhere'e taşımak için bir atlama tahtası olarak kullanacağız.
 

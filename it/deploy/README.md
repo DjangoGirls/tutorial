@@ -6,11 +6,11 @@ Fino ad ora il tuo sito è accessibile solo dal tuo computer, ma ora imparerai c
 
 Come hai già visto, un sito internet ha sede in un server. Ci sono tantissimi server providers disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [PythonAnywere][1]. Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 L'altro servizio esterno che useremo è [GitHub][2], che è un servizio di hosting di codice. Ne esistono altri, ma di questi tempi quasi tutti i programmatori hanno un account GitHub e ora lo avrai anche tu!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 Useremo GitHub come trampolino di lancio per importare ed esportare il nostro codice su PythonAnywhere.
 

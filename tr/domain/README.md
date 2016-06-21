@@ -18,7 +18,7 @@ Bizim favorimiz [I want my name][2]. Kendilerini "acısız alan adı yönetimi" 
 
 [iwantmyname][3]'e gidin ve arama kutusuna istediğiniz alan adını girin.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

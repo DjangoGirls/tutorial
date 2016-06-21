@@ -105,7 +105,7 @@ Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczn
 *   `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
 *   `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
 *   `<br />` to przejście do nowej linii (wewnątrz br nie wstawiamy niczego)
-*   `<a href="http://djangogirls.org">link</a>` tworzy link
+*   `<a href="https://djangogirls.org">link</a>` tworzy link
 *   `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
 *   `<div></div>` tworzy sekcję na stronie
 

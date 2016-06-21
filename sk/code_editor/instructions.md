@@ -12,11 +12,11 @@ Gedit je open-source, editor zdarma dostupný pre všetky operačné systémy.
 
 Sublime Text je veľmi populárny editor so skúšobnou verziou zdarma. Je jednoduchý na inštaláciu a používanie, je dostupný pre všetky operačné systémy.
 
-[Stiahni si tu](http://www.sublimetext.com/2)
+[Stiahni si tu](https://www.sublimetext.com/2)
 
 ## Atom
 
-Atom je veľmi nový editor vytvorený [GitHubom](http://github.com/). Je zdarma, open-source, jednoduchý na inštaláciu a používanie. Je dostupný pre Windows, OS X a Linux.
+Atom je veľmi nový editor vytvorený [GitHubom](https://github.com/). Je zdarma, open-source, jednoduchý na inštaláciu a používanie. Je dostupný pre Windows, OS X a Linux.
 
 [Stiahni si tu](https://atom.io/)
 

@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Niniejsza praca jest licencjonowana zgodnie z Creative Commons Attribution-ShareAlike License 4.0 International. Aby zobaczyć kopię niniejszej licencji, odwiedź http://creativecommons.org/licenses/by-sa/4.0/
+> Niniejsza praca jest licencjonowana zgodnie z Creative Commons Attribution-ShareAlike License 4.0 International. Aby zobaczyć kopię niniejszej licencji, odwiedź https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Tłumaczenie
 
@@ -38,7 +38,7 @@ Ok, [zacznijmy od początku...][3]
 
 Kurs jest prowadzony przez [DjangoGirls][4]. Jeżeli znajdziesz jakiś błąd lub chcesz dodać coś nowego, zapoznaj się proszę z [tymi informacjami][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Pomożesz nam przetłumaczyć tutorial na inne języki?

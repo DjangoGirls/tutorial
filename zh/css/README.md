@@ -10,7 +10,7 @@
 
 ## 让我们用 Bootstrap 吧！
 
-Bootstrap是最流行的HTML和CSS框架之一，它可以用来开发炫酷的网站:http://getbootstrap.com/
+Bootstrap是最流行的HTML和CSS框架之一，它可以用来开发炫酷的网站:https://getbootstrap.com/
 
 它是由那些为 Twitter 工作的程序员，现在由来自世界各地的志愿者写的。
 
@@ -69,7 +69,7 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 
 在这里我们不会太深入学习自定义和关于 CSS ，因为这是很容易而且您可以在本教程结束后自行学习。 真的，我们建议做此 [Codeacademy HTML 和 CSS 课程][2]，学习一切你需要知道的，关于使用CSS使你的网站更美丽。
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 但至少要做一点吧。 也许我们可以改变我们的header的颜色吗？ 为了了解颜色，计算机使用特殊的代码。 他们以 `#`开始，后面跟着 6 个字母 （A 到 F) 和数字 (0-9)。 你在这里可以发现颜色案例代码： http://www.colorpicker.com/。 您也可以使用 [预先定义的颜色][3]，如 `red` 和 `green`.
 
@@ -89,7 +89,7 @@ Django会自动找到你应用文件夹下全部名字叫“static”的文件�
 在 CSS 文件中，我们决定HTML 文件中元素的样式。 由该元素的名称 （即 `a`，`h1`，`body`）、 属性 `class` 或属性 `id` 来标识元素。 类和 id 是你自己给该元素的名称。 类定义元素组，并指向特定元素的 id。 例如，可能由 CSS 使用标记名称 `a`、 类 `external_link` 或 id `link_to_wiki_page` 标识以下标记：
 
 ```html
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+    <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
     
 

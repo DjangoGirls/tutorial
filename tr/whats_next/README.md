@@ -11,7 +11,7 @@ Bundan sonra şunları yaptığına emin ol:
 *   Güncel kalmak için Django Girls'ü [Facebook][1] ya da [Twitter][2] dan takip et
 
  [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+ [2]: https://twitter.com/djangogirls
 
 ### Daha geniş kapsamlı kaynaklar önerebilir misiniz?
 
@@ -32,9 +32,9 @@ Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öner
 
  [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
+ [6]: https://www.codecademy.com/en/tracks/python
+ [7]: https://www.codecademy.com/tracks/web
  [8]: http://django.carrots.pl/en/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+ [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8

@@ -41,6 +41,13 @@ Django написан на Python. Нам нужен Python, чтобы сдел
     $ sudo dnf install python3.4
     
 
+#### openSUSE
+
+Используй следующую команду в консоли:
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
 Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-343/ и скачать дистрибутив Python:

@@ -12,11 +12,11 @@ Gedit 是开源、免费的编辑器，支持所有操作系统。
 
 Sublime Text 是一个很受欢迎的、免费试用的编辑器。它很容易安装和使用，并且支持所有操作系统。
 
-[在这里下载](http://www.sublimetext.com/2)
+[在这里下载](https://www.sublimetext.com/2)
 
 ## Atom编辑器
 
-Atom 是 [GitHub](http://github.com/) 最新发布的代码编辑器。它开源、免费并且容易安装和使用。它可用于Windows、OSX和 Linux。
+Atom 是 [GitHub](https://github.com/) 最新发布的代码编辑器。它开源、免费并且容易安装和使用。它可用于Windows、OSX和 Linux。
 
 [在这里下载](https://atom.io/)
 

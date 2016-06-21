@@ -6,11 +6,11 @@ Do tej pory Twoja strona była dostępna tylko na Twoim komputerze. Teraz nauczy
 
 Jak już wiesz, strona internetowa musi znajdować się na jakimś serwerze. Istnieje wielu dostawców serwerów w internecie (tzw. firm hostingowych). Skorzystamy z takiego, którego proces wdrażania jest stosunkowo prosty: [PythonAnywhere][1]. PythonAnywhere jest darmowy dla małych aplikacji, które nie mają zbyt dużo odwiedzających, więc na początek na pewno wystarczy.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 Drugą zewnętrzną usługą, jakiej będziemy używać jest [GitHub][2], który przechowuje kod. Istnieją inne usługi, ale w dzisiejszych czasach prawie wszyscy programiści mają konto na GitHubie - i Ty dzisiaj do nich dołączysz!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 GitHub będzie takim miejscem pośrednim, którego użyjemy, by przetransportować Twój kod między Twoim komputerem a serwerem PythonAnywhere i z powrotem.
 

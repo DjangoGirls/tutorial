@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Ez az anyag Creative Commons Attribution-ShareAlike 4.0 International License jogvédelme alatt áll. A licenc megtekintéséhez látogass el ide: http://creativecommons.org/licenses/by-sa/4.0/
+> Ez az anyag Creative Commons Attribution-ShareAlike 4.0 International License jogvédelme alatt áll. A licenc megtekintéséhez látogass el ide: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Fordítás
 A tutorial magyar fordítását egy csapat lelkes önkéntes készítette el: Czapári Dóri, Hanna Kollo, Erő Julcsi, Bónis Balázs, Kádár Szilvi, Szelle Erika, Téglássy Anna, Szabó Adrienn, Nádudvari György. Köszönjük nekik! <3
@@ -37,7 +37,7 @@ Oké, [kezdjük az elejénél...][3]
 
 Ezt a tutorialt a [DjangoGirls][4] tartja fenn. Ha bármilyen hibát találsz benne, vagy frissíteni szeretnéd, kérlek kövesd a [közreműködési útmutatót][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Szeretnél segíteni lefordítani a tutorialt más nyelvekre?

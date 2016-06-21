@@ -56,7 +56,7 @@ Spravme pár zmien v `mysite/settings.py`. Otvor súbor v editore kódu, ktorý 
 
 Bolo by dobré mať na našej stránke správny čas. Choď na [zoznam časových pásiem na wikipedii][2] a skopíruj svoje časové pásmo (TZ). (napr. `Europe/Bratislava`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 V súbore settings.py, nájdi riadok, ktorý obsahuje `TIME_ZONE` a uprav ho tak, aby obsahoval tvoje časové pásmo:
 

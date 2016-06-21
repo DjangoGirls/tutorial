@@ -2,7 +2,7 @@
 
 > Ce chapitre est inspiré par la présentation "How the Internet works" par Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qu'il ce passe vraiment quand vous tapez une adresse comme http://djangogirls.org dans votre navigateur et appuyez sur `Entrée` ?
+Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qu'il ce passe vraiment quand vous tapez une adresse comme https://djangogirls.org dans votre navigateur et appuyez sur `Entrée` ?
 
 Avant tout, il faut savoir qu'un site web n'est rien de plus qu'un tas de fichiers sauvegardés sur un disque dur. Exactement comme vos vidéos, vos musiques ou vos photos. Cependant, les sites web ont quelque chose d'unique : ils contiennent du code informatique appelé HTML.
 
@@ -24,7 +24,7 @@ C'est le bazar, non ? En fait, c'est un réseau de machines connectées entre el
 
  [2]: images/internet_3.png
 
-Fascinant, non ? Cependant, il n'est évidemment pas possible de tirer un câble entre chaque machine connectée à Internet. Du coup, pour atteindre une machine (par exemple, celle où http://djangogirls.org est sauvegardé), on doit faire passer une requête par plein d'autres machines.
+Fascinant, non ? Cependant, il n'est évidemment pas possible de tirer un câble entre chaque machine connectée à Internet. Du coup, pour atteindre une machine (par exemple, celle où https://djangogirls.org est sauvegardé), on doit faire passer une requête par plein d'autres machines.
 
 Ça ressemble ça :
 
@@ -32,7 +32,7 @@ Fascinant, non ? Cependant, il n'est évidemment pas possible de tirer un câble
 
  [3]: images/internet_2.png
 
-C'est un peu comme si, quand vous tapiez http://djangogirls.org, vous envoyiez une lettre qui dit "Chères Django Girls, je voudrais voir le site djangogirls.org. Pouvez-vous me l'envoyer ?"
+C'est un peu comme si, quand vous tapiez https://djangogirls.org, vous envoyiez une lettre qui dit "Chères Django Girls, je voudrais voir le site djangogirls.org. Pouvez-vous me l'envoyer ?"
 
 Votre lettre part vers le bureau de poste le plus proche. Ensuite, il file vers un autre, qui est plus proche de votre destinataire. Puis un autre, et encore un autre, jusqu'à sa destination. Une chose à retenir : si vous envoyez beaucoup de lettres (*data packets*) au même endroit, il se pourrait qu'elles transitent par des postes différentes (*routers*). Cela dépend de la manière dont elles sont distribuées à chaque bureau de poste.
 

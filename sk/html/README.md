@@ -106,7 +106,7 @@ Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je 
 *   `<em>text</em>` zdôrazňuje tvoj text
 *   `<strong>text</strong>` zvýrazňuje tvoj text o čosi viac
 *   `<br />` vkladá nový riadok (do br nemôžeš nič vložiť)
-*   `<a href="http://djangogirls.org">link</a>` vytvára odkaz
+*   `<a href="https://djangogirls.org">link</a>` vytvára odkaz
 *   `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam ako tento!
 *   `<div></div>` definuje sekciu stránky
 

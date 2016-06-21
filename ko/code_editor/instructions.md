@@ -10,11 +10,11 @@ Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
 ## Sublime Text 2
 
 Sublime Text는 인기있는 에디터이면서 무료로 사용할 수 있어요. 설치와 사용이 편리하고 모든 운영체제에서 쓸 수 있어요.
-[이 곳](http://www.sublimetext.com/2)에서 다운받으세요.
+[이 곳](https://www.sublimetext.com/2)에서 다운받으세요.
 
 ## Atom
 
-Atom은 아주 최근에 [GitHub](http://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
+Atom은 아주 최근에 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
 [이 곳](https://atom.io/)에서 다운받으세요.
 
 ## 왜 코드 에디터를 설치해야 하나요?

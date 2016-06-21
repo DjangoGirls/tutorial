@@ -2,7 +2,7 @@
 
 > Tato kapitola je inspirována přednáškou "How the Internet works", kterou přednesla Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Internet jistě používáš každý den. Ale víš ve skutečnosti co se stane, když do prohlížeče napíšeš adresu jako http://djangogirls.org a zmáčkneš `enter`?
+Internet jistě používáš každý den. Ale víš ve skutečnosti co se stane, když do prohlížeče napíšeš adresu jako https://djangogirls.org a zmáčkneš `enter`?
 
 První věc, které potřebuješ rozumět je, že webová stránka je jen pár souborů uložených na hard disku. Přesně jako tvé filmy, hudba nebo obrázky. Je tu ale něco, co dělá unikátními webové stránky: obsahují počítačový kód nazývaný HTML.
 
@@ -24,7 +24,7 @@ Vypadá to jako pěkný bordel, že? Ve skutečnosti je to síť propojených st
 
  [2]: images/internet_3.png
 
-Není to fascinující? Samozřejmě není možné mít dráty mezi každými dvěma stroji připojenými k internetu. Proto, abychom získali přístup ke konkrétnímu počítači (třeba tomu na kterém je uložena stránka http://djangogirls.org), musí být požadavek postupně předáván mezi mnoha různými stroji.
+Není to fascinující? Samozřejmě není možné mít dráty mezi každými dvěma stroji připojenými k internetu. Proto, abychom získali přístup ke konkrétnímu počítači (třeba tomu na kterém je uložena stránka https://djangogirls.org), musí být požadavek postupně předáván mezi mnoha různými stroji.
 
 Vypadá to takhle:
 
@@ -32,7 +32,7 @@ Vypadá to takhle:
 
  [3]: images/internet_2.png
 
-Představ si, že když napíšeš http://djangogirls.org, pošleš dopis ve kterém stojí "Drahé Django Girls, chci si prohlédnout stránku djangogirls.org. Pošlete mi ji, prosím!"
+Představ si, že když napíšeš https://djangogirls.org, pošleš dopis ve kterém stojí "Drahé Django Girls, chci si prohlédnout stránku djangogirls.org. Pošlete mi ji, prosím!"
 
 Tvůj dopis se pošle na tobě nejbližší poštu. Potom se pošle na jinou poštu, která je trochu blíže tvému adresátovi, potom na další a další, až se doručí do cílové destinace. Jediná unikátní věc je, že když pošleš hodně dopisů (*data paketů*) na stejné místo, můžou se tam dostat přes naprosto jiné pošty (*routery*). To závisí na tom, jak jsou na každé poště distribuovány.
 

@@ -2,7 +2,7 @@
 
 > Bu bölüm Jessica McKellar'ın "How the Internet works" yani "İnternet nasıl çalışır" adlı bir konuşmasından esinlenerek oluşturuldu. (http://web.mit.edu/jesstess/www/).
 
-Bahse varız ki İnternet'i her gün kullanıyorsunuz. Fakat tarayıcınıza http://djangogirls.org gibi bir adres girip `enter` tuşuna bastığınızda neler olduğunu biliyor musunuz?
+Bahse varız ki İnternet'i her gün kullanıyorsunuz. Fakat tarayıcınıza https://djangogirls.org gibi bir adres girip `enter` tuşuna bastığınızda neler olduğunu biliyor musunuz?
 
 Öncelikle bir web sitesinin bir sabit diske kaydedilmiş bir grup dosya olduğunu anlamanız gerekir. Tıpkı filmleriniz, müzikleriniz ya da resimleriniz gibi. Ancak, web sitelerine özel şöyle bir durum var: HTML adı verilen bir bilgisayar kodu içerirler. 
 
@@ -24,7 +24,7 @@ Size bir resmini çizdik, İnternet işte buna benzer:
 
  [2]: images/internet_3.png
 
-Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. Yani, bir makineye ulaşmak için( örneğin http://djangogirls.org web sitesinin kayıtlı olduğu) bir çok farklı makineden istek geçmesi gerekli.
+Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. Yani, bir makineye ulaşmak için( örneğin https://djangogirls.org web sitesinin kayıtlı olduğu) bir çok farklı makineden istek geçmesi gerekli.
 
 Şöyle gözükmekte:
 
@@ -32,7 +32,7 @@ Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm maki
 
  [3]: images/internet_2.png
 
-Tarayıcınıza http://djangogirls.org yazdığınızda, "Sevgili Django Girls, ben djangogirls.org web sitesini görmek istiyorum. Lütfen bana gönderin!" diyen bir mektup gönderdiğinizi düşünün.
+Tarayıcınıza https://djangogirls.org yazdığınızda, "Sevgili Django Girls, ben djangogirls.org web sitesini görmek istiyorum. Lütfen bana gönderin!" diyen bir mektup gönderdiğinizi düşünün.
 
 Mektubunuz size en yakın postaneye gider. Daha sonra sizden biraz daha uzak bir postaneye gider, daha sonra biraz daha uzaktakine, daha uzağa ve en son gitmesi gereken yere. Tek farklı olan, aynı yere bir çok mektup(*veri paketi*) gönderirseniz, tamamen farklı postanelerden(*yönlendirici*) geçebilir. Bu, her bir postanede nasıl dağıtım yapıldığına bağlıdır.
 

@@ -53,7 +53,7 @@ Apportons quelques changements à `mysite/settings.py`. Ouvrez le fichier avec l
 
 Ça serait sympa d'avoir l'heure correcte sur notre site Web. Allez sur [wikipedia timezones list][2] et copiez le fuseau horaire qui correspond le mieux à l'endroit où vous vous trouvez (TZ). (par exemple: `Europe/Paris`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Dans settings.py, recherchez la ligne qui contient le `TIME_ZONE` et modifiez-la pour choisir votre propre fuseau horaire :
 

@@ -4,7 +4,7 @@ Mindjárt elkészíted az első weblapodat: a blogod honlapját! De előbb tanul
 
 ## Mi az URL?
 
-Az URL egyszerűen csak egy webes cím. Minden alkalommal látsz URL-eket, amikor meglátogatsz egy weboldalt - a böngésződ címsorában találodm meg (igen! a `127.0.0.1:8000` egy URL! És a `https://djangogirls.com` is egy URL):
+Az URL egyszerűen csak egy webes cím. Minden alkalommal látsz URL-eket, amikor meglátogatsz egy weboldalt - a böngésződ címsorában találodm meg (igen! a `127.0.0.1:8000` egy URL! És a `https://djangogirls.org` is egy URL):
 
 ![Url][1]
 

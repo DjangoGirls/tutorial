@@ -12,11 +12,11 @@ Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde k
 
 Sublime Text ücretsiz deneme sürümüne sahip oldukça popüler bir editördür. Kurulumu ve kullanımı basittir, tüm işletim sistemlerinde kullanılabilir. 
 
-[Buradan indirin](http://www.sublimetext.com/2)
+[Buradan indirin](https://www.sublimetext.com/2)
 
 ## Atom
 
-Atom [GitHub](http://github.com/) tarafından geliştirilen oldukça yeni bir editör. Atom ücretsiz, açık kaynak kodlu, kurulumu ve kullanımı basit bir editördür. Windows, OSX ve Linux işletim sistemlerinde kullanılabilir.
+Atom [GitHub](https://github.com/) tarafından geliştirilen oldukça yeni bir editör. Atom ücretsiz, açık kaynak kodlu, kurulumu ve kullanımı basit bir editördür. Windows, OSX ve Linux işletim sistemlerinde kullanılabilir.
 
 [Buradan indirin](https://atom.io/)
 

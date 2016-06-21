@@ -18,7 +18,7 @@ Naša obľúbená je [I want my name][2]. Propagujú "bezbolestný manažment do
 
 Choď na [iwantmyname][3] a napíš typ domény akú chceš mať do poľa vyhľadávania.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

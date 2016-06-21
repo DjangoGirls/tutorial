@@ -105,7 +105,7 @@ Agora você pode se divertir um pouco tentando customizar o seu template! Aqui e
 *   `<em>texto</em>` enfatiza seu texto
 *   `<strong>text</strong>` enfatiza fortemente seu texto
 *   `<br />` pula para a próxima linha (você não pode colocar nada dentro de br)
-*   `<a href="http://djangogirls.org">link</a>` cria um link
+*   `<a href="https://djangogirls.org">link</a>` cria um link
 *   `<ul><li>primeiro item</li><li>segundo item</li></ul>` cria uma lista, exatamente como essa!
 *   `<div></div>` define uma seção da página
 

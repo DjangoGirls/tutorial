@@ -4,7 +4,7 @@ Chystáme sa vytvoriť našu prvú web stránku: domovská stránka tvojho blogu
 
 ## Čo je URL?
 
-URL je jednoducho webová adresa. URL si môžeš všimnúť zakaždým, keď navštíviš webovú stránku - vidno ju v prehliadači v adresnom riadku (áno! `127.0.0.1:8000` je URL! A `https://djangogirls.com` je tiež URL):
+URL je jednoducho webová adresa. URL si môžeš všimnúť zakaždým, keď navštíviš webovú stránku - vidno ju v prehliadači v adresnom riadku (áno! `127.0.0.1:8000` je URL! A `https://djangogirls.org` je tiež URL):
 
 ![Url][1]
 

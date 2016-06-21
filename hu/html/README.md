@@ -105,7 +105,7 @@ Most szórakozásképpen próbáld módosítani a template-edet! Itt van néhán
 *   `<em>text</em>` dőlt szöveghez
 *   `<strong>text</strong>` a szöveg kiemeléséhez
 *   `<br />` új sor kezdéséhez (nem mindenhová rakhatsz br-t)
-*   `<a href="http://djangogirls.org">link</a>` létrehoz egy linket
+*   `<a href="https://djangogirls.org">link</a>` létrehoz egy linket
 *   `<ul><li>first item</li><li>second item</li></ul>` létrehoz egy listát, akárcsak ezt itt!
 *   `<div></div>` az oldal szakaszainak megadásához
 

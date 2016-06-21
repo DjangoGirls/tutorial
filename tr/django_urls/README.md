@@ -4,7 +4,7 @@
 
 ## URL nedir?
 
-URL basitçe bir web adresidir. Bir web sayfasını her ziyaret ettiğinizde tarayıcınızın adres barında bir URL görürsünüz (evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.com` da bir URL'dir):
+URL basitçe bir web adresidir. Bir web sayfasını her ziyaret ettiğinizde tarayıcınızın adres barında bir URL görürsünüz (evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.org` da bir URL'dir):
 
 ![Url][1]
 

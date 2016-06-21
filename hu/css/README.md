@@ -10,7 +10,7 @@ De nem akarjuk megint az alapoktól kezdeni, igaz? Itt is olyasmit fogunk felhas
 
 ## Használjunk Bootstrapet!
 
-A Bootstrap az egyik legnépszerűbb HTML és CSS keretrendszer, amivel szép weboldalakat készíthetünk: http://getbootstrap.com/
+A Bootstrap az egyik legnépszerűbb HTML és CSS keretrendszer, amivel szép weboldalakat készíthetünk: https://getbootstrap.com/
 
 Eredetileg a Twitternél dolgozó programozók készítették, de most önkéntesek fejlesztik szerte a világon.
 
@@ -65,7 +65,7 @@ Itt az ideje, hogy a CSS fájlunkba írjunk is valamit! Nyisd meg a `blog/static
 
 Most nem fogunk túlságosan belemélyedni a CSS-be, mert nem bonyolult, és magadtól is meg tudod majd tanulni a workshop után. Szerintünk a [Codeacademy][2] HTML & CSS kurzusából mindent megtanulhatsz arról, hogyan teheted széppé a weboldalaidat CSS segítségével.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a header színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. `#` jellel kezdődnek, majd 6 betű (A-F) és szám (0-9) következik. Színkódokat például itt találhatsz: http://www.colorpicker.com/. [Előre meghatározott színeket][3] is használhatsz, mint a `red` vagy a `green`.
 
@@ -84,7 +84,7 @@ A `h1 a` egy CSS szelektor. Ez azt jelenti, hogy alkalmazzuk a stílusunkat mind
 A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. Az egyes elemek beazonosíthatók az elemek nevei alapján (pl. `a`, `h1`, `body`), és a `class` vagy az `id` attribútumaik alapján. A class és az id olyan nevek, amelyeket te adhatsz meg az elemeknek. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. A következő tag például beazonosítható akár az "`a`" tag névvel, az `external_link` class-szal vagy a `link_to_wiki_page` id-val:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```    
 
 Olvass utána a [CSS szelektorokról a w3schools oldalán][4].
@@ -156,7 +156,7 @@ body {
 Lehet, hogy testre szabhatnánk a betű stílusát a header-ünkben. A következő sort másold bele a `<head>`-be a `blog/templates/blog/post_list.html` fájlon belül:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```    
 
 Ez a sor beimportál egy *Lobster* nevű betűtípust a Google Fonts-ból (https://www.google.com/fonts).
