@@ -228,7 +228,7 @@ If you want to show only the first number, you can do this by using __indexes__.
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-To delete something from your list you will need to use __indexes__ as we learnt above and the `pop()` method. Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
+To delete something from your list you will need to use __indexes__ as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
@@ -313,7 +313,7 @@ As well as this, you can also change a value associated with an already-created 
     >>> participant
     {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learnt another amazing thing.
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
 ### Summary
 
@@ -445,7 +445,7 @@ Obviously, you're a pretty seasoned Python developer now, so feel free to write 
 
 Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour; now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.  (**Note**:  Replace `<your_name>` including the `<` and `>` with your user name.)

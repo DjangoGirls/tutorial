@@ -82,7 +82,7 @@ And finally we save our changes. Go to your console and run these commands:
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 <img src="images/new_github_repo.png" />
 
@@ -183,7 +183,7 @@ Successfully installed django-1.9
 
 Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
 
-We can initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
+We can initialize the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
 
     (myvenv) $ python manage.py migrate
@@ -197,7 +197,7 @@ We can initialise the database on the server just like we did the one on your ow
 
 ## Publishing our blog as a web app
 
-Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialised. We're ready to publish it as a web app!
+Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab. Finally, hit **Add a new web app**.
 
@@ -220,7 +220,7 @@ In the "Virtualenv" section, click the red text that says "Enter the path to a v
 
 ### Configuring the WSGI file
 
-Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file.
+Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
 
 Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
