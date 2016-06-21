@@ -1,18 +1,18 @@
 # Introduction to the command-line interface
 
-> For readers at home: this chapter is covered in [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-Huh, it's exciting, right?! You'll write your first line of code in just a few minutes :)
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
 __Let us introduce you to your first new friend: the command line!__
 
 The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangably but they are one and the same thing.
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
 ## What is the command line?
 
-The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling, and manipulating files on your computer. Much like Windows Explorer or Finder on Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the __command line__ or __command-line interface__, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Open the command-line interface
 
@@ -28,7 +28,7 @@ Applications → Utilities → Terminal.
 
 ### Linux
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
 ## Prompt
 
@@ -42,9 +42,9 @@ On Windows, it's a `>` sign, like this:
 
     >
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you :)
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign and that's 100% correct.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -65,9 +65,9 @@ And then hit `enter`. This is our result:
     $ whoami
     olasitarska
 
-As you can see, the computer has just printed your username. Neat, huh?:)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Try to type each command, do not copy-paste. You'll remember more this way!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Basics
 
@@ -136,7 +136,7 @@ Windows:
 
 Here it is!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically autofill the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
 
 ---
 
@@ -150,7 +150,7 @@ Windows:
 
     > mkdir practice
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
@@ -158,7 +158,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 ### Exercise!
 
-Small challenge for you: in your newly created `practice` directory create a directory called `test`. Use `cd` and `mkdir` commands.
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Solution:
 
@@ -190,7 +190,7 @@ Windows:
 
     > cd ..
 
-Using `..` with the `cd` command will change your current directory to the parent directory (this is the directory that contains your current directory).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
 Check where you are:
 
@@ -204,7 +204,7 @@ Windows:
 
 Now time to delete the `practice` directory:
 
-> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _deleted files will be gone forever_! So, be very careful with this command.
+> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
     $ rm -r practice
 
@@ -223,7 +223,7 @@ Windows:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright?:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
     $ exit
 
@@ -231,7 +231,7 @@ Windows:
 
     > exit
 
-Cool, huh?:)
+Cool, huh? :)
 
 ## Summary
 

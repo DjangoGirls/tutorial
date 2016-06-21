@@ -16,7 +16,7 @@ Sublime Text is a very popular editor with a free evaluation period. It's easy t
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OSX and Linux.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
 [Download it here](https://atom.io/)
 
@@ -29,5 +29,5 @@ The first reason is that code needs to be **plain text**, and the problem with p
 
 The second reason is that code editors are specialised for editing code, so they can provide helpful features like highlighting code with colour according to its meaning, or automatically closing quotes for you.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favourite tools :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favourite tools. :)
 
