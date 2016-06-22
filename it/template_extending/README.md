@@ -117,6 +117,6 @@ Ed ora aggiungi questa riga all'inizio del file:
     {% endblock content %}
     
 
-E' tutto! Controlla se il tuo sito sta ancora funzionando correttamente :)
+È tutto! Controlla se il tuo sito sta ancora funzionando correttamente :)
 
 > Se hai un errore `TemplateDoesNotExists` che dice che non c'è un file `blog/base.html` e hai `runserver` in esecuzione nella console, prova a fermarlo (premendo Ctrl+C - I tasti Control e C insieme) e riavvialo mettendo in esecuzione il comando `python manage.py runserver`.
