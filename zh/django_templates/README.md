@@ -58,7 +58,7 @@
         <div>
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```
@@ -70,7 +70,7 @@
 
  [3]: images/step3.png
 
-你注意到这次我们使用了一个明显不同的标记`{{ post.title }}` 或 `{{ post.text }}`？ 我们正在访问定义在`Post`模型中的每一个域。 此外，`|linebreaks`通过一个过滤器，使得行间隔编程段落。
+你注意到这次我们使用了一个明显不同的标记`{{ post.title }}` 或 `{{ post.text }}`？ 我们正在访问定义在`Post`模型中的每一个域。 此外，`|linebreaksbr`通过一个过滤器，使得行间隔编程段落。
 
 ## 还有一件事
 

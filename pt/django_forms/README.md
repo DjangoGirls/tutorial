@@ -282,7 +282,7 @@ Agora o modelo estará parecido com:
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     </div>
     <h1>{{ post.title }}</h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 {% endblock %}
 ```
 

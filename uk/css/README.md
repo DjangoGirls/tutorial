@@ -123,7 +123,7 @@ Class і id - імена, які ви присвоюєте елементам в
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -184,7 +184,7 @@ h1 a {
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -264,7 +264,7 @@ h1, h2, h3, h4 {
                         <p>published: {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

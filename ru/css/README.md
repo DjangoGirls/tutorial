@@ -127,7 +127,7 @@ Django будет автоматически находить папки "static
                 <div>
                     <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </body>
@@ -193,7 +193,7 @@ Django будет автоматически находить папки "static
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 ```
 
@@ -256,7 +256,7 @@ Django будет автоматически находить папки "static
         <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```
@@ -273,7 +273,7 @@ Django будет автоматически находить папки "static
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
             </div>

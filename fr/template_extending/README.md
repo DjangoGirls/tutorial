@@ -43,7 +43,7 @@ Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -89,7 +89,7 @@ Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blo
             {{ post.published_date }}
         </div>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -112,7 +112,7 @@ Maintenant, ajoutez cette ligne au début du fichier :
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}

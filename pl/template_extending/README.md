@@ -43,7 +43,7 @@ Następnie otwórz go i skopiuj całą zawartość pliku `post_list.html` do pli
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -89,7 +89,7 @@ Teraz zapisz zmiany, a potem otwórz jeszcze raz plik `blog/templates/blog/post_
             {{ post.published_date }}
         </div>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -112,7 +112,7 @@ A teraz dodaj ten wiersz na początku pliku:
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}

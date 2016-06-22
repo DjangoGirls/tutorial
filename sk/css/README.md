@@ -127,7 +127,7 @@ Súbor by mal teraz vyzerať asi takto:
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -193,7 +193,7 @@ A teraz pridaj triedu, `post` do `div`u, v ktorom je blog post.
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -256,7 +256,7 @@ Teraz s deklaráciami tried obklop HTML kód, ktorý zobrazuje posty. Nahraď to
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -273,7 +273,7 @@ v súbore `blog/templates/blog/post_list.html` týmto:
                         {{ post.published_date }}
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

@@ -282,7 +282,7 @@ ki template buna benzesin:
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.baslik }}</h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```

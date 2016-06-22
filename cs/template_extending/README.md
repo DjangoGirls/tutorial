@@ -43,7 +43,7 @@ Pak jej otevři a zkopírujte vše z `post_list.html` do `base.html` souboru, ja
                                  {{ post.published_date }}
                              </div>
                              <h1><a href="">{{ post.title }}</a></h1>
-                             <p>{{ post.text|linebreaks }}</p>
+                             <p>{{ post.text|linebreaksbr }}</p>
                          </div>
                      {% endfor %}
                      </div>
@@ -89,7 +89,7 @@ Nyní ulož a znovu otevři svůj `blog/templates/blog/post_list.html`. Odstraň
                  {{ post.published_date }}
              </div>
              <h1><a href="">{{ post.title }}</a></h1>
-             <p>{{ post.text|linebreaks }}</p>
+             <p>{{ post.text|linebreaksbr }}</p>
          </div>
     {% endfor %}
 ```    
@@ -112,7 +112,7 @@ A teď přidej na začátek souboru tento řádek:
                     {{ post.published_date }}
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     {% endblock content %}

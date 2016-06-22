@@ -54,7 +54,7 @@ Działa! Ale chcemy je wyświetlić tak samo, jak statyczne wpisy, które tworzy
     <div>
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -65,7 +65,7 @@ Działa! Ale chcemy je wyświetlić tak samo, jak statyczne wpisy, które tworzy
 
  [3]: images/step3.png
 
-Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: `{{ post.title }}` i `{{ post.text }}`? W ten sposób uzyskujemy dostęp do danych zawartych w poszczególnych polach naszego modelu `Post`. Z kolei `|linebreaks` przepuszcza wpisy przez filtr, który zamienia znaczniki nowej linii na akapity.
+Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: `{{ post.title }}` i `{{ post.text }}`? W ten sposób uzyskujemy dostęp do danych zawartych w poszczególnych polach naszego modelu `Post`. Z kolei `|linebreaksbr` przepuszcza wpisy przez filtr, który zamienia znaczniki nowej linii na akapity.
 
 ## Jeszcze jedno
 

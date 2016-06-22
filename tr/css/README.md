@@ -127,7 +127,7 @@ Dosyanız şu şekilde gözüküyor olmalı:
             <div>
                 <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
                 <h1><a href="">{{ post.baslik }}</a></h1>
-                <p>{{ post.yazi|linebreaks }}</p>
+                <p>{{ post.yazi|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -193,7 +193,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 <div class="post">
     <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
     <h1><a href="">{{ post.baslik }}</a></h1>
-    <p>{{ post.yazi|linebreaks }}</p>
+    <p>{{ post.yazi|linebreaksbr }}</p>
 </div>
 ```
 
@@ -256,7 +256,7 @@ Sonra da blog gönderilerimizi gösteren HTML kodunu sınıf bildirimleriyle sar
     <div class="post">
         <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
         <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -273,7 +273,7 @@ bununla değiştirelim:
                         {{ post.yayinlama_tarihi }}
                     </div>
                     <h1><a href="">{{ post.baslik }}</a></h1>
-                    <p>{{ post.yazi|linebreaks }}</p>
+                    <p>{{ post.yazi|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>
