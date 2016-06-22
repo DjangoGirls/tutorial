@@ -14,9 +14,9 @@ Nel capitolo precedente abbiamo dato al nostro template una lista di posts nella
 
 Per stampare una variabile nel template Django, usiamo doppie parentesi graffe con il nome della variabile all'interno, così:
 
-```html
-{{ posts }}
-```
+    html
+    {{ posts }}
+    
 
 Prova questo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci tutto dal secondo `<div>` al terzo `</div>` con `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
 
@@ -31,11 +31,11 @@ Come vedi, quello che abbiamo è:
 
 Significa che Django lo vede come una lista di oggetti. Ricordi dalla **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con for loops! In un template Django si fanno così:
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
-```
+    html
+    {% for post in posts %}
+        {{ post }}
+    {% endfor %}
+    
 
 Prova ad inserirlo nel tuo template.
 
@@ -45,19 +45,19 @@ Prova ad inserirlo nel tuo template.
 
 Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo creato prima nel capitolo **Introduzione ad HTML**. Puoi mischiare i tag HTML con quelli di template. Il nostro `body` avrà questo aspetto:
 
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
+    html
     <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-{% endfor %}
-```
+    
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+    
 
 {% raw %}Tutto quello che hai messo tra `{% for %}` e `{% endfor %}` Sarà ripetuto per ciascun oggetto della lista. Aggiorna la tua pagina:{% endraw %}
 
@@ -75,7 +75,7 @@ Sarebbe bello vedere se il tuo sito funziona ancora su Internet, giusto? Proviam
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add -A .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."

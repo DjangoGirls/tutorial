@@ -56,7 +56,7 @@ Puoi pensare ad un modello nel database come ad un foglio elettronico con colonn
 
 ### Creazione di un'applicazione
 
-Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del nostro progetto. È molto bello avere tutto organizzato fin dall'inizio. Per creare un'applicazione abbiamo bisogno di eseguire il seguente comando nella console (dalla cartella `djangogirls` dove si trova il file `manage.py`):
+Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del nostro progetto. E' molto bello avere tutto organizzato fin dall'inizio. Per creare un'applicazione abbiamo bisogno di eseguire il seguente comando nella console (dalla cartella `djangogirls` dove si trova il file `manage.py`):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -65,14 +65,14 @@ Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni fil
 
     djangogirls
     ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
+    | __init__.py
+    | settings.py
+    | urls.py
+    | wsgi.py
     ├── manage.py
     └── blog
         ├── migrations
-        |       __init__.py
+        | __init__.py
         ├── __init__.py
         ├── admin.py
         ├── models.py
@@ -82,17 +82,17 @@ Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni fil
 
 Dopo aver creato un'applicazione dobbiamo dire a Django che dovrebbe utilizzarla. Lo facciamo nel file `mysite/settings.py`. Dobbiamo trovare `INSTALLED_APPS` ed aggiungere una riga che contenga `'blog',` appena sopra`)`. Quindi il prodotto finale dovrebbe assomigliare a questo:
 
-```python
-INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-)
-```
+    python
+    INSTALLED_APPS = (
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'blog',
+    )
+    
 
 ### Creazione di un modello blog post
 
@@ -100,27 +100,27 @@ Nel file `blog/models.py` definiamo tutti gli oggetti chiamati `Models` - Questo
 
 Apriamo `blog/models.py`, cancella tutto quello che è lì e scrivi un codice come questo:
 
-```python
-from django.db import models
-from django.utils import timezone
-
-
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
-```
+    python
+    from django.db import models
+    from django.utils import timezone
+    
+    
+    class Post(models.Model):
+        author = models.ForeignKey('auth.User')
+        title = models.CharField(max_length=200)
+        text = models.TextField()
+        created_date = models.DateTimeField(
+                default=timezone.now)
+        published_date = models.DateTimeField(
+                blank=True, null=True)
+    
+        def publish(self):
+            self.published_date = timezone.now()
+            self.save()
+    
+        def __str__(self):
+            return self.title
+    
 
 > Ricontrolla se stai utilizzando due caratteri di sottolineatura (`_`) su ciascun lato di `str`. Questa convenzione viene utilizzata spesso in Python e a volte li chiamiamo anche "dunder" (abbreviazione di "doppio carattere di sottolineatura").
 

@@ -1,6 +1,6 @@
 # Introduzione a Python
 
-> Parte di questo capitolo è basato su esercitazioni di Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte di questo capitolo è basato su esercitazioni di Geek Girls Carrots (http://django.carrots.pl/).
 
 Scriviamo un pò codice!
 
@@ -64,14 +64,14 @@ Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.
 
 Utilizzando le virgolette doppie:
 
-    >>> "Correre verso l'albero"
-    "Correre verso l'albero"
+    >>> "Runnin' down the hill"
+    "Runnin' down the hill"
     
 
-o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
+o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata (``):
 
-    >>> 'Correre verso l\'albero'
-    "Correre verso l'albero"
+    >>> "Correre"\"giù dalla collina"
+    "Correre giù dalla collina"
     
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
@@ -135,7 +135,7 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
 
 Vedi? È facile! è semplicemente: nome è uguale a Ola.
 
-Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `nome` e premi `enter`:
+Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
 
     >>> nome
     'Ola'
@@ -154,7 +154,7 @@ La puoi utilizzare anche nelle funzioni:
     5
     
 
-Fantastico, vero? Certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
+Fantastico, vero? certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
 
     >>> a = 4
     >>> b = 6
@@ -182,11 +182,11 @@ Prova questo:
     >>> nome = 'Maria'
     >>> nome
     'Maria'
-    >>> print(nome)
+    >>> print(name)
     Maria
     
 
-Quando digiti `nome`, l'interprete di Python risponde con una stringa *rappresentazione* della variabile 'nome', che contiene le lettere M-a-r-i-a, circondate da singole virgolette, ''. Quando dici `print(nome)`, Python "stamperà" i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.
+Quando digiti `name`, l'interprete di Python risponde con una stringa *rappresentazione* della variabile 'nome', che contiene le lettere M-a-r-i-a, circondate da singole virgolette, ''. Quando dici `print(nome)`, Python "stamperà" i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.
 
 Come vedremo dopo, `print()` è anche utile quando vogliamo stampare le cose dall'interno delle funzioni, oppure quando vogliamo stampare le cose in molteplici righe.
 
@@ -208,7 +208,7 @@ Si, questa lista è vuota. Non serve a molto, giusto? Creiamo una lista di numer
 Abbiamo una lista! Cosa possiamo farne? Vediamo quanti numeri della lotteria ci sono nella lista. Hai idea di quale funzione potresti utilizzare per farlo? Lo abbiamo imparato insieme prima!
 
     >>> len(lotteria)
-    6
+    8
     
 
 Si! `len()` può darti il numero di oggetti in una lista. Utile, vero? Forse abbiamo risolto:
@@ -248,14 +248,14 @@ Se vuoi mostrare solo il primo numero, puoi farlo usando gli **indici**. L'indic
 
 Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome della lista e l'indice dell'oggetto all'interno delle parentesi quadre.
 
-Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement `pop()`. Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
+Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement **del** (del è un'abbreviazione di delete). Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
 
-    >>> print(lotteria)
+    >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
-    >>> print(lotteria[0])
+    >>> print(lottery[0])
     59
-    >>> lotteria.pop(0)
-    >>> print(lotteria)
+    >>> del lottery[0]
+    >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
     
 
@@ -322,9 +322,9 @@ Così come succede se applicato alle liste, il metodo `len()` restituisce il num
 
 Spero che abbia senso per te. :) Pronta per divertirti con i dizionari? Vai alla prossima riga per realizzare altre cose fantastiche.
 
-Puoi usare il comando `pop()` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde alla chiave `'numeri_preferiti'`, digita il seguente comando:
+Puoi usare il comando `del` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde alla chiave `'numeri_preferiti'`, digita il seguente comando:
 
-    >>> partecipante.pop('numeri_preferiti')
+    >>> del partecipante['numeri_preferiti']
     >>> partecipante
     {'paese': 'Polonia', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
     
@@ -415,9 +415,7 @@ Dall'espressione puoi capire che Python non è in grado di mettere a confronto u
 
 Accidentalmente, hai appena imparato un nuovo tipo di oggetto in Python. Si chiama **Boolean** e probabilmente è il tipo più facile che ci sia.
 
-Ci sono solo due oggetti Boolean:
-- True
-- False
+Ci sono solo due oggetti Boolean: -True -False
 
 Ma perché Python possa capirlo, bisogna sempre scrivere True (prima lettera maiuscola, le altre minuscole). **true, TRUE, tRUE non funzionano -- solo True è corretto.** (Lo stesso vale per False, ovviamente.)
 
@@ -453,7 +451,7 @@ Finora abbiamo scritto il codice python nell'interprete, che ci permette di inse
 *   Salvare un po' di codice in un file python
 *   Eseguirlo!
 
-Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ```exit()``` :
+Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ~~~ exit()~~~:
 
     >>> exit()
     $
@@ -465,9 +463,9 @@ Prima, abbiamo preso un editore di codice dalla sezione [code editor][2]. Dovrem
 
  [2]: ../code_editor/README.md
 
-```python
-print('Ciao, Django girls!')
-```
+    python
+    print('Ciao, Django girls!')
+    
 
 > **Nota** Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione `print` di un colore differente rispetto alla stringa che la segue. Questa viene chiamata "sintassi evidenziata", ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la `def` per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice :)
 
@@ -506,13 +504,13 @@ Ora puoi continuare con uno strumento essenziale nella programmazione:
 
 ## If...elif...else
 
-Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. È per questo che Python ha gli **if statements**.
+Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. E' per questo che Python ha gli **if statements**.
 
 Sostituisci il codice nel file **python_intro.py** con questo:
 
-```python
-if 3 > 2:
-```
+    python
+    if 3 > 2:
+    
 
 Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:
 
@@ -524,10 +522,10 @@ Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:
 
 Python si aspetta che gli vengano fornite ulteriori istruzioni che saranno eseguite se la condizione `3 > 2` risulterà vera (o `True` se vogliamo). Proviamo a fare in modo che Python stampi "Funziona!". Modifica il tuo codice nel tuo file **python_intro.py** con questo:
 
-```python
-if 3 > 2:
-     print('Funziona!')
-```
+    python
+    if 3 > 2:
+         print('Funziona!')
+    
 
 Vedi come abbiamo indentato la riga successiva usando 4 spazi? Si deve fare così in modo tale che Python sappia quale codice eseguire se il risultato è True. Puoi fare uno spazio, ma circa tutti i programmatori di Python ne fanno 4 per far vedere le cose più ordinate. Anche un signolo `tab` conta come 4 spazi.
 
@@ -541,12 +539,12 @@ Salvalo ed eseguilo di nuovo:
 
 In esempi precedenti, il codice è stato eseguito solo quando le condizioni erano True. Ma Python ha anche gli `elif` e `else` statements:
 
-```python
-if 5 > 2:
-     print('5 è infatti maggiore di 2') 
-else:
-     print('5 non è maggiore di 2')
-```
+    python
+    if 5 > 2:
+         print('5 è maggiore di 2') 
+    else:
+         print('5 non è maggiore di 2')
+    
 
 Quando viene lanciato, mostrerà:
 
@@ -556,41 +554,41 @@ Quando viene lanciato, mostrerà:
 
 Se 2 fosse un numero maggiore di 5, allora andrebbe in esecuzione il secondo comando. Facile, vero? Andiamo a vedere come funziona `elif`:
 
-```python
-nome = 'Sonja'
-if nome == 'Ola':
-    print('Ciao Ola!')
-elif nome == 'Sonja':
-    print('Ciao Sonja!')
-else:
-    print('Ciao anonimo!')
-```
+    python
+    nome = 'Sonja'
+    if nome == 'Ola':
+        print('Ciao Ola!')
+    elif nome == 'Sonja':
+        print('Ciao Sonja!')
+    else:
+        print('Caio anonimo!')
+    
 
 ed eseguito:
 
     $ python3 python_intro.py
-    Ciao Sonja!
+    Hey Sonja!
     
 
 Hai visto cosa è successo? `elif` ti consente di aggiungere condizioni supplementari che verranno eseguite se nessuna delle condizioni precedenti viene soddisfatta.
 
 Allo statement iniziale `if` puoi far seguire tutti gli statement `elif` che vuoi. Per esempio:
 
-```python
-volume = 57
-if volume < 20:
-    print("Piuttosto basso.")
-elif 20 <= volume < 40:
-    print("Adatto per musica di sottofondo")
-elif 40 <= volume < 60:
-    print("Perfetto, posso apprezzare ogni dettaglio")
-elif 60 <= volume < 80:
-    print("Ideale per le feste")
-elif 80 <= volume < 100:
-    print("Un po' altino!")
-else:
-    print("Oddio, le mie orecchie! :(")
-```
+    python
+    volume = 57
+    if volume < 20:
+        print("Piuttosto basso.")
+    elif 20 <= volume < 40:
+        print("Adatto per musica di sottofondo")
+    elif 40 <= volume < 60:
+        print("Perfetto per apprezzare ogni dettaglio")
+    elif 60 <= volume < 80:
+        print("Ideale per le feste")
+    elif 80 <= volume < 100:
+        print("Un po' altino!")
+    else:
+        print("Oddio, le mie orecchie! :(")
+    
 
 Python esegue ogni singolo test in sequenza e scrive:
 
@@ -607,7 +605,7 @@ Nei tre esercizi precedenti hai imparato:
 *   come **Salvare file** - archiviare codice nei file in modo da poter eseguire programmi più lunghi.
 *   **if...elif...else** - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.
 
-È ora dell'ultima parte del capitolo!
+E' ora dell'ultima parte del capitolo!
 
 ## Le funzioni personalizzate!
 
@@ -615,13 +613,13 @@ Ti ricordi quelle funzioni che puoi eseguire in Python come `len()`? Beh, buone 
 
 Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Ogni funzione in Python inizia con la parola chiave `def`, viene assegnato un nome e può avere alcuni parametri. Iniziamo con una facile. Sostituisci il codice nel file **python_intro.py** con il seguente:
 
-```python
-def ciao():
-    print('Ciao!')
-    print('Come stai?')
-
-ciao()
-```
+    python
+    def ciao():
+        print('Ciao!')
+        print('Come stai?')
+    
+    ciao()
+    
 
 Okay, la nostra prima funzione è pronta!
 
@@ -634,40 +632,40 @@ Eseguiamolo e vediamo cosa succede:
     Come stai?
     
 
-È stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
+E' stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
 
-```python
-def ciao(nome):
-```
+    python
+    def ciao(nome):
+    
 
 Come puoi vedere, abbiamo dato alla nostra funzione un parametro chiamato `nome`:
 
-```python
-def ciao(nome):
-    if nome == 'Ola':
-        print('Ciao Ola!')
-    elif nome == 'Sonja':
-        print('Ciao Sonja!')
-    else:
-        print('Ciao anonimo!')
-
-ciao()
-```
+    python
+    def ciao(nome):
+        if nome == 'Ola':
+            print('Ciao Ola!')
+        elif nome == 'Sonja':
+            print('Ciao Sonja!')
+        else:
+            print('Ciao anonimo!')
+    
+    ciao()
+    
 
 Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if`. Infatti, la funzione viene eseguita quando la condizione viene soddisfatta. Vediamo ora come funziona:
 
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      ciao()
+      hi()
     TypeError: ciao() missing 1 required positional argument: 'nome'
     
 
 Ops, un errore. Fortunatamente, Python ci fornisce un messaggio di errore che ci può servire. Ci dice che la funzione `ciao()` (quella che abbiamo definito) ha un argomento richiesto (chiamato `nome`) e che ci siamo dimenticati di metterlo quando abbiamo chiamato la funzione. Sistemiamolo alla fine del file:
 
-```python
-ciao("Ola")
-```
+    python
+    ciao("Ola")
+    
 
 Ed eseguiamo di nuovo:
 
@@ -677,9 +675,9 @@ Ed eseguiamo di nuovo:
 
 E se cambiamo il nome?
 
-```python
-ciao("Sonja")
-```
+    python
+    ciao("Sonja")
+    
 
 Ed eseguilo:
 
@@ -696,12 +694,12 @@ Fantastico, vero? In questo modo non devi ripetere tutto ogni volta che vuoi mod
 
 Facciamo una cosa più intelligente -- ci sono più di due nomi, e scrivere una condizione per ognuno sarebbe complicato, vero?
 
-```python
-def ciao(nome):
-    print('Ciao ' + nome + '!')
-
-ciao("Rachel")
-```
+    python
+    def ciao(nome):
+        print('Ciao ' + nome + '!')
+    
+    ciao("Rachel")
+    
 
 Ora chiamiamo il codice:
 
@@ -719,29 +717,29 @@ I programmatori non amano ripetere ciò che scrivono. La programmazione mira a a
 
 Ti ricordi ancora delle liste? Facciamo una lista di ragazze:
 
-```python
-ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
-```
+    python
+    ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
+    
 
 Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, quindi usiamola in loop:
 
-```python
-for nome in ragazze:
-```
+    python
+    for nome in ragazze:
+    
 
-Lo statement `for` si comporta in modo simile allo statement `if`; il codice sottostante deve essere rientrato di quattro spazi.
+Lo statement ~~~ for~~~ si comporta in modo simile allo statement ~~~ if~~~; il codice sottostante deve essere rientrato di quattro spazi.
 
 Qua c'è l'intero codice che sarà nel file:
 
-```python
-def ciao(nome):
-    print('Ciao ' + nome + '!') 
-
-ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
-for nome in ragazze:
-    ciao(nome)
-    print('Prossima ragazza')
-```
+    python
+    def hi(nome):
+        print('Ciao ' + nome + '!') 
+    
+    ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
+    for nome in ragazze:
+        hi(name)
+        print('Prossima ragazza')
+    
 
 E quando lo eseguiamo:
 
@@ -762,10 +760,9 @@ Come puoi vedere, tutto quello che metti all'interno di un `for` statement con u
 
 Puoi anche utilizzare `for` su numeri usando la funzione `range`:
 
-```python
-for i in range(1, 6):
-    print(i)
-```
+    for i in range(1, 6):
+        print(i)
+    
 
 Che stamperà:
 
@@ -786,4 +783,6 @@ Nota che il secondo di questi due numeri non è incluso nella lista prodotta da 
 
 Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)
 
-![Cupcake](images/cupcake.png)
+![Cupcake][3]
+
+ [3]: images/cupcake.png

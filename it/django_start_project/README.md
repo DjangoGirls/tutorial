@@ -1,6 +1,6 @@
 # Il tuo primo progetto Django!
 
-> Parte di questo capitolo è basato su esercitazioni di Geek Girls (https://github.com/ggcarrots/django-carrots).
+> Parte di questo capitolo è basato su esercitazioni di Geek Girls (http://django.carrots.pl/).
 > 
 > Parti di questo capitolo sono basate sul [django-marcador tutorial][1] sotto la licenza Creative Commons Attributions-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
@@ -12,7 +12,7 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **installazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
+> Ricordati di eseguire tutto nel virtualenv. Se non vedi un prefisso `(myvenv)` nella tua console devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
 Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dimenticarti di aggiungere il punto `.` alla fine **:
 
@@ -39,7 +39,7 @@ Su Windows; **non dimenticarti di aggiungere il punto `.` alla fine**:
             __init__.py
     
 
-`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover installare nient'altro, tra l'altro.
+`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
 
 Il file `settings.py` contiene la configurazione del tuo sito web.
 
@@ -49,26 +49,26 @@ Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica c
 
 ## Modificare le impostazioni
 
-Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai installato prima.
+Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai istallato prima.
 
 Sarebbe bello avere l'ora corretta sul nostro sito Web. Vai alla [lista di fusi orari di wikipedia][2] e copia il tuo fuso orario (TZ). (es. `Europe/Berlin`)
 
- [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 In settings.py, trova la riga che contiene `TIME_ZONE` e modificala per scegliere il tuo fuso orario:
 
-```python
-TIME_ZONE = 'Europe/Berlin'
-```
+    python
+    TIME_ZONE = 'Europe/Berlin'
+    
 
 Modifica "Europe/Berlin" nel modo corretto
 
 Avrai anche bisogno di aggiungere un percorso per i file statici (scopriremo tutto su file statici e CSS più avanti nell'esercitazione). Scendi fino alla *fine* del file e sotto la voce `STATIC_URL`, aggiungi un nuovo percorso chiamato `STATIC_ROOT`:
 
-```python
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-```
+    python
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    
 
 ## Imposta un database
 
@@ -76,14 +76,14 @@ Ci sono un sacco di software di database diversi che possono immagazzinare dati 
 
 È già impostato in questa parte del file `mysite/settings.py`:
 
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    python
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
-```
+    
 
 Per creare un database per il nostro blog, eseguiamo questo nella console: `python manage.py migrate` (abbiamo bisogno di essere nella directory `djangogirls` che contiene il file `manage.py`). Se funziona, dovresti vedere qualcosa di simile:
 
@@ -126,8 +126,7 @@ Ora tutto quello che devi fare è controllare che il tuo sito sia in esecuzione.
     http://127.0.0.1:8000/
     
 
-
-Il server web assumerà il controllo del command prompt finché non lo fermi. Per digitare più comandi mentre è in esecuzione apri una nuova finestra di terminale e attiva il tuo virtualenv. Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C - Control e C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
+Il server web assumerà il command prompt finché non lo fermi. Per digitare più comandi mentre è in esecuzione apri una nuova finestra di terminale e attiva il tuo virtualenv. Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C - Control and C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
 
 Congratulazioni! Hai appena creato il tuo primo sito e l'hai avviato usando un web server! Non è fantastico?
 
