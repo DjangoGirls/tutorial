@@ -69,6 +69,14 @@ It will look like this:
 >     $ sudo apt-get install python-virtualenv
 >     $ virtualenv --python=python3.4 myvenv
 
+> __NOTE:__ If you get an error like
+
+>     E: Unable to locate package python3-venv
+
+> then instead run:
+
+>     sudo apt install python3.5-venv
+
 
 ## Working with virtualenv
 
