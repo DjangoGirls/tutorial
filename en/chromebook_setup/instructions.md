@@ -36,25 +36,19 @@ things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
-    sudo apt install python3.4-venv
-
-**If you get an error** like
-
-    E: Unable to locate package python3-venv
-
-then instead run:
-
     sudo apt install python3.5-venv
 
 If this still doesn't work, ask your coach for some help.
 
 Next, run:
 
+```
     mkdir djangogirls
     cd djangogirls
     python3 -mvenv myvenv
     source myvenv/bin/activate
     pip install django==1.9.6
+```
 
 ### Github
 

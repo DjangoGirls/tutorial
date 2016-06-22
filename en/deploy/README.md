@@ -26,10 +26,12 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 > **Note** Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
+```
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
+```
 
 Initializing the git repository is something we only need to do once per project (and you won't have to re-enter the username and email again ever).
 
@@ -160,8 +162,8 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.4 myvenv
-Running virtualenv with interpreter /usr/bin/python3.4
+$ virtualenv --python=python3.5 myvenv
+Running virtualenv with interpreter /usr/bin/python3.5
 [...]
 Installing setuptools, pip...done.
 

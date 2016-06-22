@@ -31,13 +31,13 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 
 ### Windows
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python34\python -m venv myvenv`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python35\python -m venv myvenv`. It will look like this:
 
 ```
-    C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
+    C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 ```
 
-where `C:\Python34\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+where `C:\Python35\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 ### Linux and OS X
 
@@ -67,7 +67,7 @@ It will look like this:
 > To get around this, use the `virtualenv` command instead.
 
 >     $ sudo apt-get install python-virtualenv
->     $ virtualenv --python=python3.4 myvenv
+>     $ virtualenv --python=python3.5 myvenv
 
 > __NOTE:__ If you get an error like
 
