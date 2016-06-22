@@ -60,7 +60,7 @@ It will look like this:
 >
 >     $ sudo apt-get install python3-venv
 
-> __NOTE:__ Initiating the virtual environment on Ubuntu 14.04 like this currently gives the following error:
+> __NOTE:__ On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 
