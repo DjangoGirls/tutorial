@@ -45,11 +45,13 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 If you still wish to understand how we created the patterns, here is an example of the process - we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-	^ for beginning of the text
-	$ for end of text
-	\d for a digit
-	+ to indicate that the previous item should be repeated at least once
-	() to capture part of the pattern
+```
+^ for beginning of the text
+$ for end of text
+\d for a digit
++ to indicate that the previous item should be repeated at least once
+() to capture part of the pattern
+```
 
 Anything else in the url definition will be taken literally.
 
@@ -117,6 +119,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 Your console is showing an error but don't worry&mdash;they're actually pretty useful:
 
-It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. No worries, we will get there.
+It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries, we will get there.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/
