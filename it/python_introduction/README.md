@@ -133,7 +133,7 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
     >>> nome = "Ola"
     
 
-Vedi? E' facile! è semplicemente: nome è uguale a Ola.
+Vedi? È facile! è semplicemente: nome è uguale a Ola.
 
 Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
 
