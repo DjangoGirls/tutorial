@@ -1,6 +1,6 @@
 Sono disponibili diversi editor e la scelta di uno piuttosto che un altro dipende principalmente dal gusto personale. La maggior parte dei programmatori Python usa complessi ma estremamente potenti IDE (ambienti di sviluppo integrati), come PyCharm. Tuttavia, dal momento che sei ancora agli inizi non è l'editor più appropriato; quelli che ti suggeriremo noi sono ugualmente potenti ma molto più semplici da utilizzare.
 
-I nostri suggerimenti sono riportati qui di seguito, ma sentiti libero/a di chiedere al tuo coach quali sono le sue preferenze in materia di editor, in questo modo sarà più semplice per il tuo coach aiutarti.
+I nostri suggerimenti sono riportati qui di seguito, ma sentiti libero/a di chiedere al tuo coach quali sono le sue preferenze in materia di editor -in questo modo sarà più semplice per il tuo coach aiutarti.
 
 ## Gedit
 
@@ -10,13 +10,13 @@ Gedit è un editor open-source e gratuito, disponibile per tutti i sistemi opera
 
 ## Sublime Text 2
 
-Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratuito. È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
+Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratuito. E' molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
 
-[Scaricalo qui](https://www.sublimetext.com/2)
+[Scaricalo qui](http://www.sublimetext.com/2)
 
 ## Atom
 
-Atom è un nuovo editor di codice creato da [GitHub](https://github.com/). È gratuito, open-source, facile da installare e da usare. È disponibile per Windows, OSX e Linux.
+Atom è un nuovo editor di codice creato da [GitHub](http://github.com/). È gratuito, open-source, facile da installare e da usare. È disponibile per Windows, OSX e Linux.
 
 [Scaricalo qui](https://atom.io/)
 

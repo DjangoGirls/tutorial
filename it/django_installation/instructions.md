@@ -1,4 +1,4 @@
-> Una parte di questo capitolo si basa sui tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Una parte di questo capitolo si basa sui tutorial delle Geek Girls Carrots (http://django.carrots.pl/).
 > 
 > Una parte di questo capitolo di basa sul [django-marcador tutorial](http://django-marcador.keimlink.de/) sotto licenza Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
@@ -28,7 +28,7 @@ Per creare un nuovo `virtualenv` è necessario aprire la console (ti abbiamo spi
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
     
 
-dove `C:\Python34\python` è la directory in cui precedentemente hai installato Python e `myvenv` è il nome del tuo `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. È meglio usare un nome breve dal momento che dovrai digitarlo spesso!
+dove `C:\Python34\python` è la directory in cui precedentemente hai installato Python e `myvenv` è il nome del tuo `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. E' meglio usare un nome breve -dal momento che dovrai digitarlo spesso!
 
 ### Linux e OS X
 
@@ -52,7 +52,7 @@ Creare un `virtualenv` su Linux e OS X è semplice, basta digitare: `python3 -m 
 
 ## Lavorare con virtualenv
 
-Il comando sopra specificato, creerà una cartella dal nome `myvenv` (o col nome che hai scelto) che contiene il tuo virtual environment (ovvero un mucchio di files e cartelle).
+Il comando sopra specificato, creerà una cartella dal nome `myenv` (o col nome che hai scelto) che contiene il tuo virtual environment (ovvero un mucchio di files e cartelle).
 
 #### Windows
 
@@ -61,8 +61,7 @@ Avvia il tuo virtualenv digitando:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-
-#### Linux e OS X
+#### Linux and OS X
 
 Avvia il tuo virtualenv digitando:
 
@@ -94,7 +93,7 @@ OK, abbiamo tutte le dipendenze importanti pronte. Finalmente possiamo installar
 
 ## Installare Django
 
-Ora che hai iniziato ad utilizzare il tuo `virtualenv`, puoi installare Django usando `pip`. Nella console, esegui `pip install django==1.8` (nota che usiamo un doppio simbolo di uguale: `==`).
+Ora che hai iniziato ad utilizzare il tuo `virtualenv`, puoi istallare Django usando `pip`. Nella console, esegui `pip install django==1.8` (nota che usiamo un doppio simbolo di uguale: `==`).
 
     (myvenv) ~$ pip install django==1.8
     Downloading/unpacking django==1.8

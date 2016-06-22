@@ -21,7 +21,7 @@ I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima c
     blog
     └───templates
         └───blog
-
+    
 
 (Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve rendere la vita più facile.)
 
@@ -39,12 +39,12 @@ L'errore non c'è più! Congratulazioni :) Tuttavia, il tuo sito in realtà non 
 
 Aggiungi quanto segue nel tuo file template:
 
-```html
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
-```
+    html
+    <html>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </html>
+    
 
 Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
@@ -69,17 +69,17 @@ Utilizziamo `<head>` per dire al browser come interpretare la configurazione del
 
 Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
 
-```html
-<html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
-```
+    html
+    <html>
+        <head>
+            <title>Ola's blog</title>
+        </head>
+        <body>
+            <p>Hi there!</p>
+            <p>It works!</p>
+        </body>
+    </html>
+    
 
 Salva il file e aggiorna la tua pagina.
 
@@ -105,36 +105,36 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 *   `<em>text</em>` enfatizza il tuo testo
 *   `<strong>text</strong>` enfatizza fortemente il tuo testo
 *   `<br />` va in un'altra riga (puoi mettere qualsiasi cosa dentro br)
-*   `<a href="https://djangogirls.org">link</a>` crea un link
+*   `<a href="http://djangogirls.org">link</a>` crea un link
 *   `<ul><li>primo elemento</li><li>secondo elemento</li></ul>` fa una lista, proprio come questa qui!
 *   `<div></div>` definisce una sezione della pagina
 
 Qui c'è un esempio di un template completo:
 
-```html
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
-</html>
-```
+    html
+    <html>
+        <head>
+            <title>Django Girls blog</title>
+        </head>
+        <body>
+            <div>
+                <h1><a href="">Django Girls Blog</a></h1>
+            </div>
+    
+            <div>
+                <p>published: 14.06.2014, 12:14</p>
+                <h2><a href="">My first post</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+    
+            <div>
+                <p>pubblicato: 14.06.2014, 12:14</p>
+                <h2><a href="">Il mio secondo postt</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            </div>
+        </body>
+    </html>
+    
 
 Abbiamo creato tre sezioni `div` qui.
 
@@ -160,31 +160,31 @@ Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro de
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy (esegui questi comandi localmente, non su PythonAnywhere):
 
     $ git status
-
+    
 
 Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includere tutte le modifiche in questa directory:
 
-    $ git add --all .
-
+    $ git add -A .
+    
 
 > **Nota** `-A` (diminutivo di "all") significa che `git` riconoscerà anche il fatto che hai cancellato dei file (per impostazione predefinita, esso riconosce soltanto i file nuovi/modificati). Ricorda anche (dal capitolo 3) che il `.` significa la directory attuale.
 
 Prima di caricare tutti i file, proviamo a controllare cosa caricherà `git` (tutti i file che caricherà `git` ora appariranno in verde):
 
     $ git status
-
+    
 
 Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cronologia. Gli daremo un "messaggio di commit" dove descriviamo ciò che abbiamo modificato. Puoi digitare tutto quello che vuoi a questo punto, sarebbe utile scrivere qualcosa di descrittivo in modo da ricordare in futuro cos'hai fatto.
 
     $ git commit -m "Ho cambiato l'HTML per questo sito."
-
+    
 
 > **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
 Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
     git push
-
+    
 
 ### Scarica il tuo nuovo codice su PythonAnywhere, e ricarica la tua web app
 
@@ -198,7 +198,7 @@ Quando hai finito, caricheremo (push) le nostre modifiche su Github:
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-
+    
 
 Ed osserva il tuo codice mentre viene scaricato. Se vuoi controllare che sia arrivato, puoi fare un salto alla scheda **Files** e vedere il tuo codice su PythonAnywhere.
 

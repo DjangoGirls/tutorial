@@ -20,8 +20,8 @@ Quando una richiesta arriva al web server, viene passata a Django che prova a ca
 
 Immagina un postino con una lettera. Sta camminando per la strada e controlla ogni numero civico mettendolo a confronto con quello sulla lettera. Se corrisponde, mette lì la lettera. Questo è il modo in cui l'urlresolver funziona!
 
-Nella funzione *view* avvengono tutte le cose più interessanti: possiamo consultare un database alla ricerca di qualche informazione. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? È come una lettera che dice "Per favore cambia la descrizione del mio lavoro". La *view* può controllare se sei autorizzata a farlo, poi aggiorna la descrizione del lavoro per te e manda un messaggio: "Fatto!". In seguito, la *view* genera una risposta e Django la può inviare al browser dell'utente.
+Nella funzione *view* avvengono tutte le cose più interessanti: possiamo consultare un database alla ricerca di qualche informazione. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? È come una lettera che dice " Per favore cambia la descrizione del mio lavoro". La *view* può controllare se sei autorizzata a farlo, poi aggiorna la descrizione del lavoro per te e manda un messaggio: "Fatto!". In seguito, la *view* genera una risposta e Django la può inviare al browser dell'utente.
 
 Naturalmente, la descrizione qui sopra é molto semplificata, ma per il momento non hai bisogno di sapere nel dettaglio tutti gli aspetti tecnici. Avere il senso generale per il momento è abbastanza.
 
-Per cui invece di perderci troppo nei dettagli, creeremo semplicemente qualcosa usando Django e apprenderemo i concetti fondamentali lungo la strada!
+Per cui invece di perderci troppo nei dettagli, creeremo semplicemente qualcosa usando Django e apprenderemo in concetti fondamentali lungo la strada!

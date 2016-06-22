@@ -6,11 +6,11 @@ Fino ad ora il tuo sito è accessibile solo dal tuo computer, ma ora imparerai c
 
 Come hai già visto, un sito internet ha sede in un server. Ci sono tantissimi server providers disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [PythonAnywere][1]. Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
 
- [1]: https://pythonanywhere.com/
+ [1]: http://pythonanywhere.com/
 
 L'altro servizio esterno che useremo è [GitHub][2], che è un servizio di hosting di codice. Ne esistono altri, ma di questi tempi quasi tutti i programmatori hanno un account GitHub e ora lo avrai anche tu!
 
- [2]: https://www.github.com
+ [2]: http://www.github.com
 
 Useremo GitHub come trampolino di lancio per importare ed esportare il nostro codice su PythonAnywhere.
 
@@ -22,7 +22,7 @@ Git è un "sistema di controllo versione" utilizzato da un sacco di programmator
 
 > **Nota** Se hai già fatto la procedura di installazione, non devi farlo di nuovo - si può passare alla sezione successiva e iniziare a creare il tuo repository Git.
 
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 ## Inizializzare un repository Git
 
@@ -44,7 +44,6 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
     __pycache__
     myvenv
     db.sqlite3
-    /static
     .DS_Store
     
 
@@ -72,7 +71,7 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
 E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi comandi:
 
-    $ git add --all .
+    $ git add -A .
     $ git commit -m "La mia app Django Girls, primo commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -83,7 +82,7 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
 
 ## Pubblichiamo il nostro codice su GitHub
 
-Vai su [GitHub.com][2] e registrati per ottenere un nuovo account gratuito. (Se l'hai già fatto nella preparazione di laboratorio, è fantastico!)
+Vai su [GitHub.com][2] e registrati per ottenere un nuovo account gratuito. (se l'hai già fatto nella preparazione di laboratorio, è fantastico!)
 
 Quindi, crea un nuovo repository, dandogli il nome "my-first-blog". Lascia deselezionata la casella di controllo "initialise with a README", lascia l'opzione di .gitignore vuota (lo abbiamo fatto manualmente) e License su None.
 
@@ -93,7 +92,7 @@ Quindi, crea un nuovo repository, dandogli il nome "my-first-blog". Lascia desel
 
 > **Nota** Il nome `my-first-blog` è importante -- potresti scegliere qualcos'altro, ma si ripeterà un sacco di volte nelle istruzioni qui sotto, e dovrai sostituirlo ogni volta. Probabilmente è più facile mantenere il nome `my-first-blog`.
 
-Nella schermata successiva, ti verrà mostrato l'URL per clonare il tuo repo:
+Nella schermata successiva, ti verrà mostrato l'URL per clonare il tuo repo. Scegli la versione "HTTPS", copialo, e incollalo nel terminale a breve:
 
 ![][4]
 
@@ -128,9 +127,9 @@ Adesso Il tuo codice è su GitHub. Ora controlla! Scoprirai che è in bella comp
 
 # Configurare il nostro blog su PythonAnywhere
 
-> **Nota** Potresti aver già creato un account di PythonAnywhere precedentemente, durante i passaggi di installazione - se è così, non c'è bisogno di farlo nuovamente.
+> **Nota** Potresti aver già creato un account di PythonAnywhere precedentemente, durante i passaggi di istallazione - se è così, non c'è bisogno di farlo nuovamente.
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "deploy/signup_pythonanywhere.md" %}
 
 ## Scaricare il nostro codice su PythonAnywhere
 
@@ -177,7 +176,7 @@ Proprio come hai fatto sul tuo computer, puoi creare un virtualenv su PythonAnyw
     
     $ source myvenv/bin/activate
     
-    (mvenv) $  pip install django==1.8 whitenoise==2.0
+    (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
@@ -203,12 +202,12 @@ Per ora abbiamo solo bisogno di eseguire un comando supplementare chiamato `coll
         /home/edith/my-first-blog/static
     
     This will overwrite existing files!
-    Are you sure you want to do this?
+    Sei sicura di volerlo fare?
     
-    Type 'yes' to continue, or 'no' to cancel: yes
+    Digita 'sì' per continuare o 'no' per annullare: sì
     
 
-Digita "yes" e si parte! Non ti piace far stampare al computer pagine e pagine di testo incomprensibile? Faccio sempre piccoli versi per accompagnarlo. Brp, brp brp...
+Digita "sì" e si parte! Non ti piace far stampare al computer pagine e pagine di testo incomprensibile? Faccio sempre piccoli versi per accompagnarlo. Brp, brp brp...
 
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
@@ -263,20 +262,20 @@ Clicca sul link "WSGI configuration file" (nella sezione "Code" nella parte supe
 
 Elimina tutti i contenuti e sostituiscili con qualcosa di simile:
 
-```python
-import os
-import sys
-
-path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
-if path not in sys.path:
-    sys.path.append(path)
-
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
-```
+    python
+    import os
+    import sys
+    
+    path = '/home/<il-tuo-username>/my-first-blog'  # usa il tuo username qui
+    if path not in sys.path:
+        sys.path.append(path)
+    
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+    
+    from django.core.wsgi import get_wsgi_application
+    from whitenoise.django import DjangoWhiteNoise
+    application = DjangoWhiteNoise(get_wsgi_application())
+    
 
 > **Nota** non dimenticare di mettere il tuo nome utente dove dice `<il-tuo-username>`
 
