@@ -2,7 +2,7 @@
 
 > This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.4, so if you have any earlier version, you will need to upgrade it.
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.5, so if you have any earlier version, you will need to upgrade it.
 
 
 ### Windows
@@ -22,7 +22,7 @@ It is very likely that you already have Python installed out of the box. To chec
     $ python3 --version
     Python 3.5.1
 
-If you have a different 'micro version' of Python installed, e.g. 3.4.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you have a different 'micro version' of Python installed, e.g. 3.5.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 
 #### Debian or Ubuntu

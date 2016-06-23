@@ -15,7 +15,7 @@ Once you're ready, follow the instructions below.
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
     $ python3
-    Python 3.4.3 (...)
+    Python 3.5.1 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
