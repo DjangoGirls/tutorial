@@ -248,13 +248,13 @@ Ha például csak az első számot akarod látni, arra használhatod az **indexe
 
 Amint látod, a listában előforduló különböző objektumokat elérhetjük a lista nevének, illetve az objektum indexének megjelölésével, ahol az indexet szögletes zárójelbe írjuk.
 
-Ahhoz, hogy valamit kitöröljünk a listából, szükségünk van az **index** fogalmára, amint azt az előbb tanultuk, valamint a **del** parancsra (a del a delete rövidítése). Nézzünk egy példát hogy megerősítsük az eddig tanultakat; ki fogjuk törölni az első elemet a listánkból.
+Ahhoz, hogy valamit kitöröljünk a listából, szükségünk van az **index** fogalmára, amint azt az előbb tanultuk, valamint a `pop()` parancsra. Nézzünk egy példát hogy megerősítsük az eddig tanultakat; ki fogjuk törölni az első elemet a listánkból.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
     59
-    >>> del lottery[0]
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
     
@@ -322,9 +322,9 @@ Ugyanúgy, mint a listáknál, a `len()` metódus visszaadja a szótár hosszát
 
 Remélem most már világos :) Készen állsz az újabb mókára a szótárakkal? Ugorj a következő sorhoz, és láss lenyűgöző dolgokat.
 
-Használd a `del` parancsot, hogy kitörölj egy elemet a szótárból. Mondjuk ki akarod törölni a `'favorite_numbers'` kulcsnál található elemet. Csak írd be a következőt:
+Használd a `pop()` parancsot, hogy kitörölj egy elemet a szótárból. Mondjuk ki akarod törölni a `'favorite_numbers'` kulcsnál található elemet. Csak írd be a következőt:
 
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
     

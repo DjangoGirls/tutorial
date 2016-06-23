@@ -105,7 +105,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 *   `<em>text</em>` 텍스트를 강조할 때 사용하는 태그
 *   `<strong>text</strong>` 여러분의 텍스트를 강력하게 강조할 때 사용하는 태그
 *   `<br />` 개행. 행을 내누기(br 태그 안에는 속성으로 아무 것도 넣을 수 없습니다.)
-*   `<a href="http://djangogirls.org">link</a>` 링크 걸기
+*   `<a href="https://djangogirls.org">link</a>` 링크 걸기
 *   `<ul><li>first item</li><li>second item</li></ul>` 목록을 만듭니다. 지금 여러분이 보고 있는 목록처럼요!
 *   `<div></div>` 페이지의 섹션을 정의합니다.
 

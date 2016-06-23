@@ -54,7 +54,7 @@
 
 在我们的站点上有正确的时间是非常不错的。 访问[wikipedia timezones list][2]复制你所在地区的时区 (TZ). (eg. `Europe/Berlin` )
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 然后在 settings.py文件中, 找到包含`TIME_ZONE</0>字段的这行,并将时区改为你所在地区的时区。即：</p>
 

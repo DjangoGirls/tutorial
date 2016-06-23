@@ -46,6 +46,13 @@ Usa este comando en tu consola:
     sudo yum install python3.4
     
 
+#### openSUSE
+
+Usa este comando en tu consola:
+
+    sudo zypper install python3
+
+
 ### OS X
 
 Debes ir al sitio web https://www.python.org/downloads/release/python-342/ y descargar el instalador de Python:

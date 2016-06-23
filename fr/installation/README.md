@@ -1,6 +1,6 @@
 # Si vous suivez ce tutoriel chez vous
 
-Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](http://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne l'Internet ?](../how_the_internet_works/README.md).
+Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](https://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne l'Internet ?](../how_the_internet_works/README.md).
 
 Les informations données ici sont couvertes dans le reste du tutoriel. Cette partie permet simplement de regrouper au même endroit tout ce qu'il est nécessaire d'installer avant de participer à un évènement. Les évènements Django Girls incluent une "soirée d'installation" qui permet de prendre un peu d'avance sur la journée de formation proprement dite.
 
@@ -30,7 +30,7 @@ Pendant l'atelier, vous allez apprendre à construire un blog. Afin d'être prê
 
 # Créer un compte GitHub
 
-Allez sur [GitHub.com](http://www.github.com) et créez-vous un nouveau compte gratuitement.
+Allez sur [GitHub.com](https://www.github.com) et créez-vous un nouveau compte gratuitement.
 
 # Créer un compte PythonAnywhere
 

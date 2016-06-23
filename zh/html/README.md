@@ -103,7 +103,7 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 *   `<em>text</em>` 强调您的文本
 *   `<strong>text</strong>` 强烈强调您的文本
 *   `<br />` 跳转到下一行（你不能放任何东西在br里面）
-*   `<a href="http://djangogirls.org">link</a>` 创建一个链接
+*   `<a href="https://djangogirls.org">link</a>` 创建一个链接
 *   `<ul><li>first item</li><li>second item</li></ul>` 产生一个列表，就像这样！
 *   `<div></div>` 定义页面上的一个段
 

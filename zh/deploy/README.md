@@ -6,11 +6,11 @@
 
 正如你所学习的，一个网站必须要放到一个服务器上。 在互联网上你可以找到很多的服务器供应商。 我们将使用一个相对简单的部署过程: [PythonAnywhere][1]。 PythonAnywhere 对于一些没有太多访问者的小应用是免费的，所以它对你来说绝对是足够使用的。
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 其它我们将使用到的外部服务是[GitHub][2]，它是一个代码托管服务。 还有其它的一些服务，但当今几乎所有的程序员都有 GitHub 帐户，并且现在你也会有的！
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 我们将使用 GitHub 作为基石，以和 PythonAnywhere 互相传输我们的代码。
 

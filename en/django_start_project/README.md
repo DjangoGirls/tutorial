@@ -54,7 +54,7 @@ Let's ignore the other files for now as we won't change them. The only thing to 
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-It would be nice to have the correct time on our website. Go to the [wikipedia timezones list](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
+It would be nice to have the correct time on our website. Go to the [wikipedia timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ). (eg. `Europe/Berlin` )
 
 In settings.py, find the line that contains `TIME_ZONE` and modify it to choose your own timezone:
 
@@ -72,6 +72,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
+> `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
 ## Setup a database
 
@@ -115,6 +117,11 @@ You need to be in the directory that contains the `manage.py` file (the `djangog
 
     (myvenv) ~/djangogirls$ python manage.py runserver
 
+If you are on a Chromebook, use this command instead:
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+
+
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
@@ -124,10 +131,16 @@ Now all you need to do is check that your website is running. Open your browser 
 
     http://127.0.0.1:8000/
 
+If you're using a Chromebook, you'll always visit your test server by accessing:
+
+    https://django-girls-<your cloud9 username>.c9users.io
+
 The web server will take over your command prompt until you stop it. To type more commands whilst it is running open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
 ![It worked!](images/it_worked2.png)
+
+Go ahead and stop the web server by pressing CTRL+C or CTRL+Break.
 
 Ready for the next step? It's time to create some content!

@@ -18,7 +18,7 @@ Il nostro preferito è [I want my name][2]. Essi si promuovono come "gestione de
 
 Vai su [iwantmyname][3] e digita un dominio che vuoi ottenere nella casella di ricerca.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

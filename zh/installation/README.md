@@ -1,6 +1,6 @@
 # 如果你在家做这个练习
 
-如果你在家做这个练习，而不是在一个 [Django Girls 活动](http://djangogirls.org/events/)中，你现在完全可以跳过这一章，直接阅读[互联网是如何工作的？](../how_the_internet_works/README.md)一章。
+如果你在家做这个练习，而不是在一个 [Django Girls 活动](https://djangogirls.org/events/)中，你现在完全可以跳过这一章，直接阅读[互联网是如何工作的？](../how_the_internet_works/README.md)一章。
 
 这是因为下面的这些步骤包含在整个教程当中，这只是一个额外的页面，把所有的安装说明收集在了一起。 Django Girls活动有一个“开学礼”环节，活动中会一次性安装完成所有的软件，因而在之后的线下活动中就无需再进行安装，这对我们很有帮助。
 
@@ -30,7 +30,7 @@
 
 # 创建一个 Github 账户
 
-前往 [GitHub.com](http://www.github.com) 并注册一个新的账号。
+前往 [GitHub.com](https://www.github.com) 并注册一个新的账号。
 
 # 创建一个 PythonAnywhere 帐户
 

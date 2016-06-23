@@ -248,13 +248,13 @@ Se vuoi mostrare solo il primo numero, puoi farlo usando gli **indici**. L'indic
 
 Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome della lista e l'indice dell'oggetto all'interno delle parentesi quadre.
 
-Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement **del** (del è un'abbreviazione di delete). Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
+Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement `pop()`. Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
 
     >>> print(lotteria)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lotteria[0])
     59
-    >>> del lotteria[0]
+    >>> lotteria.pop(0)
     >>> print(lotteria)
     [42, 30, 19, 12, 3, 199]
     
@@ -322,9 +322,9 @@ Così come succede se applicato alle liste, il metodo `len()` restituisce il num
 
 Spero che abbia senso per te. :) Pronta per divertirti con i dizionari? Vai alla prossima riga per realizzare altre cose fantastiche.
 
-Puoi usare il comando `del` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde alla chiave `'numeri_preferiti'`, digita il seguente comando:
+Puoi usare il comando `pop()` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde alla chiave `'numeri_preferiti'`, digita il seguente comando:
 
-    >>> del partecipante['numeri_preferiti']
+    >>> partecipante.pop('numeri_preferiti')
     >>> partecipante
     {'paese': 'Polonia', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
     

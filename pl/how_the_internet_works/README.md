@@ -2,7 +2,7 @@
 
 > Niniejszy rozdział został zainspirowany prelekcją "Jak działa internet" Jessiki McKellar (http://web.mit.edu/jesstess/www/).
 
-Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz co się dzieje, gdy wpisujesz w przeglądarce adres http://djangogirls.org i wciskasz `enter`?
+Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `enter`?
 
 Aby zrozumieć jak działa internet powinnaś najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
@@ -24,7 +24,7 @@ Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączony
 
  [2]: images/internet_3.png
 
-To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w internecie. Więc aby dostać się do maszyny dostępnej w internecie (na przykład tej, na której zapisane jest http://djangogirls.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
+To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w internecie. Więc aby dostać się do maszyny dostępnej w internecie (na przykład tej, na której zapisane jest https://djangogirls.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
 
 Wygląda to tak:
 
@@ -32,7 +32,7 @@ Wygląda to tak:
 
  [3]: images/internet_2.png
 
-Wyobraź sobie, że po wpisaniu http://djangogirls.org, wysyłasz list o treści: "Drogie Django Girls, chcę zobaczyć stronę djangogirls.org. Wyślijcie ją do mnie, proszę! "
+Wyobraź sobie, że po wpisaniu https://djangogirls.org, wysyłasz list o treści: "Drogie Django Girls, chcę zobaczyć stronę djangogirls.org. Wyślijcie ją do mnie, proszę! "
 
 List trafia do urzędu pocztowego najbliżej Ciebie. Potem idzie do drugiego urzędu, który znajduje się trochę bliżej Twojego adresata. Potem do kolejnego, kolejnego, kolejnego, aż w końcu zostanie doręczony do miejsca przeznaczenia. Ciekawa rzecz - jeśli wyślesz wiele listów (*pakietów danych*) do tego samego adresata, mogą przejść przez zupełnie inne urzędy pocztowe (*routery*). To zależy od tego w jaki sposób zostaną rozdzielone w każdym urzędzie.
 

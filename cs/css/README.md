@@ -10,7 +10,7 @@ Nechceme ale zase začínat úplně od začátku, že? Opět použijeme něco, c
 
 ## Použijme Bootstrap!
 
-Bootstrap je jedním z nejpopulárnějších HTML a CSS frameworků pro vývoj pěkné webové stránky: http://getbootstrap.com/
+Bootstrap je jedním z nejpopulárnějších HTML a CSS frameworků pro vývoj pěkné webové stránky: https://getbootstrap.com/
 
 Byl napsán programátory, kteří pracovali pro Twitter a je nyní vyvíjeno dobrovolníky z celého světa.
 
@@ -67,7 +67,7 @@ Vytvoř soubor CSS, chceš-li na stránku www přidat svůj vlastní styl. Vytvo
 
 Nepůjdeme příliš hluboko do přizpůsobení webu a učení o CSS, protože je to docela snadné, a můžeš se o tom dozvědět sama po tomto workshopu. Opravdu můžeme doporučit [Codeacademy HTML & CSS kurz][2] kde se dozvíš vše, co potřebuješ vědět, aby tvoje stránky s CSS vypadaly dobře.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Ale pojďme něco málo udělat. Možná bychom mohli změnit barvu našeho záhlaví? Pro interpretaci barev, počítače používají speciální kódy. Začínají `#` a následuje 6 písmen (A-F) a číslic (0-9). Kódy barev můžeš najít například zde: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy][3], `červená/red` a `zelená/green`.
 
@@ -86,7 +86,7 @@ V souboru `blog/static/css/blog.css` přidej následující kód:
 V CSS souboru určujeme styly pro prvky v souboru HTML. Prvky jsou identifikovány pomocí názvu prvku (tj, `a`,`h1`, `body`), atributem `class` nebo atributem `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. Například, následující tag může identifikovat pomocí CSS tag `a`, třídu `external_link` nebo id `link_to_wiki_page`:
 
 ```html
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+    <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```  
 
 Přečti si o [CSS selektorech ve w3schools][4].
@@ -127,7 +127,7 @@ Soubor by měl nyní vypadat takto:
                 <div>
                     <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </body>
@@ -157,7 +157,7 @@ Přidej toto do svého CSS souboru, ulož soubor a koukni se, jak to funguje!
 Možná můžeme také chtít přizpůsobit písmo v našem záhlaví? Vlož mezi tag `< head >` v souboru `blog/templates/blog/post_list.html`:
 
 ```html
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```  
 
 Tento řádek bude importovat písmo s názvem *Lobster* z Google písem (https://www.google.com/fonts).
@@ -193,7 +193,7 @@ A nyní přidej třídu, `post` do svého `div` obsahující blog post.
     <div class="post">
          <p>published: {{ post.published_date }}</p>
          <h1><a href="">{{ post.title }}</a></h1>
-         <p>{{ post.text|linebreaks }}</p>
+         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 ```    
 
@@ -256,7 +256,7 @@ Pak obklopující HTML kód, který zobrazuje příspěvek s deklaracemi tříd.
          <div class="post">
              <p>published: {{ post.published_date }}</p>
              <h1><a href="">{{ post.title }}</a></h1>
-             <p>{{ post.text|linebreaks }}</p>
+             <p>{{ post.text|linebreaksbr }}</p>
          </div>
     {% endfor %}
 ```    
@@ -273,7 +273,7 @@ v `blog/templates/blog/post_list.html` tímto:
                              {{ post.published_date }}
                          </div>
                          <h1><a href="">{{ post.title }}</a></h1>
-                         <p>{{ post.text|linebreaks }}</p>
+                         <p>{{ post.text|linebreaksbr }}</p>
                      </div>
                  {% endfor %}
              </div>

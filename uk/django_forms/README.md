@@ -275,7 +275,7 @@ Django турбується про те, щоб усі поля нашої фо�
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
@@ -330,7 +330,7 @@ form = PostForm(instance=post)
 
 Вітаємо! Ваш додаток стає все більш і більш повним!
 
-Якщо бажаєте дізнатись більше інформації про форми Django, ознайомтесь із документацією: https://docs.djangoproject.com/en/1.8/topics/forms/
+Якщо бажаєте дізнатись більше інформації про форми Django, ознайомтесь із документацією: https://docs.djangoproject.com/en/1.9/topics/forms/
 
 ## Безпека
 

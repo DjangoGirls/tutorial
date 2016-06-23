@@ -105,7 +105,7 @@ Tienes que seguir estas reglas de etiquetas de *cierre* y de *anidación* de ele
 *   `<em>texto</em>` - pone en cursiva tu texto
 *   `<strong>texto</strong>` - pone en negrita tu texto
 *   `<br />` - un salto de línea (no puedes colocar nada dentro de br)
-*   `<a href="http://djangogirls.org">link</a>` - crea un vínculo
+*   `<a href="https://djangogirls.org">link</a>` - crea un vínculo
 *   `<ul><li>primer elemento</li><li>segundo elemento</li></ul>` - crea una lista, ¡igual que esta!
 *   `<div></div>` - define una sección de la página
 

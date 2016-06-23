@@ -10,7 +10,7 @@
 
 ## Давай использовать Bootstrap!
 
-Bootstrap - один из наиболее популярных HTML и CSS фреймворков для разработки красивых сайтов: http://getbootstrap.com/
+Bootstrap - один из наиболее популярных HTML и CSS фреймворков для разработки красивых сайтов: https://getbootstrap.com/
 
 Он был написан программистами, которые работали в Twitter, а сейчас совершенствуется волонтерами со всего мира.
 
@@ -67,7 +67,7 @@ Django будет автоматически находить папки "static
 
 Мы не будем здесь погружаться слишком глубоко в процесс настройки и изучения CSS, поскольку это так просто, что ты сможешь изучить этот материал самостоятельно после этого руководства. Мы настоятельно рекомендуем пройти этот курс [Codeacademy HTML & CSS course][2], чтобы изучить все, что тебе нужно знать об оформлении веб-сайтов с помощью CSS.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Но давай сделаем хотя бы немного. Возможно, мы могли бы изменить цвет заголовка? Чтобы понимать цвета, компьютеры используют специальные коды. Они начинаются с `#` и далее следуют 6 букв (A-F) и цифр (0-9). Ты можешь найти коды цветов, например, здесь: http://www.colorpicker.com/. Также можешь пользоваться [предопределенными цветами][3], такими как `red` и `green`.
 
@@ -86,7 +86,7 @@ Django будет автоматически находить папки "static
 В CSS файле мы определяем стили для элементов файла HTML. Элементы идентифицируются именами (то есть `a`, `h1`, `body`), атрибутом `class` или атрибутом `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. Например, следующий тег может быть идентифицирован CSS с использованием имени тега `a`, класса `external_link` или идентификатора `link_to_wiki_page`:
 
 ```html
-    <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+    <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Почитай про CSS селекторы в [CSS Selectors in w3schools][4].
@@ -127,7 +127,7 @@ Django будет автоматически находить папки "static
                 <div>
                     <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </body>
@@ -193,7 +193,7 @@ Django будет автоматически находить папки "static
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 ```
 
@@ -256,7 +256,7 @@ Django будет автоматически находить папки "static
         <div class="post">
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```
@@ -273,7 +273,7 @@ Django будет автоматически находить папки "static
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
             </div>

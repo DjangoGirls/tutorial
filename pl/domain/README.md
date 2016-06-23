@@ -18,7 +18,7 @@ Naszą ulubioną firmą jest [I want my name][2]. Reklamują się jako "bezboles
 
 Przejdź do [iwantmyname][3] i w polu wyszukiwania wpisz nazwę domeny, którą chciałabyś mieć.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

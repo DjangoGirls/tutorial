@@ -18,7 +18,7 @@ Notre petit favori est [I want my name][2]. Ils revendiquent un "management de n
 
 Allez sur [iwantmyname][3] et tapez le nom de domaine que vous souhaiteriez enregistrer dans le champ de recherche.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

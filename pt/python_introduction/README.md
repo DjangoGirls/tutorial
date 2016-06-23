@@ -306,9 +306,9 @@ Como as lists, usar o método `len()` em dicionários retorna o número de pares
 
 Espero que agora faça sentido até agora. :) Pronta para mais diversão com dicionários? Pule na próxima linha para coisas incríveis.
 
-Você pode usar o comando `del` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
+Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
 
-    >>> del participante['numeros_favoritos']
+    >>> participante.pop('numeros_favoritos')
     >>> participante
     {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
 

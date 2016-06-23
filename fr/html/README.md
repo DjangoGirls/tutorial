@@ -105,7 +105,7 @@ Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser not
 *   `<em>texte</em>` permet de mettre l'accent sur une partie du texte
 *   `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
 *   `<br />` permet d'insérer un saut de ligne (vous ne pouvez rien mettre à l'intérieur d'un élément br)
-*   `<a href="http://djangogirls.org">link</a>` permet de créer un lien
+*   `<a href="https://djangogirls.org">link</a>` permet de créer un lien
 *   `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
 *   `<div></div>` permet de créer une section au sein de la page
 

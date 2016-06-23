@@ -12,11 +12,11 @@ A Gedit egy open-source (nyílt forráskódú), ingyenes kódszerkesztő, az ös
 
 A Sublime Text egy nagyon népszerű editor, ingyenes próbaidővel. Könnyű telepíteni és használni, és minden operációs rendszeren elérhető.
 
-[Letöltés](http://www.sublimetext.com/2)
+[Letöltés](https://www.sublimetext.com/2)
 
 ## Atom
 
-Az Atom egy teljesen új kódszerkesztő, amelyet a [GitHub](http://github.com/) hozott létre. Ingyenes, nyílt forráskódú, könnyen telepíthető és könnyen használható. Elérhető Windows-on, OSX-en és Linuxon.
+Az Atom egy teljesen új kódszerkesztő, amelyet a [GitHub](https://github.com/) hozott létre. Ingyenes, nyílt forráskódú, könnyen telepíthető és könnyen használható. Elérhető Windows-on, OSX-en és Linuxon.
 
 [Letöltés](https://atom.io/)
 

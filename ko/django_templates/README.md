@@ -54,7 +54,7 @@ __장고 템플릿 태그(Django template tags)__ 는 파이썬을 HTML로 바�
     <div>
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -65,7 +65,7 @@ __장고 템플릿 태그(Django template tags)__ 는 파이썬을 HTML로 바�
 
  [3]: images/step3.png
 
-`{{ post.title }}`라던가 `{{ post.text }}` 같이 이전과 다른 표기법을 사용한 것을 눈치 채셨나요? `Post` 모델에서 정의한 각 필드의 데이터에 접근하기 위해 이 표기법을 사용합니다. 또한 `|linebreaks` 같이 파이프 문자(|)도 사용해요. 이건 블로그 글 텍스트에서 행이 바뀌면 문단으로 변환하도록 하라는 의미입니다. 행바뀜을 문단으로 변환하는 필터를 적용한다는 표현을 쓰기도 합니다.
+`{{ post.title }}`라던가 `{{ post.text }}` 같이 이전과 다른 표기법을 사용한 것을 눈치 채셨나요? `Post` 모델에서 정의한 각 필드의 데이터에 접근하기 위해 이 표기법을 사용합니다. 또한 `|linebreaksbr` 같이 파이프 문자(|)도 사용해요. 이건 블로그 글 텍스트에서 행이 바뀌면 문단으로 변환하도록 하라는 의미입니다. 행바뀜을 문단으로 변환하는 필터를 적용한다는 표현을 쓰기도 합니다.
 
 ## 한 가지 더
 

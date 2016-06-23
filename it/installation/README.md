@@ -1,6 +1,6 @@
 # Se stai facendo il tutorial a casa
 
-Se stai facendo il tutorial a casa e non durante uno degli [eventi Django Girls ](http://djangogirls.org/events/), puoi saltare questo capitolo e andare direttamente a [Come funziona Internet?](../how_the_internet_works/README.md).
+Se stai facendo il tutorial a casa e non durante uno degli [eventi Django Girls ](https://djangogirls.org/events/), puoi saltare questo capitolo e andare direttamente a [Come funziona Internet?](../how_the_internet_works/README.md).
 
 Copriamo questi argomenti nel tutorial completo, e questa è una pagina aggiuntiva contenente tutte le istruzioni di installazione. L'evento Django Girls include una "serata dedicata all'installazione" in cui installiamo tutto, in modo da non preoccuparcene durante il workshop, quindi questo capitolo è utile per chi partecipa ad uno dei nostri workshop.
 
@@ -30,7 +30,7 @@ Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'impostazione
 
 # Creare un account GitHub
 
-Vai su [GitHub.com](http://www.github.com) e iscriviti per un nuovo account gratuito.
+Vai su [GitHub.com](https://www.github.com) e iscriviti per un nuovo account gratuito.
 
 # Creare un account PythonAnywhere
 

@@ -12,11 +12,11 @@ Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'expl
 
 Sublime text est un éditeur très populaire : il est disponible gratuitement sous forme de version d'évaluation pour tout les systèmes d'exploitation. Il est facile à installer et à utiliser.
 
-[Télécharger](http://www.sublimetext.com/2)
+[Télécharger](https://www.sublimetext.com/2)
 
 ## Atom
 
-Atom est un éditeur très récent créé par [GitHub](http://github.com/). Disponible pour tout les systèmes d'exploitation, il est libre, gratuit, facile à installer et à utiliser.
+Atom est un éditeur très récent créé par [GitHub](https://github.com/). Disponible pour tout les systèmes d'exploitation, il est libre, gratuit, facile à installer et à utiliser.
 
 [Télécharger](https://atom.io/)
 

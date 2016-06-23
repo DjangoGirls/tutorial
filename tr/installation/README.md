@@ -1,6 +1,6 @@
 # Eğer tutorial'ı evde yapıyorsanız
 
-Eğer tutorial'ı [Django Girls etkinlikleri](http://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [İnternet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
+Eğer tutorial'ı [Django Girls etkinlikleri](https://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [İnternet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinlikleri, tutorial sırasında uğraşmamak için herşeyi kurduğumuz bir "kurulum akşamı"nı içeriyor. Bu sayfayı onun için kullanıyoruz.
 
@@ -30,7 +30,7 @@ Atölyede bir blog yapıyor olacaksınız, eğitim günü kodlamaya hazır olman
 
 # GitHub hesabı oluşturun
 
-[GitHub.com](http://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun.
+[GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun.
 
 # PythonAnywhere hesabı oluşturun
 

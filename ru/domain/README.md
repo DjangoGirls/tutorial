@@ -18,7 +18,7 @@ Heroku предоставил нам домен, но он довольно дл
 
 Перейди по ссылке [iwantmyname][3] и впиши желаемый домен в форму поиска.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

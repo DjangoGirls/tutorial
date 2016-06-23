@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Bu çalışma Creative Commons Attribution-ShareAlike 4.0 International License altında lisanslanmıştır. Lisansın bir kopyasını görmek için http://creativecommons.org/licenses/by-sa/4.0/ adresini ziyaret edin.
+> Bu çalışma Creative Commons Attribution-ShareAlike 4.0 International License altında lisanslanmıştır. Lisansın bir kopyasını görmek için https://creativecommons.org/licenses/by-sa/4.0/ adresini ziyaret edin.
 
 ## Çeviri
 
@@ -39,7 +39,7 @@ Tamam, [hadi en baştan başlayalım...][3]
 
 Bu eğitim [DjangoGirls][4] tarafından sürdürülmektedir. Eğer hatalar bulursanız ve eğitimi güncellemek isterseniz lütfen [katkıda bulunma kılavuzunu takip edin][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Bu eğitimi başka dillere çevirmemize yardımcı olmak ister misiniz?

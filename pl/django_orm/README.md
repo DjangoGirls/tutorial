@@ -108,7 +108,9 @@ A gdybyśmy chciały wyświetlić wszystkie wpisy zawierające słowo 'title' w 
 
 Możemy także wyświetlić listę wszystkich opublikowanych wpisów. W tym celu odfiltrujmy wszystkie wpisy, które mają ustawioną datę publikacji (`published_date`) na taką, która już minęła:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 Niestety, żaden z naszych wpisów, które dodaliśmy przez konsolę, nie został jeszcze opublikowany. Zmieńmy to! Zacznij od pobrania wpisu, który chcesz opublikować:
 

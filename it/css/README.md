@@ -10,7 +10,7 @@ Ma non vogliamo ricominciare da capo, giusto? Ancora una volta useremo qualcosa 
 
 ## Usiamo Bootstrap!
 
-Bootstrap è uno dei più popolari framework HTML e CSS per costruire bellissimi siti internet: http://getbootstrap.com/
+Bootstrap è uno dei più popolari framework HTML e CSS per costruire bellissimi siti internet: https://getbootstrap.com/
 
 È stato scritto da programmatori che lavoravano per Twitter ed è ora sviluppato da volontari da ogni parte del mondo.
 
@@ -65,7 +65,7 @@ Ora, creiamo un file CSS, per poter aggiungere il tuo stile personale al tuo sit
 
 Non ci dilungheremo troppo sul come personalizzare e imparare CSS in questo momento, dal momento che è abbastanza facile e puoi impararlo da solo/a alla fine di questo workshop. Ti raccomandiamo caldamente di seguire questo corso [Codeacademy HTML & CSS course][2] per imparare tutto quello che serve sapere per poter rendere più bello un sito internet con CSS.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Facciamo comunque un esempio. Perchè non cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. Questi codici cominciano con `#` a cui fanno seguito 6 caratteri, sia lettere (A-F) che numeri (0-9). Puoi trovare vari esempi di codici colore qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti][3] come ad esempio `red` e `green`.
 
@@ -84,7 +84,7 @@ h1 a {
 In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Gli elementi in questione vengono identificati con il nome (ad esempio `a`, `h1`, `body`) oppure con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Ad esempio, il seguente elemento può essere identificato nel CSS utilizzando il nome del tag `a`, la classe `external_link` oppure l'id ` link_to_wiki_page`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Per saperne di più puoi leggere [CSS Selectors in w3schools][4].
@@ -125,7 +125,7 @@ Il tuo file dovrebbe avere questo aspetto:
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -155,7 +155,7 @@ Aggiungi questo al tuo CSS, salva il file e guarda il risultato!
 Potremmo anche personalizzare lo stile calligrafico nel nostro header. Incolla quanto segue all'interno del tag `<head>` che si trova nel file `blog/templates/blog/post_list.html`:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 Questa riga consente di importare un font chiamato *Lobster* da Google Fonts (https://www.google.com/fonts).
@@ -191,7 +191,7 @@ E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -254,7 +254,7 @@ Ora aggiungi all'esterno del codice HTML riguardante i posts all'interno del blo
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -271,7 +271,7 @@ nel file `blog/templates/blog/post_list.html` con quanto segue:
                         {{ post.published_date }}
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

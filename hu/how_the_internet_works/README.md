@@ -2,7 +2,7 @@
 
 > Ez a fejezet Jessica McKellar "Hogy működik az Internet" (How the Internet works) című előadásán alapul (http://web.mit.edu/jesstess/www/).
 
-Biztosan minden nap internetezel. Tudod, igazából mi történik, mikor beírod a böngésződben, hogy http://djangogirls.org, és `enter`t nyomsz?
+Biztosan minden nap internetezel. Tudod, igazából mi történik, mikor beírod a böngésződben, hogy https://djangogirls.org, és `enter`t nyomsz?
 
 Az első dolog, amit fontos megérteni, hogy egy weboldal nem más, mint egy csomó fájl egy merevlemezre mentve. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
 
@@ -24,7 +24,7 @@ Elég zavaros, igaz? Valójában ez egymáshoz kapcsolódó gépek (az előbb em
 
  [2]: images/internet_3.png
 
-Lenyűgöző, igaz? Persze az képtelenség, hogy minden gép össze legyen kötve egymással, ami az Internethez csatlakozik. Ezért hogy elérhessünk egy gépet (például azt, ahol a http://djangogirls.org van elmentve), a kérésünket egy csomó különböző gépen át kell juttatni.
+Lenyűgöző, igaz? Persze az képtelenség, hogy minden gép össze legyen kötve egymással, ami az Internethez csatlakozik. Ezért hogy elérhessünk egy gépet (például azt, ahol a https://djangogirls.org van elmentve), a kérésünket egy csomó különböző gépen át kell juttatni.
 
 Így néz ki:
 
@@ -32,7 +32,7 @@ Lenyűgöző, igaz? Persze az képtelenség, hogy minden gép össze legyen köt
 
  [3]: images/internet_2.png
 
-Képzeld el úgy, hogy amikor beírod a http://djangogirls.org címet, egy levelet írsz: "Kedves Django Girls, szeretném megnézni a djangogirls.org oldalt. Kérlek, küldd el nekem!"
+Képzeld el úgy, hogy amikor beírod a https://djangogirls.org címet, egy levelet írsz: "Kedves Django Girls, szeretném megnézni a djangogirls.org oldalt. Kérlek, küldd el nekem!"
 
 Először a leveled a hozzád legközelebbi postára megy. Ezután továbbhalad egy olyan postára, ami már kicsit közelebb van a címzettedhez, és így tovább, míg el nem jut a céljához. Az egyetlen egyedi dolog, hogy ha több levelet (*adatcsomagot*) küldesz ugyanarra a helyre, azok valószínűleg teljesen már postákon (*routers*) mennek keresztül. Ez csak attól függ hogyan osztják el az egyes irodákban.
 

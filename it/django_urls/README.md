@@ -4,7 +4,7 @@ Stiamo per costruire la nostra pagina web: una homepage per il tuo blog! Ma prim
 
 ## Che cos'è un URL?
 
-Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì! `127.0.0.1:8000` is a URL! Anche `https://djangogirls.com` è una URL):
+Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì! `127.0.0.1:8000` is a URL! Anche `https://djangogirls.org` è una URL):
 
 ![Url][1]
 

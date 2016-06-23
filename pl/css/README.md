@@ -10,7 +10,7 @@ Ale nie chcemy znów zaczynać od samego początku, prawda? Użyjemy, raz jeszcz
 
 ## Użyjmy Bootstrap!
 
-Bootstrap jest jednym z najpopularniejszych frameworków HTML i CSS do budowania pięknych stron: http://getbootstrap.com/
+Bootstrap jest jednym z najpopularniejszych frameworków HTML i CSS do budowania pięknych stron: https://getbootstrap.com/
 
 Został stworzony przez programistów, którzy pracowali dla Twitter-a i w chwili obecnej jest rozwijany przez ochotników z całego świata.
 
@@ -67,7 +67,7 @@ Czas by napisać jakiś styl CSS! Otwórz plik `static/css/blog.css` w Twoim edy
 
 Nie będziemy się zanadto zagłębiać w style, ani uczyć się o arkuszach CSS, bo jest to całkiem łatwe i możesz nauczyć się tego samodzielnie po tym warsztacie. Naprawdę rekomendujemy spróbowanie [kursu Codeacademy HTML & CSS][2] by nauczyć się wszystkiego czego potrzebujesz o robieniu ładniejszych stron internetowych.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Jednak zróbmy chociaż trochę. Może moglibyśmy zmienić kolor naszego nagłówka? Do rozpoznawania kolorów komputery używają specjalnych kodów. Kody te zaczynają się od znaku `#`, po którym następuje 6 znaków. Każdy znak to cyfra (0-9) lub litera (A-F). Możesz znaleźć kody kolorów na przykład tutaj: <http://www.colorpicker.com/>. Możesz również użyć uprzednio [zdefiniowanych kolorów][3], takich jak `red` (czerwony) czy `green ` (zielony)..
 
@@ -86,7 +86,7 @@ h1 a {
 W pliku CSS ustalamy styl dla elementów znajdujących się w pliku HTML. Elementy HTML identyfikujemy przez nazwę (n.p. `a`, `h1`, `body`), atrybut `class` lub atrybut `id`. Nazwę klasy lub id ustalasz sama dowolnie. Ta sama nazwa klasy może być przypisana do wielu elementów, ale id musi być unikalne dla całego kodu HTML. Przykładowo następujący tag możemy ostylować w CSS używając nazwy `a`, klasy `external_link` lub id `link_to_wiki_page`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 O selektorach CSS możesz przeczytać więcej tutaj: [CSS Selectors in w3schools][4].
@@ -127,7 +127,7 @@ Twój plik powinien teraz wyglądać tak:
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -188,7 +188,7 @@ Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -252,7 +252,7 @@ Teraz otocz kod HTML wyświetlający posty deklaracjami klas. Zamień to:
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -269,7 +269,7 @@ w pliku `blog/templates/blog/post_list.html` na to:
                         {{ post.published_date }}
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

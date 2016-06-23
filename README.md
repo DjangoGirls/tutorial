@@ -5,11 +5,11 @@ This is the source code repository for the Django Girls Tutorial. Django Girls T
 
 # How to contribute
 
-The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-ShareAlike 4.0*](http://creativecommons.org/licenses/by-sa/4.0/) license. Everyone is free to add, edit and correct the tutorial.
+The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-ShareAlike 4.0*](https://creativecommons.org/licenses/by-sa/4.0/) license. Everyone is free to add, edit and correct the tutorial.
 
 # Editing basics
 
-The source code of the tutorial is [hosted on Github](http://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+The source code of the tutorial is [hosted on Github](https://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
 The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
@@ -97,7 +97,7 @@ Example:
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
 
-If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](https://gitbook.com), sign up for free and work directly in your browser.
 
 # Making a pull request
 
@@ -117,4 +117,4 @@ Github emails will notify you for the follow up process.
 
 GitHub has an excellent [documentation](https://help.github.com/). Check it out if you need help!
 
-For further questions please [contact DjangoGirls](http://djangogirls.org/).
+For further questions please [contact DjangoGirls](https://djangogirls.org/).

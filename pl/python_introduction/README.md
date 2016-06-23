@@ -248,13 +248,13 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-Aby skasować coś ze swojej listy, będziesz musiała użyć **indeksów**, których nauczyłyśmy się wyżej oraz polecenia **del** (del to skrót od delete, czyli po angielsku kasować). Spróbujmy zobaczyć jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
+Aby skasować coś ze swojej listy, będziesz musiała użyć **indeksów**, których nauczyłyśmy się wyżej oraz polecenia `pop()`. Spróbujmy zobaczyć jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
 
     >>> print(wyniki)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(wyniki[0])
     59
-    >>> del wyniki[0]
+    >>> wyniki.pop(0)
     >>> print(wyniki)
     [42, 30, 19, 12, 3, 199]
 
@@ -323,9 +323,9 @@ Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość
 
 Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-Za pomocą polecenia `del` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
+Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
 
-    >>> del uczestniczka['ulubione_liczby']
+    >>> uczestniczka.pop('ulubione_liczby')
     >>> uczestniczka
     {'kraj': 'Polska', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
 

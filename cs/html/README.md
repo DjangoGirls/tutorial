@@ -106,7 +106,7 @@ Teď si můžeš užít trochu zábavy a pokusit se přizpůsobit si svou šablo
 *   `<em>text</em>` zvýrazňuje tvůj text
 *   `<strong>text</strong>` hodně zvýrazňuje tvůj text
 *   `<br />` vkládá novou řádku (dovnitř br nemůžeš nic dát)
-*   `<a href="http://djangogirls.org">link</a>` vytváří odkaz
+*   `<a href="https://djangogirls.org">link</a>` vytváří odkaz
 *   `<ul><li>První položka seznamu</li><li>second item</li></ul>` vytváří seznam, zrovna jako tento!
 *   `<div></div>` definuje sekce stránky
 

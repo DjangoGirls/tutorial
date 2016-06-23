@@ -10,7 +10,7 @@
 
 ## Скористаємось Bootstrap!
 
-Bootstrap - один з найбільш популярних HTML і CSS фреймворків для розробки прекрасних веб-сайтів: http://getbootstrap.com/
+Bootstrap - один з найбільш популярних HTML і CSS фреймворків для розробки прекрасних веб-сайтів: https://getbootstrap.com/
 
 Він був написаний програмістами, які працювали для Twitter'у і на сьогоднішній день удосконалюється волонтерами з усього світу.
 
@@ -64,10 +64,10 @@ Django автоматично знайде всі "статичні" папки 
 
 Настав час написати CSS! Відкрийте файл `static/css/blog.css` в редакторі коду.
 
-Не будемо тут занурюватись надто глибоко в процес налаштування і вивчення CSS, оскільки це так просто, що ви можете вивчити цей матеріал самостійно після завершення воркшопу. Ми наполегливо рекомендуємо пройти курс [Codeacademy HTML & CSS course](http://www.codecademy.com/tracks/web) для того, щоб вивчити все, що вам потрібно знати про оформлення веб-сайтів за допомогою CSS.
+Не будемо тут занурюватись надто глибоко в процес налаштування і вивчення CSS, оскільки це так просто, що ви можете вивчити цей матеріал самостійно після завершення воркшопу. Ми наполегливо рекомендуємо пройти курс [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) для того, щоб вивчити все, що вам потрібно знати про оформлення веб-сайтів за допомогою CSS.
 
 Але принаймні попрацюємо трохи. Може ми могли б змінити колір заголовка?
-Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. Вони починаються з `#` і далі слідують 6 літер (A-F), а також цифри (0-9). Ви можете знайти коди кольорів, наприклад, тут: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами](http://www.w3schools.com/cssref/css_colornames.asp), такими як `red` та `green`.
+Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. Вони починаються з `#` і далі слідують 6 літер (A-F), а також цифри (0-9). Ви можете знайти коди кольорів, наприклад, тут: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
 
 У вашому файлі `static/css/blog.css` потрібно додати наступний код:
 
@@ -83,7 +83,7 @@ h1 a {
 Class і id - імена, які ви присвоюєте елементам власноруч. Класи (сlasses) визначають групи елементів, а ідентифікатори (id), в свою чергу, вказують на специфічні елементи. Наприклад, наступний тег може бути ідентифікований CSS з використанням тегового імені `a`, класу `external_link`, або ідентифікатора `link_to_wiki_page`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Читайте про [CSS селектори на w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
@@ -123,7 +123,7 @@ Class і id - імена, які ви присвоюєте елементам в
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -149,7 +149,7 @@ body {
 Може ми могли б також налаштувати шрифт нашого заголовка? Вставте це всередину розділу `<head>` файлу `blog/templates/blog/post_list.html`:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 Цей рядок імпортує шрифт із назвою *Lobster* із колекції шрифтів Google (https://www.google.com/fonts).
@@ -184,7 +184,7 @@ h1 a {
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -264,7 +264,7 @@ h1, h2, h3, h4 {
                         <p>published: {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>
@@ -281,7 +281,7 @@ h1, h2, h3, h4 {
 
 Не бійтеся трохи повозитися з цим CSS файлом і спробуйте поміняти деякий код. Якщо щось зламається, не хвилюйтесь, ви завжди можете відмінити попередню дію!
 
-В будь-якому разі, дуже рекомендуємо пройти цей безкоштовний онлайн [Codeacademy HTML & CSS курс](http://www.codecademy.com/tracks/web). Він допоможе вам вивчити усе, що потрібно знати про оформлення веб-сайтів за допомогою CSS.
+В будь-якому разі, дуже рекомендуємо пройти цей безкоштовний онлайн [Codeacademy HTML & CSS курс](https://www.codecademy.com/tracks/web). Він допоможе вам вивчити усе, що потрібно знати про оформлення веб-сайтів за допомогою CSS.
 
 Готові до наступного розділу?! :)
 

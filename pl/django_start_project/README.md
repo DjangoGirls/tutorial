@@ -53,7 +53,7 @@ Wprowadźmy parę zmian w pliku `mysite/settings.py`. Otwórz go za pomocą edyt
 
 Fajnie byłoby posługiwać się na naszej stronie właściwą strefą czasową. Przejdź do [listy stref czasowych w wikipedii][2] i skopiuj właściwą strefę czasową (TZ). (np. `Europe/Berlin` )
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 W pliku settings.py znajdź linijkę, w której jest napisane `TIME_ZONE` i zmień ją według swoich potrzeb:
 

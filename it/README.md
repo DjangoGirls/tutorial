@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita http://creativecommons.org/licenses/by-sa/4.0/
+> Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Introduzione
 
@@ -34,7 +34,7 @@ OK, [cominciamo dall'inizio...][3]
 
 Questo tutorial è mantenuto da [DjangoGirls][4]. Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Vorresti aiutarci a tradurre il tutorial in un altra lingua?

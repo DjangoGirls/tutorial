@@ -41,6 +41,13 @@ Django 是用 Python 写的。 在 Django 中，我们需要使用 Python 语言
     $ sudo dnf install python3.4
     
 
+#### openSUSE
+
+在您的控制台中使用此命令：
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
 你需要去到网站 https://www.python.org/downloads/release/python-343/ 然后下载 Python 安装程序：

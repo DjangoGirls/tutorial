@@ -53,7 +53,7 @@
 
 Было бы неплохо установить корректный часовой пояс на нашем сайте. Перейди к [списку часовых поясов википедии][2] и скопируй название своего часового пояса (TZ). (например, `Europe/Moscow`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 В файле settings.py найди строку, содержащую `TIME_ZONE`, и модифицируй её в соответствии со своим часовым поясом:
 

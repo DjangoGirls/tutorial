@@ -10,7 +10,7 @@ Fakat tekrar en baştan başlamak istemiyoruz, değil mi? Bir kez daha, programc
 
 ## Hadi Bootstrap kullanalım!
 
-Bootstrap güzel websayfaları geliştirmek için kullanılan en popüler HTML ve CSS çerçevesidir (framework): http://getbootstrap.com/
+Bootstrap güzel websayfaları geliştirmek için kullanılan en popüler HTML ve CSS çerçevesidir (framework): https://getbootstrap.com/
 
 Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir.
 
@@ -67,7 +67,7 @@ djangogirls
 
 Biz burada özelleştirme ve CSS'in detaylarına çok fazla girmeyeceğiz, çünkü gerçekten kolay ve workshop'tan sonra kendinizi bu konuda geliştirebilirsiniz. Web sitelerini CSS'le güzelleştirmek hakkında bilmen gerekenleri öğrenmek için, [Codeacademy HTML & CSS kursu][2]nu özellikle öneriyoruz.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Ancak az da olsa yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve arkasından 6 harf (A-F) ve numaralarda (0-9) gelir. Renk kodlarını örneğin burada bulabilirsin: http://www.colorpicker.com/. Ayrıca [önceden tanımlanmış renkler][3]i de kullanabilirsin, `red` (kırmızı) ve `green` (yeşil) gibi.
 
@@ -86,7 +86,7 @@ h1 a {
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
 Daha fazla bilgi için [w3schools'da CSS seçicileri][4]ni okuyabilirsin.
@@ -127,7 +127,7 @@ Dosyanız şu şekilde gözüküyor olmalı:
             <div>
                 <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
                 <h1><a href="">{{ post.baslik }}</a></h1>
-                <p>{{ post.yazi|linebreaks }}</p>
+                <p>{{ post.yazi|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -157,7 +157,7 @@ Bunu CSS dosyanıza ekleyin, dosyayı kaydedin ve nasıl çalıştığını gör
 Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` bölümüne yapıştırın:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
 Bu satır *Lobster* adlı bir fontu Google Fonts (https://www.google.com/fonts) sitesinden sayfamıza aktarır.
@@ -193,7 +193,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 <div class="post">
     <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
     <h1><a href="">{{ post.baslik }}</a></h1>
-    <p>{{ post.yazi|linebreaks }}</p>
+    <p>{{ post.yazi|linebreaksbr }}</p>
 </div>
 ```
 
@@ -256,7 +256,7 @@ Sonra da blog gönderilerimizi gösteren HTML kodunu sınıf bildirimleriyle sar
     <div class="post">
         <p>yayınlanma tarihi: {{ post.yayinlama_tarihi }}</p>
         <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -273,7 +273,7 @@ bununla değiştirelim:
                         {{ post.yayinlama_tarihi }}
                     </div>
                     <h1><a href="">{{ post.baslik }}</a></h1>
-                    <p>{{ post.yazi|linebreaks }}</p>
+                    <p>{{ post.yazi|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

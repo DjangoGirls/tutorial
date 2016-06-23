@@ -4,7 +4,7 @@ Za chwilę zbudujemy naszą pierwszą stronę - stronę główną Twojego bloga!
 
 ## Czym jest URL?
 
-Adres URL to po prostu adres w internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! `127.0.0.1:8000` jest adresem URL! http://djangogirls.com również):
+Adres URL to po prostu adres w internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! `127.0.0.1:8000` jest adresem URL! http://djangogirls.org również):
 
 ![Adres URL][1]
 

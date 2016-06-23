@@ -6,11 +6,11 @@
 
 앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어 갑니다. 인터넷에는 많은 종류의 서버 제공 업체들이 있어요. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere][1]을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 어플리케이션으로 무료로 사용할 수 있답니다. 당연히 지금 우리가 만드는 것도 해당되지요.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 우리가 사용할 다른 서비스는 [GitHub][2]라는 코드 호스팅 서비스입니다. 프로그래머들이 애용하는 곳들 중 하나로 대부분의 모든 프로그래머가 GitHub 계정을 가지고 있다고 봐도 될 거예요. 이제 여러분도 하나 만들 때가 되었어요!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 우리는 GitHub를 작성한 코드를 PythonAnywhere에 넣고 빼기 위한 디딤돌로 사용할 거에요. 즉, 코드를 GitHub에 저장하고 GitHub에 저장된 코드를 PythonAnywhere에서 가져다가 작동하는 방법이에요.
 
