@@ -1,6 +1,6 @@
-# Django views - time to create!
+# Django views – time to create!
 
-Time to get rid of the bug we created in the last chapter :)
+Time to get rid of the bug we created in the last chapter! :)
 
 A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the __Introduction to Python__ chapter.
 
@@ -16,22 +16,20 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-
 Not too much stuff here yet.
 
-Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+Lines that start with `#` are comments – this means that those lines won't be run by Python. Pretty handy, right?
 
-The simplest *view* can look like this.
+The simplest *view* can look like this:
 
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-
 As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we have got.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 Another error! Read what's going on now:
 
