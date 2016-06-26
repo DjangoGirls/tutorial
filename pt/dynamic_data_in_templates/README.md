@@ -28,7 +28,7 @@ E o que vem agora? Para pegar os posts reais do model `Post` nós precisamos de 
 
 ## QuerySet
 
-Você já deve estar familiarizado com o modo que os QuerySets funcionam. Nós conversamos sobre isso no [capítulo ORM do Django (QuerySets)][2].</p> 
+Você já deve estar familiarizado com o modo que os QuerySets funcionam. Nós conversamos sobre isso no [capítulo ORM do Django (QuerySets)][2]. 
 Agora nós estamos interessados em uma lista de posts que são publicados e classificados por `published_date`, certo? Nós já fizemos isso no capítulo QuerySets!
 
 ```python
