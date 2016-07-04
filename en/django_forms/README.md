@@ -91,7 +91,7 @@ We open `blog/urls.py` and add a line:
 And the final code will look like this:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
