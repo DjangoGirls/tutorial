@@ -91,7 +91,7 @@ class PostForm(forms.ModelForm):
 Остаточно код буде виглядати так:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

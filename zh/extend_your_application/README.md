@@ -56,7 +56,7 @@
 让我们在 `blog/urls.py` 文件中增加一个 URL 来指引 Django 到名为 `post_detail` 的 *view*，它将用来显示整篇博客文章。 增加这行 `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` 到 `blog/urls.py` 文件。 文件应当如下所示：
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

@@ -92,7 +92,7 @@ class PostForm(forms.ModelForm):
 전체 코드는 아래와 같을 거에요.
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
