@@ -53,7 +53,7 @@ Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adres
 W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Dodaj wiersz `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` w pliku `blog/urls.py`. Jego zawartość powinna wyglądać tak:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

@@ -51,7 +51,7 @@ Vamos criar a URL em `urls.py` para a nossa`post_detail` *view*!
 Queremos criar uma URL para guiar o Django para a *view* chamada `post_detail`, que irá mostrar um post completo do blog. Adicione a linha `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` ao arquivo `blog/urls.py`. Deve ficar assim:
     
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

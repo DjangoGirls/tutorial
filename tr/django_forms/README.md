@@ -93,7 +93,7 @@ Dokümanı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de
 Ve kodun son hali şu şekilde görünecektir:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

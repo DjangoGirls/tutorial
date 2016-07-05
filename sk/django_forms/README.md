@@ -94,7 +94,7 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 A výsledný kód bude vyzerať takto:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

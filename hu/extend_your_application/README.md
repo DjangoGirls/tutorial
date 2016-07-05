@@ -54,7 +54,7 @@ Az első bejegyzésünk részleteit a kövekező **URL** címen akarjuk megjelen
 Hozzunk létre egy URL-t a `blog/urls.py` fájlban, ami egy `post_detail` nevű *view*-ra mutat -- ez majd egy egész blogbejegyzést jelenít meg. Add hozzá a `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` sort a `blog/urls.py` fájlhoz. Így kell kinéznie a fájlnak:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

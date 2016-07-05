@@ -93,7 +93,7 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 O código final deve se parecer com isso:
 
 ``` python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

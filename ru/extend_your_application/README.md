@@ -54,7 +54,7 @@
 Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` в файл `blog/urls.py`. Файл должен выглядеть примерно так:
 
 ```python
-    from django.conf.urls import include, url
+    from django.conf.urls import url
     from . import views
 
     urlpatterns = [

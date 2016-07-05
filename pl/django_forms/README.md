@@ -92,7 +92,7 @@ Otwieramy plik `blog/urls.py` i dodajemy wiersz:
 Ostatecznie kod będzie wyglądał tak:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

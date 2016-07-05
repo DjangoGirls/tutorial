@@ -92,7 +92,7 @@ Nyisd meg a `blog/urls.py` fájlt, és add hozzá ezt a sort:
 Így fog kinézni a teljes kód:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

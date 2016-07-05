@@ -55,7 +55,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
