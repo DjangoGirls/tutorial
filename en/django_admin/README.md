@@ -17,7 +17,11 @@ OK, time to look at our Post model. Remember to run `python manage.py runserver`
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user which has control over everything on the site. Go back to the command-line and type `python manage.py createsuperuser`, and press enter. When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where username and email should be your own ones):
+To log in, you need to create a *superuser* - a user which has control over everything on the site. Go back to the command-line and type `python manage.py createsuperuser`, and press enter. 
+
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the <b>Your first Django project!</b> chapter, in the <b>Starting the web server</b> section.
+
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where username and email should be your own ones):
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin

@@ -113,6 +113,8 @@ To create a database for our blog, let's run the following in the console: `pyth
 
 And we're done! Time to start the web server and see if our website is working!
 
+## Starting the web server
+
 You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
     (myvenv) ~/djangogirls$ python manage.py runserver
@@ -129,18 +131,20 @@ If you are on Windows and this fails with `UnicodeDecodeError`, use this command
 
 Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
 
-    http://127.0.0.1:8000/
+    http://localhost:8000/
 
 If you're using a Chromebook, you'll always visit your test server by accessing:
 
     https://django-girls-<your cloud9 username>.c9users.io
 
-The web server will take over your command prompt until you stop it. To type more commands whilst it is running open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and pressing CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
-
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
 ![It worked!](images/it_worked2.png)
 
-Go ahead and stop the web server by pressing CTRL+C or CTRL+Break.
+While the web server is running, you won't see a new command line prompt to enter additonal commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+
+> We reviewed how web servers work in the <b>How the Internet works</b> chapter.
+
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
