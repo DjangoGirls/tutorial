@@ -19,7 +19,7 @@ from django.shortcuts import render
 
 Not too much stuff here yet.
 
-Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+Remember that lines starting with `#` are comments and those lines won't be run by Python.
 
 The simplest *view* can look like this.
 

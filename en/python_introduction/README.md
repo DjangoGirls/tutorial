@@ -568,14 +568,31 @@ Python runs through each test in sequence and prints:
     $ python3 python_intro.py
     Perfect, I can hear all the details
 
+## Comments
+
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+
+Let's see how that looks:
+
+```python
+# Change the volume if it's too loud or too quiet
+if volume < 20 or volume > 80:
+    volume = 50
+    print("That's better!")
+```
+
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+
+
 ### Summary
 
-In the last three exercises you learned about:
+In the last few exercises you learned about:
 
 - __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
 - __Boolean__ – a type of object that can only have one of two values: `True` or `False`
 - __Saving files__ – storing code in files so you can execute larger programs.
 - __if … elif … else__ – statements that allow you to execute code only when certain conditions are met.
+- __comments__ - lines that Python won't run which let you document your code
 
 Time for the last part of this chapter!
 
