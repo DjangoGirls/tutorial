@@ -45,7 +45,7 @@ Next, run:
 ```
     mkdir djangogirls
     cd djangogirls
-    python3 -mvenv myvenv
+    python3.5 -mvenv myvenv
     source myvenv/bin/activate
     pip install django==1.9.6
 ```
