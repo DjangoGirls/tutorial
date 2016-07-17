@@ -47,8 +47,10 @@ Next, run:
     cd djangogirls
     python3.5 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django==1.9.6
+    pip install django~=1.9.0
 ```
+
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### Github
 
