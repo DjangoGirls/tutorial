@@ -10,7 +10,7 @@ Mas nós não queremos iniciar do zero de novo, certo? Nós tentaremos, mais uma
 
 ## Vamos usar o Bootstrap!
 
-Bootstrap é um dos mais famosos e populares frameworks de HTML e CSS para desenvolver sites bonitos: http://getbootstrap.com/
+Bootstrap é um dos mais famosos e populares frameworks de HTML e CSS para desenvolver sites bonitos: https://getbootstrap.com/
 
 Foi escrito por programadores que trabalharam no Twitter e agora é desenvolvido por voluntários de todo o mundo.
 
@@ -66,7 +66,7 @@ Hora de escrever CSS! Abra o arquivo `static/css/blog.css` no seu editor de cód
 
 Não vamos nos aprofundar muito em customizar e aprender sobre CSS aqui, porque é bem fácil e você pode aprender no seu próprio após este workshop. Recomendamos fortemente fazer este [Codeacademy HTML & CSS couse][2] para aprender tudo o que você precisa saber sobre como tornar seus sites mais bonitos com CSS.
 
- [2]: http://www.codecademy.com/tracks/web
+ [2]: https://www.codecademy.com/tracks/web
 
 Mas vamos fazer pelo menos um pouco. Talvez possamos mudar a cor do nosso cabeçalho? Para entender as cores, computadores usam códigos especiais. Eles começam com `#` e são seguidos por 6 letras (A-F) e números (0-9). Você pode encontrar exemplos de códigos de cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas][3], como `red` e `green`.
 
@@ -86,7 +86,7 @@ h1 a {
 Em um arquivo CSS podemos determinar estilos para elementos no arquivo HTML. Os elementos são identificados pelo nome do elemento (ou seja, `a`, `h1`, `body`), o atributo de `class` ou o atributo `id`. Classe e id são nomes que você mesmo dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a seguinte tag pode ser identificada por CSS usando a tag de nome `a`, a classe `link_externo` ou a identificação de `link_para_a_pagina_wiki`:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
     
 
@@ -130,7 +130,7 @@ Agora, seu arquivo deve ficar assim:
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -162,7 +162,7 @@ Adicione isto ao seu arquivo CSS, salve e veja como ele funciona!
 Talvez a gente possa customizar a fonte no nosso cabeçalho? Cole na seção `<head>` do arquivo `blog/templates/blog/post_list.html` o seguinte:
 
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
     
 
@@ -201,7 +201,7 @@ E agora, adicione uma classe `post` em sua `div` que contém um post de blog.
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
     
@@ -266,7 +266,7 @@ Então envolva o código HTML que exibe as mensagens com declarações de classe
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -284,7 +284,7 @@ no arquivo `blog/templates/blog/post_list.html` por isto:
                         {{ post.published_date }}
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>

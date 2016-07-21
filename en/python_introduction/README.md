@@ -1,12 +1,14 @@
 # Introduction to Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (http://django.carrots.pl/).
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Let's write some code!
 
 ## Python prompt
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that -- you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
@@ -14,13 +16,14 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ```:command-line
 $ python3
-Python 3.4.3 (...)
-Type "copyright", "credits" or "license" for more information.
+Python 3.5.1 (...)
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
 ```
 
 ## Your first Python command!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` - Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
@@ -32,13 +35,14 @@ For now, we don't want to exit the Python console. We want to learn more about i
 ```
 
 Nice! See how the answer popped out? Python knows math! You could try other commands like:
+
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-Have fun with this for a little while and then get back here :).
+Have fun with this for a little while and then get back here. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do...
+As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## Strings
 
@@ -88,9 +92,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` __function__ on your string! A function (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __method__ on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to know the number of letters contained in your name, there is a function for that too!
+If you want to know the number of letters contained in your name, there is a __function__ for that too!
 
 ```python:command-line
 >>> len("Ola")
@@ -103,10 +107,10 @@ Wonder why sometimes you call functions with a `.` at the end of a string (like 
 
 OK, enough of strings. So far you've learned about:
 
-- __the prompt__ - typing commands (code) into the Python prompt results in answers in Python
-- __numbers and strings__ - in Python numbers are used for math and strings for text objects
-- __operators__ - like + and \*, combine values to produce a new one
-- __functions__ - like upper() and len(), perform actions on objects.
+- __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
+- __numbers and strings__ – in Python numbers are used for math and strings for text objects
+- __operators__ – like `+` and `\*`, combine values to produce a new one
+- __functions__ – like `upper()` and `len()`, perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
@@ -133,7 +137,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 - The `str` function converts things into __strings__
 - The `int` function converts things into __integers__
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers - what would `int('hello')` be anyway?
+> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
 ## Variables
 
@@ -154,7 +158,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable :)! You can always change what it refers to:
+Yippee! Your first variable! :) You can always change what it refers to:
 
 ```python:command-line
 >>> name = "Sonja"
@@ -169,7 +173,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything, so numbers too! Try this:
+Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 ```python:command-line
 >>> a = 4
@@ -212,7 +216,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: objects which are lists of other objects :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called __list__. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
 Go ahead and create a list:
 
@@ -276,13 +280,13 @@ If you want to show only the first number, you can do this by using __indexes__.
 
 As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-To delete something from your list you will need to use __indexes__ as we learnt above and the __del__ statement (del is an abbreviation for delete). Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
+To delete something from your list you will need to use __indexes__ as we learnt above and the `pop()` method. Let's try an example and reinforce what we learnt previously; we will be deleting the first number of our list.
 
     >>> print(lottery)
     [59, 42, 30, 19, 12, 3, 199]
     >>> print(lottery[0])
     59
-    >>> del lottery[0]
+    >>> lottery.pop(0)
     >>> print(lottery)
     [42, 30, 19, 12, 3, 199]
 
@@ -294,7 +298,9 @@ You can find a list of all available list methods in this chapter of the Python 
 
 ## Dictionaries
 
-A dictionary is similar to a list, but you access values by looking up a key instead of an index. A key can be any string or number. The syntax to define an empty dictionary is:
+> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
 ```python:command-line
 >>> {}
@@ -303,13 +309,13 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 
 This shows that you just created an empty dictionary. Hurray!
 
-Now, try writing the following command (try replacing your own information too):
+Now, try writing the following command (try substituting your own information, too):
 
 ```python:command-line
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key-value pairs:
+With this command, you just created a variable named `participant` with three key–value pairs:
 
 - The key `name` points to the value `'Ola'` (a `string` object),
 - `country` points to `'Poland'` (another `string`),
@@ -322,7 +328,7 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index - just the name.
+See, it's similar to a list. But you don't need to remember the index – just the name.
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
@@ -340,32 +346,32 @@ When should you use a dictionary or a list? Well, that's a good point to ponder.
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key/value pairs to a dictionary after it is created, like:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 ```python:command-line
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key-value pairs in the dictionary. Go ahead and type in the command:
+Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 ```python:command-line
 >>> len(participant)
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Hop onto the next line for some amazing things.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `del` command to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 ```python:command-line
->>> del participant['favorite_numbers']
+>>> participant.pop('favorite_numbers')
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key-value pair corresponding to  the 'favorite_numbers' key has been deleted.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-As well as this, you can also change a value associated with an already created key in the dictionary. Type:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 ```python:command-line
 >>> participant['country'] = 'Germany'
@@ -379,16 +385,18 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
-- __errors__ - you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- __variables__ - names for objects that allow you to code more easily and to make your code more readable
-- __lists__ - lists of objects stored in a particular order
-- __dictionaries__ - objects stored as key-value pairs
+- __errors__ – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
+- __variables__ – names for objects that allow you to code more easily and to make your code more readable
+- __lists__ – lists of objects stored in a particular order
+- __dictionaries__ – objects stored as key–value pairs
 
 Excited for the next part? :)
 
 ## Compare things
 
-A big part of programming includes comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
 ```python:command-line
 >>> 5 > 2
@@ -403,9 +411,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, Python can compare not only numbers, but it can also compare method results. Nice, huh?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, __always__ need to put two `==` if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, __always__ need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
@@ -436,8 +444,8 @@ True
 
 You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
-- __and__ - if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- __or__ - if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- __and__ – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
+- __or__ – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
@@ -453,13 +461,13 @@ Instead, it shows a **TypeError** and tells us the two types can't be compared t
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called a __Boolean__ -- and it probably is the easiest type there is.
+Incidentally, you just learned about a new type of object in Python. It's called __Boolean__,  and it is probably the easiest type there is.
 
 There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, tRUE won't work -- only True is correct.__ (The same applies to 'False' as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
 
 Booleans can be variables, too! See here:
 
@@ -488,6 +496,9 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 
 # Save it!
 
+> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+
+
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
@@ -510,14 +521,14 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour, now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor :)
-
-
 Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+> **Note** You should notice one of the coolest thing about code editors: colours! In the Python console, everything was the same colour; now you should see that the `print` function is a different colour from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The colour of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+
+
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.  (**Note**:  Replace `<your_name>` including the `<` and `>` with your user name.)
 
 On a Mac, the command will look something like this:
 
@@ -525,13 +536,13 @@ On a Mac, the command will look something like this:
 $ cd /Users/<your_name>/Desktop
 ```
 
-On Linux, it will be like this (the word "Desktop" might be translated to your language):
+On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
 ```:command-line
 $ cd /home/<your_name>/Desktop
 ```
 
-And on windows, it will be like this:
+And on Windows, it will be like this:
 
 ```:command-line
 > cd C:\Users\<your_name>\Desktop
@@ -546,13 +557,17 @@ $ python3 python_intro.py
 Hello, Django girls!
 ```
 
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+
+    > python python_intro.py
+
 Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
 You can now move on to an essential tool in programming:
 
-## If...elif...else
+## If … elif … else
 
-Lots of things in code should only be executed when given conditions are met. That's why Python has something called __if statements__.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called __if statements__.
 
 Replace the code in your **python_intro.py** file with this:
 
@@ -560,7 +575,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we saved this and ran it, we'd see an error like this:
+If we were to save and run this, we'd see an error like this:
 
 ```:command-line
 $ python3 python_intro.py
@@ -584,6 +599,8 @@ Save it and give it another run:
 $ python3 python_intro.py
 It works!
 ```
+
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### What if a condition isn't True?
 
@@ -622,7 +639,7 @@ $ python3 python_intro.py
 Hey Sonja!
 ```
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail. 
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
 You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
@@ -643,24 +660,43 @@ else:
 ```
 
 Python runs through each test in sequence and prints:
-     
+
     $ python3 python_intro.py
     Perfect, I can hear all the details
 
+## Comments
+
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+
+Let's see how that looks:
+
+```python
+# Change the volume if it's too loud or too quiet
+if volume < 20 or volume > 80:
+    volume = 50
+    print("That's better!")
+```
+
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+
+
 ### Summary
 
-In the last three exercises you learned about:
+In the last few exercises you learned about:
 
-- __comparing things__ - in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- __Boolean__ - a type of object that can only have one of two values: `True` or `False`
-- __Saving files__ - storing code in files so you can execute larger programs.
-- __if...elif...else__ - statements that allow you to execute code only when certain conditions are met.
+- __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- __Boolean__ – a type of object that can only have one of two values: `True` or `False`
+- __Saving files__ – storing code in files so you can execute larger programs.
+- __if … elif … else__ – statements that allow you to execute code only when certain conditions are met.
+- __comments__ - lines that Python won't run which let you document your code
 
 Time for the last part of this chapter!
 
 ## Your own functions!
 
-Remember functions like `len()` that you can execute in Python? Well, good news - you will learn how to write your own functions now!
+> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
@@ -684,7 +720,7 @@ Hi there!
 How are you?
 ```
 
-That was easy! Let's build our first function with parameters. We will use the previous example - a function that says 'hi' to the person running it - with a name:
+That was easy! Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
 
 ```python:python_intro.py
 def hi(name):
@@ -742,15 +778,15 @@ $ python3 python_intro.py
 Hi Sonja!
 ```
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja) Give it a try and see if you're right. It should print out this:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 ```:command-line
 Hi anonymous!
 ```
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions - you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Let's do something smarter -- there are more names than two, and writing a condition for each would be hard, right?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
 ```python:python_intro.py
 def hi(name):
@@ -769,6 +805,8 @@ Hi Rachel!
 Congratulations! You just learned how to write functions! :)
 
 ## Loops
+
+> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
 This is the last part already. That was quick, right? :)
 
@@ -837,12 +875,12 @@ Which would print:
 
 `range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and with that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Summary
 
 That's it. __You totally rock!__ This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-You might want to briefly do something else - stretch, walk around for a bit, rest your eyes - before going on to the next chapter. :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)

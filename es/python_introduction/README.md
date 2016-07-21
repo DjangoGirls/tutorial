@@ -1,6 +1,6 @@
 # Introducción a Python
 
-> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (http://django.carrots.pl/).
+> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 ¡Vamos a escribir algo de código!
 
@@ -10,7 +10,7 @@ Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en n
 
  [1]: /intro_to_command_line/README.html
 
-Una vez que estés listo, sigue las siguientes instrucciones.
+Una vez que estés lista, sigue las siguientes instrucciones.
 
 Queremos abrir una consola de Python, así que escribe `python3` y pulsa Enter.
 
@@ -20,7 +20,7 @@ Queremos abrir una consola de Python, así que escribe `python3` y pulsa Enter.
     >>>
     
 
-## Tu primer comando en Python!
+## ¡Tu primer comando en Python!
 
 Después de ejecutar el comando de Python, el cursor cambia a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos en el lenguaje Python. No tienes que escribir el `>>>` - Python lo hará por ti.
 
@@ -40,7 +40,7 @@ Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué m
 
 ## Strings
 
-¿Y tu nombre? Escriba tu nombre de pila en frases como ésta:
+¿Y tu nombre? Escribe tu nombre de pila en frases como ésta:
 
     >>> "Ola"
     'Ola'
@@ -68,7 +68,7 @@ Usando comillas dobles:
     "Runnin' down the hill"
     
 
-o escapando el apóstrofe con una barra invertida (``):
+o escapando el apóstrofe con una barra invertida (`\`):
 
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
@@ -126,7 +126,7 @@ Intentemos con algo nuevo. ¿Podríamos obtener la longitud de un número de la 
 
 ## Variables
 
-Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa para que puedas usarla más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando que hace cada cosa.
+Un concepto importante en programación son las variables. Una variable no es más que un nombre para alguna cosa para que puedas usarla más tarde. Los programadores usan estas variables para almacenar datos, hacer su código más legible y así no tener que seguir recordando qué hace cada cosa.
 
 Supongamos que queremos crear una nueva variable llamada `name`:
 
@@ -309,9 +309,9 @@ Como en las listas, el método `len()` en los diccionarios, devuelve el número 
 
 Espero tenga sentido hasta ahora. :) ¿Lista para más diversión con los diccionarios? Salta a la siguiente línea para algunas cosas sorprendentes.
 
-Puedes utilizar el comando `del` para borrar un elemento en el diccionario. Por ejemplo, si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, sólo tienes que escribir el siguiente comando:
+Puedes utilizar el comando `pop()` para borrar un elemento en el diccionario. Por ejemplo, si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, sólo tienes que escribir el siguiente comando:
 
-    >>> del participant['favorite_numbers']
+    >>> participant.pop('favorite_numbers')
     >>> participant
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
     
@@ -375,11 +375,11 @@ Da dos tareas más a Python:
 
 ¡Genial! ¿Quieres hacer uno mas? Intenta esto:
 
-    >>> 6 > 2 y 2 < 3
+    >>> 6 > 2 and 2 < 3
     True
-    >>> 3 > 2 y 2 < 1
+    >>> 3 > 2 and 2 < 1
     False
-    >>> 3 > 2 ó 2 < 1
+    >>> 3 > 2 or 2 < 1
     True
     
 
@@ -396,7 +396,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
     TypeError: unorderable types: int() > str()
     
 
-Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y un string (`str`). En cambio, muestra un **TypeError** y nos dice que los dos tipos no se pueden comparados.
+Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y un string (`str`). En cambio, muestra un **TypeError** y nos dice que los dos tipos no se pueden comparar.
 
 ## Boolean
 
@@ -448,7 +448,7 @@ Esto te llevará de vuelta a la línea de comandos.
 
 Anteriormente, elegimos un editor de código en la sección de [Editor de código][2]. Tendremos que abrir el editor ahora y escribir algo de código en un archivo nuevo:
 
- [2]: code_editor/README.md
+ [2]: ../code_editor/README.md
 
 ``` python
     print('Hello, Django girls!')
@@ -653,7 +653,7 @@ Ahora, ¿qué crees que pasará si escribes otro nombre allí? (No Ola o Sonja).
     Hi anonymous!
     
 
-Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y eso es exactamente por qué necesitamos funciones - ¡para no repetir tu código!
+Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y eso es exactamente el por qué necesitamos funciones - ¡para no repetir tu código!
 
 Vamos a hacer algo más inteligente - hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿no?
 
@@ -690,7 +690,7 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace 
     for name in girls:
 ```    
 
-La sentencia for se comporta de manera similar a la sentencia if, el código que sigue continuación debe estar indentado usando cuatro espacios.
+La sentencia for se comporta de manera similar a la sentencia if, el código que sigue a continuación debe estar indentado usando cuatro espacios.
 
 Aquí está el código completo que estará en el archivo:
 

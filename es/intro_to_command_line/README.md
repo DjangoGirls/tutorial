@@ -8,7 +8,7 @@ Los siguientes pasos te mostrarán cómo usar aquella ventana negra que todos lo
 
 ## ¿Qué es la línea de comandos?
 
-La ventana, que generalmente es llamada **línea de comandos** o **interfaz de línea de comandos**, es una aplicación basada en texto para la ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: *cmd*, *CLI*, *símbolo del sistema*, *consola* o *terminal*.
+La ventana, que generalmente es llamada **línea de comandos** o **interfaz de línea de comandos**, es una aplicación basada en texto para ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: *cmd*, *CLI*, *símbolo del sistema*, *consola* o *terminal*.
 
 ## Abrir la interfaz de línea de comandos
 
@@ -156,7 +156,7 @@ Windows:
     > mkdir djangogirls
     
 
-Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando `ls/dir`! Inténtalo :)
+Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando `ls` (si estás usando Mac o Linux) o `dir` (si estás usando Windows)! Inténtalo :)
 
 > Pro tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para ver recientes comandos utilizados.
 
@@ -217,7 +217,7 @@ Ahora es hora de eliminar el directorio `djangogirls`.
 
 > **Atención**: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre* Debes ser muy cuidadosa con este comando.
 
-    $ rm - r djangogirls
+    $ rm -r djangogirls
     
 
 Windows:

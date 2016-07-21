@@ -1,4 +1,4 @@
-> 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기반으로 작성되었습니다.
+> 이 장의 일부는 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)의 튜토리얼을 기반으로 작성되었습니다.
 >
 > Creative Commons Attribution-ShareAlike 4.0 International License 에 따라 [django-marcador 튜토리얼](http://django-marcador.keimlink.de/)를 바탕으로 작성되었습니다. django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 

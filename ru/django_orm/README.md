@@ -108,7 +108,9 @@ QuerySet, по сути, список объектов заданной Моде
 
 Ты также можешь получить список всех опубликованных записей. Мы просто отфильтруем записи по полю `published_date`:
 
-> > > from django.utils import timezone       Post.objects.filter(published_date__lte=timezone.now())           []
+    >>> from django.utils import timezone
+    >>> Post.objects.filter(published_date__lte=timezone.now())
+    []
 
 К сожалению, пост, который мы добавили в консоли Python еще не опубликован. Мы можем изменить это! Сначала выберем запись, которую мы хотим опубликовать:
 

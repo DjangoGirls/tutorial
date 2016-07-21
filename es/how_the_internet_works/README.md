@@ -2,7 +2,7 @@
 
 > Este capitulo está inspirado por la charla "How the Internet works" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Apostamos que utilizas Internet todos los días. Pero, ¿sabes lo que pasa cuando escribes una dirección como http://djangogirls.org en tu navegador y presionas 'Enter'?
+Apostamos que utilizas Internet todos los días. Pero, ¿sabes lo que pasa cuando escribes una dirección como https://djangogirls.org en tu navegador y presionas 'Enter'?
 
 Lo primero que tienes que entender es que un sitio web es sólo un montón de archivos guardados en un disco duro. Al igual que tus películas, música o fotos. Sin embargo, los sitios web poseen una peculiaridad: ellos incluyen un código de computadoras llamado HTML.
 
@@ -26,7 +26,7 @@ Parece un lío, ¿no? En realidad es una red de máquinas conectadas (los mencio
 
  [3]: images/internet_3.png
 
-Es fascinante, ¿no? Pero, obviamente, no es posible tener un cable entre cada máquina conectada a Internet. Así que, para llegar a una máquina (por ejemplo la que aloja a http://djangogirls.org) tenemos que pasar una solicitud a través de muchas máquinas diferentes.
+Es fascinante, ¿no? Pero, obviamente, no es posible tener un cable entre cada máquina conectada a Internet. Así que, para llegar a una máquina (por ejemplo la que aloja a https://djangogirls.org) tenemos que pasar una solicitud a través de muchas máquinas diferentes.
 
 Se parece a esto:
 
@@ -34,9 +34,9 @@ Se parece a esto:
 
  [4]: images/internet_2.png
 
-Imagina que cuando escribes http://djangogirls.org, estas enviando una carta que dice: "Queridos Django Girls, me gustaría ver su sitio web djangogrils.org. Por favor, envíenmelo!"
+Imagina que cuando escribes https://djangogirls.org, estas enviando una carta que dice: "Queridos Django Girls, me gustaría ver su sitio web djangogrils.org. Por favor, envíenmelo!"
 
-Tu carta va hacia la oficina de correo más cercana. Luego va a otra un poco más cercana de su destinatario, luego a otra y a otra hasta que es entregada en su destino. Lo única cosa diferente es que si tu envías cartas (*paquetes de datos*) con frecuencia al mismo lugar, cada carta puede pasar por oficinas de correos (*routers*) totalmente diferentes, dependiendo de cómo se distribuyen en cada oficina.
+Tu carta va hacia la oficina de correo más cercana. Luego va a otra un poco más cercana de su destinatario, luego a otra y a otra hasta que es entregada en su destino. La única cosa diferente es que si tu envías cartas (*paquetes de datos*) con frecuencia al mismo lugar, cada carta puede pasar por oficinas de correos (*routers*) totalmente diferentes, dependiendo de cómo se distribuyen en cada oficina.
 
 ![Figura 1.4][5]
 

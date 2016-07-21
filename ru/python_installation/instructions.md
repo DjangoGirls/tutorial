@@ -1,4 +1,4 @@
-> Этот подраздел основан на руководстве Geek Girls Carrots (http://django.carrots.pl/)
+> Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила Python 3.4, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить.
 
@@ -41,9 +41,16 @@ Django написан на Python. Нам нужен Python, чтобы сдел
     $ sudo dnf install python3.4
     
 
+#### openSUSE
+
+Используй следующую команду в консоли:
+
+    $ sudo zypper install python3
+
+
 ### OS X
 
-Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-342/ и скачать дистрибутив Python:
+Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-343/ и скачать дистрибутив Python:
 
   * Скачай файл *Mac OS X 64-bit/32-bit installer*,
   * Сделай двойной щелчок на *python-3.4.3-macosx10.6.pkg* для запуска установщика.

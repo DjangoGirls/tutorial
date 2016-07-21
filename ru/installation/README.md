@@ -1,6 +1,6 @@
 # Если ты занимаешься дома
 
-Если ты занимаешься по этому руководство дома, а не на одной из [встреч Django Girls](http://djangogirls.org/events/), то можешь пропустить этот раздел и приступить сразу же к главе [Как работает интернет?](../how_the_internet_works/README.md).
+Если ты занимаешься по этому руководство дома, а не на одной из [встреч Django Girls](https://djangogirls.org/events/), то можешь пропустить этот раздел и приступить сразу же к главе [Как работает интернет?](../how_the_internet_works/README.md).
 
 Дело в том, что мы всё равно рассматриваем все эти вещи по ходу руководства, а в этом разделе мы просто собрали все инструкции по установке вместе. Встречи Django Grils включают в себя "вечер настроек", когда мы устанавливаем всё что нужно, чтобы не тратить на это время в течение основного семинара, это очень удобно для нас.
 
@@ -14,27 +14,27 @@
 
 # Установка Python
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Настрока virtualenv и установка Django
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Установка редактора кода
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Установка Git
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Создание учётной записи на GitHub
 
-Перейди на [GitHub.com](http://www.github.com) и зарегистрируй новый бесплатный аккаунт.
+Перейди на [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт.
 
 # Создание учётной записи на PythonAnywhere
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Начинай читать
 
@@ -44,6 +44,6 @@
 
   * [Введение в командную строку](../intro_to_command_line/README.md)
 
-  * [Введение в Python](../intro_to_command_line/README.md)
+  * [Введение в Python](../python_introduction/README.md)
 
   * [Что же представляет из себя Django?](../django/README.md)

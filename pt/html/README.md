@@ -105,7 +105,7 @@ Agora você pode se divertir um pouco tentando customizar o seu template! Aqui e
 *   `<em>texto</em>` enfatiza seu texto
 *   `<strong>text</strong>` enfatiza fortemente seu texto
 *   `<br />` pula para a próxima linha (você não pode colocar nada dentro de br)
-*   `<a href="http://djangogirls.org">link</a>` cria um link
+*   `<a href="https://djangogirls.org">link</a>` cria um link
 *   `<ul><li>primeiro item</li><li>segundo item</li></ul>` cria uma lista, exatamente como essa!
 *   `<div></div>` define uma seção da página
 
@@ -164,7 +164,7 @@ Primeiro de tudo, vejamos quais arquivos foram alterados desde a última implant
 
 Verifique se você está no diretório `djangogirls` e vamos dizer ao `git` para incluir todas as mudanças dentro deste diretório:
 
-    $ git add -A .
+    $ git add --all .
     
 
 > **Nota** `-A` (abreviação de "all", tudo em inglês) significa que o `git` também reconhecerá se você deletou algum arquivo (por padrão, o git apenas reconhece arquivos criados/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
@@ -190,7 +190,14 @@ Quando fizermos isso, nós fazemos upload (envio) das nossas mudanças para o Py
 
 *   Abra a [página de consoles de PythonAnywhere][5] e vá para o seu **console Bash** (ou começar um novo). Em seguida, execute:
     
-    $ cd ~/my-first-blog $ git pull [...]
+```
+    $ cd ~/my-first-blog
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+```
 
  [5]: https://www.pythonanywhere.com/consoles/
 

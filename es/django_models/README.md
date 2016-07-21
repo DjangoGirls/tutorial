@@ -1,6 +1,6 @@
 # Modelos en Django
 
-Lo que queremos crear ahora es algo que va a almacenar todos los posts en nuestro blog. Pero para poder hacerlo tenemos que hablar un poco de acerca de algo llamado `objetos`.
+Lo que queremos crear ahora es algo que va a almacenar todos los posts en nuestro blog. Pero para poder hacerlo tenemos que hablar un poco acerca de algo llamado `objetos`.
 
 ## Objetos
 
@@ -8,7 +8,7 @@ Hay un concepto en el mundo de la programación llamado `programación orientada
 
 Entonces ¿Qué es un objeto? Es un conjunto de propiedades y acciones. Suena raro, pero te daremos un ejemplo.
 
-Si queremos un modelar un gato crearemos un objeto `Gato` que tiene algunas propiedades, como son por ejemplo`color`, `edad`, `estado de ánimo` (es decir, bueno, malo, sueño ;)), `dueño` (que es un objeto `Persona` o, tal vez, en el caso de que el gato sea callejero, esta propiedad estará vacía).
+Si queremos modelar un gato crearemos un objeto `Gato` que tiene algunas propiedades, como son por ejemplo`color`, `edad`, `estado de ánimo` (es decir, bueno, malo, sueño ;)), `dueño` (que es un objeto `Persona` o, tal vez, en el caso de que el gato sea callejero, esta propiedad estará vacía).
 
 Y luego el `Gato` tiene algunas acciones: `ronronear`, `rasguñar` o `alimentarse` (en la cual daremos al gato algunos `ComidaDeGato`, que podría ser un objeto independiente con propiedades, como por ejemplo, `sabor`).
 
@@ -65,26 +65,26 @@ Para mantener todo en orden, crearemos una aplicación separada dentro de nuestr
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
 
-Vas notar que se crea un nuevo directorio llamado `blog` y contiene una serie de archivos. Nuestros directorios y archivos en nuestro proyecto deberían parecerse a esto:
+Vas a notar que se crea un nuevo directorio llamado `blog` y contiene una serie de archivos. Nuestros directorios y archivos en nuestro proyecto deberían parecerse a esto:
 
     djangogirls
     ├── mysite
-    | __init__.py
-    | settings.py
-    | urls.py
-    | wsgi.py
+    |       __init__.py
+    |       settings.py
+    |       urls.py
+    |       wsgi.py
     ├── manage.py
     └── blog
-    ├── migrations
-    | __init__.py
-    ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
+        ├── migrations
+        |       __init__.py
+        ├── __init__.py
+        ├── admin.py
+        ├── models.py
+        ├── tests.py
+        └── views.py
     
 
-Después de crear una aplicación también necesitamos decirle a Django que debe utilizarla. Lo hacemos en el archivo `mysite/settings.py`. Tenemos que encontrar `INSTALLED_APPS` y añadir una línea que contiene `'blog',` justo por encima de `)`. El producto final debe tener este aspecto:
+Después de crear una aplicación también necesitamos decirle a Django que debe utilizarla. Lo hacemos en el archivo `mysite/settings.py`. Tenemos que encontrar `INSTALLED_APPS` y añadir una línea que contenga `'blog',` justo por encima de `)`. El producto final debe tener este aspecto:
 
 ```python
     INSTALLED_APPS = (
@@ -139,7 +139,7 @@ Todas las líneas que comienzan con `from` o `import` son líneas para añadir a
 
 Ahora definimos las propiedades que hablábamos: `title`, `text`, `created_date`, `published_date` y `author`. Para hacer eso tenemos que definir un tipo de campo (¿es texto? ¿un número? ¿una fecha? ¿una relación con otro objeto - es decir, un usuario?).
 
-*   `models.CharField` - esto es como defines un texto con un número limitado de caracteres.
+*   `models.CharField` - así es como defines un texto con un número limitado de caracteres.
 *   `models.TextField` - esto es para textos largos sin un límite. Será ideal para el contenido de un post, ¿verdad?
 *   `models.DateTimeField` - esto es fecha y hora.
 *   `modelos.ForeignKey` - este es un vínculo con otro modelo.
@@ -150,7 +150,7 @@ No vamos a explicar cada pedacito de código, ya que nos tomaría demasiado tiem
 
 Los métodos muy a menudo `devuelven` algo. Hay un ejemplo de esto en el método `__str__`. En este escenario, cuando llamamos a `__str__()` obtendremos un texto (**string**) con un título de Post.
 
-Si algo todavía no está claro sobre modelos, ¡no dudes en preguntar a tu tutor! Sabemos que es muy complicado, sobre todo cuando estás entendiendo qué funciones y objetos son mientras sigues este documento. Con suerte, ¡todo tiene un poco más sentido para ti ahora!
+Si algo todavía no está claro sobre modelos, ¡no dudes en preguntar a tu tutor! Sabemos que es muy complicado, sobre todo cuando estás entendiendo qué son funciones y objetos mientras sigues este documento. Con suerte, ¡todo tiene un poco más de sentido para ti ahora!
 
 ### Crear tablas para los modelos en tu base de datos
 

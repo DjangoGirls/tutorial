@@ -8,9 +8,9 @@ There is a concept in programming called `Object-oriented programming`. The idea
 
 So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
-If we want to model a cat we will create an object `Cat` that has some properties such as: `color`, `age`, `mood` (i.e. good, bad, sleepy ;)), and `owner` (that is a `Person` object or maybe, in case of a stray cat, this property is empty).
+If we want to model a cat we will create an object `Cat` that has some properties such as: `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (that is a `Person` object or maybe, in case of a stray cat, this property is empty).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which we will give the cat some `CatFood`, which could be a separate object with properties, i.e. `taste`).
+Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
 ```
 Cat
@@ -74,20 +74,22 @@ You will notice that a new `blog` directory is created and it contains a number 
 
 ```:command-line
 djangogirls
-├── mysite
-|       __init__.py
-|       settings.py
-|       urls.py
-|       wsgi.py
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── db.sqlite3
 ├── manage.py
-└── blog
-    ├── migrations
-    |       __init__.py
+└── mysite
     ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
@@ -132,7 +134,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two undescore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It looks scary, right? But no worries we will explain what these lines mean!
 
@@ -144,24 +146,26 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespaces). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define a type of each field (Is it text? A number? A date? A relation to another object, i.e. a User?).
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define a type of each field (Is it text? A number? A date? A relation to another object, like a User?).
 
 - `models.CharField` - this is how you define text with a limited number of characters.
 - `models.TextField` - this is for long text without a limit. Sounds ideal for blog post content, right?
 - `models.DateTimeField` - this is a date and time.
 - `models.ForeignKey` - this is a link to another model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.9/ref/models/fields/#field-types).
 
 What about `def publish(self):`? It is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method, if you want. The naming rule is that we use lowercase and underscores instead of whitespaces. For example,  a method that calculates average price could be called `calculate_average_price`.
 
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
+Also notice that both `def publish(self):`, and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Create tables for models in your database
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Type `python manage.py makemigrations blog`. It will look like this:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 ```:command-line
 (myvenv) ~/djangogirls$ python manage.py makemigrations blog
@@ -172,21 +176,13 @@ Migrations for 'blog':
 
 Django prepared for us a migration file that we have to apply now to our database. Type `python manage.py migrate blog` and the output should be:
 
-<<<<<<< HEAD
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
-=======
 ```:command-line
 (myvenv) ~/djangogirls$ python manage.py migrate blog
 Operations to perform:
   Apply all migrations: blog
 Running migrations:
+  Rendering model states... DONE
   Applying blog.0001_initial... OK
 ```
->>>>>>> Chapters 9-11
 
 Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!

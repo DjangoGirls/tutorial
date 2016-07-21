@@ -93,8 +93,8 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 O código final deve se parecer com isso:
 
 ``` python
-from django.conf.urls import include, url
-from . mport views
+from django.conf.urls import url
+from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list),
@@ -197,6 +197,7 @@ Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-
 if form.is_valid():
     post = form.save(commit=False)
     post.author = request.user
+    post.published_date = timezone.now()
     post.save()
 ```
 
@@ -225,6 +226,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -232,7 +234,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/novo /, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
+Vamos ver se funciona. Vá para o página http://127.0.0.1:8000/post/new/, adicione um `title` e o `text`, salve... e voilà! O novo blog post é adicionado e nós somos redirecionados para a página de `post_detail`!
 
 Você provavelmente notou que nós não estamos definindo a data de publicação em tudo. Vamos introduzir um *botão de publicação* em **Django Girls Tutorial: Extensões**.
 
@@ -280,7 +282,7 @@ Agora o modelo estará parecido com:
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     </div>
     <h1>{{ post.title }}</h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 {% endblock %}
 ```
 
@@ -303,6 +305,7 @@ def post_edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -338,7 +341,7 @@ Sinta-se livre para mudar o título ou o texto e salvar as mudanças!
 
 Parabéns! Sua aplicação está ficando cada vez mais completa!
 
-Se você precisar de mais informações sobre formulários do Django você deve ler a documentação: https://docs.djangoproject.com/en/1.6/topics/forms/
+Se você precisar de mais informações sobre formulários do Django você deve ler a documentação: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Mais uma coisa: hora de implantar!
 
@@ -348,7 +351,7 @@ Vamos ver se tudo isso funciona na PythonAnywhere. Tempo para outro deploy!
 
 ```bash
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push

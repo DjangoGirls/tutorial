@@ -22,7 +22,7 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
@@ -53,7 +53,7 @@ http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요.
 `blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail`이란 *view* 로 보내, 전체 블로그 글이 보일 수 있게 만들어 봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')` 코드를 `blog/urls.py` 파일에 추가하세요. 그러면 아래처럼 보일 거에요. :
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -85,8 +85,9 @@ urlpatterns = [
 
 이제, 우리는 딱 한 개 블로그만 보고 싶어요. 이를 위해 다음과 같이 쿼리셋(queryset)을 사용해야해요. :
 
+```python
     Post.objects.get(pk=pk)
-
+```
 
 하지만 이 코드에는 문제가 있어요. `primary key` (`pk`)가있는 `Post`가 없다면 보고 싶지 않은 오류가 나올 거에요!
 
@@ -102,15 +103,17 @@ urlpatterns = [
 
 `blog/views.py` 파일을 열어서 아래 코드를 추가하세요. :
 
+```python
     from django.shortcuts import render, get_object_or_404
-
+```
 
 `from`행 근처로 가서, 파일 맨 끝에 *view* 를 추가하세요. :
 
+```python
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
-
+```
 
 브라우저를 새로고침 해보세요. : http://127.0.0.1:8000/
 
@@ -139,7 +142,7 @@ urlpatterns = [
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
@@ -160,7 +163,7 @@ PythonAnywhere에서도 웹사이트가 잘 작동하는지 봐야겠죠? 다시
 
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push

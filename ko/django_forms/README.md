@@ -1,4 +1,4 @@
-# Django 양식
+# Django 폼
 
 이제 한 가지만 더 하면 웹사이트가 완성되어요. 바로 블로그 글을 추가하거나 수정하는 멋진 기능을 추가하는 것이죠. 장고의 `관리자` 기능도 충분히 멋있기는 하지만, 좀 더 입맛에 맞게 바꾸고 예쁘게 꾸미기에는 좀 한계가 있습니다. `폼(양식, forms)`으로 강력한 인터페이스를 만들 수 있어요. - 우리가 상상할 수 있는 거의 모든 것을 할 수 있거든요!
 
@@ -8,13 +8,13 @@
 
 장고의 모든 중요한 부분과 마찬가지로, 폼도 폼만의 파일을 만들어요: `forms.py`.
 
-우리는 이 이름으로 `blog` 디렉토리 안에 파일을 만들거에요.
+우리는 이 이름으로 `blog` 디렉토리 안에 파일을 만들 거에요.
 
     blog
       └── forms.py
 
 
-좋아요, 이제 이 파일을 열고 아래 코드를 작성해봐요:
+좋아요, 이제 이 파일을 열고 아래 코드를 작성해봐요. :
 
 ```python
 from django import forms
@@ -92,7 +92,7 @@ class PostForm(forms.ModelForm):
 전체 코드는 아래와 같을 거에요.
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -283,7 +283,7 @@ def post_new(request):
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
@@ -376,7 +376,7 @@ form = PostForm(instance=post)
 
 ```
 $ git status
-$ git add -A .
+$ git add --all .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push

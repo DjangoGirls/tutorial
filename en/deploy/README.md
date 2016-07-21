@@ -4,21 +4,21 @@
 
 Until now, your website was only available on your computer.  Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app :).
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](http://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
 These three places will be important to you.  Your local computer will be the place where you do development and testing.  When you're happy with the changes, you will place a copy of your program on GitHub.  Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful. 
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
 ## Installing Git
 
 > **Note** If you already did the Installation steps, no need to do this again - you can skip to the next section and start creating your Git repository.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Starting our Git repository
 
@@ -72,8 +72,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 And finally we save our changes. Go to your console and run these commands:
+
 ```:command-line
-$ git add -A .
+$ git add --all .
 $ git commit -m "My Django Girls app, first commit"
  [...]
  13 files changed, 200 insertions(+)
@@ -85,7 +86,7 @@ $ git commit -m "My Django Girls app, first commit"
 
 ## Pushing our code to GitHub
 
-Go to [GitHub.com](http://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
 
 Then, create a new repository, giving it the name "my-first-blog". Leave the "initialise with a README" tickbox un-checked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
@@ -128,7 +129,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 > **Note** You might have already created a PythonAnywhere account earlier during the install steps - if so, no need to do it again.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 
 ## Pulling our code down on PythonAnywhere
@@ -173,58 +174,23 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 ```:command-line
 $ cd my-first-blog
 
-$ virtualenv --python=python3.4 myvenv
-Running virtualenv with interpreter /usr/bin/python3.4
+$ virtualenv --python=python3.5 myvenv
+Running virtualenv with interpreter /usr/bin/python3.5
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(mvenv) $  pip install django whitenoise
+(myvenv) $  pip install django~=1.9.0
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.9
 ```
 
 
 > **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than 5 minutes, something is wrong.  Ask your coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
-
-
-### Collecting static files.
-
-Were you wondering what the "whitenoise" thing was?  It's a tool for serving so-called "static files". Static files are the files that don't regularly change or don't run programming code, such as HTML or CSS files. They work differently on servers compared to on our own computer and we need a tool like "whitenoise" to serve them.
-
-We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
-
-<<<<<<< HEAD
-For now we just need to run an extra command called `collectstatic`, on the server. It tells Django to gather up all the static files it needs on the server. At the moment these are mostly files that make the admin site look pretty.
-
-```:command-line
-(mvenv) $ python manage.py collectstatic
-/home/edith/my-first-blog/static
-```
-
-This will overwrite existing files!
-Are you sure you want to do this?
-
-```:command-line
-Type 'yes' to continue, or 'no' to cancel: yes
-```
-
-
-Type "yes", and away it goes!  Don't you love making computers print out pages and pages of impenetrable text?  I always make little noises to accompany it. Brp, brp brp...
-
-```:command-line
-Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-[...]
-Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-62 static files copied to '/home/edith/my-first-blog/static'.
-```
-
 
 ### Creating the database on PythonAnywhere
 
@@ -242,11 +208,11 @@ Operations to perform:
 
 ## Publishing our blog as a web app
 
-Now our code is on PythonAnywhere, our virtualenv is ready, the static files are collected, and the database is initialised. We're ready to publish it as a web app!
+Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialised. We're ready to publish it as a web app!
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and go click on the **Web** tab. Finally, hit **Add a new web app**.
 
-After confirming your domain name, choose **manual configuration** (NB *not* the "Django" option) in the dialog. Next choose **Python 3.4**, and click Next to finish the wizard.
+After confirming your domain name, choose **manual configuration** (NB *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
 
 > **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup ;-)
 
@@ -258,16 +224,16 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 <img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
-In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-username>/my-first-blog/myvenv/`. Click the blue box with the check mark to save the path before moving on.
+In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter:  `/home/<your-PythonAnywhere-username>/my-first-blog/myvenv/`. Click the blue box with the check mark to save the path before moving on.
 
-> **Note** Substitute your own username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+> **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
 
 ### Configuring the WSGI file
 
 Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognise our Django blog is by editing a WSGI configuration file.
 
-Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+Click on the "WSGI configuration file" link (in the "Code" section near the top of the page -- it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
 Delete all the contents and replace them with something like this:
 
@@ -275,21 +241,23 @@ Delete all the contents and replace them with something like this:
 import os
 import sys
 
-path = '/home/<your-username>/my-first-blog'  # use your own username here
+path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
 if path not in sys.path:
     sys.path.append(path)
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
 ```
 
+> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`
+> **Note** In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
-> **Note** Don't forget to substitute in your own username where it says `<your-username>`
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is. It also sets up the "whitenoise" static files tool.
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
 Hit **Save** and then go back to the **Web** tab.
 
@@ -300,13 +268,13 @@ We're all done! Hit the big green **Reload** button and you'll be able to go vie
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, running collectstatic, migrating the database.
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
 - Making a mistake in the virtualenv path on the Web tab -- there will usually be a little red error message on there, if there is a problem.
 
 - Making a mistake in the WSGI configuration file -- did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.4.
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.5.
 
 - There are some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
@@ -317,7 +285,7 @@ And remember, your coach is here to help!
 
 The default page for your site should say "Welcome to Django", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in Web development (make changes locally, push those changes to GitHub, pull your changes down to your live Web server). This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
-
-

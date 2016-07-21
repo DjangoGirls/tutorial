@@ -30,7 +30,7 @@ And now create a `post_list.html` file (just leave it blank for now) inside the 
 
 See how your website looks now: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExists`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
@@ -97,10 +97,11 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<h1>A heading</h1>` - for your most important heading
 - `<h2>A sub-heading</h2>` for a heading at the next level
 - `<h3>A sub-sub-heading</h3>` ... and so on, up to `<h6>`
+- `<p>A paragraph of text</p>`
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
 - `<br />` goes to another line (you can't put anything inside br)
-- `<a href="http://djangogirls.org">link</a>` creates a link
+- `<a href="https://djangogirls.org">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
 
@@ -159,10 +160,10 @@ $ git status
 Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 ```:command-line
-$ git add -A .
+$ git add --all .
 ```
 
-> __Note__ `-A` (short for "all") means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> __Note__ `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
@@ -191,10 +192,7 @@ $ git push
 
 ```:command-line
 $ cd ~/my-first-blog
-$ source myvenv/bin/activate
-(myvenv)$ git pull
-[...]
-(myvenv)$ python manage.py collectstatic
+$ git pull
 [...]
 ```
 

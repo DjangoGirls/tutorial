@@ -1,10 +1,10 @@
-# Django urls
+# Django URLs
 
 We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django urls.
 
 ## What is a URL?
 
-A URL is simply a web address. You can see a URL every time you visit a website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.com` is also a URL):
+A URL is simply a web address. You can see a URL every time you visit a website - it is visible in your browser's address bar (yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL):
 
 ![Url](images/url.png)
 
@@ -14,27 +14,28 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
+
 ```python:mysite/urls.py
-from django.conf.urls import include, url
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'mysite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
 As you can see, Django already put something here for us.
 
-Lines that start with `#` are comments - it means that those lines won't be run by Python. Pretty handy, right?
+Lines between triple quotes (`'''` or `"""`) are called docstrings - you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
 The admin URL, which you visited in previous chapter is already here:
 
 ```python:mysite/urls.py
-url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ```
 
 It means that for every URL that starts with `admin/` Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file -- it's more readable and cleaner.
@@ -71,7 +72,7 @@ Time to create our first URL! We want 'http://127.0.0.1:8000/' to be a homepage 
 
 We also want to keep the `mysite/urls.py` file clean, so we will import urls from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, delete the commented lines (lines starting with `#`) and add a line that will import `blog.urls` into the main url (`''`).
+Go ahead, add a line that will import `blog.urls` into the main url (`''`). Note that we are using the `include` function here so you will need to add that to the import on the first line of the file.
 
 Your `mysite/urls.py` file should now look like this:
 
@@ -80,7 +81,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
 ]
 ```
@@ -99,7 +100,7 @@ from django.conf.urls import url
 from . import views
 ```
 
-Here we're just importing Django's methods and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
+Here we're importing Django's function `url` and all of our `views` from `blog` application (we don't have any yet, but we will get to that in a minute!)
 
 After that, we can add our first URL pattern:
 
@@ -113,12 +114,12 @@ As you can see, we're now assigning a `view` called `post_list` to `^$` URL. Thi
 
 The last part `name='post_list'` is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-Everything all right? Open http://127.0.0.1:8000/ in your browser to see the result.
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
 ![Error](images/error1.png)
 
-There is no "It works" anymore, huh? Don't worry, it's just an error page, nothing to be scared of! They're actually pretty useful:
+Your console is showing an error but don't worry&mdash;they're actually pretty useful:
 
-You can read that there is __no attribute 'post_list'__. Is *post_list* reminding you of anything? This is what we called our view! This means that everything is in place but we just haven't created our *view* yet. No worries, we will get there.
+It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries, we will get there.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/
