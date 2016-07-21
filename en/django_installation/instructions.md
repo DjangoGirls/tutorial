@@ -18,23 +18,23 @@ All you need to do is find a directory in which you want to create the `virtuale
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
-```
-    $ mkdir djangogirls
-    $ cd djangogirls
+```:command-line
+$ mkdir djangogirls
+$ cd djangogirls
 ```
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-```
-    $ python3 -m venv myvenv
+```:command-line
+$ python3 -m venv myvenv
 ```
 
 ### Windows
 
 To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python35\python -m venv myvenv`. It will look like this:
 
-```
-    C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
+```:command-line
+C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 ```
 
 where `C:\Python35\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
@@ -44,8 +44,8 @@ where `C:\Python35\python` is the directory in which you previously installed Py
 Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
 It will look like this:
 
-```
-    $ python3 -m venv myvenv
+```:command-line
+$ python3 -m venv myvenv
 ```
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
@@ -86,8 +86,8 @@ The command above will create a directory called `myvenv` (or whatever name you 
 
 Start your virtual environment by running:
 
-```
-    C:\Users\Name\djangogirls> myvenv\Scripts\activate
+```:command-line
+C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
 > __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell says `execution of scripts is disabled on this system`. In those cases open another Windows PowerShell and Run as Administrator try doing this before continue:
@@ -101,8 +101,8 @@ Start your virtual environment by running:
 
 Start your virtual environment by running:
 
-```
-    $ source myvenv/bin/activate
+```:command-line
+$ source myvenv/bin/activate
 ```
 
 Remember to replace `myvenv` with your chosen `virtualenv` name!
@@ -126,12 +126,12 @@ In the console, run `pip install --upgrade pip`.
 
 Then run `pip install django~=1.9.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
 
-```
-    (myvenv) ~$ pip install django~=1.9.0
-    Downloading/unpacking django==1.9
-    Installing collected packages: django
-    Successfully installed django
-    Cleaning up...
+```:command-line
+(myvenv) ~$ pip install django~=1.9.0
+Downloading/unpacking django==1.9
+Installing collected packages: django
+Successfully installed django
+Cleaning up...
 ```
 
 on Windows

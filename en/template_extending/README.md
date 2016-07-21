@@ -130,7 +130,7 @@ Only one thing left. We need to connect these two templates together.  This is w
         </div>
     {% endfor %}
 {% endblock %}
-
+```
 
 That's it! Check if your website is still working properly :)
 

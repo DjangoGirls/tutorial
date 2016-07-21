@@ -26,7 +26,8 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 > **Note** Check your current working directory with a `pwd` (OSX/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ git init
 Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
@@ -37,7 +38,8 @@ Initializing the git repository is something we only need to do once per project
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
-```:.gitignore
+{% filename %}.gitignore{% endfilename %}
+```
 *.pyc
 __pycache__
 myvenv
@@ -54,7 +56,8 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help stop any surprises from happening, such as wrong files being added or commited. The `git status` command returns information about any untracked/modifed/staged files, branch status, and much more. The output should be similar to:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ git status
 On branch master
 
@@ -73,7 +76,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 And finally we save our changes. Go to your console and run these commands:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ git add --all .
 $ git commit -m "My Django Girls app, first commit"
  [...]
@@ -102,14 +106,16 @@ Now we need to hook up the Git repository on your computer to the one up on GitH
 
 Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 $ git push -u origin master
 ```
 
 Enter your GitHub username and password and you should see something like this:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 Username for 'https://github.com': hjwp
 Password for 'https://hjwp@github.com':
 Counting objects: 6, done.
@@ -140,13 +146,15 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ tree my-first-blog
 my-first-blog/
 ├── blog
@@ -171,7 +179,8 @@ my-first-blog/
 
 Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ cd my-first-blog
 
 $ virtualenv --python=python3.5 myvenv
@@ -198,7 +207,8 @@ Here's another thing that's different between your own computer and the server: 
 
 We can initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 (mvenv) $ python manage.py migrate
 Operations to perform:
 [...]
@@ -237,7 +247,8 @@ Click on the "WSGI configuration file" link (in the "Code" section near the top 
 
 Delete all the contents and replace them with something like this:
 
-```python:&lt;your-username&gt;_pythonanywhere_com_wsgi.py
+{% filename %}<your-username>_pythonanywhere_com_wsgi.py{% endfilename %}
+```python
 import os
 import sys
 

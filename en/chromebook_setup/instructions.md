@@ -21,7 +21,9 @@ somewhere else that Cloud 9 sets up for you.
 Now you should see an interface with a sidebar, a big main window with some
 text, and a small window at the bottom that looks something like:
 
-    yourusername:~/workspace $
+```
+yourusername:~/workspace $
+```
 
 This bottom area is your _terminal_, where you will give the computer Cloud 9
 has prepared for you instructions. You can resize that window to make it a bit
@@ -36,18 +38,22 @@ things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
-    sudo apt install python3.5-venv
+{% filename %}Cloud 9{% endfilename %}
+```
+sudo apt install python3.5-venv
+```
 
 If this still doesn't work, ask your coach for some help.
 
 Next, run:
 
+{% filename %}Cloud 9{% endfilename %}
 ```
-    mkdir djangogirls
-    cd djangogirls
-    python3.5 -mvenv myvenv
-    source myvenv/bin/activate
-    pip install django~=1.9.0
+mkdir djangogirls
+cd djangogirls
+python3.5 -mvenv myvenv
+source myvenv/bin/activate
+pip install django~=1.9.0
 ```
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).

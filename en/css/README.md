@@ -18,7 +18,8 @@ It was written by programmers who worked for Twitter. Now it's developed by volu
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
@@ -42,7 +43,8 @@ Django already knows where to find the static files for the built-in "admin" app
 
 We do that by creating a folder called `static` inside the blog app:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 djangogirls
 ├── blog
 │   ├── migrations
@@ -58,7 +60,8 @@ Django will automatically find any folders called "static" inside any of your ap
 
 Let's create a CSS file now, to add your own style to your web-page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 djangogirls
 └─── blog
      └─── static
@@ -75,7 +78,8 @@ To understand colors, computers use special codes. These codes start with `#` fo
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
-```css:blog/static/css/blog.css
+{% filename %}blog/static/css/blog.css{% endfilename %}
+```css
 h1 a {
     color: #FCA205;
 }
@@ -94,14 +98,16 @@ Read about [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_sele
 
 Then, we need to also tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% load staticfiles %}
 ```
 
 We're just loading static files here :).
 Between the `<head>` and `</head>`, after the links to the Bootstrap CSS files add this line:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files.
@@ -109,7 +115,8 @@ We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% load staticfiles %}
 <html>
     <head>
@@ -140,7 +147,8 @@ OK, save the file and refresh the site!
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
-```css:blog/static/css/blog.css
+{% filename %}blog/static/css/blog.css{% endfilename %}
+```css
 body {
     padding-left: 15px;
 }
@@ -152,7 +160,8 @@ Add this to your CSS, save the file and see how it works!
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
@@ -160,7 +169,8 @@ As before, check the order and place before the link to `blog/static/css/blog.cs
 
 Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
-```css:blog/static/css/blog.css
+{% filename %}blog/static/css/blog.css{% endfilename %}
+```css
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
@@ -176,7 +186,8 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
@@ -184,7 +195,8 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 
 And now add a class `post` to your `div` containing a blog post.
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
@@ -194,7 +206,8 @@ And now add a class `post` to your `div` containing a blog post.
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web to help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
-```css:blog/static/css/blog.css
+{% filename %}blog/static/css/blog.css{% endfilename %}
+```css
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
@@ -245,7 +258,8 @@ h1, h2, h3, h4 {
 
 Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
@@ -257,7 +271,8 @@ Then surround the HTML code which displays the posts with declarations of classe
 
 in the `blog/templates/blog/post_list.html` with this:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 <div class="content container">
     <div class="row">
         <div class="col-md-8">

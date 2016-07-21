@@ -12,24 +12,28 @@ If it isn't installed already, git should be available via your package manager,
 
 #### Debian or Ubuntu
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```bash
 $ sudo apt-get install git
 ```
 
 #### Fedora (up to 21)
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```bash
 $ sudo yum install git
 ```
 
 #### Fedora (22+)
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```bash
 $ sudo dnf install git
 ```
 
 #### openSUSE
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```bash
 $ sudo zypper install git
 ```
