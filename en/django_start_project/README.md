@@ -18,11 +18,17 @@ The names of some files and directories are very important for Django. You shoul
 
 In your MacOS or Linux console you should run the following command; **don't forget to add the period (or dot) `.` at the end**:
 
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ django-admin startproject mysite .
+```
 
 On Windows; **don't forget to add the period (or dot) `.` at the end**:
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+```
 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference)
 
@@ -32,13 +38,15 @@ of the prompt that will be inviting your input on your command line.
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+```
+djangogirls
+├───manage.py
+└───mysite
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+```
 
 
 `manage.py` is a script that helps with management of the site. With it we will be able to start a web server on our computer without installing anything else, amongst other things.
@@ -58,6 +66,7 @@ It would be nice to have the correct time on our website. Go to the [wikipedia t
 
 In settings.py, find the line that contains `TIME_ZONE` and modify it to choose your own timezone:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
 TIME_ZONE = 'Europe/Berlin'
 ```
@@ -67,6 +76,7 @@ Modifying "Europe/Berlin" as appropriate
 
 We'll also need to add a path for static files (we'll find out all about static files and CSS later in the tutorial). Go down to  the *end* of the file, and just underneath  the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -81,6 +91,7 @@ There's a lot of different database software that can store data for your site. 
 
 This is already set up in this part of your `mysite/settings.py` file:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
 DATABASES = {
     'default': {
@@ -92,24 +103,26 @@ DATABASES = {
 
 To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
-    (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
-    Running migrations:
-      Rendering model states... DONE
-      Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK
-      Applying contenttypes.0002_remove_content_type_name... OK
-      Applying auth.0002_alter_permission_name_max_length... OK
-      Applying auth.0003_alter_user_email_max_length... OK
-      Applying auth.0004_alter_user_username_opts... OK
-      Applying auth.0005_alter_user_last_login_null... OK
-      Applying auth.0006_require_contenttypes_0002... OK
-      Applying auth.0007_alter_validators_add_error_messages... OK
-      Applying sessions.0001_initial... OK
-
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, admin, contenttypes, sessions
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying sessions.0001_initial... OK
+```
 
 And we're done! Time to start the web server and see if our website is working!
 
@@ -117,25 +130,39 @@ And we're done! Time to start the web server and see if our website is working!
 
 You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py runserver
+```
 
 If you are on a Chromebook, use this command instead:
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-
+{% filename %}Cloud 9{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+```
 
 
 Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter the address:
 
-    http://localhost:8000/
+{% filename %}browser{% endfilename %}
+```
+http://localhost:8000/
+```
 
 If you're using a Chromebook, you'll always visit your test server by accessing:
 
-    https://django-girls-<your cloud9 username>.c9users.io
+{% filename %}browser{% endfilename %}
+```
+https://django-girls-<your cloud9 username>.c9users.io
+```
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 

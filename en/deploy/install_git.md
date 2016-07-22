@@ -10,22 +10,30 @@ Download Git from [git-scm.com](https://git-scm.com/) and just follow the instru
 
 If it isn't installed already, git should be available via your package manager, so try:
 
-
 #### Debian or Ubuntu
 
-    $ sudo apt-get install git
-
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo apt-get install git
+```
 
 #### Fedora (up to 21)
 
-    $ sudo yum install git
-
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo yum install git
+```
 
 #### Fedora (22+)
 
-    $ sudo dnf install git
-
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo dnf install git
+```
 
 #### openSUSE
 
-    $ sudo zypper install git
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo zypper install git
+```

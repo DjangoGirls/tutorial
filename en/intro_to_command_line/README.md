@@ -36,11 +36,17 @@ You now should see a white or black window that is waiting for your commands.
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
-    $
+{% filename %}command-line{% endfilename %}
+```
+$
+```
 
 On Windows, it's a `>` sign, like this:
 
-    >
+{% filename %}command-line{% endfilename %}
+```
+>
+```
 
 Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
@@ -54,16 +60,25 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 Let's start with something simple. Type this command:
 
-    $ whoami
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+```
 
 or
 
-    > whoami
+{% filename %}command-line{% endfilename %}
+```
+> whoami
+```
 
 And then hit `enter`. This is our result:
 
-    $ whoami
-    olasitarska
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+olasitarska
+```
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
@@ -77,13 +92,19 @@ Each operating system has a slightly different set of commands for the command l
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-    $ pwd
-    /Users/olasitarska
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/olasitarska
+```
 
 If you're on Windows:
 
-    > cd
-    C:\Users\olasitarska
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\olasitarska
+```
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
@@ -95,22 +116,28 @@ You'll probably see something similar on your machine. Once you open the command
 
 So what's in it? It'd be cool to find out. Let's see:
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
+{% filename %}command-line{% endfilename %}
+```
+$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+```
 
  Windows:
 
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
+{% filename %}command-line{% endfilename %}
+```
+> dir
+ Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM <DIR>      Applications
+05/08/2014 07:28 PM <DIR>      Desktop
+05/08/2014 07:28 PM <DIR>      Downloads
+05/08/2014 07:28 PM <DIR>      Music
+...
+```
 
 ---
 
@@ -118,21 +145,33 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-    $ cd Desktop
+{% filename %}command-line{% endfilename %}
+```
+$ cd Desktop
+```
 
 Windows:
 
-    > cd Desktop
+{% filename %}command-line{% endfilename %}
+```
+> cd Desktop
+```
 
 Check if it's really changed:
 
-    $ pwd
-    /Users/olasitarska/Desktop
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Here it is!
 
@@ -144,11 +183,17 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
-    $ mkdir practice
+{% filename %}command-line{% endfilename %}
+```
+$ mkdir djangogirls
+```
 
 Windows:
 
-    > mkdir practice
+{% filename %}command-line{% endfilename %}
+```
+> mkdir djangogirls
+```
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
@@ -162,17 +207,23 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 #### Solution:
 
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
+{% filename %}command-line{% endfilename %}
+```
+$ cd djangogirls
+$ mkdir test
+$ ls
+test
+```
 
 Windows:
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+{% filename %}command-line{% endfilename %}
+```
+> cd djangogirls
+> mkdir test
+> dir
+05/08/2014 07:28 PM <DIR>      test
+```
 
 Congrats! :)
 
@@ -184,52 +235,82 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
-    $ cd ..
+{% filename %}command-line{% endfilename %}
+```
+$ cd ..
+```
 
 Windows:
 
-    > cd ..
+{% filename %}command-line{% endfilename %}
+```
+> cd ..
+```
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
 Check where you are:
 
-    $ pwd
-    /Users/olasitarska/Desktop
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
-    $ rm -r practice
+{% filename %}command-line{% endfilename %}
+```
+$ rm -r djangogirls
+```
 
 Windows:
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+{% filename %}command-line{% endfilename %}
+```
+> rmdir /S djangogirls
+djangogirls, Are you sure <Y/N>? Y
+```
 
 Done! To be sure it's actually deleted, let's check it:
 
-    $ ls
+{% filename %}command-line{% endfilename %}
+```
+$ ls
+```
 
 Windows:
 
-    > dir
+{% filename %}command-line{% endfilename %}
+```
+> dir
+```
 
 ### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-    $ exit
+{% filename %}command-line{% endfilename %}
+```
+$ exit
+```
 
 Windows:
 
-    > exit
+{% filename %}command-line{% endfilename %}
+```
+> exit
+```
 
 Cool, huh? :)
 

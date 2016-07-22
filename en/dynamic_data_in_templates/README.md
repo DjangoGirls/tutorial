@@ -8,6 +8,7 @@ OK, so how will we achieve it?
 
 We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 
@@ -17,6 +18,7 @@ def post_list(request):
 
 Remember when we talked about including code written in different files? Now it is the moment when we have to include the model we have written in `models.py`. We will add this line `from .models import Post` like this:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 from .models import Post
@@ -32,10 +34,14 @@ You should already be familiar with how QuerySets work. We talked about it in [D
 
 So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
-    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+{% filename %}blog/views.py{% endfilename %}
+```python
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+```
 
 Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 from django.utils import timezone
@@ -56,6 +62,7 @@ In the `render` function we already have parameter with `request` (so everything
 
 So finally our `blog/views.py` file should look like this:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 from django.utils import timezone

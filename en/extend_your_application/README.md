@@ -11,6 +11,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 ## Create a template link to a post's detail
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -30,6 +31,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
@@ -50,6 +52,7 @@ We want our first post's detail to be displayed at this **URL**: http://127.0.0.
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 from django.conf.urls import url
 from . import views
@@ -83,7 +86,10 @@ This time our *view* is given an extra parameter `pk`. Our *view* needs to catch
 
 Now, we want to get one and only one blog post. To do this we can use querysets like this:
 
-    Post.objects.get(pk=pk)
+{% filename %}blog/views.py{% endfilename %}
+```python
+Post.objects.get(pk=pk)
+```
 
 But this code has a problem. If there is no `Post` with given `primary key` (`pk`) we will have a super ugly error!
 
@@ -99,12 +105,14 @@ Ok, time to add a *view* to our `views.py` file!
 
 We should open `blog/views.py` and add the following code:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render, get_object_or_404
 ```
 
 Near other `from` lines. And at the end of the file we will add our *view*:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -127,6 +135,7 @@ We will create a file in `blog/templates/blog` called `post_detail.html`.
 
 It will look like this:
 
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -157,6 +166,7 @@ Yay! It works!
 
 It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
+{% filename %}command-line{% endfilename %}
 ```
 $ git status
 $ git add --all .
@@ -167,6 +177,7 @@ $ git push
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
+{% filename %}command-line{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

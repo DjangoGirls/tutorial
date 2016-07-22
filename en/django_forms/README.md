@@ -10,11 +10,14 @@ Like every important part of Django, forms have their own file: `forms.py`.
 
 We need to create a file with this name in the `blog` directory.
 
-    blog
-       └── forms.py
+```
+blog
+   └── forms.py
+```
 
 Ok, let's open it and type the following code:
 
+{% filename %}blog/forms.py{% endfilename %}
 ```python
 from django import forms
 
@@ -43,6 +46,7 @@ So once again we will create: a link to the page, a URL, a view and a template.
 
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
@@ -51,6 +55,7 @@ Note that we want to call our new view `post_new`. The class `"glyphicon glyphic
 
 After adding the line, your html file should now look like this:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% load staticfiles %}
 <html>
@@ -84,12 +89,14 @@ After saving and refreshing the page http://127.0.0.1:8000 you will obviously se
 
 We open `blog/urls.py` and add a line:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
-    url(r'^post/new/$', views.post_new, name='post_new'),
+url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
 And the final code will look like this:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 from django.conf.urls import url
 from . import views
@@ -107,12 +114,14 @@ After refreshing the site, we see an `AttributeError`, since we don't have `post
 
 Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from .forms import PostForm
 ```
 
 and our *view*:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_new(request):
     form = PostForm()
@@ -134,6 +143,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 Ok, so let's see how the HTML in `post_edit.html` should look:
 
+{% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -160,6 +170,7 @@ The answer is: nothing. We need to do a little bit more work in our *view*.
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_new(request):
     form = PostForm()
@@ -170,6 +181,7 @@ When we submit the form, we are brought back to the same view, but this time we 
 
 So in our *view* we have two separate situations to handle. First: when we access the page for the first time and we want a blank form. Second: when we go back to the *view* with all form's data we just typed. So we need to add a condition (we will use `if` for that).
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 if request.method == "POST":
     [...]
@@ -179,6 +191,7 @@ else:
 
 It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that with:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 form = PostForm(request.POST)
 ```
@@ -187,6 +200,7 @@ Easy! Next thing is to check if the form is correct (all required fields are set
 
 We check if the form is valid and if so, we can save it!
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 if form.is_valid():
     post = form.save(commit=False)
@@ -200,12 +214,14 @@ Basically, we have two things here: we save the form with `form.save` and we add
 
 Finally, it would be awesome if we can immediately go to `post_detail` page for newly created blog post, right? To do that we need one more import:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import redirect
 ```
 
 Add it at the very beginning of your file. And now we can say: go to `post_detail` page for a newly created post.
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 return redirect('post_detail', pk=post.pk)
 ```
@@ -214,6 +230,7 @@ return redirect('post_detail', pk=post.pk)
 
 Ok, we talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_new(request):
     if request.method == "POST":
@@ -257,12 +274,14 @@ Now we know how to add a new form. But what if we want to edit an existing one? 
 
 Open `blog/templates/blog/post_detail.html` and add this line:
 
-```python
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
 so that the template will look like:
 
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -282,6 +301,7 @@ so that the template will look like:
 
 In `blog/urls.py` we add this line:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
 ```
@@ -290,6 +310,7 @@ We will reuse the template `blog/templates/blog/post_edit.html`, so the last mis
 
 Let's open a `blog/views.py` and add at the very end of the file:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -308,12 +329,14 @@ def post_edit(request, pk):
 
 This looks almost exactly the same as our `post_new` view, right? But not entirely. First thing: we pass an extra `pk` parameter from urls. Next: we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form we pass this post as an `instance` both when we save the form:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 form = PostForm(request.POST, instance=post)
 ```
 
 and when we just opened a form with this post to edit:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 form = PostForm(instance=post)
 ```
@@ -338,12 +361,14 @@ Being able to create new posts just by clicking a link is awesome! But, right no
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 We're going to add another `{% if %}` tag to this which will make the link only show up for users that are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -356,15 +381,17 @@ Remember the edit icon we just added to our detail page? We also want to add the
 
 Open `blog/templates/blog/post_detail.html` and find:
 
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
 Change it to:
 
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% if user.is_authenticated %}
-	<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
 ```
 
@@ -376,6 +403,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to Github
 
+{% filename %}command-line{% endfilename %}
 ```
 $ git status
 $ git add --all .
@@ -386,6 +414,7 @@ $ git push
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
+{% filename %}command-line{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

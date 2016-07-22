@@ -14,6 +14,8 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
+
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
 """mysite URL Configuration
 
@@ -33,6 +35,7 @@ Lines between triple quotes (`'''` or `"""`) are called docstrings - you can wri
 
 The admin URL, which you visited in previous chapter is already here:
 
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
     url(r'^admin/', admin.site.urls),
 ```
@@ -75,6 +78,7 @@ Go ahead, add a line that will import `blog.urls` into the main url (`''`). Note
 
 Your `mysite/urls.py` file should now look like this:
 
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
 from django.conf.urls import include, url
 from django.contrib import admin
@@ -94,6 +98,7 @@ When writing regular expressions in Python it is always done with `r` in front o
 
 Create a new `blog/urls.py` empty file. All right! Add these two first lines:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 from django.conf.urls import url
 from . import views
@@ -103,6 +108,7 @@ Here we're importing Django's function `url` and all of our `views` from `blog` 
 
 After that, we can add our first URL pattern:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
