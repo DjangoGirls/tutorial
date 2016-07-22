@@ -1,4 +1,4 @@
-* [🇬🇧 English](en/)
+* [🇺🇸 English](en/)
 * [🇨🇿 Czech (beta)](cs/)
 * [🇪🇸 Español (beta)](es/)
 * [🇫🇷 Français](fr/)
