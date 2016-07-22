@@ -10,4 +10,5 @@
 .book-langs-index .inner .languages li {
     font-size: 24px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 0;  /* Fix for emoji flags */
 }
