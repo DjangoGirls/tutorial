@@ -21,6 +21,7 @@ somewhere else that Cloud 9 sets up for you.
 Now you should see an interface with a sidebar, a big main window with some
 text, and a small window at the bottom that looks something like:
 
+{% filename %}Cloud 9{% endfilename %}
 ```
 yourusername:~/workspace $
 ```

@@ -36,13 +36,15 @@ You now should see a white or black window that is waiting for your commands.
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $
 ```
 
 On Windows, it's a `>` sign, like this:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 >
 ```
 
@@ -58,19 +60,22 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 Let's start with something simple. Type this command:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ whoami
 ```
 
 or
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > whoami
 ```
 
 And then hit `enter`. This is our result:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ whoami
 olasitarska
 ```
@@ -87,14 +92,16 @@ Each operating system has a slightly different set of commands for the command l
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ pwd
 /Users/olasitarska
 ```
 
 If you're on Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd
 C:\Users\olasitarska
 ```
@@ -109,7 +116,8 @@ You'll probably see something similar on your machine. Once you open the command
 
 So what's in it? It'd be cool to find out. Let's see:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ ls
 Applications
 Desktop
@@ -120,7 +128,8 @@ Music
 
  Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > dir
  Directory of C:\Users\olasitarska
 05/08/2014 07:28 PM <DIR>      Applications
@@ -136,26 +145,30 @@ Music
 
 Now, let's go to our Desktop directory:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ cd Desktop
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd Desktop
 ```
 
 Check if it's really changed:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ pwd
 /Users/olasitarska/Desktop
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd
 C:\Users\olasitarska\Desktop
 ```
@@ -170,13 +183,15 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ mkdir djangogirls
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > mkdir djangogirls
 ```
 
@@ -192,7 +207,8 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 #### Solution:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ cd djangogirls
 $ mkdir test
 $ ls
@@ -201,7 +217,8 @@ test
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd djangogirls
 > mkdir test
 > dir
@@ -218,13 +235,15 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ cd ..
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd ..
 ```
 
@@ -232,14 +251,16 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 Check where you are:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ pwd
 /Users/olasitarska/Desktop
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > cd
 C:\Users\olasitarska\Desktop
 ```
@@ -248,26 +269,30 @@ Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ rm -r djangogirls
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > rmdir /S djangogirls
 djangogirls, Are you sure <Y/N>? Y
 ```
 
 Done! To be sure it's actually deleted, let's check it:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ ls
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > dir
 ```
 
@@ -275,13 +300,15 @@ Windows:
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ exit
 ```
 
 Windows:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 > exit
 ```
 

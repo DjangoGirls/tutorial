@@ -4,7 +4,8 @@ To add, edit and delete posts we've just modeled, we will use Django admin.
 
 Let's open the `blog/admin.py` file and replace its content with this:
 
-```python:blog/admin.py
+{% filename %}blog/admin.py{% endfilename %}
+```python
 from django.contrib import admin
 from .models import Post
 
@@ -23,7 +24,8 @@ To log in, you need to create a *superuser* - a user which has control over ever
 
 When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in - that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where username and email should be your own ones):
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 (myvenv) ~/djangogirls$ python manage.py createsuperuser
 Username: admin
 Email address: admin@admin.com

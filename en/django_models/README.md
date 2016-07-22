@@ -66,13 +66,14 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
 ```
 
 You will notice that a new `blog` directory is created and it contains a number of files now. Our directories and files in our project should look like this:
 
-```:command-line
+```
 djangogirls
 ├── blog
 │   ├── __init__.py
@@ -94,7 +95,8 @@ djangogirls
 
 After creating an application we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `)`. So the final product should look like this:
 
-```python:mysite/settings.py
+{% filename %}mysite/settings.py{% endfilename %}
+```python
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -112,7 +114,8 @@ In the `blog/models.py` file we define all objects called `Models` - this is a p
 
 Let's open `blog/models.py`, remove everything from it and write code like this:
 
-```python:blog/models.py
+{% filename %}blog/models.py{% endfilename %}
+```python
 from django.db import models
 from django.utils import timezone
 
@@ -167,7 +170,8 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model (we have just created it!). Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 (myvenv) ~/djangogirls$ python manage.py makemigrations blog
 Migrations for 'blog':
   0001_initial.py:
@@ -176,7 +180,8 @@ Migrations for 'blog':
 
 Django prepared for us a migration file that we have to apply now to our database. Type `python manage.py migrate blog` and the output should be:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 (myvenv) ~/djangogirls$ python manage.py migrate blog
 Operations to perform:
   Apply all migrations: blog

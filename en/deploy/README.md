@@ -146,14 +146,14 @@ When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ tree my-first-blog
 my-first-blog/
@@ -179,7 +179,7 @@ my-first-blog/
 
 Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ cd my-first-blog
 
@@ -207,7 +207,7 @@ Here's another thing that's different between your own computer and the server: 
 
 We can initialise the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 (mvenv) $ python manage.py migrate
 Operations to perform:
@@ -247,7 +247,7 @@ Click on the "WSGI configuration file" link (in the "Code" section near the top 
 
 Delete all the contents and replace them with something like this:
 
-{% filename %}<your-username>_pythonanywhere_com_wsgi.py{% endfilename %}
+{% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
 ```python
 import os
 import sys

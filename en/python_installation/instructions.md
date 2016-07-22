@@ -19,7 +19,8 @@ In upcoming steps, you'll be using the Windows Command Line (which we'll also te
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ python3 --version
 Python 3.5.1
 ```
@@ -31,7 +32,8 @@ If you have a different 'micro version' of Python installed, e.g. 3.5.0, then yo
 
 Type this command into your console:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ sudo apt-get install python3.5
 ```
 
@@ -39,7 +41,8 @@ $ sudo apt-get install python3.5
 
 Use this command in your console:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ sudo yum install python3
 ```
 
@@ -47,7 +50,8 @@ $ sudo yum install python3
 
 Use this command in your console:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ sudo dnf install python3
 ```
 
@@ -55,8 +59,9 @@ $ sudo dnf install python3
 
 Use this command in your console:
 
-```:command-line
-    $ sudo zypper install python3
+{% filename %}command-line{% endfilename %}
+```
+$ sudo zypper install python3
 ```
 
 ### OS X
@@ -68,7 +73,8 @@ You need to go to the website https://www.python.org/downloads/release/python-35
 
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
-```:command-line
+{% filename %}command-line{% endfilename %}
+```
 $ python3 --version
 Python 3.5.1
 ```

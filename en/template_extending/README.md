@@ -10,7 +10,7 @@ A base template is the most basic template that you extend on every page of your
 
 Let's create a `base.html` file in `blog/templates/blog/`:
 
-```:command-line
+```
 blog
 └───templates
     └───blog
@@ -20,7 +20,8 @@ blog
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
-```html:blog/templates/blog/base.html
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+```html
 {% load staticfiles %}
 <html>
     <head>
@@ -56,7 +57,8 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 
 Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
-```html:blog/templates/blog/base.html
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+```html
 <body>
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
@@ -74,7 +76,8 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 {% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
 
-```html:blog/templates/blog/base.html
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+```html
 {% block content %}
 {% endblock %}
 ```
@@ -83,7 +86,8 @@ But why?  You just created a `block`!  You used the template tag `{% block %}` t
 Now save `base.html`, and open your `blog/templates/blog/post_list.html` again.
 {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done the file will look like this:{% endraw %}
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% for post in posts %}
     <div class="post">
         <div class="date">
@@ -100,7 +104,8 @@ Time to add block tags to this file!
 
 {% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock content %}`. Like this: {% endraw %}
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% block content %}
     {% for post in posts %}
         <div class="post">
@@ -116,7 +121,8 @@ Time to add block tags to this file!
 
 Only one thing left. We need to connect these two templates together.  This is what extending templates is all about!  We'll do this by adding an extends tag to the beginning of the file. Like this:
 
-```html:blog/templates/blog/post_list.html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+```html
 {% extends 'blog/base.html' %}
 
 {% block content %}
