@@ -154,7 +154,7 @@ Now all you need to do is check that your website is running. Open your browser 
 
 {% filename %}browser{% endfilename %}
 ```
-http://localhost:8000/
+http://127.0.0.1:8000/
 ```
 
 If you're using a Chromebook, you'll always visit your test server by accessing:
