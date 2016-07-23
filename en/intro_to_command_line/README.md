@@ -318,15 +318,16 @@ Cool, huh? :)
 
  Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description             | Example                                       |
-| ----------------- | ------------------------ | ----------------------- | --------------------------------------------- |
-| exit              | exit                     | close the window        | **exit**                                      |
-| cd                | cd                       | change directory        | **cd test**                                   |
-| dir               | ls                       | list directories/files  | **dir**                                       |
-| copy              | cp                       | copy file               | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file               | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory  | **mkdir testdirectory**                       |
-|del                | rm                       | delete a directory/file | **del c:\test\test.txt**                      |
+Command (Windows) | Command (Mac OS / Linux) | Description | Example
+------------- | ----- | ---------------------- | ---------------------------------------------
+exit          | exit  | close the window       | **exit**
+cd            | cd    | change directory       | **cd test**
+dir           | ls    | list directories/files | **dir**
+copy          | cp    | copy file              | **copy c:\test\test.txt c:\windows\test.txt**
+move          | mv    | move file              | **move c:\test\test.txt c:\windows\test.txt**
+mkdir         | mkdir | create a new directory | **mkdir testdirectory**
+rmdir (or del)| rm    | delete a file          | **del c:\test\test.txt**
+rmdir \S      | rm -r | delete a directory     | **rm -r testdirectory**
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
