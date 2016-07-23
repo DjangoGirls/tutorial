@@ -66,6 +66,8 @@ $ sudo zypper install python3
 
 ### OS X
 
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+
 You need to go to the website https://www.python.org/downloads/release/python-351/ and download the Python installer:
 
 * Download the *Mac OS X 64-bit/32-bit installer* file,
