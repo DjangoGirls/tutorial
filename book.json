@@ -12,7 +12,7 @@
         "github@2.0.0",
         "language-picker",
         "sidebar-ad",
-        "codeblock-filename@git+https://github.com/aniav/gitbook-plugin-codeblock-filename.git"
+        "codeblock-label"
     ],
     "pluginsConfig": {
         "ga": {
