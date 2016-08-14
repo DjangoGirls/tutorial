@@ -20,6 +20,7 @@ blog
 
 Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% load staticfiles %}
 <html>
@@ -44,7 +45,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -56,6 +57,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 
 Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <body>
     <div class="page-header">
@@ -74,6 +76,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 {% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% block content %}
 {% endblock %}
@@ -83,6 +86,7 @@ But why?  You just created a `block`!  You used the template tag `{% block %}` t
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
 {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% for post in posts %}
     <div class="post">
@@ -90,7 +94,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
             {{ post.published_date }}
         </div>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -100,6 +104,7 @@ Time to add block tags to this file!
 
 {% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock content %}`. Like this:{% endraw %}
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% block content %}
     {% for post in posts %}
@@ -108,12 +113,15 @@ Time to add block tags to this file!
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
 ```
+
 Only one thing left. We need to connect these two templates together.  This is what extending templates is all about!  We'll do this by adding an extends tag to the beginning of the file. Like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -124,7 +132,7 @@ Only one thing left. We need to connect these two templates together.  This is w
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}

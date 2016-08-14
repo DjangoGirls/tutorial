@@ -54,7 +54,7 @@ Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo c
     <div>
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -65,7 +65,7 @@ Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo c
 
  [3]: images/step3.png
 
-Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta `{{ post.title }}` oppure `{{ post.text }}`? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaks` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
+Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta `{{ post.title }}` oppure `{{ post.text }}`? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
 
 ## Un' ultima cosa
 

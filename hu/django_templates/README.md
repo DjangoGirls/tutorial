@@ -54,7 +54,7 @@ Próbáld ki a template-edben.
     <div>
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```    
@@ -65,7 +65,7 @@ Próbáld ki a template-edben.
 
  [3]: images/step3.png
 
-Észrevetted, hogy most egy kicsit más megjelölést használtunk: `{{ post.title }}`? Az adatokat a `Post` modelben meghatározott mezők szerint érjük el. Emellett `|linebreaks` kíséri a szöveget, ezáltal egy filteren keresztül új bekezdéssé alakítja az új sorokat.
+Észrevetted, hogy most egy kicsit más megjelölést használtunk: `{{ post.title }}`? Az adatokat a `Post` modelben meghatározott mezők szerint érjük el. Emellett `|linebreaksbr` kíséri a szöveget, ezáltal egy filteren keresztül új bekezdéssé alakítja az új sorokat.
 
 ## Még valami
 

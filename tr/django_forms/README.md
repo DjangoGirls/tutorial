@@ -93,7 +93,7 @@ Dokümanı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de
 Ve kodun son hali şu şekilde görünecektir:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -282,7 +282,7 @@ ki template buna benzesin:
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.baslik }}</h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```

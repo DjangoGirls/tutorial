@@ -21,7 +21,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
                     {{ post.published_date }}
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     {% endblock content %}
@@ -49,7 +49,7 @@ Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de e
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
 ``` python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -152,7 +152,7 @@ Se verá así:
                 </div>
             {% endif %}
             <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}
 ```

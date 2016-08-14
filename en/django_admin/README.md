@@ -4,6 +4,7 @@ To add, edit and delete the posts we've just modeled, we will use Django admin.
 
 Let's open the `blog/admin.py` file and replace its contents with this:
 
+{% filename %}blog/admin.py{% endfilename %}
 ```python
 from django.contrib import admin
 from .models import Post
@@ -17,14 +18,21 @@ OK, time to look at our Post model. Remember to run `python manage.py runserver`
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* – a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter. When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own):
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the <b>Your first Django project!</b> chapter, in the <b>Starting the web server</b> section.
+
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py createsuperuser
+Username: admin
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
+```
 
 Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 

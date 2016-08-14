@@ -55,7 +55,7 @@ Funguje to! Ale chceme, aby se zobrazovaly jako ty statické příspěvky, kter�
         <div>
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```  
@@ -66,7 +66,7 @@ Funguje to! Ale chceme, aby se zobrazovaly jako ty statické příspěvky, kter�
 
  [3]: images/step3.png
 
-Všimla sis, že jsme tentokrát použili lehce rozdílnou notaci (`{{ post.title }}` nebo `{{ post.text }}`)? Přistupujeme k datům v každém poli defnovaném v našem `Post` modelu. Dále `|linebreaks` posílá text příspěvku filterem, aby konvertoval zalomení řádků na paragrafy.
+Všimla sis, že jsme tentokrát použili lehce rozdílnou notaci (`{{ post.title }}` nebo `{{ post.text }}`)? Přistupujeme k datům v každém poli defnovaném v našem `Post` modelu. Dále `|linebreaksbr` posílá text příspěvku filterem, aby konvertoval zalomení řádků na paragrafy.
 
 ## Ještě jedna věc
 

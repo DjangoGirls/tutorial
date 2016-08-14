@@ -44,7 +44,7 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
                             {{ post.yayinlama_tarihi }}
                         </div>
                         <h1><a href="">{{ post.baslik }}</a></h1>
-                        <p>{{ post.yazi|linebreaks }}</p>
+                        <p>{{ post.yazi|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -90,7 +90,7 @@ Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanar
             {{ post.yayinlama_tarihi }}
         </div>
         <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -113,7 +113,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
                 {{ post.yayinlama_tarihi }}
             </div>
             <h1><a href="">{{ post.baslik }}</a></h1>
-            <p>{{ post.yazi|linebreaks }}</p>
+            <p>{{ post.yazi|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}

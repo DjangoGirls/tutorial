@@ -10,6 +10,7 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 
 OK, let's open up this file and see what's in there:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 
@@ -18,10 +19,11 @@ from django.shortcuts import render
 
 Not too much stuff here yet.
 
-Lines that start with `#` are comments – this means that those lines won't be run by Python. Pretty handy, right?
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
 The simplest *view* can look like this:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})

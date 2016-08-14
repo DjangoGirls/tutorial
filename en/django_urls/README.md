@@ -14,6 +14,8 @@ Every page on the Internet needs its own URL. This way your application knows wh
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
+
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
 """mysite URL Configuration
 
@@ -33,6 +35,7 @@ Lines between triple quotes (`'''` or `"""`) are called docstrings – you can w
 
 The admin URL, which you visited in previous chapter, is already here:
 
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
     url(r'^admin/', admin.site.urls),
 ```
@@ -45,8 +48,8 @@ Do you wonder how Django matches URLs to views? Well, this part is tricky. Djang
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-* `^` for beginning of the text
-* `$` for end of text
+* `^` for the beginning of the text
+* `$` for the end of the text
 * `\d` for a digit
 * `+` to indicate that the previous item should be repeated at least once
 * `()` to capture part of the pattern
@@ -73,6 +76,7 @@ Go ahead, add a line that will import `blog.urls`. Note that we are using the `i
 
 Your `mysite/urls.py` file should now look like this:
 
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
 from django.conf.urls import include, url
 from django.contrib import admin
@@ -92,6 +96,7 @@ Writing regular expressions in Python is always done with `r` in front of the st
 
 Create a new empty file named `blog/urls.py`. All right! Add these first two lines:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 from django.conf.urls import url
 from . import views
@@ -101,6 +106,7 @@ Here we're importing Django's function `url` and all of our `views` from the `bl
 
 After that, we can add our first URL pattern:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
@@ -115,6 +121,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/

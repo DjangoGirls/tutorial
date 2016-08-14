@@ -22,7 +22,7 @@ Začneme s přidáním odkazu do `blog/templates/blog/post_list.html` souboru. Z
                     {{ post.published_date }}
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     {% endblock content %}
@@ -54,7 +54,7 @@ Chceme, aby se detail našeho prvního příspěvku zobrazil na této **URL**: h
 Pojďme vytvořit adresu URL v souboru `blog/urls.py` odkazující Django na *view* s názvem `post_detail`, který bude zobrazovat celý příspěvek blogu. Přidej řádek `url (r'^post/(?)P< pk>[0-9]+)/$', views.post_detail, name='post_detail'),` do souboru `blog/urls.py`. Tento soubor by měl vypadat takto:
 
 ```python
-     from django.conf.urls import include, url
+     from django.conf.urls import url
      from . import views
 
     urlpatterns = [
@@ -148,7 +148,7 @@ Celý příkaz bude vypadat takto:
                 </div>
             {% endif %}
             <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}
 ```  

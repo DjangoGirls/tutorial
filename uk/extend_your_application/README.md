@@ -21,7 +21,7 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
@@ -51,7 +51,7 @@
 У файлі `blog/urls.py` вкажемо Django, де взяти відображення для запису блогу, яке називається `post_detail`. Додамо рядок `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),`у файл `blog/urls.py`. Це має виглядати якось так:
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -134,7 +134,7 @@ urlpatterns = [
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```

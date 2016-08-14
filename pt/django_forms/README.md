@@ -93,7 +93,7 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 O código final deve se parecer com isso:
 
 ``` python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -282,7 +282,7 @@ Agora o modelo estará parecido com:
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     </div>
     <h1>{{ post.title }}</h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 {% endblock %}
 ```
 

@@ -22,7 +22,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
                 {{ post.yayinlama_tarihi }}
             </div>
             <h1><a href="">{{ post.baslik }}</a></h1>
-            <p>{{ post.yazi|linebreaks }}</p>
+            <p>{{ post.yazi|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
@@ -55,7 +55,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -138,7 +138,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
             </div>
         {% endif %}
         <h1>{{ post.baslik }}</h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>{{ post.yazi|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```

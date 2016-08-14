@@ -127,7 +127,7 @@ Soubor by měl nyní vypadat takto:
                 <div>
                     <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </body>
@@ -193,7 +193,7 @@ A nyní přidej třídu, `post` do svého `div` obsahující blog post.
     <div class="post">
          <p>published: {{ post.published_date }}</p>
          <h1><a href="">{{ post.title }}</a></h1>
-         <p>{{ post.text|linebreaks }}</p>
+         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 ```    
 
@@ -256,7 +256,7 @@ Pak obklopující HTML kód, který zobrazuje příspěvek s deklaracemi tříd.
          <div class="post">
              <p>published: {{ post.published_date }}</p>
              <h1><a href="">{{ post.title }}</a></h1>
-             <p>{{ post.text|linebreaks }}</p>
+             <p>{{ post.text|linebreaksbr }}</p>
          </div>
     {% endfor %}
 ```    
@@ -273,7 +273,7 @@ v `blog/templates/blog/post_list.html` tímto:
                              {{ post.published_date }}
                          </div>
                          <h1><a href="">{{ post.title }}</a></h1>
-                         <p>{{ post.text|linebreaks }}</p>
+                         <p>{{ post.text|linebreaksbr }}</p>
                      </div>
                  {% endfor %}
              </div>
