@@ -185,14 +185,14 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ mkdir djangogirls
+$ mkdir practice
 ```
 
 Windows:
 
 {% filename %}command-line{% endfilename %}
 ```
-> mkdir djangogirls
+> mkdir practice
 ```
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
@@ -209,7 +209,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd djangogirls
+$ cd practice
 $ mkdir test
 $ ls
 test
@@ -219,7 +219,7 @@ Windows:
 
 {% filename %}command-line{% endfilename %}
 ```
-> cd djangogirls
+> cd practice
 > mkdir test
 > dir
 05/08/2014 07:28 PM <DIR>      test
@@ -271,15 +271,15 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ rm -r djangogirls
+$ rm -r practice
 ```
 
 Windows:
 
 {% filename %}command-line{% endfilename %}
 ```
-> rmdir /S djangogirls
-djangogirls, Are you sure <Y/N>? Y
+> rmdir /S practice
+practice, Are you sure <Y/N>? Y
 ```
 
 Done! To be sure it's actually deleted, let's check it:
