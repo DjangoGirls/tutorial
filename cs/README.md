@@ -5,33 +5,33 @@
 
 ## Úvod
 
-Už jsi někdy měla pocit, že svět je stále více a více o technologii a ty zůstáváš nějak pozadu? Přemýšlela jsi někdy, jak vytvořit webové stránky, ale nikdy jsi neměla dostatek motivace začít? Přemýšlela jsi někdy, že svět softwaru je pro tebe příliš složitý, abys zkusila něco naprogramovat sama?
+Už jsi někdy měla pocit, že svět stále více a více používá technologie a ty zůstáváš nějak pozadu? Přemýšlela jsi někdy, jak vytvořit webové stránky, ale nikdy jsi neměla dostatek motivace začít? Přemýšlela jsi někdy, že svět softwaru je pro tebe příliš složitý na to, abys zkusila něco naprogramovat sama?
 
 Máme pro tebe dobrou zprávu! Programování není tak těžké, jak se zdá, a zde ti chceme ukázat, jak zábavné to může být.
 
-Tento návod tě magicky nepromění v programátora. Jestli chceš být dobrý programátor, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky, tak jednoduše, jak dokážeme, aby ses necítila zastrašena technologií.
+Tento návod tě magicky nepromění v programátora. Jestli chceš být dobrá programátorka, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky tak jednoduše, jak dokážeme, aby ses necítila technologiemi zastrašena.
 
 Doufáme, že se nám podaří přiblížit ti tuto technologii tak, abys ji měla stejně ráda jako my!
 
 ## Co se naučíš během kurzu?
 
-Po dokončení kurzu budeš mít jednoduchou, fungující webovou aplikaci: vlastní blog. Ukážeme ti, jak ho zprovoznit online, tak aby ostatní mohli vidět tvoji práci!
+Po dokončení kurzu budeš mít jednoduchou, fungující webovou aplikaci: vlastní blog. Ukážeme ti, jak ho zprovoznit online tak, aby se ostatní mohli na tvoji práci podívat!
 
-Tvá aplikace (více či méně) bude vypadat takto:
+Tvá aplikace bude (více či méně) vypadat takto:
 
 ![Figure 0.1][2]
 
  [2]: images/application.png
 
-> Pokud budeš procházet kurz sama bez učitele, který ti by ti pomáhal v případě, že narazíš na nějaký problém, máme pro tebe chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem! Neboj se zde zeptat na jakoukoliv otázku!
+> Pokud budeš procházet kurz sama bez učitele, který ti by ti pomáhal v případě, že narazíš na nějaký problém, máme pro tebe chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem. Neboj se zde zeptat na jakoukoliv otázku!
 
-OK [začněme od začátku...][3]
+OK, [začněme od začátku...][3]
 
  [3]: ./how_the_internet_works/README.md
 
 ## O kurzu a přispěvatelích
 
-Tento kurz je provozován [DjangoGirls][4]. Pokud najdeš nějaké chyby, nebo chceš aktualizovat návod, prosím, [postupuj podle pokynů pro přispívající][5].
+Tento kurz je provozován organizací [DjangoGirls][4]. Pokud najdeš nějaké chyby, nebo chceš aktualizovat návod, prosím, [postupuj podle pokynů pro přispívající][5].
 
  [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
