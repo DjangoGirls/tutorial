@@ -1,21 +1,21 @@
 # Django formuláře
 
-Poslední věc, kterou chceme udělat na našich webových stránkách, je vytvořit příjemný způsob, jak přidávat a upravovat příspěvky na blogu. Django `admin` je super, ale je to dost těžko přizpůsobitelné a upravitelné do hezčí podoby. S `formuláři` budeme mít absolutní moc nad naším rozhraním - můžeme dělat téměř cokoliv co si dokážeme představit!
+Poslední věc, kterou chceme udělat na našich webových stránkách, je vytvořit pohodlný způsob, jak přidávat a upravovat příspěvky na blogu. Django `admin` je super, ale je těžké ho přizpůsobit a upravit do hezčí podoby. S `formuláři` budeme mít absolutní moc nad naším rozhraním - můžeme dělat téměř cokoliv, co si dokážeme představit!
 
 Pěkná věc na Django formulářích je, že je můžeme definovat úplně od počátku nebo vytvořit `ModelForm`, který uloží výsledek z formuláře pomocí modelu.
 
 To je přesně to, co chceme udělat: vytvoříme formulář pro náš model `Post`.
 
-Stejně jako všechny důležité části Djanga, formuláře mají své vlastní soubory: `forms.py`.
+Stejně jako všechny důležité části Djanga mají formuláře své vlastní soubory: `forms.py`.
 
-Potřebujeme vytvořit soubor s tímto názvem v našem adresáři `blog`.
+V našem adresáři potřebujeme vytvořit soubor s názvem `blog`.
 
 ```
     blog
      └── forms.py
 ```  
 
-OK, pojďme ho otevřít a zadej následující kód:
+OK, otevři ho a zadej následující kód:
 
 ```python
      from django import forms
@@ -28,21 +28,21 @@ OK, pojďme ho otevřít a zadej následující kód:
              fields = ('title', 'text',)
 ```    
 
-Musíme nejdříve importovat Django formuláře (`z django import forms`) a samozřejmě náš `Post` model (`from .models import Post`).
+Musíme nejdříve importovat Django formuláře (`from django import forms`) a samozřejmě náš `Post` model (`from .models import Post`).
 
 `PostForm`, jak asi předpokládáš, je jméno našeho formuláře. Musíme říct Djangu, že tento formulář je `ModelForm` (tak pro nás bude moci Django udělat něco magického) - zodpovědný za to bude `forms.ModelForm`.
 
-Dále zde máme `třídu Meta`, kde řekneme Djangu, který model by měl být použít k vytvoření tohoto formuláře (`model = Post`).
+Dále zde máme `třídu Meta`, kde řekneme Djangu, který model by měl být použit k vytvoření tohoto formuláře (`model = Post`).
 
-Nakonec můžeme Djangu říct co se má stát s jednotlivými poli našeho formuláře. V tomto případě chceme pouze zobrazit pole `nadpis/title` a `text` - `autor` by měl být člověk, který je aktuálně přihlášen (vy!) a `created_date` by mělo být automaticky nastaveno, když vytvoříme příspěvek (tj. v kódu).
+Nakonec můžeme Djangu říct, co se má stát s jednotlivými poli našeho formuláře. V tomto případě chceme pouze zobrazit pole `nadpis/title` a `text` - `autor` by měl být člověk, který je aktuálně přihlášen (ty!) a `created_date` by mělo být automaticky nastaveno, když vytvoříme příspěvek (tj. v kódu).
 
-A je to! Vše, co musíme udělat, je použít formulář ve *view* a zobrazit ho v šabloně.
+A je to! Vše, co teď musíme udělat, je použít formulář ve *view* a zobrazit ho v šabloně.
 
-Takže ještě jednou budeme vytvářet: odkaz na stránky, URL, pohled a šablonu.
+Takže ještě jednou: budeme vytvářet odkaz na stránky, URL, pohled a šablonu.
 
 ## Odkaz na stránku s formulářem
 
-Je tedy čas k otevření souboru `blog/templates/blog/base.html`. Přidáme odkaz do `div` s názvem `page-header`:
+Je tedy čas otevřít soubor `blog/templates/blog/base.html`. Přidáme odkaz do `div` s názvem `page-header`:
 
 ```html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -50,7 +50,7 @@ Je tedy čas k otevření souboru `blog/templates/blog/base.html`. Přidáme odk
 
 Všimni si, že chceme zavolat náš nový view `post_new`.
 
-Po přidání řádku, by měl tvůj soubor html vypadat takto:
+Po přidání řádku by měl tvůj html soubor vypadat takto:
 
 ```html
     {% load staticfiles %}
@@ -79,7 +79,7 @@ Po přidání řádku, by měl tvůj soubor html vypadat takto:
     </html>
 ```    
 
-Po uložení a obnovení stránky http://127.0.0.1:8000 patrně uvidíš známou `NoReverseMatch` chybu, dobrá?
+Po uložení a obnovení stránky http://127.0.0.1:8000 patrně uvidíš známou `NoReverseMatch` chybu.
 
 ## URL
 
@@ -89,7 +89,7 @@ Otevři `blog/urls.py` a přidej řádek:
     url(r'^post/new/$', views.post_new, name='post_new'),
 ```  
 
-A výsledný kód bude vypadat takto:
+Výsledný kód bude vypadat takto:
 
 ```python
      from django.conf.urls import url
@@ -102,7 +102,7 @@ A výsledný kód bude vypadat takto:
     ]
 ```    
 
-Po aktualizaci webu vidíme `AttributeError`, protože nemáme `post_new` view implementován. Přidejme ho právě teď.
+Po aktualizaci webu vidíme `AttributeError`, protože nemáme implementovaný `post_new` view. Přidáme ho právě teď.
 
 ## post_new view
 
@@ -135,7 +135,7 @@ Musíme vytvořit soubor `post_edit.html` v adresáři `blog/templates/blog`. Pr
 
  [1]: images/csrf2.png
 
-OK pojďme se podívat, jak by mělo vypadat HTML v `post_edit.html`:
+Pojďme se nyní podívat, jak by mělo vypadat HTML v `post_edit.html`:
 
 ```html
     {% extends 'blog/base.html' %}
@@ -155,15 +155,15 @@ OK pojďme se podívat, jak by mělo vypadat HTML v `post_edit.html`:
 
  [2]: images/new_form2.png
 
-Ale ještě cvhilku počkej! Když něco zadáš do polí `titulek` a `text` a pokusíš se formulář uložit - co se stane?
+Ale ještě chvilku počkej! Když něco zadáš do polí `titulek` a `text` a pokusíš se formulář uložit - co se stane?
 
-Nic! Jsme opět na stejné stránce a náš text je pryč... a nepřidal se žádný nový příspěvek. Tak co se stalo?
+Nic! Jsme opět na stejné stránce, náš text je pryč... a nepřidal se žádný nový příspěvek. Tak co se stalo?
 
 Odpověď je: nic. Musíme ještě trochu zapracovat na našem *view*.
 
 ## Ukládání formuláře
 
-Otevři znovu `blog/views.py`. Vše, co máme aktuálně v `post_new` je toto:
+Otevři znovu `blog/views.py`. Vše, co máme aktuálně v `post_new`, je toto:
 
 ```python
     def post_new(request):
@@ -171,9 +171,9 @@ Otevři znovu `blog/views.py`. Vše, co máme aktuálně v `post_new` je toto:
          return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Když odešleme formulář, vrátíme se zpět na ten samý view, ale tentokrát obdržíme nějaká další data v `request`, přesněji v `request.POST` (pojmenování nemá nic společného s naším "post" v blogu, vychází to z toho, že "zasíláme" data). Pamatuješ si, že v našem HTML souboru ve `<form>` jsme definovali proměnnou `method="POST"`? Všechna pole z formuláře jsou nyní k dispozici v proměnné `request.POST`. Neměla bys přejmenovávat `POST` na něco jiného (jediná další platná hodnota proměnné `method` je `GET`, ale nyní nemáme čas vysvětlovat rozdíly).
+Když odešleme formulář, vrátíme se zpět na ten samý view, ale tentokrát obdržíme nějaká další data v `request`, přesněji v `request.POST` (pojmenování nemá nic společného s naším "post" v blogu, vychází to z toho, že "zasíláme" data). Pamatuješ si, že v našem HTML souboru ve `<form>` jsme definovali proměnnou `method="POST"`? Všechna pole z formuláře jsou nyní k dispozici v proměnné `request.POST`. Neměla bys přejmenovávat `POST` na něco jiného (jediná další platná hodnota proměnné `method` je `GET`, ale teď tady nebudeme vysvětlovat rozdíly).
 
-Takže v našem *view* máme dvě samostatné situace ke zpracování. První: když načteme stránku poprvé a chceme dostat prázdný formulář. Druhou: když se vrátíme zpět do našeho *view* s vyplněnými daty formuláře. Takže musíme přidat podmínku (použijeme na to `-if`).
+Takže v našem *view* máme dvě samostatné situace ke zpracování. První: když načteme stránku poprvé a chceme dostat prázdný formulář. Druhou: když se vrátíme zpět do našeho *view* s vyplněnými daty formuláře. Takže musíme přidat podmínku (použijeme na to `if`).
 
 ```python
     if request.method == "POST":
@@ -182,13 +182,13 @@ Takže v našem *view* máme dvě samostatné situace ke zpracování. První: k
          form = PostForm()
 ```    
 
-Je to čas k vyplnění mezer `[...]`. Je-li `method` `POST` pak chceme vytvořit `PostForm` s údaji z formuláře, že? Udělejme to:
+Teď je čas k vyplnění mezer `[...]`. Je-li `method` `POST`, chceme vytvořit `PostForm` s údaji z formuláře, že? Udělejme to:
 
 ```python
     form = PostForm(request.POST)
 ```  
 
-Snadné! Další věc je zjistit, zda-li je formulář vpořádku (všechna požadovaná pole jsou vyplněna a neobsahují špatné hodnoty). Uděláme to pomocí `form.is_valid()`.
+Snadné! Další věcí je zjistit, zda-li je formulář v pořádku (všechna požadovaná pole jsou vyplněna a neobsahují špatné hodnoty). Uděláme to pomocí `form.is_valid()`.
 
 Zkontrolujeme, je-li formulář platný, a pokud ano, můžeme ho uložit!
 
@@ -200,9 +200,9 @@ Zkontrolujeme, je-li formulář platný, a pokud ano, můžeme ho uložit!
          post.save()
 ```    
 
-V podstatě, tady máme dvě věci: ukládáme formulář pomocí `form.save` a přidáváme autora (vzhledem k tomu, že v `PostForm` nebylo žádné pole `Autor` v a toto pole je požadováno!). `commit=False` znamená, že ještě nechceme `Post` uložit pomocí modelu - chceme nejdříve přidat autora. Většinu času budeš používat `form.save()`, bez `commit=False`, ale v tomto případě to potřebujeme takto udělat. `post.save()` zachová změny (přidá autora) a vytvoří nový příspěvek na blogu!
+V podstatě, tady máme dvě věci: ukládáme formulář pomocí `form.save` a přidáváme autora (vzhledem k tomu, že v `PostForm` nebylo žádné pole `Autor` a toto pole je požadováno!). `commit=False` znamená, že ještě nechceme `Post` uložit pomocí modelu - chceme nejdříve přidat autora. Většinu času budeš používat `form.save()`, bez `commit=False`, ale v tomto případě to potřebujeme takto udělat. `post.save()` zachová změny (přidá autora) a vytvoří nový příspěvek na blogu!
 
-A nakonec, by bylo úžasné, pokud bychom okamžitě přešli na stránku `post_detail` s nově vytvořeným příspěvkem, že ano? K tomu potřebujeme jeden další import:
+A nakonec by bylo úžasné, pokud bychom okamžitě přešli na stránku `post_detail` s nově vytvořeným příspěvkem, že ano? K tomu potřebujeme jeden další import:
 
 ```python
     from django.shortcuts import redirect
@@ -216,7 +216,7 @@ Přidej to na samý začátek souboru. A nyní můžeš říci: Jdi na stránku 
 
 `blog.views.post_detail` je název pohledu, na který chceme jít. Pamatuj si, že tento *view* vyžaduje proměnnou `pk`. Pro předání do view použijeme `pk=post.pk`, kde `post` je nově vytvořený příspěvek!
 
-OK mluvili jsme hodně, ale pravděpodobně chceš vidět, jak nyní celý *view* vypadá nyní, nemám pravdu?
+Už jsme si toho řekly hodně, ale pravděpodobně chceš vidět, jak nyní celý *view* vypadá nyní, nemám pravdu?
 
 ```python
     def post_new(request):
@@ -233,15 +233,13 @@ OK mluvili jsme hodně, ale pravděpodobně chceš vidět, jak nyní celý *view
         return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Pojďme se podívat, jestli to funguje. Přejdi na stránku http://127.0.0.1:8000/post/new /, přidej `title` a `text`, ulož jej... a hle! Byl přidán nový příspěvek na blog a my jsme přesměrováni na stránku `post_detail`!
+Pojďme se podívat, jestli to funguje. Přejdi na stránku http://127.0.0.1:8000/post/new/, přidej `title` a `text`, ulož jej... a hle! Byl přidán nový příspěvek na blog a my jsme přesměrovány na stránku `post_detail`!
 
-Možná jsi si všimla, že jsme nastavili proměnnou publish_date před uložením post. Později si ukážeme *tlačítko Publikovat* v **Django girls tutorial: rozšíření**.
-
-To je úžasné!
+Možná jsi si všimla, že jsme nastavili proměnnou publish_date před uložením postu. Později si ukážeme *tlačítko Publikovat* v **Django girls tutorial: rozšíření**.
 
 ## Ověření formuláře
 
-A teď ti ukážeme jak cool jsou formuláře v Djangu. Blog příspěvek musí mít `title` a `text` pole. V našem modelu `Post` jsme neřekly (na rozdíl od `published_date`), že jsou tato pole nepovinná, takže Django ve výchozím nastavení očekává, že budou vyplněná.
+A teď ti ukážeme, jak cool jsou formuláře v Djangu. Blog příspěvek musí mít `title` a `text` pole. V našem modelu `Post` jsme neřekly (na rozdíl od `published_date`), že jsou tato pole nepovinná, takže Django ve výchozím nastavení očekává, že budou vyplněná.
 
 Pokus se uložit formulář bez `nadpisu` a `textu`. Hádej, co se stane!
 
@@ -249,9 +247,9 @@ Pokus se uložit formulář bez `nadpisu` a `textu`. Hádej, co se stane!
 
  [3]: images/form_validation2.png
 
-Django se stará o ověřování, že všechna pole v našem formuláři jsou správně. Není to úžasné?
+Django se stará o ověřování, že všechna pole v našem formuláři jsou správně. Není to skvělé?
 
-> Jelikož jsme nedávno použili Django admin rozhraní, systém si v současné době myslí, že jsme přihlášeni. Existuje několik situací, které by mohly vést k našemu odhlášení (zavření prohlížeče, restartováním DB, atd.). Pokud dostaneš chybu, při vytváření příspěvku, upozorňující na nepřihlášeného uživatele, zamiř na http://127.0.0.1:8000/admin stránky a přihlas se znovu. Tím se dočasně vyřeší tento problém. Existuje trvalá oprava, která na tebe čeká v **domácím úkolu: zabezpeč svůj web!** kapitola za hlavním tutorialem.
+> Jelikož jsme nedávno použily Django admin rozhraní, systém si v současné době myslí, že jsme přihlášeni. Existuje několik situací, které by mohly vést k našemu odhlášení (zavření prohlížeče, restartováním DB, atd.). Pokud při vytváření příspěvku dostaneš chybu, upozorňující na nepřihlášeného uživatele, zamiř na http://127.0.0.1:8000/admin a přihlas se znovu. Tím se dočasně vyřeší tento problém. Existuje trvalá oprava, která na tebe čeká v **domácím úkolu: zabezpeč svůj web!** v kapitole za hlavním tutorialem.
 
 ![Chyba přihlášení][4]
 
@@ -259,7 +257,7 @@ Django se stará o ověřování, že všechna pole v našem formuláři jsou sp
 
 ## Upravit formulář
 
-Teď víme, jak přidat nový formulář. Ale co když chceme upravit stávající? Je to velmi podobné, tomu jsme právě dělali. Vytvoříme teď některé důležité věci rychle (pokud něčemu neporozumíš, měla bys požádat svého kouče, nebo se podívat do předchozích kapitol, protože jsme již všechny tyto kroky probírali).
+Teď víme, jak přidat nový formulář. Ale co když chceme upravit stávající? Je to velmi podobné tomu, co jsme před chvílí dělaly. Vytvoříme teď rychle některé důležité věci (pokud něčemu neporozumíš, měla bys požádat svého kouče nebo se podívat do předchozích kapitol, protože jsme již všechny tyto kroky probíraly).
 
 Otevři `blog/templates/blog/post_detail.html` a přidej následující řádek:
 
@@ -291,7 +289,7 @@ V `blog/urls.py` přidej tento řádek:
          url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
 ```  
 
-Znovu použijeme šablonu `blog/templates/blog/post_edit.html`, takže jediné, co chybí je *view*.
+Znovu použijeme šablonu `blog/templates/blog/post_edit.html`, takže jediné, co chybí, je *view*.
 
 Otevři `blog/views.py` a přidej na samý konec souboru:
 
@@ -311,19 +309,19 @@ Otevři `blog/views.py` a přidej na samý konec souboru:
          return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Vypadá to téměř úplně stejně jako náš view `post_new`? Ale ne zcela. První věc: máme navíc parametr `pk` z adresy URL. Další: získáme model `Post`, který chceme upravit, pomocí `get_object_or_404 (Post, pk = pk)`. Když potom vytvoříme formulář, předáme tento post jako parametr `instance`, když ukládáme formulář:
+Vypadá to téměř úplně stejně jako náš view `post_new`. Ale ne zcela. Za prvé: máme navíc parametr `pk` z adresy URL. Za druhé: získáme model `Post`, který chceme upravit, pomocí `get_object_or_404 (Post, pk = pk)`. Když potom vytvoříme formulář, předáme tento post jako parametr `instance`, když ukládáme formulář:
 
 ```python
     form = PostForm(request.POST, instance=post)
 ```  
 
-a když jsme právě otevřely formulář s tímto příspěvkem pro úpravu:
+a když jsme otevřely formulář s tímto příspěvkem pro úpravu:
 
 ```python
     form = PostForm(instance=post)
 ```    
 
-Ok, vyzkoušejme jestli to funguje! Pojďme na stránku `post_detail`. Tam by mělo být tlačítko Edit v pravém horním rohu:
+Ok, vyzkoušejme si, jestli to funguje! Pojďme na stránku `post_detail`. Tam by mělo být tlačítko Edit v pravém horním rohu:
 
 ![Tlačítko Upravit][5]
 
@@ -337,21 +335,21 @@ Po klepnutí na něj se zobrazí formulář s naším příspěvkem:
 
 Neboj se změnit název nebo text a ulož změny!
 
-Blahopřejeme! Tvoje aplikace je čím dál více kompletní!
+Blahopřejeme! Tvoje aplikace je skoro kompletní!
 
-Pokud potřebuješ více informací o Django formulářích měla bys přečíst dokumentaci: https://docs.djangoproject.com/en/1.8/topics/forms/
+Pokud potřebuješ více informací o Django formulářích, měla by sis přečíst dokumentaci: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Zabezpečení
 
-Být schopna vytvářet nové příspěvky pouhým klepnutím na odkaz je super! Právě teď ale každý, kdo přijde na tvé stránky, je schopen odeslat nový příspěvek na blog a to asi nechceš. Udělejme to tak, že se tlačítko zobrazí tobě, ale nezobrazí se nikomu jinému.
+Být schopná vytvářet nové příspěvky pouhým klepnutím na odkaz je super! Právě teď ale každý, kdo přijde na tvé stránky, je schopen odeslat nový příspěvek na blog a to asi nechceš. Udělejme to tak, že se tlačítko zobrazí tobě, ale nezobrazí se nikomu jinému.
 
-V `blog/templates/blog/base.html` najdeš naši `page-header` `div` a kotevní tag, který jsme tam dali dříve. Řádek by měl vypadat nějak takto:
+V `blog/templates/blog/base.html` najdeš naši `page-header`, `div` a tag `a`, který jsme tam dali dříve. Řádek by měl vypadat nějak takto:
 
 ```html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```  
 
-Chceme přidat další `{% if %}` příkaz, který zajistí, že se odkaz zobrazí pouze pro uživatele, kteří jsou přihlášeni jako admin. Aktuálně, jsi jím pouze ty! Změň tag `< a >`, aby vypadal takto:
+Chceme přidat další `{% if %}` příkaz, který zajistí, že se odkaz zobrazí pouze pro uživatele, kteří jsou přihlášeni jako admin. Ve skutečnosti jsi jím pouze ty! Změň tag `< a >`, aby vypadal takto:
 
 ```html
     {% if user.is_authenticated %}
@@ -359,9 +357,9 @@ Chceme přidat další `{% if %}` příkaz, který zajistí, že se odkaz zobraz
     {% endif %}
 ```  
 
-Tento `{% if %}` způsobí, že odkaz bude odeslán do prohlížeče pouze pokud je uživatel, který požaduje stránku, přihlášený. To zcela nezabrání možnosti vytvářet nové záznamy, ale je to dobrý první krok. Lepší zabezpečení vysvětlíme v rozšířené lekci.
+Tento `{% if %}` způsobí, že odkaz bude odeslán do prohlížeče, pouze pokud je uživatel, který požaduje stránku, přihlášený. To zcela nezabrání možnosti vytvářet nové záznamy, ale je to dobrý první krok. Lepší zabezpečení vysvětlíme v rozšířené lekci.
 
-Vzhledem k tomu, že jsi pravděpodobně přihlášená, pokud aktualizuješ stránku, neuvidíš žádnou změnu. Načtení stránky v novém prohlížeči nebo anonymní okně, se odkaz již neukáže!
+Vzhledem k tomu, že jsi pravděpodobně přihlášená, neuvidíš žádnou změnu, pokud aktualizuješ stránku. Při načtení stránky v novém prohlížeči nebo anonymním okně se odkaz již neukáže!
 
 ## Ještě jedna věc: čas nasadit aplikaci!
 
@@ -390,7 +388,7 @@ Uvidíme, jestli to funguje na PythonAnywhere. Čas na další nasazení!
     [...]
 ```  
 
-*   Nakonec, skoč na [kartu Web][8] a klikni na **Reload**.
+*   Nakonec skoč na [kartu Web][8] a klikni na **Reload**.
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
