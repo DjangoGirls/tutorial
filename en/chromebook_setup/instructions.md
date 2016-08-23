@@ -5,7 +5,7 @@ rest of the installation instructions.
 ### Cloud 9
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running
-on the internet where you can install, write, and run software. For the duration
+on the Internet where you can install, write, and run software. For the duration
 of the tutorial, Cloud 9 will act as your _local machine_. You'll still be
 running commands in a terminal interface just like your classmates on OS X,
 Ubuntu, or Windows, but your terminal will be connected to a computer running
@@ -19,7 +19,7 @@ somewhere else that Cloud 9 sets up for you.
 6. Select the _Blank_ (second from the right on the bottom row with orange logo)
 
 Now you should see an interface with a sidebar, a big main window with some
-text, and a small window at the bottom that looks something like:
+text, and a small window at the bottom that looks something like this:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
@@ -71,11 +71,11 @@ and moving it to a publicly accessible computer (called a server) so other
 people can see your work.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're
-already using a computer that is on the internet (as opposed to, say, a laptop).
+already using a computer that is on the Internet (as opposed to, say, a laptop).
 However, it's still useful, as we can think of our Cloud 9 workspace as a place
 or our "in progress" work and Python Anywhere as a place to show off our stuff
 as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at
-[www.pythonanywhere.com](http://www.pythonanywhere.com).
+[www.pythonanywhere.com](https://www.pythonanywhere.com).
 

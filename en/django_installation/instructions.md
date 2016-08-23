@@ -111,7 +111,7 @@ Start your virtual environment by running:
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
-> __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell says `execution of scripts is disabled on this system`. In those cases open another Windows PowerShell and Run as Administrator try doing this before continue:
+> __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
 >
 >{% filename %}command-line{% endfilename %}
 >```

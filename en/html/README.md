@@ -2,13 +2,13 @@
 
 What's a template, you may ask?
 
-A template is a file that we can re-use to present different information in a consistent format - for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter __How the Internet works__).
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, __How the Internet works__).
 
 ## What is HTML?
 
-HTML is a simple code that is interpreted by your web browser - such as Chrome, Firefox or Safari - to display a webpage for the user.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
 HTML stands for "HyperText Markup Language". __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags represent markup __elements__.
 
@@ -24,7 +24,7 @@ blog
     └───blog
 ```
 
-(You might wonder why we need two directories both called `blog` - as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
@@ -46,16 +46,16 @@ Add the following to your template file:
 </html>
 ```
 
-So how does your website look now? Click to find out: http://127.0.0.1:8000/
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
 It worked! Nice work there :)
 
-- The most basic tag, `<html>`, is always the beginning of any webpage and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+- The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 - `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-## Head & body
+## Head and body
 
 Each HTML page is also divided into two elements: __head__ and __body__.
 
@@ -65,7 +65,7 @@ Each HTML page is also divided into two elements: __head__ and __body__.
 
 We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
-For example, you can put a webpage title element inside the `<head>`, like this:
+For example, you can put a web page title element inside the `<head>`, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
@@ -90,15 +90,15 @@ Probably you have also noticed that each opening tag is matched by a _closing ta
 
 It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
-You need to follow these rules of _closing_ tags, and of _nesting_ elements - if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+You need to follow these rules of _closing_ tags, and of _nesting_ elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
 ## Customize your template
 
 You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-- `<h1>A heading</h1>` - for your most important heading
+- `<h1>A heading</h1>` for your most important heading
 - `<h2>A sub-heading</h2>` for a heading at the next level
-- `<h3>A sub-sub-heading</h3>` ... and so on, up to `<h6>`
+- `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 - `<p>A paragraph of text</p>`
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
@@ -137,16 +137,16 @@ Here's an example of a full template:
 
 We've created three `div` sections here.
 
-- The first `div` element contains the title of our blog - it's a heading and a link
+- The first `div` element contains the title of our blog – it's a heading and a link
 - Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
 It gives us this effect:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly __the same information__ - whereas earlier we were talking about templates as allowing us to display __different__ information in the __same format__.
+Yaaay! But so far, our template only ever displays exactly __the same information__ – whereas earlier we were talking about templates as allowing us to display __different__ information in the __same format__.
 
-What we really want to do is display real posts added in our Django admin - and that's where we're going next.
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
 ## One more thing:  deploy!
 
@@ -186,13 +186,12 @@ $ git commit -m "Changed the HTML for the site."
 
 > __Note__ Make sure you use double quotes around the commit message.
 
-Once we've done that, we upload (push) our changes up to Github:
+Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 ```
 $ git push
 ```
-
 
 ### Pull your new code down to PythonAnywhere, and reload your web app
 
@@ -210,4 +209,4 @@ And watch your code get downloaded. If you want to check that it's arrived, you 
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
