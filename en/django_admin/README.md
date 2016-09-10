@@ -46,6 +46,6 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.9/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little time-out!
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
 
 
