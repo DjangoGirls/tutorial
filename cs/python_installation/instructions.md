@@ -15,7 +15,7 @@ Pozor na jednu věc: na druhé obrazovce průvodce instalací, označené "Přiz
 Je velmi pravděpodobné, že již máš Python nainstalován v základní instalaci. Chceš-li zkontrolovat, zda jej máš nainstalován (a o jakou verzi se jedná), otevři konzoli a zadej následující příkaz:
 
 ```
-    $ python3 – version
+    $ python3 --version
     Python 3.4.2
 ```  
 
