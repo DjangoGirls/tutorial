@@ -99,7 +99,7 @@ Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comando
 
 Visita [GitHub.com][4] y registra una nueva cuenta de usuario gratuita. Luego, crea un nuevo repositorio con el nombre "my-first-blog". Deja desmarcada la opción "Initialise with a README", deja la opción .gitignore en blanco (lo hemos hecho a mano) y deja la licencia como "None".
 
- [4]: https://www.github.com'
+ [4]: https://www.github.com
 
 ![][5]
 
