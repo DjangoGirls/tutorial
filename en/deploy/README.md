@@ -41,6 +41,7 @@ Git will track changes to all the files and folders in this directory, but there
 {% filename %}.gitignore{% endfilename %}
 ```
 *.pyc
+*~
 __pycache__
 myvenv
 db.sqlite3
