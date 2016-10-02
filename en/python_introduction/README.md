@@ -42,6 +42,12 @@ Nice! See how the answer popped out? Python knows math! You could try other comm
 - `5 - 1`
 - `40 / 2`
 
+To perform exponential calculation, say 2 to the power 3, we type:
+```python
+>>> 2 ** 3
+8
+```
+
 Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
