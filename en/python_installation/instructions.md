@@ -82,7 +82,7 @@ $ sudo zypper install python3
 
 <!--endsec-->
 
-<!--sec data-title="OSX" data-id="python_OSX"
+<!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
