@@ -31,7 +31,7 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 $ python3 -m venv myvenv
 ```
 
-### Windows
+<!--sec data-title="Windows" data-id="virtualenv_installation_windows" data-collapse=false ces-->
 
 To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python35\python -m venv myvenv`. It will look like this:
 
@@ -42,7 +42,10 @@ C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 
 where `C:\Python35\python` is the directory in which you previously installed Python and `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
-### Linux and OS X
+<!--endsec-->
+
+<!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
+data-collapse=true ces-->
 
 Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
 It will look like this:
@@ -98,11 +101,14 @@ $ python3 -m venv myvenv
 >sudo apt install python3.5-venv
 >```
 
+<!--endsec-->
+
 ## Working with virtualenv
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
-#### Windows
+<!--sec data-title="Windows" data-id="virtualenv_windows"
+data-collapse=false ces-->
 
 Start your virtual environment by running:
 
@@ -120,7 +126,10 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 >     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >```
 
-#### Linux and OS X
+<!--endsec-->
+
+<!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
+data-collapse=true ces-->
 
 Start your virtual environment by running:
 
@@ -137,6 +146,8 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 >```
 >$ . myvenv/bin/activate
 >```
+
+<!--endsec-->
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
@@ -162,10 +173,16 @@ Successfully installed django
 Cleaning up...
 ```
 
-on Windows
+<!--sec data-title="Windows" data-id="django_err_windows"
+data-collapse=true ces-->
+
 > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
-on Windows 8 and Windows 10
+<!--endsec-->
+
+<!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
+data-collapse=true ces-->
+
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 >
 >{% filename %}command-line{% endfilename %}
@@ -173,7 +190,13 @@ on Windows 8 and Windows 10
 >C:\Users\Name\djangogirls> python -m pip install django~=1.9.0
 >```
 
-on Linux
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="django_err_linux"
+data-collapse=true ces-->
+
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+
+<!--endsec-->
 
 That's it! You're now (finally) ready to create a Django application!
