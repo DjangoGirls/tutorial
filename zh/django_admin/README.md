@@ -9,7 +9,7 @@ from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-```    
+```
 
 如你所见，我们导入（包括）了前一章定义的Post模型。 为了让我们的模型在admin页面上可见，我们需要使用`admin.site.register(Post)`来注册模型.
 
@@ -27,7 +27,7 @@ OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python m
     Password:
     Password (again):
     Superuser created successfully.
-    
+
 
 返回到你的浏览器，用你刚才的超级用户来登录，然后你应该能看到Django admin的管理面板。
 
@@ -43,6 +43,6 @@ OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python m
 
  [3]: images/edit_post3.png
 
-如果你向更多地了解Django admin模块，你可以查看Django 的官方文档:https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+如果你想更多地了解Django admin模块，你可以查看Django 的官方文档:https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
-现在你可以来杯咖啡(或者是茶) 或吃点东西给自己充下电，你刚刚创建了你的第一个Django模型，这是你应得的。
+现在你可以来杯咖啡(或者是茶) 或吃点东西给自己充下电，你刚刚创建了你的第一个Django模型，你应该休息一下。
