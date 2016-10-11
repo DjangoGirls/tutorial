@@ -44,6 +44,7 @@ Special thanks for help goes out to:
 *Raony Guimares Correo do Carmo Lisboa Cardenas 
 *Vivian Macedo
 *Willie Lawrence 
+*Ricardo Manhães Savii
 Wow! <3 <3 
 
 ## Introdução
