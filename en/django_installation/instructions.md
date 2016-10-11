@@ -31,7 +31,8 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 $ python3 -m venv myvenv
 ```
 
-<!--sec data-title="Windows" data-id="virtualenv_installation_windows" data-collapse=false ces-->
+<!--sec data-title="Windows" data-id="virtualenv_installation_windows"
+data-collapse=true ces-->
 
 To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python35\python -m venv myvenv`. It will look like this:
 
@@ -108,7 +109,7 @@ $ python3 -m venv myvenv
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
-data-collapse=false ces-->
+data-collapse=true ces-->
 
 Start your virtual environment by running:
 

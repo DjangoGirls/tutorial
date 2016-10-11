@@ -1,5 +1,5 @@
 <!--sec data-title="Windows" data-id="git_install_windows"
-data-collapse=false ces-->
+data-collapse=true ces-->
 
 You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 

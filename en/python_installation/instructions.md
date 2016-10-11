@@ -5,7 +5,7 @@
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.5, so if you have any earlier version, you will need to upgrade it.
 
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=false ces-->
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
 You can download Python for Windows from the website https://www.python.org/downloads/release/python-351/. After downloading the ***.msi** file, you should run it (double-click on it) and follow the instructions there. It is important to remember the path (the directory) where you installed Python. It will be needed later!
 
