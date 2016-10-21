@@ -14,16 +14,16 @@ Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üz
 
 > virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda bir önek `(myvenv)` görmüyorsanız virtualenv'nizi çalışır hale getirmelisiniz. **Django yükleme** bölümünün **virtualenv ile Çalışma** kısmında nasıl yapılacağını açıkladık. Windows'da ` myvenv\Scripts\activate` ya da Mac OS / Linux'ta `source myvenv/bin/activate` yazmak sizin için bunu yapacaktır.
 
-MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; **sonuna nokta `(.)` koymayı unutmayın**:
+MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; **sonuna nokta `.` koymayı unutmayın**:
 
 ```
-(myvenv) ~/djangogirls$ django admin startproject mysite.
+(myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
 
-Windows'ta; ** sonunda nokta `(.)` koymayı unutmayın**:
+Windows'ta; ** sonunda nokta `.` koymayı unutmayın**:
 
 ```
-(myvenv) C:\Users\Name\djangogirls > django admin startproject mysite.
+(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 ```
 
 > Nokta `.` bu durumda çok önemlidir çünkü; koda, Django'yu şu an bulunduğunuz dizine yüklemesini söyler. ( nokta `. ` kısayol referansıdır)
