@@ -10,13 +10,13 @@ Typická doména stojí kolem 15 dolarů ročně. Existují levnější a draž�
 
  [1]: https://www.google.com/search?q=register%20domain
 
-Naše oblíbené je, [I want my name][2]. Inzerují se jako "bezbolestný doménový management" a je to opravdu bezbolestné.
+Naše oblíbená je [I want my name][2]. Inzerují se jako "bezbolestný doménový management" a je to opravdu bezbolestné.
 
  [2]: https://iwantmyname.com/
 
 ## Jak si zaregistrovat doménu na IWantMyName?
 
-Přejdi na [iwantmyname][3] a zadejte doménu, kterou chceš do pole Search/Hledat.
+Přejdi na [iwantmyname][3] a zadej doménu, kterou chceš zaregistrovat, do pole Search/Hledat.
 
  [3]: https://iwantmyname.com
 
@@ -24,7 +24,7 @@ Přejdi na [iwantmyname][3] a zadejte doménu, kterou chceš do pole Search/Hled
 
  [4]: images/1.png
 
-Nyní bys měla vidět seznam všech dostupných domén s termínem, který jsi vložila do pole Hledat. Jak vidíš, veselý obličej znamená, že doména je k dispozici pro tvůj nákupu a smutná tvář znamená že je již obsazená.
+Nyní bys měla vidět seznam všech dostupných domén s termínem, který jsi vložila do pole Hledat. Jak vidíš, veselý obličej znamená, že doména je k dispozici pro tvůj nákup, a smutná tvář znamená, že je již obsazená.
 
 ![][5]
 
@@ -50,7 +50,7 @@ Nyní je třeba najít tento formulář:
 
  [8]: images/5.png
 
-A vyplňit jej s následujícími podrobnosti:-Hostname: www - typ: CNAME - hodnotu: vaši doménu z Heroku (například djangogirls.herokuapp.com) - TTL: 3600
+A vyplnit jej s následujícími podrobnosti: - Hostname: www - typ: CNAME - hodnota: vaši doménu z Heroku (například djangogirls.herokuapp.com) - TTL: 3600
 
 ![][9]
 
@@ -58,11 +58,11 @@ A vyplňit jej s následujícími podrobnosti:-Hostname: www - typ: CNAME - hodn
 
 Klepni na tlačítko Přidat a změny se uloží - uvidíš je v dolní části.
 
-Změny se mohou projevit až za několik hodin, něž začne fungovat tvá doména, tak buď trpělivá!
+Změny se mohou projevit až za několik hodin, než začne fungovat tvá doména, tak buď trpělivá!
 
 ## Konfigurace domény v Heroku
 
-Musíš také říci Heroku, kterou doménu cheš použít jako vlastní.
+Musíš také říci Heroku, kterou doménu chceš použít jako vlastní.
 
 Přejdi na [Heroku Dashboard][10], přihláš se k účtu Heroku a vyber si aplikaci. Poté přejdi do aplikace nastavení a přidej doménu v sekci `domény` a ulož provedené změny.
 
