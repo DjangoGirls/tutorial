@@ -1,16 +1,16 @@
 # Django ORM a QuerySets
 
-V této kapitole se naučíš jak se Django spojuje s databází a jak do ní ukládá data. Pojďme na to!
+V této kapitole se naučíš, jak se Django spojuje s databází a jak do ní ukládá data. Pojďme na to!
 
 ## Co je QuerySet?
 
 QuerySet je v podstatě seznam objektů daného modelu. QuerySet ti umožňuje číst data z databáze, filtrovat je a řadit je.
 
-Je snazší naučit se to na příkladu. Pojďme to zkusit, můžeme?
+Je snazší naučit se to na příkladu. Pojďme to zkusit.
 
 ## Django shell
 
-Otevři svou lokání konzoli (ne na Python Anywhere) a napiš tento příkaz:
+Otevři svou lokální konzoli (ne na Python Anywhere) a napiš tento příkaz:
 
 ```
     (myvenv) ~/djangogirls$ python manage.py shell
@@ -36,7 +36,7 @@ Pojďme zkusit zobrazit všechny naše příspěvky. To můžeš udělat násled
     NameError: name 'Post' is not defined
 ```  
 
-Hups! Ukázala se chybová hláška. Říká nám, že tu není žádný Post objekt (příspěvek). To je správně -- zapomněli jsme je importovat!
+Ale ne! Ukázala se chybová hláška. Říká nám, že tu není žádný Post objekt (příspěvek). To je správně – zapomněly jsme je importovat!
 
 ```
     >>> from blog.models import Post
@@ -49,7 +49,7 @@ Tohle je jednoduché: importujeme model `Post` z `blog.models`. Pojďme znovu zk
     [<Post: titulek mého prvního příspěvku>, <Post: titulky dalších příspěvků>]
 ```  
 
-To je seznam příspěvků které jsme dříve vytvořili pomocí Django administrátorského rozhraní. Teď nicméně chceme vytvořit příspěvky použitím Pythonu, tak jak na to?
+To je seznam příspěvků, které jsme dříve vytvořily pomocí Django administrátorského rozhraní. Teď nicméně chceme vytvořit příspěvky použitím Pythonu, tak jak na to?
 
 ### Vytvoř objekt
 
@@ -74,13 +74,13 @@ Jaké uživatele máme v naší databázi? Zkus tohle:
     [<User: ola>]
 ```  
 
-Tohle je superuser kterého jsme vytvořili dříve! Pojďme si teď vzít instanci tohoto uživatele:
+Tohle je superuser, kterého jsme vytvořily dříve! Pojďme si teď vzít instanci tohoto uživatele:
 
 ```python
     me = User.objects.get(username='ola')
 ```
 
-Jak vidíš, dostali (tj. `get`) jsme uživatele (tj. `user`) s uživatelským jménem (tj. `username`) 'ola'. Pěkný! Samozřejmě, ty si to musíš upravit na své jméno.
+Jak vidíš, dostaly (tj. `get`) jsme uživatele (tj. `user`) s uživatelským jménem (tj. `username`) 'ola'. Pěkný! Samozřejmě ty si to musíš upravit na své jméno.
 
 Teď můžeme konečně vytvořit příspěvek:
 
@@ -88,7 +88,7 @@ Teď můžeme konečně vytvořit příspěvek:
     >>> Post.objects.create(author=me, title='titulek', text='Test')
 ```  
 
-Hurá! Chceš se podívat jestli to fungovalo?
+Hurá! Chceš se podívat, jestli to fungovalo?
 
 ```
     >>> Post.objects.all()
@@ -99,31 +99,31 @@ A je to tu, další příspěvek v seznamu!
 
 ### Přidej více příspěvků
 
-Teď si můžeš trochu pohrát a přidat více příspěvků, abys viděla jak to funguje. Přidej 2 až 3 nové příspěvky a pusť se do další části.
+Teď si můžeš trochu pohrát a přidat více příspěvků, abys viděla, jak to funguje. Přidej 2 až 3 nové příspěvky a pusť se do další části.
 
 ### Filtrování objektů
 
-Důležitá součást QuerySetů je možnost je filtrovat. Řekněme, že chceme najít všechny příspěvky jejichž autorem je uživatel (user) ola. V `Post.objects.all()` použijeme `filter` místo `all`. V závorkách stanovíme podmínky, které musí příspěvek splňovat, aby skončil v našem querysetu. V našem případě je to, že `author` se rovná `ja`. Způsob, jakým se to v Django zapisuje je: `author=ja`. Teď náš kus kódu vypadá takhle:
+Důležitá součást QuerySetů je možnost je filtrovat. Řekněme, že chceme najít všechny příspěvky, jejichž autorem je uživatel (user) ola. V `Post.objects.all()` použijeme `filter` místo `all`. V závorkách stanovíme podmínky, které musí příspěvek splňovat, aby skončil v našem querysetu. V našem případě je to tak, že `author` se rovná `ja`. Způsob, jakým se to v Django zapisuje, je: `author=ja`. Teď náš kus kódu vypadá takhle:
 
 ```
     >>> Post.objects.filter(author=ja)
     [<Post: titulek>, <Post: Příspěvek číslo 2>, <Post: Můj 3. příspěvek!>, <Post: 4. titulek příspěvku>]
 ```  
 
-Nebo možná chceme vidět všechny příspěvky jež mají slovo 'titulek' v poli `title`?
+Nebo možná chceme vidět všechny příspěvky, jež mají slovo 'titulek' v poli `title`?
 
 ```
     >>> Post.objects.filter(title__contains='titulek')
     [<Post: titulek>, <Post: 4. titulek příspěvku>]
 ```  
 
-> **Poznámka** Mezi `title` a `contains` jsou dvě podtržítka (`_`). Django ORM používá tuto syntaxi k rozlišení názvů ("title") a operací nebo filterů ("contains"). Pokud použiješ pouze jedno podtržítko, dostaneš chybovou hlášku jako "FieldError: Cannot resolve keyword title_contains".
+> **Poznámka** Mezi `title` a `contains` jsou dvě podtržítka (`_`). Django ORM používá tuto syntaxi k rozlišení názvů ("title") a operací nebo filterů ("contains"). Pokud použiješ pouze jedno podtržítko, dostaneš chybovou hlášku "FieldError: Cannot resolve keyword title_contains".
 
-Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to vyfiltrováním všech příspěvků které mají nastavené `published_date` na nějaký uplynulý datum:
+Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to vyfiltrováním všech příspěvků, které mají nastavené `published_date` na nějaké uplynulé datum:
 
 > > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
 
-Bohužel, příspěvek který jsme přidali pomocí Python konzole ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:
+Bohužel příspěvek, který jsme přidali pomocí Python konzole, ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:
 
 ```
     >>> post = Post.objects.get(title="Sample title")
@@ -135,7 +135,7 @@ A ten publikujeme pomocí naší metody `publish`!
     >>> post.publish()
 ```  
 
-Teď se znovu pokus získat seznam publikovaných příspěvků (3 krát zmáčkni šipku nahoru a zmáčkni `enter`):
+Teď se znovu pokus získat seznam publikovaných příspěvků (3krát zmáčkni šipku nahoru a zmáčkni `enter`):
 
 ```
     >>> Post.objects.filter(published_date__lte=timezone.now())
@@ -166,9 +166,9 @@ QuerySety můžeš také kombinovat dohromady pomocí **řetězení**:
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```  
 
-Je to mocný nástroj který ti umožňuje psát docela komplexní query.
+Je to mocný nástroj, který ti umožňuje psát docela komplexní query.
 
-Cool! Teď jsi připravená na další část! Pro zavření shell konzoli zadej toto:
+Cool! Teď jsi připravená na další část! Pro zavření shell konzole zadej toto:
 
 ```
     >>> exit()
