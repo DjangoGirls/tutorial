@@ -37,7 +37,7 @@ Se ele já não estiver instalado, Git deve estar disponível através de seu ge
     sudo apt-get install git
     # or
     sudo yum install git
-    
+
 
 ## Começando nosso repositório no Git
 
@@ -49,7 +49,7 @@ Git controla as alterações para um determinado conjunto de arquivos no que cha
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config user.name "Your Name"
     $ git config user.email you@example.com
-    
+
 
 Inicializar o repositório git é algo que só precisamos fazer uma vez por projeto (e você não terá que re-introduzir o nome de usuário e e-mail nunca mais)
 
@@ -60,7 +60,7 @@ Git irá controlar as alterações para todos os arquivos e pastas neste diretó
     myvenv
     db.sqlite3
     .DS_Store
-    
+
 
 E salve como `.gitignore` na pasta de nível superior "djangogirls".
 
@@ -70,19 +70,19 @@ E salve como `.gitignore` na pasta de nível superior "djangogirls".
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
     .gitignore
     blog/
     manage.py
     mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 E finalmente nós salvamos nossas alterações, Vá para o seu console e execute estes comandos:
 
@@ -93,7 +93,7 @@ E finalmente nós salvamos nossas alterações, Vá para o seu console e execute
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Empurrando o nosso código para GitHub
 
@@ -117,7 +117,7 @@ Agora precisamos ligar o repositório Git no seu computador com o no GitHub.
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Digite seu GitHub username e senha, e você deve ver algo como isto:
 
@@ -129,7 +129,7 @@ Digite seu GitHub username e senha, e você deve ver algo como isto:
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -157,7 +157,7 @@ Quando você se inscreve para PythonAnywhere, você é levado ao seu painel de c
 Vamos puxar nosso código de GitHub em PythonAnywhere através da criação de um "clone" do repo. Digite o seguinte para o console na PythonAnywhere:
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Isto puxará uma cópia do seu código para PythonAnywhere. Confira digitando:
 
@@ -178,26 +178,26 @@ Isto puxará uma cópia do seu código para PythonAnywhere. Confira digitando:
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Criando um virtualenv na PythonAnywhere
 
 Assim como fez em seu próprio computador, você pode criar um virtualenv na PythonAnywhere. No console Bash, digite:
 
     20:20 ~ $ cd my-first-blog
-    
+
     20:20 ~ $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     20:20 ~ $ source myvenv/bin/activate
-    
+
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.5 whitenoise-2.0
-    
+
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
@@ -210,17 +210,17 @@ Vamos descobrir um pouco mais sobre arquivos estáticos mais tarde no tutorial, 
 Por enaunto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
 
     20:20 ~ $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 Digite "Sim" e vai embora! Você não adora fazer computadores imprimir páginas e páginas de texto? Sempre faço pequenos ruídos para acompanhá-lo. Brp, brp brp...
 
@@ -230,7 +230,7 @@ Digite "Sim" e vai embora! Você não adora fazer computadores imprimir páginas
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### Criando o banco de dados em PythonAnywhere
 
@@ -242,10 +242,10 @@ Então nós vamos inicializar o banco de dados no servidor tal como fizemos no s
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv)20:20 ~ $ python manage.py createsuperuser
-    
+
 
 ## Publicação do nosso blog como um aplicativo web
 
@@ -265,7 +265,7 @@ Você será levado para a tela de configuração de PythonAnywhere para seu weba
 
  [10]: images/pythonanywhere_web_tab_virtualenv.png
 
-Na seção "Virtualenv", clique no texto vermelho que diz "Enter the path to a virtualenv" e digite: */home/<your-username>/my-first-blog/myvenv/*
+Na seção "Virtualenv", clique no texto vermelho que diz "Enter the path to a virtualenv" e digite: `/home/<your-username>/my-first-blog/myvenv/`
 
 > **Nota**: substitua seu próprio nome de usuário conforme apropriado. Se você cometer um erro, PythonAnywhere irá mostrar um pequeno aviso.
 
