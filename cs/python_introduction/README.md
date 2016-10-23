@@ -6,13 +6,13 @@ Pojďme napsat nějaký kód!
 
 ## Interaktivní režim Pythonu
 
-Chceš-li si začít hrát s Pythonem, musíme otevřít *příkazový řádek* v počítači. Již bys měla vědět jak na to – naučili jsme se to v kapitole [Úvod do příkazového řádku][1].
+Chceš-li si začít hrát s Pythonem, musíme otevřít *příkazový řádek* v počítači. Již bys měla vědět jak na to – naučily jsme se to v kapitole [Úvod do příkazového řádku][1].
 
  [1]: ../intro_to_command_line/README.md
 
 Jakmile budeš připravena, postupuj podle níže uvedených pokynů.
 
-Chceme otevřít Python konzoli, tak napiš `python` na Windows nebo `python3` na Mac a OS/Linuxu a zmáčkni `enter`.
+Chceme otevřít Python konzoli, takže napiš `python` na Windows nebo `python3` na Mac a OS/Linuxu a zmáčkni `enter`.
 
 ```
     $ python3
@@ -23,18 +23,18 @@ Chceme otevřít Python konzoli, tak napiš `python` na Windows nebo `python3` n
 
 ## Tvůj první příkaz v Pythonu!
 
-Po spuštění interaktivního režimu Python, se výzva na řádku změní na `>>>`. Pro nás to znamená, že pro tuto chvíli můžeme používat pouze příkazy v jazyce Python. Není nutné zadávat `>>>`-Python to udělá za tebe.
+Po spuštění interaktivního režimu Python se výzva na řádku změní na `>>>`. Pro nás to znamená, že pro tuto chvíli můžeme používat pouze příkazy v jazyce Python. Není nutné zadávat `>>>` - Python to udělá za tebe.
 
 Pokud chceš ukončit Python konzoli, kdykoliv stačí zadat `exit()` nebo použít zkratku `Ctrl + Z` na Windows a `Ctrl + D` pro Mac/Linux. Pak již neuvidíš `>>>`.
 
-Pro tuto chvíli nechceme Python konzoli opustit. Chceme se o ní naučit více. Začněme s něčím opravdu jednoduchým. Například zkusme napsat nějakou matematiku. Trěba `2 + 3` a zmáčkni `enter`.
+Pro tuto chvíli nechceme Python konzoli opustit. Chceme se o ní naučit více. Začněme s něčím opravdu jednoduchým. Například zkusme napsat nějakou matematiku. Napiš třeba `2 + 3` a zmáčkni `enter`.
 
 ```
     >>> 2 + 3
     5
 ```  
 
-Hezké! Vidíš, jak se zobrazila odpověď? Python umí matematiku! Můžeš zkusit jiné příkazy typu: - `4 * 5` - `5-1` - `40 / 2`
+Hezké! Vidíš, jak se zobrazila odpověď? Python umí matematiku! Můžeš zkusit jiné příkazy typu: `4 * 5` ; `5-1` ; `40 / 2`
 
 Chvíli si s tím hraj a pak se sem vrať zpátky :).
 
@@ -49,12 +49,12 @@ A co tvé jméno? Zadej své jméno do uvozovek, jak vidíš níže:
     "Ola"
 ```  
 
-Nyní jsi vytvořila svůj první řetězec! Je to posloupnost znaků, které mohou být zpracovány počítačem. Řetězec musí vždy začínat a končit stejným znakem. To může být jednoduchá (`'`) nebo dvojitá (`"`) uvozovka (neexistuje žádný rozdíl!) Uvozovkami Pythonu říkáš, že to co je uvnitř, je řetězec.
+Nyní jsi vytvořila svůj první řetězec! Je to posloupnost znaků, které mohou být zpracovány počítačem. Řetězec musí vždy začínat a končit stejným znakem. To může být jednoduchá (`'`) nebo dvojitá (`"`) uvozovka (neexistuje žádný rozdíl!) Uvozovkami Pythonu říkáš, že co je uvnitř, je řetězec.
 
 Řetězce mohou být spojovány. Zkus toto:
 
 ```
-    >>> "Ahoj" + "Ola"
+    >>> "Ahoj " + "Ola"
     'Ahoj Ola'
 ```  
 
@@ -88,7 +88,7 @@ Pěkné, co? Chceš-li vidět své jméno velkými písmeny, jednoduše zadej:
     'OLA'
 ```  
 
-Právě jsi použila `upper` **funkci** na svém řetězci! Funkce (jako `upper()`) je sled instrukcí, které Python provádí na daném objektu (`"Ola"`), poté, co ji zavoláš.
+Právě jsi použila `upper` **funkci** na svém řetězci! Funkce (jako `upper()`) je sled instrukcí, které Python provádí na daném objektu (`"Ola"`) poté, co ji zavoláš.
 
 Pokud chceš znát počet písmen ve svém jméně, tak pro to má Python také funkci!
 
@@ -101,12 +101,12 @@ Zajímá tě, proč někdy voláš funkce s `.` na konci řetězce (jako `"Ola".
 
 ### Shrnutí
 
-OK dost řetězců. Co jsi se zatím naučila:
+OK, dost bylo řetězců. Co ses zatím naučila:
 
-*   **interaktivní režim Pythonu** - zadávání příkazů (kód) do Pythonového interaktivního režimu a zobrazení výsledku/odpovědi v Pythonu
+*   **interaktivní režim Pythonu** - zadávání příkazů (kódu) do Pythonového interaktivního režimu a zobrazení výsledku/odpovědi v Pythonu
 *   **čísla a řetězce** - v Pythonu se čísla používají pro matematiku a řetězce pro textové objekty
-*   **operátor** - jako + a *, kombinuje hodnoty a vytvoří nové
-*   **funkce** - jako upper() a len(), provádí akce u objektů.
+*   **operátor** - jako + a * kombinuje hodnoty a vytvoří nové
+*   **funkce** - jako upper() a len() provádí akce u objektů.
 
 To jsou základy každého programovacího jazyka. Připravena na něco dalšího? Vsadíme se, že ano!
 
@@ -134,11 +134,11 @@ Funguje to! Použili jsme funkci `str` uvnitř funkce `len`. `str()` vše přev�
 *   Funkce `str`převede věci do **řetězců**
 *   Funkce `int` převede věci na **celá čísla**
 
-> Důležité upozornění: můžeme převést čísla na text, ale nemůžeme jen tak převést text na čísla - co by se stalo kdyby jsme se pokusily o toto `int('hello')`?
+> Důležité upozornění: můžeme převést čísla na text, ale nemůžeme jen tak převést text na čísla - co by se stalo, kdybychom se pokusily o toto: `int('hello')`?
 
 ## Proměnné
 
-Důležitým konceptem v programování jsou proměnné. Proměnná není nic jiného než pojmenování něčeho co budeme chtít použít později. Programátoři proměnné používají k ukládání dat, aby jejich kód byl čitelnější a nemusejí si pamatovat co dané věci jsou.
+Důležitým konceptem v programování jsou proměnné. Proměnná není nic jiného než pojmenování něčeho, co budeme chtít použít později. Programátoři proměnné používají k ukládání dat, aby byl jejich kód čitelnější a nemuseli si pamatovat, co dané věci jsou.
 
 Řekněme, že chceme vytvořit novou proměnnou s názvem `name`:
 
@@ -148,14 +148,14 @@ Důležitým konceptem v programování jsou proměnné. Proměnná není nic ji
 
 Vidíš? Je to snadné! Jednoduše napíšeš: name se rovná Ola.
 
-Jak jsi si jistě všimla, tvůj program nic nevrátil jako to dělal před tím. Jak tedy víme, že proměnná skutečně existuje? Jednoduše zadejte `name` a stiskni klávesu `Enter`:
+Jak sis jistě všimla, tvůj program nevrátil nic jako předtím. Jak tedy víme, že proměnná skutečně existuje? Jednoduše zadejte `name` a stiskni klávesu `Enter`:
 
 ```
     >>> name
     'Ola'
 ```  
 
-Hurá! První proměnná :)! Kdykoli můžeš změnit na co daná proměnná ukazuje:
+Hurá! První proměnná :)! Kdykoli můžeš změnit to, na co daná proměnná ukazuje:
 
 ```
     >>> name = "Sonja"
@@ -188,9 +188,9 @@ Ale co když použijeme nesprávné jméno? Dokážeš odhadnout, co se stane? P
     NameError: name 'ctiy' is not defined
 ```  
 
-Chyba! Jak vidíš, Python má různé typy chyb a tato se nazývá **NameError**. Python ti vrátí tuto chybu pokud se pokusíš použít proměnnou, která nebyla dosud definována. Pokud někdy dojde k této chybě, zkontrolujte svůj kód, abys zjistila jestli jsi nesprávně nezadala nějaké jméno.
+Chyba! Jak vidíš, Python má různé typy chyb a tato se nazývá **NameError**. Python ti vrátí tuto chybu, pokud se pokusíš použít proměnnou, která nebyla dosud definována. Pokud někdy dojde k této chybě, zkontroluj svůj kód, abys zjistila, jestli jsi nezadala nějaké jméno nesprávně.
 
-Hraj si s tím chvilku ať vidíš co se s tím dá dělat!
+Chvilku si s tím, ať vidíš, co se s tím dá dělat!
 
 ## Funkce print
 
@@ -206,11 +206,11 @@ Zkus toto:
 
 Zadáš-li jen `name`, interpretr Pythonu reaguje na řetězcovou *reprezentaci* proměnné "name", což jsou písmena M-a-r-i-a, obklopená jednoduchými uvozovkami ''. Když napíšeš `print(name)`, Python vypíše obsah proměnné na obrazovku bez uvozovek, což vypadá lépe.
 
-Jak uvidíme později, funkce `print()` je také užitečná, když chceme vypsat věci uvnitř funkce, nebo když chceme tisknout věci na více řádcích.
+Jak uvidíme později, funkce `print()` je také užitečná, když chceme vypsat věci uvnitř funkce nebo na více řádcích.
 
 ## Seznamy
 
-Vedle řetězců a celých čísel má Python další druhy různých typů objektů. Teď se podíváme na jeden co se nazývá **list**. Seznamy jsou přesně to, co si myslíš, že jsou: jsou to objekty, které obsahují seznam ostatních objektů :)
+Vedle řetězců a celých čísel má Python další druhy různých typů objektů. Teď se podíváme na jeden, který se nazývá **list**. Seznamy jsou přesně to, co si myslíš, že jsou: jsou to objekty, které obsahují seznam ostatních objektů :)
 
 Nestyď se a vytvoř seznam:
 
@@ -219,7 +219,7 @@ Nestyď se a vytvoř seznam:
     []
 ```  
 
-Ano, tento seznam je prázdný. Není velmi užitečný, že? Pojďme vytvořit seznam čísel z loterie. Nechceme se stále opakovat, takže seznam uložíme také do proměnné:
+Ano, tento seznam je prázdný. Není moc užitečný, že? Pojďme vytvořit seznam čísel z loterie. Nechceme se stále opakovat, takže seznam uložíme také do proměnné:
 
 ```
     >>> lottery = [3, 42, 12, 19, 30, 59]
@@ -245,9 +245,9 @@ Tato funkce nic nevrátí, jen změní pořadí čísel v seznamu. Pojďme ho zn
     [3, 12, 19, 30, 42, 59]
 ```  
 
-Jak můžeš vidět, čísla v seznamu jsou nyní seřazeny od nejnižší do nejvyšší hodnoty. Gratulujeme!
+Jak můžeš vidět, čísla v seznamu jsou nyní seřazena od nejnižší k nejvyšší hodnotě. Gratulujeme!
 
-Také můžeme zkusit obrátit pořadí? Udělejme to!
+Můžeme také zkusit obrátit pořadí? Udělejme to!
 
 ```
     >>> lottery.reverse()
@@ -263,7 +263,7 @@ Snadné, že? Pokud chceš něco přidat do svého seznamu, můžeš to provést
     [59, 42, 30, 19, 12, 3, 199]
 ```  
 
-Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **indexů**. Index je číslo, které říká, kde v seznamu položky najde. Programátoři preferují počítání od 0, takže první objekt v seznamu je v indexu 0, další je v 1 a tak dále. Zkus toto:
+Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **indexů**. Index je číslo, které říká, kde se v seznamu položka najde. Programátoři preferují počítání od 0, takže první objekt v seznamu je v indexu 0, druhý je v indexu 1 a tak dále. Zkus toto:
 
 ```
     >>> print(lottery[0])
@@ -272,9 +272,9 @@ Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **index�
     42
 ```  
 
-Jak můžeš vidět, pro přístup k různým objektům ve tvém seznamu použiješ jméno seznamu a index objektu uvnitř hranatých závorek.
+Jak vidíš, pro přístup k různým objektům ve tvém seznamu použiješ jméno seznamu a index objektu uvnitř hranatých závorek.
 
-Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, jak jsme se dozvěděli výše a příkaz `pop()`. Zkusme příklad toho co jsme se naučili dříve a posílit své znalosti; budeme odstraňovat první číslo našeho seznamu.
+Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, jak jsme se dozvěděli výše, a příkaz `pop()`. Zkusme to, co jsme se naučily dříve; budeme odstraňovat první číslo našeho seznamu.
 
 ```
     >>> print(lottery)
@@ -288,7 +288,7 @@ Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, j
 
 Funguje to všechno skvěle!
 
-Pro další zábavu, zkus nějaké jiné indexy: 6, 7, 1000, -1, -6 nebo -1000. Pokus se předpovědět výsledek před zadáním příkazu. Jsou výsledky správné?
+Pro další zábavu zkus nějaké jiné indexy: 6, 7, 1000, -1, -6 nebo -1000. Pokus se předpovědět výsledek před zadáním příkazu. Jsou výsledky správné?
 
 Seznam všech dostupných metod pro seznam nalezneš v této kapitole Python dokumentace: https://docs.python.org/3/tutorial/datastructures.html
 
@@ -312,7 +312,7 @@ A teď zkus napsat následující příkaz (zkus nahradit vlastními informacemi
 Tímto příkazem jsi právě vytvořila proměnnou s názvem `participant` s třemi dvojicemi klíčů hodnot:
 
 *   Klíč `name` odkazuje na hodnotu `"Ola"` (`string/řetězcový` objekt),
-*   Klíč`country`, ukazuje na `"Polsko"` (další `řetězec`)),
+*   klíč`country`, ukazuje na `"Polsko"` (další `řetězec`)),
 *   a `favorite_numbers` ukazuje `[7, 42, 92]` (`list/seznam` obsahující 3 čísla).
 
 Můžeš zkontrolovat obsah jednotlivých klíčů následující syntaxí:
@@ -324,7 +324,7 @@ Můžeš zkontrolovat obsah jednotlivých klíčů následující syntaxí:
 
 Je to podobné seznamu. Ale není nutné si pamatovat index - jen jméno.
 
-Co se stane, když se zeptáme Pythonu na hodnotu klíče, který neexistuje? Můžeš hádat? Pojďme to vyzkoušet a uvidíš!
+Co se stane, když se zeptáme Pythonu na hodnotu klíče, který neexistuje? Zkus hádat! Pojďme to vyzkoušet a uvidíš!
 
 ```
     >>> participant['age']
@@ -333,14 +333,14 @@ Co se stane, když se zeptáme Pythonu na hodnotu klíče, který neexistuje? M�
     KeyError: 'age'
 ```  
 
-Podívej, další chyba! Toto je **KeyError**. Python ti napomáhá a řekne ti, že klíč `"věk"` neexistuje v tomto slovníku.
+Podívej, další chyba! Toto je **KeyError**. Python ti napomáhá a řekne ti, že klíč `"věk"` v tomto slovníku neexistuje.
 
 Kdy použít slovník a kdy seznam? To je dobrý postřeh k zamyšlení. Kdy použít jakou variantu pochopíš, až si přečteš následující řádky.
 
 *   Potřebuješ jen seřazenou sekvenci položek? Použij seznam.
 *   Pokud potřebuješ přiřadit hodnotám klíče, abys je mohla později efektivně vyhledávat (klíčem)? Používej slovník.
 
-Slovníky, stejně jako seznamy jsou *mutable/proměnlivé*, což znamená, že je lze změnit po jejich vytvoření. Do slovníku můžeš přidat nové páry klíč/hodnota, po jeho vytvoření:
+Slovníky stejně jako seznamy jsou *mutable/proměnlivé*, což znamená, že je lze změnit po jejich vytvoření. Do slovníku můžeš přidat nové páry klíč/hodnota po jeho vytvoření:
 
 ```
     >>> participant['favorite_language'] = 'Python'
@@ -353,7 +353,7 @@ Stejně jako u seznamů můžeš použít metodu `len()` na slovníky, vrací po
     4
 ```  
 
-Doufám, že ti to dává nyní větší smysl. :) Připravena na více zábavy se slovníky? Pojďme na další řádek na další úžasné věci.
+Doufám, že ti to nyní dává větší smysl. :) Připravena na více zábavy se slovníky? Pojďme na další řádek a další úžasné věci.
 
 Příkazem `pop()` odstraníš položky ve slovníku. Například pokud chceš odstranit záznam, kterému odpovídá klíč `"favorite_numbers"`, zadej následující příkaz:
 
@@ -363,7 +363,7 @@ Příkazem `pop()` odstraníš položky ve slovníku. Například pokud chceš o
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```  
 
-Jak můžeš vidět z výstupu byla odstraněna odpovídající dvojice klíč hodnota 'favorite_numbers'.
+Jak vidíš, z výstupu byla odstraněna odpovídající dvojice klíč hodnota 'favorite_numbers'.
 
 Kromě toho můžeš také změnit hodnotu přidruženou k již vytvořenému klíči ve slovníku. Napiš:
 
@@ -379,12 +379,12 @@ Jak můžeš vidět, hodnota klíče `'country'` se změnila z `"Poland"` na `"G
 
 Skvělé! Nyní víš o programování hodně. V této poslední části jsi se naučila o:
 
-*   **errors/chyby** - nyní víš jak číst a pochopit chyby, které ti Python zobrazí pokud nerozumí příkazu co jsi zadala
-*   **proměnné/variables** - názvy pro objekty, které umožňují psát kód snadněji a udělat váš kód čitelnější
+*   **errors/chyby** - nyní víš jak číst a pochopit chyby, které ti Python zobrazí, pokud nerozumí příkazu, který jsi zadala
+*   **proměnné/variables** - názvy pro objekty, které umožňují psát kód snadněji tak, aby byl čitelnější
 *   **seznamy/lists** - seznamy objektů uložených v určitém pořadí
-*   **slovníky/dictionaries** - objekty, které jsou uloženy jako dvojice klíč/ hodnota
+*   **slovníky/dictionaries** - objekty, které jsou uloženy jako dvojice klíč–hodnota
 
-Jsi připravena na další část? :)
+Jsi připravena na další část?
 
 ## Porovnávání věcí
 
@@ -404,7 +404,7 @@ Velká část programování zahrnuje porovnání věci. Co je nejjednodušší 
 
 Dali jsme Pythonu nějaká čísla na porovnání. Jak vidíš, Python může porovnávat nejen čísla, ale může také porovnat výsledky metod. Pěkný, co?
 
-Zajímá tě, proč jsme dali dva symboly rovná se `==` vedle sebe, pro porovnání zda-li jsou čísla stejná? Jedno rovná se `=` používáme pro přiřazení hodnoty do proměnné. Vždy, **vždy** musíte dát dvě rovná se `==`, pokud chcete zkontrolovat jestli se věci navzájem rovnají. Můžeme také zjišťovat, že se věci navzájem nerovnají. Pro takové porovnání můžeme použít symbol `!=`, jak je uvedeno v příkladu výše.
+Zajímá tě, proč jsme daly dva symboly rovná se `==` vedle sebe pro porovnání, zda jsou čísla stejná? Jedno rovnítko `=` používáme pro přiřazení hodnoty do proměnné. Vždy, **vždy** musíte dát dvě rovnítka `==`, pokud chcete zkontrolovat, jestli se věci navzájem rovnají. Můžeme také zjišťovat, že se věci navzájem nerovnají. Pro takové porovnání můžeme použít symbol `!=`, jak je uvedeno v příkladu výše.
 
 Dejme Pythonu dva další úkoly:
 
@@ -415,7 +415,7 @@ Dejme Pythonu dva další úkoly:
     False
 ```    
 
-`>` a `<` jsou pro použití snadné, ale co `> =` a `< =` víš co se tím myslí? Podívejme se na to:
+`>` a `<` jsou pro použití snadné, ale co `> =` a `< =` - víš, co se tím myslí? Podívejme se na to:
 
 *   x `>` y znamená: x je větší než y
 *   x `<` y znamená: x je menší než y
@@ -435,8 +435,8 @@ Dejme Pythonu dva další úkoly:
 
 Pythonu můžeš dát porovnat tolik čísel kolik chceš a na vše ti dá odpověď! Je docela chytrý, že?
 
-*   **and** - Pokud použiješ operátor `and` obě strany musí být pravda, aby celý příkaz byl pravda
-*   **or** - Pokud použiješ operátor `or` jen jeden strana z porovnání musí být pravda, aby celý příkaz byl pravda
+*   **and** - Pokud použiješ operátor `and`, obě strany musí být pravdivé, aby celý příkaz byl pravdivý
+*   **or** - Pokud použiješ operátor `or`, stačí, aby jen jedna strana z porovnání byla pravdivá, aby celý příkaz byl pravdivý
 
 Už jsi někdy slyšela výraz "srovnávat jablka a hrušky"? Zkusme v Pythonu ekvivalent:
 
@@ -451,11 +451,11 @@ Zde vidíš, že stejně jako nelze srovnávat "jablka a hrušky", Python není 
 
 ## Logic hodnoty/Booleany
 
-Mimochodem právě jste se dozvěděli o novém typu objektu v Pythonu. Říká se mu **boolean** – a je to asi nejjednodušší typ.
+Mimochodem právě jste se dozvěděly o novém typu objektu v Pythonu. Říká se mu **boolean** a je to asi nejjednodušší typ.
 
 Existují pouze dva logické objekty: - True - False
 
-Aby Python pochopil, že se jedná o tento typ je potřeba vždy psát jako True (první písmeno velké, zbytek malý). **true, TRUE, tRUE nebude fungovat – jedině True je správně.** (Totéž samozřejmě platí pro False.)
+Aby Python pochopil, že se jedná o tento typ, je potřeba vždy psát jako True (první písmeno velké, zbytek malý). **true, TRUE, tRUE nebude fungovat – jedině True je správně.** (Totéž samozřejmě platí pro False.)
 
 Pravdivostní hodnoty mohou být také v proměnné! Viz zde:
 
@@ -480,18 +480,18 @@ Zkoušej a bav se s logickými hodnotami. Zkus spustit následující příkazy:
 *   `True or 1 == 1`
 *   `1 != 2`
 
-Gratulujeme! Logické hodnoty jsou jedny z nejbezvdnějších vlastností v programování, a právě jste se je naučili používat!
+Gratulujeme! Logické hodnoty jsou jedny z nejbezvadnějších vlastností v programování a vy jste se je právě naučily používat!
 
 # Ulož to!
 
-Zatím jsme psali všechny naše programy v konzoli v interaktivním režimu Pythonu, který nás omezuje na jeden řádek kódu v jednu chvíli. Normální programy jsou uloženy v souborech a spouští je **konzole** nebo **překladač** programovacího jazyku. Zatím jsme spouštěli naše programy po jednom řádku v **konzoli, v interaktivním režimu** Python. Pro příštích několik úkolů budeme potřebovat více než jeden řádek kódu, takže rychle musíme:
+Zatím jsme psaly všechny naše programy v konzoli v interaktivním režimu Pythonu, který nás omezuje na jeden řádek kódu v jednu chvíli. Normální programy jsou uloženy v souborech a spouští je **konzole** nebo **překladač** programovacího jazyku. Zatím jsme spouštěly naše programy po jednom řádku v **konzoli, v interaktivním režimu** Python. Pro příštích několik úkolů budeme potřebovat více než jeden řádek kódu, takže rychle musíme:
 
 *   Ukončit interaktivní režim Pythonu
-*   Otevřít tvůj zvolený editor kódu
-*   Ulož nějaký kód do nového pythnovského souboru
-*   Spusť ho!
+*   Otevřít náš zvolený editor kódu
+*   Uložit nějaký kód do nového pythonovského souboru
+*   Spustit ho!
 
-Chceš-li opustit interaktivní režim Pythonu, který jsme dosud používali jednoduše zadejte ~ ~ ~ exit() ~ ~ ~ funkci:
+Chceš-li opustit interaktivní režim Pythonu, který jsme dosud používaly, jednoduše zadejte ~ ~ ~ exit() ~ ~ ~ funkci:
 
 ```
     >>> exit()
@@ -500,7 +500,7 @@ Chceš-li opustit interaktivní režim Pythonu, který jsme dosud používali je
 
 Tak se dostaneš zpět do příkazové řádky.
 
-Dříve jsi si vybrala editor kódu v části [editor kódu][2]. Nyní potřebujeme otevřít editor a napsat vlastní kód do nového souboru:
+Dříve sis vybrala editor kódu v části [editor kódu][2]. Nyní potřebujeme editor otevřít a napsat vlastní kód do nového souboru:
 
  [2]: ../code_editor/README.md
 
@@ -510,11 +510,11 @@ Dříve jsi si vybrala editor kódu v části [editor kódu][2]. Nyní potřebuj
 
 > **Poznámka:** Měla bys objevit jednu z nejúžasnější věcí na editorech kódu: barvy! V interaktivním režimu Pythonu mělo vše stejnou barvu, ale nyní bys měla vidět, že funkce `print` je jinou barvou než řetězec uvnitř. To se nazývá "zvýrazňování syntaxe" a je to opravdu užitečná funkce při kódování. Barvy ti napoví, že máš neuzavřený řetězce nebo překlep v názvu slova (jako `def` ve funkci, kterou uvidíš níže). To je jeden z důvodů, proč používáme editory kódu :)
 
-Samozřejmě teď jsi již pěkně ostřílená python programátorka, tak neváhej napsat nějaký kód, který jsi se dnes naučila.
+Samozřejmě teď jsi již pěkně ostřílená python programátorka, tak neváhej napsat nějaký kód, který ses dnes naučila.
 
-Teď potřebujeme uložit vytvořený soubor a dát mu popisný název. Pojďme ho nazvat **python_intro.py** a uložte jej na plochu. Soubor můžeš pojmenovat jakkoliv chceš, ale důležitá věc je, aby ses ujistila, že soubor končí na **.py**. Přípona **.py** říká našemu operačnímu systému, že jde o **spustitelný soubor Pythonu** a Python ho může spustit.
+Teď potřebujeme uložit vytvořený soubor a dát mu popisný název. Pojďme ho nazvat **python_intro.py** a uložit jej na plochu. Soubor můžeš pojmenovat jakkoliv chceš, ale důležitá věc je, aby ses ujistila, že soubor končí na **.py**. Přípona **.py** říká našemu operačnímu systému, že jde o **spustitelný soubor Pythonu** a Python ho může spustit.
 
-Pokud máš soubor uložen je čas jej spustit! Pomocí dovedností, které jsi se naučila v sekci příkazová řádka, pomocí terminálu **změň adresář** na plochu.
+Pokud máš soubor uložen, je čas jej spustit! Pomocí dovedností, které jsi se naučila v sekci příkazová řádka, **změň adresář**  pomocí terminálu na plochu.
 
 Na Macu bude příkaz vypadat přibližně takto:
 
@@ -522,13 +522,13 @@ Na Macu bude příkaz vypadat přibližně takto:
     $ cd /Users/<your_name>/Desktop
 ```
 
-Na Linuxu, to bude vypadat takto (slovo "Desktop" (Plocha) může být přeloženo do vašeho jazyka):
+Na Linuxu to bude vypadat takto (slovo "Desktop" (Plocha) může být přeloženo do tvého jazyka):
 
 ```
     $ cd /home/<your_name>/Desktop
 ```
 
-A na Windows, to bude vypadat takto:
+A na Windows to bude vypadat takto:
 
 ```
     > cd C:\Users\<your_name>\Desktop
@@ -549,7 +549,7 @@ Nyní můžeme přejít k základním nástrojům pro programování:
 
 ## If...elif...else
 
-Spousty věcí v kódu chceme provádět jen pokud jsou splněny určité podmínky. To je důvod, proč Python má něco čemu se říká **if statements**.
+Spousty věcí v kódu chceme provádět, jen pokud jsou splněny určité podmínky. To je důvod, proč Python má něco, čemu se říká **if statements**.
 
 Nahraďte kód v souboru **python_intro.py** tímto:
 
@@ -566,14 +566,14 @@ Pokud jsi soubor uložila a spustila, pravděpodobně uvidíš následující ch
     SyntaxError: unexpected EOF while parsing
 ```
 
-Python očekává, že mu dáš další pokyny, které mají být provedeny pokud bude podmínka `3 > 2` splněna (`True`). Řekněme tedy Pythonu, ať vypíše "Funguje to!". Změň svůj kód v souboru **python_intro.py** na tento:
+Python očekává, že mu dáš další pokyny, které mají být provedeny, pokud bude podmínka `3 > 2` splněna (`True`). Řekněme tedy Pythonu, ať vypíše "Funguje to!". Změň svůj kód v souboru **python_intro.py** na tento:
 
 ```python
     if 3 > 2:
          print('It works!')
 ```
 
-Všimla sis, jak jsme odsadili poslední řádek kódu o 4 mezery? Musíme to udělat, podle toho Python pozná, jakou část kódu má spustit pokud vyhodnotí předchozí výraz jako true. Můžete udělat jen jednu mezeru, ale téměř všichni programátoři v Pythonu dělají 4, aby kód vypadal upraveně a čitelně. Jeden `Tab` bude také počítán jako 4 mezery.
+Všimla sis, jak jsme odsadily poslední řádek kódu o 4 mezery? Musíme to udělat, podle toho Python pozná, jakou část kódu má spustit, pokud vyhodnotí předchozí výraz jako pravdivý. Můžete udělat jen jednu mezeru, ale téměř všichni programátoři v Pythonu dělají 4, aby kód vypadal upraveně a čitelně. Jeden `Tab` bude také počítán jako 4 mezery.
 
 Ulož a spusť:
 
@@ -593,14 +593,14 @@ V předchozích příkladech byl kód proveden pouze v případě, že podmínky
          print('5 is not greater than 2')
 ```
 
-Pokud je výraz pravdivý po spuštění se vytiskne:
+Pokud je výraz pravdivý, po spuštění se vytiskne:
 
 ```
     $ python3 python_intro.py
-    5 is indeed greater than 2
+    5 is not greater than 2
 ```
 
-Kdyby 2 bylo větší než 5, spustil by se druhý příkaz. Jak snadné? Podívejme se, jak funguje `elif`:
+Kdyby 2 bylo větší než 5, spustil by se první příkaz. Jak snadné! Podívejme se, jak funguje `elif`:
 
 ```python
     name = 'Sonja'
@@ -619,49 +619,49 @@ a spusť:
     Hey Sonja!
 ```
 
-Viděla jsi co se tam stalo? `elif` umožňuje přidat další podmínky, které se spustí pokud se předchozí podmínky nezdaří.
+Viděla jsi co se tam stalo? `elif` umožňuje přidat další podmínky, které se spustí, pokud se předchozí podmínky nezdaří.
 
-Můžeš přidat tolik `elif` příkazů, kolik se ti zlíbí po počátečním `if`. Například:
+Můžeš po počátečním `if` přidat tolik `elif` příkazů, kolik se ti zlíbí. Například:
 
 ```python
     volume = 57
     if volume < 20:
-         print("It's kinda quiet.")
+         print("Je to dost potichu.")
     elif 20 <= volume < 40:
-         print("It's nice for background music")
+         print("Jako hudba v pozadí dobré.")
     elif 40 <= volume < 60:
-         print("Perfect, I can hear all the details")
+         print("Skvělé, slyším všechny detaily.")
     elif 60 <= volume < 80:
-         print("Nice for parties")
+         print("Dobré na party.")
     elif 80 <= volume < 100:
-         print("A bit loud!")
+         print("Trochu moc nahlas!")
     else:
-        print("My ears are hurting!")  
+        print("Krvácí mi uši!")  
 ```
 
 Python prochází a testuje každou položku v posloupnosti a vypíše:
 
 ```
     $ python3 python_intro.py
-     dokonalé, můžete slyšet všechny detaily
+      Skvělé, slyším všechny detaily.
 ```
 
 ### Shrnutí
 
-V posledních třech cvičeních jsi se dozvěděla o:
+V posledních třech cvičeních ses dozvěděla o:
 
-*   **porovnání věcí** - v Pythonu můžeš porovnat věci pomocí operátorů `>`, `> =`, `==` `< =`, `<` a `and`, `or`
+*   **Porovnání věcí** - v Pythonu můžeš porovnat věci pomocí operátorů `>`, `> =`, `==` `< =`, `<` a `and`, `or`
 *   **Logické hodnoty / Booleany** - typy, které mohou mít pouze jednu ze dvou hodnot: `True` nebo `False`
-*   **Ukládání do souborů** - pokud uložíme kódy do souboru můžeme tak spouštět velké programy
+*   **Ukládání do souborů** - pokud uložíme kód do souboru, můžeme spouštět velké programy
 *   **if...elif...else** - příkazy, které umožňují spouštět kód pouze v případě, kdy jsou splněny určité podmínky.
 
 Čas na poslední část této kapitoly!
 
 ## Vlastní funkce!
 
-Pamatuješ na funkci `len()`, kterou jsi spouštěla v Pythonu? Máme pro tebe dobrou zprávu. Nyní se dozvíš jak napsat své vlastní funkce!
+Pamatuješ na funkci `len()`, kterou jsi spouštěla v Pythonu? Máme pro tebe dobrou zprávu. Nyní se dozvíš, jak napsat své vlastní funkce!
 
-Funkce je sled instrukcí, které by měl Python provést. Každá funkce v Pythonu začíná s klíčovým slovem `def`, dále je uveden název a funkce může mít také nějaké parametry. Začněme u té nejlehčí. Nahraď kód v **python_intro.py** následujícím:
+Funkce je sled instrukcí, které by měl Python provést. Každá funkce v Pythonu začíná klíčovým slovem `def`, dále je uveden název a funkce může mít také nějaké parametry. Začněme u té nejlehčí. Nahraď kód v **python_intro.py** následujícím:
 
 ```python
     def hi():
@@ -673,9 +673,9 @@ Funkce je sled instrukcí, které by měl Python provést. Každá funkce v Pyth
 
 Naše první funkce je připravena!
 
-Asi se divíš, proč jsme napsali název funkce v dolní části souboru. To je proto, že Python přečte soubor a spustí ho od shora dolů. Pokud chceš využívat svou funkci, musíš její název znovu napsat dole (tím jí zavoláš/spustíš).
+Asi se divíš, proč jsme napsaly název funkce v dolní části souboru. To je proto, že Python přečte soubor a spustí ho od shora dolů. Pokud chceš využívat svou funkci, musíš její název znovu napsat dole (tím ji zavoláš/spustíš).
 
-Tak to teď zkus a uvidíš co se stane:
+Tak to teď zkus a uvidíš, co se stane:
 
 ```
     $ python3 python_intro.py
@@ -683,13 +683,13 @@ Tak to teď zkus a uvidíš co se stane:
     How are you?
 ```
 
-To bylo snadné! Napišme naši první funkci s parametry. Použijeme předchozí příklad - Napíšeme funkci, která bude říkat pozdrav Hi, podle toho jaké zadáme jméno při jejím spuštění:
+To bylo snadné! Napišme naši první funkci s parametry. Použijeme předchozí příklad - napíšeme funkci, která nás pozdraví podle toho, jaké zadáme jméno při jejím spuštění:
 
 ```python
     def hi(name):
 ```
 
-Jak vidíš, nyní jsme přidali naší funkci parametr, `name`:
+Jak vidíš, nyní jsme přidaly naší funkci parametr, `name`:
 
 ```python
     def hi(name):
@@ -713,7 +713,7 @@ Pamatuj si: Funkce `print` je odsazená čtyři mezery v příkazu `if`. To je p
     TypeError: hi() missing 1 required positional argument: 'name'
 ```
 
-Jejda chyba. Naštěstí Python nám vypsal docela užitečné chybovou zprávu. Jak můžeš vidět nyní funkce `hi()` (kterou jsme definovali) má jeden povinný parametr `(s názvem name)` a zapomněli jsme ho předat při volání funkce. Pojďme to opravit v následující části:
+Jejda, chyba. Naštěstí nám Python vypsal docela užitečnou chybovou zprávu. Jak vidíš, funkce `hi()` (kterou jsme definovaly) má jeden povinný parametr `(s názvem name)`, který jsme zapomněly při volání funkce předat. Pojďme to opravit v následující části:
 
 ```python
     hi("Ola")
@@ -726,7 +726,7 @@ A znovu jej spusť:
     Hi Ola!
 ```
 
-Pokud změníme jméno?
+A co když změníme jméno?
 
 ```python
     hi("Sonja")
@@ -739,15 +739,15 @@ Spustíme:
     Hi Sonja!
 ```
 
-Nyní co si myslíš, že se stane, když tam napíšeš jiné jméno než (Ola nebo Sonja)? Zkus to a uvidíme, jestli máš pravdu. Mělo by to vypsat toto:
+C myslíš, že se stane, když tam napíšeš jiné jméno než Ola nebo Sonja? Zkus to a uvidíme, jestli máš pravdu. Mělo by to vypsat toto:
 
 ```
     Hi anonymous!
 ```
 
-To je paráda, co? Nemusíš se opakovat a měnit touto cestou jméno pokaždé, když chceš aby funkce pozdravila jinou osobu. To je přesně důvodu proč potřebujeme funkce, abychom nikdy neopakovali náš kód!
+To je paráda, co? Nemusíš se opakovat a měnit takto jméno pokaždé, když chceš, aby funkce pozdravila jinou osobu. To je přesně důvod, proč potřebujeme funkce: abychom nikdy neopakovaly náš kód!
 
-Udělejme to ještě chytřeji – existuje více jmen než dvě, a psaní podmínky pro každé by bylo těžké, že?
+Udělejme to ještě chytřeji – existuje více jmen než dvě a psaní podmínky pro každé jméno by bylo těžké, že?
 
 ```python
     def hi(name):
@@ -763,13 +763,13 @@ Pojďme zavolat náš nový kód:
     Hi Rachel!
 ```
 
-Blahopřejeme! Právě jsi se naučila, jak psát funkce :)
+Blahopřejeme! Právě ses naučila, jak psát funkce :)
 
 ## Smyčky/Loops
 
 Nyní pojďme na poslední část. To bylo rychlé, co? :)
 
-Programátoři se neradi opakují. Programování je o automatizaci věci, takže nechceme zdravit každého člověka podle jeho jména, manuálně, že? Zde se budou smyčky hodit.
+Programátoři se neradi opakují. Programování je o automatizaci věci, takže nechceme zdravit každého člověka podle jeho jména manuálně, že? Zde se budou smyčky hodit.
 
 Ještě si vzpomínáš na seznamy? Udělejme seznam dívek:
 
@@ -777,7 +777,7 @@ Ještě si vzpomínáš na seznamy? Udělejme seznam dívek:
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Chceme pozdravit všechny s použitím jejich jména. Máme funkci `hi` která to umí udělat. Tak ji použijeme ve smyčce:
+Chceme pozdravit všechny s použitím jejich jména. Máme funkci `hi`, která to umí udělat. Tak ji použijeme ve smyčce:
 
 ```python
     for name in girls:
@@ -813,7 +813,7 @@ A když ho spustíme:
     Next girl
 ```
 
-Jak můžeš vidět, vše co jsi vložila dovnitř příkazu `for` s odsazením, se zopakuje pro každý element seznamu `girls`.
+Jak vidíš, vše, co jsi vložila dovnitř příkazu `for` s odsazením, se zopakuje pro každý prvek seznamu `girls`.
 
 Ve funkci `for` můžeš také použít čísla pomocí funkce `range`:
 
@@ -832,13 +832,13 @@ Což ti vypíše:
     5
 ```
 
-`range` je funkce, která vytvoří seznam s posloupností čísel (tyto čísla zadáváš jako parametry funkce).
+`range` je funkce, která vytvoří seznam s posloupností čísel (tato čísla zadáváš jako parametry funkce).
 
-Všimni si, že druhé z těchto dvou čísel není zahrnuto v seznamu, který je výstupem Pythonu (`range (1, 6)` počítá od 1 do 5, ale nezahrnuje číslo 6). To je proto, že "range" je z poloviny otevřený, a tím myslíme, že obsahuje první hodnotu, ale ne poslední.
+Všimni si, že druhé z těchto dvou čísel není zahrnuto v seznamu, který je výstupem Pythonu (`range (1, 6)` počítá od 1 do 5, ale nezahrnuje číslo 6). To je proto, že "range" je z poloviny otevřený, čímž myslíme, že obsahuje první hodnotu, ale ne poslední.
 
 ## Shrnutí
 
-A je to. **Jsi naprosto skvělá!** To byla složitá kapitola, takže měla bys být na sebe hrdá. My jsme na tebe velmi hrdí za to, že jsi se dostala tak daleko!
+A je to. **Jsi naprosto skvělá!** To byla složitá kapitola, takže bys na sebe měla být hrdá. My jsme na tebe velmi hrdí za to, že ses dostala tak daleko!
 
 Můžeš si jít krátce odpočinout - protáhnout se, projít se, zavřít oči - než se pustíme do další kapitoly. :)
 
