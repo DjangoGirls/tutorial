@@ -23,7 +23,7 @@ I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima c
         └───blog
 
 
-(Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve rendere la vita più facile.)
+(Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve a rendere la vita più facile.)
 
 E ora crea un file `post_list.html` nella directory `blog/templates/blog` (lascialo in bianco per adesso).
 
@@ -46,7 +46,7 @@ Aggiungi quanto segue nel tuo file template:
 </html>
 ```
 
-Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
+Quindi come appare il tuo sito ora? Clicca per scoprirlo: http://127.0.0.1:8000/
 
 ![Figura 11.2][2]
 
