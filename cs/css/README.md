@@ -12,7 +12,7 @@ Nechceme ale zase začínat úplně od začátku, že? Opět použijeme něco, c
 
 Bootstrap je jedním z nejpopulárnějších HTML a CSS frameworků pro vývoj pěkné webové stránky: https://getbootstrap.com/
 
-Napsali jo programátoři, kteří pracovali pro Twitter, a nyní ho vyvíjí dobrovolníci z celého světa.
+Napsali ho programátoři, kteří pracovali pro Twitter, a nyní ho vyvíjí dobrovolníci z celého světa.
 
 ## Instalace Bootstrapu
 
