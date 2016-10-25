@@ -45,4 +45,4 @@ Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a dat
 
 Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
-Este é provavelmente um bom momento para tomar um café (ou chocolate) ou algo para comer para repora as energias. Você criou seu primeiro modelo de Django - você merece um pouco de descanso!
+Este é provavelmente um bom momento para tomar um café (ou chocolate) ou algo para comer para repor as energias. Você criou seu primeiro modelo de Django - você merece um pouco de descanso!

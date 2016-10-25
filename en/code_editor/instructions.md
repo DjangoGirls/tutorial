@@ -8,11 +8,12 @@ Gedit is an open-source, free editor, available for all operating systems.
 
 [Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 2
+## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period. It's easy to install and use, and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/2)
+[Download it here](https://www.sublimetext.com/3)
+
 
 ## Atom
 
