@@ -4,7 +4,7 @@ Já concluímos todos os passos necessários para a criação do nosso site: sab
 
 Hora de praticar!
 
-A primeira que precisamos no nosso blog é, obviamente, uma página para mostrar uma postagem, certo?
+A primeira coisa que precisamos no nosso blog é, obviamente, uma página para mostrar uma postagem, certo?
 
 Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.py`.
 
