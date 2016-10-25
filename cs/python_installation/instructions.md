@@ -4,7 +4,7 @@ Django je napsán v Pythonu. Na to, abys mohla cokoliv dělat v Djangu, potřebu
 
 ### Windows
 
-Python pro Windows můžeš stáhnout z webové stránky https://www.python.org/downloads/release/python-343/. Po stažení **msi** souboru, by sis jej měla spustit (poklepáním na něj) a postupovat podle uvedených pokynů. Je důležité si zapamatovat cestu (k adresáři), kam jsi Python nainstalovala. Později jej budeš potřebovat!
+Python pro Windows můžeš stáhnout z webové stránky https://www.python.org/downloads/release/python-343/. Po stažení **msi** souboru, bys jej měla spustit (poklepáním na něj) a postupovat podle uvedených pokynů. Je důležité si zapamatovat cestu (k adresáři), kam jsi Python nainstalovala. Později jej budeš potřebovat!
 
 Pozor na jednu věc: na druhé obrazovce průvodce instalací, označené "Přizpůsobit", se ujisti, že máš zvolenou možnost "Add python.exe to the Path":
 
@@ -19,11 +19,11 @@ Je velmi pravděpodobné, že již máš Python nainstalován v základní insta
     Python 3.4.2
 ```  
 
-Pokud Python nemáš nainstalovaný, nebo pokud chceš nainstalovat jinou verzi, můžeš postupovat takto:
+Pokud Python nemáš nainstalovaný nebo pokud chceš nainstalovat jinou verzi, můžeš postupovat takto:
 
 #### Debian nebo Ubuntu
 
-Zadej tento příkaz do konzole:
+Použij tento příkaz v konzoli:
 
 ```
     sudo apt-get install python3.4
@@ -58,7 +58,7 @@ Použij tento příkaz v konzoli:
 Musíš jít na web https://www.python.org/downloads/release/python-342/ a stáhnout si instalátor Python:
 
   * Stáhni *Mac OS X 64-bit/32-bit installer* soubor,
-  * Poklepej na *python-3.4.3-macosx10.6.pkg* Chceš-li spustit instalační program.
+  * Poklepej na *python-3.4.3-macosx10.6.pkg*, chceš-li spustit instalační program.
 
 Ověř, zda instalace proběhla úspěšně, otevři aplikaci *Terminal* a spusť příkaz `python3`:
 
