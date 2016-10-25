@@ -53,7 +53,7 @@ A ulož ho jako `.gitignore` ve složce nejvyšší úrovně "djangogirls".
 
 > **Poznámka:** Tečka na začátku názvu souboru je důležitá! Pokud budeš mít jakékoliv potíže s vytvořením (například Mac nerad vytváří soubory, které začínají tečkou, přes Finder), tak použij funkci "Uložit jako" v editoru, což je neprůstřelné.
 
-Je vhodné použít příkaz `git status` před použitím příkazu `git add`, anebo vždy, když si nejste jisty, co se změnilo. To pomůže předejít jakýmkoliv překvapením, například přidání nesprávných souborů. Příkaz `git status` vrátí informace o všech souborech nesledovaných (untracked), upravených (modified) a připravených ke commitu (staged), stav větve a mnoho dalšího. Výstup by měl být podobný tomuto:
+Je vhodné použít příkaz `git status` před použitím příkazu `git add`, anebo vždy, když si nejsi jistá, co se změnilo. To pomůže předejít jakýmkoliv překvapením, například přidání nesprávných souborů. Příkaz `git status` vrátí informace o všech souborech nesledovaných (untracked), upravených (modified) a připravených ke commitu (staged), stav větve a mnoho dalšího. Výstup by měl být podobný tomuto:
 
 ```
     $ git status
@@ -87,13 +87,13 @@ A nakonec uložíme naše změny. Přejdi do konzole a spusť tyto příkazy:
 
 Přejdi na [GitHub.com][2] a zaregistruj si zdarma nový uživatelský účet. (Pokud jsi to již dříve ve workshopu udělala, tak je to skvělé!)
 
-Potom vytvoř nové úložiště, dej mu název "my-first-blog". Ponech zaškrtávací políčko "initialise with a README" nezaškrtlé, ponechej prázdnou možnost .gitignore (to už jsme udělali ručně) a ponech licenci jako None.
+Potom vytvoř nové úložiště, dej mu název "my-first-blog". Ponech zaškrtávací políčko "initialise with a README" nezaškrtlé, ponechej prázdnou možnost .gitignore (to už jsme udělaly ručně) a ponech licenci jako None.
 
 ![][3]
 
  [3]: images/new_github_repo.png
 
-> **Poznámka:** Název `my-first-blog` je důležitý – mohla by si vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela bys ho pokaždé nahrazovat. Tak je zatím snazší se držet názvu `my-first-blog`.
+> **Poznámka:** Název `my-first-blog` je důležitý – mohla by sis vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela bys ho pokaždé nahrazovat. Tak je zatím snazší se držet názvu `my-first-blog`.
 
 Na další obrazovce se zobrazí klon URL tvého repo. Zvol verzi "HTTPS", zkopíruj ji a za chvilku ji použijeme v terminálu:
 
