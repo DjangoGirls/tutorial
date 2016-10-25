@@ -11,8 +11,10 @@ Good luck!
 # Installation
 In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-# Chromebook setup (if you're using one)
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
+<!--endsec-->
 
 # Install Python
 {% include "/python_installation/instructions.md" %}
