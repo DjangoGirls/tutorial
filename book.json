@@ -6,7 +6,7 @@
         }
     },
     "pdf": {
-        "fontSize": 13
+        "fontSize": 14
     },
     "plugins": [
         "heading-anchors@1.0.3",
