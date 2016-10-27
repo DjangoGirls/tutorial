@@ -5,6 +5,9 @@
             "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
         }
     },
+    "pdf": {
+        "fontSize": 13
+    },
     "plugins": [
         "heading-anchors@1.0.3",
         "ga@1.0.1",
