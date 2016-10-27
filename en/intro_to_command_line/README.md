@@ -327,7 +327,7 @@ copy          | cp    | copy file              | **copy c:\test\test.txt c:\wind
 move          | mv    | move file              | **move c:\test\test.txt c:\windows\test.txt**
 mkdir         | mkdir | create a new directory | **mkdir testdirectory**
 rmdir (or del)| rm    | delete a file          | **del c:\test\test.txt**
-rmdir \S      | rm -r | delete a directory     | **rm -r testdirectory**
+rmdir /S      | rm -r | delete a directory     | **rm -r testdirectory**
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
