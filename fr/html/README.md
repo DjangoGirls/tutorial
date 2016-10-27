@@ -167,7 +167,7 @@ Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la command
     $ git add --all .
 
 
-> **Note** `-A` (abréviation de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
+> **Note** `--all` (traduction de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
 
 Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaitre en vert) :
 
