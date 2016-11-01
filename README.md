@@ -64,7 +64,7 @@ Then, create a branch for your new changes to sit in. It helps to call the branc
 
     git checkout -b contributing
 
-Download the [Gitbook Editor](https://github.com/GitbookIO/editor-legacy/releases) app to your computer.
+Download the [Gitbook Editor](https://www.gitbook.com/editor) app to your computer.
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
