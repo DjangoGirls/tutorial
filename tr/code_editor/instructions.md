@@ -8,11 +8,11 @@ Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde k
 
 [Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 2
+## Sublime Text 3
 
 Sublime Text ücretsiz deneme sürümüne sahip oldukça popüler bir editördür. Kurulumu ve kullanımı basittir, tüm işletim sistemlerinde kullanılabilir. 
 
-[Buradan indirin](https://www.sublimetext.com/2)
+[Buradan indirin](https://www.sublimetext.com/3)
 
 ## Atom
 
