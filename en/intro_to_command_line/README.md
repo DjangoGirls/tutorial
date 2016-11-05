@@ -18,17 +18,25 @@ The window, which is usually called the __command line__ or __command-line inter
 
 To start some experiments we need to open our command-line interface first.
 
-### Windows
+
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
 
 Go to Start menu → All Programs → Accessories → Command Prompt.
 
-### Mac OS X
+<!--endsec-->
+
+
+<!--sec data-title="OS X" data-id="intro_command_line_OSX" data-collapse=true ces-->
 
 Applications → Utilities → Terminal.
 
-### Linux
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="intro_command_line_linux" data-collapse=true ces-->
 
 It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
 
 ## Prompt
 
