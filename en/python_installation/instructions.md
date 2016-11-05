@@ -19,6 +19,18 @@ In upcoming steps, you'll be using the Windows Command Line (which we'll also te
 
 <!--endsec-->
 
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+
+You need to go to the website https://www.python.org/downloads/release/python-351/ and download the Python installer:
+
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.5.1-macosx10.6.pkg* to run the installer.
+
+<!--endsec-->
+
 <!--sec data-title="Linux" data-id="python_linux"
 data-collapse=true ces-->
 
@@ -81,18 +93,6 @@ Use this command in your console:
 ```
 $ sudo zypper install python3
 ```
-
-<!--endsec-->
-
-<!--sec data-title="OS X" data-id="python_OSX"
-data-collapse=true ces-->
-
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
-
-You need to go to the website https://www.python.org/downloads/release/python-351/ and download the Python installer:
-
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.5.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
 
