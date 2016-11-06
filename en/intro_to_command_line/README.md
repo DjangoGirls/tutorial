@@ -18,21 +18,32 @@ The window, which is usually called the __command line__ or __command-line inter
 
 To start some experiments we need to open our command-line interface first.
 
-### Windows
+
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
 
 Go to Start menu → All Programs → Accessories → Command Prompt.
 
-### Mac OS X
+<!--endsec-->
 
-Applications → Utilities → Terminal.
 
-### Linux
+<!--sec data-title="OS X" data-id="intro_command_line_OSX" data-collapse=true ces-->
+
+Go to Applications → Utilities → Terminal.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="intro_command_line_linux" data-collapse=true ces-->
 
 It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
 
 ## Prompt
 
 You now should see a white or black window that is waiting for your commands.
+
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
@@ -40,6 +51,10 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 ```
 $
 ```
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 On Windows, it's a `>` sign, like this:
 
@@ -47,6 +62,7 @@ On Windows, it's a `>` sign, like this:
 ```
 >
 ```
+<!--endsec-->
 
 Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
@@ -60,17 +76,24 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 Let's start with something simple. Type this command:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ whoami
 ```
 
-or
+<!--endsec-->
+
+
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 > whoami
 ```
+
+<!--endsec-->
 
 And then hit `enter`. This is our result:
 
@@ -92,19 +115,26 @@ Each operating system has a slightly different set of commands for the command l
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
+
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska
 ```
 
-If you're on Windows:
+<!--endsec-->
+
+
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska
 ```
+<!--endsec-->
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
@@ -116,6 +146,8 @@ You'll probably see something similar on your machine. Once you open the command
 
 So what's in it? It'd be cool to find out. Let's see:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ ls
@@ -125,8 +157,10 @@ Downloads
 Music
 ...
 ```
+<!--endsec-->
 
- Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -138,6 +172,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
+<!--endsec-->
 
 ---
 
@@ -145,33 +180,42 @@ Music
 
 Now, let's go to our Desktop directory:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ cd Desktop
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd Desktop
 ```
+<!--endsec-->
 
 Check if it's really changed:
+
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
 ```
+<!--endsec-->
 
 Here it is!
 
@@ -183,17 +227,22 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ mkdir practice
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > mkdir practice
 ```
+<!--endsec-->
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
@@ -207,6 +256,8 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 #### Solution:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ cd practice
@@ -214,8 +265,10 @@ $ mkdir test
 $ ls
 test
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -224,6 +277,7 @@ Windows:
 > dir
 05/08/2014 07:28 PM <DIR>      test
 ```
+<!--endsec-->
 
 Congrats! :)
 
@@ -235,66 +289,86 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ..
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd ..
 ```
+<!--endsec-->
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
 Check where you are:
+
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
 ```
+<!--endsec-->
 
 Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ rm -r practice
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > rmdir /S practice
 practice, Are you sure <Y/N>? Y
 ```
+<!--endsec-->
 
 Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="OS X and Linux" data-id="intro_command_line_OSX_Linux" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ ls
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > dir
 ```
+<!--endsec-->
 
 ### Exit
 
@@ -304,13 +378,16 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 ```
 $ exit
 ```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="intro_command_line_windows" data-collapse=true ces-->
+
 
 {% filename %}command-line{% endfilename %}
 ```
 > exit
 ```
+<!--endsec-->
 
 Cool, huh? :)
 

@@ -16,19 +16,25 @@ The names of some files and directories are very important for Django. You shoul
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `myvenv\Scripts\activate` on Windows or
 `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
+<!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+
 In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
+<!--endsec-->
 
-On Windows **(again, don't forget to add the period (or dot) `.` at the end)**:
+<!--sec data-title="Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 ```
+<!--endsec-->
 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
