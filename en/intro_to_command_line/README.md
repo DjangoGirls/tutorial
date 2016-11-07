@@ -53,7 +53,7 @@ $
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows-prompt2" data-collapse=true ces-->
+<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 
 On Windows, it's a `>` sign, like this:
