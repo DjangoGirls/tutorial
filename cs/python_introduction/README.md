@@ -519,13 +519,13 @@ Pokud máš soubor uložen, je čas jej spustit! Pomocí dovedností, které jsi
 Na Macu bude příkaz vypadat přibližně takto:
 
 ```
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
 ```
 
 Na Linuxu to bude vypadat takto (slovo "Desktop" (Plocha) může být přeloženo do tvého jazyka):
 
 ```
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
 ```
 
 A na Windows to bude vypadat takto:

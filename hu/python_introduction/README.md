@@ -477,12 +477,12 @@ Most hogy a fájl el van mentve, itt az ideje, hogy lefuttassuk. Felhaszálva a 
 
 Mac-en a parancs valahogy így néz ki:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 Linuxon így (A "Desktop" lehet, hogy le van fordítva a te nyelvedre):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 És Windowson így néz ki:

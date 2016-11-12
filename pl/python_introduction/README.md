@@ -478,12 +478,12 @@ Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości 
 
 Na Macu polecenie będzie wyglądać mniej-więcej tak:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 A w systemie Windows będzie to wyglądać tak:
