@@ -77,6 +77,15 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
+When we deploy our website (which we'll do soon!), we need configure which URLs will potentially be used to access it.  For now, we'll tell Django to allow this website to be served from any URL.  To do this, find the line (near the beginning of the file)that contains `ALLOWED_HOSTS` and modify it to look like this:
+
+{& filename %}mysite/settings.py{% endfilename %}
+```python
+ALLOWED_HOSTS = ['*']
+```
+
+Note that putting a `'*'` in this list is potentially a security risk, but we'll leave it like that for now because we don't yet know the URL that we'll actually be using to access the website when we deploy it.  If you're curious about why this is a security risk, take a look the [https://docs.djangoproject.com/en/1.9/ref/settings/#allowed-hosts](Django documentation for this setting).
+
 We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
