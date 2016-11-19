@@ -4,13 +4,13 @@ Vous vous demandez sûrement ce qu'est un template.
 
 Un template est un fichier que vous pouvez réutiliser afin de présenter des informations différentes sous un seul et même format. Par exemple, vous pourriez avoir envie d'utiliser un template pour écrire une lettre : bien que son contenu varie ou qu'elle puisse être adressée à des personnes différentes, sa forme reste la même.
 
-Le format d'un template Django est décrit grâce à un langage qui s'appelle HTML (c'est le même HTML que celui dont nous parlions dans le chapitre un, **Comment Internet marche**).
+Le format d'un template Django est décrit grâce à un langage qui s'appelle HTML (c'est le même HTML que celui dont nous parlions dans le chapitre un, **Comment fonctionne l'Internet**).
 
 ## Qu'est-ce que le HTML ?
 
 HTML est un code simple qui est interprété par votre navigateur (Chrome, Firefox ou Safari) et qui permet d'afficher une page web à l'utilisateur.
 
-HTML est l'abréviation de "HyperText Markup Language." **HyperText** signifie que s'est un type de texte qui supporte les hyperliens entre les pages. **Markup** signifie que nous avons pris un document et que nous avons balisé le code pour signifier (ici, au navigateur) comment il faut interpréter la page. Le code HTML est construit à l'aide de **balises**, chacune commençant par `<` et finissant par `>`. Ces balises permettent de structurer les **éléments**.
+L'abréviation HTML signifie « HyperText Markup Language ». **HyperText** signifie que c'est un type de texte qui supporte les hyperliens entre les pages. **Markup** signifie que nous avons pris un document et que nous avons balisé le code pour signifier (ici, au navigateur) comment il faut interpréter la page. Le code HTML est construit à l'aide de **balises**, chacune commençant par `<` et finissant par `>`. Ces balises représentent des **éléments** markup.
 
 ## Votre premier template !
 
@@ -21,15 +21,15 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
     blog
     └───templates
         └───blog
-    
+
 
 Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
-Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `blog/templates/blog`.
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
-> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande, arrêtez votre server en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier) et relancer le en tapant la commande `python manage.py runserver`.
+> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande et arrêtez votre serveur en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
 
 ![Figure 11.1][1]
 
@@ -39,11 +39,12 @@ Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien
 
 Ajoutez ce qui suit à votre fichier template :
 
-    <html>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </html>
-    
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
 Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http://127.0.0.1:8000/
 
@@ -68,16 +69,17 @@ Nous utilisons `<head>` pour transmettre la configuration de la page au navigate
 
 Par exemple, vous pouvez donner un titre à votre site en utilisant l'élément titre dans le `<head>` :
 
-    <html>
-        <head>
-            <title>Le blog d'Ola</title>
-        </head>
-        <body>
-            <p>Salut !</p>
-            <p>Ça marche :)</p>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Le Blog d'Ola</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
 
 Sauvegardez votre fichier et actualisez la page.
 
@@ -103,40 +105,41 @@ Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser not
 *   `<em>texte</em>` permet de mettre l'accent sur une partie du texte
 *   `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
 *   `<br />` permet d'insérer un saut de ligne (vous ne pouvez rien mettre à l'intérieur d'un élément br)
-*   `<a href="http://djangogirls.org">link</a>` permet de créer un lien
+*   `<a href="https://djangogirls.org">link</a>` permet de créer un lien
 *   `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
 *   `<div></div>` permet de créer une section au sein de la page
 
 Voici un exemple de template utilisant plusieurs balises :
 
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">Mon premier post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">Mon second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Mon second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Nous avons créé trois sections à l'aide de `div`.
 
-*   Le premier `div` contient le titre de notre blogpost - c'est un titre et un lien
-*   Les deux autres `div` contiennent nos blogposts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre blogpost.
+*   Le premier `div` contient le titre de notre blog - c'est à la fois un titre et un lien
+*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p` (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 
@@ -146,39 +149,61 @@ Ce qui nous donne :
 
 Yaaay ! Pour l'instant, notre template nous permet seulement d'afficher les **mêmes informations** alors que nous disions précédemment qu'il doit nous permettre d'afficher des informations **différentes** utilisant le **même format**.
 
-Ce qu'on aimerait pouvoir maintenant, c'est afficher les posts que nous avons créés précédemment dans l'interface d'administration de Django. Et si nous nous penchions là dessus ?
+Ce qu'on aimerait pouvoir maintenant, c'est afficher les posts que nous avons créés précédemment dans l'interface d'administration de Django. Penchons-nous là dessus.
 
-## Encore une chose !
+## Une dernière chose : déployer !
 
-Ce serait bien de savoir si notre site web sera toujours capable de fonctionner correctement une fois sur Heroku. Essayons de le déployer à nouveau.
+Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, déployons à nouveau !
 
-Tout d'abord, regardons quels fichiers ont été modifiés depuis notre dernier déploiement :
+### Commiter et pusher votre code sur GitHub
 
-    $ git status
-    
-
-Maintenant, essayons de dire à `git` que nous voulons inclure les changements qui ont eu lieu dans le dossier courant :
-
-    $ git add -A .
-    
-
-> **Note** `-A` (abréviation de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
-
-Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaître en vert) :
+Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
     $ git status
-    
+
+
+Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
+
+    $ git add --all .
+
+
+> **Note** `--all` (traduction de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
+
+Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaitre en vert) :
+
+    $ git status
+
 
 On y est presque : nous devons maintenant lui dire de sauvegarder ces changements dans son historique. Nous allons y ajouter un "message de commit" qui nous permettra de décrire ce qui a été changé. Vous pouvez mettre ce que vous voulez dans un message de commit. Généralement, il est préférable de mettre quelque chose d'utile qui vous permettra de vous souvenir plus tard de ce que vous avez fait.
 
     $ git commit -m "Modification du HTML du site"
-    
+
 
 > **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
-Une fois que vous avez terminé, vous pouvez enfin uploader (pusher) vos modifications sur Heroku :
+Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos modifications sur GitHub :
 
-    git push heroku master
-    
+    git push
 
-Normalement, ça devrait marcher ! Une fois qu'Heroku a terminé, vous pouvez utiliser votre navigateur pour aller sur la page de votre site et la rafraîchir. Normalement, vous devriez constater du changement !
+
+### Puller les modifications sur PythonAnywhere et recharger son appli web
+
+*   Allez sur la page des [consoles de PythonAnywhere][5]. Retournez dans votre **console Bash** ou ouvrez-en une nouvelle puis tapez la commande suivante :
+
+ [5]: https://www.pythonanywhere.com/consoles/
+
+    $ cd ~/my-first-blog
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+
+
+Voilà ! Votre code modifié est téléchargé. Si vous voulez vérifier ce que vous venez de récupérer, vous pouvez aller jeter un coup d’œil dans l'onglet **Files** de PythonAnywhere.
+
+*   Pour finir, n'oubliez pas de recharger votre application web : onglet [web][6] puis cliquez sur le bouton **Reload**.
+
+ [6]: https://www.pythonanywhere.com/web_app_setup/
+
+Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aide à votre coach :)

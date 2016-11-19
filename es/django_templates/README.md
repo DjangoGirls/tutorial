@@ -1,24 +1,24 @@
 # Plantillas de Django
 
-Es hora de mostrar algunos datos! Django nos da algo de ayuda, construyendo **template tags** para ello.
+¡Es hora de mostrar algunos datos! Django nos provee las útiles **template tags** para ello.
 
-## ¿Qué son las etiquetas de plantilla?
+## ¿Qué son las template tags?
 
-Verás en HTML, no puedes realmente poner código Python, porque los navegadores no lo entienden. Ellos sólo saben HTML. Sabemos que HTML es algo estático, mientras que Python es mucho más dinámico.
+Verás, en HTML no puedes realmente poner código Python, porque los navegadores no lo entienden. Ellos sólo saben HTML. Sabemos que HTML es algo estático, mientras que Python es mucho más dinámico.
 
-**Etiquetas de plantilla Django** nos permiten transferir Python-como cosas en HTML, así que usted puede construir sitios web dinámicos más rápido y fácil. ¡Huy!
+**Django template tags** nos permiten transferir cosas de Python como cosas en HTML, así que tu puedes construir sitios web dinámicos más rápido y fácil.
 
-## Plantillas de listas de Post
+## Mostrar la plantilla post list
 
-En el capítulo anteriordimos a nuestra plantilla una lista de posts en la variable `posts`. Ahora lo mostraremos en HTML.
+En el capítulo anterior dimos a nuestra plantilla una lista de posts en la variable `posts`. Ahora lo mostraremos en HTML.
 
-Para imprimir una variable en la plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
+Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
 
-```html
-{{ posts }}
-```
+``` html
+    {{ posts }}
+```    
 
-Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza todo entre la segunda etiqueta `<div></div>` con `{{ posts }}`), guarda el archivo y actualiza la página para ver el resultado:
+Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza el segundo y el tercer par de etiquetas `<div></div>` con la línea `{{ posts }}`), guarda el archivo y actualiza la página para ver los resultados:
 
 ![Figura 13.1][1]
 
@@ -26,70 +26,81 @@ Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza todo
 
 Como puedes ver, todo lo que obtenemos es esto:
 
-    [<post: mi segundo post>, <Post: mi primer post>]
+    [<Post: Mi segundo post>, <Post: Mi primer post>]
+    
 
+Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python** cómo podemos mostrar listas? Sí, ¡con los ciclos for! En una plantilla de Django, lo haces de esta manera:
 
-Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python,** ¿cómo podemos mostrar listas? Sí, con el ciclo for! En una plantilla de Django, los haces de esta manera:
+``` html
+    {% for post in posts %}
+        {{ post }}
+    {% endfor %}
+``` 
 
-```html
-{% for post in posts %} {{ post }}{% endfor %}
-```
-
-
-Pruebe esto en tu plantilla.
+Prueba esto en tu plantilla.
 
 ![Figura 13.2][2]
 
  [2]: images/step2.png
 
-¡Funciona! Pero queremos que se muestre como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
+¡Funciona! Pero queremos que se muestren como los posts estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Puedes mezclar HTML y template tags. Nuestro `body` se verá así:
 
-```html
-<div>
-    <h1>
-        <a href = "/">Django chicas Blog</a>
-    </h1>
-</div>
-{% for post in posts %}
+``` html
     <div>
-        <p> publicado: {{ post.published_date }} </p>
-        <h1>
-            <a href="">{{ post.title }}</a>
-        </h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-{% endfor %}
-```
+    
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+```    
 
-
-Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualizar la página:
+Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto en la lista. Actualiza tu página:
 
 ![Figura 13.3][3]
 
  [3]: images/step3.png
 
-¿Has notado que utilizamos una notación diferente esta vez `{{ post.title }}` o `{{ post.text }}`? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaks` es un filtro para convertir saltos de línea en los párrafos.
+¿Has notado que utilizamos una notación diferente esta vez `{{ post.title }}` o `{{ post.text }}`? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está dirigiendo el texto de los posts a través de un filtro para convertir saltos de línea en párrafos.
 
 ## Una cosa más
 
-Sería bueno ver si tu sitio sigue funcionando en Heroku, ¿no? Intentemos implementarlo nuevamente. Si olvidaste como hacerlo, revisa el final del capítulo 15:
+Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿verdad? Intentemos desplegándola en PythonAnywhere nuevamente. Aquí te dejamos un ayuda memoria...
 
-```bash
+*   Primero, sube tu código a GitHub
+
+```
 $ git status
-...
-$ git add -A .
+[...]
+$ git add --all .
 $ git status
-...
-$ git commit -m "Used Django templates instead of static HTML."
-...
-$ git push heroku master
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
 ```
 
+*   Luego, identifícate en [PythonAnywhere][4] y ve a tu **consola Bash** (o empieza una nueva), y ejecuta:
 
-¡Felicidades! Ahora seguir adelante y trata de agregar un nuevo post en tu administración de Django (recuerda añadir published_date!), luego actualizar tu página para ver si aparece el nuevo post.
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
-¿Funciona bien? Estamos orgullosos! Regálate algo dulce, te lo has ganado :)
+*   Finalmente, ve a la [pestaña Web][5] y presiona **Reload** en tu aplicación web. ¡Tu actualización debería poder verse!
 
-![Figura 13.4][4]
+ [4]: https://www.pythonanywhere.com/consoles/
+ [5]: https://www.pythonanywhere.com/web_app_setup/
 
- [4]: images/donut.png
+¡Felicidades! Ahora sigue adelante, trata de agregar un nuevo post usando el panel de administrador de Django (¡recuerda añadir published_date!) y luego actualiza tu página para ver si aparece tu nuevo post.
+
+¿Funciona como un encanto? ¡Estamos orgullosos! Aléjate de tu computadora por un rato, te has ganado un descanso. :)
+
+![Figura 13.4][6]
+
+ [6]: images/donut.png

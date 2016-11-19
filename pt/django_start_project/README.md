@@ -1,6 +1,6 @@
 # Seu primeiro projeto Django!
 
-> Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (http://django.carrots.pl/).
+> Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parte deste capítulo é baseado no [django-marcador tutorial][1] licenciado sobre Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
 
@@ -23,7 +23,7 @@ No console, você deve executar (Lembre-se de que você não pode digitar `~/dja
 
 no Windows:
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+    (myvenv) C:\Users\Name\djangogirls> python myvenv\Scripts\django-admin.py startproject mysite .
     
 
 `Django-admin` é um script que irá criar os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
@@ -49,17 +49,17 @@ Vamos ignorar os outros arquivos por agora - nós não vamos mudá-los. A única
 
 Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando o editor de código que você instalou anteriormente.
 
-Seria bom ter a hora correta no nosso site. Vá para a <[wikipedia timezones list][2] e copie seu fuso horário. (por exemplo. `Europa/Berlim`)
+Seria bom ter a hora correta no nosso site. Vá para a <[wikipedia timezones list][2] e copie seu fuso horário. (por exemplo. `America/Sao_Paulo`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Em settings.py, localize a linha que contém `TIME_ZONE` e modifique para escolher seu próprio fuso horário:
 
 ```python
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'America/Sao_Paulo'
 ```    
 
-Modifique "Europa/Berlim", conforme o caso
+Modifique "America/Sao_Paulo", conforme o caso
 
 Nós também precisaramos adicionar um caminho para arquivos estáticos (nós vamos descobrir tudo sobre arquivos estáticos e CSS mais tarde no tutorial). Desça até o *final* do arquivo e logo abaixo da entrada `STATIC_URL`, adicione um novo um chamado `STATIC_ROOT`:
 
@@ -70,7 +70,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 ## Instalação de um banco de dados
 
-Há um monte de software de banco de dados diferente que pode armazenar dados para o seu site. Nós vamos usar o padrão, `sqlite3`.
+Há vários softwares de banco de dados diferentes que pode armazenar dados para o seu site. Nós vamos usar o padrão, `sqlite3`.
 
 Isto já está configurado nesta parte do seu arquivo `mysite/settings.py`:
 

@@ -157,7 +157,7 @@ Windows:
     > mkdir djangogirls
     
 
-Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ele está lá, só de olhar na sua área de trabalho ou executando um comando `ls`/`dir`! Experimente :)
+Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ele está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 

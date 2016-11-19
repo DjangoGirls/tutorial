@@ -6,7 +6,7 @@ C'est ce que nous allons voir dans ce chapitre : comment acheter un nom de domai
 
 ## Où enregistrer son nom de domaine ?
 
-Un nom de domaine coûte environ 15$ par an. Vous pouvez en trouver des plus cher ou des moins cher, tout dépend de votre provider. Il existe de très nombreuses compagnies spécialisées dans l'enregistrement de nom de domaine : une simple recherche sur [Google][1] vous listera plusieurs centaines de possibilités.
+Un nom de domaine coûte environ 15$ par an. Vous pouvez en trouver des plus ou moins cher : tout dépend de votre provider. Il existe de très nombreuses compagnies spécialisées dans l'enregistrement de nom de domaine : une simple recherche sur [Google][1] vous listera plusieurs centaines de possibilités.
 
  [1]: https://www.google.com/search?q=register%20domain
 
@@ -18,7 +18,7 @@ Notre petit favori est [I want my name][2]. Ils revendiquent un "management de n
 
 Allez sur [iwantmyname][3] et tapez le nom de domaine que vous souhaiteriez enregistrer dans le champ de recherche.
 
- [3]: http://iwantmyname.com
+ [3]: https://iwantmyname.com
 
 ![][4]
 

@@ -1,12 +1,12 @@
 # Introdução ao Python
 
-> Parte deste capítulo é baseado nos Tutoriais de Geek Girls Carrots (http://django.carrots.pl/).
+> Parte deste capítulo é baseado nos Tutoriais de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Vamos escrever um pouco de código!
 
 ## Interpretador Python
 
-Para começar a brincar com Python nós precisamos abrir uma *linha de comando* no seu computador. Você já sabe dever como fazer isso -- você aprendeu isso no capítulo  [Introdução à Linha de Comando][2].</p> 
+Para começar a brincar com Python nós precisamos abrir uma *linha de comando* no seu computador. Você já deve saber como fazer isso -- você aprendeu isso no capítulo  [Introdução à Linha de Comando][2].
 Assim que estiver pronto, siga as instruções abaixo.
 
 Nós queremos abrir o Python num terminal, então digite `python3` e tecle Enter.
@@ -127,27 +127,27 @@ Um conceito importante na programação é o conceito de variáveis. Uma variáv
 
 Digamos que queremos criar uma nova variável chamada `nome`:
 
-    >>> name = "Ola"
+    >>> nome = "Ola"
     
 
 Vê? É fácil! É só fazer: nome igual a Ola.
 
 Como você percebeu, seu programa não retornou nada como fez anteriormente. Então como sabemos que a variável realmente existe? Simplesmente digite `nome` e tecle Enter:
 
-    >>> name
+    >>> nome
     'Ola'
     
 
-Yippee! Sua primeira variável:)! Você sempre pode mudar o seu valor:
+Yippee! Sua primeira variável! :) Você sempre pode mudar o seu valor:
 
-    >>> name = "Sonja"
-    >>> name
+    >>> nome = "Sonja"
+    >>> nome
     'Sonja'
     
 
 Você pode usá-la também em funções:
 
-    >>> len(name)
+    >>> len(nome)
     5
     
 
@@ -176,14 +176,14 @@ Brinque com isso por um tempo e veja o que você consegue fazer!
 
 Tente isso:
 
-    >>> name = 'Maria'
-    >>> name
+    >>> nome = 'Maria'
+    >>> nome
     'Maria'
-    >>> print(name)
+    >>> print(nome)
     Maria
     
 
-Quando você apenas digita `name`, o interpretador Python responde com a *representação* como string da variável 'name', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(name)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
+Quando você apenas digita `nome`, o interpretador Python responde com a *representação* como string da variável 'name', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(nome)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções, ou quando queremos imprimir algo em várias linhas.
 
@@ -199,23 +199,23 @@ Vá em frente e crie uma lista:
 
 Sim, esta é uma lista vazia. Não é muito, não é? Vamos criar uma lista dos números da loteria. Como não queremos ficar repetindo o código todo o tempo vamos criar uma variável para ela:
 
-    >>> lottery = [3, 42, 12, 19, 30, 59]
+    >>> loteria = [3, 42, 12, 19, 30, 59]
     
 
 Tudo certo, nós temos uma lista! O que podemos fazer com isso? Vamos ver quantos números de loteria existem nesta lista. Você tem ideia de qual função deve usar para isso? Você já sabe disso!
 
-    >>> len(lottery)
+    >>> len(loteria)
     6
     
 
 Sim! `len()` pode te dar o número de objetos que fazem parte de uma lista. Uma mão na roda, não? Vamos organizar isso agora:
 
-    >>> lottery.sort()
+    >>> loteria.sort()
     
 
 Isso não retorna nada, apenas troca a ordem em que os números aparecem na lista. Vamos imprimir isso outra vez e ver o que acontece:
 
-    >>> print(lottery)
+    >>> print(loteria)
     [3, 12, 19, 30, 42, 59]
     
 
@@ -223,23 +223,23 @@ Como você pode ver, os números na nossa lista estão ordenados do menor para o
 
 Talvez a gente queira inverter essa ordem? Vamos fazer isso!
 
-    >>> lottery.reverse()
-    >>> print(lottery)
+    >>> loteria.reverse()
+    >>> print(loteria)
     [59, 42, 30, 19, 12, 3]
     
 
 Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode fazer isto digitando o seguinte comando:
 
-    >>> lottery.append(199)
-    >>> print(lottery)
+    >>> loteria.append(199)
+    >>> print(loteria)
     [59, 42, 30, 19, 12, 3, 199]
     
 
-Se você quiser mostrar apenas o primeiro número você pode usar **indices**. Um índice é um número que diz onde um item da lista está. Os computadores gostam de iniciar a contagem por 0, então o primeiro objeto tem índice 0, o próximo tem índice 1 e por aí vai. Tente isso:
+Se você quiser mostrar apenas o primeiro número você pode usar **índices**. Um índice é um número que diz onde um item da lista está. Os computadores gostam de iniciar a contagem por 0, então o primeiro objeto tem índice 0, o próximo tem índice 1 e por aí vai. Tente isso:
 
-    >>> print(lottery[0])
+    >>> print(loteria[0])
     59
-    >>> print(lottery[1])
+    >>> print(loteria[1])
     42
     
 
@@ -261,7 +261,7 @@ Isso mostra que você acabou de criar um dicionário vazio. Hurra!
 
 Agora, tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
 
-    >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+    >>> participante = {'nome': 'Ola', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
     
 
 Com esse comando, você acabou de criar uma variável chamada `participant` com três pares de chave-valor:
@@ -272,7 +272,7 @@ Com esse comando, você acabou de criar uma variável chamada `participant` com 
 
 Você pode checar o conteúdo de chaves individuais com a sintaxe:
 
-    >>> print(participant['name'])
+    >>> print(participante['nome'])
     Ola
     
 
@@ -280,13 +280,13 @@ Veja, é similar a uma lista. Mas você não precisa lembrar o índice - apenas 
 
 O que acontece se pedirmos ao Python o valor de uma chave que não existe? Você consegue adivinhar? Vamos tentar e descobrir!
 
-    >>> participant['age']
+    >>> participante['idade']
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    KeyError: 'age'
+    KeyError: 'idade'
     
 
-Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'age'` não existe no nesse dicionário.
+Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe nesse dicionário.
 
 Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
 
@@ -295,34 +295,32 @@ Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense e
 
 Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depois que são criados. Você pode adicionar novos pares de chave/valor para o dicionário após sua criação, como:
 
-    >>> participant['favorite_language'] = 'Python'
+    >>> participante['linguagem_favorita'] = 'Python'
     
 
 Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionario. Vá em frente e digite o comando:
 
-    >>> len(participant)
+    >>> len(participante)
     4
     
 
 Espero que agora faça sentido até agora. :) Pronta para mais diversão com dicionários? Pule na próxima linha para coisas incríveis.
 
-Você pode usar o comando `del` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'favorite_numbers'`, basta digitar o seguinte comando:
+Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
 
-    >>> del participant['favorite_numbers']
-    >>> participant
-    {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
-    
+    >>> participante.pop('numeros_favoritos')
+    >>> participante
+    {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
 
-Como você pode ver no retorno, o par chave-valor correspondente à chave 'favorite_numbers' foi excluído.
+Como você pode ver no retorno, o par chave-valor correspondente à chave 'numeros_favoritos' foi excluído.
 
 Além disso você pode mudar o valor associado com uma chave já criada no dicionário. Digite:
 
-    >>> participant['country'] = 'Germany'
-    >>> participant
-    {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
-    
+    >>> participante['pais'] = 'Alemanha'
+    >>> participante
+    {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
 
-Como você pode ver, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
+Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
@@ -393,7 +391,7 @@ Já ouviu a expressão "comparar maçãs com laranjas"? Vamos tentar o equivalen
     TypeError: unorderable types: int() > str()
     
 
-Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str</0)>.
+Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str`).
 Em vez disso, ele mostrou um <strong>TypeError</strong> e nos disse que os dois tipos não podem ser comparados juntos.</p>
 
 <h2>Booleano</h2>
@@ -433,20 +431,20 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 Até agora nós escrevemos todo nosso código em um interpretador python, que nos limita a uma linha de código em um momento. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora já corremos nossos programas de uma linha de cada vez no **interpretador** Python. Nós vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
-*   Saída do interpretador Python
-*   Abra seu editor de código de sua escolha
-*   Salvar algum código em um novo arquivo de python
+*   Sair do interpretador Python
+*   Abrir o editor de código de sua escolha
+*   Salvar algum código em um novo arquivo python
 *   Executá-lo!
 
-Para sair do interpretador Python que estamos usando, simplesmente digite o ~~~ exit() ~~~ função:
+Para sair do interpretador Python que estamos usando, simplesmente digite a função `exit()`:
 
     >>> exit()
     $
     
 
-Isso vai colocá-lo no prompt de comando.
+Isso vai colocá-la no prompt de comando.
 
-Anteriormente, nós escolhemos um editor de código da seção do [editor de código][4]. Nós precisamos abrir o editor agora e escrever algum código em um novo arquivo:</p> 
+Anteriormente, nós escolhemos um editor de código da seção do [editor de código][4]. Nós precisamos abrir o editor agora e escrever algum código em um novo arquivo:
 ```python
 print('Hello, Django girls!')
 ```
@@ -476,13 +474,13 @@ E no windows, vai ser assim:
 
 Se você ficar preso, só pedir ajuda.
 
-e, em seguida, usar o Python para executar o código no arquivo assim:
+Em seguida, usar o Python para executar o código no arquivo assim:
 
     $ python3 python_intro.py
     Hello, Django girls!
     
 
-Tudo bem! Você acabou de seu primeiro programa em python que foi salvo em um arquivo. Me sinto ótimo?
+Tudo bem! Você acabou de executar seu primeiro programa em python que foi salvo em um arquivo. Se sente ótima?
 
 Você pode agora passar para uma ferramenta essencial na programação:
 
@@ -504,14 +502,13 @@ Se salvou este e ele foi executado, nós veríamos um erro como este:
     SyntaxError: unexpected EOF while parsing
     
 
-Python espera que fornecemos mais instruções que serão supostamente executadas caso a condição `3 > 2` venha a ser verdadeira (ou `True` nesse caso). Vamos tentar fazer o Python imprimir "It works!". Altere o seu código no seu arquivo **python_intro.py** para isto:
+Python espera que nós forneçamos mais instruções que serão supostamente executadas caso a condição `3 > 2` venha a ser verdadeira (ou `True` nesse caso). Vamos tentar fazer o Python imprimir "It works!". Altere o seu código no seu arquivo **python_intro.py** para isto:
 
 ```python
 if 3 > 2:
     print('It works!')
 ```
-
-Observe como podemos ter recuado a próxima linha de código por 4 espaços? Precisamos fazer isso para que Python sabe que código a ser executado se o código resulta em true. Você pode fazer um espaço, mas quase todos os programadores Python fazem com 4 para tornar as coisas um olhar puro. Um único tab também vai contar como 4 espaços.
+Você percebeu que identamos a próxima linha com 4 espaços? Precisamos fazer isso para que o Python saiba qual código será executado se o resultado for True. Você pode fazer com 1 espaço, mas quase todos os programadores Python fazem com 4 para deixar as coisas arrumadas. Um único tab também vai contar como 4 espaços.
 
 Salvá-lo e execute novamente:
 
@@ -525,15 +522,15 @@ Nos exemplos anteriores, o código foi executado somente quando as condições e
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 é realmente maior que 2')
 else:
-    print('5 is not greater than 2')
+    print('5 não é maior que 2')
 ```
 
 Quando for executado irá imprimir:
 
     $ python3 python_intro.py
-    5 e maior que 2
+    5 é realmente maior que 2
     
 
 Se 2 for um número maior do que 5, então o segundo comando será executado. Fácil, né? Vamos ver como funciona o `elif`:
@@ -563,7 +560,7 @@ Nos últimos três exercícios você aprendeu:
 *   **comparar as coisas** - em Python, você pode comparar as coisas usando os operadores `>`, `>=`, `==`, `<=`, `<` e o `and`, `or`
 *   **Booleano** - um tipo de objeto que só tem um dos dois valores: `True` ou `False`
 *   **Salvando arquivos** - armazenamento de código em arquivos assim você pode executar programas maiores.
-*   **if... elif... else**-instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
+*   **if... elif... else** - instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
 
 É hora da última parte deste capítulo!
 
@@ -571,7 +568,7 @@ Nos últimos três exercícios você aprendeu:
 
 Se lembra de funções como `len()` que você pode executar no Python? Bem, boas notícias, agora você vai aprender a escrever suas próprias funções!
 
-Uma função é um sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra-chave `def`, seguido de um nome para a função e opcionalmente uma lista de parâmetros. Vamos começar com uma função simples. Substitua o código no **python_intro.py** com o seguinte:
+Uma função é uma sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra-chave `def`, seguido de um nome para a função e opcionalmente uma lista de parâmetros. Vamos começar com uma função simples. Substitua o código no **python_intro.py** com o seguinte:
 
 ```python
 def hi():
@@ -583,7 +580,7 @@ hi()
 
 Ok, nossa primeira função está pronta!
 
-Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa-lo de cima para baixo. Então, para usar a nossa função, temos re-escrevê-lo na parte inferior.
+Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa de cima para baixo. Então, para usar a nossa função, temos de escrevê-lo na parte inferior.
 
 Vamos executa-lo agora e ver o que acontece:
 
@@ -645,12 +642,12 @@ e executá-lo:
     Hi Sonja!
     
 
-Agora, o que acha que vai acontecer se você escrever outro nome lá? (Não Ola ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
+Agora, o que acha que vai acontecer se você escrever outro nome lá? (Sem ser Ola ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
 
     Hi anonymous!
     
 
-Isto é incrível, não? Dessa maneira você não precisa se repetir (DRY - don't repeat yourself) cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você nunca quer repetir seu código!
+Isto é incrível, não? Dessa maneira você não precisa se repetir (DRY - don't repeat yourself, ou em português, não se repita) cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você nunca quer repetir seu código!
 
 Vamos fazer algo mais inteligente..--existem mais que dois nomes, e escrever uma condição para cada um seria difícil, certo?
 
@@ -687,7 +684,7 @@ Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fa
 for name in girls:
 ```
 
-O ~~~ for ~~~ declaração se comporta da mesma forma para o ~~~ if ~~~ declaração, código abaixo esses dois precisam ser recuados quatro espaços.
+O `for` se comporta da mesma forma que o `if`, o código abaixo esses dois precisam ser recuados quatro espaços.
 
 Aqui está o código completo que será salvo no arquivo:
 
@@ -740,11 +737,11 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 ## Sumário
 
-É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhoso de si mesmo. Estamos definitivamente orgulhosos de você por ter chegado até aqui!
+É isso. **Você é totalmente demais!** Não é tão fácil, então você deve se sentir orgulhosa de si mesma. Estamos definitivamente orgulhosas de você por ter chegado até aqui!
 
 Talvez você queira brevemente fazer algo mais - espreguiçar, andar um pouco, descansar os olhos - antes de ir para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)
 
  [2]: /intro_to_command_line/README.html
- [4]: code_editor/README.md
+ [4]: ../code_editor/README.md
