@@ -105,7 +105,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 *   `<em>text</em>` 텍스트를 강조할 때 사용하는 태그
 *   `<strong>text</strong>` 여러분의 텍스트를 강력하게 강조할 때 사용하는 태그
 *   `<br />` 개행. 행을 내누기(br 태그 안에는 속성으로 아무 것도 넣을 수 없습니다.)
-*   `<a href="http://djangogirls.org">link</a>` 링크 걸기
+*   `<a href="https://djangogirls.org">link</a>` 링크 걸기
 *   `<ul><li>first item</li><li>second item</li></ul>` 목록을 만듭니다. 지금 여러분이 보고 있는 목록처럼요!
 *   `<div></div>` 페이지의 섹션을 정의합니다.
 
@@ -164,7 +164,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 `djangogirls` 디렉토리에서 `git`에게 현재 폴더에 있는 모든 변경 내용을 포함라고 말합니다.
 
-    $ git add -A .
+    $ git add --all .
 
 
 > **Note** `-A` ("all"의 축약어) 는 `git`이 삭제한 파일을 인식합니다. (기본적으로, 새로 추가하거나 변경한 파일만 인지합니다.) 또한 `.`의미가 현재 디렉토리라는 것을 기억하고 있죠? (3장에서 언급한 내용이에요.)

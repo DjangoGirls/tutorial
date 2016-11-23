@@ -6,11 +6,11 @@ Hasta ahora tu sitio web estaba disponible sólo en tu ordenador, ¡ahora aprend
 
 Como ya has aprendido, un sitio web tiene que estar en un servidor. Hay muchos proveedores, pero usaremos uno que tiene un proceso de despliegue relativamente simple: [PythonAnywhere][1]. PythonAnywhere es gratis para pequeñas aplicaciones que no tienen demasiados visitantes, definitivamente suficiente para este caso.
 
- [1]: http://pythonanywhere.com/
+ [1]: https://pythonanywhere.com/
 
 El otro servicio externo que vamos a utilizar es [GitHub][2], un servicio de alojamiento de código. Hay otras opciones por ahí, pero hoy en día casi todos los programadores tienen una cuenta de GitHub, ¡y ahora tú también la vas a tener!
 
- [2]: http://www.github.com
+ [2]: https://www.github.com
 
 Usaremos GitHub como paso intermedio para transportar nuestro código desde y hasta PythonAnywhere.
 
@@ -24,7 +24,7 @@ Git es un "sistema de control de versiones" usado por muchos programadores - es 
 
 Puedes descargar Git de [git-scm.com][3]. Puedes hacer clic en "Next" para todos los pasos excepto en uno; en el quinto paso titulado "Adjusting your PATH environment", elije "Run Git and associated Unix tools from the Windows command-line" (la última opción). Aparte de eso, los valores por defecto funcionarán bien. "Checkout Windows-style, commit Unix-style line endings" también está bien.
 
- [3]: http://git-scm.com/
+ [3]: https://git-scm.com/
 
 ### MacOS
 
@@ -86,7 +86,7 @@ Es buena idea utilizar el comando `git status` antes de `git add` o cuando no es
 
 Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comandos:
 
-    $ git add -A .
+    $ git add --all .
     $ git commit -m "Mi app Django Girls, primer commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -99,7 +99,7 @@ Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comando
 
 Visita [GitHub.com][4] y registra una nueva cuenta de usuario gratuita. Luego, crea un nuevo repositorio con el nombre "my-first-blog". Deja desmarcada la opción "Initialise with a README", deja la opción .gitignore en blanco (lo hemos hecho a mano) y deja la licencia como "None".
 
- [4]: http://www.github.com'
+ [4]: https://www.github.com
 
 ![][5]
 
@@ -157,7 +157,8 @@ Cuando te hayas registrado en PythonAnywhere serás redirigida a tu panel de con
 Descarguemos nuestro código desde GitHub a PythonAnywhere mediante la creación de un "clon" del repositorio. Escribe lo siguiente en la consola de PythonAnywhere:
 
     $ git clone https://github.com/<tu-usuario-github>/my-first-blog.git
-    
+
+> **Nota**: No pongas los símbolos < y >, solo escribe tu usuario.
 
 Esto va a descargar una copia de tu código en PythonAnywhere. Compruébalo escribiendo:
 
@@ -191,9 +192,9 @@ Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonA
     [...]
     Installing setuptools, pip...done.
     
-    20:20 ~ $ source myenv/bin/activate
+    20:20 ~ $ source myvenv/bin/activate
     
-    (mvenv)20:20 ~ $  pip install django whitenoise
+    (myvenv)20:20 ~ $  pip install django==1.8 whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8 whitenoise-1.0.6
@@ -224,11 +225,11 @@ Por ahora sólo necesitamos ejecutar en el servidor un comando adicional llamado
 
 Escribe "yes", ¡y ahí va! ¿No te encanta hacer que las computadoras impriman páginas y páginas de texto imposible de entender? Siempre hago ruiditos para acompañarlo. Brp, brp brp...
 
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/.virtualenvs/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
     
 
@@ -238,13 +239,13 @@ Aquí hay otra cosa que es diferente entre tu ordenador y el servidor: éste uti
 
 Así que inicializamos la base de datos en el servidor igual que lo hicimos en nuestro ordenador, con `migrate` y `createsuperuser`:
 
-    (mvenv)20:20 ~ $ python manage.py migrate
+    (myvenv)20:20 ~ $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
     
     
-    (mvenv)20:20 ~ $ python manage.py createsuperuser
+    (myvenv)20:20 ~ $ python manage.py createsuperuser
     
 
 ## Publicar nuestro blog como una aplicación web
@@ -265,9 +266,9 @@ Serás redirigida a la pantalla de configuración de PythonAnywhere para tu apli
 
  [10]: images/pythonanywhere_web_tab_virtualenv.png
 
-En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: */home/<your-username>/my-first-blog/myvenv/*
+En la sección "Virtualenv", haz clic en el texto rojo que dice "Enter the path to a virtualenv" (Introduce la ruta a un virtualenv) y escribe: `/home/<tu-usuario>/my-first-blog/myvenv/`
 
-> **Nota**: sustituye tu propio nombre de usuario como corresponda. Si cometes un error, PythonAnywhere te mostrará una pequeña advertencia.
+> **Nota**: sustituye tu propio nombre de usuario como corresponda. Si cometes un error, PythonAnywhere te mostrará una pequeña advertencia. ¡No olvides no teclear los simbolos < y >!
 
 ### Configurar el fichero WSGI
 
@@ -281,7 +282,7 @@ Elimina todo el contenido actual y reemplázalo con algo como esto:
     import os
     import sys
     
-    path = '/home/<tu-usuario>/my-first-blog'  # aquí utiliza tu propio usuario
+    path = '/home/<tu-usuario>/my-first-blog'  # aquí utiliza tu propio usuario, sin los simbolos < y >
     if path not in sys.path:
         sys.path.append(path)
     
@@ -314,4 +315,4 @@ Si aparece un error cuando intentas visitar tu sitio, el primer lugar que deber�
 
 La página por defecto de tu sitio debería decir "Welcome to Django", igual que en tu PC local. Intenta añadir `/admin/` al final de la URL y te redirigirá al panel de administración. Ingresa con tu nombre de usuario y contraseña y verás que puedes añadir nuevas entradas en el servidor.
 
-Date una *GRAN* palmada en la espalda; los despliegues en el servidor son una de las partes más complejas del desarrollo web y muchas veces a la gente le cuesta varios días tenerlo funcionando. Pero tú tienes tu sitio en vivo, en Internet de verdad, ¡así como suena!
+*¡Buen trabajo!* - los despliegues en el servidor son una de las partes más complejas del desarrollo web y muchas veces a la gente le cuesta varios días tenerlo funcionando. Pero tú tienes tu sitio en vivo, en Internet de verdad, ¡así como suena!

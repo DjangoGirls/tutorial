@@ -1,6 +1,6 @@
 # 나의 첫 번째 Django 프로젝트!
 
-> 이번 장은 Geek Girls Carrots (http://django.carrots.pl/) 의 튜토리얼을 바탕으로 작성되었습니다.
+> 이번 장은 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 의 튜토리얼을 바탕으로 작성되었습니다.
 >
 > 이번 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License를 준수하여 [django-marcador tutorial][1]을 바탕으로 작성되었습니다. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 
@@ -53,7 +53,7 @@
 
 웹사이트에 정확한 현재 시간을 넣으면 좋겠죠. [위키피디아 타임존 리스트][2]에 가서 해당 시간대(타임존) 를 복사하세요. (예: `Europe/Berlin`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당 시간대로 변경하세요.
 

@@ -106,7 +106,8 @@ Ou talvez nós queremos ver todos os posts que contenham a palavra 'title' no ca
 
 Você também pode obter uma lista de todos os posts publicados. Fazemos isso filtrando todos os posts com `published_date` definido no passado:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now()) []
 
 Infelizmente, nenhum dos nossos posts estão publicados ainda. Nós podemos mudar isso! Primeiro obtenha uma instância de um post que queremos publicar:
 

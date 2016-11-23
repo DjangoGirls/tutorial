@@ -22,7 +22,7 @@
                     {{ post.published_date }}
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     {% endblock content %}
@@ -54,7 +54,7 @@
 Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` в файл `blog/urls.py`. Файл должен выглядеть примерно так:
 
 ```python
-    from django.conf.urls import include, url
+    from django.conf.urls import url
     from . import views
 
     urlpatterns = [
@@ -83,7 +83,7 @@
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet:
 
-```
+```python
     Post.objects.get(pk=pk)
 ```
 
@@ -105,13 +105,13 @@
 
 Нам нужно открыть файл `blog/views.py` и добавить в него следующий код:
 
-```
+```python
     from django.shortcuts import render, get_object_or_404
 ```
 
 Рядом с другими строками, начинающимися с `from`. В конец же файла мы добавим наше новое *представление*:
 
-```
+```python
     def post_detail(request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/post_detail.html', {'post': post})
@@ -148,7 +148,7 @@
                 </div>
             {% endif %}
             <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}
 ```
@@ -171,7 +171,7 @@
 
 ```
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push

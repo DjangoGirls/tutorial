@@ -54,7 +54,7 @@ Prueba esto en tu plantilla.
         <div>
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```    
@@ -65,19 +65,32 @@ Todo lo que pones entre `{% for %}` y `{% endfor %}` se repetirá para cada obje
 
  [3]: images/step3.png
 
-¿Has notado que utilizamos una notación diferente esta vez `{{ post.title }}` o `{{ post.text }}`? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaks` está dirigiendo el texto de los posts a través de un filtro para convertir saltos de línea en párrafos.
+¿Has notado que utilizamos una notación diferente esta vez `{{ post.title }}` o `{{ post.text }}`? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está dirigiendo el texto de los posts a través de un filtro para convertir saltos de línea en párrafos.
 
 ## Una cosa más
 
 Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿verdad? Intentemos desplegándola en PythonAnywhere nuevamente. Aquí te dejamos un ayuda memoria...
 
 *   Primero, sube tu código a GitHub
-    
-    $ git status [...] $ git add -A . $ git status [...] $ git commit -m "Added views to create/edit blog post inside the site." [...] $ git push
+
+```
+$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
+```
 
 *   Luego, identifícate en [PythonAnywhere][4] y ve a tu **consola Bash** (o empieza una nueva), y ejecuta:
-    
-    $ cd my-first-blog $ git pull [...]
+
+```
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
 *   Finalmente, ve a la [pestaña Web][5] y presiona **Reload** en tu aplicación web. ¡Tu actualización debería poder verse!
 

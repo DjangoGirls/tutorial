@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0 Чтобы ознакомиться с содержанием этой лицензии, посети: http://creativecommons.org/licenses/by-sa/4.0/
+> Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0 Чтобы ознакомиться с содержанием этой лицензии, посети: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Введение
 
@@ -32,7 +32,7 @@
 
 Это руководство поддерживается [DjangoGirls][4]. Если ты нашла ошибки или хочешь обновить информацию, пожалуйста, [следуй этим рекомендациям][5].
 
- [4]: http://djangogirls.org/
+ [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## Хочешь помочь с переводом руководства на другие языки?

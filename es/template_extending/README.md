@@ -43,7 +43,7 @@ Luego ábrelo y copia todo lo que hay en `post_list.html` al archivo `base.html`
                                 {{ post.published_date }}
                             </div>
                             <h1><a href="">{{ post.title }}</a></h1>
-                            <p>{{ post.text|linebreaks }}</p>
+                            <p>{{ post.text|linebreaksbr }}</p>
                         </div>
                     {% endfor %}
                     </div>
@@ -89,7 +89,7 @@ Ahora guárdalo y abre tu archivo `blog/templates/blog/post_list.html` de nuevo.
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 ```
@@ -111,7 +111,7 @@ Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_lis
                     {{ post.published_date }}
                 </div>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     {% endblock content %}

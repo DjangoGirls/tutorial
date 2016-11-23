@@ -14,19 +14,19 @@ Gedit es un editor de código abierto, gratis, disponible para todos los sistema
 
  [1]: https://wiki.gnome.org/Apps/Gedit#Download
 
-## Sublime Text 2
+## Sublime Text 3
 
 Sublime Text es un editor muy popular con un periodo de prueba gratis. Es fácil de instalar y está disponible para todos los sistemas operativos.
 
 [Descárgalo aquí][2]
 
- [2]: http://www.sublimetext.com/2
+ [2]: https://www.sublimetext.com/3
 
 ## Atom
 
 Atom es un editor de código muy nuevo creado por [GitHub][3]. Es gratis, de código abierto, fácil de instalar y fácil de usar. Está disponible para Windows, OSX y Linux.
 
- [3]: http://github.com/
+ [3]: https://github.com/
 
 [Descárgalo aquí][4]
 

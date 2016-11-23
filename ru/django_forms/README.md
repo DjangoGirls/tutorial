@@ -19,7 +19,6 @@
 
 ```python
     from django import forms
-
     from .models import Post
 
     class PostForm(forms.ModelForm):
@@ -45,8 +44,7 @@
 
 Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `page-header`:
 
-```
-    html
+```html
     <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
@@ -54,8 +52,7 @@
 
 После добавления строки, твой html-файл должен выглядеть следующим образом:
 
-```
-    html
+```html
     {% load staticfiles %}
     <html>
         <head>
@@ -95,7 +92,7 @@
 Окончательная версия файла будет выглядеть следующим образом:
 
 ```python
-    from django.conf.urls import include, url
+    from django.conf.urls import url
     from . import views
 
     urlpatterns = [
@@ -140,8 +137,7 @@
 
 Хорошо, давай посмотрим как должен выглядеть HTML-код в файле `post_edit.html`:
 
-```
-    html
+```html
     {% extends 'blog/base.html' %}
 
     {% block content %}
@@ -285,7 +281,7 @@ Django заботится о проверке всех полей в нашей 
             {% endif %}
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
             <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}
 ```
@@ -376,7 +372,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
 
 ```
     $ git status
-    $ git add -A .
+    $ git add --all .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push

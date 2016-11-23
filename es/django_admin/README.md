@@ -37,7 +37,7 @@ Vuelve a tu navegador e ingresa con las credenciales de super usuario que elegis
 
 Ve a Posts y experimenta un poco con esto. Agrega cinco o seis posts del blog. No te preocupes por el contenido - puedes simplemente copiar y pegar texto de este tutorial en el contenido de tus posts para ahorrar tiempo :).
 
-Asegúrate de que por lo menos dos o tres posts (pero no todas) tienen la fecha de publicación. Será útil luego.
+Asegúrate de que por lo menos dos o tres posts (pero no todos) tienen la fecha de publicación. Será útil luego.
 
 ![Administrador de Django][3]
 

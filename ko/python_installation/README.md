@@ -10,4 +10,4 @@
 
 > **Note** 만약 이미 설치 단계를 마쳤다면 이 부분을 다시 할 필요가 없으니, 바로 다음 장으로 넘어 가세요.
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}

@@ -1,6 +1,6 @@
 # Instalação do Django
 
-> Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (http://django.carrots.pl/).
+> Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parte deste capítulo é baseado no [django-marcador tutorial][1] licenciado sobre Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
 
@@ -8,7 +8,7 @@
 
 ## Ambiente virtual
 
-Antes de instalarmos o Django, nós iremos instalar uma ferramenta extremamente útil que irá ajudar a manter seu ambiente de desenvolvimento arrumado em seu computador. É possível ignorar este passo, mas é altamente recomendado não começar com a melhor configuração, evitando problemas adiante!
+Antes de instalarmos o Django, nós iremos instalar uma ferramenta extremamente útil que irá ajudar a manter seu ambiente de desenvolvimento arrumado em seu computador. É possível ignorar este passo, mas ele é altamente recomendado. Começar com a melhor configuração possível te salvará de muitos problemas no futuro!
 
 Então, vamos criar um **ambiente virtual**(também chamado um *virtualenv*). Isso isolará sua configuração Python/Django em uma base por projeto, significa que quaisquer mudanças que fizer em um website não afetará quaisquer outras aplicações que estiver desenvolvendo a parte. Arrumado, certo?
 
@@ -20,7 +20,7 @@ Para este tutorial usaremos um novo diretório`djangogirls` do seu diretório ho
     cd djangogirls
     
 
-Nós vamos fazer um virtualenv chamado `meuenv`. O formato geral desse comando é:
+Nós vamos fazer um virtualenv chamado `myvenv`. O formato geral desse comando é:
 
     python3 -m venv myvenv
     
@@ -70,7 +70,7 @@ no OS X e no Linux.
 
 Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
 
-> **NOTE:** às vezes `source(fonte)` pode não estar disponível. Nesses casos, tente fazer isso em vez disso:
+> **NOTE:** às vezes `source(fonte)` pode não estar disponível. Nesses casos, tente fazer isso:
 > 
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
@@ -93,10 +93,10 @@ Ok, nós temos todas as dependências importantes no lugar. Finalmente podemos i
 
 ## Instalando o Django
 
-Agora que você tem a sua `virtualenv` iniciado, você pode instalar Django usando `pip`. No console, execute `pip install django==1.7.1` (Perceba que usamos um duplo sinal de igual: `==`).
+Agora que você tem a sua `virtualenv` iniciado, você pode instalar Django usando `pip`. No console, execute `pip install django==1.8.5` (Perceba que usamos um duplo sinal de igual: `==`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
+    (myvenv) ~$ pip install django==1.8.5
+    Downloading/unpacking django==1.8.5
     Installing collected packages: django
     Successfully installed django
     Cleaning up...

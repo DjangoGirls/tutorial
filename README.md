@@ -1,21 +1,23 @@
 # Django Girls Tutorial
 
-This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file. 
+This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file.
 
 
 # How to contribute
 
-The Django Girls Tutorial is licensed under a *Creative Commons Attribution-ShareAlike 4.0* license. Everyone is free to add, edit and correct the tutorial.
+The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-ShareAlike 4.0*](https://creativecommons.org/licenses/by-sa/4.0/) license. Everyone is free to add, edit and correct the tutorial.
 
 # Editing basics
 
-The source code of the tutorial is [hosted on Github](http://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
+The source code of the tutorial is [hosted on Github](https://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
 The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
 You can find any discussions about the contents of the tutorial on the [Github issue tracker](https://github.com/DjangoGirls/tutorial/issues).
+
+[Crowdin](https://crowdin.com/project/django-girls-tutorial) platform is used to manage translations. If you want to join an existing translation team or launch a new translation, send an email to the [translation managers](mailto:translations@djangogirls.org) or contact [support team](mailto:hello@djangogirls.org). If you want to propose some small changes or fix typos in existing translations, please create a Pull Request.
 
 # Getting started and prerequisites
 
@@ -58,7 +60,11 @@ Either use the Github app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
-Download the [Gitbook Editor](https://github.com/GitbookIO/editor-legacy/releases) app to your computer.
+Then, create a branch for your new changes to sit in. It helps to call the branch something related to the changes you are going to make.
+
+    git checkout -b contributing
+
+Download the [Gitbook Editor](https://www.gitbook.com/editor) app to your computer.
 
 Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
 
@@ -90,8 +96,8 @@ Example:
     Total 5 (delta 1), reused 0 (delta 0)
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
-       
-If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](http://gitbook.com), sign up for free and work directly in your browser.
+
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](https://gitbook.com), sign up for free and work directly in your browser.
 
 # Making a pull request
 
@@ -111,5 +117,4 @@ Github emails will notify you for the follow up process.
 
 GitHub has an excellent [documentation](https://help.github.com/). Check it out if you need help!
 
-For further questions please [contact DjangoGirls](http://djangogirls.org/).
-
+For further questions please [contact DjangoGirls](https://djangogirls.org/).

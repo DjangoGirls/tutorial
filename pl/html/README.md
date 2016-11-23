@@ -10,7 +10,7 @@ Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominali
 
 HTML to prosty kod interpretowany przez Twoją przeglarkę - taką jak Chrome, Firefox czy Safari - w celu wyświetlenia strony dla użytkownika.
 
-HTML to skrót od "HyperText Markup Language". **HyperText** oznacza typ tekstu, który umożliwia łączenie stron za pomocą łączy (hyperlinków, albo po prostu linków). **Markup** oznacza, że używamy tego kodu w dokumencie, żeby przekazać komuś informację (w naszym przypadku przeglądarce), jak zinterpretować daną stronę. Kod HTML składa się ze **znaczników ** (tagów), a każdy z nich zaczyna się od `<` i kończy na`>`. Za pomocą znaczników oznaczamy **elementy**.
+HTML to skrót od "HyperText Markup Language". **HyperText** oznacza, że jest to tekst, który wspiera hyperlinki - czyli po prostu linki między stronami. **Markup** oznacza, że używamy tego kodu w dokumencie, żeby przekazać komuś informacje (w naszym przypadku przeglądarce), jak zinterpretować daną stronę. Kod HTML składa się ze **znaczników ** (tagów), a każdy z nich zaczyna się od `<` i kończy na`>`. Za pomocą znaczników oznaczamy **elementy**.
 
 ## Twój pierwszy szablon!
 
@@ -31,21 +31,26 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 > Jeżeli nadal otrzymujesz błąd `TemplateDoesNotExists`, spróbuj uruchomić serwer ponownie. Przejdź do wiersza poleceń, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
 
-![Rysunek 11.1](images/step1.png)
+![Rysunek 11.1][1]
+
+ [1]: images/step1.png
 
 Nie ma błędu! Gratulacje :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
 
 Dodaj następującą treść w pliku z szablonem:
 
-    <html>
-        <p>Hej!</p>
-        <p>Działa!</p>
-    </html>
-
+```html
+<html>
+    <p>Hej!</p>
+    <p>Działa!</p>
+</html>
+```
 
 I jak twoja strona wygląda teraz? Kliknij, żeby się dowiedzieć: http://127.0.0.1:8000/
 
-![Rysunek 11.2](images/step3.png)
+![Rysunek 11.2][2]
+
+ [2]: images/step3.png
 
 Zadziałało! Dobra robota :)
 
@@ -64,20 +69,23 @@ Używamy znacznika `<head>`, aby poinformować przeglądarkę o konfiguracji str
 
 Przykładowo, element tytułu strony możesz umieścić wewnątrz `<head>`, o tak:
 
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </body>
-    </html>
-
+```html
+<html>
+    <head>
+        <title>Blog Oli</title>
+    </head>
+    <body>
+        <p>Hej!</p>
+        <p>Działa!</p>
+    </body>
+</html>
+```
 
 Zapisz plik i odśwież swoją stronę.
 
-![Rysunek 11.3](images/step4.png)
+![Rysunek 11.3][3]
+
+ [3]: images/step4.png
 
 Zauważyłaś, że przeglądarka zrozumiała, że "Ola's blog" jest tytułem Twojej strony? Zinterpretowała ona `<title>Ola's blog</title>` i umieściła tekst w pasku tytułu twojej przeglądarki (będzie on również używany m.in. w zakładkach).
 
@@ -97,61 +105,66 @@ Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczn
 *   `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
 *   `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
 *   `<br />` to przejście do nowej linii (wewnątrz br nie wstawiamy niczego)
-*   `<a href="http://djangogirls.org">link</a>` tworzy link
+*   `<a href="https://djangogirls.org">link</a>` tworzy link
 *   `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
 *   `<div></div>` tworzy sekcję na stronie
 
 Poniżej przykład pełnego szablonu:
 
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Stworzyliśmy tutaj trzy sekcje `div`.
 
-*   Pierwszy `div` zawiera tytuł naszego wpisu na blogu - tworzy go nagłówek wraz z linkiem
+*   Pierwszy `div` zawiera w sobie tytuł naszego bloga - jest to nagłówek i link.
 *   Kolejne dwa elementy `div` zawierają nasze wpisy wraz z opublikowaną datą, `h2` z klikalnym tytułem wpisu oraz dwa elementy `p` (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.
 
 Daje nam to taki efekt:
 
-![Rysunek 11.4](images/step6.png)
+![Rysunek 11.4][4]
+
+ [4]: images/step6.png
 
 Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tą samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
 
 Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.
 
-## Jeszcze jedno
+## Jeszcze jedna rzecz: wdrożenie na serwer!
 
-Byłoby dobrze zobaczyć, czy Twoja strona będzie nadal dobrze działała na Heroku, prawda? Spróbujmy zaktualizować naszą stronę na serwerze.
+Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć "na żywo" w Internecie, a nie tylko u siebie w komputerze. Czas na wdrożenie na serwer PythonAnywhere:
 
-Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji:
+### Zapisz zmiany w historii i wrzuć swój kod na GitHuba
+
+Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu poleceń, nie na PythonAnywhere):
 
     $ git status
 
 
-Teraz powiedzmy `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
+Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
 
-    $ git add -A .
+    $ git add --all .
 
 
 > **Uwaga:** `-A` (skrót od "all", czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
@@ -168,9 +181,29 @@ Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w histo
 
 > **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
 
-Gdy już to zrobimy, możemy wreszcie zapisać zmiany (zrobić tzw. push) na naszej stronie na Heroku:
+Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
-    $ git push heroku master
+    git push
 
 
-I to powinno wystarczyć! Gdy Heroku skończy, możesz śmiało odświeżyć swoją stronę w przeglądarce. Zmiany powinny być widoczne!
+### Prześlij nową wersję kodu do PythonAnywhere i ponownie załaduj swoją stronę
+
+*   Otwórz [stronę konsol na PythonAnywhere][5] i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
+
+ [5]: https://www.pythonanywhere.com/consoles/
+
+    $ cd ~/my-first-blog
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+
+
+I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i przeglądnąć swój kod na PythonAnywhere.
+
+*   Na koniec przeskocz do zakładki [Web tab][6] i naciśnij **Reload**.
+
+ [6]: https://www.pythonanywhere.com/web_app_setup/
+
+I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne :)

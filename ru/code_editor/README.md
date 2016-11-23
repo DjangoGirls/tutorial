@@ -4,4 +4,4 @@
 
 > **Примечание**: Если ты уже все сделала в главе, посвященной установке, то можешь смело переходить к следующей главе!
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}

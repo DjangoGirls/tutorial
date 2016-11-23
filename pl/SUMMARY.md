@@ -1,14 +1,15 @@
 # Podsumowanie
 
 *   [Wprowadzenie](README.md)
-*   [Jak działa internet?](how_the_internet_works/README.md)
+*   [Instalacja](installation/README.md)
+*   [Jak działa internet](how_the_internet_works/README.md)
 *   [Wprowadzenie do linii poleceń](intro_to_command_line/README.md)
 *   [Instalowanie Pythona](python_installation/README.md)
 *   [Edytor kodu](code_editor/README.md)
 *   [Wprowadzenie do Pythona](python_introduction/README.md)
 *   [Czym jest Django?](django/README.md)
 *   [Instalowanie Django](django_installation/README.md)
-*   [Tworzenie projektu Django](django_start_project/README.md)
+*   [Twój pierwszy projekt w Django!](django_start_project/README.md)
 *   [Modele w Django](django_models/README.md)
 *   [Administracja Django (admin)](django_admin/README.md)
 *   [Wdrażanie!](deploy/README.md)
@@ -22,5 +23,4 @@
 *   [Rozbudowa szablonów](template_extending/README.md)
 *   [Rozbudowa aplikacji](extend_your_application/README.md)
 *   [Formularze Django](django_forms/README.md)
-*   [Domena](domain/README.md)
 *   [Co dalej?](whats_next/README.md)

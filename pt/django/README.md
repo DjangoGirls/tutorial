@@ -4,13 +4,13 @@ Django é um framework gratuito e de código aberto para a criação de aplicaç
 
 Veja, quando você está construindo um site, você sempre precisa um conjunto similar de componentes: uma maneira de lidar com a autenticação do usuário (inscrever-se, realizar login, realizar logout), painel de gerenciamento para o seu site, formulários, upload de arquivos, etc.
 
-Felizmente para você, há muito tempo, outras pessoas notaram varias semelhanças nos problemas enfrentados pelos desenvolvedores web quando estão criando um novo site, então eles uniram-se e criaram os frameworks (Django é um deles) que lhe dão componentes prontos, que você pode usar.
+Felizmente para você, há muito tempo, outras pessoas notaram várias semelhanças nos problemas enfrentados pelos desenvolvedores web quando estão criando um novo site, então eles uniram-se e criaram os frameworks (Django é um deles) que lhe dão componentes prontos, que você pode usar.
 
 Frameworks existem para salvá-lo de ter que reinventar a roda e ajudam a aliviar a sobrecarga quando você está construindo um novo site.
 
 ## Por que você precisa de um framework?
 
-Para entender o que Django é na verdade, precisamos olhar mais de perto os servidores. A primeira coisa é que o servidor precisa saber que você quer para servi-lo uma página da Web.
+Para entender o que Django é na verdade, precisamos olhar mais de perto os servidores. A primeira coisa é que o servidor precisa saber o que você quer para servi-lo uma página da Web.
 
 Imagine uma caixa de correio (porta) que é monitorada por cartas recebidas (requisição). Isso é feito por um servidor web. O servidor web lê a carta e envia uma resposta com uma página web. Mas, quando você quer enviar alguma coisa você precisa ter um conteúdo. E o Django é aquilo que vai lhe ajudar a criar esse conteúdo.
 
@@ -24,4 +24,4 @@ Todas as coisas interessantes são feitas dentro da *view*: podemos dar uma olha
 
 Claro, a descrição acima é muito simplificada, mas você não precisa saber detalhes técnicos ainda. Ter uma ideia geral já é suficiente.
 
-Então em vez de mergulhar em muitos detalhes, nós simplesmente vamos começar criando algo com o Django e aprenderemos toda as partes importantes ao longo do caminho!
+Então em vez de mergulhar em muitos detalhes, nós simplesmente vamos começar criando algo com o Django e aprenderemos todas as partes importantes ao longo do caminho!
