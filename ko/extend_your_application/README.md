@@ -22,7 +22,7 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
@@ -53,7 +53,7 @@ http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요.
 `blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail`이란 *view* 로 보내, 전체 블로그 글이 보일 수 있게 만들어 봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')` 코드를 `blog/urls.py` 파일에 추가하세요. 그러면 아래처럼 보일 거에요. :
 
 ```python
-from django.conf.urls import url
+from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
@@ -142,7 +142,7 @@ urlpatterns = [
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endblock %}
 ```
@@ -163,7 +163,7 @@ PythonAnywhere에서도 웹사이트가 잘 작동하는지 봐야겠죠? 다시
 
 ```
 $ git status
-$ git add --all .
+$ git add -A .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push

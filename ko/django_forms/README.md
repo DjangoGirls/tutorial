@@ -92,7 +92,7 @@ class PostForm(forms.ModelForm):
 전체 코드는 아래와 같을 거에요.
 
 ```python
-from django.conf.urls import url
+from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
@@ -212,11 +212,11 @@ from django.shortcuts import redirect
 
 위 코드를 여러분의 파일 맨 위에 추가하세요. 그리고 새로 작성한 글을 볼 수 있도록 `post_detail` 페이지로 가라고 수정합시다.
 
-```python
-return redirect('post_detail', pk=post.pk)
-```
+    python
+    return redirect('blog.views.post_detail', pk=post.pk)
 
-`post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
+
+`blog.views.post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
 
 잘 했어요. 너무 설명이 길어졌네요. 이제 *view* 의 전체 코드를 확인할게요.
 
@@ -229,7 +229,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('blog.views.post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -283,7 +283,7 @@ def post_new(request):
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endblock %}
 ```
@@ -308,7 +308,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('blog.views.post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -376,7 +376,7 @@ form = PostForm(instance=post)
 
 ```
 $ git status
-$ git add --all .
+$ git add -A .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
