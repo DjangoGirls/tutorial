@@ -15,7 +15,7 @@ admin.site.register(Post)
 
 코드에서 알 수 있듯이 앞 장에서 정의했던 `Post`모델을 가져오고(import) 있어요. 관리자 페이지에서 만든 모델을 보려면 `admin.site.register(Post)`로 모델을 등록해야 해요.
 
-자, 이제 `Post`모델을 볼까요? 웹 서버를 실행하려면 콘솔 창에서 `python manage.py runserver`를 실행하는걸 잊지 마세요. 브라우저를 열고 주소창에 http://127.0.0.1:8000/admin/ 입력하면 아래와 같은 로그인 페이지를 볼 수 있어요.
+자, 이제 `Post`모델을 볼까요? 웹 서버를 실행하려면 콘솔 창에서 `python manage.py runserver`를 실행하는걸 잊지 마세요. 브라우저를 열고 주소창에 [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)을 입력하면 아래와 같은 로그인 페이지를 볼 수 있어요.
 
 ![로그인 페이지][1]
 
