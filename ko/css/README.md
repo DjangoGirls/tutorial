@@ -10,7 +10,7 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업랭귀지(markup language
 
 ## 부트스트랩을 사용해봐요!
 
-[부트스트랩(Bootstrap)](ttp://getbootstrap.com/)은 예쁜 웹사이트를 개발하기 위해 사용되고 있는 가장 유명한 HTML과 CSS프레임워크입니다.
+[부트스트랩(Bootstrap)](https://getbootstrap.com/)은 예쁜 웹사이트를 개발하기 위해 사용되고 있는 가장 유명한 HTML과 CSS프레임워크입니다.
 
 트위터 개발자들이 부트스트랩을 만들었고, 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요.
 
@@ -75,19 +75,19 @@ CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 이�
 
 `blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
-  ```  css
-    h1 a {
-        color: #FCA205;
-    }
-  ```
+```css
+h1 a {
+    color: #FCA205;
+}
+```
 
 `h1 a`는 CSS 셀렉터(Selector)에요. 즉, 우리는 `h1`요소 안에 어떠한 `a`요소를 넣어 스타일을 적용 할 수 있다는 거죠. (예를 들어 코드가 다음과 같을 때: `<h1><a href="">link</a></h1>`) 이 경우에, 우리는 색을 `#FCA205`, 즉 오렌지색으로 바꾸라고 말한 거에요. 물론, 색을 직접 선택할 수도 있어요!
 
 CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 각 요소는 요소 이름(다시 말하면, `a`, `h1`, `body`), `class`상속 아니면 `id`상속에 의해 식별됩니다. Class와 id는 여러분들이 붙인 이름을 갖게 됩니다. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 CSS에서 태그 이름 `a`, 클래스 `external_link`, `id`는 `link_to_wiki_page`를 사용해서 식별해요.
 
-  ```html
-    <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-  ```
+```html
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```
 
 W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 
@@ -95,15 +95,15 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 
 이제 CSS의 내용을 HTML에 적용시킬 차례에요. `blog/templates/blog/post_list.html`파일을 열고 가장 위에 이 라인을 추가하세요.
 
-  ```html
-    {% load staticfiles %}
-  ```
+```html
+{% load staticfiles %}
+```
 
 동적 파일이 실행되고 있는 거에요 :). 다음, `<head>`와 `</head>` 사이에, 부트스트랩 CSS파일 링크 다음(브라우저는 순서대로 파일을 읽기 때문에 부트스트랩 파일에 있는 코드를 무시할 수 있어요.) 다음 코드를 추가하세요.
 
-  ```html
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-  ```
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
 이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.
 
@@ -142,11 +142,11 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 
 잘했어요! 웹사이트 왼쪽 여백을 좀더 주고 싶지 않나요? 한번 해봐요!
 
-  ```css
-    body {
-        padding-left: 15px;
-    }
-  ```
+```css
+body {
+    padding-left: 15px;
+}
+```
 
 
 이 코드를 CSS에 붙여넣고, 파일을 저장하고 어떻게 바뀌었는지 확인해봐요!
@@ -157,20 +157,20 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 
 제목의 폰트를 바꾸고 싶나요? `blog/templates/blog/post_list.html`파일 안에 `<head>`에 아래 코드를 붙여넣기 해보세요.
 
-  ```html
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  ```
+```html
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
 이 코드 라인은 [구글 폰트](https://www.google.com/fonts)에서 *Lobster* 폰트를 불러온 거에요.
 
 이제 CSS에 `font-family: 'Lobster';`를 추가하세요. `blog/static/css/blog.css`파일 안에 `h1 a` 안에 있는 블록 (다음 표기가 된 부분 안에 `{` and `}`) 에 추가하고 새로고침을 누르세요.
 
-  ```css
-    h1 a {
-        color: #FCA205;
-        font-family: 'Lobster';
-    }
-  ```
+```css
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+```
 
 
 ![그림 14.3][7]
@@ -195,7 +195,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 

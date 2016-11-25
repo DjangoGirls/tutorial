@@ -28,7 +28,7 @@
 {% endblock content %}
 ```
 
-`post`제목 목록이 보이고 해당 링크를 클릭하면, `post`상세 페이지로 이동하게 만들어 볼 거에요. `<h1><a href="">{{ post.title }}</a></h1>`부분을 수정해 봅시다.
+{% raw %} `post`제목 목록이 보이고 해당 링크를 클릭하면, `post`상세 페이지로 이동하게 만들어 볼 거에요. `<h1><a href="">{{ post.title }}</a></h1>`부분을 수정해 봅시다. {% endraw %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
@@ -38,7 +38,7 @@
 
 `blog.views.post_detail`는 `post_detail` *뷰* 경로입니다. `blog`는 응용프로그램(디렉터리 `blog`)의 이름인 것을 꼭 기억하세요. `views`는 `views.py`파일명이에요. 마지막 부분 `post_detail`는 *view* 이름입니다.
 
-http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요. (아직 `post_detail` *뷰*를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요.
+http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요. (아직 `post_detail` *뷰*를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요 :
 
 ![NoReverseMatch error][1]
 
@@ -53,7 +53,7 @@ http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요.
 `blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
 
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
@@ -139,7 +139,7 @@ from django.shortcuts import render, get_object_or_404
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```

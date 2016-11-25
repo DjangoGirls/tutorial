@@ -4,13 +4,9 @@
 
 지금까지는 웹사이트를 내 컴퓨터에서만 볼 수 있었어요. 지금부터 웹사이트를 배포방법을 배워봅시다. 배포(deploy)는 애플리케이션을 인터넷에 올려놓아 다른 사람들도 볼 수 있게 해주는 것 말해요. :)
 
-앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어갑니다. 서버를 제공하는 업체들은 많습니다. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere][1]을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 애플리케이션으로 무료로 사용할 수 있답니다. 당연히 지금 우리가 만드는 것도 해당하지요.
+앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어갑니다. 서버를 제공하는 업체들은 많습니다. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere](https://pythonanywhere.com/)을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 애플리케이션으로 무료로 사용할 수 있답니다. 당연히 지금 우리가 만드는 것도 해당하지요. 
 
- [1]: https://pythonanywhere.com/
-
-우리가 사용할 다른 서비스는 [GitHub][2]라는 코드 호스팅 서비스입니다. 프로그래머들이 애용하는 곳 중 하나로 대부분 프로그래머가 GitHub 계정을 가지고 있다고 봐도 될 거예요. 이제 여러분도 하나 만들 때가 되었어요!
-
- [2]: https://github.com/
+우리가 사용할 다른 서비스는 [GitHub](https://github.com/)이라는 코드 호스팅 서비스입니다. 프로그래머들이 애용하는 곳 중 하나로 대부분 프로그래머가 GitHub 계정을 가지고 있다고 봐도 될 거예요. 이제 여러분도 하나 만들 때가 되었어요!
 
 우리는 GitHub를 작성한 코드를 PythonAnywhere에 넣고 빼기 위한 디딤돌로 사용할 거에요. 즉, 코드를 GitHub에 저장하고 GitHub에 저장된 코드를 PythonAnywhere에서 가져다가 작동하는 방법이에요.
 
@@ -18,6 +14,7 @@
 Git은 많은 프로그래머가 사용하고 있는 `버전 제어 시스템(version control system)`이에요. 이 소프트웨어는 변경 내용을 추적할 수 있어 나중에 특정 버전을 다시 호출할 수 있어요. 마이크로소프트 워드에 있는 `변경 내용 추적하기(track changes)`와 같은 기능이지만 이보다 훨씬 더 강력합니다.
 
 ## Git 설치하기
+
 > **Note** 이미 Git 설치가 끝냈다면, 다시 할 필요가 없어요. 이 부분을 넘기고 Git 저장소를 만드는 것부터 시작하세요.
 
 {% include "/deploy/install_git.md" %}
@@ -34,9 +31,11 @@ Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
+
 git 저장소 초기화는 프로젝트를 시작할 때 딱 한 번만 필요합니다. (또한, 두 번째, 세 번째 명령인 username과 email 등록 명령은 계속 적용되기 때문에 이 계정에서는 다시 입력할 필요가 없습니다)
 
-Git은 이 디렉터리에 모든 파일과 폴더들의 변경 점을 추적할 거에요. 무시(ignore)하도록 지정한 파일들을 제외하고는 말이죠. 기본 디렉터리에다 `.gitignore`라는 파일을 만들어서 특정 파일이나 폴더를 추적하지 않게 할 수 있습니다. 에디터를 열어 아래 내용을 넣어주세요.
+git은 이 디렉터리에 모든 파일과 폴더들의 변경 점을 추적할 거에요. 무시(ignore)하도록 지정한 파일들을 제외하고는 말이죠. 기본 디렉터리에다 `.gitignore`라는 파일을 만들어서 특정 파일이나 폴더를 추적하지 않게 할 수 있습니다. 에디터를 열어 아래 내용을 넣어주세요.
+
 ```
 *.pyc
 __pycache__
@@ -50,6 +49,7 @@ db.sqlite3
 > **Note** 파일명 앞에 마침표로 시작하는 것이 중요합니다! 꼭 붙여주세요. 만약 파일을 만드는 것이 어렵다면 (예를 들어 맥은 파인더에서 마침표로 시작하는 파일을 생성하는 걸 좋아하지 않아요) `다른 이름으로 저장(Save As)` 기능을 사용하세요. 대부분 이렇게 하면 될 거에요.
 
 `git add`하기 전이나 변경된 것이 있는지 잘 모를 때마다 `git status`명령어를 사용하는 것은 좋은 방법이에요. 잘못된 파일이 추가된 경우, 이를 멈출 수 있게 도움을 주어요. `git status`명령은 미추적/수정된/스테이지된 파일, 브랜치 상태와 그 외 많은 정보를 보여줍니다. 실행하면 아래와 비슷하게 나타날 거에요.
+
 ```
 $ git status
 On branch master
@@ -81,7 +81,7 @@ $ git commit -m "My Django Girls app, 첫번째 커밋"
 
 ## GitHub에 코드 넣기
 
-[GitHub.com][2]에서 새 무료 계정을 만드세요. (워크숍 전에 미리 가입했다면 더 좋죠!)
+[GitHub.com](https://github.com/)에서 새 무료 계정을 만드세요. (워크숍 전에 미리 가입했다면 더 좋죠!)
 
 그 다음 새 저장소(new repository)를 `my-first-blog`라는 이름으로 생성하세요. `초기화기 README 파일 만들기(initialize with a README)` 체크박스는 체크안 한 상태로 두세요. `.gitignore` 옵션도 비어있는 상태(위에서 만들었죠?)로 두세요. 라이센스도 `None`으로 두세요.
 
@@ -100,12 +100,14 @@ $ git commit -m "My Django Girls app, 첫번째 커밋"
 이제 내 컴퓨터의 Git 저장소를 GitHub에 있는 저장소로 연결해야합니다.
 
 콘솔에 다음과 같이 입력하세요 (`<your-github-username>`에 꺽쇠괄호(<>)를 떼고 내 Github 사용자이름을 입력하세요.
+
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 $ git push -u origin master
 ```
 
 아래와 같은 화면이 나오면 GitHub 사용자이름과 암호를 입력하세요.
+
 ```
 Username for 'https://github.com': GitHub 사용자이름
 Password for 'https://hjwp@github.com': GitHub 비밀번호
@@ -117,10 +119,7 @@ To https://github.com/hjwp/my-first-blog.git
 Branch master set up to track remote branch master from origin.
 ```
 
-이제 여러분의 코드가 GitHub에 저장됐어요! 가서 확인해보세요! [Django][5], [Django Girls Tutorial][6]뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :)
-
- [5]: https://github.com/django/django
- [6]: https://github.com/DjangoGirls/tutorial
+이제 여러분의 코드가 gitHub에 저장됐어요! 가서 확인해보세요! [Django](https://github.com/django/django), [장고걸스 튜토리얼][https://github.com/DjangoGirls/tutorial]뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 gitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :)
 
 # PythonAnywhere에 블로그 설정하기
 
@@ -134,12 +133,14 @@ PythonAnywhere에 가입하면 대시보드 또는 "콘솔(Consoles)" 페이지�
 
 > **Note** PythonAnywhere는 리눅스 기반으로 윈도우의 커맨드라인 창과 조금 다르게 보일 수 있어요.
 
-GitHub에 있는 코드를 끌어와 저장소를 "복제"해 PythonAnywhere로 탑재해 볼게요. PythonAnywhere 콘솔에 다음과 같이 입력하세요. (`<your-github-username>`대신 내 GitHub 사용자 이름을 입력하는 것을 잊지 마세요. :)
+gitHub에 있는 코드를 끌어와 저장소를 "복제"해 PythonAnywhere로 탑재해 볼게요. PythonAnywhere 콘솔에 다음과 같이 입력하세요. (`<your-github-username>`대신 내 GitHub 사용자 이름을 입력하는 것을 잊지 마세요. :)
+
 ```
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 이렇게 PythonAnyWhere에 있는 코드 사본을 끌어올 거에요. `tree my-first-blog`를 입력해 확인하세요.
+
 ```
 $ tree my-first-blog
 my-first-blog/
@@ -163,6 +164,7 @@ my-first-blog/
 ### PythonAnywhere에서 가상환경(virtualenv) 생성하기
 
 PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있게 가상환경(virtualenv)을 생성할 수 있어요. 배시 콘솔(Bash console)에 다음과 같이 입력하세요.
+
 ```
 $ cd my-first-blog
 
@@ -204,6 +206,7 @@ Type 'yes' to continue, or 'no' to cancel: yes
 ```
 
 "yes"라고 입력하고 메시지들이 나오게 내버려두세요! 화면 가득히 텍스트가 출력되어 흘러나올건데 혹시 이런 걸 좋아하는 분 있나요? 저는 텍스트가 나타날 때마다 항상 "브릅, 브릅 브릅..." 같은 소리가 나도록 만들어 놓았어요. 멋지죠?
+
 ```
 Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
 Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
@@ -283,9 +286,8 @@ Operations to perform:
 
 ## 디버깅 팁
 
-본인의 사이트에 접속할 때 오류가 보이면, 제일 먼저 **error log(오류 로그)**에서 디버깅 정보를 찾아보세요. PythonAnywhere [Web tab] [8]에서 이 링크를 찾을 수 있어요. 여기서 오류 메시지가 있는지 확인하세요. 대부분의 가장 최근의 오류 메시지는 맨 하단에 있어요. 일반적으로 많이 일어나는 문제들은 아래와 같습니다.
+본인의 사이트에 접속할 때 오류가 보이면, 제일 먼저 **error log(오류 로그)**에서 디버깅 정보를 찾아보세요. PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 이 링크를 찾을 수 있어요. 여기서 오류 메시지가 있는지 확인하세요. 대부분의 가장 최근의 오류 메시지는 맨 하단에 있어요. 일반적으로 많이 일어나는 문제들은 아래와 같습니다.
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
 
 *   virtualenv를 생성하고 활성화할 때, Django를 설치할 때, Collestac을 돌릴 때, 데이터베이스를 설치할 때 같은 각 단계를 위한 콘솔 작업을 할 때 한 단계를 빼먹는 경우
 
@@ -293,11 +295,10 @@ Operations to perform:
 
 *   WSGI 설정 파일에 실수가 있을 때 -- my-first-blog-folder 폴더의 경로를 올바르게 입력했었나요?
 
-*   Web app에서 그랬듯이 virtualenv에도 같은 파이썬 버전을 선택했나요? 둘 다 모두 3.4 버전이어야 해요 위키에서 [일반적인 디버깅 팁][9]을 확인할 수 있어요.
+*   Web app에서 그랬듯이 virtualenv에도 같은 파이썬 버전을 선택했나요? 둘 다 모두 3.4 버전이어야 해요 위키에서 [일반적인 디버깅 팁](https://www.pythonanywhere.com/wiki/DebuggingImportError)을 확인할 수 있어요.
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
-기억하세요. 코치들은 여러분들에게 도움을 주기 위해 여기 있답니다!
+코치들은 여러분들에게 도움을 주기 위해 여기 있다는 것을 기억하세요!
 
 # 내 웹사이트가 나왔어요!
 

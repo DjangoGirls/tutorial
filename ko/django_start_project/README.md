@@ -13,12 +13,12 @@
 
 > 모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 `(myvenv)`가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. [**Django 설치하기 - virtualenv 작동법**](http://tutorial.djangogirls.org/ko/django_installation/)에서 이미 다루었던 내용입니다. 윈도우에서는 `myvenv\Scripts\activate`를 타이핑하고, 맥 OS과 리눅스에서는 `source myvenv/bin/activate`을 입력하세요.
 
-맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표)을 입력하는 것을 잊지마세요.**
+맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표)을 입력하는 것을 잊지마세요** :
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
 
 
-윈도우에서도 **명령 끝에 `.`(점)을 입력하는 것을 잊지마세요.**:
+윈도우에서도 **명령 끝에 `.`(점)을 입력하는 것을 잊지마세요** :
 
     (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
 
@@ -52,7 +52,7 @@
 
 웹사이트에 정확한 현재 시간을 넣으면 좋겠죠. [위키피디아 타임존 리스트][2]에 가서 해당 시간대(타임존)를 복사하세요. (예: `Asia/Seoul`)
 
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+ [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당 시간대로 변경하세요.
 

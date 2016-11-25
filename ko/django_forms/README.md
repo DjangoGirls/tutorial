@@ -15,7 +15,7 @@ blog
  └── forms.py
 ```
 
-좋아요. 이제 이 파일을 열고 아래 코드를 작성해보세요.
+좋아요. 이제 이 파일을 열고 아래 코드를 작성해보세요 :
 
 ```python
 from django import forms
@@ -80,7 +80,7 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-페이지를 저장하고 나서 [http://127.0.0.1:8000]([http://127.0.0.1:8000]) 페이지를 새로고침 해보면, `NoReverseMatch`이라는 에러가 나타나죠?
+페이지를 저장하고 나서 http://127.0.0.1:8000 페이지를 새로고침 해보면, `NoReverseMatch`이라는 에러가 나타나죠?
 
 ## URL
 
@@ -168,8 +168,8 @@ def post_new(request):
 
 ```python
 def post_new(request):
- form = PostForm()
- return render(request, 'blog/post_edit.html', {'form': form})
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 폼을 제출할 때, 같은 뷰를 불러옵니다. 이때 `request`에는 우리가 입력했던 데이터들을 가지고 있는데, `request.POST`가 이 데이터를 가지고 있습니다. (`POST`는 글 데이터를 "등록하는(posting)"하는 것을 의미합니다. 블로그 "글"을 의미하는 "post"와 관련이 없어요) HTML에서 `<form>`정의에 `method="POST"`라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 거로 바꾸면 안 돼요. `method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET`같은 것도 있지만, post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요)
@@ -214,10 +214,10 @@ from django.shortcuts import redirect
 위 코드를 여러분의 파일 맨 위에 추가하세요. 그리고 새로 작성한 글을 볼 수 있도록 `post_detail`페이지로 가라고 수정합시다.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
+`post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
 
 잘했어요. 너무 설명이 길어졌네요. 이제 *view* 전체 코드를 확인할게요.
 
@@ -230,10 +230,10 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
+    return render(request, 'post_edit.html', {'form': form})
 ```
 
 잘 작동하는지 확인해보세요. http://127.0.0.1:8000/post/new/ 페이지로 접속해서 `title`과 `text`를 입력하고, 저장하세요…. 그리고…. 짜잔!!! 새로운 블로그 글이 추가되고 `post_detail`페이지가 나타났어요!
@@ -284,7 +284,7 @@ def post_new(request):
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
@@ -309,10 +309,10 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
+    return render(request, 'post_edit.html', {'form': form})
 ```
 
 음…. 코드가 `post_new`와 거의 비슷해 보이지 않나요? 하지만 완전히 같지는 않아요.
@@ -351,13 +351,13 @@ form = PostForm(instance=post)
 
 링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋진 일이에요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어 볼게요.
 
-`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다.
+`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다 :
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-여기에 `{% if %}`태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들 거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요.
+여기에 `{% if %}`태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들 거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요 :
 
 ```html
 {% if user.is_authenticated %}
@@ -396,7 +396,7 @@ $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
 ```
 
-* 그 다음 [PythonAnywhere Bash console(배시 콘솔)][7]을 여세요.
+* 그 다음 [PythonAnywhere Bash console(배시 콘솔)][7]을 여세요 :
 
  [7]: https://www.pythonanywhere.com/consoles/
 

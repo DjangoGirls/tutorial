@@ -4,7 +4,7 @@
 
 템플릿이란 서로 다른 정보를 일정한 형태로 표시하기 위해 재사용 가능한 파일을 말해요. 예를 들면 편지에도 같은 템플릿을 사용할 수 있어요. 편지의 내용이나 수신인 주소는 달라져도 같은 디자인, 레이아웃을 사용하는 때도 있으니까요.
 
-장고 템플릿 양식은 HTML을 사용합니다. (HTML은 첫 번째 장 [**인터넷은 어떻게 작동할까요**](http://tutorial.djangogirls.org/ko/how_the_internet_works/)에서 들어본 내용이죠)
+장고 템플릿 양식은 HTML을 사용합니다. (HTML은 첫 번째 장 [**인터넷은 어떻게 작동할까요**](https://tutorial.djangogirls.org/ko/how_the_internet_works/)에서 들어본 내용이죠)
 
 ## HTML이란 무엇일까요?
 
@@ -161,6 +161,7 @@ blog
 ```
 
 `djangogirls` 디렉터리에서 `git`에게 현재 폴더에 있는 모든 변경 내용을 포함시키라고 말해봅시다.
+
 ```
     $ git add -A .
 ```

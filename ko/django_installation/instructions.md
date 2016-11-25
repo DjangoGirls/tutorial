@@ -1,6 +1,6 @@
 > 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초해 작성되었습니다.
 >
-> Creative Commons Attribution-ShareAlike 4.0 International License에 따라 [django-marcador 튜토리얼](http://django-marcador.keimlink.de/)를 바탕으로 작성되었습니다. django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
+> Creative Commons Attribution-ShareAlike 4.0 International License에 따라 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 바탕으로 작성되었습니다. django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 
 
 장고 설치 전, 개발 환경을 깔끔하게 관리하는 데 큰 도움이 되는 도구를 설치해보겠습니다. 이 단계를 건너뛸 수 있지만, 한번 직접 해보는 것을 추천합니다. 제대로 설치해야 나중에 문제가 발생하지 않거든요!
@@ -95,7 +95,7 @@ $ virtualenv --python=python3.4 myvenv
 
 ## 장고 설치하기
 
-이제 `virtualenv`가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django==1.8`를 실행해보세요. (이퀄기호`==`가 두 개예요)
+이제 `virtualenv`가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django==1.9`를 실행해보세요. (이퀄기호`==`가 두 개예요)
 
     (myvenv) ~$ pip install django==1.8
     Downloading/unpacking django==1.8
