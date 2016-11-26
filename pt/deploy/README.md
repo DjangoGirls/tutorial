@@ -190,9 +190,15 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
+<<<<<<< HEAD
+    
+    20:20 ~ $ source myvenv/bin/activate
+    
+=======
 
     20:20 ~ $ source myvenv/bin/activate
 
+>>>>>>> master
     (mvenv)20:20 ~ $  pip install django whitenoise
     Collecting django
     [...]

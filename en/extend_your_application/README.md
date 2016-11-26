@@ -155,7 +155,11 @@ Once again we are extending `base.html`. In the `content` block we want to displ
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from __Introduction to Python__ chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
+<<<<<<< HEAD
+Ok, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+=======
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+>>>>>>> master
 
 ![Post detail page](images/post_detail2.png)
 

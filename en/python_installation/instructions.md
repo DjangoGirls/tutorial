@@ -52,6 +52,10 @@ Python 3.5.1
 
 If you have a different 'micro version' of Python installed, e.g. 3.5.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
+<<<<<<< HEAD
+If you have a different 'micro version' of Python installed, e.g. 3.4.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+=======
+>>>>>>> master
 
 <!--endsec-->
 

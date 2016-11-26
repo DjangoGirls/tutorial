@@ -1,8 +1,14 @@
 # Dynamic data in templates
 
+<<<<<<< HEAD
+We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do. Take some content (models saved in the database) and display it nicely in our template, right?
+
+This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+=======
 We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
 This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+>>>>>>> master
 
 OK, so how will we achieve this?
 
@@ -56,7 +62,11 @@ Please note that we create a *variable* for our QuerySet: `posts`. Treat this as
 
 Also, the code uses the `timezone.now()` function, so we need to add an import for `timezone`.
 
+<<<<<<< HEAD
+The last missing part is passing the `posts` QuerySet to the template. Don't worry we will cover how to display it in a next chapter.
+=======
 The last missing part is passing the `posts` QuerySet to the template. Don't worry – we will cover how to display it in a later chapter.
+>>>>>>> master
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :)  It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
@@ -75,4 +85,9 @@ def post_list(request):
 
 That's it! Time to go back to our template and display this QuerySet!
 
+<<<<<<< HEAD
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+
+=======
 Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.9/ref/models/querysets/
+>>>>>>> master
