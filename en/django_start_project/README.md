@@ -85,6 +85,14 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
+match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+ALLOWED_HOSTS = ["*"]
+```
+
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
