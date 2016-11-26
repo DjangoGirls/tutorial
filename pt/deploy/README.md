@@ -66,7 +66,7 @@ E salve como `.gitignore` na pasta de nível superior "djangogirls".
 
 > **Nota**: O ponto no início do nome do arquivo é importante! Se você está tendo alguma dificuldade em criá-la (Macs não gostam de criar arquivos que começam com um ponto através do Finder, por exemplo), use o recurso "Save As" no seu editor que sempre funciona.
 
-É uma boa idéia para usar um comando de `git status` antes de `gitt add` ou sempre que você não tiver certeza de que será feito, para evitar surpresas (por exemplo, serão adicionados arquivos errados ou commitados). O comando `git status` retorna informações sobre todos os arquivos controlado/modificado/encenado, status de ramo e muito mais. O output deve ser semelhante a:
+É uma boa idéia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza de que será feito, para evitar surpresas (por exemplo, serão adicionados arquivos errados ou commitados). O comando `git status` retorna informações sobre todos os arquivos controlado/modificado/encenado, status de ramo e muito mais. O output deve ser semelhante a:
 
     $ git status
     On branch master
