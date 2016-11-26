@@ -207,7 +207,7 @@ Você estava imaginando o que é "whitenoise"? É uma ferramenta para servir os 
 
 Vamos descobrir um pouco mais sobre arquivos estáticos mais tarde no tutorial, quando vamos editar o CSS para o nosso site.
 
-Por enaunto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
+Por enquanto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
 
     20:20 ~ $ python manage.py collectstatic
 
@@ -222,9 +222,9 @@ Por enaunto só precisamos executar um comando extra chamado "collectstatic" no 
     Type 'yes' to continue, or 'no' to cancel: yes
 
 
-Digite "Sim" e vai embora! Você não adora fazer computadores imprimir páginas e páginas de texto? Sempre faço pequenos ruídos para acompanhá-lo. Brp, brp brp...
+Digite "yes" (Sim) e vai embora! Você não adora fazer computadores imprimir páginas e páginas de texto? Sempre faço pequenos ruídos para acompanhá-lo. Brp, brp brp...
 
-    opying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
