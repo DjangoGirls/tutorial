@@ -12,10 +12,6 @@ These three places will be important to you.  Your local computer will be the pl
 
 # Git
 
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
-
-## Installing Git
-
 > **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
