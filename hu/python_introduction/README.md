@@ -587,7 +587,7 @@ Az első `if` statement után annyi `elif` állítást írhatsz, amennyit csak a
     elif 80 <= volume < 100:
         print("A bit loud!")
     else:
-        print("My ears are hurting!:(")! :(")
+        print("My ears are hurting! :(")
 ```
 
 A Python sorban mindegyik feltételt megnézi, és kiírja:
