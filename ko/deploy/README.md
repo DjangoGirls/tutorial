@@ -299,6 +299,8 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 *   Web app에서 그랬듯이 virtualenv에도 동일한 파이썬 버전을 선택했나요? 둘다 모두 3.4 버전이어야해요.
 
+*   만약 `Invalid HTTP_HOST header: <your-site-name> . You may need to add <your-site-name> to ALLOWED_HOSTS.` 라는 오류메세지가 나온다면 `/mysite/settings.py`의 마지막 줄에 `ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']` 를 추가 한 뒤에 다시 **Web** 탭에서 `Reload <your-site-name`이라는 녹색 버튼을 눌러 주세요.
+
 *   [PythonAnywhere 위키에서 일반적인 디버깅 팁][9]을 확인할 수 있어요.
 
  [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
