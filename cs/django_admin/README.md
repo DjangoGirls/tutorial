@@ -5,10 +5,10 @@ Chceš-li přidávat, upravovat a mazat příspěvky, které jsme právě vymode
 Otevřeme soubor `blog/admin.py` a nahradíme jeho obsah následujícím kódem:
 
 ```python
-    from django.contrib import admin
-    from .models import Post
+from django.contrib import admin
+from .models import Post
 
-    admin.site.register(Post)
+admin.site.register(Post)
 ```  
 
 Jak vidíš, importujeme (vkládáme) Post model definovaný v předchozí kapitole. Pro zviditelnění našeho modelu na admin stránce musíme zaregistrovat model pomocí `admin.site.register(Post)`.
@@ -22,12 +22,12 @@ OK, je čas se podívat na náš Post model. Nezapomeň spustit `Pythonu manage.
 Chceš-li se přihlásit, musíš vytvořit *superusera* - uživatele, který má kontrolu nad celou webovou stránkou. Vrať se do příkazového řádku, zadej `python manage.py createsuperuser` a stiskni klávesu enter. Po zobrazení výzvy zadej své uživatelské jméno (malá písmena, bez mezer), e-mailovou adresu a heslo. Nedělej si starosti, že nevidíš heslo, které zadáváš - tak to má být. Jen ho napiš a stiskni `enter` pro pokračování. Výstup by měl vypadat takto (kde uživatelské jméno a e-mail by měly být tvé vlastní):
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+(myvenv) ~/djangogirls$ python manage.py createsuperuser
+Username: admin
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
 ```    
 
 Vrať se do svého prohlížeče. Přihlas se pomocí pověření superuživatele, kterého jsi právě vytvořila; měla bys vidět Django admin dashboard/nástěnku.

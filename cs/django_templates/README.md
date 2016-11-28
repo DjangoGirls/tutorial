@@ -15,7 +15,7 @@ V předchozí kapitole jsme daly naší šabloně seznam příspěvků v proměn
 V Django šabloně se proměnná vypíše pomocí dvojitých složených závorek s názvem proměnné uvnitř. Takhle:
 
 ```html
-    {{ posts }}
+{{ posts }}
 ```  
 
 Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Nahraď vše od druhého `<div>` do třetího `</div>` řádkou `{{ posts }}`. Ulož soubor a obnov stránku, aby sis prohlédla výsledek:
@@ -27,15 +27,15 @@ Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Nahraď vše od 
 Jak vidíš, dostali jsme toto:
 
 ```
-    [<Post: My second post>, <Post: My first post>]
+[<Post: My second post>, <Post: My first post>]
 ```  
 
 To znamená, že to Django chápe jako seznam objektů. Vzpomínáš si z kapitoly **Úvod do pythonu**, jak můžeme zobrazit seznam? Ano, pomocí for smyček! V Django šabloně je použiješ takto:
 
 ```html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
 ```  
 
 Zkus udělat tohle ve své šabloně.
@@ -47,17 +47,17 @@ Zkus udělat tohle ve své šabloně.
 Funguje to! Ale chceme, aby se zobrazovaly jako ty statické příspěvky, které jsme vytvořili dříve v kapitole **Úvod do HTML**. Můžeš smíchat HTML tagy se šablonovými. Naše `body` bude vypadat takhle:
 
 ```html
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 ```  
 
 {% raw %}Všechno, co dáš mezi `{% for %}` a `{% endfor %}`, se zopakuje pro každý objekt v seznamu. Obnov svou stránku:{% endraw %}
@@ -75,14 +75,14 @@ Bylo by dobré vidět, jestli tvá webová stránka bude stále fungovat i na we
 *   Nejdřív hoď svůj kód na Github
 
 ```
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
+$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
 ```  
 
 *   Pak se přihlaš do [PythonAnywhere][4] a jdi do **Bash konzole** (nebo vytvoř novou) a zadej:
@@ -90,9 +90,9 @@ Bylo by dobré vidět, jestli tvá webová stránka bude stále fungovat i na we
  [4]: https://www.pythonanywhere.com/consoles/
 
 ```
-    $ cd my-first-blog
-    $ git pull
-    [...]
+$ cd my-first-blog
+$ git pull
+[...]
 ```  
 
 *   Nakonec jdi na záložku [Web][5] a klikni na **Reload**. Tvá stránka by měla být aktuální!

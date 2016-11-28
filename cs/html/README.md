@@ -19,9 +19,9 @@ Vytvoření šablony znamená vytvoření souboru šablony. Všechno je soubor, 
 Šablony jsou uloženy v adresáři `blog/templates/blog`. Takže nejdříve vytvoř adresář `templates` uvnitř tvé blog složky. Potom vytvoř další složku nazvanou `blog` uvnitř templates složky:
 
 ```
-    blog
-    └───templates
-        └───blog
+blog
+└───templates
+    └───blog
 ```  
 
 (Mohlo by tě zajímat proč potřebujeme dva adresáře s názvem `blog` - jak později zjistíš, je to pouze užitečná konvence, která dělá život jednodušším, když věci začnou být komplikovanější.)
@@ -41,10 +41,10 @@ Podívej se, jak tvá stránka vypadá teď: http://127.0.0.1:8000/
 Do souboru šablony (template) přidej následující:
 
 ```html
-    <html>
-        <p>Ahoj!</p>
-        <p>Funguje to!</p>
-    </html>
+<html>
+    <p>Ahoj!</p>
+    <p>Funguje to!</p>
+</html>
 ```  
 
 Tak jak tvá stránka vypadá teď? Klikni a zjisti to: http://127.0.0.1:8000/
@@ -71,15 +71,15 @@ Každá HTML stránka je také rozdělena na dva elementy: **head** (hlavu) a **
 Například dovnitř `<head>` můžeš dát element title (titulek), třeba takhle:
 
 ```html
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Ahoj!</p>
-            <p>Funguje to!</p>
-        </body>
-    </html>
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Ahoj!</p>
+        <p>Funguje to!</p>
+    </body>
+</html>
 ```  
 
 Ulož soubor a načti znovu svou stránku.
@@ -113,28 +113,28 @@ Teď si můžeš užít trochu zábavy a pokusit se přizpůsobit si svou šablo
 Zde je příklad celé šablony:
 
 ```html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">Můj první příspěvek</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Můj první příspěvek</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
 
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">Můj druhý příspěvek</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-        </body>
-    </html>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Můj druhý příspěvek</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+    </body>
+</html>
 ```  
 
 Tady vytvoříme tři `div` sekce.
@@ -161,13 +161,13 @@ Bylo by fajn vidět všecho tohle venku a živě na internetu, že ano? Pojďme 
 Nejdříve se podívejme, které soubory se změnily od posledního nasazení (deploy). Zadej tyto příkazy lokálně (ne na PythonAnywhere):
 
 ```
-    $ git status
+$ git status
 ```  
 
 Ujisti se, že jsi v `djangogirls` adresáři a řekni `gitu`, ať zahrne všechny nové změny v adresáři:
 
 ```
-    $ git add --all .
+$ git add --all .
 ```  
 
 > **Poznámka** `-A` (zkratka pro "all", tj. "vše") znamená, že `git` také rozpozná, jestli jsi smazala nějaké soubory (defaultně rozpoznává pouze nové a modifikované soubory). Taky si vzpomeň (ze 3. kapitoly), že `.` znamená aktuální adresář.
@@ -175,13 +175,13 @@ Ujisti se, že jsi v `djangogirls` adresáři a řekni `gitu`, ať zahrne všech
 Než nahrajeme všechny soubory, zkontrolujme, co bude `git` nahrávat (všechny soubory, které bude `git` nahrávat, se zobrazí zeleně):
 
 ```
-    $ git status
+$ git status
 ```  
 
 Jsme skoro u konce, teď je čas uložit změny do historie. Vytvoříme "commit zprávu", kde popíšeme, co jsme změnily. Můžeš napsat, cokoli tě napadne, ale je užitečné napsat něco popisného, aby sis v budoucnosti mohla vzpomenout, cos udělala.
 
 ```
-    $ git commit -m "Změněn HTML kód stránek."
+$ git commit -m "Změněn HTML kód stránek."
 ```  
 
 > **Poznámka** Ujisti se, že používáš dvojité uvozovky kolem zprávy.
@@ -189,7 +189,7 @@ Jsme skoro u konce, teď je čas uložit změny do historie. Vytvoříme "commit
 Jakmile jsme s tímto hotovy, nahrajeme (push) naše změny na Github:
 
 ```
-    git push
+git push
 ```  
 
 ### Stáhni svůj nový kód na PythonAnywhere a načti webovou aplikaci
@@ -199,12 +199,12 @@ Jakmile jsme s tímto hotovy, nahrajeme (push) naše změny na Github:
  [5]: https://www.pythonanywhere.com/consoles/
 
 ```
-    $ cd ~/my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
+$ cd ~/my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
 ```  
 
 A sleduj svůj kód, jak se stahuje. Pokud si chceš zkontrolovat, že se kód opravdu nahrál, můžeš skočit do záložky **Files** a podívat se na svůj kód na PythonAnywhere.

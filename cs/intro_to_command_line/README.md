@@ -35,13 +35,13 @@ Nyní bys měla vidět bílé nebo černé okno, které čeká na tvé příkazy
 Pokud jsi na Mac nebo na Linuxu, pravděpodobně uvidíš výzvu začínající tímto znakem `$`, právě takhle:
 
 ```
-    $
+$
 ```  
 
 V systému Windows je to tento znak `>`:
 
 ```
-    >
+>
 ```  
 
 Každý příkaz budeš psát za tento znak a jednu mezeru, ale není nutné to zadávat. Tvůj počítač to udělá za tebe :)
@@ -53,20 +53,20 @@ Každý příkaz budeš psát za tento znak a jednu mezeru, ale není nutné to 
 Pojďme začít s něčím jednoduchým. Zadej tento příkaz:
 
 ```
-    $ whoami
+$ whoami
 ```  
 
 nebo
 
 ```
-    > whoami
+> whoami
 ```  
 
 A zmáčkni `enter`. Tohle je výsledek:
 
 ```
-    $ whoami
-    olasitarska
+$ whoami
+olasitarska
 ```  
 
 Jak vidíš, počítač právě vypsal tvé uživatelské jméno. Pěkný, co?:)
@@ -82,15 +82,15 @@ Každý operační systém má mírně odlišnou sadu příkazů na příkazové
 Bylo by hezké vědět, kde právě jsme, ne? Podívejme se. Zadej následující příkaz a stiskni `enter`:
 
 ```
-    $ pwd
-    /Users/olasitarska
+$ pwd
+/Users/olasitarska
 ```  
 
 Pokud jsi v systému Windows:
 
 ```
-    > cd
-    C:\Users\olasitarska
+> cd
+C:\Users\olasitarska
 ```  
 
 Pravděpodobně se ti zobrazí něco podobného. Jakmile otevřeš příkazovou řádku, obvykle začínáš ve svém domovském adresáři.
@@ -104,23 +104,23 @@ Pravděpodobně se ti zobrazí něco podobného. Jakmile otevřeš příkazovou 
 Tak co je v něm? Bylo by fajn zjistit, co je v našem adresáři. Podívejme se:
 
 ```
-    $ ls
-    Aplikace
-    Desktop
-    Stažené soubory
-    Hudba...
+$ ls
+Aplikace
+Desktop
+Stažené soubory
+Hudba...
 ```  
 
 Windows:
 
 ```
-    > dir  
-    Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR> Applications
-    05/08/2014 07:28 PM <DIR> Desktop
-    05/08/2014 07:28 PM <DIR> Downloads
-    05/08/2014 07:28 PM <DIR> Music
-    ...
+> dir
+Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM <DIR> Applications
+05/08/2014 07:28 PM <DIR> Desktop
+05/08/2014 07:28 PM <DIR> Downloads
+05/08/2014 07:28 PM <DIR> Music
+...
 ```  
 
 * * *
@@ -130,27 +130,27 @@ Windows:
 Teď pojďme do adresáře plochy:
 
 ```
-    $ cd Desktop
+$ cd Desktop
 ```  
 
 Windows:
 
 ```
-    > cd Desktop
+> cd Desktop
 ```  
 
 Zkontroluj, zda-li se adresář skutečně změnil:
 
 ```
-    $ pwd
-    /Users/olasitarska/Desktop
+$ pwd
+/Users/olasitarska/Desktop
 ```  
 
 Windows:
 
 ```
-    > cd
-    C:\Users\olasitarska\Desktop
+> cd
+C:\Users\olasitarska\Desktop
 ```  
 
 A je to!
@@ -164,13 +164,13 @@ A je to!
 Co si vytvořit pokusnou složku na ploše? Můžeš to udělat tímto způsobem:
 
 ```
-    $ mkdir pokus
+$ mkdir pokus
 ```  
 
 Windows:
 
 ```
-    > mkdir pokus
+> mkdir pokus
 ```  
 
 Tento malý příkaz vytvoří složku s názvem `pokus` na ploše. Zda se na ploše složka vytvořila můžeš zkontrolovat pouhým pohledem na pracovní plochu nebo spuštěním příkazu `ls` nebo `dir`! Zkus to :)
@@ -186,19 +186,19 @@ Malá výzva: v nově vytvořeném adresáři `pokus` vytvoř adresář s názve
 #### Řešení:
 
 ```
-    $ cd pokus
-    $ mkdir test
-    $ ls
-    test
+$ cd pokus
+$ mkdir test
+$ ls
+test
 ```  
 
 Windows:
 
 ```
-    > cd pokus
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+> cd pokus
+> mkdir test
+> dir
+05/08/2014 07:28 PM <DIR>      test
 ```  
 
 Gratulujeme! :)
@@ -212,13 +212,13 @@ Nechceme si nechat nepořádek v počítači, takže musíme odstranit vše, co 
 Za prvé se potřebujeme dostat zpátky na plochu:
 
 ```
-    $ cd ..
+$ cd ..
 ```  
 
 Windows:
 
 ```
-    > cd ..
+> cd ..
 ```  
 
 Použití `..` s příkazem `cd` změní tvůj aktuální adresář na rodičovský adresář (adresář, který obsahuje tvůj aktuální adresář).
@@ -226,15 +226,15 @@ Použití `..` s příkazem `cd` změní tvůj aktuální adresář na rodičovs
 Zkontroluj, kde se nacházíš:
 
 ```
-    $ pwd
-    /Users/olasitarska/Desktop
+$ pwd
+/Users/olasitarska/Desktop
 ```  
 
 Windows:
 
 ```
-    > cd
-    C:\Users\olasitarska\Desktop
+> cd
+C:\Users\olasitarska\Desktop
 ```  
 
 Teď je čas vymazat adresář `pokus`:
@@ -242,26 +242,26 @@ Teď je čas vymazat adresář `pokus`:
 > **Pozor**: odstraňování souborů pomocí `del`, `rmdir` nebo `rm` je nevratné, což znamená, *že odstraněné soubory budou navždy pryč*! Takže buď s tímto příkazem velmi opatrná.
 
 ```
-    $ rm -r pokus
+$ rm -r pokus
 ```  
 
 Windows:
 
 ```
-    > rmdir /S pokus
-    Are you sure <Y/N>? Y
+> rmdir /S pokus
+Are you sure <Y/N>? Y
 ```  
 
 Hotovo! Vše je skutečně odstraněno. Pojďme to zkontrolovat:
 
 ```
-    $ ls
+$ ls
 ```  
 
 Windows:
 
 ```
-    > dir
+> dir
 ```  
 
 ### Zavření příkazové řádky
@@ -269,13 +269,13 @@ Windows:
 To je pro tuto chvíli vše! Bezpečně můžeš nyní zavřít příkazovou řádku. Uděláme to hackerským stylem, ano? :)
 
 ```
-    $ exit
+$ exit
 ```  
 
 Windows:
 
 ```
-    > exit
+> exit
 ```  
 
 Suprový, co? :)

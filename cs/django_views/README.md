@@ -11,16 +11,16 @@ View se dávají do souboru `views.py`. My si teď přidáme naše vlastní *vie
 OK, pojďme otevřít tento soubor a podívat se, co tam je:
 
 ```python
-    from django.shortcuts import render
+from django.shortcuts import render
 
-    # Create your views here.
+# Create your views here.
 ```  
 
 Zatím zde není příliš informací. Nejjednodušší *view* může vypadat následovně.
 
 ```python
-    def post_list(request):     
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 ```  
 
 Jak vidíš vytvořily, jsme metodu (`def`) nazvanou `post_list`, která přebírá `request`(žádost) a `return` (vrací) metodu `render`, která bude vykreslovat naši šablonu `blog/post_list.html`.
