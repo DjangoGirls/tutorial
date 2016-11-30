@@ -321,6 +321,7 @@ To delete something from your list you will need to use __indexes__ as we learne
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
