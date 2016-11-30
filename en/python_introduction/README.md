@@ -408,6 +408,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
