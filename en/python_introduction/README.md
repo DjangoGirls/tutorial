@@ -514,7 +514,7 @@ There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
 
 Booleans can be variables, too! See here:
 
