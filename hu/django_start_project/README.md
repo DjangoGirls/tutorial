@@ -57,6 +57,7 @@ Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg
 
 Keresd meg a settings.py azt a sort, ami így keződik: `TIME_ZONE`, és írd át, hogy a saját időzónádat használja:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
     TIME_ZONE = 'Europe/Budapest'
 ```
@@ -65,9 +66,17 @@ Az "Europe/Budapest"-et változtasd meg kedved szerint.
 
 Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elérési útvonalat (később mindent megtudhatsz a statikus fájlokról és a CSS-ről). Menj a fájl *végére*, és a `STATIC_URL` bejegyzés alatt adj hozzá egy következő bejegyzést `STATIC_ROOT` névvel:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+Amikor a DEBUG értéke True és az ALLOWED_HOSTS üres, a hosztnév alapértelmezetten ['localhost', '127.0.0.1', '[::1]']. Ez deploy után nem fog működni a PythonAnywhere-en, ezért változtassuk meg ezt a beállítást így:
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+    ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 ## Adatbázis létrehozása
@@ -76,6 +85,7 @@ Sok különféle adatbázis-szoftver létezik, ami adatokat tud tárolni a webol
 
 Ez már be van állítva a `mysite/settings.py` fájlodban:
 
+{% filename %}mysite/settings.py{% endfilename %}
 ```python
     DATABASES = {
         'default': {
