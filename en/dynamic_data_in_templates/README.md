@@ -39,7 +39,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`:
+Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -53,8 +53,6 @@ def post_list(request):
 ```
 
 Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
-
-Also, the code uses the `timezone.now()` function, so we need to add an import for `timezone`.
 
 The last missing part is passing the `posts` QuerySet to the template. Don't worry – we will cover how to display it in a later chapter.
 
