@@ -20,7 +20,7 @@ Mamy nadzieję sprawić, że pokochasz to tak jak my!
 
 ## Czego nauczysz się w trakcie kursu?
 
-Gdy skończysz kurs, będziesz mieć gotową prostą aplikacje internetową: swój własny blog. Pokażemy Ci jak udostępnić go w internecie, abyś mogła pochwalić się znajomym!
+Gdy skończysz kurs, będziesz mieć gotową prostą aplikację internetową: swój własny blog. Pokażemy Ci jak udostępnić go w Internecie, abyś mogła pochwalić się znajomym!
 
 Będzie to wyglądać mniej więcej tak:
 

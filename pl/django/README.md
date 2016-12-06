@@ -1,6 +1,6 @@
 # Czym jest Django?
 
-Django (czytaj: dżango) to darmowy, open-source framework do tworzenia aplikacji webowych, napisany w Pythonie. To taki zbiór narzędzi, dzięki którym tworzenie stron internetowych jest szybsze i łatwiejsze.
+Django (czytaj: dżango) to darmowy i open-source'owy framework do tworzenia aplikacji webowych, napisany w Pythonie. To taki zbiór narzędzi, dzięki którym tworzenie stron internetowych jest szybsze i łatwiejsze.
 
 Gdy budujesz stronę internetową, często potrzebujesz tych samych rzeczy: uwierzytelnić użytkowników (rejestracja, logowanie, wylogowywanie), panel zarządzania stroną, formularzy, sposobu przesyłania plików itd.
 
