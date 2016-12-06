@@ -114,7 +114,7 @@ Możemy także wyświetlić listę wszystkich opublikowanych wpisów. W tym celu
 
 >(filtr `lte` oznacza `less than or equal`, czyli `mniejszy od lub równy` - co w naszym przykładzie można rozumieć jako 'z datą publikacji dzisiejszą lub wcześniejszą /mniejszą od dzisiejszej/). Obiekt `timezone.now()` oznacza właśnie aktualną datę i godzinę. 
 
-Niestety, żaden z naszych wpisów, które dodaliśmy przez konsolę, nie został jeszcze opublikowany (mogą oczywiście w tym QuerySecie pojawić się wpisy dodane wcześniej w panelu admina, przy których to dodałyście datę publikacji). Zmieńmy to! Zacznij od pobrania wpisu, który chcesz opublikować:
+Niestety, żaden z naszych wpisów, które dodaliśmy przez konsolę, nie został jeszcze opublikowany (mogą oczywiście w tym QuerySecie pojawić się wpisy dodane wcześniej w panelu admina, dla których zdefiniowałaś datę publikacji). Zmieńmy to! Zacznij od pobrania wpisu, który chcesz opublikować:
 
     >>> post = Post.objects.get(title="Przykładowy tytuł")
     
