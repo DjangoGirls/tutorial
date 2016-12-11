@@ -12,20 +12,21 @@ Eğer bir kediyi modellemek istiyorsak `Kedi` nesnesini oluştururuz ve bu nesne
 
 `Kedi` bazı hareketlere sahiptir: `miyavla`, `tirmala` ya da `beslen` (bu durumda kediye biraz `KediMamasi` vermemiz gerekir ki o da kendine ait özellikleri olan başka bir nesne olur. Özelliklere örnek olarak `tat` verilebilir).
 
-    Kedi
-    --------
-    renk 
-    yas 
-    ruh_hali 
-    sahibi 
-    miyavla() 
-    tirmala() 
-    beslen(kedi_mamasi) 
+'''
+Kedi
+--------
+renk 
+yas 
+ruh_hali 
+sahibi 
+miyavla() 
+tirmala() 
+beslen(kedi_mamasi) 
     
-    KediMamasi
-    -------- 
-    tat
-    
+KediMamasi
+-------- 
+tat
+'''   
 
 Yani aslında ana fikir, gerçek nesneleri kod içinde özellikleriyle (`nesne özellikleri`) ve hareketleriyle (`metodlar`) tanımlamak.).
 
@@ -35,14 +36,15 @@ Cevaplamamız gereken soru: Blog gönderisi nedir? Özellikleri ne olmalıdır?
 
 Tabii ki blog gönderimizin içeriği için yazı ve bir de başlık lazım, değil mi? Kimin yazdığını da bilsek iyi olur - dolayısı ile bir yazara da ihtiyacımız var. Son olarak, gönderinin ne zaman yaratıldığını ve yayınlandığını bilmek isteriz.
 
-    Post
-    ------
-    baslik
-    yazi
-    yazar
-    yaratilma_tarihi
-    yayinlanma_tarihi
-    
+'''
+Post
+------
+baslik
+yazi
+yazar
+yaratilma_tarihi
+yayinlanma_tarihi
+'''
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `method` olması güzel olurdu, değil mi?
 
@@ -62,40 +64,43 @@ Veritabanındaki bir modeli sütunları (alan adı) ve satırları (veri) olan b
 
 Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor ( `djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
 
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+'''
+(myvenv) ~/djangogirls$ python manage.py startapp blog
+'''
 
 İçinde birkaç dosya olan yeni bir `blog` klasörü fark edeceksiniz. Projemizdeki klasörler ve dosyalar şöyle olmalı:
 
-    djangogirls
-    ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
-    ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
-    
+'''
+djangogirls
+├── mysite
+|       __init__.py
+|       settings.py
+|       urls.py
+|       wsgi.py
+├── manage.py
+└── blog
+├── migrations
+|       __init__.py
+├── __init__.py
+├── admin.py
+├── models.py
+├── tests.py
+└── views.py
+'''
 
 Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını da söylememiz lazım. Bunu `mysite/settings.py` dosyası ile yapıyoruz. `INSTALLED_APPS` dosyasını bulup `'blog'` u tam `)` karakterinin üzerine yazmamız lazım. Sonunda dosya şuna benzemelidir:
 
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
-    
+'''
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+)
+'''    
 
 ### Post (Blog gönderisi) modeli oluşturma
 
@@ -103,26 +108,27 @@ Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını da söylememi
 
 Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
-    from django.db import models
-    from django.utils import timezone
+'''python
+from django.db import models
+from django.utils import timezone
     
     
-    class Post(models.Model):
-        yazar = models.ForeignKey('auth.User')
-        baslik = models.CharField(max_length=200)
-        yazi = models.TextField()
-        yaratilma_tarihi = models.DateTimeField(
-                default=timezone.now)
-        yayinlanma_tarihi = models.DateTimeField(
-                blank=True, null=True)
-    
-        def yayinla(self):
-            self.yayinlanma_tarihi = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.baslik
-    
+class Post(models.Model):
+    yazar = models.ForeignKey('auth.User')
+    baslik = models.CharField(max_length=200)
+    yazi = models.TextField()
+    yaratilma_tarihi = models.DateTimeField(
+           default=timezone.now)
+    yayinlanma_tarihi = models.DateTimeField(
+           blank=True, null=True)
+ 
+    def yayinla(self):
+        self.yayinlanma_tarihi = timezone.now()
+        self.save()
+ 
+    def __str__(self):
+        return self.baslik
+'''    
 
 > `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. İki alt çizgi Python dilinde sık kullanılır. 
 
@@ -155,20 +161,22 @@ Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormak
 
 Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. İlk önce Django'ya modelde bir takım değişiklikler yaptığımızı haber vermemiz gerekiyor (modeli yeni oluşturduk!). `python manage.py makemigrations blog` yazın. Şöyle görünmeli:
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      0001_initial.py:
-      - Create model Post
-    
+'''
+(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for 'blog':
+0001_initial.py:
+  - Create model Post
+'''
 
 Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migrasyon) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
-    
+'''
+(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Rendering model states... DONE
+  Applying blog.0001_initial... OK
+'''  
 
 Yaşasın! Post modelimiz artık veritabanımızda! Görsek ne güzel olur, değil mi? Gelecek bölümde Post'un nasıl göründügünü göreceğiz!

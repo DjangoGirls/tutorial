@@ -4,12 +4,12 @@ Modelini hazırladığımız yazıları eklemek, düzenlemek ve silmek için Dja
 
 Hadi `blog/admin.py` dosyasını açalım ve içeriğini şununla değiştirelim:
 
-    python
-    from django.contrib import admin
-    from .models import Post
-    
-    admin.site.register(Post)
-    
+'''python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+'''    
 
 Gördüğünüz gibi, bir önceki bölümde tanımladığımız Post modelini admin.py dosyamıza dahil (import) ettik. Modelimizi admin sayfasında görünür yapmak için modeli `admin.site.register(Post)` ile belirtmemiz gerekir..
 
@@ -21,13 +21,14 @@ Tamam, artık admin sayfasında Post modelimize göz atabiliriz. Web sunucusunu 
 
 Giriş yapmak için, sitede her şeyin üzerinde kontrolü olan bir kullanıcı, yani bir *superuser* oluşturmanız gerekiyor. Komut satırında `python manage.py createsuperuser` yazın ve enter tuşuna basın. Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. Parolayı yazarken ekranda bir şey çıkmayacaktır. Sadece yazın ve `enter` tuşuna basıp devam edin. Çıktısı aşağıdaki formatta olacaktır (kullanıcı adı ve email sizinki olacak):
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
+'''
+(myvenv) ~/djangogirls$ python manage.py createsuperuser
+Username: admin
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
+'''    
 
 Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yaptığınızda Django'nun admin panelini göreceksiniz.
 

@@ -8,19 +8,19 @@ Peki, bunu nasıl yapacağız?
 
 `blog/views.py`'ı açacağız. Şu anda `post_list` *view*ü şöyle:
 
-    python
-    from django.shortcuts import render
+'''python
+from django.shortcuts import render
     
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+'''    
 
 Kodları farklı dosyalara eklemekten bahsettiğimizi hatırlıyor musunuz? Şimdi `models.py`'de yazdığımız modeli ekleme zamanı. `from .models import Post` satırını şu şekilde ekleyeceğiz:
 
-    python
-    from django.shortcuts import render
-    from .models import Post
-    
+'''python
+from django.shortcuts import render
+from .models import Post
+'''    
 
 `from`'dan sonraki nokta, *mevcut dizin* veya *mevcut uygulama* anlamına geliyor. `views.py` ve `models.py` aynı dizinde oldukları için sadece `.` ve dosyanın adı (`.py` olmadan) kullanabiliyoruz. Arkasından modelin adını (`Post`)'u dahil ediyoruz).
 
@@ -34,20 +34,21 @@ QuerySet'in nasıl çalıştığı konusunda bir fikriniz oluşmuştur. [Django 
 
 Şimdi yayınlanmış ve `yayinlanma_tarihi`'ne göre sıralanmış bir gönderi listesi istiyoruz, değil mi? Bunu QuerySets bölümünde yapmıştık zaten!
 
+'''
     Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
-    
+'''    
 
 Şimdi bu kodu `blog/views.py` dosyasında `def post_list(request)` fonksiyonuna ekleyelim:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
+'''python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
     
-    def post_list(request):
-        posts = Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
-        return render(request, 'blog/post_list.html', {})
-    
+def post_list(request):
+    posts = Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
+    return render(request, 'blog/post_list.html', {})
+'''    
 
 QuerySet'imiz için bir *değişken* yarattığımıza dikkat edin: `posts`. Bu QuerySet'in ismi. Bundan sonra ondan ismi ile bahsedebiliriz.
 
@@ -59,15 +60,15 @@ Son eksik kalan kısım `posts` QuerySet'ini template'e iletmek (nasıl göstere
 
 Nihayetinde `blog/views.py` şu şekle gelmiş olmalı:
 
-    python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
-    
-    def post_list(request):
-        posts = Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
-        return render(request, 'blog/post_list.html', {'posts': posts})
-    
+'''python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
+     return render(request, 'blog/post_list.html', {'posts': posts})
+'''    
 
 İşte bu kadar! Template'e geri gidip QuerySet'leri görünür hale getirme zamanı!
 

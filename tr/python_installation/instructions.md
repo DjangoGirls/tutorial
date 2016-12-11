@@ -14,9 +14,10 @@ Dikkat: Özelleştir (Customize) olarak seçilmiş kurulum sihirbazının ikinci
 
 Muhtemelen sisteminizde Python zaten yüklüdür. Yüklü olup olmadığını (ya da hangi versiyon olduğunu) kontrol etmek için komut satırını açın ve aşağıdaki komutları girin: 
 
-    $ python3 --version
-    Python 3.4.3
-    
+'''
+$ python3 --version
+Python 3.4.3
+'''    
 
 Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız aşağıdaki adımları takip edin:
 
@@ -24,22 +25,25 @@ Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız aşağ�
 
 Terminale bu komutu girin:
 
-    $ sudo apt-get install python3.4
-    
+'''
+$ sudo apt-get install python3.4
+'''    
 
 #### Fedora (21'e kadar)
 
 Terminalde kullanmanız gereken komut:
 
-    $ sudo yum install python3.4
-    
+'''
+$ sudo yum install python3.4
+'''    
 
 #### Fedora (22+)
 
 Terminalde kullanmanız gereken komut:
 
-    $ sudo dnf install python3.4
-    
+'''
+$ sudo dnf install python3.4
+'''    
 
 ### OS X
 
@@ -50,9 +54,10 @@ Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www
 
 Kurulumun başarılı olup olmadığını kontrol etmek için *Terminal* uygulamasını açın ve aşağıdaki `python3` komutunu çalıştırın:
 
-    $ python3 --version
-    Python 3.4.3
-    
+'''
+$ python3 --version
+Python 3.4.3
+'''    
 
 * * *
 
