@@ -442,11 +442,11 @@ print('Hello, Django girls!')
 
 Для Mac, команда буде виглядати так:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
 
 Для Linux, вона буде на зразок (слово "Desktop" може бути перекладене вашою мовою):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
 
 І для Windows, це буде так:
 

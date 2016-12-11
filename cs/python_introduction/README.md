@@ -19,7 +19,7 @@ $ python3
 Python 3.4.3 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
-```  
+```
 
 ## Tvůj první příkaz v Pythonu!
 
@@ -32,7 +32,7 @@ Pro tuto chvíli nechceme Python konzoli opustit. Chceme se o ní naučit více.
 ```
 >>> 2 + 3
 5
-```  
+```
 
 Hezké! Vidíš, jak se zobrazila odpověď? Python umí matematiku! Můžeš zkusit jiné příkazy typu: `4 * 5` ; `5-1` ; `40 / 2`
 
@@ -47,7 +47,7 @@ A co tvé jméno? Zadej své jméno do uvozovek, jak vidíš níže:
 ```
 >>> "Ola"
 "Ola"
-```  
+```
 
 Nyní jsi vytvořila svůj první řetězec! Je to posloupnost znaků, které mohou být zpracovány počítačem. Řetězec musí vždy začínat a končit stejným znakem. To může být jednoduchá (`'`) nebo dvojitá (`"`) uvozovka (neexistuje žádný rozdíl!) Uvozovkami Pythonu říkáš, že co je uvnitř, je řetězec.
 
@@ -56,14 +56,14 @@ Nyní jsi vytvořila svůj první řetězec! Je to posloupnost znaků, které mo
 ```
 >>> "Ahoj " + "Ola"
 'Ahoj Ola'
-```  
+```
 
 Také můžeš násobit řetězce s číslem:
 
 ```
 >>> "Ola" * 3
 'OlaOlaOla'
-```  
+```
 
 Pokud budeš chtít dát apostrof dovnitř svého řetězce, máš dvě možnosti, jak to udělat.
 
@@ -72,7 +72,7 @@ Pomocí dvojité uvozovky:
 ```
 >>> "Runnin' down the hill"
 "Runnin' down the hill"
-```  
+```
 
 nebo použít escape sekvenci - před apostrof napsat zpětné lomítko (\`):
 
@@ -86,7 +86,7 @@ Pěkné, co? Chceš-li vidět své jméno velkými písmeny, jednoduše zadej:
 ```
 >>> "Ola".upper()
 'OLA'
-```  
+```
 
 Právě jsi použila `upper` **funkci** na svém řetězci! Funkce (jako `upper()`) je sled instrukcí, které Python provádí na daném objektu (`"Ola"`) poté, co ji zavoláš.
 
@@ -95,7 +95,7 @@ Pokud chceš znát počet písmen ve svém jméně, tak pro to má Python také 
 ```
 >>> len("Ola")
 3
-```  
+```
 
 Zajímá tě, proč někdy voláš funkce s `.` na konci řetězce (jako `"Ola".upper()`) a někdy nejprve zavoláš funkci a vložíš řetězec do závorek? V některých případech funkce patří do objektů, jako `upper()`, což lze provést pouze u řetězců. V tomto případě nazýváme funkci **metodou**. Jindy, funkce nepatří k ničemu konkrétnímu a lze ji použít na různé typy objektů, stejně jako `len()`. To je důvod, proč předáváme `"Ola"` jako parametr pro funkci `len`.
 
@@ -120,14 +120,14 @@ Traceback (most recent call last):
 File "<stdin>",
 line 1, in <module>
 TypeError: object of type 'int' has no len()
-```  
+```
 
 Zobrazila se ti naše první chyba! Ta říká, že objekty typu "int" (integers, celá čísla) nemají délku. Tak co můžeme udělat teď? Možná můžeme zkusit napsat naše číslo jako řetězec? Řetězce mají délky, že?
 
 ```
 >>> len(str(304023))
 6
-```  
+```
 
 Funguje to! Použili jsme funkci `str` uvnitř funkce `len`. `str()` vše převádí na řetězec.
 
@@ -144,7 +144,7 @@ Důležitým konceptem v programování jsou proměnné. Proměnná není nic ji
 
 ```
 >>> name = "Ola"
-```  
+```
 
 Vidíš? Je to snadné! Jednoduše napíšeš: name se rovná Ola.
 
@@ -153,7 +153,7 @@ Jak sis jistě všimla, tvůj program nevrátil nic jako předtím. Jak tedy ví
 ```
 >>> name
 'Ola'
-```  
+```
 
 Hurá! První proměnná :)! Kdykoli můžeš změnit to, na co daná proměnná ukazuje:
 
@@ -161,14 +161,14 @@ Hurá! První proměnná :)! Kdykoli můžeš změnit to, na co daná proměnná
 >>> name = "Sonja"
 >>> name
 'Sonja'
-```  
+```
 
 Můžeš ji také použít ve funkcích:
 
 ```
 >>> len(name)
 5
-```  
+```
 
 Super, ne? Samozřejmě proměnná může obsahovat cokoliv, například také čísla! Zkus tohle:
 
@@ -177,7 +177,7 @@ Super, ne? Samozřejmě proměnná může obsahovat cokoliv, například také �
 >>> b = 6
 >>> a * b
 24
-```  
+```
 
 Ale co když použijeme nesprávné jméno? Dokážeš odhadnout, co se stane? Pojďme to zkusit!
 
@@ -186,7 +186,7 @@ Ale co když použijeme nesprávné jméno? Dokážeš odhadnout, co se stane? P
 >>> ctiy
 Traceback (most recent call last):   File "<stdin>", line 1, in <module>
 NameError: name 'ctiy' is not defined
-```  
+```
 
 Chyba! Jak vidíš, Python má různé typy chyb a tato se nazývá **NameError**. Python ti vrátí tuto chybu, pokud se pokusíš použít proměnnou, která nebyla dosud definována. Pokud někdy dojde k této chybě, zkontroluj svůj kód, abys zjistila, jestli jsi nezadala nějaké jméno nesprávně.
 
@@ -202,7 +202,7 @@ Zkus toto:
 'Maria'
 >>> print(name)
 Maria
-```  
+```
 
 Zadáš-li jen `name`, interpretr Pythonu reaguje na řetězcovou *reprezentaci* proměnné "name", což jsou písmena M-a-r-i-a, obklopená jednoduchými uvozovkami ''. Když napíšeš `print(name)`, Python vypíše obsah proměnné na obrazovku bez uvozovek, což vypadá lépe.
 
@@ -217,33 +217,33 @@ Nestyď se a vytvoř seznam:
 ```
 >>> []
 []
-```  
+```
 
 Ano, tento seznam je prázdný. Není moc užitečný, že? Pojďme vytvořit seznam čísel z loterie. Nechceme se stále opakovat, takže seznam uložíme také do proměnné:
 
 ```
 >>> lottery = [3, 42, 12, 19, 30, 59]
-```  
+```
 
 Dobrá máme seznam! Co s ním můžeme dělat? Uvidíme, kolik čísel loterie je v seznamu. Máš nějakou představu, jakou funkci bys měla použít? Už to přeci víš!
 
 ```
 >>> len(lottery)
 6
-```  
+```
 
 Ano! Funkce `len()` ti zjistí počet objektů v seznamu. Šikovné, že? Možná bychom je teď měli zkusit seřadit:
 
 ```
 >>> lottery.sort()
-```  
+```
 
 Tato funkce nic nevrátí, jen změní pořadí čísel v seznamu. Pojďme ho znovu vypsat a uvidíme co se stalo:
 
 ```
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
-```  
+```
 
 Jak můžeš vidět, čísla v seznamu jsou nyní seřazena od nejnižší k nejvyšší hodnotě. Gratulujeme!
 
@@ -253,7 +253,7 @@ Můžeme také zkusit obrátit pořadí? Udělejme to!
 >>> lottery.reverse()
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3]
-```  
+```
 
 Snadné, že? Pokud chceš něco přidat do svého seznamu, můžeš to provést zadáním tohoto příkazu:
 
@@ -261,7 +261,7 @@ Snadné, že? Pokud chceš něco přidat do svého seznamu, můžeš to provést
 >>> lottery.append(199)
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
-```  
+```
 
 Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **indexů**. Index je číslo, které říká, kde se v seznamu položka najde. Programátoři preferují počítání od 0, takže první objekt v seznamu je v indexu 0, druhý je v indexu 1 a tak dále. Zkus toto:
 
@@ -270,7 +270,7 @@ Pokud chceš zobrazit pouze první číslo, můžeš to udělat pomocí **index�
 59
 >>> print(lottery[1])
 42
-```  
+```
 
 Jak vidíš, pro přístup k různým objektům ve tvém seznamu použiješ jméno seznamu a index objektu uvnitř hranatých závorek.
 
@@ -284,7 +284,7 @@ Chceš-li odstranit něco ze svého seznamu, budeš muset použít **indexy**, j
 >>> lottery.pop(0)
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
-```  
+```
 
 Funguje to všechno skvěle!
 
@@ -299,7 +299,7 @@ Slovník je podobný seznamu, ale pro přístup k hodnotám se používá klíč
 ```
 >>> {}
 {}
-```  
+```
 
 Vidíš, že jsi právě vytvořila prázdný slovník. Hurá!
 
@@ -307,7 +307,7 @@ A teď zkus napsat následující příkaz (zkus nahradit vlastními informacemi
 
 ```
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
-```  
+```
 
 Tímto příkazem jsi právě vytvořila proměnnou s názvem `participant` s třemi dvojicemi klíčů hodnot:
 
@@ -320,7 +320,7 @@ Můžeš zkontrolovat obsah jednotlivých klíčů následující syntaxí:
 ```
 >>> print(participant['name'])
 Ola
-```  
+```
 
 Je to podobné seznamu. Ale není nutné si pamatovat index - jen jméno.
 
@@ -331,7 +331,7 @@ Co se stane, když se zeptáme Pythonu na hodnotu klíče, který neexistuje? Zk
 Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
 KeyError: 'age'
-```  
+```
 
 Podívej, další chyba! Toto je **KeyError**. Python ti napomáhá a řekne ti, že klíč `"věk"` v tomto slovníku neexistuje.
 
@@ -344,14 +344,14 @@ Slovníky stejně jako seznamy jsou *mutable/proměnlivé*, což znamená, že j
 
 ```
 >>> participant['favorite_language'] = 'Python'
-```  
+```
 
 Stejně jako u seznamů můžeš použít metodu `len()` na slovníky, vrací počet párů klíč/hodnota ve slovníku. Nestyď se a zadej příkaz:
 
 ```
 >>> len(participant)
 4
-```  
+```
 
 Doufám, že ti to nyní dává větší smysl. :) Připravena na více zábavy se slovníky? Pojďme na další řádek a další úžasné věci.
 
@@ -361,7 +361,7 @@ Příkazem `pop()` odstraníš položky ve slovníku. Například pokud chceš o
 >>> participant.pop('favorite_numbers')
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
-```  
+```
 
 Jak vidíš, z výstupu byla odstraněna odpovídající dvojice klíč hodnota 'favorite_numbers'.
 
@@ -371,7 +371,7 @@ Kromě toho můžeš také změnit hodnotu přidruženou k již vytvořenému kl
 >>> participant['country'] = 'Germany'
 >>> participant
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
-```  
+```
 
 Jak můžeš vidět, hodnota klíče `'country'` se změnila z `"Poland"` na `"Germany"`. :) Úžasné? Hurá! Právě jsi se naučila další úžasnou věc.
 
@@ -400,7 +400,7 @@ True
 True
 >>> 5 != 2
 True
-```  
+```
 
 Dali jsme Pythonu nějaká čísla na porovnání. Jak vidíš, Python může porovnávat nejen čísla, ale může také porovnat výsledky metod. Pěkný, co?
 
@@ -413,7 +413,7 @@ Dejme Pythonu dva další úkoly:
 True
 >>> 3 <= 2
 False
-```    
+```
 
 `>` a `<` jsou pro použití snadné, ale co `> =` a `< =` - víš, co se tím myslí? Podívejme se na to:
 
@@ -431,7 +431,7 @@ True
 False
 >>> 3 > 2 or 2 < 1
 True
-```  
+```
 
 Pythonu můžeš dát porovnat tolik čísel kolik chceš a na vše ti dá odpověď! Je docela chytrý, že?
 
@@ -445,7 +445,7 @@ Už jsi někdy slyšela výraz "srovnávat jablka a hrušky"? Zkusme v Pythonu e
 Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
 TypeError: unorderable types: int() > str()
-```  
+```
 
 Zde vidíš, že stejně jako nelze srovnávat "jablka a hrušky", Python není schopen porovnávat řetězce (`str`) a čísla (`int`). Místo toho zobrazí **TypeError** a říká nám, že tyto dva typy nelze srovnávat společně.
 
@@ -463,7 +463,7 @@ Pravdivostní hodnoty mohou být také v proměnné! Viz zde:
 >>> a = True
 >>> a
 True
-```  
+```
 
 Rovněž to můžete provést takto:
 
@@ -471,7 +471,7 @@ Rovněž to můžete provést takto:
 >>> a = 2 > 5
 >>> a
 False
-```  
+```
 
 Zkoušej a bav se s logickými hodnotami. Zkus spustit následující příkazy:
 
@@ -496,7 +496,7 @@ Chceš-li opustit interaktivní režim Pythonu, který jsme dosud používaly, j
 ```
 >>> exit()
 $
-```  
+```
 
 Tak se dostaneš zpět do příkazové řádky.
 
@@ -519,13 +519,13 @@ Pokud máš soubor uložen, je čas jej spustit! Pomocí dovedností, které jsi
 Na Macu bude příkaz vypadat přibližně takto:
 
 ```
-$ cd /Users/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 Na Linuxu to bude vypadat takto (slovo "Desktop" (Plocha) může být přeloženo do tvého jazyka):
 
 ```
-$ cd /home/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 A na Windows to bude vypadat takto:

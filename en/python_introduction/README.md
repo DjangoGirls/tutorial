@@ -585,14 +585,14 @@ On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd /Users/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd /home/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 And on Windows, it will be like this:
