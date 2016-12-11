@@ -53,7 +53,7 @@ Você já sentiu como se o mundo fosse cada vez mais sobre tecnologia e que de a
 
 Bem, nós temos boas notícias para você! Programação não é tão difícil quanto parece e nós queremos te mostrar o quão divertido pode ser.
 
-Este tutorial não irá te transformar magicamente em um programador. Se você quer ser bom nisso precisa de meses ou até mesmo anos de treino e prática. Mas nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar os diferentes caminhos tão bem quanto pudermos, de forma que você não se sinta intimidado pela tecnologia.
+Este tutorial não irá te transformar magicamente em um programador. Se você quer ser bom nisso precisa de meses ou até mesmo anos de treino e prática. Mas nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar as diferentes etapas tão bem quanto pudermos, de forma que você não se sinta intimidado pela tecnologia.
 
 Nós esperamos conseguir fazer você amar a tecnologia tanto quanto nós amamos!
 
@@ -67,7 +67,7 @@ Ele se parecerá (mais ou menos) com isso:
 
  [2]: images/application.png
 
-> Se você seguir o tutorial por conta própria e não tiver um orientador para ajudar em caso de qualquer problema, nós temos um chat para você: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[1]. Nós pedimos aos nossos orientadores e participantes anteriores para acessarem lá de tempos em tempos e ajudarem os outros com o tutorial! Não tenha medo de fazer sua pergunta lá!
+> Se você seguir o tutorial por conta própria e não tiver um treinador para ajudar em caso de qualquer problema, nós temos um chat para você: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[1]. Nós pedimos aos nossos orientadores e participantes anteriores para acessarem lá de tempos em tempos e ajudarem os outros com o tutorial! Não tenha medo de fazer sua pergunta lá!
 
 OK, [vamos pelo começo...][3]
 
