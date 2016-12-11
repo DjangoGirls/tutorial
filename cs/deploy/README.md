@@ -1,14 +1,14 @@
 # Nasazení!
 
-> **Poznámka:** Projití následující kapitoly, může být někdy trochu těžké. Vydrž a dokonči to; nasazení je důležitou součástí procesu vývoje webových stránek. Tato kapitola je umístěna uprostřed kurzu, aby ti tvůj kouč mohl pomoci s mírně složitějším procesem nasazení tvého webu online. To znamená, že stále můžeš dokončit kurz později sama, pokud ti dojde čas.
+> **Poznámka:** Projít následující kapitolu může být někdy trochu těžké. Vydrž a dokonči to; nasazení je důležitou součástí procesu vývoje webových stránek. Tato kapitola je umístěna uprostřed kurzu, aby ti tvůj kouč mohl pomoci s mírně složitějším procesem nasazení tvého webu online. To znamená, že stále můžeš dokončit kurz později sama, pokud to nestihneš teď.
 
-Až dosud byly tvoje webové stránky k dispozici pouze ve tvém počítači, nyní se naučíš je nasadit! Nasazení je proces publikování aplikace na internetu, takže lidé konečně mohou najít a vidět tvou webovou aplikaci :).
+Až dosud byly tvoje webové stránky k dispozici pouze ve tvém počítači, nyní se naučíš je nasadit! Nasazení je proces publikování aplikace na internetu, takže si lidé konečně mohou prohlédnout tvou webovou aplikaci :).
 
 Jak jsi se dozvěděla, webové stránky musí být umístěny na serveru. Na internetu existuje mnoho poskytovatelů serverů. My budeme používat jednoho, který má relativně jednoduchý proces nasazení: [PythonAnywhere][1]. PythonAnywhere je zdarma pro malé aplikace, které nemají příliš mnoho návštěvníků, takže to pro tebe bude teď stačit.
 
  [1]: https://pythonanywhere.com/
 
-Další externí službu, kterou budeme používa je [GitHub][2], což je hostingová služba pro zdrojové kódy. Na interntu existují i jiné služby, ale téměř všichni programátoři mají účet na GitHubu nyní ho budeš mít také!
+Další externí službu, kterou budeme používat, je [GitHub][2], což je hostingová služba pro zdrojové kódy. Na internetu existují i jiné služby, ale téměř všichni programátoři mají účet na GitHubu. Nyní ho budeš mít také!
 
  [2]: https://www.github.com
 
@@ -16,7 +16,7 @@ Budeme používat GitHub jako odrazový můstek k přesunu našeho kódu do a z 
 
 # Git
 
-Git je "systém pro správu verzí" používaný spoustou programátorů. Tento software může sledovat změny v souborech v průběhu času tak, že konkrétní verze můžeš později znovu zobrazit. Trochu jako funkce "sledování změn" v aplikaci Microsoft Word, ale mnohem silnější.
+Git je "systém pro správu verzí" používaný spoustou programátorů. Tento software může sledovat změny v souborech v průběhu času tak, že konkrétní verze můžeš později znovu zobrazit. Trochu jako funkce "sledování změn" v aplikaci Microsoft Word, ale mnohem mocnější.
 
 ## Instalace Git
 
@@ -26,7 +26,7 @@ Git je "systém pro správu verzí" používaný spoustou programátorů. Tento 
 
 ## Spuštění Git repositáře
 
-Git sleduje změny v sadě souborů v takzvaném úložišti kódu/repository (nebo zkráceně "repo"). Založme si jeden pro náš projekt. Otevři konzoli a v `djangogirls` adresáři spusť tyto příkazy:
+Git sleduje změny v sadě souborů v takzvaném úložišti kódu/repository (nebo zkráceně "repo"). Založme si jedno repo pro náš projekt. Otevři konzoli a v `djangogirls` adresáři spusť tyto příkazy:
 
 > **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (OS x/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla bys být ve složce `djangogirls`.
 
@@ -51,9 +51,9 @@ __pycache__
 
 A ulož ho jako `.gitignore` ve složce nejvyšší úrovně "djangogirls".
 
-> **Poznámka:** Tečka na začátku názvu souboru je důležitá! Pokud budeš mít jakékoliv potíže se vytvořením (například Macu se nelíbí vytvářet soubory, které začínají tečkou přes Finder), pak použij funkci "Uložit jako" v editoru, což je neprůstřelné.
+> **Poznámka:** Tečka na začátku názvu souboru je důležitá! Pokud budeš mít jakékoliv potíže s vytvořením (například Mac nerad vytváří soubory, které začínají tečkou, přes Finder), tak použij funkci "Uložit jako" v editoru, což je neprůstřelné.
 
-Je vhodné použít příkaz `git status` před použitím příkazu `git add` nebo vždy, když si nejste jisti, co se změnilo. To pomůže předejít jakýmkoliv překvapením, například přidání nesprávných souborů. Příkaz `git status` vrátí informace o všech souborech nesledovaných (untracked), upravených (modified) a připravených ke commitu (staged), stav větve a mnoho dalšího. Výstup by měl být podobný tomuto:
+Je vhodné použít příkaz `git status` před použitím příkazu `git add`, anebo vždy, když si nejsi jistá, co se změnilo. To pomůže předejít jakýmkoliv překvapením, například přidání nesprávných souborů. Příkaz `git status` vrátí informace o všech souborech nesledovaných (untracked), upravených (modified) a připravených ke commitu (staged), stav větve a mnoho dalšího. Výstup by měl být podobný tomuto:
 
 ```
 $ git status
@@ -85,23 +85,23 @@ create mode 100644 mysite/wsgi.py
 
 ## Přenesení našeho kódu na GitHub
 
-Přejdi na [GitHub.com][2] a zaregistruj si zdarma nový uživatelský účet. (Pokud jsi to již dříve ve workshopu udělala, tak to je skvělé!)
+Přejdi na [GitHub.com][2] a zaregistruj si zdarma nový uživatelský účet. (Pokud jsi to již dříve ve workshopu udělala, tak je to skvělé!)
 
-Potom vytvoř nové úložiště, dej mu název "my-first-blog". Ponech zaškrtávací políčko "initialise with a README" nezašrkrtlé, ponechej prázdnou .gitignore možnost (to už jsme udělali ručně) a ponech licenci jako None.
+Potom vytvoř nové úložiště, dej mu název "my-first-blog". Ponech zaškrtávací políčko "initialise with a README" nezaškrtlé, ponechej prázdnou možnost .gitignore (to už jsme udělaly ručně) a ponech licenci jako None.
 
 ![][3]
 
  [3]: images/new_github_repo.png
 
-> **Poznámka:** Název `my-first-blog` je důležitý – mohla by si vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela bys ho pokaždé nahrazovat. Tak je zřejmě snazší se držet názvu `my-first-blog`.
+> **Poznámka:** Název `my-first-blog` je důležitý – mohla by sis vybrat něco jiného, ale použijeme ho ještě mnohokrát později a musela bys ho pokaždé nahrazovat. Tak je zatím snazší se držet názvu `my-first-blog`.
 
-Na další obrazovce se zobrazí clon URL tvého repo. Zvol verzi "HTTPS", zkopíruj jí, a za chvilku ji použijeme v terminálu:
+Na další obrazovce se zobrazí klon URL tvého repo. Zvol verzi "HTTPS", zkopíruj ji a za chvilku ji použijeme v terminálu:
 
 ![][4]
 
  [4]: images/github_get_repo_url_screenshot.png
 
-Teď potřebujeme připojit úložiště Git na tvém počítači s úložištěm na GitHub.
+Teď potřebujeme spojit úložiště Git na tvém počítači s úložištěm na GitHub.
 
 Zadej následující příkaz do konzole (nahraď `< your-github-username >` uživatelským jménem, které jsi zadala, když jsi vytvořila svůj účet na GitHub, ale bez ostrých závorek):
 
@@ -110,7 +110,7 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
 $ git push -u origin master
 ```    
 
-Zadej své uživatelské jméno pro GitHub a heslo a měla bys vidět něco takového:
+Zadej své uživatelské jméno a heslo pro GitHub a měla bys vidět něco takového:
 
 ```
 Username for 'https://github.com': hjwp
@@ -125,20 +125,20 @@ Branch master set up to track remote branch master from origin.
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-Tvůj kód je nyní na GitHubu. Můžeš jít a mrknout se na to! Zjistíš, že je v dobré společnosti - [Django][5], [Django girls tutorial][6] a mnoha dalších velkých open source software projektů, které také hostí svůj kód na GitHubu :)
+Tvůj kód je nyní na GitHubu. Můžeš se na něj jít podívat! Zjistíš, že je v dobré společnosti - [Django][5], [Django girls tutorial][6] a mnoha dalších velkých open source software projektů, které také hostí svůj kód na GitHubu :)
 
  [5]: https://github.com/django/django
  [6]: https://github.com/DjangoGirls/tutorial
 
 # Vytvoření našeho blogu na PythonAnywhere
 
-> **Poznámka:** Možná, že jsi vytvořila účet PythonAnywhere již dříve, během instalačních kroků - pokud ano, nemusíš to nyní dělat znovu.
+> **Poznámka:** Možná, že jsi vytvořila účet PythonAnywhere již dříve během instalačních kroků - pokud ano, nemusíš to nyní dělat znovu.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Natáhnutí našeho kódu na PythonAnywhere
 
-Když jsi se zaregistrovala na PythonAnywhere, budeš přesměrována na dashboard nebo na stránku "Konzole". Zvol možnost spustit konzoli "Bash" – je to PythonAnywhere verze konzole, stejná jako na tvém počítači.
+Jakmile se zaregistruješ na PythonAnywhere, budeš přesměrována na dashboard nebo na stránku "Konzole". Zvol možnost spustit konzoli "Bash" – je to PythonAnywhere verze konzole, stejná jako na tvém počítači.
 
 > **Poznámka:** PythonAnywhere je založen na Linuxu, takže pokud jsi na Windows, konzole bude vypadat trochu jinak, než ta, která je na tvém počítači.
 
@@ -148,7 +148,7 @@ Pojďme natáhnout náš kód z GitHubu na PythonAnywhere vytvořením "klonu" n
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
 ```    
 
-Tento příkaz nahraje kopii tvého kódu, na PythonAnywhere. Podívej se zadáním `tree my-first-blog`:
+Tento příkaz nahraje kopii tvého kódu na PythonAnywhere. Zkontroluj to zadáním `tree my-first-blog`:
 
 ```
 $ tree my-first-blog
@@ -172,7 +172,7 @@ my-first-blog/
 
 ### Vytvoření virtualenv na PythonAnywhere
 
-Stejně jako na tvém počítači, můžeš vytvořit virtualenv na PythonAnywhere. V Bash konzoli zadej postupně následující příkazy:
+Stejně jako na tvém počítači můžeš na PythonAnywhere vytvořit virtualenv. V Bash konzoli zadej postupně následující příkazy:
 
 ```
 $ cd my-first-blog
@@ -194,7 +194,7 @@ Successfully installed django-1.8.2 whitenoise-2.0
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-### Shromažďování statických souborů.
+### Shromažďování statických souborů
 
 Byla jsi zvědavá, co bylo to "whitenoise" vlastně zač? Je to nástroj pro obsluhu takzvaných "statických souborů". Statické soubory jsou soubory, které se pravidelně nemění nebo nespouštějí programový kód, například soubory HTML nebo CSS. Na serverech fungují odlišně než na tvém osobním počítači a proto potřebujeme nástroj jako "whitenoise" k jejich obsloužení.
 
@@ -215,7 +215,7 @@ Are you sure you want to do this?
 Type 'yes' to continue, or 'no' to cancel: yes
 ```    
 
-Zadej "Ano" a pokračujeme! Také zbožňuješ, když ti počítač začne vypisovat ty dlouhé stránky kódu? Já jsem to vždy doprovázela tichými zvuky. Brp, brp, brp...
+Zadej "yes" a pokračujeme! Také máš ráda, když ti počítač začne vypisovat ty dlouhé stránky kódu? Já jsem to vždy doprovázela tichými zvuky. Brp, brp, brp...
 
 ```
 Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js' [...] Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css' 62 static files copied to '/home/edith/my-first-blog/static'.
@@ -223,9 +223,9 @@ Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/cont
 
 ### Vytvoření databáze na PythonAnywhere
 
-Zde je další věc, která se liší mezi tvým počítačem a serverem: server používá jinou databázi. Takže uživatelské účty a příspěvky mohou být jiné, na serveru a na tvém počítači.
+Zde je další věc, která se liší mezi tvým počítačem a serverem: server používá jinou databázi. Takže uživatelské účty a příspěvky mohou být jiné na serveru a na tvém počítači.
 
-Můžeme inicializovat databázi na serveru, stejně jako jsi to udělala v počítači, `migrate` a `createsuperuser`:
+Můžeme inicializovat databázi na serveru, stejně jako jsi to udělala v počítači, pomocí příkazů `migrate` a `createsuperuser`:
 
 ```
 (mvenv) $ python manage.py migrate
@@ -241,11 +241,11 @@ Operations to perform:
 
 Nyní je náš kód na PythonAnywhere a náš virtualenv je připraven, statické soubory jsou shromážděny a databáze inicializována. Jsme připraveni zveřejnit blog jako webovou aplikaci!
 
-Dostaň se zpět na dashboard PythonAnywhere kliknutím na logo a poté, klikni na kartu **Web**. Nakonec klikni na **Add a new web app**.
+Běž zpět na dashboard PythonAnywhere kliknutím na logo a poté klikni na kartu **Web**. Nakonec klikni na **Add a new web app**.
 
-Po potvrzení tvého názvu domény, zvol **manual configuration** (NB *není* "Django" volba) v dialogovém okně. Dále zvol **Python 3.4** a klepni na tlačítko Next pro dokončení průvodce.
+Po potvrzení tvého názvu domény zvol **manual configuration** (NB *není* "Django" volba) v dialogovém okně. Dále zvol **Python 3.4** a klepni na tlačítko Next pro dokončení průvodce.
 
-> **Poznámka:** Ujisti se, že volíš možnost "Manual configuration", nikoliv "Django". Jsme příliš cool pro výchozí nastavení PythonAnywhere Django ;-)
+> **Poznámka:** Ujisti se, že volíš možnost "Manual configuration", nikoliv "Django". Jsme příliš cool na to, abychom používali výchozí nastavení PythonAnywhere Django ;-)
 
 ### Nastavení virtualenv
 
@@ -255,15 +255,15 @@ Budeš přesměrována na PythonAnywhere konfigurační obrazovku pro tvou webov
 
  [7]: images/pythonanywhere_web_tab_virtualenv.png
 
-V části "Virtualenv" klepni na červený text, který říká "Enter the path to a virtualenv" a zadej: `/home/ <your-username>/my-first-blog/myvenv/`. Klikni na modré zaškrtávací políčko a tím uložit cestu před pokračováním.
+V části "Virtualenv" klepni na červený text, který říká "Enter the path to a virtualenv" a zadej: `/home/ <your-username>/my-first-blog/myvenv/`. Klikni na modré zaškrtávací políčko, čímž uložíš cestu předtím, než budeš pokračovat.
 
 > **Poznámka:** Nahraď své vlastní uživatelské jméno podle potřeby. Pokud uděláš chybu, PythonAnywhere Ti zobrazí malé varování.
 
 ### Konfigurace souboru WSGI
 
-Django používá "WSGI protokol", standard pro obsluhu webových stránek pomocí Pythonu, který PythonAnywhere podporuje. Aby PythonAnywhere poznal a mohl používat náš Django blog upravme WSGI konfigurační soubor.
+Django používá "WSGI protokol", standard pro obsluhu webových stránek pomocí Pythonu, který PythonAnywhere podporuje. Aby PythonAnywhere poznal a mohl používat náš Django blog, upravme WSGI konfigurační soubor.
 
-Klikni na odkaz "WSGI configuration file" (v sekci "Code" v horní části stránky – bude pojmenována nějak takto `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), a budeš přesměrována do editoru.
+Klikni na odkaz "WSGI configuration file" (v sekci "Code" v horní části stránky – bude pojmenována nějak takto `/var/www/<your-username>_pythonanywhere_com_wsgi.py`) a budeš přesměrována do editoru.
 
 Odstraň veškerý obsah a nahraď jej upraveným následujícím kódem:
 
@@ -282,21 +282,21 @@ from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
 ```    
 
-> **Poznámka:** Nezapomeň nahradit své vlastní uživatelské jméno, za `<your-username>`
+> **Poznámka:** Nezapomeň nahradit své vlastní uživatelské jméno za `<your-username>`
 
 Úkolem tohoto souboru je říct PythonAnywhere, kde je naše webová aplikace a jaký je název souboru nastavení Djanga. Také nastavuje nástroj pro statické soubory "whitenoise".
 
 Klikni na **Save** a přejdi zpět na kartu **Web**.
 
-Zvládli jsme to! Klikni na velké zelené tlačítko **Reload** a budeš mít možnost zobrazit svou aplikaci. Odkaz na to najdeš v horní části stránky.
+Zvládly jsme to! Klikni na velké zelené tlačítko **Reload**, čímž zobrazíš svou aplikaci. Odkaz na to najdeš v horní části stránky.
 
 ## Ladící tipy
 
-Pokud se ti zobrazí chyba při pokusu navštívit web, první místo kam se podívat na nějaké informace o ladění je v **error log**. Odkaz na něj najdeš na PythonAnywhere v [kartě Web][8]. Zkontroluj jestli tam nejsou nějaké chybové zprávy; nejnovější záznamy jsou na konci. Mezi běžné problémy patří:
+Pokud se ti zobrazí chyba při pokusu zobrazit web, první místo, kam se podívat na nějaké informace o ladění, je v **error log**. Odkaz na něj najdeš na PythonAnywhere v [kartě Web][8]. Zkontroluj, jestli tam nejsou nějaké chybové zprávy; nejnovější záznamy jsou na konci. Mezi běžné problémy patří:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-*   Často zapomínané kroky jsou ty, které jsme dělali v konzoly: vytvoření virtualenv, aktivace, instalace Django, spuštění collectstatic, přenesení databáze.
+*   Často zapomínané kroky jsou ty, které jsme dělaly v konzoly: vytvoření virtualenv, aktivace, instalace Djanga, spuštění collectstatic, přenesení databáze.
 
 *   Chyba k cestě virtualenv na kartě Web – bude obvykle označená malou červenou zprávou na stejném místě.
 
@@ -308,10 +308,10 @@ Pokud se ti zobrazí chyba při pokusu navštívit web, první místo kam se pod
 
  [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
-A pamatuj si, že tvůj coach je tady, aby ti pomohl!
+A pamatuj si, že tvůj kouč je tady, aby ti pomohl!
 
 # Jsme online!
 
-Výchozí stránka tvé webové aplikace by měla ukázat "Welcome to Django", stejně jako to dělá na tvém počítači. Zkus přidat `/admin/` na konec adresy URL, a budeš přesměrována na admin stránku. Přihlas se pomocí uživatelského jména a hesla, a uvidíš, že můžeš přidávat nové příspěvky na server.
+Výchozí stránka tvé webové aplikace by měla ukázat "Welcome to Django", stejně jako to dělá na tvém počítači. Zkus přidat `/admin/` na konec adresy URL a budeš přesměrována na admin stránku. Přihlas se pomocí uživatelského jména a hesla a uvidíš, že můžeš přidávat nové příspěvky na server.
 
-Poplácej sama sebe *ohromně* po zádech! Nasazení serveru je jednou z nejsložitější částí vývoje webových aplikací a trvá lidem často i několik dní, než je funkční. Ale ty máš své stránky online na Internetu, právě teď!
+Poplácej sama sebe *po zádech*! Nasazení serveru je jednou z nejsložitější částí vývoje webových aplikací a trvá lidem často i několik dní, než je funkční. Ale ty máš své stránky online na internetu už teď!
