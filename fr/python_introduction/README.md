@@ -519,12 +519,12 @@ Une fois que le fichier est sauvegardé, vous pouvez le lancer ! En utilisant le
 
 Sur Mac, ça ressemblera à :
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 Sous Linux, comme ça (il se peut que le mot Bureau soit dans une autre langue) :
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 Et sous Windows, ce sera comme ça :
