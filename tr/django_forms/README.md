@@ -212,10 +212,10 @@ from django.shortcuts import redirect
 Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu için `post_detail` sayfasına gidebiliriz.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` gitmek istediğimiz görünümün ismidir. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu değeri görünümlere aktarmak için `pk=post.pk` yazarız. Burada `post` yeni yarattığımız blog postudur!
+`post_detail` gitmek istediğimiz görünümün ismidir. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu değeri görünümlere aktarmak için `pk=post.pk` yazarız. Burada `post` yeni yarattığımız blog postudur!
 
 Çok şey söyledik ama herhalde *view* u tümüyle bir görmek isteriz artık, değil mi?
 
@@ -228,7 +228,7 @@ def post_new(request):
             post.yazar = request.user
             post.yayinlanma_tarihi = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})yazar
@@ -307,7 +307,7 @@ def post_edit(request, pk):
             post.yazar = request.user
             post.yayinlanma_tarihi = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
