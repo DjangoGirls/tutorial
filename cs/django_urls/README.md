@@ -17,16 +17,16 @@ Každá stránka na internetu potřebuje svou vlastní URL. Tímto způsobem apl
 Pojďme otevřít soubor `mysite/urls.py` v tvém zvoleném editoru kódu a uvidíme, jak vypadá:
 
 ```python
-    from django.conf.urls import include, url
-    from django.contrib import admin
+from django.conf.urls import include, url
+from django.contrib import admin
 
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
 
-        url(r'^admin/', include(admin.site.urls)),
-    ]
+    url(r'^admin/', include(admin.site.urls)),
+]
 ```  
 
 Jak vidíš, Django už má tady něco pro nás připravené.
@@ -36,7 +36,7 @@ Jak vidíš, Django už má tady něco pro nás připravené.
 Admin URL, které jsi navštívila v předchozí kapitole, už je tady:
 
 ```python
-         url(r'^admin/', include(admin.site.urls)),
+     url(r'^admin/', include(admin.site.urls)),
 ```  
 
 To znamená, že pro každou adresu URL, která začíná na `admin/`, bude Django hledat odpovídající *view*. V tomto případě je zde vložen odkaz na soubor s admin URL, takže není vše zabaleno v jednom souboru – je to mnohem čitelnější a jednodušší.
@@ -48,11 +48,11 @@ Zajímá tě, jak Django porovnává URL pro views? No, tato část je složitě
 Pokud chceš porozumět tomu, jak jsme vytvořili vzory, zde je příklad procesu - budeme potřebovat pouze omezenou sadu pravidel pro vyjádření vzoru, který hledáme, jmenovitě:
 
 ```
-    ^ pro začátek textu
-    $ pro konec textu
-    \d číslice
-    + označuje poslední položku, které by měla být zopakována
-    () k zachycení/ohraničení části vzoru
+^ pro začátek textu
+$ pro konec textu
+\d číslice
++ označuje poslední položku, které by měla být zopakována
+() k zachycení/ohraničení části vzoru
 ```  
 
 Cokoliv jiného v definici URL budeme brát doslovně.
@@ -77,13 +77,13 @@ Odstraň zakomentované řádky (řádky začínající `#`) a přidej řádek, 
 Tvůj `Mysite/urls.py` soubor by měl nyní vypadat takto:
 
 ```python
-    from django.conf.urls import include, url
-    from django.contrib import admin
+from django.conf.urls import include, url
+from django.contrib import admin
 
-    urlpatterns = [
-         url(r'^admin/', include(admin.site.urls)),
-         url(r'', include('blog.urls')),
-    ]
+urlpatterns = [
+     url(r'^admin/', include(admin.site.urls)),
+     url(r'', include('blog.urls')),
+]
 ```  
 
 Django nyní bude přesměrovávat vše, co přichází na ' http://127.0.0.1:8000/', do `blog.urls ` a hledat zde další instrukce.
@@ -95,8 +95,8 @@ Při psaní regulárních výrazů v Pythonu se vždy přidává `r` před řet�
 Vytvoř nový prázdný soubor `blog/urls.py`. Přidej tyto dvě první řádky:
 
 ```python
-    from django.conf.urls import url
-    from . import views
+from django.conf.urls import url
+from . import views
 ```
 
 Zde jsme jen importovaly Django metody a všechny naše `views` z aplikace `blogu` (zatím žádné nemáme, ale dostaneme se k tomu za chvíli).
@@ -104,9 +104,9 @@ Zde jsme jen importovaly Django metody a všechny naše `views` z aplikace `blog
 Poté můžeme přidat náš první URL vzor:
 
 ```python
-    urlpatterns = [
-         url(r'^$', views.post_list, name='post_list'),
-    ]
+urlpatterns = [
+     url(r'^$', views.post_list, name='post_list'),
+]
 ```  
 
 Jak vidíš, právě jsme přiřadili `view` nazvané `post_list`, k URL `^$`. Tento regulární výraz znamená `^` (začátek řetězce), následuje `$` (konec řetězce) - výrazu bude odpovídat pouze prázdný řetězec. Tak je to správně, protože v Django URL překladači/resolveru, část adresy ' http://127.0.0.1:8000 /' není součástí adresy URL. Tento vzor řekne Djangu, že `views.post_list` je správné místo, kam jít, když někdo vstoupí na tvé webové stránky na adrese ' http://127.0.0.1:8000 /'.

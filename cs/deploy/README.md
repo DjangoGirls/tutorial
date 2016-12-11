@@ -31,10 +31,10 @@ Git sleduje změny v sadě souborů v takzvaném úložišti kódu/repository (n
 > **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (OS x/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla bys být ve složce `djangogirls`.
 
 ```
-    $ git init
-     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+$ git init
+ Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Your Name"
+$ git config --global user.email you@example.com
 ```    
 
 Inicializace úložiště git je něco, co musíme udělat jednou za projekt (a nebudeš muset znovu zadávat uživatelské jméno a e-mailovou adresu).
@@ -42,11 +42,11 @@ Inicializace úložiště git je něco, co musíme udělat jednou za projekt (a 
 Git bude sledovat změny souborů a složek v tomto adresáři, ale jsou tam některé soubory, které chceme ignorovat. Uděláme to tak, že vytvoříš soubor s názvem `.gitignore` v základním adresáři. Otevři editor a vytvoř nový soubor s následujícím obsahem:
 
 ```
-    *.pyc
-    __pycache__
-     myvenv
-     db.sqlite3
-    .DS_Store
+*.pyc
+__pycache__
+ myvenv
+ db.sqlite3
+.DS_Store
 ```    
 
 A ulož ho jako `.gitignore` ve složce nejvyšší úrovně "djangogirls".
@@ -56,31 +56,31 @@ A ulož ho jako `.gitignore` ve složce nejvyšší úrovně "djangogirls".
 Je vhodné použít příkaz `git status` před použitím příkazu `git add` nebo vždy, když si nejste jisti, co se změnilo. To pomůže předejít jakýmkoliv překvapením, například přidání nesprávných souborů. Příkaz `git status` vrátí informace o všech souborech nesledovaných (untracked), upravených (modified) a připravených ke commitu (staged), stav větve a mnoho dalšího. Výstup by měl být podobný tomuto:
 
 ```
-    $ git status
-     On branch master
+$ git status
+ On branch master
 
-     Initial commit
+ Initial commit
 
-    Untracked files:
-       (use "git add <file>..." to include in what will be committed)
-             .gitignore
-             blog/
-             manage.py
-             mysite/
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+         .gitignore
+         blog/
+         manage.py
+         mysite/
 
-     nothing added to commit but untracked files present (use "git add" to track)
+ nothing added to commit but untracked files present (use "git add" to track)
 ```    
 
 A nakonec uložíme naše změny. Přejdi do konzole a spusť tyto příkazy:
 
 ```
-    $ git add --all .
-    $ git commit -m "My Django Girls app, first commit"
-    [...]
-    13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-    [...]
-    create mode 100644 mysite/wsgi.py
+$ git add --all .
+$ git commit -m "My Django Girls app, first commit"
+[...]
+13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+[...]
+create mode 100644 mysite/wsgi.py
 ```  
 
 ## Přenesení našeho kódu na GitHub
@@ -106,21 +106,21 @@ Teď potřebujeme připojit úložiště Git na tvém počítači s úložiště
 Zadej následující příkaz do konzole (nahraď `< your-github-username >` uživatelským jménem, které jsi zadala, když jsi vytvořila svůj účet na GitHub, ale bez ostrých závorek):
 
 ```
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+$ git push -u origin master
 ```    
 
 Zadej své uživatelské jméno pro GitHub a heslo a měla bys vidět něco takového:
 
 ```
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/hjwp/my-first-blog.git  
-    * [new branch] master -> master
-    Branch master set up to track remote branch master from origin.
+Username for 'https://github.com': hjwp
+Password for 'https://hjwp@github.com':
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hjwp/my-first-blog.git
+* [new branch] master -> master
+Branch master set up to track remote branch master from origin.
 ```    
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
@@ -151,23 +151,23 @@ Pojďme natáhnout náš kód z GitHubu na PythonAnywhere vytvořením "klonu" n
 Tento příkaz nahraje kopii tvého kódu, na PythonAnywhere. Podívej se zadáním `tree my-first-blog`:
 
 ```
-    $ tree my-first-blog
-    my-first-blog/
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── migrations
-    │   │   ├── 0001_initial.py
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+$ tree my-first-blog
+my-first-blog/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```    
 
 ### Vytvoření virtualenv na PythonAnywhere
@@ -175,19 +175,19 @@ Tento příkaz nahraje kopii tvého kódu, na PythonAnywhere. Podívej se zadán
 Stejně jako na tvém počítači, můžeš vytvořit virtualenv na PythonAnywhere. V Bash konzoli zadej postupně následující příkazy:
 
 ```
-    $ cd my-first-blog
+$ cd my-first-blog
 
-    $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
-    [...]
-    Installing setuptools, pip...done.
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
 
-    $ source myvenv/bin/activate
+$ source myvenv/bin/activate
 
-    (mvenv) $ pip install django whitenoise
-    Collecting django
-    [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
+(mvenv) $ pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
 ```    
 
 > **Poznámka:** Krok `pip install` může trvat několik minut. Trpělivost, trpělivost! Ale pokud to trvá déle než 5 minut, něco není v pořádku. Zeptej se svého kouče.
@@ -203,22 +203,22 @@ O statických souborech zjistíme trochu více později v tomto kurzu, až budem
 Nyní jen musíme spustit další příkaz na serveru s názvem `collectstatic`. Ten řekne Djangu, aby posbíral všechny statické soubory, které potřebuje na serveru. V současnosti jsou to hlavně soubory, které upravují vzhled admin stránky.
 
 ```
-    (mvenv) $ python manage.py collectstatic
+(mvenv) $ python manage.py collectstatic
 
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-         /home/edith/my-first-blog/static
+You have requested to collect static files at the destination
+location as specified in your settings:
+     /home/edith/my-first-blog/static
 
-    This will overwrite existing files!
-    Are you sure you want to do this?
+This will overwrite existing files!
+Are you sure you want to do this?
 
-    Type 'yes' to continue, or 'no' to cancel: yes
+Type 'yes' to continue, or 'no' to cancel: yes
 ```    
 
 Zadej "Ano" a pokračujeme! Také zbožňuješ, když ti počítač začne vypisovat ty dlouhé stránky kódu? Já jsem to vždy doprovázela tichými zvuky. Brp, brp, brp...
 
 ```
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js' [...] Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css' 62 static files copied to '/home/edith/my-first-blog/static'.
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js' [...] Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css' Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css' 62 static files copied to '/home/edith/my-first-blog/static'.
 ```    
 
 ### Vytvoření databáze na PythonAnywhere
@@ -228,13 +228,13 @@ Zde je další věc, která se liší mezi tvým počítačem a serverem: server
 Můžeme inicializovat databázi na serveru, stejně jako jsi to udělala v počítači, `migrate` a `createsuperuser`:
 
 ```
-    (mvenv) $ python manage.py migrate
-    Operations to perform:
-    [...]
-       Applying sessions.0001_initial... OK
+(mvenv) $ python manage.py migrate
+Operations to perform:
+[...]
+   Applying sessions.0001_initial... OK
 
 
-    (mvenv) $ python manage.py createsuperuser
+(mvenv) $ python manage.py createsuperuser
 ```    
 
 ## Publikování našeho blogu jako webové aplikace
@@ -268,18 +268,18 @@ Klikni na odkaz "WSGI configuration file" (v sekci "Code" v horní části strá
 Odstraň veškerý obsah a nahraď jej upraveným následujícím kódem:
 
 ```python
-    import os
-    import sys
+import os
+import sys
 
-    path = '/home/<your-username>/my-first-blog' # use your own username here
-    if path not in sys.path:
-         sys.path.append(path)
+path = '/home/<your-username>/my-first-blog' # use your own username here
+if path not in sys.path:
+     sys.path.append(path)
 
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
 ```    
 
 > **Poznámka:** Nezapomeň nahradit své vlastní uživatelské jméno, za `<your-username>`
