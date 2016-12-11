@@ -1,6 +1,6 @@
 # Eğer tutorial'ı evde yapıyorsanız
 
-Eğer tutorial'ı [Django Girls etkinlikleri](https://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [İnternet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
+Eğer tutorial'ı [Django Girls etkinlikleri](http://djangogirls.org/events/)nin birinde değil de evde yapıyorsanız, bu bölümü atlayabilirsiniz ve doğrudan [İnternet nasıl çalışır?](../how_the_internet_works/README.md) bölümüne gidebilirsiniz.
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinlikleri, tutorial sırasında uğraşmamak için herşeyi kurduğumuz bir "kurulum akşamı"nı içeriyor. Bu sayfayı onun için kullanıyoruz.
 
@@ -10,31 +10,31 @@ Eğer yararlı olduğunu düşünüyorsanız, bu bölümü okuyabilirsiniz. Ama 
 
 # Kurulum
 
-Atölyede bir blog yapıyor olacaksınız, eğitim günü kodlamaya hazır olmanız için önceden ayarlamakta fayda olan birkaç kurulum var.
+Atölyede bir blog geliştireceksiniz, eğitim günü kodlamaya hazır olmanız için önceden ayarlamakta fayda olan birkaç kurulum var.
 
 # Python Yükleyin
 
-{% include "/python_installation/instructions.md" %}
+{% include "python_installation/instructions.md" %}
 
 # Bir "virtualenv" kurun ve Django'yu yükleyin
 
-{% include "/django_installation/instructions.md" %}
+{% include "django_installation/instructions.md" %}
 
 # Bir kod düzenleyicisi yükleyin
 
-{% include "/code_editor/instructions.md" %}
+{% include "code_editor/instructions.md" %}
 
 # Git yükleyin
 
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 # GitHub hesabı oluşturun
 
-[GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun.
+[GitHub.com](http://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun.
 
 # PythonAnywhere hesabı oluşturun
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "deploy/signup_pythonanywhere.md" %}
 
 # Okumaya başlayın
 

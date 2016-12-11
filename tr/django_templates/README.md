@@ -14,9 +14,9 @@ Bir önceki bölümde, template'e `posts` değişkeni içinde gönderiler listes
 
 Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
 
-```html
-{{ posts }}
-```    
+    html
+    {{ posts }}
+    
 
 Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
@@ -26,17 +26,16 @@ Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`
 
 Gördüğümüz sadece bu:
 
-```
-[<Post: Gönderi 2>, <Post: Gönderi 1>]
-```
+    [<Post: Gönderi 2>, <Post: Gönderi 1>]
+    
 
 Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
-```
+    html
+    {% for post in posts %}
+        {{ post }}
+    {% endfor %}
+    
 
 Bunu kendi template'imizle deneyelim.
 
@@ -46,19 +45,19 @@ Bunu kendi template'imizle deneyelim.
 
 İşe yarıyor! Fakat bunların daha önce **HTML'ye giriş** bölümünde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTML ve template etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
 
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
+    html
     <div>
-        <p>published: {{ post.yayinlama_tarihi }}</p>
-        <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaksbr }}</p>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-{% endfor %}
-``` 
+    
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.yayinlanma_tarihi }}</p>
+            <h1><a href="">{{ post.baslik }}</a></h1>
+            <p>{{ post.yazi|linebreaks }}</p>
+        </div>
+    {% endfor %}
+    
 
 {% raw %}`{% for %}` ve `{% endfor %}` arasına koyduğunuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
@@ -66,7 +65,7 @@ Bunu kendi template'imizle deneyelim.
 
  [3]: images/step3.png
 
-`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaksbr` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
+`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaks` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
 
 ## Bir şey daha
 
@@ -74,32 +73,30 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 
 *   İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
-```
-$ git status
-[...]
-$ git add --all .
-$ git status
-[...]
-$ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."
-[...]
-$ git push
-```
+    $ git status
+    [...]
+    $ git add -A .
+    $ git status
+    [...]
+    $ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."
+    [...]
+    $ git push
+    
 
 *   [PythonAnywhere][4]'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
  [4]: https://www.pythonanywhere.com/consoles/
 
-```
-$ cd ilk-blogum
-$ git pull
-[...]
-```
+    $ cd ilk-blogum
+    $ git pull
+    [...]
+    
 
 *   Ve son olarak da [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı!
 
  [5]: https://www.pythonanywhere.com/web_app_setup/
 
-Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlama_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
+Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlanma_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
 
 Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 
