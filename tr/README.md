@@ -4,6 +4,10 @@
 
 > Bu çalışma Creative Commons Attribution-ShareAlike 4.0 International License altında lisanslanmıştır. Lisansın bir kopyasını görmek için http://creativecommons.org/licenses/by-sa/4.0/ adresini ziyaret edin.
 
+## Çeviri
+
+Bu döküman İngilizce'den Türkçe'ye 28 kişiden oluşan tamamen gönüllü bir ekip tarafından çevrildi: Elif T. Kuş, Şirin Saygılı, Suzan Üsküdarlı, Oğuzcan Küçükbayrak, Mehmet Ragıp Altuncu, Şahin B., Kıvanç Yazan, Adil Öztaşer, olasitarska, Oğuz Erdoğmuş, ophelia, Tuğçe Şirin, Fazilet Çilli, Özge Barbaros, Evin Pınar Örnek, Yiğit Bekir Baya, Berna Erden, Akın Toksan, Çağıl, Berat Doğan, Taha Yusuf, Helin Ece Akgül, Müge Kurtipek, Nezihe Pehlivan, Can Güler, Wert Yuio, Barış Arda Yılmaz ve Aybüke Özdemir! Emeği geçen herkese sonsuz teşekkürler! Ellerinize sağlık!
+
 ## Giriş
 
 Hiç dünyanın her geçen gün daha fazla teknoloji ile alakalı olduğunu ve bir şekilde geride kaldığınızı hissettiniz mi ? Hiç web sayfalarının nasıl yapıldığını merak edip başlamak için gereken motivasyona sahip olmadığınız oldu mu? Yazılım dünyasının sizin için, kendi başınıza bir şeyler yapmayı denemek için bile, çok karmaşık olduğunu düşündünüz mü?
