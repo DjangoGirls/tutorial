@@ -10,18 +10,18 @@ View'ler `views.py` doyasına yazılır. Şimdi, `blog/views.py` dosyasına *vie
 
 Dosyayı açıp inceleyelim:
 
-'''python 
+```python 
 from django.shortcuts import render
 
 # View'lar buraya yazılacak.
-'''    
+```    
 
 Henüz fazla bir şey görünmüyor. En basitinden *view* şöyle olabilir.
 
-'''python 
+```python 
 def post_list(request):     
     return render(request, 'blog/post_list.html', {})
-'''    
+```    
 
 Burada, `request (istek)` i alıp template `blog/post_list.html` ile görüntüleyen `render` methodunu `döndüren` `post_list` isimli bir method yarattık.
 

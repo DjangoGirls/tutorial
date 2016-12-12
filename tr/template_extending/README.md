@@ -10,17 +10,17 @@ Temel template web sitenizin bütün sayfalarında genişletebileceğiniz en tem
 
 Şimdi `blog/templates/blog/` klasörü içinde `base.html` adlı bir dosya oluşturalım:
 
-'''
+```
 blog
 └───templates
     └───blog
             base.html
             post_list.html
-'''    
+```    
 
 Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi bu `base.html`'ye kopyalayalım:
 
-'''html
+```html
 {% load staticfiles %}
 <html>
     <head>
@@ -52,11 +52,11 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
         </div>
     </body>
  </html>
-'''   
+```   
 
 Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında kalan her şeyi) şununla değiştirin:
 
-'''html
+```html
 <body>
     <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
@@ -70,20 +70,20 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
         </div>
     </div>
 </body>
-'''    
+```    
 
 Aslında sadece `{% for post in posts %}{% endfor %}` arasındaki her şeyi şununla değiştirmiş olduk:
 
-'''html
+```html
 {% block content %}
 {% endblock %}
-'''    
+```    
 
 Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanarak bir blok oluşturdunuz. Diğer template'leri bu bloğun içine HTML ekleyerek `base.html`'yi genişletebilirsiniz. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
 Şimdi bunu kaydedin ve tekrar `blog/templates/blog/post_list.html` dosyanızı açın. Body içinde kalanlar hariç her şeyi silin. Ve ayrıca `<div class="page-header"></div>` bölümünü de silin. Dosyanız şöyle görünecektir:
 
-'''html
+```html
 {% for post in posts %}
     <div class="post">
         <div class="date">
@@ -93,17 +93,17 @@ Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanar
         <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
-'''    
+```    
 
 Ve şimdi şu satırı sayfanın başına ekleyin:
 
-'''  
+```  
 {% extends 'blog/base.html' %}
-'''    
+```    
 
 {% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock content %}` arasına koyun. Şunun gibi:{% endraw %}
 
-'''html
+```html
 {% extends 'blog/base.html' %}
     
 {% block content %}
@@ -117,7 +117,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
         </div>
     {% endfor %}
 {% endblock content %}
-'''    
+```    
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)
 

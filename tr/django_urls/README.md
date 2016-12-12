@@ -16,7 +16,7 @@ Internetteki her sayfanın kendi URL'inin olması gerekir. Böylelikle bir URL a
 
 Kod editörümüzde `mysite/urls.py` dosyasını açalım ve neye benzediğine bakalım:
 
-'''python
+```python
 from django.conf.urls import include, url
 from django.contrib import admin
     
@@ -27,7 +27,7 @@ urlpatterns = [
     
     url(r'^admin/', include(admin.site.urls)),
 ]
-'''
+```
     
 
 Gördüğünüz gibi Django bizim için bir şeyler koymuş bile.
@@ -36,9 +36,9 @@ Gördüğünüz gibi Django bizim için bir şeyler koymuş bile.
 
 Geçen bölümde gittiğimiz admin URL şimdiden burda:
 
-'''python
+```python
     url(r'^admin/', include(admin.site.urls)),
-'''  
+```  
 
 `admin` ile başlayan her URL için Django ona denk gelen bir *view* bulur manasına gelir. Bu şekilde bir sürü admin URLlerini ekliyoruz böylece hepsi bu küçük dosyanın içinde sıkıştırılmış bir şekilde durmuyor -- bu hali daha okunabilir ve düzenli.
 
@@ -48,13 +48,13 @@ Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu
 
 Gene de kalıpları nasıl oluşturduğumuzu anlamak isterseniz, aşağıdaki bir örnek var - aradığımız kalıbı oluşturmak için kuralların sadece bir kısmına ihtiyacımız olacak, şöyle:
 
-'''
+```
 ^ metnin başlangıcı için
 $ metnin sonu için
 \d rakamlar için
 + bir önceki karakterin en az bir kere bulunması gerektiğini belirtmek için
 () kalıbın belli bir kısmını yakalamak için
-'''    
+```    
 
 Url tanımındaki diğer herşey birebir eşlenecek.
 
@@ -77,7 +77,7 @@ Yorum satırlarını silin (`#` ile başlayan satırları) ve ana url'ye `blog.u
 
 `mysite/urls.py` dosyanız şöyle olmalıdır:
 
-'''python
+```python
 from django.conf.urls import include, url
 from django.contrib import admin
 
@@ -85,7 +85,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('blog.urls')),
 ]
-'''
+```
     
 
 Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
@@ -96,20 +96,20 @@ Python'da düzenli ifadeler her zaman string'in başına `r` ekleyerek yapılır
 
 `blog/urls.py` adında yeni boş bir dosya oluşturun. Harika! Şu iki satırı ekleyin:
 
-'''python
+```python
 from django.conf.urls import url
 from . import views
-'''    
+```    
 
 Burada sadece Django'nun methodlarını ve `blog` uygulamasındaki tüm `view`leri içeri aktarıyoruz (uygulamamız henüz yok, ama birazdan o kısma da geçeceğiz!)
 
 Bundan sonra ilk URL kalıbımızı ekleyebiliriz:
 
-'''python
+```python
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
 ]
-'''
+```
     
 
 Gördüğünüz üzere, `^$` URL'sine `post_list` adında bir `view` atıyoruz. Bu düzenli ifade `^` (başlangıç) ve `$` (bitiş)'e uyan stringlerle eşleşir - yani sadece boş string'lerle eşleşir. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.

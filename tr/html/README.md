@@ -18,11 +18,11 @@ Bir template oluşturmak bir template dosyası oluşturmak demektir. Her şey bi
 
 Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü altında `templates` adlı bir klasör oluşturalım. Sonra da templates klasörü altında yine `blog` adlı bir klasör oluşturalım:
 
-'''
+```
 blog
 └───templates
     └───blog
-'''    
+```    
 
 (Neden iki tane `blog` adlı klasöre gerek olduğunu merak etmiş olabilirsin. Daha sonra da anlaşılacağı gibi, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
 
@@ -40,12 +40,12 @@ Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan b
 
 Template dosyamıza şunları ekleyelim:
 
-'''html
+```html
 <html>
     <p>Merhaba!</p>
     <p>Çalışıyor!</p>
 </html>
-'''    
+```    
 
 Web siteniz şimdi nasıl görünüyor? Öğrenmek için tıklayın: http://127.0.0.1:8000 /
 
@@ -70,7 +70,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 
 Örneğin, web sayfasının (title) başlık elemanını `<head>` 'in içine böyle koyabilirsiniz:
 
-'''html
+```html
 <html>
     <head>
         <title>Zeynep'in blogu</title>
@@ -80,7 +80,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
         <p>Çalışıyor!</p>
     </body>
 </html>
-'''
+```
     
 
 Dosyayı kaydedin ve sayfanızı yenileyin.
@@ -113,7 +113,7 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
 
 Şimdi de tam bir template örneği:
 
-'''html
+```html
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -136,7 +136,7 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
         </div>
     </body>
 </html>
-'''    
+```    
 
 Burada üç tane `div` bölümü oluşturduk.
 
@@ -161,37 +161,37 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
 İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
-'''
+```
 $ git status
-'''
+```
 
 `djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
 
-'''
+```
 $ git add -A .
-'''    
+```    
 
 > **Not:** `-A` (hepsi için bir kısaltma - İngilizce'de "all" hepsi demek) `git`'in silinmiş dosyaları tanır (normalde sadece yeni/güncellenmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
 
 Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'in yükleyeceği dosyalar yeşil gösterilir) bakalım:
 
-'''
+```
 $ git status
-'''    
+```    
 
 Neredeyse bitirdik, şimdi bu değişikliği tarihçesine kaydetmesini söyleyelim. Commit için değişiklikleri açıklayan bir mesaj yazalım. Bu aşamada istediğimizi yazabiliriz, fakat tanımlayıcı yazılar gelecekte neler yapmış olduğumuzu hatırlatması açısından faydalı olacaktır.
 
-'''
+```
 $ git commit -m "Site için HTML dosyasını değiştirdim."
-'''    
+```    
 
 > **Not** Tamamlama mesajını çift tırnak içerisinde kullandığımızdan emin olalım.
 
 Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak yükleyelim:
 
-'''
+```
  $ git push
-'''  
+```  
 
 ### Pull ile yeni kodu PythonAnywhere e alıp web uygulamasını tekrar yükleyelim
 
@@ -199,14 +199,14 @@ Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak y�
 
  [5]: https://www.pythonanywhere.com/consoles/
 
-'''
+```
 $ cd ~/ilk-blogum
 $ source myvenv/bin/activate
 (myvenv)$ git pull
 [...]
 (myvenv)$ python manage.py collectstatic
 [...]
-'''    
+```    
 
 Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 
