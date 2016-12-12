@@ -22,7 +22,7 @@ Git, birçok programcı tarafından kullanılan bir "sürüm kontrol sistemi"dir
 
 > **Not** Kurulum adımlarını halihazırda yaptıysanız, bunu tekrar yapmanıza gerek yok - bir sonraki alt bölüme geçip Git reponuzu oluşturabilirsiniz.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Git repomuzu oluşturmak
 
@@ -137,7 +137,7 @@ Kodunuz artık Github'da. Siteye girin ve kontrol edin! İyi bir çevrede olduğ
 
 > **Not** En baştaki kurulum adımlarında PythonAnywhere hesabını açmış olabilirsiniz - öyleyse bu kısmı tekrar yapmanıza gerek yok.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Kodunuzu PythonAnywhere üzerine çekmek
 

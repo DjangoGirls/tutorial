@@ -14,19 +14,19 @@ Atölyede bir blog geliştireceksiniz, eğitim günü kodlamaya hazır olmanız 
 
 # Python Yükleyin
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
 
 # Bir "virtualenv" kurun ve Django'yu yükleyin
 
-{% include "django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md" %}
 
 # Bir kod düzenleyicisi yükleyin
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Git yükleyin
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # GitHub hesabı oluşturun
 
@@ -34,7 +34,7 @@ Atölyede bir blog geliştireceksiniz, eğitim günü kodlamaya hazır olmanız 
 
 # PythonAnywhere hesabı oluşturun
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Okumaya başlayın
 
