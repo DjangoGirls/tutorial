@@ -42,13 +42,13 @@ Sunucuda `collectstatic` komutunu çalıştırdığımız zaman gördüğün gib
 
 Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
 
-‘’’
+```
 djangogirls
 ├── blog
 │   ├── migrations
 │   └── static
 └── mysite
-‘’’    
+```    
 
 Django uygulama klasörlerinizin altındaki "static" isimli tüm klasörleri otomatik olarak bulacak ve içindekileri statik dosya olarak kullanabilecektir.
 
@@ -56,13 +56,13 @@ Django uygulama klasörlerinizin altındaki "static" isimli tüm klasörleri oto
 
 Şimdi web sayfamıza kendi stilimizi eklemek için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluşturalım. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
 
-‘’’
+```
 djangogirls
 └─── blog
      └─── static
           └─── css
                └─── blog.css
-‘’’    
+```    
 
 Şimdi CSS yazma zamanı! `blog/static/css/blog.css` dosyasını kod editöründe açın.
 
@@ -76,19 +76,19 @@ Ancak az da olsa yapalım. Acaba başlığımızın rengini mi değiştirsek? Bi
 
 `blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
 
-‘’’css
+```css
 h1 a {
     color: #FCA205;
 }
-‘’’    
+```    
 
 `h1 a` bir CSS Seçicisidir (Selector). Bu demek oluyor ki biz stilimizi, bir `h1` öğesi içerisinde olan tüm `a` öğelerine (örneğin kodumuzun içerisinde `<h1><a href="">link</a></h1>` gibi bir şey olduğunda) uyguluyoruz. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
-‘’’html
+```html
 <a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-‘’’ 
+``` 
 
 Daha fazla bilgi için [w3schools'da CSS seçicileri][4]ni okuyabilirsin.
 
@@ -96,21 +96,21 @@ Daha fazla bilgi için [w3schools'da CSS seçicileri][4]ni okuyabilirsin.
 
 Sonrasında, ayrıca HTML şablonumuza (template) bir takım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açın ve en başına şu satırı ekleyin:
 
-‘’’html
+```html
 {% load staticfiles %}
-‘’’    
+```    
 
 Burada yaptığımız yalnızca statik dosyaları yüklemek. :) Sonrasında, `<head>` ve `</head>`, tagları arasına, Bootstrap CSS dosyalarına yönelik bağlantılardan sonra (web tarayıcımız dosyaları yazıldıkları sırasıyla okuduğundan, bizim dosyamızdaki kodlar Bootstrap dosyasının içerisindekileri geçersiz kılabilir), şu satırı ekleyin:
 
-‘’’html
+```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-‘’’    
+```    
 
 Az evvel şablonumuza (template) CSS dosyamızın nerede olduğunu söylemiş olduk.
 
 Dosyanız şu şekilde gözüküyor olmalı:
 
-‘’’html
+```html
 {% load staticfiles %}
 <html>
     <head>
@@ -133,7 +133,7 @@ Dosyanız şu şekilde gözüküyor olmalı:
         {% endfor %}
     </body>
 </html>
-‘’’    
+```    
 
 Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
 
@@ -143,11 +143,11 @@ Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
 
 Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu (margin'i) arttırsak mı? Hadi deneyelim!
 
-‘’’css
+```css
 body {
     padding-left: 15px;
 }
-‘’’
+```
     
 
 Bunu CSS dosyanıza ekleyin, dosyayı kaydedin ve nasıl çalıştığını görelim!
@@ -158,20 +158,20 @@ Bunu CSS dosyanıza ekleyin, dosyayı kaydedin ve nasıl çalıştığını gör
 
 Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` bölümüne yapıştırın:
 
-‘’’html
+```html
 <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-‘’’    
+```   
 
 Bu satır *Lobster* adlı bir fontu Google Fonts (https://www.google.com/fonts) sitesinden sayfamıza aktarır.
 
 Şimdi `blog/static/css/blog.css` dosyamızdaki `h1 a` deklarasyon bloğunun içine (`{` ve `}` kodları arasına) `font-family: 'Lobster';` satırını ekleyip sayfayı yenileyin:
 
-‘’’css
+```css
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-‘’’    
+```   
 
 ![Şekil 14.3][7]
 
@@ -183,25 +183,25 @@ Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Cla
 
 Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
 
-‘’’html
+```html
 <div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-‘’’    
+```    
 
 Şimdi de gönderi metnini içeren `div`'e `post` isimli bir sınıf ekleyelim.
 
-‘’’html
+```html
 <div class="post">
     <p>yayınlanma tarihi: {{ post.yayinlanma_tarihi }}</p>
     <h1><a href="">{{ post.baslik }}</a></h1>
     <p>{{ post.yazi|linebreaks }}</p>
 </div>
-‘’’    
+```    
 
 Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
 
-‘’’css
+```css
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
@@ -250,12 +250,12 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
-‘’’
+```
     
 
 Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklarasyonları ile saralım. Aşağıdaki kodları değiştirin:
 
-‘’’html
+```html
 {% for post in posts %}
     <div class="post">
         <p>yayınlanma tarihi: {{ post.yayinlanma_tarihi }}</p>
@@ -263,11 +263,11 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
         <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
-‘’’    
+```    
 
 bununla değiştirelim:
 
-‘’’html
+```html
 <div class="content container">
     <div class="row">
         <div class="col-md-8">
@@ -283,7 +283,7 @@ bununla değiştirelim:
         </div>
     </div>
 </div>
-‘’’    
+```    
 
 Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 

@@ -28,7 +28,7 @@ python3 -m venv myvenv
 Yeni bir `virtualenv` oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şöyle görünmeli:
 
 ```
-C:\Users\İsim\djangogirls> C:\Python34\python -m venv myvenv
+C:\Users\isim\djangogirls> C:\Python34\python -m venv myvenv
 ```    
 
 `C:\Python34\python` dizini önceden Python'u kurduğunuz dizin ve `myvenv` ise `virtualenv`'inizin ismi olacaktır. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak iyi bir fikir olabilir, zira bu ismi çok kullanıyor olacaksınız!

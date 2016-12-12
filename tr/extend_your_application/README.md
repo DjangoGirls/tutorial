@@ -29,7 +29,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 ```    
     
 
-{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
+{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelimi:{% endraw %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.baslik }}</a></h1>
@@ -63,7 +63,13 @@ urlpatterns = [
 ]
 ```    
 
-Şu kısım `^post/(?P<pk>[0-9]+)/$` korkutucu gözüküyor, ama endişelenmeyin, açıklayacağız: - Gene `^` ile başlıyor. - "başlangıç' - `post/` sadece URL'nin başlangıçtan sonra **post** ve **/<1> ifadelerinin geçmesi gerektiği anlamına geliyor. Şimdilik iyi gidiyor. - `(?P<pk>[0-9]+)` - bu kısım biraz daha karışık. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. `[0-9]` bize eşleşenlerin sadece rakam (yani harf olamaz) olabileceğini söylüyor (0 ile 9 arasındaki her şey). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` eşleşmez ama `http://127.0.0.1:8000/post/1234567890/` eşleşir! - `/` - gene **/** - `$` - "son"!</p> 
+Şu kısım `^post/(?P<pk>[0-9]+)/$` korkutucu gözüküyor, ama endişelenmeyin, açıklayacağız: 
+- Gene `^` ile başlıyor - "başlangıç'. 
+- `post/` sadece URL'nin başlangıçtan sonra __post__ ve __/.__ ifadelerinin geçmesi gerektiği anlamına geliyor. Şimdilik iyi gidiyor. 
+- `(?P<pk>[0-9]+)` - bu kısım biraz daha karışık. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. `[0-9]` bize eşleşenlerin sadece rakam (yani harf olamaz) olabileceğini söylüyor (0 ile 9 arasındaki her şey). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` eşleşmez ama `http://127.0.0.1:8000/post/1234567890/` eşleşir! 
+- `/` - gene bir __/__'e ihtiyacımız var 
+- `$` - "son"!
+ 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
 `pk`, `primary key`'in (tekil anahtarın) kısaltılmış hali. Bu isim sıklıkla Django projelerinde kullanılır. Değişkeninize istediğiniz ismi verebilirsiniz (hatırlayın: küçük harfler ve boşluk yerine `_`!). Örneğin `(?P<pk>[0-9]+)` yerine `post_id` değişkenini kullanabilirdik. O zaman şöyle olurdu: `(?P<post_id>[0-9]+)`.

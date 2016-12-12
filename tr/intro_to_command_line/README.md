@@ -6,7 +6,7 @@ Ha, heyecan verici, değil mi?! İlk kodunuzu birkaç dakika içinde yazacaksın
 
 Gelecek aşamalar size tüm "hacker"ların kullandığı siyah pencerenin nasıl kullanıldığını gösterecek. Başta biraz korkutucu görünebilir fakat bu sadece sizden komut bekleyen bir pencere.
 
-> **Not**Lütfen bu kitap boyunca 'dizin' veya 'klasör' terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini unutmayınız.
+> **Not** Lütfen bu kitap boyunca 'dizin' veya 'klasör' terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini unutmayınız.
 
 ## Komut satırı nedir?
 
@@ -96,7 +96,7 @@ Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtı
 
 > Not: 'pwd'nin anlamı "print working directory" yani "çalışma dizinini yazdır"dır.
 
-* * *
+---
 
 ### Dosya ve dizinleri listele
 

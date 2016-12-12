@@ -119,7 +119,7 @@ Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir ş
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
-```'    
+``` 
 
 İlk hatamızı aldık! Nesne türü "int" (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?
 
