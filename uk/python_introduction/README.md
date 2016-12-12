@@ -450,7 +450,7 @@ print('Hello, Django girls!')
 
 І для Windows, це буде так:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 Якщо ви застрягли, просто попросіть допомоги.
 

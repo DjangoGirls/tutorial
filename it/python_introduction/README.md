@@ -489,7 +489,7 @@ Su Linux, sarà come questo (la parola "Desktop" potrebbe essere tradotta nella 
 
 E su windows, sara come questo:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Se rimani bloccata, chiedi aiuto.

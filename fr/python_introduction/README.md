@@ -529,7 +529,7 @@ Sous Linux, comme ça (il se peut que le mot Bureau soit dans une autre langue) 
 
 Et sous Windows, ce sera comme ça :
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 Si vous êtes bloquée, n'hésitez pas à appeler à l'aide.

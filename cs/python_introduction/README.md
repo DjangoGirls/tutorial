@@ -531,7 +531,7 @@ $ cd ~/Desktop
 A na Windows to bude vypadat takto:
 
 ```
-> cd C:\Users\<your_name>\Desktop
+> cd %HomePath%\Desktop
 ```
 
 Pokud nevíš jak dál, stačí požádat o pomoc kouče.

@@ -493,7 +493,7 @@ Boolean도 변수로 사용할 수도 있습니다! 다음을 보세요. :
 
 윈도우라면 다음과 같이 하세요. :
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 혹시 하다가 막히면, 코치에게 도움을 요청하세요.

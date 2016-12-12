@@ -487,7 +487,7 @@ print('Hello, Django girls!')
 
 И для windows:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Если возникли проблемы - просто обратись за помощью.
