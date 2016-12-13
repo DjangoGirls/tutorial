@@ -50,10 +50,12 @@ A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de com
 
 Vamos começar com algo simples. Digite o seguinte comando:
 
+OS X e Linux:
+
     $ whoami
     
 
-ou
+Windows: 
 
     > whoami
     
@@ -76,11 +78,13 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando e aperte o `enter`:
 
+OS X e Linux:
+
     $ pwd
     /Users/olasitarska
     
 
-Se você estiver no Windows:
+Windows:
 
     > cd
     C:\Users\olasitarska
@@ -95,6 +99,8 @@ Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez qu
 ### Listando arquivos e pastas
 
 Então o que tem nele? Seria legal descobrir. Vamos ver:
+
+OS X e Linux:
 
     $ ls
     Applications
@@ -121,6 +127,8 @@ Windows:
 
 Talvez a gente queira entrar na nossa pasta Desktop?
 
+OS X e Linux:
+
     $ cd Desktop
     
 
@@ -130,6 +138,8 @@ Windows:
     
 
 Veja se realmente entramos na pasta:
+
+OS X e Linux:
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -241,6 +251,8 @@ Windows:
     
 
 Pronto! Para ter certeza que a pasta foi realmente excluída, vamos checar:
+
+OS X e Linux:
 
     $ ls
     
