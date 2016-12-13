@@ -4,11 +4,11 @@
 
 **Deixe-nos apresentá-lo ao seu primeiro novo amigo: a linha de comando!**
 
-As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
+As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas na verdade, é apenas um prompt esperando por comandos seus.
 
-## Qual é a linha de comando?
+## O que é uma linha de comando?
 
-A janela, que normalmente é chamada de **linha de comando** ou **interface de linha de comando**, é um aplicativo baseado em texto para visualização, manipulação e manuseio de arquivos em seu computador (como por exemplo, o Windows Explorer ou o Finder no Mac, mas sem interface gráfica). Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+A janela, que normalmente é chamada de **linha de comando** ou **interface de linha de comando**, é um aplicativo baseado em texto para visualização, manipulação e manuseio de arquivos em seu computador (como por exemplo, o Windows Explorer ou o Finder no Mac, mas sem a interface gráfica). Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Abra a interface de linha de comando
 
@@ -24,13 +24,13 @@ Applications → Utilities → Terminal.
 
 ### Linux
 
-Provavelmente você vai achar em Applications → Accessories → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google :)
+Provavelmente você vai achar em Aplicações → Acessórios → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google :)
 
 ## Prompt
 
-Agora você deve ver uma janela branca ou preta que está à espera de seus comandos.
+Agora você deve agora estar vendo uma janela branca ou preta que está à espera de seus comandos.
 
-Se você estiver em Mac ou num Linux, você provavelmente verá um `` $, como este:
+Se você estiver em Mac ou num Linux, você provavelmente verá um `$`, como este:
 
     $
     
@@ -42,7 +42,9 @@ No Windows, é um sinal de `>`, como este:
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você :)
 
-> Apenas uma pequena nota: no seu caso, talvez há algo como `C:\Users\ola>` ou `Olas-MacBook Air: ~ ola$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
+> Apenas uma pequena nota: no seu caso, talvez seja algo como `C:\Users\ola>` ou `Olas-MacBook Air: ~ ola$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
+
+A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de comando, ou para abreviar, prompt.  Ele está a esperando você digitar alguma coisa.
 
 ## Seu primeiro comando (YAY!)
 
@@ -56,13 +58,13 @@ ou
     > whoami
     
 
-Depois tecla Enter. Essa é nossa saída:
+Depois aperta o `Enter`. Essa é o nossa resultado:
 
     $ whoami
     olasitarska
     
 
-Como você pode ver, o computador só apresentou seu nome de usuário. Elegante, né?:)
+Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é?:)
 
 > Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais dessa forma!
 
@@ -72,7 +74,7 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 ### Pasta atual
 
-Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando seguido de um enter:
+Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando e aperte o `enter`:
 
     $ pwd
     /Users/olasitarska
@@ -84,7 +86,7 @@ Se você estiver no Windows:
     C:\Users\olasitarska
     
 
-Provavelmente você vai ver algo parecido na sua máquina. Um vez que você abre a linha de comando você já começa na pasta Home.
+Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez que você abre a linha de comando você já começa na pasta Home.
 
 > Nota: 'pwd' significa 'print working directory'.
 
@@ -149,6 +151,8 @@ Aqui está!
 
 Que tal criar um diretório Django Girls na sua área de trabalho? Você pode fazer assim:
 
+OS X e Linux:
+
     $ mkdir djangogirls
     
 
@@ -157,7 +161,7 @@ Windows:
     > mkdir djangogirls
     
 
-Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ele está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
+Este comando vai criar uma pasta com o nome `djangogirls` no seu desktop. Você pode verificar se ele está lá, só de olhar na sua área de trabalho ou executando o comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
@@ -165,9 +169,11 @@ Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Voc�
 
 ### Exercite-se!
 
-Um pequeno desafio para você: na sua mais nova pasta criada `djangogirls` crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
+Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
 
 #### Solução:
+
+OS X e Linux:
 
     $ cd djangogirls
     $ mkdir teste
@@ -193,6 +199,8 @@ Não queremos deixar uma bagunça, então vamos remover tudo o que fizemos até 
 
 Primeiro precisamos voltar para a pasta Desktop:
 
+OS X e Linux:
+
     $ cd ..
     
 
@@ -201,9 +209,11 @@ Windows:
     > cd ..
     
 
-Fazendo `cd` para `..` nós mudaremos do diretório atual para o diretório pai (que significa o diretório que contém o diretório atual).
+Usando `..` com o comando `cd` nós mudaremos do diretório atual para o diretório pai (que significa o diretório que contém o diretório atual).
 
 Veja onde você está:
+
+OS X e Linux:
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -219,6 +229,8 @@ Agora é hora de excluir o diretório `djangogirls`.
 
 > **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irrecuperável, significando *Arquivos excluídos vão embora para sempre*! Então, tenha cuidado com este comando.
 
+OS X e Linux:
+
     $ rm -r djangogirls
     
 
@@ -228,7 +240,7 @@ Windows:
     djangogirls, Tem certeza <S/N>? S
     
 
-Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
+Pronto! Para ter certeza que a pasta foi realmente excluída, vamos checar:
 
     $ ls
     
@@ -240,7 +252,9 @@ Windows:
 
 ### Saindo
 
-Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo?:)
+Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo? :)
+
+OS X e Linux:
 
     $ exit
     
@@ -250,7 +264,7 @@ Windows:
     > exit
     
 
-Legal, né?:)
+Legal, não é? :)
 
 ## Sumário
 
