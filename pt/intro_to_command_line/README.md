@@ -60,7 +60,7 @@ Windows:
     > whoami
     
 
-Depois aperta o `Enter`. Essa é o nossa resultado:
+Depois aperta o `Enter`. Essa é o nosso resultado:
 
     $ whoami
     olasitarska
@@ -68,7 +68,7 @@ Depois aperta o `Enter`. Essa é o nossa resultado:
 
 Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é?:)
 
-> Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais dessa forma!
+> Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais facilmente dessa forma!
 
 ## O Básico
 
