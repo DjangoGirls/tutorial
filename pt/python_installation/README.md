@@ -4,13 +4,19 @@ Finalmente chegamos aqui!
 
 Mas primeiro, vamos falar um pouco sobre o que o Python é. Python é uma linguagem de programação muito popular que pode ser usada para criar sites, jogos, softwares científicos, gráficos e muito, muito mais.
 
-O Python é originário da década de 1980 e seu principal objetivo é ser legível por seres humanos (não apenas máquinas!), por isso ele parece muito mais simples do que outras linguagens de programação. Isso faz ele mais fácil de aprender, mas não se engane, Python também é muito poderoso!
+O Python é originário do final da década de 1980 e seu principal objetivo é ser legível por seres humanos (não apenas por máquinas!). Por isso ele parece muito mais simples do que outras linguagens de programação. Isso faz ele ser mais fácil de aprender, mas não se engane, Python também é muito poderoso!
 
 # Instalação do Python
 
+> **Nota** Se você estiver usando um Chromebook, pule esse capítulo e certifique-se de seguir essas instruções [Chromebook Setup](../chromebook_setup/README.md).
+
+> **Nota** Se você já superou os passos de instalação, não existe necessidade de fazer isso de novo - você pode pular direto para o próximo capítulo!
+
+> Leitores que estiverem em casa: esse capítulo está disponível em vídeos (em inglês) [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+
 > Este subcapítulo é baseado em um tutorial criado por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django é escrito em Python. Nós precisamos dele para fazer qualquer coisa em Django. Vamos começar com sua instalação! Nós queremos que você instale o Python 3.4, então se você tem qualquer versão anterior, você vai precisar atualizá-la.
+Django é escrito em Python. Nós precisamos do Python para fazer qualquer coisa em Django. Vamos começar com sua instalação! Nós queremos que você instale o Python 3.5, então se você tem qualquer versão anterior, você vai precisar atualizá-la.
 
 ### Windows
 
