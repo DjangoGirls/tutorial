@@ -19,21 +19,21 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.yayinlama_tarihi }}
+                {{ post.yayinlanma_tarihi }}
             </div>
             <h1><a href="">{{ post.baslik }}</a></h1>
-            <p>{{ post.yazi|linebreaksbr }}</p>
+            <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
-```
+```    
     
 
-{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
+{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelimi:{% endraw %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.baslik }}</a></h1>
-```
+```    
 
 {% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir template etiketi kullanacağız!{% endraw %}
 
@@ -53,18 +53,23 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 `blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` satırını ekleyin. Dosyanın şu hale gelmiş olması gerekiyor:
 
-
 ```python
-from django.conf.urls import url
+from django.conf.urls import include, url
 from . import views
-
+    
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
 ]
-```
+```    
 
-Şu kısım `^post/(?P<pk>[0-9]+)/$` korkutucu gözüküyor, ama endişelenmeyin, açıklayacağız: - Gene `^` ile başlıyor. - "başlangıç' - `post/` sadece URL'nin başlangıçtan sonra **post** ve **/<1> ifadelerinin geçmesi gerektiği anlamına geliyor. Şimdilik iyi gidiyor. - `(?P<pk>[0-9]+)` - bu kısım biraz daha karışık. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. `[0-9]` bize eşleşenlerin sadece rakam (yani harf olamaz) olabileceğini söylüyor (0 ile 9 arasındaki her şey). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` eşleşmez ama `http://127.0.0.1:8000/post/1234567890/` eşleşir! - `/` - gene **/** - `$` - "son"!</p> 
+Şu kısım `^post/(?P<pk>[0-9]+)/$` korkutucu gözüküyor, ama endişelenmeyin, açıklayacağız: 
+- Gene `^` ile başlıyor - "başlangıç'. 
+- `post/` sadece URL'nin başlangıçtan sonra __post__ ve __/.__ ifadelerinin geçmesi gerektiği anlamına geliyor. Şimdilik iyi gidiyor. 
+- `(?P<pk>[0-9]+)` - bu kısım biraz daha karışık. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. `[0-9]` bize eşleşenlerin sadece rakam (yani harf olamaz) olabileceğini söylüyor (0 ile 9 arasındaki her şey). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` eşleşmez ama `http://127.0.0.1:8000/post/1234567890/` eşleşir! 
+- `/` - gene bir __/__'e ihtiyacımız var 
+- `$` - "son"!
+ 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
 `pk`, `primary key`'in (tekil anahtarın) kısaltılmış hali. Bu isim sıklıkla Django projelerinde kullanılır. Değişkeninize istediğiniz ismi verebilirsiniz (hatırlayın: küçük harfler ve boşluk yerine `_`!). Örneğin `(?P<pk>[0-9]+)` yerine `post_id` değişkenini kullanabilirdik. O zaman şöyle olurdu: `(?P<post_id>[0-9]+)`.
@@ -83,7 +88,7 @@ Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzü
 
 ```
 Post.objects.get(pk=pk)
-```
+``` 
 
 Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) ile bir `Post` (gönderi) yoksa, çok çirkin bir hatamız olacak!
 
@@ -101,7 +106,7 @@ Evet, `views.py` dosyamıza bir *view* ekleme zamanı!
 
 ```
 from django.shortcuts import render, get_object_or_404
-```
+``` 
 
 Bunu diğer `from` satırlarının yakınına eklememiz gerekiyor. Dosyanın sonuna *view*'ümüzü ekleyeceğiz:
 
@@ -109,7 +114,7 @@ Bunu diğer `from` satırlarının yakınına eklememiz gerekiyor. Dosyanın son
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
-```
+```    
 
 Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
 
@@ -129,23 +134,23 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 ```html
 {% extends 'blog/base.html' %}
-
+    
 {% block content %}
     <div class="post">
-        {% if post.yayinlama_tarihi %}
+        {% if post.yayinlanma_tarihi %}
             <div class="date">
-                {{ post.yayinlama_tarihi }}
+                {{ post.yayinlanma_tarihi }}
             </div>
         {% endif %}
         <h1>{{ post.baslik }}</h1>
-        <p>{{ post.yazi|linebreaksbr }}</p>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endblock %}
-```
+```    
 
 Bir kere daha `base.html` dosyasını genişleteceğiz. `content` bloğunda bir gönderinin varsa yayınlama tarihini , başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
-{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir template etiketidir ( **Python'a giriş** bölümünden <1>if ... else ..</code> 'i hatırladınız mı?). Bu senaryoda gönderinin `yayinlama_tarihi`'nin boş olup olmadığına bakmak istiyoruz.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir template etiketidir ( **Python'a giriş** bölümünden <1>if ... else ..</code> 'i hatırladınız mı?). Bu senaryoda gönderinin `yayinlanma_tarihi`'nin boş olup olmadığına bakmak istiyoruz.{% endraw %}
 
 Tamam, sayfamızı tazeleyip `Sayfa bulunamadı` hatasının gidip gitmediğine bakabiliriz.
 
@@ -159,11 +164,11 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
 
 ```
 $ git status
-$ git add --all .
+$ git add -A .
 $ git status
 $ git commit -m "Detaylı blog gönderileri için CSS'e ilaveten view ve template eklendi."
 $ git push
-```
+```    
 
 *   Sonra bir [PythonAnywhere Bash konsol][8] una gidip:
 

@@ -6,7 +6,7 @@ Ha, heyecan verici, değil mi?! İlk kodunuzu birkaç dakika içinde yazacaksın
 
 Gelecek aşamalar size tüm "hacker"ların kullandığı siyah pencerenin nasıl kullanıldığını gösterecek. Başta biraz korkutucu görünebilir fakat bu sadece sizden komut bekleyen bir pencere.
 
-> **Not**Lütfen bu kitap boyunca 'dizin' veya 'klasör' terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini unutmayınız.
+> **Not** Lütfen bu kitap boyunca 'dizin' veya 'klasör' terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini unutmayınız.
 
 ## Komut satırı nedir?
 
@@ -36,39 +36,39 @@ Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göre
 
 ```
 $
-```
+```    
 
 Windows'da ise `>` işareti göreceksiniz, bunun gibi:
 
 ```
 >
-```
+```    
 
 Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır :)
 
 > Ufak bir not: sizin durumunuzda bu `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` ve benzeri bir şekilde olabilir ve bu kesinlikle doğru. Bu eğitimde bunu sade ve basit bir şekilde anlatacağız.
 
-## İlk komutunuz(Yaşasın!)
+## İlk komutunuz (Yaşasın!)
 
 Basit bir şeyle başlayalım. Aşağıdaki komutu yazın:
 
 ```
 $ whoami
-```
+```    
 
 ya da
 
 ```
 > whoami
-```
+```    
 
 Ve ardından `enter` tuşuna basın. Sonucumuz bu:
 
 ```
 $ whoami zeynep
-```
+```    
 
-Gördüğünüz gibi, bilgisayar az önce kullanıcı adınızı yazdı. Muntazam, değil mi?:)
+Gördüğünüz gibi, bilgisayar az önce kullanıcı adınızı yazdı. Harika, değil mi? :)
 
 > Her komutu yazmaya çalışın, kopyala-yapıştır yapmayın. Bu şekilde daha akılda kalıcı olur!
 
@@ -83,20 +83,20 @@ Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın v
 ```
 $ pwd
 /Users/zeynep
-```
+```    
 
 Windows'ta iseniz:
 
 ```
 > cd
 C:\Users\zeynep
-```
+```    
 
 Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.
 
 > Not: 'pwd'nin anlamı "print working directory" yani "çalışma dizinini yazdır"dır.
 
-* * *
+---
 
 ### Dosya ve dizinleri listele
 
@@ -109,7 +109,7 @@ Masaüstü
 İndirilenler
 Müzik
 ...
-```
+```    
 
 Windows:
 
@@ -136,7 +136,7 @@ Windows:
 
 ```
 > cd Masaüstü
-```    
+```
 
 Gerçekten değişmiş mi bir bakalım:
 
@@ -146,7 +146,6 @@ C:\Users\zeynep\Masaüstü
 ```    
 
 Windows:
-
 ```
 > cd 
 C:\Users\zeynep\Masaüstü
@@ -164,13 +163,13 @@ Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu
 
 ```
 $ mkdir uygulama
-```
+```    
 
 Windows:
 
 ```
 > mkdir uygulama
-```
+```    
 
 Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. Orada olup olmadığını kontrol etmek için `ls` veya `dir` komutlarını kullanabilirsiniz! Deneyin :)
 
@@ -189,7 +188,7 @@ $ cd uygulama
 $ mkdir test
 $ ls
 test
-```
+```    
 
 Windows:
 
@@ -198,7 +197,7 @@ Windows:
 > mkdir test
 > dir
 05/08/2014 07:28 PM <DIR>      test
-```    
+```
 
 Tebrikler! :)
 
@@ -212,29 +211,29 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 ```
 $ cd ..
-```
+``` 
 
 Windows:
 
 ```
 > cd ..
-```
+```    
 
 `cd` komutu ile `..` kullanmak sizi bir üst dizine götürür (Bu sizin şuanki dizininizi tutan ana dizindir).
 
 Nerede olduğunuzu kontrol edin:
 
-```
+```    
 $ pwd
 C:\Users\zeynep\Masaüstü
-```
+```    
 
 Windows:
 
 ```
 > cd 
 C:\Users\zeynep\Masaüstü
-```
+```    
 
 Şimdi `uygulama` dizinini silme vakti:
 
@@ -242,26 +241,26 @@ C:\Users\zeynep\Masaüstü
 
 ```
 $ rm -r uygulama
-```
+```    
 
 Windows:
 
 ```
 > rmdir /S uygulama
 uygulama, Emin misiniz <E/H>? E
-```
+```    
 
 Bitti! Gerçekten silindiğinden emin olalım:
 
 ```
 $ ls
-```
+``` 
 
 Windows:
 
 ```
 > dir
-```
+```    
 
 ### Çıkış
 
@@ -275,7 +274,7 @@ Windows:
 
 ```
 > exit
-```
+```    
 
 Harika, değil mi?:)
 
@@ -295,7 +294,7 @@ Harika, değil mi?:)
 
 Bu kullanabileceğiniz komutlardan sadece birkaçı, fakat bugün bundan daha fazlasını kullanmayacaksınız.
 
-Eğer meraklı iseniz, [ss64.com][1] adresinden tüm işletim sistemleri için tüm komutların kullanımına ulaşabilirsiniz.
+Eğer merak ediyorsanız, [ss64.com][1] adresinden tüm işletim sistemleri için tüm komutların kullanımına ulaşabilirsiniz.
 
  [1]: http://ss64.com
 

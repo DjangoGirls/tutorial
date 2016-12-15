@@ -16,7 +16,7 @@ blog
     └───blog
             base.html
             post_list.html
-```
+```    
 
 Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi bu `base.html`'ye kopyalayalım:
 
@@ -34,25 +34,25 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-
+  
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
                 {% for post in posts %}
                     <div class="post">
                         <div class="date">
-                            {{ post.yayinlama_tarihi }}
+                            {{ post.yayinlanma_tarihi }}
                         </div>
                         <h1><a href="">{{ post.baslik }}</a></h1>
-                        <p>{{ post.yazi|linebreaksbr }}</p>
+                        <p>{{ post.yazi|linebreaks }}</p>
                     </div>
                 {% endfor %}
                 </div>
             </div>
         </div>
     </body>
-</html>
-```
+ </html>
+```   
 
 Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında kalan her şeyi) şununla değiştirin:
 
@@ -70,14 +70,14 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
         </div>
     </div>
 </body>
-```
+```    
 
 Aslında sadece `{% for post in posts %}{% endfor %}` arasındaki her şeyi şununla değiştirmiş olduk:
 
 ```html
 {% block content %}
 {% endblock %}
-```
+```    
 
 Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanarak bir blok oluşturdunuz. Diğer template'leri bu bloğun içine HTML ekleyerek `base.html`'yi genişletebilirsiniz. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
@@ -87,37 +87,37 @@ Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanar
 {% for post in posts %}
     <div class="post">
         <div class="date">
-            {{ post.yayinlama_tarihi }}
+            {{ post.yayinlanma_tarihi }}
         </div>
         <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaksbr }}</p>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
-```
+```    
 
 Ve şimdi şu satırı sayfanın başına ekleyin:
 
-```
+```  
 {% extends 'blog/base.html' %}
-```
+```    
 
 {% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock content %}` arasına koyun. Şunun gibi:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
-
+    
 {% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.yayinlama_tarihi }}
+                {{ post.yayinlanma_tarihi }}
             </div>
             <h1><a href="">{{ post.baslik }}</a></h1>
-            <p>{{ post.yazi|linebreaksbr }}</p>
+            <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
-```
+```    
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)
 
