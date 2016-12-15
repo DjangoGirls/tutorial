@@ -36,20 +36,20 @@ $ git init
 Initialized empty Git repository in ~/djangogirls/.git/ 
 $ git config --global user.name "Adınız" 
 $ git config --global user.email you@example.com
-‘’’    
+```    
 
 Git reposunu başlatma işi, proje başına bir kere yapmamız gereken birşey (ayrıca kullanıcı adı ve eposta adresini tekrar girmenize gerek olmayacak).
 
 Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama takip etmemesini istediğimiz bazı dosyalar var. Bunu dizinin dibinde `.gitignore` adında bir dosya oluşturarak yapıyoruz. Editörünüzü açın ve aşağıdaki içeriklerle yeni bir dosya yaratın:
 
 
-‘’’    
+```    
 *.pyc
 __pycache__
 myvenv
 db.sqlite3
 .DS_Store
-‘’’    
+```    
 
 Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
@@ -57,7 +57,7 @@ Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 
-‘’’    
+```    
 $ git status 
 On branch master 
     

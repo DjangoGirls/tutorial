@@ -18,10 +18,10 @@ Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda d
 
 Bootstrap kurmak için `.html` dosyanızda `<head>` kısmına şunları eklemeniz gerekli (`blog/templates/blog/post_list.html`):
 
-‘’’html
+```html
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-‘’’
+```
     
 
 Bu, projemize hiçbir yeni dosya eklemez. Yalnızca internet üzerinde var olan dosyalara işaret eder. Şimdi websitenizi açın ve sayfayı yenileyin. İşte oldu!
