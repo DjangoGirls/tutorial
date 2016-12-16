@@ -487,7 +487,7 @@
 
 并在 windows 上，它会看起来像这样：
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 如果你遇到麻烦了，尽管提问寻求帮助。

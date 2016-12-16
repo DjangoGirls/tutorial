@@ -469,7 +469,7 @@ No Linux, será assim (a palavra "Desktop" pode ser traduzido para seu idioma):
 
 E no windows, vai ser assim:
 
-    cd C:\Users\<your_name>\Desktop
+    cd %HomePath%\Desktop
     
 
 Se você ficar preso, só pedir ajuda.

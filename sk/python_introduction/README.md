@@ -530,7 +530,7 @@ $ cd ~/Desktop
 A vo Windowse bude príkaz vyzerať takto:
 
 ```
-> cd C:\Users\<your_name>\Desktop
+> cd %HomePath%\Desktop
 ```
 
 Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.

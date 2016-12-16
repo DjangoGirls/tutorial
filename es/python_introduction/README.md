@@ -474,7 +474,7 @@ En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma)
 
 Y en Windows, será así:
 
-    cd C:\Users\<your_name>\Desktop
+    cd %HomePath%\Desktop
     
 
 Si te quedas atascada, sólo pide ayuda.

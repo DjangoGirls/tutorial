@@ -487,7 +487,7 @@ Linuxon így (A "Desktop" lehet, hogy le van fordítva a te nyelvedre):
 
 És Windowson így néz ki:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Ha megakadtál volna, kérj nyugodtan segítséget.

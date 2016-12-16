@@ -499,7 +499,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 
 A w systemie Windows będzie to wyglądać tak:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 Jeżeli coś jest dla Ciebie niejasne, nie wahaj się poprosić o pomoc.
