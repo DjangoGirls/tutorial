@@ -65,7 +65,7 @@ Usando aspas duplas:
     "Correndo' ladeira abaixo"
     
 
-ou escapando apóstrofo com uma barra invertida (``):
+ou escapando apóstrofo com uma barra invertida (`\`):
 
     >>> "Correndo\' ladeira abaixo" 
     "Correndo' ladeira abaixo"
