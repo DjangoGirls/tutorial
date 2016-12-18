@@ -190,7 +190,7 @@ $ source myvenv/bin/activate
 (myvenv) $  pip install django~=1.10.0
 Collecting django
 [...]
-Successfully installed django-1.10
+Successfully installed django-1.10.4
 ```
 
 
