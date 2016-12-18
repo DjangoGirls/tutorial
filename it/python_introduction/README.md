@@ -479,17 +479,17 @@ Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **pyth
 
 Su un Mac, il comando assomiglierà a questo:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 Su Linux, sarà come questo (la parola "Desktop" potrebbe essere tradotta nella tua lingua):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 E su windows, sara come questo:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Se rimani bloccata, chiedi aiuto.

@@ -22,7 +22,7 @@ Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü 
 blog
 └───templates
     └───blog
-```
+```    
 
 (Neden iki tane `blog` adlı klasöre gerek olduğunu merak etmiş olabilirsin. Daha sonra da anlaşılacağı gibi, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
 
@@ -42,10 +42,10 @@ Template dosyamıza şunları ekleyelim:
 
 ```html
 <html>
-        <p>Merhaba!</p>
-        <p>Çalışıyor!</p>
+    <p>Merhaba!</p>
+    <p>Çalışıyor!</p>
 </html>
-```
+```    
 
 Web siteniz şimdi nasıl görünüyor? Öğrenmek için tıklayın: http://127.0.0.1:8000 /
 
@@ -81,6 +81,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
     </body>
 </html>
 ```
+    
 
 Dosyayı kaydedin ve sayfanızı yenileyin.
 
@@ -106,12 +107,11 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
 *   `<em>metin</em>` metni vurgular
 *   `<strong>metin</strong>` metni iyice vurgular
 *   `<br />` - alt satıra gider (br etiketi içine bir şey konulmaz)
-*   `<a href = "https://djangogirls.org">bağlantı</a>` bir bağlantı oluşturur
+*   `<a href = "http://djangogirls.org">bağlantı</a>` bir bağlantı oluşturur
 *   `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 *   `<div></div>` - sayfanın bir bölümünü tanımlar
 
 Şimdi de tam bir template örneği:
-
 
 ```html
 <html>
@@ -122,21 +122,21 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
         <div>
             <h1><a href="">Django Girls Blog</a></h1>
         </div>
-
+    
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">İlk Blogum</a></h2>
             <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
         </div>
-
+  
         <div>
-            <p>published: 14.06.2014, 12:14</p>
+            <p>published: 14.06.2014, 12:20</p>
             <h2><a href="">İkinci gönderim</a></h2>
-            <p>Bir varmış bir yokmuş, evvel zaman içinde, Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. kalbur saman içinde, develer tellal iken, pireler berber iken; ben annemin beşiğini tıngır mıngır sallar iken.</p>
+            <p>Bir varmış bir yokmuş, evvel zaman içinde Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. kalbur saman içinde, develer tellal iken, pireler berber iken; ben annemin beşiğini tıngır mıngır sallar iken.</p>
         </div>
     </body>
 </html>
-```
+```    
 
 Burada üç tane `div` bölümü oluşturduk.
 
@@ -168,8 +168,8 @@ $ git status
 `djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
 
 ```
-$ git add --all .
-```
+$ git add -A .
+```    
 
 > **Not:** `-A` (hepsi için bir kısaltma - İngilizce'de "all" hepsi demek) `git`'in silinmiş dosyaları tanır (normalde sadece yeni/güncellenmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
 
@@ -177,21 +177,21 @@ Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'i
 
 ```
 $ git status
-```
+```    
 
 Neredeyse bitirdik, şimdi bu değişikliği tarihçesine kaydetmesini söyleyelim. Commit için değişiklikleri açıklayan bir mesaj yazalım. Bu aşamada istediğimizi yazabiliriz, fakat tanımlayıcı yazılar gelecekte neler yapmış olduğumuzu hatırlatması açısından faydalı olacaktır.
 
 ```
 $ git commit -m "Site için HTML dosyasını değiştirdim."
-```
+```    
 
 > **Not** Tamamlama mesajını çift tırnak içerisinde kullandığımızdan emin olalım.
 
 Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak yükleyelim:
 
 ```
-git push
-```
+ $ git push
+```  
 
 ### Pull ile yeni kodu PythonAnywhere e alıp web uygulamasını tekrar yükleyelim
 

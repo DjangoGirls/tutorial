@@ -464,17 +464,17 @@ Con el archivo guardado, ¡es hora de ejecutarlo! Utilizando las habilidades que
 
 En una Mac, el comando se verá algo como esto:
 
-    cd /Users/<your_name>/Desktop
+    cd ~/Desktop
     
 
 En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma):
 
-    cd /home/<your_name>/Desktop
+    cd ~/Desktop
     
 
 Y en Windows, será así:
 
-    cd C:\Users\<your_name>\Desktop
+    cd %HomePath%\Desktop
     
 
 Si te quedas atascada, sólo pide ayuda.

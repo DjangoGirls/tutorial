@@ -69,20 +69,23 @@ Aby utrzymać wszystko w ładzie, stworzymy osobną aplikację wewnątrz naszego
 Z pewnością zauważysz, że pojawił się nowy folder `blog` zawierający kilka plików. Czyli foldery i pliki w naszym projekcie powinny wyglądać tak:
 
     djangogirls
+    ├── blog
+    │   ├── migrations
+    │   |   └── __init__.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── myenv
     ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
-    ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── db.sqlite3
+    └── manage.py
+
 
 
 Po stworzeniu aplikacji musimy dać znać Django, że powinien jej używać. Posługujemy się w tym celu plikiem `mysite/settings.py`. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `)`. Czyli efekt końcowy powinien wyglądać tak:

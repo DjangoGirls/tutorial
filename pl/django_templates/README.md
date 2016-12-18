@@ -43,7 +43,7 @@ Wypróbuj tego w swoim szablonie.
 
  [2]: images/step2.png
 
-Działa! Ale chcemy je wyświetlić tak samo, jak statyczne wpisy, które tworzyłyśmy wcześniej w rozdziale **Wprowadzenie do HTML**. Możliwe jest łączenie znaczników szablonu z kodem HTML. Nasza sekcja `body` będzie wyglądać tak:
+Działa! Ale chcemy je wyświetlić tak samo, jak statyczne wpisy, które tworzyłyśmy wcześniej w rozdziale **Wprowadzenie do HTMLa**. Możliwe jest łączenie znaczników szablonu z kodem HTML. Nasza sekcja `body` będzie wyglądać tak:
 
 ```html
 <div>
@@ -69,9 +69,10 @@ Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: `{{ post.
 
 ## Jeszcze jedno
 
-Dobrze byłoby sprawdzić, czy Twoja strona dalej działa w internecie, prawda? Ponownie wyślijmy kod na PythonAnywhere. Oto małe przypomnienie jak to zrobić...
+Dobrze byłoby sprawdzić, czy Twoja strona dalej działa w Internecie, prawda? Ponownie wyślijmy kod na PythonAnywhere. Oto małe przypomnienie jak to zrobić...
 
 *   Najpierw zapisz swój kod na Githubie
+
 
     $ git status
     [...]
