@@ -192,7 +192,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.9.0
+>C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
 >```
 
 <!--endsec-->
