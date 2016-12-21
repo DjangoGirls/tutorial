@@ -23,8 +23,8 @@ conteúdo. E o Django é aquilo que vai lhe ajudar a criar esse conteúdo.
 Quando chega uma requisição para o servidor web, ela é passada para o Django, que tenta descobrir do que ela se trata. Primeiro
 ele pega o endereço web e tenta descobrir o que fazer. Essa parte é feita pelo **urlresolver** do Django. (Note que o endereço de um site se chama URL - Uniform Resource Locator, em português Localizador de Recursos Uniforme, dessa forma o nome *urlresolver*, ou resolvedor de urls, faz sentido). Isso não é muito complexo - ele pega uma lista de padrões e tenta corresponder com a URL. O Django verifica os padrões de cima para baixo e, se algo é correspondido, passa a solicitação para a função associada (que é chamada *view*).
 
-Imagine um carteiro com uma carta. Ele está andando pela rua e verifica o número de cada casa com o que está na carta. Se ele
-corresponder, ela coloca a carta lá. É assim que funciona o urlresolver!
+Imagine os Correios entregando uma carta. Uma funcionária vai andando por uma determinda rua e verificando o número de cada casa
+com o que está na carta. Se ele corresponder, ela coloca a carta lá. É assim que funciona o urlresolver!
 
 Todas as coisas interessantes são feitas dentro da *view*: podemos dar uma olhada no banco de dados para procurar algumas informações. Talvez o usuário queira mudar algo nos dados? Como uma carta dizendo: "Por favor mude a descrição do meu emprego." - a *view* checa se você tem permissão para fazer isso e então atualiza a descrição do emprego pra você, enviando em seguida uma mensagem: "Feito!". Então a *view* gera uma resposta e o Django pode enviá-la para o navegador web do cliente.
 
