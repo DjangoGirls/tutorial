@@ -124,6 +124,8 @@ $ pwd
 /Users/olasitarska
 ```
 
+> Note: 'pwd' stands for 'print working directory'.
+
 <!--endsec-->
 
 
@@ -134,11 +136,11 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
+> Note: 'cd' stands for 'current directory'.
+
 <!--endsec-->
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
-
-> Note: 'pwd' stands for 'print working directory'.
 
 ---
 
