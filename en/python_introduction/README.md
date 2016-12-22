@@ -124,7 +124,7 @@ OK, enough of strings. So far you've learned about:
 
 - __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
 - __numbers and strings__ – in Python numbers are used for math and strings for text objects
-- __operators__ – like `+` and `\*`, combine values to produce a new one
+- __operators__ – like `+` and `*`, combine values to produce a new one
 - __functions__ – like `upper()` and `len()`, perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
