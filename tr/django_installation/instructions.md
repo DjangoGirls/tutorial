@@ -21,17 +21,17 @@ cd djangogirls
 
 ```
 python3 -m venv myvenv
-```
+```    
 
 ### Windows
 
 Yeni bir `virtualenv` oluşturmak için konsolu açıp (nasıl yapıldığını birkaç adım önce anlatmıştık - hatırlıyorsunuz değil mi?) `C:\Python34\python -m venv myvenv` komutunu çalıştırın. Şöyle görünmeli:
 
 ```
-C:\Users\İsim\djangogirls> C:\Python34\python -m venv myvenv
-```
+C:\Users\isim\djangogirls> C:\Python34\python -m venv myvenv
+```    
 
-`C:\Python34\python` dizini önceden Python'u kurduğunuz dizin ve `myenv` ise `virtualenv`'inizin ismi olacaktır. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak iyi bir fikir olabilir, zira bu ismi çok kullanıyor olacaksınız!
+`C:\Python34\python` dizini önceden Python'u kurduğunuz dizin ve `myvenv` ise `virtualenv`'inizin ismi olacaktır. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak iyi bir fikir olabilir, zira bu ismi çok kullanıyor olacaksınız!
 
 ### GNU/Linux ve OS X
 
@@ -39,7 +39,7 @@ Linux ve OS X işletim sistemlerinde `virtualenv` oluşturmak için `python3 -m 
 
 ```
 ~/djangogirls$ python3 -m venv myvenv
-```
+```    
 
 Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. İsmi çok fazla kullanacağınız için kısa tutmak da işinize yarayacaktır.
 
@@ -63,16 +63,16 @@ Yukarıdaki komutlar `myvenv` (veya seçtiğiniz isimde) bir klasör oluşturaca
 Şu komutu çalıştırarak virtualenv'i başlatın:
 
 ```
-C:\Users\Name\djangogirls> myvenv\Scripts\activate
-```
+    C:\Users\Name\djangogirls> myvenv\Scripts\activate
+``` 
 
 #### GNU/Linux ve OS X
 
 Şu komutu çalıştırarak virtualenv'i başlatın:
 
 ```
-~/djangogirls$ source myvenv/bin/activate
-```
+    ~/djangogirls$ source myvenv/bin/activate
+``` 
 
 `myvenv` yerine kendi seçtiğiniz `virtualenv` ismini koymayı unutmayın!
 
@@ -85,13 +85,13 @@ Konsolunuzda şuna benzer bir şey gördüğünüzde `virtualenv`'in başladığ
 
 ```
 (myvenv) C:\Users\Name\djangogirls>
-```
+```    
 
 ya da:
 
 ```
 (myvenv) ~/djangogirls$
-```
+```    
 
 En başta beliren `(myvenv)`'e dikkat edin!
 
@@ -101,15 +101,15 @@ Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Djan
 
 ## Django'yu yüklemek
 
-`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.8` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
+`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.9` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
 
 ```
-(myvenv) ~$ pip install django==1.8
-Downloading/unpacking django==1.8
+(myvenv) ~$ pip install django==1.9
+Downloading/unpacking django==1.9
 Installing collected packages: django
 Successfully installed django
 Cleaning up...
-```
+```    
 
 Windows'ta
 

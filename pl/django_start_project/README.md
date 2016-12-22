@@ -24,19 +24,20 @@ Dla Windows; **nie zapomnij dodać kropki `.` na końcu**:
     (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
 
 
-> Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu)
+> Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainicjować projekt Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu)
 >
 > **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin` lub `django-admin.py`. Te `(myvenv) ~/djangogirls$` i `(myvenv) C:\Users\Name\djangogirls>` (zwane z ang. promptem) są tutaj tylko po to, by pokazać Ci przykład linii poleceń i tego jak ona będzie wyglądała, gdy będziesz do niej wpisywać polecenia.
 
 `django-admin.py` jest skryptem, który utworzy katalogi i pliki za Ciebie. Powinnaś mieć teraz strukturę katalogów podobną do tej:
 
     djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├── myenv
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── manage.py
 
 
 `manage.py` jest skryptem ułatwiającym zarządzanie aplikacją. Za jego pomocą, oprócz wielu innych rzeczy, możemy uruchomić serwer na naszym komputerze bez potrzeby instalowania czegokolwiek.
@@ -51,17 +52,17 @@ Na razie zapomnijmy o innych plikach - nie będziemy ich modyfikować. Jedyne, o
 
 Wprowadźmy parę zmian w pliku `mysite/settings.py`. Otwórz go za pomocą edytora kodu, który zainstalowałaś wcześniej.
 
-Fajnie byłoby posługiwać się na naszej stronie właściwą strefą czasową. Przejdź do [listy stref czasowych w wikipedii][2] i skopiuj właściwą strefę czasową (TZ). (np. `Europe/Berlin` )
+Fajnie byłoby posługiwać się na naszej stronie właściwą strefą czasową. Przejdź do [listy stref czasowych w wikipedii][2] i skopiuj właściwą strefę czasową (TZ). (np. `Europe/Warsaw` )
 
  [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 W pliku settings.py znajdź linijkę, w której jest napisane `TIME_ZONE` i zmień ją według swoich potrzeb:
 
 ```python
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Europe/Warsaw'
 ```
 
-Gdzie odpowiednio zmienisz "Europe/Berlin"
+Gdzie odpowiednio zmienisz "Europe/Warsaw"
 
 Musimy także dodać ścieżkę do plików statycznych (dowiesz się więcej o plikach statycznych i CSS w dalszej części kursu). Przejdź do samego końca pliku i pod linijką zawierającą `STATIC_URL` dodaj nową zmienną `STATIC_ROOT`:
 

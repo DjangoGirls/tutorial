@@ -66,7 +66,7 @@ E salve como `.gitignore` na pasta de nível superior "djangogirls".
 
 > **Nota**: O ponto no início do nome do arquivo é importante! Se você está tendo alguma dificuldade em criá-la (Macs não gostam de criar arquivos que começam com um ponto através do Finder, por exemplo), use o recurso "Save As" no seu editor que sempre funciona.
 
-É uma boa idéia para usar um comando de `git status` antes de `gitt add` ou sempre que você não tiver certeza de que será feito, para evitar surpresas (por exemplo, serão adicionados arquivos errados ou commitados). O comando `git status` retorna informações sobre todos os arquivos controlado/modificado/encenado, status de ramo e muito mais. O output deve ser semelhante a:
+É uma boa idéia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza de que será feito, para evitar surpresas (por exemplo, serão adicionados arquivos errados ou commitados). O comando `git status` retorna informações sobre todos os arquivos controlado/modificado/encenado, status de ramo e muito mais. O output deve ser semelhante a:
 
     $ git status
     On branch master
@@ -207,7 +207,7 @@ Você estava imaginando o que é "whitenoise"? É uma ferramenta para servir os 
 
 Vamos descobrir um pouco mais sobre arquivos estáticos mais tarde no tutorial, quando vamos editar o CSS para o nosso site.
 
-Por enaunto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
+Por enquanto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
 
     20:20 ~ $ python manage.py collectstatic
 
@@ -222,9 +222,9 @@ Por enaunto só precisamos executar um comando extra chamado "collectstatic" no 
     Type 'yes' to continue, or 'no' to cancel: yes
 
 
-Digite "Sim" e vai embora! Você não adora fazer computadores imprimir páginas e páginas de texto? Sempre faço pequenos ruídos para acompanhá-lo. Brp, brp brp...
+Digite "yes" (Sim) e vai embora! Você não adora fazer computadores imprimir páginas e páginas de texto? Sempre faço pequenos ruídos para acompanhá-lo. Brp, brp brp...
 
-    opying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
     Copying '/home/edith/.virtualenvs/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
@@ -273,7 +273,7 @@ Na seção "Virtualenv", clique no texto vermelho que diz "Enter the path to a v
 
 Django funciona usando o WSGI protocol, um padrão para servir sites usando Python, que oferece suporte a PythonAnywhere. A maneira que configuramos PythonAnywhere para reconhecer nosso blog Django é editando um arquivo de configuração do WSGI.
 
-Clique no link "AWSGI configuration file" (na seção "Code" perto do topo da página - -ele vai ser nomeado algo como `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), e você será levado para um editor.
+Clique no link "WSGI configuration file" (na seção "Code" perto do topo da página - -ele vai ser nomeado algo como `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), e você será levado para um editor.
 
 Exclua todo o conteúdo atual e substitua com algo parecido com isto:
 
@@ -314,4 +314,4 @@ O treinador está aqui para ajudar!
 
 A página padrão para seu site deve dizer "Bem-vindo ao Django", como acontece no seu PC local. Tente adicionar `/admin/` para o final da URL, e você será levado ao site admin. Fazer login com o nome de usuário e senha, e você verá que você pode adicionar novas mensagens no servidor.
 
-Dë em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva as pessoas vários dias antes de fazer funcionar. Mas você tem seu site publicado, na internet, assim!
+Dê em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva as pessoas vários dias antes de fazer funcionar. Mas você tem seu site publicado, na internet, assim!

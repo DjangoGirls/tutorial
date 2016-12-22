@@ -15,8 +15,8 @@ Pozor na jednu věc: na druhé obrazovce průvodce instalací, označené "Přiz
 Je velmi pravděpodobné, že již máš Python nainstalován v základní instalaci. Chceš-li zkontrolovat, zda jej máš nainstalován (a o jakou verzi se jedná), otevři konzoli a zadej následující příkaz:
 
 ```
-    $ python3 --version
-    Python 3.4.2
+$ python3 --version
+Python 3.4.2
 ```  
 
 Pokud Python nemáš nainstalovaný nebo pokud chceš nainstalovat jinou verzi, můžeš postupovat takto:
@@ -26,7 +26,7 @@ Pokud Python nemáš nainstalovaný nebo pokud chceš nainstalovat jinou verzi, 
 Použij tento příkaz v konzoli:
 
 ```
-    sudo apt-get install python3.4
+sudo apt-get install python3.4
 ```
 
 #### Fedora (do verze 21)
@@ -34,7 +34,7 @@ Použij tento příkaz v konzoli:
 Použij tento příkaz v konzoli:
 
 ```
-    sudo yum install python3.4
+sudo yum install python3.4
 ```
 
 #### Fedora (22 +)
@@ -42,7 +42,7 @@ Použij tento příkaz v konzoli:
 Použij tento příkaz v konzoli:
 
 ```
-    $ sudo dnf nainstalovat python3.4
+$ sudo dnf nainstalovat python3.4
 ```
 
 #### openSUSE
@@ -50,7 +50,7 @@ Použij tento příkaz v konzoli:
 Použij tento příkaz v konzoli:
 
 ```
-    $ sudo zypper install python3
+$ sudo zypper install python3
 ```
 
 ### OS X
@@ -63,8 +63,8 @@ Musíš jít na web https://www.python.org/downloads/release/python-342/ a stáh
 Ověř, zda instalace proběhla úspěšně, otevři aplikaci *Terminal* a spusť příkaz `python3`:
 
 ```
-    $ python3 – version
-    Python 3.4.2
+$ python3 – version
+Python 3.4.2
 ```
 
 * * *

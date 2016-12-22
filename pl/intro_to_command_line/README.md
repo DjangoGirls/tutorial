@@ -2,9 +2,9 @@
 
 Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana? :)
 
-**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz poleceń!**
+**Pozwól, że przedstawimy Ci Twojego pierwszego przyjaciela: wiersz poleceń!**
 
-Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+Następujące kroki pokażą Ci, jak korzystać z tajemniczego czarnego okna, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco, ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 > **Uwaga** Podczas tego kursu będziemy używać terminów "katalog" i "folder" zamiennie, ponieważ oznaczają one tę samą rzecz.
 
@@ -58,7 +58,7 @@ lub
     > whoami
     
 
-A następnie wciśnij `enter`. Oto rezultat:
+A następnie wciśnij `Enter`. Oto rezultat:
 
     $ whoami
     olasitarska
@@ -74,7 +74,7 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 ### Bieżący katalog
 
-Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
+Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `Enter`:
 
     $ pwd
     /Users/olasitarska
@@ -149,7 +149,7 @@ Tak, to tutaj!
 
 ### Tworzenie folderu
 
-Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten sposób:
+Co powiesz na stworzenie folderu `cwiczenie` na swoim pulpicie? Zrób to w ten sposób:
 
     $ mkdir cwiczenie
     
@@ -266,7 +266,8 @@ Oto podsumowanie przydatnych poleceń:
 | copy                | cp                         | kopiowanie pliku          | **copy c:\test\test.txt c:\windows\test.txt** |
 | move                | mv                         | przenoszenie pliku        | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir               | mkdir                      | tworzenie nowego katalogu | **mkdir testdirectory**                           |
-| del                 | rm                         | usunięcie katalogu/pliku  | **del c:\test\test.txt**                        |
+| del                 | rm                         | usunięcie pliku           | **del c:\test\test.txt**                        |
+| rmdir /S            | rm -r                      | usunięcie katalogu        | **rm -r testdirectory**
 
 To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 

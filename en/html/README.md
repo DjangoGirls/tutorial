@@ -107,7 +107,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
 
-Here's an example of a full template:
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html

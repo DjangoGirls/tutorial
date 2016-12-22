@@ -23,7 +23,7 @@ Aby zainstalować Bootstrap musisz dodać poniższe linijki do znacznika `<head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Te linijki nie dodają żadnych plików do Twojego projektu. Wskazują one po prostu na pliki, które znajdują się w internecie. Otwórz teraz swoją przeglądarkę i odśwież stronę, a ujrzysz zmianę!
+Te linijki nie dodają żadnych plików do Twojego projektu. Wskazują one po prostu na pliki, które znajdują się w Internecie. Otwórz teraz swoją przeglądarkę i odśwież stronę, a ujrzysz zmianę!
 
 ![Rysunek 14.1](images/bootstrap1.png)
 
@@ -71,7 +71,7 @@ Nie będziemy się zanadto zagłębiać w style, ani uczyć się o arkuszach CSS
 
 Jednak zróbmy chociaż trochę. Może moglibyśmy zmienić kolor naszego nagłówka? Do rozpoznawania kolorów komputery używają specjalnych kodów. Kody te zaczynają się od znaku `#`, po którym następuje 6 znaków. Każdy znak to cyfra (0-9) lub litera (A-F). Możesz znaleźć kody kolorów na przykład tutaj: <http://www.colorpicker.com/>. Możesz również użyć uprzednio [zdefiniowanych kolorów][3], takich jak `red` (czerwony) czy `green ` (zielony)..
 
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+ [3]: http://www.w3schools.com/colors/colors_names.asp
 
 Do pliku `static/css/blog.css` dodaj następujący kod:
 
@@ -93,7 +93,7 @@ O selektorach CSS możesz przeczytać więcej tutaj: [CSS Selectors in w3schools
 
  [4]: http://www.w3schools.com/cssref/css_selectors.asp
 
-Następnie musimy także pokazać naszemu szablonowi HTML że dodaliśmy nowe style CSS. Otwórz plik `blog/templates/blog/post_list.html` i dodaj tą linijkę na samym jego początku:
+Następnie musimy także pokazać naszemu szablonowi HTML że dodaliśmy nowe style CSS. Otwórz plik `blog/templates/blog/post_list.html` i dodaj tę linijkę na samym jego początku:
 
 ```html
 {% load staticfiles %}
@@ -171,7 +171,7 @@ h1 a {
 
 Wspaniale!
 
-Jak wspomniano wcześniej, arkusze stylów kaskadowe używają pojęcia klasy, która w zasadzie pozwala Tobie nazwać kod HTML i zastosować style tylko do wybranych części, nie mając wpływu na pozostałe. To super przydatna opcja w przypadku gdy posiadasz dwa `div`y które robią zupełnie inne rzeczy (np. nagłówek i div zawierający post), więc nie chcesz żeby wyglądały one tak samo.
+Jak wspomniano wcześniej, kaskadowe arkusze stylów używają pojęcia klasy, która w zasadzie pozwala Tobie nazwać kod HTML i zastosować style tylko do wybranych części, nie wpływając na pozostałe. To super przydatna opcja w przypadku, gdy posiadasz dwa `div`y które robią zupełnie inne rzeczy (np. nagłówek i div zawierający post), więc nie chcesz żeby wyglądały one tak samo.
 
 Śmiało! Nazwijmy kilka części Twojego kodu HTML. Dodaj klasę nazwaną `page-header` do Twojego `div` który zawiera nagłówek:
 
@@ -193,7 +193,7 @@ Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
 ```
 
 
-A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `djangogirls/static/css/blog.css`:
+A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W Internecie dostępnych jest mnóstwo świetnych samouczków i instrukcji poświęconych CSS, dzięki którym łatwiej będzie Ci zrozumieć poniższy kod. Póki co po prostu go skopiuj, a następnie wklej w pliku `djangogirls/static/css/blog.css`:
 
 ```css
 .page-header {

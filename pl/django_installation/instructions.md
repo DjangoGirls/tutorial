@@ -10,7 +10,7 @@ Stwórzmy zatem **środowisko wirtualne** (zwane też *virtualenv*). Jego zadani
 
 Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. W systemie Windows może on wyglądać tak: `C:\Użytkownicy\Nazwa` (gdzie `Nazwa` to twoja nazwa użytkownika, której używasz przy logowaniu się do komputera).
 
-Na potrzeby kursu będziemy stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
+Na potrzeby kursu stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
 
     mkdir djangogirls
     cd djangogirls
