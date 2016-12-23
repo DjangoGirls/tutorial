@@ -145,7 +145,7 @@
 *   `models.DateTimeField` - 이것은 날짜와 시간을 의미합니다.
 *   `models.ForeignKey` - 다른 모델이 대한 링크를 의미합니다.
 
-시간 관계 상 모든 코드들을 하나하나 다 설명하지는 않을 거에요. 대신 모델의 필드와 정의하는 방법에 궁금하다면 아래 장고 공식 문서를 꼭 읽어보길 바랍니다. (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+시간 관계 상 모든 코드들을 하나하나 다 설명하지는 않을 거에요. 대신 모델의 필드와 정의하는 방법에 궁금하다면 아래 장고 공식 문서를 꼭 읽어보길 바랍니다. (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
 
 `def publish(self):`는 무슨 뜻일까요? 이 것이 바로 앞서 말했던 `publish`라는 메서드(method) 입니다. `def`는 이 것이 함수/메서드라는 뜻이고, `publish`는 메서드의 이름입니다. 원한다면 메서드 이름을 변경할 수도 있어요. 이름을 붙일 때는 공백 대신, 소문자와 언더스코어를 사용해야 합니다. 예를 들어, 평균 가격을 계산하는 메서드는 `calculate_average_price`라고 부를 수 있겠네요.
 

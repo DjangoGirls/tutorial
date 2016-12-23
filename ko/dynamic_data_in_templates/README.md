@@ -72,4 +72,4 @@
 
 다 되었습니다! 이제 템플릿 파일로 돌아가서 이 쿼리셋을 보이게 해볼 차례에요.
 
-쿼리셋에 대해서 좀 더 자세히 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+쿼리셋에 대해서 좀 더 자세히 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.10/ref/models/querysets/

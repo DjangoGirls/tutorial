@@ -118,4 +118,4 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 페이지에서 **no attribute 'post_list'**라는 오류가 보일 거에요. *post_list*에서 혹시 떠오르는 것이 있나요? 바로 뷰(view) 를 말하는 거죠! 모두 준비가 되었다는 뜻이에요. 아직 *view*를 안 만들었다는 것만 빼고요. 걱정 마세요. 금방 만들어 볼 거에요.
 
-> 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.10/topics/http/urls/
