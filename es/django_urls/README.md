@@ -19,12 +19,12 @@ Vamos a abrir el archivo `mysite/urls.py` y ver cómo es:
 ``` python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         # Examples:
         # url(r'^$', 'mysite.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
-    
+
         url(r'^admin/', include(admin.site.urls)),
     ]
 ```    
@@ -52,7 +52,7 @@ Si te interesa entender cómo creamos esos patrones, aquí hay un ejemplo del pr
     \d representa un dígito
     + indica que el ítem anterior debería ser repetido por lo menos una vez
     () para encerrar una parte del patrón
-    
+
 
 Cualquier otra cosa en la definición del URL será tomada literalmente.
 
@@ -78,12 +78,12 @@ Tu archivo `mysite/urls.py` debería verse como este:
 ``` python
     from django.conf.urls import include, url
     from django.contrib import admin
-    
+
     urlpatterns = [
         url(r'^admin/', include(admin.site.urls)),
         url(r'', include('blog.urls')),
     ]
-``` 
+```
 
 Django ahora redirigirá todo lo que vaya hacia 'http://127.0.0.1:8000/' a `blog.urls` y buscará más instrucciones allí.
 
@@ -120,4 +120,4 @@ No hay más un "It works", ¿verdad? No te preocupes, es solamente una página d
 
 Puedes leer que no hay ningún **atributo 'post_list'**. ¿*post_list* te recuerda algo? ¡Así es como llamamos a nuestra vista! Esto significa que todo está en su lugar, sólo que no creamos nuestra *view* todavía. No te preocupes, ya llegaremos a eso.
 
-> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.10/topics/http/urls/

@@ -7,7 +7,7 @@ Vamos a abrir el archivo `blog/admin.py` y reemplazar su contenido con esto:
 ```python
     from django.contrib import admin
     from .models import Post
-    
+
     admin.site.register(Post)
 ```
 
@@ -27,7 +27,7 @@ Para poder ingresar deberás crear un *superusuario* - un usuario que tiene cont
     Password:
     Password (again):
     Superuser created successfully.
-    
+
 
 Vuelve a tu navegador e ingresa con las credenciales de super usuario que elegiste, ahora deberías poder ver el panel de administración de Django.
 
@@ -43,6 +43,6 @@ Asegúrate de que por lo menos dos o tres posts (pero no todos) tienen la fecha 
 
  [3]: images/edit_post3.png
 
-Si quieres saber más sobre el administrador de Django, puedes visitar la documentación de Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Si quieres saber más sobre el administrador de Django, puedes visitar la documentación de Django: https://docs.djangoproject.com/en/1.10/ref/contrib/admin/
 
 Este probablemente sea un buen momento para tomar un café (o té) o algo para comer y re-energizarte. Creaste tu primer modelo de Django - ¡mereces un pequeño recreo!

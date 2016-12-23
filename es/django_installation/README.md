@@ -1,7 +1,7 @@
 # Instalación de Django
 
 > Parte de este capitulo esta basado en los tutoriales de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Parte de este capítulo se basa en el [django-marcador tutorial][1] bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
  [1]: http://django-marcador.keimlink.de/
@@ -18,19 +18,19 @@ Para este tutorial usaremos un nuevo directorio `djangogirls` en tu directorio h
 
     mkdir djangogirls
     cd djangogirls
-    
+
 
 Haremos un virtualenv llamado `myvenv`. El comando general estará en el formato:
 
     python3 -m venv myvenv
-    
+
 
 ### Windows
 
 Para crear un nuevo `virtualenv`, debes abrir la consola (te lo indicamos unos cuantos capítulos antes, ¿recuerdas?) y ejecuta `C:\Python34\python -m venv myvenv`. Se verá así:
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
-    
+
 
 en donde `C:\Python34\python` es el directorio en el que instalaste Python previamente y `myvenv` es el nombre de tu `virtualenv`. Puedes utilizar cualquier otro nombre, pero asegúrate de usar minúsculas y no dejar espacios, acentos o caracteres especiales. También es una buena idea mantener el nombre corto. ¡Vas a referirte a él mucho!
 
@@ -39,17 +39,17 @@ en donde `C:\Python34\python` es el directorio en el que instalaste Python previ
 Crear un `virtualenv` en Linux y OS X es tan simple como ejecutar `python3 -m venv myvenv`. Se verá así:
 
     ~/djangogirls$ python3 -m venv myvenv
-    
+
 
 `myvenv` es el nombre de tu `virtualenv`. Puedes usar cualquier otro nombre, pero mantén el uso de minúsculas y no incluyas espacios. También es una buena idea mantener el nombre corto. ¡Vas a referirte a él mucho!
 
 > **Nota:** Actualmente, iniciar el entorno virtual en Ubuntu 14.04 de esta manera produce el siguiente error:
-> 
+>
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
-> 
+>
 > Para evitar esto, utiliza directamente el comando `virtualenv`.
-> 
+>
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
@@ -59,31 +59,31 @@ Crear un `virtualenv` en Linux y OS X es tan simple como ejecutar `python3 -m ve
 Este comando anterior creará un directorio llamado `myvenv` (o cualquier nombre que hayas escogido) que contiene nuestro entorno virtual (básicamente un montón de archivos y carpetas). Todo lo que queremos hacer ahora es iniciarlo ejecutando:
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
-    
+
 
 en Windows, o:
 
     ~/djangogirls$ source myvenv/bin/activate
-    
+
 
 en OS X y Linux.
 
 ¡Recuerda reemplazar `myvenv` con tu nombre de `virtualenv` que hayas elegido!
 
 > **Nota:** a veces el comando `source` podría no estar disponible. En esos casos trata de hacerlo esto:
-> 
+>
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
 Sabrás que tienes `virtualenv` iniciado cuando veas que aparece este mensaje en la consola:
 
     (myvenv) C:\Users\Name\djangogirls>
-    
+
 
 o:
 
     (myvenv) ~/djangogirls$
-    
+
 
 ¡Nota que el prefijo `(myvenv)` aparece!
 
@@ -93,14 +93,14 @@ Tenemos todas las dependencias importantes en su lugar. ¡Finalmente podemos ins
 
 ## Instalar Django
 
-Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django usando `pip`. En la consola, ejecuta `pip install django==1.8` (fíjate que utilizamos un doble signo igual: `==`).
+Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django usando `pip`. En la consola, ejecuta `pip install django==1.10` (fíjate que utilizamos un doble signo igual: `==`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
+    (myvenv) ~$ pip install django==1.10
+    Downloading/unpacking django==1.10
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
-    
+
 
 En Windows
 
