@@ -15,7 +15,7 @@ from django.shortcuts import render
 
 # Create your views here.
 ```
-    
+
 
 Не слишком много кода. Простейшее *представление* может выглядеть следующим образом.
 
@@ -23,7 +23,7 @@ from django.shortcuts import render
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
-    
+
 
 Как ты можешь заметить, мы создали метод (`def`) с именем `post_list`, который принимает в `request` в качестве аргумента и `return` (возвращает) результат работы метода `render`, который соберет наш шаблон страницы `blog/post_list.html`.
 
@@ -37,4 +37,4 @@ def post_list(request):
 
 Это просто: *TemplateDoesNotExist* -- такого шаблона не существует. Давай исправим ошибку и создадим шаблон в следующей главе!
 
-> Подробнее о представлениях в Django можно узнать из официальной документации: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Подробнее о представлениях в Django можно узнать из официальной документации: https://docs.djangoproject.com/en/1.10/topics/http/views/
