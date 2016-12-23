@@ -48,11 +48,11 @@ Você quer saber como o Django coincide com URLs para views? Bem, esta parte é 
 Se você ainda quiser entender como criamos os padrões, aqui está um exemplo do processo - só precisamos um subconjunto limitado de regras para expressar o padrão que procuramos, ou seja:
 
     ^ para o início do texto
-    $ para o final do texto 
-    \d para um dígito 
-    + para indicar que o item anterior deve ser repetido pelo menos uma vez 
+    $ para o final do texto
+    \d para um dígito
+    + para indicar que o item anterior deve ser repetido pelo menos uma vez
     () para capturar parte do padrão
-    
+
 
 Qualquer outra coisa na definição de url será levada literalmente.
 
@@ -106,7 +106,7 @@ Depois disso nós podemos adicionar nosso primeira URL padrão:
 urlpatterns = [
     url(r'^$', views.post_list),
 ]
-``` 
+```
 
 Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para `^ $` URL. Essa expressão regular corresponderá a `^` (um começo) seguido por `$` (fim) - então somente uma seqüência vazia irá corresponder. E isso é correto, porque em resolvedores de Django url, ' http://127.0.0.1:8000 /' não é uma parte da URL. Este padrão irá mostrar o Django que `views.post_list` é o lugar certo para ir, se alguém entra em seu site no endereço 'http://127.0.0.1:8000 /'.
 
@@ -120,4 +120,4 @@ Não tem mais "It Works!' mais ein? Não se preocupe, é só uma página de erro
 
 Você pode ler que não há **no attribute 'post_list'**. O *post_list* te lembra alguma coisa? Isto é como chamamos o nosso view! Isso significa que está tudo no lugar, só não criamos nossa *view* ainda. Não se preocupe, nós chegaremos lá.
 
-> Se você quer saber mais sobre Django URLconfs, veja a documentação oficial: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Se você quer saber mais sobre Django URLconfs, veja a documentação oficial: https://docs.djangoproject.com/en/1.10/topics/http/urls/

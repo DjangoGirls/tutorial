@@ -21,12 +21,12 @@ E então o `Gato` tem algumas ações: `ronronar`, `arranhar` ou `comer` (no qua
     ronronar()
     arranhar()
     comer(comida_de_gato)
-    
-    
+
+
     ComidaDeGato
     --------
     sabor
-    
+
 
 Então, basicamente, a ideia é descrever coisas reais no código com propriedades(chamadas de `propriedades do objeto`) e ações (chamadas de `métodos`).
 
@@ -43,7 +43,7 @@ Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um 
     author
     created_date
     published_date
-    
+
 
 Que tipo de coisa pode ser feita com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
@@ -64,7 +64,7 @@ Você pode pensar em um modelo de banco de dados como uma planilha com colunas (
 Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 Você vai notar que um novo diretório `blog` é criado e que ele agora contém um número de arquivos. Nossos diretórios e arquivos no nosso projeto devem se parecer com este:
 
@@ -83,7 +83,7 @@ Você vai notar que um novo diretório `blog` é criado e que ele agora contém 
         ├── models.py
         ├── tests.py
         └── views.py
-    
+
 
 Depois de criar um aplicativo também precisamos dizer ao Django que deve usá-lo. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `)`. É assim que o produto final deve ficar assim:
 
@@ -145,7 +145,7 @@ Agora podemos definir as propriedades que discutimos: `titulo`, `texto`, `data_c
 *   `models.DateTimeField` - este é uma data e hora.
 *   `models.ForeignKey` - este é um link para outro modelo.
 
-Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do DJango se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do DJango se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
 
 Que tal `def publish(self):`? É exatamente o nosso método de `publish` que falávamos antes. `def`, significa que se trata de um função/método. `publish` é o nome do método. Você pode alterar, se quiser. A regra é que usamos letras minúsculas e sublinhados em vez de espaços em branco (ou seja, se você quer ter um método que calcula o preço médio, você poderia chamá-lo `calculate_average_price`).
 
@@ -161,7 +161,7 @@ O último passo é adicionar nosso novo modelo para nosso banco de dados. Primei
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-    
+
 
 Django prepara um arquivo de migração que temos de aplicar agora para nosso banco de dados, tipo `python manage.py migrate blog`, a saída deve ser:
 
@@ -170,6 +170,6 @@ Django prepara um arquivo de migração que temos de aplicar agora para nosso ba
       Apply all migrations: blog
     Running migrations:
       Applying blog.0001_initial... OK
-    
+
 
 Viva! Nosso modelo de Post está agora em nosso banco de dados, seria um prazer vê-lo, certo? Saltar para o próximo capítulo para ver o aspecto do seu Post!
