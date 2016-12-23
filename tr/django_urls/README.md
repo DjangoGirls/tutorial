@@ -19,16 +19,16 @@ Kod editörümüzde `mysite/urls.py` dosyasını açalım ve neye benzediğine b
 ```python
 from django.conf.urls import include, url
 from django.contrib import admin
-    
+
 urlpatterns = [
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    
+
     url(r'^admin/', include(admin.site.urls)),
 ]
 ```
-    
+
 
 Gördüğünüz gibi Django bizim için bir şeyler koymuş bile.
 
@@ -86,7 +86,7 @@ urlpatterns = [
     url(r'', include('blog.urls')),
 ]
 ```
-    
+
 
 Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
 
@@ -110,7 +110,7 @@ urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
 ]
 ```
-    
+
 
 Gördüğünüz üzere, `^$` URL'sine `post_list` adında bir `view` atıyoruz. Bu düzenli ifade `^` (başlangıç) ve `$` (bitiş)'e uyan stringlerle eşleşir - yani sadece boş string'lerle eşleşir. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
@@ -126,4 +126,4 @@ Artık "It works" demiyor, di mi? Meraklanmayın, sadece bir hata sayfası, kork
 
 Sayfada gördüğünüz şey: **no attribute 'post_list'**. *post_list* size bir şey hatırlatıyor mu? Bu view'un ismi! Bu her şey yerli yerinde sadece henüz *view* yok manasına geliyor. Hiç merak etmeyin, oraya geleceğiz.
 
-> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.10/topics/http/urls/

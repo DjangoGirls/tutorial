@@ -15,16 +15,16 @@ Eğer bir kediyi modellemek istiyorsak `Kedi` nesnesini oluştururuz ve bu nesne
 ```
 Kedi
 --------
-renk 
-yas 
-ruh_hali 
-sahibi 
-miyavla() 
-tirmala() 
-beslen(kedi_mamasi) 
-    
+renk
+yas
+ruh_hali
+sahibi
+miyavla()
+tirmala()
+beslen(kedi_mamasi)
+
 KediMamasi
--------- 
+--------
 tat
 ```   
 
@@ -111,8 +111,8 @@ INSTALLED_APPS = (
 ```python
 from django.db import models
 from django.utils import timezone
-    
-    
+
+
 class Post(models.Model):
     yazar = models.ForeignKey('auth.User')
     baslik = models.CharField(max_length=200)
@@ -121,16 +121,16 @@ class Post(models.Model):
            default=timezone.now)
     yayinlanma_tarihi = models.DateTimeField(
            blank=True, null=True)
- 
+
     def yayinla(self):
         self.yayinlanma_tarihi = timezone.now()
         self.save()
- 
+
     def __str__(self):
         return self.baslik
 ```    
 
-> `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. İki alt çizgi Python dilinde sık kullanılır. 
+> `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. İki alt çizgi Python dilinde sık kullanılır.
 
 Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek olduğunu tek tek anlatacağız!
 
@@ -149,7 +149,7 @@ Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek o
 *   `models.DateTimeField` -bu da gün ve saati tanımlamada kullanılır.
 *   `models.ForeignKey` - başka bir model ile bağlantı içerir.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
 
 Peki `def yayinla(self):` nedir? Daha önce bahsettiğimiz `yayinla` methodudur. `def` bir fonksiyon/method olduğunu belirtir, `yayinla` ise bu methodun adıdır. İstersen methodun ismini değiştirebilirsin. Methodlara isim verirken küçük harf kullanmaya ve boşluk yerine alt çizgi kullanmaya dikkat etmemiz gerekiyor. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 

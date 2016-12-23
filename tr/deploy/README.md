@@ -32,9 +32,9 @@ Git, kod reposu (veya "repository") denen belli dosyaların değişikliklerini i
 
 Hatırlatma: Kullanıcı adı seçerken özel Türkçe karakter kullanmayın.
 ```
-$ git init 
-Initialized empty Git repository in ~/djangogirls/.git/ 
-$ git config --global user.name "Adınız" 
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Adınız"
 $ git config --global user.email you@example.com
 ```    
 
@@ -58,19 +58,19 @@ Ve "djangogirls" dizinin en üst seviyesine `.gitignore` olarak kaydedin.
 `git add` kullanmadan önce veya nelerin değiştiğinden emin değilseniz, `git status` komutunu kullanmakta yarar var. Bu, yanlış dosyaların eklenmesi ve gönderilmesi gibi istenmeyen sürprizlerin engelenmesine yardımcı olacak. `git status` komutu, takip edilmeyen/değişen/gönderilecek dosyalar (staged), dal durumu (branch status) gibi bilgiler verir. Çıktının aşağıdaki gibi olması gerekiyor:
 
 ```    
-$ git status 
-On branch master 
-    
+$ git status
+On branch master
+
 Initial commit
-    
+
 Untracked files:
     (use "git add <dosya>..." to include in what will be committed)
-    
+
          .gitignore
          blog/
          manage.py
-         mysite/ 
-    
+         mysite/
+
 nothing added to commit but untracked files present (use "git add" to track)
 ```     
 
@@ -109,20 +109,20 @@ Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTP
 Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlini eklemeyin):
 
 ```
-$ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git 
+$ git remote add origin https://github.com/<github-kullanıcı-adınız>/ilk-blogum.git
 $ git push -u origin master
 ```     
 
 Github kullanıcı adı ve şifrenizi girin, arkasından aşağıdakine benzer bir şey görmeniz gerekiyor:
 
 ```
-Username for 'https://github.com': zeynep 
-Password for 'https://zeynep@github.com': 
+Username for 'https://github.com': zeynep
+Password for 'https://zeynep@github.com':
 Counting objects: 6, done.
 Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0) 
-To https://github.com/zeynep/ilk-blogum.git 
-  * [new branch] master -> master 
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/zeynep/ilk-blogum.git
+  * [new branch] master -> master
 Branch master set up to track remote branch master from origin.
 ```    
 
@@ -180,18 +180,18 @@ Bilgisayarınızda nasıl bir virtualenv (sanal ortam) oluşturduysanız, aynı 
 
 ```
 $ cd ilk-blogum
-    
+
 $ virtualenv --python=python3.4 myvenv
 Running virtualenv with interpreter /usr/bin/python3.4
 [...]
 Installing setuptools, pip...done.
-    
+
 $ source myvenv/bin/activate
-    
+
 (myvenv) $  pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.10 whitenoise-2.0
 ```    
 
 > **Not** `pip install` birkaç dakika sürebilir. Sabır, sabır! Ama 5 dakikadan uzun sürüyorsa, birşeyler yanlış olmuştur. Eğitmeninize sorun.
@@ -208,15 +208,15 @@ Tutorial'ın ilerleyen kısımlarında sitemizin CSS'ini düzenlerken statik dos
 
 ```
 (myvenv) $ python manage.py collectstatic
-    
+
 You have requested to collect static files at the destination
 location as specified in your settings:
-    
+
   /home/zeynep/ilk-blogum/static
-    
+
 This will overwrite existing files! (Bu işlem halihazırdaki dosyalarınız üzerinde değişiklik yapar!)
 Are you sure you want to do this? (Bu işlemi yapmak istediğinizden emin misiniz?)
-    
+
 Type 'yes' to continue, or 'no' to cancel: yes (Onaylıyorsanız 'yes', vazgeçtiyseniz 'no' yazın)
 ```    
 
@@ -278,13 +278,13 @@ Tüm içeriği silin ve onların yerine aşağıdakileri yazın:
 ```python
 import os
 import sys
-    
+
 path = '/home/<kullanıcı-adınız>/ilk-blogum'  # burada kendi kullanıcı adınızı yazın
 if path not in sys.path:
     sys.path.append(path)
-    
+
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
+
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 application = DjangoWhiteNoise(get_wsgi_application())
