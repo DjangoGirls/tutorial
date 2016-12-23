@@ -180,7 +180,7 @@ Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wir
     (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
+    Successfully installed django-1.10 whitenoise-3.2.2
 
 
 > **Uwaga** Polecenie `pip install` może trochę potrwać. Cierpliwości, cierpliwości! Jednak jeśli trwa to dłużej niż 5 min, coś jest nie tak. Spytaj swojego mentora.
