@@ -9,16 +9,16 @@
 我们需要打开我们的 `blog/views.py`。到目前为止 `post_list` *view* 看起来像这样：
 
     from django.shortcuts import render
-    
+
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
-    
+
 
 还记得当我们谈论过导入在不同文件中编写的代码吗？ 现在是我们必须导入我们已经写在 `models.py` 里的模型的时候了。 我们将添加这行 `from .models import Post`，像这样：
 
     from django.shortcuts import render
     from .models import Post
-    
+
 
 `from` 后面的点号意味着 *当前目录* 或 *当前的应用程序*。 因为 `views.py` 和 `models.py` 是在同一目录中，我们只需要使用 `.` 和 文件的名称（无 `.py`) 。 然后我们导入模型（`Post`).
 
@@ -33,18 +33,18 @@
 所以现在我们对已经发表并进行由 `published_date`排序的博客列表感兴趣，对吗？我们已经在 QuerySets 查询集一节里这么干过！
 
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+
 
 现在我们把这段代码插入 `blog/views.py` 文件，添加到函数 `def post_list(request)`里去：
 
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
-    
+
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
-    
+
 
 请注意我们为这里的 QuerySet查询集创建了一个 *变量*： `posts`。将此视为我们的 QuerySet 的名字。从现在开始我们可以通过这个名字引用它。
 
@@ -59,12 +59,12 @@
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
-    
+
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
-    
+
 
 就是它 ！现在回到我们的模板并显示此QuerySet查询集！
 
-如果你想了解更多关于QuerySert的内容，那么你可在这里得到帮助：https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+如果你想了解更多关于QuerySert的内容，那么你可在这里得到帮助：https://docs.djangoproject.com/en/1.10/ref/models/querysets/

@@ -170,7 +170,7 @@ $ source myvenv/bin/activate
 (mvenv) $  pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.10 whitenoise-3.2.2
 ```
 
 
@@ -304,5 +304,3 @@ application = DjangoWhiteNoise(get_wsgi_application())
 
 
 *ДОБРЯЧЕ* похваліть себе! Розгортання на сервер - один з найхитромудріших етапів веб-розробки. Зазвичай люди витрачають дні, щоб усе запрацювало. Але вам вдалось вийти у справжній інтернет, запросто!
-
-

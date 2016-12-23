@@ -1,5 +1,5 @@
 > 本节部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 教程而来。
-> 
+>
 > 本章的部分内容基于 [django-marcador 教程](http://django-marcador.keimlink.de/) ，使用知识共享署名-4.0 国际许可协议许可。 Django-marcador 教程的版权归 Markus Zapke-Gründemann 所有。
 
 ## 虚拟环境
@@ -14,19 +14,19 @@
 
     mkdir djangogirls
     cd djangogirls
-    
+
 
 我们将虚拟环境称为 `myvenv`。一般的命令格式是：
 
     python3 -m venv myvenv
-    
+
 
 ### Windows系统
 
 若要创建新的 `虚拟环境`，您需要打开的控制台 （我们在前几章里已经告诉过你了，还记得吗？），然后运行 `C:\Python34\python -m venv myvenv`。 它看起来会像这样：
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
-    
+
 
 `C:\Python34\python` 是您之前安装Python的目录， `myvenv` 是您`虚拟环境` 的名字。 你可以使用其他任何名字，但请坚持使用小写，并不要使用空格、重音符号或特殊字符。 始终保持名称短小是个好主意 — — 你会大量引用它 ！
 
@@ -35,17 +35,17 @@
 在 Linux 和 OS X 上创建的 `虚拟环境` 就和运行 `python3 -m venv myvenv` 一样简单。看起来像这样：
 
     ~/djangogirls$ python3 -m venv myvenv
-    
+
 
 `myvenv` 是您 `虚拟环境` 的名字。 您可以使用其他任何名称，但请始终使用小写以及不要有空格。 始终保持名称短小是个好主意，因为你会大量引用它！
 
 > **注意：** 在Ubuntu 14.04上启动虚拟环境会报以下错误：
-> 
+>
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
-> 
+>
 > 为了解决这个问题，请使用 `virtualenv` 命令。
-> 
+>
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
@@ -59,31 +59,31 @@
 运行如下命令进入你的虚拟环境：
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
-    
+
 
 #### Linux 和 OS X
 
 运行如下命令进入你的虚拟环境：
 
     ~/djangogirls$ source myvenv/bin/activate
-    
+
 
 记住要将 `myvenv` 替换成你选择的 `虚拟环境`的 名字 ！
 
 > **注：** 有时 `source` 可能不可用。在这些情况下试着做这面这些事情：
-> 
+>
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
 当你看到在您的控制台中有如下提示就知道你已经进入 `虚拟环境` ：
 
     (myvenv) C:\Users\Name\djangogirls>
-    
+
 
 或：
 
     (myvenv) ~/djangogirls$
-    
+
 
 注意 `（myvenv）`前缀的出现 ！
 
@@ -93,14 +93,14 @@
 
 ## 安装 Django
 
-既然你有了`虚拟环境` ，您可以使用 `pip`安装 Django 。在控制台中，运行 `pip install django==1.8` （注意我们使用双等于号： `==`).
+既然你有了`虚拟环境` ，您可以使用 `pip`安装 Django 。在控制台中，运行 `pip install django==1.10` （注意我们使用双等于号： `==`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
+    (myvenv) ~$ pip install django==1.10
+    Downloading/unpacking django==1.10
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
-    
+
 
 在 Windows上
 

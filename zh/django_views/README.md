@@ -11,15 +11,15 @@
 好，让我们打开这个文件，看看里面有什么：
 
     from django.shortcuts import render
-    
+
     # Create your views here.
-    
+
 
 这里没有太多的东西。一个最简单的*view*就长得这个样子。
 
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
-    
+
 
 如你所见, 我们创建一个方法 (`def`) ，命名为 `post_list` ，它接受 `request` 参数作为输入， 并 `return` （返回）用 `render` 方法渲染模板 `blog/post_list.html` 而得到的结果.
 
@@ -33,4 +33,4 @@
 
 这个错误很直白：*TemplateDoesNotExist*。让我们修复这个bug，然后在下一个章节里创建一个模板！
 
-> 阅读更多关于 Django views 的内容请参阅官方文档： https://docs.djangoproject.com/en/1.8/topics/http/views/
+> 阅读更多关于 Django views 的内容请参阅官方文档： https://docs.djangoproject.com/en/1.10/topics/http/views/
