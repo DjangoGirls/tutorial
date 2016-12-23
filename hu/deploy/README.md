@@ -34,18 +34,18 @@ A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
-    
+
 
 A git csomagtár inicializálása olyasvalami, amit minden projekt esetében csak egyszer kell véghezvinni (így majd nem kell újra és újra megadni a felhasználónevet ill. jelszót).
 
 A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen a mappán belül. De vannak bizonyos fájlok, amiket nem szeretnénk figyelembe venni. Ezt úgy tehetjük meg, hogy létrehozunk egy fájlt `.gitignore` névvel a gyökérkönyvtárban. Nyisd meg a szövegszerkesztőt és hozz létre egy új fájlt, amibe az alábbi sorok kerülnek:
 
-    *.pyc 
-    __pycache__ 
-    myvenv 
-    db.sqlite3 
+    *.pyc
+    __pycache__
+    myvenv
+    db.sqlite3
     .DS_Store
-    
+
 
 Majd mentsd le `.gitignore` néven a "djangogirls" legfelsőbb mappájában.
 
@@ -55,19 +55,19 @@ Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint 
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 Végül mentsük le a változtatásokat. A konzolban futtasd le a következő parancsokat:
 
@@ -78,11 +78,11 @@ Végül mentsük le a változtatásokat. A konzolban futtasd le a következő pa
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Forráskód feltöltése a GitHubra
 
-A böngészőben keresd fel a [GitHub.com][2] honlapot és regisztrálj be egy új "free user" fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod) 
+A böngészőben keresd fel a [GitHub.com][2] honlapot és regisztrálj be egy új "free user" fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod)
 
 Ezután hozz létre egy új csomagtárat ("repót"), amit nevezz "my-first-blog"-nak. Hagyd az "initialise with a README" mezőt jelöletlenül, a .gitignore lehetőséget hagyd üresen (ezt manuálisan tettük), a "License" résznél maradjon a "None" opció.
 
@@ -104,7 +104,7 @@ A konzolba írd be a következőt (helyettesítsd a `<your-github-username>` a s
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy láss:
 
@@ -116,7 +116,7 @@ Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -140,7 +140,7 @@ Amikor bejelentkezel a PythonAnywhere-be, egyből a dashboard-on, vagy "Consoles
 Töltsük be a forráskódodat a GitHubról a PythonAnywhere-be egy "clone" létrehozásával. Írd be az alábbiakat a konzolba a PythonAnywhere-ben (ne felejtsd, hogy a `<your-github-username>` helyébe a saját, GitHubon használt felhasználónevedet helyettesítsd be):
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizheted, ha beírod a konzolba, hogy `tree my-first-blog`:
 
@@ -161,7 +161,7 @@ Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizhete
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Virtuális környezet létrehozása a PythonAnywhere-en
 
@@ -180,7 +180,7 @@ $ source myvenv/bin/activate
 (mvenv) $  pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.10 whitenoise-3.2.2
 ```
 
 
@@ -197,17 +197,17 @@ A statikus fájlokról többet is tanulsz majd a tutorial során, amikor a CSS-t
 Egyelőre csak egy `collectstatic` parancsot kell lefuttatnod a szerveren. Ez megmondja a Django-nak, hogy gyűjtse össze a szerveren az összes statikus fájlt, amire szüksége lesz. Ezek most többnyire olyan fájlok, amik az adminfelület kinézetét adják.
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 Írd be, hogy "yes", és el is tűnik! Te is imádod, ha kiírathatsz a gépeddel egy csomó érthetetlen szöveget? Én mindig fura hangokat adok ki ilyenkor, nagyon jól illik hozzá. Brp, brp, brp...
 
@@ -217,7 +217,7 @@ Egyelőre csak egy `collectstatic` parancsot kell lefuttatnod a szerveren. Ez me
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### Adatbázis létrehozása PythonAnywhere-en
 
@@ -229,10 +229,10 @@ A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, 
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-    
+
 
 ## Tegyük közzé a blogot a weben!
 
