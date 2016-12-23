@@ -101,11 +101,11 @@ OK máme všechny důležité závislosti na místě a konečně můžeme nainst
 
 ## Instalace Django
 
-Máš své `virtualenv` nastartované a můžeš nainstalovat Django pomocí příkazu `pip`. V konzoli, spusť `pip install django == 1.8` (<0>Poznámka:</0> , používáme zde dvojité rovnítko: `==`).
+Máš své `virtualenv` nastartované a můžeš nainstalovat Django pomocí příkazu `pip`. V konzoli, spusť `pip install django == 1.10` (<0>Poznámka:</0> , používáme zde dvojité rovnítko: `==`).
 
 ```
-(myvenv) ~$ pip install django==1.8
-Downloading/unpacking django==1.8
+(myvenv) ~$ pip install django==1.10
+Downloading/unpacking django==1.10
 Installing collected packages: django
 Successfully installed django
 Cleaning up...

@@ -187,7 +187,7 @@ $ source myvenv/bin/activate
 (mvenv) $ pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.10 whitenoise-2.0
 ```    
 
 > **Poznámka:** Krok `pip install` může trvat několik minut. Trpělivost, trpělivost! Ale pokud to trvá déle než 5 minut, něco není v pořádku. Zeptej se svého kouče.
