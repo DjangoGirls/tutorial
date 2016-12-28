@@ -44,6 +44,6 @@ En azından iki ya da üç yazıya (ama hepsinin değil) yayınlama tarihi girdi
 
  [3]: images/edit_post3.png
 
-Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun belgelerine göz atabilirsiniz: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun belgelerine göz atabilirsiniz: https://docs.djangoproject.com/en/1.10/ref/contrib/admin/
 
 Şimdi enerjinizi toplamak için kendinize bir çay veya kahve alabilirsiniz. Ne de olsa ilk Django modelinizi oluşturdunuz - biraz molayı hak ediyorsunuz. :)

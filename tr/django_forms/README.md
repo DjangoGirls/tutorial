@@ -23,7 +23,7 @@ from django import forms
 from .models import Post
 
 class PostForm(forms.ModelForm):
-    
+
     class Meta:
         model = Post
         fields = ('baslik', 'yazi',)
@@ -187,7 +187,7 @@ else:
 
 ``` python
 form = PostForm(request.POST)
-``` 
+```
 
 Çok kolay! Şimdi de formu (yani tüm gerekli alanların doldurulduğu ve hatalı değerlerin kaydedilmeyeceğini) kontrol etmemiz lazım. Bunu da `form.is_valid()` ile yapıyoruz.
 
@@ -213,7 +213,7 @@ Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu i�
 
 ```python
     return redirect('blog.views.post_detail', pk=post.pk)
-``` 
+```
 
 `blog.views.post_detail` gitmek istediğimiz görünümün ismidir. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu değeri görünümlere aktarmak için `pk=post.pk` yazarız. Burada `post` yeni yarattığımız blog postudur!
 
@@ -232,7 +232,7 @@ def post_new(request):
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})yazar
-    
+
 
 Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidip bir `baslik` ve `yazi` ekleyelim, sonra da kaydedelim... ve işte! Yeni blog postu eklenmiş ve `post_detail` sayfasına yönlendirildik!
 
@@ -272,7 +272,7 @@ ki template buna benzesin:
 
 ```html
 {% extends 'blog/base.html' %}
-    
+
 {% block content %}
     <div class="post">
         {% if post.yayinlanma_tarihi %}
@@ -341,7 +341,7 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 Tebrikler! Uygulaman gittikçe tamamlanıyor!
 
-Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.8/topics/forms/ adresindeki dokümanlara bakabilirsin
+Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.10/topics/forms/ adresindeki dokümanlara bakabilirsin
 
 ## Güvenlik
 

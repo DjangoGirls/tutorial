@@ -1,5 +1,5 @@
 > Bu bölümün bir kısmı Geek Girls Carrots tarafından hazırlanmış eğitimlere dayanılarak hazırlanmıştır (http://django.carrots.pl/).
-> 
+>
 > Bu bölümün bir parçası Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslı [django-marcador tutorial](http://django-marcador.keimlink.de/)'a dayanılarak hazırlanmıştır. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
 
 ## Virtual environment (Sanal ortam)
@@ -44,12 +44,12 @@ Linux ve OS X işletim sistemlerinde `virtualenv` oluşturmak için `python3 -m 
 Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. İsmi çok fazla kullanacağınız için kısa tutmak da işinize yarayacaktır.
 
 > **NOT:** Ubuntu 14.04 işletim sisteminde sanal ortam yaratmaya çalışırken şu hatayla karşılaşabilirsiniz:
-> 
+>
 >     Error: Command '['/home/zeynep/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
-> 
+>
 > Bu sorunu çözmek için `virtualenv` komutunu kullanabilirsiniz.
-> 
+>
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
@@ -64,7 +64,7 @@ Yukarıdaki komutlar `myvenv` (veya seçtiğiniz isimde) bir klasör oluşturaca
 
 ```
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
-``` 
+```
 
 #### GNU/Linux ve OS X
 
@@ -72,12 +72,12 @@ Yukarıdaki komutlar `myvenv` (veya seçtiğiniz isimde) bir klasör oluşturaca
 
 ```
     ~/djangogirls$ source myvenv/bin/activate
-``` 
+```
 
 `myvenv` yerine kendi seçtiğiniz `virtualenv` ismini koymayı unutmayın!
 
 > **NOT:** bazen `source` komutu kullanılamıyor durumda olabilir. Böyle durumlarda onun yerine aşağıdaki komutu da kullanabilirsiniz:
-> 
+>
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
@@ -101,11 +101,11 @@ Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Djan
 
 ## Django'yu yüklemek
 
-`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.9` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
+`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.10` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
 
 ```
-(myvenv) ~$ pip install django==1.9
-Downloading/unpacking django==1.9
+(myvenv) ~$ pip install django==1.10
+Downloading/unpacking django==1.10
 Installing collected packages: django
 Successfully installed django
 Cleaning up...
