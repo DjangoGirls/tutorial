@@ -27,7 +27,7 @@ Para fazer login você precisa criar um *superuser* - um usuário que possui con
     Password:
     Password (again):
     Superuser created successfully.
-
+    
 
 Volte para a o navegador e faça login com as credenciais de superuser que você escolheu, você deve visualizar o painel de controle do Django admin.
 
@@ -43,6 +43,6 @@ Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a dat
 
  [3]: images/edit_post3.png
 
-Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/1.10/ref/contrib/admin/
+Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
 Este é provavelmente um bom momento para tomar um café (ou chocolate) ou algo para comer para repor as energias. Você criou seu primeiro modelo de Django - você merece um pouco de descanso!
