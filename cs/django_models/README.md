@@ -150,7 +150,7 @@ Nyní definujeme vlastnosti, mluvily jsme o: `title`, `text`, `created_date`, `p
 *   `models. DateTimeField` - definuje datum a čas.
 *   `models. ForeignKey` - definuje odkaz do jiného modelu.
 
-Nebudeme vysvětlovat každý kousek kódu, vzhledem k tomu, že by trvalo příliš dlouho. Měla bys se podívat do Django dokumentace, pokud se chceš dozvědět víc o polích modelu a jak definovat jiné věci než výše uvedené (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
+Nebudeme vysvětlovat každý kousek kódu, vzhledem k tomu, že by trvalo příliš dlouho. Měla bys se podívat do Django dokumentace, pokud se chceš dozvědět víc o polích modelu a jak definovat jiné věci než výše uvedené (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 Co je `def publish(self):`? Je to `publish` metoda, o které jsme mluvili dříve. `def` znamená, že definuješ funkci/metodu, a `publish` je název metody. Název metody můžeš změnit, pokud chceš. Pravidlo pro pojmenovávání je, že používáme malá písmena a podtržítka místo mezer. Například metoda, která vypočítá průměrnou cenu, se bude jmenovat `calculate_average_price`.
 
