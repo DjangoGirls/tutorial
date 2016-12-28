@@ -179,7 +179,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
     (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
-    Successfully installed django-1.10 whitenoise-3.2.2
+    Successfully installed django-1.8.2 whitenoise-2.0
 
 
 > **Note** The `pip install`은 설치가 될 때까지 인내심이 조금 필요해요. 하지만 몇 분 안에 완료될 거니 조금만 기다려보세요. 만약 5분 이상 시간이 지났다면, 무엇인가 잘못된거니 코치에게 물어보세요.

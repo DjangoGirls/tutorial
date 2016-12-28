@@ -94,10 +94,10 @@
 
 ## 장고 설치하기
 
-이제 `virtualenv` 가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django==1.10`를 실행해보세요. (조심하세요. 이퀄기호가 두 개예요: `==`).
+이제 `virtualenv` 가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django==1.8`를 실행해보세요. (조심하세요. 이퀄기호가 두 개예요: `==`).
 
-    (myvenv) ~$ pip install django==1.10
-    Downloading/unpacking django==1.10
+    (myvenv) ~$ pip install django==1.8
+    Downloading/unpacking django==1.8
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
