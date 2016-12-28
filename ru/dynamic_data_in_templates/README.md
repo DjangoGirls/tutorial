@@ -14,7 +14,7 @@ from django.shortcuts import render
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
-
+    
 
 Помнишь мы говорили о включении кода из других файлов? Теперь нам нужно включить модель, которую мы определили в файле `models.py`. Мы добавим строку `from .models import Post` следующим образом:
 
@@ -22,7 +22,7 @@ def post_list(request):
 from django.shortcuts import render
 from .models import Post
 ```
-
+    
 
 Точка перед `models` означает *текущую директорию* или *текущее приложение*. Поскольку `views.py` и `models.py` находятся в одной директории, мы можем использовать точку `.` и имя файла (без расширения `.py`). Затем мы импортируем модель (`Post`).
 
@@ -51,7 +51,7 @@ def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {})
 ```
-
+    
 
 Пожалуйста, обрати внимание, что мы создали *переменную* для QuerySet: `posts`. Можешь думать о ней как об имени для нашего QuerySet. Теперь мы можем обращаться к нему, используя имя.
 
@@ -72,8 +72,8 @@ def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
-
+    
 
 Вот и все! Теперь пришло время перейти к шаблону и отобразить QuerySet на странице!
 
-Подробнее о QuerySets в Django можно узнать в официальной документации: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Подробнее о QuerySets в Django можно узнать в официальной документации: https://docs.djangoproject.com/en/1.8/ref/models/querysets/

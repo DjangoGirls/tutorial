@@ -340,7 +340,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
 
 Поздравляем! Твое приложение становится все более сложным!
 
-Если тебе нужно больше информации о формах в Django, то обратись к официальной документации: https://docs.djangoproject.com/en/1.10/topics/forms/
+Если тебе нужно больше информации о формах в Django, то обратись к официальной документации: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Безопасность
 

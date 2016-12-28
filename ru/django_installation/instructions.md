@@ -1,5 +1,5 @@
 > Отдельные части этой главы основаны на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
->
+> 
 > Отдельные части этой главы основаны на [учебном пособии django-marcador](http://django-marcador.keimlink.de/), лицензированном под Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
 
 ## Виртуальное окружение
@@ -14,19 +14,19 @@
 
     mkdir djangogirls
     cd djangogirls
-
+    
 
 Мы создадим виртуальное окружение под именем `myvenv`. В общем случаем команда будет выглядеть так:
 
     python3 -m venv myvenv
-
+    
 
 ### Windows
 
 Чтобы создать новое `virtualenv`, тебе нужно открыть командную строку (мы рассказывали про неё в одной из прошлых глав - помнишь?) и набрать `C:\Python34\python -m venv myvenv`. Он должен содержать следующее:
 
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
-
+    
 
 где `C:\Python34\python` это директория, где ты установила Python и `myvenv` имя твоего `virtualenv`. Ты можешь выбрать любое имя, использовать можно только прописные буквы, без пробелов и специальных символов. Имя виртуального окружения выбирай покороче!
 
@@ -35,17 +35,17 @@
 Для Linux и OS X достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`:
 
     ~/djangogirls$ python3 -m venv myvenv
-
+    
 
 `myvenv` -- имя виртуального окружения `virtualenv`. Опять же, только строчные буквы и никаких пробелов. Имя виртуального окружения лучше выбирать покороче — его набирать его предстоит не раз!
 
 > **ПРИМЕЧАНИЕ:** создание виртуального окружения данной командой на Ubuntu 14.04 приведет к следующей ошибке:
->
+> 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
->
+> 
 > Чтобы обойти эту проблему используй команду `virtualenv`.
->
+> 
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
@@ -59,31 +59,31 @@
 Запусти виртуальное окружение, выполнив:
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
-
+    
 
 #### Linux and OS X
 
 Запусти виртуальное окружение, выполнив:
 
     ~/djangogirls$ source myvenv/bin/activate
-
+    
 
 Не забудь поменять `myvenv` на выбранное для `virtualenv` имя!
 
 > **ПРИМЕЧАНИЕ:** иногда команда `source` может быть недоступна. В таком случае, используй следующий метод:
->
+> 
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
 Ты поймешь, что `virtualenv` запущено, когда увидишь приписку в командной строке:
 
     (myvenv) C:\Users\Name\djangogirls>
-
+    
 
 или:
 
     (myvenv) ~/djangogirls$
-
+    
 
 Обрати внимание на появление префикса `(myvenv)`!
 
@@ -93,14 +93,14 @@
 
 ## Установка Django
 
-После запуска `virtualenv` ты можешь установить Django используя `pip`. Набери в командной строке строке `pip install django==1.10` (обрати внимание на двойной знак равенства: `==`).
+После запуска `virtualenv` ты можешь установить Django используя `pip`. Набери в командной строке строке `pip install django==1.8` (обрати внимание на двойной знак равенства: `==`).
 
-    (myvenv) ~$ pip install django==1.10
-    Downloading/unpacking django==1.10
+    (myvenv) ~$ pip install django==1.8
+    Downloading/unpacking django==1.8
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
-
+    
 
 для Windows
 
