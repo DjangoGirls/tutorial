@@ -27,7 +27,7 @@ A bejelentkezéshez létre kell hoznod egy *superuser*-t - egy olyan felhasznál
     Password:
     Password (again):
     Superuser created successfully.
-
+    
 
 Térj vissza a böngészőbe. Jelentkezz be a superuser adataival, amit az előbb adtál meg; ha minden jól megy, a Django admin dashboardra jutsz.
 
@@ -43,6 +43,6 @@ Nyisd meg a Posts részt, és kísérletezz vele egy kicsit. Hozz létre 5-6 blo
 
  [3]: images/edit_post3.png
 
-Ha szeretnél többet megtudni a Django adminról, a Django dokumentációban tudsz olvasni róla: https://docs.djangoproject.com/en/1.10/ref/contrib/admin/
+Ha szeretnél többet megtudni a Django adminról, a Django dokumentációban tudsz olvasni róla: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
 
 Itt az ideje, hogy kávézz vagy teázz egyet, vagy egyél valamit, hogy új erőre kapj. Elkészítetted az első Django modelledet - megérdemelsz egy kis lazítást!

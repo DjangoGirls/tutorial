@@ -12,7 +12,7 @@ Hozz létre egy új fájlt ezzel a névvel a `blog` könyvtárban.
 
     blog
        └── forms.py
-
+    
 
 Rendben, most nyisd meg, és írd bele a következő kódot:
 
@@ -340,7 +340,7 @@ Változtasd meg a címet vagy a szöveget, és mentsd el!
 
 Gratulálunk! Az alkalmazásod egyre és egyre jobb!
 
-Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/1.10/topics/forms/
+Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Biztonság
 
@@ -387,7 +387,7 @@ $ git push
     [...]
     (myvenv)$ python manage.py collectstatic
     [...]
-
+    
 
 *   Végül menj a [Web tab][8]-ra, és nyomj **Reload**ot.
 

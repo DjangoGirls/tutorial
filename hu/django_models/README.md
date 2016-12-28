@@ -21,7 +21,7 @@ Aztán a `Cat`-hez tartozik néhány tevékenység: `purr` (dorombolás), `scrat
     purr()
     scratch()
     feed(cat_food)
-
+    
 
 Tehát az egésznek az az alapötlete, hogy a valós dolgokat kódban tulajdonságokkal (vagyis `object property`-kkel) és tevékenységekkel (vagyis `method`-okkal) írjuk le.
 
@@ -38,7 +38,7 @@ Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne 
     author
     created_date
     published_date
-
+    
 
 Milyen dolgokat lehet csinálni egy blogbejegyzéssel? Jó lenne, ha lenne valamiféle `method`, ami közzéteszi a posztot, nem?
 
@@ -59,7 +59,7 @@ Az adatbázisban lévő modellt úgy képzeld el, mint egy táblázatot (pl. az 
 Hogy minden szép rendben maradjon, most a projekten belül egy külön alkalmazást hozunk létre. Jó, ha már az elejétől fogva rendezetten tartjuk a dolgokat. Ahhoz, hogy létrehozzuk az alkalmazást, ezt a parancsot kell futtatnunk a parancssorban (a `djangogirls` könyvtárban, ahol a `manage.py` fájl van):
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-
+    
 
 Azt fogod látni, hogy egy új `blog` könyvtár keletkezett, és már most van benne néhány fájl. Így kell kinézniük a könyvtáraknak és fájloknak a projekten belül:
 
@@ -78,7 +78,7 @@ Azt fogod látni, hogy egy új `blog` könyvtár keletkezett, és már most van 
         ├── models.py
         ├── tests.py
         └── views.py
-
+    
 
 Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A `mysite/settings.py` tehetjük meg. Keresd meg az `INSTALLED_APPS` részt, és adj hozzá egy sort a `)` fölött, amiben ez áll: `'blog'`. Így kell kinéznie ennek a résznek:
 
@@ -141,7 +141,7 @@ Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltü
 *   `models.DateTimeField` - ez dátumot és időt tartalmaz.
 *   `models.ForeignKey` - ez egy másik modellel való kapcsolatot jelent.
 
-Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
+Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (közzététel) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
 
@@ -157,7 +157,7 @@ Az utolsó lépés, hogy hozzáadjuk az új modellünket az adatbázishoz. Elős
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-
+    
 
 A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk az adatbázison. Írd be, hogy `python manage.py migrate blog`, és ezt az outputot kell kapnod:
 
@@ -167,6 +167,6 @@ A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk 
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-
+    
 
 Hurrá! Bekerült az adatbázisba a Post modellünk! Jó lenne látni is, nem igaz? A következő fejezetben kiderül, hogy néz ki!

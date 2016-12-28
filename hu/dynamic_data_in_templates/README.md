@@ -35,7 +35,7 @@ Már ismerős lehet, hogy hogyan működik a QuerySet. A [Django ORM (QuerySets)
 Most azok a bejegyzések érdekelnek minket, amik publikálva vannak és a `published_date` szerint vannak sorba rendezve. Ezt már megtettük a QuerySets fejezetben!
 
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-
+    
 
 Most ezt a kódrészletet rakjuk a `blog/views.py` fájlba, hozzáadva a `def post_list(request)` function-hoz:
 
@@ -71,4 +71,4 @@ def post_list(request):
 
 És megvan! Itt az idő visszatérni a template-hez és megjeleníteni ezt a QuerySet-et!
 
-Ha utána szeretnél olvasni a QuerySet-nek, itt megteheted: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Ha utána szeretnél olvasni a QuerySet-nek, itt megteheted: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
