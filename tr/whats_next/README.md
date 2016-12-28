@@ -28,7 +28,7 @@ Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öner
 - [Django Carrots eğitimi][8]
 - [Learn Python The Hard Way kitabı][9]
 - [Getting Started With Django görünütülü dersleri][10]
-- [Two Scoops of Django: Best Practices for Django 1.10 kitabı][11]
+- [Two Scoops of Django: Best Practices for Django 1.8 kitabı][11]
 
  [4]: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/

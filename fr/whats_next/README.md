@@ -27,7 +27,7 @@ Ensuite, vous pouvez essayer les ressources listées ci-dessous. Elles sont tout
 - [Django Carrots tutorial][8]
 - [Learn Python The Hard Way book][9]
 - [Getting Started With Django video lessons][10]
-- [Two Scoops of Django: Best Practices for Django 1.10 book][11]
+- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
 
  [4]: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
