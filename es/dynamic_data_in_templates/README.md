@@ -10,7 +10,7 @@ Necesitamos abrir nuestro archivo `blog/views.py`. Hasta ahora la *view* `post_l
 
 ```python
     from django.shortcuts import render
-
+    
     def post_list(request):
         return render(request, 'blog/post_list.html', {})
 ```
@@ -35,7 +35,7 @@ Ya debes estar familiarizada con la forma en que funcionan los QuerySets. Hablam
 Entonces ahora nos interesa obtener una lista de entradas del blog que han sido publicadas y ordenadas por `published_date` (fecha de publicación), ¿no? ¡Ya hicimos eso en el capítulo QuerySets!
 
     Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-
+    
 
 Ahora pondremos este bloque de código en el archivo `blog/views.py`, agregándolo a la función `def post_list(request)`:
 
@@ -43,7 +43,7 @@ Ahora pondremos este bloque de código en el archivo `blog/views.py`, agregándo
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
-
+    
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {})
@@ -61,7 +61,7 @@ Finalmente nuestro archivo `blog/views.py` debería verse así:
     from django.shortcuts import render
     from django.utils import timezone
     from .models import Post
-
+    
     def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
         return render(request, 'blog/post_list.html', {'posts': posts})
@@ -69,4 +69,4 @@ Finalmente nuestro archivo `blog/views.py` debería verse así:
 
 ¡Terminamos! Ahora regresemos a nuestra plantilla y mostremos este QuerySet.
 
-Si quieres leer un poco más acerca de QuerySets en Django, puedes darle un vistazo a: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Si quieres leer un poco más acerca de QuerySets en Django, puedes darle un vistazo a: https://docs.djangoproject.com/en/1.8/ref/models/querysets/

@@ -12,17 +12,17 @@ Tenemos que crear un archivo con este nombre en el directorio `blog`.
 
     blog
        └── forms.py
-
+    
 
 Ok, vamos a abrirlo y vamos a escribir el siguiente código:
-
+    
 ```python
     from django import forms
-
+    
     from .models import Post
-
+    
     class PostForm(forms.ModelForm):
-
+    
         class Meta:
             model = Post
             fields = ('title', 'text',)
@@ -94,7 +94,7 @@ Y el código final tendrá este aspecto:
 ```python
     from django.conf.urls import url
     from . import views
-
+    
     urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
@@ -139,7 +139,7 @@ Bueno, vamos a ver cómo quedará el HTML en `post_edit.html`:
 
 ```html
     {% extends 'blog/base.html' %}
-
+    
     {% block content %}
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
@@ -270,7 +270,7 @@ para que la plantilla quede:
 
 ```html
         {% extends 'blog/base.html' %}
-
+    
     {% block content %}
         <div class="date">
         {% if post.published_date %}
@@ -336,7 +336,7 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/1.10/topics/forms/
+Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## Una cosa más: ¡Tiempo de implementación!
 
