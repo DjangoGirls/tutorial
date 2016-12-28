@@ -21,12 +21,12 @@
     purr()
     scratch()
     feed(cat_food)
-
-
+    
+    
     CatFood
     --------
     taste
-
+    
 
 所以基本思想就是用包含属性的代码来描述真实的东西（称为 `对象属性`）和操作 （称为 `方法`).
 
@@ -43,7 +43,7 @@
     author
     created_date
     published_date
-
+    
 
 一篇博客文章需要做什么样的事情？应该有一些正确的 `方法` 来发布文章，对吗？
 
@@ -64,7 +64,7 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
 为了让一切保持整洁，我们将我们的项目内部创建单独的应用程序。 如果一开始就让每一件东西井然有序，那就太好了。 为了创建一个应用程序，我们需要在命令行中执行以下命令 (从`manage.py` 文件所在的`djangogirls` 目录)：
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-
+    
 
 你会注意到一个新的 `blog` 目录被创建，它现在包含一些文件。我们的目录和我们的项目中的文件现在应该看起来像这样：
 
@@ -83,7 +83,7 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
         ├── models.py
         ├── tests.py
         └── views.py
-
+    
 
 创建应用程序后，我们还需要告诉 Django 它应该使用它。 我们是在 `mysite/settings.py`文件中这样做的。 我们需要找到 `INSTALLED_APPS` 并在它下面添加一行`'blog'` 。 所以最终的代码应如下所示：
 
@@ -96,7 +96,7 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
         'django.contrib.staticfiles',
         'blog',
     )
-
+    
 
 ### 创建一个博客文章模型
 
@@ -106,8 +106,8 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
 
     from django.db import models
     from django.utils import timezone
-
-
+    
+    
     class Post(models.Model):
         author = models.ForeignKey('auth.User')
         title = models.CharField(max_length=200)
@@ -116,14 +116,14 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
                 default=timezone.now)
         published_date = models.DateTimeField(
                 blank=True, null=True)
-
+    
         def publish(self):
             self.published_date = timezone.now()
             self.save()
-
+    
         def __str__(self):
             return self.title
-
+    
 
 > 当你在`str`的两端使用两个下划线字符（`_`）的时候务必三思而后行。 这是Python编程里面的一种常见的约定写法，有时我们也叫这个做"dunder"("double-underscore"的缩写)。
 
@@ -144,7 +144,7 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
 *   `models.DateTimeField` - 这是日期和时间。
 *   `models.ForeignKey` - 这是指向另一个模型的连接。
 
-我们不会对这里的代码解释得面面俱到因为那会花太多时间了。 如果你想了解更多有关模型字段以及如何定义除上面描述以外的东西，那你应该去看看Django的官方文档(https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types)。
+我们不会对这里的代码解释得面面俱到因为那会花太多时间了。 如果你想了解更多有关模型字段以及如何定义除上面描述以外的东西，那你应该去看看Django的官方文档(https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types)。
 
 `def publish(self):`又怎样呢? 这正是我们之前提及到的`publish`方法。 `def`表明这是一个函数或者方法，`publish`是这个方法的名字。 如果你喜欢的话你可以改变方法名。 命名的规则是使用小写字母以及下划线而非空白符。 举个例子，一个计算平均价格的方法可以叫做`calculate_average_price`.
 
@@ -160,7 +160,7 @@ Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中
     Migrations for 'blog':
       0001_initial.py:
       - Create model Post
-
+    
 
 Django为我们准备了我们必须应用到我们数据库的迁移文件。输入`python manage.py migrate blog`，然后对应的输出应该是:
 
@@ -170,6 +170,6 @@ Django为我们准备了我们必须应用到我们数据库的迁移文件。�
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-
+    
 
 万岁! 我们的Post模型现在已经在我们的数据库里面了! 它看起来很不错, 对吧? 跳转到下一个章节，看看你博客文章的样子！

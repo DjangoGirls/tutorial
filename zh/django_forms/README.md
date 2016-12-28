@@ -14,7 +14,7 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
     blog
        └── forms.py
 ```
-
+    
 
 好吧，让我们打开它，然后键入以下代码：
 
@@ -29,7 +29,7 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ('title', 'text',)
 ```
-
+    
 
 首先我们需要导入Django表单（`from django import forms`）然后，显然是我们的`Post`模型（`from .models import Post</0）。).></p>
 
@@ -50,7 +50,7 @@ class PostForm(forms.ModelForm):
 ```html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
-
+    
 
 请注意我们想要调用我们的新视图`post_new`.
 
@@ -82,7 +82,7 @@ class PostForm(forms.ModelForm):
         </body>
     </html>
 ```
-
+    
 
 然后保存，刷新http://127.0.0.1:8000页面，你可以明显地看到一个熟悉的`NoReverseMatch`错误信息，是吧？
 
@@ -93,7 +93,7 @@ class PostForm(forms.ModelForm):
 ```python
         url(r'^post/new/$', views.post_new, name='post_new'),
 ```
-
+    
 
 最终代码会看起来像这样：
 
@@ -107,7 +107,7 @@ urlpatterns = [
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]
 ```
-
+    
 
 刷新网页后，我们看到一个`AttributeError`，因为我们没有实现`post_new`视图。让我们现在把它加上吧。
 
@@ -118,7 +118,7 @@ urlpatterns = [
 ```python
 from .forms import PostForm
 ```
-
+    
 
 还有我们的*view*：
 
@@ -127,7 +127,7 @@ def post_new(request):
     form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
-
+    
 
 为了创建一个新的`Post`表单，我们需要调用`PostForm()`，然后把它传递给模板。 我们会回到这个*视图*，但是现在，让我们为这个表单快速创建一个模板。
 
@@ -148,7 +148,7 @@ def post_new(request):
 
 ```html
     {% extends 'blog/base.html' %}
-
+    
     {% block content %}
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
@@ -157,7 +157,7 @@ def post_new(request):
         </form>
     {% endblock %}
 ```
-
+    
 
 现在刷新！哇！你的表单显示出来了！
 
@@ -180,7 +180,7 @@ def post_new(request):
     form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
-
+    
 
 当我们提交表单，我们都回到相同的视图，但是这个时候我们有一些更多的数据在 `request`，更具体地说在 `request.POST` (命名和博客后缀"post"无关，它只是用来帮我们"上传"数据)。 还记得在HTML文件里，我们的`<form>`定义有一个方法`method="POST"`？ 现在所有从表单来的东西都在`request.POST`. 你不应该重命名`POST`为其他任何东西（其他唯一有效的`method`值是`GET`，但是我们没有时间去解释它们两者的区别是什么）。
 
@@ -192,14 +192,14 @@ def post_new(request):
     else:
         form = PostForm()
 ```
-
+    
 
 现在去填写`[...]`。如果`method` 是 `POST`，那么我们要用表单里的数据构建`PostForm`，对吗？我们会这样做：
 
 ```python
     form = PostForm(request.POST)
 ```
-
+    
 
 很容易吧！下一件事情就是去检查表单是否正确（所有必填字段都要被设置并且不会保存任何不正确的值）。我们将使用`form.is_valid()`来实现.
 
@@ -212,7 +212,7 @@ def post_new(request):
         post.published_date = timezone.now()
         post.save()
 ```
-
+    
 
 基本上，我们这里有两件事情：我们使用`form.save`保存表单，我们添加一个作者（因为 `PostForm` 中没有`author`字段，然而这个字段是必须的！）。 `commit=False`意味着我们还不想保存`Post`模型—我们想首先添加作者。 大多数情况下，当你使用`form.save()`时，不会使用`commit=False`，但是在这种情况下，我们需要这样做。 `post.save()`会保留更改（添加作者），并创建新的博客文章！
 
@@ -221,14 +221,14 @@ def post_new(request):
 ```python
     from django.shortcuts import redirect
 ```
-
+    
 
 把它添加到你文件的最开始处。现在我们可以说：创建完新帖子我们就转去`post_detail`页面。
 
 ```python
     return redirect('blog.views.post_detail', pk=post.pk)
 ```
-
+    
 
 `blog.views.post_detail` 是我们想去的视图的名字。 还记得这个*视图* 需得具有一个 `pk` 变量吗? 为了把它传递给视图我们使用`pk=post.pk`, 其中 `post` 就是我们刚刚创立的博客帖子！
 
@@ -248,7 +248,7 @@ def post_new(request):
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
-
+    
 
 让我们看看它是否正常工作。 转到页 http://127.0.0.1:8000//post/new/，添加 `title` 和 `text`，将它保存... 看！ 新博客文章已经加进来了，我们被重定向到`post_detail`页面！
 
@@ -283,13 +283,13 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
 ```html
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
-
+    
 
 所以模板看起来像这样：
 
 ```html
     {% extends 'blog/base.html' %}
-
+    
     {% block content %}
         <div class="post">
             {% if post.published_date %}
@@ -303,14 +303,14 @@ Django会处理验证我们表单里的所有字段都是正确的。这不是�
         </div>
     {% endblock %}
 ```
-
+    
 
 在`blog/urls.py`里我们添加这行：
-
+    
 ```python
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
 ```
-
+    
 
 我们将复用模板`blog/templates/blog/post_edit.html`，所以最后缺失的东西就是 *view*.
 
@@ -331,21 +331,21 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
-
+    
 
 这看起来几乎完全和我们的`post_new`视图一样，对吗？ 但是不完全是。 第一件事：我们从urls里传递了一个额外的`pk`参数。 然后：我们得到了`Post`模型，我们想编辑`get_object_or_404(Post, pk=pk)`，然后当我们创建了一个表单我们用一个`实例`来传递这篇文章，当我们想保存它：
 
 ```python
     form = PostForm(request.POST, instance=post)
 ```
-
+    
 
 当我们只是打开这篇文章的表单来编辑时：
 
 ```python
     form = PostForm(instance=post)
 ```
-
+    
 
 好，让我们来试试它是否可以工作！让我们先去`post_detail`页面。在右上角应该有一个编辑按钮：
 
@@ -363,7 +363,7 @@ def post_edit(request, pk):
 
 祝贺你！你的应用程序正在变得越来越完整！
 
-如果你需要更多关于Django表单的信息，你应该阅读文档： https://docs.djangoproject.com/en/1.10/topics/forms/
+如果你需要更多关于Django表单的信息，你应该阅读文档： https://docs.djangoproject.com/en/1.8/topics/forms/
 
 ## 安全性
 
@@ -374,7 +374,7 @@ def post_edit(request, pk):
 ```html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
-
+    
 
 我们要将另一个 `{% if %}` 标记到这, 这会使链接仅在以管理者身份登录的用户访问时显示。现在来说，管理员就是你！ 像这样修改 `<a>` 标记：
 
@@ -383,7 +383,7 @@ def post_edit(request, pk):
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
 ```
-
+    
 
 这个 `{% if %}` 会使得链接仅仅发送到哪些已经登陆的用户的浏览器。 这并不能完全保护发布新文章，不过这是很好的第一步。 我们将在扩展课程中包含更多安全部分。
 
@@ -403,7 +403,7 @@ def post_edit(request, pk):
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
 ```
-
+    
 
 *   然后，在一个 [PythonAnywhere 的 Bash 终端][7]里运行：
 
@@ -417,7 +417,7 @@ def post_edit(request, pk):
     (myvenv)$ python manage.py collectstatic
     [...]
 ```
-
+    
 
 *   最后，跳到 [Web 标签页][8] 并点击**重新载入**.
 

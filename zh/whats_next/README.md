@@ -19,7 +19,7 @@
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
-稍后，你可以试试利用以下的资源。 他们非常值得推荐啊！
+稍后，你可以试试利用以下的资源。 他们非常值得推荐啊！ 
 - [Django's official tutorial][4]
 - [New Coder tutorials][5]
 - [Code Academy Python course][6]
@@ -29,7 +29,7 @@
 - [Getting Started With Django video lessons][10]
 - [Two Scoops of Django: Best Practices for Django 1.8 book][11]
 
- [4]: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
+ [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
  [6]: https://www.codecademy.com/en/tracks/python
  [7]: https://www.codecademy.com/tracks/web
@@ -37,3 +37,4 @@
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8
+
