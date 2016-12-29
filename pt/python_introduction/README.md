@@ -961,7 +961,7 @@ Next girl
 Como você pode ver, tudo que você colocar dentro da declaração`for` com a identação será repetido para cada elemento
 da lista `girls`.
 
-Você tambm pode usar o `for` com numeros usando a função `range`:
+Você também pode usar o `for` com numeros usando a função `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
