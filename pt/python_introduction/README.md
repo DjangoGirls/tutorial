@@ -747,7 +747,7 @@ Perfect, I can hear all the details
 
 ## Comentários
 
-Comentários são linhas que começam com um `#`. Você pod e escrever qualquer coisa que você quiser após o `#` que o Python irá
+Comentários são linhas que começam com um `#`. Você pode escrever qualquer coisa que você quiser após o `#` que o Python irá
 ignorar completamente. Comentários podem deixar seu código mais fácil de  ser entendido por outras pessoas.
 
 Vejamos como isso se parece:
