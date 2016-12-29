@@ -39,7 +39,7 @@ Vá até o [GitHub.com](https://www.github.com) e registre ("sign up") uma conta
 
 Parabéns, você está com tudo preparado para seguir adiante! Se você ainda tiver um tempo livre antes do workshop, seria bom começar a leitura dos capítulos iniciais:
 
-* [Como a INternet funciona](../how_the_internet_works/README.md)
+* [Como a Internet funciona](../how_the_internet_works/README.md)
 
 * [Introdução a linha de comando](../intro_to_command_line/README.md)
 
