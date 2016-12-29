@@ -33,7 +33,7 @@ data-collapse=true ces-->
 
 > **Nota** Antes de você instalar o Python no OS X, você deve ter certeza que as configurações de seu Mac permitem a instalação de pacotes que não são da App Store. Vá até Preferências do Sistema (está na pasta Aplicações), clique em "Segurança & Privacidade," e então na aba "General". Se estiver configurado "Mac App Store" em "Allow apps downloaded from:", altere para "Mac App Store and identified developers."
 
-Você precisa ir no site web https://www.python.org/downloads/release/python-351/ e baixar o instalador Python:
+Você precisa ir no website https://www.python.org/downloads/release/python-351/ e baixar o instalador Python:
 
 * Baixe o arquivo *Mac OS X 64-bit/32-bit installer*,
 * Duplo clique em *python-3.5.1-macosx10.6.pkg* para rodar o instalador.
