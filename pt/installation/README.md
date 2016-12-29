@@ -2,7 +2,7 @@
 
 Se você est lendo o tutorial em casa, e não em um [evento Django Girls](https://djangogirls.org/events/), você pode pular esse capítulo por completo agora e ir direto para o capítulo [Como a Internet funciona?](../how_the_internet_works/README.md).
 
-A razão disso é porque nós simplesmente cobrimos essas coisas por todo o tutorial, e essa é apenas uma página adicional que reune todas as instruções de instalação em um lugar apenas. O envento Django Girls inclui um "Final de Tarde para Instalação" onde nós instalamos tudo para que não seja necessário nos preocuparmos com isso durante o workshop, então isso é útil para nós.
+A razão disso é porque nós simplesmente cobrimos essas coisas por todo o tutorial, e essa é apenas uma página adicional que reune todas as instruções de instalação em um lugar só. O envento Django Girls inclui um "Final de Tarde para Instalação" onde nós instalamos tudo para que não seja necessário nos preocuparmos com isso durante o workshop, então isso é útil para nós.
 
 Se você achar isso útil, você pode seguir adiante nesse capítulo também. Mas se você quiser começar a aprender as coisas antes de instalar um monte de coisas em seu computador, pule ess capítulo e nós iremos explicar a parte sobre instalação para você mais tarde.
 
