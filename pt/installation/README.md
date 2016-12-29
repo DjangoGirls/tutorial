@@ -50,4 +50,4 @@ Parabéns, você está com tudo preparado para seguir adiante! Se você ainda ti
 
 # Aproveite o workshop!
 
-Qunado você começar o workshop, você será capaz de ir direto para [Seu primeiro projeto Django!](../django_start_project/README.md) porque você já percorreu o material dos capítulos iniciais.
+Qunado você começar o workshop, você será capaz de ir direto para [Seu primeiro projeto Django!](../django_start_project/README.md) porque você já leu o material dos capítulos iniciais.
