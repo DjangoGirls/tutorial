@@ -45,7 +45,7 @@ Parabéns, você está com tudo preparado para seguir adiante! Se você ainda ti
 
 * [Introdução ao Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [O que é Django?](../django/README.md)
 
 
 # Aproveite o workshop!
