@@ -356,7 +356,7 @@ Agora, tente escrever o seguinte comando (tente substituir com as suas próprias
 Com esse comando, você acabou de criar uma variável chamada `participant` com três pares de chave-valor:
 
 - A chave `name` aponta para o valor `'Ola'` (um objeto `string`),
-- `count` aponta para `'Poland'` (outra `string`),
+- `country` aponta para `'Poland'` (outra `string`),
 - `favorite_numbers` apontam para `[7, 42, 92]` (uma `list` com três números nela).
 
 Você pode checar o conteúdo de chaves individuais com a sintaxe:
