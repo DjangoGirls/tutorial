@@ -24,7 +24,7 @@ Nota: se você estiver usando uma versão antiga do Windows (7, Vista, ou qualqu
 
 Se você instalar um versão antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada abaixo. Certifique-se de rolar a página para baixo para ver "Add python.exe to Path", e então clique no botão a esquerda e escolha "Will be installed on local hard drive":
 
-![Adicionar o Python a localização (Path), versões antigas](../python_installation/images/add_python_to_windows_path.png)
+![Adicionar o Python no Path, versões antigas](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
