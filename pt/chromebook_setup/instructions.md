@@ -8,7 +8,7 @@ Cloud 9 é uma ferramenta que lhe fornece um editor de código e acesso a um
 computador rodando na Internet onde você pode instalar, escrever, e rodar
 software. Durante esse tutorial, o Cloud 9 irá atuar como sua _máquina local_. 
 Você continuará a executar comandos em uma interface de terminal, como seus
-companheiros de classe em um on OS X, Ubuntu, ou Windows, mas seu terminal 
+companheiros de classe em um OS X, Ubuntu, ou Windows, mas seu terminal 
 estará conectado em um computador que está rodando em algum outro lugar, com as
 configuraçoes que o Cloud 9 fez para você.
 
