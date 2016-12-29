@@ -9,7 +9,7 @@ Se você achar útil, você pode seguir adiante nesse capítulo também. Mas se 
 Boa Sorte!
 
 # Instalação
-No workshop você irá construir um blog, e existem algumas etapas de configuração no tutorial que seria bom trabalharmos antecipadamente para que você esteja pronto para escrever código no dia do workshop.
+No workshop você irá criar um blog, e existem algumas etapas de configuração no tutorial que seria bom trabalharmos antecipadamente para que você esteja pronto para escrever código no dia do workshop.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces-->
