@@ -6,7 +6,7 @@ Vamos escrever um pouco de código!
 
 ## Interpretador Python
 
-> Leitores em casae: essa parte est disponível em vídeo (em inglês) [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Leitores em casa: essa parte está disponível em vídeo (em inglês) [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
 Para começar a brincar com Python nós precisamos abrir uma *linha de comando* no seu computador. Você já deve saber como fazer isso -- você aprendeu no capítulo [Introdução à Linha de Comando][2].
 
