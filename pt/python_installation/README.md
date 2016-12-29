@@ -10,6 +10,6 @@ O Python é originário do final da década de 1980 e seu principal objetivo é 
 
 > **Nota** Se você estiver usando um Chromebook, pule esse capítulo e certifique-se de seguir essas instruções [Chromebook Setup](../chromebook_setup/README.md).
 
-> **Nota** Se você já superou os passos de instalação, não existe necessidade de fazer isso de novo - você pode pular direto para o próximo capítulo!
+> **Nota** Se você já fez os passos de instalação, não existe necessidade de fazer isso de novo - você pode pular direto para o próximo capítulo!
 
 {% include "/python_installation/instructions.md" %}
