@@ -14,7 +14,7 @@ Uma coisa para se atentar: Durante a instalação você irá notar uma janela co
 
 ![Não se esqueça de adicionar Python no Path](../python_installation/images/python-installation-options.png)
 
-Nos passos a seguir, você usará a Linha de Comando do Windows (a qual nós iremos falar sobre com você). Por enquanto, se você precisar digitar alguns comandos, vá para o menu Iniciar → Todos os Programas → Acessórios → Prompt de Comando. Você pode também manter pressionada a tecla Windows e pressionar a tecla "R" até a janela "Executar" ("Run") aparecer. Para abrir a Linha de Comando, digite "cmd" e pressione o enter na janela "Executar" ("Run"). (Nas versões mais novas do Windows, você pode precisar pesquisar por "Prompt de Comando" ("Command Prompt"), já que ele, às vezes está escondido.)
+Nos passos a seguir, você usará a Linha de Comando do Windows (**nós também iremos falar sobre ela com você**). Por enquanto, se você precisar digitar alguns comandos, vá para o menu Iniciar → Todos os Programas → Acessórios → Prompt de Comando. Você pode também manter pressionada a tecla Windows e pressionar a tecla "R" até a janela "Executar" ("Run") aparecer. Para abrir a Linha de Comando, digite "cmd" e pressione o enter na janela "Executar" ("Run"). (Nas versões mais novas do Windows, você pode precisar pesquisar por "Prompt de Comando" ("Command Prompt"), já que ele, às vezes está escondido.)
 
 ![Digite "cmd" na janela "Executar" ("Run")](../python_installation/images/windows-plus-r.png)
 
