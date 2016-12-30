@@ -988,7 +988,7 @@ a função inclui o primiero valor, mas não o último.
 
 ## Sumário
 
-É isso. __Você arrebentou!__ Esse foi um capítulo complicado, então você deve se sentir orgulhosa. Nós definitivamente estamos orgulhosas de você chegar tão longe!
+É isso. __Você arrebentou!__ Esse foi um capítulo exigente, então você deve se sentir orgulhosa. Nós definitivamente estamos orgulhosas de você chegar tão longe!
 
 Você deve estar querendo, por um momento, fazer alguma outra coisa – alongar, dar uma volta por aí, descansar os olhos
 – antes de passar para o próximo capítulo. :)
