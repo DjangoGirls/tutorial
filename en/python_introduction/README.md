@@ -43,6 +43,7 @@ Nice! See how the answer popped out? Python knows math! You could try other comm
 - `40 / 2`
 
 To perform exponential calculation, say 2 to the power 3, we type:
+{% filename %}command-line{% endfilename %}
 ```python
 >>> 2 ** 3
 8
