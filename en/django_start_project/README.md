@@ -58,7 +58,7 @@ djangogirls
         wsgi.py
         __init__.py
 ```
-
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
