@@ -120,7 +120,9 @@ Ya da belki `baslik` alanında içinde 'Nefis' kelimesini içeren tüm gönderil
 Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `yayinlanma_tarihi` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
 ```
->>> from django.utils import timezone Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()) []
+>>> from django.utils import timezone
+>>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now())
+>>> <QuerySet []>
 ```
 
 Maalesef, Python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Bunu değiştirebiliriz! İlk olarak yayınlamak istediğimiz gönderinin bir örneğini alalım:
