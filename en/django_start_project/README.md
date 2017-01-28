@@ -71,7 +71,9 @@ Let's ignore the other files for now as we won't change them. The only thing to 
 
 ## Changing settings
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier. 
+
+> **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the editor, using the "open -> select file". Alternatively, you can do this by navigating to the djangogirls folder on your desktop and right-clicking on the file. Select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file. 
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
