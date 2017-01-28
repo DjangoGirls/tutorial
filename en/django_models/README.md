@@ -177,6 +177,9 @@ Migrations for 'blog':
   - Create model Post
 ```
 
+> **Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+
+
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
 {% filename %}command-line{% endfilename %}
