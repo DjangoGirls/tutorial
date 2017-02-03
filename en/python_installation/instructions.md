@@ -104,7 +104,7 @@ $ sudo zypper install python3
 
 <!--endsec-->
 
-Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 ```
