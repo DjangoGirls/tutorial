@@ -155,7 +155,7 @@ If you are on a Chromebook, use this command instead:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8000
 ```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
