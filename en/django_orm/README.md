@@ -90,7 +90,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 
 {% filename %}command-line{% endfilename %}
 ```python
-me = User.objects.get(username='ola')
+>>> me = User.objects.get(username='ola')
 ```
 
 As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
