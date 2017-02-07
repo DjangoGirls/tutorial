@@ -582,12 +582,19 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
 On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
@@ -596,12 +603,17 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 $ cd ~/Desktop
 ```
 
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+
 And on Windows, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
+<!--endsec-->
 
 If you get stuck, just ask for help.
 
