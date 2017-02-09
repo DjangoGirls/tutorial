@@ -145,7 +145,7 @@ Agora podemos definir as propriedades que discutimos: `titulo`, `texto`, `data_c
 *   `models.DateTimeField` - este é uma data e hora.
 *   `models.ForeignKey` - este é um link para outro modelo.
 
-Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do DJango se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do Django se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
 Que tal `def publish(self):`? É exatamente o nosso método de `publish` que falávamos antes. `def`, significa que se trata de um função/método. `publish` é o nome do método. Você pode alterar, se quiser. A regra é que usamos letras minúsculas e sublinhados em vez de espaços em branco (ou seja, se você quer ter um método que calcula o preço médio, você poderia chamá-lo `calculate_average_price`).
 
@@ -172,4 +172,4 @@ Django prepara um arquivo de migração que temos de aplicar agora para nosso ba
       Applying blog.0001_initial... OK
     
 
-Viva! Nosso modelo de Post está agora em nosso banco de dados, seria um prazer vê-lo, certo? Saltar para o próximo capítulo para ver o aspecto do seu Post!
+Viva! Nosso modelo de Post está agora em nosso banco de dados, seria um prazer vê-lo, certo? Pule para o próximo capítulo para ver como sua postagem se parece!
