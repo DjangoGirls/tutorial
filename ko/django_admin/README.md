@@ -6,7 +6,7 @@
 
     from django.contrib import admin
     from .models import Post
-
+    
     admin.site.register(Post)
 
 코드에서 알 수 있듯이 앞 챕터에서 정의했던 Post 모델을 가져오고(import) 있어요. 관리자 페이지에서 만든 모델을 보려면 `admin.site.register(Post)`로 모델을 등록해야해요.
@@ -39,7 +39,7 @@
 
 ![Django 관리자][3]
 
-[3]: images/edit_post3.png
+ [3]: images/edit_post3.png
 
 장고 관리자에 대해서 좀 더 알고 싶다면 장고 공식 문서를 참고하세요. : https://docs.djangoproject.com/en/1.10/ref/contrib/admin/
 

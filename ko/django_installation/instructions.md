@@ -49,7 +49,7 @@
 >
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.5 myvenv
->
+>	
 
 ## 가상환경 사용하기
 
@@ -74,7 +74,7 @@
 > **주의:** 간혹 `source` 명령이 동작하지 않을 수도 있어요. 그럴 때는 이렇게 하세요.
 >
 >     ~/djangogirls$ . myvenv/bin/activate
->     
+> ​    
 
 `가상환경`이 실행되었는지는 콘솔의 프롬프트를 보면 알 수 있어요.
 

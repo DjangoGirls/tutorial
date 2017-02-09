@@ -55,17 +55,17 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
     $ git status
     On branch master
-
+    
     Initial commit
-
+    
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-
+    
             .gitignore
             blog/
             manage.py
             mysite/
-
+    
     nothing added to commit but untracked files present (use "git add" to track)
 
 
@@ -303,7 +303,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 *   [PythonAnywhere 위키에서 일반적인 디버깅 팁][9]을 확인할 수 있어요.
 
-[9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 기억하세요, 여러분의 코치들은 여러분들에게 도움을 주기 위해 여기 있답니다!
 

@@ -67,8 +67,8 @@
 
 https://www.python.org/downloads/release/python-351/ 에서 파이썬 설치프로그램을 다운 받아야 합니다.
 
-* *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
-* *python-3.5.1-macosx10.6.pkg* 을 더블 클릭해 설치 프로그램을 시작하세요.
+ * *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
+ * *python-3.5.1-macosx10.6.pkg* 을 더블 클릭해 설치 프로그램을 시작하세요.
 
 *터미널*을 열고 `python3` 명령을 실행해 잘 설치되었는지 확인하세요.
 
