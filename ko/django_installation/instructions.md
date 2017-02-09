@@ -43,13 +43,13 @@
 > **주의:** 우분투 14.04 에서는 이런 오류가 뜰 수 있어요.
 >
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
-> ​    
+> ​
 >
 > 이 문제를 해결하려면 `virtualenv` 명령을 사용해야해요.
 >
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.5 myvenv
->	
+>
 
 ## 가상환경 사용하기
 
@@ -74,7 +74,7 @@
 > **주의:** 간혹 `source` 명령이 동작하지 않을 수도 있어요. 그럴 때는 이렇게 하세요.
 >
 >     ~/djangogirls$ . myvenv/bin/activate
-> ​    
+>
 
 `가상환경`이 실행되었는지는 콘솔의 프롬프트를 보면 알 수 있어요.
 

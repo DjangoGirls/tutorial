@@ -55,17 +55,17 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
 
 
@@ -169,15 +169,13 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
     $ cd my-first-blog
 
-    $ cd my-first-blog
-
     $ virtualenv --python=python3.5 myvenv
     Running virtualenv with interpreter /usr/bin/python3.5
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
     (myvenv) $  pip install django~=1.10.0
     Collecting django
     [...]
@@ -200,12 +198,12 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
 
 
