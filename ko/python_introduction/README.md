@@ -8,14 +8,14 @@
 
 파이썬과 놀기 위해서는 *커맨드 라인*을 열어야 합니다. [커맨드 라인 시작하기][1]에서 배웠던 걸 기억하고 있겠지요?
 
- [1]: ../intro_to_command_line/README.md
+[1]: ../intro_to_command_line/README.md
 
 준비되었다면, 아래 내용을 잘 따라오세요.
 
 파이썬 콘솔을 실행하기 위해 윈도우에서는 `python`을 입력하고, 맥OS나 리눅스라면 `python3`를 입력하고 `엔터`를 입력하세요.
 
     $ python3
-    Python 3.4.3 (...)
+    Python 3.5.1 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 

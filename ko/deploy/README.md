@@ -169,17 +169,19 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
     $ cd my-first-blog
 
-    $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
+    $ cd my-first-blog
+
+    $ virtualenv --python=python3.5 myvenv
+    Running virtualenv with interpreter /usr/bin/python3.5
     [...]
     Installing setuptools, pip...done.
-
+    
     $ source myvenv/bin/activate
-
-    (mvenv) $  pip install django whitenoise
+    
+    (myvenv) $  pip install django~=1.10.0
     Collecting django
     [...]
-    Successfully installed django-1.8.2 whitenoise-2.0
+    Successfully installed django-1.10.5
 
 
 > **Note** The `pip install`은 설치가 될 때까지 인내심이 조금 필요해요. 하지만 몇 분 안에 완료될 거니 조금만 기다려보세요. 만약 5분 이상 시간이 지났다면, 무엇인가 잘못된거니 코치에게 물어보세요.
@@ -198,22 +200,22 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
     You have requested to collect static files at the destination
     location as specified in your settings:
-
+    
         /home/edith/my-first-blog/static
-
+    
     This will overwrite existing files!
     Are you sure you want to do this?
-
+    
     Type 'yes' to continue, or 'no' to cancel: yes
 
 
 "yes"라고 입력하고 메시지들이 나오게 내버려두세요! 화면 가득히 텍스트가 출력되어 흘러나올건데 혹시 이런 걸 좋아하는 분 있나요? 저는 텍스트가 나타날 때마다 항상 "브릅, 브릅 브릅..." 같은 소리가 나도록 만들어 놓았어요. 멋지죠?
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.5/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/my-first-blog/mvenv/lib/python3.5/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
 
 
@@ -238,7 +240,7 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 로고를 클릭해 PythonAnywhere 대시보드로 와서 **Web**을 클릭하고 **Add a new web app**를 선택하세요.
 
-도메인 이름을 확정한 후, 대화창에 **수동설정(manual configuration)** ("Django"옵션이 *아니에요.*) 을 클릭하세요. 다음, **Python 3.4**을 선택하고 다음(Next)를 클릭하면 마법사가 종료됩니다.
+도메인 이름을 확정한 후, 대화창에 **수동설정(manual configuration)** ("Django"옵션이 *아니에요.*) 을 클릭하세요. 다음, **Python 3.5**을 선택하고 다음(Next)를 클릭하면 마법사가 종료됩니다.
 
 > **Note** " Django"가 아니라 꼭 "수동설정(Manual configuration)"을 선택하세요. 기본 PythonAnywhere Django 설정을 위해서는 이렇게 하는 것이 더 좋아요. ;-)
 
@@ -297,11 +299,11 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 
 *   WSGI 설정 파일에 실수가 있을 때 -- my-first-blog-folder 폴더의 경로를 올바르게 입력했었나요?
 
-*   Web app에서 그랬듯이 virtualenv에도 동일한 파이썬 버전을 선택했나요? 둘다 모두 3.4 버전이어야해요.
+*   Web app에서 그랬듯이 virtualenv에도 동일한 파이썬 버전을 선택했나요? 둘다 모두 3.5 버전이어야해요.
 
 *   [PythonAnywhere 위키에서 일반적인 디버깅 팁][9]을 확인할 수 있어요.
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+[9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 기억하세요, 여러분의 코치들은 여러분들에게 도움을 주기 위해 여기 있답니다!
 

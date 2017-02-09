@@ -17,25 +17,25 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 코드 에디터에서 `mysite/urls.py`파일을 열면 아래와 같을 거예요. :
 
 ```python
-    from django.conf.urls import include, url
-    from django.contrib import admin
+"""mysite URL Configuration
 
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
 
-        url(r'^admin/', include(admin.site.urls)),
-    ]
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+]
 ```
 
 장고가 이미 어떤 내용을 넣어 두었네요.
 
-`#`로 시작되는 줄은 주석이에요. 이 말은 파이썬은 이 줄을 실행하지 않는다는 뜻이지요. 꽤 유용하겠죠?
+`'''` 또는 `"""`으로 감싸진 줄은 주석이라고 불려요. 파일 상단에 주석을 남겨서 클래스, 메서드에 대해 설명할 수 있답니다. 주석은 파이썬에 의해 실행되지 않아요. 이 말은 파이썬은 이 줄을 실행하지 않는다는 뜻이지요. 꽤 유용하겠죠?
 
 이전 장에서 봤던 관리자 URL도 여기에 이미 있어요. :
 
-        url(r'^admin/', include(admin.site.urls)),
+        url(r'^admin/', admin.site.urls),
 
 
 이 의미는 `admin/`으로 시작하는 모든 URL을 장고가 *view*와 대조해 찾아낸다는 뜻입니다. 이 경우 많은 admin URL을 포함해야 하기 때문에 작은 파일안에 모두 들어가지 않아요. 여기에 좀 더 읽기 좋고 깔끔한 방법이 있어요.
@@ -76,9 +76,9 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
     from django.conf.urls import include, url
     from django.contrib import admin
-
+    
     urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
+        url(r'^admin/', admin.site.urls),
         url(r'', include('blog.urls')),
     ]
 
@@ -112,10 +112,10 @@ URL은 단순히 웹 주소랍니다. 웹사이트를 방문할 때마다 URL을
 
 ![Error][2]
 
- [2]: images/error1.png
+[2]: images/error1.png
 
 이런, 잘 "작동" 하는 것 같지 않다구요? 걱정마세요. 이건 그냥 오류 페이지에요. 그러니 무서워하지마세요! 오류는 꽤 유용하게 쓰인 답니다. :
 
 페이지에서 **no attribute 'post_list'**라는 오류가 보일 거에요. *post_list*에서 혹시 떠오르는 것이 있나요? 바로 뷰(view) 를 말하는 거죠! 모두 준비가 되었다는 뜻이에요. 아직 *view*를 안 만들었다는 것만 빼고요. 걱정 마세요. 금방 만들어 볼 거에요.
 
-> 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.10/topics/http/urls/
