@@ -228,6 +228,8 @@ C:\Users\olasitarska\Desktop
 
 ¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 $ mkdir practice
@@ -254,6 +256,8 @@ Este pequeño comando creará una carpeta con el nombre `practice` en el escrito
 Un pequeño reto para ti: en el recién creado directorio `practice` crea un directorio llamado `test`. Utiliza los comandos `cd` y `mkdir`.
 
 #### Solución:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
