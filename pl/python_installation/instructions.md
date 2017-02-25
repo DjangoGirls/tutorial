@@ -1,14 +1,33 @@
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc cokolwiek zrobić w Django. Zacznijmy zatem od zainstalowania go! Potrzebujemy zainstalować Pythona 3.4, dlatego jeżeli masz już zainstalowaną jakąkolwiek starszą wersję, będziesz musiała ją uaktualnić.
+Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc cokolwiek zrobić w Django. Zacznijmy zatem od zainstalowania go! Potrzebujemy zainstalować Pythona 3.6.0, dlatego jeżeli masz już zainstalowaną jakąkolwiek starszą wersję, będziesz musiała ją uaktualnić.
 
-### Windows
+Pliki instalacyjne Pythona możesz pobrać z tej strony: https://www.python.org/downloads/release/python-360/. Lista plików do pobrania, dla wszystkich systemów znajduje się na samym dole strony. Poniżej są szczegółowe instrukcje instalacji, w zależności od Twojego systemu operacyjnego.
 
-Możesz ściągnąć Pythona pod Windows z tej strony: https://www.python.org/downloads/release/python-343/. Po pobraniu pliku ***.msi**, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji. Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-Na jedno trzeba zwrócić uwagę: na drugiej stronie instalatora nazwanej "Customize" ("Dostosuj do potrzeb") przewiń na sam dół i wybierz "Add python.exe to the Path" ("Dodaj python.exe do ścieżki systemowej"), tak jak to zostało pokazane na poniższym obrazku:
+Wybierz wersję instalacyjną, odpowiednią dla Twojego systemu. Poniżej na zdjęciu zaznaczone są wersje dla systemu 64-bitowego (kolor zielony), oraz dla systemu 32-bitowego (kolor niebieski).
+Jeśli nie jesteś pewna jaki jest Twój system, to nie bój się zapytać mentora.
 
-![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/add_python_to_windows_path.png)
+![Lista plików instalacyjnych dla Windows](../python_installation/images/choose_version_win.png)
+
+Po pobraniu odpowiedniego pliku np. **python-3.6.0-amd64.exe** dla systemu 64-bitowego *(lub python-3.6.0.exe dla 32-bitowego, numer wersji może się zmieniać)*, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji:
+* na pierwszym ekranie wybierz opcję **Customize installation**
+* na drugim ekranie "Optional features" zaznacz wszystkie opcje oprócz "for all users"
+* na trzecim ekranie "Advanced Options" zaznacz nastęujące opcje:
+  * Associate files with Python
+  * Create shortcuts for installed Applications
+  * Add Python to environment variables **WAŻNE**  
+
+W okienku "Customize install location" znajduje się ścieżka do folderu, w którym będzie zainstalowany Python. Jeśli chcesz, możesz wskazać inne miejsce do którego ma zostać zainstalowany Python, upewnij się tylko, aby opcja "Add Python to environment..." była zaznaczona. Zapisz też sobie gdzieś, ścieżkę, w której Python będzie zainstalowany.
+
+Jeśli masz wszystkie opcje zaznaczone jak na poniższym obrazku oraz zapisałaś sobie ścieżkę, to możesz nacisnąć przycisk **Install**
+
+Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+
+![Opcje zaawansowane instalatora](../python_installation/images/advanced_options_win.png)
+
+<!--endsec-->
 
 ### Linux
 
@@ -16,7 +35,7 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
 
     $ python3 --version
     Python 3.4.3
-    
+
 
 Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
@@ -25,21 +44,21 @@ Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w inn
 Wpisz w konsoli poniższe polecenie:
 
     $ sudo apt-get install python3.4
-    
+
 
 #### Fedora (do 21)
 
 Użyj następującego polecenia w konsoli:
 
     $ sudo yum install python3.4
-    
+
 
 #### Fedora (22+)
 
 Użyj następującego polecenia w konsoli:
 
     $ sudo dnf install python3.4
-    
+
 
 #### openSUSE
 
@@ -59,7 +78,7 @@ Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz aplikację *Term
 
     $ python3 --version
     Python 3.4.3
-    
+
 
 * * *
 
