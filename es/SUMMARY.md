@@ -1,7 +1,7 @@
 # Índice
 
 * [Introducción](README.md)
-* [Installation](installation/README.md)
+* [Instalación](installation/README.md)
 * [¿Cómo funciona Internet?](how_the_internet_works/README.md)
 * [Introducción a la línea de comandos](intro_to_command_line/README.md)
 * [Instalación de Python](python_installation/README.md)
