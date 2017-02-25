@@ -12,7 +12,7 @@ Jeśli nie jesteś pewna jaki jest Twój system, to nie bój się zapytać mento
 ![Lista plików instalacyjnych dla Windows](../python_installation/images/choose_version_win.png)
 
 Po pobraniu odpowiedniego pliku np. **python-3.6.0-amd64.exe** dla systemu 64-bitowego *(lub python-3.6.0.exe dla 32-bitowego, numer wersji może się zmieniać)*, uruchom go (klikając dwukrotnie na niego) i postępuj według wyświetlanych instrukcji:
-* na pierwszym ekranie wybierz opcję **Customize installation**
+* na pierwszym ekranie kliknij opcję **Customize installation**
 * na drugim ekranie "Optional features" zaznacz wszystkie opcje oprócz "for all users"
 * na trzecim ekranie "Advanced Options" zaznacz nastęujące opcje:
   * Associate files with Python
@@ -27,58 +27,74 @@ Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona.
 
 ![Opcje zaawansowane instalatora](../python_installation/images/advanced_options_win.png)
 
+**Uwaga**
+Jeśli bardzo dawno nie aktualizowałaś swojego systemu Windows 7, to możesz natrafić na błąd podczas instalacji, który będzie zawierać frazę podobną do "...C runtime libraries...".
+W tym wypadku uruchom instalator Python jako administrator: prawy przycisk myszy na pliku instalacyjnym -> "Uruchom jako administrator". Jeśli dalej nie będziesz mogła zainstalować, to musisz zaktualizować swój system.
+
 <!--endsec-->
 
-### Linux
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+Przejdź na stronę https://www.python.org/downloads/release/python-360/ i pobierz instalator Pythona:
+
+  * Pobierz plik o nazwie *Mac OS X 64-bit/32-bit installer*,
+  * Kliknij dwukrotnie na *python-3.6.0-macosx10.6.pkg*, by uruchomić instalator.
+
+Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz aplikację *Terminal* i uruchom polecenie `python3`:
+
+    $ python3 --version
+    Python 3.6.0
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
 
     $ python3 --version
     Python 3.4.3
 
-
 Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
-#### Debian lub Ubuntu
+<!--sec data-title="Debian or Ubuntu" data-id="python_debian"
+data-collapse=true ces-->
 
 Wpisz w konsoli poniższe polecenie:
 
-    $ sudo apt-get install python3.4
+    $ sudo apt-get install python3.6
 
+<!--endsec-->
 
-#### Fedora (do 21)
-
-Użyj następującego polecenia w konsoli:
-
-    $ sudo yum install python3.4
-
-
-#### Fedora (22+)
+<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
+data-collapse=true ces-->
 
 Użyj następującego polecenia w konsoli:
 
-    $ sudo dnf install python3.4
+    $ sudo yum install python3.6
 
+<!--endsec-->
 
-#### openSUSE
+<!--sec data-title="Fedora (22+)" data-id="python_fedora22"
+data-collapse=true ces-->
+
+Użyj następującego polecenia w konsoli:
+
+    $ sudo dnf install python3.6
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="python_openSUSE"
+data-collapse=true ces-->
 
 Użyj następującego polecenia w konsoli:
 
     $ sudo zypper install python3
 
+<!--endsec-->
 
-### OS X
-
-Przejdź na stronę https://www.python.org/downloads/release/python-343/ i pobierz instalator Pythona:
-
-  * Pobierz plik o nazwie *Mac OS X 64-bit/32-bit installer*,
-  * Kliknij dwukrotnie na *python-3.4.3-macosx10.6.pkg*, by uruchomić instalator.
-
-Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz aplikację *Terminal* i uruchom polecenie `python3`:
-
-    $ python3 --version
-    Python 3.4.3
-
+<!--endsec-->
 
 * * *
 
