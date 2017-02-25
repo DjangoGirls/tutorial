@@ -518,19 +518,19 @@ Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o prí
 Na Macu bude príkaz vyzerať takto:
 
 ```
-$ cd /Users/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 Na Linuxe to bude takto (slovo "Desktop" bude možno preložené):
 
 ```
-$ cd /home/<your_name>/Desktop
+$ cd ~/Desktop
 ```
 
 A vo Windowse bude príkaz vyzerať takto:
 
 ```
-> cd C:\Users\<your_name>\Desktop
+> cd %HomePath%\Desktop
 ```
 
 Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.

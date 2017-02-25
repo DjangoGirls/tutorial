@@ -59,7 +59,7 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, co
 {% endfor %}
 ```
 
-Tudo que você põe enrte `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página:
+Tudo que você põe entre `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página:
 
 ![Figura 13.3][3]
 

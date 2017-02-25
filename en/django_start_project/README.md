@@ -58,7 +58,7 @@ djangogirls
         wsgi.py
         __init__.py
 ```
-
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
@@ -184,7 +184,7 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![It worked!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additonal commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 

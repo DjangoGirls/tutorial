@@ -2,9 +2,9 @@
 
 > **Uwaga:** Niniejszy rozdział może być miejscami dość trudny. Bądź dzielna i przestudiuj go do końca; wdrażanie jest ważną częścią pracy nad stroną. Celowo umieściłyśmy go tutaj, aby Twój mentor był w stanie pomóc Ci przejść przez skomplikowany proces opublikowania Twojej strony w sieci. Oznacza to, że możesz wciąż ukończyć tutorial samodzielnie, jeśli zabraknie Ci czasu.
 
-Do tej pory Twoja strona była dostępna tylko na Twoim komputerze. Teraz nauczysz się, jak ją wdrożyć! Wdrożenie to inaczej opublikowanie Twojej aplikacji w internecie, dzięki czemu możesz w końcu pokazać ją innym ludziom :).
+Do tej pory Twoja strona była dostępna tylko na Twoim komputerze. Teraz nauczysz się, jak ją wdrożyć! Wdrożenie to inaczej opublikowanie Twojej aplikacji w Internecie, dzięki czemu możesz w końcu pokazać ją innym ludziom :).
 
-Jak już wiesz, strona internetowa musi znajdować się na jakimś serwerze. Istnieje wielu dostawców serwerów w internecie (tzw. firm hostingowych). Skorzystamy z takiego, którego proces wdrażania jest stosunkowo prosty: [PythonAnywhere][1]. PythonAnywhere jest darmowy dla małych aplikacji, które nie mają zbyt dużo odwiedzających, więc na początek na pewno wystarczy.
+Jak już wiesz, strona internetowa musi znajdować się na jakimś serwerze. Istnieje wielu dostawców serwerów w Internecie (tzw. firm hostingowych). Skorzystamy z takiego, którego proces wdrażania jest stosunkowo prosty: [PythonAnywhere][1]. PythonAnywhere jest darmowy dla małych aplikacji, które nie mają zbyt dużo odwiedzających, więc na początek na pewno wystarczy.
 
  [1]: https://pythonanywhere.com/
 
@@ -306,8 +306,8 @@ Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w kt
 
 I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
-# Twoja strona jest w internecie!
+# Twoja strona jest w Internecie!
 
-Teraz na Twojej stronie w internecie powinny widniać słowa "Welcome to Django", dokładnie tak samo jak gdy otwierasz stronę znajdującą się na dysku lokalnym. Jeśli dodasz `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się swoim loginem i hasłem, a wtedy zobaczysz, że jesteś w stanie dodawać nowe posty na serwerze.
+Teraz na Twojej stronie w Internecie powinny widniać słowa "Welcome to Django", dokładnie tak samo jak gdy otwierasz stronę znajdującą się na dysku lokalnym. Jeśli dodasz `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się swoim loginem i hasłem, a wtedy zobaczysz, że jesteś w stanie dodawać nowe posty na serwerze.
 
-*Przybij piątkę!* Wdrażanie to jedna z najtrudniejszych i najbardziej skomplikowanych części projektowania stron internetowych. Często całemu zespołowi ludzi zajmuje to kilka dni zanim wszystko zacznie działać. Ale Tobie tak szybko udało się wdrożyć swoją stronę, jest ona w prawdziwym internecie!
+*Przybij piątkę!* Wdrażanie to jedna z najtrudniejszych i najbardziej skomplikowanych części projektowania stron internetowych. Często całemu zespołowi ludzi zajmuje to kilka dni zanim wszystko zacznie działać. Ale Tobie tak szybko udało się wdrożyć swoją stronę, jest ona w prawdziwym Internecie!

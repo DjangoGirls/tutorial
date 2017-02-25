@@ -4,7 +4,7 @@ Zastanawiasz się czym jest szablon?
 
 Szablon to plik, którego używamy do prezentacji informacji w zwięzłej formie. Używając analogii - do pisania listów również możesz użyć szablonu. Każdy list ma inną treść i adres, ale każdy z nich ma taką samą strukturę.
 
-Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominaliśmy w rozdziale **Jak działa internet**).
+Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominaliśmy w rozdziale **Jak działa Internet**).
 
 ## Co to jest HTML?
 
@@ -147,7 +147,7 @@ Daje nam to taki efekt:
 
  [4]: images/step6.png
 
-Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tą samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
+Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tę samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
 
 Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.
 
@@ -167,7 +167,7 @@ Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał
     $ git add --all .
 
 
-> **Uwaga:** `-A` (skrót od "all", czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
+> **Uwaga:** `--all` (czyli angielskie "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 

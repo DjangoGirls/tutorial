@@ -17,13 +17,13 @@ Názvy některých souborů a adresářů jsou pro Django velmi důležité. Nem
 V MacOS a Linux konzoli bys měla spustit následující příkaz; **nezapomeň přidat tečku `.` na konci**:
 
 ```
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+(myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```  
 
 V systému Windows; **nezapomeň přidat tečku `.` na konci**:
 
 ```
-    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 ```  
 
 > Tečka `.` je zásadní, protože říká, že skript pro instalaci Django se má provést v aktuálním adresáři (pro který je tečka `.` zkratkou - odkazem)
@@ -33,13 +33,13 @@ V systému Windows; **nezapomeň přidat tečku `.` na konci**:
 `django-admin.py` je skript, který za tebe vytvoří adresáře a soubory. Nyní bys měla mít adresářovou strukturu, která vypadá následovně:
 
 ```
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+djangogirls
+├───manage.py
+└───mysite
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
 ```  
 
 `manage.py` je skript, který slouží k řízení tvé webové stránky. S ním bude možné kromě jiného spustit webový server na tvém počítači bez instalovaní čehokoli jiného.
@@ -61,7 +61,7 @@ Bylo by hezké mít na svých stránkách správný čas. Přejdi na [wikipedia 
 V settings.py najdi řádek, který obsahuje `TIME_ZONE`, a uprav jej tak, aby obsahoval tvoje vlastní časové pásmo:
 
 ```python
-    TIME_ZONE = 'Europe/Prague'
+TIME_ZONE = 'Europe/Prague'
 ```  
 
 Uprav "Europe/Prague" podle potřeby.
@@ -69,8 +69,8 @@ Uprav "Europe/Prague" podle potřeby.
 Budeme také muset přidat cestu pro statické soubory (o statických souborech a CSS se dozvíme dále v tutorialu). Přejdi na *konec* souboru a pod položkou `STATIC_URL`, přidej nový název `STATIC_ROOT`:
 
 ```python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```  
 
 ## Nastavení databáze
@@ -80,36 +80,36 @@ Existuje mnoho různých databázových softwarů, které mohou ukládat data pr
 Ta je již nastavena v konfiguračním souboru `mysite/settings.py`:
 
 ```python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
 ```  
 
 Chceš-li vytvořit databázi pro náš blog, spusť následující příkaz v konzoli: `python manage.py migrate` (pro spuštění musíš být v adresáři `djangogirls`, který obsahuje soubor `manage.py`). Pokud vše půjde dobře, měla bys uvidět něco takového:
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform:
-      Synchronize unmigrated apps: messages, staticfiles
-      Apply all migrations: contenttypes, sessions, admin, auth
-    Synchronizing apps without migrations:
-       Creating tables...
-          Running deferred SQL...
-       Installing custom SQL...
-    Running migrations:
-      Rendering model states... DONE   Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK
-       Applying contenttypes.0002_remove_content_type_name... OK
-       Applying auth.0002_alter_permission_name_max_length... OK
-       Applying auth.0003_alter_user_email_max_length... OK
-       Applying auth.0004_alter_user_username_opts... OK
-       Applying auth.0005_alter_user_last_login_null... OK
-       Applying auth.0006_require_contenttypes_0002... OK
-      Applying sessions.0001_initial... OK
+(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Synchronize unmigrated apps: messages, staticfiles
+  Apply all migrations: contenttypes, sessions, admin, auth
+Synchronizing apps without migrations:
+   Creating tables...
+      Running deferred SQL...
+   Installing custom SQL...
+Running migrations:
+  Rendering model states... DONE   Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+   Applying contenttypes.0002_remove_content_type_name... OK
+   Applying auth.0002_alter_permission_name_max_length... OK
+   Applying auth.0003_alter_user_email_max_length... OK
+   Applying auth.0004_alter_user_username_opts... OK
+   Applying auth.0005_alter_user_last_login_null... OK
+   Applying auth.0006_require_contenttypes_0002... OK
+  Applying sessions.0001_initial... OK
 ```  
 
 A máme hotovo! Čas spustit webový server a měla bys vidět naše fungující webové stránky!
@@ -117,19 +117,19 @@ A máme hotovo! Čas spustit webový server a měla bys vidět naše fungující
 Pro spuštění musíš být v adresáři, který obsahuje soubor `manage.py` (adresář `djangogirls`). V konzoli spustíš webový server zadáním `pythonu manage.py runserver`:
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py runserver
+(myvenv) ~/djangogirls$ python manage.py runserver
 ```  
 
 Pokud pracuješ v systému Windows a nezdaří se to s chybovou zprávou `UnicodeDecodeError`, použij tento příkaz:
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
 ```  
 
 Nyní vše, co musíš udělat, je zkontrolovat, zda naše webové stránky běží - otevři svůj prohlížeč (Firefox, Chrome, Safari, Internet Explorer nebo co používáš) a zadej adresu:
 
 ```
-    http://127.0.0.1:8000/
+http://127.0.0.1:8000/
 ```  
 
 Webový server ti znemožní použít příkazovou řádkou, dokud jej nezastavíš. Chceš-li zadat další příkazy, spusť nové okno terminálu a aktivuj svůj virtualenv. Chceš-li zastavit server WWW, přepni se zpět do okna, ve kterém je spuštěn, a kombinací kláves CTRL + C - tlačítka CTRL a C, které stiskneš dohromady (na Windows, možná musíš stisknout kombinaci kláves Ctrl + Break) – ukončíš proces.

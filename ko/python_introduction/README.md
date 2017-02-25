@@ -477,23 +477,23 @@ Boolean도 변수로 사용할 수도 있습니다! 다음을 보세요. :
 
 맥이라면 명령어는 다음과 같을 것입니다. :
 
-    cd /Users/<your_name>/Desktop
+    cd ~/Desktop
 
 
 리눅스는 다음과 같아요. ("Desktop"이라는 문자는 해당 국어로 번역되어 있을 것에요. 한국어라면 "데스크탑" 또는 "바탕화면"으로 번역되어 있을 것입니다.)
 
-    cd /home/<your_name>/Desktop
+    cd ~/Desktop
 
     또는 "바탕화면"으로 번역되어 있다면
-    cd /home/<your_name>/바탕화면
+    cd ~/바탕화면
 
     또는 "데스크탑"으로 번역되어 있다면
-    cd /home/<your_name>/데스크탑
+    cd ~/데스크탑
 
 
 윈도우라면 다음과 같이 하세요. :
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 혹시 하다가 막히면, 코치에게 도움을 요청하세요.

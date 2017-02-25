@@ -13,7 +13,7 @@ This tutorial has been translated from English into Spanish by a wonderful group
 
 Bueno, ¡tenemos buenas noticias para ti! Programar no es tan difícil como aparenta y queremos mostrarte cuán divertido puede llegar a ser.
 
-Este tutorial no te convertirá en programador mágicamente. Si quieres ser buena en esto, necesitarás meses o inclusos años de aprendizaje y práctica. Pero queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicar pequeñas partes lo mejor que podamos, de forma que no te sientas intimidada por la tecnología.
+Este tutorial no te convertirá en programador mágicamente. Si quieres ser buena en esto, necesitarás meses o incluso años de aprendizaje y práctica. Pero queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicar pequeñas partes lo mejor que podamos, de forma que no te sientas intimidada por la tecnología.
 
 ¡Esperamos poder hacerte amar la tecnología tanto como nosotras lo hacemos!
 

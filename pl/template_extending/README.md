@@ -6,7 +6,7 @@ Dzięki temu, jeśli chcesz mieć te same informacje albo ten sam layout to nie 
 
 ## Tworzenie szablonu bazowego
 
-Szablon bazowy to najbardziej podstawowy szablon, który możesz rozszerzać na każdej stronie twojej aplikacji.
+Szablon bazowy to najbardziej podstawowy szablon, który możesz rozszerzać na każdej stronie Twojej aplikacji.
 
 Stwórzmy plik `base.html` w `blog/templates/blog/`:
 

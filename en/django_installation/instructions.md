@@ -167,15 +167,15 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 (myvenv) ~$ pip install --upgrade pip
 ```
 
-Then run `pip install django~=1.9.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
+Then run `pip install django~=1.10.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.9.0
-Downloading/unpacking django==1.9
+(myvenv) ~$ pip install django~=1.10.0
+Collecting django~=1.10.0
+  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django
-Cleaning up...
+Successfully installed django-1.10.4
 ```
 
 <!--sec data-title="Windows" data-id="django_err_windows"
@@ -192,7 +192,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.9.0
+>C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
 >```
 
 <!--endsec-->

@@ -65,7 +65,7 @@ Usando aspas duplas:
     "Correndo' ladeira abaixo"
     
 
-ou escapando apóstrofo com uma barra invertida (``):
+ou escapando apóstrofo com uma barra invertida (`\`):
 
     >>> "Correndo\' ladeira abaixo" 
     "Correndo' ladeira abaixo"
@@ -459,17 +459,17 @@ Com o arquivo salvo, é hora de executá-lo! Usando as habilidades que você apr
 
 Em um Mac, o comando será parecido com isto:
 
-    cd /Users/<your_name>/Desktop
+    cd ~/Desktop
     
 
 No Linux, será assim (a palavra "Desktop" pode ser traduzido para seu idioma):
 
-    cd /home/<your_name>/Desktop
+    cd ~/Desktop
     
 
 E no windows, vai ser assim:
 
-    cd C:\Users\<your_name>\Desktop
+    cd %HomePath%\Desktop
     
 
 Se você ficar preso, só pedir ajuda.

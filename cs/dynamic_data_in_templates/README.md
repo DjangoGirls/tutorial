@@ -9,17 +9,17 @@ OK, tak jak toho dosáhneme?
 Potřebujeme otevřít `blog/views.py`. Prozatím `post_list` *view* vypadá takhle:
 
 ```python
-    from django.shortcuts import render
+from django.shortcuts import render
 
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 ```  
 
 Vzpomínáš si, jak jsme mluvily o zahrnování kódu napsaného v různých souborech? Teď je ten moment, kdy musíme zahrnout model, který jsme napsaly do `models.py`. Přidáme tuto řádku `from .models import Post`:
 
 ```python
-    from django.shortcuts import render
-    from .models import Post
+from django.shortcuts import render
+from .models import Post
 ```  
 
 Tečka po `from` znamená *aktuální adresář* nebo *aktuální aplikace*. Protože se `views.py` a `models.py` nachází ve stejném adresáři, můžeme jednoduše použít `.` a jméno souboru (bez `.py`). Potom importujeme název modelu (`Post`).
@@ -35,19 +35,19 @@ Už bys měla mít povědomí o tom, jak QuerySety fungují. To jsme probraly v 
 Takže teď nás zajímá seznam příspěvků, které jsou publikovány a setříděny podle `published_date`, že? To jsme už udělaly v kapitole na QuerySety!
 
 ```python
-    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```    
 
 Teď tento kousek kódu vložíme do souboru `blog/views.py` do funkce `def post_list(request)`:
 
 ```python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {})
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
 ```  
 
 Vezmi, prosím, na vědomí, že jsme vytvořily *proměnnou* pro QuerySet: `posts`. Považuj to za název našeho QuerySetu. Od teď k němu budeme referovat tímto názvem.
@@ -61,13 +61,13 @@ Ve funkci `render` už máme parametr `request` (všechno, co přijmeme od uživ
 A nakonec by náš `blog/views.py` soubor měl vypadat takhle:
 
 ```python
-    from django.shortcuts import render
-    from django.utils import timezone
-    from .models import Post
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-    def post_list(request):
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-        return render(request, 'blog/post_list.html', {'posts': posts})
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
 ```  
 
 A je to! Čas jít zpět do šablony a zobrazit tento QuerySet!

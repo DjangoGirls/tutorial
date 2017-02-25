@@ -202,13 +202,13 @@ if form.is_valid():
 
 Tak właściwie robimy teraz dwie rzeczy: zapisujemy formularz przy pomocy `form.save` oraz dodajemy autora (jako że nasz `PostForm` nie zawierał pola `author`, a jest ono wymagane!). `commit=False` sygnalizuje, że jeszcze nie chcemy zapisywać modelu `Post` - najpierw chcemy dodać autora. Przez większość czasu będziesz używała `form.save()` bez `commit=False`, ale w tym przypadku musimy zrobić to w ten sposób. `post.save()` zachowa zmiany (razem z dodanym autorem) i nasz nowy wpis na blogu jest gotowy!
 
-Byłoby wreszcie wspaniale, gdybyśmy mogły przejdź od razu na stronę `post_detail` i zobaczyć nasz nowy wpis, prawda? Aby to było możliwe, musimy dodać parę importów:
+Byłoby wreszcie wspaniale, gdybyśmy mogły przejść od razu na stronę `post_detail` i zobaczyć nasz nowy wpis, prawda? Aby to było możliwe, musimy dodać dodatkowy import:
 
 ```python
 from django.shortcuts import redirect
 ```
 
-Dodaj je na samym początku pliku. I teraz możemy powiedzieć: przejdź na stronę `post_detail`, żeby zobaczyć nowo utworzony wpis.
+Dodaj go na samym początku pliku w tej formie, albo dopisz samo `redirect` do istniejącej już pierwszej linii importów. I teraz możemy powiedzieć: przejdź na stronę `post_detail`, żeby zobaczyć nowo utworzony wpis.
 
 ```python
 return redirect('post_detail', pk=post.pk)
@@ -346,7 +346,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty po prostu klikając w link! Jest niestety jeden problem - teraz każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Dobrze by było, gdyby przycisk był widoczny tylko dla Ciebie.
 
-W `blog/templates/blog/base.html` znajdź `page-header` `div` i tag <0>a</0>, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
+W `blog/templates/blog/base.html` znajdź `page-header` `div` i tag<em>-a</em>, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -370,11 +370,15 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 *   Po pierwsze zapiszmy nasze zmiany i wyślijmy je na Githuba
 
+
     $ git status
+    [...]
     $ git add --all .
     $ git status
+    [...]
     $ git commit -m "Dodano widok tworzenia/edytowania posta bezposrednio na stronie."
     $ git push
+    [...]
 
 
 *   Potem, w konsoli [PythonAnywhere Bash][7]:
