@@ -17,7 +17,7 @@ En los siguientes pasos, vamos a usar la Línea de Comandos de Windows (ya te va
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
 Nota: si estás usando una versión más vieja de Windows (7, Vista o cualquiera más vieja) y el instalador de Python 3.5.x falla con un error, puedes probar lo siguiente:
-1. instala todos las Actualizaciones de Windows y prueba volver a instalar Python 3.5
+1. instala todos las Actualizaciones de Windows y prueba volver a instalar Python 3.5; o
 2. instala una [versión más vieja de Python](https://www.python.org/downloads/windows/), por ejemplo la [3.4.4](https://www.python.org/downloads/release/python-344/).
 
 Si instalas una versión más vieja de Python, es posible que la pantalla del instalador se vea un poquito diferente que la mostrada anteriormente. Asegúrate de ir hacia el final y ver "Add python.exe to Path", luego hacer click en el botón y seleccionar "Will be installed on local hard drive":
