@@ -29,7 +29,7 @@ Si instalas una versión más vieja de Python, es posible que la pantalla del in
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Antes de que instales Python en OS X, debes asegurarte de que las configuraciones de tu Mac te permitan instalar paquetes que no son del App Store. Ve a Preferencias del Sistema (está en la carpeta Aplicaciones), haz click en "Seguridad y Privacidad", y luego en la pestaña "General". Si yo "Permitir aplicaciones descargadas desde:" está configurado como "Mac App Store", cámbialo a "Mac App Store and identified developers"
+> **Nota** Antes de que instales Python en OS X, debes asegurarte de que las configuraciones de tu Mac te permitan instalar paquetes que no son del App Store. Ve a Preferencias del Sistema (está en la carpeta Aplicaciones), haz click en "Seguridad y Privacidad", y luego en la pestaña "General". Si yo "Permitir aplicaciones descargadas desde:" está configurado como "Mac App Store", cámbialo a "Mac App Store and identified developers"
 
 Necesitas ir a la página web https://www.python.org/downloads/release/python-351/ y descargar el instalador de Python:
 
