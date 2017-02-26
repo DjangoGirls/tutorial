@@ -17,7 +17,7 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-No demasiadas cosas aquí todavía. 
+No demasiadas cosas aquí todavía.
 
 Recuerda que las líneas que comienzan con `#` son comentarios. Esto significa que esas líneas no será ejecutadas por Python.
 
@@ -37,6 +37,6 @@ Guarda el archivo, ve a http://127.0.0.1:8000/ y veamos lo que tenemos ahora.
 
 ![Error](images/error.png)
 
-Este muestra que el servidor está corriendo nuevamente, al menos, pero todavía no se ve del todo bien, ¿no?. No te preocupes, es solo otra página de error, nada de que asustarse. Igualmente que el mensaje de error en la consola, estos también son muy útiles. Puedes leer *TemplateDoesNotExist* en é. ¡Vamos a arreglar este error y crear una plantilla en el siguiente capítulo!
+Este muestra que el servidor está corriendo nuevamente, al menos, pero todavía no se ve del todo bien, ¿no?. No te preocupes, es solo otra página de error, nada de que asustarse. Igualmente que el mensaje de error en la consola, estos también son muy útiles. Puedes leer *TemplateDoesNotExist* en él. ¡Vamos a arreglar este error y crear una plantilla en el siguiente capítulo!
 
 > Aprende más sobre las vistas de Django leyendo la documentación oficial: https://docs.djangoproject.com/en/1.10/topics/http/views/
