@@ -195,8 +195,7 @@ $ git push
 ### Descarga tu nuevo código a PythonAnywhere y actualiza tu aplicación web
 
 * Abre la [página de consolas de PythonAnywhere](https://www.pythonanywhere.com/consoles/) y ve a tu **consola Bash** (o comienza una nueva). Luego, ejecuta:
-    
-```
+
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/my-first-blog
