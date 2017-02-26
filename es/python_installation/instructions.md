@@ -10,7 +10,7 @@ Primero comprueba si tu computadora está corriendo una versión de 32-bit o una
 
 Algo para tener en cuenta: Durante la installación notarás una ventana llamada "Setup". Asegúrate de tildar la opción "Add Python 3.5 to PATH" y luego hacer click en "Install Now", como se muestra aquí:
 
-![No te olvides de agregar Python al Path](../python_installation/images/add_python_to_windows_path.png)
+![No te olvides de agregar Python al Path](../python_installation/images/python-installation-options.png)
 
 En los siguientes pasos, vamos a usar la Línea de Comandos de Windows (ya te vamos a contar sobre ella). Por ahora, si necesitas escribir algún comando, ve a Menu → Todos los programas → Accesorios → Símbolo del sistema. También puedes mantener presionada la tecla de Windows y presionar la tecla "R" hasta que aparezca la ventanita "Run". Para abrir la Línea de Comandos de Windows, escribe "cmd" y presiona `intro` la ventana "Run" (en las nuevas veriones de Windows, quizás tengas que buscar "Línea de Comandos" ya que a veces está escondido)
 
