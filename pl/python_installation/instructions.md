@@ -58,6 +58,8 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
 
 Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
+<!--endsec-->
+
 <!--sec data-title="Debian or Ubuntu" data-id="python_debian"
 data-collapse=true ces-->
 
@@ -91,8 +93,6 @@ data-collapse=true ces-->
 Użyj następującego polecenia w konsoli:
 
     $ sudo zypper install python3
-
-<!--endsec-->
 
 <!--endsec-->
 
