@@ -85,10 +85,10 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
         └── views.py
 
 
-Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour cela, nous allons éditer le fichier `mysite/settings.py`. Trouvez la section `INSTALLED_APPS` et ajoutez `'blog',` juste avant `)`. La section doit maintenant ressembler à ceci :
+Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Pour cela, nous allons éditer le fichier `mysite/settings.py`. Trouvez la section `INSTALLED_APPS` et ajoutez `'blog',` juste avant `]`. La section doit maintenant ressembler à ceci :
 
 ```python
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -96,7 +96,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-)
+]
 ```
 
 ### Créer un modèle de blog post
