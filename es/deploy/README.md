@@ -98,7 +98,7 @@ En la próxima pantalla verás la URL para clonar tu repositorio. Elige la versi
 
 <img src="images/github_get_repo_url_screenshot.png" />
 
-Ahora tenemos que conectar el repositorio Git de tu ordenador con el que está en GitHub.
+Ahora tenemos que conectar el repositorio Git de tu computadora con el que está en GitHub.
 
 Escribe lo siguiente en la consola (sustituye `<tu-usuario-github>` por el nombre de usuario que elegiste al crear tu cuenta de GitHub, pero sin los signos de mayor y menor):
 
@@ -138,7 +138,7 @@ Tu código está ahora en GitHub. ¡Ve y míralo! Verás que está en buena comp
 
 Cuando te hayas registrado en PythonAnywhere serás redirigida a tu panel de control o página "Consoles". Elige la opción para iniciar una consola "Bash". Esta es la versión PythonAnywhere de una consola, como la que tienes en tu PC.
 
-> **Nota**: PythonAnywhere está basado en Linux, por lo que si estás en Windows la consola será un poco distinta a la que tienes en tu ordenador.
+> **Nota**: PythonAnywhere está basado en Linux, por lo que si estás en Windows la consola será un poco distinta a la que tienes en tu computadora.
 
 Vamos a descagar nuestro código de GitHub a PythonAnywhere mediante la creación de un "clon" del repositorio. Escribe lo siguiente en la consola de PythonAnywhere (no te olvides de utilizar tu nombre de usuario de GitHub en lugar de `<tu-usuario-github>`):
 
@@ -173,7 +173,7 @@ my-first-blog/
 
 ### Crear un virtualenv (entorno virtual) en PythonAnywhere
 
-Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonAnywhere. En la consola Bash, escribe:
+Tal y como hiciste en tu propia computadora, puedes crear un virtualenv en PythonAnywhere. En la consola Bash, escribe:
 
 {% filename %}Terminal PythonAnywhere{% endfilename %}
 ```

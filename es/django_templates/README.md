@@ -98,6 +98,6 @@ $ git pull
 
 ¡Felicidades! Ahora sigue adelante y trata de agregar una nueva entrada usando el panel de administrador de Django (¡recuerda agregar `published_date`!). Asegúrate de estar en el Django Admin de tu sitio de PythonAnywhere, https://yourname.pythonanywhere.com/admin. Luego actualiza tu página para ver si aparece tu nuevo post.
 
-¿Funciona de maravilla? ¡Estamos orgullosas! Aléjate un rato del ordenador, te has ganado un descanso. :)
+¿Funciona de maravilla? ¡Estamos orgullosas! Aléjate un rato de la computadora, te has ganado un descanso. :)
 
 ![Figure 13.4](images/donut.png)

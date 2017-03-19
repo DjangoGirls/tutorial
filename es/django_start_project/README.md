@@ -56,7 +56,7 @@ djangogirls
 ```
 > **Nota**: en la estructura de tus directorios también verás un directorio llamado `venv` que creamos anteriormente.
 
-`manage.py` es un script que ayuda con la administración del sitio. Con él podremos (entre otras cosas) iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más.
+`manage.py` es un script que ayuda con la administración del sitio. Con él podremos (entre otras cosas) iniciar un servidor web en nuestra computadora sin necesidad de instalar nada más.
 
 El archivo `settings.py` contiene la configuración de tu sitio web.
 
