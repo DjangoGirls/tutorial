@@ -42,7 +42,7 @@ en donde `C:\Python35\python` es el directorio en el que instalaste Python previ
 
 <!--endsec-->
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Linux y OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
 Crear un `virtualenv` en Linux y OS X es tan simple como ejecutar `python3 -m venv myvenv`.
@@ -127,7 +127,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 <!--endsec-->
 
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Linux y OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Inicia el entorno virtual ejecutando:
@@ -183,7 +183,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
+<!--sec data-title="Windows 8 y Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
 > Tu línea de comandos quizás se congele luego de que intentas instalar Django. Si esto sucede, intenta este comando en cambio:

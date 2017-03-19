@@ -41,7 +41,7 @@ Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depend
 
 Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
 Si estás en Mac o Linux, probablemente verás `$`, así:
@@ -75,7 +75,7 @@ En el tutorial, cuando queremos que escribas un comando, vamos a incluir el `$` 
 
 Vamos a empezar con algo simple. Escribe este comando:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -114,7 +114,7 @@ Cada sistema operativo tiene un conjunto diferente de comandos para la línea de
 
 Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este comando y pulsa `intro`:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -147,7 +147,7 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
 
 ¿Qué hay aquí? Sería bueno saber. Veamos:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -181,7 +181,7 @@ Music
 
 Ahora, vayamos a nuestro directorio Desktop, el escritorio:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -200,7 +200,7 @@ $ cd Desktop
 
 Comprueba si realmente ha cambiado:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -228,7 +228,7 @@ C:\Users\olasitarska\Desktop
 
 ¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -257,7 +257,7 @@ Un pequeño reto para ti: en el recién creado directorio `practice` crea un dir
 
 #### Solución:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -290,7 +290,7 @@ No queremos dejar un lío, así que vamos a eliminar todo lo que hemos hecho has
 
 En primer lugar, tenemos que volver al escritorio:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -311,7 +311,7 @@ Usar `..` con el comando `cd` hará que cambie el directorio actual al directori
 
 Revisa dónde estás:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -334,7 +334,7 @@ Es el momento de eliminar el directorio `practice`:
 
 > __Atención__: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre*. Así que ten mucho cuidado con este comando.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -354,7 +354,7 @@ practice, Are you sure <Y/N>? Y
 
 ¡Hecho! Para asegurarnos de que realmente se ha eliminado, vamos a comprobarlo:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -376,7 +376,7 @@ $ ls
 
 ¡Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vamos a hacerlo al estilo hacker, ¿vale?:)
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="OS X y Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```

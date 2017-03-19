@@ -53,7 +53,7 @@ Si tienes una 'micro versión' diferente de Python instalado, por ejemplo 3.5.0,
 
 <!--endsec-->
 
-<!--sec data-title="Debian or Ubuntu" data-id="python_debian"
+<!--sec data-title="Debian o Ubuntu" data-id="python_debian"
 data-collapse=true ces-->
 
 Escribe este comando en tu consola:
@@ -66,7 +66,7 @@ $ sudo apt-get install python3.5
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
+<!--sec data-title="Fedora (hasta 21)" data-id="python_fedora"
 data-collapse=true ces-->
 
 Usa este comando en tu consola:

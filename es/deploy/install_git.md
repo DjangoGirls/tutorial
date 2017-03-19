@@ -18,7 +18,7 @@ Descarga Git de [git-scm.com](https://git-scm.com/) y solo sigue las instruccion
 
 <!--endsec-->
 
-<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+<!--sec data-title="Debian o Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
@@ -28,7 +28,7 @@ $ sudo apt-get install git
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21"
+<!--sec data-title="Fedora (hasta 21)" data-id="git_install_fedora_21"
 data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
