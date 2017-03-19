@@ -56,7 +56,7 @@ La última parte es pasar el QuerySet `posts` a la plantilla (veremos cómo most
 
 Fíjate en que creamos una *variable* para el QuerySet: `posts`. Trátala como si fuera el nombre de nuestro QuerySet. De aquí en adelante vamos a referirnos al QuerySet con ese nombre.
 
-Además, este código utiliza la función `timezone.now()`, así que necesitamos añadir una importación de `timezone`.
+Además, este código utiliza la función `timezone.now()`, así que necesitamos agregar una importación de `timezone`.
 
 En la función `render` ya tenemos el parámetro `request` (todo lo que recibimos del usuario via Internet) y el archivo `'blog/post_list.html'` como plantilla. El último parámetro, que se ve así: `{}` es un lugar en el que podemos agregar algunas cosas para que la plantilla las use. Necesitamos nombrarlos (los seguiremos llamando `'posts'` por ahora :)). Se debería ver así: `{'posts': posts}`. Fíjate en que la parte antes de `:` es una cadena; tienes que envolverla con comillas `''`.
 

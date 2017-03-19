@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-Es hora de abrir `blog/templates/blog/base.html`. Vamos a añadir un enlace en un `div` llamado `page-header`:
+Es hora de abrir `blog/templates/blog/base.html`. Vamos a agregar un enlace en un `div` llamado `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -108,7 +108,7 @@ urlpatterns = [
 ]
 ```
 
-Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementada. Vamos a añadirla ahora.
+Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementada. Vamos a agregarla ahora.
 
 ## Vista post_new
 
@@ -179,7 +179,7 @@ def post_new(request):
 
 Cuando enviamos el formulario somos redirigidos a la misma vista, pero esta vez tenemos algunos datos adicionales en `request`, más específicamente en `request.POST` (el nombre no tiene nada que ver con un post del blog, se refiere a que estamos "publicando" -en inglés, posting- datos). ¿Recuerdas que en el archivo HTML la definición de `<form>` tenía la variable `method="POST"`? Todos los campos del formulario estan ahora en `request.POST`. No deberías renombrar la variable `POST` (el único nombre que también es válido para la variable `method` es `GET`, pero no tenemos tiempo para explicar cuál es la diferencia).
 
-En nuestra *view* tenemos dos posibles situaciones a contemplar. Primero: cuando accedemos a la página por primera vez y queremos un formulario en blanco. Segundo: cuando volvemos a la *view* con los datos del formulario que acabamos de escribir. Así que tenemos que añadir una condición (utilizaremos `if` para eso).
+En nuestra *view* tenemos dos posibles situaciones a contemplar. Primero: cuando accedemos a la página por primera vez y queremos un formulario en blanco. Segundo: cuando volvemos a la *view* con los datos del formulario que acabamos de escribir. Así que tenemos que agregar una condición (utilizaremos `if` para eso).
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -209,7 +209,7 @@ if form.is_valid():
     post.save()
 ```
 
-Básicamente, tenemos que hacer dos cosas aquí: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` todavía - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo el autor) y se creará una nuevo post en el blog.
+Básicamente, tenemos que hacer dos cosas aquí: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` todavía - queremos agregar el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo el autor) y se creará una nuevo post en el blog.
 
 Por último, sería genial si podemos inmediatamente ir a la página `post_detail` del nuevo post de blog, ¿no? Para hacerlo necesitamos importar algo más:
 
@@ -364,7 +364,7 @@ En `blog/templates/blog/base.html`, buscar el `div` `page-header` y la etiqueta 
 ```
     
 
-Vamos a añadir otra etiqueta `{% if %}` que hará que el enlace sólo parezca para los usuarios que hayan iniciado sesión en el admin. Ahora mismo, ¡eres sólo tú! Cambia la etiqueta `<a>` para que se parezca a esto:
+Vamos a agregar otra etiqueta `{% if %}` que hará que el enlace sólo parezca para los usuarios que hayan iniciado sesión en el admin. Ahora mismo, ¡eres sólo tú! Cambia la etiqueta `<a>` para que se parezca a esto:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

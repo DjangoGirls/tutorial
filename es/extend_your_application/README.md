@@ -6,7 +6,7 @@ Ya hemos completado todos los pasos necesarios para la creación de nuestro siti
 
 Lo primero que necesitamos en nuestro blog es, obviamente, una página para mostrar un post, ¿cierto?
 
-Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
+Ya tenemos un modelo `Post`, así que no necesitamos agregar nada a `models.py`.
 
 ## Crear un enlace al detalle de una entrada
 
@@ -126,7 +126,7 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-¡Oh no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que añadir una plantilla!
+¡Oh no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que agregar una plantilla!
 
 ## Crear una plantilla para post detail
 

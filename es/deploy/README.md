@@ -284,7 +284,7 @@ Y recuerda, ¡tu tutora está ahí para ayudarte!
 
 # ¡Estás en vivo!
 
-La página predeterminada para su sitio web debe decir "Bienvenido a Django", al igual que lo hace en su computadora. Intenta agregar `/admin/` al final de la URL y te redirigirá al panel de administración. Ingresa con tu nombre de usuario y contraseña y verás que puedes añadir nuevas entradas en el servidor.
+La página predeterminada para su sitio web debe decir "Bienvenido a Django", al igual que lo hace en su computadora. Intenta agregar `/admin/` al final de la URL y te redirigirá al panel de administración. Ingresa con tu nombre de usuario y contraseña y verás que puedes agregar nuevas entradas en el servidor.
 
 Una vez que hayas creado algunos posts en tu blog, puedes volver a tu instancia local (no la de PythonAnywhere). Desde ahí podrías trabajar en tu instancia local para hacer algunos cambios. Estos son los pasos comunes en el desarrollo web (hacer cambios locales, enviarlos a GitHub, descargarlos en el servidor web). Esto te permite trabajar y experimentar sin romper tu sitio web en vivo. Muy bueno, ¿no?
 

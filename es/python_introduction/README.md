@@ -293,7 +293,7 @@ Como puedes ver, los números de tu lista ahora están ordenados de menor a mayo
 [59, 42, 30, 19, 12, 3]
 ```
 
-Fácil, ¿no? Si quieres añadir algo a tu lista, puedes hacerlo escribiendo este comando:
+Fácil, ¿no? Si quieres agregar algo a tu lista, puedes hacerlo escribiendo este comando:
 
 {% filename %}Terminal{% endfilename %}
 ```python
