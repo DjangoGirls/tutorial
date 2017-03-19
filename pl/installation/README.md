@@ -44,6 +44,6 @@ Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed 
 
   * [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md)
 
-  * [Wprowadzenie do Pythona](../intro_to_command_line/README.md)
+  * [Wprowadzenie do Pythona](../python_introduction/README.md)
 
   * [Czym jest Django?](../django/README.md)
