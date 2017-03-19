@@ -15,7 +15,7 @@ Todo lo que necesitas hacer es encontrar un directorio en el que quieras crear e
 
 Para este tutorial usaremos un nuevo directorio `djangogirls` en tu directorio home:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ mkdir djangogirls
 $ cd djangogirls
@@ -23,7 +23,7 @@ $ cd djangogirls
 
 Haremos un virtualenv llamado `myvenv`. El comando general estará en el formato:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 -m venv myvenv
 ```
@@ -33,7 +33,7 @@ data-collapse=true ces-->
 
 Para crear un nuevo `virtualenv`, debes abrir la consola (te lo indicamos unos cuantos capítulos antes, ¿recuerdas?) y ejecuta `C:\Python35\python -m venv myvenv`. Se verá así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 ```
@@ -48,7 +48,7 @@ data-collapse=true ces-->
 Crear un `virtualenv` en Linux y OS X es tan simple como ejecutar `python3 -m venv myvenv`.
 Se verá así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 -m venv myvenv
 ```
@@ -57,7 +57,7 @@ $ python3 -m venv myvenv
 
 > __NOTA:__ En algunas versiones de Debian/Ubuntu quizás recibas el siguiente error:
 
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >    apt-get install python3-venv
@@ -65,21 +65,21 @@ $ python3 -m venv myvenv
 >```
 >
 > En este caso, siguie las instrucciones mencionadas arriba e instala el paquete `python3-venv` así:
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >$ sudo apt-get install python3-venv
 >```  
 
 > __NOTA:__ En algunas versiones de Debian/Ubuntu inicializar el entorno virtual puede producir el siguiente error:
 
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >```
 
 > Para solucionar esto, usa el comando `virtualenv` en cambio.
 
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >$ sudo apt-get install python-virtualenv
 >$ virtualenv --python=python3.5 myvenv
@@ -87,14 +87,14 @@ $ python3 -m venv myvenv
 
 > __NOTA:__ Si obtienes un error como este
 
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >E: Unable to locate package python3-venv
 >```
 
 > intenta ejecutar el siguiente comando en cambio:
 >
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >sudo apt install python3.5-venv
 >```
@@ -110,14 +110,14 @@ data-collapse=true ces-->
 
 Inicia el entorno virtual ejecutando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
 > __NOTA:__ en Windows 10 quizás obtengas un error en la consola Window PowerShell diciendo `execution of scripts is disabled on this system`. En ese caso, abre otra ventana Windows PowerShell con la opción "Run as Administrator". Luego intenta escribir lo siguiente antes de iniciar tu entorno virtual:
 >
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >     Execution Policy Change
@@ -132,7 +132,7 @@ data-collapse=true ces-->
 
 Inicia el entorno virtual ejecutando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ source myvenv/bin/activate
 ```
@@ -141,7 +141,7 @@ $ source myvenv/bin/activate
 
 > __NOTA:__ a veces `source` podría no estar disponible. En ese caso trata hacerlo de esta forma:
 >
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >$ . myvenv/bin/activate
 >```
@@ -160,14 +160,14 @@ Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django.
 
 Antes de hacer eso, deberíamos asegurarnos de que tenemos la última version de `pip`, el programa que usamos para instalar Django:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 (myvenv) ~$ pip install --upgrade pip
 ```
 
 Luego ejecuta `pip install django~=1.10.0` (nota que usamos la tilde seguido de un signo igual: `~=`) para instalar Django.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 (myvenv) ~$ pip install django~=1.10.0
 Collecting django~=1.10.0
@@ -188,7 +188,7 @@ data-collapse=true ces-->
 
 > Tu línea de comandos quizás se congele luego de que intentas instalar Django. Si esto sucede, intenta este comando en cambio:
 >
->{% filename %}command-line{% endfilename %}
+>{% filename %}Terminal{% endfilename %}
 >```
 >C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
 >```

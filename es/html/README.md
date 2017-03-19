@@ -155,14 +155,14 @@ Sería bueno ver todo esto disponible en Internet, ¿no? Hagamos otro despliegue
 
 En primer lugar, vamos a ver qué archivos han cambiado desde la última puesta en marcha (ejecute estos comandos localmente, no en PythonAnywhere):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git status
 ```
 
 Asegúrate de que estás en el directorio `djangogirls` y vamos a decirle a `git` que incluya todos los cambios dentro de este directorio:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git add --all .
 ```
@@ -171,14 +171,14 @@ $ git add --all .
 
 Antes de que subamos todos los archivos, vamos a ver qué es lo que `git` subirá (todos los archivos que `git` cargará deberían aparecer en verde):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git status
 ```
 
 Ya casi estamos, ahora es tiempo de decirle que guarde este cambio en su historial. Vamos a darle un "mensaje de commit" donde describimos lo que hemos cambiado. Puedes escribir cualquier cosa que te gustaría en esta etapa, pero es útil escribir algo descriptivo para que puedes recordar lo que has hecho en el futuro.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git commit -m "Changed the HTML for the site."
 ```
@@ -187,7 +187,7 @@ $ git commit -m "Changed the HTML for the site."
 
 Una vez hemos hecho esto, subamos (push) los cambios a Github:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git push
 ```
@@ -196,7 +196,7 @@ $ git push
 
 * Abre la [página de consolas de PythonAnywhere](https://www.pythonanywhere.com/consoles/) y ve a tu **consola Bash** (o comienza una nueva). Luego, ejecuta:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd ~/my-first-blog
 $ git pull

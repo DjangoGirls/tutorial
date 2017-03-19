@@ -43,7 +43,7 @@ data-collapse=true ces-->
 
 Es muy posible que ya tengas Python instalado de serie. Para verificar que ya lo tienes instalado (y qué versión es), abre una consola y escribe el siguiente comando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 --version
 Python 3.5.1
@@ -58,7 +58,7 @@ data-collapse=true ces-->
 
 Escribe este comando en tu consola:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ sudo apt-get install python3.5
 ```
@@ -71,7 +71,7 @@ data-collapse=true ces-->
 
 Usa este comando en tu consola:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ sudo yum install python3
 ```
@@ -83,7 +83,7 @@ data-collapse=true ces-->
 
 Usa este comando en tu consola:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ sudo dnf install python3
 ```
@@ -95,7 +95,7 @@ data-collapse=true ces-->
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ sudo zypper install python3
 ```
@@ -104,7 +104,7 @@ $ sudo zypper install python3
 
 Verifica que la instalación fue correcta abriendo la aplicación de *Terminal* y ejecutando el comando `python3`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 --version
 Python 3.5.1

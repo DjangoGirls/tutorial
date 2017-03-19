@@ -72,7 +72,7 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
 
 * Primero, sube tu código a Github
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git status
 [...]
@@ -86,7 +86,7 @@ $ git push
 
 * Luego, vuelve a entrar en [PythonAnywhere][4] y ve a tu **consola Bash** (o inicia una nueva), y ejecuta:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

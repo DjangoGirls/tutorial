@@ -22,7 +22,7 @@ Git rastrea los cambios realizados a un grupo determinado de archivos en lo que 
 
 > **Nota** Comprueba el directorio de trabajo actual con el comando `pwd` (OSX/Linux) o `cd` (Windows) antes de inicializar el repositorio. Deberías estar en la carpeta `djangogirls`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git init
 Initialized empty Git repository in ~/djangogirls/.git/
@@ -53,7 +53,7 @@ Y guárdalo como `.gitignore` en la carpeta "djangogirls".
 
 Es una buena idea utilizar el comando `git status` antes de `git add` o en cualquier momento en que no estés segura de lo que ha cambiado. Esto ayudará a evitar cualquier sorpresa, como agregar o hacer commit de archivos equivocados. El comando `git status` devuelve información sobre los archivos sin seguimiento ("untracked"), modificados, preparados ("staged"), el estado de la rama y mucho más. La salida debería ser similar a:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git status
 On branch master
@@ -73,7 +73,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comandos:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git add --all .
 $ git commit -m "My Django Girls app, first commit"
@@ -102,7 +102,7 @@ Ahora tenemos que conectar el repositorio Git de tu ordenador con el que está e
 
 Escribe lo siguiente en la consola (sustituye `<tu-usuario-github>` por el nombre de usuario que elegiste al crear tu cuenta de GitHub, pero sin los signos de mayor y menor):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 $ git push -u origin master
@@ -110,7 +110,7 @@ $ git push -u origin master
 
 Escribe tu nombre de usuario y contraseña de GitHub y deberías ver algo así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 Username for 'https://github.com': hjwp
 Password for 'https://hjwp@github.com':
@@ -142,7 +142,7 @@ Cuando te hayas registrado en PythonAnywhere serás redirigida a tu panel de con
 
 Vamos a descagar nuestro código de GitHub a PythonAnywhere mediante la creación de un "clon" del repositorio. Escribe lo siguiente en la consola de PythonAnywhere (no te olvides de utilizar tu nombre de usuario de GitHub en lugar de `<tu-usuario-github>`):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}Terminal PythonAnywhere{% endfilename %}
 ```
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 ```
@@ -150,7 +150,7 @@ $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
 Esto va a descargar una copia de tu código en PythonAnywhere. Compruébalo escribiendo `tree my-first-blog`:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}Terminal PythonAnywhere{% endfilename %}
 ```
 $ tree my-first-blog
 my-first-blog/
@@ -175,7 +175,7 @@ my-first-blog/
 
 Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonAnywhere. En la consola Bash, escribe:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}Terminal PythonAnywhere{% endfilename %}
 ```
 $ cd my-first-blog
 
@@ -201,7 +201,7 @@ Aquí hay otra cosa que es diferente entre tu computadora y el servidor: éste u
 
 Podemos inicializar la base de datos en el servidor igual que lo hicimos en nuestra computadora, con `migrate` y `createsuperuser`:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}Terminal PythonAnywhere{% endfilename %}
 ```
 (myvenv) $ python manage.py migrate
 Operations to perform:

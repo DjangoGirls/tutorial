@@ -46,7 +46,7 @@ Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
 Si estás en Mac o Linux, probablemente verás `$`, así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $
 ```
@@ -57,7 +57,7 @@ $
 
 En Windows, es un signo así `>`, como este:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 >
 ```
@@ -77,7 +77,7 @@ Vamos a empezar con algo simple. Escribe este comando:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ whoami
 ```
@@ -87,7 +87,7 @@ $ whoami
 
 <!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > whoami
 ```
@@ -96,7 +96,7 @@ $ whoami
 
 Y pulsa `intro`. Este es nuestro resultado:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ whoami
 olasitarska
@@ -117,7 +117,7 @@ Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este co
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska
@@ -130,7 +130,7 @@ $ pwd
 
 <!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska
@@ -149,7 +149,7 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ ls
 Applications
@@ -163,7 +163,7 @@ Music
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > dir
  Directory of C:\Users\olasitarska
@@ -183,7 +183,7 @@ Ahora, vayamos a nuestro directorio Desktop, el escritorio:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd Desktop
 ```
@@ -192,7 +192,7 @@ $ cd Desktop
 <!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd Desktop
 ```
@@ -202,7 +202,7 @@ Comprueba si realmente ha cambiado:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
@@ -211,7 +211,7 @@ $ pwd
 
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
@@ -230,7 +230,7 @@ C:\Users\olasitarska\Desktop
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ mkdir practice
 ```
@@ -239,7 +239,7 @@ $ mkdir practice
 <!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > mkdir practice
 ```
@@ -259,7 +259,7 @@ Un pequeño reto para ti: en el recién creado directorio `practice` crea un dir
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd practice
 $ mkdir test
@@ -271,7 +271,7 @@ test
 <!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd practice
 > mkdir test
@@ -292,7 +292,7 @@ En primer lugar, tenemos que volver al escritorio:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd ..
 ```
@@ -301,7 +301,7 @@ $ cd ..
 <!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd ..
 ```
@@ -313,7 +313,7 @@ Revisa dónde estás:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
@@ -323,7 +323,7 @@ $ pwd
 <!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
@@ -336,7 +336,7 @@ Es el momento de eliminar el directorio `practice`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ rm -r practice
 ```
@@ -345,7 +345,7 @@ $ rm -r practice
 <!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > rmdir /S practice
 practice, Are you sure <Y/N>? Y
@@ -356,7 +356,7 @@ practice, Are you sure <Y/N>? Y
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ ls
 ```
@@ -365,7 +365,7 @@ $ ls
 <!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > dir
 ```
@@ -378,7 +378,7 @@ $ ls
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ exit
 ```
@@ -387,7 +387,7 @@ $ exit
 <!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > exit
 ```

@@ -14,7 +14,7 @@ Una vez que estés lista, sigue las siguientes instrucciones.
 
 Queremos abrir una consola de Python, así que escribe `python` en Windows o `python3` en Mac OS/Linux y pulsa `intro`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3
 Python 3.5.1 (...)
@@ -30,7 +30,7 @@ Si deseas salir de la consola de Python en cualquier momento, simplemente escrib
 
 Por ahora no queremos salir de la consola de Python. Queremos aprender más sobre ella. Empecemos con algo muy sencillo. Por ejemplo, intenta escribir algo matemático, como `2 + 3` y presiona `intro`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 2 + 3
 5
@@ -44,7 +44,7 @@ Por ahora no queremos salir de la consola de Python. Queremos aprender más sobr
 
 Para realizar cálculos exponenciales, por ejemplo, 2 a la potencia de 3, escribimos:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 2 ** 3
 8
@@ -58,7 +58,7 @@ Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué m
 
 ¿Cuál es tu nombre? Escribe tu nombre de pila entre comillas así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> "Ola"
 'Ola'
@@ -68,7 +68,7 @@ Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué m
 
 Las cadenas pueden ser concatenadas. Prueba esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> "Hi there " + "Ola"
 'Hi there Ola'
@@ -76,7 +76,7 @@ Las cadenas pueden ser concatenadas. Prueba esto:
 
 También puedes multiplicar las cadenas por un número:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> "Ola" * 3
 'OlaOlaOla'
@@ -86,7 +86,7 @@ Si necesitas poner un apóstrofe dentro de la cadena, tienes dos formas de hacer
 
 Usar comillas dobles:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> "Runnin' down the hill"
 "Runnin' down the hill"
@@ -94,7 +94,7 @@ Usar comillas dobles:
 
 o escapar el apóstrofe con una barra invertida (`\`):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 'Runnin\' down the hill'
 "Runnin' down the hill"
@@ -102,7 +102,7 @@ o escapar el apóstrofe con una barra invertida (`\`):
 
 Bien, ¿eh? Para ver tu nombre en letras mayúsculas, simplemente escribe:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> "Ola".upper()
 'OLA'
@@ -112,7 +112,7 @@ Bien, ¿eh? Para ver tu nombre en letras mayúsculas, simplemente escribe:
 
 Si quisieras saber el número de letras que contiene tu nombre, ¡también hay una __función__ para eso!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len("Ola")
 3
@@ -135,7 +135,7 @@ Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje d
 
 Vamos a intentar algo nuevo. ¿Podemos obtener la longitud de un número de la misma manera que pudimos averiguar la longitud de nuestro nombre? Escribe `len(304023)` y pulsa `intro`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len(304023)
 Traceback (most recent call last):
@@ -145,7 +145,7 @@ TypeError: object of type 'int' has no len()
 
 ¡Tenemos nuestro primer error! Dice que los objetos de tipo "int" (números enteros) no tienen longitud. ¿Qué podemos hacer ahora? ¿Quizá podamos escribir el número como una cadena? Las cadenas tienen longitud, ¿verdad?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len(str(304023))
 6
@@ -164,7 +164,7 @@ Un concepto importante en programación son las variables. Una variable no es m�
 
 Supongamos que queremos crear una nueva variable llamada `name`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> name = "Ola"
 ```
@@ -173,7 +173,7 @@ Supongamos que queremos crear una nueva variable llamada `name`:
 
 Como habrás notado, el programa no devuelve nada como lo hacía antes. ¿Cómo sabemos que la variable existe realmente? Simplemente escribe `name` y pulsa `intro`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> name
 'Ola'
@@ -181,7 +181,7 @@ Como habrás notado, el programa no devuelve nada como lo hacía antes. ¿Cómo 
 
 ¡Genial! ¡Tu primera variable :)! Siempre puedes cambiar a lo que se refiere:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> name = "Sonja"
 >>> name
@@ -191,7 +191,7 @@ Como habrás notado, el programa no devuelve nada como lo hacía antes. ¿Cómo 
 
 También puedes usarla dentro de funciones:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len(name)
 5
@@ -199,7 +199,7 @@ También puedes usarla dentro de funciones:
 
 Increíble, ¿verdad? Por supuesto, las variables pueden ser cualquier cosa, ¡también números! Prueba esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> a = 4
 >>> b = 6
@@ -209,7 +209,7 @@ Increíble, ¿verdad? Por supuesto, las variables pueden ser cualquier cosa, ¡t
 
 Pero ¿qué pasa si usamos el nombre equivocado? ¿Puedes adivinar qué pasaría? ¡Vamos a probar!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> city = "Tokyo"
 >>> ctiy
@@ -227,7 +227,7 @@ NameError: name 'ctiy' is not defined
 
 Intenta esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> name = 'Maria'
 >>> name
@@ -246,7 +246,7 @@ Además de cadenas y enteros, Python tiene toda clase de tipos de objetos difere
 
 Anímate y crea una lista:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> []
 []
@@ -254,14 +254,14 @@ Anímate y crea una lista:
 
 Sí, esta lista está vacía. No es muy útil, ¿verdad? Vamos a crear una lista de números de lotería. No queremos repetir todo el tiempo, así que la pondremos también en una variable:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
 Muy bien, ¡tenemos una lista! ¿Qué podemos hacer con ella? Vamos a ver cuántos números de lotería hay en la lista. ¿Tienes alguna idea de qué función deberías usar para eso? ¡Ya lo sabes!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len(lottery)
 6
@@ -269,14 +269,14 @@ Muy bien, ¡tenemos una lista! ¿Qué podemos hacer con ella? Vamos a ver cuánt
 
 ¡Sí! `len()` puede darte el número de objetos en una lista. Útil, ¿verdad? Tal vez la ordenemos ahora:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> lottery.sort()
 ```
 
 No devuelve nada, sólo ha cambiado el orden en que los números aparecen en la lista. Vamos a imprimirla otra vez y ver que ha pasado:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
@@ -286,7 +286,7 @@ Como puedes ver, los números de tu lista ahora están ordenados de menor a mayo
 
 ¿Te gustaría invertir ese orden? ¡Vamos a hacerlo!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> lottery.reverse()
 >>> print(lottery)
@@ -295,7 +295,7 @@ Como puedes ver, los números de tu lista ahora están ordenados de menor a mayo
 
 Fácil, ¿no? Si quieres añadir algo a tu lista, puedes hacerlo escribiendo este comando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> lottery.append(199)
 >>> print(lottery)
@@ -304,7 +304,7 @@ Fácil, ¿no? Si quieres añadir algo a tu lista, puedes hacerlo escribiendo est
 
 Si deseas mostrar sólo el primer número, puedes hacerlo mediante el uso de __indexes__ (en español, índices). Un índice es el número que te dice dónde en una lista aparece un ítem. Los programadores prefieren comenzar a contar desde 0, por lo tanto el primer objeto en tu lista está en el indice 0, el próximo está en el 1, y así sucesivamente. Intenta esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> print(lottery[0])
 59
@@ -316,7 +316,7 @@ Como puedes ver, puedes acceder a diferentes objetos en tu lista utilizando el n
 
 Para borrar algo de tu lista necesitas usar __indices__ como aprendimos anteriormente y el método `pop()`. Vamos a ver un ejemplo y reforzar lo que aprendimos anteriormente; vamos a borrar el primer número de nuestra lista.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
@@ -339,7 +339,7 @@ Puedes encontrar una lista de todos los métodos disponibles para listas en este
 
 Un diccionario es similar a una lista, pero accedes a valores usando una clave en vez de un índice. Una clave puede ser cualquier cadena o número. La sintaxis para definir un diccionario vacío es:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> {}
 {}
@@ -349,7 +349,7 @@ Esto demuestra que acabas de crear un diccionario vacío. ¡Hurra!
 
 Ahora, trata escribiendo el siguiente comando (intenta reemplazando con propia información):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
@@ -362,7 +362,7 @@ Con este comando, acabas de crear una variable `participant` con tres pares clav
 
 Puedes verificar el contenido de claves individuales con esta sintaxis:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> print(participant['name'])
 Ola
@@ -372,7 +372,7 @@ Mira, es similar a una lista. Pero no necesitas recordar el índice - sólo el n
 
 ¿Qué pasa si le pedimos a Python el valor de una clave que no existe? ¿Puedes adivinar? ¡Pruébalo y verás!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> participant['age']
 Traceback (most recent call last):
@@ -389,14 +389,14 @@ KeyError: 'age'
 
 Los diccionarios, como las listas, son *mutables*, lo que quiere decir que pueden ser modificados después de ser creados. Puedes agregar nuevos pares clave/valor a un diccionario luego de crearlo, como:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> participant['favorite_language'] = 'Python'
 ```
 
 Como las listas, usando el método `len()` en los diccionarios devulve el npumero de pares clave-valor en el diccionario. Adelante escribe el comando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> len(participant)
 4
@@ -406,7 +406,7 @@ Espero tenga sentido hasta ahora. :) ¿Lista para más diversión con los diccio
 
 Puedes utilizar el método `pop()` para borrar un elemento en el diccionario. Por ejemplo, si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, sólo tienes que escribir el siguiente comando:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
 >>> participant
@@ -417,7 +417,7 @@ Como puedes ver en la salida, el par de clave-valor correspondiente a la clave '
 
 Además de esto, también puedes cambiar un valor asociado a una clave ya creada en el diccionario. Teclea:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> participant['country'] = 'Germany'
 >>> participant
@@ -443,7 +443,7 @@ Como puedes ver, el valor de la clave `'country'` ha sido modificado de `'Poland
 
 Una gran parte de la programación incluye comparar cosas. ¿Qué es lo más fácil para comparar? Números, por supuesto. Vamos a ver cómo funciona:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 5 > 2
 True
@@ -463,7 +463,7 @@ Le dimos a Python algunos números para comparar. Como puedes ver, Python no só
 
 Da dos tareas más a Python:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 6 >= 12 / 2
 True
@@ -480,7 +480,7 @@ False
 
 ¡Genial! ¿Quieres hacer uno mas? Intenta esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 6 > 2 and 2 < 3
 True
@@ -497,7 +497,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
 
 ¿Has oído la expresión "comparar manzanas con naranjas"? Vamos a probar el equivalente en Python:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> 1 > 'django'
 Traceback (most recent call last):
@@ -519,7 +519,7 @@ Pero para que Python entienda esto, siempre necesitas escribir los como 'True' (
 
 Los valores booleanos pueden ser variables, también. Ve el siguiente ejemplo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> a = True
 >>> a
@@ -528,7 +528,7 @@ True
 
 También puedes hacerlo de esta manera:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> a = 2 > 5
 >>> a
@@ -555,7 +555,7 @@ Hasta ahora hemos escrito todo nuestro código Python en el intérprete, lo cual
 
 Para salir del intérprete de Python que hemos estado usando, simplemente escribe la función `exit()`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 >>> exit()
 $
@@ -584,7 +584,7 @@ data-collapse=true ces-->
 
 En una Mac, el comando se verá algo como esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
@@ -595,7 +595,7 @@ data-collapse=true ces-->
 
 En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
@@ -606,7 +606,7 @@ $ cd ~/Desktop
 
 Y en Windows, será así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
@@ -616,7 +616,7 @@ Si te quedas atascada, sólo pide ayuda.
 
 Ahora usa Python para ejecutar el código en el archivo así:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hello, Django girls!
@@ -624,7 +624,7 @@ Hello, Django girls!
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 > python python_intro.py
 ```
@@ -646,7 +646,7 @@ if 3 > 2:
 
 Si lo guardáramos y lo ejecutáramos, veríamos un error como este:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 File "python_intro.py", line 2
@@ -666,7 +666,7 @@ if 3 > 2:
 
 Guárdalo y ejecútalo de nuevo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```python
 $ python3 python_intro.py
 It works!
@@ -688,7 +688,7 @@ else:
 
 Cuando esto se ejecute imprimirá:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 5 is indeed greater than 2
@@ -709,7 +709,7 @@ else:
 
 y al ejecutarlo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hey Sonja!
@@ -738,7 +738,7 @@ else:
 
 Python corre a través de cada prueba en secuencia e imprime:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Perfect, I can hear all the details
@@ -793,7 +793,7 @@ Te preguntarás por qué hemos escrito el nombre de la función en la parte infe
 
 Ejecutemos esto y veamos qué sucede:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hi there!
@@ -829,7 +829,7 @@ hi()
 
 Recuerda: la función `print` está indentada cuatro espacios dentro de la condición `if`. Esto es porque la función se ejecutan cuando la condición se cumple. Vamos a ver cómo funciona:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Traceback (most recent call last):
@@ -849,7 +849,7 @@ hi("Ola")
 
 Y lo ejecutamos de nuevo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hi Ola!
@@ -864,7 +864,7 @@ hi("Sonja")
 
 Y lo ejecutamos:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hi Sonja!
@@ -872,7 +872,7 @@ Hi Sonja!
 
 Ahora, ¿qué crees que suceda si escribes otro nombre ahí? (No Ola ni Sonja). Inténtalo y ve si tienes razón. Debería imprimir esto:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 Hi anonymous!
 ```
@@ -891,7 +891,7 @@ hi("Rachel")
 
 Ahora vamos a llamar al código:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hi Rachel!
@@ -936,7 +936,7 @@ for name in girls:
 
 Y cuando lo ejecutamos:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ python3 python_intro.py
 Hi Rachel!
@@ -963,7 +963,7 @@ for i in range(1, 6):
 
 Lo que imprimirá:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 1
 2

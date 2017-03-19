@@ -24,7 +24,7 @@ Para iniciar sesión, deberás crear un *superusuario*, que es un usuario que ti
 
 Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. No te preocupes si no puedes ver la contraseña mientras la escribes, así es como se supone que debe ser. Simplemente escríbela y pulsa `intro` para continuar. La salida de este comando debería verse así (nombre de usuario y dirección de correo electrónico deberían ser los tuyos):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py createsuperuser
 Username: admin

@@ -165,7 +165,7 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ git status
 $ git add --all .
@@ -176,7 +176,7 @@ $ git push
 
 Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

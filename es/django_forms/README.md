@@ -411,7 +411,7 @@ $ git push
 
 * Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

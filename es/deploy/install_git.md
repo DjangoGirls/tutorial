@@ -21,7 +21,7 @@ Descarga Git de [git-scm.com](https://git-scm.com/) y solo sigue las instruccion
 <!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```bash
 $ sudo apt-get install git
 ```
@@ -31,7 +31,7 @@ $ sudo apt-get install git
 <!--sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```bash
 $ sudo yum install git
 ```
@@ -41,7 +41,7 @@ $ sudo yum install git
 <!--sec data-title="Fedora 22+" data-id="git_install_fedora_22"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```bash
 $ sudo dnf install git
 ```
@@ -51,7 +51,7 @@ $ sudo dnf install git
 <!--sec data-title="openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Terminal{% endfilename %}
 ```bash
 $ sudo zypper install git
 ```
