@@ -1,6 +1,6 @@
 # ¿Qué sigue?
 
-¡Date muchas felicitaciones! **¡Eres increíble!**. ¡Estamos orgullosos! <3
+¡Date muchas felicitaciones! **¡Eres increíble!** ¡Estamos orgullosas! <3
 
 ### ¿Qué hacer ahora?
 
@@ -15,7 +15,7 @@ Después de eso, asegúrate de:
 
 ### ¿Me puedes recomendar recursos adicionales?
 
-¡Sí! En primer lugar, sigue adelante y prueba nuestro libro llamado [Django Girls Tutorial: Extensiones][3].
+¡Sí! En primer lugar, sigue adelante y prueba nuestro otro libro llamado [Tutorial de Django Girls: Extensiones][3].
 
  [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
 
