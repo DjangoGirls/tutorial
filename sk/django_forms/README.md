@@ -17,8 +17,7 @@ blog
 
 OK, otvorme to a napíšme tento kód:
 
-```
-python
+```python
 from django import forms
 
 from .models import Post
