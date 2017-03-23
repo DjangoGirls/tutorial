@@ -26,14 +26,14 @@
 
 > 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시입니다)
 >
-> **Note** 위 명령을 입력할 때 `django-admin` 또는 `django-admin.py`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$`과 `(myvenv) C:\Users\Name\djangogirls>` 부분은 커맨드라인에 입력을 가져오게 하는 메세지(프롬트프 prompt) 입니다.
+> **Note** 위 명령을 입력할 때 `django-admin` 또는 `django-admin.py`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$`과 `(myvenv) C:\Users\Name\djangogirls>` 부분은 커맨드라인에 입력을 가져오게 하는 메세지(프롬프트 prompt) 입니다.
 
 `django-admin.py`은 스크립트로 디렉토리와 파일들을 생성합니다. 스크립트 실행 후에는 아래와 같이 새로 만들어진 디렉토리 구조를 볼 수 있을 거에요.
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
+    └───mysite
+            settings.py
             urls.py
             wsgi.py
             __init__.py
@@ -85,7 +85,7 @@ Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당
     }
 ```
 
-블로그에 데이터베이스를 생성하기 위해서 콘솔창에서 아래 코드를 실행하세요: `python manage.py migrate` (이 명령을 실행하기 위해서는 `djangogirls`디렉토리 안에 있는 `manage.py` 필요합니다) 잘 작동되면, 아래와 같은 내용이 나옵니다. :
+블로그에 데이터베이스를 생성하기 위해서 콘솔창에서 아래 코드를 실행하세요: `python manage.py migrate` (이 명령을 실행하기 위해서는 `djangogirls`디렉토리 안에 있는 `manage.py` 가 필요합니다) 잘 작동되면, 아래와 같은 내용이 나옵니다. :
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -126,7 +126,7 @@ Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당
     http://127.0.0.1:8000/
 
 
-웹서버는 멈출 때까지 명령 프롬프를 실행할 거에요. 실행 중 다른 명령을 입력하려면 새로운 창을 열어 virtualenv를 활성화시키면 됩니다. 웹 서버를 중지하려면, 실행되고 있는 창으로 돌아가 CTRL+C를 동시에 누르세요. (윈도우라면, Ctrl+Break를 눌러야 할지도 모릅니다)
+웹서버는 멈출 때까지 명령 프롬프트를 실행할 거에요. 실행 중 다른 명령을 입력하려면 새로운 창을 열어 virtualenv를 활성화시키면 됩니다. 웹 서버를 중지하려면, 실행되고 있는 창으로 돌아가 CTRL+C를 동시에 누르세요. (윈도우라면, Ctrl+Break를 눌러야 할지도 모릅니다)
 
 축하해요! 여러분은 방금 웹 서버를 활용한 첫 웹사이트를 만들었어요! 정말 멋지죠?
 
