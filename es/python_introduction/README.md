@@ -622,7 +622,7 @@ $ python3 python_intro.py
 Hello, Django girls!
 ```
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Nota: en Windows 'python3' no es reconocido como un comand. En cambio, utiliza 'python' para ejecutar el archivo:
 
 {% filename %}Terminal{% endfilename %}
 ```python

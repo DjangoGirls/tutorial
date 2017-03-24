@@ -12,7 +12,7 @@ Si lo encuentra útil, puede seguir este capítulo también. Pero si quieres emp
 
 En el taller construiremos un blog, y hay algunas tareas de configuración en el tutorial que sería bueno hacer de antemano para que estés listo para comenzar a codificar en el día.
 
-<!--sec data-title="Chromebook setup (if you're using one)"
+<!--sec data-title="Configuración de Chromebook (si estás usando una)"
 data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->

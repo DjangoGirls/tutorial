@@ -120,6 +120,6 @@ Si intentas visitar http://127.0.0.1:8000/ ahora, encontrarás una especie de me
 
 ![Error](images/error1.png)
 
-Tu consola está mostrando un error, pero no te preocupes. De hecho, es de mucha ayuda: te está diciendo que no hay ningún __atributo 'post_list'__. Ese es el nombre de la *vista* que Django está tratando de encontrar y user, pero no la hemos creado aún. En este momento tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso.
+Tu consola está mostrando un error, pero no te preocupes. De hecho, es de mucha ayuda: te está diciendo que no hay ningún __atributo 'post_list'__. Ese es el nombre de la *vista* que Django está tratando de encontrar y usar, pero no la hemos creado aún. En este momento tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso.
 
 > Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.10/topics/http/urls/

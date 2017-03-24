@@ -84,7 +84,7 @@ $ git commit -m "Modified templates to display posts from database."
 $ git push
 ```
 
-* Luego, vuelve a entrar en [PythonAnywhere][4] y ve a tu **consola Bash** (o inicia una nueva), y ejecuta:
+* Luego, vuelve a entrar en [PythonAnywhere](https://www.pythonanywhere.com/) y ve a tu **consola Bash** (o inicia una nueva), y ejecuta:
 
 {% filename %}Terminal{% endfilename %}
 ```
