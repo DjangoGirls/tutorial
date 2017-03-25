@@ -136,7 +136,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Note: 'cd' stands for 'current directory'.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
