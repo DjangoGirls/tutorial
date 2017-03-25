@@ -75,8 +75,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce príkazy:
 
 ```
- git add -A .
- git commit -m "My Django Girls app, first commit"
+$ git add -A .
+$ git commit -m "My Django Girls app, first commit"
 [...]
 13 files changed, 200 insertions(+)
 create mode 100644 .gitignore
