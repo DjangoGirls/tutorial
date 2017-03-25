@@ -211,10 +211,10 @@ from django.shortcuts import redirect
 Přidej to na samý začátek souboru. A nyní můžeš říci: Jdi na stránku `post_detail` s nově vytvořeným příspěvkem.
 
 ```python
-return redirect('blog.views.post_detail', pk=post.pk)
+return redirect('post_detail', pk=post.pk)
 ```  
 
-`blog.views.post_detail` je název pohledu, na který chceme jít. Pamatuj si, že tento *view* vyžaduje proměnnou `pk`. Pro předání do view použijeme `pk=post.pk`, kde `post` je nově vytvořený příspěvek!
+`post_detail` je název pohledu, na který chceme jít. Pamatuj si, že tento *view* vyžaduje proměnnou `pk`. Pro předání do view použijeme `pk=post.pk`, kde `post` je nově vytvořený příspěvek!
 
 Už jsme si toho řekly hodně, ale pravděpodobně chceš vidět, jak nyní celý *view* vypadá nyní, nemám pravdu?
 
@@ -227,7 +227,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})

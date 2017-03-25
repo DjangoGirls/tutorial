@@ -211,10 +211,10 @@
 Добавь эту строку в начало файла. Теперь мы можем сделать переадресацию на страницу `post_detail` для созданной записи.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail`это имя представления, которое нам необходимо. Помнишь, что это *представление* требует переменную `pk`? Чтобы передать её представлению мы используем аргумент `pk=post.pk`, где `post` - это новая запись в блоге!
+`post_detail`это имя представления, которое нам необходимо. Помнишь, что это *представление* требует переменную `pk`? Чтобы передать её представлению мы используем аргумент `pk=post.pk`, где `post` - это новая запись в блоге!
 
 Хорошо, мы многое обсудили, пора взглянуть на *представление* полностью, верно?
 
@@ -227,7 +227,7 @@
                 post.author = request.user
                 post.published_date = timezone.now()
                 post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
+                return redirect('post_detail', pk=post.pk)
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -306,7 +306,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
                 post.author = request.user
                 post.published_date = timezone.now()
                 post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
+                return redirect('post_detail', pk=post.pk)
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
