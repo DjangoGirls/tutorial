@@ -322,6 +322,7 @@ To delete something from your list you will need to use __indexes__ as we learne
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -408,6 +409,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
