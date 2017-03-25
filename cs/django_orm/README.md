@@ -121,7 +121,11 @@ Nebo možná chceme vidět všechny příspěvky, jež mají slovo 'titulek' v p
 
 Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to vyfiltrováním všech příspěvků, které mají nastavené `published_date` na nějaké uplynulé datum:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+```
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
 
 Bohužel příspěvek, který jsme přidali pomocí Python konzole, ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:
 
