@@ -30,7 +30,7 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email again ever).
+Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
