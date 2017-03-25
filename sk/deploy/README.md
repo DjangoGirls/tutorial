@@ -185,10 +185,10 @@ Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(mvenv) $  pip install django whitenoise
+(mvenv) $  pip install django==1.8 whitenoise
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.8 whitenoise-2.0
 ```
 
 > **Poznámka:** Krok `pip install` môže trvať aj niekoľko minút. Trpezlivosť, trpezlivosť! Ale ak to trvá dlhšie ako 5 minút, niečo nie je v poriadku. Spýtaj sa svojho tútora.
