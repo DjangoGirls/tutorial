@@ -44,6 +44,6 @@ Gratulujeme, právě sis zřídila všechny účty a nastavila vše, co potřebu
 
   * [Úvod do příkazového řádku](../intro_to_command_line/README.md)
 
-  * [Úvod do Pythonu](../intro_to_command_line/README.md)
+  * [Úvod do Pythonu](../python_introduction/README.md)
 
   * [Co je Django?](../django/README.md)

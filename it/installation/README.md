@@ -44,6 +44,6 @@ Complimenti, ora sei pronta! Se hai un po' di tempo prima del workshop, potrebbe
 
   * [Introduzione alla riga di comando](../intro_to_command_line/README.md)
 
-  * [Introduzione a Python](../intro_to_command_line/README.md)
+  * [Introduzione a Python](../python_introduction/README.md)
 
   * [Che cos'è Django?](../django/README.md)

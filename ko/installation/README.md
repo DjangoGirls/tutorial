@@ -44,6 +44,6 @@
 
   * [커맨드라인(command line) 시작하기](../intro_to_command_line/README.md)
 
-  * [파이썬(python) 시작하기](../intro_to_command_line/README.md)
+  * [파이썬(python) 시작하기](../python_introduction/README.md)
 
   * [Django란 무엇일까요?](../django/README.md)
