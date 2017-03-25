@@ -31,10 +31,10 @@ Git sleduje zmeny na konkrétnej množine súborov, v niečom, čo sa nazýva ú
 > **Poznámka** Skontroluj si aktuálny pracovný adresár s príkazom`pwd` v OSX/Linux alebo `cd` vo Windowse pred inicializáciou úložiska. Mala by si byť v priečinku `djangogirls`.
 
 ```
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Your Name"
+$ git config --global user.email you@example.com
 ```
 
 Inicializácia git repozitára je niečo, čo musíme urobiť len raz za projekt (a už nikdy nebudeš musieť znovu zadať užívateľské meno a e-mail).
@@ -42,11 +42,11 @@ Inicializácia git repozitára je niečo, čo musíme urobiť len raz za projekt
 Git bude sledovať zmeny všetkých súborov a priečinkov v tomto adresári, ale sú aj niektoré súbory, ktoré chceme ignorovať. To urobíme tak, že vytvoríme súbor s názvom `.gitignore` v základnom adresári. Otvor si editor a vytvor nový súbor s týmto obsahom:
 
 ```
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    .DS_Store
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
 ```
 
 A ulož ho ako `.gitignore` do hlavného adresára "djangogirls".
@@ -56,32 +56,32 @@ A ulož ho ako `.gitignore` do hlavného adresára "djangogirls".
 Vždy je dobré použiť príkaz `git status` pred `git add` alebo kedykoľvek, keď si nebudeš istá, čo sa zmenilo. To ti pomôže vyhnúť sa prekvapeniam ako napríklad pridanie nesprávnych súborov. Príkaz `git status` dáva informácie o nesledovaných (untracked) či zmenených (modified) súboroch, alebo súboroch pripravených na zmenu (staged), o stave vetvy a veľa ďalšieho. Výstup by mal vyzerať takto nejako:
 
 ```
-    $ git status
-    On branch master
+$ git status
+On branch master
 
-    Initial commit
+Initial commit
 
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
 
-            .gitignore
-            blog/
-            manage.py
-            mysite/
+        .gitignore
+        blog/
+        manage.py
+        mysite/
 
-    nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce príkazy:
 
 ```
-    $ git add -A .
-    $ git commit -m "My Django Girls app, first commit"
-     [...]
-     13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-     [...]
-     create mode 100644 mysite/wsgi.py
+$ git add -A .
+$ git commit -m "My Django Girls app, first commit"
+[...]
+13 files changed, 200 insertions(+)
+create mode 100644 .gitignore
+[...]
+create mode 100644 mysite/wsgi.py
 ```
 
 ## Prenos nášho kódu na GitHub
