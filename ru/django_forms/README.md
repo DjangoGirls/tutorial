@@ -45,7 +45,7 @@
 Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `page-header`:
 
 ```html
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 Обрати внимание, что мы назвали новое представление `post_new`.
@@ -64,7 +64,7 @@
         </head>
         <body>
             <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
             <div class="content container">
@@ -349,7 +349,7 @@ Let's open a `blog/views.py` and add at the very end of the file:
 В файле `blog/templates/blog/base.html`, найди `page-header` `div` и тег &lta&gt который мы добавили ранее. Должно выглядеть примерно так:
 
 ```html
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
 Мы добавим сюда ещё один тэг `{% if %}` чтобы ссылка показывалась только пользователям, вошедшим в админку. То есть, пока что только тебе! Измени тег `< >`, чтобы получилось так:
