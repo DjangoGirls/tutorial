@@ -161,7 +161,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow button three times and hit `enter`):
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
 
 {% filename %}command-line{% endfilename %}
 ```python
