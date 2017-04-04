@@ -41,7 +41,7 @@ Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdad
 Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 É uma lista dos posts que criamos anteriormente! Criamos esses posts usando a interface de administração do Django. No entanto, agora queremos criar novas mensagens utilizando o python, então como é que fazemos isso?
@@ -63,7 +63,7 @@ Primeiro vamos importar o modelo User:
 Quais usuários temos no nosso banco de dados? Experimente isso:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 É o superusuário que criamos anteriormente! Vamos obter uma instância de usuário agora:
@@ -81,7 +81,7 @@ Agora finalmente podemos criar nossa primeira postagem:
 Viva! Quer ver se funcionou?
 
     >>> Post.objects.all()
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
     
 
 ### Adicione mais postagens

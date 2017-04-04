@@ -41,7 +41,7 @@
 这很简单： 我们从 `blog.models` 导入 `Post` 的模型。让我们试着再一次显示所有的帖子：
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 这是我们之前创建的文章的 list 列表！我们通过使用Django admin界面创建了这些文章。但是我们现在想通过Python来创建新的文章，那么我们应该如何做呢？
@@ -63,7 +63,7 @@
 我们在数据库中有哪些用户？试试这个：
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 这是一个我们之前创建的超级用户！让我们现在获取一个用户实例：
@@ -81,7 +81,7 @@
 哈哈！要检查是否有效吗？
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 就是这样，又一个文章在列表里面！
