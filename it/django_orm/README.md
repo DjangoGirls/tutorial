@@ -41,7 +41,7 @@ Ops! È comparso un errore. Ci dice che non c'è nessun Post. È corretto -- ci 
 È semplice: importiamo il modello `Post` da `blog.models`. Proviamo a rendere di nuovo visibili tutti i post:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
 
 
 È una lista di post che abbiamo creato prima! Abbiamo creato questi post usando l'interfaccia di ammisnistrazione di Django. Comunque sia, ora vogliamo creare nuovi post usando Python, quindi come lo facciamo?
@@ -63,7 +63,7 @@ Importiamo il modello User prima:
 Quali utenti abbiamo nel nostro database? Prova questo:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
 
 
 È il superuser che abbiamo creato prima! Ora prendiamo un'istanza del user:
@@ -81,7 +81,7 @@ Adesso possiamo finalmente creare il nostro post:
 Evviva! Vuoi controllare se funziona?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 
 
 Eccolo, un altro post nell'elenco!

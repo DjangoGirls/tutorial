@@ -41,7 +41,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 간단합니다. : 우리는 `Post`모델을 `blog.models`에서 불러왔어요. 이제 모든 글들을 출력해봅시다.
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
 
 
 우리가 만들었던 그 글 목록이 나타났네요! 장고 관리자 인터페이스로 만들었던 것들이에요. 그런데 파이썬으로 새 글을 포스팅하려면, 어떻게 해야할까요?
@@ -63,7 +63,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 데이터베이스에서 user는 어떤 일을 할까요? 함께 알아봅시다. :
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
 
 
 슈퍼유저로 등록했었던 그 사용자군요! 이제 이 사용자의 인스턴스(instance)를 가져와 봅시다. :
@@ -81,7 +81,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 만세! 그런데 제대로 작동했는지 확인해봐야죠?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 
 
 보세요, 목록에 게시글 하나가 더 늘었네요!

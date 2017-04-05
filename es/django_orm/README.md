@@ -41,7 +41,7 @@ Vamos a mostrar todos nuestros posts primero. Puedes hacerlo con el siguiente co
 Esto es simple: importamos el modelo `Post` de `blog.models`. Vamos a intentar mostrar todos los posts nuevamente:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 Esta es una lista de las posts creadas anteriormente. Hemos creado estos posts usando la interfaz del administrador de Django. Sin embargo, ahora queremos crear nuevos posts usando Python, ¿cómo lo hacemos?
@@ -63,7 +63,7 @@ Primero importemos el modelo User:
 ¿Qué usuarios tenemos en nuestra base de datos? Veamos:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 Este es el super usuario que creamos anteriormente, Vamos a obtener una instancia de ese usuario ahora:
@@ -81,7 +81,7 @@ Ahora finalmente podemos crear nuestro primer post:
 ¡Hurra! ¿Quieres probar si funcionó?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 ### Agrega más posts

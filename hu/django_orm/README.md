@@ -41,7 +41,7 @@ Hoppá, egy hiba! Azt mondja, hogy nincs olyan, hogy Post. Igaza van -- elfelejt
 Ez egyszerű: importáljuk a `Post` modellt a `blog.models`-ből. Próbáljuk meg újra megjeleníteni a Post-okat:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 Egy lista a posztokból, amiket korábban megírtál! Ezeket még a Django admin felületén hoztad létre. Viszont ugyanezt meg tudod tenni a Python segítségével is. De vajon hogyan?
@@ -63,7 +63,7 @@ Először importáljuk az User modellt:
 Milyen felhasználók vannak az adatbázisban? Próbáld meg ezt:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 Ez a superuser, amit korábban hoztál létre! Most vegyük ennek a felhasználónak egy instance-ét:
@@ -81,7 +81,7 @@ Most pedig végre létrehozhatjuk a posztot:
 Hurrá! Meg akarod nézni, hogy működött-e?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 Ott is van, egy újabb poszt a listában!

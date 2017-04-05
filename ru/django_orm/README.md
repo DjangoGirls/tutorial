@@ -41,7 +41,7 @@ QuerySet, по сути, список объектов заданной Моде
 Все просто: мы импортируем модель `Post` из `blog.models`. Давай попробуем получить все записи блога еще раз:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 Это список записей, с которыми мы работали до этого! Мы создали их через панель администратора Django. Теперь же, мы хотим создавать записи через Python, так как же мы этого добьемся?
@@ -63,7 +63,7 @@ QuerySet, по сути, список объектов заданной Моде
 Какие пользователи есть в нашей базе данных? Попробуй эту команду:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 Это суперпользователь, которого мы создали ранее! Нам нужен его экземпляр:
@@ -81,7 +81,7 @@ QuerySet, по сути, список объектов заданной Моде
 Ура! Хочешь проверить, что все работает?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 Есть, еще один пост в списке!

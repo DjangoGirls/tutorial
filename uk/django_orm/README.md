@@ -40,7 +40,7 @@ A QuerySet є, по суті, списком об'єктів заданої мо
 Усе просто: імпортуємо модель `Post` з `blog.models`. Спробуємо вивести усі пости знову:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
 
 Це список з дописів, з якими ми працювали раніше! Ми створили ці дописи через панель адміністратора Django. Проте, зараз ми хочемо створити нові дописи за допомогою Python, як ми цього доб'ємось?
 
@@ -60,7 +60,7 @@ A QuerySet є, по суті, списком об'єктів заданої мо
 Які користувачі присутні в нашій базі даних? Спробуймо це:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
 
 Це суперкористувач, якого ми створили раніше! Нам потрібен його екземпляр:
 
@@ -75,7 +75,7 @@ A QuerySet є, по суті, списком об'єктів заданої мо
 Ура! Бажаєте перевірити, чи це працює?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 
 Є, ще один допис в списку!
 
