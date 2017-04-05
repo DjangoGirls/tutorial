@@ -26,7 +26,7 @@ Prueba esto en tu plantilla `blog/templates/blog/post_list.html` (reemplaza el s
 
 Como puedes ver, todo lo que obtenemos es esto:
 
-    [<Post: Mi segundo post>, <Post: Mi primer post>]
+    <QuerySet [<Post: Mi segundo post>, <Post: Mi primer post>]>
     
 
 Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python** cómo podemos mostrar listas? Sí, ¡con los ciclos for! En una plantilla de Django, lo haces de esta manera:

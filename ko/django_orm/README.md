@@ -95,13 +95,13 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 쿼리셋의 중요한 기능은 데이터를 필터링하는 거에요. 예를 들어, 우리는 ola라는 User가 작성한 모든 글을 찾고 싶다고 해볼게요. 이런 경우 `Post.objects.all()`에서 `all` 대신, `filter`를 사용합니다. 쿼리셋 안에 있는 괄호 안에 우리가 원하는 조건(들)을 넣어줄 거에요. 지금 이 경우에는 `author`가 `me`인 조건을 넣어야겠죠. 이걸 장고로 표현한다면 `author=me`가 됩니다. 이제 이 조건이 반영된 코드를 볼까요. :
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 
 
 또는 모든 글들 중, `제목(title)`에 'title'이라는 글자가 들어간 글들만을 뽑아내서 보고 싶다면요?
 
     >>> Post.objects.filter( title__contains='title' )
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 
 
 > **Note**  `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, "FieldError: Cannot resolve keyword title_contains"라는 오류가 뜰 거에요.
@@ -125,7 +125,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 이제 (위쪽 화살표 버튼 3번을 누르고 `enter`를 눌러) 다시 게시된 글의 목록을 가져와 봅시다.
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
 
 
 ### 정렬하기
@@ -133,13 +133,13 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 퀘리셋은 객체 목록을 정렬도 할 수 있어요. 이제 `created_date` 필드를 정렬해봅시다. :
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 
 
 `-`을 맨 앞에 붙여주면 내림차순으로 정렬도 가능해요. :
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 
 
 ### 쿼리셋(QuerySets) 연결하기
