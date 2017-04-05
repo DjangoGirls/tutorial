@@ -26,7 +26,7 @@ Próbáld ki a `blog/templates/blog/post_list.html` template-ben. Cserélj ki mi
 
 Ahogy látod, ez minden, amink van:
 
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
     
 
 Ez azt jelenti, hogy a Django objektumok listájaként értelmezi. Emlékszel a **Bevezetés a Python-ba** című fejezetből, hogy hogyan jelenítünk meg listákat? Igen, for loop-okkal! Egy Django template-ben ezt így tudod megtenni:

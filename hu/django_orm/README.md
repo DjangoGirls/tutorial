@@ -95,14 +95,14 @@ A móka kedvéért hozz létre még 2-3 posztot, hogy lásd, hogyan működik. H
 A QuerySet-ek egyik nagy előnye, hogy filterezhetjük (szűrhetjük) őket. Mondjuk le szeretnénk kérdezni az összes posztot, amit az ola User írt. Itt a `filter`-t fogjuk használni az `all` helyett a `Post.objects.all()`-ban. A zárójelek között megadhatjuk, hogy milyen feltétel(ek)nek kell teljesülnie ahhoz, hogy egy blogposzt bekerülhessen a querysetünkbe. Ebben az esetben az `author` (szerző) egyenlő `me`-vel (én). Ezt a Django-ban így írjuk le: `author=me`. Most így néz ki a kódunk:
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 
     
 
 És ha össze szeretnénk gyűjteni minden olyan posztot, aminek a `title` (cím) mezőjében szerepel a 'title' szó?
 
     >>> Post.objects.filter(title__contains='title')
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
     
 
 > **Note** A `title` és a `contains` (vagyis 'tartalmaz') között két underscore karakter (`_`) van. A Django ORM ezt a szintaxist használja arra, hogy elkülönítse a mezők neveit ("title") a műveletektől vagy filterektől ("contains"). Ha csak egy underscore-t használt, egy ilyen hibát fogsz kapni: "FieldError: Cannot resolve keyword title_contains" (kb "Mezőhiba: a title_contains kulcsszó nem található").
@@ -126,7 +126,7 @@ Aztán közzétesszük a `publish` methoddal!
 Most próbáld meg újra lekérdezni a közzétett posztok listáját (nyomd meg háromszor a felfelé nyilat, és nyomj `enter`t):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
     
 
 ### Objektumok sorbarendezése
@@ -134,13 +134,13 @@ Most próbáld meg újra lekérdezni a közzétett posztok listáját (nyomd meg
 A QuerySetek segítségével sorba is rendezheted az objektumok listáját. Először próbáljuk meg a létrehozás dátuma (`created_date` mező) alapján rendezni őket:
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 Meg is fordíthatjuk a sorrendet, ha az elejére egy `-` jelet teszünk:
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
     
 
 ### QuerySetek összefűzése

@@ -93,13 +93,13 @@ Agora, você pode se divertir um pouco e adicionar mais postagens para ver como 
 Uma grande parte de QuerySets é a habilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pelo usuário ola. Nós usaremos o `filter` em vez de `all` em `Post.objects.all()`. Entre parênteses indicamos que as condições precisam ser atendidas por um postagem de blog para acabar em nosso queryset. Em nosso caso é `author` que é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código parece com este:
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 Ou talvez nós queremos ver todos os posts que contenham a palavra 'title' no campo de `title`?
 
     >>> Post.objects.filter(title__contains='title')
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
     
 
 > **Nota** Existem dois caracteres de sublinhado (`_`) entre o `title` e `contains`. Django ORM usa esta sintaxe para separar nomes de campo ("title") e operações ou filtros ("contains"). Se você usar apenas um sublinhado, você obterá um erro como "FieldError: Cannot resolve keyword title_contains".
@@ -123,7 +123,7 @@ E então publicá-lo com o nosso método de `publish`!
 Agora tente obter a lista de posts publicados novamente (pressione a seta para cima botão 3 vezes e tecle Enter):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
     
 
 ### Ordenando objetos
@@ -131,13 +131,13 @@ Agora tente obter a lista de posts publicados novamente (pressione a seta para c
 Um QuerySet também nos permite ordenar a lista de objetos. Vamos tentar ordenar as postagens pelo campo `created_date`:
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 Você também pode inverter a ordem adicionando `-` no início:
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>, <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>, <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
     
 
 Legal! Você já está pronto para a próxima parte! Para fechar o terminal digite:
