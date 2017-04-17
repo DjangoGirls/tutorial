@@ -124,6 +124,15 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
+Возможная ошибка в Windows при запуске сервера:
+
+    Error: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+    
+ 
+Она может произойти если порт 8000 занят, тогда нужно запустить сервер выбрав другой порт, например 8001:
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8001
+
 Теперь тебе нужно проверить работает ли веб-сайт - открой браузер (Firefox, Chrome, Safari, Internet Explorer или любой другой) и набери следующий адрес:
 
     http://127.0.0.1:8000/
