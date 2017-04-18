@@ -23,13 +23,13 @@
 
 ### 윈도우
 
-`virtualenv`를 생성하려면 console창을 열고, (앞쪽 챕터에서 얘기했는데, 기억나죠?) 그리고 `C:\Python34\python -m venv myvenv`를 실행해야해요. 아마도 화면에는 이런 것들이 보이겠죠?
+`virtualenv`를 생성하려면 console창을 열고, (앞쪽 챕터에서 얘기했는데, 기억나죠?) 그리고 `C:\Python35\python -m venv myvenv`를 실행해야해요. 아마도 화면에는 이런 것들이 보이겠죠?
 
-    C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
+    C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 
 
 
-여기서 `C:\Python34\python` 은 파이썬이 설치된 디렉토리이고, `myvenv` 는 설치할 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안돼요. 이름은 짧게 만드는 것이 좋아요. 자주 입력해야하니까요.
+여기서 `C:\Python35\python` 은 파이썬이 설치된 디렉토리이고, `myvenv` 는 설치할 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안돼요. 이름은 짧게 만드는 것이 좋아요. 자주 입력해야하니까요.
 
 ### 리눅스와 맥OS
 
@@ -43,13 +43,13 @@
 > **주의:** 우분투 14.04 에서는 이런 오류가 뜰 수 있어요.
 >
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
->     
+> ​
 >
 > 이 문제를 해결하려면 `virtualenv` 명령을 사용해야해요.
 >
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
->     
+>     ~/djangogirls$ virtualenv --python=python3.5 myvenv
+>
 
 ## 가상환경 사용하기
 
@@ -74,7 +74,7 @@
 > **주의:** 간혹 `source` 명령이 동작하지 않을 수도 있어요. 그럴 때는 이렇게 하세요.
 >
 >     ~/djangogirls$ . myvenv/bin/activate
->     
+>
 
 `가상환경`이 실행되었는지는 콘솔의 프롬프트를 보면 알 수 있어요.
 
@@ -94,11 +94,11 @@
 
 ## 장고 설치하기
 
-이제 `virtualenv` 가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django==1.8`를 실행해보세요. (조심하세요. 이퀄기호가 두 개예요: `==`).
+이제 `virtualenv` 가 시작되었으니, `pip`를 이용해 장고를 설치할 수 있어요. 콘솔에서 `pip install django~=1.10.0`를 실행해보세요. (다음과 같은 기호를 사용한 것에 주목해주세요: `~=`).
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
-    Installing collected packages: django
+    (myvenv) ~$ pip install django~=1.10.0
+    Downloading/unpacking django~=1.10.0
+    	Downloading Django-1.10.5-py2.py3-none-any.whl (6.8MB)
     Successfully installed django
     Cleaning up...
 

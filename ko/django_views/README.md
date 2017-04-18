@@ -35,4 +35,4 @@
 
 *TemplateDoesNotExist* 는 쉽게 해결할 수 있습니다. : 잘 따라왔다면 이러한 에러가 발생하는게 맞아요. 다음 장에서 이 버그를 해결하기 위해 템플릿 파일을 만들 거에요!
 
-> Django 뷰에 대해 자세히 알고 싶으시면 공식 문서를 읽어 보세요. https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Django 뷰에 대해 자세히 알고 싶으시면 공식 문서를 읽어 보세요. https://docs.djangoproject.com/en/1.10/topics/http/views/

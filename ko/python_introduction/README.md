@@ -15,7 +15,7 @@
 파이썬 콘솔을 실행하기 위해 윈도우에서는 `python`을 입력하고, 맥OS나 리눅스라면 `python3`를 입력하고 `엔터`를 입력하세요.
 
     $ python3
-    Python 3.4.3 (...)
+    Python 3.5.1 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
@@ -486,7 +486,7 @@ Boolean도 변수로 사용할 수도 있습니다! 다음을 보세요. :
 
     또는 "바탕화면"으로 번역되어 있다면
     cd ~/바탕화면
-
+    
     또는 "데스크탑"으로 번역되어 있다면
     cd ~/데스크탑
 
