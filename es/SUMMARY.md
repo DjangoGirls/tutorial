@@ -1,7 +1,6 @@
 # Índice
 
 * [Introducción](README.md)
-* [Instalación](installation/README.md)
 * [¿Cómo funciona Internet?](how_the_internet_works/README.md)
 * [Introducción a la línea de comandos](intro_to_command_line/README.md)
 * [Instalación de Python](python_installation/README.md)
@@ -24,3 +23,4 @@
 * [Extiende tu aplicación](extend_your_application/README.md)
 * [Formularios en Django](django_forms/README.md)
 * [¿Qué sigue?](whats_next/README.md)
+* [Instalación](installation/README.md)
