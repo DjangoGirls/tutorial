@@ -15,7 +15,7 @@
 Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
 
 Пізніше, ви можете спробувати джерела, перелічені нижче. Дуже рекомендуємо!
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
