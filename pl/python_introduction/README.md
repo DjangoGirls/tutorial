@@ -12,13 +12,18 @@ Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na s
 
 Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
 
-Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `Enter`.
+Chcemy otworzyć konsolę Pythona. 
+
+Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `Enter`.
 
     $ python3
     Python 3.4.3 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
+**Zapamiętaj!**
+
+Jeśli uruchomiłaś wiersz poleceń Pythona używając komendy **'python'**, to również w dalszej części tutoriala, tam gdzie będzie polecenie zawierające 'python3' - **używaj 'python'**.    
 
 ## Twoje pierwsze polecenie w Pythonie!
 
