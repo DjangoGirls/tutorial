@@ -4,7 +4,7 @@ Poniżej znajdziesz nasze propozycje, ale jeżeli masz taką możliwość, może
 
 ## Visual Studio Code
 VS Code to najnowszy edytor stworzony przez Microsoft. Edytor ten jest dostępny na wszystkich systemach - Windows, Linux, OsX.
-Jest całkowicie darmowy, posiada wiele pluginó ułatwiających pracę z kodem.
+Jest całkowicie darmowy, posiada wiele pluginów ułatwiających pracę z kodem.
 
 [Pobierz tutaj](https://code.visualstudio.com/)
 
