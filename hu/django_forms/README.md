@@ -211,10 +211,10 @@ from django.shortcuts import redirect
 Ezt írd a fájlod elejére. És most megmondhatjuk a Django-nak: menj az új blogposzt `post_detail` oldalára.
 
 ```python
-return redirect('blog.views.post_detail', pk=post.pk)
+return redirect('post_detail', pk=post.pk)
 ```    
 
-A `blog.views.post_detail` a nézet neve, ahova most menni akarunk. Emlékszel, hogy ez a *view* egy `pk` változót kér? Ahhoz, hogy ezt megkapja, a `pk=post.pk` részt használjuk, ahol a `post` az új blogposztunkat jelenti!
+A `post_detail` a nézet neve, ahova most menni akarunk. Emlékszel, hogy ez a *view* egy `pk` változót kér? Ahhoz, hogy ezt megkapja, a `pk=post.pk` részt használjuk, ahol a `post` az új blogposztunkat jelenti!
 
 Rendben, elég sokat beszéltünk, de most már látni szeretnéd, hogy néz ki a teljes *view*, igaz?
 
@@ -227,7 +227,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -306,7 +306,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})

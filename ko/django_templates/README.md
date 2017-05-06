@@ -26,7 +26,7 @@ __장고 템플릿 태그(Django template tags)__ 는 파이썬을 HTML로 바�
 
 우리는 아래와 같이 만들었어요. :
 
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
 
 
 이는 장고가 {{ posts}} 를 객체들의 목록으로 이해하고 처리했다는 것을 의미해요. **파이썬 들어가기** 에서 어떻게 목록을 보여줬는지 기억하고 있나요? 맞아요, for loop을 이용해서죠! 장고 템플릿에서는 이렇게 해야합니다. :
