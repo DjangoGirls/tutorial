@@ -87,7 +87,7 @@ $ git push
 
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull
