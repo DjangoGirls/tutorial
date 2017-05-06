@@ -8,6 +8,8 @@ W kroku, który nazywa się `"Adjusting your PATH environment"`, wybierz **"Run 
 
 Upewnij się jeszcze, że w kolejnym kroku `"Configuring the line ending conversions"` wybrana jest opcja **"Checkout Windows-style, commit Unix-style line endings"**.
 
+<!--endsec-->
+
 <!--sec data-title="OS X" data-id="virtualenv_unix" data-collapse=true ces-->
 
 Ściągnij Gita z [git-scm.com](https://git-scm.com/) i postępuj zgodnie z instrukcją.
