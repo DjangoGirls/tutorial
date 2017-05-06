@@ -1,4 +1,4 @@
-<!--sec data-title="Windows" data-id="virtualenv_unix" data-collapse=true ces-->
+<!--sec data-title="Windows" data-id="git_win" data-collapse=true ces-->
 
 Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). 
 
@@ -10,13 +10,13 @@ Upewnij się jeszcze, że w kolejnym kroku `"Configuring the line ending convers
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="virtualenv_unix" data-collapse=true ces-->
+<!--sec data-title="OS X" data-id="git-osx" data-collapse=true ces-->
 
 Ściągnij Gita z [git-scm.com](https://git-scm.com/) i postępuj zgodnie z instrukcją.
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="virtualenv_unix" data-collapse=true ces-->
+<!--sec data-title="Linux" data-id="git-linux" data-collapse=true ces-->
 
 Możliwe, że git jest już zainstalowany domyśle, ale jeśli tak nie jest, powinien być dostępny za pośrednictwem menedżera pakietów, więc spróbuj:
 
