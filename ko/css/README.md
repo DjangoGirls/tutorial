@@ -10,14 +10,17 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업랭귀지(markup language
 
 ## 부트스트랩을 사용해봐요!
 
-[부트스트랩(Bootstrap)](https://getbootstrap.com/)은 예쁜 웹사이트를 개발하기 위해 사용되고 있는 가장 유명한 HTML과 CSS프레임워크입니다.
+부트스트랩(Bootstrap)은 예쁜 웹사이트를 개발하기 위해 사용되고 있는 가장 유명한 HTML과 CSS프레임워크입니다.
 
-트위터 개발자들이 부트스트랩을 만들었고, 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요.
+https://getbootstrap.com/
+
+트위터 개발자들이 부트스트랩을 만들었고, 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요!
 
 ## 부트스트랩 설치하기
 
-부트스트랩을 설치하려면, `.html`파일 내 `<head>`에 이 링크를 넣어야해요.
-`blog/templates/blog/post_list.html`파일 안에 아래 코드를 작성하세요.
+부트스트랩을 설치하려면, `.html`파일 내 `<head>`에 이 링크를 넣어야 합니다.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -26,21 +29,21 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업랭귀지(markup language
 
 이 링크는 프로젝트에 새 파일을 추가하는 게 아니에요. 인터넷에 있는 파일을 연결하는 거죠. 이제 웹사이트를 열어 새로고침 버튼을 눌러보세요. 짠!
 
-![그림 14.1][1]
-
- [1]: images/bootstrap1.png
+![Figure 14.1](images/bootstrap1.png)
 
 어때요, 보기 좋아졌죠!
 
+
 ## 정적 파일
 
-마지막으로 **정적 파일(static files)**을 다뤄볼 거에요. 정적 파일은 CSS과 이미지 모두를 말합니다. 동적 파일이 아니에요. 그렇기 때문에 콘텐츠 요청 내용이 필요없어 모든 유저들이 동일한 내용을 볼 수 있어요.
+마지막으로 __정적 파일(static files)__을 다뤄볼 거에요. 정적 파일은 모든 CSS와 이미지 파일을 말합니다. 해당 컨텐트는 요청 컨텍스트에 의존하지 않기 때문에 모든 사용자들이 동일한 내용을 볼 수 있어요.
+
 
 ### 정적 파일은 어디에 넣어야 하나요
 
-서버에서 `collectstatic`를 실행할 때 처럼, 장고는 `admin`앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 동적파일을 추가하면 되어요.
+서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin"앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 "blog"앱에 동적파일을 추가하면 되어요.
 
-`blog`앱 안에 `static`폴더를 만드세요.
+"blog"앱 안에 `static`라는 새 폴더를 만드세요.
 
 ```
     djangogirls
@@ -50,11 +53,13 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업랭귀지(markup language
     └── mysite
 ```
 
-장고는 app폴더 안에 있는 `static`폴더를 자동으로 찾아 안에 있는 내용을 불러낼 거에요.
+장고는 app 폴더 안에 있는 `static`폴더를 자동으로 찾을 수 있어요. 이 콘텐츠를 정적 파일로 사용하게 되는 것입니다.
+
 
 ## 나의 첫 번째 CSS 파일!
 
 CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어봐요. `static`디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
+
 ```
     djangogirls
     └─── blog
@@ -63,17 +68,14 @@ CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어�
                    └─── blog.css
 ```
 
-CSS를 쓸 차례에요! 코드 에디터에서 `blog/static/css/blog.css`파일을 불러오세요.
+CSS를 쓸 차례에요! 코드 에디터에서 `blog/static/css/blog.css`파일을 열어보세요.
 
-CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 이번에는 CSS에 대해 심도 있게 살펴보지는 않을 거에요. 더 예쁜 웹사이트를 만들고 싶다면 [Codeacademy HTML & CSS course][2]를 실습해보길 추천해요.
+CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 CSS에 대해 깊이 살펴보지는 않을 거에요. 이 장 맨 마지막 부분에 추천하는 무료 사이트가 있습니다.
 
- [2]: https://www.codecademy.com/tracks/web
+하지만 조금이라도 해보자구요. 제목 색상을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색상을 나타내요. `#`으로 시작해 알파벳(A-F)와 숫자(0-9) 중 6개를 조합해 헥사코드(hexacode)로 나타냅니다. 이 곳에서 원하는 색상 코드를 찾을 수 있어요. [https://www.colorpicker.com/](https://www.colorpicker.com/) 또는 `빨간색(red)` 또는 `녹색(green)` 등 [미리 정의된 색상](http://www.w3schools.com/colors/colors_names.asp)을 선택할 수 있어요.
 
-하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색상을 나타내요. `#`으로 시작해 알파벳(A-F)와 숫자(0-9) 중 6개를 조합해 헥사코드(hexacode)로 나타내요. [이 곳](https://www.colorpicker.com/)에서 원하는 색상 코드를 찾을 수 있어요. 또는 [미리 정의 된 색][3], 예를 들어 `빨간색(red)` 또는 `녹색(green)`이라 할 수 있어요.
-
- [3]: https://www.w3schools.com/cssref/css_colornames.asp
-
-`blog/static/css/blog.css`에 아래의 코드를 추가하세요.
+`blog/static/css/blog.css`파일 에 아래의 코드를 추가하세요.
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -81,34 +83,39 @@ h1 a {
 }
 ```
 
-`h1 a`는 CSS 셀렉터(Selector)에요. 즉, 우리는 `h1`요소 안에 어떠한 `a`요소를 넣어 스타일을 적용 할 수 있다는 거죠. (예를 들어 코드가 다음과 같을 때: `<h1><a href="">link</a></h1>`) 이 경우에, 우리는 색을 `#FCA205`, 즉 오렌지색으로 바꾸라고 말한 거에요. 물론, 색을 직접 선택할 수도 있어요!
+`h1 a`는 CSS 셀렉터(Selector)라고 합니다. `h1`요소 안에 어떠한 `a`요소를 넣어 스타일을 적용 할 수 있다는 거죠. 예를 들어 `<h1><a href="">link</a></h1>` 라면, 오렌지색 `#FCA205`으로 바꿀 수 있어요. 물론, 내가 원하는 다른 색상을 지정할 수 있어요!
 
-CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 각 요소는 요소 이름(다시 말하면, `a`, `h1`, `body`), `class`상속 아니면 `id`상속에 의해 식별됩니다. Class와 id는 여러분들이 붙인 이름을 갖게 됩니다. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 CSS에서 태그 이름 `a`, 클래스 `external_link`, `id`는 `link_to_wiki_page`를 사용해서 식별해요.
+CSS 파일에서는 HTML 파일에 있는 각 요소들에 스타일을 정의할 수 있어요. 요소를 식별하는 첫 번째 방법은 요소 이름을 사용하는 것입니다. HTML 섹션에서 태그로 기억할 수 있습니다. `a`,`h1`,`body`와 같은 것은 모두 요소 이름의 예입니다.
+
+또한 `class` 속성이나 `id` 속성에 의해 요소를 식별합니다. 클래스와 ID는 요소에 직접 부여한 이름이에요. 클래스는 요소 그룹을 정의하고 ID는 특정 요소를 가리킵니다. 아래 코드와 같이 태그 이름은 `a`, 클래스는 `external_link` 또는 ID는 `link_to_wiki_page`로 사용하여 태그를 통해 요소를 식별할 수 있습니다.
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
+W3Schools에서 [CSS 선택자](https://www.w3schools.com/cssref/css_selectors.asp)에 대해 읽어보시길 바랍니다.
 
- [4]: https://www.w3schools.com/cssref/css_selectors.asp
+이제 CSS의 내용을 HTML에 적용시킬 차례에요. `blog/templates/blog/post_list.html`파일을 열고 맨 처음 줄에 이 라인을 추가하세요.
 
-이제 CSS의 내용을 HTML에 적용시킬 차례에요. `blog/templates/blog/post_list.html`파일을 열고 가장 위에 이 라인을 추가하세요.
-
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% load staticfiles %}
 ```
 
-동적 파일이 실행되고 있는 거에요 :). 다음, `<head>`와 `</head>` 사이에, 부트스트랩 CSS파일 링크 다음(브라우저는 순서대로 파일을 읽기 때문에 부트스트랩 파일에 있는 코드를 무시할 수 있어요.) 다음 코드를 추가하세요.
+여기에서 동적 파일을 로딩하는 거에요. :)
+다음 `<head>`와 `</head>` 사이에 부트스트랩 CSS파일 링크 다음에 아래 코드를 추가하세요.
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
+브라우저는 주어진 순서대로 파일을 읽으므로 파일이 올바른 위치에 있는지 확인해야합니다. 그렇지 않으면 파일 코드가 부트 스트랩 파일의 코드를 무시할 수 있습니다.
 이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.
 
 코드는 아래와 같아야 해요.
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% load staticfiles %}
 <html>
@@ -127,7 +134,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -136,9 +143,7 @@ W3Schools에서 [CSS Selectors][4]에 대해 읽어보세요.
 
 자, 이제 파일을 저장하고 새로고침을 해보세요!
 
-![그림 14.2][5]
-
- [5]: images/color2.png
+![Figure 14.2](images/color2.png)
 
 잘했어요! 웹사이트 왼쪽 여백을 좀더 주고 싶지 않나요? 한번 해봐요!
 
