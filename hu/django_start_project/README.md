@@ -70,6 +70,12 @@ Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elér�
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
+Amikor a DEBUG értéke True és az ALLOWED_HOSTS üres, a hosztnév alapértelmezetten ['localhost', '127.0.0.1', '[::1]']. Ez deploy után nem fog működni a PythonAnywhere-en, ezért változtassuk meg ezt a beállítást így:
+
+```python
+    ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+```
+
 ## Adatbázis létrehozása
 
 Sok különféle adatbázis-szoftver létezik, ami adatokat tud tárolni a weboldalakhoz. Mi az alapértelmezettet fogjuk használni, az `sqlite3`-ot.

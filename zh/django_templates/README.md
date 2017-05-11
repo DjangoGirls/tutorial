@@ -28,7 +28,7 @@
 如你所见，我们得到如下：
 
 ```
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
     
 

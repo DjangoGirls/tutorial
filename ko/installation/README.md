@@ -1,6 +1,10 @@
 # 집에서 튜토리얼을 보시는 분들에게
 
+<<<<<<< HEAD
 [장고걸스 워크숍](http://djangogirls.org/events/)이 아닌 집에서 튜토리얼을 학습하는 분들은 이 장을 건너뛰고 [인터넷은 어떻게 작동할까요](../how_the_internet_works/README.md)부터 읽으세요.
+=======
+[장고 걸스 이벤트](https://djangogirls.org/events/)가 아닌 집에서 튜토리얼을 자습하시는 분들은 이 장을 건너뛰고 [인터넷은 어떻게 작동할까요](../how_the_internet_works/README.md) 부터 읽으세요.
+>>>>>>> master
 
 이번 장에는 설치와 관련된 모든 내용을 모두 모았습니다. 장고걸스 워크숍은 워크숍 전날, '설치의 밤'에서 모든 프로그램을 설치하고 개발환경을 준비하는 시간이 준비되어 있습니다. 워크숍 중간에 설치 문제로 진행에 어려움을 겪지 않게 하기 위해서지요.
 
@@ -44,6 +48,10 @@
 
   * [Command line 시작하기](../intro_to_command_line/README.md)
 
+<<<<<<< HEAD
   * [Python 시작하기](../intro_to_command_line/README.md)
+=======
+  * [파이썬(python) 시작하기](../python_introduction/README.md)
+>>>>>>> master
 
   * [Django란 무엇인가요](../django/README.md)

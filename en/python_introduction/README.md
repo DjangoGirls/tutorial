@@ -43,6 +43,7 @@ Nice! See how the answer popped out? Python knows math! You could try other comm
 - `40 / 2`
 
 To perform exponential calculation, say 2 to the power 3, we type:
+{% filename %}command-line{% endfilename %}
 ```python
 >>> 2 ** 3
 8
@@ -124,7 +125,7 @@ OK, enough of strings. So far you've learned about:
 
 - __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
 - __numbers and strings__ – in Python numbers are used for math and strings for text objects
-- __operators__ – like `+` and `\*`, combine values to produce a new one
+- __operators__ – like `+` and `*`, combine values to produce a new one
 - __functions__ – like `upper()` and `len()`, perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
@@ -321,6 +322,7 @@ To delete something from your list you will need to use __indexes__ as we learne
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -407,6 +409,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
@@ -514,7 +517,7 @@ There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercased, with the rest of the letter lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
 
 Booleans can be variables, too! See here:
 
@@ -579,28 +582,40 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.  (**Note**:  Replace `<your_name>` including the `<` and `>` with your user name.)
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd /Users/<your_name>/Desktop
+$ cd ~/Desktop
 ```
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd /home/<your_name>/Desktop
+$ cd ~/Desktop
 ```
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
 And on Windows, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-> cd C:\Users\<your_name>\Desktop
+> cd %HomePath%\Desktop
 ```
+<!--endsec-->
 
 If you get stuck, just ask for help.
 
@@ -793,7 +808,12 @@ Hi there!
 How are you?
 ```
 
-That was easy! Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Note: if it didn't work, don't panic! The output will help you to figure why:
+- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
+- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+
+Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python

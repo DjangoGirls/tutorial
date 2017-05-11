@@ -13,14 +13,14 @@ Vše, co musíš udělat je jít do adresáře, ve kterém chceš vytvořit `vir
 Pro tento kurz budeme používat nový adresář `djangogirls` vytvořený v domovském adresáři:
 
 ```
-    mkdir djangogirls
-    cd djangogirls
+mkdir djangogirls
+cd djangogirls
 ```  
 
 Vytvoříme virtualenv, s názvem `myvenv`. Obecný příkaz bude vypadat takto:
 
 ```
-    Python3 -m venv myvenv
+python3 -m venv myvenv
 ```  
 
 ### Windows
@@ -28,7 +28,7 @@ Vytvoříme virtualenv, s názvem `myvenv`. Obecný příkaz bude vypadat takto:
 Chceš-li vytvořit nový `virtualenv`, je potřeba otevřít konzoli (mluvili jsme o tom v dřívější kapitole - vzpomínáš?) a spusť `C:\Python34\python -m venv myvenv`. Celý příkaz bude vypadat takto:
 
 ```
-    C:\Users\Name\djangogirls > C:\Python34\python -m venv myvenv
+C:\Users\Name\djangogirls > C:\Python34\python -m venv myvenv
 ```  
 
 kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. Je také dobrý nápad, abys zvolila krátké jméno - budeš ho používat častokrát!
@@ -38,7 +38,7 @@ kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `
 Vytvoření `virtualenv` na Linux a OS X je stejně jednoduché - spusť`python3 -m venv myvenv`. Celý příkaz bude vypadat takto:
 
 ```
-    ~/djangogirls$ python3 -m venv myvenv
+~/djangogirls$ python3 -m venv myvenv
 ```  
 
 `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale drž se těchto pravidel - používej v názvech malá písmena a bez mezer. Je dobrý nápad zvolit krátké jméno - budeš ho používat častokrát!
@@ -63,7 +63,7 @@ Výše uvedený příkaz vytvoří adresář s názvem `myvenv` (či jiným jmé
 Spusť virtuální prostředí:
 
 ```
-    C:\Users\Name\djangogirls> myvenv\Scripts\activate
+C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```  
 
 #### Linux a OS X
@@ -71,7 +71,7 @@ Spusť virtuální prostředí:
 Spusť virtuální prostředí:
 
 ```
-    ~/djangogirls$ source myvenv/bin/activate
+~/djangogirls$ source myvenv/bin/activate
 ```  
 
 Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
@@ -84,13 +84,13 @@ Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
 Že je `virtualenv` spuštěné, poznáš pokud vidíš výzvu konzole vypadající takto:
 
 ```
-    (myvenv) C:\Users\Name\djangogirls>
+(myvenv) C:\Users\Name\djangogirls>
 ```  
 
 nebo:
 
 ```
-    (myvenv) ~/djangogirls$
+(myvenv) ~/djangogirls$
 ```  
 
 Upozornění předpona `(myvenv)` se zobrazí!
@@ -104,11 +104,11 @@ OK máme všechny důležité závislosti na místě a konečně můžeme nainst
 Máš své `virtualenv` nastartované a můžeš nainstalovat Django pomocí příkazu `pip`. V konzoli, spusť `pip install django == 1.8` (<0>Poznámka:</0> , používáme zde dvojité rovnítko: `==`).
 
 ```
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
-    Installing collected packages: django
-    Successfully installed django
-    Cleaning up...
+(myvenv) ~$ pip install django==1.8
+Downloading/unpacking django==1.8
+Installing collected packages: django
+Successfully installed django
+Cleaning up...
 ```  
 
 v systému Windows

@@ -40,7 +40,7 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 간단합니다. 우리는 `Post`모델을 `blog.models`에서 불러왔어요. 이제 모든 글을 출력해봅시다.
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
 
 
 게시된 글 목록이 나타났네요! 장고 관리자 인터페이스로 만들었던 것들이에요. 그런데 파이썬으로 새 글을 포스팅하려면, 어떻게 해야 할까요?
@@ -62,7 +62,7 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 데이터베이스에서 user는 어떤 일을 할까요? 함께 알아봅시다 :
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
 
 
 슈퍼유저로 등록했었던 그 사용자군요! 이제 이 사용자의 인스턴스(instance)를 가져와 봅시다 :
@@ -80,7 +80,7 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 만세! 그런데 제대로 작동했는지 확인해봐야죠?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 
 
 보세요, 목록에 게시글 하나가 더 늘었네요!
@@ -94,13 +94,13 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 쿼리셋의 중요한 기능은 데이터를 필터링하는 거예요. 예를 들어, 우리는 ola라는 사용자가 작성한 모든 글을 찾고 싶다고 해볼게요. 이런 경우 `Post.objects.all()`에서 `all`대신, `filter`를 사용합니다. 쿼리셋 안에 있는 괄호 안에 원하는 조건을 넣어줄 거예요. 지금 이 경우에는 `작성자(author)`가 `나(me)`인 조건을 넣어야겠죠. 이걸 장고로 표현한다면 `author=me`가 됩니다. 이제 이 조건이 반영된 코드를 볼까요.
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 
 
 모든 글들 중, `제목(title)`에 'title'이라는 글자가 들어간 글들만을 뽑아내서 보고 싶다면요?
 
     >>> Post.objects.filter( title__contains='title' )
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 
 
 > **Note**  `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개(`__`)입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, `FieldError: Cannot resolve keyword title_contains`라는 오류가 뜰 거예요.
@@ -124,7 +124,7 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 이제 (위쪽 화살표 버튼 3번을 누르고 `enter`를 눌러) 다시 게시된 글의 목록을 가져와 봅시다.
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
 
 
 ### 정렬하기
@@ -132,13 +132,13 @@ PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.
 퀘리셋은 객체 목록을 정렬할 수 있어요. 이제 `created_date`필드를 정렬해봅시다.
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 
 
 `-`을 맨 앞에 붙여주면 내림차순 정렬도 가능해요.
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 
 
 ### 쿼리셋 연결하기

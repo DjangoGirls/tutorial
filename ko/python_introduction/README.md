@@ -450,23 +450,23 @@
 
 맥OS :
 
-    cd /Users/<your_name>/Desktop
+    cd ~/Desktop
 
 
 리눅스 :
 
-    cd /home/<your_name>/Desktop
+    cd ~/Desktop
 
     또는 "바탕화면"으로 번역되어 있다면
-    cd /home/<your_name>/바탕화면
+    cd ~/바탕화면
 
     또는 "데스크탑"으로 번역되어 있다면
-    cd /home/<your_name>/데스크탑
+    cd ~/데스크탑
 
 
 윈도우 :
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 따라하다 어려움이 있ㅅ다면, 코치에게 도움을 요청하세요.

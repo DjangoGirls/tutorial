@@ -11,7 +11,7 @@ The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-Sha
 
 The source code of the tutorial is [hosted on Github](https://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
-The tutorial uses the [GitBook](https://www.gitbook.io/) service for publishing its documentation. [See more information about how Gitbook works](http://help.gitbook.io/).
+The tutorial uses the [GitBook](https://www.gitbook.com/) service for publishing its documentation. [See more information about how Gitbook works](https://help.gitbook.com/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
@@ -97,7 +97,7 @@ Example:
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
 
-If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](https://gitbook.com), sign up for free and work directly in your browser.
+If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](https://www.gitbook.com/), sign up for free and work directly in your browser.
 
 # Making a pull request
 

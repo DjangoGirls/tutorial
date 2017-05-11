@@ -477,17 +477,17 @@ Most hogy a fájl el van mentve, itt az ideje, hogy lefuttassuk. Felhaszálva a 
 
 Mac-en a parancs valahogy így néz ki:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 Linuxon így (A "Desktop" lehet, hogy le van fordítva a te nyelvedre):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 És Windowson így néz ki:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Ha megakadtál volna, kérj nyugodtan segítséget.
@@ -587,7 +587,7 @@ Az első `if` statement után annyi `elif` állítást írhatsz, amennyit csak a
     elif 80 <= volume < 100:
         print("A bit loud!")
     else:
-        print("My ears are hurting!:(")! :(")
+        print("My ears are hurting! :(")
 ```
 
 A Python sorban mindegyik feltételt megnézi, és kiírja:

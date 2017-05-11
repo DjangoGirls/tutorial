@@ -26,7 +26,7 @@ Tentar fazer isso no seu template `blog/templates/blog/post_list.html` (substitu
 
 Você pode ver, tudo que temos é:
 
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
     
 
 Isto significa que o Django a entende como uma lista de objetos. Lembre-se de **introdução ao Python** como podemos exibir listas? Sim, com os loops! Em um template Django, fazemos isso da seguinte maneira:
@@ -59,7 +59,7 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, co
 {% endfor %}
 ```
 
-Tudo que você põe enrte `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página:
+Tudo que você põe entre `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página:
 
 ![Figura 13.3][3]
 

@@ -4,13 +4,13 @@ Za chwilę zbudujemy naszą pierwszą stronę - stronę główną Twojego bloga!
 
 ## Czym jest URL?
 
-Adres URL to po prostu adres w internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! `127.0.0.1:8000` jest adresem URL! http://djangogirls.org również):
+Adres URL to po prostu adres w Internecie. Widzisz go za każdym razem, gdy odwiedzasz jakąkolwiek stronę - jest widoczny w pasku adresu Twojej przeglądarki (tak! `127.0.0.1:8000` jest adresem URL! http://djangogirls.org również):
 
 ![Adres URL][1]
 
  [1]: images/url.png
 
-Każda strona w internecie potrzebuje własnego adresu URL. W ten sposób aplikacja wie, co wyświetlić użytkownikowi, który otworzy dany URL. W Django używamy tak zwanego `URLconf` (konfiguracji URL). Jest to zestaw wzorców, które Django stara się dopasować do otrzymanego adresu URL i na tej podstawie znaleźć właściwy widok.
+Każda strona w Internecie potrzebuje własnego adresu URL. W ten sposób aplikacja wie, co wyświetlić użytkownikowi, który otworzy dany URL. W Django używamy tak zwanego `URLconf` (konfiguracji URL). Jest to zestaw wzorców, które Django stara się dopasować do otrzymanego adresu URL i na tej podstawie znaleźć właściwy widok.
 
 ## Jak działają adresy URL w Django?
 

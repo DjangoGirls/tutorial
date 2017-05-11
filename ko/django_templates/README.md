@@ -26,7 +26,7 @@ HTML에 여러분은 파이썬 코드를 바로 넣을 수 없어요. 브라우�
 
 아래와 같이 만들었어요 :
 
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
 
 이는 장고가 `{{ posts }}`를 객체 목록으로 이해하고 처리했다는 것을 의미해요. [**Python 들어가기**](http://tutorial.djangogirls.org/ko/python_introduction/)에서 어떻게 목록을 보여줬는지 기억하고 있나요? 맞아요, `for loop`을 이용해서죠! 장고 템플릿에서는 이렇게 써야 합니다.
 

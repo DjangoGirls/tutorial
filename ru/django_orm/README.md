@@ -41,7 +41,7 @@ QuerySet, по сути, список объектов заданной Моде
 Все просто: мы импортируем модель `Post` из `blog.models`. Давай попробуем получить все записи блога еще раз:
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 Это список записей, с которыми мы работали до этого! Мы создали их через панель администратора Django. Теперь же, мы хотим создавать записи через Python, так как же мы этого добьемся?
@@ -63,7 +63,7 @@ QuerySet, по сути, список объектов заданной Моде
 Какие пользователи есть в нашей базе данных? Попробуй эту команду:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 Это суперпользователь, которого мы создали ранее! Нам нужен его экземпляр:
@@ -81,7 +81,7 @@ QuerySet, по сути, список объектов заданной Моде
 Ура! Хочешь проверить, что все работает?
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 Есть, еще один пост в списке!
@@ -95,13 +95,13 @@ QuerySet, по сути, список объектов заданной Моде
 Важной особенностью QuerySets является возможность фильтровать объекты. Предположим, нам нужно найти все записи пользователя ola. Мы используем метод `filter` вместо метода `all` в `Post.objects.all()`. В кавычках мы укажем условия, по которым будет построена выборка записей. В нашей ситуации условием будет являться равенство поля `author` переменной `me`. В Django мы можем написать это следующим образом: `author=me`. Теперь наш код выглядит следующим образом:
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 А может быть мы хотим получить все записи со словом 'title' в поле `title`?
 
     >>> Post.objects.filter(title__contains='title')
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
     
 
 > **Примечание**: Обрати внимание на два символа нижнего подчеркивания (`_`) между `title` и `contains`. Django's ORM использует этот синтаксис для разделения имен полей ("title") и операций или фильтров ("contains"). Если ты используешь только один символ нижнего подчеркивания, то получишь ошибку "FieldError: Cannot resolve keyword title_contains".
@@ -125,7 +125,7 @@ QuerySet, по сути, список объектов заданной Моде
 Теперь попробуй получить список опубликованных сообщений снова (нажмите стрелку вверх 3 раза и затем `enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
     
 
 ### Сортировка объектов
@@ -133,13 +133,13 @@ QuerySet, по сути, список объектов заданной Моде
 QuerySets позволяет сортировать объекты. Давай попробуем сортировку по полю `created_date`:
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 Мы также можем изменить порядок на противоположный, добавив `-` в начало условия:
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
     
 
 ### Соединение QuerySets

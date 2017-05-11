@@ -477,17 +477,17 @@
 
 在 Mac 上命令会看起来像这样：
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 在Linux，它会看起来像这样（“桌面”可能会被翻译成您所在的语言）：
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 并在 windows 上，它会看起来像这样：
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 如果你遇到麻烦了，尽管提问寻求帮助。

@@ -24,6 +24,12 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
 ```
 (myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
+
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
+The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="django_start_project_windows" data-collapse=true ces-->
@@ -34,13 +40,12 @@ On Windows you should run the following command. **(Don't forget to add the peri
 ```
 (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 ```
-<!--endsec-->
-
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
-> **Note** When typing the commands above, remember that you only type the part which starts `django-admin` or `django-admin.py`.
-The `(myvenv) ~/djangogirls$` and `(myvenv) C:\Users\Name\djangogirls>` parts shown here are just examples
-of the prompt that will be inviting your input on your command line.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`.
+The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+
+<!--endsec-->
 
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
@@ -53,7 +58,7 @@ djangogirls
         wsgi.py
         __init__.py
 ```
-
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
@@ -83,6 +88,14 @@ We'll also need to add a path for static files. (We'll find out all about static
 ```python
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
+match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
@@ -142,7 +155,7 @@ If you are on a Chromebook, use this command instead:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8000
 ```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
@@ -171,10 +184,10 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![It worked!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additonal commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!

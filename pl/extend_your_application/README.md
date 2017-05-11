@@ -44,7 +44,7 @@ Teraz, gdy wejdziemy na adres http://127.0.0.1:8000/ ujrzymy błąd (co było do
 
  [1]: images/no_reverse_match2.png
 
-## Utwórzmy URL dla poszczególnego wpisu
+## Utwórzmy URL dla pojedynczego wpisu
 
 Dodajmy adres URL w pliku `urls.py` dla naszego *widoku* `post_detail`!
 
@@ -101,13 +101,13 @@ Dobra wiadomość - możesz stworzyć własną stronę błędu 404 i upiększyć
 
 OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
-Musimy otworzyć plik `blog/views.py` i dodać następujący kod:
+Musimy otworzyć plik `blog/views.py` i dodać następujący kod (w zasadzie zmodyfikować pierwszą linię):
 
 ```python
 from django.shortcuts import render, get_object_or_404
 ```
 
-w pobliżu innych linii zawierających `from`. Z kolei na końcu pliku dodajemy nasz *widok*:
+Natomiast na końcu pliku dodajemy nasz *widok*:
 
 ```python
 def post_detail(request, pk):
@@ -129,7 +129,7 @@ Działa! Ale co się stanie, gdy klikniesz na link w tytule wpisu?
 
 O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy dodać szablon!
 
-## Stwórzmy szablon dla poszczególnego wpisu
+## Stwórzmy szablon dla pojedynczego wpisu
 
 W folderze `blog/templates/blog` stwórzmy plik o nazwie `post_detail.html`.
 
@@ -168,10 +168,13 @@ Hura! Działa!
 Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć projekt.
 
     $ git status
+    [...]
     $ git add --all .
     $ git status
-    $ git commit -m "Dodano widok i szablon dla poszczegolnego wpisu na stronie."
+    [...]
+    $ git commit -m "Dodano style, oraz widok i szablon dla pojedynczego wpisu na stronie."
     $ git push
+    [...]
 
 
 *   Potem, w konsoli [PythonAnywhere Bash][8]:
