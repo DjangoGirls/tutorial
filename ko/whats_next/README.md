@@ -6,7 +6,7 @@
 
 잠시 휴식을 가지고 여유를 가지세요. 여러분은 이제 막 정말 큰 일 마쳤으니까요.
 
-그리고 장고걸스 [페이스북](http://facebook.com/djangogirls)와 [트위터](https://twitter.com/djangogirls)를 팔로우하셔서 최신 소식을 전해들으세요.
+그리고 장고걸스 [페이스북](http://facebook.com/djangogirls)와 [트위터](https://twitter.com/djangogirls)를 팔로우하셔서 최신 소식을 구독하세요.
 
 ### 앞으로 해 볼 만한 자료를 추천해주실래요?
 
