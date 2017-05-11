@@ -7,11 +7,15 @@
 ## 번역
 이 튜토리얼은 열정적인 장고걸스서울 코치와 자원봉사자들의 수고로 번역되었습니다.
 
-> 번역 : [이수진](https://github.com/sujinleeme), 함기훈, [Jay Park](http://jinto.pe.kr/), 조혜선, [정광윤](https://twitter.com/initialkommit), 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
+> 번역 : 
 
 > 번역 업데이트
-> - 1차 : 2015. 10. 1.
-> - 2차 : 2016. 6. 3.
+> - 1차 : 2015. 10. 1. 
+    [이수진](https://github.com/sujinleeme), 함기훈, [Jay Park](http://jinto.pe.kr/), 조혜선, [정광윤](https://twitter.com/initialkommit), 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
+> - 2차 : 2016. 6. 3. 
+    [이수진](https://github.com/sujinleeme)
+> - 3차 : 2017. 5. 19.
+    [이수진](https://github.com/sujinleeme), [강현구](https://github.com/sujinleeme)
 
 ## 들어가며
 
@@ -47,7 +51,7 @@
 
 ## 튜토리얼 참여하기
 
-이 튜토리얼은 [Django Girls][4]에서 지속적으로 관리하고 있습니다. 한국어 튜토리얼은 장고걸스서울(seoul@djangogirls.org)에서 관리하고 있어요. 오류를 발견하거나 튜토리얼 내용을 업데이트하고 싶다면 [참여 방법][5]을 참고하세요.
+이 튜토리얼은 [Django Girls][4]에서 지속적으로 관리하고 있습니다. 오류를 발견하거나 튜토리얼 내용을 업데이트하고 싶다면 [참여 방법][5]을 참고하세요.
 
  [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
@@ -58,8 +62,3 @@
 번역하고 싶은 언어가 crowdin에 없다면, [github][6]에 알려주세요.
 
  [6]: https://github.com/DjangoGirls/tutorial/issues/new
-
-## 커뮤니티 참여하기
-대한민국에서는 장고걸스서울, 장고걸스대전이 활동하고 있습니다. 
-* 장고걸스서울 : seoul@djangogirls.org, [Facebook](https://www.facebook.com/djangogirlsseoul/), [Twitter](https://twitter.com/djangogirlseoul), [Github](https://github.com/djangogirlsseoul)
-* 장고걸스대전 : daejeon@djangogirls.org, [Facebook](https://www.facebook.com/djangogirlsdaejeon/)
