@@ -1,61 +1,37 @@
-# 파이썬 시작하기!
+> 집에서 학습하시는 분들은 [파이썬 & 코드에디터 설치하기](https://www.youtube.com/watch?v=pVTaqzKZCdA) 영상을 보세요.
 
-장고는 파이썬으로 작성됐습니다. 따라서 파이썬이 있어야 장고를 할 수 있어요. 우선 설치부터 해볼까요! 우리는 파이썬 3.4를 사용할 거예요. 이보다 낮은 버전이 설치되었다면, 버전 업그레이드가 필요합니다.
+> 이 장은 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 튜토리얼을 기초로 작성되었습니다.
 
-### 윈도우
-
-[[다운받기]](https://www.python.org/downloads/release/python-343/)
-
-사이트에서 ***.msi** 파일을 내려받고, 실행(더블클릭으로)한 다음, 지시 사항을 그대로 따라가세요. 파이썬을 설치한 경로(디렉터리)를 기억해두어야 합니다. 나중에 필요하거든요!
-
-설치 마법사의 "Customize"라는 두 번째 화면에서 주의하세요. 스크롤을 내려 아래 쪽에 있는 "Add python.exe to the Path" 항목을 체크해주세요.
-
-![반드시 파이썬 경로(path)를 추가해야합니다!][9]
-
- [9]: ../python_installation/images/add_python_to_windows_path.png
-
-### 리눅스
-
-대부분 이미 파이썬이 설치되었을 거에요. 설치되어있는지(어떤 버전인지) 확인하려면, 콘솔을 열어 다음 명령을 실행하세요.
-
-    $ python3 --version
-    Python 3.4.3
-
-파이썬이 설치되어 있지 않거나 버전이 다르면 이렇게 해보세요.
-
-#### Debian 또는 Ubuntu
-
-콘솔에서 다음 명령을 실행하세요.
-
-    $ sudo apt-get install python3.4
+장고는 파이썬 언어로 작성됐습니다. 파이썬이 있어야 장고를 할 수 있어요. 우선 설치부터 해볼까요! 우리는 파이썬 3.4를 사용할 거예요. 이보다 낮은 버전이 설치되었다면, 버전 업그레이드 하세요.
 
 
-#### Fedora (21까지)
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-콘솔에서 다음 명령을 실행하세요.
+윈도우 운영체제가 32 비트인지 64 비트인지 확인하려면 https://support.microsoft.com/en-au/kb/827218 에서 확인하세요. 윈도우 용 파이썬은 https://www.python.org/downloads/windows/ 웹 사이트에서 다운로드 할 수 있습니다. "Latest Python 3 Release - Python x.x.x"링크를 클릭하세요. ** 64 비트 ** 버전의 Windows인 경우 ** Windows x86-64 executable installer**를 다운로드하세요. 이외에는 ** Windows x86 executable installer **을 다운로드하십시오. 설치 프로그램을 다운로드 한 후에 실행(더블 클릭)하고 지시 사항을 따르세요.
 
-    $ sudo yum install python3.4
+> **Note** 설치하는 동안 "Setup"이라고 표시된 창이 나타납니다. 다음과 같이 "Add Python 3.5 to PATH"체크 박스를 체크하고 "Install Now"를 클릭하세요.
 
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-#### Fedora (22부터)
+다음 단계에서는 Windows 명령 행을 사용할 것입니다 (Windows 명령 행에 대해서도 알려줍니다). 지금은 일부 명령을 입력해야하는 경우 시작 메뉴 → 모든 프로그램 → 보조 프로그램 → 명령 프롬프트로 이동하세요. Windows 키를 누르고 "실행"창이 팝업 될 때까지 "R"키를 누르면 됩니다. 명령 행을 열려면 "cmd"를 입력하고 "실행"창에서 enter를 누르세요. (윈도우 최신 버전에서 안보일 수도 있어 "명령 프롬프트"를 검색해 실행합니다)
 
-콘솔에서 다음 명령을 실행합니다.
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-    $ sudo dnf install python3.4
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → All Programs → Accessories → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-### 맥 OS
+> **Note**: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.5.x installer fails with an error, you can try either:
+1. install all Windows Updates and try to install Python 3.5 again; or
+2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.4](https://www.python.org/downloads/release/python-344/).
 
-[[다운받기]](https://www.python.org/downloads/release/python-343/)
-  * *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
-  * *python-3.4.3-macosx10.6.pkg*을 더블 클릭해 설치 프로그램을 시작하세요.
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-*터미널*을 열고 `python3`명령을 실행해 설치가 잘 되었는지 확인하세요.
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
-    $ python3 --version
-    Python 3.4.3
+<!--endsec-->
 
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
 
-* * *
-
-더 궁금한 것이나 설치가 잘 안된다면 코치를 불러주세요! 문제가 있을 때는 경험있는 분에게 조언을 구하세요.
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
