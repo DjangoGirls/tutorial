@@ -177,7 +177,7 @@ Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wir
 
     $ source myvenv/bin/activate
 
-    (mvenv) $  pip install django whitenoise
+    (myvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
@@ -195,7 +195,7 @@ Dowiemy się więcej o plikach statycznych później, kiedy będziemy zmieniać 
 
 Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Polecenie to mówi Django, by zebrał wszystkie pliki statyczne, których potrzebuje na serwerze. W tym momencie chodzi głównie o pliki, które upiększają nam panel admina.
 
-    (mvenv) $ python manage.py collectstatic
+    (myvenv) $ python manage.py collectstatic
 
     You have requested to collect static files at the destination
     location as specified in your settings:
@@ -210,11 +210,11 @@ Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Po
 
 Wpisz "yes" i niech hula maszyna! Czy to nie piękne, jak komputer wypluwa z siebie dłuugie strony tekstu? Ja czasami wydaję ciche dźwięki, które mi się z tym kojarzą. Pip, pip, piiiip...
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
 
 
@@ -224,13 +224,13 @@ Oto kolejna różnica między Twoim komputerem a serwerem: serwer używa innej b
 
 Możemy zainicjować bazę danych na serwerze dokładnie w ten sam sposób, w jaki zrobiliśmy to na swoim komputerze, poleceniami `migrate` i `createsuperuser`:
 
-    (mvenv) $ python manage.py migrate
+    (myvenv) $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
 
 
-    (mvenv) $ python manage.py createsuperuser
+    (myvenv) $ python manage.py createsuperuser
 
 
 ## Publikowanie naszego bloga jako aplikacji internetowej
