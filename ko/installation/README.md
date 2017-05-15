@@ -46,4 +46,4 @@ data-id="chromebook_setup" data-collapse=true ces-->
 
 
 # 워크샵 즐기기!
-워크샵을 시작하면, 앞 부분의 내용을 모두 읽었다는 가정 하에 바로 [Django 프로젝트 시작하기!](../django_start_project/README.md) 시작할 거에요.
+워크샵을 시작하면, 앞 부분의 내용을 모두 읽었다는 가정 하에 바로 [나의 첫 번째 장고 프로젝트!](../django_start_project/README.md) 장부터 할 수 있게 준비해주세요.
