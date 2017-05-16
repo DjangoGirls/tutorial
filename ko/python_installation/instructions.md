@@ -16,7 +16,7 @@
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-> **Note**: 윈도우 이전 버전(윈도우7, Vista 등)에서 파이썬 3.5.x 설치오류가 생기면, 다음과 같이 해보세요. :
+> **Note**: 윈도우 이전 버전(윈도우7, Vista 등)에서 파이썬 3.5.x 설치오류가 생기면, 다음과 같이 해보세요.
 1. 모든 윈도우 업데이트 후 파이썬 3.5를 다시 설치합니다.
 2. 또는 [파이썬 이전 버전](https://www.python.org/downloads/windows/)을 설치합니다. 
 
@@ -41,7 +41,7 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-이미 파이썬이 설치되었을 겁니다. 설치된 버전을 확인하려면 콘솔을 열고 다음 명령을 입력하세요.
+이미 파이썬이 설치되었을 겁니다. 설치된 버전을 확인하려면 콘솔을 열고 다음 명령을 입력하세요. :
 
 {% filename %}command-line{% endfilename %}
 ```
