@@ -183,6 +183,6 @@ $ git pull
 [...]
 ```
 
-* 마지막으로 [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 **Reload(다시 불러오기)**를 누르세요.
+* 마지막으로 [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 **Reload(다시 불러오기)** 를 누르세요.
 
 배포를 마쳤습니다. 잘 작동되는지 확인해 보세요! 축하합니다.
