@@ -38,12 +38,11 @@
 
 {% raw %}`{% url 'post_detail' pk=post.pk %}`을 설명할 때가 왔군요! `{% %}`는 장고 템플릿 태그을 말합니다. URL를 생성해 사용해봅시다.{% endraw %}
 
-
 `blog.views.post_detail`는 `post_detail` *뷰* 경로입니다. `blog`는 응용프로그램(디렉터리 `blog`)의 이름인 것을 꼭 기억하세요. `views`는 `views.py`파일명이에요. 마지막 부분 `post_detail`는 *view* 이름입니다.
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
+`pk = post.pk`이란 무엇일까요? `pk`는 데이터베이스의 각 레코드를 식별하는 기본키(Prmiary Key)의 줄임말 입니다. Post 모델에서 기본키를 지정하지 않았기 때문에 장고는 `pk`라는 필드를 추가해 새로운 블로그 게시물이 추가될 때마다 그 값이 1,2,3 등으로 증가하게 됩니다.  Post 객체의 다른 필드 (제목, 작성자 등)에 액세스하는 것과 같은 방식으로 post.pk를 작성하여 기본 키에 액세스합니다 `post.pk`를 써서 기본키에 접근할 수 있고 같은 방법으로 `Post`객체내 다른 필드(`title`, `author`)에도 접근할 수 있습니다!
 
-http://127.0.0.1:8000/ 를 열어보세요. 오류 메세지가 나올 거에요. (아직 `post_detail` *뷰*를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요. :
+이제 http://127.0.0.1:8000/ 를 열어보세요. 아마 오류 메세지가 나올 거에요. (아직 `post_detail` *뷰*를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요. :
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
