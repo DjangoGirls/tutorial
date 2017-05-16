@@ -8,7 +8,7 @@
 
 사용 중인 컴퓨터 윈도우 운영체제가 32비트인지 64비트인지 확인하려면 https://support.microsoft.com/en-au/kb/827218 에서 확인하세요. 윈도우 용 파이썬은 https://www.python.org/downloads/windows/ 웹 사이트에서 다운로드 할 수 있습니다. "Latest Python 3 Release - Python x.x.x"링크를 클릭하세요. **64 비트** 버전의 Windows인 경우 **Windows x86-64 executable installer**를 다운로드하세요. 이외에는 **Windows x86 executable installer**을 다운로드하세요. 설치 프로그램을 다운로드 한 후에 실행(더블 클릭)하고 지시 사항을 따르세요.
 
-> **Note** 설치하는 동안 "Setup(설치하기)"이라고 표시된 창이 나타납니다. 다음과 같이 "Add Python 3.5 to PATH(python.exe를 경로에 추가)"체크 박스를 체크하고 "Install Now(지금 설치하기)"를 클릭하세요.
+> **Note** 설치하는 동안 "Setup(설치하기)"이라고 표시된 창이 나타납니다. 다음과 같이 "Add Python 3.5 to PATH(python3.5를 경로에 추가)"체크 박스를 체크하고 "Install Now(지금 설치하기)"를 클릭하세요.
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
@@ -29,4 +29,4 @@
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** OS X에서는 파이썬 설치하기 전, Mac 설정에서 App Store가 아닌 패키지를 설치할 수 있도록 해야합니다. 시스템 환경 설정 (응용 프로그램 폴더에 있음)으로 이동하여 "보안 및 개인 정보"를 클릭 한 다음 "일반"탭을 클릭하세요. "다운로드 한 응용 프로그램 허용"이 "Mac App Store"로 설정된 경우 "Mac App Store 및 확인된 개발자"로 변경하세요.
+> **Note** OS X에서는 파이썬 설치하기 전, Mac 설정에서 App Store가 아닌 패키지를 설치할 수 있도록 설정해야합니다. 시스템 환경 설정 (응용 프로그램 폴더에 있음)으로 이동하여 "보안 및 개인 정보"를 클릭 한 다음 "일반"탭을 클릭하세요. "다운로드 한 응용 프로그램 허용"이 "Mac App Store"로 설정된 경우 "Mac App Store 및 확인된 개발자"로 변경하세요.
