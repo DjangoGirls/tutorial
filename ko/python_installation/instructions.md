@@ -20,7 +20,7 @@
 1. 모든 윈도우 업데이트 후 파이썬 3.5를 다시 설치합니다.
 2. 또는 [파이썬 이전 버전](https://www.python.org/downloads/windows/)을 설치합니다. 
 
-버전이 낮은 파이썬 설치 시, 설치 화면이 위에 표시된 것과 약간 다르게 보일 수 있습니다. "Add Python 3.5. to PATH"를 보려면 아래로 스크롤 한 다음 왼쪽의 버튼을 클릭하고 "로컬 하드 드라이브에 설치"를 선택하세요.
+버전이 낮은 파이썬 설치 시, 설치 화면이 위에 표시된 것과 약간 다르게 보일 수 있습니다. "Add Python 3.5. to PATH"를 보려면 아래로 스크롤 한 다음 왼쪽의 버튼을 클릭하고 "Will be installed on local hard drive(로컬 하드 드라이브에 설치)"를 선택하세요.
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -30,3 +30,89 @@
 data-collapse=true ces-->
 
 > **Note** OS X에서는 파이썬 설치하기 전, Mac 설정에서 App Store가 아닌 패키지를 설치할 수 있도록 설정해야합니다. 시스템 환경 설정 (응용 프로그램 폴더에 있음)으로 이동하여 "보안 및 개인 정보"를 클릭 한 다음 "일반"탭을 클릭하세요. "다운로드 한 응용 프로그램 허용"이 "Mac App Store"로 설정된 경우 "Mac App Store 및 확인된 개발자"로 변경하세요.
+
+웹 사이트로 가서 파이썬 설치 파일을 다운 받으세요. : https://www.python.org/downloads/release/python-351/
+
+* *Mac OS X 64-bit/32-bit installer* 파일을 다운받습니다.
+* *python-3.5.1-macosx10.6.pkg*을 더블클릭해 설치합니다.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+이미 파이썬이 설치되었을 겁니다. 설치된 버전을 확인하려면 콘솔을 열고 다음 명령을 입력하세요.
+
+{% filename %}command-line{% endfilename %}
+```
+$ python3 --version
+Python 3.5.1
+```
+
+3.5.0 버전과 같이 '마이크로 버전'의 파이썬이 설치되어있는 경우 업그레이드 할 필요가 없습니다. 다른 버전의 파이썬을 설치하고 싶으면 아래와 같이하면 됩니다. :
+
+
+<!--endsec-->
+
+<!--sec data-title="Debian or Ubuntu" data-id="python_debian"
+data-collapse=true ces-->
+
+콘솔에 아래 명령어를 입력하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+$ sudo apt-get install python3.5
+```
+
+<!--endsec-->
+
+<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
+data-collapse=true ces-->
+
+
+콘솔에 아래 명령어를 입력하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+$ sudo yum install python3
+```
+
+<!--endsec-->
+
+<!--sec data-title="Fedora (22+)" data-id="python_fedora22"
+data-collapse=true ces-->
+
+콘솔에 아래 명령어를 입력하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+$ sudo dnf install python3
+```
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="python_openSUSE"
+data-collapse=true ces-->
+
+콘솔에 아래 명령어를 입력하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+$ sudo zypper install python3
+```
+
+<!--endsec-->
+
+설치가 성공적으로 마쳤는지 확인하려면, *터미널* 을 열고 `python3` 명령어를 입력해보세요.
+
+{% filename %}command-line{% endfilename %}
+```
+$ python3 --version
+Python 3.5.1
+```
+
+**주의:** 윈도우에서 `python3`명령어를 입력한 후 에러 메세지가 나온다면 `python`(`3`을 빼고)이라 입력해보고 파이썬 3.5버전인지 체크해보세요.
+
+----
+
+설치 도중 문제가 생기거나 잘되지 않으면 코치들에게 도움을 요청하세요! 가끔은 경험이 많은 분들에게 도움을 받는 것이 더 좋을 수 있습니다.
