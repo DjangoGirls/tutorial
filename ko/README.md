@@ -13,7 +13,7 @@
 > - 2차 : 2016. 6. 3. 
     [이수진](https://github.com/sujinleeme)
 > - 3차 : 2017. 5. 19.
-    [이수진](https://github.com/sujinleeme), [강현구](https://github.com/sujinleeme)
+    [이수진](https://github.com/sujinleeme)
 
 
 ## 환영합니다
