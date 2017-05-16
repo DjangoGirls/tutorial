@@ -12,11 +12,10 @@ data-collapse=true ces-->
 
 [git-scm.com](https://git-scm.com/)에서 다운받아 설치하세요. 
 
-> **Note** OS X 10.6, 10.7 또는 10.8을 사용하는 경우 다음 링크에서 git 버전을 설치해야합니다. : [Git installer for OS X Snow Leopard] (https://sourceforge.net/projects/git-osx-installer) /files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
-
+> **Note** OS X 10.6, 10.7 또는 10.8을 사용하는 경우 다음 링크에서 git 버전을 설치해야합니다. : [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 <!--endsec-->
 
-<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+<!--sec data-title="Debian / Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
