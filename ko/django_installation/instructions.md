@@ -2,9 +2,11 @@
 >
 > 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
 
+## 가상환경(Virtual environment)
+
 장고 설치 전, 개발 환경을 깔끔하게 관리하는 데 큰 도움이 되는 도구를 설치해보겠습니다. 이 단계를 건너뛸 수 있지만, 한번 직접 해보는 것을 추천합니다. 제대로 설치해야 나중에 문제가 발생하지 않거든요!
 
-자, 이제부터 **가상환경**(*virtualenv*라고 불러요)을 만들어보겠습니다. Virtualenv는 프로젝트 기초 전부를 Python/Django와 분리해줍니다. 다시 말해 웹사이트가 변경되어도 개발 중인 것에 영향을 미치지 않는다는 것입니다. 어때요, 깔끔하죠?
+자, 이제부터 **가상환경(Virtual environment)**(*줄여서 virtualenv*라고 불러요)을 만들어보겠습니다. Virtualenv는 프로젝트 기초 전부를 Python/Django와 분리해줍니다. 다시 말해 웹사이트가 변경되어도 개발 중인 것에 영향을 미치지 않는다는 것입니다. 어때요, 깔끔하죠?
 
 `virtualenv`를 만드는 데 필요한 것은 생성할 곳을 정하는 것뿐입니다. 예를 들면, home 디렉토리와 같은 곳이면 적당합니다. 윈도우 환경에서는 `C:\Users\Name`일 거에요. (`Name`이라는 것은 윈도우에 로그인할 때 사용한 아이디를 말합니다)
 
@@ -25,22 +27,19 @@ $ cd djangogirls
 $ python3 -m venv myvenv
 ```
 
-<!--sec data-title="Windows" data-id="virtualenv_installation_windows"
-data-collapse=true ces-->
+<!--sec data-title="Windows" data-id="virtualenv_installation_windows" data-collapse=true ces-->
 
-`virtualenv`를 생성하려면 console 창을 열고, (이전 장에서 얘기했는데, 기억나죠?) 그리고 `C:\Python34\python -m venv myvenv`를 실행해야해요. 아마도 화면에는 이런 것들이 보이겠죠?
+`virtualenv`를 생성하려면 console 창을 열고, (이전 장에서 얘기했는데, 기억나죠?) 그리고 `C:\Python35\python -m venv myvenv`를 실행해야해요. 아마도 화면에는 이렇게 보일 거에요. :
 
 {% filename %}command-line{% endfilename %}
 ```
 C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 ```
-
-여기서 `C:\Python34\python`은 파이썬이 설치된 디렉터리고, `myvenv`는 설치할 `가상환경`의 이름이에요. 이름은 마음대로 정할 수 있지만, 소문자여야 하고 공백은 없어야 하고 특수문자도 사용하면 안 돼요. 이름은 짧게 만드는 것이 좋아요. 자주 입력해야 하니까요.
+여기서 `C:\Python35\python`은 이전에 파이썬을 설치 한 디렉토리이고`myvenv`는`virtualenv`의 이름입니다. 다른 이름을 사용할 수 있지만 소문자를 사용하고 공백, 악센트 또는 특수 문자를 사용하지 마세요. 이름을 간단하게 쓰는 것도 좋은 생각입니다. 자주 입력해야 하니까요.
 
 <!--endsec-->
 
-<!--sec data-title="Linux / OS X" data-id="virtualenv_installation_linuxosx"
-data-collapse=true ces-->
+<!--sec data-title="Linux / OS X" data-id="virtualenv_installation_linuxosx" data-collapse=true ces-->
 
 리눅스와 맥에서 `virtualenv`를 생성하려면 간단하게 `python3 -m venv myvenv`를 실행하면 됩니다. 화면에 이렇게 나타날 거에요. :
 
@@ -60,20 +59,19 @@ $ python3 -m venv myvenv
 >You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >```
 >
-> In this case, follow the instructions above and install the `python3-venv` package:
+> 이 경우, 이 경우 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
 >{% filename %}command-line{% endfilename %}
 >```
 >$ sudo apt-get install python3-venv
 >```
 
-> __NOTE:__ Debian/Ubuntu에서 가상환경을 초기화할 때 아래와 같은 오류가  :
-
+> __NOTE:__ Debian/Ubuntu의 일부 버전에서 이와 같이 가상 환경을 초기화하면 현재 다음과 같은 오류가 발생합니다.  :
 >{% filename %}command-line{% endfilename %}
 >```
 >Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >```
 
-> To get around this, use the `virtualenv` command instead.
+> 이 문제를 해결하려면 `virtualenv` 명령를 사용하세요. :
 
 >{% filename %}command-line{% endfilename %}
 >```
@@ -81,14 +79,14 @@ $ python3 -m venv myvenv
 >$ virtualenv --python=python3.5 myvenv
 >```
 
-> __NOTE:__ If you get an error like
+> __NOTE:__ 아래와 같은 오류가 발생한다면
 
 >{% filename %}command-line{% endfilename %}
 >```
 >E: Unable to locate package python3-venv
 >```
 
-> then instead run:
+> 이 명령어를 입력하세요. :
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -102,26 +100,16 @@ $ python3 -m venv myvenv
 
 앞의 명령을 사용하면 `myvenv`라는 디렉터리가 만들어져요. (이름을 변경하면 그 이름의 디레토리가 만들어집니다) 그리고 그 디렉터리에 우리가 사용할 가상환경이 들어있어요. (디렉터리와 파일들이 있어요)
 
+<!--sec data-title="Windows" data-id="virtualenv_windows" data-collapse=true ces-->
 
-<!--sec data-title="Windows" data-id="virtualenv_windows"
-data-collapse=true ces-->
-
-다음과 같이 가상환경을 실행하세요.
-
-    C:\Users\Name\djangogirls> myvenv\Scripts\activate
-
-
-<!--sec data-title="Windows" data-id="virtualenv_windows"
-data-collapse=true ces-->
-
-Start your virtual environment by running:
+아래 명령어를 입력해 가상환경을 실행하세요. :
 
 {% filename %}command-line{% endfilename %}
 ```
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
-> __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
+> __NOTE:__ Windows 10 사용할 경우, Windows PowerShell에서 '이 스크립트는 이 시스템에서 실행되지 않습니다.'라는 오류 메시지가 표시 될 수 있습니다. 이 경우 "관리자 권한으로 실행"옵션을 사용하여 다른 Windows PowerShell을 엽니다. 그런 다음 가상 환경을 시작하기 전에 다음 명령을 입력하세요.
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -132,19 +120,19 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!--endsec-->
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Linux / OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+아래 명령어를 입력해 가상환경을 실행하세요. :
 
 {% filename %}command-line{% endfilename %}
 ```
 $ source myvenv/bin/activate
 ```
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+`myvenv`를 여러분이 선택한 `virtualenv` 이름으로 바꾸는 것을 잊지 마세요!
 
-> __NOTE:__ sometimes `source` might not be available. In those cases try doing this instead:
+> __NOTE:__ 가끔씩 `source`가 사용할 수 없을 수도 있습니다. 이 경우에는 아래와 같이 입력하세요. :
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -153,24 +141,23 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+콘솔의 프롬프트 앞에`(myvenv)`접두어가 붙어있다면 `virtualenv`가 시작되었음을 알 수 있어요.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+가상환경에서 작업 할 때,`python`은 자동으로 올바른 버전을 참조하므로 `python3` 대신`python`를 사용할 수 있습니다.
 
-OK, we have all important dependencies in place. We can finally install Django!
+의존성 설치를 모두 마쳤으니, 지금부터 장고를 설치할 수 있습니다!
 
-## Installing Django
+## 장고 설치하기
 
-Now that you have your `virtualenv` started, you can install Django.
+`virtualenv`를 실행하기 전, 장고를 설치합시다.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+그전에 장고를 설치하는 데 필요한 `pip`이 최신 버전인지 확인합니다. :
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~$ pip install --upgrade pip
 ```
-
-Then run `pip install django~=1.10.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
+그런 다음 `pip install django~=1.10.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -181,17 +168,15 @@ Installing collected packages: django
 Successfully installed django-1.10.4
 ```
 
-<!--sec data-title="Windows" data-id="django_err_windows"
-data-collapse=true ces-->
+<!--sec data-title="Windows" data-id="django_err_windows" data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Windows에서 pip를 사용할 때 오류가 발생하면, 프로젝트 경로 이름(예: `C:\Users\User Name\djangogirls`)에 공백, 액센트 또는 특수 문자가 포함되어 있는지 확인하세요. 그렇다면 공백, 악센트 또는 특수 문자가 없는 다른 경로를 사용하세요. (제안: `C:\djangogirls`). 새 디렉토리에 새 virtualenv를 만든 다음, 이전 가상 디렉토리를 삭제하고 위의 명령을 다시 시도하세요. virtualenv는 절대 경로를 사용하기 때문에 virtualenv 폴더를 이동해도 작동하지 않습니다. 
 
 <!--endsec-->
 
-<!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
-data-collapse=true ces-->
+<!--sec data-title="Windows 8 / Windows 10" data-id="django_err_windows8and10" data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> 장고를 설치하기 위해 위 명령어를 입력했다가 멈추면, 아래 명령어를 입력하세요. :
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -200,11 +185,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="django_err_linux"
-data-collapse=true ces-->
+<!--sec data-title="Linux" data-id="django_err_linux" data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
-
+> Ubuntu 12.04에서 pip를 사용하다 오류가 발생해 virtualenv에 pip를 재설치하려면 `python -m pip install -U --force-reinstall pip`를 실행하세요.
 <!--endsec-->
 
-잘했어요! 드디어 정말 장고 어플리케이션을 만들 준비가 끝났습니다!
+여기까지 입니다! 이제 정말 장고 애플리케이션을 생성해봅시다!
