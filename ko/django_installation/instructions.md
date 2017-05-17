@@ -6,13 +6,13 @@
 
 장고 설치 전, 개발 환경을 깔끔하게 관리하는 데 큰 도움이 되는 도구를 설치해보겠습니다. 이 단계를 건너뛸 수 있지만, 한번 직접 해보는 것을 추천합니다. 제대로 설치해야 나중에 문제가 발생하지 않거든요!
 
-자, 이제부터 **가상환경(Virtual environment)**(*줄여서 virtualenv*라고 불러요)을 만들어보겠습니다. Virtualenv는 프로젝트 기초 전부를 Python/Django와 분리해줍니다. 다시 말해 웹사이트가 변경되어도 개발 중인 것에 영향을 미치지 않는다는 것입니다. 어때요, 깔끔하죠?
+자, 이제부터 **가상환경(Virtual environment)**(*줄여서 virtualenv*라고 해요)을 만들어보겠습니다. Virtualenv는 프로젝트 기초 전부를 Python/Django와 분리해줍니다. 다시 말해 웹사이트가 변경되어도 개발 중인 것에 영향을 미치지 않는다는 것입니다. 어때요, 깔끔하죠?
 
 `virtualenv`를 만드는 데 필요한 것은 생성할 곳을 정하는 것뿐입니다. 예를 들면, home 디렉토리와 같은 곳이면 적당합니다. 윈도우 환경에서는 `C:\Users\Name`일 거에요. (`Name`이라는 것은 윈도우에 로그인할 때 사용한 아이디를 말합니다)
 
 > __NOTE:__ 윈도우에서 디렉토리 파일명에 악센트 또는 특수 문자가 포함되지 않도록 주의하세요. 사용자 이름에 악센트 부호가있는 문자가 들어 있으면 다른 디렉토리를 사용하세요. (예: `C:\djangogirls`)
 
-이 튜토리얼에서는 home 디렉터리 아래 `djangogirls`라는 디렉토리를 새로 만들어 사용하도록 할게요.
+이 튜토리얼에서는 home 디렉토리 아래 `djangogirls`라는 디렉토리를 새로 만들어 사용하도록 할게요.
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -29,19 +29,19 @@ $ python3 -m venv myvenv
 
 <!--sec data-title="Windows" data-id="virtualenv_installation_windows" data-collapse=true ces-->
 
-`virtualenv`를 생성하려면 console 창을 열고, (이전 장에서 얘기했는데, 기억나죠?) 그리고 `C:\Python35\python -m venv myvenv`를 실행해야해요. 아마도 화면에는 이렇게 보일 거에요. :
+`virtualenv`를 생성하려면 콘솔 창을 열고, (이전 장에서 얘기했는데, 기억나죠?) 그리고 `C:\Python35\python -m venv myvenv`를 실행하세요. 아마도 화면에 이렇게 보일 거에요. :
 
 {% filename %}command-line{% endfilename %}
 ```
 C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 ```
-여기서 `C:\Python35\python`은 이전에 파이썬을 설치 한 디렉토리이고`myvenv`는`virtualenv`의 이름입니다. 다른 이름을 사용할 수 있지만 소문자를 사용하고 공백, 악센트 또는 특수 문자를 사용하지 마세요. 이름을 간단하게 쓰는 것도 좋은 생각입니다. 자주 입력해야 하니까요.
+여기서 `C:\Python35\python`은 이전에 파이썬을 설치 한 디렉토리이고 `myvenv`는`virtualenv`의 이름입니다. 다른 이름을 사용해도 되지만 알파벳 소문자를 사용하고 공백, 악센트 또는 특수 문자는 사용하지 마세요. 가상환경 이름을 짧게 쓰는 것도 좋은 생각입니다. 자주 입력해야 하니까요.
 
 <!--endsec-->
 
 <!--sec data-title="Linux / OS X" data-id="virtualenv_installation_linuxosx" data-collapse=true ces-->
 
-리눅스와 맥에서 `virtualenv`를 생성하려면 간단하게 `python3 -m venv myvenv`를 실행하면 됩니다. 화면에 이렇게 나타날 거에요. :
+리눅스와 맥에서 `virtualenv`를 생성하려면 간단하게 `python3 -m venv myvenv`를 입력하면 됩니다. 화면에 이렇게 나타날 거에요. :
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -59,7 +59,7 @@ $ python3 -m venv myvenv
 >You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >```
 >
-> 이 경우, 이 경우 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
+> 이 경우, 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
 >{% filename %}command-line{% endfilename %}
 >```
 >$ sudo apt-get install python3-venv
@@ -86,7 +86,7 @@ $ python3 -m venv myvenv
 >E: Unable to locate package python3-venv
 >```
 
-> 이 명령어를 입력하세요. :
+> 이 명령어를 실행하세요. :
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -98,7 +98,7 @@ $ python3 -m venv myvenv
 
 ## 가상환경 사용하기
 
-앞의 명령을 사용하면 `myvenv`라는 디렉터리가 만들어져요. (이름을 변경하면 그 이름의 디레토리가 만들어집니다) 그리고 그 디렉터리에 우리가 사용할 가상환경이 들어있어요. (디렉터리와 파일들이 있어요)
+앞의 명령을 사용하면 `myvenv`라는 디렉토리가 만들어져요. (이름을 변경하면 그 이름의 디레토리가 만들어집니다) 그리고 그 디렉토리에 우리가 사용할 가상환경이 들어있어요. (디렉토리와 파일들이 있어요)
 
 <!--sec data-title="Windows" data-id="virtualenv_windows" data-collapse=true ces-->
 
