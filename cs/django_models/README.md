@@ -13,20 +13,20 @@ Pokud chceme modelovat kočku, vytvoříme objekt `kočka`, který má nějaké 
 `Kočka` má také některé akce: `předení`, `škrábání` nebo `žraní` (v němž dáváme kočce nějaké `kočičí granule`, které by mohlo být samostatný objekt s vlastnostmi, například `chuť`).
 
 ```
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+Cat
+--------
+color
+age
+mood
+owner
+purr()
+scratch()
+feed(cat_food)
 
 
-    CatFood
-    --------
-    taste
+CatFood
+--------
+taste
 ```  
 
 Základní představa je popsat skutečné věci v kódu vlastnostmi (nazývané `vlastnosti objektu/object properties`) a akcemi (nazývané `metody/methods`).
@@ -38,13 +38,13 @@ Musíme odpovědět na otázku: Co je blog post/příspěvek? Jaké by měl mít
 Určitě budeme v naše blogu potřebovat nějaký text s jeho obsahem a titulkem, že? Bylo by také dobré vědět, kdo příspěvek napsal, takže potřebujeme autora. Nakonec také chceme vědět, kdy byl příspěvek vytvořen a publikován.
 
 ```
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
+Post
+--------
+title
+text
+author
+created_date
+published_date
 ```  
 
 Jaký druh věcí můžeme s příspěvkem dělat? Bylo by hezké mít nějakou `metodu`, která publikuje příspěvek.
@@ -66,41 +66,41 @@ Model v databázi si lze představit jako tabulku s řádky (data) a sloupci (ú
 Abychom udržely pořádek, vytvoříme si samostatnou aplikaci uvnitř našeho projektu. Je velmi příjemné mít všechno zorganizované od samého začátku. Chceš-li vytvořit novou aplikaci, je třeba spustit následující příkaz v konzoli (z `djangogirls` adresáře, kde je `manage.py` soubor):
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
+(myvenv) ~/djangogirls$ python manage.py startapp blog
 ```  
 
 Zjistíš, že nový adresář `blog` nyní obsahuje řadu souborů. Adresáře a soubory v našem projektu by měly vypadat následovně:
 
 ```
-    djangogirls
-    ├── mysite
+djangogirls
+├── mysite
+|       __init__.py
+|       settings.py
+|       urls.py
+|       wsgi.py
+├── manage.py
+└── blog
+    ├── migrations
     |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
-    ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+    ├── __init__.py
+    ├── admin.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
 ```    
 
 Po vytvoření aplikace musíš také Djangu říct, že by ji měl použít. Uděláme to v souboru `mysite/settings.py`. Musíme najít `INSTALLED_APPS` a přidat řádek, který bude obsahovat `"blog",` `)`. Takže konečná konfigurace by měla vypadat takto:
 
 ```python
-    INSTALLED_APPS = (
-         'django.contrib.admin',
-         'django.contrib.auth',
-         'django.contrib.contenttypes',
-         'django.contrib.sessions',
-         'django.contrib.messages',
-         'django.contrib.staticfiles',
-         'blog',
-    )
+INSTALLED_APPS = (
+     'django.contrib.admin',
+     'django.contrib.auth',
+     'django.contrib.contenttypes',
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
+     'blog',
+)
 ```  
 
 ### Vytvoření modelu pro blog post
@@ -110,25 +110,25 @@ V souboru `blog/models.py` budeme definovat všechny objekty nazývané `modely`
 Otevři `blog/models.py`, odstraň vše, co v něm je, a vlož následující kód:
 
 ```python
-    from django.db import models
-    from django.utils import timezone
+from django.db import models
+from django.utils import timezone
 
 
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
 
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
-        def __str__(self):
-            return self.title
+    def __str__(self):
+        return self.title
 ```
 
 > Dvakrát si zkontroluj, že jsi použila dva znaky podtržítko(`_`) na každé straně `str`. Tato konvence se v Pythonu používá často. Někdy je také nazýváme "dunder" (zkratka pro "Double-UNDERscore").
@@ -163,21 +163,21 @@ Pokud ti něco stále ještě není jasné o modelech, neváhej se zeptat svého
 V posledním kroku přidáš náš nový model do databáze. Nejprve musíme dát Djangu vědět, že mám nějaké změny v modelu (které jsme právě vytvořily!). Napiš `Python manage.py makemigrations blog`. Celý příkaz bude vypadat takto:
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      0001_initial.py:
-      - Create model Post
+(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for 'blog':
+  0001_initial.py:
+  - Create model Post
 ```  
 
 Django pro nás připravil soubor migrace, který budeme muset aplikovat na naši databázi. Napiš `Python manage.py migrate blog` a výstup by měl vypadat takto:
 
 ```
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
+(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Rendering model states... DONE
+  Applying blog.0001_initial... OK
 ```  
 
 Hurá! Náš Post model je nyní v naší databázi! Bylo by hezké vidět ho v akci, že ano? Přeskoč na další kapitolu a podívej se, jak vypadá tvůj příspěvek!

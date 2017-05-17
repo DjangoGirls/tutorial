@@ -13,26 +13,26 @@ Již máme `Post` model, takže nebudeme muset přidávat nic k `models.py`.
 Začneme s přidáním odkazu do `blog/templates/blog/post_list.html` souboru. Zatím by měl vypadat takto:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
 ```  
 
 
 {% raw %}Chceme mít odkaz ze seznamu příspěvků na stránku detail příspěvku. Změňme `< h1 >< href ="">{{ post.title }}< /a></h1>` tak, aby odkazoval na stránku detailu příspěvku:{% endraw %}
 
 ```html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```  
 
 {% raw %}Čas k vysvětlení tajemného `{% url 'post_detail' pk=post.pk %}`. Jak asi tušíš, `{% %}` tato notace znamená, že používáme Django šablonovací značky. Tentokrát použijeme jednu, která pro nás vytvoří adresu URL.{% endraw %}
@@ -54,13 +54,13 @@ Chceme, aby se detail našeho prvního příspěvku zobrazil na této **URL**: h
 Pojďme vytvořit adresu URL v souboru `blog/urls.py` odkazující Django na *view* s názvem `post_detail`, který bude zobrazovat celý příspěvek blogu. Přidej řádek `url (r'^post/(?)P< pk>[0-9]+)/$', views.post_detail, name='post_detail'),` do souboru `blog/urls.py`. Tento soubor by měl vypadat takto:
 
 ```python
-     from django.conf.urls import url
-     from . import views
+ from django.conf.urls import url
+ from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-     ]
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+ ]
 ```  
 
 Tato část `^post/(?)P<pk>[0-9] +)/$` vypadá děsivě, ale bez obav - my ti to vysvětlíme: - začíná to `^` – "to znamená začátek řetězce" - `post/` znamená pouze to, že po začátku by adresa URL měla obsahovat slovo **post** a **/**. Zatím dobré. - `(?P<pk>[0-9]+)` - Tato část je složitější. Znamená to, že Django vezme vše, co zde bude umístěné, a přesune to do view do proměnné s názvem `pk`. `[0-9]` nám také říká, že to může být pouze číslo, ne písmeno (takže cokoliv mezi 0 a 9). `+` znamená, že je zde má být jedna nebo více číslic. Takže něco jako `http://127.0.0.1:8000/post //` není platné URL, ale `http://127.0.0.1:8000/post/1234567890/` je naprosto v pořádku! -`/` - pak potřebujeme **/** znovu znak / - `$` - znamená "konec" řetězce!
@@ -84,7 +84,7 @@ Tentokrát má náš *view* uveden dodatečný parametr `pk`. Náš *view* potř
 A teď chceme dostat jeden a pouze jeden příspěvek z blogu. K tomu můžeme použít querysets jako je tento:
 
 ```python
-    Post.objects.get(pk=pk)
+Post.objects.get(pk=pk)
 ```    
 
 Ale tento kód má problém. Pokud neexistuje žádný `Post` s `primárním klíčem` (`pk`), dostaneme velice nepěknou chybu!
@@ -106,15 +106,15 @@ Ok, čas k přidání *view* do našeho souboru `views.py`!
 Měla bys otevřít `blog/views.py` a přidat následující kód:
 
 ```python
-    from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 ```    
 
 Poblíž jiné řádky `from`. A na konec souboru přidáme náš *view*:
 
 ```python
-    def post_detail(request, pk):
-         post = get_object_or_404(Post, pk=pk)
-         return render(request, 'blog/post_detail.html', {'post': post})
+def post_detail(request, pk):
+     post = get_object_or_404(Post, pk=pk)
+     return render(request, 'blog/post_detail.html', {'post': post})
 ```    
 
 Ano. Je na čase aktualizovat stránku: http://127.0.0.1:8000 /
@@ -138,19 +138,19 @@ Vytvoříme soubor `blog/templates/blog` s názvem `post_detail.html`.
 Celý příkaz bude vypadat takto:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endblock %}
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
 ```  
 
 Opět rozšiřujeme `base.html`. V bloku `content` chceme zobrazit published_date příspěvku (pokud existuje), název a text. Ale měli bychom probrat některé důležité věci.
@@ -170,11 +170,11 @@ Hurá! Funguje to!
 Bylo by dobré zjistit, jestli naše webové stránky budou stále fungovat na PythonAnywhere. Zkusme je znovu nasadit.
 
 ```
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
 ```  
 
 *   Pak v [Bash konzoli PythonAnywhere][8]:
@@ -182,12 +182,12 @@ Bylo by dobré zjistit, jestli naše webové stránky budou stále fungovat na P
  [8]: https://www.pythonanywhere.com/consoles/
 
 ```
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
+$ cd my-first-blog
+$ source myvenv/bin/activate
+(myvenv)$ git pull
+[...]
+(myvenv)$ python manage.py collectstatic
+[...]
 ```  
 
 *   Nakonec jdi na [kartu Web][9] a klikni na **Reload**.

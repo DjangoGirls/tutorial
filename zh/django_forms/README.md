@@ -226,11 +226,11 @@ def post_new(request):
 把它添加到你文件的最开始处。现在我们可以说：创建完新帖子我们就转去`post_detail`页面。
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
     
 
-`blog.views.post_detail` 是我们想去的视图的名字。 还记得这个*视图* 需得具有一个 `pk` 变量吗? 为了把它传递给视图我们使用`pk=post.pk`, 其中 `post` 就是我们刚刚创立的博客帖子！
+`post_detail` 是我们想去的视图的名字。 还记得这个*视图* 需得具有一个 `pk` 变量吗? 为了把它传递给视图我们使用`pk=post.pk`, 其中 `post` 就是我们刚刚创立的博客帖子！
 
 好吧，我们已经说了很多了，但可能我们想看到整个*视图*现在看起来什么样，对吗？
 
@@ -243,7 +243,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -326,7 +326,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})

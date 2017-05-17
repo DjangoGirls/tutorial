@@ -1,6 +1,6 @@
 # Jeśli robisz ten kurs w domu
 
-Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa internet?](../how_the_internet_works/README.md)
+Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa Internet](../how_the_internet_works/README.md)
 
 Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić, więc zebraliśmy wszystkie potrzebne informacje w jedno miejsce.
 
@@ -40,10 +40,10 @@ Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto 
 
 Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
 
-  * [Jak działa internet](../how_the_internet_works/README.md)
+  * [Jak działa Internet](../how_the_internet_works/README.md)
 
   * [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md)
 
-  * [Wprowadzenie do Pythona](../intro_to_command_line/README.md)
+  * [Wprowadzenie do Pythona](../python_introduction/README.md)
 
   * [Czym jest Django?](../django/README.md)

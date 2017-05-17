@@ -72,7 +72,7 @@ Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home pa
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that to the import on the first line of the file.
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
 
 Your `mysite/urls.py` file should now look like this:
 
@@ -123,4 +123,4 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.9/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.10/topics/http/urls/

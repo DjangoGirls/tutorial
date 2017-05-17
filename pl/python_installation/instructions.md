@@ -1,6 +1,6 @@
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Potrzebujemy zainstalować Pythona 3.4, dlatego jeżeli masz już zainstalowaną jakąkolwiek starszą wersję, będziesz musiała ją uaktualnić.
+Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc cokolwiek zrobić w Django. Zacznijmy zatem od zainstalowania go! Potrzebujemy zainstalować Pythona 3.4, dlatego jeżeli masz już zainstalowaną jakąkolwiek starszą wersję, będziesz musiała ją uaktualnić.
 
 ### Windows
 

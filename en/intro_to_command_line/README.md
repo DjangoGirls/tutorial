@@ -124,6 +124,8 @@ $ pwd
 /Users/olasitarska
 ```
 
+> Note: 'pwd' stands for 'print working directory'.
+
 <!--endsec-->
 
 
@@ -134,11 +136,11 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+
 <!--endsec-->
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
-
-> Note: 'pwd' stands for 'print working directory'.
 
 ---
 
@@ -219,7 +221,7 @@ C:\Users\olasitarska\Desktop
 
 Here it is!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 ---
 
@@ -397,16 +399,17 @@ Cool, huh? :)
 
  Here is a summary of some useful commands:
 
-Command (Windows) | Command (Mac OS / Linux) | Description | Example
-------------- | ----- | ---------------------- | ---------------------------------------------
-exit          | exit  | close the window       | **exit**
-cd            | cd    | change directory       | **cd test**
-dir           | ls    | list directories/files | **dir**
-copy          | cp    | copy file              | **copy c:\test\test.txt c:\windows\test.txt**
-move          | mv    | move file              | **move c:\test\test.txt c:\windows\test.txt**
-mkdir         | mkdir | create a new directory | **mkdir testdirectory**
-rmdir (or del)| rm    | delete a file          | **del c:\test\test.txt**
-rmdir /S      | rm -r | delete a directory     | **rm -r testdirectory**
+Command (Windows) | Command (Mac OS / Linux) | Description                | Example
+----------------- | ------------------------ | -------------------------- | ---------------------------------------------
+exit              | exit                     | close the window           | **exit**
+cd                | cd                       | change directory           | **cd test**
+cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)
+dir               | ls                       | list directories/files     | **dir**
+copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**
+move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**
+mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**
+rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**
+rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 

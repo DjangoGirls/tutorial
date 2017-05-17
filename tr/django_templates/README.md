@@ -26,9 +26,9 @@ Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`
 
 Gördüğümüz sadece bu:
 
-```
+```  
 [<Post: Gönderi 2>, <Post: Gönderi 1>]
-```
+```    
 
 Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
 
@@ -36,7 +36,7 @@ Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'te
 {% for post in posts %}
     {{ post }}
 {% endfor %}
-```
+```    
 
 Bunu kendi template'imizle deneyelim.
 
@@ -48,17 +48,17 @@ Bunu kendi template'imizle deneyelim.
 
 ```html
 <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-
+   
 {% for post in posts %}
     <div>
-        <p>published: {{ post.yayinlama_tarihi }}</p>
+        <p>published: {{ post.yayinlanma_tarihi }}</p>
         <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaksbr }}</p>
+        <p>{{ post.yazi|linebreaks }}</p>
     </div>
 {% endfor %}
-``` 
+```   
 
 {% raw %}`{% for %}` ve `{% endfor %}` arasına koyduğunuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
@@ -66,7 +66,7 @@ Bunu kendi template'imizle deneyelim.
 
  [3]: images/step3.png
 
-`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaksbr` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
+`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaks` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
 
 ## Bir şey daha
 
@@ -77,13 +77,13 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 ```
 $ git status
 [...]
-$ git add --all .
+$ git add -A .
 $ git status
 [...]
 $ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."
 [...]
 $ git push
-```
+```    
 
 *   [PythonAnywhere][4]'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
@@ -93,13 +93,13 @@ $ git push
 $ cd ilk-blogum
 $ git pull
 [...]
-```
+```    
 
 *   Ve son olarak da [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı!
 
  [5]: https://www.pythonanywhere.com/web_app_setup/
 
-Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlama_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
+Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlanma_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
 
 Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 

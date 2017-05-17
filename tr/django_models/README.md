@@ -15,20 +15,20 @@ Eğer bir kediyi modellemek istiyorsak `Kedi` nesnesini oluştururuz ve bu nesne
 ```
 Kedi
 --------
-renk 
-yas 
-ruh_hali 
-sahibi 
-miyavla() 
-tirmala() 
-beslen(kedi_mamasi) 
+renk
+yas
+ruh_hali
+sahibi
+miyavla()
+tirmala()
+beslen(kedi_mamasi)
 
 KediMamasi
--------- 
+--------
 tat
-```
+```   
 
-Yani aslında ana fikir, gerçek nesneleri kod içinde özellikleriyle (`nesne özellikleri`) ve hareketleriyle (`metodlar`) tanımlamak.
+Yani aslında ana fikir, gerçek nesneleri kod içinde özellikleriyle (`nesne özellikleri`) ve hareketleriyle (`metodlar`) tanımlamak.).
 
 Öyleyse blog gönderilerini nasıl modelleyeceğiz? Bir blog tasarlamak istiyoruz degil mi?
 
@@ -42,8 +42,8 @@ Post
 baslik
 yazi
 yazar
-yaratilis_tarihi
-yayinlama_tarihi
+yaratilma_tarihi
+yayinlanma_tarihi
 ```
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `method` olması güzel olurdu, değil mi?
@@ -66,7 +66,7 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
 
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
-```    
+```
 
 İçinde birkaç dosya olan yeni bir `blog` klasörü fark edeceksiniz. Projemizdeki klasörler ve dosyalar şöyle olmalı:
 
@@ -79,19 +79,18 @@ djangogirls
 |       wsgi.py
 ├── manage.py
 └── blog
-    ├── migrations
-    |       __init__.py
-    ├── __init__.py
-    ├── admin.py
-    ├── models.py
-    ├── tests.py
-    └── views.py
+├── migrations
+|       __init__.py
+├── __init__.py
+├── admin.py
+├── models.py
+├── tests.py
+└── views.py
 ```
 
 Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını da söylememiz lazım. Bunu `mysite/settings.py` dosyası ile yapıyoruz. `INSTALLED_APPS` dosyasını bulup `'blog'` u tam `)` karakterinin üzerine yazmamız lazım. Sonunda dosya şuna benzemelidir:
 
 ```
-python
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -101,7 +100,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
 )
-```
+```    
 
 ### Post (Blog gönderisi) modeli oluşturma
 
@@ -109,8 +108,7 @@ INSTALLED_APPS = (
 
 Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
-```
-python
+```python
 from django.db import models
 from django.utils import timezone
 
@@ -119,22 +117,22 @@ class Post(models.Model):
     yazar = models.ForeignKey('auth.User')
     baslik = models.CharField(max_length=200)
     yazi = models.TextField()
-    yaratilis_tarihi = models.DateTimeField(
-            default=timezone.now)
-    yayinlama_tarihi = models.DateTimeField(
-            blank=True, null=True)
+    yaratilma_tarihi = models.DateTimeField(
+           default=timezone.now)
+    yayinlanma_tarihi = models.DateTimeField(
+           blank=True, null=True)
 
     def yayinla(self):
-        self. yayinlama_tarihi = timezone.now()
+        self.yayinlanma_tarihi = timezone.now()
         self.save()
 
     def __str__(self):
         return self.baslik
-```
+```    
 
-> `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. İki alt çizgi Python dilinde sık kullanılır. 
+> `str` nin her iki tarafında 2 tane alt çizgi (`_`) kullandığınızı kontrol edin. İki alt çizgi Python dilinde sık kullanılır.
 
-Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek olduğunu anlatacağız!
+Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek olduğunu tek tek anlatacağız!
 
 `from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani, başka yerlerde tanımlanmış kodları dosyalarımıza kopyalamak yerine, bu kodların bir kısmını `from ... import ...` ile projemize dahil edebiliriz.
 
@@ -144,14 +142,14 @@ Biraz korkunç görünüyor, değil mi? Ama merak etmeyin, her şeyin ne demek o
 *   `Post` modelimizin ismidir. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). Class isimleri her zaman büyük harf ile başlamalıdır.
 *   `models.Model` Post'un bir Django Modeli olduğunu belirtir, bu şekilde Django onu veritabanında tutması gerektiğini bilir.
 
-Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `baslik`, `yazi`, `yaratilis_tarihi`, `yayinlama_tarihi` ve `yazar` (Türkçe karakterleri kullanamadığımızı unutmayalım). Bunun için her alanın tipini belirtmemiz lazım (metin mi? Sayı mı? Tarih mi? Başka bir nesneye referans mı, ör. Kullanıcı?).
+Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `baslik`, `yazi`, `yaratilma_tarihi`, `yayinlanma_tarihi` ve `yazar` (Türkçe karakterleri kullanamadığımızı unutmayalım). Bunun için her alanın tipini belirtmemiz lazım (metin mi? Sayı mı? Tarih mi? Başka bir nesneye referans mı, ör. Kullanıcı?).
 
 *   `models.CharField` - kısıtlı uzunlukta metin tanımlamak için kullanılır.
 *   `models.TextField` - bu da uzun metinleri tanımlar. Blog gönderileri için biçilmiş kaftan, değil mi?
 *   `models.DateTimeField` -bu da gün ve saati tanımlamada kullanılır.
 *   `models.ForeignKey` - başka bir model ile bağlantı içerir.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
 
 Peki `def yayinla(self):` nedir? Daha önce bahsettiğimiz `yayinla` methodudur. `def` bir fonksiyon/method olduğunu belirtir, `yayinla` ise bu methodun adıdır. İstersen methodun ismini değiştirebilirsin. Methodlara isim verirken küçük harf kullanmaya ve boşluk yerine alt çizgi kullanmaya dikkat etmemiz gerekiyor. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
@@ -166,7 +164,7 @@ Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. İlk önce
 ```
 (myvenv) ~/djangogirls$ python manage.py makemigrations blog
 Migrations for 'blog':
-  0001_initial.py:
+0001_initial.py:
   - Create model Post
 ```
 
@@ -179,6 +177,6 @@ Operations to perform:
 Running migrations:
   Rendering model states... DONE
   Applying blog.0001_initial... OK
-```
+```  
 
 Yaşasın! Post modelimiz artık veritabanımızda! Görsek ne güzel olur, değil mi? Gelecek bölümde Post'un nasıl göründügünü göreceğiz!
