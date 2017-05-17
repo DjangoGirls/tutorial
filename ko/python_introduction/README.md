@@ -6,7 +6,7 @@
 
 ## 파이썬 프롬프트(Python prompt)
 
-> 집에서 학습하시는 분은 [파이썬 기초: 숫자, 문자열, 리스트, 변수, 에러](https://www.youtube.com/watch?v=MO63L4s-20U) 영상을 참고하세요.
+> 집에서 학습하시는 분은 [파이썬 기초: 숫자, 문자열, 리스트, 변수, 에러](https://www.youtube.com/watch?v=MO63L4s-20U) 영상을 보세요.
 
 파이썬과 놀아보려면 *커맨드 라인* 창을 켜야합니다. [Command Line 시작하기](../intro_to_command_line/README.md) 장에서 어떻게 하는지 배웠어요.
 
