@@ -44,7 +44,7 @@
                             {{ post.published_date }}
                         </div>
                         <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
+                        <p>{{ post.text|linebreaks }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -73,7 +73,11 @@
 </body>
 ```
 
+<<<<<<< HEAD
 {% raw %}`{% for post in posts %}{% endfor %}` 사이에 있는 모든 내용을 바꿨습니다.: {% endraw %}
+=======
+`{% for post in posts %}{% endfor %}` 사이에 있는 모든 내용을 바꿨습니다.
+>>>>>>> translation-2017
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -83,8 +87,12 @@
 
 이 코드는 무엇을 의미일까요? 우리는 `block`을 만든 거에요! 템플릿 태그 `{% block %}`으로 HTML 내에 들어갈 수 있는 공간을 만들었어요. `base.html`을 확장해 다른 템플릿에도 가져다 쓸 수 있게 한 거죠. 어떻게 동작하는지 보여 드릴게요.
 
+<<<<<<< HEAD
 이제 `base.html`을 파일을 저장을 하고, `blog/templates/blog/post_list.html` 파일을 다시 엽니다. 
 {% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 내용 전체를 지우세요. 그럼 아래와 같이 될 겁니다. :{% endraw %}
+=======
+이제 파일을 저장을 하고, `blog/templates/blog/post_list.html` 파일을 다시 엽니다. body 태그 안에 있는 모든 내용을 지우고, `<div class="page-header"></div>`도 지웁니다. 그러면 파일은 아래처럼 될 거에요.
+>>>>>>> translation-2017
 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -95,7 +103,7 @@
             {{ post.published_date }}
         </div>
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endfor %}
 ```
@@ -105,6 +113,7 @@
 
 {% raw %}블록 태그가 `base.html`파일의 태그와 일치해야겠죠. 또 콘텐츠 블록에 속한 모든 코드를 포함하게 만들어야 할 거에요. 이를 위해서 `{% block content %}`와 `{% endblock content %}`사이에 모든 코드를 넣으세요. 이렇게 말이죠. : {% endraw %}
 
+<<<<<<< HEAD
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% block content %}
@@ -121,6 +130,12 @@
 ```
 
 한 가지만 남았습니다. 이 두 템플릿을 연결해야해요. 지금까지 실습한 내용이 바로 확장 템플릿의 전부입니다! 확장 태그를 파일 맨 처음에 추가합니다. 아래와 같이요. :
+=======
+    {% extends 'blog/base.html' %}
+
+
+`post_list.html` 파일에 있는 {% raw %}는 이제 `base.html` 템플릿을 확장했음을 의미합니다. 이제 한 가지만 더 하면 되어요.: `{% block content %}`과 `{% endblock content %}` 사이에 (우리가 방금 추가한 행들을 빼고) 모든 것을 넣습니다. 아래 처럼요.{% endraw %}
+>>>>>>> translation-2017
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
@@ -133,7 +148,7 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 {% endblock %}
