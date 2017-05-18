@@ -3,15 +3,19 @@
 이 중 내가 사용하고 싶은 것을 선택해 사용해도 되지만, 여러분의 코치가 어떤 프로그램을 사용하는지 물어보세요. 같은 프로그램을 사용하면 도움받기 수월해질 거에요.
 
 ## Gedit
-[다운받기](https://wiki.gnome.org/Apps/Gedit#Download)
 Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
 
+[다운받기](https://wiki.gnome.org/Apps/Gedit#Download)
+
 ## Sublime Text 3
-[다운받기](https://www.sublimetext.com/3)
 Sublime Text는 가장 널리 알려진 프로그램으로 무료로 사용할 수 있어요. 설치와 사용이 편리하고 모든 운영체제에서 쓸 수 있어요.
 
+[다운받기](https://www.sublimetext.com/3)
+
 ## Atom
-[다운받기](https://atom.io/) Atom은 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
+Atom은 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
+
+[다운받기](https://atom.io/) 
 
 ## 왜 코드 에디터를 설치해야 하나요?
 워드나 노트패드가 있는데도, 굳이 코드 에디터 소프트웨어를 설치해야 하는 이유가 궁금할 거에요.
