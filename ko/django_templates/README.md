@@ -96,8 +96,6 @@ $ git pull
 
 * 마지막으로 [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 **Reload**를 누르세요. 업데이트 내용이 보여야 해요! PythonAnywhere 사이트의 블로그 게시물이 로컬 서버에 호스팅 된 블로그에 나타나는 게시물과 일치하지 않는 것이 정상입니다. 로컬 컴퓨터와 PythonAnywhere의 데이터베이스는 동기화되지 않습니다.
 
- [5]: 
-
 축하합니다! 이제 장고 관리자 페이지로 가서 새 블로그 글을 추가하고(게시일을 추가하는 것을 잊지 마세요!) https://yourname.pythonanywhere.com/admin 로 가야하는 것을 잊지마세요. 새로고침하면 새 글이 보일 거에요.
 
 잘 작동하니까 멋지죠? 잘 해낸 여러분들이 참 자랑스러워요! 잠시 쉬고 오세요. :)
