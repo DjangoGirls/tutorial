@@ -27,7 +27,7 @@ Essayez de faire la même chose avec votre template `blog/templates/blog/post_li
 Comme vous pouvez le voir, tout ce que nous avons, c'est ceci :
 
 ```python
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous rappeler comment afficher des listes en Python. Si vous avez un trou de mémoire, allez voir dans le chapitre **Introduction à Python**. Vous avez trouvé ? Avec des boucles ! Dans un template Django, vous pouvez les écrire de la façon suivante :
