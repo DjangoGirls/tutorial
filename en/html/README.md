@@ -28,6 +28,16 @@ blog
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
+Now open `mysite/settings.py` and find the line that contains `TEMPLATES`. You need to define path in `DIRS: []` to find `templates`.
+For example:
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+'DIRS': [os.path.join(BASE_DIR, 'templates')]
+```
+
+This will tell Django where to find your `templates`.
+
 See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
