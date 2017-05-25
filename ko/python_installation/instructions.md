@@ -69,20 +69,7 @@ $ sudo apt-get install python3.5
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="python_fedora_ko"
-data-collapse=true ces-->
-
-
-콘솔에 아래 명령어를 입력하세요. :
-
-{% filename %}command-line{% endfilename %}
-```
-$ sudo yum install python3
-```
-
-<!--endsec-->
-
-<!--sec data-title="Fedora (22+)" data-id="python_fedora22_ko"
+<!--sec data-title="Fedora" data-id="python_fedora_ko"
 data-collapse=true ces-->
 
 콘솔에 아래 명령어를 입력하세요. :

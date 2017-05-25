@@ -28,17 +28,7 @@ $ sudo apt-get install git
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21"
-data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-```bash
-$ sudo yum install git
-```
-
-<!--endsec-->
-
-<!--sec data-title="Fedora 22+" data-id="git_install_fedora_22"
+<!--sec data-title="Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}

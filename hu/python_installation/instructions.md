@@ -27,14 +27,7 @@ Ha még nincs Pythonod, vagy másik verziót szeretnél telepíteni, így tehete
     $ sudo apt-get install python3.4
     
 
-#### Fedora (21-es verzióig)
-
-Írd be az alábbi programot a konzolba:
-
-    $ sudo yum install python3.4
-    
-
-#### Fedora (22+)
+#### Fedora
 
 Írd be az alábbi programot a konzolba:
 
