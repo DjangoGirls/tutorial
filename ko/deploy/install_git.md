@@ -4,7 +4,9 @@ Git이란 "버전 관리 시스템(version control system)"으로 많은 프로�
 
 <!--sec data-title="Windows" data-id="git_install_windows"
 data-collapse=true ces-->
+
 Git은 [git-scm.com](https://git-scm.com/)에서 내려받을 수 있습니다. 설치는 쉽답니다. 딱 한 단계만 빼고 기본 설정대로 `다음 다음 다음`을 계속 눌러주면 쉽게 설치할 수 있어요. 다섯 번째 `PATH 환경 설정(Adjusting your PATH environment)`화면에서 주의하세요. 윈도우 커맨드라인에서 `Git과 유닉스 도구를 실행(Run Git and associated Unix tools from the Windows command-line)`을 선택하세요. 나머지는 모두 기본 설정대로 해도 됩니다. `윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings)`를 체크하는 것도 좋습니다.
+
 <!--endsec-->
 
 <!--sec data-title="OS X" data-id="git_install_OSX"
@@ -13,6 +15,8 @@ data-collapse=true ces-->
 [git-scm.com](https://git-scm.com/)에서 다운받아 설치하세요. 
 
 > **Note** OS X 10.6, 10.7 또는 10.8을 사용하는 경우 다음 링크에서 git 버전을 설치해야합니다. : [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+
 <!--endsec-->
 
 <!--sec data-title="Debian / Ubuntu" data-id="git_install_debian_ubuntu"

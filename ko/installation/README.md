@@ -12,12 +12,12 @@
 
 우리는 워크숍 하루 동안 나만의 블로그를 완성해 볼거에요. 워크숍 사전에 모든 설치가 완벽하게 끝냈다면, 온종일 코딩할 준비가 된 거랍니다.
 
-<!--sec data-title="Chromebook setup (if you're using one)"
+<!--sec data-title="Chromebook 사용자"
 data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 
-# 파이썬 설치하기
+# Python 설치하기
 {% include "/python_installation/instructions.md" %}
 
 # virtualenv 환경 설정 및 Django 설치하기

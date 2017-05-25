@@ -40,7 +40,8 @@
 
 > 만약 집에서 혼자 튜토리얼을 따라하다 문제가 생겼지만 주변에 도움받을 사람이 없다면 이 곳에서 질문하세요 : [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 코치와 워크샵 참가자들은 여러분들을 도와줄 거에요! 어떤 질문이든 주저하지 말고 물어보세요!
 
-자, 이제 그럼 어서 시작해볼까요.](./how_the_internet_works/README.md)
+자, [이제 그럼 어서 시작해볼까요.](./how_the_internet_works/README.md)
+
 
 ## 집에서 튜토리얼 따라하기
 장고걸스 워크샵에서 모든 분들을 만나뵙고 싶지만, 참석하기 어려운 분들이 있다는 것을 잘 알고 있어요. 그래서 워크샵에 참석하지 못하는 분들은 집에서 튜토리얼을 보며 자습하시길을 권장하고 있어요. 혼자서도 집에서 튜토리얼을 보며 학습하실 수 있도록 비디오 동영상을 만들고 있어요. [Coding is for girls 유투브 채널](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A)에서 보실 수 있고, 앞으로 더 많은 영상들을 보여드릴 예정입니다.

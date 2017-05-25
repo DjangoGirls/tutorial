@@ -1,12 +1,13 @@
 # 파이썬 시작하기
 
-> 이 장의 일부는 [Geek Girls Carrots 튜토리얼](https://github.com/ggcarrots/django-carrots)을 기초로 작성되었습니다. 
+> **Note** 이 장의 일부는 [Geek Girls Carrots 튜토리얼](https://github.com/ggcarrots/django-carrots)을 기초로 작성되었습니다. 
+
 
 자, 지금부터 코딩 한번 해볼까요?
 
 ## 파이썬 프롬프트(Python prompt)
 
-> 집에서 학습하시는 분은 [파이썬 기초: 숫자, 문자열, 리스트, 변수, 에러](https://www.youtube.com/watch?v=MO63L4s-20U) 영상을 보세요.
+> **Note** 집에서 학습하시는 분은 [파이썬 기초: 숫자, 문자열, 리스트, 변수, 에러](https://www.youtube.com/watch?v=MO63L4s-20U) 영상을 보세요.
 
 파이썬과 놀아보려면 *커맨드 라인* 창을 켜야합니다. [Command Line 시작하기](../intro_to_command_line/README.md) 장에서 어떻게 하는지 배웠어요.
 
@@ -548,7 +549,7 @@ False
 
 # 코드 저장하기!
 
-> 집에서 학습하는 분들은 [파이썬 기초: 파일 저장 및 "If" 조건문](https://www.youtube.com/watch?v=dOAg6QVAxyk) 영상을 보세요.
+> **Note** 집에서 학습하는 분들은 [파이썬 기초: 파일 저장 및 "If" 조건문](https://www.youtube.com/watch?v=dOAg6QVAxyk) 영상을 보세요.
 
 
 지금까지 우리는 인터프리터(interpreter)에서 파이썬 코드를 입력해 왔어요. 한 번에 코드 한 줄만 입력할 수 있었어요. 일반적으로 프로그램은 파일로 저장되어 프로그래밍 언어 **인터프리터(interpreter)** 또는 **컴파일러(complier)**로 실행됩니다. 지금까지 우리는 파이썬 **인터프리터**에서 한 줄씩 코드를 입력해 프로그램을 실행시켰어요. 이제 앞으로는 한 줄 이상 더 많은 코드를 작성해 실행해 볼 거에요. 빨리 해볼게요.
@@ -749,7 +750,7 @@ Perfect, I can hear all the details
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-# Change the volume if it's too loud or too quiet
+# volume 값을 바꿔보세요
 if volume < 20 or volume > 80:
     volume = 50
     print("That's better!")
@@ -770,11 +771,11 @@ if volume < 20 or volume > 80:
 
 ## 나만의 함수 만들기!
 
-> 집에서 학습하는 분들은 [파이썬 기초: 함수](https://www.youtube.com/watch?v=5owr-6suOl0) 영상을 보세요.
+> **Note** 집에서 학습하는 분들은 [파이썬 기초: 함수](https://www.youtube.com/watch?v=5owr-6suOl0) 영상을 보세요.
 
 앞에서 했던 `len()`와 같은 함수를 사용했었죠? 지금부터는 직접 함수를 만드는 법을 배울 거에요!
 
-함수는 파이썬이 명령어의 나열이에요. 파이썬의 각 함수는 `def`로 시작하고, 이름을 붙일 수 있고, 여러 매개변수를 가질 수 있어요. 쉬운 것부터 시작할게요. **python_intro.py**파일을 열어 코드를 다음과 같이 고치세요.
+함수는 파이썬이 명령어의 나열이에요. 파이썬의 각 함수는 `def`로 시작하고, 이름을 붙일 수 있고, 여러 매개변수를 가질 수 있어요. 쉬운 것부터 시작할게요. **python_intro.py** 파일을 열어 코드를 다음과 같이 고치세요.
 
 {% filename %}python_intro.py{% endfilename %}
 ```python

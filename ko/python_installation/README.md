@@ -10,7 +10,9 @@
 
 > **Note** 크롬북 사용자는 이번 장을 건너뛰고,  [크롬북에서 설치하기](../chromebook_setup/README.md) 장으로 넘어가세요.
 
+
 > **Note** 설치를 마친 분은 다음 장으로 넘어가세요!
+
 
 {% include "/python_installation/instructions.md" %}
 
