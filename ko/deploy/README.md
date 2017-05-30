@@ -10,12 +10,8 @@
 
 로컬컴퓨터, Github, Pythonanywhere 이 세 곳은 모두 중요해요. 로컬 컴퓨터는 개발 및 테스트를 수행하는 곳이 될 것입니다. 개발이 완료되면 프로그램 복사본을 GitHub에 저장합니다. 웹사이트는 PythonAnywhere에 있고 GitHub에서 코드 사본을 업데이트할 거에요.
 
-# Git
+# Git 설치하기
 > **Note** 이미 설치가 완료되었다면, 다시 할 필요가 없어요. 다음 장으로 넘어가서 Git 저장소를 만드는 것부터 시작하세요.
-
-{% include "/deploy/install_git.md" %}
-
-## Git 설치하기
 
 {% include "/deploy/install_git.md" %}
 
@@ -200,7 +196,6 @@ Successfully installed django-1.10.4
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-
 ### PythonAnywhere에서 데이터베이스 생성하기
 
 컴퓨터와 서버가 다른 점이 또 하나 있어요. 바로 다른 데이터베이스를 사용한다는 점이에요. 그래서 사용자 계정과 글은 서버와 여러분의 컴퓨터와 다를 수 있어요.
@@ -250,7 +245,7 @@ PythonAnywhere 설정 화면으로 이동할 거에요. 서버 앱에 변경사�
 import os
 import sys
 
-path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
+path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # PythonAnywhere 계정으로 바꾸세요.
 if path not in sys.path:
     sys.path.append(path)
 

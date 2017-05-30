@@ -1,6 +1,6 @@
 # 인터넷은 어떻게 작동할까요
 
-> 이번 장은 Jessica McKellar의 글 ["How the internet works"](http://web.mit.edu/jesstess/www/)을 기초로 작성되었습니다. 
+> **Note** 이번 장은 Jessica McKellar의 글 ["How the internet works"](http://web.mit.edu/jesstess/www/)을 기초로 작성되었습니다. 
 
 우리는 매일 인터넷을 사용합니다. 그러나 브라우저 주소창에 [http://djangogirls.org](http://djangogirls.org)를 입력하고 `엔터`키를 누르면 어떤 일이 일어나는지 알고 있나요?
 

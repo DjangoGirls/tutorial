@@ -1,8 +1,9 @@
 # 나의 첫 번째 장고 프로젝트!
 
-> 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
->
-> 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
+> **Note** 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
+
+
+> **Note** 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
 
 아주 간단한 블로그 사이트를 만들어 볼 거예요!
 
@@ -93,7 +94,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: 크롬북 사용자는, `settings.py` 맨 마지막 줄에 아래 코드를 추가하세요. :
+> **Note** 크롬북 사용자는, `settings.py` 맨 마지막 줄에 아래 코드를 추가하세요. :
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
 ## 데이터베이스 설정하기
@@ -180,7 +181,8 @@ https://django-girls-<your cloud9 username>.c9users.io
 
 웹 서버가 실행되는 동안 추가 명령을 입력 할 수있는 새로운 명령어 프롬프트가 표시되지 않습니다. 새 텍스트를 터미널에서 입력할 수 있지만 명령은 실행되지 않습니다. 웹 서버가 들어오는 요청을 수신 대기하기 위해 지속적으로 실행하고 있기 때문이에요.
 
-> 앞에서 <b>인터넷은 어떻게 작동될까요</b> 장에서 웹 서버에 대해 배웠었어요.
+> <b>인터넷은 어떻게 작동될까요</b> 장에서 웹 서버에 대해 배웠었어요.
+
 
 웹 서버가 실행되는 동안 추가 명령을 입력하려면 새 터미널 창을 열고 virtualenv를 활성화하세요. 웹 서버를 중지하려면 실행중인 창으로 다시 전환하고 CTRL + C - Control+C 키를 함께 누르세요. (윈도우에서는 Ctrl + Break를 눌러야 할 수도 있습니다)
 

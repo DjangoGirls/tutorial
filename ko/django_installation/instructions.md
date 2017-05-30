@@ -1,6 +1,6 @@
-> 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
->
-> 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
+> **Note** 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
+
+> **Note** 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
 
 ## 가상환경(Virtual environment)
 
@@ -10,7 +10,7 @@
 
 `virtualenv`를 만드는 데 필요한 것은 생성할 곳을 정하는 것뿐입니다. 예를 들면, home 디렉토리와 같은 곳이면 적당합니다. 윈도우 환경에서는 `C:\Users\Name`일 거에요. (`Name`이라는 것은 윈도우에 로그인할 때 사용한 아이디를 말합니다)
 
-> __NOTE:__ 윈도우에서 디렉토리 파일명에 악센트 또는 특수 문자가 포함되지 않도록 주의하세요. 사용자 이름에 악센트 부호가있는 문자가 들어 있으면 다른 디렉토리를 사용하세요. (예: `C:\djangogirls`)
+> **Note** 윈도우에서 디렉토리 파일명에 악센트 또는 특수 문자가 포함되지 않도록 주의하세요. 사용자 이름에 악센트 부호가있는 문자가 들어 있으면 다른 디렉토리를 사용하세요. (예: `C:\djangogirls`)
 
 이 튜토리얼에서는 home 디렉토리 아래 `djangogirls`라는 디렉토리를 새로 만들어 사용하도록 할게요.
 
@@ -50,51 +50,50 @@ $ python3 -m venv myvenv
 
 여기서 `myvenv` 는 `가상환경`의 이름이에요. 이름은 마음대로 정할 수 있지만, 소문자여야 하고 공백은 없어야 해요. 이름은 짧게 만드는 게 좋아요. 자주 입력해야 하니까요.
 
-> __NOTE:__ Debian/Ubuntu에서 아래와 같은 오류가 발생할 수 있습니다. :
+> **Note** Debian/Ubuntu에서 아래와 같은 오류가 발생할 수 있습니다. :
 
->{% filename %}command-line{% endfilename %}
->```
->The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
->    apt-get install python3-venv
->You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
->```
->
-> 이 경우, 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
->{% filename %}command-line{% endfilename %}
->```
->$ sudo apt-get install python3-venv
->```
+{% filename %}command-line{% endfilename %}
+```
+The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+    apt-get install python3-venv
+You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+```
 
-> __NOTE:__ Debian/Ubuntu의 일부 버전에서 이와 같이 가상 환경을 초기화하면 현재 다음과 같은 오류가 발생합니다.  :
->{% filename %}command-line{% endfilename %}
->```
->Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
->```
+이 경우, 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
+{% filename %}command-line{% endfilename %}
+```
+$ sudo apt-get install python3-venv
+```
 
-> 이 문제를 해결하려면 `virtualenv` 명령를 사용하세요. :
+> **Note** Debian/Ubuntu의 일부 버전에서 이와 같이 가상 환경을 초기화하면 현재 다음과 같은 오류가 발생합니다. :
+{% filename %}command-line{% endfilename %}
+```
+Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+```
 
->{% filename %}command-line{% endfilename %}
->```
->$ sudo apt-get install python-virtualenv
->$ virtualenv --python=python3.5 myvenv
->```
+이 문제를 해결하려면 `virtualenv` 명령를 사용하세요. :
 
-> __NOTE:__ 아래와 같은 오류가 발생한다면
+{% filename %}command-line{% endfilename %}
+```
+$ sudo apt-get install python-virtualenv
+$ virtualenv --python=python3.5 myvenv
+```
 
->{% filename %}command-line{% endfilename %}
->```
->E: Unable to locate package python3-venv
->```
+> **Note** 아래와 같은 오류가 발생한다면
 
-> 이 명령어를 실행하세요. :
->
->{% filename %}command-line{% endfilename %}
->```
->sudo apt install python3.5-venv
->```
+{% filename %}command-line{% endfilename %}
+```
+E: Unable to locate package python3-venv
+```
+
+이 명령어를 실행하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+sudo apt install python3.5-venv
+```
 
 <!--endsec-->
-
 
 ## 가상환경 사용하기
 
@@ -109,14 +108,14 @@ $ python3 -m venv myvenv
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
-> __NOTE:__ Windows 10 사용할 경우, Windows PowerShell에서 '이 스크립트는 이 시스템에서 실행되지 않습니다.'라는 오류 메시지가 표시 될 수 있습니다. 이 경우 "관리자 권한으로 실행"옵션을 사용하여 다른 Windows PowerShell을 엽니다. 그런 다음 가상 환경을 시작하기 전에 다음 명령을 입력하세요.
->
->{% filename %}command-line{% endfilename %}
->```
->C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
->     Execution Policy Change
->     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
->```
+> **Note** Windows 10 사용할 경우, Windows PowerShell에서 '이 스크립트는 이 시스템에서 실행되지 않습니다.'라는 오류 메시지가 표시 될 수 있습니다. 이 경우 "관리자 권한으로 실행"옵션을 사용하여 다른 Windows PowerShell을 엽니다. 그런 다음 가상 환경을 시작하기 전에 다음 명령을 입력하세요.
+
+{% filename %}command-line{% endfilename %}
+```
+C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+     Execution Policy Change
+     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+```
 
 <!--endsec-->
 
@@ -132,12 +131,12 @@ $ source myvenv/bin/activate
 
 `myvenv`를 여러분이 선택한 `virtualenv` 이름으로 바꾸는 것을 잊지 마세요!
 
-> __NOTE:__ 가끔씩 `source`가 사용할 수 없을 수도 있습니다. 이 경우에는 아래와 같이 입력하세요. :
->
->{% filename %}command-line{% endfilename %}
->```
->$ . myvenv/bin/activate
->```
+> **Note** 가끔씩 `source`가 사용할 수 없을 수도 있습니다. 이 경우에는 아래와 같이 입력하세요. :
+
+{% filename %}command-line{% endfilename %}
+```
+$ . myvenv/bin/activate
+```
 
 <!--endsec-->
 
@@ -170,18 +169,13 @@ Successfully installed django-1.10.4
 
 <!--sec data-title="Windows" data-id="django_err_windows" data-collapse=true ces-->
 
-> Windows에서 pip를 사용할 때 오류가 발생하면, 프로젝트 경로 이름(예: `C:\Users\User Name\djangogirls`)에 공백, 액센트 또는 특수 문자가 포함되어 있는지 확인하세요. 그렇다면 공백, 악센트 또는 특수 문자가 없는 다른 경로를 사용하세요. (제안: `C:\djangogirls`). 새 디렉토리에 새 virtualenv를 만든 다음, 이전 가상 디렉토리를 삭제하고 위의 명령을 다시 시도하세요. virtualenv는 절대 경로를 사용하기 때문에 virtualenv 폴더를 이동해도 작동하지 않습니다. 
+> **Note** Windows에서 pip를 사용할 때 오류가 발생하면, 프로젝트 경로 이름(예: `C:\Users\User Name\djangogirls`)에 공백, 액센트 또는 특수 문자가 포함되어 있는지 확인하세요. 그렇다면 공백, 악센트 또는 특수 문자가 없는 다른 경로를 사용하세요. (제안: `C:\djangogirls`). 새 디렉토리에 새 virtualenv를 만든 다음, 이전 가상 디렉토리를 삭제하고 위의 명령을 다시 시도하세요. virtualenv는 절대 경로를 사용하기 때문에 virtualenv 폴더를 이동해도 작동하지 않습니다. 
 
 <!--endsec-->
 
 <!--sec data-title="Windows 8 / Windows 10" data-id="django_err_windows8and10" data-collapse=true ces-->
 
-> 장고를 설치하기 위해 위 명령어를 입력했다가 멈추면, 아래 명령어를 입력하세요. :
->
->{% filename %}command-line{% endfilename %}
->```
->C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
->```
+> Windows에서 pip를 사용할 때 오류가 발생하면, 프로젝트 경로 이름(예: `C:\Users\User Name\djangogirls`)에 공백, 액센트 또는 특수 문자가 포함되어 있는지 확인하세요. 그렇다면 공백, 악센트 또는 특수 문자가 없는 다른 경로를 사용하세요. (제안: `C:\djangogirls`). 새 디렉토리에 새 virtualenv를 만든 다음, 이전 가상 디렉토리를 삭제하고 위의 명령을 다시 시도하세요. virtualenv는 절대 경로를 사용하기 때문에 virtualenv 폴더를 이동해도 작동하지 않습니다. 
 
 <!--endsec-->
 
