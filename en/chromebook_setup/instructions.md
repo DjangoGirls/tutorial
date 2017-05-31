@@ -41,7 +41,8 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
-sudo apt install python3.5-venv
+sudo apt-get update
+sudo apt-get install python3.5-venv
 ```
 
 If this still doesn't work, ask your coach for some help.
