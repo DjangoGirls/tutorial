@@ -392,7 +392,7 @@ Já ouviu a expressão "comparar maçãs com laranjas"? Vamos tentar o equivalen
     
 
 Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str`).
-Em vez disso, ele mostrou um <strong>TypeError</strong> e nos disse que os dois tipos não podem ser comparados juntos.</p>
+Em vez disso, ele mostrou um <strong>TypeError</strong> e nos disse que os dois tipos não podem ser comparados juntos.
 
 <h2>Booleano</h2>
 
