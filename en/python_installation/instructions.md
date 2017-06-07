@@ -77,6 +77,8 @@ Use this command in your console:
 $ sudo dnf install python3
 ```
 
+If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
+
 <!--endsec-->
 
 <!--sec data-title="openSUSE" data-id="python_openSUSE"
