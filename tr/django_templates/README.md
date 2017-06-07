@@ -27,7 +27,7 @@ Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`
 Gördüğümüz sadece bu:
 
 ```  
-[<Post: Gönderi 2>, <Post: Gönderi 1>]
+<QuerySet [<Post: Gönderi 2>, <Post: Gönderi 1>]>
 ```    
 
 Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
