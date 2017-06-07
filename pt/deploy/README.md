@@ -59,6 +59,7 @@ Git irá controlar as alterações para todos os arquivos e pastas neste diretó
     __pycache__
     myvenv
     db.sqlite3
+    static/
     .DS_Store
 
 
@@ -193,13 +194,11 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
 
     20:20 ~ $ source myvenv/bin/activate
 
-    (mvenv)20:20 ~ $  pip install django whitenoise
+    (mvenv)20:20 ~ $  pip install -r requirements.txt
     Collecting django
     [...]
     Successfully installed django-1.8.5 whitenoise-2.0
 
-
-<!--TODO: think about using requirements.txt instead of pip install.-->
 
 ### Coleta de arquivos estáticos.
 
