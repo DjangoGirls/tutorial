@@ -12,7 +12,7 @@ O outro serviço externo que usaremos é [GitHub][2], que é um serviço de hosp
 
  [2]: https://www.github.com
 
-Usaremos o GitHub como um trampolim para transportar nosso código para o PythinAnywhere.
+Usaremos o GitHub como um trampolim para transportar nosso código para o PythonAnywhere.
 
 # Git
 
