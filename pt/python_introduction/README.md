@@ -43,7 +43,7 @@ Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
     'Ola'
     
 
-Você acabou de criar sua primeira string! String é um sequência de caracteres que podem ser processada pelo computador. A string sempre precisa iniciar e terminar com o mesmo caractere. Este pode ser aspas duplas(`'`) ou simples(`"`) - elas dizem ao Python que o que está dentro delas é uma string.
+Você acabou de criar sua primeira string! String é um sequência de caracteres que podem ser processada pelo computador. A string sempre precisa iniciar e terminar com o mesmo caractere. Este pode ser aspas duplas(`"`) ou simples(`'`) - elas dizem ao Python que o que está dentro delas é uma string.
 
 Strings podem ser juntadas. Tente isto:
 
