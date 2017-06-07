@@ -264,7 +264,7 @@ Agora, tente escrever o seguinte comando (tente substituir com as suas próprias
     >>> participante = {'nome': 'Ola', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
     
 
-Com esse comando, você acabou de criar uma variável chamada `participant` com três pares de chave-valor:
+Com esse comando, você acabou de criar uma variável chamada `participante` com três pares de chave-valor:
 
 *   A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
 *   `pais` aponta para `'Polonia'` (outra `string`),
