@@ -202,7 +202,7 @@ Successfully installed django-1.10.4
 
 Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
 
-We can initialize the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
+Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
