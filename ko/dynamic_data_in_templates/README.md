@@ -34,8 +34,6 @@ from .models import Post
 
 자, 블로그 글 목록을 살펴봅시다. 글 목록을 게시일 `published_date`기준으로 정렬해볼까요? 이미 Django ORM과 QuerySets 장에서 해본 내용이에요.
 
-`:
-
 {% filename %}blog/views.py{% endfilename %}
 ```python
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
