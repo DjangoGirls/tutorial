@@ -210,7 +210,7 @@ Por último, sería genial si podemos inmediatamente ir a la página `post_detai
 Agrégalo al principio del archivo. Y ahora podemos decir: vé a la página `post_detail` del post recién creado.
 
 ```python
-    return redirect('post_detail', pk=post.pk)
+    return redirect(post_detail, pk=post.pk)
 ```    
 
 `post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado.
@@ -226,7 +226,7 @@ Bien, hablamos mucho, pero probablemente queremos ver como se ve ahora la *vista
                 post.author = request.user
                 post.published_date = timezone.now()
                 post.save()
-                return redirect('post_detail', pk=post.pk)
+                return redirect(post_detail, pk=post.pk)
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -302,7 +302,7 @@ Abramos el archivo `blog/views.py` y añadamos al final esta línea:
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return redirect('post_detail', pk=post.pk)
+                return redirect(post_detail, pk=post.pk)
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})
