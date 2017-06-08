@@ -193,16 +193,15 @@ Successfully installed django-1.10.4
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-## A blogunk publikálása webalkalmazásként
+## Tegyük közzé a blogot a weben!
 
-Most, hogy a kódunk PythonAnywhere-en van, a virtualenv-ünk, és az adatbázisunk is kész, készen vagyunk a webalkalmazásunk publikására!
+Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!
 
-Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a **Web** tabra. Végül nyomd meg a **Add a new web app** gombot.
 
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
+Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi konfiguráció - vigyázz, *ne* a "Django" opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a **Python 3.4**-et, majd nyomd meg a Nextet.
 
-> **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
-
+> **Megjegyzés** Fontos, hogy a "Manual configuration" lehetőséget válaszd, ne a "Django"-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)
 
 ### Adatbázis létrehozása PythonAnywhere-en
 
@@ -218,16 +217,6 @@ A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, 
     
     (mvenv) $ python manage.py createsuperuser
     
-
-## Tegyük közzé a blogot a weben!
-
-Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!
-
-Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a **Web** tabra. Végül nyomd meg a **Add a new web app** gombot.
-
-Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi konfiguráció - vigyázz, *ne* a "Django" opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a **Python 3.4**-et, majd nyomd meg a Nextet.
-
-> **Megjegyzés** Fontos, hogy a "Manual configuration" lehetőséget válaszd, ne a "Django"-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)
 
 ### Virtuális környezet beállítása
 
