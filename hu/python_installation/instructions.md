@@ -1,6 +1,6 @@
 > Ez a fejezet a Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorialján alapszik
 
-A Django Python nyelven íródott. Ahhoz, hogy bármit létrehozhassunk a Django-ban, szükségünk van a Pythonra is. Kezdjük a telepítésével! Azt szeretnénk, hogy a Python 3.4-es verziója legyen telepítve -- ha ennél korábbi verzióval rendelkezel, akkor frissítened kell.
+A Django Python nyelven íródott. Ahhoz, hogy bármit létrehozhassunk a Django-ban, szükségünk van a Pythonra is. Kezdjük a telepítésével! Azt szeretnénk, hogy a Python 3.5-es verziója legyen telepítve -- ha ennél korábbi verzióval rendelkezel, akkor frissítened kell.
 
 <!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
