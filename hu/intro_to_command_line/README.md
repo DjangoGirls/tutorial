@@ -71,7 +71,7 @@ Kezdjük valami egyszerűvel. Gépeld be ezt a parancsot:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ whoami
 ```
@@ -81,7 +81,7 @@ $ whoami
 
 <!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > whoami
 ```
@@ -109,7 +109,7 @@ Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, 
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska
@@ -122,7 +122,7 @@ $ pwd
 
 <!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska
@@ -171,7 +171,7 @@ Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ cd Desktop
 ```
@@ -180,7 +180,7 @@ $ cd Desktop
 <!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd Desktop
 ```
@@ -191,7 +191,7 @@ Nézzük meg, hogy tényleg megváltozott-e:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
@@ -200,7 +200,7 @@ $ pwd
 
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
@@ -219,7 +219,7 @@ Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztal
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ mkdir practice
 ```
@@ -228,7 +228,7 @@ $ mkdir practice
 <!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > mkdir practice
 ```
@@ -248,7 +248,7 @@ Egy kis kihívás: hozz létre egy `test` nevű mappát a frissen elkészített 
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ cd practice
 $ mkdir test
@@ -260,7 +260,7 @@ test
 <!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd practice
 > mkdir test
@@ -282,7 +282,7 @@ Először vissza kell mennünk az Asztal-ra:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ cd ..
 ```
@@ -291,7 +291,7 @@ $ cd ..
 <!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd ..
 ```
@@ -304,7 +304,7 @@ Ellenőrizzük le, hogy hol vagyunk:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ pwd
 /Users/olasitarska/Desktop
@@ -314,7 +314,7 @@ $ pwd
 <!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska\Desktop
@@ -327,7 +327,7 @@ Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ rm -r practice
 ```
@@ -336,7 +336,7 @@ $ rm -r practice
 <!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > rmdir /S practice
 practice, Are you sure <Y/N>? Y
@@ -348,7 +348,7 @@ Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ ls
 ```
@@ -357,7 +357,7 @@ $ ls
 <!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > dir
 ```
@@ -370,7 +370,7 @@ Ennyi volt! Most már biztonságosan kiléphetsz a parancssorból. Csináljuk ha
 
 <!--sec data-title="OS X és Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ exit
 ```
@@ -379,7 +379,7 @@ $ exit
 <!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > exit
 ```

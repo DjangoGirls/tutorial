@@ -48,7 +48,7 @@ Itt az ideje, hogy megnyisd a `blog/templates/blog/base.html` fájlt. Itt hozzá
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```    
 
-Figyelem: az új nézetünket `post_new`-nak fogjuk hívni.
+Figyelem: az új nézetünket `post_new`-nak fogjuk hívni. A `"glyphicon glyphicon-plus"` class a bootstrap theme biztosítja, és egy pluszjelet fog megjeleníteni.
 
 Miután hozzáadtad ezt a sort, így fog kinézni a html fájlod:
 
@@ -239,6 +239,12 @@ Talán észrevetted, hogy a poszt elmentése előtt beállítjuk a közzététel
 
 Ez nagyszerű!
 
+> Mivel nemrég használtuk a Django admin felületét, a rendszer most azt hiszi, hogy be vagyunk jelentkezve. Néhány esetben előfordul, hogy a rendszer kijelentkeztet minket (pl. ha bezárod a böngészőt vagy újraindítod az adatbázist). Ha azt veszed észre, hogy a hibaüzenetek arra utalnak, hogy nincs bejelentkezett felhasználó, menj az admin oldalra -http://127.0.0.1:8000/admin - és jelentkezz be újra. Ez ideiglenesen megoldja a problémát. Van egy hosszútávú megoldás is a **Házi feladat: tedd biztonságosabbá a weboldalad!** fejezetben a tutorial fő része után.
+
+![Bejelentkezési hiba][4]
+
+ [4]: images/post_create_error.png
+
 ## Form validáció
 
 Most megmutatjuk, mennyire menők a Django űrlapok. Egy blogposztnak kell, hogy legyen `title` és `text` mezője. A `Post` modellben nem jelentettük ki külön, hogy ezek a mezők nem kötelezőek (ellentétben a `published_date` mezővel), ezért a Django elvárja, hogy ki legyenek töltve.
@@ -250,12 +256,6 @@ Próbáld meg elmenteni az űrlapot `title` vagy `text` nélkül. Találd ki, mi
  [3]: images/form_validation2.png
 
 A Django gondoskodik az összes mező ellenőrzéséről. Hát nem fantasztikus?
-
-> Mivel nemrég használtuk a Django admin felületét, a rendszer most azt hiszi, hogy be vagyunk jelentkezve. Néhány esetben előfordul, hogy a rendszer kijelentkeztet minket (pl. ha bezárod a böngészőt vagy újraindítod az adatbázist). Ha azt veszed észre, hogy a hibaüzenetek arra utalnak, hogy nincs bejelentkezett felhasználó, menj az admin oldalra -http://127.0.0.1:8000/admin - és jelentkezz be újra. Ez ideiglenesen megoldja a problémát. Van egy hosszútávú megoldás is a **Házi feladat: tedd biztonságosabbá a weboldalad!** fejezetben a tutorial fő része után.
-
-![Bejelentkezési hiba][4]
-
- [4]: images/post_create_error.png
 
 ## Űrlapok szerkesztése
 
@@ -340,7 +340,7 @@ Változtasd meg a címet vagy a szöveget, és mentsd el!
 
 Gratulálunk! Az alkalmazásod egyre és egyre jobb!
 
-Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/1.8/topics/forms/
+Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/1.10/topics/forms/
 
 ## Biztonság
 
