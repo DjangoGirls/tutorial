@@ -41,8 +41,10 @@ Add the following to your template file:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
