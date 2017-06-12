@@ -151,7 +151,7 @@ Que tal `def publish(self):`? É exatamente o nosso método de `publish` que fal
 
 Métodos muitas vezes `return` algo. Há um exemplo de que, no método `__str__`. Nesse cenário, quando chamamos `__str__()` teremos um texto (**string**), com um título do Post.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para pedir o seu treinador! Sabemos que é muito complicado, especialmente quando você aprender o que são objetos e funções ao mesmo tempo. Mas espero que ele se parece um pouco menos mágica para você agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para pedir o seu treinador! Sabemos que é muito complicado, especialmente quando você aprender o que são objetos e funções ao mesmo tempo. Mas espero que se pareça um pouco menos mágico para você agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
@@ -172,4 +172,4 @@ Django prepara um arquivo de migração que temos de aplicar agora para nosso ba
       Applying blog.0001_initial... OK
     
 
-Viva! Nosso modelo de Post está agora em nosso banco de dados, seria um prazer vê-lo, certo? Pule para o próximo capítulo para ver como sua postagem se parece!
+Viva! Nosso modelo de Post está agora em nosso banco de dados, seria um prazer vê-lo, certo? Salte para o próximo capítulo para ver com sua postagem se parece!
