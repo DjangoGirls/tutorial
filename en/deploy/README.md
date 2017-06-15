@@ -241,14 +241,14 @@ Django works using the "WSGI protocol", a standard for serving websites using Py
 
 Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
-Delete all the contents and replace them with something like this:
+Delete all the contents and replace them with the following:
 
 {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
 ```python
 import os
 import sys
 
-path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
+path = os.path.expanduser('~/my-first-blog')
 if path not in sys.path:
     sys.path.append(path)
 
@@ -258,9 +258,6 @@ from django.core.wsgi import get_wsgi_application
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
-
-> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`.
-> **Note** In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
