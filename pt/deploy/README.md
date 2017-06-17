@@ -59,7 +59,6 @@ Git irá controlar as alterações para todos os arquivos e pastas neste diretó
     __pycache__
     myvenv
     db.sqlite3
-    static/
     .DS_Store
 
 
