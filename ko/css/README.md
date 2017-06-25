@@ -42,7 +42,7 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업언어(Markup Language)�
 
 ### 정적 파일은 어디에 넣어야 하나요
 
-서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin"앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 "blog"앱에 동적파일을 추가하면 됩니다.
+서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin"앱에서 정적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 "blog"앱에 정적파일을 추가하면 됩니다.
 
 "blog"앱 안에 `static`라는 새 폴더를 만드세요. :
 
