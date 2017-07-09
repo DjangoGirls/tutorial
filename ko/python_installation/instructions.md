@@ -4,13 +4,13 @@
 
 > **Note** 이 장은 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 튜토리얼을 기초로 작성되었습니다.
 
-장고는 파이썬 언어로 작성됐습니다. 파이썬이 있어야 장고를 할 수 있어요. 우선 설치부터 해볼까요! 우리는 파이썬 3.5를 사용할 거예요. 이보다 낮은 버전이 설치되었다면, 버전 업그레이드 하세요.
+장고는 파이썬 언어로 작성됐습니다. 파이썬이 있어야 장고를 할 수 있어요. 우선 설치부터 해볼까요! 우리는 파이썬 3.6를 사용할 거예요. 이보다 낮은 버전이 설치되었다면, 버전 업그레이드 하세요.
 
 <!--sec data-title="Windows" data-id="python_windows_ko" data-collapse=true ces-->
 
 사용 중인 컴퓨터 윈도우 운영체제가 32비트인지 64비트인지 확인하려면 https://support.microsoft.com/en-au/kb/827218 에서 확인하세요. 윈도우 용 파이썬은 https://www.python.org/downloads/windows/ 웹 사이트에서 다운로드 할 수 있습니다. "Latest Python 3 Release - Python x.x.x"링크를 클릭하세요. **64 비트** 버전의 Windows인 경우 **Windows x86-64 executable installer**를 다운로드하세요. 이외에는 **Windows x86 executable installer**을 다운로드하세요. 설치 프로그램을 다운로드 한 후에 실행(더블 클릭)하고 지시 사항을 따르세요.
 
-> **Note** 설치하는 동안 "Setup(설치하기)"이라고 표시된 창이 나타납니다. 다음과 같이 "Add Python 3.5 to PATH(python3.5를 경로에 추가)"체크 박스를 체크하고 "Install Now(지금 설치하기)"를 클릭하세요.
+> **Note** 설치하는 동안 "Setup(설치하기)"이라고 표시된 창이 나타납니다. 다음과 같이 "Add Python 3.6 to PATH(python3.6를 경로에 추가)"체크 박스를 체크하고 "Install Now(지금 설치하기)"를 클릭하세요.
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
@@ -18,12 +18,12 @@
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-> **Note** 윈도우 이전 버전(윈도우7, Vista 등)에서 파이썬 3.5.x 설치오류가 생기면, 다음과 같이 해보세요.
+> **Note** 윈도우 이전 버전(윈도우7, Vista 등)에서 파이썬 3.6.x 설치오류가 생기면, 다음과 같이 해보세요.
 
-1. 모든 윈도우 업데이트 후 파이썬 3.5를 다시 설치합니다.
+1. 모든 윈도우 업데이트 후 파이썬 3.6를 다시 설치합니다.
 2. 또는 [파이썬 이전 버전](https://www.python.org/downloads/windows/)을 설치합니다. 
 
-버전이 낮은 파이썬 설치 시, 설치 화면이 위에 표시된 것과 약간 다르게 보일 수 있습니다. "Add Python 3.5. to PATH"를 보려면 아래로 스크롤 한 다음 왼쪽의 버튼을 클릭하고 "Will be installed on local hard drive(로컬 하드 드라이브에 설치)"를 선택하세요.
+버전이 낮은 파이썬 설치 시, 설치 화면이 위에 표시된 것과 약간 다르게 보일 수 있습니다. "Add Python 3.6. to PATH"를 보려면 아래로 스크롤 한 다음 왼쪽의 버튼을 클릭하고 "Will be installed on local hard drive(로컬 하드 드라이브에 설치)"를 선택하세요.
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -37,7 +37,7 @@ data-collapse=true ces-->
 웹 사이트로 가서 파이썬 설치 파일을 다운 받으세요. : https://www.python.org/downloads/release/python-351/
 
 * *Mac OS X 64-bit/32-bit installer* 파일을 다운받습니다.
-* *python-3.5.1-macosx10.6.pkg*을 더블클릭해 설치합니다.
+* *python-3.6.1-macosx10.6.pkg*을 더블클릭해 설치합니다.
 
 <!--endsec-->
 
@@ -49,10 +49,10 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 --version
-Python 3.5.1
+Python 3.6.1
 ```
 
-3.5.0 버전과 같이 '마이크로 버전'의 파이썬이 설치되어있는 경우 업그레이드 할 필요가 없습니다. 다른 버전의 파이썬을 설치하고 싶으면 아래와 같이하면 됩니다. :
+3.6.0 버전과 같이 '마이크로 버전'의 파이썬이 설치되어있는 경우 업그레이드 할 필요가 없습니다. 다른 버전의 파이썬을 설치하고 싶으면 아래와 같이하면 됩니다. :
 
 <!--endsec-->
 
@@ -64,7 +64,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt-get install python3.5
+$ sudo apt-get install python3.6
 ```
 
 <!--endsec-->
@@ -111,9 +111,9 @@ $ sudo zypper install python3
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 --version
-Python 3.5.1
+Python 3.6.1
 ```
 
-> **Note** 윈도우에서 `python3`명령어를 입력한 후 에러 메세지가 나온다면 `python`(`3`을 빼고)이라 입력해보고 파이썬 3.5버전인지 체크해보세요.
+> **Note** 윈도우에서 `python3`명령어를 입력한 후 에러 메세지가 나온다면 `python`(`3`을 빼고)이라 입력해보고 파이썬 3.6버전인지 체크해보세요.
 
 설치 도중 문제가 생기거나 잘되지 않으면 코치들에게 도움을 요청하세요! 가끔은 경험이 많은 분들에게 도움을 받는 것이 더 좋을 수 있습니다.

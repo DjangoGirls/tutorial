@@ -15,7 +15,7 @@
 그럼요! [장고걸스: 심화튜토리얼(Django Girls Tutorial: Extensions)](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/)을 읽어보세요.
 
 나중에 아래 추천 리스트를 참고해 공부해보세요. 모두 강력 추천하는 자료입니다!
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.10/intro/tutorial01/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)

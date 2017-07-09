@@ -28,7 +28,7 @@ Cloud 9 터미널에서 아래 명령어를 따라 입력하세요. :
 
 {% filename %}Cloud 9{% endfilename %}
 ```
-sudo apt install python3.5-venv
+sudo apt install python3.6-venv
 ```
 
 작동하지 않다면, 코치에게 도움을 구하세요.
@@ -39,9 +39,9 @@ sudo apt install python3.5-venv
 ```
 mkdir djangogirls
 cd djangogirls
-python3.5 -mvenv myvenv
+python3.6 -mvenv myvenv
 source myvenv/bin/activate
-pip install django~=1.10.0
+pip install django~=1.11.0
 ```
 
 (마지막 줄에는 물결표 뒤에 등호(~=) 기호를 사용합니다)
