@@ -10,22 +10,24 @@ So wie die anderen wichtigen Django-Komponenten haben auch die Forms ihre eigene
 
 Wir erstellen nun eine Datei mit diesem Namen im `blog` Verzeichnis.
 
-    blog
-       └── forms.py
-    
+```
+blog
+   └── forms.py
+```
 
 So, jetzt lass uns diese öffnen und folgenden Code hinzufügen:
 
-    python 
-    from django import forms 
-    
-    from .models import Post 
-    
-    class PostForm(forms.ModelForm):
-         class Meta:
-             model = Post
-             fields = ('title', 'text',)
-    
+```python
+from django import forms
+
+from .models import Post
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
+```
 
 Zuerst müssen wir die Django Forms importieren (`from django import forms`) und natürlich auch unser `Post` Model (`from .models import Post`).
 
@@ -43,39 +45,40 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, einen Vi
 
 Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen einen Link in `div` hinzu mit dem Namen `page-header`:
 
-    html 
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Merk dir, dass wir unseren neuen View `post_new` nennen wollen.
 
 Nach Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 
-    html 
-    {% load staticfiles %} 
-    <html>
-         <head>
-             <title>Django Girls blog</title>
-             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-             <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-         </head>
-         <body>
-             <div class="page-header">
-                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                 <h1><a href="/">Django Girls Blog</a></h1>
-             </div>
-             <div class="content container">
-                 <div class="row">
-                     <div class="col-md-8">
-                         {% block content %}
-                         {% endblock %}
-                     </div>
-                 </div>
-             </div>
-         </body> 
-    </html>
-    
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+```
 
 Nach dem Speichern und Neuladen von http://127.0.0.1:8000 siehst du den bekannten `NoReverseMatch` Fehler, oder?
 
@@ -83,22 +86,22 @@ Nach dem Speichern und Neuladen von http://127.0.0.1:8000 siehst du den bekannte
 
 Wir öffnen `blog/urls.py` und fügen eine Zeile hinzu:
 
-    python
-         url(r'^post/new/$', views.post_new, name='post_new'),
-    
+```python
+url(r'^post/new/$', views.post_new, name='post_new'),
+```
 
 Der finale Code sieht dann so aus:
 
-    python 
-    from django.conf.urls import include, url 
-    from . import views 
-    
-    urlpatterns = [ 
-        url(r'^$', views.post_list, name='post_list'), 
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),  
-        url(r'^post/new/$', views.post_new, name='post_new'), 
-    ]
-    
+```python
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/new/$', views.post_new, name='post_new'),
+]
+```
 
 Nach dem Neuladen der Seite sehen wir einen `AttributeError`, weil wir noch keinen `post_new` View erstellt haben. Fügen wir ihn gleich hinzu!
 
@@ -106,17 +109,17 @@ Nach dem Neuladen der Seite sehen wir einen `AttributeError`, weil wir noch kein
 
 Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from` Zeilen hinzuzufügen:
 
-    python 
-    from .forms import PostForm
-    
+```python
+from .forms import PostForm
+```
 
 und unseren *view*:
 
-    python 
-    def post_new(request):
-         form = PostForm()
-         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```python
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Um ein neues `PostForm` zu erstellen, rufen wir die `PostForm()` Methode auf und übergeben sie an das Template. Wir kommen gleich nochmal zu dem *view* zurück, aber jetzt erstellen wir schnell ein Template für das Form.
 
@@ -135,17 +138,17 @@ Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` ers
 
 Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
 
-    html 
-    {% extends 'blog/base.html' %} 
-    
-    {% block content %}
-         <h1>New post</h1>
-         <form method="POST" class="post-form">{% csrf_token %}
-             {{ form.as_p }}
-             <button type="submit" class="save btn btn-default">Save</button>
-         </form> 
-    {% endblock %}
-    
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+```
 
 So, jetzt aktualisieren wir die Seite! Yay! Das Formular wird angezeigt!
 
@@ -163,73 +166,73 @@ Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unseren *
 
 Öffne `blog/views.py` erneut. Derzeit ist alles, was wir in dem View `post_new` haben, das hier:
 
-    python 
-    def post_new(request):
-         form = PostForm()
-         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```python
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in `request`, genauer in `request.POST` (der Name hat nichts zu tun mit einem "Blogpost", sondern damit dass wir Daten "posten"). Erinnerst du dich daran, dass in der HTML-Datei unsere `<form>` Definition die Variable `method="POST"` hatte? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
 
 Wir haben also in unserem *view* zwei separate Situationen zu bearbeiten. Erstens: Wenn wir zum ersten Mal auf die Seite zugreifen und wir ein leeres Formular haben wollen. Zweitens: Wenn wir zurück zu der *view* gehen, mit all den Formulardaten, die wir gerade eingegeben haben. Wir müssen also eine Bedingung hinzufügen (dafür verwenden wir `if`).
 
-    python 
-    if request.method == "POST":  
-       [...] 
-    else: 
-       form = PostForm()
-    
+```python
+if request.method == "POST":
+    [...]
+else:
+    form = PostForm()
+```
 
 Jetzt ist es an der Zeit, die Punkte `[...]` auszufüllen. Wenn `method` `POST` ist, dann wollen wir die `PostForm` mit den Daten aus dem Formular konstruieren, richtig? Wir tun das mit:
 
-    python 
-    form = PostForm(request.POST)
-    
+```python
+form = PostForm(request.POST)
+```
 
 Super einfach! Als Nächstes müssen wir testen, ob das Formular korrekt ist (alle benötigten Felder sind ausgefüllt, keine inkorrekten Werte werden gespeichert). Wir tun das mit `form.is_valid()`.
 
 Wir überprüfen also, ob das Formular gültig ist und wenn ja, können wir es speichern!
 
-    python 
-    if form.is_valid(): 
-        post = form.save(commit=False) 
-        post.author = request.user 
-        post.published_date = timezone.now() 
-        post.save()
-    
+```python
+if form.is_valid():
+    post = form.save(commit=False)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+```
 
 Im Grunde passieren hier zwei Dinge: Wir speichern das Formular mit `form.save` und wir fügen einen Autor hinzu (da es bislang kein `author` Feld in der `PostForm` gab und dieses Feld notwendig ist!). `commit=False` bedeutet, dass wir das `Post` Model noch nicht speichern wollen - wir wollen erst noch den Autor hinzufügen. Meistens wirst du `form.save()` ohne `commit=False` benutzen, aber in diesem Fall müssen wir es so tun. `post.save()` wird die Änderungen sichern (den Autor hinzufügen) und ein neuer Blogpost ist kreiert!
 
 Nun wäre es noch genial, wenn wir direkt zu der `post_detail` Seite unseres neu erstellten Blogposts gehen könnten, richtig? Um dies zu tun, benötigen wir einen weiteren Import:
 
-    python 
-    from django.shortcuts import redirect
-    
+```python
+from django.shortcuts import redirect
+``` 
 
 Füge dies direkt am Anfang der Datei hinzu. Jetzt können wir endlich sagen: Gehe zu der `post_detail` Seite für unsere neu erstellten Posts.
 
-    python 
-    return redirect('blog.views.post_detail', pk=post.pk)
-    
+```python
+return redirect('post_detail', pk=post.pk)
+```
 
 `blog.views.post_detail` ist der Name unseres Views, zu dem wir springen wollen. Erinnerst du dich, dass dieser *view* einen `pk` benötigt? Um diesen an den View weiterzugeben, benutzen wir `pk=post.pk`, wobei `post` unser neu erstellter Blogpost ist!
 
 Ok, wir haben jetzt eine ganze Menge geredet, aber du willst bestimmt sehen, wie die gesamte *view* aussieht, richtig?
 
-    python 
-    def post_new(request): 
-        if request.method == "POST":   
-           form = PostForm(request.POST)  
-           if form.is_valid():   
-               post = form.save(commit=False)   
-               post.author = request.user    
-               post.published_date = timezone.now() 
-               post.save()   
-               return redirect('blog.views.post_detail', pk=post.pk)   
-          else:   
-              form = PostForm() 
-         return render(request, 'blog/post_edit.html', {'form': form})
-    
+```python
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Schauen wir mal, ob es funktioniert. Gehe zu der Seite http://127.0.0.1:8000/post/new/, füge einen `title` und `text` hinzu und speichere es... und voilà! Der neue Blogpost wird hinzugefügt und wir werden auf die `Post_detail` Seite umgeleitet!
 
@@ -261,66 +264,66 @@ Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn w
 
 Öffne `blog/templates/blog/post_detail.html` und füge diese Zeile hinzu:
 
-    python 
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
 damit die Vorlage so aussieht:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-    
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
+```
 
 In `blog/urls.py` fügen wir folgende Zeile ein:
 
-    python  
-       url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
-    
+```python
+    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+```
 
 Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *view*.
 
 Öffne `blog/views.py` und füge ganz am Ende der Datei Folgendes hinzu:
 
-    python
-    def post_edit(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        if request.method == "POST":
-            form = PostForm(request.POST, instance=post)
-            if form.is_valid():
-                post = form.save(commit=False)
-                post.author = request.user
-                post.published_date = timezone.now()
-                post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
-        else:
-            form = PostForm(instance=post)
-        return render(request, 'blog/post_edit.html', {'form': form})
-    
+```python
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Sieht genauso aus wie unsere `post_new` view, oder? Aber nicht ganz. Der Unterschied: Wir übergeben einen zusätzlichen `pk` Parameter von den Urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern:
 
-    python 
-    form = PostForm(request.POST, instance=post)
-    
+```python
+form = PostForm(request.POST, instance=post)
+```
 
 als auch, wenn wir ein Formular mit post zum Editieren öffnen:
 
-    python 
-    form = PostForm(instance=post)
-    
+```python
+form = PostForm(instance=post)
+```
 
 Ok, lass uns mal schauen, ob das funktioniert! Geh auf die `post_detail`-Seite. Dort sollte sich ein Editier-Button in der oberen rechten Ecke befinden:
 
@@ -346,17 +349,17 @@ Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment 
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
-    html 
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Ändere den `<a>`-Tag zu Folgendem:
 
-    html 
-    {% if user.is_authenticated %}  
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-     {% endif %}
-    
+```html
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+```
 
 Dieses `{% if %}` sorgt dafür, dass der Link nur zu dem Browser geschickt wird, wenn der anfragende Nutzer auch angemeldet ist. Das verhindert das Erzeugen neuer Posts nicht komplett, ist aber ein sehr guter erster Schritt. In der Erweiterungslektion kümmern wir uns ausgiebiger um Sicherheit.
 
@@ -368,27 +371,26 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 *   Checke als Erstes deinen neuen Code ein und lade ihn auf GitHub hoch
 
-    $ git status 
-    $ git add -A . 
-    $ git status 
-    $ git commit -m "Added views to create/edit blog post inside the site." 
-    $ git push
-    
+```
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
-*   Dann führe Folgendes in der [PythonAnywhere Bash Konsole][7] aus:
+*   Dann führe Folgendes in der [PythonAnywhere Bash Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
- [7]: https://www.pythonanywhere.com/consoles/
-
+```
     $ cd my-first-blog 
     $ source myvenv/bin/activate 
     (myvenv)$ git pull 
     [...] 
     (myvenv)$ python manage.py collectstatic 
     [...]
-    
+```
 
-*   Springe nun noch schnell auf den [Web-Tab][8] und klicke auf **Reload**.
+*   Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
 
 Und das war's! Glückwunsch :)
