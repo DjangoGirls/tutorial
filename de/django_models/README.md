@@ -12,21 +12,23 @@ Wenn wir zum Beispiel eine Katze modellieren wollen, erschaffen wir eine Objektv
 
 Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten besitzen: `schnurren`, `kratzen` oder `füttern` (hier bekäme die Katze ein bisschen `Katzenfutter`, welches wieder durch ein eigenes Objekt mit Eigenschaften, wie zum Beispiel `Geschmack`, repräsentiert sein könnte).
 
-    Katze
-    --------
-    farbe
-    alter
-    stimmung
-    besitzerin
-    schnurren()
-    kratzen()
-    fuettern(katzen_futter)
-    
-    
-    Katzenfutter
-    --------
-    geschmack
-    
+```
+Katze
+--------
+farbe
+alter
+stimmung
+besitzerin
+schnurren()
+kratzen()
+fuettern(katzen_futter)
+```
+
+```
+Katzenfutter
+--------
+geschmack
+```
 
 Der Gedanke dahinter ist also, echte Dinge mit Hilfe von Eigenschaften (genannt `Objekteigenschaften`) und Aktionsmöglichkeiten (genannt `Methoden`) im Programmcode zu beschreiben).
 
@@ -36,14 +38,15 @@ Wir müssen folgende Fragen beantworten: Was ist ein Blogpost? Welche Eigenschaf
 
 Nun, zum einen braucht unser Blogpost Text mit einem Inhalt und einen Titel, oder? Außerdem wäre es schön zu wissen, wer ihn geschrieben hat - wir brauchen also noch einen Autor. Schließlich wollen wir wissen, wann der Post geschrieben und veröffentlicht wurde.
 
-    Post 
-    -------- 
-    title 
-    text
-    author
-    created_date
-    published_date
-    
+```
+Post
+--------
+title
+text
+author
+created_date
+published_date
+```
 
 Was für Dinge könnte man mit einem Blogpost machen? Es wäre schön, wenn wir eine `Methode` hätten, die den Post veröffentlicht, nicht wahr?
 
@@ -63,41 +66,45 @@ Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", englisch "field
 
 Um unsere Webseite aufgeräumt zu halten, werden wir eine eigene Anwendung für unser Projekt erstellen, wir nennen das eine Applikation. Wir wollen uns gleich daran gewöhnen, alles ordentlich und sortiert zu halten. Um eine Applikation zu erstellen, müssen wir das folgende Kommando in der Konsole ausführen (wieder in dem `djangogirls`-Verzeichnis, in dem die `manage.py`-Datei liegt):
 
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+```
+(myvenv) ~/djangogirls$ python manage.py startapp blog
+```
 
 Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon einige Dateien enthält. Das Verzeichnis und die Dateien unseres Projektes sollten jetzt so aussehen:
 
-    djangogirls 
-    ├── mysite 
-    | __init__.py
-    | settings.py
-    | urls.py 
-    | wsgi.py 
-    ├── manage.py 
-    └── blog   
-         ├── migrations
-         | __init__.py 
-         ├── __init__.py
-         ├── admin.py 
-         ├── models.py
-         ├── tests.py    
-         └── views.py
-    
+```
+djangogirls
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── db.sqlite3
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
 
 Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das können wir in der Datei `mysite/settings.py` einstellen. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog',` direkt über der schließenden Klammer `)` ein. Das sollte dann so aussehen:
 
-    python 
-    INSTALLED_APPS = (
-         'django.contrib.admin', 
-         'django.contrib.auth', 
-         'django.contrib.contenttypes',
-         'django.contrib.sessions',
-         'django.contrib.messages', 
-         'django.contrib.staticfiles', 
-         'blog', 
-    )
-    
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+]
+```
 
 ### Das Blogpost-Model
 
@@ -105,27 +112,27 @@ Alle Models unserer Applikation werden in der `blog/models.py`-Datei definiert. 
 
 Lass uns `blog/models.py` öffnen, lösche alles darin und schreibe Code wie diesen:
 
-    python 
-    from django.db import models 
-    from django.utils import timezone 
-    
-    
-    class Post(models.Model):  
-       author = models.ForeignKey('auth.User') 
-       title = models.CharField(max_length=200)
-       text = models.TextField()  
-       created_date = models.DateTimeField(    
-               default=timezone.now)  
-       published_date = models.DateTimeField(    
-              blank=True, null=True) 
-    
-        def publish(self):     
-          self.published_date = timezone.now()   
-          self.save()   
-    
-       def __str__(self):    
-         return self.title
-    
+```python
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
 
 > Kontrolliere nochmal, dass du zwei Unterstriche (`__`) vor und hinter dem `str` gesetzt hast. Diese Konvention wird häufig in Python benutzt und manchmal nennen wir es "dunder" (kurz für "double-underscore").
 
@@ -135,16 +142,16 @@ Die Zeilen, die mit `from` oder `import` beginnen, sind Anweisungen, um Sachen a
 
 `class Post(models.Model):` - Diese Zeile definiert unser Model).
 
-*   `class` ist ein spezielles Schlüsselwort, womit wir angeben, dass wir hier eine Klasse, eine Vorlage für zukünftige Objekte, definieren wollen.
-*   `Post` ist der Name unseres Models. Wir können ihm auch einen anderen Namen geben (aber wir müssen Sonderzeichen und Leerzeichen vermeiden). Beginne einen Klassennamen immer mit einem Großbuchstaben.
-*   `models.Model` gibt an, dass das Post-Model ein Django-Model ist, so weiß Django, dass es in der Datenbank gespeichert werden soll.
+* `class` ist ein spezielles Schlüsselwort, womit wir angeben, dass wir hier eine Klasse, eine Vorlage für zukünftige Objekte, definieren wollen.
+* `Post` ist der Name unseres Models. Wir können ihm auch einen anderen Namen geben (aber wir müssen Sonderzeichen und Leerzeichen vermeiden). Beginne einen Klassennamen immer mit einem Großbuchstaben.
+* `models.Model` gibt an, dass das Post-Model ein Django-Model ist, so weiß Django, dass es in der Datenbank gespeichert werden soll.
 
 Jetzt definieren wir die Eigenschaften, über welche wir gesprochen haben: `title`, `text`, `created_date`, `published_date` und `author`. Um dies zu tun, müssen wir einen Typen für jedes Feld definieren. (Ist es Text? Eine Zahl? Ein Datum? Eine Beziehung zu einem anderen Objekt, z.B. ein Benutzer?).
 
-*   `models.CharField` - so definierst du ein Textfeld mit einer limitierten Anzahl von Zeichen.
-*   `models.TextField` - so definierst du ein langes Textfeld ohne Limit. Klingt doch perfekt für unsere Blogpostinhalte, oder?
-*   `models.DateTimeField` - ein Feld für ein Datum und eine Uhrzeit.
-*   `models.ForeignKey` - definiert eine Verlinkung zu einem anderen Model.
+* `models.CharField` - so definierst du ein Textfeld mit einer limitierten Anzahl von Zeichen.
+* `models.TextField` - so definierst du ein langes Textfeld ohne Limit. Klingt doch perfekt für unsere Blogpostinhalte, oder?
+* `models.DateTimeField` - ein Feld für ein Datum und eine Uhrzeit.
+* `models.ForeignKey` - definiert eine Verlinkung zu einem anderen Model.
 
 Wir werden nicht den gesamten Code hier erklären, da es einfach zu lange dauern würde. Du solltest einen Blick in die offizielle Django-Dokumentation werfen, wenn du mehr über Modelfelder und darüber wissen möchtest, wie man auch andere Dinge als die oben beschriebenen definiert (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
 
@@ -158,20 +165,22 @@ Wenn dir über Methoden noch etwas nicht klar ist, dann zögere nicht, deinen Co
 
 Als letzten Schritt wollen wir unser neues Model der Datenbank hinzufügen. Dazu müssen wir Django klarmachen, dass wir einige Änderungen an unserem Model vorgenommen haben (wir haben es gerade erst kreiert!). Gib in deine Konsole `python manage.py makemigrations blog` ein. Das sieht dann so aus:
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog 
-    Migrations for 'blog': 
-       0001_initial.py: 
-       - Create model Post
-    
+```
+(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for 'blog':
+  blog/migrations/0001_initial.py:
+  - Create model Post
+```
 
 Django hat für uns eine Migrationsdatei (mit allen aktuellen Informationen über unser Model) vorbereitet, welche wir jetzt auf unsere Datenbank anwenden müssen. Tippe `python manage.py migrate blog` und der Output sollte sein:
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform: 
-       Apply all migrations: blog 
-    Running migrations: 
-      Rendering model states... DONE 
-      Applying blog.0001_initial... OK
-    
+```
+(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Rendering model states... DONE
+  Applying blog.0001_initial... OK
+```
 
 Hurra! Unser Post-Model ist ab sofort in unserer Datenbank gespeichert! Es wäre doch schön, zu wissen, wie es aussieht, oder? Springe zum nächsten Kapitel und schau es dir an!
