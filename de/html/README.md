@@ -18,10 +18,11 @@ Ein Template zu erstellen, heißt, eine entsprechende Datei dafür zu erstellen.
 
 Templates werden im Verzeichnis `blog/templates/blog` gespeichert. Als Erstes erzeugen wir das Verzeichnis `templates` in deinem Blog-Verzeichnis. Im Template-Verzeichnis selbst erstellen wir ein weiteres Verzeichnis `blog`:
 
-    blog
-    └───templates
-        └───blog
-    
+```
+blog
+└───templates
+    └───blog
+```
 
 (Falls du dich wunderst, warum wir zwei `blog`-Verzeichnisse brauchen - das hängt mit den nützlichen Namenskonventionen von Django zusammen, die das Leben einfacher machen, wenn deine Projekte immer komplizierter und komplexer werden.)
 
@@ -39,12 +40,12 @@ Der Fehler sollte weg sein! Toll :) Deine Webseite ist allerdings noch leer, wei
 
 Füge folgenden Text in deine Template-Datei ein:
 
-    html
-    <html>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </html>
-    
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
 Hat sich die Seite geändert? Sieh nach: http://127.0.0.1:8000/
 
@@ -54,32 +55,32 @@ Hat sich die Seite geändert? Sieh nach: http://127.0.0.1:8000/
 
 Es funktioniert! Gute Arbeit! :)
 
-*   Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
-*   `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
+* Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
+* `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
 ## Head & body
 
 Jede HTML Seite gliedert sich in zwei Teile: **head** und **body**.
 
-*   Das Element **head** speichert im "Kopf" der Seite Informationen über die Seite, die dir nicht angezeigt werden.
+* Das Element **head** speichert im "Kopf" der Seite Informationen über die Seite, die dir nicht angezeigt werden.
 
-*   Das Element **body** enthält den "Körper" - also den dargestellten Inhalt der Seite.
+* Das Element **body** enthält den "Körper" - also den dargestellten Inhalt der Seite.
 
 Im `<head>` informieren wir den Browser über Einstellungen und Konfigurationen der Webseite, z.B. wie sie dargestellt werden soll, und im `<body>` darüber, was tatsächlich dargestellt werden soll.
 
 In den `<head>` können wir z.B. noch den Titel (title) der Seite mit aufnehmen:
 
-    html
-    <html>
-        <head>
-            <title>Ola's blog</title>
-        </head>
-        <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
 
 Speichere die Datei und aktualisiere die Seite im Browser.
 
@@ -91,55 +92,54 @@ Der Titel "Ola's blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Br
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und die Elemente sind darin *eingebettet*. Ein Tag in einem zweiten kann nicht außerhalb von diesem geschlossen werden, die Reihenfolge muss immer stimmen.
 
-Es ist wie Sachen in Kisten stecken. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: </code>`<p></p></0>.</p>
+Es ist wie Sachen in Kisten stecken. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: `<p></p>`.
 
-<p>Die Regeln und Reihenfolgen von <em>schließenden</em> Tags und <em>Verschachtelung</em> der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.</p>
+Die Regeln und Reihenfolgen von _schließenden_ Tags und _Verschachtelung_ der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
 
-<h2>Dein Template anpassen</h2>
+## Dein Template anpassen
 
-<p>Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:</p>
+Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:
 
-<ul>
-<li><code><h1>Überschrift</h1>` - (headline) für wichtigste Überschriften</li> 
-*   `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
-*   `<h3>Unter-Unter-Überschrift</h3>` ... und so weiter bis `<h6>`
-*   `<em>Text</em>` hebt deinen Text hervor
-*   `<strong>Text</strong>` macht deinen Text fett
-*   `<br />` fängt eine neue Zeile an (du kannst nichts zwischen br schreiben)
-*   `<a href="http://djangogirls.org">link</a>` erstellt einen Link
-*   `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
-*   `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
+* `<h1>Überschrift</h1>` - (headline) für wichtigste Überschriften
+* `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
+* `<h3>Unter-Unter-Überschrift</h3>` ... und so weiter bis `<h6>`
+* `<em>Text</em>` hebt deinen Text hervor
+* `<strong>Text</strong>` macht deinen Text fett
+* `<br />` fängt eine neue Zeile an (du kannst nichts zwischen br schreiben)
+* `<a href="http://djangogirls.org">link</a>` erstellt einen Link
+* `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
+* `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
 Hier ein Beispiel eines vollständigen Templates:
 
-    html
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-        </head>
-        <body>
-            <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
-    
-            <div>
-                <p>published: 14.06.2014, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
-        </body>
-    </html>
-    
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
 
 Wir haben hier drei verschiedene `div` Abschnitte erstellt.
 
-*   Das erste `div` Element enthält den Titel unseres Blogs - eine Überschrift und einen Link
-*   Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
+* Das erste `div` Element enthält den Titel unseres Blogs - eine Überschrift und einen Link
+* Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
 
 Wir bekommen das Folgende:
 
@@ -157,51 +157,55 @@ Es wäre gut, das alles live draußen im Internet zu sehen, oder? Lass uns noch 
 
 Lass uns nachsehen, welche Dateien sich nach dem letzten Veröffentlichen (Deployment) geändert haben. (Führe diese Befehle lokal aus und nicht auf PythonAnywhere):
 
-    $ git status
-    
+```bash
+$ git status
+```
 
 Überprüfe, ob du im `Djangogirls` Verzeichnis bist und sag `git`, dass alle Änderungen in diesem Verzeichnis hinzugefügt werden sollen:
 
-    $ git add -A .
-    
+```bash
+$ git add --all .
+```
 
 > **Beachte:** `-A` (kurz für "all") bedeutet, dass `git` auch Dateien berücksichtigt, die du gelöscht hast (in der Standardeinstellung werden nur neue/geänderte Dateien hinzugefügt). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
 Bevor wir alle Dateien hochladen prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
-    $ git status
-    
+```bash
+$ git status
+```
 
 Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht gespeichert werden soll. Wir erstellen eine "Commit Message", die beschreibt, was wir verändert haben. Du kannst an diesem Punkt hier alles reinschreiben, aber es ist sehr nützlich, etwas zu Sinnvolles einzutragen, damit du dich in Zukunft erinnern kannst, was du geändert hast.
 
-    $ git commit -m "HTML der Site geändert."
-    
+```bash
+$ git commit -m "HTML der Site geändert."
+```
 
 > **Beachte:** Du musst Anführungszeichen um den Commit-Kommentar setzen.
 
 Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
-    git push
-    
+```bash
+$ git push
+``` 
 
 ### Hol dir den neuen Code auf PythonAnywhere und aktualisiere deinen Browser
 
-*   Öffne die [PythonAnywhere consoles page][5] und gehe zu deiner **Bash-Konsole** (oder starte eine neue). Dann, führe Folgendes aus:
+* Öffne die [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) und gehe zu deiner **Bash-Konsole** (oder starte eine neue). Dann, führe Folgendes aus:
 
-    $ cd ~/my-first-blog 
-    $ source myvenv/bin/activate 
-    (myvenv)$ git pull 
-    [...] 
-    (myvenv)$ python manage.py collectstatic 
-    [...]
-    
+```bash
+$ cd ~/my-first-blog 
+$ source myvenv/bin/activate 
+(myvenv)$ git pull 
+[...] 
+(myvenv)$ python manage.py collectstatic 
+[...]
+```bash
 
 Schau zu, wie dein Code runtergeladen wird! Wenn du prüfen willst, ob der Code angekommen ist, kannst du zum **Files Tab** rüberspringen und deinen Code auf PythonAnywhere sehen.
 
-*   Spring anschließend rüber zum [Web Tab][6] und klick auf **Neu laden** in deinem Browser.
+*   Spring anschließend rüber zum [Web Tab](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
 
 Dein Update sollte live sein! Lade die Seite neu in deinem Browser. Es sollten nun Änderungen zu sehen sein. :)
 
  [4]: images/step6.png
- [5]: https://www.pythonanywhere.com/consoles/
- [6]: https://www.pythonanywhere.com/web_app_setup/
