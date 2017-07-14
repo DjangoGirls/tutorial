@@ -1,8 +1,6 @@
 # Django Girls Tutorial
 
-[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]
-
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[!\[Gitter\](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz finden Sie auf http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -26,7 +24,7 @@ Es wird (in etwa) so aussehen:
 
  [2]: images/application.png
 
-> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)][1]. Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
+> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)]((https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
 Okay, [ lass uns ganz am Anfang anfangen...][3]
 
