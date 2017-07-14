@@ -6,11 +6,10 @@ Bis jetzt lief die Website nur auf deinem Computer, jetzt wollen wir sie veröff
 
 Wie du schon gelernt hast, muss eine Webseite auf einem Server liegen. Es sind eine Menge Server-Anbieter im Internet verfügbar. Wir werden einen verwenden, der einen relativ einfachen Veröffentlichungsprozess (deployment process) hat: [PythonAnywhere](http://pythonanywhere.com/). PythonAnywhere ist kostenlos für kleine Anwendungen, die nicht von vielen Besuchern aufgerufen werden. Also erstmal genau das Richtige für dich.
 
-Als weiteren externen Dienst werden wir [GitHub][2] nutzen, einen "Code Hosting"-Dienst. Es gibt noch andere solcher Dienste, aber die meisten Programmierer haben heute ein Konto bei GitHub, und du gleich auch!
-
- [2]: http://www.github.com
+Als weiteren externen Dienst werden wir [GitHub](http://www.github.com) nutzen, einen "Code Hosting"-Dienst. Es gibt noch andere solcher Dienste, aber die meisten Programmierer haben heute ein Konto bei GitHub, und du gleich auch!
 
 GitHub wird unsere Basis für die Übertragung unseres Code von und nach PythonAnywhere sein.
+
 
 # Git
 
@@ -20,7 +19,7 @@ Git ist ein "Versionsverwaltungssystem", das von vielen Programmierern benutzt w
 
 > **Hinweis:** Falls du die Installationsschritte bereits durchgeführt hast, kannst du mit dem nächsten Abschnitt fortfahren und anfangen, dein Git-Repository zu erstellen.
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 ## Unser Git-Repository
 
@@ -28,22 +27,24 @@ Git verwaltet die Veränderungen an einer Sammlung von Dateien in einem sogenann
 
 > **Hinweis:** Überprüfe dein aktuelles Arbeitsverzeichnis mit dem Befehl `pwd` (OSX/Linux) oder `cd` (Windows) bevor du das Repository initialisierst. Du musst dich im `djangogirls`-Verzeichnis befinden, bevor du fortfährst.
 
-    $ git init 
-    Initialized empty Git repository in ~/djangogirls/.git/ 
-    $ git config --global user.name "Dein Name" 
-    $ git config --global user.email du@beispiel.com
-    
+```
+$ git init 
+Initialized empty Git repository in ~/djangogirls/.git/ 
+$ git config --global user.name "Dein Name" 
+$ git config --global user.email du@beispiel.com
+```
 
 Die Initialisierung eines Git-Repository müssen wir nur einmal pro Projekt machen (und du musst nicht noch einmal Deinen Benutzernamen und E-Mail-Adresse eingeben).
 
 Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis aufzeichnen. Wir wollen aber, dass einige Dateien ignoriert werden. Dazu legen wir eine Datei `.gitignore` im Basisverzeichnis des Repos an. Öffne deinen Editor und erstelle eine neue Datei mit dem folgenden Inhalt:
 
-    *.pyc
-    __pycache__
-    myvenv
-    db.sqlite3
-    .DS_Store
-    
+```
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+```
 
 Speichere die Datei mit dem Namen `.gitignore` im "djangogirls"-Verzeichnis.
 
@@ -51,36 +52,38 @@ Speichere die Datei mit dem Namen `.gitignore` im "djangogirls"-Verzeichnis.
 
 Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer dann, wenn du dir unsicher bist, was geändert wurde. Das schützt vor manchen Überraschungen, wie z. B. das falsche Hinzufügen oder Übertragen von Dateien. Das `git status`-Kommando gibt Informationen über unbeobachtete/veränderte/hinzugefügte Dateien, den Verzweigungsstatus und einiges mehr wieder. Die Ausgabe sollte so oder so ähnlich sein:
 
-    $ git status 
-    On branch master 
-    
-    Initial commit 
-    
-    Untracked files:
-       (use "git add <file>..." to include in what will be committed) 
-    
-            .gitignore
-             blog/
-             manage.py
-             mysite/ 
-    
-    nothing added to commit but untracked files present (use "git add" to track)
-    
+```
+$ git status 
+On branch master 
+
+Initial commit 
+
+Untracked files:
+    (use "git add <file>..." to include in what will be committed) 
+
+        .gitignore
+        blog/
+        manage.py
+        mysite/ 
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 Nun speichern wir unsere Änderungen durch folgende Eingabe in der Konsole:
 
-    $ git add -A .
-    $ git commit -m "Meine Django Girls App, erster Commit"
-     [...]
-     13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-     [...]
-     create mode 100644 mysite/wsgi.py
-    
+```
+$ git add -A .
+$ git commit -m "Meine Django Girls App, erster Commit"
+ [...]
+ 13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+ [...]
+ create mode 100644 mysite/wsgi.py
+```
 
 ## Den Code auf GitHub veröffentlichen
 
-Öffne [GitHub.com][2] und registriere dich für ein neues, kostenloses Benutzerkonto. (Wenn du das bereits in deiner Vorbereitung auf den Workshop getan hast, dann ist das großartig!)
+Öffne [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenloses Benutzerkonto. (Wenn du das bereits in deiner Vorbereitung auf den Workshop getan hast, dann ist das großartig!)
 
 Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass das Kontrollkästchen "initialise with a README" deaktiviert, die Einstellung der Option .gitignore frei (das haben wir schon von Hand gemacht) und lass die Lizenz auf "None".
 
@@ -100,34 +103,33 @@ Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbin
 
 Gib Folgendes in deine Konsole ein (Ersetze dabei `<your-github-username>` durch deinen Benutzernamen, den du bei der Erstellung deines GitHub-Kontos benutzt hast, aber ohne die eckigen Klammern.):
 
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
-    
+```
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+$ git push -u origin master
+``` 
 
 Gibt deinen GitHub-Benutzernamen und dein Passwort ein und du solltest etwas Ähnliches wie das hier sehen:
 
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/hjwp/my-first-blog.git
-     * [new branch]      master -> master
-    Branch master set up to track remote branch master from origin.
-    
+```
+Username for 'https://github.com': hjwp
+Password for 'https://hjwp@github.com':
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hjwp/my-first-blog.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code du in guter Gesellschaft - [Django][5], das [Django Girls Tutorial][6] und viele andere großartige Open Source Software-Projekte haben ihren Code auf GitHub :)
-
- [5]: https://github.com/django/django
- [6]: https://github.com/DjangoGirls/tutorial
+Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code du in guter Gesellschaft - [Django](https://github.com/django/django), das [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) und viele andere großartige Open Source Software-Projekte haben ihren Code auf GitHub :)
 
 # Deinen Blog auf PythonAnywhere einrichten
 
 > **Hinweis:** Es ist möglich, dass du bereits ein PythonAnywhere Konto angelegt hast. Wenn ja, dann brauchst du das nicht noch einmal zu tun.
 
-{% include "deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Den Code nach PythonAnywhere übertragen
 
@@ -137,54 +139,57 @@ Sobald du dich für PythonAnywhere angemeldet hast, wirst du zu deinem Dashboard
 
 Lass uns den Code von GitHub auf PythonAnywhere übertragen, indem wir einen "Klon" unseres Repositorys erzeugen. Tippe das Folgende in die Konsole auf PythonAnywhere (vergiss nicht deinen GitHub-Benutzernamen an Stelle von `<your-github-username>` zu benutzen):
 
-    $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+```
+$ git clone https://github.com/<your-github-username>/my-first-blog.git
+```
 
 Dies wird eine Kopie deines Codes auf PythonAnywhere übertragen. Überprüfe es, indem du eingibst `tree my-first-blog`:
 
-    $ tree my-first-blog
-    my-first-blog/
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── migrations
-    │   │   ├── 0001_initial.py
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
+```
+$ tree my-first-blog
+my-first-blog/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
 
 ### Erstelle ein virtualenv auf PythonAnywhere
 
 Genauso wie du auf deinem eigenen Computer ein virtualenv erstellt hast, kannst du auch eins auf PythonAnywhere erstellen. Schreibe Folgendes in die Bash:
 
-    $ cd my-first-blog
-    
-    $ virtualenv --python=python3.4 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.4
-    [...]
-    Installing setuptools, pip...done.
-    
-    $ source myvenv/bin/activate 
-    
-    (mvenv) $ pip install django whitenoise 
-    Collecting django 
-    [...] 
-    Successfully installed django-1.8.2 whitenoise-2.0
-    
+```
+$ cd my-first-blog
+
+$ virtualenv --python=python3.5 myvenv
+Running virtualenv with interpreter /usr/bin/python3.5
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(myvenv) $  pip install django~=1.10.0
+Collecting django
+[...]
+Successfully installed django-1.10.4
+```
 
 > **Hinweis:** Der Schritt `pip install` kann ein paar Minuten dauern. Hab etwas Geduld! Aber, wenn es länger als 5 Minuten dauern sollte, dann ist etwas falsch gelaufen. Frag am besten deinen Coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-### Statische Dateien einsammeln
+<!-- ### Statische Dateien einsammeln
 
 Hast du dich gefragt, was die "whitenoise" Sache war? Es ist ein Werkzeug, um so genannte "statische Dateien" zu betreuen. Statische Dateien, wie z. B. HTML oder CSS Dateien, sind Daten, welche sich nicht regelmäßig verändern oder Programmcode ausführen. Sie funktionieren anders auf Servern als auf unseren eigenen Computern und wir brauchen ein Werkzeug wie "whitenoise", um sie zu betreuen.
 
@@ -192,28 +197,30 @@ Wir werden später im Tutorial ein wenig mehr über statische Dateien erfahren, 
 
 Für`s Erste müssen wir nur ein extra Kommando auf dem Server ausführen, genannt `collectstatic`. Es befiehlt Django, alle statischen Dateien, die es auf dem Server braucht, einzusammeln. Im Moment sind dies hauptsächlich Dateien, welche die Admin Site hübsch aussehen lassen.
 
-    (mvenv) $ python manage.py collectstatic
+```
+(mvenv) $ python manage.py collectstatic
+
+You have requested to collect static files at the destination
+location as specified in your settings:
+
+    /home/edith/my-first-blog/static
     
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-    
-        /home/edith/my-first-blog/static
-    
-    This will overwrite existing files!
-    Are you sure you want to do this?
-    
-    Type 'yes' to continue, or 'no' to cancel: yes
-    
+This will overwrite existing files!
+Are you sure you want to do this?
+
+Type 'yes' to continue, or 'no' to cancel: yes
+```
 
 Tippe "yes" ein und es verschwindet! Liebst du es nicht auch, Computer dazu zu bringen, Seiten über Seiten von undurchdringbaren Text auszugeben? Ich mache immer kleine Geräusche, um das zu begleiten. Brp, brp brp...
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/my-first-blog/static'.
-    
+```
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+[...]
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+62 static files copied to '/home/edith/my-first-blog/static'.
+``` -->
 
 ### Erstellen einer Datenbank auf PythonAnywhere
 
@@ -221,14 +228,15 @@ Hier ist ein weiterer Unterschied zwischen deinem Computer und einem Server: unt
 
 Wir initialisieren die Datenbank auf dem Server genauso, wie wir es auf deinen Computer mit `migrate` und `createsuperuser` gemacht haben:
 
-    (mvenv) $ python manage.py migrate 
-    Operations to perform: 
-    [...]
-       Applying sessions.0001_initial... OK 
-    
-    
-    (mvenv) $ python manage.py createsuperuser
-    
+```
+(mvenv) $ python manage.py migrate 
+Operations to perform: 
+[...]
+    Applying sessions.0001_initial... OK 
+
+
+(mvenv) $ python manage.py createsuperuser
+```
 
 ## Veröffentlichen unseres Blogs als Web-App
 
@@ -258,22 +266,22 @@ Django funktioniert durch Verwendung des "WSGI Protokolls", ein Standard für Py
 
 Klicke auf den "WSGI configuration file"-Link (in der "Code"-Sektion im oberen Teil der Seite -- es sollte ungefähr so benannt sein `/var/www/<your-username>_pythonanywhere_com_wsgi.py`) und du wirst zu einem Editor geführt.
 
-Lösche alle Inhalte und ersetze sie durch etwas Ähnliches wie das:
+Lösche alle Inhalte und ersetze sie durch:
 
-    python
-    import os
-    import sys
-    
-    path = '/home/<your-username>/my-first-blog'  # use your own username here
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from whitenoise.django import DjangoWhiteNoise
-    application = DjangoWhiteNoise(get_wsgi_application())
-    
+```python
+import os
+import sys
+
+path = os.path.expanduser('~/my-first-blog')
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
+```
 
 > **Hinweis:** Vergiss nicht deinen Benutzernamen an der Stelle `<your-username>` einzusetzen
 
@@ -285,9 +293,7 @@ Wir sind fertig! Drücke auf den großen, grünen **Reload**-Knopf und du kannst
 
 ## Debugging Tipps
 
-Falls du beim Versuch deine Seite zu besuchen, einen Fehler siehst, ist der erste Ort, an dem man nach Debugging-Infos schauen sollte, dein **error log**. Einen Link dazu findest du auf dem PythonAnywhere [Web tab][8]. Schau nach, ob Fehlermeldungen enthalten sind; die neuesten findest du unten. Häufige Probleme sind:
-
- [8]: https://www.pythonanywhere.com/web_app_setup/
+Falls du beim Versuch deine Seite zu besuchen, einen Fehler siehst, ist der erste Ort, an dem man nach Debugging-Infos schauen sollte, dein **error log**. Einen Link dazu findest du auf dem PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob Fehlermeldungen enthalten sind; die neuesten findest du unten. Häufige Probleme sind:
 
 *   Einen der Schritte vergessen, die wir in der Konsole erledigt haben: das virtualenv kreieren, es aktivieren, Django darin installieren, collectstatic auszuführen, die Datenbank zu migrieren.
 
@@ -297,11 +303,10 @@ Falls du beim Versuch deine Seite zu besuchen, einen Fehler siehst, ist der erst
 
 *   Hast du die selbe Pythonversion für dein virtualenv gewählt wie für deine Web-App? Beide sollten 3.4 sein.
 
-*   Es gibt einige [general debugging tips on the PythonAnywhere wiki][9].
-
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+*   Es gibt einige [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
 Und denk dran, dein Coach ist da, um dir zu helfen!
+
 
 # Du bist live!
 
