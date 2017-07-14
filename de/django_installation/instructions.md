@@ -12,43 +12,47 @@ Du musst nur das Verzeichnis festlegen, in dem du das `virtualenv` erstellen wil
 
 In diesem Tutorial erstellen wir darin ein neues Verzeichnis `djangogirls`:
 
-    mkdir djangogirls
-    cd djangogirls
-    
+```bash
+$ mkdir djangogirls
+$ cd djangogirls
+```
 
 Wir nennen die virtuelle Umgebung `myvenv`. Das Kommando dazu lautet dann:
 
-    python3 -m venv myvenv
-    
+```bash
+$ python3 -m venv myvenv
+```
 
 ### Windows
 
-Um ein neues `virtualenv` zu erstellen, öffnest Du die Konsole (das kennst Du schon aus einem vorangegangenen Kapitel) und gibst `C:\Python34\python -m venv myvenv` ein. Das sieht dann so aus:
+Um ein neues `virtualenv` zu erstellen, öffnest Du die Konsole (das kennst Du schon aus einem vorangegangenen Kapitel) und gibst `C:\Python35\python -m venv myvenv` ein. Das sieht dann so aus:
 
-    C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
-    
+```bash
+C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
+```
 
-`C:\Python34\python` ist das Verzeichnis in das Du zuvor Python installiert hast. `myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deinem neuen `virtualenv`. Du kannst auch andere Namen benutzen. Aber denk daran: nur Kleinbuchstaben, keine Leerzeichen, Akzente oder andere Sonderzeichen. Kurze Namen eignen sich gut, denn Du wirst sie oft benutzen bzw. eingeben müssen!
+`C:\Python35\python` ist das Verzeichnis in das Du zuvor Python installiert hast. `myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deinem neuen `virtualenv`. Du kannst auch andere Namen benutzen. Aber denk daran: nur Kleinbuchstaben, keine Leerzeichen, Akzente oder andere Sonderzeichen. Kurze Namen eignen sich gut, denn Du wirst sie oft benutzen bzw. eingeben müssen!
 
 ### Linux und OS X
 
 Eine `virtualenv` auf Linux oder OS X anzulegen, heißt lediglich `python3 -m venv myvenv` einzugeben. Fertig. So sieht das dann aus:
 
-    ~/djangogirls$ python3 -m venv myvenv
-    
+```bash
+~/djangogirls$ python3 -m venv myvenv
+```
 
 `myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Andere Namen sind natürlich möglich. Bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. Es ist hilfreich, die Namen kurz zu halten, denn du wirst sie oft benutzen bzw. eingeben müssen!
 
-> **Anmerkung:** Die Einrichtung eines Virtualenv unter Ubuntu 14.04 wie beschrieben, wird mit der folgenden Fehlermeldung quittiert:
-> 
->     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
->     
+> **Anmerkung:** Die Einrichtung eines Virtualenv unter Ubuntu wie beschrieben, wird möglicherweise mit der folgenden Fehlermeldung quittiert:
+>```bash
+>Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+>```
 > 
 > Das zu umgehen, kannst du den `virtualenv`-Befehl verwenden.
-> 
->     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
->     
+>```bash
+>~/djangogirls$ sudo apt-get install python-virtualenv
+>~/djangogirls$ virtualenv --python=python3.4 myvenv
+>```
 
 ## Mit der virtuellen Umgebung arbeiten
 
@@ -57,33 +61,36 @@ Die obigen Kommandos erstellen ein Verzeichnis `myvenv` (bzw. den von Dir vergeb
 #### Windows
 
 Starte deine virtuelle Umgebung, indem du eingibst:
-
-    C:\Users\Name\djangogirls> myvenv\Scripts\activate
-    
+```bash
+C:\Users\Name\djangogirls> myvenv\Scripts\activate
+```
 
 #### Linux und OS X
 
 Starte deine virtuelle Umgebung, indem du eingibst:
 
+```bash
     ~/djangogirls$ source myvenv/bin/activate
-    
+```
 
 Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` übereinstimmen!
 
 > **Anmerkung:** Manchmal ist das Kommando `source` nicht verfügbar. In diesen Fällen geht es auch so:
-> 
->     ~/djangogirls$ . myvenv/bin/activate
->     
+>```bash
+>~/djangogirls$ . myvenv/bin/activate
+>```
 
 Dein `virtualenv` wurde erfolgreich erstellt, wenn der Prompt der Konsole so aussieht:
 
-    (myvenv) C:\Users\Name\djangogirls>
-    
+```bash
+(myvenv) C:\Users\Name\djangogirls>
+```
 
 oder:
 
-    (myvenv) ~/djangogirls$
-    
+```bash
+(myvenv) ~/djangogirls$
+```
 
 Die Zeile sollte mit dem Prefix `(myvenv)` beginnen!
 
@@ -93,20 +100,29 @@ Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Djang
 
 ## Django Installation
 
-Da dein `virtualenv` jetzt gestartet ist, kannst du Django mit `pip` installieren. Gib in die Konsole `pip install django==1.8` ein (beachte, dass wir zwei Gleichheitszeichen schreiben: `==`).
+Da dein `virtualenv` jetzt gestartet ist, kannst du Django mit `pip` installieren.
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
-    Installing collected packages: django
-    Successfully installed django
-    Cleaning up...
-    
+Bevor wir das tun, versichern wir uns, dass wir die neueste Version von `pip` installiert haben, die Software, mit welcher wir Django installieren werden:
 
-für Windows
+```bash
+(myvenv) ~$ pip install --upgrade pip
+```
+
+Gib in die Konsole `pip install django~=1.10.0` ein.
+
+```bash
+(myvenv) ~$ pip install django~=1.10.0
+Collecting django~=1.10.0
+  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
+Installing collected packages: django
+Successfully installed django-1.10.4
+```
+
+Für Windows
 
 > Wenn du auf einem Windows-Rechner einen Fehler bekommst beim Aufruf von pip, dann prüfe, ob dein Pfad Leerzeichen, Akzente oder Sonderzeichen enthält (`C:\Users\User Name\djangogirls`). Wenn das der Fall ist, dann verschiebe es an einen anderen Ort ohne Leerzeichen, Akzente oder Sonderzeichen (empfohlen: `C:\djangogirls`). Danach versuchst du die Installation am neuen Ort noch einmal.
 
-für Linux
+Für Linux
 
 > Für pip mit Ubuntu 12.04 kann es zu folgendem Fehler kommen. Ruf dann `python -m pip install -U --force-reinstall pip` auf, um die Installation von pip im virtualenv zu reparieren.
 
