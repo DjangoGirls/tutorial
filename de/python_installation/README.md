@@ -10,4 +10,4 @@ Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu
 
 > **Hinweis:** Falls du dich bereits durch die Installationsschritte gearbeitet hast, gibt es keinen Grund dies erneut zu tun - du kannst direkt zum nächsten Kapitel springen!
 
-{% include "python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md" %}
