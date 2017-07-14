@@ -6,19 +6,13 @@ In diesem Kapitel werden wir dir beibringen, wie man eine Domain kauft und sie m
 
 ## Wo registriert man eine Domain?
 
-Eine typische Domain kostet in etwa 15 $ pro Jahr. Es gibt günstigere und teurere Varianten, je nach Provider. Es gibt viele Unternehmen, bei denen du Domains kaufen kannst: eine einfache [Google-Suche][1] wird dir hunderte Vorschläge liefern.
+Eine typische Domain kostet in etwa 15 $ pro Jahr. Es gibt günstigere und teurere Varianten, je nach Provider. Es gibt viele Unternehmen, bei denen du Domains kaufen kannst: eine einfache [Google-Suche](https://www.google.com/search?q=register%20domain) wird dir hunderte Vorschläge liefern.
 
- [1]: https://www.google.com/search?q=register%20domain
-
-Unser Favorit ist [I want my name][2]. Die werben mit "einfachem Domainmanagement" und es ist wirklich simpel.
-
- [2]: https://iwantmyname.com/
-
+Unser Favorit ist [I want my name](https://iwantmyname.com/). Die werben mit "einfachem Domainmanagement" und es ist wirklich simpel.
+ 
 ## Wie registriert man eine Domain auf IWantMyName?
 
-Gehe auf [iwantmyname][3] und tippe eine Domain, die du haben möchtest, in das Suchfeld.
-
- [3]: http://iwantmyname.com
+Gehe auf [iwantmyname](http://iwantmyname.com) und tippe eine Domain, die du haben möchtest, in das Suchfeld.
 
 ![][4]
 
@@ -64,8 +58,6 @@ Es kann einige Stunden dauern, bevor deine Domain lauffähig ist, hab etwas Gedu
 
 Du musst Heroku angeben, dass du deine eigene Domain benutzen möchtest.
 
-Gehe zum [Heroku Dashboard][10], logge dich auf dein Heroku-Konto ein und wähle deine App aus. Dann geh in das Einstellungsmenu und füge deine Domain in der `Domains` Sektion ein und speichere deine Änderungen.
-
- [10]: https://dashboard.heroku.com/apps
+Gehe zum [Heroku Dashboard](https://dashboard.heroku.com/apps), logge dich auf dein Heroku-Konto ein und wähle deine App aus. Dann geh in das Einstellungsmenu und füge deine Domain in der `Domains` Sektion ein und speichere deine Änderungen.
 
 Das wars!
