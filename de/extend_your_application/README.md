@@ -12,28 +12,27 @@ Wir haben bereits ein `Post`-Model, deshalb brauchen wir dieses nicht mehr zur `
 
 Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei zu erstellen. Bis jetzt sieht sie so aus:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
-    
-    
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+```
 
 {% raw %}Wir wollen einen Link von einem Post-Titel in der Post-Liste zu einer Post-Detailseite haben. Ändern wir `<h1><a href="">{{ post.title }}</a></h1>`, so dass es zu der Detailseite verlinkt:{% endraw %}
 
-    html 
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
 {% raw %}Es ist an der Zeit, das mysteriöse `{% url 'post_detail' pk=post.pk %}` zu erklären. Wie du dir wahrscheinlich schon denkst, bedeutet `{% %}`, dass wir Django Template Tags verwenden. Dieses Mal verwenden wir eines, dass eine URL für uns erzeugen wird! {% endraw %}
 
@@ -53,15 +52,15 @@ Wir wollen, dass Details unseres ersten Blogposts unter dieser URL angezeigt wer
 
 Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* hinzuweisen, genannt `post_detail`, welche einen ganzen Blogpost anzeigen wird. Füge die Zeile `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')` zu der Datei `blog/urls.py` hinzu. Die Datei sollte so aussehen:
 
-    python 
-    from django.conf.urls import include, url 
-    from . import views 
-    
-    urlpatterns = [
-         url(r'^$', views.post_list, name='post_list'),
-         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'), 
-    ]
-    
+```python
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+]
+```
 
 Dieser Teil `^post/(?P<pk>[0-9]+)/$` sieht beängstigend aus, aber hab keine Angst - wir erklären es dir: - es beginnt mit `^` --"Der Anfang" -`post/` bedeutet lediglich, die URL sollte nach dem Anfang das Wort **post** und **/** enthalten. So weit, so gut. `(?P<pk>[0-9]+)` - dieser Teil ist schwieriger. Er bedeutet, dass Django alles, was hier steht, in einer Variable namens `pk` zu einem View transferiert. `[0-9]` sagt uns, dass hier nur eine Zahl, kein Buchstabe, stehen darf (also alles zwischen 0 und 9). `+`bedeutet, dass hier mindestens eine (oder mehrere) Ziffer(n) stehen müssen. Also so etwas wie `http://127.0.0.1:8000/post//` geht nicht, aber `http://127.0.0.1:8000/post/1234567890/` ist genau richtig! Dann folgt ein `/` - wir brauchen also wieder einen **/** und `$` - "Ende"!
 
@@ -83,8 +82,9 @@ Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss di
 
 Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, indem wir ein Queryset folgendermaßen schreiben:
 
-    Post.objects.get(pk=pk)
-    
+```python
+Post.objects.get(pk=pk)
+```
 
 Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem `primary key` (`pk`) gibt, bekommen wir einen schlimmen Fehler!
 
@@ -104,15 +104,17 @@ Okay, es wird Zeit, die *View* zu unserer `views.py`-Datei hinzuzufügen!
 
 Wir öffnen `blog/views.py` und fügen folgenden Code zu den anderen "from"-Zeilen hinzu:
 
-    from django.shortcuts import render, get_object_or_404
-    
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
 Am Ende der Datei fügen wir unsere *View* hinzu:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-    
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Super. Lass uns nun http://127.0.0.1:8000/ aktualisieren.
 
@@ -134,21 +136,21 @@ Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.htm
 
 Das sieht dann so aus:
 
-    html
-    {% extends 'blog/base.html' %}
-    
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endblock %}
-    
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
+```
 
 Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
@@ -166,27 +168,25 @@ Yeah! Es funktioniert!
 
 Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert, richtig? Lass sie uns erneut bereitstellen.
 
-    $ git status 
-    $ git add -A . 
-    $ git status 
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site." 
-    $ git push
-    
+```
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
+```
 
-*   Dann führe Folgendes in der [PythonAnywhere Bash-Konsole][8] aus:
+*   Dann führe Folgendes in der [PythonAnywhere Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
- [8]: https://www.pythonanywhere.com/consoles/
-
+```
     $ cd my-first-blog 
     $ source myvenv/bin/activate 
     (myvenv)$ git pull 
     [...] 
     (myvenv)$ python manage.py collectstatic 
     [...]
-    
+```
 
-*   Springe nun noch schnell auf den [Web-Tab][9] und klicke auf **Reload**.
-
- [9]: https://www.pythonanywhere.com/web_app_setup/
+*   Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
 Und das war's! Glückwunsch :)
