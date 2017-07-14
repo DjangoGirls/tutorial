@@ -14,9 +14,9 @@ Im vorangegangen Kapitel haben wir unserem Template in der `posts`-Variable eine
 
 Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, geschweifte Klammern mit dem Namen der Variable darin, so wie hier:
 
-    html
-    {{ posts }}
-    
+```html
+{{ posts }}
+```
 
 Versuche dies in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
 
@@ -26,16 +26,17 @@ Versuche dies in deinem `blog/templates/blog/post_list.html` Template. Ersetze a
 
 Wie du siehst, haben wir nun das:
 
-    [<Post: My second post>, <Post: My first post>]
-    
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
 Das heißt, Django versteht es als Liste von Objekten. Kannst du dich noch an die Einführung von Python erinnern, wie man Listen anzeigen kann? Ja, mit for-Schleifen! In einem Django-Template benutzt du sie so:
 
-    html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
-    
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
 Versuch das in deinem Template.
 
@@ -45,19 +46,19 @@ Versuch das in deinem Template.
 
 Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die statischen Posts, die wir vorhin im **Introduction to HTML** Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
 
-    html
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaks }}</p>
-        </div>
-    {% endfor %}
-    
+{% endfor %}
+```
 
 {% raw %}Alles, was du zwischen `{% for %}`und `{% endfor %}` schreibst, wird für jedes Objekt in der Liste wiederholt. Aktualisiere deine Seite:{% endraw %}
 
@@ -73,27 +74,26 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 *   Schiebe zuerst deinen Code auf GitHub
 
-    $ git status 
-    [...]
-    $ git add -A . 
-    $ git status 
-    [...]
-    $ git commit -m "Modified templates to display posts from database." 
-    [...] $ git push
-    
+```bash
+$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
+```
 
-*   Dann logg dich wieder bei [PythonAnywhere][4] ein und geh zu deiner **Bash-Konsole** (oder starte eine neue) und gib ein:
+*   Dann logg dich wieder bei [PythonAnywhere](https://www.pythonanywhere.com/consoles/) ein und geh zu deiner **Bash-Konsole** (oder starte eine neue) und gib ein:
 
- [4]: https://www.pythonanywhere.com/consoles/
+```bash
+$ cd my-first-blog
+$ git pull
+[...]
+```
 
-    $ cd my-first-blog
-    $ git pull 
-    [...]
-    
-
-*   Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab][5] und drück auf **Reload**. Deine Änderungen sollten jetzt live sein!
-
- [5]: https://www.pythonanywhere.com/web_app_setup/
+*   Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein!
 
 Herzlichen Glückwunsch! Du kannst jetzt in der Django Admin Oberfläche neue Posts hinzufügen (denk daran published_date hinzuzufügen!), dann aktualisiere die Site, um zu sehen, ob der neue Post auch erscheint.
 
