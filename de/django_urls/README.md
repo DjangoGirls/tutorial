@@ -16,18 +16,18 @@ Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation,
 
 Öffne die `mysite/urls.py`-Datei in deinem Code-Editor nach Wahl und schaue dir an, wie sie aussieht:
 
-    python 
-    from django.conf.urls import include, url 
-    from django.contrib import admin 
-    
-    urlpatterns = [ 
-        # Examples:  
-        # url(r'^$', 'mysite.views.home', name='home'),  
-        # url(r'^blog/', include('blog.urls')), 
-    
-        url(r'^admin/', include(admin.site.urls)), 
-    ]
-    
+```python
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+]
+```
 
 Wie du siehst, hat Django hier schon etwas für uns eingefügt.
 
@@ -35,9 +35,9 @@ Zeilen, die mit `#` anfangen sind Kommentare - das bedeutet, dass diese Zeilen v
 
 Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon da:
 
-    python   
-      url(r'^admin/', include(admin.site.urls)),
-    
+```python
+    url(r'^admin/', admin.site.urls),
+```
 
 Für jede URL, die mit `admin/` beginnt, wird Django die entsprechende View finden. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt --es bleibt lesbarer und sauberer.
 
@@ -47,12 +47,11 @@ Du fragst dich, WIE Django die richtige View zu einer URL findet? Nun, das ist e
 
 Wenn du trotzdem immer noch verstehen willst, wie wir die Muster erstellt haben, folgt hier ein kleines Beispiel. Wir brauchen nur eine eingeschränkte Menge der vorhandenen Regeln, um das Muster, nach dem wir suchen, auszudrücken, nämlich:
 
-    ^ für den Anfang eines Textes 
-    $ für das Ende eines Textes 
-    \d für eine Nummer 
-    + um anzuzeigen, dass das vorhergehende Element mind. 1 mal wiederholt werden soll 
-    () um Teile des Musters zu erfassen
-    
+* `^` für den Anfang eines Textes
+* `$` für das Ende eines Textes
+* `\d` für eine Nummer
+* `+` um anzuzeigen, dass das vorhergehende Element mind. 1 mal wiederholt werden soll
+* `()` um Teile des Musters zu erfassen
 
 Alles andere in der URL-Definition wird wörtlich genommen.
 
@@ -60,10 +59,10 @@ Jetzt stell dir vor, du hast eine Website mit der Adresse: `http://www.mysite.co
 
 Eigene Views für jeden einzelnen Post zu schreiben, wäre ziemlich nervig. Mit regulären Asudrücken können wir ein Muster erstellen, welches auf die URL passt und die Nummer extrahieren wird: `^post/(\d+)/$`. Lass es uns in kleine Häppchen aufteilen, um zu verstehen, was wir hier genau tun:
 
-*   **^post/** veranlasst Django, alles in Betracht zu ziehen, das `post/` am Anfang der URL hat (gleich nach `^`)
-*   **(\d+)** steht für eine Zahl (eine oder mehrere Ziffern) und wir wollen diese Zahl erfassen und auswerten
-*   **/** sagt Django, dass ein weiteres `/` Zeichen folgen soll
-*   **$** steht für das Ende der URL mit der Bedeutung, dass nur Zeichenfolgen, die auf `/` enden, dem Muster entsprechen
+* **^post/** veranlasst Django, alles in Betracht zu ziehen, das `post/` am Anfang der URL hat (gleich nach `^`)
+* **(\d+)** steht für eine Zahl (eine oder mehrere Ziffern) und wir wollen diese Zahl erfassen und auswerten
+* **/** sagt Django, dass ein weiteres `/` Zeichen folgen soll
+* **$** steht für das Ende der URL mit der Bedeutung, dass nur Zeichenfolgen, die auf `/` enden, dem Muster entsprechen
 
 ## Deine erste Django URL!
 
@@ -75,15 +74,15 @@ Fang damit an, die auskommentierten Zeilen (Zeilen mit `#`) zu löschen und füg
 
 Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
-    python 
-    from django.conf.urls import include, url 
-    from django.contrib import admin 
-    
-    urlpatterns = [   
-      url(r'^admin/', include(admin.site.urls)),  
-      url(r'', include('blog.urls')), 
-    ]
-    
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('blog.urls')),
+]
+```
 
 Django wird nun alle Aufrufe von 'http://127.0.0.1:8000/' auf `blog.urls` umleiten und dort nach weiteren Anweisungen schauen.
 
@@ -93,20 +92,20 @@ Beim Schreiben von regulären Ausdrücken in Python benutzt man immer das `r` vo
 
 Erstelle eine neue, leere Datei `blog/urls.py`. Alles klar! Füge nun diese beiden Zeilen hinzu:
 
-    python 
-    from django.conf.urls import url 
-    from . import views
-    
+```python
+from django.conf.urls import url
+from . import views
+```
 
 Hier importieren wir erstmal nur die Methoden von Django und alles aus den `views` unserer `blog` Applikation (wir haben noch keine, aber dazu kommen wir gleich!).
 
 Danach können wir unser erstes URL-Pattern hinzufügen:
 
-    python 
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-    ]
-    
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
 
 Hier haben wir nun einen `view` mit dem Namen `post_list` zur `^$`-URL hinzugefügt. Dieser reguläre Ausdruck passt auf einen Anfang `^` gefolgt von einem Ende `$` - das heißt, nur eine leere Zeichenfolge kann dieses Muster erfüllen. Und das ist auch richtig so! Denn die Django URL-Auflösung erkennt 'http://127.0.0.1:8000/' nicht als Teil der URL an. Wenn jemand deine Website mit der Adresse 'http://127.0.0.1:8000/' aufruft, passt dieses Muster (leere Zeichenkette) und Django weiß so, dass `views.post_list` das gewünschte Ziel ist.
 
