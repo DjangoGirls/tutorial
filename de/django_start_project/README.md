@@ -2,9 +2,8 @@
 
 > Teile dieses Kapitels basieren auf den Tutorials der Geek Girls Carrots (http://django.carrots.pl/).
 > 
-> Teile dieses Kapitels basieren auf dem [django-marcador Tutorial][1] lizenziert unter Creative Commons Attribution-ShareAlike 4.0 International License. Für das "django-marcador Tutorial" liegt das Urheberrecht bei Markus Zapke-Gründemann et al.
+> Teile dieses Kapitels basieren auf dem [django-marcador Tutorial](http://django-marcador.keimlink.de/) lizenziert unter Creative Commons Attribution-ShareAlike 4.0 International License. Für das "django-marcador Tutorial" liegt das Urheberrecht bei Markus Zapke-Gründemann et al.
 
- [1]: http://django-marcador.keimlink.de/
 
 Wir werden einen einfachen Blog erstellen!
 
@@ -16,13 +15,15 @@ Die Namen einiger Dateien und Verzeichnisse sind sehr wichtig für Django. Die D
 
 In deiner MacOS- oder Linux-Konsole solltest du den folgenden Befehl ausführen; **vergiss nicht, den Punkt `.` am Ende** einzufügen:
 
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
-    
+```
+(myvenv) ~/djangogirls$ django-admin startproject mysite .
+```
 
 Unter Windows; **vergiss nicht, den Punkt `.` am Ende** einzufügen:
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
-    
+```
+(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+```
 
 > Der Punkt `.` ist sehr wichtig, weil er dem Skript mitteilt, dass Django in deinem aktuellen Verzeichnis installiert werden soll. (der Punkt `.` ist eine Schnellreferenz dafür)
 > 
@@ -30,14 +31,15 @@ Unter Windows; **vergiss nicht, den Punkt `.` am Ende** einzufügen:
 
 `django-admin.py` ist ein Skript, welches Verzeichnisse und Dateien für dich erstellt. Du solltest jetzt eine Verzeichnisstruktur haben, die folgendermaßen aussieht:
 
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
-    
+```
+djangogirls
+├───manage.py
+└───mysite
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+```
 
 `manage.py` ist ein Script, das das Management deines Projektes unterstützt. Mit dem Script bist du unter anderem in der Lage, den Webserver auf deinem Rechner zu starten, ohne etwas Weiteres installieren zu müssen.
 
@@ -51,24 +53,22 @@ Lass uns kurz die anderen Dateien vergessen - wir werden sie nicht verändern. D
 
 Wir werden die Einstellungen in `mysite/settings.py` anpassen. Öffne dazu den zuvor installierten Editor.
 
-Es wäre schön, wenn die richtige Zeit auf deiner Webseite eingestellt ist. Gehe zu der [wikipedia timezones list][2] und kopiere deine zutreffende Zeitzone (time zone, TZ). (z.B. `Europe/Berlin`)
-
- [2]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+Es wäre schön, wenn die richtige Zeit auf deiner Webseite eingestellt ist. Gehe zu der [wikipedia timezones list](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) und kopiere deine zutreffende Zeitzone (time zone, TZ). (z.B. `Europe/Berlin`)
 
 Finde in der settings.py die Zeile, welche `TIME_ZONE` enthält und ändere sie zu deiner Zeitzone:
 
-    python
-    TIME_ZONE = 'Europe/Berlin'
-    
+```python
+TIME_ZONE = 'Europe/Berlin'
+```
 
 Ändere "Europe/Berlin", wenn zutreffend.
 
 Des Weiteren brauchen wir einen Dateipfad für sogenannte "statische" Dateien (static files). Wir werden später im Tutorial genauer klären, was wir darunter verstehen. Gehe ganz ans Ende der Datei und füge unter `STATIC_URL` einen neuen Eintrag `STATIC_ROOT` ein.
 
-    python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
 
 ## Eine Datenbank erstellen
 
@@ -76,54 +76,56 @@ Es gibt viele verschiedene Datenbanksysteme, in denen wir Daten für unsere Webs
 
 Das sollte schon in der `mysite/settings.py`-Datei eingestellt sein:
 
-    python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-    
+}
+```
 
 Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl in der Konsole ausführen (Dazu müssen wir in dem `djangogirls`-Verzeichnis sein, in dem sich auch die `manage.py`-Datei befindet). Wenn alles glatt läuft, sollte das so aussehen:
 
-    (myvenv) ~/djangogirls$ python manage.py migrate 
-    Operations to perform: 
-      Synchronize unmigrated apps: messages, staticfiles
-      Apply all migrations: contenttypes, sessions, admin, auth Synchronizing apps without migrations:
-       Creating tables...
-          Running deferred SQL...
-       Installing custom SQL...
-    Running migrations: 
-      Rendering model states... DONE 
-      Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK 
-      Applying contenttypes.0002_remove_content_type_name... OK 
-      Applying auth.0002_alter_permission_name_max_length... OK 
-      Applying auth.0003_alter_user_email_max_length... OK 
-      Applying auth.0004_alter_user_username_opts... OK  
-     Applying auth.0005_alter_user_last_login_null... OK 
-      Applying auth.0006_require_contenttypes_0002... OK
-      Applying sessions.0001_initial... OK
-    
+```
+(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, admin, contenttypes, sessions
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying sessions.0001_initial... OK
+```
 
 Und wir sind fertig! Zeit, unseren Webserver zu starten, um zu sehen, ob unsere Website funktioniert!
 
 Kontrolliere, dass du in dem Verzeichniss bist, in dem die `manage.py`-Datei liegt (das `djangogirls`-Verzeichnis). Wir starten den Webserver, indem wir in der Konsole `python manage.py runserver` ausführen:
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
-    
+```
+(myvenv) ~/djangogirls$ python manage.py runserver
+```
 
 Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verwende diesen Befehl:
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
+```
+(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+```
 
 Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser (Firefox, Chrome, Safari, Edge oder was du sonst nutzt) und gib folgende Adresse ein:
 
-    http://127.0.0.1:8000/
-    
+```
+http://127.0.0.1:8000/
+```
 
 Der Webserver wird deine Eingabeaufforderung übernehmen, bis du ihn wieder stoppst. Um weiterhin Kommandos einzugeben, während er läuft, öffne eine neue Konsole und aktiviere dein Virtualenv. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft und drücke STRG+C - Steuerung und C gleichzeitig (in Windows kann es sein, dass du STRG und Pause drücken musst).
 
