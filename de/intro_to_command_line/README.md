@@ -34,13 +34,15 @@ Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisun
 
 Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
 
-    $
-    
+```bash
+$
+```
 
 Auf Windows siehst du ein `>` Zeichen, also das hier:
 
-    >
-    
+```bash
+>
+```
 
 Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich :)
 
@@ -50,19 +52,22 @@ Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber d
 
 Fangen wir mit etwas Einfachem an. Schreibe folgenden Befehl:
 
-    $ whoami
-    
+```bash
+$ whoami
+```
 
 oder
 
-    > whoami
-    
+```bash
+> whoami
+```
 
 Und dann betätige mit `Enter`. Das ist unser Ergebnis:
 
-    $ whoami
-    olasitarska
-    
+```bash
+$ whoami
+olasitarska
+```
 
 Wie du sehen kannst, hat der Computer gerade deinen Benutzernamen ausgegeben. Toll, was? :)
 
@@ -76,15 +81,17 @@ Jedes Betriebssystem hat einen geringfügig anderen Bestand an Befehlen für die
 
 Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib diesen Befehl in die Konsole ein und bestätige ihn mit `Enter`:
 
-    $ pwd
-    /Users/olasitarska
-    
+```bash
+$ pwd
+/Users/olasitarska
+```
 
 Wenn du Windows benutzt, schreibe Folgendes:
 
-    > cd
-    C:\Users\olasitarska
-    
+```bash
+> cd
+C:\Users\olasitarska
+```
 
 Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Konsole öffnest, befindest du dich normalerweise im Heimverzeichnis deines Benutzers.
 
@@ -96,23 +103,26 @@ Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Ko
 
 Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:
 
-    $ ls
-    Anwendungen
-    Desktop
-    Downloads
-    Musik
-    ...
-    
+```bash
+$ ls
+Anwendungen
+Desktop
+Downloads
+Musik
+...
+```
 
 Windows:
 
-    > dir
-     Directory of C:\Users\olasitarska
-     05/08/2014 07:28 PM <DIR> Applications 
-     05/08/2014 07:28 PM <DIR> Desktop
-     05/08/2014 07:28 PM <DIR> Downloads
-     05/08/2014 07:28 PM <DIR> Music ...
-    
+```bash
+> dir
+ Directory of C:\Users\olasitarska
+ 05/08/2014 07:28 PM <DIR> Applications 
+ 05/08/2014 07:28 PM <DIR> Desktop
+ 05/08/2014 07:28 PM <DIR> Downloads
+ 05/08/2014 07:28 PM <DIR> Music
+ ...
+```
 
 * * *
 
@@ -120,25 +130,29 @@ Windows:
 
 Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
-    $ cd Desktop
-    
+```bash
+$ cd Desktop
+```
 
 Windows:
 
-    > cd Desktop
-    
+```bash
+> cd Desktop
+```
 
 Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+```bash
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+```bash
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Hier ist es!
 
@@ -150,13 +164,15 @@ Hier ist es!
 
 Wie wärs damit, ein Probeverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
-    $ mkdir practice
-    
+```bash
+$ mkdir practice
+```
 
 Windows:
 
-    > mkdir practice
-    
+```bash
+> mkdir practice
+```
 
 Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es :)
 
@@ -170,18 +186,20 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 #### Lösung:
 
-    $ cd practice
-    $ mkdir test 
-    $ ls test
-    
+```bash
+$ cd practice
+$ mkdir test 
+$ ls test
+```
 
 Windows:
 
-    > cd practice 
-    > mkdir test 
-    > dir 
-    05/08/2014 07:28 PM <DIR>   test
-    
+```bash
+> cd practice 
+> mkdir test 
+> dir 
+05/08/2014 07:28 PM <DIR>   test
+```
 
 Glückwunsch! :)
 
@@ -193,62 +211,72 @@ Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder
 
 Zuerst müssen wir zurück zum Desktop wechseln:
 
-    $ cd ..
-    
+```bash
+$ cd ..
+```
 
 Windows:
 
-    > cd ..
-    
+```bash
+> cd ..
+```
 
 Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
 Schau nach, wo du gerade bist:
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+```bash
+$ pwd
+/Users/olasitarska/Desktop
+```
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+```bash
+> cd
+C:\Users\olasitarska\Desktop
+```
 
 Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
+```bash
     $ rm -r practice
-    
+```
 
 Windows:
 
-    > rmdir /S practice 
-    practice, Are you sure <Y/N>? Y
-    
+```bash
+> rmdir /S practice 
+practice, Are you sure <Y/N>? Y
+```
 
 Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
-    $ ls
-    
+```bash
+$ ls
+```
 
 Windows:
 
-    > dir
-    
+```bash
+> dir
+```
 
 ### Beenden
 
 Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
-    $ exit
-    
+```bash
+$ exit
+```
 
 Windows:
 
-    > exit
-    
+```bash
+> exit
+```
 
 Cool, was? :)
 
@@ -268,9 +296,7 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
 Das sind nur sehr wenige aller Befehle, die du in deiner Konsole verwenden kannst, heute aber wirst du keine weiteren brauchen.
 
-Falls du neugierig bist, findest du auf [ss64.com][1] eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
-
- [1]: http://ss64.com
+Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme. 
 
 ## Fertig?
 
