@@ -790,7 +790,7 @@ Wir wollen alle mit ihrem Namen grüßen. Wir besitzen bereits die `hi`-Funktion
 for name in girls:
 ```
 
-Die ~ ~ ~ for ~ ~ ~ Anweisung verhält sich ähnlich der ~ ~ ~ if~ ~ ~ Anweisung; Code unter beiden muss 4 Leerzeichen eingerückt werden.
+Die `for`-Anweisung verhält sich ähnlich der `if`-Anweisung; Code unter beiden muss 4 Leerzeichen eingerückt werden.
 
 Hier ist der vollständige Code für die Datei:
 

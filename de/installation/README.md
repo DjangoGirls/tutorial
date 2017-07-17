@@ -12,31 +12,31 @@ Viel Erfolg!
 
 Im Workshop wirst Du einen Blog erstellen und es gibt einige Dinge, bei denen es besser ist, wenn Du sie vorher vorbereitest, so dass Du gleich mit dem Programmieren loslegen kannst.
 
-# Python installieren
+## Python installieren
 
 {% include "/python_installation/instructions.md" %}
 
-# Virtualenv einrichten und Django installieren
+## Virtualenv einrichten und Django installieren
 
 {% include "/django_installation/instructions.md" %}
 
-# Einen Code Editor installieren
+## Einen Code Editor installieren
 
 {% include "/code_editor/instructions.md" %}
 
-# Git installieren
+## Git installieren
 
 {% include "/code_editor/instructions.md" %}
 
-# Einen GitHub-Account einrichten
+## Einen GitHub-Account einrichten
 
 Öffne [GitHub.com](http://www.github.com) und richte Dir einen neuen, kostenfreien Nutzeraccount ein.
 
-# Einen PythonAnywhere-Account erstellen
+## Einen PythonAnywhere-Account erstellen
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Fang an zu lesen!
+## Fang an zu lesen!
 
 Herzlichen Glückwunsch, Du hast alles eingerichtet und bist nun bereit, loszulegen. Wenn Du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 

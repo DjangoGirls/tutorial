@@ -155,7 +155,7 @@ Nun füge die Zeile `font-family: 'Lobster';` in die CSS-Datei `blog/static/css/
 ```css
 h1 a {
     color: #FCA204;
-   font-family: 'Lobster';
+    font-family: 'Lobster';
 }
 ```
 

@@ -97,8 +97,6 @@ Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Ko
 
 > Hinweis: 'pwd' steht für 'print working directory' (zeige derzeitiges Arbeitsverzeichnis).
 
-* * *
-
 ### Anzeigen von Dateien und Unterordnern
 
 Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:
@@ -123,8 +121,6 @@ Windows:
  05/08/2014 07:28 PM <DIR> Music
  ...
 ```
-
-* * *
 
 ### Wechseln des Verzeichnisses
 
@@ -158,8 +154,6 @@ Hier ist es!
 
 > Profi-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
-* * *
-
 ### Erstellen eines Verzeichnisses
 
 Wie wärs damit, ein Probeverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
@@ -177,8 +171,6 @@ Windows:
 Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es :)
 
 > Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
-
-* * *
 
 ### Übung!
 
@@ -202,8 +194,6 @@ Windows:
 ```
 
 Glückwunsch! :)
-
-* * *
 
 ### Aufräumen
 

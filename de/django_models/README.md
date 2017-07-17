@@ -60,7 +60,7 @@ Da wir jetzt in etwa wissen, was ein Objekt ist, wollen wir ein Django-Model, ei
 
 Ein Model in Django ist ein spezielles Konstrukt, das in unserer Datenbank gespeichert werden kann. Eine Datenbank ist eine Sammlung von Daten. Dies ist ein Ort, an dem du Informationen zu Benutzern, deinen Blogposts usw. speichern wirst. Wir benutzen dafür eine SQLite-Datenbank. Das ist die Voreinstellung in Django - für uns wird das erst einmal ausreichen.
 
-Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", englisch "fields") und Zeilen (Datensätzen) vorstellen.
+Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", Englisch "fields") und Zeilen (Datensätzen) vorstellen.
 
 ### Eine Applikation für unseren Blog
 

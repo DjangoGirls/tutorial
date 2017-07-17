@@ -59,6 +59,4 @@ $ python3 --version
 Python 3.5.1
 ```
 
-* * *
-
 Falls du irgendwelche Zweifel hast oder falls etwas falsch gelaufen ist und du keine Ahnung hast, was als Nächstes zu tun ist - frag einfach deinen Coach! Manchmal laufen die Dinge einfach nicht so glatt und dann ist es besser, jemanden mit mehr Erfahrung zu fragen.
