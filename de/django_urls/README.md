@@ -6,9 +6,7 @@ Wir sind dabei, unsere erste Website zu erstellen --eine Homepage für unseren B
 
 Eine URL ist einfach eine Web-Adresse. Jedes Mal, wenn du eine Website besuchst, kannst du eine URL sehen - sie ist in der Adressleiste des Browsers sichtbar (ja! `127.0.0.1:8000` ist eine URL! Und `https://djangogirls.com` ist auch eine URL!).
 
-![URL][1]
-
- [1]: images/url.png
+![URL](images/url.png)
 
 Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation, was sie dem Nutzer, der eine URL öffnet, zeigen soll. In Django verwenden wir eine sogenannte `URLconf` (URL- Konfiguration). URLconf ist eine Ansammlung von Mustern, die Django mit der empfangenen URL abgleicht, um die richtige View zu finden, das heißt, um letztlich die richtige Seite für den Nutzer anzuzeigen.
 
@@ -36,7 +34,7 @@ Zeilen, die mit `#` anfangen sind Kommentare - das bedeutet, dass diese Zeilen v
 Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon da:
 
 ```python
-    url(r'^admin/', admin.site.urls),
+url(r'^admin/', admin.site.urls),
 ```
 
 Für jede URL, die mit `admin/` beginnt, wird Django die entsprechende View finden. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt --es bleibt lesbarer und sauberer.
@@ -113,9 +111,7 @@ Der letzte Teil `name='post_list'` ist der Name der URL, die genutzt wird, die V
 
 Alles klar? Öffne http://127.0.0.1:8000/ in deinem Browser, um das Ergebnis zu sehen.
 
-![Fehler][2]
-
- [2]: images/error1.png
+![Fehler](images/error1.png)
 
 Dort steht nicht mehr "It works"? Keine Sorge, es ist nur eine Fehlerseite. Nichts, wovor man Angst haben muss! Diese Seiten sind eigentlich sehr hilfreich:
 

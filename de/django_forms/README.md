@@ -132,9 +132,7 @@ Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` ers
 *   Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
 *   Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Django wird sich beschweren, wenn du dies vergisst und trotzdem versuchst, das Formular zu speichern:
 
-![CSFR Forbidden page][1]
-
- [1]: images/csrf2.png
+![CSFR Forbidden page](images/csrf2.png)
 
 Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
 
@@ -152,9 +150,7 @@ Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
 
 So, jetzt aktualisieren wir die Seite! Yay! Das Formular wird angezeigt!
 
-![Neues Formular][2]
-
- [2]: images/new_form2.png
+![Neues Formular](images/new_form2.png)
 
 Aber Moment! Wenn du irgendetwas eintippst in das `title`- oder `text`-Feld und versuchst zu speichern - was wird wohl passieren?
 
@@ -246,17 +242,13 @@ Jetzt zeigen wir dir, wie cool Django Formulare sind. Ein Blogpost muss `title`-
 
 Versuch das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
 
-![Formularvalidierung][3]
-
- [3]: images/form_validation2.png
+![Formularvalidierung](images/form_validation2.png)
 
 Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular richtig sind. Ist das nicht großartig?
 
 > Da wir vor Kurzem das Django Admin Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zu der Admin Seite http://127.0.0.1:8000/admin und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel **Homework: add security to your website!** nach dem Haupttutorial auf dich wartet.
 
-![Logged in error][4]
-
- [4]: images/post_create_error.png
+![Logged in error](images/post_create_error.png)
 
 ## Formular bearbeiten
 
@@ -327,15 +319,11 @@ form = PostForm(instance=post)
 
 Ok, lass uns mal schauen, ob das funktioniert! Geh auf die `post_detail`-Seite. Dort sollte sich ein Editier-Button in der oberen rechten Ecke befinden:
 
-![Schaltfläche "Bearbeiten"][5]
-
- [5]: images/edit_button2.png
+![Schaltfläche "Bearbeiten"](images/edit_button2.png)
 
 Wenn du darauf klickst, siehst du das Formular mit unserem Blogpost:
 
-![Formular bearbeiten][6]
-
- [6]: images/edit_form2.png
+![Formular bearbeiten](images/edit_form2.png)
 
 Probier doch einmal den Titel oder den Text zu ändern und die Änderungen zu speichern!
 
@@ -369,7 +357,7 @@ Da du wahrscheinlich angemeldet bist, wirst du nichts Neues sehen, wenn du die S
 
 Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weiteres Deployment!
 
-*   Checke als Erstes deinen neuen Code ein und lade ihn auf GitHub hoch
+* Checke als Erstes deinen neuen Code ein und lade ihn auf GitHub hoch
 
 ```
 $ git status
@@ -379,18 +367,18 @@ $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
 ```
 
-*   Dann führe Folgendes in der [PythonAnywhere Bash Konsole](https://www.pythonanywhere.com/consoles/) aus:
+* Dann führe Folgendes in der [PythonAnywhere Bash Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
 ```
-    $ cd my-first-blog 
-    $ source myvenv/bin/activate 
-    (myvenv)$ git pull 
-    [...] 
-    (myvenv)$ python manage.py collectstatic 
-    [...]
+$ cd my-first-blog 
+$ source myvenv/bin/activate 
+(myvenv)$ git pull 
+[...] 
+(myvenv)$ python manage.py collectstatic 
+[...]
 ```
 
-*   Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
+* Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
 
 Und das war's! Glückwunsch :)

@@ -20,13 +20,11 @@ Wenn du mit dem Tutorial fertig bist, hast du eine einfache, aber funktionierend
 
 Es wird (in etwa) so aussehen:
 
-![Abbildung 0.1][2]
-
- [2]: images/application.png
+![Abbildung 0.1](images/application.png)
 
 > Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)]((https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
-Okay, [ lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
+Okay, [lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
 
 ## Über uns und wie du mithelfen kannst
 

@@ -70,7 +70,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 Starte deine virtuelle Umgebung, indem du eingibst:
 
 ```bash
-    ~/djangogirls$ source myvenv/bin/activate
+~/djangogirls$ source myvenv/bin/activate
 ```
 
 Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` übereinstimmen!

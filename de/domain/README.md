@@ -14,41 +14,29 @@ Unser Favorit ist [I want my name](https://iwantmyname.com/). Die werben mit "ei
 
 Gehe auf [iwantmyname](http://iwantmyname.com) und tippe eine Domain, die du haben möchtest, in das Suchfeld.
 
-![][4]
-
- [4]: images/1.png
+![](images/1.png)
 
 Du solltest jetzt eine Liste mit all den verfügbaren Domains sehen, die zu deinem Wunschnamen passen. Wie du sehen kannst, zeigt dir ein Smiley an, wenn eine Domain verfügbar ist und ein trauriges Gesicht, wenn sie bereits vergeben ist.
 
-![][5]
-
- [5]: images/2.png
+![](images/2.png)
 
 Wir haben beschlossen, `djangogirls.in` zu kaufen:
 
-![][6]
-
- [6]: images/3.png
+![](images/3.png)
 
 Gehe zur Kasse. Du solltest dich jetzt bei IwantMyName anmelden, wenn du nicht bereits ein Konto dort hast. Danach gib deine Kreditkarteninformationen ein und kaufe deine Domain!
 
 Im Anschluss klickst du auf `Domains` im Menu und wählst deine neu gekaufte Domain aus. Dann suche und klicke auf den `manage DNS records` Link:
 
-![][7]
-
- [7]: images/4.png
+![](images/4.png)
 
 Jetzt musst du dieses Formular finden:
 
-![][8]
-
- [8]: images/5.png
+![](images/5.png)
 
 Fülle es mit den folgenden Details aus: - Hostname: www - Type: CNAME - Value: deine Heroku-Domain (z.B. djangogirls.herokuapp.com) - TTL: 3600
 
-![][9]
-
- [9]: images/6.png
+![](images/6.png)
 
 Klicke auf "Hinzufügen" und speichere die Änderungen am unteren Ende.
 

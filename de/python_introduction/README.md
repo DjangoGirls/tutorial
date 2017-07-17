@@ -849,6 +849,4 @@ Das ist alles. **You totally rock!** Das war ein heikles Kapitel, darum kannst d
 
 Du möchtest jetzt vielleicht kurz etwas anderes tun - stretchen, etwas herumlaufen, deine Augen ausruhen - bevor es weiter zum nächsten Kapitel geht. :)
 
-![Cupcake][3]
-
- [3]: images/cupcake.png
+![Cupcake](images/cupcake.png)

@@ -29,10 +29,8 @@ Speichere die Datei, öffne http://127.0.0.1:8000/ im Browser und schau nach, wa
 
 Einen anderen Fehler! Lies dir durch, was da steht:
 
-![Fehler][1]
-
- [1]: images/error.png
+![Fehler](images/error.png)
 
 Logisch: *TemplateDoesNotExist*. Wir haben ja noch kein Template erstellt. Lass uns diesen Bug im nächsten Kapitel beheben!
 
-> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/1.10/topics/http/views/

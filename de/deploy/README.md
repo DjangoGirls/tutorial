@@ -87,17 +87,14 @@ $ git commit -m "Meine Django Girls App, erster Commit"
 
 Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass das Kontrollkästchen "initialise with a README" deaktiviert, die Einstellung der Option .gitignore frei (das haben wir schon von Hand gemacht) und lass die Lizenz auf "None".
 
-![][3]
+![](images/new_github_repo.png)
 
- [3]: images/new_github_repo.png
 
 > **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. Lass es besser erst mal bei `my-first-blog`.
 
 Auf der nächsten Seite wird dir die Clone-URL des Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie und füge sie in der Konsole ein:
 
-![][4]
-
- [4]: images/github_get_repo_url_screenshot.png
+![](images/github_get_repo_url_screenshot.png)
 
 Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbinden.
 
@@ -252,9 +249,7 @@ Nach der Bestätigung deines Domainnamens wählst du **manual configuration** (N
 
 Du wirst auf den PythonAnywhere-Konfigurationsschirm für deine Web-App weitergeleitet. Dorthin musst du immer gehen, wenn du Änderungen an deiner App auf dem Server vornehmen willst.
 
-![][7]
-
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+![](images/pythonanywhere_web_tab_virtualenv.png)
 
 In der "Virtualenv"-Sektion, klicke auf den roten Text, welcher sagt: "Enter the path to a virtualenv" und gieb ein: `/home/<your-username>/my-first-blog/myvenv/`. Klicke auf die blaue Box mit dem Häkchen, um den Pfad zu speichern, bevor es weitergeht.
 

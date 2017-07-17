@@ -131,8 +131,6 @@ Der Webserver wird deine Eingabeaufforderung übernehmen, bis du ihn wieder stop
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
 
-![Es hat funktioniert!][3]
-
- [3]: images/it_worked2.png
+![Es hat funktioniert!](images/it_worked2.png)
 
 Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
