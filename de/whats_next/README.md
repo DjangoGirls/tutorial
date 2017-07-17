@@ -8,33 +8,20 @@ Mach eine Pause und entspanne. Du hast gerade etwas wirklich Großes geleistet.
 
 Danach:
 
-*   Folge den Django Girls auf [Facebook][1] oder [Twitter][2], um auf dem Laufenden zu bleiben.
-
- [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+* Folge den Django Girls auf [Facebook](http://facebook.com/djangogirls) oder [Twitter](http://twitter.com/djangogirls), um auf dem Laufenden zu bleiben.
 
 ### Gibt es Empfehlungen für weiteren Quellen?
 
-Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions][3]. Schau mal rein..
-
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+). Schau mal rein..
 
 Später kannst du die unten aufgeführten Ressourcen versuchen. Alles sehr empfehlenswert!
 
-- [Django's official tutorial][4]
-- [New Coder tutorials][5]
-- [Code Academy Python course][6]
-- [Code Academy HTML & CSS course][7]
-- [Django Carrots tutorial][8]
-- [Learn Python The Hard Way book][9]
-- [Getting Started With Django video lessons][10]
-- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
-
- [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
- [8]: http://django.carrots.pl/en/
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
+- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Code Academy Python course](http://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS course](http://www.codecademy.com/tracks/web)
+- [Django Carrots tutorial](http://django.carrots.pl/en/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
+- [Getting Started With Django video lessons](http://gettingstartedwithdjango.com/)
+- [Two Scoops of Django: Best Practices for Django 1.8 book](http://twoscoopspress.com/products/two-scoops-of-django-1-8)
