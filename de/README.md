@@ -22,7 +22,7 @@ Es wird (in etwa) so aussehen:
 
 ![Abbildung 0.1](images/application.png)
 
-> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
+> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
 Okay, [lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
 
