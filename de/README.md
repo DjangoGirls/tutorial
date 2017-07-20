@@ -1,6 +1,6 @@
 # Django Girls Tutorial
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
 > Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz findest du auf http://creativecommons.org/licenses/by-sa/4.0/
 
