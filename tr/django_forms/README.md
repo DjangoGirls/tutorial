@@ -231,8 +231,8 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})yazar
-
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidip bir `baslik` ve `yazi` ekleyelim, sonra da kaydedelim... ve işte! Yeni blog postu eklenmiş ve `post_detail` sayfasına yönlendirildik!
 
