@@ -26,6 +26,10 @@ Es wird (in etwa) so aussehen:
 
 Okay, [lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
 
+## Mit dem Tutorial zu Hause arbeiten
+
+Na klar ist es aufregend, bei einem Django Girls Workshop dabei zu sein, aber es ist auch verständlich, dass das nicht immer klappt. Deswegen möchten wir es dir erleichtern, das Tutorial auch von Hause aus zu erarbeiten. Dafür erstellen wir Videos zu einzelnen Themen, die dir helfen können, die Inhalte besser zu verstehen. Wir arbeiten noch daran, aber einige sind schon verfügbar und du kannst sie dir gern auf dem "[Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)"-YouTube-Channel anschauen.
+
 ## Über uns und wie du mithelfen kannst
 
 Dieses Tutorial wird von [DjangoGirls](http://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
