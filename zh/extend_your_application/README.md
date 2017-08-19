@@ -15,7 +15,7 @@
 ```html
     {% extends 'blog/base.html' %}
     
-    {% block content %}
+    {% block %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">
@@ -25,7 +25,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
     
     
@@ -146,7 +146,7 @@ def post_detail(request, pk):
 ```python
     {% extends 'blog/base.html' %}
     
-    {% block content %}
+    {% block %}
         <div class="post">
             {% if post.published_date %}
                 <div class="date">

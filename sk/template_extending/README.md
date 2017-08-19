@@ -64,7 +64,7 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -75,7 +75,7 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 V podstate sme nahradili všetko medzi `{% for post in posts %}{% endfor %}` týmto:
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 
@@ -101,12 +101,12 @@ A teraz pridaj tento riadok na začiatok súboru:
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock content %}`. Takto:{% endraw %}
+{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block %}` a `{% endblock %}`. Takto:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -116,7 +116,7 @@ A teraz pridaj tento riadok na začiatok súboru:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 A je to! Skontroluj či tvoja web stránka funguje tak, ako má :)

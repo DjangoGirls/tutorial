@@ -66,7 +66,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -78,7 +78,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 But why?  You just created a `block`!  You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
@@ -102,11 +102,11 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
 We want to use this as part of our template for all the content blocks.
 Time to add block tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock content %}`. Like this:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -125,7 +125,7 @@ Only one thing left. We need to connect these two templates together.  This is w
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

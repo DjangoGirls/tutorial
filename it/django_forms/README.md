@@ -70,7 +70,7 @@ Dopo aver aggiunto quanto detto, il tuo file html dovrebbe essere simile a quest
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    {% block content %}
+                    {% block %}
                     {% endblock %}
                 </div>
             </div>
@@ -140,7 +140,7 @@ OK, il tuo HTML `post_edit.html` dovrebbe apparire così:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
@@ -272,7 +272,7 @@ per cui il tuo template sarà così:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

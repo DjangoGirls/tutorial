@@ -65,7 +65,7 @@
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -77,7 +77,7 @@
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 
@@ -103,11 +103,11 @@
 우리는 이 코드를 모든 컨텐츠 블록에 대한 템플릿의 일부로 거에요.
 이 파일에 블록 태그를 추가해봅시다!
 
-{% raw %}블록 태그가 `base.html`파일의 태그와 일치해야겠죠. 또 콘텐츠 블록에 속한 모든 코드를 포함하게 만들어야 할 거에요. 이를 위해서 `{% block content %}`와 `{% endblock content %}`사이에 모든 코드를 넣으세요. 이렇게 말이죠. : {% endraw %}
+{% raw %}블록 태그가 `base.html`파일의 태그와 일치해야겠죠. 또 콘텐츠 블록에 속한 모든 코드를 포함하게 만들어야 할 거에요. 이를 위해서 `{% block %}`와 `{% endblock %}`사이에 모든 코드를 넣으세요. 이렇게 말이죠. : {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -126,7 +126,7 @@
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

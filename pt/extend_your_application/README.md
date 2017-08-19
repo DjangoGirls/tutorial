@@ -15,7 +15,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -25,7 +25,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 Queremos ter um link para uma página de detalhe no título do post. Vamos transformar `< h1 >< href = "" >{{ post.title }} < /a >< / h1 >` em um link:
@@ -132,7 +132,7 @@ Será algo parecido com isto:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

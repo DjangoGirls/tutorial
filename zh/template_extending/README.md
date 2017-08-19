@@ -66,7 +66,7 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
+                {% block %}
                 {% endblock %}
                 </div>
             </div>
@@ -78,7 +78,7 @@
 用如下内容替换所有在 `{% for post in posts %}{% endfor %}`之间的代码：
 
 ```html
-    {% block content %}
+    {% block %}
     {% endblock %}
 ```
     
@@ -107,12 +107,12 @@
 ```
     
 
-{% raw %}这意味着我们在 `post_list.html`模板文件中扩展了 `base.html` 模板的内容。 还有一件事：将所有(除了我们刚刚加入的那行) 内容置于`{% block content %}`和 `{% endblock content %}`之间。。 像这样:{% endraw %}
+{% raw %}这意味着我们在 `post_list.html`模板文件中扩展了 `base.html` 模板的内容。 还有一件事：将所有(除了我们刚刚加入的那行) 内容置于`{% block %}`和 `{% endblock %}`之间。。 像这样:{% endraw %}
 
 ```html
     {% extends 'blog/base.html' %}
     
-    {% block content %}
+    {% block %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">
@@ -122,7 +122,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
     
 

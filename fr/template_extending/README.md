@@ -63,7 +63,7 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -74,7 +74,7 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
 Nous venons concrètement de remplacer tout ce qui se trouve entre `{% for post in posts %}{% endfor %}` par :
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 
@@ -100,12 +100,12 @@ Maintenant, ajoutez cette ligne au début du fichier :
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Cela signifie que nous sommes en train d'étendre le modèle du template `base.html` dans `post_list.html`. Une dernière chose à faire : déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock content %}`. Attention à ne pas déplacer la ligne que nous venons juste d'insérer. Comme ceci :{% endraw %}
+{% raw %}Cela signifie que nous sommes en train d'étendre le modèle du template `base.html` dans `post_list.html`. Une dernière chose à faire : déplacez tout le contenu du fichier dans la partie située entre `{% block %}` et `{% endblock %}`. Attention à ne pas déplacer la ligne que nous venons juste d'insérer. Comme ceci :{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -115,7 +115,7 @@ Maintenant, ajoutez cette ligne au début du fichier :
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 Et voilà ! Vérifiez que votre site fonctionne toujours correctement :)

@@ -69,7 +69,7 @@ class PostForm(forms.ModelForm):
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    {% block content %}
+                    {% block %}
                     {% endblock %}
                 </div>
             </div>
@@ -137,7 +137,7 @@ def post_new(request):
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
@@ -266,7 +266,7 @@ Django турбується про те, щоб усі поля нашої фо�
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

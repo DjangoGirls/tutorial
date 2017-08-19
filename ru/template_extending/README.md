@@ -64,7 +64,7 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
+                {% block %}
                 {% endblock %}
                 </div>
             </div>
@@ -75,7 +75,7 @@
 Мы просто заменили все между `{% for post in posts %}{% endfor %}` следующим:
 
 ```html
-    {% block content %}
+    {% block %}
     {% endblock %}
 ```
 
@@ -101,12 +101,12 @@
     {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block content %}` и `{% endblock content %}`. Таким образом:{% endraw %}
+{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block %}` и `{% endblock %}`. Таким образом:{% endraw %}
 
 ```html
     {% extends 'blog/base.html' %}
 
-    {% block content %}
+    {% block %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">
@@ -116,7 +116,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
 
 Готово! Проверь, что твой веб-сайт работает нормально :)

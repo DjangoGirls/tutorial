@@ -70,7 +70,7 @@ Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    {% block content %}
+                    {% block %}
                     {% endblock %}
                 </div>
             </div>
@@ -140,7 +140,7 @@ OK. Podsumujmy, jak powinien wyglądać kod HTML w pliku `post_edit.html`:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
@@ -272,7 +272,7 @@ dzięki czemu nasz szablon będzie wyglądał tak:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

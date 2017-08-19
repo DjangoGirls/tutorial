@@ -63,7 +63,7 @@ Pak v `base.html` nahraď celé `<body>` (vše mezi `<body>` a `</body>`) tímto
      <div class="content container">
          <div class="row">
              <div class="col-md-8">
-             {% block content %}
+             {% block %}
              {% endblock %}
              </div>
          </div>
@@ -74,7 +74,7 @@ Pak v `base.html` nahraď celé `<body>` (vše mezi `<body>` a `</body>`) tímto
 Nahradili jsme v podstatě všechno, co bylo mezi `{% for post in posts %}{% endfor %}`, za:
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```    
 
@@ -100,12 +100,12 @@ A teď přidej na začátek souboru tento řádek:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock content %}`. Takto: {% endraw %}
+{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block %}` a `{% endblock %}`. Takto: {% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -115,7 +115,7 @@ A teď přidej na začátek souboru tento řádek:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 To je ono! Zkontroluj, zda tvoje stránky stále správně fungují :)

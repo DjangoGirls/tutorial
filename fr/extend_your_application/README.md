@@ -15,7 +15,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -25,7 +25,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page avec le contenu de celui-ci. Pour cela, changeons `<h1><a href="">{{ post.title }}</a></h1>` pour qu'il pointe vers la page de contenu du post :{% endraw %}
@@ -144,7 +144,7 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

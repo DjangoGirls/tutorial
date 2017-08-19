@@ -64,7 +64,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -75,7 +75,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 Aslında sadece `{% for post in posts %}{% endfor %}` arasındaki her şeyi şununla değiştirmiş olduk:
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```    
 
@@ -101,12 +101,12 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock content %}` arasına koyun. Şunun gibi:{% endraw %}
+{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block %}` ve `{% endblock %}` arasına koyun. Şunun gibi:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
     
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -116,7 +116,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
             <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```    
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)

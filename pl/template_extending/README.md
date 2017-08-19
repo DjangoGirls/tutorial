@@ -63,7 +63,7 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -74,7 +74,7 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
 W zasadzie zastąpiłyśmy całą treść wewnątrz `{% for post in posts %}{% endfor %}` tym:
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 
@@ -100,12 +100,12 @@ A teraz dodaj ten wiersz na początku pliku:
 {% extends 'blog/base.html' %}
 ```  
 
-{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock content %}`. O tak:{% endraw %}
+{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block %}` a `{% endblock %}`. O tak:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -115,7 +115,7 @@ A teraz dodaj ten wiersz na początku pliku:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)

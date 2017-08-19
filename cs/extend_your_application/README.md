@@ -15,7 +15,7 @@ Začneme s přidáním odkazu do `blog/templates/blog/post_list.html` souboru. Z
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -25,7 +25,7 @@ Začneme s přidáním odkazu do `blog/templates/blog/post_list.html` souboru. Z
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 
@@ -140,7 +140,7 @@ Celý příkaz bude vypadat takto:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

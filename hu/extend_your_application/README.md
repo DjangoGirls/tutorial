@@ -15,7 +15,7 @@ Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.htm
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -25,7 +25,7 @@ Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.htm
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
     
 
@@ -143,7 +143,7 @@ Ez fog történni:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

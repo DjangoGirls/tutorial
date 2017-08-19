@@ -63,7 +63,7 @@ Aztán a `base.html`-ben cseréld ki az egész `<body>`-t (mindent a `<body>` é
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block content %}
+            {% block %}
             {% endblock %}
             </div>
         </div>
@@ -74,7 +74,7 @@ Aztán a `base.html`-ben cseréld ki az egész `<body>`-t (mindent a `<body>` é
 Lényegében a `{% for post in posts %}{% endfor %}` részt kicseréltük erre:
 
 ```html
-{% block content %}
+{% block %}
 {% endblock %}
 ```
 
@@ -99,12 +99,12 @@ Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. T�
     {% extends 'blog/base.html' %}
     
 
-{% raw %}Ez azt jelenti, hogy most a `base.html` template-et egészítjük ki a `post_list.html`-ben. Már csak egy dolog van hátra: az előző sor kivételével rakj mindent `{% block content %}` és `{% endblock content %}` közé. Így:{% endraw %}
+{% raw %}Ez azt jelenti, hogy most a `base.html` template-et egészítjük ki a `post_list.html`-ben. Már csak egy dolog van hátra: az előző sor kivételével rakj mindent `{% block %}` és `{% endblock %}` közé. Így:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -114,7 +114,7 @@ Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. T�
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 Ez az! Nézd meg, hogy még mindig működik-e a weboldalad :)

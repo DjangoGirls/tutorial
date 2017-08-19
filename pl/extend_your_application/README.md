@@ -15,7 +15,7 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -25,7 +25,7 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}Chcemy, aby tytuł wpisu był linkiem prowadzącym do strony ze szczegółami wpisu. Zmieńmy `<h1><a href="">{{ post.title }}</a></h1>` na link:{% endraw %}
@@ -138,7 +138,7 @@ Efekt będzie wyglądał tak:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
