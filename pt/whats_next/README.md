@@ -35,5 +35,5 @@ Depois você pode tentar as fontes listadas abaixo. Todas elas são recomendadas
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.org/products/two-scoops-of-django-1-6
