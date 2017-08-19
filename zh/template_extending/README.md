@@ -66,7 +66,7 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block %}
+                {% block content %}
                 {% endblock %}
                 </div>
             </div>
@@ -78,12 +78,12 @@
 用如下内容替换所有在 `{% for post in posts %}{% endfor %}`之间的代码：
 
 ```html
-    {% block %}
+    {% block content %}
     {% endblock %}
 ```
     
 
-这是什么意思呢？ 你刚刚创建了一个`block（块）`，这个模板标签允许你在其中插入扩展自`base.html`的模板的HTML代码。 我们一会儿将给你展示这个如何使用。
+这是什么意思呢？ 你刚刚创建了一个`block content（块）`，这个模板标签允许你在其中插入扩展自`base.html`的模板的HTML代码。 我们一会儿将给你展示这个如何使用。
 
 现在保存它，然后再次打开你的`blog/templates/blog/post_list.html`。 删除一切body外的代码，然后删除 `<div class="page-header"></div>`，此时文件会看起来像这样：
 
@@ -107,12 +107,12 @@
 ```
     
 
-{% raw %}这意味着我们在 `post_list.html`模板文件中扩展了 `base.html` 模板的内容。 还有一件事：将所有(除了我们刚刚加入的那行) 内容置于`{% block %}`和 `{% endblock %}`之间。。 像这样:{% endraw %}
+{% raw %}这意味着我们在 `post_list.html`模板文件中扩展了 `base.html` 模板的内容。 还有一件事：将所有(除了我们刚刚加入的那行) 内容置于`{% block content %}`和 `{% endblock %}`之间。。 像这样:{% endraw %}
 
 ```html
     {% extends 'blog/base.html' %}
     
-    {% block %}
+    {% block content %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">

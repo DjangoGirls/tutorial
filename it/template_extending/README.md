@@ -63,7 +63,7 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -74,7 +74,7 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
 Abbiamo praticamente rimpiazzato tutto quello tra `{% for post in posts %}{% endfor %}` con:
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
@@ -100,12 +100,12 @@ Ed ora aggiungi questa riga all'inizio del file:
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Significa che stiamo estendendo il template `base.html` in `post_list.html`. Rimane solo una cosa da fare: metti tutto (tranne la riga che abbiamo appena aggiunto) tra `{% block %}` e `{% endblock %}`. Come questo:{% endraw %}
+{% raw %}Significa che stiamo estendendo il template `base.html` in `post_list.html`. Rimane solo una cosa da fare: metti tutto (tranne la riga che abbiamo appena aggiunto) tra `{% block content %}` e `{% endblock %}`. Come questo:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

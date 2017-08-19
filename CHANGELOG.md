@@ -564,7 +564,7 @@
 
 - Added desired screen after first push to heroku [\#185](https://github.com/DjangoGirls/tutorial/pull/185) ([parodia](https://github.com/parodia))
 
-- Fixed misleading inline code \(differed from block code\) [\#163](https://github.com/DjangoGirls/tutorial/pull/163) ([MarkusH](https://github.com/MarkusH))
+- Fixed misleading inline code \(differed from block content code\) [\#163](https://github.com/DjangoGirls/tutorial/pull/163) ([MarkusH](https://github.com/MarkusH))
 
 - added `\_\_unicode\(\)\_\_` support. [\#147](https://github.com/DjangoGirls/tutorial/pull/147) ([abdelouahabb](https://github.com/abdelouahabb))
 

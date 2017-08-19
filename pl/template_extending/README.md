@@ -63,7 +63,7 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -74,11 +74,11 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
 W zasadzie zastąpiłyśmy całą treść wewnątrz `{% for post in posts %}{% endfor %}` tym:
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
-Co to znaczy? Stworzyłaś właśnie `block` (blok), który jest znacznikiem szablonu umożliwiającym Ci wstawienie HTML wewnątrz tego bloku w innych szablonach, które rozszerzają `base.html`. Za chwilę pokażemy Ci, jak to się robi.
+Co to znaczy? Stworzyłaś właśnie `block content` (blok), który jest znacznikiem szablonu umożliwiającym Ci wstawienie HTML wewnątrz tego bloku w innych szablonach, które rozszerzają `base.html`. Za chwilę pokażemy Ci, jak to się robi.
 
 Teraz zapisz zmiany, a potem otwórz jeszcze raz plik `blog/templates/blog/post_list.html`. Usuń całą zawartość z wyjątkiem zawartości znacznika body, a potem usuń także `<div class="page-header"></div>`, aby plik wyglądał tak:
 
@@ -100,12 +100,12 @@ A teraz dodaj ten wiersz na początku pliku:
 {% extends 'blog/base.html' %}
 ```  
 
-{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block %}` a `{% endblock %}`. O tak:{% endraw %}
+{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock %}`. O tak:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

@@ -64,7 +64,7 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -75,11 +75,11 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 V podstate sme nahradili všetko medzi `{% for post in posts %}{% endfor %}` týmto:
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
-Čo to znamená? Práve si vytvorila `block` (blok), čo je vlastne šablóna tagov, ktorá ti umožní vkladať HTML v tomto bloku do ďalších šablón, ktoré rozširujú `base.html`. Hneď ti ukážeme, ako sa to robí.
+Čo to znamená? Práve si vytvorila `block content` (blok), čo je vlastne šablóna tagov, ktorá ti umožní vkladať HTML v tomto bloku do ďalších šablón, ktoré rozširujú `base.html`. Hneď ti ukážeme, ako sa to robí.
 
 Teraz to ulož a znova otvor `blog/templates/blog/post_list.html`. Zmaž všetko, okrem toho, čo je vnútri body a tiež zmaž `<div class="page-header"></div>`, takže súbor bude vyzerať takto:
 
@@ -101,12 +101,12 @@ A teraz pridaj tento riadok na začiatok súboru:
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block %}` a `{% endblock %}`. Takto:{% endraw %}
+{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock %}`. Takto:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

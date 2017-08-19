@@ -15,7 +15,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -144,7 +144,7 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
@@ -157,7 +157,7 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 {% endblock %}
 ```
 
-Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block, nous voulons que s'affiche la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non?
+Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block content, nous voulons que s'affiche la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non?
 
 {% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose : souvenez-vous de `if ... else ..` de la section **Introduction à Python**. Dans ce scénario, nous aimerions vérifier si la date de publication d'un post (`published_date`) n'est pas vide.{% endraw %}
 

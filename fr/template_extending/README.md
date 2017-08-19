@@ -63,7 +63,7 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -74,11 +74,11 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
 Nous venons concrètement de remplacer tout ce qui se trouve entre `{% for post in posts %}{% endfor %}` par :
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
-Qu'est-ce que cela signifie ? Vous venez simplement de créer un `block` : c'est une balise de template qui vous permet d'insérer le HTML de ce block dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
+Qu'est-ce que cela signifie ? Vous venez simplement de créer un `block content` : c'est une balise de template qui vous permet d'insérer le HTML de ce block content dans d'autres templates qui héritent de `base.html`. Nous vous expliquerons comment faire dans un instant.
 
 Maintenant, sauvegardez votre fichier puis ouvrez à nouveau `blog/templates/blog/post_list.html`. Supprimez tout ce qui n'est pas dans body. Supprimez aussi `<div class="page-header"></div>`. Votre fichier doit maintenant ressembler à ça :
 
@@ -100,12 +100,12 @@ Maintenant, ajoutez cette ligne au début du fichier :
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Cela signifie que nous sommes en train d'étendre le modèle du template `base.html` dans `post_list.html`. Une dernière chose à faire : déplacez tout le contenu du fichier dans la partie située entre `{% block %}` et `{% endblock %}`. Attention à ne pas déplacer la ligne que nous venons juste d'insérer. Comme ceci :{% endraw %}
+{% raw %}Cela signifie que nous sommes en train d'étendre le modèle du template `base.html` dans `post_list.html`. Une dernière chose à faire : déplacez tout le contenu du fichier dans la partie située entre `{% block content %}` et `{% endblock %}`. Attention à ne pas déplacer la ligne que nous venons juste d'insérer. Comme ceci :{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

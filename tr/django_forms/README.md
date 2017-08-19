@@ -71,7 +71,7 @@ Yukarıdaki satırı ekledikten sonra html dosyanız böyle görünmeli:
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    {% block %}
+                    {% block content %}
                     {% endblock %}
                 </div>
             </div>
@@ -141,7 +141,7 @@ Peki, şimdi de `post_edit.html` in içindeki HTML kodunun nasıl görünmesi ge
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <h1>Yeni gönderi</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
@@ -273,7 +273,7 @@ ki template buna benzesin:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.yayinlanma_tarihi %}
             <div class="date">

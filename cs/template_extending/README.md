@@ -63,7 +63,7 @@ Pak v `base.html` nahraď celé `<body>` (vše mezi `<body>` a `</body>`) tímto
      <div class="content container">
          <div class="row">
              <div class="col-md-8">
-             {% block %}
+             {% block content %}
              {% endblock %}
              </div>
          </div>
@@ -74,11 +74,11 @@ Pak v `base.html` nahraď celé `<body>` (vše mezi `<body>` a `</body>`) tímto
 Nahradili jsme v podstatě všechno, co bylo mezi `{% for post in posts %}{% endfor %}`, za:
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```    
 
-Co to znamená? Právě jsi vytvořila `block`, což je šablonovací značka, která umožňuje vkládat HTML kód do tohoto bloku v jiných šablonách, které rozšiřují `base.html`. Hned ti ukážeme, jak to udělat.
+Co to znamená? Právě jsi vytvořila `block content`, což je šablonovací značka, která umožňuje vkládat HTML kód do tohoto bloku v jiných šablonách, které rozšiřují `base.html`. Hned ti ukážeme, jak to udělat.
 
 Nyní ulož a znovu otevři svůj `blog/templates/blog/post_list.html`. Odstraň vše, co není uvnitř body, a pak také odstraň `< div class="page-header" >< / div >`, takže soubor bude vypadat takto:
 
@@ -100,12 +100,12 @@ A teď přidej na začátek souboru tento řádek:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block %}` a `{% endblock %}`. Takto: {% endraw %}
+{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock %}`. Takto: {% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

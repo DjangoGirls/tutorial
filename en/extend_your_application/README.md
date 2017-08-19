@@ -15,7 +15,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -138,7 +138,7 @@ It will look like this:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
@@ -151,7 +151,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Once again we are extending `base.html`. In the `content` block content we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from __Introduction to Python__ chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 

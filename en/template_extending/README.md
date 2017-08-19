@@ -66,7 +66,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -78,10 +78,10 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
-But why?  You just created a `block`!  You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+But why?  You just created a `block content`!  You used the template tag `{% block content %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
 {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
@@ -99,14 +99,14 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks.
-Time to add block tags to this file!
+We want to use this as part of our template for all the content block contents.
+Time to add block content tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}You want your block content tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content block contents. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -125,7 +125,7 @@ Only one thing left. We need to connect these two templates together.  This is w
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

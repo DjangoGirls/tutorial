@@ -15,7 +15,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -135,7 +135,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 ```html
 {% extends 'blog/base.html' %}
     
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.yayinlanma_tarihi %}
             <div class="date">

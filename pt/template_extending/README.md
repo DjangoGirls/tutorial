@@ -63,7 +63,7 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -74,11 +74,11 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
 {% raw %}Basicamente nós substituimos tudo entre `{% for post in posts %}{% endfor %}` por:{% endraw %}
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
-O que isso significa? Você acabou de criar um `block` (bloco), que é uma tag de template que te permite inserir HTML neste bloco em outros templates que estendem `base.html`. Nós vamos te mostrar como fazer isso já já.
+O que isso significa? Você acabou de criar um `block content` (bloco), que é uma tag de template que te permite inserir HTML neste bloco em outros templates que estendem `base.html`. Nós vamos te mostrar como fazer isso já já.
 
 Salve e abra o arquivo `blog/templates/blog/post_list.html` novamente. Apague exatamente tudo que não estiver dentro da tag body e apague também `<div class="page-header"></div>`, de forma que o arquivo fique da seguinte maneira:
 
@@ -100,12 +100,12 @@ Agora adicione esta linha ao início do arquivo:
 {% extends 'blog/base.html' %}
 ```
 
-Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block %}` e `{% endblock %}`. Como a seguir:
+Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block content %}` e `{% endblock %}`. Como a seguir:
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

@@ -70,7 +70,7 @@ Miután hozzáadtad ezt a sort, így fog kinézni a html fájlod:
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    {% block %}
+                    {% block content %}
                     {% endblock %}
                 </div>
             </div>
@@ -140,7 +140,7 @@ Rendben, nézzük, hogy néz ki a HTML kód a `post_edit.html`-ben:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
@@ -272,7 +272,7 @@ Nyisd meg a `blog/templates/blog/post_detail.html` fájlt, és add hozzá ezt a 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">

@@ -70,7 +70,7 @@
             <div class="content container">
                 <div class="row">
                     <div class="col-md-8">
-                        {% block %}
+                        {% block content %}
                         {% endblock %}
                     </div>
                 </div>
@@ -140,7 +140,7 @@
 ```html
     {% extends 'blog/base.html' %}
 
-    {% block %}
+    {% block content %}
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
@@ -272,7 +272,7 @@ Django заботится о проверке всех полей в нашей 
 ```html
     {% extends 'blog/base.html' %}
 
-    {% block %}
+    {% block content %}
         <div class="post">
             {% if post.published_date %}
                 <div class="date">

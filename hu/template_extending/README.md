@@ -63,7 +63,7 @@ Aztán a `base.html`-ben cseréld ki az egész `<body>`-t (mindent a `<body>` é
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
-            {% block %}
+            {% block content %}
             {% endblock %}
             </div>
         </div>
@@ -74,11 +74,11 @@ Aztán a `base.html`-ben cseréld ki az egész `<body>`-t (mindent a `<body>` é
 Lényegében a `{% for post in posts %}{% endfor %}` részt kicseréltük erre:
 
 ```html
-{% block %}
+{% block content %}
 {% endblock %}
 ```
 
-Ez mit is jelent? Létrehoztál egy `block`-ot. Ez egy olyan template tag, amely segítségével HTML-t illeszthetsz be a blokkba más template-ekben, ezzel kiegészítve a `base.html`-t. Máris megmutatjuk, hogy működik.
+Ez mit is jelent? Létrehoztál egy `block content`-ot. Ez egy olyan template tag, amely segítségével HTML-t illeszthetsz be a blokkba más template-ekben, ezzel kiegészítve a `base.html`-t. Máris megmutatjuk, hogy működik.
 
 Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. Törölj ki mindent a body-n kívül, és a `<div class="page-header"></div>` részt is, hogy így nézzen ki a fájl:
 
@@ -99,12 +99,12 @@ Most mentsd el, és nyisd meg újra a `blog/templates/blog/post_list.html`-t. T�
     {% extends 'blog/base.html' %}
     
 
-{% raw %}Ez azt jelenti, hogy most a `base.html` template-et egészítjük ki a `post_list.html`-ben. Már csak egy dolog van hátra: az előző sor kivételével rakj mindent `{% block %}` és `{% endblock %}` közé. Így:{% endraw %}
+{% raw %}Ez azt jelenti, hogy most a `base.html` template-et egészítjük ki a `post_list.html`-ben. Már csak egy dolog van hátra: az előző sor kivételével rakj mindent `{% block content %}` és `{% endblock %}` közé. Így:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

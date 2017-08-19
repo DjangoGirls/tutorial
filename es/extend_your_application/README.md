@@ -14,7 +14,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
 ``` html
     {% extends 'blog/base.html' %}
 
-    {% block %}
+    {% block content %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">
@@ -144,7 +144,7 @@ Se verá así:
 ```html
     {% extends 'blog/base.html' %}
 
-    {% block %}
+    {% block content %}
         <div class="post">
             {% if post.published_date %}
                 <div class="date">

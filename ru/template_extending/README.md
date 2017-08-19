@@ -64,7 +64,7 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block %}
+                {% block content %}
                 {% endblock %}
                 </div>
             </div>
@@ -75,11 +75,11 @@
 Мы просто заменили все между `{% for post in posts %}{% endfor %}` следующим:
 
 ```html
-    {% block %}
+    {% block content %}
     {% endblock %}
 ```
 
-Что это означает? Ты только что создала `block` - тег шаблона, позволяющий вставлять HTML-код этого блока в другие шаблоны, расширяющие `base.html`. Мы покажем как это сделать через секунду.
+Что это означает? Ты только что создала `block content` - тег шаблона, позволяющий вставлять HTML-код этого блока в другие шаблоны, расширяющие `base.html`. Мы покажем как это сделать через секунду.
 
 Теперь сохрани все и открой `blog/templates/blog/post_list.html` снова. Тебе нужно удалить весь код вне тегов body, а также `<div class="page-header"></div>`, в итоге файл будет выглядеть следующим образом:
 
@@ -101,12 +101,12 @@
     {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block %}` и `{% endblock %}`. Таким образом:{% endraw %}
+{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block content %}` и `{% endblock %}`. Таким образом:{% endraw %}
 
 ```html
     {% extends 'blog/base.html' %}
 
-    {% block %}
+    {% block content %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">

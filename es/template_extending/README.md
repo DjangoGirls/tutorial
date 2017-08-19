@@ -63,7 +63,7 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block %}
+                {% block content %}
                 {% endblock %}
                 </div>
             </div>
@@ -74,11 +74,11 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
 Básicamente remplazamos todo entre `{% for post in posts %}{% endfor %}` con:
 
 ``` html
-    {% block %}
+    {% block content %}
     {% endblock %}
 ```
 
-¿Qué significa esto? Acabas de crear un `block`, una template tag que te permite insertar HTML en este bloque en otras plantillas que extiendan a `base.html`. Te mostraremos como hacer esto en un momento.
+¿Qué significa esto? Acabas de crear un `block content`, una template tag que te permite insertar HTML en este bloque en otras plantillas que extiendan a `base.html`. Te mostraremos como hacer esto en un momento.
 
 Ahora guárdalo y abre tu archivo `blog/templates/blog/post_list.html` de nuevo. Elimina todo lo que no esté dentro del body y luego elimina también `<div class="page-header"></div>`, de forma que tu archivo se verá asi:
 
@@ -99,12 +99,12 @@ Y ahora agrega esta línea al inicio del archivo:
     {% extends 'blog/base.html' %}
 ``` 
 
-Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_list.html`. Sólo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block %}` y `{% endblock %}`. Como esto:
+Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_list.html`. Sólo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block content %}` y `{% endblock %}`. Como esto:
 
 ``` html
     {% extends 'blog/base.html' %}
     
-    {% block %}
+    {% block content %}
         {% for post in posts %}
             <div class="post">
                 <div class="date">

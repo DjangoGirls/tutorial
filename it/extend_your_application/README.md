@@ -15,7 +15,7 @@ Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_l
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -138,7 +138,7 @@ Il risultato somiglierà a questo:
 ```html
 {% extends 'blog/base.html' %}
 
-{% block %}
+{% block content %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
