@@ -39,22 +39,22 @@ Como você pode ver, o Python é uma ótima calculadora. Se você está se pergu
 
 Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
 
-    >>> "Ola"
-    'Ola'
+    >>> "Ana"
+    'Ana'
     
 
 Você acabou de criar sua primeira string! String é um sequência de caracteres que podem ser processada pelo computador. A string sempre precisa iniciar e terminar com o mesmo caractere. Este pode ser aspas duplas(`"`) ou simples(`'`) - elas dizem ao Python que o que está dentro delas é uma string.
 
 Strings podem ser juntadas. Tente isto:
 
-    >>> "Oi " + "Ola"
-    'Oi Ola'
+    >>> "Oi " + "Ana"
+    'Oi Ana'
     
 
 Você também pode multiplicar strings por um número:
 
-    >>> "Ola" * 3
-    'OlaOlaOla'
+    >>> "Ana" * 3
+    'AnaAnaAna'
     
 
 Se você precisa colocar uma apóstrofe dentro de sua string, existem duas maneiras de fazer.
@@ -73,19 +73,19 @@ ou escapando apóstrofo com uma barra invertida (`\`):
 
 Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 
-    >>> "Ola".upper()
-    'OLA'
+    >>> "Ana".upper()
+    'Ana'
     
 
-Você acabou de usar a **função** `upper` na sua string! Uma função (como `upper()`) é um conjunto de instruções que o Python realiza em um determinado objeto (`"Ola"`), sempre que você chamar por ele.
+Você acabou de usar a **função** `upper` na sua string! Uma função (como `upper()`) é um conjunto de instruções que o Python realiza em um determinado objeto (`"Ana"`), sempre que você chamar por ele.
 
 Se você quer saber o número de letras do seu nome, existe uma função para isso também!
 
-    >>> len("Ola")
+    >>> len("Ana")
     3
     
 
-Se perguntando porque algumas vezes você chama funções com um `.` no fim de uma string (como `"Ola".upper()`) e algumas vezes você primeiro chama a função colocando a string nos parênteses? Bem, em alguns casos, funções pertencem a objetos, como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
+Se perguntando porque algumas vezes você chama funções com um `.` no fim de uma string (como `"Ana".upper()`) e algumas vezes você primeiro chama a função colocando a string nos parênteses? Bem, em alguns casos, funções pertencem a objetos, como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ana"` como um parâmetro para a função `len`.
 
 ### Sumário
 
@@ -127,15 +127,15 @@ Um conceito importante na programação é o conceito de variáveis. Uma variáv
 
 Digamos que queremos criar uma nova variável chamada `nome`:
 
-    >>> nome = "Ola"
+    >>> nome = "Ana"
     
 
-Vê? É fácil! É só fazer: nome igual a Ola.
+Vê? É fácil! É só fazer: nome igual a Ana.
 
 Como você percebeu, seu programa não retornou nada como fez anteriormente. Então como sabemos que a variável realmente existe? Simplesmente digite `nome` e tecle Enter:
 
     >>> nome
-    'Ola'
+    'Ana'
     
 
 Yippee! Sua primeira variável! :) Você sempre pode mudar o seu valor:
@@ -261,19 +261,19 @@ Isso mostra que você acabou de criar um dicionário vazio. Hurra!
 
 Agora, tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
 
-    >>> participante = {'nome': 'Ola', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
+    >>> participante = {'nome': 'Ana', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
     
 
 Com esse comando, você acabou de criar uma variável chamada `participante` com três pares de chave-valor:
 
-*   A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
+*   A chave `nome` aponta para o valor `'Ana'` (um objeto `string`),
 *   `pais` aponta para `'Polonia'` (outra `string`),
 *   e `numeros_favoritos` apontam para `[7, 42, 92]` (uma `list` com três números nela).
 
 Você pode checar o conteúdo de chaves individuais com a sintaxe:
 
     >>> print(participante['nome'])
-    Ola
+    Ana
     
 
 Veja, é similar a uma lista. Mas você não precisa lembrar o índice - apenas o nome.
@@ -310,7 +310,7 @@ Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, s
 
     >>> participante.pop('numeros_favoritos')
     >>> participante
-    {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
+    {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 
 Como você pode ver no retorno, o par chave-valor correspondente à chave 'numeros_favoritos' foi excluído.
 
@@ -318,7 +318,7 @@ Além disso você pode mudar o valor associado com uma chave já criada no dicio
 
     >>> participante['pais'] = 'Alemanha'
     >>> participante
-    {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ola'}
+    {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 
 Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
 
@@ -537,8 +537,8 @@ Se 2 for um número maior do que 5, então o segundo comando será executado. F�
 
 ```python
 name = 'Sonja'
-if name == 'Ola':
-    print('Hey Ola!')
+if name == 'Ana':
+    print('Hey Ana!')
 elif name == 'Sonja':
     print('Hey Sonja!')
 else:
@@ -599,8 +599,8 @@ Como você pode ver, agora demos um parâmetro chamado `name` para nossa funçã
 
 ```python
 def hi(name):
-    if name == 'Ola':
-        print('Hi Ola!')
+    if name == 'Ana':
+        print('Hi Ana!')
     elif name == 'Sonja':
         print('Hi Sonja!')
     else:
@@ -621,13 +621,13 @@ Como você pode ver, nós precisamos colocar dois espaços antes da função `pr
 Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que declaramos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Vamos corrigi-lo na parte inferior do arquivo:
 
 ```python
-hi("Ola")
+hi("Ana")
 ```
 
 e execute novamente:
 
     $ python3 python_intro.py
-    Hi Ola!
+    Hi Ana!
     
 
 E se mudarmos o nome?
@@ -642,7 +642,7 @@ e executá-lo:
     Hi Sonja!
     
 
-Agora, o que acha que vai acontecer se você escrever outro nome lá? (Sem ser Ola ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
+Agora, o que acha que vai acontecer se você escrever outro nome lá? (Sem ser Ana ou Sonja) Experimentá-lo e ver se você está certo. Ele deve imprimir isto:
 
     Hi anonymous!
     
@@ -675,7 +675,7 @@ Como mencionamos, os programadores são preguiçosos, não gostam de repetir as 
 Ainda se lembra das listas? Vamos fazer uma lista de garotas:
 
 ```python
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 ```
 
 Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fazer isso, então vamos usá-la em um loop:
@@ -692,7 +692,7 @@ Aqui está o código completo que será salvo no arquivo:
 def hi(name):
     print('Hi ' + name + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 for name in girls:
     hi(name)
     print('Next girl')
@@ -707,7 +707,7 @@ e quando executá-lo:
     Next girl
     Hi Phoebe!
     Next girl
-    Hi Ola!
+    Hi Ana!
     Next girl
     Hi You!
     Next girl
