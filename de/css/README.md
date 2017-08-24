@@ -35,7 +35,7 @@ Schlussendlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bi
 
 ### Wohin kommen die statischen Dateien für Django
 
-Wie Du gesehen hast, als wir `collectstatic` auf dem Server ausgeführt haben, weiß Django bereits, wo die statischen Dateien für die eingebaute `admin`-App zu finden sind. Nun müssen wir nur ein paar statische Dateien für unsere eigene App, `blog`, hinzufügen.
+Wie du gesehen hast, als wir `collectstatic` auf dem Server ausgeführt haben, weiß Django bereits, wo die statischen Dateien für die eingebaute `admin`-App zu finden sind. Nun müssen wir nur ein paar statische Dateien für unsere eigene App, `blog`, hinzufügen.
 
 Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 
@@ -61,9 +61,9 @@ djangogirls
                └─── blog.css
 ```
 
-Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
+Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in einem Code-Editor.
 
-Wir werden an dieser Stelle nicht weiter auf das Anpassen und Erlernen von CSS eingehen, weil es ziemlich einfach ist und Du es nach dem Workshop selbst erlernen kannst. Wir empfehlen diesen [Codeacademy HTML- & CSS-Kurs](http://www.codecademy.com/tracks/web), um alles zu erlernen, was Du wissen musst, um deine Website mit CSS noch hübscher zu machen.
+Wir werden an dieser Stelle nicht weiter auf das Anpassen und Erlernen von CSS eingehen, weil es ziemlich einfach ist und du es nach dem Workshop selbst erlernen kannst. Wir empfehlen diesen [Codeacademy HTML- & CSS-Kurs](http://www.codecademy.com/tracks/web), um alles zu erlernen, was du wissen musst, um deine Website mit CSS noch hübscher zu machen.
 
 Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Ein solcher (hexadezimal) Code beginnt mit einer `#`, gefolgt von 6 Buchstaben (A-F) und Zahlen (0-9). Beispiele für solche Farbcodes findest du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/cssref/css_colornames.asp) wie `red` und `green` benutzen.
 
@@ -274,6 +274,6 @@ Und?! Sieht viel besser aus, oder!? Der verwendete Code ist nicht allzu schwer z
 
 Ändere ruhig das eine oder andere im CSS und probiere ein paar Sachen aus. Geht etwas kaputt, mach deine Änderungen im Editor rückgängig und starte von vorn.
 
-Wir empfehlen den freien Online-Kurs [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) als Hausaufgabe. So kannst Du alles lernen, was du über das Verschönern von Webseiten mit CSS wissen willst.
+Wir empfehlen den freien Online-Kurs [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) als Hausaufgabe. So kannst du alles lernen, was du über das Verschönern von Webseiten mit CSS wissen willst.
 
 Bereit für das nächste Kapitel? :)
