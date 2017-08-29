@@ -17,7 +17,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-별 내용이 없네요. 간단한 *view*를 만들어봅시다.
+아직은 별 내용이 없네요.
+
+`#`으로 시작하는 라인은 주석이란걸 기억하세요. 파이썬은 이 라인들을 실행하지 않을 거에요.
+
+간단한 *view*는 이런 식일 거에요.:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
