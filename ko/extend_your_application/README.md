@@ -52,7 +52,7 @@
 
 첫 게시물의 상세 페이지 **URL**이 http://127.0.0.1:8000/post/1/가 되게 만들 거에요.
 
-`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
+`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같이 보일 거에요.
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
@@ -105,14 +105,14 @@ Post.objects.get(pk=pk)
 
 좋아요. 이제 `views.py`파일에 새로운 *뷰*를 추가합시다!
 
-`blog/views.py`파일을 열고 아래 코드를 추가하세요.
+`blog/views.py`파일을 열고 `from`행 근처로 가서 아래 코드를 추가하세요.
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render, get_object_or_404
 ```
 
-`from`행 가서, 파일 마지막 부분에 *뷰*를 추가하세요.
+그리고 파일 마지막 부분에 *뷰*를 추가하세요.
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -156,7 +156,7 @@ def post_detail(request, pk):
 
 {% raw %} 가장 중요한 부분은 `{% if ... %} ... {% endif %}`라는 템플릿 태그인데, 내용이 있는지 확인할 때 사용합니다. (`if ... else ..`구문은 __Python 시작하기__ 장에서 배웠어요) `post`의 `게시일(published_date)`이 있는지, 없는지를 확인하는 거에요. {% endraw %}
 
-페이지를 새로고침하면 `페이지 찾을 수 없음(Page not found)` 페이지가 없어졌어요.
+페이지를 새로고침하면 `템플릿 없음(TemplateDoesNotExist)` 페이지가 없어진 것을 확인할 수 있어요.
 
 ![Post detail page](images/post_detail2.png)
 
