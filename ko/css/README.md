@@ -255,7 +255,8 @@ h1, h2, h3, h4 {
 }
 ```
 
-자, 다음은 글을 보여주는 HTML 코드를 post라는 클래스 명을 선언해 div로 감싸세요. 이렇게 바꾸면 됩니다. :
+자, 다음은 글을 보여주는 HTML 코드를 post라는 클래스 명을 선언해 div로 감싸세요.  
+`blog/templates/blog/post_list.html`파일의 아래와 같은 코드를:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
@@ -267,7 +268,7 @@ h1, h2, h3, h4 {
     </div>
 {% endfor %}
 ```
-`blog/templates/blog/post_list.html` 파일 안에 아래 코드를 넣으세요.
+아래와 같이 바꾸면 됩니다.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
