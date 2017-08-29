@@ -62,6 +62,7 @@ def post_list(request):
 
 이제 `blog/views.py`코드는 아래 코드처럼 보일 겁니다.
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 from django.utils import timezone
