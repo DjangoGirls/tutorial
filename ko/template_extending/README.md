@@ -17,7 +17,8 @@
                 post_list.html
 
 
-그 다음 파일을 열어 `post_list.html`에 있는 모든 내용을 `base.html`에 아래 내용을 복사해 붙여넣습니다.
+그 다음 파일을 열어 `post_list.html`에 있는 모든 내용을 `base.html`에 아래 내용을 복사해 붙여넣습니다.  
+이렇게 말이죠:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -84,7 +85,7 @@
 이 코드는 무엇을 의미일까요? 우리는 `block`을 만든 거에요! 템플릿 태그 `{% block %}`으로 HTML 내에 들어갈 수 있는 공간을 만들었어요. `base.html`을 확장해 다른 템플릿에도 가져다 쓸 수 있게 한 거죠. 어떻게 동작하는지 보여 드릴게요.
 
 이제 `base.html`을 파일을 저장을 하고, `blog/templates/blog/post_list.html` 파일을 다시 엽니다. 
-{% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 내용 전체를 지우세요. 그럼 아래와 같이 될 겁니다. :{% endraw %}
+{% raw %}`{% for post in posts %}`의 위, 그리고 `{% endfor %}`아래의 모든 내용을 지우세요. 그럼 아래와 같이 될 겁니다. :{% endraw %}
 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
