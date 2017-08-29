@@ -65,6 +65,8 @@ blog
 
 `<head>`는 브라우저에 페이지에 대한 설정들을 알려주고, `<body>`는 실제 페이지에 보여줄 내용을 알려줍니다.
 
+예를 들면, 아래와 같이 웹페이지의 title을 `<head>` 안에 넣을 수 있어요:
+
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <html>
@@ -104,7 +106,7 @@ blog
 * `<ul><li>first item</li><li>second item</li></ul>`- 목록 만들기
 * `<div></div>` - 페이지 섹션
 
-아래 템플릿 예제가 있습니다.
+아래 템플릿 예제가 있습니다. 아래에 템플릿 예제가 있으니 복사해서 `blog/templates/blog/post_list.html`에 붙여 넣어요.:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
