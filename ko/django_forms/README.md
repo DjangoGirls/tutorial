@@ -142,7 +142,7 @@ def post_new(request):
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-네, 이제 `post_edit.html` 파일의 HTML을 확인해볼게요.
+네, 이제 `post_edit.html` 파일의 HTML이 어떻게 돼야 하는지 보죠:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 ```html
@@ -216,6 +216,7 @@ if form.is_valid():
 
 끝으로, 새 블로그 글을 작성한 다음에 `post_detail`페이지로 이동할 수 있으면 좋겠죠? 이 작업을 하려면 한 가지를 더 불러와야 해요.
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import redirect
 ```
@@ -224,15 +225,10 @@ from django.shortcuts import redirect
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-from django.shortcuts import redirect
+return redirect('post_detail', pk=post.pk)
 ```
 
 `post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
-
-{% filename %}blog/views.py{% endfilename %}
-```python
-return redirect('post_detail', pk=post.pk)
-```
 
 잘했어요. 너무 설명이 길어졌네요. 이제 *view* 전체 코드를 확인할게요.
 
@@ -258,7 +254,7 @@ def post_new(request):
 
 모두 잘해냈어요!
 
-> 장고 관리자 인터페이스처럼 로그인된 상태라고 생각해봅시다. 하지만 사용자가 로그아웃되는 상황이 발생하기도 하죠. (브라우저가 닫히거나, DB가 재시작된다든가 등) 만약 로그인되지 않은 상태에서 새 글을 저장한다면, 사용자가 로그인되어있지 않아 누가 글을 작성하였는지 알 수 없어요. 그래서 글을 저장할 때 오류가 발생하고, 로그인시키도록 [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) 관리자 페이지가 나타나게 될 거에요. 이 문제는 금방 해결할 수 있어요. 튜토리얼을 마친 후 장고걸스 심화 튜토리얼 - 보안 추가하기 장에서 실습할 수 있어요.
+> 장고 관리자 인터페이스처럼 로그인된 상태라고 생각해봅시다. 하지만 사용자가 로그아웃되는 상황이 발생하기도 하죠. (브라우저가 닫히거나, DB가 재시작된다든가 등) 만약 로그인되지 않은 상태에서 새 글을 저장한다면, 사용자가 로그인되어있지 않아 누가 글을 작성하였는지 알 수 없어요. 그래서 글을 저장할 때 오류가 발생하고, 로그인시키도록 [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) 관리자 페이지가 나타나게 될 거에요. 이 문제는 금방 해결할 수 있어요. 튜토리얼을 마친 후 장고걸스 **심화 튜토리얼 - 보안 추가하기** 장에서 실습할 수 있어요.
 
 ![Logged in error](images/post_create_error.png)
 
@@ -336,14 +332,14 @@ def post_edit(request, pk):
 
 음…. 코드가 `post_new`와 거의 비슷해 보이지 않나요? 하지만 완전히 같지는 않아요.
 * 첫 번째: url로부터 추가로 `pk` 매개변수를 받아서 처리합니다.
-* 두 번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`로 가져옵니다. (`pk`로 원하는 글을 찾습니다) 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다.
+* 두 번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`를 가져온 후, 아래와 같이 폼을 저장할 때...
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 form = PostForm(request.POST, instance=post)
 ```
 
-그리고 폼에 아래와 같이 수정하세요.
+...와 `post`를 사용해 수정할 폼을 열 때 사용하게 됩니다.
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -389,7 +385,7 @@ https://docs.djangoproject.com/en/1.10/topics/forms/
 
 세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.
 
-`blog/templates/blog/post_detail.html`파일을 열어 아래 내용을 추가하세요.
+`blog/templates/blog/post_detail.html`파일을 연 후 아래 라인을 찾아서:
 
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
