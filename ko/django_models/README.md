@@ -147,7 +147,7 @@ class Post(models.Model):
 *   `models.CharField` - 글자 수가 제한된 텍스트를 정의할 때 사용합니다. 글 제목같이 짧은 문자열 정보를 저장할 때 사용합니다.
 *   `models.TextField` - 글자 수에 제한이 없는 긴 텍스트를 위한 속성입니다. 블로그 콘텐츠를 담기 좋겠죠?
 *   `models.DateTimeField` - 날짜와 시간을 의미합니다.
-*   `models.ForeignKey` - 다른 모델이 대한 링크를 의미합니다.
+*   `models.ForeignKey` - 다른 모델에 대한 링크를 의미합니다.
 
 시간 관계상 모든 코드를 하나하나 다 설명하지는 않을 거예요. 대신 모델의 필드와 정의하는 방법에 궁금하다면 장고 공식 문서를 꼭 읽어보길 바랍니다. : https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types)
 
