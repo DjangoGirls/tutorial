@@ -38,7 +38,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+(myvenv) C:\Users\Name\djangogirls> myvenv\Scripts\django-admin.py startproject mysite .
 ```
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
