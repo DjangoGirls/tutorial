@@ -52,7 +52,8 @@ Zapisz go jako `.gitignore` w folderze najwyższego poziomu "djangogirls".
 
 > **Uwaga** Ta kropka na początku nazwy pliku jest ważna! Jeśli masz jakieś problemy z utworzeniem tego pliku (na przykład, jeśli pracujesz na Macu to Finder broni się przed zapisywaniem plików, które zaczynają się od kropki) to użyj "Zapisz jako" w swoim edytorze, działa bezbłędnie.
 
-Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` albo gdy nie jesteś pewna co się zmieniło. To powinno cię ustrzec przed nieprzyjemnymi niespodziankami, takimi jak dodanie lub zmienienie nieprawidłowych plików. Polecenie `git status` zwraca między innymi informacje o plikach, które zostały dodane/zmienione/usunięte. Po wpisaniu polecenia powinnaś zobaczyć coś podobnego do tego:
+Dobrym nawykiem jest wpisywanie polecenia `
+` zanim wpiszesz `git add` albo gdy nie jesteś pewna co się zmieniło. To powinno cię ustrzec przed nieprzyjemnymi niespodziankami, takimi jak dodanie lub zmienienie nieprawidłowych plików. Polecenie `git status` zwraca między innymi informacje o plikach, które zostały dodane/zmienione/usunięte. Po wpisaniu polecenia powinnaś zobaczyć coś podobnego do tego:
 
     $ git status
     On branch master
@@ -290,13 +291,52 @@ Mamy wszystko gotowe! Naciśnij duży zielony przycisk **Reload** ("Odśwież"),
 
 ## Porady dotyczące debugowania
 
-Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony. Typowe problemy to:
+Całkiem prawdopodobne, że zamiast swojej strony zobaczysz błąd.
+Pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony. 
+
+Najprawdopodobniej zobaczysz tam informację, że adres pod którym znajduje się Twoja strona nie został rozpoznany przez Twoją aplikację:
+
+    Invalid HTTP_HOST header: '<your-username>.pythonanywhere.com'. You may need to add '<your-username>.pythonanywhere.com' to ALLOWED_HOSTS.
+
+Ze względów bezpieczństwa, Twoja aplikacja odpowiada tylko na żądania adresowane do niej (tak jak Ty nie czytasz wiadomości nieadresowanych do Ciebie, z obawy, że to oszustwo).
+Musisz pomóc jej zrozumieć, jak nazywa się jej nowy dom. Na swoim komputerze otwórz plik `settings.py` znajdujący się w katalogu `mysite`. Zobaczysz w nim powód całego zamieszania - pustą tablicę:
+
+    ALLOWED_HOSTS = []
+ 
+Teraz, kiedy masz już konto na PythonAnywhere i znasz swój adres, możesz go tu wpisać:
+
+    ALLOWED_HOSTS = ['<twoja-nazwa-użytkownika>.pythonanywhere.com']
+
+Zwróć uwagę, żeby podać swoją nazwę użytkownika na PythonAnywhere w miejsce `<twoja-nazwa-użytkownika>` oraz, żeby nie wpisać "https://" ani "/" :)
+Gdy zapiszesz zmiany w `settings.py` na swoim komputerze, trzeba wykonać jeszcze ponowne wdrożenie, aby znalazły się one na serwerze, co wymaga poniższych kroków.
+
+Najpierw upewnij się, że zmieniłaś tylko plik `settings.py`:
+
+    $ git status
+
+Następnie zapisz te zmiany w repozytorium:
+
+    $ git add --all
+    $ git commit -m 'Added my server to ALLOWED_HOSTS'
+
+Po czym "wypchnij" zmiany do GitHuba:
+
+    $ git push
+    
+Teraz przejdź do konsoli Bash w PythonAnywhere i "ściągnij" te zmiany z GitHuba:
+
+    $ cd ~/my-first-blog
+    $ git pull
+   
+Na koniec na zakładce [Web][8] kliknij w "Reload".
+
+Inne typowe problemy to:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Pominięcie jednego z kroków, które powinnyśmy zrobić w konsoli: stworzenie środowiska wirtualnego, aktywowanie go, instalacja Django, pobranie plików statycznych, migracja bazy danych.
 
-*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce "Web" -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
+*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce [Web][8] -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
 
 *   Zrobienie błędu w pliku konfiguracyjnym WSGI -- czy dobrze zapisałaś ścieżkę do katalogu my-first-blog?
 
