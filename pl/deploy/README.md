@@ -297,7 +297,7 @@ Najprawdopodobniej zobaczysz tam informację, że adres pod którym znajduje si�
 
     Invalid HTTP_HOST header: '<your-username>.pythonanywhere.com'. You may need to add '<your-username>.pythonanywhere.com' to ALLOWED_HOSTS.
 
-Ze względów bezpieczństwa, Twoja aplikacja odpowiada tylko na żądania adresowane do niej (tak jak Ty nie czytasz wiadomości nieadresowanych do Ciebie, z obawy, że to oszustwo).
+Ze względów bezpieczeństwa, Twoja aplikacja odpowiada tylko na żądania adresowane do niej (tak jak Ty nie czytasz wiadomości nieadresowanych do Ciebie, z obawy, że to oszustwo).
 Musisz pomóc jej zrozumieć, jak nazywa się jej nowy dom. Na swoim komputerze otwórz plik `settings.py` znajdujący się w katalogu `mysite`. Zobaczysz w nim powód całego zamieszania - pustą tablicę:
 
     ALLOWED_HOSTS = []
@@ -327,7 +327,7 @@ Teraz przejdź do konsoli Bash w PythonAnywhere i "ściągnij" te zmiany z GitHu
     $ cd ~/my-first-blog
     $ git pull
    
-Na koniec na zakładce [Web][8] kliknij w "Reload".
+Na koniec w zakładce [Web][8] kliknij w "Reload".
 
 Inne typowe problemy to:
 
