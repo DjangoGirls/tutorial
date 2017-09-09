@@ -197,6 +197,8 @@ Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Po
 
     (myvenv) $ python manage.py collectstatic
 
+Będziemy z powżyszego polecenia korzystać za każdym razem gdy dodamy nowe pliki statyczne. Przy kolejnych uruchomieniach tego polecenia, najprawdopodobniej zobaczysz poniższe ostrzeżenie:
+
     You have requested to collect static files at the destination
     location as specified in your settings:
 
