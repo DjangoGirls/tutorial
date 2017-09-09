@@ -166,7 +166,7 @@ To polecenie ściągnie kopię twojego kodu na PythonAnywhere. By to sprawdzić,
 
 ### Tworzenie środowiska wirtualnego na PythonAnywhere
 
-Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wirtualne na PythonAnywhere. W konsoli Bash wpisz:
+Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wirtualne na PythonAnywhere. Polecania poniżej nieco się [różnią](https://www.reddit.com/r/learnpython/comments/4hsudz/pyvenv_vs_virtualenv/), od tych, które wykonałaś na swoim komputerze, ponieważ serwer na którym je wykonasz ma zainstalowane inne oprogramowanie. W konsoli Bash wpisz:
 
     $ cd my-first-blog
 
