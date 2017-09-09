@@ -52,8 +52,7 @@ Zapisz go jako `.gitignore` w folderze najwyższego poziomu "djangogirls".
 
 > **Uwaga** Ta kropka na początku nazwy pliku jest ważna! Jeśli masz jakieś problemy z utworzeniem tego pliku (na przykład, jeśli pracujesz na Macu to Finder broni się przed zapisywaniem plików, które zaczynają się od kropki) to użyj "Zapisz jako" w swoim edytorze, działa bezbłędnie.
 
-Dobrym nawykiem jest wpisywanie polecenia `
-` zanim wpiszesz `git add` albo gdy nie jesteś pewna co się zmieniło. To powinno cię ustrzec przed nieprzyjemnymi niespodziankami, takimi jak dodanie lub zmienienie nieprawidłowych plików. Polecenie `git status` zwraca między innymi informacje o plikach, które zostały dodane/zmienione/usunięte. Po wpisaniu polecenia powinnaś zobaczyć coś podobnego do tego:
+Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` albo gdy nie jesteś pewna co się zmieniło. To powinno cię ustrzec przed nieprzyjemnymi niespodziankami, takimi jak dodanie lub zmienienie nieprawidłowych plików. Polecenie `git status` zwraca między innymi informacje o plikach, które zostały dodane/zmienione/usunięte. Po wpisaniu polecenia powinnaś zobaczyć coś podobnego do tego:
 
     $ git status
     On branch master
