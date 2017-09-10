@@ -121,7 +121,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve template'e iletmek gerekir. Bu *view*'a geri döneceğiz, fakat öncesinde form için hızlıca bir şablon oluşturalım.
+Yeni bir `Post` formu oluşturmak için `PostForm()`u çağırmak ve template'e iletmek gerekir. Bu *view*'a geri döneceğiz, fakat öncesinde form için hızlıca bir şablon oluşturalım.
 
 ## Template
 
