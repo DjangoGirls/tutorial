@@ -169,6 +169,8 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
 
+**NOTE:** When you see command-line examples like the following you only need to type what is written after the `$` character (or `>` on Windows). The other lines represents the output of the command you entered.
+
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~$ pip install django~=1.11.0
