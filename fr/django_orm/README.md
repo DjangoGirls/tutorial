@@ -44,7 +44,7 @@ Rien de compliqué : nous importons le modèle `Post` depuis notre `blog.models`
 
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>]
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 Cela nous permet d'obtenir une liste des posts que nous avons créé tout à l'heure ! Rappelez-vous : nous avions créé ces posts à l'aide de l'interface d'administration de Django. Cependant, nous aimerions maintenant créer de nouveaux posts à l'aide de Python : comment allons-nous nous y prendre ?
@@ -69,7 +69,7 @@ Avons-nous des utilisateurs dans notre base de données ? Voyons voir :
 
 ```python
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```
 
 C'est le superutilisateur que nous avions créé tout à l'heure ! Essayons maintenant d'obtenir une instance de l'utilisateur :
@@ -90,7 +90,7 @@ Youpi ! Et si on vérifiait quand même si ça a marché ?
 
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
 Et voilà : un post de plus dans la liste !

@@ -44,6 +44,6 @@
 
   * [命令行介绍](../intro_to_command_line/README.md)
 
-  * [Python 简介](../intro_to_command_line/README.md)
+  * [Python 简介](../python_introduction/README.md)
 
   * [Django 是什么？](../django/README.md)

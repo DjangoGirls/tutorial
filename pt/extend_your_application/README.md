@@ -31,7 +31,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
 Queremos ter um link para uma página de detalhe no título do post. Vamos transformar `< h1 >< href = "" >{{ post.title }} < /a >< / h1 >` em um link:
 
 ```html
-<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
 {% raw %}Tempo para explicar o misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como você pode suspeitar, a notação de `{% %}` significa que estamos usando as tags de template do Django. Desta vez vamos usar uma que vai criar uma URL para nós!{% endraw %}
