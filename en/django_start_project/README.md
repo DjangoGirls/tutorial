@@ -38,7 +38,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+(myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
 ```
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
@@ -58,7 +58,7 @@ djangogirls
         wsgi.py
         __init__.py
 ```
-
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
@@ -72,6 +72,8 @@ Let's ignore the other files for now as we won't change them. The only thing to 
 ## Changing settings
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
@@ -95,7 +97,7 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
 ```
 
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
@@ -188,6 +190,6 @@ While the web server is running, you won't see a new command-line prompt to ente
 
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!

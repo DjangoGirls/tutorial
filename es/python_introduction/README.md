@@ -388,7 +388,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
 *   **and** - si utilizas el operador `and`, ambas comparaciones deben ser True para que el resultado de todo el comando sea True
 *   **or** - si utilizas el operador `or`, sólo una de las comparaciones tiene que ser True para que el resultado de todo el comando sea True
 
-¿Has oído la expresión "comparar manzanas con naranjas"? Vamos a probar el equivalente en Python:
+¿Has oído la expresión "comparar peras con manzanas"? Vamos a probar el equivalente en Python:
 
     >>> 1 > 'django'
     Traceback (most recent call last):

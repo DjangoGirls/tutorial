@@ -15,7 +15,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Pamiętasz, jak rozmawiałyśmy o dołączaniu kodu zapisanego w odrębnych plikach? Teraz jest przyszedł czas na dołączenie modelu, który napisałyśmy wcześniej w `models.py`. Dodajmy wiersz `from .models import Post` w następujący sposób:
+Pamiętasz, jak rozmawiałyśmy o dołączaniu kodu zapisanego w odrębnych plikach? Teraz przyszedł czas na dołączenie modelu, który napisałyśmy wcześniej w `models.py`. Dodajmy wiersz `from .models import Post` w następujący sposób:
 
 ```python
 from django.shortcuts import render

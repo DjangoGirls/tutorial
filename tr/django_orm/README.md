@@ -44,7 +44,7 @@ Aman! Bir hata meydana geldi. Bize bir gönderi olmadığını söylüyor. Doğr
 
 ```
 >>> Post.objects.all()
-[<Post: Gönderi 1>, <Post: Gönderi 2>]
+<QuerySet [<Post: Gönderi 1>, <Post: Gönderi 2>]>
 ```    
 
 Daha önce yarattığımız gönderilerin listesi! Bu gönderileri Django yönetici arayüzü kullanarak yaratmıştık. Şimdi ise Python kullanarak yeni gönderiler yaratmak istiyoruz, bunu nasıl yapabiliriz?
@@ -69,7 +69,7 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 
 ```
 >>> User.objects.all()
-[<User: zeynep>]
+<QuerySet [<User: zeynep>]>
 ```    
 
 Daha önce yarattığımız ayrıcalıklı kullanıcı! Şimdi veritabanından kullanıcı nesnesi alalım:
@@ -90,7 +90,7 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 ```
 >>> Post.objects.all()
-[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>]
+<QuerySet [<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>]>
 ```    
 
 İşte bu kadar, listede bir gönderi daha!
@@ -120,7 +120,9 @@ Ya da belki `baslik` alanında içinde 'Nefis' kelimesini içeren tüm gönderil
 Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `yayinlanma_tarihi` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
 ```
->>> from django.utils import timezone Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()) []
+>>> from django.utils import timezone
+>>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now())
+>>> <QuerySet []>
 ```
 
 Maalesef, Python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Bunu değiştirebiliriz! İlk olarak yayınlamak istediğimiz gönderinin bir örneğini alalım:

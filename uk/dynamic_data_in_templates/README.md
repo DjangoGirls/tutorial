@@ -68,4 +68,4 @@ def post_list(request):
 
 Це все! Час повернутись назад до нашого шаблону і вивести QuerySet!
 
-Якщо бажаєте дізнатись трохи більше про QuerySets в Django, зазирніть сюди: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Якщо бажаєте дізнатись трохи більше про QuerySets в Django, зазирніть сюди: https://docs.djangoproject.com/en/1.11/ref/models/querysets/

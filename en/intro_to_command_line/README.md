@@ -136,7 +136,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Note: 'cd' stands for 'current directory'.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -174,6 +174,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X.
 <!--endsec-->
 
 ---
@@ -221,7 +222,7 @@ C:\Users\olasitarska\Desktop
 
 Here it is!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 ---
 
@@ -335,7 +336,7 @@ Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -343,7 +344,7 @@ $ rm -r practice
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
+<!--sec data-title="Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}

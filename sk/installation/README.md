@@ -44,6 +44,6 @@ Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred za�
 
   * [Úvod do príkazového riadku](../intro_to_command_line/README.md)
 
-  * [Úvod do jazyka Python](../intro_to_command_line/README.md)
+  * [Úvod do jazyka Python](../python_introduction/README.md)
 
   * [Čo je Django?](../django/README.md)

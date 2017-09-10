@@ -84,7 +84,7 @@ class PostForm(forms.ModelForm):
 ```
     
 
-然后保存，刷新http://127.0.0.1:8000页面，你可以明显地看到一个熟悉的`NoReverseMatch`错误信息，是吧？
+然后保存，刷新 http://127.0.0.1:8000 页面，你可以明显地看到一个熟悉的`NoReverseMatch`错误信息，是吧？
 
 ## URL
 
@@ -226,11 +226,11 @@ def post_new(request):
 把它添加到你文件的最开始处。现在我们可以说：创建完新帖子我们就转去`post_detail`页面。
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
     
 
-`blog.views.post_detail` 是我们想去的视图的名字。 还记得这个*视图* 需得具有一个 `pk` 变量吗? 为了把它传递给视图我们使用`pk=post.pk`, 其中 `post` 就是我们刚刚创立的博客帖子！
+`post_detail` 是我们想去的视图的名字。 还记得这个*视图* 需得具有一个 `pk` 变量吗? 为了把它传递给视图我们使用`pk=post.pk`, 其中 `post` 就是我们刚刚创立的博客帖子！
 
 好吧，我们已经说了很多了，但可能我们想看到整个*视图*现在看起来什么样，对吗？
 
@@ -243,14 +243,14 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
     
 
-让我们看看它是否正常工作。 转到页 http://127.0.0.1:8000//post/new/，添加 `title` 和 `text`，将它保存... 看！ 新博客文章已经加进来了，我们被重定向到`post_detail`页面！
+让我们看看它是否正常工作。 转到页 http://127.0.0.1:8000//post/new/ ，添加 `title` 和 `text`，将它保存... 看！ 新博客文章已经加进来了，我们被重定向到`post_detail`页面！
 
 你可能已经注意到在保存博客文章之前我们设置发布日期。稍后，我们讲介绍一个在 **Django Girls 教程：扩展**中介绍 *publish button* 。.
 
@@ -268,7 +268,7 @@ def post_new(request):
 
 Django会处理验证我们表单里的所有字段都是正确的。这不是很棒？
 
-> 因为我们最近使用过Django管理界面，系统目前认为我们已经登录了。 有几种情况可能导致我们被登出（关闭浏览器，重新启动数据库等等）。 如果你发现当你创建一个文章时得到了一个指向未登录用户错误的时候，前往管理页面`http://127.0.0.1:8000/admin`，再登录。 这会暂时解决问题。 有一个一劳永逸的方法在等着你，可以看看只要教程后的**Homework: add security to your website!** 章节。
+> 因为我们最近使用过Django管理界面，系统目前认为我们已经登录了。 有几种情况可能导致我们被登出（关闭浏览器，重新启动数据库等等）。 如果你发现当你创建一个文章时得到了一个指向未登录用户错误的时候，前往管理页面 `http://127.0.0.1:8000/admin` ，再登录。 这会暂时解决问题。 有一个一劳永逸的方法在等着你，可以看看只要教程后的**Homework: add security to your website!** 章节。
 
 ![记录错误][4]
 
@@ -326,7 +326,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
