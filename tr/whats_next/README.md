@@ -36,5 +36,5 @@ Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öner
  [7]: http://www.codecademy.com/tracks/web
  [8]: http://django.carrots.pl/en/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
