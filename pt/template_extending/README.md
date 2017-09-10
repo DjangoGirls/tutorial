@@ -78,7 +78,7 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
 {% endblock %}
 ```
 
-O que isso significa? Você acabou de criar um `block` (bloco), que é uma tag de template que te permite inserir HTML neste bloco em outros templates que estendem `base.html`. Nós vamos te mostrar como fazer isso já já.
+O que isso significa? Você acabou de criar um `block content` (bloco), que é uma tag de template que te permite inserir HTML neste bloco em outros templates que estendem `base.html`. Nós vamos te mostrar como fazer isso já já.
 
 Salve e abra o arquivo `blog/templates/blog/post_list.html` novamente. Apague exatamente tudo que não estiver dentro da tag body e apague também `<div class="page-header"></div>`, de forma que o arquivo fique da seguinte maneira:
 
@@ -100,7 +100,7 @@ Agora adicione esta linha ao início do arquivo:
 {% extends 'blog/base.html' %}
 ```
 
-Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block content %}` e `{% endblock content %}`. Como a seguir:
+Isso significa que, agora, nós estamos estendendo o template `base.html` em `post_list.html`. Uma última coisa: colocar tudo (exceto pela linha que acabamos de adicionar) entre `{% block content %}` e `{% endblock %}`. Como a seguir:
 
 ```html
 {% extends 'blog/base.html' %}
@@ -115,7 +115,7 @@ Isso significa que, agora, nós estamos estendendo o template `base.html` em `po
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 É isso! Veja se o seu site ainda está funcionando direito :)

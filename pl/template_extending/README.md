@@ -78,7 +78,7 @@ W zasadzie zastąpiłyśmy całą treść wewnątrz `{% for post in posts %}{% e
 {% endblock %}
 ```
 
-Co to znaczy? Stworzyłaś właśnie `block` (blok), który jest znacznikiem szablonu umożliwiającym Ci wstawienie HTML wewnątrz tego bloku w innych szablonach, które rozszerzają `base.html`. Za chwilę pokażemy Ci, jak to się robi.
+Co to znaczy? Stworzyłaś właśnie `block content` (blok), który jest znacznikiem szablonu umożliwiającym Ci wstawienie HTML wewnątrz tego bloku w innych szablonach, które rozszerzają `base.html`. Za chwilę pokażemy Ci, jak to się robi.
 
 Teraz zapisz zmiany, a potem otwórz jeszcze raz plik `blog/templates/blog/post_list.html`. Usuń całą zawartość z wyjątkiem zawartości znacznika body, a potem usuń także `<div class="page-header"></div>`, aby plik wyglądał tak:
 
@@ -100,7 +100,7 @@ A teraz dodaj ten wiersz na początku pliku:
 {% extends 'blog/base.html' %}
 ```  
 
-{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock content %}`. O tak:{% endraw %}
+{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock %}`. O tak:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -115,7 +115,7 @@ A teraz dodaj ten wiersz na początku pliku:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)

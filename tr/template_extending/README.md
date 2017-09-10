@@ -79,7 +79,7 @@ Aslında sadece `{% for post in posts %}{% endfor %}` arasındaki her şeyi şun
 {% endblock %}
 ```    
 
-Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanarak bir blok oluşturdunuz. Diğer template'leri bu bloğun içine HTML ekleyerek `base.html`'yi genişletebilirsiniz. Bunun nasıl yapıldığını da hemen göstereceğiz.
+Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block content`'u kullanarak bir blok oluşturdunuz. Diğer template'leri bu bloğun içine HTML ekleyerek `base.html`'yi genişletebilirsiniz. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
 Şimdi bunu kaydedin ve tekrar `blog/templates/blog/post_list.html` dosyanızı açın. Body içinde kalanlar hariç her şeyi silin. Ve ayrıca `<div class="page-header"></div>` bölümünü de silin. Dosyanız şöyle görünecektir:
 
@@ -101,7 +101,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock content %}` arasına koyun. Şunun gibi:{% endraw %}
+{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock %}` arasına koyun. Şunun gibi:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -116,7 +116,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
             <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```    
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)

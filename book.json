@@ -15,7 +15,7 @@
         "github@2.0.0",
         "language-picker",
         "sidebar-ad",
-        "codeblock-label",
+        "codeblock content-label",
         "sectionx"
     ],
     "pluginsConfig": {

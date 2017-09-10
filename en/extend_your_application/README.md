@@ -25,7 +25,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
@@ -151,7 +151,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Once again we are extending `base.html`. In the `content` block content we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from __Introduction to Python__ chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 

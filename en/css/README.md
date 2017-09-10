@@ -163,7 +163,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Find the `h1 a` declaration block content (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
@@ -200,7 +200,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+We will now add declaration block contents to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css

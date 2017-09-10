@@ -78,7 +78,7 @@ Nahradili jsme v podstatě všechno, co bylo mezi `{% for post in posts %}{% end
 {% endblock %}
 ```    
 
-Co to znamená? Právě jsi vytvořila `block`, což je šablonovací značka, která umožňuje vkládat HTML kód do tohoto bloku v jiných šablonách, které rozšiřují `base.html`. Hned ti ukážeme, jak to udělat.
+Co to znamená? Právě jsi vytvořila `block content`, což je šablonovací značka, která umožňuje vkládat HTML kód do tohoto bloku v jiných šablonách, které rozšiřují `base.html`. Hned ti ukážeme, jak to udělat.
 
 Nyní ulož a znovu otevři svůj `blog/templates/blog/post_list.html`. Odstraň vše, co není uvnitř body, a pak také odstraň `< div class="page-header" >< / div >`, takže soubor bude vypadat takto:
 
@@ -100,7 +100,7 @@ A teď přidej na začátek souboru tento řádek:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock content %}`. Takto: {% endraw %}
+{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock %}`. Takto: {% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -115,7 +115,7 @@ A teď přidej na začátek souboru tento řádek:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 To je ono! Zkontroluj, zda tvoje stránky stále správně fungují :)

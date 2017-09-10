@@ -24,7 +24,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` dentro del enlace:
