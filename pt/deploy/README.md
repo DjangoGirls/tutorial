@@ -194,7 +194,7 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
 
     20:20 ~ $ source myvenv/bin/activate
 
-    (mvenv)20:20 ~ $  pip install django~=1.10.0
+    (mvenv)20:20 ~ $  pip install django~=1.11.0
     Collecting django
     [...]
     Successfully installed django-1.8.5 whitenoise-2.0

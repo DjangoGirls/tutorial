@@ -341,7 +341,7 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 Tebrikler! Uygulaman gittikçe tamamlanıyor!
 
-Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.10/topics/forms/ adresindeki dokümanlara bakabilirsin
+Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.11/topics/forms/ adresindeki dokümanlara bakabilirsin
 
 ## Güvenlik
 

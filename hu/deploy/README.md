@@ -175,17 +175,17 @@ Ugyanúgy, ahogy a saját gépeden csináltad, a PythonAnywhere-en is létrehozh
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.10.0
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 

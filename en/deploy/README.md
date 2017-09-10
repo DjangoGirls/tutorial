@@ -182,17 +182,17 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.10.0
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 
@@ -221,7 +221,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, and the database is 
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
 
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
+After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
 
 > **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
 
@@ -280,7 +280,7 @@ If you see an error when you try to visit your site, the first place to look for
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.5.
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 

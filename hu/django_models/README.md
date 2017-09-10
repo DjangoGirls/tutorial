@@ -141,7 +141,7 @@ Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltü
 *   `models.DateTimeField` - ez dátumot és időt tartalmaz.
 *   `models.ForeignKey` - ez egy másik modellel való kapcsolatot jelent.
 
-Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
+Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (közzététel) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
 

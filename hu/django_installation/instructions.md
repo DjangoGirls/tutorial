@@ -68,7 +68,7 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 > Hogy ezt elkerüld, használd a `virtualenv` parancsot.
 > 
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.5 myvenv
+>     ~/djangogirls$ virtualenv --python=python3.6 myvenv
 >     
 
 > **MEGJEGYZÉS:** Ha az alábbi hibaüzenetet kapod:
@@ -82,7 +82,7 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 >
 >{% filename %}parancssor{% endfilename %}
 >```
->sudo apt install python3.5-venv
+>sudo apt install python3.6-venv
 >```
 
 <!--endsec-->
@@ -152,15 +152,15 @@ Mielőtt ezt megtennénk, meg kell győződnünk arról, hogy a `pip` legfrisseb
 (myvenv) ~$ pip install --upgrade pip
 ```
 
-Ezután futtasd ezt a parancsot a konzolban: `pip install django~=1.10` (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: `~=`).
+Ezután futtasd ezt a parancsot a konzolban: `pip install django~=1.11` (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: `~=`).
 
 {% filename %}parancssor{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.10.0
-Collecting django~=1.10.0
-  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
+(myvenv) ~$ pip install django~=1.11.0
+Collecting django~=1.11.0
+  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 <!--sec data-title="Windowson" data-id="django_err_windows"
@@ -177,7 +177,7 @@ data-collapse=true ces-->
 >
 >{% filename %}parancssor{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
+>C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
 >```
 
 <!--endsec-->

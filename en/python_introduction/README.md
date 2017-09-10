@@ -17,7 +17,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.5.1 (...)
+Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
