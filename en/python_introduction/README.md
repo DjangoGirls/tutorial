@@ -607,15 +607,27 @@ $ cd ~/Desktop
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-And on Windows, it will be like this:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
 <!--endsec-->
+
+
+<!--sec data-title="Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+And on Windows Powershell, it will be like this:
+
+{% filename %}command-line{% endfilename %}
+```
+> cd $Home\Desktop
+```
+<!--endsec-->
+
 
 If you get stuck, just ask for help.
 

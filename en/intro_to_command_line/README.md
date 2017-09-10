@@ -174,6 +174,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X.
 <!--endsec-->
 
 ---
@@ -335,7 +336,7 @@ Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -343,7 +344,7 @@ $ rm -r practice
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
+<!--sec data-title="Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
