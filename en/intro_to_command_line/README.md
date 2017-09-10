@@ -21,7 +21,9 @@ To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → All Programs → Accessories → Command Prompt.
+Go to Start menu → Windows System → Command Prompt.
+
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
 <!--endsec-->
 
