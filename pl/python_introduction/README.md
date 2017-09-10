@@ -17,7 +17,7 @@ Chcemy otworzyć konsolę Pythona.
 Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `Enter`.
 
     $ python3
-    Python 3.4.3 (...)
+    Python 3.6.0 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 

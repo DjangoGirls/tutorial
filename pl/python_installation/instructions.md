@@ -17,13 +17,9 @@ Po pobraniu odpowiedniego pliku np. **python-3.6.0-amd64.exe** dla systemu 64-bi
 * na trzecim ekranie "Advanced Options" zaznacz nastęujące opcje:
   * Associate files with Python
   * Create shortcuts for installed Applications
-  * Add Python to environment variables **WAŻNE**  
+  * Add Python to environment variables **WAŻNE**
 
-W okienku "Customize install location" znajduje się ścieżka do folderu, w którym będzie zainstalowany Python. Jeśli chcesz, możesz wskazać inne miejsce do którego ma zostać zainstalowany Python, upewnij się tylko, aby opcja "Add Python to environment..." była zaznaczona. Zapisz też sobie gdzieś, ścieżkę, w której Python będzie zainstalowany.
-
-Jeśli masz wszystkie opcje zaznaczone jak na poniższym obrazku oraz zapisałaś sobie ścieżkę, to możesz nacisnąć przycisk **Install**
-
-Koniecznie zapamiętaj ścieżkę (katalog), w którym zainstalowałaś Pythona. Będzie Ci niebawem potrzebna!
+Jeśli masz wszystkie opcje zaznaczone, to możesz nacisnąć przycisk **Install**
 
 ![Opcje zaawansowane instalatora](../python_installation/images/advanced_options_win.png)
 
@@ -54,7 +50,7 @@ data-collapse=true ces-->
 Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.6.0
 
 Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
