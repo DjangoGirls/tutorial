@@ -139,6 +139,8 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
 
+<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
+
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
