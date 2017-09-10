@@ -279,6 +279,8 @@ application = StaticFilesHandler(get_wsgi_application())
 
 *   Web app에서 그랬듯이 virtualenv에도 같은 파이썬 버전을 선택했나요? 둘 다 모두 3.4 버전이어야 해요 위키에서 [일반적인 디버깅 팁](https://www.pythonanywhere.com/wiki/DebuggingImportError)을 확인할 수 있어요.
 
+*   만약 `Invalid HTTP_HOST header: <your-site-name> . You may need to add <your-site-name> to ALLOWED_HOSTS.` 라는 오류메세지가 나온다면 `/mysite/settings.py`의 마지막 줄에 `ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']` 를 추가 한 뒤에 다시 **Web** 탭에서 `Reload <your-site-name`이라는 녹색 버튼을 눌러 주세요.
+
 [PythonAnywhere wiki에 있는 일반적인 디버깅 방법](https://www.pythonanywhere.com/wiki/DebuggingImportError)도 있습니다.
 
 코치들은 여러분들에게 도움을 주기 위해 여기 있다는 것을 기억하세요!
