@@ -24,7 +24,11 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
 
 Po uruchomieniu Pythona, wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz za każdym razem wpisywać `>>>` - Python zrobi to za Ciebie.
 
-Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
+Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` i naciśnij enter. Alternatywnie, możesz użyć kombinacji klawiszy:
+- `Ctrl + C` w Windows lub, jeśli nie zadziałało, to `Ctrl + Z` a potem Enter (kombinacja zależy od wersji Pythona i Windowsa), albo
+- `Ctrl + D` w Macu/Linuksie.
+
+Po udanym wyłączeniu konsoli Pythona, nie będziesz już więcej widzieć promptu `>>>` na początku nowej linii.
 
 Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, np. `2 + 3`, i wciśnij `Enter`.
 

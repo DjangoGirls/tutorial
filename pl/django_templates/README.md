@@ -26,7 +26,7 @@ Spróbuj tak zrobić w szablonie` blog/templates/blog/post_list.html`. Zastąp w
 
 Jak widzisz, dostaliśmy tylko tyle:
 
-    <QuerySet [<Post: My second post>, <Post: My first post>]>
+    [<Post: My second post>, <Post: My first post>]
 
 
 Oznacza to tyle, że Django rozumie to jako listę obiektów. Pamiętasz z rozdziału **Wprowadzenie do Pythona**, jak możemy wyświetlić zawartość listy? Tak, za pomocą pętli for! W szablonie Django używamy ich w ten sposób:
