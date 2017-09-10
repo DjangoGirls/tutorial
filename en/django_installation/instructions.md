@@ -34,7 +34,7 @@ $ python3 -m venv myvenv
 <!--sec data-title="Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python35\python -m venv myvenv`. It will look like this:
+To create a new `virtualenv`, you need to open the console (we told you about that a few chapters ago – remember?) and run `C:\Python36\python -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 ```
