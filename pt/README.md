@@ -12,39 +12,39 @@ This tutorial has been translated from English to Portuguese by a group of aweso
 
 Special thanks for help goes out to:
 
-*Adailton do Nascimento 
-*Adam Victor Nazareth Brandizzi 
-*Antonio Luis 
-*Annanda Sousa 
-*Adjamilton Junior 
-*Bernardo Fontes 
-*Camilla Achutti
-*Carla Suarez
-*Cleiton Lima 
-*clemente.jnr
-*danieltex 
-*Eric Hideki 
-*Flavio Barros 
-*Fabio C. Barrionuevo da Luz 
-*ffabiorj 
-*Gabriela Cavalcante da Silva 
-*Leandro Silva Araujo 
-*Lucas Magnum 
-*1pedro 
-*Joao Luiz Lorencetti  
-*Katyanna Moura 
-*Kleber C Pinheiro 
-*Leandro Barbosa 
-*Leonardo Alves dos Santos 
-*Marcel Ribeiro Dantas 
-*joepreludian 
-*Rafael Biagioni de Fazio 
-*Pablo Palacios 
-*Paulo Alem 
-*Raony Guimares Correo do Carmo Lisboa Cardenas 
-*Vivian Macedo
-*Willie Lawrence 
-*Ricardo Manhães Savii
+* Adailton do Nascimento 
+* Adam Victor Nazareth Brandizzi 
+* Antonio Luis 
+* Annanda Sousa 
+* Adjamilton Junior 
+* Bernardo Fontes 
+* Camilla Achutti
+* Carla Suarez
+* Cleiton Lima 
+* clemente.jnr
+* danieltex 
+* Eric Hideki 
+* Flavio Barros 
+* Fabio C. Barrionuevo da Luz 
+* ffabiorj 
+* Gabriela Cavalcante da Silva 
+* Leandro Silva Araujo 
+* Lucas Magnum 
+* 1pedro 
+* Joao Luiz Lorencetti  
+* Katyanna Moura 
+* Kleber C Pinheiro 
+* Leandro Barbosa 
+* Leonardo Alves dos Santos 
+* Marcel Ribeiro Dantas 
+* joepreludian 
+* Rafael Biagioni de Fazio 
+* Pablo Palacios 
+* Paulo Alem 
+* Raony Guimares Correo do Carmo Lisboa Cardenas 
+* Vivian Macedo
+* Willie Lawrence 
+* Ricardo Manhães Savii
 Wow! <3 <3 
 
 ## Introdução

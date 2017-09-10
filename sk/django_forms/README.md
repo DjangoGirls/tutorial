@@ -17,8 +17,7 @@ blog
 
 OK, otvorme to a napíšme tento kód:
 
-```
-python
+```python
 from django import forms
 
 from .models import Post
@@ -213,10 +212,10 @@ from django.shortcuts import redirect
 Pridaj to úplne na začiatok súboru. A teraz môžeme povedať: prejdi na stránku `post_detail` novovytvoreného postu.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` je názov view - zobrazenia, kam chceme ísť. Spomínaš si, že tento *view* vyžaduje premennú `pk`? Aby sme ju odovzdali zobrazenia, použijeme `pk=post.pk`, kde `post` je novo vytvorený blog post!
+`post_detail` je názov view - zobrazenia, kam chceme ísť. Spomínaš si, že tento *view* vyžaduje premennú `pk`? Aby sme ju odovzdali zobrazenia, použijeme `pk=post.pk`, kde `post` je novo vytvorený blog post!
 
 Ok, dosť sme hovorili, ale asi by bolo dobré pozrieť sa ako celý *view* vyzerá, však?
 
@@ -229,7 +228,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -308,7 +307,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})

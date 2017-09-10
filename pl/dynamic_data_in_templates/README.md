@@ -15,7 +15,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Pamiętasz, jak rozmawiałyśmy o dołączaniu kodu zapisanego w odrębnych plikach? Teraz jest przyszedł czas na dołączenie modelu, który napisałyśmy wcześniej w `models.py`. Dodajmy wiersz `from .models import Post` w następujący sposób:
+Pamiętasz, jak rozmawiałyśmy o dołączaniu kodu zapisanego w odrębnych plikach? Teraz przyszedł czas na dołączenie modelu, który napisałyśmy wcześniej w `models.py`. Dodajmy wiersz `from .models import Post` w następujący sposób:
 
 ```python
 from django.shortcuts import render
@@ -28,7 +28,7 @@ Ale co dalej? Żeby pobrać wpisy naszego bloga z modelu `Post` potrzebujemy cze
 
 ## QuerySet
 
-Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. Rozmawiałyśmy o tym w rozdziale [Django ORM (QuerySets)][1].
+Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. Rozmawiałyśmy o tym w rozdziale [Django ORM (obiekty QuerySet)][1].
 
  [1]: ../django_orm/README.md
 
@@ -55,7 +55,7 @@ Ponadto w kodzie mamy funkcję `timezone.now()`, więc musimy zaimportować `tim
 
 Ostatnią częścią, której nam brakuje, jest przekazanie QuerySetu `posts` do szablonu (jej wyświetlaniem w szablonie zajmiemy się w następnym rozdziale).
 
-W funkcji `render` mamy już parametr `request` (czyli wszystko to, co odbieramy od użytkownika przez internet) oraz plik szablonu `'blog/post_list.html'`. Ostatni parametr, który wygląda tak: `{}` jest miejscem, w którym możemy dodać parę rzeczy do wykorzystania w szablonie. Musimy nadać im nazwy (ale póki co będziemy trzymać się nazwy `'posts'` :)). Powinno to wyglądać tak: `{'posts': posts}`. Zwróć uwagę, że ta część przed `:` jest stringiem - powinna być w środku znaków `''`.
+W funkcji `render` mamy już parametr `request` (czyli wszystko to, co odbieramy od użytkownika przez Internet) oraz plik szablonu `'blog/post_list.html'`. Ostatni parametr, który wygląda tak: `{}` jest miejscem, w którym możemy dodać parę rzeczy do wykorzystania w szablonie. Musimy nadać im nazwy (ale póki co będziemy trzymać się nazwy `'posts'` :)). Powinno to wyglądać tak: `{'posts': posts}`. Zwróć uwagę, że ta część przed `:` jest stringiem - powinna być w środku znaków `''`.
 
 Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
@@ -71,4 +71,4 @@ def post_list(request):
 
 I to wszystko! Czas, żebyśmy wróciły do naszego szablonu i wyświetliły ten QuerySet!
 
-Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.7/ref/models/querysets/
+Jeżeli chciałabyś poczytać troszkę więcej na temat QuerySetów w Django, powinnaś rzucić okiem tutaj: https://docs.djangoproject.com/en/1.8/ref/models/querysets/

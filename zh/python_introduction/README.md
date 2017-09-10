@@ -322,7 +322,7 @@
 
 我希望你能觉得到目前为止这些都合情合理。:)准备享受更多字典的乐趣吗？跳到下一行去做一些更有趣的事情。
 
-你可以使用`del`命令去删除字典里的元素。 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
+你可以使用`pop() `语句去删除字典里的元素。 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
 
     >>> participant.pop('favorite_numbers')
     >>> participant
@@ -477,17 +477,17 @@
 
 在 Mac 上命令会看起来像这样：
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 在Linux，它会看起来像这样（“桌面”可能会被翻译成您所在的语言）：
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 并在 windows 上，它会看起来像这样：
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 如果你遇到麻烦了，尽管提问寻求帮助。

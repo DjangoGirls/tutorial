@@ -12,7 +12,7 @@ Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na s
 
 Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
 
-Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `enter`.
+Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `Enter`.
 
     $ python3
     Python 3.4.3 (...)
@@ -22,11 +22,15 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
 
 ## Twoje pierwsze polecenie w Pythonie!
 
-Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz za każdym razem wpisywać `>>>` - Python zrobi to za Ciebie.
+Po uruchomieniu Pythona, wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz za każdym razem wpisywać `>>>` - Python zrobi to za Ciebie.
 
-Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
+Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` i naciśnij enter. Alternatywnie, możesz użyć kombinacji klawiszy:
+- `Ctrl + C` w Windows lub, jeśli nie zadziałało, to `Ctrl + Z` a potem Enter (kombinacja zależy od wersji Pythona i Windowsa), albo
+- `Ctrl + D` w Macu/Linuksie.
 
-Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, np. `2 + 3`, i wciśnij `enter`.
+Po udanym wyłączeniu konsoli Pythona, nie będziesz już więcej widzieć promptu `>>>` na początku nowej linii.
+
+Teraz jednak nie chcemy wychodzić z konsoli Pythona. Chcemy za jej pomocą nauczyć się czegoś nowego. Zaczniemy od czegoś bardzo prostego. Spróbuj wpisać jakieś działanie matematyczne, np. `2 + 3`, i wciśnij `Enter`.
 
     >>> 2 + 3
     5
@@ -40,7 +44,7 @@ Jak widzisz, całkiem niezły kalkulator z tego Pythona. A jeśli zastanawiasz s
 
 ## Stringi
 
-A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłowów, w ten sposób:
+A jakby tak wpisać swoje własne imię? Wpisz swoje imię, używając cudzysłowów, w ten sposób:
 
     >>> "Ola"
     'Ola'
@@ -50,8 +54,8 @@ Właśnie stworzyłaś swój pierwszy string! Jest to ciąg znaków, który moż
 
 Stringi mogą być łączone. Spróbuj tak:
 
-    >>> "Czesc " + "Ola"
-    'Czesc Ola'
+    >>> "Cześć " + "Ola"
+    'Cześć Ola'
 
 
 Da się również mnożyć stringi za pomocą liczb:
@@ -62,7 +66,7 @@ Da się również mnożyć stringi za pomocą liczb:
 
 Jeśli chciałabyś użyć apostrofu wewnątrz stringu, możesz to zrobić na dwa sposoby.
 
-Za pomocą cudzysłowu:
+Umieszczając string w cudzysłowie (dzięki temu apostrof wewnątrz stringu nie zostanie potraktowany jako znak kończący string):
 
     >>> "Runnin' down the hill"
     "Runnin' down the hill"
@@ -73,6 +77,15 @@ lub poprzedzając apostrof odwróconym ukośnikiem (\'):
     >>> 'Runnin\' down the hill'
     "Runnin' down the hill"
 
+Analogicznie, jeśli chciałabyś użyć cudzysłowu wewnątrz stringu, możesz to zrobić albo poprzez ograniczenie całego stringu parą apostrofów:
+
+    >>> 'Co dziś oglądamy? "Żywot Briana" czy "Sens życia"?'
+    'Co dziś oglądamy? "Żywot Briana" czy "Sens życia"?'
+
+albo, pozostawić string w cudzysłowie, ale te wewnętrzne poprzedzić odwróconym ukośnikiem:
+
+    >>> "Co dziś oglądamy? \"Żywot Briana\" czy \"Sens życia\"?"
+    'Co dziś oglądamy? "Żywot Briana" czy "Sens życia"?'
 
 Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz po prostu:
 
@@ -103,7 +116,7 @@ Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć
 
 ## Błędy
 
-Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
+Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `Enter`:
 
     >>> len(304023)
     Traceback (most recent call last):
@@ -117,12 +130,12 @@ Nasz pierwszy błąd! Komunikat mówi nam, że obiekty typu "int" (liczby całko
     6
 
 
-Działa! Użyłyśmy funkcji `str` wewnątrz funkcji `len`. Funkcja `str()` konwertuje wszystko do postaci stringów.
+Działa! Użyłyśmy funkcji `str` wewnątrz funkcji `len`. Funkcja `str()` konwertuje wszystko do postaci stringów. Funkcja `len` dzięki temu otrzymała jako parametr tekst `'304023'` a nie liczbę).
 
 *   Funkcja `str` przekształca wartości na **stringi**
 *   Funkcja `int` przekształca wartości na **liczby**
 
-> Ważne: możemy konwertować liczby do postaci tekstowej, ale nie da się na odwrót - swoją drogą, jaki byłby wynik polecenia `int('hello')` ?
+> Ważne: każdą liczbę da się przekonwertować do postaci tekstowej, ale na odwrót - tekst na liczbę - już niekoniecznie, bo przecież jaki miałby być wynik polecenia `int('cześć')`? (Zadziała natomiast polecenie `int('42')`)
 
 ## Zmienne
 
@@ -135,7 +148,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
 Widzisz? Nietrudne! Po prostu: "imie" równa się Ola.
 
-Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij `enter`:
+Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij `Enter`:
 
     >>> imie
     'Ola'
@@ -173,7 +186,7 @@ Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się s
 
 Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
 
-Poświęć chwilę czasu na zabawę i przekonaj się co możesz z tym zrobić!
+Poświęć chwilę czasu na zabawę i przekonaj się, co możesz z tym zrobić!
 
 ## Funkcja print
 
@@ -368,7 +381,7 @@ Istotną częścią programowania jest porównywanie różnych rzeczy. Co najła
     True
 
 
-Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać listy, ale również wyniki działań. Fajnie, nie?
+Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby bezpośrednio, ale również wyniki działań na nich. Fajnie, nie?
 
 Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
 
@@ -399,7 +412,7 @@ Użyjmy Pythona do wykonania dwóch innych zadań:
 
 Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci Ci wynik! Prawda, że sprytne?
 
-*   **and** - gdy używasz operatora `and` , oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
+*   **and** - gdy używasz operatora `and`, oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
 *   **or** - gdy używasz operatora `or`, tylko jedno z obu porównań musi być prawdziwe, aby całe wyrażenie było prawdziwe
 
 Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego odpowiednik w Pythonie:
@@ -416,9 +429,11 @@ Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać licz
 
 Przez przypadek poznałaś nowy typ obiektu w Pythonie. Nazywa się **obiektem logicznym (Boolean)** -- i jest chyba najprostszym typem jaki istnieje.
 
-Są tylko dwa obiekty logiczne: - True (prawda) - False (fałsz)
+Są tylko dwa obiekty logiczne: 
+- True (prawda) 
+- False (fałsz)
 
-Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy False.)
+Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: "True" (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy pisowni "False".)
 
 Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 
@@ -452,7 +467,7 @@ Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do
 *   Zapisać kod do nowego pliku Pythona
 *   Uruchomić go!
 
-Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji ~~~ exit()~~~ :
+Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji `exit()`:
 
     >>> exit()
     $
@@ -478,17 +493,17 @@ Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości 
 
 Na Macu polecenie będzie wyglądać mniej-więcej tak:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
 
 
 A w systemie Windows będzie to wyglądać tak:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
 
 
 Jeżeli coś jest dla Ciebie niejasne, nie wahaj się poprosić o pomoc.
@@ -525,7 +540,7 @@ Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przy
 
 ```python
 if 3 > 2:
-    print('To dziala!')
+    print('To działa!')
 ```
 
 Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy `tabulator` również będzie liczył się jako 4 spacje.
@@ -533,7 +548,7 @@ Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy
 Zapisz plik i uruchom go jeszcze raz:
 
     $ python3 python_intro.py
-    To dziala!
+    To działa!
 
 
 ### A co jeśli warunek nie jest prawdziwy?
@@ -578,15 +593,15 @@ Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko 
 ```python
 glosnosc = 57
 if glosnosc < 20:
-    print("Prawie nic nie slychac.")
+    print("Prawie nic nie słychać.")
 elif 20 <= glosnosc < 40:
     print("O, muzyka leci w tle.")
 elif 40 <= glosnosc < 60:
-    print("Idealnie, moge uslyszec wszystkie detale")
+    print("Idealnie, mogę usłyszeć wszystkie detale")
 elif 60 <= glosnosc < 80:
     print("Dobre na imprezy")
 elif 80 <= glosnosc < 100:
-    print("Troszeczke za glosno!")
+    print("Troszeczkę za głośno!")
 else:
     print("Ojoj! Moje uszy! :(")
 ```
@@ -594,14 +609,14 @@ else:
 Python zbada każdy warunek i wyświetli:
 
     $ python3 python_intro.py
-    Idealnie, moge uslyszec wszystkie detale
+    Idealnie, mogę usłyszeć wszystkie detale
 
 
 ### Podsumowanie
 
 W ostatnich trzech ćwiczeniach nauczyłaś się:
 
-*   **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
+*   **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and` i `or`
 *   **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
 *   **zapisywać pliki** - przechowywać kod w plikach, co pozwala nam uruchamiać bardziej rozbudowane programy.
 *   **if...elif...else** - wyrażenia, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
@@ -639,7 +654,7 @@ To nie było trudne! Zbudujmy naszą pierwszą funkcję z parametrami. Posłuży
 def hej(imie):
 ```
 
-Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `name`:
+Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
 
 ```python
 def hej(imie):
@@ -712,7 +727,7 @@ Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
 ## Pętle
 
-To już ostatnia cześć. Prawda, że szybko poszło? :)
+To już ostatnia część. Prawda, że szybko poszło? :)
 
 Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
 
@@ -728,7 +743,7 @@ Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hej`, zatem u�
 for imie in dziewczyny:
 ```
 
-Wyrażenie for zachowuje się podobnie jak if, a więc kod pod nimi musi być wcięty 4 spacjami.
+Wyrażenie `for` zachowuje się podobnie jak `if`, a więc kod pod nimi musi być wcięty 4 spacjami.
 
 Oto kompletny kod, który umieścimy w pliku:
 
@@ -783,7 +798,7 @@ Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej prze
 
 To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
 
-Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom zanim przejdziesz do kolejnego rozdziału. :)
+Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom, zanim przejdziesz do kolejnego rozdziału. :)
 
 ![Babeczka][3]
 

@@ -44,6 +44,6 @@ Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours
 
   * [Introduction à la ligne de commande](../intro_to_command_line/README.md)
 
-  * [Introduction à Python](../intro_to_command_line/README.md)
+  * [Introduction à Python](../python_introduction/README.md)
 
   * [Qu'est-ce que Django?](../django/README.md)

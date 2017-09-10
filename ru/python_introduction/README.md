@@ -477,17 +477,17 @@ print('Hello, Django girls!')
 
 Для Mac команда будет выглядеть так:
 
-    $ cd /Users/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 Для Linux (слово "Desktop" может быть переведено на твой язык, например "Рабочий стол"):
 
-    $ cd /home/<your_name>/Desktop
+    $ cd ~/Desktop
     
 
 И для windows:
 
-    > cd C:\Users\<your_name>\Desktop
+    > cd %HomePath%\Desktop
     
 
 Если возникли проблемы - просто обратись за помощью.

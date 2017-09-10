@@ -30,7 +30,7 @@ And now create a `post_list.html` file (just leave it blank for now) inside the 
 
 See how your website looks now: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
@@ -107,7 +107,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
 
-Here's an example of a full template:
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html

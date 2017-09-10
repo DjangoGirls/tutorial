@@ -4,7 +4,7 @@
 
 Until now, your website was only available on your computer.  Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
 The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
@@ -30,7 +30,7 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email again ever).
+Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
@@ -49,9 +49,9 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 > **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all or your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database.  That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database.  That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modifed/staged files, the branch status, and much more. The output should be similar to the following:
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -123,7 +123,7 @@ To https://github.com/hjwp/my-first-blog.git
 Branch master set up to track remote branch master from origin.
 ```
 
-<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
+<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
 Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 
@@ -138,6 +138,8 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 ## Pulling our code down on PythonAnywhere
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+
+<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
@@ -180,17 +182,17 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.9.0
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.9
+Successfully installed django-1.11.3
 ```
 
 
@@ -202,7 +204,7 @@ Successfully installed django-1.9
 
 Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
 
-We can initialize the database on the server just like we did the one on your own computer, with `migrate` and `createsuperuser`:
+Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
@@ -219,7 +221,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, and the database is 
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
 
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
+After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
 
 > **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
 
@@ -241,14 +243,14 @@ Django works using the "WSGI protocol", a standard for serving websites using Py
 
 Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
-Delete all the contents and replace them with something like this:
+Delete all the contents and replace them with the following:
 
 {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
 ```python
 import os
 import sys
 
-path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
+path = os.path.expanduser('~/my-first-blog')
 if path not in sys.path:
     sys.path.append(path)
 
@@ -258,9 +260,6 @@ from django.core.wsgi import get_wsgi_application
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
-
-> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`.
-> **Note** In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
@@ -281,7 +280,7 @@ If you see an error when you try to visit your site, the first place to look for
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.5.
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 

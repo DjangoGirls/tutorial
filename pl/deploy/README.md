@@ -2,9 +2,9 @@
 
 > **Uwaga:** Niniejszy rozdział może być miejscami dość trudny. Bądź dzielna i przestudiuj go do końca; wdrażanie jest ważną częścią pracy nad stroną. Celowo umieściłyśmy go tutaj, aby Twój mentor był w stanie pomóc Ci przejść przez skomplikowany proces opublikowania Twojej strony w sieci. Oznacza to, że możesz wciąż ukończyć tutorial samodzielnie, jeśli zabraknie Ci czasu.
 
-Do tej pory Twoja strona była dostępna tylko na Twoim komputerze. Teraz nauczysz się, jak ją wdrożyć! Wdrożenie to inaczej opublikowanie Twojej aplikacji w internecie, dzięki czemu możesz w końcu pokazać ją innym ludziom :).
+Do tej pory Twoja strona była dostępna tylko na Twoim komputerze. Teraz nauczysz się, jak ją wdrożyć! Wdrożenie to inaczej opublikowanie Twojej aplikacji w Internecie, dzięki czemu możesz w końcu pokazać ją innym ludziom :).
 
-Jak już wiesz, strona internetowa musi znajdować się na jakimś serwerze. Istnieje wielu dostawców serwerów w internecie (tzw. firm hostingowych). Skorzystamy z takiego, którego proces wdrażania jest stosunkowo prosty: [PythonAnywhere][1]. PythonAnywhere jest darmowy dla małych aplikacji, które nie mają zbyt dużo odwiedzających, więc na początek na pewno wystarczy.
+Jak już wiesz, strona internetowa musi znajdować się na jakimś serwerze. Istnieje wielu dostawców serwerów w Internecie (tzw. firm hostingowych). Skorzystamy z takiego, którego proces wdrażania jest stosunkowo prosty: [PythonAnywhere][1]. PythonAnywhere jest darmowy dla małych aplikacji, które nie mają zbyt dużo odwiedzających, więc na początek na pewno wystarczy.
 
  [1]: https://pythonanywhere.com/
 
@@ -166,7 +166,7 @@ To polecenie ściągnie kopię twojego kodu na PythonAnywhere. By to sprawdzić,
 
 ### Tworzenie środowiska wirtualnego na PythonAnywhere
 
-Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wirtualne na PythonAnywhere. W konsoli Bash wpisz:
+Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wirtualne na PythonAnywhere. Polecania poniżej nieco się [różnią](https://www.reddit.com/r/learnpython/comments/4hsudz/pyvenv_vs_virtualenv/), od tych, które wykonałaś na swoim komputerze, ponieważ serwer na którym je wykonasz ma zainstalowane inne oprogramowanie. W konsoli Bash wpisz:
 
     $ cd my-first-blog
 
@@ -177,7 +177,7 @@ Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wir
 
     $ source myvenv/bin/activate
 
-    (mvenv) $  pip install django whitenoise
+    (myvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
@@ -195,7 +195,9 @@ Dowiemy się więcej o plikach statycznych później, kiedy będziemy zmieniać 
 
 Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Polecenie to mówi Django, by zebrał wszystkie pliki statyczne, których potrzebuje na serwerze. W tym momencie chodzi głównie o pliki, które upiększają nam panel admina.
 
-    (mvenv) $ python manage.py collectstatic
+    (myvenv) $ python manage.py collectstatic
+
+Będziemy z powyższego polecenia korzystać za każdym razem gdy dodamy nowe pliki statyczne. Przy kolejnych uruchomieniach tego polecenia, najprawdopodobniej zobaczysz poniższe ostrzeżenie:
 
     You have requested to collect static files at the destination
     location as specified in your settings:
@@ -210,11 +212,11 @@ Na tę chwilę musimy tylko uruchomić polecenie `collectstatic` na serwerze. Po
 
 Wpisz "yes" i niech hula maszyna! Czy to nie piękne, jak komputer wypluwa z siebie dłuugie strony tekstu? Ja czasami wydaję ciche dźwięki, które mi się z tym kojarzą. Pip, pip, piiiip...
 
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
     [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
+    Copying '/home/edith/my-first-blog/myvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
 
 
@@ -224,13 +226,13 @@ Oto kolejna różnica między Twoim komputerem a serwerem: serwer używa innej b
 
 Możemy zainicjować bazę danych na serwerze dokładnie w ten sam sposób, w jaki zrobiliśmy to na swoim komputerze, poleceniami `migrate` i `createsuperuser`:
 
-    (mvenv) $ python manage.py migrate
+    (myvenv) $ python manage.py migrate
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
 
 
-    (mvenv) $ python manage.py createsuperuser
+    (myvenv) $ python manage.py createsuperuser
 
 
 ## Publikowanie naszego bloga jako aplikacji internetowej
@@ -288,13 +290,52 @@ Mamy wszystko gotowe! Naciśnij duży zielony przycisk **Reload** ("Odśwież"),
 
 ## Porady dotyczące debugowania
 
-Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony. Typowe problemy to:
+Całkiem prawdopodobne, że zamiast swojej strony zobaczysz błąd.
+Pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony. 
+
+Najprawdopodobniej zobaczysz tam informację, że adres pod którym znajduje się Twoja strona nie został rozpoznany przez Twoją aplikację:
+
+    Invalid HTTP_HOST header: '<your-username>.pythonanywhere.com'. You may need to add '<your-username>.pythonanywhere.com' to ALLOWED_HOSTS.
+
+Ze względów bezpieczeństwa, Twoja aplikacja odpowiada tylko na żądania adresowane do niej (tak jak Ty nie czytasz wiadomości nieadresowanych do Ciebie, z obawy, że to oszustwo).
+Musisz pomóc jej zrozumieć, jak nazywa się jej nowy dom. Na swoim komputerze otwórz plik `settings.py` znajdujący się w katalogu `mysite`. Zobaczysz w nim powód całego zamieszania - pustą tablicę:
+
+    ALLOWED_HOSTS = []
+ 
+Teraz, kiedy masz już konto na PythonAnywhere i znasz swój adres, możesz go tu wpisać:
+
+    ALLOWED_HOSTS = ['<twoja-nazwa-użytkownika>.pythonanywhere.com']
+
+Zwróć uwagę, żeby podać swoją nazwę użytkownika na PythonAnywhere w miejsce `<twoja-nazwa-użytkownika>` oraz, żeby nie wpisać "https://" ani "/" :)
+Gdy zapiszesz zmiany w `settings.py` na swoim komputerze, trzeba wykonać jeszcze ponowne wdrożenie, aby znalazły się one na serwerze, co wymaga poniższych kroków.
+
+Najpierw upewnij się, że zmieniłaś tylko plik `settings.py`:
+
+    $ git status
+
+Następnie zapisz te zmiany w repozytorium:
+
+    $ git add --all
+    $ git commit -m 'Added my server to ALLOWED_HOSTS'
+
+Po czym "wypchnij" zmiany do GitHuba:
+
+    $ git push
+    
+Teraz przejdź do konsoli Bash w PythonAnywhere i "ściągnij" te zmiany z GitHuba:
+
+    $ cd ~/my-first-blog
+    $ git pull
+   
+Na koniec w zakładce [Web][8] kliknij w "Reload".
+
+Inne typowe problemy to:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Pominięcie jednego z kroków, które powinnyśmy zrobić w konsoli: stworzenie środowiska wirtualnego, aktywowanie go, instalacja Django, pobranie plików statycznych, migracja bazy danych.
 
-*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce "Web" -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
+*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce [Web][8] -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
 
 *   Zrobienie błędu w pliku konfiguracyjnym WSGI -- czy dobrze zapisałaś ścieżkę do katalogu my-first-blog?
 
@@ -306,8 +347,8 @@ Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w kt
 
 I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
-# Twoja strona jest w internecie!
+# Twoja strona jest w Internecie!
 
-Teraz na Twojej stronie w internecie powinny widniać słowa "Welcome to Django", dokładnie tak samo jak gdy otwierasz stronę znajdującą się na dysku lokalnym. Jeśli dodasz `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się swoim loginem i hasłem, a wtedy zobaczysz, że jesteś w stanie dodawać nowe posty na serwerze.
+Teraz na Twojej stronie w Internecie powinny widniać słowa "Welcome to Django", dokładnie tak samo jak gdy otwierasz stronę znajdującą się na dysku lokalnym. Jeśli dodasz `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się swoim loginem i hasłem, a wtedy zobaczysz, że jesteś w stanie dodawać nowe posty na serwerze.
 
-*Przybij piątkę!* Wdrażanie to jedna z najtrudniejszych i najbardziej skomplikowanych części projektowania stron internetowych. Często całemu zespołowi ludzi zajmuje to kilka dni zanim wszystko zacznie działać. Ale Tobie tak szybko udało się wdrożyć swoją stronę, jest ona w prawdziwym internecie!
+*Przybij piątkę!* Wdrażanie to jedna z najtrudniejszych i najbardziej skomplikowanych części projektowania stron internetowych. Często całemu zespołowi ludzi zajmuje to kilka dni zanim wszystko zacznie działać. Ale Tobie tak szybko udało się wdrożyć swoją stronę, jest ona w prawdziwym Internecie!

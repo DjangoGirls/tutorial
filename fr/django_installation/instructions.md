@@ -1,5 +1,5 @@
 > Note : ce chapitre est en partie inspiré d'un autre tutoriel réalisé par les Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Ce chapitre est en partie inspiré du [tutoriel django-marcador](http://django-marcador.keimlink.de/) qui est sous licence Creative Commons Attribution-ShareAlike 4.0 International License. Le tutoriel django-marcador a été créé par Markus Zapke-Gründemann et al.
 
 ## L'environnement virtuel
@@ -14,19 +14,19 @@ Dans ce tutoriel, nous allons utiliser un nouveau dossier `djangogirls` que vous
 
     mkdir djangogirls
     cd djangogirls
-    
+
 
 Nous allons créer un virtualenv appelé `myvenv`. Pour cela, nous taperons une commande qui ressemblera à :
 
     python3 -m venv myvenv
-    
+
 
 ### Windows
 
 Afin de créer un nouveau `virtualenv`, vous avez besoin d'ouvrir votre console (nous en avons déjà parlé dans un chapitre précédent. Est-ce que vous vous en souvenez ?) et tapez `C:\Python34\python -m venv myvenv`. Ça ressemblera à ça :
 
     C:\Utilisateurs\Nom\djangogirls> C:\Python34\python -m venv myvenv
-    
+
 
 `C:\Python34\python` doit être le nom du dossier où vous avez installé Python et `myvenv` doit être le nom de votre `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser !
 
@@ -35,17 +35,17 @@ Afin de créer un nouveau `virtualenv`, vous avez besoin d'ouvrir votre console 
 Pour créer un `virtualenv` sous Linux ou OS X, tapez simplement la commande `python3 -m venv myvenv`. Ça ressemblera à ça :
 
     ~/djangogirls$ python3 -m venv myvenv
-    
+
 
 `myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom, mais veillez à n'utiliser que des minuscules et à n'insérer ni espaces, ni caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser!
 
 > **NOTE:** initialiser un environnement virtuel sous Ubuntu 14.04 de cette manière donne l'erreur suivante :
-> 
+>
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
-> 
+>
 > Pour résoudre ce problème, utilisez plutôt la commande `virtualenv`.
-> 
+>
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
@@ -59,31 +59,31 @@ Les commandes listées ci-dessus permettent de créer un dossier appelé `myvenv
 Démarrez votre environnement virtuel en exécutant :
 
     C:\Utilisateurs\Nom\djangogirls> myvenv\Scripts\activate
-    
+
 
 #### Linux et OS X
 
 Démarrez votre environnement virtuel en exécutant :
 
     ~/djangogirls$ source myvenv/bin/activate
-    
+
 
 N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `virtualenv` (le cas échéant) !
 
 > **NOTE :** il arrive parfois que `source` ne soit pas disponible. Dans ce cas, vous pouvez essayer ceci :
-> 
+>
 >     ~/djangogirls$ . myvenv/bin/activate
 >     
 
 Vous saurez que votre `virtualenv` est lancé quand le prompt de votre console ressemblera à ceci :
 
     (myvenv) C:\Utilisateurs\Nom\djangogirls>
-    
+
 
 ou :
 
     (myvenv) ~/djangogirls$
-    
+
 
 Vous remarquez que le préfixe `(myvenv)` est apparu !
 
@@ -93,14 +93,14 @@ Ok, nous avons installé toutes les dépendances dont nous avions besoin. Nous a
 
 ## Installation de Django
 
-Maintenant que vous avez lancé votre `virtualenv`, vous pouvez installer Django à l'aide de `pip`. Dans votre console, tapez `pip install django~=1.9.0`. Notez bien que nous utilisons un tilde suivi du signe égal : `~=`).
+Maintenant que vous avez lancé votre `virtualenv`, vous pouvez installer Django à l'aide de `pip`. Dans votre console, tapez `pip install django~=1.11.0`. Notez bien que nous utilisons un tilde suivi du signe égal : `~=`).
 
-    (myvenv) ~$ pip install django~=1.9.0
-    Downloading/unpacking django==1.9
+    (myvenv) ~$ pip install django~=1.11.0
+    Downloading/unpacking django==1.11
     Installing collected packages: django
     Successfully installed django
     Cleaning up...
-    
+
 
 Sous Windows :
 

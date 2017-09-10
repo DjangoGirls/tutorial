@@ -4,7 +4,7 @@
 
 ## URL nedir?
 
-URL basitçe bir web adresidir. Bir web sayfasını her ziyaret ettiğinizde tarayıcınızın adres barında bir URL görürsünüz (evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.org` da bir URL'dir):
+URL basitçe bir web adresidir. Bir web sayfasını her ziyaret ettiğinizde tarayıcınızın adres barında bir URL görürsünüz (evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.com` da bir URL'dir):
 
 ![Url][1]
 
@@ -29,6 +29,7 @@ urlpatterns = [
 ]
 ```
 
+
 Gördüğünüz gibi Django bizim için bir şeyler koymuş bile.
 
 `#` ile başlayan satırlar yorum satırlarıdır - bu satırlar Python tarafından çalıştırılmayacak manasına gelir. Çok pratik, değil mi?
@@ -37,7 +38,7 @@ Geçen bölümde gittiğimiz admin URL şimdiden burda:
 
 ```python
     url(r'^admin/', include(admin.site.urls)),
-```
+```  
 
 `admin` ile başlayan her URL için Django ona denk gelen bir *view* bulur manasına gelir. Bu şekilde bir sürü admin URLlerini ekliyoruz böylece hepsi bu küçük dosyanın içinde sıkıştırılmış bir şekilde durmuyor -- bu hali daha okunabilir ve düzenli.
 
@@ -86,6 +87,7 @@ urlpatterns = [
 ]
 ```
 
+
 Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
 
 Python'da düzenli ifadeler her zaman string'in başına `r` ekleyerek yapılır. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
@@ -97,7 +99,7 @@ Python'da düzenli ifadeler her zaman string'in başına `r` ekleyerek yapılır
 ```python
 from django.conf.urls import url
 from . import views
-```
+```    
 
 Burada sadece Django'nun methodlarını ve `blog` uygulamasındaki tüm `view`leri içeri aktarıyoruz (uygulamamız henüz yok, ama birazdan o kısma da geçeceğiz!)
 
@@ -108,6 +110,7 @@ urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
 ]
 ```
+
 
 Gördüğünüz üzere, `^$` URL'sine `post_list` adında bir `view` atıyoruz. Bu düzenli ifade `^` (başlangıç) ve `$` (bitiş)'e uyan stringlerle eşleşir - yani sadece boş string'lerle eşleşir. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
@@ -123,4 +126,4 @@ Artık "It works" demiyor, di mi? Meraklanmayın, sadece bir hata sayfası, kork
 
 Sayfada gördüğünüz şey: **no attribute 'post_list'**. *post_list* size bir şey hatırlatıyor mu? Bu view'un ismi! Bu her şey yerli yerinde sadece henüz *view* yok manasına geliyor. Hiç merak etmeyin, oraya geleceğiz.
 
-> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/urls/
