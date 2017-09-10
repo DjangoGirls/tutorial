@@ -93,13 +93,15 @@ Ok, nós temos todas as dependências importantes no lugar. Finalmente podemos i
 
 ## Instalando o Django
 
-Agora que você tem a sua `virtualenv` iniciado, você pode instalar Django usando `pip`. No console, execute `pip install django==1.8.5` (Perceba que usamos um duplo sinal de igual: `==`).
+Agora que você tem o seu `virtualenv` iniciado, você pode instalar Django e o Whitenoise usando `pip` e guardaremos as versões deles num arquivo requirements.txt para uso posterior durante a implantação, mais adiante falaremos mais sobre o Whitenoise. No console, execute `pip install django==1.8.5 whitenoise==2.0` \(Perceba que usamos um duplo sinal de igual: `==`\). Após isso, execute `pip freeze > requirements.txt` para congelar as versões deles e garantir que no futuro conseguiremos rodar nosso projeto com as versões certas das coisas \(Perceba que usamos um sinal de maior: `>`\).
 
-    (myvenv) ~$ pip install django==1.8.5
-    Downloading/unpacking django==1.8.5
-    Installing collected packages: django
-    Successfully installed django
+    (myvenv) ~$ pip install django==1.8.5 whitenoise==2.0
+    Downloading/unpacking django==1.8.5 whitenoise==2.0
+    Collecting 
+    Installing collected packages: django, whitenoise
     Cleaning up...
+
+    (myvenv) ~$ pip freeze > requirements.txt
     
 
 no Windows

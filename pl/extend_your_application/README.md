@@ -34,10 +34,6 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Czas by wyjaśnić co oznacza tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje za nas adres strony.{% endraw %}
-
-`blog.views.post_detail` to ścieżka do *widoku* `post_detail`, który chcemy stworzyć. Zwróć uwagę: `blog` to nazwa Twojej aplikacji (folder `blog`), `views` pochodzi od nazwy pliku `views.py`, zaś ostatnia część - `post_detail` - to nazwa naszego *widoku*.
-
 Teraz, gdy wejdziemy na adres http://127.0.0.1:8000/ ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani *widoku* dla `post_detail`). Będzie to wyglądać tak:
 
 ![Błąd NoReverseMatch][1]
@@ -67,6 +63,12 @@ Ten fragment `^post/(?P<pk>[0-9]+)/$` wygląda trochę przerażająco, ale spoko
 To oznacza, że gdy wpiszesz w przeglądarce adres `http://127.0.0.1:8000/post/5/`, Django zrozumie, że potrzebujesz *widoku* zwanego `post_detail` i przekaże temu *widokowi* informację, że `pk` jest równe `5`.
 
 `pk` to skrót od `primary key` (ang. klucz główny). Nazwa ta jest często używana w projektach Django. Ale możesz nazwać tę zmienną jak Ci się żywnie podoba (tylko pamiętaj: same małe litery i znak `_` zamiast spacji!). Dla przykładu, zamiast `(?P<pk>[0-9]+)` możemy mieć zmienną `post_id`. Wówczas ten fragment wyglądałby tak: `(?P<post_id>[0-9]+)`.
+
+{% raw %}Czas by wyjaśnić co oznaczało tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. `url` to taki tag, który generuje za nas adres strony.
+`'post_detail'` to ten sam napis, którego użyliśmy w `urls.py` jako `name`:
+      url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'), 
+Dzięki temu Django wie, z którego wzorca zbudować adres URL. Wie zatem, że chodzi nam o coś co zaczyna się od `"post/"` potem ma liczbę `pk` a na końcu `"/"`. Jedyne czego nie wie, to jaką wartość ma mieć `pk`? Właśnie po to podajemy `pk=post.pk`, co oznacza, że `pk` ma być równe kluczowi głównemu naszego posta.
+{% endraw %}
 
 OK, dodałyśmy nowy wzorzec URL do `blog/urls.py`! Odświeżmy stronę: http://127.0.0.1:8000/ Bum! Znowu błąd! Tak jak myślałyśmy!
 

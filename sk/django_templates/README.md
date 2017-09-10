@@ -27,7 +27,7 @@ Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Nahraď 
 Ako vidíš, dostali sme len toto:
 
 ```
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! V Django šablóne ich urobíš takto:

@@ -35,4 +35,4 @@ Yine hata! Okuyup anlamaya çalışalım:
 
 Bu hatayı düzeltmek kolay: *TemplateDoesNotExist* (Template bulunamadı). Bu hatayı template oluşturarak gelecek bölümde düzeltelim!
 
-> Django view hakkında daha fazla bilgi edinmek için dokümantasyonları okuyun: https://docs.djangoproject.com/en/1.10/topics/http/views/
+> Django view hakkında daha fazla bilgi edinmek için dokümantasyonları okuyun: https://docs.djangoproject.com/en/1.11/topics/http/views/

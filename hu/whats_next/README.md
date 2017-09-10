@@ -30,11 +30,11 @@ Később megpróbálkozhatsz a lenti listában lévő anyagokkal is. Ezeket mind
 - [Getting Started With Django video lessons][10]
 - [Two Scoops of Django: Best Practices for Django 1.8 book][11]
 
- [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
+ [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
  [6]: https://www.codecademy.com/en/tracks/python
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8

@@ -39,11 +39,13 @@ A `django-admin.py` egy script, ami könyvtárakat és fájlokat hoz létre neke
             __init__.py
     
 
+> **Megjegyzés**: A könyvtárszerkezetedben a `venv` könyvtár is meg fog jelenni, amelyet nemrég hoztunk létre.
+
 A `manage.py` egy script, ami az oldal menedzselésében segít. Segítségével elindíthatsz egy webszervert a saját gépeden, anélkül, hogy bármit kellene installálnod, és más dolgokra is jó.
 
 A `settings.py` tartalmazza a weboldalat konfigurációját (beállításait),.
 
-Emlékszel, mit olvastál a postásról, aki azt próbálja kitalálni, hova vigye a levelet? Az `urls.py` fájl tartalmazza a mintákat, amiket az `urlresolver` használ..
+Emlékszel, mit olvastál a postásról, aki azt próbálja kitalálni, hova vigye a levelet? Az `urls.py` fájl tartalmazza a mintákat, amiket az `urlresolver` használ.
 
 Most ne foglalkozzunk a többi fájllal, mert azokat nem fogjuk módosítani. Az egyetlen dolog, amit ne felejts el, hogy ne töröld ki őket véletlenül!
 
@@ -91,7 +93,7 @@ Ez már be van állítva a `mysite/settings.py` fájlodban:
     }
 ```
 
-Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot a konzolban: `python manage.py migrate` (fontos, hogy a `djangogirls` könyvtárban legyél, ami tartalmazza a `djangogirls` fájlt). Ha minden jól megy, valami ilyesmit kell látnod:
+Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot a konzolban: `python manage.py migrate` (fontos, hogy a `djangogirls` könyvtárban legyél, ami tartalmazza a `manage.py` fájlt). Ha minden jól megy, valami ilyesmit kell látnod:
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -117,6 +119,8 @@ Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot 
 
 Készen is vagyunk! Itt az ideje, hogy elindítsd a webszervert, és meglásd, hogy működik-e.
 
+## Webszerver elindítása
+
 Ehhez abban a könyvtárban kell lenned, ahol a `manage.py` fájl van (a `djangogirls` könyvtárban). A konzolban a következő paranccsal tudod elindítani a szervert: `python manage.py runserver`.
 
     (myvenv) ~/djangogirls$ python manage.py runserver
@@ -132,12 +136,16 @@ Most nincs más dolgod, mint ellenőrizni, hogy fut-e a weboldalad. Nyisd meg a 
     http://127.0.0.1:8000/
     
 
-A webszerver átvette az irányítást a parancssorod fölött, egészen addig, amíg le nem állítod. Hogy újabb parancsokat írhass be, amíg fut a szerver, új terminálablakot kell nyitnod, és újraaktiválni a virtuális környezetedet. Hogy leállítsd a szervert, lépj vissza az ablakba, ahol fut, és nyomd meg a CTRL + C (Control és C billentyű egyszerre) billentyűkombinációt. (Windowson lehet, hogy a Ctrl+Break fog működni).
-
 Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver segítségével! Hát nem fantasztikus?
 
 ![It worked!][3]
 
  [3]: images/it_worked2.png
+
+A webszerver átvette az irányítást a parancssorod fölött, egészen addig, amíg le nem állítod. A terminálba tudsz gépelni, de nem fog lefuttatni új parancsokat. Ez azért van, mert a webszervernek folyamatosan kell futnia, hogy a beérkező lekérdezéseket (request-eket) fogadja.
+
+> Webszerverek működését a  <b>Hogy működik az Internet?</b> fejezetben tekintettük át.
+
+Hogy újabb parancsokat írhass be, amíg fut a szerver, új terminálablakot kell nyitnod, és újraaktiválni a virtuális környezetedet. Hogy leállítsd a szervert, lépj vissza az ablakba, ahol fut, és nyomd meg a CTRL + C (Control és C billentyű egyszerre) billentyűkombinációt. (Windowson lehet, hogy a Ctrl+Break fog működni).
 
 Készen állsz a következő lépésre? Itt az ideje, hogy létrehozzunk némi tartalmat!

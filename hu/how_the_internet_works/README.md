@@ -6,7 +6,7 @@ Biztosan minden nap internetezel. Tudod, igazából mi történik, mikor beírod
 
 Az első dolog, amit fontos megérteni, hogy egy weboldal nem más, mint egy csomó fájl egy merevlemezre mentve. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
 
-Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először a HTML-t, de ne aggódj a böngésződ (Chrome, Safari, Firefox, stb.) imádja. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
+Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először a HTML-t, de ne aggódj, a böngésződ (Chrome, Safari, Firefox, stb.) imádja. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
 
 Mint minden fájlt, a HTML-t is merevlemezen kell tárolni. Az Internethez speciális, erős számítógépeket használunk, a *szervereket*. Ezekhez a gépekhez nem tartozik képernyő, egér vagy billentyűzet, mert a fő feladatuk az adatok tárolása és szolgáltatása. Ezért hívjuk őket *szervernek*, vagyis kiszolgálónak -- ők *szolgálják ki* neked az adatokat.
 

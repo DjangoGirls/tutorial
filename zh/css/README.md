@@ -169,7 +169,7 @@ Django会自动找到你应用文件夹目录下所有名字叫“static”的�
 ```
 
 
-这行将从谷歌的字体 （https://www.google.com/fonts） 中导入称为 *龙虾*的字体 。
+这行将从谷歌的字体 （ https://www.google.com/fonts ） 中导入称为 *龙虾*的字体 。
 
 现在添加一行 `font-family: 'Lobster';` 到CSS文件 `blog/static/css/blog.css` 的 `h1 a` 声明块中(花括弧 `{` 与 `}` 之间的代码)，然后刷新页面：
 
