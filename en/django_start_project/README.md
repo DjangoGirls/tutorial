@@ -113,6 +113,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
+> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
+
 ## Set up a database
 
 There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
