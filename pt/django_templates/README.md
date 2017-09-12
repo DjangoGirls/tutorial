@@ -28,7 +28,7 @@ Como você pode ver, tudo que temos é:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 Isto significa que o Django a entende como uma lista de objetos. Lembra da __Introdução ao Python__ de podemos exibir listas? Sim, com os loops! Em um template do Django, fazemos isso da seguinte maneira:

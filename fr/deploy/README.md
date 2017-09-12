@@ -181,10 +181,10 @@ Tout comme sur votre ordinateur, vous allez devoir créer un environnement virtu
     $ source myvenv/bin/activate
 
 
-    (mvenv) $  pip install django~=1.9.0
+    (mvenv) $  pip install django~=1.11.0
     Collecting django
     [...]
-    Successfully installed django-1.9
+    Successfully installed django-1.11
 
 
 > **Note** : L'étape `pip install` peut prendre quelques minutes. Patience, patience ! Cependant, si cela prend plus de 5 minutes, c'est que quelque chose ne va pas. N'hésitez pas à solliciter votre coach.

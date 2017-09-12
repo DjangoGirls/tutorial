@@ -10,18 +10,18 @@ View'ler `views.py` doyasına yazılır. Şimdi, `blog/views.py` dosyasına *vie
 
 Dosyayı açıp inceleyelim:
 
-```python 
+```python
 from django.shortcuts import render
 
 # View'lar buraya yazılacak.
-```
+```    
 
 Henüz fazla bir şey görünmüyor. En basitinden *view* şöyle olabilir.
 
-```python 
+```python
 def post_list(request):     
     return render(request, 'blog/post_list.html', {})
-```
+```    
 
 Burada, `request (istek)` i alıp template `blog/post_list.html` ile görüntüleyen `render` methodunu `döndüren` `post_list` isimli bir method yarattık.
 
@@ -35,4 +35,4 @@ Yine hata! Okuyup anlamaya çalışalım:
 
 Bu hatayı düzeltmek kolay: *TemplateDoesNotExist* (Template bulunamadı). Bu hatayı template oluşturarak gelecek bölümde düzeltelim!
 
-> Django view hakkında daha fazla bilgi edinmek için dokümantasyonları okuyun: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Django view hakkında daha fazla bilgi edinmek için dokümantasyonları okuyun: https://docs.djangoproject.com/en/1.11/topics/http/views/

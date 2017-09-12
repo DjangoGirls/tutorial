@@ -1,4 +1,4 @@
-# Django installation
+# Instalação do Django
 
 > **Nota** Se você estiver usando um Chromebook, pule esse capítulo e certifique-se de seguir as instruções para 
 [Configuração do Chromebook](../chromebook_setup/README.md)

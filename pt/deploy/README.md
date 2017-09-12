@@ -1,14 +1,14 @@
 # Implantação!
 
-> **Nota** O capítulo seguinte pode ser, às vezes, um pouco difícil de percorrer. Persista e termine-o; Implantação é uma parte importante do processo de desenvolvimento de website. Este capítulo está localizado no meio do tutorial para que seu tutor possa lhe ajudar com o processo ligeiramente complexo de colocar seu site online. Isto significa que você ainda pode terminar o tutorial por conta própria se você não tiver tempo.
+> **Nota** O capítulo seguinte pode ser, às vezes, um pouco difícil de percorrer. Persista e termine-o; Implantação é uma parte importante do processo de desenvolvimento de website. Este capítulo está localizado no meio do tutorial para que sua tutora possa lhe ajudar com o processo ligeiramente complexo de colocar seu site online. Isto significa que você ainda pode terminar o tutorial por conta própria se você não tiver tempo.
 
 Até agora, seu site só estava disponível no seu computador. Agora você vai aprender como publicar ele na internet! A implantação é o processo de publicação do seu aplicativo na Internet de tal forma que as pessoas possam, finalmente, ver seu aplicativo :).
 
 Como você aprendeu, um website precisa estar localizado num servidor. Existem muitos provedores, mas iremos utilizar o que tem um processo de deploy relativamente simples: [PythonAnywhere](https://pythonanywhere.com/). PythonAnywhere é gratuito para aplicações pequenas que não possuem muitos visitantes, então será suficiente para você por enquanto.
 
- O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora você também!
+O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas muitas das pessoas que programam possuem uma conta no GitHub atualmente e agora você também!
 
-Esses três locais serão importantes para você.  Seu computador local será o local aonde você faz o desenvolvimento e testes.  Quando vocÊ estiver satisfeito com as mudanças, você colocará uma cópia de seu programa no GitHub.  Seu website estará no PythonAnywhere e você irá atualizá-lo pegando uma nova cópia de seu código a partir do GitHub.
+Esses três locais serão importantes para você. Seu computador local será o local aonde você faz o desenvolvimento e testes. Quando você estiver satisfeita com as mudanças, você colocará uma cópia de seu programa no GitHub. Seu website estará no PythonAnywhere e você irá atualizá-lo pegando uma nova cópia de seu código a partir do GitHub.
 
 # Git
 
@@ -187,23 +187,21 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.9.0
-Collecting django
+(myvenv) $ pip install django~=1.11.0
+Collecting django~=1.11.0
 [...]
-Successfully installed django-1.9
+Successfully installed django-1.11.5
 ```
 
 > **Nota** O passo `pip install` pode levar alguns minutos.  Paciência, paciência! Mas se levar mais de cinco minutos, algo
 está errado. Pergunte a sua treinadora.
-
-<!--TODO: think about using requirements.txt instead of pip install.-->
 
 ### Criando o banco de dados em PythonAnywhere
 
@@ -245,7 +243,7 @@ Na seção "Virtualenv", clique no texto vermelho que diz "Enter the path to a v
 
 Django funciona usando o "WSGI protocol", um padrão para servir sites usando Python, que tem suporte na PythonAnywhere. A maneira que configuramos PythonAnywhere para reconhecer nosso blog Django é editando um arquivo de configuração do WSGI.
 
-Clique no link "WSGI configuration file" (na seção "Code" perto do topo da página -- ele será nomeado como algo como `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), e você será levado para um editor.
+Clique no link "WSGI configuration file" (na seção "Code" perto do topo da página - -ele vai ser nomeado algo como `/var/www/<your-username>_pythonanywhere_com_wsgi.py`), e você será levada para um editor.
 
 Apague todo o conteúdo atual e substitua com algo parecido com isto:
 
@@ -297,4 +295,4 @@ A página padrão para seu site deve dizer "Bem-vindo ao Django", como acontece 
 
 Uma vez que você tenha algumas postagens criadas, você pode voltar para sua configuração local (não no PythonAnywhere). A partir de agora vocÊ deve trabalhar em sua configuração local para fazer mudanças. Esse é o fluxo de trabalho comun no desenvolvimento web – fazer alterações localmente, enviar essas mudanças para o GitHub, e mandar suas alterações para o seeu servidor Web de produção. Isso perite a você trabalhar e experimentar sem quebrar seu site Web que está online. Muito legal, não é?
 
-Dë em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva dias antes de fazer funcionar. Mas você tem seu site publicado, na Internet, simples assim!
+Dê em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva dias antes de fazer funcionar. Mas você tem seu site publicado, na Internet, simples assim!

@@ -1,10 +1,10 @@
 # Introdução à linha de comando
 
-É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos :)
+É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos! :)
 
-**Deixe-nos apresentá-lo ao seu primeiro novo amigo: a linha de comando!**
+**Deixe-nos apresentá-lo a sua primeira nova amiga: a linha de comando!**
 
-As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas na verdade, é apenas um prompt esperando por comandos seus.
+As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas, na verdade, é apenas um prompt esperando por comandos seus.
 
 ## O que é uma linha de comando?
 
@@ -16,33 +16,48 @@ Para começar alguns experimentos, precisamos abrir a nossa interface de linha d
 
 ### Windows
 
+<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 Vá em Iniciar → Todos os Programas → Acessórios → Prompt de comando.
+<!--endsec-->
 
 ### Mac OS X
 
+<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
 Applications → Utilities → Terminal.
+<!--endsec-->
 
 ### Linux
 
-Provavelmente você vai achar em Aplicações → Acessórios → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google :)
+<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
+Provavelmente você vai achar em Applications → Accessories → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google :)
+<!--endsec-->
 
 ## Prompt
 
 Agora você deve agora estar vendo uma janela branca ou preta que está à espera de seus comandos.
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 Se você estiver em Mac ou num Linux, você provavelmente verá um `$`, como este:
+{% filename %}command-line{% endfilename %}
+```
+$
+```
+<!--endsec-->
 
-    $
-    
+<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 No Windows, é um sinal de `>`, como este:
 
-    >
+{% filename %}command-line{% endfilename %}
+```
+>
+```
+<!--endsec-->
     
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você :)
 
-> Apenas uma pequena nota: no seu caso, talvez seja algo como `C:\Users\ola>` ou `Olas-MacBook Air: ~ ola$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
+> Apenas uma pequena nota: no seu caso, talvez exista algo como `C:\Users\seunome>` ou `SeuNome-MacBook Air: ~ seunome$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
 
 A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de comando, ou para abreviar, prompt.  Ele está a esperando você digitar alguma coisa.
 
@@ -50,23 +65,41 @@ A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de com
 
 Vamos começar com algo simples. Digite o seguinte comando:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+```
+<!--endsec-->
 
-    $ whoami
-    
+<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+{% filename %}command-line{% endfilename %}
+```
+> whoami
+```
+<!--endsec-->
 
-Windows: 
+Depois aperte o `Enter`. Esse é o nosso resultado:
 
-    > whoami
-    
-
-Depois aperta o `Enter`. Essa é o nosso resultado:
-
-    $ whoami
-    olasitarska
-    
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+seunome
+```
 
 Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é?:)
+=======
+<!--endsec-->
+
+Depois tecle Enter. Essa é nossa saída:
+
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+seunome
+```
+
+Como você pode ver, o computador só apresentou seu nome de usuária. Elegante, né?:)
 
 > Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais facilmente dessa forma!
 
@@ -78,21 +111,35 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando e aperte o `enter`:
 
-OS X e Linux:
 
-    $ pwd
-    /Users/olasitarska
-    
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/seunome
+```
+
+> Nota: 'pwd' quer dizer 'print working directory' (exiba diretório que estamos trabalhando).
+
+<!--endsec-->
 
 Windows:
 
-    > cd
-    C:\Users\olasitarska
-    
+<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\seunome
+```
+> Nota: 'cd' vem de 'change directory' (mude de diretório). Se seu Windows tem powershell, você pode usar pwd como no Linux ou Mac OS X.
+
+<!--endsec-->
 
 Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez que você abre a linha de comando você já começa na pasta Home.
 
-> Nota: 'pwd' significa 'print working directory'.
 
 * * *
 
@@ -100,56 +147,71 @@ Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez qu
 
 Então o que tem nele? Seria legal descobrir. Vamos ver:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
-    
+{% filename %}command-line{% endfilename %}
+```
+$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
-    
-
-* * *
+{% filename %}command-line{% endfilename %}
+```
+> dir
+ Directory of C:\Users\seunome
+05/08/2014 07:28 PM <DIR>      Applications
+05/08/2014 07:28 PM <DIR>      Desktop
+05/08/2014 07:28 PM <DIR>      Downloads
+05/08/2014 07:28 PM <DIR>      Music
+...
+```
+<!--endsec-->* * *
 
 ### Entrar em outra pasta
 
 Talvez a gente queira entrar na nossa pasta Desktop?
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-    $ cd Desktop
-    
+{% filename %}command-line{% endfilename %}
+```
+$ cd Desktop
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-    > cd Desktop
-    
+
+{% filename %}command-line{% endfilename %}
+```
+> cd Desktop
+```
+<!--endsec-->
 
 Veja se realmente entramos na pasta:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-OS X e Linux:
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/seunome/Desktop
+```
+<!--endsec-->
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
-
-Windows:
-
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\seunome\Desktop
+```
+<!--endsec-->    
 
 Aqui está!
 
@@ -161,17 +223,25 @@ Aqui está!
 
 Que tal criar um diretório Django Girls na sua área de trabalho? Você pode fazer assim:
 
-OS X e Linux:
 
-    $ mkdir djangogirls
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```
+$ mkdir djangogirls
+```
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+
+{% filename %}command-line{% endfilename %}
+```
+> mkdir djangogirls
+```
+<!--endsec-->
     
-
-Windows:
-
-    > mkdir djangogirls
-    
-
-Este comando vai criar uma pasta com o nome `djangogirls` no seu desktop. Você pode verificar se ele está lá, só de olhar na sua área de trabalho ou executando o comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
+Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ela está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
@@ -183,21 +253,27 @@ Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de 
 
 #### Solução:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-    $ cd djangogirls
-    $ mkdir teste
-    $ ls
-    teste
-    
+{% filename %}command-line{% endfilename %}
+```
+$ cd djangogirls
+$ mkdir test
+$ ls
+test
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-    > cd djangogirls
-    > mkdir teste
-    > dir
-    05/08/2014 07:28 PM <DIR>      teste
-    
+{% filename %}command-line{% endfilename %}
+```
+> cd djangogirls
+> mkdir teste
+> dir
+05/08/2014 07:28 PM <DIR>      teste
+```
+<!--endsec-->    
 
 Parabéns! :)
 
@@ -209,72 +285,106 @@ Não queremos deixar uma bagunça, então vamos remover tudo o que fizemos até 
 
 Primeiro precisamos voltar para a pasta Desktop:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-    $ cd ..
-    
+{% filename %}command-line{% endfilename %}
+```
+$ cd ..
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
 
-    > cd ..
-    
+
+{% filename %}command-line{% endfilename %}
+```
+> cd ..
+```
+<!--endsec-->
 
 Usando `..` com o comando `cd` nós mudaremos do diretório atual para o diretório pai (que significa o diretório que contém o diretório atual).
 
 Veja onde você está:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+{% filename %}command-line{% endfilename %}
+```
+$ pwd
+/Users/seunome/Desktop
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+
+{% filename %}command-line{% endfilename %}
+```
+> cd
+C:\Users\seunome\Desktop
+```
+<!--endsec-->
 
 Agora é hora de excluir o diretório `djangogirls`.
 
 > **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irrecuperável, significando *Arquivos excluídos vão embora para sempre*! Então, tenha cuidado com este comando.
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-    $ rm -r djangogirls
-    
+{% filename %}command-line{% endfilename %}
+```
+$ rm -r djangogirls
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
 
-    > rmdir /S djangogirls
-    djangogirls, Tem certeza <S/N>? S
-    
 
+{% filename %}command-line{% endfilename %}
+```
+> rmdir /S djangogirls
+djangogirls, Are you sure <Y/N>? Y
+```
+<!--endsec-->
 Pronto! Para ter certeza que a pasta foi realmente excluída, vamos checar:
 
 OS X e Linux:
 
-    $ ls
-    
+{% filename %}command-line{% endfilename %}
+```
+$ ls
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-    > dir
-    
+
+{% filename %}command-line{% endfilename %}
+```
+> dir
+```
+<!--endsec-->
 
 ### Saindo
 
 Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo? :)
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-    $ exit
-    
+{% filename %}command-line{% endfilename %}
+```
+$ exit
+```
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
 
-    > exit
-    
+
+{% filename %}command-line{% endfilename %}
+```
+> exit
+```
+<!--endsec-->    
 
 Legal, não é? :)
 
@@ -294,10 +404,8 @@ Aqui vai uma lista de alguns comandos úteis:
 
 Estes são apenas alguns dos poucos comandos que você pode executar em sua linha de comando, mas você não vai usar mais nada do que isto hoje.
 
-Se você estiver curioso, [ss64.com][1] contém uma referência completa de comandos para todos os sistemas operacionais.
+Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
- [1]: http://ss64.com
-
-## Pronto?
+## Pronta?
 
 Vamos mergulhar no Python!

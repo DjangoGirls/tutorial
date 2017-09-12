@@ -58,26 +58,26 @@ Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> "Ola"
-'Ola'
+>>> "Ana"
+'Ana'
 ```
 
 Você acabou de criar sua primeira string! String é uma sequência de caracteres que pode ser processada pelo computador. A string sempre precisa iniciar e terminar com o mesmo caractere. Este pode ser aspas duplas(`"`) ou simples(`'`) - elas dizem ao Python que o que está dentro delas é uma string.
 
-Strings podem ser concatenadas. Tente isto:
+Strings podem ser concatenadas (colocadas juntas). Tente isto:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> "Hi there " + "Ola"
-'Hi there Ola'
+>>> "Oi " + "Ana"
+'Oi Ana'
 ```
 
 Você também pode multiplicar strings usando um número:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> "Ola" * 3
-'OlaOlaOla'
+>>> "Ana" * 3
+'AnaAnaAna'
 ```
 
 Se você precisa colocar um apóstrofo dentro de sua string, existem duas maneiras de fazer.
@@ -89,6 +89,7 @@ Usando aspas duplas:
 >>> "Runnin' down the hill"
 "Runnin' down the hill"
 ```
+
 
 ou escapando o apóstrofo com uma barra invertida (`\`):
 
@@ -102,21 +103,22 @@ Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> "Ola".upper()
-'OLA'
+>>> "Ana".upper()
+'ANA'
 ```
 
-Você acabou de usar o __método__ `upper` na sua string! Um método (como `upper()`) é um conjunto de instruções que o Python realiza em um determinado objeto (`"Ola"`), sempre que você chamar por ele.
+Você acabou de usar o __método__ `upper` na sua string! Um método (como `upper()`) é um conjunto de instruções que o Python realiza em um determinado objeto (`"Ana"`), sempre que você chamar por ele.
 
-Se você quer saber o número de letras do seu nome, existe uma __função__ para isso também!
+Se você quer saber o número de letras do seu nome, existe um __método__ para isso também!
+
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> len("Ola")
+>>> len("Ana")
 3
 ```
 
-Se perguntando porque algumas vezes você chama funções com um `.` no fim de uma string (como `"Ola".upper()`) e algumas vezes você primeiro chama a função colocando a string nos parênteses? Bem, em alguns casos, funções pertencem a objetos, como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
+Se perguntando porque algumas vezes você chama métodos com um `.` no fim de uma string (como `"Ana".upper()`) e algumas vezes você primeiro chama a função colocando a string nos parênteses? Bem, em alguns casos, métodos pertencem a objetos, como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, métodos não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ana"` como um parâmetro para a função `len`.
 
 ### Sumário
 
@@ -125,7 +127,7 @@ OK, chega de strings. Até agora você aprendeu sobre:
 *   **o prompt** - digitar comandos (códigos) no interpretador Python resulta em respostas em Python
 *   **números e strings** - no Python, números são usados para matemática e strings para objetos de texto
 *   **operadores** - como `+` e `\*`, combinam valores para produzir um novo valor
-*   **funções** - como `upper()` e `len()`, executam ações nos objetos.
+*   **métodos** - como `upper()` e `len()`, executam ações nos objetos.
 
 Isso é o básico sobre todas as linguagens de programação que você for aprender. Pronto para algo mais difícil? Apostamos que sim!
 
@@ -165,34 +167,33 @@ Digamos que queremos criar uma nova variável chamada `nome`:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> name = "Ola"
+>>> nome = "Ana"
 ```
 
-Vê? É fácil! É só fazer: nome igual a Ola.
+Vê? É simples! É só fazer: nome igual a Ana.
 
 Como você percebeu, seu programa não retornou nada como fez anteriormente. Então como sabemos que a variável realmente existe? Simplesmente digite `nome` e tecle `Enter`:
 
-
 {% filename %}command-line{% endfilename %}
 ```python
->>> name
-'Ola'
+>>> nome
+'Ana'
 ```
 
 Yippee! Sua primeira variável! :) Você sempre pode mudar o seu valor:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> name = "Sonja"
->>> name
+>>> nome = "Sonja"
+>>> nome
 'Sonja'
 ```
 
-Você pode usá-la também em funções:
+Você pode usá-la também em métodos:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> len(name)
+>>> len(nome)
 5
 ```
 
@@ -350,22 +351,21 @@ Agora, tente escrever o seguinte comando (tente substituir com as suas próprias
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> participante = {'nome': 'Ana', 'pais': 'Polonia', 'numeros_favoritos': [7, 42, 92]}
 ```  
 
-Com esse comando, você acabou de criar uma variável chamada `participant` com três pares de chave-valor:
+Com esse comando, você acabou de criar uma variável chamada `participante` com três pares de chave-valor:
 
-- A chave `name` aponta para o valor `'Ola'` (um objeto `string`),
-- `country` aponta para `'Poland'` (outra `string`),
-- `favorite_numbers` apontam para `[7, 42, 92]` (uma `list` com três números nela).
+- A chave `name` aponta para o valor `'Ana'` (um objeto `string`),
+- `pais` aponta para `'Polonia'` (outra `string`),
+- `numeros_favoritos` apontam para `[7, 42, 92]` (uma `list` com três números nela).
 
 Você pode checar o conteúdo de chaves individuais com a sintaxe:
 
-{% filename %}command-line{% endfilename %}
-```python
->>> print(participant['name'])
-Ola
-```
+```  
+>>> print(participante['nome'])
+Ana
+```      
 
 Veja, é similar a uma lista. Mas você não precisa lembrar o índice - apenas o nome.
 
@@ -373,10 +373,10 @@ O que acontece se pedirmos ao Python o valor de uma chave que não existe? Você
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant['age']
+>>> participant['idade']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-KeyError: 'age'
+KeyError: 'idade'
 ```
 
 Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe nesse dicionário.
@@ -390,14 +390,14 @@ Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depo
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant['favorite_language'] = 'Python'
+>>> participante['linguagem_favorita'] = 'Python'
 ```
 
 Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionario. Vá em frente e digite o comando:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> len(participant)
+>>> len(participante)
 4
 ```
 
@@ -407,9 +407,9 @@ Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, s
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant.pop('favorite_numbers')
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> participante.pop('numeros_favoritos')
+>>> participante
+{'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 ```
 
 Como você pode ver no retorno, o par chave-valor correspondente à chave 'numeros_favoritos' foi excluído.
@@ -418,9 +418,9 @@ Além disso você pode mudar o valor associado com uma chave já criada no dicio
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant['country'] = 'Germany'
+>>> participante['pais'] = 'Alemanha'
 >>> participant
-{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+{'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 ```
 
 Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
@@ -506,6 +506,7 @@ TypeError: unorderable types: int() > str()
 ```
 
 Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str`).
+
 Em vez disso, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados entre si.
 
 ##Booleano
@@ -590,19 +591,30 @@ Agora temos de salvar o arquivo e dê um nome descritivo. Vamos chamar o arquivo
 Com o arquivo salvo, é hora de executá-lo! Usando as habilidades que você aprendeu na seção de linha de comando, use o terminal
 **change directories - cd** para ir para o desktop.
 
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
 Em um Mac, o comando será parecido com isto:
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
+<!--endsec-->
 
-No Linux, será assim (a palavra "Desktop" pode estar traduzida para seu idioma):
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+No Linux, será assim (a palavra "Desktop" pode estar traduzida para seu "Área de Trabalho"):
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/Desktop
-```   
+```
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
 E no windows, vai ser assim:
 
@@ -610,8 +622,9 @@ E no windows, vai ser assim:
 ```
 > cd %HomePath%\Desktop
 ```
+<!--endsec-->
 
-Se você ficar confuso, é só pedir ajuda.
+Se você ficar confusa, é só pedir ajuda.
 
 Em seguida, use o Python para executar o código do arquivo assim:
 
@@ -621,7 +634,7 @@ $ python3 python_intro.py
 Hello, Django girls!
 ```
 
-Nota: no Windows 'python3' não é reconhecido como um comando. Ao invéz disso, use 'python' para executar o arquivo:
+Nota: no Windows 'python3' não é reconhecido como um comando. Em vez disso, use 'python' para executar o arquivo:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -700,8 +713,8 @@ Se 2 fosse um número maior que 5, então o segundo comando seria executado. Sim
 {% filename %}python_intro.py{% endfilename %}
 ```python
 name = 'Sonja'
-if name == 'Ola':
-    print('Hey Ola!')
+if name == 'Ana':
+    print('Hey Ana!')
 elif name == 'Sonja':
     print('Hey Sonja!')
 else:
@@ -815,8 +828,8 @@ Como você pode ver, nós demos a nossa função um parâmetro que ns chamamos d
 {% filename %}python_intro.py{% endfilename %}
 ```python
 def hi(name):
-    if name == 'Ola':
-        print('Hi Ola!')
+    if name == 'Ana':
+        print('Hi Ana!')
     elif name == 'Sonja':
         print('Hi Sonja!')
     else:
@@ -844,7 +857,7 @@ Vamos consertar isso no final do arquivo:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-hi("Ola")
+hi("Ana")
 ```
 
 E execute o arquivo novamente:
@@ -852,7 +865,7 @@ E execute o arquivo novamente:
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
-Hi Ola!
+Hi Ana!
 ```
 
 E se nós mudarmos o nome?
@@ -870,16 +883,14 @@ $ python3 python_intro.py
 Hi Sonja!
 ```
 
-Agora, o que você acha que irá acontecer se você escrever outro nome como argumento? (Nem Ola, nem Sonja.) Tente e veja se você
-está certo. Deveria imprimir isso:
+Agora, o que você acha que irá acontecer se você escrever outro nome lá, como o que chamamos de argumento? (Nem Ola, nem Sonja.) Tente e veja se você está certa. Deveria colocar isso na tela:
 
 {% filename %}command-line{% endfilename %}
 ```
 Hi anonymous!
 ```
 
-Isso é incrível, não é? Dessa forma você não tem que repetir o código toda vez que você quiser trocar o nome da pessoa que a
-função deve comprimentar. E é justamente por isso que nós precisamos de funções – você nunca quer repetir seu código!
+Isso é incrível, não é? Dessa forma você não tem que repetir o código toda vez que você quiser trocar o nome da pessoa que a função deve cumprimentar. E é justamente por isso que nós precisamos de funções – você nunca quer repetir seu código!
 
 Vamos fazer algo mais elaborado – existem muitos nomes, e escrever uma condição para cada um seria muito trabalhoso, não é?
 
@@ -901,24 +912,22 @@ Hi Rachel!
 
 Parabéns! Você acabou de aprender como escrever funções! :)
 
-## Loops
+## Laços de repetiço
 
 > Leitores em casa: essa parte está disponível em vídeos (em inglês) [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 Essa já é a última parte. Isso foi rápido, não? :)
 
-Programadores não gostam de ficar se repetindo. Programação  sempre sobre automatizar coisas, então nós não queremos
-comprimentar cada pessoa por seu nome manualmente, certo? É ai que os loops entram em cena.
+Programadoras não gostam de ficar se repetindo. Programação sempre sobre automatizar coisas, então nós não queremos cumprimentar cada pessoa por seu nome manualmente, certo? É ai que os laços de repetiço entram em cena.
 
 Ainnda se lembra das listas? Vamos fazer uma lista de garotas:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 ```
 
-Nós queremos comprimentar todas elas por seus nomes. Nós temos a função `hi` para fazer isso, então vamos fazer isso com
-um loop:
+Nós queremos comprimentar todas elas por seus nomes. Nós temos a função `hi` para fazer isso, então vamos fazer isso com um laço de repetição:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -935,7 +944,7 @@ Aqui está o código completo que irá para dentro do arquivo:
 def hi(name):
     print('Hi ' + name + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 for name in girls:
     hi(name)
     print('Next girl')
@@ -958,8 +967,7 @@ Hi You!
 Next girl
 ```
 
-Como você pode ver, tudo que você colocar dentro da declaração`for` com a identação será repetido para cada elemento
-da lista `girls`.
+Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `girls`.
 
 Você também pode usar o `for` com numeros usando a função `range`:
 
@@ -982,15 +990,12 @@ Que irá imprimir:
 
 `range` é uma função que cria uma lista de numeros em sequência (esses numeros são fornecidos por você como parâmetros).
 
-Note que o segundo desses numeros não é incluído na lista que é exibida pelo Python (o que significa que `range(1, 6)` conta
-de 1 até 5, não inclui o número 6). É por isso que "range" é meio aberta ("half-open"), e com isso nós queremos dizer que
-a função inclui o primiero valor, mas não o último.
+Note que o segundo desses numeros não é incluído na lista que é exibida pelo Python (o que significa que `range(1, 6)` conta de 1 até 5, não inclui o número 6). É por isso que "range" é meio aberta ("half-open"), e com isso nós queremos dizer que a função inclui o primiero valor, mas não o último.
 
 ## Sumário
 
 É isso. __Você arrebentou!__ Esse foi um capítulo exigente, então você deve se sentir orgulhosa. Nós definitivamente estamos orgulhosas de você chegar tão longe!
 
-Você deve estar querendo, por um momento, fazer alguma outra coisa – alongar, dar uma volta por aí, descansar os olhos
-– antes de passar para o próximo capítulo. :)
+Você deve estar querendo, por um momento, fazer alguma outra coisa – alongar, dar uma volta por aí, descansar os olhos. Faça isso antes de passar para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)

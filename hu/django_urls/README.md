@@ -16,22 +16,23 @@ Az interneten minden oldalnak szüksége van egy saját URL-re. Innen tudja az a
 
 Nyisd meg a `mysite/urls.py` fájlt a kódszerkesztőben, és nézd meg:
 
+{% filename %}mysite/urls.py{% endfilename %}
 ```python
-from django.conf.urls import include, url
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'mysite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
 Amint láthatod, a Django már előre iderakott nekünk pár dolgot.
 
-Azok a sorok, amik így kezdődnek: `#`, kommentek - ez azt jelenti, hogy ezeket a sorokat a Python nem futtatja le. Hasznos, igaz?
+A hármas idézőjelek (`'''` vagy `"""`) közötti sorok neve docstring (dokumentációs sztring) – Írhatsz ilyet egy file, osztály (class) vagy method elején, hogy leírhatsd hogy mit csinál. Python nem fogja lefuttatni ezeket a sorokat.
 
 Az admin URL, amit az előző fejezetben már meglátogattál, már itt van:
 
@@ -71,7 +72,7 @@ Itt az ideje, hogy létrehozzuk az első URL-t! Azt szeretnénk, ha a 'http://12
 
 Fontos, hogy tisztán tartsuk a `mysite/urls.py` fájlt, ezért a `blog` alkalmazásból fogjuk importálni az url-eket.
 
-Töröld ki a kikommentelt soroket (azokat, amik `#` jellel kezdődnek), és adj hozzá egy sort, ami importálja a `blog.urls` a fő url-be (`''`).
+Rajta, add hozzá a sort, ami beimportálja `blog.urls`-t. Figyelmd meg, hogy az `include` függvényt használjuk, ezért hozzá **kell** adnod azt az import-ot a file első sorához.
 
 A `mysite/urls.py` fájlod most így néz ki:
 
@@ -122,4 +123,4 @@ Már nincs ott az "It works", igaz? Ne aggódj, ez csak egy hibaoldal, semmi fé
 
 Azt olvashatod, hogy **no attribute 'post_list'**, vagyis "nincs post_list nevű attribútum". Eszedbe jut valami a *post_list*-ről? Így neveztük el a view-t! Ez azt jelenti, hogy minden a megfelelő helyen van, csak még nem hoztuk létre a *view*-t. Ne aggódj, mindjárt eljutunk odáig.
 
-> Ha többet szeretnél megtudni a Django URLconf-ról, nézz bele a hivatalos dokumentációba: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Ha többet szeretnél megtudni a Django URLconf-ról, nézz bele a hivatalos dokumentációba: https://docs.djangoproject.com/en/1.11/topics/http/urls/

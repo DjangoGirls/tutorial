@@ -388,7 +388,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
 *   **and** - si utilizas el operador `and`, ambas comparaciones deben ser True para que el resultado de todo el comando sea True
 *   **or** - si utilizas el operador `or`, sólo una de las comparaciones tiene que ser True para que el resultado de todo el comando sea True
 
-¿Has oído la expresión "comparar manzanas con naranjas"? Vamos a probar el equivalente en Python:
+¿Has oído la expresión "comparar peras con manzanas"? Vamos a probar el equivalente en Python:
 
     >>> 1 > 'django'
     Traceback (most recent call last):
@@ -464,17 +464,17 @@ Con el archivo guardado, ¡es hora de ejecutarlo! Utilizando las habilidades que
 
 En una Mac, el comando se verá algo como esto:
 
-    cd /Users/<your_name>/Desktop
+    cd ~/Desktop
     
 
 En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma):
 
-    cd /home/<your_name>/Desktop
+    cd ~/Desktop
     
 
 Y en Windows, será así:
 
-    cd C:\Users\<your_name>\Desktop
+    cd %HomePath%\Desktop
     
 
 Si te quedas atascada, sólo pide ayuda.

@@ -19,7 +19,7 @@ $ python3
 Python 3.4.3 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
-```
+```    
 
 ## İlk Python komutunuz!
 
@@ -32,7 +32,7 @@ Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnı
 ```
 >>> 2 + 3
 5
-```
+```    
 
 Harika! Cevabın komut satırına geldiğini gördün değil mi? Python matematik biliyor! Şu gibi komutları da deneyebilirsiniz: - `4 * 5` - `5 - 1` - `40 / 2`
 
@@ -47,7 +47,7 @@ Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:
 ```
 >>> "Zeynep"
 'Zeynep'
-```
+``` 
 
 İlk string'ini oluşturdun! String (katar), bilgisayar tarafından işlenebilen ve karakterlerden oluşan dizilerin genel adıdır. Bir string her zaman aynı özel karakterle başlamalı ve aynı özel karakterle bitmelidir. Tek tırnak (`'`) veya çift tırnak (`"`) olabilir (aralarında herhangi bir fark yok!). Tırnak işaretleri Python'da içlerinde olan şeyin bir string olduğunu ifade eder.
 
@@ -56,7 +56,7 @@ Stringler birbirlerine eklenebilir. Şunu dene:
 ```
 >>> "Merhaba " + "Zeynep"
 'Merhaba Zeynep'
-```
+```    
 
 Ayrıca stringleri bir sayı ile çarpabilirsin:
 
@@ -72,21 +72,21 @@ Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için 
 ```
 >>> "Turgut Uyar'ın dizeleriyiz"
 "Turgut Uyar'ın dizeleriyiz"
-```
+```    
 
-veya sola eğik çizgi (``) kullanarak:
+veya sola eğik çizgi (` \ `) kullanarak:
 
 ```
 >>> 'Turgut Uyar\'ın dizeleriyiz'
 "Turgut Uyar'ın dizeleriyiz"
-```
+```    
 
 Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazman yeterli:
 
 ```
 >>> "Zeynep".upper()
 'ZEYNEP'
-```
+```    
 
 Stringin üzerinde `upper` **fonksiyon**unu kullandın! Bir fonksiyon (`upper()` gibi) , çağırıldığında(calling) Python'un bir obje (`"Zeynep"`) üzerinde gerçekleştirmesi gereken bir dizi işleme denilir.
 
@@ -95,9 +95,9 @@ Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir f
 ```
 >>> len("Zeynep")
 6
-```
+```    
 
-Fonksiyonları bazen string sonunda bir `.` ile (`"Zeynep".upper()` gibi) ve bazen önce fonksiyonu çağırıp sonra parantezler içerisine stringi yerleştirerek kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela `upper()`, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz **method** ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı `len()` gibi. İşte bu nedenle `"Zeynep"` stringini `len` fonksiyonuna bir parametre olarak veriyoruz.
+Fonksiyonları neden bazen stringin sonunda bir `.` ile (`"Zeynep".upper()` gibi) ve bazen de önce fonksiyonu çağırıp sonra parantez içerisine stringi yazarak kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela `upper()`, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz **method** ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı `len()` gibi. İşte bu nedenle `"Zeynep"` stringini `len` fonksiyonuna bir parametre olarak veriyoruz.
 
 ### Özet
 
@@ -110,23 +110,23 @@ Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:
 
 Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir şey için hazır mısın? İddiaya gireriz öylesin!
 
-## Errors - Hatalar
+## Hatalar
 
-Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bu görmek için `len(304023)` yazıp `enter`a basalım:
+Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için `len(304023)` yazıp `enter`a basalım:
 
 ```
 >>> len(304023)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
-```
+``` 
 
 İlk hatamızı aldık! Nesne türü "int" (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?
 
 ```
 >>> len(str(304023))
 6
-```
+```    
 
 İşe yaradı! `str` fonksiyonunu `len` fonksiyonunun içinde kullandık. `str` her şeyi string'e çeviriyor.
 
@@ -143,7 +143,7 @@ Programlamada en önemli konulardan biri değişkenlerdir. Değişken, daha sonr
 
 ```
 >>> name = "Ayşe"
-```
+```    
 
 Gördünüz mü? Ne kadar kolay: name değişkeni "Ayşe" oldu.
 
@@ -152,22 +152,22 @@ Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap ver
 ```
 >>> name
 'Ayşe'
-```
+```    
 
-İşte bu sizin ilk değişkeniniz! name değişkeninin referansını(içini) istediğiniz zaman değiştirebilirsiniz:
+İşte bu sizin ilk değişkeniniz! name değişkeninin işaret ettiği şeyi her zaman değiştirebilirsiniz:
 
 ```
 >>> name = "Suzan"
 >>> name
 'Suzan'
-```
+```    
 
 Bu değişkeni fonksiyonlar içinde de kullanabilirsiniz:
 
-```
+```  
 >>> len(name)
 5
-```
+```    
 
 Harika değil mi? Tabii ki değişkenler, sayılar da dahil herhangi bir şey olabilir. Şunu deneyin: 
 
@@ -184,15 +184,15 @@ Peki ya değişkenin adını yanlış kullanırsak? Ne olacağını tahmin ediyo
 >>> city = "Tokyo"
 >>> ctiy
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+   File "<stdin>", line 1, in <module>
 NameError: name 'ctiy' is not defined
-```
+```   
 
-Bir hata! Gördüğünüz gibi, Python bir çok çeşit hata çeşidine sahip ve bu hatanın adı **NameError** , yani İsimlendirme Hatası. Tanımlamadığınız bir değişkenin adını kullanmaya çalışırsanız, Python size bu hatayı verir. Eğer bu hata ile daha sonra karşılaşırsanız, kodunuzdaki değişkenlerin adını doğru yazıp yazmadığınızı kontrol edin.
+Bir hata! Gördüğünüz gibi, Python bir çok çeşit hata çeşidine sahip ve bu hatanın adı **NameError**, yani İsimlendirme Hatası. Tanımlamadığınız bir değişkenin adını kullanmaya çalışırsanız, Python size bu hatayı verir. Eğer bu hata ile daha sonra karşılaşırsanız, kodunuzdaki değişkenlerin adını doğru yazıp yazmadığınızı kontrol edin.
 
 Bununla biraz oynayıp, neler yapabildiğinizi görün!
 
-## Print (yazdır) işlevi
+## Yazdırma (Print) İşlevi
 
 Şunu deneyin:
 
@@ -217,17 +217,17 @@ Yeni bir liste yaratmakla devam edelim:
 ```
 >>> []
 []
-```
+```    
 
 Evet, liste boş. Çok kullanışlı sayılmaz, değil mi? Hadi loto numaralarıyla liste oluşturalım. Sürekli kendimizi tekrar etmek istemeyiz, o yüzden listeyi değişkene atayalım:
 
-```
+```  
 >>> lottery = [3, 42, 12, 19, 30, 59]
-```
+```    
 
 Pekala, listeyi oluşturduk! Onunla ne yapabiliriz? Hadi listede kaç tane loto numarası olduğunu görelim. Hangi fonksiyonu kullanman gerektiği hakkında bir fikrin var mı? Zaten bildiğin bir fonksiyon!
 
-```
+```  
 >>> len(lottery)
 6
 ```
@@ -236,14 +236,14 @@ Evet! `len()` listedeki nesne sayısını verir. Kullanışlı, değil mi? Belki
 
 ```
 >>> lottery.sort()
-```
+```    
 
 Bu hiçbir cevap vermez, sadece listedeki numaraların sırasını değiştirir. Şimdi listeyi yazdıralım ve ne olduğunu görelim:
 
-```
+```  
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
-```
+```    
 
 Gördüğünüz gibi, listedeki sayılar artık küçükten büyüğe sıralı. Tebrikler!
 
@@ -253,7 +253,7 @@ Belki de sıralamayı ters çevirmek isteriz? Hadi yapalım!
 >>> lottery.reverse()
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3]
-```
+```    
 
 Kolay, değil mi? Listeye yeni bir eleman eklemek isterseniz, bu komutu yazarak yapabilirsiniz:
 
@@ -261,7 +261,7 @@ Kolay, değil mi? Listeye yeni bir eleman eklemek isterseniz, bu komutu yazarak 
 >>> lottery.append(199)
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
-```
+```    
 
 Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indeksler) ile yapabilirsiniz. İndeks elemanın listede nerede olduğunu belirten numaradır. Programcılar sıfırdan başlamayı tercih ederler, bu yüzden listedeki ilk eleman listenin 0. indeksindedir, sonraki 1. indeksindedir ve böyle devam eder. Şunu deneyin:
 
@@ -270,21 +270,21 @@ Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indeksler) ile
 59
 >>> print(lottery[1])
 42
-```
+```    
 
 Gördüğünüz gibi, Listedeki nesnelere listenin ismi ve köşeli parantez içindeki nesnenin indeksini kullanarak ulaşabilirsin.
 
-Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indeksleri** ve `pop()` komutunu kullanman gerekir. Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
+Listeden eleman silmek için yukarıda öğrendiğimiz gibi **indeksleri** ve **del** komutunu kullanman gerekir (del silmenin(delete) kısaltmasıdır). Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
 
-```
+```  
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 >>> print(lottery[0])
 59
->>> lottery.pop(0)
+>>> del lottery[0]
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
-```
+```    
 
 Kusursuz çalıştı!
 
@@ -292,14 +292,14 @@ Daha fazla eğlence için diğer indeksleri de deneyin: 6, 7, 1000, -1, -6 veya 
 
 Bütün liste fonksiyonlarını Python dökümantasyonunun bu bölümünde bulabilirsin: https://docs.python.org/3/tutorial/datastructures.html
 
-## Sözlükler
+## Sözlükler (Dictionaries)
 
 Sözlük listeye benzerdir ancak sözlük değerlerine indeks yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:
 
 ```
 >>> {}
 {}
-```
+```    
 
 Bu boş bir sözlük oluşturduğunuzu gösterir. Yaşasın!
 
@@ -319,19 +319,19 @@ Bu söz dizimi ile tek bir anahtarın içeriğini kontrol edebilirsin:
 
 ```
 >>> print(participant['name'])
-Ola
-```
+Ayşe
+``` 
 
 Gördün mü, listeye benzer. Ancak indeksini hatırlamana gerek yok - sadece ismi.
 
 Python'a olmayan bir anahtarın değerini sorarsak ne olur? Tahmin edebiliyor musun? Hadi deneyip görelim!
 
-```
+```  
 >>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'age'
-```
+```    
 
 Bir başka hata! **KeyError** hatası. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
 
@@ -344,7 +344,7 @@ Sözlükler de listeler gibi değişebilirdir (*mutable*), yani oluşturulduktan
 
 ```
 >>> participant['favorite_language'] = 'Python'
-```
+```    
 
 Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısını bize verir. Devam edip şu komutu yazın:
 
@@ -352,6 +352,7 @@ Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısın
 >>> len(participant)
 4
 ```
+    
 
 Umarım şu ana kadar mantıklı gelmiştir :) Sözlüklerle biraz daha eğlenceye hazır mısın? İlginç şeyler için sonraki satıra atla.
 
@@ -371,7 +372,7 @@ Bunun yanı sıra, sözlükteki daha önce oluşturulmuş anahtarın değerini d
 >>> participant['country'] = 'Almanya'
 >>> participant
 {'country': 'Almanya', 'favorite_language': 'Python', 'name': 'Ayşe'}
-```
+```    
 
 Gördüğün gibi, `'country'` anahtarının değeri `'Türkiye'`den `'Almanya`'ya çevrildi. :) Heyecan verici değil mi? Yaşasın! Bir başka harika şey öğrendin.
 
@@ -414,7 +415,7 @@ Python' a iki görev daha verin:
 True
 >>> 3 <= 2
 False
-```
+```    
 
 `>` ve `<` işaretleri kolay, fakat `>=` ve `<=` ne anlama geliyor?
 
@@ -432,7 +433,7 @@ True
 False
 >>> 3 > 2 or 2 < 1
 True
-```
+```    
 
 Python'a istediğiniz kadar sayıyı karşılaştırmak için verebilirsiniz, ve size hepsinin cevabını verecek. Çok akıllı değil mi?
 
@@ -446,7 +447,7 @@ Portakallarla elmaları karşılaştılaştırabilir miyiz? Bunun Python'daki e�
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unorderable types: int() > str()
-```
+```    
 
 Gördüğünüz gibi Python tam sayılar(`int`) ve kelimeleri(yani stringleri, `str`) karşılaştıramıyor. Onun yerine, **TypeError** göstererek iki farklı tipteki değişkenin karşılaştırılamayacağını söylüyor. 
 
@@ -468,11 +469,11 @@ True
 
 Ayrıca bu şekilde de yapabilirsiniz:
 
-```
+```  
 >>> a = 2 > 5
 >>> a
 False
-```
+```    
 
 Boolean'lar ile aşağıdaki komutları deneyerek biraz oynayın:
 
@@ -494,10 +495,10 @@ Tebrikler! Boolean'lar programlamadaki en havalı özelliklerden, ve az önce on
 
 Kullandığımız Python yorumlayıcısından çıkmak için sadece ~~~ exit() ~~~ fonksiyonunu yazmanız yeterlidir:
 
-```
+```"
 >>> exit()
 $
-```
+```    
 
 Bu sizi komut satırına geri yönlendirecektir.
 
@@ -507,7 +508,7 @@ Biraz önce [kod editörü][2] bölümünden bir kod editörü seçmiştik. Şim
 
 ```python
 print('Merhaba, Django girls!')
-```
+```    
 
 > **Not** Kod editörlerinin en havalı özelliğini fark etmiş olmalısınız: renkler! Python konsolunda her şey aynı renkteydi, şimdi `print` fonksiyonunun stringden farklı bir renkte olduğunu görüyorsunuz. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler sana ipucu verecektir, örneğin metin kullanım hatasında veya dildeki anahtar kelimenin yanlış yazımında (mesela fonksiyondaki `def`, aşağıda göreceğiz). Bu kod düzenleyicisi kullanma nedenlerimizden biri :)
 
@@ -527,7 +528,7 @@ Linux'ta ise bu şekilde ("Desktop" kelimesi "Masaüstü" olarak da görünebili
 
 ```
 $ cd /home/<isminiz>/Desktop
-```
+```    
 
 Ve Windows'ta, bu şekilde olacak:
 
@@ -542,7 +543,7 @@ Bir problem olursa yardım istemekten çekinmeyin.
 ```
 $ python3 python_intro.py
 Merhaba, Django girls!
-```
+```    
 
 Tamam! Bir dosyaya kaydedilen ilk Python programınızı çalıştırdınız. Harika hissediyor musunuz?
 
@@ -556,7 +557,7 @@ Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırm
 
 ```python
 if 3 > 2:
-```
+```    
 
 Eğer bunu kaydedip çalıştırsaydık şu hatayla karşılaşacaktık:
 
@@ -565,23 +566,23 @@ $ python3 python_intro.py
 File "python_intro.py", line 2
          ^
 SyntaxError: unexpected EOF while parsing
-```
+```    
 
 Python bizden kendisine `3 > 2` durumu (veya `True`) sağlandığında neyi çalıştıracağını söylememizi bekliyor. Python'a "Çalışıyor!" yazmasını söyleyelim. **python_intro.py** dosyanızdaki kodu şununla değiştirin:
 
 ```python
 if 3 > 2:
     print('Çalışıyor!')
-```
+```    
 
 4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Bunu yaparak if cümlesine yazdığım durum doğru olduğunda neyi çalıştırması gerektiğini Python'a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Tek `tab` karakteri de 4 boşluk yerine geçecektir.
 
 Kaydedip çalıştırmayı deneyelim:
 
-```
+```  
 $ python3 python_intro.py
 Çalışıyor!
-```
+```    
 
 ### Ya bir koşul True (Doğru) değilse?
 
@@ -589,17 +590,17 @@ $ python3 python_intro.py
 
 ```python
 if 5 > 2:    
-    print('5 gerçekten de 2'den büyüktür') 
+    print("5 gerçekten de 2'den büyüktür") 
 else:     
-    print('5  2'den büyük değildir')
-```
+    print("5  2'den büyük değildir")
+```    
 
 Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
 
 ```
 $ python3 python_intro.py
 5 gerçekten de 2'den büyüktür
-```
+```    
 
 Eğer 2 5'ten büyük bir sayı olsaydı ikinci komut çalışacaktı. Kolay, değil mi? Şimdi `elif`'in nasıl çalıştığına bakalım:
 
@@ -611,14 +612,14 @@ elif name == 'Zeynep':
     print('Selam Zeynep!')
 else:
     print('Selam yabancı!')
-```
+```    
 
 ve çalıştırılınca:
 
 ```
 $ python3 python_intro.py
 Selam Zeynep!
-```
+```    
 
 Gördünüz mü? Eğer önceki if cümleleriniz doğru olmazsa kontrol edilmek üzere `elif` cümleleri ekleyebilirsiniz.
 
@@ -638,7 +639,7 @@ elif 80 <= volume < 100:
     print("Biraz gürültülü!")
 else:
     print("Kulaklarım ağrıyor! :(")
-```    
+```   
 
 Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
 
@@ -668,9 +669,9 @@ Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da
 def hi():
     print('Merhaba!')
     print('Nasılsın?')
-
+  
 hi()
-```
+```    
 
 Tamam, ilk fonksiyonumuz hazır!
 
@@ -682,13 +683,13 @@ Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
 $ python3 python_intro.py
 Merhaba!
 Nasılsın?
-```
+```    
 
 Bu epey kolaydı! Şimdi parametreli bir fonksiyon yazalım. Bir önceki örneği kullanabiliriz - fonksiyonumuz yine 'merhaba' desin - ama bu sefer ismini de söylesin:
 
 ```python
 def hi(name):
-```
+```    
 
 Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik:
 
@@ -700,9 +701,9 @@ def hi(name):
         print('Selam Zeynep!')
     else:
         print('Selam yabancı!')
-
+    
 hi()
-```
+```    
 
 Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:
 
@@ -712,39 +713,39 @@ Traceback (most recent call last):
 File "python_intro.py", line 10, in <module>
   hi()
 TypeError: hi() missing 1 required positional argument: 'name'
-```
+```    
 
 Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. `hi()` fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (`name` isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:
 
 ```python
 hi("Ayşe")
-```
+```    
 
 Ve tekrar çalıştıralım:
 
 ```
 $ python3 python_intro.py
-Selam Ayşe!
-```
+    Selam Ayşe!
+```    
 
 Ve eğer ismi değiştirirsek ne olur?
 
 ```python
 hi("Zeynep")
-```
+```    
 
 Ve çalıştırın:
 
 ```
 $ python3 python_intro.py
 Selam Zeynep!
-```
+```    
 
 Peki Ayşe veya Zeynep dışında başka bir isim yazdığımızda ne olacağını tahmin edebiliyor musunuz? Deneyin ve tahmininizin doğru olup olmadığını görün. Şunun gibi bir şey yazmalı:
 
 ```
 Selam yabancı!
-```
+```    
 
 Süper değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde aynı kodu tekrar tekrar yazmanıza gerek kalmayacak. İşte fonksiyonlara tam da bu yüzden ihtiyacımız var - aynı kodu tekrar yazmaya gerek yok!
 
@@ -753,16 +754,16 @@ Hadi daha akıllıca bir şeyler yapalım -- tabii ki ikiden fazla isim var ve h
 ```python
 def hi(name):
     print('Selam ' + name + '!')
-
+    
 hi("Seda")
-```
+```    
 
 Şimdi kodu çağıralım:
 
 ```
 $ python3 python_intro.py
 Selam Seda!
-```
+```    
 
 Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
 
@@ -776,7 +777,7 @@ Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 
 ```python
 girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
-```
+```    
 
 Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
 
@@ -791,12 +792,12 @@ Dosyada yer alacak tam kod aşağıdadır:
 ```python
 def hi(name):
     print('Selam ' + name + '!')
-
+    
 girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 for name in girls:
     hi(name)
     print('Sıradaki')
-```
+```    
 
 Ve onu çalıştırdığımız zaman:
 
@@ -811,7 +812,7 @@ Sıradaki
 Selam Ayşe!
 Sıradaki
 Selam Sen!
-Sıradaki 
+Sıradaki
 ```
 
 Gördüğünüz gibi, `for` cümlesinin içine boşluk karakteri ile koyduğunuz her şey `girls` listesi için tekrarlanıyor.
@@ -821,7 +822,7 @@ Ayrıca `for`'u `range` fonksiyonuyla beraber sayılar üzerinde de kullanabilir
 ```
 for i in range(1, 6):
     print(i)
-```
+```    
 
 Çalıştırırsak:
 

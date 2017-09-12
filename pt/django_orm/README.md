@@ -48,11 +48,10 @@ Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdad
 
 Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
 
-
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>]
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 É uma lista das postagens que criamos anteriormente! Criamos essas postagens usando a interface de administração do Django. No entanto, agora queremos criar novas postagens utilizando o python, então, como é que fazemos isso?
@@ -80,7 +79,7 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```
 
 É o superusuário que criamos anteriormente! Vamos obter uma instância de usuário agora:
@@ -100,14 +99,13 @@ Agora finalmente podemos criar nossa primeira postagem:
 ```
 
 Viva! Quer ver se funcionou?
-
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-Ai está ele, mais uma postagem na lista!
+Ai está, mais uma postagem na lista!
 
 ### Adicione mais postagens
 
@@ -158,7 +156,7 @@ E então vamos publicá-la com o nosso método `publish`!
 
 Agora, tente obter a lista de postagens publicadas novamente (pressione o botão da seta para cima 3 vezes e tecle `enter`):
 
- {% filename %}command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
 [<Post: Sample title>]
@@ -192,7 +190,7 @@ Você pode também combinar QuerySets pelo **encadeamento** deles em sequência:
 
 Isso é realmente poderoso e permite que você escreva pesquisas ("queries") bem complexas.
 
-Legal! Você já está pronto para a próxima parte! Para fechar o terminal digite:
+Legal! Você já está pronta para a próxima parte! Para fechar o terminal digite:
 
 {% filename %}command-line{% endfilename %}
 ```python

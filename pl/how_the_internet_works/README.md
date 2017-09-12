@@ -1,16 +1,16 @@
-# Jak działa internet
+# Jak działa Internet
 
-> Niniejszy rozdział został zainspirowany prelekcją "Jak działa internet" Jessiki McKellar (http://web.mit.edu/jesstess/www/).
+> Niniejszy rozdział został zainspirowany prelekcją "Jak działa Internet" Jessiki McKellar (http://web.mit.edu/jesstess/www/).
 
-Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `enter`?
+Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `Enter`?
 
-Aby zrozumieć jak działa internet powinnaś najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
+Aby zrozumieć jak działa Internet powinnaś najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
 Jeśli nie miałaś wcześniej do czynienia z programowaniem, może być Ci na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
 
 Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ponieważ ich głownym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* -- ponieważ służą do *serwowania* danych.
 
-Ok, ale pewnie chciałabyś wiedzieć jak wygląda internet?
+Ok, ale pewnie chciałabyś wiedzieć jak wygląda Internet?
 
 Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 
@@ -24,7 +24,7 @@ Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączony
 
  [2]: images/internet_3.png
 
-To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w internecie. Więc aby dostać się do maszyny dostępnej w internecie (na przykład tej, na której zapisane jest https://djangogirls.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
+To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w Internecie. Więc aby dostać się do maszyny dostępnej w Internecie (na przykład tej, na której zapisane jest https://djangogirls.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
 
 Wygląda to tak:
 
