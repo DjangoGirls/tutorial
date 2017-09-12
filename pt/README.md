@@ -28,6 +28,7 @@ Special thanks for help goes out to:
 * Fabio C. Barrionuevo da Luz 
 * ffabiorj 
 * Gabriela Cavalcante da Silva 
+* Herbert Fortes
 * Leandro Silva Araujo 
 * Lucas Magnum 
 * 1pedro 
@@ -42,6 +43,7 @@ Special thanks for help goes out to:
 * Pablo Palacios 
 * Paulo Alem 
 * Raony Guimares Correo do Carmo Lisboa Cardenas 
+* RSiP22
 * Vivian Macedo
 * Willie Lawrence 
 * Ricardo Manhães Savii
