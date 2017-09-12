@@ -49,11 +49,12 @@ Wow! <3 <3
 
 ## Introdução
 
-Você já sentiu como se o mundo fosse cada vez mais sobre tecnologia e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website, mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até para tentar fazer alguma coisa sozinha?
+
+Você já sentiu como se o mundo fosse cada vez mais tecnológico e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até mesmo para você tentar fazer alguma coisa sozinha?
 
 Bem, nós temos boas notícias para você! Programação não é tão difícil quanto parece e nós queremos te mostrar o quão divertido pode ser.
 
-Este tutorial não irá te transformar magicamente em uma programadora. Se você quer ser boa nisso, precisa de meses ou até mesmo anos de treino e prática. Porém, nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar as diferentes partes tão bem quanto pudermos, de uma forma que você não se sinta intimidada pela tecnologia.
+Este tutorial não irá te transformar magicamente em uma programadora. Se você quer ser boa nisso, precisa de meses ou até mesmo anos de treino e prática. Porém, nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar as diferentes etapas tão bem quanto pudermos, de forma que você não se sinta intimidada pela tecnologia.
 
 Nós esperamos conseguir fazer você amar a tecnologia tanto quanto nós amamos!
 

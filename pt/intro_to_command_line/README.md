@@ -4,11 +4,11 @@
 
 **Deixe-nos apresentá-lo a sua primeira nova amiga: a linha de comando!**
 
-As etapas a seguir mostrarão a você como usar aquela janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
+As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas, na verdade, é apenas um prompt esperando por comandos seus.
 
-## O que é a linha de comando?
+## O que é uma linha de comando?
 
-A janela, que normalmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação baseada em texto para visualização, manipulação e manuseio de arquivos em seu computador (como por exemplo, o Windows Explorer ou o Finder no Mac, mas sem interface gráfica). Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+A janela, que normalmente é chamada de **linha de comando** ou **interface de linha de comando**, é um aplicativo baseado em texto para visualização, manipulação e manuseio de arquivos em seu computador (como por exemplo, o Windows Explorer ou o Finder no Mac, mas sem a interface gráfica). Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Abra a interface de linha de comando
 
@@ -34,13 +34,10 @@ Provavelmente você vai achar em Applications → Accessories → Terminal, mas 
 
 ## Prompt
 
-Agora você deve ver uma janela branca ou preta que está à espera de seus comandos.
+Agora você deve agora estar vendo uma janela branca ou preta que está à espera de seus comandos.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
-
-
-Se você estiver em Mac ou num Linux, você provavelmente verá um `` $, como este:
-
+Se você estiver em Mac ou num Linux, você provavelmente verá um `$`, como este:
 {% filename %}command-line{% endfilename %}
 ```
 $
@@ -48,7 +45,6 @@ $
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
-
 
 No Windows, é um sinal de `>`, como este:
 
@@ -63,27 +59,36 @@ Cada comando será antecedido por este sinal e um espaço, mas você não precis
 
 > Apenas uma pequena nota: no seu caso, talvez exista algo como `C:\Users\seunome>` ou `SeuNome-MacBook Air: ~ seunome$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
 
+A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de comando, ou para abreviar, prompt.  Ele está a esperando você digitar alguma coisa.
+
 ## Seu primeiro comando (YAY!)
 
 Vamos começar com algo simples. Digite o seguinte comando:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
-
 {% filename %}command-line{% endfilename %}
 ```
 $ whoami
 ```
-
 <!--endsec-->
 
-
 <!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
-
 {% filename %}command-line{% endfilename %}
 ```
 > whoami
 ```
+<!--endsec-->
 
+Depois aperte o `Enter`. Esse é o nosso resultado:
+
+{% filename %}command-line{% endfilename %}
+```
+$ whoami
+seunome
+```
+
+Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é?:)
+=======
 <!--endsec-->
 
 Depois tecle Enter. Essa é nossa saída:
@@ -91,12 +96,12 @@ Depois tecle Enter. Essa é nossa saída:
 {% filename %}command-line{% endfilename %}
 ```
 $ whoami
-olasitarska
+seunome
 ```
 
 Como você pode ver, o computador só apresentou seu nome de usuária. Elegante, né?:)
 
-> Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais dessa forma!
+> Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais facilmente dessa forma!
 
 ## O Básico
 
@@ -104,7 +109,8 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 ### Pasta atual
 
-Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando seguido de um enter:
+Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguinte comando e aperte o `enter`:
+
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -112,27 +118,27 @@ Seria legal saber em que pasta estamos agora, certo? Vamos ver. Digite o seguint
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
-/Users/olasitarska
+/Users/seunome
 ```
 
 > Nota: 'pwd' quer dizer 'print working directory' (exiba diretório que estamos trabalhando).
 
 <!--endsec-->
 
-Se você estiver no Windows:
+Windows:
 
 <!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd
-C:\Users\olasitarska
+C:\Users\seunome
 ```
 > Nota: 'cd' vem de 'change directory' (mude de diretório). Se seu Windows tem powershell, você pode usar pwd como no Linux ou Mac OS X.
 
 <!--endsec-->
 
-Provavelmente você vai ver algo parecido na sua máquina. Um vez que você abre a linha de comando você já começa na pasta Home.
+Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez que você abre a linha de comando você já começa na pasta Home.
 
 
 * * *
@@ -154,25 +160,19 @@ Music
 ```
 <!--endsec-->
 
-Windows:
-
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
-
 
 {% filename %}command-line{% endfilename %}
 ```
 > dir
- Directory of C:\Users\olasitarska
+ Directory of C:\Users\seunome
 05/08/2014 07:28 PM <DIR>      Applications
 05/08/2014 07:28 PM <DIR>      Desktop
 05/08/2014 07:28 PM <DIR>      Downloads
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
-
-<!--endsec-->
-
-* * *
+<!--endsec-->* * *
 
 ### Entrar em outra pasta
 
@@ -193,7 +193,7 @@ $ cd Desktop
 ```
 > cd Desktop
 ```
-<!--endsec-->    
+<!--endsec-->
 
 Veja se realmente entramos na pasta:
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
@@ -201,7 +201,7 @@ Veja se realmente entramos na pasta:
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
-/Users/olasitarska/Desktop
+/Users/seunome/Desktop
 ```
 <!--endsec-->
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
@@ -209,7 +209,7 @@ $ pwd
 {% filename %}command-line{% endfilename %}
 ```
 > cd
-C:\Users\olasitarska\Desktop
+C:\Users\seunome\Desktop
 ```
 <!--endsec-->    
 
@@ -223,6 +223,7 @@ Aqui está!
 
 Que tal criar um diretório Django Girls na sua área de trabalho? Você pode fazer assim:
 
+
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -230,6 +231,7 @@ Que tal criar um diretório Django Girls na sua área de trabalho? Você pode fa
 $ mkdir djangogirls
 ```
 <!--endsec-->
+
 <!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 
@@ -239,7 +241,6 @@ $ mkdir djangogirls
 ```
 <!--endsec-->
     
-
 Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ela está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
@@ -248,22 +249,22 @@ Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Voc�
 
 ### Exercite-se!
 
-Um pequeno desafio para você: na sua mais nova pasta criada `djangogirls` crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
+Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
 
 #### Solução:
+
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd djangogirls
-$ mkdir teste
+$ mkdir test
 $ ls
-teste
+test
 ```
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
-
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -301,7 +302,7 @@ $ cd ..
 ```
 <!--endsec-->
 
-Fazendo `cd` para `..` nós mudaremos do diretório atual para o diretório pai (que significa o diretório que contém o diretório atual).
+Usando `..` com o comando `cd` nós mudaremos do diretório atual para o diretório pai (que significa o diretório que contém o diretório atual).
 
 Veja onde você está:
 
@@ -310,7 +311,7 @@ Veja onde você está:
 {% filename %}command-line{% endfilename %}
 ```
 $ pwd
-/Users/olasitarska/Desktop
+/Users/seunome/Desktop
 ```
 <!--endsec-->
 
@@ -320,7 +321,7 @@ $ pwd
 {% filename %}command-line{% endfilename %}
 ```
 > cd
-C:\Users\olasitarska\Desktop
+C:\Users\seunome\Desktop
 ```
 <!--endsec-->
 
@@ -342,11 +343,12 @@ $ rm -r djangogirls
 {% filename %}command-line{% endfilename %}
 ```
 > rmdir /S djangogirls
-djangogirls, Tem certeza <S/N>? S
+djangogirls, Are you sure <Y/N>? Y
 ```
 <!--endsec-->
+Pronto! Para ter certeza que a pasta foi realmente excluída, vamos checar:
 
-Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
+OS X e Linux:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -365,7 +367,8 @@ $ ls
 
 ### Saindo
 
-Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo?:)
+Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo? :)
+
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -383,7 +386,7 @@ $ exit
 ```
 <!--endsec-->    
 
-Legal, né?:)
+Legal, não é? :)
 
 ## Sumário
 
@@ -401,10 +404,8 @@ Aqui vai uma lista de alguns comandos úteis:
 
 Estes são apenas alguns dos poucos comandos que você pode executar em sua linha de comando, mas você não vai usar mais nada do que isto hoje.
 
-Se você estiver curioso, [ss64.com][1] contém uma referência completa de comandos para todos os sistemas operacionais.
+Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
- [1]: http://ss64.com
-
-## Pronto?
+## Pronta?
 
 Vamos mergulhar no Python!

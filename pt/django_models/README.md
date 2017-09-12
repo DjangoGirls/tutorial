@@ -155,14 +155,13 @@ Agora podemos definir as propriedades que discutimos: `title`, `text`, `created_
 - `models.DateTimeField` - este é uma data e hora.
 - `models.ForeignKey` - este é um link para outro modelo.
 
-Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do DJango se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.9/ref/models/fields/#field-types).
+Nós não vamos explicar cada pedaço de código aqui, pois isso levaria muito tempo. Você deve olhar a documentação do Django se você quiser saber mais sobre campos do Model e como definir coisas além destas descritas acima (https://docs.djangoproject.com/en/1.9/ref/models/fields/#field-types).
 
 E sobre o `def publish(self):`? Ele é exatamente o nosso método `publish` que falávamos antes. `def`, significa que se trata de um função/método. `publish` é o nome do método. Você pode alterar, se quiser. A regra é que usamos letras minúsculas e sublinhados em vez de espaços em branco (ou seja, se você quer ter um método que calcula o preço médio, você poderia chamá-lo `calculate_average_price`).
 
 Métodos muitas vezes `retornam (return)` algo. Há um exemplo disso no método `__str__`. Nesse cenário, quando chamamos `__str__()` receberemos um texto (**string**), com um título do Post.
 
-Note também que ambos, `def publish(self):` e `def __str__(self):` estão indentados dentro de nossa classe. Devido Python ser
-sensitivo a espaços em branco, nós precisamos indentar nossos métodos dentro da classe. Senão, os métodos não pertencerão a classe, e isso pode resultar em comportamentos inesperados.
+Note também que ambos, `def publish(self):` e `def __str__(self):` estão indentados dentro de nossa classe. Devido Python ser sensitivo a espaços em branco, nós precisamos indentar nossos métodos dentro da classe. Senão, os métodos não pertencerão a classe, e isso pode resultar em comportamentos inesperados.
 
 Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar a sua treinadora! Sabemos que é muito complicado, especialmente quando se aprende o que são objetos e funções ao mesmo tempo. Mas espero que se pareça um pouco menos mágico para você agora!
 
@@ -178,7 +177,8 @@ Migrations for 'blog':
   - Create model Post
 ```
 
-Django preparou um arquivo de migração para nós que temos de aplicar agora em nosso banco de dados; digite `python manage.py migrate blog`, e a saída deve ser algo como:
+
+Django preparou um arquivo de migração para nós que temos de aplicar agora em nosso banco de dados, digite `python manage.py migrate blog`, e a saída deve ser algo como:
 
 {% filename %}command-line{% endfilename %}
 ```
