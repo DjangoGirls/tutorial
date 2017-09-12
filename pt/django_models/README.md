@@ -164,7 +164,7 @@ Métodos muitas vezes `retornam (return)` algo. Há um exemplo disso no método 
 Note também que ambos, `def publish(self):` e `def __str__(self):` estão indentados dentro de nossa classe. Devido Python ser
 sensitivo a espaços em branco, nós precisamos indentar nossos métodos dentro da classe. Senão, os métodos não pertencerão a classe, e isso pode resultar em comportamentos inesperados.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar a sua treinadora! Sabemos que é muito complicado, especialmente quando se aprende o que são objetos e funções ao mesmo tempo. Mas espero se pareça um pouco menos mágico para você agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar a sua treinadora! Sabemos que é muito complicado, especialmente quando se aprende o que são objetos e funções ao mesmo tempo. Mas espero que se pareça um pouco menos mágico para você agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
