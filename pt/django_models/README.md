@@ -151,7 +151,7 @@ Que tal `def publish(self):`? É exatamente o nosso método de `publish` que fal
 
 Métodos muitas vezes `return` algo. Há um exemplo de que, no método `__str__`. Nesse cenário, quando chamamos `__str__()` teremos um texto (**string**), com um título do Post.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para pedir o seu treinador! Sabemos que é muito complicado, especialmente quando você aprender o que são objetos e funções ao mesmo tempo. Mas espero que se pareça um pouco menos mágico para você agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar a sua treinadora! Sabemos que é muito complicado, especialmente quando se aprende o que são objetos e funções ao mesmo tempo. Mas espero que se pareça um pouco menos mágico para você agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
@@ -163,7 +163,7 @@ O último passo é adicionar nosso novo modelo para nosso banco de dados. Primei
       - Create model Post
     
 
-Django prepara um arquivo de migração que temos de aplicar agora para nosso banco de dados, tipo `python manage.py migrate blog`, a saída deve ser:
+Django preparou um arquivo de migração para nós que temos de aplicar agora em nosso banco de dados, digite `python manage.py migrate blog`, e a saída deve ser algo como:
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
