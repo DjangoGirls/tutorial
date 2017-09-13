@@ -35,6 +35,7 @@ Inicializar o repositório git é algo que só precisamos fazer uma vez por proj
 
 Git irá controlar as alterações para todos os arquivos e pastas neste diretório, mas existem alguns arquivos que queremos ignorar. Fazemos isso através da criação de um arquivo chamado `.gitignore` no diretório base. Abra seu editor e crie um novo arquivo com o seguinte conteúdo:
 
+
 {% filename %}.gitignore{% endfilename %}
 ```
 *.pyc
@@ -183,25 +184,45 @@ my-first-blog/
 
 Assim como fez em seu próprio computador, você pode criar um virtualenv na PythonAnywhere. No console Bash, digite:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
-```
-$ cd my-first-blog
 
-$ virtualenv --python=python3.6 myvenv
-Running virtualenv with interpreter /usr/bin/python3.6
-[...]
-Installing setuptools, pip...done.
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    20:20 ~ $ cd my-first-blog
 
-$ source myvenv/bin/activate
+    20:20 ~ $ virtualenv --python=python3.6 myvenv
+    Running virtualenv with interpreter /usr/bin/python3.6
+    [...]
+    Installing setuptools, pip...done.
 
-(myvenv) $ pip install django~=1.11.0
-Collecting django~=1.11.0
-[...]
-Successfully installed django-1.11.5
-```
+    20:20 ~ $ source myvenv/bin/activate
+
+    (mvenv)20:20 ~ $ pip install django~=1.11.0 whitenoise~=2.0
+    Collecting django
+    [...]
+    Successfully installed django-1.11.5 whitenoise-2.0
 
 > **Nota** O passo `pip install` pode levar alguns minutos.  Paciência, paciência! Mas se levar mais de cinco minutos, algo
 está errado. Pergunte a sua treinadora.
+
+### Coleta de arquivos estáticos.
+
+Você estava imaginando o que é "whitenoise"? É uma ferramenta para servir os chamados "arquivos estáticos". Arquivos estáticos funcionam de forma diferente nos servidores em comparação com nosso próprio computador, e precisamos de uma ferramenta como o "whitenoise" para atendê-los.
+
+Vamos descobrir um pouco mais sobre arquivos estáticos mais tarde no tutorial, quando vamos editar o CSS para o nosso site.
+
+Por enquanto só precisamos executar um comando extra chamado "collectstatic" no servidor. Isso diz pro Django reunir todos os arquivos estáticos que ele precisa no servidor. Em sua maioria, estes são os arquivos estáticos que fazem o site do admin bonito no momento.
+
+    20:20 ~ $ python manage.py collectstatic
+
+    You have requested to collect static files at the destination
+    location as specified in your settings:
+
+        /home/edith/my-first-blog/static
+
+    This will overwrite existing files!
+    Are you sure you want to do this?
+
+    Type 'yes' to continue, or 'no' to cancel: yes
+
 
 ### Criando o banco de dados em PythonAnywhere
 

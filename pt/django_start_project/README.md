@@ -84,17 +84,16 @@ Nós também precisaramos adicionar um caminho para arquivos estáticos (nós va
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
-Qunado `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, a máquina é validada como `['localhost', '127.0.0.1', '[::1]']`. Isso não vai casar nosso nome de máquina no PythonAnywhere uma fez feito o deploy de nossa aplicação, então nós iremos mudar
-a para a seguinte configuração:
+
+Quando a variável `DEBUG` está como `True` e `ALLOWED_HOSTS` é vazio, o host considera `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponde ao seu nome de usuário no PythonAnywhere. Uma vez que você fez a implantação da sua aplicação, nós devemos mudar as seguintes propriedades no arquivo `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
 ```
 
-> **Nota**: Se você estiver usando um Chromebook, adicione essa linha no final do seu arquivo settings.py:
+> **Note**: Se você está usando um Chromebook, adicione esta linha ao final do seu arquivo settings.py:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
-
 
 ## Instalação de um banco de dados
 
