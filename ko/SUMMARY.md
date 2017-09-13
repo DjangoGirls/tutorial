@@ -2,6 +2,7 @@
 
 *   [들어가며](README.md)
 *   [설치하기](installation/README.md)
+*   [설치하기 (chromebook)](chromebook_setup/README.md)
 *   [인터넷은 어떻게 작동할까요](how_the_internet_works/README.md)
 *   [Command Line 시작하기](intro_to_command_line/README.md)
 *   [Python 설치하기](python_installation/README.md)

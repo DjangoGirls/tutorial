@@ -484,7 +484,7 @@ data-collapse=true ces-->
 
 Mac-en a parancs valahogy így néz ki:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
@@ -495,7 +495,7 @@ data-collapse=true ces-->
 
 Linuxon így (A "Desktop" lehet, hogy le van fordítva a te nyelvedre):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
@@ -506,7 +506,7 @@ $ cd ~/Desktop
 
 Windowson így néz ki:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
@@ -518,7 +518,7 @@ Ha megakadtál volna, kérj nyugodtan segítséget.
 
 Most pedig futtasd le a Python kódot, így:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 $ python3 python_intro.py
 Hello, Django girls!
@@ -526,7 +526,7 @@ Hello, Django girls!
     
 Note: Windows-on 'python3' néven nem található parancs. Helyette használd a 'python' néven:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```python
 > python python_intro.py
 ```

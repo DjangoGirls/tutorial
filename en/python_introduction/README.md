@@ -17,7 +17,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.5.1 (...)
+Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -607,15 +607,27 @@ $ cd ~/Desktop
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-And on Windows, it will be like this:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
 <!--endsec-->
+
+
+<!--sec data-title="Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+And on Windows Powershell, it will be like this:
+
+{% filename %}command-line{% endfilename %}
+```
+> cd $Home\Desktop
+```
+<!--endsec-->
+
 
 If you get stuck, just ask for help.
 

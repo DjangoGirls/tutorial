@@ -26,12 +26,12 @@ Most pedig létrehozunk egy `myvenv` nevű virtuális környezetet. A kód álta
 <!--sec data-title="Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Ahhoz, hogy létrehozz egy új `virtualenv`-et, meg kell nyitni a konzolt (pár fejezettel ezelőtt tanultál róla - emlékszel?) és a ezt a parancsot kell lefuttatnod: `C:\Python34\python -m venv myvenv`. Ez fog történni:
+Ahhoz, hogy létrehozz egy új `virtualenv`-et, meg kell nyitni a konzolt (pár fejezettel ezelőtt tanultál róla - emlékszel?) és a ezt a parancsot kell lefuttatnod: `C:\Python35\python -m venv myvenv`. Ez fog történni:
 
-    C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
+    C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
     
 
-itt a `C:\Python34\python` azt a könyvtárat jelenti, ahova korábban a Pythont telepítetted, és a `myvenv` a `virtualenv`-ed neve. Bármi más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!
+itt a `C:\Python35\python` azt a könyvtárat jelenti, ahova korábban a Pythont telepítetted, és a `myvenv` a `virtualenv`-ed neve. Bármi más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!
 
 <!--endsec-->
 
@@ -45,6 +45,21 @@ A `virtualenv` létrehozása Linux és OS X környezetben is csak annyiból áll
 
 A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!
 
+> **MEGJEGYZÉS:** Debian/Ubuntu némelyik verziójánál az alábbi hibaüzenetet kaphatod:
+
+>{% filename %}parancssor{% endfilename %}
+>```
+>The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>    apt-get install python3-venv
+>You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>```
+>
+> Ebben az esetben a fenti leírást követve telepítsd a `python3-venv` csomagot:
+>{% filename %}parancssor{% endfilename %}
+>```
+>$ sudo apt-get install python3-venv
+>```
+
 > **MEGJEGYZÉS:** A virtuális környezetet létrehozó parancs Ubuntu 14.04 alatt ezt a hibát adja:
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
@@ -53,8 +68,22 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 > Hogy ezt elkerüld, használd a `virtualenv` parancsot.
 > 
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
+>     ~/djangogirls$ virtualenv --python=python3.6 myvenv
 >     
+
+> **MEGJEGYZÉS:** Ha az alábbi hibaüzenetet kapod:
+
+>{% filename %}parancssor{% endfilename %}
+>```
+>E: Unable to locate package python3-venv
+>```
+
+> Akkor az alábbit futtasd:
+>
+>{% filename %}parancssor{% endfilename %}
+>```
+>sudo apt install python3.6-venv
+>```
 
 <!--endsec-->
 
@@ -69,6 +98,15 @@ data-collapse=true ces-->
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
+> __MEGJEGYZÉS:__ Windows 10-en lehet hogy egy hibaüzenetet kapsz Windows PowerShell-ben, amely szerint `execution of scripts is disabled on this system` (scriptek futtatása le van tiltva ezen a rendszeren). Ebben az esetben nyiss egy másik Windows PowerShell-t a "Run as Administrator" (adminisztrátorként futtatás) opcióval.  Majd próbáld meg az alábbi parancsot beírni mielőtt elindítod a virtuális környezetedet:
+>
+>{% filename %}parancssor{% endfilename %}
+>```
+>C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+>     Execution Policy Change
+>     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>```
+
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
@@ -109,20 +147,20 @@ Most, hogy elindítottad a `virtualenv`-et, telepiteni tudod a Django-t.
 
 Mielőtt ezt megtennénk, meg kell győződnünk arról, hogy a `pip` legfrissebb verzióját használjuk, amelynek segítségével fogjuk tudni telepíteni a Django-t:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
 (myvenv) ~$ pip install --upgrade pip
 ```
 
-Ezután futtasd ezt a parancsot a konzolban: `pip install django~=1.10` (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: `~=`).
+Ezután futtasd ezt a parancsot a konzolban: `pip install django~=1.11` (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: `~=`).
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.10.0
-Collecting django~=1.10.0
-  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
+(myvenv) ~$ pip install django~=1.11.0
+Collecting django~=1.11.0
+  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 <!--sec data-title="Windowson" data-id="django_err_windows"
@@ -135,19 +173,17 @@ data-collapse=true ces-->
 <!--sec data-title="Windows 8 és Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> A parancssorod "megfagyhat" miután telepíteni próbálod a Django-t. Ha ez történik, az előző parancs helyett próbáld meg ezt::
+> A parancssorod "megfagyhat" miután telepíteni próbálod a Django-t. Ha ez történik, az előző parancs helyett próbáld meg ezt:
 >
->{% filename %}command-line{% endfilename %}
+>{% filename %}parancssor{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
+>C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
 >```
 
 <!--endsec-->
 
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
-
-Linuxon
 
 > Ha Ubuntu 12.04 alatt hibát kapsz, amikor a pip-et próbálod hívni, futtasd a `python -m pip install -U --force-reinstall pip` parancsot, hogy megjavítsd a virtualenv-ben a pip feltelepített verzióját.
 

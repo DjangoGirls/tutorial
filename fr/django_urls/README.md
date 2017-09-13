@@ -17,26 +17,26 @@ Chaque page internet a besoin de sa propre URL. Cela permet à votre application
 Ouvrons le fichier `mysite/urls.py` dans notre éditeur de code et regardons à quoi il ressemble :
 
 ```python
-from django.conf.urls import include, url
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'mysite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
 Comme vous pouvez le voir, Django nous a déjà préparé une partie du travail.
 
-Les lignes qui commencent par `#` permettent de commenter notre code : ces lignes ne seront donc pas exécutées par Python. Pratique, non ?
+Les lignes encadrées par trois guillemets (`"""` ou `'''`) sont appelées docstrings ; nous pouvons les ajouter au début de nos fichiers, de nos classes ou de nos méthodes pour décrire ce qu'elles font. Ces lignes ne seront donc pas exécutées par Python.
 
 Comme vous pouvez le voir, l'adresse de l'interface d'administration est déjà en place :
 
 ```python
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ```
 
 Cela signifie que pour chaque URL qui commence par `admin/`, Django affichera la *vue* correspondante. Dans cet exemple, vous pouvez constater que toutes les URLs liées à l'interface d'administration sont contenues dans une seule ligne : en plus d'être pratique, cela rend notre fichier beaucoup plus propre et lisible.
@@ -71,7 +71,8 @@ Bon, il est temps de créer votre première URL ! Nous voulons que "http://127.0
 
 Nous aimerions aussi garder notre fichier `mysite/urls.py` propre. Pour cela, nous allons importer les URLs de notre application `blog` dans notre fichier principal `mysite/urls.py`.
 
-On y va : supprimez les lignes commentées, c'est-à-dire celles qui commencent par `#`. Ensuite, ajoutez une ligne qui va nous permettre d'importer `blog.urls` dans notre URL principale (`''`).
+On y va : ajoutez une ligne qui va nous permettre d'importer `blog.urls` dans notre URL principale (`''`). Notez que nous utilisons ici la fonction `include` et qu'il est donc nécessaire de l'ajouter à l'import de la première ligne de notre fichier.
+
 
 Votre fichier `mysite/urls.py` devrait maintenant ressembler à ceci:
 
@@ -80,7 +81,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
 ]
 ```
@@ -122,4 +123,4 @@ Est-ce que tout fonctionne toujours ? Ouvrez votre navigateur à l'adresse http:
 
 Sur cette page, vous pouvez lire le message **no attribute 'post_list'** (il manque un attribut "post_list"). Est-ce que *post_list* vous rappelle quelque chose ? Yep, c'est le nom que nous avons donné à notre vue ! Cela signifie que nous avons posé les fondations mais, que nous n'avons pas encore créé notre *vue*. Pas de problème, on y vient :).
 
-> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/1.10/topics/http/urls/
+> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/1.11/topics/http/urls/

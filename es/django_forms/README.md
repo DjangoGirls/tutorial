@@ -212,6 +212,16 @@ Agrégalo al principio del archivo. Y ahora podemos decir: vé a la página `pos
 ```python
     return redirect('post_detail', pk=post.pk)
 ```    
+Si este paso te da un error "NoReverseMatch", es debido a que la url no ha sido nombrada.
+
+En el archivo `blog/urls.py` Cambia lo siguiente:
+```python
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail)
+```
+por
+```python
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail,  name='post_detail')
+```
 
 `post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado.
 

@@ -121,7 +121,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```    
 
-Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve template'e iletmek gerekir. Bu *view*'a geri döneceğiz, fakat öncesinde form için hızlıca bir şablon oluşturalım.
+Yeni bir `Post` formu oluşturmak için `PostForm()`u çağırmak ve template'e iletmek gerekir. Bu *view*'a geri döneceğiz, fakat öncesinde form için hızlıca bir şablon oluşturalım.
 
 ## Template
 
@@ -231,8 +231,8 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})yazar
-
+    return render(request, 'blog/post_edit.html', {'form': form})
+```
 
 Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidip bir `baslik` ve `yazi` ekleyelim, sonra da kaydedelim... ve işte! Yeni blog postu eklenmiş ve `post_detail` sayfasına yönlendirildik!
 
@@ -341,7 +341,7 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 Tebrikler! Uygulaman gittikçe tamamlanıyor!
 
-Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.10/topics/forms/ adresindeki dokümanlara bakabilirsin
+Django formları hakkında daha fazla bilgi bulmak için https://docs.djangoproject.com/en/1.11/topics/forms/ adresindeki dokümanlara bakabilirsin
 
 ## Güvenlik
 

@@ -139,6 +139,8 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
 
+<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
+
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
@@ -180,17 +182,17 @@ Just like you did on your own computer, you can create a virtualenv on PythonAny
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.10.0
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 
@@ -219,7 +221,7 @@ Now our code is on PythonAnywhere, our virtualenv is ready, and the database is 
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
 
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
+After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
 
 > **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
 
@@ -241,14 +243,14 @@ Django works using the "WSGI protocol", a standard for serving websites using Py
 
 Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
 
-Delete all the contents and replace them with something like this:
+Delete all the contents and replace them with the following:
 
 {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
 ```python
 import os
 import sys
 
-path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
+path = os.path.expanduser('~/my-first-blog')
 if path not in sys.path:
     sys.path.append(path)
 
@@ -258,9 +260,6 @@ from django.core.wsgi import get_wsgi_application
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
-
-> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`.
-> **Note** In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
@@ -281,7 +280,7 @@ If you see an error when you try to visit your site, the first place to look for
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.5.
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 

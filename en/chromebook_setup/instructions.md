@@ -42,7 +42,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 {% filename %}Cloud 9{% endfilename %}
 ```
 sudo apt update
-sudo apt install python3.5-venv
+sudo apt install python3.6-venv
 ```
 
 If this still doesn't work, ask your coach for some help.
@@ -53,9 +53,9 @@ Next, run:
 ```
 mkdir djangogirls
 cd djangogirls
-python3.5 -mvenv myvenv
+python3.6 -mvenv myvenv
 source myvenv/bin/activate
-pip install django~=1.10.0
+pip install django~=1.11.0
 ```
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).

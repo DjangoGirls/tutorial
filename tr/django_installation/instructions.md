@@ -101,11 +101,11 @@ Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Djan
 
 ## Django'yu yüklemek
 
-`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.10` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
+`virtualenv`'i başlattığınız için artık Django'yu `pip` kullanarak yükleyebiliriz. Konsola `pip install django==1.11` komutunu yazın. (İki tane eşittir işareti kullandık: `==`).
 
 ```
-(myvenv) ~$ pip install django==1.10
-Downloading/unpacking django==1.10
+(myvenv) ~$ pip install django==1.11
+Downloading/unpacking django==1.11
 Installing collected packages: django
 Successfully installed django
 Cleaning up...

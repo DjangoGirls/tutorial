@@ -5,7 +5,7 @@ Git이란 "버전 관리 시스템(version control system)"으로 많은 프로�
 <!--sec data-title="Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Git은 [git-scm.com](https://git-scm.com/)에서 내려받을 수 있습니다. 설치는 쉽답니다. 딱 한 단계만 빼고 기본 설정대로 `다음 다음 다음`을 계속 눌러주면 쉽게 설치할 수 있어요. 다섯 번째 `PATH 환경 설정(Adjusting your PATH environment)`화면에서 주의하세요. 윈도우 커맨드라인에서 `Git과 유닉스 도구를 실행(Run Git and associated Unix tools from the Windows command-line)`을 선택하세요. 나머지는 모두 기본 설정대로 해도 됩니다. `윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings)`를 체크하는 것도 좋습니다.
+Git은 [git-scm.com](https://git-scm.com/)에서 내려받을 수 있습니다. 설치는 쉽답니다. 딱 한 단계만 빼고 기본 설정대로 `다음 다음 다음`을 계속 눌러주면 쉽게 설치할 수 있어요. 다섯 번째 `PATH 환경 설정(Adjusting your PATH environment)`화면에서 주의하세요. `윈도우 커맨드라인에서 Git과 유닉스 도구를 사용(Use Git and optional Unix tools from the Windows Command Prompt)`을 선택하세요. 나머지는 모두 기본 설정대로 해도 됩니다. `윈도우 스타일로 체크아웃, 유닉스 스타일로 라인엔딩 커밋하기(Checkout Windows-style, commit Unix-style line endings)`를 체크하는 것도 좋습니다.
 
 <!--endsec-->
 

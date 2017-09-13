@@ -146,7 +146,7 @@ Maintenant, nous allons pouvoir définir les propriétés dont nous parlions au 
 *   `models.DateTimeField` - Définit que le champ en question est une date ou une heure.
 *   `models.ForeignKey` - C'est un lien vers un autre modèle.
 
-Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. Si vous voulez en savoir un peu plus sur les différents champs disponibles dans les modèles ou que vous aimeriez définir quelque chose qui n'est pas listé dans les exemples ci-dessus, n'hésitez pas à consulter la documentation de Django (https://docs.djangoproject.com/fr/1.10/ref/models/fields/#field-types).
+Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. Si vous voulez en savoir un peu plus sur les différents champs disponibles dans les modèles ou que vous aimeriez définir quelque chose qui n'est pas listé dans les exemples ci-dessus, n'hésitez pas à consulter la documentation de Django (https://docs.djangoproject.com/fr/1.11/ref/models/fields/#field-types).
 
 Et sinon, c'est quoi `def publish(self):` ? Il s'agit de notre méthode `publish` dont nous parlions tout à l'heure. `def` signifie que nous créons une fonction/méthode qui porte le nom `publish`. Vous pouvez changer le nom de la méthode si vous le souhaitez. N'oubliez pas les règles de nommage et pensez à utiliser des minuscules et des tirets bas à la place des espaces. Par exemple, une méthode qui calcule le prix moyen d'un produit pourrait s'appeler `calcul_prix_moyen`.
 

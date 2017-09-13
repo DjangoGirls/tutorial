@@ -1,4 +1,4 @@
-A Git egy "verziókövető rendszer", amelyet nagyon sok programozó használ. Ez a program file-ok változait tudja követni, ami által egy adott verziót később is elő tudsz hívni. Valamelyest hasonlít a Microsoft Word "track changes" funkciójához, de annál sokkal hatékonyabb.
+A Git egy "version control system" (VCS, magyarul verziókezelő rendszer), amit sok programozó használ. Ez a szoftver nyomon követ minden változást a fájlokban, így a későbbiekben is visszatérhetünk egy bizonyos régebbi verzióhoz. Valamelyest hasonlít a "változások nyomon követése" funkcióhoz a Microsoft Wordben, de ez jóval hatékonyabb.
 
 ## Git telepítése
 
@@ -21,7 +21,7 @@ Töltsd le a Git-tet az alábbi linken: [git-scm.com](https://git-scm.com/), maj
 <!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```bash
 $ sudo apt-get install git
 ```
@@ -31,7 +31,7 @@ $ sudo apt-get install git
 <!--sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```bash
 $ sudo yum install git
 ```
@@ -41,7 +41,7 @@ $ sudo yum install git
 <!--sec data-title="Fedora 22+" data-id="git_install_fedora_22"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```bash
 $ sudo dnf install git
 ```
@@ -51,7 +51,7 @@ $ sudo dnf install git
 <!--sec data-title="openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}parancssor{% endfilename %}
 ```bash
 $ sudo zypper install git
 ```

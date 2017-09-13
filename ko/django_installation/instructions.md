@@ -76,7 +76,7 @@ Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '
 {% filename %}command-line{% endfilename %}
 ```
 $ sudo apt-get install python-virtualenv
-$ virtualenv --python=python3.5 myvenv
+$ virtualenv --python=python3.6 myvenv
 ```
 
 > **Note** 아래와 같은 오류가 발생한다면
@@ -90,7 +90,7 @@ E: Unable to locate package python3-venv
 
 {% filename %}command-line{% endfilename %}
 ```
-sudo apt install python3.5-venv
+sudo apt install python3.6-venv
 ```
 
 <!--endsec-->
@@ -156,15 +156,15 @@ $ . myvenv/bin/activate
 ```
 (myvenv) ~$ pip install --upgrade pip
 ```
-그런 다음 `pip install django~=1.10.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
+그런 다음 `pip install django~=1.11.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.10.0
-Collecting django~=1.10.0
-  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
+(myvenv) ~$ pip install django~=1.11.0
+Collecting django~=1.11.0
+  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
 <!--sec data-title="Windows" data-id="django_err_windows" data-collapse=true ces-->

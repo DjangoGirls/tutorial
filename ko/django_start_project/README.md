@@ -40,8 +40,7 @@
 
 > 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시입니다)
 >
-> **Note** 위 명령을 입력할 때 `django-admin.py`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) C:\Users\Name\djangogirls>`부분은 커맨드 라인에 입력을 가져오게 하는 메세지(프롬트프 prompt)입니다.
-
+> **Note** 위 명령을 입력할 때 `django-admin.py`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) C:\Users\Name\djangogirls>`부분은 커맨드 라인에 입력을 가져오게 하는 메세지(프롬프트 prompt)입니다.
 
 <!--endsec-->
 
@@ -49,8 +48,8 @@
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
+    └───mysite
+            settings.py
             urls.py
             wsgi.py
             __init__.py
