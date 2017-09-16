@@ -67,7 +67,7 @@ Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da p
 
 Por exemplo, você pode por o elemento título de uma página web dentro da tag `<head>`. Veja:
 
-% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <html>
     <head>

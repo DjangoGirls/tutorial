@@ -42,7 +42,7 @@ Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date
 Agora nós colocamos este pedaço de código dentro do arquivo `blog/views.py` adicionando-o à função `def post_list(request)`,
 mas não se esqueça de primeiro adicionar `from django.utils import timezone`:
 
-% filename %}blog/views.py{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
 from django.utils import timezone
