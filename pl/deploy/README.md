@@ -316,7 +316,7 @@ Najpierw upewnij się, że zmieniłaś tylko plik `settings.py`:
 Następnie zapisz te zmiany w repozytorium:
 
     $ git add --all
-    $ git commit -m 'Added my server to ALLOWED_HOSTS'
+    $ git commit -m "Added my server to ALLOWED_HOSTS"
 
 Po czym "wypchnij" zmiany do GitHuba:
 
