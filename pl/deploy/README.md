@@ -177,7 +177,7 @@ Tak samo jak to robiłaś na swoim komputerze, możesz stworzyć środowisko wir
 
     $ source myvenv/bin/activate
 
-    (myvenv) $  pip install django whitenoise
+    (myvenv) $  pip install django==1.8.2 whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
