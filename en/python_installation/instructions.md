@@ -67,20 +67,7 @@ $ sudo apt-get install python3.6
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
-data-collapse=true ces-->
-
-
-Use this command in your console:
-
-{% filename %}command-line{% endfilename %}
-```
-$ sudo yum install python3
-```
-
-<!--endsec-->
-
-<!--sec data-title="Fedora (22+)" data-id="python_fedora22"
+<!--sec data-title="Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
 Use this command in your console:
@@ -89,6 +76,8 @@ Use this command in your console:
 ```
 $ sudo dnf install python3
 ```
+
+If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
 
 <!--endsec-->
 
