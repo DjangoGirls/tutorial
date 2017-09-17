@@ -101,7 +101,7 @@ Agora salve `base.html` e abra o arquivo `blog/templates/blog/post_list.html` no
 Nós queremos usar essa parte de nosso template para todos os blocos "content".
 Hora de adicionar tags de bloco ("block") nesse arquivo!
 
-{% raw %}Você quer que sua tag de bloco ("block") corresponda com a tag em seu arquivo `base.html`. Você também quer que ela inclua todo o código que pertence ao seus blocos "content". Para fazer isso, coloque tudo entre `{% block content %}` e `{% endblock content %}`. Dessa forma:{% endraw %}
+{% raw %}Você quer que sua tag de bloco ("block") corresponda com a tag em seu arquivo `base.html`. Você também quer que ela inclua todo o código que pertence ao seus blocos "content". Para fazer isso, coloque tudo entre `{% block content %}` e `{% endblock %}`. Dessa forma:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html

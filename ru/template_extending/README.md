@@ -101,7 +101,7 @@
     {% extends 'blog/base.html' %}
 ```
 
-{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block content %}` и `{% endblock content %}`. Таким образом:{% endraw %}
+{% raw %}Таким образом мы расширили шаблон `base.html` шаблоном `post_list.html`. Осталось последнее: обернуть все (кроме добавленной выше первой строки) в `{% block content %}` и `{% endblock %}`. Таким образом:{% endraw %}
 
 ```html
     {% extends 'blog/base.html' %}
@@ -116,7 +116,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
 
 Готово! Проверь, что твой веб-сайт работает нормально :)

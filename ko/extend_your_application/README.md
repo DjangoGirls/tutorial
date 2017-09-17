@@ -26,7 +26,7 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %} `post`제목 목록이 보이고 해당 링크를 클릭하면, `post`상세 페이지로 이동하게 만들어 볼 거에요. `<h1><a href="">{{ post.title }}</a></h1>`부분을 수정해 봅시다. {% endraw %}

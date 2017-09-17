@@ -25,7 +25,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}Nós queremos ter um link com o título da postagem na lista de postagens para a página de detalhes da postagem. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` para que ele redirecione para a página de detahles da postagem:{% endraw %}

@@ -25,7 +25,7 @@ Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.htm
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
     
 
