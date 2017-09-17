@@ -65,15 +65,6 @@ Wpisz w konsoli poniższe polecenie:
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="python_fedora"
-data-collapse=true ces-->
-
-Użyj następującego polecenia w konsoli:
-
-    $ sudo yum install python3.6
-
-<!--endsec-->
-
 <!--sec data-title="Fedora (22+)" data-id="python_fedora22"
 data-collapse=true ces-->
 

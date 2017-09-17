@@ -29,15 +29,7 @@ Terminale bu komutu girin:
 $ sudo apt-get install python3.4
 ```    
 
-#### Fedora (21'e kadar)
-
-Terminalde kullanmanız gereken komut:
-
-```
-$ sudo yum install python3.4
-```    
-
-#### Fedora (22+)
+#### Fedora
 
 Terminalde kullanmanız gereken komut:
 

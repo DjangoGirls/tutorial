@@ -27,14 +27,7 @@ Django 是用 Python 写的。 在 Django 中，我们需要使用 Python 语言
     $ sudo apt-get install python3.4
     
 
-#### Fedora (up to 21)
-
-在您的控制台中使用此命令：
-
-    $ sudo yum install python3.4
-    
-
-#### Fedora (22+)
+#### Fedora
 
 在您的控制台中使用此命令：
 

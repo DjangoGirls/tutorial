@@ -27,14 +27,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
     $ sudo apt-get install python3.4
     
 
-#### Fedora (версии вплоть до 21)
-
-Используй следующую команду в консоли:
-
-    $ sudo yum install python3.4
-    
-
-#### Fedora (версии 22 и выше)
+#### Fedora
 
 Используй следующую команду в консоли:
 

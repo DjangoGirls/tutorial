@@ -46,15 +46,6 @@ data-collapse=true ces-->
     
 <!--endsec-->
 
-<!--sec data-title="Fedora (21-es verzióig)" data-id="python_fedora"
-data-collapse=true ces-->
-
-Írd be az alábbi programot a konzolba:
-
-    $ sudo yum install python3.4
-    
-<!--endsec-->
-
 <!--sec data-title="Fedora (22+)" data-id="python_fedora22"
 data-collapse=true ces-->
 
