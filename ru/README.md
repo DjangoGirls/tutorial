@@ -1,6 +1,6 @@
 # Руководство Django Girls
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0
 Чтобы ознакомиться с содержанием этой лицензии, посети: https://creativecommons.org/licenses/by-sa/4.0/
@@ -30,7 +30,7 @@
 
 ![Рисунок 0.1](images/application.png)
 
-> Если ты будешь работать над учебником самостоятельно и без тренера, который смог бы помочь при необходимости, то у нас есть для тебя чат: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Мы попросили наших тренеров и успешно прошедших обучение участников заглядывать туда время от времени и помогать остальным! Не стесняйся задавать там свои вопросы!
+> Если ты будешь работать над учебником самостоятельно и без тренера, который смог бы помочь при необходимости, то у нас есть для тебя чат: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Мы попросили наших тренеров и успешно прошедших обучение участников заглядывать туда время от времени и помогать остальным! Не стесняйся задавать там свои вопросы!
 
 Хорошо, [давай начнем с начала...][3]
 
