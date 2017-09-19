@@ -46,7 +46,7 @@ It is very likely that you already have Python installed out of the box. To chec
 
 {% filename %}command-line{% endfilename %}
 ```
-$ python3 --version
+$ python --version
 Python 3.6.1
 ```
 
