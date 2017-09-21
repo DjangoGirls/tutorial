@@ -6,13 +6,13 @@
         }
     },
     "pdf": {
-        "fontSize": 14
+        "fontSize": 16
     },
     "plugins": [
         "heading-anchors@1.0.3",
-        "ga@1.0.1",
-        "richquotes@0.0.7",
-        "github@2.0.0",
+        "ga@2.0.0",
+        "richquotes@0.0.9",
+        "github@3.0.0",
         "language-picker",
         "sidebar-ad",
         "codeblock-label",
