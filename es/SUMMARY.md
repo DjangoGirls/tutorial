@@ -22,5 +22,4 @@
 *   [Extender plantillas](template_extending/README.md)
 *   [Amplía tu aplicación](extend_your_application/README.md)
 *   [Formularios en Django](django_forms/README.md)
-*   [Dominio](domain/README.md)
 *   [¿Qué sigue?](whats_next/README.md)
