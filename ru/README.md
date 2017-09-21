@@ -1,8 +1,16 @@
 # Руководство Django Girls
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0 Чтобы ознакомиться с содержанием этой лицензии, посети: https://creativecommons.org/licenses/by-sa/4.0/
+> Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0
+Чтобы ознакомиться с содержанием этой лицензии, посети: https://creativecommons.org/licenses/by-sa/4.0/
+
+## Вступительное слово
+
+Добро пожаловать в руководство Django Girls! Мы рады тебя здесь видеть :) В этом руководстве мы заглянем за кулисы веб-технологий и дадим 
+базовое представление о тех вещах, которые собираются в общую картину веба таким, каким мы его знаем.
+
+Как и с любой незнакомой темой – это будет приключением. Но не волнуйся, тебе уже хватило смелости оказаться здесь, так что всё будет хорошо :) 
 
 ## Введение
 
@@ -22,11 +30,17 @@
 
 ![Рисунок 0.1](images/application.png)
 
-> Если ты будешь работать над учебником самостоятельно и без тренера, который смог бы помочь при необходимости, то у нас есть для тебя чат: [!\[Gitter\](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Мы попросили наших тренеров и успешно прошедших обучение участников заглядывать туда время от времени и помогать остальным! Не стесняйся задавать там свои вопросы!
+> Если ты будешь работать над учебником самостоятельно и без тренера, который смог бы помочь при необходимости, то у нас есть для тебя чат: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Мы попросили наших тренеров и успешно прошедших обучение участников заглядывать туда время от времени и помогать остальным! Не стесняйся задавать там свои вопросы!
 
 Хорошо, [давай начнем с начала...][3]
 
  [3]: ./how_the_internet_works/README.md
+
+## Прохождение руководства дома
+
+Принимать участие в воркшопе Django Girls – это потрясающе, но мы понимаем, что не всегда есть такая возможность. Поэтому мы приветствуем прохождение
+данного руководства дома. В настоящий момент мы готовим видео, которое поможет следовать руководству самостоятельно. Работа над ними ещё не закончена,
+но все больше и больше тем скоро будут разобраны на YouTube-канале [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
 ## Сотрудничество и дополнительная информация
 
