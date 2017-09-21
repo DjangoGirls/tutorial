@@ -32,7 +32,11 @@ Pero ahora no queremos salir de la consola de Python. Queremos aprender más sob
     5
     
 
-¡Bien! ¿Ves como salió la respuesta? ¡Python sabe matemáticas! Podrías intentar otros comandos como: - `4 * 5` - `5 - 1` - `40 / 2`
+¡Bien! ¿Ves como salió la respuesta? ¡Python sabe matemáticas! Podrías intentar otros comandos como:
+
+- `4 * 5`
+- `5 - 1`
+- `40 / 2`
 
 Diviértete con esto por un momento y luego vuelve aquí :).
 
