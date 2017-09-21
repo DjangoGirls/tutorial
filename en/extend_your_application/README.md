@@ -37,11 +37,11 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit – `post_detail` – is the name of the *view*.
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
 And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -101,6 +101,8 @@ We don't want that! But, of course, Django comes with something that will handle
 The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
+
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called  `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
 We should open `blog/views.py` and add the following code near the other `from` lines:
 
