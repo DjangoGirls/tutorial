@@ -94,7 +94,7 @@ Writing regular expressions in Python is always done with `r` in front of the st
 
 ## blog.urls
 
-Create a new empty file named `blog/urls.py`. All right! Add these first two lines:
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
