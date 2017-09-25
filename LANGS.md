@@ -1,6 +1,6 @@
 * [🇺🇸 English](en/)
 * [🇨🇿 Czech (beta)](cs/)
-* [Deutsch (beta)](de/)
+* [🇩🇪 Deutsch (beta)](de/)
 * [🇪🇸 Español (beta)](es/)
 * [🇫🇷 Français](fr/)
 * [🇮🇹 Italian (beta)](it/)
