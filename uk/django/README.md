@@ -1,26 +1,26 @@
 # Що таке Django?
 
-Django (_/ˈdʒæŋɡoʊ/ джанго_) - безкоштовний і відкритий фреймворк для створення веб додатків, написаний мовою програмування Python. Веб фреймворк - набір компонентів, які допомагають розробляти веб-сайти швидше і простіше.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Веб фреймворк - набір компонентів, які допомагають розробляти веб-сайти швидше і простіше.
 
-При побудові веб-сайту, ви завжди потребуєте схожого набору компонентів: спосіб управління авторизацією користувача (створення акаунту, вхід, вихід), панель управління, форми, спосіб завантажити файли, тощо.
+При побудові веб-сайту, ви завжди потребуєте схожого набору компонентів: способу управління авторизацією користувача (створення акаунту, вхід, вихід), панелі управління, форм, способу завантажити файли, тощо.
 
-На щастя для вас інші люди вже давно помітили, що веб розробники зіштовхуються з подібними проблемами під час розробки нового сайту, отже вони об'єднались в команду і створили фреймворки (Django є одним з таких), що дають вам вже готові до використання компоненти.
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-Фреймворки існують для того, щоб вберегти вас від необхідності повторно винаходити велосипед і допомогти зменшити деякі накладні витрати під час розробки нового сайту. 
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
 ## Навіщо вам потрібен фреймворк?
 
-Щоб зрозуміти для чого насправді розроблений Django, потрібно ближче розглянути роботу серверу. Першочергово сервер повинен знати про те, що ви бажаєте щоб він обслуговував ваш сайт.
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-Уявіть собі поштову скриньку (порт), котра моніториться на вхідні листи (запити). Це здійснюється веб сервером. Веб сервер читає листа і відсилає відповідь із веб-сторінкою. Але коли ви бажаєте відправити дещо, вам потрібно мати деякий вміст. І Django є інструментом, котрий допомагає вам створити цей контент.
+Уявіть собі поштову скриньку (порт), котра моніториться на вхідні листи (запити). Це здійснюється веб сервером. The web server reads the letter and then sends a response with a webpage. Але коли ви бажаєте відправити дещо, вам потрібно мати деякий вміст. І Django є інструментом, котрий допомагає вам створити цей контент.
 
 ## Що трапляється коли хтось надсилає запит на веб-сайт з вашого серверу?
 
-Коли на веб-сервер надходить запит, він перенаправляється на Django, котрий намагається з'ясувати на що конкретно був запит. Спочатку береться адреса веб-сторінки і Django намагається з'ясувати, що робити. Ця частина роботи здійснюється таким компонентом Django як __urlresolver__ (зауважте, що адреса веб-сайту називається URL - Uniform Resource Locator - отже ім'я *urlresolver* має сенс). Це не дуже складний елемент - вилучається список шаблонів і відбуваються спроби знайти підходящий URL. Django перевіряє шаблони у порядку слідування і якщо якийсь із них відповідає адресі веб-сторінки Django надсилає запит до асоційованої функції (котра має назву *view*).
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-Уявіть собі листоношу з листом. Він йде по вулиці і звіряє номер кожного будинку з тим, що вказаний в адресі отримувача. Якщо номер співпадає, він кладе листа в скриньку. Аналогічним чином працює і urlresolver!
+Уявіть листоношу з листом. Вона йде по вулиці і звіряє номер кожного будинку з тим що вказаний в адресі отримувача. Якщо номер співпадає, вона кладе листа в скриньку. Аналогічним чином працює urlresolver!
 
-Всередині функції *view* відбуваються найцікавіші речі: щоб знайти деяку інформацію, ми можемо подивитися в базу даних. Можливо, користувач може попросити зробити певні зміни даних? На зразок листа, що говорить "Будь ласка, змініть опис моєї роботи." Елемент *view* може перевірити чи дозволено вам це зробити, потім оновлює опис роботи для вас і відправляє зворотнє повідомлення: "Виконано!". Далі блок *view* генерує відповідь і Django може відправити її до веб браузера користувача.
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Можливо, користувач може попросити зробити певні зміни даних? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
 Звичайно, вище наведені пояснення є трохи спрощеними, але вам не потрібно знати усіх технічних деталей поки що. Достатньо мати загальне уявлення.
 
