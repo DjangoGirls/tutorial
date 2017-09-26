@@ -1,4 +1,4 @@
-குறியீடு தொகுப்பி (Code editor)கள் பல உண்டு ஆனால் எதை பயன் படுத்துவது என்பது சொந்த விருப்பத்தை பொறுத்தது. பெரும்பாலான Python நிரலாக்குனர்கள்(programmerகள்) சிக்கலான ஆனால் சக்திவாய்ந்த PyCharm போன்ற IDE( (Integrated Development Environment)க்களை பயன்படுத்துகிறார்கள். அது ஒரு துவக்குனராக உங்களுக்கு பொருத்தமற்றதாக இருக்கலாம். ஆனால் எங்களது பரிந்துரைகள் எளிமையான ஆனால் அதற்கு இணையான சக்திவாய்ந்ததாக இருக்கும். 
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
