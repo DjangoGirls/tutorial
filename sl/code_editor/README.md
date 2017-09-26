@@ -1,8 +1,8 @@
-# Urejevalnik programske kode
+# Code editor
 
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-Si tik pred tem, da napišeš svoj prvi program, zato je čas, da namestiš urejevalnik programske kode!
+You're about to write your first line of code, so it's time to download a code editor!
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
