@@ -1,18 +1,18 @@
 # Django templates
 
-Saatnya menampilkan data! Django menyediakan fitur bawaan berupa **template tags** untuk keperluan tersebut.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## Apa itu template tags?
+## What are template tags?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-## Menampilkan template post list
+## Display post list template
 
-Di pembahasan sebelumnya kita menyediakan post list ke dalam variabel `posts`.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Untuk mencetak variabel ke dalam Django templates, kita menggunakan dua buah karakter kurung kurawal denga nama variable di dalamnya, seperti ini:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ Untuk mencetak variabel ke dalam Django templates, kita menggunakan dua buah kar
 {{ posts }}
 ```
 
-Terapkan ke template `blog/templates/blog/post_list.html`. Ubah semua dari `<div>` kedua sampai dengan `</div>` ketiga ganti dengan `{{ posts }}`. Simpan file, dan refresh halaman untuk melihat hasil perubahan:
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
-Seperti yang bisa kita lihat, tercetak seperti berikut:
+As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ Seperti yang bisa kita lihat, tercetak seperti berikut:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Yang berarti Django dapat mengenalinya sebagai list objek. Ingat pembahasan dari **Introduction to Python** bagaimana kita menampilkan list? Ya, dengan loop! Di Django template, kita menerapkannya seperti ini:
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,7 +42,7 @@ Yang berarti Django dapat mengenalinya sebagai list objek. Ingat pembahasan dari
 {% endfor %}
 ```
 
-Cobalah terapkan di template.
+Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
