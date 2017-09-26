@@ -1,4 +1,4 @@
-# インターネットのしくみ
+# How the Internet works
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
@@ -6,33 +6,33 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-まず最初に理解する必要があるのは、ウェブサイトがちょうどハードディスクで保存されるたくさんのファイルであるということです。 同様に、映画、音楽、または画像。 ただし、web サイトに対して一意である 1 つの部分がある: 彼らは、HTML と呼ばれるコンピューター コードを含まれます。
+The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-あなたがプログラミングをよく知っていないならば、最初はHTMLをつかむのは難しいでしょう。しかし、あなたのウェブ・ブラウザ（Chrome、Safari、Firefoxなどのような）はそれが好きです。 ウェブ・ブラウザはこのコードがわかるようになっていて、あなたのウェブサイトのファイルを表示するよう設計されています。
+If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
-すべてのファイルと同様我々 はどこかハード ディスク上の HTML ファイルを保存する必要があります。 インターネット *サーバー* と呼ばれる特別な強力なコンピューターを使用します。 サーバーの主な目的は、データを格納する事。ですがそれを提供するため、画面、マウスまたはキーボードを持っていません。 That's why they're called *servers* – because they *serve* you data.
+As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
 OK, but you want to know how the Internet looks, right?
 
-私たちは絵を書きました。
+We drew you a picture! It looks like this:
 
-![図 1.1](images/internet_1.png)
+![Figure 1.1](images/internet_1.png)
 
-混乱しているように見えますか？ In fact it is a network of connected machines (the above-mentioned *servers*). マシンの何千もの何百も! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-![図 1.2](images/internet_3.png)
+![Figure 1.2](images/internet_3.png)
 
 It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 It looks like this:
 
-![図 1.3](images/internet_2.png)
+![Figure 1.3](images/internet_2.png)
 
 Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
 Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
-![図 1.4](images/internet_4.png)
+![Figure 1.4](images/internet_4.png)
 
 Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
