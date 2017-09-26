@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Blog yang kita buat masih terlihat jelek, kan? Sekarang waktunya untuk mempercantik tampilannya! Kita akan menggunakan CSS untuk itu.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## Apa itu CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Mari kita gunakan Bootstrap!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Memasang Bootstrap
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,17 +29,17 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Langsung berubah menjadi lebih indah!
+Looking nicer already!
 
-## Static files di Django
+## Static files in Django
 
-Mari kita bahas apa itu **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Dimana menyimpan static files untuk Django
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-Kita melakukan itu dengan cara membuat folder bernama `static` didalam blog app:
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -50,9 +50,9 @@ Kita melakukan itu dengan cara membuat folder bernama `static` didalam blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## File CSS pertama mu!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Buat sebuah folder bernama `css` di dalam folder `static`. Kemudian buat sebuah file bernama `blog.css` di dalam folder `css`. Ready?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. Buat sebuah
                    └─── blog.css
     
 
-Saatnya menulis CSS! Buka file `blog/static/css/blog.css` kedalam teks editor mu.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Tapi, mari kita coba. Mungkin kita bisa coba mengubah warna Headernya? Untuk memahami warna, komputer menggunakan kode khusus. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-Dalam berkas `blog/static/css/blog.css` kamu harus ditambahkan kode seperti berikut:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` adalah selector dalam CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Pada contoh kali ini, kita memberitahukan untuk melakukan perubahan warna menjadi `#FCA205`, yang dimana warna tersebut adalah Jingga. Tentu saja, kamu bisa menempatkan warna mu sendiri disini!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-Dalam berkas CSS kita menentukan styles untuk elemen yang berada pada berkas HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class dan id adalah nama-nama elemen yang kamu berikan sendiri. Class-class mendefinisikan kelompok-kelompok elemen, dan id menunjuk pada elemen khusus. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
