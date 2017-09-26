@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# Einführung in die Kommandozeile
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Erstmal stellen wir dir deine neue Freundin vor: Die Konsole!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Im Folgenden zeigen wir dir, wie du das schwarze Fenster benutzt, das alle Hackerinnen nutzen. Es sieht vielleicht erstmal etwas unheimlich aus, aber es ist nur ein Programm, das darauf wartet, Anweisungen von dir zu bekommen.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## Was ist die Konsole?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **Kommandoleisten-Interface** (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Open the command-line interface
+## Öffnen der Konsole
 
-To start some experiments we need to open our command-line interface first.
+Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogramm starten.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -38,13 +38,13 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
-## Prompt
+## Eingabeaufforderung (Prompt)
 
-You now should see a white or black window that is waiting for your commands.
+Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisungen wartet.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## Dein erstes Kommando (YAY!)
 
 Let's start with something simple. Type this command:
 
@@ -106,7 +106,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Basics
+## Grundlagen
 
 Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
@@ -151,10 +151,10 @@ So what's in it? It'd be cool to find out. Let's see:
 {% filename %}command-line{% endfilename %}
 
     $ ls
-    Applications
+    Anwendungen
     Desktop
     Downloads
-    Music
+    Musik
     ...
     
 
@@ -166,11 +166,10 @@ So what's in it? It'd be cool to find out. Let's see:
 
     > dir
      Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
+     05/08/2014 07:28 PM <DIR> Applications 
+     05/08/2014 07:28 PM <DIR> Desktop
+     05/08/2014 07:28 PM <DIR> Downloads
+     05/08/2014 07:28 PM <DIR> Music ...
     
 
 > Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
@@ -259,16 +258,15 @@ This little command will create a folder with the name `practice` on your deskto
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### Lösung:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd practice
-    $ mkdir test
-    $ ls
-    test
+    $ mkdir test 
+    $ ls test
     
 
 <!--endsec-->
@@ -277,10 +275,10 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+    > cd practice 
+    > mkdir test 
+    > dir 
+    05/08/2014 07:28 PM <DIR>   test
     
 
 <!--endsec-->
@@ -354,7 +352,7 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
+    > rmdir /S practice 
     practice, Are you sure <Y/N>? Y
     
 
@@ -408,17 +406,17 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung               | Beispiel                                          |
+| ---------------- | ----------------------- | -------------------------- | ------------------------------------------------- |
+| exit             | exit                    | Fenster schließen          | **exit**                                          |
+| cd               | cd                      | Verzeichnis wechseln       | **cd test**                                       |
+| cd               | pwd                     | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir              | ls                      | list directories/files     | **dir**                                           |
+| copy             | cp                      | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                      | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                   | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)   | rm                      | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                   | delete a directory         | **rm -r testdirectory**                           |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
