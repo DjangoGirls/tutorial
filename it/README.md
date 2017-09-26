@@ -1,16 +1,22 @@
 # Il tutorial di Django Girls
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita https://creativecommons.org/licenses/by-sa/4.0/
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+
+## Welcome
+
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
 ## Introduzione
 
-Hai mai sentito che il mondo sta diventando sempre più tecnologico e sei in qualche modo rimasto indietro? ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
 
 Beh, abbiamo buone notizie per te! La programmazione non è così complicata come sembra e vogliamo dimostrati quanto può essere divertente.
 
-Il tutorial non ti trasformerà magicamente in un programmatore. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che la programmazione o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
+This tutorial will not magically turn you into a programmer. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che la programmazione o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
 
 Speriamo di essere in grado di farti amare la tecnologia come lo facciamo noi!
 
@@ -20,29 +26,26 @@ Una volta che avrai terminato il tutorial, avrai a disposizione una semplice app
 
 Assomiglierà (più o meno) a questo:
 
-![Figure 0.1][2]
+![Figure 0.1](images/application.png)
 
- [2]: images/application.png
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di esserci di volta in volta ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
-> Se lavori da solo/a al tutorial e non hai un'insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di esserci di volta in volta ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-OK, [cominciamo dall'inizio...][3]
+## Following the tutorial at home
 
- [3]: ./how_the_internet_works/README.md
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
 
 ## Informazioni e contribuzioni
 
-Questo tutorial è mantenuto da [DjangoGirls][4]. Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori][5].
-
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Vorresti aiutarci a tradurre il tutorial in un altra lingua?
 
-Attualmente, le traduzioni vengono mantenute sulla piattaforma crowdin.com in:
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Se la tua lingua non è elencata su crowding, per favore [apri una nuova istanza][6] con la tua lingua in modo che possiamo aggiungerla.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
