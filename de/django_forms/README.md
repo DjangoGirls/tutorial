@@ -1,14 +1,14 @@
 # Django Forms
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogposts hinzuzufügen und zu editieren. Die Django `admin`-Oberfläche ist cool, aber eher schwierig anzupassen und hübsch zu machen. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Das Gute an Django Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post` Model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Wir erstellen nun eine Datei mit diesem Namen im `blog` Verzeichnis.
 
     blog
        └── forms.py
@@ -26,8 +26,8 @@ from .models import Post
 class PostForm(forms.ModelForm):
 
     class Meta:
-        model = Post
-        fields = ('title', 'text',)
+         model = Post
+         fields = ('title', 'text',)
 ```
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
@@ -42,7 +42,7 @@ And that's it! All we need to do now is use the form in a *view* and display it 
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Link to a page with the form
+## Link auf eine Seite mit dem Formular
 
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
@@ -114,7 +114,7 @@ urlpatterns = [
 
 After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
-## post_new view
+## Der post_new View
 
 Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
@@ -143,7 +143,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 * We have to display the form. We can do that with (for example) a simple {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Das ist sehr wichtig, da es deine Formulare sicher macht! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -173,7 +173,7 @@ Nothing! We are once again on the same page and our text is gone… and no new p
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
-## Saving the form
+## Speichern des Formulars
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
@@ -265,11 +265,11 @@ You might have noticed that we are setting the publish date before saving the po
 
 That is awesome!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel **Homework: add security to your website!** nach dem Haupttutorial auf dich wartet.
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## Formularvalidierung
 
 Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
@@ -279,7 +279,7 @@ Try to save the form without `title` and `text`. Guess what will happen!
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
-## Edit form
+## Formular bearbeiten
 
 Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
@@ -372,7 +372,7 @@ Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Security
+## Sicherheit
 
 Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
