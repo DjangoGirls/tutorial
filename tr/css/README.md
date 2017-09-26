@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Blogumuz hala epey çirkin gözüküyor, değil mi? Güzelleştirme zamanı! Bunun için CSS kullanacağız.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## CSS Nedir?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Hadi Bootstrap kullanalım!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Bootstrap kurulumu
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Şekil 14.1](images/bootstrap1.png)
+![Figure 14.1](images/bootstrap1.png)
 
-Şimdiden daha güzel gözüküyor!
+Looking nicer already!
 
-## Django'da statik dosyalar
+## Static files in Django
 
-Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakalım. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Django'da statik dosyaları nereye koymalı
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -50,9 +50,9 @@ Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak y
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## İlk CSS dosyanız!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. `static` klasörü içinde `css` adlı yeni bir klasör oluşturalım. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. `static` kl
                    └─── blog.css
     
 
-Şimdi CSS yazma zamanı! `blog/static/css/blog.css` dosyasını kod editöründe açın.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Ancak az da olsa yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-`blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` bir CSS Seçicisidir (Selector). This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Az evvel şablonumuza (template) CSS dosyamızın nerede olduğunu söylemiş olduk.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-Dosyanız şu şekilde gözüküyor olmalı:
+Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -134,11 +134,11 @@ Dosyanız şu şekilde gözüküyor olmalı:
 </html>
 ```
 
-Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
+OK, save the file and refresh the site!
 
-![Şekil 14.2](images/color2.png)
+![Figure 14.2](images/color2.png)
 
-Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu (margin'i) arttırsak mı? Hadi deneyelim!
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,9 +150,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Şekil 14.3](images/margin2.png)
+![Figure 14.3](images/margin2.png)
 
-Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` bölümüne yapıştırın:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -173,13 +173,13 @@ h1 a {
 }
 ```
 
-![Şekil 14.3](images/font.png)
+![Figure 14.3](images/font.png)
 
-Harika!
+Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +189,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 </div>
 ```
 
-Şimdi de gönderi metnini içeren `div`'e `post` isimli bir sınıf ekleyelim.
+And now add a class `post` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 </div>
 ```
 
-Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklarasyonları ile saralım. Aşağıdaki kodları değiştirin:
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -268,7 +268,7 @@ Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklara
 {% endfor %}
 ```
 
-bununla değiştirelim:
+in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -290,9 +290,9 @@ bununla değiştirelim:
 </div>
 ```
 
-Bu dosyaları kaydedin ve web sayfanızı yenileyin.
+Save those files and refresh your website.
 
-![Şekil 14.4](images/final.png)
+![Figure 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
@@ -300,4 +300,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Sonraki bölüm için hazır mısınız? :)
+Ready for the next chapter?! :)
