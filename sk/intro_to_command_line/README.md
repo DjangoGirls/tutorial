@@ -1,22 +1,22 @@
-# Úvod do rozhrania príkazového riadku
+# Introduction to the command-line interface
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Dovoľ nám predstaviť ti tvojho nového priateľa: príkazový riadok!**
+**Let us introduce you to your first new friend: the command line!**
 
-Nasledujúce kroky ti ukážu ako používať tú čiernu obrzovku, čo používajú všetci hackeri. Zo začiatku môže vyzerať trochu desivo, ale je to naozaj len riadok, čo čaká na tvoje príkazy.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Čo je to príkazový riadok?
+## What is the command line?
 
-Okno, ktoré sa zvyčajne nazýva **príkazový riadok** alebo **rozhranie príkazového riadku** je textová aplikácia na prehliadanie, spracovanie a manipuláciu so súbormi v tvojom počítači. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Otvor rozhranie príkazového riadku
+## Open the command-line interface
 
-Aby sme mohli trochu experimentovať, musíme najskôr rozhranie príkazového riadku otvoriť.
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -38,13 +38,13 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
-## Príkazový riadok
+## Prompt
 
-Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje príkazy.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na Windowse to je znak `>`, takýto:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,9 +72,9 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Tvoj prvý príkaz (Hurá!)
+## Your first command (YAY!)
 
-Začnime s niečím jednoduchým. Napíš tento príkaz:
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +94,7 @@ Začnime s niečím jednoduchým. Napíš tento príkaz:
 
 <!--endsec-->
 
-A stlač `enter`. Toto je výsledok:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,13 +106,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Základy
+## Basics
 
-Každý operačný systém má trochu iné príkazy pre príkazový riadok, takže postupuj podľa inštrukcií pre tvoj operačný systém. Tak čo, vyskúšame to?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Aktuálny adresár
+### Current directory
 
-Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento príkaz a stlač `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
     /Users/olasitarska
     
 
-> Poznámka: 'pwd' je skratka pre 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
 
 <!--endsec-->
 
-Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazový riadok, zvyčajne začneš vo svojom domovskom adresári.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Zoznam súborov a adresárov
+### List files and directories
 
-Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -177,9 +177,9 @@ Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
 
 * * *
 
-### Zmena aktuálneho adresára
+### Change current directory
 
-Teraz prejdime do adresára Plochy:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Teraz prejdime do adresára Plochy:
 
 <!--endsec-->
 
-Skontroluj, či sa adresár skutočne zmenil:
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,21 +221,21 @@ Skontroluj, či sa adresár skutočne zmenil:
 
 <!--endsec-->
 
-A je to!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Vytvoriť adresár
+### Create directory
 
-Čo takto vytvoriť pokusný adresár na ploche? Urobíš to takto:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir pokus
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -249,23 +249,23 @@ A je to!
 
 <!--endsec-->
 
-Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. Či je adresár naozaj tam môžeš zistiť jednoducho pohľadom na Plochu alebo spustením príkazu `ls` alebo `dir`! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Profi tip: ak sa ti nechce vypisovať stále dookola tie isté príkazy, skús sa stlačením `šípky hore` a `šípky dole` vrátiť k nedávno použitým príkazom.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Cvičenie!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Riešenie:
+#### Solution:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd pokus
+    $ cd practice
     $ mkdir test
     $ ls
     test
@@ -280,20 +280,20 @@ A small challenge for you: in your newly created `practice` directory, create a 
     > cd practice
     > mkdir test
     > dir
-    03/20/2016 11:05 AM <DIR>      test
+    05/08/2014 07:28 PM <DIR>      test
     
 
 <!--endsec-->
 
-Gratulujeme! :)
+Congrats! :)
 
 * * *
 
-### Upratovanie
+### Clean up
 
-Nechceme po sebe nechať neporiadok, takže odstránime všetko, čo sme doteraz vytvorili.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Najkôr sa musíme vrátiť späť na Plochu:
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ Najkôr sa musíme vrátiť späť na Plochu:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Skontroluj, kde sa nachádzaš:
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Skontroluj, kde sa nachádzaš:
 
 <!--endsec-->
 
-Je na čase zmazať adresár `pokus`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Je na čase zmazať adresár `pokus`:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r pokus
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -354,13 +354,13 @@ Je na čase zmazať adresár `pokus`:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S pous
-    pokus, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Hotovo! Uistime sa, či je to naozaj vymazané:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +380,7 @@ Hotovo! Uistime sa, či je to naozaj vymazané:
 
 <!--endsec-->
 
-### Ukončenie
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Zhrnutie
+## Summary
 
-Tu je prehľad niektorých užitočných príkazov:
+Here is a summary of some useful commands:
 
-| Príkaz (Windows) | Príkaz (Mac OS / Linux) | Popis                           | Príklad                                           |
-| ---------------- | ----------------------- | ------------------------------- | ------------------------------------------------- |
-| exit             | exit                    | zatvorí okno                    | **exit**                                          |
-| cd               | cd                      | zmení adresár                   | **cd test**                                       |
-| cd               | pwd                     | show the current directory      | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir              | ls                      | vypíše zoznam adresárov/súborov | **dir**                                           |
-| copy             | cp                      | kopíruje súbor                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                      | presunie súbor                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                   | vytvorí nový adresár            | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | delete a file                   | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                   | delete a directory              | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Toto je len veľmi malá časť príkazov, ktoré môžeš spustiť vo svojom príkazovom riadku, ale dnes budeš potrebovať len tieto.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Ak ťa to zaujalo, na [ss64.com](http://ss64.com) nájdeš kompletný prehľad príkazov pre všetky operačné systémy.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Pripravená?
+## Ready?
 
-Vrhnime sa na Python!
+Let's dive into Python!
