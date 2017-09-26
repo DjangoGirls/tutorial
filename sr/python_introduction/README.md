@@ -1,16 +1,16 @@
-# Uvod u Python
+# Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Hajde da pišemo nešto koda!
+Let's write some code!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Da biste se počeli igrati u Python-u, moramo otvoriti *komandnu liniju* na našem računaru. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Kada budete spremni, ispratiti sledeće instrukcije.
+Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -22,13 +22,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Vaša prva Python komanda!
+## Your first Python command!
 
-Nakon pokretanja Python komange, prompt se menja u `>>>`. To za nas znači da sada možemo koristiti samo komande u Python jeziku. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Ako želite da izađete iz Python konzole, možete u bilo komtrenutku otkucati `exit()` ili korsititi prečicu `Ctrl + Z` za Windows, odnosno `Ctrl + D` za Mac/Linux. Onda nećete više videti `>>>`.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-Trenutno ne želimo izaći iz Python konzole. Želimo da naučimo više o njoj. Hajde da počnemo sa nečim veoma jednostavnim. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,9 +54,9 @@ Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Stringovi
+## Strings
 
-Šta je sa vašim imenom? Ukucajte vaše ime između navodnika kao u primeru:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +65,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Ola'
 ```
 
-Upravo ste kreirali vaš prvi string! To je niz karaktera koji može biti obrađen od strane računara. String mora uvek počinjati i završavati se sa istim karaketerom. To može biti jedan navodnik (`'`) ili dvostruki (`"`) navodnici (nema razlike!). Navodnici govore Python-u da je ono što je unutar njih string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Stringovi mogu biti povezani međusobno. Probajte ovo:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +76,7 @@ Stringovi mogu biti povezani međusobno. Probajte ovo:
 'Hi there Ola'
 ```
 
-Možete i pomnožiti string nekim brojem:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ Možete i pomnožiti string nekim brojem:
 'OlaOlaOla'
 ```
 
-Ako treba da stavite navodnik unutar stringa, to možete uraditi na dva načina.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Koristeći dvostruke navodnike:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +96,7 @@ Koristeći dvostruke navodnike:
 "Runnin' down the hill"
 ```
 
-ili eskejpovanjem navodnika korišćenjem ubrnute kose crte (backslash) (``):
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ ili eskejpovanjem navodnika korišćenjem ubrnute kose crte (backslash) (``):
 "Runnin' down the hill"
 ```
 
-Lepo, zar ne? Da biste videli vaše ime sa svim velikim slovima, dovoljno je da ukucate:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,22 +125,22 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Da li se pitate zašto nekada pozivate dunkciju sa `.` na kraju stringa (poput `"Ola".upper()`), a nekada prvo pozovete funkciju i string stavite u zagrade? U nekim slučajevima funkcija pripada objektima, poput `upper()`, i može se primeniti samo na stringovima. U ovom slučaju funkciju zovemo **metoda**. U nekim drugim situacijama funkcije ne pripadaju ničemu konkretnom i mogu se koristiti na raznim tipovima objekata, poput `len()`. Zato smo proslediti `"Ola"` kao parametar funkciji `len`.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Kratak pregled
+### Summary
 
-OK, dosta o stringovima. Do sada ste naučili o:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-Ovo su osnove svakog programskog jezika koga ćete učiti. Spremni za nešto teže? Sigurni smo da jeste!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Greške
+## Errors
 
-Hajde da probamo nešto novo. Da li možemo dobiti dužinu broja na isti način kao što smo to radili za vaše ime? Otkucajte `len(304023)` i pritisnitet `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dobili smo našu prvu grešku! Kaže da objekti tipa "int" (integeri, celi brojevi) nemaju dužinu. Šta možemo sada uraditi? Možda da napišemo naš broj kao string? Stringovi imaju dužinu, zar ne?
+We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,33 +160,33 @@ Dobili smo našu prvu grešku! Kaže da objekti tipa "int" (integeri, celi broje
 6
 ```
 
-Radi! Koristili smo funkciju `str` unutar funkcije `len`. `str()` konvertuje sve u stringove.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
-- Funkcija `str` konvertuje stvari **stringove**
-- Funkcija `int` konvertuje stvari u **integere**
+- The `str` function converts things into **strings**
+- The `int` function converts things into **integers**
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Varijable
+## Variables
 
-Jako bitan koncept u programiranju su varijable. Varijabla je ništa više nego naziv za nešto što ćemo moći koristiti kasnije. Programeri koriste varijable da čuvaju podatke, učine svoj kod čitljivijim i kako ne bi morali stalno pamtiti šta je koja stvar.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Hajde da, na primer, želimo kreirati novu varijablu koju ćemo zvati `naziv`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ime= "Ola"
+>>> name = "Ola"
 ```
 
-Vidite? Jednostavno je! Kažemo samo da je ime jednako Ola.
+You see? It's easy! It's simply: name equals Ola.
 
-Kao što ste primetili, vaš program nije ništa vratio, kao što je ranije bio slučaj. Kako onda možemo znati da ta varijabla zaista postoji? Jednostavno unesite `ime` i pritisnite `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ime
+>>> name
 'Ola'
 ```
 
@@ -195,17 +195,17 @@ Yippee! Your first variable! :) You can always change what it refers to:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ime= "Sonja"
->>> ime
+>>> name = "Sonja"
+>>> name
 'Sonja'
 ```
 
-Možete ih koristiti i unutar funkcija:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(ime)
+>>> len(name)
 5
 ```
 
@@ -220,7 +220,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-Šta se dešava ako iskoristimo pogrešno ime? Da li možete pogoditi? Hajde da probamo!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
 {% filename %}command-line{% endfilename %}
 
@@ -232,33 +232,33 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Greška! Kao što možete videti, Python ima drugačije tipove grešaka i ova se zove **NameError**. Python će vam dati grešku ako probate koristiti varijablu koja nije još uvek definisana. Ako kasnije naiđete na ovu grešku, proverite da li ste u vašem kodu pogrešno napisali neki naziv.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Poigrajte se malo sa ovim i vidite šta je sve moguće raditi!
+Play with this for a while and see what you can do!
 
-## Print funkcija
+## The print function
 
-Probajte ovo:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ime= 'Maria'
->>> ime
+>>> name = 'Maria'
+>>> name
 'Maria'
->>> print(ime)
+>>> print(name)
 Maria
 ```
 
-Kada samo otkucate `ime`, Python interpreter odgovara sa string *reprezentacijom* varijable "ime", a do su slova M-a-r-i-a, okružena jednostrukim navodnicima. Kada napišemo `print(ime)`, Python će "odštampati" sadržaj varijable na ekran, bez navodnika, što je urednije.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Kao što ćete videte kasnije, `print()` se koristi i kada želimo da odštampano nešto unutar funkcija, ili kada želimo da odštampano nešto preko više linija.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Liste
+## Lists
 
-Pored stringova i integera, Python koristi još mnogo različitih tipova objekata. Sada ćemo da prikažemo **liste**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Hajde da napravimo listu:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,74 +267,74 @@ Hajde da napravimo listu:
 []
 ```
 
-Da, ovo je prazna lista. Nije nešto korisnika, zar ne? Hajde da kreiramo listu brojeva za lutriju. Ne želimo da se ponavljamo više puta, pa ćemo je staviti u varijablu:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija= [3, 42, 12, 19, 30, 59]
+>>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Dobro, sada imamo listu! Šta da radimo sa njom? Hajde da vidimo koliko ima brojeva u listi. Da li imate ideju koja bi se funkcija mogla koristiti za to? To već znate!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(lutrija)
+>>> len(lottery)
 6
 ```
 
-Da! `len()` nam može dati broj objekata u listu. Korisno, zar ne? Možda bismo je sada mogli sortirati:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.sort()
+>>> lottery.sort()
 ```
 
-Ovo ništa ne vraća, nego samo manje raspored u kom se brojevi pojavljuju u listi. Hajde da opet odštampano ovu listu i vidimo šta će se desiti:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lutrija)
+>>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
-Kao što možete videti, brojevi su sortirani od najmanje do najveće vrednosti. Čestitamo!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Možda želimo da obrnemo ovaj raspored? Hajde da uradimo to!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.reverse()
->>> print(lutrija)
+>>> lottery.reverse()
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3]
 ```
 
-Jednostavno, zar ne? Ako želite nešto dodati u vašu listu, tomožete uraditi unosom sledeće komande:
+Easy, right? If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.append(199)
->>> print(lutrija)
+>>> lottery.append(199)
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Ako želite da prikažete samo prvi broj, možete to uraditi koristeći **indekse**. Indeks je broj koji pokazuje gde se u listi nalazi neki element. Programeri više vole da počnu brojati od 0, tako da prvi objekat u listi ima indeks 0, sledeći 1 itd. Probajte ovo:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lutrija[0])
+>>> print(lottery[0])
 59
->>> print(lutrija[1])
+>>> print(lottery[1])
 42
 ```
 
-Možete videti da možete pristupiti različitim objektima u listi koristeći naziv liste i indeks objekta koga navodite unutar uglastih zagrada.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,13 +351,13 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-Ovo odlično radi!
+That worked like a charm!
 
-Za malo dodatne zabave, isprobajte neke druge indekse: 6, 7, 1000, -1, -6 ili -1000. Da li možete pogoditi rezultat pre nego što isprobate komande. Da li rezultati imaju smisla?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Možete naći listu svih dostupnihh metoda listi u sledećem poglavlju Python dokumentacije: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Rečnici
+## Dictionaries
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
@@ -370,57 +370,57 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-Ovo pokazuje da smo napravili prazan rečnik. Jej!
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik= {'ime': 'Ola', 'zemlja': 'Poljska', 'omiljeni_brojevi': [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
-- Ključ `ime` pokazuje na vrednost `'Ola'` (što je `string` objekat),
+- The key `name` points to the value `'Ola'` (a `string` object),
 - `country` points to `'Poland'` (another `string`),
-- i `omiljeni_brojevi` pokazuje na `[7, 42, 92]` (`listu` sa brojevima unutar nje).
+- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
-Sintaksa za proveru sadržaja pojedinim ključeva je sledeća:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(ucesnik['ime'])
+>>> print(participant['name'])
 Ola
 ```
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-Šta se dešava ako pitamo Python za vrednost ključa koja ne postoji? Možete li pogoditi. Hajde da isprobamo i vidimo!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik['godine']
+>>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-KeyError: 'godine'
+KeyError: 'age'
 ```
 
-Pogledajte, još jedna greška! Ovo je**KeyError**. Python je uslužan i govori nam da ključ `'godine'` ne postoji za dati rečnik.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Kada treba koristiti rečnik, a kada listu? Pa, to jeste dobro pitanje o kome treba razmišljati. Samo smislite neki odgovor pre nego što pogledate sledeću liniju.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
-- Da li vam treba uređena sekvrenca elemenata? Koristite listu.
-- Da li vam je potrebno da pridružite vrednosti ključevima, tako da ih kasnije možete efikasno (po ključu) tražiti? Koristite rečnik.
+- Do you just need an ordered sequence of items? Go for a list.
+- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik['omiljeni_jezik'] = 'Python'
+>>> participant['favorite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
@@ -428,13 +428,13 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(ucesnik)
+>>> len(participant)
 4
 ```
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Recimo, ako želite da obrišete element koji odgovara ključu `'omiljeni_brojevi'`, samo otkucajte sledeću komandu:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -452,25 +452,25 @@ As well as this, you can also change a value associated with an already-created 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik['zemlja'] = 'Nemacka'
->>> ucesnik
-{'zemlja': 'Nemacka', 'omiljeni_jezik': 'Python', 'ime': 'Ola'}
+>>> participant['country'] = 'Germany'
+>>> participant
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Kratak pregled
+### Summary
 
-Strava! Sada znate puno o programiranju. U ovom delu ste naučili o:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-Uzbuđeni zbog sledećeg dela? :)
+Excited for the next part? :)
 
-## Poređenje stvari
+## Compare things
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -493,9 +493,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Da li se pitate zašto smo stavili dva znaka jednakosti `==` jedan pored drugog kako bismo ispitali da li su dva broja jednaka? Jedan znak `=` koristimo da varijablama dodelimo vrednost. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. Takođe možemo reći i da su dve stvari međusobno različite. Za to koristimo simbol `!=`, kao što je prikazano u primeru gore.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Dajmo Python-u još dva zadatka:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -506,14 +506,14 @@ True
 False
 ```
 
-`>` i`<` su jednostavni, ali šta `>=` i`<=` znače? Čitajte ih na sledeći način:
+`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y znači: x je veće od y
-- x `<` y znači: x je manje od y
-- x `<=` y znači: x je manje ili jednako y
-- x `>=` y znači: x je veće ili jednako y
+- x `>` y means: x is greater than y
+- x `<` y means: x is less than y
+- x `<=` y means: x is less than or equal to y
+- x `>=` y means: x is greater than or equal to y
 
-Strava! Hoćete još jedan? Probajte ovo:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,12 +526,12 @@ False
 True
 ```
 
-Možete dati Python-u kolliko god želite brojeva da poredi i uvek će vam dati odgovor? Prilično pametno, zar ne?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Da li ste nekada čuli za izraz "porediti jabuke i kruške"? Hajde da isprobamo ekvivalent tome u Python-u:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
 {% filename %}command-line{% endfilename %}
 
@@ -542,7 +542,7 @@ Traceback (most recent call last):
 TypeError: unorderable types: int() > str()
 ```
 
-Ovde možete videti da baš kao u izreci, Python ne može porediti broj (`int`) i string (`str`). Umesto toga, pokazuje **TypeError** i kaže nam da se dva tipa ne mogu porediti međusobno.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
@@ -555,7 +555,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Booleani takođe mogu biti varijable! Pogledajte:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +565,7 @@ Booleani takođe mogu biti varijable! Pogledajte:
 True
 ```
 
-Možete uraditi i sledeće:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,25 +575,25 @@ Možete uraditi i sledeće:
 False
 ```
 
-Provežbajte i zabavite se malo sa Booleanima pokuševajući izvršiti sledeće komande:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Čestitamo! Booleani su jedna od najinteresantnijih mogućnosti u programiranju i upravo ste naučili kako da ih koristite!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
-# Sačuvajte!
+# Save it!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-Do sada smo sav kod pisali u interpreteru, što nas ograničava na unos samo jedne linije u jednom trenutku. Obični programi se čuvaju u fajlovima i izvržavaju od strane **interpretera** programskog jezika ili **kompajlera**. Do sada smo naše programe izvršavali kao jednu liniju u jedinici vremena u Python **interpreteru**. Za naredne zadatake će nam trebati više od jedne linije koda, tako da bi na brzinu trebalo da:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
-- Zatvorite Python interpreter
-- Otvorite editor koda po vašem izboru
-- Snimite neki kod u novi python fajl
-- Pokrenite ga!
+- Exit the Python interpreter
+- Open up our code editor of choice
+- Save some code into a new python file
+- Run it!
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
@@ -604,9 +604,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-Ovo će vas vratiti na komand prompt.
+This will put you back into the command prompt.
 
-Ranije smo odabrali editor koda iz [editori koda](../code_editor/README.md) sekcije. Sada treba da otvorimo tah editor i unesemo neki kod u novi fajl:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +614,18 @@ Ranije smo odabrali editor koda iz [editori koda](../code_editor/README.md) sekc
 print('Hello, Django girls!')
 ```
 
-Očigledno, sada ste već iskusni Python developer, pa slobodno napišite nešto koda od onoga što ste naučili danas.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Sada treba da sačuvamo fajl i damo mu neko opisno ime. Hajde da fajl nazovemo **python_intro.py** i snimimo ga na desktop. Fajl možemo nazvati kako god želimo, ali je bitno da osiguramo da se fajl završava na **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Ovo se naziva "naglašavanje sintakse" i jako je korisno za kodiranje. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
-Nakon što je fajl sačuvan, vreme je da ga pokrenemo! Koristeći veštine koje ste naučili u delu koji se bavi komandnom linijom, pokrenite terminal i **promenite direktorijum** na desktop.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Na Mac-u komanda izgleda poput:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +668,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-Ako zapnete, pitajte za pomoć.
+If you get stuck, just ask for help.
 
-Sada upotrebite Python da pokrenete kod u fajlu:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +686,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Odlično! Upravo ste pokrenuli svoj prvi Python program koji je sačuvan u fajlu. Jeste li oduševljeni?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Sada možete da pređete na jedan od osnovnih alata u programiranju:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Zamenite kod u vašem **python_intro.py** fajlu sa:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Kratak pregled
+### Summary
 
 In the last few exercises you learned about:
 
@@ -1053,7 +1053,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Kratak pregled
+## Summary
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
