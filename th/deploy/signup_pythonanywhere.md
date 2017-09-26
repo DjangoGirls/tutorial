@@ -1,4 +1,4 @@
-ถึงเวลาที่เราจะลงเบียนบัญชี "Beginner" บน PythonAnywhere
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
