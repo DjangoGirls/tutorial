@@ -2,13 +2,13 @@
 
 Time to get rid of the bug we created in the last chapter! :)
 
-Una *View* es un lugar donde ponemos la "lógica" de nuestra aplicación. Pedirá información del `modelo` que has creado antes y se la pasará a la `plantilla`. Crearemos una plantilla en el próximo capítulo. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Las Vistas se colocan en el archivo `views.py`. Agregaremos nuestras *views* al archivo `blog/views.py`.
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
 ## blog/views.py
 
-Bien, vamos abrir este archivo y ver lo que contiene:
+OK, let's open up this file and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -35,7 +35,7 @@ As you can see, we created a function (`def`) called `post_list` that takes `req
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-¡Otro error! Leamos lo que está pasando ahora:
+Another error! Read what's going on now:
 
 ![Error](images/error.png)
 
