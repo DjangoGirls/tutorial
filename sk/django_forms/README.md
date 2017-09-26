@@ -1,14 +1,14 @@
-# Formuláre Django
+# Django Forms
 
-Posledná vec, ktorú chceme urobiť na našej web stránke je vytvoriť príjemný spôsob pridávania a úpravy blog postov. Django `admin` je v pohode, ale ťažko sa prispôsobuje a upravuje do krajšej podoby. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-Na Django formulároch je fajn, že ich môžeme vytvoriť úplne od nuly alebo vytvoriť `ModelForm`, ktorý uloží výsledok formulára do modelu.
+The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
-To je presne, čo chceme robiť: vytvoríme formulár pre náš `Post` model.
+This is exactly what we want to do: we will create a form for our `Post` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
-Musíme vytvoriť súbor s týmto názvom v adresári `blog`.
+We need to create a file with this name in the `blog` directory.
 
     blog
        └── forms.py
@@ -32,19 +32,19 @@ class PostForm(forms.ModelForm):
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-`PostForm`, ako asi správne predpokladáš, je meno nášho formulára. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
-Nakoniec môžeme Djangu povedať, ktoré formuláre budú v našom formulári. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-To je všetko! Jediné, čo treba teraz urobiť, je použiť formulár v *zobrazení* (angl. view) a zobraziť ho v šablóne.
+And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Link na stránku s formulárom
+## Link to a page with the form
 
-Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s názvom `page-header`:
+It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Keď uložíš a obnovíš stránku http://127.0.0.1:8000 uvidíš samozrejme známu chybu `NoReverseMatch`, však?
+After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
 ## URL
 
-Otvor `blog/urls.py` a pridaj riadok:
+We open `blog/urls.py` and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ Otvor `blog/urls.py` a pridaj riadok:
 url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
-A výsledný kód bude vyzerať takto:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -114,9 +114,9 @@ urlpatterns = [
 
 After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
-## view (zobrazenie) post_new
+## post_new view
 
-Teraz otvoríme súbor `blog/views.py` a pridáme tam nasledujúce riadky so zvyškom importovacích riadkov `from`:
+Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,18 +134,18 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Nový formulár `Post` vytvoríme tak, že sputíme `PostForm()` a prepošleme ho šablóne. We will go back to this *view*, but for now, let's quickly create a template for the form.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Šablóna
+## Template
 
-Musíme vytvoriť súbor `post_edit.html` v adresári `blog/ templates/blog`. Aby formulár fungoval, potrebujeme niekoľko vecí:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) a simple {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Toto je veľmi dôležité, vďaka tomu je formulár bezpečný! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
-![CSFR Zakázaná stránka](images/csrf2.png)
+![CSFR Forbidden page](images/csrf2.png)
 
 OK, so let's see how the HTML in `post_edit.html` should look:
 
@@ -163,9 +163,9 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Obnovíme stránku! Aha! Tvoj formulár je na svete!
+Time to refresh! Yay! Your form is displayed!
 
-![Nový formulár](images/new_form2.png)
+![New form](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
@@ -173,7 +173,7 @@ Nothing! We are once again on the same page and our text is gone… and no new p
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
-## Uloženie formuláru
+## Saving the form
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Všetky polia z formulára sú teraz v `request.POST`. `POST` by si nemala premenovať na nič iné (jediná ďalšia platná hodnota pre premennú `method` je `GET`, teraz ale nemáme čas vysvetliť si rozdiel).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
@@ -208,7 +208,7 @@ form = PostForm(request.POST)
 
 Easy! The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Skonotrolujeme, či je formulár platný a ak áno, môžeme ho uložiť!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Spomínaš si, že tento *view* vyžaduje premennú `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -259,29 +259,29 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Pozrime sa, či to funguje. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-To je úžasné!
+That is awesome!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Toto dočasne vyrieši problém. Čaká však na teba aj permanentné riešenie v kapitole **Domáca úloha: zvýš svojej stránke bezpečnosť!** po skončení hlavného tutorialu.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Chyba prihlásenia](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
-## Validácia formuláru
+## Form validation
 
-Teraz si ukážeme, aké sú Django formuláre super. Príspevok na blogu (post) musí mať polia `title` a `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Validácia formuláru](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
-## Úprava formuláru
+## Edit form
 
-Teraz už vieme, ako sa pridáva nový formulár. Ale čo ak chceme upravovať existujúci? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` and add the line
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-V `blog/urls.py` pridáme tento riadok:
+In `blog/urls.py` we add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -360,23 +360,23 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Tlačidlo Upraviť](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Keď naňho klikneš, uvidíš formulár s našim blog postom:
+When you click it you will see the form with our blog post:
 
-![Úprava formuláru](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
 Feel free to change the title or the text and save the changes!
 
-Gratulujeme! Tvoja aplikácia je čím ďalej dokonalejšia!
+Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Bezpečnosť
+## Security
 
-Možnosť vytvárať nové posty len kliknutím na link je úžasná! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-V `blog/templates/blog/base.html` nájdi náš `div` `page-header` a kotviaci tag, ktorý si tam umiestnila už predtým. Mal by vyzerať takto:
+In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ V `blog/templates/blog/base.html` nájdi náš `div` `page-header` a kotviaci ta
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Zmeň tag `< >`, aby vyzeral takto:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,7 +394,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Nezabráni to vytváraniu nových postov úplne, ale je to dobrý prvý krok. Viac o bezpečnosti si povieme v rozširujúcich lekciách.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
@@ -418,9 +418,9 @@ Change it to this:
 
 Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
-## Ešte jedna vec: čas nasadiť aplikáciu!
+## One more thing: deploy time!
 
-Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasadenie!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to Github:
 
@@ -433,7 +433,7 @@ Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasade
     $ git push
     
 
-* Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -444,4 +444,4 @@ Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasade
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-A to by malo byť všetko! Gratulujeme :)
+And that should be it! Congrats :)
