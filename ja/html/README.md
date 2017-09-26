@@ -1,18 +1,18 @@
-# HTML 入門
+# Introduction to HTML
 
-テンプレートとは何でしょうか？
+What's a template, you may ask?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## HTMLとは？
+## What is HTML?
 
 HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
 HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## 最初のテンプレート
+## Your first template!
 
 Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
@@ -27,11 +27,11 @@ Templates are saved in `blog/templates/blog` directory. So first create a direct
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-あなたのウェブサイトを見てみてください: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![図 11.1](images/step1.png)
+![Figure 11.1](images/step1.png)
 
 No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
@@ -48,7 +48,7 @@ Add the following to your template file:
 
 So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![図 11.2](images/step3.png)
+![Figure 11.2](images/step3.png)
 
 It worked! Nice work there :)
 
@@ -59,11 +59,11 @@ It worked! Nice work there :)
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
-* **head**は文書についての情報を含む要素で、画面には表示されません。
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-* **body**はWebページの一部として表示されるすべてを含む要素です。
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-`<head>`でページの設定をブラウザに伝え、`<body>`でページの内容を伝えます。
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,9 +81,9 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-ファイルを保存し、ページを更新してください。
+Save the file and refresh your page.
 
-![図 11.3](images/step4.png)
+![Figure 11.3](images/step4.png)
 
 Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
@@ -93,7 +93,7 @@ It's like putting things into boxes. You have one big box, `<html></html>`; insi
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## テンプレートのカスタマイズ
+## Customize your template
 
 You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
@@ -125,26 +125,26 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
         <div>
-            <p>公開日: 2014/06/14, 12:14</p>
-            <h2><a href="">2番目の投稿</a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
 ```
 
-ここで3つの `div` セクションを作成しました。
+We've created three `div` sections here.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
 * Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
 It gives us this effect:
 
-![図 11.4](images/step6.png)
+![Figure 11.4](images/step6.png)
 
 Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
