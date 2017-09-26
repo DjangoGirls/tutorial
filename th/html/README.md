@@ -1,22 +1,22 @@
-# แนะนำให้รู้จัก HTML
+# Introduction to HTML
 
-อะไรคือ template คุณอาจสงสัย?
+What's a template, you may ask?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## HTML คืออะไร?
+## What is HTML?
 
 HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML ย่อมาจาก "HyperText Markup Language" **HyperText** หมายถึง เป็นชนิดของข้อความที่มีการเชื่อมโยงไปหน้าเว็บอื่นๆ ได้ **Markup** หมายถึง เราทำเครื่องหมายสักอย่างไว้ที่เอกสารด้วยโค้ดเพื่อทำบางอย่าง (ในที่นี้ เบราว์เซอร์) หรือวิธีการแปลงหน้าเพจ HTML โค้ด สร้างขึ้นจาก **tag** แต่ละ tag เริ่มต้นด้วย `<` และลงท้ายด้วย `>` These tags represent markup **elements**.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## template แรกของคุณ!
+## Your first template!
 
-การสร้าง template ที่ว่า คือการสร้างไฟล์ template ทุกอย่างล้วนคือไฟล์ ถูกไหม? คุณคงสังเกตเห็นแล้ว
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-template ทั้งหลายนั้นถูกบันทึกไว้ที่ไดเรกทอรี `blog/templates/blog` ดังนั้น เราจะสร้างไดเรกทอรีชื่อ `templates` ข้างในไดเรกทอรี blog ของคุณ จากนั้นสร้างไดเรกทอรีเพิ่ม ชื่อ `blog` ข้างในไดเรกทอรี template เมื่อครู่:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
@@ -25,17 +25,17 @@ template ทั้งหลายนั้นถูกบันทึกไว�
 
 (You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-ตอนนี้ให้สร้างไฟล์ `post_list.html` (ยังไม่ต้องมีอะไรข้างใน) ข้างในไดเรกทอรี `blog/templates/blog`
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-มาดูกันว่าตอนนี้เว็บเราแสดงผลยังไง: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![รูปที่ 11.1](images/step1.png)
+![Figure 11.1](images/step1.png)
 
-ไม่มีข้อผิดพลาดแล้ว! ขอแสดงความยินดี :) อย่างไรก็ตาม เว็บของคุณก็ยังไม่มีอะไรใดๆ นอกจากหน้าว่างเปล่า เพราะว่า template ของคุณยังไม่มีอะไรข้างใน เราต้องแก้ไขมัน
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-ลองเพิ่มบรรทัดเหล่านี้ลงในไฟล์ template:
+Add the following to your template file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,22 +48,22 @@ template ทั้งหลายนั้นถูกบันทึกไว�
 
 So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![รูปที่ 11.2](images/step3.png)
+![Figure 11.2](images/step3.png)
 
-มันทำงานแล้ว! ทำได้ดีมาก :)
+It worked! Nice work there :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. อย่างที่คุณเห็น เนื้อหาทั้งหมดของเว็บไซต์ เกิดขึ้นระหว่าง tag เริ่มต้น `<html>` และปิดท้ายด้วย tag `</html>`
-* `<p>` คือ tag สำหรับองค์ประกอบที่เป็น ย่อหน้า; `</p>` ปิดแต่ละย่อหน้า
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
-* **head** คือส่วนของข้อมูลต่างๆ ที่เกี่ยวกับเอกสาร แต่ไม่ปรากฎหรือแสดงผลบนหน้าจอ
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-* **body** คือส่วนที่เหลือทั้งหมดที่แสดงผลอยู่บนหน้าเว็บเพจ
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-เราใช้ `<head>` เพื่อบอกเบราว์เซอร์เกี่ยวกับการกำหนดค่าต่างๆ ของหน้าเพจ และ `<body>` บอกเกี่ยวกับเนื้อหาบนหน้าเว็บจริงๆ
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,32 +81,32 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-บันทึกไฟล์และโหลดหน้าเว็บอีกครั้ง
+Save the file and refresh your page.
 
-![รูปที่ 11.3](images/step4.png)
+![Figure 11.3](images/step4.png)
 
-สังเกตดูว่า เบราว์เซอร์เข้าใจว่า "Ola's blog" นั้คือ title ของหน้าเว็บคุณไหม? เบราว์เซอร์ ได้ทำการแปล `<title>Ola's blog</title>` และแทนที่ข้อความบนแถบ title บนเบราว์เซอร์คุณ (และถูกใช้เมื่อเราทำที่คั่นหน้าด้วยเช่นกัน)
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-บางทีคุณจะสังเกตเห็นเช่นกันว่าแต่ละ tag ที่เปิดนั้นจะมีการ *ปิด tag* โดยใช้ `/` แต่ละองค์กระกอบจะอยู่ *ข้างใน* (เช่น ไม่สามารถปิด tag ได้จนกว่า ทุก tag ที่อยู่ข้างในมันเองจะยังไม่ได้ปิด)
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-เหมือนกับการใส่สิ่งของลงในกล่อง You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## ปรับแต่ง template ของคุณ
+## Customize your template
 
-ตอนนี้คุณจะได้สนุกกับการปรับแต่งและลองแก้นิดๆ หน่อยๆ ใน template ของคุณ! และนี่คือ tag ที่น่าสนใจที่จะลองเล่น:
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
 * `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` สำหรับหัวเรื่องระดับถัดมา
+* `<h2>A sub-heading</h2>` for a heading at the next level
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
-* `<em>text</em>` เน้นข้อความของคุณ
-* `<strong>text</strong>` ทำให้ข้อความที่เน้นหนาขึ้น
-* `<br />` ขึ้นบรรทัดใหม่ (คุณไม่สามารถใส่อะไรลงใน br ได้)
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
 * `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` สร้างรายการ เหมือนเช่นอันนี้!
-* `<div></div>` สร้างส่วนของหน้าเพจ
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -137,56 +137,56 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-เราได้สร้าง `div` ไว้เป็นสามส่วน
+We've created three `div` sections here.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* อีกสอง `div` คือส่วนที่แสดงเนื้อหาบล็อกและวันที่เผยแพร่ โดยใช้ `h2` สำหรับหัวข้อโพสต์ และใช้สอง `p` (ย่อหน้า) สำหรับวันที่และสำหรับบล็อกโพสต์ของเรา
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-โดยจะทำให้มีผลแบบนี้:
+It gives us this effect:
 
-![รูปที่ 11.4](images/step6.png)
+![Figure 11.4](images/step6.png)
 
-เย้! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## มีอีกอย่างนึง: deploy!
+## One more thing: deploy!
 
-เราทำให้ไปโผล่บนอินเทอร์เน็ตน่าจะดี ว่าไหม? เรามา deploy บน PythonAnywhere อีกกัน
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Commit และ push โค้ดของคุณไปยัง Github
+### Commit, and push your code up to Github
 
-ก่อนอื่น มาดูกันว่าไฟล์ไหนถูกเปลี่ยนแปลงไปบ้างจากครั้งล่าสุด (ใช้คำสั่งต่อไปนี้บนเครื่องคุณเอง ไม่ใช่บน PythonAnywhere):
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-ตรวจสอบว่าอยู่ในไดเรกทอรี `djangogirls` หรือไม่ และใช้ `git` ในการรวมทุกไฟล์ที่เราแก้ไขภายในไดเรกทอรีเข้ามาด้วย:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). ยังจำ (จากบทที่ 3) เครื่องหมาย `.` หมายถึงไดเรกทอรีปัจจุบัน
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-ก่อนเราละอัปโหลดไฟล์ทั้งหมด ตรวจสอบดูว่า `git` จะอัปไฟล์ไหนไป (ไฟล์ที่ `git` จะอัปโหลดจะเป็นตัวอักษรสีเขียว):
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-เราเกือบเสร็จแล้ว ตอนนี้ถึงเวลาที่จะบันทึกการเปลี่ยนแปลงนี้แล้ว เรากำลังจะ "เขียนข้อความบันทึก" ซึ่งอธิบายสิ่งที่เราเปลี่ยนแปลงไป คุณสามารถพิมพ์อะไรก็ได้ตามที่ต้องการ แต่มันจะช่วยได้มาก หากเราอธิบายให้ตัวคุณเองจำสิ่งที่คุณทำลงไปได้ ในอนาคต
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **หมายเหตุ** ตรวจสอบให้แน่ใจว่าคุณใช้อัญประกาศคู่กับข้อความบันทึก
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
@@ -195,9 +195,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     $ git push
     
 
-### ดึงโค้ดล่าสุดของคุณมาที่ PythonAnywhere และโหลดเว็บของคุณอีกครั้ง
+### Pull your new code down to PythonAnywhere, and reload your web app
 
-* เปิด [หน้าคอนโซล PythonAnywhere](https://www.pythonanywhere.com/consoles/) และไปยัง **Bash console** ของคุณ (หรือเริ่มอันใหม่) จากนั้นใช้คำสั่ง:
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,8 +206,8 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-โค้ดใหม่ได้ถูกดาวน์โหลดลงมาแล้ว หากต้องการตรวจสอบดู คุณสามารถไปยัง **Files tab** และดูโค้ดของคุณบน PythonAnywhere
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
-* สุดท้าย ไปยัง [Web tab](https://www.pythonanywhere.com/web_app_setup/) และกดปุ่ม **Reload** บนเว็บของคุณ
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
