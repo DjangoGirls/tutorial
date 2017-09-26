@@ -1,28 +1,28 @@
-Det finns mängder av olika editorer och till största del handlar det om personliga preferenser. De flesta Python-programmerare använder komplexa men väldigt kraftfulla IDEer (Integrated Development Enviroments), som till exempel PyCharm. Som nybörjare kan detta dock vara mindre lämpligt, våra rekommendationer är lika kraftfulla, men betydligt enklare.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit är gratis, open-source och tillgänglig för alla operativsystem.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Ladda ner den här](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text är en väldigt populär editor med en fri testperiod. Den är enkel att installera och använda och finns tillgänglig för alla operativsystem.
+Sublime Text is a very popular editor with a free evaluation period. It's easy to install and use, and it's available for all operating systems.
 
-[Ladda ner den här](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
-[Ladda ner den här](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Varför installerar vi en kod-editor?
+## Why are we installing a code editor?
 
-Du kanske undrar varför vi installerar ett speciellt program för att redigera kod istället för att bara använda något som Word eller Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
