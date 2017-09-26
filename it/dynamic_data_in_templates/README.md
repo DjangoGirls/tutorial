@@ -1,12 +1,14 @@
 # I dati dinamici nei templates
 
-Abbiamo diversi pezzi: il modello `Post` è definito in `models.py`, abbiamo `post_list` nel file `views.py` ed abbiamo aggiunto il template. Ma come faremo a far comparire i nostri post nel nostro template HTML? Perché questo è quello che vogliamo: prendere qualche contenuto (modelli salvati nel database) e farlo vedere in modo carino nel nostro template, giusto?
+Abbiamo diversi pezzi: il modello `Post` è definito in `models.py`, abbiamo `post_list` nel file `views.py` ed abbiamo aggiunto il template. Ma come faremo a far comparire i nostri post nel nostro template HTML? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-Questo è esattamente quello che le *views* dovrebbero fare: collegare i modelli ed i template. Nella nostra `post_list` *view* avremo bisogno di prendere i modelli che vogliamo far vedere e passarli nel template. Quindi praticamente nella *view* decidiamo cosa (modello) renderemo visibile nel template.
+Questo è esattamente quello che le *views* dovrebbero fare: collegare i modelli ed i template. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
-OK, quindi come facciamo a farlo?
+OK, so how will we achieve this?
 
 Dobbiamo aprire il nostro `blog/views.py`. Per ora `post_list` *view* si vede così:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
@@ -15,29 +17,34 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Ricordi quando abbiamo parlato di includere codice scritto in diversi file? Ora è il momento di includere il model che abbiamo scritto in `models.py`. Aggiungeremo questa riga `from .models import Post` così:
+Ricordi quando abbiamo parlato di includere codice scritto in diversi file? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
 from .models import Post
 ```
 
-Il punto dopo il `from` significa *directory attuale* oppure *applicazione attuale*. Dal momento che `views.py` e `models.py` sono nella stessa directory possiamo semplicemente utilizzare `.` ed il nome del file (senza `.py`). Allora importiamo il nome del modello (`Post`).
+The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
-Cos'altro bisogna fare? Per poter prendere i post del blog dal modello`Post` ci serve una cosa chiamata `QuerySet`.
+But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
 
 ## QuerySet
 
-Dovresti già sapere come funziona QuerySet. Ne abbiamo parlato nel capitolo [Django ORM (QuerySets) ][1].
+You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
 
- [1]: ../django_orm/README.md
+So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
-Quindi ora ci interessa una lista di post del blog che sono pubblicati e organizzati da `published_date`, giusto? Lo abbiamo già fatto nel capitolo sulle QuerySet!
+{% filename %}blog/views.py{% endfilename %}
 
-    Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+```python
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+```
 
+Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
 
-Adesso mettiamo questo pezzo di codice nel file `blog/views.py` aggiungendolo alla funzione `def post_list(request)`:
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
@@ -49,15 +56,15 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
+The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+
 Nota che abbiamo creato una *variabile* per il nostro QuerySet: `posts`. Vedila come il nome del nostro QuerySet. Da qui in avanti possiamo riferirci ad esso con questo nome.
 
-Il codice utilizza anche la funzione `timezone.now()`, quindi dobbiamo aggiungere un import per `timezone`.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-L'ultima cosa che manca è passare la QuerySet `posts` nel template (ci occuperemo di come renderlo visibile nel prossimo capitolo).
+Finalmente il nostro file `blog/views.py` dovrebbe essere così:
 
-Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto quello che riceviamo dal nostro utente via internet) e un file template `'blog/post_list.html'`. Nell'ultimo parametro, che è simile a questo: `{}` possiamo aggiungere cose che il template possa utilizzare. Dobbiamo dargli un nome (ci atterremo a `'posts'` per il momento :)). Si vede così: `{'posts': posts}`. Ti preghiamo di notare che la parte prima di `:` è una stringa; devi metterla tra virgolette `''`.
-
-Il nostro file `blog/views.py` dovrà risultare così:
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
@@ -69,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-È tutto! Ora di tornare al nostro template e rendere visibile questo QuerySet!
+E' tutto! Ora di tornare al nostro template e rendere visibile questo QuerySet!
 
-Se vuoi leggere di più sui QuerySets in Django dovresti dare un'occhiata qui: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.9/ref/models/querysets/
