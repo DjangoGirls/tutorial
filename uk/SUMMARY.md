@@ -1,7 +1,8 @@
-# Зміст
+# Підсумок
 
 * [Вступ](README.md)
 * [Встановлення](installation/README.md)
+* [Installation (chromebook)](chromebook_setup/README.md)
 * [Як працює Інтернет](how_the_internet_works/README.md)
 * [Вступ до командного рядку](intro_to_command_line/README.md)
 * [Встановлення Python](python_installation/README.md)
@@ -13,14 +14,14 @@
 * [Django моделі](django_models/README.md)
 * [Django адміністратор](django_admin/README.md)
 * [Розгортання!](deploy/README.md)
-* [Django urls](django_urls/README.md)
-* [Django відображення - час творити!](django_views/README.md)
+* [Django url](django_urls/README.md)
+* [Django views – time to create!](django_views/README.md)
 * [Вступ до HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
 * [Динамічні дані в шаблонах](dynamic_data_in_templates/README.md)
 * [Django шаблони](django_templates/README.md)
-* [CSS - зроби це красиво](css/README.md)
-* [Шаблонне розширення](template_extending/README.md)
+* [CSS – make it pretty](css/README.md)
+* [Розширення шаблону](template_extending/README.md)
 * [Розширте свою програму](extend_your_application/README.md)
 * [Django форми](django_forms/README.md)
 * [Що далі?](whats_next/README.md)
