@@ -1,4 +1,4 @@
-Es hora de registrar una cuenta gratuita de tipo "Beginner" en PythonAnywhere.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
