@@ -1,12 +1,12 @@
 # Dynamic data in templates
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Wir haben nun schon einige Dinge an verschiedenen Orten fertiggestellt: das `Post`-Model ist in der `models.py` definiert, wir haben die `post_list` in der `views.py` und das Template hinzugefügt. Aber wie schaffen wir es nun, dass unsere Posts wirklich im HTML-Template erscheinen? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Genau dafür sind die *Views* zuständig: die Verbindung zwischen den Models und den Templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
 OK, so how will we achieve this?
 
-We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
+Wir öffnen unsere Datei `blog/views.py`. Bisher sieht unsere `post_list`-View folgendermaßen aus:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -15,6 +15,7 @@ from django.shortcuts import render
 
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
+
 ```
 
 Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
