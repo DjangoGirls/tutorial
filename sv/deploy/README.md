@@ -1,12 +1,12 @@
-# Publicera!
+# Deploy!
 
-> **Obs!** Detta kapitel kan bitvis vara besvärligt att ta sig igenom. Försök härda ut och ta dig igenom det, distribution är en viktig del av att utveckla webbsidor. Det här kapitlet är placerat i mitten av totorialen så att din mentor kan hjälpa dig med den något besvärligare processen att publicera din webbsida på nätet. Detta innebär att du kan avsluta tutorialen på egen hand om tiden tar slut.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-Som du lärt dig behöver en hemsida ligga på en server. Det finns flera server-leverantörer tillgängliga på internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere är gratis för små applikationer som inte har alltför många besökare så det kommer definitivt räcka för dig nu.
+As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. Det finns andra tjänster, men nästan alla programmerare har ett GitHub-konto dessa dagar, och snart har även du ett!
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
@@ -16,23 +16,23 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Skapa vårt Git-repo
+## Starting our Git repository
 
-Git spårar ändringar i en viss uppsättning filer i vad som kallas ett kod-repositorium (eller kort sagt "repo"). Låt oss skapa ett för vårt projekt. Öppna din konsol och köra dessa kommandon, i katalogen `djangogirls`:
+Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Du bör vara i mappen `djangogirls`.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
 {% filename %}command-line{% endfilename %}
 
     $ git init
-    Initierade tomt Git-arkiv i ~/djangogirls/.git/
-    $ git config --global user.name "Ditt Namn"
-    $ git config --global user.email din.epost@example.com
+    Initialized empty Git repository in ~/djangogirls/.git/
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email you@example.com
     
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git kommer spåra ändringar över alla filer och mappar i den här katalogen, men det finns några filer som vi vill ignorera. Vi gör detta genom att skapa en fil som heter `.gitignore` i baskatalogen. Öppna din editor och skapa en ny fil med följande innehåll:
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,31 +47,31 @@ Git kommer spåra ändringar över alla filer och mappar i den här katalogen, m
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Obs** Punkten i början av filnamnet är viktigt! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-Det är en bra idé att använda kommandot `git status` före `git add` eller om du är osäker på vad som har förändrats. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    På grenen master
+    On branch master
     
-    Första incheckning
+    Initial commit
     
-    Ospårade filer:
-      (använd "git add <file>..." för att ta med i det som skall checkas in)
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
     
             .gitignore
             blog/
             manage.py
             mysite/
     
-    inget köat för incheckning, men ospårade filer finns (spåra med "git add")
+    nothing added to commit but untracked files present (use "git add" to track)
     
 
-Och slutligen sparar vi våra ändringar. Gå till din konsol och kör dessa kommandon:
+And finally we save our changes. Go to your console and run these commands:
 
 {% filename %}command-line{% endfilename %}
 
