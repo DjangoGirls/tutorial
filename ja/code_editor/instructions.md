@@ -1,28 +1,28 @@
-本当にたくさんのエディタがありますが、どれを使うかは、結局は、ほとんど個人の好みの問題です。 ほとんどのPythonプログラマは、Pycharmなど、複雑ですが非常に強力なIDE（統合開発環境）というものを使っています。 しかし、初心者にとってはIDEはそれほど適していないかもしれないので、同じくらい強力で、もっとシンプルなものをオススメします。
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Geditはオープン ソースの無料エディタで、すべてのOSで利用可能です。
+Gedit is an open-source, free editor, available for all operating systems.
 
-[ダウンロード](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Textは非常に人気のあるエディタで、無料の試用期間があります。簡単にインストールして使用することができ、すべてのOSに対応しています。
+Sublime Text is a very popular editor with a free evaluation period. It's easy to install and use, and it's available for all operating systems.
 
-[ダウンロード](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
-[ダウンロード](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## なんでコードエディタをインストールするの？
+## Why are we installing a code editor?
 
-なんでWordやNotepadのようなものを使わず、特別なコードエディタをインストールするのかなと思うかもしれません。
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
