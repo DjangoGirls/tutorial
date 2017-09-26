@@ -1,17 +1,52 @@
-### Windows
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
-Ты можешь загрузить Git с официального сайта [git-scm.com](https://git-scm.com/). Ты можешь нажимать "дальше дальше дальше" на всех этапах установки за исключением одного: на пятом шаге, который называется "Adjusting your PATH environment" (Настройка системной переменной Path), выберите "Run Git and associated Unix tools from the Windows command-line" (Запуск Git и соответствующих Unix утилит через командную строку Windows, нижняя опция). Все остальные настройки можно оставить по умолчанию. Опция "Checkout Windows-style, commit Unix-style line endings" будет неплохим выбором.
+## Installing Git
 
-### MacOS
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-Загрузи Git с официального сайта [git-scm.com](https://git-scm.com/) и просто следуйте инструкциям по установке.
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-### Linux
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
-Если git ещё не установлен, то он будет доступен через менеджер пакетов, попробуй следующую команду:
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
 
-    sudo apt-get install git
-    # or
-    sudo yum install git
-    # or
-    sudo zypper install git
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo apt-get install git
+```
+
+<!--endsec-->
+
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo dnf install git
+```
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo zypper install git
+```
+
+<!--endsec-->
