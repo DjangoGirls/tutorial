@@ -1,53 +1,51 @@
-# Django Girls Tutoriál
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Django Girls Tutorial
 
-> Tento návod je licencován pod Creative Commons Attribution-ShareAlike 4.0 mezinárodní licencí. Chcete-li zobrazit kopii této licence, navštivte https://creativecommons.org/licenses/by-sa/4.0/
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-## Úvod
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-Už jsi někdy měla pocit, že svět stále více a více používá technologie a ty zůstáváš nějak pozadu? Přemýšlela jsi někdy, jak vytvořit webové stránky, ale nikdy jsi neměla dostatek motivace začít? Přemýšlela jsi někdy, že svět softwaru je pro tebe příliš složitý na to, abys zkusila něco naprogramovat sama?
+## Welcome
 
-Máme pro tebe dobrou zprávu! Programování není tak těžké, jak se zdá, a zde ti chceme ukázat, jak zábavné to může být.
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Tento návod tě magicky nepromění v programátora. Jestli chceš být dobrá programátorka, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky tak jednoduše, jak dokážeme, aby ses necítila technologiemi zastrašena.
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-Doufáme, že se nám podaří přiblížit ti tuto technologii tak, abys ji měla stejně ráda jako my!
+## Introduction
 
-## Co se naučíš během kurzu?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Po dokončení kurzu budeš mít jednoduchou, fungující webovou aplikaci: vlastní blog. Ukážeme ti, jak ho zprovoznit online tak, aby se ostatní mohli na tvoji práci podívat!
+Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
-Tvá aplikace bude (více či méně) vypadat takto:
+This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-![Figure 0.1][2]
+We hope that we'll be able to make you love technology as much as we do!
 
- [2]: images/application.png
+## What will you learn during the tutorial?
 
-> Pokud budeš procházet kurz sama bez učitele, který ti by ti pomáhal v případě, že narazíš na nějaký problém, máme pro tebe chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem. Neboj se zde zeptat na jakoukoliv otázku!
+Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-OK, [začněme od začátku...][3]
+It will (more or less) look like this:
 
- [3]: ./how_the_internet_works/README.md
+![Figure 0.1](images/application.png)
 
-## O kurzu a přispěvatelích
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-Tento kurz je provozován organizací [DjangoGirls][4]. Pokud najdeš nějaké chyby, nebo chceš aktualizovat návod, prosím, [postupuj podle pokynů pro přispívající][5].
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+## Following the tutorial at home
 
-## Český překlad
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-Původní DjangoGirls tutoriál přeložila do češtiny skupina dobrovolníků. Poděkování patří hlavně:
-Davidovi (dakf), Kristýně Kumpánové, Veronice Gabrielové, Tomáši Ehrlichovi,
-Aničce Jaegerové, Matějovi Stuchlíkovi, Filipovi Sivákovi a Juraji M. Bezručkovi.
+In every chapter already covered, there is a link that points to the correct video.
 
-## Chtěla bys nám pomoci přeložit návod do jiných jazyků?
+## About and contributing
 
-V současné době jsou překlady provozovány na platformě crowdin.com na adrese:
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+
+## Would you like to help us translate the tutorial to other languages?
+
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Pokud tvůj jazyk není uveden v seznamu na crowdin, prosím, [založ nový požadavek][6] pro přidání dalšího jazyka.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
