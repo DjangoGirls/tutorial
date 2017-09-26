@@ -1,16 +1,16 @@
-# Úvod do jazyka Python
+# Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Poďme napísať nejaký kód!
+Let's write some code!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Aby sme mohli začať s Pythonom, musíte otvoriť *príkazový riadok* (angl. command line) na svojom počítači. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Ak ste hotoví, pokračujte s inštrukciami nižšie.
+Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -22,13 +22,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Váš prvý príkaz v Pythone!
+## Your first Python command!
 
-Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená že odteraz by sme mali písať príkazy iba v jazyku Python. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-Ale teraz ešte vôbec nechceme ukončiť konzolu Python. Chceme sa o ňom naučiť viac. Začínajme s niečím jednoduchým. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,63 +54,63 @@ Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Reťazce
+## Strings
 
-Čo tak vaše meno? Napíšte svoje meno v úvodzovkách:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola" 
-"Ola"
+>>> "Ola"
+'Ola'
 ```
 
-Práve ste vytvorili svoj prvý reťazec! Je postupnosť znakov, ktoré môžu byť spracované počítačom. Reťazec musí vždy začínať a končíť s rovnakým znakom. Sú to jednoduché (`'`) alebo dvojité (`"`) úvodzovky (nie je medzi nimi žiadny rozdiel!). Úvodzovky naznačujú, že to čo je medzi nimi je reťazec (string).
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Reťazce možno spájať dohromady. Skús toto:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ahoj" + "Ola" 
-'Ahoj Ola'
+>>> "Hi there " + "Ola"
+'Hi there Ola'
 ```
 
-Reťazce môžete násobiť aj s číslom:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola" * 3 
+>>> "Ola" * 3
 'OlaOlaOla'
 ```
 
-Ak potrebujete dať apostrof do vnútra reťazca, máte dva spôsoby, ako to urobiť.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Použitím dvojitých úvodzoviek:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Runnin' down the hill" 
+>>> "Runnin' down the hill"
 "Runnin' down the hill"
 ```
 
-alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovkou) povie, že ona je súčasťou reťazca a nie koniec / začiatok reťazca (``):
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> 'Runnin\' down the hill' 
+>>> 'Runnin\' down the hill'
 "Runnin' down the hill"
 ```
 
-Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajte:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola".upper() 
+>>> "Ola".upper()
 'OLA'
 ```
 
@@ -121,26 +121,26 @@ If you want to know the number of letters contained in your name, there is a **f
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len("Ola") 
+>>> len("Ola")
 3
 ```
 
-Ste zvedaví, prečo voláme niekedy funkciu s bodkou (`.`) na konci reťazca (ako `"Ola".upper()`) a niekedy najprv voláme funkciu a reťazec vložíme do zátvoriek? V niektorých prípadoch funkcie patria k objektom, ako napr. `upper()`, čo môže byt vykonaná len na reťazcoch. V takomto prípade sa tieto funkcie volajú **metódy**. Inokedy funkcie nepatria k žiadnemu konkrétnemu objektu a môžu byť použité na rôzne typy objektov, rovnako ako `len()`. Preto zadáme `"Ola"` ako parameter pre funkciu `len`.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Zhrnutie
+### Summary
 
-OK, dosť už reťazcoch. Zatiaľ ste sa naučili o:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-Toto sú základy každého programovacieho jazyka. Ste pripravení na niečo ťažšie? Stavíme sa, že áno!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Chyby
+## Errors
 
-Teraz skúsme niečo nové. Je možné zistiť dĺžku nejakého čísla rovnako ako sme to robili s našim menom? Napíšte `len(304023)` a stlačte `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dostali sme našu prvú chybovú hlášku! Hovorí nám, že objekty typu "int" (celé čísla, angl. integers) nemajú dĺžku. Tak čo môžeme teraz robiť? Možno by sme mohli napísať naše číslo ako reťazec? Reťazce majú dĺžku, pravda?
+We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,33 +160,33 @@ Dostali sme našu prvú chybovú hlášku! Hovorí nám, že objekty typu "int" 
 6
 ```
 
-Funguje to! Použili sme funkciu `str` vo vnútri funkcie `len`. Funkcia `str()` prevedie všetko na reťazce.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
-- Funkcia `str` prevedie (konvertuje) všetko na **reťazce** (angl. string)
-- Funkcia `int` prevedie všetko na **int** (celé čísla)
+- The `str` function converts things into **strings**
+- The `int` function converts things into **integers**
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Premenné
+## Variables
 
-Veľmi dôležitý pojem v programovaní je pojem premennej. Premenná je nič iné ako názov niečoho, čo môžeme použiť aj neskoršie v programe. Programátori používajú premenné aby v nich ukladali dáta, aby ich zdrojový kód bol prehľadnejší a aby nemuseli všetko držať v hlave.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Povedzme, že chceme vytvoriť novú premennú s názvom `meno`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> meno = "Ola"
+>>> name = "Ola"
 ```
 
-Vidíte? Je to jednoduché: meno rovná sa Ola.
+You see? It's easy! It's simply: name equals Ola.
 
-Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v predchádzajúcich príkladoch. Tak ako vieme, či tá premenná existuje? Jednoducho napíšte `meno` a stlačte `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> meno
+>>> name
 'Ola'
 ```
 
@@ -195,17 +195,17 @@ Yippee! Your first variable! :) You can always change what it refers to:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> meno = "Sonja"
->>> meno
+>>> name = "Sonja"
+>>> name
 'Sonja'
 ```
 
-Môžete ju použiť aj vo funkciách:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(meno)
+>>> len(name)
 5
 ```
 
@@ -220,45 +220,45 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-Ale čo by sa stalo, keby sme použili zlý názov? Uhádnete, čo sa stane? Skúsme!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> mesto = "Tokyo"
->>> mseto
+>>> city = "Tokyo"
+>>> ctiy
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'mseto' is not defined
+NameError: name 'ctiy' is not defined
 ```
 
-Chyba! Ako vidíte, Python má viacero chýb a táto jedna sa volá **NameError**. Python vám hodí túto chybu ak sa pokúsite použiť premennú ktorá ešte nebola definovaná. Ak sa stretnete s touto chybou v budúcnosti, vždy skontrolujte svoj kód, či nemáte preklep v niektorom názve.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Bavte sa s tým trošku, a potom uvidíme čo môžeme ešte urobiť!
+Play with this for a while and see what you can do!
 
-## Funkcia print
+## The print function
 
-Vyskúšajte toto:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> meno = 'Maria'
->>> meno
+>>> name = 'Maria'
+>>> name
 'Maria'
->>> print(meno)
+>>> print(name)
 Maria
 ```
 
-Ak zadáte len `meno`, Python interpreter odpovie reťazcovou *reprezentáciou* premennej 'meno', teda písmenami M-a-r-i-a medzi jednoduchými úvodzovkami, ''. Keď napíšete `print(meno)`, Python vypíše obsah premennej na obrazovku, bez úvodzoviek, čo vyzerá krajšie.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Ako uvidíme neskôr, funkcia `print()` je tiež užitočná, keď chceme tlačiť veci z funkcií, alebo ak chceme tlačiť veci na viacerých riadkoch.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Zoznamy
+## Lists
 
-Okrem reťazcov a celých čísel, má Python všetky možné typy objektov. Teraz sa zoznámime s typom, ktorý sa volá **zoznam** (list). Lists are exactly what you think they are: objects which are lists of other objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Poďme na to, vytvorte zoznam:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,74 +267,74 @@ Poďme na to, vytvorte zoznam:
 []
 ```
 
-Áno, tento zoznam je prázdny. Nie veľmi užitočné, však? Vytvorme zoznam s číslami lotérie. Nechceme sa dokola opakovať, takže ho hneď aj priradíme do premennej:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> loteria = [3, 42, 12, 19, 30, 59]
+>>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel lotérie máme v zozname. Máte predstavu, ktorú funkciu by sme mohli použiť? Toto už predsa viete!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(loteria)
+>>> len(lottery)
 6
 ```
 
-Áno! `len()` vám vráti počet objektov v zozname. Šikovné, nie? Možno by sme to teraz mohli usporiadať:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> loteria.sort()
+>>> lottery.sort()
 ```
 
-Nič nám to nevrátilo, iba sa zmenilo poradie poradie, v ktorom sa čísla zobrazia v zozname. Vytlačme to znova a pozrime sa, čo sa stalo:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(loteria)
+>>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
-Ako vidíte, čísla vo vašom zozname sú teraz zoradené od najnižšej po najvyššiu hodnotu. Gratulujeme!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Chceli by sme otočiť poradie? Urobme to!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> loteria.reverse()
->>> print(loteria)
+>>> lottery.reverse()
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3]
 ```
 
-Jednoduché, však? Ak chcete pridať niečo do svojho zoznamu, môžete tak urobiť zadaním tohto príkazu:
+Easy, right? If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> loteria.append(199)
->>> print(loteria)
+>>> lottery.append(199)
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Ak chcete zobraziť iba prvé číslo, môžete to urobiť pomocou **indexov**. Index je číslo, ktoré hovorí, kde v zozname sa položka nachádza. Programátori radi počítajú od nuly, takž eprvý objekt vo vašom zozname je na indexe 0, ďalší je na 1 a tak ďalej. Vyskúšajte toto:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(loteria[0])
+>>> print(lottery[0])
 59
->>> print(loteria[1])
+>>> print(lottery[1])
 42
 ```
 
-Ako vidíte, k rôznym objektom vo vašom zozname môžete pristupovať použitím názvu zoznamu a indexom objektu v hranatých zátvorkách.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,13 +351,13 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-Funguje to ako hodinky!
+That worked like a charm!
 
-Pre zábavu vyskúšajte aj nejaké iné indexy: 6, 7, 1000, -1, -6 alebo -1000. Skúste predpovedať výsledok predtým ako príkaz použijete. Dávajú výsledky zmysel?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Zoznam všetkých dostupných metód pre zoznamy v tejto kapitole dokumentácie Pythonu: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Slovníky
+## Dictionaries
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
@@ -370,57 +370,57 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-To znamená, že ste práve vytvorili prázdny slovník. Hurá!
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucastnicka = {'meno': 'Ola', 'krajina': 'Slovensko', 'oblubene_cisla': [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
-- Kľúč `meno` odkazuje na hodnotu `"Ola"` (objekt typu `reťazec/string`),
+- The key `name` points to the value `'Ola'` (a `string` object),
 - `country` points to `'Poland'` (another `string`),
-- a `oblubene_cisla` smeruje na `[7, 42, 92]` (`zoznam` s tromi číslami).
+- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
-Obsah jednotlivých kľúčov môžete skontrolovať touto syntaxou:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(ucastnicka['meno'])
+>>> print(participant['name'])
 Ola
 ```
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-Čo sa stane ak si od Pythonu vypýtame hodnotu kľúča, ktorý neexistuje? Uhádnete? Vyskúšajme to a uvidíme!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucastnicka['vek']
+>>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-KeyError: 'vek'
+KeyError: 'age'
 ```
 
-Aha, ďalšia chyba! Táto sa volá **KeyError** (chyba kľúča). Python je nápomocný a povie vám, že kľúč `'vek'` v tomto slovníku neexistuje.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Kedy by používať slovník alebo zoznam? No, to je dobrá otázka. Porozmýšľaj predtým, ako si pozrieš odpoveď v nasledujúcom riadku.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
-- Potrebuješ zoradenú postupnosť položiek? Vyber si zoznam (list).
-- Potrebuješ priraďovať hodnoty kľúčovým slovám, aby si si ich mohla efektívne (podľa kľúča) neskôr vyhľadať? Použi slovník (dictionary).
+- Do you just need an ordered sequence of items? Go for a list.
+- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucastnicka['oblubeny_jazyk'] = 'Python'
+>>> participant['favorite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
@@ -428,13 +428,13 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(ucastnicka)
+>>> len(participant)
 4
 ```
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Napríklad ak chceš odstrániť položku zodpovedajúcu kľúču `'oblubene_cisla'`, zadaj nasledujúci príkaz:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -452,25 +452,25 @@ As well as this, you can also change a value associated with an already-created 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucastnicka['krajina'] = 'Nemecko'
->>> ucastnicka
-{'krajina': 'Nemecko', 'oblubeny_jazyk': 'Python', 'meno': 'Ola'}
+>>> participant['country'] = 'Germany'
+>>> participant
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Zhrnutie
+### Summary
 
-Skvelé! Teraz už vieš o programovaní dosť veľa. Pozrime sa, čo sme si vysvetlili v poslednej časti:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-Tešíš sa na ďalšiu časť? :)
+Excited for the next part? :)
 
-## Porovnávanie vecí
+## Compare things
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -493,9 +493,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Zaujíma ťa, prečo sme použili dve "rovná sa" `==` vedľa seba, aby sme porovnali, či sú čísla rovnaké? Jeden znak `=` používame na priraďovanie hodnôt premenným. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. Taktiež môžeme zisťovať, či sa veci navzájom líšia. Na to použijeme symbol `!=`, ako bolo uvedené v príklade vyššie.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Zadaj Pythonu ešte dve úlohy:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -506,14 +506,14 @@ True
 False
 ```
 
-`>` a `<` sú jasné, ale čo znamenajú `>=` a `<=`? Prečítať ich môžeš takto:
+`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y znamená: x je väčšie ako y
-- x `<` y znamená: x je menšie ako y
-- x `<=` y znamená: x je menšie alebo sa rovná y
-- x `> =` y znamená: x je väčšie alebo sa rovná y
+- x `>` y means: x is greater than y
+- x `<` y means: x is less than y
+- x `<=` y means: x is less than or equal to y
+- x `>=` y means: x is greater than or equal to y
 
-Skvelé! Chceš vyskúšať ešte jeden? Skús toto:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,12 +526,12 @@ False
 True
 ```
 
-Môžeš dať Pythonu toľko čísel, koľko chceš a on ti dá vždy odpoveď! Vcelku šikovné, nie?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Už ste počula výraz "porovnávať hrušky s jablkami"? Skúsme pythonský ekvivalent:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
 {% filename %}command-line{% endfilename %}
 
@@ -542,9 +542,9 @@ Traceback (most recent call last):
 TypeError: unorderable types: int() > str()
 ```
 
-Tu vidíš, že tak ako nevieme porovnávať hrušky s jablkami, ani Python neviem porovnať číslo (`int`) s reťazcom (`str`). Namiesto toho vypíše chybu **TypeError** a povie nám, ktoré dva typy sa nedajú porovnať.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
-## Logické hodnoty (Boolean)
+## Boolean
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**, and it is probably the easiest type there is.
 
@@ -555,7 +555,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Logické hodnoty môžu byť aj premenné. Aha:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +565,7 @@ Logické hodnoty môžu byť aj premenné. Aha:
 True
 ```
 
-Môžeš to urobiť aj takto:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,25 +575,25 @@ Môžeš to urobiť aj takto:
 False
 ```
 
-Precvič si to a zabav sa s logickými premennými - skús spustiť tieto príkazy:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Gratulujeme! Logické hodnoty patria k tomu najužitočnejšiemu z programovania a ty si sa práve naučila, ako sa používajú!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
-# Ulož to!
+# Save it!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-Zatiaľ sme písali všetok pythonský kód do konzoly interpretera, čiže môžeme na jedenkrát zadať iba jeden riadok kódu. Normálne programy sú uložené v súboroch, ktoré spúšťa buď **interpreter** alebo **kompilátor**. Doteraz sme spúšťali naše programy riadok po riadku v **interpreteri** Pythonu. Na ďalšie úlohy budeme potrebovať viac ako jeden riadok kódu, takže teraz rýchlo musíme:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
-- Ukončiť interpreter Pythonu
-- Otvoriť si zvolený editor kódu
-- Uložiť v ňom nejaký kód do nového pythonského súboru
-- Spustiť ho!
+- Exit the Python interpreter
+- Open up our code editor of choice
+- Save some code into a new python file
+- Run it!
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
@@ -604,9 +604,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-Tak sa dostaneš späť na príkazový riadok.
+This will put you back into the command prompt.
 
-Už skôr si si vybrala editor kódu v kapitole [editor kódu](../code_editor/README.md). Teraz ho potrebujeme otvoriť a napísať v ňom do nového súboru nejaký kód:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +614,18 @@ Už skôr si si vybrala editor kódu v kapitole [editor kódu](../code_editor/RE
 print('Hello, Django girls!')
 ```
 
-Samozrejme, teraz si už vcelku skúsená Python developerka, takže kľudne napíš nejaký kód, ktorý si sa dnes naučila.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Teraz uložíme súbor a dáme mu nejaký zrozumiteľný názov. Nazvime ho **python_intro.py** a ulož ho plochu. Tento súbor môžeš nazvať akokoľvek chceš, ale dôležité je, aby jeho názov končil **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Toto sa nazýva "zvýraznenie syntaxe" a pri programovaní je to fakt užitočná vec. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
-Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku, pomocou Terminálu **zmeň adresár** na plochu.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Na Macu bude príkaz vyzerať takto:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +668,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.
+If you get stuck, just ask for help.
 
-Teraz použi Python na spustenie kódu v súbore:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +686,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Výborne! Práve si spustila svoj prvý pythonský program uložený v súbore. Skvelý pocit, však?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Teraz sa môžeš posunúť na ďalší základný nástroj v programovaní:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Nahraď kód v súbore **python_intro.py** týmto:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -712,7 +712,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré majú byť vykonané ak je podmienka `3 > 2` pravdivá (teda ak bude mať hodnotu `True`). Skúsme zariadiť, aby Python napísal "Funguje to!". Zmeň svoj kód v súbore **python_intro.py** takto:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,22 +721,22 @@ if 3 > 2:
     print('It works!')
 ```
 
-Všimla si si, ako sme odsadili druhý riadok o 4 medzery? To musíme urobiť preto, aby Python vedel, ktorú časť kódu má spustiť ak je výsledok pravdivý. Môžeš použiť len jednu medzeru, ale takmer všetci programátori v Pythone používajú 4 medzery, aby bol kód dobre čitateľný. Jeden `tab` sa tiež počíta ako 4 medzery.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-Ulož to a spusti to znova:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
-Funguje to!
+It works!
 ```
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
-### Čo ak podmienka nie je pravdivá?
+### What if a condition isn't True?
 
-V predchádzajúcich príkladoch, bol kód vykonaný len vtedy, keď podmienky boli pravdivé. Ale Python má tiež príkazy `elif` a `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,15 +747,15 @@ else:
     print('5 is not greater than 2')
 ```
 
-Keď to spustíš, vypíše to:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    5 je naozaj viac ako 2
+    5 is indeed greater than 2
     
 
-Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -769,17 +769,17 @@ else:
     print('Hey anonymous!')
 ```
 
-a po spustení:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Sonja!
+    Hey Sonja!
     
 
-Všimla si si, čo sa stalo? `elif` ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak sú predchádzajúce nesplnené.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Za prvý `if` môžeš dať `elif` toľkokrát, koľko len chceš. Napríklad:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,12 +799,12 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python prejde všetkými podmienkami v poradí a vypíše:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Super, pocujem vsetky detaily
+    Perfect, I can hear all the details
     
 
 ## Comments
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Zhrnutie
+### Summary
 
 In the last few exercises you learned about:
 
@@ -834,15 +834,15 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-Teraz je čas na poslednú časť tejto kapitoly!
+Time for the last part of this chapter!
 
-## Tvoje vlastné funkcie!
+## Your own functions!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Začnime s niečím ľahkým. Nahraď kód v **python_intro.py** týmto:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,17 +854,17 @@ def hi():
 hi()
 ```
 
-OK, naša prvá funkcia je pripravená!
+Okay, our first function is ready!
 
-Možno sa čuduješ prečo sme na koniec súboru napísali názov funkcie. To preto, lebo Python číta súbor a vykonáva kód od vrchu po spodok. Takže aby sme mohli našu funkciu použiť, musíme jej názov napísať opäť.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Spusťme to a pozrime sa, čo sa stane:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj!
-    Ako sa mas?
+    Hi there!
+    How are you?
     
 
 Note: if it didn't work, don't panic! The output will help you to figure why:
@@ -881,7 +881,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-Ako vidíš, dali sme našej funkcii parameter, ktorý sme nazvali `meno`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,7 +897,7 @@ def hi(name):
 hi()
 ```
 
-Zapamätaj si: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`. Je to preto, lebo funkcia sa spustí, len ak je splnená podmienka. Pozrime sa ako to funguje:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -905,10 +905,10 @@ Zapamätaj si: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
       hi()
-    TypeError: hi() missing 1 required positional argument: 'meno'
+    TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. Hovorí nám, že funkcia `hi()` (tá, čo sme definovali) má jeden povinný argument (s názvom `meno`) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,15 +916,15 @@ Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. 
 hi("Ola")
 ```
 
-A znova ho spusti:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Ola!
+    Hi Ola!
     
 
-A čo ak zmeníme meno?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,22 +932,22 @@ A čo ak zmeníme meno?
 hi("Sonja")
 ```
 
-A spustíme to:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Sonja!
+    Hi Sonja!
     
 
 Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
-    Ahoj neznáma!
+    Hi anonymous!
     
 
-Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -960,25 +960,25 @@ def hi(name):
 hi("Rachel")
 ```
 
-Teraz spusťme kód:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Katka!
+    Hi Rachel!
     
 
-Gratulujeme! Práve si sa naučila ako sa píšu funkcie! :)
+Congratulations! You just learned how to write functions! :)
 
-## Cykly
+## Loops
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-Toto je už posledná časť. Išlo to rýchlo, však? :)
+This is the last part already. That was quick, right? :)
 
-Programátori sa neradi opakujú. Programovanie je o automatizácii vecí, takže nechceme zdraviť každú osobu manuálne, nie? A vtedy nám prídu vhod cykly.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Ešte si spomínaš na zoznamy? Pripravme zoznam dievčat:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +986,7 @@ Ešte si spomínaš na zoznamy? Pripravme zoznam dievčat:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Chceme ich pozdraviť všetky menom. Na to máme funkciu `hi`, tak ju použime v cykle:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +996,7 @@ for name in girls:
 
 The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
 
-Tu je plný kód, ktorý napíšeme do súboru:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,26 +1010,26 @@ for name in girls:
     print('Next girl')
 ```
 
-A keď to spustíme:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Katka!
-    Dalsie dievca
-    Ahoj Monika!
-    Dalsie dievca
-    Ahoj Zuzka!
-    Dalsie dievca
-    Ahoj Ola!
-    Dalsie dievca
-    Ahoj Ty!
-    Dalsie dievca
+    Hi Rachel!
+    Next girl
+    Hi Monica!
+    Next girl
+    Hi Phoebe!
+    Next girl
+    Hi Ola!
+    Next girl
+    Hi You!
+    Next girl
     
 
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-`for` môžeš pomocou funkcie `range` použiť aj na čísla:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1038,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Čo vypíše:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,14 +1049,14 @@ for i in range(1, 6):
     5
     
 
-`range` je funkcia, ktorá vytvára zoznam čísel s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda `range(1, 6)` počíta od 1 po 5, ale neobsahuje číslo 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Zhrnutie
+## Summary
 
-To je všetko. **Si úplne geniálna!** Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme rozhodne hrdí na teba, že si to zvládla až potiaľto!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Koláčik](images/cupcake.png)
+![Cupcake](images/cupcake.png)
