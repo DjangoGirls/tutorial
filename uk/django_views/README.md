@@ -2,13 +2,13 @@
 
 Time to get rid of the bug we created in the last chapter! :)
 
-Відображення - *view* -- це місце, в якому ми закладаємо "логіку" нашої програми. Воно запитує інформацію з `моделі`, яку ми створили раніше і передає його до `шаблону`. Ми створимо шаблон в наступному розділі. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Відображення розташовані у файлі `views.py`. Додамо наші відображення до файлу `blog/views.py`.
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
 ## blog/views.py
 
-OK, давайте відкриємо цей файл подивимось що тут:
+OK, let's open up this file and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -35,7 +35,7 @@ As you can see, we created a function (`def`) called `post_list` that takes `req
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Інша помилка! Прочитайте у чому цього разу справа:
+Another error! Read what's going on now:
 
 ![Error](images/error.png)
 
