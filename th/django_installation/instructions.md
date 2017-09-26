@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. บทเรียน django-marcador เป็นลิขสิทธิ์ของ Markus Zapke-Gründemann
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## สภาพแวดล้อมเสมือน
+## Virtual environment
 
-ก่อนที่เราจะติดตั้ง Django เราจะให้คุณติดตั้งเครื่องมีที่มีประโยชน์สุดๆ ตัวนึงก่อน ซึ่งช่วยให้คุณมีสภาพแวดล้อมในการทำงานที่ไม่รบกวนระบบหลักของคุณ คุณจะข้ามขั้นตอนนี้ไปก็ได้นะ แต่เราขอแนะนำอย่างแรง การทำสิ่งนี้จะช่วยให้คุณเจอปัญหาน้อยที่สุดภายในอนาคตอันใกล้นี้!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-เอาล่ะ มาสร้าง **สภาพแวดล้อมเสมือน** กัน (เรียกว่า *virtualenv*). Virtualenv จะช่วยแยกสภาพแวดล้อมของ Python/Django ออกจากระบบหลัก ซึ่งหมายความว่า ขณะที่คุณกำลังสร้างเว็บไซต์ จะไม่มีผลกระทบกับระบบอื่นๆ ที่กำลังพัฒนาอยู่ เจ๋งใช่ไหมล่ะ?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-ทั้งหมดที่คุณต้องการคือ หาไดเรกทอรีที่คุณต้องการจะสร้าง `virtualenv`; เช่น ไดเรกทอรี home เป็นต้น บน Windows จะมีหน้าตาประมาณ `C:\Users\Name` (ซึ่ง `Name` คือชื่อ login ของคุณ).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-สำหรับบทเรียนนี้ เราจะใช้ไดเรกทอรีใหม่ ชื่อ `djangogirls` ภายในไดเรกทอรี home ของคุณ
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@
     $ cd djangogirls
     
 
-เราจะสร้าง virtualenv เรียกว่า `myvenv` คำสั่งทั่วไปจะอยู่ในรูปแบบ:
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,21 +37,21 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. คุณใช้ชื่ออื่นได้นะ แต่ขอแค่ให้ใช้ตัวพิมพ์เล็กไม่มีช่องว่าง, หรืออักขระพิเศษเป็นพอ It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-สร้าง `virtualenv` ทั้งใน Linux และ OS X นั้นง่ายมาก แค่รันคำสั่ง `python3 -m venv myvenv` จะมีหน้าตาประมาณนี้:
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` คือชื่อ `virtualenv` ของคุณ คุณใช้ชื่ออื่นได้นะ แต่ขอให้ใช้ตัวพิมพ์เล็กไม่มีช่องว่างหรืออักขระพิเศษเป็นพอ เป็นไอเดียที่ดีที่จะใช้ชื่อสั้นๆ เพราะคุณต้องอ้างถึงมันบ่อยมาก!
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -74,7 +74,7 @@ data-collapse=true ces-->
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> การแก้ปัญหา, ให้ใช้คำสั่ง `virtualenv` แทน
+> To get around this, use the `virtualenv` command instead.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,14 +98,14 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-## การทำงานกับ virtualenv
+## Working with virtualenv
 
-คำสั่งข้างต้น จะสร้างไดเรกทอรีชื่อ `myvenv` (หรือชื่อที่คุณเลือก) ข้างในจะมีสภาพแวดล้อม (โดยทั่วไป จะมีทั้งไดเรกทอรีและไฟล์จำนวนนึง)
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-เริ่มใช้สภาพแวดล้อมเสมือน โดยใช้คำสั่ง:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ data-collapse=true ces-->
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-เริ่มใช้สภาพแวดล้อมเสมือน โดยใช้คำสั่ง:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-อย่าลืมแทนที่ `myvenv` ด้วยชื่อ `virtualenv` ที่คุณได้สร้างไว้!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **หมายเหตุ:** บางครั้งคำสั่ง `source` จะไม่มีให้ใช้ ในกรณีนี้ให้ทำคำสั่งนี้แทน:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -148,9 +148,9 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-โอววเคย์ ในที่สุดตอนนี้เราพร้อมที่ติดตั้ง Django กันแล้ว!
+OK, we have all important dependencies in place. We can finally install Django!
 
-## การติดตั้ง Django
+## Installing Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> ถ้าเกิด error ตอนรันคำสั่ง pip บน Ubuntu 12.04 ให้ลองใช้คำสั่ง `python -m pip install -U --force-reinstall pip` เพื่อแก้ไข
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-นั่นล่ะ! ตอนนี้คุณก็พร้อม(สักที)ที่จะสร้าง Django application แล้ว!
+That's it! You're now (finally) ready to create a Django application!
