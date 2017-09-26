@@ -2,7 +2,7 @@
 
 What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
-## Objekt
+## Objects
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
@@ -147,7 +147,7 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? Ett datum? A relation to another object, like a User?)
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
