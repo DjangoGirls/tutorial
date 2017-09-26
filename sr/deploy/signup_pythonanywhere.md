@@ -1,4 +1,4 @@
-Sledeće što treba da uradite je da se prijavite za besplatni "Početnik" nalog na Python Anywhere.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
