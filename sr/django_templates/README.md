@@ -1,4 +1,4 @@
-# Django šabloni
+# Django templates
 
 Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
