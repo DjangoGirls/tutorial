@@ -1,14 +1,14 @@
-# Quali sono le prospettive?
+# What's next?
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### Cosa si fa ora?
+### What to do now?
 
-Prenditi una pausa e rilassati. Hai veramente fatto un passo da gigante.
+Take a break and relax. You have just done something really huge.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Mi puoi consigliare ulteriori risorse?
+### Can you recommend any further resources?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
