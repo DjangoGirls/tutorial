@@ -1,4 +1,4 @@
-# Uvod u HTML
+# Introduction to HTML
 
 What's a template, you may ask?
 
