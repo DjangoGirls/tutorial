@@ -1,14 +1,14 @@
 # Deploy!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Hinweis:** Durch das folgende Kapitel muss man sich manchmal durchbeißen. Bleib dran und gib nicht auf; die Website zu veröffentlichen ist ein sehr wichtiger Schritt. Dieses Kapitel ist in der Mitte des Tutorials platziert, damit dir dein Mentor mit dem etwas anspruchsvolleren Vorgang der Veröffentlichung deiner Website helfen kann. Den Rest des Tutorials kannst du dann auch alleine beenden, sollte die Zeit nicht ausreichen.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Bis jetzt war deine Webseite nur auf deinem Computer verfügbar. Jetzt wirst du lernen wie du sie 'deployst'! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Wie du schon gelernt hast, muss eine Webseite auf einem Server liegen. Es sind eine Menge Server-Anbieter im Internet verfügbar. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere ist kostenlos für kleine Anwendungen, die nicht von vielen Besuchern aufgerufen werden. Also erstmal genau das Richtige für dich.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. Es gibt noch andere solcher Dienste, aber die meisten Programmierer haben heute ein Konto bei GitHub, und du gleich auch!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Diese drei Orte werden für dich wichtig sein. Die Entwicklung und das Testing wirst du auf deinem lokalen Rechner durchführen. Wenn du mit deinen Änderungen zufrieden bist, wirst du eine Kopie deines Programms auf GitHub veröffentlichen. Deine Website wird auf PythonAnywhere gehostet werden. Ändern kannst du sie, indem du eine neue Version deines Codes von GitHub herunter lädst.
 
 # Git
 
@@ -24,10 +24,10 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 {% filename %}command-line{% endfilename %}
 
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+    $ git init 
+    Initialized empty Git repository in ~/djangogirls/.git/ 
+    $ git config --global user.name "Dein Name" 
+    $ git config --global user.email du@beispiel.com
     
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
@@ -47,7 +47,7 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Hinweis:** Der Punkt vor dem Dateinamen ist wichtig! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
@@ -55,18 +55,18 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    On branch master
+    $ git status 
+    On branch master 
     
-    Initial commit
+    Initial commit 
     
     Untracked files:
-      (use "git add <file>..." to include in what will be committed)
+       (use "git add <file>..." to include in what will be committed) 
     
             .gitignore
-            blog/
-            manage.py
-            mysite/
+             blog/
+             manage.py
+             mysite/ 
     
     nothing added to commit but untracked files present (use "git add" to track)
     
