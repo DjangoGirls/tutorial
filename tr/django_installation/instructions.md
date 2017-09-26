@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Virtual environment (Sanal ortam)
+## Virtual environment
 
-Django'yu yüklemeden önce kod ortamınızı düzenli tutmak için son derece yararlı bir araç yükleyeceğiz. Bu adımı atlayabilirsiniz, fakat atlamamanızı tavsiye ederiz. En iyi olası kurulum ile başlamanız sizi gelecekteki bir sürü sorundan koruyacaktır!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-Öyleyse bir **virtual environment**(diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. Windows'da bu `C:\Users\isim` olabilir (`isim` kısmı kullanıcı adınız olacak şekilde).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir klasör kullanacağız:
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir 
     $ cd djangogirls
     
 
-`myvenv` adında bir virtualenv oluşturacağız. Genel komut aşağıdaki şekilde olacak:
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,21 +37,21 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Linux ve OS X işletim sistemlerinde `virtualenv` oluşturmak için `python3 -m venv myvenv` komutunu çalıştırmak yeter. Komut şu şekilde görünecektir:
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. İsmi çok fazla kullanacağınız için kısa tutmak da işinize yarayacaktır.
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -71,10 +71,10 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     Error: Command '['/home/zeynep/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+>     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> Bu sorunu çözmek için `virtualenv` komutunu kullanabilirsiniz.
+> To get around this, use the `virtualenv` command instead.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,14 +98,14 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 
 <!--endsec-->
 
-## Virtualenv ile çalışmak
+## Working with virtualenv
 
-Yukarıdaki komutlar `myvenv` (veya seçtiğiniz isimde) bir klasör oluşturacaktır. Bu klasörde birçok dosya ve klasör bulunur.
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Şu komutu çalıştırarak virtualenv'i başlatın:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ data-collapse=true ces-->
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Şu komutu çalıştırarak virtualenv'i başlatın:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-`myvenv` yerine kendi seçtiğiniz `virtualenv` ismini koymayı unutmayın!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **NOT:** bazen `source` komutu kullanılamıyor durumda olabilir. Böyle durumlarda onun yerine aşağıdaki komutu da kullanabilirsiniz:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -148,9 +148,9 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Django'yu yükleyebiliriz!
+OK, we have all important dependencies in place. We can finally install Django!
 
-## Django'yu yüklemek
+## Installing Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Eğer Ubuntu 12.04 işletim sisteminde pip komutunu çağırırken bir hata iletisiyle karşılaştıysanız `python -m pip install -U --force-reinstall pip` komutunu çalıştırarak pip kurulumunu onarmayı deneyin.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-İşte bu kadar! Sonunda Django uygulamanızı oluşturmaya hazırsınız!
+That's it! You're now (finally) ready to create a Django application!
