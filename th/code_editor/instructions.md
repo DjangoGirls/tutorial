@@ -1,28 +1,28 @@
-ในตอนนี้มีโปรแกรม editor อยู่มากมาย ซึ่งก็ขึ้นอยู่กับความชอบของแต่ละคนว่าชอบโปรแกรมตัวไหน โปรแกรมเมอร์จำนวนมากใช้ IDEs (Integrated Development Environments) ที่ซับซ้อน แต่มีประสิทธิภาพมาก เช่น PyCharm สำหรับมือใหม่นั้น เราขอแนะนำให้ใช้โปรแกรมที่มีประสิทธิภาพเทียบเคียงกัน และใช้งานได้ง่ายกว่ามาก
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit เป็นโปรแกรม editor โอเพนซอร์ส และ ฟรี ซึ่งรองรับทุกระบบปฎิบัติการ
+Gedit is an open-source, free editor, available for all operating systems.
 
-[ดาวน์โหลดได้ ที่นี่](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text เป็นโปรแกรม editor ที่ได้รับความนิยมอย่างมาก สามารถใช้งานได้ฟรี ง่ายในการติดตั้งและนำไปใช้ และรองรับทุกระบบปฎิบัติการ
+Sublime Text is a very popular editor with a free evaluation period. It's easy to install and use, and it's available for all operating systems.
 
-[ดาวน์โหลดได้ ที่นี่](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
-[ดาวน์โหลดได้ ที่นี่](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## ทำไมเราต้องติดตั้งโค้ด editor?
+## Why are we installing a code editor?
 
-คุณอาจจะสงสัยว่า ทำไมเราจะติดตั้งซอฟต์แวร์โค้ด editor ด้วยล่ะ ใช้ Word หรือ Notepad ก็น่าจะได้นี่
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
