@@ -424,6 +424,6 @@ These are just a very few of the commands you can run in your command line, but 
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Handa ka na ba?
+## Ready?
 
 Let's dive into Python!
