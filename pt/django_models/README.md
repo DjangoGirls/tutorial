@@ -1,12 +1,12 @@
-# Modelos do Django
+# Django models
 
 What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
-## Objetos
+## Objects
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
+So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
@@ -30,11 +30,11 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
 
 So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
-Como nós iremos modelar as postagens do blog então? Queremos construir um blog, certo?
+How will we model blog posts then? We want to build a blog, right?
 
-Nós precisamos responder as questões: O que é um post de blog? Que propriedades ele deve ter?
+We need to answer the question: What is a blog post? What properties should it have?
 
-Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? It would be also nice to know who wrote it – so we need an author. Finalmente, queremos saber quando a postagem foi criada e publicada.
+Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
     Post
     --------
@@ -45,23 +45,23 @@ Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um 
     published_date
     
 
-Que tipo de coisa pode ser feita com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
 
-Então, nós precisaremos de um método `publicar (publish)`.
+So we will need a `publish` method.
 
-Como nós já sabemos o que queremos alcançar, vamos começar a modelá-lo no Django!
+Since we already know what we want to achieve, let's start modeling it in Django!
 
-## Modelo do Django
+## Django model
 
-Sabendo o que um objeto é, nós criaremos um modelo no Django para a postagem do blog.
+Knowing what an object is, we can create a Django model for our blog post.
 
-A model in Django is a special kind of object – it is saved in the `database`. Um banco de dados é uma coleção de dados. O banco de dados é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. This is the default Django database adapter – it'll be enough for us right now.
+A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
 
-Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
+You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
-### Criando uma aplicação
+### Creating an application
 
-Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. Fazemos isso no arquivo `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. É assim que o produto final deve ficar assim:
+After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -105,7 +105,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Criando o modelo Post do nosso blog
+### Creating a blog post model
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
@@ -135,38 +135,38 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
-Todas as linhas começando com `from` ou `import` são linhas que adicionam alguns pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
+All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
-- `class` é uma palavra-chave especial que indica que estamos definindo um objeto.
+- `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` significa que o Post é um modelo de Django, então o Django sabe ele que deve ser salvo no banco de dados.
+- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-Agora definimos as propriedades que comentamos: `title`, `text`, `created_date`, `published_date` e `author`. To do that we need to define the type of each field (Is it text? É um número? Uma data? A relation to another object, like a User?)
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
 
-Nós não explicaremos cada pedaço de código aqui pois isso levaria muito tempo. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-Que tal `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` significa que é uma função/método e `publish` é seu nome. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
-Métodos muitas vezes retornam (`return`) algo. Há um exemplo de que, no método `__str__`. Nesse cenário, quando chamamos `__str__()` teremos um texto (**string**), com um título do Post.
+Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para pedir o seu treinador! Nós sabemos que é complicado, especialmente quando se aprende o que objetos e funções são ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica para você agora!
+If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Criando tabelas para nossos modelos no banco de dados
+### Create tables for models in your database
 
-O último passo é adicionar nosso novo modelo para nosso banco de dados. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. Será algo parecido com isto:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,4 +191,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Uhul! Nosso modelo Post está agora no nosso banco de dados! Seria legal vê-lo, né? Vá para o próximo capítulo para ver como nosso Post se parece!
+Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
