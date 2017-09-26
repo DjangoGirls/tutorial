@@ -170,7 +170,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 Yay! It works!
 
-## Satu hal lagi: saatnya melakukan deploy!
+## One more thing: deploy time!
 
 It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
@@ -183,7 +183,7 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
     $ git push
     
 
-Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,4 +194,4 @@ Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/conso
 
 Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-Dan seharusnya dapa berjalan! Selamat :)
+And that should be it! Congrats :)
