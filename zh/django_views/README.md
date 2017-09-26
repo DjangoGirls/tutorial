@@ -1,36 +1,44 @@
-# Django视图 - 是时候去创建！
+# Django views – time to create!
 
-是是候去解决我们在上一章所制造的Bug了：）
+Time to get rid of the bug we created in the last chapter! :)
 
-*view*是存放应用逻辑的地方。 它将从你之前创建的 `模型`中获取数据，并将它传递给 `模板`。 我们将在下一章创建 tempalte 模板。 视图就是Python方法，只不过比我们在**Python简介**章节中所做的事情稍复杂。
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-视图都被置放在`views.py`文件中。我们将加入我们自己的*views*到`blog/views.py`文件。
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
 ## blog/views.py
 
-好，让我们打开这个文件，看看里面有什么：
+OK, let's open up this file and see what's in there:
 
-    from django.shortcuts import render
-    
-    # Create your views here.
-    
+{% filename %}blog/views.py{% endfilename %}
 
-这里没有太多的东西。一个最简单的*view*就长得这个样子。
+```python
+from django.shortcuts import render
 
-    def post_list(request):
-        return render(request, 'blog/post_list.html', {})
-    
+# Create your views here.
+```
 
-如你所见, 我们创建一个方法 (`def`) ，命名为 `post_list` ，它接受 `request` 参数作为输入， 并 `return` （返回）用 `render` 方法渲染模板 `blog/post_list.html` 而得到的结果.
+Not too much stuff here yet.
 
-保存文件，转到 http://127.0.0.1:8000/ 然后看看我们现在得到什么了。
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-另一个错误！读读现在发生了什么：
+The simplest *view* can look like this:
 
-![错误][1]
+{% filename %}blog/views.py{% endfilename %}
 
- [1]: images/error.png
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
-这个错误很直白：*TemplateDoesNotExist*。让我们修复这个bug，然后在下一个章节里创建一个模板！
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-> 阅读更多关于 Django views 的内容请参阅官方文档： https://docs.djangoproject.com/en/1.8/topics/http/views/
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+
+Another error! Read what's going on now:
+
+![Error](images/error.png)
+
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
