@@ -8,13 +8,13 @@ Cascading Style Sheets (CSS) is a language used for describing the look and form
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## Lass uns Bootstrap verwenden!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Es wurde ursprünglich von ProgrammiererInnen bei Twitter geschrieben. Heute wird es von Freiwilligen aus der ganzen Welt weiterentwickelt!
 
-## Install Bootstrap
+## Bootstrap installieren
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -31,11 +31,11 @@ This doesn't add any files to your project. It just points to files that exist o
 
 Looking nicer already!
 
-## Static files in Django
+## Statische Dateien in Django
 
 Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Wohin kommen die statischen Dateien für Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
@@ -50,9 +50,9 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## Deine erste CSS-Datei!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
 
     djangogirls
     └─── blog
@@ -65,7 +65,7 @@ Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
@@ -206,52 +206,7 @@ We will now add declaration blocks to different selectors. Selectors starting wi
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
-
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
+.page-header {     background-color: #ff9400;     margin-top: 0;     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     color: #ffffff;     font-size: 36pt;     text-decoration: none; } .content {     margin-left: 40px; } h1, h2, h3, h4 {     font-family: 'Lobster', cursive; } .date {     color: #828282; } .save {     float: right; } .post-form textarea, .post-form input {     width: 100%; } .top-menu, .top-menu:hover, .top-menu:visited {     color: #ffffff;     float: right;     font-size: 26pt;     margin-right: 20px; } .post {     margin-bottom: 70px; } .post h1 a, .post h1 a:visited {     color: #000000; }
 ```
 
 Then surround the HTML code which displays the posts with declarations of classes. Replace this:
