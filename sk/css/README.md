@@ -1,79 +1,75 @@
-# CSS - skrášli to!
+# CSS – make it pretty!
 
 Náš blog vyzerá zatiaľ dosť škaredo, však? Je čas to napraviť! Použijeme na to CSS.
 
 ## Čo je CSS?
 
-Kaskádové štýly (CSS, angl. Cascading Style Sheets) je jazyk, ktorý sa používa na popis vzhľadu a formátovania webstránky napísanej v značkovacom jazyku (napríklad HTML). Predstav si to ako make-up pre našu webstránku :).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-Ale asi nechceme začať úplne od nuly, však? Znova použijeme niečo, čo už bolo vytvorené programátormi a sprístupnené na internete zadarmo. Veď vieš, znovuobjavovanie kolesa nie je žiadna zábava.
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
 ## Používajme Bootstrap!
 
-Bootstrap je jedným z najpopulárnejších HTML a CSS frameworkov pre vývoj krásnych webových stránok: https://getbootstrap.com/
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-Bol napísaný programátormi, ktorí pracovali pre Twitter a ďalej ho vyvíjajú dobrovoľníci z celého sveta.
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
 ## Inštalácia Bootstrapu
 
-Na inštaláciu Bootstrapu musíš pridať do hlavičky `<head>` vo svojom `.html` súbore (`blog/templates/blog/post_list.html`) toto:
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Nepridá to do tvojho projektu žiadne súbory. Iba to ukazuje na súbory, ktoré už existujú na internete. Skúsme to, otvor svoju webstránku a obnov stránku. Tu to máme!
+This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Obrázok 14.1][1]
-
- [1]: images/bootstrap1.png
+![Obrázok 14.1](images/bootstrap1.png)
 
 Už teraz vyzerá lepšie!
 
 ## Statické súbory v Djangu
 
-Konečne sa pozrieme zblízka na veci, ktoré nazývame **statické súbory**. Sú to všetky tvoje CSS a obrázky -- súbory, ktoré nie sú dynamické, takže ich obsah nezávisí od kontextu požiadavky a budú rovnaké pre všetkých užívateľov.
+Konečne sa pozrieme zblízka na veci, ktoré nazývame **statické súbory**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
 ### Kam umiestniť statické súbory pre Django
 
-Ako si už videla, keď sme spustili `collectstatic` na serveri, Django už vie, kde má nájsť statické súbory pre vstavané "adminské" aplikácie. Teraz už musíme len pridať nejaké statické súbory pre našu vlastnú aplikáciu, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
 To urobíme tak, že vo vnútri našej aplikácie blog vytvoríme adresár s názvom `static`:
 
-```
-djangogirls
-├── blog
-│   ├── migrations
-│   └── static
-└── mysite
-```
+    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   └── static
+    └── mysite
+    
 
-Django automaticky nájde všetky priečinky s názvom "static" vo všetkých priečinkoch tvojich aplikácií a bude môcť používať ich obsah ako statické súbory.
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
 ## Tvoj prvý CSS súbor!
 
-Vytvorme teraz CSS súbor, ktorý tvojej web stránke pridá vlastný štýl. Vytvor nový adresár s názvom `css` vnútri adresára `static`. Potom vytvor nový súbor s názvom `blog.css` vo vnútri tohto adresára `css`. Pripravená?
+Let's create a CSS file now, to add your own style to your web page. Vytvor nový adresár s názvom `css` vnútri adresára `static`. Potom vytvor nový súbor s názvom `blog.css` vo vnútri tohto adresára `css`. Pripravená?
 
-```
-djangogirls
-└─── blog
-     └─── static
-          └─── css
-               └─── blog.css
-```
+    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+    
 
 Je čas napísať nejaké CSS! Otvor v editore kódu súbor `blog/static/css/blog.css`.
 
-Nepôjdeme príliš do hĺbky ohľadne prispôsobovania web stránky a učenia sa CSS, pretože je to celkom jednoduché a môžeš sa to naučiť sama po tomto workshope. Odporúčame ti urobiť si [kurz Codeacademy HTML & CSS][2], tam sa dozvieš všetko, čo potrebuješ vedieť, aby bola tvoja webstránka vďaka CSS krajšia.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
- [2]: https://www.codecademy.com/tracks/web
-
-Ale urobme aspoň niečo. Čo keby sme zmenili farbu hlavičky? Počítače používajú špeciálne kódy, aby rozumeli farbám. Začínajú `#`, potom nasleduje 6 písmen (A-F) a číslic (0-9). Kódy farieb nájdeš napríklad tu: http://www.colorpicker.com/. Môžeš tiež použiť [preddefinované farby][3] ako napríklad `red` (červená) alebo `green` (zelená).
-
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+Ale urobme aspoň niečo. Čo keby sme zmenili farbu hlavičky? Počítače používajú špeciálne kódy, aby rozumeli farbám. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 V súbore `blog/static/css/blog.css` pridaj nasledujúci kód:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -81,33 +77,37 @@ h1 a {
 }
 ```
 
-`h1 a` je CSS Selector. To znamená, že náš štýl aplikujeme na akýkoľvek element `a` vo vnútri elementu `h1` (napríklad ak máme v kóde niečo takéto: `<h1><a href="">link</a></h1>`). V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Samozrejme, sem môžeš zadať vlastnú farbu!
+`h1 a` je CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Samozrejme, sem môžeš zadať vlastnú farbu!
 
-V CSS súbore definujeme štýly pre elementy v HTML súbore. Elementy sa identifikujú podľa svojho názvu (t. j. `a` `h1`, `body`), atribútom `class` (trieda) alebo atribútom `id`. Triedy a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a idy poukazujú na konkrétne elementy. Napríklad, nasledujúci tag môže byť identifikovaný v CSS pomocou tagu `a`, triedy `external_link` a idu `link_to_wiki_page`:
+V CSS súbore definujeme štýly pre elementy v HTML súbore. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Triedy a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a idy poukazujú na konkrétne elementy. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Prečítaj si o [CSS selektoroch na w3schools][4].
+You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-Potom musíme povedať našej HTML šablóne, že sme pridali nejaké CSS. Otvor súbor `blog/templates/blog/post_list.html` a pridaj tento riadok na úplný začiatok:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
 ```
 
-Práve načítavame statické súbory :). Potom medzi `<head>` a `</head>`, po odkazoch na CSS súbory Bootstrapu pridaj nasledujúci riadok (prehliadač číta súbory v poradí, v akom sú zadané, takže kód v našom súbore môže prepísať už načítaný kód z Bootstrapu):
+We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
 
-    html
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
-Práve sme našej šablóne povedali, kde sa nachádza náš CSS súbor.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Práve sme našej šablóne povedali, kde sa nachádza náš CSS súbor.
 
 Súbor by mal teraz vyzerať asi takto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -136,11 +136,11 @@ Súbor by mal teraz vyzerať asi takto:
 
 OK, ulož súbor a obnov stránku!
 
-![Obrázok 14.2][5]
-
- [5]: images/color2.png
+![Obrázok 14.2](images/color2.png)
 
 Pekne! Možno by sme chceli dať našej webovej stránke trochu vzduchu. Zväčšíme okraj na ľavej strane? Skúsme si to!
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
@@ -148,21 +148,23 @@ body {
 }
 ```
 
-Pridaj to do svojho CSS, ulož súbor a pozri, ako to funguje!
+Add that to your CSS, save the file and see how it works!
 
-![Obrázok 14.3][6]
-
- [6]: images/margin2.png
+![Obrázok 14.3](images/margin2.png)
 
 Mohli by sme trochu upraviť font v našej hlavičke, nie? Skopíruj toto do svojej hlavičky `<head>` v súbore `blog/templates/blog/post_list.html`:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Tento riadok naimportuje z Google fontov (https://www.google.com/fonts) font, ktorý sa volá *Lobster*.
+As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Teraz pridaj riadok `font-rodina: 'Lobster';` do CSS súboru `blog/static/css/blog.css` vnútri deklarácie `h1 a` (to je ten kód medzi zátvorkami `{` a `}`) a obnov stránku:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -171,15 +173,15 @@ h1 a {
 }
 ```
 
-![Obrázok 14.3][7]
-
- [7]: images/font.png
+![Obrázok 14.3](images/font.png)
 
 Super!
 
-Ako sme už spomenuli vyššie, CSS má koncept tried, ktorými v podstate pomenuješ časť HTML kódu a aplikuješ štýly len na túto konkrétnu časť, bez vplyvu na ostatné časti. Je to super užitočné, ak máš dva div-y, z ktorých každý robí niečo úplne iné (napríklad hlavička a príspevok), takže nechceš, aby vyzerali rovnako.
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
 Skús pomenovať niektoré časti HTML kódu. Pridaj triedu s názvom `page-header` do `div`u, ktorý obsahuje hlavičku, takto nejako:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="page-header">
@@ -189,6 +191,8 @@ Skús pomenovať niektoré časti HTML kódu. Pridaj triedu s názvom `page-head
 
 A teraz pridaj triedu, `post` do `div`u, v ktorom je blog post.
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
@@ -197,7 +201,9 @@ A teraz pridaj triedu, `post` do `div`u, v ktorom je blog post.
 </div>
 ```
 
-Teraz pridáme deklarácie rôznym selektorom. Selektory, ktoré začínajú `.` sa týkajú tried. Na webe je ohľadne CSS veľa skvelých tutorialov a vysvetlení, ktoré ti pomôžu pochopiť nasledujúci kód. Ale teraz len skopíruj a vlož nasledujúci kód do súboru `blog/static/css/blog.css`:
+Teraz pridáme deklarácie rôznym selektorom. Selektory, ktoré začínajú `.` sa týkajú tried. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Ale teraz len skopíruj a vlož nasledujúci kód do súboru `blog/static/css/blog.css`:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
@@ -221,7 +227,6 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
     color: #828282;
 }
 
@@ -251,6 +256,8 @@ h1, h2, h3, h4 {
 
 Teraz s deklaráciami tried obklop HTML kód, ktorý zobrazuje posty. Nahraď toto:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% for post in posts %}
     <div class="post">
@@ -263,6 +270,8 @@ Teraz s deklaráciami tried obklop HTML kód, ktorý zobrazuje posty. Nahraď to
 
 v súbore `blog/templates/blog/post_list.html` týmto:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <div class="content container">
     <div class="row">
@@ -270,7 +279,7 @@ v súbore `blog/templates/blog/post_list.html` týmto:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        <p>published: {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaksbr }}</p>
@@ -283,14 +292,12 @@ v súbore `blog/templates/blog/post_list.html` týmto:
 
 Ulož tieto súbory a obnov svoju web stránku.
 
-![Obrázok 14.4][8]
+![Obrázok 14.4](images/final.png)
 
- [8]: images/final.png
+Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
-No paráda! Vyzerá to super, nie? Kód, ktorý sme práve vložili, fakt nie je veľmi ťažké pochopiť a väčšinu asi pochopíš už len tým, že ho prečítaš.
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
-Neboj sa trochu pohrať s týmto CSS, skús niektoré veci zmeniť. Ak niečo pokazíš, nevadí, vždy sa môžeš vrátiť späť!
-
-Mimochodom, naozaj odporúčame tento bezplatný on-line [kurz HTML & CSS Codeacademy ][2] ako domácu úlohu po skončení tohto workshopu, kde sa naučíš všetko, čo potrebuješ vedieť, aby boli tvoje webové stránky s CSS krajšie.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
 Pripravená na ďalšiu kapitolu?! :)

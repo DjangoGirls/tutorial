@@ -1,20 +1,22 @@
 # Django Girls Eğitimi
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Bu çalışma Creative Commons Attribution-ShareAlike 4.0 International License altında lisanslanmıştır. Lisansın bir kopyasını görmek için http://creativecommons.org/licenses/by-sa/4.0/ adresini ziyaret edin.
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Çeviri
+## Welcome
 
-Bu döküman İngilizce'den Türkçe'ye 28 kişiden oluşan tamamen gönüllü bir ekip tarafından çevrildi: Elif T. Kuş, Şirin Saygılı, Suzan Üsküdarlı, Oğuzcan Küçükbayrak, Mehmet Ragıp Altuncu, Şahin B., Kıvanç Yazan, Adil Öztaşer, olasitarska, Oğuz Erdoğmuş, ophelia, Tuğçe Şirin, Fazilet Çilli, Özge Barbaros, Evin Pınar Örnek, Yiğit Bekir Baya, Berna Erden, Akın Toksan, Çağıl, Berat Doğan, Taha Yusuf, Helin Ece Akgül, Müge Kurtipek, Nezihe Pehlivan, Can Güler, Wert Yuio, Barış Arda Yılmaz ve Aybüke Özdemir! Emeği geçen herkese sonsuz teşekkürler! Ellerinize sağlık!
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
 ## Giriş
 
-Hiç dünyanın her geçen gün daha fazla teknoloji ile alakalı olduğunu ve bir şekilde geride kaldığınızı hissettiniz mi ? Hiç web sayfalarının nasıl yapıldığını merak edip başlamak için gereken motivasyona sahip olmadığınız oldu mu? Yazılım dünyasının sizin için, kendi başınıza bir şeyler yapmayı denemek için bile, çok karmaşık olduğunu düşündünüz mü?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Hiç web sayfalarının nasıl yapıldığını merak edip başlamak için gereken motivasyona sahip olmadığınız oldu mu? Yazılım dünyasının sizin için, kendi başınıza bir şeyler yapmayı denemek için bile, çok karmaşık olduğunu düşündünüz mü?
 
 Öyleyse, sizin için iyi haberlerimiz var! Programlama göründüğü kadar zor değil ve size ne kadar keyifli olabileceğini göstermek istiyoruz.
 
-Bu eğitim sihirli bir şekilde sizi bir programcıya dönüştürmeyecek. Eğer bu konuda iyi olmak istiyorsanız, aylara ve hatta yıllara dayanan bir öğrenme ve pratiğe ihtiyacınız var. Fakat biz size programlamanın ya da websayfası oluşturmanın göründüğü kadar da karmaşık olmadığını göstermek istiyoruz. Farklı parçaları, değişik kısımları anlatabildiğimiz kadar iyi anlatmaya gayret edeceğiz ki artık teknoloji gözünüzü korkutmasın.
+This tutorial will not magically turn you into a programmer. Eğer bu konuda iyi olmak istiyorsanız, aylara ve hatta yıllara dayanan bir öğrenme ve pratiğe ihtiyacınız var. Fakat biz size programlamanın ya da websayfası oluşturmanın göründüğü kadar da karmaşık olmadığını göstermek istiyoruz. Farklı parçaları, değişik kısımları anlatabildiğimiz kadar iyi anlatmaya gayret edeceğiz ki artık teknoloji gözünüzü korkutmasın.
 
 Ümit ederiz ki sizin de teknolojiyi bizim kadar sevmenizi sağlayabiliriz!
 
@@ -24,29 +26,26 @@ Eğitimi bitirdiğinizde, basit fakat çalışan bir web uygulamasına sahip ola
 
 Aşağı yukarı şu şekilde gözükecek:
 
-![Şekil 0.1][2]
+![Şekil 0.1](images/application.png)
 
- [2]: images/application.png
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
 
-> Eğer eğitimi kendi başınıza takip ediyorsanız ve bir problem yaşadığınızda yardım edebilecek bir eğitmeniniz yoksa, sizin için bir chat odamız var:[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-Tamam, [hadi en baştan başlayalım...][3]
+## Following the tutorial at home
 
- [3]: ./how_the_internet_works/README.md
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
 
 ## Hakkında ve katkıda bulunma
 
-Bu eğitim [DjangoGirls][4] tarafından sürdürülmektedir. Eğer hatalar bulursanız ve eğitimi güncellemek isterseniz lütfen [katkıda bulunma kılavuzunu takip edin][5].
-
- [4]: http://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Bu eğitimi başka dillere çevirmemize yardımcı olmak ister misiniz?
 
-Hali hazırda, çeviriler crowdin.com platformunda tutuluyor:
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Eğer diliniz crowdin'de listelenmemiş ise, lütfen GitHub'da dilinizle alakalı bilgi veren bir [konu açın][6] böylece dilinizi ekleyebilelim.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.

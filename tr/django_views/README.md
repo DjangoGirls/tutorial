@@ -1,8 +1,8 @@
-# Django views - yaratma zamanı geldi!
+# Django views – time to create!
 
-Evvelki bölümde yaptığımız hatayı yok edelim :)
+Time to get rid of the bug we created in the last chapter! :)
 
-*view*, "uygulama mantığının" ifade edildiği yerdir. Daha önce oluşturulan `model` den bilgi alıp `template`'e iletir. Gelecek bölümde bir template oluşturacağız. View'ler bildiğiniz Python methodlarıdır. Ancak, **Python'a Giriş** bölümünde yazdığımız methodlardan biraz daha karmaşıktır.
+*view*, "uygulama mantığının" ifade edildiği yerdir. Daha önce oluşturulan `model` den bilgi alıp `template`'e iletir. Gelecek bölümde bir template oluşturacağız. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 View'ler `views.py` doyasına yazılır. Şimdi, `blog/views.py` dosyasına *view* ekleyelim.
 
@@ -10,29 +10,35 @@ View'ler `views.py` doyasına yazılır. Şimdi, `blog/views.py` dosyasına *vie
 
 Dosyayı açıp inceleyelim:
 
+{% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 
-# View'lar buraya yazılacak.
-```    
+# Create your views here.
+```
 
-Henüz fazla bir şey görünmüyor. En basitinden *view* şöyle olabilir.
+Not too much stuff here yet.
+
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+
+The simplest *view* can look like this:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
-def post_list(request):     
+def post_list(request):
     return render(request, 'blog/post_list.html', {})
-```    
+```
 
-Burada, `request (istek)` i alıp template `blog/post_list.html` ile görüntüleyen `render` methodunu `döndüren` `post_list` isimli bir method yarattık.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Dosyamızı kaydedelim ve http://127.0.0.1:8000/ e gidip bakalım.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 Yine hata! Okuyup anlamaya çalışalım:
 
-![Hata][1]
+![Hata](images/error.png)
 
- [1]: images/error.png
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-Bu hatayı düzeltmek kolay: *TemplateDoesNotExist* (Template bulunamadı). Bu hatayı template oluşturarak gelecek bölümde düzeltelim!
-
-> Django view hakkında daha fazla bilgi edinmek için dokümantasyonları okuyun: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/

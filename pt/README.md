@@ -1,94 +1,51 @@
-# Tutorial Django Girls
+# Django Girls Tutorial
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
- [1]: https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-> Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/
+## Welcome
 
-## Translation
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-This tutorial has been translated from English to Portuguese by a group of awesome volunteers. 
-
-Special thanks for help goes out to:
-
-* Adailton do Nascimento 
-* Adam Victor Nazareth Brandizzi 
-* Antonio Luis 
-* Annanda Sousa 
-* Adjamilton Junior 
-* Bernardo Fontes 
-* Camilla Achutti
-* Carla Suarez
-* Cleiton Lima 
-* clemente.jnr
-* danieltex 
-* Eric Hideki 
-* Flavio Barros 
-* Fabio C. Barrionuevo da Luz 
-* ffabiorj 
-* Gabriela Cavalcante da Silva 
-* Herbert Fortes
-* Leandro Silva Araujo 
-* Lucas Magnum 
-* 1pedro 
-* Joao Luiz Lorencetti  
-* Katyanna Moura 
-* Kleber C Pinheiro 
-* Leandro Barbosa 
-* Leonardo Alves dos Santos 
-* Marcel Ribeiro Dantas 
-* joepreludian 
-* Rafael Biagioni de Fazio 
-* Pablo Palacios 
-* Paulo Alem 
-* Raony Guimares Correo do Carmo Lisboa Cardenas 
-* RSiP22
-* Vivian Macedo
-* Willie Lawrence 
-* Ricardo Manhães Savii
-Wow! <3 <3 
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
 ## Introdução
 
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Já pensaste como criar um site, mas nunca tiveste motivação suficiente para começar? Alguma vez achaste que o mundo do software é demasiado complicado para tentares fazer alguma coisa autonomamente?
 
-Você já sentiu como se o mundo fosse cada vez mais tecnológico e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até mesmo para você tentar fazer alguma coisa sozinha?
+Bem, então temos boas notícias para ti! Programar não é tão difícil como parece e queremos mostrar-te como pode ser divertido.
 
-Bem, nós temos boas notícias para você! Programação não é tão difícil quanto parece e nós queremos te mostrar o quão divertido pode ser.
+This tutorial will not magically turn you into a programmer. Se queres ser bom nisso, precisas de meses ou mesmo anos de aprendizagem e de prática. Mas queremos mostrar-te que programar ou criar websites não é tão complicado como parece. Vamos tentar explicar diferentes as diferentes partes tão bem quanto conseguirmos, de forma a que não te sintas intimidado pela tecnologia.
 
-Este tutorial não irá te transformar magicamente em uma programadora. Se você quer ser boa nisso, precisa de meses ou até mesmo anos de treino e prática. Porém, nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar as diferentes etapas tão bem quanto pudermos, de forma que você não se sinta intimidada pela tecnologia.
+Esperamos conseguir que gostes tanto de tecnologia como nós!
 
-Nós esperamos conseguir fazer você amar a tecnologia tanto quanto nós amamos!
+## O que vais aprender neste tutorial?
 
-## O que você irá aprender durante o tutorial?
+Assim que terminares o tutorial, terás uma aplicação web simples e funcional: o teu próprio blog. Vamos ensinar-te como colocá-lo online, de forma a que outros possam ver o teu trabalho!
 
-Quando você tiver terminado o tutorial você terá uma aplicação web simples e funcional: seu próprio blog. Nós vamos mostrar como colocá-lo online, para que outras pessoas vejam seu trabalho!
+Ele irá (mais ou menos) ter esta aparência:
 
-Seu blog se parecerá (mais ou menos) com isso:
+![Figura 0.1](images/application.png)
 
-![Figura 0.1][2]
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Pedimos aos nossos formadores e anteriores participantes que estarem lá de tempos a tempos e ajudassem outros com o tutorial! Não tenhas medo de colocar lá a tua questão!
 
- [2]: images/application.png
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-> Se você está seguindo o tutorial por conta própria e não tem uma treinadora ou treinador para ajudar em caso de qualquer problema, nós temos um chat para você: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[1]. Sempre pedimos às nossas treinadoras e participantes anteriores que acessem lá de tempos em tempos e ajudem outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta lá!
+## Following the tutorial at home
 
-OK, [vamos pelo começo...][3]
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
- [3]: ./how_the_internet_works/README.md
+In every chapter already covered, there is a link that points to the correct video.
 
 ## Sobre o tutorial e contribuições
 
-Este tutorial é mantido por [DjangoGirls][4]. Se você encontrar quaisquer erros ou quiser atualizar o tutorial, por favor [siga as orientações de contribuição][5].
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+## Queres ajudar-nos a traduzir o tutorial para outros idiomas?
 
-## Gostaria de nos ajudar a traduzir o tutorial para outros idiomas?
-
-no momento, as traduções estão sendo mantidas na plataforma crowdin.com em:
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Se o seu idioma não está listado no crowdin, por favor [open a new issue][6] informando o idioma para que possamos adicioná-lo.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.

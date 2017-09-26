@@ -1,72 +1,110 @@
 # Wprowadzenie do interfejsu wiersza poleceń
 
-Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana? :)
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-**Pozwól, że przedstawimy Ci Twojego pierwszego przyjaciela: wiersz poleceń!**
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-Następujące kroki pokażą Ci, jak korzystać z tajemniczego czarnego okna, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco, ale tak naprawdę to tylko zachęta do wpisywania komend.
+**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz poleceń!**
 
-> **Uwaga** Podczas tego kursu będziemy używać terminów "katalog" i "folder" zamiennie, ponieważ oznaczają one tę samą rzecz.
+Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
 ## Czym jest wiersz poleceń?
 
-Okno zwane **wierszem poleceń** lub **interfejsem wiersza poleceń** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. Podobnie jak np. Eksplorator Windows lub Finder na Macu, ale bez interfejsu graficznego. Inne nazwy dla wiersza poleceń to *cmd*, *CLI*, *prompt*, *konsola* lub *terminal*.
+Okno zwane **wierszem poleceń** lub **interfejsem wiersza poleceń** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Uruchamiamy interfejs wiersza poleceń
 
 Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz poleceń.
 
-### Windows
+<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Przejdź do menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń.
+Go to Start menu → Windows System → Command Prompt.
 
-### Mac OS X
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-Aplikacje → Narzędzia → Terminal.
+<!--endsec-->
 
-### Linux
+<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, po prostu zapytaj Google. :)
+Go to Applications → Utilities → Terminal.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
+
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
 
 ## Prompt
 
 Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje polecenia.
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
 Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
+
+{% filename %}command-line{% endfilename %}
 
     $
     
 
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
+
 W systemie Windows ujrzysz znak `>`, o tak:
+
+{% filename %}command-line{% endfilename %}
 
     >
     
 
-Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie musisz ich przepisywać. Twój komputer zrobi to za Ciebie :)
+<!--endsec-->
 
-> Jedna mała uwaga: w Twoim przypadku prompt może być poprzedzony czymś jeszcze, np. `C:\Users\ola>` lub `Olas-MacBook-Air:~ ola$` i jest to w 100% poprawne. W tym tutorialu uprościmy sposób zapisu do minimum.
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
 ## Twoja pierwsza komenda! 
 
 Zacznijmy od czegoś łatwego. Wpisz to polecenie:
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
     $ whoami
     
 
-lub
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > whoami
     
 
-A następnie wciśnij `Enter`. Oto rezultat:
+<!--endsec-->
+
+A następnie wciśnij `enter`. Oto rezultat:
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     olasitarska
     
 
-Jak widzisz, komputer właśnie wyświetlił Twoją nazwę użytkownika. Prawda, że sprytne?:)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Staraj się zawsze przepisywać polecenia zamiast je kopiować i wklejać. W ten sposób zapamiętasz więcej!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Podstawy
 
@@ -74,27 +112,43 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 ### Bieżący katalog
 
-Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `Enter`:
+Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska
     
 
-Jeżeli używasz Windows:
+> Uwaga: 'pwd' pochodzi od angielskiego skrótu 'print working directory', czyli wyświetl katalog roboczy - ten, w którym się aktualnie znajdujemy.
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska
     
 
-Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiersz poleceń, zwykle jest on uruchamiany w folderze głównym Twojego konta użytkownika.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
-> Uwaga: 'pwd' pochodzi od angielskiego skrótu 'print working directory', czyli wyświetl katalog roboczy - ten, w którym się aktualnie znajdujemy.
+<!--endsec-->
+
+Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiersz poleceń, zwykle jest on uruchamiany w folderze głównym Twojego konta użytkownika.
 
 * * *
 
 ### Lista plików i folderów
 
 Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -104,7 +158,11 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
     ...
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
      Directory of C:\Users\olasitarska
@@ -115,51 +173,83 @@ Windows:
     ...
     
 
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+
 * * *
 
 ### Zmiana katalogu bieżącego
 
 Przejdźmy teraz do naszego folderu Pulpit:
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
     $ cd Desktop
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd Desktop
     
 
+<!--endsec-->
+
 Sprawdźmy, czy coś się faktycznie zmieniło:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
     
 
+<!--endsec-->
+
 Tak, to tutaj!
 
-> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
 ### Tworzenie folderu
 
-Co powiesz na stworzenie folderu `cwiczenie` na swoim pulpicie? Zrób to w ten sposób:
+Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten sposób:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ mkdir cwiczenie
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > mkdir cwiczenie
     
 
-To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls` lub `dir`! Spróbuj :)
+<!--endsec-->
+
+To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls` lub `dir`! Try it. :)
 
 > PRO tip: Jeżeli nie chcesz w kółko wpisywać tych samych poleceń, wciśnij na klawiaturze klawisz ze `strzałką w górę` i `strzałką w dół` aby przewinąć listę poprzednio użytych poleceń.
 
@@ -167,9 +257,13 @@ To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Mo�
 
 ### Ćwiczenie!
 
-Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`.
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Rozwiązanie:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd cwiczenie
     $ mkdir test
@@ -177,13 +271,19 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
     test
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd cwiczenie
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
     
+
+<!--endsec-->
 
 Gratulacje! :)
 
@@ -195,85 +295,134 @@ Nie chcemy zostawić bałaganu, a zatem wyrzućmy wszystko, co do tej pory zrobi
 
 Najpierw musimy wrócić do Pulpitu:
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
     $ cd ..
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
 
-Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego, w którym znajduje się Twój aktualny katalog).
+<!--endsec-->
+
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
 Sprawdź, gdzie jesteś:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
     
 
+<!--endsec-->
+
 Teraz czas usunąć katalog `cwiczenie`:
 
-> **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ rm -r cwiczenie
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > rmdir /S cwiczenie
     cwiczenie, Are you sure <Y/N>? Y
     
 
+<!--endsec-->
+
 Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
     
 
+<!--endsec-->
+
 ### Wyjście
 
-To na razie tyle! Możesz teraz spokojnie zamknąć wiersz poleceń. To co, zrobimy to jak prawdziwy haker?:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > exit
     
 
-Fajnie, nie? :)
+<!--endsec-->
+
+Cool, huh? :)
 
 ## Podsumowanie
 
 Oto podsumowanie przydatnych poleceń:
 
-| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                      | Przykład                                          |
-| ------------------- | -------------------------- | ------------------------- | ------------------------------------------------- |
-| exit                | exit                       | zamknięcie okna           | **exit**                                          |
-| cd                  | cd                         | zmiana katalogu           | **cd test**                                       |
-| dir                 | ls                         | lista katalogów/plików    | **dir**                                           |
-| copy                | cp                         | kopiowanie pliku          | **copy c:\test\test.txt c:\windows\test.txt** |
-| move                | mv                         | przenoszenie pliku        | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir               | mkdir                      | tworzenie nowego katalogu | **mkdir testdirectory**                           |
-| del                 | rm                         | usunięcie pliku           | **del c:\test\test.txt**                        |
-| rmdir /S            | rm -r                      | usunięcie katalogu        | **rm -r testdirectory**
+| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                       | Przykład                                          |
+| ------------------- | -------------------------- | -------------------------- | ------------------------------------------------- |
+| exit                | exit                       | zamknięcie okna            | **exit**                                          |
+| cd                  | cd                         | zmiana katalogu            | **cd test**                                       |
+| cd                  | pwd                        | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir                 | ls                         | lista katalogów/plików     | **dir**                                           |
+| copy                | cp                         | kopiowanie pliku           | **copy c:\test\test.txt c:\windows\test.txt** |
+| move                | mv                         | przenoszenie pliku         | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir               | mkdir                      | tworzenie nowego katalogu  | **mkdir testdirectory**                           |
+| rmdir (or del)      | rm                         | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S            | rm -r                      | delete a directory         | **rm -r testdirectory**                           |
 
 To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
-Jeżeli temat Cię zainteresował, to [ss64.com][1] zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
-
- [1]: http://ss64.com
+Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 
 ## Gotowa?
 

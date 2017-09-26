@@ -1,40 +1,25 @@
 # Következő lépések
 
-Gratulálj magadnak! **Szuper vagy**. Nagyon büszkék vagyunk rád! <3
+Congratulate yourself! **You're totally awesome**. We're proud! <3
 
 ### És most?
 
 Tarts egy kis szünetet, és pihenj. Valami egészen hatalmas dolgot csináltál.
 
-Aztán majd ne felejtsd el:
-
-*   Követni a Django Girlst [Facebook][1]on vagy [Twitter][2]en, hogy mindenről értesülj
-
- [1]: http://facebook.com/djangogirls
- [2]: https://twitter.com/djangogirls
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
 ### Tudunk-e ajánlani bármilyen tananyagot?
 
-Igen! Először is nézd meg a másik könyvünket, a [Django Girls Tutorial: Extensions][3]-t.
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+Later on, you can try the resources listed below. They're all very recommended!
 
-Később megpróbálkozhatsz a lenti listában lévő anyagokkal is. Ezeket mind nagyon ajánljuk!
-
-- [Django's official tutorial][4]
-- [New Coder tutorials][5]
-- [Code Academy Python course][6]
-- [Code Academy HTML & CSS course][7]
-- [Django Carrots tutorial][8]
-- [Learn Python The Hard Way book][9]
-- [Getting Started With Django video lessons][10]
-- [Two Scoops of Django: Best Practices for Django 1.8 book][11]
-
- [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: https://www.codecademy.com/en/tracks/python
- [7]: https://www.codecademy.com/tracks/web
- [8]: https://github.com/ggcarrots/django-carrots/
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://www.gettingstartedwithdjango.com/
- [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
+- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Two Scoops of Django: Best Practices for Django 1.8 book](https://twoscoopspress.com/products/two-scoops-of-django-1-8)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/)

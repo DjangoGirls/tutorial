@@ -1,53 +1,47 @@
 # Come funziona Internet
 
-> Questo capitolo è ispirato ad un discorso di Jessica McKellar "How the Internet Works" (http://web.mit.edu/jesstess/www/).
+> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Scommettiamo che usi Internet tutti i giorni. Ma sai davvero che cosa succede quando digiti un indirizzo come https://djangogirls.org nel tuo browser e premi `invio`?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
 La prima cosa da capire è che un sito è solo un gruppo di file salvati su un hard disk. Proprio come i tuoi film, la tua musica e le tue immagini. Tuttavia, c'è una caratteristica tipica dei siti web: includono un codice chiamato HTML.
 
 Se non hai familiarità con la programmazione, può essere difficile da capire l'HTML all'inizio, ma i tuoi web browser (come Chrome, Safari, Firefox, ecc) lo adorano. I browser sono progettati per capire questo codice, seguire le sue istruzioni e presentare questi file che costituiscono il tuo sito web esattamente nel modo desiderato.
 
-Come per tutti i file, dobbiamo archiviare i file HTML da qualche parte su un hard disk. Per l'Internet, utilizziamo computer speciali e potenti chiamati *servers*. Non hanno uno schermo, un mouse o una tastiera, perché il loro unico proposito è quello di archiviare i dati e fornirli. È per quello che vengono chiamati *servers* -- perché essi *servono* i tuoi dati.
+Come per tutti i file, dobbiamo archiviare i file HTML da qualche parte su un hard disk. Per l'Internet, utilizziamo computer speciali e potenti chiamati *servers*. Non hanno uno schermo, un mouse o una tastiera, perché il loro unico proposito è quello di archiviare i dati e fornirli. That's why they're called *servers* – because they *serve* you data.
 
-OK, ma tu vuoi sapere com'è internet, vero?
+OK, but you want to know how the Internet looks, right?
 
 Abbiamo creato un'immagine! Ecco com'è:
 
-![Figura 1.1][1]
+![Figura 1.1](images/internet_1.png)
 
- [1]: images/internet_1.png
+Sembra caotico, vero? In fact it is a network of connected machines (the above-mentioned *servers*). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map (http://submarinecablemap.com) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
 
-Sembra caotico, vero? Infatti è una rete di macchine collegate (i *servers* che abbiamo menzionato prima). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map (http://submarinecablemap.com) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
+![Figura 1.2](images/internet_3.png)
 
-![Figura 1.2][2]
-
- [2]: images/internet_3.png
-
-È affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. Quindi, per raggiungere una macchina (per esempio quella in cui è salvato https://djangogirls.org) dobbiamo far passare una richiesta attraverso a molte, molte macchine diverse.
+E' affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Assomiglia a questo:
 
-![Figura 1.3][3]
+![Figura 1.3](images/internet_2.png)
 
- [3]: images/internet_2.png
-
-Immagina che quando digiti https://djangogirls.org invii una lettera che dice: "Caro Django Girls, voglio vedere il sito djangogirls.org. inviamelo, per favore!"
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
 La tua lettera arriva nell'ufficio postale più vicino a te. Dopo di che va in un altro ufficio postale, che è un po' più vicino al tuo destinatario, poi in un altro ed in un altro ancora finché viene consegnato a destinazione. L'unica cosa è che se invii molte lettere (*pacchi di dati*) allo stesso posto, potrebbero attraversare uffici postali totalmente diversi (*routers*). Questo dipende da come vengono distribuiti presso ogni ufficio.
 
-![Figura 1.4][4]
-
- [4]: images/internet_4.png
+![Figura 1.4](images/internet_4.png)
 
 Si, è esattamente così. Tu invii messaggi e ti aspetti una risposta. Certo, invece di carta e penna usi i bytes di dati, ma l'idea è la stessa!
 
-Al posto di indirizzi fisici, ovvero del nome della via, della città, del Cap, e del nome del Paese, usiamo indirizzi IP. Il tuo computer prima chiede il DNS (Domain Name System) per tradurre djangogirls.org in un indirizzo IP. Funziona un po' come i vecchi elenchi telefonici, dove cercando il nome della persona che volevi contattare potevi trovare il numero telefonico e l'indirizzo.
+Al posto di indirizzi fisici, ovvero del nome della via, della città, del Cap, e del nome del Paese, usiamo indirizzi IP. Il tuo computer prima chiede il DNS (Domain Name System) per tradurre djangogirls.org in un indirizzo IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-Quando invii una lettera, deve avere determinate caratteristiche per essere consegnata correttamente: un indirizzo, un timbro, ecc. Inoltre utilizzi un linguaggio che il destinatario è in grado di capire, vero? Lo stesso vale per i *pacchi di dati* che invii per vedere un sito Web. Usiamo un protocollo chiamato HTTP (Hypertext Transfer Protocol).
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Inoltre utilizzi un linguaggio che il destinatario è in grado di capire, vero? Lo stesso vale per i *pacchi di dati* che invii per vedere un sito Web. Usiamo un protocollo chiamato HTTP (Hypertext Transfer Protocol).
 
 Quindi, praticamente, quando hai un sito, devi avere un *server* (macchina) dove archiviarlo. Quando il *server* riceve una *richiesta* (in una lettera), restituisce il tuo sito (in un'altra lettera).
 
-Dal momento che questo è il tutorial di Django, ti chiederai cosa fa Django. Quando invii una risposta, non vuoi inviare la stessa cosa a tutti. È molto meglio se le tue lettere son personalizzate, soprattutto per la persona che ti ha appena scritto, giusto? Django ti aiuta con la creazione di queste interessanti lettere personalizzate :).
+Since this is a Django tutorial, you might ask what Django does. Quando invii una risposta, non vuoi inviare la stessa cosa a tutti. E' molto meglio se le tue lettere son personalizzate, soprattutto per la persona che ti ha appena scritto, giusto? Django helps you with creating these personalized, interesting letters. :)
 
-Basta parlare, è arrivata l'ora di creare!
+Enough talk – time to create!

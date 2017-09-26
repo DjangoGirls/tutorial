@@ -2,11 +2,11 @@
 
 Пришло время отобразить данные на сайте! Django поможет нам с этим при помощи встроенных **тегов шаблонов**.
 
-## Что представляют из себя теги шаблонов?
+## Что представляются из себя теги шаблонов?
 
-Как видишь, в HTML нельзя помещать код Python, поскольку браузеры не понимают его. Они знают только HTML. Мы помним, что HTML статичен, в то время как Python позволяет динамические изменения.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-**Теги шаблонов Django** позволяют нам вставлять Python в HTML, так что ты можешь создавать динамические веб-сайты быстрее и проще. То что надо!
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
 ## Отображаем шаблон списка записей
 
@@ -14,67 +14,70 @@
 
 Чтобы вставить переменную в шаблон Django, нам нужно использовать двойные фигурные скобочки с именем переменной внутри:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-    {{ posts }}
+{{ posts }}
 ```
 
 Попробуй это в шаблоне `blog/templates/blog/post_list.html`. Замени всё, начиная со второго `<div>` и вплоть до третьего `</div>` кодом `{{ posts }}`. Сохрани файл и обнови страницу, чтобы увидеть результат:
 
-![Рисунок 13.1][1]
-
- [1]: images/step1.png
+![Рисунок 13.1](images/step1.png)
 
 Как ты можешь заметить, мы получили следующую строку:
 
-```
-    <QuerySet [<Post: My second post>, <Post: My first post>]>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 Это показывает, что Django понял переменную как список объектов. Помнишь из главы **Введение в Python** как мы можем аккуратно отобразить список? Правильно, циклом for! В шаблонах Django ты можешь использовать их таким образом:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
 ```
 
 Попробуй вставить это в свой шаблон.
 
-![Рисунок 13.2][2]
+![Рисунок 13.2](images/step2.png)
 
- [2]: images/step2.png
+Сработало! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. ты можешь смешивать HTML и теги шаблонов. Наш элемент `body` будет выглядеть следующим образом:
 
-Сработало! Но мы хотим, чтобы они отображались как статические записи, которые мы создавали в главе **Введение в HTML**. Ты можешь смешивать HTML и теги шаблонов. Наш элемент `body` будет выглядеть следующим образом:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 ```
 
 {% raw %}Всё что ты поместишь между `{% for %}` и `{% endfor %}` будет повторено для каждого объекта в списке. Обнови страницу:{% endraw %}
 
-![Рисунок 13.3][3]
+![Рисунок 13.3](images/step3.png)
 
- [3]: images/step3.png
-
-Ты заметила, что мы использовали немного другую запись в этот раз `{{ post.title }}` или `{{ post.text }}`? Мы обращаемся к различным полям нашей модели `Post`. Также `|linebreaksbr` прогоняет текст через фильтр, для преобразования переносов строк в параграфы.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Мы обращаемся к различным полям нашей модели `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Еще один момент
 
-Пришло время еще раз убедиться, что наш сайт будет работать в сети, согласна? Попробуем развернуть новую версию сайта на PythonAnywhere. Краткий обзор необходимых шагов...
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-*   Сначала загружаем код на Github
+* Сначала загружаем код на Github
 
-```
+{% filename %}command-line{% endfilename %}
+
     $ git status
     [...]
     $ git add --all .
@@ -83,26 +86,21 @@
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-```
+    
 
-*   Затем заходим на [PythonAnywhere][4], открываем **Bash console** и набираем команду:
+* Затем заходим на [PythonAnywhere](https://www.pythonanywhere.com/consoles/), открываем **Bash console** и набираем команду:
 
- [4]: https://www.pythonanywhere.com/consoles/
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-```
     $ cd my-first-blog
     $ git pull
     [...]
-```
+    
 
-*   Наконец, переключаемся на вкладку [Web][5] и жмем кнопку **Reload**. Обновления запущены в жизнь!
+* Наконец, переключаемся на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и жмем кнопку **Reload**. Обновления запущены в жизнь! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-Поздравляем! Теперь попробуй добавить новые записи через панель администратора Django (не забывай указывать published_date!) и перезагрузи страницу, чтобы проверить появились ли они.
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-Работает как по волшебству? Есть чем гордиться! Отойди от компьютера на секунду - ты заслужила перерыв. :)
-
-![Рисунок 13.4][6]
-
- [6]: images/donut.png
+![Рисунок 13.4](images/donut.png)

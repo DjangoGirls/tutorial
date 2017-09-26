@@ -4,9 +4,9 @@ Bazı verileri gösterme zamanı! Django bunun için bize faydalı bazı yerleş
 
 ## Template etiketleri nedir?
 
-Görüyoruz ki aslında, HTML'de Python kodu yazamayız, çünkü tarayıcılar bunu anlamaz. Tarayıcılar yalnızca HTML'den anlar. Biliyoruz ki Python daha dinamik bir dil iken, HTML oldukça statiktir.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-**Django template etiketleri** Python benzeri yapıların HTML'ye aktarılmasını sağlar, böylece dinamik web sitelerini daha kolay ve hızlı oluşturabiliriz!
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
 ## Gönderi listesi template'ini göster
 
@@ -14,95 +14,93 @@ Bir önceki bölümde, template'e `posts` değişkeni içinde gönderiler listes
 
 Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {{ posts }}
-```    
+```
 
 Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
-![Şekil 13.1][1]
-
- [1]: images/step1.png
+![Şekil 13.1](images/step1.png)
 
 Gördüğümüz sadece bu:
 
-```  
-<QuerySet [<Post: Gönderi 2>, <Post: Gönderi 1>]>
-```    
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
 Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     {{ post }}
 {% endfor %}
-```    
+```
 
 Bunu kendi template'imizle deneyelim.
 
-![Şekil 13.2][2]
+![Şekil 13.2](images/step2.png)
 
- [2]: images/step2.png
+İşe yarıyor! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. HTML ve template etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
 
-İşe yarıyor! Fakat bunların daha önce **HTML'ye giriş** bölümünde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTML ve template etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
-     <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-   
+
 {% for post in posts %}
     <div>
-        <p>published: {{ post.yayinlanma_tarihi }}</p>
-        <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```   
+```
 
 {% raw %}`{% for %}` ve `{% endfor %}` arasına koyduğunuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
-![Şekil 13.3][3]
+![Şekil 13.3](images/step3.png)
 
- [3]: images/step3.png
-
-`{{ post.baslik }}` ya da `{{ post.yazi }}` için biraz farklı bir yazım kullandığımızı farkettin mi? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaks` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Bir şey daha
 
-Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil mi? PythonAnywhere yükleyelim yine. Adımları hatırlayalım...
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-*   İlk önce kodumuzu Github'a push komutu ile yükleyelim
+* İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
-```
-$ git status
-[...]
-$ git add -A .
-$ git status
-[...]
-$ git commit -m "Veritabanındaki postları görebilmek için template'i değiştirdim."
-[...]
-$ git push
-```    
+{% filename %}command-line{% endfilename %}
 
-*   [PythonAnywhere][4]'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
 
- [4]: https://www.pythonanywhere.com/consoles/
+* [PythonAnywhere](https://www.pythonanywhere.com/consoles/)'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
-```
-$ cd ilk-blogum
-$ git pull
-[...]
-```    
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-*   Ve son olarak da [Web tab][5] sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı!
+    $ cd ilk-blogum
+    $ git pull
+    [...]
+    
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+* Ve son olarak da [Web tab](https://www.pythonanywhere.com/web_app_setup/) sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Tebrikler! Şimdi devam edelim ve Django admininde yeni bir gönderi eklemeyi deneyelim (yayinlanma_tarihi eklemeyi unutmayalım!), sonrasında gönderinin görünüp görünmediğini görmek için sayfayı yenileyelim.
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Şekil 13.4][6]
-
- [6]: images/donut.png
+![Şekil 13.4](images/donut.png)

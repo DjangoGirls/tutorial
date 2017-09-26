@@ -1,75 +1,75 @@
-# CSS - зроби це красиво!
+# CSS – make it pretty!
 
 Наш блог все ще виглядає доволі жахливо, чи не так? Час зробити його гарним! Для цього будемо використовувати CSS.
 
 ## Що таке CSS?
 
-Каскадні таблиці стилів (англ. Cascading Style Sheets, скорочено CSS) - спеціальна мова, що використовується для опису зовнішнього вигляду і форматування сайту написаного мовою розмітки (як HTML). Сприймайте це, як свого роду макіяж для нашої веб-сторінки;).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-Але ми ж не хочемо починати знову все з нуля, правда? А візьмемо знову щось, що вже було створене програмістами і опубліковано в Інтернеті для вільного користування. Ви ж знаєте, знову винаходити велосипед зовсім не весело.
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
 ## Скористаємось Bootstrap!
 
-Bootstrap - один з найбільш популярних HTML і CSS фреймворків для розробки прекрасних веб-сайтів: https://getbootstrap.com/
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-Він був написаний програмістами, які працювали для Twitter'у і на сьогоднішній день удосконалюється волонтерами з усього світу.
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Встановлення Boostrap
+## Встановлюємо Boostrap
 
-Для встановлення Bootstrap, вам потрібно додати наступні рядки у розділ `<head>` вашого `.html` файлу (`blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Це не додасть жодного файлу до вашого проекту. Натомість ці рядки просто вказують на файли опубліковані в інтернеті.
-Просто рухайтесь вперед, відкрийте ваш веб-сайт і оновіть сторінку. Ось так!
+This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
 ![Рисунок 14.1](images/bootstrap1.png)
 
 Вже краще!
 
-
 ## Статичні файли в Django
 
-Нарешті, ми детальніше розглянемо те, що ми називали __статичними файлами__. Статичні файли включають усі ваші CSS файли та картинки - файли, які не є динамічними, а отже, їхній вміст не залежить від змісту запиту і буде однаковим для усіх користувачів.
-
+Нарешті, ми детальніше розглянемо те, що ми називали **статичними файлами**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
 ### Де помістити статичні файли для Django
 
-Як ви бачили, коли ми запускали `collectstatic` на сервері, Django вже знає, де знайти статичні файли для вбудованого додатку "admin". Тепер нам просто потрібно додати деякі статичні файли для нашого власного додатку `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-Створимо директорію `static` всередині додатку blog:
+Створимо директорію з ім’ям `static` всередині додатку blog:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   └── static
     └── mysite
+    
 
-Django автоматично знайде всі "статичні" папки всередині будь-якої з папок з вашими додатками, і він буде мати можливість використовувати їх як статичні файли.
-
-
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
 ## Ваш перший CSS файл!
 
-Що ж, тепер давайте створимо CSS файл для того, щоб додати ваш власний стиль до вашої веб-сторінки. Створіть нову папку з назвою `css` всередині вашої папки `static`. Потім всередині цієї папки`css` створіть новий файл `blog.css`. Готові?
+Let's create a CSS file now, to add your own style to your web page. Створіть нову папку з назвою `css` всередині вашої папки `static`. Потім всередині цієї папки`css` створіть новий файл з назвою `blog.css`. Готові?
 
     djangogirls
     └─── blog
          └─── static
               └─── css
                    └─── blog.css
+    
 
-Настав час написати CSS! Відкрийте файл `static/css/blog.css` в редакторі коду.
+Настав час написати CSS! Відкрийте файл `static/css/blog.css` в обраному редакторі коду.
 
-Не будемо тут занурюватись надто глибоко в процес налаштування і вивчення CSS, оскільки це так просто, що ви можете вивчити цей матеріал самостійно після завершення воркшопу. Ми наполегливо рекомендуємо пройти курс [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) для того, щоб вивчити все, що вам потрібно знати про оформлення веб-сайтів за допомогою CSS.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Але принаймні попрацюємо трохи. Може ми могли б змінити колір заголовка?
-Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. Вони починаються з `#` і далі слідують 6 літер (A-F), а також цифри (0-9). Ви можете знайти коди кольорів, наприклад, тут: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
+Але принаймні попрацюємо трохи. Можливо, ми могли б змінити колір заголовка? Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 У вашому файлі `static/css/blog.css` потрібно додати наступний код:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -77,33 +77,37 @@ h1 a {
 }
 ```
 
-`h1 a` - CSS селектор. Це означає, що ми застосовуємо наші стилі до кожного елементу `a` всередині елементу `h1` (наприклад, коли ми маємо в коді щось на зразок: `<h1><a href="">link</a></h1>`). У цьому випадку, ми повідомляємо про те, що треба змінити колір на `#FCA205`, тобто помаранчевий. Звичайно, ви можете визначити тут ваш власний колір!
+`h1 a` -- CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. У цьому випадку, ми повідомляємо про те, що треба змінити колір на `#FCA205`, тобто помаранчевий. Звичайно, ви можете визначити тут ваш власний колір!
 
-В CSS файлі ми визначаємо стилі для елементів файлу HTML. Елементи ідентифікуються іменами (тобто `a`, `h1`, `body`), атрибутом `class` або атрибутом `id`.
-Class і id - імена, які ви присвоюєте елементам власноруч. Класи (сlasses) визначають групи елементів, а ідентифікатори (id), в свою чергу, вказують на специфічні елементи. Наприклад, наступний тег може бути ідентифікований CSS з використанням тегового імені `a`, класу `external_link`, або ідентифікатора `link_to_wiki_page`:
+В CSS файлі ми визначаємо стилі для елементів файлу HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class і id -- імена, які ви присвоюєте елементам власноруч. Класи (сlasses) визначають групи елементів, а ідентифікатори (id), в свою чергу, вказують на специфічні елементи. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Читайте про [CSS селектори на w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Далі, нам треба повідомити наш HTML-шаблон про те, що ми додали CSS. Відкрийте файл `blog/templates/blog/post_list.html` і додайте на початок цей рядок:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
 ```
 
-Тут лише завантажуються статичні файли :)
-Далі, між `<head>` і `</head>`, після посилань на CSS файли Bootstrap додайте цей рядок:
+We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-Браузер читає файли в порядку їх слідування, тому ми повинні впевнитись, що код написаний в правильному місці. Інакше, код в нашому файлі може перекривати код із файлів Bootstrap.
-Ми щойно повідомили наш шаблон, де розташовані наші CSS файли.
+
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Ми щойно повідомили наш шаблон де розташовані наші CSS файли.
 
 Тепер ваш файл має виглядати наступним чином:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -130,11 +134,13 @@ Class і id - імена, які ви присвоюєте елементам в
 </html>
 ```
 
-Добре, збережіть файл і перезавантажте сторінку!
+OK, збережіть файл і перезавантажте сторінку!
 
 ![Рисунок 14.2](images/color2.png)
 
 Чудова робота! Можливо, ми також хотіли б дати нашому веб-сайту трохи повітря і збільшити відступ зліва? Давайте спробуємо!
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
@@ -142,19 +148,23 @@ body {
 }
 ```
 
-Додайте це до вашого CSS, збережіть файл і подивіться, як це працює!
+Add that to your CSS, save the file and see how it works!
 
 ![Рисунок 14.3](images/margin2.png)
 
-Може ми могли б також налаштувати шрифт нашого заголовка? Вставте це всередину розділу `<head>` файлу `blog/templates/blog/post_list.html`:
+Можливо, ми могли б також налаштувати шрифт нашого заголовка? Вставте це всередину розділу `<head>` файлу `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Цей рядок імпортує шрифт із назвою *Lobster* із колекції шрифтів Google (https://www.google.com/fonts).
+As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Знайдіть блок визначення стилю `h1 a` (код між фігурними дужками `{` і `}`) в CSS файлі `blog/static/css/blog.css`. Тепер додайте Тепер додайте рядок `font-family: 'Lobster';` між дужками і перезавантажте сторінку:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -167,10 +177,11 @@ h1 a {
 
 Чудово!
 
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Як було зазначено вище, CSS має концепцію класів. Вона дозволяє вам іменувати частину HTML коду і застосовувати стилі лише до цієї частини без будь-якого ефекту на інші частини. Це буває надзвичайно корисним. Скажімо, у вас є два блоки div, але вони виконують зовсім різні функції (як ваш заголовок і пост). Клас дозволяє вам зробити їх вигляд різним.
+Дайте імена певним частинам HTML коду. Додайте клас із назвою `page-header` до блоку `div`, що містить ваш заголовок, як це зроблено тут:
 
-Дайте імена певним частинам HTML коду. Додайте клас `page-header` до блоку `div`, що містить ваш заголовок, як це зроблено тут:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="page-header">
@@ -180,6 +191,8 @@ h1 a {
 
 А тепер додайте клас `post` до вашого блоку `div`, що містить сам допис.
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
@@ -188,7 +201,9 @@ h1 a {
 </div>
 ```
 
-А тепер додамо визначення блоків для різних селекторів. Селектори, які починаються із символу `.` стосуються класів. Існує багато хороших посібників і пояснень CSS у Вебі, що можуть допомогти вам зрозуміти наступний код. Поки що, просто скопіюйте і вставте це у ваш файл `mysite/static/css/blog.css`:
+А тепер додамо визначення блоків для різних селекторів. Селектори, які починають із символу `.` стосуються класів. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Поки що, просто скопіюйте і вставте це у ваш файл `mysite/static/css/blog.css`:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
@@ -212,7 +227,6 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
     color: #828282;
 }
 
@@ -240,7 +254,9 @@ h1, h2, h3, h4 {
 }
 ```
 
-Далі обгорніть HTML код, що відображає пости, визначеннями класів. Замініть це:
+Далі модифікуйте HTML код, що відображує пости. Замініть:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -253,6 +269,8 @@ h1, h2, h3, h4 {
 ```
 
 в `blog/templates/blog/post_list.html` на:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="content container">
@@ -272,16 +290,14 @@ h1, h2, h3, h4 {
 </div>
 ```
 
-Збережіть ці файли і перезавантажте веб-сайт.
+Збережіть файли і перезавантажте свій сайт.
 
 ![Рисунок 14.4](images/final.png)
 
-Юхууу! Виглядає прекрасно, чи не так?
-Код, який ми щойно вставили, насправді не є складним для розуміння і ви в змозі зрозуміти більшу його частину після прочитання.
+Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
-Не бійтеся трохи повозитися з цим CSS файлом і спробуйте поміняти деякий код. Якщо щось зламається, не хвилюйтесь, ви завжди можете відмінити попередню дію!
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
-В будь-якому разі, дуже рекомендуємо пройти цей безкоштовний онлайн [Codeacademy HTML & CSS курс](https://www.codecademy.com/tracks/web). Він допоможе вам вивчити усе, що потрібно знати про оформлення веб-сайтів за допомогою CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
 Готові до наступного розділу?! :)
-

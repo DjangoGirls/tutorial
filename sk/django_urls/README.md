@@ -1,107 +1,113 @@
-# Django url
+# Django URLs
 
-Chystáme sa vytvoriť našu prvú web stránku: domovská stránka tvojho blogu! Ale ešte predtým sa poďme naučiť niečo o Django url.
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
 ## Čo je URL?
 
-URL je jednoducho webová adresa. URL si môžeš všimnúť zakaždým, keď navštíviš webovú stránku - vidno ju v prehliadači v adresnom riadku (áno! `127.0.0.1:8000` je URL! A `https://djangogirls.org` je tiež URL):
+URL je jednoducho webová adresa. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` je URL! And `https://djangogirls.org` is also a URL.)
 
-![Url][1]
+![Url](images/url.png)
 
- [1]: images/url.png
-
-Každá stránka na internete potrebuje svoju vlastnú URL. Týmto spôsobom aplikácia vie, čo by mala ukázať užívateľovi, ktorý otvorí URL. V Djangu používame takzvaný `URLconf` (URL konfigurácia). URLconf je súbor vzorov, ktoré sa Django pokúsi priradiť podľa prijatej URL, aby tak našiel správne zobrazenie.
+Každá stránka na internete potrebuje svoju vlastnú URL. This way your application knows what it should show to a user who opens that URL. V Djangu používame takzvaný `URLconf` (URL konfigurácia). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
 ## Ako fungujú URL v Djangu?
 
 Otvorme súbor `mysite/urls.py` v editore kódu a pozrime sa, ako vyzerá:
 
+{% filename %}mysite/urls.py{% endfilename %}
+
 ```python
-from django.conf.urls import include, url
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'mysite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
-Ako vidíš, Django sem už pre nás niečo umiestnil.
+As you can see, Django has already put something here for us.
 
-Riadky, ktoré začínajú s `#` sú komentáre - to znamená, že tie riadky Python nespustí. Šikovné, nie?
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-Adminská URL, ktorú si navštívila v predchádzajúcej kapitole je už tu:
+The admin URL, which you visited in previous chapter, is already here:
+
+{% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ```
 
-To znamená, že pre každú URL, ktorá začína na `admin` Django nájde zodpovedajúce *zobrazenie (view)*. V tomto prípade pridávame množstvo adminských URL, takže to nie je všetko natlačené v jednom malom súbore -- je to čitateľnejšie a čistejšie.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
 Zaujíma ťa, ako Django porovnáva URL so zobrazeniami? No, to je trochu zložitejšie. Django používa `regex`, čo je skratka pre "regulárne výrazy". Regex má veľa (veľa!) pravidiel, ktoré tvoria vzor vyhľadávania. Keďže regexy sú pokročilá téma, nebudeme sa nimi veľmi detailne zaoberať.
 
-Ak chceš porozumieť tvorbe vzorov, tu je príklad procesu - budeme potrebovať iba obmedzenú množinu pravidiel, ktorými vyjadríme vzor, ktorý hľadáme, konkrétne:
+If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-```
-^ pre začiatok textu
-$ pre koniec textu
-\d pre číslicu
-+ indikuje, že predchádzajúca položka sa má zopakovať aspoň raz
-() ohraničuje časť vzoru
-```
+* `^` for the beginning of the text
+* `$` for the end of the text
+* `\d` for a digit
+* `+` to indicate that the previous item should be repeated at least once
+* `()` to capture part of the pattern
 
-Všetko ostatné v definícii url bude brané doslovne.
+Anything else in the URL definition will be taken literally.
 
-Teraz si predstav, že máš webovú stránky s adresou napríklad `http://www.mysite.com/post/12345/`, kde `12345` je číslo tvojho postu.
+Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-Písať samostatné views pre všetky čísla postov by bolo vážne otravné. S regulárnym výrazom však vieme vytvoriť vzor, ktorý bude zodpovedať url a vyextrahovať z nej číslo, ktoré potrebujeme: `^post/(\d+)/$`. Rozoberme si to na drobné, aby sme videli, čo sa tu vlastne deje:
+Písať samostatné views pre všetky čísla postov by bolo vážne otravné. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-*   **^post/** hovorí Djangu, aby zobral čokoľvek, čo má na začiatku url `post` (hneď po `^`)
-*   **(\d+)** znamená, že tam bude číslo (jedna alebo viac číslic) a že chceme číslo zachytiť a extrahovať
-*   **/** povie Djangu, že bude nasledovať ďalší znak `/`
-*   **$** potom označuje koniec adresy URL, čo znamená, že vzoru budú zodpovedať iba reťazce s `/` na konci
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **(\d+)** znamená, že tam bude číslo (jedna alebo viac číslic) a že chceme číslo zachytiť a extrahovať
+* **/** povie Djangu, že bude nasledovať ďalší znak `/`
+* **$** potom označuje koniec adresy URL, čo znamená, že vzoru budú zodpovedať iba reťazce s `/` na konci
 
-## Tvoja prvá Django url!
+## Your first Django URL!
 
-Je čas vytvoriť našu prvú URL! Chceme, aby 'http://127.0.0.1:8000/' bola domovská stránka nášho blogu a zobrazovala zoznam príspevkov.
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
-Tiež chceme udržiavať súbor `mysite/urls.py` čistý, takže naimportujeme url z našej aplikácie `blog` do hlavného súboru `mysite/urls.py`.
+We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Neboj sa, zmaž všetky zakomentované riadky (tie, čo začínajú `#`) a pridaj riadok, ktorý naimportuje `blog.urls` do hlavnej url (`''`).
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
 
 Súbor `mysite/urls.py` by mal teraz vyzerať takto:
+
+{% filename %}mysite/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
 ]
 ```
 
 Django teraz presmeruje všetko, čo prichádza na 'http://127.0.0.1:8000/' do `blog.urls` a tam bude hľadať ďalšie inštrukcie.
 
-Pri písaní regulárnych výrazov je vždy dobré pridať pred reťazec `r`. To je užitočný tip pre Python, že reťazec môže obsahovať špeciálne znaky, ktoré nie sú urečené pre Python samotný, ale pre regulárny výraz.
+Writing regular expressions in Python is always done with `r` in front of the string. To je užitočný tip pre Python, že reťazec môže obsahovať špeciálne znaky, ktoré nie sú urečené pre Python samotný, ale pre regulárny výraz.
 
 ## blog.urls
 
-Vytvor nový prázdny súbor `blog/urls.py`. Dobre! Pridaj tieto prvé dva riadky:
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
 from . import views
 ```
 
-Tu iba importujeme Django metódy a všetky naše `views` z aplikácie `blog` (zatiaľ žiadne nemáme, ale k tomu sa o chvíľu dostaneme!)
+Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
 Potom môžeme pridať náš prvý URL vzor:
+
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
 urlpatterns = [
@@ -109,18 +115,14 @@ urlpatterns = [
 ]
 ```
 
-Ako vidíš, priradili sme `view` s názvom `post_list` tejto URL: `^$`. Tento regulárny výraz sa bude zhodovať iba ak po `^` (začiatku) bude nasledovať `$` (koniec) - takže zodpovedať bude iba prázdny reťazec. To je správne, pretože v Django URL prekladači 'http://127.0.0.1:8000/' nie je súčasťou URL. Tento vzor povie Djangu, že `views.post_list` je to správne miesto, kam treba ísť, ak niekto vstúpi na stránku cez adresu 'http://127.0.0.1:8000/'.
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. To je správne, pretože v Django URL prekladači 'http://127.0.0.1:8000/' nie je súčasťou URL. Tento vzor povie Djangu, že `views.post_list` je to správne miesto, kam treba ísť, ak niekto vstúpi na stránku cez adresu 'http://127.0.0.1:8000/'.
 
-Posledná časť `name='post_list'` je názov URL, ktorý sa použije na identifikáciu view. Názov URL môže byť rovnaký ako názov view, ale pokojne to môže byť aj niečo úplne iné. Neskôr budeme v projekte používať pomenované URL, takže je dôležité pomenovať všetky URL v aplikácii. Názvy by mali byť unikátne a ľahké na zapamätanie.
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. Názov URL môže byť rovnaký ako názov view, ale pokojne to môže byť aj niečo úplne iné. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-Všetko v poriadku? Otvor http://127.0.0.1:8000/ vo svojom prehliadači a pozri sa na výsledok.
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
-![Chyba][2]
+![Chyba](images/error1.png)
 
- [2]: images/error1.png
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
-"Funguje to!" zmizlo, čo? Neboj sa, je to len chybová stránka, nič, čoho by si sa mala báť! Vlastne bývajú celkom užitočné:
-
-Môžeš si prečítať, že neexistuje **žiadny atribút post_list**. Pripomína ti *post_list* niečo? Tak sme nazvali náš view! To znamená, že je všetko v poriadku, len sme ešte nevytvorili náš *view*. Žiadne obavy, aj k tomu sa dostaneme.
-
-> Ak chceš vedieť viac o Django URLconfs, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/

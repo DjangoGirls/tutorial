@@ -1,34 +1,31 @@
-Існує багато різноманітних редакторів і здебільшого все зводиться до персональних вподобань. Більшість Python програмістів використовують складні, але надзвичайно потужні IDE (англ. Integrated Development Environments - інтегровані середовища розробки), такі як PyCharm. Однак, вони менш доцільні для початківців; ми пропонуємо такі ж потужні, але більш простіші інструменти.
+Існує багато різноманітних редакторів і здебільшого все зводиться до персональних вподобань. Більшість Python програмістів використовують складні, але надзвичайно потужні IDE (англ. Integrated Development Environments - Інтегровані середовища розробки), такі як PyCharm. Однак, вони можливо менш доцільні для початківців; ми пропонуємо не менш потужні, але більш простіші. 
 
-Нижче наведено перелік наших вподобань, але ви також можете попросити поради в своїх тренерів - тоді буде простіше отримувати від них допомогу.
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
 Gedit є відкритим, безкоштовним редактором, доступним для усіх операційних систем.
 
-[Завантажте його можна тут](https://wiki.gnome.org/Apps/Gedit#Download)
+[Завантажте його тут](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text є дуже популярним редактором із безкоштовним пробним періодом. Він легко встановлюється та простий у використанні, а також доступний для усіх операційних систем.
+Sublime Text є дуже популярним редактором із безкоштовним пробним періодом. Він легко встановлюється та простий у використанні і, також доступний для усіх операційних систем.
 
-[Завантажити його можна тут](https://www.sublimetext.com/3)
+[Завантажте його тут](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom - це найновіший редактор коду, створений [GitHub](https://github.com/). Він є безкоштовним, відкритим, легко встановлюється та простий у користуванні. Доступний для Windows, OSX і Linux.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
-[Завантажити його можна тут](https://atom.io/)
-
-
+[Завантажте його тут](https://atom.io/)
 
 ## Чому ми встановлюємо редактор коду?
 
-Ви напевне запитуєте себе, чому ми встановлюємо спеціальний редактор для коду, а не використовуємо щось на зразок Word чи Notepad.
+Ви напевне запитуєте себе чому ми встановлюємо спеціальний редактор для коду, а не використовуємо щось на зразок Word чи Notepad.
 
-По-перше, код повинен зберігатись як **звичайний текст**, а проблемою таких програм як Word чи Textedit є те, що вони не створюють звичайний текст, вони продукують так званий "збагачений" текст (зі шрифтами та форматуванням), використовуючи спеціальні формати, такі як [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Другою причиною є те, що редактори коду спеціалізуються саме на редагуванні коду, тому вони можуть запропонувати корисні функції на зразок підсвітки коду залежно від його значення чи автоматичного закривання дужок.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Ми побачимо все це в дії пізніше. Скоро ви вважатимете свого вірного редактора коду одним із найулюбленіших інструментів :)
-
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
