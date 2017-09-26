@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Виртуальное окружение
+## Virtual environment
 
-Перед установкой Django мы попросим тебя установить крайне полезный инструмент, который поможет тебе содержать среду разработки в чистоте. Можно пропустить этот шаг, но мы очень советуем этого не делать. Использование лучших рекомендаций с самого начала убережёт от многих проблем в будущем!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-Итак, давай создадим **виртуальное окружение** (оно также называется *virtualenv*). Virtualenv будет изолировать зависимости Python/Django для каждого отдельного проекта. Это значит, что изменения одного сайта никогда не затронут другие сайты, которые вы разрабатываете. Удобно, правда?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-Все что тебе нужно сделать -- найти директорию, в которой мы создадим `virtualenv`; домашний каталог вполне подойдет. Для Windows адрес будет выглядеть так: `C:\Users\Name` (где `Name` твое имя пользователя).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-Мы будем использовать отдельную директорию `djangogirls` в домашнем каталоге:
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@
     $ cd djangogirls
     
 
-Мы создадим виртуальное окружение под именем `myvenv`. В общем случаем команда будет выглядеть так:
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,21 +37,21 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Ты можешь выбрать любое имя, использовать можно только прописные буквы, без пробелов и специальных символов. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Для Linux и OS X достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`:
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` -- имя виртуального окружения `virtualenv`. Опять же, только строчные буквы и никаких пробелов. Имя виртуального окружения лучше выбирать покороче — его набирать его предстоит не раз!
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -74,7 +74,7 @@ data-collapse=true ces-->
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> Чтобы обойти эту проблему используй команду `virtualenv`.
+> To get around this, use the `virtualenv` command instead.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,14 +98,14 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-## Работаем с virtualenv
+## Working with virtualenv
 
-Вышеуказанная команда создаст директорию `myvenv` (или другую, в зависимости от выбранного имени), которая будет содержать виртуальное окружение (по сути -- набор файлов и папок).
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Запусти виртуальное окружение, выполнив:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ data-collapse=true ces-->
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Запусти виртуальное окружение, выполнив:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Не забудь поменять `myvenv` на выбранное для `virtualenv` имя!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **ПРИМЕЧАНИЕ:** иногда команда `source` может быть недоступна. В таком случае, используй следующий метод:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -148,9 +148,9 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Отлично, теперь мы будем хранить все важные зависимости в одном месте. Наконец можно установить Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
-## Установка Django
+## Installing Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> При возникновении ошибки при вызове pip под Ubuntu 12.04, пожалуйста, запусти `python -m pip install -U --force-reinstall pip`, чтобы исправить установку pip в virtualenv.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-Вот и оно! Теперь ты (наконец то) готова создать свое Django приложение!
+That's it! You're now (finally) ready to create a Django application!
