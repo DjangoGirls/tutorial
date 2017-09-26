@@ -1,16 +1,16 @@
-# Bevezetés a Pythonba
+# Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Írjunk egy kis kódot!
+Let's write some code!
 
-## A Python parancssor
+## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Hogy elkezdhess a Pythonnal ismerkedni, szükséged lesz a *parancssorra*. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Ha kész vagy, kövesd az alábbi utasításokat.
+Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -22,13 +22,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Az első Python parancsod!
+## Your first Python command!
 
-Miután futtattad a Python parancsot, a parancssor megváltozott: `>>>`. Ez azt jelenti, hogy mostantól csak a Python nyelv parancsait használhatjuk. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Ha bármikor szeretnél kilépni a Python konzolból, csak gépeld be, hogy `exit()`, vagy használd a `Ctrl + Z` billentyűkombinációt Windos-ra, vagy a `Ctrl + D`-t Mac-re/Linux-ra. Ezután már nem fogod látni a `>>>` jelet.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-Most épp nem szeretnénk kilépni a Python konzolból. Inkább többet szeretnénk tanulni róla. Kezdjünk valami nagyon egyszerűvel. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,9 +54,9 @@ Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Stringek
+## Strings
 
-Mi a helyzet a neveddel? Gépeld be a neved időzéjelbe téve:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +65,9 @@ Mi a helyzet a neveddel? Gépeld be a neved időzéjelbe téve:
 'Ola'
 ```
 
-Épp most hoztad létre az első stringedet! Ez egy karakter-sorozat amit a számítógép fel tud dolgozni. A string kezdetét és végét ugyanazzal a karakterrel jelöljük. Ez lehet szimpla (`'`) vagy dupla (`"`) idézőjel (nincs különbség!) Az idézőjelek mondják meg a Pythonnak, hogy ami köztük van, az egy string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-A stringeket össze is lehet fűzni. Próbáld ki ezt:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +76,7 @@ A stringeket össze is lehet fűzni. Próbáld ki ezt:
 'Hi there Ola'
 ```
 
-Sokszorosítani is lehet őket:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ Sokszorosítani is lehet őket:
 'OlaOlaOla'
 ```
 
-Ha aposztrófot szeretnél a stringedbe tenni, kétféleképpen teheted meg.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Idézőjel segítségével:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +96,7 @@ Idézőjel segítségével:
 "Runnin' down the hill"
 ```
 
-vagy pedig escape karakterrel (``) az aposztróf előtt:
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ vagy pedig escape karakterrel (``) az aposztróf előtt:
 "Runnin' down the hill"
 ```
 
-Jó, mi? Ha nagybetűkkel szeretnéd látni a neved, csak gépeld be ezt:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,22 +125,22 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Érdekel, miért van az, hogy néha a függvényeket úgy hívjuk meg, hogy a string után egy `.` jön, majd a függvény neve (mint például `"Ola".upper()`), máskor pedig előbb a függvény neve jön, aztán a string a zárójelben? Nos, ez azért van mert néha a függvények objektumokhoz tartoznak, mint az `upper()`, amit csak azokon az objektumokon hívhatunk meg. Ebben az esetben a függvényt **metódusnak** (method) nevezzük. Máskor a függvény nem tartozik egy bizonyos típusú objektumhoz, hanem többféle típusú objektumon is meg lehet hívni, mint például a `len()`. Ezért volt az hogy az `"Ola"`-t paraméterként adtuk át a `len` függvénynek.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Összefoglaló
+### Summary
 
-Oké, elég a stringekből. Tehát ezidáig a következőkről tanultál:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-Ezek volnának az alapjai minden programozási nyelvnek. Készen állsz valami bonyolultabbra? Rajta!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Hibák
+## Errors
 
-Nézzünk valami újat. Vajon megkaphatjuk-e egy szám hosszát ugyanúgy, mint a nevünk hosszát? Írd be, hogy `len(304023)`, majd üss `enter`-t:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Megkaptuk az első hibánkat! Azt mondja, az "int" típusú (integerek, egész számok) objektumoknak nincs hosszuk. Most akkor mit tehetünk? Talán leírhatjuk a számunkat stringként? A stringeknek van hosszuk, nem?
+We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,18 +160,18 @@ Megkaptuk az első hibánkat! Azt mondja, az "int" típusú (integerek, egész s
 6
 ```
 
-Működött! Használtuk a `str` függvényt a `len` függvény belsejében. A `str()` függvény stringgé alakít egy tetszőleges típusú objektumot.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
-- A `str` függvény **stringgé** alakítja a dolgokat
-- Az `int` függvény **integerré** alakítja a dolgokat
+- The `str` function converts things into **strings**
+- The `int` function converts things into **integers**
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Változók
+## Variables
 
-A programozásban nagyon fontos a változó fogalma. A változó egy név egy objektumra, amit majd később újra felhasználhatunk. A programozók arra használják a változókat, hogy adatokat tároljanak velük, hogy a kódjukat olvashatóbbá tegyék, és hogy ne kelljen megjegyezniük mindenről, hogy micsoda.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Tegyük fel, hogy létrehoztál egy változót, aminek a neve `name`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,9 +179,9 @@ Tegyük fel, hogy létrehoztál egy változót, aminek a neve `name`:
 >>> name = "Ola"
 ```
 
-Látod? Egyszerű! Csak ennyi: name egyenlő Ola.
+You see? It's easy! It's simply: name equals Ola.
 
-Amint láthatod, a program nem adott vissza semmilyen eredményt, az eddigiekkel ellentétben. Honnan tudjuk így, hogy a változó létrejött? Egyszerűen írd be, hogy `name`, majd üss `enter`-t:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,7 +200,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-És függvényekben is használhatod:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,7 +220,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-De mi van akkor, ha rossz nevet használunk? Kitalálod? Próbáljuk ki!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
 {% filename %}command-line{% endfilename %}
 
@@ -232,13 +232,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Egy hiba! Amint látod a Pythonban különböző típusú hibák vannak, ezt például úgy hívják hogy **NameError**. A Python ezt a hibát dobja, ha olyan változóra hivatkozol, ami nem volt még létrehozva. Ha majd találkozol ezzel a hibával, mindig ellenőrizd a kódod, hogy nem írtál-e el egy nevet.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Játssz egy kicsit a változókkal, hogy lásd, mi mindenre vagy képes velük!
+Play with this for a while and see what you can do!
 
-## A print függvény
+## The print function
 
-Próbáld ki ezt:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +250,15 @@ Próbáld ki ezt:
 Maria
 ```
 
-Amikor beírod, hogy `name`, a Python interpreter a "name" változó szöveges *reprezentációjával* tér vissza, ami a M-a-r-i-a betűkből áll, idézőjelek között. Amikor azt írod: `print(name)`, a Python "kinyomtatja" a változó tartalmát a képernyőre, idézőjelek nélkül, ami sokkal elegánsabb.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Amint majd látni fogjuk, a `print()` hasznos lesz függvények belsejében is, vagy amikor több sorba szeretnénk nyomtatni.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Listák
+## Lists
 
-A stringek és az integerek mellett a Python még sok más típusú objektumot ismer. Most megmutatunk egy újat, amit úgy hívnak: **lista**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Hozzunk létre egy listát:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +267,7 @@ Hozzunk létre egy listát:
 []
 ```
 
-Igen, ez egy üres lista. Nem túl hasznos, ugye? Most hozzunk létre egy listát a lottószámokkal. Nem akarjuk folyton ismételni magunkat, úgyhogy egyenesen egy változóba tesszük:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +275,7 @@ Igen, ez egy üres lista. Nem túl hasznos, ugye? Most hozzunk létre egy listá
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Igen, van egy listánk! Mit lehet vele csinálni? Nézzük meg, hány lottószám van a listában. Van tipped, melyik függvényt fogjuk erre használni? Biztos tudod!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +284,7 @@ Igen, van egy listánk! Mit lehet vele csinálni? Nézzük meg, hány lottószá
 6
 ```
 
-Igen! A `len()` megadja, hogy hány objektum van a listában. Hasnzos, ugye? Most akkor rendezzük sorba a listát:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +292,7 @@ Igen! A `len()` megadja, hogy hány objektum van a listában. Hasnzos, ugye? Mos
 >>> lottery.sort()
 ```
 
-Ez nem ad vissza semmit, csak megváltoztatta a számok sorrendjét a listában. Írassuk ki a listát, hogy lássuk, mi történt:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +301,9 @@ Ez nem ad vissza semmit, csak megváltoztatta a számok sorrendjét a listában.
 [3, 12, 19, 30, 42, 59]
 ```
 
-Amint látod, a számok a listában most növekvő sorrendben vannak. Gratula!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Esetleg szeretnéd fordított sorrendbe rendezni? Csináljuk meg!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -313,7 +313,7 @@ Esetleg szeretnéd fordított sorrendbe rendezni? Csináljuk meg!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Könnyű, ugye? Ha hozzá akarsz adni valamit a listához, a következő paranccsal teheted:
+Easy, right? If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +323,7 @@ Könnyű, ugye? Ha hozzá akarsz adni valamit a listához, a következő parancc
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Ha például csak az első számot akarod látni, arra használhatod az **indexelést**. Az index egy szám ami megmondja, hányadikként fordul elő egy elem a listában. A programozók szeretik 0-tól kezdeni a számolást, ezért a lista első eleme a 0-dik indexű helyen van, a következő az 1-nél és így tovább. Próbáld ki ezt:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,7 +334,7 @@ Ha például csak az első számot akarod látni, arra használhatod az **indexe
 42
 ```
 
-Amint látod, a listában előforduló különböző objektumokat elérhetjük a lista nevének, illetve az objektum indexének megjelölésével, ahol az indexet szögletes zárójelbe írjuk.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,13 +351,13 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-Működik, mint a varázslat!
+That worked like a charm!
 
-Szórakozásból próbálj elérni különböző indexű elemeket: 6, 7, 1000, -1, -6 vagy -1000. Meg tudod-e mondani az eredményt előre? Értelmes-e az eredmény?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Ebben a Python dokumentációban megtalálod a listákra értelmezett összes metódust: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Szótárak
+## Dictionaries
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
@@ -370,7 +370,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-Épp most definiáltál egy üres szótárat. Hurrá!
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -382,11 +382,11 @@ Now, try writing the following command (try substituting your own information, t
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
-- A `name` kulcs az `'Ola'` értékre mutat (ami egy `string` típusú objektum),
+- The key `name` points to the value `'Ola'` (a `string` object),
 - `country` points to `'Poland'` (another `string`),
-- és `favorite_numbers` a `[7, 42, 92]` objektumra mutat (ami egy `lista` benne három elemmel).
+- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
-Lekérdezheted az egyes kulcsokhoz tartozó értékeket a következő szintaxist használva:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -397,7 +397,7 @@ Ola
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-Vajon mi történik, ha olyan kulcshoz tartozó értéket kérdezünk le a Pythontól, ami nem létezik? Nézzük meg!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
 {% filename %}command-line{% endfilename %}
 
@@ -408,12 +408,12 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Jéé, egy újabb hiba! Ezúttal **KeyError**. A Python segítőkész, és megmondja, hogy az `'age'` kulcsnál nem található érték a szótárban.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Mikor használjunk szótárakat és mikor listákat? Nos, ez egy érdekes kérdés. Gondolkozz el egy kicsit, és próbáld meg magadtól kitalálni, mielőtt elolvasod az alábbi választ.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
-- Csak elemek rendezett sorozatára van szükséged? Használj listát.
-- Kulcs és érték párokra van szükséged, amiket majd le tudsz kérdezni hatékonyan (kulcs alapján)? Használj szótárat.
+- Do you just need an ordered sequence of items? Go for a list.
+- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
@@ -434,7 +434,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Mondjuk ki akarod törölni a `'favorite_numbers'` kulcsnál található elemet. Csak írd be a következőt:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -459,18 +459,18 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Összefoglaló
+### Summary
 
-Nagyszerű! Most már tudsz egy csomó mindent a programozásról. Ebben az utolsó részben a következőkről tanultál:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-Felkészültél a következő részre? :)
+Excited for the next part? :)
 
-## Dolgok összehasonlítása
+## Compare things
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -493,9 +493,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Azon gondolkozol, miért kellett két egyenlőség jelet `==` tenni, amikor azt néztük, hogy két szám egyenlő-e? Az egyetlen `=` jelet arra használjuk, hogy a változóknak értéket adjunk. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. Azt is ki tudjuk fejezni, hogy két dolog nem egyenlő. Erre a `!=` szimbólumot használjuk, amint az alábbi példában is.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Adj a Pythonnak két új parancsot:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -506,14 +506,14 @@ True
 False
 ```
 
-A `>` és a `<` egyszerűek, de vajon a `>=` és a `<=` mit jelentenek? Ezeket úgy kell olvasni, hogy:
+`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y azt jelenti: x nagyobb, mint y
-- x `<` y azt jelenti: x kisebb, mint y
-- x `<=` y azt jelenti: x kisebb vagy egyenlő y-nal
-- x `>=` y azt jelenti: x nagyobb vagy egyenlő y-nal
+- x `>` y means: x is greater than y
+- x `<` y means: x is less than y
+- x `<=` y means: x is less than or equal to y
+- x `>=` y means: x is greater than or equal to y
 
-Nagyszerű! Szeretnél még egy példát? Próbáld ki ezt:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,12 +526,12 @@ False
 True
 ```
 
-Annyi összehasonlítást kombinálhatsz össze, amennyit csak akarsz, és a Python kiszámolja az eredményt. Okos, ugye?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Hallottad már azt a kifejezést hogy "almákat narancsokkal összehasonlítani"? Nézzük meg ennek a python-beli megfelelőjét:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
 {% filename %}command-line{% endfilename %}
 
@@ -542,9 +542,9 @@ Traceback (most recent call last):
 TypeError: unorderable types: int() > str()
 ```
 
-Láthatod, hogy ugyanúgy, mint a kifejezéseknél, a Python nem tudja összehasonlítani a számot (`int`) a stringgel (`str`). Ehelyett **TypeError** típusú hibát dob, azaz megmondja, hogy két különböző típust nem lehet egymással összehasonlítani.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
-## Boolean (Logikai)
+## Boolean
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**, and it is probably the easiest type there is.
 
@@ -555,7 +555,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-A Booleanok is lehetnek változók! Nézd:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +565,7 @@ A Booleanok is lehetnek változók! Nézd:
 True
 ```
 
-Sőt, ezt is írhatod:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,25 +575,25 @@ Sőt, ezt is írhatod:
 False
 ```
 
-Gyakorold egy kicsit és játssz a Booleanokkal, pl próbáld ki a következő parancsokat:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Gratulálunk! A Booleanok a programozás egyik legmenőbb elemei, és te épp megtanultad használni őket!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
-# Mentsd el!
+# Save it!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-Egész mostanig a python interpreterbe írkáltuk a parancsokat, ami arra korlátoz minket hogy, egyszerre csak egy sort írjunk. A gyakorlatban a programokat fájlba mentjük, és utána futtatjuk a programnyelv **interpreter**-e vagy **compiler**-e révén. Mi mindeddig a Python **interpreter**-ével futtatuk a programjainkat, soronként. A következő feladatokhoz többsoros programokra is szükségünk lesz, úgyhogy gyorsan:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
-- Lépjünk ki a Python interpreterből
-- Nyissunk meg egy kódszerkesztőt
-- Mensünk el benne valami kódot egy python fájlba
-- És futtassuk!
+- Exit the Python interpreter
+- Open up our code editor of choice
+- Save some code into a new python file
+- Run it!
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
@@ -604,9 +604,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-Ezzel visszatértünk a parancssorba.
+This will put you back into the command prompt.
 
-Egy előző részben már kiválasztottuk a kedvenc [kódszerkesztő](../code_editor/README.md)nket. Most nyissuk meg az editort és az új üres fájlba írjuk bele:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +614,18 @@ Egy előző részben már kiválasztottuk a kedvenc [kódszerkesztő](../code_ed
 print('Hello, Django girls!')
 ```
 
-Mostanra már tapasztalt Python programozó lettél, úgyhogy írj valami kódot, amit ma tanultál.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Most mentsük el a fájlt, és adjunk neki valami jellemző nevet. Nevezzünk **python_intro.py**-nak, és mentsük el a desktopra. Bárhogy nevezhetjük a fájlt, de a kiterjesztés fontos, hogy **.py** legyen. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Ezt úgy hívják: "syntax highlighting" (szintaxis-kiemelés), és kódoláshoz nagyon hasznos. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
-Most hogy a fájl el van mentve, itt az ideje, hogy lefuttassuk. Felhaszálva a tudásodat a parancssoros részből, navigálj a terminálban a desktopra a **könyvtárváltás** parancs segítségével.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Mac-en a parancs valahogy így néz ki:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +668,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-Ha megakadtál volna, kérj nyugodtan segítséget.
+If you get stuck, just ask for help.
 
-Most pedig futtasd le a Python kódot, így:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +686,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Rendben! Épp lefuttattad az első Python programodat fájlból. Jó érzés, ugye?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Most akkor továbbmehetünk egy újabb kulcsfontosságú programozási elemre:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Cseréld ki a **python_intro.py** fájlban lévő kódot erre:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -712,7 +712,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-A Python arra számít, hogy további utasításokat kap arra az esetre, ha a `3 > 2` teljesül, vagyis `True` lesz. Vegyük rá a Pythont, hogy kiírja: "It works!" ("Működik!"). Változtasd meg erre a **python_intro.py** fájlban lévő kódot:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,9 +721,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Megfigyelted, hogy a következő sort 4 szóközzel indentáltuk? Erre azért van szükség, hogy a Python tudja, melyik kódrészletet kell lefuttatnia, ha a feltétel teljesül. Egy szóközt is használhatnál, de szinte az összes Python programozó 4 szóközt használ, hogy rendezetten nézzen ki a kód. Egy `tab` is 4 szóköznek számít.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-Mentsd el, és futtasd le még egyszer:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -734,9 +734,9 @@ It works!
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
-### Mi történik, ha egy feltétel nem teljesül (vagyis nem True)? 
+### What if a condition isn't True?
 
-A korábbi példákban a kód csak akkor futott le, ha a feltétel teljesült. De a Pythonnak van `elif` és `else` statementje is:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,7 +747,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Ha ezt lefuttatod, a következőt kapod:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -755,7 +755,7 @@ Ha ezt lefuttatod, a következőt kapod:
     5 is indeed greater than 2
     
 
-Ha a 2 nagyobb lenne, mint az 5, a második parancs futott volna le. Egyszerű, igaz? Nézzük, hogy működik az `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -769,7 +769,7 @@ else:
     print('Hey anonymous!')
 ```
 
-lefuttatva:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -777,9 +777,9 @@ lefuttatva:
     Hey Sonja!
     
 
-Látod, mi történt itt? Az `elif` arra jó, hogy plusz feltételeket írhass a kódodba, ami akkor fut le, ha a korábbi feltételek nem teljesülnek.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Az első `if` statement után annyi `elif` állítást írhatsz, amennyit csak akarsz. Például:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,7 +799,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-A Python sorban mindegyik feltételt megnézi, és kiírja:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Összefoglaló
+### Summary
 
 In the last few exercises you learned about:
 
@@ -834,15 +834,15 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-Elérkeztünk a fejezet utolsó részéhez!
+Time for the last part of this chapter!
 
-## A saját függvényeidhez!
+## Your own functions!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-A függvény utasítások sorozata, amit a Python lefuttat. Minden Python függvény a `def` kulcsszóval kezdődik, van neve, és lehetnek paraméterei. Kezdjük egy könnyűvel. Cseréld ki a **python_intro.py** kódját erre:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,11 +854,11 @@ def hi():
 hi()
 ```
 
-Oké, kész is az első függvény!
+Okay, our first function is ready!
 
-Talán elgondolkodtál, miért írtuk a függvény nevét a fájl aljára. Erre azért van szükség, mert a Python felülről lefelé olvassa be és futtatja le a fájlt. Tehát ahhoz, hogy használni tudjuk a függvényünket, újra le kell írnunk a fájl alján.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Futtassuk le, és nézzük meg, mi történik:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -881,7 +881,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-Ahogy láthattad, a függvény most kapott egy paramétert, amit `name`-nek hívunk:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,7 +897,7 @@ def hi(name):
 hi()
 ```
 
-Fontos: a `print` függvény 4 szóközzel van indentálva az `if` statementen belül. Erre azért van szükség, hogy ez a függvény a feltétel teljesülése esetén fusson le. Nézzük, hogy működik:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -908,7 +908,7 @@ Fontos: a `print` függvény 4 szóközzel van indentálva az `if` statementen b
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Hoppá, egy hiba. Szerencsére a Python elég hasznos hibaüzeneteket ad nekünk. Azt mondja, a `hi()` függvénynek (vagyis annak, amit az előbb definiáltunk) egy kötelező paramétere van (amit `name`-nek hívnak), és ezt elfelejtettük beadni, amikor meghívtuk a függvényt. Javítsuk ki a fájl alján:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +916,7 @@ Hoppá, egy hiba. Szerencsére a Python elég hasznos hibaüzeneteket ad nekünk
 hi("Ola")
 ```
 
-És futtassuk le újra:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -924,7 +924,7 @@ hi("Ola")
     Hi Ola!
     
 
-És ha megváltoztatjuk a nevet?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,7 +932,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-Futtasd le:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -947,7 +947,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
     Hi anonymous!
     
 
-Ez fantasztikus, nem? Így nem kell állandóan ismételned magad, ha meg szeretnéd változtatni az ember nevét, akinek a függvény köszön. And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -960,7 +960,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Most hívjuk meg a kódot:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -968,17 +968,17 @@ Most hívjuk meg a kódot:
     Hi Rachel!
     
 
-Gratulálunk! Megtanultad, hogy kell függvényeket írni :)
+Congratulations! You just learned how to write functions! :)
 
-## Ciklusok (loopok)
+## Loops
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-Ez már tényleg az utolsó rész. Gyors volt, nem igaz? :)
+This is the last part already. That was quick, right? :)
 
-A programozók nem szeretik ismételni magukat. A programozás arról szól, hogy dolgokat automatizáljunk, így nem kell minden alkalommal kézzel beírni mindenkinek a nevét, akit üdvözölni akarunk. Ilyenkor jönnek jól a ciklusok.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Még emlékszel a listákra? Írjunk egy listát lányokból:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +986,7 @@ Még emlékszel a listákra? Írjunk egy listát lányokból:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Mindegyiküket üdvözölni szeretnénk. Ehhez már megvan a `hi` függvényünk, tegyük bele egy loopba:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +996,7 @@ for name in girls:
 
 The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
 
-Itt a teljes kód, ami a fájlban lesz:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,7 +1010,7 @@ for name in girls:
     print('Next girl')
 ```
 
-És amikor futtatjuk:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1029,7 +1029,7 @@ for name in girls:
 
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-A `for`-t számokon is használhatod, a `range` függvénnyel:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1038,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Ezt kapjuk:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,13 +1049,13 @@ Ezt kapjuk:
     5
     
 
-A `range` függvény létrehoz egy egymás után következő számokból álló listát (ezeket a számokat te adod meg paraméterként).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Figyeld meg, hogy a két szám közül a második már nincs benne a listában, amit a Python visszaad (vagyis a `range(1, 6)` 1-től 5-ig számol, de nem tartalmazza a 6-ot). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Összefoglaló
+## Summary
 
-Meg is vagyunk. **Szuper vagy!** Ez egy nehéz fejezet volt, büszke lehetsz magadra. Mi nagyon büszkék vagyunk rád, amiért idáig eljutottál!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
