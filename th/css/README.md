@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-อุต๊ะ บล๊อคของเราทำไมดูน่าเกลียดอย่างนี้ ได้เวลาที่จะทำให้มันดีขึ้น เราจะใช้ CSS สำหรับการปรับแต่ง
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## อะไรคือ CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Bootstrap คือคำตอบ!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## ติดตั้ง Bootstrap
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![รูปที่ 14.1](images/bootstrap1.png)
+![Figure 14.1](images/bootstrap1.png)
 
-ดูดีขึ้นแล้ว!
+Looking nicer already!
 
-## Static files ใน Django
+## Static files in Django
 
-ในที่สุดเราก็จะได้ดูสิ่งที่เราเรียกกันว่า **static file** Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### แล้วจะเราเก็บไฟล์ static ไว้ที่ไหนสำหรับ Django
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-เราสามารถทำแบบนั้นได้โดยสร้างโฟลเดอร์ชื่อ `static` ข้างในแอป blog:
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -50,9 +50,9 @@ Django already knows where to find the static files for the built-in "admin" app
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## ไฟล์ CSS แรกของคุณ!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. สร้างไดเรกทอรีชื่อ `css` ข้างในไดเรกทอรี `static` ของคุณ จากนั้นสร้างไฟล์ใหม่ชื่อ `blog.css` ข้างในไดเรกทอรี `css` เมื่อสักครู่ พร้อมหรือยัง?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. สร้�
                    └─── blog.css
     
 
-ได้เวลาเขียน CSS กันแล้ว! เปิดไฟล์ `blog/static/css/blog.css` ด้วยตัวแก้ไขโค้ดของคุณ
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย บางทีเราอาจจะลองเปลี่ยนสีข้อความส่วนหัวของเรา? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-ในไฟล์ `blog/static/css/blog.css` ของคุณ ควรเพิ่มโค้ดต่อไปนี้ลงไป:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` คือการเลือกโดย CSS This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ในกรณีนี้ คือการบอกว่า เราต้องการให้เปลี่ยนสีให้เป็นรหัส `#FCA205` ซึ่งคือสีส้มนั่นเอง แน่นอนว่าคุณสามารถเปลี่ยนเป็นสีที่คุณต้องการได้นะ!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-ในไฟล์ CSS เราจะกำหนดลักษณะรูปแบบต่างๆ ให้กับองค์ประกอบที่อยู่ในไฟล์ HTML The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. class และ id คือชื่อที่คุณตั้งให้กับองค์ประกอบในหน้าเว็บเอง class กำหนดกลุ่มขององค์ประกอบ และ id ระบุไปยังองค์ประกอบที่จำเพาะเจาะจง For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. ตรงนี้เราบอก tempate ไปว่าจะหาไฟล์ CSS ของเราได้จากที่ไหน
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
+Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -134,11 +134,11 @@ The browser reads the files in the order they're given, so we need to make sure 
 </html>
 ```
 
-โอเค บันทึกไฟล์และโหลดหน้าเว็บอีกครั้ง!
+OK, save the file and refresh the site!
 
-![รูปที่ 14.2](images/color2.png)
+![Figure 14.2](images/color2.png)
 
-คุณเก่งมาก! บางทีเราอาจต้องการให้เว็บของเรามีพื้นที่ส่วนขอบด้านซ้ายสักเล็กน้อยไหม? ลองนี่!
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,9 +150,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![รูปที่ 14.3](images/margin2.png)
+![Figure 14.3](images/margin2.png)
 
-บางที เราอยากจะปรับแต่งแบบอักษรในส่วนหัวของเรา? ลองเพิ่มบรรทัดนี้ใน `<head>` ในไฟล์ `blog/templates/blog/post_list.html`:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -173,13 +173,13 @@ h1 a {
 }
 ```
 
-![รูปที่ 14.3](images/font.png)
+![Figure 14.3](images/font.png)
 
-ดีงาม!
+Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-มาตั้งชื่อให้กับบางส่วนในโค้ด HTML กัน เพิ่ม class ชื่อ `page-header` ให้กับ `div` ซึ่งมีส่วนหัวของโพสต์คุณ เช่น:
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +189,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-และตอนนี้ เพิ่ม class `post` ให้กับ `div` ที่มีบล็อกโพสต์
+And now add a class `post` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-เราจะเพิ่มส่วนประกาศ ที่จะใช้เลือกในแต่ละบล็อคที่เราได้กำหนด ตัวเลือกที่เริ่มต้นด้วยเครื่องหมายจุด `.` จะใช้กับการเลือก class There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. สำหรับตอนนี้ คัดลอกและวางลงในไฟล์ `blog/static/css/blog.css` ของคุณ:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-จากนั้นแทนที่โค้ด HTML ที่แสดงโพสต์ของเราด้วยโค้ดที่เราได้ทำกับปรับแต่งหน้าตา:
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -268,7 +268,7 @@ h1, h2, h3, h4 {
 {% endfor %}
 ```
 
-ในไฟล์ `blog/templates/blog/post_list.html` ด้วยโค้ดนี้:
+in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -290,9 +290,9 @@ h1, h2, h3, h4 {
 </div>
 ```
 
-บันทึกไฟล์และโหลดหน้าเว็บอีกครั้ง
+Save those files and refresh your website.
 
-![รูปที่ 14.4](images/final.png)
+![Figure 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
@@ -300,4 +300,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-พร้อมสำหรับบทต่อไปหรือยัง?! :)
+Ready for the next chapter?! :)
