@@ -1,22 +1,22 @@
-# Komut satırı arayüzüne giriş
+# Introduction to the command-line interface
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Sizi yeni arkadaşınızla tanıştıralım: komut satırı!**
+**Let us introduce you to your first new friend: the command line!**
 
-Gelecek aşamalar size tüm "hacker"ların kullandığı siyah pencerenin nasıl kullanıldığını gösterecek. Başta biraz korkutucu görünebilir fakat bu sadece sizden komut bekleyen bir pencere.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Komut satırı nedir?
+## What is the command line?
 
-Genellikle **komut satırı** veya **komut satırı arabirimi** adı verilen pencere, bilgisayarınızdaki dosyaları görmek, düzenlemek ve yönetmek için kullanılan metin tabanlı bir uygulamadır. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Komut satırı arabirimini açın
+## Open the command-line interface
 
-Birkaç deneme yapmak için önce komut satırı arabirimini açmamız gerekir.
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -38,13 +38,13 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
-## İstemci
+## Prompt
 
-Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göre
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Windows'da ise `>` işareti göreceksiniz, bunun gibi:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,9 +72,9 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## İlk komutunuz (Yaşasın!)
+## Your first command (YAY!)
 
-Basit bir şeyle başlayalım. Aşağıdaki komutu yazın:
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,34 +94,35 @@ Basit bir şeyle başlayalım. Aşağıdaki komutu yazın:
 
 <!--endsec-->
 
-Ve ardından `enter` tuşuna basın. Sonucumuz bu:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
-    $ whoami zeynep
+    $ whoami
+    olasitarska
     
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Temeller
+## Basics
 
-Tüm işletim sistemleri komut satırı için birbirinden biraz farklı komutlar kullanır, bu nedenle işletim sisteminize uygun yönergeleri izlediğinizden emin olun. Deneyelim mi?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Geçerli Dizin
+### Current directory
 
-Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve `enter` tuşuna basın:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/zeynep
+    /Users/olasitarska
     
 
-> Not: 'pwd'nin anlamı "print working directory" yani "çalışma dizinini yazdır"dır.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -130,30 +131,30 @@ Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın v
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\zeynep
+    C:\Users\olasitarska
     
 
 > Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
-Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Dosya ve dizinleri listele
+### List files and directories
 
-Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ ls
-    Uygulamalar
-    Masaüstü
-    İndirilenler
-    Müzik
+    Applications
+    Desktop
+    Downloads
+    Music
     ...
     
 
@@ -163,11 +164,12 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 {% filename %}command-line{% endfilename %}
 
-    > dir  Directory of C:\Users\zeynep 
-    05/08/2014 07:28 PM <DIR> Uygulamalar 
-    05/08/2014 07:28 PM <DIR> Masaüstü 
-    05/08/2014 07:28 PM <DIR> İndirilenler 
-    05/08/2014 07:28 PM <DIR> Müzik 
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
     ...
     
 
@@ -175,15 +177,15 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 * * *
 
-### Geçerli dizini değiştir
+### Change current directory
 
-Şimdi, haydi Masaüstü dizinimize gidelim:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd Masaüstü
+    $ cd Desktop
     
 
 <!--endsec-->
@@ -192,19 +194,19 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Masaüstü
+    > cd Desktop
     
 
 <!--endsec-->
 
-Gerçekten değişmiş mi bir bakalım:
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    C:\Users\zeynep\Masaüstü
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -213,27 +215,27 @@ Gerçekten değişmiş mi bir bakalım:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd 
-    C:\Users\zeynep\Masaüstü
+    > cd
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-İşte oldu!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Dizin oluşturun
+### Create directory
 
-Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu şekilde yapabilirsiniz:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir uygulama
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -242,28 +244,28 @@ Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir uygulama
+    > mkdir practice
     
 
 <!--endsec-->
 
-Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. Orada olup olmadığını kontrol etmek için `ls` veya `dir` komutlarını kullanabilirsiniz! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Profesyonel ipucu: Eğer aynı komutları tekrar tekrar yazmak istemiyorsanız, `yukarı ok` ve `aşağı ok` tuşlarına basarak yazdığınız komutlar arasında geçiş yapabilirsiniz.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Alıştırma!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Çözüm:
+#### Solution:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd uygulama
+    $ cd practice
     $ mkdir test
     $ ls
     test
@@ -275,7 +277,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd uygulama
+    > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -283,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Tebrikler! :)
+Congrats! :)
 
 * * *
 
-### Temizlik
+### Clean up
 
-Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silelim.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-İlk önce masaüstüne geri dönmemiz gerek:
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,14 +315,14 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Nerede olduğunuzu kontrol edin:
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    C:\Users\zeynep\Masaüstü
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -329,13 +331,13 @@ Nerede olduğunuzu kontrol edin:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd 
-    C:\Users\zeynep\Masaüstü
+    > cd
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Şimdi `uygulama` dizinini silme vakti:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -343,7 +345,7 @@ Nerede olduğunuzu kontrol edin:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r uygulama
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -352,13 +354,13 @@ Nerede olduğunuzu kontrol edin:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S uygulama
-    uygulama, Emin misiniz <E/H>? E
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Bitti! Gerçekten silindiğinden emin olalım:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -378,7 +380,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--endsec-->
 
-### Çıkış
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -402,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Özet
+## Summary
 
-İşte bazı yararlı komutların özeti:
+Here is a summary of some useful commands:
 
-| Komut (Windows) | Komut (Mac OS - GNU/Linux) | Açıklama                   | Örnek                                             |
-| --------------- | -------------------------- | -------------------------- | ------------------------------------------------- |
-| exit            | exit                       | pencereyi kapatır          | **exit**                                          |
-| cd              | cd                         | dizin değiştir             | **cd test**                                       |
-| cd              | pwd                        | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir             | ls                         | dizin/dosyaları listele    | **dir**                                           |
-| copy            | cp                         | dosya kopyala              | **copy c:\test\test.txt c:\windows\test.txt** |
-| move            | mv                         | dosya taşı                 | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir           | mkdir                      | yeni bir dizin oluştur     | **mkdir testdizini**                              |
-| rmdir (or del)  | rm                         | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S        | rm -r                      | delete a directory         | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Bu kullanabileceğiniz komutlardan sadece birkaçı, fakat bugün bundan daha fazlasını kullanmayacaksınız.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Eğer merak ediyorsanız, [ss64.com](http://ss64.com) adresinden tüm işletim sistemleri için tüm komutların kullanımına ulaşabilirsiniz.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Hazır mısınız?
+## Ready?
 
-Haydi Python'a giriş yapalım!
+Let's dive into Python!
