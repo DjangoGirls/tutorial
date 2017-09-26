@@ -1,22 +1,22 @@
-# Úvod do HTML
+# Introduction to HTML
 
-Môžno sa pýtaš, čo jej šablóna?
+What's a template, you may ask?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## Čo je HTML?
+## What is HTML?
 
 HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML znamená "HyperText Markup Language". **HyperText** znamená, že sa jedná o typ textu, ktorý podporuje hypertextové odkazy medzi stránkami. **Markup** znamená, že sme vzali dokument a označili ho kódom aby sme niečomu povedali (v tomto prípade prehliadaču) ako interpretovať stránku. HTML kód je budovaný za pomoci **tagov**, každý začínajúci znakom `<` a končiaci znakom `>`. These tags represent markup **elements**.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## Tvoja prvá šablóna!
+## Your first template!
 
-Vytvorenie šablóny znamená vytvorenie súboru šablóny.
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Šablóny sú uložené v zložke `blog/templates/blog`. Takže najprv vytvor v zložke blogu zložku s názvom `templates`. Potom vytvor ďalšiu zložku s názvom `blog` v zložke templates:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
@@ -25,17 +25,17 @@ Vytvorenie šablóny znamená vytvorenie súboru šablóny.
 
 (You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v zložke `blog/templates/blog`.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![Obrázok 11.1](images/step1.png)
+![Figure 11.1](images/step1.png)
 
-Žiadne ďalšie chyby! Gratulujeme :) Avšak tvoja stránka zatiaľ neukazuje nič, okrem prázdnej stránky, pretože tvoja šablóna je taktiež prázdna. To musíme opraviť.
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Pridaj nasledujúci kód do tvojho súboru šablóny:
+Add the following to your template file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,22 +48,22 @@ Pridaj nasledujúci kód do tvojho súboru šablóny:
 
 So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![Obrázok 11.2](images/step3.png)
+![Figure 11.2](images/step3.png)
 
-Funguje to! Dobrá práca :)
+It worked! Nice work there :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Ako môžeš vidieť, celý obsah stránky sa nachádza medzi začínajúcim tagom `<html>` a uzatvárajúcim tagom `</html>`
-* `<p>` je tag pre element odstavca; `</p>` uzatvára každý odstavec
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
-* **head** je element, ktorý obsahuje informácie o dokumente, ktoré nie sú zobrazené na obrazovke.
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-* **body** je element, ktorý obsahuje všetko ostatné zobrazené ako časť webovej stránky.
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-`<head>` používame, aby sme povedali prehliadaču o konfigurácii stránky a `<body>` aby sme mu povedali, čo na stránke je.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,32 +81,32 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Ulož súbor a znova načítaj svoju stránku.
+Save the file and refresh your page.
 
-![Obrázok 11.3](images/step4.png)
+![Figure 11.3](images/step4.png)
 
-Všimni si ako prehliadač rozumie, že "Ola's blog" je titulok tvojej stránky? Interpretuje `<title>Ola's blog</title>` a vkladá text ako názov záložky (tento názov bude použitý aj keď si stránku uložíte a tak ďalej).
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-Pravdepodobne si taktiež všimneš, že každý začínajúci tag má svoj *uzatvárajúci tag* obsahujúci `/`, a že elementy sú *vnorené* (tj. nemôžeš daný tag zatvoriť, kým nie sú taktiež zatvorené všetky tagy, ktoré sú v jeho vnútri).
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-Je to ako vkladať veci do krabice. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Uprav svoju šablónu
+## Customize your template
 
-Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je pár užitočných tagov:
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
 * `<h1>A heading</h1>` for your most important heading
-* `<h2>Podnádpis</h2>` pre nádpis na nižšej úrovni
+* `<h2>A sub-heading</h2>` for a heading at the next level
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
-* `<em>text</em>` zdôrazňuje tvoj text
-* `<strong>text</strong>` zvýrazňuje tvoj text o čosi viac
-* `<br />` vkladá nový riadok (do br nemôžeš nič vložiť)
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
 * `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam ako tento!
-* `<div></div>` definuje sekciu stránky
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -130,63 +130,63 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Môj druhý príspevok</a></h2>
+            <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
 ```
 
-Vytvorili sme tri `div` sekcie.
+We've created three `div` sections here.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* Ďalšie dva `div` elementy obsahujú príspevky blogu s časom publikovania, `h2` s nádpisom príspevku, na ktorý sa dá kliknúť a dva `p` (odstavce) textu, jeden pre dátum a druhý pre náš príspevok.
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-Dá nám to tento efekt:
+It gives us this effect:
 
-![Obrázok 11.4](images/step6.png)
+![Figure 11.4](images/step6.png)
 
-Jupí! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## Ešte jedna vec: nasaďte to!
+## One more thing: deploy!
 
-Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na Internete, že? Spravme ďalšie PythonAnywhere nasadenie:
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Commitni a pošli svoj kód na Github
+### Commit, and push your code up to Github
 
-Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto príkazy spusti lokálne, nie na PythonAnywhere):
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Uisti sa, že si v zložke `djangogirls` a následne povedzme `gitu` nech zahrnie všetky zmeny v zložke:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Pamätaj si tiež (bolo to v kapitole 3), že `.` znamená aktuálny adresár.
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-Predtým, ako nahrajeme všetky súbory, skontrolujme čo bude `git` nahrávať (všetky súbory, ktoré `git` nahraje by teraz mali byť zelené):
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Už sme skoro tam, teraz nastal čas mu povedať, aby uložil tieto zmeny v jeho histórii. Dáme mu "commit správu", kde popíšeme, čo sme zmenili. V tomto štádiu môžeš napísať čokoľvek, čo chceš, ale je nápomocné napísať čosi, čo je popisné natoľko, že si budeš v budúcnosti pamätať, čo si spravila.
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
-    $ git commit -m "Zmeny v HTML pre stránku."
+    $ git commit -m "Changed the HTML for the site."
     
 
-> **Poznámka** - Uisti sa, že si použila dvojité úvodzovky okolo commit správy.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
@@ -195,9 +195,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     $ git push
     
 
-### Stiahni svoj kód na PythonAnywhere a obnov svoju webovú aplikáciu
+### Pull your new code down to PythonAnywhere, and reload your web app
 
-* Otvor [konzolovú stránku PythonAnywhere](https://www.pythonanywhere.com/consoles/) a prejdi do svojej **Bash konzole** (alebo naštartuj novú). Potom zadaj:
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,8 +206,8 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
-* Nakoniec skoč do [záložky Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na tvojej webovej aplikácii.
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
