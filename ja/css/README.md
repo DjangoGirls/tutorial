@@ -1,8 +1,8 @@
 # CSS – make it pretty!
 
-ブログは作ったものの、まだなんかダサいですよね。かわいくしましょう！　そのためにはCSSを使います。
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## CSSとは？
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
@@ -14,7 +14,7 @@ Bootstrap is one of the most popular HTML and CSS frameworks for developing beau
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Bootstrapのインストール
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![図 14.1](images/bootstrap1.png)
+![Figure 14.1](images/bootstrap1.png)
 
-これだけでずいぶん見た目が良くなりましたね！
+Looking nicer already!
 
 ## Static files in Django
 
-最後に、**静的ファイル**と呼ばれるものを詳しく見ていきましょう。 Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### 静的ファイルはプロジェクトのどこに置けばいいの？
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-そのために、blogアプリの中に`static`というフォルダを作ります。
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -52,7 +52,7 @@ Django will automatically find any folders called "static" inside any of your ap
 
 ## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. `static`ディレクトリの中に`css`というディレクトリを作成しましょう。 そして、その`css`ディレクトリの中に`blog.css`という新規ファイルを作ります。 Ready?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. `static`デ
                    └─── blog.css
     
 
-ついにCSSを書くときが来ました！　コードエディタで`blog/static/css/blog.css`ファイルを開きましょう。
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-`blog/static/css/blog.css`ファイルに、次のコードを追加しましょう。
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a`はCSSセレクタと呼ばれるものです。 This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. この場合、その要素を`#FCA205`に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. このようにCSSファイルがどこにあるか示します。
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-ファイルは次のようになっているはずです:
+Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -134,11 +134,11 @@ The browser reads the files in the order they're given, so we need to make sure 
 </html>
 ```
 
-保存して、サイトを更新してください。
+OK, save the file and refresh the site!
 
-![図 14.2](images/color2.png)
+![Figure 14.2](images/color2.png)
 
-素晴らしいですね！あとは、左サイドの余白幅を少し広げて、余裕を持たせてあげたらもっと良くなると思いませんか？やってみましょう。
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,9 +150,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![図 14.3](images/margin2.png)
+![Figure 14.3](images/margin2.png)
 
-ヘッダーのフォントを変えてみませんか？ファイル `blog/templates/blog/post_list.html` の`<head>` タグの中に次の一行を貼り付けましょう。
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -173,13 +173,13 @@ h1 a {
 }
 ```
 
-![図 14.3](images/font.png)
+![Figure 14.3](images/font.png)
 
-素晴らしいです！
+Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-先に進んで、HTMLコードの一部に名前をつけましょう。ヘッダーに含まれる`div` 要素に、`page-header` というクラス名をつけましょう：
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +189,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-さらにブログ投稿を含む`div` 要素に`post` というクラス名をつけましょう。
+And now add a class `post` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-そして、別のセレクタに宣言ブロックを追加します。 `.`で始まるセレクタはクラスに関連します。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 今のところは、`blog/static/css/blog.css`のファイルに以下の内容をコピー＆ペーストしましょう：
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-そして、これをクラス宣言で投稿を表示しているHTMLコードで囲みます。 <0>blog/templates/blog/post_list.html</0> 中のこの部分を
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -268,7 +268,7 @@ h1, h2, h3, h4 {
 {% endfor %}
 ```
 
-これで置き換えて下さい：
+in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -290,9 +290,9 @@ h1, h2, h3, h4 {
 </div>
 ```
 
-それらのファイルを保存してWebサイトを更新してみましょう。
+Save those files and refresh your website.
 
-![図 14.4](images/final.png)
+![Figure 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
@@ -300,4 +300,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-さて、次の章にいく準備はできましたか？^皿^
+Ready for the next chapter?! :)
