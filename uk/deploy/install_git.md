@@ -1,28 +1,52 @@
+Git - це "система контролю версій", яка використовується багатьма розробниками. Ця програма дозволяє відслідковувати зміни до файлів з часом так, що ви можете повернутись до певних версій пізніше. Схоже на функцію "слідкувати за змінами" в Microsoft Word, але набагато потужніше.
 
-### Windows
+## Встановлення Git
 
-Git можна завантажити з [git-scm.com](https://git-scm.com/). Ви можете натискати "next next next" на всіх кроках окрім одного. На п’ятому кроці, названому "Adjusting your PATH environment", виберіть "Run Git and associated Unix tools from the Windows command-line" (нижня опція). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-### Mac OS
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
 
-Завантажте Git з [git-scm.com](https://git-scm.com/) і просто слідуйте вказівкам.
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
 
-### Linux
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
 
-Якщо Git не встановлений, то він має бути доступний через менеджер пакетів, тому спробуйте:
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
+<!--endsec-->
 
-#### Debian або Ubuntu
+<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
 
-    $ sudo apt-get install git
+{% filename %}command-line{% endfilename %}
 
+```bash
+$ sudo apt-get install git
+```
 
-#### Fedora
+<!--endsec-->
 
-    $ sudo dnf install git
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-#### openSUSE
+```bash
+$ sudo dnf install git
+```
 
-    $ sudo zypper install git
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo zypper install git
+```
+
+<!--endsec-->
