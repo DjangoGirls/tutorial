@@ -1,16 +1,16 @@
-# Project Django pertamamu!
+# Your first Django project!
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Hak cipta tutorial django-marcador oleh Markus Zapke-Gründemann et al.
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-Kita akan membuat blog sederhana!
+We're going to create a simple blog!
 
-Langkah pertama adalah memulai dengan mebuat projek baru Django. Pada dasarnya, Kita akan menjalankan beberapa skrip yang disediakan oleh Django yang amana akan membuat skeleton projek Django untuk kita. Ini merupakan bagian direktori dan file yang akan kita gunakan nanti.
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-Nama untuk beberapa file dan direktori sangat penting untuk Django. Kamu harus mengganti nama file yang akan kita buat. Memindahkan file tersebut ke tempat yang lain bukanlah ide yang bagus. Kebutuhan Django untuk mengatur struktur tertentu dapat digunakan untuk mencari sesuatu hal yang penting.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> Ingatlah untuk selalu menjalankan segalanya melalui virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. Kita sudah menjelaskannya pada chapter **Installasi Django** pada bagian **Bekerja dengan virtualenv** Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
