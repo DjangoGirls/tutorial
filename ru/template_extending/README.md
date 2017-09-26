@@ -1,23 +1,23 @@
-# Расширение шаблона
+# Template extending
 
-Еще одной удобной вещью в Django является **расширение шаблонов**. Что это значит? Ты можешь использовать различные блоки HTML-кода для разных частей своего веб-сайта.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
-Базовый шаблон - это наиболее общая типовая форма страницы, которую ты расширяешь для отдельных случев.
+A base template is the most basic template that you extend on every page of your website.
 
-Давай создадим файл `base.html` в директории `blog/templates/blog/`:
+Let's create a `base.html` file in `blog/templates/blog/`:
 
     blog
     └───templates
-        └───blog
-                base.html
-                post_list.html
+        └───blog
+                base.html
+                post_list.html
     
 
-Теперь открой его и скопируй все из `post_list.html` в `base.html`:
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Templates help when you want to use the same information or layout in more than 
 </html>
 ```
 
-Затем в файле `base.html` замени все между тегами `<body>` и `</body>` следующим кодом:
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Templates help when you want to use the same information or layout in more than 
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Мы покажем как это сделать через секунду.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
@@ -104,7 +104,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 
 We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Таким образом:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
