@@ -1,3 +1,3 @@
-# kódszerkesztő
+# code editor
 
-A kódszerkesztő egy alkalmazás, amely segítségével elmentheted a kódodat, így később vissza tudsz térni hozzá. A [Kódszerkesztő fejezetből](./code_editor/README.md) tudhatod meg, hogyan juthatsz hozzá
+Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
