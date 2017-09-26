@@ -2,17 +2,17 @@
 
 We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-## Mi az URL?
+## What is a URL?
 
-Az URL egyszerűen csak egy webes cím. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! a `127.0.0.1:8000` egy URL! And `https://djangogirls.org` is also a URL.)
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
 ![Url](images/url.png)
 
-Az interneten minden oldalnak szüksége van egy saját URL-re. This way your application knows what it should show to a user who opens that URL. A Django-ban egy `URLconf` nevű dolgot használunk (URL configuration, vagyis URL beállítások). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
-## Hogy működnek az URL-ek a Django-ban?
+## How do URLs work in Django?
 
-Nyisd meg a `mysite/urls.py` fájlt a kódszerkesztőben, és nézd meg:
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -45,7 +45,7 @@ This line means that for every URL that starts with `admin/`, Django will find a
 
 ## Regex
 
-Kíváncsi vagy, hogyan párosítja össze a Django az URL-eket és a view-kat? Na, ez a rész trükkös. A Django `regex`-et használ (a "regular expressions", vagyis reguláris kifejezések rövidítése). A regexnek nagyon (nagyon!) sok szabálya van arra, hogy hogyan épít fel egy keresési mintázatot. Mivel a regex egy magasabb szintű téma, most nem megyünk bele a részletekbe.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -59,12 +59,12 @@ Anything else in the URL definition will be taken literally.
 
 Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-Minden egyes poszt számához új view-t írni nagyon idegesítő lenne. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
+Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
 * **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
-* A **(\d+)** azt jelenti, hogy ezután egy szám fog következni (egy vagy több számjegyű), és ezt a számot ki szeretnénk olvasni az URL-ből
-* A **/** azt mondja meg a Django-nak, hogy utána még egy `/` karakternek kell következnie
-* A **$** az URL végét jelzi, vagyis csak azok a stringeket fogja megfeleltetni a mintának, amik így végződnek: `/`
+* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
+* **/** tells django that another `/` character should follow
+* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
 ## Your first Django URL!
 
@@ -74,7 +74,7 @@ We also want to keep the `mysite/urls.py` file clean, so we will import URLs fro
 
 Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
 
-A `mysite/urls.py` fájlod most így néz ki:
+Your `mysite/urls.py` file should now look like this:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -88,9 +88,9 @@ urlpatterns = [
 ]
 ```
 
-Mostantól a Django mindent, ami a 'http://127.0.0.1:8000/'-re jön, átirányít a `blog.urls`-re, és ott fogja keresni a további tennivalókat.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
-Writing regular expressions in Python is always done with `r` in front of the string. Ez egy hasznos tipp a Pythonnak, hogy a string tartalmazhat speciális karaktereket, de ezek a reguláris kifejezés alkotóelemei, és nem magának a Pythonnak szólnak.
+Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
 ## blog.urls
 
@@ -105,7 +105,7 @@ from . import views
 
 Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
-Ezután megírhatjuk az első URL mintát:
+After that, we can add our first URL pattern:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -115,13 +115,13 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. Ez így helyes, mert a Django URL resolverében a 'http://127.0.0.1:8000/' nem számít az URL részének. Ez a minta mondja meg a Django-nak, hogy ha valaki a 'http://127.0.0.1:8000/' címen lép be a weboldaladra, a `views.post_list` a helyes lépés.
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. Ez lehet ugyanaz, mint a view neve, de lehet teljesen más is. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
-![Hiba](images/error1.png)
+![Error](images/error1.png)
 
 Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
