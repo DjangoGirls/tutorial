@@ -1,16 +1,16 @@
-# Introduktion till Python
+# Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Låt oss skriva lite kod!
+Let's write some code!
 
-## Python-prompten
+## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-För att börja använda Python behöver vi öppna upp *kommandotolken* på datorn. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-När du är redo, följ instruktionerna nedan.
+Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -54,7 +54,7 @@ Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Strängar
+## Strings
 
 How about your name? Type your first name in quotes like this:
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 
 Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Sammanfattning
+### Summary
 
 OK, enough of strings. So far you've learned about:
 
@@ -138,7 +138,7 @@ OK, enough of strings. So far you've learned about:
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Fel
+## Errors
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
@@ -254,7 +254,7 @@ When you just type `name`, the Python interpreter responds with the string *repr
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Listor
+## Lists
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
@@ -459,7 +459,7 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Sammanfattning
+### Summary
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Sammanfattning
+### Summary
 
 In the last few exercises you learned about:
 
@@ -970,7 +970,7 @@ Let's call the code now:
 
 Congratulations! You just learned how to write functions! :)
 
-## Loopar
+## Loops
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
@@ -1053,7 +1053,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Sammanfattning
+## Summary
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
