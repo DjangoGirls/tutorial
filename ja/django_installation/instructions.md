@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## 仮想環境
+## Virtual environment
 
-Django をインストールする前に、あなたのコーディング環境を、きれいにしておく便利な道具をインストールしてもらいます。 このステップをとばすこともできますが、しかし、このステップをとばすことは全くお勧めしまません。 可能な限りベストなセットアップで始めることは将来のたくさんのトラブルからあなたを救うはずですから！
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-さあ、**仮想環境（virtual environment )**(*virtualenv*とも呼ばれています）を作成してみましょう。 仮想環境（virtual environment）ではプロジェクト単位であなたのPython/Djangoのセットアップを他から隔離します。 これは、あなたがひとつのウェブサイトにおこなったどんな変更も、あなたが開発している他のサイトに影響を及ぼさないということです。 わかりましたか？
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-あなたがしなければならないのは、あなたが`仮想環境（virtual environment）`を作成したいディレクトリを見つけることです（たとえばホームディレクトリなどです）。 Windows のホームディレクトリは `C:\Users\Name` (`名前` はあなたのログインの名前です) のようになります。
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-このチュートリアルのために、ホームディレクトリに新しいディレクトリ`djangogirls`を作成します。
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ Django をインストールする前に、あなたのコーディング環境�
     $ cd djangogirls
     
 
-`myvenv`という仮想環境（virtual environment）を作成します。一般的なコマンドは以下のようになります：
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,21 +37,21 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. どんな名前でも使うことができますが、必ず小文字で表記し、スペース・アクセント記号・特殊文字は入れないでください。 It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-LnuxやOX Xで'仮想環境(virtualenvironment)'を作るときは、`Python3 -m venv myvenv` を実行するだけです。例えばこんな感じです：
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` は、あなたの `仮想環境(virtualenvironment)` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペースは入れないでください。 短い名前にしておくのもいいアイデアですーあなたはこの名前を何度も参照しますから！
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -73,9 +73,8 @@ LnuxやOX Xで'仮想環境(virtualenvironment)'を作るときは、`Python3 -m
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
->     
 > 
-> このエラーを回避するために、代わりに`仮想環境(virtualenvironment)`コマンドを使います。
+> To get around this, use the `virtualenv` command instead.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -99,18 +98,18 @@ LnuxやOX Xで'仮想環境(virtualenvironment)'を作るときは、`Python3 -m
 
 <!--endsec-->
 
-## 仮想環境の操作
+## Working with virtualenv
 
-上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、これを実行し、開始することです。
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Users\Name\djangogirls > myvenv\Scripts\activate
+    C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
 > **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
@@ -127,16 +126,16 @@ data-collapse=true ces-->
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-`myvenv`のところをあながた選んだ`仮想環境(virtualenvironment)`名に置き換えることを忘れないで下さいね！
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **備考:** `source` ではできない場合もあります。その場合は、代わりに以下のように入力してみてください：
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -149,9 +148,9 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
+OK, we have all important dependencies in place. We can finally install Django!
 
-## Djangoのインストール
+## Installing Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -195,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment)内でpipインストールをフィックスするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-以上です！あなたは（ついに）Djangoアプリケーションを作成する準備が整いました！
+That's it! You're now (finally) ready to create a Django application!
