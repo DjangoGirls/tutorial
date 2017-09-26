@@ -1,4 +1,4 @@
-Kini saatnya untuk mendaftar sebagai akun "Beginner" gratis di PythonAnywhere.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
