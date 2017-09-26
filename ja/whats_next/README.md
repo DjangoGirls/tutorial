@@ -2,7 +2,7 @@
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### あなたは今何をすべきですか？
+### What to do now?
 
 Take a break and relax. You have just done something really huge.
 
