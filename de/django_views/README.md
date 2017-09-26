@@ -1,14 +1,16 @@
-# Django Views - Zeit zum Gestalten!
+# Django views – time to create!
 
-Es wird jetzt Zeit, den Bug, den wir im letzten Kapitel erzeugt haben, zu beheben :)
+Time to get rid of the bug we created in the last chapter! :)
 
-In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views sind Python-Methoden, die ein bisschen komplizierter sind als die, die wir im Kapitel **Introduction to Python** kennengelernt haben.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Datei `blog/views.py` hinzu.
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
 ## blog/views.py
 
-OK, wir öffnen nun diese Datei und schauen was darin steht:
+OK, let's open up this file and see what's in there:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
@@ -16,21 +18,27 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Es steht noch nicht viel da. Die einfachste *View* kann folgendermaßen aussehen:
+Not too much stuff here yet.
+
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+
+The simplest *view* can look like this:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Du siehst hier, dass wir eine Methode (`def`) mit dem Namen `post_list` definiert haben. Sie hat den Parameter `request`. In der Methode weisen wir mit `return` eine Rückgabe einer anderen Funktion namens `render` an. Diese wird unser Template `blog/post_list.html` erstellen (man sagt auch "rendern").
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Speichere die Datei, öffne http://127.0.0.1:8000/ im Browser und schau nach, was wir jetzt bekommen.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Einen anderen Fehler! Lies dir durch, was da steht:
+Another error! Read what's going on now:
 
-![Fehler](images/error.png)
+![Error](images/error.png)
 
-Logisch: *TemplateDoesNotExist*. Wir haben ja noch kein Template erstellt. Lass uns diesen Bug im nächsten Kapitel beheben!
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/1.10/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
