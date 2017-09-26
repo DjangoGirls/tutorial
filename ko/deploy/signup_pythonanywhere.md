@@ -1,4 +1,4 @@
-다음으로 PythonAnywhere에서 무료 계정인 "초보자(Beginner)"로 회원가입을 하겠습니다.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
