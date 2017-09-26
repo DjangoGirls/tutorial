@@ -1,8 +1,8 @@
-# プログラムアプリケーション拡張
+# Extend your application
 
 We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-練習しましょう！
+Time to practice!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
@@ -140,7 +140,7 @@ Oh no! Another error! But we already know how to deal with it, right? We need to
 
 We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-こんな感じですね。
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -168,9 +168,9 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-イェーイ！うまくできます！
+Yay! It works!
 
-## もう一つ: deployの時間です!
+## One more thing: deploy time!
 
 It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
@@ -183,7 +183,7 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
     $ git push
     
 
-そうすると、PythonAnywhereのbashコンソールで見ると：
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,4 +194,4 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
 
 Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-そしてdeployします! おめでとうございます :)
+And that should be it! Congrats :)
