@@ -1,31 +1,28 @@
 # Deploy!
 
-> **Megjegyzés** A következő fejezet néhol kissé bonyolult lehet. Tarts ki és vedd át az egész fejezetet; ugyanis most a webfejlesztés egy nagyon fontos része következik - az ún. deployment. Ez a fejezet a tutorial közepén található, így majd a mentorod is tud segíteni a trükkösebb részeknél, miközben a honlapodat online is elérhetővé teszed. Magát a tutorialt később egyedül is befejezheted, ha esetleg kifutnál az időből.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
-Ezidáig a honlapod csak a saját számítógépeden volt elérhető - most tanuljuk meg, hogyan tegyük mások számára is elérhetővé! Ez az ún. deploying - az a tevékenység, amely során az alkalmazásodat közzé teszed az interneten, hogy mások is láthassák és használhassák azt :).
+Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-Ahogyan azt már tudod, a honlapot egy szerveren kell elhelyezni. Több szerver szolgáltató is elérhető az interneten. Mi egy olyat fogunk használni, amit viszonylag egyszerű kezelni: [PythonAnywhere][1]. A PythonAnywhere ingyenes olyan kisebb alkalmazások számára, amelyeknek nincs sok látogatójuk, tehát a mi esetünkben ez pont megfelelő lesz.
+As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
- [1]: https://www.pythonanywhere.com/
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-A másik külső szolgáltatás, amit igénybe fogunk venni a [GitHub][2], ami egy ún. code hosting service (forráskód tárolására és megosztására alkalmas online tárhely). Vannak más hozzá hasonló szolgáltatók is, de szinte minden programozó ezt használja manapság, és nemsokára te is közéjük tartozhatsz!
-
- [2]: https://www.github.com
-
-Ez a három hely lesz fontos. A saját számítógéped lesz az a hely, ahol fejlesztesz és tesztelsz. Amikor elégedett vagy a módosításaiddal, felmásolod a programodat GitHub-ra. A website-od a PythonAnywhere-en lesz, és a GitHub-ról fogod frissíteni.
-
+These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
-> **Megjegyzés** Ha már követted a korábbi telepítési utasításokat, ezt a pontot átugorhatod és kezdheted kialakítani a saját Git csomagtáradat!
+> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
-## Készítsünk Git repository-t
+## Starting our Git repository
 
-A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban (repository vagy röviden "repo"). Nyissunk egy új repo-t a projektünknek. Nyisd fel a konzolt és futtasd le a következő parancsokat, a `djangogirls` mappában:
+Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
-> **Megjegyzés** Az alábbi parancsokkal ellenőrizheted a munkamappát (working directory, az éppen megnyitott mappa): `pwd` (OSX/Linux) vagy `cd` (Windows) mielőtt létrehoznád a repositoryt. A `djangogirls` mappában kell lenned.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+
+{% filename %}command-line{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
@@ -33,29 +30,30 @@ A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban
     $ git config --global user.email you@example.com
     
 
-A git csomagtár inicializálása olyasvalami, amit minden projekt esetében csak egyszer kell véghezvinni (így majd nem kell újra és újra megadni a felhasználónevet ill. jelszót).
+Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen a mappán belül. De vannak bizonyos fájlok, amiket nem szeretnénk figyelembe venni. Ezt úgy tehetjük meg, hogy létrehozunk egy fájlt `.gitignore` névvel a gyökérkönyvtárban. Nyisd meg a szövegszerkesztőt és hozz létre egy új fájlt, amibe az alábbi sorok kerülnek:
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
 {% filename %}.gitignore{% endfilename %}
-```
-*.pyc
-*~
-__pycache__
-myvenv
-db.sqlite3
-/static
-.DS_Store
-```
+
+    *.pyc
+    *~
+    __pycache__
+    myvenv
+    db.sqlite3
+    /static
+    .DS_Store
     
 
-Majd mentsd le `.gitignore` néven a "djangogirls" legfelsőbb mappájában.
+And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Megjegyzés** Nagyon fontos, hogy a fájl neve ponttal kezdődjön! Ha bármi gond adódna a fájl létrehozásánál (pl. Mac számítógépeken a Finder alapvetően nem engedi, hogy a fájlnév ponttal kezdődjön), akkor használd a "Save as" lehetőséget.
+> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> 
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-> **Megjegyzés** A `.gitignore` file-ban megadott file-ok egyike a `db.sqlite3`. Ez a file a lokális adatbázisod, ez tárolja az összes blogposztodat. Nem akarjuk hozzáadni a repository-hoz, mert a PythonAnywhere-en lévő weboldal egy másik adatbázist fog használni. Az az adatbázis lehet SQLite, mint a fejlesztői gépeden, de többnyire egy MySQL nevűt fogsz használni, amely jóval több látogatót tud kiszolgálni mint az SQLite. Akármelyiket választod, azzal hogy az SQLite adatbázisod kihagyjuk a GitHub másolatból, az összes blogpost amelyet eddig létrehoztál csak lokálisan lesz elérhető, a publikus weboldalon újra létre kell majd ezeket hozni. Gondolj úgy a lokális adatbázisodra, mint egy  játszótérrel, ahol kipróbálhatsz különböző dolgokat és nem kell attól tartanod, hogy valódi posztokat fogsz törölni a blogodról.
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
-Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint ezen kívül még bármikor, ha tudni szeretnéd, hogy mi változott. Ez majd segít elkerülni olyan szituációkat, mint például rossz fájlok hozzáadása ill. feltöltése a csomagtárba. A `git status` parancs információt szolgáltat minden nem követett (not tracked) / megváltozott (modified) /feltöltésre felkészített fájlról (staged files) stb. A kimenet ehhez hasonló lesz:
+{% filename %}command-line{% endfilename %}
 
     $ git status
     On branch master
@@ -73,7 +71,9 @@ Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-Végül mentsük le a változtatásokat. A konzolban futtasd le a következő parancsokat:
+And finally we save our changes. Go to your console and run these commands:
+
+{% filename %}command-line{% endfilename %}
 
     $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
@@ -82,212 +82,179 @@ Végül mentsük le a változtatásokat. A konzolban futtasd le a következő pa
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
+     ```
+    
+    
+    ## Pushing your code to GitHub
+    
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    
+    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    
+    <img src="images/new_github_repo.png" />
+    
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    
+    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    
+    <img src="images/github_get_repo_url_screenshot.png" />
+    
+    Now we need to hook up the Git repository on your computer to the one up on GitHub.
+    
+    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    
+    {% filename %}command-line{% endfilename %}
     
 
-## Forráskód feltöltése a GitHubra
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-A böngészőben keresd fel a [GitHub.com][2] honlapot és regisztrálj be egy új "free user" fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod) 
-
-Ezután hozz létre egy új csomagtárat ("repót"), amit nevezz "my-first-blog"-nak. Hagyd az "initialise with a README" mezőt jelöletlenül, a .gitignore lehetőséget hagyd üresen (ezt manuálisan tettük), a "License" résznél maradjon a "None" opció.
-
-![][3]
-
- [3]: images/new_github_repo.png
-
-> **Megjegyzés** A `my-first-blog` név fontos -- választhattál volna más nevet is, de gyakran előfordul majd a későbbiekben is a parancsokban. Valószínűleg egyszerűbb lesz számodra is, ha a `my-first-blog` nevet használod.
-
-A következő oldalon látni fogod a repód url-jét (repo's clone url). Válaszd a "HTTPS" verziót, másold ki - mindjárt bemásoljuk a terminálba:
-
-![][4]
-
- [4]: images/github_get_repo_url_screenshot.png
-
-Most összekötjük a Git csomagtárat a számítógépeden a másik csomagtárral a GitHubon.
-
-A konzolba írd be a következőt (helyettesítsd a `<your-github-username>` a saját felhasználóneveddel, amivel a GitHubon regisztráltál, de a kacsacsőrök nélkül):
-
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
+    <br />Enter your GitHub username and password and you should see something like this:
+    
+    {% filename %}command-line{% endfilename %}
     
 
-Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy láss:
+Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
 
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/hjwp/my-first-blog.git
-     * [new branch]      master -> master
-    Branch master set up to track remote branch master from origin.
+- [new branch] master -> master Branch master set up to track remote branch master from origin.
+
+    <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
+    
+    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    
+    
+    # Setting up our blog on PythonAnywhere
+    
+    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    
+    {% include "/deploy/signup_pythonanywhere.md" %}
+    
+    
+    ## Pulling our code down on PythonAnywhere
+    
+    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
+    
+    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+    
+    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
+$ git clone https://github.com/<your-github-username>/my-first-blog.git
 
-A forráskódod most már fent van a GitHubon. Menj és nézd meg! Láthatod hogy jó társasága van - [Django][5], a [Django Girls Tutorial][6], és sok más szuper nyílt forráskódú szoftver forráskódja szintén a GitHubon található :)
-
- [5]: https://github.com/django/django
- [6]: https://github.com/DjangoGirls/tutorial
-
-# Tegyük fel a blogot a PythonAnywhere-re
-
-> **Megjegyzés** Valószínűleg már létrehoztál egy PythonAnywhere fiókot korábban a telepítés során - ha így van, ezt nem kell újból megtenned.
-
-{% include "/deploy/signup_pythonanywhere.md" %}
-
-## Forráskód letöltése a PythonAnywhere-be
-
-Amikor bejelentkezel a PythonAnywhere-be, egyből a dashboard-on, vagy "Consoles" oldalon találod magad. Válaszd a "Bash" konzol indítása opciót -- ez a PythonAnywhere konzolja, ugyanolyan, mint a parancssor a gépeden.
-
-> **Megjegyzés** A PythonAnywhere Linux rendszeren alapszik, tehát ha Windows-ot használsz, a konzol egy kissé máshogy fog kinézni a te számítógépeden.
-
-Töltsük be a forráskódodat a GitHubról a PythonAnywhere-be egy "clone" létrehozásával. Írd be az alábbiakat a konzolba a PythonAnywhere-ben (ne felejtsd, hogy a `<your-github-username>` helyébe a saját, GitHubon használt felhasználónevedet helyettesítsd be):
-
-    $ git clone https://github.com/<your-github-username>/my-first-blog.git
+    <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizheted, ha beírod a konzolba, hogy `tree my-first-blog`:
+$ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
 
-    $ tree my-first-blog
-    my-first-blog/
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── migrations
-    │   │   ├── 0001_initial.py
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    <br /><br />### Creating a virtualenv on PythonAnywhere
+    
+    Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-### Virtuális környezet létrehozása a PythonAnywhere-en
-
-Ugyanúgy, ahogy a saját gépeden csináltad, a PythonAnywhere-en is létrehozhatsz virtualenvet. Írd be a Bash konzolba:
-
-{% filename %}PythonAnywhere parancssor{% endfilename %}
-```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.6 myvenv
-Running virtualenv with interpreter /usr/bin/python3.6
-[...]
-Installing setuptools, pip...done.
+$ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.11.0
-Collecting django
-[...]
-Successfully installed django-1.11.3
-```
+(myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-
-> **Megjegyzés** A `pip install` lépés eltarthat pár percig. Légy türelmes! De ha több mint 5 percig tart, akkor valószínűleg valami nincs rendben. Kérdezd meg a coachodat!
-
-<!--TODO: think about using requirements.txt instead of pip install.-->
-
-## Tegyük közzé a blogot a weben!
-
-Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!
-
-Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a **Web** tabra. Végül nyomd meg a **Add a new web app** gombot.
-
-Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi konfiguráció - vigyázz, *ne* a "Django" opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a **Python 3.4**-et, majd nyomd meg a Nextet.
-
-> **Megjegyzés** Fontos, hogy a "Manual configuration" lehetőséget válaszd, ne a "Django"-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)
-
-### Adatbázis létrehozása PythonAnywhere-en
-
-Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző szervert használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.
-
-A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, a `migrate` és `createsuperuser` parancsokkal:
-
-    (mvenv) $ python manage.py migrate
-    Operations to perform:
-    [...]
-      Applying sessions.0001_initial... OK
+    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
     
+    &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
     
-    (mvenv) $ python manage.py createsuperuser
+    ### Creating the database on PythonAnywhere
+    
+    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+    
+    Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-### Virtuális környezet beállítása
+(mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
 
-Most a PythonAnywhere config oldalára kerülsz, ahol különböző dolgokat állíthatsz be az appeddel kapcsolatban. Ha bármit meg szeretnél változtatni később, ide kell visszajönnöd.
+    <br />## Publishing our blog as a web app
+    
+    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    
+    Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+    
+    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+    
+    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    
+    
+    ### Setting the virtualenv
+    
+    You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+    
+    &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
+    
+    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+    
+    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    
+    
+    ### Configuring the WSGI file
+    
+    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+    
+    Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+    
+    Delete all the contents and replace them with the following:
+    
+    {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
+    ```python
+    import os
+    import sys
+    
+    path = os.path.expanduser('~/my-first-blog')
+    if path not in sys.path:
+        sys.path.append(path)
+    
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+    
+    from django.core.wsgi import get_wsgi_application
+    from django.contrib.staticfiles.handlers import StaticFilesHandler
+    application = StaticFilesHandler(get_wsgi_application())
+    
 
-![][7]
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
 
-A "Virtualenv" részben kattints rá a piros szövegre: "Enter the path to a virtualenv", majd írd be: `/home/<your-username>/my-first-blog/myvenv/`. Kattints a kék dobozra a pipajellel, hogy elmentsd a path-t, mielőtt továbblépsz.
+Hit **Save** and then go back to the **Web** tab.
 
-> **Megjegyzés** Helyettesítsd be a saját felhasználóneved. Ha elrontasz valamit, a PythonAnywhere figyelmeztetni fog.
+We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
 
-### A WSGI fájl konfigurálása
+## Debugging tips
 
-A Django a "WSGI protokollt" használja. Ez egy szabvány, ami a Python segítségével kiszolgált weboldalakra érvényes. A PythonAnywhere is támogatja ezt. Ahhoz, hogy a PythonAnywhere felismerje a Django blogunkat, egy WSGI konfigurációs fájlt kell szerkesztenünk.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-Kattints a "WSGI configuration file" linkre (a "Code" szekcióban az oldal tetejénél -- olyasmi neve lesz, hogy `/var/www/<your-username>_pythonanywhere_com_wsgi.py`). Egy kódszerkesztőbe fogsz jutni.
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
-Törölj ki mindent, és cseréld ki valami ilyesmire:
+- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
 
-```python
-import os
-import sys
+- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-path = '/home/<your-username>/my-first-blog'  # itt a saját felhasználónevedet használd!
-if path not in sys.path:
-    sys.path.append(path)
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-from django.core.wsgi import get_wsgi_application
-from django.contrib.staticfiles.handlers import StaticFilesHandler
-application = StaticFilesHandler(get_wsgi_application())
-```
+And remember, your coach is here to help!
 
-> **Megjegyzés** Ne felejtsd el a saját felhasználóneveddel helyettesíteni a `<your-username>`-et!
-> **Megjegyzés** A negyedik sorban gondoskodunk arról, hogy Python megtalálja a programunkat. Fontos, hogy ez az elérési út helyes legyen, és különösen hogy ne legyenek benne fölösleges szóközök. Különben "ImportError" hibát fogsz találni a logfile-ban.
+# You are live!
 
-Ennek a fájlnak az a dolga, hogy megmondja a PythonAnywhere-nek, hol lakik a webes alkalmazásunk, és mi annak a fájlnak a neve, ahol a Django beállításai vannak.
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-A `StaticFilesHandler` a CSS-ünkről gondoskodik. Helyi fejlesztéskor a `runserver` parancs látja el ezt a feladatot. Kicsivel később behatóbban megismerkedünk a statikus file-okkal, amikor a weboldalunk CSS-ét szerkesztjük.
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-Nyomd meg a **Save** (Mentés) gombot, majd menj vissza a **Web** fülre.
-
-Kész is vagyunk! Nyomd meg a nagy zöld **Reload** gombot, és máris meg fogod tudni nézni az alkalmazásodat. Az oldal tetején fogsz találni hozzá egy linket.
-
-## Tippek debuggoláshoz
-
-Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely, ahol információt kaphatsz a debuggoláshoz, az **error log**. Ehhez a PythonAnywhere [Web tab][8]-ján találod meg a linket. Nézd meg, hogy van-e benne bármilyen hibaüzenet; a legfrissebbek lesznek alul. Gyakran előforduló problémák:
-
- [8]: https://www.pythonanywhere.com/web_app_setup/
-
-*   Kihagytad valamelyik lépést a konzolban: a virtualenv létrehozását, aktiválását, a Django installálását a virtualenvben, a collectstatic lefuttatását, az adatbázis migrálását.
-
-*   Valamit elrontottál a virtualenv path-ban a Web fülön -- általában egy piros hibaüzenet jelzi, ha valami gond van.
-
-*   Valamit elrontottál a WSGI konfigurációs fájlban -- jól írtad be a my-first-blog könyvtárhoz vezető elérési útvonalat?
-
-*   Ugyanazt a Python verziót választottad a virtualenved számára, mint az alkalmazásodhoz? Mindkettőnek a 3.4-esnek kell lennie.
-
-*   A [PythonAnywhere wikiben is találsz néhány általános hibakeresési tippet][9].
-
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
-
-És ne feledd, a coachod azért van, hogy segítsen!
-
-# Él a weboldalad!
-
-A honlapod alapértelmezett oldala a "Welcome to Django", ugyanúgy, mint a saját gépeden. Add hozzá az `/admin/`-t az URL végéhez, és az adminfelületre kerülsz. Jelentkezz be a felhasználóneveddel és a jelszavaddal, és látni fogod, hogy itt is tudsz új Postokat létrehozni.
-
-Ha már létrehoztál pár blogpostot, válts vissza a helyi gépedre (nem PythonAnywhere). Ezután a helyi gépeden érdemes dolgoznod. Ez gyakori munkafolyamat webfejlesztéskor - lokális fejlesztés, a változtatások feltöltése GitHub-ra, majd letöltése az éles webszerverre. Ez lehetővé teszi, hogy kisérletezz a éles webszervered elrontása nélkül. Vagány, mi?
-
-Megérdemelsz egy *HATALMAS* vállveregetést! A szerver deployment a webfejlesztés legbonyolultabb részei közé tartozik, és a fejlesztők gyakran napokat töltenek azzal, hogy mindent működésre bírjanak. De neked most komolyan van egy működő weboldalad, az Interneten, és nem is tartott sokáig megcsinálni!
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
