@@ -1,10 +1,10 @@
-# Let’s start with Python
+# Lass uns mit Python anfangen
 
-We're finally here!
+Wir sind endlich da!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Aber lass uns zuerst erklären, was Python ist. Python ist eine sehr beliebte Programmiersprache, die du zur Erstellung von Webseiten, Spielen, wissenschaftlichen Programmen, Computergrafiken und vielem, vielem mehr verwenden kannst.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry – Python is also really powerful!
+Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu sein (nicht nur von Computern). Darum sieht es auch um Längen einfacher als andere Programmmiersprachen aus. This makes it easy to learn, but don't worry – Python is also really powerful!
 
 # Python installation
 
