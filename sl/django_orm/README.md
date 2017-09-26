@@ -1,4 +1,4 @@
-# Django ORM in QuerySets
+# Django ORM and QuerySets
 
 In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
