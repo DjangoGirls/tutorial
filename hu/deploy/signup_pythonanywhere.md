@@ -1,4 +1,4 @@
-Most itt az ideje, hogy létrehozz magadnak egy ingyenes, "Kezdő" ("Beginner") fiókot a PythonAnywhere oldalon.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
