@@ -1,12 +1,12 @@
-# Динамически изменяющиеся данные в шаблонах
+# Dynamic data in templates
 
-Отдельные части уже размещены в нужных местах: модель `Post`, определенна в файле `models.py`, `post_list` - в файле `views.py` и добавлен шаблон. Но как нам отобразить записи в шаблоне HTML-страницы? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-Для этого и предназначены *представления*: соединять между собой модели и шаблоны. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
 OK, so how will we achieve this?
 
-Нам нужно открыть файл `blog/views.py`. Таким образом *представление* `post_list` будет выглядеть следующим образом:
+We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Помнишь мы говорили о включении кода из других файлов? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -58,11 +58,11 @@ def post_list(request):
 
 The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
 
-Пожалуйста, обрати внимание, что мы создали *переменную* для QuerySet: `posts`. Можешь думать о неё как об имени для нашего QuerySet. Теперь мы можем обращаться к нему, используя имя.
+Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-В результате файл `blog/views.py` должен выглядеть следующим образом:
+So finally our `blog/views.py` file should look like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-Вот и все! Теперь пришло время перейти к шаблону и отобразить QuerySet на странице!
+That's it! Time to go back to our template and display this QuerySet!
 
 Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.9/ref/models/querysets/
