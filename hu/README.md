@@ -1,19 +1,22 @@
 # Django Girls Tutorial
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Ez az anyag Creative Commons Attribution-ShareAlike 4.0 International License jogvédelme alatt áll. A licenc megtekintéséhez látogass el ide: https://creativecommons.org/licenses/by-sa/4.0/
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Fordítás
-A tutorial magyar fordítását egy csapat lelkes önkéntes készítette el: Czapári Dóri, Hanna Kollo, Erő Julcsi, Bónis Balázs, Kádár Szilvi, Szelle Erika, Téglássy Anna, Szabó Adrienn, Nádudvari György. Köszönjük nekik! <3
+## Welcome
+
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
 ## Bevezetés
 
-Érezted már úgy hogy a világ egyre inkább a technológiáról szól, és te valahogy kimaradsz belőle? Gondolkoztál már azon, hogyan kell egy weblapot létrehozni, de soha nem volt elég erőd elkezdeni? Érezted úgy, hogy a szoftveres világ túl bonyolult ahhoz, hogy egyáltalán megpróbálj valamit létrehozni benne magadtól?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Gondolkoztál már azon, hogyan kell egy weblapot létrehozni, de soha nem volt elég erőd elkezdeni? Érezted úgy, hogy a szoftveres világ túl bonyolult ahhoz, hogy egyáltalán megpróbálj valamit létrehozni benne magadtól?
 
 Nos, jó hírünk van számodra! A programozás egyáltalán nem olyan nehéz, mint amilyennek tűnik, és mi megmutatjuk, hogy mennyire jó móka tud lenni.
 
-Ez a tutorial nem fog téged egy csapásra programozóvá változtatni. Ha profi akarsz lenni benne, hónapokat vagy akár éveket kell eltöltened tanulással és gyakorlással. De meg szeretnénk mutatni, hogy a programozás, illetve a weblapkészítés nem annyira bonyolult, mint amilyennek tűnik. Megpróbáljuk minél jobban elmagyarázni a különböző részleteket, hogy ne tűnjön annyira ijesztőnek a technológia.
+This tutorial will not magically turn you into a programmer. Ha profi akarsz lenni benne, hónapokat vagy akár éveket kell eltöltened tanulással és gyakorlással. De meg szeretnénk mutatni, hogy a programozás, illetve a weblapkészítés nem annyira bonyolult, mint amilyennek tűnik. Megpróbáljuk minél jobban elmagyarázni a különböző részleteket, hogy ne tűnjön annyira ijesztőnek a technológia.
 
 Reméljük, veled is annyira megszerettetjük a számítógépek világát, mint amennyire mi szeretjük!
 
@@ -23,29 +26,26 @@ A tutorial befejezésével lesz egy egyszerű, működő webes alkalmazásod: a 
 
 Körülbelül így fog kinézni:
 
-![Figure 0.1][2]
+![Figure 0.1](images/application.png)
 
- [2]: images/application.png
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Megkértük a segítőinket és korábbi résztvevőket, hogy legyenek fent, ahogy idejük engedi, és segítsenek másoknak a tutorialban. Kérdezz tőlük bátran!
 
-> Ha egyedül dolgozol a tutorialon és nincs melletted coach, aki segíthetne, ha bármi probléma felmerül, használd a chatet, amit neked tartunk fenn: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Megkértük a segítőinket és korábbi résztvevőket, hogy legyenek fent, ahogy idejük engedi, és segítsenek másoknak a tutorialban. Kérdezz tőlük bátran!
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-Oké, [kezdjük az elejénél...][3]
+## Following the tutorial at home
 
- [3]: ./how_the_internet_works/README.md
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
 
 ## A tutorialról és a közreműködésről
 
-Ezt a tutorialt a [DjangoGirls][4] tartja fenn. Ha bármilyen hibát találsz benne, vagy frissíteni szeretnéd, kérlek kövesd a [közreműködési útmutatót][5].
-
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Szeretnél segíteni lefordítani a tutorialt más nyelvekre?
 
-A fordításokat jelenleg a crowdin.com platformon végezzük:
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Ha a te nyelved nem szerepel a crowdin listán, kérlek [hozz létre egy új issue-t][6], amely megjelöli a nyelvet, hogy hozzáadhassuk.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
