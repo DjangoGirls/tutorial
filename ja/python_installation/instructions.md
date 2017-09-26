@@ -34,7 +34,7 @@ data-collapse=true ces-->
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
-* *Mac OS X 64-bit/32-bit installer* ファイルをダウンロードしてください。
+* Download the *Mac OS X 64-bit/32-bit installer* file,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
