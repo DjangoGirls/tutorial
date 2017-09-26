@@ -4,19 +4,19 @@
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**最初にお友達になるのはコレです。: コマンドライン!**
+**Let us introduce you to your first new friend: the command line!**
 
-プログラマーが黒い画面に向かっている光景を見たことがありますか？ここからは、その黒い画面を触ってみます。最初はちょっとコワイと思うかもしれませんが、そんなことはありません。プロンプトと呼ばれるものがあなたの命令（コマンド）を待っています。
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
 ## What is the command line?
 
-さて、コマンドライン あるいは コマンドライン　インターフェイスと呼ばれるこの画面は、キーボードで入力したテキストで命令を出してコンピューターと直接対話するように、 It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Open the command-line interface
 
-では、実際にコマンドラインを開いて、触ってみることとしましょう。
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -40,7 +40,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 ## Prompt
 
-おそらく今、真っ白または真っ黒な画面が開かれていることでしょう。この画面はあなたの命令を待っています。
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Windowsの方は、 > という記号が表示されていることでしょう。
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,7 +74,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Your first command (YAY!)
 
-では最初は簡単なコマンドを実行してみましょう。次のように入力してみてください。
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +94,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 <!--endsec-->
 
-そして最後にEnterキーを押して下さい。このような結果が返ってきます
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,11 +108,11 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## Basics
 
-OSによってコマンドが若干違います。あなたのコンピューターのOSの方法に従って、以下は進めていってくださいね。次にいってみましょう。
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Current directory
 
-今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードで入力して、Enterキーをおしてください。
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     /Users/olasitarska
     
 
-> 補足: 'pwd' は'print working directory'を意味しており、現在いる作業ディレクトリを取得することです。
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-おそらく、似たようなものがあなたの画面に表示されたのではないでしょうか。コマンドラインを起動した最初は、通常ユーザーのホームディレクトリが表示されます。
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### List files and directories
 
-では、その中には何があるのでしょうか？表示させてみましょう。
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +179,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### Change current directory
 
-次に、デスクトップのディレクトリに移動してみましょう。
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-本当に変更されたかどうか確認してみてください：
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +221,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-できていますね！
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +229,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### Create directory
 
-それでは、Django Girlsのディレクトリをデスクトップに新規作成してみましょう。
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,9 +249,9 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-この短いコマンドで、デスクトップにpracticeという名前の新しいフォルダが作成されました。 あなたのデスクトップを見てフォルダが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド` ls/dir` を使って確認しましょう。 Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> 同じコマンドを何度もなんども入力したくない時は、上下矢印キー↑，↓を押せば、先ほどキーボードから入力したものが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-おめでとうございます！よくできました！
+Congrats! :)
 
 * * *
 
 ### Clean up
 
-練習がおわったら、それをそのままに置いておくと邪魔になりますね。削除しておきましょう。
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-はじめに、作業するディレクトリをデスクトップに戻しましょう。
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-現在の作業ディレクトリを確認しておきましょう。
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-では、practiceディレクトリを削除しましょう。
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## 概要
+## Summary
 
-ここに学んだコマンドをまとめておきます。
+Here is a summary of some useful commands:
 
-| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                         | 例                                                 |
-| -------------- | --------------------- | -------------------------- | ------------------------------------------------- |
-| exit           | exit                  | ウインドウを閉じる                  | **exit**                                          |
-| cd             | cd                    | ディレクトリを変更                  | **cd test**                                       |
-| cd             | pwd                   | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir            | ls                    | ディレクトリ/ファイルの一覧を表示          | **dir**                                           |
-| copy           | cp                    | ファイルのコピー                   | **copy c:\test\test.txt c:\windows\test.txt** |
-| move           | mv                    | ファイルを移動                    | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir          | mkdir                 | 新しいディレクトリを作成               | **mkdir testdirectory**                           |
-| rmdir (or del) | rm                    | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S       | rm -r                 | delete a directory         | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-ここで勉強したのはコマンドのほんの一部でしたが、このワークショップで使うコマンドはこれだけです。
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-もっと勉強したい方は、 ss64.com に各OSのコマンド一覧があります。ご参考までに。
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Ready?
 
-よし、次はPythonを勉強していきましょう!
+Let's dive into Python!
