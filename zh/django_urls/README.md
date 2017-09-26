@@ -1,117 +1,128 @@
-# Django urls
+# Django URLs
 
-我们将要建立第一个网页：你博客的主页！但是首先，让我们先学习一点 Django 的 url 知识。
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-## 什么是 URL？
+## What is a URL?
 
-简单地说，URL 是一个网页地址。 每当你访问一个网站时，你都能在浏览器的地址栏里看到一个 URL。（是的！ `127.0.0.1:8000` 是一个URL！ 同时 `https://djangogirls.org` 也是一个 URL）：
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
-![URL][1]
+![Url](images/url.png)
 
- [1]: images/url.png
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
-每一个互联网的网页都需要自己的 URL。 这样当用户打开一个 URL 时，你的应用程序才知道应该展现什么内容。 在 Django 中，我们使用一种叫做 `URLconf` （URL 配置）的机制 。 URLconf 是一套模式，Django 会用它来把 URL 匹配成相对应的 View。
+## How do URLs work in Django?
 
-## URL 在 Django 中如何工作？
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-使用你喜欢的编辑器打开 `mysite/urls.py` 就能看到它长什么样子了：
+{% filename %}mysite/urls.py{% endfilename %}
 
-    from django.conf.urls import include, url
-    from django.contrib import admin
-    
-    urlpatterns = [
-        # Examples:
-        # url(r'^$', 'mysite.views.home', name='home'),
-        # url(r'^blog/', include('blog.urls')),
-    
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    
+```python
+"""mysite URL Configuration
 
-正如你所看到的，Django 已经为我们放了一些东西在里面。
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
 
-以 `#` 开头的行是注释，这些行都不会被Python运行。是不是很方便呢？
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+]
+```
 
-你在上一章节中学到的 admin 的 URL 已经在里面了：
+As you can see, Django has already put something here for us.
 
-    url(r'^admin/', include(admin.site.urls)),
-    
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-这表示对于每一个以 `admin` 开头的 URL，Django 都会找到一个相对应的 *view*。 在这行代码中，我们包含了许多 admin URL 进来，所以这些 URL 不需要都被打包进这个小文件中。这使得代码更具可读性和简洁性。
+The admin URL, which you visited in previous chapter, is already here:
 
-## 正则表达式
+{% filename %}mysite/urls.py{% endfilename %}
 
-你知道 Django 是如何将 URL 匹配到 view 的吗？ 好吧，这部分很棘手。 Django 使用了 `regex`，这是“正则表达式”的缩写。 正则表达式有很多（非常多！）规则用来形成一个搜索模式。 由于正则表达式是一个比较深入的话题，我们不会太深入讲解它的运行机制。
+```python
+    url(r'^admin/', admin.site.urls),
+```
 
-如果你还是想要了解怎样创建这些模式，下面有一个例子。我们只需要有限的规则的子集，就可以表达出想要的模式，比如：
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-    ^ 表示文本的开始
-    $ 表示文本的结束
-    \d 表示数字
-    + 表示前面的元素应该重复至少一次
-    () 用来捕捉模式中的一部分
-    
+## Regex
 
-其他定义在模式中的部分会保留原本的含义。
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
-现在，想象你有一个网站，其中有一个 URL 类似这样：`http://www.mysite.com/post/12345/`。其中 `12345` 是帖子的编号。
+If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-为每一个帖子都写一个单独的视图是一件会让人恼火的事情。 用正则表达式，我们可以创建一种模式，用来匹配 URL 并提取出帖子编号：`^post/(\d+)/$`。 让我们一步一步将它分解，看看里面做了什么：
+* `^` for the beginning of the text
+* `$` for the end of the text
+* `\d` for a digit
+* `+` to indicate that the previous item should be repeated at least once
+* `()` to capture part of the pattern
 
+Anything else in the URL definition will be taken literally.
 
-* **^post/** 告诉 Django 在 URL 的开头匹配 `post/` (后于 `^`)
-* **(\d+)** 表示 URL 中会有一个数（一位或者多位数字），并且我们想提取出这个数
-* **/** 告诉 Django 后面紧跟着一个 `/` 字符
-* **$** 表示 URL 的末尾，即以 `/<1>` 结尾的 URL 才会被匹配到
+Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-## 你的第一个 Django url！
+Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-是时候创建第一个 URL 了！我们想用 'http://127.0.0.1:8000/' 作为博客的首页，并展示一个帖子列表。
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
+* **/** tells django that another `/` character should follow
+* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
-我们也想保持 `mysite/urls.py` 文件简洁，所以我们从 `blog` 应用导出 urls 到主 `mysite/urls.py` 文件。
-来吧，删除被注释掉的那行（以 `#` 开头的行），然后添加一行代码用于把 `blog.urls` 导入到主 url (`''`).
-    
-你的 `mysite/urls.py` 文件现在应该看起来像这样：
-        
-    from django.conf.urls import include, url
-    from django.contrib import admin
-            
-    urlpatterns = [
-        url(r'^admin/', include(admin.site.urls)),
-        url(r'', include('blog.urls')),
-    ]
-            
-        
-现在，Django 会把访问 'http://127.0.0.1:8000/' 的请求转到 `blog.urls`，并看看那里面有没有进一步的指示。
-        
-写正则表达式时，记得把一个 `r` 放在字符串的前面。 这告诉 Python，这个字符串中的特殊字符是为正则表达式准备的，而不是为 Python 自身准备的。
-        
+## Your first Django URL!
+
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+
+We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
+
+Your `mysite/urls.py` file should now look like this:
+
+{% filename %}mysite/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('blog.urls')),
+]
+```
+
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+
+Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
+
 ## blog.urls
-        
-现在我们创建一个新的 `blog/urls.py` 空文件。好了！加入以下两行：
-        
-    from django.conf.urls import url
-    from . import views
 
-我们仅仅把 Django 的方法以及 `blog` 应用的全部 `views` 导入了进来。（目前什么都没有，但是不超过一分钟就能搞好！） 然后，我们可以加入第一个 URL 模式：
-        
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-    ]
-            
-        
-正如你所见，我们现在分配了一个叫作 `post_list` 的 `view` 到 `^$` 的 URL 上。 这个正则表达会会匹配 `^`（表示开头）并紧随 `$` （表示结尾），所以只有空字符串会被匹配到。 这是正确的，因为在 Django 的 URL 解析器中，'http://127.0.0.1:8000/' 并不是 URL 的一部分。（译注：即只有 'http://127.0.0.1:8000/' 后面的部分会被解析。如果后面的部分为空，即是空字符串被解析。） 这个模式告诉了 Django，如果有人访问 'http://127.0.0.1:8000' 地址，那么 `views.post_list` 是这个请求该去到的地方。
-        
-最后的部分，`name='post_list'` 是 URL 的名字，用来唯一标识对应的 view。 它可以跟 view 的名字一样，也可以完全不一样。 在项目后面的开发中，我们将会使用命名的 URL ，所以在应用中为每一个 URL 命名是重要的。我们应该尽量让 URL 的名字保持唯一并容易记住。
-        
-一切都搞定了？在浏览器里打开 http://127.0.0.1:8000/ ，看看结果。
-        
-![错误][2]
-        
-"It works" 不见了，啊？不要担心，这只是个错误页面，不要被吓到了。它们实际上是非常有用的：
-        
-你会发现有一个 **no attribute 'post_list'** （没有 'post_list' 属性）的错误。 *post_list* 提醒你什么东西了吗？ 这是我们的 view 的名字！ 这表示其他的一切正常，但是我们还没创建这个 *view* 。 不要担心，我们将会抵达那里。
-        
-> 如果你想知识更多关于 Django URLconf 的知识，去官方文档看一看：https://docs.djangoproject.com/en/1.8/topics/http/urls/
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
- [2]: images/error1.png
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import url
+from . import views
+```
+
+Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+
+After that, we can add our first URL pattern:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
+
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+
+![Error](images/error1.png)
+
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
