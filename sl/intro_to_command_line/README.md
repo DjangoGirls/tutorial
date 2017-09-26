@@ -1,22 +1,22 @@
-# Osnove dela z ukazno vrstico
+# Introduction to the command-line interface
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Najprej pa te moramo seznaniti z zelo uporabnim in zabavnim orodjem: ukazno vrstico!**
+**Let us introduce you to your first new friend: the command line!**
 
-Nadaljni koraki te bodo seznanili z uporabo črnega okna, ki ga uporablja vsak pravi heker. Sprva deluje malce nenavadno, vendar je dejansko zgolj program, v katerega vpisuješ ustrezne ukaze.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Kaj je ukazna vrstica?
+## What is the command line?
 
-Okno, ki mu rečemo **ukazna vrstica** ali **ukazna lupina**, je program, ki omogoča raznovrstno delo z datotekami na računalniku, kot je brisanje, pregledovanje, urejanje in dodajanje. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Zagon ukazne vrstice
+## Open the command-line interface
 
-Delo z ukazno vrstico bomo začeli z zagonom le-te.
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -38,13 +38,13 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
-## Ukazna vrstica
+## Prompt
 
-Pred sabo imaš torej odprto črno ali belo okno, ki čaka, da vanj vpišeš ustrezne ukaze.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Če uporabljaš operacijski sistem Mac ali Linux, se prva vrstica v ukazni lupini verjetno začne takole:
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ Pred sabo imaš torej odprto črno ali belo okno, ki čaka, da vanj vpišeš ust
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na operacijskem sistemu Windows pa tako:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,9 +72,9 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Tvoj prvi ukaz :)
+## Your first command (YAY!)
 
-Začnimo z nečim preprostim. Vpiši sledeči ukaz:
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,35 +94,35 @@ Začnimo z nečim preprostim. Vpiši sledeči ukaz:
 
 <!--endsec-->
 
-Nato pritisni `enter`. Rezultat je približno tak:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
     $ whoami
-    ana
+    olasitarska
     
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Osnove
+## Basics
 
-Vsak operacijski sistem ima malce različen nabor ukazov v ukazni vrstici, zato se vedno prepričaj, da spremljaš navodila za svoj operacijski sistem.
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Trenutni imenik
+### Current directory
 
-Če želimo delati z datotekami, bi bilo za začetek uporabno vedeti, v katerem direktoriju se nahajamo. Vpiši sledeči ukaz in pritisni `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/ana
+    /Users/olasitarska
     
 
-> Opomba: 'pwd' pomeni 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -131,20 +131,20 @@ Vsak operacijski sistem ima malce različen nabor ukazov v ukazni vrstici, zato 
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Uporabniki\ana
+    C:\Users\olasitarska
     
 
 > Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
-Nekaj podobnega si verjetno dobila tudi ti. Ko odpreš ukazno vrstico, je tvoj imenik običajno enak domačemu imeniku prijavljenega uporabnika.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Izpis datotek in imenikov
+### List files and directories
 
-Bi rada izpisala vse imenike in datoteke, ki so v tvojem trenutnem imeniku? To narediš takole:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -165,11 +165,11 @@ Bi rada izpisala vse imenike in datoteke, ki so v tvojem trenutnem imeniku? To n
 {% filename %}command-line{% endfilename %}
 
     > dir
-     Directory of C:\Uporabniki\ana
-    05/08/2014 07:28 PM <DIR>      Aplikacije
-    05/08/2014 07:28 PM <DIR>      Namizje
-    05/08/2014 07:28 PM <DIR>      Prenosi
-    05/08/2014 07:28 PM <DIR>      Glasba
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
     ...
     
 
@@ -177,9 +177,9 @@ Bi rada izpisala vse imenike in datoteke, ki so v tvojem trenutnem imeniku? To n
 
 * * *
 
-### Sprememba imenika
+### Change current directory
 
-Premaknimo se v imenik Namizje:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -194,19 +194,19 @@ Premaknimo se v imenik Namizje:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Namizje
+    > cd Desktop
     
 
 <!--endsec-->
 
-Preveri, če si se res premaknila:
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/ana/Desktop
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -216,26 +216,26 @@ Preveri, če si se res premaknila:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Uporabniki\ana\Namizje
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Deluje! Super!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Ustvarjanje imenika
+### Create directory
 
-Kako pa bi ustvarili nov imenik? Recimo takole:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir vaja
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -244,28 +244,28 @@ Kako pa bi ustvarili nov imenik? Recimo takole:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir vaja
+    > mkdir practice
     
 
 <!--endsec-->
 
-Ta ukaz bo naredil nov imenik z imenom `vaja` znotraj našega trenutnaga imenika. To lahko preveriš tako, da vpišeš ukaz `ls` oziroma `dir`, ali pa greš pogledat v imenik s pomočjo programa Finder oziroma Explorer! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> UPORABEN namig: Če nočeš vedno znova vpisovati istega ukaza, lahko s pomočje pritiskanja puščic `gor` in `dol` na tipkovnici, pregledaš nedavno uporabljene ukaze.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Vaja!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Rešitev:
+#### Solution:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd vaja
+    $ cd practice
     $ mkdir test
     $ ls
     test
@@ -277,7 +277,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd vaja
+    > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Čestitke! :)
+Congrats! :)
 
 * * *
 
-### Čistka :)
+### Clean up
 
-Ustvarjenih imenikov ne potrebujemo več, zato jim odstranimo.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Za začetek se pomaknimo nazaj v nadrejeni imenik:
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,14 +315,14 @@ Za začetek se pomaknimo nazaj v nadrejeni imenik:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Preverimo našo lokacijo:
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/ana/Desktop
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -332,12 +332,12 @@ Preverimo našo lokacijo:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Uporabniki\ana\Namizje
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Pripravljeni smo za odstranitev imenika `vaja`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Pripravljeni smo za odstranitev imenika `vaja`:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r vaja
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -354,13 +354,13 @@ Pripravljeni smo za odstranitev imenika `vaja`:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S vaja
-    vaja, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Končano! Preverimo imenik:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +380,7 @@ Končano! Preverimo imenik:
 
 <!--endsec-->
 
-### Izhod
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Povzetek
+## Summary
 
-Tu je še povzetek nekaterih uporabnih ukazov:
+Here is a summary of some useful commands:
 
-| Ukaz (Windows) | Ukaz (Mac OS/ Linux) | Opis                                                   | Primer                                            |
-| -------------- | -------------------- | ------------------------------------------------------ | ------------------------------------------------- |
-| exit           | exit                 | zapri okno                                             | **exit**                                          |
-| cd             | cd                   | spremeni imenik                                        | **cd test**                                       |
-| cd             | pwd                  | show the current directory                             | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir            | ls                   | izpiši imenike/datoteke, vsebovane v trenutnem imeniku | **dir**                                           |
-| copy           | cp                   | kopiraj datoteko                                       | **copy c:\test\test.txt c:\windows\test.txt** |
-| move           | mv                   | premakni datoteko                                      | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir          | mkdir                | ustvari nov imenik                                     | **mkdir testniimenik**                            |
-| rmdir (or del) | rm                   | delete a file                                          | **del c:\test\test.txt**                        |
-| rmdir /S       | rm -r                | delete a directory                                     | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-To je le nekaj osnovnih ukazov za ukazno vrstico. Drugih danes ne boš potrebovala.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Če ti je bilo to poglavje zanimivo in bi rada izvedela še kaj več, imaš na strani [ss64.com](http://ss64.com) seznam vseh ukazov za vse operacijske sisteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Pripravljena?
+## Ready?
 
-Začnimo s programskim jezikom Python!
+Let's dive into Python!
