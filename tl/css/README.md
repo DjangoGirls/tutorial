@@ -1,14 +1,14 @@
 # CSS – make it pretty!
 
-Pangit pa ang ating kasalukuyang blog, hindi ba? Oras na para pagandahin ito! Gagamitin natin ang CSS para riyan.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## Ano ang CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Gamitin natin ang Bootstrap!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
@@ -29,9 +29,9 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Gumaganda na siya!
+Looking nicer already!
 
-## Static Files sa Django
+## Static files in Django
 
 Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
@@ -50,9 +50,9 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Ang iyong unang CSS file!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Gumawa ng bagong directory na `css` sa loob ng iyong `static` directory. Pagkatapos, gumawa ka ng bagong file na `blog.css` sa loob nitong `css` directory mo. Handa ka na ba?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -65,7 +65,7 @@ Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Pero gumawa naman tayo kahit kaunti lang. Siguro maaari nating baguhin ang kulay ng header? Para maunawaan ang mga kulay, ang kompyuter ay sumusunod sa mga special codes o mga numero at letra na nagsisimbolo ng kulay. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
