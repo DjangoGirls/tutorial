@@ -1,4 +1,4 @@
-# Tutorial Django Girl
+# Django Girls Tutorial
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -10,25 +10,25 @@ Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tu
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Pengenalan
+## Introduction
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Pernahkan anda bertanya-tanya bagaimana caranya membangun sebuah website akan tetapi anda tidak pernah punya motivasi untuk memulainya? Pernahkah anda berpikir bahwa dunia software itu terlalu rumit untuk anda dan bahkan hanya untuk sekedar coba-coba sendiri ?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Baik, kami punya kabar baik untuk anda! Pemrograman tidaklah sesulit seperti yang anda bayangkan dan kami akan memperlihatkan bahwa pemrograman dapat menjadi pekerjaan yang menyenangkan.
+Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
-This tutorial will not magically turn you into a programmer. Jika anda ingin menjadi hebat dalam pemrograman, mungkin anda perlu waktu berbulan-bulan atau bahkan bertahun-tahun dalam mempelajarinya. Akan tetapi kami ingin memperlihatkan kepada anda bahwa pemrograman atau menciptakan website tidaklah serumit yang kita kira. Kami akan mencoba menjelaskan segala sesuatunya sebisa kami, sehingga anda tidak akan merasa terbebani oleh teknologi.
+This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-Kami berharap bahwa kami akan dapat membuat anda mencintai teknologi sebagaimana kami juga mencintainya.
+We hope that we'll be able to make you love technology as much as we do!
 
-## Apa yang akan anda pelajari dalam tutorial ini?
+## What will you learn during the tutorial?
 
-Ketika anda selesai dengan tutorial ini, anda akan memiliki blog sederhana dan aplikasi web yang berjalan. Kami akan menunjukkan kepada anda bagaimanan menjadikannya online sehingga orang lain akan dapat melihat pekerjaan anda!
+Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-Hasilnya kurang lebih akan seperti ini:
+It will (more or less) look like this:
 
-![Gambar 0.1](images/application.png)
+![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Kami meminta kepada pelatih kami dan peserta sebelumnya untuk masuk ke sana untuk membantu orang lain mempelajari tutorial ini! Jangan sungkan untuk bertanya di sana!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
@@ -38,11 +38,11 @@ It is amazing to take part in a Django Girls workshop, but we are aware that it 
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## Tentang Tutorial Ini dan Bagaimana Cara Berkontribusi
+## About and contributing
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Bersediakan anda membantu kami untuk menerjemahkan tutorial ini kedalam bahasa lain?
+## Would you like to help us translate the tutorial to other languages?
 
 Currently, translations are being kept on crowdin.com platform at:
 
