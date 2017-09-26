@@ -1,8 +1,10 @@
-# Администрирование Django
+# Django admin
 
-Чтобы добавлять, редактировать и удалять записи, для которых мы только сделали модель, нам потребуется использовать права администратора в Django.
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Давай откроем файл `blog/admin.py` и заменим его содержимое на:
+Let's open the `blog/admin.py` file and replace its contents with this:
+
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
 from django.contrib import admin
@@ -10,17 +12,20 @@ from .models import Post
 
 admin.site.register(Post)
 ```
-    
 
-Как ты можешь заметить, мы импортировали (включили) модель Post, которая была определена в предыдущей главе. Чтобы наша модель стала доступна на странице администрирования, нам нужно зарегистрировать её при помощи `admin.site.register(Post)`.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Хорошо, теперь нам нужно взглянуть на модель Post. Не забудь запустить веб-сервер командой `python manage.py runserver`. Перейди в браузер и набери адрес http://127.0.0.1:8000/admin/ Ты увидишь страницу авторизации:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Страница авторизации][1]
+![Login page](images/login_page2.png)
 
- [1]: images/login_page2.png
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-Чтобы залогиниться, тебе сначала нужно создать *суперпользователя (англ. superuser)* - пользователя, который имеет полный доступ к управлению сайтом. Вернись к командной строке, набери `python manage.py createsuperuser`, и нажми Enter. При появлении запроса введи имя пользователя (строчными буквами, без пробелов), адрес электронной почты и пароль. Не беспокойся, если пароль не появляется на экране по мере ввода, так и задумано. Просто напечатай его и нажмите `Enter`, чтобы продолжить. Результат должен выглядеть следующим образом (имя пользователя и почта соответственно будут твоими):
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
@@ -30,20 +35,16 @@ admin.site.register(Post)
     Superuser created successfully.
     
 
-Вернись в браузер и войди в систему при помощи имени пользователя и пароля, которые ты только что выбрала. Ты должна попасть в панель управления Django.
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-![Администрирование Django][2]
+![Django admin](images/django_admin3.png)
 
- [2]: images/django_admin3.png
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 
-Перейди к разделу Posts и немного поэкспериментируй с ним. Добавь пять или шесть постов. Не беспокойся о содержании - можешь просто скопировать и вставить текст из этого учебника, чтобы сэкономить время :).
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
-Убедись, что выбрала для двух или трех записей (но не больше) дату публикации. Это пригодится позднее.
+![Django admin](images/edit_post3.png)
 
-![Администрирование Django][3]
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
- [3]: images/edit_post3.png
-
-Если ты хочешь узнать больше об администрировании Django, то ознакомься с этим разделом официальной документации: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
-
-Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создала свою первую Django модель и заслужила перерыв!
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
