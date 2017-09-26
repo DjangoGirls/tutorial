@@ -1,4 +1,4 @@
-# Django Admin
+# Django admin
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
@@ -37,13 +37,13 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-![Django Admin](images/django_admin3.png)
+![Django admin](images/django_admin3.png)
 
 Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
-![Django Admin](images/edit_post3.png)
+![Django admin](images/edit_post3.png)
 
 If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
