@@ -1,16 +1,16 @@
-# あなたの最初のDjangoプロジェクト！
+# Your first Django project!
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-ここからは、シンプルなブログを作っていきますよ！
+We're going to create a simple blog!
 
-最初のステップは、Djangoのプロジェクトを新しく作成します。 基本的に、Djangoのスクリプトを実行しDjangoプロジェクトの骨格を作ります。 スクリプトは、これから使う沢山のファイルやディレクトリを自動生成します。
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-Djangoでは、ファイルやディレクトリの名前がとても重要です。 作成されたファイルの名前は変えるべきではありません。 ファイルを移動させるのもいいアイディアとはいえません。 Djangoでは、重要なファイルを決められたファイル構成で作成しておくことが必要です。 
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> virtualenv（仮想環境）を実行しているでしょうか。 If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. チャプターDjango installationのWorking with virtualenv で、仮想環境を実行する方法を説明しました。 Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -42,7 +42,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 <!--endsec-->
 
-django-admin.py は、必要なディレクトリとファイルを作成するスクリプトです。次のようなファイル構造が作成されましたね。:
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
     ├───manage.py
@@ -63,7 +63,7 @@ Remember when we talked about a mail carrier checking where to deliver a letter?
 
 Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
-## 設定変更
+## Changing settings
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
