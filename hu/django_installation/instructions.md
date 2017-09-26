@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. A django-marcador tutorial jogait, Markus Zapke-Gründemann és társai birtokolják.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Virtuális környezet
+## Virtual environment
 
-Mielőtt feltelepítjük a Django-t, egy rettentő hasznos eszközt fogunk installálni, ami segít, hogy a kódolói környezetedet rendben tartsa a számítógépeden. Át lehet ugrani ezt a lépést, de nem ajánlott. Ha a lehető legjobb kiindulási helyzetből kezded a kódolást, sok bosszúságot megspórolhatsz magadnak a jövőben!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-Tehát először is hozzunk létre egy **virtuális környezetet** (virtual environment), amit *virtualenv*-nek is hívunk. A virtualenv projektenként különíti el a Python/Django környezetet. Ez azt jelenti, hogy ha megváltoztatsz valamit egy weboldalon, az nem lesz hatással a többi weboldalra, amit párhuzamosan fejlesztesz. Jó, igaz?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-Csak annyit kell tenned, hogy kiválasztasz egy könyvtárat, ahova a `virtualenv`et szeretnéd telepíteni, például a home könyvtárat. Windowson ez így nézhet ki: `C:\Users\Name` (ahol a `Name` a felhasználód neve).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-Ehhez a tutorialhoz egy új, `djangogirls` nevű mappát fogunk használni a home könyvtáradon belül:
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ Ehhez a tutorialhoz egy új, `djangogirls` nevű mappát fogunk használni a hom
     $ cd djangogirls
     
 
-Most pedig létrehozunk egy `myvenv` nevű virtuális környezetet. A kód általánosan így néz ki:
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,21 +37,21 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Bármi más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
 <!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-A `virtualenv` létrehozása Linux és OS X környezetben is csak annyiból áll, hogy a `python3 -m venv myvenv` parancsot futtatod. Így fog kinézni:
+Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -74,7 +74,7 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> Hogy ezt elkerüld, használd a `virtualenv` parancsot.
+> To get around this, use the `virtualenv` command instead.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,14 +98,14 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 
 <!--endsec-->
 
-## Hogyan dolgozhatsz virtuális környezetben
+## Working with virtualenv
 
-A fenti parancs létrehozott egy `myvenv` nevű (vagy bármi más név, amit választottál) könyvtárat, ami a virtuális környezetünket tartalmazza (ez tulajdonképpen csak egy csomó könyvtár és fájl).
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
 <!--sec data-title="Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Így indíthatod el a virtuális környezetet:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ data-collapse=true ces-->
 <!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Így indíthatod el a virtuális környezetet:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Fontos, hogy `myvenv` helyett azt a neved írd be, amit a `virtualenv`-ednek választottál!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **MEGJEGYZÉS:** néha a `source` nem elérhető. Ebben az esetben próbáld meg ezt:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -148,9 +148,9 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Oké, most már minden feltétel teljesült. Végre installálhatjuk a Django-t!
+OK, we have all important dependencies in place. We can finally install Django!
 
-## A Django telepítése
+## Installing Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ha Ubuntu 12.04 alatt hibát kapsz, amikor a pip-et próbálod hívni, futtasd a `python -m pip install -U --force-reinstall pip` parancsot, hogy megjavítsd a virtualenv-ben a pip feltelepített verzióját.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-Ennyi! Most pedig (végre) létrehozhatod a Django alkalmazásodat!
+That's it! You're now (finally) ready to create a Django application!
