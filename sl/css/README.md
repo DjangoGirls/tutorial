@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Naš blog zaenkrat nima ravno elegantnega videza. Čas je, da ga polepšamo! Uporabili bomo CSS.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## Kaj je CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Uporabimo Bootstrap!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Namestitev Bootstrapa
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,17 +29,17 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Malo bolje je že!
+Looking nicer already!
 
-## Djangove statične datoteke
+## Static files in Django
 
-Podrobneje si poglejmo že omenjene, famozne **statične datoteke**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Kje v Djangu živijo statčne datoteke
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-To narediš tako, da, znotraj aplikacije blog, ustvariš nov imenik z imenom `static`:
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -50,9 +50,9 @@ To narediš tako, da, znotraj aplikacije blog, ustvariš nov imenik z imenom `st
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Prvi koraki v jeziku CSS!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Najprej naredi nov imenik z imenom `css`, v njem pa še enega z imenom `static`. Nato znotraj imenika `css` ustvari novo css datoteko `blog.css`. Pripravljena?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. Najprej nar
                    └─── blog.css
     
 
-Končno lahko začnemo s pisanjem CSS kode! V svojem urejevalniku odpri prej ustvarjeno datoteko `blog/static/css/blog.css`.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Malce pa si vseeno poglejmo že zdaj. Si želiš recimo spremeniti barvo glave tvojega bloga? Za barve računalniki uporabljajo posebne kode. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-V datoteko `blog/static/css/blog.css` dodaj sledečo kodo:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` je oznaka, ki pove, kateri del HTML kode želimo s CSS kodo, ki oznaki sledi, spremeniti. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Koda, ki je znotraj zavitih oklepajev, bo spremenila barvo pisave v `#FCA205`, ki je odtenek oranžne. Barvo lahko seveda izbereš tudi po lastnem okusu!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-V datoteki CSS bomo torej določili slog za vsak del HTML kode. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class in id sta oznaki, ki ju za nek element določiš sama. Oznaka class opisuje skupino značk, id pa le eno samo značko. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. S tem smo predlogi uspešno povedali, kje živi naš CSS. :)
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-Naša CSS datoteka trenutno zgleda takole:
+Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -134,11 +134,11 @@ Naša CSS datoteka trenutno zgleda takole:
 </html>
 ```
 
-OK, datoteko shrani in v brskalniku osveži spletno stran!
+OK, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
-Odlično! Dodajmo strani še malo zamika na levi in desni.
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -152,7 +152,7 @@ Add that to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-Kako pa bi spremenili vrsto pisave našega besedila? Znotraj značke `<head>` v datoteki `blog/templates/blog/post_list.html` dodaj:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -175,11 +175,11 @@ h1 a {
 
 ![Figure 14.3](images/font.png)
 
-Odlično!
+Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Poimenuj par delov svoje HTML kode. Za začetek dodaj razred z imenom `glava` znački `div`, ki vsebuje glavo spletne strani.
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +189,7 @@ Poimenuj par delov svoje HTML kode. Za začetek dodaj razred z imenom `glava` zn
 </div>
 ```
 
-Znački `div`, ki vsebuje objavo na blogu, dodaj razred `objava`.
+And now add a class `post` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ Znački `div`, ki vsebuje objavo na blogu, dodaj razred `objava`.
 </div>
 ```
 
-Zdaj lahko opisanim delom strani dodamo CSS kodo, ki bo določala oblikovanje le-teh. Koda, ki opisuje določen razred, se bo vedno začela z znakom `.` in takoj zatem imenom razreda. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Za nas pa bo zaenkrat zadoščalo zgolj prekopiranje sledeče kode v datoteko `blog/static/css/blog.css`.
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Dodane CSS razrede moramo dodati še v našo HTML kodo. Zamenjaj tale del kode:
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -268,7 +268,7 @@ Dodane CSS razrede moramo dodati še v našo HTML kodo. Zamenjaj tale del kode:
 {% endfor %}
 ```
 
-, ki se nahaja v datoteki `blog/templates/blog/post_list.html`, s sledečo kodo:
+in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -290,7 +290,7 @@ Dodane CSS razrede moramo dodati še v našo HTML kodo. Zamenjaj tale del kode:
 </div>
 ```
 
-Shrani datoteko in osveži spletno stran.
+Save those files and refresh your website.
 
 ![Figure 14.4](images/final.png)
 
@@ -300,4 +300,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Pripravljena na naslednje poglavje?! :)
+Ready for the next chapter?! :)
