@@ -1,14 +1,14 @@
-# Django obrazci
+# Django Forms
 
-Naš zadnji korak je ustvariti enostaven način za dodajanje in urejanje vnosov. `Admin` v Django je odličen, ampak težko prilagodljiv. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-Z obrazci Django lahko definiramo povsem nov obrazec ali pa ustvarimo `ModelForm`, ki vnos v obrazec shrani v model.
+The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
-To pa je naravnost to, kar želimo storiti: ustvarili bomo obrazec za našo objavo - `Post`.
+This is exactly what we want to do: we will create a form for our `Post` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
-V imeniku `Blog` ustvarimo datoteko s tem imenom.
+We need to create a file with this name in the `blog` directory.
 
     blog
        └── forms.py
@@ -32,19 +32,19 @@ class PostForm(forms.ModelForm):
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-Kot ste najbrž že uganili je `PostForm` ime našega obrazca. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
-Na koncu še določimo polje oziroma polja, ki jih bodo v našem obrazcu. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-To je vse! Edino kar nam sedaj še preostane je, da obrazec uporabimo v *view* in ga prikažemo v predlogi.
+And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Povezava do strani z obrazcem
+## Link to a page with the form
 
-Čas je da odpremo `blog/templates/blog/base.html`. Dodali bomo elemnt `div`, ki ga bomo poimenovali `page-header`:
+It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Sedaj ste shranili in osvežili stran na naslovu http://127.0.0.1:8000 in ponovno se je pojavila dobro znana `NoReverseMatch`.
+After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
 ## URL
 
-Odprite `blog/urls.py` in dodajte to vrstico:
+We open `blog/urls.py` and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ Odprite `blog/urls.py` in dodajte to vrstico:
 url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
-Vaša koda je seda:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have the `
 
 ## post_new view
 
-Odprite datoteko `blog/views.py` in vpišite spodnje vrstice skupaj z vrsticami `from`:
+Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,16 +134,16 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Če želite ustvariti nov obrazec `Post`, moramo zagnati `PostForm()` in ga posredovati predlogi. We will go back to this *view*, but for now, let's quickly create a template for the form.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Predloga
+## Template
 
-Ustvariti v imeniku `blog/templates/blog` ustvarite datoteko `post_edit.html`. Da bo obrazec deloval, moramo narediti naslednje:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) a simple {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. S tem zavarujemo naš obrazec! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -163,7 +163,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Osvežite stran! To! Vaš obrazec se pravilno prikaže!
+Time to refresh! Yay! Your form is displayed!
 
 ![New form](images/new_form2.png)
 
@@ -173,7 +173,7 @@ Nothing! We are once again on the same page and our text is gone… and no new p
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
-## Shranjevanje obrazca
+## Saving the form
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Vsa polja obrazca so sedaj v `request.POST`. Ne preimenujte `post` (edina druga dovoljena `metoda` je `GET` - žal nimamo časa, da bi se poglobili v razlike).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
@@ -208,7 +208,7 @@ form = PostForm(request.POST)
 
 Easy! The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Preverimo, ali je obrazec veljaven. Če je, lahko shranimo podatke!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
