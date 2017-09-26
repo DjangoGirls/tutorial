@@ -1,18 +1,18 @@
 # Django templates
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template Tags** mit.
 
-## What are template tags?
+## Was sind Template Tags?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-## Display post list template
+## Anzeigen des Post-List-Templates
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Im vorangegangen Kapitel haben wir unserem Template in der `posts`-Variable eine Liste von Posts übergeben. Diese wollen wir jetzt in HTML anzeigen.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, geschweifte Klammern mit dem Namen der Variable darin, so wie hier:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@ This means that Django understands it as a list of objects. Remember from **Intr
 
 ```html
 {% for post in posts %}
-    {{ post }}
+    {{ post }}
 {% endfor %}
 ```
 
@@ -70,7 +70,7 @@ It works! But we want the posts to be displayed like the static posts we created
 
 Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## One more thing
+## Und zum Schluss
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
