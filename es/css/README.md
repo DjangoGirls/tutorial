@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Nuestro blog todavía se ve bastante feo, ¿verdad? ¡Es hora de hacerlo bonito! Vamos a usar CSS para eso.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## ¿Qué es CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## ¡Vamos a usar Bootstrap!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Instalar Bootstrap
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,17 +29,17 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-¡Se ve mucho mejor!
+Looking nicer already!
 
-## Archivos estáticos en Django
+## Static files in Django
 
-Finalmente nos vamos a fijar en estas cosas que hemos estado llamando **archivos estáticos**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Dónde poner los archivos estáticos para Django
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la aplicación que llamamos blog:
+We do that by creating a folder called `static` inside the blog app:
 
     djangogirls
     ├── blog
@@ -50,9 +50,9 @@ Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la 
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## ¡Tu primer archivo CSS!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Crea un nuevo directorio llamado `css` dentro de tu directorio `static`. Después crea un nuevo archivo llamado `blog.css` dentro de este directorio `css`. ¿Lista?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
@@ -61,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. Crea un nue
                    └─── blog.css
     
 
-¡Es hora de escribir algo de CSS! Abre el archivo `blog/static/css/blog.css` en tu editor de código.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Pero vamos a hacer al menos un poco. ¿Tal vez podremos cambiar el color de nuestro título? Los ordenadores utilizan códigos especiales para entender los colores. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-En tu archivo `blog/static/css/blog.css` deberías agregar el siguiente código:
+In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` es un selector CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. En este caso le estamos diciendo que cambie el color a `#FCA205`, que es naranja. Por supuesto, ¡puedes poner tu propio color aquí!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-En el archivo CSS se definen los estilos de los elementos que se encuentran en el archivo HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. "class" y "id" son nombres que le asignas tú misma al elemento. Las "class" definen grupos de elementos y los "id" apuntan a elementos específicos. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Le acabamos de decir a nuestra plantilla dónde se encuentra nuestro archivo CSS.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-Ahora tu archivo debe tener este aspecto:
+Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -134,11 +134,11 @@ Ahora tu archivo debe tener este aspecto:
 </html>
 ```
 
-De acuerdo, ¡guarda el archivo y actualiza el sitio!
+OK, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
-¡Buen trabajo! ¿Tal vez nos gustaría también dar un poco de aire a nuestro sitio web y aumentar el margen en el lado izquierdo?. ¡Vamos a intentarlo!
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -152,7 +152,7 @@ Add that to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-¿Quizá podríamos personalizar la tipografía del título? Pega esto en la sección `<head>` del archivo `blog/templates/blog/post_list.html`:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -175,11 +175,11 @@ h1 a {
 
 ![Figure 14.3](images/font.png)
 
-¡Genial!
+Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Adelante, nombra algunas partes del código HTML. Añade una clase llamada `page-header` a tu `div` que contiene el encabezado, así:
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +189,7 @@ Adelante, nombra algunas partes del código HTML. Añade una clase llamada `page
 </div>
 ```
 
-Y ahora añade una clase `post` a tu `div` que contiene una entrada del blog.
+And now add a class `post` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ Y ahora añade una clase `post` a tu `div` que contiene una entrada del blog.
 </div>
 ```
 
-Ahora añadiremos bloques de declaración a diferentes selectores. Los selectores que comienzan con `.` hacen referencia a clases. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Por ahora, simplemente copia y pega este bloque de código en tu archivo `blog/static/css/blog.css`:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Luego envuelve el código HTML que muestra los posts con declaraciones de clases. Cambia esto:
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -268,7 +268,7 @@ Luego envuelve el código HTML que muestra los posts con declaraciones de clases
 {% endfor %}
 ```
 
-en `blog/templates/blog/post_list.html` con esto:
+in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -290,7 +290,7 @@ en `blog/templates/blog/post_list.html` con esto:
 </div>
 ```
 
-Guarda estos archivos y actualiza tu sitio.
+Save those files and refresh your website.
 
 ![Figure 14.4](images/final.png)
 
@@ -300,4 +300,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-¡¿Lista para el siguiente capítulo?! :)
+Ready for the next chapter?! :)
