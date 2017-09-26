@@ -1,82 +1,51 @@
-# Django Girls 教程
+# Django Girls Tutorial
 
- [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> 这项工作是根据公共创意贡献署名国际协议4.0的要求完成的。若要查看本许可证的副本，请访问https://creativecommons.org/licenses/by-sa/4.0/
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## 介绍
+## Welcome
 
-你有没有觉得世界越来越多的是关于技术，而你已经在某种程度上被甩在了后面？ 你有没有想去做一个网站，但是却从未有过足够的动力去开始吗? 你有没有想过软件世界太过复杂，即使你想做一些属于自己的东西？
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-好的，我们跟你讲一个好消息！编程没有看上去那么复杂，我们将给你展示它是多么的有趣。
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-本教程不会神奇地将你转变为程序员。 如果你想变得擅长于此，你需要数月乃至数年的时间去学习和练习。 但是我们想展示给你编程和创建网站没有看起来那么复杂。 我们试着用深入浅出的方法解释，所以你不会觉得被技术吓到。
+## Introduction
 
-我们希望我们可以让你变得更爱技术，像我们一样！
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-## 在本教程里你会学到什么？
+Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
-一旦你完成本教程，你会有一个简单可用的web应用：你自己的博客。我们会教你怎么把它放到网上，这样别人就能看到你的作品！
+This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-它将（或多或少）看起来像这个样子：
+We hope that we'll be able to make you love technology as much as we do!
 
-![图0.1][2]
+## What will you learn during the tutorial?
 
- [2]: images/application.png
+Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-> 如果你独自学习这个教程而苦于没有一位能帮你答疑解惑的的教练，我们给你提供交流的平台：[![Gitter](https://badges.gitter.im/Join Chat.svg)][1]。 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
+It will (more or less) look like this:
 
-好嘞，[我们从头开始...][3]
+![Figure 0.1](images/application.png)
 
- [3]: ./how_the_internet_works/README.md
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-## 关于和贡献
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-这个教程由[DjangoGirls][4]维护。 如果你发现本网有任何错误或想更新教程，请按照 [贡献指导][5]行动.
+## Following the tutorial at home
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/Contributing.md
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-## 中文版的项献者
+In every chapter already covered, there is a link that points to the correct video.
 
-本教程的中文版由下列人员参与翻译,按名字首字母排名:
-- Abraham Kan (abrahamkan)
-- adv_zxy
-- BigBagBOOM
-- c2j
-- classicalmu (zhanyanqiao)
-- cnbabylinke
-- Javen (javen_liu)
-- jeff kit (bbmyth)
-- Joker Qyou (Joker_Qyou)
-- Kate Chan (kateismex0)
-- liuzhongjun
-- meelo
-- neal1991
-- neoblackcap
-- olasitarska
-- pchnet
-- rurong (defrur)
-- Shit_JinP
-- suusatoshigi (SuuSatoshigi)
-- wangjiaxi
-- wangshunping
-- wly522
-- yinhm
-- yobo (yfrancesc)
-- Yue Du (ifduyue)
-- zhangyi2099
-- Zhiheng Lin (onlyice0328)
-- 刘奕聪(MrLYC)
-- 芝加哥中文Meetup (chicagochinesemeetup)
-- 陈艺虹(laceychen1993) 
+## About and contributing
 
-## 你愿意帮我们翻译将本教程至其他语言吗？
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-目前，所有的翻译都储存于crowdin.com的平台，网址是:
+## Would you like to help us translate the tutorial to other languages?
+
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-如果你在crowdin的列表里没看到自己的语言，请以[新开issue][6]的方式通知我们，以便我们加进去。
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
