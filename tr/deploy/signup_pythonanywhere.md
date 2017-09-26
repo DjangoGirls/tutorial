@@ -1,4 +1,4 @@
-Sırada PythonAnywhere sitesinde bedava bir "Beginner" ( yeni başlayan) hesabı açma işi var.
+Next it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
