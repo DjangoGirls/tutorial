@@ -2,13 +2,13 @@
 
 Time to get rid of the bug we created in the last chapter! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Datei `blog/views.py` hinzu.
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+OK, wir öffnen nun diese Datei und schauen was darin steht:
 
 {% filename %}blog/views.py{% endfilename %}
 
