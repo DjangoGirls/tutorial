@@ -1,8 +1,8 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Egyelőre nem túl szép a blogunk, igaz? Itt az ideje, hogy kicsinosítsd! Erre a CSS-t fogjuk használni.
 
-## What is CSS?
+## Mi a CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
@@ -14,7 +14,7 @@ Bootstrap is one of the most popular HTML and CSS frameworks for developing beau
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## Bootstrap telepítés
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -39,35 +39,35 @@ Finally we will take a closer look at these things we've been calling **static f
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog applikáción belül:
 
     djangogirls
-    ├── blog
-    │   ├── migrations
-    │   └── static
-    └── mysite
+     ├── blog
+     │ ├── migrations
+     │ └── static 
+     └── mysite
     
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## Az első CSS fájlod!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. Hozz létre egy `css` nevű könyvtárat a `static` könyvtárban! Majd hozz létre egy új fájlt `blog.css` néven a `css` könyvtárban. Kész vagy?
 
     djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
+     └─── blog
+         └─── statikus
+             └─── css
+                 └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Itt az ideje, hogy a CSS fájlunkba írjunk is valamit! Nyisd meg a `blog/static/css/blog.css` fájlt a kódszerkesztődben.
 
 We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a címsor színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. [Előre meghatározott színeket](http://www.w3schools.com/colors/colors_names.asp) is használhatsz, mint a `red` vagy a `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+A `blog/static/css/blog.css` fájlba írd bele a következő kódot:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -77,9 +77,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Természetesen nyugodtan használd a saját színedet itt!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -103,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
 
-Your file should now look like this:
+Így kellene kinéznie a fájlodnak:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -138,7 +138,7 @@ OK, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Szép munka! Lehet, hogy jó lenne adni egy kis "teret" a weboldalunknak és növelni a bal oldali margót. Próbáljuk meg!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -179,7 +179,7 @@ Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` nevű class-t a `div`-edhez, amelyik a header-t tartalmazza, akárcsak így:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Most csak másold ki és illeszd be a `blog/static/css/blog.css` fájlodba:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post" attribútummal. Cseréld le ezt:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
