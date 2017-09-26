@@ -1,14 +1,14 @@
-# Következő lépések
+# What's next?
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### És most?
+### What to do now?
 
-Tarts egy kis szünetet, és pihenj. Valami egészen hatalmas dolgot csináltál.
+Take a break and relax. You have just done something really huge.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Tudunk-e ajánlani bármilyen tananyagot?
+### Can you recommend any further resources?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
