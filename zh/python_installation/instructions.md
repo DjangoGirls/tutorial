@@ -1,59 +1,107 @@
-> 本节基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 的教程
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 
+> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django 是用 Python 写的。 在 Django 中，我们需要使用 Python 语言去做所有的事情。 让我们从安装开始 ！ 我们希望您能安装 Python 3.4，所以如果你有任何以前的版本，你将需要将其升级。
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
-### Windows系统
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-您可以从 https://www.python.org/downloads/release/python-343/ 网站上下载 Windows版的Python。 下载 * **.msi** 文件完成之后，你应该运行它 （双击它），并按照那里的指示。 重要的是记住 Python 的安装位置的路径 （目录）。 它以后将会被需要 ！
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-需要注意一件事情：在安装向导的第二步，选中“Customize”，向下滚动并确保选中“Add python.exe to the Path”选项，如下所示：
+One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![别忘了增加 Python 到 Path](../python_installation/images/add_python_to_windows_path.png)
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-### Linux系统
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
-很有可能你的系统已经默认安装了Python。要检查你是否安装了 （并且它是哪一个版本），打开控制台，并键入以下命令：
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+
+1. install all Windows Updates and try to install Python 3.6 again; or
+2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+
+<!--endsec-->
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.6.1
     
 
-如果你未曾安装过 Python 或者你想要一个不同的版本，你可以按如下所示安装它：
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
-#### Debian 或 Ubuntu
+<!--endsec-->
 
-在控制台中键入此命令：
+<!--sec data-title="Debian or Ubuntu" data-id="python_debian"
+data-collapse=true ces-->
 
-    $ sudo apt-get install python3.4
+Type this command into your console:
+
+{% filename %}command-line{% endfilename %}
+
+    $ sudo apt-get install python3.6
     
 
-#### Fedora
+<!--endsec-->
 
-在您的控制台中使用此命令：
+<!--sec data-title="Fedora" data-id="python_fedora"
+data-collapse=true ces-->
 
-    $ sudo dnf install python3.4
+Use this command in your console:
+
+{% filename %}command-line{% endfilename %}
+
+    $ sudo dnf install python3
     
 
-#### openSUSE
+If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
 
-在您的控制台中使用此命令：
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="python_openSUSE"
+data-collapse=true ces-->
+
+Use this command in your console:
+
+{% filename %}command-line{% endfilename %}
 
     $ sudo zypper install python3
+    
 
+<!--endsec-->
 
-### OS X
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
-你需要去到网站 https://www.python.org/downloads/release/python-343/ 然后下载 Python 安装程序：
-
-  * 下载 *Mac OS X 64-bit/32-bit installer* 文件，
-  * 双击 *python-3.4.3-macosx10.6.pkg* 以运行安装程序。
-
-验证安装成功，请打开 *终端* 应用，运行 `python3` 命令：
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.6.1
     
+
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
 * * *
 
-如果您有任何疑问，或如果出了错，你根本不知道该怎么办下一步-请询问你的指导 ！ 有时事情都不顺利，这时寻求其他更多经验的人的帮助会更好。
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
