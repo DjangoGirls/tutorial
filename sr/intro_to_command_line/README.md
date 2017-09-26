@@ -1,22 +1,22 @@
-# Uvod u interfejs komandne linije
+# Introduction to the command-line interface
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Upoznaćemo vas sa vašim novim prijateljem: komandnom linijom!**
+**Let us introduce you to your first new friend: the command line!**
 
-Naredni koraci će vam pokazati kako da koristite onaj crni prozor koji svi hakeri koriste. Možda će delovati pomalo strašno u početku, ali je to zapravo jedan program koji čeka vaše komande.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Šta je komandna linija?
+## What is the command line?
 
-Prozor koji se obično naziva ** komandna linija** ili **interfejs komandne linije** je tekstualno bazirana aplikacija za pregled, rukovanje i manipulaciju fajlovima na vašem kompjuteru. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Otvorite interfejs komandne linije
+## Open the command-line interface
 
-Da bismo započeli eksperimentisanje, moramo prvo otvoriti naš interfejs komandne linije.
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -40,11 +40,11 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 ## Prompt
 
-Trebalo bi da vidite beli ili crni prozor koji čeka vaše komande.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ako koristite Mac ili Linux, verovatno vidite `$`, poput ovoga:
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ Ako koristite Mac ili Linux, verovatno vidite `$`, poput ovoga:
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na Windows-u imate znak `>`, poput ovoga:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,9 +72,9 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Vaša prva komanda (YAY!)
+## Your first command (YAY!)
 
-Počnimo od nečeg jednostavnog. Otkucajte komandu:
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +94,7 @@ Počnimo od nečeg jednostavnog. Otkucajte komandu:
 
 <!--endsec-->
 
-I pritisnite `enter`. Ovo je naš rezultat:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,13 +106,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Osnove
+## Basics
 
-Svaki operativni sistem ima malo drugačiji skup komandi za komandnu liniju, te budite sigurni da pratite instrukcije za vaš operativni sistem. Probajmo sledeće:
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Trenutni direktorijum
+### Current directory
 
-Bilo bi lepo znati gde smo sada, zar ne? Pogledajmo. Ukucajte sledeću komandu i pritisnite `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ Bilo bi lepo znati gde smo sada, zar ne? Pogledajmo. Ukucajte sledeću komandu i
     /Users/olasitarska
     
 
-> Napomena 'pwd' znači 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ Bilo bi lepo znati gde smo sada, zar ne? Pogledajmo. Ukucajte sledeću komandu i
 
 <!--endsec-->
 
-Verovatno ćete videti nešto slično na vašoj mašini. Kada otvorite komandnu liniju, obično počinjete na home direktorijimu vašeg naloga.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Izlistavanje fajlova i direktorijuma
+### List files and directories
 
-Šta je sve unutra? Bilo bi interesantno otkriti. Pogledajmo:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -177,9 +177,9 @@ Verovatno ćete videti nešto slično na vašoj mašini. Kada otvorite komandnu 
 
 * * *
 
-### Promena tekućeg direktorijuma
+### Change current directory
 
-Hajdemo sada na Desktop direktorijum:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Hajdemo sada na Desktop direktorijum:
 
 <!--endsec-->
 
-Proverimo da li se stvarno promenio:
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,21 +221,21 @@ Proverimo da li se stvarno promenio:
 
 <!--endsec-->
 
-Tu je!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Kreiranje direktorijuma
+### Create directory
 
-Šta kažete na to da napravimo direktorijum vežbe radi na vašem desktop-u? Možete to učiniti na sledeći način:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir vezba
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -244,22 +244,22 @@ Tu je!
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir vezba
+    > mkdir practice
     
 
 <!--endsec-->
 
-Ova mala komanda kreira folder sa nazivom `vezba` na vašem desktop-u. Možete proveriti da li je zaista tamo ako pogledate vaš desktop ili pokrenete komandu `ls` ili `dir`! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO saver> Ako ne želite da kucate istu komandu ponovo i ponovo, pritisnite `strelicu na gore` i `strelicu na dole` na vašoj tastaturi da biste se kretali kroz skoro unete komande.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Vežba!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Rešenje:
+#### Solution:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Čestitamo! :)
+Congrats! :)
 
 * * *
 
-### Čišćenje
+### Clean up
 
-Ne želimo da ostavimo haos, pa hajde da izbrišemo sve što smo uradili do ove tačke.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Najpre treba da se vratimo na desktop:
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ Najpre treba da se vratimo na desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Pogledajmo gde smo:
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Pogledajmo gde smo:
 
 <!--endsec-->
 
-Sada je vreme da izbrišemo `vezva` direktorijum:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Sada je vreme da izbrišemo `vezva` direktorijum:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r vezba
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -354,13 +354,13 @@ Sada je vreme da izbrišemo `vezva` direktorijum:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S vezba
-    vezba, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Gotovo! Da bismo bili sigurni da je stvarno izbrisano, proverimo sledeće:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +380,7 @@ Gotovo! Da bismo bili sigurni da je stvarno izbrisano, proverimo sledeće:
 
 <!--endsec-->
 
-### Izlazak
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Kratak pregled
+## Summary
 
-Evo pregleda nekih korisnih komandi:
+Here is a summary of some useful commands:
 
-| Komande (Windows) | Komande (Mac OS / Linux) | Opis                            | Primer                                            |
-| ----------------- | ------------------------ | ------------------------------- | ------------------------------------------------- |
-| exit              | exit                     | zatvara prozor                  | **exit**                                          |
-| cd                | cd                       | menja direktorijum              | **cd test**                                       |
-| cd                | pwd                      | show the current directory      | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | izlistava direktorijume/fajlove | **dir**                                           |
-| copy              | cp                       | kopira fajl                     | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | premešta fajl                   | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | pravi novi direktorijum         | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file                   | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory              | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Ovo je samo mali broj komandi koje možete koristiti u vašoj komandnoj liniji, ali danas nećete koristiti ništa više dodatno.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Ako vas zanima, [ss64.com](http://ss64.com) sadrži kompletan pregled svih komandi za sve operativne sisteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Spremni?
+## Ready?
 
-Hajde da se bacimo na Python!
+Let's dive into Python!
