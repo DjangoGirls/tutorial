@@ -2,15 +2,15 @@
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Fangen wir an, schreiben wir Code!
 
-## Python prompt
+## Der Python-Prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Um Python zu starten, musst du an die *Kommandozeile* deines Computers. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Once you're ready, follow the instructions below.
+Also öffne die Konsole, dann fangen wir an.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -22,7 +22,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Dein erster Python-Befehl!
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
@@ -33,7 +33,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> 2 + 3
+>>> 2 + 3 
 5
 ```
 
@@ -138,7 +138,7 @@ OK, enough of strings. So far you've learned about:
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Errors
+## Fehler
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
@@ -167,7 +167,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Variables
+## Variablen
 
 An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
@@ -236,7 +236,7 @@ An error! As you can see, Python has different types of errors and this one is c
 
 Play with this for a while and see what you can do!
 
-## The print function
+## Die print-Funktion
 
 Try this:
 
@@ -254,7 +254,7 @@ When you just type `name`, the Python interpreter responds with the string *repr
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
-## Lists
+## Listen
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
@@ -470,7 +470,7 @@ Awesome! You know a lot about programming now. In this last part you learned abo
 
 Excited for the next part? :)
 
-## Compare things
+## Vergleichen
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -584,7 +584,7 @@ Practice and have fun with Booleans by trying to run the following commands:
 
 Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
-# Save it!
+# Sichern!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
@@ -734,7 +734,7 @@ It works!
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
-### What if a condition isn't True?
+### Was passiert, wenn eine Bedingung nicht True ist?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
