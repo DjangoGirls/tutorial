@@ -1,18 +1,18 @@
-# Djangove predloge
+# Django templates
 
-Vstavimo na spletno stran nekaj besedila! Django nam pri tem izdatno pomaga z značkami **template**.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## Kaj so značke template?
+## What are template tags?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-## Prikazovanje objav na blogu
+## Display post list template
 
-V prejšnjem poglavju smo seznam objav shranili v spremenljivko `posts`. Te objave moramo še prikazati kot HTML.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Za izpis spremenljivke v Djangovih predlogah bomo uporabili zavite oklepaje, znotraj njih pa bomo dali spremenljivko:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ Za izpis spremenljivke v Djangovih predlogah bomo uporabili zavite oklepaje, zno
 {{ posts }}
 ```
 
-Naredi to v predlogi `blog/templates/blog/post_list.html`. Vso kodo med drugo značko `<div>` in tretjo značko `</div>` z `{{ posts }}`. Datoteko shrani, osveži stran in si oglej rezultate:
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
-Vse, kar smo dobili, je tole:
+As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ Vse, kar smo dobili, je tole:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Django torej našo spremenljivko razume kot seznam objektov. Se še spomniš, kako se v Pythonu izpiše elemente seznama? Prav si uganila. Z zanko! V predlogah zanko narediš takole:
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ Django torej našo spremenljivko razume kot seznam objektov. Se še spomniš, ka
 {% endfor %}
 ```
 
-Preizkusi to še v svoji predlogi.
+Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-Deluje! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. K sreči se izkaže, da lahko v značke template dodajamo tudi HTML kodo. `body` bo zdaj zgledal takole:
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,17 +64,17 @@ Deluje! But we want the posts to be displayed like the static posts we created e
 {% endfor %}
 ```
 
-{% raw %}Vsa koda, ki je med `{% for %}` in `{% endfor %}` se bo ponovila za vsak objekt v seznamu. Osveži svojo stran:{% endraw %}
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Razlika je v tem, da dostopamo do različnih delov naše baze podatkov `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## Še nekaj
+## One more thing
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-* Za začetek kodo prenesimo na Github
+* First, push your code to Github
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Nato se ponovno prijavi v [Pythona nAnywhere](https://www.pythonanywhere.com/consoles/), pojdi na **Bash console**(ali pa odpri novo) in zaženi:
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Za konec se premakni na [Web tab](https://www.pythonanywhere.com/web_app_setup/) in v svoji aplikaciji pritisni **Reload**. Najnovejša verzija tvoje strani je objavljena! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
