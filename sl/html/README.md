@@ -1,22 +1,22 @@
-# Uvod v HTML
+# Introduction to HTML
 
-Kaj je predloga?
+What's a template, you may ask?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## Kaj je HTML?
+## What is HTML?
 
 HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML je kratica za "HyperText Markup Language". **HyperText** pomeni, da gre za vrsto besedila, ki vsebuje povezave (oziroma hiperpovezave) med (spletnimi) stranmi. **Markup** pomeni značka. V jeziku HTML namreč poznamo veliko posebnih značk (oznak), ki brskalnikom povedo, kako oblikovati besedilo, ki neki znački sledi. Vsaka značka se začne z znakom `<`, ki mu sledi ime značke in konča z znakom `>`. These tags represent markup **elements**.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## Tvoja prva predloga!
+## Your first template!
 
-Predloga je torej zgolj HTML datoteka, ki vsebuje nekaj posebnih ukazov (značk) in besedilo.
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Vse predloge bomo shranjevali v mapo `blog/templates/blog`. Za začetek moraš torej, znotraj osnovnega imenika blog, ustvariti mapo `templates`. Znotraj te naredi še mapo `blog`:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
@@ -25,17 +25,17 @@ Vse predloge bomo shranjevali v mapo `blog/templates/blog`. Za začetek moraš t
 
 (You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-Ustvari datoteko `post_list.html` (zaenkrat naj bo prazna) in jo shrani v `blog/templates/blog`.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-Zdaj si lahko stran ogledaš na naslovu http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
-Napake ni več! Čestitke :) Vendar pa je naša stran zaenkrat še precej dolgočasna, saj ni na njej nič objavljenega. Zdaj je končno prišel čas, da to spremenimo.
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-V predlogo dodaj sledečo kodo:
+Add the following to your template file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -50,20 +50,20 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-Deluje! Odlično :)
+It worked! Nice work there :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Vsa preostala koda, ki jo bomo pisali, bo torej med tema dvema značkama
-* `<p>` označuje začetek novega odstavka, `</p>` pa konec
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
-* **head** je element, ki se ga na strani ne vidi. Kaj točno je njegov namen, bomo videli kasneje.
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-* **body** je element, ki vsebuje "vidni" del strani. Velik del spletne strani je zgrajen na podlagi kode, ki je znotraj tega elementa.
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-V elementu `<head>` brskalniku pojasnimo določene lastnosti naše spletne strani, v elementu `<body>` pa opišemo samo vsebino strani.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,32 +81,32 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Shrani datoteko in osveži stran.
+Save the file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
-Si opazila, kako je brskalnik uporabil element title? Besedilo `<title>Ola's blog</title>` je privzel za naslov zavihka, v katerem je odprta tvoja stran.
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-Kot si verjetno že opazila, vsaki znački oblike <besedilo>, sledi značka oblike `<besedilo/>`. Temu rečemo, da druga značka *zapre* prvo. Opisane pare značk lahko *gnezdimo* (to pomeni, da neke značke ne smemo zapreti, dokler niso zaprte vse značke, ki so znotraj nje).
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-Predstavljaj si, da imaš veliko škatel, ki jih zlagaš eno v drugo. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Spreminjanje predlog
+## Customize your template
 
-Malce se pozabavaj in svojo predlogo poskusi spremeniti! Tukaj je par uporabnih značk:
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
 * `<h1>A heading</h1>` for your most important heading
-* `<h2>podnaslov</h2>` - za malce manj pomembne naslove
+* `<h2>A sub-heading</h2>` for a heading at the next level
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
-* `<em>besedilo</em>` - za nagnjeno besedilo
-* `<strong>besedilo</strong>` - za odebeljeno besedilo
-* `<br />` - skok v novo vrstico (znotraj tega elementa besedila ni)
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
 * `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>prvi element</li><li>drugi element</li></ul>` - za seznam, takšnega kot je ta, ki ga bereš
-* `<div></div>` - za definiranje novega dela spletne strani
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -125,68 +125,68 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit ne mi porta gravida na eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit ne mi porta gravida na eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
 ```
 
-V zgornji predlogi smo ustvarili tri elemente `div`.
+We've created three `div` sections here.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* Drugi dva `div`-a vsebujeta objave na blogu z datumi objave, naslovi in vsebino objav.
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-Naša stran zdaj zgleda takole:
+It gives us this effect:
 
 ![Figure 11.4](images/step6.png)
 
-Super! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## Še nekaj: objavimo stran!
+## One more thing: deploy!
 
-Vse narejene spremembe bi si bilo dobro ogledati še na "pravi" spletni strani. Prenesimo spremenjene datoteke na PythonAnywhere:
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Nalaganje kode na Github
+### Commit, and push your code up to Github
 
-Za začetek poglej, katere datoteke so bile spremenjene (na tvojem računalniku, ne na PythonAnywhere):
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Prepričaj se, da si res v imeniku `djangogirls` in naroči `gitu`, da sporoči vse spremembe, ki so se zgodile znotraj tega imenika:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Ne pozabi (poglavje 3), da je `.` oznaka za trenutni imenik.
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-Preden boš datoteke naložila, preveri, katere je `git` izbral (le-te bodo zelene barve):
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Zagotoviti moramo še, da bo git zabeležil, kakšno spremembo smo naredili. Napisati moramo torej, kaj smo naredili (commit message). Napišeš lahko načeloma karkoli, vendar je zelo priporočljivo, da je opis smiseln, saj boš kasneje na podlagi tega opisa lahko ugotovila in kdaj si naredila določeno spremembo.
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Opomba:** Pri besedilo v git-u moraš vedno uporabiti dvojne narekovaje.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
@@ -195,9 +195,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     $ git push
     
 
-### Nalaganje spremenjene kode na PythonAnywhere
+### Pull your new code down to PythonAnywhere, and reload your web app
 
-* Na PythonAnyehere pojdi na del strani, kjer je ukazna vrstica (Bash console). Poženi:
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,8 +206,8 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-Koda se zdaj nalaga na strežnik. Če želiš preveriti, ali se je že naložila, pojdi na **zavihek Files**in si oglej kodo.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
-* Premakni se zdaj na zavihek [Web](https://www.pythonanywhere.com/web_app_setup/) in pritisni **Reload**.
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
