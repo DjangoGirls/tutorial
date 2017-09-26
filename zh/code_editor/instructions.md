@@ -1,31 +1,31 @@
-有很多不同的编辑器，通常根据个人偏好选择。 大部分 Python程序员使用像 PyCharm这样复杂但是功能强大的IDE (集成开发环境)。 然而，这可能不太适合初学者。我们建议使用同样强大但是更为简单的编辑器。
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-下面是我们的建议，但是你可以随时咨询你的教练。那样会更容易得到他们的帮助。
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
-## Gedit文本编辑器
+## Gedit
 
-Gedit 是开源、免费的编辑器，支持所有操作系统。
+Gedit is an open-source, free editor, available for all operating systems.
 
-[在这里下载](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3编辑器
+## Sublime Text 3
 
-Sublime Text 是一个很受欢迎的、免费试用的编辑器。它很容易安装和使用，并且支持所有操作系统。
+Sublime Text is a very popular editor with a free evaluation period. It's easy to install and use, and it's available for all operating systems.
 
-[在这里下载](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
-## Atom编辑器
+## Atom
 
-Atom 是 [GitHub](https://github.com/) 最新发布的代码编辑器。它开源、免费并且容易安装和使用。它可用于Windows、OSX和 Linux。
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source, easy to install and easy to use. It's available for Windows, OS X and Linux.
 
-[在这里下载](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## 我们为什么要安装代码编辑器？
+## Why are we installing a code editor?
 
-你可能会疑惑为什么我们要安装代码编辑器软件，而不是使用如 Word 或记事本这样的软件。
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-第一个理由是代码应该是 **纯文本**，如 Word 和Textedit的程序实际上不能产生纯文本，它们产生富文本 (含有字体和格式)，使用自定义的格式，如 [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-第二个原因是代码编辑器专长于编辑代码，因此它们可以提供一些有用的功能，比如代码高亮，比如自动闭合引用号。
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-以上这些我们将在实践中具体体会。很快你将会觉得，似乎过时的老文本编辑器正是最得心应手的工具！:)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
