@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Naš blog izgleda poprilično ružno, zar ne? Vreme je da ga osvežimo! Iskoristićemo CSS za to.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## Šta je CSS?
+## What is CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Hajde da koristimo Bootstrap!
+## Let's use Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Instalacija Bootstrap-a
+## Install Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,30 +29,30 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Već izgleda lepše!
+Looking nicer already!
 
-## Statički fajlovi u Djangu (Django)
+## Static files in Django
 
-Najzad ćemo detaljnije pogledati ono što smo zvali **static files** (statični fajlovi). Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Gde staviti statične fajlove u Django-u
+### Where to put static files for Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-To ćemo uraditi tako što ćemo kreirati folder pod nazivom `static` unutar blog aplikacije:
+We do that by creating a folder called `static` inside the blog app:
 
-    djangogirls 
-    ├── blog 
-    │ ├── migrations 
-    │ └── static 
+    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   └── static
     └── mysite
     
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Vaš prvi CSS dokument!
+## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Spremni?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
