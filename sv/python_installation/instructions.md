@@ -42,7 +42,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Troligen har du redan Python installerat. För att kolla om det är installerat (och vilken version), öppna en terminal och skriv in följande kommando:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -57,7 +57,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 <!--sec data-title="Debian or Ubuntu" data-id="python_debian"
 data-collapse=true ces-->
 
-Skriv in följande kommando i terminalen:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -69,7 +69,7 @@ Skriv in följande kommando i terminalen:
 <!--sec data-title="Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Kör detta kommando i terminalen:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -83,7 +83,7 @@ If you're on older Fedora versions you might get an error that the command dnf i
 <!--sec data-title="openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Kör detta kommando i terminalen:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
