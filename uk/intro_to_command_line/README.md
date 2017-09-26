@@ -1,22 +1,22 @@
-# Вступ до інтерфейсу командного рядка
+# Introduction to the command-line interface
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Дозвольте нам представити вас вашому новому другові: командний рядок!**
+**Let us introduce you to your first new friend: the command line!**
 
-Наступні кроки покажуть вам як користуватися чорним вікном, яким користуються усі хакери. Спочатку це може видаватися трохи жахливим, однак насправді це лише командна підказка, що очікує певних команд від вас.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Що таке командний рядок?
+## What is the command line?
 
-Вікно, яке зазвичай називають **командним рядком** або **інтерфейсом командного рядка**, є текстовою програмою для перегляду, обробки і управління файлами на вашому комп'ютері. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Відкриваємо інтерфейс командного рядка
+## Open the command-line interface
 
-Щоб почати експериментувати, нам потрібно спочатку відкрити наш інтерфейс командного рядка.
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -38,13 +38,13 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
-## Командний рядок
+## Prompt
 
-Має з'явитися біле або чорне вікно, що очікує на ваші команди.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Якщо ви працюєте на Mac або на Linux, ви напевно побачите `$`, на зразок:
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-На Windows, це знак `>`:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,9 +72,9 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Ваша перша команда (ЙОЙ!)
+## Your first command (YAY!)
 
-Почнемо з чогось простенького. Наберіть команду:
+Let's start with something simple. Type this command:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +94,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 <!--endsec-->
 
-А потім натисніть `enter`. Результатом буде:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,13 +106,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Основи
+## Basics
 
-У кожної операційної системи є трохи відмінні набори команд для командного рядку, отже, будьте певними, що виконуєте інструкції саме для вашої операційної системи. Давайте спробуємо?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Поточна директорія
+### Current directory
 
-Було б приємно знати, де ми перебуваємо зараз, чи не так? Давайте подивимося. Введіть цю команду і натисніть `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
     /Users/olasitarska
     
 
-> Зауваження: 'pwd' відповідає 'print working directory' (англ. надрукувати робочу папку).
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Можливо, ви побачите щось схоже на вашій машині. Після того, як ви відкрили командний рядок, ви зазвичай починаєте зі своєї домашньої папки.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Список файлів і папок
+### List files and directories
 
-Отже, що ж всередині? Було б круто з'ясувати. Давайте подивимось:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -177,9 +177,9 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 * * *
 
-### Змінити поточну директорію
+### Change current directory
 
-Тепер давайте перейдемо до директорії робочого столу:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Перевірте чи дійсно щось змінилось:
+Check if it's really changed:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,15 +221,15 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Ось!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Створити директорію 
+### Create directory
 
-Як щодо створення каталогу practice на вашому робочому столі? Ви можете зробити це таким чином:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,17 +249,17 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Ця коротка команда створить папку з іменем `practice` на вашому робочому столі. Може перевірити чи є вона там, просто глянувши на свій Робочий стіл або запустивши команду `ls` або `dir`! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути кнопки `стрілка вгору` та `стрілка вниз` на своїй клавіатурі щоб повторити нещодавно використовувані команди.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Вправа!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Розв'язання:
+#### Solution:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Вітаємо! :)
+Congrats! :)
 
 * * *
 
-### Прибираємо
+### Clean up
 
-Ми не хочемо залишити безлад, то ж давайте видалимо усе, що ми до цього моменту створили.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Спочатку, нам потрібно повернутися назад до директорії Робочий стіл:
+First, we need to get back to Desktop:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Перевірте де ми:
+Check where you are:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Тепер час видалити директорію `practice`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +360,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Виконано! Щоб переконатися, що папку дійсно видалена, давайте перевіримо:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +380,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-### Вихід
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Підсумок
+## Summary
 
-Тут наведено підсумок деяких корисних команд:
+Here is a summary of some useful commands:
 
-| Команда (Windows) | Команда (Mac OS / Linux) | Опис                       | Приклад                                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
 | ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | закрити вікно              | **exit**                                          |
-| cd                | cd                       | змінити директорію         | **cd test**                                       |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
 | cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | список директорій/файлів   | **dir**                                           |
-| copy              | cp                       | скопіювати файл            | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | перемістити файл           | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | створити нову директорію   | **mkdir testdirectory**                           |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
 | rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Тут наведено лише невелика кількість команд, котрі можна запускати у вашому командному рядку, однак, на даний момент ми не збираємося використовувати щось більше.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Якщо вас цікавить, [ss64.com](http://ss64.com) містить повний список посилань на команди для усіх операційних систем.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Готові?
+## Ready?
 
-Давайте зануримось у Python!
+Let's dive into Python!
