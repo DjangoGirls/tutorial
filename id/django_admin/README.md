@@ -1,4 +1,4 @@
-# Admin Django
+# Django admin
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
@@ -13,9 +13,9 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Sebagaimana dapat anda lihat, kita mengimport (meng Include) model Post yang telah didefinisikan di bab sebelumnya. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Oke, saatnya kita lihat model Post kita. Ingat untuk menjalankan `python manage.py runserver` di konsol untuk menjalankan web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
@@ -37,13 +37,13 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-![Admin Django](images/django_admin3.png)
+![Django admin](images/django_admin3.png)
 
 Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
-![Admin Django](images/edit_post3.png)
+![Django admin](images/edit_post3.png)
 
 If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
