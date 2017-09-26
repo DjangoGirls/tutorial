@@ -1,16 +1,16 @@
-# Pengenalan Python
+# Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Mari kita tulis beberapa kode!
+Let's write some code!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Ketika kamu sudah siap, Silakan ikuti instruksi dibawah ini.
+Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -22,13 +22,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Perintah Python Pertama
+## Your first Python command!
 
-Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>` Bagi kita sekarang adalah kita harus menggunakan perintah pada bahasa Python saja. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau pakai shortcut `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-Untuk sekarang, Kita belum ingin keluar dari konsol Python. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 
 Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Ikhtisar
+### Summary
 
 OK, enough of strings. So far you've learned about:
 
@@ -459,7 +459,7 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Ikhtisar
+### Summary
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Ikhtisar
+### Summary
 
 In the last few exercises you learned about:
 
@@ -1053,7 +1053,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Ikhtisar
+## Summary
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
