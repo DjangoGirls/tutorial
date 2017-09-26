@@ -1,23 +1,23 @@
-# Django ORM dan QuerySets
+# Django ORM and QuerySets
 
-Pada chapter kali ini, kamu akan belajar bagaimana Django terkoneksi dengan database dan menyimpan data tersebut didalamnya. Mari kita mulai!
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## Apa itu QuerySet?
+## What is a QuerySet?
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-Ini paling mudah untuk belajar lewat contoh. Mari kita coba ini, gimana?
+It's easiest to learn by example. Let's try this, shall we?
 
 ## Django shell
 
-Buka konsol lokal kamu (bukan di PythonAnywhere) dan ketik baris perintah ini:
+Open up your local console (not on PythonAnywhere) and type this command:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-Hasilnya akan seperti ini:
+The effect should be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -28,9 +28,9 @@ Hasilnya akan seperti ini:
 
 You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-### Semua object
+### All objects
 
-Mari kita coba tampilkan semua postingan kita dulu. Kamu bisa melakukan itu dengan perintah seperti ini:
+Let's try to display all of our posts first. You can do that with the following command:
 
 {% filename %}command-line{% endfilename %}
 
