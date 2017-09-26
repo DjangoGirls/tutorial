@@ -1,14 +1,14 @@
-# 템플릿 확장하기
+# Template extending
 
-장고의 또 다른 멋진 점은 **템플릿 확장(template extending)**입니다. 무슨 뜻일까요? 바로 여러분의 웹사이트 안의 서로 다른 페이지에서 HTML의 일부를 동일하게 재사용 할 수 있다는 뜻이에요.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
-기본 템플릿은 웹사이트 내 모든 페이지에 확장되어 사용되는 가장 기본적인 템플릿입니다.
+A base template is the most basic template that you extend on every page of your website.
 
-`blog/templates/blog/`에 `base.html` 파일을 만들어 봅시다:
+Let's create a `base.html` file in `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Templates help when you want to use the same information or layout in more than 
                 post_list.html
     
 
-그 다음 파일을 열어 `post_list.html`에 있는 모든 내용을 `base.html`에 아래 내용을 복사해 붙여넣습니다.
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Templates help when you want to use the same information or layout in more than 
 </html>
 ```
 
-그 다음 `base.html`에서 `<body>` (`<body>`와 `</body>` 사이에 있는 모든 내용)의 모든 내용을 아래와 같이 바꿉니다:
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Templates help when you want to use the same information or layout in more than 
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). 어떻게 동작하는지 보여 드릴게요.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
@@ -104,7 +104,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 
 We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. 아래 처럼요. :{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
