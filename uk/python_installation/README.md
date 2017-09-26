@@ -1,12 +1,12 @@
-# Почнімо працювати з Python
+# Let’s start with Python
 
-Нарешті ми тут!
+We're finally here!
 
-Але спершу, дозвольте нам розказати вам що ж таке Python. Python -- це дуже популярна мова програмування, що може використовуватися для створення веб сайтів, ігор, наукових програм, графіки та багато-багато іншого.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
-Python бере свій початок з кінця 80-тих, і його головною ціллю є бути читабельним для людей (а не тільки для машин!). Саме тому він виглядає набагато простішим, ніж інші мови програмування. This makes it easy to learn, but don't worry – Python is also really powerful!
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry – Python is also really powerful!
 
-# Встановлення Python
+# Python installation
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
