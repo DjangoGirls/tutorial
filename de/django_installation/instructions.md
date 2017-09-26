@@ -1,18 +1,18 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Ein Teil dieser Sektion basiert auf den Tutorials von Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Für das "django-marcador Tutorial" liegt das Urheberrecht bei Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## Virtuelle Umgebung
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Bevor wir mit der Installation von Django beginnen, lernen wir ein sehr hilfreiches Tool kennen, das uns hilft, unsere Arbeitsumgebung zum Coden sauber zu halten. Es ist möglich diesen Schritt zu überspringen, aber wir legen ihn dir dennoch besonders ans Herz. Mit dem bestmöglichen Setup zu starten, wird dir in der Zukunft eine Menge Frust ersparen!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Wir erzeugen eine virtuelle Arbeitsumgebung - ein **virtual environment** oder auch *virtualenv*. Eine virtuelle Umgebung wird dein Python/Django-Setup für ein einzelnes Projekt isolieren. Das bedeutet, dass deine Änderungen an einem Website-Projekt keine anderen Projekte, an welchen du auch gerade entwickelst, beeinträchtigen. Klingt nützlich, oder?
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Du musst nur das Verzeichnis festlegen, in dem du das `virtualenv` erstellen willst; zum Beispiel dein Home-Verzeichnis. Auf Windows ist dies `C:\Users\Name` (`Name` ist dein Anmeldename/Login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+In diesem Tutorial erstellen wir darin ein neues Verzeichnis `djangogirls`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 
 
 <!--endsec-->
 
-## Working with virtualenv
+## Mit der virtuellen Umgebung arbeiten
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
@@ -150,7 +150,7 @@ When working within a virtual environment, `python` will automatically refer to 
 
 OK, we have all important dependencies in place. We can finally install Django!
 
-## Installing Django
+## Django Installation
 
 Now that you have your `virtualenv` started, you can install Django.
 
