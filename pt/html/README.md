@@ -1,44 +1,44 @@
-# Introdução a HTML
+# Introduction to HTML
 
-Você pode se perguntar: e o que é um template?
+What's a template, you may ask?
 
-Um template é um arquivo que nós podemos reutilizar para apresentar diferentes informações de uma forma consistente. Por exemplo, você poderia usar um template para te ajudar a escrever uma carta, pois, embora cada carta possua uma mensagem e um destino diferente, todas compartilham o mesmo formato.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-O formato do template do Django é descrito em uma linguagem chamada HTML (esse é o mesmo HTML que mencionamos no primeiro capítulo __Como a Internet funciona__).
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## O que é HTML?
+## What is HTML?
 
-HTML é um código simples que é interpretado pelo seu navegador web - como o Chrome, o Firefox ou o Safari - para exibir uma página web para o usuário.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML significa "HyperText Markup Language". __HiperText__ significa que é um tipo de texto que suporta hiperlinks entre páginas. __Markup__ nada mais é que marcar um documento com códigos que dizem para alguém (nesse caso, o navegador web) como a página deverá ser interpretada. Código em HTML é feito com __tags__, cada uma começando com `<` e terminando com `>`. Essas tags marcam os __elementos__.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## Seu primeiro template!
+## Your first template!
 
-Criar um template significa criar um arquivo de template. Tudo é um arquivo, certo? Provavelmente você já deve ter notado isso.
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Os templates são salvos no diretório `blog/templates/blog`. Então, crie um diretório chamado `templates` dentro do diretório do seu blog. Em seguida, crie outro diretório chamado `blog` dentro da diretório templates:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
         └───blog
     
 
-(Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma simples e útil convenção que facilita a vida quando as coisas começarem a ficar mais complicadas.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-E agora crie o arquivo `post_list.html` (deixe-o em branco por agora) dentro do diretório `blog/templates/blog`.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-Veja como o nosso site está se parecendo agora: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
-> Se ocorrer um erro de `TemplateDoesNotExists` tente reiniciar o seu servidor. Entre na linha de comando, pare o servidor pressionando Ctrl+C (Control seguido da tecla C, juntas) e reinicie-o rodando `python manage.py runserver`.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
-Acabaram-se os erros! Parabéns :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso porque o nosso template está vazio. Então precisamos consertar isso.
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Adicione a seguinte linha dentro do template:
-
+Add the following to your template file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <p>Hi there!</p>
@@ -46,28 +46,29 @@ Adicione a seguinte linha dentro do template:
 </html>
 ```
 
-Como nosso site se parece agora? Clique para descobrir: http://127.0.0.1:8000/
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-Funcionou! Bom trabalho :)
+It worked! Nice work there :)
 
-- A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Como você pode ver, todo o conteúdo de um website se encontra entre a tag de início `<html>` e entre a tag de fim `</html>`
-- `<p>` é a tag que denomina parágrafos; `</p>` determina o fim de cada parágrafo
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-## Head & body
+## Head and body
 
-Cada página HTML também é dividida em dois elementos: __head__ (cabeça) e __body__ (corpo).
+Each HTML page is also divided into two elements: **head** and **body**.
 
-- __head__ é um elemento que contém informações sobre o documento que não são mostradas na tela.
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-- __body__ é um elemento que contém tudo o que é exibido como parte de uma página de um site.
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da página. Por sua vez, a tag `<body>` diz ao navegador o que há de verdade na página.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
-Por exemplo, você pode por o elemento título de uma página web dentro da tag `<head>`. Veja:
+For example, you can put a web page title element inside the `<head>`, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <head>
@@ -80,35 +81,37 @@ Por exemplo, você pode por o elemento título de uma página web dentro da tag 
 </html>
 ```
 
-Salve o arquivo e atualize sua página.
+Save the file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
-Viu como o navegador entendeu que "Ola's blog" é o título da página? Ele interpretou `<title>Ola's blog</title>` e colocou o texto na barra de título do seu navegador (e também será usado para os favoritos e outras coisas mais).
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-Provavelmente você já deve ter notado que cada tag de abertura casa com uma _tag de fechamento_, com uma `/`, e que os elementos estão _aninhados_ (ex.: você não pode fechar uma tag em particular antes que todas as outras tags que estiverem dentro dela já estejam fechadas).
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-É como colocar coisas dentro de caixas. Você tem uma grande caixa, `<html></html>`; dentro dela há `<body></body>`, sendo que esta ainda contém caixas menors: `<p></p>`.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
-Você precisa seguir essas regras de _fechamento_ de tags, e de _aninhamento_ de elementos - se você não fizer isso, o navegador poderá não estar apto para interpretar seu código de maneira correta e sua página será exibida de maneira incorreta.
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Customize seu template
+## Customize your template
 
-Agora você pode se divertir um pouco tentando customizar o seu template! Aqui estão algumas tags úteis para isso:
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-- `<h1>Um título</h1>` - para o título mais importante
-- `<h2>Um sub-título</h2>` para um título um nível abaixo
-- `<h3>Um sub-sub-título</h3>` ... e por aí vai, até `<h6>`
-- `<em>texto</em>` enfatiza seu texto
-- `<strong>text</strong>` enfatiza fortemente seu texto
-- `<br />` pula para a próxima linha (você não pode colocar nada dentro de br)
-- `<a href="https://djangogirls.org">link</a>` cria um link
-- `<ul><li>primeiro item</li><li>segundo item</li></ul>` cria uma lista, exatamente como essa!
-- `<div></div>` define uma seção da página
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
-Aqui está um exemplo de um template completo:
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <head>
@@ -134,81 +137,77 @@ Aqui está um exemplo de um template completo:
 </html>
 ```
 
-Nós criamos três seções `div` aqui.
+We've created three `div` sections here.
 
-- O primeiro elemento `div` possui o título do nosso blog - é um título e um link
-- Os outros dois elementos `div` possuem nossas postagens com a data de publicação, `h2` com o título da postagem que é clicável e dois `p`s (parágrafos) de texto, um para a data e outro para o texto da postagem.
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-Isso nos dá o seguinte efeito:
+It gives us this effect:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! Mas, até agora, nosso template mostra exatamante __sempre a mesma informação__ - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações __diferentes__ em um __mesmo formato__.
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-O que nós realmente queremos fazer é exibir postagens reais que foram adicionadas no Django admin - e isso é o que faremos em seguida.
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## Mais uma coisa: implantação ("deploy")!
+## One more thing: deploy!
 
-Seria bom ver tudo isto na Internet, certo? Vamos fazer outra implantação ("deploy") no PythonAnywhere:
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Commit, e ponha seu código no GitHub
+### Commit, and push your code up to Github
 
-Primeiro de tudo, vejamos quais arquivos foram alterados desde a última implantação  (execute esses comandos localmente, não
-no PythonAnywhere):
-
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
-```
-$ git status
-```
 
-Verifique se você está no diretório `djangogirls` e vamos dizer ao `git` para incluir todas as mudanças dentro deste diretório:
+    $ git status
+    
 
-{% filename %}command-line{% endfilename %}
-```
-$ git add --all .
-```
-
-> __Nota__ `--all` significa que o `git` também reconhecerá se você deletou algum arquivo (por padrão, o git apenas reconhece arquivos criados/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
-
-Antes de nós fazermos o upload de todos os arquivos, vamos confirmar o que o `git` enviará (todos os arquivos que o `git` for enviar deverá aparece em verde):
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
-```
-$ git status
-```
 
-Estamos quase lá! Agora é hora de dizer a ele para salvar essa modificação em seu histórico. Nós daremos a ele uma "mensagem de commit" onde nós descrevemos as modificações que fizemos. Você pode escrever o que você quiser agora, mas será mais útil se você escrever alguma coisa mais descritiva, algo para você poder se lembrar, no futuro, das coisas que você fez.
+    $ git add --all .
+    
 
-{% filename %}command-line{% endfilename %}
-```
-$ git commit -m "Changed the HTML for the site."
-```
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-> __Nota__ Certifique-se que você usou aspas duplas para delimitar a mensagem do commit.
-
-Após termos feito isso, nós fazemos o upload (envio) das nossas mudanças para o PythonAnywhere:
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
-```
-$ git push
-```
 
-### Empurre seu novo código para o PythonAnywhere e recarregue o seu aplicativo web
+    $ git status
+    
 
-*   Abra a [página de consoles de PythonAnywhere] (https://www.pythonanywhere.com/consoles/) e vá para o seu **console Bash** (ou inicie um novo). Em seguida, execute:
- 
- {% filename %}command-line{% endfilename %}
-```
-$ cd ~/my-first-blog
-$ git pull
-[...]
-```
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
-E veja seu código sendo baixado. Se você deseja verificar se já chegou, pode ir para a **Files tab** e ver seu código no PythonAnywhere.
+{% filename %}command-line{% endfilename %}
 
-*   Finalmente, pule para a [Web tab](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo web.
+    $ git commit -m "Changed the HTML for the site."
+    
 
- [6]: https://www.pythonanywhere.com/web_app_setup/
+> **Note** Make sure you use double quotes around the commit message.
 
-Sua atualização deve estar ao vivo! Vá em frente e atualize seu site no navegador. As alterações devem ser visíveis :)
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+    
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)

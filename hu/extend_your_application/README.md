@@ -1,16 +1,16 @@
-# Egészítsd ki az applikációdat
+# Extend your application
 
-Most már teljesítettük az összes szükséges lépést a website-unk létrehozásához: tudjuk hogyan írjunk egy modelt, url-t, view-t és template-et. Azt is tudjuk, hogy hogyan csinosítsuk ki az oldalunkat.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Itt az idő gyakorolni!
+Time to practice!
 
-Az első dolog, amire szükségünk van, nyilván egy oldal, ami megjelenít egy bejegyzést, ugye?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Már van egy `Post` modellünk, úgyhogy nem kell hozzáadnunk semmit a `models.py`-hoz.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-## Template link a bejegyzés részleteihez
+## Create a template link to a post's detail
 
-Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.html` fájlhoz. Eddig így kell kinéznie:
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -27,33 +27,34 @@ Kezdjük azzal, hogy hozzáadunk egy linket a `blog/templates/blog/post_list.htm
     {% endfor %}
 {% endblock %}
 ```
-    
 
-{% raw %}Szükségünk van egy linkre a bejegyzések címei és a bejegyzések részletes oldala között. Cseréljük ki a `<h1><a href="">{{ post.title }}</a></h1>` sort úgy, hogy a bejegyzés részletes oldalára vezet: {% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Itt az ideje elmagyarázni a rejtélyes `{% url 'post_detail' pk=post.pk %}` részt. Ahogy gyaníthattad, a `{% %}` jelölés azt jelenti, hogy Django template tag-eket használunk. Ezúttal egy olyat, ami létrehoz egy URL-t nekünk!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-A `blog.views.post_detail` egy elérési út a `post_detail` *view*-hez, amit létre akarunk hozni. Jegyezd meg: `blog` az applikációnk neve (a `blog` könyvtár), `views` a `views.py` nevéből van, és az utolsó rész - `post_detail` - a *nézet* neve.
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-És a `pk=post.pk` rész? A `pk` a "primary key" (elsődleges kulcs) rövidítése, amely mindegyik bejegyzésnek egy egyedi neve az adatbázisban. Nem adtunk meg egy elsődleges kulcsot a `Post` modellünkben, ezért Django létre fog nekünk hozni egyet (alapértelmezetten egy számot fog használni, amely egyesével nő, pl. 1, 2, 3) és ezt egy `pk` nevű mezőben hozzáadja mindegyik posthoz. Az elsődleges kulcsot `post.pk`-al érhetjük el, ugyan úgy mint a többi mezőt (`title`, `author`, stb.) a `Post` objektumban!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Most amikor a http://127.0.0.1:8000/ címre megyünk, lesz egy hibaüzenetünk (ahogy vártuk is, mivel nincsen sem URL, sem *view* a `post_detail`-hez). Így fog kinézni:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-![NoReverseMatch hiba][1]
+![NoReverseMatch error](images/no_reverse_match2.png)
 
- [1]: images/no_reverse_match2.png
+## Create a URL to a post's detail
 
-## URL a bejegyzés részleteihez
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-Hozzunk létre egy URL-t a `urls.py`-ban a `post_detail` *view*-hoz!
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Az első bejegyzésünk részleteit a kövekező **URL** címen akarjuk megjeleníteni: http://127.0.0.1:8000/post/1/
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-Hozzunk létre egy URL-t a `blog/urls.py` fájlban, ami egy `post_detail` nevű *view*-ra mutat -- ez majd egy egész blogbejegyzést jelenít meg. Add hozzá a `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` sort a `blog/urls.py` fájlhoz. Így kell kinéznie a fájlnak:
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -61,84 +62,87 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
 ```
 
-Ez a rész `^post/(?P<pk>[0-9]+)/$` elég ijesztően néz ki, de ne aggódj,elmagyarázzuk:
-- `^`-vel kezdődik -- "eleje" - `post/` azt jelenti, hogy az eleje után az URL-nek tartalmaznia kell ezt: **post** és **/**. Eddig jó.
-- `(?P<pk>[0-9]+)` - ez a rész trükkösebb. Ez azt jelenti, a Django fogja, amit ideraksz, és átirányítja egy nézethez egy `pk` nevű változóként. `[0-9]` azt közli, hogy ez csak egy számjegy lehet, betű nem (tehát minden 0 és 9 között). `+` azt jelenti, hogy egy vagy több számjegynek kell lennie. Tehát `http://127.0.0.1:8000/post//` nem érvényes, de `http://127.0.0.1:8000/post/1234567890/` teljesen jó!
-- `/` - kell még egy **/** - `$`
-- "vége"!
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
-Ez azt jelenti, hogy ha beírod a `http://127.0.0.1:8000/post/5/` címet a böngésződbe, akkor a Django megérti, hogy egy `post_detail` nevű 1>nézetet</em> keresel, és közvetíti az információt, hogy a `pk` `5-tel` egyenlő annál a *nézetnél*.
+- it starts with `^` again – "the beginning".
+- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
+- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `/` – then we need a **/** again.
+- `$` – "the end"!
 
-`pk` a `primary key` rövid változata. Ezt a kifejezést gyakran használják Django projektekben. De úgy nevezed el a változódat, ahogy akarod (ne feledd: kisbetűkkel és szóköz helyett `_` karakterrel!). Például `(?P<pk>[0-9]+)` esetén használhatunk `post_id` változót, amivel így nézne ki: `(?P<post_id>[0-9]+)`.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-Ok, hozzáadtunk egy új URL-t a `blog/urls.py`-hoz! Frissítsük az oldalt: http://127.0.0.1:8000/ Boom! Már megint egy újabb hiba! Várható volt!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![AttributeError][2]
+![AttributeError](images/attribute_error2.png)
 
- [2]: images/attribute_error2.png
+Do you remember what the next step is? Of course: adding a view!
 
-Emlékszel, mi a következő lépés? Hát persze: hozzáadni egy új nézetet!
+## Add a post's detail view
 
-## Nézet a bejegyzés részleteihez
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-Ezúttal adunk a *nézetünknek* egy extra paramétert: `pk`. A *nézetünknek* ezt meg kell kapnia, igaz? Úgyhogy a function-t úgy fogjuk meghatározni, hogy `def post_detail(request, pk):`. Jegyezd meg, hogy pontosan ugyanazt a nevet kell használnunk, amit az url-ben jelöltünk meg (`pk`). A változó kihagyása helytelen, és hibát fog eredményezni!
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-Most egyetlen egy blogbejegyzést akarunk szerezni. Ehhez egy ilyen queryset-et használhatunk:
+{% filename %}blog/views.py{% endfilename %}
 
-    Post.objects.get(pk=pk)
-    
+```python
+Post.objects.get(pk=pk)
+```
 
-De ennél a kódnál van egy kis gond. Ha nincsen `Post` az adott `primary key`-vel (`pk`), akkor egy nagyon csúnya hibát kapunk!
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist hiba][3]
+![DoesNotExist error](images/does_not_exist2.png)
 
- [3]: images/does_not_exist2.png
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-Mi ezt nem akarjuk! De, természetesen a Django-nak van valamije, ami ezt megoldja nekünk: `get_object_or_404`. Abban az esetben, ha nincsen `Post` az adott `pk`-val, akkor egy sokkal szebb oldalt ad ki (`Page Not Found 404` oldalt).
+![Page not found](images/404_2.png)
 
-![Az oldal nem található][4]
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
- [4]: images/404_2.png
+OK, time to add a *view* to our `views.py` file!
 
-A jó hír az, hogy elkészítheted a saját `Page not found` oldaladat, és olyan szépre alakíthatod, amilyenre akarod. De ez nem olyan fontos egyelőre, úgyhogy átugorhatjuk.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-Oké, itt az idő, hogy hozzáadjuk a *view*-t a `views.py` fájlunkhoz!
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
-Nyisd meg a `blog/views.py` fájlt és add hozzá a következő kódot:
+{% filename %}blog/views.py{% endfilename %}
 
-    from django.shortcuts import render, get_object_or_404
-    
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
-A többi `from` sor mellé. És a fájl alján hozzáadjuk a *view*-t:
+And at the end of the file we will add our *view*:
 
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-    
+{% filename %}blog/views.py{% endfilename %}
 
-Igen. Ideje frissíteni az oldalt: http://127.0.0.1:8000/
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
-![Post list nézet][5]
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
- [5]: images/post_list2.png
+![Post list view](images/post_list2.png)
 
-Sikerült! De mi történik, ha ráklikkelsz egy linkre a blog bejegyzés címében?
+It worked! But what happens when you click a link in blog post title?
 
-![TemplateDoesNotExist hiba][6]
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
- [6]: images/template_does_not_exist2.png
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
-Jaj ne! Egy másik hiba! De már tudjuk, hogyan kezeljük, igaz? Létre kell hoznunk egy template-et!
+## Create a template for the post details
 
-## Template a bejegyzés részleteihez
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Létrehozunk egy fájlt a `blog/templates/blog` könyvtárban, és elnevezzük: `post_detail.html`.
+It will look like this:
 
-Ez fog történni:
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -156,21 +160,21 @@ Ez fog történni:
 {% endblock %}
 ```
 
-Itt megint a `base.html`-t bővítjük ki. A `content` blokkban meg szeretnénk jeleníteni a bejegyzés címét, szövegét és a megjelenési idejét (published_date) - ha van. De pár fontos dolgot tisztáznunk kell még, igaz?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` egy template tag, amit akkor használni, amikor ellenőrizni akarunk valamit (emlékszel az `if ... else ..` részre a **Bevezetés a Python-ba** fejezetnél?). Ebben az esetben azt akarjuk leellenőrizni, hogy a bejegyzés `published_date` eleme nem üres.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-Ok, most már frissíthetjük az oldalunkat és kiderül, hogy a `Page not found` eltűnt.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Post részletei oldal][7]
+![Post detail page](images/post_detail2.png)
 
- [7]: images/post_detail2.png
+Yay! It works!
 
-Juppi! Működik!
+## One more thing: deploy time!
 
-## Még egy dolog: itt az ideje egy újabb deploynak!
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
-Jó lenne ellenőrizni, hogy még mindig működik-e a weboldalad a PythonAnywhere-en, igaz? Próbáld meg újra deployolni.
+{% filename %}command-line{% endfilename %}
 
     $ git status
     $ git add --all .
@@ -179,20 +183,15 @@ Jó lenne ellenőrizni, hogy még mindig működik-e a weboldalad a PythonAnywhe
     $ git push
     
 
-*   Aztán írd be ezt a [PythonAnywhere Bash konzol][8]ba:
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
- [8]: https://www.pythonanywhere.com/consoles/
+{% filename %}command-line{% endfilename %}
 
     $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
+    $ git pull
     [...]
     
 
-*   Végül menj a [Web tab][9]-ra, és nyomj **Reload**ot.
+Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
- [9]: https://www.pythonanywhere.com/web_app_setup/
-
-Ennyi az egész. Gratulálunk :)
+And that should be it! Congrats :)

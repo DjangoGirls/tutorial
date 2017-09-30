@@ -1,84 +1,83 @@
-# Django模板
+# Django templates
 
-是时候把数据展示出来了！Django提供了一个非常有用的内置来实现\---|-**模板标签**
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## 什么是模板标签呢？
+## What are template tags?
 
-正如你在前面章节中所了解的那样， 我们并不能将 Python 代码嵌入到HTML中。 因为浏览器不能识别 Python 代码， 它只能解析HTML。 我们知道，HTML是静态页面，而 Python 则显得更加动态。
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-**Django模板标签**允许我们将Python之类的内容翻译成HTML，所以你可以更快更简单的建立动态网站。哈哈！
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-## 展现文章列表模板
+## Display post list template
 
-在之前的章节，我们给我们的模板一系列文章在`post`变量里。现在我们将在HTML里展现它。
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-为了用模板标签在HTML中显示变量， 我们会使用两个大括号， 并将变量包含在里面，正如这样
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
-```html
-    {{ posts }}
-```
-    
-
-在你的 `blog/templates/blog/post_list.html` 文件中进行如下的操作。 将所有 `<div>` to the third `</div>` 中的 to the third 用 `{{ posts }}` 代替。 并保存文件，刷新页面后去看看我们做的那些改变。
-
-![图 13.1][1]
-
- [1]: images/step1.png
-
-如你所见，我们得到如下：
-
-```
-    <QuerySet [<Post: My second post>, <Post: My first post>]>
-```
-    
-
-这意味着Django视它为对象的列表。 还记得在 **Python入门介绍** 里我们怎么展现列表的吗？ 是的， 我们可以使用循环！ 在dajngo模板中使用循环去遍历它们。如下所示：
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    {% for post in posts %}
-        {{ post }}
-    {% endfor %}
-```    
+{{ posts }}
+```
 
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-在你的模板里试试这个。
+![Figure 13.1](images/step1.png)
 
-![图 13.2][2]
+As you can see, all we've got is this:
 
- [2]: images/step2.png
-
-它工作了！ 但是想让他们展现的像我们之前在**HTML介绍**章节里创建的静态文章一样 你可以混合HTML和模板标签。 我们的`body`将长得像这样：
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
+
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
+
+Try this in your template.
+
+![Figure 13.2](images/step2.png)
+
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+{% endfor %}
 ```
-    
 
-{% raw %}所有的在`{% for %}` 和 `{% endfor %}` 之间的内容将会被Django对象列表中的每个对象所代替。刷新页面去看看：{% endraw %}
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
-![图 13.3][3]
+![Figure 13.3](images/step3.png)
 
- [3]: images/step3.png
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-你注意到这次我们使用了一个明显不同的标记`{{ post.title }}` 或 `{{ post.text }}`？ 我们正在访问定义在`Post`模型中的每一个域。 此外，`|linebreaksbr`通过一个过滤器，使得行间隔编程段落。
+## One more thing
 
-## 还有一件事
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-如果我们将我们的网站放在互联网上运行，那将是一件很不错的事情，难道不是吗？ 让我们试着再次部署到 PythonAnywhere。简单部署步骤如下... ...
+* First, push your code to Github
 
-*   首先，我们将我们的代码放到Github
+{% filename %}command-line{% endfilename %}
 
-```
     $ git status
     [...]
     $ git add --all .
@@ -87,28 +86,21 @@
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-```
     
 
-*   然后，重新登陆 [PythonAnywhere][4] 并进入**Bash 控制台** (或重开一个)，并运行:
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
- [4]: https://www.pythonanywhere.com/consoles/
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-```
     $ cd my-first-blog
     $ git pull
     [...]
-```
     
 
-*   最后， 我们返回 [Web tab][5] 重新加载我们的应用程序， 此时我们应该可以看到更新后的程序运行情况了。
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-祝贺你！现在往前走，尝试在你的Django管理中添加一篇新文章（记得添加发布日期！），然后刷新你的页面看看是否文章正常显示了。
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-这一定是个让人沉醉的作品？为此我们应当骄傲， 在计算机学科的一点儿进步，都是自我的一次突破 :)。
-
-![图 13.4][6]
-
- [6]: images/donut.png
+![Figure 13.4](images/donut.png)

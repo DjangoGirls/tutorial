@@ -1,24 +1,25 @@
-# Template genişletmek
+# Template extending
 
-Django'nun size sunduğu başka bir güzellik de **template genişletmek**tir. O da ne demek? Şu demek, HTML dosyanızın bazı bölümlerini birden fazla sayfanızda kullanabilirsiniz.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-Böylece aynı bilgi/yerleştirmeyi kullanmak istediğinizde her dosyada kendinizi tekrar etmenize gerek kalmaz. Ve bir değişiklik yapmak istediğinizde bunu bütün template dosyalarında yapmanıza gerek kalmaz, bir kere değiştirmek yeterlidir!
+Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Temel template oluşturun
+## Create a base template
 
-Temel template web sitenizin bütün sayfalarında genişletebileceğiniz en temel template'inizdir.
+A base template is the most basic template that you extend on every page of your website.
 
-Şimdi `blog/templates/blog/` klasörü içinde `base.html` adlı bir dosya oluşturalım:
+Let's create a `base.html` file in `blog/templates/blog/`:
 
-```
-blog
-└───templates
-    └───blog
-            base.html
-            post_list.html
-```    
+    blog
+    └───templates
+        └───blog
+                base.html
+                post_list.html
+    
 
-Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi bu `base.html`'ye kopyalayalım:
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -34,27 +35,29 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
         <div class="page-header">
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-  
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
                 {% for post in posts %}
                     <div class="post">
                         <div class="date">
-                            {{ post.yayinlanma_tarihi }}
+                            {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.baslik }}</a></h1>
-                        <p>{{ post.yazi|linebreaks }}</p>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
             </div>
         </div>
     </body>
- </html>
-```   
+</html>
+```
 
-Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında kalan her şeyi) şununla değiştirin:
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <body>
@@ -70,55 +73,75 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
         </div>
     </div>
 </body>
-```    
+```
 
-Aslında sadece `{% for post in posts %}{% endfor %}` arasındaki her şeyi şununla değiştirmiş olduk:
+{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% block content %}
 {% endblock %}
-```    
+```
 
-Peki bu ne anlama geliyor? Az önce bir template etiketi olan `block`'u kullanarak bir blok oluşturdunuz. Diğer template'leri bu bloğun içine HTML ekleyerek `base.html`'yi genişletebilirsiniz. Bunun nasıl yapıldığını da hemen göstereceğiz.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
-Şimdi bunu kaydedin ve tekrar `blog/templates/blog/post_list.html` dosyanızı açın. Body içinde kalanlar hariç her şeyi silin. Ve ayrıca `<div class="page-header"></div>` bölümünü de silin. Dosyanız şöyle görünecektir:
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     <div class="post">
         <div class="date">
-            {{ post.yayinlanma_tarihi }}
+            {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```    
+```
 
-Ve şimdi şu satırı sayfanın başına ekleyin:
+We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
 
-```  
-{% extends 'blog/base.html' %}
-```    
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
-{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock %}` arasına koyun. Şunun gibi:{% endraw %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
-    
 {% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.yayinlanma_tarihi }}
+                {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.baslik }}</a></h1>
-            <p>{{ post.yazi|linebreaks }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
-```    
+```
 
-İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)
+Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
 
-> `blog/base.html` dosyası olmadığını söyleyen bir `TemplateDoesNotExists` hatası alıyorsanız, ve `runserver` konsolda çalışmaya devam ediyorsa Ctrl ve C butonlarına aynı anda basarak durdurmaya çalışın. Ve `python manage.py runserver` komutu ile yeniden başlatmayı deneyin.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
+
+That's it! Check if your website is still working properly. :)
+
+> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.

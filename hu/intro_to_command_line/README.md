@@ -1,47 +1,52 @@
-# Bevezetés a parancssor használatába
+# Introduction to the command-line interface
 
-Ez nagyon izgalmas, igaz?! Pár percen belül megírod az első kódsorodat :)
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-**Hadd mutassuk be neked az első új barátodat: a parancssort!**
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-A következő lépésekben megmutatjuk neked, hogyan használd azt a fekete ablakot úgy, ahogy az összes hacker használja. Első ránézésre kissé ijesztőnek tűnhet, de valójában csak egy egyszerű parancsot vár tőled.
+**Let us introduce you to your first new friend: the command line!**
 
-> **Megjegyzés** A könyvben felváltva használjuk a 'könyvtár' és 'mappa' ('directory' és 'folder') szavakat, de ezek pont ugyanazt jelentik.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-## Mi az a parancssor?
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-A **parancssor** (command line, vagy **command-line interface**) nevű ablak egy szöveges alapú alkalmazás, amit arra használhatsz, hogy fájlokat tekinthess meg, szerkeszthess, és különböző műveleteket végezhess rajtuk. Olyasmi, mint a Windows Explorer, vagy Mac gépeken a Finder, de a grafikus felület nélkül. Egyéb megnevezések a parancssorra: *konzol*, *terminál*, *cmd*, *CLI*, *prompt*.
+## What is the command line?
 
-## A parancssor megnyitása
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-Hogy belevághass a kísérletezésbe, először meg kell nyitnod a parancssort.
+## Open the command-line interface
+
+To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Start menu → All Programs → Accessories → Command Prompt.
+Go to Start menu → Windows System → Command Prompt.
+
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
 <!--endsec-->
 
-
 <!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Applications → Utilities → Terminal.
+Go to Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Valószínűleg itt találod meg: Applications → Accessories → Terminal, de ez a rendszeredtől függ. Ha nincs ott, csak keress rá a Google-n :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
 <!--endsec-->
 
-## Parancssor
+## Prompt
 
-Egy fehér vagy fekete ablakot kell látnod, ami csak a te parancsaidra vár.
+You now should see a white or black window that is waiting for your commands.
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ha Mac-ed vagy Linux-od van, valószínűleg egy `$`-t kell látnod:
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+{% filename %}command-line{% endfilename %}
 
     $
     
@@ -50,97 +55,100 @@ Ha Mac-ed vagy Linux-od van, valószínűleg egy `$`-t kell látnod:
 
 <!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-A Windows-on ez egy `>` jel:
+On Windows, it's a `>` sign, like this:
+
+{% filename %}command-line{% endfilename %}
 
     >
     
-<!--endsec-->
-
-
-Minden sornak ezzel a jellel és az azt követő space-el kell kezdődnie, de ezt nem neked kell begépelned. A számítógéped megteszi helyetted :)
-
-> Csak egy gyors megjegyzés: így is kinézhet a parancssorod: `C:\Users\ola>` vagy `Olas-MacBook-Air:~ ola$`, és ez teljesen jó így. Ebben az útmutatóban csak próbáljuk a lehető leginkább leegyszerűsíteni.
-
-A sor elején lévő rész, a  `$` vagy `>` karakterig (azt is beleértve) a *parancssori prompt* vagy röviden *prompt* a neve. Azt jelzi, hogy a számítógép a te utasításodra vár.
-
-A tutorial során, amikor egy parancsot kell beírnod, ki fogjuk írni a `$` vagy `>` karaktert, és olykor még bővebb promptot. Nyugodtan hagyd figyelmen kívül a baloldali részt, és csak a prompt után kezdődő parancsot gépeld be.
-
-## Az első parancsod (YAY!)
-
-Kezdjük valami egyszerűvel. Gépeld be ezt a parancsot:
-
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
-
-{% filename %}parancssor{% endfilename %}
-```
-$ whoami
-```
 
 <!--endsec-->
 
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+
+## Your first command (YAY!)
+
+Let's start with something simple. Type this command:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ whoami
+    
+
+<!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-> whoami
-```
+{% filename %}command-line{% endfilename %}
 
-<!--endsec-->
+    > whoami
     
 
-Majd nyomj `enter`t. Ezt az eredményt kapod:
+<!--endsec-->
+
+And then hit `enter`. This is our result:
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     olasitarska
     
 
-Amint láthatod, a számítógéped az előbb kiírta a felhasználónevedet. Jó, mi?:)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Próbálj meg minden parancsot begépelni, ahelyett, hogy innen másolnád ki. Így többet fogsz megjegyezni!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Az alapok
+## Basics
 
-Minden operációs rendszer parancssora kissé különböző prancsokat igényel, ezért kérlek győzödj meg arról, hogy a te operációs rendszerednek megfelelő utasításokat követed. Próbáljuk ki, rendben?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### A jelenlegi mappa
+### Current directory
 
-Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, és nyomj `enter`t:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-$ pwd
-/Users/olasitarska
-```
+{% filename %}command-line{% endfilename %}
 
-> Megjegyzés: a 'pwd' jelentése: 'print working directory' ('munkakönyvtár kiírása').
+    $ pwd
+    /Users/olasitarska
+    
+
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
-
 
 <!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd
-C:\Users\olasitarska
-```
-> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha powershell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska
+    
+
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
-
-Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a parancssort, általában a felhasználó 'home' könyvtárába kerülsz.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Fájlok és könyvtárak kilistázása
-    
-És mi van benne? Szuper lenne kideríteni. Nézzük meg:
+### List files and directories
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+So what's in it? It'd be cool to find out. Let's see:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -149,9 +157,12 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
     Music
     ...
     
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
      Directory of C:\Users\olasitarska
@@ -161,253 +172,258 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
     05/08/2014 07:28 PM <DIR>      Music
     ...
     
-<!--endsec-->
+
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
-### Jelenlegi mappa megváltoztatása
+### Change current directory
 
-Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
+Now, let's go to our Desktop directory:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-$ cd Desktop
-```
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd Desktop
-```
-<!--endsec-->
+    > cd Desktop
     
 
-Nézzük meg, hogy tényleg megváltozott-e:
+<!--endsec-->
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+Check if it's really changed:
 
-{% filename %}parancssor{% endfilename %}
-```
-$ pwd
-/Users/olasitarska/Desktop
-```
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd
-C:\Users\olasitarska\Desktop
-```
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
 <!--endsec-->
 
-Itt is van!
+Here it is!
 
-> PRO tipp: ha begépeled a `cd D`-t (vagy ha magyarul használod az operációs rendszeredet, és 'Asztal'-nak hívják a könyvtáradat, a `cd A`-t) és ezután megnyomod a <0>tab</0>-ot, a parancssor automatikusan kiegészíti a nevet, lehetővé téve számodra a gyorsabb navigálást. Amennyiben több mappa is kezdődik ugyanazzal a betűvel, nyomd meg kétszer a `tab`-ot, hogy kilistázza a több opciót.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Könyvtár létrehozása
+### Create directory
 
-Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztalon? Így tudod megtenni:
+How about creating a practice directory on your desktop? You can do it this way:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-$ mkdir practice
-```
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir practice
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> mkdir practice
-```
+    > mkdir practice
+    
+
 <!--endsec-->
 
-Ez a parancs létre fog hozni egy `practice` nevű mappát az asztalodon. Ha megnézed az asztalt, meggyőződhetsz róla, hogy tényleg ott van-e, de a `ls` vagy `dir` paranccsal is megteheted! Próbáld ki :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO tipp: Ha nem szeretnéd újra és újra ugyanazt a parancsot begépelni, próbáld meg a `felfele` és `lefele nyilakkal` behívni a legutóbb futtatott parancsokat.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Feladat!
+### Exercise!
 
-Egy kis kihívás: hozz létre egy `test` nevű mappát a frissen elkészített `practice` könyvtáradban. Használd a `cd` és `mkdir` parancsokat.
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Megoldás:
+#### Solution:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-$ cd practice
-$ mkdir test
-$ ls
-test
-```
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
+    $ mkdir test
+    $ ls
+    test
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd practice
-> mkdir test
-> dir
-05/08/2014 07:28 PM <DIR>      test
-```
-<!--endsec-->
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
     
 
-Gratulálunk! :)
+<!--endsec-->
+
+Congrats! :)
 
 * * *
 
-### Takarítás
+### Clean up
 
-Nem szeretnénk káoszt hagyni magunk után, szóval töröljünk le mindent, amit eddig csináltunk.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Először vissza kell mennünk az Asztal-ra:
+First, we need to get back to Desktop:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}parancssor{% endfilename %}
-```
-$ cd ..
-```
+{% filename %}command-line{% endfilename %}
+
+    $ cd ..
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd ..
-```
-<!--endsec-->
+    > cd ..
     
 
-Ha a `cd` parancsot `..`-tal használod, a jelenlegi könyvtárból a parent (szülő) könyvtárba jutsz (ez az a mappa, ami tartalmazza azt a mappát, ahol éppen vagy).
+<!--endsec-->
 
-Ellenőrizzük le, hogy hol vagyunk:
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+Check where you are:
 
-{% filename %}parancssor{% endfilename %}
-```
-$ pwd
-/Users/olasitarska/Desktop
-```
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> cd
-C:\Users\olasitarska\Desktop
-```
-<!--endsec-->
-
-Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
-
-> **Figyelem**: A fájlok törlése a `del`, `rmdir`, vagy a `rm` parancsokkal visszafordíthatatlan, tehát a *törölt fájlok örökre eltűnnek*! Legyél nagyon óvatos ezzel a paranccsal.
-
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
-
-{% filename %}parancssor{% endfilename %}
-```
-$ rm -r practice
-```
-<!--endsec-->
-
-<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
-
-
-{% filename %}parancssor{% endfilename %}
-```
-> rmdir /S practice
-practice, Are you sure <Y/N>? Y
-```
-<!--endsec-->
+    > cd
+    C:\Users\olasitarska\Desktop
     
 
-Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
+<!--endsec-->
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+Now time to delete the `practice` directory:
 
-{% filename %}parancssor{% endfilename %}
-```
-$ ls
-```
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
+    
+
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> dir
-```
-<!--endsec-->
+    > dir
     
 
-### Kilépés
+<!--endsec-->
 
-Ennyi volt! Most már biztonságosan kiléphetsz a parancssorból. Csináljuk hacker módra, jó?:)
+### Exit
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-{% filename %}parancssor{% endfilename %}
-```
-$ exit
-```
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ exit
+    
+
 <!--endsec-->
 
 <!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
 
+{% filename %}command-line{% endfilename %}
 
-{% filename %}parancssor{% endfilename %}
-```
-> exit
-```
-<!--endsec-->
+    > exit
     
 
-Szuper, nem? :)
+<!--endsec-->
 
-## Összefoglaló
+Cool, huh? :)
 
-Egy kis összefoglalás néhány hasznos parancsról:
+## Summary
 
-| Parancs (Windows) | Parancs (Mac OS/Linux) | Leírás                        | Példa                                             |
-| ----------------- | ---------------------- | ----------------------------- | ------------------------------------------------- |
-| exit              | exit                   | az ablak bezárása             | **exit**                                          |
-| cd                | cd                     | könyvtár megváltoztatása      | **cd test**                                       |
-| dir               | ls                     | könyvtárak/fájlok kilistázása | **dir**                                           |
-| copy              | cp                     | fájl másolása                 | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                     | fájl mozgatása                | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                  | új könyvtár létrehozása       | **mkdir testdirectory**                           |
-| del               | rm                     | könyvtár/fájl törlése         | **del c:\test\test.txt**                        |
+Here is a summary of some useful commands:
 
-Ez csak néhány parancs, azok közül, amiket a parancssorban futtathatsz, de ma nem lesz szükséged ennél többre.
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Ha kíváncsi vagy, a [ss64.com][1] oldalon megtalálod az összes parancsot bármelyik operációs rendszerre.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
- [1]: http://ss64.com
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Kész vagy?
+## Ready?
 
-Merüljünk el a Python-ban!
+Let's dive into Python!

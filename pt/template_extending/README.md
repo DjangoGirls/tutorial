@@ -1,14 +1,14 @@
-# Estendendo os templates
+# Template extending
 
-Outra coisa boa que o Django tem pra você é o __template extending__. O que isso significa? Isso significa que você pode usar as mesmas partes do seu HTML em diferentes páginas do seu site.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-Templates são úteis quando você quer usar a mesma informação/layout em mais de um lugar. Você não precisa ficar se repetindo em cada arquivo. E, se você quiser mudar alguma coisa, não precisa fazer isso em todos os templates, apenas em um!
+Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Criar template base
+## Create a base template
 
-Um template base é o template mais básico que você estenderá em cada página do seu site.
+A base template is the most basic template that you extend on every page of your website.
 
-Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
+Let's create a `base.html` file in `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,9 +17,10 @@ Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
                 post_list.html
     
 
-Abra-o e copie tudo que está no arquivo `post_list.html` para `base.html`, desse jeito:
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
+
 ```html
 {% load staticfiles %}
 <html>
@@ -54,9 +55,10 @@ Abra-o e copie tudo que está no arquivo `post_list.html` para `base.html`, dess
 </html>
 ```
 
-Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</body>`) com isso:
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
+
 ```html
 <body>
     <div class="page-header">
@@ -73,19 +75,21 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
 </body>
 ```
 
-{% raw %}Basicamente nós substituimos tudo entre `{% for post in posts %}{% endfor %}` por:{% endraw %}
+{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
+
 ```html
 {% block content %}
 {% endblock %}
 ```
 
-Mas, por quê? Você acabou de criar um `block` (bloco)! Você usou uma tag de template `{% block %}` para criar uma área onde será inserido HTML. Esse HTML virá de outro template que estende esse template (`base.html`). Nós vamos te mostrar como fazer isso já já.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
-Agora salve `base.html` e abra o arquivo `blog/templates/blog/post_list.html` novamente. {% raw %}Você irá remover tudo que estiver acima de `{% for post in posts %}` e abaixo de `{% endfor %}`. Qunado terminar, o arquivo ficará dessa forma:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% for post in posts %}
     <div class="post">
@@ -98,12 +102,12 @@ Agora salve `base.html` e abra o arquivo `blog/templates/blog/post_list.html` no
 {% endfor %}
 ```
 
-Nós queremos usar essa parte de nosso template para todos os blocos "content".
-Hora de adicionar tags de bloco ("block") nesse arquivo!
+We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
 
-{% raw %}Você quer que sua tag de bloco ("block") corresponda com a tag em seu arquivo `base.html`. Você também quer que ela inclua todo o código que pertence ao seus blocos "content". Para fazer isso, coloque tudo entre `{% block content %}` e `{% endblock %}`. Dessa forma:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% block content %}
     {% for post in posts %}
@@ -118,9 +122,10 @@ Hora de adicionar tags de bloco ("block") nesse arquivo!
 {% endblock %}
 ```
 
-Só falta uma coisa. Nós precisamos fazer a conexão entre esses dois templates.  É isso que "extendendo templates" significa! Nós iremos fazer isso adicionando uma tag de extender ("extends") ao início do arquivo. Dessa forma:
+Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% extends 'blog/base.html' %}
 
@@ -137,6 +142,6 @@ Só falta uma coisa. Nós precisamos fazer a conexão entre esses dois templates
 {% endblock %}
 ```
 
-É isso! Veja se o seu site ainda está funcionando direito :)
+That's it! Check if your website is still working properly. :)
 
-> Se ocorrer um erro de `TemplateDoesNotExists`, que diz que não existe nenhum arquivo chamado `blog/base.html` e se você tiver o `runserver` executando no terminal, tenta interrompê-lo (precionando Ctrl+C - o botão Control mais o botão C juntos) e reinicie ele rodando o comando `python manage.py runserver`.
+> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.

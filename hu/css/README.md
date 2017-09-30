@@ -1,43 +1,43 @@
-# CSS - csinosítsd ki!
+# CSS – make it pretty!
 
 Egyelőre nem túl szép a blogunk, igaz? Itt az ideje, hogy kicsinosítsd! Erre a CSS-t fogjuk használni.
 
 ## Mi a CSS?
 
-A CSS (Cascading Style Sheets) egy nyelv, amit a HTML-ben megírt weboldalak kinézetének leírására használunk. Vagyis mintha kisminkelnéd a weboldaladat ;).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-De nem akarjuk megint az alapoktól kezdeni, igaz? Itt is olyasmit fogunk felhasználni, amit más programozók már létrehoztak, és szabadon elérhetővé tettek az Interneten. Minek találnánk fel újra a spanyolviaszt?
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Használjunk Bootstrapet!
+## Let's use Bootstrap!
 
-A Bootstrap az egyik legnépszerűbb HTML és CSS keretrendszer, amivel szép weboldalakat készíthetünk: https://getbootstrap.com/
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-Eredetileg a Twitternél dolgozó programozók készítették, de most önkéntesek fejlesztik szerte a világon.
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
 ## Bootstrap telepítés
 
-Hogy telepítsd a Bootstrapet, add hozzá a következő a sorokat a `<head>` részhez a `.html` fájlodban (`blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-```    
+```
 
-Ezzel nem adsz hozzá új fájlokat a projektedhez, csak az Interneten létező fájlokra hivatkozol. Nyisd meg újra a weboldaladat, és frissítsd! Itt is van!
+This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![14.1 ábra][1]
+![Figure 14.1](images/bootstrap1.png)
 
- [1]: images/bootstrap1.png
+Looking nicer already!
 
-Már sokkal jobban néz ki!
+## Static files in Django
 
-## Statikus fájlok a Django-ban
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-Most nézzük meg kicsit közelebbről ezeket a "**statikus fájl**"-nak nevezett dolgokat. A CSS-ed és az összes képfájl statikus fájlnak számít -- ilyen minden, ami nem dinamikus, vagyis aminek a tartalma nem függ a kontextustól (magyarul a weboldal aktuális állapotától), és ezért minden felhasználó számára ugyanaz.
+### Where to put static files for Django
 
-### Hová pakoljuk a statikus fájlokat?
-
-Django már tudja, hol találja a statikus fájlokat a beépíttett "admin" alkalmazáshoz. Most csak annyit kell tennünk, hogy a saját, `blog` alkalmazásunkhoz hozzáadunk néhány statikus fájlt.
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
 Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog applikáción belül:
 
@@ -48,62 +48,66 @@ Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog appliká
      └── mysite
     
 
-A Django automatikusan megtalál minden "static" nevű mappát az alkalmazásaid könyvtárain belül, és képes lesz használni azok tartalmát statikus fájlokként.
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
 ## Az első CSS fájlod!
 
-Írjunk egy CSS fájlt, hogy hozzáadd a saját stílusodat a weboldaladhoz. Hozz létre egy `css` nevű könyvtárat a `static` könyvtárban! Majd hozz létre egy új fájlt `blog.css` néven a `css` könyvtárban. Kész vagy?
+Let's create a CSS file now, to add your own style to your web page. Hozz létre egy `css` nevű könyvtárat a `static` könyvtárban! Majd hozz létre egy új fájlt `blog.css` néven a `css` könyvtárban. Kész vagy?
 
     djangogirls
      └─── blog
-         └─── static
+         └─── statikus
              └─── css
                  └─── blog.css
     
 
 Itt az ideje, hogy a CSS fájlunkba írjunk is valamit! Nyisd meg a `blog/static/css/blog.css` fájlt a kódszerkesztődben.
 
-Most nem fogunk túlságosan belemélyedni a CSS-be, mert nem bonyolult, és magadtól is meg tudod majd tanulni a workshop után. Ennek a fejezetnek a végén ajánlunk egy ingyenes kurzust, ahol többet tudhatsz meg a CSS-ről.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a header színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. `#` jellel kezdődnek, majd 6 betű (A-F) és szám (0-9) következik. Színkódokat például itt találhatsz: http://www.colorpicker.com/. [Előre meghatározott színeket][3] is használhatsz, mint a `red` vagy a `green`.
-
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a címsor színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. [Előre meghatározott színeket](http://www.w3schools.com/colors/colors_names.asp) is használhatsz, mint a `red` vagy a `green`.
 
 A `blog/static/css/blog.css` fájlba írd bele a következő kódot:
 
+{% filename %}blog/static/css/blog.css{% endfilename %}
+
 ```css
 h1 a {
-  color: #FCA205;
+    color: #FCA205;
 }
-```    
+```
 
-A `h1 a` egy CSS szelektor. Ez azt jelenti, hogy alkalmazzuk a stílusunkat minden olyan `a` elemre, ami egy `h1` elemen belül van (például, mikor valami ilyesmi van a kódban: `<h1><a href="">link</a></h1>`). Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Természetesen nyugodtan használd a saját színedet itt!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Természetesen nyugodtan használd a saját színedet itt!
 
-A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. Az egyes elemek beazonosíthatók az elemek nevei alapján (pl. `a`, `h1`, `body`), és a `class` vagy az `id` attribútumaik alapján. A class és az id olyan nevek, amelyeket te adhatsz meg az elemeknek. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. A következő tag például beazonosítható akár az "`a`" tag névvel, az `external_link` class-szal vagy a `link_to_wiki_page` id-val:
+A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```    
+```
 
-Olvass utána a [CSS szelektorokról a w3schools oldalán][4].
+You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-Mindezek után közölnünk kell a HTML fájlunkkal is, hogy hozzáadtunk pár CSS-t. Nyisd meg a `blog/templates/blog/post_list.html` fájlt és add a következő sort a fájl legelejére:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
-```    
+```
 
-Itt csak betöltünk pár statikus fájlt :). Ezután a `<head>` és a `</head>` tagek közé, a Bootstrap CSS fájlok linkjei után (a böngésző olyan sorrendben olvassa az egyes fájlokat, amilyenben követik egymást, tehát a mi fájlunkban lévő kód lehet, hogy felülír pár kódot a Bootstrap fájlban), a következő sort add:
+We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```     
+```
 
-Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
 
 Így kellene kinéznie a fájlodnak:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -129,37 +133,38 @@ Most megmondtuk a template-ünknek, hol találja a CSS fájlokat.
     </body>
 </html>
 ```
-    
 
-Oké, mentsd el a fájlt és frissítsd be az oldalt!
+OK, save the file and refresh the site!
 
-![14.2 ábra][5]
-
- [5]: images/color2.png
+![Figure 14.2](images/color2.png)
 
 Szép munka! Lehet, hogy jó lenne adni egy kis "teret" a weboldalunknak és növelni a bal oldali margót. Próbáljuk meg!
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
     padding-left: 15px;
 }
-```    
+```
 
-Írd hozzá a CSS fájlodhoz, mentsd el és lássuk, működik-e!
+Add that to your CSS, save the file and see how it works!
 
-![14.3 ábra][6]
+![Figure 14.3](images/margin2.png)
 
- [6]: images/margin2.png
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
-Lehet, hogy testre szabhatnánk a betű stílusát a header-ünkben. A következő sort másold bele a `<head>`-be a `blog/templates/blog/post_list.html` fájlon belül:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```    
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
-Ez a sor beimportál egy *Lobster* nevű betűtípust a Google Fonts-ból (https://www.google.com/fonts).
+As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Most add hozzá a `font-family: 'Lobster';` sort a `blog/static/css/blog.css` fájlodban, a `h1 a` stílusát meghatározó blokkhoz (ez a `{` kapcsos zárójel `}` közötti kód) és frissítsd az oldalt:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
@@ -168,23 +173,25 @@ h1 a {
 }
 ```
 
-![14.3 ábra][7]
+![Figure 14.3](images/font.png)
 
- [7]: images/font.png
+Great!
 
-Szuper!
-
-Ahogy fentebb említettük, a CSS-ben van egy "class" nevű fogalom, ami alapvetően azt teszi lehetővé, hogy elnevezd a HTML kódod egy részét és alkalmazz rajta egy stílust, csak ezen a részen, ami így nem befolyásolja a többit. Nagyon hasznos tud lenni, például amikor van két dived, amelyek nagyon különböző dolgokat csinálnak (akár a header-ed vagy a post-od), tehát nem akarod, hogy ugyanúgy nézzenek ki.
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
 Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` nevű class-t a `div`-edhez, amelyik a header-t tartalmazza, akárcsak így:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-``` 
+```
 
-És most adj egy `post` class-t a `div`-hez, ami a blog postokat tartalmazza.
+And now add a class `post` to your `div` containing a blog post.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="post">
@@ -194,7 +201,9 @@ Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` n
 </div>
 ```
 
-Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. Rengeteg szuper tutorial és magyarázat található a weben a CSS-ről, ami segít megérteni a következő kódot. Most csak másold ki és illeszd be a `blog/static/css/blog.css` fájlodba:
+Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Most csak másold ki és illeszd be a `blog/static/css/blog.css` fájlodba:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
@@ -218,7 +227,6 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
     color: #828282;
 }
 
@@ -248,6 +256,8 @@ h1, h2, h3, h4 {
 
 Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post" attribútummal. Cseréld le ezt:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% for post in posts %}
     <div class="post">
@@ -258,7 +268,9 @@ Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post"
 {% endfor %}
 ```
 
-a `blog/templates/blog/post_list.html` fájlban ezzel:
+in the `blog/templates/blog/post_list.html` with this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="content container">
@@ -267,7 +279,7 @@ a `blog/templates/blog/post_list.html` fájlban ezzel:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        <p>published: {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaksbr }}</p>
@@ -278,16 +290,14 @@ a `blog/templates/blog/post_list.html` fájlban ezzel:
 </div>
 ```
 
-Mentsd el a fájlokat és frissítsd az oldalad.
+Save those files and refresh your website.
 
-![14.4 ábra][8]
+![Figure 14.4](images/final.png)
 
- [8]: images/final.png
+Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
-Nahát! Fantaszikus nem? A kódot, amit beillesztettünk, nem túl nehéz megérteni és a nagyja már csak átolvasva is érthető kell, hogy legyen. Mit változtatnál ahhoz, hogy a dátum türkízkék színű legyen?
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
-Ne félj kicsit megbuherálni ezt a CSS-t és megváltoztatni pár dolgot. Ha valamit elrontasz, ne aggódj, vissza tudod csinálni!
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Mindenesetre melegen ajánljuk ezt az ingyenes online [Codeacademy HTML & CSS kurzust][2], mint workshop utáni házi feladatot, hogy mindent tudj arról, hogyan tudod csinosabbá varázsolni a weboldaladat CSS-sel.
-
-Készen állsz a következő fejezetre?! :)
+Ready for the next chapter?! :)

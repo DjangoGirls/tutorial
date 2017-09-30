@@ -1,8 +1,10 @@
-# Django admin 管理后台
+# Django admin
 
-我们将使用 Django admin 添加，编辑和删除我们刚刚创建的帖子。
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-让我们打开`blog/admin.py`文件，并替换其中的文件像这样：
+Let's open the `blog/admin.py` file and replace its contents with this:
+
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
 from django.contrib import admin
@@ -11,15 +13,19 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-如你所见，我们导入（包括）了前一章定义的Post模型。 为了让我们的模型在admin页面上可见，我们需要使用`admin.site.register(Post)`来注册模型.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python manage.py runserver`启动服务器。 然后打开浏览器，输入地址 http://127.0.0.1:8000/admin/ 你会看到登录界面像这样:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![登录页面][1]
+![Login page](images/login_page2.png)
 
- [1]: images/login_page2.png
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-为了登录, 你需要创建一个掌控整个网站所有东西的*超级用户*。 回到刚才的命令行，输入`python manage.py createsuperuser`，按下Enter。 然后输入你的用户名(英文小写，不包括空格), 邮箱和密码。 你输密码的时候看不见输入？别担心，它就是这样的。 你就输入要输得到然后按`Enter`继续就好了。 输出应该长得像这样（用户名和邮箱应该是你自己的）：
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin
@@ -27,22 +33,18 @@ OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python m
     Password:
     Password (again):
     Superuser created successfully.
+    
 
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-返回到你的浏览器，用你刚才的超级用户来登录，然后你应该能看到Django admin的管理面板。
+![Django admin](images/django_admin3.png)
 
-![Django管理][2]
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 
- [2]: images/django_admin3.png
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
-到 Posts 页面多试几次，发布5、6条博客文章，不用担心你的文章内容，你可以复制粘贴这个教程的一些文字，这样比较节约时间 :)。
+![Django admin](images/edit_post3.png)
 
-请确保至少有两到三个帖子（但不是全部）具有设置的发布日期。它在以后会有用。
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-![Django管理][3]
-
- [3]: images/edit_post3.png
-
-如果你想更多地了解Django admin模块，你可以查看Django 的官方文档:https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
-
-现在你可以来杯咖啡(或者是茶) 或吃点东西给自己充下电，你刚刚创建了你的第一个Django模型，你应该休息一下。
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!

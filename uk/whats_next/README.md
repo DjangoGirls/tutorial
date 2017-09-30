@@ -1,21 +1,20 @@
-# Що далі?
+# What's next?
 
-Привітайте себе! __Ви абсолютно неймовірні.__ Ми пишаємося вами! <3
+Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### Що тепер робити?
+### What to do now?
 
-Перепочиньте і розслабтеся. Ви щойно створили щось дійсно велике.
+Take a break and relax. You have just done something really huge.
 
-Після цього переконайтеся, що ви:
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-- Підписалися на Django Girls у [Facebook](http://facebook.com/djangogirls) або в [Twitter](https://twitter.com/djangogirls), щоб бути в курсі усіх подій
+### Can you recommend any further resources?
 
-### Чи можете ви порекомендувати інші джерела?
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
+Later on, you can try the resources listed below. They're all very recommended!
 
-Пізніше, ви можете спробувати джерела, перелічені нижче. Дуже рекомендуємо!
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)

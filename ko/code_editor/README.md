@@ -1,11 +1,11 @@
-# 코드 에디터
+# Code editor
 
-> **Note** 집에서 학습하시는 분들은 [파이썬 및 코드 에디터 설치하기](https://www.youtube.com/watch?v=pVTaqzKZCdA&amp;t=4m43s) 영상을 보세요.
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-이제 곧 코드를 작성할 예정이니, 코드 에디터를 설치할 차례입니다!
+You're about to write your first line of code, so it's time to download a code editor!
 
-> **Note** 크롬북 사용자는 이번 장을 건너뛰고 [크롬북에서 설치하기](../chromebook_setup/README.md) 장으로 넘어가세요.
-
-> **Note** 설치하기 장에 있는 내용을 모두 마쳤다면 다음 장으로 넘어가도 됩니다!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}

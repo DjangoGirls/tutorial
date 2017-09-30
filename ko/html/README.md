@@ -1,44 +1,44 @@
-# HTML 시작하기
+# Introduction to HTML
 
-템플릿은 어떤 일을 하는지 궁금했죠?
+What's a template, you may ask?
 
-템플릿이란 서로 다른 정보를 일정한 형태로 표시하기 위해 재사용 가능한 파일을 말해요. 예를 들면 편지에도 같은 템플릿을 사용할 수 있어요. 편지의 내용이나 수신인 주소는 달라져도 같은 디자인, 레이아웃을 사용하는 때도 있으니까요.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-장고 템플릿 양식은 HTML을 사용합니다. (HTML은 인터넷은 어떻게 작동할까요에서 들어본 내용이죠)
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## HTML이란 무엇일까요?
+## What is HTML?
 
-HTML은 크롬이나 파이어폭스, 사파리 같은 웹 브라우저가 해석할 수 있는 간단한 코드예요. 사용자에게 웹 페이지를 표시할 때 사용합니다.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML은 "HyperText Markup Language"의 줄임말로, __하이퍼텍스트(HyperText)__ 는 페이지 간 하이퍼링크가 포함된 텍스트라는 뜻입니다. **마크업(Markup)** 이란 누군가(브라우저)가 문서를 해석하도록 표시(mark)를 했다는 뜻이에요. HTML은 **태그(tag)** 들로 이루어져 있어요. 태그는 `<(여는 태그)` 로 시작하고 `>(닫는 태그)`로 끝나는데, 이는 마크업 **요소(elements)** 를 말합니다.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## 첫 번째 템플릿!
+## Your first template!
 
-템플릿은 곧 템플릿 파일을 만든다는 뜻이에요. 템플릿 파일에 모든 내용이 저장되겠죠? 이미 알고 있을 것 같아요.
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-템플릿은 `blog/templates/blog`디렉토리에 저장됩니다. 먼저 `blog`디렉터리 안에 하위 디렉터리인 `templates`을 생성하세요. 그리고 `template`디렉토리 내 `blog`라는 하위 디렉토리를 생성하세요.
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
-```
-blog
-└───templates
- └───blog
-```
+    blog
+    └───templates
+        └───blog
+    
 
-(왜 똑같은 `blog`디렉토리를 하나 더 만들어야하는지 궁금할 거에요. 나중에 알게 되겠지만, 나중에 폴더 구조가 복잡해 질 때 좀더 쉽게 찾기 위해 사용하는 관습적인 방법이랍니다)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-다음 `blog/templates/blog`디렉토리 안에 `post_list.html`이라는 새 파일(현재는 빈 파일)을 만드세요.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-그리고 웹 사이트를 확인해보세요. http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
-> `TemplateDoesNotExists`에러가 보인다면, 웹 서버를 다시 시작하세요. 커맨드라인(혹은 콘솔)으로 가서 `Ctrl + C`를 눌러 웹 서버를 중단합니다. 다시 `python manage.py runserver`명령을 실행해 서버를 재시작합니다.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
-이제 에러가 사라졌어요! 축하합니다. 하지만 웹 사이트에 아무것도 보이지 않네요. 이제 하나씩 고쳐나가 봅시다.
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-`post_list.html`템플릿 파일에 아래 내용을 넣어주세요.
+Add the following to your template file:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <p>Hi there!</p>
@@ -46,26 +46,29 @@ blog
 </html>
 ```
 
-웹 사이트가 어떻게 보이나요? 확인해보세요. http://127.0.0.1:8000/
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-잘 작동하네요! 잘 했습니다.
+It worked! Nice work there :)
 
-*   모든 웹 페이지는 `<html>`로 시작해 `</html>`로 마칩니다. 가장 기본적인 태그이지요. 모든 내용은 시작 태그 `<html>`과 닫는 태그인`</html>` 사이에 넣어야합니다.
-*   `<p>`는 문단 태그입니다. 문단의 끝 역시 `</p>`로 닫습니다.
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-## Head & body
+## Head and body
 
-각 HTML 페이지는 두 가지 요소, **head**와 **body**로 구분됩니다.
+Each HTML page is also divided into two elements: **head** and **body**.
 
-*  **head** 는 문서 정보를 가지고 있지만, 웹 페이지에서 보이지 않는 정보들을 담는 영역입니다.
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-*  **body** 란 웹 페이지에 직접적으로 보이는 내용이 들어갑니다. 웹 페이지의 내용은 모두 이 body태그안에 들어갑니다.
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-`<head>`는 브라우저에 페이지에 대한 설정들을 알려주고, `<body>`는 실제 페이지에 보여줄 내용을 알려줍니다.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+
+For example, you can put a web page title element inside the `<head>`, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <head>
@@ -78,35 +81,37 @@ blog
 </html>
 ```
 
-파일을 저장하고 페이지를 새로고침 하세요.
+Save the file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
-브라우저는 어떻게 "Ola's blog"를 웹 페이지의 제목으로 이해했을까요? 바로 브라우저가 `<title>Ola's blog</title>`를 해석해 브라우저 제목 표시줄에 내용을 반영한 것입니다. (해당 페이지를 북마크를 할 때도 동일합니다)
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-태그는 `/`로*태그 마침*하고 여러 태그를 *중첩(nested)*해서 사용할 수 있습니다. (모든 태그를 꼭 닫아줘야합니다)
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-태그는 상자에 뭔가 집어넣는 것과 같아요. `<html></html>`라고 하는 큰 상자가 있다면, 상자 안에는 `<body></body>` 상자가 있고, 또 그 상자 안에는 `<p></p>`라는 더 작은 상자가 있는 것과 같아요.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
-*태그 마침*과 *중첩*의 규칙을 잘 따라야 해요. 그렇지 않으면, 브라우저가 해석할 수 없어 페이지가 원하는 모습으로 나오지 않게 됩니다.
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## 맞춤형 템플릿 만들기
+## Customize your template
 
-앞으로 좀 더 재밌어질 거에요. 나만의 템플릿을 만들어 볼 거에요! 아래 태그들을 짚고 넘어가세요.
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-* `<h1>A heading</h1>` - 큰 제목
-* `<h2>A sub-heading</h2>` - 중 제목
-* `<h3>A sub-sub-heading</h3>` - 소 제목... `<h6>`레벨까지 사용할 수 있습니다.
-* `<em>text</em>` - 텍스트 기울기 (Italic)
-* `<strong>text</strong>` - 텍스트를 두껍게(Bold)
-* `<br />` - 줄바꿈 (br은 스스로 닫히는 태그로 속성을 사용할 수 없습니다)
-* `<a href="http://djangogirls.org">link</a>` - 하이퍼링크 걸기
-* `<ul><li>first item</li><li>second item</li></ul>`- 목록 만들기
-* `<div></div>` - 페이지 섹션
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
-아래 템플릿 예제가 있습니다.
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <head>
@@ -132,78 +137,77 @@ blog
 </html>
 ```
 
-이 템플릿에는 세 개의 `div` 섹션이 있습니다.
+We've created three `div` sections here.
 
-* 첫 번째 `div`는 블로그 제목을 가지고 있어요. 머리말과 링크이지요.
-* 나머지 두 `div`는 블로그 게시일과 `h2`로 된 블로그 제목과 링크를가 있습니다. 두 `p(문단)`의 하나는 날짜를, 다른 하나는 블로그를 가리키죠.
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-태그로 웹 페이지 화면이 아래와 같이 바뀝니다.
+It gives us this effect:
 
 ![Figure 11.4](images/step6.png)
 
-야호! 이전 템플릿은 **동일한 내용** 만을 보여줬어요. 이처럼 템플릿은 **같은 양식** 을 사용하지만, **다른** 정보들을 보여줄 때 사용됩니다.
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-장고 관리자에서 추가한 글을 보여주는 방법은 곧 알아볼 거에요.
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## 하나 더: 배포하기!
+## One more thing: deploy!
 
-방금 고친 내용을 인터넷에서도 봐야겠죠? PythonAnywhere으로도 배포해 봅시다.
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Github에 코드를 커밋, 푸시하세요!
+### Commit, and push your code up to Github
 
-제일 먼저, 마지막 배포 이후 수정된 파일을 확인해 봅시다. (PythonAnywhere가 아닌 로컬에서 실행하세요)
-
-{% filename %}command-line{% endfilename %}
-```
-$ git status
-```
-
-`djangogirls` 디렉터리에서 `git`에게 현재 폴더에 있는 모든 변경 내용을 포함시키라고 말해봅시다.
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
-```
-$ git add --all .
-```
 
-> **Note** `-A` ("all"의 축약어)는 `git`이 삭제한 파일을 인식합니다. (기본적으로, 새로 추가하거나 변경한 파일만 인식합니다) `.`가 현재 디렉터리라는 것을 기억하고 있죠? (3장에서 언급한 내용이에요)
+    $ git status
+    
 
-파일 업로드 전, `git`으로 업로드 할 파일들을 확인해봅시다. (`git`에서 업로드 할 모든 파일들은 녹색으로 표시됩니다)
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
-```
-$ git status
-```
 
-거의 다 왔습니다. 이제 github 저장소에 변경 사항을 히스토리에 저장할 단계예요. `커밋 메시지(commit message)`를 입력해, 수정 변경된 내용을 알려줄 거에요. 메시지 내용은 아무거나 적어도 되지만, 나중에 작업 내용을 기억할 수 있도록 설명 내용을 간단히 입력하는 것이 좋습니다.
+    $ git add --all .
+    
 
-{% filename %}command-line{% endfilename %}
-```
-$ git commit -m "Changed the HTML for the site."
-```
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-> **Note** 커밋 메시지를 쌍따옴표(")로 감싸주세요.
-
-완성되면, github으로 업로드(푸쉬) 하세요.
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
-```
-$ git push
-```
 
+    $ git status
+    
 
-### PythonAnywhere에서 새 코드를 가져와, 웹 앱을 다시 불러옵니다.
-
-* [PythonAnywhere 콘솔 페이지](https://www.pythonanywhere.com/consoles/)를 열고 **배시 콘솔** (또는 새로운 창)에서 아래와 같이 명령어를 입력합니다.
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
-```
-$ cd ~/my-first-blog
-$ git pull
-[...]
-```
 
-코드가 다운되고 있죠? 다 되었는지 확인하고 싶으면 **파일 탭(Files tab)**에 가서 내 코드가 PythonAnywhere에 있는지 확인합니다.
+    $ git commit -m "Changed the HTML for the site."
+    
 
-* 마지막으로 [Web tab](https://www.pythonanywhere.com/web_app_setup/)으로 가서 웹 앱을 **다시 불러오기(Reload)**를 하세요.
+> **Note** Make sure you use double quotes around the commit message.
 
-인터넷에도 업데이트 되었어요! 브라우저를 새로고침하면 변경된 내용을 확인할 수 있어요. 변경한 내용이 보일 거에요. :)
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+    
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)

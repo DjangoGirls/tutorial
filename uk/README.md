@@ -1,45 +1,51 @@
-# Навчальний посібник Django Girls
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Django Girls Tutorial
 
-> Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0
-International License. Щоб переглянути копію цієї ліцензії, відвідайте
-https://creativecommons.org/licenses/by-sa/4.0/
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-## Translation
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-This tutorial has been translated from English by a group of awesome volunteers: [chupakabra](https://github.com/chupakabra), [Oleksandr Redko](https://github.com/alexandear), [Taras Bunyk](https://github.com/bunyk), [msihor](https://crowdin.com/profile/msihor), [Olesia Hrydzhuk](https://github.com/Zlira), [Andriy Kohut](https://github.com/andriykohut), [Artem Suchov](https://crowdin.com/profile/suchov), [Artem Godlevskyi](https://github.com/errno), [Alex Vykalyuk](https://crowdin.com/profile/alekzvik), [Kostyantyn Leschenko](https://crowdin.com/profile/kleschenko). Special thanks for all the free time they sacrificed to make that happen! <3
+## Welcome
 
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-## Вступ
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-Чи ви коли-небудь відчували, що світ крутиться все більше і більше навколо технологій, а ви в певній мірі пасете задніх? Чи вас колись цікавило, як створити веб-сайт, однак, ніколи не вистачало достатньої мотивації, щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?
+## Introduction
 
-Що ж, маємо гарні новини для вас! Програмування - це не так складно, як може здатися, і ми хочемо вам показати, наскільки веселим цей процес може бути.
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Даний навчальний посібник не перетворить вас магічним чином на програміста. Якщо ви хочете розбиратися у цьому, то вам потрібні будуть для цього місяці або навіть роки теорії та практики. Однак ми хочемо показати вам, що програмування або створення веб сайтів не є настільки складним, як це здається. Спробуємо пояснити різні поняття настільки, наскільки зуміємо, то ж ви не будете почуватися заляканими технологіями.
+Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
-Сподіваємось, ми зможемо навчити вас полюбити технології настільки, наскільки любимо їх ми самі!
+This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-## Що ви вивчите під час освоєння посібника?
+We hope that we'll be able to make you love technology as much as we do!
 
-По завершенню даного посібника, ви будете мати простий робочий веб-додаток - свій власний блог. Ми покажемо вам як опублікувати його в Інтернеті, тож інші також зможуть оцінити вашу роботу!
+## What will you learn during the tutorial?
 
-Це буде (в більшій чи меншій мірі) виглядати наступним чином:
+Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-![Рисунок 0.1](images/application.png)
+It will (more or less) look like this:
 
-> Якщо ви працюєте над матеріалами самостійно і не маєте інструктора, що зміг би допомогти у разі певної проблеми, для вас існує чат: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Ми попросили наших інструкторів і попередніх учасників бути там час від часу та допомагати іншим із освоєнням матеріалу! Не бійтеся задавати свої питання!
+![Figure 0.1](images/application.png)
 
-Гаразд, [почнемо з самого початку...](./how_the_internet_works/README.md)
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-## Коротка інформація та вклад
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-Цей посібник підтримується спільнотою [DjangoGirls](https://djangogirls.org/). Якщо ви знайдете якісь помилки або захочете зробити певні оновлення, будь ласка, [виконуйте вказівки з частини про вклад](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+## Following the tutorial at home
 
-## Чи не бажаєте допомогти нам із перекладом посібника на інші мови?
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-На даний момент, переклади підтримуються на платформі crowdin.com:
+In every chapter already covered, there is a link that points to the correct video.
+
+## About and contributing
+
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+
+## Would you like to help us translate the tutorial to other languages?
+
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Якщо ваша мова не перерахована на crowdin, будь ласка, [відкрийте нову тему](https://github.com/DjangoGirls/tutorial/issues/new), що інформує про мову, таким чином ми зможемо додати її.
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.

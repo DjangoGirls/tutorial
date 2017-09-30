@@ -1,27 +1,27 @@
-# Che cos'è Django?
+# What is Django?
 
-Django (*/ˈdʒæŋɡoʊ/ jang-goh*) è un framework per applicazioni web gratuito e open source, scritto in Python. Un web framework è un insieme di componenti che ti aiuta a sviluppare siti web più velocemente e facilmente.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-Quando si costruisce un sito web, si ha sempre bisogno di un insieme di componenti simili: un sistema per gestire l'autenticazione dell'utente (registrazione, accesso, logout), un pannello di amministrazione per il tuo sito web, un sistema per caricare i file, ecc.
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
-Fortunatamente, alcune persone diverso tempo fa si sono rese conto che gli sviluppatori web incontrano problemi simili ogni volta che costruiscono un sito internet. Per questo motivo si sono uniti e hanno costruito dei framework (di cui Django fa parte) che offrono componenti già pronti per l'uso.
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-I frameworks esistono per evitare che tu debba reinventare la ruota e ti semplificano il lavoro quando crei un nuovo sito.
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-## Perché ho bisogno di un framework?
+## Why do you need a framework?
 
-Per capire Django, abbiamo bisogno di dare un'occhiata più da vicino ai server. La prima cosa che il server deve sapere è che vuoi che ti fornisca una pagina web.
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-Immagina una cassetta delle lettere che monitora tutte le lettere in entrata (richieste). Questo è ciò che fa un web server. Il web server legge le lettere, e invia una risposta con una pagina web. Ma quando vuoi inviare qualcosa, hai bisogno di avere qualche contenuto. E Django è ciò che ti aiuta a creare questo contenuto.
+Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
-## Cosa succede quando qualcuno richiede un sito Web dal tuo server?
+## What happens when someone requests a website from your server?
 
-Quando una richiesta arriva al web server, viene passata a Django che prova a capire che cosa é stato veramente richiesto. Django prende l'indirizzo della pagina web e cerca di capire cosa deve fare. Questa parte viene svolta da Django **urlresolver** (nota che l'indirizzo di una pagina web si chiama URL - Uniform Resource Locator -per cui il nome *urlresolver* acquista significato). Non é molto intelligente -ha bisogno di una serie di schemi e in seguito prova a far corrispondere l'URL. Django controlla questi modelli o schemi da cima a fondo e se qualcosa corrisponde a quel punto Django passa la richiesta alla funzione associata (che si chiama *view*).
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-Immagina un postino con una lettera. Sta camminando per la strada e controlla ogni numero civico mettendolo a confronto con quello sulla lettera. Se corrisponde, mette lì la lettera. Questo è il modo in cui l'urlresolver funziona!
+Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-Nella funzione *view* avvengono tutte le cose più interessanti: possiamo consultare un database alla ricerca di qualche informazione. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? È come una lettera che dice "Per favore cambia la descrizione del mio lavoro". La *view* può controllare se sei autorizzata a farlo, poi aggiorna la descrizione del lavoro per te e manda un messaggio: "Fatto!". In seguito, la *view* genera una risposta e Django la può inviare al browser dell'utente.
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Naturalmente, la descrizione qui sopra é molto semplificata, ma per il momento non hai bisogno di sapere nel dettaglio tutti gli aspetti tecnici. Avere il senso generale per il momento è abbastanza.
+Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Per cui invece di perderci troppo nei dettagli, creeremo semplicemente qualcosa usando Django e apprenderemo i concetti fondamentali lungo la strada!
+So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!

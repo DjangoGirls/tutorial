@@ -1,60 +1,51 @@
-# Руководство Django Girls
+# Django Girls Tutorial
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Это руководство распространяется под международной лицензией Creative Commons Attribution-ShareAlike 4.0
-Чтобы ознакомиться с содержанием этой лицензии, посети: https://creativecommons.org/licenses/by-sa/4.0/
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Вступительное слово
+## Welcome
 
-Добро пожаловать в руководство Django Girls! Мы рады тебя здесь видеть :) В этом руководстве мы заглянем за кулисы веб-технологий и дадим 
-базовое представление о тех вещах, которые собираются в общую картину веба таким, каким мы его знаем.
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Как и с любой незнакомой темой – это будет приключением. Но не волнуйся, тебе уже хватило смелости оказаться здесь, так что всё будет хорошо :) 
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Введение
+## Introduction
 
-Ты когда-нибудь чувствовала, что мир становится все более и более технологичным, в то время как ты остаёшься где-то позади? Ты задумывалась о том, как создать веб-сайт, но мотивации начать никогда не хватало? Приходило ли тебе в голову, что мир программного обеспечения слишком сложен, чтобы пробовать сделать что-то самой?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Тогда у нас есть для тебя хорошие новости! Программирование – не такая уж сложная задача, как кажется, и мы покажем тебе, как весело это может быть.
+Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
-Это руководство не превратит тебя волшебным образом в программиста. Если ты хочешь добиться мастерства, то потребуются месяцы, а может быть и годы обучения и практики. Однако, мы хотим показать тебе, что программирование или создание веб-сайтов не настолько сложная задача как может показаться. Мы постараемся объяснить все настолько хорошо, насколько сможем, чтобы ты не чувствовала себя запуганной техническими деталями.
+This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-Надеемся, что ты полюбишь информационные технологии также, как мы любим их!
+We hope that we'll be able to make you love technology as much as we do!
 
-## Что ты узнаешь из этого руководства?
+## What will you learn during the tutorial?
 
-После прохождения руководства у тебя будет простое работающее веб-приложение: свой собственный блог. Мы покажем, как разместить его онлайн, чтобы другие увидели твою работу!
+Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-Он будет выглядеть следующим образом (более или менее):
+It will (more or less) look like this:
 
-![Рисунок 0.1](images/application.png)
+![Figure 0.1](images/application.png)
 
-> Если ты будешь работать над учебником самостоятельно и без тренера, который смог бы помочь при необходимости, то у нас есть для тебя чат: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Мы попросили наших тренеров и успешно прошедших обучение участников заглядывать туда время от времени и помогать остальным! Не стесняйся задавать там свои вопросы!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-Хорошо, [давай начнем с начала...][3]
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
- [3]: ./how_the_internet_works/README.md
+## Following the tutorial at home
 
-## Прохождение руководства дома
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-Принимать участие в воркшопе Django Girls – это потрясающе, но мы понимаем, что не всегда есть такая возможность. Поэтому мы приветствуем прохождение
-данного руководства дома. В настоящий момент мы готовим видео, которое поможет следовать руководству самостоятельно. Работа над ними ещё не закончена,
-но все больше и больше тем скоро будут разобраны на YouTube-канале [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
+In every chapter already covered, there is a link that points to the correct video.
 
-## Сотрудничество и дополнительная информация
+## About and contributing
 
-Это руководство поддерживается [DjangoGirls][4]. Если ты нашла ошибки или хочешь обновить информацию, пожалуйста, [следуй этим рекомендациям][5].
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+## Would you like to help us translate the tutorial to other languages?
 
-## Хочешь помочь с переводом руководства на другие языки?
-
-В настоящее время перевод координируется через платформу crowdin.com:
+Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Если твоего языка нет в списке на crowdin, пожалуйста, [дай нам знать][6], чтобы мы могли его добавить.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.

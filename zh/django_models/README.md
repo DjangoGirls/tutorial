@@ -1,16 +1,16 @@
-# Django模型
+# Django models
 
-我们现在将要创建的是一个能存储我们博客所有文章的东西。为了达到这个目的，我们将要讲解一下一个被称为`objects（对象）`的东西.
+What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
-## 对象
+## Objects
 
-在编程中有一个概念叫做 `面向对象编程` 。 它的思想是，与其用无聊的一连串的程序指令方式写程序，我们不如为事物建立模型，然后定义他们是怎样互相交互的。
+There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-那什么是对象呢？它是一个属性和操作的集合。它听起来很奇怪，但我们会给你一个例子。
+So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
-如果我们想塑造一只猫的模型，我们会创建一个名为`Cat`的对象，它含有一些属性例如：`color`, `age`, `mood`(又比如：good, bad, sleepy ;))，还有`owner（主人）` (那是一个`Person`对象或者假若是流浪猫，这个属性可以为空)。
+If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
-然后这个`Cat`会有一些行为: `purr`, `scratch`, 或者`feed` (在这其中我们会给这只猫一些 `CatFood`，这个`CatFood`可以是单独的一个包含比如<0>taste</0>属性的对象).
+Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
     Cat
     --------
@@ -22,19 +22,19 @@
     scratch()
     feed(cat_food)
     
-    
+
     CatFood
     --------
     taste
     
 
-所以基本思想就是用包含属性的代码来描述真实的东西（称为 `对象属性`）和操作 （称为 `方法`).
+So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
-我们将如何为博客帖子建立模型呢？我们想要建立一个博客，对吗？
+How will we model blog posts then? We want to build a blog, right?
 
-我们需要回答一个问题：什么是一篇博客文章？它应该含有什么样的属性？
+We need to answer the question: What is a blog post? What properties should it have?
 
-嗯，肯定我们的博客文章需要一些文本，包括内容与标题，对吗？ 我们也需要知道是谁写的 — — 所以我们需要一位作者。 最后，我们想要知道什么时候该文章创建并发布。
+Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
     Post
     --------
@@ -45,124 +45,143 @@
     published_date
     
 
-一篇博客文章需要做什么样的事情？应该有一些正确的 `方法` 来发布文章，对吗？
+What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
 
-因此我们需要一个`publish`的方法
+So we will need a `publish` method.
 
-既然我们已经知道什么是我们想要实现的，让我们开始在Django里面为它建模！
+Since we already know what we want to achieve, let's start modeling it in Django!
 
-## Django模型
+## Django model
 
-知道什么是对象，我们可以为我们的博客文章创建一个 Django 模型。
+Knowing what an object is, we can create a Django model for our blog post.
 
-Django 里的模型是一种特殊的对象 — — 它保存在 `数据库` 中。 数据库是数据的集合。 这是您存储有关用户、 您的博客文章等信息的地方。 我们将使用SQLite 数据库来存储我们的数据。 这是默认的 Django 数据库适配器 — — 对于我们现在的需求而言它是足够的。
+A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
 
-您可以将数据库中的模型看作是电子表格中的列 （字段） 和行 （数据）。
+You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
-### 创建应用程序
+### Creating an application
 
-为了让一切保持整洁，我们将我们的项目内部创建单独的应用程序。 如果一开始就让每一件东西井然有序，那就太好了。 为了创建一个应用程序，我们需要在命令行中执行以下命令 (从`manage.py` 文件所在的`djangogirls` 目录)：
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
 
-你会注意到一个新的 `blog` 目录被创建，它现在包含一些文件。我们的目录和我们的项目中的文件现在应该看起来像这样：
+You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
     djangogirls
-    ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
     ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
+    └── mysite
         ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
     
 
-创建应用程序后，我们还需要告诉 Django 它应该使用它。 我们是在 `mysite/settings.py`文件中这样做的。 我们需要找到 `INSTALLED_APPS` 并在它下面添加一行`'blog'` 。 所以最终的代码应如下所示：
+After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
 
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'blog',
-    )
-    
+{% filename %}mysite/settings.py{% endfilename %}
 
-### 创建一个博客文章模型
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+]
+```
 
-我们在 `blog/models.py` 文件中，定义所有的 `Models` 对象— — 我们将在其中都定义我们的博客文章。
+### Creating a blog post model
 
-让我们打开 `blog/models.py`，从中删除一切并编写这样的代码：
+In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-    from django.db import models
-    from django.utils import timezone
-    
-    
-    class Post(models.Model):
-        author = models.ForeignKey('auth.User')
-        title = models.CharField(max_length=200)
-        text = models.TextField()
-        created_date = models.DateTimeField(
-                default=timezone.now)
-        published_date = models.DateTimeField(
-                blank=True, null=True)
-    
-        def publish(self):
-            self.published_date = timezone.now()
-            self.save()
-    
-        def __str__(self):
-            return self.title
-    
+Let's open `blog/models.py`, remove everything from it, and write code like this:
 
-> 当你在`str`的两端使用两个下划线字符（`_`）的时候务必三思而后行。 这是Python编程里面的一种常见的约定写法，有时我们也叫这个做"dunder"("double-underscore"的缩写)。
+{% filename %}blog/models.py{% endfilename %}
 
-这看起来太吓人了，对吧？不过不用担心，我们会解释这几行是什么意思！
+```python
+from django.db import models
+from django.utils import timezone
 
-所有以 `from` 或 `import` 开始的所有行，都是需要从其他文件中添加一些内容。 所以与其复制和粘贴同样的内容，我们可以用 `from...... import......`来导入这些文件.
 
-`class Post(models.Model):` - 这行是用来定义我们的模型 (这是一个 `对象`).
+class Post(models.Model):
+    author = models.ForeignKey('auth.User')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
 
-*   `class` 是一个特殊的关键字，表明我们在定义一个对象。
-*   `Post`是我们模型的一个名字。我们可以给它取另外一个不同的名字(但是我们必须避免使用特殊字符或者空格符)。总是以首字面大写来作为类名。
-*   `models.Model` 表明Post是一个Django模型，所以Django知道它应该被保存在数据库中。
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
-现在我们定义了我们曾经提及到的那些属性：`title`, `text`, `created_date`, `published_date`和`author`。 为了做到那样我们需要为我们每个字段定义一个类型(它是文本吗？ 是数字？ 是日期？ 到另一个对象的关联，比如用户吗?）。
+    def __str__(self):
+        return self.title
+```
 
-*   `models.CharField` - 这是你如何用为数有限的字符来定义一个文本。
-*   `models.TextField` - 这是没有长度限制的长文本。这听起来用在博客文章的内容上挺适合的，对吧？
-*   `models.DateTimeField` - 这是日期和时间。
-*   `models.ForeignKey` - 这是指向另一个模型的连接。
+> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
-我们不会对这里的代码解释得面面俱到因为那会花太多时间了。 如果你想了解更多有关模型字段以及如何定义除上面描述以外的东西，那你应该去看看Django的官方文档(https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types)。
+It looks scary, right? But don't worry – we will explain what these lines mean!
 
-`def publish(self):`又怎样呢? 这正是我们之前提及到的`publish`方法。 `def`表明这是一个函数或者方法，`publish`是这个方法的名字。 如果你喜欢的话你可以改变方法名。 命名的规则是使用小写字母以及下划线而非空白符。 举个例子，一个计算平均价格的方法可以叫做`calculate_average_price`.
+All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
-方法通常会`return`一些东西。 例如在 `__str__` 方法中就有这个。 在这种情况下，当我们调用 `__str__()` 我们将得到文章标题的文本 （**字符串**）。
+`class Post(models.Model):` – this line defines our model (it is an `object`).
 
-如果关于模型尚有不清楚的，请随时问你的教练 ！ 我们知道它很复杂，特别是当你同时学习对象和函数的时候。 但希望它在你看来没有那么神奇！
+- `class` is a special keyword that indicates that we are defining an object.
+- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-### 在你的数据库中为模型创建数据表
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
-在这里的最后一步是将我们新的模型添加到我们的数据库。 首先我们必须让Django知道我们在我们的模型(我们刚刚创建的！) 有一些变更。 输入`python manage.py makemigrations blog`。 它看起来会像这样：
+- `models.CharField` – this is how you define text with a limited number of characters.
+- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
+- `models.DateTimeField` – this is a date and time.
+- `models.ForeignKey` – this is a link to another model.
+
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+
+What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+
+Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+
+Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+
+If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+
+### Create tables for models in your database
+
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
-      0001_initial.py:
+      blog/migrations/0001_initial.py:
+    
       - Create model Post
     
 
-Django为我们准备了我们必须应用到我们数据库的迁移文件。输入`python manage.py migrate blog`，然后对应的输出应该是:
+**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+
+Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
@@ -172,4 +191,4 @@ Django为我们准备了我们必须应用到我们数据库的迁移文件。�
       Applying blog.0001_initial... OK
     
 
-万岁! 我们的Post模型现在已经在我们的数据库里面了! 它看起来很不错, 对吧? 跳转到下一个章节，看看你博客文章的样子！
+Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!

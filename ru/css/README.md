@@ -1,296 +1,303 @@
-# CSS - сделай это красиво!
+# CSS – make it pretty!
 
-Наш блог все еще выглядит довольно скверно, не так ли? Пора сделать его красивым! Для этого будем использовать CSS.
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## Что такое CSS?
+## What is CSS?
 
-Каскадные таблицы стилей (англ. Cascading Style Sheets или сокращенно CSS) - специальный язык, используемый для описания внешнего вида и форматирования сайта, написанного на языке разметки (как HTML). Воспринимай это, как своего рода макияж для нашей веб-страницы ;).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-Но мы же не хотим начинать все с нуля, правда? Мы просто снова возьмем что-то, что уже было создано программистами и опубликовано в Интернете для свободного пользования. Ты же знаешь, заново изобретать велосипед совсем не весело.
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Давай использовать Bootstrap!
+## Let's use Bootstrap!
 
-Bootstrap - один из наиболее популярных HTML и CSS фреймворков для разработки красивых сайтов: https://getbootstrap.com/
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-Он был написан программистами, которые работали в Twitter, а сейчас совершенствуется волонтерами со всего мира.
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Установка Bootstrap
+## Install Bootstrap
 
-Для установки Bootstrap тебе нужно добавить следующие строки в `<head>` твоего `.html` файла (`blog/templates/blog/post_list.html`):
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Это не добавит ни одного файла к твоему проекту. Эти строки просто указывают на файлы, опубликованные в Интернете. Просто продолжай, открой свой веб-сайт и обнови страницу. Вот и результат!
+This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Рисунок 14.1][1]
+![Figure 14.1](images/bootstrap1.png)
 
- [1]: images/bootstrap1.png
+Looking nicer already!
 
-Выглядит уже лучше!
+## Static files in Django
 
-## Статические файлы в Django
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-Теперь мы ближе познакомимся с теми таинственными **статическими файлами**. Статическими файлами называются все файлы CSS и изображения, т.е. файлы, которые не изменяются динамически, их содержание не зависит от контекста запроса и будет одинаково для всех пользователей.
+### Where to put static files for Django
 
-### Куда поместить статические файлы в Django
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-Как ты видела при выполнении команды `collectstatic` на сервере, Django уже знает где искать статические файлы для встроенного приложения "admin". Теперь нам нужно добавить статические файлы для своего приложения `blog`.
+We do that by creating a folder called `static` inside the blog app:
 
-Мы сделаем это, создав папку `static` внутри каталога с нашим приложением:
-
-```
     djangogirls
     ├── blog
     │   ├── migrations
     │   └── static
     └── mysite
-```
+    
 
-Django будет автоматически находить папки "static" внутри всех каталогов твоих приложений и сможет использовать их содержимое в качестве статических файлов.
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Твой первый CSS файл!
+## Your first CSS file!
 
-Давай создадим CSS файл, чтобы добавить свой собственный стиль для твоей web-страницы. Создай новую папку под названием `css` внутри твоей папки `static`. Затем создайте новый файл под названием `blog.css` внутри папки `css`. Готова?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-```
     djangogirls
     └─── blog
          └─── static
               └─── css
                    └─── blog.css
-```
+    
 
-Пришло время написать несколько строк CSS! Открой файл `blog/static/css/blog.css` в своем редакторе кода.
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-Мы не будем здесь погружаться слишком глубоко в процесс настройки и изучения CSS, поскольку это так просто, что ты сможешь изучить этот материал самостоятельно после этого руководства. Мы настоятельно рекомендуем пройти этот курс [Codeacademy HTML & CSS course][2], чтобы изучить все, что тебе нужно знать об оформлении веб-сайтов с помощью CSS.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
- [2]: https://www.codecademy.com/tracks/web
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-Но давай сделаем хотя бы немного. Возможно, мы могли бы изменить цвет заголовка? Чтобы понимать цвета, компьютеры используют специальные коды. Они начинаются с `#` и далее следуют 6 букв (A-F) и цифр (0-9). Ты можешь найти коды цветов, например, здесь: http://www.colorpicker.com/. Также можешь пользоваться [предопределенными цветами][3], такими как `red` и `green`.
+In your `blog/static/css/blog.css` file you should add the following code:
 
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
-
-В файле `blog/static/css/blog.css` тебе нужно добавить следующий код:
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-    h1 a {
-        color: #FCA205;
-    }
+h1 a {
+    color: #FCA205;
+}
 ```
 
-`h1 a` это CSS селектор. Это означает, что мы применяем наши стили к каждому элементу `a` внутри элемента `h1` (например, когда мы имеем в коде что-то вроде: `<h1><a href="">link</a></h1>`). В этом случае мы говорим о том, что нужно изменить цвет элемента на `#FCA205`, то есть на оранжевый. Конечно, ты можешь указать свой собственный цвет!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-В CSS файле мы определяем стили для элементов файла HTML. Элементы идентифицируются именами (то есть `a`, `h1`, `body`), атрибутом `class` или атрибутом `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. Например, следующий тег может быть идентифицирован CSS с использованием имени тега `a`, класса `external_link` или идентификатора `link_to_wiki_page`:
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
-    <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Почитай про CSS селекторы в [CSS Selectors in w3schools][4].
+You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
-Затем нам также нужно сообщить нашему HTML-шаблону о том, что мы добавили CSS. Открой файл `blog/templates/blog/post_list.html` и добавь эту строку в самом начале:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    {% load staticfiles %}
+{% load staticfiles %}
 ```
 
-Мы просто загружаем здесь статические файлы :). Далее между `<head>` и `</head>`, после ссылок на файлы Bootstrap CSS (браузер читает файлы в порядке их следования, поэтому код нашего файла может переопределить код в файлах Bootstrap) добавь эту строку:
+We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Мы только что сказали нашему шаблону, где находится наш CSS файл.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
 
-Твой файл должен теперь выглядеть следующим образом:
+Your file should now look like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    {% load staticfiles %}
-    <html>
-        <head>
-            <title>Django Girls blog</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        </head>
-        <body>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
             <div>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
-
-            {% for post in posts %}
-                <div>
-                    <p>published: {{ post.published_date }}</p>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
-                </div>
-            {% endfor %}
-        </body>
-    </html>
+        {% endfor %}
+    </body>
+</html>
 ```
 
-ОК, сохрани файл и обнови страницу!
+OK, save the file and refresh the site!
 
-![Рисунок 14.2][5]
+![Figure 14.2](images/color2.png)
 
- [5]: images/color2.png
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
-Отличная работа! Может быть, мы также хотели бы добавить нашему веб-сайту немного пространства и увеличить отступ слева? Давай попробуем!
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-    body {
-        padding-left: 15px;
-    }
+body {
+    padding-left: 15px;
+}
 ```
 
-Добавь это к твоему CSS, сохрани файл и посмотри, как это работает!
+Add that to your CSS, save the file and see how it works!
 
-![Рисунок 14.3][6]
+![Figure 14.3](images/margin2.png)
 
- [6]: images/margin2.png
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
-Возможно, мы можем настроить шрифт нашего заголовка? Вставь это внутрь тега `<head>` в файле `blog/templates/blog/post_list.html`:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Эта строка импортирует шрифт под названием *Lobster* из шрифтов Google (https://www.google.com/fonts).
+As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-Теперь добавь строку `font-family: 'Lobster';` в CSS файле `blog/static/css/blog.css` внутри блока определения стиля `h1 a` (код помещается между скобками `{` и `}`) и обнови страницу:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-    h1 a {
-        color: #FCA205;
-        font-family: 'Lobster';
-    }
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
 ```
 
-![Рисунок 14.3][7]
+![Figure 14.3](images/font.png)
 
- [7]: images/font.png
+Great!
 
-Отлично!
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Как было указано выше, CSS имеет концепцию классов, которая позволяет назвать часть HTML кода и применять стили только для этой части без всякого эффекта для других. Это очень полезно если у вас есть скажем два блока div, но они выполняют совершенно разные функции (как ваш заголовок и пост), следовательно, вы не хотите, чтобы они выглядели одинаково.
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
-Дайте имена определенным частям HTML кода. Добавьте класс под названием `page-header` в блок `div`, содержащий ваш заголовок, как это сделано здесь:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 ```
 
-А теперь добавьте класс `post` в ваш `div`, содержащий сообщение в блоге.
+And now add a class `post` to your `div` containing a blog post.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+```
+
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
+
+```css
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+```
+
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+{% endfor %}
 ```
 
-А теперь добавим определения блоков для различных селекторов. Селекторы, которые начинают с символа `.` относятся к классам. Существует много хороших справочников о CSS в Интернете, которые могут помочь вам понять следующий код. А теперь, просто скопируй и вставь код в файл `djangogirls/static/css/blog.css`:
+in the `blog/templates/blog/post_list.html` with this:
 
-```css
-    .page-header {
-        background-color: #ff9400;
-        margin-top: 0;
-        padding: 20px 20px 20px 40px;
-    }
-
-    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-        color: #ffffff;
-        font-size: 36pt;
-        text-decoration: none;
-    }
-
-    .content {
-        margin-left: 40px;
-    }
-
-    h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
-    }
-
-    .date {
-        float: right;
-        color: #828282;
-    }
-
-    .save {
-        float: right;
-    }
-
-    .post-form textarea, .post-form input {
-        width: 100%;
-    }
-
-    .top-menu, .top-menu:hover, .top-menu:visited {
-        color: #ffffff;
-        float: right;
-        font-size: 26pt;
-        margin-right: 20px;
-    }
-
-    .post {
-        margin-bottom: 70px;
-    }
-
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
-    }
-```
-
-Далее переделайте HTML код, отображающий посты. замените:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    {% for post in posts %}
-        <div class="post">
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-```
-
-в `blog/templates/blog/post_list.html` этим кодом:
-
-```html
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
                     </div>
-                {% endfor %}
-            </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
+</div>
 ```
 
-Сохраните эти файлы и обновить свой веб-сайт.
+Save those files and refresh your website.
 
-![Рисунок 14.4][8]
+![Figure 14.4](images/final.png)
 
- [8]: images/final.png
+Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
-Юхууу! Выглядит прекрасно, не так ли? Код, который мы только что вставили в действительности не является сложным для понимания и вы должны быть в состоянии понять большую его часть просто прочитав.
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
-Не бойтесь немного повозиться с этим CSS файлом и попробуйте поменять некоторые вещи. Если что-то сломается, не волнуйтесь, вы всегда можете отменить предыдущее действие!
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-В любом случае, мы настоятельно рекомендуем пройти этот бесплатный онлайн курс [Codeacademy HTML & CSS course ][2] как своеобразную домашнюю работу после воркшопа чтобы изучить все, что нужно знать об оформлении ваших веб-сайтов с CSS.
-
-Готовы к следующей главе?! :)
+Ready for the next chapter?! :)

@@ -1,9 +1,11 @@
-# Текстовый редактор
+# Code editor
 
-> Для проходящих курс дома: эта глава рассмотрена в видео [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-Приступаем к написанию первых строк кода — пора загрузить текстовый редактор!
+You're about to write your first line of code, so it's time to download a code editor!
 
-> **Примечание:** если ты уже все сделала в главе, посвященной установке, то можешь смело переходить к следующей главе!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}

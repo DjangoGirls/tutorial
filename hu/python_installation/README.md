@@ -1,13 +1,15 @@
-# Kezdjünk ismerkedni a Pythonnal
+# Let’s start with Python
 
-Végre itt vagyunk!
+We're finally here!
 
-Először is hadd mondjuk el, hogy mi is a Python. A Python egy nagyon népszerű programnyelv, amit weboldalkészítéshez, játékokhoz, tudományos szoftverekhez, grafikához és még csomó minden másra használnak.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
-A Pythont a 80-as évek végén alkották meg, és a fő cél az volt, hogy ne csak gépek, hanem emberek számára is olvasható legyen. Ezért néz ki sokkal egyszerűbbnek, mint más programnyelvek. Ez könnyebbé teszi a tanulást, de ne aggódj, a Python igencsak erőteljes nyelv!
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry – Python is also really powerful!
 
-# A Python telepítése
+# Python installation
 
-> **Megjegyzés** Ha már elvégezted az Installáció fejezetet, nem kell újra megtenned - ugorj a következő fejezetre!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}

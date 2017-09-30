@@ -1,53 +1,47 @@
-# Ako funguje Internet
+# How the Internet works
 
-> Táto kapitola je inšpirovaná prednáškou "Ako funguje Internet" od Jessicy McKellar (http://web.mit.edu/jesstess/www/).
+> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa deje, keď napíšeš adresu, ako https://djangogirls.org do prehliadača a stlačíš `enter`?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Prvá vec, ktorú potrebuješ vedieť je, že webové stránky sú len kopa súborov uložených na pevnom disku. Podobne ako tvoje filmy, hudba a obrázky. Ale je tu jedna časť, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
+The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Pokiaľ nemáš skúsenosti s programovaní, môže byť pochopenie HTML zo začiatku zložité, ale tvoj webový prehliadač (ako Chrome, Safari, Firefox atď.) ho milujú. Webové prehliadače sú navrhnuté na to, aby rozumeli kódu, nasledovali jeho inštrukcie a prezentovali súbory, ktoré tvoria tvoju webovú stránku presne tak, ako to chceš.
+If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
-Ako s každým súborom, potrebujeme uložiť HTML súbor niekde na pevnom disku. V prípade Interntu používame špeciálne, výkonné počítače nazývane *servery*. Nemajú obrazovku, myš alebo klávesnicu, pretože ich hlavnou úlohou je ukladať dáta a poskytovať ich. Preto ich voláme *servery* -- pretože *poskytujú* (anglicky serve) tvoje dáta.
+As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
-OK, avšak chceš vedieť, ako vyzerá Internet, že?
+OK, but you want to know how the Internet looks, right?
 
-Nakreslili sme ti obrázok! Vyzerá takto:
+We drew you a picture! It looks like this:
 
-![Obrázok 1.1][1]
+![Figure 1.1](images/internet_1.png)
 
- [1]: images/internet_1.png
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-Vyzerá to ako neporiadok, že? V skutočnosti je to sieť prepojených strojov (nedávno spomenutých *serverov*). Stoviek a tisícok strojov! Mnoho, mnoho kilometrov káblov po celom svete! Môžeš navštíviť stránku Submarine Cable Map (http://submarinecablemap.com) aby si videla nakoľko komplikovaná sieť to je. Tu je obrázok zo stránky:
+![Figure 1.2](images/internet_3.png)
 
-![Obrázok 1.2][2]
+It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
- [2]: images/internet_3.png
+It looks like this:
 
-Nie je to fascinujúce? Ale zjavne nie je možné mať kábel medzi každým strojom pripojeným k Internetu. Takže na to, aby sme boli schopní kontaktovať stroj (napríklad ten na ktorom je uložená stránka https://djangogirls.org) musíme poslať žiadosť cez mnoho, mnoho rozdielnych strojov.
+![Figure 1.3](images/internet_2.png)
 
-Vyzerá to takto:
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-![Obrázok 1.3][3]
+Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
- [3]: images/internet_2.png
+![Figure 1.4](images/internet_4.png)
 
-Predstav si, že keď napíšeš https://djangogirls.org, pošleš list, v ktorom stojí: "Drahé Django Girls, chcem vidieť stránku djangogirls.org. Prosím pošli mi ju!"
+Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-Tvoj list ide na najbližšiu poštu. Potom ide na ďalšiu, ktorá je o čosi bližšie adresátovi, potom na ďalšiu a ďalšiu až kým nedorazí do svojej destinácie. Jediná unikátna vec je, že ako pošleš mnoho listov (*data paketov*) na rovnaké miesto, môžu ísť cez úplne odlišné pošty (*routy*). Záleží to na tom, ako sú distribuované na každej pošte.
+Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-![Obrázok 1.4][4]
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
- [4]: images/internet_4.png
+So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
-Áno, je to tak jednoduché. Pošleš správu a očakávaš nejakú odpoveď. Samozrejme, namiesto papiera a pera použijes byty dát, ale myšlienka je rovnaká!
+Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-Namiesto adries s menom ulice, mesta, PSČ a krajinou používame IP adresy. Tvoj počítač sa najprv opýta DNS (Domain Name System) aby preložil djangogirls.org na IP adresu. Funguje to trocha ako staré dobré telefónne zoznamy, kde si môžeš vyhľadať meno osoby ktorú chceš kontaktovať a nájsť jej telefón a adresu.
-
-Keď pošleš list, musí mať určité náležitosti, aby ho bolo možné správne doručiť: adresu, známku atď. Taktiež používaš jazyk, ktorému adresát rozumie, že? Rovnako to funguje aj s *data paketmi* ktoré pošleš aby sa ti zobrazila stránka. Používame protokol s názvom HTTP (Hypertext Transfer Protocol).
-
-Takže, v podstate, keď máš webovú stránku, musíš mať *server* (stroj) na ktorom bude žiť. Keď *server* obdrží prichádzajúcu *požiadavku* (v liste), pošle naspäť tvoju webovú stránku (v ďalšom liste).
-
-Keďže toto je Django tutoriál, spýtaš sa, čo robí Django. Keď pošleš odpoveď, nechceš vždy poslať rovnaké veci každému. Je oveľa lepšie ak sú tvoje listy osobné, hlavne pre osobu, ktorá ti práve teraz napísala, že? Django ti pomáha vytvoriť tieto osobné, zaujímavé listy :).
-
-Dosť bolo rečí, je čas tvoriť!
+Enough talk – time to create!

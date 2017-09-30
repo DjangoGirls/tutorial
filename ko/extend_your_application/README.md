@@ -1,18 +1,17 @@
-# 프로그램 애플리케이션 확장하기
+# Extend your application
 
-지금까지 웹 사이트 제작 단계를 모두 마쳤어요. 모델, url, 뷰와 템플릿을 만드는 방법을 알게 되었고요. 웹 사이트를 예쁘게 꾸미는 방법도 알게 되었어요.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-이제 또 실습해봅시다!
+Time to practice!
 
-블로그 게시글이 각 페이지마다 보이게 만들어 봅시다.
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-이미 앞에서 `Post`모델을 만들었으니 `models.py`에 새로 추가할 내용은 없어요.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-## Post에 템플릿 링크 만들기
+## Create a template link to a post's detail
 
-`blog/templates/blog/post_list.html`파일에 링크를 추가하는 것부터 시작합시다. 아래와 같이 보일 거에요. : 
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
 
@@ -29,32 +28,34 @@
 {% endblock %}
 ```
 
-{% raw %} `post`제목 목록이 보이고 해당 링크를 클릭하면, `post`상세 페이지로 이동하게 만들어 볼 거에요. `<h1><a href="">{{ post.title }}</a></h1>`부분을 수정해 봅시다. {% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}`{% url 'post_detail' pk=post.pk %}`을 설명할 때가 왔군요! `{% %}`는 장고 템플릿 태그을 말합니다. URL를 생성해 사용해봅시다.{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-`blog.views.post_detail`는 `post_detail` *뷰* 경로입니다. `blog`는 응용프로그램(디렉터리 `blog`)의 이름인 것을 꼭 기억하세요. `views`는 `views.py`파일명이에요. 마지막 부분 `post_detail`는 *view* 이름입니다.
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-`pk = post.pk`이란 무엇일까요? `pk`는 데이터베이스의 각 레코드를 식별하는 기본키(Prmiary Key)의 줄임말 입니다. Post 모델에서 기본키를 지정하지 않았기 때문에 장고는 `pk`라는 필드를 추가해 새로운 블로그 게시물이 추가될 때마다 그 값이 1,2,3 등으로 증가하게 됩니다.  Post 객체의 다른 필드 (제목, 작성자 등)에 액세스하는 것과 같은 방식으로 post.pk를 작성하여 기본 키에 액세스합니다 `post.pk`를 써서 기본키에 접근할 수 있고 같은 방법으로 `Post`객체내 다른 필드(`title`, `author`)에도 접근할 수 있습니다!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-이제 http://127.0.0.1:8000/ 를 열어보세요. 아마 오류 메세지가 나올 거에요. (아직 `post_detail` *뷰*를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요. :
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Post 상세 페이지 URL 만들기
+## Create a URL to a post's detail
 
-`post_detail`*뷰*가 보이게 `urls.py`에 URL를 만들어 봅시다!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-첫 게시물의 상세 페이지 **URL**이 http://127.0.0.1:8000/post/1/가 되게 만들 거에요.
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
+
 ```python
 from django.conf.urls import url
 from . import views
@@ -65,77 +66,84 @@ urlpatterns = [
 ]
 ```
 
-`^post/(?P<pk>\d+)/$`부분이 복잡하게 보이지만, 걱정하지 마세요. 하나씩 차근차근 알아봅시다.
- - `^`은 "시작"을 뜻합니다.
- - `post/`란 URL이 **post** 문자를 포함해야 한다는 것을 말합니다. 아직 할 만하죠?
- - `(?P<pk>\d+)`는 조금 까다롭습니다. 이 정규표현식은 장고가 `pk`변수에 모든 값을 넣어 뷰로 전송하겠다는 뜻입니다. `\d`은 문자를 제외한 숫자 0부터 9 중, 한 가지 숫자만 올 수 있다는 것을 말합니다. `+`는 하나 또는 그 이상의 숫자가 올 수 있습니다.. 따라서 `http://127.0.0.1:8000/post/`라고 하면 post/ 다음에 숫자가 없으므로 해당 사항이 아니지만, `http://127.0.0.1:8000/post/1234567890/`는 완벽하게 매칭됩니다.
- - `/`은 다음에 **/** 가 한 번 더 와야 한다는 의미입니다.
- - `$`는 "마지막"을 말합니다. 그 뒤로 더는 문자가 오면 안 됩니다.
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
-브라우저에 `http://127.0.0.1:8000/post/5/`라고 입력하면, 장고는 `post_detail` *뷰*를 찾아 매개변수 `pk`가 `5`인 값을 찾아 *뷰*로 전달합니다.
+- it starts with `^` again – "the beginning".
+- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
+- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `/` – then we need a **/** again.
+- `$` – "the end"!
 
-`pk`는 `primary key`의 약자로, 장고에서 많이 사용되는 변수명입니다. 변수명은 내가 원하는 것으로 변경할 수 있어요. (변수명에 공백문자는 사용할 수 없으며 소문자와 `_`를 사용할 수 있음을 주의하세요) 예를 들어, `(?P<pk>\d+)`변수를 `post_id`으로 바꾸면, 정규표현식도 `(?P<post_id>\d+)`으로 바뀌게 됩니다.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-좋아요, 새로운 URL 패턴을 `blog/urls.py`에 추가했어요! 페이지를 새로고침 하세요. http://127.0.0.1:8000/ 쾅! 또 에러가 났어요! 예상했던 대로에요!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-다음 단계는 무엇일까요? 그렇죠. 뷰를 추가해야죠!
+Do you remember what the next step is? Of course: adding a view!
 
-## Post 상세 페이지 내 뷰 추가하기
+## Add a post's detail view
 
-*뷰*에 매개변수 `pk`를 추가해봅시다. *뷰*가 `pk`를 식별해야겠죠? 그래서 함수를 `def post_detail(request, pk):`라고 정의합니다. urls(`pk`)과 동일하게 이름을 사용해야 합니다. 변수가 생략되면 오류가 날 거예요!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-블로그 게시글 한 개만 보려면, 아래와 같이 쿼리셋(queryset)을 작성해야해요.
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 Post.objects.get(pk=pk)
 ```
 
-하지만 이 코드에는 문제가 있어요. 만약 해당 `primary key(pk)`의 `Post`를 찾지 못하면 오류가 나올 거에요!
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-우리가 원하는게 아니죠! 장고에는 이를 해결하기 위해 `get_object_or_404`라는 특별한 기능을 제공해요. `pk`에 해당하는 `Post`가 없을 경우, 멋진 페이지(`페이지 찾을 수 없음 404 : Page Not Found 404)`를 보여줄 거에요.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
-나중에 `페이지 찾을 수 없음(Page not found)`페이지를 예쁘게 만들 수 있어요. 지금 당장 중요한 것이 아니니 이 부분은 생략할게요.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-좋아요. 이제 `views.py`파일에 새로운 *뷰*를 추가합시다!
+OK, time to add a *view* to our `views.py` file!
 
-`blog/views.py`파일을 열고 아래 코드를 추가하세요.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render, get_object_or_404
 ```
 
-`from`행 가서, 파일 마지막 부분에 *뷰*를 추가하세요.
+And at the end of the file we will add our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-그리고 브라우저를 새로고침 하세요. http://127.0.0.1:8000/
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-잘 작동하네요! 그런데 블로그 제목 링크를 클릭하면 어떻게 되나요?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-이런! 또 에러가 나왔네요! 하지만 이제 어떻게 해야하는지 알고 있죠? 드디어 템플릿을 추가할 차례에요!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
-## Post 상세 페이지 템플릿 만들기
+## Create a template for the post details
 
-`blog/templates/blog` 디렉터리 안에 `post_detail.html`라는 새 파일을 생성하고 아래와 같이 코드를 작성하세요.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
+
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+
 ```html
 {% extends 'blog/base.html' %}
 
@@ -152,37 +160,38 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-다시 한 번 `base.html`을 확장한 거에요. `content`블록에서 블로그 글의 게시일, 제목과 내용을 보이게 만들었어요.
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %} 가장 중요한 부분은 `{% if ... %} ... {% endif %}`라는 템플릿 태그인데, 내용이 있는지 확인할 때 사용합니다. (`if ... else ..`구문은 __Python 시작하기__ 장에서 배웠어요) `post`의 `게시일(published_date)`이 있는지, 없는지를 확인하는 거에요. {% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-페이지를 새로고침하면 `페이지 찾을 수 없음(Page not found)` 페이지가 없어졌어요.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-야호! 잘 되네요!
+Yay! It works!
 
-## 한 가지만 더 합시다. 배포하세요!
+## One more thing: deploy time!
 
-PythonAnywhere에도 웹사이트가 잘 작동하는지 봐야겠죠? 다시 한 번 배포합시다.
-
-{% filename %}command-line{% endfilename %}
-```
-$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-$ git push
-```
-* 그 다음 [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)을 여세요.
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
-```
-$ cd my-first-blog
-$ git pull
-[...]
-```
 
-* 마지막으로 [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 **Reload(다시 불러오기)** 를 누르세요.
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git push
+    
 
-배포를 마쳤습니다. 잘 작동되는지 확인해 보세요! 축하합니다.
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+
+And that should be it! Congrats :)

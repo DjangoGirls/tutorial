@@ -1,19 +1,52 @@
-### Windows
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
-Du kannst Git von [git-scm.com](http://git-scm.com/) herunterladen. Du kannst immer "weiter" klicken - "next next next" - an allen bis auf einer Stelle; im 5. Schritt "Adjusting your PATH environment", nimm "Run Git and associated Unix tools from the Windows command-line" (die letzte Option). Die anderen Voreinstellungen sind ok. "Checkout"-Stil "Windows" und "Commit" mit "Unix line endings" (Zeilenende im Unix-Format) sind die richtigen Einstellungen.
+## Git installieren
 
-### OS X (Mac)
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-Git von [git-scm.com](http://git-scm.com/) herunterladen und dann den Anweisungen folgen.
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-### Linux
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
-Falls es noch nicht installiert sein sollte, sollte git als Paket im Paketmanager enthalten sein. Versuche je nach Distribution:
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
+
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
 ```bash
-sudo apt-get install git
+$ sudo apt-get install git
 ```
-    # oder
+
+<!--endsec-->
+
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
 ```bash
-sudo yum install git
+$ sudo dnf install git
 ```
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo zypper install git
+```
+
+<!--endsec-->

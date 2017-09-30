@@ -1,3 +1,3 @@
-# kod editörü
+# code editor
 
-Kod editörü, kodunuza sonradan geri dönebilmeniz için kodu kaydeden bir uygulamadır. Nereden edinebileceğinizi [Kod editörü bölümü](./code_editor/README.md)nde bulabilirsiniz
+Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)

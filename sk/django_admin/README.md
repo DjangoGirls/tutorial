@@ -1,8 +1,10 @@
 # Django admin
 
-Na pridávanie, editovanie a mazanie postov, ktoré sme práve namodelovali, budeme používať Django admina.
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Otvorme súbor `blog/admin.py` a nahraďme jeho obsah týmto:
+Let's open the `blog/admin.py` file and replace its contents with this:
+
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
 from django.contrib import admin
@@ -11,39 +13,38 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Ako vidíš, importujeme model Post definovaný v predchádzajúcej kapitole. Aby bol náš model viditeľný na adminskej stránke, musíme ho zaregistrovať pomocou `admin.site.register(Post)`.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-OK, je čas pozrieť sa na náš Post model. Nezabudni v konzole spustiť web server pomocou príkazu `python manage.py runserver`. Spusti prehliadač a zadaj adresu http://127.0.0.1:8000/admin/. Uvidíš takúto prihlasovaciu stránku:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Prihlasovacia stránka][1]
+![Login page](images/login_page2.png)
 
- [1]: images/login_page2.png
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontrolu nad všetkým na stránke. Vráť sa do príkazového riadku, napíš `python manage.py createsuperuser` a stlač enter. Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. Ak nevidíš heslo, ktoré zadávaš, tým sa netráp - tak to má byť. Len ho zadaj a pokračuj stlačením `enter`. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
-```
-(myvenv) ~/djangogirls$ python manage.py createsuperuser
-Username: admin
-Email address: admin@admin.com
-Password:
-Password (again):
-Superuser created successfully.
-```
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
-Vráť sa do prehliadača. Prihlás sa zvolenými údajmi ako superuser, mala by sa ti zobraziť nástenka (dashboard) Django admina.
+{% filename %}command-line{% endfilename %}
 
-![Django admin][2]
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
 
- [2]: images/django_admin3.png
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-Prejdi do Postov a trochu experimentuj. Pridaj päť či šesť blog postov. Netráp sa veľmi s obsahom - trebárs skopíruj a vlož text z tohto tutorialu, nech ušetríš čas :).
+![Django admin](images/django_admin3.png)
 
-Uisti sa, že aspoň dva alebo tri posty (ale nie všetky) majú nastavený dátum publikovania. Bude to neskôr užitočné.
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 
-![Django admin][3]
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
- [3]: images/edit_post3.png
+![Django admin](images/edit_post3.png)
 
-Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-Teraz je asi vhodný čas dať si kávu (alebo čaj), alebo niečo pod zub a nabrať trochu energie. Práve si vytvorila svoj prvý Django model - zaslúžiš si trochu oddychu!
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!

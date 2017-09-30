@@ -1,19 +1,52 @@
-### Windows
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
-Git si môžeš stiahnuť z [git-scm.com](https://git-scm.com/). Môžeš bez obáv klikať na "ďalej ďalej ďalej" pri všetkých krokoch okrem jedného. V kroku 5, označenom ako "Nastavenie prostredia PATH", zvoľ "Spustiť Git a príslušné Unixové nástroje z príkazového riadku systému Windows" (spodná možnosť). V ostatných prípadoch sú predvolené nastavenia v poriadku. Možnosť "Checkout Windows-style, commit Unix-style line endings" je OK.
+## Installing Git
 
-### MacOS
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-Stiahni si Git z [git-scm.com](https://git-scm.com/) a riaď sa inštrukciami.
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-### Linux
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
-Ak ho ešte nemáš nainštalovaný, git by mal byť dostupný pomocou správcu balíčkov, takže vyskúšaj:
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
 
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo apt-get install git
 ```
-sudo apt-get install git
-# or
-sudo yum install git
-# or
-sudo zypper install git
+
+<!--endsec-->
+
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo dnf install git
 ```
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo zypper install git
+```
+
+<!--endsec-->
