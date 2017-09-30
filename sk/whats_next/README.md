@@ -17,7 +17,7 @@ Potom nezabudni:
 
 Áno! Ako prvé, neváhaj a vyskúšaj našu ďalšiu knihu [Django Girls Tutorial: Rozšírenie][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame!
 

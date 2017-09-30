@@ -12,7 +12,7 @@
 
 ### Чи можете ви порекомендувати інші джерела?
 
-Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
+Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org).
 
 Пізніше, ви можете спробувати джерела, перелічені нижче. Дуже рекомендуємо!
 - [Django's official tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)

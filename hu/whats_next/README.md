@@ -17,7 +17,7 @@ Aztán majd ne felejtsd el:
 
 Igen! Először is nézd meg a másik könyvünket, a [Django Girls Tutorial: Extensions][3]-t.
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Később megpróbálkozhatsz a lenti listában lévő anyagokkal is. Ezeket mind nagyon ajánljuk!
 

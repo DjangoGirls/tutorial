@@ -17,7 +17,7 @@ Après ça, vous pouvez :
 
 Jetez un coup d’œil à notre autre livre, [Django Girls Tutorial: Extensions][3] (en anglais).
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Ensuite, vous pouvez essayer les ressources listées ci-dessous. Elles sont toutes recommandables !
 - [Django's official tutorial][4]

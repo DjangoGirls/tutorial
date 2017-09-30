@@ -12,8 +12,7 @@ Danach:
 
 ### Gibt es Empfehlungen für weiteren Quellen?
 
-Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
-). Schau mal rein..
+Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org). Schau mal rein..
 
 Später kannst du die unten aufgeführten Ressourcen versuchen. Alles sehr empfehlenswert!
 

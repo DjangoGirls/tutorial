@@ -17,7 +17,7 @@
 
 Кончено! Прежде всего попробуй [Учебнике Django Girls: Дополнительные темы][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Позднее ты можешь попробовать ресурсы из списка ниже. Мы очень рекомендуем все из них!
 

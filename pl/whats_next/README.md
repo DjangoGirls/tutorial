@@ -17,7 +17,7 @@ Zaraz po tym, upewnij się, że:
 
 Tak! Najpierw możesz spróbować naszej kolejnej książki: [Django Girls Tutorial: Extensions][3] -- zawiera rozszerzenia i dodatkowe zadania związane z tym, co już tutaj przerobiłaś.
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Możesz też wypróbować materiały, które wypisałyśmy poniżej. Wszystkie bardzo polecamy!
 

@@ -17,7 +17,7 @@ Bundan sonra şunları yaptığına emin ol:
 
 Evet! Öncelikle [Django Girls Tutorial: Extensions][3] isimli diğer kitabımızı dene.
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öneriyoruz!
 
