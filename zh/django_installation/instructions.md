@@ -27,7 +27,7 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
     $ python3 -m venv myvenv
     
 
-<!--sec data-title="Windows" data-id="virtualenv_installation_windows"
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
 To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
@@ -41,7 +41,7 @@ Where `myvenv` is the name of your `virtualenv`. You can use any other name, but
 
 <!--endsec-->
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
 Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`. It will look like this:
@@ -102,7 +102,7 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
-<!--sec data-title="Windows" data-id="virtualenv_windows"
+<!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
 Start your virtual environment by running:
@@ -123,7 +123,7 @@ Start your virtual environment by running:
 
 <!--endsec-->
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Start your virtual environment by running:
@@ -172,14 +172,14 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
     Successfully installed django-1.11.3
     
 
-<!--sec data-title="Windows" data-id="django_err_windows"
+<!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
 > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
-<!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
+<!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
@@ -191,7 +191,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="django_err_linux"
+<!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
