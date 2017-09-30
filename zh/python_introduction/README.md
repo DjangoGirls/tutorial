@@ -622,7 +622,7 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
@@ -634,7 +634,7 @@ On a Mac, the command will look something like this:
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="python_linux"
+<!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
@@ -646,7 +646,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--endsec-->
 
-<!--sec data-title="Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
 On Windows Command Prompt, it will be like this:
 
@@ -657,7 +657,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--endsec-->
 
-<!--sec data-title="Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+<!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
 And on Windows Powershell, it will be like this:
 
