@@ -12,7 +12,7 @@ The names of some files and directories are very important for Django. You shoul
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-<!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
@@ -27,7 +27,7 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
 On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
