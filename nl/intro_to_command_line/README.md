@@ -18,7 +18,7 @@ The window, which is usually called the **command line** or **command-line inter
 
 To start some experiments we need to open our command-line interface first.
 
-<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Go to Start menu → Windows System → Command Prompt.
 
@@ -26,13 +26,13 @@ Go to Start menu → Windows System → Command Prompt.
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
 Go to Applications → Utilities → Terminal.
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
 It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
@@ -42,7 +42,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 You now should see a white or black window that is waiting for your commands.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 If you're on Mac or Linux, you probably see `$`, just like this:
 
@@ -53,7 +53,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 On Windows, it's a `>` sign, like this:
 
@@ -76,7 +76,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 Let's start with something simple. Type this command:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,7 +85,7 @@ Let's start with something simple. Type this command:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,7 +114,7 @@ Each operating system has a slightly different set of commands for the command l
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,7 +126,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -146,7 +146,7 @@ You'll probably see something similar on your machine. Once you open the command
 
 So what's in it? It'd be cool to find out. Let's see:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +160,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +181,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -201,7 +201,7 @@ Now, let's go to our Desktop directory:
 
 Check if it's really changed:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -211,7 +211,7 @@ Check if it's really changed:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -231,7 +231,7 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -240,7 +240,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -261,7 +261,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 #### Solution:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -273,7 +273,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -295,7 +295,7 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -304,7 +304,7 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 Check where you are:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ Check where you are:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -341,7 +341,7 @@ Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
-<!--sec data-title="Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -350,7 +350,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-<!--sec data-title="Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -362,7 +362,7 @@ Now time to delete the `practice` directory:
 
 Done! To be sure it's actually deleted, let's check it:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -371,7 +371,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,7 +384,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -393,7 +393,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
