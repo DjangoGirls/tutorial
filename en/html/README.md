@@ -117,7 +117,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div>
