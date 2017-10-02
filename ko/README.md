@@ -1,106 +1,197 @@
-# Django templates
+# Extend your application
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-## What are template tags?
+Time to practice!
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-## Display post list template
+## Create a template link to a post's detail
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
-
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{{ posts }}
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
-
-![Figure 13.1](images/step1.png)
-
-As you can see, all we've got is this:
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+
+![NoReverseMatch error](images/no_reverse_match2.png)
+
+## Create a URL to a post's detail
+
+Let's create a URL in `urls.py` for our `post_detail` *view*!
+
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+]
 ```
 
-Try this in your template.
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
-![Figure 13.2](images/step2.png)
+- it starts with `^` again – "the beginning".
+- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
+- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `/` – then we need a **/** again.
+- `$` – "the end"!
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+
+![AttributeError](images/attribute_error2.png)
+
+Do you remember what the next step is? Of course: adding a view!
+
+## Add a post's detail view
+
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+Post.objects.get(pk=pk)
+```
+
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+
+![DoesNotExist error](images/does_not_exist2.png)
+
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+
+![Page not found](images/404_2.png)
+
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+
+OK, time to add a *view* to our `views.py` file!
+
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+
+We should open `blog/views.py` and add the following code near the other `from` lines:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+from django.shortcuts import render, get_object_or_404
+```
+
+And at the end of the file we will add our *view*:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
+
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
+
+![Post list view](images/post_list2.png)
+
+It worked! But what happens when you click a link in blog post title?
+
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+
+## Create a template for the post details
+
+We will create a file in `blog/templates/blog` called `post_detail.html`.
+
+It will look like this:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+{% extends 'blog/base.html' %}
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-{% endfor %}
+{% endblock %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-![Figure 13.3](images/step3.png)
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-## One more thing
+![Post detail page](images/post_detail2.png)
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Yay! It works!
 
-* First, push your code to Github
+## One more thing: deploy time!
+
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    [...]
     $ git add --all .
     $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd my-first-blog
     $ git pull
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
-
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
-
-![Figure 13.4](images/donut.png)
+And that should be it! Congrats :)
