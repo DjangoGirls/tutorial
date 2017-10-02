@@ -8,4 +8,4 @@ Gleich geht's los! Du wirst deine erste Zeile Programmcode schreiben! Daher ist 
 > 
 > **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
