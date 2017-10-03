@@ -1,106 +1,81 @@
-# Django templates
+# Dynamic data in templates
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-## What are template tags?
+This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+OK, so how will we achieve this?
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
-## Display post list template
+{% filename %}blog/views.py{% endfilename %}
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+```python
+from django.shortcuts import render
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-{{ posts }}
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
 
-![Figure 13.1](images/step1.png)
+{% filename %}blog/views.py{% endfilename %}
 
-As you can see, all we've got is this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
+```python
+from django.shortcuts import render
+from .models import Post
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
+## QuerySet
+
+You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+
+So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Try this in your template.
+Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
 
-![Figure 13.2](images/step2.png)
+{% filename %}blog/views.py{% endfilename %}
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
 
-![Figure 13.3](images/step3.png)
+Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-## One more thing
+So finally our `blog/views.py` file should look like this:
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+{% filename %}blog/views.py{% endfilename %}
 
-* First, push your code to Github
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-{% filename %}command-line{% endfilename %}
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
 
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
-    
+That's it! Time to go back to our template and display this QuerySet!
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
-    
-
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
-
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
-
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
-
-![Figure 13.4](images/donut.png)
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.9/ref/models/querysets/
