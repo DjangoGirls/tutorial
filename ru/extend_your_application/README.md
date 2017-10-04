@@ -12,32 +12,35 @@
 
 Мы начнём с добавления ссылки внутри файла `blog/templates/blog/post_list.html`. Пока он выглядит следующим образом:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
 ```
-
 
 {% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу с подробной информацией о посте. Давай изменим `<h1><a href="">{{ post.title }}</a></h1>`, чтобы получилась ссылка на пост:{% endraw %}
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
 {% raw %}Самое время разобраться с загадочным `{% url 'post_detail' pk=post.pk %}`. Как можешь предположить, синтаксис `{% %}` означает использование тегов шаблонов Django. На этот раз мы используем тот, что создаст для нас URL!{% endraw %}
 
-`blog.views.post_detail` — это путь к *представлению* `post_detail`, которое нам нужно создать. Пожалуйста, обрати внимание: `blog` — это имя нашего приложения (директория `blog`), `views` — имя файла `views.py` без расширения, а последнее — `post_detail` — название *представления*.
+Параметр `post_urls` означает, что Django будет искать URL с именем `post_detail` в файле `blog.urls.py`.
+
+А что насчёт `pk=post.pk`? `pk` — это сокращение от primary key (первичный ключ). Он уникальным образом определяет каждую запись в базе данных. Поскольку мы не задали первичного ключа в нашей модели `Post`, Django создал такой ключ за нас (по умолчанию это порядковый номер, то есть 1, 2, 3…) и добавил поле `pk` к каждой записи блога. Для получения первичного ключа мы напишем `post.pk` — точно так же, как мы получали значения остальных полей (`title`, `author` и т.д.) нашего объекта `Post`.
 
 Теперь, когда мы перейдем по адресу http://127.0.0.1:8000/, мы получим ошибку (как и ожидается, поскольку у нас нет прописанного URL и *представления* для `post_detail`). Она будет выглядеть следующим образом:
 
@@ -47,34 +50,33 @@
 
 ## Создадим URL для страницы поста
 
-Давай создадим URL в `urls.py` для *представления* `post_detail`!
+Давай создадим в `urls.py` URL для *представления* `post_detail`!
 
 Мы хотим, чтобы наш первый пост отображался на странице со следующим **URL**-адресом: http://127.0.0.1:8000/post/1/
 
-Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` в файл `blog/urls.py`. Файл должен выглядеть примерно так:
+Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` в файл `blog/urls.py`. Файл должен выглядеть примерно так:
 
+{% filename %}blog/urls.py{% endfilename %}
 ```python
-    from django.conf.urls import url
-    from . import views
+from django.conf.urls import url
+from . import views
 
-    urlpatterns = [
-        url(r'^$', views.post_list, name='post_list'),
-        url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
-    ]
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+]
 ```
 
-Фрагмент `^post/(?P<pk>[0-9]+)/$` выглядит страшновато, но не волнуйся — мы его сейчас объясним:
+Фрагмент `^post/(?P<pk>[0-9]+)/$` выглядит страшновато, но не волнуйся — мы его сейчас поясним:
 - он начинается с `^`, что означает, как мы помним, "начало строки";
 - `post/` значит всего лишь, что после начала строки URL должен содержать слово **post** и косую черту **/**. Пока всё в порядке.
-- `(?P<pk>[0-9]+)` — эта часть посложнее. Она означает, что Django возьмёт всё, что придется на эту часть строки, и передаст представлению в качестве переменной `pk`. `[0-9]` означает, что допустимы только цифры (от 0 до 9), но не буквы. `+` означает, что цифр должно быть одна или более. Таким образом, адрес `http://127.0.0.1:8000/post//` будет недействительным, а `http://127.0.0.1:8000/post/1234567890/` совершенно правильным!
-- `/` — затем нам нужен еще один символ **/**;
-- `$` — "конец"!
+- `(?P<pk>\d+)` — эта часть посложнее. Она означает, что Django возьмёт всё, что придется на эту часть строки, и передаст представлению в качестве переменной `pk` (обрати внимание, что её имя соответствуем имени переменной, используемой в качестве первичного ключа в файле `blog/templates/blog/post_list.html`). `\d+` означает, что допустимы только цифры (от 0 до 9), но не буквы. `+` означает, что цифр должно быть одна или более. Таким образом, адрес `http://127.0.0.1:8000/post//` будет недействительным, а `http://127.0.0.1:8000/post/1234567890/` совершенно правильным!
+- `/` — затем нам нужен еще один символ __/__;
+- `$` — «конец»!
 
 Если ты введёшь адрес `http://127.0.0.1:8000/post/5/` в браузер, Django должен понять, что тебе требуется *представление* под именем `post_detail`, и передать информацию о переменной `pk` (равной `5`) этому *представлению*.
 
-`pk` — сокращение от `primary key` (первичный ключ). Это имя часто используют в Django проектах. Но ты можешь назвать эту переменную как пожелаешь (помни: строчные буквы и `_` вместо пробелов!). Например, вместо `(?P<pk>[0-9]+)` мы могли бы назвать переменную `post_id`; таким образом, эта часть кода выглядела бы как: `(?P<post_id>[0-9]+)`.
-
-Славненько, мы добавили новый шаблон URL в файл `blog/urls.py`! Давай обновим страницу: http://127.0.0.1:8000/. Бууум! Ещё одна ошибка! Как и ожидалось!
+Славненько, мы добавили новый шаблон URL в файл `blog/urls.py`! Давай обновим страницу: http://127.0.0.1:8000/. Бууум! Сервер снова перестал работать. Проверь консоль — как и ожидалось, ещё одна ошибка!
 
 ![AttributeError][2]
 
@@ -88,8 +90,9 @@
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
-    Post.objects.get(pk=pk)
+Post.objects.get(pk=pk)
 ```
 
 Однако в этом коде есть проблема. Если не существует экземпляра объекта `Post` с заданным `primary key` (`pk`), мы получим страшную ошибку!
@@ -108,18 +111,22 @@
 
 Хорошо, пришло время добавить *представление* в файл `views.py`!
 
+В файле `blog/urls.py` мы создали шаблон URL под названием `post_detail`, который ссылался на представление под названием `views.post_detail`. Это значит, что Django ожидает найти функцию-представление с названием `post_detail` в `blog/views.py`.
+
 Нам нужно открыть файл `blog/views.py` и добавить в него следующий код:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
-    from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 ```
 
 — рядом с другими строками, начинающимися с `from`. В конец же файла мы добавим наше новое *представление*:
 
+{% filename %}blog/views.py{% endfilename %}
 ```python
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
 Вот так. Теперь обнови страницу http://127.0.0.1:8000/
@@ -142,20 +149,21 @@
 
 Он должен содержать следующее:
 
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endblock %}
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
 ```
 
 И снова мы расширяем `base.html`. В блоке `content` мы отображаем дату публикации (published_date, если она существует), заголовок и текст. Нам также нужно обсудить пару важных вещей, хорошо?
@@ -174,28 +182,27 @@
 
 Было бы неплохо проверить, что веб-сайт всё ещё будет работать на PythonAnywhere, верно? Давай еще раз проведём развёртывание.
 
+{% filename %}command-line{% endfilename %}
 ```
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
 ```
 
 Затем набери в [Bash-консоли PythonAnywhere][8]:
 
  [8]: https://www.pythonanywhere.com/consoles/
 
+{% filename %}command-line{% endfilename %}
 ```
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
+$ cd my-first-blog
+$ git pull
+[...]
 ```
 
-И нажми **Reload** на вкладке [Web tab][9].
+И нажми **Reload** на вкладке [Web][9].
 
  [9]: https://www.pythonanywhere.com/web_app_setup/
 
