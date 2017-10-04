@@ -210,7 +210,7 @@ Pour créer une base de données sur PythonAnywhere, nous allons taper les même
 
 ## Faire de votre blog une application web
 
-Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt, les fichiers statiques sont recueillis et la base de données est initialisée. Nous sommes prêts à le publier comme une application web !
+Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt et la base de données est initialisée. Nous sommes prêts à le publier comme une application web !
 
 Retourner sur la page d'accueil de PythonAnywhere en cliquant sur le logo en haut à gauche. Ensuite, cliquez sur l'onglet **Web** et **Add a new web app**.
 
@@ -270,7 +270,7 @@ Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-*   Oublier une étape lors du passage dans la console. Vous devriez avoir fait toutes les étapes suivantes : créer un environnement virtuel, l'activer, installer Django, lancer la commande "collectstatic" et enfin créer la base de données.
+*   Oublier une étape lors du passage dans la console. Vous devriez avoir fait toutes les étapes suivantes : créer un environnement virtuel, l'activer, installer Django et enfin créer la base de données.
 
 *   Se tromper dans le chemin d'accès à l'environnement virtuel : si c'est le cas, vous trouverez un petit message d'erreur en rouge dans l'onglet "web", section virtualenv.
 
