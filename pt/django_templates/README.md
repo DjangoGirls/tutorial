@@ -97,8 +97,8 @@ Seria bom ver se seu site ainda estará funcionando na internet, certo? Vamos te
 
 *   Finalmente, pule para a [Web tab](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo web. Sua atualização deve estar ao vivo!  Se suas postagens do blog em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado em seu servidor local, está tudo bem. O banco de dados em seu computador local e o da Python Anywhere não estão sincronizados junto com o resto de seus arquivos.
 
-Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admin (Lembre-se de adicionar published_date!). Certifique-se que vocÊ está no admin do Django de seu site pythonanywhere, https://yourname.pythonanywhere.com/admin. E então atualize sua página para ver se a postagem aparece lá
+Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admin (Lembre-se de adicionar published_date!). Certifique-se que você está no admin do Django de seu site pythonanywhere, https://yourname.pythonanywhere.com/admin. E então atualize sua página para ver se a postagem aparece lá
 
-Funciona como mágica? Estamos orgulhosos! Afaste-se do seu computador um pouco, você ganhou uma pausa. :)
+Funciona como mágica? Estamos orgulhosas! Afaste-se do seu computador um pouco, você ganhou uma pausa. :)
 
 ![Figure 13.4](images/donut.png)

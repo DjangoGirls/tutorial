@@ -69,9 +69,7 @@ Escrever views separadas para todos os números de post seria muito chato. Com e
 
 É hora de criar nossa primeira URL! Queremos http://127.0.0.1:8000 / para ser uma página inicial do nosso blog e exibir uma lista de posts.
 
-Também queremos manter o arquivom`mysite/urls.py` limpo, então nós importaremos as URLs da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
-
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
+Também queremos manter o arquivo `mysite/urls.py` limpo, então nós importaremos as URLs da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
 
 Vá em frente, adicione uma linha que irá importar `blog.urls`. Note que nós estamos usando a função `include` aqui, então **você precisará** adicionar ela no "import", na primeira linha do arquivo.
 
@@ -90,7 +88,7 @@ urlpatterns = [
 
 O Django agora irá redirecionar tudo o que entra em 'http://127.0.0.1:8000 /'para `blog.urls` e procurar por novas instruções lá.
 
-Ao escrever expressões regulares em Python sempre é colocado `r` na frente da sequência de caracteres ("string"). Isso é só uma dica útil para Python que a seqüência pode conter caracteres especiais que não são destinadas para Python em si, mas em vez disso são parte da expressão regular.
+Ao escrever expressões regulares em Python sempre é colocado `r` na frente da sequência de caracteres ("string"). Isso é só uma dica útil para Python que a sequência pode conter caracteres especiais que não são destinadas para Python em si, mas em vez disso são parte da expressão regular.
 
 ## blog.urls
 

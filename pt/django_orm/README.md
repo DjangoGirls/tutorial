@@ -79,17 +79,17 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> User.objects.all()
-<QuerySet [<User: ola>]>
+<QuerySet [<User: Ana>]>
 ```
 
 É o superusuário que criamos anteriormente! Vamos obter uma instância de usuário agora:
 
 {% filename %}command-line{% endfilename %}
 ```python
-me = User.objects.get(username='ola')
+me = User.objects.get(username='Ana')
 ```
 
-Como você pode ver, nós agora usamos um `get` para pegar um `User` com um `username` igual a 'ola'. Claro, você tem que adaptar essa linha ao seu nome de usuário.
+Como você pode ver, nós agora usamos um `get` para pegar um `User` com um `username` igual a 'Ana'. Claro, você tem que adaptar essa linha ao seu nome de usuário.
 
 Agora finalmente podemos criar nossa primeira postagem:
 
@@ -113,7 +113,7 @@ Agora você pode se divertir um pouco e adicionar mais postagens para ver como f
 
 ### Filtrar objetos
 
-Os QuerySets são muito usados pela habilidade de filtrar objectos. Digamos que queremos encontrar todos as postagens escritas pelo usuário ola. Nós usaremos o `filter` em vez de `all` em `Post.objects.all()`. Entre parênteses indicamos as condições que precisam ser atendidas por uma postagem de blog para que ela entre em nosso queryset. Em nosso caso, a condição é que  `author` deve ser igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código parece como este:
+Os QuerySets são muito usados pela habilidade de filtrar objectos. Digamos que queremos encontrar todos as postagens escritas pela usuária Ana. Nós usaremos o `filter` em vez de `all` em `Post.objects.all()`. Entre parênteses indicamos as condições que precisam ser atendidas por uma postagem de blog para que ela entre em nosso queryset. Em nosso caso, a condição é que  `author` deve ser igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código parece como este:
 
 {% filename %}command-line{% endfilename %}
 ```python

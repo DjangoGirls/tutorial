@@ -62,7 +62,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo para sua p�
 
 Hora de escrever CSS! Abra o arquivo `static/css/blog.css` no seu editor de código.
 
-Não vamos nos aprofundar muito em customizar e aprender sobre CSS aqui, porque é bem fácil e você pode aprender sozinho após este workshop.  Tem uma recomendação de um curso gratuito para aprender mais no final da página.
+Não vamos nos aprofundar muito em customizar e aprender sobre CSS aqui, porque é bem fácil e você pode aprender sozinha após este workshop.  Tem uma recomendação de um curso gratuito para aprender mais no final da página.
 
 Mas vamos fazer pelo menos um pouco. Talvez possamos mudar a cor do nosso cabeçalho? Para entender sobre cores, computadores usam códigos especiais. Eles começam com `#` e são seguidos por 6 letras (A-F) e números (0-9). Por exemplo, o código para azul é `#0000FF`. Você pode encontrar vários exemplos de códigos de cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `vermelho - red` e `verde - green`.
 
@@ -77,7 +77,7 @@ h1 a {
 
 `h1 a` é um seletor de CSS. Isso significa que nós estamos aplicando nossos estilos para qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos no código algo como `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Claro, você pode colocar a cor que você quiser aqui!
 
-Em um arquivo CSS podemos determinar estilos para elementos no arquivo HTML. A primeira maneira de identificar elementos é pelo nome do elemento. Você de lembrar dessas tags na seção de HTML. Coisas como `a`, `h1` e  `body` são todas exemplos de nomes de elemeto. Nós também identificamos elementos pelo atributo `class` ou o atributo `id`. Classe e id são nomes que você mesmo dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, você poderia identificar a seguinte tag usando a tag de nome `a`, a classe `external_link` ou a id `link_para_a_wiki_page`:
+Em um arquivo CSS podemos determinar estilos para elementos no arquivo HTML. A primeira maneira de identificar elementos é pelo nome do elemento. Você de lembrar dessas tags na seção de HTML. Coisas como `a`, `h1` e  `body` são todas exemplos de nomes de elementos. Nós também identificamos elementos pelo atributo `class` ou o atributo `id`. Classe e id são nomes que você mesmo dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, você poderia identificar a seguinte tag usando a tag de nome `a`, a classe `external_link` ou a id `link_para_a_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -284,15 +284,6 @@ no arquivo `blog/templates/blog/post_list.html` por isto:
 Salve esses arquivos e atualize seu site.
 
 ![Figure 14.4](images/final.png)
-
-Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
-
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
-
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
-
-Ready for the next chapter?! :)
-
 
 Uhuu! Ficou incrível, né? Olhe para o código que nós acabamos de colar para encontrar os lugares aonde nós adicionamos classes no HTML e as usamos no CSS. Aonde você faria a mudança para que a data ficasse com a cor turquesa ?
 

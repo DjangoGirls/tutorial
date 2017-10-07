@@ -1,6 +1,6 @@
 # O que vem depois?
 
-Parabéns! Você é **demais**. Estamos orgulhosos! <3
+Parabéns! Você é **demais**. Estamos orgulhosas! <3
 
 ### O que fazer agora?
 

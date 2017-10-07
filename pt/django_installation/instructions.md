@@ -180,7 +180,7 @@ Cleaning up...
 data-collapse=true ces-->
 
 >Se você receber um erro ao chamar o pip na plataforma Windows por favor, verifique se o caminho do projeto contém espaços, acentos ou caracteres especiais (exemplo, `C:\Users\User Name\djangogirls`). Se sim, por favor considere usar outro lugar sem espaços, acentos ou caracteres especiais (sugestão é: `C:\djangogirls`). Crie um novo virtualenv no diretório novo, então
-remova o diretório antigo e tente o comando acima novamente. (Mover o diretório virtualenv nõ funciona já que o virtualenv usa
+remova o diretório antigo e tente o comando acima novamente. (Mover o diretório virtualenv não funciona já que o virtualenv usa
 caminhos absolutos.)
 
 <!--endsec-->
@@ -188,7 +188,7 @@ caminhos absolutos.)
 <!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Sua linha de coamando pode congelar depois de você tentar instalar o Django. Se isso acontecers, ao invéz do comando acima use:
+> Sua linha de comando pode congelar depois de você tentar instalar o Django. Se isso acontecer, ao invéz do comando acima use:
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -204,4 +204,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-É isso! Agora você está (finalmente) pronto para criar uma aplicação Django!
+É isso! Agora você está (finalmente) pronta para criar uma aplicação Django!

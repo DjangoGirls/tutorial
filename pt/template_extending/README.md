@@ -83,7 +83,7 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
 
 Mas, por quê? Você acabou de criar um `block` (bloco)! Você usou uma tag de template `{% block %}` para criar uma área onde será inserido HTML. Esse HTML virá de outro template que estende esse template (`base.html`). Nós vamos te mostrar como fazer isso já já.
 
-Agora salve `base.html` e abra o arquivo `blog/templates/blog/post_list.html` novamente. {% raw %}Você irá remover tudo que estiver acima de `{% for post in posts %}` e abaixo de `{% endfor %}`. Qunado terminar, o arquivo ficará dessa forma:{% endraw %}
+Agora salve `base.html` e abra o arquivo `blog/templates/blog/post_list.html` novamente. {% raw %}Você irá remover tudo que estiver acima de `{% for post in posts %}` e abaixo de `{% endfor %}`. Quando terminar, o arquivo ficará dessa forma:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
