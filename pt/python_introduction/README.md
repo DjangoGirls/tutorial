@@ -216,7 +216,7 @@ Mas, e se digitarmos o nome errado? Você consegue adivinhar o que aconteceria? 
 >>> ciddae
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'ctiy' is not defined
+NameError: name 'ciddae' is not defined
 ```
 
 Um erro! Como você pode ver, Python tem diferentes tipos de erros e este é chamado **NameError**. Python dará este erro se você tentar usar uma variável que não foi definida ainda. Se você encontrar esse erro depois, veja se no seu código se você não digitou o nome de uma variável errado.
@@ -697,7 +697,7 @@ as declarações `elif` e `else`:
 if 5 > 2:
     print('5 é de fato maior que 2')
 else:
-    print('5 não é maior que 2'')
+    print('5 não é maior que 2')
 ```
 
 Quando isso é executado será impresso:
@@ -833,7 +833,7 @@ def hi(nome):
     elif nome == 'Sonja':
         print('Hi Sonja!')
     else:
-        print('Hi anonymous!')
+        print('Hi anônima!')
 
 hi()
 ```
@@ -887,7 +887,7 @@ Agora, o que você acha que irá acontecer se você escrever outro nome lá, com
 
 {% filename %}command-line{% endfilename %}
 ```
-Hi anonymous!
+Hi anônima!
 ```
 
 Isso é incrível, não é? Dessa forma você não tem que repetir o código toda vez que você quiser trocar o nome da pessoa que a função deve cumprimentar. E é justamente por isso que nós precisamos de funções – você nunca quer repetir seu código!
@@ -967,7 +967,7 @@ Hi You!
 Próxima garota
 ```
 
-Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `garota`.
+Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `garotas`.
 
 Você também pode usar o `for` com numeros usando a função `range`:
 
