@@ -391,7 +391,7 @@ Altere ela para isso:
 {% endif %}
 ```
 
-Como você deve estar "logada", se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador diferente ou em uma janela privada ("incognito"), e então, veja que o link não é exibido, assim como o icone também não é!
+Como você deve estar "logada", se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador diferente ou em uma janela anônima, e então, veja que o link não é exibido, assim como o icone também não é!
 
 ## Mais uma coisa: hora de implantar!
 
