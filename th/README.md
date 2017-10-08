@@ -1,81 +1,50 @@
-# Dynamic data in templates
+# Django admin
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Let's open the `blog/admin.py` file and replace its contents with this:
 
-OK, so how will we achieve this?
-
-We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
-
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
-from django.shortcuts import render
-
-def post_list(request):
-    return render(request, 'blog/post_list.html', {})
-```
-
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-from django.shortcuts import render
-from .models import Post
-```
-
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
-
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
-
-## QuerySet
-
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
-
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-```
-
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-from django.shortcuts import render
-from django.utils import timezone
+from django.contrib import admin
 from .models import Post
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {})
+admin.site.register(Post)
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+![Login page](images/login_page2.png)
 
-So finally our `blog/views.py` file should look like this:
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-{% filename %}blog/views.py{% endfilename %}
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
-```python
-from django.shortcuts import render
-from django.utils import timezone
-from .models import Post
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
-```
+{% filename %}command-line{% endfilename %}
 
-That's it! Time to go back to our template and display this QuerySet!
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+
+![Django admin](images/django_admin3.png)
+
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+
+![Django admin](images/edit_post3.png)
+
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
