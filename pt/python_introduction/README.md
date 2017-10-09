@@ -212,11 +212,11 @@ Mas, e se digitarmos o nome errado? Você consegue adivinhar o que aconteceria? 
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> city = "Tokyo"
->>> ctiy
+>>> cidade = "Tokyo"
+>>> ciddae
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'ctiy' is not defined
+NameError: name 'ciddae' is not defined
 ```
 
 Um erro! Como você pode ver, Python tem diferentes tipos de erros e este é chamado **NameError**. Python dará este erro se você tentar usar uma variável que não foi definida ainda. Se você encontrar esse erro depois, veja se no seu código se você não digitou o nome de uma variável errado.
@@ -229,14 +229,14 @@ Tente isso:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> name = 'Maria'
->>> name
+>>> nome = 'Maria'
+>>> nome
 'Maria'
->>> print(name)
+>>> print(nome)
 Maria
 ```
 
-Quando você apenas digita `nome`, o interpretador Python responde com a *representação* como string da variável 'name', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(nome)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
+Quando você apenas digita `nome`, o interpretador Python responde com a *representação* como string da variável 'nome', que são as letras M-a-r-i-a, entre aspas simples. Quando você diz `print(nome)`, Python vai "imprimir" o conteúdo da variável na tela, sem as aspas, o que é mais puro.
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções, ou quando queremos imprimir algo em várias linhas.
 
@@ -256,14 +256,14 @@ Sim, esta é uma lista vazia. Não é muito, não é? Vamos criar uma lista dos 
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> lottery = [3, 42, 12, 19, 30, 59]
+>>> loteria = [3, 42, 12, 19, 30, 59]
 ```
 
 Tudo certo, nós temos uma lista! O que podemos fazer com isso? Vamos ver quantos números de loteria existem nesta lista. Você tem ideia de qual função deve usar para isso? Você já sabe disso!
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> len(lottery)
+>>> len(loteria)
 6
 ```
 
@@ -271,14 +271,14 @@ Sim! `len()` pode te dar o número de objetos que fazem parte de uma lista. Uma 
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> lottery.sort()
+>>> loteria.sort()
 ```
 
 Isso não retorna nada, apenas troca a ordem em que os números aparecem na lista. Vamos imprimir isso outra vez e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> print(lottery)
+>>> print(loteria)
 [3, 12, 19, 30, 42, 59]
 ```
 
@@ -288,8 +288,8 @@ Talvez a gente queira inverter essa ordem? Vamos fazer isso!
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> lottery.reverse()
->>> print(lottery)
+>>> loteria.reverse()
+>>> print(loteria)
 [59, 42, 30, 19, 12, 3]
 ```
 
@@ -297,8 +297,8 @@ Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode faze
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> lottery.append(199)
->>> print(lottery)
+>>> loteria.append(199)
+>>> print(loteria)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
@@ -306,9 +306,9 @@ Se você quiser mostrar apenas o primeiro número você pode usar **índices**. 
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> print(lottery[0])
+>>> print(loteria[0])
 59
->>> print(lottery[1])
+>>> print(loteria[1])
 42
 ```
 
@@ -319,12 +319,12 @@ tentar um exemplo e reforçar o que aprendemos previamente; nós iremos apagar o
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> print(lottery)
+>>> print(loteria)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> print(loteria[0])
 59
->>> lottery.pop(0)
->>> print(lottery)
+>>> loteria.pop(0)
+>>> print(loteria)
 [42, 30, 19, 12, 3, 199]
 ```
 
@@ -341,7 +341,8 @@ Você pode encontrar uma lista de todos os métodos disponíveis neste capítulo
 Um dicionário é semelhante a uma lista, mas você pode acessar valores através de uma chave ao invés de um índice. Uma chave pode ser qualquer string ou número. A sintaxe para definir um dicionário vazio é:
 
 {% filename %}command-line{% endfilename %}
-```>>> {}
+```python
+>>> {} 
     {}
 ```    
 
@@ -373,7 +374,7 @@ O que acontece se pedirmos ao Python o valor de uma chave que não existe? Você
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant['idade']
+>>> participante['idade']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'idade'
@@ -419,7 +420,7 @@ Além disso você pode mudar o valor associado com uma chave já criada no dicio
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participante['pais'] = 'Alemanha'
->>> participant
+>>> participante
 {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 ```
 
@@ -574,7 +575,7 @@ Anteriormente, nós escolhemos um editor de código da seção do [editor de có
 print('Hello, Django girls!')
 ```
 
-Obviamente, você agora é um desenvolvedor Python experimentado, então sinta-se livre para escrever algum código com o que 
+Obviamente, você agora é uma desenvolvedora Python com alguma experiência, então sinta-se livre para escrever algum código com o que 
 aprendeu hoje.
 
 Agora, nós precisamos salvar o arquivo e nomeá-lo de forma descritiva. Vamos chamar o arquivo de **python_intro.py** e 
@@ -695,9 +696,9 @@ as declarações `elif` e `else`:
 {% filename %}python_intro.py{% endfilename %}
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 é de fato maior que 2')
 else:
-    print('5 is not greater than 2')
+    print('5 não é maior que 2')
 ```
 
 Quando isso é executado será impresso:
@@ -705,17 +706,17 @@ Quando isso é executado será impresso:
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
-5 is indeed greater than 2
+5 é de fato maior que 2
 ```
 
 Se 2 fosse um número maior que 5, então o segundo comando seria executado. Simples, não é? Vamos ver como o `elif` funciona:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-name = 'Sonja'
-if name == 'Ana':
+nome = 'Sonja'
+if nome == 'Ana':
     print('Hey Ana!')
-elif name == 'Sonja':
+elif nome == 'Sonja':
     print('Hey Sonja!')
 else:
     print('Hey anonymous!')
@@ -797,8 +798,8 @@ Uma função é uma sequência de instruções que o Python deve executar. Cada 
 {% filename %}python_intro.py{% endfilename %}
 ```python
 def hi():
-    print('Hi there!')
-    print('How are you?')
+    print('Olá!')
+    print('Como vai você?')
 
 hi()
 ``` 
@@ -812,28 +813,28 @@ Vamos executa-lo agora e ver o que acontece:
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
-Hi there!
-How are you?
+Olá!
+Como vai você?
 ```
 
-Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'hi' para quem o executa - com um name:
+Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'hi' para quem o executa - com um nome:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-def hi(name):
+def hi(nome):
 ```
 
-Como você pode ver, nós demos a nossa função um parâmetro que ns chamamos de `name`:
+Como você pode ver, nós demos a nossa função um parâmetro que ns chamamos de `nome`:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-def hi(name):
-    if name == 'Ana':
+def hi(nome):
+    if nome == 'Ana':
         print('Hi Ana!')
-    elif name == 'Sonja':
+    elif nome == 'Sonja':
         print('Hi Sonja!')
     else:
-        print('Hi anonymous!')
+        print('Hi anônima!')
 
 hi()
 ```
@@ -847,11 +848,11 @@ $ python3 python_intro.py
 Traceback (most recent call last):
 File "python_intro.py", line 10, in <module>
   hi()
-TypeError: hi() missing 1 required positional argument: 'name'
+TypeError: hi() missing 1 required positional argument: 'nome'
 ```
 
 Oops, um erro. Ainda bem que o Python nos dá uma mensagem de erro clara.
-Ela nos informa que a função `hi()` (a que nós definimos) requer um argumento (chamado `name`) e que nós nos esquecemos de
+Ela nos informa que a função `hi()` (a que nós definimos) requer um argumento (chamado `nome`) e que nós nos esquecemos de
 passá-lo quando chamamos a função.
 Vamos consertar isso no final do arquivo:
 
@@ -883,11 +884,11 @@ $ python3 python_intro.py
 Hi Sonja!
 ```
 
-Agora, o que você acha que irá acontecer se você escrever outro nome lá, como o que chamamos de argumento? (Nem Ola, nem Sonja.) Tente e veja se você está certa. Deveria colocar isso na tela:
+Agora, o que você acha que irá acontecer se você escrever outro nome lá, como o que chamamos de argumento? (Nem Ana, nem Sonja.) Tente e veja se você está certa. Deveria colocar isso na tela:
 
 {% filename %}command-line{% endfilename %}
 ```
-Hi anonymous!
+Hi anônima!
 ```
 
 Isso é incrível, não é? Dessa forma você não tem que repetir o código toda vez que você quiser trocar o nome da pessoa que a função deve cumprimentar. E é justamente por isso que nós precisamos de funções – você nunca quer repetir seu código!
@@ -896,8 +897,8 @@ Vamos fazer algo mais elaborado – existem muitos nomes, e escrever uma condiç
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-def hi(name):
-    print('Hi ' + name + '!')
+def hi(nome):
+    print('Hi ' + nome + '!')
 
 hi("Rachel")
 ```
@@ -912,7 +913,7 @@ Hi Rachel!
 
 Parabéns! Você acabou de aprender como escrever funções! :)
 
-## Laços de repetiço
+## Laços de repetição
 
 > Leitores em casa: essa parte está disponível em vídeos (em inglês) [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
@@ -924,14 +925,14 @@ Ainnda se lembra das listas? Vamos fazer uma lista de garotas:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
+garotas = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 ```
 
 Nós queremos comprimentar todas elas por seus nomes. Nós temos a função `hi` para fazer isso, então vamos fazer isso com um laço de repetição:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-for name in girls:
+for nome in garotas:
 ```
 
 A declaração ```for``` se comporta  de maneira similar a da declaração ```if```; os dois códigos abaixo precisam estar
@@ -941,13 +942,13 @@ Aqui está o código completo que irá para dentro do arquivo:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
-def hi(name):
-    print('Hi ' + name + '!')
+def hi(nome):
+    print('Hi ' + nome + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
-for name in girls:
-    hi(name)
-    print('Next girl')
+garotas = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
+for nome in garotas:
+    hi(nome)
+    print('Próxima garota')
 ```
 
 A nós rodamos ele:
@@ -956,18 +957,18 @@ A nós rodamos ele:
 ```
 $ python3 python_intro.py
 Hi Rachel!
-Next girl
+Próxima garota
 Hi Monica!
-Next girl
+Próxima garota
 Hi Phoebe!
-Next girl
-Hi Ola!
-Next girl
+Próxima garota
+Hi Ana!
+Próxima garota
 Hi You!
-Next girl
+Próxima garota
 ```
 
-Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `girls`.
+Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `garotas`.
 
 Você também pode usar o `for` com numeros usando a função `range`:
 
