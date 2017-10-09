@@ -1,218 +1,47 @@
-# Django ORM and QuerySets
+# How the Internet works
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-## What is a QuerySet?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-It's easiest to learn by example. Let's try this, shall we?
+If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
-## Django shell
+As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
-Open up your local console (not on PythonAnywhere) and type this command:
+OK, but you want to know how the Internet looks, right?
 
-{% filename %}command-line{% endfilename %}
+We drew you a picture! It looks like this:
 
-    (myvenv) ~/djangogirls$ python manage.py shell
-    
+![Figure 1.1](images/internet_1.png)
 
-The effect should be like this:
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-{% filename %}command-line{% endfilename %}
+![Figure 1.2](images/internet_3.png)
 
-```python
-(InteractiveConsole)
->>>
-```
+It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+It looks like this:
 
-### All objects
+![Figure 1.3](images/internet_2.png)
 
-Let's try to display all of our posts first. You can do that with the following command:
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-{% filename %}command-line{% endfilename %}
+Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
-```python
->>> Post.objects.all()
-Traceback (most recent call last):
-      File "<console>", line 1, in <module>
-NameError: name 'Post' is not defined
-```
+![Figure 1.4](images/internet_4.png)
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-{% filename %}command-line{% endfilename %}
+Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-```python
->>> from blog.models import Post
-```
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
-This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
-{% filename %}command-line{% endfilename %}
+Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
-```
-
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
-
-### Create object
-
-This is how you create a new Post object in database:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
-
-Let's import User model first:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.contrib.auth.models import User
-```
-
-What users do we have in our database? Try this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> User.objects.all()
-<QuerySet [<User: ola>]>
-```
-
-This is the superuser we created earlier! Let's get an instance of the user now:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> me = User.objects.get(username='ola')
-```
-
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
-
-Now we can finally create our post:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-Hurray! Wanna check if it worked?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-```
-
-There it is, one more post in the list!
-
-### Add more posts
-
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
-
-### Filter objects
-
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
-```
-
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
-
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
-[]
-```
-
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post = Post.objects.get(title="Sample title")
-```
-
-And then publish it with our `publish` method:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post.publish()
-```
-
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
-```
-
-### Ordering objects
-
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-We can also reverse the ordering by adding `-` at the beginning:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-```
-
-### Chaining QuerySets
-
-You can also combine QuerySets by **chaining** them together:
-
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
-
-This is really powerful and lets you write quite complex queries.
-
-Cool! You're now ready for the next part! To close the shell, type this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> exit()
-$
-```
+Enough talk – time to create!
