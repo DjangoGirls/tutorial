@@ -341,7 +341,8 @@ Você pode encontrar uma lista de todos os métodos disponíveis neste capítulo
 Um dicionário é semelhante a uma lista, mas você pode acessar valores através de uma chave ao invés de um índice. Uma chave pode ser qualquer string ou número. A sintaxe para definir um dicionário vazio é:
 
 {% filename %}command-line{% endfilename %}
-```>>> {}
+```python
+>>> {} 
     {}
 ```    
 
