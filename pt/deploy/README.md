@@ -188,8 +188,8 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
     {% filename %}PythonAnywhere command-line{% endfilename %}
     20:20 ~ $ cd my-first-blog
 
-    20:20 ~ $ virtualenv --python=python3.6 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.6
+    20:20 ~ $ virtualenv --python=python3.5 myvenv
+    Running virtualenv with interpreter /usr/bin/python3.5
     [...]
     Installing setuptools, pip...done.
 
