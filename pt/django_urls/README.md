@@ -69,7 +69,7 @@ Escrever views separadas para todos os números de post seria muito chato. Com e
 
 É hora de criar nossa primeira URL! Queremos http://127.0.0.1:8000 / para ser uma página inicial do nosso blog e exibir uma lista de posts.
 
-Também queremos manter o arquivo `mysite/urls.py` limpo, então nós importaremos as URLs da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
+Também queremos manter o arquivom`mysite/urls.py` limpo, então nós importaremos as URLs da nossa aplicação `blog` para o arquivo principal `mysite/urls.py`.
 
 Vá em frente, adicione uma linha que irá importar `blog.urls`. Note que nós estamos usando a função `include` aqui, então **você precisará** adicionar ela no "import", na primeira linha do arquivo.
 
@@ -111,7 +111,7 @@ urlpatterns = [
 ]
 ```
 
-Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para a URL `^$`. Essa expressão regular corresponderá a `^` (um começo) seguido por `$` (um fim) - então somente uma seqüência vazia irá corresponder. E isso está correto, porque para os resolvedores de URL do Django, ' http://127.0.0.1:8000 /' não é uma parte da URL. Este padrão irá mostrar ao Django que `views.post_list` é o lugar certo para ir, se alguém entra em seu site pelo endereço 'http://127.0.0.1:8000 /'.
+Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para a URL `^$`. Essa expressão regular corresponderá a `^` (um começo) seguido por `$` (um fim) - então somente uma sequência vazia irá corresponder. E isso está correto, porque para os resolvedores de URL do Django, ' http://127.0.0.1:8000 /' não é uma parte da URL. Este padrão irá mostrar ao Django que `views.post_list` é o lugar certo para ir, se alguém entra em seu site pelo endereço 'http://127.0.0.1:8000 /'.
 
 A última parte, `name='post_list'`, é o nome da URL que será usado para identificar a view. Ele pode ser o mesmo nome da view, mas também pode ser algo completamente diferente. Nós iremos usar URLs nomeadas mais tarde no projeto, então é importante nomear cada URL da app. Nós devemos também tentar manter os nomes das URLs únicos e fáceis de lembrar.
 
