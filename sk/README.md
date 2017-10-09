@@ -1,213 +1,303 @@
-# Introduction to HTML
+# CSS – make it pretty!
 
-What's a template, you may ask?
+Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+## What is CSS?
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-## What is HTML?
+But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+## Let's use Bootstrap!
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-## Your first template!
+It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+## Install Bootstrap
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
-    blog
-    └───templates
-        └───blog
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+```
+
+This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+
+![Figure 14.1](images/bootstrap1.png)
+
+Looking nicer already!
+
+## Static files in Django
+
+Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+
+### Where to put static files for Django
+
+Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+
+We do that by creating a folder called `static` inside the blog app:
+
+    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   └── static
+    └── mysite
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+## Your first CSS file!
 
-See how your website looks now: http://127.0.0.1:8000/
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+    
 
-![Figure 11.1](images/step1.png)
+Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
 
-Add the following to your template file:
+But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+In your `blog/static/css/blog.css` file you should add the following code:
 
-```html
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
+{% filename %}blog/static/css/blog.css{% endfilename %}
+
+```css
+h1 a {
+    color: #FCA205;
+}
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
 
-![Figure 11.2](images/step3.png)
-
-It worked! Nice work there :)
-
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
-
-## Head and body
-
-Each HTML page is also divided into two elements: **head** and **body**.
-
-* **head** is an element that contains information about the document that is not displayed on the screen.
-
-* **body** is an element that contains everything else that is displayed as part of the web page.
-
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
-
-For example, you can put a web page title element inside the `<head>`, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
-<html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Save the file and refresh your page.
+You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-![Figure 11.3](images/step4.png)
-
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
-
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
-
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
-
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
-
-## Customize your template
-
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
-
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br />` goes to another line (you can't put anything inside br)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
-
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+{% load staticfiles %}
+```
+
+We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
+
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
+
+Your file should now look like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% load staticfiles %}
 <html>
     <head>
         <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
 ```
 
-We've created three `div` sections here.
+OK, save the file and refresh the site!
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+![Figure 14.2](images/color2.png)
 
-It gives us this effect:
+Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
-![Figure 11.4](images/step6.png)
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+```css
+body {
+    padding-left: 15px;
+}
+```
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Add that to your CSS, save the file and see how it works!
 
-## One more thing: deploy!
+![Figure 14.3](images/margin2.png)
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
-### Commit, and push your code up to Github
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+```html
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
-{% filename %}command-line{% endfilename %}
+As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
-    $ git status
-    
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
-{% filename %}command-line{% endfilename %}
+```css
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+```
 
-    $ git add --all .
-    
+![Figure 14.3](images/font.png)
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+Great!
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-{% filename %}command-line{% endfilename %}
+Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
-    $ git status
-    
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+```html
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+```
 
-{% filename %}command-line{% endfilename %}
+And now add a class `post` to your `div` containing a blog post.
 
-    $ git commit -m "Changed the HTML for the site."
-    
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-> **Note** Make sure you use double quotes around the commit message.
+```html
+<div class="post">
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+```
 
-Once we've done that, we upload (push) our changes up to GitHub:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
-    $ git push
-    
+```css
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+.content {
+    margin-left: 40px;
+}
 
-{% filename %}command-line{% endfilename %}
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
 
-    $ cd ~/my-first-blog
-    $ git pull
-    [...]
-    
+.date {
+    color: #828282;
+}
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+.save {
+    float: right;
+}
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+.post-form textarea, .post-form input {
+    width: 100%;
+}
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+```
+
+Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
+
+in the `blog/templates/blog/post_list.html` with this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+```
+
+Save those files and refresh your website.
+
+![Figure 14.4](images/final.png)
+
+Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+
+Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+
+Ready for the next chapter?! :)
