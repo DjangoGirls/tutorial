@@ -59,7 +59,7 @@ SQLite. De qualquer forma, ignorar seu banco de dados SQLite na cópia no GitHub
 criou até agora vão ficar disponíceis apenas localmente, e você terá que adicioná-las novamente em produção. Você deve pensar no seu banco de dados local como um bom "playground", onde você pode testar coisas diferentes e não ter medo de apagar as
 postagens reais de seu blog.
 
-É uma boa idéia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza do que foi alterado. Isso previne que surpressas aconteçam, tais como adicionar ou fazer "commit" de arquivos errados. O comando `git status` retorna informações sobre qualquer arquivo "untracked/modified/staged" (não rastreado/modificado/encenado), status da branch e muito mais. A saída deve ser semelhante a:
+É uma boa ideia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza do que foi alterado. Isso previne que surpressas aconteçam, tais como adicionar ou fazer "commit" de arquivos errados. O comando `git status` retorna informações sobre qualquer arquivo "untracked/modified/staged" (não rastreado/modificado/encenado), status da branch e muito mais. A saída deve ser semelhante a:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -79,7 +79,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-E finalmente nós salvamos nossas alterações, Vá para o seu console e execute estes comandos:
+E finalmente nós salvamos nossas alterações, vá para o seu console e execute estes comandos:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -188,8 +188,8 @@ Assim como fez em seu próprio computador, você pode criar um virtualenv na Pyt
     {% filename %}PythonAnywhere command-line{% endfilename %}
     20:20 ~ $ cd my-first-blog
 
-    20:20 ~ $ virtualenv --python=python3.6 myvenv
-    Running virtualenv with interpreter /usr/bin/python3.6
+    20:20 ~ $ virtualenv --python=python3.5 myvenv
+    Running virtualenv with interpreter /usr/bin/python3.5
     [...]
     Installing setuptools, pip...done.
 
@@ -306,7 +306,7 @@ Se você ver um erro quando você tentar visitar o seu site, o primeiro lugar pa
 - cometer um erro no "path" (caminho) do virtualenv na guia web -- haverá geralmente uma pequena mensagem de erro vermelha lá, se há um problema.
 - Você usou a mesma versão do Python para seu virtualenv e para sua app web? Ambas devem ser 3.5. 
 
-Existem também alfumas [dicas gerais de debugging no wiki da PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+Existem também algumas [dicas gerais de debugging no wiki da PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
 E lembre-se, sua treinadora está aqui para ajudar!
 
@@ -314,6 +314,6 @@ E lembre-se, sua treinadora está aqui para ajudar!
 
 A página padrão para seu site deve dizer "Bem-vindo ao Django", como acontece no seu PC local. Tente adicionar `/admin/` no final da URL, e você será levado a administração do site. Faça login com o nome de usuário e senha, e você verá que você pode adicionar novas postagens no servidor.
 
-Uma vez que você tenha algumas postagens criadas, você pode voltar para sua configuração local (não no PythonAnywhere). A partir de agora vocÊ deve trabalhar em sua configuração local para fazer mudanças. Esse é o fluxo de trabalho comun no desenvolvimento web – fazer alterações localmente, enviar essas mudanças para o GitHub, e mandar suas alterações para o seeu servidor Web de produção. Isso perite a você trabalhar e experimentar sem quebrar seu site Web que está online. Muito legal, não é?
+Uma vez que você tenha algumas postagens criadas, você pode voltar para sua configuração local (não no PythonAnywhere). A partir de agora vocÊ deve trabalhar em sua configuração local para fazer mudanças. Esse é o fluxo de trabalho comun no desenvolvimento web – fazer alterações localmente, enviar essas mudanças para o GitHub, e mandar suas alterações para o seeu servidor Web de produção. Isso permite a você trabalhar e experimentar sem quebrar seu site Web que está online. Muito legal, não é?
 
 Dê em você mesma um *enorme* tapinha nas costas - implantações de servidor são uma das partes mais difíceis do desenvolvimento web, e muitas vezes leva dias antes de fazer funcionar. Mas você tem seu site publicado, na Internet, simples assim!
