@@ -1,44 +1,58 @@
-# Django views – time to create!
+# If you're doing the tutorial at home
 
-Time to get rid of the bug we created in the last chapter! :)
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+If you find it useful, you can follow through this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-## blog/views.py
+Good luck!
 
-OK, let's open up this file and see what's in there:
+# Installation
 
-{% filename %}blog/views.py{% endfilename %}
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-```python
-from django.shortcuts import render
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
-# Create your views here.
-```
+<!--endsec-->
 
-Not too much stuff here yet.
+# Install Python
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+{% include "/python_installation/instructions.md" %}
 
-The simplest *view* can look like this:
+# Set up virtualenv and install Django
 
-{% filename %}blog/views.py{% endfilename %}
+{% include "/django_installation/instructions.md" %}
 
-```python
-def post_list(request):
-    return render(request, 'blog/post_list.html', {})
-```
+# Install a code editor
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+{% include "/code_editor/instructions.md" %}
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+# Install Git
 
-Another error! Read what's going on now:
+{% include "/deploy/install_git.md" %}
 
-![Error](images/error.png)
+# Create a GitHub account
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+# Create a PythonAnywhere account
+
+{% include "/deploy/signup_pythonanywhere.md" %}
+
+# Start reading
+
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+
+* [How the internet works](../how_the_internet_works/README.md)
+
+* [Introduction to the command line](../intro_to_command_line/README.md)
+
+* [Introduction to Python](../python_introduction/README.md)
+
+* [What is Django?](../django/README.md)
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
