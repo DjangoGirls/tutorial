@@ -1,429 +1,213 @@
-# Introduction to the command-line interface
+# Introduction to HTML
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+What's a template, you may ask?
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-**Let us introduce you to your first new friend: the command line!**
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+## What is HTML?
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-## What is the command line?
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+## Your first template!
 
-## Open the command-line interface
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-To start some experiments we need to open our command-line interface first.
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
+    blog
+    └───templates
+        └───blog
+    
 
-Go to Start menu → Windows System → Command Prompt.
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-<!--endsec-->
+See how your website looks now: http://127.0.0.1:8000/
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-Go to Applications → Utilities → Terminal.
+![Figure 11.1](images/step1.png)
 
-<!--endsec-->
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
+Add the following to your template file:
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<!--endsec-->
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
-## Prompt
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-You now should see a white or black window that is waiting for your commands.
+![Figure 11.2](images/step3.png)
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+It worked! Nice work there :)
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+
+## Head and body
+
+Each HTML page is also divided into two elements: **head** and **body**.
+
+* **head** is an element that contains information about the document that is not displayed on the screen.
+
+* **body** is an element that contains everything else that is displayed as part of the web page.
+
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+
+For example, you can put a web page title element inside the `<head>`, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
+
+Save the file and refresh your page.
+
+![Figure 11.3](images/step4.png)
+
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+
+## Customize your template
+
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
+
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
+
+We've created three `div` sections here.
+
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+
+It gives us this effect:
+
+![Figure 11.4](images/step6.png)
+
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+
+## One more thing: deploy!
+
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+
+### Commit, and push your code up to Github
+
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
-    $
+    $ git status
     
 
-<!--endsec-->
-
-<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
-
-On Windows, it's a `>` sign, like this:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
 
-    >
+    $ git add --all .
     
 
-<!--endsec-->
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
-
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
-
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
-
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
-
-## Your first command (YAY!)
-
-Let's start with something simple. Type this command:
-
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
 
-    $ whoami
+    $ git status
     
 
-<!--endsec-->
-
-<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
-    > whoami
+    $ git commit -m "Changed the HTML for the site."
     
 
-<!--endsec-->
+> **Note** Make sure you use double quotes around the commit message.
 
-And then hit `enter`. This is our result:
+Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ whoami
-    olasitarska
+    $ git push
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+### Pull your new code down to PythonAnywhere, and reload your web app
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
-
-## Basics
-
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
-
-### Current directory
-
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
-
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 {% filename %}command-line{% endfilename %}
 
-    $ pwd
-    /Users/olasitarska
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
     
 
-> Note: 'pwd' stands for 'print working directory'.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
-<!--endsec-->
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
-<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska
-    
-
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
-
-<!--endsec-->
-
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
-
-* * *
-
-### List files and directories
-
-So what's in it? It'd be cool to find out. Let's see:
-
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
-    
-
-<!--endsec-->
-
-<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
-    
-
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
-
-* * *
-
-### Change current directory
-
-Now, let's go to our Desktop directory:
-
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd Desktop
-    
-
-<!--endsec-->
-
-Check if it's really changed:
-
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ pwd
-    /Users/olasitarska/Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
-
-{% filename %}komut-satırı{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska\Desktop
-    
-
-<!--endsec-->
-
-Here it is!
-
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
-
-* * *
-
-### Create directory
-
-How about creating a practice directory on your desktop? You can do it this way:
-
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
-
-{% filename %}komut-satırı{% endfilename %}
-
-    $ mkdir practice
-    
-
-<!--endsec-->
-
-<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
-
-{% filename %}komut-satırı{% endfilename %}
-
-    > mkdir practice
-    
-
-<!--endsec-->
-
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
-
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
-
-* * *
-
-### Exercise!
-
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
-
-#### Solution:
-
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
-
-{% filename %}komut-satırı{% endfilename %}
-
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
-    
-
-<!--endsec-->
-
-<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
-    
-
-<!--endsec-->
-
-Congrats! :)
-
-* * *
-
-### Clean up
-
-We don't want to leave a mess, so let's remove everything we did until that point.
-
-First, we need to get back to Desktop:
-
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd ..
-    
-
-<!--endsec-->
-
-<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd ..
-    
-
-<!--endsec-->
-
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
-
-Check where you are:
-
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ pwd
-    /Users/olasitarska/Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska\Desktop
-    
-
-<!--endsec-->
-
-Now time to delete the `practice` directory:
-
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
-
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ rm -r practice
-    
-
-<!--endsec-->
-
-<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
-    
-
-<!--endsec-->
-
-Done! To be sure it's actually deleted, let's check it:
-
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ ls
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > dir
-    
-
-<!--endsec-->
-
-### Exit
-
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
-
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ exit
-    
-
-<!--endsec-->
-
-<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > exit
-    
-
-<!--endsec-->
-
-Cool, huh? :)
-
-## Summary
-
-Here is a summary of some useful commands:
-
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
-
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
-
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
-
-## Ready?
-
-Let's dive into Python!
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
