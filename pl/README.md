@@ -1,50 +1,218 @@
-# Django admin
+# Django ORM and QuerySets
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+## What is a QuerySet?
 
-{% filename %}blog/admin.py{% endfilename %}
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-```python
-from django.contrib import admin
-from .models import Post
+It's easiest to learn by example. Let's try this, shall we?
 
-admin.site.register(Post)
-```
+## Django shell
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
-
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
-
-![Login page](images/login_page2.png)
-
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
-
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
-
-When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Open up your local console (not on PythonAnywhere) and type this command:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    (myvenv) ~/djangogirls$ python manage.py shell
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+The effect should be like this:
 
-![Django admin](images/django_admin3.png)
+{% filename %}command-line{% endfilename %}
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+```python
+(InteractiveConsole)
+>>>
+```
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-![Django admin](images/edit_post3.png)
+### All objects
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Let's try to display all of our posts first. You can do that with the following command:
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+```
+
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from blog.models import Post
+```
+
+This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
+```
+
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+
+### Create object
+
+This is how you create a new Post object in database:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+
+Let's import User model first:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.contrib.auth.models import User
+```
+
+What users do we have in our database? Try this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
+
+This is the superuser we created earlier! Let's get an instance of the user now:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> me = User.objects.get(username='ola')
+```
+
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+
+Now we can finally create our post:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+Hurray! Wanna check if it worked?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
+
+There it is, one more post in the list!
+
+### Add more posts
+
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+
+### Filter objects
+
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(author=me)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
+
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
+
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Chaining QuerySets
+
+You can also combine QuerySets by **chaining** them together:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    
+
+This is really powerful and lets you write quite complex queries.
+
+Cool! You're now ready for the next part! To close the shell, type this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> exit()
+$
+```
