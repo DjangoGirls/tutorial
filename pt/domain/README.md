@@ -1,8 +1,8 @@
 # Domínio
 
-PythonAnywhere te deu um domínio gratuito, mas talvez você não queira ter ". pythonanywhere.com" no final da URL do seu blog. Talvez você queira seu blog apenas "www.fotos-infinitas-de-gatinhos.org" ou "www.pecas-de-maquinas-a-vapor-em-3D.com" ou "www.colecionando-antiguidades.com" ou "www.unicornioz-mutantez.net", ou seja o que vai ser.
+PythonAnywhere te deu um domínio gratuito, mas talvez você não queira ter ". pythonanywhere.com" no final da URL do seu blog. Talvez você queira que o endereço seja algo como "www.fotos-infinitas-de-gatinhos.org" ou "www.pecas-de-maquinas-a-vapor-em-3D.com" ou "www.colecionando-antiguidades.com" ou "www.unicornioz-mutantez.net" ou qualquer outro nome que você quiser.
 
-Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se você está realmente comprometido!
+Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se estiver realmente comprometida!
 
 ## Onde registrar um domínio?
 
