@@ -1,48 +1,27 @@
-# Il tutorial di Django Girls
+# What is Django?
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-> Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita https://creativecommons.org/licenses/by-sa/4.0/
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
-## Introduzione
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-Hai mai sentito che il mondo sta diventando sempre più tecnologico e sei in qualche modo rimasto indietro? ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-Beh, abbiamo buone notizie per te! La programmazione non è così complicata come sembra e vogliamo dimostrati quanto può essere divertente.
+## Why do you need a framework?
 
-Il tutorial non ti trasformerà magicamente in un programmatore. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che la programmazione o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-Speriamo di essere in grado di farti amare la tecnologia come lo facciamo noi!
+Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
-## Cosa imparerai durante questo tutorial?
+## What happens when someone requests a website from your server?
 
-Una volta che avrai terminato il tutorial, avrai a disposizione una semplice applicazione web: il tuo blog personale. Ti mostreremo come metterlo in linea, in modo che gli altri possano vedere il tuo lavoro!
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-Assomiglierà (più o meno) a questo:
+Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-![Figure 0.1][2]
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
- [2]: images/application.png
+Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-> Se lavori da solo/a al tutorial e non hai un'insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di esserci di volta in volta ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
-
-OK, [cominciamo dall'inizio...][3]
-
- [3]: ./how_the_internet_works/README.md
-
-## Informazioni e contribuzioni
-
-Questo tutorial è mantenuto da [DjangoGirls][4]. Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori][5].
-
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
-
-## Vorresti aiutarci a tradurre il tutorial in un altra lingua?
-
-Attualmente, le traduzioni vengono mantenute sulla piattaforma crowdin.com in:
-
-https://crowdin.com/project/django-girls-tutorial
-
-Se la tua lingua non è elencata su crowding, per favore [apri una nuova istanza][6] con la tua lingua in modo che possiamo aggiungerla.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
