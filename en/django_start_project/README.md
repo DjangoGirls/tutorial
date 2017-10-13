@@ -110,7 +110,7 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
 ```
 
-> Also add `tutorial-container-YOURUSERNAMEIDNUMBER.codeanyapp.com' to the ALLOWED_HOSTS if you are on a chromebook. You can find the exact string to add by right clicking on _tutorial-container_ in the CodeAnywhere sidebar and clicking _Info_.
+> Also add `tutorial-container-YOURUSERNAMEIDNUMBER.codeanyapp.com' to the ALLOWED\_HOSTS if you are on a chromebook. You can find the exact string to add by right clicking on _tutorial-container_ in the CodeAnywhere sidebar and clicking _Info_.
 
 ## Set up a database
 
@@ -166,7 +166,7 @@ If you are on a Chromebook, use this command instead:
 
 {% filename %}CodeAnywhere{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8000
 ```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
