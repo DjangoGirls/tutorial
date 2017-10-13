@@ -40,6 +40,11 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--endsec-->
 
+<!--sec data-title="Opening: Chromebook" data-id="chromebook_prompt" data-collapse=true ces-->
+
+Right click on your container in the sidebar (It should be called _tutorial-container_) and select _SSH Terminal_.
+
+<!--endsec-->
 ## Prompt
 
 You now should see a white or black window that is waiting for your commands.

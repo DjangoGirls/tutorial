@@ -110,10 +110,7 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
-> `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
-
-> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
+> Also add `tutorial-container-YOURUSERNAMEIDNUMBER.codeanyapp.com' to the ALLOWED_HOSTS if you are on a chromebook. You can find the exact string to add by right clicking on _tutorial-container_ in the CodeAnywhere sidebar and clicking _Info_.
 
 ## Set up a database
 
@@ -167,7 +164,7 @@ You need to be in the directory that contains the `manage.py` file (the `djangog
 
 If you are on a Chromebook, use this command instead:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}CodeAnywhere{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
 ```
