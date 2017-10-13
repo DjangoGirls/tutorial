@@ -2,33 +2,40 @@ You can [skip right over this section](http://tutorial.djangogirls.org/en/instal
 are, your installation experience will be a little different. You can ignore the
 rest of the installation instructions.
 
-### Cloud 9
+### CodeAnywhere
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running
+CodeAnywhere is a tool that gives you a code editor and access to a computer running
 on the Internet where you can install, write, and run the software. For the duration
-of the tutorial, Cloud 9 will act as your _local machine_. You'll still be
+of the tutorial, CodeAnywhere will act as your _local computer_. You'll still be
 running commands in a terminal interface just like your classmates on OS X,
 Ubuntu, or Windows, but your terminal will be connected to a computer running
-somewhere else that Cloud 9 sets up for you.
+somewhere else that CodeAnywhere sets up for you.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click _Create a New Workspace_
-5. Name it _django-girls_
-6. Select the _Blank_ (second from the right on the bottom row with orange logo)
+1. Go to [codeanywhere.com](https://codeanywhere.com)
+2. Sign up for an account
+3. Check your email and verify your account
+4. Close the connection wizard (We'll go back to that in a second)
+3. Click _File -> New Project_
+4. Name it _django-girls_
+5. In the Connection Wizard, name your connection _tutorial-container_
+6. Search for "python" in the search box
+7. Select _Django - Ubuntu 14.04_
+8. Wait for your container to start. This should take 1-2 minutes.
 
-Now you should see an interface with a sidebar, a big main window with some
-text, and a small window at the bottom that looks something like this:
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a menu bar, a sidebar, and a big main
+window with some text. We want to open a _terminal_, a window that will let us
+give instructions to the computer CodeAnywhere has started for us.
+
+To open the terminal, right click on "tutorial-container" in the sidebar and
+select _SSH Terminal_. The main area should now show a prompt that looks like this:
+
+{% filename %}CodeAnywhere{% endfilename %}
 ```
 yourusername:~/workspace $
 ```
 
-This bottom area is your _terminal_, where you will give the computer Cloud 9
-has prepared for your instructions. You can resize that window to make it a bit
-bigger.
+Now you're ready to install some software to be prepared for tomorrow.
 
 ### Virtual Environment
 
@@ -37,28 +44,39 @@ stuff useful computer code into for a project we're working on. We use them to
 keep the various bits of code we want for our various projects separate so
 things don't get mixed up between projects.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+In your terminal, type the following lines. Hit enter after each one to send the
+instruction to the computer.
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}CodeAnywhere{% endfilename %}
 ```
 sudo apt update
-sudo apt install python3.6-venv
+sudo apt install python3.4-venv
 ```
 
 If this still doesn't work, ask your coach for some help.
 
 Next, run:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}CodeAnywhere{% endfilename %}
 ```
 mkdir djangogirls
 cd djangogirls
-python3.6 -mvenv myvenv
+python3 -mvenv myvenv
 source myvenv/bin/activate
+pip install --upgrade pip
 pip install django~=1.11.0
 ```
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).
+
+Finally, right click on "tutorial-container" in the sidebar and select
+_Refresh_. You should see a new folder, "djangogirls", appear in the list in the
+sidebar.
+
+### Golden Rule (of Chromebooks)
+
+Throughout the tutorial, if you see instructions for OS X, Linux, or Windows but
+not specifically for Chromebooks, follow whatever the Linux instructions are.
 
 ### Github
 
@@ -73,7 +91,7 @@ people can see your work.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're
 already using a computer that is on the Internet (as opposed to, say, a laptop).
-However, it's still useful, as we can think of our Cloud 9 workspace as a place
+However, it's still useful, as we can think of our CodeAnywhere workspace as a place
 or our "in progress" work and Python Anywhere as a place to show off our stuff
 as it becomes more complete.
 
