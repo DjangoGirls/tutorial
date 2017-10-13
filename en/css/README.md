@@ -46,7 +46,8 @@ We do that by creating a folder called `static` inside the blog app:
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```
 
