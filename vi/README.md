@@ -1,106 +1,218 @@
-# Django templates
+# Django ORM and QuerySets
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## What are template tags?
+## What is a QuerySet?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+It's easiest to learn by example. Let's try this, shall we?
 
-## Display post list template
+## Django shell
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
-
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-{{ posts }}
-```
-
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
-
-![Figure 13.1](images/step1.png)
-
-As you can see, all we've got is this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
-```
-
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
-```
-
-Try this in your template.
-
-![Figure 13.2](images/step2.png)
-
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-```
-
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
-
-![Figure 13.3](images/step3.png)
-
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
-
-## One more thing
-
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
-
-* First, push your code to Github
+Open up your local console (not on PythonAnywhere) and type this command:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
+    (myvenv) ~/djangogirls$ python manage.py shell
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+The effect should be like this:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
-    $ git pull
-    [...]
+```python
+(InteractiveConsole)
+>>>
+```
+
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+
+### All objects
+
+Let's try to display all of our posts first. You can do that with the following command:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+```
+
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from blog.models import Post
+```
+
+This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
+```
+
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+
+### Create object
+
+This is how you create a new Post object in database:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+
+Let's import User model first:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.contrib.auth.models import User
+```
+
+What users do we have in our database? Try this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
+
+This is the superuser we created earlier! Let's get an instance of the user now:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> me = User.objects.get(username='ola')
+```
+
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+
+Now we can finally create our post:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+Hurray! Wanna check if it worked?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
+
+There it is, one more post in the list!
+
+### Add more posts
+
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+
+### Filter objects
+
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(author=me)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
+
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
+
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Chaining QuerySets
+
+You can also combine QuerySets by **chaining** them together:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+This is really powerful and lets you write quite complex queries.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Cool! You're now ready for the next part! To close the shell, type this:
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+{% filename %}command-line{% endfilename %}
 
-![Figure 13.4](images/donut.png)
+```python
+>>> exit()
+$
+```
