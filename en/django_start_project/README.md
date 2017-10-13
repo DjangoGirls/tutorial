@@ -188,8 +188,10 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
 
 {% filename %}browser{% endfilename %}
 ```
-https://django-girls-<your cloud9 username>.c9users.io
+https://tutorial-container-YOURUSERNAMEIDNUMBER.codeanyapp.com:8000
 ```
+
+> Remember to always use this URL whenever you see 127.0.0.1 if you're using a Chromebook!
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
