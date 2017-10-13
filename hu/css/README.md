@@ -42,10 +42,11 @@ Django már tudja, hol találja a statikus fájlokat a beépíttett "admin" alka
 Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog applikáción belül:
 
     djangogirls
-     ├── blog
-     │ ├── migrations
-     │ └── static 
-     └── mysite
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
     
 
 A Django automatikusan megtalál minden "static" nevű mappát az alkalmazásaid könyvtárain belül, és képes lesz használni azok tartalmát statikus fájlokként.
