@@ -241,7 +241,7 @@ Jetzt ist unser Code auf PythonAnywhere, unser virtualenv ist bereit, die statis
 
 Gehe zurück zum PythonAnywhere Dashboard, indem du auf das Logo klickst und klicke anschließend auf den **Web** Menüpunkt. Dort wählst du **Add a new web app** aus.
 
-Nach der Bestätigung deines Domainnamens wählst du **manual configuration** (NB *nicht* die "Django"-Option) im Dialogfeld aus. Entscheide dich als Nächstes für **Python 3.4** und klicke "Next", um den Assistenten zu beenden.
+Nach der Bestätigung deines Domainnamens wählst du **manual configuration** (NB *nicht* die "Django"-Option) im Dialogfeld aus. Entscheide dich als Nächstes für **Python 3.5** und klicke "Next", um den Assistenten zu beenden.
 
 > **Hinweis:** Versichere dich, dass du die Option "Manual configuration" ausgewählt hast und nicht "Django". Wir sind einfach zu cool für das Standard PythonAnywhere Django Setup :-)
 
