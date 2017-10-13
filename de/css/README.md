@@ -43,7 +43,8 @@ Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```
 
