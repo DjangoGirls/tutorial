@@ -126,4 +126,4 @@ Artık "It works" demiyor, di mi? Meraklanmayın, sadece bir hata sayfası, kork
 
 Sayfada gördüğünüz şey: **no attribute 'post_list'**. *post_list* size bir şey hatırlatıyor mu? Bu view'un ismi! Bu her şey yerli yerinde sadece henüz *view* yok manasına geliyor. Hiç merak etmeyin, oraya geleceğiz.
 
-> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.10/topics/http/urls/
+> Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/urls/

@@ -214,7 +214,7 @@ Dodaj go na samym początku pliku w tej formie, albo dopisz samo `redirect` do i
 return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` to nazwa widoku, do którego chcemy przejść. Pamiętasz, że ten *widok* potrzebuje zmiennej `pk`? Aby ją przekazać do widoków stosujemy `pk=post.pk`, gdzie `post` jest nowo utworzonym wpisem!
+`post_detail` to nazwa widoku, do którego chcemy przejść. Pamiętasz, że ten *widok* potrzebuje zmiennej `pk`? Aby ją przekazać do widoków stosujemy `pk=post.pk`, gdzie `post` jest nowo utworzonym wpisem!
 
 No dobrze, pogadałyśmy sobie, to może teraz zobaczymy, jak wygląda cały nasz *widok*, co?
 

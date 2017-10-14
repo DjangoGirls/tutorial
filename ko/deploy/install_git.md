@@ -1,17 +1,50 @@
-### 윈도우
+Git이란 "버전 관리 시스템(version control system)"으로 많은 프로그래머들이 사용하고 있습니다. 이 소프트웨어는 시간 경과에 따른 파일 변경을 추적이 가능해 나중에라도 특정 버전을 다시 불러올 수 있습니다. Microsoft Word의 "변경 사항 추적"기능과 비슷하지만 훨씬 강력합니다.
 
-Git은 [git-scm.com](https://git-scm.com/)에서 다운로드 할 수 있습니다. 다운받은 파일을 설치하는 것은 참 쉬워요. 딱 한 단계만 빼고 기본 설정대로 "다음 다음 다음"을 계속 눌러주면 쉽게 설치할 수 있어요. ; 주의해야할 단계는 다섯 번째 "PATH 환경 설정(Adjusting your PATH environment)" 화면이에요. "윈도우 커맨드라인에서 Git과 유닉스 도구를 실행(Run Git and associated Unix tools from the Windows command-line)"을 선택하세요. (옵션 아래쪽에 있어요.) 나머지는 모두 기본 설정대로 해도 됩니다. 윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings) 를 체크하는 것도 좋습니다.
+## Git 설치하기
 
-### MacOS
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-[git-scm.com](https://git-scm.com/)에서 맥용 설치파일을 다운받은 다음 실행해 나오는 지시 사항에 따라 설치하시면 됩니다.
+Git은 [git-scm.com](https://git-scm.com/)에서 내려받을 수 있습니다. 설치는 쉽답니다. 딱 한 단계만 빼고 기본 설정대로 `다음 다음 다음`을 계속 눌러주면 쉽게 설치할 수 있어요. 다섯 번째 `PATH 환경 설정(Adjusting your PATH environment)`화면에서 주의하세요. `윈도우 커맨드라인에서 Git과 유닉스 도구를 사용(Use Git and optional Unix tools from the Windows Command Prompt)`을 선택하세요. 나머지는 모두 기본 설정대로 해도 됩니다. `윈도우 스타일로 체크아웃, 유닉스 스타일로 라인엔딩 커밋하기(Checkout Windows-style, commit Unix-style line endings)`를 체크하는 것도 좋습니다.
 
-### 리눅스
+<!--endsec-->
 
-설치가 안되었다면, 패키지 관리자로 git 설치를 해야해요. 다음과 같이 해보세요:
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
 
-    sudo apt-get install git
-    # 또는
-    sudo yum install git
-    # 또는
-    sudo zypper install git
+[git-scm.com](https://git-scm.com/)에서 다운받아 설치하세요. 
+
+> **Note** OS X 10.6, 10.7 또는 10.8을 사용하는 경우 다음 링크에서 git 버전을 설치해야합니다. : [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+
+<!--endsec-->
+
+<!--sec data-title="Debian / Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo apt-get install git
+```
+
+<!--endsec-->
+
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo dnf install git
+```
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```bash
+$ sudo zypper install git
+```
+
+<!--endsec-->

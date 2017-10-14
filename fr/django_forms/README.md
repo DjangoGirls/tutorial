@@ -211,10 +211,10 @@ from django.shortcuts import redirect
 Ajoutez-le au tout début de votre page. Maintenant, nous allons ajouter la ligne qui signifie : "aller à la page `post_detail` pour le nouveau post qui vient d'être créé".
 
 ```python
-return redirect('blog.views.post_detail', pk=post.pk)
+return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail` est le nom de la vue où nous voulons aller. Rappelez-vous : une *vue* a besoin d'une variable `pk`. Afin de le passer à la vue, nous utilisons `pk=post.pk`, où `post` désigne le blog post nouvellement créé !
+`post_detail` est le nom de la vue où nous voulons aller. Rappelez-vous : une *vue* a besoin d'une variable `pk`. Afin de le passer à la vue, nous utilisons `pk=post.pk`, où `post` désigne le blog post nouvellement créé !
 
 Et si au lieu de parler, nous vous montrions à quoi ressemble maintenant notre *vue* ?
 
@@ -227,7 +227,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -306,7 +306,7 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -340,7 +340,7 @@ Essayez de manipuler un peu ce que vous venez de créer : ajoutez du texte, chan
 
 Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalités !
 
-Si jamais vous voulez en savoir plus sur les formulaires dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/1.10/topics/forms/
+Si jamais vous voulez en savoir plus sur les formulaires dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/1.11/topics/forms/
 
 ## Sécurité
 

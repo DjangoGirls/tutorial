@@ -54,7 +54,7 @@ This is simple: we import the model `Post` from `blog.models`. Let's try display
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>]
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
@@ -83,7 +83,7 @@ What users do we have in our database? Try this:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```
 
 This is the superuser we created earlier! Let's get an instance of the user now:
@@ -107,7 +107,7 @@ Hurray! Wanna check if it worked?
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
 There it is, one more post in the list!
@@ -161,7 +161,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow button three times and hit `enter`):
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
 
 {% filename %}command-line{% endfilename %}
 ```python

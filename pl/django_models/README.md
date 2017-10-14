@@ -77,12 +77,12 @@ Z pewnością zauważysz, że pojawił się nowy folder `blog` zawierający kilk
     │   ├── models.py
     │   ├── tests.py
     │   └── views.py
-    ├── myenv
     ├── mysite
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
     ├── db.sqlite3
     └── manage.py
 

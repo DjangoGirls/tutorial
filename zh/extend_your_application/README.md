@@ -25,7 +25,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
     
     

@@ -100,7 +100,7 @@ A teraz dodaj ten wiersz na początku pliku:
 {% extends 'blog/base.html' %}
 ```  
 
-{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock content %}`. O tak:{% endraw %}
+{% raw %}To znaczy, że rozszerzamy szablon `base.html` w pliku `post_list.html`. Zostało już tylko jedno: wstaw całą treść (pomijając wiersz, który właśnie dodałyśmy) pomiędzy `{% block content %}` a `{% endblock %}`. O tak:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -115,7 +115,7 @@ A teraz dodaj ten wiersz na początku pliku:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)

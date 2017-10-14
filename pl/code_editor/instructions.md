@@ -2,6 +2,12 @@ Tylko który wybrać? To nie takie proste, bo wybór zależy w dużej mierze od 
 
 Poniżej znajdziesz nasze propozycje, ale jeżeli masz taką możliwość, możesz poprosić o rekomendację Twojego coacha -- będzie mu łatwiej pomagać Ci podczas warsztatów.
 
+## Visual Studio Code
+VS Code to najnowszy edytor stworzony przez Microsoft. Edytor ten jest dostępny na wszystkich systemach - Windows, Linux, OsX.
+Jest całkowicie darmowy, posiada wiele pluginów ułatwiających pracę z kodem.
+
+[Pobierz tutaj](https://code.visualstudio.com/)
+
 ## Gedit
 
 Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów operacyjnych. Czasami nie jest jednak zbyt prosty w zainstalowaniu.
@@ -11,6 +17,10 @@ Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów ope
 ## Sublime Text 3
 
 Sublime Text to bardzo popularny edytor z darmowym okresem testowania. Jest bardzo prosty do zainstalowania i używania, dostępny na wszystkie systemy operacyjne.
+
+`Uwaga!`
+
+Sublime jest bezpłatny tylko do celów wypróbowania - w trakcie pracy na nim, będzie wyskakiwać w różnych momentach okienko zachęcające do jego zakupu! 
 
 [Pobierz tutaj](https://www.sublimetext.com/3)
 

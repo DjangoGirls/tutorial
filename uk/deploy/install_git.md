@@ -18,12 +18,7 @@ Git можна завантажити з [git-scm.com](https://git-scm.com/). В
     $ sudo apt-get install git
 
 
-#### Fedora (до 21)
-
-    $ sudo yum install git
-
-
-#### Fedora (22+)
+#### Fedora
 
     $ sudo dnf install git
 

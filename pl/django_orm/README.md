@@ -41,7 +41,7 @@ Ups! Wyskoczył błąd. Mówi on nam, że nie istnieje coś takiego jak 'Post'. 
 Nic skomplikowanego: importujemy model `Post` z `blog.models`. Spróbujmy jeszcze raz wyświetlić wszystkie wpisy:
 
     >>> Post.objects.all()
-    [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>]
+    <QuerySet [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>]>
     
 
 Pojawiła się lista wpisów, które dodałyśmy wcześniej! Utworzyłyśmy je przy pomocy panelu administracyjnego Django. Teraz jednak chciałybyśmy dodać nowy wpis używając Pythona. Jak to zrobimy?
@@ -63,7 +63,7 @@ Najpierw zaimportujmy model User:
 Jakich użytkowników mamy w bazie danych? Spróbuj tak:
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dostęp do naszej instancji użytkownika:
@@ -81,7 +81,7 @@ Teraz możemy wreszcie stworzyć nasz post:
 Hura! Chciałabyś sprawdzić, czy się udało?
 
     >>> Post.objects.all()
-    [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>]
+    <QuerySet [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>]>
     
 
 Jest! Kolejny post na liście!
@@ -95,13 +95,13 @@ Możesz teraz się pobawić i utworzyć więcej wpisów, żeby zobaczyć, jak to
 Niezmiernie istotną cechą QuerySetów jest możliwość ich filtrowania. Dajmy na to, że chciałybyśmy znaleźć wszystkie wpisy dodane przez użytkowniczkę (User) o nazwie ola. Skorzystamy z metody `filter` zamiast `all` w `Post.objects.all()`. W nawiasach wpiszemy jeden lub więcej warunków, które muszą zostać spełnione, żeby nasz wpis znalazł się w QuerySecie. W naszej sytuacji chcemy, by `author` (autor) odpowiadał zmiennej `me`. W Django zapisujemy to tak: `author=me`. Teraz nasz kawałek kodu wygląda mniej więcej tak:
 
     >>> Post.objects.filter(author=me)
-    [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Wpis numer 2>, <Post: Mój trzeci post!>, <Post: Czwarty tytuł>]
+    <QuerySet [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Wpis numer 2>, <Post: Mój trzeci post!>, <Post: Czwarty tytuł>]>
     
 
 A gdybyśmy chciały wyświetlić wszystkie wpisy zawierające słowo 'title' w polu `tytuł`?
 
     >>> Post.objects.filter(title__contains = 'tytuł')
-    [<Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Czwarty tytuł>]
+    <QuerySet [<Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Czwarty tytuł>]>
     
 
 > **Uwaga:** Pomiędzy `title` a `contains` znajdują się dwa znaki podkreślenia (`_`). ORM w Django używa takiej składni, aby oddzielić nazwy pól ("title") od operacji lub filtrów ("contains"). Jeśli użyjesz tylko jednego, zobaczysz błąd o treści "FieldError: Cannot resolve keyword title_contains".
@@ -127,7 +127,7 @@ A następnie opublikuj go za pomocą metody `publish`!
 Teraz spróbujmy jeszcze raz wyświetlić listę opublikowanych wpisów (wciśnij trzykrotnie klawisz ze strzałką do góry, a następnie zatwierdź klawiszem `Enter`):
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Przykładowy tytuł>]
+    <QuerySet [<Post: Przykładowy tytuł>]>
     
 
 ### Kolejność obiektów
@@ -135,13 +135,13 @@ Teraz spróbujmy jeszcze raz wyświetlić listę opublikowanych wpisów (wciśni
 QuerySety umożliwiają również porządkowanie list obiektów według określonej kolejności. Spróbujmy uporządkować je według daty utworzenia, czyli zawartości pola `created_date`:
 
     >>> Post.objects.all().order_by('created_date')
-    [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Wpis numer 2>, <Post: Mój trzeci post!>, <Post: Czwarty tytuł>]
+    <QuerySet [<Post: Mój pierwszy wpis>, <Post: Kolejny tytuł wpisu>, <Post: Przykładowy tytuł>, <Post: Wpis numer 2>, <Post: Mój trzeci post!>, <Post: Czwarty tytuł>]>
     
 
 Możemy także odwrócić kolejność poprzez dodanie `-` na początku:
 
     >>> Post.objects.all().order_by('-created_date')
-    [<Post: Czwarty tytuł>, <Post: Mój trzeci post!>, <Post: Wpis numer 2>, <Post: Przykładowy tytuł>, <Post: Kolejny tytuł wpisu>, <Post: Mój pierwszy wpis>]
+    <QuerySet [<Post: Czwarty tytuł>, <Post: Mój trzeci post!>, <Post: Wpis numer 2>, <Post: Przykładowy tytuł>, <Post: Kolejny tytuł wpisu>, <Post: Mój pierwszy wpis>]>
     
 
 ### Łączenie QuerySetów

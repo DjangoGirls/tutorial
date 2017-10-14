@@ -29,15 +29,7 @@ Zadaj do konzoly tento príkaz:
 $ sudo apt-get install python3.4
 ```
 
-#### Fedora (do verzie 21)
-
-Použi v konzole tento príkaz:
-
-```
-$ sudo yum install python3.4
-```
-
-#### Fedora (od verzie 22)
+#### Fedora
 
 Použi v konzole tento príkaz:
 

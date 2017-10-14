@@ -191,7 +191,7 @@ $ source myvenv/bin/activate
 (myvenv) $  pip install django whitenoise
 Collecting django
 [...]
-Successfully installed django-1.10 whitenoise-2.0
+Successfully installed django-1.11 whitenoise-2.0
 ```    
 
 > **Not** `pip install` birkaç dakika sürebilir. Sabır, sabır! Ama 5 dakikadan uzun sürüyorsa, birşeyler yanlış olmuştur. Eğitmeninize sorun.

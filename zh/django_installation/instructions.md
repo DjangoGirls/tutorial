@@ -28,7 +28,7 @@
     C:\Users\Name\djangogirls> C:\Python34\python -m venv myvenv
     
 
-`C:\Python34\python` 是您之前安装Python的目录， `myvenv` 是您`虚拟环境` 的名字。 你可以使用其他任何名字，但请坚持使用小写，并不要使用空格、重音符号或特殊字符。 始终保持名称短小是个好主意 — — 你会大量引用它 ！
+`C:\Python34` 是您之前安装Python的目录， `myvenv` 是您`虚拟环境` 的名字。 你可以使用其他任何名字，但请坚持使用小写，并不要使用空格、重音符号或特殊字符。 始终保持名称短小是个好主意 — — 你会大量引用它 ！
 
 ### Linux 和 OS X
 
@@ -102,7 +102,7 @@
     Cleaning up...
     
 
-在 Windows上
+在 Windows 上
 
 > 如果你在 Windows 平台上调用 pip 时得到一个错误，请检查是否您项目的路径名是否包含空格、 重音符号或特殊字符 (如：`C:\Users\User Name\djangogirls`)。 若的确如此，请尝试移动它到另外一个没有空格、重音符号或特殊字符的目录，（例如：`C:\djangogirls`）。 在移动之后，请重试上面的命令。
 

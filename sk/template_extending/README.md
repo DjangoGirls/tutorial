@@ -101,7 +101,7 @@ A teraz pridaj tento riadok na začiatok súboru:
 {% extends 'blog/base.html' %}
 ```
 
-{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock content %}`. Takto:{% endraw %}
+{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock %}`. Takto:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -116,7 +116,7 @@ A teraz pridaj tento riadok na začiatok súboru:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 A je to! Skontroluj či tvoja web stránka funguje tak, ako má :)

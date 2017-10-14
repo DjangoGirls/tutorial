@@ -44,7 +44,7 @@ Aman! Bir hata meydana geldi. Bize bir gönderi olmadığını söylüyor. Doğr
 
 ```
 >>> Post.objects.all()
-[<Post: Gönderi 1>, <Post: Gönderi 2>]
+<QuerySet [<Post: Gönderi 1>, <Post: Gönderi 2>]>
 ```    
 
 Daha önce yarattığımız gönderilerin listesi! Bu gönderileri Django yönetici arayüzü kullanarak yaratmıştık. Şimdi ise Python kullanarak yeni gönderiler yaratmak istiyoruz, bunu nasıl yapabiliriz?
@@ -69,7 +69,7 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 
 ```
 >>> User.objects.all()
-[<User: zeynep>]
+<QuerySet [<User: zeynep>]>
 ```    
 
 Daha önce yarattığımız ayrıcalıklı kullanıcı! Şimdi veritabanından kullanıcı nesnesi alalım:
@@ -90,7 +90,7 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 ```
 >>> Post.objects.all()
-[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>]
+<QuerySet [<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>]>
 ```    
 
 İşte bu kadar, listede bir gönderi daha!

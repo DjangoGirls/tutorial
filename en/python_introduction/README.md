@@ -17,7 +17,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.5.1 (...)
+Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -322,6 +322,7 @@ To delete something from your list you will need to use __indexes__ as we learne
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -408,6 +409,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
@@ -582,7 +584,7 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
@@ -593,7 +595,7 @@ $ cd ~/Desktop
 ```
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="python_linux"
+<!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
@@ -605,15 +607,27 @@ $ cd ~/Desktop
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-And on Windows, it will be like this:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
 <!--endsec-->
+
+
+<!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+And on Windows Powershell, it will be like this:
+
+{% filename %}command-line{% endfilename %}
+```
+> cd $Home\Desktop
+```
+<!--endsec-->
+
 
 If you get stuck, just ask for help.
 

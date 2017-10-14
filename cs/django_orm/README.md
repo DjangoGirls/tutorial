@@ -46,7 +46,7 @@ Tohle je jednoduché: importujeme model `Post` z `blog.models`. Pojďme znovu zk
 
 ```
 >>> Post.objects.all()
-[<Post: titulek mého prvního příspěvku>, <Post: titulky dalších příspěvků>]
+<QuerySet [<Post: titulek mého prvního příspěvku>, <Post: titulky dalších příspěvků>]>
 ```  
 
 To je seznam příspěvků, které jsme dříve vytvořily pomocí Django administrátorského rozhraní. Teď nicméně chceme vytvořit příspěvky použitím Pythonu, tak jak na to?
@@ -71,7 +71,7 @@ Jaké uživatele máme v naší databázi? Zkus tohle:
 
 ```
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```  
 
 Tohle je superuser, kterého jsme vytvořily dříve! Pojďme si teď vzít instanci tohoto uživatele:
@@ -92,7 +92,7 @@ Hurá! Chceš se podívat, jestli to fungovalo?
 
 ```
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```  
 
 A je to tu, další příspěvek v seznamu!
@@ -121,7 +121,11 @@ Nebo možná chceme vidět všechny příspěvky, jež mají slovo 'titulek' v p
 
 Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to vyfiltrováním všech příspěvků, které mají nastavené `published_date` na nějaké uplynulé datum:
 
-> > > from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now()) []
+```
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
 
 Bohužel příspěvek, který jsme přidali pomocí Python konzole, ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:
 

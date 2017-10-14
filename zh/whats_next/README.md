@@ -17,7 +17,7 @@
 
 是啊！首先，继续尝试其他书籍，称作[Django Girls教程：扩展][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 稍后，你可以试试利用以下的资源。 他们非常值得推荐啊！ 
 - [Django's official tutorial][4]
@@ -35,6 +35,6 @@
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8
 

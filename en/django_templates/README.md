@@ -27,7 +27,7 @@ As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template you do them like this:
@@ -87,7 +87,7 @@ $ git push
 
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

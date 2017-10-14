@@ -1,11 +1,11 @@
 {
   "gitbook": ">=3.2.0",
   "pdf": {
-    "fontSize": 14
+    "fontSize": 16
   },
   "plugins": [
     "heading-anchors@1.0.3",
-    "richquotes@0.0.7",
+    "richquotes@0.0.9",
     "github@2.0.0",
     "codeblock-label",
     "sectionx"
@@ -16,6 +16,9 @@
     },
     "github": {
       "url": "https://github.com/humitos/tutorial/"
+    },
+    "sectionx": {
+        "tag": "b"
     }
   }
 }

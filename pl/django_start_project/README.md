@@ -31,12 +31,12 @@ Dla Windows; **nie zapomnij dodać kropki `.` na końcu**:
 `django-admin.py` jest skryptem, który utworzy katalogi i pliki za Ciebie. Powinnaś mieć teraz strukturę katalogów podobną do tej:
 
     djangogirls
-    ├── myenv
     ├── mysite
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
     └── manage.py
 
 

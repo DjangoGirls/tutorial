@@ -25,7 +25,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
             <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```    
     
 

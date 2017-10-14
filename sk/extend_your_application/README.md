@@ -25,7 +25,7 @@ Začneme tak, že pridáme link do súboru `blog/templates/blog/post_list.html`.
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}Chceme, aby link z titulku príspevku smeroval na stránku detailov príspevku. Zmeňme `<h1><a href="">{{ post.title }}</a></h1>` tak, aby odkazoval na stránku detailu príspevku:{% endraw %}

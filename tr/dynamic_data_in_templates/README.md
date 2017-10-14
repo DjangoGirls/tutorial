@@ -72,4 +72,4 @@ def post_list(request):
 
 İşte bu kadar! Template'e geri gidip QuerySet'leri görünür hale getirme zamanı!
 
-Django'da QuerySet'lerle ilgili daha fazla bilgi istiyorsanız şuraya bakabilirsiniz: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Django'da QuerySet'lerle ilgili daha fazla bilgi istiyorsanız şuraya bakabilirsiniz: https://docs.djangoproject.com/en/1.11/ref/models/querysets/

@@ -21,7 +21,7 @@ Stwórzmy nowe środowisko wirtualne o nazwie `myvenv`. Polecenie ma następują
     python3 -m venv myvenv
     
 
-### Windows
+<!--sec data-title="Windows" data-id="virtualenv_win" data-collapse=true ces-->
 
 Aby stworzyć nowego `virtualenv`'a, musisz otworzyć konsolę (wspominaliśmy o tym parę rozdziałów temu, pamiętasz?) i uruchom `C:\ Python34\python -m venv venv`. Efekt będzie wyglądał tak:
 
@@ -30,7 +30,9 @@ Aby stworzyć nowego `virtualenv`'a, musisz otworzyć konsolę (wspominaliśmy o
 
 gdzie `C:\Python34\python` to katalog, w którym zainstalowałaś wcześniej Pythona, zaś `myvenv` to nazwa Twojego `virtualenv`'a. Nazwa może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. Dobrze jest też trzymać się krótkich nazw - będziesz do nich często wracała!
 
-### Linux i OS X
+<!--endsec-->
+
+<!--sec data-title="Linux i OS X" data-id="virtualenv_unix" data-collapse=true ces-->
 
 Stworzenie `virtualenv`'a w Linuksie i OS X ogranicza się jedynie do użycia polecenia `python3 -m venv myvenv`. Przyjmie ono następującą postać:
 
@@ -49,6 +51,7 @@ Stworzenie `virtualenv`'a w Linuksie i OS X ogranicza się jedynie do użycia po
 >     ~/djangogirls$ sudo apt-get install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
+<!--endsec-->
 
 ## Praca z virtualenv
 

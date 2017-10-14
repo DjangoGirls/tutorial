@@ -46,7 +46,7 @@ Je to jednoduché: importujeme model `Post` z `blog.models`. Skúsme teda znova 
 
 ```
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>]
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 Je to zoznam príspevkov, ktoré sme už predtým vytvorili! Vytvorili sme ich pomocou Django administrátorského rozhrania. No radi by sme vytvorili nové príspevky pomocou Pythonu, tak ako na to?
@@ -71,7 +71,7 @@ Akých užívateľov máme v našej databáze? Skús toto:
 
 ```
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```
 
 To je superuser, ktorého sme už vytvorili predtým. Teraz získajme inštanciu tohto užívateľa:
@@ -92,7 +92,7 @@ Hurá! Chceš si overiť, či to fungovalo?
 
 ```
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
 Je to tam, jeden príspevok v zozname pribudol!

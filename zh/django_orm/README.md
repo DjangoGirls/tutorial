@@ -41,7 +41,7 @@
 这很简单： 我们从 `blog.models` 导入 `Post` 的模型。让我们试着再一次显示所有的帖子：
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>]>
     
 
 这是我们之前创建的文章的 list 列表！我们通过使用Django admin界面创建了这些文章。但是我们现在想通过Python来创建新的文章，那么我们应该如何做呢？
@@ -63,7 +63,7 @@
 我们在数据库中有哪些用户？试试这个：
 
     >>> User.objects.all()
-    [<User: ola>]
+    <QuerySet [<User: ola>]>
     
 
 这是一个我们之前创建的超级用户！让我们现在获取一个用户实例：
@@ -81,7 +81,7 @@
 哈哈！要检查是否有效吗？
 
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
     
 
 就是这样，又一个文章在列表里面！
@@ -95,13 +95,13 @@
 QuerySets的很大一部分功能是对它们进行筛选。 譬如，我们想要发现所有都由用户ola编写的文章。 我们将使用 `filter`，而不是 `all` 在 `Post.objects.all()`。 我们需要在括号中申明哪些条件，以在我们的 queryset 结果集中包含一篇博客文章。 在我们的情况是 `author`，它等于 `me`。 把它写在 Django 的方式是： `author = me`。 现在我们的代码段如下所示：
 
     >>> Post.objects.filter(author=me)
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 或者，也许我们想看到包含在 `title` 字段标题的所有帖子吗？
 
     >>> Post.objects.filter(title__contains='title')
-    [<Post: Sample title>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
     
 
 > **注**在`title` 与 `contains` 之间有两个下划线字符 (`_`)。 Django 的 ORM 使用此语法来分隔字段名称 （"title"） 和操作或筛选器 （"contains"）。 如果您只使用一个下划线，您将收到类似"FieldError： 无法解析关键字 title_contains"的错误。
@@ -123,7 +123,7 @@ QuerySets的很大一部分功能是对它们进行筛选。 譬如，我们想�
 现在再一次尝试获取已发布的文章（按向上箭头按钮三次，然后按回车）:
 
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    <QuerySet [<Post: Sample title>]>
     
 
 ### 对象排序
@@ -131,13 +131,13 @@ QuerySets的很大一部分功能是对它们进行筛选。 譬如，我们想�
 Queryset 还允许您排序结果集对象的列表。让我们试着让它们按 `created_date` 字段排序：
 
     >>> Post.objects.order_by('created_date')
-    [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
     
 
 我们也可以在开头添加 `-` 来反向排序：
 
     >>> Post.objects.order_by('-created_date')
-    [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
     
 
 ### 链式 QuerySets

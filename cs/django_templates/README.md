@@ -27,7 +27,7 @@ Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Nahraď vše od 
 Jak vidíš, dostali jsme toto:
 
 ```
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```  
 
 To znamená, že to Django chápe jako seznam objektů. Vzpomínáš si z kapitoly **Úvod do pythonu**, jak můžeme zobrazit seznam? Ano, pomocí for smyček! V Django šabloně je použiješ takto:

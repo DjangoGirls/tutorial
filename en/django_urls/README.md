@@ -94,7 +94,7 @@ Writing regular expressions in Python is always done with `r` in front of the st
 
 ## blog.urls
 
-Create a new empty file named `blog/urls.py`. All right! Add these first two lines:
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
@@ -123,4 +123,4 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.10/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/

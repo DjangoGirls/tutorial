@@ -27,14 +27,7 @@ Tapez cette commande dans votre terminal :
     $ sudo apt-get install python3.4
     
 
-#### Fedora (jusqu'à la version 21)
-
-Tapez cette commande dans votre terminal :
-
-    $ sudo yum install python3.4
-    
-
-#### Fedora (22+)
+#### Fedora
 
 Tapez cette commande dans votre terminal :
 

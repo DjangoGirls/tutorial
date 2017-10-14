@@ -17,7 +17,7 @@ Potom nezabudni:
 
 Áno! Ako prvé, neváhaj a vyskúšaj našu ďalšiu knihu [Django Girls Tutorial: Rozšírenie][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame!
 
@@ -36,5 +36,5 @@ Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky veľmi odporúčame!
  [7]: https://www.codecademy.com/tracks/web
  [8]: http://django.carrots.pl/en/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8

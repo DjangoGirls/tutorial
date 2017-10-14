@@ -16,46 +16,77 @@ A **parancssor** (command line, vagy **command-line interface**) nevű ablak egy
 
 Hogy belevághass a kísérletezésbe, először meg kell nyitnod a parancssort.
 
-### Windows
+<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Start menu → All Programs → Accessories → Command Prompt.
 
-### Mac OS X
+<!--endsec-->
+
+
+<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
 Applications → Utilities → Terminal.
 
-### Linux
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
 
 Valószínűleg itt találod meg: Applications → Accessories → Terminal, de ez a rendszeredtől függ. Ha nincs ott, csak keress rá a Google-n :)
+
+<!--endsec-->
 
 ## Parancssor
 
 Egy fehér vagy fekete ablakot kell látnod, ami csak a te parancsaidra vár.
+
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Ha Mac-ed vagy Linux-od van, valószínűleg egy `$`-t kell látnod:
 
     $
     
 
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
+
 A Windows-on ez egy `>` jel:
 
     >
     
+<!--endsec-->
+
 
 Minden sornak ezzel a jellel és az azt követő space-el kell kezdődnie, de ezt nem neked kell begépelned. A számítógéped megteszi helyetted :)
 
 > Csak egy gyors megjegyzés: így is kinézhet a parancssorod: `C:\Users\ola>` vagy `Olas-MacBook-Air:~ ola$`, és ez teljesen jó így. Ebben az útmutatóban csak próbáljuk a lehető leginkább leegyszerűsíteni.
 
+A sor elején lévő rész, a  `$` vagy `>` karakterig (azt is beleértve) a *parancssori prompt* vagy röviden *prompt* a neve. Azt jelzi, hogy a számítógép a te utasításodra vár.
+
+A tutorial során, amikor egy parancsot kell beírnod, ki fogjuk írni a `$` vagy `>` karaktert, és olykor még bővebb promptot. Nyugodtan hagyd figyelmen kívül a baloldali részt, és csak a prompt után kezdődő parancsot gépeld be.
+
 ## Az első parancsod (YAY!)
 
 Kezdjük valami egyszerűvel. Gépeld be ezt a parancsot:
 
-    $ whoami
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-vagy
+{% filename %}parancssor{% endfilename %}
+```
+$ whoami
+```
 
-    > whoami
+<!--endsec-->
+
+
+<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}parancssor{% endfilename %}
+```
+> whoami
+```
+
+<!--endsec-->
     
 
 Majd nyomj `enter`t. Ezt az eredményt kapod:
@@ -76,25 +107,40 @@ Minden operációs rendszer parancssora kissé különböző prancsokat igényel
 
 Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, és nyomj `enter`t:
 
-    $ pwd
-    /Users/olasitarska
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-Ha Windows-od van:
+{% filename %}parancssor{% endfilename %}
+```
+$ pwd
+/Users/olasitarska
+```
 
-    > cd
-    C:\Users\olasitarska
-    
+> Megjegyzés: a 'pwd' jelentése: 'print working directory' ('munkakönyvtár kiírása').
+
+<!--endsec-->
+
+
+<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd
+C:\Users\olasitarska
+```
+> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha powershell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.
+
+<!--endsec-->
+
 
 Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a parancssort, általában a felhasználó 'home' könyvtárába kerülsz.
-
-> Megjegyzés: a 'pwd' jelentése: 'print working directory'.
 
 * * *
 
 ### Fájlok és könyvtárak kilistázása
-
+    
 És mi van benne? Szuper lenne kideríteni. Nézzük meg:
+
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
     $ ls
     Applications
@@ -103,8 +149,9 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
     Music
     ...
     
+<!--endsec-->
 
-Windows:
+<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
     > dir
      Directory of C:\Users\olasitarska
@@ -114,6 +161,7 @@ Windows:
     05/08/2014 07:28 PM <DIR>      Music
     ...
     
+<!--endsec-->
 
 * * *
 
@@ -121,25 +169,43 @@ Windows:
 
 Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
 
-    $ cd Desktop
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ cd Desktop
+```
+<!--endsec-->
 
-    > cd Desktop
+<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd Desktop
+```
+<!--endsec-->
     
 
 Nézzük meg, hogy tényleg megváltozott-e:
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ pwd
+/Users/olasitarska/Desktop
+```
+<!--endsec-->
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd
+C:\Users\olasitarska\Desktop
+```
+<!--endsec-->
 
 Itt is van!
 
@@ -151,13 +217,22 @@ Itt is van!
 
 Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztalon? Így tudod megtenni:
 
-    $ mkdir practice
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ mkdir practice
+```
+<!--endsec-->
 
-    > mkdir practice
-    
+<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> mkdir practice
+```
+<!--endsec-->
 
 Ez a parancs létre fog hozni egy `practice` nevű mappát az asztalodon. Ha megnézed az asztalt, meggyőződhetsz róla, hogy tényleg ott van-e, de a `ls` vagy `dir` paranccsal is megteheted! Próbáld ki :)
 
@@ -171,18 +246,28 @@ Egy kis kihívás: hozz létre egy `test` nevű mappát a frissen elkészített 
 
 #### Megoldás:
 
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ cd practice
+$ mkdir test
+$ ls
+test
+```
+<!--endsec-->
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+<!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd practice
+> mkdir test
+> dir
+05/08/2014 07:28 PM <DIR>      test
+```
+<!--endsec-->
     
 
 Gratulálunk! :)
@@ -195,61 +280,110 @@ Nem szeretnénk káoszt hagyni magunk után, szóval töröljünk le mindent, am
 
 Először vissza kell mennünk az Asztal-ra:
 
-    $ cd ..
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ cd ..
+```
+<!--endsec-->
 
-    > cd ..
+<!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd ..
+```
+<!--endsec-->
     
 
 Ha a `cd` parancsot `..`-tal használod, a jelenlegi könyvtárból a parent (szülő) könyvtárba jutsz (ez az a mappa, ami tartalmazza azt a mappát, ahol éppen vagy).
 
 Ellenőrizzük le, hogy hol vagyunk:
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ pwd
+/Users/olasitarska/Desktop
+```
+<!--endsec-->
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd
+C:\Users\olasitarska\Desktop
+```
+<!--endsec-->
 
 Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
 
 > **Figyelem**: A fájlok törlése a `del`, `rmdir`, vagy a `rm` parancsokkal visszafordíthatatlan, tehát a *törölt fájlok örökre eltűnnek*! Legyél nagyon óvatos ezzel a paranccsal.
 
-    $ rm -r practice
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ rm -r practice
+```
+<!--endsec-->
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> rmdir /S practice
+practice, Are you sure <Y/N>? Y
+```
+<!--endsec-->
     
 
 Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
 
-    $ ls
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ ls
+```
+<!--endsec-->
 
-    > dir
+<!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> dir
+```
+<!--endsec-->
     
 
 ### Kilépés
 
 Ennyi volt! Most már biztonságosan kiléphetsz a parancssorból. Csináljuk hacker módra, jó?:)
 
-    $ exit
-    
+<!--sec data-title="OS X és Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-Windows:
+{% filename %}parancssor{% endfilename %}
+```
+$ exit
+```
+<!--endsec-->
 
-    > exit
+<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
+
+
+{% filename %}parancssor{% endfilename %}
+```
+> exit
+```
+<!--endsec-->
     
 
 Szuper, nem? :)

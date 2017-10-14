@@ -48,8 +48,8 @@ Es hora de abrir `blog/templates/blog/base.html`. Vamos a agregar un enlace en u
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```
+    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```    
 
 Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`. La clase `"glyphicon glyphicon-plus"` es provista por el tema de bootstrap que estamos usando, y mostrará un signo más por nosotros.
 
@@ -57,25 +57,26 @@ Después de agregar la línea, tu archivo html debería tener este aspecto:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
+    {% load staticfiles %}
+    <html>
+        <head>
+            <title>Django Girls blog</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        </head>
+        <body>
+            <div class="page-header">
+                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,8 +223,8 @@ Agrégalo al principio del archivo. Y ahora podemos decir: vé a la página `pos
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-return redirect('post_detail', pk=post.pk)
-```
+    return redirect('blog.views.post_detail', pk=post.pk)
+```    
 
 `blog.views.post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado.
 
@@ -231,19 +232,19 @@ Bien, hablamos mucho, pero probablemente queremos ver como se ve ahora la *vista
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+    def post_new(request):
+        if request.method == "POST":
+            form = PostForm(request.POST)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.published_date = timezone.now()
+                post.save()
+                return redirect('blog.views.post_detail', pk=post.pk)
+        else:
+            form = PostForm()
+        return render(request, 'blog/post_edit.html', {'form': form})
+```    
 
 Vamos a ver si funciona. Ve a la página http://127.0.0.1:8000/post/new/, añade un `title` y un `text`, guardalo... ¡y voilà! Se añade el nuevo post al blog y se nos redirige a la página de `post_detail`.
 
@@ -309,20 +310,19 @@ Abramos el archivo `blog/views.py` y añadamos al final esta línea:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+    def post_edit(request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        if request.method == "POST":
+            form = PostForm(request.POST, instance=post)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.save()
+                return redirect('blog.views.post_detail', pk=post.pk)
+        else:
+            form = PostForm(instance=post)
+        return render(request, 'blog/post_edit.html', {'form': form})
+```    
 
 Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. Primero: pasamos un parámetro extra `pk` de los urls. Luego: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario:
 

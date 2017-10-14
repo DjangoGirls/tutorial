@@ -101,7 +101,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock content %}` arasına koyun. Şunun gibi:{% endraw %}
+{% raw %}Bu şu anlama geliyor: `post_list.html` dosyasında `base.html` template'i genişletiyoruz. Sadece bir şey kaldı: Her şeyi (en son eklediğimiz satır hariç) `{% block content %}` ve `{% endblock %}` arasına koyun. Şunun gibi:{% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -116,7 +116,7 @@ Ve şimdi şu satırı sayfanın başına ekleyin:
             <p>{{ post.yazi|linebreaks }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```    
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin :)
