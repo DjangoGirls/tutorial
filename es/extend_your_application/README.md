@@ -25,7 +25,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}Queremos tener un enlace que vaya desde el título de la entrada en la lista de entradas hasta la página de detalle de la entrada. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` para que enlace a la página de detalle de la entrada:{% endraw %}
@@ -39,7 +39,7 @@ Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/pos
 
 {% raw %}Es hora de explicar el misterioso `{% url 'post_detail' pk=post.pk %}`. Como probablemente sospeches, la notación `{% %}` significa que estamos utilizando Django template tags. ¡Esta vez vamos a usar una que creará una URL!{% endraw %}
 
-`blog.views.post_detail` es una ruta hacia la *vista* `post_detail` que queremos crear. Fíjate bien: `blog` es el nombre de nuestra aplicación (el directorio `blog`), `views` es el nombre del archivo `views.py` y la última parte, `post_detail`, es el nombre de la *vista*.
+La parte `post_detail` significa que Django esperará una URL en `blog/urls.py` con `name='post_detail'`.
 
 ¿Y, qué hay de `pk=post.pk`? `pk` es la abreviatura de `primary key`, clave primaria, el cuál es un nombre único para cada entrada en la base de datos. Como no hemos especificado ninguno en nuestro modelo `Post`, Django crea uno por nosotros (por defecto, un número que incrementa con cada entrada, eso es 1, 2, 3) y agrega este como un campo llamado `pk` para cada uno de nuestros posts. Podemos acceder a la clave primera escribiendo `post.pk`, de la misma forma que accedemos a otros campos (`title`, `author`, etc.) en nuestro objeto `Post`.
 
@@ -103,6 +103,8 @@ Pero este código tiene un problema. Si no hay ningún `Post` con esa `clave pri
 La buena noticia es que puedes crear tu propia página `Page Not Found` y diseñarla como desees. Pero por ahora no es tan importante, así que lo omitiremos.
 
 ¡Es hora de agregar una *view* a nuestro archivo `views.py`!
+
+En `blog/urls.py` creamos una regla URL llamada `post_detail` que hace referencia a una vista llamada `views.post_detail`. Esto significa que Django estará esperando una función/vista llamada `post_detail` dentro de `blog/views.py`.
 
 Deberíamos abrir `blog/views.py` y agregar el siguiente código debajo de las otras líneas `from`:
 

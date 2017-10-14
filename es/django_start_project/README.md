@@ -12,7 +12,7 @@ Los nombres de algunos archivos y directorios son muy importantes para Django. N
 
 > Recuerda ejecutar todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacerlo en el capítulo de __Instalación de Django__ en la sección __Trabajar con virtualenv__. Basta con escribir `myvenv\Scripts\activate` en Windows o `source myvenv/bin/activate` en Mac OS X o Linux.
 
-<!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 En Mac OS X o Linux deberías ejecutar el siguiente comando en la consola. **¡No te olvides de agregar el punto `.` al final!**:
 
@@ -28,13 +28,13 @@ En Mac OS X o Linux deberías ejecutar el siguiente comando en la consola. **¡N
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
 En Windows deberías ejecutar el siguiente comando en la consola. **¡No te olvides de agregar el punto `.` al final!**:
 
 {% filename %}Terminal{% endfilename %}
 ```
-(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+(myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
 ```
 
 > El punto `.` es crucial porque le dice al script que instale Django en el directorio actual (para el cual el punto `.` sirve de abreviatura)
@@ -68,6 +68,8 @@ Por ahora vamos a ignorar el resto de archivos porque no los vamos a cambiar. ¡
 
 Vamos a hacer algunos cambios en `mysite/settings.py`. Abre el archivo usando el editor de código que has instalado anteriormente.
 
+> **Nota**: ten en cuenta que `settings.py` es un archivo regular, como cualquier otro. Puedes abrirlo desde el editor de código, usando las acciones del menú "Archivo -> Abrir". Esto te debería mostrar una ventana en la que puedes navegar hacia tu archivo `settings.py` y seleccionarlo. Alternativamente, puedes abrir el archivo navegando a la carpeta de djangogirls en tu escritorio y haciendo botón derecho en él. Luego, debes seleccionar tu editor de código de la lista de opciones. Seleccionar el editor de código es importante debido a que puedes tener otros programas instalados que pueden abrir el archivo, pero no te dejarán editarlo.
+
 Sería bueno tener el horario correcto en nuestro sitio web. Ve a la [lista de husos horarios de Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) y copia tu zona horaria (TZ). (por ejemplo, `Europe/Berlin` )
 
 En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala para elegir tu zona horaria. Por ejemplo:
@@ -75,6 +77,15 @@ En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala par
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 TIME_ZONE = 'Europe/Berlin'
+```
+
+Un código de lenguaje consiste en el lenguaje (por ejemplo `en` es para inglés or `de` para alemán) y en el código del país (por ejemplo, `de` para alemania o `ch` para suiza). Querrás agregar esto si quieres que los botones y las notificaciones de Django estén en tu idioma. Así tendrás el botón "Cancel" traducido al idioma definido aquí. [Django viene con un montón de traducciones preparadas](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+
+Cambia el código de lenguaje modificando la siguiente línea:
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+LANGUAGE_CODE = 'de-ch'
 ```
 
 También necesitaremos agregar una ruta para los archivos estáticos (aprenderemos todo sobre los archivos estáticos y CSS más tarde en este tutorial). Ve hacia abajo hasta el *final* del archivo, y justo por debajo de la línea de `STATIC_URL`, agrega una nueva línea con `STATIC_ROOT`:
@@ -89,11 +100,13 @@ Cuando `DEBUG` está en `True` y `ALLOWED_HOSTS` está vacío, el host es valida
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '<tu-usuario>.pythonanywhere.com']
 ```
 
 > **Nota**: Si estás utilizando una Chromebook, agrega esta línea al final de tu archivo `settings.py`:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+
+> Agrega también `django-girls-<tu-usuario>.c9users.io` a ALLOWED_HOSTS si estás utilizando cloud9
 
 ## Configurar una base de datos
 

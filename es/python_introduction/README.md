@@ -17,7 +17,7 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 {% filename %}Terminal{% endfilename %}
 ```
 $ python3
-Python 3.5.1 (...)
+Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -323,6 +323,7 @@ Para borrar algo de tu lista necesitas usar __indices__ como aprendimos anterior
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -409,6 +410,7 @@ Puedes utilizar el método `pop()` para borrar un elemento en el diccionario. Po
 {% filename %}Terminal{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
@@ -579,7 +581,7 @@ Ahora tenemos que guardar el archivo y asignarle un nombre descriptivo. Vamos a 
 
 Con el archivo guardado, ¡es hora de ejecutarlo! Utilizando las habilidades que has aprendido en la sección de línea de comandos, utiliza la terminal para **cambiar los directorios** e ir al escritorio.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
 En una Mac, el comando se verá algo como esto:
@@ -590,7 +592,7 @@ $ cd ~/Desktop
 ```
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="python_linux"
+<!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
 En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma):
@@ -602,13 +604,23 @@ $ cd ~/Desktop
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Y en Windows, será así:
+Y en Windows Command Prompt, será así:
 
 {% filename %}Terminal{% endfilename %}
 ```
 > cd %HomePath%\Desktop
+```
+<!--endsec-->
+
+<!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+Y en Windows Powershell, será así:
+
+{% filename %}Terminal{% endfilename %}
+```
+> cd $Home\Desktop
 ```
 <!--endsec-->
 

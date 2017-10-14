@@ -138,6 +138,8 @@ Tu código está ahora en GitHub. ¡Ve y míralo! Verás que está en buena comp
 
 Cuando te hayas registrado en PythonAnywhere serás redirigida a tu panel de control o página "Consoles". Elige la opción para iniciar una consola "Bash". Esta es la versión PythonAnywhere de una consola, como la que tienes en tu PC.
 
+<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
+
 > **Nota**: PythonAnywhere está basado en Linux, por lo que si estás en Windows la consola será un poco distinta a la que tienes en tu computadora.
 
 Vamos a descagar nuestro código de GitHub a PythonAnywhere mediante la creación de un "clon" del repositorio. Escribe lo siguiente en la consola de PythonAnywhere (no te olvides de utilizar tu nombre de usuario de GitHub en lugar de `<tu-usuario-github>`):
@@ -179,17 +181,17 @@ Tal y como hiciste en tu propia computadora, puedes crear un virtualenv en Pytho
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.5 myvenv
-Running virtualenv with interpreter /usr/bin/python3.5
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.10.0
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 > **Nota** El paso `pip install` puede llevar un par de minutos. ¡Paciencia, paciencia! Pero si tarda más de 5 minutos, algo va mal. Pregunta a tu tutora o tutor.
 
@@ -199,7 +201,7 @@ Successfully installed django-1.10.4
 
 Aquí hay otra cosa que es diferente entre tu computadora y el servidor: éste utiliza una base de datos diferente. Por lo tanto, las cuentas de usuario y las entradas pueden ser diferentes en el servidor y en tu computadora.
 
-Podemos inicializar la base de datos en el servidor igual que lo hicimos en nuestra computadora, con `migrate` y `createsuperuser`:
+De la misma forma que hicimos en nuestra computadora, repetimos los pasos para inicializar la base de datos en el servidor, con `migrate` y `createsuperuser`:
 
 {% filename %}Terminal PythonAnywhere{% endfilename %}
 ```
@@ -216,7 +218,7 @@ Ahora nuestro código está en PythonAnywhere, el virtualenv está listo y la ba
 
 Haz clic en el logo de PythonAnywhere para volver al panel principal y haz clic en la pestaña **Web**. Por último, pincha en **Add a new web app**.
 
-Después de confirmar tu nombre de dominio, elige **manual configuration** o "configuración manual" (N.B. – la opción "Django" *no*) en el diálogo. Luego elige **Python 3.5** y haz clic en "Next" para terminar con el asistente.
+Después de confirmar tu nombre de dominio, elige **manual configuration** o "configuración manual" (N.B. – la opción "Django" *no*) en el diálogo. Luego elige **Python 3.6** y haz clic en "Next" para terminar con el asistente.
 
 > **Nota** Asegúrate de elegir la opción de "Manual configuration", no la de "Django". Somos demasiado buenas para la configuración por defecto de Django de PythonAnywhere ;-)
 
@@ -243,7 +245,7 @@ Borra todo el contenido y reemplázalo con algo como esto:
 import os
 import sys
 
-path = '/home/<your-PythonAnywhere-username>/my-first-blog'  # use your own PythonAnywhere username here
+path = os.path.expanduser('~/my-first-blog')
 if path not in sys.path:
     sys.path.append(path)
 
@@ -253,10 +255,6 @@ from django.core.wsgi import get_wsgi_application
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ``` 
-
-> **Nota** No olvides sustituir tu propio nombre de usuario donde dice `<tu-usuario>`
-
-> **Nota** En la línea cuatro, asegúrate de que PythonAnywhere sepa como encontrar tu aplicación. Es muy importante que esa ruta sea correcta, y especialmente que no haya espacios extras. De otra forma, verás un "ImportError" en el registro de errores.
 
 Este archivo se encarga de decirle a PythonAnywhere donde vive nuestra aplicación web y como se llama el archivo de configuración de Django.
 
@@ -276,7 +274,7 @@ Si ves un error cuando intentas visitar tu página, el primer lugar donde buscar
 
 - Cometer un error en el fichero de configuración WSGI; ¿has puesto bien la ruta a la carpeta my-first-blog?
 
-- ¿Has elegido la misma versión de Python para el virtualenv y para la aplicación web? Ambas deberían ser 3.5.
+- ¿Has elegido la misma versión de Python para el virtualenv y para la aplicación web? Ambas deberían ser 3.6.
 
 Hay algunos [consejos generales de depuración en el wiki de Pythonanywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError)
 

@@ -102,7 +102,7 @@ Ahora guarda `base.html` y abre tu archivo `blog/templates/blog/post_list.html` 
 
 Queremos utilizar esto como parte de nuestra plantilla para todos los bloques _content_. ¡Es hora de agregar una etiqueta `block` a este archivo!
 
-{% raw %}Quieres que tu etiqueta `block` coincida con la etiqueta en tu archivo `base.html`. También querrás que incluya todo el código que pertenece al bloque _content_. Para hacer eso, pon todo entre `{% block content %}` y `{% endblock content %}`. Algo así:{% endraw %}
+{% raw %}Quieres que tu etiqueta `block` coincida con la etiqueta en tu archivo `base.html`. También querrás que incluya todo el código que pertenece al bloque _content_. Para hacer eso, pon todo entre `{% block content %}` y `{% endblock %}`. Algo así:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html

@@ -116,7 +116,7 @@ Aquí hay un ejemplo de una plantilla completa, copia y pégalo en el archivo `b
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div>

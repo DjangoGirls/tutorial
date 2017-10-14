@@ -350,7 +350,7 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/1.10/topics/forms/
+Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/1.11/topics/forms/
 
 ## Seguridad
 
@@ -392,7 +392,7 @@ Cámbiala por esta:
      <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
 
-Ya que probablemente tengas iniciada la sesión, si refrescas la página no verás nada distinto. sin embargo, abre la página en un navegador nuevo o en una ventana de incógnito ¡y verás que el enlace no se muestra!
+Ya que probablemente tengas iniciada la sesión, si refrescas la página no verás nada distinto. sin embargo, abre la página en un navegador nuevo o en una ventana de incógnito (llamada "InPrivate" en Windows Edge) ¡y verás que el enlace no se muestra!
 
 
 ## Una cosa más: ¡Tiempo de implementación!

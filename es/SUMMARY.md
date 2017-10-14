@@ -24,3 +24,4 @@
 * [Formularios en Django](django_forms/README.md)
 * [¿Qué sigue?](whats_next/README.md)
 * [Instalación](installation/README.md)
+* [Instalación (chromebook)](chromebook_setup/README.md)

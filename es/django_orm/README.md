@@ -51,7 +51,7 @@ Esto es simple: importamos el modelo `Post` de `blog.models`. Vamos a intentar m
 {% filename %}Terminal{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>]
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 ¡Es una lista de posts que hemos creado antes! Las hemos creado usando la interfaz del administrador de Django. Sin embargo, ahora queremos crear nuevos posts usando Python, ¿cómo lo hacemos?
@@ -79,7 +79,7 @@ Primero importemos el modelo User:
 {% filename %}Terminal{% endfilename %}
 ```python
 >>> User.objects.all()
-[<User: ola>]
+<QuerySet [<User: ola>]>
 ```
 
 ¡Es el súper usuario que hemos creado antes! Vamos a obtener una instancia de ese usuario ahora:
@@ -103,7 +103,7 @@ Ahora, finalmente, podemos crear nuestro post:
 {% filename %}Terminal{% endfilename %}
 ```python
 >>> Post.objects.all()
-[<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
 ¡Ahí está, una entrada de blog más en la lista!

@@ -28,21 +28,21 @@ Haremos un virtualenv llamado `myvenv`. El comando general estará en el formato
 $ python3 -m venv myvenv
 ```
 
-<!--sec data-title="Windows" data-id="virtualenv_installation_windows"
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Para crear un nuevo `virtualenv`, debes abrir la consola (te lo indicamos unos cuantos capítulos antes, ¿recuerdas?) y ejecuta `C:\Python35\python -m venv myvenv`. Se verá así:
+Para crear un nuevo `virtualenv`, debes abrir la consola y ejecutar `python -m venv myvenv`. Se verá así:
 
 {% filename %}Terminal{% endfilename %}
 ```
-C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
+C:\Users\Name\djangogirls> python -m venv myvenv
 ```
 
-en donde `C:\Python35\python` es el directorio en el que instalaste Python previamente y `myvenv` es el nombre de tu `virtualenv`. Puedes utilizar cualquier otro nombre, pero asegúrate de usar minúsculas y no usar espacios, acentos o caracteres especiales. También es una buena idea mantener el nombre corto. ¡Vas a referirte a él mucho!
+en donde `myvenv` es el nombre de tu `virtualenv`. Puedes utilizar cualquier otro nombre, pero asegúrate de usar minúsculas y no usar espacios, acentos o caracteres especiales. También es una buena idea mantener el nombre corto. ¡Vas a referirte a él mucho!
 
 <!--endsec-->
 
-<!--sec data-title="Linux y OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux y OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
 Crear un `virtualenv` en Linux y OS X es tan simple como ejecutar `python3 -m venv myvenv`.
@@ -82,7 +82,7 @@ $ python3 -m venv myvenv
 >{% filename %}Terminal{% endfilename %}
 >```
 >$ sudo apt-get install python-virtualenv
->$ virtualenv --python=python3.5 myvenv
+>$ virtualenv --python=python3.6 myvenv
 >```
 
 > __NOTA:__ Si obtienes un error como este
@@ -96,7 +96,7 @@ $ python3 -m venv myvenv
 >
 >{% filename %}Terminal{% endfilename %}
 >```
->sudo apt install python3.5-venv
+>sudo apt install python3.6-venv
 >```
 
 <!--endsec-->
@@ -105,7 +105,7 @@ $ python3 -m venv myvenv
 
 El comando anterior creará un directorio llamado `myvenv` (o cualquier nombre que hayas elegido) que contiene nuestro entorno virtual (básicamente un montón de archivos y carpetas).
 
-<!--sec data-title="Windows" data-id="virtualenv_windows"
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
 Inicia el entorno virtual ejecutando:
@@ -127,7 +127,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 <!--endsec-->
 
 
-<!--sec data-title="Linux y OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Virtual environment: Linux y OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Inicia el entorno virtual ejecutando:
@@ -165,37 +165,37 @@ Antes de hacer eso, deberíamos asegurarnos de que tenemos la última version de
 (myvenv) ~$ pip install --upgrade pip
 ```
 
-Luego ejecuta `pip install django~=1.10.0` (nota que usamos la tilde seguido de un signo igual: `~=`) para instalar Django.
+Luego ejecuta `pip install django~=1.11.0` (nota que usamos la tilde seguido de un signo igual: `~=`) para instalar Django.
 
 {% filename %}Terminal{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.10.0
-Collecting django~=1.10.0
-  Downloading Django-1.10.4-py2.py3-none-any.whl (6.8MB)
+(myvenv) ~$ pip install django~=1.11.0
+Collecting django~=1.11.0
+  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.10.4
+Successfully installed django-1.11.3
 ```
 
-<!--sec data-title="Windows" data-id="django_err_windows"
+<!--sec data-title="Virtual environment: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
 > Si obtienes un error al ejecutar pip en Windows comprueba si la ruta de tu proyecto contiene espacios, acentos o caracteres especiales (por ejemplo, `C:\Users\User Name\djangogirls`). Si lo tiene, por favor considera moverla a otro lugar sin espacios, acentos o caracteres especiales (sugerencia: `C:\djangogirls`). Crea un nuevo entorno virtual en ese directorio, luego elimina el viejo y vuelve a probar el comando anterior (mover el directorio del virtualenv no funcionará debido a que virtualenv usa rutas absolutas)
 
 <!--endsec-->
 
-<!--sec data-title="Windows 8 y Windows 10" data-id="django_err_windows8and10"
+<!--sec data-title="Virtual environment: Windows 8 y Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
 > Tu línea de comandos quizás se congele luego de que intentas instalar Django. Si esto sucede, intenta este comando en cambio:
 >
 >{% filename %}Terminal{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.10.0
+>C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
 >```
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="django_err_linux"
+<!--sec data-title="Virtual environment: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
 

@@ -27,7 +27,7 @@ Como puedes ver, lo que hemos conseguido es esto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 Esto significa que Django lo entiende como una lista de objetos. ¿Recuerdas de __Introducción a Python__ cómo podemos mostrar listas? Sí, ¡con bucles for! En una plantilla de Django se hacen así:
@@ -86,7 +86,7 @@ $ git push
 
 * Luego, vuelve a entrar en [PythonAnywhere](https://www.pythonanywhere.com/) y ve a tu **consola Bash** (o inicia una nueva), y ejecuta:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}Terminal de PythonAnywhere{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

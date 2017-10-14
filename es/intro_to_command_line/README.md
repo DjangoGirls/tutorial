@@ -18,20 +18,20 @@ La ventana que se llama generalmente la **línea de comandos** o la **interfaz d
 
 Lo primero que debemos hacer para empezar a experimentar con nuestra interfaz de línea de comandos es abrirla.
 
-<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Ir al menú Inicio → Todos los programas → Accesorios → Command Prompt
 
 <!--endsec-->
 
 
-<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
 Aplicaciones → Servicios → Terminal
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
 Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depende de tu distribución. Si no lo encuentras, Googlealo :)
 
@@ -41,7 +41,7 @@ Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depend
 
 Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: OS X y Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
 Si estás en Mac o Linux, probablemente verás `$`, así:
@@ -52,7 +52,7 @@ $
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 
 En Windows, es un signo así `>`, como este:
@@ -75,7 +75,7 @@ En el tutorial, cuando queremos que escribas un comando, vamos a incluir el `$` 
 
 Vamos a empezar con algo simple. Escribe este comando:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: OS X y Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -85,7 +85,7 @@ $ whoami
 <!--endsec-->
 
 
-<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -114,7 +114,7 @@ Cada sistema operativo tiene un conjunto diferente de comandos para la línea de
 
 Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este comando y pulsa `intro`:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Your first command: OS X y Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -128,14 +128,14 @@ $ pwd
 <!--endsec-->
 
 
-<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
 > cd
 C:\Users\olasitarska
 ```
-> Nota: 'cd' significa 'current directory' - en español, 'directorio actual'.
+> Nota: 'cd' significa 'current directory' - en español, 'directorio actual'. En powershell, puedes usar `pwd` al igual que en Linux o Mac OS X.
 
 <!--endsec-->
 
@@ -147,7 +147,7 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
 
 ¿Qué hay aquí? Sería bueno saber. Veamos:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: OS X y Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -160,7 +160,7 @@ Music
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -173,6 +173,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
+> **Nota**: En powershell puedes usar también `ls` como en Linux y Mac OS X.
 <!--endsec-->
 
 ---
@@ -181,7 +182,7 @@ Music
 
 Ahora, vayamos a nuestro directorio Desktop, el escritorio:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X y Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -189,7 +190,7 @@ $ cd Desktop
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -200,7 +201,7 @@ $ cd Desktop
 
 Comprueba si realmente ha cambiado:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: OS X y Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -209,7 +210,7 @@ $ pwd
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -228,7 +229,7 @@ C:\Users\olasitarska\Desktop
 
 ¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: OS X y Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -236,7 +237,7 @@ $ mkdir practice
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -257,7 +258,7 @@ Un pequeño reto para ti: en el recién creado directorio `practice` crea un dir
 
 #### Solución:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: OS X y Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -268,7 +269,7 @@ test
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -290,7 +291,7 @@ No queremos dejar un lío, así que vamos a eliminar todo lo que hemos hecho has
 
 En primer lugar, tenemos que volver al escritorio:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: OS X y Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -298,7 +299,7 @@ $ cd ..
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -311,7 +312,7 @@ Usar `..` con el comando `cd` hará que cambie el directorio actual al directori
 
 Revisa dónde estás:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: OS X y Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -320,7 +321,7 @@ $ pwd
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -334,7 +335,7 @@ Es el momento de eliminar el directorio `practice`:
 
 > __Atención__: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre*. Así que ten mucho cuidado con este comando.
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, OS X y Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -342,7 +343,7 @@ $ rm -r practice
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_rmdir" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -354,7 +355,7 @@ practice, Are you sure <Y/N>? Y
 
 ¡Hecho! Para asegurarnos de que realmente se ha eliminado, vamos a comprobarlo:
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: OS X y Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -362,7 +363,7 @@ $ ls
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_dir2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}
@@ -376,7 +377,7 @@ $ ls
 
 ¡Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vamos a hacerlo al estilo hacker, ¿vale?:)
 
-<!--sec data-title="OS X y Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: OS X y Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -384,7 +385,7 @@ $ exit
 ```
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
 
 {% filename %}Terminal{% endfilename %}

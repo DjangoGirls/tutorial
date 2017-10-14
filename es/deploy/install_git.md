@@ -2,14 +2,14 @@ Git es un "sistema de control de versiones" que utilizan muchas programadoras y 
 
 ## Instalar Git
 
-<!--sec data-title="Windows" data-id="git_install_windows"
+<!--sec data-title="Instalar Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
 Puedes descargar Git de [git-scm.com](https://git-scm.com/). Puedes hacer clic en "Next" para todos los pasos excepto en uno; en el quinto paso titulado "Adjusting your PATH environment", elije "Run Git and associated Unix tools from the Windows command-line" (la última opción). Aparte de eso, los valores por defecto están bien. "Checkout Windows-style, commit Unix-style line endings" también está bien.
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="Instalar Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Descarga Git de [git-scm.com](https://git-scm.com/) y solo sigue las instrucciones.
@@ -18,7 +18,7 @@ Descarga Git de [git-scm.com](https://git-scm.com/) y solo sigue las instruccion
 
 <!--endsec-->
 
-<!--sec data-title="Debian o Ubuntu" data-id="git_install_debian_ubuntu"
+<!--sec data-title="Instalar Git: Debian o Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
@@ -28,17 +28,7 @@ $ sudo apt-get install git
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (hasta 21)" data-id="git_install_fedora_21"
-data-collapse=true ces-->
-
-{% filename %}Terminal{% endfilename %}
-```bash
-$ sudo yum install git
-```
-
-<!--endsec-->
-
-<!--sec data-title="Fedora 22+" data-id="git_install_fedora_22"
+<!--sec data-title="Instalar Git: Fedora" data-id="git_install_fedora_22"
 data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}
@@ -48,7 +38,7 @@ $ sudo dnf install git
 
 <!--endsec-->
 
-<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+<!--sec data-title="Instalar Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
 {% filename %}Terminal{% endfilename %}

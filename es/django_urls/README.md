@@ -92,7 +92,7 @@ Cuando se escriben expresiones regulares en Python siempre se pone `r` delante d
 
 ## blog.urls
 
-Crea un nuevo archivo vacío `blog/urls.py`. ¡Muy bien! Agrega estas primeras dos líneas:
+Crea un nuevo archivo vacío `urls.py` en la carpeta `blog`. ¡Muy bien! Agrega estas primeras dos líneas:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
@@ -122,4 +122,4 @@ Si intentas visitar http://127.0.0.1:8000/ ahora, encontrarás una especie de me
 
 Tu consola está mostrando un error, pero no te preocupes. De hecho, es de mucha ayuda: te está diciendo que no hay ningún __atributo 'post_list'__. Ese es el nombre de la *vista* que Django está tratando de encontrar y usar, pero no la hemos creado aún. En este momento tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso.
 
-> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.10/topics/http/urls/
+> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.11/topics/http/urls/
