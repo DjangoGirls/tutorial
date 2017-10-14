@@ -28,7 +28,7 @@ Más adelante, puedes intentar los recursos listados a continuación. ¡Son todo
 - [Django Carrots tutorial][8] 
 - [Learn Python The Hard Way book][9] 
 - [Getting Started With Django video lessons][10] 
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book]
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book][11]
 
  [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
