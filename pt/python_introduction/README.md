@@ -382,10 +382,10 @@ KeyError: 'idade'
 
 Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe nesse dicionário.
 
-Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
+Quando usar um dicionário ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
 
 - Você precisa de uma sequência ordenada de itens? Use uma list.
-- Você precisa associar valores com chaves, assim você pode procurá-los eficientemente (pela chave) mais tarde? Use um dictionary.
+- Você precisa associar valores com chaves, assim você pode procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
 
 Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depois que são criados. Você pode adicionar novos pares de chave/valor para o dicionário após sua criação, como:
 
@@ -394,7 +394,7 @@ Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depo
 >>> participante['linguagem_favorita'] = 'Python'
 ```
 
-Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionario. Vá em frente e digite o comando:
+Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionário. Vá em frente e digite o comando:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -404,7 +404,7 @@ Como as lists, usar o método `len()` em dicionários retorna o número de pares
 
 Espero que isso faça sentido até agora. :) Pronta para mais diversão com dicionários? Pule na próxima linha para coisas incríveis.
 
-Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
+Você pode usar o comando `pop()` para deletar um item no dicionário. Digamos, se você quer excluir a entrada correspondente à chave `'numeros_favoritos'`, basta digitar o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 ```python
