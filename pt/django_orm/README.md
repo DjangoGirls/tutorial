@@ -121,7 +121,7 @@ Os QuerySets são muito usados pela habilidade de filtrar objectos. Digamos que 
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-Ou talvez nós queiramos ver todas as postagenss que contenham a palavra 'title' no campo de `title`?
+Ou talvez nós queiramos ver todas as postagens que contenham a palavra 'title' no campo de `title`?
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -180,7 +180,7 @@ Você também pode inverter a ordem adicionando um `-` no início:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Encadeando QuerySets 
+### Encadeando QuerySets
 
 Você pode também combinar QuerySets pelo **encadeamento** deles em sequência:
 

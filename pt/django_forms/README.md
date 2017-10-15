@@ -127,7 +127,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Nós voltaremos para esta *view*, mas por agora, vamos criar rapidamente um template para o formulário.
+Para criar um novo formulário `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Nós voltaremos para esta *view*, mas por agora, vamos criar rapidamente um template para o formulário.
 
 ## Template (modelos)
 
@@ -256,13 +256,13 @@ Isso é incrível!
 
 ## Validação de formulários
 
-Agora, nós lhe mostraremos como os fórmularios são legais. A postagem do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos não são necessários, então o Django, por padrão, fica na expectativa que estejão definidos.
+Agora, nós lhe mostraremos como os formulários são legais. A postagem do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos não são necessários, então o Django, por padrão, fica na expectativa que estejam definidos.
 
 Tente salvar o formulário sem `title` e `text`. Adivinhe o que vai acontecer!
 
 ![Validação de formulário](images/form_validation2.png)
 
-Django está tomando conta da validação de todos os campos de nosso formulário, cerfificando que estão corretos. Não é incrível?
+Django está tomando conta da validação de todos os campos de nosso formulário, certificando que estão corretos. Não é incrível?
 
 ## Editando o formulário
 
@@ -373,7 +373,7 @@ Nós vamos adicionar outra tag `{% if %}` aqui, que fará com que o link seja ex
 
 Esse `{% if %}` fará com que o link seja enviado para o browser apenas se o usuário que requisitar a página estiver "logado". Isso não protege a criação de novas postagens completamente, mas é um bom primeiro passo. Nós falaremos mais sobre segurança nas lições de extensão.
 
-Lembra do icone de edição que nós acabamos de adicionar a nossa página de detalhes? Nós também queremos adicionar a mesma alteração lá, para que outras pessoas não sejam capazes de editar postagens existentes.
+Lembra do ícone de edição que nós acabamos de adicionar a nossa página de detalhes? Nós também queremos adicionar a mesma alteração lá, para que outras pessoas não sejam capazes de editar postagens existentes.
 
 Abra `blog/templates/blog/post_detail.html` e encontre essa linha:
 
@@ -391,7 +391,7 @@ Altere ela para isso:
 {% endif %}
 ```
 
-Como você deve estar "logada", se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador diferente ou em uma janela anônima, e então, veja que o link não é exibido, assim como o icone também não é!
+Como você deve estar "logada", se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador diferente ou em uma janela anônima, e então, veja que o link não é exibido, assim como o ícone também não é!
 
 ## Mais uma coisa: hora de implantar!
 

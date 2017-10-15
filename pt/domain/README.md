@@ -52,7 +52,7 @@ Vá para a [página PythonAnywhere contas][7] e upgrade sua conta. A opção mai
 
  [7]: https://www.pythonanywhere.com/account/
 
-Em seguida,vá na [Web tab][8] e anote algumas coisas:
+Em seguida, vá na [Web tab][8] e anote algumas coisas:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
