@@ -43,7 +43,7 @@ Agora quando formos para: http://127.0.0.1:8000/ teremos um erro (como esperado,
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Criando a URL para detalhe da postagem
 
 Vamos criar a URL em `urls.py` para a nossa *view* `post_detail`!
 
@@ -78,7 +78,7 @@ OK, nós adicionamos um novo padrão de URL ao `blog/urls.py`! Vamos atualizar a
 
 Você se lembra qual é o próximo passo? Claro: adicionar uma view!
 
-## Adicioando a view de detalhe da postagem
+## Adicionando a view de detalhe da postagem
 
 Desta vez a nossa *view* recebe um parâmetro extra, `pk`. Nossa *view* precisa pegá-la, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Observe que precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é errado e resultará em um erro!
 
