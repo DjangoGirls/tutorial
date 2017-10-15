@@ -21,7 +21,7 @@ Not too much stuff here yet.
 
 Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-Let's create a view as the comment suggests. Add the following minimal view below it:
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
