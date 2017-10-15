@@ -25,6 +25,8 @@ The simplest *view* can look like this:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
+from django.shortcuts import render
+
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
