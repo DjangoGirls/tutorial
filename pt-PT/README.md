@@ -1,128 +1,429 @@
-# Django URLs
+# Introduction to the command-line interface
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-## What is a URL?
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+**Let us introduce you to your first new friend: the command line!**
 
-![Url](images/url.png)
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## How do URLs work in Django?
+## What is the command line?
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-{% filename %}mysite/urls.py{% endfilename %}
+## Open the command-line interface
 
-```python
-"""mysite URL Configuration
+To start some experiments we need to open our command-line interface first.
 
-[...]
-"""
-from django.conf.urls import url
-from django.contrib import admin
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-]
-```
+Go to Start menu → Windows System → Command Prompt.
 
-As you can see, Django has already put something here for us.
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+<!--endsec-->
 
-The admin URL, which you visited in previous chapter, is already here:
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-{% filename %}mysite/urls.py{% endfilename %}
+Go to Applications → Utilities → Terminal.
 
-```python
-    url(r'^admin/', admin.site.urls),
-```
+<!--endsec-->
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-## Regex
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+<!--endsec-->
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
+## Prompt
 
-* `^` for the beginning of the text
-* `$` for the end of the text
-* `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
+You now should see a white or black window that is waiting for your commands.
 
-Anything else in the URL definition will be taken literally.
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
+If you're on Mac or Linux, you probably see `$`, just like this:
 
-Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
+{% filename %}command-line{% endfilename %}
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
-* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
-* **/** tells django that another `/` character should follow
-* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
+    $
+    
 
-## Your first Django URL!
+<!--endsec-->
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+On Windows, it's a `>` sign, like this:
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
+{% filename %}command-line{% endfilename %}
 
-Your `mysite/urls.py` file should now look like this:
+    >
+    
 
-{% filename %}mysite/urls.py{% endfilename %}
+<!--endsec-->
 
-```python
-from django.conf.urls import include, url
-from django.contrib import admin
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
-]
-```
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## blog.urls
+## Your first command (YAY!)
 
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+Let's start with something simple. Type this command:
 
-{% filename %}blog/urls.py{% endfilename %}
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-```python
-from django.conf.urls import url
-from . import views
-```
+{% filename %}command-line{% endfilename %}
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+    $ whoami
+    
 
-After that, we can add our first URL pattern:
+<!--endsec-->
 
-{% filename %}blog/urls.py{% endfilename %}
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-```python
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-]
-```
+{% filename %}command-line{% endfilename %}
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+    > whoami
+    
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+<!--endsec-->
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+And then hit `enter`. This is our result:
 
-![Error](images/error1.png)
+{% filename %}command-line{% endfilename %}
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+    $ whoami
+    olasitarska
+    
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+As you can see, the computer has just printed your username. Neat, huh? :)
+
+> Try to type each command; do not copy-paste. You'll remember more this way!
+
+## Basics
+
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+
+### Current directory
+
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska
+    
+
+> Note: 'pwd' stands for 'print working directory'.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska
+    
+
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+
+<!--endsec-->
+
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+
+* * *
+
+### List files and directories
+
+So what's in it? It'd be cool to find out. Let's see:
+
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    Applications
+    Desktop
+    Downloads
+    Music
+    ...
+    
+
+<!--endsec-->
+
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
+    ...
+    
+
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+
+* * *
+
+### Change current directory
+
+Now, let's go to our Desktop directory:
+
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd Desktop
+    
+
+<!--endsec-->
+
+Check if it's really changed:
+
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Here it is!
+
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+
+* * *
+
+### Create directory
+
+How about creating a practice directory on your desktop? You can do it this way:
+
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > mkdir practice
+    
+
+<!--endsec-->
+
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+* * *
+
+### Exercise!
+
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
+    $ mkdir test
+    $ ls
+    test
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
+    
+
+<!--endsec-->
+
+Congrats! :)
+
+* * *
+
+### Clean up
+
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ..
+    
+
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd ..
+    
+
+<!--endsec-->
+
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Now time to delete the `practice` directory:
+
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
+    
+
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+    
+
+<!--endsec-->
+
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ exit
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > exit
+    
+
+<!--endsec-->
+
+Cool, huh? :)
+
+## Summary
+
+Here is a summary of some useful commands:
+
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+
+## Ready?
+
+Let's dive into Python!
