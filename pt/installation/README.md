@@ -1,6 +1,6 @@
 # Se você está lendo o tutorial em casa
 
-Se você est lendo o tutorial em casa, e não em um [evento Django Girls](https://djangogirls.org/events/), você pode pular esse capítulo por completo agora e ir direto para o capítulo [Como a Internet funciona?](../how_the_internet_works/README.md).
+Se você está lendo o tutorial em casa, e não em um [evento Django Girls](https://djangogirls.org/events/), você pode pular esse capítulo por completo agora e ir direto para o capítulo [Como a Internet funciona?](../how_the_internet_works/README.md).
 
 A razão disso é porque nós simplesmente cobrimos essas coisas por todo o tutorial, e essa é apenas uma página adicional que reune todas as instruções de instalação em um lugar só. O evento Django Girls inclui um "Install Fest" onde nós instalamos tudo para que não seja necessário nos preocuparmos com isso durante o workshop, então isso é útil para nós.
 
@@ -50,4 +50,4 @@ Parabéns, você está com tudo preparado para seguir adiante! Se você ainda ti
 
 # Aproveite o workshop!
 
-Qunado você começar o workshop, você será capaz de ir direto para [Seu primeiro projeto Django!](../django_start_project/README.md) porque você já leu o material dos capítulos iniciais.
+Quando você começar o workshop, você será capaz de ir direto para [Seu primeiro projeto Django!](../django_start_project/README.md) porque você já leu o material dos capítulos iniciais.

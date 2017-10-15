@@ -1,5 +1,5 @@
 > Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Parte deste capítulo é baseado no [django-marcador tutorial][1] licenciado sobre Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
 
  ## Ambiente virtual
@@ -154,7 +154,7 @@ Ok, nós temos todas as dependências importantes no lugar. Finalmente podemos i
 
 ## Instalando o Django
 
-Agora que você tem a sua `virtualenv` inicializada, você pode instalar Django. 
+Agora que você tem a sua `virtualenv` iniciada, você pode instalar Django.
 
 Antes de nós fazermos isso, nós devemos ter certeza que temos a última versão do `pip`, o software que nós usamos para instalar
 o Django:
@@ -188,7 +188,7 @@ caminhos absolutos.)
 <!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Sua linha de comando pode congelar depois de você tentar instalar o Django. Se isso acontecer, ao invéz do comando acima use:
+> Sua linha de comando pode congelar depois de você tentar instalar o Django. Se isso acontecer, ao invés do comando acima use:
 >
 >{% filename %}command-line{% endfilename %}
 >```

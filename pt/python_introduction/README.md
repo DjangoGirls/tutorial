@@ -38,8 +38,8 @@ Mas agora não queremos sair da linha de comando do Python. Queremos aprender ma
 
 Incrível! Vê como a resposta simplesmente aparece? O Python conhece matemática! Você pode tentar outros comandos como:
 
-- `4 * 5` 
-- `5 - 1` 
+- `4 * 5`
+- `5 - 1`
 - `40 / 2`
 
 Para desenvolver cálculo exponencial, digamos 2 elevado a potência de 3, nós digitamos:
@@ -342,7 +342,7 @@ Um dicionário é semelhante a uma lista, mas você pode acessar valores atravé
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> {} 
+>>> {}
     {}
 ```    
 
@@ -382,7 +382,7 @@ KeyError: 'idade'
 
 Olha, outro erro! Esse é um **KeyError**. Python é bastante prestativo e te diz que a chave `'idade'` não existe nesse dicionário.
 
-Quando usar um dicionario ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
+Quando usar um dicionário ou uma lista? Bem, um bom ponto para refletir. Pense em uma solução antes de olhar a resposta na próxima linha.
 
 - Você precisa de uma sequência ordenada de itens? Use uma list.
 - Você precisa associar valores com chaves, assim você pode procurá-los eficientemente (pela chave) mais tarde? Use um dictionary.
@@ -394,7 +394,7 @@ Dicionários, como listas, são *mutáveis*, ou seja, que podem ser mudados depo
 >>> participante['linguagem_favorita'] = 'Python'
 ```
 
-Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionario. Vá em frente e digite o comando:
+Como as lists, usar o método `len()` em dicionários retorna o número de pares chave-valor no dicionário. Vá em frente e digite o comando:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -404,7 +404,7 @@ Como as lists, usar o método `len()` em dicionários retorna o número de pares
 
 Espero que isso faça sentido até agora. :) Pronta para mais diversão com dicionários? Pule na próxima linha para coisas incríveis.
 
-Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
+Você pode usar o comando `pop()` para deletar um item no dicionário. Digamos, se você quer excluir a entrada correspondente a chave `'numeros_favoritos'`, basta digitar o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -413,7 +413,7 @@ Você pode usar o comando `pop()` para deletar um item no dicionario. Digamos, s
 {'pais': 'Polonia', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 ```
 
-Como você pode ver no retorno, o par chave-valor correspondente à chave 'numeros_favoritos' foi excluído.
+Como você pode ver no retorno, o par chave-valor correspondente à chave `'numeros_favoritos`' foi excluído.
 
 Além disso você pode mudar o valor associado com uma chave já criada no dicionário. Digite:
 
@@ -456,7 +456,7 @@ True
 >>> 5 != 2
 True
 ```
-    
+
 
 Demos ao Python alguns números para comparar. Como você pode ver, Python pode comparar não só números mas também resultados de métodos. Legal, hein?
 
@@ -489,7 +489,7 @@ True
 False
 >>> 3 > 2 or 2 < 1
 True
-``` 
+```
 
 Você pode dar ao Python quantos números você quiser para comparar, e ele vai te dar uma resposta! Espertinho, certo?
 
@@ -575,10 +575,10 @@ Anteriormente, nós escolhemos um editor de código da seção do [editor de có
 print('Hello, Django girls!')
 ```
 
-Obviamente, você agora é uma desenvolvedora Python com alguma experiência, então sinta-se livre para escrever algum código com o que 
+Obviamente, você agora é uma desenvolvedora Python com alguma experiência, então sinta-se livre para escrever algum código com o que
 aprendeu hoje.
 
-Agora, nós precisamos salvar o arquivo e nomeá-lo de forma descritiva. Vamos chamar o arquivo de **python_intro.py** e 
+Agora, nós precisamos salvar o arquivo e nomeá-lo de forma descritiva. Vamos chamar o arquivo de **python_intro.py** e
 salvá-lo em seu desktop. Nós podemos nomeá-lo da maneira que quisermos, mas a parte importante aqui é garantir que termine
 com __.py__. A extensão __.py__ informa ao nosso sistema operacional que o arquivo é um **arquivo Python executável** e
 o Python pode rodá-lo.
@@ -730,7 +730,7 @@ $ python3 python_intro.py
 Hey Sonja!
 ```
 
-Vê o que acontece aqui? `elif` permite que você adicione condições extras que acontecem se as condiçes anteriores falharem.
+Vê o que acontece aqui? `elif` permite que você adicione condições extras que acontecem se as condições anteriores falharem.
 
 Você pode adicionar quantas declarações `elif` você quiser após a declaração `if` inicial. Por exemplo:
 
@@ -802,7 +802,7 @@ def hi():
     print('Como vai você?')
 
 hi()
-``` 
+```
 
 Ok, nossa primeira função está pronta!
 
@@ -824,7 +824,7 @@ Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usarem
 def hi(nome):
 ```
 
-Como você pode ver, nós demos a nossa função um parâmetro que ns chamamos de `nome`:
+Como você pode ver, nós demos a nossa função um parâmetro que nós chamamos de `nome`:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -919,16 +919,16 @@ Parabéns! Você acabou de aprender como escrever funções! :)
 
 Essa já é a última parte. Isso foi rápido, não? :)
 
-Programadoras não gostam de ficar se repetindo. Programação sempre sobre automatizar coisas, então nós não queremos cumprimentar cada pessoa por seu nome manualmente, certo? É ai que os laços de repetiço entram em cena.
+Programadoras não gostam de ficar se repetindo. Programação sempre sobre automatizar coisas, então nós não queremos cumprimentar cada pessoa por seu nome manualmente, certo? É ai que os laços de repetição entram em cena.
 
-Ainnda se lembra das listas? Vamos fazer uma lista de garotas:
+Ainda se lembra das listas? Vamos fazer uma lista de garotas:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
 garotas = ['Rachel', 'Monica', 'Phoebe', 'Ana', 'You']
 ```
 
-Nós queremos comprimentar todas elas por seus nomes. Nós temos a função `hi` para fazer isso, então vamos fazer isso com um laço de repetição:
+Nós queremos cumprimentar todas elas por seus nomes. Nós temos a função `hi` para fazer isso, então vamos fazer isso com um laço de repetição:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -970,7 +970,7 @@ Próxima garota
 
 Como você pode ver, tudo que você colocar dentro da declaração `for`, com a indentação (aqueles quatro espaços a partir da margem esquerda) será repetido para cada elemento da lista `garotas`.
 
-Você também pode usar o `for` com numeros usando a função `range`:
+Você também pode usar o `for` com números usando a função `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -989,9 +989,9 @@ Que irá imprimir:
 5
 ```
 
-`range` é uma função que cria uma lista de numeros em sequência (esses numeros são fornecidos por você como parâmetros).
+`range` é uma função que cria uma lista de números em sequência (esses números são fornecidos por você como parâmetros).
 
-Note que o segundo desses numeros não é incluído na lista que é exibida pelo Python (o que significa que `range(1, 6)` conta de 1 até 5, não inclui o número 6). É por isso que "range" é meio aberta ("half-open"), e com isso nós queremos dizer que a função inclui o primiero valor, mas não o último.
+Note que o segundo desses números não é incluído na lista que é exibida pelo Python (o que significa que `range(1, 6)` conta de 1 até 5, não inclui o número 6). É por isso que "range" é meio aberta ("half-open"), e com isso nós queremos dizer que a função inclui o primeiro valor, mas não o último.
 
 ## Sumário
 

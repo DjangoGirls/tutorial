@@ -15,7 +15,7 @@ Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
         └───blog
                 base.html
                 post_list.html
-    
+
 
 Abra-o e copie tudo que está no arquivo `post_list.html` para `base.html`, desse jeito:
 
@@ -73,7 +73,7 @@ Então em `base.html`, substitua todo seu `<body>` (tudo entre `<body>` e `</bod
 </body>
 ```
 
-{% raw %}Basicamente nós substituimos tudo entre `{% for post in posts %}{% endfor %}` por:{% endraw %}
+{% raw %}Basicamente nós substituímos tudo entre `{% for post in posts %}{% endfor %}` por:{% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

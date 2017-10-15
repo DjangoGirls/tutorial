@@ -21,7 +21,7 @@ Os templates são salvos no diretório `blog/templates/blog`. Então, crie um di
     blog
     └───templates
         └───blog
-    
+
 
 (Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma simples e útil convenção que facilita a vida quando as coisas começarem a ficar mais complicadas.)
 
@@ -143,7 +143,7 @@ Isso nos dá o seguinte efeito:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! Mas, até agora, nosso template mostra exatamante __sempre a mesma informação__ - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações __diferentes__ em um __mesmo formato__.
+Yaaay! Mas, até agora, nosso template mostra exatamente __sempre a mesma informação__ - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações __diferentes__ em um __mesmo formato__.
 
 O que nós realmente queremos fazer é exibir postagens reais que foram adicionadas no Django admin - e isso é o que faremos em seguida.
 
@@ -197,7 +197,7 @@ $ git push
 ### Empurre seu novo código para o PythonAnywhere e recarregue o seu aplicativo web
 
 *   Abra a [página de consoles de PythonAnywhere] (https://www.pythonanywhere.com/consoles/) e vá para o seu **console Bash** (ou inicie um novo). Em seguida, execute:
- 
+
  {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/my-first-blog
