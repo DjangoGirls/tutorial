@@ -187,14 +187,11 @@ $ git push
 
 * Öffne die [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) und gehe zu deiner **Bash-Konsole** (oder starte eine neue). Dann, führe Folgendes aus:
 
-```bash
-$ cd ~/my-first-blog 
-$ source myvenv/bin/activate 
-(myvenv)$ git pull 
-[...] 
-(myvenv)$ python manage.py collectstatic 
+```
+$ cd ~/my-first-blog
+$ git pull
 [...]
-```bash
+```
 
 Schau zu, wie dein Code runtergeladen wird! Wenn du prüfen willst, ob der Code angekommen ist, kannst du zum **Files Tab** rüberspringen und deinen Code auf PythonAnywhere sehen.
 
