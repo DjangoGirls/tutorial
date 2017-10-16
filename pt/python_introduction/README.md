@@ -503,7 +503,7 @@ Já ouviu a expressão "comparar maçãs com laranjas"? Vamos tentar o equivalen
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Aqui vemos que assim como na expressão, Python não é capaz de comparar um número (`int`) e uma string (`str`).

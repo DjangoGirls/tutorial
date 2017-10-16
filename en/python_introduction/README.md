@@ -503,7 +503,7 @@ Have you heard of the expression "comparing apples to oranges"? Let's try the Py
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`).

@@ -504,7 +504,7 @@ True
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Как мы видим, Python не знает, как сравнить число (`int`) и строку (`str`) между собой. Поэтому он просто возвращает нам ошибку **TypeError** и предупреждает, что объекты заданных типов не могут быть сравнены.
