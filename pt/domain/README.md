@@ -73,4 +73,4 @@ Quando você tiver voltado para a web tab:
 
 Clique em reload web app e você deve encontrar seu site live no novo domínio!
 
-Se você tiver qualquer problema, clique no link "Enviar feedback", no site PythonAnywhere, e um dos seus administradores amigáveis vai estar lá para ajudá-la.
+Se você tiver qualquer problema, clique no link "Enviar feedback" no site PythonAnywhere, e um dos seus administradores amigáveis vai estar lá para ajudá-la.
