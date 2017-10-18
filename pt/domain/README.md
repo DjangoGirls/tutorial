@@ -2,7 +2,7 @@
 
 PythonAnywhere te deu um domínio gratuito, mas talvez você não queira ter ". pythonanywhere.com" no final da URL do seu blog. Talvez você queira seu blog apenas "www.infinite-kitten-pictures.org" ou "www.3d-printed-steam-engine-parts.com" ou "www.antique-buttons.com" ou "www.mutant-unicornz.net", ou seja o que vai ser.
 
-Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se estiver realmente comprometido!
+Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se estiver realmente comprometida!
 
 ## Onde registrar um domínio?
 
@@ -14,7 +14,7 @@ O nosso favorito é o [I want my name][2] (eu quero meu nome). Eles anunciam seu
 
  [2]: https://iwantmyname.com/
 
-Você também pode obter domínios gratuitamente. [dot.tk][3] é um lugar para pegar um, mas você deve estar ciente de que domínios grátis às vezes parecem muito baratos -- se seu site vai ser para um profissional de negócios, você deve pensar em pagar por um domínio "correto" que termina em `.com`.
+Você também pode obter domínios gratuitamente. [dot.tk][3] é um lugar para obter um, mas você deve estar ciente de que domínios grátis às vezes parecem muito baratos -- se seu site vai ser para uma profissional de negócios, você deve pensar em pagar por um domínio "correto" que termina em `.com`.
 
  [3]: http://www.dot.tk
 
@@ -48,7 +48,7 @@ Pode levar alguns minutos para o seu domínio funcionar, então seja paciente!
 
 Você também precisa dizer PythonAnywhere que você deseja usar o seu domínio personalizado.
 
-Vá para a [página PythonAnywhere contas][7] e atualize sua conta. A opção mais barata (um plano de "Hacker") é bom para começar, você pode sempre atualizá-lo mais tarde quando você ficar super famoso e tiver milhões de acessos.
+Vá para a [página PythonAnywhere contas][7] e atualize sua conta. A opção mais barata (um plano de "Hacker") é bom para começar, você pode sempre atualizá-lo mais tarde quando você ficar super famosa e tiver milhões de acessos.
 
  [7]: https://www.pythonanywhere.com/account/
 
