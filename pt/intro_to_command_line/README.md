@@ -53,7 +53,7 @@ No Windows, é um sinal de `>`, como este:
 >
 ```
 <!--endsec-->
-    
+
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você :)
 
@@ -240,7 +240,7 @@ $ mkdir djangogirls
 > mkdir djangogirls
 ```
 <!--endsec-->
-    
+
 Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ela está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
@@ -249,7 +249,7 @@ Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Voc�
 
 ### Exercite-se!
 
-Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
+Um pequeno desafio para você: dentro da pasta `djangogirls` que você acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
 
 #### Solução:
 

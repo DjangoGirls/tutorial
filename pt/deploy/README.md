@@ -51,15 +51,15 @@ E salve como `.gitignore` na pasta "djangogirls".
 
 > **Nota**: O ponto no início do nome do arquivo é importante! Se você está tendo alguma dificuldade em criá-la (Macs não gostam de criar arquivos que começam com um ponto através do Finder, por exemplo), use o recurso "Save As" no seu editor que sempre funciona.
 
-> **Nota** Um dos arquivos que você especificou em seu arquvio `.gitignore` é o `db.sqlite3`. Esse arquivo é o seu banco de
+> **Nota** Um dos arquivos que você especificou em seu arquivo `.gitignore` é o `db.sqlite3`. Esse arquivo é o seu banco de
 dados local, aonde todos as suas postagens estão armazenadas. Nós não queremos adicionar isso no seu repositório porquê seu
 website no PythonAnywhere estará usando um banco de dados diferente. Esse banco de dados poderia ser o SQLite, como na sua
 máquina de desenvolvimento, mas geralmente você irá usar um chamado MySQL, o qual pode lidar com muito mais visitantes que o
 SQLite. De qualquer forma, ignorar seu banco de dados SQLite na cópia no GitHub, significa que todos as  postagens que você
-criou até agora vão ficar disponíceis apenas localmente, e você terá que adicioná-las novamente em produção. Você deve pensar no seu banco de dados local como um bom "playground", onde você pode testar coisas diferentes e não ter medo de apagar as
+criou até agora vão ficar disponíveis apenas localmente, e você terá que adicioná-las novamente em produção. Você deve pensar no seu banco de dados local como um bom "playground", onde você pode testar coisas diferentes e não ter medo de apagar as
 postagens reais de seu blog.
 
-É uma boa ideia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza do que foi alterado. Isso previne que surpressas aconteçam, tais como adicionar ou fazer "commit" de arquivos errados. O comando `git status` retorna informações sobre qualquer arquivo "untracked/modified/staged" (não rastreado/modificado/encenado), status da branch e muito mais. A saída deve ser semelhante a:
+É uma boa idéia para usar um comando de `git status` antes de `git add` ou sempre que você não tiver certeza do que foi alterado. Isso previne que surpresas aconteçam, tais como adicionar ou fazer "commit" de arquivos errados. O comando `git status` retorna informações sobre qualquer arquivo "untracked/modified/staged" (não rastreado/modificado/encenado), status da branch e muito mais. A saída deve ser semelhante a:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -91,7 +91,7 @@ $ git commit -m "My Django Girls app, first commit"
  [...]
  create mode 100644 mysite/wsgi.py
  ```
- 
+
 ## Empurrando o nosso código para GitHub
 
 Vá para [GitHub.com](https://www.github.com) e cadastre uma nova e gratuita conta de usuário. (Se você já fez isso na preparação
@@ -286,7 +286,7 @@ application = StaticFilesHandler(get_wsgi_application())
 
 > **Nota** não se esqueça de substituir por seu próprio nome de usuário PythonAnywhere onde diz `<your-username>`
 > **Nota** Na linha quatro, nós nos certificamos que Python anywhere saiba como encontrar nossa aplicação. É muito importante
-que esse nome "path" (caminho) esteja correto, e especiamente que não exista espaços extras aqui. Senão você verá um "ImportError" no registro de erro.
+que esse nome "path" (caminho) esteja correto, e especialmente que não exista espaços extras aqui. Senão você verá um "ImportError" no registro de erro.
 
 O que esse arquivo faz é dizer PythonAnywhere onde mora a nossa aplicação web e qual o nome do arquivo de configurações Django.
 
@@ -304,7 +304,7 @@ Se você ver um erro quando você tentar visitar o seu site, o primeiro lugar pa
 
 -  esquecer um dos passos que fizemos no console: criando o virtualenv, ativá-lo, instalando o Django nele, migrando o banco de dados
 - cometer um erro no "path" (caminho) do virtualenv na guia web -- haverá geralmente uma pequena mensagem de erro vermelha lá, se há um problema.
-- Você usou a mesma versão do Python para seu virtualenv e para sua app web? Ambas devem ser 3.5. 
+- Você usou a mesma versão do Python para seu virtualenv e para sua app web? Ambas devem ser 3.5.
 
 Existem também algumas [dicas gerais de debugging no wiki da PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 

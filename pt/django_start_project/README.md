@@ -1,7 +1,7 @@
 # Seu primeiro projeto Django!
 
 > Parte deste capítulo é baseado nos tutoriais do Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Parte deste capítulo é baseado no [django-marcador tutorial](http://django-marcador.keimlink.de/) licenciado sobre Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
 
  Nós vamos criar um blog simples!
@@ -22,7 +22,7 @@ No seu console Mac OS X ou Linux, você deve executar o seguinte comando. **Não
 ```
 > O ponto `.` é crucial porque ele informa ao script para instalar o Django no seu diretório atual (para o qual o ponto `.` é uma referência abreviada).
 
- > **Nota** Durante a digitação do comando acima, lembre-se que você apenas digita a parte que começa com `django-admin`. 
+ > **Nota** Durante a digitação do comando acima, lembre-se que você apenas digita a parte que começa com `django-admin`.
 A parte `(myvenv) ~/djangogirls$` mostrada aqui é apenas um exemplo de prompt que está convidando você a digitar algo em sua linha de comando.
 
 <!--endsec-->
@@ -77,7 +77,7 @@ TIME_ZONE = 'America/Sao_Paulo'
 
 Modifique "America/Sao_Paulo", conforme o caso
 
-Nós também precisaramos adicionar um caminho para arquivos estáticos (nós vamos descobrir tudo sobre arquivos estáticos e CSS mais tarde no tutorial). Desça até o *final* do arquivo e logo abaixo da entrada `STATIC_URL`, adicione um novo um chamado `STATIC_ROOT`:
+Nós também precisaremos adicionar um caminho para arquivos estáticos (nós vamos descobrir tudo sobre arquivos estáticos e CSS mais tarde no tutorial). Desça até o *final* do arquivo e logo abaixo da entrada `STATIC_URL`, adicione um novo um chamado `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
