@@ -79,7 +79,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-E finalmente nós salvamos nossas alterações, Vá para o seu console e execute estes comandos:
+E finalmente nós salvamos nossas alterações, vá para o seu console e execute estes comandos:
 
 {% filename %}command-line{% endfilename %}
 ```
