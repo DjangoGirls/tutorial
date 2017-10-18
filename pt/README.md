@@ -10,7 +10,7 @@
 
 Este tutorial foi traduzido do Inglês para o Português por um grupo incrível de voluntários. 
 
-Um agradecimento especial vai para Special thanks for help goes out to:
+Um agradecimento especial vai para:
 
 * Adailton do Nascimento 
 * Adam Victor Nazareth Brandizzi 
