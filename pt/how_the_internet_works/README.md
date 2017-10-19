@@ -20,7 +20,7 @@ Parece uma bagunça, não é? Na verdade é uma rede de máquinas conectadas (os
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não? Mas, obviamente, não é possível ter um cabo que ligue todas as todas máquinas conectas na internet. Logo, para chegar em uma máquina (por exemplo aquela onde https://djangogirls.org está salva), nós precisamos passar uma requisição através de muitas e muitas máquinas diferentes.
+Fascinante, não? Mas, obviamente, não é possível ter um cabo que ligue todas as máquinas conectas na internet. Logo, para chegar em uma máquina (por exemplo aquela onde https://djangogirls.org está salva), nós precisamos passar uma requisição através de muitas e muitas máquinas diferentes.
 
 O que parece com isso:
 
@@ -40,6 +40,6 @@ Quando você envia uma carta, ela precisa ter certas características para ser e
 
 Então, basicamente, quando você tem um site, você precisa ter um *servidor* (máquina) onde ele fica hospedado. O *servidor* está à espera de quaisquer *requisições* recebidas (cartas que solicitam ao servidor o envio do seu site) e ele envia de volta seu site (em outra carta).
 
-Como este é um tutorial de Django você vai perguntar o que o Django faz. Quando você envia uma resposta nem sempre você quer enviar a mesma coisa para todo mundo. Será muito melhor se suas cartas forem personalizadas, especial para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas :).
+Como este é um tutorial de Django, você vai perguntar o que o Django faz. Quando você envia uma resposta, nem sempre você quer enviar a mesma coisa para todo mundo. Será muito melhor se suas cartas forem personalizadas, especialmente para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas. :)
 
 Chega de falar, é hora de criar!
