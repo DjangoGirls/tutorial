@@ -1,6 +1,6 @@
 # ¿Qué sigue?
 
-¡Date muchas felicitaciones! **¡Eres increíble!**. ¡Estamos orgullosos! <3
+¡Date muchas felicitaciones! **¡Eres increíble!** ¡Estamos orgullosas! <3
 
 ### ¿Qué hacer ahora?
 
@@ -15,7 +15,7 @@ Después de eso, asegúrate de:
 
 ### ¿Me puedes recomendar recursos adicionales?
 
-¡Sí! En primer lugar, sigue adelante y prueba nuestro libro llamado [Django Girls Tutorial: Extensiones][3].
+¡Sí! En primer lugar, sigue adelante y prueba nuestro otro libro llamado [Tutorial de Django Girls: Extensiones][3].
 
  [3]: https://tutorial-extensions.djangogirls.org
 
@@ -28,13 +28,13 @@ Más adelante, puedes intentar los recursos listados a continuación. ¡Son todo
 - [Django Carrots tutorial][8] 
 - [Learn Python The Hard Way book][9] 
 - [Getting Started With Django video lessons][10] 
-- [Two Scoops of Django: Best Practices for Django book][11]
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book][11]
 
- [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
+ [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
  [5]: http://newcoder.io/tutorials/
  [6]: https://www.codecademy.com/en/tracks/python
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
  [10]: http://www.gettingstartedwithdjango.com/
- [11]: https://twoscoopspress.org/products/two-scoops-of-django-1-6
+ [11]: https://www.twoscoopspress.com/products/two-scoops-of-django-1-11
