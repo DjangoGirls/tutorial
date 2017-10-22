@@ -406,7 +406,7 @@
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
     
 
 在这里你看到就像在这表达式中，Python 是不能比较数字 （`int`） 和字符串 （`str`）。 相反，它显示一个 **TypeError**，并告诉我们两个类型不能相互比较。

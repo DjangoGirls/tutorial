@@ -443,7 +443,7 @@ Už ste počula výraz "porovnávať hrušky s jablkami"? Skúsme pythonský ekv
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Tu vidíš, že tak ako nevieme porovnávať hrušky s jablkami, ani Python neviem porovnať číslo (`int`) s reťazcom (`str`). Namiesto toho vypíše chybu **TypeError** a povie nám, ktoré dva typy sa nedajú porovnať.

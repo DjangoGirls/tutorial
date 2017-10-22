@@ -397,7 +397,7 @@ Puedes darle a Python todos los números para comparar que quieras, y siempre te
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
     
 
 Aquí verás que al igual que en la expresión, Python no es capaz de comparar un número (`int`) y un string (`str`). En cambio, muestra un **TypeError** y nos dice que los dos tipos no se pueden comparar.
