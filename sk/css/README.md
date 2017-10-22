@@ -45,7 +45,8 @@ To urobíme tak, že vo vnútri našej aplikácie blog vytvoríme adresár s ná
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```
 

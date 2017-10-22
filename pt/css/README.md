@@ -43,7 +43,8 @@ Fazemos isso através da criação de uma pasta chamada `static` dentro do aplic
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 
 

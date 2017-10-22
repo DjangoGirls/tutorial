@@ -47,7 +47,8 @@ Django已经知道到何处找到内建“admin”应用的静态文件。现在
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 ```
 

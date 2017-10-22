@@ -50,7 +50,8 @@ CSS(Cascading Style Sheets)는 HTML와 같이 마크업언어(Markup Language)�
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 ```
 
