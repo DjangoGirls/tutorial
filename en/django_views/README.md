@@ -21,12 +21,12 @@ Not too much stuff here yet.
 
 Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-The simplest *view* can look like this:
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_list(request):
-    return render(request, 'blog/post_list.html', {})
+    return render(request, 'blog/post_list.html')
 ```
 
 As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
