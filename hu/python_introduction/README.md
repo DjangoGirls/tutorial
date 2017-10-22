@@ -410,7 +410,7 @@ Hallottad már azt a kifejezést hogy "almákat narancsokkal összehasonlítani"
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
     
 
 Láthatod, hogy ugyanúgy, mint a kifejezéseknél, a Python nem tudja összehasonlítani a számot (`int`) a stringgel (`str`). Ehelyett **TypeError** típusú hibát dob, azaz megmondja, hogy két különböző típust nem lehet egymással összehasonlítani.

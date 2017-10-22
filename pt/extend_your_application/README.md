@@ -43,11 +43,11 @@ Agora quando formos para: http://127.0.0.1:8000/ teremos um erro (como esperado,
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Criando a URL para detalhe da postagem
 
 Vamos criar a URL em `urls.py` para a nossa *view* `post_detail`!
 
-Nós queremos que nosso primerio detalhe de postagem seja exibido através dessa **URL**: http://127.0.0.1:8000/post/1/
+Nós queremos que nosso primeiro detalhe de postagem seja exibido através dessa **URL**: http://127.0.0.1:8000/post/1/
 
 Vamos criar uma URL no arquivo `blog/urls.py` para direcionar o Django para uma *view* de nome `post_detail`, que irá exibir uma postagem de blog completa. Adicione a linha `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` ao arquivo `blog/urls.py`. O arquivo deve ficar dessa forma:
 
@@ -63,7 +63,7 @@ urlpatterns = [
 
 O trecho ``^post/(?P<pk>\d+)/$`` parece assustador, mas não se preocupe – nós iremos explicar ele para você:
  - ele começa com `^` novamente - "o início".
-- `post/` apenas significa que após o início, a URL deve ter a palavra __post__ e um __/__. Até aqui, tudo bem. 
+- `post/` apenas significa que após o início, a URL deve ter a palavra __post__ e um __/__. Até aqui, tudo bem.
 - `(?P<pk>\d+)` - essa parte é mais complicada. Isso significa que o Django vai pegar tudo que você colocar aqui e transferir para uma view através de uma variável chamada `pk`. `\d` também nos diz que só pode ser um número, não uma letra (tudo entre 0 e 9). `+` significa que precisa existir um ou mais dígitos. Então, algo como `http://127.0.0.1:8000/post//`, não é válido, mas `http://127.0.0.1:8000/post/1234567890/` é perfeitamente ok!
 - `/` - então precisamos de um __/__ outra vez.
 - `$` - "o fim"!
@@ -78,7 +78,7 @@ OK, nós adicionamos um novo padrão de URL ao `blog/urls.py`! Vamos atualizar a
 
 Você se lembra qual é o próximo passo? Claro: adicionar uma view!
 
-## Adicioando a view de detalhe da postagem
+## Adicionando a view de detalhe da postagem
 
 Desta vez a nossa *view* recebe um parâmetro extra, `pk`. Nossa *view* precisa pegá-la, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Observe que precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é errado e resultará em um erro!
 

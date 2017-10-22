@@ -8,15 +8,15 @@
 
 ## Translation
 
-This tutorial has been translated from English to Portuguese by a group of awesome volunteers. 
+Este tutorial foi traduzido do Inglês para o Português por um grupo incrível de voluntários. 
 
-Special thanks for help goes out to:
+Um agradecimento especial vai para:
 
 * Adailton do Nascimento 
 * Adam Victor Nazareth Brandizzi 
-* Antonio Luis 
-* Annanda Sousa 
 * Adjamilton Junior 
+* Annanda Sousa 
+* Antonio Luis 
 * Bernardo Fontes 
 * Camilla Achutti
 * Carla Suarez
@@ -29,28 +29,30 @@ Special thanks for help goes out to:
 * ffabiorj 
 * Gabriela Cavalcante da Silva 
 * Herbert Fortes
-* Leandro Silva Araujo 
-* Lucas Magnum 
-* 1pedro 
-* Joao Luiz Lorencetti  
-* Katyanna Moura 
-* Kleber C Pinheiro 
-* Leandro Barbosa 
-* Leonardo Alves dos Santos 
+* Jéssica Paz
+* Joao Luiz Lorencetti
+* Katyanna Moura
+* Kleber C Pinheiro
+* Leandro Barbosa
+* Leandro Silva Araujo
+* Leonardo Alves dos Santos
+* Lucas Magnum
 * Marcel Ribeiro Dantas 
-* joepreludian 
-* Rafael Biagioni de Fazio 
 * Pablo Palacios 
 * Paulo Alem 
-* Raony Guimares Correo do Carmo Lisboa Cardenas 
-* RSiP22
-* Vivian Macedo
-* Willie Lawrence 
+* 1pedro
+* joepreludian 
+* Rafael Biagioni de Fazio 
+* Raony Guimares Correo do Carmo Lisboa Cardenas
 * Ricardo Manhães Savii
-Wow! <3 <3 
+* RSiP22
+* Tânia Andrea
+* Vivian Macedo
+* Willie Lawrence
+
+Uau! <3 <3 
 
 ## Introdução
-
 
 Você já sentiu como se o mundo fosse cada vez mais tecnológico e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até mesmo para você tentar fazer alguma coisa sozinha?
 

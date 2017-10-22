@@ -46,7 +46,8 @@ Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak y
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```    
 

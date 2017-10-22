@@ -447,7 +447,7 @@ Die Redewendung "Äpfel mit Birnen zu vergleichen" hast du bestimmt schon einmal
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Unterschiedliche Dinge, hier die Datentypen Zahlen (`int`) und Strings (`str`), lassen sich auch in Python nicht miteinander vergleichen. In solch einem Fall liefert uns Python einen **TypeError** und sagt uns, dass diese zwei Datentypen nicht miteinander verglichen werden können.

@@ -33,7 +33,7 @@ Já parece mais bonito!
 ## Arquivos estáticos no Django
 
 Finalmente nós iremos ver mais de perto nessas coisas que chamamos de __arquivos estáticos__. Arquivos estáticos são todas as suas imagens e arquivos CSS -- arquivos que não são dinâmicos, então seu conteúdo não depende do contexto da requisição e será o mesmo para todos os usuários.
- 
+
 ### Onde colocar os arquivos estáticos para Django
 
 Django já sabe onde encontrar os arquivos estáticos para o built-in "admin" app. Agora só precisamos adicionar alguns arquivos estáticos para nosso próprio app, `blog`.
@@ -43,9 +43,10 @@ Fazemos isso através da criação de uma pasta chamada `static` dentro do aplic
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
-    
+
 
 Django encontrará automaticamente todas as pastas chamadas "static" dentro de qualquer uma das pastas dos seus apps, e será capaz de usar seu conteúdo como arquivos estáticos.
 
@@ -58,7 +59,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo para sua p�
          └─── static
               └─── css
                    └─── blog.css
-    
+
 
 Hora de escrever CSS! Abra o arquivo `static/css/blog.css` no seu editor de código.
 
@@ -99,7 +100,7 @@ Estamos apenas carregando arquivos estáticos aqui :). Agora, entre as tags `<he
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-O navegador lê os arquvios na ordem que eles são informados, então nós temos que nos certificar que esse é o lugar certo. Senão, o código em nosso arquivo pode sobreescrever o código nos arquivos do Bootstrap. Só dissemos ao nosso template onde se encontra nosso arquivo CSS.
+O navegador lê os arquivos na ordem que eles são informados, então nós temos que nos certificar que esse é o lugar certo. Senão, o código em nosso arquivo pode sobrescrever o código nos arquivos do Bootstrap. Só dissemos ao nosso template onde se encontra nosso arquivo CSS.
 
 Agora, seu arquivo deve ficar assim:
 
@@ -172,7 +173,7 @@ h1 a {
 
 Incrível!
 
-Como mencionado acima, CSS usa o conceito de classes, que basicamente permite que você nomeie parte do código HTML e aplique estilos apenas à esta parte, sem afetar as outras. É super útil se você tiver duas divs, mas eles estão fazendo algo muito diferente (como o seu cabeçalho e seu post). Uma classe pode ajudar você a fazer com que eles tenhm um visual diferente.
+Como mencionado acima, CSS usa o conceito de classes, que basicamente permite que você nomeie parte do código HTML e aplique estilos apenas à esta parte, sem afetar as outras. É super útil se você tiver duas divs, mas eles estão fazendo algo muito diferente (como o seu cabeçalho e seu post). Uma classe pode ajudar você a fazer com que eles tenham um visual diferente.
 
 Vá em frente e o nomeie algumas partes do código HTML. Adicione uma classe chamada de `page-header` para o `div` que contém o cabeçalho, assim:
 
@@ -288,7 +289,7 @@ Salve esses arquivos e atualize seu site.
 Uhuu! Ficou incrível, né? Olhe para o código que nós acabamos de colar para encontrar os lugares aonde nós adicionamos classes no HTML e as usamos no CSS. Aonde você faria a mudança para que a data ficasse com a cor turquesa ?
 
 Não tenha medo de brincar com esse CSS um pouco e tente mudar algumas coisas. Brincar com o CSS pode ajudar você a entender as
-diferentes coisas que estão sendo feitas. Se você bagunçar tudo, não se preocupe - vocÊ sempre pode voltar atrás!
+diferentes coisas que estão sendo feitas. Se você bagunçar tudo, não se preocupe - você sempre pode voltar atrás!
 
 Nós realmente recomendamos que faça esse curso on-line [Codeacademy HTML & CSS Course](https://www.codecademy.com/tracks/web). Ele pode ajudar você a aprender tudo sobre como tornar seus sites mais bonitos com CSS.
 

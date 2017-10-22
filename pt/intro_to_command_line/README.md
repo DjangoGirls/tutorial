@@ -2,7 +2,7 @@
 
 É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos! :)
 
-**Deixe-nos apresentá-lo a sua primeira nova amiga: a linha de comando!**
+**Deixe-nos apresentá-la a sua primeira nova amiga: a linha de comando!**
 
 As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas, na verdade, é apenas um prompt esperando por comandos seus.
 
@@ -29,15 +29,15 @@ Applications → Utilities → Terminal.
 ### Linux
 
 <!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
-Provavelmente você vai achar em Applications → Accessories → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google :)
+Provavelmente você vai achar em Applications → Accessories → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google. :)
 <!--endsec-->
 
 ## Prompt
 
-Agora você deve agora estar vendo uma janela branca ou preta que está à espera de seus comandos.
+Agora você deve estar vendo uma janela branca ou preta que está à espera de seus comandos.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
-Se você estiver em Mac ou num Linux, você provavelmente verá um `$`, como este:
+Se você estiver num Mac ou Linux, você provavelmente verá um `$`, como este:
 {% filename %}command-line{% endfilename %}
 ```
 $
@@ -53,15 +53,15 @@ No Windows, é um sinal de `>`, como este:
 >
 ```
 <!--endsec-->
-    
+
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você :)
 
-> Apenas uma pequena nota: no seu caso, talvez exista algo como `C:\Users\seunome>` ou `SeuNome-MacBook Air: ~ seunome$` antes do sinal do prompt isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
+> Apenas uma pequena nota: no seu caso, talvez exista algo como `C:\Users\seunome>` ou `SeuNome-MacBook Air: ~ seunome$` antes do sinal do prompt e isto estará 100% correto. Neste tutorial nós apenas simplificaremos ele para o mínimo.
 
-A parte até o e incluíndo o `$` ou o `>` é chamada  de prompt de linha de comando, ou para abreviar, prompt.  Ele está a esperando você digitar alguma coisa.
+A parte que tem o `$` ou o `>` é chamada de prompt de linha de comando, ou para abreviar, prompt. Ele estará esperando você digitar alguma coisa.
 
-## Seu primeiro comando (YAY!)
+## Seu primeiro comando (OBA!!)
 
 Vamos começar com algo simples. Digite o seguinte comando:
 
@@ -87,7 +87,7 @@ $ whoami
 seunome
 ```
 
-Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é?:)
+Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é? :)
 =======
 <!--endsec-->
 
@@ -121,7 +121,7 @@ $ pwd
 /Users/seunome
 ```
 
-> Nota: 'pwd' quer dizer 'print working directory' (exiba diretório que estamos trabalhando).
+> Nota: 'pwd' quer dizer 'print working directory' (exiba o diretório que estamos trabalhando).
 
 <!--endsec-->
 
@@ -138,7 +138,7 @@ C:\Users\seunome
 
 <!--endsec-->
 
-Provavelmente você vai ver algo parecido na sua máquina. Geralmente, um vez que você abre a linha de comando você já começa na pasta Home.
+Provavelmente você vai ver algo parecido na sua máquina. Geralmente, uma vez que você abre a linha de comando, você já começa na pasta Home.
 
 
 * * *
@@ -240,8 +240,8 @@ $ mkdir djangogirls
 > mkdir djangogirls
 ```
 <!--endsec-->
-    
-Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ela está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente :)
+
+Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Você pode verificar se ela está lá, só de olhar na sua área de trabalho ou executando um comando `ls` (Mac ou Linux) ou `dir` (Windows)! Experimente. :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
@@ -249,7 +249,7 @@ Este comando vai criar uma pasta com o nome `djangogirls` no nosso desktop. Voc�
 
 ### Exercite-se!
 
-Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
+Um pequeno desafio para você: dentro da pasta `djangogirls` que você acabou de criar, crie uma outra pasta chamada `teste`. Use os comandos `cd` e `mkdir`.
 
 #### Solução:
 
@@ -258,9 +258,9 @@ Um pequeno desafio para você: dentro da pasta `djangogirls` que voce acabou de 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd djangogirls
-$ mkdir test
+$ mkdir teste
 $ ls
-test
+teste
 ```
 <!--endsec-->
 
@@ -327,7 +327,7 @@ C:\Users\seunome\Desktop
 
 Agora é hora de excluir o diretório `djangogirls`.
 
-> **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irrecuperável, significando *Arquivos excluídos vão embora para sempre*! Então, tenha cuidado com este comando.
+> **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irrecuperável, isto significa que *Arquivos excluídos vão embora para sempre*! Então, tenha cuidado com este comando.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -367,7 +367,7 @@ $ ls
 
 ### Saindo
 
-Por enquanto é isso! Agora você fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo? :)
+Por enquanto é isso! Agora você pode fechar a linha de comando com segurança. Vamos fazer do jeito hacker, certo? :)
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -395,14 +395,14 @@ Aqui vai uma lista de alguns comandos úteis:
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                     | Exemplo                                           |
 | ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
 | exit              | exit                     | Fecha a janela                | **exit**                                          |
-| cd                | cd                       | Muda a pasta                  | **cd test**                                       |
+| cd                | cd                       | Muda a pasta                  | **cd teste**                                       |
 | dir               | ls                       | Lista as pastas e os arquivos | **dir**                                           |
-| copy              | cp                       | Copia um arquivo              | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | Move um arquivo               | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | Cria uma pasta                | **mkdir testdirectory**                           |
-| del               | rm                       | Deleta uma pasta e/ou arquivo | **del c:\test\test.txt**                        |
+| copy              | cp                       | Copia um arquivo              | **copy c:\teste\teste.txt c:\windows\teste.txt** |
+| move              | mv                       | Move um arquivo               | **move c:\teste\teste.txt c:\windows\teste.txt** |
+| mkdir             | mkdir                    | Cria uma pasta                | **mkdir pastateste**                           |
+| del               | rm                       | Deleta uma pasta e/ou arquivo | **del c:\teste\teste.txt**                        |
 
-Estes são apenas alguns dos poucos comandos que você pode executar em sua linha de comando, mas você não vai usar mais nada do que isto hoje.
+Estes são apenas alguns dos poucos comandos que você pode executar em sua linha de comando, mas você não vai usar nada além disso hoje.
 
 Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 

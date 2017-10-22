@@ -46,7 +46,8 @@ Django уже знает, где искать статические файлы 
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```
 
