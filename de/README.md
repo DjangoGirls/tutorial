@@ -1,43 +1,44 @@
-# Django Girls Tutorial
+# Django views – time to create!
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+Time to get rid of the bug we created in the last chapter! :)
 
-> Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz findest du auf http://creativecommons.org/licenses/by-sa/4.0/
+In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-## Einleitung
+Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Datei `blog/views.py` hinzu.
 
-Hattest du auch schon einmal das Gefühl, dass Technik in der Welt immer wichtiger wird und du da nicht ganz mithalten kannst? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Hast du dir irgendwann schon einmal gedacht, dass die Computerwelt zu kompliziert für dich ist, so dass du noch nicht einmal den Versuch unternommen hast, dort selbst etwas zu tun?
+## blog/views.py
 
-Dann haben wir hier gute Neuigkeiten für dich! Programmieren ist nicht so schwer, wie du denkst und wir zeigen dir hier, wie viel Spaß es machen kann.
+OK, wir öffnen nun diese Datei und schauen was darin steht:
 
-Dieses Tutorial wird dich nicht auf zauberhafte Weise in eine Programmiererin verwandeln. Wenn du gut darin sein willst, brauchst du Monate oder sogar Jahre des Lernens und Übens. Aber wir wollen dir zeigen, dass Programmieren oder Webseitenerstellen nicht so kompliziert ist, wie es scheint. Wir versuchen, dir auf einfache Art verschiedene, kleine Teile zu zeigen, so dass du davon nicht eingeschüchtert wirst.
+{% filename %}blog/views.py{% endfilename %}
 
-Wir hoffen, dass du danach diese Technik und Technologien so sehr mögen wirst wie wir!
+```python
+from django.shortcuts import render
 
-## Was lernst du in diesem Tutorial?
+# Create your views here.
+```
 
-Wenn du mit dem Tutorial fertig bist, hast du eine einfache, aber funktionierende Webanwendung: deinen eigenen Blog. Wir zeigen dir, wie man ihn online stellt, andere können dein Werk also sehen!
+Not too much stuff here yet.
 
-Es wird (in etwa) so aussehen:
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-![Abbildung 0.1](images/application.png)
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
-> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
+{% filename %}blog/views.py{% endfilename %}
 
-Okay, [lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html')
+```
 
-## Mit dem Tutorial zu Hause arbeiten
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Na klar ist es aufregend, bei einem Django Girls Workshop dabei zu sein, aber es ist auch verständlich, dass das nicht immer klappt. Deswegen möchten wir es dir erleichtern, das Tutorial auch von Hause aus zu erarbeiten. Dafür erstellen wir Videos zu einzelnen Themen, die dir helfen können, die Inhalte besser zu verstehen. Wir arbeiten noch daran, aber einige sind schon verfügbar und du kannst sie dir gern auf dem "[Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)"-YouTube-Channel anschauen.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-## Über uns und wie du mithelfen kannst
+Another error! Read what's going on now:
 
-Dieses Tutorial wird von [DjangoGirls](http://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+![Error](images/error.png)
 
-## Möchtest du uns helfen, das Tutorial in andere Sprachen zu übersetzen?
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-Zur Zeit haben wir die Übersetzungen auf der crowdin.com Plattform:
-
-https://crowdin.com/project/django-girls-tutorial
-
-Sollte deine Sprache nicht aufgeführt sein, dann öffne ein neues [Issue](https://github.com/DjangoGirls/tutorial/issues/new), mit der betreffenden Sprache, dann können wir sie hinzufügen.
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
