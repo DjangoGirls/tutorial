@@ -1,51 +1,44 @@
-# Django Girls Tutorial
+# Django views – time to create!
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Time to get rid of the bug we created in the last chapter! :)
 
-> Ez az anyag Creative Commons Attribution-ShareAlike 4.0 International License jogvédelme alatt áll. A licenc megtekintéséhez látogass el ide: https://creativecommons.org/licenses/by-sa/4.0/
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-## Fordítás
-A tutorial magyar fordítását egy csapat lelkes önkéntes készítette el: Czapári Dóri, Hanna Kollo, Erő Julcsi, Bónis Balázs, Kádár Szilvi, Szelle Erika, Téglássy Anna, Szabó Adrienn, Nádudvari György. Köszönjük nekik! <3
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
-## Bevezetés
+## blog/views.py
 
-Érezted már úgy hogy a világ egyre inkább a technológiáról szól, és te valahogy kimaradsz belőle? Gondolkoztál már azon, hogyan kell egy weblapot létrehozni, de soha nem volt elég erőd elkezdeni? Érezted úgy, hogy a szoftveres világ túl bonyolult ahhoz, hogy egyáltalán megpróbálj valamit létrehozni benne magadtól?
+OK, let's open up this file and see what's in there:
 
-Nos, jó hírünk van számodra! A programozás egyáltalán nem olyan nehéz, mint amilyennek tűnik, és mi megmutatjuk, hogy mennyire jó móka tud lenni.
+{% filename %}blog/views.py{% endfilename %}
 
-Ez a tutorial nem fog téged egy csapásra programozóvá változtatni. Ha profi akarsz lenni benne, hónapokat vagy akár éveket kell eltöltened tanulással és gyakorlással. De meg szeretnénk mutatni, hogy a programozás, illetve a weblapkészítés nem annyira bonyolult, mint amilyennek tűnik. Megpróbáljuk minél jobban elmagyarázni a különböző részleteket, hogy ne tűnjön annyira ijesztőnek a technológia.
+```python
+from django.shortcuts import render
 
-Reméljük, veled is annyira megszerettetjük a számítógépek világát, mint amennyire mi szeretjük!
+# Create your views here.
+```
 
-## Mit fogsz a tutorial alatt megtanulni?
+Not too much stuff here yet.
 
-A tutorial befejezésével lesz egy egyszerű, működő webes alkalmazásod: a saját blogod. Megmutatjuk, hogyan kell a netre feltölteni, hogy mások is lássák az eredményt!
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-Körülbelül így fog kinézni:
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
-![Figure 0.1][2]
+{% filename %}blog/views.py{% endfilename %}
 
- [2]: images/application.png
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html')
+```
 
-> Ha egyedül dolgozol a tutorialon és nincs melletted coach, aki segíthetne, ha bármi probléma felmerül, használd a chatet, amit neked tartunk fenn: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Megkértük a segítőinket és korábbi résztvevőket, hogy legyenek fent, ahogy idejük engedi, és segítsenek másoknak a tutorialban. Kérdezz tőlük bátran!
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Oké, [kezdjük az elejénél...][3]
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
- [3]: ./how_the_internet_works/README.md
+Another error! Read what's going on now:
 
-## A tutorialról és a közreműködésről
+![Error](images/error.png)
 
-Ezt a tutorialt a [DjangoGirls][4] tartja fenn. Ha bármilyen hibát találsz benne, vagy frissíteni szeretnéd, kérlek kövesd a [közreműködési útmutatót][5].
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
-
-## Szeretnél segíteni lefordítani a tutorialt más nyelvekre?
-
-A fordításokat jelenleg a crowdin.com platformon végezzük:
-
-https://crowdin.com/project/django-girls-tutorial
-
-Ha a te nyelved nem szerepel a crowdin listán, kérlek [hozz létre egy új issue-t][6], amely megjelöli a nyelvet, hogy hozzáadhassuk.
-
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
