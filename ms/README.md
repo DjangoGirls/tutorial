@@ -1,303 +1,429 @@
-# CSS – make it pretty!
+# Introduction to the command-line interface
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-## What is CSS?
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+**Let us introduce you to your first new friend: the command line!**
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-## Let's use Bootstrap!
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+## What is the command line?
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## Install Bootstrap
+## Open the command-line interface
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+To start some experiments we need to open our command-line interface first.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-```
+Go to Start menu → Windows System → Command Prompt.
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-![Figure 14.1](images/bootstrap1.png)
+<!--endsec-->
 
-Looking nicer already!
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-## Static files in Django
+Go to Applications → Utilities → Terminal.
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+<!--endsec-->
 
-### Where to put static files for Django
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
-We do that by creating a folder called `static` inside the blog app:
+<!--endsec-->
 
-    djangogirls
-    ├── blog
-    │   ├── migrations
-    │   └── static
-    └── mysite
+## Prompt
+
+You now should see a white or black window that is waiting for your commands.
+
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+{% filename %}command-line{% endfilename %}
+
+    $
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+<!--endsec-->
 
-## Your first CSS file!
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+On Windows, it's a `>` sign, like this:
 
-    djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
+{% filename %}command-line{% endfilename %}
+
+    >
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+<!--endsec-->
 
-We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-```css
-h1 a {
-    color: #FCA205;
-}
-```
+## Your first command (YAY!)
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+Let's start with something simple. Type this command:
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-```html
-<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```
+{% filename %}command-line{% endfilename %}
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+    $ whoami
+    
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+<!--endsec-->
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-```html
-{% load staticfiles %}
-```
+{% filename %}command-line{% endfilename %}
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+    > whoami
+    
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--endsec-->
 
-```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```
+And then hit `enter`. This is our result:
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files. We just told our template where our CSS file is located.
+{% filename %}command-line{% endfilename %}
 
-Your file should now look like this:
+    $ whoami
+    olasitarska
+    
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
-```
+## Basics
 
-OK, save the file and refresh the site!
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-![Figure 14.2](images/color2.png)
+### Current directory
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-```css
-body {
-    padding-left: 15px;
-}
-```
+{% filename %}command-line{% endfilename %}
 
-Add that to your CSS, save the file and see how it works!
+    $ pwd
+    /Users/olasitarska
+    
 
-![Figure 14.3](images/margin2.png)
+> Note: 'pwd' stands for 'print working directory'.
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+<!--endsec-->
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
-```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```
+{% filename %}command-line{% endfilename %}
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+    > cd
+    C:\Users\olasitarska
+    
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<!--endsec-->
 
-```css
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
-}
-```
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
-![Figure 14.3](images/font.png)
+* * *
 
-Great!
+### List files and directories
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+So what's in it? It'd be cool to find out. Let's see:
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-```
-
-And now add a class `post` to your `div` containing a blog post.
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaksbr }}</p>
-</div>
-```
+{% filename %}command-line{% endfilename %}
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+    $ ls
+    Applications
+    Desktop
+    Downloads
+    Music
+    ...
+    
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<!--endsec-->
 
-```css
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
+{% filename %}command-line{% endfilename %}
 
-.content {
-    margin-left: 40px;
-}
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
+    ...
+    
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
-.date {
-    color: #828282;
-}
+* * *
 
-.save {
-    float: right;
-}
+### Change current directory
 
-.post-form textarea, .post-form input {
-    width: 100%;
-}
+Now, let's go to our Desktop directory:
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-.post {
-    margin-bottom: 70px;
-}
+{% filename %}command-line{% endfilename %}
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
-```
+    $ cd Desktop
+    
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+<!--endsec-->
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-```html
-{% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-```
+{% filename %}command-line{% endfilename %}
 
-in the `blog/templates/blog/post_list.html` with this:
+    > cd Desktop
+    
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--endsec-->
 
-```html
-<div class="content container">
-    <div class="row">
-        <div class="col-md-8">
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-```
+Check if it's really changed:
 
-Save those files and refresh your website.
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-![Figure 14.4](images/final.png)
+{% filename %}command-line{% endfilename %}
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+    $ pwd
+    /Users/olasitarska/Desktop
+    
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+<!--endsec-->
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-Ready for the next chapter?! :)
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Here it is!
+
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+
+* * *
+
+### Create directory
+
+How about creating a practice directory on your desktop? You can do it this way:
+
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > mkdir practice
+    
+
+<!--endsec-->
+
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+* * *
+
+### Exercise!
+
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
+    $ mkdir test
+    $ ls
+    test
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
+    
+
+<!--endsec-->
+
+Congrats! :)
+
+* * *
+
+### Clean up
+
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ..
+    
+
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd ..
+    
+
+<!--endsec-->
+
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Now time to delete the `practice` directory:
+
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
+    
+
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+    
+
+<!--endsec-->
+
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ exit
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > exit
+    
+
+<!--endsec-->
+
+Cool, huh? :)
+
+## Summary
+
+Here is a summary of some useful commands:
+
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+
+## Ready?
+
+Let's dive into Python!
