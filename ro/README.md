@@ -1,51 +1,106 @@
-# Django Girls Tutorial
+# Django templates
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+## What are template tags?
 
-## Welcome
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+## Display post list template
 
-## Introduction
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+```html
+{{ posts }}
+```
 
-We hope that we'll be able to make you love technology as much as we do!
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-## What will you learn during the tutorial?
+![Figure 13.1](images/step1.png)
 
-Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
+As you can see, all we've got is this:
 
-It will (more or less) look like this:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-![Figure 0.1](images/application.png)
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-## Following the tutorial at home
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Try this in your template.
 
-In every chapter already covered, there is a link that points to the correct video.
+![Figure 13.2](images/step2.png)
 
-## About and contributing
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-## Would you like to help us translate the tutorial to other languages?
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-Currently, translations are being kept on crowdin.com platform at:
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
 
-https://crowdin.com/project/django-girls-tutorial
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+![Figure 13.3](images/step3.png)
+
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+
+## One more thing
+
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+
+* First, push your code to Github
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
