@@ -1,429 +1,147 @@
-# Introduction to the command-line interface
+# Template extending
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-**Let us introduce you to your first new friend: the command line!**
+## Create a base template
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+A base template is the most basic template that you extend on every page of your website.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+Let's create a `base.html` file in `blog/templates/blog/`:
 
-## What is the command line?
-
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
-
-## Open the command-line interface
-
-To start some experiments we need to open our command-line interface first.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
-
-<!--endsec-->
-
-## Prompt
-
-You now should see a white or black window that is waiting for your commands.
-
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
-
-If you're on Mac or Linux, you probably see `$`, just like this:
-
-{% filename %}command-line{% endfilename %}
-
-    $
+    blog
+    └───templates
+        └───blog
+                base.html
+                post_list.html
     
 
-<!--endsec-->
-
-<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
-
-On Windows, it's a `>` sign, like this:
-
-{% filename %}command-line{% endfilename %}
-
-    >
-    
-
-<!--endsec-->
-
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
-
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
-
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
-
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
-
-## Your first command (YAY!)
-
-Let's start with something simple. Type this command:
-
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ whoami
-    
-
-<!--endsec-->
-
-<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > whoami
-    
-
-<!--endsec-->
-
-And then hit `enter`. This is our result:
-
-{% filename %}command-line{% endfilename %}
-
-    $ whoami
-    olasitarska
-    
-
-As you can see, the computer has just printed your username. Neat, huh? :)
-
-> Try to type each command; do not copy-paste. You'll remember more this way!
-
-## Basics
-
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
-
-### Current directory
-
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
-
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ pwd
-    /Users/olasitarska
-    
-
-> Note: 'pwd' stands for 'print working directory'.
-
-<!--endsec-->
-
-<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska
-    
-
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
-
-<!--endsec-->
-
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
-
-* * *
-
-### List files and directories
-
-So what's in it? It'd be cool to find out. Let's see:
-
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
-    
-
-<!--endsec-->
-
-<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
-    
-
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
-
-* * *
-
-### Change current directory
-
-Now, let's go to our Desktop directory:
-
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd Desktop
-    
-
-<!--endsec-->
-
-Check if it's really changed:
-
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ pwd
-    /Users/olasitarska/Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska\Desktop
-    
-
-<!--endsec-->
-
-Here it is!
-
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
-
-* * *
-
-### Create directory
-
-How about creating a practice directory on your desktop? You can do it this way:
-
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ mkdir practice
-    
-
-<!--endsec-->
-
-<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > mkdir practice
-    
-
-<!--endsec-->
-
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
-
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
-
-* * *
-
-### Exercise!
-
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
-
-#### Solution:
-
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
-    
-
-<!--endsec-->
-
-<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
-    
-
-<!--endsec-->
-
-Congrats! :)
-
-* * *
-
-### Clean up
-
-We don't want to leave a mess, so let's remove everything we did until that point.
-
-First, we need to get back to Desktop:
-
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd ..
-    
-
-<!--endsec-->
-
-<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd ..
-    
-
-<!--endsec-->
-
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
-
-Check where you are:
-
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ pwd
-    /Users/olasitarska/Desktop
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > cd
-    C:\Users\olasitarska\Desktop
-    
-
-<!--endsec-->
-
-Now time to delete the `practice` directory:
-
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
-
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ rm -r practice
-    
-
-<!--endsec-->
-
-<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
-    
-
-<!--endsec-->
-
-Done! To be sure it's actually deleted, let's check it:
-
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ ls
-    
-
-<!--endsec-->
-
-<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > dir
-    
-
-<!--endsec-->
-
-### Exit
-
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
-
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    $ exit
-    
-
-<!--endsec-->
-
-<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-    > exit
-    
-
-<!--endsec-->
-
-Cool, huh? :)
-
-## Summary
-
-Here is a summary of some useful commands:
-
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
-
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
-
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
-
-## Ready?
-
-Let's dive into Python!
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+
+```html
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+```
+
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+
+```html
+<body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+```
+
+{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+
+```html
+{% block content %}
+{% endblock %}
+```
+
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
+
+We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
+
+Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
+
+That's it! Check if your website is still working properly. :)
+
+> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
