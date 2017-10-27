@@ -21,7 +21,7 @@ Download Git from [git-scm.com](https://git-scm.com/) and just follow the instru
 <!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
 ```bash
 $ sudo apt-get install git
@@ -32,7 +32,7 @@ $ sudo apt-get install git
 <!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
 ```bash
 $ sudo dnf install git
@@ -43,7 +43,7 @@ $ sudo dnf install git
 <!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
 ```bash
 $ sudo zypper install git
