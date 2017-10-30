@@ -79,7 +79,6 @@ To keep everything tidy, we will create a separate application inside our projec
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
-
 ```
 <!-- endsec -->
 
