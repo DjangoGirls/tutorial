@@ -66,10 +66,27 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
+<!--sec data-title="Create Blog app: Mac OS X or Linux" data-collapse=true ces-->
+
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
 ```
+
+<!-- endsec -->
+
+<!--sec data-title="Create Blog app: Windows" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```
+(myvenv) ~/djangogirls$ python manage.py startapp blog
+```
+
+<!-- endsec -->
+
+
+
+
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
