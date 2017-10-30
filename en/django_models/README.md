@@ -72,21 +72,16 @@ To keep everything tidy, we will create a separate application inside our projec
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
 ```
-
 <!-- endsec -->
 
 <!--sec data-title="Create Blog app: Windows" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py startapp blog
+(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+
 ```
-
 <!-- endsec -->
-
-
-
-
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
