@@ -1,60 +1,106 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 
+> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-### Cloud 9
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+<!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-{% filename %}Cloud 9{% endfilename %}
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-    yourusername:~/workspace $
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+
+1. install all Windows Updates and try to install Python 3.6 again; or
+2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+
+<!--endsec-->
+
+<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+
+<!--endsec-->
+
+<!--sec data-title="Install Python: Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+
+{% filename %}command-line{% endfilename %}
+
+    $ python3 --version
+    Python 3.6.1
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for you instructions. You can resize that window to make it a bit bigger.
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
-### Virtual Environment
+<!--endsec-->
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+<!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Type this command into your console:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    sudo apt update
-    sudo apt install python3.6-venv
+    $ sudo apt-get install python3.6
     
 
-If this still doesn't work, ask your coach for some help.
+<!--endsec-->
 
-Next, run:
+<!--sec data-title="Install Python: Fedora" data-id="python_fedora"
+data-collapse=true ces-->
 
-{% filename %}Cloud 9{% endfilename %}
+Use this command in your console:
 
-    mkdir djangogirls
-    cd djangogirls
-    python3.6 -mvenv myvenv
-    source myvenv/bin/activate
-    pip install django~=1.11.0
+{% filename %}command-line{% endfilename %}
+
+    $ sudo dnf install python3
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
 
-### Github
+<!--endsec-->
 
-Make a [Github](https://github.com) account.
+<!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
+data-collapse=true ces-->
 
-### PythonAnywhere
+Use this command in your console:
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+{% filename %}command-line{% endfilename %}
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+    $ sudo zypper install python3
+    
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+<!--endsec-->
+
+Verify the installation was successful by opening a command prompt and running the `python3` command:
+
+{% filename %}command-line{% endfilename %}
+
+    $ python3 --version
+    Python 3.6.1
+    
+
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+
+* * *
+
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
