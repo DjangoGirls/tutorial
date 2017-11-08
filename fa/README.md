@@ -1,44 +1,218 @@
-# Django views – time to create!
+# Django ORM and QuerySets
 
-Time to get rid of the bug we created in the last chapter! :)
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+## What is a QuerySet?
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-## blog/views.py
+It's easiest to learn by example. Let's try this, shall we?
 
-OK, let's open up this file and see what's in there:
+## Django shell
 
-{% filename %}blog/views.py{% endfilename %}
+Open up your local console (not on PythonAnywhere) and type this command:
 
-```python
-from django.shortcuts import render
+{% filename %}command-line{% endfilename %}
 
-# Create your views here.
-```
+    (myvenv) ~/djangogirls$ python manage.py shell
+    
 
-Not too much stuff here yet.
+The effect should be like this:
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
-
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
-
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
-def post_list(request):
-    return render(request, 'blog/post_list.html')
+(InteractiveConsole)
+>>>
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+### All objects
 
-Another error! Read what's going on now:
+Let's try to display all of our posts first. You can do that with the following command:
 
-![Error](images/error.png)
+{% filename %}command-line{% endfilename %}
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+```python
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+```
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from blog.models import Post
+```
+
+This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
+```
+
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+
+### Create object
+
+This is how you create a new Post object in database:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+
+Let's import User model first:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.contrib.auth.models import User
+```
+
+What users do we have in our database? Try this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
+
+This is the superuser we created earlier! Let's get an instance of the user now:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> me = User.objects.get(username='ola')
+```
+
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+
+Now we can finally create our post:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+Hurray! Wanna check if it worked?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
+
+There it is, one more post in the list!
+
+### Add more posts
+
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+
+### Filter objects
+
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(author=me)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
+
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
+
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Chaining QuerySets
+
+You can also combine QuerySets by **chaining** them together:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    
+
+This is really powerful and lets you write quite complex queries.
+
+Cool! You're now ready for the next part! To close the shell, type this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> exit()
+$
+```
