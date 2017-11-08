@@ -1,5 +1,5 @@
 > Ein Teil dieses Kapitels basiert auf dem Tutorial der Geek Girls Carrots (http://django.carrots.pl/).
-> 
+
 > Teile dieses Kapitels basieren auf dem [django-marcador Tutorial](http://django-marcador.keimlink.de/) lizenziert unter Creative Commons Attribution-ShareAlike 4.0 International License. Das django-marcador Tutorial von Markus Zapke-Gründemann et al. ist urheberrechtlich geschützt.
 
 ## Virtuelle Umgebung
@@ -23,6 +23,9 @@ Wir nennen die virtuelle Umgebung `myvenv`. Das Kommando dazu lautet dann:
 $ python3 -m venv myvenv
 ```
 
+<!--sec data-title="Virtuelle Umgebung: Windows" data-id="virtualenv_installation_windows"
+data-collapse=true ces-->
+
 ### Windows
 
 Um ein neues `virtualenv` zu erstellen, öffnest Du die Konsole (das kennst Du schon aus einem vorangegangenen Kapitel) und gibst `C:\Python35\python -m venv myvenv` ein. Das sieht dann so aus:
@@ -33,9 +36,14 @@ C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 
 `C:\Python35\python` ist das Verzeichnis in das Du zuvor Python installiert hast. `myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deinem neuen `virtualenv`. Du kannst auch andere Namen benutzen. Aber denk daran: nur Kleinbuchstaben, keine Leerzeichen, Akzente oder andere Sonderzeichen. Kurze Namen eignen sich gut, denn Du wirst sie oft benutzen bzw. eingeben müssen!
 
-### Linux und OS X
+<!--endsec-->
 
-Eine `virtualenv` auf Linux oder OS X anzulegen, heißt lediglich `python3 -m venv myvenv` einzugeben. Fertig. So sieht das dann aus:
+<!--sec data-title="Virtuelle Umgebung: Linux and macOS X" data-id="virtualenv_installation_linuxosx"
+data-collapse=true ces-->
+
+### Linux und macOS X
+
+Eine `virtualenv` auf Linux oder macOS X anzulegen, heißt lediglich `python3 -m venv myvenv` einzugeben. Fertig. So sieht das dann aus:
 
 ```bash
 ~/djangogirls$ python3 -m venv myvenv
@@ -54,16 +62,24 @@ Eine `virtualenv` auf Linux oder OS X anzulegen, heißt lediglich `python3 -m ve
 >~/djangogirls$ virtualenv --python=python3.4 myvenv
 >```
 
+<!--endsec-->
+
 ## Mit der virtuellen Umgebung arbeiten
 
 Die obigen Kommandos erstellen ein Verzeichnis `myvenv` (bzw. den von Dir vergebenen Namen). Es enthält unsere virtuelle Arbeitsumgebung (im Wesentlichen ein paar Verzeichnisse und Dateien).
 
+
+<!--sec data-title="Arbeiten mit der virtuellen Umgebung: Windows" data-id="virtualenv_windows"
+data-collapse=true ces-->
 #### Windows
 
 Starte deine virtuelle Umgebung, indem du eingibst:
 ```bash
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
+<!--endsec-->
+
+<!--sec data-title="Arbeiten mit der virtuellen Umgebung: Linux und macOS X" data-id="virtualenv_linuxosx" data-collapse=true ces-->
 
 #### Linux und OS X
 
@@ -80,7 +96,9 @@ Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` überei
 >~/djangogirls$ . myvenv/bin/activate
 >```
 
-Dein `virtualenv` wurde erfolgreich erstellt, wenn der Prompt der Konsole so aussieht:
+<!--endsec-->
+
+Dein `virtualenv` wurde erfolgreich erstellt, wenn die Eingabeaufforderung der Konsole so aussieht:
 
 ```bash
 (myvenv) C:\Users\Name\djangogirls>
@@ -118,12 +136,22 @@ Installing collected packages: django
 Successfully installed django-1.10.4
 ```
 
+<!--sec data-title="Django Installieren: Windows" data-id="django_err_windows"
+data-collapse=true ces-->
+
 Für Windows
 
 > Wenn du auf einem Windows-Rechner einen Fehler bekommst beim Aufruf von pip, dann prüfe, ob dein Pfad Leerzeichen, Akzente oder Sonderzeichen enthält (`C:\Users\User Name\djangogirls`). Wenn das der Fall ist, dann verschiebe es an einen anderen Ort ohne Leerzeichen, Akzente oder Sonderzeichen (empfohlen: `C:\djangogirls`). Danach versuchst du die Installation am neuen Ort noch einmal.
 
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
+data-collapse=true ces-->
+
 Für Linux
 
-> Für pip mit Ubuntu 12.04 kann es zu folgendem Fehler kommen. Ruf dann `python -m pip install -U --force-reinstall pip` auf, um die Installation von pip im virtualenv zu reparieren.
+> Für pip mit Ubuntu 12.04 kann es zu einem Fehler kommen. Ruf dann `python -m pip install -U --force-reinstall pip` auf, um die Installation von pip im virtualenv zu reparieren.
+
+<!--endsec-->
 
 Das war's! Du bist nun (endlich) bereit, deine erste Django Anwendung zu starten!
