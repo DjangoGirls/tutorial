@@ -1,128 +1,218 @@
-# Django URLs
+# Django ORM and QuerySets
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## What is a URL?
+## What is a QuerySet?
 
-A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-![Url](images/url.png)
+It's easiest to learn by example. Let's try this, shall we?
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+## Django shell
 
-## How do URLs work in Django?
+Open up your local console (not on PythonAnywhere) and type this command:
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+{% filename %}command-line{% endfilename %}
 
-{% filename %}mysite/urls.py{% endfilename %}
+    (myvenv) ~/djangogirls$ python manage.py shell
+    
 
-```python
-"""mysite URL Configuration
+The effect should be like this:
 
-[...]
-"""
-from django.conf.urls import url
-from django.contrib import admin
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-]
-```
-
-As you can see, Django has already put something here for us.
-
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
-
-The admin URL, which you visited in previous chapter, is already here:
-
-{% filename %}mysite/urls.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
-    url(r'^admin/', admin.site.urls),
+(InteractiveConsole)
+>>>
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-## Regex
+### All objects
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+Let's try to display all of our posts first. You can do that with the following command:
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
-
-* `^` for the beginning of the text
-* `$` for the end of the text
-* `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
-
-Anything else in the URL definition will be taken literally.
-
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
-
-Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
-
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
-* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
-* **/** tells django that another `/` character should follow
-* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
-
-## Your first Django URL!
-
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
-
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
-
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
-
-Your `mysite/urls.py` file should now look like this:
-
-{% filename %}mysite/urls.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
-from django.conf.urls import include, url
-from django.contrib import admin
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
-]
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
 
-Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
-
-## blog.urls
-
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
-
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
-from django.conf.urls import url
-from . import views
+>>> from blog.models import Post
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
-After that, we can add our first URL pattern:
-
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-]
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+### Create object
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+This is how you create a new Post object in database:
 
-![Error](images/error1.png)
+{% filename %}command-line{% endfilename %}
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+
+Let's import User model first:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.contrib.auth.models import User
+```
+
+What users do we have in our database? Try this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
+
+This is the superuser we created earlier! Let's get an instance of the user now:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> me = User.objects.get(username='ola')
+```
+
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+
+Now we can finally create our post:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+Hurray! Wanna check if it worked?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
+
+There it is, one more post in the list!
+
+### Add more posts
+
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+
+### Filter objects
+
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(author=me)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
+
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
+
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Chaining QuerySets
+
+You can also combine QuerySets by **chaining** them together:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    
+
+This is really powerful and lets you write quite complex queries.
+
+Cool! You're now ready for the next part! To close the shell, type this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> exit()
+$
+```
