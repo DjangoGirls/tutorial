@@ -1,197 +1,260 @@
-# Extend your application
+# Deploy!
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
-Time to practice!
+Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+As you learned, a website has to be located on a server. There are a lot of server providers available on the internet. We will use one that has a relatively simple deployment process: [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-## Create a template link to a post's detail
+These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+# Git
 
-```html
-{% extends 'blog/base.html' %}
+> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
-{% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
-```
+{% include "/deploy/install_git.md" %}
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+## Starting our Git repository
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
-```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-```
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% filename %}command-line{% endfilename %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+    $ git init
+    Initialized empty Git repository in ~/djangogirls/.git/
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email you@example.com
+    
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+{% filename %}.gitignore{% endfilename %}
 
-## Create a URL to a post's detail
+    *.pyc
+    *~
+    __pycache__
+    myvenv
+    db.sqlite3
+    /static
+    .DS_Store
+    
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+And save it as `.gitignore` in the "djangogirls" folder.
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> 
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-from django.conf.urls import url
-from . import views
-
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-]
-```
-
-This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
-
-- it starts with `^` again – "the beginning".
-- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
-- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
-- `/` – then we need a **/** again.
-- `$` – "the end"!
-
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
-
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
-
-![AttributeError](images/attribute_error2.png)
-
-Do you remember what the next step is? Of course: adding a view!
-
-## Add a post's detail view
-
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
-
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-Post.objects.get(pk=pk)
-```
-
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
-
-![DoesNotExist error](images/does_not_exist2.png)
-
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
-
-![Page not found](images/404_2.png)
-
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
-
-OK, time to add a *view* to our `views.py` file!
-
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
-
-We should open `blog/views.py` and add the following code near the other `from` lines:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-from django.shortcuts import render, get_object_or_404
-```
-
-And at the end of the file we will add our *view*:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
-```
-
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
-
-![Post list view](images/post_list2.png)
-
-It worked! But what happens when you click a link in blog post title?
-
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
-
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
-
-## Create a template for the post details
-
-We will create a file in `blog/templates/blog` called `post_detail.html`.
-
-It will look like this:
-
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
-```html
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endblock %}
-```
-
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
-
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
-
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
-
-![Post detail page](images/post_detail2.png)
-
-Yay! It works!
-
-## One more thing: deploy time!
-
-It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
+    On branch master
+    
+    Initial commit
+    
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+    
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+    
+    nothing added to commit but untracked files present (use "git add" to track)
+    
+
+And finally we save our changes. Go to your console and run these commands:
+
+{% filename %}command-line{% endfilename %}
+
     $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
+    $ git commit -m "My Django Girls app, first commit"
+     [...]
+     13 files changed, 200 insertions(+)
+     create mode 100644 .gitignore
+     [...]
+     create mode 100644 mysite/wsgi.py
+     ```
+    
+    
+    ## Pushing your code to GitHub
+    
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    
+    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    
+    <img src="images/new_github_repo.png" />
+    
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    
+    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    
+    <img src="images/github_get_repo_url_screenshot.png" />
+    
+    Now we need to hook up the Git repository on your computer to the one up on GitHub.
+    
+    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    
+    {% filename %}command-line{% endfilename %}
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-{% filename %}command-line{% endfilename %}
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
+    <br />Enter your GitHub username and password and you should see something like this:
+    
+    {% filename %}command-line{% endfilename %}
     
 
-Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
 
-And that should be it! Congrats :)
+- [new branch] master -> master Branch master set up to track remote branch master from origin.
+
+    <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
+    
+    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    
+    
+    # Setting up our blog on PythonAnywhere
+    
+    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    
+    {% include "/deploy/signup_pythonanywhere.md" %}
+    
+    
+    ## Pulling our code down on PythonAnywhere
+    
+    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
+    
+    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+    
+    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    
+
+$ git clone https://github.com/<your-github-username>/my-first-blog.git
+
+    <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    
+
+$ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
+
+    <br /><br />### Creating a virtualenv on PythonAnywhere
+    
+    Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    
+
+$ cd my-first-blog
+
+$ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
+
+    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    
+    &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
+    
+    ### Creating the database on PythonAnywhere
+    
+    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+    
+    Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    
+
+(mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
+
+    <br />## Publishing our blog as a web app
+    
+    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    
+    Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+    
+    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+    
+    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    
+    
+    ### Setting the virtualenv
+    
+    You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+    
+    &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
+    
+    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+    
+    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    
+    
+    ### Configuring the WSGI file
+    
+    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+    
+    Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+    
+    Delete all the contents and replace them with the following:
+    
+    {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
+    ```python
+    import os
+    import sys
+    
+    path = os.path.expanduser('~/my-first-blog')
+    if path not in sys.path:
+        sys.path.append(path)
+    
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+    
+    from django.core.wsgi import get_wsgi_application
+    from django.contrib.staticfiles.handlers import StaticFilesHandler
+    application = StaticFilesHandler(get_wsgi_application())
+    
+
+This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+
+Hit **Save** and then go back to the **Web** tab.
+
+We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+
+## Debugging tips
+
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+
+- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+
+- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+
+- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
+
+- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+
+There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+
+And remember, your coach is here to help!
+
+# You are live!
+
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
