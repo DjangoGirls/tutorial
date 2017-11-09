@@ -1,202 +1,197 @@
-# Your first Django project!
+# Extend your application
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-We're going to create a simple blog!
+Time to practice!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+## Create a template link to a post's detail
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
+
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
+
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+
+![NoReverseMatch error](images/no_reverse_match2.png)
+
+## Create a URL to a post's detail
+
+Let's create a URL in `urls.py` for our `post_detail` *view*!
+
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+]
+```
+
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
+
+- it starts with `^` again – "the beginning".
+- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
+- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `/` – then we need a **/** again.
+- `$` – "the end"!
+
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+
+![AttributeError](images/attribute_error2.png)
+
+Do you remember what the next step is? Of course: adding a view!
+
+## Add a post's detail view
+
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+Post.objects.get(pk=pk)
+```
+
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+
+![DoesNotExist error](images/does_not_exist2.png)
+
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+
+![Page not found](images/404_2.png)
+
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+
+OK, time to add a *view* to our `views.py` file!
+
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+
+We should open `blog/views.py` and add the following code near the other `from` lines:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+from django.shortcuts import render, get_object_or_404
+```
+
+And at the end of the file we will add our *view*:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
+
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
+
+![Post list view](images/post_list2.png)
+
+It worked! But what happens when you click a link in blog post title?
+
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+
+## Create a template for the post details
+
+We will create a file in `blog/templates/blog` called `post_detail.html`.
+
+It will look like this:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
+```
+
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+
+![Post detail page](images/post_detail2.png)
+
+Yay! It works!
+
+## One more thing: deploy time!
+
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git push
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-> 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
-
-<!--endsec-->
-
-<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
-
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    $ cd my-first-blog
+    $ git pull
+    [...]
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-> 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`. The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-<!--endsec-->
-
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
-
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
-    
-
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
-
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
-
-The `settings.py` file contains the configuration of your website.
-
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
-
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
-
-## Changing settings
-
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
-
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
-
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
-
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-TIME_ZONE = 'Europe/Berlin'
-```
-
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
-
-Change the language code by changing the following line:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-LANGUAGE_CODE = 'de-ch'
-```
-
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-```
-
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
-```
-
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
-> 
-> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
-
-## Set up a database
-
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
-
-This is already set up in this part of your `mysite/settings.py` file:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-```
-
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
-    Running migrations:
-      Rendering model states... DONE
-      Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK
-      Applying contenttypes.0002_remove_content_type_name... OK
-      Applying auth.0002_alter_permission_name_max_length... OK
-      Applying auth.0003_alter_user_email_max_length... OK
-      Applying auth.0004_alter_user_username_opts... OK
-      Applying auth.0005_alter_user_last_login_null... OK
-      Applying auth.0006_require_contenttypes_0002... OK
-      Applying auth.0007_alter_validators_add_error_messages... OK
-      Applying sessions.0001_initial... OK
-    
-
-And we're done! Time to start the web server and see if our website is working!
-
-## Starting the web server
-
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver
-    
-
-If you are on a Chromebook, use this command instead:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-    
-
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
-
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
-
-{% filename %}browser{% endfilename %}
-
-    http://127.0.0.1:8000/
-    
-
-If you're using a Chromebook, you'll always visit your test server by accessing:
-
-{% filename %}browser{% endfilename %}
-
-    https://django-girls-<your cloud9 username>.c9users.io
-    
-
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
-
-![It worked!](images/it_worked2.png)
-
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
-
-> We reviewed how web servers work in the **How the Internet works** chapter.
-
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
-
-Ready for the next step? It's time to create some content!
+And that should be it! Congrats :)
