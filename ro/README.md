@@ -1,194 +1,213 @@
-# Django models
+# Introduction to HTML
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+What's a template, you may ask?
 
-## Objects
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+## What is HTML?
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+## Your first template!
+
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+
+    blog
+    └───templates
+        └───blog
     
 
-    CatFood
-    --------
-    taste
-    
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-How will we model blog posts then? We want to build a blog, right?
+See how your website looks now: http://127.0.0.1:8000/
 
-We need to answer the question: What is a blog post? What properties should it have?
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+![Figure 11.1](images/step1.png)
 
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
-    
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Add the following to your template file:
 
-So we will need a `publish` method.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-Since we already know what we want to achieve, let's start modeling it in Django!
-
-## Django model
-
-Knowing what an object is, we can create a Django model for our blog post.
-
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
-
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
-
-### Creating an application
-
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
-
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
-
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-]
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
 ```
 
-### Creating a blog post model
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+![Figure 11.2](images/step3.png)
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+It worked! Nice work there :)
 
-{% filename %}blog/models.py{% endfilename %}
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-```python
-from django.db import models
-from django.utils import timezone
+## Head and body
 
+Each HTML page is also divided into two elements: **head** and **body**.
 
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-    def __str__(self):
-        return self.title
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+
+For example, you can put a web page title element inside the `<head>`, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+Save the file and refresh your page.
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+![Figure 11.3](images/step4.png)
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+## Customize your template
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
 
-### Create tables for models in your database
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
+
+We've created three `div` sections here.
+
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+
+It gives us this effect:
+
+![Figure 11.4](images/step6.png)
+
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+
+## One more thing: deploy!
+
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+
+### Commit, and push your code up to Github
+
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      blog/migrations/0001_initial.py:
-    
-      - Create model Post
+    $ git status
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
-
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
+    $ git add --all .
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    
+
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+
+{% filename %}command-line{% endfilename %}
+
+    $ git commit -m "Changed the HTML for the site."
+    
+
+> **Note** Make sure you use double quotes around the commit message.
+
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+    
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
