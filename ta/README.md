@@ -1,58 +1,106 @@
-# If you're doing the tutorial at home
+# Django templates
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+## What are template tags?
 
-If you find it useful, you can follow through this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-Good luck!
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-# Installation
+## Display post list template
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-<!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
-<!--endsec-->
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-# Install Python
+```html
+{{ posts }}
+```
 
-{% include "/python_installation/instructions.md" %}
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-# Set up virtualenv and install Django
+![Figure 13.1](images/step1.png)
 
-{% include "/django_installation/instructions.md" %}
+As you can see, all we've got is this:
 
-# Install a code editor
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-{% include "/code_editor/instructions.md" %}
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
-# Install Git
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
-{% include "/deploy/install_git.md" %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-# Create a GitHub account
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+Try this in your template.
 
-# Create a PythonAnywhere account
+![Figure 13.2](images/step2.png)
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-# Start reading
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-* [How the internet works](../how_the_internet_works/README.md)
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
-* [Introduction to Python](../python_introduction/README.md)
+![Figure 13.3](images/step3.png)
 
-* [What is Django?](../django/README.md)
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-# Enjoy the workshop!
+## One more thing
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+
+* First, push your code to Github
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
