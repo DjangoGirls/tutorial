@@ -5,7 +5,9 @@
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
 
-<!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
+{% tabs windows="Windows", osx="OS X", linux="Linux", debian="Debian or Ubuntu", fedora="Fedora", suse="OpenSUSE" %}
+
+{% content "windows" %}
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
@@ -25,10 +27,7 @@ If you install an older version of Python, the installation screen may look a bi
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
-data-collapse=true ces-->
+{% content "osx" %}
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
@@ -37,10 +36,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 * Download the *Mac OS X 64-bit/32-bit installer* file,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: Linux" data-id="python_linux"
-data-collapse=true ces-->
+{% content "linux" %}
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
@@ -53,9 +49,7 @@ Python 3.6.1
 If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
+{% content "debian" %}
 
 Type this command into your console:
 
@@ -64,10 +58,7 @@ Type this command into your console:
 $ sudo apt-get install python3.6
 ```
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: Fedora" data-id="python_fedora"
-data-collapse=true ces-->
+{% content "fedora" %}
 
 Use this command in your console:
 
@@ -78,10 +69,7 @@ $ sudo dnf install python3
 
 If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
-data-collapse=true ces-->
+{% content "suse" %}
 
 Use this command in your console:
 
@@ -90,7 +78,7 @@ Use this command in your console:
 $ sudo zypper install python3
 ```
 
-<!--endsec-->
+{% endtabs %}
 
 Verify the installation was successful by opening a command prompt and running the `python3` command:
 

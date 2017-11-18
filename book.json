@@ -16,7 +16,8 @@
         "language-picker",
         "sidebar-ad",
         "codeblock-label",
-        "sectionx"
+        "sectionx",
+        "simpletabs"
     ],
     "pluginsConfig": {
         "ga": {
