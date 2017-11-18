@@ -1,194 +1,81 @@
-# Django models
+# Dynamic data in templates
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-## Objects
+This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+OK, so how will we achieve this?
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
-
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
-
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
-    
-
-    CatFood
-    --------
-    taste
-    
-
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
-
-How will we model blog posts then? We want to build a blog, right?
-
-We need to answer the question: What is a blog post? What properties should it have?
-
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
-
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
-    
-
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
-
-So we will need a `publish` method.
-
-Since we already know what we want to achieve, let's start modeling it in Django!
-
-## Django model
-
-Knowing what an object is, we can create a Django model for our blog post.
-
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
-
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
-
-### Creating an application
-
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
-
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
-
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
-
-{% filename %}mysite/settings.py{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-]
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 ```
 
-### Creating a blog post model
+Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
-
-Let's open `blog/models.py`, remove everything from it, and write code like this:
-
-{% filename %}blog/models.py{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.db import models
+from django.shortcuts import render
+from .models import Post
+```
+
+The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+
+But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+
+## QuerySet
+
+You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+
+So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+```
+
+Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
+
+{% filename %}blog/views.py{% endfilename %}
+
+```python
+from django.shortcuts import render
 from django.utils import timezone
+from .models import Post
 
-
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {})
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+So finally our `blog/views.py` file should look like this:
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+{% filename %}blog/views.py{% endfilename %}
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+```python
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+```
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+That's it! Time to go back to our template and display this QuerySet!
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
-
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
-
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
-
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
-
-### Create tables for models in your database
-
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      blog/migrations/0001_initial.py:
-    
-      - Create model Post
-    
-
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
-
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
-    
-
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
