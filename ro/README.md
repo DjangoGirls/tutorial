@@ -1,194 +1,197 @@
-# Django models
+# Extend your application
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-## Objects
+Time to practice!
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+## Create a template link to a post's detail
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
-    
+```html
+{% extends 'blog/base.html' %}
 
-    CatFood
-    --------
-    taste
-    
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-How will we model blog posts then? We want to build a blog, right?
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-We need to answer the question: What is a blog post? What properties should it have?
+```html
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
-    
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-So we will need a `publish` method.
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Django model
+## Create a URL to a post's detail
 
-Knowing what an object is, we can create a Django model for our blog post.
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-### Creating an application
-
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
-
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
-
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
-
-{% filename %}mysite/settings.py{% endfilename %}
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
 ```
 
-### Creating a blog post model
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+- it starts with `^` again – "the beginning".
+- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
+- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `/` – then we need a **/** again.
+- `$` – "the end"!
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-{% filename %}blog/models.py{% endfilename %}
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+
+![AttributeError](images/attribute_error2.png)
+
+Do you remember what the next step is? Of course: adding a view!
+
+## Add a post's detail view
+
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.db import models
-from django.utils import timezone
-
-
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+Post.objects.get(pk=pk)
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+![DoesNotExist error](images/does_not_exist2.png)
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+![Page not found](images/404_2.png)
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+OK, time to add a *view* to our `views.py` file!
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+{% filename %}blog/views.py{% endfilename %}
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+And at the end of the file we will add our *view*:
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+{% filename %}blog/views.py{% endfilename %}
 
-### Create tables for models in your database
+```python
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
+
+![Post list view](images/post_list2.png)
+
+It worked! But what happens when you click a link in blog post title?
+
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+
+## Create a template for the post details
+
+We will create a file in `blog/templates/blog` called `post_detail.html`.
+
+It will look like this:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
+```
+
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+
+![Post detail page](images/post_detail2.png)
+
+Yay! It works!
+
+## One more thing: deploy time!
+
+It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      blog/migrations/0001_initial.py:
-    
-      - Create model Post
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git push
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
-
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
+    $ cd my-first-blog
+    $ git pull
+    [...]
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+
+And that should be it! Congrats :)
