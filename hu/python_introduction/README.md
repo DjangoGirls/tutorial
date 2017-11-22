@@ -455,7 +455,7 @@ Egész mostanig a python interpreterbe írkáltuk a parancsokat, ami arra korlá
 *   Mensünk el benne valami kódot egy python fájlba
 *   És futtassuk!
 
-Ahhoz hogy kilépjünk a Python interpreterből, egyszerűen írjuk be, hogy ~~~ exit()~~~:
+Ahhoz hogy kilépjünk a Python interpreterből, egyszerűen írjuk be, hogy `exit()`:
 
     >>> exit()
     $
