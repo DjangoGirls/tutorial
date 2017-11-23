@@ -1,213 +1,128 @@
-# Introduction to HTML
+# Django URLs
 
-What's a template, you may ask?
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+## What is a URL?
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
-## What is HTML?
+![Url](images/url.png)
 
-HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+## How do URLs work in Django?
 
-## Your first template!
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+{% filename %}mysite/urls.py{% endfilename %}
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+```python
+"""mysite URL Configuration
 
-    blog
-    └───templates
-        └───blog
-    
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
-
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
-
-See how your website looks now: http://127.0.0.1:8000/
-
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
-
-![Figure 11.1](images/step1.png)
-
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
-
-Add the following to your template file:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+]
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+As you can see, Django has already put something here for us.
 
-![Figure 11.2](images/step3.png)
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-It worked! Nice work there :)
+The admin URL, which you visited in previous chapter, is already here:
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+{% filename %}mysite/urls.py{% endfilename %}
 
-## Head and body
-
-Each HTML page is also divided into two elements: **head** and **body**.
-
-* **head** is an element that contains information about the document that is not displayed on the screen.
-
-* **body** is an element that contains everything else that is displayed as part of the web page.
-
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
-
-For example, you can put a web page title element inside the `<head>`, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
+```python
+    url(r'^admin/', admin.site.urls),
 ```
 
-Save the file and refresh your page.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-![Figure 11.3](images/step4.png)
+## Regex
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+* `^` for the beginning of the text
+* `$` for the end of the text
+* `\d` for a digit
+* `+` to indicate that the previous item should be repeated at least once
+* `()` to capture part of the pattern
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Anything else in the URL definition will be taken literally.
 
-## Customize your template
+Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br />` goes to another line (you can't put anything inside br)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
+* **/** tells django that another `/` character should follow
+* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+## Your first Django URL!
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
-```html
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
-</html>
+Your `mysite/urls.py` file should now look like this:
+
+{% filename %}mysite/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('blog.urls')),
+]
 ```
 
-We've created three `div` sections here.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
-It gives us this effect:
+## blog.urls
 
-![Figure 11.4](images/step6.png)
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+{% filename %}blog/urls.py{% endfilename %}
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+```python
+from django.conf.urls import url
+from . import views
+```
 
-## One more thing: deploy!
+Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+After that, we can add our first URL pattern:
 
-### Commit, and push your code up to Github
+{% filename %}blog/urls.py{% endfilename %}
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
 
-{% filename %}command-line{% endfilename %}
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
-    $ git status
-    
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
-{% filename %}command-line{% endfilename %}
+![Error](images/error1.png)
 
-    $ git add --all .
-    
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
-
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
-
-{% filename %}command-line{% endfilename %}
-
-    $ git status
-    
-
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
-
-{% filename %}command-line{% endfilename %}
-
-    $ git commit -m "Changed the HTML for the site."
-    
-
-> **Note** Make sure you use double quotes around the commit message.
-
-Once we've done that, we upload (push) our changes up to GitHub:
-
-{% filename %}command-line{% endfilename %}
-
-    $ git push
-    
-
-### Pull your new code down to PythonAnywhere, and reload your web app
-
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd ~/my-first-blog
-    $ git pull
-    [...]
-    
-
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
-
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
-
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
