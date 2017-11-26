@@ -130,7 +130,7 @@ NameError: name 'Post' is not defined
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> **Note**  `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개(`__`)입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, `FieldError: Cannot resolve keyword title_contains`라는 오류가 뜰 거예요.
+> **Note**  `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개(`__`)입니다. 장고 ORM은 필드 이름("title")과 연산자와 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, `FieldError: Cannot resolve keyword title_contains`라는 오류가 뜰 거예요.
 
 게시글 목록을 볼 수 있어요. `게시일(published_date)`로 과거에 작성한 글을 필터링하면 목록을 불러올 수 있어요.
 
@@ -164,7 +164,7 @@ NameError: name 'Post' is not defined
 
 ### 정렬하기
 
-퀘리셋은 객체 목록을 정렬할 수 있어요. 이제 `created_date`필드를 정렬해봅시다.
+쿼리셋은 객체 목록을 정렬할 수 있어요. 이제 `created_date`필드를 정렬해봅시다.
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -191,7 +191,7 @@ NameError: name 'Post' is not defined
 
 이 방법은 정말 강력해 복잡한 쿼리도 작성할 수 있게 해준답니다.
 
-좋아요! 이제 다음 내용으로 넘어갈 때로군요! 다음 명령을 입력해, 쉘을 종료하세요. :
+좋아요! 이제 다음 내용으로 넘어갈 때로군요! 다음 명령을 입력하고 쉘을 종료하세요.
 
 {% filename %}command-line{% endfilename %}
 ```python
