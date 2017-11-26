@@ -1,50 +1,106 @@
-# Django admin
+# Šablóny Django
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+## Čo sú to šablónové tagy?
 
-{% filename %}blog/admin.py{% endfilename %}
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-```python
-from django.contrib import admin
-from .models import Post
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-admin.site.register(Post)
+## Zobraz šablónu so zoznamom príspevkov
+
+V predchádzajúcej kapitole sme našej šablóne dali zoznam príspevkov v premennej `posts`. Teraz to zobrazíme v HTML.
+
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{{ posts }}
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+![Obrázok 13.1](images/step1.png)
 
-![Login page](images/login_page2.png)
+Ako vidíš, dostali sme len toto:
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
-When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
+
+Vyskúšaj si to vo svojej šablóne.
+
+![Obrázok 13.2](images/step2.png)
+
+Funguje to! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Môžeš skombinovať HTML a šablónové tagy. Naše `body` bude vyzerať takto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
+
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+
+![Obrázok 13.3](images/step3.png)
+
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+
+## One more thing
+
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+
+* Najskôr pošli svoj kód na Github
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+* Potom sa prihlás do [PythonAnywhere](https://www.pythonanywhere.com/consoles/) a choď do **Bash konzoly** (alebo spusti novú) a zadaj:
 
-![Django admin](images/django_admin3.png)
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-![Django admin](images/edit_post3.png)
+Gratulujeme! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+![Obrázok 13.4](images/donut.png)
