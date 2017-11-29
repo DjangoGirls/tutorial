@@ -42,8 +42,8 @@ On Windows you should run the following command. **(Don't forget to add the peri
 ```
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`.
-The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
+The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
