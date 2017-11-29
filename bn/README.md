@@ -1,47 +1,213 @@
-# How the Internet works
+# Introduction to HTML
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
-> 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+What's a template, you may ask?
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+## What is HTML?
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-OK, but you want to know how the Internet looks, right?
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-We drew you a picture! It looks like this:
+## Your first template!
 
-![Figure 1.1](images/internet_1.png)
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
-![Figure 1.2](images/internet_3.png)
+    blog
+    └───templates
+        └───blog
+    
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-It looks like this:
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-![Figure 1.3](images/internet_2.png)
+See how your website looks now: http://127.0.0.1:8000/
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+![Figure 11.1](images/step1.png)
 
-![Figure 1.4](images/internet_4.png)
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Add the following to your template file:
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+```html
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
+```
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+![Figure 11.2](images/step3.png)
 
-Enough talk – time to create!
+It worked! Nice work there :)
+
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+
+## Head and body
+
+Each HTML page is also divided into two elements: **head** and **body**.
+
+* **head** is an element that contains information about the document that is not displayed on the screen.
+
+* **body** is an element that contains everything else that is displayed as part of the web page.
+
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+
+For example, you can put a web page title element inside the `<head>`, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
+
+Save the file and refresh your page.
+
+![Figure 11.3](images/step4.png)
+
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+
+## Customize your template
+
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
+
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
+</html>
+```
+
+We've created three `div` sections here.
+
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+
+It gives us this effect:
+
+![Figure 11.4](images/step6.png)
+
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+
+## One more thing: deploy!
+
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+
+### Commit, and push your code up to Github
+
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    
+
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git add --all .
+    
+
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    
+
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+
+{% filename %}command-line{% endfilename %}
+
+    $ git commit -m "Changed the HTML for the site."
+    
+
+> **Note** Make sure you use double quotes around the commit message.
+
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+    
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
