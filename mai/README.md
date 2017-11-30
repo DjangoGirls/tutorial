@@ -1,106 +1,47 @@
-# Django templates
+# How the Internet works
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-## What are template tags?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
-## Display post list template
+As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+OK, but you want to know how the Internet looks, right?
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+We drew you a picture! It looks like this:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+![Figure 1.1](images/internet_1.png)
 
-```html
-{{ posts }}
-```
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+![Figure 1.2](images/internet_3.png)
 
-![Figure 13.1](images/step1.png)
+It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-As you can see, all we've got is this:
+It looks like this:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+![Figure 1.3](images/internet_2.png)
 
-```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
-```
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+![Figure 1.4](images/internet_4.png)
 
-```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
-```
+Yes, it is as simple as that. You send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-Try this in your template.
+Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-![Figure 13.2](images/step2.png)
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-```
-
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
-
-![Figure 13.3](images/step3.png)
-
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
-
-## One more thing
-
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
-
-* First, push your code to Github
-
-{% filename %}command-line{% endfilename %}
-
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
-    
-
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
-    
-
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
-
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
-
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
-
-![Figure 13.4](images/donut.png)
+Enough talk – time to create!
