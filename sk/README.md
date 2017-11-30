@@ -1,58 +1,27 @@
-# If you're doing the tutorial at home
+# What is Django?
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
-If you find it useful, you can follow through this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-Veľa šťastia!
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-# Inštalácia
+## Why do you need a framework?
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-<!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
-<!--endsec-->
+## What happens when someone requests a website from your server?
 
-# Inštalácia Pythonu
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-{% include "/python_installation/instructions.md" %}
+Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-# Nastavenie virtualenv a inštalácia Django
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-{% include "/django_installation/instructions.md" %}
+Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-# Inštalácia editoru kódu
-
-{% include "/code_editor/instructions.md" %}
-
-# Inštalácia Gitu
-
-{% include "/deploy/install_git.md" %}
-
-# Vytvorenie GitHub účtu
-
-Choď na [GitHub.com](https://www.github.com) a založ (Sign Up) si nový účet zdarma.
-
-# Vytvor si PythonAnywhere účet
-
-{% include "/deploy/signup_pythonanywhere.md" %}
-
-# Start reading
-
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
-
-* [Ako funguje Internet](../how_the_internet_works/README.md)
-
-* [Úvod do príkazového riadku](../intro_to_command_line/README.md)
-
-* [Úvod do jazyka Python](../python_introduction/README.md)
-
-* [Čo je Django?](../django/README.md)
-
-# Enjoy the workshop!
-
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
