@@ -28,7 +28,7 @@ After running the Python command, the prompt changed to `>>>`. For us this means
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -168,7 +168,7 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-You see? It's easy! It's simply: name equals Ola.
+We type name equals Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
@@ -292,7 +292,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Easy, right? If you want to add something to your list, you can do this by typing this command:
+If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -472,7 +472,7 @@ True
 False
 ```
 
-`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
+We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 - x `>` y means: x is greater than y
 - x `<` y means: x is less than y
@@ -511,7 +511,7 @@ Instead, it shows a **TypeError** and tells us the two types can't be compared t
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called __Boolean__,  and it is probably the easiest type there is.
+Incidentally, you just learned about a new type of object in Python. It's called __Boolean__.
 
 There are only two Boolean objects:
 - True
@@ -711,7 +711,7 @@ $ python3 python_intro.py
 5 is indeed greater than 2
 ```
 
-If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -796,7 +796,7 @@ Time for the last part of this chapter!
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python

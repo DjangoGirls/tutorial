@@ -48,7 +48,7 @@ Where `myvenv` is the name of your `virtualenv`. You can use any other name, but
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Creating a `virtualenv` on both Linux and OS X is as simple as running `python3 -m venv myvenv`.
+We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`.
 It will look like this:
 
 {% filename %}command-line{% endfilename %}

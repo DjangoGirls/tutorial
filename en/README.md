@@ -21,7 +21,7 @@ We hope that we'll be able to make you love technology as much as we do!
 
 ## What will you learn during the tutorial?
 
-Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
+Once you've finished the tutorial, you will have a working web application: your own blog. We will show you how to put it online, so others will see your work!
 
 It will (more or less) look like this:
 

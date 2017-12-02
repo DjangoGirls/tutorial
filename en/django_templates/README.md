@@ -6,7 +6,7 @@ Time to display some data! Django gives us some helpful built-in __template tags
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-__Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+__Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
 ## Display post list template
 
