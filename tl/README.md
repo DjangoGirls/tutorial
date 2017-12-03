@@ -1,15 +1,25 @@
-# Let’s start with Python
+# What's next?
 
-We're finally here!
+Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+### What to do now?
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks much simpler than other programming languages. This makes it easy to learn, but don't worry – Python is also really powerful!
+Take a break and relax. You have just done something really huge.
 
-# Python installation
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
-> 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+### Can you recommend any further resources?
 
-{% include "/python_installation/instructions.md" %}
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+
+Later on, you can try the resources listed below. They're all very recommended!
+
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
+- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
