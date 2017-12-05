@@ -1,218 +1,58 @@
-# Django ORM and QuerySets
+# If you're doing the tutorial at home
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-## What is a QuerySet?
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+If you find it useful, you can follow through this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-It's easiest to learn by example. Let's try this, shall we?
+Good luck!
 
-## Django shell
+# Installation
 
-Open up your local console (not on PythonAnywhere) and type this command:
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-{% filename %}command-line{% endfilename %}
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
-    (myvenv) ~/djangogirls$ python manage.py shell
-    
+<!--endsec-->
 
-The effect should be like this:
+# Install Python
 
-{% filename %}command-line{% endfilename %}
+{% include "/python_installation/instructions.md" %}
 
-```python
-(InteractiveConsole)
->>>
-```
+# Set up virtualenv and install Django
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+{% include "/django_installation/instructions.md" %}
 
-### All objects
+# Install a code editor
 
-Let's try to display all of our posts first. You can do that with the following command:
+{% include "/code_editor/instructions.md" %}
 
-{% filename %}command-line{% endfilename %}
+# Install Git
 
-```python
->>> Post.objects.all()
-Traceback (most recent call last):
-      File "<console>", line 1, in <module>
-NameError: name 'Post' is not defined
-```
+{% include "/deploy/install_git.md" %}
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+# Create a GitHub account
 
-{% filename %}command-line{% endfilename %}
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
-```python
->>> from blog.models import Post
-```
+# Create a PythonAnywhere account
 
-This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+{% include "/deploy/signup_pythonanywhere.md" %}
 
-{% filename %}command-line{% endfilename %}
+# Start reading
 
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
-```
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+* [How the internet works](../how_the_internet_works/README.md)
 
-### Create object
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-This is how you create a new Post object in database:
+* [Introduction to Python](../python_introduction/README.md)
 
-{% filename %}command-line{% endfilename %}
+* [What is Django?](../django/README.md)
 
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
+# Enjoy the workshop!
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
-
-Let's import User model first:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.contrib.auth.models import User
-```
-
-What users do we have in our database? Try this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> User.objects.all()
-<QuerySet [<User: ola>]>
-```
-
-This is the superuser we created earlier! Let's get an instance of the user now:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> me = User.objects.get(username='ola')
-```
-
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
-
-Now we can finally create our post:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-Hurray! Wanna check if it worked?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-```
-
-There it is, one more post in the list!
-
-### Add more posts
-
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
-
-### Filter objects
-
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
-```
-
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
-
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
-[]
-```
-
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post = Post.objects.get(title="Sample title")
-```
-
-And then publish it with our `publish` method:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post.publish()
-```
-
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
-```
-
-### Ordering objects
-
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-We can also reverse the ordering by adding `-` at the beginning:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-```
-
-### Chaining QuerySets
-
-You can also combine QuerySets by **chaining** them together:
-
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
-
-This is really powerful and lets you write quite complex queries.
-
-Cool! You're now ready for the next part! To close the shell, type this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> exit()
-$
-```
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
