@@ -1,44 +1,25 @@
-# Django views – time to create!
+# What's next?
 
-Time to get rid of the bug we created in the last chapter! :)
+Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+### What to do now?
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Take a break and relax. You have just done something really huge.
 
-## blog/views.py
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-OK, let's open up this file and see what's in there:
+### Can you recommend any further resources?
 
-{% filename %}blog/views.py{% endfilename %}
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-```python
-from django.shortcuts import render
+Later on, you can try the resources listed below. They're all very recommended!
 
-# Create your views here.
-```
-
-Not too much stuff here yet.
-
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
-
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_list(request):
-    return render(request, 'blog/post_list.html')
-```
-
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
-
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
-
-Another error! Read what's going on now:
-
-![Error](images/error.png)
-
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
-
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
+- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
