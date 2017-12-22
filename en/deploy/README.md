@@ -135,20 +135,51 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 
-## Pulling our code down on PythonAnywhere
+## Configuring our site on PythonAnywhere
 
-When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+
+When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
 <img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Deploying a web app on PythonAnywhere involves pulling down your code from github, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provide a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ git clone https://github.com/<your-github-username>/my-first-blog.git
+$ pip3.6 install --user pythonanywhere
 ```
+
+That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+
+Now we run the helper to automatically configure our app from Github. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+```
+
+As you watch that running, you'll be able to see what it's doing:
+
+- downloading your code from github
+- creating a virtualenv on PythonAnwyhere, just like the one on your own PC
+- updating your settings file with some deployment settings
+- setting up a database on PythonAnwhere using the "migrate" command
+- setting up your static files (we'll learn about these later)
+- and configuring PythonAnywhere to serve your web app via its API
+
+On PythonAnywhere all those steps are automated, but they're the same steps you
+would have to go through with any other server provider.  The main thing to notice
+right now is that your database on PythonAnywhere is actually totally separate from
+your database on your own PC -- that means it can have different posts and admin accounts.
+
+
+
+
+By the end, your site should be live on the public Internet!  Go check it out.
+
+
 
 This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
 
@@ -173,32 +204,6 @@ my-first-blog/
     └── wsgi.py
 ```
 
-
-### Creating a virtualenv on PythonAnywhere
-
-Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-```
-$ cd my-first-blog
-
-$ virtualenv --python=python3.6 myvenv
-Running virtualenv with interpreter /usr/bin/python3.6
-[...]
-Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(myvenv) $  pip install django~=1.11.0
-Collecting django
-[...]
-Successfully installed django-1.11.3
-```
-
-
-> **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
-
-<!--TODO: think about using requirements.txt instead of pip install.-->
 
 ### Creating the database on PythonAnywhere
 
