@@ -1,218 +1,27 @@
-# Django ORM and QuerySets
+# What is Django?
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-## What is a QuerySet?
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-It's easiest to learn by example. Let's try this, shall we?
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-## Django shell
+## Why do you need a framework?
 
-Open up your local console (not on PythonAnywhere) and type this command:
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-{% filename %}command-line{% endfilename %}
+Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
-    (myvenv) ~/djangogirls$ python manage.py shell
-    
+## What happens when someone requests a website from your server?
 
-The effect should be like this:
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-{% filename %}command-line{% endfilename %}
+Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-```python
-(InteractiveConsole)
->>>
-```
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-### All objects
-
-Let's try to display all of our posts first. You can do that with the following command:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-Traceback (most recent call last):
-      File "<console>", line 1, in <module>
-NameError: name 'Post' is not defined
-```
-
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from blog.models import Post
-```
-
-This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
-```
-
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
-
-### Create object
-
-This is how you create a new Post object in database:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
-
-Let's import User model first:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.contrib.auth.models import User
-```
-
-What users do we have in our database? Try this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> User.objects.all()
-<QuerySet [<User: ola>]>
-```
-
-This is the superuser we created earlier! Let's get an instance of the user now:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> me = User.objects.get(username='ola')
-```
-
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
-
-Now we can finally create our post:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-Hurray! Wanna check if it worked?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-```
-
-There it is, one more post in the list!
-
-### Add more posts
-
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
-
-### Filter objects
-
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
-```
-
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
-
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
-[]
-```
-
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post = Post.objects.get(title="Sample title")
-```
-
-And then publish it with our `publish` method:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post.publish()
-```
-
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
-```
-
-### Ordering objects
-
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-We can also reverse the ordering by adding `-` at the beginning:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-```
-
-### Chaining QuerySets
-
-You can also combine QuerySets by **chaining** them together:
-
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
-
-This is really powerful and lets you write quite complex queries.
-
-Cool! You're now ready for the next part! To close the shell, type this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> exit()
-$
-```
+So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
