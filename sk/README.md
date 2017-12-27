@@ -1,147 +1,106 @@
-# Template extending
+# Šablóny Django
 
-Ďalšia super možnosť, ktorú ti Django ponúka je **rozširovanie šablón**. Znamená to, že môžeš použiť rovnaké časti HTML kódu na rôznych stránkach svojho webu.
+Je na čase zobraziť nejaké údaje! Na to nám Django ponúka užitočné vstavané **šablónové tagy**.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+## Čo sú to šablónové tagy?
 
-## Create a base template
+V HTML vlastne nemôžeš písať Pythonský kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
 
-A base template is the most basic template that you extend on every page of your website.
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
 
-Vytvorme súbor `base.html` v `blog/templates/blog/`:
+## Zobraz šablónu so zoznamom príspevkov
 
-    blog
-    └───templates
-        └───blog
-                base.html
-                post_list.html
-    
+V predchádzajúcej kapitole sme našej šablóne dali zoznam príspevkov v premennej `posts`. Teraz to zobrazíme v HTML.
 
-Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+{{ posts }}
 ```
 
-Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) týmto:
+Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+![Obrázok 13.1](images/step1.png)
+
+Ako vidíš, dostali sme len toto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<body>
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-            </div>
-        </div>
-    </div>
-</body>
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
-
-```html
-{% block content %}
-{% endblock %}
-```
-
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Hneď ti ukážeme, ako sa to robí.
-
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
-            {{ post.published_date }}
-        </div>
+    {{ post }}
+{% endfor %}
+```
+
+Vyskúšaj si to vo svojej šablóne.
+
+![Obrázok 13.2](images/step2.png)
+
+Funguje to! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Môžeš skombinovať HTML a šablónové tagy. Naše `body` bude vyzerať takto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Takto:{% endraw %}
+![Obrázok 13.3](images/step3.png)
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-```html
-{% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
-```
+## One more thing
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+* Najskôr pošli svoj kód na Github
 
-```html
-{% extends 'blog/base.html' %}
+{% filename %}command-line{% endfilename %}
 
-{% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
-```
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
 
-A je to! Skontroluj či tvoja web stránka funguje tak, ako má. :)
+* Potom sa prihlás do [PythonAnywhere](https://www.pythonanywhere.com/consoles/) a choď do **Bash konzoly** (alebo spusti novú) a zadaj:
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Gratulujeme! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Obrázok 13.4](images/donut.png)
