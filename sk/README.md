@@ -26,26 +26,26 @@ Po skončení budeš mať funkčnú webovú aplikáciu: tvoj vlastný blog. Uká
 
 Výsledok bude vyzerať asi takto:
 
-![Figure 0.1](images/application.png)
+![Obrázok 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Ak budeš na tomto projekte pracovať sama a nemáš mentora, ktorý ti pomáha, môžeš v prípade problémov navštíviť tento chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Požiadali sme našich mentorov, ale aj absolventky, aby sa na tomto chate občas ukázali a pomohli ostatným! Neboj sa opýtať čomu nerozumieš!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK, [začnime pekne po poriadku...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Sledovanie tutoriálu doma
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Je úžasné, zúčastniť sa Django Girls workshopu, ale uvedomujeme si, že nie vždy je možné byť na niektorom. Preto ti odporúčami aby si skúsila postupovať podľa tohto tutoriálu doma. Pre tých ktorí sú doma, v súčasnosti pripravujeme videá, ktoré umožnia jednoduchšie sledovanie tutoriálu doma. Stále sa na tom pracuje, ale viac a viac vecí bude čoskoro na [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube kanály.
 
-In every chapter already covered, there is a link that points to the correct video.
+V každej kapitole ktorá už bola spracovaná sa nachádza odkaz na príslušné video.
 
-## About and contributing
+## Informácie a možnosti ako sa zapojiť
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Tento návod vytvorili a udržiavajú [DjangoGirls](https://djangogirls.org/). Ak nájdeš chyby alebo by si chcela aktualizovať tento návod, prosím [postupuj podľa pokynov](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial to other languages?
+## Chceš nám pomôcť s prekladom do iných jayzkov?
 
-Currently, translations are being kept on crowdin.com platform at:
+V súčasnosti koordinujeme preklady cez platformu crowdin.com:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Ak tvoj jazyk nie je v zozname na crowdin. com, [daj nám prosím vedieť](https://github.com/DjangoGirls/tutorial/issues/new) aký jazyk máme pridať.
