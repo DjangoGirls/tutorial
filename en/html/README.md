@@ -199,7 +199,7 @@ $ git push
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd ~/my-first-blog
+$ cd ~/yourusername.pythonanywhere.com
 $ git pull
 [...]
 ```
