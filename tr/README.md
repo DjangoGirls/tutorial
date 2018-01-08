@@ -1,213 +1,202 @@
-# Introduction to HTML
+# Your first Django project!
 
-What's a template, you may ask?
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+We're going to create a simple blog!
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-## What is HTML?
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-## Your first template!
+In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+{% filename %}komut-satırı{% endfilename %}
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
-
-    blog
-    └───templates
-        └───blog
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+<!--endsec-->
 
-See how your website looks now: http://127.0.0.1:8000/
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
-![Figure 11.1](images/step1.png)
+{% filename %}komut-satırı{% endfilename %}
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    
 
-Add the following to your template file:
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`. The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<!--endsec-->
 
-```html
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+
+    djangogirls
+    ├───manage.py
+    └───mysite
+            settings.py
+            urls.py
+            wsgi.py
+            __init__.py
+    
+
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+
+The `settings.py` file contains the configuration of your website.
+
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+
+## Changing settings
+
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+TIME_ZONE = 'Europe/Berlin'
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-![Figure 11.2](images/step3.png)
+Change the language code by changing the following line:
 
-It worked! Nice work there :)
+{% filename %}mysite/settings.py{% endfilename %}
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
-
-## Head and body
-
-Each HTML page is also divided into two elements: **head** and **body**.
-
-* **head** is an element that contains information about the document that is not displayed on the screen.
-
-* **body** is an element that contains everything else that is displayed as part of the web page.
-
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
-
-For example, you can put a web page title element inside the `<head>`, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
-</html>
+```python
+LANGUAGE_CODE = 'de-ch'
 ```
 
-Save the file and refresh your page.
+We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
-![Figure 11.3](images/step4.png)
+{% filename %}mysite/settings.py{% endfilename %}
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
-
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
-
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
-
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
-
-## Customize your template
-
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
-
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br />` goes to another line (you can't put anything inside br)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
-
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
-</html>
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-We've created three `div` sections here.
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+{% filename %}mysite/settings.py{% endfilename %}
 
-It gives us this effect:
+```python
+ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+```
 
-![Figure 11.4](images/step6.png)
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+## Set up a database
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
 
-## One more thing: deploy!
+This is already set up in this part of your `mysite/settings.py` file:
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+{% filename %}mysite/settings.py{% endfilename %}
 
-### Commit, and push your code up to Github
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+```
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
-    $ git status
+    (myvenv) ~/djangogirls$ python manage.py migrate
+    Operations to perform:
+      Apply all migrations: auth, admin, contenttypes, sessions
+    Running migrations:
+      Rendering model states... DONE
+      Applying contenttypes.0001_initial... OK
+      Applying auth.0001_initial... OK
+      Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying contenttypes.0002_remove_content_type_name... OK
+      Applying auth.0002_alter_permission_name_max_length... OK
+      Applying auth.0003_alter_user_email_max_length... OK
+      Applying auth.0004_alter_user_username_opts... OK
+      Applying auth.0005_alter_user_last_login_null... OK
+      Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying sessions.0001_initial... OK
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+And we're done! Time to start the web server and see if our website is working!
 
-{% filename %}command-line{% endfilename %}
+## Starting the web server
 
-    $ git add --all .
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+
+{% filename %}komut-satırı{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+If you are on a Chromebook, use this command instead:
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+{% filename %}Cloud 9{% endfilename %}
 
-{% filename %}command-line{% endfilename %}
-
-    $ git status
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
-    $ git commit -m "Changed the HTML for the site."
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-> **Note** Make sure you use double quotes around the commit message.
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
-Once we've done that, we upload (push) our changes up to GitHub:
+{% filename %}tarayıcı{% endfilename %}
 
-{% filename %}command-line{% endfilename %}
-
-    $ git push
+    http://127.0.0.1:8000/
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+If you're using a Chromebook, you'll always visit your test server by accessing:
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+{% filename %}tarayıcı{% endfilename %}
 
-{% filename %}command-line{% endfilename %}
-
-    $ cd ~/my-first-blog
-    $ git pull
-    [...]
+    https://django-girls-<your cloud9 username>.c9users.io
     
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+![It worked!](images/it_worked2.png)
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+
+> We reviewed how web servers work in the **How the Internet works** chapter.
+
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+
+Ready for the next step? It's time to create some content!
