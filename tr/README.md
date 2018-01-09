@@ -1,304 +1,202 @@
-# CSS – sayfanı güzelleştir!
+# Your first Django project!
 
-Blogumuz hala epey çirkin gözüküyor, değil mi? Güzelleştirme zamanı! Bunun için CSS kullanacağız.
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## CSS Nedir?
+We're going to create a simple blog!
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-## Haydi Bootstrap kullanalım!
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-Bootstrap HTML and CSS tabanlı çok güzel websiteleri geliştirmek için en yaygın olarak kullanılan çözümlerden biridir https://getbootstrap.com/
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
-## Install Bootstrap
+{% filename %}komut-satırı{% endfilename %}
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-```
-
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
-
-![Şekil 14.1](images/bootstrap1.png)
-
-Şimdiden daha güzel gözüküyor!
-
-## Django'da statik dosyalar
-
-Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakalım. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
-
-### Where to put static files for Django
-
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
-
-Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapacağız:
-
-    djangogirls
-    ├── blog
-    │   ├── migrations
-    │   ├── static
-    │   └── templates
-    └── mysite
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-## Your first CSS file!
+<!--endsec-->
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-    djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+
+{% filename %}komut-satırı{% endfilename %}
+
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`. The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
+<!--endsec-->
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
-In your `blog/static/css/blog.css` file you should add the following code:
+    djangogirls
+    ├───manage.py
+    └───mysite
+            settings.py
+            urls.py
+            wsgi.py
+            __init__.py
+    
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
-```css
-h1 a {
-    color: #FCA205;
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+
+The `settings.py` file contains the configuration of your website.
+
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+
+## Changing settings
+
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+TIME_ZONE = 'Europe/Berlin'
+```
+
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+
+Change the language code by changing the following line:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LANGUAGE_CODE = 'de-ch'
+```
+
+We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+```
+
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
+
+## Set up a database
+
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+
+This is already set up in this part of your `mysite/settings.py` file:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+{% filename %}komut-satırı{% endfilename %}
 
-```html
-<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```
+    (myvenv) ~/djangogirls$ python manage.py migrate
+    Operations to perform:
+      Apply all migrations: auth, admin, contenttypes, sessions
+    Running migrations:
+      Rendering model states... DONE
+      Applying contenttypes.0001_initial... OK
+      Applying auth.0001_initial... OK
+      Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying contenttypes.0002_remove_content_type_name... OK
+      Applying auth.0002_alter_permission_name_max_length... OK
+      Applying auth.0003_alter_user_email_max_length... OK
+      Applying auth.0004_alter_user_username_opts... OK
+      Applying auth.0005_alter_user_last_login_null... OK
+      Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying sessions.0001_initial... OK
+    
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+And we're done! Time to start the web server and see if our website is working!
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+## Starting the web server
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
-```html
-{% load staticfiles %}
-```
+{% filename %}komut-satırı{% endfilename %}
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+    (myvenv) ~/djangogirls$ python manage.py runserver
+    
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+If you are on a Chromebook, use this command instead:
 
-```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```
+{% filename %}Cloud 9{% endfilename %}
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    
 
-Your file should now look like this:
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
-```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
 
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
-```
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
-Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
+{% filename %}tarayıcı{% endfilename %}
 
-![Şekil 14.2](images/color2.png)
+    http://127.0.0.1:8000/
+    
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+If you're using a Chromebook, you'll always visit your test server by accessing:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}tarayıcı{% endfilename %}
 
-```css
-body {
-    padding-left: 15px;
-}
-```
+    https://django-girls-<your cloud9 username>.c9users.io
+    
 
-Add that to your CSS, save the file and see how it works!
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
-![Şekil 14.3](images/margin2.png)
+![It worked!](images/it_worked2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+> We reviewed how web servers work in the **How the Internet works** chapter.
 
-```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
-
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. `font-family: 'Lobster';` satırını parantezler arasına kopyalayıp sayfayı yenileyelim:
-
-{% filename %}blog/static/css/blog.css{% endfilename %}
-
-```css
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
-}
-```
-
-![Şekil 14.3](images/font.png)
-
-Harika!
-
-Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
-
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-```
-
-And now add a class `post` to your `div` containing a blog post.
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div class="post">
-    <p>Yayın tarihi: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaksbr }}</p>
-</div>
-```
-
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
-
-{% filename %}blog/static/css/blog.css{% endfilename %}
-
-```css
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
-
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
-```
-
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-{% for post in posts %}
-    <div class="post">
-        <p>Yayın tarihi: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-```
-
-bununla değiştirelim:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-<div class="content container">
-    <div class="row">
-        <div class="col-md-8">
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>Yayın tarihi: {{ post.published_date }}</p>
-                    </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-```
-
-Bu dosyaları kaydedin ve web sayfanızı yenileyin.
-
-![Şekil 14.4](images/final.png)
-
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
-
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
-
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
-
-Sonraki bölüm için hazır mısın?! :)
+Ready for the next step? It's time to create some content!
