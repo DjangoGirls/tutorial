@@ -87,7 +87,7 @@ Tu archivo `mysite/urls.py` debería verse como este:
 
 Django ahora redirigirá todo lo que vaya hacia 'http://127.0.0.1:8000/' a `blog.urls` y buscará más instrucciones allí.
 
-Cuando escribes expresiones regulares en Python acostúmbrate a poner `r` al principio de la cadena - esto es solamente una pista para que Python entienda que la cadena contenerá caracteres especiales que no son para ser interpretados por Python sino que son parte de la expresión regular.
+Cuando escribes expresiones regulares en Python acostúmbrate a poner `r` al principio de la cadena - esto es solamente una pista para que Python entienda que la cadena contendrá caracteres especiales que no son para ser interpretados por Python sino que son parte de la expresión regular.
 
 ## blog.urls
 
