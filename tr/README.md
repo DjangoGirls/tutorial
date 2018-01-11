@@ -1,27 +1,50 @@
-# What is Django?
+# Django admin
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Let's open the `blog/admin.py` file and replace its contents with this:
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+{% filename %}blog/admin.py{% endfilename %}
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+```python
+from django.contrib import admin
+from .models import Post
 
-## Why do you need a framework?
+admin.site.register(Post)
+```
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-## What happens when someone requests a website from your server?
+![Login page](images/login_page2.png)
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+When prompted, type your username (lowercase, no spaces), email address, and password. Don't worry that you can't see the password you're typing in – that's how it's supposed to be. Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+{% filename %}komut-satırı{% endfilename %}
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
+
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+
+![Django admin](images/django_admin3.png)
+
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+
+![Django admin](images/edit_post3.png)
+
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
