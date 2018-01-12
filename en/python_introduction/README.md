@@ -1,5 +1,5 @@
 # Introduction to Python
-
+> For official and full python tutorial visit https://docs.python.org/3/tutorial/
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Let's write some code!
