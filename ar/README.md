@@ -1,194 +1,429 @@
-# Django models
+# Introduction to the command-line interface
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-## Objects
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+**Let us introduce you to your first new friend: the command line!**
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+## What is the command line?
 
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
-    
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-    CatFood
-    --------
-    taste
-    
+## Open the command-line interface
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+To start some experiments we need to open our command-line interface first.
 
-How will we model blog posts then? We want to build a blog, right?
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-We need to answer the question: What is a blog post? What properties should it have?
+Go to Start menu → Windows System → Command Prompt.
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
-    
+<!--endsec-->
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-So we will need a `publish` method.
+Go to Applications → Utilities → Terminal.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+<!--endsec-->
 
-## Django model
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Knowing what an object is, we can create a Django model for our blog post.
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+<!--endsec-->
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+## Prompt
 
-### Creating an application
+You now should see a white or black window that is waiting for your commands.
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+If you're on Mac or Linux, you probably see `$`, just like this:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
+    $
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+<!--endsec-->
 
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-]
-```
-
-### Creating a blog post model
-
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
-
-Let's open `blog/models.py`, remove everything from it, and write code like this:
-
-{% filename %}blog/models.py{% endfilename %}
-
-```python
-from django.db import models
-from django.utils import timezone
-
-
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
-```
-
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
-
-It looks scary, right? But don't worry – we will explain what these lines mean!
-
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
-
-`class Post(models.Model):` – this line defines our model (it is an `object`).
-
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
-
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
-
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
-
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
-
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
-
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
-
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
-
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
-
-### Create tables for models in your database
-
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+On Windows, it's a `>` sign, like this:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      blog/migrations/0001_initial.py:
-    
-      - Create model Post
+    >
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+<!--endsec-->
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+
+## Your first command (YAY!)
+
+Let's start with something simple. Type this command:
+
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
+    $ whoami
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+<!--endsec-->
+
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > whoami
+    
+
+<!--endsec-->
+
+And then hit `enter`. This is our result:
+
+{% filename %}command-line{% endfilename %}
+
+    $ whoami
+    olasitarska
+    
+
+As you can see, the computer has just printed your username. Neat, huh? :)
+
+> Try to type each command; do not copy-paste. You'll remember more this way!
+
+## Basics
+
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+
+### Current directory
+
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska
+    
+
+> Note: 'pwd' stands for 'print working directory'.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska
+    
+
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+
+<!--endsec-->
+
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+
+* * *
+
+### List files and directories
+
+So what's in it? It'd be cool to find out. Let's see:
+
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    Applications
+    Desktop
+    Downloads
+    Music
+    ...
+    
+
+<!--endsec-->
+
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
+    ...
+    
+
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+
+* * *
+
+### Change current directory
+
+Now, let's go to our Desktop directory:
+
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd Desktop
+    
+
+<!--endsec-->
+
+Check if it's really changed:
+
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Here it is!
+
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+
+* * *
+
+### Create directory
+
+How about creating a practice directory on your desktop? You can do it this way:
+
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > mkdir practice
+    
+
+<!--endsec-->
+
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+* * *
+
+### Exercise!
+
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
+    $ mkdir test
+    $ ls
+    test
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
+    
+
+<!--endsec-->
+
+Congrats! :)
+
+* * *
+
+### Clean up
+
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ..
+    
+
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd ..
+    
+
+<!--endsec-->
+
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Now time to delete the `practice` directory:
+
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
+    
+
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+    
+
+<!--endsec-->
+
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ exit
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > exit
+    
+
+<!--endsec-->
+
+Cool, huh? :)
+
+## Summary
+
+Here is a summary of some useful commands:
+
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+
+## Ready?
+
+Let's dive into Python!
