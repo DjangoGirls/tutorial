@@ -38,6 +38,8 @@ Go to Applications → Utilities → Terminal.
 
 It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
+Often you can press Ctrl + Alt + T to open a new terminal window.
+
 <!--endsec-->
 
 ## Prompt
