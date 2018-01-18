@@ -1,57 +1,58 @@
-# Django admin
+# If you're doing the tutorial at home
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-{% filename %}blog/admin.py{% endfilename %}
+If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-```python
-from django.contrib import admin
-from .models import Post
+Good luck!
 
-admin.site.register(Post)
-```
+# Installation
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
-![Login page](images/login_page2.png)
+<!--endsec-->
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+# Install Python
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+{% include "/python_installation/instructions.md" %}
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+# Set up virtualenv and install Django
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    
+{% include "/django_installation/instructions.md" %}
 
-{% filename %}Windows:{% endfilename %}
+# Install a code editor
 
-    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
-    
+{% include "/code_editor/instructions.md" %}
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+# Install Git
 
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
+{% include "/deploy/install_git.md" %}
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+# Create a GitHub account
 
-![Django admin](images/django_admin3.png)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+# Create a PythonAnywhere account
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+{% include "/deploy/signup_pythonanywhere.md" %}
 
-![Django admin](images/edit_post3.png)
+# Start reading
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+* [How the internet works](../how_the_internet_works/README.md)
+
+* [Introduction to the command line](../intro_to_command_line/README.md)
+
+* [Introduction to Python](../python_introduction/README.md)
+
+* [What is Django?](../django/README.md)
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
