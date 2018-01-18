@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+We import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
 {% filename %}command-line{% endfilename %}
 ```python
