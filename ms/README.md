@@ -1,194 +1,129 @@
-# Django models
+# Django URLs
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-## Objects
+## What is a URL?
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+![Url](images/url.png)
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+## How do URLs work in Django?
 
-    Cat
-    --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
-    
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-    CatFood
-    --------
-    taste
-    
-
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
-
-How will we model blog posts then? We want to build a blog, right?
-
-We need to answer the question: What is a blog post? What properties should it have?
-
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
-
-    Post
-    --------
-    title
-    text
-    author
-    created_date
-    published_date
-    
-
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
-
-So we will need a `publish` method.
-
-Since we already know what we want to achieve, let's start modeling it in Django!
-
-## Django model
-
-Knowing what an object is, we can create a Django model for our blog post.
-
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
-
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
-
-### Creating an application
-
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
-
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
-
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
-
-{% filename %}mysite/settings.py{% endfilename %}
+{% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
+"""mysite URL Configuration
+
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
 ]
 ```
 
-### Creating a blog post model
+As you can see, Django has already put something here for us.
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+The admin URL, which you visited in previous chapter, is already here:
 
-{% filename %}blog/models.py{% endfilename %}
+{% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.db import models
-from django.utils import timezone
-
-
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+    url(r'^admin/', admin.site.urls),
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+## Regex
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+* `^` for the beginning of the text
+* `$` for the end of the text
+* `\d` for a digit
+* `+` to indicate that the previous item should be repeated at least once
+* `()` to capture part of the pattern
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Anything else in the URL definition will be taken literally.
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
+* **/** tells django that another `/` character should follow
+* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+## Your first Django URL!
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-### Create tables for models in your database
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Your `mysite/urls.py` file should now look like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}mysite/urls.py{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
-    Migrations for 'blog':
-      blog/migrations/0001_initial.py:
-    
-      - Create model Post
-    
+```python
+from django.conf.urls import include
+from django.conf.urls import url
+from django.contrib import admin
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('blog.urls')),
+]
+```
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
 
-{% filename %}command-line{% endfilename %}
+Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
-    Running migrations:
-      Rendering model states... DONE
-      Applying blog.0001_initial... OK
-    
+## blog.urls
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import url
+from . import views
+```
+
+Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+
+After that, we can add our first URL pattern:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
+
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+
+![Error](images/error1.png)
+
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
