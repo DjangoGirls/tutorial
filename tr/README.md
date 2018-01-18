@@ -1,447 +1,213 @@
-# Django Forms
+# Introduction to HTML
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+What's a template, you may ask?
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-Like every important part of Django, forms have their own file: `forms.py`.
+## What is HTML?
 
-We need to create a file with this name in the `blog` directory.
+HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+
+## Your first template!
+
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
-       └── forms.py
+    └───templates
+        └───blog
     
 
-OK, let's open it and type the following code:
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-{% filename %}blog/forms.py{% endfilename %}
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-```python
-from django import forms
+See how your website looks now: http://127.0.0.1:8000/
 
-from .models import Post
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-class PostForm(forms.ModelForm):
+![Figure 11.1](images/step1.png)
 
-    class Meta:
-        model = Post
-        fields = ('title', 'text',)
-```
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+Add the following to your template file:
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
-
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
-
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
-
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
-
-So once again we will create a link to the page, a URL, a view and a template.
-
-## Link to a page with the form
-
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<html>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</html>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-After adding the line, your HTML file should now look like this:
+![Figure 11.2](images/step3.png)
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+It worked! Nice work there :)
+
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+
+## Head and body
+
+Each HTML page is also divided into two elements: **head** and **body**.
+
+* **head** is an element that contains information about the document that is not displayed on the screen.
+
+* **body** is an element that contains everything else that is displayed as part of the web page.
+
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+
+For example, you can put a web page title element inside the `<head>`, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+        <p>Hi there!</p>
+        <p>It works!</p>
+    </body>
+</html>
+```
+
+Save the file and refresh your page.
+
+![Figure 11.3](images/step4.png)
+
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+
+## Customize your template
+
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br />` goes to another line (you can't put anything inside br)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
+
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+We've created three `div` sections here.
 
-## URL
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-We open `blog/urls.py` and add a line:
+It gives us this effect:
 
-{% filename %}blog/urls.py{% endfilename %}
+![Figure 11.4](images/step6.png)
 
-```python
-url(r'^post/new/$', views.post_new, name='post_new'),
-```
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-And the final code will look like this:
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-{% filename %}blog/urls.py{% endfilename %}
+## One more thing: deploy!
 
-```python
-from django.conf.urls import url
-from . import views
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
-]
-```
+### Commit, and push your code up to Github
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
-## post_new view
-
-Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-from .forms import PostForm
-```
-
-And then our *view*:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
-
-## Template
-
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
-
-* We have to display the form. We can do that with (for example) a simple {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
-
-![CSFR Forbidden page](images/csrf2.png)
-
-OK, so let's see how the HTML in `post_edit.html` should look:
-
-{% filename %}blog/templates/blog/post_edit.html{% endfilename %}
-
-```html
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    <h1>New post</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
-{% endblock %}
-```
-
-Time to refresh! Yay! Your form is displayed!
-
-![New form](images/new_form2.png)
-
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
-
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
-
-The answer is: nothing. We need to do a little bit more work in our *view*.
-
-## Saving the form
-
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
-
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-if request.method == "POST":
-    [...]
-else:
-    form = PostForm()
-```
-
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-form = PostForm(request.POST)
-```
-
-Easy! The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
-
-We check if the form is valid and if so, we can save it!
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-if form.is_valid():
-    post = form.save(commit=False)
-    post.author = request.user
-    post.published_date = timezone.now()
-    post.save()
-```
-
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
-
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-from django.shortcuts import redirect
-```
-
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-return redirect('post_detail', pk=post.pk)
-```
-
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
-
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
-
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
-
-That is awesome!
-
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
-
-![Logged in error](images/post_create_error.png)
-
-## Form validation
-
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
-
-Try to save the form without `title` and `text`. Guess what will happen!
-
-![Form validation](images/form_validation2.png)
-
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
-
-## Edit form
-
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
-
-Open `blog/templates/blog/post_detail.html` and add the line
-
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
-```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-```
-
-so that the template will look like this:
-
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
-```html
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endblock %}
-```
-
-In `blog/urls.py` we add this line:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
-```
-
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
-
-Let's open `blog/views.py` and add this at the very end of the file:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-form = PostForm(request.POST, instance=post)
-```
-
-…and when we've just opened a form with this post to edit:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-form = PostForm(instance=post)
-```
-
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
-
-![Edit button](images/edit_button2.png)
-
-When you click it you will see the form with our blog post:
-
-![Edit form](images/edit_form2.png)
-
-Feel free to change the title or the text and save the changes!
-
-Congratulations! Your application is getting more and more complete!
-
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
-
-## Security
-
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
-
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
-
-```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```
-
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
-
-```html
-{% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endif %}
-```
-
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
-
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
-
-Open `blog/templates/blog/post_detail.html` and find this line:
-
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
-```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-```
-
-Change it to this:
-
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
-```html
-{% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-{% endif %}
-```
-
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
-
-## One more thing: deploy time!
-
-Let's see if all this works on PythonAnywhere. Time for another deploy!
-
-* First, commit your new code, and push it up to Github:
-
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ git status
+    
+
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+
+{% filename %}command-line{% endfilename %}
+
     $ git add --all .
+    
+
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+
+{% filename %}command-line{% endfilename %}
+
     $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
+    
+
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+
+{% filename %}command-line{% endfilename %}
+
+    $ git commit -m "Changed the HTML for the site."
+    
+
+> **Note** Make sure you use double quotes around the commit message.
+
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+### Pull your new code down to PythonAnywhere, and reload your web app
 
-{% filename %}komut-satırı{% endfilename %}
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
-    $ cd my-first-blog
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
     $ git pull
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
-And that should be it! Congrats :)
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
