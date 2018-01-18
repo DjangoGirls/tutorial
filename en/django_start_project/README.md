@@ -7,7 +7,7 @@ tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commo
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
 is copyrighted by Markus Zapke-Gründemann et al.
 
-We're going to create a blog!
+We're going to create a small blog!
 
 The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
