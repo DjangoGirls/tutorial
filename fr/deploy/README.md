@@ -6,7 +6,7 @@ Jusqu'à présent, votre site web n'était seulement disponible que sur votre or
 
 Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de très nombreux fournisseurs de serveurs sur Internet. Nous allons en utiliser un qui dispose d'un système de déploiement relativement simple : [PythonAnywhere][1]. PythonAnywhere est gratuit pour les petites applications qui n'ont pas beaucoup de visiteurs : cela correspond parfaitement à ce dont nous avons besoin pour le moment.
 
- [1]: https://pythonanywhere.com/
+ [1]: https://www.pythonanywhere.com/
 
 Nous allons aussi utiliser les services [GitHub][2], ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
 
