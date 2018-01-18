@@ -1,106 +1,201 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+## Virtual environment
 
-<!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+{% filename %}command-line{% endfilename %}
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+    $ mkdir djangogirls
+    $ cd djangogirls
+    
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+{% filename %}command-line{% endfilename %}
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+    $ python3 -m venv myvenv
+    
 
-<!--endsec-->
-
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+{% filename %}command-line{% endfilename %}
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+    C:\Users\Name\djangogirls> python -m venv myvenv
+    
+
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: Linux" data-id="python_linux"
+<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 --version
-    Python 3.6.1
+    $ python3 -m venv myvenv
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+
+> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>        apt-get install python3-venv
+>     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     
+> 
+> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python3-venv
+>     
+> 
+> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+>     
+> 
+> To get around this, use the `virtualenv` command instead.
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python-virtualenv
+>     $ virtualenv --python=python3.6 myvenv
+>     
+> 
+> **NOTE:** If you get an error like
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     E: Unable to locate package python3-venv
+>     
+> 
+> then instead run:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     sudo apt install python3.6-venv
+>     
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
+## Working with virtualenv
 
-Type this command into your console:
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
-{% filename %}command-line{% endfilename %}
-
-    $ sudo apt-get install python3.6
-    
-
-<!--endsec-->
-
-<!--sec data-title="Install Python: Fedora" data-id="python_fedora"
+<!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Use this command in your console:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo dnf install python3
+    C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
+> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+>         Execution Policy Change
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>     
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
+<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Use this command in your console:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo zypper install python3
+    $ source myvenv/bin/activate
     
+
+Remember to replace `myvenv` with your chosen `virtualenv` name!
+
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ . myvenv/bin/activate
+>     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+
+OK, we have all important dependencies in place. We can finally install Django!
+
+## Installing Django
+
+Now that you have your `virtualenv` started, you can install Django.
+
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 --version
-    Python 3.6.1
+    (myvenv) ~$ pip install --upgrade pip
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
 
-* * *
+{% filename %}command-line{% endfilename %}
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+    (myvenv) ~$ pip install django~=1.11.0
+    Collecting django~=1.11.0
+      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+    Installing collected packages: django
+    Successfully installed django-1.11.3
+    
+
+<!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
+data-collapse=true ces-->
+
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
+data-collapse=true ces-->
+
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
+data-collapse=true ces-->
+
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+
+<!--endsec-->
+
+That's it! You're now (finally) ready to create a Django application!
