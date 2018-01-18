@@ -68,7 +68,7 @@ ti:
 
 Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *view* denominada `post_detail` y transferirá la información de `pk` que es igual a `5` a esa *view*.
 
-`pk` es la abreviación de `primary key`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variables como te guste (recuerda: ¡minúsculas y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?.¿P<pk>[0-9]+)` podríamos tener la variable `post_id`, así que esto lo verías como: `(?P <post_id>[0-9]+)`.
+`pk` es la abreviación de `primary key`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variables como te guste (recuerda: ¡minúsculas y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?P<pk>[0-9]+)` podríamos tener la variable `post_id`, así que esto lo verías como: `(?P<post_id>[0-9]+)`.
 
 ¡Bien! ¡Actualiza la página: http://127.0.0.1:8000/ ¡Boom! ¡Sin embargo vemos otro error! Como era de esperarse.
 
