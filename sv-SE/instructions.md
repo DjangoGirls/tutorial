@@ -8,7 +8,7 @@ Django is written in Python. We need Python to do anything in Django. Let's star
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
@@ -75,7 +75,7 @@ Use this command in your console:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command dnf is not found. In that case you need to use yum instead.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
 
 <!--endsec-->
 
