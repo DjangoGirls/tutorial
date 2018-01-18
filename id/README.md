@@ -1,27 +1,106 @@
-# What is Django?
+# Django templates
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+## What are template tags?
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Why do you need a framework?
+## Display post list template
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
-## What happens when someone requests a website from your server?
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+```html
+{{ posts }}
+```
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+![Figure 13.1](images/step1.png)
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+As you can see, all we've got is this:
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
+
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
+
+Try this in your template.
+
+![Figure 13.2](images/step2.png)
+
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+```
+
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+
+![Figure 13.3](images/step3.png)
+
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+
+## One more thing
+
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+
+* First, push your code to Github
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
