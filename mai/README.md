@@ -1,51 +1,129 @@
-# Django Girls Tutorial
+# Django URLs
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+## What is a URL?
 
-## Welcome
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+![Url](images/url.png)
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
-## Introduction
+## How do URLs work in Django?
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+{% filename %}mysite/urls.py{% endfilename %}
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+```python
+"""mysite URL Configuration
 
-We hope that we'll be able to make you love technology as much as we do!
+[...]
+"""
+from django.conf.urls import url
+from django.contrib import admin
 
-## What will you learn during the tutorial?
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+]
+```
 
-Once you've finished the tutorial, you will have a simple, working web application: your own blog. We will show you how to put it online, so others will see your work!
+As you can see, Django has already put something here for us.
 
-It will (more or less) look like this:
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-![Figure 0.1](images/application.png)
+The admin URL, which you visited in previous chapter, is already here:
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+{% filename %}mysite/urls.py{% endfilename %}
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+```python
+    url(r'^admin/', admin.site.urls),
+```
 
-## Following the tutorial at home
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+## Regex
 
-In every chapter already covered, there is a link that points to the correct video.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
 
-## About and contributing
+If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+* `^` for the beginning of the text
+* `$` for the end of the text
+* `\d` for a digit
+* `+` to indicate that the previous item should be repeated at least once
+* `()` to capture part of the pattern
 
-## Would you like to help us translate the tutorial to other languages?
+Anything else in the URL definition will be taken literally.
 
-Currently, translations are being kept on crowdin.com platform at:
+Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-https://crowdin.com/project/django-girls-tutorial
+Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-If your language is not listed on crowdin, please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
+* **/** tells django that another `/` character should follow
+* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
+
+## Your first Django URL!
+
+Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+
+We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+
+Your `mysite/urls.py` file should now look like this:
+
+{% filename %}mysite/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import include
+from django.conf.urls import url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('blog.urls')),
+]
+```
+
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+
+Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
+
+## blog.urls
+
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+from django.conf.urls import url
+from . import views
+```
+
+Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+
+After that, we can add our first URL pattern:
+
+{% filename %}blog/urls.py{% endfilename %}
+
+```python
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+```
+
+As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+
+The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+
+![Error](images/error1.png)
+
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
