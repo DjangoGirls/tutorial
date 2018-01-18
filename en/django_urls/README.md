@@ -78,9 +78,9 @@ Your `mysite/urls.py` file should now look like this:
 
 {% filename %}mysite/urls.py{% endfilename %}
 ```python
+from django.conf.urls import include
 from django.conf.urls import url
 from django.contrib import admin
-from django.conf.urls import include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
