@@ -6,7 +6,7 @@ Hasta ahora tu sitio web estaba disponible sólo en tu ordenador, ¡ahora aprend
 
 Como ya has aprendido, un sitio web tiene que estar en un servidor. Hay muchos proveedores, pero usaremos uno que tiene un proceso de despliegue relativamente simple: [PythonAnywhere][1]. PythonAnywhere es gratis para pequeñas aplicaciones que no tienen demasiados visitantes, definitivamente suficiente para este caso.
 
- [1]: https://pythonanywhere.com/
+ [1]: https://www.pythonanywhere.com/
 
 El otro servicio externo que vamos a utilizar es [GitHub][2], un servicio de alojamiento de código. Hay otras opciones por ahí, pero hoy en día casi todos los programadores tienen una cuenta de GitHub, ¡y ahora tú también la vas a tener!
 

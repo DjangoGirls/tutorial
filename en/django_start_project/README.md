@@ -7,7 +7,7 @@ tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commo
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
 is copyrighted by Markus Zapke-Gründemann et al.
 
-We're going to create a simple blog!
+We're going to create a small blog!
 
 The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
@@ -42,8 +42,8 @@ On Windows you should run the following command. **(Don't forget to add the peri
 ```
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`.
-The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
+The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
@@ -107,13 +107,13 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
-> Also add `django-girls-<your_username>.c9users.io` to the ALLOWED_HOSTS if you are using cloud9
+> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Set up a database
 

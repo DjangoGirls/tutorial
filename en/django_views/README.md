@@ -26,7 +26,7 @@ Let's create a *view* as the comment suggests. Add the following minimal view be
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_list(request):
-    return render(request, 'blog/post_list.html')
+    return render(request, 'blog/post_list.html', {})
 ```
 
 As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.

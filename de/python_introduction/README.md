@@ -494,7 +494,7 @@ Bisher haben wir den Python-Code nur im Interpreter eingegeben, wodurch wir imme
 *   Code eingeben und diesen in einer Python-Datei sichern
 *   Und diesen dann laufen lassen!
 
-Um den Python-Interpreter zu beenden, nutze einfach die ~~~ exit()~~~ Funktion:
+Um den Python-Interpreter zu beenden, nutze einfach die Funktion:
 
 ```python
 >>> exit()
@@ -841,7 +841,7 @@ Das würde ausgeben:
 
 `range` ist eine Funktion, die eine Liste von Nummern (eine nach der anderen) erschafft (die Nummern werden von dir als Parameter bereitgestellt).
 
-Merk dir, dass die zweite dieser Nummern, die du als Parameter übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird (das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Nummer 6 enthält). Die liegt daran, weil "range" halb offen ist, was widerum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
+Merk dir, dass die zweite dieser Nummern, die du als Parameter übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird (das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Nummer 6 enthält). Das liegt daran, weil "range" halb offen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
 
 ## Zusammenfassung
 

@@ -205,7 +205,7 @@ Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi
 
 ### Adatbázis létrehozása PythonAnywhere-en
 
-Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző szervert használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.
+Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző adatbázist használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.
 
 A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, a `migrate` és `createsuperuser` parancsokkal:
 

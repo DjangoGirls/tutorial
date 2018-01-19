@@ -2,7 +2,7 @@
 
 Wenn Du dieses Tutorial zu Hause bearbeitest, und nicht auf einer der ["Django Girls"-Veranstaltungen](http://djangogirls.org/events/), kannst du dieses Kapitel komplett überspringen und gleich zum Kapitel [Wie funktioniert das Internet?](../how_the_internet_works/README.md) gehen.
 
-Wir werden die folgenden Punkte so oder so im vollständigen Tutorial betrachten. Das hier ist nur eine zusätzliche Seite, die alle Installationsanleitungen an einem Ort bündelt. Die "Django Girls"-Veranstaltung enthält einen "Installationsabend", an dem wir alles installeren, damit wir uns während des Workshops nicht damit beschäftigen müssen. Diese Seite ist für uns daher sehr hilfreich.
+Wir werden die folgenden Punkte so oder so im vollständigen Tutorial betrachten. Das hier ist nur eine zusätzliche Seite, die alle Installationsanleitungen an einem Ort bündelt. Die "Django Girls"-Veranstaltung enthält einen "Installationsabend", an dem wir alles installieren, damit wir uns während des Workshops nicht damit beschäftigen müssen. Diese Seite ist für uns daher sehr hilfreich.
 
 Wenn es Dir sinnvoll erscheint, kannst du dieses Kapitel natürlich auch bearbeiten. Wenn Du jedoch mit dem Lernen beginnen willst, bevor du eine handvoll Sachen auf deinem Computer installierst, überspringe dieses Kapitel und lies unsere Erklärungen zur Installation später im Tutorial.
 
@@ -26,7 +26,7 @@ Im Workshop wirst Du einen Blog erstellen und es gibt einige Dinge, bei denen es
 
 ## Git installieren
 
-{% include "/code_editor/instructions.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Einen GitHub-Account einrichten
 

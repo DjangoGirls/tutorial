@@ -8,7 +8,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 ## What is HTML?
 
-HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
 HTML stands for "HyperText Markup Language". __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags represent markup __elements__.
 
@@ -102,7 +102,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<p>A paragraph of text</p>`
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
-- `<br />` goes to another line (you can't put anything inside br)
+- `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
 - `<a href="https://djangogirls.org">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page

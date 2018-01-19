@@ -1,6 +1,11 @@
+> Für zu Hause: Dieses Kapitel hat ein Video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+
 > Dieses Unterkapital basiert auf einem Tutorial der Geek Girls Carrots (http://django.carrots.pl/).
 
 Django ist in Python geschrieben. Wir brauchen Python für alles in Django. Fangen wir mit der Installation an! Wir möchten, dass du Python 3.5 installierst, solltest du also bereits eine ältere Version installiert haben, musst du diese aktualisieren.
+
+
+<!--sec data-title="Python installieren: Windows" data-id="python_windows" data-collapse=true ces-->
 
 ### Windows
 
@@ -9,6 +14,23 @@ Python für Windows kannst du auf der Webseite https://www.python.org/downloads/
 Worauf du besonders achten solltest: im zweiten Schritt des Installationsassistenten ("Anpassen") solltest du nach unten scrollen und die Option "Add python.exe to the Path" auswählen, wie hier:
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/add_python_to_windows_path.png)
+
+<!--endsec-->
+
+<!--sec data-title="Python installieren: macOS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+### macOS X
+
+Auf der Website https://www.python.org/downloads/release/python-343/ findest du den passenden Python-Installer:
+
+  * Runteraden der *macOS X 64-bit/32-bit installer*-Datei,
+  * Doppelklick auf *python-3.5.1-macosx10.6.pkg*, um das Installationsprogramm auszuführen.
+
+<!--endsec-->
+
+<!--sec data-title="Python installieren: Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 ### Linux
 
@@ -45,12 +67,14 @@ Gib diesen Befehl in die Konsole ein:
 $ sudo dnf install python3.5
 ```
 
-### OS X
+### openSUSE
 
-Auf der Website https://www.python.org/downloads/release/python-343/ findest du den passenden Python-Installer:
+Gib diesen Befehl in die Konsole ein:
 
-  * Runteraden der *Mac OS X 64-bit/32-bit installer*-Datei,
-  * Doppelklick auf *python-3.5.1-macosx10.6.pkg*, um das Installationsprogramm auszuführen.
+```bash
+$ sudo zypper install python3
+```
+<!--endsec-->
 
 Um zu überprüfen, ob die Installation erfolgreich war, öffne eine Konsole und gib das `python3`-Kommando ein:
 

@@ -5,7 +5,7 @@ rest of the installation instructions.
 ### Cloud 9
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running
-on the Internet where you can install, write, and run software. For the duration
+on the Internet where you can install, write, and run the software. For the duration
 of the tutorial, Cloud 9 will act as your _local machine_. You'll still be
 running commands in a terminal interface just like your classmates on OS X,
 Ubuntu, or Windows, but your terminal will be connected to a computer running
@@ -27,7 +27,7 @@ yourusername:~/workspace $
 ```
 
 This bottom area is your _terminal_, where you will give the computer Cloud 9
-has prepared for you instructions. You can resize that window to make it a bit
+has prepared for your instructions. You can resize that window to make it a bit
 bigger.
 
 ### Virtual Environment
