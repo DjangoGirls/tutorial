@@ -1,57 +1,44 @@
-# Django admin
+# Django views – time to create!
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Time to get rid of the bug we created in the last chapter! :)
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-{% filename %}blog/admin.py{% endfilename %}
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+
+## blog/views.py
+
+OK, let's open up this file and see what's in there:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.contrib import admin
-from .models import Post
+from django.shortcuts import render
 
-admin.site.register(Post)
+# Create your views here.
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Not too much stuff here yet.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-![Login page](images/login_page2.png)
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+{% filename %}blog/views.py{% endfilename %}
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+```python
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-{% filename %}Windows:{% endfilename %}
+Another error! Read what's going on now:
 
-    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
-    
+![Error](images/error.png)
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
-
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
-
-![Django admin](images/django_admin3.png)
-
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
-
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
-
-![Django admin](images/edit_post3.png)
-
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
-
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
