@@ -1,48 +1,218 @@
-# Príručka k Django Girls
+# Django ORM and QuerySets
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+V tejto kapitole sa naučíš, ako sa Django pripája k databáze a ukladá do nej údaje. Poďme na to!
 
-> Toto dielo je zverejnené pod medzinárodnou licenciou Creative Commons Attribution-ShareAlike ("uvedenie autora – rovnaké šírenie") 4.0. Ak chcete zobraziť kópiu tejto licencie, navštívte https://creativecommons.org/licenses/by-sa/4.0/
+## Čo je QuerySet?
 
-## Úvod
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-Mala si niekedy pocit, že svet je stále viac a viac o technológiách a ty v nich zaostávaš? Uvažovala si niekedy, že by si si vytvorila webovú stránku, ale nikdy si nemala dosť motivácie začať? Zdalo sa ti niekedy, že svet softvéru je pre teba príliš komplikovaný a že sama nezvládneš nič vytvoriť?
+Najjednoduchšie bude ukázať si to na príklade. Vyskúšajme si to.
 
-Máme pre teba dobrú správu! Programovanie nie je také zložité, ako sa zdá a chceme ti ukázať, aké môže byť zábavné.
+## Django shell (konzola)
 
-Tento návod z teba neurobí mávnutím čarovného prútika programátorku. Ak chceš byť dobrá, čakajú ťa mesiace či dokonca roky štúdia a praxe. Chceme ti ale ukázať, že vytvorenie webovej stránky nie je také ťažké, ako sa zdá. Pokúsime sa ti vysvetliť rôzne technológie tak, aby si sa ich nemusela báť.
+Open up your local console (not on PythonAnywhere) and type this command:
 
-Dúfame, že sa ti tieto veci zapáčia tak veľmi ako nám!
+{% filename %}command-line{% endfilename %}
 
-## Čo ťa tento návod naučí?
+    (myvenv) ~/djangogirls$ python manage.py shell
+    
 
-Po skončení budeš mať funkčnú webovú aplikáciu: tvoj vlastný blog. Ukážeme ti, ako ho zverejniť na webe, kde ho môže každý navštíviť!
+The effect should be like this:
 
-Výsledok bude vyzerať asi takto:
+{% filename %}command-line{% endfilename %}
 
-![Obrázok 0.1][2]
+```python
+(InteractiveConsole)
+>>>
+```
 
- [2]: images/application.png
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-> Ak budeš na tomto projekte pracovať sama a nemáš mentora, ktorý ti pomáha, môžeš v prípade problémov navštíviť tento chat: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Požiadali sme našich mentorov, ale aj absolventky, aby sa na tomto chate občas ukázali a pomohli ostatným, ktorí môžu zápasiť s problémami! Neboj sa pripojiť a opýtať sa, na čo potrebuješ!
+### Všetky objekty
 
-OK, [začnime pekne po poriadku...][3]
+Skúsme najskôr zobraziť všetky naše príspevky. To sa robí nasledovným príkazom:
 
- [3]: ./how_the_internet_works/README.md
+{% filename %}command-line{% endfilename %}
 
-## Informácie a možnosti ako sa zapojiť
+```python
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+```
 
-Tento návod vytvorili a udržiavajú [DjangoGirls][4]. Ak nájdete chyby alebo by ste chceli aktualizovať tento návod, prosím [postupujte podľa pokynov][5].
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
 
- [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
+{% filename %}command-line{% endfilename %}
 
-## Chceš pomôcť s prekladom do iných jayzkov?
+```python
+>>> from blog.models import Post
+```
 
-V súčasnosti koordinujeme preklady cez platformu crowdin.com:
+This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
-https://crowdin.com/project/django-girls-tutorial
+{% filename %}command-line{% endfilename %}
 
-Ak tvoj jazyk nie je v zozname na crowdin.com, [daj nám prosím vedieť][6] a povedz, aký jazyk máme pridať.
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
+```
 
- [6]: https://github.com/DjangoGirls/tutorial/issues/new
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+
+### Create object
+
+Takto vytvoríš nový Post objekt v databáze:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+
+Najskôr naimportujme User model:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.contrib.auth.models import User
+```
+
+Akých užívateľov máme v našej databáze? Skús toto:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
+
+This is the superuser we created earlier! Let's get an instance of the user now:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> me = User.objects.get(username='ola')
+```
+
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+
+Teraz už konečne môžeme vytvoriť náš prvý príspevok:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
+
+Hurá! Chceš si overiť, či to fungovalo?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
+
+Je to tam, jeden príspevok v zozname pribudol!
+
+### Pridaj viac príspevkov
+
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+
+### Filtrovanie objektov
+
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Použijeme `filter` namiesto `all` v príkaze `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Náš kúsok kódu bude teraz vyzerať takto:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(author=ja)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
+
+> **Poznámka** Medzi `title` a `contains` sú dva podčiarkovníky (`_`). Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
+
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySety tiež umožňujú zoradiť zoznamy objektov. Skúsme ich zoradiť podľa dátumu vytvorenia (pole `created_date`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Reťazenie QuerySetov
+
+QuerySety môžeš dokonca kombinovať pomocou **reťazenia**:
+
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    
+
+This is really powerful and lets you write quite complex queries.
+
+Cool! You're now ready for the next part! To close the shell, type this:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> exit()
+$
+```
