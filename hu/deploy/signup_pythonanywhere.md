@@ -1,5 +1,5 @@
-Most itt az ideje, hogy létrehozz magadnak egy ingyenes, "Kezdő" ("Beginner") fiókot a PythonAnywhere oldalon.
+Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Megjegyzés:** A blogod címe, vagyis URL-je `felhasználónév.pythonanywhere.com` lesz, vagyis érdemes a regisztrációkor felhasználónévnek vagy a saját becenevedet választani, vagy a blogod témájához kapcsolódó nevet.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
