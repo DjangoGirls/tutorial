@@ -1,10 +1,11 @@
-# Administração
+# Django admin
 
-Para adicionar, editar e remover postagens que nós criamos usaremos o Django admin.
+To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Vamos abrir o arquivo `blog/admin.py` e substituir seu conteúdo por:
+Let's open the `blog/admin.py` file and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
+
 ```python
 from django.contrib import admin
 from .models import Post
@@ -12,39 +13,45 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Como você pode ver, nós importamos (incluímos) o modelo Post definido no capítulo anterior. Para tornar nosso modelo visível na página de administração, nós precisamos registrá-lo com: `admin.site.register(Post)`.
+As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-OK, hora de olhar para o nosso modelo de Post. Lembre-se de executar `python manage.py runserver` no console para executar o servidor web. Vá para o navegador e digite o endereço http://127.0.0.1:8000/admin/ Você verá uma página de login assim:
+OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Página de login](images/login_page2.png)
+![Login page](images/login_page2.png)
 
-Para fazer login você precisa criar um *superuser* - um usuário que possui controle sobre tudo no site. Volte para o terminal e digite `python manage.py createsuperuser`, pressione enter.
+To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-> Lembre-se, para escrever novos comandos enquanto o servidor web estiver rodando, abra um novo terminal e ative seu ambiente
-virtual. Nós revisamos como escrever novos comandos no capítulo <b>Seu primeiro projeto Django!</b>, na seção <b>Iniciando o servidor web</b>.
+> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
-Quando perguntado, digite seu nome de usuário (minúsculas, sem espaços), endereço de email, e senha. Não se preocupe que você não pode ver a senha que você está digitando - é assim que deve ser. Apenas digite e pressione `enter` para continuar. A saída deve parecer com essa (onde username e email devem ser os seus):
+{% filename %}Mac OS X or Linux:{% endfilename %}
 
-{% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py createsuperuser
-Username: admin
-Email address: admin@admin.com
-Password:
-Password (again):
-Superuser created successfully.
-```
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    
 
-Volte para a o navegador e faça login com as credenciais de superuser que você escolheu, você deve visualizar o painel de controle do Django admin.
+{% filename %}Windows:{% endfilename %}
 
-![Administração do Django](images/django_admin3.png)
+    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
+    
 
-Vá para as postagens e experimente um pouco com elas. Adicione cinco ou seis postagens. Não se preocupe com o conteúdo - você pode copiar e colar algum texto deste tutorial para o conteúdo para economizar tempo :).
+When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
-Certifique-se que pelo menos duas ou três postagens (mas não todas) tenham a data de publicação definida. Isso será útil depois.
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
 
-![Administração do Django](images/edit_post3.png)
+Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
 
-Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/1.9/ref/contrib/admin/
+![Django admin](images/django_admin3.png)
 
-Este é provavelmente um bom momento para tomar um café (ou chá) ou comer alguma coisa para repor as energias. Você criou seu primeiro modelo de Django - você merece um pouco de descanso!
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+
+Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+
+![Django admin](images/edit_post3.png)
+
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+
+This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
