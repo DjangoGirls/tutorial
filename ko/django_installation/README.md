@@ -1,8 +1,7 @@
-# 장고 설치하기
+# Django installation
 
-> **Note** 크롬북 사용자는 이번 장을 건너뛰고, [크롬북에서 설치하기](../chromebook_setup/README.md) 장으로 가세요.
-
-
-> **Note** 이미 설치를 끝냈다면 다음 장으로 넘어세요!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
