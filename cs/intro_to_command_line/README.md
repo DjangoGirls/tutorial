@@ -1,305 +1,429 @@
-# Úvod k příkazové řádce
+# Introduction to the command-line interface
 
-Hm, to je vzrušující, že? Napíšeš svůj první řádek kódu za pouhých pár minut :)
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-**Dovol nám, abychom ti představili tvého prvního nového přítele: příkazovou řádku! **
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-Následující kroky ti ukážou, jak používat černé okno, které všichni počítačoví odborníci používají. Může to na první pohled vypadat trochu děsivě, ale opravdu je to jen okno, které čeká na tvé příkazy.
+**Let us introduce you to your first new friend: the command line!**
 
-> **Poznáma** Ber, prosím, na vědomí, že v tomto tutoriálu používáme termíny 'adresář' a 'složka', ale je to jedna a ta samá věc.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-## Co je příkazová řádka?
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-Okno, které se obvykle nazývá **příkazová řádka** nebo **rozhraní příkazové řádky**, je textová aplikace pro zobrazování, zpracovávání a manipulaci se soubory na tvém počítači. Docela jako Windows Explorer nebo Finder na Mac, ale bez grafického rozhraní. Další jména pro příkazovou řádku jsou: *cmd*, *prompt*, *command line*, *konzole* nebo *terminál*.
+## What is the command line?
 
-## Otevři rozhraní příkazové řádky
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-Chceš-li začít experimentovat, je třeba nejprve otevřít naše rozhraní příkazové řádky.
+## Open the command-line interface
 
-### Windows
+To start some experiments we need to open our command-line interface first.
 
-Jdi na menu Start → Všechny programy → Příslušenství → Příkazová řádka.
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-### Mac OS X
+Go to Start menu → Windows System → Command Prompt.
 
-Aplikace → Nástroje → Terminál.
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-### Linux
+<!--endsec-->
 
-Pravděpodobně ji nalezneš pod Aplikace → Příslušenství → Terminál, ale závisí to na tvém systému. Pokud to tam není, prostě to vygoogli :)
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-## Příkazová řádka
+Go to Applications → Utilities → Terminal.
 
-Nyní bys měla vidět bílé nebo černé okno, které čeká na tvé příkazy.
+<!--endsec-->
 
-Pokud jsi na Mac nebo na Linuxu, pravděpodobně uvidíš výzvu začínající tímto znakem `$`, právě takhle:
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-```
-$
-```  
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
 
-V systému Windows je to tento znak `>`:
+<!--endsec-->
 
-```
->
-```  
+## Prompt
 
-Každý příkaz budeš psát za tento znak a jednu mezeru, ale není nutné to zadávat. Tvůj počítač to udělá za tebe :)
+You now should see a white or black window that is waiting for your commands.
 
-> Jen malá Poznámka: někteří mohou vidět něco jako `C:\Users\ola >` nebo `Olas-MacBook-Air: ~ ola$` před znakem $. To je naprosto v pořádku. V tomto kurzu se jen snažíme vše zjednodušit na minimum.
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-## Tvůj první příkaz (hurá!)
+If you're on Mac or Linux, you probably see `$`, just like this:
 
-Pojďme začít s něčím jednoduchým. Zadej tento příkaz:
+{% filename %}command-line{% endfilename %}
 
-```
-$ whoami
-```  
+    $
+    
 
-nebo
+<!--endsec-->
 
-```
-> whoami
-```  
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-A zmáčkni `enter`. Tohle je výsledek:
+On Windows, it's a `>` sign, like this:
 
-```
-$ whoami
-olasitarska
-```  
+{% filename %}command-line{% endfilename %}
 
-Jak vidíš, počítač právě vypsal tvé uživatelské jméno. Pěkný, co?:)
+    >
+    
 
-> Zkus každý příkaz zadat, nekopíruj ho prostým vyjmout/vložit. Zapamatuješ si tak více!
+<!--endsec-->
 
-## Základy
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-Každý operační systém má mírně odlišnou sadu příkazů na příkazové řádce, takže se ujisti, že sleduješ pokyny pro tvůj operační systém. Zkusme to, ano?
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-### Aktuální složka
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Bylo by hezké vědět, kde právě jsme, ne? Podívejme se. Zadej následující příkaz a stiskni `enter`:
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-```
-$ pwd
-/Users/olasitarska
-```  
+## Your first command (YAY!)
 
-Pokud jsi v systému Windows:
+Let's start by typing this command:
 
-```
-> cd
-C:\Users\olasitarska
-```  
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-Pravděpodobně se ti zobrazí něco podobného. Jakmile otevřeš příkazovou řádku, obvykle začínáš ve svém domovském adresáři.
+{% filename %}command-line{% endfilename %}
 
-> Poznámka: 'pwd' je zkratka pro "print working directory / zobrazení cesty pro pracovní adresář".
+    $ whoami
+    
 
-* * *
+<!--endsec-->
 
-### Seznam souborů a adresářů
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-Tak co je v něm? Bylo by fajn zjistit, co je v našem adresáři. Podívejme se:
+{% filename %}command-line{% endfilename %}
 
-```
-$ ls
-Aplikace
-Desktop
-Stažené soubory
-Hudba...
-```  
+    > whoami
+    
 
-Windows:
+<!--endsec-->
 
-```
-> dir
-Directory of C:\Users\olasitarska
-05/08/2014 07:28 PM <DIR> Applications
-05/08/2014 07:28 PM <DIR> Desktop
-05/08/2014 07:28 PM <DIR> Downloads
-05/08/2014 07:28 PM <DIR> Music
-...
-```  
+And then hit `enter`. This is our result:
 
-* * *
+{% filename %}command-line{% endfilename %}
 
-### Změna aktuálního adresáře
+    $ whoami
+    olasitarska
+    
 
-Teď pojďme do adresáře plochy:
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-```
-$ cd Desktop
-```  
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-Windows:
+## Basics
 
-```
-> cd Desktop
-```  
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-Zkontroluj, zda-li se adresář skutečně změnil:
+### Current directory
 
-```
-$ pwd
-/Users/olasitarska/Desktop
-```  
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-Windows:
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-```
-> cd
-C:\Users\olasitarska\Desktop
-```  
+{% filename %}command-line{% endfilename %}
 
-A je to!
+    $ pwd
+    /Users/olasitarska
+    
 
-> PRO tip: Pokud zadáš `cd D` a poté stiskneš klávesu `tab` na klávesnici, příkazová řádka automaticky předvyplní zbytek názvu, tak můžeš adresáře procházet rychleji. Pokud existuje více než jedna složka od "D", musíš tlačítko `tab` zmáčknout dvakrát a zobrazí se ti seznam dostupných možností.
+> Note: 'pwd' stands for 'print working directory'.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska
+    
+
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+
+<!--endsec-->
+
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Jak vytvořit složku
+### List files and directories
 
-Co si vytvořit pokusnou složku na ploše? Můžeš to udělat tímto způsobem:
+So what's in it? It'd be cool to find out. Let's see:
 
-```
-$ mkdir pokus
-```  
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
 
-```
-> mkdir pokus
-```  
+    $ ls
+    Applications
+    Desktop
+    Downloads
+    Music
+    ...
+    
 
-Tento malý příkaz vytvoří složku s názvem `pokus` na ploše. Zda se na ploše složka vytvořila můžeš zkontrolovat pouhým pohledem na pracovní plochu nebo spuštěním příkazu `ls` nebo `dir`! Zkus to :)
+<!--endsec-->
 
-> PRO tip: Pokud nechceš znovu a znovu zadávat stejné příkazy, zkus stisknutím `šipka nahoru` a `šipka dolů` na klávesnici přepínat mezi nedávno použitými příkazy.
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-* * *
+{% filename %}command-line{% endfilename %}
 
-### Cvičení!
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
+    ...
+    
 
-Malá výzva: v nově vytvořeném adresáři `pokus` vytvoř adresář s názvem `test`. Použij příkazy `cd` a `mkdir`.
-
-#### Řešení:
-
-```
-$ cd pokus
-$ mkdir test
-$ ls
-test
-```  
-
-Windows:
-
-```
-> cd pokus
-> mkdir test
-> dir
-05/08/2014 07:28 PM <DIR>      test
-```  
-
-Gratulujeme! :)
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
-### Jak odstranit složku
+### Change current directory
 
-Nechceme si nechat nepořádek v počítači, takže musíme odstranit vše, co jsme až do tohoto okamžiku dělaly.
+Now, let's go to our Desktop directory:
 
-Za prvé se potřebujeme dostat zpátky na plochu:
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-```
-$ cd ..
-```  
+{% filename %}command-line{% endfilename %}
 
-Windows:
+    $ cd Desktop
+    
 
-```
-> cd ..
-```  
+<!--endsec-->
 
-Použití `..` s příkazem `cd` změní tvůj aktuální adresář na rodičovský adresář (adresář, který obsahuje tvůj aktuální adresář).
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-Zkontroluj, kde se nacházíš:
+{% filename %}command-line{% endfilename %}
 
-```
-$ pwd
-/Users/olasitarska/Desktop
-```  
+    > cd Desktop
+    
 
-Windows:
+<!--endsec-->
 
-```
-> cd
-C:\Users\olasitarska\Desktop
-```  
+Check if it's really changed:
 
-Teď je čas vymazat adresář `pokus`:
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-> **Pozor**: odstraňování souborů pomocí `del`, `rmdir` nebo `rm` je nevratné, což znamená, *že odstraněné soubory budou navždy pryč*! Takže buď s tímto příkazem velmi opatrná.
+{% filename %}command-line{% endfilename %}
 
-```
-$ rm -r pokus
-```  
+    $ pwd
+    /Users/olasitarska/Desktop
+    
 
-Windows:
+<!--endsec-->
 
-```
-> rmdir /S pokus
-Are you sure <Y/N>? Y
-```  
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-Hotovo! Vše je skutečně odstraněno. Pojďme to zkontrolovat:
+{% filename %}command-line{% endfilename %}
 
-```
-$ ls
-```  
+    > cd
+    C:\Users\olasitarska\Desktop
+    
 
-Windows:
+<!--endsec-->
 
-```
-> dir
-```  
+Here it is!
 
-### Zavření příkazové řádky
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
-To je pro tuto chvíli vše! Bezpečně můžeš nyní zavřít příkazovou řádku. Uděláme to hackerským stylem, ano? :)
+* * *
 
-```
-$ exit
-```  
+### Create directory
 
-Windows:
+How about creating a practice directory on your desktop? You can do it this way:
 
-```
-> exit
-```  
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-Suprový, co? :)
+{% filename %}command-line{% endfilename %}
 
-## Shrnutí
+    $ mkdir practice
+    
 
-Zde je přehled některých užitečných příkazů:
+<!--endsec-->
 
-| Příkaz (Windows) | Příkaz (Mac OS / Linux) | Popis                    | Příklad                                           |
-| ---------------- | ----------------------- | ------------------------ | ------------------------------------------------- |
-| exit             | exit                    | Zavřít okno              | **exit**                                          |
-| cd               | cd                      | změnit adresář           | **cd test**                                       |
-| dir              | ls                      | seznam adresářů/souborů  | **dir**                                           |
-| copy             | cp                      | kopírovat soubor         | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                      | přesunout soubor         | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                   | vytvořit nový adresář    | **mkdir testdirectory**                           |
-| del              | rm                      | odstranit adresář/soubor | **del c:\test\test.txt**                        |
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-Toto je jen velmi malá část příkazů, které lze spustit v příkazovém řádku, ale pro dnešek to bude stačit.
+{% filename %}command-line{% endfilename %}
 
-Pokud jsi zvědavá, na [ss64.com][1] je úplný přehled příkazů pro všechny operační systémy.
+    > mkdir practice
+    
 
- [1]: http://ss64.com
+<!--endsec-->
 
-## Připravena?
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-Pojďme se ponořit do Pythonu!
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+* * *
+
+### Exercise!
+
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
+    $ mkdir test
+    $ ls
+    test
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
+    
+
+<!--endsec-->
+
+Congrats! :)
+
+* * *
+
+### Clean up
+
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ..
+    
+
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd ..
+    
+
+<!--endsec-->
+
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Now time to delete the `practice` directory:
+
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
+    
+
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ ls
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > dir
+    
+
+<!--endsec-->
+
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ exit
+    
+
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > exit
+    
+
+<!--endsec-->
+
+Cool, huh? :)
+
+## Summary
+
+Here is a summary of some useful commands:
+
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+
+## Ready?
+
+Let's dive into Python!
