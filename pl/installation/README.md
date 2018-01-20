@@ -1,49 +1,58 @@
-# Jeśli robisz ten kurs w domu
+# If you're doing the tutorial at home
 
-Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa Internet](../how_the_internet_works/README.md)
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić, więc zebraliśmy wszystkie potrzebne informacje w jedno miejsce.
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-Jeśli chcesz, też możesz zainstalować wszystko od razu. Ale jeśli wolisz zacząć naukę już teraz bez instalowania najpierw kilku nowych rzeczy na swoim komputerze, pomiń ten rozdział. Wszystko wytłumaczymy później.
+If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Powodzenia!
+Good luck!
 
-# Instalacja
+# Installation
 
-Podczas warsztatów będziesz budować bloga, ale abyś mogła zacząć programować, musimy najpierw zainstalować kilka rzeczy.
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-# Zainstaluj Pythona
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Utwórz środowisko wirtualne i zainstaluj Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Zainstaluj edytor kodu
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Zainstaluj Gita
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Utwórz konto na GitHubie
+# Create a GitHub account
 
-Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto użytkownika.
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
-# Utwórz konto na PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Zacznij czytać
+# Start reading
 
-Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-  * [Jak działa Internet](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-  * [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-  * [Wprowadzenie do Pythona](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-  * [Czym jest Django?](../django/README.md)
+* [What is Django?](../django/README.md)
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
