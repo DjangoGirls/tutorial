@@ -1,29 +1,52 @@
-<!--sec data-title="Windows" data-id="git_win" data-collapse=true ces-->
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
-Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). 
+## Installing Git
 
-Możesz klikać "dalej dalej dalej" na każdym kroku oprócz poniższych: 
+<!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
+data-collapse=true ces-->
 
-W kroku, który nazywa się `"Adjusting your PATH environment"`, wybierz **"Run Git and associated Unix tools from the Windows command-line"** (opcję na samej górze). Poza tym domyślne ustawienia są w porządku. 
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-Upewnij się jeszcze, że w kolejnym kroku `"Configuring the line ending conversions"` wybrana jest opcja **"Checkout Windows-style, commit Unix-style line endings"**.
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+
+<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
+
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_osx" data-collapse=true ces-->
+<!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
 
-Ściągnij Gita z [git-scm.com](https://git-scm.com/) i postępuj zgodnie z instrukcją.
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo apt-get install git
+```
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="git_linux" data-collapse=true ces-->
+<!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
 
-Możliwe, że git jest już zainstalowany domyśle, ale jeśli tak nie jest, powinien być dostępny za pośrednictwem menedżera pakietów, więc spróbuj:
+{% filename %}command-line{% endfilename %}
 
-    sudo apt-get install git
-    # or
-    sudo yum install git
-    # or
-    sudo zypper install git
+```bash
+$ sudo dnf install git
+```
+
+<!--endsec-->
+
+<!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+```bash
+$ sudo zypper install git
+```
 
 <!--endsec-->
