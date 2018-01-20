@@ -1,97 +1,154 @@
-# Introducción a la interfaz de línea de comandos
+# Introduction to the command-line interface
 
-Es emocionante, ¿verdad? Vas a escribir tu primera línea de código en pocos minutos :)
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-**Permítenos presentarte a tu primer nuevo amigo: ¡la línea de comandos!**
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-Los siguientes pasos te mostrarán cómo usar aquella ventana negra que todos los hackers usan. Puede parecer un poco aterrador al principio pero es solo un mensaje en pantalla que espera a que le des órdenes.
+**Let us introduce you to your first new friend: the command line!**
 
-## ¿Qué es la línea de comandos?
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-La ventana, que generalmente es llamada **línea de comandos** o **interfaz de línea de comandos**, es una aplicación basada en texto para ver, manejar y manipular archivos en tu computadora (como por ejemplo el Explorador de Windows o Finder en Mac, pero sin la interfaz gráfica). Otros nombres para la línea de comandos son: *cmd*, *CLI*, *símbolo del sistema*, *consola* o *terminal*.
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## Abrir la interfaz de línea de comandos
+## What is the command line?
 
-Lo primero que debemos hacer para empezar a experimentar con nuestra interfaz de linea de comandos es abrirla.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-### Windows
+## Open the command-line interface
 
-Ir al menú Inicio → Todos los programas → Accesorios → Command Prompt
+To start some experiments we need to open our command-line interface first.
 
-### Mac OS X
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Aplicaciones → Servicios → Terminal
+Go to Start menu → Windows System → Command Prompt.
 
-### Linux
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depende de tu distribución. Si no lo encuentras, Googlealo :)
+<!--endsec-->
+
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+
+Go to Applications → Utilities → Terminal.
+
+<!--endsec-->
+
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
+
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
 
 ## Prompt
 
-Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
+You now should see a white or black window that is waiting for your commands.
 
-Si estás en Mac o Linux, probablemente verás `$`, así:
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+{% filename %}command-line{% endfilename %}
 
     $
     
 
-En Windows, es un signo así `>`, como este:
+<!--endsec-->
+
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
+
+On Windows, it's a `>` sign, like this:
+
+{% filename %}command-line{% endfilename %}
 
     >
     
 
-Cada comando será precedido por este signo y un espacio, pero no tienes que escribirlo. Tu computadora lo hará por ti :)
+<!--endsec-->
 
-> Sólo una pequeña nota: en tu caso, tal vez hay algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del prompt y eso es 100% correcto. En este tutorial lo simplificaremos lo más posible.
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-## Tu primer comando (¡YAY!)
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-Vamos a empezar con algo simple. Escribe este comando:
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+
+## Your first command (YAY!)
+
+Let's start by typing this command:
+
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     
 
-o
+<!--endsec-->
+
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > whoami
     
 
-Y luego oprime la tecla Enter. Este es el resultado:
+<!--endsec-->
 
-    $ whoami olasitarska
+And then hit `enter`. This is our result:
+
+{% filename %}command-line{% endfilename %}
+
+    $ whoami
+    olasitarska
     
 
-Como puedes ver, la computadora sólo te presentó tu nombre de usuario. Bien, ¿eh? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Trata de escribir cada comando, no copies y pegues. ¡Te acordarás más de esta manera!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Básicos
+## Basics
 
-Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Directorio actual
+### Current directory
 
-Sería bueno saber dónde estamos ahora, ¿cierto? Vamos a ver. Escribe este comando y oprime Enter:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska
     
 
-Si estás en Windows:
+> Note: 'pwd' stands for 'print working directory'.
 
-    > cd 
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
     C:\Users\olasitarska
     
 
-Probablemente verás algo similar en tu máquina. Una vez que abres la línea de comandos generalmente empiezas en el directorio home de tu usuario.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
-> Nota: 'pwd' significa 'print working directory' - en español, 'mostrar directorio de trabajo'.
+<!--endsec-->
+
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### Lista de archivos y directorios
+### List files and directories
 
-¿Qué hay aquí? Sería bueno saber. Veamos:
+So what's in it? It'd be cool to find out. Let's see:
+
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -101,175 +158,272 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
     ...
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
-    Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR> Applications
-    05/08/2014 07:28 PM <DIR> Desktop
-    05/08/2014 07:28 PM <DIR> Downloads
-    05/08/2014 07:28 PM <DIR> Music
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
     ...
     
 
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+
 * * *
 
-### Cambia el directorio actual
+### Change current directory
 
-¿Quizás podemos ir a nuestro escritorio?
+Now, let's go to our Desktop directory:
+
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd Desktop
     
 
-Comprueba si realmente ha cambiado:
+<!--endsec-->
 
-    $ pwd 
+Check if it's really changed:
+
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
     /Users/olasitarska/Desktop
     
 
-Windows:
+<!--endsec-->
 
-    > cd 
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
     C:\Users\olasitarska\Desktop
     
 
-¡Aquí está!
+<!--endsec-->
 
-> Pro tip: si escribes `cd D` y luego oprimes `tab` en el teclado, la línea de comandos automáticamente completará el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta que empiece con "D", presiona el botón `tab` dos veces para obtener una lista de opciones.
+Here it is!
 
-* * *
-
-### Crear directorio
-
-¿Qué tal si creamos un directorio de Django Girls en tu escritorio? Puedes hacerlo de esta manera:
-
-    $ mkdir djangogirls
-    
-
-Windows:
-
-    > mkdir djangogirls
-    
-
-Este pequeño comando creará una carpeta con el nombre `djangogirls` en tu escritorio. ¡Puedes comprobar si está allí buscando en tu escritorio o ejecutando el comando `ls` (si estás usando Mac o Linux) o `dir` (si estás usando Windows)! Inténtalo :)
-
-> Pro tip: Si no quieres escribir una y otra vez los mismos comandos, prueba oprimiendo la `flecha arriba` y `flecha abajo` de tu teclado para ver recientes comandos utilizados.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### ¡Ejercicios!
+### Create directory
 
-Un pequeño reto para ti: en el directorio recién creado `djangogirls` crea un directorio llamado `test`. Utiliza los comandos `cd` y `mkdir`.
+How about creating a practice directory on your desktop? You can do it this way:
 
-#### Solución:
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-    $ cd djangogirls 
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir practice
+    
+
+<!--endsec-->
+
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > mkdir practice
+    
+
+<!--endsec-->
+
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+
+* * *
+
+### Exercise!
+
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd practice
     $ mkdir test
     $ ls
+    test
     
 
-Windows:
+<!--endsec-->
 
-    > cd djangogirls 
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd practice
     > mkdir test
-    > dir 
-    08/05/2014 19:28 < DIR > test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
     
 
-¡Felicitaciones! :)
+<!--endsec-->
+
+Congrats! :)
 
 * * *
 
-### Limpiar
+### Clean up
 
-No queremos dejar un desorden, así que vamos a eliminar todo lo que hicimos hasta este momento.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-En primer lugar, tenemos que volver al escritorio:
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
 
-`cd` `..` cambiará el directorio actual al directorio padre (que significa el directorio que contiene el directorio actual).
+<!--endsec-->
 
-Revisa dónde estás:
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-    $ pwd 
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
     /Users/olasitarska/Desktop
     
 
-Windows:
+<!--endsec-->
 
-    > cd 
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
     C:\Users\olasitarska\Desktop
     
 
-Ahora es hora de eliminar el directorio `djangogirls`.
+<!--endsec-->
 
-> **Atención**: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre* Debes ser muy cuidadosa con este comando.
+Now time to delete the `practice` directory:
 
-    $ rm -r djangogirls
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ rm -r practice
     
 
-Windows:
+<!--endsec-->
 
-    > rmdir/s djangogirls 
-    djangogirls, ¿Estás seguro <Y/N>? Y
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
-Hecho! Asegurémonos que en verdad fueron borrados, vamos a ver:
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
     
 
-### Salida
+<!--endsec-->
 
-¡Esto es todo por ahora! Ahora puedes cerrar la línea de comandos sin problemas. Vamos a hacerlo al estilo hacker, ¿bien? :)
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > exit
     
 
-Genial, ¿no? :)
+<!--endsec-->
 
-## Índice
+Cool, huh? :)
 
-Aquí hay una lista de algunos comandos útiles:
+## Summary
 
-| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                  | Ejemplo                                           |
-| ----------------- | ------------------------ | ---------------------------- | ------------------------------------------------- |
-| exit              | exit                     | Cierra la ventana            | **exit**                                          |
-| cd                | cd                       | Cambia el directorio         | **cd test**                                       |
-| dir               | ls                       | Lista directorios/archivos   | **dir**                                           |
-| copy              | cp                       | Copia de archivos            | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | Mueve archivos               | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | Crea un nuevo directorio     | **mkdir testdirectory**                           |
-| del               | rm                       | Elimina archivos/directorios | **del c:\test\test.txt**                        |
+Here is a summary of some useful commands:
 
-Estos son solo algunos de los comandos que puedes ejecutar en la línea de comandos. No vas a usar nada más que esos por ahora.
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Si tienes curiosidad, [ss64.com][1] contiene una referencia completa de comandos para todos los sistemas operativos.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
- [1]: http://ss64.com
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## ¿Lista?
+## Ready?
 
-¡Vamos a sumergirnos en Python!
+Let's dive into Python!
