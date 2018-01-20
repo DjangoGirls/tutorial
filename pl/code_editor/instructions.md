@@ -1,41 +1,31 @@
-Tylko który wybrać? To nie takie proste, bo wybór zależy w dużej mierze od tego, czego oczekujesz od swojego edytora. Większość programistów Pythona używa bardzo skomplikowanych i niezwykle bogatych w różne funkcjonalności IDE (z ang. Integrated Development Environments - zintegrowane środowisko deweloperskie), takich jak: PyCharm. Jako osoba początkująca nie potrzebujesz jednak aż tak skomplikowanego edytora. Wystarczy coś prostszego, ale nadal dostatecznie użytecznego.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-Poniżej znajdziesz nasze propozycje, ale jeżeli masz taką możliwość, możesz poprosić o rekomendację Twojego coacha -- będzie mu łatwiej pomagać Ci podczas warsztatów.
-
-## Visual Studio Code
-VS Code to najnowszy edytor stworzony przez Microsoft. Edytor ten jest dostępny na wszystkich systemach - Windows, Linux, OsX.
-Jest całkowicie darmowy, posiada wiele pluginów ułatwiających pracę z kodem.
-
-[Pobierz tutaj](https://code.visualstudio.com/)
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów operacyjnych. Czasami nie jest jednak zbyt prosty w zainstalowaniu.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Pobierz tutaj](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text to bardzo popularny edytor z darmowym okresem testowania. Jest bardzo prosty do zainstalowania i używania, dostępny na wszystkie systemy operacyjne.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-`Uwaga!`
-
-Sublime jest bezpłatny tylko do celów wypróbowania - w trakcie pracy na nim, będzie wyskakiwać w różnych momentach okienko zachęcające do jego zakupu! 
-
-[Pobierz tutaj](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom to nowy edytor kodu stworzony przez [GitHuba](https://github.com/). Jest darmowy, ma otwarte źródła, jest łatwy do zainstalowania i używania. Dostępny na Windowsa, OS X i Linuxa.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Pobierz tutaj](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Dlaczego instalujemy edytor kodu?
+## Why are we installing a code editor?
 
-Może się zastanawiasz dlaczego instalujemy specjalny edytor kodu zamiast używać Notatnika albo Notepada.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Po pierwsze kod musi być napisany **zwykłym tekstem** (ang. "plain text"), a programy takie jak Word albo Textedit sprawiają, że wyrazy nie są tak naprawdę tylko tekstem - możesz zmieniać ich wielkość, czcionkę czy kolor. Jest to tak zwany sformatowany tekst (ang. rich text), używający różnych formatów, takich jak [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Po drugie, edytory kodu zostały specjalnie stworzone do tego, by pisać w nich kod, więc mają wiele przydatnych opcji, takich jak podświetlanie różnych elementów składni języka programowania czy automatyczne dodawanie zamykającego cudzysłowu.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Wszystko to zobaczymy w akcji. Niedługo zaczniesz myśleć o swoim edytorze kodu jako o starym, dobrym przyjacielu :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
