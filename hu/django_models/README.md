@@ -1,16 +1,16 @@
-# Django modellek
+# Django models
 
-Most valami olyasmire van szükségünk, ami eltárolja az összes blogbejegyzést. De ahhoz, hogy létre tudjunk hozni ilyesmit, előbb egy kicsit beszélnünk kell az `objektumokról`.
+What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
-## Objektumok
+## Objects
 
-Létezik egy `objektumorientált programozás` nevű fogalom a programozáson belül. Ennek az az alapötlete, hogy ahelyett, hogy mindent utasítások unalmas sorozataként írnánk le, modellezhetjük is a dolgokat, és definiálhatjuk, hogyan lépnek kapcsolatba egymással.
+There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-Tehát mi az az objektum? Tulajdonságok és tevékenységek gyűjteménye. Furán hangozhat, de mindjárt mutatunk egy példát.
+So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
-Ha egy macskát szeretnék modellezni, létrehozunk egy `Cat` (macska) objektumot, aminek van néhány tulajdonsága: `color` (szín), `age` (életkor), `mood` (kedv -például jó, rossz, álmos ;)), és `owner` (tulajdonos - aki egy `Person` (személy) objektum, és talán, ha kóbor macskáról van szó, ez a tulajdonság üres).
+If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
-Aztán a `Cat`-hez tartozik néhány tevékenység: `purr` (dorombolás), `scratch` (karmolás), vagy `feed` (evés - ahol a macskának adunk egy kis macskaeledelt, vagyis `CatFood`-ot, ami egy külön objektum, saját tulajdonságokkal, mint például `taste` (íz)).
+Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
     Cat
     --------
@@ -23,13 +23,18 @@ Aztán a `Cat`-hez tartozik néhány tevékenység: `purr` (dorombolás), `scrat
     feed(cat_food)
     
 
-Tehát az egésznek az az alapötlete, hogy a valós dolgokat kódban tulajdonságokkal (vagyis `object property`-kkel) és tevékenységekkel (vagyis `method`-okkal) írjuk le.
+    CatFood
+    --------
+    taste
+    
 
-Hogyan modellezzük a blogposztokat? Egy blogot szeretnénk fejleszteni, ugye?
+So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
-Erre a kérdésre keressük a választ: Mi egy blogposzt? Milyen tulajdonságai vannak?
+How will we model blog posts then? We want to build a blog, right?
 
-Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne tudni, hogy ki írta - vagyis szükségünk van egy szerzőre is. Végül tudni szeretnénk, mikor lett megírva és közzétéve a poszt.
+We need to answer the question: What is a blog post? What properties should it have?
+
+Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
     Post
     --------
@@ -40,47 +45,58 @@ Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne 
     published_date
     
 
-Milyen dolgokat lehet csinálni egy blogbejegyzéssel? Jó lenne, ha lenne valamiféle `method`, ami közzéteszi a posztot, nem?
+What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
 
-Tehát szükségünk van egy `publish` methodra.
+So we will need a `publish` method.
 
-Most, hogy tudjuk, mit szeretnénk elérni, kezdjük el modellezni Django-ban!
+Since we already know what we want to achieve, let's start modeling it in Django!
 
-## Django modell
+## Django model
 
-Most, hogy tudjuk, mik az objektumok, már el tudjuk készíteni a blogposzt Django modelljét.
+Knowing what an object is, we can create a Django model for our blog post.
 
-A Django-ban a modellek speciális objektumok - az `adatbázisban` vannak elmentve. Az adatbázis tulajdonképpen adatok gyűjteménye. Ez az a hely, ahol adatokat tárolhatsz a felhasználókról, a blogposztokról, stb. Mi egy SQLite adatbázist fogunk használni az adataink tárolásához. Ez az alapértelmezett Django adatbázis adapter -- ez egyelőre elég is lesz nekünk.
+A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
 
-Az adatbázisban lévő modellt úgy képzeld el, mint egy táblázatot (pl. az Excelben), ahol oszlopok (mezők) és sorok (adatok) vannak.
+You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
-### Készítsünk egy alkalmazást!
+### Creating an application
 
-Hogy minden szép rendben maradjon, most a projekten belül egy külön alkalmazást hozunk létre. Jó, ha már az elejétől fogva rendezetten tartjuk a dolgokat. Ahhoz, hogy létrehozzuk az alkalmazást, ezt a parancsot kell futtatnunk a parancssorban (a `djangogirls` könyvtárban, ahol a `manage.py` fájl van):
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+
+{% filename %}Mac OS X and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
 
-Azt fogod látni, hogy egy új `blog` könyvtár keletkezett, és már most van benne néhány fájl. Így kell kinézniük a könyvtáraknak és fájloknak a projekten belül:
+{% filename %}Windows:{% endfilename %}
 
-    djangogirls
-    ├── mysite
-    |       __init__.py
-    |       settings.py
-    |       urls.py
-    |       wsgi.py
-    ├── manage.py
-    └── blog
-        ├── migrations
-        |       __init__.py
-        ├── __init__.py
-        ├── admin.py
-        ├── models.py
-        ├── tests.py
-        └── views.py
+    (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A `mysite/settings.py` tehetjük meg. Keresd meg az `INSTALLED_APPS` részt, és adj hozzá egy sort a `]` fölött, amiben ez áll: `'blog'`. Így kell kinéznie ennek a résznek:
+You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+
+    djangogirls
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── manage.py
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+    
+
+After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
 INSTALLED_APPS = [
@@ -94,11 +110,13 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Hozzuk létre a blogposzt modelljét
+### Creating a blog post model
 
-A `Model` nevű objektumokat a `blog/models.py` fájlban definiáljuk - tehát itt fogjuk definiálni a blogposztunkat is.
+In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-Nyisd meg a `blog/models.py`-t, törölj ki mindent, és ezt a kódot írd bele:
+Let's open `blog/models.py`, remove everything from it, and write code like this:
+
+{% filename %}blog/models.py{% endfilename %}
 
 ```python
 from django.db import models
@@ -106,7 +124,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User',on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -122,47 +140,53 @@ class Post(models.Model):
         return self.title
 ```
 
-> Jól figyelj, hogy mindenképp két underscore (alulvonás) karaktert (`_`) használj a `str` mindkét oldalán. Ez a jelölés gyakran előfordul a Pythonban, és néha "dunder"-nek hívjuk (a "double underscore" - dupla alulvonás rövidítése).
+> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
-Ijesztőnek tűnik? Ne aggódj, mindjárt elmagyarázzuk, hogy mit jelentenek ezek a sorok.
+It looks scary, right? But don't worry – we will explain what these lines mean!
 
-Azok a sorok, amik úgy kezdődnek, hogy `from` vagy `import`, más fájlokban lévő dolgokat adnak hozzá a fájlunkhoz. Ahelyett, hogy minden fájlba átmásolnánk ugyanazokat a dolgokat, beemelhetünk néhány dolgot a `from ... import ...` segítségével..
+All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
-`class Post(models.Model):` - ez a sor definiálja a modellünket (ami egy `objektum`).
+`class Post(models.Model):` – this line defines our model (it is an `object`).
 
-*   a `class` egy speciális kulcsszó, ami azt mutatja meg, hogy éppen egy objektumot definiálunk.
-*   a `Post` a modellünk neve. Más nevet is adhatnál neki (de kerüld el a speciális karaktereket - pl ékezetes karakterek - és a szóközt). Az osztályok (classok) nevét mindig nagybetűvel kezdjük.
-*   a `models.Model` azt jelenti, hogy a Post egy Django Model, így a Django tudni fogja, hogy el kell menteni az adatbázisba.
+- `class` is a special keyword that indicates that we are defining an object.
+- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
-Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:`title` (cím), `text` (szöveg), `created_date` (létrehozás dátuma), `published_date` (közzététel dátuma) és `author` (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog kapcsolni, például egy User-hez (felhasználó)?).
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
-*   `models.CharField` - így definiálsz olyan szövegmezőt, ami meghatározott számú karaktert tartalmazhat.
-*   `models.TextField` - ez hosszú szövegekhez van, korlátozás nélkül. Pont jó egy blogbejegyzéshez, igaz?
-*   `models.DateTimeField` - ez dátumot és időt tartalmaz.
-*   `models.ForeignKey` - ez egy másik modellel való kapcsolatot jelent.
+- `models.CharField` – this is how you define text with a limited number of characters.
+- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
+- `models.DateTimeField` – this is a date and time.
+- `models.ForeignKey` – this is a link to another model.
 
-Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (közzététel) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
+What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
-A methodok gyakran `return`-ölnek (visszaadnak) valamit. Erre van is egy példa a `__str__` methodban. Ebben az esetben amikor meghívjuk a `__str__()`-t, egy szöveget kapunk vissza (**string**), ami a Post címe.
+Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
-Vedd észre azt is, hogy mind `def publish(self):` mind `def __str__(self):` indentálva van a class-on bellül. Python számára fontosak a szóközök, ezért a method-okat indentálni kell az osztályokon bellül. Ha ez elmarad, akkor a method nem az adott osztályhoz fog tartozni, és furcsán fog viselkedni a program.
+Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
-Ha valami még nem teljesen világos a modellekkel kapcsolatban, nyugodtan kérdezd meg a coachodat! Tudjuk, hogy bonyolult, főleg, ha egyszerre tanulsz az objektumokról és a függvényekről. De reméljük, már sokkal kevésbé tűnik varázslatnak az egész!
+If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Készíts táblákat a modelleknek az adatbázisodban
+### Create tables for models in your database
 
-Az utolsó lépés, hogy hozzáadjuk az új modellünket az adatbázishoz. Először valahogy tudatnunk kell a Django-val, hogy változtattunk a modellünkön (vagyis most alkottuk meg!). Gépeld be, hogy `python manage.py makemigrations blog`. Ez fog történni:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
-      0001_initial.py:
+      blog/migrations/0001_initial.py:
+    
       - Create model Post
     
-**Megjegyzés** Ne felejtsd el elmenteni a módosított file-okat. Különben a számítógéped az előző változatot futtatja le, amely váratlan hibaüzeneteket eredményezhet.
 
-A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk az adatbázison. Írd be, hogy `python manage.py migrate blog`, és ezt az outputot kell kapnod:
+**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+
+Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
@@ -172,4 +196,4 @@ A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk 
       Applying blog.0001_initial... OK
     
 
-Hurrá! Bekerült az adatbázisba a Post modellünk! Jó lenne látni is, nem igaz? A következő fejezetben kiderül, hogy néz ki!
+Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
