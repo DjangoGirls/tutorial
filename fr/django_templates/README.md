@@ -1,36 +1,40 @@
-# Templates Django
+# Django templates
 
-Il est temps d'afficher des données ! Pour nous aider, Django fournit des balises de gabarit (**template tags**) qui sont intégrées au framework. Pour le reste du tutoriel, nous utiliserons plutôt le mot template, bien plus répandu que sa traduction "gabarit".
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## Qu'est-ce que c'est que des balises de template ?
+## What are template tags?
 
-En HTML, vous ne pouvez pas mettre directement du code Python car les navigateurs seraient incapables de le comprendre. Les navigateurs ne connaissent que le HTML. Nous vous avons signalé précédemment que HTML est du genre statique, alors que Python est bien plus dynamique.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-Les **Balises de template Django** nous permettent de transférer des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement et facilement. Cool, non ?
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Template d'affichage de la liste des posts
+## Display post list template
 
-Dans le chapitre précédent, nous avons donné à notre template une liste de posts à l'aide de la variable `posts`. Nous allons maintenant les afficher en HTML.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Afin d'afficher une variable dans un template Django, nous utiliserons des doubles accolades avec le nom de la variable à l'intérieur. Ça ressemble à ceci :
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {{ posts }}
 ```
 
-Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-![Figure 13.1][1]
+![Figure 13.1](images/step1.png)
 
- [1]: images/step1.png
+As you can see, all we've got is this:
 
-Comme vous pouvez le voir, tout ce que nous avons, c'est ceci :
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-```python
+```html
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous rappeler comment afficher des listes en Python. Si vous avez un trou de mémoire, allez voir dans le chapitre **Introduction à Python**. Vous avez trouvé ? Avec des boucles ! Dans un template Django, vous pouvez les écrire de la façon suivante :
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -38,13 +42,13 @@ Cela signifie que Django l'interprète comme une liste d'objets. Essayez de vous
 {% endfor %}
 ```
 
-Essayez ceci dans votre template.
+Try this in your template.
 
-![Figure 13.2][2]
+![Figure 13.2](images/step2.png)
 
- [2]: images/step2.png
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-Ça marche ! Cependant, nous aimerions plutôt les afficher à la manière des posts statiques, comme lorsque nous les avions créés dans le chapitre **Introduction au HTML**. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci :
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
@@ -53,27 +57,27 @@ Essayez ceci dans votre template.
 
 {% for post in posts %}
     <div>
-        <p>publié: {{ post.published_date }}</p>
+        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
 
-{% raw %}Tout ce qui se situe entre `{% for %}` et `{% endfor %}` va être répété pour chaque objet présent dans la liste. Rafraichissez votre page :{% endraw %}
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
-![Figure 13.3][3]
+![Figure 13.3](images/step3.png)
 
- [3]: images/step3.png
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-Avez-vous remarqué que nous utilisons une notation légèrement différente cette fois (`{{ post.title }}` or `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, les barres verticales `|` nous permettent de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.
+## One more thing
 
-## Encore une chose !
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur Internet. Nous allons essayer de le re-déployer sur PythonAnywhere. Voici un récapitulatif des étapes...
+* First, push your code to Github
 
-*   En premier lieu, envoyez votre code sur GitHub (push)
-```
+{% filename %}command-line{% endfilename %}
+
     $ git status
     [...]
     $ git add --all .
@@ -82,25 +86,21 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-```
+    
 
-*   Ensuite, reconnectez-vous à [PythonAnywhere][4] et allez sur la "**Bash console**" (ou démarrez-en une nouvelle), et lancez les commandes suivantes :
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
- [4]: https://www.pythonanywhere.com/consoles/
-```
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
     $ cd my-first-blog
     $ git pull
     [...]
-```
+    
 
-*   Finalement, allez sur l'[onglet Web][5] et cliquez sur **Reload** sur votre application web. Votre site mis-à-jour devrait être en ligne !
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-Félicitations ! Maintenant, pourquoi ne pas essayer d'ajouter un nouveau post à l'aide de l'interface d'administration ? N'oubliez pas d'ajouter une date de publication ! Ensuite, rafraichissez votre page et regardez si votre post apparait.
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-Ça a marché ? Nous sommes super fières de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
-
-![Figure 13.4][6]
-
- [6]: images/donut.png
+![Figure 13.4](images/donut.png)
