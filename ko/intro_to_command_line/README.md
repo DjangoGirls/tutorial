@@ -1,106 +1,154 @@
-# 커맨드 라인 시작하기
+# Introduction to the command-line interface
 
-> **Note** 집에서 학습하시는 분들은 ['내 친구 커맨드 라인를 소개합니다'](https://www.youtube.com/watch?v=jvZLWhkzX-8) 영상을 보세요.
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-벌써부터 기대되지 않나요? 바로 일 분안에 여러분도 코딩 할 수 있어요!
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**여러분에게 첫 번째 친구를 소개합니다. 바로, 커맨드 라인(command line) 입니다!**
+**Let us introduce you to your first new friend: the command line!**
 
-해커들이 사용하는 까만 윈도우 창을 어떻게 사용하는지 보여드릴 거에요. 처음에는 이 검은색 창이 무서워 보일 수도 있지만, 명령어를 기다리는 아이일 뿐이에요.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-> **Note** 이 설명서에서 '디렉토리(directory)'와 '폴더(folder)' 모두 같은 뜻입니다.
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## 커맨드 라인은 무엇일까요?
+## What is the command line?
 
-**커맨드 라인(command line)**은 **커맨드-라인 인터페이스(command-line interface)**,  *cmd*, *CLI*, *프롬프트(prompt)*, *콘솔(console)*, *터미널(terminal)* 라고도 불리는 텍스트 기반 응용 프로그램으로 파일 보기, 처리, 조작이 가능합니다. 윈도우 익스플로러나 맥OS의 파인더와 비슷합니다. 하지만 그래픽 인터페이스는 없어요.
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-## 커맨드 라인 열기
+## Open the command-line interface
 
-커맨드 라인을 열어 몇 가지 실습해봅시다.
+To start some experiments we need to open our command-line interface first.
 
-### 윈도우
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-시작메뉴로 가서 → 모든 프로그램 → 보조프로그램 → 명령 프롬프트.
+Go to Start menu → Windows System → Command Prompt.
 
-### Mac OS X
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-응용 프로그램 → 유틸리티 → 터미널.
+<!--endsec-->
 
-### 리눅스
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-프로그램 → 보조 프로그램 → 터미널을 실행하면 될 거에요. 하지만 시스템에 따라 다를 수도 있으니 구글에서 찾아보세요.
+Go to Applications → Utilities → Terminal.
 
-## 프롬프트(prompt)
+<!--endsec-->
 
-이제 까만 배경이나 하얀 배경의 윈도우가 뭔가를 지시해주길 기다리고 있을 거에요.
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-맥이나 리눅스의 경우, 이런 `$` 기호가 보일 거예요 :
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
+
+## Prompt
+
+You now should see a white or black window that is waiting for your commands.
+
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+{% filename %}command-line{% endfilename %}
 
     $
+    
 
+<!--endsec-->
 
-윈도우의 경우, 이런 `>` 기호가 보일 거에요 :
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
+
+On Windows, it's a `>` sign, like this:
+
+{% filename %}command-line{% endfilename %}
 
     >
+    
 
+<!--endsec-->
 
-각 명령어는 접두어로 위와 같은 기호와 공백 한 칸이 붙습니다. 하지만 여러분이 입력할 필요는 없어요. 컴퓨터가 대신 해줄 거예요 :)
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-> 잠깐만요 : 상황에 따라 프롬트 기호 앞에 `C:\Users\ola>` 혹은 `Olas-MacBook-Air:~ ola$` 같은 것이 보일 수 있는데, 문제가 있는 것이 아니라 아주 잘 동작하는 거랍니다. 이 튜토리얼에서는 간략히 작성한 거에요.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-## 나의 첫 번째 명령 (야호!)
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-쉬운 것 부터 시작할게요. 아래 명령어를 입력해 보세요 :
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+
+## Your first command (YAY!)
+
+Let's start by typing this command:
+
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
+    
 
+<!--endsec-->
 
-또는
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > whoami
+    
 
+<!--endsec-->
 
-그리고 `enter`를 누르세요. 다음과 같이 보일 거에요 :
+And then hit `enter`. This is our result:
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     olasitarska
+    
 
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-컴퓨터는 사용자 이름을 스크린에 보여줍니다. 이거 좀 괜찮죠? :)
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-> 복사 붙여넣기 하지 말고, 직접 입력해 보세요. 더 잘 외워질 거예요!
+## Basics
 
-## 기본 명령어
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-각각의 운영체제에 따라, 명령어들이 조금씩 다를 수도 있으니까, 여러분의 운영체제에 해당하는 설명을 따라주세요. 그럼 같이 해볼까요?
+### Current directory
 
-### 현재 디렉터리
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-현재 어느 디렉터리에 있는지 확인하려면 아래 명령어를 입력하고 `enter`를 눌러보세요.
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-맥 :
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska
+    
 
+> Note: 'pwd' stands for 'print working directory'.
 
-윈도우 :
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska
+    
 
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
-위와 비슷한 결과가 출력되었을 거예요. 커맨드라인을 열면, 항상 `Home` 디렉터리에서 시작합니다.
+<!--endsec-->
 
-> Note: 'pwd' 는 'print working directory'의 줄임말이에요.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
-### 파일과 디렉터리 목록 보기
+### List files and directories
 
-디렉토리에 어떤 것이 있는지 확인하려면 이렇게 입력하세요.
+So what's in it? It'd be cool to find out. Let's see:
 
-맥 :
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -108,195 +156,274 @@
     Downloads
     Music
     ...
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-    > dir  
-    Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR> Applications
-    05/08/2014 07:28 PM <DIR> Desktop
-    05/08/2014 07:28 PM <DIR> Downloads
-    05/08/2014 07:28 PM <DIR> Music
+{% filename %}command-line{% endfilename %}
+
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
     ...
+    
 
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
-### 현재 디렉터리 변경
+### Change current directory
 
-자, 바탕화면 디렉터리로 가볼까요 :
+Now, let's go to our Desktop directory:
 
-맥 :
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd Desktop
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd Desktop
+    
 
+<!--endsec-->
 
-변경되었는지 확인합시다.
+Check if it's really changed:
 
-맥 :
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
+    
 
+<!--endsec-->
 
-맞군요!
+Here it is!
 
-> 전문가 팁 : `cd D`까지 입력하고 `tab`(탭) 키를 누르면, 커맨드 라인이 자동으로 나머지 부분을 완성해주어, 입력하는 시간을 절약할 수 있어요. "D"로 시작하는 폴더가 2개 이상일 경우, `tab`(탭) 키를 두 번 누르면, 해당하는 폴더들을 모두 보여줍니다.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### 새 디렉터리 생성하기
+### Create directory
 
-바탕 화면에 `practice` 디렉터리를 만들어 볼까요? 이렇게 하면 됩니다.
-(되도록 폴더명은 한국어 대신 영어로 작성하는 것이 좋아요 - 장고걸스서울)
+How about creating a practice directory on your desktop? You can do it this way:
 
-맥 :
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ mkdir practice
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > mkdir practice
+    
 
+<!--endsec-->
 
-이 간단한 명령어로, 바탕화면에 `practice`폴더를 만듭니다. 바탕화면에서 직접 보거나, 명령어 `ls` 혹은 `dir`을 실행해서 확인할 수 있어요! 한 번 해보세요.
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> 전문가 팁 : 같은 명령어를 여러 번 반복해 입력하고 싶지 않다면, 키보드 `위 화살표`와 `아래 화살표`를 누르세요. 최근 사용한 명령어들을 볼 수 있어요.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### 연습문제!
+### Exercise!
 
-연습 과제를 드릴게요. 새로 만든 `practice`디렉터리 안에 `test` 라는 이름의 디렉터리를 만들어 보세요. 명령어 `cd`와 `mkdir`을 사용하세요.
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### 답 :
+#### Solution:
 
-맥 :
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd practice
     $ mkdir test
     $ ls
     test
+    
 
+<!--endsec-->
 
-윈도우:
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
+    
 
+<!--endsec-->
 
-축하합니다 :)
+Congrats! :)
 
 * * *
 
-### 정리
+### Clean up
 
-지금까지 연습한 내용을 모두 지워봅시다!
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-우선, 바탕화면으로 돌아가야해요.
+First, we need to get back to Desktop:
 
-맥 :
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd ..
+    
 
+<!--endsec-->
 
-`..`과 `cd` 명령은 현재 디렉터리에서 부모 디렉터리(현재 디렉터리 레벨보다 상위인)로 보내줄겁니다.
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-현재 위치를 확인해 보세요.
+Check where you are:
 
-맥 :
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
+    
 
+<!--endsec-->
 
-이제 `practice` 디렉터리를 삭제해봐요.
+Now time to delete the `practice` directory:
 
-> **Note**: `del`, `rmdir`, `rm`을 사용하여 파일을 지우면, 재복구가 불가능합니다. *지워진 파일들을 영원히 사라지게 됩니다!* 그러니, 이 명령어들은 꼭 주의해서 사용하세요.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
-맥 :
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ rm -r practice
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > rmdir /S practice
     practice, Are you sure <Y/N>? Y
+    
 
+<!--endsec-->
 
-완료되었습니다! 완전히 삭제되었는지 확인해 보세요.
+Done! To be sure it's actually deleted, let's check it:
 
-맥 :
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
+    
 
+<!--endsec-->
 
-### 종료
+### Exit
 
-여기까지 입니다! 이제 커맨드 라인을 닫으세요. 해커 스타일로 해볼까요, 괜찮죠?:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-맥 :
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ exit
+    
 
+<!--endsec-->
 
-윈도우 :
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > exit
+    
 
+<!--endsec-->
 
-멋지지 않나요? :)
+Cool, huh? :)
 
-## 요약
+## Summary
 
-아래 유용한 명령어를 모았습니다.
+Here is a summary of some useful commands:
 
-| 명령어(윈도우) | 명령어(맥 OS/리눅스) | 설명                  | 예시                                                |
-| -------- | ------------- | ------------------- | ------------------------------------------------- |
-| exit     | exit          | 창을 닫는다              | **exit**                                          |
-| cd       | cd            | 디렉터리를 변경한다          | **cd test**                                       |
-| dir      | ls            | 디렉터리 혹은 파일 목록을 보여준다 | **dir**                                           |
-| copy     | cp            | 파일을 복사한다            | **copy c:\test\test.txt c:\windows\test.txt** |
-| move     | mv            | 파일을 이동한다            | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir    | mkdir         | 새 디렉터리를 만든다         | **mkdir testdirectory**                           |
-| del      | rm            | 디렉터리 혹은 파일을 지운다     | **del c:\test\test.txt**                        |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-지금까지 커맨드 라인 명령어 일부를 알아보았어요. 이 정도만 알고 있어도 코딩하는데 문제가 없습니다.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-더 알고 싶다면, [ss64.com](http://ss64.com)에서 각 운영체제별로 정리된 명령어 모음을 볼 수 있어요.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## 준비되셨나요?
+## Ready?
 
-이제 파이썬의 세계로 빠져봅시다!
+Let's dive into Python!
