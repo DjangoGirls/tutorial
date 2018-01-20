@@ -1,31 +1,31 @@
-Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs·ses Python utilisent des IDE (Environnements de développement intégrés) complexes mais très puissants, comme Pycharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-Vous pouvez choisir l'un des éditeurs de la liste ci-dessous, mais n'hésitez pas à demander à votre coach l'éditeur qu'il·elle préfère.
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'exploitation.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Télécharger](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime text est un éditeur très populaire : il est disponible gratuitement sous forme de version d'évaluation pour tout les systèmes d'exploitation. Il est facile à installer et à utiliser.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Télécharger](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom est un éditeur très récent créé par [GitHub](https://github.com/). Disponible pour tout les systèmes d'exploitation, il est libre, gratuit, facile à installer et à utiliser.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Télécharger](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Pourquoi installer un éditeur de texte?
+## Why are we installing a code editor?
 
-Vous vous demandez sûrement pourquoi nous vous faisons installer un éditeur spécialement créé pour écrire du code. Pourquoi ne pourrions nous pas simplement utiliser un éditeur de texte comme Word ou Notepad ?
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-La première raison est que votre code doit être écrit en **texte brut**. Le problème avec les applications comme Word ou Textedit, c'est qu'elles ne produisent pas du texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur un standard comme [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La seconde raison est que les éditeurs de texte dédiés à la programmation contiennent de nombreuses fonctions très utiles. Ils peuvent colorer le texte en fonction du sens de celui-ci (coloration syntaxique) ou ajouter automatiquement un guillemet fermant à chaque fois que vous ouvrez un guillemet.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Vous allez bientôt vous rendre compte à quel point un logiciel dédié à la programmation peut être pratique ! Prenez un peu de temps pour trouver l'éditeur qui vous convient, car il deviendra rapidement l'un de vos outils préférés :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
