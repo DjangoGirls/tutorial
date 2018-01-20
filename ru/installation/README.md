@@ -1,16 +1,21 @@
 # Если ты занимаешься дома
 
-Если ты занимаешься по этому руководство дома, а не на одной из [встреч Django Girls](https://djangogirls.org/events/), то можешь пропустить этот раздел и приступить сразу же к главе [Как работает интернет](../how_the_internet_works/README.md).
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Дело в том, что мы всё равно рассматриваем все эти вещи по ходу руководства, а в этом разделе мы просто собрали все инструкции по установке вместе. Встречи Django Grils включают в себя "вечер настроек", когда мы устанавливаем всё что нужно, чтобы не тратить на это время в течение основного семинара, это очень удобно для нас.
+Дело в том, что мы всё равно рассматриваем все эти вещи по ходу руководства, а в этом разделе мы просто собрали все инструкции по установке вместе. Мы устраиваем "вечер настроек" перед встречей Django Girls. Там мы устанавливаем все, что нам потребуется в работе. Это очень удобно, так мы не тратим время основного семинара.
 
-Если ты также считаешь эту идею удачной, то можешь следовать содержанию главы. Чтобы сразу перейти к изучению нового материала, пропустив установку необходимых программ, просто пропусти эту главу - мы будем объяснять все необходимые вещи по мере продвижения по руководству.
+If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
 Удачи!
 
 # Установка
 
-В процессе мастер-класса мы будем создавать блог и у нас есть несколько подготовительных задач по установке, которые не помешало бы выполнить заранее, чтобы тебе не пришлось отвлекаться от программирования.
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
 
 # Установка Python
 
@@ -38,12 +43,16 @@
 
 # Начинай читать
 
-Поздравляем, всё готово к работе! Если у тебя ещё осталось немного свободного времени до семинара, было бы полезно начать читать одну из первых глав:
+Поздравляем, всё готово к работе! Если у тебя ещё осталось немного свободного времени до семинара, было бы полезно прочитать несколько первых глав:
 
-  * [Как работает Интернет](../how_the_internet_works/README.md)
+* [Как работает Интернет](../how_the_internet_works/README.md)
 
-  * [Введение в командную строку](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-  * [Введение в Python](../python_introduction/README.md)
+* [Введение в Python](../python_introduction/README.md)
 
-  * [Что же представляет из себя Django?](../django/README.md)
+* [What is Django?](../django/README.md)
+
+# Наслаждайся семинаром!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
