@@ -1,53 +1,55 @@
-# Templates do Django
+# Django templates
 
-Hora de exibir algum dado! Django nos dá  __tags de templates__ embutidas bastante úteis para isso.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## O que são tags de template?
+## What are template tags?
 
-Como pode ver, você não pode colocar código Python no HTML, porque os navegadores não irão entender. Eles apenas conhecem HTML. Nós sabemos que HTML é bastante estático, enquanto Python é muito mais dinâmico.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-As __Tags de template Django__ nos permite transformar objetos Python em código HTML, para que você possa construir sites dinâmicos de forma mais rápida e mais fácil. Uhuu!
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Template para exibir uma lista de postagens
+## Display post list template
 
-No capitulo anterior, nós fornecemos ao nosso template uma lista de postagens e a variável <o>posts</o>. Agora vamos exibir essa lista em nosso HTML.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Para exibir uma variável no template do Django, nós usamos colchetes duplos com o nome da variável dentro, por exemplo:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {{ posts }}
 ```
 
-Tentar fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo a partir do segundo `< div >` até o terceiro `< / div >` por `{{ posts }}`. Salve o arquivo e atualize a página para ver os resultados:
-
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
-Como você pode ver, tudo que temos é:
+As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Isto significa que o Django a entende como uma lista de objetos. Lembra da __Introdução ao Python__ de podemos exibir listas? Sim, com os loops! Em um template do Django, fazemos isso da seguinte maneira:
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% for post in posts %}
     {{ post }}
 {% endfor %}
 ```
 
-Tente fazer isso no seu template.
+Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, como os que criamos anteriormente no capítulo de __Introdução a HTML__. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
-
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <div>
     <h1><a href="/">Django Girls Blog</a></h1>
@@ -62,43 +64,43 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, co
 {% endfor %}
 ```
 
-{% raw %}Tudo que você coloca entre `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize sua página::{% endraw %}
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
 ![Figure 13.3](images/step3.png)
 
-Você notou que dessa vez nós usamos uma notação um pouco diferente `{{ post.title }}` ou `{{ post.text }}`? Nós estamos acessando os dados em cada um dos campos que definimos no model do `Post`. Além disso, `|linebreaksbr` está passando o texto da postagem por um filtro, convertendo quebras de linha em parágrafos.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## Mais uma coisa
+## One more thing
 
-Seria bom ver se seu site ainda estará funcionando na internet, certo? Vamos tentar fazer a implantação na PythonAnywhere novamente. Aqui está um resumo dos passos...
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-*   Primeiro, envie seu código para o Github
-   
-   {% filename %}command-line{% endfilename %}
-   ```
-   $ git status
-   [...]
-   $ git add --all .
-   $ git status
-   [...]
-   $ git commit -m "Modified templates to display posts from database."
-   [...]
-   $ git push
-   ```
-   
-*   Em seguida, faça login em [PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para seu **Bash console** (ou comece um novo) e execute:
+* First, push your code to Github
 
-    {% filename %}command-line{% endfilename %}
-    ```
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
     $ cd my-first-blog
     $ git pull
-    [...] 
-    ```
+    [...]
+    
 
-*   Finalmente, pule para a [Web tab](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo web. Sua atualização deve estar ao vivo!  Se suas postagens do blog em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado em seu servidor local, está tudo bem. O banco de dados em seu computador local e o da Python Anywhere não estão sincronizados junto com o resto de seus arquivos.
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admin (Lembre-se de adicionar published_date!). Certifique-se que você está no admin do Django de seu site pythonanywhere, https://yourname.pythonanywhere.com/admin. E então atualize sua página para ver se a postagem aparece lá
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-Funciona como mágica? Estamos orgulhosas! Afaste-se do seu computador um pouco, você ganhou uma pausa. :)
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
 ![Figure 13.4](images/donut.png)
