@@ -1,48 +1,50 @@
-Git — это «система управления версиями», используемая множеством программистов. Эта программа отслеживает изменения, происходящие с файлами, чтобы впоследствии можно было восстановить состояние кода на нужный момент времени. Это немного похоже на функцию отслеживания изменений в Microsoft Word, но куда мощнее.
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
-## Установка Git
+## Installing Git
 
-<!--sec data-title="Windows" data-id="git_install_windows"
+<!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Ты можешь загрузить Git с официального сайта [git-scm.com](https://git-scm.com/). Ты можешь нажимать "дальше, дальше, дальше" на всех этапах установки за исключением одного: на пятом шаге, который называется "Adjusting your PATH environment" (Настройка системной переменной Path), выбери "Use Git and optional Unix tools from the Windows Command Prompt" (Запуск Git и соответствующих Unix утилит через командную строку Windows, нижняя опция). Все остальные настройки можно оставить по умолчанию. Также неплохо будет выбрать опцию "Checkout Windows-style, commit Unix-style line endings".
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-После окончания установки не забудь перезапустить командную строку или powershell.
-<!--endsec-->
+Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Загрузи Git с официального сайта [git-scm.com](https://git-scm.com/) и просто следуй инструкциям по установке.
+Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
 
-> **Примечание:** если ты используешь OS X 10.6, 10.7 или 10.8, тебе придётся установить git отсюда: [Установка Git для OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
-<!--sec data-title="Debian и Ubuntu" data-id="git_install_debian_ubuntu"
+<!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
+
 ```bash
 $ sudo apt-get install git
 ```
 
 <!--endsec-->
 
-<!--sec data-title="Fedora" data-id="git_install_fedora"
+<!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
+
 ```bash
 $ sudo dnf install git
 ```
 
 <!--endsec-->
 
-<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+<!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
+
 ```bash
 $ sudo zypper install git
 ```
