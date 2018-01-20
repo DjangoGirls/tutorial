@@ -1,14 +1,16 @@
-# Créons nos vues Django!
+# Django views – time to create!
 
-Il est enfin temps de se débarrasser du bug que nous avons créé dans le chapitre précédent :)
+Time to get rid of the bug we created in the last chapter! :)
 
-C'est dans la *vue* que nous allons ranger toute la partie "logique" de notre application. C'est elle qui va se charger d'aller chercher les informations liées à notre `modèle `que nous venons de créer et de les passer à un `template`. Nous allons créer ce template dans le chapitre suivant. Concrètement, les vues ne sont que des méthodes Python un peu plus élaborées que celles que nous avons manipulées dans la partie **Introduction à Python**.
+A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Les vues sont placées dans le fichier `views.py`. Nous allons créer nos *vues* dans le fichier `blog/views.py`.
+Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
 ## blog/views.py
 
-Ok, allons-y ! Ouvrons ce fichier pour voir ce qu'il contient :
+OK, let's open up this file and see what's in there:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render
@@ -16,27 +18,27 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Il n'y pas encore grand chose dans ce fichier.
+Not too much stuff here yet.
 
-Les lignes qui commencent par `#` permettent de commenter notre code : ces lignes ne seront donc pas exécutées par Python. Pratique, non ?
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
-La vue la plus simple que l'on peut créer ressemble à ceci :
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Comme vous pouvez le voir, nous avons créé une méthode (`def`) appelée `post_list` qui prend une `request (requête)` et `return (retourne)` une méthode `render` qui va permettre d'assembler tout ça selon notre template `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Sauvegardez votre fichier et allez à l'adresse http://127.0.0.1:8000/ pour voir ce qui s'affiche maintenant.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Une autre erreur ! Voyons ce qu'elle nous dit :
+Another error! Read what's going on now:
 
-![Erreur][1]
+![Error](images/error.png)
 
- [1]: images/error.png
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-Celle-là est plutôt simple : *TemplateDoesNotExist*. Corrigeons ça en créant un template dans la section suivante !
-
-> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/fr/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
