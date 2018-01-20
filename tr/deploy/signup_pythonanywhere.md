@@ -1,5 +1,5 @@
-Sırada PythonAnywhere sitesinde bedava bir "Beginner" ( yeni başlayan) hesabı açma işi var.
+Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Not** Burada kullanıcı isminizi seçerken bilin ki blogunuzun URL'si `kullanıcıadınız.pythonanywhere.com` şeklinde olacak. O yüzden ya kendi rumuzunuzu(nickname) seçin ya da blogunuzun konusu ile ilgili bir isim seçin.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
