@@ -1,122 +1,201 @@
-> Část této kapitoly je založena na tutorialu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
->
-> Další část této kapitoly je založena na [django-marcador tutorial](http://django-marcador.keimlink.de/) licencováno pod Creative Commons Attribution-ShareAlike 4.0, mezinárodní licenci. Ochranou známku pro Django-marcador drží Markus Zapke-Gründemann et al.
+> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Virtuální prostředí
+## Virtual environment
 
-Než začneme instalovat Django, nainstalujeme si velmi užitečný nástroj, který pomůže udržet pořádek ve vývojovém prostředí na tvém počítači. Je možné tento krok přeskočit, ale je doporučován. Začít s nejlepším možným nastavením ti ušetří spoustu starostí v budoucnosti!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
-Takže pojďme vytvořit **virtuální prostředí** (tzv. *virtualenv*). Virtualenv bude izolovat nastavení Python/Django na základě projektu. To znamená, že změny provedené v jedné webové stránce neovlivní ostatní, které vyvíjíš. Elegantní, že?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
-Vše, co musíš udělat je jít do adresáře, ve kterém chceš vytvořit `virtualenv`; Například tvůj domovský adresář. V systému Windows by to mohlo vypadat takto `C:\Users\Name` (kde `Name` je jméno tvého uživatelského účtu).
+All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
-Pro tento kurz budeme používat nový adresář `djangogirls` vytvořený v domovském adresáři:
+> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
-```
-mkdir djangogirls
-cd djangogirls
-```  
+For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
-Vytvoříme virtualenv, s názvem `myvenv`. Obecný příkaz bude vypadat takto:
+{% filename %}command-line{% endfilename %}
 
-```
-python3 -m venv myvenv
-```  
+    $ mkdir djangogirls
+    $ cd djangogirls
+    
 
-### Windows
+We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-Chceš-li vytvořit nový `virtualenv`, je potřeba otevřít konzoli (mluvili jsme o tom v dřívější kapitole - vzpomínáš?) a spusť `C:\Python34\python -m venv myvenv`. Celý příkaz bude vypadat takto:
+{% filename %}command-line{% endfilename %}
 
-```
-C:\Users\Name\djangogirls > C:\Python34\python -m venv myvenv
-```  
+    $ python3 -m venv myvenv
+    
 
-kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. Je také dobrý nápad, abys zvolila krátké jméno - budeš ho používat častokrát!
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
+data-collapse=true ces-->
 
-### Linux a OS X
+To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
 
-Vytvoření `virtualenv` na Linux a OS X je stejně jednoduché - spusť`python3 -m venv myvenv`. Celý příkaz bude vypadat takto:
+{% filename %}command-line{% endfilename %}
 
-```
-~/djangogirls$ python3 -m venv myvenv
-```  
+    C:\Users\Name\djangogirls> python -m venv myvenv
+    
 
-`myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale drž se těchto pravidel - používej v názvech malá písmena a bez mezer. Je dobrý nápad zvolit krátké jméno - budeš ho používat častokrát!
+Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
-> **POZNÁMKA:** Vytvoření virtuálního prostředí na Ubuntu 14.04, v současné době vyhazuje následující chybu:
->
+<!--endsec-->
+
+<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+data-collapse=true ces-->
+
+We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+
+{% filename %}command-line{% endfilename %}
+
+    $ python3 -m venv myvenv
+    
+
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+
+> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>        apt-get install python3-venv
+>     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     
+> 
+> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python3-venv
+>     
+> 
+> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
->
-> Chceš-li se tomuto vyhnout, použij tento příkaz `virtualenv`.
->
->     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
+> 
+> To get around this, use the `virtualenv` command instead.
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python-virtualenv
+>     $ virtualenv --python=python3.6 myvenv
+>     
+> 
+> **NOTE:** If you get an error like
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     E: Unable to locate package python3-venv
+>     
+> 
+> then instead run:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     sudo apt install python3.6-venv
 >     
 
-## Práce s virtualenv
+<!--endsec-->
 
-Výše uvedený příkaz vytvoří adresář s názvem `myvenv` (či jiným jménem, které jsi zvolila), který obsahuje tvé virtuální prostředí (v podstatě svazek adresářů a souborů).
+## Working with virtualenv
 
-#### Windows
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
-Spusť virtuální prostředí:
+<!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
+data-collapse=true ces-->
 
-```
-C:\Users\Name\djangogirls> myvenv\Scripts\activate
-```  
+Start your virtual environment by running:
 
-#### Linux a OS X
+{% filename %}command-line{% endfilename %}
 
-Spusť virtuální prostředí:
+    C:\Users\Name\djangogirls> myvenv\Scripts\activate
+    
 
-```
-~/djangogirls$ source myvenv/bin/activate
-```  
-
-Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
-
-> **Poznámka:** někdy příkaz `source` nemusí být k dispozici. V těchto případech, zkus raději:
->
->     ~/djangogirls$ . myvenv/bin/activate
+> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+>         Execution Policy Change
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
-Že je `virtualenv` spuštěné, poznáš pokud vidíš výzvu konzole vypadající takto:
+<!--endsec-->
 
-```
-(myvenv) C:\Users\Name\djangogirls>
-```  
+<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+data-collapse=true ces-->
 
-nebo:
+Start your virtual environment by running:
 
-```
-(myvenv) ~/djangogirls$
-```  
+{% filename %}command-line{% endfilename %}
 
-Upozornění předpona `(myvenv)` se zobrazí!
+    $ source myvenv/bin/activate
+    
 
-Pracuješ-li ve virtuálním prostředí, `python` bude automaticky odkazovat na správnou verzi, takže můžeš použít `python` místo `python3`.
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-OK máme všechny důležité závislosti na místě a konečně můžeme nainstalovat Django!
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ . myvenv/bin/activate
+>     
 
-## Instalace Django
+<!--endsec-->
 
-Máš své `virtualenv` nastartované a můžeš nainstalovat Django pomocí příkazu `pip`. V konzoli, spusť `pip install django == 1.8` (<0>Poznámka:</0> , používáme zde dvojité rovnítko: `==`).
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-```
-(myvenv) ~$ pip install django==1.8
-Downloading/unpacking django==1.8
-Installing collected packages: django
-Successfully installed django
-Cleaning up...
-```  
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-v systému Windows
+OK, we have all important dependencies in place. We can finally install Django!
 
-> Pokud se ti ukáže chyba při volání pip na platformě Windows, zkontroluj prosím, zda tvoje cesta k projektu neobsahuje mezery, diakritiku a speciální znaky (tj. `C:\Users\User Name\djangogirls`). Pokud ano zvaž přesunutí do jiného místa bez mezer, diakritiky a speciálních znaků (návrh je: `C:\djangogirls`). Po přesunutí opakuj výše uvedený příkaz.
+## Installing Django
 
-na Linuxu
+Now that you have your `virtualenv` started, you can install Django.
 
-> Pokud se zobrazí chyba při volání pip na Ubuntu 12.04, prosím zkus spustit `python -m pip install -U --force-reinstall pip` k opravě instalace pip ve virtualenv.
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-A je to! Teď jsi (konečně) připravena k vytvoření aplikace Django!
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) ~$ pip install --upgrade pip
+    
+
+Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) ~$ pip install django~=1.11.0
+    Collecting django~=1.11.0
+      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+    Installing collected packages: django
+    Successfully installed django-1.11.3
+    
+
+<!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
+data-collapse=true ces-->
+
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
+data-collapse=true ces-->
+
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
+data-collapse=true ces-->
+
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+
+<!--endsec-->
+
+That's it! You're now (finally) ready to create a Django application!
