@@ -1,108 +1,123 @@
-# 나의 첫 번째 장고 프로젝트!
+# Your first Django project!
 
-> **Note** 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
+We're going to create a small blog!
 
-> **Note** 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 [django-marcador 튜토리얼](https://github.com/ggcarrots/django-carrots)를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-아주 간단한 블로그 사이트를 만들어 볼 거예요!
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-첫 단계는 장고 프로젝트를 시작하는 거예요. 다시 말해 장고의 기본 골격을 만들어주는 스크립트를 실행할 거예요. 이 디렉토리와 파일 묶음은 나중에 사용할 것입니다.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-장고에서는 디렉토리와 파일명이 매우 중요하답니다. 파일명을 마음대로 변경해서도 안되고 다른 곳으로 옮겨도 안됩니다. 장고는 중요한 것들을 찾을 수 있게 특정한 구조를 유지해야 합니다.
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-> 모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 `(myvenv)`가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. **Django 설치하기** 장에서 **virtualenv 작동법**에 대해 배웠어요. 윈도우에서는 `myvenv\Scripts\activate`를 타이핑하고, 맥 OS과 리눅스에서는 `source myvenv/bin/activate`을 입력하세요.
-
-<!--sec data-title="OS X / Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
-
-맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표)을 입력하는 것을 잊지마세요.** :
+In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ django-admin startproject mysite .
-```
 
+    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    
 
-> 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시입니다)
->
-> **Note** 위 명령을 입력할 때 `django-admin`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$`부분은 커맨드 라인에 입력을 가져오게 하는 메세지(프롬트프 prompt)입니다.
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-윈도우에서도 **명령 끝에 `.`(점)을 입력하는 것을 잊지마세요** :
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
-```
 
-> 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시입니다)
->
-> **Note** 위 명령을 입력할 때 `django-admin.py`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) C:\Users\Name\djangogirls>`부분은 커맨드 라인에 입력을 가져오게 하는 메세지(프롬프트 prompt)입니다.
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    
+
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-`django-admin.py`은 스크립트로 디렉토리와 파일들을 생성합니다. 스크립트 실행 후에는 아래와 같이 새로 만들어진 디렉토리 구조를 볼 수 있을 거예요.
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
+    └───mysite
+            settings.py
             urls.py
             wsgi.py
             __init__.py
+    
 
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
-`manage.py`는 스크립트인데, 사이트 관리를 도와주는 역할을 합니다. 이 스크립트로 다른 설치 작업 없이, 컴퓨터에서 웹 서버를 시작할 수 있습니다.
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-`settings.py`는 웹사이트 설정이 있는 파일입니다.
+The `settings.py` file contains the configuration of your website.
 
-앞에 우편배달부는 어느 곳으로 편지를 배달해야 하는지 판단해야 한다고 말했던 것을 기억하고 있나요? `urls.py`파일은 `urlresolver`가 사용하는 패턴 목록을 포함하고 있습니다.
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-지금 그 파일들을 수정하지 않을 거니 무시하세요. 실수로 파일을 지우지 않게 조심하세요!
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
-## 설정 변경
+## Changing settings
 
-`mysite/settings.py`을 조금 고쳐 볼게요. 설치한 코드 에디터를 열어 파일을 열어주세요.
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-웹사이트에 정확한 현재 시간을 넣으면 좋겠죠. [위키피디아 타임존 리스트][2]에 가서 해당 시간대(타임존)를 복사하세요. (예: `Asia/Seoul`)
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
- [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
-Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당 시간대로 변경하세요.
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
 {% filename %}mysite/settings.py{% endfilename %}
+
 ```python
-    TIME_ZONE = 'Asia/Seoul'
+TIME_ZONE = 'Europe/Berlin'
 ```
 
-다음으로 정적파일 경로를 추가할 거에요. (정적 파일은 튜토리얼 후반부에서 CSS와 함께 다룰 거에요) 파일의 *끝(end)*으로 내려가서, `STATIC_URL`항목 바로 아래에 `STATIC_ROOT`을 추가하세요.
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+
+Change the language code by changing the following line:
 
 {% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LANGUAGE_CODE = 'de-ch'
+```
+
+We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
 ```python
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-`DEBUG`가`True`이고 `ALLOWED_HOSTS`가 비어 있으면, 호스트는 `['localhost', '127.0.0.1', '[::1]']`에 대해서 유효합니다. 애플리케이션을 배포할 때 PythonAnywhere의 호스트 이름과 일치하지 않으므로 다음 설정을 아래와 같이 변경해줘야 합니다. :
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
+
 ```python
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note** 크롬북 사용자는, `settings.py` 맨 마지막 줄에 아래 코드를 추가하세요. :
-> `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
-## 데이터베이스 설정하기
+## Set up a database
 
-사이트 내 데이터를 저장하기 위한 많은 다양한 데이터베이스 소프트웨어들이 있습니다. 그중에서 우리는 `sqlite3`을 사용할 거예요.
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
 
-이미 `mysite/settings.py`파일 안에 설치가 되어있어요.
+This is already set up in this part of your `mysite/settings.py` file:
 
 {% filename %}mysite/settings.py{% endfilename %}
+
 ```python
 DATABASES = {
     'default': {
@@ -112,77 +127,76 @@ DATABASES = {
 }
 ```
 
-블로그에 데이터베이스를 생성하기 위해서 콘솔 창에서 아래 코드를 실행하세요. : `python manage.py migrate` (이 명령을 실행하기 위해서는 `djangogirls`디렉터리 안에 있는 `manage.py`가 필요합니다)
-
-잘 작동되면, 아래와 같은 내용이 나옵니다.
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py migrate
-Operations to perform:
-  Apply all migrations: auth, admin, contenttypes, sessions
-Running migrations:
-  Rendering model states... DONE
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying sessions.0001_initial... OK
-```
 
-잘했어요! 이제 웹 서버를 시작해 웹 사이트가 잘 작동하는지 확인해봐요!
+    (myvenv) ~/djangogirls$ python manage.py migrate
+    Operations to perform:
+      Apply all migrations: auth, admin, contenttypes, sessions
+    Running migrations:
+      Rendering model states... DONE
+      Applying contenttypes.0001_initial... OK
+      Applying auth.0001_initial... OK
+      Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying contenttypes.0002_remove_content_type_name... OK
+      Applying auth.0002_alter_permission_name_max_length... OK
+      Applying auth.0003_alter_user_email_max_length... OK
+      Applying auth.0004_alter_user_username_opts... OK
+      Applying auth.0005_alter_user_last_login_null... OK
+      Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying sessions.0001_initial... OK
+    
 
-프로젝트 디렉토리(`djangogirls`)에 `manage.py`파일이 있어야 합니다. 콘솔에서는 `python manage.py runserver`명령을 실행해, 웹 서버를 바로 시작할 수 있습니다.
+And we're done! Time to start the web server and see if our website is working!
+
+## Starting the web server
+
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py runserver
-```
 
-크롬북 사용자는 아래 명령어를 입력하세요. :
+    (myvenv) ~/djangogirls$ python manage.py runserver
+    
+
+If you are on a Chromebook, use this command instead:
 
 {% filename %}Cloud 9{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8000
-```
 
-윈도우에서 `UnicodeDecodeError`오류가 난다면 아래 명령을 대신 써보세요. :
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    
+
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
 {% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-```
 
-웹 사이트가 모두 잘 작동하는지 확인해봐요. 사용하는 브라우저(파이어폭스, 크롬, 사파리, 인터넷 익스플로어 등 여러분의 원하는 대로)를 열어서 주소를 입력하세요.
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
 
-{% filename %}browser{% endfilename %}
-```
-http://127.0.0.1:8000/
-```
-
-크롬북 사용자는 항상 테스트 서버를 통해 접근해야 합니다.:
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
-```
-https://django-girls-<your cloud9 username>.c9users.io
-```
 
-축하해요! 여러분은 방금 웹 서버를 활용한 첫 웹사이트를 만들었어요! 정말 멋지죠?
+    http://127.0.0.1:8000/
+    
+
+If you're using a Chromebook, you'll always visit your test server by accessing:
+
+{% filename %}browser{% endfilename %}
+
+    https://django-girls-<your cloud9 username>.c9users.io
+    
+
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
 ![It worked!](images/it_worked2.png)
 
-웹 서버가 실행되는 동안 추가 명령을 입력 할 수있는 새로운 명령어 프롬프트가 표시되지 않습니다. 새 텍스트를 터미널에서 입력할 수 있지만 명령은 실행되지 않습니다. 웹 서버가 들어오는 요청을 수신 대기하기 위해 지속적으로 실행하고 있기 때문이에요.
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
-> <b>인터넷은 어떻게 작동될까요</b> 장에서 웹 서버에 대해 배웠었어요.
+> We reviewed how web servers work in the **How the Internet works** chapter.
 
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-웹 서버가 실행되는 동안 추가 명령을 입력하려면 새 터미널 창을 열고 virtualenv를 활성화하세요. 웹 서버를 중지하려면 실행중인 창으로 다시 전환하고 CTRL + C - Control+C 키를 함께 누르세요. (윈도우에서는 Ctrl + Break를 눌러야 할 수도 있습니다)
-
-다음 단계로 넘어갈 준비가 되셨나요? 새로운 것을 또 배워볼까요!
+Ready for the next step? It's time to create some content!
