@@ -1,48 +1,58 @@
-# Якщо ви проходите цей підручник вдома
+# If you're doing the tutorial at home
 
-Якщо ви проходите цей посібник вдома, а не на одному з [майстер-класів Django Girls](https://djangogirls.org/events/), ви можете повністю пропустити цей розділ і перейти до розділу [Як працює Інтернет](../how_the_internet_works/README.md).
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Справа в тому, що ми все одно розглядаємо ці речі в посібнику, а цей розділ - лише додаткова сторінка, де зібрані разом всі інструкції по встановленню. Зустріч Django Girls включає в себе "Вечір налаштувань", коли ми встановлюємо все потрібне, щоб не витрачати на це час під час воркшопу, це дуже зручно для нас.
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-Якщо ви вважаєте це корисним, можете пройти цей розділ також. Але якщо бажаєте почати вчитися без встановлення купи речей на ваш комп'ютер, пропустіть цей розділ і ми пояснимо як ставити програми пізніше.
+If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Успіхів!
+Good luck!
 
-# Встановлення
-На воркшопі ви будете створювати блог, і в посібнику є кілька підготовчих задач по встановленню, які було б добре виконати заздалегідь, так щоб на воркшопі ви були відразу готові програмувати.
+# Installation
 
-# Встановіть Python
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
+
+# Install Python
+
 {% include "/python_installation/instructions.md" %}
 
-# Налаштуйте virtualenv та встановіть Django
+# Set up virtualenv and install Django
+
 {% include "/django_installation/instructions.md" %}
 
-# Встановіть редактор коду
+# Install a code editor
+
 {% include "/code_editor/instructions.md" %}
 
-# Встановіть Git
+# Install Git
+
 {% include "/deploy/install_git.md" %}
 
-# Створіть аккаунт на GitHub
-Зайдіть на [GitHub.com](https://www.github.com) і зареєструйте новий безкоштовний аккаунт користувача.
+# Create a GitHub account
 
-# Створіть аккаунт на PythonAnywhere
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+
+# Create a PythonAnywhere account
+
 {% include "/deploy/signup_pythonanywhere.md" %}
 
+# Start reading
 
-# Почніть читати
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-Вітання, ви все зробили і готові йти вперед! Якщо ви все ще маєте час перед воркшопом, буде корисно, якщо ви почнете читати кілька вступних розділів:
+* [How the internet works](../how_the_internet_works/README.md)
 
-  * [Як працює Інтернет](../how_the_internet_works/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-  * [Знайомство з командним рядком](../intro_to_command_line/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-  * [Вступ до Python](../python_introduction/README.md)
+* [What is Django?](../django/README.md)
 
-  * [Що таке Django?](../django/README.md)
+# Enjoy the workshop!
 
-
-# Насолоджуйтесь подією!
-
-Після початку воркшопу, можете відразу перейти до [вашого першого Django проекту!](../django_start_project/README.md), тому що ви пройшли матеріал із попередніх розділів.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
