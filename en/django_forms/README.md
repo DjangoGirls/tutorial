@@ -415,7 +415,7 @@ $ git push
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd ~/yourusername.pythonanywhere.com
+$ cd ~/$USER.pythonanywhere.com
 $ git pull
 [...]
 ```

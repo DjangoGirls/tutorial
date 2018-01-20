@@ -186,7 +186,7 @@ Check out your code on PythonAnywhere by typing `tree`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ tree 
+$ tree
 yourusername.pythonanywhere.com/
 ├── blog
 │   ├── __init__.py

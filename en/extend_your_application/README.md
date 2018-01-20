@@ -181,7 +181,7 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd ~/yourusername.pythonanywhere.com
+$ cd ~/$USER.pythonanywhere.com
 $ git pull
 [...]
 ```
@@ -195,7 +195,7 @@ Start by activating your virtualenv if it's not still active from earlier:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ workon yourusername.pythonanywhere.com
+$ workon $USER.pythonanywhere.com
 (...)$ python manage.py collectstatic
 [...]
 ```
