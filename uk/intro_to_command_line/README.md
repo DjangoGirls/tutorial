@@ -1,97 +1,154 @@
-# Вступ до інтерфейсу командного рядка
+# Introduction to the command-line interface
 
-Це захоплює, чи не так?! Ви напишете свій перший рядок коду через декілька хвилин :)
+> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-__Дозвольте нам представити вас вашому новому другові: командний рядок!__
+It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-Наступні кроки покажуть вам, як користуватися чорним вікном хакерів. Спочатку це може видаватися трохи жахливим, однак насправді - це лише командна підказка, що очікує від вас певних команд.
+**Let us introduce you to your first new friend: the command line!**
 
-> **Примітка.** Зауважте, що в цій книзі ми використовуємо терміни 'директорія', 'каталог' та 'папка' взаємозамінно, ці слова означають одне й те саме.
+The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-## Що таке командний рядок?
+> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-Вікно, яке зазвичай називають __командним рядком__ або __інтерфейсом командного рядка__, є текстовою програмою для перегляду, обробки і управління файлами на вашому комп'ютері. Як Провідник на Windows чи Finder на Mac, але без графічного інтерфейсу. Інші назви командного рядка: *cmd*, *CLI*, *prompt*, *console* або *terminal*.
+## What is the command line?
 
-## Відкриваємо інтерфейс командного рядка
+The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
-Щоб почати експериментувати, нам потрібно спочатку відкрити наш інтерфейс командного рядка.
+## Open the command-line interface
 
-### Windows
+To start some experiments we need to open our command-line interface first.
 
-Перейдіть до меню Пуск → Усі програми → Стандартні → Командний рядок.
+<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-### Mac OS X
+Go to Start menu → Windows System → Command Prompt.
 
-Додатки → Утиліти → Термінал.
+> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
-### Linux
+<!--endsec-->
 
-Скоріш за все Додатки → Стандартні → Термінал, але це може залежати від вашої системної версії. Якщо тут його немає, просто загугліть :)
+<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-## Командний рядок
+Go to Applications → Utilities → Terminal.
 
-Має з'явитися біле або чорне вікно, що очікує на ваші команди.
+<!--endsec-->
 
-Якщо ви працюєте на Mac або на Linux, ви напевно побачите `$`, на зразок:
+<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
+
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+
+<!--endsec-->
+
+## Prompt
+
+You now should see a white or black window that is waiting for your commands.
+
+<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+If you're on Mac or Linux, you probably see `$`, just like this:
+
+{% filename %}command-line{% endfilename %}
 
     $
+    
 
-На Windows, це знак `>`:
+<!--endsec-->
+
+<!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
+
+On Windows, it's a `>` sign, like this:
+
+{% filename %}command-line{% endfilename %}
 
     >
+    
 
-Кожній команді буде передувати цей знак і один пробіл, але ви не мусите набирати їх. Ваш комп'ютер робитиме це для вас сам :)
+<!--endsec-->
 
-> Просто маленьке зауваження: у вашому випадку ви побачите щось на кшталт `C:\Users\ola>` або `Olas-MacBook-Air:~ ola$` перед знаком командного рядка і це на 100% є правильним.
+Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-Частина до `$` або `>` включно називається *запрошенням командного рядка* або скорочено *командним рядком*. Вона запрошує вас ввести туди щось.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-У посібнику, коли нам потрібно, щоб ви набрали щось в командний рядок, ми включатимемо `$` або `>`, а іноді й більше символів зліва. Ви можете ігнорувати ліву частину і друкувати в командний рядок лише те, що починається після `$`.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-## Ваша перша команда (ЙОЙ!)
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-Почнемо з чогось простенького. Наберіть команду:
+## Your first command (YAY!)
+
+Let's start by typing this command:
+
+<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
+    
 
-або
+<!--endsec-->
+
+<!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > whoami
+    
 
-Далі натисніть `enter`. Це наш результат:
+<!--endsec-->
+
+And then hit `enter`. This is our result:
+
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     olasitarska
+    
 
-Як бачимо, комп'ютер лише виводить ваше ім'я користувача. Файно, еге ж?:)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Спробуйте набирати кожну команду, а не копіювати і вставляти. Таким чином ви більше запам'ятаєте!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Основи
+## Basics
 
-У кожної операційної системи є трохи відмінні набори команд для командного рядку, отже, будьте певними, що виконуєте інструкції саме для вашої операційної системи. Давайте спробуємо?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Поточна директорія
+### Current directory
 
-Було б чудово знати, де ми перебуваємо зараз, чи не так? Давайте подивимося. Введіть цю команду і натисніть `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+
+<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska
+    
 
-Якщо ви працюєте на Windows:
+> Note: 'pwd' stands for 'print working directory'.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska
+    
 
-Можливо, ви побачите щось схоже на вашій машині. Після того, як ви відкрили командний рядок, ви зазвичай починаєте зі своєї домашньої папки.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
-> Зауваження: 'pwd' відповідає 'print working directory' (англ. надрукувати робочу папку).
+<!--endsec-->
 
----
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
-### Список файлів і папок
+* * *
 
-Отже, що ж всередині? Було б круто з'ясувати. Давайте подивимось:
+### List files and directories
+
+So what's in it? It'd be cool to find out. Let's see:
+
+<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -99,8 +156,13 @@ __Дозвольте нам представити вас вашому ново�
     Downloads
     Music
     ...
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
      Directory of C:\Users\olasitarska
@@ -109,146 +171,259 @@ Windows:
     05/08/2014 07:28 PM <DIR>      Downloads
     05/08/2014 07:28 PM <DIR>      Music
     ...
+    
 
----
-
-### Змінити поточну директорію
-
-Тепер давайте перейдемо до директорії робочого столу:
-
-    $ cd Desktop
-
-Windows:
-
-    > cd Desktop
-
-Перевірте, чи дійсно щось змінилось:
-
-    $ pwd
-    /Users/olasitarska/Desktop
-
-Windows:
-
-    > cd
-    C:\Users\olasitarska\Desktop
-
-Ось!
-
-> ПРОФІ хитрощі: якщо ви наберете `cd D` і потім натиснете `tab` на клавіатурі, командний рядок автоматично заповнить решту імені, таким чином можна переходити швидше. Якщо папок, що починаються з "D" більше однієї, натисніть кнопку `tab` двічі для отримання списку варіантів.
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
-### Створити директорію
+### Change current directory
 
-Як щодо створення каталогу `practice` на вашому робочому столі? Ви можете зробити це таким чином:
+Now, let's go to our Desktop directory:
+
+<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd Desktop
+    
+
+<!--endsec-->
+
+Check if it's really changed:
+
+<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ pwd
+    /Users/olasitarska/Desktop
+    
+
+<!--endsec-->
+
+<!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    > cd
+    C:\Users\olasitarska\Desktop
+    
+
+<!--endsec-->
+
+Here it is!
+
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+
+* * *
+
+### Create directory
+
+How about creating a practice directory on your desktop? You can do it this way:
+
+<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ mkdir practice
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > mkdir practice
+    
 
-Ця коротка команда створить папку з іменем `practice` на вашому робочому столі. Може перевірити чи є вона там, просто глянувши на свій Робочий стіл або запустивши команду `ls` або `dir`! Спробуйте :)
+<!--endsec-->
 
-> ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути кнопки `стрілка вгору` та `стрілка вниз` на своїй клавіатурі щоб повторити нещодавно використовувані команди.
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
----
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
-### Вправа!
+* * *
 
-Невеличке випробування для вас: в щойно створеній директорії `practice` створіть папку `test`. Використайте команди `cd` та `mkdir`.
+### Exercise!
 
-#### Розв'язання:
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+
+#### Solution:
+
+<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd practice
     $ mkdir test
     $ ls
     test
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
+    
 
-Вітаємо! :)
+<!--endsec-->
 
----
+Congrats! :)
 
-### Прибираємо
+* * *
 
-Ми не хочемо залишити безлад, то ж давайте видалимо усе, що ми створили до цього моменту.
+### Clean up
 
-Спочатку нам потрібно повернутися назад до директорії Робочий стіл:
+We don't want to leave a mess, so let's remove everything we did until that point.
+
+First, we need to get back to Desktop:
+
+<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd ..
+    
 
-Використання `cd` із `..` змінить вашу поточну директорію на батьківську (тобто папка, що містить вашу поточну папку).
+<!--endsec-->
 
-Перевірте де ми:
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+
+Check where you are:
+
+<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
+    
 
-Тепер час видалити директорію `practice`:
+<!--endsec-->
 
-> __Увага__: Видалення файлів за допомогою `del`, `rmdir` або `rm` є безповоротнім, тобто *файли будуть видалені назавжди*! То ж, будьте конче обережними із цими командами.
+Now time to delete the `practice` directory:
+
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+
+<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ rm -r practice
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > rmdir /S practice
     practice, Are you sure <Y/N>? Y
+    
 
-Виконано! Щоб переконатися, що папку дійсно видалена, давайте перевіримо:
+<!--endsec-->
+
+Done! To be sure it's actually deleted, let's check it:
+
+<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ ls
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > dir
+    
 
-### Вихід
+<!--endsec-->
 
-Це все наразі! Можна тепер спокійно закрити командний рядок. Давайте зробимо це хакерським методом, добре?:)
+### Exit
+
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+
+<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     $ exit
+    
 
-Windows:
+<!--endsec-->
+
+<!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
 
     > exit
+    
 
-Круто, га?:)
+<!--endsec-->
 
-## Підсумок
+Cool, huh? :)
 
-Тут наведено підсумок деяких корисних команд:
+## Summary
 
-| Команда (Windows) | Команда (Mac OS / Linux) | Опис                     | Приклад                                           |
-| ----------------- | ------------------------ | ------------------------ | ------------------------------------------------- |
-| exit              | exit                     | закрити вікно            | **exit**                                          |
-| cd                | cd                       | змінити директорію       | **cd test**                                       |
-| dir               | ls                       | список директорій/файлів | **dir**                                           |
-| copy              | cp                       | скопіювати файл          | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | перемістити файл         | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | створити нову директорію | **mkdir testdirectory**                           |
-| del               | rm                       | видалити директорію/файл | **del c:\test\test.txt**                        |
+Here is a summary of some useful commands:
 
-Тут наведено лише невелику кількість команд, котрі можна запускати у вашому командному рядку, однак, на даний момент ми не збираємося використовувати щось більше.
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
+| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                          |
+| cd                | cd                       | change directory           | **cd test**                                       |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | list directories/files     | **dir**                                           |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Якщо вас цікавить, [ss64.com](http://ss64.com) містить повний список посилань на команди для усіх операційних систем.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-## Готові?
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-Давайте зануримось у Python!
+## Ready?
+
+Let's dive into Python!
