@@ -1,27 +1,27 @@
-# Czym jest Django?
+# What is Django?
 
-Django (czytaj: dżango) to darmowy i open-source'owy framework do tworzenia aplikacji webowych, napisany w Pythonie. To taki zbiór narzędzi, dzięki którym tworzenie stron internetowych jest szybsze i łatwiejsze.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
 
-Gdy budujesz stronę internetową, często potrzebujesz tych samych rzeczy: uwierzytelnić użytkowników (rejestracja, logowanie, wylogowywanie), panel zarządzania stroną, formularzy, sposobu przesyłania plików itd.
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
-Na szczęście pewni programiści już kiedyś zauważyli, że wszyscy web developerzy stają przed takimi samymi problemami i stworzyli frameworki (Django jest jednym z nich), które dostarczają nam gotowych do użycia komponentów.
+Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-Frameworki istnieją, by oszczędzić Ci wyważania otwartych drzwi i ułatwić Ci proces tworzenia nowej strony.
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-## Dlaczego potrzebujesz frameworku?
+## Why do you need a framework?
 
-By zrozumieć do czego naprawdę służy Django, musimy lepiej przyjrzeć się serwerom. Pierwszą rzeczą którą musi wiedzieć serwer jest to, że chcesz, żeby wyświetlił Ci stronę.
+To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta list, i odsyła z powrotem odpowiedź w formie strony internetowej. Ale gdy chesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
+Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
-## Co się dzieje, gdy ktoś chce otworzyć stronę z Twojego serwera?
+## What happens when someone requests a website from your server?
 
-Kiedy serwer otrzymuje żądanie, przekazuje je dalej do Django, aby ten ustalił, czego właściwie ono dotyczy. Django sprawdza najpierw adres strony i decyduje, co zrobić dalej. Ta część jest wykonywana przez obecny w Django mechanizm rozpoznawania adresów (ang. **urlresolver** - zwróć uwagę, że adres strony to inaczej adres URL, czyli angielska nazwa tego modułu nie jest przypadkowa). Nie jest on zbyt inteligentny - jego działanie sprowadza się do porównania adresu URL z listą wzorców. Django sprawdza wzorce od góry do dołu i jeśli uda mu się znaleźć pasującą regułę, jest on przekazywana do odpowiedniej funkcji (zwanej *widokiem*).
+When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-Wyobraź sobie listonosza niosącego list. Idzie ulicą i porównuje każdy numer domu z adresem na kopercie. List zostawia w skrzynce tego domu, którego adres pasuje. Tak samo działa urlresolver!
+Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
-W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy połączyć się z bazą danych i wyszukać potrzebne nam informacje. Może użytkownik poprosił o zmianę danych? To tak, jakbyś wysłała list o treści "proszę o zmianę opisu mojego stanowiska pracy" - *widok* może sprawdzić, czy masz takie uprawnienia, a następnie dokona zmiany opisu i odeśle odpowiedź "Zrobione!". Wówczas *widok* generuje odpowiedź, a Django wysyła ją do przeglądarki użytkownika.
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Oczywiście powyższy opis jest nieco uproszczony, ale znajomość niuansów technicznych nie jest Ci na razie potrzebna. Wystarczy, że zrozumiesz ogólną zasadę działania.
+Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Dlatego nie będziemy się zbyt mocno zagłębiać w szczegóły i zacznijmy po prostu budować coś w Django. Wszystkich potrzebnych rzeczy nauczymy się po drodze!
+So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
