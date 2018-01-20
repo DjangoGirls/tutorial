@@ -1,19 +1,22 @@
-# Django форми
+# Django Forms
 
-Остання річ, яку б ми хотіли зробити з нашим сайтом, це створити зручний спосіб додавати і редагувати пости. Django адміністратор - це звісно круто, але водночас він є досить складним для налаштування. З формами ми будемо мати абсолютний контроль над нашим інтерфейсом - можемо робити майже усе, що заманеться!
+The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-Що тішить стосовно Django форм, так це те, що останні можна визначати як з нуля, так і створювати засобами `ModelForm`, що зберігають результат форми всередині моделі.
+The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
-Це саме те, що нам потрібно: створимо форму для нашої моделі `Post`.
+This is exactly what we want to do: we will create a form for our `Post` model.
 
-Як і кожна важлива складова Django, форми мають свій власний файл: `forms.py`.
+Like every important part of Django, forms have their own file: `forms.py`.
 
-Потрібно створити файл із заданим ім'ям в папці `blog`.
+We need to create a file with this name in the `blog` directory.
 
     blog
        └── forms.py
+    
 
-Добре, відкриємо цей файл і наберемо наступний код:
+OK, let's open it and type the following code:
+
+{% filename %}blog/forms.py{% endfilename %}
 
 ```python
 from django import forms
@@ -27,29 +30,33 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Спершу потрібно імпортувати Django форми (`from django import forms`) і, очевидно, нашу модель `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-`PostForm`, як ви можливо зазначили, це ім'я нашої форми. Ми маємо повідомити Django, що наша форма є `ModelForm` (таким чином Django здійснить для нас певні магічні маніпуляції) і рядок `forms.ModelForm` відповідає за це.
+`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
-Далі, у нас є `class Meta`, де ми вказуємо для Django котра з моделей має бути використана для створення форми (`model = Post`).
+Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
-Зрештою, можемо зазначити, якими полями має закінчуватись наша форма. В даному сценарії ми би хотіли опублікувати такі параметри, як заголовок `title` і зміст `text`, дані про автора `author`, що автоматично встановлюються як дані користувача, який наразі залогінився (тобто ви!), а також дата створення `created_date`, яка автоматично встановлюється при створенні поста (тобто в коді), вірно ж?
+Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-І це все! Все що нам потрібно тепер зробити це використати форму в блоці *view* і відобразити її в шаблоні.
+And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
-Отже, знову ми створимо: посилання на сторінку, адресу (URL), вид (view) і шаблон (template).
+So once again we will create a link to the page, a URL, a view and a template.
 
-## Посилання на сторінку з формою
+## Link to a page with the form
 
-Час відкрити `blog/templates/blog/base.html`. Додамо лінк всередині блоку `div` із ім'ям `page-header`:
+It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Зауважте, що ми хочемо запустити наше нове відображення `post_new`. Клас `"glyphicon glyphicon-plus"` постачається bootstrap темою, яку ми використовуємо, і буде відображати знак плюса.
+Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
-Після додавання відповідного рядка, ваш html файл має виглядати наступним чином:
+After adding the line, your HTML file should now look like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -78,17 +85,21 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-Після збереження та оновлення сторінки http://127.0.0.1:8000 ви звісно побачите знайому помилку `NoReverseMatch`, правда?
+After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
 ## URL
 
-Відкриваємо `blog/urls.py` і додаємо рядок:
+We open `blog/urls.py` and add a line:
+
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/new/$', views.post_new, name='post_new'),
+url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
-Остаточно код буде виглядати так:
+And the final code will look like this:
+
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -96,22 +107,26 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]
 ```
 
-Після оновлення сайту бачимо помилку `AttributeError`, оскільки відображення `post_new` не реалізоване. Давайте додамо цей вид прямо зараз.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
-## Відображення post_new
+## post_new view
 
-Час відкрити файл `blog/views.py` і додати наступні рядки:
+Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from .forms import PostForm
 ```
 
-і функцію для потрібного *відображення*:
+And then our *view*:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_new(request):
@@ -119,20 +134,22 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Щоб створити нову форму `Post`, нам потрібно викликати функцію `PostForm()` і передати її до шаблону. Повернемося пізніше до цього відображення, а зараз давайте створимо шаблон для форми.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Шаблон
+## Template
 
-Нам потрібно створити файл `post_edit.html` у папці `blog/templates/blog`. Щоб створити форму нам знадобиться декілька речей:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
-- нам треба показати форму. Можна, наприклад, зробити це за допомогою простого `{% raw %}{{ form.as_p }}{% endraw %}`.
-- верхній рядок має бути розміщений всередині тега HTML для форми: `<form method="POST">...</form>`
-- нам знадобиться кнопка Зберегти - `Save`. Створимо її в HTML за допомогою: `<button type="submit">Save</button>`
-- і нарешті, одразу після відкриваючого тегу `<form ...>` ми маємо додати `{% raw %}{% csrf_token %}{% endraw %}`. Це дуже важливо з міркувань безпеки вашої форми! Django наголосить на цьому, якщо ви раптом забудете вказати згадану вказівку і будете намагатися зберегти форму:
+* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
+* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Добре, отже, давайте подивимось як має виглядати HTML код в `post_edit.html`:
+OK, so let's see how the HTML in `post_edit.html` should look:
+
+{% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -146,19 +163,21 @@ def post_new(request):
 {% endblock %}
 ```
 
-Час перезавантажитись! Йой! Ваша форма відображується!
+Time to refresh! Yay! Your form is displayed!
 
 ![New form](images/new_form2.png)
 
-Але, одну хвилиночку! Коли ви набираєте щось в полях `title` і `text`, та намагаєтесь зберегти зміни - що ж тоді станеться?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-А нічого! Ми знову опинимося на тій самій сторінці, і наш текст зникне... і жодного нового поста. Отже, що ж пішло не так?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-Відповідь: нічого. Мусимо проробити трохи більше роботи з нашим блоком *view*.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
-## Зберігання форми
+## Saving the form
 
-Відкрийте `blog/views.py` знову. Наразі все що ми маємо в `post_new` це:
+Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_new(request):
@@ -166,9 +185,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Коли ми відправляємо форму, ми потрапляємо в той самий view, але цього разу маємо більше даних в `request`, а якщо точніше - в `request.POST` (ця назва не пов’язана з блогерським терміном "пост", вона пов’язана з тим що ми "постимо" дані). Пам'ятайте, що у файлі HTML наше визначення `<form>` містило атрибут `method="POST"`? Усі поля форми на даний момент знаходитимуться в `request.POST`. Ви не повинні перейменовувати `POST` на щось інше (лише єдине альтернативне прийнятне значення для атрибуту `method` це `GET`, але ми не маємо часу пояснювати в чому різниця).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-Отже, ми маємо дві окремі ситуації, що потребують контролю для нашого блоку вид *view*. Перша: коли ми отримуємо доступ до сторінки вперше і хочемо отримати пусту форму. Друга: коли ми повертаємось назад до виду *view* із усіма нещодавно доданими даними форми. Таким чином, маємо додати умову (використаємо для цього `if`).
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 if request.method == "POST":
@@ -177,15 +198,19 @@ else:
     form = PostForm()
 ```
 
-Час заповнити порожнє місце `[...]`. Якщо метод `method` є методом `POST`, тоді ми захочемо створити `PostForm` з даними форми, вірно? Зробимо це за допомогою:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 form = PostForm(request.POST)
 ```
 
-Просто! Наступна річ - перевірити чи коректно заповнена форма (налаштовані усі необхідні поля і не відбулося зберігання жодного некоректного значення). Зробимо це за допомогою `form.is_valid()`.
+The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Ми перевіряємо чи є форма прийнятною і якщо це так, то можемо зберегти її!
+We check if the form is valid and if so, we can save it!
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 if form.is_valid():
@@ -195,24 +220,29 @@ if form.is_valid():
     post.save()
 ```
 
-В основі, маємо тут два моменти: зберігаємо форму за допомогою `form.save` і додаємо автора (оскільки поле автор `author` було відсутнє в `PostForm` і це поле є необхідним!). `commit=False` означає, що ми не хочемо поки що зберігати модель `Post` - ми хочемо спочатку додати ім'я автора. У більшості випадків ви будете користуватися `form.save()` без `commit=False`, але в даному випадку, ми маємо це зробити.
-`post.save()` захистить здійснені зміни (додавання автора) і створиться новий блог пост!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-Зрештою, було б чудово, якби ми могли миттєво переходити на сторінку `post_detail` для щойно створеного допису у блозі, чи не так? Щоб зробити це, нам необхідно виконати ще один імпорт:
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import redirect
 ```
 
-Додайте це з самого початку вашого файлу. А тепер можемо сказати: перейти на сторінку `post_detail` для щойно створеного поста.
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` - ім'я виду, до якого ми хочемо перейти. Пам'ятаєте, що цей вид потребує змінної `pk`? Щоб здійснити передачу вище згаданої змінної, скористаємося `pk=post.pk`, де `post` є новим постом!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-Але, щось дуже багато балачок, напевно ми хотіли б побачити, як відображується даний вид наразі в цілому, правда ж?
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_new(request):
@@ -229,39 +259,41 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Подивимося, чи усе працює. Зайдіть на сторінку http://127.0.0.1:8000/post/new/, додайте `title` та `text`, збережіть... і вуаля! Новий блог пост успішно додано і нас автоматично перенаправило на сторінку `post_detail`!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-Ви могли помітити, що ми встановлюємо дату публікації, перед збереженням поста. Пізніше, ми введемо *кнопку публікації* в **Django Girls Tutorial: Розширте ваш додаток**.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-Просто чудово!
+That is awesome!
 
-> Оскільки ми нещодавно мали справу з інтерфейсом Django адміністратора система наразі вважає, що ми залогінились. Є декілька ситуацій, які могли призвести до того, що ми вийшли з системи (закриття браузера, перезавантаження бази даних тощо). Якщо раптом виявиться, що при створенні поста з'явиться помилка, пов'язана із відсутністю залогіненого користувача, перейдіть на сторінку адміністратора http://127.0.0.1:8000/admin і залогіньтеся знову. Проблему тимчасово буде вирішено. Безповоротне розв'язання проблеми чекає на вас у розділі __Домашня робота: безпека вашого сайту!__ після освоєння головного посібника.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
+## Form validation
 
-## Перевірка форми
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-А тепер ми покажемо вам, наскільки круто використовувати Django форми. Блог пост повинен мати такі поля як заголовок - `title` і зміст - `text`. В нашій моделі `Post` ми не вказали (на відміну від дати публікації - `published_date`), що ці поля не є необхідними, отже, Django, за замовчуванням, очікує що вони будуть заповнені.
+Try to save the form without `title` and `text`. Guess what will happen!
 
-Спробуйте зберегти форму без атрибутів `title` і `text`. Здогадуємось, що трапиться!
+![Form validation](images/form_validation2.png)
 
-![Перевірка форми](images/form_validation2.png)
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
-Django турбується про те, щоб усі поля нашої форми були коректно заповнені. Хіба це не круто?
+## Edit form
 
+Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-## Редагування форми
+Open `blog/templates/blog/post_detail.html` and add the line
 
-Тепер ми знаємо як додати нову форму. Та якщо ми раптом захочемо відредагувати вже існуючу? Це дуже схоже на те, що ми щойно проробили. Давайте швидко створимо певні важливі речі (якщо вам щось незрозуміло, ви маєте запитати вашого тренера або ще раз передивитись попередній параграф, оскільки ми вже пройшли усі ці речі).
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-Відкрийте `blog/templates/blog/post_detail.html` і додайте наступний рядок:
-
-```python
+```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-таким чином, шаблон буде виглядати подібним чином:
+so that the template will look like this:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -280,15 +312,19 @@ Django турбується про те, щоб усі поля нашої фо�
 {% endblock %}
 ```
 
-В `blog/urls.py` додамо цей рядок:
+In `blog/urls.py` we add this line:
+
+{% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
+    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
 ```
 
-Повторно використаємо шаблон `blog/templates/blog/post_edit.html`, отже, остання річ, яка лишилась це відображення..
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Давайте відкриємо `blog/views.py` і додамо в самому кінці файлу:
+Let's open `blog/views.py` and add this at the very end of the file:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 def post_edit(request, pk):
@@ -306,43 +342,51 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Виглядає майже точно так, як і наш вид `post_new`, правда? Не зовсім. Перше: ми передаємо додатковий параметр `pk` з адресного рядку. Наступне: ми отримуємо модель `Post`, яку хотіли б відредагувати як `get_object_or_404(Post, pk=pk)` і потім, при створенні форми ми передаємо цей пост як екземпляр `instance`, коли зберігаємо форму:
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 form = PostForm(request.POST, instance=post)
 ```
 
-а коли ми просто відкриваємо форму з цим постом для редагування:
+…and when we've just opened a form with this post to edit:
+
+{% filename %}blog/views.py{% endfilename %}
 
 ```python
 form = PostForm(instance=post)
 ```
 
-Добре, давайте протестуємо, чи все працює! Перейдімо на сторінку `post_detail`. У верхньому правому кутку має з'явитися кнопка редагування:
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Кнопка редагування](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Коли ви натиснете на неї, то побачите форму з нашим блог постом:
+When you click it you will see the form with our blog post:
 
-![Редагування форми](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-Можете вільно змінити заголовок або текст і зберегти зміни!
+Feel free to change the title or the text and save the changes!
 
-Вітаємо! Ваш додаток стає все більш і більш повним!
+Congratulations! Your application is getting more and more complete!
 
-Якщо бажаєте дізнатись більше інформації про форми Django, ознайомтесь із документацією: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Безпека
+## Security
 
-Створювати нові публікації просто клацаючи на посилання класно! Але зараз, будь-хто хто відвідує ваш сайт, буде здатним опублікувати пост, а ви цього напевне не хочете. Давайте зробимо так що кнопка показується для вас, але не показується для всіх інших.
+Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-В `blog/templates/blog/base.html`, знайдіть наш `page-header` `div` і тег посилання який ви додали туди раніше. Вони повинні виглядати якось так:
+In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Ми збираємось додати інший тег `{% if %}` який показуватиме посилання лише користувачам які ввійшли від імені адміністратора. На даний момент, це лише ви! Змініть тег `<a>` щоб він виглядав так:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
@@ -350,52 +394,54 @@ form = PostForm(instance=post)
 {% endif %}
 ```
 
-Цей `{% if %}` зробить так, що посилання буде відправлятись браузеру лише коли користувач, що запитував сторінку, залогований. Це не захищає від створення нових публікацій анонімами повністю, але це непоганий перший крок. Ми розглянемо більше питань безпеки в розширених уроках.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Пам'ятаєте іконку редагування, що ми додали до нашої сторінки з деталями посту? Ми також хочемо додати цю ж зміну сюди, щоб інші люди не могли редагувати існуючі пости.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Відкрийте `blog/templates/blog/post_detail.html` і знайдіть:
+Open `blog/templates/blog/post_detail.html` and find this line:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Замініть це на:
+Change it to this:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-	<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
 ```
 
-Оскільки ви ввійшли до системи, то якщо оновите сторінку, не побачите зміни. Відкрийте сторінку в новому браузері або в анонімному вікні, і тоді ви побачите, що посилання не показується!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
-## Ще одне: розгортання!
+## One more thing: deploy time!
 
-Давайте поглянемо, чи це все працює на PythonAnywhere. Час для ще одного розгортання!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
-*   Спершу, закомітьте новий код і зробіть push на GitHub
+* First, commit your new code, and push it up to Github:
 
-```
-$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Added views to create/edit blog post inside the site."
-$ git push
-```
+{% filename %}command-line{% endfilename %}
 
-*   Тоді, в [bash консолі PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git push
+    
 
-```
-$ cd my-first-blog
-$ source myvenv/bin/activate
-(myvenv)$ git pull
-[...]
-(myvenv)$ python manage.py collectstatic
-[...]
-```
+* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-* Нарешті, перейдіть на [вкладку Web](https://www.pythonanywhere.com/web_app_setup/) і натисніть **Reload**.
+{% filename %}command-line{% endfilename %}
 
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
 
-І це все! Вітання :)
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+
+And that should be it! Congrats :)
