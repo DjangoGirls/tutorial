@@ -1,117 +1,116 @@
-# HTML'ye giriş
+# Introduction to HTML
 
-Template nedir diye sorabilirsiniz.
+What's a template, you may ask?
 
-Template, farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerse ve farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-Bir Django template düzeni HTML adını verdiğimiz bir dilde tanımlanır (**İnternet nasıl çalışır** adlı ilk bölümde bahsettiğimiz HTML).
+A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## HTML nedir?
+## What is HTML?
 
-HTML Chrome, Firefox veya Safari gibi web tarayıcılar tarafından bir web sayfasını kullanıcıya görüntülemek için yorumlanan basit bir koddur.
+HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText (HiperMetin)** sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup (İşaretleme)**, bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söyledik demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
+HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## İlk template'iniz!
+## Your first template!
 
-Bir template oluşturmak bir template dosyası oluşturmak demektir. Her şey bir dosyadır, değil mi? Bunu muhtemelen zaten fark etmişsinizdir.
+Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü altında `templates` adlı bir klasör oluşturalım. Sonra da templates klasörü altında yine `blog` adlı bir klasör oluşturalım:
+Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
-```
-blog
-└───templates
-    └───blog
-```    
+    blog
+    └───templates
+        └───blog
+    
 
-(Neden iki tane `blog` adlı klasöre gerek olduğunu merak etmiş olabilirsin. Daha sonra da anlaşılacağı gibi, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-Şimdi de `blog/templates/blog` dizini içine `post_list.html` adlı bir dosya oluşturalım (şimdilik içini boş bırakalım).
+And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
+See how your website looks now: http://127.0.0.1:8000/
 
-> Eğer `TemplateDoesNotExists` hatası alırsanız sunucuyu yeniden başlatmayı deneyin. Komut satırına gidip, Ctrl+C (Control ve C tuşlarına eş zamanlı basarak) yaptıktan sonra sunucuyu tekrar başlatmak için `python manage.py runserver` komutunu çalıştırın.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![Şekil 11.1][1]
+![Figure 11.1](images/step1.png)
 
- [1]: images/step1.png
+No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
-Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan başka bir şey yayınlamıyor, çünkü template boş. Bunu düzeltelim.
+Add the following to your template file:
 
-Template dosyamıza şunları ekleyelim:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
-    <p>Merhaba!</p>
-    <p>Çalışıyor!</p>
+    <p>Hi there!</p>
+    <p>It works!</p>
 </html>
-```    
+```
 
-Web siteniz şimdi nasıl görünüyor? Öğrenmek için tıklayın: http://127.0.0.1:8000 /
+So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![Şekil 11.2][2]
+![Figure 11.2](images/step3.png)
 
- [2]: images/step3.png
+It worked! Nice work there :)
 
-Çalıştı! Tebrikler :)
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
-*   Tüm web sayfaları en temel etiket olan`<html>` etiketi ile başlar ve her zaman `</html>` ile biter. Gördüğünüz gibi, web sitesinin tüm içeriği `<html>` başlangıç etiketi ve `</html>` bitiş etiketinin arasında yer alır
-*   `<p>` paragraf öğelerini belirten etikettir; her paragrafın bitişinde de `</p>` olacaktır
+## Head and body
 
-## Head ve body (Başlık ve gövde)
+Each HTML page is also divided into two elements: **head** and **body**.
 
-Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye ayrılır.
+* **head** is an element that contains information about the document that is not displayed on the screen.
 
-*   **head** belge hakkında ekranda görüntülenmeyen bilgiler içeren öğedir.
+* **body** is an element that contains everything else that is displayed as part of the web page.
 
-*   **body** ise ekranda gösterilen tüm öğeleri içeren öğedir.
+We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
-`<head>` öğesini tarayıcıya sayfanın yapılandırmasını anlatmak için, `<body>` öğesini ise sayfada aslında ne olduğunu anlatmak için kullanırız.
+For example, you can put a web page title element inside the `<head>`, like this:
 
-Örneğin, web sayfasının (title) başlık elemanını `<head>` 'in içine böyle koyabilirsiniz:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
     <head>
-        <title>Zeynep'in blogu</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Merhaba!</p>
-        <p>Çalışıyor!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
-    
 
-Dosyayı kaydedin ve sayfanızı yenileyin.
+Save the file and refresh your page.
 
-![Şekil 11.3][3]
+![Figure 11.3](images/step4.png)
 
- [3]: images/step4.png
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
-Tarayıcınızın "Zeynep'in blogu" başlığını nasıl anladığını fark ettiniz mi? `<title>Zeynep'in blogu</title>` kısmını başlık olarak yorumlayarak yazıyı tarayıcının başlık kısmına yerleştirdi. (Bu yazı yer işaretleri gibi yerlerde de kullanılır).
+Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-Her açılan etiketin benzer bir *kapatan etiket*, `/` ile başlayan, ile kapatılmalıdır. Ayrıca bu etiketler *iç içe* yerleştirilebilir (bu da bir etiketi kapatabilmek için, içindeki tüm etiketlerin kapanmış olmasını gerektirir).
+It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
-Bir şeyleri kutulara yerleştirmek gibi. Büyük bir kutuda `<html></html>` olsun; onun içinde `<body></body>` kutusu olsun, onun da içinde daha küçük kutular olsun: `<p></p>`.
+You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak çok önemli. Aksi takdirde tarayıcı belgenizi doğru yorumlayamaz ve gösteremez.
+## Customize your template
 
-## Template özelleştirme
+You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
-Şimdi artık biraz eğlenip template'inizi özelleştirmeyi deneyebilirsiniz! İşte bunun için faydalı birkaç etiket:
+* `<h1>A heading</h1>` for your most important heading
+* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<p>A paragraph of text</p>`
+* `<em>text</em>` emphasizes your text
+* `<strong>text</strong>` strongly emphasizes your text
+* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
+* `<div></div>` defines a section of the page
 
-*   `<h1>Bir başlık</h1>` - ana başlığınız için
-*   `<h2>Bir alt başlık</h2>` - bir sonraki seviyedeki bir başlık için
-*   `<h3>Bir alt alt başlık</h3>` ... ve böyle `<h6>` ya kadar iner
-*   `<em>metin</em>` metni vurgular
-*   `<strong>metin</strong>` metni iyice vurgular
-*   `<br />` - alt satıra gider (br etiketi içine bir şey konulmaz)
-*   `<a href = "http://djangogirls.org">bağlantı</a>` bir bağlantı oluşturur
-*   `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
-*   `<div></div>` - sayfanın bir bölümünü tanımlar
+Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
-Şimdi de tam bir template örneği:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
@@ -120,98 +119,95 @@ Etiketleri düzgün *kapatma* ve *iç içe * yerleştirme kurallarına uymak ço
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-    
+
         <div>
             <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">İlk Blogum</a></h2>
-            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
-  
+
         <div>
-            <p>published: 14.06.2014, 12:20</p>
-            <h2><a href="">İkinci gönderim</a></h2>
-            <p>Bir varmış bir yokmuş, evvel zaman içinde Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. kalbur saman içinde, develer tellal iken, pireler berber iken; ben annemin beşiğini tıngır mıngır sallar iken.</p>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
-```    
-
-Burada üç tane `div` bölümü oluşturduk.
-
-*   İlk `div` öğesi blogumuzun başlığını içeriyor - bir başlık ve bir bağlantıdan oluşuyor
-*   Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi, tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
-
-Bize yaşattığı duygu:
-
-![Şekil 11.4][4]
-
- [4]: images/step6.png
-
-Yaşasın! Şimdiye dek, template tam olarak sadece **aynı bilgiyi ** görüntüledi - öncesinde ise template'in **farklı** bilgileri **aynı formatta** görüntülememize izin verdiğinden bahsetmiştik.
-
-Gerçekten yapmak istediğimiz ise Django adminde ekli gerçek gönderileri göstermek - ve bir sonraki adımımız da bu.
-
-## Birşey daha: dağıtım!
-
-Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
-
-### Kodumuzu commit ve push komutları ile Github'a yükleyelim
-
-İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
-
-```
-$ git status
 ```
 
-`djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
+We've created three `div` sections here.
 
-```
-$ git add -A .
-```    
+* The first `div` element contains the title of our blog – it's a heading and a link
+* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-> **Not:** `-A` (hepsi için bir kısaltma - İngilizce'de "all" hepsi demek) `git`'in silinmiş dosyaları tanır (normalde sadece yeni/güncellenmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
+It gives us this effect:
 
-Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'in yükleyeceği dosyalar yeşil gösterilir) bakalım:
+![Figure 11.4](images/step6.png)
 
-```
-$ git status
-```    
+Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-Neredeyse bitirdik, şimdi bu değişikliği tarihçesine kaydetmesini söyleyelim. Commit için değişiklikleri açıklayan bir mesaj yazalım. Bu aşamada istediğimizi yazabiliriz, fakat tanımlayıcı yazılar gelecekte neler yapmış olduğumuzu hatırlatması açısından faydalı olacaktır.
+What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-```
-$ git commit -m "Site için HTML dosyasını değiştirdim."
-```    
+## One more thing: deploy!
 
-> **Not** Tamamlama mesajını çift tırnak içerisinde kullandığımızdan emin olalım.
+It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-Bunu tamamladıktan sonra, değişiklikleri Github'a push komutunu kullanarak yükleyelim:
+### Commit, and push your code up to Github
 
-```
- $ git push
-```  
+First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
-### Pull ile yeni kodu PythonAnywhere e alıp web uygulamasını tekrar yükleyelim
+{% filename %}command-line{% endfilename %}
 
-*   [PythonAnywhere consoles page][5]sayfasını ve **Bash console** u açalım (ya da yeni bir tane açalım). Sonra da çalıştıralım:
+    $ git status
+    
 
- [5]: https://www.pythonanywhere.com/consoles/
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
 
-```
-$ cd ~/ilk-blogum
-$ source myvenv/bin/activate
-(myvenv)$ git pull
-[...]
-(myvenv)$ python manage.py collectstatic
-[...]
-```    
+{% filename %}command-line{% endfilename %}
 
-Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
+    $ git add --all .
+    
 
-*   Son olarak, [Web sekmesi][6]ne gidip uygulamanızın **Yenile** butonuna basın.
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
- [6]: https://www.pythonanywhere.com/web_app_setup/
+Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
-Güncelleme hazır olmalı! Devam edelim ve tarayıcıda web sitesini yenileyelim. Değişiklikler görünüyor olmalı :)
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    
+
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+
+{% filename %}command-line{% endfilename %}
+
+    $ git commit -m "Changed the HTML for the site."
+    
+
+> **Note** Make sure you use double quotes around the commit message.
+
+Once we've done that, we upload (push) our changes up to GitHub:
+
+{% filename %}command-line{% endfilename %}
+
+    $ git push
+    
+
+### Pull your new code down to PythonAnywhere, and reload your web app
+
+* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd ~/my-first-blog
+    $ git pull
+    [...]
+    
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
