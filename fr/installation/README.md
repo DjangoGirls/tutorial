@@ -1,49 +1,58 @@
-# Si vous suivez ce tutoriel chez vous
+# If you're doing the tutorial at home
 
-Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](https://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne l'Internet ?](../how_the_internet_works/README.md).
+If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Les informations données ici sont couvertes dans le reste du tutoriel. Cette partie permet simplement de regrouper au même endroit tout ce qu'il est nécessaire d'installer avant de participer à un évènement. Les évènements Django Girls incluent une "soirée d'installation" qui permet de prendre un peu d'avance sur la journée de formation proprement dite.
+This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
-Rien ne vous empêche de tout installer maintenant si vous le souhaitez. Cependant, si vous avez envie d'apprendre des choses avant d'installer plein de trucs sur votre ordinateur : passez ce chapitre et installez ce dont vous avez besoin au fil des chapitres.
+If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Bonne chance !
+Good luck!
 
 # Installation
 
-Pendant l'atelier, vous allez apprendre à construire un blog. Afin d'être prête pour le jour J, vous devrez installer les éléments listés sur cette page.
+In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
-# Installer Python
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Mettre en place virtualenv et installer Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Installez un éditeur de code
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Installer Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Créer un compte GitHub
+# Create a GitHub account
 
-Allez sur [GitHub.com](https://www.github.com) et créez-vous un nouveau compte gratuitement.
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
 
-# Créer un compte PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Commencer à lire
+# Start reading
 
-Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours du temps avant l'atelier, il peut être utile de commencer à lire les premiers chapitres :
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-  * [Comment fonctionne l'Internet ?](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-  * [Introduction à la ligne de commande](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-  * [Introduction à Python](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-  * [Qu'est-ce que Django?](../django/README.md)
+* [What is Django?](../django/README.md)
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
