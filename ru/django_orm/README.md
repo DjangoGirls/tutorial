@@ -1,37 +1,39 @@
-# Django ORM и QuerySet
+# Django ORM and QuerySets
 
-В этой главе ты узнаешь, как Django подключается к базе данных и сохраняет в неё информацию. Давай начнём!
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## Что такое QuerySet?
+## What is a QuerySet?
 
-QuerySet, по сути, — список объектов заданной Модели. QuerySet позволяет читать данные из базы данных, фильтровать и изменять их порядок.
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-Проще научиться на примере. Давай попробуем, согласна?
+It's easiest to learn by example. Let's try this, shall we?
 
-## Интерактивная консоль Django
+## Django shell
 
-Открой свой локальный терминал (не на PythonAnywhere) и набери следующую команду:
-
-{% filename %}command-line{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py shell
-```
-
-Результат должен быть таким:
+Open up your local console (not on PythonAnywhere) and type this command:
 
 {% filename %}command-line{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py shell
+    
+
+The effect should be like this:
+
+{% filename %}command-line{% endfilename %}
+
 ```python
 (InteractiveConsole)
 >>>
 ```
 
-Ты находишься в интерактивной консоли Django. По сути, это та же интерактивная консоль Python, но с магией Django :) Ты можешь использовать весь синтаксис Python, разумеется.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-### Все объекты
+### All objects
 
-Давай попробуем вывести на экран все записи в нашем блоге. Ты можешь сделать это следующей командой:
+Let's try to display all of our posts first. You can do that with the following command:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.all()
 Traceback (most recent call last):
@@ -39,163 +41,177 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Упс! Ошибка. Она говорит, что не существует объекта с именем Post. И это верно — мы забыли импортировать его!
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> from blog.models import Post
 ```
 
-Всё просто: мы импортируем модель `Post` из `blog.models`. Давай попробуем получить все записи блога ещё раз:
+We import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.all()
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-Это список записей, с которыми мы работали до этого! Мы создали их через панель администратора Django. Теперь же мы хотим создавать записи с помощью Python, так как же мы этого добьёмся?
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
 
-### Создаём объект
+### Create object
 
-Создать объект Post в базе данных можно следующим образом:
+This is how you create a new Post object in database:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Но у нас есть один недочёт: `me`. Мы должны передать этой переменной экземпляр модели `User`, который будет отвечать за автора записи. Как это сделать?
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
 
-Давай для начала импортируем модель User:
+Let's import User model first:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> from django.contrib.auth.models import User
 ```
 
-Какие пользователи есть в нашей базе данных? Попробуй эту команду:
+What users do we have in our database? Try this:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> User.objects.all()
 <QuerySet [<User: ola>]>
 ```
 
-Это суперпользователь, которого мы создали ранее! Нам нужен его экземпляр:
+This is the superuser we created earlier! Let's get an instance of the user now:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> me = User.objects.get(username='ola')
 ```
 
-Как ты можешь заметить, мы получили (`get`) пользователя (`User`) с именем `username` 'ola'. Шикарно! В твоём случае имя, конечно, может отличаться.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
 
-Теперь мы, наконец, можем создать наш пост:
+Now we can finally create our post:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Ура! Хочешь проверить, что всё работает?
+Hurray! Wanna check if it worked?
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.all()
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-Есть, ещё один пост в списке!
+There it is, one more post in the list!
 
-### Добавляем записи
+### Add more posts
 
-Можешь повеселиться и добавить ещё записей. 2-3 будет достаточно.
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
 
-### Фильтрация объектов
+### Filter objects
 
-Важной особенностью QuerySets является возможность фильтровать объекты. Предположим, нам нужно найти все записи пользователя ola. Мы используем метод `filter` вместо метода `all` в `Post.objects.all()`. В скобках мы укажем условия, по которым будет построена выборка записей. В нашей ситуации условием будет являться равенство поля `author` переменной `me`. В Django мы можем написать это следующим образом: `author=me`. Теперь наш код выглядит следующим образом:
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.filter(author=me)
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-А может быть мы хотим получить все записи со словом 'title' в поле `title`?
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.filter(title__contains='title')
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> **Примечание**: обрати внимание на два символа нижнего подчёркивания (`_`) между `title` и `contains`. Django ORM использует этот синтаксис для разделения имён полей ("title") и операций или фильтров ("contains"). Если ты используешь только один символ нижнего подчёркивания, то получишь ошибку "FieldError: Cannot resolve keyword title_contains".
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
-Ты также можешь получить список всех опубликованных записей. Мы просто отфильтруем записи по полю `published_date`:
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
 []
 ```
 
-К сожалению, пост, который мы добавили в консоли Python, ещё не опубликован. Мы можем изменить это! Сначала выберем запись, которую мы хотим опубликовать:
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-Дальше мы опубликуем её с помощью метода `publish`!
+And then publish it with our `publish` method:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> post.publish()
 ```
 
-Теперь попробуй получить список опубликованных сообщений снова (нажми стрелку вверх 3 раза и затем `enter`):
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
 [<Post: Sample title>]
 ```
 
+### Ordering objects
 
-### Сортировка объектов
-
-QuerySets позволяет сортировать объекты. Давай попробуем сортировку по полю `created_date`:
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.order_by('created_date')
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-Мы также можем изменить порядок на противоположный, добавив `-` в начало условия:
+We can also reverse the ordering by adding `-` at the beginning:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> Post.objects.order_by('-created_date')
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
+### Chaining QuerySets
 
-### Соединение QuerySets
+You can also combine QuerySets by **chaining** them together:
 
-QuerySets можно **сцеплять**, создавая цепочки:
+    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    
 
-```
->>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-```
+This is really powerful and lets you write quite complex queries.
 
-Это мощный и удобный инструмент, позволяющий писать сложные запросы.
-
-Отлично! Теперь ты готова к следующей части! Чтобы закрыть интерактивную консоль, набери:
+Cool! You're now ready for the next part! To close the shell, type this:
 
 {% filename %}command-line{% endfilename %}
+
 ```python
 >>> exit()
 $
