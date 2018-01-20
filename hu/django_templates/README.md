@@ -1,49 +1,54 @@
-# Django sablonok (template)
+# Django templates
 
-Itt az idő, hogy megjelenítsünk pár adatot! Ehhez Django felkínál nekünk pár beépített **template tag**-et számunkra.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## Mik a template tag-ek?
+## What are template tags?
 
-Mint látod, a HTML-ben nem tudsz Python kódot írni, mivel a böngészők nem értik, csak a HTML-t. Fontos tudni, hogy a HTML inkább statikus, míg Python inkább dinamikus.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-A **Django template tag-ek** lehetővé teszik, hogy Python-szerű dolgokat írjunk a HTML-be, ezáltal gyorsabban és könnyebben tudsz dinamikus weboldalt készíteni. Éljen!
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Template a bejegyzések listájához
+## Display post list template
 
-Az előző fejezetben hozzáadtuk a template-hez a bejegyzéseink listáját a `post` változóban. Most meg fogjuk ezt jeleníteni a HTML-ben.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-Ahhoz, hogy kiírjunk egy változót a Django template-ben, dupla kapcsos zárójelet használunk, benne a változó nevével, mint itt:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {{ posts }}
-```    
+```
 
-Próbáld ki a `blog/templates/blog/post_list.html` template-ben. Cserélj ki mindent a második `<div>` -től a harmadikig a következővel: `{{ posts }}`. Mentsd el a fájlt és frissítsd az oldalt, hogy lásd az eredményt:
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
-![13.1 ábra][1]
+![Figure 13.1](images/step1.png)
 
- [1]: images/step1.png
+As you can see, all we've got is this:
 
-Ahogy látod, ez minden, amink van:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-    <QuerySet [<Post: My second post>, <Post: My first post>]>
-    
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
 
-Ez azt jelenti, hogy a Django objektumok listájaként értelmezi. Emlékszel a **Bevezetés a Python-ba** című fejezetből, hogy hogyan jelenítünk meg listákat? Igen, for loop-okkal! Egy Django template-ben ezt így tudod megtenni:
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     {{ post }}
 {% endfor %}
-```   
+```
 
-Próbáld ki a template-edben.
+Try this in your template.
 
-![13.2 ábra][2]
+![Figure 13.2](images/step2.png)
 
- [2]: images/step2.png
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-És működik! De azt akarjuk, hogy úgy jelenjen meg, mint a statikus bejegyzések, amit korábban készítettünk el a **Bevezetés a HTML-be** című fejezetben. A HTML-t és a template tageket használhatod együtt. A `body` így fog kinézni:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
@@ -57,50 +62,45 @@ Próbáld ki a template-edben.
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```    
-
-{% raw %} Minden, amit a `{% for %}` és `{% endfor %}` közé írsz, a lista minden egyes elemére meg fog ismétlődni. Frissítsd az oldalt:{% endraw %}
-
-![13.3 ábra][3]
-
- [3]: images/step3.png
-
-Észrevetted, hogy most egy kicsit más megjelölést használtunk: `{{ post.title }}`? Az adatokat a `Post` modelben meghatározott mezők szerint érjük el. Emellett `|linebreaksbr` kíséri a szöveget, ezáltal egy filteren keresztül új bekezdéssé alakítja az újsor karaktereket.
-
-## Még valami
-
-Jó lenne látni, hogy a weblapod még mindig működik az Interneten, nem igaz? Telepítsük újra a PythonAnywhere-en. Itt a lépések összefoglalója...
-
-*   Először tedd fel a kódot a Github-ra
-```
-$ git status
-[...]
-$ git add --all .
-$ git status
-[...]
-$ git commit -m "Modified templates to display posts from database."
-[...]
-$ git push
-```    
-
-*   Ezután a [PythonAnywhere][4]-en menj a **Bash console**-ba (vagy indíts újat), és futtasd le:
-
- [4]: https://www.pythonanywhere.com/consoles/
-
-```
-$ cd my-first-blog
-$ git pull
-[...]
 ```
 
-*   Végül, a [Web][5] menüpontban klikkelj a **Reload**-ra. A frissítések ott vannak!  Ha a blogposztok a PythonAnywhere oldaladon nem egyeznek a helyi gépeden lévő blogban lévőkkel, az nem probléma. Az adatbázisok a helyi gépeden és PythonAnywhere-en nem szinkronizálódnak a többi file-al együtt.
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+![Figure 13.3](images/step3.png)
 
-Gratulálunk! Folytatásképp hozz létre új bejegyzéseket a Django adminban (ne felejts el published_date-t hozzáadni). Ellenőrizd, hogy a pythonanywhere oldalhoz tartozó admin oldalon https://yourname.pythonanywhere.com/admin vagy. Majd frissítsd az oldalt, hogy lásd, megjelentek-e.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-Olyan, mint a varázslat? Büszkék vagyunk Rád! Hagy ott egy kicsit a gépet, megérdemelsz egy kis szünetet. :)
+## One more thing
 
-![13.4 ábra][6]
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
- [6]: images/donut.png
+* First, push your code to Github
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
