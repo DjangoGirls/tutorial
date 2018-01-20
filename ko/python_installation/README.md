@@ -1,18 +1,15 @@
-# 파이썬 시작하기
+# Let’s start with Python
 
-잘 오셨습니다!
+We're finally here!
 
-제일 먼저 파이썬(Python)에 대해 설명할게요. 파이썬은 아주 인기있는 프로그래밍 언어로, 웹 사이트는 물론 게임, 과학용 소프트웨어, 그래픽 소프트웨어 등 다양한 것을 만들 수 있답니다.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
-파이썬은 1980년대 후반에 프로그래밍 언어를 기계 뿐만 아니라 인간도 읽을 수 있도록 만들고자 탄생한 언어입니다. 파이썬이 다른 프로그래밍 언어보다 훨씬 간단하게 보이고, 배우기도 쉬운 이유도 그 때문이죠. 하지만 파이썬은 아주 강력한 기능을 가진 프로그래밍 언어랍니다.
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# 파이썬 설치하기
+# Python installation
 
-> **Note** 크롬북 사용자는 이번 장을 건너뛰고,  [크롬북에서 설치하기](../chromebook_setup/README.md) 장으로 넘어가세요.
-
-
-> **Note** 설치를 마친 분은 다음 장으로 넘어가세요!
-
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
-
