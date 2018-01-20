@@ -1,129 +1,47 @@
-# Django URLs
+# How the Internet works
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-## What is a URL?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-![Url](images/url.png)
+If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
-## How do URLs work in Django?
+OK, but you want to know how the Internet looks, right?
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+We drew you a picture! It looks like this:
 
-{% filename %}mysite/urls.py{% endfilename %}
+![Figure 1.1](images/internet_1.png)
 
-```python
-"""mysite URL Configuration
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-[...]
-"""
-from django.conf.urls import url
-from django.contrib import admin
+![Figure 1.2](images/internet_3.png)
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-]
-```
+It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-As you can see, Django has already put something here for us.
+It looks like this:
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+![Figure 1.3](images/internet_2.png)
 
-The admin URL, which you visited in previous chapter, is already here:
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-{% filename %}mysite/urls.py{% endfilename %}
+Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
-```python
-    url(r'^admin/', admin.site.urls),
-```
+![Figure 1.4](images/internet_4.png)
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-## Regex
+Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
+So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
-* `^` for the beginning of the text
-* `$` for the end of the text
-* `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
+Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-Anything else in the URL definition will be taken literally.
-
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
-
-Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
-
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
-* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
-* **/** tells django that another `/` character should follow
-* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
-
-## Your first Django URL!
-
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
-
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
-
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
-
-Your `mysite/urls.py` file should now look like this:
-
-{% filename %}mysite/urls.py{% endfilename %}
-
-```python
-from django.conf.urls import include
-from django.conf.urls import url
-from django.contrib import admin
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
-]
-```
-
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
-
-Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
-
-## blog.urls
-
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-from django.conf.urls import url
-from . import views
-```
-
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
-
-After that, we can add our first URL pattern:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-]
-```
-
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
-
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
-
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
-
-![Error](images/error1.png)
-
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
-
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+Enough talk – time to create!
