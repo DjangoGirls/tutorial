@@ -1,13 +1,15 @@
-# Iniziamo con Python
+# Let’s start with Python
 
-Finalmente siamo qui!
+We're finally here!
 
-Ma prima, permettici di introdurre brevemente cos'è Python. Python è un linguaggio di programmazione molto popolare che può essere utilizzato per creare siti web, giochi, sofware scientifici, grafici e molto, molto altro.
+But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
-Python ha avuto origine alla fine degli anni '80 ed il suo obiettivo principale è quello di essere leggibile dagli esseri umani (non solo dalle macchine!). Per questo motivo sembra molto più semplice di altri linguaggi di programmazione. Questo lo rende facile da imparare, ma non ti preoccupare, Python è anche molto potente!
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Installazione di Python
+# Python installation
 
-> **Nota** Se hai fatto la procedura di installazione, non c'è bisogno di farlo di nuovo - puoi saltare dritto/a al prossimo capitolo!
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> 
+> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
