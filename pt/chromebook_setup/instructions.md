@@ -1,83 +1,60 @@
-Você pode [pular essa seção totalmente](http://tutorial.djangogirls.org/en/installation/#install-python) se você não estiver 
-usando um Chromebook. Se você estiver usando, seus passos de instalação serão um pouco diferentes. Você pode ignorar o resto 
-das instruções de instalação.
+You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
 
 ### Cloud 9
 
-Cloud 9 é uma ferramenta que lhe fornece um editor de código e acesso a um
-computador rodando na Internet onde você pode instalar, escrever, e rodar
-software. Durante esse tutorial, o Cloud 9 irá atuar como sua _máquina local_. 
-Você continuará a executar comandos em uma interface de terminal, como seus
-companheiros de classe em um OS X, Ubuntu, ou Windows, mas seu terminal 
-estará conectado em um computador que está rodando em algum outro lugar, com as
-configuraçoes que o Cloud 9 fez para você.
+Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
-1. Instale o Cloud 9 a partir da [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Go to [c9.io](https://c9.io)
-3. Registre uma conta
-4. Clique em _Create a New Workspace_
-5. Nomeie como _django-girls_
-6. Selecione o _Blank_ (segundo a direita, na linha de baixo com a logo laranja)
+3. Sign up for an account
+4. Click *Create a New Workspace*
+5. Name it *django-girls*
+6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
-Agora você deve ver uma interface com uma barra lateral, uma grande janela principal com
-algum texto, e uma pequena janela embaixo que parece com algo como isso:
-
-{% filename %}Cloud 9{% endfilename %}
-```
-yourusername:~/workspace $
-```
-
-Essa área abaixo é o seu _terminal_, onde você irá encontrar o computador Cloud 9
-preparado para suas instruções. você pode redimencionar essa janela para torná-la
-um pouco maior.
-
-### Ambiente Virtual
-
-Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada onde nós
-podemos colocar códigos de computador úteis para um projeto em que estamos trabalhando.
-Nós usamos um ambiente virtual para manter os vários bits de código que nós queremos
-usar em nosso projeto em separado, para que as coisas não se misturem entre diferentes 
-projetos.
-
-Em seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}Cloud 9{% endfilename %}
-```
-sudo apt install python3.5-venv
-```
 
-Se isso não funcionar, peça uma ajuda ao seu treinador.
+    yourusername:~/workspace $
+    
 
-Em seguida, execute:
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+
+### Virtual Environment
+
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
-```
-mkdir djangogirls
-cd djangogirls
-python3.5 -mvenv myvenv
-source myvenv/bin/activate
-pip install django~=1.9.0
-```
 
-(note que na última linha nós usamos um "til" seguido de um sinal de igual: ~=).
+    sudo apt update
+    sudo apt install python3.6-venv
+    
+
+If this still doesn't work, ask your coach for some help.
+
+Next, run:
+
+{% filename %}Cloud 9{% endfilename %}
+
+    mkdir djangogirls
+    cd djangogirls
+    python3.6 -mvenv myvenv
+    source myvenv/bin/activate
+    pip install django~=1.11.0
+    
+
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### Github
 
-Crie uma conta no [Github](https://github.com).
+Make a [Github](https://github.com) account.
 
 ### PythonAnywhere
 
-O tutorial Django Girls inclui uma seção que é chamada Deployment,
-que é o processo de pegar o código criado para nossa nova aplicação web e 
-movê-lo para um computador de acesso público (chamado de servidor), para
-que outras pessoas possam ver o seu trabalho.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Essa parte é um pouco estranha quando o tutorial é feito por um Chromebook,
-já que nós já estamos usando um computador que está na Internet (ao contrário de, 
-digamos, um laptop). Entretanto, ainda é útil, se nós pudermos pensar em nosso 
-ambiente de trabalho no Cloud 9 como um lugar de desenvolvimento de nosso trabalho 
-e Python Anywhere como um lugar para exibir nossas coisas assim que elas se 
-tornarem mais completas.
- 
-Sendo assim, registre com uma nova conta em Python Anywhere
-[www.pythonanywhere.com](https://www.pythonanywhere.com).
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
