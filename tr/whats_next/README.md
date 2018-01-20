@@ -1,40 +1,25 @@
-# Sırada ne var?
+# What's next?
 
-Kendini tebrik et! **Kesinlikle harikasın**. Seninle gurur duyuyoruz! <3
+Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### Şimdi ne yapmak gerek?
+### What to do now?
 
-Bir ara ver ve rahatla. Gerçekten çok büyük bir şey yaptın.
+Take a break and relax. You have just done something really huge.
 
-Bundan sonra şunları yaptığına emin ol:
+After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-*   Güncel kalmak için Django Girls'ü [Facebook][1] ya da [Twitter][2] dan takip et
+### Can you recommend any further resources?
 
- [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-### Daha geniş kapsamlı kaynaklar önerebilir misiniz?
+Later on, you can try the resources listed below. They're all very recommended!
 
-Evet! Öncelikle [Django Girls Tutorial: Extensions][3] isimli diğer kitabımızı dene.
-
- [3]: https://tutorial-extensions.djangogirls.org
-
-Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öneriyoruz!
-
-- [Django'nun resmi eğitimi][4]
-- [Kodlamaya Yeni Başlayan (New Coder) eğitimi][5]
-- [Code Academy Python kursu][6]
-- [Code Academy HTML & CSS kursu][7]
-- [Django Carrots eğitimi][8]
-- [Learn Python The Hard Way kitabı][9]
-- [Getting Started With Django görünütülü dersleri][10]
-- [Two Scoops of Django: Best Practices for Django 1.8 kitabı][11]
-
- [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
- [8]: http://django.carrots.pl/en/
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://www.gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
+- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
