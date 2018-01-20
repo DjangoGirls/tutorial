@@ -1,158 +1,218 @@
-# Django ORM és QuerySet-ek
+# Django ORM and QuerySets
 
-Ebben a fejezetben megtanulod, hogy hogyan kapcsolódik az adatbázishoz a Django, és hogyan tárol benne adatokat. Ugorjunk fejest!
+In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## Mi a QuerySet?
+## What is a QuerySet?
 
-A QuerySet lényegében egy lista, amely egy bizonyos Model objektumait tartalmazza. A QuerySetek segítségével tudsz adatot kinyerni az adatbázisból, szűrheted és sorba rendezheted.
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-A legkönnyebb, ha példákon keresztül tanulod meg. Próbáljuk csak ki!
+It's easiest to learn by example. Let's try this, shall we?
 
 ## Django shell
 
-Nyisd meg a lokális konzolodat (nem a PythonAnywhere-ét), és gépeld be ezt a parancsot:
+Open up your local console (not on PythonAnywhere) and type this command:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-Ezt fogod látni:
+The effect should be like this:
 
-    (InteractiveConsole)
-    >>>
-    
+{% filename %}command-line{% endfilename %}
 
-Most a Django interaktív konzoljában vagy. Olyasmi, mint a Python prompt, csak egy kis extra Django varázslattal :) Természetesen itt is használhatod az összes Python parancsot.
+```python
+(InteractiveConsole)
+>>>
+```
 
-### Az összes objektum
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-Először is próbáljuk meg az összes posztot megjeleníteni. A következő paranccsal tudod megtenni:
+### All objects
 
-    >>> Post.objects.all()
-    Traceback (most recent call last):
-          File "<console>", line 1, in <module>
-    NameError: name 'Post' is not defined
-    
+Let's try to display all of our posts first. You can do that with the following command:
 
-Hoppá, egy hiba! Azt mondja, hogy nincs olyan, hogy Post. Igaza van -- elfelejtettük importálni!
+{% filename %}command-line{% endfilename %}
 
-    >>> from blog.models import Post
-    
+```python
+>>> Post.objects.all()
+Traceback (most recent call last):
+      File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+```
 
-Ez egyszerű: importáljuk a `Post` modellt a `blog.models`-ből. Próbáljuk meg újra megjeleníteni a Post-okat:
+Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
 
-    >>> Post.objects.all()
-    <QuerySet [<Post: my post title>, <Post: another post title>]>
-    
+{% filename %}command-line{% endfilename %}
 
-Egy lista a posztokból, amiket korábban megírtál! Ezeket még a Django admin felületén hoztad létre. Viszont ugyanezt meg tudod tenni a Python segítségével is. De vajon hogyan?
+```python
+>>> from blog.models import Post
+```
 
-### Objektum létrehozása
+We import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
-Így hozhatsz létre egy új Post objektumot az adatbázisodban:
+{% filename %}command-line{% endfilename %}
 
-    >>> Post.objects.create(author=me, title='Sample title', text='Test')
-    
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>]>
+```
 
-De az egyik összetevő hiányzik: a `me`. Az `User` (felhasználó) modell egy instance-át kell megadnunk author-ként (szerző). Hogy tudjuk ezt megcsinálni?
+This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
 
-Először importáljuk az User modellt:
+### Create object
 
-    >>> from django.contrib.auth.models import User
-    
+This is how you create a new Post object in database:
 
-Milyen felhasználók vannak az adatbázisban? Próbáld meg ezt:
+{% filename %}command-line{% endfilename %}
 
-    >>> User.objects.all()
-    <QuerySet [<User: ola>]>
-    
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
 
-Ez a superuser, amit korábban hoztál létre! Most vegyük ennek a felhasználónak egy instance-ét:
+But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
 
-    me = User.objects.get(username='ola')
-    
+Let's import User model first:
 
-Ahogy láthatod, most hozzájutottunk (`get`) egy `User`-hez, `username`-mel (felhasználónév), ami 'ola'-val egyenlő. Szuper! Természetesen itt a saját felhasználónevedet kell beírnod.
+{% filename %}command-line{% endfilename %}
 
-Most pedig végre létrehozhatjuk a posztot:
+```python
+>>> from django.contrib.auth.models import User
+```
 
-    >>> Post.objects.create(author=me, title='Sample title', text='Test')
-    
+What users do we have in our database? Try this:
 
-Hurrá! Meg akarod nézni, hogy működött-e?
+{% filename %}command-line{% endfilename %}
 
-    >>> Post.objects.all()
-    <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-    
+```python
+>>> User.objects.all()
+<QuerySet [<User: ola>]>
+```
 
-Ott is van, egy újabb poszt a listában!
+This is the superuser we created earlier! Let's get an instance of the user now:
 
-### Hozz létre még néhány posztot
+{% filename %}command-line{% endfilename %}
 
-A móka kedvéért hozz létre még 2-3 posztot, hogy lásd, hogyan működik. Ha ez megvan, továbbléphetsz a következő részre.
+```python
+>>> me = User.objects.get(username='ola')
+```
 
-### Objektumok filterezése
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
 
-A QuerySet-ek egyik nagy előnye, hogy filterezhetjük (szűrhetjük) őket. Mondjuk le szeretnénk kérdezni az összes posztot, amit az ola User írt. Itt a `filter`-t fogjuk használni az `all` helyett a `Post.objects.all()`-ban. A zárójelek között megadhatjuk, hogy milyen feltétel(ek)nek kell teljesülnie ahhoz, hogy egy blogposzt bekerülhessen a querysetünkbe. Ebben az esetben az `author` (szerző) egyenlő `me`-vel (én). Ezt a Django-ban így írjuk le: `author=me`. Most így néz ki a kódunk:
+Now we can finally create our post:
 
-    >>> Post.objects.filter(author=me)
-    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
+{% filename %}command-line{% endfilename %}
 
-    
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```
 
-És ha össze szeretnénk gyűjteni minden olyan posztot, aminek a `title` (cím) mezőjében szerepel a 'title' szó?
+Hurray! Wanna check if it worked?
 
-    >>> Post.objects.filter(title__contains='title')
-    <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
-    
+{% filename %}command-line{% endfilename %}
 
-> **Note** A `title` és a `contains` (vagyis 'tartalmaz') között két underscore karakter (`_`) van. A Django ORM ezt a szintaxist használja arra, hogy elkülönítse a mezők neveit ("title") a műveletektől vagy filterektől ("contains"). Ha csak egy underscore-t használt, egy ilyen hibát fogsz kapni: "FieldError: Cannot resolve keyword title_contains" (kb "Mezőhiba: a title_contains kulcsszó nem található").
+```python
+>>> Post.objects.all()
+<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+```
 
-Megkaphatod az összes közzétett poszt listáját is. Ezt úgy tudod megtenni, hogy az összes poszt között szűrsz azokra, amiknél be van állítva múltbéli `published_date` (vagyis közzététel dátuma):
+There it is, one more post in the list!
 
-    >>> from django.utils import timezone
-    >>> Post.objects.filter(published_date__lte=timezone.now())
-    []
+### Add more posts
 
-Sajnos az a poszt, amit a Python konzolban hoztunk létre, még nem lett közzétéve. De ezen könnyen változtathatunk! Először is, hozzá kell férnünk a poszt instance-éhez, amit közzé szeretnénk tenni:
+You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
 
-    >>> post = Post.objects.get(title="Sample title")
-    
+### Filter objects
 
-Aztán közzétesszük a `publish` methoddal!
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
-    >>> post.publish()
-    
+{% filename %}command-line{% endfilename %}
 
-Most próbáld meg újra lekérdezni a közzétett posztok listáját (nyomd meg háromszor a felfelé nyilat, és nyomj `enter`t):
+```python
+>>> Post.objects.filter(author=me)
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
 
-    >>> Post.objects.filter(published_date__lte=timezone.now())
-    <QuerySet [<Post: Sample title>]>
-    
+Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
 
-### Objektumok sorbarendezése
+{% filename %}command-line{% endfilename %}
 
-A QuerySetek segítségével sorba is rendezheted az objektumok listáját. Először próbáljuk meg a létrehozás dátuma (`created_date` mező) alapján rendezni őket:
+```python
+>>> Post.objects.filter(title__contains='title')
+[<Post: Sample title>, <Post: 4th title of post>]
+```
 
-    >>> Post.objects.order_by('created_date')
-    <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
-    
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
-Meg is fordíthatjuk a sorrendet, ha az elejére egy `-` jelet teszünk:
+You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
-    >>> Post.objects.order_by('-created_date')
-    <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
-    
+{% filename %}command-line{% endfilename %}
 
-### QuerySetek összefűzése
+```python
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[]
+```
 
-A QuerySeteket kombinálhatod is, ha összefűződ őket (**chaining**):
+Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post = Post.objects.get(title="Sample title")
+```
+
+And then publish it with our `publish` method:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> post.publish()
+```
+
+Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now())
+[<Post: Sample title>]
+```
+
+### Ordering objects
+
+QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('created_date')
+[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+```
+
+We can also reverse the ordering by adding `-` at the beginning:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> Post.objects.order_by('-created_date')
+[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+```
+
+### Chaining QuerySets
+
+You can also combine QuerySets by **chaining** them together:
 
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-Ez egy nagyon hatékony módszer, és a segítségével bonyolult query-ket írhatsz.
+This is really powerful and lets you write quite complex queries.
 
-Remek! Most már készen állsz a következő részre! Hogy kilépj a shellből, gépeld be ezt:
+Cool! You're now ready for the next part! To close the shell, type this:
 
-    >>> exit()
-    $
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> exit()
+$
+```
