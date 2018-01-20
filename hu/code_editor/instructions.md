@@ -1,31 +1,31 @@
-Sokféle kódszerkesztő program létezik, és valójában ízlés kérdése, hogy ki melyiket választja. A legtöbb Python programozó bonyolult fejlesztői környezetet (IDE - Integrated Development Environment) használ, mint például a PyCharm. Egy kezdőnek viszont nem ezek a legmegfelelőbbek. A programok, amiket mi ajánlunk, hasonlóan hatékonyak, de használatuk sokkal egyszerűbb.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-Mi az alábbiakat javasoljuk, de nyugodtan kérj segítséget a coach-odtól, ő is könnyen tud tanácsot adni ez ügyben.
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-A Gedit egy open-source (nyílt forráskódú), ingyenes kódszerkesztő, az összes jelenlegi operációs rendszeren elérhető.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Letöltés](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-A Sublime Text egy nagyon népszerű editor, ingyenes próbaidővel. Könnyű telepíteni és használni, és minden operációs rendszeren elérhető.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Letöltés](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
-Az Atom egy teljesen új kódszerkesztő, amelyet a [GitHub](https://github.com/) hozott létre. Ingyenes, nyílt forráskódú, könnyen telepíthető és könnyen használható. Elérhető Windows-on, OSX-en és Linuxon.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Letöltés](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Miért telepítünk kódszerkesztőt?
+## Why are we installing a code editor?
 
-Most talán azon gondolkozol, miért telepítünk speciális kódszerkesztőt, ahelyett, hogy a Word vagy a Notepad alkalmazást használnánk.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Az első ok az, hogy a kódot **egyszerű szövegként** kell szerkeszteni. Az általános (nem programozóknak szánt) szövegszerkesztőkkel, mint a Word és a Textedit, az a probléma, hogy nem egyszerű szöveges fájlt állítanak elő, hanem formázott dokumentumot (például [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) formátumban), amelyben számít például a betűtípus, formázás, stb.
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-A másodsorban ezek a programozáshoz tervezett szövegszerkesztők kifejezetten kódszerkesztésre szakosodtak, ami azt jelenti hogy különböző funkciókkal segítik a munkát, mint például a programkód részeinek, szavainak kiemelése annak jelentése alapján, vagy az automatikus kiegészítés.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Ezt mind látni fogjuk a későbbiekben. Hamarosan úgy fogsz gondolni a jó öreg megbízható kódszerkesztődre, mint az egyik kedvenc eszközödre :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
