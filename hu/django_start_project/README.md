@@ -1,34 +1,48 @@
-# Az első Django projekted!
+# Your first Django project!
 
-> Ez a fejezet részben a Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tutorial-jain alapszik.
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> A fejezet néhány része a [django-marcador tutorial][1] alapján készült, ami a Creative Commons Attribution-ShareAlike 4.0 International License alatt áll. A django-marcador tutorial jogait, Markus Zapke-Gründemann és társai birtokolják.
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
- [1]: http://django-marcador.keimlink.de/
+We're going to create a small blog!
 
-Most egy egyszerű blogot fogunk készíteni!
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-Az első lépés, hogy indítsunk egy új Django projektet. Ez annyit jelent, hogy lefuttatunk néhány scriptet, amit a Django tartalmaz, ezzel létrehozzuk a projekt vázát. Ez tulajdonképpen néhány mappa és fájl, amit majd később fogunk használni.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-Néhány fájl és könyvtár neve nagyon fontos a Django-ban. A fájlokat, amiket most hozunk létre, ne nevezd át! Az áthelyezésük sem egy jó ötlet. Fontos, hogy megtartsunk egy bizonyos szerkezetet, ami segít a Django-nak, hogy megtalálja a fontos dolgokat.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-> Figyelem: mindent a virtualenv-ben futtass. Ha nem látod a `(myvenv)` előtagot a konzolodban, aktiválnod kell a virtuális környezetedet. Ezt a **Django telepítés** fejezetben írtuk le, a **Virtuális környezetben való fejlesztés** résznél. Windows környezetben a `myvenv\Scripts\activate` parancssal, Mac OS / Linux alatt a `source myvenv/bin/activate` paranccsal tudod megtenni.
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Ha Mac OS-t vagy Linuxot használsz, a következő parancsot kell futtatnod; **ne felejtsd el kitenni a pontot `.` a végén**:
+In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-Ha Windowst használsz: **ne felejtsd el kitenni a pontot `.` a végén**:
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
+<!--endsec-->
+
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> A pont `.` nagyon fontos, mert ez mondja meg a scriptnek, hogy abba a könyvtárba telepítse a Django-t, ahol éppen vagy (a pont `.` egy rövidítése ennek).
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 > 
-> **Megjegyzés** Amikor begépeled a fenti parancsokat, csak azokat a részeket írd be, amik úgy kezdődnek, hogy `django-admin` vagy `django-admin.py`. A `(myvenv) ~/djangogirls$` és `(myvenv) C:\Users\Name\djangogirls>` csak példák a parancssorodra, amely azt várja, hogy parancsokat gépelj be neki.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-A `django-admin.py` egy script, ami könyvtárakat és fájlokat hoz létre neked. Most ilyen könyvtárszerkezetednek kell lennie:
+<!--endsec-->
+
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
     ├───manage.py
@@ -39,113 +53,150 @@ A `django-admin.py` egy script, ami könyvtárakat és fájlokat hoz létre neke
             __init__.py
     
 
-> **Megjegyzés**: A könyvtárszerkezetedben a `venv` könyvtár is meg fog jelenni, amelyet nemrég hoztunk létre.
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
-A `manage.py` egy script, ami az oldal menedzselésében segít. Segítségével elindíthatsz egy webszervert a saját gépeden, anélkül, hogy bármit kellene installálnod, és más dolgokra is jó.
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-A `settings.py` tartalmazza a weboldalat konfigurációját (beállításait),.
+The `settings.py` file contains the configuration of your website.
 
-Emlékszel, mit olvastál a postásról, aki azt próbálja kitalálni, hova vigye a levelet? Az `urls.py` fájl tartalmazza a mintákat, amiket az `urlresolver` használ.
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Most ne foglalkozzunk a többi fájllal, mert azokat nem fogjuk módosítani. Az egyetlen dolog, amit ne felejts el, hogy ne töröld ki őket véletlenül!
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
-## A beállítások megváltoztatása
+## Changing settings
 
-Változtassunk meg néhány dolgot a `mysite/settings.py` fájlban. Nyisd meg a fájlt a kódszerkesztővel, amit korábban telepítettél!
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg a [wikipedia időzóna listát][2], és másold ki az időzónádat (TZ, time zone). (például `Europe/Budapest` )
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
- [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
-Keresd meg a settings.py azt a sort, ami így keződik: `TIME_ZONE`, és írd át, hogy a saját időzónádat használja:
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-    TIME_ZONE = 'Europe/Budapest'
+TIME_ZONE = 'Europe/Berlin'
 ```
 
-Az "Europe/Budapest"-et változtasd meg kedved szerint.
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elérési útvonalat (később mindent megtudhatsz a statikus fájlokról és a CSS-ről). Menj a fájl *végére*, és a `STATIC_URL` bejegyzés alatt adj hozzá egy következő bejegyzést `STATIC_ROOT` névvel:
+Change the language code by changing the following line:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LANGUAGE_CODE = 'de-ch'
 ```
 
-Amikor a DEBUG értéke True és az ALLOWED_HOSTS üres, a hosztnév alapértelmezetten ['localhost', '127.0.0.1', '[::1]']. Ez deploy után nem fog működni a PythonAnywhere-en, ezért változtassuk meg ezt a beállítást így:
+We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-    ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-## Adatbázis létrehozása
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
-Sok különféle adatbázis-szoftver létezik, ami adatokat tud tárolni a weboldalakhoz. Mi az alapértelmezettet fogjuk használni, az `sqlite3`-ot.
-
-Ez már be van állítva a `mysite/settings.py` fájlodban:
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+```
+
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+
+## Set up a database
+
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+
+This is already set up in this part of your `mysite/settings.py` file:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
 ```
 
-Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot a konzolban: `python manage.py migrate` (fontos, hogy a `djangogirls` könyvtárban legyél, ami tartalmazza a `manage.py` fájlt). Ha minden jól megy, valami ilyesmit kell látnod:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Synchronize unmigrated apps: messages, staticfiles
-      Apply all migrations: contenttypes, sessions, admin, auth
-    Synchronizing apps without migrations:
-       Creating tables...
-          Running deferred SQL...
-       Installing custom SQL...
+      Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
       Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
       Applying contenttypes.0002_remove_content_type_name... OK
       Applying auth.0002_alter_permission_name_max_length... OK
       Applying auth.0003_alter_user_email_max_length... OK
       Applying auth.0004_alter_user_username_opts... OK
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
     
 
-Készen is vagyunk! Itt az ideje, hogy elindítsd a webszervert, és meglásd, hogy működik-e.
+And we're done! Time to start the web server and see if our website is working!
 
-## Webszerver elindítása
+## Starting the web server
 
-Ehhez abban a könyvtárban kell lenned, ahol a `manage.py` fájl van (a `djangogirls` könyvtárban). A konzolban a következő paranccsal tudod elindítani a szervert: `python manage.py runserver`.
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Ha Windowst használsz, és `UnicodeDecodeError` hibaüzenetet kapsz, ezt a parancsot használd:
+If you are on a Chromebook, use this command instead:
+
+{% filename %}Cloud 9{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    
+
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Most nincs más dolgod, mint ellenőrizni, hogy fut-e a weboldalad. Nyisd meg a böngésződet (Firefox, Chrome, Safari, Internet Explorer, vagy bármi más, amit használsz), és írd be a következő címet:
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+
+{% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver segítségével! Hát nem fantasztikus?
+If you're using a Chromebook, you'll always visit your test server by accessing:
 
-![It worked!][3]
+{% filename %}browser{% endfilename %}
 
- [3]: images/it_worked2.png
+    https://django-girls-<your cloud9 username>.c9users.io
+    
 
-A webszerver átvette az irányítást a parancssorod fölött, egészen addig, amíg le nem állítod. A terminálba tudsz gépelni, de nem fog lefuttatni új parancsokat. Ez azért van, mert a webszervernek folyamatosan kell futnia, hogy a beérkező lekérdezéseket (request-eket) fogadja.
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
-> Webszerverek működését a  <b>Hogy működik az Internet?</b> fejezetben tekintettük át.
+![It worked!](images/it_worked2.png)
 
-Hogy újabb parancsokat írhass be, amíg fut a szerver, új terminálablakot kell nyitnod, és újraaktiválni a virtuális környezetedet. Hogy leállítsd a szervert, lépj vissza az ablakba, ahol fut, és nyomd meg a CTRL + C (Control és C billentyű egyszerre) billentyűkombinációt. (Windowson lehet, hogy a Ctrl+Break fog működni).
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
-Készen állsz a következő lépésre? Itt az ideje, hogy létrehozzunk némi tartalmat!
+> We reviewed how web servers work in the **How the Internet works** chapter.
+
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+
+Ready for the next step? It's time to create some content!
