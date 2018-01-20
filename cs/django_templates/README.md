@@ -1,50 +1,54 @@
-# Django šablony
+# Django templates
 
-Je čas zobrazit nějaká data! Django nám k tomuto účelu poskytuje užitečné vestavěné **šablonové tagy**.
+Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
-## Co jsou šablonové tagy?
+## What are template tags?
 
-V HTML ve skutečnosti nemůžeš použít Python kód, protože prohlížeče mu nerozumí. Znají pouze HTML. Víme, že HTML je spíše statické, zatímco Python je mnohem dynamičtější.
+You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-**Django šablonové tagy** nám umožňují přenést věci podobné Pythonu do HTML, abys mohla postavit dynamickou webovou stránku rychleji a snadněji.
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Zobraz šablonu se seznamem příspěvků
+## Display post list template
 
-V předchozí kapitole jsme daly naší šabloně seznam příspěvků v proměnné `posts`. Teď to zobrazíme v HTML.
+In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-V Django šabloně se proměnná vypíše pomocí dvojitých složených závorek s názvem proměnné uvnitř. Takhle:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {{ posts }}
-```  
-
-Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Nahraď vše od druhého `<div>` do třetího `</div>` řádkou `{{ posts }}`. Ulož soubor a obnov stránku, aby sis prohlédla výsledek:
-
-![Figure 13.1][1]
-
- [1]: images/step1.png
-
-Jak vidíš, dostali jsme toto:
-
 ```
-<QuerySet [<Post: My second post>, <Post: My first post>]>
-```  
 
-To znamená, že to Django chápe jako seznam objektů. Vzpomínáš si z kapitoly **Úvod do pythonu**, jak můžeme zobrazit seznam? Ano, pomocí for smyček! V Django šabloně je použiješ takto:
+Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+
+![Figure 13.1](images/step1.png)
+
+As you can see, all we've got is this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>]>
+```
+
+This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     {{ post }}
 {% endfor %}
-```  
+```
 
-Zkus udělat tohle ve své šabloně.
+Try this in your template.
 
-![Figure 13.2][2]
+![Figure 13.2](images/step2.png)
 
- [2]: images/step2.png
+It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
-Funguje to! Ale chceme, aby se zobrazovaly jako ty statické příspěvky, které jsme vytvořili dříve v kapitole **Úvod do HTML**. Můžeš smíchat HTML tagy se šablonovými. Naše `body` bude vypadat takhle:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
@@ -58,51 +62,45 @@ Funguje to! Ale chceme, aby se zobrazovaly jako ty statické příspěvky, kter�
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```  
-
-{% raw %}Všechno, co dáš mezi `{% for %}` a `{% endfor %}`, se zopakuje pro každý objekt v seznamu. Obnov svou stránku:{% endraw %}
-
-![Figure 13.3][3]
-
- [3]: images/step3.png
-
-Všimla sis, že jsme tentokrát použily lehce odlišnou notaci (`{{ post.title }}` nebo `{{ post.text }}`)? Přistupujeme k datům v každém poli definovaném v našem `Post` modelu. Dále `|linebreaksbr` posílá text příspěvku filtrem, aby převedl zalomení řádků na odstavce.
-
-## Ještě jedna věc
-
-Bylo by dobré vidět, jestli tvá webová stránka bude stále fungovat i na webu, že? Pojďme zkusit další nasazení/deploy na PythonAnywhere. Tady je rekapitulace postupu...
-
-*   Nejdřív hoď svůj kód na Github
-
 ```
-$ git status
-[...]
-$ git add --all .
-$ git status
-[...]
-$ git commit -m "Modified templates to display posts from database."
-[...]
-$ git push
-```  
 
-*   Pak se přihlaš do [PythonAnywhere][4] a jdi do **Bash konzole** (nebo vytvoř novou) a zadej:
+{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
 
- [4]: https://www.pythonanywhere.com/consoles/
+![Figure 13.3](images/step3.png)
 
-```
-$ cd my-first-blog
-$ git pull
-[...]
-```  
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-*   Nakonec jdi na záložku [Web][5] a klikni na **Reload**. Tvá stránka by měla být aktuální!
+## One more thing
 
- [5]: https://www.pythonanywhere.com/web_app_setup/
+It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-Gratulujeme! Teď zkus přidat nové příspěvky ve tvém Django administračním rozhraní (nezapomeň přidat published_date!), potom obnov stránku a podívej se, jestli se nové příspěvky zobrazí.
+* First, push your code to Github
 
-Funguje to dokonale? Jsme hrdí! Odpočiň si na chvíli od počítače, zasloužíš si přestávku :)
+{% filename %}command-line{% endfilename %}
 
-![Figure 13.4][6]
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
 
- [6]: images/donut.png
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
