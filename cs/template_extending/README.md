@@ -1,106 +1,130 @@
-# Rozšiřování šablon
+# Template extending
 
-Další pěknou věcí, kterou pro nás Django má, je **rozšiřování šablon**. Co to znamená? To znamená, že můžeš použít stejné HTML pro různé stránky na svém blogu.
+Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
-Tímto způsobem nemusíš opakovat v každém souboru stejný kód, když chceš použít stejné informace/rozvržení. A pokud chceš něco změnit, není nutné to dělat v každé šabloně, stačí jen v jedné!
+Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Vytvoření základní šablony
+## Create a base template
 
-Základní šablona je šablona, kterou použijeme na každé stránce našich webových stránek.
+A base template is the most basic template that you extend on every page of your website.
 
-Vytvoříme soubor `base.html` v `blog/templates/blog/`:
+Let's create a `base.html` file in `blog/templates/blog/`:
 
-```
-blog
-└───templates
-     └───blog
-             base.html
-             post_list.html
-```  
+    blog
+    └───templates
+        └───blog
+                base.html
+                post_list.html
+    
 
-Pak jej otevři a zkopíruj vše z `post_list.html` do `base.html` souboru, jako je to níže:
+Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
 <html>
-     <head>
-         <title>Django Girls blog</title>
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-     </head>
-     <body>
-         <div class="page-header">
-             <h1><a href="/">Django Girls Blog</a></h1>
-         </div>
-         <div class="content container">
-             <div class="row">
-                 <div class="col-md-8">
-                 {% for post in posts %}
-                     <div class="post">
-                         <div class="date">
-                             {{ post.published_date }}
-                         </div>
-                         <h1><a href="">{{ post.title }}</a></h1>
-                         <p>{{ post.text|linebreaksbr }}</p>
-                     </div>
-                 {% endfor %}
-                 </div>
-             </div>
-         </div>
-     </body>
-</html>
-```  
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
 
-Pak v `base.html` nahraď celé `<body>` (vše mezi `<body>` a `</body>`) tímto:
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+```
+
+Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <body>
-     <div class="page-header">
-          <h1><a href="/">Django Girls Blog</a></h1>
-     </div>
-     <div class="content container">
-         <div class="row">
-             <div class="col-md-8">
-             {% block content %}
-             {% endblock %}
-             </div>
-         </div>
-     </div>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
 </body>
 ```
 
-Nahradili jsme v podstatě všechno, co bylo mezi `{% for post in posts %}{% endfor %}`, za:
+{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% block content %}
 {% endblock %}
-```    
+```
 
-Co to znamená? Právě jsi vytvořila `block`, což je šablonovací značka, která umožňuje vkládat HTML kód do tohoto bloku v jiných šablonách, které rozšiřují `base.html`. Hned ti ukážeme, jak to udělat.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
-Nyní ulož a znovu otevři svůj `blog/templates/blog/post_list.html`. Odstraň vše, co není uvnitř body, a pak také odstraň `< div class="page-header" >< / div >`, takže soubor bude vypadat takto:
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
-     <div class="post">
-         <div class="date">
-             {{ post.published_date }}
-         </div>
-         <h1><a href="">{{ post.title }}</a></h1>
-         <p>{{ post.text|linebreaksbr }}</p>
-     </div>
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
-```    
+```
 
-A teď přidej na začátek souboru tento řádek:
+We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
-```    
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+```
 
-{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock %}`. Takto: {% endraw %}
+Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -116,8 +140,8 @@ A teď přidej na začátek souboru tento řádek:
         </div>
     {% endfor %}
 {% endblock %}
-```  
+```
 
-To je ono! Zkontroluj, zda tvoje stránky stále správně fungují :)
+That's it! Check if your website is still working properly. :)
 
-> Jestliže dostaneš chybu `TemplateDoesNotExists`, která říká, že neexistuje žádný soubor `blog/base.html` a máš `runserver` v konzoli, zkus ho zastavit (stisknutím kombinace kláves Ctrl + C - ctrl a tlačítka C společně) a restartovat spuštěním příkazu `pythonu manage.py runserver`.
+> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
