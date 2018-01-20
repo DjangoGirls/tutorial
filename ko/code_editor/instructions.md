@@ -1,27 +1,31 @@
-코드 에디터는 종류가 많고 다양해 자신의 취향에 따라 선택할 수 있어요. 대부분의 파이썬 프로그래머는 PyCharm과 같이 복잡하지만 강력한 IDE(통합개발환경: Integrated Development Environments)를 이용합니다. 하지만 초보자에게 적합하지 않을 수 있어요. 간단하지만 강력한 기능을 갖춘 에디터 프로그램을 아래 추천합니다.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-이 중 내가 사용하고 싶은 것을 선택해 사용해도 되지만, 여러분의 코치가 어떤 프로그램을 사용하는지 물어보세요. 같은 프로그램을 사용하면 도움받기 수월해질 거에요.
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
-Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
 
-[다운받기](https://wiki.gnome.org/Apps/Gedit#Download)
+Gedit is an open-source, free editor, available for all operating systems.
+
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
-Sublime Text는 가장 널리 알려진 프로그램으로 무료로 사용할 수 있어요. 설치와 사용이 편리하고 모든 운영체제에서 쓸 수 있어요.
 
-[다운받기](https://www.sublimetext.com/3)
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
-Atom은 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
 
-[다운받기](https://atom.io/) 
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-## 왜 코드 에디터를 설치해야 하나요?
-워드나 노트패드가 있는데도, 굳이 코드 에디터 소프트웨어를 설치해야 하는 이유가 궁금할 거에요.
+[Download it here](https://atom.io/)
 
-첫 번째로 코드는 **일반 텍스트**여야 하는데, 워드나 텍스트에딧(Textedit)과 같은 프로그램에서는 일반 텍스트가 아닌 [RTF(Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format)와 같은 사용자 서식을 쓴 리치 텍스트(폰트와 서식이 있는 텍스트)가 생성되기 때문입니다.
+## Why are we installing a code editor?
 
-두 번째는 코드 에디터 프로그램은 개발에 유용한 여러 기능을 제공하기 때문입니다. 대표적인 예로, 코드를 해석해 문법을 하이라이팅해주는 기능이라든가 큰따옴표("")를 자동으로 닫아주는 기능이지요.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-앞으로 코드 에디터가 어떻게 작동하는지 알아볼 거에요. 곧 여러분은 내가 사용하는 코드 에디터를 제일 좋아하게 될 거랍니다.
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
