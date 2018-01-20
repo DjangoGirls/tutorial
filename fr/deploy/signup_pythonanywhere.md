@@ -1,5 +1,5 @@
-Si vous ne l'avez pas encore fait, n'oubliez pas de vous créer un compte "Beginner" sur PythonAnywhere.
+Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** : Le nom d'utilisateur que vous allez choisir va déterminer l'adresse de votre blog de la manière suivante : `votrenomdutilisateur.pythonanywhere.com`. Si vous ne savez pas quoi prendre, nous vous conseillons de choisir votre surnom ou un nom proche du sujet de votre blog.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
