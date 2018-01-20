@@ -1,81 +1,122 @@
-# Twój pierwszy projekt w Django!
+# Your first Django project!
 
-> Fragment tego rozdziału jest oparty o tutoriale Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
->
-> Fragmenty tego rozdziału są oparte o [tutorial django-marcador][1] na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
+> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
- [1]: http://django-marcador.keimlink.de/
+We're going to create a small blog!
 
-Mamy zamiar stworzyć prostego bloga!
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-Pierwszy krok, który trzeba wykonać, to utworzenie nowego projektu Django. To oznacza, że skorzystamy z dostarczonych przez Django skryptów, które utworzą za nas szkielet projektu Django. Ten szkielet to zbiór katalogów i plików, których będziemy używać później.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-Nazwy niektórych plików i katalogów są bardzo ważne dla Django. Nie powinnaś zmieniać nazw plików, które zostaną utworzone. Przenoszenie ich w inne miejsce też nie jest dobrym pomysłem. Django wymaga zachowania pewnej struktury, by móc szybko znaleźć potrzebne rzeczy.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-> Pamiętaj, aby uruchamiać wszystko w virtualenv. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalacja Django** w części **Praca z virtualenv**. Wystarczy wpisać `myvenv\Scripts\activate` w systemie Windows lub `source myvenv/bin/activate`, jeśli używasz Mac OS / Linux.
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Dla systemów MacOS lub Linux; wpisz teraz do swojej konsoli następującą komendę; ** nie zapomnij dodać kropki `.` na końcu**:
+In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    
 
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-Dla Windows; **nie zapomnij dodać kropki `.` na końcu**:
+<!--endsec-->
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin startproject mysite .
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
+On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
-> Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainicjować projekt Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu)
->
-> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin` lub `django-admin.py`. Te `(myvenv) ~/djangogirls$` i `(myvenv) C:\Users\Name\djangogirls>` (zwane z ang. promptem) są tutaj tylko po to, by pokazać Ci przykład linii poleceń i tego jak ona będzie wyglądała, gdy będziesz do niej wpisywać polecenia.
+{% filename %}command-line{% endfilename %}
 
-`django-admin.py` jest skryptem, który utworzy katalogi i pliki za Ciebie. Powinnaś mieć teraz strukturę katalogów podobną do tej:
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    
+
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+
+<!--endsec-->
+
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
     djangogirls
-    ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    ├── myvenv
-    └── manage.py
+    ├───manage.py
+    └───mysite
+            settings.py
+            urls.py
+            wsgi.py
+            __init__.py
+    
 
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
-`manage.py` jest skryptem ułatwiającym zarządzanie aplikacją. Za jego pomocą, oprócz wielu innych rzeczy, możemy uruchomić serwer na naszym komputerze bez potrzeby instalowania czegokolwiek.
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-Plik `settings.py` zawiera konfigurację naszej strony.
+The `settings.py` file contains the configuration of your website.
 
-Pamiętasz, jak rozmawiałyśmy o listonoszu sprawdzającym gdzie dostarczyć list? Plik `urls.py` zawiera wzorce używane przez `urlresolver'a`.
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
-Na razie zapomnijmy o innych plikach - nie będziemy ich modyfikować. Jedyne, o czym musisz pamiętać, to żeby ich niechcący nie skasować!
+Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
-## Modyfikowanie ustawień
+## Changing settings
 
-Wprowadźmy parę zmian w pliku `mysite/settings.py`. Otwórz go za pomocą edytora kodu, który zainstalowałaś wcześniej.
+Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-Fajnie byłoby posługiwać się na naszej stronie właściwą strefą czasową. Przejdź do [listy stref czasowych w wikipedii][2] i skopiuj właściwą strefę czasową (TZ). (np. `Europe/Warsaw` )
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
- [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
-W pliku settings.py znajdź linijkę, w której jest napisane `TIME_ZONE` i zmień ją według swoich potrzeb:
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-TIME_ZONE = 'Europe/Warsaw'
+TIME_ZONE = 'Europe/Berlin'
 ```
 
-Gdzie odpowiednio zmienisz "Europe/Warsaw"
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Musimy także dodać ścieżkę do plików statycznych (dowiesz się więcej o plikach statycznych i CSS w dalszej części kursu). Przejdź do samego końca pliku i pod linijką zawierającą `STATIC_URL` dodaj nową zmienną `STATIC_ROOT`:
+Change the language code by changing the following line:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LANGUAGE_CODE = 'de-ch'
+```
+
+We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-## Ustawienie bazy danych
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
-Istnieje duży wybór baz danych, w których możemy trzymać dane naszej strony. My użyjemy bazy domyślnej, czyli `sqlite3`.
+{% filename %}mysite/settings.py{% endfilename %}
 
-Została ona już ustawiona w tej części pliku `mysite/settings.py`:
+```python
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+```
+
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+
+## Set up a database
+
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+
+This is already set up in this part of your `mysite/settings.py` file:
+
+{% filename %}mysite/settings.py{% endfilename %}
 
 ```python
 DATABASES = {
@@ -84,55 +125,78 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-```  
+```
 
-Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie w konsoli: `python manage.py migrate` (musimy być w katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`). Gdy to się uda, powinnaś zobaczyć coś takiego jak poniżej:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Synchronize unmigrated apps: messages, staticfiles
-      Apply all migrations: contenttypes, sessions, admin, auth
-    Synchronizing apps without migrations:
-       Creating tables...
-          Running deferred SQL...
-       Installing custom SQL...
+      Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
       Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
       Applying contenttypes.0002_remove_content_type_name... OK
       Applying auth.0002_alter_permission_name_max_length... OK
       Applying auth.0003_alter_user_email_max_length... OK
       Applying auth.0004_alter_user_username_opts... OK
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
+    
 
+And we're done! Time to start the web server and see if our website is working!
 
-I to wszystko! Czas uruchomić serwer i zobaczyć, czy nasza strona działa!
+## Starting the web server
 
-Musisz znajdować się w katalogu zawierającym plik `manage.py` (katalog `djangogirls`). W konsoli możemy uruchomić serwer za pomocą polecenia `python manage.py runserver`:
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
+    
 
+If you are on a Chromebook, use this command instead:
 
-Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, użyj następującej komendy:
+{% filename %}Cloud 9{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    
+
+If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
 
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
-Teraz pozostaje Ci jedynie przekonać się, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer czy inną, której używasz) i wpisz adres:
+{% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
+    
 
+If you're using a Chromebook, you'll always visit your test server by accessing:
 
-Serwer przejmie Twój wiersz poleceń i będzie go używał cały czas dopóki go nie wyłączysz. By móc wykonywać inne polecenia, otwórz nowe okienko terminala i uruchom w nim środowisko virtualenv. Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
+{% filename %}browser{% endfilename %}
 
-Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją za pomocą serwera! Prawda, że wspaniale?
+    https://django-girls-<your cloud9 username>.c9users.io
+    
 
-![Działa!][3]
+Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
- [3]: images/it_worked2.png
+![It worked!](images/it_worked2.png)
 
-Gotowa na następny krok? Czas stworzyć treść!
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+
+> We reviewed how web servers work in the **How the Internet works** chapter.
+
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+
+Ready for the next step? It's time to create some content!
