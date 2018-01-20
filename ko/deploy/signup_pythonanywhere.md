@@ -1,5 +1,5 @@
-PythonAnywhere에서 무료 계정인 "초보자(Beginner)"로 회원가입 하세요.
+Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** 사용자 이름을 정할 때 블로그 주소의 일부가 되는 것을 기억하세요. 예를 들어 사용자이름이 `yourusername`이면 URL은 `yourusername.pythonanywhere.com`이 된답니다.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
