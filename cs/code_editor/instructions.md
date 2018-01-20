@@ -1,31 +1,31 @@
-Existuje mnoho různých editorů a z velké části se výběr scvrkává na osobní preference. Většina programátorům v Pythonu používá složité, ale mimořádně mocné IDE (integrovaná vývojová prostředí), například PyCharm. Pro začátečníka to může být pravděpodobně méně vhodné; naše doporučení jsou stejně mocná, ale mnohem jednodušší.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-Naše návrhy jsou napsané níže, ale neváhejte se zeptat svého kouče, jaké jsou jeho preference - poté bude i jednodušší získat od něj pomoc s prací v editoru.
+Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit je open-source editor. Je k dispozici zdarma pro všechny operační systémy.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Stáhnout si jej můžeš zde](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text je velmi oblíbený editor s bezplatnou zkušební dobou. Lze jej snadno nainstalovat a používat. Je k dispozici pro všechny operační systémy.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Stáhnout si jej můžeš zde](https://www.sublimetext.com/3)
+[Download it here](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom je velmi nový editor kódu vytvořen [GitHub](https://github.com/)em. Je zdarma, je open-source a má snadnou instalaci a snadné použití. Je k dispozici pro Windows, OS X a Linux.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Stáhnout si jej můžeš zde](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Proč jsme instalovali editor kódu?
+## Why are we installing a code editor?
 
-Možná přemýšlíš, proč instalujeme speciální editor kódu a proč raději nezvolíme něco jako Notepad nebo Word.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-První důvod je, že kód musí být **prostý text** a programy jako Word a Textedit ve skutečnosti produkují bohatý text (s fonty a formátováním), používají vlastní formáty jako [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Druhým důvodem je, že editory kódu se specializují na editaci kódu, takže mohou poskytovat užitečné funkce, jako je barevné zvýraznění kódu podle jeho významu nebo automatické ukončování uvozovek apod.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Vše to uvidíme v akci později. Brzy ti přijde tvůj oblíbený editor kódu jako jeden z tvých nejlepších nástrojů :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
