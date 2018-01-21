@@ -1,35 +1,35 @@
-# Your first Django project!
+# Το πρώτο σας έργο Django!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Μέρος αυτού του κεφαλαίου είναι βασισμένο στα σεμινάρια από τα Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-We're going to create a small blog!
+Πρόκειται να δημιουργήσουμε ένα μικρό blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+Το πρώτο βήμα είναι να ξεκινήσουμε ένα νέο έργο Django. Βασικά, αυτό σημαίνει ότι θα εκτελέσουμε μερικά σενάρια που παρέχονται από το Django τα οποία θα δημιουργήσουν τον σκελετό ενός πρότζεκτ Django για εμάς. Αυτά είναι ένα μάτσο καταλόγων και αρχείων που θα χρησιμοποιήσουμε αργότερα.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Τα ονόματα μερικών αρχείων και καταλόγων είναι πολύ σημαντικά για το Django. Δεν πρέπει να μετονομάσετε τα αρχεία που πρόκειται να δημιουργήσουμε. Μετακινώντας τα σε ένα διαφορετικό μέρος δεν είναι επίσης καλή ιδέα. Το Django χρειάζεται να διατηρήσει μία συγκεκριμένη δομή για να μπορεί να βρει σημαντικά πράγματα.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Θυμηθείτε να εκτελέσετε τα πα΄ντα στο εικονικό περιβάλλον. Εάν δεν δείτε ένα πρόθημα `(περιβάλλον)` στην κονσόλα σας, θα πρέπει να ενεργοποιήσετε το εικονικό περιβάλλον σας. Εξηγήσαμε πως να το κάνετε αυτό στο κεφάλαιο **Εγκατάσταση Django** στο κομμάτι **Δουλεύοντας με το εικονικό περιβάλλον**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Στην κονσόλα σας Mac OS X ή Linux, πρέπει να εκτελέσετε την ακόλουθη εντολή. ** Μην ξεχάσετε να προσθέσετε την περίοδο (ή τελεία)`. ` στο τέλος!**
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Η τελεία `.` είναι ζωτικής σημασίας επειδή λέει στο σενάριο να εγκαταστήσει το Django στο τρέχον κατάλογο σας ( για το οποίο η τελεία `.` είναι μία βραχυπρόθεσμη αναφορά).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Σημείωση** Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με `διαχειριστής-django`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Στα Windows πρέπει να εκτελέσετε την ακόλουθη εντολή. **(Μην ξεχάσετε να προσθέσετε την περίοδο (ή τελεία)`.` στο τέλος)**:
 
 {% filename %}command-line{% endfilename %}
 
@@ -42,7 +42,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`διαχειριστής-django.py` είναι ένα σενάριο που θα δημιουργήσει τους καταλόγους και τα αρχεία για εσάς, Θα πρέπει τώρα να έχετε μια δομή καταλόγου που μοιάζει κάπως έτσι:
 
     djangogirls
     ├───manage.py
@@ -53,13 +53,13 @@ On Windows you should run the following command. **(Don't forget to add the peri
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Σημείωση**: Στην δομή καταλόγου σας, θα δείτε επίσης τον κατάλογο σας `εικονικό περιβάλλον` που δημιουργήσαμε προηγουμένως.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`διαχείριση.py` είναι ένα σενάριο που βοηθά με την διαχείριση της σελίδας. Με αυτό θα μπορούμε να (μεταξύ άλλων πραγμάτων) ξεκινήσουμε ένα διακομιστή ιστού στον υπολογιστή μας χωρίς να εγκαταστήσουμε οτιδήποτε άλλο.
 
-The `settings.py` file contains the configuration of your website.
+Το αρχείο `ρυθμίσεις.py` περιέχει την διαμόρφωση παραμέτρων της ιστοσελίδας σας.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Θυμάστε όταν μιλήσαμε σχετικά με ένα μεταφορέα αλληλογραφίας που ελέγχει που να παραδώσει ένα γράμμα; Το αρχείο `urls.py` περιέχει μία λίστα από σχέδια που χρησιμοποιούνται από το `urlresolver`.
 
 Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
@@ -106,15 +106,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Σημείωση**: Αν χρησιμοποιείτε ένα Chromebook, προσθέστε αυτή τη γραμμή στο τέλος του αρχείου σας settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
-## Set up a database
+## Δημιουργία μιας βάσης δεδομένων
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Υπάρχουν πολλά διαφορετικά λογισμικά βάσης δεδομένων που μπορούν να αποθηκεύσουν δεδομένα για την σελίδα σας. Θα χρησιμοποιήσουμε το προεπιλεγμένο, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Αυτό έχει ήδη εγκατασταθεί σε αυτό το τμήμα του αρχείου σας `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Για να δημιουργήσετε μία βάση δεδομένων για το blog μας, ας εκτελέσουμε το ακόλουθο στην κονσόλα: `python manage.py migrate` ( χρειάζεται να είμαστε στον κατάλογο `djangogirls` που περιέχει το αρχείο `manage.py`). Αν αυτό πάει καλά, θα πρέπει να δείτε κάτι σαν αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,25 +150,25 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Και τελειώσαμε! Ώρα να ξεκινήσουμε τον διακομιστή ιστού και να δούμε εάν η ιστοσελίδα μας λειτουργεί!
 
-## Starting the web server
+## Εκκίνηση του διακομιστή ιστού
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Θα πρέπει να είστε στον κατάλογο που περιέχει το αρχείο `manage.py` ( στον κατάλογο `djangogirls`). Στην κονσόλα, μπορούμε να ξεκινήσουμε τον διακομιστή ιστού εκτελώντας `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Εάν είστε σε ένα Chromebook, χρησιμοποιείστε αυτή την εντολή:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Αν είστε σε Windows και αυτή η ενέργεια αποτύχει με το `UnicodeDecodeError`, χρησιμοποιείστε αντί για αυτό, αυτή την εντολή:
 
 {% filename %}command-line{% endfilename %}
 
