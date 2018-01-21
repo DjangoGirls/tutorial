@@ -1,4 +1,4 @@
-# What is Django?
+# Django - Was ist das?
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Ein Web-(Anwendungs-)Framework ist eine Art Baukastensystem, das dir mit vielen vorgefertigten Teilen die Entwicklung von Webseiten stark erleichtert.
 
