@@ -1,58 +1,58 @@
-# If you're doing the tutorial at home
+# Jika Anda sedang melakukan tutorial di rumah
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Jika Anda melakukan tutorial di rumah, bukan di salah satu acara  Django Girls </ 0> , Anda benar-benar dapat melewatkan bab ini sekarang dan langsung ke  Bagaimana Internet bekerja </ 1> bab .</p> 
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Ini karena kita meliput semua hal ini di keseluruhan tutorial, dan ini hanyalah halaman tambahan yang mengumpulkan semua instruksi instalasi di satu tempat. Acara Django Girls mencakup satu "malam instalasi" dimana kami memasang semuanya sehingga kami tidak perlu repot melakukannya selama workshop berlangsung, jadi ini berguna bagi kami.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+If you find it useful, you can follow this chapter too. Tetapi jika Anda ingin mulai mempelajari banyak hal sebelum memasang banyak barang di komputer Anda, lewati bab ini dan kami akan menjelaskan bagian pemasangannya nanti.
 
-Good luck!
+Semoga berhasil!
 
-# Installation
+# Instalasi
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+Di bengkel Anda akan membangun sebuah blog, dan ada beberapa tugas setup di tutorial yang akan bagus untuk dikerjakan terlebih dahulu sehingga Anda siap untuk mulai coding pada hari itu.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md"%} 
 
 <!--endsec-->
 
-# Install Python
+# Instal Python
 
-{% include "/python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md"%}
 
-# Set up virtualenv and install Django
+# Set up virtualenv dan install Django
 
-{% include "/django_installation/instructions.md" %}
+{% include "/django_installation/instructions.md"%}
 
-# Install a code editor
+# Instal editor kode
 
-{% include "/code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md"%}
 
-# Install Git
+# Pasang git
 
-{% include "/deploy/install_git.md" %}
+{% include "/deploy/install_git.md"%}
 
-# Create a GitHub account
+# Buat akun GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+Pergi ke [ GitHub.com](https://www.github.com) dan masuk ke akun pengguna baru yang gratis.
 
-# Create a PythonAnywhere account
+# Buat akun PythonAnywhere
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md"%}
 
-# Start reading
+# Mulai membaca
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Selamat, Anda sudah siap dan siap untuk pergi! Jika Anda masih memiliki beberapa waktu sebelum lokakarya, akan berguna untuk mulai membaca beberapa bab awal:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Bagaimana internet bekerja](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Pengantar baris perintah](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Pengenalan Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Apa itu Django ?](../django/README.md)
 
-# Enjoy the workshop!
+# Nikmati bengkelnya!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Ketika Anda memulai lokakarya, Anda akan bisa langsung menuju [proyek Django pertama Anda!](../django_start_project/README.md) karena Anda telah membahas materi di bab-bab sebelumnya.
