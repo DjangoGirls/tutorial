@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# מבוא לממשק שורת-הפקודה
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**הרשי לנו להציג את חברך החדש הראשון: שורת הפקודה!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+השלבים הבאים יראו לך כיצד להשתמש בחלון השחור כמו כל ההאקרים. זה אולי נראה קצת מפחיד בהתחלה, אבל האמת שזה רק אות המחכה לפקודות ממך.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## מהי שורת הפקודה?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+החלון, אשר נקרא בדרך כלל **שורת פקודה** או **ממשק שורת-פקודה**, הוא יישום מבוסס טקסט עבור צפיה, טיפול ותפעול קבצים במחשב שלך. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. שמות אחרים עבור שורת הפקודה הם: *cmd*, *CLI*, *prompt*, *מסוף בקרה* או *טרמינל*.
 
-## Open the command-line interface
+## פתיחת ממשק שורת פקודה
 
-To start some experiments we need to open our command-line interface first.
+כדי להתחיל ניסויים, עלינו קודם לפתוח את ממשק שורת פקודה שלנו.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -34,17 +34,17 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+ככל הנראה תחת: Applications → Accessories → Terminal אבל זה תלוי במערכת ההפעלה שלך. אם זה לא שם, פשוט חפשי בגוגל. :)
 
 <!--endsec-->
 
-## Prompt
+## פקודה
 
-You now should see a white or black window that is waiting for your commands.
+את עכשיו אמורה לראות חלון לבן או שחור המחכה לפקודות שלך.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+אם את במקינטוש או Linux, את בטח רואה `$`, בדיוק כמו זה:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,16 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+ב- Windows, זה סימן `<`, כמו זה:
 
 {% filename %}command-line{% endfilename %}
 
-    >
+    <
     
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+סימן זה ועוד רווח יופיעו לפני כל פקודה, אך אין צורך להקליד אותו. המחשב שלך יעשה זאת בשבילך. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## הפקודה הראשונה שלך (הידד!)
 
 Let's start by typing this command:
 
@@ -80,7 +80,7 @@ Let's start by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
-    $ whoami
+    whoami $ 
     
 
 <!--endsec-->
@@ -89,16 +89,16 @@ Let's start by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
-    > whoami
+    whoami <
     
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+ואז הקישי על `Enter`. זוהי התוצאה שלנו:
 
 {% filename %}command-line{% endfilename %}
 
-    $ whoami
+    whoami $ 
     olasitarska
     
 
