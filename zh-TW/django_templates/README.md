@@ -1,18 +1,18 @@
-# Django templates
+# Django 範本 (templates)
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+是時候顯示一些資料了！為此，Django 提供我們一些有用的內建**範本標籤 (template tags)**。
 
-## What are template tags?
+## 範本標籤是什麼？
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Display post list template
+## 顯示文章清單範本
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+在前一章中我們在 `posts` 變數中給我們的範本文章清單，現在我們將在 HTML 中顯示它。
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+若要刊載 Django 範本中的變數，我們把變數放在兩個雙大括弧裡面，像這樣︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+在你的 `blog/templates/blog/post_list.html` 範本中，試試這個。 將第二個 `<div>` 到第三個 `</div>` 之間的內容，用 `{{ posts }}` 代替。 存檔，並更新網頁 (refresh) 以查看結果︰
 
-![Figure 13.1](images/step1.png)
+![圖 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+如你所看到的，我們得到是這樣︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+這表示 Django 瞭解它是物件清單。 還記得在 **Python 簡介** 中我們可以如何顯示清單嗎？ 是的，用迴圈 (loop)！ 在 Django 範本中你這樣做︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+在你的範本中試試這些。
 
-![Figure 13.2](images/step2.png)
+![圖 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+成功了！ But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. 你可以混合使用 HTML 和範本標籤。 我們的 `body` 將像這樣︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,17 +64,17 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}你放在 `{% for %}` 和 `{% endfor %}` 之間的程式碼將重複清單中的每個物件。更新你的網頁︰{% endraw %}
 
-![Figure 13.3](images/step3.png)
+![圖 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? 我們存取定義在我們 `Post` 模型中每個欄位的資料。 Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## One more thing
+## 還有一件事
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-* First, push your code to Github
+* 首先，推送你的代碼到 Github
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* 然後，登錄 [PythonAnywhere](https://www.pythonanywhere.com/consoles/) 並到你的 **Bash 主控台**（或啟動一個新的），然後，執行︰
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,10 +97,10 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 最後，跳到 [Web 選項tab](https://www.pythonanywhere.com/web_app_setup/) 並點選在你網站應用程式 (web app) 上的 **Reload**，你的更新應該完成了！ If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+恭喜完成! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![圖 13.4](images/donut.png)
