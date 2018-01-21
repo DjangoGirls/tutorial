@@ -1,59 +1,58 @@
-# CSS – make it pretty!
+# إجعله جميلا بإستخدام CSS!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+مدونتنا لا تزال تبدو قبيحة جداً، أليس كذلك؟ حان الوقت لجعلها جميلة! سوف نجعلها جميلة بإستخدام CSS.
 
-## What is CSS?
+## ما هي تقنية CSS؟
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS هي لغة تجميل المواقع, تخيل HTML هي هيكل المنزل يعني الحائط و السارية و السقف و CSS هي الصباغة و الصقل والديكور... و ما إلى ذلك , يعني مثل المكياج 
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+لكننا لا نريد أن نبدأ من الصفر مرة أخرى، أليس كذلك؟ مرة أخرى، سنستخدم شيئا خلقه المبرمجون على الإنترنت مجانا. إعادة اختراع العجلة ليس ممتعا، كما تعلمون.
 
-## Let's use Bootstrap!
+## لنستخدم Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap اطار عمل الأكثر شعبية لـ HTML و CSS لتطوير مواقع جميلة: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+كتب بواسطة المبرمجين الذين عملوا على تويتر والآن يتم تطويره من قبل المتطوعين من جميع أنحاء العالم!
 
-## Install Bootstrap
+## تثبيت Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+لتثبيت بوتستراب، يجب إضافة هذا إلى `<head>` في ملف `.html </ 1>:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<pre><code class="html"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-```
+`</pre> 
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+هذا لا يضيف أي ملفات إلى المشروع الخاص بك. بل يشير فقط إلى الملفات الموجودة على شبكة الإنترنت. افتح موقع الويب الخاص بك وقم بتحديث الصفحة. لاحظت الفرق!
 
-![Figure 14.1](images/bootstrap1.png)
+![الرقم 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+يبدو اجمل الان!
 
-## Static files in Django
+## الملفات الثابتة في Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+اخيراً سوف نمعن بالنظر على ما اسميناه **بالملفات الثابتة**. الملفات الثابتة هي كل CSS والصور. محتواهم لا يعتمد على خاصية الطلب وسيكون مشابها عند الجميع.
 
-### Where to put static files for Django
+### اين توضع الملفات الثابتة لمشروع Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+جانغو عرف مسبقا أين يجد الملفات الثابتة للتطبيق المضمن المدير "admin". الأن لايلزمنا سوى اضافة بعض الملفات الثابتة للتطبيق الخاص بنا,`blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+نقوم بذلك بانشاء مجلد نسميه `static` داخل تطبيق المدونة:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+جانغو سيجد تلقائيا أي مجلد باسم "static" داخل اي مجلد يحتويه تطبيقك. وسيستطيع استعمال محتوياته كملفات ثابتة.
 
-## Your first CSS file!
+## الأن مع ملفات CSS
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+لنقم بانشاء ملف نمطي CSS. لتظيف تعديلاتك الخاصة لموقعك. قم بانشاء مجلد باسم `css` داخل مجلد `static`. قم بانشاء ملف باسم `blog.css` داخل المجلد `css`. مستعد ؟
 
     djangogirls
     └─── blog
@@ -62,13 +61,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+حان الوقت للقيام بكتابة بعض CSS,قم بفتح الملف `blog/static/css/blog.css` داخل المحرر.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+لن نذهب عميقاً في تخصيص وتعلم CSS هنا. هناك توصية بدورة CSS مجانية في نهاية هذه الصفحة إذا كنت ترغب في معرفة المزيد.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+لكن لنقم بالقليل على الاقل. ربما نريد تغيير لون الترويسة؟ لفهم الالوان, الحاسوب يستعمل شيفرات خاصة. الشيفرات تبتدأ ب `#` و تليها 6 حروف (A-F) و أرقام (0-9). مثلا ، رمز اللون الأزرق هو `#0000FF`. يمكنك العثور على هذه الشيفرات في هذا الموقع: http://www.colorpicker.com/. يمكنك استعمال الالوان المحددة مسبقا ك `red` و `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+داخل الملف `blog/static/css/blog.css` يجب عليك اضافة التعليمات البرمجية التالية:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,17 +77,17 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` هو محدد CSS. وهذا يعني أننا تقوم بتطبيقالأنماط لدينا لأي ` عنصر داخل عنصر <code>h1`</code>. حتى عندما يكون لدينا شيء مثل `<h1><a href="">link</a></h1>`، `h1` سيتم تطبيق النمط. في هذه الحالة نأمرها بتغيير الون الى `#FCA205`,وهو اللون البرتقالي. بالطبع تستطيع وضع أي لون تريد!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+داخل ملف CSS نحدد أنماط العناصر التي توجد داخل ملف HTML. الطريقة الأولى التي نستخدمها لتحديد العناصر هي عبر الإسم. يمكن أن تذكر هذه tags من قسم HTML. أشياء مثل`a`, `h1` و `body` هي كلها امثلة لأسماء العناصر. نحن نحدد العناصر ايضا عبر `class` او عبر `id`. Class و id هي الأسماء التي يمكنك إعطائها للعنصر بنفسك. تحدد class مجموعات من العناصر، و id تشير إلى عناصر محددة. على سبيل المثال، يمكن تحديد tag التالية باستخدام سمة `a`, المصنف `external_link` (class), أو المعرف `link_to_wiki_page` (id):
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+اقرأ عن [محددات CSS في w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+نحن بحاجة إلى أن نقول أيضا لقالب HTML أننا أضفنا بعض ال CSS. افتح الملف `blog/templates/blog/post_list.html` وأضف هذا السطر في البداية:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +95,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+نحن فقط نحمل الملفات الثابتة هنا ما بين علامات `<head>` و `</head>` بعد الارتباطات بملفات بوتستراب CSS ، قم بإضافة هذا السطر:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +103,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+المتصفح يقرأ الأوامر بالترتيب الذي اعطي له ، لذا يجب علينا التأكد من ان هذا في المكان الصحيح. وإلا فإن الكود في الملف الخاص بك قد يتم تجاوزه بواسطة الكود في ملفات بوتستراب. قمنا لتونا بإعلام القالب أين توجد ملفات التنسيق CSS.
 
-Your file should now look like this:
+الآن يجب أن يبدو الملف الخاص بك مثل هذا:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +134,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+حسنا، قم بحفظ الملف وقم بتحديث الموقع!
 
-![Figure 14.2](images/color2.png)
+![الرقم 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+عمل جيد! ربما نود أيضا إعطاء موقعنا متنفس وزيادة الهامش على الجانب الأيسر؟ دعونا نحاول هذا!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +148,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+قم بإضافة التعديل أعلاه لملف التنسيق CSS, احفض الملف و أنظر النتيجة!
 
-![Figure 14.3](images/margin2.png)
+![الرقم 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+ربما يمكننا تخصيص الخط في عنوان الصفحة لدينا؟ ألصق هذا `< header >` في ملف `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +160,9 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+كما من قبل، تحقق من الأمر والمكان قبل الارتباط بـ `blog/static/css/blog.css`. هذا السطر سيطلب خط يسمى *Lobster* من "خطوط جوجل " (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+أعثر على `h1` إعلان كتلة (التعليمات البرمجية بين الأقواس `{` `}`) في ملف CSS `blog/static/css/blog.css`. الآن قم بإضافة السطر `font-family: 'Lobster';` بين أقواس، وحدث الصفحة:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -174,13 +173,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![الرقم 14.3](images/font.png)
 
-Great!
+عظيم!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+كما ذكر أعلاه، CSS لديها مفهوم طبقات. هذه تسمح لك بتسمية جزء من التعليمات البرمجية ل HTML وتطبيق الأنماط فقط لهذا الجزء، دون التأثير على الأجزاء الأخرى. هذا يمكن ان يكون مفيد جدا! ربما يكون لديك اثنين من divs اللذان يقومان بشيء مختلف (مثل الهيدر او الموضوع الخاص بك). الكلآس يمكن اي يساعدك في جعلها تبدو مختلفة.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+أمضي قدما وقم بتسمية بعض أجزاء من التعليمات البرمجية ل HTML. إضافة فئة تدعي `page-header` إلى `div` الذي يحتوي الهيدر الخاص بك ، مثل هذا:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +189,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+الان أضف Class `post` إلى `div` الذي يحتوي مقالات المدونة.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +201,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+سنقوم الآن بإضافة كتل إعلان لمحددات مختلفة. المحددات التي تبدأ ب `.` تتعلق بالفصول. هناك العديد من الدروس والشروحات التي تتكلم عن CSS في الأنترنت والتي يمكنها مساعدتك على فهم الأكواد التالية. الآن، فقط قم بنسخ ولصق في ملف `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +254,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+تم قم بإحاطة تعليمات HTML التي تظهر المقالات:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +268,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+في `blog/templates/blog/post_list.html` بهذا:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +290,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+إحفظ الملفات الأن، وقم بتحديث موقع الويب الخاص بك.
 
-![Figure 14.4](images/final.png)
+![الرقم 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+وووهووو! يبدو رائعا أليس كذالك؟ انظر إلى التعليمات البرمجية التي ألصقناها للتو للعثور على الأماكن التي أضفنا فيها كلاسات في HTML واستخدمناها في CSS. أين يمكن عمل تعديل ان اردت للوقت ان يكون turquoise؟
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+لا تخافوا من العبث مع هذه CSS قليلا ومحاولة تغيير بعض الأشياء. اللعب ب CSS يمكن أن يساعدك على فهم ما تقوم به الأشياء المختلفة. إذا كسرت شيء لا تقلق يمكنك اصلاحه دائما!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+نحن ننصحك بأخد هذه الحصة التعليمية المجانية [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). يمكن أن تساعدك على تعلم كل شيء عن جعل مواقع الويب الخاصة بك أجمل مع CSS.
 
-Ready for the next chapter?! :)
+جاهز للفصل التالي؟! :)
