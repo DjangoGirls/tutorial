@@ -1,52 +1,52 @@
-# Introduction to the command-line interface
+# Pengantar antarmuka baris perintah
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Bagi para pembaca di rumah: bab ini telah dibahas di video [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Ini menarik kan? Anda akan menulis baris kode pertama Anda hanya dalam beberapa menit! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Mari kita perkenalkan Anda ke teman baru pertama Anda: baris perintah!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Langkah-langkah berikut akan menunjukkan cara menggunakan jendela hitam yang digunakan oleh semua hacker. Mungkin terlihat sedikit menakutkan pada awalnya tapi sebenarnya itu hanya sebuah prompt menunggu perintah dari Anda.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Catatan** Perlu diketahui bahwa di sepanjang buku ini kita akan menggunakan istilah 'directory' dan 'folder' secara bergantian tetapi keduanya adalah satu dan sama.
 
-## What is the command line?
+## Apa itu baris perintah?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Jendela, yang biasanya disebut **command line**atau** antarmuka baris perintah**, adalah aplikasi berbasis teks untuk melihat, menangani, dan memanipulasi berkas di komputer Anda. Ini seperti Windows Explorer atau Finder di Mac, tapi tanpa antarmuka grafis. Nama lain dari baris perintah adalah: *cmd*, *CLI*, *prompt*, *konsol* atau *terminal*.
 
-## Open the command-line interface
+## Buka antarmuka baris perintah
 
-To start some experiments we need to open our command-line interface first.
+Untuk memulai beberapa percobaan kita perlu membuka antarmuka baris perintah kita terlebih dahulu.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Buka menu Start → Windows System → Command Prompt.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Pada versi Windows yang lama, lihat pada menu Start → All Programs → Accessories → Command Prompt.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Arahkan ke Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+Mungkin letaknya di Applications → Accessories → Terminal, tapi itu tergantung pada sistem Anda. Jika tidak ada, silahkan cari bantuan di Google. :)
 
 <!--endsec-->
 
-## Prompt
+## Jendela Perintah
 
-You now should see a white or black window that is waiting for your commands.
+Sekarang Anda akan melihat jendala hitam atau putih yang menunggu perintah yang Anda ketikkan.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Jikan Anda menggunakan Mac atau Linux, mungkin Anda akan melihat tanda `$`, seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $
     
@@ -55,30 +55,30 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+Pada Windows, tandanya `>` seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     >
     
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Setiap baris perintah akan ada tambahan awal dengan tanda ini dan satu spasi, namun Anda tidak perlu mengetikkannya. Komputer Anda akan melakukannya untuk Anda. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Catatan kecil: dalam kasus Anda mungkin kelihatan seperti `C:\Users\ola>` atau `Olas-MacBook-Air:~ ola$` sebelum tanda prompt, itu tidak menjadi masalah.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Bagian setelah dan termasuk tanda `$` atau `>` disebut *prompt baris perintah*, atau singkatnya disebut *prompt*. Mengharuskan Anda untuk mengetikkan sebuah perintah di sana.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+Pada tutorial, pada saat kami ingin Anda untuk mengeikkan baris perintah, kami akan sertakan tanda `$` atau `>`, dan kadang-kadang lebih ke kiri. Anda dapat mengabaikan bagian sebelah kiri tadi lalu perintahnya dapat dimulai setelah prompt.
 
-## Your first command (YAY!)
+## Perintah pertama Anda (YAY!)
 
 Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ whoami
     
@@ -87,73 +87,73 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > whoami
     
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Dan kemudian tekan `enter`. Beginilah hasilnya:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ whoami
+    $ whoami 
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Seperti yang bisa Anda lihat, komputer baru saja mencetak nama pengguna Anda. Rapi, kan? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Coba ketik setiap baris peintah; jangan disalin-tempel. Anda akan ingat lebih banyak dengan cara ini!
 
-## Basics
+## Hal-hal dasar
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Setiap sistem operasi memiliki seperangkat perintah yang sedikit berbeda untuk baris perintah, jadi pastikan untuk mengikuti petunjuk untuk sistem operasi Anda. Bagaimana kalau kita mencobanya sekarang?
 
-### Current directory
+### Direktori aktif
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Akan lebih baik jika mengetahui di mana posisi kita sekarang. Mari kita lihat. Ketikkan perintah ini lalu tekan `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ pwd
-    /Users/olasitarska
+    $ pwd /
+    Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Catatan: 'pwd' singkatan dari 'print working directory'.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > cd
+    > cd 
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Catatan: 'cd' singkatan dari 'change directory'. Dengan powershell Anda dapat menggunakn pwd seperti halnya pada Linux atau Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Anda mungkin akan melihat sesuatu yang serupa di mesin Anda. Setelah Anda membuka baris perintah yang biasanya Anda gunakan di direktori home pengguna Anda.
 
 * * *
 
-### List files and directories
+### Daftar berkas dan direktori
 
-So what's in it? It'd be cool to find out. Let's see:
+Jadi apa isinya? Pasti menyenangkan untuk mencari tahu. Mari kita lihat:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
+    $ ls 
+    Applications 
+    Desktop 
+    Downloads 
     Music
     ...
     
@@ -162,28 +162,28 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    > dir  
+    Directory of C:\Users\olasitarska 
+    05/08/2014 07:28 PM <DIR> Applications 
+    05/08/2014 07:28 PM <DIR> Desktop 
+    05/08/2014 07:28 PM <DIR> Downloads 
+    05/08/2014 07:28 PM <DIR> Music 
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Catatan: di powershell Anda juga dapat menggunakan 'ls' seperti pada Linux dan Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Mengganti direktori aktif
 
-Now, let's go to our Desktop directory:
+Sekarang, mari kita ke direktori Desktop:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ cd Desktop
     
@@ -192,20 +192,20 @@ Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > cd Desktop
     
 
 <!--endsec-->
 
-Check if it's really changed:
+Coba periksa apa sudah benar-benar berubah:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ pwd
+    $ pwd 
     /Users/olasitarska/Desktop
     
 
@@ -213,61 +213,61 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > cd
+    > cd 
     C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Here it is!
+Ini dia!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: jika Anda ketik `cd D` dan kemudian menekan `tab` pada keyboard Anda, perintah tersebut akan secara otomatis mengisi sisa dari perintah yang akan diketik sehingga Anda dapat bekerja lebih cepat. Jika ada lebih daru satu folder yang dimulai dengan "D", tekan tombol `tab` dua kali untuk melihat daftar pilihan yang tersedia.
 
 * * *
 
-### Create directory
+### Membuat Direktori
 
-How about creating a practice directory on your desktop? You can do it this way:
+Bagaimana jika kita membuat direktori praktik di dekstop Anda? Anda dapat melakukannya begini:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir praktik
     
 
 <!--endsec-->
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > mkdir practice
+    > mkdir praktik
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Perintah sederhana ini akan membuat sebuh folder dengan nama `praktik` pada Desktop Anda. Anda dapat memeriksanya apakah sudah ada di Desktop atau dengan menjalankan perintah `ls` atu `dir`! Cobalah. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: Jika Anda tidak ingin mengetikkan perintah yang sama berulangkali, coba tekan `panah atas` dan `panah bawah` pada keyboard Anda untuk melihat perintah yang baru saja Anda gunakan.
 
 * * *
 
-### Exercise!
+### Latihan!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Tantangan kecil untuk Anda: pada direktori `praktik` yang baru Anda buat, buat sebuah direktori dengan nama `tes`. (Gunakan perintah `cd` dan `mkdir`.)
 
-#### Solution:
+#### Solusi:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ cd practice
-    $ mkdir test
-    $ ls
+    $ cd practice 
+    $ mkdir test 
+    $ ls 
     test
     
 
@@ -275,29 +275,29 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
+    > cd practice 
+    > mkdir test 
+    > dir 
+    05/08/2014 07:28 PM <DIR> test
     
 
 <!--endsec-->
 
-Congrats! :)
+Selamat! :)
 
 * * *
 
-### Clean up
+### Pembersihan
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Kami tidak ingin meninggalkan kekacauan, jadi mari kita hilangkan semua yang telah kita lakukan sampai saat itu.
 
-First, we need to get back to Desktop:
+Pertama, kita perlu kembali ke Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ cd ..
     
@@ -306,22 +306,22 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > cd ..
     
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Penggunaan `..` dengan perintah `cd` akan mengubah direktori aktif saat ini kembali ke direktori induk (yaitu, direktori yang berisi direktori aktif saat ini.).
 
-Check where you are:
+Periksa posisi Anda:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ pwd
+    $ pwd 
     /Users/olasitarska/Desktop
     
 
@@ -329,21 +329,21 @@ Check where you are:
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    > cd
+    > cd 
     C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Sekarang kita akan menghapus direktori `praktik`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Perhatian**: Menghapus berkas dengan menggunakan `del`, `rmdir ` atau `rm ` tidak dapat dipulihkan, artinya *berkas yang dihapus akan hilang selamanya*! Jadi berhati-hatilah dengan perintah ini.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ rm -r practice
     
@@ -352,19 +352,19 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perinah{% endfilename %}
 
-    > rmdir /S practice
+    > rmdir /S practice 
     practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Selesai! Untuk memastikan itu benar-benar dihapus, mari kita periksa:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ ls
     
@@ -373,7 +373,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > dir
     
@@ -382,11 +382,11 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Itu dulu untuk saat ini! Anda dapat menutup baris perintah sekarang. Mari melakukannya seperti yang dilakukan peretas, oke? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ exit
     
@@ -395,35 +395,35 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > exit
     
 
 <!--endsec-->
 
-Cool, huh? :)
+Keren, kan? :)
 
-## Summary
+## Ringkasan
 
-Here is a summary of some useful commands:
+Berikut ini adalah beberapa ringkasan perintah yang akan berguna:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Perintah (Windows) | Perintah (Mac OS / Linux) | Keterangan                  | Contoh                                         |
+| ------------------ | ------------------------- | --------------------------- | ---------------------------------------------- |
+| exit               | exit                      | menutup jendela kerja       | **exit**                                       |
+| cd                 | cd                        | mengganti direktori         | **cd tes**                                     |
+| cd                 | pwd                       | menunjukkan direktori aktif | **cd** (Windows) atau **pwd** (Mac OS / Linux) |
+| dir                | ls                        | daftar direktori/file       | **dir**                                        |
+| copy               | cp                        | menyalin berkas             | **copy c:\tes\tes.txt c:\windows\tes.txt** |
+| move               | mv                        | memindakan berkas           | **move c:\tes\tes.txt c:\windows\tes.txt** |
+| mkdir              | mkdir                     | membuat direktori baru      | **mkdir direktorites**                         |
+| rmdir (or del)     | rm                        | menghapus berkas            | **del c:\tes\tes.txt**                       |
+| rmdir /S           | rm -r                     | menghapus direktori         | **rm -r testdirectory**                        |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Ini semua hanya beberapa perintah yang dapat Anda jalankan pada baris perintah, tapi hari ini Anda tidak akan menggunakan apapun lebih dari itu.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Jika Anda masih penasaran, [ss64.com](http://ss64.com) berisi referensi lengkap tentang perintah-perintah untuk semua sistem operasi.
 
-## Ready?
+## Siap?
 
-Let's dive into Python!
+Mari menyelami dunia Python!
