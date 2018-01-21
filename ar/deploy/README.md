@@ -1,26 +1,26 @@
-# Deploy!
+# الإعداد!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **ملاحظه** الفصل التالي قد يكون في بعض الأحيان صعبا. استمر و أعزم على الانتهاء منه؛ الإعداد جزء هام من عملية تطوير موقع شبكة الإنترنت. ويوضع هذا الفصل في منتصف البرنامج التعليمي حتى يمكن لمدربك أن يساعدك في العمليات الأصعب قليلاً لنشر موقع الويب الخاص بك على الإنترنت. وهذا يعني أنه لا يزال يمكنك الانتهاء من البرنامج التعليمي الخاص بك بمفردك إذا نفذ الوقت منك.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+حتى الأن موقعك كان متاحا فقط على حاسوبك. الأن سوف تتعلم كيف تنشره! الإعداد هو عملية نشر التطبيق الخاص بك على شبكة الإنترنت حيث يمكن للناس الذهاب إلى التطبيق الخاص بك و مشاهدته. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+كما تعلمت، موقع على شبكة الإنترنت يجب أن يتواجد في خادم. هناك الكثير من مقدمي الخدمة متاحين على شبكة الإنترنت، ونحن سنستخدم [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere متوفر مجانا للتطبيقات الصغيرة التي لا تحتوي على عدد كبير من الزائرين فالآن بالتأكيد ستكون كافية بالنسبة لك.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+الخدمات الخارجية الأخرى ستقوم باستخدام [GitHub](https://www.github.com)، وهي خدمة استضافة التعليمات البرمجية. هناك آخرون ، ولكن تقريبا جميع المبرمجين لديهم حساب GitHub في هذه الأيام، والآن أنت سوف يمكنك أيضا الحصول على حساب!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+سوف تكون هذه الأماكن الثلاثة هامة بالنسبة لك. الكمبيوتر الخاص بك سوف يكون المكان حيث يمكنك القيام بالتطوير والإختبار. عندما تكون راضيا عن التغييرات، ستقوم بوضع نسخة من التعليمات البرمجية على GitHub. موقعك سيكون على بايثون في كل مكان ، وستقوم بتحديثه عبر استقدام نسخة جديدة من GitHub.
 
-# Git
+# جيت (Git)
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **ملاحظة** إذا كنت قمت بإجراء خطوات التثبيت سابقا، لا تحتاج للقيام بذلك مرة أخرى -يمكنك التخطي إلى الجزء التالي والبدء في إنشاء مستودع Git الخاص بك.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## ابتداء مستودعك في Git
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git يتعقب التغييرات التي تحدث لمجموعة معينة من الملفات في ما يسمى بمستودع الكود (أو "الريبو" للاختصار). لنبدأ انشاء مستودع (ريبو) لمشروعنا. افتح وحدة التحكم الخاص بك ، وشغل هذه الأوامر في دليل `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **ملاحظة** تحقق من دليل العمل الحالي الخاص بك مع `pwd` (Mac OS X/لينكس) أو `cd` (في Windows) قبل تهيئة المستودع. يجب أن تكون في المجلد `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,28 +30,24 @@ Git tracks changes to a particular set of files in what's called a code reposito
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+تهيئة المستودع هو شيء نحتاج القيام به مرة واحدة فقط لكل مشروع (ولن تضطر إلى إعادة إدخال اسم المستخدم والبريد الإلكتروني مرة أخرى).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git سوف يتعقب التغييرات لكافة الملفات والمجلدات الموجودة في هذا الدليل، ولكن هناك بعض الملفات التي نريد Git أن يتجاهلها. نحن نقوم بهذا عبر انشاء ملف يسمى `.gitignore` في الدليل الرئيسي. افتح المحرر الخاص بك وقم بإنشاء ملف جديد مع محتويات التالية:
 
 {% filename %}.gitignore{% endfilename %}
 
-    *.pyc
-    *~
-    __pycache__
-    myvenv
-    db.sqlite3
-    /static
-    .DS_Store
+    * .pyc * ~
+     __pycache__ 
+    myvenv db.sqlite3 / static .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+واحفظه ك `.gitignore` في مجلد "djangogirls".
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **ملاحظة** النقطه في بداية اسم الملف مهمه! إذا كنت تواجه أي صعوبة في انشائه (على سبيل المثال ،أجهزة ماكينتوش لا تمكنك من إنشاء الملفات التي تبدأ بنقطة عن طريق الباحث)، إذا قم باستخدام ميزة "حفظ باسم" في المحرر الخاص بك.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **ملاحظة** أحد الملفات التي قمت بتحديدها في ملف `.gitignore` هي `db.sqlite3`. هذا الملف هو قاعدة البيانات المحلية الخاصة بك، حيث يتم تخزين جميع المشاركات الخاصة بك. لا نريد اضافة هذا الى المستودع الخاص بك ، لأن موقعك على بايثون في كل مكان سيكون يستخدم قاعدة بيانات مختلفة. قاعدة البيانات تلك يمكن ان تكون SQLite, مثل جهاز التطوير الخاص بك ، لكن في العادة ستستخدم واحدة تسمى MySQL, والتي يمكنها التعامل مع الكثير من الزوار اكثر من SQLite. وفي كلتا الحالتين، بتجاهل قاعدة بيانات SQLite للنسخة GitHub، يعني أن جميع المشاركات التي قمت بإنشائها حتى الآن ستبقى و تكون متاحة محلياً، ولكن سيكون عليك اضافتهم مرة اخرى للإنتاج. ينبغي أن تفكر في قاعدة البيانات المحلية الخاصة بك كملعب جيد حيث يمكنك اختبار أشياء مختلفة وولا تخف من فكرة انك ستحدف مشاركاتك الحقيقية من المدونة.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+انها فكرة جيدة استخدام الأمر `git status` قبل `git add` أو كلما وجدت نفسك غير متأكد من ما تغير. وهذا سيساعد على منع أي مفاجآت من الحدوث، مثل إضافة ملفات خاطئة. الأمر `git status` يرجع المعلومات عن اي ملف لم يتم اتباعه تعديله او تنظيمه, حالة الفرع، وأكثر من ذلك بكثير. يجب أن يكون المخرج مشابه لما يلي:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +67,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+وأخيرا نحفض التغييرات التي قمنا بها, اذهب الى لوحة التحكم الخاصة بك وشغل هذه الأوامر:
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,77 +80,55 @@ And finally we save our changes. Go to your console and run these commands:
      create mode 100644 mysite/wsgi.py
      ```
     
+    ## Wypychanie kodu na GitHuba
     
-    ## Pushing your code to GitHub
+    Przejdź na [GitHub.com](https://www.github.com) i załóż nowe, darmowe konto użytkonika. (إذا كنت قد سبق أن فعلت ذلك في ورشة العمل الإعدادية، هذا عظيم!) قم بإنشاء مستودع جديد، وإعطائه اسم "my-first-blog". اترك خانة "initialize with a README" دون اختيارها واترك الخيار.gitignore فارغ (لقد فعلنا ذلك يدوياً) وأترك الترخيص على أنه لا شيء.
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    <img src="images/new_github_repo.png" /> > * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. ربما من الأسهل الإبقاء على اسم 'بmy-first-blog'.
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    في الشاشة التالية، سوف يظهر لك رابط استنساخ المستودع الخاص بك. اختر إصدار "HTTPS"، إنسخه ، وسوف نلصقه في التيرمينال قريبا: <img src="images/github_get_repo_url_screenshot.png" /> الآن نحن بحاجة إلى ربط المستودع على جهاز الكمبيوتر الخاص بك بالمستودع الموجود على GitHub.
     
-    <img src="images/new_github_repo.png" />
-    
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
-    
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
-    
-    <img src="images/github_get_repo_url_screenshot.png" />
-    
-    Now we need to hook up the Git repository on your computer to the one up on GitHub.
-    
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
-    
-    {% filename %}command-line{% endfilename %}
+    اكتب الأمر التالي في وحدة التحكم الخاصة بك (استبدل '<your-github-username>' مع اسم المستخدم الذي قمت بإدخاله عند إنشاء حساب GitHub الخاص بك، ولكن دون أقواس الزاوية):{% filename %}command-line{% endfilename %}
     
 
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-    <br />Enter your GitHub username and password and you should see something like this:
-    
-    {% filename %}command-line{% endfilename %}
+    <br />أدخل اسم المستخدم في GitHub الخاص بك وكلمة المرور، ويجب أن ترى شيئا من هذا القبيل:{% filename %}command-line{% endfilename %}
     
 
-Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
+Username for 'https://github.com': votre-nom Password for 'https://votre-nom@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
 
 - [new branch] master -> master Branch master set up to track remote branch master from origin.
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
-    
-    
-    # Setting up our blog on PythonAnywhere
-    
-    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    تعليماتك البرمجية موجودة الأن على GitHub. الذهاب والتحقق من ذلك!  ستجد أنها في نهاية الشركة – [Django] (https://github.com/django/django) وفي [دروس جانغو الفتيات] (https://github.com/DjangoGirls/tutorial)، والعديد من مشاريع البرمجيات الكبيرة مفتوحة المصدر الأخرى أيضا تستضيف التعليمات البرمجية الخاصة بهم في GitHub. :) # إنشاء مدونتنا على بايثون في كل مكان &gt; * * ملاحظة * * قد تم إنشاء حساب ببايثون في كل مكان في وقت سابق أثناء خطوات التثبيت – إذا كان الأمر كذلك، لا حاجة للقيام بذلك مرة أخرى.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## Pulling our code down on PythonAnywhere
+    ## سحب التعليمات البرمجية لدينا من بايثون في كل مكان
     
-    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    عندما تسجل في بايثون في كل مكان سوف يتم اخدك للوحة التحكم. اختر هذا الخيار لتشغيل وحدة تحكم "Bash" – والذي هو اصدار من بايثون في كل مكان للوحة التحكم، تماما مثل الموجود على حاسوبك.
     
-    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt; &gt; * * ملاحظة * * "بايثون في كل مكان " يستند على لينكس، حتى إذا كنت على ويندوز، وحدة التحكم سوف تبدو مختلفة قليلاً من التي تتواجد على حاسوبك الخاص.
     
-    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
-    
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    دعونا نسحب تعليماتنا البرمجية من GitHub وعلى بايثون في كل مكان عن طريق إنشاء "استنساخ" لمستودعنا. اكتب الأمر التالي في وحدة التحكم على بايثون في كل مكان (لا تنسى أن استخدام اسم المستخدم الخاص بك في GitHub بدلاً من `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
-    <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+    <br />هذا سيستنسخ نسخة من تعليماتك البرمجية في بايثون في كل مكان ، يمكنك تفقد ذالك عبر كتابة `tree my-first-blog`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
 
-    <br /><br />### Creating a virtualenv on PythonAnywhere
-    
-    Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
-    
+    <br /><br />### إنشاء بيئة افتراضية على بايثون في كل مكان
+    فقط كما فعلت على حاسوبك ، يمكنك انشاء بيئة افتراضية على بايثون في كل مكان. في نافذة وحدة التحكم، اكتب
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
@@ -166,51 +140,44 @@ $ source myvenv/bin/activate
 
 (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    <br /><br />&gt; * * ملاحظة * * الخطوة 'pip install' يمكن أن تستغرق بضع دقائق.  الصبر والصبر!  ولكن إذا إستغرق الأمر أكثر من خمس دقائق، هناك خطأ ما.  اسأل المدرب الخاص بك.
     
-    &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
+    &lt;!-TODO: التفكير في استخدام requirements.txt بدلاً من pip install.--&gt; # # # إنشاء قاعدة بيانات بايثون في كل مكان
+     هنا شيء آخر مختلف بين الكمبيوتر الخاص بك والخادم: إنه يستخدم قاعدة بيانات مختلفة. حيث يمكن أن تكون حسابات المستخدم ومشاركاته مختلفة على الملقم وعلى الكمبيوتر الخاص بك.
     
-    ### Creating the database on PythonAnywhere
-    
-    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
-    
-    Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
+    تماما كما فعلنا على جهاز الكمبيوتر الخاص بك، نحن سنكرر الخطوة لتهيئة قاعدة البيانات على الملقم، عبر `migrate` و `createsuperuser`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
 
-    <br />## Publishing our blog as a web app
+    <br /># # نشر مدونتنا كتطبيق ويب
     
-    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+     الآن التعليمات البرمجية الخاصة بنا في PythonAnywhere,، وبيئتنا الإفتراضية على استعداد، وقاعدة البيانات مهيئة. نحن مستعدون لنشره كتطبيق ويب!
     
-    Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+    انقر فوق العودة إلى لوحة معلومات PythonAnywhere عن طريق النقر على الشعار ومن ثم انقر فوق **Web**. وأخيراً، إضغط ***Add a new web app**.
     
-    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+    بعد التأكد من اسم النطاق الخاص بك، اختر ***manual configuration** (ملحوظة:-*not* الخيار "Django") في مربع الحوار. بعد اختيار **Python 3.6**، انقر فوق التالي لإنهاء المعالج.
     
-    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    &gt; * *ملاحظة* * "تأكد من" اختيار الخيار "Manual configuration"، وليس "Django". نحن نحب جداً الإعداد الافتراضي لدجانغو بايثون في كل مكان. ;-)
+    ### تعيين البيئة الافتراضية
     
-    
-    ### Setting the virtualenv
-    
-    You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+    سيتم نقلك لصفحة تعديل بايثون في كل مكان لتطبيقك ، والذي يمكنك من الذهاب لأي مكان والقيام بالتعديلا لتطبيقك على السيرفر.
     
     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
+     في المقطع "Virtualenv"، انقر فوق النص الأحمر الذي يقول "Enter the path to a virtualenv"، وأدخل `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. انقر فوق المربع الأزرق مع علامة اختيار لحفظ المسار قبل الانتقال.
     
-    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
-    
-    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    &gt; * *ملاحظة* * استبدال اسم المستخدم الخاص بك PythonAnywhere حسب الحاجة. إذا قمت بخطأ، PythonAnywhere سوف تظهر لك تحذير.
     
     
-    ### Configuring the WSGI file
+    # # # تكوين الملف WSGI
     
-    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+     جانغو يعمل باستخدام "بروتوكول WSGI"، معياراً لخدمة مواقع الويب باستخدام بيثون، الذي يدعم بايثون في كل مكان. الطريقة التي يمكننا تتعديل PythonAnywhere بها للإعتراف بمدونتنا جانغو عن طريق تحرير ملف تعديل WSGI.
     
-    Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+    انقر فوق "ملف التكوين WSGI" (في المقطع "تعليمات برمجية" بالقرب من أعلى الصفحة – فإنه سوف يكون المسمى شيئا مثل '/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py')، وسوف يتم نقلك إلى المحرر.
     
-    Delete all the contents and replace them with the following:
-    
+    حدف كافة المحتويات وتغييرها ب
     {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
     ```python
     import os
@@ -227,34 +194,34 @@ $ source myvenv/bin/activate
     application = StaticFilesHandler(get_wsgi_application())
     
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+عمل الملف هو اخبار بايثون في كل مكان اين يكون تطبيق الويب الخاص بنا ، وما هو اسم ملف اعدادات دجانغو.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+`StaticFilesHandler` هو للتعامل مع CSS. هذا سيهتم بك تلقائيا اثناء التطوير المحلي بواسطة الأمر `runserver`. سنعرف المزيد عن الملفات الثابتة لاحقا في البرنامج التعليمي، عندما نقوم بتحرير CSS لموقعنا.
 
-Hit **Save** and then go back to the **Web** tab.
+إضغط **Save** وثم العودة إلى علامة التبويب **Web**.
 
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+لقد انتهينا جميعا! اضغط على الزر الأخضر الكبير **Reload** وستتمكن من عرض تطبيقك. ستجد رابطا إليه أعلى الصفحة.
 
-## Debugging tips
+## نصائح لتصحيح الأخطاء
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+إذا ضهرت لك اي اخطاء عندما تزور موقعك ، المكان الأول الذي يجب ان تبحث فيه عن معلومات الخطأ لتصحيحه هو **error log**. ستجد رابط لهذا في بايثون في كل مكان [علامة التبويب](https://www.pythonanywhere.com/web_app_setup/). انضر ان كان هناك اي رسائل اخطاء ، الأحدث ستجدهم في الأسفل. وتشمل المشاكل الشائعة:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+- نسيان واحدة من الخطوات التي قمنا بها في وحدة التحكم: إنشاء بيئة افتراضية، وتفعيلها، تثبيت جانغو فيها ، ونقل قاعدة بيانات.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- القيام بخطأ في البيئة الإفتراضية في علامة التبويب ويب – ستكون هناك عادة ما رسالة خطأ حمراء قليلاً هناك، إذا كان هناك مشكلة.
 
-- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
+- خطأ في ملف التكوين WSGI-هل حصلت على مسار مجلد my-first-blog folder الصحيح؟
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+- هل اخترت نفس نسخة بايثون لبيئتك الإفتراضية ، كما فعلت لتطبيق الويب الخاص بك؟ ينبغي أن يكون 3.6.
 
-There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+وهناك أيضا بعض [النصائح العامة لتصحيح الأخطاء على ويكي PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+وتذكر أن المدرب هنا للمساعدة!
 
-# You are live!
+# أنت على الهواء الأن!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+الصفحة الرئيسية لموقعك يجب ان تقول "لقد عمل" تماما كما تقول على حاسوبك الخاص. حاول إضافة `/admin/` إلى نهاية عنوان URL، وسوف يتم نقلك إلى موقع المشرف. سجل الدخول باستخدام اسم المستخدم وكلمة المرور، وسترى انه يمكنك إضافة منشورات جديدة على الملقم.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+وبمجرد الانتهاء من إنشاء عدد قليل من المنشورات، يمكنك العودة إلى الإعدادات المحلية الخاصه بك (ليس بيثون في كل مكان). من هنا يجب أن تعمل على الإعدادات المحليه لإجراء التغييرات. هذا هو سير العمل المشترك في تطوير الإنترنت ـ إجراء تغييرات محليا، ودفع تلك التغييرات إلى GitHub، وسحب التغييرات الخاصة بك وصولا إلى خادم الويب الحي. هذا يسمح لك بالعمل والتجربة دون تحطيم موقع الويب الخاص بك. رائع! اليس كذالك؟
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+إعطي نفسك تربيت *كبير* على الظهر! النشر علي الملقم هو واحد من أصعب أجزاءتطوير الشبكة، وغالبا ما يستغرق الناس عدة أيام قبل أن يجعلوه يعمل. لكنك قد وضعت موقعك على الهواء ، بهذا النحو!
