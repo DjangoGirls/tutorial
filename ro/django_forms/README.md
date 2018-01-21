@@ -1,14 +1,14 @@
-# Django Forms
+# Formulare în Django
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+La final vrem să adăugăm la proiectul nostru o metodă pentru a crea sau edita postări de blog. Consola de `admin` din Django este ajutătoare, dar este destul de greu să o perosnalizezi și să o faci frumoasă. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Un lucru util la formularele (forms) Django este că putem defini unul de la zero, sau putem crea un `ModelForm` care va salva ce se găsește în formular în model.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Asta ne și propunem să facem: vom crea un formular pentru modelul nostru `Post`.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+La fel ca și celălalte componente importante din Django, formularele au propriul lor fișier: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Trebuie să creăm un fișier cu acest nume în directorul `blog`.
 
     blog
        └── forms.py
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+Trebuie să importăm prima dată formularele Django (`from django import forms`) și, evident, modelul nostru `Post` (`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+După cum probabil suspectați, `PostForm` este numele formularului nostru. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Apoi, avem `class Meta`, unde îi spunem lui Django care model ar trebui să fie folosit pentru a creea acest formular (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+La final, putem să spunem care câmp(uri) ar trebui să ajungă în formular. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Și gata! Tot ce trebuie să facem acum e să folosim formularul într-un *view* și să-l afișăm într-un template.
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Link to a page with the form
+## Link către o pagină cu formularul
 
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+Este momentul să deschidem` blog/templates/blog/base.html`. Vom adăuga un link in `div` -ul ` page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
