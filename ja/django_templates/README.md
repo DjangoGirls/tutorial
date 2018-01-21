@@ -1,18 +1,18 @@
-# Django templates
+# Djangoテンプレート
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+何かデータを表示しましょう！Djangoはそれをビルトインの テンプレートタグ で実現できます。
 
-## What are template tags?
+## テンプレートタグとは？
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Display post list template
+## ブログ一覧テンプレート
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+前の章で、posts変数でテンプレートに記事のリストを渡しました。今からHTMLで表示をしてみましょう。
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Djangoテンプレートで変数を表示する為には、変数の名前を二重括弧で括ります:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,14 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+れをblog/templates/blog/post_list.htmlに書いてみて下さい。 ２つめと３つ目の
 
-![Figure 13.1](images/step1.png)
+<div>
+</div>タグをまるごと {{posts}} に置き換えて下さい。 ファイルを保存してページをリロードしますと：
 
-As you can see, all we've got is this:
+![図 13.1](images/step1.png)
+
+見たとおり、このようになります。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +35,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Djangoはオブジェクトのリストと認識します。 Introduction to Pythonを思い出して下さい。 ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +45,11 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+これをブログのテンプレートで使ってみましょう。
 
-![Figure 13.2](images/step2.png)
+![図 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+動きましたね。 But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. bodyタグの中を次のように書いてください: bodyはこのようにします。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,17 +67,17 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% for %}と{% endfor %}の間にリストの中のオブジェクトごとに表示したい内容を書くとオブジェクトの数だけ繰り返し書かれます。ページをリロードしてみましょう。
 
-![Figure 13.3](images/step3.png)
+![図 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Post モデルで定義したそれぞれのフィールドにアクセスしています。 Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## One more thing
+## もう一つ...
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-* First, push your code to Github
+* まず、GitHubでコードをpushします。
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +91,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* そしたら、Pythonanywhereに戻って、Bashコンソール（か、新しいコンソール）に入って、動かしましょう：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,10 +100,10 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 最後にブラウザのタブを開いてアプリをリロードします。更新が反映されています！ If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+おめでとうございます！よくできました! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![図 13.4](images/donut.png)
