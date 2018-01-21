@@ -1,12 +1,12 @@
-# Deploy!
+# מבצוע!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **הערה:** הפרק הבא יחסית קשה. תתמידי ותסיימי אותו; מבצוע (מלשון מבצע, להפוך משהו למבצעי - באנגלית deployment) הוא חלק חשוב בתהליך בניית אתרים. פרק זה מופיע באמצע המדריך בכוונה, כדי שהחונכת שלך תוכל לעזור לך עם החלקים הקצת יותר טריקיים בהעלאת האתר שלך לאוויר. כך שאם יגמר לך הזמן, עדיין תוכלי לסיים את כל העסק בכוחות עצמך.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Until now, your website was only available on your computer. Now you will learn how to deploy it! מבצוע הוא תהליך הפרסום של האפליקציה שלך באינטרנט, כך שגם אנשי םאחרים יוכלו לראות אותה ולהשתמש בה. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+כמו שכבר למדת, אתר אינטרנט חייב להימצא על שרת. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+השירות החיצוני האחר שנשתמש בו הוא [GitHub](https://www.github.com), שהוא שירות אחסון קוד. יש גם כל מני שירותים אחרים, אבל כמעט לכל המתכנתים בימינו יש חשבון GitHub, אז עכשיו גם לך יהיה!
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
@@ -16,11 +16,11 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## מתחילים את ה-Git Repository
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git עוקב אחרי שינויים בקבוצה מסוימת של קבצים שנקראת repository (או בקיצור, repo. עברית זה כנראה משהו כמו "מאגר"). בואי נייצר אחד בשביל הפרויקט שלנו. פתחי טרמינל והריצי את הפקודות הבאות בתיקייה של `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. את אמורה להיות בתיקייה `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -32,7 +32,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git יעקוב רק אחרי שינויים של קבצים בתיקייה הזו, אבל יש גם קבצים מסוימים שהיינו רוצים שהוא יתעלם מהם. אנחנו עושים זאת על ידי יצירת קובץ בשם `.gitignore` בתיקייה הראשית. פתחי את עורך הקוד שלך וצרי קובץ חדש עם השורות הבאות:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,11 +47,11 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **הערה:** הנקודה בתחילת שם הקובץ חשובה! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+זה רעיון טוב להריץ `git status` לפני שמריצים `git add`, או בכל פעם שמשהו משתנה ולא בטוחים מה קורה. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+ולבסוף נשמור את השינויים. עברי ל - console והריצי את הפקודות הבאות:
 
 {% filename %}command-line{% endfilename %}
 
@@ -119,7 +119,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. תבדקי את זה!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
@@ -251,7 +251,7 @@ There are also some [general debugging tips on the PythonAnywhere wiki](https://
 
 And remember, your coach is here to help!
 
-# You are live!
+# את באוויר!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
