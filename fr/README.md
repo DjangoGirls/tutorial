@@ -1,46 +1,46 @@
-# Django Girls Tutorial
+# Tutoriel de Django Girls
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution — Partage dans les Mêmes Conditions 4.0 International. Pour obtenir une copie de cette licence, visitez https://creativecommons.org/licenses/by-sa/4.0/deed.fr
 
-## Welcome
+## Bienvenue
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Bienvenue dans le tutoriel Django Girls ! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
 ## Introduction
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Ce tutoriel ne vous transformera pas magiquement en programmeuse. Devenir vraiment bonne peut prendre des mois, voire même des années d'apprentissage et de pratique. Mais nous voulons vous montrer que programmer ou créer des sites web n'est pas aussi compliqué que ça en a l'air. Nous allons essayer de vous expliquer différents morceaux afin de rendre la technologie moins intimidante.
 
-We hope that we'll be able to make you love technology as much as we do!
+Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimons !
 
-## What will you learn during the tutorial?
+## Qu'apprendrez-vous au cours de ce tutoriel ?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+Ça devrait ressembler plus ou moins à ça :
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur et allez poser vos questions !
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Suivre le tutoriel chez soi
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-In every chapter already covered, there is a link that points to the correct video.
+Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
 
-## About and contributing
+## À propos et contributions
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Ce tutoriel est maintenu par [DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
