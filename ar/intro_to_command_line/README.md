@@ -1,50 +1,50 @@
-# Introduction to the command-line interface
+# مقدمة لواجهة سطر الأوامر
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+أنه مثير، أليس كذلك؟! عليك كتابة السطر الأول الخاص بك من التعليمات البرمجية في بضع دقائق فقط! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**دعونا نقدم لكم صديقكم الأول: سطر الأوامر!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+الخطوات التالية سوف تظهر لك كيفية استخدام النافدة السوداء التي يستخدمها جميع الهكر. قد تبدو مخيفه قليلاً في البداية ولكن حقاً أنها مجرد موجه تنتظر الأوامر منك.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **ملاحظة** يرجى ملاحظة أن طوال هذا الكتاب يمكننا استخدام عبارات 'الدليل' و 'مجلد' بالتبادل ولكنها واحدة ونفس الشيء.
 
-## What is the command line?
+## ما هو سطر الأوامر؟
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+النافذة، والتي عادة ما تسمى **سطر الأوامر** أو **واجهة سطر الأوامر**، هو تطبيق يستند إلى النص للعرض، والمناولة، ومعالجة الملفات الموجودة على جهاز الكمبيوتر الخاص بك. أنه يشبه إلى حد كبير ويندوز إكسبلورر أو الباحث في Mac، ولكن دون واجهة رسومية. أسماء أخرى لسطر الأوامر هي: *cmd*, *CLI*, *prompt*, *console* أو *terminal*.
 
-## Open the command-line interface
+## إفتح واجهة سطر الأوامر
 
-To start some experiments we need to open our command-line interface first.
+لبدء بعض التجارب نحن بحاجة إلى فتح واجهة سطر الأوامر لدينا أولاً.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+إذهب الى نافدة البداية ← نضام وندوز ← موجه الأوامر.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> على الإصدارات القديمة من ويندوز، ابحث في قائمة ابدأ > كافة البرامج > ملحقات > موجه الأوامر.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+انتقل إلى التطبيقات → الأدوات المساعدة → تيرمينال.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+أنها على الأرجح تحت تطبيقات ← اكسسوارات ← تيرمينال، ولكن قد تعتمد على النظام الخاص بك. إذا لم يكن هناك، فقط بحث في جوجل
 
 <!--endsec-->
 
-## Prompt
+## موجه
 
-You now should see a white or black window that is waiting for your commands.
+يجب أن تشاهد الآن نافذة بيضاء أو سوداء تنتظر الأوامر الخاصه بك.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+إذا كنت على ماك أو لينكس، ربما تشاهد `` $، تماما مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+في Windows، انها علامة `>`، مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,17 +64,17 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+سيتم إرفاق كل أمر قبل هذه الإشارة ومسافة واحدة، ولكن ليس عليك كتابته. سيقوم جهاز الكمبيوتر بالقيام بذلك نيابة عنك. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> مجرد ملاحظة صغيرة: في الحالة الخاصة بك قد يكون هناك شيء من هذا القبيل `C:\Users\ola >` أو `Olas-MacBook-Air:~ ola$` قبل التوقيع الفوري، وهذا موافق 100 ٪.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+يطلق على الجزء`$` أو `>` أو *موجه سطر الأوامر*، أو *موجه* كإسم قصير. فإنه يطالبك بإدخال شيء هناك.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+في البرنامج التعليمي، عندما نريد منك أن تكتب أمر ما ، سوف نشمل `$` أو `>`، وأحيانا أكثر إلى اليسار. يمكنك تجاهل الجزء الأيسر وما عليك سوى كتابة الأمر الذي يبدأ بعد الموجه.
 
-## Your first command (YAY!)
+## الأمر الأول الخاص بك (ياي!)
 
-Let's start by typing this command:
+لنبدأ بكتابة هذا الأمر:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+ثم اضغط على `enter`. هذه هي النتيجة لدينا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +102,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+كما ترون، الكمبيوتر قد طبع اسم المستخدم الخاص بك. أنيق، هاه؟ :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> حاول كتابة كل أمر؛ لا نسخ ولصق. عليك أن تتذكر هذه الطريقة أكثر!
 
-## Basics
+## الأساسيات
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+كل نظام تشغيل يحتوي على مجموعة مختلفة قليلاً من أوامر سطر الأوامر، لذا تأكد من اتباع التعليمات لنظام التشغيل الخاص بك. دعونا نحاول هذا،هيا بنا؟
 
-### Current directory
+### الدليل الحالي
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+سيكون من الجميل أن نعرف أين نحن الآن، اليس كذالك؟ لنرى. اكتب هذا الأمر وإضغط `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> ملاحظة: 'pwd' تعني 'دليل عمل الطباعة'.
 
 <!--endsec-->
 
@@ -134,17 +134,17 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> ملاحظة: 'cd' تعني 'تغيير الدليل'. تماما مثل pwd مع powershell يمكنك استخدامه في لينكس أو نظام التشغيل Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+ربما سترى شيئا مشابها على الجهاز الخاص بك. عندما تقوم بفتح سطر الأوامر تبدأ عادة في الدليل الرئيسي للمستخدم الخاص بك.
 
 * * *
 
-### List files and directories
+### قائمة الملفات والدلائل
 
-So what's in it? It'd be cool to find out. Let's see:
+اذا ماذا فيها ؟ سيكون من الرائع معرفة ذالك ، دعونا نرى:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> ملاحظة: في powershell يمكنك أيضا استخدام 'ls' مثل لينكس، ونظام التشغيل Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### تغيير الدليل الحالي
 
-Now, let's go to our Desktop directory:
+الآن، دعنا نذهب إلى دليل سطح المكتب:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+تحقق إذا كان تم تغييره حقا:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,15 +221,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+ها هي ذا!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> نصيحة المحترفين: إذا كتبت <`cd D`، ثم ضغطت في `tab` على لوحة المفاتيح، فسيملأ سطر الأوامر تلقائيا بقية الاسم حتى تتمكن من التنقل بشكل أسرع. إذا كان هناك أكثر من مجلد واحد بدءاً من"D"، اضغط مفتاح `tab` مرتين للحصول على قائمة الخيارات.
 
 * * *
 
-### Create directory
+### إنشاء دليل
 
-How about creating a practice directory on your desktop? You can do it this way:
+ماذا عن إنشاء دليل للتدرب على سطح المكتب؟ يمكنك القيام بذلك بهذه الطريقة:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,17 +249,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+سيؤدي هذا الأمر الصغير إلى إنشاء مجلد باسم `practice` على سطح المكتب. يمكنك التحقق إذا كان هناك من خلال النظر في سطح المكتب الخاص بك أو بواسطة تشغيل أمر `dir` أو `ls`! جربها. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> نصيحة للمحترفين: إذا كنت لا تريد كتابة الأوامر نفسها مرارا وتكرارا، فجرب الضغط على `up arrow` و `down arrow` على لوحة المفاتيح للتنقل عبر الأوامر المستخدمة مؤخرا.
 
 * * *
 
-### Exercise!
+### تمارين!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+تحدي صغيرة بالنسبة لك: في الدليل الذي تم إنشاؤه حديثا `practice` ، قم بإنشاء دليل يسمى `test`(استخدم الأمرين `cd` و `mkdir`.)
 
-#### Solution:
+#### الحل:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+مبروك
 
 * * *
 
-### Clean up
+### التنظيف
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+لا نريد أن تترك فوضى، لذلك دعونا نزيل كل ما قمنا به حتى هذه النقطة.
 
-First, we need to get back to Desktop:
+أولاً، نحن بحاجة للعودة إلى سطح المكتب:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +313,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+باستخدام `.` مع الأمر `cd` سيتم تغيير الدليل الحالي الخاص بك إلى الدليل الأصل (أي، الدليل الذي يحتوي على الدليل الحالي الخاص بك).
 
-Check where you are:
+تحقق أين أنت:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,9 +337,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+حان الوقت الآن لحذف دليل `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **انتباه**: حذف الملفات باستخدام `del`, `rmdir` أو `rm` غير قابلة للاسترداد، مما يعني * الملفات ستزول إلى الأبد*! لذا كن حدرا جدا مع هذه الأوامر.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -360,7 +360,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+تم! للتأكد دعونا نتحقق من انك حدفته فعليا:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,9 +380,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### خروج
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+هذا كل شيء الأن! يمكنك إغلاق سطر الأوامر الآن بأمان. دعونا نفعل ذلكبطريقة الهكر، حسنا؟ :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,28 +402,28 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+جيد ، هاه
 
-## Summary
+## الملخص
 
-Here is a summary of some useful commands:
+هنا ملخص لبعض الأوامر المفيدة:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| الأوامر (في Windows) | الأوامر في (ماك/لينكس) | الوصف               | أمثلة                                             |
+| -------------------- | ---------------------- | ------------------- | ------------------------------------------------- |
+| exit                 | exit                   | أغلق النافذة        | **exit**                                          |
+| cd                   | cd                     | تغيير الدليل        | **cd test**                                       |
+| cd                   | pwd                    | إظهار الدليل الحالي | **cd** (Windows) o **pwd** (Mac OS / Linux)       |
+| dir                  | ls                     | قائمة الدلائل/ملفات | **dir**                                           |
+| copy                 | cp                     | نسخ ملف             | **copy c:\test\test.txt c:\windows\test.txt** |
+| move                 | mv                     | نقل الملف           | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir                | mkdir                  | إنشاء دليل جديد     | **mkdir testdirectory**                           |
+| rmdir (or del)       | rm                     | حذف الملف           | **del c:\test\test.txt**                        |
+| rmdir /S             | rm -r                  | حذف الدليل          | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+هذه فقط عدد قليل جداً من الأوامر يمكنك تشغيلها في سطر الأوامر الخاصة بك، ولكن انت لن تستخدم اي شيء اكثر من ذالك هذا اليوم.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+إذا كنت فضولي، [ss64.com](http://ss64.com) يحتوي على مرجع كامل لأوامر لكافة أنظمة التشغيل.
 
-## Ready?
+## مستعد ؟
 
-Let's dive into Python!
+دعونا نغوص في بايثون!
