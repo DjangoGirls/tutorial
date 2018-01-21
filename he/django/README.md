@@ -1,6 +1,6 @@
-# What is Django?
+# מהו ג'נגו?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. שלד תוכנה הוא קבוצה של רכיבים המסייעים לעזור לך בתכנות אתרי איטרנט באופן קל ומהיר יותר.
 
 When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
@@ -8,7 +8,7 @@ Luckily for you, other people long ago noticed that web developers face similar 
 
 Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-## Why do you need a framework?
+## למה צריך שלד?
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
