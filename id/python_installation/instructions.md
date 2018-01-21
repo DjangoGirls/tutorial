@@ -1,64 +1,64 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Bagi para pembaca di rumah: bab ini terangkum dalam video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Bagian ini dibuat berdasarkan tutorial yang dibuat oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django ditulis dengan Python. Kami membutuhkan Python untuk melakukan apapun di Django. Mari kita mulai dengan menginstalnya! Kami ingin Anda menginstal Python 3.6, jadi jika Anda memiliki versi sebelumnya, Anda perlu mengunggahnya.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Pertama periksa apakah komputer Anda menjalankan versi 32-bit atau versi Windows 64-bit, dengan menekan tombol Windows + tombol Pause/Break yang akan membuka info Sistem Anda, dan melihat baris "Tipe sistem". Anda bisa mendownload Python untuk Windows dari situs https://www.python.org/downloads/windows/. Klik tautan "Latest Python 3 Release - Python x.x.x". Jika komputer Anda menjalan Windows versi **64-bit**, silahkan unduh **Windows x86-64 executable installer**. Jika tidak, unduh **Windows x86 executable installer**. Setelah mendownload installer, Anda harus menjalankannya (klik dua kali) dan ikuti instruksi di sana.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Jangan lupa menambahkan Python dapa Path](../python_installation/images/python-installation-options.png)
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+Pada langkah selanjutnya, Anda akan menggunakan Windows Command Line (yang juga akan kami ceritakan). Sekarang, jika Anda ingin mengetik beberapa perintah, arahkan ke menu Start → Windows System → Command Prompt. Anda juga dapat menahan tombol Windows dan menekan tombol "R" -key sampai jendela "Run" muncul. Untuk membuka Command Line, ketik "cmd" dan tekan enter di jendela "Run". (Pada versi Windows yang lebih baru, Anda mungkin harus mencari "Command Prompt" karena terkadang tersembunyi.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Jenis "; cmd"; di "; Jalankan " jendela](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Catatan: Jika Anda menggunakan versi Windows yang lebih tua (7, Vista, atau versi yang lebih lama) dan installer Python 3.6.x gagal dengan kesalahan, Anda dapat mencoba:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
+1. instal semua Windows Updates dan coba install Python 3.6 lagi; atau
 2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Jika Anda menginstal versi lama Python, layar penginstalan mungkin terlihat sedikit berbeda dari yang ditunjukkan di atas. Pastikan Anda menggulir ke bawah untuk melihat "Add python.exe to Path", lalu klik tombol di sebelah kiri dan pilih "Akan diinstal pada hard drive lokal":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Tambahkan Python ke Path, versi lama](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Catatan** Sebelum menginstal Python di OS X, Anda harus memastikan pengaturan Mac Anda memungkinkan menginstal paket yang bukan dari App Store. Buka System Preferences (ada di folder Applications), klik "Security & Privacy," dan kemudian tab "General". Jika "Izinkan aplikasi Anda diunduh dari:" disetel ke "Mac App Store", ubahlah menjadi "Mac App Store dan pengembang yang teridentifikasi."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Kamu bisa berkunjung ke situs https://www.python.org/downloads/release/python-361/ dan unduh file install-an Python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Unduh file installer Mac OS X 64-bit/32-bit
+* Klik dua kali *python-3.6.1-macosx10.6.pkg* untuk menjalankan installer.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Sepertinya kamu telah menginstall Python sebelumnya. Untuk mengecek jika itu sudah terinstall serta mengetahui versi yang dipakai, Buka konsol dan ketik perintah dibawah ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
-    $ python3 --version
+    $ python3 --versi
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+Jika Anda memiliki 'versi mikro' yang berbeda dari Python yang terpasang, mis. 3.6.0, maka Anda tidak perlu upgrade. Jika kamu tidak memiliki Python yang terinstall sebelumnya atau jika kamu menginginkan versi Python yang berbeda, Kamu bisa menginstall seperti dibawah ini:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Ketik perintah ini di konsol:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
     $ sudo apt-get install python3.6
     
@@ -68,7 +68,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gunakan perintah ini di konsol:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +82,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gunakan perintah ini di konsol:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,16 +91,16 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifikasi instalasi berhasil dengan membuka command prompt dan menjalankan perintah `python3`:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 --version
+    $ python3 --versi
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**CATATAN:** Jika Anda menggunakan Windows dan Anda mendapatkan pesan kesalahan bahwa `python3` tidak ditemukan, coba gunakan `python` (tanpa `3`) dan periksa apakah masih mungkin versi Python 3.6.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Jika Anda ragu, atau jika ada yang tidak beres dan Anda tidak tahu apa yang harus dilakukan selanjutnya, tolong tanya pelatih Anda! Kadang sesuatu tidak berjalan dengan lancar dan ini lebih baik untuk meminta bantuan pada seseorang yang berpengalaman.
