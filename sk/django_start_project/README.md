@@ -1,48 +1,48 @@
-# Your first Django project!
+# Tvoj prvý Django projekt!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Časť tejto kapitoly je založená na tutoriáli Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Časti tejto kapiolty sú založená na [django-marcador tutorial](http://django-marcador.keimlink.de/) pod licenciou Creative Commons Attribution-ShareAlike 4.0 International License. Tutoriál django-marcador je autorsky chránený Markusom Zapke-Gründemannom et al.
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+Prvý krok je vytvoriť nový Django projekt. To v podstate znamená, že spustíme pár skriptov, poskytovaných Djangom, ktoré pre nás vytvoria kostru Django projektu. Je to len pár zložiek a súborov, ktoré použijeme neskôr.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Mená niektorých súborov a zložiek sú pre Django veľmi dôležité. Súbory, ktoré teraz vytvoríme, by si nemala premenovať. Ich presúvanie na iné miesto taktiež nie je dobrý nápad. Django potrebuje udržovať určitú štruktúru, aby bol schopný nájsť dôležité veci.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Nezabudni všetko spúšťať vo virtualenv. Pokiaľ vo svojej konzole nevidíš prefix `(myvenv)` musíš aktivovať virtualenv. Ako na to bolo vysvetlené v kapitole **Inštalácia Django** v časti **Práca s virtualenv**. Pokiaľ napíšeš `myvenv\Scripts\activate` na Windowsoch, alebo `source myvenv/bin/activate` na Mac OS X alebo Linux, malo by všetko fungovať.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Vo svojej Mac OS X alebo Linux konzole spusti tento príkaz; **nezabudni pridať bodku `.` na konci**
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Bodka `.` je dôležitá, pretože hovorí skriptom, aby nainštalovali Django v tvojej aktuálnej zložke (pre ktorú je bodka `.` skratkou).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Poznámka** Pri písaní predchádzajúceho príkazu nezabudni, že píšeš len časť, ktorá začína django-admin alebo `django-admin. py`. `(myvenv) ~/djangogirls$` zobrazené tu je len príkladom cesty, kam budeš zadávať svoje príkazy.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Vo Windowse spusti tento príkaz; **nezabudni pridať bodku `.` na konci**:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Bodka `.` je dôležitá, pretože hovorí skriptom, aby nainštalovali Django v tvojej aktuálnej zložke (pre ktorú je bodka `.` skratkou).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` je skript, ktorý pre teba vytvorí zložky a súbory. Momentálne by si mala mať štruktúru adresárov, ktorá vyzerá takto:
 
     djangogirls
     ├───manage.py
@@ -53,25 +53,25 @@ On Windows you should run the following command. **(Don't forget to add the peri
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Poznámka**: adresárovej štruktúre, uvidíš `venv` adresár, ktorý sme vytvorili.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` je skript, ktorý pomáha so správou stránky. Okrem iného budeme vďaka nemu môcť spustiť na našom počítači webový server, bez toho, aby sme inštalovali čokoľvek iné.
 
-The `settings.py` file contains the configuration of your website.
+Súbor `settings.py` obsahuje konfiguráciu tvojej webovej stránky.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Pamätáš, keď sme rozprávali o doručovateľovi listov, ktorý zisťuje kam doručiť list? `urls.py` obsahuje zoznam vzorov, ktoré používa `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Zatiaľ ignorujme ostatné súbory, keďže ich teraz aj tak nebudeme meniť. Jediná vec na ktorú netreba zabudnúť je, že ich nesmieš omylom zmazať!
 
-## Changing settings
+## Zmena nastavení
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Spravme pár zmien v `mysite/settings.py`. Otvor súbor v editore kódu, ktorý si si nainštalovala predtým.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Poznámka**: Pamätaj, že `settings.py` je obyčajný súbor, ako každý iný. Môžeš ho otvoriť z kodového editoru, pomocou "Súbor -> Otvoriť" možnosti v menu. Malo by sa ti zobraziť štandardné okno v ktorom vyhľadáš svoj `settings.py` súbor a označíš ho. Prípadne môžeš ísť do priečinka djangogirls na pracovnej ploche a kliknúť na súbor pravým tlačidlom myši. Potom vyber editor kódu zo zoznamu. Výber editora je dôležitý, pretože môžeš mať nainštalované iné programy, ktoré dokážu tento súbor otvoriť, ale nedovolia ti ho upravovať.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Bolo by dobré mať na našej stránke správny čas. Choď na [zoznam časových pásiem na wikipedii](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) a skopíruj svoje časové pásmo (napr. `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+V súbore `settings.py`, nájdi riadok, ktorý obsahuje `TIME_ZONE` a uprav ho tak, aby obsahoval tvoje časové pásmo. Napríklad:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -79,9 +79,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Jazykoví kód sa skladá z jazyka, napr. `en` pre angličtinu alebo `de` pre nemčinu a kódu krajiny, napr. `de` pre Nemecko, alebo `ch` pre Švajčiarsko. Toto si pridaj, ak chceš aby predvolené tlačidlá a oznamenia v Djangu boli v tvojom jazyku. Potom bude tlačidlo "Cancel" preložené do jazyka, ktorý tu definuješ. [Django je dodávaný s množstvom pripravených prekladov](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Change the language code by changing the following line:
+Zmeň kódu jazyka zmenou nasledujúceho riadku:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Change the language code by changing the following line:
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Budeme tiež musieť pridať cestu pre statické súbory. (Dozvieme sa všetko o statických súboroch a CSS neskôr v tutoriále.) Prejdi na *koniec* súboru a pod `STATIC_URL` riadkom, pridaj ďalší s názvom `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Keď `DEBUG` je `True` a `ALLOWED_HOSTS` je prázdne, host je overovaný vôči `['localhost', '127.0.0.1', '[::1]']`. Toto sa nebude zhodovať s naším hostname na PythonAnywhere, keď nasadíme našu aplikáciu, kvôli tomu zmeníme nasledovné nastavenie:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,15 +106,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Poznámka**: Ak používaš Chromebook, pridaj nasledovný riadok na koniec settings.py súboru: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
-## Set up a database
+## Nastavenie databázy
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Existuje veľa rôznych databázových softvérov, ktoré umožňujú ukladať údaje pre tvoje web stránky. My budeme používať predvolenú databázu - `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Tá je už nastavená v tejto časti súboru `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Databázu pre náš blog vytvoríme spustením tohto príkazu v konzole: `python manage.py migrate` (musíme byť v adresári `djangogirls`, ktorý obsahuje súbor `manage.py`). Ak všetko prešlo dobre, mala by si vidieť niečo takéto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,53 +150,53 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+A je to! Teraz treba spustiť webový server a uvidíme či je naša web stránka funkčná!
 
-## Starting the web server
+## Spustenie webového servera
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Musíš sa nachádzať v adresári, v ktorom sa nachádza súbor `manage.py` (adresár `djangogirls`). V konzole spustíme webový server zadaním `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Ak používaš Chromebook, použi nasledovný príkaz:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Ak si vo Windowse a padne ti to s chybovou hláškou `UnicodeDecodeError`, použi namiesto toho tento príkaz:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Teraz už musíš len skontrolovať, či tvoja web stránka funguje. Otvor si prehliadač (Firefox, Chrome, Safari, Internet Explorer alebo čokoľvek používaš) a zadaj adresu:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Ak používaš Chromebook, budeš vždy pristupovať na test server zadaním nasledovnej adresy:
 
 {% filename %}browser{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Blahoželáme! Práve si vytvorila svoju prvú web stránku, ktorá beží na tvojom webovom serveri. Nie je to úžasné?
 
-![It worked!](images/it_worked2.png)
+![Fungovalo to!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Kým je spustený webový server, nebude možné zadať nové príkazy v príkazovom riadku. Terminál bude akceptovať nový text, ale nebude spúšťať nové príkazy. Je to kvôli tomu, že webový server nerpretržite beží a čaká na prichádzajúce požiadavky (requests).
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Ako webový server funguje sme si povedali v kapitole **Ako funguje Internet**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Ak chceš zadať ďalšie príkazy, kým webový server beží, otvor nové terminálové okno a aktivuj svoj virtualenv. Ak chceš zastaviť webový server, prepni sa späť do okna, v ktorom beží a stlač Ctrl + C súčasne (na Windowse možno budeš musiť stlačiť Ctrl + Break).
 
-Ready for the next step? It's time to create some content!
+Pripravená na ďalší krok? Je na čase vytvoriť nejaký obsah!
