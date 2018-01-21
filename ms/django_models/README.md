@@ -1,12 +1,12 @@
-# Django models
+# Django model
 
 What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
 ## Objects
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+There is a concept in programming called `object-oriented programming`. Idea ini adalah bahawa bukannya menulis segala-galanya sebagai urutan arahan pengaturcaraan yang membosankan, kita boleh memodelkan sesuatu dan menentukan bagaimana mereka berinteraksi antara satu sama lain.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Jadi apa benda? Ia adalah koleksi sifat dan tindakan. Kedengarannya aneh, tetapi kami akan memberikan contoh kepada anda.
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
@@ -30,11 +30,11 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
 
 So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
-How will we model blog posts then? We want to build a blog, right?
+Bagaimana kita akan model blog itu? Kami ingin membangun sebuah blog, kan?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Kita perlu menjawab soalan: Apakah blog pos? Apa sifat harus ia telah?
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Yah, pasti blog post kita memerlukan beberapa teks dengan kandungan dan judul, kan? Ia juga akan menjadi bagus untuk tahu siapa yang menulisnya – jadi kita perlu seorang penulis. Akhirnya, kita ingin tahu apabila pos diciptakan dan diterbitkan.
 
     Post
     --------
@@ -49,19 +49,19 @@ What kind of things could be done with a blog post? It would be nice to have som
 
 So we will need a `publish` method.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Kerana kita sudah tahu apa yang kita ingin mencapai, mari kita mulakan model dalam Django!
 
 ## Django model
 
-Knowing what an object is, we can create a Django model for our blog post.
+Mengetahui apa objek itu, kita boleh buat Django model untuk blog post kita.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+A model in Django is a special kind of object – it is saved in the `database`. Pangkalan data adalah koleksi data. Ini adalah tempat di mana anda akan menyimpan maklumat tentang pengguna, blog anda, dan lain-lain. Kita akan menggunakan Lihat pangkalan data untuk menyimpan data kami. Ini adalah default Django pangkalan data adaptor – ia akan menjadi cukup untuk kita sekarang.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Anda bisa memikirkan model dalam pangkalan data sebagai hamparan dengan ruangan (bidang) dan baris (data).
 
-### Creating an application
+### Membuat permohonan
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Untuk memastikan semuanya kemas, kita akan membuat permohonan yang berasingan di dalam projek kami. Hal ini sangat baik untuk memiliki semua dianjurkan dari awal. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -110,7 +110,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Membuat pos blog model
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. Konvensyen ini sering digunakan dalam Python dan kadang-kadang kita juga memanggil mereka "dunder" (pendek untuk "double-menekankan").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
@@ -169,7 +169,7 @@ Also notice that both `def publish(self):` and `def __str__(self):` are indented
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Create tables for models in your database
+### Membuat meja untuk model dalam pangkalan data anda
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
