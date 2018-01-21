@@ -1,26 +1,26 @@
-# Deploy!
+# Nasadenie!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Vydrž a dokonči ju, nasadenie je dôležitou časťou vývoja webových stránok. Táto kapitola je umiestnená uprostred tutoriálu, aby ti mentor/ka mohol/a pomôcť s trochu náročnejšími časťami procesu spúšťania tvojej webovej stránky online. To znamená, že môžeš dokončiť tutoriál aj sama, ak ti nevyjde čas.
+> **Poznámka** Občas bude možno trochu ťažké prehrýzť sa touto kapitolou. Vydrž a dokonči ju, nasadenie je dôležitou časťou vývoja webových stránok. Táto kapitola je umiestnená uprostred tutoriálu, aby ti mentor/ka mohol/a pomôcť s trochu náročnejšími časťami procesu spúšťania tvojej webovej stránky online. To znamená, že môžeš dokončiť tutoriál aj sama, ak ti nevyjde čas.
 
-Až do teraz, tvoja webová stránka bola dostupná len v počítači. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Až do teraz, tvoja webová stránka bola dostupná len v počítači. Teraz sa naučíš, ako ju nasadiť! Nasadenie je proces publikovania aplikácie na internete, takže ju ľudia konečne budú môcť vidieť. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Ako už vieš, webová stránka musí byť umiestnená na serveri. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-Ďalšou externou službou, ktorú budeme využívať je [GitHub](https://www.github.com), kde sa uchovávajú zdrojové kódy. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Ďalšou externou službou, ktorú budeme využívať je [GitHub](https://www.github.com), kde sa uchovávajú zdrojové kódy. Existujú aj ďalšie podobné služby, no dnes už majú takmer všetci programátori na GitHube konto a teraz ho už budeš mať aj ty!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Tieto tri miesta budú pre teba dôležité. Lokálny počítač bude miestom, kde budeš vyvíjať a testovať. Keď si spokojná so zmenami, uložíš kópiu programu na GitHub. Tvoja webová stránka bude na PythonAnywhere a budeš ju aktualizovať stiahnutím novej kópie svojho kódu z GitHub-u.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Poznámka** Ak už máš za sebou inštaláciu, nemusíš to robiť znovu a môžeš preskočiť na ďalšiu časť a začať s vytváraním Git repozitára.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Založenie Git repozitára
 
 Git sleduje zmeny na konkrétnej množine súborov, v niečom, čo sa nazýva úložisko kódu alebo repozitár (skrátene "repo"). Založme si repo pre náš projekt. Otvor konzolu a spusti nasledujúce príkazy v adresári `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Mala by si byť v priečinku `djangogirls`.
+> **Poznámka** Skontroluj si aktuálny pracovný adresár s príkazom`pwd` (Mac OS X/Linux) alebo `cd` (Windows) pred inicializáciou repozitára. Mala by si byť v priečinku `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Git sleduje zmeny na konkrétnej množine súborov, v niečom, čo sa nazýva ú
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Inicializácia git repozitára je niečo, čo musíme urobiť len raz za projekt (a už nikdy nebudeš musieť znovu zadať užívateľské meno a e-mail).
 
 Git bude sledovať zmeny všetkých súborov a priečinkov v tomto adresári, ale sú aj niektoré súbory, ktoré chceme ignorovať. To urobíme tak, že vytvoríme súbor s názvom `.gitignore` v základnom adresári. Otvor si editor a vytvor nový súbor s týmto obsahom:
 
@@ -45,13 +45,13 @@ Git bude sledovať zmeny všetkých súborov a priečinkov v tomto adresári, al
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+A ulož ho ako `.gitignore` v priečinku "djangogirls".
 
-> **Poznámka** Bodka na začiatku názvu súboru je dôležitá! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Poznámka** Bodka na začiatku názvu súboru je dôležitá! Ak máš problém vytvoriť takýto súbor (napríklad Macom sa nepáči, ak chceš cez Vyhľadávanie (Finder) vytvoriť súbory, ktoré sa začínajú bodkou), potom použi funkciu "Uložiť ako" vo svojom editore, to je spôsob akým sa to určite uloží.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Poznámka** Jeden zo súborov, ktoré ste zadali v súbore `.gitignore` je `db.sqlite3`. Tento súbor je vaša lokálna databáza, kde sú všetky vaše príspevky skladované. Nechceme to pridať do repozitára, lebo tvoja webová stránka na PythonAnywhere bude používať inú databázu. Možno to bude SQLite, tak ako na stroji na ktorom vyvíjaš, ale zvyčajne použiješ databázu, ktorá sa volá MySQL, ktorá zvládne oveľa viac navštevníkov ako SQLite. Či tak alebo onak, ignorovaním SQLite databázy v kópii na GitHub-e, všetky príspevky, ktoré si vytvorila doteraz, zostanú dostupné len lokálne, a budeš ich musieť znovu pridať na produkčnej stránke. Svoju lokálnu databázu si môžeš predstaviť ako pieskovisko na ktorom si môžeš vyskúšať rôzne veci a nebáť sa že zmažeš reálne príspevky zo svojho blogu.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Vždy je dobré použiť príkaz `git status` pred `git add` alebo kedykoľvek, keď si nebudeš istá, či sa niečo zmenilo. To ti pomôže vyhnúť sa prekvapeniam ako napríklad pridanie nesprávnych súborov. Príkaz `git status` dáva informácie o nesledovaných (untracked) či zmenených (modified) súboroch, alebo súboroch pripravených na zmenu (staged), o stave vetvy a veľa ďalších vecí. Výstup by mal byť podobný nasledovnému:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,28 +87,26 @@ A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce p
     
     ## Pushing your code to GitHub
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (Ak si to už urobila počas prípravy na workshop, tak to je super!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Potom, vytvor nový repozitár a pomenuj ho "moj-prvy-blog". Checkbox "inicializuj s README" nechaj nezaškrtnutý, voľbu .gitignore nechaj prázdnu (urobili sme to manuálne) a Licenciu nechaj ako None.
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Poznámka** Názov `moj-prvy-blog` je dôležitý -- môžeš si vybrať aj niečo iné, ale v ďalších inštrukciách sa to bude vyskytovať veľakrát a musela by si to zakaždým nahradiť. Asi bude ľahšie, ak ostaneš pri názve `moj-prvy-blog`.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
-    
+    Na ďalšej obrazovke, sa ti zobrazí URL tvojho klonu repozitára. Zvoľ "HTTPS" verziu, skopíruj ju a o chvíľu ju vložíme do terminálu:
     <img src="images/github_get_repo_url_screenshot.png" />
+    Teraz musíme prepjiť Git repozitár na tvojom počítači s tým na Githube.
     
-    Now we need to hook up the Git repository on your computer to the one up on GitHub.
-    
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    Napíš do konzoly nasledujúci príkaz: (nahraď `<your-github-username>` svojím uživateľským menom na Githube, ale bez lemných zátvoriek):
     
     {% filename %}command-line{% endfilename %}
     
 
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-    <br />Enter your GitHub username and password and you should see something like this:
+    <br />Zadaj svoje Github uživateľské meno a heslo a uvidíš niečo podobné tomuto:
     
     {% filename %}command-line{% endfilename %}
     
@@ -119,41 +117,40 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Tvoj kód je na Githube. Kľudne si to over!  Zistíš, že sa nachádza vo vyberanej spoločnosti - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), a mnoho iných skvelých open source-ových softvérových projektov ukladá svoj kód na GitHube. :)
     
     
-    # Setting up our blog on PythonAnywhere
+    # Umiestnenie nášho blogu na PythonAnywhere
     
-    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    &gt; **Poznámka** Možno si si už vytvorila účet na PythonAnzwhere počas inštalácie - ak áno, tak nemusíš to robiť znova.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## Pulling our code down on PythonAnywhere
+    ## Stiahnutie nášho kódu na PythonAnywhere
     
-    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    Keď si sa zaregistrovala do PythonAnywhere, budeš presmerovaná na dashboard alebo "Consoles" stránku. Vyber si možnosť spustiť "Bash" konzolu - to je PythonAnywhere konzola, podobná ako na tvojom počítači.
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
     
-    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+    &gt; **Poznámka** PythonAnywhere ja založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
     
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
-    
+    Poďme teraz natiahnuť náš kód z GitHubu na PythonAnywhere vytvorením "klonu" nášho repozitára. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto &lt;your-github-username&gt;):
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
-    <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+    <br />Toto stiahne kópiu tvojho kódu na PythonAnywhere. Over si to zadaním príkazu `tree my-first-blog`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
 
-    <br /><br />### Creating a virtualenv on PythonAnywhere
+    <br /><br />### Vytvorenie virtualenv na PythonAnywhere
     
-    Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
+    Presna tak ako na tvojom počítači, môžeš vytvoriť virtualenv na PythonAnywhere. V Bash konzole, zadaj príkaz:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -166,50 +163,49 @@ $ source myvenv/bin/activate
 
 (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    <br /><br />&gt; ** Poznámka ** "pip install" krok môže trvať niekoľko minút.  Trpezlivosť, trpezlivosť!  Ale ak trvá viac ako päť minút, niečo nie je v poriadku.  Opýtaj sa svojho mentora.
     
     &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
     
-    ### Creating the database on PythonAnywhere
+    ### Vytváranie databázy na PythonAnywhere
     
-    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+    Ďalšia vec, ktorá je iná na tvojom počítači a na serveri: používa sa iná databáza. Takže používateľské kontá a príspevky na serveri a v počítači sa môžu líšiť.
     
-    Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
-    
+    Rovnako ako sme to urobili na tvojom počítači, zopakuj krok pri inicializácii databázy na serveri, s `migrate` a `createsuperuser`:
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
 
-    <br />## Publishing our blog as a web app
+    <br />## Zverejnenie nášho blogu ako webovej aplikácie
     
-    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    Náš kód je teraz na PythonAnywhere, virtualenv je pripravené a databáza je inicializovaná. Sme pripravení publikovať webovú aplikáciu!
     
-    Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+    Kliknutím na logo PythonAnywhere sa vráť na nástenku a tam klikni na kartu Web. Nakoniec, stlač **Add a new web app** (Pridaj novú aplikáciu).
     
-    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+    Po potvrdení názvu tvojej domény, vyber v dialógu **manual configuration** (pozor, nie "Django" možnosť). Ďalej vyber **Python 3.6** a kliknutím na tlačidlo Ďalej dokonči sprievodcu.
     
-    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    &gt; **Poznámka** Uisti sa že si zvolila "Manual configuration", a nie "Django" možnosť. Sme príliš cool aby sme použili predvolené Django nastavenia PythonAnywhere. ;-)
     
     
-    ### Setting the virtualenv
+    ### Nastavenie virtualenv
     
-    You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+    Budeš presmerovaná na PythonAnywhere konfiguračnú obrazovku pre tvoju aplikáciu. Sem budeš musieť chodiť vždy, keď budeš chcieť urobiť nejaké zmeny v tvojej aplikácii na serveri.
     
     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
     
-    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+    V časti "Virtualenv", klikni na červený text "Enter the path to a virtualenv", a zadah `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Klikni na modré políčko s fajočkou a ulož tak cestu predtým, ako budeš pokračovať ďalej.
     
-    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    &gt; **Poznámka** Nahraď svoje PythonAnywhere uživateľské meno podľa potreby. Ak urobíš chybu, PythonAnywhere zobrazí malé upozornenie.
     
     
-    ### Configuring the WSGI file
+    ### Konfigurácia WSGI súboru 
     
-    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+     Django funguje pomocou "protokolu WSGI", ktorý je štandardom pre obsluhu webových stránok pomocou Pythonu, a ktorý PythonAnywhere podporuje. Aby PythonAnywhere rozpoznal náš Django blog, musíme upraviť WSGI konfiguračný súbor.
     
-    Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
+    Klikni na link "WSGI configuration file" (v časti "Code" v hornej časti stránky -- bude sa volať nejako takto `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`) a dostaneš sa do editora.
     
-    Delete all the contents and replace them with the following:
+    Zmaž celý obsah a nahraď ho nasledovným:
     
     {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
     ```python
@@ -227,34 +223,34 @@ $ source myvenv/bin/activate
     application = StaticFilesHandler(get_wsgi_application())
     
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+Úlohou tohto súboru je oznámiť PythonAnywhere kde sa naša aplikácia nachádza a aký je názov súboru s Django nastaveniami.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+`StaticFilesHandler` sa stará o naše CSS. O toto sa stará automaticky príkaz `runserver`, počas vývoja na lokálnom počítači. O statických súboroch sa naučíme trochu viac neskôr, keď budeme upravovať CSS pre našu stránku.
 
-Hit **Save** and then go back to the **Web** tab.
+Klikni na **Save** a vráť sa na kartu **Web**.
 
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+Hotovo! Klikni na veľké zelené tlačidlo **Reload** a potom sa už môžeš pozrieť na svoju aplikáciu. Odkaz na ňu nájdeš navrchu stránky.
 
-## Debugging tips
+## Tipy pre ladenie
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [karte Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku. Najčastejšie problémy bývajú:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+- Vynechaný krok, ktorý sme robili v konzole: vytvorenie virtualenv, jeho aktivácia, inštalácia Djanga do virtualenvu, spustenie collectstatic, presun databázy.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Chyba v ceste virtualenv v karte Web -- ak je nejaký problém, zvyčajne tam bude malá červená chybová hláška.
 
-- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
+- Chyba vo WSGI konfiguračnom súbore -- zadala si cestu do adresára my-first-blog správne?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+- Vybrala si si rovnakú verziu Pythonu pre virtualenv ako pre webovú aplikáciu? Obidve by mali byť 3.6.
 
-There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+A nezabudni, tvoj tréner je tu na to, aby ti pomohol!
 
-# You are live!
+# Si online!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+Hlavná stránka tvojej aplikácie by ťa mala vítať nápisom "It worked!", tak ako na tvojom počítači. Skús pridať `/admin/` na koniec adresy URL, a budeš presmerovaná na stránky administrácie. Prihlás sa s užívateľským menom a heslom a uvidíš, že môžeš pridávať nové príspevky (posty) na server.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Keď vytvoríš niekolľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Na zmenách by si mala pracovať v lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. To ti umožní pracovať a experimentovať bez pokazenia živej webovej stránky. Docela cool, nie?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+*OHROMNE* sa potľapkaj po chrbte! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš teraz svoju stránku online, na skutočnom internete!
