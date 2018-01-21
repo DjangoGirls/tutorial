@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+הבלוג שלנו עדיין נראה די מכוער, לא? הגיע הזמן לגרום לו להראות טוב! בשביל זה, נשתמש ב-CSS.
 
-## What is CSS?
+## מה זה CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## בואי נשתמש ב-Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## התקנת Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![תמונה 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+זה כבר נראה טוב יותר!
 
-## Static files in Django
+## קבצים סטטיים ב Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+סוף-סוף אנחנו יכולים להתעמק במה שנקרא **קבצים סטטיים** (או בעברית, קבועים). Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### איפה לשים קבצים סטטיים בג'נגו
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+נעשה זאת על ידי יצירה של קובץ בשם `static` בתיקייה של האפליקציה שלנו:
 
     djangogirls
     ├── blog
@@ -51,9 +51,9 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## קובץ ה-CSS הראשון שלך!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. תייצרי תיקייה חדשה בשם `css` בתוך תיקייה ה-`static` שלך. עכשיו, תייצרי קובץ חדש בשם `blog.css` בתוך תיקיית ה-`css`. Ready?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+הגיע הזמן לכתוב קצת CSS! תפתחי את הקובץ `blog/static/css/blog.css` בעורך הקוד שלך.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+אבל בואי נלמד לפחות קצת. אולי נשנה את צבע הכותרות? כדי להבין צבעים, מחשבים משתמשים בקידודים מיוחדים. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. את גם יכולה להשתמש ב[צבעים מוגדרים מראש](http://www.w3schools.com/colors/colors_names.asp) עם שמות ידועים, כמו `red` ו-`green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+בקובץ `blog/static/css/blog.css` שלך, הוסיפי את השורות הבאות:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1` הוא מה שנקרא CSS Selector (או בעברית, בורר CSS). This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. במקרה כזה, אנחנו קובעים שצבע הטקסט יהיה `#FCA205`, שזה כתום. כמובן שאת יכולה לבחור כאן איזה צבע שמוצא-חן בעיניך!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+בקובץ ה-CSS אנחנו בוחרים עיצוב לתגיות המופיעות בקובץ ה-HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. המאפיינים class ו-id מוסיפים לתגיות שלך שמות שאת בוחרת בעצמך. מאפייני class מגדירים קבוצות (מחלקות) של תגיות, ומאפייני id מייחדים תגיות מסוימות. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. הרגע גילינו לתבנית שלנו איפה נמצא קובץ ה-CSS שלנו.
 
-Your file should now look like this:
+בשלב הזה, הקובץ שלך צריך להיראות בערך כך:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+אחלה, תשמרי את הקובץ ותרענני את העמוד!
 
-![Figure 14.2](images/color2.png)
+![תמונה 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+עבודה טובה! אולי עכשיו נוסיף לאתר שלנו קצת אוויר, ונגדיל את הרווח מצד שמאל? בואי ננסה!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -151,9 +151,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Figure 14.3](images/margin2.png)
+![תמונה 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+אולי אנחנו יכולים לשנות קצת את הגופן בכותרות שלנו? תעתיקי לתוך ה-`<head>` של קובץ ה-0>blog/templates/blog/post_list.html</code> שלך את השורות הבאות:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![תמונה 14.3](images/font.png)
 
-Great!
+מגניב!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+יאללה, נסי לתת שמות לחתיכות קוד HTML. הוסיפי מאפיין class עם הערך `page-header` ל-`div` שמכיל את הכותרת שלך, ככה:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+ועכשיו תוסיפי מאפיין class בשם `post` ל-`div` שלך שמכיל את גוף ההודעה.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+עכשיו נוסיף עיצוב למחלקות השונות שהגדרנו. סלקטורים המתחילים ב-`.` (נקודה) מתאימים למאפייני class. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. בינתיים, פשוט תעתיקי ותדביקי אותו בקובץ ה-`blog/static/css/blog.css` שלך:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+ואז תוסיפי את מאפייני ה-class לקוד ה-HTML שלך, שמציג את הפוסטים בבלוג. תחליפי את זה:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+בקובץ ה-`blog/templates/blog/post_list.html` שלך בזה:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,9 +291,9 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+תשמרי את הקבצים ותרענני את העמוד.
 
-![Figure 14.4](images/final.png)
+![תמונה 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
@@ -301,4 +301,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Ready for the next chapter?! :)
+מוכנה לפרק הבא?! :)
