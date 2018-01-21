@@ -1,4 +1,4 @@
-# Dynamic data in templates
+# داده های پویا در templates
 
 We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
