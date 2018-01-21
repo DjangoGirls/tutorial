@@ -1,147 +1,51 @@
-# Template extending
+# Django Girls Anleitung
 
-Eine weitere praktische Sache von Django ist das **template extending**, Erweiterungen des Templates. Was bedeutet das? Damit kannst du Teile deiner HTML-Site für verschiedene Seiten deiner Website nutzen.
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+> Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz finden Sie auf http://creativecommons.org/licenses/by-sa/4.0/
 
-## Create a base template
+## Willkommen
 
-Ein Base-Template ist das grundlegende Template, welches dann auf jeder einzelnen Seite deiner Website erweitert wird.
+Willkommen bei der Django Girls Anleitung! Wir freuen uns, dass du hier bist :) In dieser Anleitung schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
 
-Wir erstellen jetzt eine `base.html`-Datei in `blog/templates/blog/`:
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-    blog
-    └───templates
-        └───blog
-                base.html
-                post_list.html
-    
+## Einleitung
 
-Öffne sie, kopiere alles von `post_list.html` und füge es wie folgt in die `base.html`-Datei ein:
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Hast du dir irgendwann schon einmal gedacht, dass die Computerwelt zu kompliziert für dich ist, so dass du noch nicht einmal den Versuch unternommen hast, dort selbst etwas zu tun?
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+Dann haben wir hier gute Neuigkeiten für dich! Programmieren ist nicht so schwer, wie du denkst und wir zeigen dir hier, wie viel Spaß es machen kann.
 
-```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+This tutorial will not magically turn you into a programmer. Wenn du gut darin sein willst, brauchst du Monate oder sogar Jahre des Lernens und Übens. Aber wir wollen dir zeigen, dass Programmieren oder Webseitenerstellen nicht so kompliziert ist, wie es scheint. Wir versuchen, dir auf einfache Art verschiedene, kleine Teile zu zeigen, so dass du davon nicht eingeschüchtert wirst.
 
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
-```
+Wir hoffen, dass du danach diese Technik und Technologien so sehr mögen wirst wie wir!
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+## Was lernst du in diesem Tutorial?
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-```html
-<body>
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-            </div>
-        </div>
-    </div>
-</body>
-```
+Es wird (in etwa) so aussehen:
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+![Abbildung 0.1](images/application.png)
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+> Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
-```html
-{% block content %}
-{% endblock %}
-```
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+## Following the tutorial at home
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+In every chapter already covered, there is a link that points to the correct video.
 
-```html
-{% for post in posts %}
-    <div class="post">
-        <div class="date">
-            {{ post.published_date }}
-        </div>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-```
+## Über uns und wie du mithelfen kannst
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Dieses Tutorial wird von [DjangoGirls](https://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+## Would you like to help us translate the tutorial into other languages?
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Currently, translations are being kept on crowdin.com platform at:
 
-```html
-{% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
-```
+https://crowdin.com/project/django-girls-tutorial
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-
-```html
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
-```
-
-That's it! Check if your website is still working properly. :)
-
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
