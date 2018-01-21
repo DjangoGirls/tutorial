@@ -1,14 +1,14 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Vous pouvez [passer cette section](http://tutorial.djangogirls.org/en/installation/#install-python) si vous n'utilisez pas un Chromebook. Si c'est le cas, votre expérience sera un peu différente. Vous pouvez ignorer le reste des instructions d'installation.
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Pour la durée du tutoriel, Cloud 9 agira comme votre *machine locale*. Vous lancerez toujours des commandes dans un terminal exactement comme vos camarades sous OS X, Ubuntu ou Windows, mais votre terminal sera connecté à un ordinateur autre part que Cloud 9 a configuré pour vous.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+1. Installez Cloud 9 depuis le [Chrome Web Store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Allez à [c9.io](https://c9.io)
+3. Créez un compte
 4. Click *Create a New Workspace*
-5. Name it *django-girls*
+5. Appelez-le *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
@@ -20,7 +20,7 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Environnement virtuel
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
@@ -49,7 +49,7 @@ Next, run:
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Créez un compte [Github](https://github.com).
 
 ### PythonAnywhere
 
