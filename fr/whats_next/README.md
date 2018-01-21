@@ -1,14 +1,14 @@
-# What's next?
+# La suite ?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Un immense bravo à vous ! **Vous êtes totalement géniale**. Nous sommes fière de vous! <3
 
-### What to do now?
+### Que faire maintenant ?
 
-Take a break and relax. You have just done something really huge.
+Faites une pause et détendez-vous. Vous venez d'accomplir quelque chose de vraiment énorme.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### À la recherche de ressources supplémentaires ?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
