@@ -5,14 +5,14 @@ Git is a "version control system" used by a lot of programmers. This software ca
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+आप Git [git-scm.com](https://git-scm.com/) से डाउनलोड कर सकते हैं। You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). उस के अलावा, चूक ठीक हैं। चेकआउट Windows-शैली, कमिट Unix-शैली लाइन समापनों को संशोधित अच्छा है।
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+Git [git-scm.com](https://git-scm.com/) से डाउनलोड करें और बस निर्देशों का पालन करें।
 
 > **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
