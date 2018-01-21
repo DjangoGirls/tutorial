@@ -1,14 +1,14 @@
-# Django Forms
+# Φόρμες Django
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Το τελευταίο που έμεινε για την ιστοσελίδα μας είναι να δημιουργήσουμε μια όμορφη φόρμα για την εισαγαγωγή και τροποποίηση των blog post μας. Θα μπορούσαμε να χρησιμοποιήσουμε το Django `admin` αλλά είναι αρκετά πολύπλοκο να τροποποιήσουμε και να ωραιοποιήσουμε την φόρμα εισαγωγής. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Μία από τις ευκολίες των Django φορμών είναι ότι μπορούμε να ξεκινήσουμε από το μήδεν ή να χρησιμοποιήσουμε το `ModelForm` που ουσιαστικά αποθηκεύει τα δεδομένα της φόρμας στο μοντέλο (ή διαφορετικά στο σωστό πίνακα της βάσης μας).
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Αυτό είναι ακριβώς που θέλουμε να κάνουμε δηλαδή να δημιουργήσουμε εύκολα μια φόρμα εισαγωγής δεδομένων για το ήδη προυπάρχων `Post` μοντέλο.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Οπώς κάθε άλλο σημαντικό τμήμα του Django, οι φόρμες εισαγωγής "ζούν" στο δικό τους αρχείο: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Πρέπει να δημιουργήσουμε το αρχείο forms. py μέσα στην ντερέκτρορη `blog`.
 
     blog
        └── forms.py
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+Πρέπει να εισάγουμε αρχικά το module forms του Django (`from django import forms`) και φυσικά το μοντέλο `Post` (`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+Οπώς πιθανόν να υποψιάζεστε το `PostForm`, είναι το όνομα της φόρμας εισαγωγής. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Στην συνέχεια, έχουμε `class Meta`, όπου "λέμε" στο Django για ποίο μοντέλο πρέπει να δημιουργήσει την φόρμα εισαγωγής δεδομένων).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Τέλος, πρέπει να ορίσουμε ποίο/α πεδίο/α πρέπει να διαθέσουμε στην φόρμα μας. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Αυτό ήταν! Αυτό που μας απομένει είναι να χρησιμοποιήσουμε την φόρμα μας μέσα σε ένα *view* ώστε να είναι διαθεσίμη μέσω ενός template.
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Link to a page with the form
+## Πως συνδέουμε μια σελίδα με την φόρμα μας
 
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+Ανοίξτε το αρχείο `blog/templates/blog/base.html`. Θα προσθέσουμε το λινκ μέσα στο `div` με όνομα `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -134,20 +134,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. Θα επιστρέψουμε σε αυτή την *άποψη*, αλλά για τώρα, ας δημιουργήσουμε γρήγορα ένα πρότυπο για την αίτηση.
 
-## Template
+## Πρότυπο
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
+Πρέπει να δημιουργήσουμε ένα αρχείο `post_edit.html` στο κατάλογο `blog/templates/blog`. Για να κάνουμε μια αίτηση εργασίας χρειαζόμαστε αρκετά πράγματα:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Πρέπει να εμφανίσουμε την αίτηση. Μπορούμε να το κάνουμε αυτό με (για παράδειγμα) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Η παραπάνω γραμμή πρέπει να τυλιχθεί με μία ετικέτα αίτησης HTML: `<form method="POST">...</form>`.
+* Χρειαζόμαστε ένα κουμπί `Αποθήκευση`. Το κάνουμε αυτό με ένα κουμπί HTML: `<button type="submit">Αποθήκευση</button>`.
+* Και στο τέλος, ακριβώς μετά την ετικέτα ανοίγματος `<form ...>` πρέπει να προσθέσουμε {% raw %}`{% csrf_token %}`{% endraw %}. Αυτό είναι πολύ σημαντικό, αφού καθιστά τις αιτήσεις σας ασφαλείς! Εάν ξεχάσετε αυτό το κομμάτι, το Django θα παραπονεθεί όταν προσπαθήσετε να αποθηκεύσετε την αίτηση:
 
-![CSFR Forbidden page](images/csrf2.png)
+![CSFR Απαγορευμένη σελίδα](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Εντάξει, ας δούμε πως το HTML στο `post_edit.html` πρέπει να δείχνει:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,19 +163,19 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Ώρα να ανανεώσετε! Ναι! Η αίτηση σας εμφανίζεται!
 
-![New form](images/new_form2.png)
+![Νέα αίτηση](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Αλλά, περιμένετε ένα λεπτό! Όταν πληκτρολογείτε κάτι στα πεδία `τίτλο` και `κείμενο`και προσπαθήσετε να το αποθηκεύσετε, τι θα συμβεί;
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Τίποτα! Είμαστε άλλη μια φορά στην ίδια σελίδα και το κείμενο μας έχει εξαφανιστεί... και δεν έχει προστεθεί καμία νέα δημοσίευση, Οπότε τι πήγε λάθος;
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Η απάντηση είναι: τίποτα. Πρέπει να κάνουμε λίγη περισσότερη δουλειά στο *προβολή* μας.
 
-## Saving the form
+## Αποθηκεύοντας την αίτηση
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+Ανοίξτε `blog/views.py` ξανά. Προς το παρόν αυτό που έχουμε στο `post_new` θέα είναι τα ακόλουθα:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Όταν υποβάλουμε την αίτηση, επανερχόμαστε στην ίδια θέα, αλλά αυτή τη φορά έχουμε περισσότερα δεδομένα στο `αίτημα`, πιο συγκεκριμένα στο `αίτηση.POST` (το όνομα δεν έχει να κάνει με μία "δημοσίευση" blog, έχει να κάνει με το γεγονός ότι "δημοσιεύουμε" δεδομένα). Θυμηθείτε πως στον φάκελο HTML, ο `<form>` ορισμός μας είχε την μεταβλητή `method="POST"`; Όλα τα πεδία από την αίτηση είναι στο `request.POST`. Δεν πρέπει να μετονομάσετε το `POST` σε οτιδήποτε άλλο ( η μόνο άλλη έγκυρη τιμή για το `method` είναι `GET`, αλλά δεν έχουμε χρόνο για να εξηγήσουμε ποια είναι η διαφορά).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+Έτσι στο *view* έχουμε δύο ξεχωριστές καταστάσεις να διαχειριστούμε: πρώτον, όταν αποκτούμε πρόσβαση στην σελίδα για πρώτη φορά και θέλουμε μία άδεια αίτηση, και δεύτερον, όταν πάμε πίσω στο *view* με όλα τα δεδομένα αίτησης που μόλις πληκτρολογήσαμε. Επομένως, πρέπει να προσθέσουμε μια συνθήκη ( θα χρησιμοποιήσουμε `if` για αυτό):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Είναι καιρός να συμπληρώσουμε τις τελείες `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? Θα το κάνουμε αυτό όπως ακολουθεί:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +206,9 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Το επόμενο πράγμα είναι να ελέγξουμε αν η αίτηση είναι σωστή ( όλα τα απαιτούμενα πεδία έχουν οριστεί και δεν έχουν υποβληθεί εσφαλμένες τιμές). Το κάνουμε αυτό με `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Ελέγχουμε αν η αίτηση είναι έγκυρη και αν ναι, μπορούμε να την αποθηκεύσουμε!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,17 +220,17 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Βασικά, έχουμε δύο πράγματα εδώ: αποθηκεύουμε την αίτηση με `form.save` και προσθέτουμε έναν συγγραφέα ( μιας και δεν υπήρχε πεδίο `συγγραφέα` στο `PostForm` και αυτό το πεδίο είναι απαραίτητο). `commit=False` σημαίνει ότι δεν θέλουμε να αποθηκεύσουμε το μοντέλο `Post` ακόμα - θέλουμε να προσθέσουμε τον αναγνώστη πρώτα. Τις περισσότερες φορές θα χρησιμοποιήσετε το `form.save()` χωρίς το `commit=False`, αλλά σε αυτή την περίπτωση, πρέπει να το προμηθεύσουμε. `post.save()` θα διατηρήσει τις αλλαγές (προσθέτοντας τον συγγραφέα) και δημιουργείται ένα νέο blog post!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Τέλος, θα ήταν τρομερό εάν μπορούσαμε να πάμε αμέσως στην `post_detail` σελίδα για το νεοσυσταθέν blog post μας, σωστά; Για να το κάνουμε αυτό χρειαζόμαστε μια ακόμα είσοδο:
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.shortcuts import redirect
+από ανακατεύθυνση εισαγωγής django.shortcuts
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Προσθέστε το στην αρχή του αρχείου σας. Και τώρα μπορούμε να πούμε, "πηγαίνετε στη `post_detail` σελίδα για το νεοσυσταθέν post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` είναι το όνομα της προβολής στο οποίο θέλουμε να πάμε. Θυμηθείτε ότι αυτή η *άποψη * απαιτεί μία μεταβλητή `pk`; Για να το περάσουμε στις απόψεις, χρησιμοποιούμε `pk=post.pk`, όπου `post` είναι το νεοσύστατο blog post!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Εντάξει. έχουμε μιλήσει πολύ. αλλά μάλλον θέλουμε να δούμε πως μοιάζει το *view*, σωστά;
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Ας δούμε αν λειτουργεί. Πηγαίνετε στην σελίδα http://127.0.0.1:8000/post/new/, προσθέστε ένα `τίτλο` και `κείμενο`, αποθηκεύστε το… και voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Αυτό μοιάζει σχεδόν ίδιο με την `post_new` προβολή, σωστά; Αλλά όχι εντελώς. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ This looks almost exactly the same as our `post_new` view, right? But not entire
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+… και όταν έχουμε μόλις ανοίξει μία αίτηση με αυτή τη δημοσίευση για να επεξεργαστούμε:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,23 +358,23 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Εντάξει, ας δοκιμάσουμε αν λειτουργεί! Πάμε στην σελίδα `post_detail`. Θα πρέπει να υπάρχει ένα κουμπί επεξεργασίας στην πάνω δεξιά γωνία:
 
-![Edit button](images/edit_button2.png)
+![Κουμπί επεξεργασίας](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Όταν κάνετε κλικ θα δείτε την φόρμα με την δημοσίευση στο blog μας:
 
-![Edit form](images/edit_form2.png)
+![Επεξεργαστείτε αίτηση](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Νιώστε ελεύθεροι να αλλάξετε τον τίτλο η το κείμενο και να αποθηκεύσετε τις αλλαγές!
 
-Congratulations! Your application is getting more and more complete!
+Συγχαρητήρια! Η εφαρμογή σας γίνεται όλο και πιο πλήρης!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+Εάν χρειάζεστε περισσότερες πληροφορίες για τις φόρμες Django, θα πρέπει να διαβάσετε τα έγγραφα: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Security
+## Ασφάλεια
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Το να μπορείς να δημιουργήσεις νέες δημοσιεύσεις κάνοντας απλώς ένα κλικ σε ένα σύνδεσμο είναι φοβερό! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί εμφανίζεται για εσάς αλλά για κανέναν άλλο.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
@@ -384,7 +384,7 @@ In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+Πρόκειται να προσθέσουμε άλλη μία ετικέτα `{% if %}` σε αυτό, το οποίο θα κάνει τον σύνδεσμο να εμφανίζεται μόνο για χρήστες που είναι συνδεδεμένοι στον διαχειριστή. Προς το παρόν, είστε μόνο εσείς! Αλλάξτε την ετικέτα `<a>` να μοιάζει σαν αυτό:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Αυτό `{% if %}` θα προκαλέσει τον σύνδεσμο να σταλθεί στο πρόγραμμα περιήγησης μόνο αν ο χρήστης που ζητά την σελίδα είναι συνδεδεμένος. Αυτό δεν προστατεύει την δημιουργία νέων δημοσιεύσεων εντελώς, αλλά είναι ένα καλό πρώτο βήμα. Θα καλύψουμε περισσότερη ασφάλεια στα μαθήματα επέκτασης.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Θυμάστε το εικονίδιο επεξεργασίας που μόλις προσθέσαμε στην σελίδα λεπτομερειών; Θέλουμε επίσης να προσθέσουμε την ίδια αλλαγή εκεί, ώστε άλλα άτομα δεν θα μπορούν να επεξεργαστούν τις υπάρχουσες δημοσιεύσεις.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Ανοίξτε το `blog/templates/blog/post_detail.html` και βρείτε αυτή τη γραμμή:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Αλλάξτε το σε αυτό:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,13 +416,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Μιας και είστε πιθανότατα συνδεδεμένοι, εάν ανανεώσετε την σελίδα, δεν θα δείτε τίποτα διαφορετικό. Φορτώστε την σελίδα σε ένα διαφορετικό πρόγραμμα περιήγησης ή ένα παράθυρο ανώνυμης περιήγησης ( που ονομάζεται "InPrivate" στο Windows Edge), όμως, και θα δείτε ότι ο σύνδεσμος δεν εμφανίζεται, ούτε και το εικονίδιο!
 
-## One more thing: deploy time!
+## Ένα πράγμα ακόμα: ώρα να αναπτύξετε!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Για να δούμε αν όλα αυτά λειτουργούν στο PythonAnywhere. Ώρα για άλλη μια ανάπτυξη!
 
-* First, commit your new code, and push it up to Github:
+* Πρώτα, δεσμεύστε τον νέο σας κωδικό, και βάλτε τον στο GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -444,4 +444,4 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-And that should be it! Congrats :)
+Και αυτό είναι! Συγχαρητήρια :)
