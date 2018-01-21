@@ -1,11 +1,11 @@
-# Code editor
+# Editor kode
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
-
-You're about to write your first line of code, so it's time to download a code editor!
-
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> Bagi pembaca di rumah: bab ini tercakup dalam  Memasang Python & amp; Editor Kode </ 0> video.</p> </blockquote> 
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
-
-{% include "/code_editor/instructions.md" %}
+> Anda akan menulis baris kode pertama Anda, jadi sekarang saatnya mendownload editor kode!
+> 
+> > ** Catatan </ 0> Jika Anda menggunakan Chromebook, lewati bab ini dan pastikan Anda mengikuti petunjuk  Pengaturan Chromebook </ 1> .</p> 
+> > 
+> > ** Catatan </ 0> Anda mungkin telah melakukan ini sebelumnya di bab Instalasi - jika demikian, Anda dapat langsung melewati bab berikutnya!</p> </blockquote> 
+> > 
+> > {% include "/code_editor/instructions.md" %}
