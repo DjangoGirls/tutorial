@@ -1,198 +1,197 @@
-# Introduction to Python
+# Pengantar Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Bagian dari bab ini didasarkan pada tutorial oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Mari kita tulis beberapa kode!
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-Dasar Python: Integer, String, Daftar, Variabel dan Kesalahan](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. Anda seharusnya sudah tahu bagaimana melakukan itu - Anda mempelajarinya di bagian [Intro to Command Line](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Ketika kamu sudah siap, Silakan ikuti instruksi dibawah ini.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau `python3` pada Mac OS/Linux dan tekan `Enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
     $ python3
     Python 3.6.1 (...)
-    Type "help", "copyright", "credits" or "license" for more information.
+    Ketik "bantuan", "hak cipta", "kredit" atau "lisensi" untuk informasi lebih lanjut.
     >>>
     
 
-## Your first Python command!
+## Perintah Python pertama Anda!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>`. Bagi kita sekarang adalah kita harus menggunakan perintah pada bahasa Python saja. Anda tidak perlu mengetik `>>>` - Python akan melakukannya untuk Anda.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau pakai shortcut `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Maka Anda tidak akan melihat `>>&gt` lagi.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> 2 + 3
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Bagus! Lihat bagaimana balasan muncul keluar? Python tahu matematika! Anda bisa mencoba perintah lain seperti:
 
 - `4 * 5`
 - `5 - 1`
-- `40 / 2`
+- `40 / 2
+`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Untuk melakukan perhitungan eksponensial, katakan 2 pada power 3, kita ketik: {% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Bersenang-senang dengan ini sebentar dan kemudian kembali kesini. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Seperti yang Anda lihat, Python adalah kalkulator yang hebat. Jika Anda bertanya-tanya apa lagi yang bisa Anda lakukan…
 
-## Strings
+## String
 
-How about your name? Type your first name in quotes like this:
+Bagaimana dengan namamu? Ketik nama depan Anda dalam tanda kutip seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
 ```python
 >>> "Ola"
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Anda sekarang telah membuat string pertama Anda! Ini adalah urutan karakter yang bisa diolah oleh komputer. String harus selalu dimulai dan diakhiri dengan karakter yang sama. Ini mungkin tunggal (`'`) atau double (`"`) mengutip (tidak ada bedanya!) Kutipan memberi tahu Python bahwa apa yang ada di dalamnya adalah string.
 
-Strings can be strung together. Try this:
+String bisa dirangkai. Coba ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola"
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Anda juga bisa mengalikan string dengan angka:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> "Ola" * 3
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Jika Anda perlu menempatkan tanda kutip di dalam string Anda, Anda memiliki dua cara untuk melakukannya.
 
-Using double quotes:
+Menggunakan tanda kutip ganda:
 
-{% filename %}command-line{% endfilename %}
-
-```python
->>> "Runnin' down the hill"
-"Runnin' down the hill"
-```
-
-or escaping the apostrophe with a backslash (``):
-
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> 'Runnin\' down the hill'
-"Runnin' down the hill"
+>>> "Runnin' menuruni bukit"
+"Runnin' menuruni bukit"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+atau keluar dari apostrof dengan garis miring terbalik (``):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
+
+```python
+>>> 'Runnin\' menuruni bukit'
+"Runnin' menuruni bukit"
+```
+
+Bagus, ya? Untuk melihat nama Anda dalam huruf besar, cukup ketik:
+
+{% filename %}baris-perintah{% endfilename %}
 
 ```python
 >>> "Ola".upper()
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Anda hanya menggunakan **method**`upper` pada string anda! method (`upper`) adalah urutan instruksi yang Python harus melakukan pada objek tertentu ( ` " Ola " ` ) setelah anda menyebutnya .
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Jika Anda ingin tahu jumlah huruf yang terkandung dalam nama Anda , ada **function** untuk itu juga!
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris-perintah{% endfilename %}
 
 ```python
->>> len("Ola")
+>>> len ("Ola")
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Entah mengapa kadang-kadang Anda memanggil fungsi dengan `.` di akhir string (seperti `"Ola".upper()`) dan terkadang Anda pertama kali memanggil fungsi dan menempatkan string dalam kurung? Nah, dalam beberapa kasus, fungsi termasuk objek, seperti `upper()`, yang hanya bisa dilakukan pada string. Dalam hal ini, kita sebut fungsi sebuah **metode**. Di lain waktu, fungsi tidak termasuk dalam sesuatu yang spesifik dan dapat digunakan pada berbagai jenis objek, seperti `len()`. Itu sebabnya kami memberi `"Ola"` sebagai parameter pada fungsi `len`.
 
-### Summary
+### Ikhtisar
 
-OK, enough of strings. So far you've learned about:
+OK, cukup banyak senar. Sejauh ini Anda telah belajar tentang:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
+- **prompt** - perintah mengetik (kode) ke prompt Python menghasilkan jawaban dengan Python
+- **nomor dan string** - dengan nomor Python digunakan untuk matematika dan string untuk objek teks
 - **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **fungsi** - seperti `atas()` dan `len()`, lakukan tindakan pada objek.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Ini adalah dasar-dasar setiap bahasa pemrograman yang Anda pelajari. Siap untuk sesuatu yang lebih keras? Kami yakin kamu!
 
-## Errors
+## Kesalahan
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> len(304023)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: object of type 'int' has no len()
+& gt; & gt; & gt; len (304023) Traceback (panggilan terakhir terakhir):
+   File " <stdin> ", baris 1, di <module> 
+TypeError: objek tipe 'int' tidak memiliki len ()
 ```
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Kami mendapat kesalahan pertama kami! Dikatakan bahwa objek tipe "int" (bilangan bulat, bilangan bulat) tidak memiliki panjang. Jadi apa yang bisa kita lakukan sekarang? Mungkin kita bisa menulis nomor kita sebagai string? String punya panjang, kan?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
 ```python
->>> len(str(304023))
-6
+& gt; & gt; & gt; len (str (304023)) 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Ini berhasil! Kami menggunakan `str` fungsi di dalam `len` fungsi. `str()` mengubah segalanya menjadi senar.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- Fungsi `str` mengubah sesuatu menjadi **string**
+- Fungsi `int` mengubah semuanya menjadi **bilangan bulat**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Penting: kita bisa mengonversi bilangan menjadi teks, tapi kita tidak bisa mengubah teks menjadi angka - apa yang akan `int ('halo')` jadi?
 
-## Variables
+## Variabel
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Konsep penting dalam pemrograman adalah variabel. Variabel tidak lebih dari sebuah nama untuk sesuatu sehingga Anda dapat menggunakannya nanti. Pemrogram menggunakan variabel ini untuk menyimpan data, membuat kode mereka lebih mudah dibaca dan karenanya mereka tidak perlu terus mengingat hal-hal apa adanya.
 
-Let's say we want to create a new variable called `name`:
+Misalkan kita ingin membuat variabel baru yang disebut ` name ` :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> name = "Ola"
+>>> nama = "Ola"
 ```
 
 We type name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+Seperti yang telah Anda sadari, program Anda tidak mengembalikan hal seperti sebelumnya. Jadi bagaimana kita tahu bahwa sebenarnya variabel itu ada? Cukup masukkan `nama`dan tekan `masukkan`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
 ```python
 >>> name
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Hura! Variabel pertama anda :) Anda selalu bisa mengubah apa yang dimaksud dengan:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -200,18 +199,18 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Anda dapat menggunakannya dalam fungsi juga:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> len(name)
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Mengagumkan kan? Tentu saja, variabel bisa apa saja - angka juga! Coba ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
 ```python
 >>> a = 4
@@ -220,27 +219,27 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Tapi bagaimana kalau kita menggunakan nama yang salah? Bisakah kamu menebak apa yang akan terjadi? Mari mencoba!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> city = "Tokyo"
+>>> kota = "Tokyo"
 >>> ctiy
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'ctiy' is not defined
+Traceback (panggilan terakhir):
+   File "<stdin>", baris 1, di <module>
+NameError: nama 'ctiy' tidak didefinisikan
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Sebuah kesalahan! Seperti yang Anda lihat, Python memiliki jenis kesalahan yang berbeda dan yang satu ini disebut **NameError**. Python akan memberi Anda kesalahan ini jika Anda mencoba menggunakan variabel yang belum didefinisikan. Jika Anda mengalami kesalahan ini nanti, periksa kode Anda untuk melihat apakah Anda salah mengetikkan nama apa pun.
 
-Play with this for a while and see what you can do!
+Mainkan dengan ini untuk sementara dan lihat apa yang dapat Anda lakukan!
 
-## The print function
+## Fungsi cetak
 
-Try this:
+Coba ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> name = 'Maria'
@@ -250,193 +249,193 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Bila Anda mengetikkan `nama`, juru bahasa Python merespons dengan string *representasi* dari variabel 'nama', yaitu huruf M-a-r-i-a, dikelilingi oleh tanda kutip tunggal, ''. Bila Anda mengatakan `print (nama)`, Python akan "mencetak" isi variabel ke layar, tanpa tanda petik, yang lebih rapi.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Seperti yang akan kita lihat nanti, `print()` juga berguna saat kita ingin mencetak sesuatu dari fungsi di dalam, atau saat kita ingin mencetak berbagai hal pada banyak baris.
 
-## Lists
+## Daftar
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Selain string dan bilangan bulat, Python memiliki berbagai jenis objek. Sekarang kita akan mengenalkan satu daftar ** **. Daftar persis seperti yang Anda duga: objek yang merupakan daftar objek lain. :)
 
-Go ahead and create a list:
+Silakan membuat daftar:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> []
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Ya, daftar ini kosong. Tidak terlalu berguna kan? Mari buat daftar nomor undian. Kami tidak ingin mengulangi diri kami sepanjang waktu, jadi kami akan memasukkannya ke dalam variabel juga:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> lottery = [3, 42, 12, 19, 30, 59]
+>>> undian = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Baiklah, kita punya daftar! Apa yang bisa kita lakukan dengan itu? Mari kita lihat berapa jumlah undian yang ada dalam daftar. Apakah Anda tahu fungsi mana yang harus Anda gunakan untuk itu? Anda sudah tahu ini!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> len(lottery)
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Iya nih! `len()` dapat memberi Anda sejumlah objek dalam daftar. Berguna, kan? Mungkin kita akan mengatasinya sekarang:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Ini tidak mengembalikan apapun, itu hanya mengubah urutan nomor yang muncul dalam daftar. Ayo cetak lagi dan lihat apa yang terjadi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> cetak (undian)
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Seperti yang dapat Anda lihat, angka dalam daftar Anda sekarang diurutkan dari nilai terendah ke nilai tertinggi. Selamat!
 
-Maybe we want to reverse that order? Let's do that!
+Mungkin kita ingin membalikkan pesanan itu? Ayo lakukan itu!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> lottery.reverse()
->>> print(lottery)
+>>> lottery.reverse ()
+>>> cetak (undian)
 [59, 42, 30, 19, 12, 3]
 ```
 
 If you want to add something to your list, you can do this by typing this command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> lottery.append(199)
->>> print(lottery)
+>>> lottery.append (199)
+>>> cetak (undian)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Jika Anda hanya ingin menunjukkan angka pertama, Anda dapat melakukannya dengan menggunakan **indeks**. Sebuah indeks adalah angka yang mengatakan di mana dalam daftar sebuah item terjadi. Pemrogram lebih memilih untuk mulai menghitung pada 0, jadi objek pertama dalam daftar Anda ada di indeks 0, yang berikutnya adalah 1, dan seterusnya. Coba ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> print(lottery[0])
+>>> cetak (undian[0])
 59
->>> print(lottery[1])
+>>> cetak (undian [1])
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Seperti yang Anda lihat, Anda dapat mengakses berbagai objek dalam daftar Anda dengan menggunakan nama daftar dan indeks objek di dalam tanda kurung siku .
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Untuk menghapus sesuatu dari daftar Anda, Anda perlu menggunakan ** indeks ** seperti yang telah kita pelajari di atas dan metode ` pop () ` . Mari coba contoh dan perkuat apa yang telah kita pelajari sebelumnya; kami akan menghapus nomor pertama dari daftar kami.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> cetak (undian)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> cetak (undian[0])
 59
 >>> lottery.pop(0)
 59
->>> print(lottery)
+>>> cetak(undian)
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Itu bekerja seperti pesona!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Untuk kesenangan ekstra, cobalah beberapa indeks lainnya: 6, 7, 1000, -1, -6 atau -1000. Lihat apakah Anda bisa memprediksi hasilnya sebelum mencoba perintahnya. Apakah hasilnya masuk akal?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Anda dapat menemukan daftar semua metode daftar yang tersedia di bab dokumentasi Python ini: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Kamus
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Bagi pembaca di rumah: bagian ini tercakup dalam [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Kamus mirip dengan daftar, namun Anda mengakses nilai dengan mencari kunci alih-alih indeks numerik. Kunci bisa berupa string atau angka. Sintaks untuk mendefinisikan kamus kosong adalah:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> {}
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Ini menunjukkan bahwa Anda baru saja membuat kamus kosong. Hore!
 
-Now, try writing the following command (try substituting your own information, too):
+Sekarang, coba tuliskan perintah berikut (coba ganti informasi Anda sendiri juga):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> peserta = {'nama': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Dengan perintah ini, Anda baru saja membuat sebuah variabel bernama `peserta` dengan tiga pasangan nilai kunci:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- Kunci `nama` menunjuk ke nilai `'Ola'` (a `string` objek),
+- `negara` menunjuk ke `'Polandia'` (string `lainnya`),
+- dan `favorite_numbers` menunjuk ke `[7, 42, 92]` (a `daftar` dengan tiga nomor di dalamnya).
 
-You can check the content of individual keys with this syntax:
+Anda dapat memeriksa isi kunci individu dengan sintaks ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> print(participant['name'])
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Lihat, ini mirip dengan daftar. Tapi Anda tidak perlu mengingat indeks - cukup namanya.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Apa yang terjadi jika kita meminta Python nilai sebuah kunci yang tidak ada? Bisakah kamu menebak? Mari kita coba dan lihat!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> participant['age']
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-KeyError: 'age'
+>>> peserta['usia']
+Traceback (panggilan terakhir):
+  File "<stdin>", baris 1, di <module>
+KeyError: 'usia'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Lihat, kesalahan lain! Yang ini adalah **KeyError**. Python sangat membantu dan memberitahu Anda bahwa kunci `'usia'` tidak ada dalam kamus ini.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Kapan sebaiknya Anda menggunakan kamus atau daftar? Nah, itu bagus untuk direnungkan. Pikirkan saja jawabannya sebelum melihat jawabannya di baris berikutnya.
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Apakah Anda hanya butuh urutan barang yang dipesan? Pergi untuk daftar.
+- Apakah Anda perlu mengaitkan nilai dengan kunci, sehingga Anda dapat melihatnya secara efisien (dengan kunci) nanti? Gunakan kamus.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Kamus, seperti daftar, *bisa berubah*, artinya bisa diubah setelah dibuat. Anda dapat menambahkan pasangan kunci-nilai baru ke kamus setelah dibuat, seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Seperti daftar, menggunakan metode `len()` pada kamus mengembalikan jumlah pasangan kunci-nilai dalam kamus. Silakan ketik perintah ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> len(participant)
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Saya harap ini masuk akal sampai sekarang. :) Siap untuk bersenang-senang dengan kamus? Baca terus untuk beberapa hal yang menakjubkan.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Anda dapat menggunakan metode ` pop () ` untuk menghapus item dalam kamus. Katakan, jika Anda ingin menghapus entri yang sesuai dengan tombol `'favorite_numbers'`, ketik saja perintah berikut:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> participant.pop('favorite_numbers')
@@ -445,11 +444,11 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Seperti yang dapat Anda lihat dari keluaran, pasangan kunci-nilai yang sesuai dengan kunci 'favorit_numbers' telah dihapus.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Serta ini, Anda juga dapat mengubah nilai yang terkait dengan kunci yang sudah dibuat di kamus. Ketik ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Germany'
@@ -457,26 +456,26 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Seperti yang dapat Anda lihat, nilai kunci `'negara'` telah diubah dari `'Polandia'` ke `'Jerman'`. :) Menyenangkan? Hore! Anda baru saja belajar hal menakjubkan lainnya.
 
-### Summary
+### Ikhtisar
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Mengagumkan! Anda tahu banyak tentang pemrograman sekarang. Pada bagian terakhir ini Anda belajar tentang:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **error** - Anda sekarang tahu bagaimana membaca dan memahami kesalahan yang muncul jika Python tidak mengerti perintah yang Anda berikan
+- **variabel** - nama untuk objek yang memungkinkan kode Anda lebih mudah dan membuat kode Anda lebih mudah dibaca
+- **daftar** - daftar objek yang tersimpan dalam urutan tertentu
+- **kamus** - objek yang disimpan sebagai pasangan kunci-nilai
 
-Excited for the next part? :)
+Bersemangat untuk bagian selanjutnya? :)
 
-## Compare things
+## Bandingkan hal-hal
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-dasar Python: Perbandingan](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Sebagian besar pemrograman melibatkan perbandingan berbagai hal. Apa hal termudah untuk membandingkan? Bilangan, tentu saja. Mari kita lihat bagaimana cara kerjanya:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> 5 > 2
@@ -491,31 +490,31 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Kami memberi Python beberapa nomor untuk dibandingkan. Seperti yang bisa Anda lihat, Python tidak hanya bisa membandingkan angka, tapi juga bisa membandingkan hasil metode. Bagus, ya?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Apakah Anda bertanya-tanya mengapa kita menempatkan dua tanda sama ` == ` di sebelah satu sama lain untuk membandingkan apakah angka sama? Kami menggunakan satu ` = ` untuk menetapkan nilai pada variabel. Anda selalu, **selalu** perlu memasukkan dua dari mereka - `==` - jika Anda ingin memeriksa apakah semuanya sama satu sama lain. Kita juga dapat menyatakan bahwa hal-hal yang tidak setara satu sama lain. Untuk itu, kita menggunakan simbol ` ! = ` , seperti yang ditunjukkan pada contoh di atas.
 
-Give Python two more tasks:
+Berikan Python dua tugas lagi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> 6 >= 12 / 2
-True
->>> 3 <= 2
-False
+Benar
+>>> 3 < = 2
+Salah
 ```
 
 We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y berarti: x lebih besar dari y
+- x `<` y berarti: x kurang dari y
+- x `<=` y berarti: x kurang dari atau sama dengan y
+- x `>=` y berarti: x lebih besar dari atau sama dengan y
 
-Awesome! Wanna do one more? Try this:
+Mengagumkan! Mau melakukan satu lagi? Coba ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
 ```python
 >>> 6 > 2 and 2 < 3
@@ -526,14 +525,14 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Anda dapat memberi Python sebanyak mungkin untuk membandingkan yang Anda inginkan, dan ini akan memberi Anda jawaban! Cukup pintar kan?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **dan** - jika Anda menggunakan operator `dan`, kedua perbandingan harus benar agar keseluruhan perintah menjadi True
+- **atau** - jika Anda menggunakan operator `atau`, hanya satu perbandingan yang harus Benar agar seluruh perintah menjadi Benar
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Pernahkah Anda mendengar ungkapan "membandingkan apel dengan jeruk?" Mari kita coba yang setara dengan Python:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -542,32 +541,32 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Di sini Anda melihat bahwa seperti dalam ekspresi, Python tidak dapat membandingkan angka (`int`) dan sebuah string (`str`). Sebagai gantinya, ini menunjukkan ** TypeError ** dan memberi tahu kita bahwa kedua jenis ini tidak dapat dibandingkan bersama-sama.
 
 ## Boolean
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-There are only two Boolean objects:
+Hanya ada dua objek Boolean:
 
-- True
-- False
+- Benar
+- Salah
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Tapi bagi Python untuk memahami ini, Anda harus selalu menulisnya sebagai 'Benar' (huruf besar huruf pertama, dengan sisa huruf-hurufnya lebih rendah). **benar, BENAR, dan tRUE tidak akan bekerja - hanya Benar benar. ** (Hal yang sama juga berlaku untuk 'Salah' juga.)
 
-Booleans can be variables, too! See here:
+Boolean bisa jadi variabel juga! Lihat disini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
->>> a = True
+>>> a = benar
 >>> a
-True
+Benar
 ```
 
-You can also do it this way:
+Anda juga bisa melakukannya dengan cara ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> a = 2 > 5
@@ -575,38 +574,38 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Berlatih dan bersenang-senang dengan Boolean dengan mencoba menjalankan perintah berikut:
 
-- `True and True`
-- `False and True`
-- `True or 1 == 1`
+- `Benar dan Benar`
+- `Salah dan benar`
+- `Benar atau 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Selamat! Boolean adalah salah satu fitur paling keren dalam pemrograman, dan Anda baru saja belajar menggunakannya!
 
-# Save it!
+# Simpan itu!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Untuk pembaca di rumah: bagian ini tercakup dalam [Dasar-dasar Python: Menyimpan file dan "Jika" pernyataan](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Sejauh ini kami telah menulis semua kode python kami di penerjemah, yang membatasi kami untuk memasukkan satu baris kode sekaligus. Program normal disimpan dalam file dan dieksekusi oleh bahasa pemrograman kita **penerjemah** atau **penyusun**. Sejauh ini kami telah menjalankan program kami satu baris sekaligus di Python **penerjemah**. Kita akan membutuhkan lebih dari satu baris kode untuk beberapa tugas berikutnya, jadi kita akan segera perlu:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- Keluar dari juru bahasa Python
+- Buka editor pilihan kami
+- Simpan beberapa kode ke file python baru
+- Menjalankannya!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+Untuk keluar dari interpreter Python bahwa kita telah menggunakan, cukup ketik `exit()` fungsi
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> exit()
 $
 ```
 
-This will put you back into the command prompt.
+Ini akan mengembalikan Anda ke command prompt.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+Sebelumnya, kami memilih editor kode dari bagian [editor kode](../code_editor/README.md). Kita perlu membuka editor sekarang dan menulis beberapa kode ke file baru:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,20 +613,20 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Jelas, Anda adalah pengembang Python yang cukup berpengalaman sekarang, jadi silakan menulis beberapa kode yang telah Anda pelajari hari ini.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Sekarang kita perlu menyimpan file dan memberikannya nama deskriptif. Mari kita panggil file ** python_intro.py ** dan simpan ke desktop Anda. Kita bisa menamai file apapun yang kita mau, tapi yang penting disini adalah memastikan file berakhir di ** .py ** . Ekstensi**.py** memberitahu sistem operasi kita bahwa ini adalah sebuah **Phyton file bisa dieksekusi** dan Phyton itu bisa berjalan.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Catatan** Anda harus memperhatikan salah satu hal yang paling keren tentang editor kode: warna! Di konsol Python, semuanya warnanya sama; Sekarang Anda harus melihat bahwa fungsi `print` adalah warna yang berbeda dari string. Ini disebut "penyorotan sintaks", dan ini adalah fitur yang sangat berguna saat mengkodekan. Warna benda akan memberi petunjuk, seperti string yang tidak ditutup atau salah ketik pada nama kata kunci (seperti ` def ` dalam sebuah fungsi, yang akan kita lihat di bawah). Inilah salah satu alasan kita menggunakan kode editor. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Dengan file yang tersimpan, saatnya untuk menjalankannya! Dengan menggunakan keahlian yang telah Anda pelajari di bagian baris perintah, gunakan terminal untuk **ubah direktori** ke desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Di Mac, perintahnya akan terlihat seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -637,9 +636,9 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Di Linux, akan seperti ini (kata "Desktop" bisa diterjemahkan ke bahasa lokal Anda):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -648,53 +647,52 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Pada Windows Command Prompt, akan seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
-    > cd %HomePath%\Desktop
+    > cd %HomePath%\Deskop
     
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Dan pada Windows Powershell, akan seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     > cd $Home\Desktop
     
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Jika Anda terjebak, mintalah bantuan.
 
-Now use Python to execute the code in the file like this:
+Sekarang gunakan Python untuk mengeksekusi kode pada file seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
-    $ python3 python_intro.py
-    Hello, Django girls!
+    $ python3 python_intro.py Halo, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Catatan: pada Windows 'python3' tidak dikenali sebagai perintah. Sebagai gantinya, gunakan 'python' untuk mengeksekusi file:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Baik! Anda hanya menjalankan program Python pertama Anda yang disimpan ke sebuah file. Merasa mengagumkan
 
-You can now move on to an essential tool in programming:
+Anda sekarang dapat beralih ke alat penting dalam pemrograman:
 
-## If … elif … else
+## Jika ... elif ... lain
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Banyak hal dalam kode harus dijalankan hanya bila kondisi yang diberikan terpenuhi. Itu sebabnya Python memiliki sesuatu yang disebut**jika pernyataan**.
 
-Replace the code in your **python_intro.py** file with this:
+Ganti kode di file **python_intro.py** Anda dengan ini:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -702,9 +700,9 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Jika kita menyimpan dan menjalankan ini, kita akan melihat kesalahan seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -712,31 +710,31 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python mengharapkan kita untuk memberikan instruksi lebih lanjut untuk itu yang di eksekusi jika kondisi `3 > 2` ternyata benar (atau `Benar` dalam hal ini). Mari kita coba membuat tulisan Python "It works!". Ubah kode Anda di berkas **python_intro.py** Anda ke ini:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py {% endfilename %}
 
 ```python
 if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
+Perhatikan bagaimana kita menjerumuskan baris kode berikut dengan 4 spasi? Kita perlu melakukan ini sehingga Python tahu kode apa yang harus dijalankan jika hasilnya benar. Anda bisa melakukan satu ruang, tapi hampir semua pemrogram Python melakukan 4 untuk membuat segalanya terlihat rapi. Tunggal `tab` juga akan dihitung sebagai 4 ruang.
 
-Save it and give it another run:
+Simpan dan berikan satu putaran lagi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Catatan: Ingat bahwa di Windows, 'python3' tidak dikenali sebagai perintah. Mulai sekarang, ganti 'python3' dengan 'python' untuk mengeksekusi file.
 
-### What if a condition isn't True?
+### Bagaimana jika sebuah kondisi tidak benar?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Dalam contoh sebelumnya, kode hanya dijalankan bila kondisinya benar. Tapi Python juga punya `elif` dan `lain` pernyataan:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,12 +745,12 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Saat ini dijalankan maka akan tercetak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     $ python3 python_intro.py
-    5 is indeed greater than 2
+    5 memang lebih besar dari 2
     
 
 If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
@@ -769,17 +767,17 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+dan dieksekusi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     $ python3 python_intro.py
-    Hey Sonja!
+    Hei Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Lihat apa yang terjadi disana? `elif` memungkinkan Anda menambahkan kondisi tambahan yang berjalan jika kondisi sebelumnya gagal.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Anda dapat menambahkan sebanyak `elif` pernyataan yang Anda inginkan setelah pernyataan `jika` awal Anda. Sebagai contoh:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,21 +797,20 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python berjalan melalui setiap tes secara berurutan dan dicetak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
-    $ python3 python_intro.py
-    Perfect, I can hear all the details
+    $ python3 python_intro.py Sempurna, saya bisa mendengar semua detailnya
     
 
-## Comments
+## Komentar
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Komentar adalah garis yang dimulai dengan `#`. Anda bisa menulis apapun yang Anda inginkan setelah `#` dan Python akan mengabaikannya. Komentar dapat membuat kode Anda lebih mudah dipahami oleh orang lain.
 
-Let's see how that looks:
+Mari kita lihat bagaimana tampilannya:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %} Pengantar_phyton.py{% endfilename %}
 
 ```python
 # Change the volume if it's too loud or too quiet
@@ -822,27 +819,27 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Anda tidak perlu menulis komentar untuk setiap baris kode, namun berguna untuk menjelaskan mengapa kode Anda melakukan sesuatu, atau memberikan ringkasan saat melakukan sesuatu yang rumit.
 
-### Summary
+### Ikhtisar
 
-In the last few exercises you learned about:
+Dalam beberapa latihan terakhir yang Anda pelajari:
 
 - **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **Boolean** - jenis objek yang hanya bisa memiliki satu dari dua nilai: `Benar` atau`Salah`
+- ** Simpan file** - menyimpan kode dalam file sehingga Anda bisa menjalankan program yang lebih besar.
+- **jika…elif…lain** - pernyataan yang memungkinkan Anda untuk mengeksekusi kode hanya bila kondisi tertentu terpenuhi.
+- **perintah** - baris yang tidak akan dijalankan Python yang memungkinkan Anda mendokumentasikan kode Anda
 
-Time for the last part of this chapter!
+Waktu untuk bagian terakhir dari bab ini!
 
-## Your own functions!
+## Fungsi anda sendiri
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Bagi pembaca di rumah: bagian ini tercakup dalam video [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Ingat fungsi seperti `len ()`yang bisa Anda eksekusi dengan Python? Nah, kabar baik - Anda akan belajar bagaimana menulis sendiri fungsi Anda sekarang!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Fungsi adalah urutan instruksi yang harus dilakukan Python. Setiap fungsi di Python dimulai dengan kata kunci `def`, diberi nama, dan bisa memiliki beberapa parameter. Let's give it a go. Ganti kode di **python_intro.py** dengan mengikuti:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,34 +851,34 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Oke, fungsi pertama kita sudah siap!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Anda mungkin bertanya-tanya mengapa kami menuliskan nama fungsi di bagian bawah file. Ini karena Python membaca file dan mengeksekusinya dari atas ke bawah. Jadi untuk menggunakan fungsi kita, kita harus menulis ulang di bagian bawah.
 
-Let's run this now and see what happens:
+Ayo jalankan ini sekarang dan lihat apa yang terjadi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Catatan: jika tidak berhasil, jangan panik! keluarannya akan membantu Anda untuk mengetahui mengapa:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Jika Anda mendapatkan `kesalahan nama`, itu mungkin berarti Anda mengetikkan sesuatu yang salah, jadi Anda harus memeriksa bahwa Anda menggunakan nama yang sama saat membuat fungsi dengan `def hi():` dan kapan memanggilnya dengan `hi()`.
+- Jika Anda mendapatkan `IndentationError`, periksalah bahwa kedua baris `cetak` memiliki spasi yang sama di awal baris: python menginginkan semua kode di dalam fungsi disesuaikan dengan rapi.
+- Jika tidak ada output sama sekali, periksa apakah yang terakhir `hi()` *tidak* indentasi - jika memang demikian, baris itu juga akan menjadi bagian dari fungsi, dan itu akan tidak pernah lari.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Mari kita bangun fungsi pertama kita dengan parameter. Kami akan menggunakan contoh sebelumnya - sebuah fungsi yang mengatakan 'hai' kepada orang yang menjalankannya - dengan sebuah nama:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def hi (nama):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Seperti yang bisa Anda lihat, sekarang kami memberi parameter fungsi yang kami namakan `nama`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,9 +894,9 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Ingat: Fungsi `print` adalah indentasi empat spasi di dalam `jika`pernyataan. Ini karena fungsinya berjalan saat kondisinya terpenuhi. Mari kita lihat bagaimana cara kerjanya sekarang:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}garis komando{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -908,7 +905,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, terjadi kesalahan. Untungnya, Python memberi kita pesan kesalahan yang cukup berguna. Ini memberitahu kita bahwa fungsinya `hi()` (yang kita definisikan) memiliki satu argumen yang dibutuhkan (panggilan `nama`) dan bahwa kita lupa melewatinya saat memanggil fungsinya. Mari kita memperbaikinya di bagian bawah file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -924,7 +921,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+Dan jika kita mengganti namanya?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,24 +929,24 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Dan jalankan:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah {% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Nah, apa yang menurut Anda akan terjadi jika Anda menulis nama lain di sana? (Bukan Ola atau Sonja.) Cobalah dan lihat apakah Anda benar. Ini harus mencetak ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
-    Hi anonymous!
+    Hai anonim!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Ini luar biasa kan? Dengan cara ini Anda tidak perlu mengulanginya sendiri setiap kali Anda ingin mengubah nama orang yang seharusnya disapanya. Dan itulah mengapa kita membutuhkan fungsi - Anda tidak ingin mengulang kode Anda!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Mari kita melakukan sesuatu yang lebih pintar - ada lebih banyak nama daripada dua, dan menulis sebuah kondisi untuk masing-masing akan sulit, bukan?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -960,25 +957,25 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Mari kita panggil kode sekarang:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Selamat! Anda baru saja belajar bagaimana menulis fungsi! :)
 
 ## Loops
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-dasar Python: Untuk video Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Ini adalah bagian terakhir. Itu cepat kan? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Pemrogram tidak suka mengulanginya sendiri. Pemrograman adalah tentang mengotomatisasi berbagai hal, jadi kita tidak ingin menyapa setiap orang dengan nama mereka secara manual, bukan? Di situlah loop berguna.
 
-Still remember lists? Let's do a list of girls:
+Masih ingat daftar? Mari kita daftar anak perempuan:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,17 +983,17 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Kami ingin menyapa mereka semua dengan nama mereka. Kami memiliki fungsi `hi` untuk melakukan itu, jadi mari kita gunakan dalam satu lingkaran:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-for name in girls:
+untuk nama pada anak perempuan:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+Itu ```untuk``` pernyataan berperilaku serupa dengan ```jika``` pernyataan; kode di bawah kedua ini perlu indentasi empat spasi.
 
-Here is the full code that will be in the file:
+Berikut adalah kode lengkap yang akan ada di file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,9 +1007,9 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Dan saat kita menjalankannya:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1027,20 +1024,20 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Seperti yang dapat Anda lihat, semua yang Anda masukkan ke dalam pernyataan `untuk` dengan indent akan diulang untuk setiap elemen dari daftar `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Anda juga dapat menggunakan `untuk` pada nomor dengan menggunakan fungsi `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-for i in range(1, 6):
-    print(i)
+untuk saya di kisaran (1, 6):
+    cetak(i)
 ```
 
-Which would print:
+Yang akan dicetak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
     1
     2
@@ -1049,14 +1046,14 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`jarak` adalah fungsi yang membuat daftar angka yang mengikuti satu demi satu (angka-angka ini disediakan oleh Anda sebagai parameter).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Perhatikan bahwa kedua dari kedua angka ini tidak termasuk dalam daftar yang dihasilkan oleh Python (artinya `jarak(1, 6)` dihitung dari 1 sampai 5, namun tidak termasuk angka 6). Itu karena "range" setengah terbuka, dan dengan itu kita maksudkan itu termasuk nilai pertama, tapi bukan yang terakhir.
 
-## Summary
+## Ikhtisar
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Itu dia. **Kamu benar-benar rock!** Ini adalah bab yang rumit, jadi Anda harus merasa bangga pada diri sendiri. Kami pasti bangga dengan Anda karena sejauh ini berhasil!
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Anda mungkin ingin secara singkat melakukan sesuatu yang lain - Peregangan, jalan-jalan sebentar, istirahatkan matamu - sebelum melanjutkan ke bab berikutnya. :)
 
 ![Cupcake](images/cupcake.png)
