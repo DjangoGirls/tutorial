@@ -1,4 +1,4 @@
-# What's next?
+# Vad kommer härnäst?
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
