@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS - Maak het mooi!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Onze blog ziet er nog steeds nogal lelijk uit, toch? Tijd om hem mooi te maken! Daarvoor gebruiken we CSS.
 
-## What is CSS?
+## Wat is CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) is een taal die gebruikt wordt om het uiterlijk en de opmaak van een website geschreven in markup taal (zoals HTML) te beschrijven. Zie het als make-up voor onze webpagina. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Maar we willen niet weer helemaal vanuit het niets beginnen, toch? We maken wederom gebruik van iets wat programmeurs gratis via het internet delen. Het wiel opnieuw uitvinden is saai, toch?
 
-## Let's use Bootstrap!
+## We maken gebruik van Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap is een van de meest populaire HTML en CSS frameworks om mooie websites te ontwikkelen: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Het werd geschreven door programmeurs die voor Twitter werkten. Nu wordt het onderhouden door vrijwillers van over de hele wereld!
 
-## Install Bootstrap
+## Bootstrap installeren
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+Om Bootstrap te installeren moet je het volgende toevoegen aan je `.html` bestand:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,35 +25,35 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Dit voegt geen bestanden toe aan je project. Het verwijst alleen naar bestanden die al op het internet staan. Probeer maar eens: Open je website en vernieuw de pagina. Dit is het resultaat!
 
-![Figure 14.1](images/bootstrap1.png)
+![Figuur 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Dit ziet er al een stuk beter uit!
 
-## Static files in Django
+## Statische bestanden in Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Tenslotte zullen we een kijkje nemen naar de bestanden die we **statische bestanden** hebben genoemd. Statische bestanden zijn al je CSS-bestanden en afbeeldingen. Hun inhoud is niet afhankelijk van de context en is hetzelfde voor elke gebruiker.
 
-### Where to put static files for Django
+### Waar zet je statische bestanden in Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django weet al waar het de statische bestanden voor de ingebouwde 'admin'-app kan vinden. Nu hoeven we slechts wat statische bestanden voor onze eigen app, `blog`, toe te voegen.
 
-We do that by creating a folder called `static` inside the blog app:
+We doen dit door een folder met de naam `static` aan te maken binnenin de blog applicatie:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django vindt automatisch mappen die "static" genoemd zijn binnen je applicatiemappen, en kan de inhoud daarvan vervolgens als statische bestanden gebruiken.
 
-## Your first CSS file!
+## Je eerste CSS bestand!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Laten we een CSS-bestand aanmaken, om je eigen stijl aan je website toe te voegen. Maak een nieuwe map aan genaamd: `css` binnen je `static` map. Maak daarna een nieuw bestand genaamd: `blog.css` aan binnen deze `css` map. Klaar?
 
     djangogirls
     └─── blog
@@ -62,33 +62,33 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Tijd om wat CSS te schrijven! Open het `blog/static/css/blog.css` bestand in je code editor.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Maar laten we wat details veranderen. Misschien kunnen we de kleur van onze header veranderen? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+In je `blog/static/css/blog.css` bestand moet je de volgende code toevoegen:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
+h1 a{
     color: #FCA205;
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is een CSS Selector. Dit betekent dat we onze stijl toepassen op elk `a` element binnen een `h1` element. Dus als we bijvoorbeeld iets hebben als `<h1><a href="">link</a></h1>`, wordt de `h1 a` stijl die we hebben opgegeven toegepast. In dit geval vertellen we het element zijn kleur te veranderen naar `#FCA205`, wat oranje is. Natuurlijk kun je hier elke kleur opgeven die je wilt!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In een CSS bestand bepalen we de stijl voor de elementen in het HTML bestand. De eerste manier waarop we elementen identificeren, is met de naam van het element. Je hebt deze eerder voorbij zien komen als tags uit het HTML hoofdstuk. Dingen zoals `a`, `h1` en `body` zijn allemaal namen van elementen. We kunnen elementen ook identificeren bij het attribuut `class` of het attribuut `id`. Class en id zijn namen die je zelf aan een element geeft. Een class definieert een groep van elementen, en id's verwijzen naar specifieke elementen. Je kunt bijvoorbeeld de volgende tag identificeren door de tag naam `a`, de class `external_link`, of het id `link_to_wiki_page` te gebruiken:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Je kunt meer over CSS lezen op [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+We moeten ook ons HTML template laten weten dat we wat CSS toegevoegd hebben. Open het `blog/templates/blog/post_list.html` bestand en voeg deze regel toe, helemaal bovenaan het bestand:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+We laden hier aleen de statische bestanden in. :) Tussen de `<head>` en `</head>` tags, na de link naar de Bootstrap bestanden, voeg je deze regel toe:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+De browser leest bestanden in de opgegeven volgorde, dus we moeten ervoor zorgen dat dit op de juiste plek staat. Anders wordt de code in ons bestand overschreven door de code in de Bootstrap bestanden. We hebben net aan onze template verteld waar onze CSS staat.
 
-Your file should now look like this:
+Je bestand zou er nu zo uit moeten zien:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+Ok, sla het bestand op en vernieuw de site!
 
-![Figure 14.2](images/color2.png)
+![Figuur 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Goed werk! Misschien moeten we onze site een beetje ruimte geven en de marge aan de linker kant groter maken? Laten we dit proberen!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Voeg dit aan je CSS toe, sla het bestand op, en kijk wat er veranderd is!
 
-![Figure 14.3](images/margin2.png)
+![Figuur 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Misschien kunnen we het lettertype in onze header aanpassen? Kopieer en plak dit in je `<head>` in het `blog/templates/blog/post_list.html` bestand:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +161,9 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Let weer op de volgorde en zet het vóór de link naar `blog/statig/css/blog.css`. Deze regel importeert een lettertype van Google wat *Lobster* heet. (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Zoek het `h1 a` declaratieblok op (de code tussen de haken `{` en `}`) in het CSS bestand `blog/static/css/blog.css`. Voeg nu de regel `font-family: 'Lobster';` toe tussen de haken, en ververs je pagina:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Figuur 14.3](images/font.png)
 
-Great!
+Geweldig!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Zoals hierboven vermeld, hanteert CSS een concept van klassen. Hiermee kun je een deel van je HTML code een naam geven, en een stijl alleen op dit gedeelte toepassen zonder gevolgen voor de andere delen. Dit is super handig! Misschien heb he bijvoorbeeld twee divs die allebei iets anders doen (bijvoorbeeld je header en je blog post). Met behulp van een klasse kun je ze anders stylen.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Leef je uit en benoem delen van je HTML code. Voeg als volgt een klasse genaamd `page-header` toe aan de `div` die de header bevat:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+En voeg nu de klasse `post` toe aan de `div` die je blog post bevat.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+We gaan nu declaratieblokken toevoegen aan verschillende selectors. Selectors die beginnen met `.` hebben betrekking op klassen. Er is heel veel goede uitleg en tutorials over CSS te vinden op het web die je kunnen helpen om de volgende code te begrijpen. Voor nu, knip-en-plak gewoon onderstaande code in je `blog/static/css/blog.css` bestand:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Vervolgens omring je de HTML code die die posts weergeeft met klassedeclaraties. Vervang dit:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+in `blog/templates/blog/post_list.html` met dit:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Sla de bestanden op en ververs je website.
 
-![Figure 14.4](images/final.png)
+![Figuur 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Whoohoo! Ziet er gaaf uit, toch? Bekijk de code die je zojuist geplakt hebt en probeer de plekken te vinden waar je in de HTML klassen toegevoegd hebt, die je vervolgens in de CSS hebt gebruikt. Wat zou je wijzigen als je de datum bijvoorbeeld turquoise wil maken?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Wees niet bang om een beetje met de CSS te spelen en wat dingen te veranderen. Met de CSS spelen helpt je om te begrijpen wat de verschillende dingen doen. Als er per ongeluk iets stuk gaat, maak je geen zorgen! Je kunt het altijd weer ongedaan maken!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+We raden je aan om deze gratis online [Codecademy HTML & CSS cursus](https://www.codecademy.com/tracks/web) te doen. Hiermee leer je alles over het mooier maken van websites met CSS.
 
-Ready for the next chapter?! :)
+Klaar voor het volgende hoofdstuk?! :)
