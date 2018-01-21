@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# L'ORM Django et les QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Dans ce chapitre, nous allons apprendre comment Django se connecte à la base de données et comment il y enregistre des choses. On respire un grand coup et on y va !
 
-## What is a QuerySet?
+## Qu'est-ce qu'un QuerySet ?
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-It's easiest to learn by example. Let's try this, shall we?
+Il est plus simple d'apprendre avec un exemple. Et si nous nous intéressions à celui-ci ?
 
-## Django shell
+## Le shell Django
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Ouvrez la console de votre ordinateur (et non celle de PythonAnywhere) et tapez la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Ceci devrait maintenant s'afficher dans votre console :
 
 {% filename %}command-line{% endfilename %}
 
@@ -28,9 +28,9 @@ The effect should be like this:
 
 You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
 
-### All objects
+### Lister tous les objets
 
-Let's try to display all of our posts first. You can do that with the following command:
+Essayons tout d'abord d'afficher tous nos posts. Vous pouvez le faire à l'aide de cette commande :
 
 {% filename %}command-line{% endfilename %}
 
@@ -60,9 +60,9 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 
 This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
 
-### Create object
+### Créer des objets
 
-This is how you create a new Post object in database:
+Voici comment créer un nouveau objet Post dans la base de données :
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@ This is how you create a new Post object in database:
 
 But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
 
-Let's import User model first:
+Tout d'abord, il nous faut importer le modèle User :
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Avons-nous des utilisateurs dans notre base de données ? Voyons voir :
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,7 +99,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 
 As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
 
-Now we can finally create our post:
+Nous allons enfin pouvoir créer notre post :
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Now we can finally create our post:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Hurray! Wanna check if it worked?
+Et voilà ! Vous aimeriez voir ci ça a vraiment marché ?
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,15 +116,15 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Et voilà : un post de plus dans la liste !
 
-### Add more posts
+### Ajouter plus de posts
 
 You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
 
-### Filter objects
+### Filtrer les objets
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
 
 {% filename %}command-line{% endfilename %}
 
@@ -142,7 +142,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** Il y a deux tirets bas (`_`) entre `title` et `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
@@ -162,7 +162,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Ensuite, publions-le grâce à notre méthode `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,9 +179,9 @@ Now try to get list of published posts again (press the up arrow key three times
 [<Post: Sample title>]
 ```
 
-### Ordering objects
+### Classer les objets
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Les QuerySets permettent aussi de trier la liste des objets. Essayons de les trier par le champs `created_date` :
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+On peut aussi inverser l'ordre de tri en ajouter `-` au début:
 
 {% filename %}command-line{% endfilename %}
 
@@ -199,16 +199,16 @@ We can also reverse the ordering by adding `-` at the beginning:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Chaining QuerySets
+### Chainer les QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+Vous pouvez aussi combiner les QuerySets and les **chainant** les unes aux autres :
 
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-This is really powerful and lets you write quite complex queries.
+C'est un outil très puissant qui va vous permettre d'écrire des requêtes complexes.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Génial ! Vous êtes maintenant prête à passer à l'étape suivante ! Pour fermer le shell, tapez ceci:
 
 {% filename %}command-line{% endfilename %}
 
