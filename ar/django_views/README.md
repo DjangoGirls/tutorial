@@ -1,28 +1,27 @@
-# Django views – time to create!
+# وجهات نظر جانغو -وقت الإنشاء!
 
-Time to get rid of the bug we created in the last chapter! :)
+حان الوقت للتخلص من الشوائب التي انشأناها في الفصل الأخير! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* هو المكان الذي وضعنا فيه المنطق الخاص بتطبيقنا. وسوف تطلب معلومات من `model` قمت بإنشائها من قبل وتمريرها إلى `template`. سوف ننشئ قالب في الفصل التالي. وجهات النظر هي مجرد وظائف بيثون والتي هي اكثر تعقيد قليلا من التي قمنا بكتابتها في هذا الفصل **مقدمة بيثون**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Views توضع في الملف `views.py`. وسوف نضيف *views* الخاصة بنا الى `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+حسنا، دعونا نفتح هذا الملف، ونرى ما هو في موجود:
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.shortcuts import render
-
-# Create your views here.
+من django.shortcuts استرد المحول
+إنشاء طرق العرض الخاصة بك هنا.
 ```
 
-Not too much stuff here yet.
+ليس هناك كثيرا من الأشياء هنا حتى الآن.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+تدكر ان الأسطر التي تبدأ ب`#` هي مجرد تعليقات وهذا يعني انها لن يتم استخدامها عبر بايثون.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+دعونا ننشء *view * كما يوحي التعليق. أضف الأسطر التالية أدناه:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,14 +30,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+كما ترون، أنشأنا دالة (`def`) يسمى `post_list` يأخذ `request` و `return` وظيفة `render` التي ستكون (مجتمعة) لدينا قالب `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+قم بحفظ الملف، انتقل إلى http://127.0.0.1:8000/وانظر ماذا لدينا.
 
-Another error! Read what's going on now:
+خطأ آخر! اقرأ ما يجري الآن:
 
-![Error](images/error.png)
+![خطأ](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+هذا يبين أن الملقم قيد التشغيل مرة أخرى، على الأقل، ولكن لا يزال يبدو وكأنه ليس على ما يرام أليس كذالك؟ لا تقلق، انها مجرد صفحة خطأ، لا تخف! تماما مثل رسائل الخطأ في وحدة التحكم، هذه في الواقع مفيدة جدا. يمكن أن تقرأ أن*TemplateDoesNotExist*. دعونا نصلح هذا الخطأ وننشئ قالب في الفصل التالي!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> إعرف المزيد حول آراء جانغو من خلال قراءة الوثائق الرسمية: https://docs.djangoproject.com/en/1.11/topics/http/views/
