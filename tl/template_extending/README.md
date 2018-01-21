@@ -1,14 +1,14 @@
-# Template extending
+# Pag-extend ng template
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Isa pang magandang bagay na mayroon ang Django para sa iyo ay **template extending**. Ano ang ibig sabihin nito? Ibig sabihin nito ay maaari mong gamitin ang parehong mga parte ng iyong HTML sa iba't ibang pahina ng iyong website.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Ang mga template ay nakatutulong kapag gusto mong gamitin ang parehong impormasyon o layout sa higit sa isang lugar. Hindi mo na kinakailangan na ulitin ang iyong sarili sa bawat file. At kung gusto mong baguhin ang isang bagay, hindi mo na kinakailangan na gawin ito sa bawat template, sa isa lang!
 
-## Create a base template
+## Gumawa ng isang base template
 
-A base template is the most basic template that you extend on every page of your website.
+Ang isang base template ay ang pinaka basic na template na ginagamit mo sa bawat pahina ng iyong website.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Gumawa tayo ng isang `base.html` na file sa `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Pagkatapos ay buksan ito at kopyahin lahat mula sa `post_list.html` sa `base.html` na file, kagaya nito:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Pagkatapos, sa `base.html`, palitan ang iyong kabuuang `<body>` (everything between `<body>` and `</body>`) nito:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Maaaring napansin mo na pinalitan nito ang lahat ng mula sa `{% for post in posts %}` sa `{% endfor %}` ng: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Pero bakit? Ikaw ay nakagawa ng isang `block`! Ginamit mo ang template tag na `{% block %}` upang gumawa ng lugar na magkakaroon ng HTML na nakalakip dito. Ang HTML na ito ay manggagaling sa ibang template na ini-extend ang template na ito (`base.html`). Ipapakita namin sa iyo kung paano ito gawin maya-maya.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Ngayon, i-save ang `base.html` at buksan ang `blog/templates/blog/post_list.html` ulit. {% raw %}Tatanggalin mo ang lahat ng nasa taas ng `{% for post in posts %}` at sa baba `{% endfor %}`. Kapag tapos ka na, ang file ay magiging kagaya nito: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Gusto nating gagamitin ito isip parte ng ating template para sa lahat ng mga content block. Oras na para magdagdag ng block na tags sa file na ito!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}Gusto mo na ang iyong block tag ay magtugma sa tag ng iyong `base.html` na file. Gusto mo ring itong maglakip ng lahat ng code na pag-aari ng iyong content blocks. Para gawin ito, ilagay lahat sa pagitan ng `{% block content %}` at `{% endblock %}`. Gaya nito:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Isang bagay na lang ang natira. Kailangan nating ikonekta ang dalawang templates. Ito ang ibig sabihin ng pag-extend na mga templates! Gagawin natin ito sa pamamagitan ng pagdagdag ng extend na tag sa simula ng file. Gaya nito:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+Iyan na! Tingnan ang iyong website kung gumagana pa rin ito. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Kung may nakuha kang error na `TemplateDoesNotExist`, ibig sabihin ay walang `blog/base.html` na file at ang `runserver` ay tumatakbo sa iyong console. Subukang ihinto ito (sa pamamagitan ng pag-pindut ng Ctrl+C - ang Control at ang C na mga key ng sabay) at i-start itong muli sa pamamagitan ng pagpapatakbo ng isang `python manage.py runserver` na pag-uutos.
