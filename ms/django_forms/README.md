@@ -1,6 +1,6 @@
-# Django Forms
+# Borang Django
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Hal terakhir yang kita ingin lakukan di website kami menciptakan sebuah cara yang bagus untuk menambahkan dan mengedit posting blog. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
 The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
@@ -14,7 +14,7 @@ We need to create a file with this name in the `blog` directory.
        └── forms.py
     
 
-OK, let's open it and type the following code:
+OK, mari buka dan ketik kod berikut:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -36,13 +36,13 @@ We need to import Django forms first (`from django import forms`) and, obviously
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Akhirnya, kita dapat mengatakan yang bidang(s) harus berakhir di formulir kami. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Jadi sekali lagi kita akan membuat link ke halaman, URL, pandangan dan template.
 
-## Link to a page with the form
+## Pautan ke halaman dengan borang
 
 It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
 
@@ -54,7 +54,7 @@ It's time to open `blog/templates/blog/base.html`. We will add a link in `div` n
 
 Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
-After adding the line, your HTML file should now look like this:
+Selepas menambah baris, fail HTML anda sekarang akan kelihatan seperti ini:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -97,13 +97,13 @@ We open `blog/urls.py` and add a line:
 url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Dan kod terakhir akan kelihatan seperti ini:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
-from . import views
+dari url import django.conf.urls
+dari. import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
@@ -114,14 +114,14 @@ urlpatterns = [
 
 After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
-## post_new view
+## paparan post_new
 
 Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from .forms import PostForm
+dari .forms import PostForm
 ```
 
 And then our *view*:
@@ -136,16 +136,16 @@ def post_new(request):
 
 To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Template
+## Templat
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Ini sangat penting, kerana ia menjadikan borang anda selamat! Sekiranya anda melupakan sedikit ini, Django akan mengeluh apabila anda cuba menyelamatkan borang:
 
-![CSFR Forbidden page](images/csrf2.png)
+![Halaman terlarang CSRF](images/csrf2.png)
 
 OK, so let's see how the HTML in `post_edit.html` should look:
 
@@ -163,17 +163,17 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Masa untuk dimuat semula! Yay! Borang anda dipaparkan!
 
-![New form](images/new_form2.png)
+![Borang baru](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Apa-apa! Kita sekali lagi pada halaman yang sama dan teks kita hilang... dan tidak ada posting baru ditambahkan. Jadi apa yang salah?
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
-## Saving the form
+## Menyimpan borang
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? Kami akan melakukannya seperti berikut:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -208,7 +208,7 @@ form = PostForm(request.POST)
 
 The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Kami semak jika borang itu sah dan jika ya, kami boleh menyimpannya!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -227,7 +227,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from django.shortcuts import redirect
+dari django.shortcuts import redirect
 ```
 
 Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
@@ -259,29 +259,29 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Mari kita lihat apakah ia berfungsi. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-That is awesome!
+Itu hebat!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Seperti yang baru-baru ini kami menggunakan antara muka admin Django, sistem pada masa ini menganggap kami masih log masuk. Terdapat beberapa situasi yang boleh menyebabkan kita dilog keluar (menutup penyemak imbas, memulakan semula DB, dan lain-lain). Jika, semasa membuat jawatan, anda mendapati bahawa anda mendapat kesilapan merujuk kepada kekurangan pengguna log masuk, pergi ke halaman admin http://127.0.0.1:8000/admin dan log masuk sekali lagi. Ini akan membetulkan masalah buat sementara waktu. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Logged in error](images/post_create_error.png)
+![Log masuk kesilapan](images/post_create_error.png)
 
-## Form validation
+## Pengesahan borang
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Sekarang, kami akan menunjukkan kepada anda bagaimana bentuk Django yang sejuk. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![Pengesahan borang](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django menjaga untuk mengesahkan bahawa semua bidang dalam bentuk kami adalah betul. Bukankah itu hebat?
 
-## Edit form
+## Edit borang
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Sekarang kita tahu cara menambah bentuk baru. But what if we want to edit an existing one? Ini sangat mirip dengan apa yang kita buat. Mari kita buat beberapa perkara penting dengan cepat. (Jika anda tidak memahami sesuatu, anda harus meminta jurulatih anda atau melihat bab sebelumnya, kerana kami telah melengkapkan semua langkah ini.)
 
 Open `blog/templates/blog/post_detail.html` and add the line
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+supaya templat akan kelihatan seperti ini:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -362,19 +362,19 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Apabila anda mengklik, anda akan melihat borang dengan catatan blog kami:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Jangan ragu untuk menukar tajuk atau teks dan simpan perubahan!
 
-Congratulations! Your application is getting more and more complete!
+Tahniah! Permohonan anda semakin lengkap!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
 
 ## Security
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Mampu mencipta jawatan baru hanya dengan mengklik pautan adalah hebat! Tetapi sekarang, sesiapa yang melawat laman web anda akan dapat membuat catatan blog baru, dan itu mungkin bukan sesuatu yang anda mahukan. Mari buatkannya supaya butang itu muncul untuk anda tetapi bukan untuk orang lain.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
@@ -394,9 +394,9 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Ini tidak melindungi penciptaan siaran baru sepenuhnya, tetapi ia adalah langkah pertama yang baik. Kami akan melindungi lebih banyak keselamatan dalam pelajaran lanjutan.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Ingat ikon edit yang baru kami tambahkan pada halaman terperinci kami? Kami juga ingin menambah perubahan yang sama di sana, oleh itu orang lain tidak akan dapat mengedit jawatan sedia ada.
 
 Open `blog/templates/blog/post_detail.html` and find this line:
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Tukar ke ini:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,13 +416,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Oleh kerana anda mungkin log masuk, jika anda menyegarkan halaman, anda tidak akan melihat apa-apa yang berbeza. Muatkan halaman dalam pelayar yang berlainan atau tetingkap inkognito (dipanggil "InPrivate" di Windows Edge), walaupun, dan anda akan melihat bahawa pautan itu tidak dipaparkan dan ikonnya tidak dipaparkan sama ada!
 
-## One more thing: deploy time!
+## Satu lagi perkara: menggunakan masa!
 
 Let's see if all this works on PythonAnywhere. Time for another deploy!
 
-* First, commit your new code, and push it up to Github:
+* Pertama, komit kod baru anda, dan tekankannya ke Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -444,4 +444,4 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-And that should be it! Congrats :)
+Dan itu sepatutnya! Selamat :)
