@@ -1,4 +1,4 @@
-# How the Internet works
+# Как работает Интернет
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
@@ -6,42 +6,42 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Первое, что тебе нужно понять, это то, что веб-сайт представляет собой просто группу файлов, сохраненных на жестком диске. Так же, как твои фильмы, музыка или фотографии. Тем не менее, есть одна особенность, которая является уникальной для сайтов: они содержат компьютерный код, называемый HTML.
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Если ты не знакома с программированием, то сначала может быть трудно понять HTML, но твой веб-браузер (например, Chrome, Safari, Firefox, и т. д.) обожает его. Веб-браузеры созданы для того чтобы понимать этот код, следовать его указаниям и представлять файлы, из которых состоит твой веб-сайт, именно так, как ты этого хочешь.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Как и с любым файлом, нам нужно хранить HTML файлы где-то на жестком диске. Для Интернета мы используем специальные мощные компьютеры, называемые *серверами*. У них нет экрана, мыши или клавиатуры, потому что их основной целью является хранение и обслуживание данных. That's why they're called *servers* – because they *serve* you data.
 
 OK, but you want to know how the Internet looks, right?
 
-We drew you a picture! It looks like this:
+Мы нарисовали тебе картинку! Он выглядит вот так:
 
-![Figure 1.1](images/internet_1.png)
+![Рисунок 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Довольно беспорядочно, правда? In fact it is a network of connected machines (the above-mentioned *servers*). Сотен тысяч машин! Много, много километров кабелей по всему миру! Ты можешь посетить веб-сайт с картой подводных кабелей (http://submarinecablemap.com/), чтобы увидеть, насколько сложной является сеть. Вот скриншот с сайта:
 
-![Figure 1.2](images/internet_3.png)
+![Рисунок 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Поразительно, не так ли? Однако, очевидно, что невозможно соединить кабелем каждую машину, подключенную к Интернету. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-It looks like this:
+Это выглядит приблизительно так:
 
-![Figure 1.3](images/internet_2.png)
+![Рисунок 1.3](images/internet_2.png)
 
 Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Твое письмо отправляется в ближайшее почтовое отделение. Затем оно направляется в другое, которое немного ближе к адресату, а затем в следующее и так далее до его доставки в пункт назначения. Единственное отличие в том, что при отправке множества писем (*пакетов данных*) по одному адресу, каждое из них может пойти через совершенно разные почтовые отделения (*маршрутизаторы*). Это зависит от того, как они были распределены в каждом отделении.
 
-![Figure 1.4](images/internet_4.png)
+![Рисунок 1.4](images/internet_4.png)
 
 That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Вместо адресов с названием улицы, города, почтового индекса и названия страны мы используем IP-адреса. Твой компьютер сначала просит DNS (Domain Name System) перевести djangogirls.org в IP-адрес. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Ты также используешь язык, который понимает получатель, верно? То же самое относится к *пакетам данных*, которые ты отправляешь, чтобы увидеть веб-сайт. Мы используем протокол под названием HTTP (англ. HyperText Transfer Protocol, протокол передачи гипертекста).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Поэтому, в принципе, когда у тебя есть веб-сайт, то необходимо иметь и *сервер* (машину), где он находится. Когда *сервер* получает входящий *запрос* (в письме), он отправляет обратно твой веб-сайт (в другом письме).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Since this is a Django tutorial, you might ask what Django does. Когда ты отправляешь ответ, то ты не всегда хочешь отправлять одно и то же письмо всем получателям. Намного лучше, если твои письма являются персонифицированными, особенно для человека, который только что сам тебе написал, правильно? Django помогает нам с созданием этих персонализированных, интересных писем. :)
 
 Enough talk – time to create!
