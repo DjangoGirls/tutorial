@@ -1,25 +1,25 @@
-# What's next?
+# ما هي الخطوة التالية؟
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+هنئ نفسك ** أنت رائع تماما ** نحن فخورون بك! <3
 
-### What to do now?
+### ماذا يجب ان تفعل الأن؟
 
-Take a break and relax. You have just done something really huge.
+خذ قسط من الراحة والاسترخاء. لقد فعلت للتو شيء ضخم حقا.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+بعد ذلك، تأكد من اتباع Django Girls على [ الفيسبوك ](http://facebook.com/djangogirls) أو [ تويتر ](https://twitter.com/djangogirls) للبقاء مطلعا على كل الأحداث.
 
-### Can you recommend any further resources?
+### هل يمكنك التوصية بأي موارد إضافية؟
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+نعم! أولا، أمضي قدما وحاول تجربة هذا الكتاب [ Django Girls Tutorial: Extensions ](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-Later on, you can try the resources listed below. They're all very recommended!
+لاحقا، يمكنك تجربة الموارد المدرجة أدناه. نحن نوصي بها كلها!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [دجانغو البرنامج التعليمي الرسمي](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [دروس المبرمج المبتدئ](http://newcoder.io/tutorials/)
+- [كود أكاديمي: دروس بايثون](https://www.codecademy.com/en/tracks/python)
+- [كود أكاديمي دروس HTML & CSS](https://www.codecademy.com/tracks/web)
+- [دجانغو دروس الجزر](https://github.com/ggcarrots/django-carrots)
+- [كتاب تعلم بايثون بالطريقة الصعبة](http://learnpythonthehardway.org/book/)
+- [إبدأ مع دجانغو دروس الفيديو](http://www.gettingstartedwithdjango.com/)
+- [ملعقتان من جانغو 1.11: أفضل الممارسات لجانغو كتاب إطار الويب](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [ تطبيق مرحبا بالويب: تعلم كيفية بناء تطبيق على شبكة الإنترنت ](https://hellowebapp.com/) - يمكنك أيضا طلب ترخيص الكتاب الإلكتروني مجانا عن طريق الاتصال بتراسي أوسبورن في <tracy@limedaring.com>
