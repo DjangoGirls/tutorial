@@ -1,108 +1,106 @@
-> Для проходящих руководство дома: эта глава рассмотрена в видео [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 
+> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-> Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
-Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила Python 3.6, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить.
+<!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-Для начала проверь, какая версия Windows у тебя установлена — 32-битная или 64-битная. Для этого нажми Windows + Pause/Break, чтобы открыть окно «Сведения о системе», и посмотри, что написано в строке «Тип системы». Ты можешь загрузить Python для Windows с официального веб-сайта: https://www.python.org/downloads/windows/. Перейди по ссылке «Latest Python 3 Release - Python x.x.x». Если у тебя установлена **64-битная** версия Windows, скачай **Windows x86-64 executable installer**. Если нет — скачай **Windows x86 executable installer**.  После загрузки дистрибутива ты должна запустить его (двойной щелчок) и следовать инструкциям. Важно запомнить путь (каталог), куда ты установила Python. Это понадобится позже!
+![Не забудьте добавить Python в системную переменную Path](../python_installation/images/python-installation-options.png)
 
-Обрати внимание на второй экран мастера установки, который называется «Customize» (Настройка): тебе нужно пролистать его вниз и выбрать опцию «Add Python 3.6 to the PATH» (Добавить Python 3.6 к системной переменной PATH), как на рисунке:
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
-![Не забудь добавить Python в системную переменную Path](../python_installation/images/python-installation-options.png)
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Чуть дальше тебе понадобится командная строка Windows (о которой мы расскажем отдельно). Пока что, если тебе нужно ввести какую-нибудь команду, перейди в меню Пуск → Служебные — Windows → Командная строка. Или ты можешь зажать кнопку Windows и нажать кнопку «R», чтобы появился диалог «Выполнить». Для запуска командной строки введи «cmd» и нажми enter. (В новых версиях Windows тебе, возможно, придётся воспользоваться поиском — «Командная строка» иногда скрыта).
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
-![Введи "cmd" в окне "Выполнить"](../python_installation/images/windows-plus-r.png)
+1. install all Windows Updates and try to install Python 3.6 again; or
+2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Примечание: если ты используешь старую версию Windows (7, Vista или ещё более старую версию) и установка Python 3.6.x завершается выводом сообщения об ошибке, ты можешь попробовать:
-1. либо установить все доступные обновления Windows и попробовать установить Python 3.6 заново;
-2. либо установить [более раннюю версию Python](https://www.python.org/downloads/windows/), например, [3.4.6](https://www.python.org/downloads/release/python-346/).
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-Если тебе пришлось установить раннюю версию Python, экран установки можешь выглядеть чуть иначе. Не забудь прокрутить окно до строки «Add python.exe to Path», затем нажми кнопку слева от неё и выбери пункт «Will be installed on local hard drive»:
-
-![Добавление Python в переменную Path, ранние версии](../python_installation/images/add_python_to_windows_path.png)
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Примечание:** перед установкой Python в OS X тебе нужно проверить, что в настройках твоего Mac разрешено устанавливать пакеты, загруженные не из App Store. Перейди в Системный настройки (в папке «Программы»), нажми «Защита и безопасность» и выбери вкладку «Общие». Если в разделе «Разрешать загрузки из:» выбран вариант «App Store для Mac», смени его на «App Store для Mac и от установленных разработчиков».
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-361/ и скачать дистрибутив Python:
+Тебе нужно перейти по ссылки https://www.python.org/downloads/release/python-361/ и скачать дистрибутив Python:
 
-  * Скачай файл *Mac OS X 64-bit/32-bit installer*,
-  * Сделай двойной щелчок на *python-3.4.3-macosx10.6.pkg* для запуска установщика.
+* Скачай файл *Mac OS X 64-bit/32-bit installer*,
+* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="python_linux"
+<!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
 Вполне вероятно, что у тебя уже установлен Python. Чтобы проверить это (а также версию языка), открой консоль и введи следующую команду:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
-Python 3.6.1
-```
 
-Если Python не установлен или ты хочешь использовать другую версию языка, то можешь установить его следующим образом:
+    $ python3 --version
+    Python 3.6.1
+    
 
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. Если Python не установлен, или ты хочешь использовать другую версию языка, то можешь установить его следующим образом:
 
 <!--endsec-->
 
-<!--sec data-title="Debian или Ubuntu" data-id="python_debian"
-data-collapse=true ces-->
+<!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
 Введи эту команду в консоль:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo apt-get install python3.6
-```
+
+    $ sudo apt-get install python3.6
+    
 
 <!--endsec-->
 
-<!--sec data-title="Fedora" data-id="python_fedora"
+<!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
 Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo dnf install python3
-```
 
-Если у тебя старая версия Fedora, то ты можешь получить ошибку «command dfn is not found». В этом случае используй yum.
+    $ sudo dnf install python3
+    
+
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
 
 <!--endsec-->
 
-<!--sec data-title="openSUSE" data-id="python_openSUSE"
+<!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
 Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo zypper install python3
-```
+
+    $ sudo zypper install python3
+    
 
 <!--endsec-->
 
-Убедись, что установка прошла успешно, открыв приложение *Терминал* и запустив команду `python3`:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
-Python 3.6.1
-```
 
-**ПРИМЕЧАНИЕ:** если ты используешь Windows и получила ошибку с сообщением, что `python3` не найден, попробуй ввести `python` (без `3`) и проверь, будет ли это версия Python 3.6.
+    $ python3 --version
+    Python 3.6.1
+    
 
-----
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
-Если у тебя остались какие-либо сомнения или что-то пошло не так и ты понятия не имеешь, что делать дальше, — спроси своего тренера! Иногда дела идут не совсем гладко, поэтому лучше попросить помощи у кого-то с большим опытом.
+* * *
+
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Иногда дела идут не совсем гладко, поэтому лучше попросить помощи у кого-то с большим опытом.
