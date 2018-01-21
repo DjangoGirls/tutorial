@@ -1,12 +1,12 @@
-# Django models
+# Django моделі
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Наразі ми б хотіли створити щось, що зберігатиме усі дописи в нашому блозі. Але щоб бути спроможними це зробити, нам необхідно трохи поговорити про таке поняття, як об'єкти `objects`.
 
-## Objects
+## Об'єкти
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Отже, що ж таке об'єкт? Це набір властивостей та дій. Звучить дивно, але представимо приклад.
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
@@ -28,13 +28,13 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Отже, основна ідея полягає в тому, щоб описати реальні речі в програмному коді з усіма їх властивостями (так званими властивостями об'єкта `object properties`) і діями (так званими методами `methods`).
 
-How will we model blog posts then? We want to build a blog, right?
+Як же ми тоді змоделюємо дописи у блозі? Ми ж хочемо створити блог, правда?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Нам треба відповісти на питання: що таке допис у блозі? Які властивості він повинен мати?
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Однозначно наш допис повинен містити певний текст із змістом і заголовком, правда ж? It would be also nice to know who wrote it – so we need an author. Зрештою, ми б хотіли знати коли було створено і опубліковано цей допис.
 
     Post
     --------
@@ -45,23 +45,23 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Якого роду дії можна було б вчиняти з дописом у блозі? Було б непогано мати певний метод, що публікує допис, правда ж? 
 
-So we will need a `publish` method.
+Отже, нам потрібен метод `publish`.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Таким чином, знаючи нарешті, чого ми хочемо досягти, можемо почати моделювати це в Django!
 
-## Django model
+## Django модель
 
-Knowing what an object is, we can create a Django model for our blog post.
+Знаючи яким є наш об'єкт, можемо створити Django модель для допису у нашому блозі.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+A model in Django is a special kind of object – it is saved in the `database`. База даних є набором певних даних. Це є місце, де ви будете зберігати інформацію про користувачів, дописи у вашому блозі тощо. Надалі для зберігання наших даних будемо використовувати базу даних SQLite. This is the default Django database adapter – it'll be enough for us right now.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Ви можете уявляти модель в базі даних як таблицю зі стовпчиками (полями) та рядками (дані). 
 
-### Creating an application
+### Створення додатку
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Щоб підтримувати все у порядку, створимо окремий додаток всередині нашого проекту. Дуже добре зберігати в усьому організованість з самого початку. Щоб створити додаток треба запустити наступну команду в консолі (з директорії `djangogirls`, де знаходиться файл `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -110,7 +110,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Створення моделі допису у блозі
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. Ця домовленість часто використовується в Python й іноді ми називаємо її "dunder" (скорочення від англ. "double-underscore").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
@@ -148,9 +148,9 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
+- `class` - це спеціальне ключове слово, яке показує що ми визначаємо об'єкт.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `models.Model` означає, що Post є Django моделлю, отже Django знає, що вона повинна бути збережена у базі даних.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
@@ -169,7 +169,7 @@ Also notice that both `def publish(self):` and `def __str__(self):` are indented
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Create tables for models in your database
+### Створення таблиць для моделей в базі даних
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
