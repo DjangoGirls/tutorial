@@ -1,40 +1,45 @@
-# Django models
+# Django modely
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Teraz pôjdeme vytvoriť niečo, čo bude uchovávať naše príspevky v blogu. Aby sme to vedeli spraviť, musíme si najskôr povedať niečo o `objektoch`.
 
-## Objects
+## Objekty
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+V programovaní sa používa pojem `objektovo orientované programovanie`. Myšlienka spočíva v tom, že namiesto vypisovania nudných sekvencií programátorských príkazov môžeme veci modelovať a definovať ako majú navzájom komunikovať.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Takže čo je to objekt? Je to zbierka vlastností a akcií. Znie to čudne, ale ukážeme si príklad.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Ak chceme namodelovať mačku, vytvoríme objekt `Macka`, ktorá má nejaké vlastnosti, napríklad: `farba`, `vek`, `nalada` (t. j. dobrá, zlá, ospalá ;)), a `majitel` (ktorý je objektom `Osoba` alebo možno v prípade túlavej mačky bude táto vlastnosť prázdna).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Ďalej má `Macka` niekoľko akcií: `priast`, `skrabat` alebo `krmit` (v ktorej dáme mačke nejaké `MacacieZradlo`, ktoré by mohlo byť samostatným objektom s vlastnosťami, t. j. `chut`).
 
-    Cat
+    Macka
     --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+    farba
+    vek
+    nalada
+    majitel
+    priast()
+    skrabat()
+    krmit(mac_zradlo)
+    
+    
+    MacacieZradlo
+    --------
+    chut
     
 
-    CatFood
+    MacacieZradlo
     --------
-    taste
+    chut
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Takže v podstate myšlienka je popísať reálne veci kódom pomocou vlastností (ktorým hovoríme `vlastnosti objektu/object properties`) a akcií (tie nazývame `metódy`).
 
-How will we model blog posts then? We want to build a blog, right?
+Ako teda budeme modelovať blog post? Chceme predsa vytvoriť blog, nie?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Musíme odpovedať na otázku: Čo je vlastne blog post? Aké vlastnosti by mal mať?
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+No, náš blog post určite potrebuje nejaký text s obsahom a titulkom, nie? Bolo by tiež fajn vedieť, kto ho napísal - takže potrebujeme autora. A nakoniec, chceme vedieť, kedy bol post vytvorený a zverejnený.
 
     Post
     --------
@@ -45,23 +50,23 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Čo všetko môžeme s blog postom robiť? Bolo by dobré mať nejakú `metódu`, ktorá post publikuje, však?
 
-So we will need a `publish` method.
+Takže budeme potrebovať metódu `publish`.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Keďže už vieme, čo chceme dosiahnuť, začnime tvoriť model v Djangu!
 
 ## Django model
 
-Knowing what an object is, we can create a Django model for our blog post.
+Keďže už vieme, čo je objekt, môžeme vytvoriť Django model pre náš blog post.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Model v Djangu je špeciálny typ objektu - je uložený v `databáze`. Databáza je súbor údajov. Je to miesto, kde budeš ukladať informácie o užívateľoch, príspevkoch na blogu, atď. Na ukladanie údajov budeme používať databázu SQLite. Je to štandardný východzí databázový adaptér v Djangu -- nateraz nám bude stačiť.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Model v databáze si môžeš predstaviť ako tabuľku so stĺpcami (polia) a riadkami (dáta).
 
-### Creating an application
+### Vytvorenie aplikácie
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Aby sme mali všetko pekne upratané, vytvoríme vo vnútri nášho projektu samostatnú aplikáciu. Je dobré mať všetko zorganizované hneď od začiatku. Aby sme vytvorili aplikáciu, musíš v konzole spustiť nasledujúci príkaz (v adresári `djangogirls`, kde sa nachádza súbor `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -110,7 +115,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Vytvorenie modelu blog postu
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
@@ -140,7 +145,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Dvakrát skontroluj, či si použila 2 podčiarkovníky (`_`) na oboch stranách `str`. Táto konvencia sa v Pythone často používa a niekedy sa tomu hovorí "dunder" (skratka pre anglické Double-UNDERscore).
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
@@ -148,16 +153,16 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `class` je špeciálne kľúčové slovo, ktoré naznačuje, že definujeme objekt.
+- `Post` je meno nášho modelu. Môžeme mu dať iný názov (ale musíme sa vyhnúť špeciálnym a prázdnym znakom). Názov triedy vždy začni písmenami.
+- `models.Model` znamená, že Post je Django Model, takže Django vie, že by mal byť uložený v databáze.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `modely. CharField` - takto môžeš definovať text s obmedzeným počtom znakov.
+- `models.TextField` - toto je pre dlhé texty bez obmedzenia. To znie ideálne pre blogový príspevok, nie?
+- `models.DateTimeField` - dátum a čas.
+- `models.ForeignKey` - odkaz na iný model.
 
 We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
@@ -169,7 +174,7 @@ Also notice that both `def publish(self):` and `def __str__(self):` are indented
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Create tables for models in your database
+### Vytváranie tabuliek pre modely v databáze
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
