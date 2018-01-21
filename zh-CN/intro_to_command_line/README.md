@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# 命令行界面简介
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**让我们把你介绍给你的第一个新朋友： 命令行 ！**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+以下步骤将显示你如何使用所有的黑客都使用的黑色窗口。它可能刚开始看上去有点吓人，但事实上它只是等待你的命令提示符。
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## 什么是命令行？
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+这个窗口通常被称为 **命令行** 或 **命令行界面**，是一个基于文本的用来查看、 处理、 和操作您的计算机上的文件的应用程序。 It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. 命令行的其他名字是： *cmd*，*CLI*、 *提示符*、 *控制台* 或 *终端*.
 
-## Open the command-line interface
+## 打开命令行界面
 
-To start some experiments we need to open our command-line interface first.
+为了进行一些实验，我们需要首先打开我们的命令行界面。
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -34,17 +34,17 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+它可能是根据应用程序 → 附件 → 终端，但这可能取决于您的版本系统。如果它不存在，只需谷歌一下. :)
 
 <!--endsec-->
 
-## Prompt
+## 提示符
 
-You now should see a white or black window that is waiting for your commands.
+你现在应该看到一个白色或黑色的窗口，正等待着你的命令。
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+如果你是在 Mac 或 Linux 上，您可能看到 `$`，就像这样：
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+在 Windows 上，它是一个 `>` 标志，像这样：
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,7 +64,7 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+每个命令将前缀由这个符号和一个空格组成，但您不必键入它。您的计算机将为您完成这个. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## 你的第一个命令 （耶 ！）
 
 Let's start by typing this command:
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+然后键入 `enter`。这是我们的结果：
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +102,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+正如你所看到的计算机刚刚打印了你的用户名。棒吧，呵呵? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Basics
+## 基础知识
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+每个操作系统都有一组略有不同的适用于相应命令行的命令，所以请务必按照您的操作系统说明来做。我们试试这个，好吗？
 
-### Current directory
+### 当前目录: 
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+知道身在何处让人高兴，对不对？让我们看看。输入命令并键入`enter`：
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> 注： 'pwd' 代表 '打印工作目录'。
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+在你的机器上你可能会看见类似的东西。一旦你打开命令行工具你通常开始于用户主目录。
 
 * * *
 
-### List files and directories
+### 列出文件和目录
 
-So what's in it? It'd be cool to find out. Let's see:
+那么它是什么？它一定很酷，找出。让我们看看：
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -177,9 +177,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### 更改当前目录
 
-Now, let's go to our Desktop directory:
+现在，让我们去我们桌面目录：
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+请检查它是否真的发生改变了：
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,15 +221,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+它在这儿 ！
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Create directory
+### 创建目录
 
-How about creating a practice directory on your desktop? You can do it this way:
+在你的桌面上创建一个practice目录怎么样？你可以这样做：
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,17 +249,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+这小小的命令将在桌面上为你创建名为`practice` 的目录。 你可以查看桌面文件夹或者通过运行 `ls` 或 `dir` 命令检查它是否存在！ 试试. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> 进阶提示： 如果你不想要一遍又一遍地键入相同的命令，试着按 `向上箭头键` 和 `向下箭头` 下循环查看最近你使用过的命令。
 
 * * *
 
-### Exercise!
+### 练习
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### 解决方法
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+恭喜 ！:)
 
 * * *
 
-### Clean up
+### 清理
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+我们不想留下一个烂摊子，所以让我们删除所有的东西，直到达到目的。
 
-First, we need to get back to Desktop:
+首先，我们需要回到桌面：
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+检查你在哪里：
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+现在删除 `practice` 目录：
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +360,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+完成了 ！为了肯定它真的已经删除了，让我们检查一下：
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,9 +380,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### 退出
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+暂时就到这里！你可以安全的关闭命令行。让我们以黑客的方式，好吗? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,28 +402,28 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+很酷吧? :)
 
-## Summary
+## 摘要
 
-Here is a summary of some useful commands:
+这里是一些有用的命令摘要：
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| 命令 (Windows)   | 命令 （Mac OS / Linux） | 说明：                        | 示例：                                               |
+| -------------- | ------------------- | -------------------------- | ------------------------------------------------- |
+| exit           | exit                | 关闭窗口                       | **exit**                                          |
+| cd             | cd                  | 更改目录                       | **cd test**                                       |
+| cd             | pwd                 | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir            | ls                  | 列出的目录文件                    | **dir**                                           |
+| copy           | cp                  | 复制文件                       | **copy c:\test\test.txt c:\windows\test.txt** |
+| move           | mv                  | 移动文件                       | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir          | mkdir               | 创建一个新目录                    | **mkdir testdirectory**                           |
+| rmdir (or del) | rm                  | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S       | rm -r               | delete a directory         | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+这些不过是你在你的命令行中可以运行的少量命令，但你今天不会用到比这里更多的了。
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+如果你好奇，[ss64.com](http://ss64.com) 包含用于所有操作系统命令的完整引用。
 
-## Ready?
+## 准备好了吗？
 
-Let's dive into Python!
+让我们深入到 Python ！
