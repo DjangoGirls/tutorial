@@ -360,7 +360,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Έγινε! Για να βεβαιωθείς οτι έχει διαγραφεί, ας το ελέγξουμε:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,9 +380,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### $ rm -r practice
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Αυτά για τώρα! Μπορείς να κλείσεις τη γραμμή εντολών με ασφάλεια τώρα. Ας το κάνουμε με τον τρόπο του χάκερ, εντάξει? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,28 +402,28 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Ωραίο, ε? :)
 
-## Summary
+## Περίληψη
 
-Here is a summary of some useful commands:
+Μια περίληψη κάποιων χρήσιμων εντολών:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                     | Παράδειγμα                                        |
+| ---------------- | ----------------------- | ----------------------------- | ------------------------------------------------- |
+| exit             | exit                    | κλείσιμο παραθύρου            | **exit**                                          |
+| cd               | cd                      | αλλάξτε κατάλογο              | **cd test**                                       |
+| cd               | pwd                     | show the current directory    | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir              | ls                      | λίστα καταλόγων/αρχείων       | **dir**                                           |
+| copy             | cp                      | αντιγραφή αρχείου             | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                      | move file                     | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                   | δημιούργησε έναν νέο κατάλογο | **mkdir testdirectory**                           |
+| rmdir (or del)   | rm                      | delete a file                 | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                   | delete a directory            | **rm -r testdirectory**                           |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Ready?
+## Είστε έτοιμη;
 
 Let's dive into Python!
