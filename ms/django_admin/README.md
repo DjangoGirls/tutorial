@@ -1,6 +1,6 @@
 # Django admin
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Untuk menambah, edit dan padamkan siaran kami baru saja dimodelkan, kita akan menggunakan Django admin.
 
 Let's open the `blog/admin.py` file and replace its contents with this:
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Seperti yang anda boleh lihat, kita import (termasuk) Pos model didefinisikan dalam bab sebelumnya. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, masa untuk melihat model Pos kami. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. Anda akan melihat halaman login seperti ini:
 
-![Login page](images/login_page2.png)
+![Halaman log masuk](images/login_page2.png)
 
 To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Ingat, untuk tulis arahan baru ketika pelayan web adalah berjalan, buka terminal baru jendela dan mengaktifkan anda virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
