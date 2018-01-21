@@ -1,18 +1,18 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+Git היא תוכנת version control (ובעברית, בקרת גרסאות), שמתכנתים רבים משתמשים בה. התוכנה הזו יודעת לעקוב אחרי שינויים בקבצים לאורך זמן, כך שתמיד אפשר לעבור לגרסה אחרת מאוחר יותר. זה קצת כמו track changes ב-Microsoft Word, אבל הרבה יותר חזק.
 
-## Installing Git
+## התקנת Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+את יכולה להוריד את git מ-[git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). מלבד זאת, אפשרויות ברירת המחדל הן סבבה. גם הסרת הסימון מ-Windows-style line endings והוספתו ב-Unix-style line endings היא רעיון לא רע.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+תורידי git מ-[git-scm.com](https://git-scm.com/) ותעקבי אחרי ההוראות.
 
 > **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
