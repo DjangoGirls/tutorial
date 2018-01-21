@@ -1,50 +1,50 @@
-# Introduction to the command-line interface
+# Introduksyon sa command-line na interface
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Para sa mga magbabasa sa bahay: ang kabanatang ito ay kalakip sa [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) na video.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Ito ay kapanapanabik, hindi ba?! Magsusulat ka ng pinakauna mong linya ng code sa loob lamang ng ilang minuto! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Ipapakilala ka namin sa iyong kauna-una at bagong kaibigan: ang command line!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+The sumusunod na mga hakbang ay magpapakita sa iyo ng isang black na window na ginagamit ng lahat ng mga hacker. Maaring itong nakakatakot sa simula pero ito ay isang prompt lang na naghahantay ng mga utos galing sa iyon.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Paalala** Tandaan na sa kabuuan ng aklat na ito gagamit tayo ng mga termino na minsan napagpalit, ang 'directory' at 'folder', ngunit sila ay iisa at pareho lang.
 
-## What is the command line?
+## Ano ang command line?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Ang window, na kadalasang tinatawag na **command line** o **command-line na interface**, ay isang text-based na aplikasyon para makita, makontrol, at mamanipula ang mga file sa iyong kompyuter. Kagaya lang ito ng Windows Explorer o Finder sa Mac, ngunit walang graphical na interface. Ang ibang pangalan ng command line ay: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
 
-## Open the command-line interface
+## Buksan ang command-line na interface
 
-To start some experiments we need to open our command-line interface first.
+Para makasimulang mag-eksperimento, kailangan muna nating buksan ang command-line na interface.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Pumunta sa Start menu → Windows System → Command Prompt.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Sa mga lumang bersyon ng Windows, hanapin sa Start menu → All Programs → Accessories → Command Prompt.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Pumunta sa Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+Siguro nasa loob ito ng Applications → Accessories → Terminal, ngunit nakadepende ito sa iyong sistem. Kung wala ito dito, i-Goggle lang ito. :)
 
 <!--endsec-->
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Dapat makakita ka ng isang white o black na window na naghihintay isa iyong mga commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Kung ikaw ay nasa Mac o Linux, siguro nakakita ka ng `$`, gaya nito:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+Sa windows, ito ay `>` na sign, gaya nito:
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,15 +64,15 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Bawat command ay nakaprepend nang sign na ito at isang space, ngunit hindi mo na kailangang itype ito. Ang kompyuter na ang gagawa nito para sa iyo. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Isang maliit na paalala: sa kaso mo maaring may makikita kang `C:\Users\ola>` o `Olas-Macbook-Air:~ ola$` bago ang prompt na sign, at ito 100% OK lang.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Ang parte hanggang at kasali ang `$` o ang `>` ay tinatawag na *command line prompt*, o *prompt* kung pinaikli. Ito ay magprompt sa iyo na mag-input dito.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+Sa tutorial, kung gusto namin na magtype ka ng command, isasali na namin ang `$` o `>`, at minsan may nadagdag pa sa kaliwa. Maari mong ibalewala ang kaliwang parte at magtype lang ng command na nagsisimula pagkatapos ng prompt.
 
-## Your first command (YAY!)
+## Ang una mong command (YAY!)
 
 Let's start by typing this command:
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+At pindutin ang `enter`. Ito ang ating resulta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +102,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Gaya ng makikita mo, ang kompyuter ay nagprinta sa iyong bansag. Malinis, di ba? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Subukan mong magtype ng bawat command; huwag mag copy-paste. Mas matandaan mo ito sa ganitong paraan!
 
-## Basics
+## Mga Basic
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Bawat operating system ay may medyo iba-ibang set ng mga commands para sa command line, kaya siguradihing sumunod sa mga instruksyon para sa iyong operating system. Subukan natin ito, tara na?
 
-### Current directory
+### Kasalukuyang directory
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Mas maganda kapag alam natin kung saan tayo, di ba? Tingnan natin. I-type ang command na ito at pindutin ang `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Paala: 'print working directory' ang kahulugan ng 'pwd'.
 
 <!--endsec-->
 
@@ -134,17 +134,17 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Tandaan: ang 'cd' ay kumakatawan sa 'change directory'. Gamit ang powershell maaari kang gumamit ng pwd gaya ng sa Linux o Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Maaring nakakita ka ng kagaya nito sa iyong makina. Kapag nabuksan mo na ang command line, kadalasang magsisimula ka iyong home directory ng user.
 
 * * *
 
-### List files and directories
+### Lista ng mga file at mga directory
 
-So what's in it? It'd be cool to find out. Let's see:
+Ano ang dapat nasa loob ito. Maganda kung ating makita ito. Tingnan natin:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Tandaan: Sa powershell, maaari kang gumamit ng 'ls' gaya ng sa Linux at Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Magpalit ng kasalukuyang directory
 
-Now, let's go to our Desktop directory:
+Ngayon, puntahan nating ang ating Desktop na directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Tingnan kung nabago ba talaga ito:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,15 +221,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Nandito na!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: kung mag type ka ng `cd D` at magpindut ng `tab` sa iyong keyboard, ang command line ay awtomatikong maglagay ng buong pangalan para mabilis mo itong manavigate. Kung mayroong higit sa isang folder na nagsisimula sa "D", pindutin ang `tab` na key ng dalawang beses para makuha mo ang lista ng mga options.
 
 * * *
 
-### Create directory
+### Maglikha ng directory
 
-How about creating a practice directory on your desktop? You can do it this way:
+Paano kaya kung maglikha ka ng practice directory sa iyong desktop? Maari mo itong gawin sa ganitong paraan:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,17 +249,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Ang maliit na command na ito ay maglikha ng folder na may pangalang `practice` sa iyong desktop. Maari mo itong tingnan sa pamamagitan ng pagpunta sa iyong Desktop o sa pamamagitan ng pagpapatakbo ng `ls` o `dir` na command! Subukan ninyo ito. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: kung hindi mo gustong magtype ng parehong mga command ng paulit-ulit, subukang pindutin ang `up arrow` at `down arrow` sa iyong keyboard para maikot ang mga kakagamit lang na mga command.
 
 * * *
 
-### Exercise!
+### Mag-ehersisyo!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+May maliit na pagsusubok para sa iyo: sa iyong kakalikha na `practice` na directory, maglikha ng directory na tatawaging `test`. (Gamitin ang `cd` at `mkdir` na mga command.)
 
-#### Solution:
+#### Solusyon:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Maligayang bati! :)
 
 * * *
 
-### Clean up
+### Maglinis
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Hindi natin gustong mag-iwan ng kalat, kaya burahin natin ang lahat ng nagawa natin hanggang sa puntong ito.
 
-First, we need to get back to Desktop:
+Una, kailangan nating makabalik sa Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +313,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Gamit ang `..` kasabay ng `cd` na command ay magbabago sa iyong kasalukuyang directory sa magulang na directory (ito ay and directory na naglalaman ng iyong kasalukuyang directory).
 
-Check where you are:
+Suriin kung nasaan ka na:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,9 +337,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Ngayon ay oras na para burahin ang `practice` na directory:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Bigyang pansin>**: Ang pagbura ng file gamit ang `del`, `rmdir` o `rm` ay hindi na marecover ulit, ibig sabihin na *ang mga naburang file ay mawala na magpakailanman*! Dapat maging maingat sa command na ito.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -360,7 +360,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Tapos na! Para masiguro na nabura talaga ito, tingnan natin ito:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +382,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Iyan na sa ngayon. Maari mo nang isara ang command line ngayon. Gagawin natin ito sa hacker na paraan, okay ba? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,28 +402,28 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, di ba? :)
 
-## Summary
+## Buod
 
-Here is a summary of some useful commands:
+Ito ang buod ng iilang mga command:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Paglalarawan                       | Halimbawa                                         |
+| ----------------- | ------------------------ | ---------------------------------- | ------------------------------------------------- |
+| exit              | exit                     | isara ang window                   | **exit**                                          |
+| cd                | cd                       | baguhin ang directory              | **cd tesr**                                       |
+| cd                | pwd                      | ipakita ang kasalukuyang directory | **cd** (Windows) o **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | lista ng mga directory/files       | **dir**                                           |
+| kopya             | cp                       | kopyahin ang file                  | **copy c:\test\test.txt c:\windows\test.txt** |
+| ilipat            | mv                       | maglipat ng file                   | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | maglikha ng bagong directory       | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                       | burahin ang file                   | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | magbura ng directory               | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Ang mga ito ay iilan lang sa mga command na maari mong mapatakbo sa iyong command line, ngunit hindi ka gagamit ng higit pa dito sa ngayon.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Kung ikaw ay curious, ang [ss64.com](http://ss64.com) ay naglalaman ng kompletong lista ng mga command para sa lahat ng operating systems.
 
-## Ready?
+## Handa ka na ba?
 
-Let's dive into Python!
+Pumunta na tayo sa Python!
