@@ -1,58 +1,58 @@
-# If you're doing the tutorial at home
+# Se stai facendo il tutorial a casa
 
 If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Copriamo questi argomenti nel tutorial completo, e questa è una pagina aggiuntiva contenente tutte le istruzioni di installazione. L'evento Django Girls include una "serata di installazione" dove andremo ad installare tutto ciò che ci serve, così non dovremo farlo durante il workshop.
 
 If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Good luck!
+Buona fortuna!
 
-# Installation
+# Installazione
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'impostazione che sarebbe bello completare in anticipo, in modo che tu sia pronta a scrivere codice in giornata.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Installare Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Preparare virtualenv e installare Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install a code editor
+# Installare un editor di codice
 
 {% include "/code_editor/instructions.md" %}
 
-# Install Git
+# Installare Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Creare un account GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+Vai all'indirizzo [GitHub.com](https://www.github.com) e crea un nuovo account utente gratuito.
 
-# Create a PythonAnywhere account
+# Creare un account PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Inizia la lettura
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Congratulazioni, sei pronta a partire! Se hai del tempo prima del workshop sarebbe magnifico se leggessi qualche capitolo iniziale:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Come funziona Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introduzione alla riga di comando](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introduzione a Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Che cos'è Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Divertiti al workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Quando inizierà il workshop, potrai andare direttamente a [il tuo primo progetto Django!](../django_start_project/README.md) dato che hai già coperto il materiale dei capitoli precedenti.
