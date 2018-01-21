@@ -1,0 +1,94 @@
+# Plantillas de Django
+
+¡Es hora de mostrar algunos datos! Para ello Django incorpora unas etiquetas de plantillas, **template tags**, muy útiles.
+
+## ¿Qué son las etiquetas de plantilla?
+
+Verás, en HTML no se puede escribir código en Python porque los navegadores no lo entienden. Sólo saben HTML. Sabemos que HTML es bastante estático, mientras que Python es mucho más dinámico.
+
+**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+
+## Mostrar la plantilla post list
+
+En el capítulo anterior le dimos a nuestra plantilla una lista de entradas en la variable `posts`. Ahora la vamos a mostrar en HTML.
+
+Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{{ posts }}
+```
+
+Prueba esto en la plantilla `blog/templates/blog/post_list.html`. Sustituye todo desde el segundo `<div>` al tercer `</div>` por `{{ posts }}`. Guarda el archivo y refresca la página para ver los resultados:
+
+![Figura 13.1](images/step1.png)
+
+Como puedes ver, lo que hemos conseguido es esto:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+<QuerySet [<Post: My second post>, <Post: My first post>] >
+```
+
+Significa que Django lo entiende como una lista de objetos. ¿Recuerdas de **Introducción a Python** cómo podemos mostrar listas? Sí, ¡con bucles for! En una plantilla de Django se hacen así:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% for post in posts %} {{ post }}{% endfor %}
+```
+
+Prueba esto en tu plantilla.
+
+![Figura 13.2](images/step2.png)
+
+¡Funciona! Pero queremos que se muestren como los post estáticos que creamos anteriormente en el capítulo de **Introducción a HTML**. Usted puede mezclar HTML y etiquetas de plantilla. Nuestro `body` se verá así:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+< div >< h1 >< a href = "/" > Django chicas Blog < /a >< / h1 >< / div >{% for post in posts %} < div >< p > publicado: {{ post.published_date }} < /p >< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >< p >{{ post.text|linebreaksbr }} < /p >< / div >{% endfor %}
+```
+
+{% raw %}Todo lo que pongas entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto de la lista. Refresca la página:{% endraw %}
+
+![Figura 13.3](images/step3.png)
+
+¿Has notado que esta vez utilizamos una notación diferente (`{{ post.title }}` o `{{ post.text }})`? Estamos accediendo a los datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está pasando el texto de los post a través de un filtro para convertir saltos de línea en párrafos.
+
+## Una cosa más
+
+Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿no? Vamos a intentar desplegar de nuevo en PythonAnywhere. Aquí va un resumen de los pasos…
+
+* Primero, sube tu código a GitHub
+
+{% filename %}command-line{% endfilename %}
+
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Templates modificados para mostrar post desde base de datos."
+    [...]
+    $ git push
+    
+
+* Luego, vuelve a entrar en [PythonAnywhere](https://www.pythonanywhere.com/consoles/) y ve a tu **consola Bash** (o inicia una nueva), y ejecuta:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd my-first-blog
+    $ git pull
+    [...]
+    
+
+* Finalmente, ve a la [pestaña Web](https://www.pythonanywhere.com/web_app_setup/) y presiona **Reload** en tu aplicación web. ¡Tu actualización debería verse! Si los posts en PythonAnywhere no coinciden con los posts del blog hosteado en tu servidor local, no importa. Las bases de datos en tu computador y en PythonAnywhere no se sincronizan con el resto de tus archivos.
+
+Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegurate de que estas en el administrador de Django de pytonanywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu pàgina para ver si los post aparecen.
+
+¿Funciona de maravilla? ¡Estamos orgullosas! Aléjate un rato del ordenador, te has ganado un descanso. :)
+
+![Figura 13.4](images/donut.png)
