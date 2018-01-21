@@ -1,11 +1,11 @@
 # Der Code-Editor
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) behandelt.
 
 Gleich geht's los! Du wirst deine erste Zeile Programmcode schreiben! Daher ist es jetzt an der Zeit, einen entsprechenden Editor herunterzuladen!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Hinweis** Wenn du ein Chromebook verwendest, überspringe bitte dieses Kapitel und folgen den Anweisungen im [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Hinweis:** Es kann sein, dass du diesen Schritt bereits in dem Kapitel "Installation" erledigt hast. In diesem Fall kannst du direkt zum nächsten Kapitel übergehen!
 
 {% include "/code_editor/instructions.md" %}
