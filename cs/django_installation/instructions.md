@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Ochranou známku pro Django-marcador drží Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## Virtuální prostředí
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Než začneme instalovat Django, nainstalujeme si velmi užitečný nástroj, který pomůže udržet pořádek ve vývojovém prostředí na tvém počítači. Je možné tento krok přeskočit, ale je doporučován. Začít s nejlepším možným nastavením ti ušetří spoustu starostí v budoucnosti!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Takže pojď vytvořit **virtuální prostředí** (tzv. *virtualenv*). Virtualenv bude izolovat nastavení Python/Django na základě projektu. To znamená, že změny provedené v jedné webové stránce neovlivní ostatní, které vyvíjíš. Elegantní, že?
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Vše, co musíš udělat je jít do adresáře, ve kterém chceš vytvořit `virtualenv`; Například tvůj domovský adresář. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Pro tento kurz budeme používat nový adresář `djangogirls` vytvořený v domovském adresáři:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,11 +20,11 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Vytvoříme virtualenv, s názvem `myvenv`. Obecný příkaz bude vypadat takto:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 -m venv myvenv
+    $ Python3 -m venv myvenv
     
 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
@@ -37,7 +37,7 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -48,10 +48,10 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 -m venv myvenv
+    $ Python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale drž se těchto pravidel - používej v názvech malá písmena a bez mezer. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -74,7 +74,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Chceš-li se tomuto vyhnout, použij tento příkaz `virtualenv`.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,14 +98,14 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 <!--endsec-->
 
-## Working with virtualenv
+## Práce s virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Výše uvedený příkaz vytvoří adresář s názvem `myvenv` (či jiným jménem, které jsi zvolila), který obsahuje tvé virtuální prostředí (v podstatě svazek adresářů a souborů).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Spusť virtuální prostředí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Spusť virtuální prostředí:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **Poznámka:** někdy příkaz `source` nemusí být k dispozici. V těchto případech, zkus raději:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -146,11 +146,11 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Pracuješ-li ve virtuálním prostředí, `python` bude automaticky odkazovat na správnou verzi, takže můžeš použít `python` místo `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+OK máme všechny důležité závislosti na místě a konečně můžeme nainstalovat Django!
 
-## Installing Django
+## Instalace Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Pokud se zobrazí chyba při volání pip na Ubuntu 12.04, prosím zkus spustit `python -m pip install -U --force-reinstall pip` k opravě instalace pip ve virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+A je to! Teď jsi (konečně) připravena k vytvoření aplikace Django!
