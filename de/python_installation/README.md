@@ -6,10 +6,10 @@ Aber lass uns zuerst erklären, was Python ist. Python ist eine sehr beliebte Pr
 
 Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu sein (nicht nur von Computern). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Python-Installation
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Hinweis** Wenn du ein Chromebook verwendest, überspringe bitte dieses Kapitel und folge den Anweisungen im [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Hinweis:** Wenn du die Installation bereits hinter dir hast, gibt es keinen Grund dies erneut zu tun - du kannst direkt zum nächsten Kapitel springen!
 
 {% include "/python_installation/instructions.md" %}
