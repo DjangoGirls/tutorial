@@ -1,8 +1,8 @@
 # Django admin
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Az önce modellediğimiz gönderilere ekleleme, düzenleme yada silme işlemi yapmak için Django admini kullanacağız.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+Şimdi `blog/admin.py` dosyasını açarak İçeriği bununla değiştirelim:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Gördüğünüz gibi, bir önceki bölümde tanımladığımız gönderi modelini admin. py dosyamıza dahil (import) ettik. Admin sayfasında modelimizi görünür kılabilmek için, Modeli `admin.site.register(Post)` ile kaydetmemiz gerekiyor.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Tamam, artık admin sayfasında gönderi modelimize göz atabiliriz. Web sunucusunu çalıştırmak için komut satırında `python manage.py runserver` komutunu çalıştırmayı unutmayın. Tarayacınıza gidin ve adresi yazın http://127.0.0.1:8000/admin/. Bunun gibi bir giriş ekranı göreceksiniz:
 
-![Login page](images/login_page2.png)
+![Giriş sayfası](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* - bir kullanıcı hesabı oluşturmanız gerekiyor. Komut satırana geri giderek `python manage.py createsuperuser` yazın ve enter'a basın.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Unutmayın, ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açın ve virtualenv'nizi aktif edin. **Web sunucusu başlatma** bölümünde, **Sizin ilk Django projeniz!** kısmında yeni komutların nasıl yazılacağını gözden geçirdik.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,25 +33,25 @@ To log in, you need to create a *superuser* - a user account that has control ov
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+İstendiğinde, kullanıcı adınızı (küçük harf, boşluksuz), e-posta adresinizi ve şifrenizi yazın. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gerekenler burada var.** Devam etmek için şifreyi yazıp `enter` 'e bas. Çıktı şu şekilde olmalıdır (kullanıcı adı ve e-postanın sizin tarafınızdan olması gerekir):
 
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    Kullanıcı adı: admin
+    E-posta adresi: admin@admin.com
+    Şifre:
+    Şifre (tekrar):
+    Süper kullanıcı başarıyla oluşturuldu.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Tarayıcınıza dönün. Seçtiğiniz süper kullanıcının kimlik bilgileri ile oturum açın; Django admin gösterge panelini göreceksiniz.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Mesajlara gidin ve onunla biraz deneme yapın. Beş veya altı blog yazısı ekleyin. İçerik hakkında endişelenmeyin - zamandan kazanmak için bu öğreticiden bazı metinleri kopyalayıp yapıştırın. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+En az iki veya üç yazının (ama hepsinin değil) yayınlanma tarihinin ayarlanmış olduğundan emin olun. Bu size daha sonra yardımcı olacak.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Django admin hakkında daha fazla bilgi edinmek isterseniz, Django'nun belgelerini kontrol etmelisiniz: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Bu, muhtemelen kendinize yeniden enerji vermek için bir kahve (veya çay) veya başka şeyler yemek için iyi bir an. İlk Django modelinizi yarattınız - küçük bir molayı hak ettiniz!
