@@ -1,4 +1,4 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+நீங்கள் ஒரு Chromebook பயன்படுத்தவில்லை என்றால் [இந்த பிரிவு சரி தவிர்க்க](http://tutorial.djangogirls.org/en/installation/#install-python) முடியும். நீங்கள் chromebook பயன்படுத்தினால் உங்கள் நிறுவல் அனுபவத்தை கொஞ்சம் வித்தியாசமாக இருக்கும். Chromebook பயனர்கள் , பின்வரும் நிறுவல் விதிமுறைகளைப் புறக்கணிக்கலாம்.
 
 ### Cloud 9
 
