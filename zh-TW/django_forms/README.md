@@ -1,14 +1,14 @@
-# Django Forms
+# Django 表單 (Forms)
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+我們想要在我們網站做最後一件事是建立一種友善的方式來新增和編輯部落格文章。 Django 的 `管理介面 (admin)` 是很酷，但它是很難自訂格式和美化。 With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Django 表單的好處是，我們可以從零開始定義一個或者建立一個 `ModelForm`，它將會儲存表單的結果到模型。
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+這正是我們想要做的︰我們將為我們的 `Post` 模型建立表單。
 
-Like every important part of Django, forms have their own file: `forms.py`.
+像所有 Django 的重要部份，表單有他們自己的檔案︰`forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+我們需要在 `blog` 目錄中建立這個檔案。
 
     blog
        └── forms.py
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+我們需要先導入 Django forms（`from django import forms`），然後，很明顯地，我們的 `Post` 模型（`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`，正如你可能猜想的，是我們表單的名稱。 We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+接下來，我們有 `class Meta`，在這裡我們告訴 Django 應該用什麼模型來建立這個表單（`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+最後，我們可以說哪些欄位應該在我們的表單上。 In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+就是這些！現在所有我們需要做的是在 *view* 中使用這表單，並將它顯示在範本中。
 
 So once again we will create a link to the page, a URL, a view and a template.
 
-## Link to a page with the form
+## 連結表單到網頁 (Link to a page with the form)
 
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+現在，打開 `blog/templates/blog/base.html`，我們將增加一個連結到名稱為 `page-header` 的 `div` 裡面︰
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+存檔並更新網頁 http://127.0.0.1:8000 後，你會明顯看到一個熟悉的錯誤 `NoReverseMatch`，對吧？
 
 ## URL
 
-We open `blog/urls.py` and add a line:
+我們打開 `blog/urls.py`，並增加一行︰
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ We open `blog/urls.py` and add a line:
 url(r'^post/new/$', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+最後程式碼將會像這樣︰
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have the `
 
 ## post_new view
 
-Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
+現在打開 `blog/views.py` 檔，並增加以下行到 `from` 下︰
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,16 +134,16 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+若要建立新的 `Post` 表單，我們需要呼叫 `PostForm()`，並將它傳遞給範本。 We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Template
+## 範本 (Template)
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
+我們需要在 `blog/templates/blog` 目錄中建立 `post_edit.html`。為使表單能運作，我們需要幾件東西︰
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. 這是非常重要的，因為它讓你的表單較安全！ If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -163,17 +163,17 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+現在更新網頁！耶！表單顯示出來了！
 
-![New form](images/new_form2.png)
+![西](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
 Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+答案是︰沒有錯誤。我們需要對我們的 *view* 做多一點的工作.
 
-## Saving the form
+## 儲存表單 (Saving the form)
 
 Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? 所有表單的欄位內容現在都在 `request.POST` 中。 你不應該重新命名 `POST` 為其他東西（其他唯一有效的 `method` 值是 `GET`，但我們沒有時間解釋它們的差異）。
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. 所以我們需要增加一個條件（為此，我們將使用 `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -208,7 +208,7 @@ form = PostForm(request.POST)
 
 The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+我們檢查表單是否有效，如果是的話，我們可以儲存它！
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+基本上，在這裡我們有兩件事︰我們用 `form.save` 將表單儲存，且我們增加 author（因為在 `PostForm` 裡沒有 `author` 欄位，但這欄位是必填的). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is the name of the view we want to go to. 還記得這個 *view* 須要一個 `pk` 變數嗎？ To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -259,29 +259,29 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+讓我們看看它是否能運作。 Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-That is awesome!
+這真棒！
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. 這將暫時解決這個問題。 還有一個一勞永逸的方法在等你，在這主教材之後的 **Homework: add security to your website!** 章節。
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## 表單驗證 (Form validation)
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+現在，我們將向你展示 Django 表單有多酷。 一篇部落格文章需要有 `title` 和 `text` 欄位。 In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![表單驗證 (Form validation)](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
-## Edit form
+## 編輯表單 (Edit form)
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+現在我們知道如何增加一個新的表單。 但如果我們想要編輯一個現存的？ This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` and add the line
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-In `blog/urls.py` we add this line:
+在 `blog/urls.py` 中我們加入這行︰
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,7 +320,7 @@ In `blog/urls.py` we add this line:
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+我們將再使用範本 `blog/templates/blog/post_edit.html`，因此最後欠缺的是一個 *view*.
 
 Let's open `blog/views.py` and add this at the very end of the file:
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+這看起來幾乎和我們的 `post_new` view 完全相同，對吧？ 但不是全部。 For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -362,21 +362,21 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+當你點選它時，你將看到我們部落格文章的表單︰
 
-![Edit form](images/edit_form2.png)
+![編輯表單 (Edit form)](images/edit_form2.png)
 
 Feel free to change the title or the text and save the changes!
 
-Congratulations! Your application is getting more and more complete!
+祝賀你！你的應用程式變得越來越完整！
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Security
+## 安全性 (Security)
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+只透過點選一個連結就能夠建立新的文章，是很棒的！ But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+在 `blog/templates/blog/base.html`，找我們的 `page-header` `div` 和你稍早放在那裡的錨點 (anchor) 疵標籤。它看起來應該像這樣︰
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! 更改 `<a>` 標籤，讓它看起來像這樣︰
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,7 +394,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. 這並不會完全地防止新文章的建立，但它是很好的起步。 在延伸課程中，我們將含概更多的安全性。
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
@@ -418,11 +418,11 @@ Change it to this:
 
 Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
-## One more thing: deploy time!
+## 還有一件事：部署時間！ (One more thing: deploy time!)
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+讓我們看看這一切能否在 PythonAnywhere 上運作。另一次的部署時間！
 
-* First, commit your new code, and push it up to Github:
+* 首先，提交你的新程式碼，並把它推送 GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -433,7 +433,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* 然後，在 [PythonAnywhere Bash 主控台](https://www.pythonanywhere.com/consoles/)︰
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,6 +442,6 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+* 最後，跳到 [Web 選項](https://www.pythonanywhere.com/web_app_setup/) 並點選 **Reload**.
 
-And that should be it! Congrats :)
+那應該是它！恭喜 :)
