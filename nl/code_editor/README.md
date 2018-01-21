@@ -1,11 +1,11 @@
 # Code editor
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Voor de lezers thuis: dit hoofdstuk wordt behandeld in de [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-You're about to write your first line of code, so it's time to download a code editor!
+Je staat op het punt om je eerste regel code te schrijven. Tijd om een code editor te downloaden!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Opmerking** Als je een Chromebook gebruikt, sla dit hoofdstuk dan over en zorg ervoor dat je de [Chromebook installatie](../chromebook_setup/README.md) instructies volgt.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Opmerking** Het zou kunnen dat je dit eerder in het Installatie hoodstuk al gedaan hebt. Als dat zo is kun je rechtstreeks door naar het volgende hoofdstuk!
 
 {% include "/code_editor/instructions.md" %}
