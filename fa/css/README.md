@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+بلاگ ما هنوز خیلی زشت است، نه؟ وقتش است که زیبایش کنیم. برای این کار از CSS استفاده می‌کنیم.
 
-## What is CSS?
+## CSS چیست؟
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## با بوت‌ استرپ شروع کنیم!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## نصب بوت استرپ
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,15 +27,15 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![عدد 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+ظاهری قشنگ تر از قبل!
 
-## Static files in Django
+## فایل ها ی ثابت در جنگو
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+ما در نهایت نگاهی دقیقتر به فایلها می اندازیم ( فایل های ثابت). فایلهای ثابت شامل تمامی فایلهای CSS و عکسها می باشند. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### فایل های ثابت در جنگو کجا قرار میگیرد
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
@@ -137,7 +137,7 @@ Your file should now look like this:
 
 OK, save the file and refresh the site!
 
-![Figure 14.2](images/color2.png)
+![عدد 14.2](images/color2.png)
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
@@ -151,7 +151,7 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Figure 14.3](images/margin2.png)
+![عدد 14.3](images/margin2.png)
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
@@ -174,7 +174,7 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![عدد 14.3](images/font.png)
 
 Great!
 
@@ -293,7 +293,7 @@ in the `blog/templates/blog/post_list.html` with this:
 
 Save those files and refresh your website.
 
-![Figure 14.4](images/final.png)
+![عدد 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
