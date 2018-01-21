@@ -1,18 +1,18 @@
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Le tutoriel django-marcador a été créé par Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## L'environnement virtuel
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Avant d'installer Django, nous allons vous faire installer un outil extrêmement utile qui vous aidera à maintenir votre environnement de développement propre. Nous vous recommandons fortement de ne pas sauter cette étape, même si elle n'est pas indispensable. En commençant avec la meilleure configuration possible vous éviterez beaucoup de problèmes par la suite !
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Donc, commençons par créer un **environnement virtuel de programmation** (ou *virtualenv*). Chaque projet aura sa propre configuration en Python/Django grâce à virtualenv. Ce qui veut dire que si vous modifiez un site web, ça n'affectera pas les autres sites sur lesquels vous travaillez. Plutôt cool, non ?
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Tout ce dont vous avez besoin, c'est de trouver un dossier où vous voulez créer votre `virtualenv` ; vous pouvez choisir votre home par exemple. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Dans ce tutoriel, nous allons utiliser un nouveau dossier `djangogirls` que vous allez créer dans votre dossier home :
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Nous allons créer un virtualenv appelé `myvenv`. Pour cela, nous taperons une commande qui ressemblera à :
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -51,7 +51,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom, mais veillez à n'utiliser que des minuscules et à n'insérer ni espaces, ni caractères spéciaux. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -74,7 +74,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Pour résoudre ce problème, utilisez plutôt la commande `virtualenv`.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,18 +98,18 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 <!--endsec-->
 
-## Working with virtualenv
+## Travailler avec virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Les commandes listées ci-dessus permettent de créer un dossier appelé `myvenv` (ou le nom que vous avez choisi) qui contient notre environnement virtuel. Pour faire simple, c'est un dossier composé lui-même d'autres dossiers et de fichiers.
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Démarrez votre environnement virtuel en exécutant :
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Users\Name\djangogirls> myvenv\Scripts\activate
+    C:\Utilisateurs\Nom\djangogirls> myvenv\Scripts\activate
     
 
 > **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
@@ -126,16 +126,16 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Démarrez votre environnement virtuel en exécutant :
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `virtualenv` (le cas échéant) !
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **NOTE :** il arrive parfois que `source` ne soit pas disponible. Dans ce cas, vous pouvez essayer ceci :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -146,11 +146,11 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Quand vous travaillez dans un environnement virtuel, la commande `python` fera automatiquement référence à la bonne version de Python. Vous pouvez donc utiliser `python` plutôt que `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Ok, nous avons installé toutes les dépendances dont nous avions besoin. Nous allons enfin pouvoir installer Django !
 
-## Installing Django
+## Installation de Django
 
 Now that you have your `virtualenv` started, you can install Django.
 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Si vous obtenez une erreur lorsque vous utilisez pip sous Ubuntu 12.04, tapez la commande `python -m pip install -U --force-reinstall pip` pour réparer l'installation de pip dans votre virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Et voilà ! Vous êtes (enfin) prête pour créer votre première application Django !
