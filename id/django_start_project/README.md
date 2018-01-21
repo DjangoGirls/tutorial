@@ -1,202 +1,200 @@
-# Your first Django project!
+# Project Django pertamamu!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Bagian dari bab ini didasarkan pada tutorial oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
-
-We're going to create a small blog!
-
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
-
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
-
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Bagian dari bab ini didasarkan pada  Django-marcador    tutorial </ 0> berlisensi di bawah Creative Commons    Lisensi Internasional Attribution-ShareAlike 4.0. Hak cipta tutorial django-marcador oleh Markus Zapke-Gründemann et al.</p> </blockquote> 
+> 
+> We're going to create a small blog!
+> 
+> Langkah pertama adalah memulai dengan mebuat projek baru Django. Pada dasarnya, Kita akan menjalankan beberapa skrip yang disediakan oleh Django yang amana akan membuat skeleton projek Django untuk kita. Ini merupakan bagian direktori dan file yang akan kita gunakan nanti.
+> 
+> Nama untuk beberapa file dan direktori sangat penting untuk Django. Kamu harus mengganti nama file yang akan kita buat. Memindahkan file tersebut ke tempat yang lain bukanlah ide yang bagus. Django perlu mempertahankan struktur tertentu agar bisa menemukan hal penting.
+> 
+> > Ingatlah untuk menjalankan semuanya di virtualenv. Jika Anda tidak melihat awalan ` (myvenv) </ 0> di konsol Anda, Anda perlu mengaktifkan virtualenv Anda. Kami menjelaskan bagaimana melakukannya di bagian <strong> instalasi Django </ 0> di bagian <strong> Bekerja dengan virtualenv </ 0> . Mengetik <code> myvenv \ Scripts \ activate </ 0> pada Windows atau
+ <code> sumber myvenv / bin / activate </ 0> pada Mac OS X atau Linux akan melakukan ini untuk Anda.  </p>
+</blockquote>
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+<p>Di konsol Mac OS X atau Linux Anda, Anda harus menjalankan perintah berikut. <strong> Jangan lupa menambahkan periode (atau titik) <code> . </ 1> di akhir! </ 0></p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
-    
-
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-> 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
-
-<!--endsec-->
-
-<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
-
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
-    
-
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-> 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+<pre><code>(myvenv) ~/djangogirls$ django-admin startproject mysite .
+`</pre> 
+> > 
+> > > Masalah `.` cukup krusial karena ini akan memberi perintah skrip untuk menginstall Django pada direktori-mu saat ini (untuk masalah `.` adalah referensi singkat).
+> > > 
+> > > ** Catatan </ 0> Saat mengetikkan perintah di atas, ingat bahwa Anda hanya mengetikkan bagian yang dimulai oleh ` Django-admin </ 1>.
+  Bagian <code> (myvenv) ~ / djangogirls $ </ 0> yang ditunjukkan di sini hanyalah contoh dari prompt yang akan mengundang masukan Anda pada baris perintah Anda.</p>
+</blockquote>
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
-    
+> > > 
+> > > <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+<p>Pada Windows Anda harus menjalankan perintah berikut. <strong> (Jangan lupa menambahkan periode (atau titik) <code>. </ 1> di akhir) </ 0>:</p>
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-The `settings.py` file contains the configuration of your website.
+<pre><code>(myvenv) C: \ Users \ Name \ djangogirls & gt; django-admin.exe startproject mysite.
+`</pre> 
+> > > 
+> > > > Masalah `.` cukup krusial karena ini akan memberi perintah skrip untuk menginstall Django pada direktori-mu saat ini (untuk masalah `.` adalah referensi singkat).
+> > > > 
+> > > > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> > > 
+> > > <!--endsec-->
+> > > 
+> > > ` django-admin.py </ 0> adalah script yang akan membuat direktori dan file untuk Anda. Anda sekarang harus memiliki struktur direktori yang terlihat seperti ini:</p>
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+<pre><code>djangogirls
+├───manage.py
+└───mysite
+         settings.py
+         urls.py
+         wsgi.py
+         __init__.py
+`</pre> 
+> > > 
+> > > > ** Catatan </ 0>: dalam struktur direktori Anda, Anda juga akan melihat direktori ` venv </ 1> yang telah kita buat sebelumnya.</p>
+</blockquote>
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+<p><code> manage.py </ 0> adalah skrip yang membantu pengelolaan situs. Dengan itu kita akan bisa (antara lain) untuk memulai web server di komputer kita tanpa menginstal apapun.</p>
 
-## Changing settings
+<p>File <code> settings.py </ 0> berisi konfigurasi situs web Anda.</p>
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+<p>Ingat ketika kita berbicara tentang pembawa surat yang memeriksa kemana harus mengirimkan surat? <code> urls.py </ 0> berisi daftar pola yang digunakan oleh <code> urlresolver </ 0>.</p>
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+<p>Mari kita abaikan file lainnya untuk saat ini karena kita tidak akan mengubahnya. Satu-satunya hal yang perlu diingat adalah tidak menghapusnya secara tidak sengaja!</p>
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+<h2>Mengubah pengaturan</h2>
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+<p>Mari buat beberapa perubahan di <code> mysite / settings.py </ 0>. Buka file dengan menggunakan editor kode yang telah Anda instal sebelumnya.</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<p><strong> Catatan </ 0>: Perlu diingat bahwa <code> settings.py </ 1> adalah file biasa, seperti file lainnya. Anda dapat membukanya dari dalam editor kode, dengan menggunakan tindakan menu "file -> open". Ini akan memberi Anda jendela biasa tempat Anda dapat menavigasi ke file <code> settings.py </ 0> dan memilihnya. Sebagai alternatif, Anda dapat membuka file dengan menavigasi ke folder djangogirls di desktop Anda dan mengklik kanannya. Kemudian, pilih editor kode Anda dari daftar. Memilih editor penting karena Anda mungkin menginstal program lain yang bisa membuka file tapi tidak membiarkan Anda mengeditnya.</p>
 
-```python
-TIME_ZONE = 'Europe/Berlin'
-```
+<p>Alangkah baiknya memiliki waktu yang tepat di situs kami. Pergi ke <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> daftar zona waktu Wikipedia </ 0> dan salin zona waktu yang relevan (TZ) (misalnya <code> Eropa / Berlin </ 1> ).</p>
 
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+<p>Di <code> settings.py </ 0>, cari baris yang berisi <code> TIME_ZONE </ 0> dan modifikasi untuk memilih zona waktu Anda sendiri. Sebagai contoh:</p>
 
-Change the language code by changing the following line:
+<p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<pre><code class="python">TIME_ZONE = 'Eropa / Berlin'
+`</pre> 
+> > > > 
+> > > > Kode bahasa terdiri dari bahasa, mis. ` en </ 0> untuk bahasa Inggris atau <code> de </ 0> untuk bahasa jerman, dan kode negara, mis. <code> de </ 0> untuk jerman atau <code> ch </ 0> untuk swiss. Anda ingin menambahkan ini jika Anda ingin tombol dan notifikasi default dari Django ada dalam bahasa Anda. Jadi Anda akan memiliki tombol "Batal" yang diterjemahkan ke bahasa yang Anda definisikan di sini. <a href="https://docs.djangoproject.com/en/1.11/ref/settings/#language-code"> Django hadir dengan banyak terjemahan yang disiapkan </ 0> .</p>
 
-```python
-LANGUAGE_CODE = 'de-ch'
-```
+<p>Ubah kode bahasa dengan mengubah baris berikut:</p>
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+<p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<pre><code class="python">LANGUAGE_CODE = 'de-ch'
+`</pre> 
+> > > > 
+> > > > Kita juga perlu menambahkan path untuk file statis. (Kita akan mencari tahu semua tentang file statis dan CSS nanti di tutorial.) Turun ke * akhir </ 0> dari file tersebut, dan di bawah entri ` STATIC_URL </ 1> , tambahkan sebuah yang baru disebut <code> STATIC_ROOT </ 1> :</p>
 
-```python
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-```
+<p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+<pre><code class="python">STATIC_URL = '/ static /' STATIC_ROOT = os.path.join (BASE_DIR, 'statis')
+`</pre> 
+> > > > 
+> > > > Bila ` DEBUG </ 0> adalah <code> True </ 0> dan <code> ALLOWED_HOSTS </ 0> kosong, host divalidasi terhadap <code> ['localhost', '127.0.0.1', ' [:: 1] '] </ 0> . Ini tidak akan cocok dengan nama host kami di PythonAnywhere begitu kami menerapkan aplikasi kami sehingga kami akan mengubah setelan berikut:</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
-```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-```
+<pre><code class="python">ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+`</pre> 
+> > > > 
+> > > > > ** Catatan </ 0> : Jika Anda menggunakan Chromebook, tambahkan baris ini di bagian bawah file settings.py Anda: ` MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage' </ 1>  </p>
+  
+  <p>Also add <code>.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9</p> </blockquote> 
+> > > > > 
+> > > > > ## Buat database
+> > > > > 
+> > > > > Ada banyak perangkat lunak database yang berbeda yang dapat menyimpan data untuk situs Anda. Kita akan menggunakan yang default, ` sqlite3 </ 0> .</p>
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
-> 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+<p>Ini sudah disiapkan di bagian berkas <code> mysite / settings.py </ 0> Anda :</p>
 
-## Set up a database
+<p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+<pre><code class="python">DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join (BASE_DIR, 'db.sqlite3'),
+     }}
+`</pre> 
+> > > > > 
+> > > > > Untuk membuat database untuk blog kita, mari kita jalankan yang berikut di konsol: ` python manage.py migrate </ 0> (kita perlu berada di direktori <code> djangogirls </ 0> yang berisi <code> manage.py </ 0> file). Jika berjalan dengan baik, Anda harus melihat sesuatu seperti ini:</p>
 
-This is already set up in this part of your `mysite/settings.py` file:
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<pre><code>(myvenv) ~ / djangogirls $ python manage.py migran Operasi yang harus dilakukan:
+   Terapkan semua migrasi: auth, admin, contenttypes, sessions Running migration:
+   Rendering model states ... DONE
+   Menerapkan contenttypes.0001_initial ... OK
+   Menerapkan auth.0001_initial ... OK
+   Menerapkan admin.0001_initial ... OK
+   Menerapkan admin.0002_logentry_remove_auto_add ... OK
+   Menerapkan contenttypes.0002_remove_content_type_name ... OK
+   Menerapkan auth.0002_alter_permission_name_max_length ... OK
+   Menerapkan auth.0003_alter_user_email_max_length ... OK
+   Menerapkan auth.0004_alter_user_username_opts ... OK
+   Menerapkan auth.0005_alter_user_last_login_null ... OK
+   Menerapkan auth.0006_require_contenttypes_0002 ... OK
+   Menerapkan auth.0007_alter_validators_add_error_messages ... OK
+   Menerapkan sesi.0001_initial ... baik
+`</pre> 
+> > > > > 
+> > > > > Dan kita sudah selesai! Waktunya memulai web server dan melihat apakah website kita bekerja!
+> > > > > 
+> > > > > ## Memulai server web
+> > > > > 
+> > > > > Anda harus berada di direktori yang berisi file ` manage.py </ 0> (direktori <code> djangogirls </ 0> ). Di konsol, kita bisa memulai server web dengan menjalankan <code> python manage.py runserver </ 0> :</p>
 
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-```
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+<pre><code>(myvenv) ~ / djangogirls $ python manage.py runserver
+`</pre> 
+> > > > > 
+> > > > > Jika Anda menggunakan Chromebook, gunakan perintah ini sebagai gantinya:
+> > > > > 
+> > > > > {% filename %}Cloud 9{% endfilename %}
+> > > > > 
+> > > > >     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+> > > > >     
+> > > > > 
+> > > > > Jika Anda menggunakan Windows dan ini gagal dengan ` UnicodeDecodeError </ 0> , gunakan perintah ini sebagai gantinya:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
-    Running migrations:
-      Rendering model states... DONE
-      Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK
-      Applying contenttypes.0002_remove_content_type_name... OK
-      Applying auth.0002_alter_permission_name_max_length... OK
-      Applying auth.0003_alter_user_email_max_length... OK
-      Applying auth.0004_alter_user_username_opts... OK
-      Applying auth.0005_alter_user_last_login_null... OK
-      Applying auth.0006_require_contenttypes_0002... OK
-      Applying auth.0007_alter_validators_add_error_messages... OK
-      Applying sessions.0001_initial... OK
-    
-
-And we're done! Time to start the web server and see if our website is working!
-
-## Starting the web server
-
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver
-    
-
-If you are on a Chromebook, use this command instead:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-    
-
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
-
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
-
-{% filename %}browser{% endfilename %}
-
-    http://127.0.0.1:8000/
-    
-
-If you're using a Chromebook, you'll always visit your test server by accessing:
-
-{% filename %}browser{% endfilename %}
-
-    https://django-girls-<your cloud9 username>.c9users.io
-    
-
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
-
-![It worked!](images/it_worked2.png)
-
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
-
-> We reviewed how web servers work in the **How the Internet works** chapter.
-
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
-
-Ready for the next step? It's time to create some content!
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+`</pre> 
+> > > > > 
+> > > > > Sekarang yang perlu Anda lakukan hanyalah memeriksa apakah situs Anda berjalan. Buka browser Anda (Firefox, Chrome, Safari, Internet Explorer atau apapun yang Anda gunakan) dan masukkan alamat ini:
+> > > > > 
+> > > > > {% filename %}browser{% endfilename %}
+> > > > > 
+> > > > >     http://127.0.0.1:8000/
+> > > > >     
+> > > > > 
+> > > > > Jika menggunakan Chromebook, Anda akan selalu mengunjungi server uji dengan mengakses:
+> > > > > 
+> > > > > {% filename %}browser{% endfilename %}
+> > > > > 
+> > > > >     https://django-girls-<your cloud9 username>.c9users.io
+> > > > >     
+> > > > > 
+> > > > > Selamat! Anda baru saja membuat situs web pertama dan menjalankannya menggunakan server web! Bukankah itu mengagumkan?
+> > > > > 
+> > > > > ![Ini berhasil!](images/it_worked2.png)
+> > > > > 
+> > > > > Saat server web berjalan, Anda tidak akan melihat command-line prompt baru untuk memasukkan perintah tambahan. Terminal akan menerima teks baru tapi tidak akan menjalankan perintah baru. Ini karena server web terus berjalan untuk mendengarkan permintaan masuk .
+> > > > > 
+> > > > > > Kami meninjau bagaimana server web bekerja di ** Bagaimana Internet bekerja** bab.
+> > > > > 
+> > > > > Untuk mengetikkan perintah tambahan saat server web berjalan, buka jendela terminal baru dan aktifkan virtualenv Anda. Untuk menghentikan server web, kembali ke jendela tempat ia menjalankan dan tekan tombol CTRL + C - Control dan C bersama-sama (di Windows, Anda mungkin harus menekan Ctrl + Break).
+> > > > > 
+> > > > > Siap untuk langkah selanjutnya? Saatnya untuk membuat beberapa konten!
