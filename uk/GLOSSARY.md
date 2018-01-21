@@ -1,3 +1,3 @@
-# code editor
+# Редактор коду
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Редактор коду - це додаток, що дозволяє зберегти ваш код, так що можна повернутися до його редагування пізніше. Ви можете дізнатися, звідки його взяти з [розділу про текстовий редактор](./code_editor/README.md)
