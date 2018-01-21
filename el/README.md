@@ -1,51 +1,51 @@
-# Django Girls Tutorial
+# Φροντιστήριο Django Girls
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+[![Γκλιτερ](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## Καλώς ήρθατε
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Καλώς ήρθατε στο φροντιστήριο Django Girls! Χαιρόμαστε που σε βλέπουμε εδώ :) Σε αυτό το σεμινάριο, θα σε πάμε ένα ταξίδι κάτω από την κουκούλα των τεχνολογιών ιστοσελίδων. προσφέροντας σου μία γεύση από όλα τα κομμάτια που πρέπει να συγκεντρωθούν ώστε να κάνουν τον ιστό να δουλέψει όπως το γνωρίζουμε.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Όπως με όλα τα άγνωστα πράγματα, αυτό πρόκειται είναι μία εμπειρία- αλλά μην ανησυχείς, αφού ήδη πήρες την απόφαση να είσαι εδώ, θα είσαι μια χαρά :)
 
-## Introduction
+## Εισαγωγή
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Έχεις νιώσει ποτέ ότι ο κόσμος γίνεται όλο και περισσότερο σχετικός με την τεχνολογία και δεν μπορείς (ακόμα) να σχετιθείς; Έχεις ποτέ αναρωτηθεί πώς να δημιουργήσεις μια ιστοσελίδα, αλλά ποτέ δεν είχες αρκετό κίνητρο για να ξεκινήσεις; Έχεις ποτέ σκεφτεί οτι ο κόσμος του software είναι πολύ περίπλοκος για σένα για να προσπαθήσεις να κάνεις κάτι από μόνη σου;
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Λοιπόν, έχουμε καλά νέα για 'σένα! Ο προγραμματισμός δεν είναι τόσο δύσκολος όσο φαίνεται, και θέλουμε να σου δείξουμε πόσο διασκεδαστικός μπορεί να είναι.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Αυτό το σεμινάριο δεν θα σε μετατρέψει σε προγραμματιστή ως δια μαγείας. Αν θέλεις να γίνεις καλή προγραμματίστρια, χρειάζεται μήνες ή ακόμη και χρόνια εκμάθησης και πρακτικής εξάσκησης. Όμως θέλουμε να σου δείξουμε οτι ο προγραμματισμός ή η δημιουργία ιστιοσελίδων δεν είναι τόσο περίπλοκο όσο φαίνεται. Θα προσπαθήσουμε να σου εξηγήσουμε τα διάφορα κομμάτια όσο καλύτερα μπορούμε, ούτως ώστε να μην σε φοβίζει η τεχνολογία.
 
-We hope that we'll be able to make you love technology as much as we do!
+Ελπίζουμε να μπορέσουμε να σε κάνουμε να αγαπήσεις την τεχνολογία, όπως εμείς!
 
-## What will you learn during the tutorial?
+## Τι θα μάθεις κατα τη διάρκεια του tutorial;
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Μόλις τελειώσετε το σεμινάριο, θα έχετε μία μικρή λειτουργική εφαρμογή ιστού: το δικό σας blog. Θα σας δείξουμε πως να το ανεβάσετε ηλεκτρονικά, ώστε άλλοι να δουν την δουλειά σας!
 
-It will (more or less) look like this:
+Θα φαίνεται έτσι (πάνω κάτω):
 
-![Figure 0.1](images/application.png)
+![Σχήμα 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Αν δουλεύεις με το σεμινάριο μόνος σου και δεν έχεις κάποιον προπονητή που θα σε βοηθήσει σε περίπτωση ενός προβλήματος, έχουμε ένα σύστημα συνομιλίας για εσένα:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Ζητήσαμε από τους προπονητές μας και τους προηγούμενους συμμετάσχοντες να είναι εκεί που και που και να βοηθάνε άλλους με το σεμινάριο! Μην φοβάστε να κάνετε ερωτήσεις εκεί!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Οκ,[ ας ξεκινήσουμε από την αρχή....](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Ακολουθώντας το φροντιστήριο στο σπίτι
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Είναι εκπληκτικό να λάβετε μέρος στο εργαστήρι Django Girls, αλλά γνωρίζουμε ότι δεν είναι πάντα δυνατό να παρακολουθήσετε ένα. Για αυτό σας ενθαρρύνουμε να προσπαθήσετε να ακολουθήσετε αυτό το σεμινάριο στο σπίτι. Για τους αναγνώστες στο σπίτι, προς το παρόν ετοιμάζουμε βίντεο που θα το κάνουν ευκολότερο να παρακολουθήσετε το σεμινάριο από μόνοι σας. Είναι ακόμα έργο σε εξέλιξη, αλλά όλο και περισσότερα πράγματα θα καλυφθούν σύντομα στο [ ](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) κανάλι του YouTube.
 
-In every chapter already covered, there is a link that points to the correct video.
+Σε κάθε κεφάλαιο που έχει ήδη καλυφθεί, υπάρχει ένας σύνδεσμος που οδηγεί στο σωστό βίντεο.
 
-## About and contributing
+## Σχετικά και συμβάλλοντας
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Αυτό το σεμινάριο συντηρείται από [DjangoGirls](https://djangogirls.org/). Εάν βρείτε τυχόν λάθη η θέλετε να ενημερώσετε το φροντιστήριο παρακαλούμε [ ακολουθήστε τις οδηγίες για συμβολή](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Θα θέλατε να μας βοηθήσετε να μεταφράσετε το σεμινάριο σε άλλες γλώσσες;
 
-Currently, translations are being kept on crowdin.com platform at:
+Προς το παρόν, οι μεταφράσεις διατηρούνται στην πλατφόρμα του crowdin.com στο:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Εάν η γλώσσα σας δεν είναι καταχωρημένη στο [crowdin](https://crowdin.com/), παρακαλούμε [ ανοίξτε ένα νέο θέμα](https://github.com/DjangoGirls/tutorial/issues/new) ενημερώνοντας μας για την γλώσσα ώστε να την προσθέσουμε.
