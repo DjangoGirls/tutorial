@@ -1,14 +1,14 @@
-# Template extending
+# Template genişletmek
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Django'nun size sunduğu başka bir güzellik de **template genişletmek**tir. O da ne demek? Şu demek, HTML dosyanızın bazı bölümlerini birden fazla sayfanızda kullanabilirsiniz.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Templatelar aynı bilgiyi ya da yerleştirmeyi (layout) birden fazla yerde kullanmak istediğinizde yardım ederler. Yaptığınızı her dosya için tekrar etmek zorunda kalmazsınız. Ve bir şey değiştimek isterseniz, tüm templatelarda değil sadece bir tanesinde değiştirirsiniz!
 
-## Create a base template
+## Bir Temel Template Oluştur
 
-A base template is the most basic template that you extend on every page of your website.
+Temel template web sitenizin bütün sayfalarında genişletebileceğiniz en temel template'inizdir.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Şimdi `blog/templates/blog/` klasörü içinde `base.html` adlı bir dosya oluşturalım:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi bu `base.html`'ye kopyalayalım:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -25,7 +25,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 {% load staticfiles %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Django Girls Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -55,7 +55,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında kalan her şeyi) şununla değiştirin:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Ama neden? Bir `blok` oluşturdunuz! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Bunun nasıl yapıldığını da hemen göstereceğiz.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanmak istiyoruz. Şimdi bu dosyaya blok etiketleri ekleme zamanı!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. Ayrıca içerik bloklarınına ait bütün koduda dahil etmek istiyorsun. Bunu yapmak için, herşeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Genişleyen şablonlar tam da bununla ilgili! Bunu dosyanın başlangıcına genişleyebilir etiketler ekleyerek yapacağız. Bunun gibi:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
