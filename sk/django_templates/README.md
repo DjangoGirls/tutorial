@@ -12,7 +12,7 @@ V HTML vlastne nemôžeš písať Pythonský kód, pretože prehliadače mu nero
 
 V predchádzajúcej kapitole sme našej šablóne dali zoznam príspevkov v premennej `posts`. Teraz to zobrazíme v HTML.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Na vypísanie premennej v Django šablónach použijeme dvojitú zloženú zátvorku s názvom premennej vo vnútri, asi takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Nahraď všetko od druhého `<div>` po tretí `</div>` týmto kódom: `{{ posts }}`. Ulož súbor a obnov stránku, aby si videla výsledky:
 
 ![Obrázok 13.1](images/step1.png)
 
@@ -32,7 +32,7 @@ Ako vidíš, dostali sme len toto:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! In a Django template you do them like this:
+To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! V Django šablóne ich urobíš takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,7 +46,7 @@ Vyskúšaj si to vo svojej šablóne.
 
 ![Obrázok 13.2](images/step2.png)
 
-Funguje to! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Môžeš skombinovať HTML a šablónové tagy. Naše `body` bude vyzerať takto:
+Funguje to! Ale my chceme, aby sa príspevky zobrazili ako tie statické, ktoré sme vytvorili predtým v kapitole **Úvod do HTML**. Môžeš skombinovať HTML a šablónové tagy. Naše `body` bude vyzerať takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,15 +64,15 @@ Funguje to! But we want the posts to be displayed like the static posts we creat
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}Všetko, čo dáš medzi `{% for %}` a `{% endfor %}` sa bude opakovať pre každý objekt v zozname. Obnov svoju stránku:{% endraw %}
 
 ![Obrázok 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Všimla si si, že sme tentokrát použili trochu iný zápis `{{ post.title }}` alebo `{{ post.text }}`? Pristupujeme k údajom v každom z polí definovanom v našom `Post` modeli. Okrem toho `|linebreaks` preposiela texty príspevkov cez filter, ktorý konvertuje zalomenie riadkov na odstavce.
 
-## One more thing
+## Ešte jedna vec
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internete, však? Skúsme to znova nasadiť na PythonAnywhere. Tu je rekapitulácia postupu…
 
 * Najskôr pošli svoj kód na Github
 
@@ -97,10 +97,10 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* A nakoniec prejdi na [záložku Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na svojej webovej aplikácii. Aktualizácia by mala byť online! Ak sa blogové príspevky na tvojej PythonAnywhere stránke nezhodujú s príspevkami na blogu ktorý beží na tvojom lokálnom počítači, to je v poriadku. Databázy na tvojom lokálnom počítači a na PythonAnywhere sa nesznchronizujú spolu so zvyšnými subormi.
 
-Gratulujeme! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Gratulujeme! Teraz skús pridať nový príspevok cez Django admin (nezabudni pridať published_date!). Uisti sa, že si v Django admin prostredi na svojej stránke na PythonAnywhere, https://yourname.pythonanywhere.com/admin. Následne obnov stránku aby si zistila či sa príspevok tam objaví.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Funguje ako hodinky? Sme hrdí! Teraz si na chvíľku oddýchni od počítača, zaslúžiš si prestávku. :)
 
 ![Obrázok 13.4](images/donut.png)
