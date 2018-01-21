@@ -1,25 +1,25 @@
-# What's next?
+# Ano ang susunod?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Batiin ang sarili!**You're totally awesome**. Ipinagmamalaki ka namin! <3
 
-### What to do now?
+### Ano ang dapat gawin ngayon?
 
-Take a break and relax. You have just done something really huge.
+Magpahinga at huminahon. Ikaw ay nakagawa pa lamang ng isang napakalaking bagay.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Pagkatapos niyan, siguraduhin na sundan ang Django Girls sa [Facebook](http://facebook.com/djangogirls) o [Twitter](https://twitter.com/djangogirls) upang manatiling updated.
 
-### Can you recommend any further resources?
+### Maaari ka bang magrekomenda ng karagdagan na resources?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Ayos! Una, sige at subukan ang aming ibang libro, na tinatawag na [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-Later on, you can try the resources listed below. They're all very recommended!
+Sa ibang pagkakataon, maaari mong subukan ang mga resources na nakalista sa ibaba. Ang lahat ng ito ay napaka-rekomendado!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Ang opisyal na tutorial ng Django](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Mga tutorial ng Bagong Coder](http://newcoder.io/tutorials/)
+- [Kurso ng Code Academy Python](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS na kurso](https://www.codecademy.com/tracks/web)
+- [Tutorial ng Django Carrots](https://github.com/ggcarrots/django-carrots)
+- [Learn Python The Hard Way na libro](http://learnpythonthehardway.org/book/)
+- [Pagsisimula sa Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework na libro](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - maaari ka ring humiling ng isang libreng eBook na lisensya sa pamamagitan ng pakikipag-ugnayan sa may akda na si Tracy Osborn sa <tracy@limedaring.com>
