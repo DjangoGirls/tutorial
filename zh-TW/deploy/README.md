@@ -1,12 +1,12 @@
-# Deploy!
+# 部署！ (Deploy!)
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **注意** 這一章節內容有時候比較不容易完成。 堅持下去並完成它；佈署是網站開發過程中的重要部份。 這一章節是放在這份教材的中間部份，所以你的教練可以幫助你將你的網站上線。 這意味著假如你無法跟上課堂進度，你仍然可以自己獨立完成這份教材。
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Until now, your website was only available on your computer. Now you will learn how to deploy it! 部署是發佈你的應用程式 (application) 到網際網路的過程，所以大家終於可以看到你的應用程式 (application. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+就如你所學的，網站必須位於伺服器上。 There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+其他外部服務我們將使用 [GitHub](https://www.github.com)，它是一個程式碼托管服務 (code hosting service)。 還有其他這項服務提供者，但當今幾乎所有程式設計師都有一個 GitHub 帳戶，現在你將有一個。
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
@@ -16,11 +16,11 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## 啟動我們的 Git 倉庫 (repository)
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git 追蹤任何修改到一個放在程式碼倉庫 (code repository 或簡稱 "repo") 的特定檔案集合。 讓我們開始我們的專案。 打開你的主控台，並在 `djangogirls` 目錄下執行這些命令：
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. 你應該在 `djangogirls` 目錄下。
 
 {% filename %}command-line{% endfilename %}
 
@@ -32,7 +32,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git 將會追蹤這個目錄下所有檔案和資料夾的變更，但我們想要它忽略一些檔案。 為此，我們在這專案根目錄下新增一名為 `.gitignore` 的檔案。 打開你的編輯器，新增一個包含下列內容的檔案。
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,11 +47,11 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **注意**檔名開頭的小圓點 "." 是很重要的。 If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+在執行 `git add` 之前，或當你發現你自己不確定那些文件已經被修改，先使用 `git status` 命令確認是一個好主意。 This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+最後儲存我們的修改；到你的主控台，並執行這些命令：
 
 {% filename %}command-line{% endfilename %}
 
@@ -119,7 +119,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. 去確認一下吧！  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
@@ -137,7 +137,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     
     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    讓我們以建立一個我們的倉庫 (repo) 的副本 (clone)，將我們的程式碼從 GitHub 拉到PythonAnywhere上。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -229,15 +229,15 @@ $ source myvenv/bin/activate
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. 在後面的編輯網站 CSS 檔教材中，我們將學習到更多關於靜態檔的內容。
 
-Hit **Save** and then go back to the **Web** tab.
+點選 **Save**，然後返回到 **Web** 選項。
 
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+我們完成了！點選綠色 **Reload** 大按鈕，你將可以看到你的應用程式了，你將發現在頁面頂端有一個它的連結。
 
-## Debugging tips
+## 除錯提示 (Debugging tips)
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+當你嘗試瀏覽你的網站時，如果你遇到錯誤，首先是去你的 **錯誤日誌 (error log)** 中尋找除錯資訊 你將會在 PythonAnywhere 的 [Web 選項](https://www.pythonanywhere.com/web_app_setup/) 發現這個連結。 看看這裡是否有任何錯誤資訊；最新的是在底部。 常見的問題包括：
 
 - Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
@@ -249,12 +249,12 @@ If you see an error when you try to visit your site, the first place to look for
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+記住，你的教練會在這裡幫助你！
 
-# You are live!
+# 你上線了！
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+The default page for your site should say "It worked!", just like it does on your local computer. 試著在網址後面加 `/admin/`，你將會進入網站管理畫面。 登入使用者名和密碼，你就會看到你可以在伺服器上新曾文章。
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+給自己一個 *大大的* 鼓勵！ 伺服器部署是網站開發中最棘手的部分之一，人們通常花費好幾天才能讓它們正常運作。 但是你讓你的網站上線了，在真正的網際網路上，就像其他網站一樣！
