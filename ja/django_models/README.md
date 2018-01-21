@@ -2,11 +2,11 @@
 
 What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
 
-## Objects
+## オブジェクト
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+じゃあオブジェクトって何なの？って思いますよね。オブジェクトは状態（プロパティ）と命令（アクション）の塊です。ピンと来ないでしょうから例を挙げましょう。
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
@@ -28,13 +28,13 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+つまり、オブジェクト指向とは実際の物をプロパティ（オブジェクト・プロパティと呼びます）を持つコードと命令（メソッドと呼びます）で表現するという考え方です).
 
-How will we model blog posts then? We want to build a blog, right?
+ではブログポストはどういうモデルになるでしょうか。ブログが作りたいんですよね？
 
-We need to answer the question: What is a blog post? What properties should it have?
+それにはブログポストとは何か、それはどんなプロパティがあるかという問いに答えなければなりません。
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+まず確実なのはブログポストにはコンテンツと表題がが必要ですね。 It would be also nice to know who wrote it – so we need an author. 最後にポストの作成公開した時間も分かるといいですね。
 
     Post
     --------
@@ -45,23 +45,23 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+ではブログポストがどうなればいいですか？ポストをが公開されるといいですよね？
 
-So we will need a `publish` method.
+なのでpublishメソッドが必要です。
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+達成したいことが分かったので、Djangoでモデリングの開始です！
 
 ## Django model
 
-Knowing what an object is, we can create a Django model for our blog post.
+オブジェクトが何か分かったので、ブログポストのDjangoモデルを作りましょう。
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+A model in Django is a special kind of object – it is saved in the `database`. データベースはデータの集まりです。 ここにユーザーやブログポストの情報を格納します。 データを格納するのにSQLiteデータベースを使います。 This is the default Django database adapter – it'll be enough for us right now.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+データベースの中のモデルは、列（フィールド）と行（データ）があるスプレッドシートと思ってもらっても結構です。
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+全部をきちんと整理しておくため、プロジェクトの中に別のアプリケーションを作ります。 初めから全てを整理しておくのはとっても良いことです。 アプリケーションを作るには、次のコマンドをコンソールの中で走らせなけれなりません。（manage.pyファイルがあるdjangogirlsディレクトリから）：
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. これはPythonでよく使われて"ダンダー"(ダブルアンダースコア）と呼んでいます。
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
@@ -148,9 +148,9 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
+- classはオブジェクトを定義してますよ、ということを示すキーワードです。
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- models.ModelはポストがDjango Modelだという意味で、Djangoが、これはデータベースに保存すべきものだと分かるようにしています。
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
