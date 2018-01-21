@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# แนะนำการใช้บรรทัดคำสั่ง
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**ขอแนะนำให้รู้จักเพื่อนใหม่ของคุณ: บรรทัดคำสั่ง!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+จากนี้ไปจะแนะนำการใช้หน้าต่างดำๆ เหมือนกับที่แฮกเกอร์ใช้ มันอาจจะดูน่ากลัวสักหน่อยในตอนแรก แต่ มันก็แค่สิ่งรอรับคำสั่งจากคุณเท่านั้นเอง
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## อะไรคือบรรทัดคำสั่ง?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+หน้าต่างที่เรียกว่า **บรรทัดคำสั่ง** หรือ **อินเทอร์เฟซบรรทัดคำส่ัง** คือโปรแกรมสำหรับดู จัดการ และแก้ไขไฟล์ต่างๆ ที่อยู่ในเครื่องของคุณ แต่จะอยู่ในรูปแบบที่เป็นโหมดข้อความเท่านั้น It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. บรรทัดคำส่ังมีชื่อเรียกอื่นเหมือนกัน คือเรียกว่า *cmd*, *CLI*, *prompt*, *console* หรือ *terminal*.
 
-## Open the command-line interface
+## เปิดอินเทอร์เฟซบรรทัดคำสั่ง
 
-To start some experiments we need to open our command-line interface first.
+ก่อนจะเริ่มใช้ เราต้องเปิดมันขึ้นมาก่อน
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -34,17 +34,17 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+ส่วนใหญ่จะอยู่ที่เมนู Applications → Accessories → Terminal แต่นั่นขึ้นกับระบบที่ใช้อยู่ ถ้าไม่อยู่ในนี้ ลอง Google หาดูนะ. :)
 
 <!--endsec-->
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+ตอนนี้คุณควรเห็นหน้าสีขาวหรือสีดำที่รอคุณป้อนคำสั่งอยู่
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+ถ้าคุณใช้ Mac หรือ ลินุกซ์ คุณอาจจะเห็นเครื่องหมาย `$` แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+บนวินโดวส์ จะเป็นเครื่องหมาย `>` แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,7 +64,7 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+ทุกคำสั่งจะต่อท้ายเครื่องเหล่านี้หนึ่งบรรทัด แต่คุณไม่จำเป็นต้องพิมพ์เอง คอมพิวเตอร์จะทำให้คุณเอง. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## คำสั่งแรกของคุณ (เย้!)
 
 Let's start by typing this command:
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+จากนั้นกด `enter` นี่คือผลลัพธ์ของเรา:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,13 +106,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Basics
+## พื้นฐาน
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+แต่ละระบบปฏิบัติการที่มีชุดคำสั่งมาให้แตกต่างกัน ควรแน่ใจว่าคุณทำตามคำสั่งของระบบปฏิบัติการที่ใช้อยู่ เรามาลองกันเลยมั๊ย?
 
-### Current directory
+### ไดเรกทอรีปัจจุบัน
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+มันน่าจะดีใช่ไหม หากเรารู้ว่าตอนนี้เราอยู่ไหนแล้ว? ลองมาดูกัน ลองพิมพ์คำสั่งนี้ แล้วกด `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> หมายเหตุ: 'pwd' ย่อมาจาก 'print working directory'
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+คุณจะเห็นผลลัพธ์ที่ต่างไปเล็กน้อยบนเครื่องของคุณ ซึ่งผลที่ได้มักจะเริ่มที่ไดเรกทอรีบ้านของคุณ
 
 * * *
 
-### List files and directories
+### แสดงรายการไฟล์และไดเรกทอรี
 
-So what's in it? It'd be cool to find out. Let's see:
+มันคืออะไรกันนะ? มาดูกัน:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -177,9 +177,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### เปลี่ยนไดเรกทอรีปัจจุบัน
 
-Now, let's go to our Desktop directory:
+ตอนนี้ เราลองไปที่ไดเรกทอรี Desktop ของเรากัน:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+ลองตรวจสอบดูซิ ว่าเปลี่ยนจริงไหม
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,15 +221,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+เปลี่ยนแล้วจริงด้วย!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Create directory
+### สร้างไดเรกทอรี
 
-How about creating a practice directory on your desktop? You can do it this way:
+มาลองสร้างไดเรกทอรีชื่อ practice บน desktop ดูเป็นไง? คุณสามารถทำได้แบบนี้:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,17 +249,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+คำสั่งน้อยๆ นี้จะสร้างโฟลเดอร์ชื่อ `practice` บน desktop ของคุณ คุณสามารถตรวจดูได้ใน Desktop ของคุณ โดยใช้คำสั่ง `ls` หรือ `dir` ! ลองเลย. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> คำแนะนำจากโปร: ถ้าคุณไม่อยากพิมพ์คำสั่งเดิมซ้ำๆ ลองกดปุ่ม `ลูกศรขึ้น` และ `ลูกศรลง` บนแป้นพิมพ์ของคุณ เพื่อดูว่าคุณใช้คำสั่งล่าสุดอะไรบ้าง
 
 * * *
 
-### Exercise!
+### มาซ้อมมือกันเถอะ!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### เฉลย:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+ยินดีด้วย! :)
 
 * * *
 
-### Clean up
+### ทำความสะอาด
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+เราไม่ต้องการทิ้งสิ่งเหล่านี้ไว้ เรามาลบของพวกนี้ออกกันก่อนเลยละกัน
 
-First, we need to get back to Desktop:
+ขั้นแรก เราต้องกลับไปที่ Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+ลองตรวจสอบดู:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+ต่อไป มาลบไดเรทอรี `practice` กัน:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +360,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+เรียบร้อย! มาดูซิว่าไฟล์ถูกลบไปจริงๆ หรือยัง:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +380,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### จบการทำงาน
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Summary
+## ภาพรวม
 
-Here is a summary of some useful commands:
+สรุปคำสั่งที่มีประโยชน์:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| คำสั่ง (วินโดวส์) | คำสั่ง (Mac OS / ลินุกซ์) | คำอธิบาย                   | ตัวอย่างการใช้คำส่ัง                              |
+| ----------------- | ------------------------- | -------------------------- | ------------------------------------------------- |
+| exit              | exit                      | ปิดหน้าต่าง                | **exit**                                          |
+| cd                | cd                        | เปลี่ยนไดเรกทอรี           | **cd test**                                       |
+| cd                | pwd                       | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir               | ls                        | ดูรายการไดเรกทอรี/ไฟล์     | **dir**                                           |
+| copy              | cp                        | คัดลอกไฟล์                 | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                        | ย้ายไฟล์                   | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                     | สร้างไดเรกทอรีใหม่         | **mkdir testdirectory**                           |
+| rmdir (or del)    | rm                        | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                     | delete a directory         | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+คำสั่งเหล่านี้เป็นเพียงส่วนหนึ่งที่คุณสามารถเรียกใช้ได้ แต่ในวันนี้คุณจะได้ใช้เพียงเท่านี้ล่ะ
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+ถ้าคุณอยากรู้เพิ่มเติม [ss64.com](http://ss64.com) มีข้อมูลอ้างอิงเกี่ยวกับคำสั่งครบทุกระบบปฏิบัติการที่สมบูรณ์
 
-## Ready?
+## พร้อมหรือยัง?
 
-Let's dive into Python!
+เราไปดำดิ่งลงสู่โลกของ Python กัน!
