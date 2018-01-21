@@ -1,6 +1,6 @@
-# Django models
+# Django Models
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Wir erstellen jetzt etwas, damit wir alle Posts von unserem Blog speichern können. Aber um das zu tun, müssen wir zunächst über `Objekte` sprechen.
 
 ## Objekte
 
@@ -28,7 +28,7 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Der Gedanke dahinter ist also, echte Dinge mit Hilfe von Eigenschaften (genannt `Objekteigenschaften`) und Aktionsmöglichkeiten (genannt `Methoden`) im Programmcode zu beschreiben).
 
 Wie also modellieren wir Blogposts? Schließlich wollen wir ja einen Blog bauen, nicht wahr?
 
@@ -36,9 +36,9 @@ Wir müssen folgende Fragen beantworten: Was ist ein Blogpost? Welche Eigenschaf
 
 Nun, zum einen braucht unser Blogpost Text mit einem Inhalt und einen Titel, oder? It would be also nice to know who wrote it – so we need an author. Schließlich wollen wir wissen, wann der Post geschrieben und veröffentlicht wurde.
 
-    Post
-    --------
-    title
+    Post 
+    -------- 
+    title 
     text
     author
     created_date
