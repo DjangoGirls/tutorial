@@ -1,58 +1,58 @@
-# If you're doing the tutorial at home
+# Als je deze tutorial thuis volgt
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Als je deze tutorial thuis volgt en niet op een van de [Django Girls evenementen](https://djangogirls.org/events/), kun je dit hoofdstuk in z'n geheel overslaan en rechtstreeks naar het [Hoe werkt het internet](../how_the_internet_works/README.md) hoofdstuk gaan.
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Je kan dit eventueel overslaan omdat we alle informatie die hier staat dekken in de gehele tutorial. Dit is gewoon een extra pagina die alle installatie instructies verzameld op één plek. Het Django Girls evenement omvat ook een "Installatie-avond" waar we alles installeren zodat we daar ons tijdens de workshop geen zorgen meer om hoeven te maken. Dit is dus handig als je naar een workshop gaat.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+If you find it useful, you can follow this chapter too. Maar als je liever dingen leert dan een aantal dingen op je computer te installeren, sla dan dit hoofdstuk over en ga aan de slag! We leggen alle installatie stappen later aan je uit.
 
-Good luck!
+Succes!
 
-# Installation
+# Installatie
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+In deze workshop ga je een blog bouwen. Er zijn een paar setup taken in de tutorial waarvan het goed zou zijn om hier van tevoren alvast doorheen te werken, zodat je klaar bent om te kunnen programmeren op de dag van het evenement.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Python installeren
 
 {% include "/python_installation/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Virtualenv opzetten en Django installeren
 
 {% include "/django_installation/instructions.md" %}
 
-# Install a code editor
+# Een code editor installeren
 
 {% include "/code_editor/instructions.md" %}
 
-# Install Git
+# Git installeren
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Een GitHub account aanmaken
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+Ga naar [GitHub.com](https://www.github.com) and registreer voor een nieuw, gratis gebruikers account.
 
-# Create a PythonAnywhere account
+# Een PythonAnywhere account aanmaken
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Begin met lezen
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Gefeliciteerd! Je bent helemaal klaar om te gaan. Als je nog wat tijd over hebt voordat de workshop begint zou het handig zijn om alvast een paar van de volgende hoofdstukken te lezen:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Hoe het internet werkt](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Inleiding tot de command line](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Inleiding Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Wat is Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Veel plezier met de workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Als je met de workshop begint kun je rechtstreeks naar [Je eerste Django project!](../django_start_project/README.md) gaan, omdat je de stof al in de eerdere hoofdstukken behandeld hebt.
