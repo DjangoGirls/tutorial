@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Er zijn ontzettend veel verschillende code editors en het komt grotendeels neer op persoonlijke voorkeur. De meeste Python programmeurs gebruiken complexe maar uiterst krachtige IDEs (geïntegreerde software-ontwikkelomgeving) zoals PyCharm. Dat is waarschijnlijk minder geschikt voor een beginner. Onze aanbevelingen zijn even krachtig en een stuk eenvoudiger.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Onze suggesties staan hieronder, maar vraag gerust je coach wat hun voorkeur is - het maakt het makkelijker om hulp van hen te krijgen.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit is een open-source, gratis programma dat beschikbaar is voor alle besturingssystemen.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download het hier](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[Download het hier](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[Download het hier](https://atom.io/)
 
-## Why are we installing a code editor?
+## Waarom installeren wij een code editor?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Je vraagt je misschien af waarom we een speciaal bewerkingsprogramma installeren, in plaats van een programma als Word of Notepad te gebruiken.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+De eerste reden is dat de code **plain text** (platte tekst) moet zijn, en het probleem met programma's zoals Word en Textedit is dat ze helemaal geen plain text produceren: ze produceren rich text (met lettertypes en opmaak), die ze opslaan als [RTF (Rich Text Format](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+De tweede reden is dat alle code editors gespecialiseerd zijn in het schrijven van code, zodat ze nuttige functies hebben zoals het markeren van de code met kleur, of automatisch aanhalingstekens sluiten.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+We zien dit later allemaal in actie. Al snel zul je je oude vertrouwde editor als een van je favoriete gereedschappen beschouwen. :)
