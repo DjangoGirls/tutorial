@@ -1,58 +1,58 @@
-# If you're doing the tutorial at home
+# إذا كنت تستخدم البرنامج التعليمي في المنزل
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+إذا كنت تستخدم البرنامج التعليمي في المنزل وليس في أحد [أحداث "جانغو للفتيات"](https://djangogirls.org/events/)، يمكنك تخطي هذا الفصل الآن والانتقال مباشرة إلى الفصل ["كيف يعمل الإنترنت" ](../how_the_internet_works/README.md).
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+وهذا يرجع إلى أننا نغطي هذه الأشياء في البرنامج التعليمي كله على أي حال، وهذه مجرد صفحة إضافية تقوم بجمع كافة إرشادات التثبيت في مكان واحد. يشمل حدث دجانغو للفتيات امسية للتثبيت بحيث نقوم بتثبيت كل شيء، حتى لا نعاني اثناء حلقات العمل، هذا سيكون مفيدا بالنسبة لنا.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+إذا وجدت أنها مفيدة، يمكنك المتابعة من خلال هذا الفصل أيضا. ولكن إذا كنت تريد البدء في تعلم الأشياء قبل تثبيت مجموعة من الأشياء على جهاز الكمبيوتر الخاص بك، انتقل من هذا الفصل وسوف نشرح جزء التثبيت لكم في وقت لاحق.
 
-Good luck!
+حظا سعيدا!
 
-# Installation
+# التثبيت
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+في حلقة العمل سوف نبني مدونة، هناك عدد قليل من مهام الإعداد في البرنامج التعليمي الذي سيكون جيدا للعمل سلفا حتى أن كنت على استعداد لبدء التكويد في ذاك اليوم.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# تثبيت بايثون
 
 {% include "/python_installation/instructions.md" %}
 
-# Set up virtualenv and install Django
+# قم بإعداد بيئة افتراضية وتثبيت جانغو
 
 {% include "/django_installation/instructions.md" %}
 
-# Install a code editor
+# ركب محرر اكواد
 
-{% include "/code_editor/instructions.md" %}
+{% include "/chromebook_setup/instructions.md" %}
 
-# Install Git
+# تثبيت Git
 
-{% include "/deploy/install_git.md" %}
+{% include "/django_installation/git.md" %}
 
-# Create a GitHub account
+# إنشاء حساب Github
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+زر [GitHub.com](https://www.github.com) وسجل حساب مستخدم جديد، مجاناً.
 
-# Create a PythonAnywhere account
+# قم بإنشاء حساب بايثون في كل مكان
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% include "/django_installation/pythonanywhere.md" %}
 
-# Start reading
+# ابدأ بالقراءة
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+تهانينا، انت جاهز الأن وعلى استعداد للإنطلاق! إذا كان لا يزال لديك بعض الوقت قبل انعقاد حلقة العمل، سيكون من المفيد بدء قراءة عدد قليل من فصول البداية:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [كيف تعمل الإنترنت](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [مقدمة لسطر الأوامر](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [مقدمة إلى بايثون](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [ما هو جانغو؟](../django/README.md)
 
-# Enjoy the workshop!
+# استمتع بالحلقة!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+عند البدء في حلقة العمل، عليك أن تكون قادر على الذهاب مباشرة إلى [أول مشروع جانغو!](../django_start_project/README.md) لأنك غطيت كل الموارد في الفصول السابقة.
