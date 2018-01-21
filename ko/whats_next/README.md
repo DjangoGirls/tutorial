@@ -1,14 +1,14 @@
-# What's next?
+# 다음은?
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
-### What to do now?
+### 이제 무엇을 해야하나요?
 
-Take a break and relax. You have just done something really huge.
+잠시 휴식을 가지고 여유를 가지세요. 여러분은 이제 막 정말 큰 일 마쳤으니까요
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### 다음에 해볼만한 자료를 추천해주실래요?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
