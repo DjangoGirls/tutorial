@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django Girls 教程
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -10,25 +10,25 @@ Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tu
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Introduction
+## 介绍
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? 你有没有想去做一个网站，但是却从未有过足够的动力去开始吗? 你有没有想过软件世界太过复杂，即使你想做一些属于自己的东西？
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+好的，我们跟你讲一个好消息！编程没有看上去那么复杂，我们将给你展示它是多么的有趣。
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+This tutorial will not magically turn you into a programmer. 如果你想变得擅长于此，你需要数月乃至数年的时间去学习和练习。 但是我们想展示给你编程和创建网站没有看起来那么复杂。 我们试着用深入浅出的方法解释，所以你不会觉得被技术吓到。
 
-We hope that we'll be able to make you love technology as much as we do!
+我们希望我们可以让你变得更爱技术，像我们一样！
 
-## What will you learn during the tutorial?
+## 在本教程里你会学到什么？
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+它将（或多或少）看起来像这个样子：
 
-![Figure 0.1](images/application.png)
+![图0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
@@ -38,9 +38,9 @@ It is amazing to take part in a Django Girls workshop, but we are aware that it 
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## About and contributing
+## 关于和贡献
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+这个教程由[DjangoGirls](https://djangogirls.org/)维护。 如果你发现本网有任何错误或想更新教程，请按照 [贡献指导](https://github. com/DjangoGirls/tutorial/blob/master/Contributing. md)行动.
 
 ## Would you like to help us translate the tutorial into other languages?
 
