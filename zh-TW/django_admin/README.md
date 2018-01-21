@@ -1,4 +1,4 @@
-# Django admin
+# Django 管理員 (Django admin)
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
@@ -13,11 +13,11 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+如你所看到的，我們導入 （包括） 在前一章節€中定義的 Post 模型。 要使我們的模型在管理頁面上可以看見，我們需要以 `admin.site.register(Post)` 註冊模型.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK，現在來看看我們的 Post 模型。 記得在主控台上執行 `python manage.py runserver` 啟動網站伺服器。 Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Login page](images/login_page2.png)
+![登入頁面](images/login_page2.png)
 
 To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
