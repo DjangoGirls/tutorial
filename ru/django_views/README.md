@@ -1,8 +1,8 @@
-# Представления в Django – время создавать!
+# Django views – time to create!
 
-Пришло время избавиться от ошибки, на которую мы наткнулись в прошлой главе :)
+Пришло время избавиться от ошибки, на которую мы наткнулись в прошлой главе! :)
 
-*view*, или *представление*, — это то место, где мы разместим «логику» работы нашего приложения. Оно запросит информацию из `модели`, которую мы создали ранее, и передаст её в `шаблон`. Шаблонами мы займёмся в следующей главе. Представления похожи на методы в Python и лишь немногим сложнее того, с чем мы уже сталкивались в главе __Введение в Python__.
+*view* это то место, где мы разместим "логику" работы нашего приложения. Оно запросит информацию из `модели`, которую мы создали ранее, и передаст её в `шаблон`. Шаблонами мы займёмся в следующей главе. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 Представления размещаются в файле `views.py`. Мы добавим свои *представления* в файл `blog/views.py`.
 
@@ -11,34 +11,34 @@
 Хорошо, давай откроем этот файл и посмотрим на его содержимое:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 from django.shortcuts import render
 
 # Create your views here.
 ```
 
-Не слишком много кода.
+Not too much stuff here yet.
 
-Помнишь, что строки, начинающиеся с символа `#` — это комментарии? То есть Python не будет пытаться запустить их содержимое.
+Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
- Простейшее *представление* может выглядеть следующим образом.
+Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
 {% filename %}blog/views.py{% endfilename %}
+
 ```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Как ты можешь заметить, мы создали функцию (`def`) с именем `post_list`, которая принимает `request` в качестве аргумента и возвращает (`return`) результат работы функции `render`, которая уже соберёт наш шаблон страницы `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
 
-Сохрани файл, перейди по адресу http://127.0.0.1:8000/ и посмотри, что у нас получилось.
+Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 Другая ошибка! Читаем, что произошло:
 
-![Ошибка][1]
+![Ошибка](images/error.png)
 
- [1]: images/error.png
-
-Это значит, что, по крайней мере, сервер снова работает, но что-то всё же пошло не так, верно? Не беспокойся, это просто страница с сообщением об ошибке, бояться совершенно нечего! Как и сообщения об ошибках в консоли, такие страницы чрезвычайно полезны. Здесь ты можешь прочесть: *TemplateDoesNotExist* — такого шаблона не существует. Давай исправим ошибку и создадим шаблон в следующей главе!
+This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
 > Подробнее о представлениях в Django можно узнать из официальной документации: https://docs.djangoproject.com/en/1.11/topics/http/views/
