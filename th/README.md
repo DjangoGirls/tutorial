@@ -2,50 +2,50 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> งานนี้ได้รับการอนุญาตภายใต้อนุญาตสร้างสรรค์คอมมอนส์ครีเอทีฟ 4.0 อินเตอร์เนชั่นแนล สำเนาใบอนุญาต ชม https://creativecommons.org/licenses/by-sa/4.0/thai
 
-## Welcome
+## Thai
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Msaduxarea123@gmail.com Msaduxarea@gmail.com
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Msaduxarea@gmail.com
 
-## Introduction
+## บทนำ
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Internet wifi และเคยรู้สึกไหมว่า ไม่มีแรงจูงใจที่จะเริ่มสร้างเว็บไซต์? เคยคิดไหมว่า โลกของการทำซอฟต์แวร์ช่างซับซ้อนมากเกินไปสำหรับคุณ หากจะลงมือทำเอง?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+เรามีข่าวดีสำหรับคุณ! การเขียนโปรแกรมมันไม่ยากเหมือนอย่างที่คิด และเราจะโชว์ให้ดูถึงความสนุกของมัน
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+ไทย ถ้าคุณต้องการที่จะเป็นโปรแกรมเมอร์ที่เก่ง คุณต้องการเวลาเพื่อเรียนรู้และฝึกฝน ไม่ว่าจะหลายเดือนหรือหลายปี แต่เราอยากจะแสดงให้คุณดูว่า การเขียนโปรแกรมหรือสร้างเว็บไซต์ไม่ได้ยุ่งยากอะไรขนาดนั้น เราจะพยายามอธิบายให้เข้าใจง่ายที่สุดเท่าที่จะทำได้ เพราะงั้นคุณไม่จำเป็นต้องกลัวอะไรเกี่ยวกับเทคโนโลยีสายนี้
 
-We hope that we'll be able to make you love technology as much as we do!
+เราหวังว่า จะทำให้คุณหลงรักเทคโนโลยีมากได้เท่าๆ กับที่พวกเรารักมัน!
 
-## What will you learn during the tutorial?
+## คุณจะได้เรียนรู้อะไรบ้างในบทเรียนนี้?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+ซึ่งผลลัพธ์จะออกมาประมาณนี้ (อาจจะต่างจากนี้หน่อย แต่ไม่มาก):
 
-![Figure 0.1](images/application.png)
+![รูปที่ 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
-
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
-
-## Following the tutorial at home
-
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
-
-In every chapter already covered, there is a link that points to the correct video.
-
-## About and contributing
-
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-
-## Would you like to help us translate the tutorial into other languages?
-
-Currently, translations are being kept on crowdin.com platform at:
-
-https://crowdin.com/project/django-girls-tutorial
-
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+> หากคุณเรียนบทเรียนนี้ด้วยตัวคุณเอง โดยที่ไม่มีใครช่วยคุณ เรามีช่องทางให้คุณผ่านช่องทางสนทนา: !(https://badges. gitter. im/Join Chat. svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg) ซึ่งเราได้ขอให้โค้ชและคนที่เคยผ่านบทเรียนนี้มาช่วยตอบคำถามให้กับคนอื่นที่มาเรียนบทเรียนนี้ด้วย! อย่ากลัวที่จะถามคำถามนะ!</p> </blockquote> 
+> 
+> โอเค, [เรามาเริ่มกันเลยดีกว่า...](./how_the_internet_works/README.md)
+> 
+> ## การทำตามบทเรียนจากที่บ้าน
+> 
+> มันจะสุดยอดมากถ้าได้เป็นส่วนหนึ่งในการประชุมเชิงปฏิบัติการ Django Girls แต่เราตระหนักดีว่า มันไม่เสมอไปที่จะได้เข้าร่วม นี่คือเหตุผลที่เราแนะนำให้คุณลองทำตามบทเรียนนี้ที่บ้าน For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+> 
+> In every chapter already covered, there is a link that points to the correct video.
+> 
+> ## เกี่ยวกับบทเรียนนี้ และ การร่วมพัฒนา
+> 
+> บทเรียนนี้ดูแลโดย [DjangoGirls](https://djangogirls.org/) ถ้าคุณเห็นข้อผิดพลาดหรืออยากจะอัปเดตบทเรียนนี้ กรุณา [ดูรายละเอียด แนวทางการร่วมพัฒนา](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+> 
+> ## Would you like to help us translate the tutorial into other languages?
+> 
+> Currently, translations are being kept on crowdin.com platform at:
+> 
+> https://crowdin.com/project/django-girls-tutorial
+> 
+> If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
