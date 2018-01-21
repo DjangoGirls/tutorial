@@ -1,5 +1,5 @@
-# Chromebook setup
+# Εγκατάσταση του Chromebook
 
-> **Note** If you already worked through the Installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **Σημείωση** Εάν έχετε ήδη τελειώσει με τα βήματα της εγκατάστασης, δεν χρειάζεται να επαναλάβετε αυτή την ενότητα - μπορείτε να πάτε απευθείας στην ενότητα [ Εισαγωγή στην Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
