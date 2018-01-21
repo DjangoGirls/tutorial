@@ -1,28 +1,28 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+יש המון עורכי קוד שונים, ובסופו של דבר זה מסתכם בהעדפה אישית. רוב מתכנתות הפייתון משתמשות בתוכנות עריכת קוד מתוחכמות יחסית, המכונות IDEs)(Integrated Development Environments, ובעברית - סביבות פיתוח משולבות, כמו PyCharm. אבל למתחילים זה כנראה פחות מתאים; עדיף להתחיל מעורך קוד שימושי לא פחות, אבל פשוט בהרבה.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+עורך חינמי עם קוד פתוח, שמתאים לכל מערכות ההפעלה.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[לחצי כאן להורדה](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[לחצי כאן להורדה](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[לחצי כאן להורדה](https://atom.io/)
 
-## Why are we installing a code editor?
+## למה אנחנו מתקינות עורך קוד, בעצם?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+יכול להיות שאת שואלת את עצמך, למה אנחנו מתקינות תוכנה מיוחדת לעריכת קוד, במקום להשתמש במשהו כמו Word או Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
