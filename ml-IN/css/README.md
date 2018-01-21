@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+നമ്മുടെ ഭ്ലോഗ് ഇപ്പോഴും കാണാന്‍ വലിയ ഭംഗിയില്ല, അല്ലേ? അത് ഭംഗിയാക്കാന്‍ സമയമായി! അതിനു വേണ്ടി നമുക്കു CSS ഉപയോഗിക്കാം.
 
-## What is CSS?
+## എന്താണ് CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## നമുക്ക് Bootstrap ഉപയോഗിക്കാം!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## Bootstrap ഇന്‍സ്റ്റാള്‍ ചെയ്യാം
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,17 +29,17 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+ഇപ്പോള്‍ തന്നെ ഒന്നു ഭംഗി കൂടിയില്ലേ!
 
-## Static files in Django
+## Django-യിലെ static ഫൈലുകള്‍
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+ഒടുവില്‍ നമ്മള്‍ **static ഫൈലുകള്‍** എന്നു വിളിച്ചുകൊണ്ടിരിക്കുന്ന ഈ വസ്തുക്കളെ ഒന്നു പരിഷോധിക്കാം. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Django-യിലെ static ഫൈലുകള്‍ എവിടെ വെക്കണം
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+അത് ചെയ്യാനായി നമുക്ക് blog ആപ്പിനകത്ത് ഒരു `static` എന്ന് പേരുള്ള ഫോള്‍ഡര്‍ നിര്‍മിക്കാം:
 
     djangogirls
     ├── blog
@@ -51,24 +51,24 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## നമ്മുടെ ആദ്യത്തെ CSS ഫൈല്‍!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. `css` എന്ന് പേരുള്ള ഒരു പുതിയ ടയറക്ട്റി നിങ്ങളുടെ `static` ടയറക്ട്റിക്കകത്ത് നിര്‍മിക്കൂ. എന്നിട്ട് `blog.css` എന്ന് പേരുള്ള ഒരു പുതിയ ഫൈല്‍ ഈ `css` ടയറക്ടറിക്കകത്ത് നിര്‍മിക്കൂ. Ready?
 
     djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
+     └─── blog
+          └─── static
+               └─── css
+                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+കുറച്ച് CSS എഴുതാന്‍ നേരമായി! നിങ്ങളുടെ ടെക്സ്ട് എഡിറ്ററില്‍ `blog/static/css/blog.css` എന്ന ഫൈല്‍ തുറക്കൂ.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+എന്നാലും നമുക്ക് കുറച്ചൊന്ന് ചെയ്തു നോക്കാം. നമ്മുടെ ഹെഡറിന്റെ നിറമൊന്നു മാറ്റി നോക്കാം? നിറങ്ങളെ മനസ്സിലാക്കുവാനായി കംബ്യൂട്ടറുകള്‍ പ്രത്യേക കോഡുകള്‍ ഉപയോഗിക്കും. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. നേരിട്ട് നിറങ്ങളുടെ പേരുകള്‍ ഉപയോഗിച്ചാലും തെറ്റില്ല. ഉദാഹരണത്തിന് `red` എന്നോ `green` എന്നോ ഉപയോഗിക്ക.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+നിങ്ങളുടെ `blog/static/css/blog.css` ഫൈലില്‍ താഴെ കാണിച്ചിട്ടുള്ള കോട് ചേര്‍ക്കുക:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a`-നെ ഒരു CSS Selector എന്നണ് വിളിക്കുക. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ഈ അവസരത്തില്‍, അതിന്റെ നിറം `#FCA205` അഥവാ ഓറഞ്ജ് ആക്കി മാറ്റുവാനാണ് നാം നിര്‍ദേശിക്കുന്നത്. നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ള നിറം ഉപയൊഗിക്കാം ഇവിടെ!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+ഒരു HTML ഫൈലിലുള്ള എലമെന്റ്സിന്റെ സ്ടൈലിനെയാണ് നമ്മള്‍ ഒരു CSS ഫൈലില്‍ നിര്‍ണയിക്കുന്നത്. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class-ഉം id-യും നിങ്ങള്‍ തന്നെ എലമെന്റ്സിനു കൊടുക്കുന്ന പേരുകളാണ്. ഒരു class ഒരു കൂട്ടം എലമെന്റ്സിനെ വര്‍ണ്ണിക്കുവാന്‍ ഉപയോഗിക്കുന്നതാണ്. എന്നാല്‍ ഒരു id ഒരു പ്രത്യേഗ എലമെന്റിനെയാണ് സൂജിപ്പിക്കുന്നത്. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. നമ്മുടെ CSS ഫൈല്‍ എവിടെയാണെന്ന് നമ്മുടെ ടെംപ്ലൈറ്റിനോട് നാം പറഞ്ഞുകൊടുത്ത് കഴിഞ്ഞു.
 
-Your file should now look like this:
+നമ്മുടെ ഫൈല്‍ കണ്ടാല്‍ താഴെ കൊടുത്തിട്ടുളളത് പോലെ ഇരിക്കണം:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+ഫൈല്‍ സേവ് ചെയത് സൈറ്റ് റിഫ്രഷ് ചെയ്യൂ!
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+അടിപൊളി! നമ്മുടെ വെബ്സൈറ്റിന് എടതു ഭാഗത്തെ മാര്‍ജിന്‍ കൂട്ടി ഇത്തിരി വിസ്താരം നല്‍കാം? ശ്രമിക്കാം!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -153,7 +153,7 @@ Add that to your CSS, save the file and see how it works!
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+നമ്മുടെ ഹെഡറിന്റെ ഫോണ്ടില്‍ ഒരു ഭേതഗതി വരുത്തി നോക്കിയാലോ? നിങ്ങളുടെ `blog/templates/blog/post_list.html` എന്ന ഫൈലിലെ `<head>`-ലോട്ട് താഴെയുള്ളത് പേസ്റ്റ് ചെയ്യൂ:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -176,7 +176,7 @@ h1 a {
 
 ![Figure 14.3](images/font.png)
 
-Great!
+ഉഷാര്‍!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
