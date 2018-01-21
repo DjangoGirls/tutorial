@@ -1,48 +1,48 @@
-# Your first Django project!
+# İlk Django projen!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Bu bölümün bir kısmı Geek Girls Carrots tarafından hazırlanmış eğitimlere dayanılarak hazırlanmıştır (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Bu bölümün [django-marcador tutorial](http://django-marcador.keimlink.de/)'a dayanan bazı kısımları Creative Commons Attribution-ShareAlike International License altında lisanslanmıştır. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+İlk adım yeni bir Django projesi başlatmaktır. Aslında, bizim için bir Django projesinin iskeletini yaratacak Django tarafından sağlanan bazı komut dosyaları çalıştıracağız. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üzere olduğumuz dosyaları yeniden adlandırmamalısınız. Onları başka bir yere taşımak da iyi bir fikir değil. Django'nun önemli şeyleri bulabilmesi için belirli yapısını koruması gerekir.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda `(myenv)` öneki görmüyorsanız, virtualenv'inizi aktive etmeniz gerekir. **Django yükleme** bölümünün **virtualenv ile Çalışma** kısmında nasıl yapılacağını açıkladık. Windows'ta `myvenv\Scripts\activate` ya da, Mac OS ya da Linux'ta `source myvenv/bin/activate` yazmak bunu sizin için yapacaktır.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Mac OS X or Linux konsolunuzda, devam eden şu komutu çalıştırmalısınız. **Periyot eklemeyi unutmayın (yada nokta)`.`sonunda!**
 
 {% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Nokta `.` bu durumda çok önemlidir çünkü; koda, Django'yu şu an bulunduğunuz dizine kurmasını söyler. (nokta `.` şu anki dizine bir kısayoldur).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Not** Yukarıdaki komutu yazarken, sadece `django-admin` ile başlayan kısmı yazmanız gerektiğini unutmayın. Burada gösterilen `(myvenv) ~/djangogirls$` kısmı, sadece komut satırında girdinizi davet eden komut istemi örneğidir.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koymayı unutmayın)**:
 
 {% filename %}komut-satırı{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Nokta `.` bu durumda çok önemlidir çünkü; koda, Django'yu şu an bulunduğunuz dizine kurmasını söyler. (nokta `.` şu anki dizine bir kısayoldur).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` sizin için dosya ve dizinler oluşturacak bir komut dosyasıdır. Şimdi aşağıdaki gibi görünen bir dizin yapınız olmalı:
 
     djangogirls
     ├───manage.py
@@ -53,35 +53,35 @@ On Windows you should run the following command. **(Don't forget to add the peri
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-The `settings.py` file contains the configuration of your website.
+`settings.py` dosyası, web sitesinizin ayarlarını içerir.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver`(urlçözümleyici) tarafından kullanılan desenler listesi içerir.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Şu an için değişiklik yapmayacağımız diğer dosyaları yoksayalım. Unutmamanız gereken tek şey kazayla onları silmeyin!
 
-## Changing settings
+## Ayarları değiştirme
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Not**: Bunu aklınızda tutun, `settings.py` dosyası da diğerleri gibi düzenli bir dosyadır. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi alacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçiniz. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olabilmesi nedeniyle kod düzenleyicinin seçilmesi önem arz etmektedir.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+`settings.py`'de, `TIME_ZONE` içeren satırı bulun ve kendi zaman diliminizi seçmek için değiştirin. Örnek olarak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Europe/Istanbul'
 ```
 
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu dilden oluşmaktadır, ör. `en` ingilizce için veya `de` almanca için, ve ülke kodu da, ör. `de` almanya için veya `ch`isviçre için. Django'daki varsayılan butonların ve bildirimlerin sizin dilinizde olmasını istiyorsanız bunu eklemek isteyeceksiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan bir çok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Change the language code by changing the following line:
+Aşağıdaki satırı değiştirerek dil kodunu değiştiriniz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Change the language code by changing the following line:
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Eğitici ders içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek ve böylece aşağıdaki ayarları değiştireceğiz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,15 +106,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Not**: Eğer Chromebook kullanıyorsanız bu satırı settings.py dosyanızın en altına ekleyiniz: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
-## Set up a database
+## Bir veritabanı kur
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Web uygulamalarınız için farklı birçok veritabanı yazılımı vardır. Biz varsayılanı kullanacağız, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Sqlite varsayılan olduğu için zaten `mysite/settings.py` dosyamızda kurulu:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın:`python manage.py migrate` (`manage.py` dosyasını içeren `djangogirls` klasöründe olmalıyız). İşler iyi giderse şöyle bir şey görmelisiniz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -150,53 +150,53 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Hepsi bu kadar! Web sunucusunu (web server) çalıştırma ve websitemizin çalıştığını görme zamanı!
 
-## Starting the web server
+## Web sunucusunu başlatmak
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+`manage.py` dosyasının bulunduğu dizinde olmalıyız (`djangogirls` klasörü). Konsol üzerinden `python manage.py runserver` komutunu çalıştırarak web sunucusunu başlatabilirsiniz:
 
 {% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Eğer Chromebook üzerindeyseniz, bunun yerine şu komutu kullanın:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Eğer Windows'taysanız ve `UnicodeDecodeError` hatası varsa, bu komutu kullanın:
 
 {% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Şimdi tek yapmanız gereken sitenizin çalışıp çalışmadığına bakmak. Tarayıcınızı açın (Firefox, Chrome, Safari, Internet Explorer veya ne tercih ediyorsanız) ve bu adresi girin:
 
 {% filename %}tarayıcı{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Eğer Chromebook kullanıyorsanız, her seferinde test sunucusunu ziyaret edeceksiniz ve erişeceksiniz:
 
 {% filename %}tarayıcı{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdın! Harika, değil mi?
 
-![It worked!](images/it_worked2.png)
+![İşte çalışıyor!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp virtualenv aktive etmeniz gerekmektedir. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+Sonraki adım için hazır mısın? İçerikleri oluşturma zamanı!
