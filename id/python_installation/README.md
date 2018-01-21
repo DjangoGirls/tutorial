@@ -1,15 +1,15 @@
-# Let’s start with Python
+# Mari kita mulai dengan Python
 
-We're finally here!
+Kami akhirnya di sini!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Tapi pertama, mari kita ceritakan apa itu Python. Python adalah bahasa pemrograman yang sangat populer yang bisa digunakan untuk membuat situs web, game, perangkat lunak ilmiah, grafis, dan banyak lagi.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python berasal pada akhir 1980-an dan tujuan utamanya adalah untuk dapat dibaca oleh manusia (tidak hanya mesin!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Instalasi Python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Catatan** Jika Anda menggunakan Chromebook, lewati bab ini dan pastikan Anda mengikuti [Pengaturan](../chromebook_setup/README.md) Chromebook.
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Catatan** Jika Anda sudah mengerjakan langkah-langkah Pemasangan, Anda tidak perlu melakukan ini lagi - Anda bisa langsung melompat ke bab berikutnya!
 
-{% include "/python_installation/instructions.md" %}
+{% include "/python_installation/instructions.md"%}
