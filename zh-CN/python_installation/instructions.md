@@ -10,7 +10,7 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![别忘了增加 Python 到 Path](../python_installation/images/python-installation-options.png)
 
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
@@ -32,9 +32,9 @@ data-collapse=true ces-->
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+你需要去到网站 https://www.python.org/downloads/release/python-361/然后下载 Python 安装程序：
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
+* 下载 *Mac OS X 64-bit/32-bit installer* 文件，
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
@@ -42,7 +42,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+很有可能你的系统已经默认安装了Python。要检查你是否安装了 （并且它是哪一个版本），打开控制台，并键入以下命令：
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +50,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. 如果你未曾安装过 Python 或者你想要一个不同的版本，你可以按如下所示安装它：
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+在控制台中键入此命令：
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +68,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+在您的控制台中使用此命令：
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +82,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+在您的控制台中使用此命令：
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,4 +103,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! 有时事情都不顺利，这时寻求其他更多经验的人的帮助会更好。
