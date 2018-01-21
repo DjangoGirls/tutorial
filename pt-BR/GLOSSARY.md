@@ -1,3 +1,3 @@
-# code editor
+# editor de código
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+O Editor de código é uma aplicação que permite salvar seu código de tal forma que você possa editar ele mais tarde. Você aprende onde conseguir um no [capítulo Editor de código](./code_editor/README.md)
