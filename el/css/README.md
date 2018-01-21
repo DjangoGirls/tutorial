@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS- κάνε το όμορφο!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Το blog μας φαίνεται ακόμα αρκετά άσχημο, έτσι δεν είναι; Ωρα να το κάνουμε όμορφο! Γι'αυτή τη δουλειά θα χρησιμοποιούμε τη CSS.
 
-## What is CSS?
+## Τι είναι η CSS;
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Άλλα δεν θέλουμε να ξεκινήσουμε από την αρχή ξανά, έτσι; Άλλη μια φορά, θα χρησιμοποιήσουμε κάτι που οι προγραμματιστές κυκλοφόρησαν δωρεάν στο διαδίκτυο. Το να ανακαλύπτουμε τον τροχό δεν έχει πλάκα, ξέρετε.
 
-## Let's use Bootstrap!
+## Ας χρησιμοποιήσουμε το Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Γράφτηκε από προγραμματιστές που εργάστηκαν στο Twitter. Τώρα αναπτύσσεται από εθελοντές από ολόκληρο το κόσμο!
 
-## Install Bootstrap
+## Εγκατάσταση του Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+Για να εγκαταστήσετε το Bootstrap, πρέπει να προσθέσετε αυτό στο `<head>` στο `html`αρχείο σας:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![Σχήμα 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Δείχνει ήδη πολύ καλύτερο!
 
-## Static files in Django
+## Στατικά αρχεία στο Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Τέλος, ας ρίξουμε μια πιο προσεκτική ματιά στα λεγόμενα **στατικά αρχεία**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Πού βρίσκονται τα στατικά αρχεία στο Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Για να το κάνουμε αυτό πρέπει να δημιουργήσουμε ένα φάκελο με το όνομα `static` μέσα στο φάκελο του app blog:
 
     djangogirls
     ├── blog
@@ -49,11 +49,11 @@ We do that by creating a folder called `static` inside the blog app:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Το Django θα βρίσκει αυτόματα οποιοδήποτε φάκελο ονομάζεται "static" μέσα στους φακέλους οποιασδήποτε εφαρμογή σας. Έπειτα θα μπορεί να χρησιμοποιεί το περιεχόμενο τους ως στατικά αρχεία.
 
-## Your first CSS file!
+## Το πρώτο CSS αρχείο σας!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Ας δημιουργήσουμε ένα CSS αρχείο τώρα, για να προσθέσετε το δικό σας στυλ στην ιστοσελίδα σας. Δημιουργήστε έναν νέο κατάλογο που ονομάζεται `css` μέσα στο `static` κατάλογο. Στη συνέχεια, δημιουργήστε ένα νέο αρχείο που ονομάζεται `blog.css` μέσα σε αυτόν τον κατάλογο `css`. Είστε έτοιμη;
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Ώρα να γράψουμε λίγη CSS! Άνοιξε το αρχείο `blog/static/css/blog.css` στον επεξεργαστή.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Αλλά ας δοκιμάσουμε μερικά πράγματα. Ίσως θα μπορούσαμε να αλλάξουμε το χρώμα του τίτλου της σελίδας μας; Για να καταλάβουν τα χρώματα, οι υπολογιστές χρησιμοποιούν ειδικούς κώδικες. Αυτοί οι κώδικες ξεκινάνε με `` και ακολουθούνται από 6 γράμματα (A-F) και αριθμούς (0-9). Για παράδειγμα, ο κωδικός για το μπλε είναι `#0000FF`. Μπορείτε να βρείτε τους κωδικούς των χρωμάτων για πολλά χρώματα εδώ: http://www.colorpicker.com/. Context | Request Context. Μπορείς επίσης να χρησιμοποιήσεις [προκαθορισμένα χρώματα](http://www.w3schools.com/colors/colors_names.asp) με το αγγλικό όνομά τους, όπως το `red` (κόκκινο) και το `green` (πράσινο.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Στο αρχείο `blog/static/css/blog.css` πρέπει να προσθέσεις τον παρακάτω κώδικα:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+Το `h1 a` είναι ένας επιλογέας CSS. This means we're applying our styles to any `a` element inside of an `h1` element. Έτσι όταν έχουμε κάτι σαν `<h1><a href="">σύνδεσμο</a></h1>`, το `h1 a ` στυλ θα εφαρμοστεί. Σε αυτή τη περίπτωση, του λέμε να αλλάξει το χρώμα του σε `#FCA205`, που είναι πορτοκαλί. Φυσικά μπορείς να βάλεις το δικό σου χρώμα εδώ!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Μέσα σε ενα αρχείο CSS καθορίζουμε τα στύλ για τα στοιχεία μέσα στο HTML αρχείο. Ο πρώτος τρόπος που αναγνωρίζουμε στοιχεία είναι με το όνομα στοιχείου. Μπορεί να τα θυμάστε αυτά ως ετικέτες από το τμήμα HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Η τάξη (class) και η ταυτότητα (id) είναι ονόματα που δίνεις εσύ στο κάθε στοιχείο. Οι τάξεις αναφέρονται σε ομάδες στοιχείων και οι ταυτότητες σε συγκεκριμένα στοιχεία. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Ο browser διαβάζει τα αρχεία με την σειρά που δίνονται, οπότε πρέπει να σιγουρευτούμε ότι αυτή είναι η σωστή θέση. Διαφορετικά ο κωδικός στο αρχείο μας μπορεί να παρακαμφθεί από τον κώδικα στα αρχεία Bootstrap. Είπαμε στο template μας που βρίσκεται το CSS αρχείο μας.
 
-Your file should now look like this:
+Το αρχείο σου πρέπει τώρα να μοιάζει κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+Εντάξει, αποθηκεύσε το αρχείο και να ανανεώσε την σελίδα!
 
-![Figure 14.2](images/color2.png)
+![Σχήμα 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Πολύ καλά! Ίσως να θέλουμε να δώσουμε λίγο αέρα στην ιστιοσελίδα μας και να αυξήσουμε το περιθώριο στα αριστερά; Ας το δοκιμάσουμε!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Προσθέστε αυτό στο CSS σας, αποθηκεύστε τον φάκελο και δείτε πως λειτουργεί!
 
-![Figure 14.3](images/margin2.png)
+![Σχήμα 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+'Ισως μπορούμε να αλλάξουμε την γραμματοσειρά της επικεφαλίδας μας. Μεσα στο `<head>` που βρίσκεται μεσα στο αρχείο `blog/templates/blog/post_list.html` βάλε αυτό:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Σχήμα 14.3](images/font.png)
 
-Great!
+Τέλεια!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Όπως αναφέρθηκε παραπάνω, CSS έχει μια έννοια των τάξεων. Αυτά σας επιτρέπουν να ονομάσετε ένα μέρος του κώδικα HTML και να εφαρμόσετε στυλ μόνο σε αυτό το μέρος, χωρίς να επηρεάσετε άλλα μέρη. Αυτό μπορεί να είναι εξαιρετικά χρήσιμο! Maybe you have two divs that are doing something different (like your header and your post). Μια κατηγορία μπορεί να σε βοηθήσει να τα κάνετε να μοιάζουν διαφορετικά.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Ονόμασε μερικά μέρη του HTML. Πρόσθεσε μια τάξη που ονομάζεται `page-header` στο `div` που περιέχει την επικεφαλίδα σου, έτσι:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+Και τώρα να προσθέσετε μια τάξη `post` στο `div` που περιέχει ένα blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Τώρα θα προσθέσουμε κώδικα σε διάφορους επιλογείς (selectors). Οι επιλογείς που ξεκινούν με `.` αναφέρονται σε τάξεις. Υπάρχουν πολλά σπουδαία σεμινάρια και εξηγήσεις σχετικά με την CSS στο δίκτυο τα οποία θα σε βοηθήσουν να καταλάβεις τον παρακάτω κώδικα. Προς το παρών, απλά αντίγραψε τα παρακάτω στο αρχείο `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Μετά, βάλε τάξεις στον κώδικα HTML των posts. Αντικατάστησε αυτό:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+μέσα στο αρχείο `blog/templates/blog/post_list.html` με αυτό:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Αποθήκευσε τα αρχεία και ανανέωσε την ιστοσελίδα σου.
 
-![Figure 14.4](images/final.png)
+![Σχήμα 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Φαίνεται τέλειο, έτσι δεν είναι; Κοιτάξτε στον κωδικό που μόλις κάναμε επικόλληση για να βρείτε τα σημεία που προσθέσαμε τάξεις στο HTML και τα χρησιμοποιήσαμε στο CSS. Που θα κάνατε την αλλαγή αν θέλατε την ημερομηνία να είναι τιρκουάζ;
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Μην φοβάστε να πειραματιστείτε με το CSS λίγο και να προσπαθήσετε να αλλάξετε μερικά πράγματα. Παίζοντας με το CSS μπορεί να σε κάνει να καταλάβεις τι κάνουν τα διάφορα πράγματα. Εάν σπάσεις κάτι, μην ανησυχείς- μπορείς πάντα να το αναιρέσεις!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+Πραγματικά συστήνουμε να πάρετε αυτή την δωρεάν online σειρά μαθημάτων  Codeacademy HTML &amp. Μπορεί να σε βοηθήσει να μάθεις τα πάντα σχετικά με το να κάνεις τις ιστοσελίδες σου ομορφότερες με το CSS.</p> 
 
-Ready for the next chapter?! :)
+Είσαι έτοιμη για το επόμενο κεφάλαιο; :)
