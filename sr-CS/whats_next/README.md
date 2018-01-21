@@ -1,14 +1,14 @@
-# What's next?
+# Šta je sledeće?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Čestitajte sebi! **Vi ste potpuno fantastični**. Mi smo ponosni! <3
 
-### What to do now?
+### Šta sad da radim?
 
-Take a break and relax. You have just done something really huge.
+Odmorite se i opustite. Upravo ste uradili nešto zaista veliko.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### Da li možete da preporučite neke dodatne izvore?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
