@@ -1,8 +1,8 @@
-# Django admin
+# دجانغو المشرف
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+لإضافة وتعديل وحذف المشاركات التي قمنا بإضافتها، سوف نستخدم دجانغو المشرف.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+دعونا نفتح `blog/admin.py` ونغير محتواه بهذا:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+كما ترون، نقوم باستيراد (تضمين) نموذج المشاركة المحدد في الفصل السابق. لجعل نموذجنا مرئيا على صفحة المشرف، نحن بحاجة إلى تسجيل النموذج مع `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+حسنا حان الوقت للنظر في نموذجنا. تذكر أن تقوم بتشغيل `python manage.py runserver` في وحدة التحكم لتشغيل خادم ويب. اذهب إلى المتصفح واكتب http://127.0.0.1:8000/admin/. ستظهر لك صفحة تسجيل دخول مثل هذه:
 
-![Login page](images/login_page2.png)
+![صفحة تسجيل الدّخول](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+لتسجيل الدخول، تحتاج إلى إنشاء مستخدم *superuser*-حساب مستخدم له السيطرة على كل شيء في الموقع. ارجع إلى سطر الأوامر، واكتب `python manage.py createsuperuser`,، ثم اضغط على إنتر.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> تذكر، لكتابة الأوامر الجديدة أثناء تشغيل خادم الويب، إفتح نافذة جديدة وفعل البيئة الإفتراضية الخاصة بك. علينا إعادة النظر في كيفية كتابة أوامر جديدة خلال فصل **أول مشروع جانغو لك!** ، في المقطع **بدء تشغيل خادم ويب**.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+عند الطلب، اكتب اسم المستخدم (أحرف صغيرة، لا مسافات)، وعنوان البريد الإلكتروني، وكلمة المرور. **لا تقلق أن كنت لا تستطيع رؤية كلمة المرور التي تكتبها – هكذا يجب ان تعمل-** اكتب فقط واضغط `إدخال` للمواصلة. يجب أن يظهر الناتج على هذا النحو (حيث يجب أن يكون اسم المستخدم والبريد الإلكتروني هو اسم المستخدم الخاص بك):
 
     Username: admin
     Email address: admin@admin.com
@@ -42,16 +42,16 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+ارجع إلى المتصفح. سجل الدخول باستخدام بيانات اعتماد المستخدم الخارق التي اخترتها؛ يجب أن ترى لوحة قيادة دجانغو المشرف.
 
-![Django admin](images/django_admin3.png)
+![دجانغو المشرف](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+انتقل إلى المشاركات وقم ببعض الإختبارات هناك. أضف خمس أو ست مشاركات مدونة. لا تقلق بشأن المحتوى - يمكنك ببساطة نسخ ولصق بعض النص من هذا البرنامج التعليمي لتوفير الوقت. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+تأكد من أن اثنين أو ثلاث مشاركات على الأقل (ليس جميعها) لها تاريخ نشر. سوف يكون هذا مفيد لنا في وقت لاحق.
 
-![Django admin](images/edit_post3.png)
+![دجانغو المشرف](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+إعرف المزيد حول لوحة تحكم دجانغو من خلال قراءة الوثائق الرسمية: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+ربما تكون هذه لحظة جيدة لشرب كوب من القهوة (أو الشاي) أو لتناول الطعام لإعادة تنشيط نفسك. لقد قمت بإنشاء أول نموذج جانغو خاص بك أنت تستحق الإستراحة قليلا!
