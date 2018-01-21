@@ -1,14 +1,14 @@
-# Django views – time to create!
+# Widoki Django - czas zacząć tworzyć!
 
-Time to get rid of the bug we created in the last chapter! :)
+Czas uporać się z błędem, który pozostawiłyśmy po poprzednim rozdziale! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*Widok* jest miejscem, w którym umieszczamy "logikę" naszej aplikacji. Pobierze on informacje od modelu, który wcześniej utworzyłaś, a następnie przekaże je do szablonu (`template`). Nauczymy się tworzyć szablony w następnym rozdziale. Widoki to po prostu funkcje w Django, tylko nieco bardziej skomplikowane niż te, którymi zajmowałyśmy się w rozdziale **Wprowadzenie do Pythona**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Widoki (ang. views) są przechowywane w pliku `views.py`. Dodajmy *views* do naszego pliku `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+OK, otwórzmy ten plik i zobaczmy co siedzi w środku:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Nie ma tu dużo rzeczy jeszcze.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Pamiętaj, że linie zaczynające się od `#` to komentarze - oznacza to, że te linie nie będą uruchamiane przez Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Utwórzmy *view* zgodnie z sugestią komentarza. Najprostszy widok może wyglądać tak:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+Jak widać, stworzyłyśmy funkcję (`def`) nazwaną `post_list`, która pobiera `request` i zwraca (`return`) funkcję `render`, która wyrenderuje (złoży w całość) nasz szablon `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Zapisz plik, przejdź do http://127.0.0.1:8000/ i zobacz co mamy.
 
-Another error! Read what's going on now:
+Znowu błąd! Przeczytaj, o co chodzi tym razem:
 
-![Error](images/error.png)
+![Błąd](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Przynajmniej pokazuje, że serwer jest uruchomiony ponownie, ale nadal nie wygląda dobrze, prawda? Nie martw się, to po prostu błąd strony, nic strasznego! Podobnie jak komunikaty o błędach w konsoli, są one całkiem przydatne. Możesz przeczytać, że *TemplateDoesNotExist*. Naprawmy ten błąd i stwórzmy szablon - ale to już w następnym rozdziale!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Więcej na temat widoków Django dowiesz się czytając oficjalną dokumentację: https://docs.djangoproject.com/en/1.11/topics/http/views/
