@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django মেয়েরা টিউটোরিয়াল
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -10,9 +10,9 @@ Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tu
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Introduction
+## ভূমিকা
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? আপনি কি ওয়েবসাইট বানানো শিখতে চান, কিন্তু বিভিন্ন কারনে পারছেন না? বর্তমান সফটওয়্যার শিল্প কি আপনার নিজের সামান্য কোনো সফটওয়্যার বানানোর জন্যও অনেক জটিল মনে হয়?
 
 Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
