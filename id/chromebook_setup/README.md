@@ -1,5 +1,5 @@
-# Chromebook setup
+# Penyiapan Chromebook
 
-> **Note** If you already worked through the Installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
-
-{% include "/chromebook_setup/instructions.md" %}
+> ** Catatan </ 0> Jika Anda sudah mengerjakan langkah-langkah Instalasi, tidak perlu melakukan ini lagi - Anda bisa langsung melewati [ Introduction to Python ](../python_introduction/README.md) .</p> </blockquote> 
+> 
+> {% include "/chromebook_setup/instructions.md"%}
