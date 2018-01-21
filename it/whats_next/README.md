@@ -1,25 +1,25 @@
-# What's next?
+# Quali sono le prospettive?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Complimenti! **Sei veramente incredibile**. Siamo orgogliosi! <3
 
-### What to do now?
+### Cosa si fa ora?
 
-Take a break and relax. You have just done something really huge.
+Prenditi una pausa e rilassati. Hai veramente fatto un passo da gigante.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Dopodichè, assicurati di seguire Django Girls in [ Facebook ](http://facebook.com/djangogirls) o [ Twitter](https://twitter.com/djangogirls) per essere aggiornato.
 
-### Can you recommend any further resources?
+### Mi puoi consigliare ulteriori risorse?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Sì! Per prima cosa, vai avanti e prova il nostro altro libro, chiamato[ Django Girls Tutorial: estensioni](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-Later on, you can try the resources listed below. They're all very recommended!
+Successivamente, puoi provare le risorse elencate di seguito. Tutti sono altamente raccomandati!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Il tutorial ufficiale di Django's](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Nuovi tutorial su Coder](http://newcoder.io/tutorials/)
 - [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Code Accademia HTML& CSS corso](https://www.codecademy.com/tracks/web)
+- [Tutorial di carote Django](https://github.com/ggcarrots/django-carrots)
+- [Impara il libro di Python The Hard Way](http://learnpythonthehardway.org/book/)
+- [A cominciare dalle lezione video di Django](http://www.gettingstartedwithdjango.com/)
+- [Due palline di Django 1.11: Le migliore pratiche per il libro di Django web Framework](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [ Ciao web App: Impara a costruire un'App web](https://hellowebapp.com/) - Puoi anche richiadere una licenza di eBook gratuita contattando l'autore Tracy Osborn all'indirizzo<tracy@limedaring.com>
