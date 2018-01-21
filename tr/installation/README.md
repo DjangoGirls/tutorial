@@ -1,58 +1,58 @@
-# If you're doing the tutorial at home
+# Eğer tutorial'ı evde yapıyorsanız
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Eğer tutorial'ı [Django Girls etkinliklerinden](https://djangogirls.org/events/) birinde değil de evde yapıyorsanız, bu bölümü şimdi tamamen atlayabilirsiniz ve direkt [İnternet nasıl çalışıyor](../how_the_internet_works/README.md) bölümüne geçebilirsiniz.
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinliği, çalıştay boyunca tekrar kurulumla uğraşmamak adına her şeyi yüklediğimiz bir "Kurulum akşamı" içeriyor.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+If you find it useful, you can follow this chapter too. Ama eğer bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Good luck!
+İyi şanslar!
 
-# Installation
+# Kurulum
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+Atölyede bir blog geliştireceksiniz, eğitim günü kodlamaya hazır olmanız için önceden ayarlamakta fayda olan birkaç kurulum var.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Python Yükleyin
 
 {% include "/python_installation/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Bir "virtualenv" kurun ve Django'yu yükleyin
 
 {% include "/django_installation/instructions.md" %}
 
-# Install a code editor
+# Bir kod düzenleyicisi yükleyin
 
 {% include "/code_editor/instructions.md" %}
 
-# Install Git
+# Git yükleyin
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# GitHub hesabı oluşturun
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+[GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun.
 
-# Create a PythonAnywhere account
+# PythonAnywhere hesabı oluşturun
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Okumaya başlayın
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Tebrikler, kurulumunuz tamamen bitti ve başlamaya hazırsınız! Eğer çalıştaydan önce hala biraz vaktiniz varsa, başlangıç bölümlerinden birkaç tanesini okumaya başlamanız faydalı olacaktır:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [İnternet nasıl çalışır](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Komut satırına giriş](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Python'a giriş](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Django nedir?](../django/README.md)
 
-# Enjoy the workshop!
+# Çalışmanın tadına varın!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+İşe başladığınızda direk [Your first Django project!](../django_start_project/README.md) gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.
