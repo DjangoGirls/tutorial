@@ -1,15 +1,15 @@
-# Let’s start with Python
+# Simulan natin ang Pythin
 
-We're finally here!
+Nandito na tayo sa wakas!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Pero una, sasabihin muna namin kung ano ang Python. Ang python ay isang popular na wika na ginagamit sa programming na maaring gamitin sa paglikha ng mga website, mga laro, mga scientific na mga sofware, graphics at marami pang iba.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Ang python ay nagsimula sa katapusan ng 1980 at ang pangunahing layunin nito ay para madali itong mabasa ng mga tao (hindi lang sa mga makina!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Pag-install ng python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Paalala** Kung ikaw ay gumagamit ng isang Chromebook, laktawan ang kabanatang ito at siguraduhin na masunod mo ang mga tagubilin sa [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Paalala** Kung nagawa mo na ang mga mga hakbang sa pag-install, hindi na kailangan na gawin pa itong muli - maaari ka nang dumiretso sa susunod na kabanata!
 
 {% include "/python_installation/instructions.md" %}
