@@ -13,9 +13,9 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Jak vidíš, importujeme (vkládáme) Post model definovaný v předchozí kapitole. Pro zviditelnění našeho modelu na admin stránce, musíme zaregistrovat model pomocí `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK čas se podívat na náš Post model. Nezapomeň spustit `Pythonu manage.py runserver` v konzoli www serveru. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
