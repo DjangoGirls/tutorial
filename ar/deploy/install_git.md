@@ -1,20 +1,20 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+Git عباره عن "نظام تحكم إصدار" مستخدم من قبل الكثير من المبرمجين. هذا النظام يمكنه تعقب التغييرات في الملفات مع مرور الوقت حتى أنه يمكنك استرجاع إصدارات محددة في وقت لاحق. يشبع قليلاً ميزة "تعقب التغييرات" في Microsoft Word، لكن أقوى بكثير.
 
-## Installing Git
+## تثبيت Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+يمكنك تحميل Git من [ git-scm.com](https://git-scm.com/). يمكنك الضغط على "التالي" في جميع الخطوات باستثناء خطوة واحدة؛ في الخطوة الخامسة بعنوان "التكيف مع بيئة المسار الخاص بك"، اختر "تشغيل Git وأدوات يونيكس المرتبطة بها من سطر الأوامر في ويندوز" (الخيار الأسفل). بخلاف ذلك، الإعدادات الافتراضية كافيه. راجع نهايات السطور في نمط ويندوز ، و ارتكاب نمط يونكس.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+لا تنس إعادة تشغيل موجه الأوامر أو powershell بعد انتهاء عملية التثبيت بنجاح. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+تحميل Git من [.git-scm.com](https://git-scm.com/) واتبع التعليمات.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **ملاحضة** إذا كنت تستخدم نضام ماك بهذه الإصدارات OS X 10.6, 10.7, or 10.8, يجب عليك تنصيب نسخة جيت من هذا الرابط [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
