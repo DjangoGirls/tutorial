@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# ORM جانغو و Querysets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+في هذا الفصل سوف تتعلم كيف تتصل جانغو بقاعدة البيانات وتقوم بتخزين البيانات فيها. دعونا نغوص في الشرح!
 
-## What is a QuerySet?
+## ما هو QuerySet؟
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet هو، في جوهره، قائمة الكائنات من نموذج معين. QuerySet تسمح لك بقراءة البيانات من قاعدة البيانات، وتصفيها وتطلبها.
 
-It's easiest to learn by example. Let's try this, shall we?
+من السهل التعلم عبر الأمثلة ، دعونا نجرب ذالك. هيا بنا؟
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+إفتح وحدة التحكم المحلية الخاصة بك (ليس على PythonAnywhere) واكتب هذا الأمر:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+التأثير يجب أن يكون مثل:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+أنت الآن في جانغو في وحدة التحكم التفاعلية. أنها تماما مثل موجه بيثون، ولكن مع بعض سحر جانغو الإضافي. :) يمكنك استخدام كافة اوامر بيثون هنا أيضا، بطبيعة الحال.
 
-### All objects
+### كل الكائنات
 
-Let's try to display all of our posts first. You can do that with the following command:
+دعونا نحاول عرض جميع المشاركات لدينا أولاً. يمكنك القيام بذلك باستخدام الأمر التالي:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+اووبس! ظهر خطأ. يقول لنا أنه لا يوجد أي مشاركة. هذا صحيح لقد نسينا استيراده أولا!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+نستورد النموذج `Post` من`blog.models`. لنحاول عرض جميع المشاركات مرة أخرى:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+هذه قائمة باالمشاركات التي أنشأنا في وقت سابق! قمنا بإنشاء هذه المشاركات باستخدام واجهة المشرف جانغو. ولكن الآن نحن نريد انشاء مشاركات جديدة باستخدام بيثون، فكيف نفعل ذلك؟
 
-### Create object
+### إنشاء كائن
 
-This is how you create a new Post object in database:
+هذه هي الطريقة التي تقوم بها بإنشاء مشاركة كائن جديد في قاعدة البيانات:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,9 +70,9 @@ This is how you create a new Post object in database:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+ولكن لدينا عنصر واحد في عداد المفقودين هنا `me`. نحن بحاجة إلى تمرير مثيل من نموذج `User` كمؤلف. كيف نفعل ذلك؟
 
-Let's import User model first:
+دعونا نسترد نموذج المستخدم الأول:
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+اية مستخدمين لدينا في قاعدة البيانات الخاصة بنا؟ جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ What users do we have in our database? Try this:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+هذا هو المستخدم الخارق الذي أنشأنا في وقت سابق! دعونا نحصل على مثيل للمستخدم الآن:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+كما ترون، نحن الآن`get` ا `User` مع `username` يساوي 'ola'. أنيق! بطبيعة الحال، عليك ضبط هذا الخط لاستخدام اسم المستخدم الخاص بك.
 
-Now we can finally create our post:
+الآن يمكننا أخيرا إنشاء مشاركة:
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Now we can finally create our post:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Hurray! Wanna check if it worked?
+يا هلا! هل تريد التحقق من ما إذا كان يعمل؟
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,15 +116,15 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+هاهي ذا! مشاركة آخرى في القائمة!
 
-### Add more posts
+### إضافة المزيد من المشاركات
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+يمكنك الآن الحصول على القليل من المرح وإضافة المزيد من المشاركات لنرى كيف يعمل. أضف اثنين أو ثلاثة آخرين ثم انتقل إلى الجزء التالي.
 
-### Filter objects
+### تصفية الكائنات
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+جزء كبير من QuerySets هو القدرة على تصفيتهم. لنفترض أننا نريد العثور على جميع المشاركات التي قام المستخدم ola بتأليفها. سنقوم باستخدام `filter` بدلاً من `all` في `Post.objects.all()`. بين قوسين نوضح ما هي الشروط التدوينة تحتاج إلى تلبية في نهاية المطاف في queryset لدينا. وفي حالتنا، الشرط أن `author` يجب أن يكون متساوي مع `me`. طريقة كتابتها في دجانغو `author=me`. الأن قطعتنا من الكود تبدو بهذا الشكل:
 
 {% filename %}command-line{% endfilename %}
 
@@ -133,7 +133,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+أو ربما نريد أن نرى جميع المشاركات التي تحتوي على كلمة 'title' في الحقل `title`؟
 
 {% filename %}command-line{% endfilename %}
 
@@ -142,9 +142,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **ملاحظة** هناك حرفان أسفل السطر (`_`) بين `title` و `contains`. يستخدم ORM دجانغو هذه القاعدة لفصل أسماء الحقول ("title") والعمليات أو الفلاتر ("contains"). إذا قمت باستخدام تسطير واحد فقط، سوف تحصل على خطأ مثل "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+يمكنك أيضا الحصول على قائمة بجميع المشاركات المنشورة. علينا القيام بذلك بتصفية جميع المشاركات التي قد `published_date` في الماضي:
 
 {% filename %}command-line{% endfilename %}
 
@@ -154,7 +154,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 []
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+للأسف، لم يتم نشر المشاركة التي أضفناها من وحدة تحكم بايثون بعد. ولكن يمكننا تغيير ذلك! احصل أولا على مثال لمشاركة نريد نشرها:
 
 {% filename %}command-line{% endfilename %}
 
@@ -162,7 +162,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+ثم أنشرها باستخدام طريقة `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,7 +170,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+الآن في محاولة للحصول على قائمة المشاركات المنشورة مرة أخرى (اضغط على مفتاح السهم لأعلى ثلاث مرات واضغط `enter`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,9 +179,9 @@ Now try to get list of published posts again (press the up arrow key three times
 [<Post: Sample title>]
 ```
 
-### Ordering objects
+### العناصر الصادرة
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+QuerySets تسمح لك أيضا بترتيب قائمة الكائنات. دعونا نحاول ترتيبها حسب الحقل `created_date`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+يمكننا أيضا عكس الترتيب بإضافة `-` في البداية:
 
 {% filename %}command-line{% endfilename %}
 
@@ -199,16 +199,16 @@ We can also reverse the ordering by adding `-` at the beginning:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Chaining QuerySets
+### مجموعات الاستعلام المتسلسلة
 
-You can also combine QuerySets by **chaining** them together:
+يمكنك أيضا دمج QuerySets من خلال **chaining** معا:
 
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-This is really powerful and lets you write quite complex queries.
+هذا حقا قوي ويتيح لك كتابة استفسارات معقدة جدا.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+رائع! أنت الآن جاهز للجزء التالي! لإغلاق الشل shell، اكتب هذا:
 
 {% filename %}command-line{% endfilename %}
 
