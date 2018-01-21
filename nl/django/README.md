@@ -1,27 +1,27 @@
-# What is Django?
+# Wat is Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is een gratis en open source web-framework, geschreven in Python. Een web-framework is een set onderdelen die je helpen om sneller en makkelijker websites te maken.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Als je een website aan het bouwen bent, dan heb je altijd een vergelijkbare set aan onderdelen nodig: een manier om met gebruikersauthenticatie om te gaan (registreren, inloggen, uitloggen), een beheerderspaneel voor de website, formulieren, een manier om bestanden te uploaden, etc.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Gelukkig voor ons hebben andere mensen allang opgemerkt dat webontwikkelaars steeds dezelfde problemen tegenkomen bij het bouwen van een nieuwe site, dus zijn ze samen opgetrokken en hebben verschillende frameworks gecreëerd (Django is daar één van) die je kant-en-klare onderdelen geven om te gebruiken.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Frameworks zijn er dus om te voorkomen dat je steeds het wiel opnieuw hoeft uit te vinden en om dubbel werk te voorkomen bij het bouwen van een nieuwe site.
 
-## Why do you need a framework?
+## Waarom heb je een framework nodig?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Om beter te begrijpen wat Django precies doet moeten we kijken naar de servers. Het allereerste wat een server moet weten is dat jij wil dat de server jou een website voorschotelt.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Stel je een postbus (port) voor die binnenkomende brieven (requests) controleert. Dit wordt gedaan door een webserver. De webserver leest de brief en verstuurt vervolgens een antwoord met een webpagina. Maar wanneer je wat wilt sturen, heb je ook wat inhoud nodig. Django is iets wat je helpt de inhoud te creëren.
 
-## What happens when someone requests a website from your server?
+## Wat gebeurt er als iemand een website opvraagt van jouw server?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Wanneer een request wordt ingediend bij de webserver, wordt het doorgespeeld naar Django, wat vervolgens probeert uit te zoeken wat er precies gevraagd wordt. Het kijkt eerst naar het adres van de webpagina om te bepalen wat er moet gebeuren. Dit gedeelte wordt gedaan door Djangos **urlresolver** (het adres van een website wordt ook wel URL genoemd - Uniform Resource Locator - dus de naam *urlresolver* betekent 'url oplosser'). De urlresolver is niet heel slim: het kijkt gewoon naar patronen en probeert een overeenkomst met de URL te vinden. Django controleert de patronen van boven naar beneden en als er een overeenkomst is gevonden wordt de request doorgestuurd naar de bijbehorende functie (die een *view* genoemd wordt).
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Stel je een postbode met een brief voor. Ze loopt langs de straat en controleert elk huisnummer met die op de brief. Wanneer het overeenkomt, brengt ze de brief daar. Dit is hoe de urlresolver werkt!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+In de *view* functie worden alle interessante dingen gedaan: we kunnen de database bekijken en er informatie uit opvragen. Misschien heeft de gebruiker gevraagd om iets in de data te wijzigen? Net zoals een brief met het verzoek "verander alsjeblieft de omschrijving van mijn baan", kan de *view* controleren of je daar wel toestemming voor hebt. Als je die toestemming hebt wordt de omschrijving geüpdatet en wordt een bericht teruggestuurd met: "Gedaan!" Vervolgens genereert de *view* een antwoord wat Django naar de webbrowser van de gebruiker kan sturen.
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Natuurlijk is de beschrijving hierboven een beetje vereenvoudigd, maar je hoeft nog niet alle technische dingen te begrijpen. Een algemeen idee van hoe het werkt is genoeg.
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+Dus inplaats van te veel in de details te gaan, zullen we simpelweg beginnen met iets in Django te maken en leren we de belangrijke onderdelen onderweg!
