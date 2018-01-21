@@ -2,11 +2,11 @@
 > 
 > Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## Persekitaran maya
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Sebelum memasang Django, kami akan memasang alat yang sangat berguna untuk membantu mengekalkan persekitaran pengekodan anda pada komputer anda. Ada kemungkinan untuk melangkau langkah ini, tetapi sangat disyorkan. Bermula dengan persediaan yang terbaik akan menjimatkan banyak masalah pada masa akan datang!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv akan mengasingkan persediaan Python / Django anda secara per-projek. Ini bermakna bahawa apa-apa perubahan yang anda buat ke satu laman web tidak akan menjejaskan mana-mana orang lain yang anda sedang berkembang. Rapi, betul?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
@@ -37,7 +37,7 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. Anda boleh menggunakan nama lain, tetapi melekat pada huruf kecil dan tidak menggunakan ruang, aksen atau aksara khusus. Ia juga idea yang baik untuk menyimpan nama pendek - anda akan merujuknya banyak!
 
 <!--endsec-->
 
@@ -51,15 +51,15 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` is the name of your `virtualenv`. Anda boleh menggunakan nama lain, tetapi melekat pada huruf kecil dan jangan gunakan ruang. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>     Persekitaran maya tidak berjaya dibuat kerana ensurepip tidak tersedia.  Pada sistem Debian / Ubuntu, anda perlu memasang paket python3-venv menggunakan arahan berikut.
 >        apt-get install python3-venv
->     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     Anda mungkin perlu menggunakan sudo dengan arahan itu.  Selepas memasang pakej python3-venv, buat semula persekitaran maya anda.
 >     
 > 
 > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
@@ -89,7 +89,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> kemudian alihkan:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -175,14 +175,14 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Memindahkan direktori virtualenv tidak akan berfungsi kerana virtualenv menggunakan laluan mutlak.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Barisan arahan anda mungkin membekukan selepas anda cuba memasang Django. Jika ini berlaku, bukannya arahan di atas digunakan:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -198,4 +198,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Itu sahaja! Anda kini (akhirnya) bersedia untuk membuat aplikasi Django!
