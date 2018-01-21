@@ -1,12 +1,12 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Chromebookをお持ちでない場合は、このセクションをスキップできます. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
 
 ### Cloud 9
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+1. クラウド 9 no インストールする[Kurōmu ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. [C9.io](https://c9.io) に行く
+3. アカウントにサインアップします
 4. Click *Create a New Workspace*
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
