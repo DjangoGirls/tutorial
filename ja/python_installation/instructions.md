@@ -1,8 +1,8 @@
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> このセクションはGeek Girls Carrots(http://django.carrots.pl)をベースで作成しました。
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django は、Pythonで開発されています。なにをするにせよ、まずはPythonが必要です。インストールしましょう！ Python 3.6 をインストールします。3.5以前のバージョンをインストール済みの場合は、アップグレードしてください。
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -34,7 +34,7 @@ data-collapse=true ces-->
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
+* *Mac OS X 64-bit/32-bit installer* ファイルをダウンロードしてください。
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
