@@ -1,47 +1,47 @@
-# How the Internet works
+# Bagaimana Internet Bekerja
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Bagi pembaca di rumah: bab ini tercakup dalam video [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Bab ini terinspirasi oleh pembicaraan "Bagaimana Internet bekerja" oleh Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Kami yakin Anda menggunakan internet setiap hari. Tapi apakah Anda benar-benar tahu apa yang terjadi saat Anda mengetikkan alamat seperti https://djangogirls.org ke browser Anda dan tekan `enter`?
 
-The first thing you need to understand is that a website is just a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Hal pertama yang perlu Anda pahami adalah bahwa sebuah situs web hanyalah sekumpulan file yang tersimpan di hard disk. Sama seperti film, musik, atau gambar Anda. Namun, ada satu bagian yang unik untuk situs web: termasuk kode komputer yang disebut HTML.
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Jika Anda tidak terbiasa dengan pemrograman, akan sulit untuk memahami HTML pada awalnya, namun browser web Anda (seperti Chrome, Safari, Firefox, dll.) Menyukainya. Browser web dirancang untuk memahami kode ini, ikuti instruksinya, dan tunjukkan file-file ini yang dibuat oleh situs web Anda, persis seperti yang Anda inginkan.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Seperti pada setiap file, kita perlu menyimpan file HTML di suatu tempat pada hard disk. Untuk internet, kami menggunakan khusus, kuat komputer disebut *server*. Mereka tidak memiliki layar, mouse atau keyboard, karena mereka tujuan utama adalah untuk menyimpan data dan melayani. Itu sebabnya mereka disebut *server* - karena mereka *melayani* data Anda.
 
-OK, but you want to know how the Internet looks, right?
+OK, tapi Anda ingin tahu bagaimana internet terlihat, kan?
 
-We drew you a picture! It looks like this:
+Kami menggambarmu! Sepertinya ini:
 
-![Figure 1.1](images/internet_1.png)
+![Gambar 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Sepertinya berantakan, kan? Bahkan itu adalah jaringan mesin yang terhubung (yang disebutkan di atas * server </ 0> ). Ratusan ribu mesin! Banyak, banyak kilometer dari kabel di seluruh dunia! Anda dapat mengunjungi kabel bawah laut peta situs web (http://submarinecablemap.com) untuk melihat bagaimana rumit net. Berikut adalah screenshot dari website:</p> 
 
-![Figure 1.2](images/internet_3.png)
+![Gambar 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Hal ini menarik, bukan? Tapi jelas, tidak mungkin untuk memiliki kawat antara setiap mesin terhubung ke internet. Jadi, untuk mencapai mesin (misalnya, satu di mana https://djangogirls.org disimpan) kita perlu lulus permintaan melalui banyak, banyak mesin yang berbeda.
 
-It looks like this:
+Itu tampak seperti ini:
 
-![Figure 1.3](images/internet_2.png)
+![Gambar 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Bayangkan bahwa ketika Anda mengetik https://djangogirls.org, Anda mengirim surat yang berbunyi: "Dear Django Girls, saya ingin melihat situs djangogirls.org, kirimkan kepada saya, please!"
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Surat Anda ke kantor pos terdekat dengan Anda. Kemudian pergi ke yang lain yang sedikit lebih dekat ke penerima Anda, lalu ke yang lain, dan yang lainnya sampai dikirim ke tempat tujuannya. Satu-satunya hal yang unik adalah jika Anda mengirim banyak surat ( * paket data * ) ke tempat yang sama, mereka bisa melalui kantor pos yang sama sekali berbeda ( * router * ). Hal ini tergantung bagaimana mereka didistribusikan di setiap kantor.
 
-![Figure 1.4](images/internet_4.png)
+![Gambar 1.4](images/internet_4.png)
 
 That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Alih-alih alamat dengan nama jalan, kota, kode pos dan nama negara, kita menggunakan alamat IP. Komputer Anda pertama kali meminta DNS (Domain Name System) untuk menerjemahkan djangogirls.org ke alamat IP. Ini bekerja sedikit seperti buku telepon kuno di mana Anda dapat mencari nama orang yang ingin Anda hubungi dan menemukan nomor telepon dan alamat mereka.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Bila Anda mengirim surat, perlu ada fitur tertentu yang bisa disampaikan dengan benar: alamat, stempel, dll. Anda juga menggunakan bahasa yang dipahami oleh penerima, bukan? Hal yang sama berlaku untuk paket data * * yang Anda kirim untuk melihat situs web. Kami menggunakan protokol yang disebut HTTP (Hypertext Transfer Protocol).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Jadi, pada dasarnya, jika Anda memiliki situs web, Anda harus memiliki *server* (mesin) tempat tinggalnya. Ketika * server * menerima permintaan * masuk * (dalam sebuah surat), ia akan mengirimkan kembali situs Anda (dalam surat lain).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Karena ini adalah tutorial Django, Anda mungkin bertanya apa yang Django lakukan. Bila Anda mengirim tanggapan, Anda tidak selalu ingin mengirimkan hal yang sama kepada semua orang. Jauh lebih baik jika surat Anda dipersonalisasi, terutama untuk orang yang baru saja menulis surat kepada Anda, bukan? Django membantu Anda membuat surat yang dipersonalisasi dan menarik ini. :)
 
-Enough talk – time to create!
+Cukup waktu bicara untuk menciptakan!
