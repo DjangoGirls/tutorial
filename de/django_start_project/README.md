@@ -21,7 +21,7 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Der Punkt `.` ist sehr wichtig, weil er dem Skript mitteilt, dass Django in deinem aktuellen Verzeichnis installiert werden soll. (der Punkt `.` ist eine Schnellreferenz dafür).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
@@ -36,13 +36,13 @@ On Windows you should run the following command. **(Don't forget to add the peri
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Der Punkt `.` ist sehr wichtig, weil er dem Skript mitteilt, dass Django in deinem aktuellen Verzeichnis installiert werden soll. (der Punkt `.` ist eine Schnellreferenz dafür).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` ist ein Skript, welches Verzeichnisse und Dateien für dich erstellt. Du solltest jetzt eine Verzeichnisstruktur haben, die folgendermaßen aussieht:
 
     djangogirls
     ├───manage.py
@@ -57,19 +57,19 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-The `settings.py` file contains the configuration of your website.
+Die Datei `settings.py` beinhaltet die Konfiguration deiner Website.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Erinnerst du dich, als wir über den Postboten gesprochen haben, der überlegt, wohin er den Brief liefern soll? Die `urls.py` Datei beinhaltet eine Liste von Patterns (Mustern), die vom `urlresolver` benutzt werden.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Lass uns kurz die anderen Dateien vergessen - wir werden sie nicht verändern. Denk aber dran, sie nicht versehentlich zu löschen!
 
 ## Einstellungen anpassen
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Wir machen nun ein paar Änderungen in `mysite/settings.py`. Öffne die Datei mit dem Codeeditor, den du vorhin installiert hast.
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Es wäre schön, wenn die richtige Zeit auf deiner Webseite eingestellt ist. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
@@ -112,9 +112,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Set up a database
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard Datenbanksoftware nehmen, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Das sollte schon in der `mysite/settings.py`-Datei eingestellt sein:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl in der Konsole ausführen (Dazu müssen wir in dem `djangogirls`-Verzeichnis sein, in dem sich auch die `manage.py`-Datei befindet). Wenn alles glatt läuft, sollte das so aussehen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -135,26 +135,26 @@ To create a database for our blog, let's run the following in the console: `pyth
     Operations to perform:
       Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
-      Rendering model states... DONE
+      Rendering model states... DONE 
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK
-      Applying contenttypes.0002_remove_content_type_name... OK
-      Applying auth.0002_alter_permission_name_max_length... OK
-      Applying auth.0003_alter_user_email_max_length... OK
-      Applying auth.0004_alter_user_username_opts... OK
-      Applying auth.0005_alter_user_last_login_null... OK
+      Applying admin.0002_logentry_remove_auto_add... OK 
+      Applying contenttypes.0002_remove_content_type_name... OK 
+      Applying auth.0002_alter_permission_name_max_length... OK 
+      Applying auth.0003_alter_user_email_max_length... OK 
+      Applying auth.0004_alter_user_username_opts... OK  
+     Applying auth.0005_alter_user_last_login_null... OK 
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Und wir sind fertig! Zeit, unseren Webserver zu starten, um zu sehen, ob unsere Website funktioniert!
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Kontrolliere, dass du in dem Verzeichniss bist, in dem die `manage.py`-Datei liegt (das `djangogirls`-Verzeichnis). Wir starten den Webserver, indem wir in der Konsole `python manage.py runserver` ausführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -168,7 +168,7 @@ If you are on a Chromebook, use this command instead:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verwende diesen Befehl:
 
 {% filename %}command-line{% endfilename %}
 
@@ -189,9 +189,9 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
 
-![It worked!](images/it_worked2.png)
+![Es hat funktioniert!](images/it_worked2.png)
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
@@ -199,4 +199,4 @@ While the web server is running, you won't see a new command-line prompt to ente
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
