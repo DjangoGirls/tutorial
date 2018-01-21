@@ -1,12 +1,12 @@
-# Dynamic data in templates
+# Dynamická data v šablonách
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Máme různé části na svém místě: `Post` model je definován v `models.py`, `post_list` máme v `views.py` a máme přidanou šablonu. Ale jak skutečně přinutíme naše příspěvky objevit se v naší HTML šabloně? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+To je přesně to, co *views* mají dělat: spojovat modely a šablony. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
 OK, so how will we achieve this?
 
-We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
+Potřebujeme otevřít `blog/views.py`. Prozatím `post_list` *view* vypadá takhle:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Vzpomínáš si, jak jsme mluvili o zahrnování kódu napsaného v různých souborech? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,7 +26,7 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Potom importujeme název modelu (`Post`).
 
 But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
 
@@ -58,11 +58,11 @@ def post_list(request):
 
 The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+Vezmi, prosím, na vědomí, že jsme vytvořili *proměnnou* pro QuerySet: `posts`. Považuj to za název našeho QuerySetu. Od teď k němu budeme referovat tímto názvem.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Potřebujeme je pojmenovat (teď zůstaneme u `'posts'`). :) Mělo by to vypadat takhle: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-So finally our `blog/views.py` file should look like this:
+A nakonec by náš `blog/views.py` soubor měl vypadat takhle:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+A je to! Čas jít zpět do šablony a zobrazit tento QuerySet!
 
 Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
