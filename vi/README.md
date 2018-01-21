@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Hướng dẫn sử dụng Django
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
