@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+अभी भी हमारा ब्लॉग अच्छा नहीं दिख रहा है। सही बात है ना ? इसीलिए अब समय आ गया है की हम इसे सुन्दर बनाये। इसके लिए हम CSS का इस्तेमाल करेंगे। 
 
-## What is CSS?
+## सीएसएस क्या है?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## चलो बूटस्ट्रैप का उपयोग करें!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## बूटस्ट्रैप इनस्टॉल करें। 
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,13 +29,13 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+पहले से ही अच्छे नहीं लग रहा !
 
-## Static files in Django
+## Django में static फ़ाइलें
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+आखिर कर हम अब उस चीज पे भी एक करीबी निगाह डालते है जिससे हम **Static Files** कहते है। Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Django के लिए Static Files कहाँ रखें । 
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
