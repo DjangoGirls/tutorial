@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Існує багато різноманітних редакторів і здебільшого все зводиться до персональних вподобань. Більшість Python програмістів використовують складні, але надзвичайно потужні IDE (англ. Integrated Development Environments - Інтегровані середовища розробки), такі як PyCharm. Однак, вони можливо менш доцільні для початківців; ми пропонуємо не менш потужні, але більш простіші. 
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Нижче наведено перелік наших вподобань, але спитайте наставників про їхню думку - і це полегшить отримання їхньої допомоги.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit є відкритим, безкоштовним редактором, доступним для усіх операційних систем.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Завантажте його тут](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[Завантажте його тут](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[Завантажте його тут](https://atom.io/)
 
-## Why are we installing a code editor?
+## Чому ми встановлюємо редактор коду?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Ви напевне запитуєте себе чому ми встановлюємо спеціальний редактор для коду, а не використовуємо щось на зразок Word чи Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+По перше, код повинен зберігатись як **звичайний текст**, а проблема з такими програмами як Word чи Textedit полягає в тому що вони не зберігають файли зі звичайним текстом, вони створюють "збагачений" текст (зі шрифтами та форматуванням), використовуючи спеціальні формати на зразок [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Другою причиною є те, що редактори коду спеціалізуються саме на редагуванні, тому вони можуть запропонувати корисні функції на зразок розфарбовування коду залежно від його значення чи автоматичного закривання дужок.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Ми побачимо це все в дії пізніше. Скоро ви вважатимете свого вірного старого редактора коду одним зі своїх улюблених інструментів. :)
