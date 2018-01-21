@@ -1,3 +1,3 @@
-# code editor
+# 程式編輯器 (Code editor)
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+程式碼編輯器是一種應用程式，它允許你儲存你的程式碼，這樣你可以稍後再使用它。 你可以在 [程式編輯器 (Code editor) 章節](./code_editor/README.md) 知道從那裡下載一個。
