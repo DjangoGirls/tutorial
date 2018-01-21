@@ -1,18 +1,18 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Μέρος αυτής της ενότητας βασίζεται στα σεμινάρια από τα Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## Εικονικό περιβάλλον
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Πρίν να εγκαταστήσουμε το Django, θα εγκαταστήσουμε ενα εξαιρετικά χρήσιμο εργαλείο για να κρατίσουμε το περιβάλλον του υπολογιστή σου τακτοποιημένο. Μπορείς να παραλείψεις αυτό το βήμα, αλλά συστήνουμε να το ακολουθήσεις. Ξεκινώντας με το καλύτερο δυνατό περιβάλλον, θα αποφύγεις πολλά προβλήματα στο μέλλον!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Λοιπόν, ας δημιουργήσουμε ενα ** εικονικό περιβάλλον** (το αποκαλούμενο *virtualenv*). Το virtualenv θα απομονώσει την κάθε εγκατάσταση Python/Django ανά έργο. Αυτό σημαίνει οι αλλαγές που κάνεις σε μια ιστιοσελίδα δεν επηρεάζουν οποιεσδήποτε άλλες ιστιοσελίδες που επίσης αναπτύσσεις παράλληλα. Καλό, ε;
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Το μόνο που χρειάζεται να κάνεις είναι να βρείς έναν κατάλογο στον οποίο θέλεις να δημιουργήσεις το `virtualenv`. Το home directory σου, για παράδειγμα. Στα Windows, θα μοιάζει κάπως έτσι `C:\Users\Name` ( όπου `Name` είναι το όνομα της σύνδεσης σας).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **ΣΗΜΕΙΩΣΗ:** Στα Windows, σιγουρευτείτε ότι αυτός ο κατάλογος δεν περιέχει χαρακτήρες που τονίζονται ή ειδικούς χαρακτήρες, αν το όνομα χρήστη σας περιέχει χαρακτήρες που τονίζονται, χρησιμοποιείστε ένα διαφορετικό κατάλογο, για παράδειγμα, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Για αυτό το tutorial θα χρησιμοποιήσουμε ένα νεο κατάλογο `djangogirls` από το home directory σου:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Θα δημιουργήσουμε ένα virtualenv που ονομάζεται `myvenv`. Η γενική εντολή είναι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Όπου `myvenv` είναι το όνομα του `virtualenv` σας. Μπορείς να χρησιμοποιήσεις οποιοδήποτε άλλο όνομα, αλλά πρέπει να είναι σε πεζά, χωρίς κενά, εμφάσεις ή ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!
 
 <!--endsec-->
 
@@ -51,15 +51,15 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+Το `myvenv` είναι το όνομα του `virtualenv` σου. Μπορείς να χρησιμοποιήσεις οποιοδήποτε άλλο όνομα, αλλα πρέπει να είναι σε πεζά και χωρίς κενά. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>     Το εικονικό περιβάλλον δεν δημιουργήθηκε επιτυχώς επειδή το ensurepip δεν είναι διαθέσιμο.  Στα συστήματα Debian/Ubuntu, πρέπει να εγκαταστήσετε το πακέτο python3-venv χρησιμοποιώντας την ακόλουθη εντολή.
 >        apt-get install python3-venv
->     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     Μπορεί να χρειαστεί να χρησιμοποιήσετε το sudo με αυτή την εντολή.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
 > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
@@ -98,27 +98,27 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 <!--endsec-->
 
-## Working with virtualenv
+## Δουλεύοντας με το virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Η παραπάνω εντολή θα δημιουργήσει ένα κατάλογο που ονομάζεται `myvenv` (ή όποιο άλλο όνομα διαλέξετε) που περιέχει το εικονικό μας περιβάλλον (βασικά ένα μάτσο καταλόγων και αρχείων).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **ΣΗΜΕΙΩΣΗ:** στα Windows 10 μπορεί να λάβετε ένα σφάλμα στο Windows PowerShell που λέει ` η εκτέλεση των σεναρίων έχει απενεργοποιηθεί σε αυτό το σύστημα `. Σε αυτή την περίπτωση, ανοίξτε ένα άλλο Windows PowerShell με την επιλογή "Εκτέλεση ως διαχειριστής". Έπειτα δοκιμάστε να πληκτρολογήσετε την ακόλουθη εντολή πριν ξεκινήσετε το εικονικό περιβάλλον σας:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>         The execution policy helps protect you from scripts that you do not trust. Αλλάζοντας την πολιτική εκτέλεσης μπορεί να σας εκθέσει σε ρίσκα ασφάλειας που περιγράφονται στο θέμα βοήθειας about_Execution_Policies στο http://go.microsoft.com/fwlink/?LinkID=135170. Θέλετε να αλλάξετε την πολιτική εκτέλεσης; [Y] Ναι [A] Ναι σε όλα [N] Όχι [L] Όχι σε όλα [S] Διακοπή [?] Βοήθεια (προεπιλεγμένο είναι το "N"): A
 >     
 
 <!--endsec-->
@@ -126,16 +126,16 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Θυμηθείτε να αντικαταστήσετε το `myvenv` με το επιλεγμένο `virtualenv` όνομα σας!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **ΣΗΜΕΙΩΣΗ:** μερικές φορές `πηγή` μπορεί να μην είναι διαθέσιμη. Σε αυτές τις περιπτώσεις προσπαθήστε να κάνετε αυτό:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -144,17 +144,17 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Θα ξέρετε ότι έχετε ξεκινήσει το `virtualenv` όταν δείτε ότι γραμμή εντολών στην κονσόλα σας είναι προκαθορισμένη με `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, `python` θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε `python` αντί για `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Εντάξει, έχουμε τοποθετήσει όλες τις σημαντικές εξαρτήσεις. Μπορούμε επιτέλους να εγκαταστήσουμε το Django!
 
-## Installing Django
+## Εγκατάσταση Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Τώρα που έχετε ξεκινήσει το `virtualenv` σας, μπορείτε να εγκαταστήσετε το Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Πριν κάνουμε αυτό, πρέπει να σιγουρευτούμε ότι έχουμε την τελευταία έκδοση του `pip`, το λογισμικό που χρησιμοποιούμε για να εγκαταστήσουμε το Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -175,14 +175,14 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Εάν λάβετε ένα σφάλμα όταν καλείται το μπιπ στην πλατφόρμα Windows, παρακαλούμε ελέγξτε εάν το μονοπάτι ονόματος του έργου σας περιέχει κενά, εμφάσεις ή ειδικούς χαρακτήρες (για παράδειγμα,`C:\Users\User Name\djangogirls`). Εάν το κάνει, παρακαλώ σκεφτείτε να χρησιμοποιήσετε μία άλλη θέση χωρίς κενά, εμφάσεις ή ειδικούς χαρακτήρες (πρόταση: `C:\djangogirls`). Δημιουργήστε ένα νέο virtualenv στον νέο κατάλογο, μετά σβήστε τον παλιό και δοκιμάστε την παραπάνω εντολή ξανά. (Το να μετακινήσετε τον κατάλογο virtualenv δεν θα δουλέψει μιας και το virtualenv χρησιμοποιεί απόλυτες διαδρομές.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Η γραμμή εντολών σας μπορεί να παγώσει αφού προσπαθήσετε να εγκαταστήσετε το Django. Εάν γίνει αυτό, αντί για την παραπάνω εντολή χρησιμοποιήστε:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -198,4 +198,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Αυτό είναι! Είστε (επιτέλους) έτοιμοι να δημιουργήσετε μια εφαρμογή Django!
