@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Birçok farklı kod editörü var, hangi editörü kullanacağınız kişisel tercihinize bağlı. Çoğu Python programcısı PyCharm gibi karmaşık fakat son derece güçlü IDE'leri (Integrated Development Environments-Entegre Geliştirme Ortamları) kullanır. Başlangıç seviyesi için bunlar muhtemelen pek uygun olmayacaktır. Bizim önerdiklerimiz aynı derecede güçlü fakat çok daha basit editörler olacak.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüz danışmak isteyebilirsiniz.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde kullanılabilir.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tüm işletim sistemleri için mevcuttur.
 
-[Download it here](https://www.sublimetext.com/3)
+[Buradan indirin](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom, [GitHub](https://github.com/) tarafından oluşturulan son derece yeni bir kod editörüdür. Ücretsiz, açık kaynak ve Windows, OS X ve Linux için kullanılabilir.
 
-[Download it here](https://atom.io/)
+[Buradan indirin](https://atom.io/)
 
-## Why are we installing a code editor?
+## Neden bir kod editörü kuruyoruz?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Neden Word ya da Notepad kullanmak yerine, özel bir kod editörü yazılımı kurduğumuzu merak ediyor olabilirsiniz.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Birinci nedeni yazdığımız kodun **sade yazı** olması gerektiği içindir ki Word gibi programlar sade yazı üretmezler (font ve şekillendirme desteklerler) ve [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) gibi özel formatlar kullanılar.
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+İkinci sebep ise kod editörlerinin kod düzenlemeye destek vermek - örnegin özel kelimeleri reklendirme ve otomatik parantez kapatma gibi - için özelleşmiş olmasıdır.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Bütün bunları birazdan deneyimleyeceğiz. Yakında kod editörünüz güvenlir eski dostunuz gibi olacaktır :)
