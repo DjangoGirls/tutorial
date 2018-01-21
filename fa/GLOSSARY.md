@@ -1,3 +1,3 @@
-# code editor
+# ویرایشگر کد ویرایشگر کد یک برنامه است که به شما اجازه میدهد کدهایتان را ذخیره کنید بنابراین شما میتوانید به آنها رجوع کنید. شما میتوانید در فصل editor chapter یاد بگیرید که یکی از آنها را چطور دانلود کنید.
 
 Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
