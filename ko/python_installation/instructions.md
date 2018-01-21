@@ -1,6 +1,6 @@
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> 위 내용은 Geek Girls Carrots (http://django.carrots.pl)을 바탕으로 작성되었습니다.
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
@@ -10,7 +10,7 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![파이썬을 패쓰 (path)에 추가하는 것을 잊지 마세요.](../python_installation/images/python-installation-options.png)
 
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
@@ -32,9 +32,9 @@ data-collapse=true ces-->
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+https://www.python.org/downloads/release/python-361/ 에서 파이썬 설치프로그램을 다운로드 받아야 합니다.
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
+* *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
@@ -42,21 +42,21 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+아마도 이미 파이썬이 설치되어있을 거에요. 설치되어있는지 (그리고 어떤 버전인지) 확인하려면, 콘솔을 열어서 다음 명령을 실행하세요.
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 --version
+    $ python3 --version 
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+3.6.0 등, 설치된 파이썬 버전이 'micro version'이라면, 업그레이드할 필요가 없습니다. 파이썬이 설치되어 있지 않거나 버전이 다르면 이렇게 해보세요:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+콘솔에서 다음 명령을 실행하세요.
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +68,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+콘솔에서 다음 명령을 실행하세요.
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +82,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+콘솔에서 다음 명령을 실행하세요.
 
 {% filename %}command-line{% endfilename %}
 
@@ -95,7 +95,7 @@ Verify the installation was successful by opening a command prompt and running t
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 --version
+    $ python3 --version 
     Python 3.6.1
     
 
@@ -103,4 +103,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! 잘 설치 되지 않는 경우도 있을 수 있습니다. 그럴 때는 경험이 있는 분에게 도움을 구해보세요.
