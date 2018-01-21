@@ -1,15 +1,15 @@
-# Let’s start with Python
+# لنبدأ مع بايثون
 
-We're finally here!
+وأخيراً نحن هنا!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+ولكن أولاً، دعونا نقول لكم ما هي بايثون. بايثون هي لغة برمجة شعبية جداً والتي يمكن استخدامها لإنشاء المواقع والألعاب والبرامج العلمية، والرسومات والكثير، أكثر بكثير.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+بايثون نشأت في أواخر الثمانينات، وهدفها الرئيسي أن يتمكن البشر من قراءتها (ليس فقط آلألات!). هذا هو السبب في أنها تبدو أبسط من لغات البرمجة الأخرى، ولكن لا تقلق - بايثون قوية ايضا!
 
-# Python installation
+# تركيب بايثون
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [التركيب على كروم بوك](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **ملاحضة** اذا كنت قد عملت على تعليمات التركيب من قبل ، يمكنك الإنتقال الى المستوى الأخر!
 
 {% include "/python_installation/instructions.md" %}
