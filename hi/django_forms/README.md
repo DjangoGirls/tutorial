@@ -1,14 +1,14 @@
 # Django Forms
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+और अंत में ब्लॉग पोस्ट को स्मपादित(edit) और प्रेषित(post) करने के लिए हम अपनी वेबसाइट में एक अच्छी युक्ति लगाएंगे. Django admin ऐसे तो बहोत ही उपयोगी है लेकिन इसे सुन्दर और अपने अनुसार अनुकूलित बनाना थोड़ा कठिन है. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Django form के बारे में सबसे अच्छी बात ये है के या तो हम शुरुवात से इसे निरूपित कर सकते है या फिर सीधे एक model form बना सकते है जो की फॉर्म के परिणाम को मॉडल में सरक्षित करेगा.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+और ये वही चीज़ है जो हम करना चाहते है: हम यहाँ पर एक form का निर्माण करेंगे हमारे post model के लिए.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Django के प्रत्येक महत्वपूर्ण हिस्सों की तरह, form की भी अपनी स्वयं की फाइल: form.py होती ह.
 
-We need to create a file with this name in the `blog` directory.
+हमे उपरोक्त नाम से blog डायरेक्टरी में एक फाइल बनाना पड़ेगी. 
 
     blog
        └── forms.py
@@ -32,13 +32,13 @@ class PostForm(forms.ModelForm):
 
 We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+PostForm, जैसे की आप शायद सोच सकते है, ये हमारे form का नाम है We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
 Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+और यह बात है! हम सब करने की ज़रूरत अब एक view में प्रपत्र का उपयोग करें और यह एक टेम्पलेट में प्रदर्शित है।
 
 So once again we will create a link to the page, a URL, a view and a template.
 
