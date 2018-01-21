@@ -1,12 +1,12 @@
-# Deploy!
+# Implementează!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Notă**: Următorul capitol poate fi, uneori, un pic cam greu de înțeles. Persistă şi du-l până la capăt; deployment-ul este o parte importantă a procesului de dezvoltare a site-ului. Acest capitol este plasat la mijlocul tutorialului, astfel încât mentorul să te poată ajuta în procesul un pic mai complicat de a-ți duce website-ul online. Aceasta înseamnă că puteţi termina tutorialul pe cont propriu, dacă nu vă rămâne timp.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Until now, your website was only available on your computer. Now you will learn how to deploy it! Deployment-ul este procesul de publicare a aplicației tale pe Internet, astfel încât aplicația să fie vizibilă pentru toți. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Așa cum ați învățat, un website trebuie să fie localizat pe un server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Celălalt serviciu extern pe care-l vom utiliza este [GitHub](https://www.github.com), un serviciu de găzduire de cod. Există și altele, însă aproape toţi programatorii au un cont de GitHub acum, așa că, acum, vei avea și tu unul!
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
@@ -16,23 +16,23 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Inițializarea repository-ului Git propriu
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git depistează modificările unui anumit set de fişiere în ceea ce se numeşte un repository de cod (sau, pe scurt, "repo"). Să începem unul pentru proiectul nostru. Deschideți consola şi executaţi aceste comenzi, în directoriul `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Ar trebui să fiți în mapa `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+    $ git config --global user.name "Numele tău"
+    $ git config --global user.email tu@exemplu.com
     
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git va urmări modificările făcute în toate fişierele şi mapele în această directorie, dar există unele fişiere pe vrem să le ignore. Facem acest lucru prin crearea unui fişier numit `.gitignore` în directoriul de bază. Deschide editorul de cod şi creați un nou fişier cu următorul conținut:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,21 +47,18 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Note** Punctul de la începutul numelui de fișier este important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Este o idee bună să folosiți comanda `git status` înaintea celei de `git add` sau ori de câte ori nu ești sigură legat de ceea ce s-a schimbat. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    On branch master
+    Primul commit:
     
-    Initial commit
-    
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
+    Fișiere încă neurmărite:
+      (folosiți "git add <nume-fișier>..." pentru a-l include în commit)
     
             .gitignore
             blog/
@@ -71,7 +68,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Și în cele din urmă salvăm modificările. Intră în consolă și rulează aceste comenzi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -119,7 +116,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. Du-te și verifică-l!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
