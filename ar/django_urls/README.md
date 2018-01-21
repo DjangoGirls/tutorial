@@ -1,18 +1,18 @@
-# Django URLs
+# روابط دجانغو
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+نحن على وشك بناء صفحتنا الأولى على الأنترنت: الصفحة الرئيسية لمدونتك! ولكن أولاً، دعونا نتعلم قليلاً عن "روابط مواقع جانغو".
 
-## What is a URL?
+## ما هو عنوان URL؟
 
-A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+ببساطة URL هو عنوان ويب. يمكنك أن ترى عنوان URL في كل مرة تقوم بزيارة موقع على شبكة الإنترنت--أنها مرئية في شريط العناوين في المتصفح الخاص بك. (نعم! `127.0.0.1:8000` هو عنوان URL! و `https://djangogirls.org` أيضا عنوان URL)
 
-![Url](images/url.png)
+![عنوان Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+كل صفحة على شبكة الإنترنت تحتاج إلى عنوان URL الخاص بها. وبهذه الطريقة التطبيق الخاص بك يعلم ما يجب أن يظهر للمستخدم الذي يقوم بفتح عنوان URL هذا. في جانغو نستخدم ما يسمى `URLconf` (URL configuration). URLconf هو مجموعة من الأنماط التي ستحاول جانغو مطابقتها مع عنوان URL المطلوب للعثور على طريقة العرض الصحيح.
 
-## How do URLs work in Django?
+## كيف تعمل عناوين Url في جانغو؟
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+دعونا نفتح الملف `mysite/urls.py` في محرر التعليمات البرمجية الخاصة بك للاختيار ونرى ما يبدو عليه:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+كما ترون، جانغو قد وضعت بالفعل شيء هنا بالنسبة لنا.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+الخطوط بين علامات الاقتباس الثلاثي (`'' '` أو `"""`) تسمى docstrings – ييمكنك كتابتها في أعلى ملف أو فئة أو طريقة لوصف ما يفعله. هي لا تعمل عبر بايثون.
 
-The admin URL, which you visited in previous chapter, is already here:
+عنوان URL المشرف، الذي زرته في الفصل السابق، موجود هنا:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,40 +41,40 @@ The admin URL, which you visited in previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+هذا السطر يعني أن لكل عنوان URL الذي يبدأ ب `admin/`، سوف تجد جانغو مقابله *view*. في هذه الحالة نحن ، نضع الكثير من روابط المشرفين ، لذالك هي ليست مجموعة كلها في هذا الملف الصغير ، انها اكثر قابلية للقراءة وانضف.
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+هل كنت تتساءل كيف تطابق جانغو عناوين Url للواجهات ؟ حسنا، هذا الجزء صعب. يستخدم جانغو `regex`، اختصار ل "التعبيرات العادية". Regex لديه الكثير (الكثير!) من القواعد التي تشكل نمط بحث. بما ان regexes موضوع متقدم، نحن لن تمر بالتفصيل على كيفية عمله.
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
+إذا كنت لا تزال ترغب معرفة كيف قمنا بإنشاء الأنماط، هنا مثال للعملية – سوف نحتاج فقط مجموعة فرعية محدودة من القواعد للتعبير عن النمط الذي نتطلع اليه وهي:
 
-* `^` for the beginning of the text
-* `$` for the end of the text
-* `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
+* `^` في بداية النص
+* `$` في نهاية النص
+* `\d` لرقم
+* `+` للإشارة إلى أن العنصر السابق ينبغي أن يتكرر مرة واحدة على الأقل
+* `()` لالتقاط جزء من النمط
 
-Anything else in the URL definition will be taken literally.
+أي شيء آخر في تعريف عنوان URL سوف تؤخذ حرفيا.
 
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
+الآن تخيل أن لديك موقع على شبكة الإنترنت بعنوان مثل `http://www.mysite.com/post/12345/`، حيث يكون `12345` هو عدد مشاركاتك.
 
-Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
+كتابة آراء منفصلة لجميع أرقام المشاركات سيكون مزعج حقاً. مع التعابير العادية، يمكننا إنشاء الأنماط التي تتطابق مع عنوان URL واستخراج العدد لنا: `^ post/(\d+)/$`. دعونا نكسر هذا قطعة قطعة لمعرفة ما نقوم به هنا:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
-* **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
-* **/** tells django that another `/` character should follow
-* **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
+* **^post/** تخبر دجانغو عن اتخاذ أي شيء يحتوي على `post/` في بداية عنوان url (مباشرة بعد `^`)
+* **(\d+)** يعني أنه سيكون هناك عدد (رقم واحد أو أكثر)، وأننا نريد الرقم الذي تم التقاطه واستخراجه
+* **/** يخبر دجانغو أن حرف آخر `/` يجب أن يتبع
+* **$** يشير إلى نهاية عنوان url الخاص بمعنى أن السلاسل التي تنتهي مع `/` سوف تتطابق مع هذا النمط
 
-## Your first Django URL!
+## عنوان URL جانغو الأول!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+حان الوقت لإنشاء URL الأول لدينا! ونحن نريد 'http://127.0.0.1:8000/' لتكون الصفحة الرئيسية لمدونتنا وتعرض قائمة من المشاركات.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+نريد أيضا الاحتفاظ بالملف `mysite/urls.py` نظيف، حيث أننا سوف نسترد عناوين Url من تطبيق `blog` لدينا إلى الملف الرئيسي `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+امضي قدما ،واضع هذا السطر الذي سيسترد `blog.urls`.. لاحظ أننا نستخدم الدالة `include` هنا، لذا ستحتاج إلى إضافة هذا الاستيراد.
 
-Your `mysite/urls.py` file should now look like this:
+الآن يجب أن تبدو الملف `mysite/urls.py` الخاص بك مثل هذا:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -89,13 +89,13 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+جانغو سيقوم بإعادة توجيه كل شيء يأتي في 'http://127.0.0.1:8000/' إلى`blog.urls` والبحث عن مزيد من التعليمات هناك.
 
-Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
+يتم كتابة التعبيرات العادية في بايثون دائماً مع `r` أمام السلسلة. هذا تلميح مفيد لبايثون أن السلسلة قد تحتوي على الأحرف الخاصة التي ليست معنية ببايثون نفسه، ولكن للتعبير العادي بدلاً من ذلك.
 
-## blog.urls
+## روابط المدونة
 
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+قم بإنشاء ملف فارغ جديد يسمى `urls.py` في الدليل `blog`. حسنًا! أضف هذه الأسطر الأولى والثانية:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -104,9 +104,9 @@ from django.conf.urls import url
 from . import views
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+نحن هنا نستورد وضائف دجانغو `url` وجميع `views` من تطبيق `blog` (ليس لدينا أي حتى الآن، ولكننا سوف نحصل على ذلك في دقيقة واحدة)
 
-After that, we can add our first URL pattern:
+بعد ذلك، يمكننا أن نضيف لدينا نمط URL الأول:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,14 +116,14 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. That's correct, because in Django URL resolvers, 'http://127.0.0.1:8000/' is not a part of the URL. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+كما ترون، نحن الآن تعيين طريقة `عرض` تسمى `post_list` `^ $` لعنوان URL. هذا التعبير العادي وسيطابق `^` (بداية) تليها `$` (نهاية) – لذلك سلسلة فارغة فقط سوف تتطابق. وهذا صحيح، لأن في URL جانغو resolvers، 'http://127.0.0.1:8000/' ليست جزءا من عنوان URL. سيعلم هذا النمط دجانغو أن `views.post_list` هو المكان المناسب للذهاب إليه إذا دخل شخص ما موقعك على الويب على العنوان "http://127.0.0.1:8000/".
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+الجزء الأخير، `name='post_list'`, هو اسم عنوان URL الذي سيتم استخدامه لتحديد طريقة العرض. وهذا يمكن أن يكون نفس اسم العرض ولكن أيضا يمكن أن يكون شيئا مختلفاً تماما. سنستخدم عناوين URLs المسماة لاحقا في المشروع، لذلك من المهم تسمية كل عنوان URL في التطبيق. يجب أن نحاول أيضا الحفاظ على أسماء عناوين URL فريدة وسهلة التذكر.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+إذا حاولت زيارة http://127.0.0.1:8000/ الآن، ستجد نوعا من رسائل الخطأ "صفحة ويب غير متوفرة". وذلك لأن الخادم (تذكر كتابة `runserver`?) لم يعد قيد التشغيل. ألق نظرة على نافذة وحدة تحكم الخادم لمعرفة السبب.
 
-![Error](images/error1.png)
+![خطأ](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+تعرض وحدة التحكم الخاصة بك خطأ، ولكن لا تقلق - إنها مفيدة حقا: إنها تخبرك بوجود **no attribute 'post_list'**. هذا هو اسم *view* الذي تحاول جانغو العثور عليه واستخدامه، ولكن لم نقم بإنشاءه بعد. في هذه المرحلة، لن يعمل `/admin/` أيضا. لا تقلق – سوف نصل إلى هناك.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+> إعرف المزيد حول URLconfs من خلال قراءة الوثائق الرسمية: https://docs.djangoproject.com/en/1.11/topics/http/urls/
