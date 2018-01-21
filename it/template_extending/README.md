@@ -1,14 +1,14 @@
-# Template extending
+# Estendere il template
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Un'altra cosa bella di Django è l'**estensione del template**. Cosa significa? Significa che puoi usare le stesse parti del tuo HTML per pagine diverse del tuo sito.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Templates help when you want to use the same information or layout in more than one place. Non devi ripeterti in ogni file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
-A base template is the most basic template that you extend on every page of your website.
+Un template base è il template più semplice. Lo puoi estendere su ogni pagina del tuo sito.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Creiamo un file `base.html` in `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, così:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova tra `<body>` e `</body>`) con questo:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Potresti aver notato che questo sostituisce tutto da `{% for post in posts %}` a `{% endfor %}` con: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Perchè? Hai appena creato un blocco! Hai appena usato un template tag `{% block %}` per creare un area che che avrà dell'HTML all'interno. That HTML will come from another template that extends this template (`base.html`). Ti mostreremo come farlo tra un attimo.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}Rimuovi tutto quello che c'è prima di `{% for post in posts %}` e dopo `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Vogliamo usare questa parte del nostro template per ogni blocco per i contenuti. Aggiungiamo un tag block in questo file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}Dobbiamo fare in modo che il tuo tag block combaci con quello nel tuo file`base.html`. Dobbiamo anche includere tutto il codice del blocco dei contenuti. Per farlo, metti tutto tra `{% block content %}` e `{% endblock %}`. Come questo:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Un'ultima cosa. Dobbiamo collegare questi due template. È questo che vuol dire estendere i template! Lo faremo aggiungendo un tag extends all'inizio del file. Così:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+È tutto! Controlla se il tuo sito sta ancora funzionando correttamente. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
