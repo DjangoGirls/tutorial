@@ -1,4 +1,4 @@
-# Django templates
+# Django Templates
 
 Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template Tags** mit.
 
@@ -20,11 +20,11 @@ Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, ges
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Versuche dies in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
 
-![Figure 13.1](images/step1.png)
+![Abbildung 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Wie du siehst, haben wir nun das:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Das heißt, Django versteht es als Liste von Objekten. Kannst du dich noch an die Einführung von Python erinnern, wie man Listen anzeigen kann? Ja, mit for-Schleifen! In einem Django-Template benutzt du sie so:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,39 +42,39 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+Versuch das in deinem Template.
 
-![Figure 13.2](images/step2.png)
+![Abbildung 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Es funktioniert! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}Alles, was du zwischen `{% for %}`und `{% endfor %}` schreibst, wird für jedes Objekt in der Liste wiederholt. Aktualisiere deine Seite:{% endraw %}
 
-![Figure 13.3](images/step3.png)
+![Abbildung 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Und zum Schluss
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-* First, push your code to Github
+* Schiebe zuerst deinen Code auf GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,19 +88,19 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* Dann logg dich wieder bei [PythonAnywhere](https://www.pythonanywhere.com/consoles/) ein und geh zu deiner **Bash-Konsole** (oder starte eine neue) und gib ein:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd my-first-blog
-    $ git pull
+    $ git pull 
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Glückwunsch! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![Abbildung 13.4](images/donut.png)
