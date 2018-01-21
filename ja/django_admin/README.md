@@ -13,11 +13,11 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+前章でpostモデルをimportするのを見ました。 Adminページ(管理画面)のモデルを作るために、モデルを登録する必要があります。`admin.site.register(Post)`の部分です.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OKです、Postモデルについて見ていきましょう。 Web サーバーを実行するコンソールで `python manage.py runserver` を実行してください。 Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Login page](images/login_page2.png)
+![ログインページ](images/login_page2.png)
 
 To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
