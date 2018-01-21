@@ -1,12 +1,12 @@
-# Django models
+# Django 模型 (Django models)
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+我們現在想要做的是將來能存儲我們部落格中的所有文章的東西。但為了能夠做我們需要，我們必須談一下`物件`這東西.
 
-## Objects
+## 物件 (Objects)
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+那麼什麼是物件？它是一個屬性 (properties) 和動作 (actions) 的集合。聽起來很奇怪吧，但是我們將會給你一個例子。
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
@@ -28,13 +28,13 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+所以基本上，這概念是用包含屬性（稱為`object properties`）和方法（稱為`methods`）的程式碼來描寫真實的事物).
 
-How will we model blog posts then? We want to build a blog, right?
+那麼我們將如何建立我們的部落格文章 (blog posts) 的模型？我們想要建立一個部落格，對吧？
 
-We need to answer the question: What is a blog post? What properties should it have?
+我們需要回答這個問題：什麼是部落格文章 (blog post) ？它應該有什麼屬性？
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+嗯，確定的是我們的博客文章 (blog post) 需要一些文字內容和標題，對嗎？ It would be also nice to know who wrote it – so we need an author. 最後，我們想要知道文章是什麼時候建立和公佈。
 
     Post
     --------
@@ -45,23 +45,23 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+那些工作和部落格文章有關？有一些公佈文章的`方法 (method) `是不錯的，對吧
 
-So we will need a `publish` method.
+所以我們將需要一個`公佈(publish)` 的方法。
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+既然我們已經知道我們想要完成什麼，讓我們開始在 Django 上建立模型吧。
 
-## Django model
+## Django 模型 (Django model)
 
-Knowing what an object is, we can create a Django model for our blog post.
+知道什麼是物件 (object) 之後，我們可以為我們的部落格文章 (blog post) 建立一個 Django 模型。
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+A model in Django is a special kind of object – it is saved in the `database`. 資料庫是資料的集合。 這是你將存儲有關使用者 (users) 和你的部落格文章 (blog posts) 等資訊的地方。 我們將使用一個 SQLite 資料庫來存儲我們的資料。 This is the default Django database adapter – it'll be enough for us right now.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+你可以把資料庫中的模型看作是有列（欄位）和行（資料）的試算表。
 
-### Creating an application
+### 建立應用程式 (Creating an application)
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+為了讓一切保持整潔，我們將在我們的專案內建立一個別的應用程式。 一開始就讓一切井然有序是很好的。 我們需要在主控台上（從 `djangogirls` 檔所在目錄 `manage.py` ）執行以下命令來建立一個應用程式：
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -110,7 +110,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### 建立一個部落格文章張貼模型 (Creating a blog post model)
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Double-check that you use two underscore characters (`_`) on each side of `str`. 這個規矩在 Python 中頻繁地使用，有時候我們也稱它為 "dunder" （是 "double-underscore" 的縮寫）。　
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
@@ -148,9 +148,9 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
+- `class` 是一個特殊的關鍵字，表示我們在定義一個物件 (object) 。
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `models.Model` 意味 Post 是一個 Django 模型，所以 Django 知道這模型應該被儲存在資料庫。
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
@@ -169,7 +169,7 @@ Also notice that both `def publish(self):` and `def __str__(self):` are indented
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Create tables for models in your database
+### 為你資料庫中的模組建立表格 (Create tables for models in your database)
 
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
