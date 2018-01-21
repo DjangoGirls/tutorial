@@ -1,8 +1,8 @@
-# Code editor
+# 代码编辑器
 
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-You're about to write your first line of code, so it's time to download a code editor!
+你马上就要写下第一行代码，现在该下载一个代码编辑器了！
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
