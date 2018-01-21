@@ -1,29 +1,27 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+Git adalah suatu "sistem kontrol versi" yang digunakan oleh banyak sekali programmer. Software ini dapat mencatat perubahan file dari waktu ke waktu sehingga anda dapat mencari versi tertentu di kemudian hari. Ini mirip dengan fitur "track changes" pada Microsoft Word, tapi jauh lebih baik.
 
-## Installing Git
+## Menginstal Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Kamu dapat mengunduh Git dari [git-scm.com](https://git-scm.com/). Anda bisa menekan "next" di semua langkah kecuali satu; pada langkah kelima yang berjudul "Menyesuaikan lingkungan PATH Anda", pilih "Gunakan Git dan alat Unix opsional dari Windows Command Prompt" (opsi paling bawah). Selain itu, defaultnya bagus. Lihat pada Window-style, akhir baris Unix-style yang ada terlhat bagus.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Jangan lupa restart command prompt atau PowerShell setelah penginstalan selesai dengan sukses. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+Download Git dari [git-scm.com](https://git-scm.com/) dan ikuti perintah yang diberikan.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
-
-<!--endsec-->
-
-<!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+> ** Catatan </ 0> Jika Anda menjalankan OS X 10.6, 10.7, atau 10.8, Anda perlu menginstal versi git dari sini:  Git installer untuk OS X Snow Leopard </ 1></p> </blockquote> <!--endsec-->
+> 
+> <!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-
-```bash
+> 
+> {% filename%} baris perintah {% endfilename%}
+> 
+> ```bash
 $ sudo apt-get install git
 ```
 
@@ -32,7 +30,7 @@ $ sudo apt-get install git
 <!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```bash
 $ sudo dnf install git
@@ -43,7 +41,7 @@ $ sudo dnf install git
 <!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```bash
 $ sudo zypper install git
