@@ -17,7 +17,7 @@ Am besten wir sehen uns das an einem Beispiel an. Versuchen wir's?
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Das sollte angezeigt werden:
 
 {% filename %}command-line{% endfilename %}
 
@@ -29,7 +29,7 @@ You're now in Django's interactive console. It's just like the Python prompt, bu
 
 ### Alle Objekte
 
-Let's try to display all of our posts first. You can do that with the following command:
+Zunächst wollen wir alle unsere Blogposts ansehen. Das kannst du mit folgendem Kommando erreichen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -61,7 +61,7 @@ This is a list of the posts we created earlier! We created these posts using the
 
 ### Objekt erstellen
 
-This is how you create a new Post object in database:
+So erstellst du ein neues Post-Objekt in der Datenbank:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ This is how you create a new Post object in database:
 
 But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
 
-Let's import User model first:
+Als Erstes müssen wir das User Model importieren:
 
 {% filename %}command-line{% endfilename %}
 
@@ -79,7 +79,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Welche User sind in unserer Datenbank vorhanden? Finde es damit heraus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 
 As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
 
-Now we can finally create our post:
+Jetzt können wir schließlich unseren Post erstellen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,7 +106,7 @@ Now we can finally create our post:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Hurray! Wanna check if it worked?
+Super! Wollen wir nachsehen, ob es funktioniert hat?
 
 {% filename %}command-line{% endfilename %}
 
@@ -115,7 +115,7 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Da ist er, ein weiterer Post in der Liste!
 
 ### Mehrere Posts hinzufügen
 
@@ -123,7 +123,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 
 ### Objekte filtern
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Jetzt sieht unser Code folgendermaßen aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -161,7 +161,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Dann publizieren wir ihn mit unserer `publish`-Methode:
 
 {% filename %}command-line{% endfilename %}
 
@@ -180,7 +180,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ### Objekte ordnen
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Mit den QuerySets kannst du eine Liste auch nach bestimmten Kriterien ordnen. Lass uns das mit dem `created_date` Feld ausprobieren:
 
 {% filename %}command-line{% endfilename %}
 
@@ -189,7 +189,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Wir können die Reihenfolge auch umdrehen, indem wir "`-`" davor schreiben:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,18 +200,17 @@ We can also reverse the ordering by adding `-` at the beginning:
 
 ### Verkettung von QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+Du kannst auch QuerySets kombinieren, indem du sie **verkettest**:
 
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-This is really powerful and lets you write quite complex queries.
+Dies ist wirklich mächtig und lässt dich ziemlich komplexe Abfragen schreiben.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Cool! Jetzt bist du bereit für den nächsten Teil! Um die Konsole zu schließen, schreib das:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 >>> exit()
-$
 ```
