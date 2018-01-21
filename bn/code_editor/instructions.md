@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+অনেক ধরণের কোড এডিটর পাওয়া যায় এবং আপনি কোনটা ব্যবহার করবেন সেটা নির্ভর করে পুরোপুরি আপনার উপর। সাধারণত পাইথন প্রোগ্রামাররা জটিল কিন্তু অনেক পাওয়ারফুল IDE (Integrated Development Environment) ব্যবহার করে থাকেন, যেমন পাইচার্ম। কিন্তু নতুনদের জন্য আমরা যেসব কোড এডিটর ব্যবহার করার পরামর্শ দেব সেগুলো একটু কম সুবিধাজনক হলেও সমান ক্ষমতাসম্পন্ন ও ব্যবহার করা অনেক সহজ।
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit ওপেন সোর্স ও ফ্রি এডিটর এবং সকল অপারেটিং সিস্টেম সাপোর্ট করে (যেমন লিনাক্স, উইন্ডোজ ইত্যাদি)।
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[ডাউনলোড করতে এখানে ক্লিক করুন](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[এখান থেকে ডাউনলোড করুন](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[এখান থেকে ডাউনলোড করুন](https://atom.io/)
 
-## Why are we installing a code editor?
+## আমরা কেন কোড এডিটর ইন্সটল করব?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+আপনি হয়ত অবাক হচ্ছেন কেন আমরা কোড এডিটর নামে বিশেষ সফটওয়্যার ইন্সটল করছি , সাধারন ওয়ার্ড বা নোটপ্যাড ব্যবহার না করে।
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+তার প্রথম কারন হলো কোড **সাধারন টেক্সট** কিন্তু ওয়ার্ড বা টেক্সটএডিট- ধরনের সফ্টওয়্যারগুলো সাধারন টেক্সট তৈরী না করে রিচ টেক্সট(Rich Text) তৈরী করে যেটা RTF(Rich Text Format) বা এই ধরনের কোন ফর্মাটে থাকে। </p> 
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+দ্বিতীয় কারন হলো কোডএডিটরের বিশেষ পারদর্শীতা হলো কোড এডিটিং, যাতে অনেক প্রয়োজনীয় জিনিস যেমন কোডকে তার বৈশিষ্ঠ্য অনুযায়ী রঙিন ভাবে দেখানো এবং বন্ধনীর(braces) কে নিজে থেকে শেষ করা ইত্যাদি। 
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
