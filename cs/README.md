@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django Girls Tutoriál
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -10,25 +10,25 @@ Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tu
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Introduction
+## Úvod
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Přemýšlela jsi někdy, jak vytvořit webové stránky, ale nikdy jsi neměla dostatek motivace začít? Přemýšlela jsi někdy, že svět softwaru je pro tebe příliš složitý, aby jsi zkusila něco naprogramovat sama?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Máme pro tebe dobrou zprávu! Programování není tak těžké jak se zdá, a zde ti chceme ukázat, jak zábavné to může být.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+This tutorial will not magically turn you into a programmer. Jestli chceš být dobrý programátor, budeš potřebovat měsíce nebo dokonce roky učení a praxe. Ale chceme ti ukázat, že programování nebo tvorba webových stránek není tak složitá, jak se zdá. Budeme se snažit ti vysvětlit různé kousky a střípky, tak jednoduše jak dokážeme, aby jsi se necítila zastrašena technologií.
 
-We hope that we'll be able to make you love technology as much as we do!
+Doufáme, že se nám podaří ti přiblížit tuto technologii tak, aby jsi ji měla stejně ráda jako my!
 
-## What will you learn during the tutorial?
+## Co se naučíš během kurzu?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+Tvá aplikace (více či méně) bude vypadat takto:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Požádali jsme kouče a předchozí účastníky kurzu, aby čas od času pomáhali ostatním s tímto kurzem! Neboj se zde zeptat na jakoukoliv otázku!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
@@ -38,9 +38,9 @@ It is amazing to take part in a Django Girls workshop, but we are aware that it 
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## About and contributing
+## O kurzu a přispěvatelích
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Tento kurz je provozován [DjangoGirls](https://djangogirls.org/). Pokud najdeš nějaké chyby, nebo chceš aktualizovat návod, prosím,[postupuj podle pokynů pro přispívající](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
