@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django Girls のチュートリアル
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -10,7 +10,7 @@ Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tu
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Introduction
+## はじめに
 
 Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
@@ -26,7 +26,7 @@ Once you've finished the tutorial, you will have a small working web application
 
 It will (more or less) look like this:
 
-![Figure 0.1](images/application.png)
+![図 0.1](images/application.png)
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
