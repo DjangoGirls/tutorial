@@ -1,57 +1,56 @@
 # Django templates
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Saatnya menampilkan data! Django menyediakan fitur bawaan berupa **template tags** untuk keperluan tersebut.
 
-## What are template tags?
+## Apa itu template tags?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Anda lihat, di HTML, Anda tidak bisa benar-benar menulis kode Python, karena browser tidak memahaminya. Mereka hanya tahu HTML. Kita tahu bahwa HTML agak statis, sementara Python jauh lebih dinamis.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Display post list template
+## Menampilkan template post list
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Di pembahasan sebelumnya kita menyediakan post list ke dalam variabel `posts`.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Untuk mencetak variabel ke dalam Django templates, kita menggunakan dua buah karakter kurung kurawal denga nama variable di dalamnya, seperti ini:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
 ```html
-{{ posts }}
+{{posts}}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Terapkan ke template `blog/templates/blog/post_list.html`. Ubah semua dari `<div>` kedua sampai dengan `</div>` ketiga ganti dengan `{{ posts }}`. Simpan file, dan refresh halaman untuk melihat hasil perubahan:
 
-![Figure 13.1](images/step1.png)
+![Gambar 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Seperti yang bisa kita lihat, tercetak seperti berikut:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
 ```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
+<QuerySet [<Post: My second post> , <Post: My first post> ] & gt;
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Yang berarti Django dapat mengenalinya sebagai list objek. Ingat pembahasan dari **Introduction to Python** bagaimana kita menampilkan list? Ya, dengan loop! Di Django template, kita menerapkannya seperti ini:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
 ```html
-{% for post in posts %}
-    {{ post }}
-{% endfor %}
+{% untuk posting di posting%} 
+{{post}} {% endfor%}
+
 ```
 
-Try this in your template.
+Cobalah terapkan di template.
 
-![Figure 13.2](images/step2.png)
+![Gambar 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Berhasil! Tapi kami ingin posting ditampilkan seperti tulisan statis yang kami buat sebelumnya di bab ** Introduction to HTML </ 0> . Anda dapat mencampur tag HTML dan template. Kami ` tubuh </ 0> akan terlihat seperti ini:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
 
-```html
-<div>
+<pre><code class="html"><div>
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
@@ -62,45 +61,46 @@ It works! But we want the posts to be displayed like the static posts we created
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```
+`</pre> 
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw%} Semua yang Anda masukkan antara ` {% untuk%} </ 0> dan <code> {% endfor%} </ 0> akan diulang untuk setiap objek dalam daftar. Segarkan laman Anda: {% endraw%}</p>
 
-![Figure 13.3](images/step3.png)
+<p><img src="images/step3.png" alt="Gambar 13.3" /></p>
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+<p>Pernahkah Anda memperhatikan bahwa kami menggunakan notasi yang sedikit berbeda kali ini ( <code> {{post.title}} </ 0> atau <code> {{post.text}} ) </ 0> ? Kami mengakses data di masing-masing bidang yang didefinisikan dalam model <code> Post </ 0> kami . Juga, <code> | linebreaksbr </ 0> sedang menyalurkan teks posting melalui filter untuk mengubah jeda baris menjadi paragraf.</p>
 
-## One more thing
+<h2>Satu hal lagi</h2>
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+<p>Akan lebih baik bila website Anda tetap bekerja di Internet publik kan? Ayo coba gunakan PythonAnywhere lagi. Inilah rekap langkahnya ...</p>
 
-* First, push your code to Github
+<ul>
+<li>Pertama, dorong kode Anda ke Github</li>
+</ul>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
+<pre><code>$ git status
+ [...] 
+$ git add --all. $ git status
+ [...] 
+$ git commit -m "Template yang dimodifikasi untuk menampilkan posting dari database."
+[...] 
+$ git push
+`</pre> 
+
+* Kemudian, masuk kembali ke  PythonAnywhere </ 0> dan masuk ke konsol < 1> Bash </ 1> Anda (atau jalankan yang baru), dan jalankan:</li> </ul> 
     
-
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
-
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
-
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
-
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
-
-![Figure 13.4](images/donut.png)
+        $ cd my-first-blog
+        $ git pull
+        [...]
+        
+    
+    * Akhirnya, naik ke tab  Web </ 0> dan tekan ** Reload </ 1> di aplikasi web Anda. Pembaruan Anda seharusnya hidup! Jika posting blog di situs PythonAnywhere Anda tidak cocok dengan posting yang muncul di blog yang dihosting di server lokal Anda, tidak masalah. Database di komputer lokal Anda dan Python Anywhere tidak sinkron dengan file Anda yang lain.</li> </ul> 
+        
+        Selamat! Sekarang lanjutkan dan coba tambahkan sebuah posting baru di admin Django Anda (ingatlah untuk menambahkan publish_date !) Pastikan Anda berada di admin Django untuk situs pythonanywhere Anda , https: // yourname. pythonanywhere .com / admin Kemudian segarkan halaman Anda untuk melihat apakah tulisan itu muncul di sana.
+        
+        Bekerja seperti pesona? Kami bangga Langkah menjauh dari komputer Anda sedikit - Anda telah mendapatkan istirahat. :)
+        
+        ![Gambar 13.4](images/donut.png)
