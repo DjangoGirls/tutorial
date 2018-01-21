@@ -1,48 +1,48 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Pre čitateľov doma: Táto kapitola je spracovaná v [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) videu.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Táto časť je založená na príručke Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django je napísané v Pythone. Python potrebujeme aby sme urobili hocičo vv Djangu. Začnime tým, že si ho nainštalujeme. Chceme aby si si nainštalovala Python 3.6, takže ak máš staršiu verziu budeš si ju musieť aktualizovať.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Najprv si over, či tvoj počítač beží na 32-bitovej alebo 64-bitovej verzii Windows-u, stlačením Windows tlačidlo + Pause/Break tlačidlo, čo otvorí informácie o tvojom systéme. Pozri sa na riadok "Typ systému". Python pre Windows si môžeš stiahnuť z webstránky https://www.python.org/downloads/windows/. Klikni na "Latest Python 3 Release - Python x.x.x" link. Ak tvoj počítač beží na **64-bitovej** verzii Windows-u, stiahni si **Windows x86-64 executable installer**. Inak si stiahni **Windows x86 executable installer**. Po stiahnutí inštalačného súboru, spusti ho (dvojklikom) a postupuj podľa inštrukcií v ňom.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Nezabudni pridať Python do Cesty](../python_installation/images/python-installation-options.png)
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+V ďalších krokoch, budeš používať Windows príkazový riadok (o ktorom ti tiež povieme viac). Zatiaľ, keď potrebuješ zadať nejake príkazy, choď do Štart → Systém Windows → Príkazový riadok. Alebo môžes stlačiť a držať tlačidlo so znakom Windows a k tomu stlačiť tlačidlo "R" kým sa neobjaví "Run" okno. Aby si spustila Príkazový riadok, zadaj "cmd" a stlač enter v "Run" okne. (No novších verziách Windows, možno budeš musieť vyhľadať "Command Prompt" ("Príkazový riadok"), lebo je niekedý skrytý.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Zadaj "cmd" v "Run" okne](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Poznámka: Ak používaš staršiu verziu systému Windows (7, Vista alebo ktorúkoľvek staršú verziu) a Python 3.6.x Inštalátor skončí s chybovou hláškou, môžeš skúsiť:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. nainštalovať všetky Windows aktualizácie a skúsiť nainštalovať Python 3.6 znovu; alebo
+2. nainštalovať [staršiu Python verziu](https://www.python.org/downloads/windows/), napr., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Ak si nainštaluješ staršiu Python verziu, inštalačně okno môže vypadať inak ako je to zobrazené hore. Uisti sa, že označíš "Add python.exe to Path", následne klikni na tlačidlo vľavo a zvoľ "Will be installed on local hard drive" ("Bude nainštalované na lokálny pevný disk"):
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Pridaj Python do Path, staršie verzie](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Poznámka:** Pred inštaláciou Python na OS X, mala by si povoliť v nastaveniach svojho Mac-u inštaláciu balíkov, ktoré nie sú z App Store. Choď do System Preferences (je to v priečinku Applications), klikni na "Security & Privacy," a potom na tab "General". Ak nastavenie: "Allow apps downloaded from:" je nastavené na "Mac App Store," zmeň ho na "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Inštalačný program Pythonu si môžeš stiahnuť zo stránky https://www.python.org/downloads/release/python-361/:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Stiahni si súbor s *Mac OS X 64/32-bitovým inštalátorom*,
+* Dvojklikom na *python-3.6.1-macosx10.6.pkg* spusti inštalačný program.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Je veľmi pravdepodobné, že Python už máš predinštalovaný. Pre kontrolu, či je naozaj nainštalovaný (a ktorá verzia), spusti konzolu a napíš tento príkaz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +50,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+Ak máš inú mikro verziu Pythonu nainštalovanú, e.g. 3.6.0, nemusíš ju aktualizovať. Ak nemáš Python nainštalovaný, alebo ak chceš inú verziu, môžeš ho nainštalovať takto:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Zadaj do konzoly tento príkaz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +68,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Použi v konzole tento príkaz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +91,7 @@ Použi v konzole tento príkaz:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Ak si chceš overiť, že inštalácia bola úspešná, otvor príkazový riadok a spusti príkaz `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +99,8 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**POZNÁMKA:** Ak používaš Windows a objavý sa ti chybová hláška, že `python3` nebol najdený, skús použiť `python` (bez čísla `3`) a over či to náhodou nie je Python 3.6 verzia.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+V prípade nejakých pochybností, alebo ak sa niečo pokazilo a nemáš tušenie, čo robiť ďalej - opýtaj sa svojho trénera! Niekedy veci nejdú úplne hladko a je lepšie požiadať o pomoc niekoho, kto má viac skúseností.
