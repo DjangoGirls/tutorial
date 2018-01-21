@@ -1,4 +1,4 @@
-# Introduction to Python
+# آشنایی با پایتون
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 
 Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
-### Summary
+### سرفصل ها
 
 OK, enough of strings. So far you've learned about:
 
@@ -459,7 +459,7 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Summary
+### سرفصل ها
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
@@ -601,7 +601,6 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 
 ```python
 >>> exit()
-$
 ```
 
 This will put you back into the command prompt.
@@ -824,7 +823,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Summary
+### سرفصل ها
 
 In the last few exercises you learned about:
 
@@ -1053,7 +1052,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Summary
+## سرفصل ها
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
