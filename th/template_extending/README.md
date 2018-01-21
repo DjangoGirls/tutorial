@@ -1,14 +1,14 @@
-# Template extending
+# การ extend template
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+อีกความเก่งข้อหนึ่งของ Django คือ **ความสามารถในการ extend template** หมายความว่าไง? มันหมายถึงว่า คุณสามารถใช้ชิ้นส่วน HTML เดียว ได้กับหลายๆ หน้าของเว็บคุณ
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
-A base template is the most basic template that you extend on every page of your website.
+template หลัก คือ template ที่เป็นพื้นฐานที่สุด ที่คุณสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+สร้างไฟล์ `base.html` ใน `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+จากนั้นเปิดไฟล์และคัดลองทุกบรรทัดจาก `post_list.html` ไปยังไฟล์ `base.html` แบบนี้:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+จากนั้น ในไฟล์ `base.html` แทนที่ทุกสิ่งใน `<body>` (ทุกสิ่งระหว่าง `<body>` และ `</body>`) ด้วย:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). เราจะแสดงวิธีให้คุณดูเร็วๆ นี้ล่ะ
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
@@ -104,7 +104,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 
 We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. แบบนี้:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+เสร็จแล้ว! ลองดูว่าเว็บเรายังทำงานอยู่ไหม. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
