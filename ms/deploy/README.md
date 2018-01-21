@@ -1,14 +1,14 @@
-# Deploy!
+# Menyebarkan!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Nota** Bab berikut kadang-kadang agak sukar untuk diteruskan. Terus dan selesaikannya; penyebaran adalah bahagian penting dalam proses pembangunan laman web. Bab ini diletakkan di tengah-tengah tutorial supaya mentor anda dapat membantu dengan proses yang lebih rumit untuk mendapatkan laman web anda dalam talian. Ini bermakna anda masih boleh menyelesaikan tutorial anda sendiri jika anda kehabisan masa.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Hingga kini, laman web anda hanya tersedia di komputer anda. Kini anda akan belajar bagaimana untuk menggunakannya! Menyebarkan adalah proses menerbitkan aplikasi anda di Internet supaya orang akhirnya boleh pergi dan melihat aplikasi anda. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Seperti yang anda pelajari, tapak web harus ditempatkan di pelayan. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. Terdapat orang lain di luar sana, tetapi hampir semua pengaturcara mempunyai akaun GitHub hari ini, dan kini begitu juga anda!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Ketiga tempat ini akan menjadi penting bagi anda. Komputer tempatan anda akan menjadi tempat di mana anda melakukan pembangunan dan ujian. Apabila anda berpuas hati dengan perubahan, anda akan meletakkan salinan program anda di GitHub. Laman web anda akan berada di PythonAnywhere dan anda akan mengemas kini dengan mendapatkan salinan baru kod anda dari GitHub.
 
 # Git
 
@@ -16,9 +16,9 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Memulakan repositori Git kami
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git menjejaki perubahan pada satu set fail tertentu dalam apa yang dipanggil repositori kod (atau "repo" untuk pendek). Mari kita mulakan projek kami. Open up your console and run these commands, in the `djangogirls` directory:
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
@@ -30,9 +30,9 @@ Git tracks changes to a particular set of files in what's called a code reposito
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Memulakan repositori git adalah sesuatu yang perlu kita lakukan hanya sekali bagi setiap projek (dan anda tidak perlu memasukkan semula nama pengguna dan email sekali lagi).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git akan menjejaki perubahan kepada semua fail dan folder dalam direktori ini, tetapi terdapat beberapa fail yang kami mahu ia diabaikan. We do this by creating a file called `.gitignore` in the base directory. Buka editor anda dan buat fail baru dengan kandungan berikut:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,11 +47,11 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Note** The dot at the beginning of the file name is important! Jika anda mengalami sebarang kesulitan menciptanya (Mac tidak menyukai anda untuk membuat fail yang bermula dengan titik melalui Finder, sebagai contoh), kemudian gunakan ciri "Simpan Sebagai" dalam editor anda; ia peluru.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Fail itu ialah pangkalan data setempat anda, di mana semua jawatan anda disimpan. Kami tidak mahu menambah ini ke repositori anda kerana laman web anda di PythonAnywhere akan menggunakan pangkalan data yang berbeza. Pangkalan data itu boleh menjadi SQLite, seperti mesin pembangunan anda, tetapi biasanya anda akan menggunakan salah satu yang dipanggil MySQL yang boleh menangani pelawat laman web yang lebih banyak daripada SQLite. Dengan cara ini, dengan mengabaikan pangkalan data SQLite anda untuk salinan GitHub, ini bermakna bahawa semua jawatan yang anda buat setakat ini akan tinggal dan hanya boleh didapati di dalam negara, tetapi anda perlu menambah lagi pengeluaran. Anda perlu memikirkan pangkalan data tempatan anda sebagai taman permainan yang bagus di mana anda boleh menguji perkara yang berbeza dan jangan takut bahawa anda akan memadamkan siaran sebenar anda dari blog anda.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. Ini akan membantu menghalang sebarang kejutan daripada berlaku, seperti fail salah yang ditambah atau dilakukan. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Keluaran harus sama dengan yang berikut:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Dan akhirnya kami menyelamatkan perubahan kami. Pergi ke konsol anda dan jalankan arahan ini:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,15 +87,13 @@ And finally we save our changes. Go to your console and run these commands:
     
     ## Pushing your code to GitHub
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
-    
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (Jika anda sudah melakukannya dalam persiapan bengkel, itu bagus!) Kemudian, buat repositori baru, memberikan nama "blog pertama saya". Biarkan kotak semak "memulakan dengan README" tidak dicentang, biarkan pilihan .gitignore kosong (kami telah melakukannya secara manual) dan biarkan Lesen sebagai Tiada.
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. Mungkin lebih mudah hanya dengan nama `my-first-blog`.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    Pada skrin seterusnya, anda akan dipaparkan URL klon repo anda. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
     
     <img src="images/github_get_repo_url_screenshot.png" />
     
@@ -115,11 +113,11 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
 
 Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
 
-- [new branch] master -> master Branch master set up to track remote branch master from origin.
+- [cawangan baru] tuan -> master master Cawangan ditubuhkan untuk mengesan induk cawangan jauh dari asal.
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. Pergi dan periksa!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
@@ -131,13 +129,13 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     
     ## Pulling our code down on PythonAnywhere
     
-    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Pilih pilihan untuk memulakan konsol "Bash" - itulah versi PythonAnywhere dari konsol, sama seperti yang ada pada komputer anda.
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
     
     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    Mari kita tarik kod kami dari GitHub dan ke PythonAnywhere dengan membuat "klon" repo kami. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -166,13 +164,13 @@ $ source myvenv/bin/activate
 
 (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Kesabaran, kesabaran!  Tetapi jika ia mengambil masa lebih dari pada lima minit, ada yang salah.  Tanya jurulatih anda.
     
     &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
     
     ### Creating the database on PythonAnywhere
     
-    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+    Here's another thing that's different between your own computer and the server: it uses a different database. Oleh itu, akaun pengguna dan jawatan mungkin berbeza di pelayan dan di komputer anda.
     
     Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
     
@@ -183,13 +181,13 @@ $ source myvenv/bin/activate
 
     <br />## Publishing our blog as a web app
     
-    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. Kami bersedia untuk menerbitkannya sebagai aplikasi web!
     
-    Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+    Klik kembali ke papan pemuka PythonAnywhere dengan mengklik pada logonya, kemudian klik pada tab **Web**. Akhirnya, tekan **Tambah apl web baru**.
     
     After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
     
-    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. Kami terlalu keren untuk setup PythonAnywhere default Django. ;-)
     
     
     ### Setting the virtualenv
@@ -198,14 +196,14 @@ $ source myvenv/bin/activate
     
     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
     
-    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Klik kotak biru dengan tanda semak untuk menyelamatkan laluan sebelum bergerak.
     
-    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. Sekiranya anda membuat kesilapan, PythonAnywhere akan menunjukkan sedikit amaran.
     
     
     ### Configuring the WSGI file
     
-    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. Cara kami mengkonfigurasi PythonAnywhere untuk mengenali blog Django kami adalah dengan mengedit fail konfigurasi WSGI.
     
     Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
     
@@ -227,34 +225,34 @@ $ source myvenv/bin/activate
     application = StaticFilesHandler(get_wsgi_application())
     
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+Tugas fail ini adalah untuk memberitahu PythonAnywhere di mana aplikasi web kami hidup dan nama fail tetapan Django itu.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. Kami akan mengetahui lebih lanjut mengenai fail statik kemudian dalam tutorial, apabila kami mengedit CSS untuk laman web kami.
 
 Hit **Save** and then go back to the **Web** tab.
 
 We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
 
-## Debugging tips
+## Petua penyahpepijatan
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). Lihat jika terdapat sebarang mesej ralat di sana; yang paling baru berada di bahagian bawah. Masalah biasa termasuk:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+- Melupakan satu langkah yang kami lakukan di konsol: mewujudkan virtualenv, mengaktifkannya, memasang Django ke dalamnya, memindahkan pangkalan data.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Membuat kesilapan dalam laluan virtualenv di tab Web - biasanya terdapat sedikit mesej ralat merah di sana, jika ada masalah.
 
-- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
+- Membuat kesilapan dalam fail konfigurasi WSGI - adakah anda mendapat laluan ke folder blog pertama saya?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+- Adakah anda memilih versi Python yang sama untuk virtualenv anda seperti yang anda lakukan untuk aplikasi web anda? Kedua-duanya harus 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+Dan ingat, jurulatih anda di sini untuk membantu!
 
-# You are live!
+# Anda hidup!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+Halaman lalai untuk laman web anda sepatutnya mengatakan "Ia berfungsi!", Sama seperti pada komputer tempatan anda. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log masuk dengan nama pengguna dan kata laluan, dan anda akan melihat anda boleh menambah Posts baru pada pelayan.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Sebaik sahaja anda mempunyai beberapa catatan yang dibuat, anda boleh kembali ke persediaan setempat anda (bukan PythonAnywhere ). Dari sini, anda perlu membuat persediaan setempat anda untuk membuat perubahan. Ini adalah alur kerja biasa dalam pembangunan web - membuat perubahan secara tempatan, tolak perubahan tersebut kepada GitHub, dan tarik perubahan anda ke pelayan Web langsung anda. Ini membolehkan anda untuk bekerja dan bereksperimen tanpa memecah laman web anda secara langsung. Cukup sejuk, kan?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Give yourself a *HUGE* pat on the back! Pelancaran pelayan adalah salah satu bahagian yang paling menarik dari pembangunan web dan ia sering memerlukan orang beberapa hari sebelum mereka membuat mereka bekerja. Tetapi anda mendapat laman web anda secara langsung, di Internet sebenar, seperti itu!
