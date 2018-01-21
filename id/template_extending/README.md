@@ -1,68 +1,59 @@
-# Template extending
+# Template memperpanjang
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Hal baik lain yang Django miliki untuk Anda adalah ** template yang diperluas </ 0>. Apa artinya ini? Ini berarti Anda dapat menggunakan bagian HTML yang sama untuk berbagai halaman situs web Anda.</p> 
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Template membantu bila kamu ingin menggunakan informasi atau tata letak yang sama di lebih dari satu tempat. Kamu tidak perlu mengulang sendiri di setiap file. Dan jika kamu ingin mengubah sesuatu, Anda tidak perlu melakukannya di setiap template, hanya satu!
 
-## Create a base template
+## Buat template dasar
 
-A base template is the most basic template that you extend on every page of your website.
+Template dasar adalah template paling dasar yang Anda tambahkan di setiap halaman situs web kamu.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Ayo buat file ` base.html </ 0> di <code> blog / templates / blog / </ 0>:</p>
 
-    blog
-    └───templates
-        └───blog
-                base.html
-                post_list.html
-    
+<pre><code>blog └───templates
+     └───blog
+             base.html
+             post_list.html
+`</pre> 
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+Kemudian buka dan salin semua dari `post_list.html` ke `base.html` file, Seperti ini:
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+{% filenama %}blog/template/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+{% load staticfiles%} 
+&lt;html&gt; 
+&lt;head&gt; &lt;title&gt; Blog Django Girls </ 2> &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt; &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt; &lt;link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt; &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt; </ 1> &lt;body&gt; &lt;div class="page-header"&gt; &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 9 > &lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog </ 10> </ 8> &lt;div class="content container"&gt; &lt;div class="row"&gt; &lt;div class="col-md-8"&gt; {% konten blok%} {% endblock%} </ 13> </ 12> </ 11> </ 7 > </ 0>    
+        
+        
+        
+        
+        
+    
+    
+        
+            
+            
+        
+        
+            
+                
+                    
+                    
+                
+            
+        
+    
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Kemudian di `base.html`, ganti seluruh `<body>` ( diantara semua `<body>` dan `</body>`) dengan ini:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <body>
     <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <h1><a href="/">Blog Django Girls</a></h1>
     </div>
     <div class="content container">
         <div class="row">
@@ -75,18 +66,17 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw%} Anda mungkin melihat ini mengganti semuanya dari ` {% untuk posting di posting%} </ 0> menjadi <code> {% endfor%} </ 0> dengan: {% endraw%}</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-```html
-{% block content %}
+<pre><code class="html">{% block content %}
 {% endblock %}
-```
+`</pre> 
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Tapi mengapa? Anda baru saja membuat `block`! Anda menggunakan template tag `{% blok %}` Untuk membuat area yang memiliki HTML yang Dimasukkan didalamnya. HTML akan datang dari template lain yang memperluas template ini (`base.html`). Kami akan menunjukkan kepada kamu bagaimana melakukan ini dalam sesaat.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Sekarang simpan`base.html` dan buka `blog/template/blog/post_list.html` kamu lagi. {% raw %} kamu akan menghapus segalanya diatas `{% for post in posts %}` dan dibawah `{% endfor %}`. Saat kamu sudah selesai, berkas akan terlihat seperti ini:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,11 +92,11 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Kami akan menggunakan ini sebagai bagian dari template kami untuk semua konten blok. Saatnya untuk menambahkan tag blok untuk berkas ini!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %} Anda ingin tag blok anda cocok dengan tag di dalam berkas `base.html` anda. Anda juga ingin memasukkan semua kode yang termasuk dalam blok konten Anda. Untuk melakukannya, letakkan semuanya diantara `{% block content %}` dan `{% endblock %}`. Seperti ini:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/template/blog/post_list.html{% endfilename %}
 
 ```html
 {% block content %}
@@ -122,12 +112,12 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Hanya tersisa satu hal. Kita perlu menghubungkan dua template ini bersama-sama. Inilah semua tentang memperluas template! Kami akan melakukan ini dengan menambahkan tag meluas ke awal file. Seperti ini:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
+{% memperluas 'blog/base.html' %}
 
 {% block content %}
     {% for post in posts %}
@@ -142,6 +132,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+Itu saja! Periksa apakah situs Anda masih berfungsi sebagaimana mestinya. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Jika Anda mendapatkan error `TemplateDoesNotExist`, itu berarti tidak ada file `blog/base.html`dan Anda memiliki `runserver` yang berjalan di konsol. Cobalah untuk menghentikannya (dengan menekan Ctrl+C - tombol Control and C bersamaan) dan restart dengan menjalankan perintah `python manage.py runserver`.
