@@ -1,14 +1,14 @@
-# Extend your application
+# 扩展您的应用
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+我们已经完成了所有创建网站的各项不同必须的步骤：我们知道如何写一个模型，url，视图和模板。我们同样知道如何让我们网站更漂亮。
 
-Time to practice!
+现在来练习吧！
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+我们网站里的第一件事情就是，一个展现一篇博客的页面，对吗？
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+我们已经有了`Post`模型，所以我们不需要再添加任何内容到`models.py`文件中.
 
-## Create a template link to a post's detail
+## 创建一个模板链接，跳转到博文的内容页
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -28,7 +28,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}我们在博文列表的博文标题处添加一个链接用于跳转到该博文的详细页面。 让我们编辑 `<h1><a href="">{{ post.title }}</a></h1>` 使得它能链接到博文详情页面：。{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -36,7 +36,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}是解释神秘的 `{% url 'post_detail' pk=post.pk %}` 时候了。 正如你所猜想的，`{% %}`标记意味着我们正在使用Django模板标签。 这一次我们将使用一个能为我们创建URL的！{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
@@ -44,15 +44,15 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![NoReverseMatch 错误](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## 创建文章详细页面的URL
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+让我们在`urls.py`里为我们的 `post_detail` *view* 创建一个URL!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+我们希望我们的第一条文章详细页面显示在类似这样的**URL**： http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+让我们在 `blog/urls.py` 文件中增加一个 URL 来指引 Django 到名为 `post_detail` 的 *view*，它将用来显示整篇博客文章。 Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. 文件应当如下所示：
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -70,21 +70,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 
 - it starts with `^` again – "the beginning".
 - `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
-- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- `(?P<pk>\d+)` – this part is trickier. 这表示Django会把所有你放到这里的东西转变成一个称作`pk`的变量并传递给视图。 (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` 意味着需要一个或更多的数字。 So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+这意味着如果你键入`http://127.0.0.1:8000/post/5/`到你的浏览器里， Django 明白你在寻找一个叫做 `post_detail` 的 *视图*，然后传递`pk` 等于 `5` 到那个 *视图*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![AttributeError](images/attribute_error2.png)
+![属性错误](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+你还记得下面应该怎么做吗？当然：添加一个视图！
 
-## Add a post's detail view
+## 增加文章详细页面的视图
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+This time our *view* is given an extra parameter, `pk`. 我们的*视图*需要能捕获它，对吗？ 所以我们将定义我们的函数为`def post_detail(request, pk):`。 注意我们需要使用我们在urls里指定的(`pk`)。 省略这个变量是不正确的，将会导致一个错误！
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
@@ -96,13 +96,13 @@ Post.objects.get(pk=pk)
 
 But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![对象不存在错误](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+我们不希望那样！ 但是，当然，Django已经为我们处理好了这些：`get_object_or_404`。 In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Page not found](images/404_2.png)
+![找不到页面](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+好消息是你实际上可以创建你自己 `Page not found` 的页面和使它漂亮如你所愿。但现在它不是超级重要的，所以我们将跳过它。
 
 OK, time to add a *view* to our `views.py` file!
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+好了。是时候刷新页面了： http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![文章列表](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+它工作了 ！但是，当您单击博客文章标题中的某个链接时，会发生什么呢？
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![模板不存在的错误](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+哦不 ！另一个错误 ！但我们已经知道如何处理它，对吗？我们需要添加一个模板 ！
 
 ## Create a template for the post details
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+我们将在`blog/templates/blog` 中创建一个文件，叫做 `post_detail.html`.
 
-It will look like this:
+它看起来会像这样：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,19 +160,19 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+现在，我们要扩展 `base.html`。 在`content` 块中，我们想要显示一篇文章的published_date （如果存在的话）， 标题和文本。 但我们应该讨论一些重要的东西，对不对吗？
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Post detail page](images/post_detail2.png)
+![文章细节页面](images/post_detail2.png)
 
-Yay! It works!
+耶 ！它工作了！
 
-## One more thing: deploy time!
+## 还有一件事：部署时刻！
 
-It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
+你的网站如果还能在 PythonAnywhere 正常运转就好了，对吧？让我们再次部署。
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+然后，在一个 [PythonAnywhere 的 Bash 终端](https://www.pythonanywhere.com/consoles/)里运行：
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,6 +192,6 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+最后，跳到 [Web 标签页](https://www.pythonanywhere.com/web_app_setup/) 并点击**重新载入**.
 
-And that should be it! Congrats :)
+就是这样！祝贺你：）
