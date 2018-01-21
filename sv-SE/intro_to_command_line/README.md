@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# Introduktion till kommandotolken
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Låt oss introducera dig till din första nya vän: kommandotolken!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+De följande stegen kommer att visa dig hur du använder det svarta fönstret som alla hackers använder. Det kan se lite läskigt ut i början, men egentligen är det bara ett fönster som väntar på instruktioner från dig.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## Vad är kommandotolken?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Fönstret, som oftast kallas **kommandotolken** eller **terminalen**, är ett textbaserat program för att visa, hantera och ändra filer på din dator. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Andra namn på kommandotolken är: *cmd*, *CLI*, *prompt*, *konsol* eller *terminal*.
 
-## Open the command-line interface
+## Öppna kommandotolken
 
-To start some experiments we need to open our command-line interface first.
+För att börja experimentera måste vi först öppna kommandotolken.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -34,17 +34,17 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+Det är antagligen under Applikationer → Tillbehör → Terminal, men det beror på ditt system. Om du inte hittar det, försök googla det. :)
 
 <!--endsec-->
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Nu borde du se ett vitt eller svart fönster som väntar på dina kommandon.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Om du använder Mac eller Linux ser du antagligen `$`, precis såhär:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+På Windows är det ett `>`, såhär:
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,7 +64,7 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Varje kommando kommer att ha detta tecken framför sig och ett mellanslag, men du behöver inte skriva det. Din dator skriver det åt dig. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## Ditt första kommando (WOHO!)
 
 Let's start by typing this command:
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Och tryck på `Enter`. Detta blir resultatet:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +102,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Som du precis såg skrev datorn precis ditt användarnamn. Ganska coolt va? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Basics
+## Grunderna
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Varje operativsystem har lite olika kommandon för terminalen, så följ instruktionerna för ditt operativsystem. Nu kör vi!
 
-### Current directory
+### Aktuell katalog
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Visst hade det varit bra och veta var vi är nu? Skriv in detta kommando och tryck `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Notis: 'pwd' står för 'print working directory', alltså 'skriv ut nuvarande mapp'.
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Du ser säkert något liknande på din dator. När du öppnar terminalen brukar du starta i användarens hemmamapp.
 
 * * *
 
-### List files and directories
+### Lista filer och mappar
 
-So what's in it? It'd be cool to find out. Let's see:
+Så vad finns här? Det hade varit kul att se. Vi testar:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -165,7 +165,7 @@ So what's in it? It'd be cool to find out. Let's see:
 {% filename %}command-line{% endfilename %}
 
     > dir
-     Directory of C:\Users\olasitarska
+     Directory of C:\Users\olasitarska
     05/08/2014 07:28 PM <DIR>      Applications
     05/08/2014 07:28 PM <DIR>      Desktop
     05/08/2014 07:28 PM <DIR>      Downloads
@@ -177,9 +177,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Ändra aktuell katalog
 
-Now, let's go to our Desktop directory:
+Låt oss gå till Skrivbordets katalog:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +199,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Testa om det verkligen fungerande:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,21 +221,21 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Det fungerade!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Create directory
+### Skapa katalog
 
-How about creating a practice directory on your desktop? You can do it this way:
+Nu kan vi skapa en katalog för Django Girls på skrivbordet såhär:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir djangogirls
     
 
 <!--endsec-->
@@ -244,28 +244,28 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir djangogirls
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Det här kommandot skapar en mapp med namnet `djangogirls` på ditt skrivbord. Du kan kolla om den är där genom att kolla på ditt skrivbord eller genom att köra kommandot `ls` eller `dir`! Testa. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Tips: Om du inte vill skriva samma kommandon om och om igen, testa att trycka på `uppåtpilen` och `nedåtpilen` för att bläddra bland kommandon som du nyligen har använt.
 
 * * *
 
-### Exercise!
+### Övning!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### Lösning:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd djangogirls
     $ mkdir test
     $ ls
     test
@@ -277,7 +277,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd djangogirls
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Grattis! :)
 
 * * *
 
-### Clean up
+### Städa upp
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Vi vill inte lämna det stökigt, så låt oss ta bort allt som vi har gjort hittills.
 
-First, we need to get back to Desktop:
+Först måste vi tillbaka till skrivbordet:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +315,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+Kolla var du är:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +337,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Nu är det dags att ta bort katalogen `djangogirls`:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r djangogirls
     
 
 <!--endsec-->
@@ -354,13 +354,13 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S djangogirls
+    djangogirls, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Klart! För att vara säker på att den verkligen är raderad kan vi kolla med:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +382,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Det var allt i detta kapitlet! Nu kan du stänga kommandotolken. Vi gör det som en riktig hacker? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -404,26 +404,26 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Summary
+## Sammanfattning
 
-Here is a summary of some useful commands:
+Här är en sammanfattning med några användbara kommandon:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning                | Exempel                                           |
+| ------------------ | ------------------------- | -------------------------- | ------------------------------------------------- |
+| exit               | exit                      | stäng fönstret             | **exit**                                          |
+| cd                 | cd                        | ändra mapp                 | **cd test**                                       |
+| cd                 | pwd                       | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir                | ls                        | lista kataloger/filer      | **dir**                                           |
+| copy               | cp                        | kopiera fil                | **copy c:\test\test.txt c:\windows\test.txt** |
+| move               | mv                        | flytta fil                 | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir              | mkdir                     | skapa en ny katalog        | **mkdir testkatalog**                             |
+| rmdir (or del)     | rm                        | delete a file              | **del c:\test\test.txt**                        |
+| rmdir /S           | rm -r                     | delete a directory         | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Dessa är bara några av de kommandon du kan köra i terminalen men du kommer inte behöva fler än dessa idag.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Om du är nyfiken så innehåller [ss64.com](http://ss64.com) en komplett lista med kommandon för alla operativsystem.
 
-## Ready?
+## Redo?
 
-Let's dive into Python!
+Nu dyker vi ner i Python!
