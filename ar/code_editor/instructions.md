@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+يوجد العديد من برامج التحرير لكن الخيار الاخير يعود للشخص. اغلب مبرمجي البايثون (Python) يستخدمون بيئات تطوير مدمجة (او IDEs) مثل PyCharm. كمبتدئ على الأرجح هذا الخيار أقل ملائمة؛ نحن نوصي ببرامج قوية على نفس المستوى، ولكن أبسط بكثير.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+اقتراحاتنا مدرجة بالاسفل، لكن لا تتردد أن تسأل المدرب عن برنامجه المفضل - سوف يكون من الأسهل الحصول على مساعدة منهم.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit محرر مفتوح المصدر ومجاني ايضاً, وهو متاح لكافة أنظمة التشغيل.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[يمكنك تحميل البرنامج هنا](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text 3 
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text هو محرر شائع جدا مع فترة مجانية للتقييم. سهل التركيب والاستخدام ومتاح لجميع أنظمة التشغيل.
 
-[Download it here](https://www.sublimetext.com/3)
+[يمكنك تحميل البرنامج هنا](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom محرر برمجة جديد للغاية تم إنشاؤه بواسطة [GitHub](https://github.com/). هو حر ومفتوح المصدر، وسهل التركيب والاستخدام. متاح لويندوز وماك و لينكس.
 
-[Download it here](https://atom.io/)
+[يمكنك تحميل البرنامج هنا](https://atom.io/)
 
-## Why are we installing a code editor?
+## لماذا نثبت محرر تعليمات البرمجة؟
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+كنت قد تتسائل لماذا يتم تثبيت برنامج تحريرالنصوص البرمجية بدلاً من استخدام Word أو المفكرة.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+السبب الأول هو أن نص البرمجة يجب أن يكون ** نص عادي**، والمشكلة مع برامج مثل Word و Textedit (المفكرة) أنها لا تنتج في الواقع نص عادي، وأنها تنتج نص منسق (مع الخطوط والتنسيقات)، باستخدام تنسيقات مخصصة مثل تنسيق النص الغني [RTF - Rich Text Format](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+والسبب الثاني هو أن محررات البرمجة مخصصة لتحرير النصوص البرمجية، حيث يمكن أن توفر الميزات المفيدة مثل تسليط الضوء على النصوص البرمجية مع اللون لتناسب معناها، أو إغلاق علامات الاقتباس تلقائياً لك.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+سنرى كل ذلك في وقت لاحق. قريبا، ستبدأ بالتفكير في ان محرر تعليمات البرمجة القديم الذي اخترته كواحد من افضل الأدوات لديك. :)
