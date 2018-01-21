@@ -1,6 +1,6 @@
-Sono disponibili diversi editor e la scelta di uno piuttosto che un altro dipende principalmente dal gusto personale. La maggior parte dei programmatori Python usa complessi ma estremamente potenti IDE (ambienti di sviluppo integrati), come PyCharm. Tuttavia, dal momento che sei ancora agli inizi non è l'editor più appropriato; quelli che ti suggeriremo noi sono ugualmente potenti ma molto più semplici da utilizzare.
+Ci sono un sacco di editor diversi e sono perlopiù una preferenza personale. La maggior parte dei programmatori Python usa complessi ma estremamente potenti IDE (ambienti di sviluppo integrati), come PyCharm. Tuttavia, dal momento che sei ancora agli inizi non è l'editor più appropriato; quelli che ti suggeriremo noi sono ugualmente potenti, ma molto più semplici da utilizzare.
 
-I nostri suggerimenti sono riportati qui di seguito, ma sentiti libero/a di chiedere al tuo coach quali sono le sue preferenze in materia di editor, in questo modo sarà più semplice per il tuo coach aiutarti.
+I nostri editori suggeriti sono qui sotto, ma sentiti libera di chiedere al tuo coach quali sono le sue preferenze - sarà più semplice ricevere aiuto da loro.
 
 ## Gedit
 
@@ -10,22 +10,22 @@ Gedit è un editor open-source e gratuito, disponibile per tutti i sistemi opera
 
 ## Sublime Text 3
 
-Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratuito. È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Scaricalo qui](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom è un nuovo editor di codice creato da [GitHub](https://github.com/). È gratuito, open-source, facile da installare e da usare. È disponibile per Windows, OSX e Linux.
+Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
 [Scaricalo qui](https://atom.io/)
 
 ## Perché installiamo un editor di codice?
 
-Forse ti stai chiedendo per quale motivo installiamo questo editor di codice invece di usare un applicazione come Word or Blocco Note.
+Forse ti stai chiedendo per quale motivo installiamo questo editor di codice, invece di usare un'applicazione come Word o Blocco Note.
 
-Il primo motivo è che il codice deve essere **testo semplice**, e il problema con programmi come Word e Textedit è che in realtà non producono testo semplice. Producono testo RTF (con caratteri e formattazione), utilizzando formati personalizzati come [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La prima ragione è che il codice deve essere **testo semplice**, e programmi come Word e Tesxtedit in realtà non producono questo tipo di testo, ma testo formattato (con font e formattazione) personalizzato come l'[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La seconda ragione è che i code editor sono specializzati per programmare, perciò hanno molte funzionalità utili, ad esempio diversi colori per evidenziare frammenti di codice con diversi significati, o l'inserimento automatico del secondo paio di virgolette.
+La seconda ragione è che gli editor sono specializzati nel modificare codice, e quindi mettono a disposizione utili funzionalità come l'evidenziazione della sintassi con colori legati al suo significato, o la chiusura automatica di parentesi e virgolette.
 
-Vedremo tutto ciò più tardi. Il tuo fidato code editor sarà presto uno dei tuoi strumenti preferiti :)
+Vedremo tutto ciò più avanti. Presto, il tuo fidato editor di testo diventerà uno dei tuoi strumenti preferiti. :)
