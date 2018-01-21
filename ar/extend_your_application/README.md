@@ -1,16 +1,16 @@
-# Extend your application
+# توسيع التطبيق الخاص بك
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+لقد أنجزنا فعلا جميع الخطوات المختلفة اللازمة لإنشاء موقعنا على الإنترنت: نحن نعرف كيفية كتابة نموذج، url وطريقة العرض والقالب. نحن نعلم أيضا كيفية جعل موقع الويب الخاص بنا جميلا.
 
-Time to practice!
+حان الوقت للتدريب!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+أول شيء نحتاجه في مدونتنا هو، على الأرجح، صفحة لعرض مشاركة واحدة، أليس كذلك؟
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+لدينا بالفعل نموذج `Post` ، حتى لا تحتاج إلى إضافة أي شيء إلى `models.py`.
 
-## Create a template link to a post's detail
+## إنشاء رابط نموذج لتفاصيل المشاركة
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+سوف نبدأ بإضافة رابط داخل الملف `blog/templates/blog/post_list.html`. حتى الآن ينبغي له ان يبدو هكذا:{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -28,7 +28,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %} نريد الحصول على رابط من عنوان المشاركة في قائمة المشاركات إلى صفحة تفاصيل المشاركة. دعونا نغيير `<h1><a href="">{{ post.title }}</a></h1>` بحيث يرتبط بصفحة تفاصيل المشاركة :{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -36,23 +36,23 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} حان الوقت لشرح `{% url 'post_detail' pk=post.pk %}`. كما قد تضن، فإن `{% %}` يعني أننا نستخدم علامات قالب جانغو. هذه المرة سوف نستخدم واحد واحد منهم والذي سيقوم بإنشاء عنوان URL لنا!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+`post_detail` يعني أن جانغو سيتوقع عنوان URL في `blog/urls.py` ب name=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+وماذا عن `pk=post.pk`؟ `pk` هو اختصار للمفتاح الأساسي، وهو اسم فريد لكل سجل في قاعدة البيانات. ونظرا لأننا لم نحدد مفتاحا أساسيا في نموذج `Post`، فإن دجانغو ينشئ واحدا لنا (بشكل افتراضي، وهو رقم يزيد بمقدار واحد لكل سجل، أي 1 و 2 و 3) ويضيفه كحقل يدعى`pk` إلى كل من مشاركاتنا. نصل إلى المفتاح الأساسي من خلال كتابة `post.pk`,، بنفس الطريقة التي نصل بها إلى الحقول الأخرى (`title`, `author`, etc.) في `Post`!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+الآن عندما ننتقل إلى http://127.0.0.1:8000/ سيكون لدينا خطأ (كما هو متوقع، نظرا لأنه لا يوجد لدينا عنوان URL أو *view* ل `post_detail`). وسوف تبدو كما يلي:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![خطأ NoReverseMatch](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## إنشاء عنوان URL لتفاصيل المشاركة
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+لنقم بإنشاء عنوان URL في `urls.py` من اجل `post_detail` *view*!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+نريد عرض تفاصيل المشاركة الأولى على هذا العنوان **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+دعونا ننشئ عنوان URL في ملف `blog/urls.py` لتوجيه دجانغو إلى *view* باسم `post_detail`,، سيتم عرض إحدى المشاركات بأكملها. أضف السطر `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` إلى الملف `blog/urls.py`. الآن يجب أن يبدو الملف الخاص بك مثل هذا:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -66,27 +66,27 @@ urlpatterns = [
 ]
 ```
 
-This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
+هذا الجزء `^post/(?P<pk>\d+)/$` يبدو مخيفا، ولكن لا تقلق – سوف نشرح لك:
 
-- it starts with `^` again – "the beginning".
-- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
-- `(?P<pk>\d+)` – this part is trickier. It means that Django will take everything that you place here and transfer it to a view as a variable called `pk`. (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` means that there needs to be one or more digits there. So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
-- `/` – then we need a **/** again.
-- `$` – "the end"!
+- أنه يبدأ ب `^` مرة أخرى – "البداية".
+- `post/` يعني فقط أنه بعد البداية، يجب أن يحتوي عنوان URL على كلمة **post** و **/**. حتى الان جيد جدا.
+- `(?P<pk>\d+)` -هذا الجزء أصعب. وهذا يعني أن جانغو سوف تأخذ كل ما تضعه هنا وتنقله إلى عرض كمتغير يسمى `pk`. (لاحظ أن هذا يطابق الاسم الذي قدمناه لمتغير المفتاح الأساسي مرة أخرى في `blog/templates/blog/post_list.html`!) `\d` يخبرنا أيضا أنه يمكن أن يكون فقط رقم، وليس حرف ( كل شيء بين 0 و 9). `+` يعني أن هناك حاجة إلى رقم واحد أو أكثر هناك. شيء مثل `http://127.0.0.1:8000/post//` غير صالح، ولكن `http://127.0.0.1:8000/post/1234567890/` هو جيد تماما!
+- `/` – وبعدها نحتاج **/** مرة اخرى.
+- `$` – "نهاية"!
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+هذا يعني إذا قمت بإدخال `http://127.0.0.1:8000/post/5/` في المتصفح، جانغو ستفهم انك تبحث عن *view* تسمى `post_detail` ونقل معلومة أن `pk` تساوي `5` إلى ذالك *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+حسنا، لقد أضفنا نمط عنوان URL جديد إلى `blog/urls.py`! دعونا نقم بتحديث الصفحة http://127.0.0.1:8000/ بوم! توقف الخادم عن العمل مرة أخرى. ألقي نظرة على وحدة التحكم – كما هو متوقع، هناك خطأ آخر!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+هل تذكر ما الخطوة التالية؟ بطبيعة الحال: إضافة طريقة عرض!
 
-## Add a post's detail view
+## إضافة مشاركة لعرض التفاصيل
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+هذه المرة لدينا *view* تعطي معلمة إضافية، `pk`. *view* تحتاج الى القبض عليه ، اليس كذالك؟ لذا فإننا سوف نحدد وظيفتنا ك `def post_detail(request, pk):`. لاحظ أننا بحاجة إلى استخدام نفس الاسم بالضبط الذي حددناه في عناوين urls (`pk`). حذف هذا المتغير غير صحيح وسوف ينتج خطأ!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+الآن، نريد الحصول على مشاركة مدونة واحدة فقط. لإجراء ذلك، يمكننا استخدام مجموعة طلبات بحث، كما يلي:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -94,21 +94,21 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+ولكن توجد مشكلة في التعليمات البرمجية هذه. إذا لم يكن هناك `Post` بعينها `primary key` (`pk`) سيكون لدينا خطأ سوبر قبيح!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![خطأ DoesNotExist](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+نحن لا نريد ذلك! ولكن، بطبيعة الحال، جانغو تأتي بشيء أنها ستعالج ذلك لنا:: `get_object_or_404`. في حالة عدم وجود `Post` مع `pk`,، سيعرض صفحة أجمل بكثير، صفحة `Page Not Found 404`.
 
-![Page not found](images/404_2.png)
+![الصفحة غير موجودة](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+والخبر السار هو أنه يمكنك فعلا إنشاء صفحة `Page not found` الخاصة بك وجعلها جميلة كما تريد. لكنها ليست مهمة الأن ، لذالك سوف نتخطاها.
 
-OK, time to add a *view* to our `views.py` file!
+طيب، حان الوقت لإضافة *view* لملف `views.py` لدينا!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+في `blog/urls.py` أنشأنا قاعدة عنوانURL اسمها `post_detail` تشير إلى ملف شخصي يسمى `views.post_detail`. وهذا يعني أن جانغو تتوقع عرض دالة تسمى `post_detail` داخل `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+ينبغي أن نفتح `blog/views.py` وإضافة التعليمة البرمجية التالية بالقرب `from` من الخطوط الأخرى:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+وفي نهاية الملف سوف نقوم بإضافة *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+نعم. لقد حان الوقت لتحديث الصفحة: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![عرض قائمة المشاركات](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+إنه كان مجديًا! ولكن ماذا يحدث عندما تقوم بالنقر فوق رابط في عنوان احدى المشاركات على المدونة؟
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![خطأ TemplateDoesNotExist](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+أوه لا! خطأ آخر! ولكن نحن نعلم بالفعل كيفية التعامل معه، اليس كذالك؟ نحن بحاجة لإضافة قالب!
 
-## Create a template for the post details
+## إنشاء قالب لتفاصيل المشاركة
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+سننشئ ملفا في `blog/templates/blog` يسمى `post_detail.html`.
 
-It will look like this:
+ستبدو كالشكل التالي:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -148,31 +148,31 @@ It will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+مرة أخرى نحن نوسع `base.html`. في الكتلة `content` نريد عرض تاريخ نشر المشاركة (إذا كان موجودا) والعنوان والنص. ولكن يجب أن نناقش بعض الأمور الهامة، اليس كذالك؟
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+إذا... {% raw %} `{%... %} ... {% endif %}` هو علامة قالب يمكن أن نستخدمها عندما نريد أن تحقق شيئا. (تذكر `إذا... ايضا. ` من فصل **Introduction to Python** ؟) في هذا السيناريو، نريد التحقق مما إذا كان `published_date` غير فارغ. {% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+حسنا، يمكننا تحديث الصفحة ومعرفة ما إذا كان `TemplateDoesNotExist` قد انتهى الآن.
 
-![Post detail page](images/post_detail2.png)
+![صفحة تفاصيل المشاركة](images/post_detail2.png)
 
-Yay! It works!
+ياي! إنه يعمل!
 
-## One more thing: deploy time!
+## شيء اخر: أنشر الوقت!
 
-It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
+سيكون من الجيد معرفة ما إذا كان موقع الويب الخاص بك لا يزال يعمل على PythonAnywhere، أليس كذلك؟ دعونا نحاول النشر مرة أخرى.
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website will still be working on PythonAnywhere, rig
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+وبعد ذلك، في وحدة [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,6 +192,6 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
-And that should be it! Congrats :)
+هذا ينبغي ان يكون كل شيء! مبروك:)
