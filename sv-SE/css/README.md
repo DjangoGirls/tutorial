@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS - gör det tjusigt!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Vår blogg är fortfarande ganska ful, eller hur? Dags att göra den snygg! Vi kommer använda CSS för det.
 
-## What is CSS?
+## Vad är CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) är ett språk som används för att beskriva utseende och format av en webbsida skriven i ett märkspråk (som HTML). Tänk dig sminkning för vår webbsida. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Men vi vill inte börja helt från början, eller hur? Än en gång använder vi något som programmerare gjort tillgängligt på Internet, helt gratis. Att återuppfinna hjulet är ju inte så roligt.
 
-## Let's use Bootstrap!
+## Låt oss använda Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap är ett av de mest populära HTML- och CSS-ramverken för att bygga snygga webbsidor: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Det skapades av programmerare som arbetade på Twitter och utvecklas nu av frivilliga från hela världen!
 
-## Install Bootstrap
+## Installera Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+För att installera Bootstrap, måste du lägga till detta till din `<head>` i din `.html`-fil:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,21 +25,21 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Detta lägger inte till några filer i ditt projekt. Det bara pekar på filer som finns på Internet. Öppna nu webbsidan och ladda om den. Här är den!
 
-![Figure 14.1](images/bootstrap1.png)
+![Figur 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Det ser redan bättre ut!
 
-## Static files in Django
+## Statiska filer i Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Vi ska äntligen ta en närmare titt på dessa saker vi kallat **statiska filer**. Statiska filer är alla dina CSS- och bildfiler. Deras innehåll beror inte på klientens förfrågan och kommer att vara lika för alla användare.
 
-### Where to put static files for Django
+### Var ska vi lägga statiska filer för Django?
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django vet redan var den ska hitta statiska filer för den inbyggda "admin"-appen. Nu behöver vi bara lägga till några statiska filer för vår egen app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Vi gör det genom att skapa en mapp kallad `static` i vår blogg-app:
 
     djangogirls
     ├── blog
@@ -49,11 +49,11 @@ We do that by creating a folder called `static` inside the blog app:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django kommer automatiskt hitta alla mappar kallade "static" i någon av dina app-mappar, och kommer kunna använda dess innehåll som statiska filer.
 
-## Your first CSS file!
+## Din första CSS-fil!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Nu ska vi skapa en CSS-fil, för att lägga till din egen stil till din webbsida. Skapa en ny mapp kallad `css` i din `static`-mapp. Skapa sen en ny fil som du kallar `blog.css` inne i `css`-mappen. Redo?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Dags att skriva lite CSS! Öppna upp filen `blog/static/css/blog.css` i din kod-editor.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Men låt oss ändra åtminstone lite grann. Vi kanske kan ändra färgen på rubriken? För att förstå färger använder datorer speciella koder. De börjar med `#` följt av 6 bokstäver (A-F) och siffror (0-9). Till exempel är koden för blå `#0000FF`. Du kan hitta exempel på färgkoder här: http://www.colorpicker.com/. Du kan också använda [fördefinierade färger](http://www.w3schools.com/colors/colors_names.asp), som `red` och `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Lägg till följande i filen `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,17 +78,17 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` är en CSS Selector. Detta innebär att vi tillämpar våra stilar till alla `a`-element inne i ett `h1`-element. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#FCA205`, vilket är orange. Du kan såklart välja din egen färg här!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. Till exempel, följande tagg kan identifieras i CSS genom dess elementnamn `a`, dess class-attribut `external_link` eller genom dess id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Du kan läsa mer om [CSS Selektorer hos w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+Vi behöver också berätta för vår HTML-mall att vi har lagt till lite CSS. Öppna filen `blog/templates/blog/post_list.html` och lägg till denna rad i början av den:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Vi laddar bara in statiska filer här. :) Mellan `<head>` och `</head>` taggarna, efter länkarna till Bootstraps CSS-filer, lägg till följande rad:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Webbläsaren läser filerna i den ordning som de anges, så vi behöver se till att dessa är på rätt plats. Annars kanske koden i vår fil skrivs över av kod i Bootstrap-filerna. Vi berättade just för vår mall var CSS-filen finns.
 
-Your file should now look like this:
+Filen ska nu se ut såhär:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+OK, spara filen och ladda om sidan!
 
-![Figure 14.2](images/color2.png)
+![Figur 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Bra jobbat! Kanske skulle vi också vilja ge vår webbsida lite mer luft och öka marginalen på vänstersidan? Låt oss prova!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Lägg till detta i CSS-filen, spara filen och se hur det ändras!
 
-![Figure 14.3](images/margin2.png)
+![Figur 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Vi kanske kan anpassa typsnittet i rubriken? Kopiera detta till `<head>` i filen `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +161,9 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Som tidigare, kontrollera ordningen och placera den nya länken ovanför `blog/static/css/blog.css`. Denna rad kommer att importera ett teckensnitt kallat *Lobster* från Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Hitta deklarationsblocket till `h1 a` (koden mellan klammerparenteserna `{` och `}`) i CSS-filen `blog/static/css/blog.css`. Lägga nu till raden `font-family: 'Lobster';` mellan klammerparenteserna och uppdatera sidan:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Figur 14.3](images/font.png)
 
-Great!
+Toppen!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Som tidigare nämnt har CSS ett koncept av klasser. Dessa tillåter dig att namnge en del av HTML-koden och använda formatmallar till enbart denna del, utan att det påverkar andra delar. Detta kan vara väldigt användbart! Kanske har du två div-taggar som gör något specifikt (som din rubrik och ditt inlägg). En klass kan hjälpa dig att få dem att se annorlunda ut.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Nu kan vi börja namnge delar av vår HTML. Lägg till en klass `page-header` till den `div` som innehåller din header, såhär:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+Och lägg till klassen `post` till den `div` som innehåller en blogg-post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer som börjar med `.` avser klasser. Det finns mängder av bra guider och förklaringar om CSS på webben som kan hjälpa dig förstå följande kod. Men för stunden, kopiera den bara till filen `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Sen omger vi HTML-koden som visar inlägg med deklarationer av klasser. Ersätt detta:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+i filen `blog/templates/blog/post_list.html` med detta:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Spara filerna och ladda om sidan.
 
-![Figure 14.4](images/final.png)
+![Figur 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Hurra! Ser snyggt ut, eller hur? Titta på den kod som vi just klistrade in och hitta de platser där vi lagt till klasser i HTML och som vi använde i CSS-filen. Var skulle du göra ändringen om du vill att datumet ska vara turkos?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Var inte rädd för att experimentera med CSS och ändra utseendet på saker. Att leka runt med CSS kan hjälpa dig att förstå vad de olika sakerna gör. Om du har sönder något, ingen fara - du kan alltid ångra ändringarna!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+Vi rekommenderar starkt denna gratis online-kurs: [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Den kan lära dig allt om hur du gör dina webbplatser snyggare med CSS.
 
-Ready for the next chapter?! :)
+Redo för nästa kapitel?! :)
