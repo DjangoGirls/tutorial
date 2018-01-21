@@ -1,8 +1,8 @@
 # Django ORM and QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+În acest capitol veţi învăţa cum Django se conectează la baza de date şi stochează informație în ea. Haideti sa începem!
 
-## What is a QuerySet?
+## Ce este un QuerySet?
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
