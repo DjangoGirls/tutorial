@@ -1,14 +1,14 @@
 # Django views – time to create!
 
-Time to get rid of the bug we created in the last chapter! :)
+是時候來排除我們在上一章節中造成的錯誤 (bug) 了! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* 是我們放應用程式的 "邏輯" 的地方。 它將要求你之前建立的 `模型(model)` 提供資訊，並將它傳遞給 `範本(template)`。 在下一章，我們將建立一個範本。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Views 都放在 `views.py` 檔中，我們將會新增我們 *views* 到 `blog/views.py` 檔。
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+OK，讓我們打開這個檔，看看裡面有什麼？
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -35,10 +35,10 @@ As you can see, we created a function (`def`) called `post_list` that takes `req
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Another error! Read what's going on now:
+另一個錯誤！讀看看現在發生什麼：
 
-![Error](images/error.png)
+![錯誤 (Error)](images/error.png)
 
 This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> 想了解更多有關於 Django views，可查看官方文件：https://docs.djangoproject.com/en/1.11/topics/http/views/
