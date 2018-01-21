@@ -1,13 +1,13 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+Git adalah "sistem kawalan versi" yang digunakan oleh banyak pengaturcara. Perisian ini boleh menjejaki perubahan pada fail dari semasa ke semasa supaya anda boleh mengimbas kembali versi tertentu kemudian. Sedikit seperti ciri "perubahan trek" dalam Microsoft Word, tetapi lebih berkuasa.
 
-## Installing Git
+## Memasang Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Anda boleh memuat turun Git dari [git-scm.com](https://git-scm.com/). Anda boleh memukul "seterusnya" pada semua langkah kecuali satu; dalam langkah kelima yang bertajuk "Menyesuaikan persekitaran PATH anda", pilih "Gunakan Git dan alat Unix opsional dari Windows Command Prompt" (pilihan bawah). Selain itu, yang tertera adalah baik. Cuba lihat gaya-Windows, cara pengakhiran gaya-Unix adalah baik.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Jangan lupa untuk memulakan semula command prompt atau powerhell selepas pemasangan selesai dengan jayanya. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
