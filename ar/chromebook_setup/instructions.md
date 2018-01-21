@@ -1,30 +1,30 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+يمكنك [تخطي هذا القسم ](http://tutorial.djangogirls.org/en/installation/#install-python) إذا كنت لا تستخدم كروم بوك. إذا كنت كذالك، تجربة التثبيت الخاص بك سوف تكون مختلفة قليلاً. يمكنك تجاهل بقية إرشادات التثبيت.
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 هو أداة توفر لك محرر للشفرة البرمجية والوصول إلى جهاز كمبيوتر يعمل على شبكة الإنترنت حيث يمكنك تثبيت، وكتابة، وتشغيل البرامج. خلال مدة البرنامج التعليمي، Cloud 9 سيكون بمثابة *الجهاز المحلي* الخاص بك. ستظل تشغل الأوامر في واجهة التيرمينال تماما مثل زملائك على أوس X، أوبونتو، أو ويندوز، ولكن سيتم توصيل التيرمينال بجهاز كمبيوتر قيد التشغيل في مكان آخر سينشئه لك Cloud 9.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. تثبيت 9 Cloud من [مخزن ويب الكروم ](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. اذهب إلى [c9.io](https://c9.io)
+3. سجل حساب
+4. انقر *إنشاء مساحة عمل جديدة*
+5. سمه *django-girls*
+6. حدد *Blank* (الثاني من اليمين في الصف السفلي مع الشعار البرتقالي)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+الآن سترى واجهة مع الشريط جانبي ونافذة رئيسية كبيرة مع بعض النصوص، ونافذة صغيرة في الجزء السفلي التي تبدو كالتالي:
 
 {% filename %}Cloud 9{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+هذه المنطقة السفلية هي *الطرفية*، الخاصة بك التي ستحصل فيها علي Cloud 9 مستعدا بتوجيهاتك. يمكنك تغيير حجم هذه النافذة لجعلها أكبر قليلاً.
 
-### Virtual Environment
+### البيئة الافتراضية
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+بيئة افتراضية (وتسمى أيضا فيرتوالينف) هو مثل مربع خاص يمكننا ملئه بأشياء مفيدة مثل اكواد البرمجة من اجل مشروع نعمل عليه. نستخدم البيئة الإفتراضية للحفاض على مجموعة من اكواد البرمجة من مشروع ما ، حتى لا تختلط مع مشاريع اخرى.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+في التيرمينال في الجزء السفلي من واجهة Cloud 9، قم بتشغيل ما يلي:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+اذا لم يعمل معك هذا، اسأل المدرب الخاص بك للحصول على بعض المساعدة.
 
-Next, run:
+وبعد ذلك، قم بتشغيل:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +45,16 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(لاحظ أنه على السطر الأخير نستخدم تيلد تليها علامة متساوية:~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+إنشاء حساب </a>Github.</p> 
 
-### PythonAnywhere
+### بايثون في كل مكان
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+يتضمن برنامج جانغو لتعليم الفتيات قسما حول ما يسمى النشر، وهي عملية أخذ الكود البرمجي الذي يشغل تطبيق الويب ونقلها إلى جهاز كمبيوتر يمكن الوصول إليه بشكل عام (يسمى الخادم) حتى يتمكن غيرك من للناس من أن يرو عملك.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+هذا الجزء غريب بعض الشيء عند تنفيذ البرنامج التعليمي على جهاز كروم بوك بما أننا نستخدم جهاز كمبيوتر موجود على الإنترنت (على سبيل المثال، جهاز كمبيوتر محمول). ومع ذلك، فإنه لا يزال مفيدا، كما يمكننا أن نفكر في Cloud 9 كمساحة عملنا أو جاري العمل او بايثون في كل مكان كمكان لإضهار اشيائنا كلما اصبحت افضل.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+وبالتالي، قم بالتسجيل لحساب "بيثون في أي مكان" جديد في [www.pythonanywhere.com](https://www.pythonanywhere.com).
