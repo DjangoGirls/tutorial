@@ -6,9 +6,9 @@ This is because we cover these things in the whole tutorial anyway, and this is 
 
 If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
-Good luck!
+グッドラック！
 
-# Installation
+# インストール
 
 In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
@@ -17,27 +17,27 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Install Python
+# Pythonのインストール
 
 {% include "/python_installation/instructions.md" %}
 
-# Set up virtualenv and install Django
+# virtualenvのセットアップとDjangoのインストール
 
 {% include "/django_installation/instructions.md" %}
 
-# Install a code editor
+# コードエディタのインストール
 
 {% include "/code_editor/instructions.md" %}
 
-# Install Git
+# Gitのインストール
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# GitHubのアカウント作成
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+[GitHub.com](https://www.github.com)にアクセスし、Sign upを押して無料の新規アカウントを作成してください。
 
-# Create a PythonAnywhere account
+# PythonAnywhereのアカウント作成
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
@@ -51,7 +51,7 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Introduction to Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [ジャンゴってなに？](../django/README.md)
 
 # Enjoy the workshop!
 
