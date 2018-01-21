@@ -1,4 +1,4 @@
-# Code editor
+# Kodas redaktorius
 
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
