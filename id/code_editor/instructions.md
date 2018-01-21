@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Ada banyak teks editor yang tersedia dan kita dapat memilih salah satu yang kita suka. Sebagian besar programmer Python menggunakan IDE (Integrated Development Environment) yang rumit namun memiliki banyak fitur, seperti PyCharm. Aplikasi seperti PyCharm menurut kami kurang sesuai untuk digunakan oleh pemula. Oleh sebab itu kami menyarankan aplikasi yang lebih sederhana namun memiliki fitur tak kalah lengkap.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Saran kami ada di bawah, tapi jangan ragu untuk bertanya pada pelatih apa preferensi mereka - akan lebih mudah mendapatkan bantuan dari mereka.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit adalah sebuah aplikasi teks editor yang open-source, gratis, dan tersedia untuk semua sistem operasi.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Download disini](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[Download disini](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[Download disini](https://atom.io/)
 
-## Why are we installing a code editor?
+## Mengapa Kita Perlu Memasang Aplikasi Teks Editor?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Pembaca mungkin bertanya-tanya mengapa kita perlu memasang aplikasi teks editor dan tidak menggunakan editor biasa seperti Word atau Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Alasan pertama adalah kode itu harus ** teks biasa </ 0> , dan masalah dengan program seperti Word dan Textedit adalah bahwa mereka sebenarnya tidak menghasilkan teks biasa, mereka menghasilkan teks kaya (dengan font dan format) menggunakan format kustom seperti  RTF (Rich Text Format) </ 1> .</p> 
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Alasan kedua adalah bahwa editor kode khusus untuk mengedit kode, sehingga bisa memberikan fitur bermanfaat seperti menyoroti kode dengan warna sesuai maknanya, atau secara otomatis menutup tanda kutip untuk Anda.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Kita akan melihat semua ini dalam tindakan nanti. Segera, Anda akan memikirkan editor kode lama terpercaya Anda sebagai salah satu alat favorit Anda. :)
