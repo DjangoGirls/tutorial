@@ -1,16 +1,16 @@
-# Your first Django project!
+# Votre premier projet Django !
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Une partie de ce chapitre s’inspire du tutoriel des Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Le tutoriel django-marcador a été créé par Markus Zapke-Gründemann et al.
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+La première étape consiste à démarrer un nouveau projet Django. En gros, cela veut dire que nous allons lancer quelques scripts fournis par Django qui vont créer un squelette de projet Django. Il s'agit de fichiers et de dossiers que nous utiliserons par la suite.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Il y existe certains fichiers et dossiers dont les noms sont extrêmement importants pour Django. Il ne faut pas renommer les fichiers que nous sommes sur le point de créer. Ce n'est pas non plus une bonne idée de les déplacer. Django a besoin de maintenir une certaine structure pour retrouver les éléments importants.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> N'oubliez pas de tout exécuter dans votre virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. Nous vous avons expliqué comment faire ça dans le chapitre **Installation de Django**, dans la partie **Travailler avec virtualenv**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -42,7 +42,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` est un script qui crée les dossiers et fichiers nécessaires pour vous. Vous devriez maintenant avoir une structure de dossier qui ressemble à celle-ci:
 
     djangogirls
     ├───manage.py
@@ -57,19 +57,19 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-The `settings.py` file contains the configuration of your website.
+Le fichier `settings.py` contient la configuration de votre site web.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Vous vous souvenez de l'histoire du postier qui livre des lettres ? `urls.py` contient une liste de patterns d'urls utilisés par `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y toucher. La seule chose à retenir est qu'il ne faut pas les supprimer par accident !
 
-## Changing settings
+## Changer la configuration
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Apportons quelques changements à `mysite/settings.py`. Ouvrez le fichier avec l'éditeur de code que vous avez installé tout à l'heure.
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Ça serait sympa d'avoir l'heure correcte sur notre site Web. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
@@ -112,9 +112,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Set up a database
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Il existe tout un tas de systèmes de gestion de bases de données qu'il est possible d'utiliser pour stocker les données de votre site. Nous allons va utiliser celui par défaut : `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Il est déjà configuré dans cette partie de votre fichier `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Pour créer la base de donnée de notre blog, il faut lancer la commande suivante dans la console : `python manage.py migrate` (vous avez besoin d'être dans le dossier `djangogirls` qui contient le fichier `manage.py`). Si tout se passe bien, vous devriez voir quelque chose comme ça:
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,11 +150,11 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Et voilà ! Il ne reste plus qu'à lancer le serveur et voir si notre site web fonctionne !
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Pour cela, vous avez besoin d'être dans le dossier qui contient le fichier `manage.py` (le dossier `djangogirls`). Dans votre console, vous pouvez lancer le serveur en tapant `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -168,7 +168,7 @@ If you are on a Chromebook, use this command instead:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Si vous utilisez Windows et que vous obtenez l'erreur `UnicodeDecodeError`, tapez plutôt cette commande :
 
 {% filename %}command-line{% endfilename %}
 
@@ -189,9 +189,9 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Bravo ! Vous venez de créer votre premier site web, et de le lancer avec un serveur web ! C'est génial, non?
 
-![It worked!](images/it_worked2.png)
+![Ça a marché!](images/it_worked2.png)
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
@@ -199,4 +199,4 @@ While the web server is running, you won't see a new command-line prompt to ente
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+Prête pour la suite ? Il est temps de créer du contenu!
