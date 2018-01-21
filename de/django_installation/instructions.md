@@ -20,7 +20,7 @@ In diesem Tutorial erstellen wir darin ein neues Verzeichnis `djangogirls`:
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Wir nennen die virtuelle Umgebung `myvenv`. Das Kommando dazu lautet dann:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Where `myvenv` is the name of your `virtualenv`. Du kannst auch andere Namen benutzen. Aber denk daran: nur Kleinbuchstaben, keine Leerzeichen, Akzente oder andere Sonderzeichen. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -51,9 +51,9 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Andere Namen sind natürlich möglich. Bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **Hinweis:** Bei manchen Versionen von Debian/Unbuntu kann folgender Fehler auftauchen:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -74,7 +74,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Das zu umgehen, kannst du den `virtualenv`-Befehl verwenden.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -100,12 +100,12 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 ## Mit der virtuellen Umgebung arbeiten
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Die obigen Kommandos erstellen ein Verzeichnis `myvenv` (bzw. den von Dir vergebenen Namen). Es enthält unsere virtuelle Arbeitsumgebung (im Wesentlichen ein paar Verzeichnisse und Dateien).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Starte deine virtuelle Umgebung, indem du eingibst:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,16 +126,16 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Starte deine virtuelle Umgebung, indem du eingibst:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` übereinstimmen!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **Anmerkung:** Manchmal ist das Kommando `source` nicht verfügbar. In diesen Fällen geht es auch so:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -146,9 +146,9 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+In Deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `python` verwendet. Du kannst also `python` statt `python3` eingeben.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
 ## Django Installation
 
@@ -175,14 +175,14 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Erstelle ein neues virtualenv in einem neuen Verzeichnis, lösche danach das alte und wiederhohle den oben genannten Befehl. (Das Verzeichnis des virtualenv zu verschieben funktioniert dabei nicht da virtualenv absolute Pfade verwendet.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Es kann sein das deine Befehlszeile einfriert wenn du versuchst Django zu installieren. Sollte das passieren nutze folgenden Befehl anstelle des oben angegebenen:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -194,8 +194,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Für pip mit Ubuntu 12.04 kann es zu folgendem Fehler kommen. Ruf dann `python -m pip install -U --force-reinstall pip` auf, um die Installation von pip im virtualenv zu reparieren.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Das war's! Du bist nun (endlich) bereit, deine erste Django Anwendung zu starten!
