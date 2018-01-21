@@ -1,12 +1,12 @@
-# Template extending
+# Rozširovanie šablón
 
 Ďalšia super možnosť, ktorú ti Django ponúka je **rozširovanie šablón**. Znamená to, že môžeš použiť rovnaké časti HTML kódu na rôznych stránkach svojho webu.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Šablóny ti pomôžu, keď chceš použiť rovnaké informácie alebo zobrazenie na viac ako jednom mieste. Nemusíš dokola opakovať to isté. A ak chceš niečo zmeniť, nemusíš to urobiť v každej šablóne, len v jednej!
 
-## Create a base template
+## Vytvorenie základnej šablóny
 
-A base template is the most basic template that you extend on every page of your website.
+Základná šablóna je najzákladnejšia šablóna, ktorú rozširuješ na každej stránke svojej web stránky.
 
 Vytvorme súbor `base.html` v `blog/templates/blog/`:
 
@@ -75,7 +75,7 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Možno si si všimla, že toto nahradilo všetko od `{% for post in posts %}` po `{% endfor %}` s: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Hneď ti ukážeme, ako sa to robí.
+Ale prečo? Práve si vytvorila `block`! Použila si šablónový tag `{% block %}` aby si vytvoila časť, do ktorej bude vložené HTML. To HTML bude pochádzať z inej šablóny, ktorá rozšíri túto šablónu (`base.html`). Hneď ti ukážeme, ako sa to robí.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Teraz ulož `base.html` a znova otvor `blog/templates/blog/post_list.html`. {% raw %}Odstrániš všetko nad `{% for post in posts %}` a pod `{% endfor %}`. Keď skončíš, súbor bude vyzerať nasledovne:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Chceme toto použiť ako súčasť našej šablóny pre všetky bloky. Je čas pridať blokové tagy do tohto súboru!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Takto:{% endraw %}
+{% raw %}Blokový tag by sa mal zhodovať s tagom v `base.html` súbore. Taktiež by mal obsahovať celý kód, čo patrí do tvojích obsahových blokov. Aby si to urobila, vlož všetko medzi `{% block content %}` a `{% endblock %}`. Takto:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Ešte zostála len jediná vec. Potrebujeme prepojiť tieto dve šablóny. O tomto je rozširovanie šablón! Urobíme to pridaním extends tagu na začiatku súboru. Nasledovne:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -144,4 +144,4 @@ Only one thing left. We need to connect these two templates together. This is wh
 
 A je to! Skontroluj či tvoja web stránka funguje tak, ako má. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Ak sa ti zobrazí chyba `TemplateDoesNotExist`, to znamená, že neexistuje `blog/base.html` súbor a `runserver` beží v konzole. Skús ho zastaviť (stlačením Ctrl+C – Control a C tlačidiel spolu) a spusti ho znova pomocou príkazu `python manage.py runserver`.
