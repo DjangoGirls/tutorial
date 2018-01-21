@@ -1,4 +1,4 @@
-# Django installation
+# Django সংস্থাপন
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
