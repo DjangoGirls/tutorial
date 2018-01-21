@@ -1,31 +1,31 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Terdapat banyak penyunting yang berbeza dan kebanyakannya bergantung kepada pilihan peribadi. Kebanyakan pengaturcara Python menggunakan IDE (Integrated Development Environment) atau Persekitaran Pembangunan Bersepadu yang kompleks tetapi hebat, seperti PyCharm. Walau bagaimanapun, bagi seseorang yang baru mula belajar, ini mungkin kurang sesuai; oleh itu kami memberikan beberapa cadangan yang sama hebat tetapi lebih mudah.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Cadangan kami di bawah, tetapi berasa bebas untuk meminta jurulatih anda apa yang mereka suka - ia akan lebih mudah untuk mendapatkan bantuan daripada mereka.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit merupakan penyunting sumber terbuka yang percuma, disediakan untuk semua sistem operasi.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Muat turun di sini](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[Muat turun di sini](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
 
-[Download it here](https://atom.io/)
+[Muat turun di sini](https://atom.io/)
 
-## Why are we installing a code editor?
+## Mengapa kita memerlukan Penyunting Kod?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Anda mungkin tertanya-tanya mengapa kami memasang perisian Penyunting Kod khas ini, dan bukannya menggunakan perisian seperti Word atau Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Alasan kedua adalah bahawa editor kod khusus untuk kod penyuntingan, sehingga mereka dapat memberikan ciri-ciri berguna seperti menyoroti kod dengan warna mengikut maknanya, atau tanda kutip secara automatik untuk anda.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Kita akan lihat semua ini dalam tindakan kemudian. Tidak lama lagi, anda akan memikirkan editor kod lama anda yang dipercayai sebagai salah satu alat kegemaran anda. :)
