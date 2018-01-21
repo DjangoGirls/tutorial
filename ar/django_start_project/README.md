@@ -1,48 +1,48 @@
-# Your first Django project!
+# مشروعك الأول في دجانغو!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> هذا القسم يستند على دورة تعليمية من فتيات الجزر المهووسات (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> جزء من هذا القسم يستند [django-marcador tutorial](http://django-marcador.keimlink.de/) المرخص لها بمرخصة بموجب المشاع الإبداعي   إسناد-على غرار 4.0 الترخيص الدولي. البرنامج التعليمي django-marcador حقوق الطبع والنشر من قبل Markus Zapke-Gründemann وآخرون.
 
-We're going to create a small blog!
+سنقوم بإنشاء مدونة صغيرة!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+الخطوة الأولى هي إنشاء مشروع جانغو جديد. في الأساس، وهذا يعني أننا سوف نشغل بعض البرامج النصية التي تقدمها جانغو والتي من شأنها أن تخلق الهيكل العظمي لمشروع دجانغو بالنسبة لنا. هذه مجرد حفنة من الدلائل والملفات التي سوف نستخدمها في وقت لاحق.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+أسماء بعض الملفات والدلائل مهمة جداً لجانغو. يجب عدم إعادة تسمية الملفات التي نحن على وشك إنشائها. نقلهم إلى مكان مختلف ليست فكرة جيدة. جانغو تحتاج إلى الحفاظ على بنية معينة لتكون قادرة على العثور على أشياء مهمة.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> تذكر أن تقوم بتشغيل كل شيء في virtualenv. إذا كنت لا ترى بادئة `(myvenv)` في وحدة التحكم الخاصة بك، تحتاج إلى تنشيط virtualenv الخاص بك. قمنا بشرح طريقة فعل ذالك في **Django installation** في قسم **Working with virtualenv**. كتابة `myvenv\Scripts\activate` في وندوز ، او `source myvenv/bin/activate` في ماك ولينكس سيقوم لك بذالك.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+في وحدة التحكم الخاصة بك ماكنتوش أو لينكس، يجب أن تقوم بتشغيل الأمر التالي. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> الفاصلة `.` أمر بالغ الأهمية لأنه يخبر السكريبت لتثبيت دجانغو في الدليل الحالي الخاص بك (`.` الفاصلة هي إشارة قصيرة).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **ملاحظة** عند كتابة الأمر أعلاه، تذكر أن تكتب فقط الجزء الذي يبدأ ب `django-admin`. الجزء `(myvenv) ~/djangogirls$` الموضح هنا هو مجرد مثال من الموجه الذي سيدعو المدخلات الخاصة بك على سطر الأوامر الخاص بك.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+في وحدة التحكم الخاصة بوندوز، يجب أن تقوم بتشغيل الأمر التالي. **Don't forget to add the period (or dot) `.` at the end!**:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> الفاصلة `.` أمر بالغ الأهمية لأنه يخبر السكريبت لتثبيت دجانغو في الدليل الحالي الخاص بك (`.` الفاصلة هي إشارة قصيرة).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **ملاحظة** عند كتابة الأمر أعلاه، تذكر أن تكتب فقط الجزء الذي يبدأ ب `django-admin.py`. الجزء (myvenv) C:\Users\Name\djangogirls>` الموضح هنا هو مجرد مثال من الموجه الذي سيدعو المدخلات الخاصة بك على سطر الأوامر الخاص بك.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` هو البرنامج النصي الذي سينشئ الدلائل والملفات بالنسبة لك. يجب أن يكون لديك الآن هيكل دليل يشبه هذا:
 
     djangogirls
     ├───manage.py
@@ -53,25 +53,25 @@ On Windows you should run the following command. **(Don't forget to add the peri
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **ملاحظة** في بنية الدليل، سترى أيضا `venv` الذي أنشأناه من قبل.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` هو سكريبت يساعد في إدارة الموقع. مع أنه سوف نتمكن من (ضمن أمور أخرى) لبدء تشغيل خادم الويب على جهاز الكمبيوتر بدون تثبيت أي شيء آخر.
 
-The `settings.py` file contains the configuration of your website.
+يحتوي الملف `settings.py` على إعدادات موقعك.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+تذكر عندما تكلمنا عن ساعي البريد الذي يبحث اين يرمي الرسائل? `urls.py` ملف يحتوي على قائمة أنماط مستخدمة من قبل `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+دعونا نتجاهل الملفات الأخرى في الوقت الراهن فنحن لن نغييرها. الشيء الوحيد الذي يجب تذكره هو عدم حذفها عن طريق الصدفة!
 
-## Changing settings
+## تغيير الإعدادات
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+دعونا نجري بعض التغييرات في `mysite/settings.py`. قم بفتح الملف باستخدام محرر التعليمات البرمجية يالذي قمنا بتثبيته في وقت سابق.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**ملاحظة**: ضع في اعتبارك أن `settings.py` هو ملف عادي، مثل أي ملف آخر. يمكنك فتحه من داخل محرر التعليمات البرمجية، وذلك باستخدام "ملف > فتح" قائمة الإجراأت. سيؤدي هذا بك إلى الحصول على النافذة المعتادة التي يمكنك فيها الانتقال إلى ملف `settings.py` وتحديده. بدلا من ذلك، يمكنك فتح الملف عن طريق الانتقال إلى مجلد djangogirls على سطح المكتب الخاص بك والنقر بزر الماوس الأيمن عليه. ثم، حدد محرر التعليمات البرمجية الخاصة بك من القائمة. اختيار المحرر مهم كما قد يكون لديك برامج أخرى مثبتة يمكنها فتح الملف ولكن لن تسمح لك بتحريره.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+سيكون من الجميل أن يكون الوقت صحيح على موقعنا على الانترنت. اذهب الى [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) وانسخ الوقت في منطقتك الزمنية (TZ) (e.g. `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+في `settings.py`، أعثر على السطر الذي يحتوي على `TIME_ZONE` وعدله لاختيار المنطقة الزمنية الخاصة بك. على سبيل المثال:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -79,9 +79,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+كود لغة يتكون من لغة، مثل `en` للغة الإنكليزية أو `de` للالمانية، ورمز البلد، مثل `de` لألمانيا أو `ch` لسويسرا. سوف تحتاج إلى إضافة هذا إذا كنت تريد الأزرار الافتراضية والإخطارات من جانغو أن تكون بلغتك. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [جانغو يأتي مع الكثير من الترجمات ](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Change the language code by changing the following line:
+تغيير رمز اللغة عن طريق تغيير السطر التالي:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Change the language code by changing the following line:
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+سوف نحتاج أيضا إلى إضافة مسار للملفات الثابتة. ( سوف نعرف كل شيء عن الملفات الثابتة والمغلقة في وقت لاحق في البرنامج التعليمي). الانتقال إلى أسفل إلى *end* الملف، وتحت `STATIC_URL`، أضف وحدة جديدة تسمى `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+عندما يكون `DEBUG` هو `True` و `ALLOWED_HOSTS</ 0> فارغ، يتم التحقق من المضيف مع <code>['localhost', '127.0.0.1', '[::1]']`. هذا لن يطابق اسم المضيف لدينا على PythonAnywhere بمجرد نشر التطبيق لدينا لذلك سوف نقوم بتغيير الإعداد التالي:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,15 +106,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **ملاحظة**: إذا كنت تستخدم Chromebook، أضف هذا السطر في الجزء السفلي من الملف settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> اضف ايضا `.c9users.io` الى `ALLOWED_HOSTS` اذا كنت تستخدم cloud9
 
-## Set up a database
+## إعداد قاعدة البيانات
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+هناك الكثير من برامج قواعد البيانات المختلفة التي يمكنها تخزين البيانات لموقعك. سنستخدم الإعداد الافتراضي، `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+تم إعداد هذا بالفعل في هذا الجزء الخاص بك من الملف `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+لإنشاء قاعدة بيانات مدونتنا، دعونا تشغل الأمر التالي في وحدة التحكم: `python manage.py migrate`(نحن بحاجة إلى أن تكون في الدليل `djangogirls` الذي يحتوي على الملف `manage.py`. اذا مر كل شيء على ما يرام، سترى شيئا مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,53 +150,53 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+ها قد انتهينا! حان الوقت لتشغيل خادم الويب ومعرفة ما إذا كان موقعنا يعمل!
 
-## Starting the web server
+## بدء تشغيل خادم الويب
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+يجب أن تكون في الدليل الذي يحتوي على ملف `manage.py`(دليل `djangogirls`). في وحدة التحكم، يمكننا أن نبدأ خادم الويب بتشغيل `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+إذا كنت في كروم بوك، استخدم هذا الأمر بدلاً من ذلك:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+إذا كنت على ويندوز، و فشل هذا مع `UnicodeDecodeError`, ، استخدم هذا الأمر بدلاً من ذلك:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+الآن كل ما عليك القيام به هو الاختيار الذي يقوم بتشغيل موقع الويب الخاص بك. قم بفتح المتصفح (فايرفوكس، كروم، سفاري، إنترنت إكسبلورر أو مهما كنت تستخدم) وأدخل هذا العنوان:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+إذا كنت تستخدم Chromebook، عليك دائماً زيارة خادم الاختبار الخاص بك عن طريق الوصول إلى:
 
 {% filename %}browser{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+تهانينا! قمت بإنشاء موقعك الأول وتشغيله باستخدام خادم الويب! أليس هذا رائع؟
 
-![It worked!](images/it_worked2.png)
+![إنه كان مجديًا!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+بينما يتم تشغيل خادم الويب، لن تشاهد موجه سطر أوامر جديدة لإدخال أوامر إضافية. لوحة التحكم تقبل نصوص جديدة ولكن لن يتم تنفيذ الأوامر الجديدة. وهذا لأن خادم الويب يعمل بشكل مستمر للاستماع للطلبات الواردة.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> لقد استعرضنا كيف تعمل خادمات الويب في الفصل **How the Internet works**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+لكتابة أوامر إضافية أثناء تشغيل خادم الويب، افتح نافذة طرفية جديدة وقم بتنشيط virtualenv الخاص بك. لإيقاف خادم الويب، قم بالتبديل مرة أخرى إلى النافذة التي يتم تشغيلها واضغط على CTRL+C - مفاتيح التحكم و C معا (على ويندوز، قد تضطر إلى الضغط على Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+أنت مستعد للخطوة التالية؟ لقد حان الوقت لإنشاء بعض المحتوى!
