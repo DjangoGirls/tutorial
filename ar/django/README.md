@@ -1,27 +1,27 @@
-# What is Django?
+# ما هو جانغو؟
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+جانغو (/ˈdʒæŋɡoʊ/*جانغ-جوه*) إطار تطبيق ويب حر ومفتوح المصدر مكتوب بلغة بايثون. أطار العمل مكون من مجموعه من المكونات التى سوف تساعدك على تطوير المواقع بطريقة اسهل واسرع.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+عندما تقوم ببناء موقع على شبكة الإنترنت، تحتاج دائماً مجموعة مماثلة من المكونات: طريقة للتعامل مع مصادقة المستخدم (التسجيل، الدخول، والخروج)، وصفحة إدارية لموقع الويب الخاص بك، والاستمارات، وطريقة لتحميل الملفات، إلخ.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+لحسن الحظ لاحظ أشخاص آخرين منذ وقت طويل أن مطوري الويب تواجههم مشاكل مماثلة عند إنشاء موقع جديد، فتعاونوا في إنشاء أطارات عمل (جانغو واحد منهم) التي تعطيك مكونات جاهزة يمكنك استخدامها.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+اطارات العمل موجودة لتنقدكم من إعادة اختراع ما تم اختراعه من قبل، وتساعد في تخفيف بعض النفقات العامة عندما تقوم ببناء موقع جديد.
 
-## Why do you need a framework?
+## لماذا تحتاج إلى إطار عمل؟
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+لفهم ما هو جانغو في الواقع ، علينا أن نلقي نظرة فاحصة على الملقمات. أول شيء أن الملقم يحتاج إلى معرفة أن كنت تريد منه ان يعطيك صفحة انترنت.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+تخيل علبة بريد (ميناء) التي يتم ضبطها للرسائل الواردة (الطلبات). وهذا يتم عن طريق خادم ويب. خادم الويب يقوم بقراءة الرسالة وثم يرسل استجابة مع صفحة ويب. ولكن عندما تريد أن ترسل شيئا، فأنت بحاجة إلى بعض المحتوى. وجانغو هو الشيء الذي يساعدك في إنشاء المحتوى.
 
-## What happens when someone requests a website from your server?
+## ماذا يحدث عندما يطلب شخص ما موقع انترنت من خادمك؟
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+عندما يصل طلب إلى الخادم ، يتم تمريره لدجانغو ، والذي سيحاول ما الذي تم طلبه. إنه يأخذ عنوان صفحة ويب أولا ويحاول معرفة ما يجب القيام به. يتم هذا الجزء من قبل دجانغو ** urlresolver** (لاحظ أن عنوان موقع ويب يسمى URL - محدد مواقع الموارد - لذلك الاسم * urlresolver * منطقي). أنه ليس ذكية جدا - فإنه يأخذ قائمة من الأنماط ويحاول مطابقة عنوان URL. جانغو يتحقق من الأنماط من أعلى إلى أسفل، وإذا تم مطابقة شيء، يقوم جانغو بتمرير الطلب إلى الدالة المرتبطة بها (والتي تسمى *view*).
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+تخيل ناقل البريد مع رسالة. تتمشى في الشارع وتفحص جميع ارقام البيوت مع الرقم الموجود في الرسالة. اذا كان مطابقا ، تضع الرسالة هناك. هذه هي الطريقة التي يعمل urlresolver بها!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+في الدالة *view*، تتم جميع الأمور المثيرة للاهتمام: يمكننا أن ننظر إلى قاعدة بيانات للبحث عن بعض المعلومات. ربما طلب المستخدم بتغيير شيء ما في البيانات؟ مثلما تقول الرسالة: "يرجى تغيير وصف وظيفتي". يمكن ل * view* التحقق مما إذا كان مسموحا لك القيام بذلك، ثم تحديث الوصف الوظيفي لك وإرسال رسالة مرة أخرى: "تم!" ثم * view* يولد استجابة و جانغو يمكن أن يرسلها إلى متصفح الويب الخاص بالمستخدم.
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+بالطبع الوصف اعلاه مبسط كثيرا ، لكنك لست في حاجة لمعرفة كل المعلومات التقنية حاليا ، الحصول على فكرة عامة كافي.
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+لذلك بدلا من الغوص كثيرا في التفاصيل، نحن سوف نبدأ ببساطة بخلق شيء عبر جانغو وسوف نتعلم كل الأجزاء الهامة على طول الطريق!
