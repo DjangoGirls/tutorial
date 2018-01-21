@@ -1,71 +1,68 @@
-# Introduction to HTML
+# Pengantar ke HTML
 
-What's a template, you may ask?
+Apa itu template, mungkin kamu bertanya?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template adalah file yang dapat kita gunakan kembali untuk menyajikan informasi yang berbeda dalam format yang konsisten - misalnya, Anda dapat menggunakan template untuk membantu menulis surat, karena walaupun setiap huruf mungkin berisi pesan berbeda dan ditujukan kepada yang lain. orang, mereka akan berbagi format yang sama.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Format template-template Django dijelaskan dalam bahasa yang disebut HTML (itulah HTML yang kami sebutkan di bab pertama, ** Bagaimana Internet bekerja </ 0>).</p> 
 
-## What is HTML?
+## HTML adalah?
 
 HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML singkatan dari "HyperText Markup bahasa". ** HyperText </ 0> berarti itu adalah jenis teks yang mendukung sebuah link antar halaman. < Markup </ 0> berarti kita telah mengambil sebuah dokumen dan menandai dengan kode untuk mengatakan sesuatu (dalam hal ini, browser internet) bagaimana menafsirkan halaman. Kode HTML dibangun oleh ** tag </ 0>, masing-masing dimulai dengan ` & lt; </ 1> dan diakhiri dengan <code> & gt; </ 1>. Tag ini mewakili markup <strong> elemen </ 0> .</p>
 
-## Your first template!
+<h2>Template pertama kamu!</h2>
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+<p>Membuat template berarti membuat file template. Semuanya adalah sebuah file, bukan? Anda mungkin sudah menyadari hal ini.</p>
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+<p>Template tersimpan di direktori <code> blog / template / blog </ 0>. Jadi pertama menciptakan sebuah direktori yang disebut <code>template` di dalam direktori blog Anda. Kemudian dibuat direktori lain yang disebut `blog` di dalam direktori template Anda:</p> 
 
-    blog
+    blog 
     └───templates
-        └───blog
+     └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(Anda mungkin bertanya-tanya mengapa kita perlu dua direktori kedua disebut `blog`-seperti yang Anda akan menemukan nanti, ini adalah cukup berguna konvensi penamaan yang membuat hidup lebih mudah ketika keadaan mulai menjadi lebih rumit.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Dan sekarang membuat `post_list.html` file (Biarkan kosong untuk sekarang) didalam direktori `blog/template/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+Lihatlah bagaimana situs web terlihat sekarang: http://127.0.0.1:8000 /
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Jika Anda masih memiliki kesalahan `TemplateDoesNotExist`, mencoba untuk me-ulang server Anda. Pergi ke baris perintah, menghentikan server dengan menekan Ctrl + C (kontrol dan C kunci bersama-sama) dan mulai lagi dengan menjalankan perintah `python manage.py runserver`.
 
-![Figure 11.1](images/step1.png)
+![Gambar 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Tidak ada kesalahan lagi! Selamat :) Namun, situs Anda sebenarnya tidak menerbitkan apapun kecuali halaman kosong, karena template Anda juga kosong. Kita perlu memperbaikinya.
 
-Add the following to your template file:
+Tambahkan yang berikut ke file template Anda:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/static/css/list.html{% endfilename %}
 
 ```html
-<html>
-    <p>Hi there!</p>
-    <p>It works!</p>
-</html>
+<html><p>Hi sana!</p>     <p>Kerjanya!</p> </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Jadi bagaimana Apakah situs web Anda terlihat sekarang? Mengunjunginya untuk mengetahui: http://127.0.0.1:8000 /
 
-![Figure 11.2](images/step3.png)
+![Gambar 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Itu berhasil! Nice bekerja di sana :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* Tag paling dasar, `<html>`, selalu adalah awal dari setiap halaman web dan `</html>` selalu akhir. Seperti yang Anda lihat, seluruh isi website terjadi antara awal tag `<html>`dan tag penutup `</html>`
+* `<p>`adalah suatu tag untuk elemen ayat; `</p>` menutup setiap ayat
 
-## Head and body
+## Kepala dan tubuh
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Setiap halaman HTML juga dibagi menjadi dua elemen: **kepala** dan **tubuh**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **kepala** merupakan elemen yang berisi informasi tentang dokumen yang tidak ditampilkan di layar.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **tubuh** merupakan unsur yang berisi segala sesuatu yang lain yang ditampilkan sebagai bagian dari halaman web.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Kami menggunakan `<head>` untuk memberi tahu browser tentang konfigurasi halaman, dan `<body>` untuk memberitahukannya tentang apa yang sebenarnya ada di halaman.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Misalnya, Anda bisa memasukkan elemen judul halaman web ke dalam `<head>`, seperti ini:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -81,34 +78,34 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Simpan dan refresh halaman Anda.
 
-![Figure 11.3](images/step4.png)
+![Gambar 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Perhatikan bagaimana browser telah dipahami bahwa "Ola's blog" adalah judul halaman Anda? Ini telah ditafsirkan `<title>Ola's blog</title>` dan ditempatkan teks di bar judul browser Anda (ini juga akan digunakan untuk bookmark dan seterusnya).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Mungkin Anda juga memperhatikan bahwa setiap tag pembuka cocok dengan tag penutup * *, dengan ` / `, dan elemen itu * nested * (yaitu Anda dapat Tutup tag tertentu sampai semua yang ada di dalamnya sudah ditutup juga).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Ini seperti memasukkan barang ke dalam kotak. Anda memiliki satu kotak besar, `<html> </html>`; Di dalamnya ada `<body> </body>`, dan itu berisi kotak yang masih lebih kecil: `<p> </p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Customize your template
+## Sesuaikan template Anda
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Anda sekarang bisa bersenang-senang dan mencoba menyesuaikan template Anda! Berikut adalah beberapa tag yang berguna untuk itu:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
+* `<h1> Judul </h1>` untuk pos terpenting Anda
+* `<h2> Sub-judul </h2>` untuk judul di tingkat berikutnya
+* `<h3>Sub-sub-judul</h3>` ... dan seterusnya, sampai `<h6>`
+* `<p>Sebuah paragraf teks </p>`
+* `<em> teks</em>` menekankan teks Anda
+* `<strong>teks</strong>` sangat menekankan teks Anda
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<a href="https://djangogirls.org">link</a>` membuat sebuah link
+* `<ul> <li> item pertama </li> <li> item kedua </li> </ul>` membuat daftar, sama seperti yang ini!
+* `<div></div>` mendefinisikan bagian dari halaman
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Berikut adalah contoh template lengkap, copy dan paste ke `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -125,13 +122,13 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Aenean eu leo quam. Anak rok televisi sepak bola dan gas beracun. Donec id elit non mi porta gravida di eget Metus Sed congue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            <p>Aenean eu leo quam. Anak rok televisi sepak bola dan gas beracun. Donec id elit non mi porta gravida di eget Metus Sed congue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
@@ -142,21 +139,21 @@ We've created three `div` sections here.
 * The first `div` element contains the title of our blog – it's a heading and a link
 * Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
 
-It gives us this effect:
+Ini memberi kita efek ini:
 
-![Figure 11.4](images/step6.png)
+![Gambar 11.4](images/step6.png)
 
 Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Apa yang sebenarnya ingin kita lakukan adalah menampilkan posting nyata yang ditambahkan di admin Django kita - dan ke sanalah kita akan pergi berikutnya.
 
-## One more thing: deploy!
+## Satu hal lagi: menyebarkan!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Alangkah baiknya melihat semua ini dan tinggal di Internet kan? Mari kita lakukan PythonAnywhere lainnya :
 
-### Commit, and push your code up to Github
+### Komit, dan dorong kode Anda ke Github
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Pertama, mari kita lihat file apa yang telah berubah sejak terakhir kita digunakan (jalankan perintah ini secara lokal, bukan di PythonAnywhere ):
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,23 +176,23 @@ Before we upload all the files, let's check what `git` will be uploading (all th
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Kita sudah hampir sampai, sekarang saatnya untuk menceritakannya untuk menyimpan perubahan ini dalam sejarahnya. Kami akan memberikan "pesan komit" di mana kami menggambarkan apa yang telah kami ubah. Anda dapat mengetikkan apa pun yang Anda inginkan pada tahap ini, namun sangat membantu untuk mengetikkan sesuatu yang deskriptif sehingga Anda dapat mengingat apa yang telah Anda lakukan di masa mendatang.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Catatan** Pastikan Anda menggunakan tanda kutip ganda di sekitar pesan komit.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Setelah kami selesai melakukannya, kami mengupload (mendorong) perubahan kami ke GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Menarik kode baru ke PythonAnywhere, dan isi ulang aplikasi web Anda
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
@@ -210,4 +207,4 @@ And watch your code get downloaded. If you want to check that it's arrived, you 
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Pembaruan Anda seharusnya hidup! Silakan dan segarkan situs Anda di browser. Perubahan harus terlihat. :)
