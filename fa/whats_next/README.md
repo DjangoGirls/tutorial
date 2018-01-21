@@ -1,14 +1,14 @@
-# What's next?
+# گام بعدی چیست؟
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+از پسش بر اومدی! **ایول داری**. ما بهت افتخار می کنیم! <3
 
-### What to do now?
+### حالا چیکار کنم؟
 
-Take a break and relax. You have just done something really huge.
+یک نفس راحت بکش. همین حالا هم ی کار بزرک کردی.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### شما می تونید یک منبع دیگه معرفی کنید؟
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
