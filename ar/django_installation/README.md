@@ -1,7 +1,7 @@
-# Django installation
+# تركيب دجانغو
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [التركيب على كروم بوك](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
+> **ملاحضة** اذا كنت قد عملت على تعليمات التركيب من قبل ، يمكنك الإنتقال الى المستوى الأخر!
 
 {% include "/django_installation/instructions.md" %}
