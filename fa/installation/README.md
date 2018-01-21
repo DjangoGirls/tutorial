@@ -49,9 +49,9 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [آشنایی با پایتون](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [جنگو چیست؟](../django/README.md)
 
 # Enjoy the workshop!
 
