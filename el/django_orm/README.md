@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# Django ORM και QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Σε αυτό το κεφάλαιο θα μάθετε πως το Django συνδέεται στην βάση δεδομένων και αποθηκεύει δεδομένα μέσα της. Ας ξεκινήσουμε!
 
-## What is a QuerySet?
+## Τι είναι ένα QuerySet;
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Ένα QuerySet είναι, στην ουσία, μία λίστα αντικειμένων ενός δοθέν Μοντέλου. Τα QuerySets σας επιτρέπουν να διαβάσετε τα δεδομένα από την βάση δεδομένων, να τα φιλτράρετε και να τα ταξινομήσετε.
 
-It's easiest to learn by example. Let's try this, shall we?
+Είναι πιο εύκολο να μάθεις κάνοντας. Πάμε να δοκιμάσουμε;
 
-## Django shell
+## Παράθυρο εντολών Django
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Άνοιξε την τοπική σου κονσόλα (όχι στο PythonAnywhere) και πληκτρολόγησε αυτήν την εντολή:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Το αποτέλεσμα πρέπει να είναι σαν αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Είστε τώρα στην διαδραστική κονσόλα του Django. Είναι ακριβώς όπως το παράθυρο εντολών της Python, αλλά με μερική επιπρόσθετη μαγεία Django. :) Μπορείτε να χρησιμοποιήσετε όλες τις εντολές Python εδώ επίσης, φυσικά.
 
-### All objects
+### Όλα τα αντικείμενα
 
-Let's try to display all of our posts first. You can do that with the following command:
+Ας προσπαθήσουμε να εμφανίσουμε όλες τις δημοσιεύσεις του blog μας πρώτα. Μπορείς να το κάνεις με την ακόλουθη εντολή:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Ωχ! Εμφανίστηκε ένα λάθος, μας λέει ότι δεν υπάρχει καμία δημοσίευση. Είναι σωστό- ξεχάσαμε να το εισάγουμε πρώτα!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Εισάγουμε το μοντέλο `Post` from `blog.models`. Ας προσπαθήσουμε να εμφανίσουμε όλες τις αναρτήσεις ξανά:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Αυτή είναι μια λίστα των αναρτήσεων που δημιουργήσαμε νωρίτερα! Δημιουργήσαμε αυτές τις αναρτήσεις χρησιμοποιώντας το περιβάλλον διαχειριστή Django. Αλλά τώρα θέλουμε να δημιουργήσουμε νέες αναρτήσεις χρησιμοποιώντας την Python, οπότε πως το κάνουμε αυτό;
 
-### Create object
+### Δημιουργία αντικειμένου
 
-This is how you create a new Post object in database:
+Έτσι δημιουργείτε ένα νέο αντικείμενο Ανάρτηση στην βάση δεδομένων:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,9 +70,9 @@ This is how you create a new Post object in database:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Αλλά μας λείπει ένα συστατικό εδώ: `εγώ`. Χρειαζόμαστε να περάσουμε μία παρουσία του μοντέλου `Χρήστη` ως συγγραφέα. Πως το κάνουμε αυτό;
 
-Let's import User model first:
+Ας εισάγουμε το μοντέλο Χρήστη πρώτα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Τι χρήστες έχουμε στην βάση δεδομένων μας; Δοκιμάστε αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ What users do we have in our database? Try this:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+Αυτός είναι ο υπέρ-χρήστης που δημιουργήσαμε νωρίτερα! Ας λάβουμε μία παρουσία του χρήστη τώρα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Now we can finally create our post:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Hurray! Wanna check if it worked?
+Ζήτω! Θέλετε να ελέγξετε αν λειτούργησε;
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,13 +116,13 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Αυτό είναι, άλλη μια δημοσίευση στην λίστα!
 
-### Add more posts
+### Προσθέστε περισσότερες δημοσιεύσεις
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Τώρα μπορείτε να διασκεδάσετε λίγο και να προσθέσετε περισσότερες δημοσιεύσεις για να δείτε πως δουλεύει. Προσθέστε δυο-τρεις ακόμα και μετά προχωρήστε στο επόμενο μέρος.
 
-### Filter objects
+### Φιλτράρισμα αντικειμένων
 
 A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
@@ -181,7 +181,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ### Ordering objects
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Τα QuerySets επίσης σου επιτρέπουν να ταξινομήσεις την λίστα των αντικειμένων. Ας προσπαθήσουμε να τα ταξινομήσουμε με το πεδίο `ημερομηνία_δημιουργίας`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Μπορούμε επίσης να αντιστρέψουμε την ταξινόμηση προσθέτοντας `-` στην αρχή:
 
 {% filename %}command-line{% endfilename %}
 
@@ -199,16 +199,16 @@ We can also reverse the ordering by adding `-` at the beginning:
 [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
 ```
 
-### Chaining QuerySets
+### Αλυσιδωτά QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+Μπορείτε επίσης να συνδυάσετε QuerySets με το να τα **αλυσοδέσετε** μαζί:
 
     >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     
 
-This is really powerful and lets you write quite complex queries.
+Αυτό είναι πολύ ισχυρό και σας επιτρέπει να γράψετε αρκετά σύνθετα ερωτήματα.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Ωραία! Τώρα είστε έτοιμοι για το επόμενο μέρος! Για να κλείσετε το κέλυφος, πληκτρολογήστε αυτό:
 
 {% filename %}command-line{% endfilename %}
 
