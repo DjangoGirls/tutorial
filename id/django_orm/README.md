@@ -1,38 +1,38 @@
-# Django ORM and QuerySets
+# Django ORM dan QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Pada chapter kali ini, kamu akan belajar bagaimana Django terkoneksi dengan database dan menyimpan data tersebut didalamnya. Mari kita mulai!
 
-## What is a QuerySet?
+## Apa itu QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet pada dasarnya adalah daftar objek dari Model yang diberikan. QuerySets memungkinkan Anda untuk membaca data dari database, memfilter dan memesannya.
 
-It's easiest to learn by example. Let's try this, shall we?
+Ini paling mudah untuk belajar lewat contoh. Mari kita coba ini, gimana?
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Buka konsol lokal kamu (bukan di PythonAnywhere) dan ketik baris perintah ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Hasilnya akan seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
 (InteractiveConsole)
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Anda sekarang ada di konsol interaktif Django. Ini sama seperti prompt Python, tapi dengan beberapa tambahan Django magic. :) Anda bisa menggunakan semua perintah Python di sini juga, tentu saja.
 
-### All objects
+### Semua benda
 
-Let's try to display all of our posts first. You can do that with the following command:
+Mari kita coba tampilkan semua postingan kita dulu. Kamu bisa melakukan itu dengan perintah seperti ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
 >>> Post.objects.all()
@@ -41,9 +41,9 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Ups! Sebuah kesalahan muncul. Ini memberitahu kita bahwa tidak ada Post. Benar - kita lupa mengimpornya dulu!
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
 >>> from blog.models import Post
@@ -51,168 +51,153 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 
 We import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
+& gt; & gt; & gt; Post.objects.all ()
+ <QuerySet [<Post: my post title> , <Post: another post title> ] & gt;
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Ini adalah daftar posting yang kami buat tadi! Kami membuat posting ini menggunakan antarmuka admin Django. Tapi sekarang kita ingin membuat posting baru menggunakan Python, jadi bagaimana kita melakukannya?
 
-### Create object
+### Buat objek
 
-This is how you create a new Post object in database:
+Beginilah cara Anda membuat objek Post baru di database:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
+& gt; & gt; & gt; Post.objects.create (author = me, title = 'Contoh judul', teks = 'Uji')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Tapi kami punya satu unsur yang hilang di sini: ` saya </ 0> . Kita perlu melewatkan sebuah instance dari model <code> User </ 0> sebagai penulis. Bagaimana kita melakukannya?</p>
 
-Let's import User model first:
+<p>Mari impor model Pengguna terlebih dahulu:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
+
+<pre><code class="python">& gt; & gt; & gt; dari django.contrib.auth.models import User
+`</pre> 
+
+Pengguna apa yang ada di database kami? Coba ini:
+
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> from django.contrib.auth.models import User
+& gt; & gt; & gt; User.objects.all ()
+ <QuerySet [<User: ola> ] & gt;
 ```
 
-What users do we have in our database? Try this:
+Ini adalah superuser yang kita buat tadi! Mari dapatkan contoh pengguna sekarang:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> User.objects.all()
-<QuerySet [<User: ola>]>
+& gt; & gt; & gt; saya = User.objects.get (username = 'ola')
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+Seperti yang Anda lihat, sekarang kita ` mendapatkan </ 0> a <code> Pengguna </ 0> dengan <code> nama pengguna </ 0> yang sama dengan 'ola'. Rapi! Tentu saja, Anda harus menyesuaikan baris ini untuk menggunakan username Anda sendiri.</p>
 
-{% filename %}command-line{% endfilename %}
+<p>Sekarang kita akhirnya bisa membuat tulisan kita:</p>
+
+<p>{% filename%} baris perintah {% endfilename%}</p>
+
+<pre><code class="python">& gt; & gt; & gt; Post.objects.create (author = me, title = 'Contoh judul', teks = 'Uji')
+`</pre> 
+
+Hore! Ingin memeriksa apakah berhasil?
+
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> me = User.objects.get(username='ola')
+& gt; & gt; & gt; Post.objects.all ()
+ <QuerySet [<Post: my post title> , <Post: another post title> , <Post: Sample title> ] & gt;
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+Itu dia, satu lagi posting di daftar!
 
-Now we can finally create our post:
+### Tambahkan lebih banyak pos
 
-{% filename %}command-line{% endfilename %}
+Anda sekarang dapat bersenang-senang dan menambahkan lebih banyak pos untuk melihat cara kerjanya. Tambahkan dua atau tiga lagi dan kemudian lanjutkan ke bagian selanjutnya.
 
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
+### Filter objek
+
+Sebagian besar QuerySets adalah kemampuan untuk memfilternya. Katakanlah kita ingin menemukan semua tulisan yang pengguna ola tulis. Kita akan menggunakan ` filter </ 0> daripada <code> all </ 0> di <code> Post.objects.all () </ 0> . Dalam kurung kita menyatakan kondisi apa yang harus dipatok oleh posting blog agar bisa berakhir dalam queryset kita. Dalam kasus kami, kondisinya adalah bahwa <code> penulis </ 0> harus sama dengan <code> saya </ 0> . Cara untuk menuliskannya di Django adalah <code> author = me </ 0> . Sekarang potongan kode kita terlihat seperti ini:</p>
+
+<p>{% filename%} baris perintah {% endfilename%}</p>
+
+<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (penulis = saya) [ <Post: Sample title> , <Post: Post number 2> , <Post: My 3rd post!> , <Post: 4th title of post> ]
+`</pre> 
+
+Atau mungkin kita ingin melihat semua tulisan yang berisi kata 'title' di bidang ` title </ 0> ?</p>
+
+<p>{% filename%} baris perintah {% endfilename%}</p>
+
+<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (title__contains = 'title') [ <Post: Sample title> , <Post: 4th title of post> ]
+`</pre> 
+
+> ** Catatan </ 0> Ada dua karakter garis bawah ( ` _ </ 1> ) antara <code> judul </ 1> dan <code> berisi </ 1> . ORM Django menggunakan aturan ini untuk memisahkan nama field ("judul") dan operasi atau filter ("contains"). Jika Anda hanya menggunakan satu garis bawah, Anda akan mendapatkan pesan kesalahan seperti "FieldError: Tidak dapat menyelesaikan judul kata kunci_contains".</p>
+</blockquote>
+
+<p>Anda juga bisa mendapatkan daftar semua posting yang dipublikasikan. Kami melakukan ini dengan memfilter semua posting yang telah <code> publish_date </ 0> di sebelumnya:</p>
+
+<p>{% filename%} baris perintah {% endfilename%}</p>
+
+<pre><code class="python">& gt; & gt; & gt; dari django.utils import timezone
+ & gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) []
+`</pre> 
+> 
+> Sayangnya, posting yang kami tambahkan dari konsol Python belum dipublikasikan. Tapi kita bisa mengubah itu! Pertama dapatkan sebuah instance dari sebuah postingan yang ingin kita publikasikan:
+> 
+> {% filename%} baris perintah {% endfilename%}
+> 
+> ```python
+& gt; & gt; & gt; post = Post.objects.get (judul = "judul contoh")
 ```
 
-Hurray! Wanna check if it worked?
+Kemudian publikasikan dengan metode ` publish </ 0> :</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-```
+<pre><code class="python">& gt; & gt; & gt; post.publish ()
+`</pre> 
 
-There it is, one more post in the list!
+Sekarang cobalah untuk mendapatkan daftar posting yang dipublikasikan lagi (tekan tombol panah atas tiga kali dan tekan ` enter </ 0> ):</p>
 
-### Add more posts
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) [ <Post: Sample title> ]
+`</pre> 
 
-### Filter objects
+### Memesan benda
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+QuerySets juga memungkinkan Anda untuk memesan daftar objek. Mari kita coba untuk memesannya dengan bidang ` create_date </ 0> :</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-```python
->>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
+<pre><code class="python">& gt; & gt; & gt; Post.objects.order_by ('created_date') [ <Post: Sample title> , <Post: Post number 2> , <Post: My 3rd post!> , <Post: 4th title of post> ]
+`</pre> 
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Kita juga bisa membalik pemesanan dengan menambahkan ` - </ 0> di awal:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename%} baris perintah {% endfilename%}</p>
 
-```python
->>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
-```
-
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
-
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
-[]
-```
-
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post = Post.objects.get(title="Sample title")
-```
-
-And then publish it with our `publish` method:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post.publish()
-```
-
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
-```
-
-### Ordering objects
-
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-We can also reverse the ordering by adding `-` at the beginning:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-```
+<pre><code class="python">& gt; & gt; & gt; Post.objects.order_by ('- created_date') [ <Post: 4th title of post> ,   <Post: My 3rd post!> , <Post: Post number 2> , <Post: Sample title> ]
+`</pre> 
 
 ### Chaining QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+Anda juga dapat menggabungkan QuerySets dengan ** chaining </ 0> bersama-sama:</p> 
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    & gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) order_by ('published_date')
     
 
-This is really powerful and lets you write quite complex queries.
+Ini benar-benar hebat dan memungkinkan Anda menulis kueri yang cukup rumit.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Keren! Anda sekarang siap untuk bagian selanjutnya! Untuk menutup shell, ketik ini:
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
 ```python
->>> exit()
-$
+& gt; & gt; & gt; keluar () $
 ```
