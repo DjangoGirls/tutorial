@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+我們的部落格看起來仍然很醜，對吧？時間使讓它變好啊！為此，我們將使用 CSS。
 
-## What is CSS?
+## CSS 是什麼？
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## 讓我們使用 Bootstrap！
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## 安裝 Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![圖 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+它看起來更漂亮！
 
-## Static files in Django
+## Django 中的靜態檔案 (Static files in Django)
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+最後，我們將仔細看看這些我們稱為**靜態檔 (static files)** 的東西。 Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Django的靜態檔放那裡
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+我們在部落格應用程式 (blog app) 裡建立一個名為 `static` 資料夾︰
 
     djangogirls
     ├── blog
@@ -51,9 +51,9 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## 你的第一個 CSS 檔！
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. 在你的 `static` 目錄內，建立一個新的目錄，名稱為 `css` 。 然後，在這個 `css` 目錄裡，建立一個新的檔，稱為 `blog.css`。 準備好了嗎？
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+是時候寫一些 CSS！在你的程式碼編輯器，打開你的 `blog/static/css/blog.css`檔案。
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+但讓我們至少做一些事吧。 也許我們可以改變我們標題的顏色？ 為瞭解顏色，電腦使用特殊的代碼。 These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. 您也可以使用 [預定義的顏色 (predefined colors)](http://www.w3schools.com/colors/colors_names.asp)，如 `red` 和 `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+在你的 `blog/static/css/blog.css` 檔中，你應該加入以下程式碼︰
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` 是一個 CSS 選取項 (Selector)。 This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. 在這種情況下，我們會告訴它要把顏色改為 `#FCA205`，它是橘色。 當然，你可以放你自己的顏色在這裡！
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+在 CSS 檔中，我們決定的 HTML 檔案中元素的樣式 (styles)。 The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class 和 id 是你自己給元素的名稱。 Classes 定義一群組的元素，而 ids 指向特定的元素。 For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. 我們只是告訴我們的範本我們 CSS 檔位於何處。
 
-Your file should now look like this:
+現在，你的檔案應該像這樣︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+OK，存檔並更新網頁！
 
-![Figure 14.2](images/color2.png)
+![圖 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+非常好！也許我們要給我們的網站一點空間，並增加左側邊距？讓我們試試這個！
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -151,9 +151,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Figure 14.3](images/margin2.png)
+![圖 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+也許我們可以自訂我們的 header 中的字體？把這個貼到你 `blog/templates/blog/post_list.html` 檔案的 `<head>` 中︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![圖 14.3](images/font.png)
 
-Great!
+太好了！
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+繼續為部分的 HTML 程式碼命名。加入一個名稱為 `page-header` 的 class 到包含你的標題的 `div`，像這樣︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+現在，加一個名稱為 `post` 的 class 到包含部落格文章的 `div`。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+我們現在將增加宣告區域到不同選項器。 以 `.` 開始的選項器是關於 classes 的。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 現在，只要複製並貼到你的 `blog/static/css/blog.css` 檔︰
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+然後將顯示文章的 HTML 程式碼用 classes宣告包圍起來。將以下內容︰
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+`blog/templates/blog/post_list.html`，更換為：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,9 +291,9 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+存檔並更新你的網頁。
 
-![Figure 14.4](images/final.png)
+![圖 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
@@ -301,4 +301,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Ready for the next chapter?! :)
+準備好進到下一章了嗎？！:)
