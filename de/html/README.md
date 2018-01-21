@@ -1,4 +1,4 @@
-# Introduction to HTML
+# Einführung in HTML
 
 Vielleicht fragst du dich, was ein Template (Vorlage) ist?
 
@@ -10,7 +10,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML bedeutet "HyperText Markup Language". Als **HyperText** wird Text bezeichnet, der über markierte Textstellen, den "Hyperlinks" (die umgangssprachlichen "Links") auf andere (meist ebenfalls in HTML geschriebene) Seiten verweist. **Markup** bedeutet, dass wir ein Dokument nehmen und mit Code versehen, um einem Empfänger mitzuteilen (in diesem Fall dem Browser), wie diese Seite interpretiert werden muss. HTML-Code besteht aus **Tags**, wovon jeder mit `<` beginnt und mit `>` endet. These tags represent markup **elements**.
+HTML bedeutet "HyperText Markup Language". Als **HyperText** wird Text bezeichnet, der über markierte Textstellen, den "Hyperlinks" (die umgangssprachlichen "Links") auf andere (meist ebenfalls in HTML geschriebene) Seiten verweist. **Markup** bedeutet, dass wir ein Dokument nehmen und mit Code versehen, um einem Empfänger mitzuteilen (in diesem Fall dem Browser), wie diese Seite interpretiert werden muss. HTML-Code besteht aus **Tags**, wovon jeder mit `<` beginnt und mit `>` endet. Diese Tags stellen die Markup-**Elemente** dar.
 
 ## Dein erstes Template!
 
@@ -48,22 +48,22 @@ Füge folgenden Text in deine Template-Datei ein:
 
 So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![Figure 11.2](images/step3.png)
+![Abbildung 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Es funktioniert! Gute Arbeit! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
 * `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
 ## Head and body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Jede HTML Seite gliedert sich in zwei Teile: **head** und **body**.
 
 * Das Element **head** speichert im "Kopf" der Seite Informationen über die Seite, die dir nicht angezeigt werden.
 
 * Das Element **body** enthält den "Körper" - also den dargestellten Inhalt der Seite.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Im `<head>` informieren wir den Browser über Einstellungen und Konfigurationen der Webseite, z.B. wie sie dargestellt werden soll, und im `<body>` darüber, was tatsächlich dargestellt werden soll.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,32 +81,34 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Speichere die Datei und aktualisiere die Seite im Browser.
 
-![Figure 11.3](images/step4.png)
+![Abbildung 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Der Titel "Ola's blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Browser hat `<title>Ola's blog</title>` interpretiert und in die Titelleiste übernommen (dieser Titel wird auch in den Lesezeichen usw. verwendet).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und die Elemente sind darin *eingebettet*. Ein Tag in einem zweiten kann nicht außerhalb von diesem geschlossen werden, die Reihenfolge muss immer stimmen.
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Es ist wie Sachen in Kisten stecken. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: </code>`&lt;p&gt;&lt;/p&gt;</0>.</p>
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+<p>You need to follow these rules of <em>closing</em> tags, and of <em>nesting</em> elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.</p>
 
-## Dein Template anpassen
+<h2>Dein Template anpassen</h2>
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+<p>Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:</p>
 
-* `<h1>A heading</h1>` for your most important heading
+<ul>
+<li><code><h1>A heading</h1>` for your most important heading</li> 
+
 * `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
+* `<em>Text</em>` hebt deinen Text hervor
+* `<strong>Text</strong>` macht deinen Text fett
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<a href="https://djangogirls.org">link</a>` erstellt einen Link
+* `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
+* `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -137,14 +139,14 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created three `div` sections here.
+Wir haben hier drei verschiedene `div` Abschnitte erstellt.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
 * Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
 
-It gives us this effect:
+Wir bekommen das Folgende:
 
-![Figure 11.4](images/step6.png)
+![Abbildung 11.4](images/step6.png)
 
 Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
@@ -152,18 +154,18 @@ What we really want to do is display real posts added in our Django admin – an
 
 ## Noch eine Sache: Deployment!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Es wäre gut, das alles live draußen im Internet zu sehen, oder? Lass uns noch eine PythonAnywhere-Anwendung erstellen:
 
 ### Committe und pushe deinen Code auf GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Lass uns nachsehen, welche Dateien sich nach dem letzten Veröffentlichen (Deployment) geändert haben. (Führe diese Befehle lokal aus und nicht auf PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+Überprüfe, ob du im `Djangogirls` Verzeichnis bist und sag `git`, dass alle Änderungen in diesem Verzeichnis hinzugefügt werden sollen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -172,14 +174,14 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 > **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Bevor wir alle Dateien hochladen prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht gespeichert werden soll. Wir erstellen eine "Commit Message", die beschreibt, was wir verändert haben. Du kannst an diesem Punkt hier alles reinschreiben, aber es ist sehr nützlich, etwas zu Sinnvolles einzutragen, damit du dich in Zukunft erinnern kannst, was du geändert hast.
 
 {% filename %}command-line{% endfilename %}
 
@@ -197,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 ### Hol dir den neuen Code auf PythonAnywhere und aktualisiere deinen Browser
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Öffne die [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) und gehe zu deiner **Bash-Konsole** (oder starte eine neue). Dann, führe Folgendes aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,7 +208,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+Schau zu, wie dein Code runtergeladen wird! Wenn du prüfen willst, ob der Code angekommen ist, kannst du zum **Files Tab** rüberspringen und deinen Code auf PythonAnywhere sehen.
 
 * Spring anschließend rüber zum [Web Tab](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
 
