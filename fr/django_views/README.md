@@ -1,14 +1,14 @@
 # Django views – time to create!
 
-Time to get rid of the bug we created in the last chapter! :)
+Il est enfin temps de se débarrasser du bug que nous avons créé dans le chapitre précédent! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+C'est dans la *vue* que nous allons ranger toute la partie "logique" de notre application. C'est elle qui va se charger d'aller chercher les informations liées à notre `modèle `que nous venons de créer et de les passer à un `template`. Nous allons créer ce template dans le chapitre suivant. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Les vues sont placées dans le fichier `views.py`. Nous allons créer nos *vues* dans le fichier `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+Ok, allons-y ! Ouvrons ce fichier pour voir ce qu'il contient :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -35,10 +35,10 @@ As you can see, we created a function (`def`) called `post_list` that takes `req
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Another error! Read what's going on now:
+Une autre erreur ! Voyons ce qu'elle nous dit :
 
-![Error](images/error.png)
+![Erreur](images/error.png)
 
 This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/en/1.11/topics/http/views/
