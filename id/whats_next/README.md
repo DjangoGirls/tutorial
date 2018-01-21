@@ -1,25 +1,25 @@
-# What's next?
+# Apa berikutnya?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Selamatkan dirimu! ** Anda benar-benar hebat </ 0> . Kami bangga <3</p> 
 
-### What to do now?
+### Apa yang harus dilakukan sekarang?
 
-Take a break and relax. You have just done something really huge.
+Istirahat sejenak dan rileks. Anda baru saja melakukan sesuatu yang sangat besar.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Setelah itu, pastikan untuk mengikuti Django Girls di  Facebook </ 0> atau  Twitter </ 1> untuk tetap mengikuti perkembangan.</p> 
 
-### Can you recommend any further resources?
+### Dapatkah Anda merekomendasikan sumber daya lebih lanjut?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Iya nih! Pertama, maju dan coba buku kami yang lain, yang disebut  Django Girls Tutorial: Extensions </ 0> .</p> 
 
-Later on, you can try the resources listed below. They're all very recommended!
+Nantinya, Anda bisa mencoba sumber daya yang tercantum di bawah ini. Mereka semua sangat dianjurkan!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Tutorial resmi Django](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Tutorial Coder Baru](http://newcoder.io/tutorials/)
+- [Code Academy Python saja](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & amp; Kursus CSS](https://www.codecademy.com/tracks/web)
+- [Tutorial wortel Django](https://github.com/ggcarrots/django-carrots)
+- [Pelajari buku Python The Hard Way](http://learnpythonthehardway.org/book/)
+- [Memulai dengan pelajaran video Django](http://www.gettingstartedwithdjango.com/)
+- [Dua Scoops dari Django 1.11: Praktik Terbaik untuk buku Django Web Framework](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+-  Hello Web App: Pelajari Cara Membangun Aplikasi Web </ 0> - Anda juga dapat meminta lisensi e-book gratis dengan menghubungi penulis Tracy Osborn di  tracy@limedaring.com </ 1></li> </ul>
