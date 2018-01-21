@@ -1,27 +1,27 @@
-# What is Django?
+# Django nedir?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) Python ile yazılmış özgür ve açık kaynak bir web uygulama iskeletidir (framework). Bir web iskeleti, websitesi geliştirmeyi hızlandıran ve kolaylaştıran bir grup bileşendir.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Bir web sitesi geliştirdiğinizde benzer türde bileşenlere her zaman ihtiyacınız olur: kullanıcılar için kimlik denetimi (üye olma, üye girişi, üye çıkışı), websiteniz için bir yönetim paneli, formlar, dosyaları yüklemek için bir yol, vs.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Şanslısınız ki, uzun zaman önce başkaları web geliştiricilerinin yeni bir site yaratırken benzer problemlerle karşı karşıya geldiğini farkettiler ve takım kurup, kullanmanız için hazır bileşenleri olan iskeletler (ki Django bunlardan bir tanesi) oluşturdular.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Frameworkler, siz yeni bir site oluştururken yükünüzü hafifletmek için tekerleği yeniden icat etmek zorunda.
 
-## Why do you need a framework?
+## Neden bir iskelete ihtiyacınız var?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Django aslında ne işe yaradığını anlamak için, sunuculara daha yakından bakmamız gerekiyor. İlk olarak sunucunun, onun size bir web sitesi sunmasını istediğinizi bilmesi gerekiyor.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Bir posta kutusunun (port) gelen mektuplar (requests) için izlendiğini düşünün. Bu bir web sunucusu tarafından yapılıyor. Web sunucusu mektubu okur ve ardından bir web sayfası ile cevap verir. Ama bir şey gönderecekseniz, içeriğe ihtiyacınız var. Django içeriği oluşturmanıza yardımcı olan bir şeydir.
 
-## What happens when someone requests a website from your server?
+## Birisi sunucunuzdan bir web sitesi istediğinde ne olur?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Bir istek bir web sunucusuna geldiğinde, Django'ya aktarılır aslında ve Django da istenin ne olduğunu anlamaya çalışır. O da önce bir web sayfası adresi alır ve ne yapacağını anlamaya çalışır. Bu bölüm Django'nun **urlresolver** tarafından yapılır (unutmayın bir web sitesi adresi URL – Uniform Resource Locator – olarak adlandırılır – böylece *urlresolver* anlamlı hale gelir). Çok akıllı değildir - kalıpların bir listesini alır ve URL'yi eşleştirmeye çalışır. Django kalıpları üstten alta doğru denetler ve eşleşen bir şey varsa isteği ilgili işleve( *view* olarak adlandırlan) aktarır.
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Mektup dağıtan bir postacı düşünün. Sokak boyunca yürüyor ve her evin numarasını mektubun üstündeki numara ile karşılaştırıyor. Eğer eşleşirse, mektubu oraya koyuyor. Url çözücü işte böyle çalışır!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Tüm ilginç şeyler *view (görünüm)* fonksiyonunda yapılır: bir bilgi için veritabanına bakabiliriz. Belki de kullanıcı veride bir şeyin değişmesini istemiştir? "Lütfen iş tanımımı değiştirin." diyen bir mektup gibi. *View* bunu yapmaya izninizin olup olmadığını kontrol eder, iş tanımınızı sizin için günceller ve geri "Tamamdır!" mesajı yollar. Sonra *view*bir yanıt üretir ve Django bunu kullanıcının web tarayıcısına gönderebilir.
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Tabi ki yukardaki biraz basitleştirilmiş bir açıklama, ama şimdilik bütün teknik ayrıntıyı bilmene gerek yok. Genel bir fikrin olması yeterli.
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+Doğrudan çok fazla detaya girmek yerine, Django ile birşeyler oluşturacağız ve önemli kısımları yolda öğreneceğiz!
