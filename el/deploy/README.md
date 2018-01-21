@@ -1,38 +1,38 @@
-# Deploy!
+# Ανεβάστε!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Σημείωση** Το ακόλουθο κεφάλαιο μπορεί να είναι μερικές φορές λίγο δύσκολο να ολοκληρωθεί. Επιμένετε και τελειώστε το, το ανέβασμα είναι ένα σημαντικό μέρος της διαδικασίας ανάπτυξης της ιστοσελίδας. Το κεφάλαιο αυτό τοποθετείται στη μέση του εκπαιδευτικού εγγράφου, έτσι ώστε να μέντορας σας να μπορεί να σας βοηθήσει με την ελαφρώς πιο περίπλοκη διαδικασία "ανεβάσματος" της ιστοσελίδας στο διαδίκτυο. Αυτό σημαίνει ότι μπορείτε να ολοκληρώσετε την εκπαίδευση μόνοι σας ακόμα και αν σας τελειώσει ο χρόνος.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Μέχρι τώρα, η ιστοσελίδα σου ήταν μόνο διαθέσιμη στον υπολογιστή σου. Τώρα θα μάθεις πως να την αναπτύσσεις! Ανεβάζω στο διαδίκτυο" είναι η διαδικασία της δημοσίευσης την εφαρμογής σας στο διαδίκτυο, έτσι ώστε οι άνθρωποι τελικά να πάνε και να δουν την εφαρμογή σας. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Όπως μάθατε, μια ιστοσελίδα πρέπει να βρίσκεται σε ένα διακομιστή. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Η άλλη εξωτερική υπηρεσία που θα χρησιμοποιήσουμε είναι το [GitHub](https://www.github.com), το οποίο είναι μια υπηρεσία φιλοξενίας κώδικα. Υπάρχουν και άλλοι διαθέσιμοι έξω, αλλά σχεδόν όλοι οι προγραμματιστές έχουν λογαριασμό GitHub αυτές τις μέρες, και έτσι και εσείς θα έχετε τώρα!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Αυτά τα τρία μέρη θα είναι σημαντικά για εσάς. Ο τοπικός σας υπολογιστής θα είναι το μέρος όπου θα κάνετε ανάπτυξη και δοκιμή. Όταν είστε ικανοποιημένοι με τις αλλαγές, θα τοποθετήσετε ένα αντίγραφο του προγράμματος σας στο GitHub. Η ιστοσελίδα σας θα είναι στο PythonAnywhere και θα την ενημερώσετε με το να πάρετε ένα καινούριο αντίγραφο του κωδικού σας από το GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Σημείωση** Αν κάνατε ήδη τα βήματα εγκατάστασης, δεν χρειάζεται να τα ξανακάνετε- μπορείτε να παραλείψετε στην επόμενη ενότητα και να ξεκινήσετε να δημιουργείτε το αρχείο αποθήκευσης του Git.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Ξεκινώντας το αρχείο αποθήκευσής μας του Git
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Το Git παρακολουθεί τις αλλαγές σε ένα συγκεκριμένο σύνολο αρχείων που αποκαλείται αρχείο αποθήκευσης κώδικα (ή «ρεπό» εν συντομία). Ας ξεκινήσουμε ένα για την εφαρμογή μας. Ανοίξτε την κονσόλα σας και να εκτελέσετε αυτές τις εντολές, στον φάκελο`djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Θα πρέπει να βρίσκεστε στο φάκελο `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
+    $ git config --global user.name "Το όνομά σας"
     $ git config --global user.email you@example.com
     
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Το Git θα παρακολουθείσει τις αλλαγές σε όλα τα αρχεία και τους φακέλους σε αυτόν τον κατάλογο, ωστόσο υπάρχουν ορισμένα αρχεία που θέλουμε να τα αγνοήσει. Το κάνουμε αυτό δημιουργώντας ένα αρχείο που ονομάζεται `.gitignore` στον αρχικό κατάλογο. Ανοίξτε το πρόγραμμα επεξεργασίας κειμένου και δημιουργήστε ένα νέο αρχείο με το ακόλουθο περιεχόμενο:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,19 +47,14 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Σημείωση** Η τελεία στην αρχή του ονόματος του αρχείου είναι σημαντική! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Αυτό το αρχείο είναι η τοπική σου βάση δεδομένων, όπου όλες οι δημοσιεύσεις σου αποθηκεύονται. Δεν θέλουμε να προσθέσουμε αυτό στην αποθήκη σας επειδή η ιστοσελίδα σας στο PythonAnywhere πρόκειται να χρησιμοποιεί διαφορετική βάση δεδομένων. Η βάση δεδομένων μπορεί να είναι SQLite, όπως η μηχανή ανάπτυξης σας, αλλά συνήθως θα χρησιμοποιείται μία που ονομάζεται MySQL η οποία μπορεί να ασχοληθεί με πολύ περισσότερους επισκέπτες από την SQLite. Έτσι και αλλιώς, αγνοώντας την βάση δεδομένων σας SQLite για την αντιγραφή στο GitHub, σημαίνει ότι όλες οι δημοσιεύσεις σας που έχετε δημιουργήσει μέχρι τώρα πρόκειται να μείνουν και να είναι διαθέσιμες τοπικά, αλλά θα πρέπει να τις προσθέσετε ξανά στην παραγωγή. Να σκέφτεστε την τοπική βάση δεδομένων σας ως ένα παιδότοπο όπου μπορείτε να δοκιμάσετε διαφορετικά πράγματα και να μην φοβάστε ότι πρόκειται να διαγράψετε τις αληθινές σας δημοσιεύσεις από το blog σας.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Είναι καλή ιδέα να χρησιμοποιήσετε την εντολή `git status` πριν από την εντολή`git add` ή όποτε δεν είστε βέβαιοι για το τι έχει αλλάξει. Αυτό θα βοηθήσει να αποτραπούν οποιεσδήποτε εκπλήξεις, όπως το να προστεθούν ή να αποθηκευτούν λανθασμένα αρχεία. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Τα δεδομένα εξόδου πρέπει να είναι παρόμοια με τα ακόλουθα:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    On branch master
-    
-    Initial commit
-    
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     
@@ -71,7 +66,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Και τέλος σώζουμε τις αλλαγές μας. Πηγαίνετε στην κονσόλα σας και να εκτελέσετε αυτές τις εντολές:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,30 +82,30 @@ And finally we save our changes. Go to your console and run these commands:
     
     ## Pushing your code to GitHub
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (Αν το κάνατε ήδη στην προετοιμασία εργαστηρίου, θαυμάσια!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Έπειτα, δημιουργήστε ένα νέο χώρο αποθήκευσης, ονομάζοντας το "το πρώτο μου blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. Είναι πιθανώς ευκολότερο να παραμείνετε στο όνομα "το πρώτο μου blog".
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    Στην επόμενη οθόνη, θα δείτε την διεύθυνση URL του κλώνου του αποθηκευτικού χώρου σας. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
     
     <img src="images/github_get_repo_url_screenshot.png" />
     
     Now we need to hook up the Git repository on your computer to the one up on GitHub.
     
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    Πληκτρολογήστε τα ακόλουθα στην κονσόλα σας (Αντικαταστήστε '<your-github-username>; με το όνομα χρήστη που εισάγατε όταν δημιουργήσατε τον λογαριασμό GitHub σας, αλλά χωρίς τις αγκύλες)
     
-    {% filename %}command-line{% endfilename %}
+    {% filename %}Γραμμή εντολών{% endfilename %}
     
 
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-    <br />Enter your GitHub username and password and you should see something like this:
+    <br />Εισάγετε το GitHub όνομα χρήστη και κωδικό σας και θα πρέπει να δείτε κάτι σαν αυτό:
     
-    {% filename %}command-line{% endfilename %}
+    {% filename %}γραμμή εντολών{% endfilename %}
     
 
 Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
@@ -119,7 +114,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. Πηγαίνετε και τσεκάρετέ το!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
@@ -131,13 +126,13 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     
     ## Pulling our code down on PythonAnywhere
     
-    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+    When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Διαλέξτε την επιλογή να ξεκινήσετε μία κονσόλα "Bash" - αυτή είναι η PythonAnywhere έκδοση της κονσόλας, όπως αυτή στον υπολογιστή σας.
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
     
     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    Ας τραβήξουμε μας κώδικά μας από το GitHub στο PythonAnywhere, δημιουργώντας έναν «κλώνο» του αρχείου αποθήκευσής μας. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -166,13 +161,13 @@ $ source myvenv/bin/activate
 
 (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Υπομονή, υπομονή!  Αλλά αν πάρει πάνω από πέντε λεπτά, κάτι είναι λάθος.  Ρωτήστε τον προπονητή σας.
     
     &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
     
     ### Creating the database on PythonAnywhere
     
-    Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+    Here's another thing that's different between your own computer and the server: it uses a different database. Έτσι οι λογαριασμοί χρήστη και οι δημοσιεύσεις μπορούν να είναι διαφορετικά στον διακομιστή και τον υπολογιστή σας.
     
     Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
     
@@ -183,13 +178,13 @@ $ source myvenv/bin/activate
 
     <br />## Publishing our blog as a web app
     
-    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. Είμαστε έτοιμοι να το δημοσιεύσουμε ως μία εφαρμογή δικτύου!
     
     Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
     
-    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+    After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Μετά επιλέξτε **Python 3.6**, και κάντε κλικ στο κουμπί Next για να ολοκληρώσετε τον οδηγό.
     
-    &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+    &gt; **Σημείωση** Σιγουρευτείτε να επιλέξετε την επιλογή "Manual configuration", όχι την "Django". Είμαστε πολύ κουλ για την προεπιλεγμένη PythonAnywhere Django εγκατάσταση. ;-)
     
     
     ### Setting the virtualenv
@@ -198,14 +193,14 @@ $ source myvenv/bin/activate
     
     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
     
-    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+    In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Κάντε κλικ στο τσεκαρισμένο μπλε κουτί για να αποθηκεύσετε το μονοπάτι πριν συνεχίσετε.
     
-    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+    &gt; **Note** Substitute your own PythonAnywhere username as appropriate. Εάν κάνετε ένα λάθος, το PythonAnywhere θα σας δείξει μια μικρή προειδοποίηση.
     
     
     ### Configuring the WSGI file
     
-    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+    Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. Ο τρόπος που ρυθμίζουμε το PythonAnywhere να αναγνωρίζει τα Django blog μας είναι τροποποιώντας ένα αρχείο ρύθμισης παραμέτρων WSGI.
     
     Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
     
@@ -227,34 +222,34 @@ $ source myvenv/bin/activate
     application = StaticFilesHandler(get_wsgi_application())
     
 
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+Η δουλειά αυτού του αρχείου είναι να πει στο PythonAnywhere που ζει η εφαρμογή δικτύου μας και ποιο είναι το όνομα του αρχείου ρυθμίσεων Django.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+The `StaticFilesHandler` is for dealing with our CSS. Αυτό τακτοποιείται αυτόματα κατά την διάρκεια της τοπικής ανάπτυξης από την εντολή `runserver`. Θα μάθουμε λίγο περισσότερα για τα στατικά αρχεία αργότερα στο εγχειρίδιο, όταν θα επεξεργαστούμε το CSS για την ιστοσελίδα μας.
 
-Hit **Save** and then go back to the **Web** tab.
+Πατήστε **Save** και στη συνέχεια, επιστρέψτε στην καρτέλα **Web**.
 
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+Είμαστε καθ'όλα έτοιμοι! Κλικάρετε το μεγάλο πράσινο κουμπί **Reload** και θα είστε σε θέση να δείτε την εφαρμογή σας. Θα βρείτε έναν σύνδεσμο σε αυτό στην κορυφή της σελίδας.
 
-## Debugging tips
+## Συμβουλές για τον εντοπισμό σφαλμάτων
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+Εάν εμφανιστεί ένα σφάλμα κατά την προσπάθειά σας να επισκεφθείτε την ιστοσελίδα σας, το πρώτο μέρος για να ψάξετε ορισμένες πληροφορίες εντοπισμού σφαλμάτων είναι στο αρχείο **error log**. Θα βρείτε ένα σύνδεσμο προς αυτό στην καρτέλα [Web](https://www.pythonanywhere.com/web_app_setup/) του PythonAnywhere. Δείτε εάν υπάρχουν κάποια μηνύματα σφάλματος εκεί. Τα πλέον συχνά εμφανίζονται στο κάτω μέρος. Τα πιο συνηθισμένα προβλήματα περιλαμβάνουν:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+- Ξεχνώντας ένα από τα βήματα που κάναμε στην κονσόλα: δημιουργία του virtualenv, ενεργοποίηση του, εγκατάσταση του Django σε αυτό, μετεγκατάσταση της βάσης δεδομένων.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Κάνοντας ένα λάθος στο μονοπάτι virtualenv στην καρτέλα Web- θα υπάρχει συνήθως ένα μικρό κόκκινο μήνυμα σφάλματος, εάν υπάρχει ένα πρόβλημα.
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+- Πήρατε την ίδια έκδοση της Python για το virtualenv, όπως κάνατε για την εφαρμογή διαδικτύου; Και οι δύο θα πρέπει να είναι 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+Και να θυμάστε, ο εκπαιδευτής σας είναι εδώ να βοηθήσει!
 
-# You are live!
+# Είστε συνδεδεμένοι!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+Η προεπιλεγμένη σελίδα για τον ιστότοπο σας πρέπει να λέει "Λειτουργεί!", όπως και στον τοπικό υπολογιστή σας. Δοκιμάστε να προσθέσετε το `/admin/` στο τέλος του URL, και θα μεταφερθείτε στην ιστοσελίδα διαχείρισης. Συνδεθείτε με το όνομα χρήστη και τον κωδικό πρόσβασης, και θα δείτε ότι μπορείτε να προσθέσετε νέες αναρτήσεις στο διακομιστή.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Μόλις δημιουργήσετε μερικές δημοσιεύσεις, μπορείτε να πάτε πίσω στην τοπική σας εγκατάσταση (όχι το PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. Αυτό σας επιτρέπει να εργάζεστε και να πειραματίζεστε χωρίς να σπάσετε την ζωντανή σελίδα σας Web. Pretty cool, huh?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Δώστε στον εαυτό σας ένα *ΜΕΓΑΛΟ* ελαφρύ χτύπημα στην πλάτη! Η εγκατάσταση σε έναν διακομιστή είναι ένα από τα πιο πολύπλοκα κομμάτια της ανάπτυξης εφαρμογών διαδικτύου και παίρνει συχνά αρκετές ημέρες στους ανθρώπους προτού να τις κάνουν λειτουργικές. Αλλά έχετε την ιστοσελίδα σας ζωντανή, στο πραγματικό Διαδίκτυο, ακριβώς όπως αυτό!
