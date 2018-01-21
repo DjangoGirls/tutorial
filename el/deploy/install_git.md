@@ -1,11 +1,11 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+Το Git είναι ένα «σύστημα ελέγχου έκδοσης» και χρησιμοποιείται από πολλούς προγραμματιστές. Αυτό το λογισμικό μπορεί να παρακολουθήσει τις αλλαγές στα αρχεία με την πάροδο του χρόνου έτσι ώστε να μπορείτε να ανακαλέσετε συγκεκριμένες εκδόσεις σε μεταγενέστερο στάδιο. Είναι κάτι σαν την δυνατότητα "παρακολούθησης αλλαγών" στο Microsoft Word, αλλά πολύ πιο ισχυρό.
 
-## Installing Git
+## Εγκαθιστώντας το Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι σωστές. Επίσης η επιλογές Checkout Windows-style και Commit Unix-style κατά το τέλος μίας γραμμής είναι προτεινόμενες.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
