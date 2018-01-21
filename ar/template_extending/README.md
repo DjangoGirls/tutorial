@@ -1,14 +1,14 @@
-# Template extending
+# تمديد القالب
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+شيء جميل آخر يقدمه جانغو لك هو **تمديد القالب **. ماذا يعني هذا؟ هذا يعني أنه يمكنك استخدام الأجزاء نفسها من HTML لصفحات مختلفة من موقعك على الويب.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+القوالب تساعدك عندما تريد استخدام نفس الشكل او المعلومات اكثر من مرة او في اكثر من مكان. ليس عليك تكرار نفسك في كل ملف. وإذا كنت ترغب في تغيير شيء ما، ليس عليك تغيره في كل قالب, بل ستغيره في قالب واحد!
 
-## Create a base template
+## أنشئ القالب الرئيسي
 
-A base template is the most basic template that you extend on every page of your website.
+القالب الرئيسي هو قالب اساسي والذي ستقوم بتمديده اثناء استخدامه في اي صفحة من موقعك.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+لنقم بإنشاء ملف `base.html` في `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,45 +17,45 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+ثم افتحه وانسخ كل شيء من `post_list.html` إلى ملف `base.html`، مثل هذا:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
 <html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
 
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
-    </body>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+ثم في `base.html`، استبدل 1 (كل شيء بين 1 و `</body>`) مع هذا:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,20 +75,19 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}قد تلاحض ان هذا قد غير `{% for post in posts %}` إلى `{% endfor %}` ب: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% block content %}
-{% endblock %}
+{% block content %}{% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+لكن لماذا؟ لقد انشأت `كتلة`! استخدمت علامة القالب `{% block %}` لإنشاء منطقة التي ستضع فيها إتش تي أم ال HTML. ذاك HTML قادم من قالب اخر الذي قام بتمديد هذا القالب (`base.html`). نحن سنريك طريقة فعل ذالك خلال لحضات.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+الآن إحفظ `base.html` وإفتح `blog/templates/blog/post_list.html` مرة أخرى. {% raw %}ستحتاج لحدف كل شي فوق `{% for post in posts %}` وتحت `{% endfor %}`. عند الانتهاء من ذلك، الملف سيبدو هكذا:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -102,11 +101,11 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+نريد أن نستخدم هذه كجزء من قالبنا لجميع كتل المحتوى. حان الوقت لإضافة علامات الكتل لهذا الملف!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}You تريد لعلامة كتلتك ان تطابق العلامة في ملف `base.html`. تحتاج أيضا ان تشمل كافة التعليمات البرمجية التي تنتمي إليها في كتل المحتوى الخاص بك. للقيام بذلك، ضع كل شيء بين `{% block content %}` و `{% endblock %}`. مثل هذا: {% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/list.html{% endfilename %}
 
 ```html
 {% block content %}
@@ -122,9 +121,9 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+بقي شيء واحد فقط. نحن بحاجة إلى ربط هذين القالبين معا. هذا ما نقصد به توسيع القوالب! سنفعل ذلك عن طريق إضافة علامة تمديد إلى بداية الملف. مثال:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -142,6 +141,7 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+هذا كل شء! تحقق ان كان موقعك يعمل
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> اذا حصلت على هذا الخطأ `TemplateDoesNotExist`، وهذا يعني انه ليس هناك ملف`blog/base.html` ولديك `runserver` يشتغل في الكونسول. حاول إيقافه (بالضغط على Ctrl+C - مفتاح التحكم و C معا) وإعادة تشغيله من خلال تشغيل أمر  python manage.py runserver </ 0>.</p>
+</blockquote>
