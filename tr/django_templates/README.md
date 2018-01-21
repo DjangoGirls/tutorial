@@ -1,18 +1,18 @@
-# Django templates
+# Django templateleri
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Bazı verileri gösterme zamanı! Django bunun için bize faydalı bazı yerleşik **template etiketleri** sunuyor.
 
-## What are template tags?
+## Template etiketleri nedir?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Display post list template
+## Gönderi listesi template'ini göster
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Bir önceki bölümde, template'e `posts` değişkeni içinde gönderiler listesi verdik. Şimdi, bunu HTML'de göstereceğiz.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
-![Figure 13.1](images/step1.png)
+![Şekil 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Gördüğümüz sadece bu:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+Bunu kendi template'imizle deneyelim.
 
-![Figure 13.2](images/step2.png)
+![Şekil 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+İşe yarıyor! Fakat bunların daha önce **HTML'ye giriş** bölümünde oluşturduğumuz statik gönderiler gibi görünmesini istiyoruz. HTML ve template etiketlerini karıştırabiliriz. `body` şöyle görünecektir:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,17 +64,17 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}`{% for %}` ve `{% endfor %}` arasına koyduğunuz her şey listedeki her nesne için tekrarlanır. Sayfanı yenile:{% endraw %}
 
-![Figure 13.3](images/step3.png)
+![Şekil 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısınız (`{{ post.title }}` or `{{ post.text }})`? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## One more thing
+## Bir şey daha
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhere tekrar çalıştıralım. Adımları hatırlayalım…
 
-* First, push your code to Github
+* İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -83,24 +83,24 @@ It'd be good to see if your website will still be working on the public Internet
     $ git add --all .
     $ git status
     [...]
-    $ git commit -m "Modified templates to display posts from database."
+    $ git commit -m "Veritabanından gönderileri göstermek için template'ler değiştirildi."
     [...]
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* [PythonAnywhere](https://www.pythonanywhere.com/consoles/)'e bağlanalım ve **Bash konsolu**'na gidelim (veya yeni bir konsol açalım) ve şunu çalıştıralım:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut-satırı{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ilk-blogum
     $ git pull
     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. Your update should be live! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Ve son olarak da [Web tab](https://www.pythonanywhere.com/web_app_setup/) sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Tebrikler! Django admin üzerinden yeni bir gönderi ekleyin (yayinlama_tarihi eklemeyi unutmayın!) PythonAnywhere sitenizinin Django admin'inde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için ordaki sayfanızı yenileyin.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Şiir gibi çalışıyor değil mi? Gurur duyuyoruz! Bi süre bilgisayarınızdan uzaklaşın - molayı hak ettiniz. :)
 
-![Figure 13.4](images/donut.png)
+![Şekil 13.4](images/donut.png)
