@@ -1,392 +1,378 @@
-# Django Forms
+# Form Django
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Hal penting terakhir yang akan kita lakukan adalah bagaimana membuat agar user dapat menambah dan mengedit post blog dengan mudah. `Admin` django sudah bagus, tapi sedikit sulit untuk meng-customize dan membuatnya lebih cantik. Dengan ` bentuk </ 0> kita akan memiliki kekuatan mutlak atas antarmuka kita - kita dapat melakukan hampir semua hal yang dapat kita bayangkan!</p>
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+<p>Bagusnya form django adalah bahwa kita dapat mendefinisikannya dengan mudah atau dengan membuat sebuah <code>ModelForm` yang akan memberikan keluaran form tersebut ke dalam model terkait.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Ini benar-benar merupakan hal yang kita ingin lakukan. Kita akan membuat sebuah form yang kita tujukan untuk model `Post` kita.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Sama seperti tiap bagian penting dari Django, form memiliki file sendiri, yaitu forms.py.
 
-We need to create a file with this name in the `blog` directory.
+Kita perlu membuat sebuah file dengan nama tersebut di dalam directory `blog`.
 
     blog
        └── forms.py
     
 
-OK, let's open it and type the following code:
+Baiklah, ayo buka dan ketik kode berikut ini:
 
-{% filename %}blog/forms.py{% endfilename %}
+{% filename%} blog / forms.py {% endfilename%}
 
 ```python
-from django import forms
+dari bentuk impor Django dari .Models import Post class PostForm (forms.ModelForm):
 
-from .models import Post
-
-class PostForm(forms.ModelForm):
-
-    class Meta:
-        model = Post
-        fields = ('title', 'text',)
+     class Meta:
+         model = Post
+         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+Pertama, kita perlu mengimport form Django (</code>form django import forms</code>) dan model `Post` kita (`from .models import Post</0>).</p>
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+<p><code>PostForm`, sebagaimana yang barangkali anda duga, adalah nama form kita. Kita perlu memberi tahu Django bahwa bentuk ini adalah ` ModelForm </ 0> (jadi Django akan melakukan sihir untuk kita) - <code> forms.ModelForm </ 0> bertanggung jawab untuk itu.</p>
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+<p>Selanjutnya, kita memiliki <code>class Meta` dimana kita memberitahu django model yang mana yang harus digunakan untuk menciptakan form ini (`model=post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form kita. Dalam skenario ini kita hanya ingin ` title </ 0> dan <code> text </ 0> yang akan terbuka - <code> author </ 0> harus menjadi orang yang saat ini masuk (Anda!) Dan < 0> create_date </ 0> harus disetel secara otomatis saat kita membuat sebuah posting (yaitu dalam kode), bukan?</p>
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+<p>Begitulah caranya! Yang kita perlu lakukan sekarang adalah menggunakan <em>view</em> dan menampilkannya di dalam sebuah template.</p>
 
-So once again we will create a link to the page, a URL, a view and a template.
+<p>Jadi sekali lagi kita akan membuat link ke halaman, URL, tampilan dan template.</p>
 
-## Link to a page with the form
+<h2>Mengarahkan link menuju sebuah halaman dengan Form</h2>
 
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+<p>Sekarang saatnya membuka <code>blog/templates/base.html`. Kita akan menambahkan sebuah link di dalam `div` yang diberi nama `page-header`:
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+{% filename%} blog / templates / blog / base.html {% endfilename%}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+&lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 0>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Perhatikan bahwa kami ingin memanggil tampilan baru kami ` post_new </ 0> . Kelas <code> "glyphicon glyphicon-plus" </ 0> disediakan oleh tema bootstrap yang kami gunakan, dan akan menampilkan tanda tambah bagi kami.</p>
 
-After adding the line, your HTML file should now look like this:
+<p>Setelah menambahkan baris, file HTML Anda sekarang harus terlihat seperti ini:</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename%} blog / templates / blog / base.html {% endfilename%}</p>
 
-```html
-{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
-```
+<pre><code class="html">{% load staticfiles%} 
+&lt;html&gt; 
+&lt;head&gt; &lt;title&gt; Blog Django Girls </ 2> &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt; &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt; &lt;link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt; &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt; </ 1> &lt;body&gt; &lt;div class="page-header"&gt; &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 9 > &lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog </ 10> </ 8> &lt;div class="content container"&gt; &lt;div class="row"&gt; &lt;div class="col-md-8"&gt; {% konten blok%} {% endblock%} </ 13> </ 12> </ 11> </ 7 > </ 0>    
+        
+        
+        
+        
+        
+    
+    
+        
+            
+            
+        
+        
+            
+                
+                    
+                    
+                
+            
+        
+    
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+`</pre> 
+
+Setelah disimpan dan merefresh halaman http://127.0.0.1:8000 anda pasti akan melihat tampilan error yang sudah familiar: `NoReverseMatch`, betul?
 
 ## URL
 
-We open `blog/urls.py` and add a line:
+Kita buka `blog/urls.py` dan tambahkan baris:
 
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-url(r'^post/new/$', views.post_new, name='post_new'),
-```
-
-And the final code will look like this:
-
-{% filename %}blog/urls.py{% endfilename %}
+{% filename%} blog / urls.py {% endfilename%}
 
 ```python
-from django.conf.urls import url
-from . import views
-
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
-]
+url (r '^ post / new / $', views.post_new, name = 'post_new'),
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Dan kode terakhir akan tampak seperti ini:
 
-## post_new view
-
-Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
-
-{% filename %}blog/views.py{% endfilename %}
+{% filename%} blog / urls.py {% endfilename%}
 
 ```python
-from .forms import PostForm
+dari django.conf.urls url impor dari. impor dilihat urlpatterns = [
+     url (r '^ $', views.post_list, name = 'post_list'),
+     url (r '^ post / (? P <pk> \ d +) / $', views.post_detail, name = 'post_detail'),
+     url (r '^ post / new / $', views.post_new, name = 'post_new'),]
 ```
 
-And then our *view*:
+Setelah menyegarkan situs, kita melihat ` AttributeError </ 0> , karena kita tidak memiliki tampilan <code> post_new </ 0> yang diterapkan. Mari kita tambahkan sekarang juga.</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<h2>view post_view</h2>
+
+<p>Sekarang kita buka file <code>blog/views.py` dan tambahkan baris-baris berikut dengan sisa dari baris-baris `rows`: 
+
+{% filename%} blog / views.py {% endfilename%}
 
 ```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
+dari .forms import PostForm
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Dan kemudian * tampilan </ 0> kami :</p> 
+
+{% filename%} blog / views.py {% endfilename%}
+
+```python
+def post_new (request):
+     form = PostForm ()
+     mengembalikan render (request, 'blog / post_edit.html', {'form': form} )
+```
+
+Untuk membuat sebuah form `post` baru, kita perlu memanggil `PostForm` dan mengirimkannya ke dalam template tersebut. Kita akan kembali ke tampilan * ini </ 0> , tapi untuk saat ini, mari kita buat template untuk formulir dengan cepat.</p> 
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
+Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `blog/templates/blog</0>. Untuk membuat sebuah form agar berjalan, kita perlu beberapa hal:</p>
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+<ul>
+<li>We have to display the form. We can do that with (for example) {% raw %}<code>{{ form.as_p }}`{% endraw %}.</li> 
 
-![CSFR Forbidden page](images/csrf2.png)
+* Baris di atas tersebut perlu diletakkan di dalam tag form HTML: `<form method="POST">...</form>`.
+* Kita perlu sebuah tombol `Save`. Kita lakukan hal itu dengan sebuah tombol HTML: `<button type="submit">Save</button>`.
+* Dan akhirnya, tepat setelah tag pembuka `<form ...>` kita perlu menambahkan {% raw%} ` {% csrf_token%} </ 1> {% endraw%} . Ini sangat penting, karena akan menjadikan form anda aman! Jika Anda lupa sedikit ini, Django akan mengeluh saat Anda mencoba menyimpan formulir:</li>
+</ul>
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+<p><img src="images/csrf2.png" alt="Halaman terlarang CSFR" /></p>
 
-{% filename %}blog/templates/blog/post_edit.html{% endfilename %}
+<p>Baiklah, jadi mari kita lihat bagaimana HTML di <code> post_edit.html </ 0> akan terlihat:</p>
 
-```html
-{% extends 'blog/base.html' %}
+<p>{% filename%} blog / templates / blog / post_edit.html {% endfilename%}</p>
 
-{% block content %}
-    <h1>New post</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
-{% endblock %}
-```
+<pre><code class="html">{% meluas 'blog / base.html'%}
 
-Time to refresh! Yay! Your form is displayed!
+ {% blok konten%} 
+&lt;h1&gt; Pos baru </ 0> &lt;form method="POST" class="post-form"&gt; {% csrf_token%} {{form.as_p}} &lt;button type="submit" class="save btn btn-default"&gt; Simpan </ 2> </ 1> {% endblock%}    
+    
+        
+        
+    
 
-![New form](images/new_form2.png)
+`</pre> 
+    Saatnya merefresh web kita! Wow...! Form anda tampil!
+    
+    ![Form Baru](images/new_form2.png)
+    
+    Tapi tunggu sebentar! Saat Anda mengetikkan sesuatu di bidang ` title </ 0> dan <code> text </ 0> dan coba simpan, apa yang akan terjadi?</p>
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+<p>Tidak ada! Kami sekali lagi ada di halaman yang sama dan teks kami hilang ... dan tidak ada tulisan baru yang ditambahkan. Jadi apa yang salah?</p>
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+<p>Jawabnya: tidak ada yang salah. Kita hanya perlu bekerja sedikit lagi pada <em>view kita</em>.</p>
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+<h2>Menyimpan Form</h2>
 
-## Saving the form
+<p>Buka <code> blog / views.py </ 0> sekali lagi. Saat ini semua yang ada pada tampilan <code> post_new </ 0> adalah sebagai berikut:</p>
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+<p>{% filename%} blog / views.py {% endfilename%}</p>
 
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
-
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-if request.method == "POST":
-    [...]
+<pre><code class="python">def post_new (request):
+     form = PostForm ()
+     mengembalikan render (request, 'blog / post_edit.html', {'form': form} )
+`</pre> 
+    
+    Saat kita mengirimkan formulir, kita dibawa kembali ke tampilan yang sama, tapi kali ini kita memiliki beberapa data lagi di ` request </ 0> , lebih khusus lagi pada permintaan <code> .POST </ 0> (penamaannya telah tidak ada hubungannya dengan blog "post", ada kaitannya dengan fakta bahwa kita "memposting" data). Ingat bagaimana dalam file HTML, definisi <code><form>` kami memiliki variabel ` method = "POST" </ 1> ? Semua field dari from tersebut kini dalam <code>request.POST`. Anda tidak boleh merename `POST` apapun namanya (satu-satunya nilai valed dari `method` adalah `GET`, akan tetapi kami tidak punya cukup waktu untuk menjelaskan perbedaannya).
+    
+    Jadi dalam kami * pandangan </ 0> kita memiliki dua situasi yang terpisah untuk menangani: pertama, ketika kita mengakses halaman untuk pertama kalinya dan kami ingin formulir kosong, dan kedua, ketika kita kembali ke * tampilan </ 0> dengan semua data formulir yang baru saja kita ketik. Sehingga kita perlu menambahkan sebuah kondisi (akan kita gunakan `if` untuk keperluan tersebut):</p> 
+    
+    {% filename%} blog / views.py {% endfilename%}
+    
+    ```python
+jika request.method == "POST":
+ [...] 
 else:
-    form = PostForm()
+ form = PostForm ()        
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Saatnya untuk mengisi titik-titik ` [...] </ 0> . Jika <code> method </ 0> adalah <code> POST </ 0> maka kita ingin membuat <code> PostForm </ 0> dengan data dari form, kan? Kami akan melakukannya sebagai berikut:</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename%} blog / views.py {% endfilename%}</p>
 
-```python
-form = PostForm(request.POST)
-```
+<pre><code class="python">form = PostForm (request.POST)
+`</pre> 
 
 The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Kita cek apakah form tersebut valid dan jika ya, kita dapat menyimpannya!
 
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-if form.is_valid():
-    post = form.save(commit=False)
-    post.author = request.user
-    post.published_date = timezone.now()
-    post.save()
-```
-
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
-
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
-
-{% filename %}blog/views.py{% endfilename %}
+{% filename%} blog / views.py {% endfilename%}
 
 ```python
-from django.shortcuts import redirect
+jika form.is_valid ():
+     post = form.save (komit = salah)
+     post.author = request.user
+     post.published_date = timezone.now ()
+     post.save () post.save ()
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Pada dasarnya, kita memiliki dua hal di sini: kita simpan form dengan ` form.save </ 0> dan kita tambahkan seorang penulis (karena tidak ada bidang <code> author </ 0> di <code> PostForm </ 0> dan bidang ini diperlukan). <code> commit = Salah </ 0> berarti kita tidak ingin menyimpan model <code> Post </ 0> - kita ingin menambahkan penulis terlebih dahulu. Sebagian besar waktu Anda akan menggunakan <code> form.save () </ 0> tanpa <code> commit = False </ 0> , namun dalam kasus ini, kita perlu menyediakannya. <code> post.save () </ 0> akan menyimpan perubahan (menambahkan penulis) dan sebuah posting blog baru dibuat!</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>Akhirnya, akan sangat mengagumkan jika kita bisa langsung masuk ke halaman <code> post_detail </ 0> untuk posting blog kita yang baru dibuat, bukan? Untuk melakukan itu kita memerlukan satu impor lagi:</p>
 
-```python
-return redirect('post_detail', pk=post.pk)
-```
+<p>{% filename%} blog / views.py {% endfilename%}</p>
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+<pre><code class="python">dari django.shortcuts import redirect
+`</pre> 
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Tambahkan di awal file Anda. Dan sekarang kita bisa mengatakan, "pergi ke halaman ` post_detail </ 0> untuk posting yang baru dibuat":</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename%} blog / views.py {% endfilename%}</p>
 
-```python
-def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+<pre><code class="python">pengalihan kembali ('post_detail', pk = post.pk)
+`</pre> 
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+` post_detail </ 0> adalah nama tampilan yang ingin kita tuju. Ingat bahwa <em>view</em> ini memerlukan sebuah variabel <code>pk`? Untuk menyebarkannya ke tampilan, kita menggunakan ` pk = post.pk </ 0> , di mana <code> post </ 0> adalah postingan blog yang baru dibuat!</p>
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+<p>Baiklah, kita sudah banyak bicara, tapi kita mungkin ingin melihat seperti apa tampilan <em> lihat </ 0> sekarang juga kan?</p>
 
-That is awesome!
+<p>{% filename%} blog / views.py {% endfilename%}</p>
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+<pre><code class="python">def post_new (request):
+     if request.method == "POST":
+         form = PostForm (request.POST)
+         jika form.is_valid ():
+             post = form.save (commit = false)
+             post.author = request.user
+             post.             publish_date = timezone.now ()
+ post.save ()
+             pengalihan kembali ('post_detail', pk = post.pk)
+     else:
+         form = PostForm ()
+     mengembalikan render (permintaan, 'blog / post_edit.html', {'form': bentuk} )
+`</pre> 
 
-![Logged in error](images/post_create_error.png)
+Mari lihat, apakah dapat berjalan. Pergi ke halaman http://127.0.0.1:8000/post/new/, tambahkan ` judul </ 0> dan <code> teks </ 0> , simpan ... dan voila! Posting blog baru ditambahkan dan kami diarahkan ke halaman <code> post_detail </ 0> !</p>
 
-## Form validation
+<p>Anda mungkin telah memperhatikan bahwa kami menetapkan tanggal publikasi sebelum menyimpan pos. Nantinya, kami akan mengenalkan <em> tombol publish </ 0> di <strong> Django Girls Tutorial: Extensions </ 1> .</p>
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+<p>Sejauh ini bagus !</p>
 
-Try to save the form without `title` and `text`. Guess what will happen!
+<blockquote>
+  <p>Karena kita baru saja menggunakan antarmuka admin Django, sistem saat ini berpikir kita masih login. Ada beberapa situasi yang bisa menyebabkan kita keluar (menutup browser, memulai ulang DB, dll.). Jika, ketika membuat sebuah posting, Anda menemukan bahwa Anda mendapatkan kesalahan yang mengacu pada kurangnya pengguna yang masuk, masuk ke halaman admin http://127.0.0.1:8000/admin dan masuk lagi. Ini sementara akan menyelesaikan permasalahan. Ada penyelesain permanen yang menanti anda pada bab <strong>Homework: add security to your website!</strong> setelah tutorial utama.</p>
+</blockquote>
 
-![Form validation](images/form_validation2.png)
+<p><img src="images/post_create_error.png" alt="Login Error" /></p>
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+<h2>Validasi Form</h2>
 
-## Edit form
+<p>Sekarang, akan kami perlihatkan betapa hebatnya form django itu. Sebuah post blog perlu memiliki field <code>title` dan `text`. Pada model ` Post </ 0> kami tidak mengatakan bahwa bidang ini (berlawanan dengan <code> published_date </ 0> ) tidak diperlukan, jadi Django, secara default, mengharapkannya disetel.</p>
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+<p>Cobalah untuk menyimpan formulir tanpa <code> judul </ 0> dan <code> teks </ 0> . Coba tebak apa yang akan terjadi!</p>
 
-Open `blog/templates/blog/post_detail.html` and add the line
+<p><img src="images/form_validation2.png" alt="Validasi Form" /></p>
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+<p>Django berusaha untuk memvalidasi bahwa semua bidang dalam formulir kami benar. Bukankah itu mengagumkan?</p>
+
+<h2>Form Edit</h2>
+
+<p>Kini kita tahu bagaimana menambah form baru. Tetapi, bagaimana jika kita ingin mengedit yang sudah ada ? Ini sangat mirip dengan apa yang baru saja kita lakukan. Mari buat beberapa hal penting dengan cepat. (Jika Anda tidak mengerti sesuatu, Anda harus bertanya kepada pelatih Anda atau melihat bab-bab sebelumnya, karena kami telah menyelesaikan semua langkah ini.)</p>
+
+<p>Buka <code> blog / templates / blog / post_detail.html </ 0> dan tambahkan barisnya</p>
+
+<p>{% filename%} blog / templates / blog / post_detail.html {% endfilename%}</p>
+
+<pre><code class="html">&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+`</pre> 
+
+sehingga template akan terlihat seperti ini:
+
+{% filename%} blog / templates / blog / post_detail.html {% endfilename%}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+{% meluas 'blog / base.html'%}
+
+ {% blok konten%} 
+&lt;div class="post"&gt; {% jika post.published_date%} &lt;div class="date"&gt; {{post.published_date}} </ 1> {% endif%} <2 > </ 2> &lt;h1&gt; {{post.title}} </ 3> &lt;p&gt; {{post.text | linebreaksbr}} </ 4> </ 0> {% endblock%}    
+        
+            
+                
+            
+        
+        
+        
+        
+    
+
 ```
 
-so that the template will look like this:
+Dalam `blog/urls.py` kita tambah baris ini:
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+{% filename%} blog / urls.py {% endfilename%}
+
+```python
+    url (r '^ post / (? P <pk> \ d +) / edit / $', views.post_edit, name = 'post_edit'),
+```
+
+Kita akan menggunakan kembali template `blog/templates/blog/post_edit.html`, sehingga sesuatu yang belum adalah sebuah *view*.
+
+Mari buka ` blog / views.py </ 0> dan tambahkan ini di bagian akhir file:</p>
+
+<p>{% filename%} blog / views.py {% endfilename%}</p>
+
+<pre><code class="python">def post_edit (request, pk):
+     post = get_object_or_404 (Post, pk = pk)
+     jika request.method == "POST":
+         form = PostForm (request.POST, instance = post)
+         if form.is_valid ():
+             post = form .save (commit = False)
+             post.author = request.user
+             post.published_date = timezone.now ()
+             post.save ()
+             pengalihan kembali ('post_detail', pk = post.pk)
+     else:
+         form = PostForm (instance = post )
+     mengembalikan render (permintaan, 'blog / post_edit.html', {'form': form} )
+`</pre> 
+
+Ini tampak hampir sama persis dengan view `post_new` kita, benar ? Tetapi tidak seluruhnya sama persis. Untuk satu, kami melewatkan parameter ` pk </ 0> tambahan dari url. Selanjutnya, kita mendapatkan <code> Post </ 0> model yang ingin kita edit dengan <code> get_object_or_404 (Post, pk = pk) </ 0> dan kemudian, ketika kita membuat sebuah form, kita melewati postingan ini sebagai < 0> contoh </ 0> , saat kita menyimpan form ...</p>
+
+<p>{% filename%} blog / views.py {% endfilename%}</p>
+
+<pre><code class="python">form = PostForm (request.POST, instance = post)
+`</pre> 
+
+... dan saat kami baru saja membuka formulir dengan tulisan ini untuk diedit:
+
+{% filename%} blog / views.py {% endfilename%}
+
+```python
+form = PostForm (contoh = post)
+```
+
+Baiklah, mari kita uji jika berhasil! Ayo pergi ke halaman ` post_detail </ 0> . Harus ada tombol edit di pojok kanan atas:</p>
+
+<p><img src="images/edit_button2.png" alt="Tombol Edit" /></p>
+
+<p>Ketika anda mengkliknya, anda aka melihat form tersebut berisi post blog kita:</p>
+
+<p><img src="images/edit_form2.png" alt="Form Edit" /></p>
+
+<p>Jangan ragu untuk mengganti judul atau teks dan simpan perubahannya!</p>
+
+<p>Selamat! Aplikasi anda makin lama makin lengkap!</p>
+
+<p>Jika Anda memerlukan informasi lebih lanjut tentang formulir Django, Anda harus membaca dokumentasi: https://docs.djangoproject.com/en/1.11/topics/forms/</p>
+
+<h2>Keamanan</h2>
+
+<p>Telah berhasil membuat post baru hanya dengan melakukan klik pada sebuah link itu hebat! Tapi, sekarang seseorang yang mengunjungi website anda akan dapat memposting postingan baru dan itu mungkin bukan hal yang anda inginkan! Tapi sekarang, siapa pun yang mengunjungi situs Anda akan dapat membuat posting blog baru, dan itu mungkin bukan sesuatu yang Anda inginkan. Mari kita membuatnya jadi tombol muncul untuk Anda tapi tidak untuk orang lain.</p>
+
+<p>Dalam <code>blog/templates/blog/base.html`, temukan `div` dari `page-header` kita dan anchor tag yang anda letakkan sebelumnya. Tampilannya seharusnya seperti ini:
+
+{% filename%} blog / templates / blog / base.html {% endfilename%}
 
 ```html
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endblock %}
+&lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 0>
 ```
 
-In `blog/urls.py` we add this line:
+Kami akan menambahkan tag ` {% jika%} </ 0> ke ini, yang akan membuat tautan hanya muncul untuk pengguna yang masuk ke admin. Sekarang, itu hanya kamu! Ubah tag 0>&lt;a&gt;` agar menjadi ini:
 
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
-```
-
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
-
-Let's open `blog/views.py` and add this at the very end of the file:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
-
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-form = PostForm(request.POST, instance=post)
-```
-
-…and when we've just opened a form with this post to edit:
-
-{% filename %}blog/views.py{% endfilename %}
-
-```python
-form = PostForm(instance=post)
-```
-
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
-
-![Edit button](images/edit_button2.png)
-
-When you click it you will see the form with our blog post:
-
-![Edit form](images/edit_form2.png)
-
-Feel free to change the title or the text and save the changes!
-
-Congratulations! Your application is getting more and more complete!
-
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
-
-## Security
-
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
-
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
-
-```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```
-
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+{% filename%} blog / templates / blog / base.html {% endfilename%}
 
 ```html
 {% if user.is_authenticated %}
@@ -394,54 +380,48 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Ini ` {% jika%} </ 0> akan menyebabkan tautan dikirim ke browser hanya jika pengguna yang meminta halaman masuk. Ini tidak melindungi adanya penulisan post baru seluruhnya, tapi cukup bagus untuk langkah awal. Kita akan mempelajari masalah keamanan lebih jauh pada pelajaran tentang extension.</p>
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+<p>Ingat ikon edit yang baru saja kita tambahkan ke halaman detail kita? Kami juga ingin menambahkan perubahan yang sama di sana, sehingga orang lain tidak dapat mengedit posting yang ada.</p>
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+<p>Buka <code> blog / templates / blog / post_detail.html </ 0> dan temukan baris ini:</p>
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+<p>{% filename%} blog / templates / blog / post_detail.html {% endfilename%}</p>
+
+<pre><code class="html">&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+`</pre> 
+
+Ubah ke ini:
+
+{% filename%} blog / templates / blog / post_detail.html {% endfilename%}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+{% jika user.is_authenticated%} 
+&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0> {% endif%}     
+
 ```
 
-Change it to this:
+Karena Anda mungkin masuk, jika Anda menyegarkan halaman, Anda tidak akan melihat sesuatu yang berbeda. Muatkan halaman di browser lain atau jendela penyamaran (disebut "InPrivate" di Windows Edge), meskipun, dan Anda akan melihat bahwa tautan tidak muncul, dan ikonnya juga tidak ditampilkan!
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+## Satu hal lagi: saatnya melakukan deploy!
 
-```html
-{% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-{% endif %}
-```
+Mari kita lihat apakah itu semua dapat berjalan di PythonAnywhere. Saatnya melakukan deploy lagi!
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+* Pertama, lakukan commit kode baru anda dan kirim ke GitHub:
 
-## One more thing: deploy time!
+{% filename%} baris perintah {% endfilename%}
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
-
-* First, commit your new code, and push it up to Github:
-
-{% filename %}command-line{% endfilename %}
-
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
+    $ git status $ git add --all. $ git status $ git commit -m "Ditambahkan tampilan untuk membuat / mengedit posting blog di dalam situs." $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename%} baris perintah {% endfilename%}
 
-    $ cd my-first-blog
-    $ git pull
-    [...]
+    $ cd my-first-blog $ git pull
+     [...]
     
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+* Yang terakhir, cari [Web tab](https://www.pythonanywhere.com/web_app_setup/) dan klik **Reload**.
 
-And that should be it! Congrats :)
+Dan seharusnya dapa berjalan! Selamat :)
