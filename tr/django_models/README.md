@@ -1,40 +1,40 @@
-# Django models
+# Django modelleri
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Şimdi blogumuzdaki bütün yazıları kaydedebileceğimiz bir şey oluşturmak istiyoruz. Ama bunu yapabilmek için önce `nesne` dediğimiz şeylerden (objects) bahsetmemiz gerekiyor.
 
-## Objects
+## Nesneler (Objects)
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Programlamada `nesneye yönelik programlama` denen bir kavram bulunuyor. Buradaki ana fikir her şeyi sıkıcı program komutları dizisi şeklinde yazmak yerine, konseptleri modelleyip birbirleri ile nasıl etkileşime geçeceklerini tanımlamak.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Peki bir nesne nedir? Nesne bir özellikler ve hareketler bütünüdür. Kulağa garip geliyor olabilir, bir örnekle açıklayalım.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Eğer bir kediyi modellemek istiyorsak, `Kedi` nesnesini oluştururuz ve bu nesne şöyle özelliklere sahip olur: `renk`, `yas`, `ruh_hali` (örneğin; iyi, kötü, uykulu ;)) ve `sahibi` (ki bu da bir `insan` nesnesi olur ya da eğer sokak kedisi ise bu özellik boş olabilir).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Ayrıca `Kedi` bazı hareketlere sahiptir: `miyavla`, `tirmala` ya da `beslen` (bu durumda kediye biraz `KediMamasi` vermemiz gerekir ki o da kendine ait özellikleri olan başka bir nesne olarak tanımlanabilir, bu durumda onun özellikleri arasında da `tat` yer alabilir).
 
-    Cat
+    Kedi
     --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+    renk 
+    yas 
+    ruh_hali 
+    sahibi 
+    miyavla() 
+    tirmala() 
+    beslen(kedi_mamasi)
     
 
-    CatFood
-    --------
-    taste
+    KediMamasi
+    -------- 
+    tat
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Yani aslında ana fikir, gerçek nesneleri kod içinde özellikleri (`nesne özellikleri`) ve hareketleri (`metodlar`) ile tanımlamak.
 
-How will we model blog posts then? We want to build a blog, right?
+Öyleyse blog gönderilerini nasıl modelleyeceğiz? Bir blog tasarlamak istiyoruz, degil mi?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Cevaplamamız gereken soru: Bir blog gönderisi nedir? Özellikleri ne olmalıdır?
 
-Tabii ki blog gönderimizin içeriği için yazı ve bir de başlık lazım, değil mi? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Tabii ki blog gönderimizin içeriği için yazı ve bir de başlık lazım, değil mi? Kimin yazdığını da bilsek iyi olur - dolayısı ile bir de yazara ihtiyacımız var. Son olarak, gönderinin ne zaman yaratıldığını ve yayınlandığını da bilmek isteyebiliriz.
 
     Post
     ------
@@ -55,15 +55,15 @@ Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye
 
 Nesnenin ne olduğunu bildiğimize göre, blog gönderimiz için bir Django modeli oluşturabiliriz.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. Verilerimizi depolamak için SQLite veritabanını kullanacağız. This is the default Django database adapter – it'll be enough for us right now.
+Django'da modeller özel bir çeşit nesnedir - `veritabanı`'na kaydedilir. Veritabanı ise veri topluluğuna verdiğimiz isim. Veritabanında, kullanıcılar, blog gönderileri, vs. ile ilgili bilgileri saklarız. Verilerimizi depolamak için SQLite veritabanını kullanacağız. Bu varsayılan Django veritabanı adaptörü - şimdilik bizim için yeterli olacaktır.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Veritabanındaki bir modeli, sütunları (alan adı) ve satırları (veri) olan bir hesap çizelgesi olarak düşünebilirsiniz.
 
 ### Uygulama oluşturma
 
 Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor ( `djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X ve Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -73,7 +73,7 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Şimdi oluşturulmuş yeni bir `blog` dizinini göreceksiniz ve bu, dizinlerin bir numarasını içerir. Bizim projemizdeki dizinler ve dosyalar bunun gibi görünmeli:
 
     djangogirls
     ├── blog
@@ -94,7 +94,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Bir uygulamayı oluşturduktan sonra, Django’ya da onu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonunda ürün bunun gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,11 +110,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Post (Blog gönderisi) modeli oluşturma
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+`blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - bu blog postumuzu tanımlayacağımız bir yerdir.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+`blog/models.py`‘ı açalım, burdaki herşeyi sil, ve kodu bunun gibi yaz:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,40 +140,40 @@ class Post(models.Model):
         return self.title
 ```
 
-> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığınızdan emin olun. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığınızdan emin olun. İki alt çizgi Python dilinde sık kullanılır, bazen "dunder" olarak da anılır ("double-underscore"un kısaltması).
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiğini açıklayacağız!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitlerin eklendiği satırlardır. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` - bu satır modelimizi tanımlar (bu bir `nesne`‘dir).
 
 - `class` bir nesne tanımladığımızı belirten bir anahtar kelimedir.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` modelimizin ismi. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). Class isimleri her zaman büyük harf ile başlamalıdır.
 - `models.Model` Post'un bir Django Modeli olduğunu belirtir, bu şekilde Django onu veritabanında tutması gerektiğini bilir.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `title`, `text`, `created_date`, `published_date` ve `author`. Bunun için her alanın türünü tanımlamamız gerekir (Bu metin mi? Bir numara mı? Bir tarih mi? Bir kullanıcı gibi, başka bir nesne ile bağlantılı mı?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` - belirli bir uzunluktaki metinleri tanımlamak için kullanılır.
+- `models.TextField` - bu da uzun metinleri tanımlar. Blog gönderileri için biçilmiş kaftan, değil mi?
+- `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
+- `models.ForeignKey` - başka bir modele referans tanımlar.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Çok zaman aldığından burada her bit kodunu açıklamayacağız. Model dosyalarından daha çok bilgi almak ve yukarıdaki açıklamalardan farklı tanımlamaları öğrenmek istiyorsanız Django'nun belgelerine daha çok bakmalısınız (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+What about `def publish(self):`? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` means that this is a function/method and `publish` is the name of the method. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Yöntemler çoğu kez bir şeylere `return`. `__str__` yönteminde bunun bir örneği vardır. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Çünkü Python boşlukta duyarlıdır, yöntemlerimizi sınıfın içine sokmalıyız. Aksi takdirde, yöntemler sınıfın üyesi olmaz, ve bazı beklenmedik davranışlar elde edebilirsiniz.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Hala modeller hakkında bir şeyler belli değil ise, koçuna sormaktan çekinme! Özellikle hem nesneleri hem de fonksiyonları aynı anda öğrenmenin karmaşık olduğunu biliyoruz. Ama şimdi umarız ki senin için biraz daha az sihirli görünüyor!
 
-### Create tables for models in your database
+### Modeller için veritabanında tablo oluşturma
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Buradaki son adım, yeni modelimizi veritabanımıza eklemek. İlk olarak, modelimizdeki bazı değişikliklerden Django’yu haberdar etmeliyiz. (Daha yeni oluşturduk!) konsol pencerenize gidin ve `python manage.py makemigrations blog` yazın. Bunun gibi görünecek:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satır{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
@@ -182,11 +182,11 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız beklenmedik hata mesajlarını verebilecek önceki sürümü çalıştıracaktır.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django bize veritabanımıza uygulayabileceğimiz bir taşıma dosyası oluşturdu. `python manage.py migrate blog` yaz ve çıktı aşağıdaki gibi olmalıdır:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satır{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
@@ -196,4 +196,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Yaşasın! Model yazımız şimdi veritabanımızda! Onu görmek güzel olur, değil mi? Yazınızın neye benzediğini görmek için bir sonraki bölüme geçin!
