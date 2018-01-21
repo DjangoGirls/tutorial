@@ -1,4 +1,4 @@
-# Django admin
+# Consola de admin din Django
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
@@ -13,11 +13,11 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Așa cum poți observa, importăm (includem) modelul Post definit în capitolul anterior. Pentru a face modelul vizibil în consola de admin, trebuie să înregistrăm modelul cu instrucțiunea `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, acum este timpul să ne uităm la modelul Post. Reamintește-ți să rulezi comanda ` python manage.py runserver ` în linia de comandă pentru a rula serverul web. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
-![Login page](images/login_page2.png)
+![Pagina de login](images/login_page2.png)
 
 To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
