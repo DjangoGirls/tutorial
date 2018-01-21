@@ -1,3 +1,3 @@
-# code editor
+# sulatan ng Wikang Pamprograma
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Ang Code editor ay isang aplikasyon na nagbigay sayo na pagkakataon na i-save ang iyong code para mabalikan mo mayamaya. Pwede kang matuto kung saan ka pede makakuha mula [kabanata ng Code editor](./code_editor/README.md)
