@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# DjangoのORMとクエリセット
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+この章では、Djangoのデータベース接続方法と、データストアについて学びます。やってみましょう！
 
-## What is a QuerySet?
+## クエリセットとは？
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-It's easiest to learn by example. Let's try this, shall we?
+実際に動かしてみるのが一番わかりやすいので、試してみましょう。
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+コンソール画面を開いて、次のコマンドを入力してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+次のような表示に切り替わるでしょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ You're now in Django's interactive console. It's just like the Python prompt, bu
 
 ### All objects
 
-Let's try to display all of our posts first. You can do that with the following command:
+最初に、ポストデータを全部表示させてみましょう。次のコマンドで、ポストのデータを全部表示させることが出来ます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -62,7 +62,7 @@ This is a list of the posts we created earlier! We created these posts using the
 
 ### Create object
 
-This is how you create a new Post object in database:
+データベースに、新しいPostを作成するには、次のようにします。
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@ This is how you create a new Post object in database:
 
 But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
 
-Let's import User model first:
+そうです、さっきと同じです。Userモデルも先にインポートしておきましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+どんなユーザが、データベースに登録されてましたっけ？覗いてみましょうか。
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,7 +99,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 
 As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
 
-Now we can finally create our post:
+さあ、遂にコンソール画面から、最初のポストを作成出来ますね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Now we can finally create our post:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Hurray! Wanna check if it worked?
+どうでしょうか？ちゃんと出来ているか、確認しておきましょうね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -124,7 +124,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 
 ### Filter objects
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. 全部のポストを取り出すのではなく、olaさんのポストだけを取り出したい場合は、Post.objects.all() の all を filter に変更します。 In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. このようになりますね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -142,7 +142,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** title と contains の間に、アンダーバーが2個続いていますが、 Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
