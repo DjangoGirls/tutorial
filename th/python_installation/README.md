@@ -1,12 +1,12 @@
-# Let’s start with Python
+# เริ่มต้นด้วย Python
 
-We're finally here!
+ในที่สุด เราก็มาถึงจุดนี้!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+ขอเราเล่าก่อนละกันว่า Python คืออะไร Python นั้นคือภาษาการโปรแกรมที่ได้รับความนิยมอย่างมาก สามารถนำไปสร้างซอฟต์แวร์ต่างๆ ได้มากมายเช่น เว็บไซต์ เกม ซอฟต์แวร์ด้านวิทยาศาสตร์ กราฟิก และอื่นๆ อีกมากมาย
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+ภาษา Python กำเนิดขึ้นช่วงปลาย 1980 และเป้าหมายหลักของภาษาคือ มนุษย์อย่างเราๆ สามารถอ่านได้ง่าย (ไม่เพียงเฉพาะเครื่องเท่านั้น) This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# การติดตั้ง Python
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
