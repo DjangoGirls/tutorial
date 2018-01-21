@@ -51,7 +51,7 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Introduction to Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Ce este Django?](../django/README.md)
 
 # Enjoy the workshop!
 
