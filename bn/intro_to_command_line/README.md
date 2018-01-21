@@ -404,7 +404,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Summary
+## সারাংশ
 
 Here is a summary of some useful commands:
 
