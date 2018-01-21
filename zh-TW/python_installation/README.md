@@ -1,12 +1,12 @@
-# Let’s start with Python
+# 讓我們從 Python 開始吧
 
-We're finally here!
+我們終於到了這裡！
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+但是首先，讓我們告訴你什麼是 Python。Python 是一種非常流行的程式設計語言，可以用來創建網站、 遊戲、 科學軟體、 圖形和很多，更多。
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python 起源于 1980 年代後期，其主要目標是針對人類的高可讀性 (不只是機器！)。 This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Python 安裝
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
