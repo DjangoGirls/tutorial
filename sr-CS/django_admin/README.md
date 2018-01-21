@@ -1,4 +1,4 @@
-# Django admin
+# Django Admin
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
