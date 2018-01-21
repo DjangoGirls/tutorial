@@ -1,12 +1,12 @@
-# Let’s start with Python
+# Začnimo s programiranjem v Pythonu
 
-We're finally here!
+Končno!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Za začetek povejmo, kaj Python pravzaprav je. Python je zelo priljubljen programski jezik, ki ga lahko uprabljamo za delanje spletnih strani, igric, računalniške grafike in še mnogih drugih programov.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python je nastal v poznih 80-ih letih. Njegov glavni namen je, da je prijazen tudi do programerjev (ne le do računalnikov!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Namestitev Pythona
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
