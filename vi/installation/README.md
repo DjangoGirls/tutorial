@@ -1,6 +1,6 @@
-# If you're doing the tutorial at home
+# Nếu bạn làm theo hướng dẩn tại nhà
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Nếu bạn làm theo hướng dẩn tại nhà mà không phải ở [Sự kiện Django Girls](https://djangogirls.org/events/), bạn hoàn toàn có thể bỏ qua chương này và qua chương [Internet hoạt động như thế nào](../how_the_internet_works/README.md).
 
 This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
