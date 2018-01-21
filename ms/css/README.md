@@ -1,20 +1,20 @@
-# CSS – make it pretty!
+# CSS - menjadikannya cantik!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Blog kita masih kelihatan hodoh, betul? Masa untuk menjadikannya cantik! Kami akan menggunakan CSS untuk itu.
 
-## What is CSS?
+## Apakah CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) adalah bahasa yang digunakan untuk menggambarkan rupa dan pemformatan laman web yang ditulis dalam bahasa markup (seperti HTML). Rawat ia sebagai make-up untuk laman web kami. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Tetapi kita tidak mahu bermula dari awal lagi, bukan? Sekali lagi, kami akan menggunakan sesuatu yang dilancarkan oleh programmer di Internet secara percuma. Menghidupkan semula roda tidak menyenangkan, anda tahu.
 
-## Let's use Bootstrap!
+## Mari kita gunakan Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap adalah salah satu kerangka kerja HTML dan CSS yang paling populer untuk mengembangkan situs web yang indah: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Ia ditulis oleh pengaturcara yang bekerja untuk Twitter. Kini ia dibangunkan oleh sukarelawan dari seluruh dunia!
 
-## Install Bootstrap
+## Memasang Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -25,21 +25,21 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Ini tidak menambah sebarang fail pada projek anda. Ia hanya menunjuk kepada fail yang wujud di Internet. Teruskan saja, buka laman web anda dan muat semula halaman. Ini dia!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Kelihatan lebih cantik!
 
-## Static files in Django
+## Fail Statik dalam Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Akhir sekali, kita akan melihat dengan lebih dekat kepada **fail-fail statik**. Fail statik adalah semua CSS dan imej anda. Kandungan mereka tidak bergantung pada konteks permintaan dan akan sama bagi setiap pengguna.
 
-### Where to put static files for Django
+### Di mana meletakkan fail-fail statik untuk Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Kita melaksanakannya dengan mencipta folder yang dipanggil `statik` di dalam aplikasi blog ini:
 
     djangogirls
     ├── blog
@@ -49,11 +49,11 @@ We do that by creating a folder called `static` inside the blog app:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django secara automatik akan mencari folder yang dipanggil "statik" dalam folder folder apl anda. Kemudian ia akan dapat menggunakan kandungannya sebagai fail statik.
 
-## Your first CSS file!
+## Fail CSS anda yang pertama!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Mari buat fail CSS sekarang, untuk menambah gaya anda sendiri ke halaman web anda. Cipta satu direktori baru yang dipanggil `css` dalam direktori `statik`. Kemudian cipta fail baru yang dipanggil `blog.css` di dalam direktori `css`. Sedia?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Masa untuk menulis beberapa CSS! Buka fail `blog/static/css/blog.css` dalam Penyunting kod anda.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Tetapi mari kita lakukan sekurang-kurangnya sedikit. Mungkin kita boleh menukar warna header? Untuk memahami warna, komputer menggunakan kod khas. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Anda juga boleh menggunakan [warna-warna yang telah ditetapkan](http://www.w3schools.com/colors/colors_names.asp), seperti `red` dan `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Dalam fail `blog/static/css/blog.css`, anda perlu menambah kod berikut:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` adalah Pilihan CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dalam kes ini, kita sedang memberitahunya untuk menukar warna kepada `#FCA205`, iaitu warna oren. Sudah tentu, anda boleh meletakkan warna anda sendiri di sini!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Di dalam sebuah fail CSS, kita tentukan gaya bagi unsur-unsur dalam fail HTML. Cara pertama kami mengenal pasti elemen adalah dengan nama elemen. Anda mungkin ingat ini sebagai tanda dari bahagian HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class dan id adalah nama-nama yang anda berikan pada unsur sendiri. Kelas menentukan kumpulan elemen, dan id titik untuk unsur-unsur tertentu. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Pelayar membaca fail dalam perintah mereka diberikan, jadi kami harus memastikan kalau semua ini adalah di tempat yang tepat. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
 
-Your file should now look like this:
+File anda sekarang harus kelihatan seperti ini:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,13 +135,13 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+OK, simpan file dan refresh situsnya
 
-![Figure 14.2](images/color2.png)
+![Rajah 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Kerja yang bagus! Mungkin kita juga ingin memberi kami web sedikit udara dan meningkatkan margin di sebelah kiri? Mari kita coba yang ini!
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename%} blog / static / css / blog.css {% endfilename%}
 
 ```css
 body {
@@ -149,9 +149,9 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Tambah yang anda CSS, simpan fail dan melihat bagaimana ia berfungsi!
 
-![Figure 14.3](images/margin2.png)
+![Rajah 14.3](images/margin2.png)
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
@@ -178,7 +178,7 @@ h1 a {
 
 Great!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Seperti kekurangan di atas, CSS memiliki konsep kelas. Ini membolehkan anda menamakan sebahagian daripada kod HTML dan menggunakan gaya hanya untuk bahagian ini, tanpa menjejaskan bahagian lain. Ini boleh menjadi sangat membantu! Mungkin anda mempunyai dua div yang melakukan sesuatu yang berbeza (seperti header dan pos anda). Kelas boleh membantu anda membuat mereka kelihatan berbeza.
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Sekarang kita akan menambah deklarasi blok untuk berbeza pemilih. Selectors starting with `.` relate to classes. Ada banyak tutorial dan penjelasan mengenai CSS di Web yang boleh membantu kau mengerti berikut kod. For now, just copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Kemudian mengelilingi HTML kod yang memaparkan catatan dengan deklarasi kelas. Menggantikan ini:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Simpan fail tersebut dan muat semula laman web anda.
 
-![Figure 14.4](images/final.png)
+![Rajah 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Nampak hebat, kan? Melihat kod kita hanya disisipkan untuk mencari tempat di mana kita ditambah kelas di HTML dan menggunakan mereka dalam CSS. Di mana anda akan membuat perubahan jika anda ingin tarikh untuk menjadi biru?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Jangan takut untuk bermain-main dengan CSS ini sedikit dan cuba untuk mengubah beberapa hal. Bermain dengan CSS boleh membantu anda untuk memahami apa yang perkara-perkara yang berbeza lakukan. Jika anda memecahkan sesuatu, jangan khawatir – anda sentiasa boleh membatalkannya!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Ia boleh membantu anda mempelajari semua tentang membuat anda laman web lebih cantik dengan CSS.
 
-Ready for the next chapter?! :)
+Sedia untuk bab seterusnya ?! :)
