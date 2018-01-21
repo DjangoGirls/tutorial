@@ -1,12 +1,12 @@
-# Deploy!
+# Déployer!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Note** Le chapitre suivant peut-être un peu difficile à comprendre. Accrochez-vous et allez jusqu'au bout : le déploiement fait partie intégrale du processus de développement d'un site internet. Ce chapitre a été placé au milieu du tutoriel afin de permettre à votre coach de vous aider dans cette étape un peu compliquée qu'est la mise en ligne de votre site. Si jamais vous manquez de temps à la fin de la journée, ne vous inquiétez pas ! Une fois ce chapitre terminé, vous serez en mesure de finir le tutoriel chez vous :)
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Until now, your website was only available on your computer. Now you will learn how to deploy it! Déployer signifie mettre en ligne votre site pour que d'autres personnes puissent enfin voir votre app. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Nous allons aussi utiliser les services [GitHub](https://www.github.com), ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
@@ -16,23 +16,23 @@ These three places will be important to you. Your local computer will be the pla
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Démarrer un dépôt Git
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git conserve toutes les modifications apportées à un ensemble de fichiers dans un "repository" (ou "dépôt"). Nous allons devoir en créer un pour notre projet. Ouvrez votre terminal et allez dans le répertoire `djangogirls`. Ensuite, tapez les commandes suivantes :
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Vous devriez vous trouver dans le dossier `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
     $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+    Initialise un dépôt Git vide à l'emplacement ~/djangogirls/.git/
+    $ git config --global user.name "Votre nom"
+    $ git config --global user.email you@exemple.com
     
 
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git va surveiller et conserver les modifications concernant l'ensemble des fichiers et dossiers présents dans ce répertoire, à l'exception de certains fichiers que nous aimerions exclure. Pour cela, nous allons créer un fichier appelé `.gitignore` dans le répertoire principal du projet. Ouvrez votre éditeur et créez un nouveau fichier en copiant le contenu suivant :
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,11 +47,11 @@ Git will track changes to all the files and folders in this directory, but there
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Attention** : le point au début du nom du fichier est important ! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour enregistrer nos changements, nous allons devoir taper les commandes suivantes :
 
 {% filename %}command-line{% endfilename %}
 
@@ -113,13 +113,13 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
     {% filename %}command-line{% endfilename %}
     
 
-Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
+Username for 'https://github.com': votre-nom Password for 'https://votre-nom@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
 
 - [new branch] master -> master Branch master set up to track remote branch master from origin.
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+    Your code is now on GitHub. Allez jeter un coup d’œil !  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
     
     
     # Setting up our blog on PythonAnywhere
@@ -137,7 +137,7 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     
     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    Importons notre code depuis Github vers PythonAnywhere en créant un "clone" de notre déôpt. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -229,15 +229,15 @@ $ source myvenv/bin/activate
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. Pour le moment, vous n'avez pas besoin d'en savoir plus ! Ne vous inquiétez pas : nous reviendrons plus tard sur les fichiers statiques (partie CSS). L'objectif de ce chapitre est de poser toutes les bases nécessaires au déploiement pour passer rapidement à la suite :)
 
-Hit **Save** and then go back to the **Web** tab.
+Cliquez sur **Save** puis, retournez dans l'onglet **Web**.
 
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+Et voilà, c'est fini ! Vous n'avez plus qu'à cliquer sur le gros bouton vert **Reload** et vous devriez voir votre application en ligne. Le lien vers votre site est situé en haut de l'onglet web de PythonAnywhere.
 
-## Debugging tips
+## Conseils en cas de bug
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
+Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers ces fichiers dans l'onglet [Web](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier. Les bugs les plus fréquents que vous pouvez rencontrer sont les suivants:
 
 - Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
@@ -245,16 +245,16 @@ If you see an error when you try to visit your site, the first place to look for
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+- Se tromper de version de Python : votre environnement virtuel et votre application web doivent toutes les deux être sous Python 3.6.
 
 There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
 
-And remember, your coach is here to help!
+Et n'oubliez pas, votre coach est là pour vous aider !
 
-# You are live!
+# Votre site est en ligne !
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+The default page for your site should say "It worked!", just like it does on your local computer. Vous pouvez essayer d'accéder à l'interface d’administration en ajoutant `/admin/` à la fin de l'URL. Normalement, une page de login devrait s'afficher. Une fois connectée en utilisant votre nom d'utilisateur et votre mot de passe, vous devriez pouvoir ajouter des nouveaux posts sur le serveur.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+*Félicitations !* Le déploiement est l’une des parties les plus épineuses du développement web et il faut souvent plusieurs jours avant d'obtenir quelque chose de fonctionnel. Mais vous avez réussi sans trop d'encombres à mettre votre site en ligne : parfait <3
