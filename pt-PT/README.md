@@ -1,218 +1,51 @@
-# Django ORM and QuerySets
+# Django Girls Tutorial
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-## What is a QuerySet?
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+## Welcome
 
-It's easiest to learn by example. Let's try this, shall we?
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-## Django shell
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-Open up your local console (not on PythonAnywhere) and type this command:
+## Introdução
 
-{% filename %}command-line{% endfilename %}
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Já pensaste como criar um site, mas nunca tiveste motivação suficiente para começar? Alguma vez achaste que o mundo do software é demasiado complicado para tentares fazer alguma coisa autonomamente?
 
-    (myvenv) ~/djangogirls$ python manage.py shell
-    
+Bem, então temos boas notícias para ti! Programar não é tão difícil como parece e queremos mostrar-te como pode ser divertido.
 
-The effect should be like this:
+This tutorial will not magically turn you into a programmer. Se queres ser bom nisso, precisas de meses ou mesmo anos de aprendizagem e de prática. Mas queremos mostrar-te que programar ou criar websites não é tão complicado como parece. Vamos tentar explicar diferentes as diferentes partes tão bem quanto conseguirmos, de forma a que não te sintas intimidado pela tecnologia.
 
-{% filename %}command-line{% endfilename %}
+Esperamos conseguir que gostes tanto de tecnologia como nós!
 
-```python
-(InteractiveConsole)
->>>
-```
+## O que vais aprender neste tutorial?
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-### All objects
+Ele irá (mais ou menos) ter esta aparência:
 
-Let's try to display all of our posts first. You can do that with the following command:
+![Figura 0.1](images/application.png)
 
-{% filename %}command-line{% endfilename %}
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Pedimos aos nossos formadores e anteriores participantes que estarem lá de tempos a tempos e ajudassem outros com o tutorial! Não tenhas medo de colocar lá a tua questão!
 
-```python
->>> Post.objects.all()
-Traceback (most recent call last):
-      File "<console>", line 1, in <module>
-NameError: name 'Post' is not defined
-```
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+## Following the tutorial at home
 
-{% filename %}command-line{% endfilename %}
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
-```python
->>> from blog.models import Post
-```
+In every chapter already covered, there is a link that points to the correct video.
 
-This is simple: we import the model `Post` from `blog.models`. Let's try displaying all posts again:
+## Sobre o tutorial e contribuições
 
-{% filename %}command-line{% endfilename %}
+Este tutorial é mantido por [DjangoGirls](https://djangogirls.org/). Se encontrares algum erro ou desejares atualizar o tutorial por favor [segue as orientações de contribuição](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
-```
+## Would you like to help us translate the tutorial into other languages?
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Currently, translations are being kept on crowdin.com platform at:
 
-### Create object
+https://crowdin.com/project/django-girls-tutorial
 
-This is how you create a new Post object in database:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
-
-Let's import User model first:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.contrib.auth.models import User
-```
-
-What users do we have in our database? Try this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> User.objects.all()
-<QuerySet [<User: ola>]>
-```
-
-This is the superuser we created earlier! Let's get an instance of the user now:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> me = User.objects.get(username='ola')
-```
-
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
-
-Now we can finally create our post:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-```
-
-Hurray! Wanna check if it worked?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-```
-
-There it is, one more post in the list!
-
-### Add more posts
-
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
-
-### Filter objects
-
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
-```
-
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
-
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
-[]
-```
-
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post = Post.objects.get(title="Sample title")
-```
-
-And then publish it with our `publish` method:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> post.publish()
-```
-
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
-```
-
-### Ordering objects
-
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
-```
-
-We can also reverse the ordering by adding `-` at the beginning:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
-```
-
-### Chaining QuerySets
-
-You can also combine QuerySets by **chaining** them together:
-
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
-
-This is really powerful and lets you write quite complex queries.
-
-Cool! You're now ready for the next part! To close the shell, type this:
-
-{% filename %}command-line{% endfilename %}
-
-```python
->>> exit()
-$
-```
+If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
