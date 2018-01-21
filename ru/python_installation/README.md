@@ -1,12 +1,12 @@
-# Let’s start with Python
+# Давай начнем работать с Python
 
-We're finally here!
+Мы, наконец-то, здесь!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Для начала, позволь рассказать что такое Python. Python - это очень популярный язык программирования, который может использоваться для создания веб-сайтов, игр, научного программного обеспечения, графики и многого, многого другого.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python возник в конце 80-х годов, и его основной целью является быть удобным для чтения людьми (не только машинами!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Установка Python
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
