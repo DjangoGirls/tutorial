@@ -1,14 +1,14 @@
-# What's next?
+# Kaj pa zdaj?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Čestitamo! **Genialka si** Zelo smo ponosni! <3
 
-### What to do now?
+### Kaj pa zdaj?
 
-Take a break and relax. You have just done something really huge.
+Vzemi si premor in se spočij. Naredila si ogromno.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### Kako naprej?
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
