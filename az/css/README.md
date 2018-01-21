@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Bizim blogumuz hələ də son dərəcə eybəcər görünür, hə? Onu gözəlləşdirmək vaxtıdır. Biz bunun üçün CSS istifadə edəcəyik.
 
-## What is CSS?
+## CSS nədir?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## Gəlin Bootstrap istifadə edək!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## Bootstrapı Quraşdır
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -29,13 +29,13 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Artıq çox gözəl görünür!
 
-## Static files in Django
+## Django-da statik sənələr
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Nəhayət, biz **static files** adlandırılan sənədlərə daha yaxından baxacağıq. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
-### Where to put static files for Django
+### Statik sənədləri (<0>static files</0>) Djangoda hara yerləşdirək
 
 Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
 
