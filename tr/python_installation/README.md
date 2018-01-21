@@ -1,12 +1,12 @@
-# Let’s start with Python
+# Hadi Python ile başlayalım
 
-We're finally here!
+Nihayet buradayız!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Fakat önce, size Python'un ne olduğunu açıklayalım. Python web siteleri, oyunlar, bilimsel yazılımlar, grafikler ve çok daha fazlasını oluşturmak için kullanılan bir programlama dilidir.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python'un kökleri 1980'li yılların sonlarına dayanmaktadır ve ana hedefi sadece makineler değil insanlar tarafından da okunabilir olmaktır. Bu nedenle öbür programlama dillerinden daha basit görünür, ama merak etmeyin - Python da hakikaten güçlü!
 
-# Python installation
+# Python kurulumu
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
 > 
