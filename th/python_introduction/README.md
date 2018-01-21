@@ -1,18 +1,18 @@
-# Introduction to Python
+# แนะนำให้รู้จัก Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+มาลองเขียนโค้ดกันเลย!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+การที่เราจะเริ่มเล่นกับ Python นั้น เราต้องเปิด *บรรทัดคำสั่ง* ขึ้นมาเสียก่อน You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Once you're ready, follow the instructions below.
+เมื่อคุณพร้อมแล้ว ทำตามคำสั่งด้านล่างนี้
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+เราต้องเปิดคอนโซล Python ขึ้นมา โดยพิมพ์คำสั่ง `python` บนวินโดวส์ `python3` บน Mac OS/ลินุกซ์ และกดปุ่ม `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -22,11 +22,11 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## คำสั่ง Python แรกของคุณ!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+หลังจากรันคำสั่ง Python ตัวรอรับคำสั่งจะเปลี่ยนเป็น `>>>`. สำหรับเราตอนนี้ หมายความว่าเราสามารถใช้ได้เฉพาะคำสั่งภาษา Python You don't have to type in `>>>` – Python will do that for you.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+ถ้าคุณต้องการออกจากคอนโซล Python แค่พิมพ์ `exit()` คือใช้คีย์ลัด `Ctrl + Z` บนวินโดวส์ และ `Ctrl + D` สำหรับ Mac/ลินุกซ์ แล้วเครื่องหมาย `>>>` จะหายไป
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -50,13 +50,13 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+ลองสนุกกับมันสักพักนะ แล้วกลับมาตรงนี้ต่อกัน. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
-## Strings
+## String
 
-How about your name? Type your first name in quotes like this:
+เอาเป็น ชื่อของคุณเป็นไง? ลองพิมพ์ชื่อของคุณในเครื่องหมายคำพูดแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +65,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+ตอนนี้คุณได้สร้าง string แรกของคุณแล้ว! มันเป็นลำดับของอักขระซึ่งสามารถประมวลผลได้โดยคอมพิวเตอร์ string นั้นต้องอยู่ในเครื่องหมายคำพูดเสมอ สามารถใช้ได้ทั้งเครื่องหมายคำพูดเดี่ยว (`'`) หรือเครื่องหมายคำพูดคู่ (`"`) (ซึ่งใช้ได้เหมือนกันทั้งคู่!) เครื่องหมายคำพูดบอก Python ว่า ข้างในนั้นคือ string
 
-Strings can be strung together. Try this:
+string สามารถนำมาต่อกันได้ ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +76,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+นอกจากนี้ คุณยังสามารถคูณจำนวน string ได้อีกด้วย:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+ถ้าคุณต้องใส่เครื่องหมายจุดลูกน้ำข้างใน string คุณทำได้สองวิธี:
 
-Using double quotes:
+ใช้อัญประกาศคู่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +96,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+หรือใช้ร่วมกับเครื่องหมาย backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+แจ๋ว ใช่ไหม? ถ้าอยากได้ตัวพิมพ์ใหญ่ทั้งหมด เพียงใช้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,22 +125,22 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+คุณอาจสงสัย ทำไมบางครั้งเราเรียกใช้ฟังก์ชันโดยใช้จุด `.` ท้าย string (เช่น `"Ola".upper()`) และบางครั้งก็ใช้ฟังก์ชันโดยมี string อยู่ในวงเล็บ? คืองี้ บางกรณี ฟังก์ชันเป็นสิ่งที่อยู่ในวัตถุ เช่น `upper()` ซึ่งสามารถใช้ได้เฉพาะกับ string ในกรณีนี้ เราเรียกฟังก์ชันว่า **method** กรณีอื่น ฟังก์ชันไม่ได้เป็นของวัตถุใดวัตถุหนึ่ง และยังสามารถใช้ได้กับวัตถุชนิดอื่นๆ ได้ เช่น `len()` นั่นคือเหตุผลที่เราใส่ `"Ola"` เป็นพารามิเตอร์ให้กับฟังก์ชัน `len`
 
-### Summary
+### ภาพรวม
 
-OK, enough of strings. So far you've learned about:
+เอาล่ะ พอก่อนสำหรับ string ตอนนี้คุณได้รู้เกี่ยวกับ:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+สิ่งเหล่านี้เป็นพื้นฐานของทุกภาษาโปรแกรมที่คุณเรียนรู้ พร้อมสำหรับของที่ยากกว่านี้แล้วใช่ไหม? เรารู้ว่าคุณพร้อม!
 
-## Errors
+## ข้อผิดพลาด
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+มาลองของใหม่กัน เราจะสามารถหาความยาวของตัวเลขได้เหมือนกับหาความยาวของชื่อเราได้ไหมนะ? ลองพิมพ์ `len(304023)` แล้วกด `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+แล้วเราก็เจอข้อผิดพลาดอันแรกแล้ว! ซึ่งบอกเราว่าวัตถุชนิด "int" (ตัวเลข) นั้นไม่มีความยาว แล้วทำไงทีนี้? บางทีเราน่าจะเขียนให้เป็นรูปแบบเดียวกับ string? เพราะ string มีความยาว จริงมั๊ย?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,18 +160,18 @@ We got our first error! It says that objects of type "int" (integers, whole numb
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+เฮ้ย มันใช้ได้! เราใช้ฟังก์ชัน `str` ข้างในฟังก์ชัน `len` อีกที, `str()` จะแปลงทุกอย่างให้เป็น string
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- ฟังก์ชัน `str` แปลงสิ่งต่างๆ ให้กลายเป็น **string**
+- ฟังก์ชัน `int` แปลงสิ่งต่างๆ ให้กลายเป็น **integer**
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Variables
+## ตัวแปร
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+แนวคิดสำคัญในการเขียนโปรแกรมคือ การใช้ตัวแปร ตัวแปรนั้นไม่มีอะไรมากกว่า ชื่อ สำหรับบางสิ่งบางอย่างที่คุณนำไปใช้ในภายหลังได้ โปรแกรมเมอร์ใช้ตัวแปรในการเก็บข้อมูล ทำให้โค้ดอ่านง่ายขึ้นและช่วยให้พวกเขาไม่จำเป็นต้องจดจำสิ่งต่างว่าเป็นอะไรบ้าง
 
-Let's say we want to create a new variable called `name`:
+สมมติว่าเราต้องการสร้างตัวแปรที่ชื่อ `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +181,7 @@ Let's say we want to create a new variable called `name`:
 
 We type name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+คุณน่าจะสังเกตเห็นว่า โปรแกรมของคุณไม่ตอบอะไรกลับมาเหมือนแต่ก่อน แล้วเราดูได้ไงว่ามีตัวแปรนี้อยู่จริงๆ? ลองพิมพ์ `name` แล้วกด `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,7 +200,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+คุณสามารถใช้มันในฟังก์ชันได้เช่นกัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,7 +220,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+ถ้าเกิดเราใช้ชื่อตัวแปรไม่ถูกล่ะ? คุณเดาได้ไหมว่าจะเกิดอะไรขึ้น? ลองดูกัน!
 
 {% filename %}command-line{% endfilename %}
 
@@ -232,13 +232,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+ข้อผิดพลาดไงล่ะ! คุณจะเห็นได้ว่า Python มีข้อผิดพลาดหลากหลายชนิด และอันนี้เรียกว่า **NameError** Python จะส่งข้อผิดพลาดนี้ออกมา เพื่อคุณพยายามใช้ตัวแปรที่ยังไม่มีหรือยังไม่มีการกำหนด ถ้าคุณพบข้อผิดพลาดนี้ในภายหลัง ลองตรวจโค้ดของคุณดู คุณอาจจะพิมพ์ชื่อผิดสักที่ก็เป็นได้
 
-Play with this for a while and see what you can do!
+ลองเล่นกับมันดูสักพักนะ และดูว่าคุณสามารถทำอะไรได้แค่ไหน!
 
-## The print function
+## ฟังก์ชันการแสดงผล
 
-Try this:
+ลองนี่ดู:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +250,15 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+เมื่อคุณพิมพ์ `name` ตัวประมวลผลภาษา Python ตอบกลับมาด้วย string ที่ตัวแปร 'name' *อ้างถึง* ซึ่งก็คือตัวอักษร M-a-r-i-a ที่มีเครื่องหมายอัญประกาศเดี่ยวครอบอยู่ เมื่อใช้ `print(name)` Python จะ "แสดงผล" เนื้อหาที่อยู่ในตัวแปรออกมาทางหน้าจอ โดยไม่มีเครื่องหมายอัญประกาศแต่อย่างใด
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+เราจะเจอในภายหลังว่า `print()` มีประโยชน์เมื่อเราต้องการแสดงผลค่าบางอย่างที่อยู่ข้างในฟังก์ชัน หรือเมื่อต้องการแสดงผลออกมาทีละหลายๆ บรรทัด
 
-## Lists
+## List
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+นอกจาก string และ ตัวเลข แล้ว Python ยังมีประเภทข้อมูลชนิดต่างๆ อยู่อีก ตอนนี้เราจะแนะนำให้รู้หนึ่งในนั้น คือ **list** List คือสิ่งที่คุณคิดไว้นั้นแหละ: เป็นวัตถุที่เก็บรายการของวัตถุอื่นๆ ไงล่ะ. :)
 
-Go ahead and create a list:
+มาลองสร้าง list กัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +267,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+ใช่แล้ว นี่คือ list ว่างเปล่า ไม่มีประโยชน์เลยใช่ไหม? มาสร้าง list ของหมายเลขสลากกัน เราจะไม่ทำแบบเดิมซ้ำๆ แล้ว ดังนั้นเราจะใส่ไว้ในตัวแปรเสียเลย:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +275,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+เอาล่ะ เรามี list แล้ว! เราทำอะไรกับมันได้บ้างล่ะ? มาดูกันว่า เรามีหมายเลขสลากอยู่กี่อันภายใน list คุณพอรู้ไหมว่าเราจะใช้ฟังก์ชันไหน? แน่นอน คุณรู้อยู่แล้ว!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +284,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+ใช่แล้ว! ฟังก์ชัน `len()` บอกคุณได้ว่ามีวัตถุอยู่ใน list เท่าไหร่ สะดวกดีใช่ไหม? ตอนนี้บางที เราสามารถเรียงเลขข้างในได้นะ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +292,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+ไม่มีอะไรตอบกลับมา มันเปลี่ยนลำดับที่อยู่ list มาลองพิมพ์ออกมาดูอีกทีว่าเกิดอะไรขึ้น:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +301,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+อย่างที่คุณเห็น หมายเลขใน list ถูกจัดเรียงเรียบร้อยแล้ว จากน้อยไปหามาก ยินดีด้วย!
 
-Maybe we want to reverse that order? Let's do that!
+บางทีเราต้องการกลับด้านลำดับข้างใน? มาลองกันเลย!
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +323,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+ถ้าคุณต้องการแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **ดัชนี** ดัชนีคือตัวเลขที่บอกตำแหน่งสิ่งอยู่ที่อยู่ list โปรแกรมเมอร์นั้นจะเริ่มนับที่ 0 ดังนั้น สิ่งที่อยู่เป็นอันดับแรกใน list คือ ดัชนีหมายเลข 0 ถัดไปคือ 1 และต่อไปเรื่อยๆ ลองนี่ดู:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,7 +334,7 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+คุณจะเห็นได้ว่า คุณสามารถเข้าถึงสิ่งที่อยู่ใน list โดยใช้ชื่อของ list และระบุดัชนีข้างในวงเล็บก้ามปู
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,13 +351,13 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+ทำงานได้ถูกต้อง ประดุจดั่งมีเวทมนต์เลยล่ะ!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+เพื่อความสนุก ลองใช้ดัชนีค่าอื่น เช่น: 6, 7, 1000, -1, -6 หรือ -1000 แล้วดูว่าคุณสามารถเดาผลลัพธ์ก่อนที่จะลองรันได้ไหม แล้วผลลัพธ์ที่ว่า สมเหตุสมผลหรือไหม?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+คุณสามารถหาฟังก์ชันทั้งหมดของ list ได้จากเอกสารในเว็บ Python: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Dictionary
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
@@ -370,7 +370,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+นี่แสดงว่า คุณเพิ่งสร้าง dictionary เปล่าขึ้นมาแล้ว ฮูเร่!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -382,11 +382,11 @@ Now, try writing the following command (try substituting your own information, t
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- key ชื่อ `name` ชี้ไปยัง value `'Ola'` (เป็นวัตถุประเภท `string`)
+- `country` ชี้ไปยัง `'Poland'` (เป็น `string` อีกอัน),
+- และ `favorite_numbers` ชี้ไปยัง `[7, 42, 92]` (เป็น `list` ที่มีตัวเลขสามตัวข้างใน)
 
-You can check the content of individual keys with this syntax:
+คุณสามารถตรวจสอบค่าที่อยู่ในแต่ละ key ได้จาก:
 
 {% filename %}command-line{% endfilename %}
 
@@ -397,7 +397,7 @@ Ola
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+จะเกิดไรขึ้น ถ้าคุณต้องการหาค่าจาก key ที่ไม่มีอยู่จริง? มาลองดูกัน!
 
 {% filename %}command-line{% endfilename %}
 
@@ -408,12 +408,12 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+ข้อผิดพลาดอีกอัน! อันนี้เรียกว่า **KeyError** Python พยามบอกว่า key ชื่อ `'age'` ไม่มีอยู่ใน dictionary
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+เราจะรู้ได้ไงว่าควรใช้ dictionary หรือ list ตอนไหน? ถามได้ดี เราควรที่จะมีวิธีแก้ปัญหาในใจก่อนที่จะดูคำตอบในบรรทัดถัดไป
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- คุณต้องต้อการข้อมูลที่เป็นลำดับใช่หรือไหม? ใช้ list
+- คุณต้องการเชื่องโยงค่าข้อมูลโดยใช้ key เพื่อที่จะค้นหาได้ในภายหลังอย่างมีประสิทธิภาพ (โดยใช้ key)? ใช้ dictionary
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
@@ -434,7 +434,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+You can use the `pop()` method to delete an item in the dictionary. เช่น ถ้าคุณต้องการลบรายการที่มี key `'favorite_numbers'` เพียงแค่คุณใช้คำสั่งต่อไปนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -459,18 +459,18 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Summary
+### ภาพรวม
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+แจ๋ว! ตอนนี้คุณได้รู้เกี่ยวกับการเขียนโปรแกรมเพิ่มมากขึ้นแล้ว ในส่วนที่ผ่านมา คุณได้รู้เกี่ยวกับ:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-Excited for the next part? :)
+ตื่นเต้นสำหรับส่วนถัดไปแล้วใช่ไหม? :)
 
-## Compare things
+## การเปรียบเทียบสิ่งต่างๆ
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -493,9 +493,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+คุณคงสงสัยว่าทำไมต้องใช้เครื่องหมายเท่ากับถึงสองอันติดกันแบบนี้ `==` ระหว่างสิ่งที่ต้องการเปรียบเทียบว่าเท่ากันหรือไม่? เราใช้เครื่องหมาย `=` อันเดียว สำหรับกำหนดค่าให้กับตัวแปรไปแล้วนั่นเอง You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. นอกจากนี้เรายังสามารถเปรียบเทียบสิ่งที่ไม่เท่ากันได้อีกด้วย เราใช้เครื่องหมาย `!=` เหมือนในตัวอย่างที่แล้ว
 
-Give Python two more tasks:
+ให้ Python ทำเพิ่มเติมอีกสองคำสั่ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -508,12 +508,12 @@ False
 
 We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y หมายถึง: x มากกว่า y
+- x `<` y หมายถึง: x น้อยกว่า y
+- x `<=` y หมายถึง: x น้อยกว่าหรือเท่ากับ y
+- x `>=` y หมายถึง: x มากกว่าหรือเท่ากับ y
 
-Awesome! Wanna do one more? Try this:
+แจ๋ว! อยากทำเพิ่มอีกหน่อยไหม? ลองนี่ดู:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,12 +526,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+คุณสามารถให้ Python เปรียบเทียบตัวเลขได้มากเท่าที่ต้องการ และมันก็ให้คำตอบกลับมาเสมอด้วย! ฉลาดสุดๆ เลยใช่ไหม?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+คุณเคยได้คำนี้ไหม "เปรียบเทียบ แอปเปิ้ลกับส้ม" เรามาลองอะไรที่คล้ายๆ กันนี้ บน Python กัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -542,7 +542,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+จะเห็นได้ว่า Python ไม่สามารถเปรียบเทียบค่าของตัวเลข (`int`) และ string (`str`) ได้ Python เลขแสดงข้อผิดพลาด **TypeError** ออกมา และบอกเราว่า สองชนิดนี้ไม่สามารถเปรียบเทียบกันได้
 
 ## Boolean
 
@@ -555,7 +555,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Booleans can be variables, too! See here:
+Boolean สามารถเป็นตัวแปรได้เช่นกัน! ลองดูนี่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +565,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+คุณสามารถทำแบบนี้ได้เช่นกัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,25 +575,25 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+ลองซ้อมและสนุกไปกับ Boolean โดยลองใช้คำสั่งเหล่านี้:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+ยินดีด้วย! Boolean เป็นฟีเจอร์ที่เจ๋งสุดๆ ในการเขียนโปรแกรม และคุณเพิ่งได้เรียนรู้วิธีใช้มันเรียบร้อยแล้ว!
 
-# Save it!
+# เซฟซะ!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+จนถึงบัดดี้ เราก็ได้เขียนโค้ด python ทั้งหมดลงใน interpreter ซึ่งก็มีข้อจำกัดเรื่องการป้อนคำสั่งทีละบรรทัด โปรแกรมปกติจะถูกบันทึกลงไฟล์และเรียกใช้งานโดย **interpreter** หรือ **คอมไพเลอร์** เราได้รันโค้ดของเราทีละบรรทัดใน Python **interpreter** ตอนนี้เราต้องการที่รันทีละคำสั่งสำหรับงานถัดไป ตอนนี้เราจำเป็นต้อง:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- ออกจาก Python interpreter
+- เปิดตัวแก้ไขโค้ดที่คุณเลือก
+- บันทึกโค้ด python บางอย่างลงไฟล์
+- แล้วเรียกใช้มัน!
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
@@ -604,9 +604,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-This will put you back into the command prompt.
+หลังจากเรียกใช้ฟังก์ชัน คุณจะถูกพากลับมายังบรรทัดคำสั่งของระบบ
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+ก่อนหน้านี้ เราได้เลือกว่าจะใช้โปรแกรมแก้ไขโค้ดจากบท [โปรแกรมแก้ไขโค้ด](../code_editor/README.md) เปิดใช้งานโปรแกรมและเขียนโค้ดบางอย่างลงไฟล์
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +614,18 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+จริงๆ แล้วตอนนี้ คุณก็มีความรู้เกี่ยวกับ Python พอตัวแล้ว เพราะงั้นลองเขียนโค้ดที่คุณได้รู้วันนี้ดู
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+ตอนนี้เราต้องบันทึกไฟล์ และตั้งชื่อที่สื่อความหมายให้ ตั้งชื่อว่า **python_intro.py** และบันทึกไฟล์เก็บไว้ที่เดสก์ท็อปของคุณ เราสามารถตั้งชื่อไฟล์ชื่อใดก็ได้ตามต้องการ แต่สิ่งที่สำคัญคือชื่อไฟล์ต้องลงท้ายด้วยนามสกุล **.py** The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. มีชื่อเรียกว่า "syntax highlighting" และเป็นฟีเจอร์ที่มีประโยชน์มากๆ เมื่อเขียนโค้ด The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). นี่เป็นหนึ่งเหตุผลว่าทำไมเราถึงใช้โปรแกรมแก้ไขโค้ด. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+เรามีไฟล์แล้ว ถึงเวลาที่เราจะรันมัน! โดยใช้ความรู้ที่เราเรียนมาในบทการใช้บรรทัดคำสั่ง ใช้เทอร์มินัลโดย **เปลี่ยนไดเรกทอรี** ไปยังเดสก์ท็อป
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+บน Mac คำสั่งที่ใช้จะมีลักษณะเหมือนแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +668,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+ถ้าคุณติดปัญหา ขอความช่วยเหลือได้เลย
 
-Now use Python to execute the code in the file like this:
+ตอนนี้ ใช้คำสั่ง Python เพื่อรันไฟล์โค้ดของเรา แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +686,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+นี่แหละ! คุณเพิ่งรันโปรแกรม Python แรกของคุณที่อยู่บนไฟล์ รู้สึกดีใช่ไหม?
 
-You can now move on to an essential tool in programming:
+ตอนนี้คุณสามารถไปต่อยัง เครื่องมือสำคัญในการเขียนโปรแกรม:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+แทนที่โค้ดในไฟล์ **python_intro.py** ให้เป็นดังนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -712,7 +712,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python ต้องการให้เราเพิ่มเติมคำสั่งที่ต้องจะต้องรัน ถ้าเงื่อนไข `3 > 2` นั้นเป็นจริง (หรือ `True` นั่นเอง) เราให้ Python แสดงผล “It works!” ละกัน แก้ไขโค้ดในไฟล์ **python_intro.py** แบบนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,9 +721,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
+สังเกตวิธีที่เราเยื้องบรรทัดถัดลงมาโดยใช้ 4 ช่องว่างไหม? เราต้องทำแบบนี้เพื่อให้ Python รู้ว่า เราต้องการรันโค้ดถ้าเงื่อนไขนั้นเป็นจริง คุณสามารถใช้ช่องว่างเดียวนะ แต่เหมือนโปรแกรมเมอร์ Python นั้นจะใช้ 4 ช่องว่าง เพื่อทำให้ดูเรียบร้อย `แท็บ` ก็นับเป็น 4 ช่องว่างเช่นกัน
 
-Save it and give it another run:
+บันทึกไฟล์และลองรันอีกครั้ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -734,9 +734,9 @@ It works!
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
-### What if a condition isn't True?
+### ถ้าเกิดว่า เงื่อนไขไม่เป็นจริงล่ะ?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+ในตัวอย่างที่แล้ว โค้ดจะถูกรันก็ต่อเมื่อเงื่อนไขเท่ากับ True เท่านั้น แต่ Python ยังมีอย่างอื่นเช่นกัน คือ `elif` และ `else` :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,7 +747,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+เมื่อเรารัน จะแสดงผลออกมาดังนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -769,7 +769,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+และลองรัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -777,9 +777,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+มีเกิดอะไรขึ้นบ้าง? `elif` ให้คุณสามารถเพิ่มเงื่อนไขเพิ่มเติมลงไปได้ หากเงื่อนไขก่อนหน้านี้ไม่เป็นจริง
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+คุณสามารถเพิ่ม `elif` ได้มากเท่าที่ต้องการ ตามหลัง `if` ตัวอย่างเช่น:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,7 +799,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python จะรันและทดสอบแต่ละเงื่อนไข จากนั้นก็แสดงผลออกมา:
 
 {% filename %}command-line{% endfilename %}
 
@@ -824,7 +824,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Summary
+### ภาพรวม
 
 In the last few exercises you learned about:
 
@@ -834,15 +834,15 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-Time for the last part of this chapter!
+เอาล่ะ ได้เวลาสำหรับส่วนสุดท้ายในบทนี้แล้ว!
 
-## Your own functions!
+## ฟังก์ชันของคุณเอง!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+ฟังก์ชันคือลำดับของคำสั่งที่ Python จะดำเนินการหรือรัน แต่ละฟังก์ชันใน Python เริ่มด้วยคำว่า `def` ตามด้วยชื่อ และสามารถรับพารามิเตอร์ได้ Let's give it a go. แทนที่โค้ดในไฟล์ **python_intro.py** ให้เป็นดังนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,11 +854,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+เอาล่ะ ฟังก์ชันแรกของเราพร้อมแล้ว!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+คุณคงสงสัย ทำไมเราต้องเขียนชื่อฟังก์ชันที่ด้านท้ายของไฟล์ด้วย ทั้งนี้เพราะ Python อ่านไฟล์และดำเนินการรันจาก บทลงล่าง ดังนั้น การที่จะใช้ฟังก์ชันของเรา เราจึงต้องเขียนชื่อฟังก์ชันด้านล่าง
 
-Let's run this now and see what happens:
+ลองรันและดูว่าเกิดอะไรขึ้น:
 
 {% filename %}command-line{% endfilename %}
 
@@ -881,7 +881,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+ดังที่คุณเห็น ตอนนี้เรามีฟังก์ชันที่มีพารามิเตอร์เรียกว่า `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,7 +897,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+ข้อควรจำ: ฟังก์ชัน `print` เยื้องเข้าไปสี่บรรทัดภายในคำสั่ง `if` นั่นเพราะฟังก์ชันจะถูกเรียกเมื่อเงื่อนไขถูกต้อง มาดูกันว่ามันทำงานยังไง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -908,7 +908,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+อุปส์ เกิดข้อผิดพลาด แต่โชคดี ที่ Python บอกเราว่าข้อผิดพลาดเกิดจากอะไร มันบอกเราว่า ฟังก์ชัน `hi()` (ที่เราสร้างไว้) ต้องการหนึ่งพารามิเตอร์ (เรียกว่า `name`) และเราลืมส่งไปเมื่อเรียกใช้ฟังก์ชัน มาแก้ไขที่ด้านล่างของไฟล์กัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +916,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+และลองรันอีกครั้ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -924,7 +924,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+และถ้าเราเปลี่ยนชื่อล่ะ?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,7 +932,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+และรันมัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -947,7 +947,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+แจ๋วเลย ใช่ไหม? ด้วยวิธีนี้ คุณไม่จำเป็นต้องพิมพ์ซ้ำทุกครั้งที่คุณต้องการเปลี่ยนชื่อของบุคคลที่เราต้องการทักทาย And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -960,7 +960,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+มาลองรันกัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -968,17 +968,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+ขอแสดงความยินดี! คุณได้เรียนรู้วิธีเขียนฟังก์ชันแล้ว! :)
 
-## Loops
+## การทำซ้ำ
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-This is the last part already. That was quick, right? :)
+นี่เป็นส่วนสุดท้ายของบทนี้แล้ว เร็วเนอะว่ามั๊ย? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+โปรแกรมเมอร์นั้นไม่ชอบทำอะไรซ้ำไปมา การเขียนโปรแกรมนั้นเป็นการทำงานอย่างอัตโนมัติ ดังนั้นเราจริงไม่ต้องการทักทายทุกๆ คน ด้วยชื่อของพวกเขาด้วยมือในทุกๆ ชื่อ จริงไหม? และการทำซ้ำจะเข้ามาช่วยในส่วนนี้
 
-Still remember lists? Let's do a list of girls:
+ยังจำ list ได้ใช่ไหม? เรามาสร้างรายการของชื่อสาวๆ กัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +986,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+เราต้องการที่จะทักทายด้วยชื่อพวกเขาทั้งหมด เรามีฟังก์ชัน `hi` เพื่อทำสิ่งนั้นอยู่แล้ว เรามาใช้พร้อมๆ ไปกับการทำซ้ำกัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +996,7 @@ for name in girls:
 
 The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
 
-Here is the full code that will be in the file:
+และนี่คือโค้ดทั้งหมดของไฟล์:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,7 +1010,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+และเมื่อเรารันไฟล์:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1027,9 +1027,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+อย่างที่คุณเห็น ทุกสิ่งที่อยู่ภายในคำสั่ง `for` จะถูกทำซ้ำและวนเข้าไปในรายชื่อที่อยู่ใน list `girls`.
 
-You can also use `for` on numbers using the `range` function:
+คุณสามารถใช้ `for` กับตัวเลขได้เช่นกัน โดยใช้ฟังก์ชัน `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1038,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+ซึ่งจะแสดงผล:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,14 +1049,14 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` คือฟังก์ชันที่จะสร้าง list ของตัวเลข โดยมีเลขเริ่มต้นและสิ้นสุด (ซึ่งเลขเหล่านี้ใส่เข้ามาเป็นพารามิเตอร์ของฟังก์ชัน)
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+หมายเหตุ เลขตัวที่สองของฟังก์ชันนั้นจะไม่ถูกรวมเข้ามาด้วย (ความหมายคือ `range(1, 6)` จะนับจาก 1 ถึง 5 แต่ไม่รวมเลข 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Summary
+## ภาพรวม
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+มีเพียงเท่านี้แหละ **คุณเจ๋งมาก!** จริงๆ บทนี้เป็นบทที่ยาก และคุณควรจะภูมิใจในตัวเองนะ เราภูมิใจในตัวคุณนะที่คุณมาถึงจุดนี้ได้!
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Cupcake](images/cupcake.png)
+![คัพเค้ก](images/cupcake.png)
