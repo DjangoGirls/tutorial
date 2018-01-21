@@ -1,30 +1,30 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Du kannst diese [Section](http://tutorial.djangogirls.org/en/installation/#install-python) direkt überspringen, falls du kein Chromebook benutzt. Wenn du eins benutzt wird deine Installation ein wenig anders sein. Du kannst den Rest der Installationsanweisungen ignorieren.
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Während des Tutorials wird dir Cloud 9 als dein *lokaler Rechner* dienen. Du wirst die gleichen Befehle ausführen, wie deine Klassenkameradinnin, die OS X, Ubuntu oder Windows benutzen, jedoch ist dein Terminal verbunden mit einem Computer, der von Cloud 9 gehostet wird.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gehe auf [c9.io](https://c9.io)
+3. Erstelle dir einen Account
+4. Klicke auf *Create a New Workspace*
+5. Gib ihm den Namen *django-girls*
+6. Wähle *Blank* aus( das zweite von links in der untersten Reihe mit dem orangen Logo)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Jetzt solltest du ein Interface mit Sidebar, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    yourusername:~/workspace $
+    deinbenutzername:~/workspace $
     
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Virtuelle Umgebung
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Eine virtuelle Umgebung (auch virtualenv genannt) ist ein privater Behälter, in den wir nützlichen Code packen können, um an einem Projekt arbeiten zu können. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Führe im Terminal den folgenden Code aus( das Terminal befindet sich am unteren Rand des Cloud 9 Interface):
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Wenn du Probleme hast frag deinen Coach nach Hilfe.
 
-Next, run:
+Als nächstes führe die folgenden Befehle aus:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +45,16 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(beachte, dass wir im letzten Befehl eine Tilde gefolgt von einem Gleichheitssymbol benutzen: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Erstelle einen [Github](https://github.com) Account.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Das Django Girls tutorial beinhaltet einen Teil zu Deployment. Beim Deployment nimmst du den Code, der deiner Web Anwendung zu Grunde liegt und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit betrachten können.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Dieser Teil ist ein bisschen seltsam, wenn du ihn auf einem Chromebook ausführst, da er bereits nur in der Cloud ist( im Gegensatz zu einem Laptop). Es ist aber trotzdem sinnvoll mitzumachen, wir stellen uns dann einfach unseren Cloud 9 Arbeitsplatz als "work in progress" vor und Python Anywhere als Platz auf dem wir unser Projekt vorführen können.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Deshalb solltest du dich auf [www.pythonanywhere.com](https://www.pythonanywhere.com) für einen Python Anywhere Account anmelden.
