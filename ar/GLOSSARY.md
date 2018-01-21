@@ -1,3 +1,3 @@
-# code editor
+# محرر الكود
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+محرر الكود هو التطبيق الذي يسمح لك بحفظ التعليمات البرمجية الخاصة بك بحيث تكون قادر على العودة إليها في وقت لاحق. ويمكنك معرفة أين يمكن الحصول على واحد من الفصل الخاص [بمحرر الكود](./code_editor/README.md)
