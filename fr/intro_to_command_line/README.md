@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# Introduction à l'interface en ligne de commande
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Commençons par vous présenter un nouvel ami : la ligne de commande !**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Les étapes suivantes vont vous montrer comment utiliser la fenêtre noire que tous les bidouilleurs·euses utilisent. Elle est un peu effrayante à première vue, mais en fait, c'est un tout simplement un programme qui attend qu'on lui donne des commandes.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
-## What is the command line?
+## Qu'est-ce qu'une ligne de commande ?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Cette fenêtre, qu'on appelle aussi **ligne de commande** ou **interface en ligne de commande**, est une application textuelle qui permet de voir et de manipuler des fichiers sur votre ordinateur. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. On l'appelle parfois aussi : *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
-## Open the command-line interface
+## Ouvrir l'interface en ligne de commande
 
-To start some experiments we need to open our command-line interface first.
+Pour commencer à expérimenter, nous avons d'abord besoin d'ouvrir notre interface en ligne de commande.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
@@ -34,17 +34,17 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+Vous la trouverez probablement dans Applications → Accessoires → Terminal, mais ça dépend de votre système. Si elle n'est pas là, demandez à Google. :)
 
 <!--endsec-->
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos commandes.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+Si vous être sous Mac ou Linux, vous verrez probablement un `$`, comme ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+Sur Windows, c'est un signe `>`, comme ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -64,7 +64,7 @@ On Windows, it's a `>` sign, like this:
 
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Chaque commande commence par ce signe, puis un espace. Mais vous n'avez pas besoin de le taper, votre ordinateur le fait pour vous. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -72,7 +72,7 @@ The part up to and including the `$` or the `>` is called the *command line prom
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
-## Your first command (YAY!)
+## Votre première commande (YAY !)
 
 Let's start by typing this command:
 
@@ -94,7 +94,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Puis, appuyez sur la touche `entrée`. Voilà ce qui s'affiche chez moi :
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +102,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Comme vous pouvez le voir, l'ordinateur vient d'afficher votre nom d'utilisateur. Sympa, non? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
-## Basics
+## Les bases
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Les différents systèmes d'exploitation ont des commandes légèrement différentes, donc faites attention à suivre les instructions pour votre système d'exploitation. Allons-y !
 
-### Current directory
+### Dossier courant
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le savoir, tapez la commande suivante et appuyez sur `entrée` :
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,7 +122,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Remarque : "pwd" veut dire "print working directory" (afficher le dossier courant).
 
 <!--endsec-->
 
@@ -138,13 +138,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Vous verrez probablement quelque chose de similaire sur votre machine. Quand vous ouvrez une ligne de commande, vous démarrez habituellement dans le dossier personnel de votre utilisateur.
 
 * * *
 
-### List files and directories
+### Lister les fichiers et les dossiers
 
-So what's in it? It'd be cool to find out. Let's see:
+Du coup, que pouvons-nous trouver dans ce dossier personnel ? Pour le savoir, essayons ceci :
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -152,9 +152,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
     $ ls
     Applications
-    Desktop
-    Downloads
-    Music
+    Bureau
+    Musique
+    Téléchargements
     ...
     
 
@@ -167,9 +167,9 @@ So what's in it? It'd be cool to find out. Let's see:
     > dir
      Directory of C:\Users\olasitarska
     05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    05/08/2014 07:28 PM <DIR>      Bureau
+    05/08/2014 07:28 PM <DIR>      Musique
+    05/08/2014 07:28 PM <DIR>      Téléchargements
     ...
     
 
@@ -177,15 +177,15 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Changer le dossier courant
 
-Now, let's go to our Desktop directory:
+Maintenant, essayons d'aller sur notre bureau :
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd Desktop
+    $ cd Bureau
     
 
 <!--endsec-->
@@ -194,19 +194,19 @@ Now, let's go to our Desktop directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Desktop
+    > cd Bureau
     
 
 <!--endsec-->
 
-Check if it's really changed:
+Vérifions que ça a bien changé :
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Desktop
+    /Users/olasitarska/Bureau
     
 
 <!--endsec-->
@@ -216,26 +216,26 @@ Check if it's really changed:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Desktop
+    C:\Users\olasitarska\Bureau
     
 
 <!--endsec-->
 
-Here it is!
+Et voilà !
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Create directory
+### Créer un dossier
 
-How about creating a practice directory on your desktop? You can do it this way:
+Que diriez-vous de créer un répertoire dédié aux exercices sur votre bureau ? Vous pouvez le faire de cette façon :
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir exercices
     
 
 <!--endsec-->
@@ -244,28 +244,28 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir exercices
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Cette petite commande crée un dossier nommé `exercices` sur votre bureau. Vous pouvez vérifier qu'il est bien là en regardant votre bureau, ou en lançant la commande `ls` ou `dir` ! Essayez donc. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Pro tip : Si vous voulez éviter de taper les mêmes commandes plein de fois, essayez d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapé.
 
 * * *
 
-### Exercise!
+### Un peu d'exercice !
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### Solutions :
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd exercices
     $ mkdir test
     $ ls
     test
@@ -277,7 +277,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd exercices
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -285,15 +285,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Félicitations ! :)
 
 * * *
 
-### Clean up
+### Nettoyage
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Supprimons tout ce qu'on vient de faire, histoire d'éviter de laisser du bazar.
 
-First, we need to get back to Desktop:
+D'abord, revenons au Bureau :
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,14 +315,14 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+Vérifiez où vous êtes :
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Desktop
+    /Users/olasitarska/Bureau
     
 
 <!--endsec-->
@@ -332,12 +332,12 @@ Check where you are:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Desktop
+    C:\Users\olasitarska\Bureau
     
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Maintenant, il est temps de supprimer notre dossier `exercices` :
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r exercices
     
 
 <!--endsec-->
@@ -354,13 +354,13 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S exercices
+    exercices, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Et voilà. Pour être sure que le dossier a bien été supprimé, vérifiez :
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,9 +380,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Sortir
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+C'est tout pour le moment ! Vous pouvez maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,28 +402,28 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, non? :)
 
-## Summary
+## Résumé
 
-Here is a summary of some useful commands:
+Voici un résumé de quelques commandes utiles :
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Commande (Windows) | Commande (Mac OS / Linux) | Description                 | Exemple                                           |
+| ------------------ | ------------------------- | --------------------------- | ------------------------------------------------- |
+| sortir             | sortir                    | ferme la fenêtre            | **sortir**                                        |
+| cd                 | cd                        | change le dossier courant   | **cd test**                                       |
+| cd                 | pwd                       | show the current directory  | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir                | ls                        | liste des fichiers/dossiers | **dir**                                           |
+| copy               | cp                        | copie un fichier            | **copy c:\test\test.txt c:\windows\test.txt** |
+| move               | mv                        | déplace un fichier          | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir              | mkdir                     | crée un nouveau dossier     | **mkdir testdirectory**                           |
+| rmdir (or del)     | rm                        | delete a file               | **del c:\test\test.txt**                        |
+| rmdir /S           | rm -r                     | delete a directory          | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Ce ne sont que quelques-unes des commandes que vous pouvez utiliser dans votre ligne de commande. Cette liste est suffisante pour réaliser ce tutoriel.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Si vous êtes curieuse, [ss64.com](http://ss64.com) contient une référence complète de toutes les commandes pour tous les systèmes d'exploitation.
 
-## Ready?
+## Vous êtes prête ?
 
-Let's dive into Python!
+Nous allons plonger dans Python !
