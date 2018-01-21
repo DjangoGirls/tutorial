@@ -1,22 +1,22 @@
-# Introduction to HTML
+# Introduction au HTML
 
-What's a template, you may ask?
+Vous vous demandez sûrement ce qu'est un template.
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## What is HTML?
+## Qu'est-ce que le HTML ?
 
 HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+L'abréviation HTML signifie « HyperText Markup Language ». **HyperText** signifie que c'est un type de texte qui supporte les hyperliens entre les pages. **Markup** signifie que nous avons pris un document et que nous avons balisé le code pour signifier (ici, au navigateur) comment il faut interpréter la page. Le code HTML est construit à l'aide de **balises**, chacune commençant par `<` et finissant par `>`. Ces balises représentent des **éléments** markup.
 
-## Your first template!
+## Votre premier template !
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Créer un template signifie créer un fichier template. Et oui, encore des fichiers ! Vous aviez déjà probablement remarqué que tout tourne autour des fichiers.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'abord, créons un dossier appelé `templates` à l'intérieur du dossier de notre blog. Ensuite, créez un autre dossier appelé `blog` à l'intérieur de votre dossier templates :
 
     blog
     └───templates
@@ -25,17 +25,17 @@ Templates are saved in `blog/templates/blog` directory. So first create a direct
 
 (You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien faire d'autre pour le moment qu'afficher une page blanche. La faute à notre template que nous avons laissé vide. Allons corriger ça.
 
-Add the following to your template file:
+Ajoutez ce qui suit à votre fichier template :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -50,20 +50,20 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Ça marche ! Bon boulot :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise fermante, `</html>`
+* `<p>` est la balise pour les éléments de type paragraphe. `</p>` permet de fermer chaque paragraphe.
 
 ## Head and body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Chaque page HTML est divisée en deux éléments : **head** (entête) et **body** (corps.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** est un élément qui contient des informations sur le document : son contenu ne s'affichera pas à l'écran.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** est un élément qui contient tout le reste. Son contenu s'affichera à l'écran et constituera notre page web.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Nous utilisons `<head>` pour transmettre la configuration de la page au navigateur tandis que `<body>` l'informe sur le contenu de la page.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
@@ -81,32 +81,32 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Sauvegardez votre fichier et actualisez la page.
 
 ![Figure 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Vous avez vu comment le navigateur a compris que « Le Blog d'Ola » est le titre de votre page ? Il a interprété `<title>Le blog d'Ola</title>` et a placé ce texte dans la barre de titre de votre navigateur (c'est ce titre qui va être aussi utilisé lorsque vous créez un marque-page, etc.).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Vous avez aussi probablement remarqué que chaque balise ouvrante possède sa *balise fermante*, composée d'un `/`, est qu'elles *encadrent* les différents éléments. Cela signifie que vous ne pouvez pas fermer une balise si celles imbriquées à l'intérieur de celle-ci n'ont pas été fermées.
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Pensez à lorsque vous mettez des choses à l'intérieur de boîtes. Vous avez une grosse boîte, `<html></html>`; à l'intérieur de celle-ci, on trouve une plus petite boîte, `<body></body>`, qui contient elle-même d'autres petites boîtes, `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Customize your template
+## Personnaliser votre template
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser notre template ! Voici quelques balises que vous pouvez utiliser :
 
 * `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
+* `<h2>Titre 2</h2>` - pour les sous-titres
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
+* `<em>texte</em>` permet de mettre l'accent sur une partie du texte
+* `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<a href="https://djangogirls.org">link</a>` permet de créer un lien
+* `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
+* `<div></div>` permet de créer une section au sein de la page
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -130,63 +130,63 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
+            <h2><a href="">Mon second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
 </html>
 ```
 
-We've created three `div` sections here.
+Nous avons créé trois sections à l'aide de `div`.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+* Les deux autres `div` contiennent nos blogposts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre blogpost.
 
-It gives us this effect:
+Ce qui nous donne :
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay ! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## One more thing: deploy!
+## Une dernière chose : déployer !
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, déployons à nouveau !
 
-### Commit, and push your code up to Github
+### Commiter et pusher votre code sur GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaître en vert) :
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+On y est presque : nous devons maintenant lui dire de sauvegarder ces changements dans son historique. Nous allons y ajouter un "message de commit" qui nous permettra de décrire ce qui a été changé. Vous pouvez mettre ce que vous voulez dans un message de commit. Généralement, il est préférable de mettre quelque chose d'utile qui vous permettra de vous souvenir plus tard de ce que vous avez fait.
 
 {% filename %}command-line{% endfilename %}
 
-    $ git commit -m "Changed the HTML for the site."
+    $ git commit -m "Modification du HTML du site"
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
@@ -195,9 +195,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Puller les modifications sur PythonAnywhere et recharger son appli web
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Allez sur la page des [consoles de PythonAnywhere](https://www.pythonanywhere.com/consoles/). Retournez dans votre **console Bash** ou ouvrez-en une nouvelle puis tapez la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,8 +206,8 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+Voilà ! Votre code modifié est téléchargé. Si vous voulez vérifier ce que vous venez de récupérer, vous pouvez aller jeter un coup d’œil dans l'onglet **Files** de PythonAnywhere.
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Pour finir, n'oubliez pas de recharger votre application web : onglet [web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aider à votre coach. :)
