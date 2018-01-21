@@ -1,20 +1,20 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+우리가 만든 블로그가 아직 예쁘지 않죠? 이제 눈에 보기 좋게 예쁘게 만들어 볼 시간이에요. CSS를 사용해 만들어볼 거에요.
 
-## What is CSS?
+## CSS는 무엇인가요?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## Bootstrap을 사용해봐요!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+부트스트랩은 트위터 개발자들에 의해 만들어졌고 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요.
 
-## Install Bootstrap
+## Bootstrap 설치하기
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
@@ -27,19 +27,19 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![그림 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+더 보기 좋아졌죠!
 
-## Static files in Django
+## Django의 정적 파일
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+마지막으로 **정적 파일(static files)**을 다뤄볼 거에요. 모든 CSS와 이미지들은 정적 파일(static file) 이에요. Css와 정적파일은 모든 유저들이 동일하게 보여지기 때문에 콘텐츠와 상관없어요.
 
-### Where to put static files for Django
+### 어디에 정적 파일을 넣어야 하나요
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin" 앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 동적파일을 추가하면 되어요.
 
-We do that by creating a folder called `static` inside the blog app:
+blog앱 안에 `static`폴더를 만드세요:
 
     djangogirls
     ├── blog
@@ -51,9 +51,9 @@ We do that by creating a folder called `static` inside the blog app:
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
-## Your first CSS file!
+## 나의 첫 번째 CSS 파일!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. `static` 디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+CSS를 쓸 차례에요! 여러분이 사용하고 있는 코드에디터에서 `blog/static/css/blog.css`파일을 불러오세요.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+`blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a`가 CSS 셀렉터(Selector)에요. `h1`대신 `a`스타일을 적용하라는 뜻입니다. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. 예를 들어, 오랜지 색상은 `#FCA205`입니다. 물론, 색상을 직접 선택할 수도 있어요!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 요소를 식별하는 첫 번째 방법은 이름을 붙이는 겁니다. HTML에서 태그 이름으로 찾을 수 있겠죠. `a`, `h1`, `body`요소도 그 예입니다. 상속 `class` 또는 상속 `id`로 요소를 식별합니다. Class와 id는 여러분들이 붙인 이름을 갖게 되지요. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 css에서 태그 이름 `a`, 클래스 `external_link`, id `link_to_wiki_page`을 사용해서 식별해요.
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+브라우저는 순서대로 차례차례 파일을 읽기 때문에, 올바른 곳에 배치해야해요. Otherwise the code in our file may be overriden by code in Bootstrap files. 이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.
 
-Your file should now look like this:
+여러분이 만든 파일은 아래와 같아야해요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+자, 이제 파일을 저장하고 새로고침을 해보세요!
 
-![Figure 14.2](images/color2.png)
+![그림 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+잘했어요! 웹사이트 왼쪽 여백을 좀더 주고 싶지 않나요? 한번 해봐요!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -151,9 +151,9 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Figure 14.3](images/margin2.png)
+![그림 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+제목의 폰트를 바꾸고 싶나요? `blog/templates/blog/post_list.html`파일 안에 `<head>`에 아래 코드를 붙여넣기 해보세요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -174,13 +174,13 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![그림 14.3](images/font.png)
 
-Great!
+잘했어요!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+위에서 언급했듯이, CSS는 클래스 개념을 가지고 있습니다. HTML 코드 내 이름을 지정해 다른 부분에 영향을 주지 않고 특정 부분에만 스타일을 적용할 수 있습니다. 정말 멋지죠! 두 div를 사용해 제목과 게시글이 다르게 보이게 만들 수도 있어요. 이처럼 클래스는 겉모습을 다르게 바꿔줍니다.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+이제 HTML 코드의 일부에 이름을 붙여봅시다. header에 포함된 `div`에 `page-header`라고 class 이름을 붙여봅시다. 다음과 같이 말이죠:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+그리고 이제 블로그 글 안에 있는 `div`에 `post`라고 class 이름을 붙여보세요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 이제 `blog/static/css/blog.css`파일안에 아래 코드를 복사, 붙여넣기 하세요:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+자, 다음은 글을 보여주는 HTML 코드를 post라는 클래스 이름이 적힌 div로 감싸세요. 그러면 다음과 같을 거에요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+`blog/templates/blog/post_list.html` 안에 아래 코드를 넣으세요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+파일을 저장하고 웹사이트를 새로고침하세요.
 
-![Figure 14.4](images/final.png)
+![그림 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+와! 멋지지 않나요? 붙여넣기한 HTML 클래스와 CSS 코드를 보세요. 초록색으로 날짜를 바꾸려면 어느 곳을 고쳐야할까요?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+CSS를 고치는 것을 두려워하지 말고, 편하게 고치고 싶은 것을 수정해보세요. 이것저것 고쳐보면서 CSS와 놀아보면 금방 이해할 수 있게 된답니다. If you break something, don't worry – you can always undo it!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+[Codeacademy HTML & CSS 강좌](https://www.codecademy.com/tracks/web)를 수강하는 것을 강력히 추천합니다. CSS로 근사한 웹 사이트를 만들 수 있는 모든 방법을 배울 수 있답니다.
 
-Ready for the next chapter?! :)
+다음 장을 읽을 준비됐나요?! :)
