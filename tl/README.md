@@ -1,50 +1,50 @@
-# Django Girls Tutorial
+# Django Tutorial para sa mga Babae
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Ang proyekto na eto ay lisensyado sa Creative Commons Attribution-ShareAlike 4.0 International License. Para makita mo ang konpya ng lisensya, bumisita sa https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## Mabuhay
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Maligayang pagdating sa Django Tutorial para sa mga Kababaihan! Masaya kami na makita ka dito :) Sa tutorial na ito, dadalhin ka namin sa isang paglalakbay sa kasulok-sulokang bahagi ng mga teknolohiya sa web, naghahandog sa iyo na makita mo ang mga piraso na bumubuo para gumagawa ang web basi sa ating nalalaman.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Sa lahat nang mga hindi nalalaman na mga bagay-bagay, ito ay magiging isang pakikipagsapalaran - pero wag mag-alala, dahil nagkaroon ka na ng lakas ng loob para makasali, kayang-kaya mo lang eto :)
 
-## Introduction
+## Introduksiyon
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Nakaramdam ka na ba na ang mundo ay punong-puno ng mga teknolohiya na hindi mo (pa) maintindihan? Nagtaka ka na ba kung paano gumawa ng isang website ngunit wala kang sapat na pagganyak na magsimula? Naisipan mo na ba na ang mga sofware sa mundo ay parang napakahirap para gawin mong mag-isa?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Wag mag-alala, may magandang balita kami para sa iyo. Ang Programming ay hindi mahirap gaya ng inaakala mo at gusto naming ipakita sa iyo kung gaano kasaya ito.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Ang tutorial na ito ay hindi basta na lang mag-uwi sa iyo na maging isang programmer. If gusto mong gumaling dito, kailangan mo ng ilang buwan o kahit isang taon na pag-aaral at pagsasanay. Pero gusto naming ipakita sa iyo na ang programming o paglikha ng mga website ay hindi mahirap gaya ng inaakala mo. Susubukan namin na ipaliwanag ang iba't ibang piraso na malinaw hangang sa makakaya namin, para hindi ka matakot sa teknolohiya.
 
-We hope that we'll be able to make you love technology as much as we do!
+Kami ay umaasa na magustuhan mo rin ang teknolohiya gaya ng pagmamahal namin dito!
 
-## What will you learn during the tutorial?
+## Ano ang matutunan mo sa loob ng tutorial na ito?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+Ito ay magiging katulad (humigit-kumulang) nito:
 
-![Figure 0.1](images/application.png)
+![Tambilang 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Kung susubukan mo ang tutorial na ikaw lang mag-isa at wala kang coach na makakatulong sa iyo kung may problema, mayroon kaming isang chat system para sa iyo:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Hiniling namin ang aming mga coaches at dating nagdalo na bumisita ng paulit-ulit para makutulong sa iba na nag tutorial! Huwag matakot magtanong doon!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Sige, [magsimula tayo sa simula...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Sundin ang tutorial sa bahay
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Nakakagulat ang pagdalo sa workshop ng Django Girls, ngunit alam namin na hindi talaga posible na palaging makadalo. Ito ang dahilan kung bakit namin kayo hinimuk na sundan ang tutorial sa bahay mo. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Ito kasalukuyang ginagawa pa, pero mas marami pang mga bagay ang aming i-vocer sa [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTube channel.
 
-In every chapter already covered, there is a link that points to the correct video.
+Sa bawat kabanata na nadaanan na, may mga link na nagturo sa tamang video.
 
-## About and contributing
+## Tungol at Pag-ambag
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Ang tutorial na ito ay minamantini ni [DjangoGirls](https://djangogirls.org/). Kung may makita kang mga mali or gusto mong i-update ang tutorial, [pakitingnan ang mga pangpatnubay kung paano mag-ambag](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
-Currently, translations are being kept on crowdin.com platform at:
+Sa ngayon, ang mga pagsasalin ay nakalagay sa plataporma ng crowdin.com sa:
 
 https://crowdin.com/project/django-girls-tutorial
 
