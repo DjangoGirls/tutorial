@@ -1,6 +1,6 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
 
@@ -10,11 +10,11 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Wpisz "cmd" w oknie "Uruchom""](../python_installation/images/windows-plus-r.png)
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
@@ -23,7 +23,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Dodawanie Pythona do zmiennej Path, starsze wersje](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,9 +32,9 @@ data-collapse=true ces-->
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Przejdź na stronę https://www.python.org/downloads/release/python-361/ i pobierz instalator Pythona:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Pobierz plik o nazwie *Mac OS X 64-bit/32-bit installer*,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
@@ -42,7 +42,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +50,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Wpisz w konsoli poniższe polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +68,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Użyj następującego polecenia w konsoli:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +82,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Użyj następującego polecenia w konsoli:
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,4 +103,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+W razie jakichkolwiek wątpliwości albo jeśli coś poszło nie tak i nie wiesz, co dalej robić, zapytaj mentora lub osobę prowadzącą kurs! Czasami nie wszystko idzie tak, jak powinno i najlepszym wyjściem z sytuacji jest poprosić o pomoc kogoś bardziej doświadczonego.
