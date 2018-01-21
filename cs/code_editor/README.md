@@ -1,11 +1,11 @@
-# Code editor
+# Editor zdrojového kódu
 
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
 
-You're about to write your first line of code, so it's time to download a code editor!
+Právě se chystáš napsat svůj první řádek kódu, takže je čas sáhnout po editoru kódu!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Poznámka:** Pokud používš Chromebook, pak tuto kapitolu vynechej a řiď se instrukcemi v návodu [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Poznámka** Mohla jsi to udělat už dříve v kapitole o instalaci - jestli je to tak, prostě jen tuhle kapitolu přeskoč a vrhni se na další!
 
 {% include "/code_editor/instructions.md" %}
