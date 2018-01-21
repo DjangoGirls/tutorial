@@ -1,3 +1,3 @@
-# code editor
+# Επεξεργαστής Κώδικα
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Ο επεξεργαστής κώδικα είναι μια εφαρμογή που σου επιτρέπει να αποθηκεύσεις τον κώδικα σου, ώστε να είσαι σε θέση να επιστρέψεις σε αυτό αργότερα. Μπορείς να μάθεις πού μπορείς να βρείς ένα από το [κεφάλαιο επεξεργαστής κώδικα](./code_editor/README.md)
