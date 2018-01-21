@@ -6,7 +6,7 @@
 * [How the Internet works](how_the_internet_works/README.md)
 * [Introduction to command line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
-* [Code editor](code_editor/README.md)
+* [Kod redaktoru](code_editor/README.md)
 * [Introduction to Python](python_introduction/README.md)
 * [What is Django?](django/README.md)
 * [Django installation](django_installation/README.md)
