@@ -1,11 +1,11 @@
-# Code editor
+# Editor de cod
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
-
-You're about to write your first line of code, so it's time to download a code editor!
-
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> Pentru cititorii de acasă: acest capitol este acoperit în  Instalarea Python & amp; Editor de cod </ 0>.</p> </blockquote> 
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
-
-{% include "/code_editor/instructions.md" %}
+> Ești pe cale să scrii prima linie de cod, așa că e timpul să descarci un editor de cod!
+> 
+> > **Notă** Dacă utilizați un Chromebook, treceți peste acest capitol și asigurați-vă că urmați [setare Chromebook](../chromebook_setup/README.md).
+> > 
+> > **Notă** S-ar putea să fi făcut acest lucru mai devreme în capitolul Instalare - dacă da, atunci poți trece imediat la capitolul următor!
+> 
+> {% include "/code_editor/instructions.md" %}
