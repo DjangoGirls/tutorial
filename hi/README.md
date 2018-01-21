@@ -1,25 +1,51 @@
-# What's next?
+# Django tutorial
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-### What to do now?
+> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-Take a break and relax. You have just done something really huge.
+## Welcome
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-### Can you recommend any further resources?
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+## 3
 
-Later on, you can try the resources listed below. They're all very recommended!
+Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? 5 6
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+7
+
+This tutorial will not magically turn you into a programmer. 9 10 11
+
+12
+
+## 13
+
+Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+
+15
+
+![16](images/application.png)
+
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 18 19
+
+OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+
+## Following the tutorial at home
+
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+
+In every chapter already covered, there is a link that points to the correct video.
+
+## 20
+
+This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). 23.
+
+## Would you like to help us translate the tutorial into other languages?
+
+Currently, translations are being kept on crowdin.com platform at:
+
+https://crowdin.com/project/django-girls-tutorial
+
+If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
