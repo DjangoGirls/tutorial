@@ -1,14 +1,14 @@
-# What's next?
+# 接下来呢？
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+祝贺你！**你简直太棒了**。我们很自豪! <3
 
-### What to do now?
+### 现在要做什么？
 
-Take a break and relax. You have just done something really huge.
+休息一下，放松。你刚做完非常多的事。
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
-### Can you recommend any further resources?
+### 你能推荐更进一步的资源吗？
 
 Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
