@@ -1,16 +1,16 @@
-# Your first Django project!
+# 你的第一个Django 项目 ！
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Django-marcador 教程的版权归 Markus Zapke-Gründemann 所有。
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+第一步是创建一个新的 Django 项目。 首先，我们需要运行一些由 Django 提供的脚本，为我们即将开始的项目建立主要骨架。 它会生成一系列的文件夹和文件，在后面的项目中我们会需要修改和使用到它们。
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+某些名称的文件和目录在 Django 起着至关重要的作用。 你不应该重命名我们将要创建的文件。 将它们移动到一个不同的地方也不是一个好主意。 Django 需要固定的系统结构，以便 Django 能够找到重要的东西。
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> 记住在虚拟环境中运行的一切。 If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. 我们在 **Django 安装**这一节内的 **在虚拟环境下工作** 部分中解释过了。 Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -21,7 +21,7 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 此时，符号"`.`"很重要，它将告诉脚本程序自动安装Django到你当前选择的目录中（所以这个“`.`”是告诉脚本执行时的一种参考点).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
@@ -36,13 +36,13 @@ On Windows you should run the following command. **(Don't forget to add the peri
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> 此时，符号"`.`"很重要，它将告诉脚本程序自动安装Django到你当前选择的目录中（所以这个“`.`”是告诉脚本执行时的一种参考点).
 > 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py`是一个脚本，将自动为您创建目录和文件。前面的命令正确的话，你现在就应该有一个目录结构，看起来像下面这样：
 
     djangogirls
     ├───manage.py
@@ -51,25 +51,26 @@ On Windows you should run the following command. **(Don't forget to add the peri
             urls.py
             wsgi.py
             __init__.py
+    它是一个Django的项目文件夹，为即将开始的项目准备好了必要的资源文件和文件夹
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-The `settings.py` file contains the configuration of your website.
+`settings.py` 文件包含的您的网站的配置数据。
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+还记得当我们谈到一名邮差在决定何处交付一封信时的例子吗？`urls.py` 文件包含`urlresolver`所需的模型的列表.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+现在让我们忽略其他文件, 现在我们不会改变它们。要记住的唯一一点是不要不小心删除他们！
 
-## Changing settings
+## 更改设置
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+让我们在 `mysite/settings.py` 中进行一些更改。使用您前面安装了的代码编辑器打开文件。
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+在我们的站点上有正确的时间是非常不错的。 Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
@@ -112,9 +113,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Set up a database
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+有很多的不同的数据库软件，可以用来存储你的网站数据。我们将使用默认的那个， `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+这已经在您的 `mysite/settings.py` 文件中设置了：
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+若要为我们的博客创建一个数据库，，让我们运行以下命令在控制台中： `python manage.py migrate` （我们需要`djangogirls` 目录中包含 `manage.py` 文件）。 如果一切顺利，您应该看到这样：
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,11 +151,11 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+我们完成了 ！现在去启动网站服务器，看看是否我们的网站正在工作！
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+你必须要进入包含`manage.py` 文件的目录 （`djangogirls` 目录）。 在控制台中，我们可以通过运行 `python manage.py runserver` 开启 web 服务器：
 
 {% filename %}command-line{% endfilename %}
 
@@ -168,7 +169,7 @@ If you are on a Chromebook, use this command instead:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+如果你在Windows系统遇到UnicodeDecodeError这个错误，用这个命令来代替
 
 {% filename %}command-line{% endfilename %}
 
@@ -189,9 +190,9 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+祝贺你 ！你已经创建您的第一个网站，并使用 web 服务器运行它！这超级赞吧？
 
-![It worked!](images/it_worked2.png)
+![它工作了！](images/it_worked2.png)
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
@@ -199,4 +200,4 @@ While the web server is running, you won't see a new command-line prompt to ente
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+准备好下一步了吗？现在来创建一些内容 ！
