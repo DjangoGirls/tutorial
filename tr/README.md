@@ -6,45 +6,45 @@
 
 ## Hoşgeldiniz
 
-Django Girls Eğitimi'ne hoşgeldin! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Django Girls Eğitimi'ne hoşgeldin! Seni burada görmekten mutluyuz :) Bu eğitimde, seni web teknolojileri dünyasında bir yolculuğa çıkaracak, internetin bildiğimiz haliyle çalışması için bir araya gelmesi gereken tüm parçalara bir göz atacağız.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Bilinmeyen şeylerde hep olduğu gibi, bu bir macera olacak. Ama hiç endişelenme, buraya gelme azmini gösterdiğine göre devamı da iyi gidecek :)
 
 ## Giriş
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Hiç senin (henüz) yakın ilişki kuramadığın teknolojinin dünyayı giderek daha fazla kapladığını hissettiğin oldu mu? Hiç web sayfalarının nasıl yapıldığını merak edip başlamak için gereken motivasyona sahip olmadığınız oldu mu? Yazılım dünyasının sizin için, kendi başınıza bir şeyler yapmayı denemek için bile, çok karmaşık olduğunu düşündünüz mü?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Öyleyse, sizin için iyi haberlerimiz var! Programlama göründüğü kadar zor değil ve size ne kadar keyifli olabileceğini göstermek istiyoruz.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Bu eğitim sihirli bir şekilde sizi bir programcıya dönüştürmeyecek. Eğer bu konuda iyi olmak istiyorsanız, aylara ve hatta yıllara dayanan bir öğrenme ve pratiğe ihtiyacınız var. Fakat biz size programlamanın ya da websayfası oluşturmanın göründüğü kadar da karmaşık olmadığını göstermek istiyoruz. Farklı parçaları, değişik kısımları anlatabildiğimiz kadar iyi anlatmaya gayret edeceğiz ki artık teknoloji gözünüzü korkutmasın.
 
-We hope that we'll be able to make you love technology as much as we do!
+Ümit ederiz ki sizin de teknolojiyi bizim kadar sevmenizi sağlayabiliriz!
 
-## What will you learn during the tutorial?
+## Bu eğitim ile ne öğreneceksiniz?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
-It will (more or less) look like this:
+Aşağı yukarı şu şekilde gözükecek:
 
-![Figure 0.1](images/application.png)
+![Şekil 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Eğer eğitimi kendi başınıza takip ediyorsanız ve bir problem yaşadığınızda size yardım edebilecek bir mentörünüz yoksa, size yardım edebileceğimiz bir sohbet sistemimiz var:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Tamam, [hadi en baştan başlayalım...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Eğitimi evden takip etmek
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Bir Django Girls atölyesine katılmak harika, ama katılmanın her zaman mümkün olmayabileceğinin farkındayız. Bu nedenle, bu eğitimi evde takip etmeyi denemenizi tavsiye ediyoruz. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Bu hala devam eden bir çalışma, ancak yakında [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Youtube kanalında (İngilizce) giderek daha da fazla konu ele alınacak.
 
-In every chapter already covered, there is a link that points to the correct video.
+Ele alınmış olan her bölümde, ilgili videoya ait bir bağlantı var.
 
-## About and contributing
+## Hakkında ve katkıda bulunma
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Bu eğitim [DjangoGirls](https://djangogirls.org/) tarafından sürdürülmektedir. Eğer hatalar bulursanız ve eğitimi güncellemek isterseniz lütfen [katkıda bulunma kılavuzunu takip edin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
-Currently, translations are being kept on crowdin.com platform at:
+Şuan çeviriler crowdin.com platformunda tutuluyor:
 
 https://crowdin.com/project/django-girls-tutorial
 
