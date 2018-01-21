@@ -1,3 +1,3 @@
-# code editor
+# โปรแกรมแก้ไขโค้ด
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+โปรแกรมแก้ไขโค้ด คือ โปรแกรมที่ช่วยให้คุณบันทึกโค้ดของคุณและกลับมาดูในภายหลังได้ คุณสามารถหาโปรแกรมนี้ได้จากบท [โปรแกรมแก้ไขโค้ด](./code_editor/README.md)
