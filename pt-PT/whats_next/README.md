@@ -1,6 +1,6 @@
-# What's next?
+# O que se segue?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Parabéns! Tu és **demais**. Estamos orgulhosos! <3
 
 ### What to do now?
 
