@@ -1,51 +1,51 @@
-# Django Girls Tutorial
+# دجانغو لتعليم الفتيات
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> تم ترخيص هذا العمل بموجب ترخيص المشاع الإبداعي Attribution-ShareAlike 4.0 الدولي.  لعرض نسخة من هذا الترخيص، تفضل بزيارة https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## مرحبًا
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+مرحبا بكم في البرنامج التعليمي فتيات جانغو! نحن سعداء لرؤيتك هنا :) في هذا البرنامج التعليمي، سوف نأخذك في رحلة في عمق وداخل تقنيات الويب، ونقدم لك لمحة عن كل القطع والقطع التي تحتاج تركيبها معا لجعل الويب يعمل هو الأن .
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+كما هو الحال مع كل الأشياء غير المعروفة، هذا سيكون مغامرة ولكن لا تقلق، بما انك استخدمت شجاعتك للوصول الى هنا ، فستكون على ما يرام :)
 
-## Introduction
+## المقدمة
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+هل شعرت أن العالم يدور أكثر وأكثر حول التكنولوجيا التي لا يمكنك (حتى الآن) فهمها؟ هل تساءلت كيف يمكن إنشاء موقع على شبكة الإنترنت ولكن لم يكن لديك الدافع الكافي للبدء؟ هل فكرت يوما أن عالم البرمجيات معقد للغاية لدرجة انك لن تتمكن من حتى محاولة القيام بشيء بمفردك؟
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+حسنا، لدينا أخبار جيدة لك! البرمجة ليست صعبة كما يبدو وإننا نريد أن نظهر لكم كيف يمكن أن يكون الموضوع مرح.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+هذا التدريب لن يحولك لمبرمج بطريقة سحرية. إذا كنت تريد أن تكون جيد في ذلك، أنت تحتاج إلى أشهر أو حتى سنوات من التعلم والممارسة. ولكن نحن نريد أن نظهر لك أن البرمجة أو إنشاء مواقع الكترونية ليس معقد كما يبدو. سوف نحاول في شرح مختلف الاجزاء، بكل وسعنا، حتى لا تشعر بالخوف تجاه التكنولوجيا.
 
-We hope that we'll be able to make you love technology as much as we do!
+ونأمل أن نكون قادرين على أن نجعلكم تحبون التكنولوجيا بقدر ما نحبها نحن!
 
-## What will you learn during the tutorial?
+## ماذا ستتعلم خلال هذه التدريبات؟
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+بمجرد الانتهاء من البرنامج التعليمي، سيكون لديك تجربة، تطبيق ويب: مدونة خاصة بك. ونحن سوف نعلمك كيفية وضعه على الانترنت،حتى يرى الأخرون عملك!
 
-It will (more or less) look like this:
+سوف تبدو (أكثر أو أقل) مثل هذا:
 
-![Figure 0.1](images/application.png)
+![الرقم 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> إذا كنت تعمل مع البرنامج التعليمي لوحدك وليس لديك مدرب الذي سوف يساعدك في حالة وجود أي مشكلة، لدينا نظام دردشة بالنسبة لك: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). لقد طلبنا من مدربينا والمتعلمين السابقين ان يحضرو لبعض الوقت ، لتقديم المساعدة للمتعلمين الجدد! لا تتردد في طرح سؤالك هنا!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+حسنا، [ لنبدأ من البداية... ](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## إتبع البرنامج التعليمي في المنزل
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+من المدهش أن تشارك في ورشة عمل جانغو للبنات، ولكن نحن ندرك أنه ليس من الممكن دائما الحضور لواحدة. هذا هو السبب في أننا نشجعكم على محاولة اتباع هذا البرنامج التعليمي في المنزل. للقراء في المنزل نحن حاليا نعد أشرطة فيديو التي من شأنها أن تجعل من آلسهل متابعة البرنامج التعليمي لوحدك. نحن لا نزال نعمل على ذالك ، لكن سيكون هناك المزيد من التحديثات في قناة يوتيوب [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+في كل فصل تم تغطيته، هناك ارتباط يشير إلى الفيديو الصحيح.
 
-## About and contributing
+## حول المساهمة
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+هذا البرنامج التعليمي من طرف [DjangoGirls](https://djangogirls.org/). إذا قمت بالبحث عن أي أخطاء أو ترغب في تحديث البرنامج التعليمي يرجى [اتباع المبادئ التوجيهية للمساهمة](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## هل تريد أن تساعدنا على ترجمة البرنامج التعليمي للغات أخرى؟
 
-Currently, translations are being kept on crowdin.com platform at:
+حاليا، يجري الاحتفاظ بالترجمات على منصة crowdin.com في:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+إذا لم تكن لغتك موجودة نرجو منك [مراسلتنا](https://github.com/DjangoGirls/tutorial/issues/new) لإضافتها.
