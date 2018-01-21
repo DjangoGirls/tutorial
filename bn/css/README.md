@@ -1,8 +1,8 @@
 # CSS – make it pretty!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+আমাদের ব্লগ তেমন সুন্দর দেখা যাচ্ছে না, তাই না? এখনি সুন্দর করার সময়! আমরা এইজন্য CSS ব্যাবহার করব।
 
-## What is CSS?
+## CSS কি?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
@@ -29,7 +29,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+OK, save the file and refresh the site!
 
 ## Static files in Django
 
