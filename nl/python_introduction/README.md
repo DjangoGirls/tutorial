@@ -1,18 +1,18 @@
-# Introduction to Python
+# Inleiding Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Laten we eens wat code schrijven!
 
-## Python prompt
+## De Python command prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Om eens wat met Python te spelen, moeten we een commando venster openen op je computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Once you're ready, follow the instructions below.
+Als je er klaar voor bent, volg dan de onderstaande aanwijzingen op.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+We willen een 'Python console' openen, dus type `python<code> in Windows of <code>python3` op OsX of Linux, daarna <0>enter</code>.
 
 {% filename %}command-line{% endfilename %}
 
