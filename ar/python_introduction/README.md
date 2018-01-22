@@ -133,14 +133,14 @@
 
 - **the prompt** كتابة الأوامر (كودات) في موجه اوامر بايثون يعطينا اجابات في بايثون
 - **numbers and strings** - في بايثون تستخدم الأرقام للرياضيات والسلاسل للكائنات النصية
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **operators** مثل `+` و `*`, تجمع بين القيم لتنتج واحدة جديدة
+- **functions** مثل `upper()` و `len()` تنفذ إجراأت على الكائنات.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+هذه هي الأساسيات لكل لغة برمجة تتعلمها. أنت مستعد لشيء أكثر صعوبة؟ ونحن نراهن على ذالك!
 
-## Errors
+## أخطاء
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+دعنا نجرب شيئا جديداً. يمكن أن نحصل على طول عدد بنفس الطريقة التي يمكن أن نجد بها طول اسمنا؟ اكتب في `len(304023)` واضغط `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+حصلنا على الخطأ الأول! ويقول أن الكائنات من نوع "إنت" (الأعداد الصحيحة، أرقام كاملة) ليس لها طول. فماذا يمكننا أن نفعل الآن؟ ربما يمكننا كتابة رقمنا كسلسلة؟ سلاسل لها طول، أليس كذلك؟
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,22 +160,23 @@ We got our first error! It says that objects of type "int" (integers, whole numb
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+لقد كان مجديًا! قمنا باستخدام الدالة `str` داخل الدالة `len`. `str ()` تحويل كل شيء إلى سلاسل.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
-
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
-
-## Variables
-
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
-
-Let's say we want to create a new variable called `name`:
-
-{% filename %}command-line{% endfilename %}
-
-```python
+- الدالة `str` تحول الأشياء إلى **strings</1 ></li> 
+    
+    - الدالة `int` تحول الأشياء إلى **integers**</ul> 
+    
+    > هام: علينا تحويل الأرقام إلى نص، ولكن لا يمكن بالضرورة تحويل النص إلى أرقام – ماذا ستكون `int('hello')` على أي حال؟
+    
+    ## المتغيرات
+    
+    مفهوم هام في البرمجة وهو المتغيرات. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+    
+    Let's say we want to create a new variable called `name`:
+    
+    {% filename %}command-line{% endfilename %}
+    
+    ```python
 >>> name = "Ola"
 ```
 
