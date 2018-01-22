@@ -125,14 +125,14 @@
 3
 ```
 
-أتساءل لماذا في بعض الأحيان أستدعي الدالات بواسطة `.` في نهاية سلسلة (مثل `"Ola".upper()`)، وفي بعض الأحيان يمكنك استدعاء دالة أولاً ووضع السلسلة في الأقواس؟ Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+أتساءل لماذا في بعض الأحيان أستدعي الدالات بواسطة `.` في نهاية سلسلة (مثل `"Ola".upper()`)، وفي بعض الأحيان يمكنك استدعاء دالة أولاً ووضع السلسلة في الأقواس؟ حسنا، في بعض الحالات، تنتمي المهام إلى أشياء، مثل `upper()`, ، والتي لا يمكن تنفيذها إلا على السلاسل. في هذه الحالة نسمي المهام ب **method**. مرات اخرى، المهام لا تنتمي إلى أي شيء محدد، ويمكن استخدامها على أنواع مختلفة من الكائنات، مثل `len()`. لهذا نحن نعطي `"Ola"` اعدادات الى المهمة `len`.
 
-### Summary
+### مُلخّص
 
-OK, enough of strings. So far you've learned about:
+طيب، يكفينا سلآسل ، حتى الأن لقد تعلمت:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
+- **the prompt** كتابة الأوامر (كودات) في موجه اوامر بايثون يعطينا اجابات في بايثون
+- **numbers and strings** - في بايثون تستخدم الأرقام للرياضيات والسلاسل للكائنات النصية
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
