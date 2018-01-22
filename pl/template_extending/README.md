@@ -104,7 +104,7 @@ To teraz zapisz `base.html` i otwórz ponownie swój `blog/templates/blog/post_l
 
 Będziemy chciały użyć tych kliku linii jako części szablonu dla wszystkich bloków treści. Najwyższy czas dodać znaczniki blog w tym pliku!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. O tak:{% endraw %}
+{% raw %}Musimy zrobić to tak, by nasz znacznik block zgadzał się ze znacznikiem w pliku `base.html`. Chcesz też by zawierał on cały kod, który należy do twoich bloków treści. By to osiągnąć, umieść wszystko pomiędzy `{% block content %}` i `{% endblock %}`. O tak:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
