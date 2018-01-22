@@ -22,7 +22,7 @@ Mamy nadzieję sprawić, że pokochasz to tak jak my!
 
 ## Czego nauczysz się w trakcie kursu?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Jak skończysz tutorial, będziesz miała małą działającą aplikację webową: twój blog. Pokażemy Ci jak umieścić ją online, tak by inni mogli zobaczyć Twoją pracę!
 
 Będzie to wyglądać mniej więcej tak:
 
@@ -34,7 +34,7 @@ Będzie to wyglądać mniej więcej tak:
 > 
 > ## Przerabiasz tutorial w domu?
 > 
-> Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie byś spróbowała przerobić tutorial w domu. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
+> Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie byś spróbowała przerobić tutorial w domu. Dla czytelniczek w domu, jesteśmy właśnie w trakcie przygotowywani materiałów wideo, które ułatwią samodzielne podążanie za tutorialem. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
 > 
 > W każdym rozdziale, który posiada materiał wideo, udostępniamy link, który do niego prowadzi.
 > 
@@ -42,10 +42,10 @@ Będzie to wyglądać mniej więcej tak:
 > 
 > Kurs jest prowadzony przez [DjangoGirls](https://djangogirls.org/). Jeżeli znajdziesz jakiś błąd lub chcesz dodać coś nowego, zapoznaj się proszę z [tymi informacjami](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 > 
-> ## Would you like to help us translate the tutorial into other languages?
+> ## Chciałabyś pomóc nam tłumaczyć tutorial na inne języki?
 > 
 > Obecnie przechowujemy wersje językowe na platformie Crowdin.com:
 > 
 > https://crowdin.com/project/django-girls-tutorial
 > 
-> If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+> Jeżeli twój język nie jest wylistowany na [Crowdinie](https://crowdin.com/), [zgłoś nowe issue](https://github.com/DjangoGirls/tutorial/issues/new), dzięki któremu poinformujesz nas, by dodać język.
