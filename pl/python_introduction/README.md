@@ -28,7 +28,7 @@ Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla
 
 Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,13 +37,13 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Nieźle! Widzisz, jak pojawiła się odpowiedź? Python zna się na matematyce! Powinnaś spróbować innych działań, np.:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+By wykonać potęgowanie, powiedzmy podnieść 2 do potęgi 3, musimy wpisać: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -52,7 +52,7 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 
 Pobaw się tym przez chwilę, a potem wróć tutaj. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z ni jeszcze zrobić…
 
 ## Stringi
 
@@ -114,9 +114,9 @@ Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz po 
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Właśnie użyłaś **metody** `upper` na swoim stringu! Metoda (jak `upper()`) to sekwencja instrukcji, które Python wykonuje na podanym obiekcie (`"Ola"`) jak tylko ją wywołasz.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Jeżeli chcesz poznać liczbę liter, którą zawiera twoje imię, istnieje **funkcja** również do tego!
 
 {% filename %}command-line{% endfilename %}
 
@@ -131,7 +131,7 @@ Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu
 
 OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
+- **wiersza poleceń** - wpisywanie komend (kodu) w wiersz poleceń Pythona powoduje, że Python zwraca wyniki
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
