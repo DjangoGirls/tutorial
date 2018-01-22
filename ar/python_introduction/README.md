@@ -37,22 +37,22 @@
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+لطيف! انظر كيف برز الجواب؟ بيثون يعرف الرياضيات! يمكنك محاولة الأوامر الأخرى مثل:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+لإجراء حساب ، قل 2 إلى القوة 3، نكتب: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+استمتع لبعض الوقت مع هذا ، وعد إلى هنا 
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+كما ترون، بايثون هي الة حاسبة عضيمة. إذا كنت تتساءل ماذا يمكنك أن تفعل…
 
 ## Strings
 
