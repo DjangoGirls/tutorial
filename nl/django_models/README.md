@@ -1,12 +1,12 @@
 # Django models
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Wat we nu willen maken is iets dat alle berichten zal opslaan in onze blog. Maar om dat te kunnen doen moeten we het eerst hebben over `objecten`.
 
-## Objects
+## Objecten
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Er bestaat een concept binnen programmeren dat `object-georiënteerd programmeren` wordt genoemd. Het idee is dat, in plaats van alles als een saaie opeenvolging van programmeerinstructies te schrijven, we dingen kunnen modelleren en definiëren hoe ze omgaan met elkaar.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Dus wat is een object? Het is een verzameling eigenschappen en acties. Het klinkt raar, maar we zullen je een voorbeeld geven.
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
