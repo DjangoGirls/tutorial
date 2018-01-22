@@ -54,9 +54,9 @@
 
 كما ترون، بايثون هي الة حاسبة عضيمة. إذا كنت تتساءل ماذا يمكنك أن تفعل…
 
-## Strings
+## سلسلة
 
-How about your name? Type your first name in quotes like this:
+ماذا عن اسمك؟ اكتب الاسم الأول في علامات اقتباس مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,7 +65,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
