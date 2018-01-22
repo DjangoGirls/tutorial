@@ -64,7 +64,7 @@ Laten we een CSS-bestand aanmaken, om je eigen stijl aan je website toe te voege
 
 Tijd om wat CSS te schrijven! Open het `blog/static/css/blog.css` bestand in je code editor.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+We zullen hier niet te diep ingaan op het customiseren en leren over CSS. Er staan een aanbeveling voor een gratis cursus CSS op het einde van deze pagina als je meer wil leren hierover.
 
 Maar laten we wat details veranderen. Misschien kunnen we de kleur van onze header veranderen? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
 
