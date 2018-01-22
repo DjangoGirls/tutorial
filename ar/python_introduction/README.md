@@ -65,9 +65,9 @@
 'Ola'
 ```
 
-لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. قد يكون هذا واحد(`'`)) أو الضعف (`"`)) اقتباس (لا فرق!) الإقتباس يقول لبايثون انه هناك سلسلة.
 
-Strings can be strung together. Try this:
+السلاسل يمكن أن تكون مربوطة معا. جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +76,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+يمكنك أيضا ضرب السلاسل مع عدد:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+إذا كنت بحاجة إلى وضع علامة اقتباس أحادية داخل السلسلة الخاصة بك, لديك طريقتين للقيام بذلك.
 
-Using double quotes:
+استخدام علامات الاقتباس المزدوجة:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +96,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+أو الهروب من الفاصلة بخط مائل (`` \):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+لطيف، هاه؟ لرؤية اسمك بالأحرف الكبيرة، اكتب:
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,9 +114,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+لقد استخدمت `upper` **method** للتو في السلسلة الخاصة بك! وهناك طريقة (مثل `upper()`) عبارة عن سلسلة من التعليمات التي يجب على بايثون تنفيذها على كائن معين (`"Ola"`) بمجرد استدعائه.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+إذا كنت تريد أن تعرف عدد الحروف الواردة في اسمك، هناك **function** لذلك أيضا!
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,7 +125,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+أتساءل لماذا في بعض الأحيان أستدعي الدالات بواسطة `.` في نهاية سلسلة (مثل `"Ola".upper()`)، وفي بعض الأحيان يمكنك استدعاء دالة أولاً ووضع السلسلة في الأقواس؟ Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
