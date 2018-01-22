@@ -170,9 +170,9 @@ TypeError: object of type 'int' has no len()
     
     ## المتغيرات
     
-    مفهوم هام في البرمجة وهو المتغيرات. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+    مفهوم هام في البرمجة وهو المتغيرات. المتغير ليس أكثر من اسم لشيء يمكن استخدامه في وقت لاحق. يستخدم المبرمجون هذه المتغيرات لتخزين البيانات، وجعل التعليمات البرمجية الخاصة بهم أكثر قابلية للقراءة، لذالك هم ليسو بحاجة لتدكر كل شيء.
     
-    Let's say we want to create a new variable called `name`:
+    لنفرض أننا نريد إنشاء متغير جديد يسمى `name`:
     
     {% filename %}command-line{% endfilename %}
     
@@ -180,9 +180,9 @@ TypeError: object of type 'int' has no len()
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+اكتب اسم يساوي Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+كما لاحظت، فإن البرنامج لم يعد أي شيء كما فعل من قبل. فكيف نعرف أن المتغير موجود بالفعل؟ ما عليك سوى إدخال `name` واضغط على `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+يآآاي! المتغير الأول الخاص بك! :) يمكنك دائماً تغيير ما يشير إليه:
 
 {% filename %}command-line{% endfilename %}
 
@@ -201,7 +201,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+يمكنك استخدامه في وظائف ايضا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -210,7 +210,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+رائع، أليس كذلك؟ بالطبع، المتغيرات يمكن أن تكون أي شيء أرقام أيضا! جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -221,7 +221,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+ولكن ماذا لو استخدمنا اسم خاطئ؟ هل يمكنك تخمين ما يمكن أن يحدث؟ دعونا نحاول!
 
 {% filename %}command-line{% endfilename %}
 
@@ -233,13 +233,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+خطأ! كما ترون، بيثون لديه أنواع مختلفة من الأخطاء ويسمى هذا **NameError**. سيعطيك بايثون هذا الخطأ إذا حاولت استخدام متغير لم يتم تعريفه حتى الآن. إذا واجهت هذا الخطأ في وقت لاحق، تحقق من التعليمات البرمجية الخاصة بك لمعرفة إذا كنت أخطأت في أي أسماء.
 
-Play with this for a while and see what you can do!
+العب بهذه التعليمات لبعض الوقت، وانضر ما يمكن ان تفعله!
 
-## The print function
+## وظيفة الطباعة
 
-Try this:
+جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
