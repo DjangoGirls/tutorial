@@ -2,9 +2,9 @@
 
 Kolejną fajną rzeczą, którą Django daje Ci do dyspozycji, jest możliwość **rozszerzania szablonów**. Co to oznacza? To znaczy, że możesz używać tych samych części Twojego kodu HTML na różnych stronach Twojej aplikacji.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Szablony pomagają, gdy chcesz te same informacje lub ten sam układ strony użyć w wielu miejscach. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Create a base template
+## Tworzenie szablonu bazowego
 
 Szablon bazowy to najbardziej podstawowy szablon, który możesz rozszerzać na każdej stronie twojej aplikacji.
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Została jeszcze jedna rzecz. Musimy połączyć te dwa szablony razem. To właśnie na tym polega rozszerzaniem szablonów! Dokonamy tego dodając tag extend na początku nasze pliku. Właśnie tak:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Jeżeli dostaniesz błąd `TemplateDoesNotExist`, oznacza to, że nie ma jesze pliku `blog/base.html` i jednocześnie w konsoli działa uruchomiony `runserver`. Spróbuj go zatrzymać (wciskając Ctrl+C - czy razem klawisze Control i C) i uruchomić ponownie przy użyciu polecenia `python manage.py runserver`.
