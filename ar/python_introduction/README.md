@@ -8,11 +8,11 @@
 
 > للقراء في المنزل: تم تغطية هذا الجزء في فيديو [ أساسيات بايثون: عدد صحيح، سلاسل، قوائم، متغيرات وأخطاء ](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-لبدء العمل ببايثون، نحتاج إلى فتح *سطر الأوامر* على جهاز الكمبيوتر. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+لبدء العمل ببايثون، نحتاج إلى فتح *سطر الأوامر* على جهاز الكمبيوتر. يجب عليك ان تعرف كيف تفعل ذالك - لقد تعلمته في [مقدمة لسطر الأوامر](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+عندما تكون مستعدا، اتبع الإرشادات أدناه.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+نريد فتح وحدة تحكم بيثون، لذلك اكتب في `python` على ويندوز أو `python3` على نظام التشغيل ماك / لينوكس واضغط على `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -22,9 +22,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## أمر بايثون الأول الخاص بك!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+بعد تشغيل الطلب في بايثون ، تغير الطلب إلى `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
@@ -147,7 +147,7 @@ Let's try something new. Can we get the length of a number the same way we could
 ```python
 >>> len(304023)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
