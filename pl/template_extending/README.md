@@ -2,7 +2,7 @@
 
 Kolejną fajną rzeczą, którą Django daje Ci do dyspozycji, jest możliwość **rozszerzania szablonów**. Co to oznacza? To znaczy, że możesz używać tych samych części Twojego kodu HTML na różnych stronach Twojej aplikacji.
 
-Szablony pomagają, gdy chcesz te same informacje lub ten sam układ strony użyć w wielu miejscach. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Szablony pomagają, gdy chcesz te same informacje lub ten sam układ strony użyć w wielu miejscach. W takim wypadku nie musisz się powtarzać w każdym pliku. I jak będziesz chciała zmienić cokolwiek, nie będziesz musiała tego zrobić w każdym szablonie, wystarczy tylko w jednym!
 
 ## Tworzenie szablonu bazowego
 
@@ -75,7 +75,7 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Mogłaś zauważyć, że zamieniło to wszystko od `{% for post in posts %}` do `{% endfor %}` na: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Za chwilę pokażemy Ci, jak to się robi.
+Ale czemu? Właśnie stworzyłaś `block`! Użyłaś znacznika szablonu `{% block %}` by zaznaczyć obszar, w który zostanie wstawiony HTML. Ten HTML będzie pochodził z innego szablonu, który rozszerza ten szablon (`base.html`). Za chwilę pokażemy Ci, jak to się robi.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+To teraz zapisz `base.html` i otwórz ponownie swój `blog/templates/blog/post_list.html`. {% raw %}Usuniemy teraz wszystko powyżej `{% for post in posts %}` i poniżej `{% endfor %}`. Jak to zrobisz, plik będzie wyglądać tak:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,7 +102,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Będziemy chciały użyć tych kliku linii jako części szablonu dla wszystkich bloków treści. Najwyższy czas dodać znaczniki blog w tym pliku!
 
 {% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. O tak:{% endraw %}
 
