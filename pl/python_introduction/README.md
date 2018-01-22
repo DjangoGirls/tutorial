@@ -132,9 +132,9 @@ Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu
 OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
 - **wiersza poleceń** - wpisywanie komend (kodu) w wiersz poleceń Pythona powoduje, że Python zwraca wyniki
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **liczby i stringi** - w Pythonie liczb używamy do działań matematycznych, a stringów do obiektów tekstowych
+- **operatory** - takie jak `+` i `*`, łączą wartości produkując nowe
+- ** funkcje** - takie jak `upper()` i `len()`, wykonują działania na obiektach.
 
 Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć. Gotowa na coś trudniejszego? Mamy nadzieję, że tak!
 
@@ -165,7 +165,7 @@ Działa! Użyłyśmy funkcji `str` wewnątrz funkcji `len`. Funkcja `str()` konw
 - Funkcja `str` przekształca wartości na **stringi**
 - Funkcja `int` przekształca wartości na **liczby**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Ważne: możemy zamienić liczby na tekst, ale nie zawsze możemy zamienić tekst na liczby - czym w ogóle powinien być wynik działania `int('hello')`?
 
 ## Zmienne
 
@@ -179,7 +179,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 >>> imie = "Ola"
 ```
 
-We type name equals Ola.
+Napisałyśmy własnie, że imie równa się Ola.
 
 Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij `enter`:
 
@@ -190,7 +190,7 @@ Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robi�
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Jupi! Twoja pierwsza zmienna! :) Zawsze możesz zmienić, do czego się ona odnosi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,7 +209,7 @@ Możesz także używać jej w funkcjach:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Super, co? Oczywiście zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
 
 {% filename %}command-line{% endfilename %}
 
@@ -313,7 +313,7 @@ A gdybyśmy zapragnęły odwrócić kolejność? Zróbmy to!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Jeżeli chcesz dodać coś do swojej listy, możesz to zrobić wpisując polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -336,7 +336,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,7 +690,7 @@ Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspani
 
 Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
 
-## If … elif … else
+## If…elif…else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
