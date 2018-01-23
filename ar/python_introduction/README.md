@@ -435,7 +435,7 @@ KeyError: 'age'
 
 آمل أن يكون هذا منطقيا حتى الآن. :) هل انت على استعداد لمتعة أكثر مع القواميس؟ قراءة لبعض الأشياء المدهشة.
 
-يمكنك استخدام الأسلوب `pop()` لحدف عنصر من القاموس. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+يمكنك استخدام الأسلوب `pop()` لحدف عنصر من القاموس. لنفترض أنك تريد حذف المدخل المقابل للمفتاح `'favorite_numbers'`, ، اكتب فقط الأمر التالي:
 
 {% filename %}command-line{% endfilename %}
 
@@ -446,9 +446,9 @@ KeyError: 'age'
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+كما ترون من المخرج، تم حذف زوج مفتاح القيمة المقابلة لمفتاح 'favorite_numbers'.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+فضلا عن ذلك، يمكنك أيضا تغيير قيمة مرتبطة بمفتاح تم إنشاؤه مسبقاً في القاموس. اكتب هذا الأمر:
 
 {% filename %}command-line{% endfilename %}
 
@@ -458,15 +458,15 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+كما ترون، تم تغيير قيمة المفتاح `'country'` من `'Poland'` إلى `'Germany'`. :) مثير؟ مرحى! لقد تعلمت للتو شيء آخر مدهش.
 
-### Summary
+### الملخص
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+مدهش! أنت تعرف الكثير عن البرمجة الآن. لقد تعلمت في هذا الجزء الأخير حول:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
+- **أخطاء** – يمكنك الآن معرفة كيفية قراءة وفهم الأخطاء التي تظهر إذا كان بايثون لم يفهم امر اعطيته له
+- **المتغيرات** –أسماء الكائنات التي تسمح لك بتكويد أكثر سهولة وجعل التعليمات البرمجية الخاصة بك أكثر قابلية للقراءة
+- **قوائم** – قوائم الكائنات المخزنة في ترتيب معين
 - **dictionaries** – objects stored as key–value pairs
 
 Excited for the next part? :)
