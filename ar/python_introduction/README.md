@@ -362,7 +362,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+القاموس مماثل للقائمة، ولكن يمكنك الوصول إلى القيم عن طريق البحث عن المفتاح بدلا من الفهرس الرقمي. المفتاح يمكن أن يكون أي سلسلة أو رقم. تعريف جملة لبنآء قاموس فارغ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -371,9 +371,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+هذا يدل على أنك قمت بإنشاء قاموس فارغ للتو. يآآاي!
 
-Now, try writing the following command (try substituting your own information, too):
+والآن، حاول كتابة الأمر التالي (محاولة استبدال المعلومات الخاصة بك، ايضا):
 
 {% filename %}command-line{% endfilename %}
 
@@ -381,13 +381,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+مع هذا الأمر، الذي أنشأته للتو متغير يسمى `participant` مع ثثلاثة أزواج القيمة الرئيسية:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- المفتاح `name` يشير إلى قيمة`'Ola'`(كائن `string`)،
+- `country` يشير إلى `'Poland'` (`string` أخرى)،
+- ويشير `favorite_numbers` إلى `[7، 42، 92]` (`list` بثلاثة أرقام).
 
-You can check the content of individual keys with this syntax:
+يمكنك التحقق من محتوى المفاتيح الفردية مع بناء الجملة التالي:
 
 {% filename %}command-line{% endfilename %}
 
