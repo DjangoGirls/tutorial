@@ -2,13 +2,13 @@
 
 > Parte di questo capitolo è tratto dal tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Scriviamo un pò codice!
+Scriviamo un po' di codice!
 
 ## La linea di comando di Python
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Per chi ci segue da casa: questa parte si trova nel video [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di comando*. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di comando*. Dovresti già sapere come farlo – l'hai imparato nel capitolo [Introduzione alla riga di comando](../intro_to_command_line/README.md).
 
 Una volta pronta, segui le istruzioni riportate di seguito.
 
