@@ -2,7 +2,7 @@ Podrías [saltarte esta sección](http://tutorial.djangogirls.org/en/installatio
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Durante el tutorial, Cloud 9 actuará como su *máquina local*. Aún así, usted estará ejecutando comandos en una terminal, tal como sus compañeros de clase en OS X, Ubuntu, o Windows, pero su terminal estará conectada a una computadora activa en algún otro lugar que Cloud 9 le establezca.
+Cloud 9 es una herramienta que te proporciona un editor de código y acceso a una computadora funcionando en Internet donde puedes instalar, escribir y ejecutar el software. Durante el tutorial, Cloud 9 actuará como su *máquina local*. Aún así, usted estará ejecutando comandos en una terminal, tal como sus compañeros de clase en OS X, Ubuntu, o Windows, pero su terminal estará conectada a una computadora activa en algún otro lugar que Cloud 9 le establezca.
 
 1. Instalar Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Ir a [c9.io](https://c9.io)
