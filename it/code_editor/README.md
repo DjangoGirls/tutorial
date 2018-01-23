@@ -1,4 +1,4 @@
-# Code Editor
+# L'editor di codice
 
 > Per i lettori a casa: questo capitolo è trattato nel video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
