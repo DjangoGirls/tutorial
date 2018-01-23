@@ -18,7 +18,7 @@ Bootstrap è uno dei framework HTML e CSS più poplari per sviluppare bellissimi
 
 Per installare Bootstrap devi aggiungere nella sezione `<head>` del tuo file `.html`:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -43,9 +43,9 @@ Lo facciamo creando una cartella denominata `static` all'interno dela nostra app
 
     djangogirls
     ├── blog
-    │   ├── migrations
-    │   ├── static
-    │   └── templates
+    |     ├── migrations
+    |     ├── static
+    |     └── templates
     └── mysite
     
 
