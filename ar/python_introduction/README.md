@@ -259,7 +259,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 بجانب السلاسل والأعداد الصحيحة، بايثون لديه كل الأنواع المختلفة من الكائنات. الآن نحن بصدد إدخال واحد يسمى **list**. القوائم هي بالضبط ما تعتقد: الكائنات التي هي قوائم لكائنات الأخرى. :)
 
-Go ahead and create a list:
+امضي قدما وأنشئ قائمة:
 
 {% filename %}command-line{% endfilename %}
 
@@ -268,7 +268,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+نعم، هذه القائمة فارغة. ليست مفيدة جدا، أليس كذلك؟ دعونا ننشئ قائمة من أرقام اليانصيب. نحن لا نريد أن نكرر ذالك طوال الوقت، لذلك سنضعها في متغير أيضا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -276,7 +276,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+حسنا، لدينا قائمة! ماذا يمكننا أن نفعل حيال ذلك؟ دعونا نرى كم عدد اليانصيب هناك في القائمة. هل لديك أي فكرة عن أي وظيفة يجب عليك استخدامها لذلك؟ أنت تعرف هذا بالفعل!
 
 {% filename %}command-line{% endfilename %}
 
@@ -285,7 +285,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+نعم! `len()` يمكن أن تعطيك عددا من الكائنات في قائمة. مفيد، أليس كذلك؟ ربما سنقوم بترتيبها الآن:
 
 {% filename %}command-line{% endfilename %}
 
@@ -293,7 +293,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+هذا لا يعيد أي شيء، انها مجرد تغييرات للترتيب الذي يظهر الأرقام في القائمة. دعونا نطبعه مرة أخرى ونرى ما يحدث:
 
 {% filename %}command-line{% endfilename %}
 
@@ -302,9 +302,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+كما ترون، يتم فرز الأرقام في القائمة الخاصة بك الآن من أدنى إلى أعلى القيمة. مبروك!
 
-Maybe we want to reverse that order? Let's do that!
+ربما نريد عكس هذا الترتيب؟ دعونا نفعل ذلك!
 
 {% filename %}command-line{% endfilename %}
 
@@ -314,7 +314,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+إذا كنت ترغب في إضافة أي شيء إلى القائمة الخاصة بك، يمكنك القيام بذلك عن طريق كتابة هذا الأمر:
 
 {% filename %}command-line{% endfilename %}
 
@@ -324,7 +324,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+إذا كنت ترغب في إظهار الرقم الأول فقط، يمكنك القيام بذلك باستخدام **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
