@@ -257,7 +257,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 ## القوائم
 
-بجانب السلاسل والأعداد الصحيحة، بايثون لديه كل الأنواع المختلفة من الكائنات. الآن نحن بصدد إدخال واحد يسمى **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+بجانب السلاسل والأعداد الصحيحة، بايثون لديه كل الأنواع المختلفة من الكائنات. الآن نحن بصدد إدخال واحد يسمى **list**. القوائم هي بالضبط ما تعتقد: الكائنات التي هي قوائم لكائنات الأخرى. :)
 
 Go ahead and create a list:
 
