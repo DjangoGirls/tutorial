@@ -34,7 +34,7 @@ OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 
 ## Seguire il tutorial da casa
 
-È fantastico prendere parte a un workshop Django Girls, ma siamo consapevoli che non sempre è possibile essere presenti a un workshop. Questo è il motivo per cui ti invitiamo a provare seguendo il tutorial da casa. Per chi ci segue da casa, stiamo preparando alcuni video che renderanno più facile seguire il tutorial da sole. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+È fantastico prendere parte a un workshop Django Girls, ma siamo consapevoli che non sempre è possibile essere presenti a un workshop. Questo è il motivo per cui ti invitiamo a provare seguendo il tutorial da casa. Per chi ci segue da casa, stiamo preparando alcuni video che renderanno più facile seguire il tutorial da sole. È ancora un lavoro in corso d'opera, ma col tempo ci saranno sempre saranno più argomenti trattati sul nostro canale YouTube, [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
 In ogni capitolo già trattato, c'è un link che punta al video corretto.
 
@@ -42,10 +42,10 @@ In ogni capitolo già trattato, c'è un link che punta al video corretto.
 
 Questo tutorial è mantenuto da [DjangoGirls](https://djangogirls.org/). Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Vuoi aiutarci a tradurre il tutorial in altre lingue?
 
-Currently, translations are being kept on crowdin.com platform at:
+Attualmente, le traduzioni vengono mantenute sulla piattaforma crowdin.com presso:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Se la tua lingua non è elencata su [crowdin](https://crowdin.com/), puoi [aprire una nuova istanza](https://github.com/DjangoGirls/tutorial/issues/new) segnalando la tua lingua, in modo che possiamo aggiungerla.
