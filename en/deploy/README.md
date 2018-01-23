@@ -182,12 +182,26 @@ would have to go through with any other server provider.  The main thing to noti
 right now is that your database on PythonAnywhere is actually totally separate from
 your database on your own PC -- that means it can have different posts and admin accounts.
 
-Check out your code on PythonAnywhere by typing `tree`:
+As a result, just as we did on your own computer, we repeat the step to
+initialize the admin account with `createsuperuser`.
+
+First, we activate the PythonAnywhere virtualenv, and then we `cd` into our
+code directory.  PythonAnywhere has named them both after your site's name:
+
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+$ workon $USER.pythonanywhere.com
+(yourusername.pythonanywhere.com) $ cd $USER.pythonanywhere.com
+(yourusername.pythonanywhere.com) $ python manage.py createsuperuser
+```
+
+If you like you can also take a look at your code on PythonAnywhere by typing `tree`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ tree
-yourusername.pythonanywhere.com/
+.
 ├── blog
 │   ├── __init__.py
 │   ├── admin.py
@@ -205,7 +219,8 @@ yourusername.pythonanywhere.com/
     └── wsgi.py
 ```
 
-You can also go to the "Files" tab and navigate to your code if you want to.
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in
+file browser.
 
 
 ## You are now live!
