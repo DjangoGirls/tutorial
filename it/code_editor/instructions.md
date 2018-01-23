@@ -16,15 +16,15 @@ Sublime Text è uno tra gli editor più utilizzati. Ha un periodo di prova gratu
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom è un editor molto recente, creato da [GitHub](https://github.com/). È gratis, open_source, facile da installare e da usare. È disponibile per Windows, OS X e Linux.
 
 [Scaricalo qui](https://atom.io/)
 
-## Perché installiamo un editor di codice?
+## Perché installare un editor di codice?
 
 Forse ti stai chiedendo per quale motivo installiamo questo editor di codice, invece di usare un'applicazione come Word o Blocco Note.
 
-La prima ragione è che il codice deve essere **testo semplice**, e programmi come Word e Tesxtedit in realtà non producono questo tipo di testo, ma testo formattato (con font e formattazione) personalizzato come l'[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La prima ragione è che il codice deve essere **testo semplice**, e programmi come Word e Textedit in realtà non producono questo tipo di testo, ma testo formattato (con font e formattazione) personalizzato come l'[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 La seconda ragione è che gli editor sono specializzati nel modificare codice, e quindi mettono a disposizione utili funzionalità come l'evidenziazione della sintassi con colori legati al suo significato, o la chiusura automatica di parentesi e virgolette.
 
