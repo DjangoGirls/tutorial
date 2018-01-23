@@ -179,9 +179,9 @@ Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
 >>> nome = "Ola"
 ```
 
-We type name equals Ola.
+Praticamente, poniamo il valore della variabile "nome" uguale a "Ola".
 
-Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `name` e premi `enter`:
+Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `nome` e premi `invio`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Q
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Urrà! La tua prima variabile! :) Puoi sempre cambiare il valore a cui essa si riferisce:
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,7 +209,7 @@ La puoi utilizzare anche nelle funzioni:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Fantastico, vero? Naturalmente, le variabili possono essere qualsiasi cosa, così come i numeri! Prova questo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -313,7 +313,7 @@ Vogliamo invertire quell'ordine? Facciamolo!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Facile, vero? Se vuoi aggiungere qualcosa alla tua lista, puoi farlo digitando questo comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -336,7 +336,7 @@ Se vuoi mostrare solo il primo numero, puoi farlo usando gli **indici**. L'indic
 
 Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome della lista e l'indice dell'oggetto all'interno delle parentesi quadre.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Per eliminare qualcosa dalla lista dovrai usare gli **indici** come abbiamo visto sopra, e il metodo `pop()`. Proviamo a fare un esercizio per rafforzare quanto abbiamo imparato prima; elimineremo il primo numero della lista.
 
 {% filename %}command-line{% endfilename %}
 
@@ -359,9 +359,9 @@ Per saperne di più su i metodi disponibili per le liste puoi consultare questo 
 
 ## Dizionari
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Per chi ci segue da casa: questa parte si trova nel video [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Un dizionario (dictionary) è simile a una lista, ma accedi ai valori cercando una chiave invece di un indice. Una chiave può essere qualsiasi stringa o numero. La sintassi per definire un dizionario vuoto è:
 
 {% filename %}command-line{% endfilename %}
 
@@ -372,7 +372,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 
 Questo dimostra che hai appena creato un dizionario vuoto. Evviva!
 
-Now, try writing the following command (try substituting your own information, too):
+Ora, prova a scrivere il seguente comando (prova a sostituirlo con le tue informazioni):
 
 {% filename %}command-line{% endfilename %}
 
@@ -380,7 +380,7 @@ Now, try writing the following command (try substituting your own information, t
 >>> partecipante = {'nome': 'Ola', 'paese': 'Polonia', 'numeri_preferiti': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Con questo comando hai appena creato una variabile chiamata `partecipante` con tre coppie di chiavi-valori:
 
 - La chiave `nome` va a indicare il valore `'Ola'` (un oggetto `stringa`),
 - `paese` indica `'Polonia'` (un'altra `stringa`),
@@ -395,7 +395,7 @@ Puoi controllare il contenuto di chiavi individuali con questa sintassi:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Vedi, assomiglia ad una lista. Ma non devi ricordare l'indice - solo il nome.
 
 Cosa succede se chiediamo a Python il valore di una chiave che non esiste? Riesci a indovinarlo? Proviamo!
 
