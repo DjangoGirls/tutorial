@@ -467,15 +467,15 @@ KeyError: 'age'
 - **أخطاء** – يمكنك الآن معرفة كيفية قراءة وفهم الأخطاء التي تظهر إذا كان بايثون لم يفهم امر اعطيته له
 - **المتغيرات** –أسماء الكائنات التي تسمح لك بتكويد أكثر سهولة وجعل التعليمات البرمجية الخاصة بك أكثر قابلية للقراءة
 - **قوائم** – قوائم الكائنات المخزنة في ترتيب معين
-- **dictionaries** – objects stored as key–value pairs
+- **قواميس** – الكائنات المخزنة كقيمة مفتاح-أزواج
 
-Excited for the next part? :)
+متحمس للجزء القادم؟ :)
 
-## Compare things
+## مقارنة الأشياء
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+جزء كبير من البرمجة ينطوي على مقارنة الأشياء. ما هو أسهل شيء للمقارنة؟ أرقام، بالطبع. دعونا نرى كيف يعمل:
 
 {% filename %}command-line{% endfilename %}
 
