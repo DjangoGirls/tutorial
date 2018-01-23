@@ -324,7 +324,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-إذا كنت ترغب في إظهار الرقم الأول فقط، يمكنك القيام بذلك باستخدام **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+إذا كنت ترغب في إظهار الرقم الأول فقط، يمكنك القيام بذلك باستخدام **indexes**. الفهرس هو العدد الذي يقول أين يحدث عنصر في قائمة. المبرمجين يفضلون بدء العد من 0، وبالتالي فإن الكائن الأول في قائمتك هو في مؤشر 0، والكائن القادم هو في 1، وما إلى ذلك. جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -335,9 +335,9 @@ As we'll see later, `print()` is also useful when we want to print things from i
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+كما ترون، يمكنك الوصول إلى كائنات مختلفة في القائمة الخاصة بك باستخدام الاسم في قائمة الفهرس للكائن داخل أقواس معقوفة.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+لحذف شيء من القائمة الخاصة بك سوف تحتاج إلى استخدام **indexes** كما تعلمنا أعلاه وأسلوب `pop()`. دعونا احد الأمثلة ونعزز ما تعلمناه سابقا. سنقوم بحذف الرقم الأول من قائمتنا.
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,15 +352,15 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+انه يعمل كالحصان!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+للمتعة الإضافية، حاول بعض الفهارس الأخرى: 6، 7، 1000،-1 أو-6-1000. انظر إذا كان يمكنك التنبؤ بالنتيجة قبل محاولة الأمر. منطقي؟
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+يمكن أن تجد قائمة بجميع الأساليب القائمة المتوفرة في هذا الفصل من وثائق بايثون: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## القواميس
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
