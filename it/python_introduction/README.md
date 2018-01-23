@@ -24,11 +24,11 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 
 ## Il tuo primo comando Python!
 
-Dopo aver eseguito il comando Python, il prompt è cambiato in `>>>`. Significa che per ora dovremmo utilizzare comandi nel linguaggio Python. You don't have to type in `>>>` – Python will do that for you.
+Dopo aver eseguito il comando Python, il prompt è cambiato in `>>>`. Significa che per ora dovremmo utilizzare comandi nel linguaggio Python. Non devi digitare `>>>` - Python lo farà per te.
 
 Se ad un certo punto vuoi uscire dalla console di Python, digita `exit()` oppure usa la scorciatoia `Ctrl + Z` per Windows e `Ctrl + D` per Mac/Linux. Allora non vedrai più `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Per ora, non vogliamo uscire dalla console di Python. Vogliamo saperne di più. Iniziamo digitando alcuni calcoli matematici, come `2 + 3` e premiamo `invio`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -43,16 +43,16 @@ Bello! Hai visto come le risposte spuntano fuori? Python conosce la matematica! 
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Per eseguire un calcolo esponenziale, per esempio 2 elevato alla potenza 3, digitiamo: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Divertiti con questo per un pò e dopo torna qui. :)
+Divertiti con questo per un po' e dopo torna qui. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Come puoi vedere, Python è una buona calcolatrice. Ora ti starai sicuramente chiedendo cos'altro è capace di fare…
 
 ## Stringhe
 
@@ -92,8 +92,8 @@ Utilizzando le virgolette doppie:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Runnin' down the hill"
-"Runnin' down the hill"
+>>> "L'ape Maja va"
+"L'ape Maja va"
 ```
 
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata (``):
@@ -101,8 +101,8 @@ o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Correre"\"giù dalla collina"
-"Correre giù dalla collina"
+>>> "L\'ape Maja va"
+"L'ape Maja va"
 ```
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
@@ -131,9 +131,9 @@ Ti stai chiedendo perché certe volte chiami una funzione con un `.` alla fine d
 
 OK, basta con le stringhe. Ecco fino ad ora quanto hai imparato:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
+- Il **prompt** -- Digitare i comandi (codice) nel prompt di Python restituisce risposte in Python
+- **Numeri e stringhe** -- In Python i numeri vengono utilizzati per la matematica e le stringhe per oggetti testuali
+- Gli **operatori** -- come + e *, combinano più valori per produrne uno nuovo
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
 Queste sono le basi di ogni linguaggio di programmazione che impari. Pronta per qualcosa di più complicato? Scommetto che lo sei!
@@ -165,7 +165,7 @@ Ha funzionato! Usiamo la funzione `str` all'interno della funzione `len`. `str()
 - La funzione `str` converte le cose in **stringhe**
 - La funzione `int` converte le cose in **numeri interi**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe essere `int('hello')`?
 
 ## Variabili
 
