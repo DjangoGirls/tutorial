@@ -396,9 +396,9 @@ As we'll see later, `print()` is also useful when we want to print things from i
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+انظر، انها مماثلة للقائمة. ولكن لا تحتاج إلى تذكر الفهرس - فقط الاسم.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+ماذا يحدث إذا طلبنا من بايثون قيمة مفتاح غير موجود؟ هل يمكنك التخمين؟ دعونا نحاول ونرى!
 
 {% filename %}command-line{% endfilename %}
 
@@ -409,9 +409,9 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+انضر، خطأ آخر! هذا **KeyError**. بايثون مفيد ويخبرك بأن مفتاح `'age'` غير موجود في هذا القاموس.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+متى يجب استخدام قاموس أو قائمة؟ حسنا، هذه نقطة جيدة للتفكير. فقط فكر في حل قبل النظر في الجواب في السطر التالي.
 
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
