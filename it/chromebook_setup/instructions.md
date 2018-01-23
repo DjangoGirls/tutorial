@@ -1,8 +1,8 @@
 Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non stai usando un Chromebook. Altrimenti, la tua installazione seguirà una procedura diversa. Puoi ignorare il resto delle istruzioni di installazione.
 
-### Nuvola 9
+### Cloud9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Per questo tutorial, Cloud9 sarà come il tuo *computer locale*. Potrai sempre scrivere comandi sul terminale come i tuoi compagni di classe su OS X, Ubuntu o Windows, ma il tuo terminale sarà connesso ad un computer attivo da un'altra parte, che Cloud9 configura per te.
+Cloud9 è uno strumento che mette a disposizione un editor e l'accesso ad un computer su Internet su cui puoi installare, scrivere ed eseguire il software. Per questo tutorial, Cloud9 sarà come il tuo *computer locale*. Potrai sempre scrivere comandi sul terminale come i tuoi compagni di classe su OS X, Ubuntu o Windows, ma il tuo terminale sarà connesso ad un computer attivo da un'altra parte, che Cloud9 configura per te.
 
 1. Installa Cloud 9dal [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Vai su [c9.io](https://c9.io)
@@ -13,12 +13,12 @@ Cloud 9 is a tool that gives you a code editor and access to a computer running 
 
 Ora dovresti vedere un'interfaccia con una barra laterale, una grossa finestra principale con del testo, ed una piccola finestra in basso che somiglia a questa:
 
-{% filename %} Nuvola 9{% endfilename %}
+{% filename %}Cloud 9{% endfilename %}
 
-    yourusername:~/workspace $
+    tuonome:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Quest'area in basso è il tuo *terminale*, dove darai le tue istruzioni al computer che Cloud9 ha preparato. Puoi ridimensionare questa finestra per renderla un po' più grande.
 
 ### Ambiente virtuale
 
@@ -36,7 +36,7 @@ Se non funziona, chiedi aiuto al tuo coach.
 
 Poi, esegui:
 
-{% filename %} Nuvola 9 {% endfilename %}
+{% filename %}Cloud 9{% endfilename %}
 
     mkdir djangogirls
     cd djangogirls
