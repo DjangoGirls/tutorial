@@ -73,18 +73,18 @@ Aby utrzymać wszystko w ładzie, stworzymy osobną aplikację wewnątrz naszego
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. Katalogi i pliki w naszym projekcie powinny wyglądać tak:
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     └── mysite
@@ -94,7 +94,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Posługujemy się w tym celu plikiem `mysite/settings.py`. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,7 +112,7 @@ INSTALLED_APPS = [
 
 ### Tworzymy model wpisu na blogu
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+W pliku `blog/models.py` definiujemy wszystkie obiekty zwane `Models` - jest to miejsce, w którym będziemy definiować nasz wpis na blogu.
 
 Let's open `blog/models.py`, remove everything from it, and write code like this:
 
