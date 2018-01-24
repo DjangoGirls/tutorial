@@ -161,13 +161,13 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 
 Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Zajrzyj do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować rzeczy inne niż opisane powyżej (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-A co to takiego `def publish(self):`? To jest dokładnie metoda publikująca wpis (`publish`), o której wspominaliśmy wcześniej. Wyraz `def` oznacza, że mamy do czynienia z funkcją/metodą, a `publish` to nazwa metody. Możesz zmienić nazwę metody, jeśli chcesz. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+A co to takiego `def publish(self):`? To jest dokładnie metoda publikująca wpis (`publish`), o której wspominaliśmy wcześniej. Wyraz `def` oznacza, że mamy do czynienia z funkcją/metodą, a `publish` to nazwa metody. Możesz zmienić nazwę metody, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji. Na przykład metodę, która oblicza średnią cenę, można nazwać `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Bardzo często metody coś zwracają (ang. `return`). Przykład tego znajdziesz w metodzie `__str__`. W tym przypadku wywołując metodę `__str__()` otrzymamy tekst (**string**) zawierający tytuł wpisu.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Również należy zauważyć, że zarówno `def publish(self):` i `def __str__(self):` są wcięte wewnątrz naszej klasy. Ponieważ Python jest wrażliwy na odstępy, musimy wciąć nasze metody wewnątrz klasy. W przeciwnym razie metody nie będą należeć do klasy i można uzyskać nieoczekiwane zachowanie.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Jeśli coś nie jest jeszcze jasne w modelach, nie wahaj się zapytać swojego mentora! Zdajemy sobie sprawę, że jest to dość skomplikowane, zwłaszcza gdy poznajesz obiekty i funkcje w tym samym czasie. But hopefully it looks slightly less magic for you now!
 
 ### Tworzymy tabele dla modeli w bazie danych
 
