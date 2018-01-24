@@ -183,20 +183,8 @@ right now is that your database on PythonAnywhere is actually totally separate f
 your database on your own PC—that means it can have different posts and admin accounts.
 
 As a result, just as we did on your own computer, we repeat the step to
-initialize the admin account with `createsuperuser`. First we activate the
-virtualenv (PythonAnywhere uses a command called `workon` for that, which is
-just like the `source myenv/bin/activate` that you use on your own computer),
-and `cd` into our code directory (both are named after your webapp name):
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-```
-$ workon <your-pythonanywhere-username>.pythonanywhere.com
-(ola.pythonanywhere.com) $ cd <your-pythonanywhere-username>.pythonanywhere.com
-```
-
-Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets.
-
-Then we can create our admin account:
+initialize the admin account with `createsuperuser`. PythonAnywhere has automatically
+activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
@@ -212,9 +200,9 @@ Now, if you like you can also take a look at your code on PythonAnywhere using
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ ls
+(ola.pythonanywhere.com) $ ls
 blog  db.sqlite3  manage.py  mysite  static
-$ ls blog/
+(ola.pythonanywhere.com) $ ls blog/
 __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
 templates  tests.py  urls.py  views.py
 ```

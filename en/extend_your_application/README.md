@@ -193,7 +193,7 @@ $ git pull
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster.  As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them.  The command is called `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier:
+Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
 {% filename %}command-line{% endfilename %}
 ```
