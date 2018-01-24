@@ -848,8 +848,8 @@ Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da
 
 ```python
 def hi():
-    print('Hi there!')
-    print('How are you?')
+    print('Selam!')
+    print('Nasılsın?')
 
 hi()
 ```
@@ -888,11 +888,11 @@ Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik
 ```python
 def hi(name):
     if name == 'Ola':
-        print('Hi Ola!')
+        print("Merhaba Ola!')
     elif name == 'Sonja':
-        print('Hi Sonja!')
+        print('Merhaba Sonja!')
     else:
-        print('Hi anonymous!')
+        print('Merhaba anonim!')
 
 hi()
 ```
@@ -955,7 +955,7 @@ Hadi daha zekice bir şey yapalım - İkiden fazla isim var ve her biri için bi
 
 ```python
 def hi(name):
-    print('Hi ' + name + '!')
+    print('Merhaba ' + name + '!')
 
 hi("Rachel")
 ```
@@ -994,7 +994,7 @@ Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiy
 kızlar içindeki isimler:
 ```
 
-The ```için``` ifade şunlara benzer davranış gösteriyor ```eğer``` ifade: aşağıdaki kodların ikiside girintili ve dört boşluk olması lazım.
+Bu ```için``` ifade şunlara benzer davranış gösteriyor ```eğer``` ifade: aşağıdaki kodların ikiside girintili ve dört boşluk olması lazım.
 
 Dosyada yer alacak tam kod aşağıdadır:
 
@@ -1002,12 +1002,12 @@ Dosyada yer alacak tam kod aşağıdadır:
 
 ```python
 def hi(name):
-    print('Hi ' + name + '!')
+    print('Merhaba ' + name + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Sen']
 for name in girls:
     hi(name)
-    print('Next girl')
+    print('Sıradaki kız')
 ```
 
 Ve onu çalıştırdığımız zaman:
