@@ -22,4 +22,4 @@ Daha sonra, aşağıdaki listedeki kaynakları deneyebilirsin. Hepsi birden çok
 - [Django'yu Zor Yoldan Öğren kitabı](http://learnpythonthehardway.org/book/)
 - [Django Video Dersleriyle Başlangıç](http://www.gettingstartedwithdjango.com/)
 - [2 Kaşık Django 1.11: Django Web Framework'ün En İyi Uygulamaları Kitabı](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Merhaba Web Uygulaması: Nasıl Web Uygulaması Yapılacağını Öğrenin](https://hellowebapp.com/) - aynı zamanda Tracy Osborn adlı yazarla <tracy@limedaring.com> adresinden iletişime geçerek ücretsiz eKitap lisansınızı isteyebilirsiniz
