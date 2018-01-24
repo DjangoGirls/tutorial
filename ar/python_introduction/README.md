@@ -556,7 +556,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 لتفهم بايثون ذالك ، تحتاج الى كتابتها دائما ك "صحيح" (الحرف الأول كبير، مع بقية الحروف صغيرة). **true, TRUE,، وtRUE لن تنجح – الوحيدة التي ستنجح هي True.** (نفس الأمر ينطبق على 'False' كذلك، بطبيعة الحال.)
 
-Booleans can be variables, too! See here:
+يمكن أن تكون Booleans متغيرات، أيضا! انظر هنا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -566,7 +566,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+يمكنك أيضا القيام بذلك بهذه الطريقة:
 
 {% filename %}command-line{% endfilename %}
 
@@ -576,27 +576,27 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+تدرب واستمتع مع Booleans قبل محاولة تشغيل الأوامر التالية:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+مبروك! Booleans واحدة من أروع ملامح البرمجة، وانت تعلمت للتو كيفية استخدامها!
 
-# Save it!
+# احفظه!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+حتى الآن كنا نكتب كل ما لدينا من تعليمات بايثون في المترجم، مما يحدنا من إدخال سطر واحد من التعليمات البرمجية في وقت واحد. يتم حفظ البرامج العادية في الملفات ويتم تنفيذها من قبل لغتنا البرمجية **interpreter** أو **compiler**. حتى الآن كنا نقوم بتشغيل برامجنا سطر واحد في كل مرة في بايثون **interpreter**. سنحتاج إلى أكثر من سطر واحد من التعليمات البرمجية للمهام القليلة التالية، لذلك سنحتاج بسرعة إلى:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- قم بإنهاء مترجم بايثون
+- فتح محرر التعليمات البرمجية لدينا الاختيار
+- حفظ بعض التعليمات البرمجية في ملف بايثون جديد
+- تشغيله!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+للخروج من مترجم بايثون كنا نستعمل، ببساطة اكتب دالة `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -605,9 +605,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-This will put you back into the command prompt.
+سيؤدي ذلك إلى إعادة توجيهك إلى موجه الأوامر.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+في وقت سابق، اخترنا محرر رموز من قسم [code editor](../code_editor/README.md). سنحتاج إلى فتح المحرر الآن وكتابة بعض الأكواد في ملف جديد:
 
 {% filename %}editor{% endfilename %}
 
