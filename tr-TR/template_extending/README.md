@@ -75,7 +75,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Her şeyin bununla değiştirildiğini farkedebilirsiniz`{% for post in posts %}`dan`{% endfor %}`bununla:{% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 {% endblock %}
 ```
 
-Ama neden? Bir `blok` oluşturdunuz! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Bunun nasıl yapıldığını da hemen göstereceğiz.
+Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan yapmak için şablon etiketi kullandınız. HTML başka bir şablondan gelecek (`base.html`) bu şablonu genişletir. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Şimdi `base.html`'i kaydedin ve `blog/templates/blog/post_list.html` dosyanızı tekrar açın. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
