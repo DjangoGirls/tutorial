@@ -171,7 +171,7 @@ Jeśli coś nie jest jeszcze jasne w modelach, nie wahaj się zapytać swojego m
 
 ### Tworzymy tabele dla modeli w bazie danych
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Został nam ostatni krok, a mianowicie dodanie naszego nowego modelu do bazy danych. Najpierw musimy poinformować Django, że mamy pewne zmiany w naszym modelu. (Właśnie go utworzyłyśmy!) Przejdź do okna konsoli i wpisz `python manage.py makemigrations blog`. Będzie to wyglądać tak:
 
 {% filename %}command-line{% endfilename %}
 
