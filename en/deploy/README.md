@@ -198,6 +198,10 @@ $ workon $USER.pythonanywhere.com
 (yourusername.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
+Type in the details for your superuser.  Best to use the same ones as you're using
+on your own computer to avoid any confusion, unless you want to make the password
+on PythonAnywhere more secure.
+
 Now, if you like you can also take a look at your code on PythonAnywhere using
 `ls`:
 
