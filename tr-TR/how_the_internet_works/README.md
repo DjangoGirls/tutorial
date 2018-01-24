@@ -1,6 +1,6 @@
 # İnternet Nasıl Çalışır
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Evdeki okuyucular için: bu bölüm [İnternet Nasıl Çalışır](https://www.youtube.com/watch?v=oM9yAA09wdc) videosunda anlatıldı.
 > 
 > This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
