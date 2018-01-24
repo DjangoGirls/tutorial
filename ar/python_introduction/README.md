@@ -492,9 +492,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+أعطينا بايثون بعض الأرقام للمقارنة. كما ترون،بايثون لا يمكنها مقارنة الأرقام فقط، ولكن يمكنها أيضا مقارنة نتائج الأسلوب. لطيف، هاه؟
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+هل تتساءل لماذا وضعنا اثنين من العلامات المتساوية `==` بجانب بعضها البعض للمقارنة إذا كانت الأرقام متساوية؟ ونحن نستخدم `=` واحد لتعيين القيم للمتغيرات. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
