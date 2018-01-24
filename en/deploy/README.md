@@ -173,20 +173,22 @@ As you watch that running, you'll be able to see what it's doing:
 - Downloading your code from GitHub
 - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
 - Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the "migrate" command
+- Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
 
 On PythonAnywhere all those steps are automated, but they're the same steps you
 would have to go through with any other server provider.  The main thing to notice
 right now is that your database on PythonAnywhere is actually totally separate from
-your database on your own PC -- that means it can have different posts and admin accounts.
+your database on your own PC—that means it can have different posts and admin accounts.
 
 As a result, just as we did on your own computer, we repeat the step to
 initialize the admin account with `createsuperuser`.
 
-First, we activate the PythonAnywhere virtualenv, and then we `cd` into our
-code directory.  PythonAnywhere has named them both after your site's name:
+First, we activate the virtualenv (PythonAnywhere uses a special command
+called `workon` to do that, it's just like the `source virtualenv/bin/activate`
+that you use on your own computer). Then we `cd` into our code directory.
+PythonAnywhere has named them both after your site's name:
 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
@@ -196,27 +198,16 @@ $ workon $USER.pythonanywhere.com
 (yourusername.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
-If you like you can also take a look at your code on PythonAnywhere by typing `tree`:
+Now, if you like you can also take a look at your code on PythonAnywhere using
+`ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ tree
-.
-├── blog
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
+$ ls
+blog  db.sqlite3  manage.py  mysite  static
+$ ls blog/
+__init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+templates  tests.py  urls.py  views.py
 ```
 
 You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in
