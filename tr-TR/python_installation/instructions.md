@@ -14,7 +14,7 @@ Dikkat edilmesi gereken bir şey: Yükleme esnasında "Setup" ("Kur") işaretli 
 
 Önümüzdeki adımlarda, Windows Komut Satırını kullanıyor olacaksınız (ki ayrıca bahsedeceğiz). Şimdilik, eğer kimi komutlar yazmanız gerekirse, Başlat menüsü → Windows Sistemi → Komut Satırı'na gidin. Ayrıca "Çalıştır" penceresi ekrana gelene kadar Windows tuşuna basılı tutarken "R"-tuşuna basabilirsiniz. Komut Satırı'nı açmak için, "cmd" yazın ve "Çalıştır" penceresinde enter'a basın. (Windows'un yeni versiyonlarında, bazen saklı olduğundan "Komut Satırı"nı aratmak zorunda kalabilirsiniz.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+!["Çalıştır" penceresine "cmd" yazın](../python_installation/images/windows-plus-r.png)
 
 Not: eğer Windows'un eski bir versiyonunu (7, Vista ya da herhangi bir eski versiyon) kullanıyorsanız ve Python 3.6.x yükleyicisi hata veriyorsa, aşağıdakilerden birini deneyebilirsiniz:
 
@@ -23,7 +23,7 @@ Not: eğer Windows'un eski bir versiyonunu (7, Vista ya da herhangi bir eski ver
 
 Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda gösterilenden biraz farklı görünebilir. "python.exe'yi Path'e ekle" görene dek aşağı kaydırdığınızdan emin olun, daha sonra soldaki butona tıklayın ve "Yerel sabit sürücüye yüklenecek"'i seçin:
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Eski Python sürümlerini Path'e ekleyin](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
