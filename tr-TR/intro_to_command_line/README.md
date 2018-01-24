@@ -74,7 +74,7 @@ Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, g
 
 ## İlk komutunuz (Yaşasın!)
 
-Let's start by typing this command:
+Aşağıdaki komutu yazarak başlayalım:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -133,7 +133,7 @@ Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın v
     C:\Users\zeynep
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Not: 'cd' komutu 'dizin değiştir' anlamındadır. Powershell ile Linux veya Mac OS X'teki gibi pwd komutunu kullanabilirsiniz.
 
 <!--endsec-->
 
@@ -171,7 +171,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Not: Ayrıca powershell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
 
 * * *
 
@@ -221,7 +221,7 @@ Gerçekten değişmiş mi bir bakalım:
 
 İşte oldu!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Profesyonel İpucu: Eğer `cd D` yazarsanız ve klavyenizden `tab`'a basarsanız, komut satırıismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer "D" ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için `tab` tuşuna iki kez basın.
 
 * * *
 
