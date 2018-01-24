@@ -251,9 +251,9 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-عندما تكتب `name`, فقط، يستجيب مترجم بايثون مع*representation* المتغير 'نيم'، وهو الحرف M-a-r-i-a، المحاط بعلامات اقتباس مفردة، ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+عندما تكتب `name`, فقط، يستجيب مترجم بايثون مع*representation* المتغير 'نيم'، وهو الحرف M-a-r-i-a، المحاط بعلامات اقتباس مفردة، ''. عندما تقول `print(name)`, بايثون ستقوم ب "طباعة" محتويات المتغير إلى الشاشة، دون علامات الاقتباس، وهو أكثرإتقانا.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+وكما سنرى لاحقاً، `print()` مفيد أيضا عندما نريد طباعة الأشياء من داخل المهام، أو عندما نريد طباعة الأشياء في أسطر متعددة.
 
 ## القوائم
 
@@ -514,7 +514,7 @@ False
 - x `<=` y يعني: x أقل من أو يساوي y
 - x `> =` يعني y: x أكبر من أو يساوي y
 
-Awesome! Wanna do one more? Try this:
+رائع! تريد القيام بذالك مرة اخرى؟ جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -527,7 +527,7 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+يمكنك أن تعطي بايثون العديد من الأرقام للمقارنة كما تريد، وسوف تعطيك الجواب! ذكية جدا، أليس كذلك؟
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
