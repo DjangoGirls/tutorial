@@ -182,9 +182,9 @@ Został nam ostatni krok, a mianowicie dodanie naszego nowego modelu do bazy dan
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Uwaga:** Pamiętaj, aby zapisać pliki, które edytujesz. W przeciwnym razie Twój komputer wykona poprzednią wersję, która może dać Tobie nieoczekiwane komunikaty o błędach.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django przygotował dla nas plik z migracjami, które musimy zastosować teraz do naszej bazy danych. Wpisz `python manage.py migrate blog`, a wynik powinien wyglądać następująco:
 
 {% filename %}command-line{% endfilename %}
 
