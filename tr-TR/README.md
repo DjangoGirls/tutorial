@@ -48,4 +48,4 @@ Bu eğitim [DjangoGirls](https://djangogirls.org/) tarafından sürdürülmekted
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Eğer diliniz [crowdin](https://crowdin.com/)'de listelenmemişse, lütfen [yeni bir konu aç](https://github.com/DjangoGirls/tutorial/issues/new) aracılığıyla bizi bilgilendirin ki dilinizi ekleyebilelim.
