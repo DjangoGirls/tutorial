@@ -34,7 +34,7 @@ Tamam, [hadi en baştan başlayalım...](./how_the_internet_works/README.md)
 
 ## Eğitimi evden takip etmek
 
-Bir Django Girls atölyesine katılmak harika, ama katılmanın her zaman mümkün olmayabileceğinin farkındayız. Bu nedenle, bu eğitimi evde takip etmeyi denemenizi tavsiye ediyoruz. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Bu hala devam eden bir çalışma, ancak yakında [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Youtube kanalında (İngilizce) giderek daha da fazla konu ele alınacak.
+Bir Django Girls atölyesine katılmak harika, ama katılmanın her zaman mümkün olmayabileceğinin farkındayız. Bu nedenle, bu eğitimi evde takip etmeyi denemenizi tavsiye ediyoruz. Evde okuyanlar için, şu anda eğitimi kendi başına izlemeyi kolaylaştıracak videolar hazırlıyoruz. Bu hala devam eden bir çalışma, ancak yakında [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Youtube kanalında (İngilizce) giderek daha da fazla konu ele alınacak.
 
 Ele alınmış olan her bölümde, ilgili videoya ait bir bağlantı var.
 
@@ -42,7 +42,7 @@ Ele alınmış olan her bölümde, ilgili videoya ait bir bağlantı var.
 
 Bu eğitim [DjangoGirls](https://djangogirls.org/) tarafından sürdürülmektedir. Eğer hatalar bulursanız ve eğitimi güncellemek isterseniz lütfen [katkıda bulunma kılavuzunu takip edin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Bu eğitimi diğer dillere çevirmemize yardımcı olmak ister misiniz?
 
 Şuan çeviriler crowdin.com platformunda tutuluyor:
 
