@@ -8,7 +8,7 @@ Django, Python dilinde yazılmıştır. Django'da herhangi bir şey yapmak için
 
 Öncelikle Windows + Pause/Break tuş kombinasyonlarına basarak bilgisayarınızın Windows'un 32-bit versyionunu mu 64-bit versiyonu mu çalıştırdığını kontrol edin. Bu size Sistem bilgisini açacak. Açılan bu pencerede "Sistem tipi" satırına bakın. Windows için Python'ı şu web sitesinden indirebilirsinizhttps://www.python.org/downloads/windows/. "Son Python 3 Sürümü - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 çalıştırılabilir yükleyici**'yi indirin. Değilse, **Windows x86 çalıştırılabilir yükleyici**'yi indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+Dikkat edilmesi gereken bir şey: Yükleme esnasında "Setup" ("Kur") işaretli bir pencere farkedeceksiniz. "Add Python 3.6 to PATH" ("PATH'e Python 3.6'yı ekle) kutucuğunun işaretli olduğundan emin olun ve aşağıda gösterildiği gibi "Install Now" ("Şimdi Yükle") 'a tıklayın:
 
 ![Python'u arama yoluna eklemeyi unutmayın](../python_installation/images/python-installation-options.png)
 
@@ -35,7 +35,7 @@ data-collapse=true ces-->
 Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-361/
 
 * *Mac OS X 64-bit/32-bit yükleyici* dosyasını indirin,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* *python-3.6.1-macosx10.6.pkg* 'a çift tıklayarak yükleyiciyi çalıştırın.
 
 <!--endsec-->
 
@@ -44,13 +44,13 @@ data-collapse=true ces-->
 
 Muhtemelen sisteminizde Python zaten yüklüdür. Yüklü olup olmadığını (ya da hangi versiyon olduğunu) kontrol etmek için komut satırını açın ve aşağıdaki komutları girin: 
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız aşağıdaki adımları takip edin:
+Eğer farklı bir 'mikro sürüm' Python yüklüyse, örn: 3.6.0, o zaman yükseltme yapmak zorunda değilsiniz. Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız aşağıdaki adımları takip edin:
 
 <!--endsec-->
 
@@ -58,7 +58,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 
 Terminale bu komutu girin:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ sudo apt-get install python3.6
     
@@ -70,7 +70,7 @@ data-collapse=true ces-->
 
 Terminalde kullanmanız gereken komut:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ sudo dnf install python3
     
