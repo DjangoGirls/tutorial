@@ -86,7 +86,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 
 Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan yapmak için şablon etiketi kullandınız. HTML başka bir şablondan gelecek (`base.html`) bu şablonu genişletir. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
-Şimdi `base.html`'i kaydedin ve `blog/templates/blog/post_list.html` dosyanızı tekrar açın. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Şimdi `base.html`'i kaydedin ve `blog/templates/blog/post_list.html` dosyanızı tekrar açın. {% raw %} `{% for post in posts %}`'ın üzerindeki ve `{% endfor %}`'ın altındaki her şeyi kaldıracaksınız. İşiniz bittiğinde dosya şu şekilde görünecektir:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan y
 
 Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanmak istiyoruz. Şimdi bu dosyaya blok etiketleri ekleme zamanı!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. Ayrıca içerik bloklarınına ait bütün koduda dahil etmek istiyorsun. Bunu yapmak için, herşeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
+{% raw %}Blok etiketinizin `base.html` dosyanızdaki etikete uymasını istiyorsunuz. Ayrıca içerik bloklarınına ait bütün koduda dahil etmek istiyorsun. Bunu yapmak için, herşeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -144,4 +144,4 @@ Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Gen
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Eğer `TemplateDoesNotExist` hatasını alıyorsanız, bunun anlamı `blog/base.html` dosyası yok ve konsolda `runserver`'ı çalıştırıyorsunuz demektir. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
