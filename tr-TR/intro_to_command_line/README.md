@@ -255,7 +255,7 @@ Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktı
 
 ### Alıştırma!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Sizin için ufak bir alıştırma: yeni oluşturduğunuz `alıştırma` dizininde `test` adında bir dizin oluşturun. (`cd` ve `mkdir` komutlarını kullanın.)
 
 #### Çözüm:
 
@@ -273,7 +273,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd uygulama
     > mkdir test
@@ -295,7 +295,7 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ cd ..
     
@@ -304,20 +304,20 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd ..
     
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+`cd` komutu ile `..` kullanmak sizi geçerli dizinin bir üst dizinine götürür (bu şu anki dizinin ana dizinidir).
 
 Nerede olduğunuzu kontrol edin:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ pwd
     C:\Users\zeynep\Masaüstü
@@ -327,7 +327,7 @@ Nerede olduğunuzu kontrol edin:
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd 
     C:\Users\zeynep\Masaüstü
@@ -337,11 +337,11 @@ Nerede olduğunuzu kontrol edin:
 
 Şimdi `uygulama` dizinini silme vakti:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Dikkat**: `del`, `rmdir` veya `rm` komutları kullanılarak yapılan silme işlemleri geri alınamaz, bunun anlamı: *silinen dosyalar sonsuza dek yok olur*! Yani bu komutları kullanırken çok dikkatli olun.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ rm -r uygulama
     
@@ -350,7 +350,7 @@ Nerede olduğunuzu kontrol edin:
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > rmdir /S uygulama
     uygulama, Emin misiniz <E/H>? E
@@ -362,7 +362,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ ls
     
@@ -371,7 +371,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > dir
     
@@ -384,7 +384,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ exit
     
@@ -393,7 +393,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > exit
     
