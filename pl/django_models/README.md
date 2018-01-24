@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 W pliku `blog/models.py` definiujemy wszystkie obiekty zwane `Models` - jest to miejsce, w którym będziemy definiować nasz wpis na blogu.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Otwórz plik `blog/models.py`, usuń z niego całą zawartość i napisz taki kod:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -142,7 +142,7 @@ class Post(models.Model):
 
 > Upewnij się, że używasz dwóch znaków podkreślenia (`_`) po obu stronach `str`. W Pythonie używa się ich bardzo często i czasem nazywa się je "dunder" (skrót od angielskiej nazwy: "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Wygląda przerażająco, prawda? Ale nie martw się - będziemy tłumaczyć co te linijki znaczą!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
