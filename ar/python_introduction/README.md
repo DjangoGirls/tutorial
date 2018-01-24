@@ -615,13 +615,13 @@ $
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+ومن الواضح أنك مطور بايثون محنك جداً الآن، لذا لا تتردد في كتابة بعض التعليمات البرمجية التي تعلمتها اليوم.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+الآن نحن بحاجة إلى حفظ الملف وإعطائه اسماً وصفياً. دعونا نسمي الملف **python_intro.py** وحفظه إلى سطح المكتب الخاص بك. يمكننا تسمية الملف أي شيء نريده، ولكن الجزء المهم هنا هو التأكد من انتهاء الملف ب **.py**. ويقول امتداد **.py** لنظام التشغيل أن هذا **Python executable file</0 وبايثون يمكن ان يشغله.</p> 
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> يجب أن تلاحظ واحدة من أروع شيء عن المحررين الأكواد: الألوان! في وحدة تحكم بايثون، كان كل شيء بنفس اللون. الآن يجب أن ترى أن الدالة `print` هي لون مختلف عن السلسلة. وهذا ما يسمى "syntax highlighting"، وهي ميزة مفيدة حقاً عند الترميز. سيعطيك لون الأشياء تلميحات مثل السلاسل غير المغلقة أو الأخطاء المطبعية في اسم الكلمة الرئيسية (مثل `def` في إحدى الدالات، والتي سنراها أدناه). وهذا أحد الأسباب التي تجعلنا نستخدم محرر تعليمات برمجية. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+مع الملف المحفوظ، حان الوقت لتشغيله! استخدم المهارات التي كنت قد تعلمت في قسم سطر الأوامر، استخدام التيرمينال **change directories** إلى سطح المكتب.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
