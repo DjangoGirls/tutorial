@@ -529,10 +529,10 @@ True
 
 يمكنك أن تعطي بايثون العديد من الأرقام للمقارنة كما تريد، وسوف تعطيك الجواب! ذكية جدا، أليس كذلك؟
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **و**-إذا قمت باستخدام عامل التشغيل `and`، كل المقارنات يجب أن تكون صحيحة في النظام لكي يكون الأمر كله صحيح
+- **أو** – إذا كنت تستخدم عامل التشغيل `or`، واحد فقط من المقارنات يجب أن يكون صحيحاً في النظام لكي يكون الأمر كله صحيح
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+هل سمعت عبارة "مقارنة التفاح بالبرتقال"؟ دعونا نحاول ما يعادل بايثون:
 
 {% filename %}command-line{% endfilename %}
 
@@ -543,18 +543,18 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+هنا ترى أنه كما هو الحال في التعبير، بايثون غير قادرة على مقارنة عدد(`int`) وسلسلة (`str`). بدلاً من ذلك، فإنه يظهر **TypeError** ويقول لنا لا يمكن مقارنة هذين النوعين معا.
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+وبالمناسبة، لقد تعلمت للتو نوع جديد من الكائنات في بايثون. تسمى **Boolean**.
 
-There are only two Boolean objects:
+هناك اثنين فقط من كائنات Boolean :
 
-- True
-- False
+- صحيح
+- خطأ
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+لتفهم بايثون ذالك ، تحتاج الى كتابتها دائما ك "صحيح" (الحرف الأول كبير، مع بقية الحروف صغيرة). **true, TRUE,، وtRUE لن تنجح – الوحيدة التي ستنجح هي True.** (نفس الأمر ينطبق على 'False' كذلك، بطبيعة الحال.)
 
 Booleans can be variables, too! See here:
 
