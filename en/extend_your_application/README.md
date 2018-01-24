@@ -181,10 +181,12 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd ~/$USER.pythonanywhere.com
+$ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull
 [...]
 ```
+
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
 
 ## Updating the static files on the server
@@ -195,8 +197,8 @@ Start by activating your virtualenv if it's not still active from earlier:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ workon $USER.pythonanywhere.com
-(...)$ python manage.py collectstatic
+$ workon <your-pythonanywhere-username>.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
 [...]
 ```
 

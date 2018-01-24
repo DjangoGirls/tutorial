@@ -183,35 +183,24 @@ right now is that your database on PythonAnywhere is actually totally separate f
 your database on your own PC—that means it can have different posts and admin accounts.
 
 As a result, just as we did on your own computer, we repeat the step to
-initialize the admin account with `createsuperuser`. First let's activate the
-virtualenv and `cd` into our code directory:
+initialize the admin account with `createsuperuser`. First we activate the
+virtualenv (PythonAnywhere uses a command called `workon` for that, which is
+just like the `source myenv/bin/activate` that you use on your own computer),
+and `cd` into our code directory (both are named after your webapp name):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ workon $USER.pythonanywhere.com
-(yourusername.pythonanywhere.com) $ cd $USER.pythonanywhere.com
-(yourusername.pythonanywhere.com) $ python manage.py createsuperuser
+$ workon <your-pythonanywhere-username>.pythonanywhere.com
+(ola.pythonanywhere.com) $ cd <your-pythonanywhere-username>.pythonanywhere.com
 ```
 
-3 things to explain here:
+Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets.
 
-* `workon` is a special command used by PythonAnywhere to activate your
-  virtualenv; it's just like the `source virtualenv/bin/activate`
-  that you use on your own computer
-
-* `$USER` is what's called a "shell variable", and the command-line will
-  automatically replace it with your username.  If you prefer, you can
-  type your actual PythonAnywhere username here (it will even tab-complete).
-
-* PythonAnywhere has named both the virtualenv and the source code folder
-  after your site's name, *yourusername.pythonanywhere.com*.
-
-Let's get back to creating our admin account:
-
+Then we can create our admin account:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-(yourusername.pythonanywhere.com) $ python manage.py createsuperuser
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
 Type in the details for your superuser.  Best to use the same ones as you're using
