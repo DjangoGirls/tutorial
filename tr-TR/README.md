@@ -22,7 +22,7 @@ Bu eğitim sihirli bir şekilde sizi bir programcıya dönüştürmeyecek. Eğer
 
 ## Bu eğitim ile ne öğreneceksiniz?
 
-Eğitimi bitirdiğinizde, küçük bir çalışan web uygulamanız olacak: kendi blogunuz. Size çevrimiçi olarak nasıl yayınlandığını göstereceğiz, böylece başkaları işinizi görecek!
+Eğitimi bitirdiğinizde, küçük bir çalışan web uygulamanız olacak: kendi blogunuz. Size çevrimiçi olarak nasıl yayınlandığını göstereceğiz, böylece başkaları çalışmanızı görecek!
 
 Aşağı yukarı şu şekilde gözükecek:
 
