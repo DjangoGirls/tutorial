@@ -183,18 +183,34 @@ right now is that your database on PythonAnywhere is actually totally separate f
 your database on your own PC—that means it can have different posts and admin accounts.
 
 As a result, just as we did on your own computer, we repeat the step to
-initialize the admin account with `createsuperuser`.
-
-First, we activate the virtualenv (PythonAnywhere uses a special command
-called `workon` to do that, it's just like the `source virtualenv/bin/activate`
-that you use on your own computer). Then we `cd` into our code directory.
-PythonAnywhere has named them both after your site's name:
-
+initialize the admin account with `createsuperuser`. First let's activate the
+virtualenv and `cd` into our code directory:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ workon $USER.pythonanywhere.com
 (yourusername.pythonanywhere.com) $ cd $USER.pythonanywhere.com
+(yourusername.pythonanywhere.com) $ python manage.py createsuperuser
+```
+
+3 things to explain here:
+
+* `workon` is a special command used by PythonAnywhere to activate your
+  virtualenv; it's just like the `source virtualenv/bin/activate`
+  that you use on your own computer
+
+* `$USER` is what's called a "shell variable", and the command-line will
+  automatically replace it with your username.  If you prefer, you can
+  type your actual PythonAnywhere username here (it will even tab-complete).
+
+* PythonAnywhere has named both the virtualenv and the source code folder
+  after your site's name, *yourusername.pythonanywhere.com*.
+
+Let's get back to creating our admin account:
+
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
 (yourusername.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
