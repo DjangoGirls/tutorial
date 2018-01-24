@@ -196,4 +196,4 @@ Django przygotował dla nas plik z migracjami, które musimy zastosować teraz d
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Hurra! Nasz model wpisu znajduje się teraz w naszej bazie danych! Byłoby miło to zobaczyć, prawda? Przejdź do następnego rozdziału, aby zobaczyć, jak wygląda nasz wpis!
