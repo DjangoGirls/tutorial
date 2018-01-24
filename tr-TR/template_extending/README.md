@@ -144,4 +144,4 @@ Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Gen
 
 İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin. :)
 
-> Eğer `TemplateDoesNotExist` hatasını alıyorsanız, bunun anlamı `blog/base.html` dosyası yok ve konsolda `runserver`'ı çalıştırıyorsunuz demektir. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Eğer `TemplateDoesNotExist` hatasını alıyorsanız, bunun anlamı `blog/base.html` dosyası yok ve konsolda `runserver`'ı çalıştırıyorsunuz demektir. Konsolda durdurmayı deneyin (Ctrl+C -Control ve C tuşlarına birlikte basarak) ve `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
