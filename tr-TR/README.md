@@ -22,7 +22,7 @@ Bu eğitim sihirli bir şekilde sizi bir programcıya dönüştürmeyecek. Eğer
 
 ## Bu eğitim ile ne öğreneceksiniz?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Eğitimi bitirdiğinizde, küçük bir çalışan web uygulamanız olacak: kendi blogunuz. Size çevrimiçi olarak nasıl yayınlandığını göstereceğiz, böylece başkaları işinizi görecek!
 
 Aşağı yukarı şu şekilde gözükecek:
 
