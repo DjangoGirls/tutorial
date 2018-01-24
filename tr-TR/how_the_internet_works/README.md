@@ -2,7 +2,7 @@
 
 > Evdeki okuyucular için: bu bölüm [İnternet Nasıl Çalışır](https://www.youtube.com/watch?v=oM9yAA09wdc) videosunda anlatıldı.
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Bu bölüm Jessica McKellar'ın "İnternet Nasıl Çalışır" adlı konuşmasından esinlenilerek oluşturuldu. (http://web.mit.edu/jesstess/www/).
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
