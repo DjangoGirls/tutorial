@@ -144,15 +144,15 @@ class Post(models.Model):
 
 Wygląda przerażająco, prawda? Ale nie martw się - będziemy tłumaczyć co te linijki znaczą!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Wszystkie wiersze zaczynające się od `from` lub `import` są wierszami dodającymi jakieś elementy z innych plików. Czyli zamiast kopiowania i wklejania tych samych treści w każdym pliku, możemy po prostu zawrzeć ich fragmenty za pomocą `from... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` - ta linijka definiuje nasz model (jest on obiektem, czyli `object`).
 
 - `class` to specjalne słowo kluczowe, które sygnalizuje, że tworzymy obiekt.
 - `Post` to nazwa naszego modelu. Możemy nadać mu inną nazwę (bez polskich liter, znaków specjalnych i spacji). Zawsze zaczynaj nazwę modelu wielką literą.
 - `models.Model` oznacza, że nasz obiekt Post jest modelem Django. W ten sposób Django wie, że powinien go przechowywać w bazie danych.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title` (tytuł), `text` (treść wpisu), `created_date` (data utworzenia), `published_date` (data publikacji) oraz `author` (autor). Do tego celu potrzebujemy określić typ każdego pola (Czy to jest tekst? Liczba? Data? Odwołanie do innego obiektu, np. Użytkownika?)
 
 - `models.CharField` - tak definiujemy tekst z ograniczoną liczbą znaków.
 - `models.TextField` - a to nadaje się do dłuższych tekstów bez ograniczeń w ilości znaków. Dla treści wpisu będzie idealne, prawda?
