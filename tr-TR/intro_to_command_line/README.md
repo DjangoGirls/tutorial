@@ -8,7 +8,7 @@ Heyecanlı değil mi?! Birkaç dakika içinde ilk kod satırını yazacaksın! :
 
 Gelecek aşamalar size tüm "hacker"ların kullandığı siyah pencerenin nasıl kullanıldığını gösterecek. Başta biraz korkutucu görünebilir fakat bu sadece sizden komut bekleyen bir pencere.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Not** Lütfen kitap boyunca 'dizin' ve 'klasör' terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini not unutmayın.
 
 ## Komut satırı nedir?
 
