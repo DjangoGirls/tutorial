@@ -22,7 +22,7 @@ Size bir resmini çizdik, İnternet işte buna benzer:
 
 ![Şekil 1.2](images/internet_3.png)
 
-Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. Yani, bir makineye erişmek için (örneğin, https://djangogirls.org sitesinin kayıtlı olduğu) birçok farklı makine üzerinden istek geçmesi gereklidir.
 
 Şöyle gözükmekte:
 
