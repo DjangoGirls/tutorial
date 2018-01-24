@@ -75,7 +75,7 @@ Terminalde kullanmanız gereken komut:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+Eğer eski bir Fedora sürümünüz varsa `dnf` komutu bulunamadı hatasını alabilirsiniz. Bu durumda, yum kullanmanız gerekir.
 
 <!--endsec-->
 
@@ -84,23 +84,23 @@ data-collapse=true ces-->
 
 Terminalde kullanmanız gereken komut:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ sudo zypper install python3
     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Komut istemini açıp `python3` komutunu çalıştırarak yüklemenin başarılı olup olmadığını doğrulayabilirsiniz:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**Not:** Eğer Windows kullanıyorsanız ve `python3` bulunamadı hatasını alıyorsanız, `python` (`3` olmadan) komutunu deneyin ve Python 3.6 sürümlerinin olup olmadığını kontrol edin.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Bazen işler düzgün gitmiyor, bu durumda daha fazla deneyime sahip birinden yardım istemelisiniz.
+Eğer herhangi bir şüpheniz varsa veya kurulumda bir şeyler ters gittiyse ve sonrasında ne yapılacağını bilmiyorsanız, eğitmeninize sorabilirsiniz! Bazen işler düzgün gitmiyor, bu durumda daha fazla deneyime sahip birinden yardım istemelisiniz.
