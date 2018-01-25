@@ -1057,6 +1057,8 @@ Figyeld meg, hogy a két szám közül a második már nincs benne a listában, 
 
 Meg is vagyunk. **Szuper vagy!** Ez egy nehéz fejezet volt, büszke lehetsz magadra. Mi nagyon büszkék vagyunk rád, amiért idáig eljutottál!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
