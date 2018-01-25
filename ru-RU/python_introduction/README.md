@@ -1056,6 +1056,8 @@ for i in range(1, 6):
 
 Вот и всё. **Ты чертовски крута!** Эта глава была непростой, так что ты можешь гордиться собой. Мы-то точно тобой гордимся — вон как далеко продвинулась уже!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Пирожок](images/cupcake.png)
+![Cupcake](images/cupcake.png)
