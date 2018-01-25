@@ -722,7 +722,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
+لاحظ كيف قمنا بفصل السطر التالي من التعليمات البرمجية ب 4 مسافات؟ We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
 Save it and give it another run:
 
@@ -865,7 +865,7 @@ Let's run this now and see what happens:
 
     $ python3 python_intro.py
     Hi there!
-    How are you?
+    How are you؟
     
 
 Note: if it didn't work, don't panic! The output will help you to figure why:
