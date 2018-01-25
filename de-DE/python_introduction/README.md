@@ -1055,6 +1055,8 @@ Merk dir, dass die zweite dieser Nummern, die du als Parameter übergibst, nicht
 
 Das ist alles. **You totally rock!** Das war ein heikles Kapitel, darum kannst du jetzt stolz auf dich sein. Wir sind definitiv stolz auf dich, dass du es so weit geschafft hast!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
