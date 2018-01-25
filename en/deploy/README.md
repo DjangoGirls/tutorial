@@ -152,7 +152,7 @@ Go back to the main PythonAnywhere Dashboard by clicking on the logo, and choose
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provide a helper tool that will do it all for you. Let's install it first:
+Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
@@ -182,8 +182,8 @@ would have to go through with any other server provider.  The main thing to noti
 right now is that your database on PythonAnywhere is actually totally separate from
 your database on your own PC—that means it can have different posts and admin accounts.
 
-As a result, just as we did on your own computer, we repeat the step to
-initialize the admin account with `createsuperuser`. PythonAnywhere has automatically
+As a result, just as we did on your own computer, we need to initialize the
+admin account with `createsuperuser`. PythonAnywhere has automatically
 activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
@@ -191,12 +191,11 @@ activated your virtualenv for you, so all you need to do is run:
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
-Type in the details for your superuser.  Best to use the same ones as you're using
+Type in the details for your admin user.  Best to use the same ones as you're using
 on your own computer to avoid any confusion, unless you want to make the password
 on PythonAnywhere more secure.
 
-Now, if you like you can also take a look at your code on PythonAnywhere using
-`ls`:
+Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
