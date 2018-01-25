@@ -1057,6 +1057,8 @@ for i in range(1, 6):
 
 Ось і все. **Ви дали перцю!** Це був складнуватий розділ, тому ви можете пишатися собою. Ми ж безумовно пишаємося вами, адже ви вже багато чого досягли!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
