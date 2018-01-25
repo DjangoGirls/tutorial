@@ -1057,6 +1057,8 @@ Iz zgornjega primera se vidi tudi, da druga številka, ki jo podamo funkciji ran
 
 To je to. **Obvladaš!** Lahko si ponosna nase, saj je bilo to poglavje kar zahtevno. Veseli smo, predelala že tako velik del tega vodiča!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Mafin](images/cupcake.png)
+![Cupcake](images/cupcake.png)
