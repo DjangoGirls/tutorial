@@ -830,20 +830,20 @@ if volume < 20 or volume > 80:
 لقد تعلمت في التدريبات القليلة الماضية حول:
 
 - **مقارنة الأشياء** – في بايثون يمكنك مقارنة الأشياء باستخدام `>`، `> =`, `= =`، `< =`، `<` و `and` مشغلي `or`
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **Boolean** نوع من العناصر التي لا يمكن أن تحتوي إلا على قيمتين: `True` أو `False`
+- **حفظ الملفات** – تخزين التعليمات البرمجية في ملفات حيث يمكنك تنفيذ برامج أكبر.
+- **if … elif … else** – البيانات التي تسمح لك بتنفيذ التعليمات البرمجية فقط عند استيفاء شروط معينة.
+- **التعليقات**-الأسطر التي لن تشغلها بايثون والتي تمكنك من توثيق التعليمات البرمجية الخاصة بك
 
-Time for the last part of this chapter!
+حان الوقت للجزء الأخير من هذا الفصل!
 
-## Your own functions!
+## الدالات الخاصة بك!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+اتذكر الوضائف مثل `len()` التي يمكنك تنفيدها في بايثون؟ حسنا، الأخبار جيدة--سوف تتعلم كيفية كتابة الدالات الخاصة بك الآن!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+الدالة هي سلسلة من التعليمات التي يجب على بيثون تنفيذها. تبدأ كل وظيفة في بيثون بالكلمة الرئيسية `def`، وتعطى اسما، ويمكن أن تحتوي على بعض المعلمات. دعونا نعطيها انطلاقة. استبدال التعليمات البرمجية في ملف **python_intro.py** بهذا:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -855,9 +855,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+حسنا، الدالة الأولى جاهزة!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+قد تتساءل لماذا نحن قد كتبنا اسم الدالة في الجزء السفلي من الملف. هذا لأن بايثون يقرأ الملف وينفذه من أعلى إلى أسفل. لذالك لكي نستخدم وضيفتنا ، يجب ان نعيد كتابته في الجزء السفلي.
 
 Let's run this now and see what happens:
 
