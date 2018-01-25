@@ -68,7 +68,7 @@ Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda
 
 > Küçük bir not: sizin durumunuzda `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` benzeri bir durumda olabilir ve kesinlikle tamamdır.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Başında `$` veya `>` içeren kısımlar *komut satırı istemi* veya kısaca *komut istemi*'dir. Buraya bir şeyler girilir.
 
 Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, genellikle sola doğru. Sol tarafı göz ardı edeiblirsiniz ve işlemi başlatan komutu gireiblirsiniz.
 
@@ -406,17 +406,17 @@ Harika, değil mi? :)
 
 İşte bazı yararlı komutların özeti:
 
-| Komut (Windows) | Komut (Mac OS - GNU/Linux) | Açıklama                   | Örnek                                             |
-| --------------- | -------------------------- | -------------------------- | ------------------------------------------------- |
-| çıkış           | çıkış                      | pencereyi kapatır          | **çıkış**                                         |
-| cd              | cd                         | dizin değiştir             | **cd test**                                       |
-| cd              | pwd                        | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir             | ls                         | dizin/dosyaları listele    | **dir**                                           |
-| copy            | cp                         | dosya kopyala              | **copy c:\test\test.txt c:\windows\test.txt** |
-| move            | mv                         | dosya taşı                 | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir           | mkdir                      | yeni bir dizin oluştur     | **mkdir testdizini**                              |
-| rmdir (or del)  | rm                         | dosyayı silin              | **del c:\test\test.txt**                        |
-| rmdir /S        | rm -r                      | klasörü siliniz            | **rm -r testdirectory**                           |
+| Komut (Windows)  | Komut (Mac OS - GNU/Linux) | Açıklama                | Örnek                                             |
+| ---------------- | -------------------------- | ----------------------- | ------------------------------------------------- |
+| çıkış            | çıkış                      | pencereyi kapatır       | **çıkış**                                         |
+| cd               | cd                         | dizin değiştir          | **cd test**                                       |
+| cd               | pwd                        | geçerli dizini göster   | **cd** (Windows) veya **pwd** (Mac OS / Linux)    |
+| dir              | ls                         | dizin/dosyaları listele | **dir**                                           |
+| copy             | cp                         | dosya kopyala           | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                         | dosya taşı              | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                      | yeni bir dizin oluştur  | **mkdir testdizini**                              |
+| rmdir (veya del) | rm                         | dosyayı silin           | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                      | klasörü siliniz         | **rm - r testdizini**                             |
 
 Bu kullanabileceğiniz komutlardan sadece birkaçı, fakat bugün bundan daha fazlasını kullanmayacaksınız.
 
