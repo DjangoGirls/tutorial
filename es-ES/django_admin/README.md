@@ -33,7 +33,7 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **No te preocupes si no puedes ver la contraseña que estás escribiendo, así es como se supone que tiene que ser.** Simplemente escríbela y presiona `enter` para continuar. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
 
     Username: admin
     Email address: admin@admin.com
