@@ -139,7 +139,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 ## Configuring our site on PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer. 
+Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
 <img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" />
 
@@ -170,23 +170,16 @@ As you watch that running, you'll be able to see what it's doing:
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you
-would have to go through with any other server provider.  The main thing to notice
-right now is that your database on PythonAnywhere is actually totally separate from
-your database on your own PC—that means it can have different posts and admin accounts.
+On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 
-As a result, just as we did on your own computer, we need to initialize the
-admin account with `createsuperuser`. PythonAnywhere has automatically
-activated your virtualenv for you, so all you need to do is run:
+As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
-Type in the details for your admin user.  Best to use the same ones as you're using
-on your own computer to avoid any confusion, unless you want to make the password
-on PythonAnywhere more secure.
+Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
 Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
@@ -199,21 +192,18 @@ __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
 templates  tests.py  urls.py  views.py
 ```
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in
-file browser.
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
 
 ## You are now live!
 
-Your site should now be live on the public Internet!  Click through to the
-PythonAnywhere "Web" tab to get a link to it.  You can share this with anyone you want :)
+Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" tab to get a link to it.  You can share this with anyone you want :)
 
 
 ## Debugging tips
 
 
-If you see an error while running the `pa_autoconfigure_django.py` script, there are
-a couple of common causes:
+If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
 
 - Forgetting to create your API token.
 - Making a mistake in your GitHub URL
