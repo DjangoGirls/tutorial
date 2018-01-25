@@ -1056,6 +1056,8 @@ Všimni si, že druhé z těchto dvou čísel není zahrnuto v seznamu, který j
 
 A je to. **Jsi naprosto skvělá!** To byla složitá kapitola, takže měla bys být na sebe hrdá. My jsme na tebe velmi hrdí za to, že jsi se dostala tak daleko!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Hrnek](images/cupcake.png)
+![Cupcake](images/cupcake.png)
