@@ -1057,6 +1057,8 @@ Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la list
 
 Et voilà ! **Vous êtes géniale !** Ce chapitre était un peu compliqué et vous devriez être fière de vous ! En tout cas, nous sommes super fière de vous !
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
