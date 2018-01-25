@@ -8,7 +8,7 @@ Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk
 
 ## HTML nedir?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML kullanıcıya basit bir web sayfası görüntülemek için web tarayıcınız tarafından - Chrome, Firefox veya Safari gibi - yorumlanan basit bir koddur.
 
 HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText (HiperMetin)** sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup (İşaretleme)**, bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söyledik demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
 
@@ -41,8 +41,8 @@ Template dosyamıza şunları ekleyelim:
 
 ```html
 <html>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Merhaba!</p>
+    <p>Çalışıyor!</p>
 </html>
 ```
 
@@ -72,11 +72,11 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 ```html
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Ola'nın blogu</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Merhaba!</p>
+        <p>Çalışıyor!</p>
     </body>
 </html>
 ```
@@ -97,14 +97,14 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 
 Şimdi artık biraz eğlenip template'inizi özelleştirmeyi deneyebilirsiniz! İşte bunun için faydalı birkaç etiket:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>Bir başlık</h1>` en önemli başlığınız (ana başlık)
 * `<h2>Bir alt başlık</h2>` - bir sonraki seviyedeki bir başlık için
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<h3>Bir alt-alt başlık</h3>`…ve böyle `<h6>`'ya kadar gider
 * `<p>A paragraph of text</p>`
 * `<em>metin</em>` metni vurgular
 * `<strong>metin</strong>` metni iyice vurgular
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<br>`alt satıra gider (br etiketi ve > işaretinin arasına bir şey konulmaz)
+* `<a href="https://djangogirls.org">bağlantı</a>` bağlantı oluşturur
 * `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 * `<div></div>` - sayfanın bir bölümünü tanımlar
 
