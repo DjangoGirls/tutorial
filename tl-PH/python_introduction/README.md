@@ -1057,6 +1057,8 @@ Tandaan na ang pangalawa sa mga numerong ito ay hindi kasama sa listahan na ini-
 
 Iyan na yun.**You totally rock!** Ito ay isang nakakalitong kabanata, kaya dapat mong ipagmalaki ang iyong sarili. Ipinagmamalaki ka namin sa iyong narating!
 
-Maaaring gusto mong gumawa sandali ng ibang bagay - uminat, maglakad sa paligid ng kaonti, ipahinga ang iyong mga mata bago pumunta sa susunod na kabanata. :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
