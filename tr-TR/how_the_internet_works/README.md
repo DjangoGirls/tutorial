@@ -42,6 +42,6 @@ Bir mektup gönderdiğinizde, bazı özelliklerin doğru olarak teslim edilecek 
 
 Basit olarak, bir web siteniz olduğunuzda, içinde yaşayacağı bir *sunucu* makineniz olması gerekli. *Sunucu* (bir mektupla gelen) bir *istek* aldığında, (başka bir mektupla) size web sitenizi gönderir.
 
-Since this is a Django tutorial, you might ask what Django does. Bir yanıt gönderirken, herkese her zaman aynı şeyi göndermek istemezsiniz. Mektupları özellikle size yazan kişi için kişiselleştirmek çok daha iyi, değil mi? Django bu kişiselleştirilmiş, ilginç mektupları yazmanıza yardımcı olur. :)
+Bu bir Django eğitimi olduğundan, Django'nun ne yaptığını sorabilirsiniz. Bir yanıt gönderirken, herkese her zaman aynı şeyi göndermek istemezsiniz. Mektupları özellikle size yazan kişi için kişiselleştirmek çok daha iyi, değil mi? Django bu kişiselleştirilmiş, ilginç mektupları yazmanıza yardımcı olur. :)
 
 Yeterince konuştuk - Yaratma zamanı!
