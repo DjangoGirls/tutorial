@@ -98,13 +98,13 @@ Ama bu kodda bir hata var. Eğer `birincil anahtar<code>verilmiş herhangi bir <
 
 ![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
-Bunu istemeyiz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Bunu istemeyiz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Bu durumda `pk` verilen bir `gönderi` bulunamazsa çok daha güzel bir sayfa gösterilecek: `Page Not Found 404` hatası.
 
 ![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
 İyi haber şu, kendi `Sayfa bulunamadı` sayfasını yapabilir ve istediğiniz kadar güzelleştirebilirsiniz. Ama şu anda çok önemli değil, o yüzden bu kısmı atlayacağız.
 
-OK, time to add a *view* to our `views.py` file!
+Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
