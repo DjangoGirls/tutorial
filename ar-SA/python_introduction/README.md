@@ -722,9 +722,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-لاحظ كيف قمنا بفصل السطر التالي من التعليمات البرمجية ب 4 مسافات؟ We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
+لاحظ كيف قمنا بفصل السطر التالي من التعليمات البرمجية ب 4 مسافات؟ نحن بحاجة إلى القيام بذلك حتى يعرف بايثون ما هي التعليمات البرمجية التي يجب عليه تشغيلها ، إذا كانت النتيجة صحيحة. يمكنك وضع مسافة واحدة لكن اغلب مبرمجي بايثون يستخدمون 4 مسافات ، لجعل الأمور اكثر اناقة. علامة تبويب `واحدة` ستعتبر أيضا 4 مسافات.
 
-Save it and give it another run:
+احفضها وشغلها مرة اخرى:
 
 {% filename %}command-line{% endfilename %}
 
@@ -733,11 +733,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+ملاحظة: تذكر أن 'python3' في Windows، لا يعتبر كأمر. من الآن فصاعدا، غير 'python3' ب 'python' لتشغيل الملف.
 
-### What if a condition isn't True?
+### ماذا إذا كان الشرط غير صحيح؟
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+في الأمثلة السابقة، تم تنفيذ التعليمات البرمجية فقط عندما كانت الظروف حقيقية. ولكن بايثون تحتوى ايضا على `elif` و `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
