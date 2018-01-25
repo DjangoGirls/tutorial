@@ -1057,6 +1057,8 @@ for i in range(1, 6):
 
 就是这样，**你太厉害啦！** 这是一个棘手的章节，所以你应该为自己感到骄傲。我们为你取得这么多进展而感到骄傲！
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![纸杯蛋糕](images/cupcake.png)
+![Cupcake](images/cupcake.png)
