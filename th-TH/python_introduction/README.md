@@ -1057,6 +1057,8 @@ for i in range(1, 6):
 
 มีเพียงเท่านี้แหละ **คุณเจ๋งมาก!** จริงๆ บทนี้เป็นบทที่ยาก และคุณควรจะภูมิใจในตัวเองนะ เราภูมิใจในตัวคุณนะที่คุณมาถึงจุดนี้ได้!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![คัพเค้ก](images/cupcake.png)
+![Cupcake](images/cupcake.png)
