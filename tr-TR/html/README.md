@@ -170,7 +170,7 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
+> **Not** `--all` demek eğer `git`'in silinmiş dosyaları varsa onları tanımayı sağlar (varsayılan olarak sadece yeni/değiştirilmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
 
 Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'in yükleyeceği dosyalar yeşil gösterilir) bakalım:
 
