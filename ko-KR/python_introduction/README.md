@@ -1057,6 +1057,8 @@ for i in range(1, 6):
 
 이제 다 끝났어요. **모두 정말 대단해요!** 어려운 내용이었는데 잘 해낸 나 자신을 자랑스럽게 생각하세요. 여기까지 온 것이 자랑스럽습니다!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![컵케이크](images/cupcake.png)
+![Cupcake](images/cupcake.png)
