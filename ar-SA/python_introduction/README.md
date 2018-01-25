@@ -909,7 +909,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. لحسن الحظ، بايثون يعطينا رسالة إعلام خطأ مفيدة جداً. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+عفوا، خطأ. لحسن الحظ، بايثون يعطينا رسالة إعلام خطأ مفيدة جداً. يخبرنا أن الدالة `hi()`(التي حددناها) تحتوي على وسيطة واحدة مطلوبة (تسمى `name`) ونسينا أن نمررها عند استدعاء الدالة. دعونا نصلحه في الجزء السفلي من الملف:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -917,7 +917,7 @@ Oops, an error. لحسن الحظ، بايثون يعطينا رسالة إعل�
 hi("Ola")
 ```
 
-And run it again:
+وشغله مرة أخرى:
 
 {% filename %}command-line{% endfilename %}
 
@@ -925,7 +925,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+وإذا قمنا بتغيير الاسم؟
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -933,7 +933,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+وتشغيله:
 
 {% filename %}command-line{% endfilename %}
 
@@ -941,16 +941,16 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+والآن، ما رأيك سوف يحدث إذا قمت بكتابة اسم آخر هناك؟ (لا Ola أو Sonja). جرب وانظر إذا كنت على حق. يجب طباعة هذا:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+يبدو رائعا أليس كذالك؟ بهذه الطريقة ليس عليك تكرار نفسك في كل مرة تريد تغيير اسم الشخص الذي من المفترض أن تقوم الوضيفة بتحيته. وهذا هو بالضبط لماذا نحن بحاجة إلى وظائف--لا تريد ابدأ تكرار التعليمات البرمجية الخاصة بك!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+دعونا نفعل شيئا أكثر ذكاء - هناك أسماء أكثر من اثنين، وكتابة شرط لكل منهم سيكون صعبا، أليس كذلك؟
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -961,7 +961,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+دعونا نستدعي التعليمات البرمجية الآن:
 
 {% filename %}command-line{% endfilename %}
 
@@ -969,11 +969,11 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+مبروك ! لقد تعلمت للتو كيف تكتب الوضائف
 
-## Loops
+## الحلقات
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 This is the last part already. That was quick, right? :)
 
