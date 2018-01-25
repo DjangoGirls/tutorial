@@ -1054,6 +1054,8 @@ Perhatikan bahwa kedua dari kedua angka ini tidak termasuk dalam daftar yang dih
 
 Itu dia. **Kamu benar-benar rock!** Ini adalah bab yang rumit, jadi Anda harus merasa bangga pada diri sendiri. Kami pasti bangga dengan Anda karena sejauh ini berhasil!
 
-Anda mungkin ingin secara singkat melakukan sesuatu yang lain - Peregangan, jalan-jalan sebentar, istirahatkan matamu - sebelum melanjutkan ke bab berikutnya. :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
