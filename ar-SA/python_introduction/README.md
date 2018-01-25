@@ -975,7 +975,7 @@ hi("Rachel")
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+هذا هو الجزء الأخير . كان ذلك سريعا، أليس كذلك؟ :)
 
 Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
