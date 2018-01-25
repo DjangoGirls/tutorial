@@ -1056,6 +1056,8 @@ range関数は、引数に指定した開始と終了の数値から連続する
 
 以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当に素晴らしいことです！
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
