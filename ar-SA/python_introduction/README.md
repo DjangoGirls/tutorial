@@ -859,7 +859,7 @@ hi()
 
 قد تتساءل لماذا نحن قد كتبنا اسم الدالة في الجزء السفلي من الملف. هذا لأن بايثون يقرأ الملف وينفذه من أعلى إلى أسفل. لذالك لكي نستخدم وضيفتنا ، يجب ان نعيد كتابته في الجزء السفلي.
 
-Let's run this now and see what happens:
+لنختبر و نرى ماذا يحدث:
 
 {% filename %}command-line{% endfilename %}
 
@@ -868,13 +868,13 @@ Let's run this now and see what happens:
     How are you؟
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+ملاحظة: إذا كان لا يعمل، لا داعي للذعر! المخارج سوف تساعدك على معرفة السبب:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- إذا حصلت على `NameError`، فهذا يعني أنك كتبت شيئا خاطئا، لذا يجب عليك التحقق من أنك استخدمت نفس الاسم عند إنشاء الدالة باستخدام `def hi():` وعند الاتصال به `hi()`.
+- إذا حصلت على `IndentationError`، تحقق من أن كلا من خطوط <`print` لها نفس المسافة البيضاء في بداية السطر: بايثون يريد أن تكون كل شفرة داخل الدالة محاذية بدقة.
+- إذا لم يكن هناك أي إخراج على الإطلاق، تحقق من أن آخر `hi()` *isn't* مسنن - إذا كان كذلك، فسيصبح هذا السطر جزءا من الوظيفة أيضا، ولن يتم تشغيله ابدا.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+دعونا نبني أول وظيفة لدينا مع المعلمات. سنستخدم المثال السابق - الدالة التي تقول "مرحبا" للشخص الذي يديرها - مع اسم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -882,7 +882,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+كما ترون، أعطينا الآن وظيفتنا معلمة قمنا بتسميتها `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -898,7 +898,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+تذكر: يتم وضع الدالة `print` على مسافة فاصلة ضمن المسافات `if`. وذلك لأن الدالة تعمل عندما يتم استيفاء الشرط. دعونا نرى كيف تعمل الآن:
 
 {% filename %}command-line{% endfilename %}
 
@@ -909,7 +909,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, an error. لحسن الحظ، بايثون يعطينا رسالة إعلام خطأ مفيدة جداً. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
