@@ -137,16 +137,9 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 
-## Creating an API token
-
-This is something you only need to do once.  When you've signed up for PythonAnywhere, you'll be taken to your dashboard.  Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
-
-<img src="images/pythonanywhere_create_api_token.png" alt="The API token tab on the Accounts page" />
-
-
 ## Configuring our site on PythonAnywhere
 
-Go back to the main PythonAnywhere Dashboard by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer. 
+Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer. 
 
 <img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" />
 
