@@ -162,7 +162,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 Bir kere daha `base.html` dosyasını genişleteceğiz. `content` bloğunda bir gönderinin varsa yayınlama tarihini , başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
-{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. (Unutmayın `if... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. (Unutmayın `if... else ..` **Python'a Giriş** bölümünden?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
 
 Tamam, şimdi sayfamızı yenileyerek `Şablonyok` kaybolmuşmu görebiliriz.
 
@@ -179,7 +179,7 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
     $ git status
     $ git add --all .
     $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git commit -m "Site için CSS ve ayrıntılı blog gönderisi için görünüm ve şablon eklendi."
     $ git push
     
 
