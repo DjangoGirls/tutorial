@@ -36,7 +36,7 @@ Mektubunuz size en yakın postaneye gider. Daha sonra sizden biraz daha uzak bir
 
 Bu işler böyle yürür. Mesajlar gönderirsiniz ve cevap beklersiniz. Tabiiki, kağıt ve kalem yerine veri baytları kullanırsınız, fakat fikir aynıdır!
 
-Sokak adı, şehir, alan kodu ve ülke adı yerine, biz IP adreslerini kullanırız. Bilgisayarınız ilk olarak DNS'den (Domain Name System - Alan Adı Sistemi) djangogirls.org adresini bir IP adresine çevirmesini ister. Bu bir nebze burada iletişim kurmak istediğiniz kişinin adına bakarak telefon numarası ve adresini bulabildiğiniz eski telefon rehberi gibi çalışır. 
+Sokak adı, şehir, alan kodu ve ülke adı yerine, biz IP adreslerini kullanırız. Bilgisayarınız ilk olarak DNS'den (Domain Name System - Alan Adı Sistemi) djangogirls.org adresini bir IP adresine çevirmesini ister. Bu bir nebze burada iletişim kurmak istediğiniz kişinin adına bakarak telefon numarası ve adresini bulabildiğiniz eski telefon rehberleri gibi çalışır.
 
 Bir mektup gönderdiğinizde, bazı özelliklerin doğru olarak teslim edilecek olması gerekir: bir adres, bir pul vs. Ayrıca alıcının anlayacağı bir dil kullanıyorsunuz, değil mi? Aynısı bir web sitesini görmek için gönderdiğiniz *veri paketleri* için de geçerli. HTTP(Hypertext Transfer Protocol - HiperMetin transfer protokolü) adı verilen bir protokol kullanırız.
 
