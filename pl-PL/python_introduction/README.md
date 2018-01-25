@@ -1057,6 +1057,8 @@ Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej prze
 
 To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Babeczka](images/cupcake.png)
+![Cupcake](images/cupcake.png)
