@@ -748,7 +748,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+عند تشغيل هذا سيتم طباعته:
 
 {% filename %}command-line{% endfilename %}
 
@@ -756,7 +756,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+إذا كان عدد 2 أكبر من 5، فسيتم تنفيذ الأمر الثاني. دعونا نرى كيف يعمل `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -770,7 +770,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+وتنفذ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -778,9 +778,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+اترى ما حدث هناك؟ `elif` يسمح لك بإضافة الشروط الإضافية التي يتم تشغيلها في حالة فشل الشروط السابقة.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+يمكنك إضافة العديد من بيانات `elif` كما تريد بعد العبارة الأولى `if` الخاص بك. على سبيل المثال:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -800,7 +800,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+بايثون يمر من خلال كل اختبار في تسلسل ويطبع:
 
 {% filename %}command-line{% endfilename %}
 
@@ -808,11 +808,11 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## التعليقات
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+التعليقات هي سطور تبدأ ب `#`. يمكنك كتابة ما تريد بعد `#` وسيتجاهل بايثون ذلك. يمكن للتعليقات ان تجعل تعليماتك البرمجية سهلة ليفهمها الأخرين.
 
-Let's see how that looks:
+دعونا نرى كيف يبدو ذالك:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -823,13 +823,13 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+لا تحتاج إلى كتابة تعليق لكل سطر من التعليمات البرمجية، ولكنها مفيدة لشرح سبب قيام الشفرة بعمل شيء ما، أو تقديم ملخص عندما تفعل شيئا معقدا.
 
-### Summary
+### الملخص
 
-In the last few exercises you learned about:
+لقد تعلمت في التدريبات القليلة الماضية حول:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- **مقارنة الأشياء** – في بايثون يمكنك مقارنة الأشياء باستخدام `>`، `> =`, `= =`، `< =`، `<` و `and` مشغلي `or`
 - **Boolean** – a type of object that can only have one of two values: `True` or `False`
 - **Saving files** – storing code in files so you can execute larger programs.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
