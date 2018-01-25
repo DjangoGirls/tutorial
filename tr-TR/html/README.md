@@ -100,7 +100,7 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 * `<h1>Bir başlık</h1>` en önemli başlığınız (ana başlık)
 * `<h2>Bir alt başlık</h2>` - bir sonraki seviyedeki bir başlık için
 * `<h3>Bir alt-alt başlık</h3>`…ve böyle `<h6>`'ya kadar gider
-* `<p>A paragraph of text</p>`
+* `<p>Metin paragrafı</p>`
 * `<em>metin</em>` metni vurgular
 * `<strong>metin</strong>` metni iyice vurgular
 * `<br>`alt satıra gider (br etiketi ve > işaretinin arasına bir şey konulmaz)
@@ -113,6 +113,7 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+html
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -121,11 +122,10 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
+            <p>yayın tarihi: 14.06.2014, 12:14</p>
+            <h2><a href="">İlk Gönderim</a></h2>
+            <p>Çok heyecanlıyım! Bu benim ilk gönderim. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
         </div>
 
         <div>
@@ -146,7 +146,7 @@ Bize yaşattığı duygu:
 
 ![Şekil 11.4](images/step6.png)
 
-Yaşasın! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi** görüntüler - öncesinde ise şablonlardan **aynı formatta** **farklı** bilgileri görüntülememizden bahsediyorduk.
 
 Aslında yapmak istediğimiz Django yöneticimize eklenen gerçek postaları açmak - bundan sonra oraya gidiyoruz.
 
