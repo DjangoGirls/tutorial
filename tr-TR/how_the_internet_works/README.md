@@ -34,7 +34,7 @@ Mektubunuz size en yakın postaneye gider. Daha sonra sizden biraz daha uzak bir
 
 ![Şekil 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Bu işler böyle yürür. Mesajlar gönderirsiniz ve cevap beklersiniz. Tabiiki, kağıt ve kalem yerine veri baytları kullanırsınız, fakat fikir aynıdır!
 
 Sokak adı, şehir, alan kodu ve ülke adı yerine, biz IP adreslerini kullanırız. Bilgisayarınız ilk olarak DNS'den (Domain Name System - Alan Adı Sistemi) djangogirls.org adresini bir IP adresine çevirmesini ister. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
