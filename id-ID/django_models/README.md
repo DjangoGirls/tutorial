@@ -137,14 +137,14 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 <li><code> models.Model </ 0> berarti bahwa Post adalah Model Django, jadi Django tahu bahwa itu harus disimpan dalam database.</li>
 </ul>
 
-<p>Now we define the properties we were talking about: <code>title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)</p> 
+<p>Sekarang kita menetapkan properti yang sedang kita bicarakan: <code>title`, `text`, `created_date`, `published_date` and `author`. Untuk melakukan itu, kita harus menetapkan jenis masing-masing bidang (apakah itu teks? Nomor? Tanggal? Sebuah hubungan dengan objek yang lain, seperti Pengguna?)</p> 
     - ` models.CharField </ 0> - begitulah cara Anda mendefinisikan teks dengan jumlah karakter yang terbatas.</li>
 <li><code> models.TextField </ 0> - ini untuk teks panjang tanpa batas. Kedengarannya ideal untuk konten posting blog kan?</li>
 <li><code> models.DateTimeField </ 0> - ini adalah tanggal dan waktu.</li>
 <li><code> models.ForeignKey </ 0> - ini adalah link ke model lain.</li>
 </ul>
 
-<p>We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).</p>
+<p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).</p>
 
 <p>What about <code>def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.</p> 
         Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
