@@ -6,7 +6,7 @@
 
 حسنا، كيف سوف نحقق ذلك؟
 
-We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
+نحن بحاجة إلى فتح `blog/views.py`. وحتى الآن `post_list` *view* يبدو مثل هذا:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+تذكر عندما تحدثنا عن تضمين التعليمات البرمجية المكتوبة في ملفات مختلفة؟ الآن هي اللحظة التي يتعين علينا فيها ادخال النمودج الذي كتبنا في `models.py`. سوف نقوم بإضافة سطر `from .models import Post` مثل هذا:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,9 +26,9 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+النقطة قبل `models` تعني *current directory* أو *current application*. `Views.py` و `models.py` في نفس الدليل. وهذا يعني أننا يمكن أن تستخدم `.` واسم الملف (بدون `.py`). ثم نقوم باستيراد اسم النموذج (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+ولكن ما هي الخطوة التالية؟ لأخد المشاركات الفعلية للمدونة من `Post` نحن بحاجة إلى ما يسمى `QuerySet`.
 
 ## QuerySet
 
