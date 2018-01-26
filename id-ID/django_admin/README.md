@@ -41,12 +41,12 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 > 
 > ![Django admin](images/django_admin3.png)
 > 
-> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+> Beralih ke Postingan-postinga dan bereksperimen sedikit dengannya. Tambahkan lima atau enam entri blog. Jangan khawatir tentang konten tersebut - anda cukup menkopi beberapa teks dari tutorial ini untuk menghemat waktu. :)
 > 
 > Pastikan paling tidak ada dua atau tiga postingan (tapi tidak semua) yang memiliki tanggal terbitan. Ini akan sangat membantu nantinya.
 > 
 > ![Django admin](images/edit_post3.png)
 > 
-> If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+> Jika anda ingin tahu lebih banyak tentang admin Django, Anda harus memeriksa dokumentasi Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 > 
-> This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+> Ini mungkin saja saat yang tepat untuk minum kopi (atau teh) atau sesuatu yang bisa dimakan untuk mengembalikan tenaga anda. Anda menciptakan model Django yang pertama - Anda layak untuk sedikit beristirahat!
