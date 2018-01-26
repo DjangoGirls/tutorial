@@ -977,9 +977,9 @@ hi("Rachel")
 
 هذا هو الجزء الأخير . كان ذلك سريعا، أليس كذلك؟ :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+المبرمجين لا يحبون تكرار أنفسهم. البرمجة هي جعل كل شيء يعمل أوتوماتيكيا، لذلك نحن لا نريد تحية كل شخص باسمه يدويا، أليس كذلك؟ هنا حيث تأتي الحلقات في متناول اليدين.
 
-Still remember lists? Let's do a list of girls:
+لا تزال تذكر القوائم؟ دعونا ننشئ قائمة من الفتيات:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -987,7 +987,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+نحن نريد أن نحيي كل منهم باسمه. لدينا وظيفة `hi` للقيام بذلك، لذلك دعونا نستخدمها في حلقة:
 
 {% filename %}python_intro.py{% endfilename %}
 
