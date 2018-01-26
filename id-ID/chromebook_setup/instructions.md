@@ -2,7 +2,7 @@ Anda dapat  melewatkan hak atas bagian ini </ 0> jika Anda tidak menggunakan Chr
 
 ### Awan 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Untuk durasi tutorial, Cloud 9 akan bertindak sebagai * mesin lokal </ 0> Anda . Anda masih akan menjalankan perintah di antarmuka terminal seperti teman sekelas Anda di OS X, Ubuntu, atau Windows, namun terminal Anda akan terhubung ke komputer yang berjalan di tempat lain yang ditetapkan Cloud 9 untuk Anda.</p> 
+Cloud 9 adalah sebuah alat yang memberikan anda kode editor dan akses ke komputer yang sedang aktif di Internet di mana anda bisa menginstal, menulis, dan menjalankan perangkat lunak tersebut. Untuk durasi tutorial, Cloud 9 akan bertindak sebagai * mesin lokal </ 0> Anda . Anda masih akan menjalankan perintah di antarmuka terminal seperti teman sekelas Anda di OS X, Ubuntu, atau Windows, namun terminal Anda akan terhubung ke komputer yang berjalan di tempat lain yang ditetapkan Cloud 9 untuk Anda.</p> 
 
 1. Pasang Cloud 9 dari  penyimpanan web Chrome </ 0></li> 
     
