@@ -30,8 +30,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 {% include "/chromebook_setup/instructions.md" %}
 
 # تثبيت Git
-
-{% include "/django_installation/git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # إنشاء حساب Github
 
@@ -39,7 +38,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # قم بإنشاء حساب بايثون في كل مكان
 
-{% include "/django_installation/pythonanywhere.md" %}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # ابدأ بالقراءة
 
