@@ -45,9 +45,9 @@ data-collapse=true ces-->
 > <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-<p>We can create a <code>virtualenv` on both Linux and OS X by running 
+<p>Kita bisa menciptakan <code>virtualenv`pada Linux dan OS X dengan menjalankan 
 > 
-> `python3 -m venv myvenv`. It will look like this:
+> `python3 -m venv myvenv`. Ini akan terlihat seperti ini:
 > 
 > {% filename%} baris perintah {% endfilename%}
 > 
