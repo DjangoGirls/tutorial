@@ -144,9 +144,9 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 <li><code> models.ForeignKey </ 0> - ini adalah link ke model lain.</li>
 </ul>
 
-<p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).</p>
+<p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. Anda harus melihat dokumen Django jika ngin mengetahui lebih banyak tentang bidang-bidang Model dan bagaimana menetapkan hal-hal selain yang dijelaskan di atas (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field -tipe).</p>
 
-<p>What about <code>def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.</p> 
+<p>Bagaimana dengan <code>def publish(self):`? Ini merupakan metode `publish` yang kita bicarakan sebelumnya. `def` berarti bahwa ini merupakan sebuah fungsi/metode dan `publish` merupakan nama metode. Anda bisa mengganti nama metode tersebut jika anda mau. The naming rule is that we use lowercase and underscores instead of spaces. Misalnya, metode yang menghitung nilai rata-rata bisa dinamakan ` calculate_average_price`.</p> 
         Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
         
         Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
