@@ -57,7 +57,7 @@ Hal apa saja yang bisa dilakukan dengan posting blog? Akan menyenangkan untuk me
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah file sekarang. Petunjuk dan file dalam proyek kami akan terlihat seperti ini:
 
     djangogirls
     ├── blog
@@ -78,7 +78,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py`. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
