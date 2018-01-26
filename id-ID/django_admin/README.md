@@ -29,22 +29,21 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 >     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
 >     
 > 
-> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. ** Jangan khawatir ketika anda tidak dapat melihat kata sandi yang anda ketik - begitulah semestinya. ** Ketik saja dan tekan ` masukkan ` untuk melanjutkan. Outputnya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya menjadi milik anda):
 > 
->     Username: admin
->     Email address: admin@admin.com
->     Password:
->     Password (again):
->     Superuser created successfully.
+>     Nama akun: admin
+>     Alamat Email: admin@admin.com
+>     Kata Sandi: Kata Sandi (lagi): 
+>     Superuser berhasil dibuat.
 >     
 > 
-> Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+> Kembali ke browser anda. Masuklah dengan kredensial superuser yang anda pilih; anda harus melihat dasbor admin Django.
 > 
 > ![Django admin](images/django_admin3.png)
 > 
 > Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
 > 
-> Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+> Pastikan paling tidak ada dua atau tiga postingan (tapi tidak semua) yang memiliki tanggal terbitan. Ini akan sangat membantu nantinya.
 > 
 > ![Django admin](images/edit_post3.png)
 > 
