@@ -58,11 +58,11 @@ def post_list(request):
 
 آخر جزء مفقود يمرر `posts` QuerySet إلى سياق القالب. لا تقلق -سوف نغطي كيفية عرضه في فصل لاحق.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+يرجى ملاحظة أننا ننشئ *variable* لأعمالا QuerySet: `posts`.. عالج هذا كاسم QuerySet لدينا. من الآن فصاعدا يمكن أن نشير إليه بهذا الاسم.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+في دالة `render` لدينا معلمة واحد `request`(كل شيء نتلقاه من المستخدم عبر شبكة الإنترنت) والأخرى تعطي ملف القالب (`'blog/post_list.html'`). المعلمة الأخيرة، `{}`، هو مكان الذي يمكن أن نضيف فيه بعض الأشياء للقالب المطلوب استخدامه. نحن بحاجة لإعطائهم أسماء (ونحن سوف تلتزم ب `'posts'` الآن). :) ينبغي أن تبدو مثل هذا: `{'posts': posts}`. يرجى ملاحظة أن الجزء قبل `:` سلسلة; تحتاج إلى الإلتفاف مع علامات اقتباس: `''`.
 
-So finally our `blog/views.py` file should look like this:
+في النهاية ملف `blog/views.py` يجب اين يبدو مثل هذا:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+هذا كل شيء ، حان الوقت للعودة إلى قالبنا وإضهار QuerySet!
 
 هل تريد قراءة المزيد حول QuerySets في جانغو ؟ يجب أن ننظر هنا: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
