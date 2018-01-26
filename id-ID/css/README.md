@@ -58,7 +58,7 @@ Mari buat file CSS sekarang, untuk menambahkan gaya Anda sendiri ke halaman web 
 
 Saatnya menulis CSS! Buka file `blog/static/css/blog.css` kedalam teks editor mu.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Kami tidak akan terlalu mendalam dalam menyesuaikan dan mempelajari tentang CSS di sini. Ada rekomendasi untuk pembelajaran CSS secara gratis di akhir halaman ini jika anda ingin belajar lebih banyak.
 
 Tapi mari kita lakukan setidaknya sedikit. Mungkin kita bisa mengubah warna header kita? Untuk memahami warna, komputer menggunakan kode khusus. Kode ini dimulai dengan ` # </ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode biru adalah <code> # 0000FF </ 0> . Anda dapat menemukan kode warna untuk banyak warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan <a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan </ 0> , seperti <code> merah </ 1> dan <code> hijau </ 1> .</p>
 
