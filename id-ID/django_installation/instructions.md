@@ -8,9 +8,9 @@
 > 
 > Karena itu, mari membuat sebuah **virtual environment** (juga disebut *virtualenv*). Virtualenv akan memisahkan setup Python/Django untuk tiap proyek. Ini artinya bahwa suatu perubahan yang anda buat pada sebuah website, tidak akan mempengaruhi website lain yang juga sedang anda kembangkan. Jelas bukan ?
 > 
-> Yang perlu anda kerjakan adalah menemukan sebuah direktory dimana anda ingin menciptakan `virtualenv`, yaitu home directory anda, ini sebagai misal. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+> Yang perlu anda kerjakan adalah menemukan sebuah direktory dimana anda ingin menciptakan `virtualenv`, yaitu home directory anda, ini sebagai misal. Pada Windows, mungkin terlihat seperti `C:\Users \ Name` (dimana`Nama` merupakan nama login anda).
 > 
-> > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> > **CATATAN: ** Pada Windows, pastikan petunjuk ini tidak mengandung karakter beraksen atau karakter khusus; Jika nama pengguna anda mengandung karakter beraksen, gunakan petunjuk yang berbeda, misalnya, `C:\ jangogirls`.
 > 
 > Karena tutorial ini akan menggunakan sebuah direktory baru yaitu `djangogirls`, dari home direktory anda:
 > 
@@ -54,7 +54,7 @@ data-collapse=true ces-->
 >     $ python3 -m venv myvenv
 >     
 > 
-> `myvenv` adalah nama dari `virtualenv` anda. Anda dapat menggunakan nama lain akan tetapi tetap gunakan huruf kecil dan tanpa spasi. It is also a good idea to keep the name short as you'll be referencing it a lot!
+> `myvenv` adalah nama dari `virtualenv` anda. Anda dapat menggunakan nama lain akan tetapi tetap gunakan huruf kecil dan tanpa spasi. Ini juga merupakan ide yang baik untuk menjaga agar nama tetap singkat seperti yang akan anda rujuk secara banyak!
 > 
 > > ** CATATAN: </ 0> Pada beberapa versi Debian / Ubuntu Anda mungkin menerima error berikut:</p> 
 > > 
