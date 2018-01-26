@@ -10,13 +10,13 @@ Gedit adalah sebuah aplikasi teks editor yang open-source, gratis, dan tersedia 
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Teks Sublime merupakan editor yang sangat populer dengan periode evaluasi gratis dan tersedia untuk semua sistem operasi.
 
 [Download disini](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom adalah editor kode yang sangat baru yang diciptakan oleh [GitHub](https://github.com/). Kode editor ini gratis, open-source dan tersedia untuk Windows, OS X dan Linux.
 
 [Download disini](https://atom.io/)
 
