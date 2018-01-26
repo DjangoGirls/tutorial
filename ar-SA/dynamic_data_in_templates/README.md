@@ -32,9 +32,9 @@ from .models import Post
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+يجب ان تكون مألوف مع طريقة عمل QuerySets ، لقد تكلمنا عنهم في [Django ORM (QuerySets) chapter](../django_orm/README.md).
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+لذا نريد الآن نشر مشاركات مدونة مرتبة حسب `published_date`، أليس كذلك؟ فعلنا ذلك بالفعل في فصل QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
+الآن نضع هذه القطعة من التعليمات البرمجية داخل الملف `blog/views.py` عن طريق إضافته إلى الدالة `def post_list(request)`، لكن لا تنسى لأول مرة إضافة `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,7 +56,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+آخر جزء مفقود يمرر `posts` QuerySet إلى سياق القالب. لا تقلق -سوف نغطي كيفية عرضه في فصل لاحق.
 
 Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
