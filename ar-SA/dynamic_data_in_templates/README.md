@@ -1,10 +1,10 @@
 # البيانات الديناميكية في قوالب
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+لدينا قطع مختلفة في المكان: تم تحديد نموذج `Post` في `models.py`,، لدينا `post_list` في `views.py` والقالب المضاف. ولكن كيف سنظهر مشاركاتك في نموذج HTML ؟ لأن هذا ما نريد أن نفعله – اتخاذ بعض المحتويات (النماذج التي تم حفظها في قاعدة البيانات) وعرضها بشكل جميل ، اليس كذالك؟
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+وهذا بالضبط ما يفترض ب *views* القيام به: ربط النماذج والقوالب. وفي `post_list` *view* سوف نحتاج إلى أن النماذج التي نريد عرضها وتمريرها إلى القالب. في *view* نقرر اية (نمادج) سيتم عرضها في قالب.
 
-OK, so how will we achieve this?
+حسنا، كيف سوف نحقق ذلك؟
 
 We need to open our `blog/views.py`. So far `post_list` *view* looks like this:
 
