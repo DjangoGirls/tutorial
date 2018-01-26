@@ -22,7 +22,7 @@ Cloud 9 adalah sebuah alat yang memberikan anda kode editor dan akses ke kompute
                         yourusername: ~ / workspace $
                         
                     
-                    This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+                    Bagian bawah ini merupakan *terminal* anda, dimana anda akan memasang Cloud 9 pada komputer yang telah mempersiapkan perintah-perintah anda. Anda dapat mengubah ukuran Window tersebut agar tampak lebih besar.
                     
                     ### Lingkungan Virtual
                     
