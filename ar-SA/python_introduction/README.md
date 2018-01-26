@@ -995,9 +995,9 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+الـ ```ﻷجل``` بيان يتصرف مثل ```if``` بيان؛ الكود أدناه كل من هذه تحتاج إلى أن تكون المسافة البادئة بأربع مسافات.
 
-Here is the full code that will be in the file:
+هنا التعليمات البرمجية الكاملة التي سوف تكون في الملف:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1011,7 +1011,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+وعند تشغيله:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1028,9 +1028,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+كما ترون، سيتم تكرار كل ما تضعه داخل بيان `for` مع مسافة بادئة لكل عنصر من القائمة `girls`.
 
-You can also use `for` on numbers using the `range` function:
+يمكنك أيضا استخدام `` بالأرقام باستخدام الدالة `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1039,7 +1039,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+والتي ستطبع:
 
 {% filename %}command-line{% endfilename %}
 
