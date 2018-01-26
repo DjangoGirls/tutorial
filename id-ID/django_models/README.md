@@ -78,7 +78,7 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
         └── wsgi.py
     
 
-Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py`. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. So the final product should look like this:
+Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. Kami mengerjakan itu di file `Mysite/settings.py`. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. Jadi produk akhir akan tampak seperti ini:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -96,7 +96,7 @@ INSTALLED_APPS = [
 
 ### Membuat model posting blog
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Pada file `blog/models.py` kami menemukan semua objek yang disebut `Model` - ini merupakan tempat di mana kita akan menemukan posting blog kita.
 
 Let's open `blog/models.py`, remove everything from it, and write code like this:
 
@@ -126,7 +126,7 @@ class Post(models.Model):
 
 > Periksa bahwa Anda menggunakan karakter dua garis bawah (`_`) pada setiap sisi `str`. Konvensi ini sering digunakan dengan Python dan terkadang kita juga menyebutnya "dunder" (singkatan dari "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Terlihat menakutkan bukan? Tapi jangan khawatir - kami akan menjelaskan arti garis-garis ini!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
