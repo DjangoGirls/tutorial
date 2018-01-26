@@ -1050,16 +1050,16 @@ for i in range(1, 6):
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` هو دالة تقوم بإنشاء قائمة أرقام متتالية واحداً تلو الآخر (هذه الأرقام هي التي تقدمها لك كمعلمات).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+لاحظ أن ثاني هذين الرقمين غير مدرجين في القائمة التي يتم إخراجها بواسطة بايثون (بمعنى `range(1, 6)` من 1 إلى 5، ولكن لا يشمل الرقم 6). وهذا لأن "range" نصف مفتوح، ونعني بذلك أنه يتضمن القيمة الأولى، ولكنها ليست الأخيرة.
 
-## Summary
+## الملخص
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+هذا كل شيء. **You totally rock!** كان هذا فصل صعب، لذلك يجب أن تشعر بالفخر من نفسك. لما وصلت اليه حتى الأن!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+لدروس بايثون الرسمية والكاملة زر https://docs.python.org/3/tutorial/. هذا سوف يعطيك دراسة أكثر شمولا وكاملة للغة. في صحتك:)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+قد ترغب في القيام بإيجاز شيء آخر - تمتد، تتجول قليلا، إراحة عينيك - قبل الذهاب إلى الفصل التالي. :)
 
-![Cupcake](images/cupcake.png)
+![كاب كيك](images/cupcake.png)
