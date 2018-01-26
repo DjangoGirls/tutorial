@@ -1,4 +1,4 @@
-# Dynamic data in templates
+# البيانات الديناميكية في قوالب
 
 We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 That's it! Time to go back to our template and display this QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+هل تريد قراءة المزيد حول QuerySets في جانغو ؟ يجب أن ننظر هنا: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
