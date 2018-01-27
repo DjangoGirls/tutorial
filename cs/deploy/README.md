@@ -253,9 +253,13 @@ Budeš přesměrována na PythonAnywhere konfigurační obrazovku pro tvou webov
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 V části "Virtualenv" klepni na červený text, který říká "Enter the path to a virtualenv" a zadej: `/home/ <your-username>/my-first-blog/myvenv/`. Klikni na modré zaškrtávací políčko, čímž uložíš cestu předtím, než budeš pokračovat.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Poznámka:** Nahraď své vlastní uživatelské jméno podle potřeby. Pokud uděláš chybu, PythonAnywhere Ti zobrazí malé varování.
 
