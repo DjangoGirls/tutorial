@@ -261,9 +261,13 @@ Son bahsettiğimiz adım sizi web uygulamanızın PythonAnywhere ayar ekranına 
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 "Virtualenv" bölümünde "Enter the path to a virtualenv" (virtualenv için dizin yolu girin) linkini tıklayın ve şunu yazın: `/home/<kullanıcı-adınız>/ilk-blogum/myvenv`. Devam etmeden önce, dizin yolunu kaydetmek için tik işareti olan mavi kutuyu tıklayın.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Not** İlgili yeri kendi kullanıcı adınızı yazın. Eğer hata yaparsanız, PythonAnywhere size bir uyarı gösterecektir.
 
@@ -300,9 +304,9 @@ Hazırız! Yeşil ve büyük **Reload** (Yeniden yükle) butonuna tıklayın. Uy
 
 ## Hata ayıklama önerileri
 
-Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri için ilk bakacağınız yer, **error log**'unuz (hata kayıtlarınız). Buraya olan linki PythonAnywhere'deki [Web sekme][8]sinde bulabilirsiniz. Burda hata mesajları olup olmadığına bakın; en yeni mesajlar en altta. Sık karşılaşılan problemler şunlar:
+Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri için ilk bakacağınız yer, **error log**'unuz (hata kayıtlarınız). Buraya olan linki PythonAnywhere'deki [Web sekme][9]sinde bulabilirsiniz. Burda hata mesajları olup olmadığına bakın; en yeni mesajlar en altta. Sık karşılaşılan problemler şunlar:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Konsolda yaptığımız adımlardan birinin unutulması: virtualenv'in oluşturulması, çalışır hale getirilmesi, içine Django'nun kurulumu, collectstatic'in çalıştırılması, veritabanının taşınması (migrate ettirilmesi).
 
@@ -312,9 +316,9 @@ Eğer sitenize girdiğinizde bir hata görürseniz, hata ayıklama bilgileri iç
 
 *   Virtualenv'ınız için seçtiğiniz Python versiyonu web uygulamanız için seçtiğiniz Python versiyonu ile aynı mı? İkisinin de 3.4 olması gerekiyor.
 
-*   [Python Anywhere vikisinde (bilgi sayfalarında) genel hata ayıklama önerileri][9] bulunuyor.
+*   [Python Anywhere vikisinde (bilgi sayfalarında) genel hata ayıklama önerileri][10] bulunuyor.
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 Ve eğitmeniniz size yardıma hazır, unutmayın!
 
