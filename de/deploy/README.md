@@ -28,9 +28,9 @@ Git verwaltet die Veränderungen an einer Sammlung von Dateien in einem sogenann
 > **Hinweis:** Überprüfe dein aktuelles Arbeitsverzeichnis mit dem Befehl `pwd` (OSX/Linux) oder `cd` (Windows) bevor du das Repository initialisierst. Du musst dich im `djangogirls`-Verzeichnis befinden, bevor du fortfährst.
 
 ```
-$ git init 
-Initialized empty Git repository in ~/djangogirls/.git/ 
-$ git config --global user.name "Dein Name" 
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Dein Name"
 $ git config --global user.email du@beispiel.com
 ```
 
@@ -53,18 +53,18 @@ Speichere die Datei mit dem Namen `.gitignore` im "djangogirls"-Verzeichnis.
 Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer dann, wenn du dir unsicher bist, was geändert wurde. Das schützt vor manchen Überraschungen, wie z. B. das falsche Hinzufügen oder Übertragen von Dateien. Das `git status`-Kommando gibt Informationen über unbeobachtete/veränderte/hinzugefügte Dateien, den Verzweigungsstatus und einiges mehr wieder. Die Ausgabe sollte so oder so ähnlich sein:
 
 ```
-$ git status 
-On branch master 
+$ git status
+On branch master
 
-Initial commit 
+Initial commit
 
 Untracked files:
-    (use "git add <file>..." to include in what will be committed) 
+    (use "git add <file>..." to include in what will be committed)
 
         .gitignore
         blog/
         manage.py
-        mysite/ 
+        mysite/
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -103,7 +103,7 @@ Gib Folgendes in deine Konsole ein (Ersetze dabei `<your-github-username>` durch
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 $ git push -u origin master
-``` 
+```
 
 Gibt deinen GitHub-Benutzernamen und dein Passwort ein und du solltest etwas Ähnliches wie das hier sehen:
 
@@ -201,7 +201,7 @@ You have requested to collect static files at the destination
 location as specified in your settings:
 
     /home/edith/my-first-blog/static
-    
+
 This will overwrite existing files!
 Are you sure you want to do this?
 
@@ -226,10 +226,10 @@ Hier ist ein weiterer Unterschied zwischen deinem Computer und einem Server: unt
 Wir initialisieren die Datenbank auf dem Server genauso, wie wir es auf deinen Computer mit `migrate` und `createsuperuser` gemacht haben:
 
 ```
-(mvenv) $ python manage.py migrate 
-Operations to perform: 
+(mvenv) $ python manage.py migrate
+Operations to perform:
 [...]
-    Applying sessions.0001_initial... OK 
+    Applying sessions.0001_initial... OK
 
 
 (mvenv) $ python manage.py createsuperuser
@@ -249,9 +249,11 @@ Nach der Bestätigung deines Domainnamens wählst du **manual configuration** (N
 
 Du wirst auf den PythonAnywhere-Konfigurationsschirm für deine Web-App weitergeleitet. Dorthin musst du immer gehen, wenn du Änderungen an deiner App auf dem Server vornehmen willst.
 
-![](images/pythonanywhere_web_tab_virtualenv.png)
+![](images/pythonanywhere_web_tab.png)
 
 In der "Virtualenv"-Sektion, klicke auf den roten Text, welcher sagt: "Enter the path to a virtualenv" und gieb ein: `/home/<your-username>/my-first-blog/myvenv/`. Klicke auf die blaue Box mit dem Häkchen, um den Pfad zu speichern, bevor es weitergeht.
+
+![](images/pythonanywhere_web_tab_virtualenv.png)
 
 > **Hinweis:** Ersetze deinen eigenen Benutzernamen soweit erforderlich. Falls du einen Fehler machst, wird dir PythonAnywhere eine kleine Warnung anzeigen.
 
