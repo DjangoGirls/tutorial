@@ -241,9 +241,11 @@ Successfully installed django-1.8.2 whitenoise-2.0
 Ми опинились на сторінці налаштувань веб-додатку на PythonAnywhere. Сюди слід переходити, якщо ви хочете зробити якісь зміни до додатку на сервері.
 
 
-<img src="images/pythonanywhere_web_tab_virtualenv.png" />
+<img src="images/pythonanywhere_web_tab.png" />
 
 У розділі "Vitrualenv" натиснемо на червоний текст "Enter the path to a virtualenv" (введіть шлях до virtualenv) і напишемо: `/home/<your-username>/my-first-blog/myvenv/`. Перед тим, як продовжити, натиснемо синю кнопку з галочкою, щоб зберегти шлях.
+
+<img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
 > **Примітка** Замініть <your-username> на своє ім'я користувача. Якщо ви помилитесь, PythonAnywhere покаже вам невеличке попередження.
 
@@ -304,5 +306,3 @@ application = DjangoWhiteNoise(get_wsgi_application())
 
 
 *ДОБРЯЧЕ* похваліть себе! Розгортання на сервер - один з найхитромудріших етапів веб-розробки. Зазвичай люди витрачають дні, щоб усе запрацювало. Але вам вдалось вийти у справжній інтернет, запросто!
-
-
