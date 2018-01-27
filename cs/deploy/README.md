@@ -296,9 +296,9 @@ Zvládly jsme to! Klikni na velké zelené tlačítko **Reload**, čímž zobraz
 
 ## Ladící tipy
 
-Pokud se ti zobrazí chyba při pokusu zobrazit web, první místo, kam se podívat na nějaké informace o ladění, je v **error log**. Odkaz na něj najdeš na PythonAnywhere v [kartě Web][8]. Zkontroluj, jestli tam nejsou nějaké chybové zprávy; nejnovější záznamy jsou na konci. Mezi běžné problémy patří:
+Pokud se ti zobrazí chyba při pokusu zobrazit web, první místo, kam se podívat na nějaké informace o ladění, je v **error log**. Odkaz na něj najdeš na PythonAnywhere v [kartě Web][9]. Zkontroluj, jestli tam nejsou nějaké chybové zprávy; nejnovější záznamy jsou na konci. Mezi běžné problémy patří:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Často zapomínané kroky jsou ty, které jsme dělaly v konzoly: vytvoření virtualenv, aktivace, instalace Djanga, spuštění collectstatic, přenesení databáze.
 
@@ -308,9 +308,9 @@ Pokud se ti zobrazí chyba při pokusu zobrazit web, první místo, kam se podí
 
 *   Vybrala jsi stejnou verzi Pythonu pro svůj virtualenv stejně jako pro svoji webovou aplikaci? Obe verze by měly být 3.4.
 
-*   Existují některé [obecné tipy ladění na PythonAnywhere wiki][9].
+*   Existují některé [obecné tipy ladění na PythonAnywhere wiki][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 A pamatuj si, že tvůj kouč je tady, aby ti pomohl!
 
