@@ -251,9 +251,13 @@ Zostaniesz przeniesiony do strony konfiguracji Twojej aplikacji internetowej, cz
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 W sekcji dotyczącej środowiska wirtualnego ("Virtualenv") kliknij na czerwone pole z napisem "Enter the path to a virtualenv" i wpisz: `/home/<your-username>/my-first-blog/myvenv/`. Kliknij w niebieski prostokąt obok, aby zapisać ścieżkę przed przejściem do dalszej części.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Uwaga** Podmień nazwę użytkownika na właściwą. Jeśli się pomylisz, PythonAnywhere da Ci małe ostrzeżenie.
 
@@ -291,7 +295,7 @@ Mamy wszystko gotowe! Naciśnij duży zielony przycisk **Reload** ("Odśwież"),
 ## Porady dotyczące debugowania
 
 Całkiem prawdopodobne, że zamiast swojej strony zobaczysz błąd.
-Pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony. 
+Pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web][8] w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony.
 
 Najprawdopodobniej zobaczysz tam informację, że adres pod którym znajduje się Twoja strona nie został rozpoznany przez Twoją aplikację:
 
@@ -301,7 +305,7 @@ Ze względów bezpieczeństwa, Twoja aplikacja odpowiada tylko na żądania adre
 Musisz pomóc jej zrozumieć, jak nazywa się jej nowy dom. Na swoim komputerze otwórz plik `settings.py` znajdujący się w katalogu `mysite`. Zobaczysz w nim powód całego zamieszania - pustą tablicę:
 
     ALLOWED_HOSTS = []
- 
+
 Teraz, kiedy masz już konto na PythonAnywhere i znasz swój adres, możesz go tu wpisać:
 
     ALLOWED_HOSTS = ['<twoja-nazwa-użytkownika>.pythonanywhere.com']
@@ -321,29 +325,29 @@ Następnie zapisz te zmiany w repozytorium:
 Po czym "wypchnij" zmiany do GitHuba:
 
     $ git push
-    
+
 Teraz przejdź do konsoli Bash w PythonAnywhere i "ściągnij" te zmiany z GitHuba:
 
     $ cd ~/my-first-blog
     $ git pull
-   
-Na koniec w zakładce [Web][8] kliknij w "Reload".
+
+Na koniec w zakładce [Web][9] kliknij w "Reload".
 
 Inne typowe problemy to:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Pominięcie jednego z kroków, które powinnyśmy zrobić w konsoli: stworzenie środowiska wirtualnego, aktywowanie go, instalacja Django, pobranie plików statycznych, migracja bazy danych.
 
-*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce [Web][8] -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
+*   Pomyłka w ścieżce do środowiska wirtualnego w zakładce [Web][9] -- jeśli coś jest nie tak, wyświetli Ci się tam mały czerwony komunikat błędu.
 
 *   Zrobienie błędu w pliku konfiguracyjnym WSGI -- czy dobrze zapisałaś ścieżkę do katalogu my-first-blog?
 
 *   Czy wybrałaś tę samą wersję Pythona dla Twojego środowiska wirtualnego, co dla aplikacji internetowej? Obie powinny być 3.4.
 
-*   Istnieje kilka [ogólnych porad dotyczących debugowania na PythonAnywhere wiki][9].
+*   Istnieje kilka [ogólnych porad dotyczących debugowania na PythonAnywhere wiki][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
