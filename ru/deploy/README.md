@@ -241,9 +241,13 @@ Operations to perform:
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 В секции "Virtualenv" кликни по красному тексту "Enter the path to a virtualenv" и набери `/home/<your-username>/my-first-blog/myvenv/`. Нажми на синий прямоугольник с галочкой, чтобы сохранить изменения, прежде чем двигаться дальше.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Примечание**: замени имя пользователя на своё. Если ты допустишь ошибку, PythonAnywhere выдаст предупреждение.
 
@@ -281,9 +285,9 @@ application = StaticFilesHandler(get_wsgi_application())
 
 ## Советы по отладке
 
-Если видишь ошибку при попытке посетить свой сайт, для получения отладочной информации первым делом просмотри **журнал ошибок**. Ссылку на него ты найдёшь на [вкладке Web][8] на PythonAnywhere. Посмотри, нет ли там сообщений о каких-нибудь ошибках; самые последние из них приведены ниже. Они включают:
+Если видишь ошибку при попытке посетить свой сайт, для получения отладочной информации первым делом просмотри **журнал ошибок**. Ссылку на него ты найдёшь на [вкладке Web][9] на PythonAnywhere. Посмотри, нет ли там сообщений о каких-нибудь ошибках; самые последние из них приведены ниже. Они включают:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 -   Пропуск одного из шагов в консоли: создание virtualenv, её активация, установка Django в виртуальное окружение, инициализация базы данных.
 
@@ -293,9 +297,9 @@ application = StaticFilesHandler(get_wsgi_application())
 
 -   Ты выбрала одну и ту же версию Python для virtualenv и для веб-приложения? Обе должны быть 3.6.
 
-*   Также можешь посмотреть [общие советы по отладке на вики PythonAnywhere][9].
+*   Также можешь посмотреть [общие советы по отладке на вики PythonAnywhere][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 И помни: твой инструктор здесь, чтобы помогать тебе!
 
