@@ -139,7 +139,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
 
-<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
+<img src="images/pythonanywhere_bash_console.png" width="318" alt="pointing at Other: Bash in Start a new Console" />
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
