@@ -254,9 +254,11 @@ Após a confirmação de seu nome de domínio, escolha **manual configuration** 
 
 Você será levado para a tela de configuração da PythonAnywhere para seu webapp, que é onde você precisará de ir quando quiser fazer alterações no aplicativo no servidor.
 
-<img src="images/pythonanywhere_web_tab_virtualenv.png" />
+<img src="images/pythonanywhere_web_tab.png" />
 
 Na seção "Virtualenv", clique no texto vermelho que diz "Enter the path to a virtualenv" e digite: `/home/<your-PythonAnywhere-username>/my-first-blog/myvenv/`.  Clique na caixa azul com a "checkmark" (marca de seleção) para salvar o "path" (caminho) antes de proseguir.
+
+<img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
 > **Nota**: substitua seu próprio nome de usuário PythonAnywhere conforme apropriado. Se você cometer um erro, PythonAnywhere irá mostrar um pequeno aviso.
 
