@@ -139,7 +139,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
 
-<img src="images/pythonanywhere_bash_console.png" width="318" alt="pointing at Other: Bash in Start a new Console" />
+<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
@@ -230,9 +230,11 @@ After confirming your domain name, choose **manual configuration** (N.B. – *no
 
 You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
 
-<img src="images/pythonanywhere_web_tab_virtualenv.png" />
+<img src="images/pythonanywhere_web_tab.png" />
 
 In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/<your-PythonAnywhere-username>/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
+
+<img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
 > **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
