@@ -4,7 +4,7 @@
 
 지금까지는 웹사이트를 내 컴퓨터에서만 볼 수 있었어요. 지금부터 웹사이트를 배포방법을 배워봅시다! 배포(deployment)는 애플리케이션을 인터넷에 올려놓아 다른 사람들도 볼 수 있게 해주는 것 말해요. :)
 
-앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어갑니다. 인터넷 상에 서버를 제공하는 업체들은 참 많습니다. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere](https://www.pythonanywhere.com/)을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 애플리케이션을 위한 무료 서비스를 제공하고 있습니다. 지금 우리가 만드는 웹사이트도 해당됩니다. 
+앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어갑니다. 인터넷 상에 서버를 제공하는 업체들은 참 많습니다. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere](https://www.pythonanywhere.com/)을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 애플리케이션을 위한 무료 서비스를 제공하고 있습니다. 지금 우리가 만드는 웹사이트도 해당됩니다.
 
 우리가 사용할 다른 외부 서비스는 [GitHub](https://github.com/)이라는 코드 호스팅 서비스입니다. 요즘에는 모든 프로그래머들은 Github 계정을 가지고 있으니, 여러분도 Github 계정을 만들어봐요!
 
@@ -225,9 +225,11 @@ Operations to perform:
 
 PythonAnywhere 설정 화면으로 이동할 거에요. 서버 앱에 변경사항이 있을 때 이 설정 화면으로 들어가야 합니다.
 
-<img src="images/pythonanywhere_web_tab_virtualenv.png" />
+<img src="images/pythonanywhere_web_tab.png" />
 
 "가상환경(Virtualenv)" 섹션에서 `가상환경 경로를 입력해주세요(Enter the path to a virtualenv)`라고 쓰여 있는 빨간색 글자를 클릭하고 `/home/<your-username>/my-first-blog/myvenv/` 라고 입력합니다. 이동 경로 저장을 하려면 파란색 박스에 체크 표시를 하고 클릭하세요.
+
+<img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
 > **Note** PythonAnywhere 사용자 이름을 변경하세요. 실수하면 PythonAnywhere는 경고 메시지를 보여줄 거에요.
 
