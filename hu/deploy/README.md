@@ -31,7 +31,7 @@ A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
-    
+
 
 A git csomagtár inicializálása olyasvalami, amit minden projekt esetében csak egyszer kell véghezvinni (így majd nem kell újra és újra megadni a felhasználónevet ill. jelszót).
 
@@ -47,7 +47,7 @@ db.sqlite3
 /static
 .DS_Store
 ```
-    
+
 
 Majd mentsd le `.gitignore` néven a "djangogirls" legfelsőbb mappájában.
 
@@ -59,19 +59,19 @@ Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint 
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 Végül mentsük le a változtatásokat. A konzolban futtasd le a következő parancsokat:
 
@@ -82,11 +82,11 @@ Végül mentsük le a változtatásokat. A konzolban futtasd le a következő pa
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Forráskód feltöltése a GitHubra
 
-A böngészőben keresd fel a [GitHub.com][2] honlapot és regisztrálj be egy új "free user" fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod) 
+A böngészőben keresd fel a [GitHub.com][2] honlapot és regisztrálj be egy új "free user" fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod)
 
 Ezután hozz létre egy új csomagtárat ("repót"), amit nevezz "my-first-blog"-nak. Hagyd az "initialise with a README" mezőt jelöletlenül, a .gitignore lehetőséget hagyd üresen (ezt manuálisan tettük), a "License" résznél maradjon a "None" opció.
 
@@ -108,7 +108,7 @@ A konzolba írd be a következőt (helyettesítsd a `<your-github-username>` a s
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy láss:
 
@@ -120,7 +120,7 @@ Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -144,7 +144,7 @@ Amikor bejelentkezel a PythonAnywhere-be, egyből a dashboard-on, vagy "Consoles
 Töltsük be a forráskódodat a GitHubról a PythonAnywhere-be egy "clone" létrehozásával. Írd be az alábbiakat a konzolba a PythonAnywhere-ben (ne felejtsd, hogy a `<your-github-username>` helyébe a saját, GitHubon használt felhasználónevedet helyettesítsd be):
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizheted, ha beírod a konzolba, hogy `tree my-first-blog`:
 
@@ -165,7 +165,7 @@ Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizhete
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Virtuális környezet létrehozása a PythonAnywhere-en
 
@@ -213,10 +213,10 @@ A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, 
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-    
+
 
 ### Virtuális környezet beállítása
 
@@ -224,9 +224,13 @@ Most a PythonAnywhere config oldalára kerülsz, ahol különböző dolgokat ál
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 A "Virtualenv" részben kattints rá a piros szövegre: "Enter the path to a virtualenv", majd írd be: `/home/<your-username>/my-first-blog/myvenv/`. Kattints a kék dobozra a pipajellel, hogy elmentsd a path-t, mielőtt továbblépsz.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Megjegyzés** Helyettesítsd be a saját felhasználóneved. Ha elrontasz valamit, a PythonAnywhere figyelmeztetni fog.
 
@@ -266,9 +270,9 @@ Kész is vagyunk! Nyomd meg a nagy zöld **Reload** gombot, és máris meg fogod
 
 ## Tippek debuggoláshoz
 
-Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely, ahol információt kaphatsz a debuggoláshoz, az **error log**. Ehhez a PythonAnywhere [Web tab][8]-ján találod meg a linket. Nézd meg, hogy van-e benne bármilyen hibaüzenet; a legfrissebbek lesznek alul. Gyakran előforduló problémák:
+Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely, ahol információt kaphatsz a debuggoláshoz, az **error log**. Ehhez a PythonAnywhere [Web tab][9]-ján találod meg a linket. Nézd meg, hogy van-e benne bármilyen hibaüzenet; a legfrissebbek lesznek alul. Gyakran előforduló problémák:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Kihagytad valamelyik lépést a konzolban: a virtualenv létrehozását, aktiválását, a Django installálását a virtualenvben, a collectstatic lefuttatását, az adatbázis migrálását.
 
@@ -278,9 +282,9 @@ Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely
 
 *   Ugyanazt a Python verziót választottad a virtualenved számára, mint az alkalmazásodhoz? Mindkettőnek a 3.4-esnek kell lennie.
 
-*   A [PythonAnywhere wikiben is találsz néhány általános hibakeresési tippet][9].
+*   A [PythonAnywhere wikiben is találsz néhány általános hibakeresési tippet][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 És ne feledd, a coachod azért van, hogy segítsen!
 
