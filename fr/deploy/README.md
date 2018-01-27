@@ -224,9 +224,13 @@ Une fois l'assistant fermé, vous serez automatiquement conduite sur la page de 
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 Dans la section "Virtualenv", cliquez sur le texte en rouge qui indique "Enter the path to a virtualenv" (entrer le chemin d'accès de votre environnement virtuel), et entrez ceci : `/home/<your-username>/my-first-blog/myvenv/`. Cliquez sur la boite bleue avec la case à cocher pour sauvegarder le chemin d’accès.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Note** : N'oubliez pas de mettre votre nom d'utilisateur. Ne vous inquiétez pas : si vous faites une erreur, PythonAnywhere vous le signalera.
 
@@ -266,9 +270,9 @@ Et voilà, c'est fini ! Vous n'avez plus qu'à cliquer sur le gros bouton vert *
 
 ## Conseils en cas de bug
 
-Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers ces fichiers dans l'onglet [Web][8] de PythonAnywhere. Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier. Les bugs les plus fréquents que vous pouvez rencontrer sont les suivants:
+Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers ces fichiers dans l'onglet [Web][9] de PythonAnywhere. Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier. Les bugs les plus fréquents que vous pouvez rencontrer sont les suivants:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Oublier une étape lors du passage dans la console. Vous devriez avoir fait toutes les étapes suivantes : créer un environnement virtuel, l'activer, installer Django et enfin créer la base de données.
 
@@ -278,9 +282,9 @@ Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les
 
 *   Se tromper de version de Python : votre environnement virtuel et votre application web doivent toutes les deux être sous Python 3.4.
 
-*   Il y a quelques [astuces générales de débogage sur le wiki PythonAnywhere][9].
+*   Il y a quelques [astuces générales de débogage sur le wiki PythonAnywhere][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 Et n'oubliez pas, votre coach est là pour vous aider !
 
