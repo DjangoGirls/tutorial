@@ -34,7 +34,7 @@ Git tiene traccia delle modifiche a un particolare insieme di file in quello che
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
-    
+
 
 Dobbiamo inizializzare il repository git solo una volta per ogni progetto (e non dovrai più reinserire il nome utente e l'email).
 
@@ -46,7 +46,7 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
     db.sqlite3
     /static
     .DS_Store
-    
+
 
 E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
@@ -56,19 +56,19 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi comandi:
 
@@ -79,7 +79,7 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Pubblichiamo il nostro codice su GitHub
 
@@ -105,7 +105,7 @@ Digita quanto segue sulla tua console (Sostituisci `<your-github-username>` con 
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Inserisci il tuo username e la tua password di GitHub. Dovresti vedere qualcosa di simile:
 
@@ -117,7 +117,7 @@ Inserisci il tuo username e la tua password di GitHub. Dovresti vedere qualcosa 
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -141,7 +141,7 @@ Quando ti sarai registrata su PythonAnywhere, verrai portata alla tua dashboard 
 Scarichiamo il nostro codice da GitHub e su PythonAnywhere creando un "clone" del nostro repo. Digita quanto segue nella console su PythonAnywhere ( non dimenticare di usare il tuo nome utente di GitHub al posto di `<your-github-username>`):
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Questo scaricherà una copia del tuo codice su PythonAnywhere. Dai un'occhiata digitando `tree my-first-blog`:
 
@@ -162,26 +162,26 @@ Questo scaricherà una copia del tuo codice su PythonAnywhere. Dai un'occhiata d
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### Creare un virtualenv su PythonAnywhere
 
 Proprio come hai fatto sul tuo computer, puoi creare un virtualenv su PythonAnywhere. Nella console di Bash, digita:
 
     cd my-first-blog
-    
+
     $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
     (mvenv) $  pip install django==1.8 whitenoise==2.0
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
-    
+
 
 > **Nota** Il passaggio `pip install` può richiedere un paio di minuti. Sii paziente! Ma se richiede più di 5 minuti, c'è qualcosa di sbagliato. Chiedi al tuo coach.
 
@@ -196,17 +196,17 @@ Scopriremo un po' di più sui file statici più tardi nell'esercitazione, quando
 Per ora abbiamo solo bisogno di eseguire un comando supplementare chiamato `collectstatic`, sul server. Dice a Django di raccogliere tutti i file statici di cui ha bisogno sul server. Al momento questi sono per lo più file che fanno apparire carino il sito di amministrazione.
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
         /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 Digita "yes" e si parte! Non ti piace far stampare al computer pagine e pagine di testo incomprensibile? Faccio sempre piccoli versi per accompagnarlo. Brp, brp brp...
 
@@ -216,7 +216,7 @@ Digita "yes" e si parte! Non ti piace far stampare al computer pagine e pagine d
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### Creare il database su PythonAnywhere
 
@@ -228,10 +228,10 @@ Possiamo inizializzare il database sul server proprio come abbiamo fatto sul tuo
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-    
+
 
 ## Pubblicare il nostro blog come una web app
 
@@ -249,9 +249,13 @@ Verrai portato alla schermata di configurazione PythonAnywhere per tua webapp, c
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 Nella sezione "Virtualenv", clicca sul testo rosso che dice "Enter the path to a virtualenv" ed immetti: `/home/<your-username>/my-first-blog/myvenv/`. Clicca sul riquadro blu con il segno di spunta per salvare il percorso prima di andare avanti.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Note** Sostituisci il tuo nome utente come appropriato. se commetti un errore, PythonAnywhere ti avvertirà.
 
@@ -288,9 +292,9 @@ Abbiamo finito! Premi il grande pulsante verde **Reload** e potrai vedere la tua
 
 ## Suggerimenti per il debug
 
-Se vedi un errore quando provi a visitare il tuo sito, il primo posto dove cercare qualche info per il debugging è nel tuo **error log**. Troverai un link nella [ scheda Web][8] di PythonAnywhere. Vedi se ci sono messaggi di errore lì; i più recenti sono alla fine. I problemi comuni includono:
+Se vedi un errore quando provi a visitare il tuo sito, il primo posto dove cercare qualche info per il debugging è nel tuo **error log**. Troverai un link nella [ scheda Web][9] di PythonAnywhere. Vedi se ci sono messaggi di errore lì; i più recenti sono alla fine. I problemi comuni includono:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Dimenticare uno dei passi che abbiamo fatto nella console: creare il virtualenv, attivarlo, installarci Django, eseguire collecstatic, inizializzazione del database.
 
@@ -300,9 +304,9 @@ Se vedi un errore quando provi a visitare il tuo sito, il primo posto dove cerca
 
 *   Hai adottato la stessa versione di Python per il tuo virtualenv come hai fatto per la tua app web? entrambe dovrebbero essere 3.4.
 
-*   Ci sono alcuni [consigli generali per il debugging sulla wiki di PythonAnywhere][9].
+*   Ci sono alcuni [consigli generali per il debugging sulla wiki di PythonAnywhere][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 E ricorda, il tuo coach è qui per aiutarti!
 
