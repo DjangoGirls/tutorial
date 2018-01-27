@@ -260,9 +260,13 @@ Budeš presmerovaná na PythonAnywhere konfiguračnú obrazovku pre tvoju aplik�
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 V časti "Virtualenv" klikni na červený text "Enter the path to a virtualenv" a zadaj: `/home/<toje-uzivatelske-meno>/my-first-blog/myvenv/`. Klikni na modré políčko s fajočkou a ulož tak cestu predtým, ako budeš pokračovať ďalej.
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **Poznámka** Nahraď svoje užívateľské meno podľa potreby. Ak urobíš chybu, PythonAnywhere ti zobrazí malé upozornenie.
 
@@ -299,9 +303,9 @@ Hotovo! Klikni na veľké zelené tlačidlo **Reload** a potom sa už môžeš p
 
 ## Tipy pre ladenie
 
-Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [karte Web][8]. Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku. Najčastejšie problémy bývajú:
+Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [karte Web][9]. Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku. Najčastejšie problémy bývajú:
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Vynechaný krok, ktorý sme robili v konzole: vytvorenie virtualenv, jeho aktivácia, inštalácia Djanga do virtualenvu, spustenie collectstatic, presun databázy.
 
@@ -311,9 +315,9 @@ Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde h�
 
 *   Vybrala si si rovnakú verziu Pythonu pre virtualenv ako pre webovú aplikáciu? Obidve by mali byť 3.4.
 
-*   Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere wiki][9].
+*   Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere wiki][10].
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 A nezabudni, tvoj tréner je tu na to, aby ti pomohol!
 
