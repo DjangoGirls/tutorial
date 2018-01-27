@@ -34,7 +34,7 @@ Git跟踪一组特定的在代码仓库（或简称“仓库”）中文件的�
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
-    
+
 
 每个项目我们只需要初始化一次Git仓库（而且你从此不需要重新输入用户名和邮箱）。
 
@@ -45,7 +45,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     myvenv
     db.sqlite3
     .DS_Store
-    
+
 
 然后在djangogirls项目根目录下保存为 `.gitignore`文件。
 
@@ -55,19 +55,19 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 最后保存我们的更改。转到你的控制台并运行这些命令：
 
@@ -78,7 +78,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     create mode 100644 .gitignore
     [...]
     create mode 100644 mysite/wsgi.py
-    
+
 
 ## 推送我们的代码到 GitHub 上
 
@@ -104,7 +104,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 输入你的Github账号名和密码，然后你会看到这样：
 
@@ -116,7 +116,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     To https://github.com/hjwp/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
@@ -140,7 +140,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 让我们通过创建一个我们仓库的 “Clone” 以便从 Github 拉取代码到 PythonAnywhere。 在 PythonAnywhere 控制台输入以下 (不要忘记使用 Github 用户名替换 `<your-github-username>`)：
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 这将会拉取一份你的代码副本到 PythonAnywhere 上。通过键入`tree my-first-blog` 查阅：
 
@@ -161,26 +161,26 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 ### 在 PythonAnywhere 上创建 virtualenv
 
 如同你在自己电脑上做的，你可以在 PythonAnywhere 上创建 virtualenv 虚拟环境。在 Bash 控制台下，键入：
 
     $ cd my-first-blog
-    
+
     $ virtualenv --python=python3.4 myvenv
     Running virtualenv with interpreter /usr/bin/python3.4
     [...]
     Installing setuptools, pip...done.
-    
+
     $ source myvenv/bin/activate
-    
+
     (mvenv) $  pip install django whitenoise
     Collecting django
     [...]
     Successfully installed django-1.8.2 whitenoise-2.0
-    
+
 
 > **注意** `pip 安装` 步骤可能需要几分钟。 耐心，耐心！但是如果超过 5 分钟，就不对劲了。 问问你的教练。
 
@@ -195,17 +195,17 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 暂且我们只需要在服务器上运行一个额外的命令，就是 `collectstatic`。 它告诉 Django 去收集服务器上所有需要的静态文件。 就眼下来说主要是使admin管理界面看起来更漂亮的文件。
 
     (mvenv) $ python manage.py collectstatic
-    
+
     You have requested to collect static files at the destination
     location as specified in your settings:
-    
+
     /home/edith/my-first-blog/static
-    
+
     This will overwrite existing files!
     Are you sure you want to do this?
-    
+
     Type 'yes' to continue, or 'no' to cancel: yes
-    
+
 
 键入 "yes", 然后它会自行运转！你可喜欢让计算机打印一页一页令人费解的文本？ 我总会弄点噪音作为伴奏。Brp, brp brp...
 
@@ -215,7 +215,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
     Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
     62 static files copied to '/home/edith/my-first-blog/static'.
-    
+
 
 ### 在 PythonAnywhere 上创建数据库
 
@@ -227,13 +227,13 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     Operations to perform:
     [...]
       Applying sessions.0001_initial... OK
-    
-    
+
+
     (mvenv) $ python manage.py createsuperuser
-     
+
     Context | Request Context
-    
-    
+
+
 
 ## 将我们的博客发布为一个网络应用程序
 
@@ -251,9 +251,13 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 ![][7]
 
- [7]: images/pythonanywhere_web_tab_virtualenv.png
+ [7]: images/pythonanywhere_web_tab.png
 
 在 “Virtualenv” 一节，点击红色文字 “Enter the path to a virtualenv"，然后键入： `/home/<your-username>/my-first-blog/myvenv/`。 前进之前，先点击有复选框的蓝色框以保存路径。
+
+![][8]
+
+ [8]: images/pythonanywhere_web_tab_virtualenv.png
 
 > **注意** 替换你自己的用户名。如果你犯了错，PythonAnywhere 会显示一个小警告。
 
@@ -267,17 +271,17 @@ Django 使用 “WSGI 协议”，它是用来服务 Python 网站的一个标�
 
     import os
     import sys
-    
+
     path = '/home/<your-username>/my-first-blog'  # use your own username here
     if path not in sys.path:
         sys.path.append(path)
-    
+
     os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
+
     from django.core.wsgi import get_wsgi_application
     from whitenoise.django import DjangoWhiteNoise
     application = DjangoWhiteNoise(get_wsgi_application())
-    
+
 
 > **注意** 当看到 `<your-username>`时，别忘了替换为你自己的用户名。
 
@@ -289,9 +293,9 @@ Django 使用 “WSGI 协议”，它是用来服务 Python 网站的一个标�
 
 ## 调试小贴士
 
-如果你在访问你的网站时候看到一个错误，首先要去 **error log** 中找一些调试信息。 你可以在 PythonAnywhere [Web 选项卡][8] 中发现它的链接。 检查那里是否有任何错误信息，底部是最新的信息。 常见问题包括：
+如果你在访问你的网站时候看到一个错误，首先要去 **error log** 中找一些调试信息。 你可以在 PythonAnywhere [Web 选项卡][9] 中发现它的链接。 检查那里是否有任何错误信息，底部是最新的信息。 常见问题包括：
 
- [8]: https://www.pythonanywhere.com/web_app_setup/
+ [9]: https://www.pythonanywhere.com/web_app_setup/
 
 *   忘记我们在控制台中的步骤之一：创建 virtualenv，激活它，安装 Django 进去，运行 collectstatic，迁移数据库。
 
@@ -301,9 +305,9 @@ Django 使用 “WSGI 协议”，它是用来服务 Python 网站的一个标�
 
 *   你是否为你的 virtualenv 选择了同样的 Python 版本，如同 Web 应用程序里的那样？两个应该都是 3.4。
 
-*   有一些常见的调试小贴士在 [general debugging tips on the PythonAnywhere wiki][9] 里.
+*   有一些常见的调试小贴士在 [general debugging tips on the PythonAnywhere wiki][10] 里.
 
- [9]: https://www.pythonanywhere.com/wiki/DebuggingImportError
+ [10]: https://www.pythonanywhere.com/wiki/DebuggingImportError
 
 记住，你的教练会在这里帮你！
 
