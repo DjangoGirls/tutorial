@@ -140,7 +140,7 @@ Nový formulár `Post` vytvoríme tak, že sputíme `PostForm()` a prepošleme h
 
 Musíme vytvoriť súbor `post_edit.html` v adresári `blog/ templates/blog`. Aby formulár fungoval, potrebujeme niekoľko vecí:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Musíme zobraziť formulár. Môžeme to urobiť (napríklad) pomocou {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Riadok vyššie musí byť obalený HTML tagom: `<form method="POST">...</form>`.
 * Potrebujeme tlačidlo `Uložiť`. Vytvoríme ho ako HTML tlačidlo: `<button type="submit">Uložiť</button>`.
 * A nakoniec, hneď za otváracím tagom `<form ...>` musíme pridať `{% raw %}{% csrf_token %}{% endraw %}`. Toto je veľmi dôležité, vďaka tomu je formulár bezpečný! Ak si na to zabudla, Django sa bude sťažovať keď sa pokúsiš uložiť formulár:
@@ -206,7 +206,7 @@ Je čas nahradiť tri bodky `[...]`. Ak ide o `metódu` `POST` tak cheme vytvori
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Ďalej skontrolujme či je formulár v poriadku (všetky povinné polia sú vyplnené a nie sú zadané žiadne nesprávne hodnoty). To urobíme pomocou `form.is_valid()`.
 
 Skonotrolujeme, či je formulár platný a ak áno, môžeme ho uložiť!
 
