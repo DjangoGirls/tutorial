@@ -170,9 +170,9 @@ A čo `def publish(self):`? This is exactly the `publish` method we were talking
 
 Methods often `return` something. Príklad nájdeš napríklad v metóde `__str__`. V tomto prípade, keď zavoláme `__str__()`, dostaneme text (**string**) s názvom postu.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Tiež si všimni, že `def publish(self):` a `def __str__(self):` sú odsadené vo vnútri našej triedy. Pretože Python je citlivý na medzery, musíme odsadiť naše metódy vo vnútri triedy. Inak metódy nebudú patriť do triedy, a môže dojsť k neočakávanému správaniu.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Ak čokoľvek nie je jasné, neváhaj a spýtaj sa mentora/ku! Je nám jasné, že je to komplikované, najmä ak sa učíš, čo sú objekty a funkcie súčasne. But hopefully it looks slightly less magic for you now!
 
 ### Vytváranie tabuliek pre modely v databáze
 
