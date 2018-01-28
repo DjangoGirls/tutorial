@@ -78,7 +78,7 @@ Aby sme mali všetko pekne upratané, vytvoríme vo vnútri nášho projektu sam
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Uvidíš, že pribudne nový adresár `blog`, ktorý obsahuje množstvo súborov. Adresáre a súbory v našom projekte by mali vyzerať takto:
 
     djangogirls
     ├── blog
@@ -99,7 +99,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
+Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -157,7 +157,7 @@ Všetky riadky začínajúce s `from` alebo `import` pridávajú časti z iných
 - `Post` je meno nášho modelu. Môžeme mu dať iný názov (ale musíme sa vyhnúť špeciálnym a prázdnym znakom). Názov triedy vždy začni písmenami.
 - `models.Model` znamená, že Post je Django Model, takže Django vie, že by mal byť uložený v databáze.
 
-Teraz zadefinujeme vlastnosti, o ktorých sme hovorili: `title` (titulka), `text`, `created_date` (dátum vytvorenia), `published_date` (dátum zverejnenia) a `author` (autor). To do that we need to define the type of each field (Is it text? Číslo? Dátum? Vzťah k inému objektu, napr. objektu User?)
+Teraz zadefinujeme vlastnosti, o ktorých sme hovorili: `title` (titulka), `text`, `created_date` (dátum vytvorenia), `published_date` (dátum zverejnenia) a `author` (autor). Na to ale musíme zadefinovať typ každého poľa (Je to text? Číslo? Dátum? Vzťah k inému objektu, napr. objektu User?)
 
 - `modely. CharField` - takto môžeš definovať text s obmedzeným počtom znakov.
 - `models.TextField` - toto je pre dlhé texty bez obmedzenia. To znie ideálne pre blogový príspevok, nie?
@@ -166,9 +166,9 @@ Teraz zadefinujeme vlastnosti, o ktorých sme hovorili: `title` (titulka), `text
 
 Nebudeme si tu vysvetľovať každý kúsok kódu, pretože by to zabralo príliš veľa času. Ak chceš vedieť viac o poliach modelu a definovaní ďalších vecí okrem tých, čo sme popísali vyššie, skús sa pozrieť do dokumentácie Djanga (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-A čo `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+A čo `def publish(self):`? To je presne tá metóda `publish`, o ktorej sme hovorili predtým. `def` znamená, že ide o funkciu/metódu a `publish` je názov metódy. Názov metódy môžeš zmeniť, ak chceš. Pravidlo pre názvy metód je, že používame malé písmená a podčiarkovníky namiesto medzier. Napríklad metóda, ktorá vypočíta priemernú cenu by sa mohla nazývať `pocitaj_priemernu_cenu`.
 
-Methods often `return` something. Príklad nájdeš napríklad v metóde `__str__`. V tomto prípade, keď zavoláme `__str__()`, dostaneme text (**string**) s názvom postu.
+Metódy často niečo vracajú (angl. `return`). Príklad nájdeš napríklad v metóde `__str__`. V tomto prípade, keď zavoláme `__str__()`, dostaneme text (**string**) s názvom postu.
 
 Tiež si všimni, že `def publish(self):` a `def __str__(self):` sú odsadené vo vnútri našej triedy. Pretože Python je citlivý na medzery, musíme odsadiť naše metódy vo vnútri triedy. Inak metódy nebudú patriť do triedy, a môže dojsť k neočakávanému správaniu.
 
