@@ -213,51 +213,50 @@ db.sqlite3
 >     
 >     بر روی پیوند "فایل پیکربندی WSGI" (در بخش "کد" در بالای صفحه کلیک کنید - آن را به نام `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), نامگذاری کنید) و شما خواهید بود گرفته شده به یک ویرایشگر.
 >     
->     Delete all the contents and replace them with the following:
+>     تمام مطالب را حذف کنید و آنها را با موارد زیر جایگزین کنید:
 >     
->     {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
->     ```python
->     import os
->     import sys
+>     {٪ filename٪} & amp؛ lt؛ your-username & amp؛ gt؛ _pythonanywhere_com_wsgi.py {٪ endfilename٪}
+>     `` `پایتون
+>     واردات os
+>     واردات سیستم
 >     
->     path = os.path.expanduser('~/my-first-blog')
->     if path not in sys.path:
->         sys.path.append(path)
+>     مسیر = os.مسیر.فرستنده ('~ / my-first-blog')
+>     اگر مسیر در sys.path نیست:
+>          sys.مسیر.اضافه کردن (مسیر)
 >     
->     os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+>     os.environ ['DJANGO_SETTINGS_MODULE'] = 'سایت من.موقعیت'
 >     
->     from django.core.wsgi import get_wsgi_application
->     from django.contrib.staticfiles.handlers import StaticFilesHandler
->     application = StaticFilesHandler(get_wsgi_application())
+>     از جنگجو.هسته.wsgi وارد گرفتن _wsgi_ابزارها
+>     از جنگجو.contrib.staticfiles.هندلر واردات فایل مدیریت استاتیک
+>     ابزارها = فایل مدیریت استاتیک (get_wsgi_application ())
 >     
 > 
-> This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
+> این کار این است که هرکجا پایتون را در جایی که برنامه وب ما زندگی می کند و نام پرونده تنظیمات جنگو است، بفرستیم.
 > 
-> The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
-> 
-> Hit **Save** and then go back to the **Web** tab.
-> 
-> We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
-> 
-> ## Debugging tips
-> 
-> If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
-> 
-> - Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
-> 
-> - Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
-> 
-> - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
-> 
-> - Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
-> 
-> There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
-> 
-> And remember, your coach is here to help!
-> 
-> # You are live!
-> 
-> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> ` فایل مدیریت استاتیک </ 0> برای مقابله با CSS ما است. این فرمان <code> اجرا سرور </ 0> به طور خودکار برای شما در حین توسعه محلی مراقبت می شود. بعدا در مورد آموزش فایل های استاتیک کمی بیشتر توضیح خواهیم داد، وقتی CSS را برای سایت ما ویرایش میکنیم.</p>
+
+<p>هیت <strong> ذخیره </ 0> و سپس به برگه <strong> وب </ 0> بروید.</p>
+
+<p>همه ما انجام شده است! دکمه بزرگ سبز <strong> بارگیری مجدد </ 0> را فشار دهید و شما قادر به مشاهده برنامه خود خواهید بود. یک پیوند به آن در بالای صفحه پیدا خواهید کرد.</p>
+
+<h2>نکات اشکال زدایی</h2>
+
+<p>اگر هنگام تلاش برای بازدید از سایت خود خطایی را مشاهده کردید، اولین مکان برای جستجوی برخی از اطلاعات خطایابی در <strong> خطا در ورود </ 0> وجود دارد. پیوند این را در هرکجا پایتون <a href="https://www.pythonanywhere.com/web_app_setup/"> برگه وب </ 0> پیدا خواهید کرد. ببینید اگر پیام های خطا در آنجا وجود داشته باشد؛ آخرین آنها در پایین هستند. مشکلات رایج عبارتند از:</p>
+
+<ul>
+<li><p>فراموش کردن یکی از مراحل انجام شده در کنسول: ایجاد مجازی، فعال کردن آن، نصب کردن جانگو در آن، مهاجرت به پایگاه داده.</p></li>
+<li><p>اشتباه در مسیر مجازی در برگه وب - معمولا یک پیام خطای قرمز کوچک وجود دارد، اگر یک مشکل وجود دارد.</p></li>
+<li><p>اشتباه در فایل پیکربندی WSGI - آیا مسیر را به پوشه اولین وبلاگ من درست کردم?</p></li>
+<li><p>آیا همان نسخه پایتون را برای مجازی خود انتخاب کردید همانطور که برای برنامه وب خود انجام دادید؟ هر دو باید 3.6 باشد.</p></li>
+</ul>
+
+<p>همچنین برخی از نکات اشکال زدائی کلی <a href="https://www.pythonanywhere.com/wiki/DebuggingImportError"> در ویکی هرکجا پایتون </ 0> وجود دارد.</p>
+
+<p>و به یاد داشته باشید، مربی شما برای کمک به اینجا است!</p>
+
+<h1>تو زندگی میکنی!</h1>
+
+<p>The default page for your site should say "It worked!", just like it does on your local computer. Try adding <code>/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 > 
 > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > 
