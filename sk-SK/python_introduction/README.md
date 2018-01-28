@@ -1061,4 +1061,4 @@ For official and full python tutorial visit https://docs.python.org/3/tutorial/.
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Cupcake](images/cupcake.png)
+![Koláčik](images/cupcake.png)
