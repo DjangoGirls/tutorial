@@ -68,7 +68,7 @@ Bunu kendi template'imizle deneyelim.
 
 ![Şekil 13.3](images/step3.png)
 
-Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısınız (`{{ post.title }}` or `{{ post.text }})`? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısınız (`{{ post.title }}` or `{{ post.text }})`? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaksbr` satırsonlarını paragrafa dönüştürmek için gönderilerin içindeki metinleri bir filtre ile yönlendiriyor.
 
 ## Bir şey daha
 
