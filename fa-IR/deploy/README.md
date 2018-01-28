@@ -47,37 +47,39 @@ db.sqlite3
 .DS_Store
 `</pre> 
 
-And save it as `.gitignore` in the "djangogirls" folder.
+و در پوشه "دختران جنگجو" آن را `.ردکردن گیت </ 0> ذخیره کنید.</p>
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
-> 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+<blockquote>
+  <p><strong> توجه </ 0> نقطه در ابتدای نام فایل مهم است!  اگر مشکلی در ایجاد آن دارید (به عنوان مثال مکینتاش شما را دوست ندارد فایل هایی را ایجاد کنید که از طریق یاب شروع می شود)، سپس از ویژگی ذخیره در استفاده کنید در ویرایشگر خود. آن ضد گلوله است.</p>
+  
+  <p><strong> توجه </ 0> یکی از فایل هایی که در فایل <code>.ردکردن گیت </ 1> مشخص شده است <code> db.sqlite3 </ 1> است. این فایل پایگاه داده محلی شما است، که همه پست های شما ذخیره می شود. ما نمی خواهیم این را به مخزن خود اضافه کنیم؛ زیرا وب سایت شما در هرجا پایتون از یک پایگاه داده متفاوت استفاده می کند.  این پایگاه داده می تواند اسکیولایت مانند دستگاه توسعه خود باشد، اما معمولا شما از یک مای اسکیوال استفاده می کنید که می تواند با بازدیدکنندگان سایت بسیار بیشتر از اسکیولایت مقابله کند. در هر صورت، با نادیده گرفتن پایگاه داده اسکیولایت خود برای نسخه گیت هاب، این بدان معنی است که همه پستهایی که تا کنون ایجاد کرده اید، ماندگار میشوند و فقط در محلی در دسترس هستند، اما شما مجبورید آنها را دوباره در تولید اضافه کنید. شما باید از پایگاه داده محلی خود به عنوان یک زمین بازی خوب که در آن شما می توانید چیزهای مختلف را آزمایش کنید و نگران نباشید که شما قصد ارسال پست واقعی خود را از وبلاگ خود را دارید، فکر کنید.</p>
+</blockquote>
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+<p>ایده خوبی است برای استفاده از دستور <code> وضعیت گیت </ 0> قبل از اینکه <code> گیت اضافه </ 0> یا هر زمان که خودتان مطمئن نیستید از چه چیزی تغییر کرده اید. این به جلوگیری از هر گونه شگفتی از اتفاق می افتد، مانند فایل های اشتباه اضافه شده یا مرتکب می شوند. دستور <code> وضعیت گیت </ 0> اطلاعاتی را در مورد هر گونه فایل های غیر قابل شناسایی / تغییر یافته / مرتب شده، وضعیت شاخه و موارد دیگر باز می گرداند. خروجی باید شبیه به موارد زیر باشد:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>% filename %}}خط فرمان% endfilename %}}</p>
 
-    $ git status
-    On branch master
-    
-    Initial commit
-    
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    
-            .gitignore
-            blog/
-            manage.py
-            mysite/
-    
-    nothing added to commit but untracked files present (use "git add" to track)
-    
+<pre><code>وضعیت $ گیت
+در شاخه کارشناسی ارشد
 
-And finally we save our changes. Go to your console and run these commands:
+تعهد اولیه
 
-{% filename %}command-line{% endfilename %}
+فایل های غیرقابل پیگیری:
+   (استفاده از "گیت اضافه کردن <file> ..." برای شامل در آنچه متعهد خواهد شد)
 
-    $ git add --all .
+         .ردکردن گیت
+         وبلاگ/
+         مدیریت.py
+         مکان من/
+
+هیچ چیز اضافه نشده به مرتکب شدن اما فایل های غیرقابل مشاهده موجود (استفاده از "git add" برای ردیابی)
+`</pre> 
+
+و در نهایت ما تغییرات ما را ذخیره می کنیم. به کنسول خود بروید و این دستورات را اجرا کنید:
+
+% filename %}}خط فرمان %endfilename %}}
+
+    $همه گیت --همه .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
