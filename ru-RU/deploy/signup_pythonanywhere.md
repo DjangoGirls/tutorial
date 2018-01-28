@@ -1,5 +1,5 @@
-Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
+Теперь нам потребуется создать бесплатный аккаунт уровня "Beginner" на PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога.
