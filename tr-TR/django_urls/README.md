@@ -8,7 +8,7 @@ URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğin
 
 ![Url](images/url.png)
 
-Internetteki her sayfanın kendi URL'si olması gerekir. Bu yolla uygulama URl'yi açan kullanıcaya ne göstemesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Internetteki her sayfanın kendi URL'si olması gerekir. Bu yolla uygulama URl'yi açan kullanıcaya ne göstemesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
 
 ## URL'ler Django'da nasıl çalışır?
 
@@ -31,7 +31,7 @@ urlpatterns = [
 
 Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. Python bunları çalıştırmaz.
+Üçlü tırnaklar (`'''` or `"""`) arasındaki satırlara docstrings denir - bunları bir dosyanın, sınıfın ya da metodun en üstüne ne yaptıklarını anlatmak için yazabilirsiniz. Python bunları çalıştırmaz.
 
 Önce ki bölümde ziyaret ettğiniz yönetici URL'si şimdiden burada:
 
@@ -41,7 +41,7 @@ Lines between triple quotes (`'''` or `"""`) are called docstrings – you can w
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. Bu durumda bir sürü admin URLlerini dahil ediyoruz yani hepsi bu küçük dosyada sıkıştırılmış olarak durmuyor - bu şekil daha okunaklı ve düzenli.
 
 ## Regex (Kurallı İfade)
 
