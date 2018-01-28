@@ -51,17 +51,17 @@ Gene de kalıpları nasıl oluşturduğumuzu anlamak isterseniz, aşağıdaki bi
 
 * `^` metnin başlangıcı için
 * metnin sonu için `$`
-* `\d` for a digit
+* `\d` bir basamak için
 * `+` belirlemek için bi önceki öğenin en az bir kez tekrarlanması lazım
-* `()` to capture part of the pattern
+* `()` desenin bir parçasını yakalamak için
 
-Anything else in the URL definition will be taken literally.
+URL tanımındaki diğer her şey tamamen ele alınacaktır.
 
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
+Şimdi adresi `http://www.mysite.com/post/12345/` olan bir websitesine sahip olduğunuzu düşünün, url sonundaki `12345` gönderi numaranız.
 
-Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Şimdi bunu, burada ne yaptığımızı görebilmek için parçalarına ayıralım:
+Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. Düzeni ifadelerle, URL ile eşleşen ve bizim için gönderi numarasını çıkaran bir desen yaratabiliriz: `^post/(\d+)/$`. Şimdi bunu, burada ne yaptığımızı görebilmek için parçalarına ayıralım:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** Django'ya urldeki `post/` ile başlayan her şeyi almasını söylüyor. (`^` 'dan hemen sonra)
 * **(\d+)** ise bir sayı (birden fazla rakam) olduğunu ve bu sayıyı yakalamak ve çıkarmak istediğimizi belirtiyor
 * **/** ise Django'ya arkasından bir `/` karakteri gelmesi gerektiğini söylüyor
 * **$** ise URL'nin sonuna işaret ediyor, yani sadece sonu `/` ile biten string'ler bu kalıpla eşleşecek
