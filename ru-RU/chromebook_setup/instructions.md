@@ -2,7 +2,7 @@
 
 ### Cloud9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. На протяжении всего курса Cloud9 будет выступать в качестве вашего *локального сервера*. Вы будете работать в терминале (так же, как и ваши одноклассники на OS X, Ubuntu или Windows), но ваш терминал будет подключен к компьютеру где-нибудь в Нидерландах или Германии, которых Cloud9 установили специально для вас.
+Cloud9 позволяет вам запустить редактор кода, и получить доступ к компьютеру в Интернете, где можно установить, написать и запустить программное обеспечение. На протяжении всего курса Cloud9 будет выступать в качестве вашего *локального сервера*. Вы будете работать в терминале (так же, как и ваши одноклассники на OS X, Ubuntu или Windows), но ваш терминал будет подключен к компьютеру где-нибудь в Нидерландах или Германии, которых Cloud9 установили специально для вас.
 
 1. Установка Cloud9 из [Интернет-магазина Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Перейти на [c9.io](https://c9.io)
@@ -18,7 +18,7 @@ Cloud 9 is a tool that gives you a code editor and access to a computer running 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Эта нижняя область является вашим *терминалом*, где вы указываете компьютеру Cloud 9 ваши инструкции. Вы можете изменить размер этого окна, чтобы сделать его немного больше.
 
 ### Виртуальное окружение
 
