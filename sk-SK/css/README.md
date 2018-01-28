@@ -6,7 +6,7 @@ Náš blog vyzerá zatiaľ dosť škaredo, však? Je čas to napraviť! Použije
 
 Kaskádové štýly (CSS, angl. Cascading Style Sheets) je jazyk, ktorý sa používa na popis vzhľadu a formátovania webstránky napísanej v značkovacom jazyku (napríklad HTML). Predstav si to ako make-up pre našu webstránku. ;)
 
-Ale my nechceme začať od nuly, zasa, že áno? Znovu budeme používať niečo, čo programátori zverejnili na internet zadarmo. Ako viete, vymýšlať koleso nie je žiadna zábava.
+Ale nechceme začať od nuly, že? Znovu budeme používať niečo, čo programátori zverejnili na internete zadarmo. Ako vieš, vymýšlať koleso nie je žiadna zábava.
 
 ## Použime Bootstrap!
 
@@ -16,7 +16,7 @@ Bol napísaný programátormi, ktorí pracovali pre Twitter. Teraz je vyvíjaný
 
 ## Inštalácia Bootstrapu
 
-Aby si nainštalovala Bootstrap, potrebuješ pridať nasledovnú vec do `<head>` v tvojom `.html` súbore:
+Aby si nainštalovala Bootstrap, potrebuješ pridať nasledovnú vec do `<head>` tvojho `.html` súboru:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ Aby si nainštalovala Bootstrap, potrebuješ pridať nasledovnú vec do `<head>`
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Nepridá to do tvojho projektu žiadne súbory. Iba to ukazuje na súbory, ktoré už existujú na internete. Skúsme to, otvor svoju webstránku a obnov stránku. Tu to máme!
+Nepridá to do tvojho projektu žiadne súbory. Iba to ukazuje na súbory, ktoré už existujú na Internete. Skúsme to, otvor svoju webstránku a obnov stránku. Už to máme!
 
 ![Obrázok 14.1](images/bootstrap1.png)
 
@@ -49,7 +49,7 @@ To urobíme tak, že vo vnútri našej aplikácie blog vytvoríme adresár s ná
     └── mysite
     
 
-Django automaticky nájde všetky zložky s názvom "static" vo všetkých priečinkoch tvojej aplikácie. Potom bude možné použiť ich obsah ako statické súbory.
+Django automaticky nájde všetky zložky s názvom "static" vo všetkých priečinkoch tvojej aplikácie. Následne bude možné použiť ich obsah ako statické súbory.
 
 ## Tvoj prvý CSS súbor!
 
@@ -64,9 +64,9 @@ Vytvorme teraz CSS súbor, ktorý tvojej web stránke pridá tvoj vlastný štý
 
 Je čas napísať trochu CSS! Otvor v editore kódu súbor `blog/static/css/blog.css`.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Tu sa nebudeme do hĺbky zaoberať úpravou a štúdiom CSS. Na konci tejto stránky sa nachádza odkaz na bezplatný CSS kurz, ak sa o tom cheš dozvedieť viacej.
 
-Ale urobme aspoň niečo trochu. Čo keby sme zmenili farbu hlavičky? Počítače používajú špeciálne kódy, aby rozumeli farbám. Tieto kódy sa začínajú `#` potom nasleduje 6 písmen (A-F) a číslice (0-9). Napríklad kód pre modrú je `#0000FF`. Kódy farieb nájdeš napríklad tu: http://www.colorpicker.com/. Môžeš tiež použiť [preddefinované farby](http://www.w3schools.com/colors/colors_names.asp) ako napríklad `red` (červená) alebo `green` (zelená).
+Ale urobme aspoň niečo. Čo keby sme zmenili farbu hlavičky? Počítače používajú špeciálne kódy, aby rozumeli farbám. Tieto kódy sa začínajú `#` potom nasleduje 6 písmen (A-F) a číslice (0-9). Napríklad kód pre modrú je `#0000FF`. Kódy farieb nájdeš napríklad tu: http://www.colorpicker.com/. Môžeš tiež použiť [preddefinované farby](http://www.w3schools.com/colors/colors_names.asp) ako napríklad `red` (červená) alebo `green` (zelená).
 
 V súbore `blog/static/css/blog.css` pridaj nasledujúci kód:
 
