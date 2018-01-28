@@ -74,7 +74,7 @@ V tutoriále, keď chceme, aby si zadala príkaz, použijeme `$` alebo `>`, a ob
 
 ## Tvoj prvý príkaz (Hurá!)
 
-Let's start by typing this command:
+Začnime tým, že zadáme nasledovný príkaz:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
