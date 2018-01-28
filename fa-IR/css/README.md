@@ -88,7 +88,7 @@ h1 a {
 
 شما می توانید بیشتر در مورد اینها بخوانید[CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+ما همچنین باید قالب HTML خودمان را اضافه کنیم که بعضی CSS ها را اضافه کردیم. فایل `blog/templates/blog/post_list.html` را باز کنید و این خط را در ابتدای آن اضافه کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,17 +96,16 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+ما فقط فایلهای استاتیک را در اینجا بارگیری میکنیم :) بین برچسب `<head>` و ` </ 2> </ 1>، پس از پیوند به فایل های CSS بوت استرپ، این خط را اضافه کنید:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```
+<pre><code class="html"><link rel="stylesheet" href="{% static 'css/blog.css' %}">
+`</pre> 
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+مرورگر فایل ها را به ترتیب داده می کند، بنابراین ما باید مطمئن شویم که این در جای مناسب است. در غیر این صورت کد در فایل شما ممکن است توسط کد در فایل های بوت استرپ لغو شود. ما فقط به قالب ما که در آن فایل CSS شما واقع شده است صحبت کردیم.
 
-Your file should now look like this:
+اکنون فایل شما باید مانند این باشد:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -121,12 +120,12 @@ Your file should now look like this:
     </head>
     <body>
         <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1><a href="/">وبلاگ دختران جنگلی</a></h1>
         </div>
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>منتشر شده: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
@@ -135,31 +134,30 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+باشه، فایل را ذخیره کرده و سایت را تازه سازی کنید!
 
 ![عدد 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+کارت خوب بود! شاید ما نیز می خواهیم وب کم ما را کمی هوا و حاشیه سمت چپ را افزایش دهیم؟ بیایید این را امتحان کنیم!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-body {
-    padding-left: 15px;
+چهارچوب{
+    چسباندن به سمت چپ 15px;
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+اضافه کردن آن به CSS خود، ذخیره فایل و ببینید که چگونه کار می کند!
 
 ![عدد 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+شاید ما بتوانیم فونت را در هدر ما سفارشی کنیم؟ این را وارد کنید `<head>` در ` وبلاگ / قالب / وبلاگ / لیست پست</ 1> فایل:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```
+<pre><code class="html"><link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+`</pre> 
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
