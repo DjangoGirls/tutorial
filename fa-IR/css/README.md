@@ -159,22 +159,21 @@ h1 a {
 <pre><code class="html"><link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 `</pre> 
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+همانطور که قبلا، سفارش و محل قبل از پیوند را بررسی کنید ` blog / static / css / blog.css </ 0>این خط یک فونت را به نام وارد می کند <em> خرچنگ </ 1> از فونت های گوگل https://www.google.com/fonts)).</p>
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+<p>پیدا کنید <code> h1 a </ 0>اعلام بلوک (این کد بین تجدیدکارو <code> {</ 0> و <code>} </ 0>)در این فایل CSS <code> blog / static / css / blog.css </ 0>.  حالا خط <code> خانواده فونت را اضافه کنید: 'لفظی'؛ </ 0> بین تجدید کار و تازه کردن صفحه:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
 
-```css
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+<pre><code class="css">h1 a {
+    رنگ : #FCA205;
+    فونت هم خانواده : 'لفضی';
 }
-```
+`</pre> 
 
 ![عدد 14.3](images/font.png)
 
-Great!
+عالی!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
