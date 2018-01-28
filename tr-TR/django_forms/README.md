@@ -206,7 +206,7 @@ Noktaları doldurma zamanı `[...]`. Eğer `method` `POST` ise `PostForm` formda
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Bir sonraki işimiz formun doğru olup olmadığını kontrol etmek (tüm gerekli alanlar ayarlanmış ve yanlış değer verilmediyse). Bunu şu şekilde yaparız `form.is_valid()`.
 
 Formun doğruluğunu kontrol ediyoruz ve doğru ise kaydedebiliriz!
 
