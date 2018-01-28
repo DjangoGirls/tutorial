@@ -4,8 +4,8 @@
 
 دارید به نوشتن اولین خط کدتان نزدیک می‌شوید، زمان مناسبی برای دانلود یک ویرایشگر متن است!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> ** نکته </ 0> اگر از کتاب کروم استفاده میکنید، این فصل را پر کنید و مطمئن شوید که دستورالعمل  تنظیمات اجرا کتاب کروم </ 1> را دنبال کنید.</p> 
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
-
-{% include "/code_editor/instructions.md" %}
+> ** نکته </ 0> شما ممکن است این را قبلا در فصل نصب نصب کرده اید - اگر چنین باشد، می توانید به فصل بعدی بروید!</p> </blockquote> 
+> 
+> % include "/code_editor/instructions.md" %}}
