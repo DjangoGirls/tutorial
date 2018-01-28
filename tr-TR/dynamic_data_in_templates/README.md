@@ -60,7 +60,7 @@ Son eksik parça `posts` QuerySet'i şablon içeriğine iletiyor. Endişelenmeyi
 
 QuerySet'imiz için bir *değişken* yarattığımıza dikkat edin: `posts`. Bu QuerySet'in ismi. Bundan sonra ondan ismi ile bahsedebiliriz.
 
-`render` fonksiyonunda `request` (internet aracılığıyla kullanıcıdan aldığımız her şey) adında ve başka bir şablon dosyası (`'blog/post_list.html'`) veren parametremiz var. The last parameter, `{}`, is a place in which we can add some things for the template to use. Bunlara isimler vermemiz gerekiyor (`'posts'` ismini kullanmaya devam edeceğiz şimdilik). :) Şöyle olması lazım: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+`render` fonksiyonunda `request` (internet aracılığıyla kullanıcıdan aldığımız her şey) adında ve başka bir şablon dosyası (`'blog/post_list.html'`) veren parametremiz var. Son parametremiz `{}`, şablonu kullanmak için bir şeyler ekleyebileceğimiz bir yer. Bunlara isimler vermemiz gerekiyor (`'posts'` ismini kullanmaya devam edeceğiz şimdilik). :) Şöyle olması lazım: `{'posts': posts}`. `:` 'dan önceki kısım string bunu not edelim; çift tırnak: `"` içine almamız gerekiyor.
 
 Nihayetinde `blog/views.py` şu şekle gelmiş olmalı:
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 İşte bu kadar! Template'e geri gidip QuerySet'leri görünür hale getirme zamanı!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Django'daki QuerySet'ler hakkında daha fazla bilgi sahibi olmak istiyor musunuz? Şuraya bakabilirsiniz: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
