@@ -2,7 +2,7 @@
 
 Birkaç parçayı yerine oturttuk: `Post` (gönderi) modelini `models.py`'de tanımladık, `views.py`'de `post_list` (gönderi listesi) var ve template ekledik. Ama gönderilerimizi HTML'de görünür kıldık mı? Çünkü yapmak istediğimiz şey bu -bazı içerikleri (veritabanında kayıtlı modeller) al ve şablonumuzda göster, değil mi?
 
-Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. *view* ile şablon içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
+Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. `post_list` *view* 'ımızda göstermek istediğimiz modelleri alıp şablona iletmemiz gerekecek. *view* ile şablon içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
 
 Tamam, peki nasıl yapacağız?
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Kodları farklı dosyalara eklemekten bahsettiğimizi hatırlıyor musunuz? Şu an `models.py` içinde yazdığımız modeli kullanma zamanı. We will add the line `from .models import Post` like this:
+Kodları farklı dosyalara eklemekten bahsettiğimizi hatırlıyor musunuz? Şu an `models.py` içinde yazdığımız modeli kullanma zamanı. `from .models import Post` şeklinde bir satır ekleyeceğiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
