@@ -52,7 +52,7 @@ Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s náz
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Všimnite si, že chceme zavolať naše nové view `post_new`. Trieda `"glyphicon glyphicon-plus"` je poskytnutá bootstrap témou ktorú používame a ona zobrazí znamienko plus pre nás.
+Všimni si, že chceme zavolať naše nové view `post_new`. Trieda `"glyphicon glyphicon-plus"` je poskytnutá bootstrap témou ktorú používame a ona zobrazí znamienko plus pre nás.
 
 Po pridaní riadku by tvoj html súbor mal vyzerať asi takto:
 
