@@ -8,11 +8,11 @@
 
 Другим внешним сервисом, которым мы будем пользоваться, является [GitHub](https://www.github.com) — сервис хостинга кода. Существуют и другие похожие сервисы, но практически у каждого программиста есть GitHub аккаунт, теперь будет и у тебя!
 
-Эти три места будут важны для вас. Ваш локальный компьютер будет местом, где вы будете вести разработку и тестирование. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Эти три места будут важны для вас. Ваш локальный компьютер будет местом, где вы будете вести разработку и тестирование. Когда вы удовлетворены изменениями, вы разместите копию вашей программы на GitHub. Ваш веб-сайт будет на PythonAnywhere, и вы будете обновлять его, получая новые копии вашего кода с GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Примечание**Если вы уже проделали все шаги установки, делать это вновь нет необходимости - вы можете пропустить этот раздел и приступить к созданию Git репозитория.
 
 {% include "/deploy/install_git.md" %}
 
