@@ -28,7 +28,7 @@ Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená že
 
 Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začnime tým, že skúsime matematiku, napr. ` 2 + 3 `a stlač `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,7 +179,7 @@ Povedzme, že chceme vytvoriť novú premennú s názvom `meno`:
 >>> meno = "Ola"
 ```
 
-We type name equals Ola.
+Zadáme meno sa rovná Ola.
 
 Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v predchádzajúcich príkladoch. Tak ako vieme, či tá premenná existuje? Jednoducho napíšte `meno` a stlačte `enter`:
 
@@ -234,7 +234,7 @@ NameError: name 'mseto' is not defined
 
 Chyba! Ako vidíte, Python má viacero chýb a táto jedna sa volá **NameError**. Python vám hodí túto chybu ak sa pokúsite použiť premennú ktorá ešte nebola definovaná. Ak sa stretnete s touto chybou v budúcnosti, vždy skontrolujte svoj kód, či nemáte preklep v niektorom názve.
 
-Bavte sa s tým trošku, a potom uvidíme čo môžeme ešte urobiť!
+Hrajte sa s tým trošku, a potom uvidíme čo môžeme ešte urobiť!
 
 ## Funkcia print
 
@@ -506,7 +506,7 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>` a `<` sme už videli, ale čo znamenajú `>=` a `<=`? Prečítať ich môžeš takto:
 
 - x `>` y znamená: x je väčšie ako y
 - x `<` y znamená: x je menšie ako y
@@ -546,7 +546,7 @@ Tu vidíš, že tak ako nevieme porovnávať hrušky s jablkami, ani Python nevi
 
 ## Logické hodnoty (Boolean)
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Mimochodom práve si sa naučila nový typ objektu v Pythone. Volá sa **Boolean**.
 
 Existujú iba dva typy Booleovských objektov:- True (Pravda)- False (Nepravda):
 
@@ -755,7 +755,7 @@ Keď to spustíš, vypíše to:
     5 je naozaj viac ako 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -842,7 +842,7 @@ Teraz je čas na poslednú časť tejto kapitoly!
 
 Pamätáš si funkcie ako napríklad `len()`, ktoré môžeš v Pythone spúšťať? Máme pre teba dobrú správu - teraz sa naučíš ako napísať vlastnú funkciu!
 
-Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Let's give it a go. Nahraď kód v **python_intro.py** týmto:
+Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Skusme to. Nahraď kód v **python_intro.py** týmto:
 
 {% filename %}python_intro.py{% endfilename %}
 
