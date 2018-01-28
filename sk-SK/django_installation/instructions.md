@@ -8,9 +8,9 @@ Skôr ako nainštalujeme Django, nainštalujeme si extrémne užitočný nástro
 
 Takže poďme vytvoriť **virtuálne prostredie** (alebo aj *virtualenv*). Virtualenv oddelí nastavenia Python/Django pre každý projekt zvlášť. To znamená, že zmeny, ktoré urobíš na jednej web stránke, neovplyvnia iné stránky, ktoré vyvíjaš. Šikovné, však?
 
-Jediné, čo musíš urobiť je nájsť adresár, v ktorom chceš `virtualenv` vytvoriť, napríklad tvoj domovský adresár. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Jediné, čo musíš urobiť je nájsť adresár, v ktorom chceš `virtualenv` vytvoriť, napríklad tvoj domovský adresár. Vo Windowse by mohol vyzerať napríklad `C:\Users\Meno` (kde `Meno` predstavuje tvoj login).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **POZNÁMKA:** Vo Windowse, sa uisti, že tento adresár neobsahuje špeciálne znaky, alebo znaky s diakritikou; ak tvoje uživateľské meno obsahuje znaky s diakritikou, použi iný adresár, napr. `C:\djangogirls`.
 
 V tomto tutoriale budeme používať nový adresár `djangogirls` v tvojom domovskom adresári:
 
@@ -44,14 +44,14 @@ Ak chceš vytvoriť nové `virtualenv`, musíš otvoriť príkazový riadok a sp
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Vytvoriť `virtualenv` na Linuxe a OS X vyžaduje iba jednoduché spustenie `python3 -m venv myvenv`. Bude to vyzerať takto:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` je názov tvojho `virtualenv`-u. Môžeš použiť aj iný názov, ale ostaň pri malých písmenách a nepoužívaj medzery. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` je názov tvojho `virtualenv`-u. Môžeš použiť aj iný názov, ale ostaň pri malých písmenách a nepoužívaj medzery. Je tiež dorbé použiť krátky názov, pretože naň budeš často odkazovať!
 
 > **POZNÁMKA:** Niektoréverzie systému Debian/Ubuntu môžu zobraziť nasledujúcu chybu:
 > 
