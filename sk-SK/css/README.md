@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` je CSS Selector. To znamená, že sme naše štýly použili na akýkoľvek prvok `a`, vo vnútri prvku `h1`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>` použije sa naň `h1, a` štýl. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Samozrejme, sem môžeš zadať vlastnú farbu!
+`h1 a` je CSS Selector. To znamená, že sme naše štýly použili na akýkoľvek prvok `a`, vo vnútri prvku `h1`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>` použije sa naň `h1 a` štýl. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Samozrejme, sem môžeš zadať vlastnú farbu!
 
 V CSS súbore definujeme štýly pre elementy v HTML súbore. Prvý spôsob, akým môžme identifikovať elementy je názov elementu. Môžno si pamätáte tieto značky z HTML sekcie. Veci ako `a`,`h1`, a `body` sú príklady názvov elementov. Elementy taktiež identifikujeme pomocou atribútu `class` alebo atribútu `id`. Triedy (class) a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a id-čká poukazujú na konkrétne elementy. Napríklad, nasledujúci tag môže byť identifikovaný v CSS pomocou mena tagu `a`, triedy `external_link`, alebo id `link_to_wiki_page`:
 
