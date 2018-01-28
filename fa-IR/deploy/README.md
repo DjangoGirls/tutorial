@@ -14,36 +14,38 @@ These three places will be important to you. Your local computer will be the pla
 
 > **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
-{% include "/deploy/install_git.md" %}
+% include "/deploy/install_git.md" %}}
 
-## Starting our Git repository
+## شروع به مخزن گیت هاب ذما
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+آهنگ گیت هاب تغییرات به یک مجموعه خاص از فایل ها در آنچه که مخزن کد (یا "repo" برای کوتاه) نامیده می شود. بیایید یک پروژه را برای شروع بگذاریم. کنسول خود را باز کنید و این دستورات را در دایرکتوری ` دختران جنگجو</ 0> اجرا کنید:</p>
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+<blockquote>
+  <p><strong> توجه </ 0> قبل از مقداردهی مجدد مخزن، دستورالعمل فعلی کار خود را با دستور <code> pwd </ 1> (سیستم عامل Mac OS X / Linux) یا <code> cd </ 1> (ویندوز) بررسی کنید. شما باید در پوشه <code> دختران جنگجو</ 0> باشد.</p>
+</blockquote>
 
-{% filename %}command-line{% endfilename %}
+<p>% filename %}}خط فرمان% endfilename %}}</p>
 
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
-    
+<pre><code>$ گیت اینت
+مخزن گیت هاب خالی را در ~ / دختران جنگجو /.git /
+$پیکربندی - کاربر جهانی.نام "نام شما"
+$ پیکربندی - ایمیل.کاربر جهانی شما@برای مثال.com
+`</pre> 
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+ابتدایی مخزن git چیزی است که ما فقط باید یک بار در هر پروژه انجام دهیم (و مجبور نیستید مجددا نام کاربری را دوباره وارد کنید و دوباره ایمیل کنید).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+گیت هاب تغییرات را به تمام فایل ها و پوشه ها در این پوشه پیگیری می کند، اما برخی از فایل هایی که می خواهیم آن را نادیده بگیریم وجود دارد. ما این کار را با ایجاد یک فایل به نام `.رد کردن گیت هاب </ 0> در دایرکتوری پایه انجام می دهیم. ویرایشگر خود را باز کنید و یک فایل جدید با مطالب زیر ایجاد کنید:</p>
 
-{% filename %}.gitignore{% endfilename %}
+<p>{% filename %}.ردکردن گیت{% endfilename %}</p>
 
-    *.pyc
-    *~
-    __pycache__
-    myvenv
-    db.sqlite3
-    /static
-    .DS_Store
-    
+<pre><code>*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+`</pre> 
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
