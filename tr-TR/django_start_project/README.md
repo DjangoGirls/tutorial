@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek ve böylece aşağıdaki ayarları değiştireceğiz:
+`DEBUG(Hata Ayıklama)` `True(Doğru)` ve `ALLOWED_HOSTS` boş olduğu zaman ana bilgisayar `['localhost', '127.0.0.1', '[::1]']`'a karşı doğrulanır. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek ve böylece aşağıdaki ayarları değiştireceğiz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Not**: Eğer Chromebook kullanıyorsanız bu satırı settings.py dosyanızın en altına ekleyiniz: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> Ayrıca eğer cloud9 kullanıyorsanız `ALLOWED_HOSTS`'a `.c9users.io` 'i ekleyin
 
 ## Bir veritabanı kur
 
@@ -193,7 +193,7 @@ Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdı
 
 ![İşte çalışıyor!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
+Web sunucusu çaışırken ek komutlar girmek için yeni bir komut satır istemi göremezsiniz. The terminal will accept new text but will not execute new commands. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
