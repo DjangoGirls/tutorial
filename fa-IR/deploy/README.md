@@ -80,32 +80,32 @@ db.sqlite3
 % filename %}}خط فرمان %endfilename %}}
 
     $همه گیت --همه .
-    $ git commit -m "My Django Girls app, first commit"
-     [...]
-     13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-     [...]
-     create mode 100644 mysite/wsgi.py
-     ```
+    $فرمان گیت -m "برنامه دیجانگو دختران من، برای اولین بار متعهد"
+      [...]
+      13 فایل تغییر کرده است، 200 درج (+)
+      ایجاد حالت 100644. ردکردن گیت
+      [...]
+      ایجاد حالت 100644 سایت من / wsgi.py
+      `` `
     
     
-    ## Pushing your code to GitHub
+    ## فشار دادن کد خود به گیت هاب
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    به [GitHub.com] بروید (https://www.github.com) و ثبت نام کنید تا یک حساب کاربری جدید رایگان ایجاد کنید. (اگر قبلا این کار را در آمادگی کارگاه انجام دادید، این عالی است!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    سپس یک مخزن جدید ایجاد کنید، آن را به نام "my-first-blog" بدهید. از کادر انتخاب "مقداردهی اولیه با من را بخوان" را بدون علامت چک کنید، گزینه ".ردکردن گیت" را خالی بگذارید (ما این کار را به صورت دستی انجام داده ایم) و مجوز را به عنوان هیچ می گذاریم.
     
-    <img src="images/new_github_repo.png" />
+    <0 />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    & gt؛ ** نکته ** نام 'اولین وبلاگ من` مهم است - شما می توانید چیزی دیگری را انتخاب کنید، اما در دستورالعمل های زیر بارها اتفاق می افتد و شما باید هر بار آن را جایگزین کنید. این احتمالا ساده تر است که فقط با نام "اولین وبلاگ من" قرار بگیرد.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    در صفحه بعد، آدرس اینترنتی کلون ریپو شما نشان داده می شود. نسخه "HTTPS" را انتخاب کنید، آن را کپی کنید و مدت کوتاهی آن را در ترمینال قرار می دهیم:
     
-    <img src="images/github_get_repo_url_screenshot.png" />
+    <0 />
     
-    Now we need to hook up the Git repository on your computer to the one up on GitHub.
+    حالا ما باید مخزن Git را بر روی رایانه خود بسازیم تا در گیت هاب یکپارچه شود.
     
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    Type the following into your console (Replace `&lt;your-github-username&gt;` with the username you entered when you created your GitHub account, but without the angle-brackets):
     
     {% filename %}command-line{% endfilename %}
     
