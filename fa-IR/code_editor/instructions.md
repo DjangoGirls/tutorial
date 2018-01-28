@@ -10,13 +10,13 @@ Gedit یک ویرایشگر متن باز و رایگان است که برای �
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+متن عالی یک ویرایشگر بسیار محبوب با دوره ارزیابی رایگان است و برای همه سیستم عامل های موجود است.
 
 [جهت دانلود کلیک نمایید](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+اتم یک ویرایشگر کد بسیار جدید است که توسط  گیت هاب</ 0> ایجاد شده است. این برنامه رایگان، منبع باز و در دسترس برای ویندوز، OS X و لینوکس است.</p> 
 
 [جهت دانلود کلیک نمایید](https://atom.io/)
 
