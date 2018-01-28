@@ -70,9 +70,9 @@ Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. Düzen
 
 İlk URL'mizi oluşturma zamanı.'http://127.0.0.1:8000/' adresinin bloğumuzun anasayfası olmasını ve gönderilerin bir listesini görüntülemesini istiyoruz.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Aynı zamanda `>mysite/urls.py` dosyasını temiz tutmak istiyoruz, bu yüzden `blog` uygulamamızdan `mysite/urls.py` ana dosyamıza URLleri aktarıyoruz (import).
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+Devam edelim, `blog.urls` 'yi içe aktaracak bir satır ekleyelim. Burada `include` fonksiyonunu kullandık bu yüzden bu içe aktarmayı (import) üste eklememiz gerekecek.
 
 `mysite/urls.py` dosyanız şöyle olmalıdır:
 
@@ -91,7 +91,7 @@ urlpatterns = [
 
 Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
 
-Writing regular expressions in Python is always done with `r` in front of the string. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
+Python'da düzenli ifade yazarken her zaman string (dize)'den önce `r` eklenir. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
 
 ## blog.urls
 
