@@ -99,7 +99,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+After creating an application, we also need to tell Django that it should use it. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -117,9 +117,9 @@ INSTALLED_APPS = [
 
 ### Vytvorenie modelu blog postu
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+V súbore `blog/models.py` definujeme všetky objekty, ktoré sa nazývajú `modely` - na tomto mieste definujeme náš blog post.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Otvor `blog/models.py`, všetko z neho odstráň a napíš nasledovný kód:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -147,28 +147,28 @@ class Post(models.Model):
 
 > Dvakrát skontroluj, či si použila 2 podčiarkovníky (`_`) na oboch stranách `str`. Táto konvencia sa v Pythone často používa a niekedy sa tomu hovorí "dunder" (skratka pre anglické Double-UNDERscore).
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Vyzerá to strašidelne, nie? Ale neboj sa, vysvetlíme si, čo tieto riadky znamenajú!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Všetky riadky začínajúce s `from` alebo `import` pridávajú časti z iných súborov. Takže namiesto kopírovania rovnakých vecí v každom súbore môžeme zahrnúť niektoré časti pomocou `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` - tento riadok definuje náš model (je to `objekt`).
 
 - `class` je špeciálne kľúčové slovo, ktoré naznačuje, že definujeme objekt.
 - `Post` je meno nášho modelu. Môžeme mu dať iný názov (ale musíme sa vyhnúť špeciálnym a prázdnym znakom). Názov triedy vždy začni písmenami.
 - `models.Model` znamená, že Post je Django Model, takže Django vie, že by mal byť uložený v databáze.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Teraz zadefinujeme vlastnosti, o ktorých sme hovorili: `title` (titulka), `text`, `created_date` (dátum vytvorenia), `published_date` (dátum zverejnenia) a `author` (autor). To do that we need to define the type of each field (Is it text? Číslo? Dátum? Vzťah k inému objektu, napr. objektu User?)
 
 - `modely. CharField` - takto môžeš definovať text s obmedzeným počtom znakov.
 - `models.TextField` - toto je pre dlhé texty bez obmedzenia. To znie ideálne pre blogový príspevok, nie?
 - `models.DateTimeField` - dátum a čas.
 - `models.ForeignKey` - odkaz na iný model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Nebudeme si tu vysvetľovať každý kúsok kódu, pretože by to zabralo príliš veľa času. Ak chceš vedieť viac o poliach modelu a definovaní ďalších vecí okrem tých, čo sme popísali vyššie, skús sa pozrieť do dokumentácie Djanga (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+A čo `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Methods often `return` something. Príklad nájdeš napríklad v metóde `__str__`. V tomto prípade, keď zavoláme `__str__()`, dostaneme text (**string**) s názvom postu.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
@@ -187,9 +187,9 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Poznámka:** Nezabudni uložiť súbory ktoré upravuješ. Inak počítač spustí starú verziu, ktorá môže skončiť chybou.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django pripravil migračný súbor, ktorý musíme aplikovať na našu databázu. Napíš `python manage.py migrate blog` a výstup by mal byť:
 
 {% filename %}command-line{% endfilename %}
 
@@ -201,4 +201,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Hurá! Náš Post model je už v databáze! Bolo by fajn ho vidieť, nie? Prejdi na nasledujúcu kapitolu a uvidíš ako vyzerá tvoj Post!
