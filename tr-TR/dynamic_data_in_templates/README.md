@@ -28,7 +28,7 @@ from .models import Post
 
 `models`'dan önceki nokta, *mevcut dizin* veya *mevcut uygulama* anlamına geliyor. Hem `views.py` hem de `models.py` aynı dizindedir. Bu şu anlama geliyor: `.` ve dosya ismini (`.py` olmadan) kullanabiliriz. Arkasından modelin adını (`Post`)'u dahil ediyoruz (import ediyoruz).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Sırada ne var? `Post` modelinden gerçek blog gönderilerini almak için `QuerySet` denilen sorgu setine ihtiyacımız var.
 
 ## QuerySet (Sorgu Seti)
 
@@ -56,11 +56,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+Son eksik parça `posts` QuerySet'i şablon içeriğine iletiyor. Endişelenmeyin - daha sonraki bölümlerde nasıl görüntüleyebileceğimizi ele alacağız.
 
 QuerySet'imiz için bir *değişken* yarattığımıza dikkat edin: `posts`. Bu QuerySet'in ismi. Bundan sonra ondan ismi ile bahsedebiliriz.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Bunlara isimler vermemiz gerekiyor (`'posts'` ismini kullanmaya devam edeceğiz şimdilik). :) Şöyle olması lazım: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+`render` fonksiyonunda `request` (internet aracılığıyla kullanıcıdan aldığımız her şey) adında ve başka bir şablon dosyası (`'blog/post_list.html'`) veren parametremiz var. The last parameter, `{}`, is a place in which we can add some things for the template to use. Bunlara isimler vermemiz gerekiyor (`'posts'` ismini kullanmaya devam edeceğiz şimdilik). :) Şöyle olması lazım: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 Nihayetinde `blog/views.py` şu şekle gelmiş olmalı:
 
