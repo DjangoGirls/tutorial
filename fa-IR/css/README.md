@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS - آن را زیبا!
 
 بلاگ ما هنوز خیلی زشت است، نه؟ وقتش است که زیبایش کنیم. برای این کار از CSS استفاده می‌کنیم.
 
 ## CSS چیست؟
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+صفحات سبک آبشارCSS) ) زبان مورد استفاده برای توصیف ظاهر و قالببندی یک وب سایت نوشته شده در زبان نشانه گذاری (مانند HTML) است. آن را به عنوان آرایش برای صفحه وب ما درمان کنید. ؛)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+اما ما نمی خواهیم دوباره از ابتدا شروع کنیم، درست است؟ یک بار دیگر، ما از چیزی که برنامه نویسان در اینترنت به صورت رایگان منتشر می کنند استفاده می کنند. بازخورد چرخ به هیچ وجه سرگرم کننده نیست، شما می دانید.
 
 ## با بوت‌ استرپ شروع کنیم!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+بوت استرپ یکی از محبوب ترین چارچوب های HTML و CSS برای توسعه وب سایت های زیبا است: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+توسط برنامه نویسانی که در توییتر کار می کردند نوشته شده بود. در حال حاضر توسط داوطلبان از سراسر جهان توسعه یافته است!
 
 ## نصب بوت استرپ
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+برای نصب بوت استرپ، شما باید این را در `.html </ 1> فایل <code><head>` خود اضافه کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+این هیچ پرونده ای برای پروژه شما اضافه نمی کند. این فقط به فایل هایی که در اینترنت وجود دارد اشاره می کند. فقط پیش بروید، وب سایت خود را باز کنید و صفحه را تازه کنید. ایناهاش!
 
 ![عدد 14.1](images/bootstrap1.png)
 
@@ -33,21 +33,21 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ## فایل ها ی ثابت در جنگو
 
-ما در نهایت نگاهی دقیقتر به فایلها می اندازیم ( فایل های ثابت). فایلهای ثابت شامل تمامی فایلهای CSS و عکسها می باشند. Their content doesn't depend on the request context and will be the same for every user.
+ما در نهایت نگاهی دقیقتر به فایلها می اندازیم ( فایل های ثابت). فایلهای ثابت شامل تمامی فایلهای CSS و عکسها می باشند. محتوای آنها به متن درخواست بستگی ندارد و برای هر کاربر یکسان خواهد بود.
 
 ### فایل های ثابت در جنگو کجا قرار میگیرد
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+جانگو در حال حاضر می داند که برای پیدا کردن فایل های استاتیک برای ساخته شده در برنامه "مدیر". حالا ما فقط باید برخی از فایل های استاتیک را برای برنامه خود اضافه کنیم، ` blog </ 0>.</p>
 
-We do that by creating a folder called `static` inside the blog app:
+<p>ما این کار را با ایجاد یک پوشه به نام <code> static </ 0> در داخل برنامه وبلاگ انجام می دهیم:</p>
 
-    djangogirls
-    ├── blog
-    │   ├── migrations
-    │   ├── static
-    │   └── templates
-    └── mysite
-    
+<pre><code>djangogirls
+├── blog
+│   ├── migrations
+│   ├── static
+│   └── templates
+└── mysite
+`</pre> 
 
 Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
 
