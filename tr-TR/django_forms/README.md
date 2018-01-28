@@ -384,7 +384,7 @@ Bir bağlantıya (link) tıklayarak yeni bir blog oluşturabilmek harika! Ama ş
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! `<a>` etiketini şöyle değiştirelim:
+Linkin sadece admin olarak giriş yapmış kullanıcılara gözükmesi için başka bir `{% if %}` etiketi ekleyeceğiz. Şu anda bu kişi sensin! `<a>` etiketini şöyle değiştirelim:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
