@@ -233,7 +233,7 @@ db.sqlite3
 > 
 > این کار این است که هرکجا پایتون را در جایی که برنامه وب ما زندگی می کند و نام پرونده تنظیمات جنگو است، بفرستیم.
 > 
-> ` فایل مدیریت استاتیک </ 0> برای مقابله با CSS ما است. این فرمان <code> اجرا سرور </ 0> به طور خودکار برای شما در حین توسعه محلی مراقبت می شود. بعدا در مورد آموزش فایل های استاتیک کمی بیشتر توضیح خواهیم داد، وقتی CSS را برای سایت ما ویرایش میکنیم.</p>
+>  فایل مدیریت استاتیک </ 0> برای مقابله با CSS ما است. این فرمان <code> اجرا سرور </ 0> به طور خودکار برای شما در حین توسعه محلی مراقبت می شود. بعدا در مورد آموزش فایل های استاتیک کمی بیشتر توضیح خواهیم داد، وقتی CSS را برای سایت ما ویرایش میکنیم.</p>
 
 <p>هیت <strong> ذخیره </ 0> و سپس به برگه <strong> وب </ 0> بروید.</p>
 
@@ -256,8 +256,8 @@ db.sqlite3
 
 <h1>تو زندگی میکنی!</h1>
 
-<p>The default page for your site should say "It worked!", just like it does on your local computer. Try adding <code>/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
-> 
-> Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
-> 
-> Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+<p>صفحه پیش فرض سایت شما باید بگوید "این کار کرده است!" درست همانطور که در رایانه محلی شماست. سعی کنید <code> / مدیر / </ 0> را به انتهای آدرس اینترنتی اضافه کنید و به سایت مدیریت برسید. با نام کاربری و رمز عبور وارد شوید و ببینید که می توانید پست های جدید را در سرور اضافه کنید.</p>
+
+<p>هنگامی که چند پست ایجاد شده دارید می توانید به تنظیم محلی خود (نه هرکجا پایتون) بازگردید. از اینجا باید تنظیمات محلی خود را انجام دهید تا تغییرات ایجاد کنید. این یک گردش کار مشترک در توسعه وب است - تغییرات را به صورت محلی انجام دهید، این تغییرات را به گیت هاب فشار دهید و تغییرات خود را به سرور وب زنده خود بکشید. این به شما اجازه می دهد بدون شکستن وب سایت زنده خود کار کنید و آزمایش کنید. خیلی خن?</p>
+
+<p><em> بزرگ </ 0> خودت را در پشت بگذار! استقرار سرور یکی از پیچیده ترین قسمت های توسعه وب است و اغلب مردم چند روز قبل از اینکه کارشان را انجام دهند، آنها را می گیرد. اما شما سایت خود را در زندگی واقعی، در اینترنت واقعی، درست مثل این است!</p>
