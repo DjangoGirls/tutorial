@@ -22,7 +22,7 @@ Dúfame, že sa ti tieto veci zapáčia tak veľmi ako nám!
 
 ## Čo ťa tento návod naučí?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Po skončení budeš mať funkčnú webovú aplikáciu: tvoj vlastný blog. Ukážeme ti, ako ho zverejniť na webe, kde ho môže každý navštíviť!
 
 Výsledok bude vyzerať asi takto:
 
@@ -34,7 +34,7 @@ OK, [začnime pekne po poriadku...](./how_the_internet_works/README.md)
 
 ## Sledovanie tutoriálu doma
 
-Je úžasné, zúčastniť sa Django Girls workshopu, ale uvedomujeme si, že nie vždy je možné byť na niektorom. Preto ti odporúčami aby si skúsila postupovať podľa tohto tutoriálu doma. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Stále sa na tom pracuje, ale viac a viac vecí bude čoskoro na [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube kanály.
+Je úžasné, zúčastniť sa Django Girls workshopu, ale uvedomujeme si, že nie vždy je možné byť na niektorom. Preto ti odporúčami aby si skúsila postupovať podľa tohto tutoriálu doma. Pre tých ktorí sú doma, v súčasnosti pripravujeme videá, ktoré umožnia jednoduchšie sledovanie tutoriálu doma. Stále sa na tom pracuje, ale viac a viac vecí bude čoskoro na [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube kanály.
 
 V každej kapitole ktorá už bola spracovaná sa nachádza odkaz na príslušné video.
 
@@ -42,7 +42,7 @@ V každej kapitole ktorá už bola spracovaná sa nachádza odkaz na príslušn�
 
 Tento návod vytvorili a udržiavajú [DjangoGirls](https://djangogirls.org/). Ak nájdeš chyby alebo by si chcela aktualizovať tento návod, prosím [postupuj podľa pokynov](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Chceš pomôcť s prekladom do iných jayzkov?
 
 V súčasnosti koordinujeme preklady cez platformu crowdin.com:
 
