@@ -41,42 +41,42 @@
 
 <p>ما این کار را با ایجاد یک پوشه به نام <code> static </ 0> در داخل برنامه وبلاگ انجام می دهیم:</p>
 
-<pre><code>djangogirls
-├── blog
-│   ├── migrations
-│   ├── static
-│   └── templates
-└── mysite
+<pre><code>دختران جنگجو
+├── وبلاگ
+│   ├── مهاجرت
+│   ├── استاتیک
+│   └── قالب ها
+└── سایت من
 `</pre> 
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+جانگا به طور خودکار هر پوشه ای را به نام "استاتیک" در هر پوشه برنامه های خود پیدا خواهد کرد. پس از آن قادر به استفاده از مطالب خود به عنوان فایل های استاتیک خواهد بود.
 
-## Your first CSS file!
+## اولین فایل CSS شما!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+اکنون یک فایل CSS ایجاد کنیم تا سبک خود را به صفحه وب اضافه کنیم. ایجاد یک دایرکتوری جدید با نام ` css </ 0> در داخل <code> static </ 0> دایرکتوری شما. سپس یک فایل جدید با نام <code> blog.css </ 0> ایجاد کنید در داخل این <code> css </ 0>. آماده?</p>
 
-    djangogirls
-    └─── blog
-         └─── static
-              └─── css
-                   └─── blog.css
-    
+<pre><code>دختران جنگجو
+└─── وبلاگ
+      └─── استاتیک
+           └─── Css
+                └─── وبلاگ.css
+`</pre> 
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+زمان برای نوشتن برخی از CSS! فایل ` blog / static / css / blog.css </ 0> را در ویرایشگر کد خود باز کنید.</p>
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+<p>ما در مورد سفارشی سازی و یادگیری CSS در اینجا به سراغ ما نخواهیم رفت. اگر بخواهید بیشتر بدانید، یک توصیه برای یک دوره CSS رایگان در پایان این صفحه وجود دارد.</p>
 
-But let's do at least a little. Maybe we could change the color of our header? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+<p>اما بیایید حداقل کمی. شاید ما بتوانیم رنگ هدر ما را تغییر دهیم?
+برای درک رنگ ها، رایانه ها از کدهای ویژه استفاده می کنند. این کد ها با <code> # </ 0> شروع می شوند و به ترتیب 6 حرف (A-F) و اعداد (0-9) می شوند. به عنوان مثال، کد آبی <code> # 0000FFو </ 0> است. شما می توانید کد رنگ برای بسیاری از رنگ ها را پیدا کنید http://www.colorpicker.com:/. شما همچنین ممکن است از <a href="http://www.w3schools.com/colors/colors_names.asp"> رنگ های از پیش تعریف شده </a> از جمله <code> قرمز </ 1> و <code> سبز ` استفاده کنید.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+در ` blog/static/css/blog.cssو </ 0> شما باید کد زیر را اضافه کنید:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>% filename %}blog/static/css/blog.css{% endfilename %}}</p>
 
-```css
-h1 a {
-    color: #FCA205;
+<pre><code class="css">h1 a {
+    رنگ: #FCA205;
 }
-```
+`</pre> 
 
 `h1 a` انتخابگر CSS است. این به این معنی است که ما سبک های خود را به هر عنصر ` a </ 0> درون عنصر <code> h1 </ 0> اعمال می کنیم. بنابراین وقتی ما چیزی شبیه <code><h1><a href=""> لینک </a></h1>` داریم، سبک `اچ 1 آ`اعمال خواهد شد. در این مورد، ما می خواهیم رنگ آن را به `#FCA205ر`تغییر دهیم که رنگ نارنجی است. البته شما می توانید رنگ خود را در اینجا قرار دهید!
 
