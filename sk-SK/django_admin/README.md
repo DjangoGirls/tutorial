@@ -33,7 +33,7 @@ Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontr
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
 
     Username: admin
     Email address: admin@admin.com
@@ -42,16 +42,16 @@ Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a he
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Vráť sa do prehliadača. Prihlás sa zvolenými údajmi ako superuser, mala by sa ti zobraziť nástenka (dashboard) Django admina.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Prejdi do Postov a trochu experimentuj. Pridaj päť či šesť blog postov. Netráp sa veľmi s obsahom - trebárs skopíruj a vlož text z tohto tutorialu, nech ušetríš čas. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Uisti sa, že aspoň dva alebo tri posty (ale nie všetky) majú nastavený dátum publikovania. Bude to neskôr užitočné.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Teraz je asi vhodný čas dať si kávu (alebo čaj), alebo niečo pod zub a nabrať trochu energie. Práve si vytvorila svoj prvý Django model - zaslúžiš si trochu oddychu!
