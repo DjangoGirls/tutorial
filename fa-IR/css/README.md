@@ -179,31 +179,29 @@
 
 برو جلو و نام بخش هایی از کد HTML را بنویسید. ` عنوان صفحه </ 0> را به <code> div </ 0> اضافه کنید که شامل هدر شما است، مانند این:</p>
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
 
 <pre><code class="html"><div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">وبلاگ دختران جنگجو</a></h1>
 </div>
 `</pre> 
 
-And now add a class `post` to your `div` containing a blog post.
+و اکنون کلاس ` پست </ 0> را به <code> div </ 0> اضافه کنید که حاوی یک پست وبلاگ است.</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
 
-```html
-<div class="post">
+<pre><code class="html"><div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
-```
+`</pre> 
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+ما اکنون بلوک های اعلامیه را به انتخاب کننده های مختلف اضافه خواهیم کرد. انتخابگرها شروع با `. </ 0> مربوط به کلاس ها. بسیاری از آموزش های عالی و توضیحات درباره CSS در وب وجود دارد که می تواند به شما در درک کد زیر کمک کند. در حال حاضر، فقط آن را کپی کنید و آن را در <code> blog / static / css / blog.css </ 0> قرار دهید:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>% filename %}blog/static/css/blog.css{% endfilename %}}</p>
 
-```css
-.page-header {
+<pre><code class="css">.page-header {
     background-color: #ff9400;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
@@ -249,11 +247,11 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
-```
+`</pre> 
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+سپس کد HTML را که نمایش پست ها با اعلان کلاس ها را نشان می دهد احاطه کرده است. جایگزین این:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+% filename %}blog/templates/blog/post_list.html{% endfilename %}}
 
 ```html
 {% for post in posts %}
@@ -265,12 +263,11 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+در ` وبلاگ / قالب / وبلاگ / post_list.html </ 0> با این:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
 
-```html
-<div class="content container">
+<pre><code class="html"><div class="content container">
     <div class="row">
         <div class="col-md-8">
             {% for post in posts %}
@@ -285,16 +282,16 @@ in the `blog/templates/blog/post_list.html` with this:
         </div>
     </div>
 </div>
-```
+`</pre> 
 
-Save those files and refresh your website.
+این فایل ها را ذخیره و وبسایت خود را تازه سازی کنید.
 
 ![عدد 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+ووهو! به نظر عالی، درست است? به کدی که ما فقط کشیده ایم، نگاه کنید تا مکان هایی را پیدا کنید که کلاس ها را در HTML اضافه کردیم و آنها را در CSS استفاده کردیم. اگر می خواهید تاریخ را فیروزه ای تغییر دهید کجا می توانید تغییر دهید?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+نگران نباشید کمی با این CSS کار کنید و سعی کنید برخی از چیزها را تغییر دهید. بازی با CSS می تواند به شما کمک کند که چیزهای مختلفی را بدانید. اگر چیزی را شکستن، نگران نباشید - همیشه می توانید آن را لغو کنید!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+ما واقعا توصیه می کنیم این یک کادو کدHTML & دوره آموزشی CSS </ 0>. این می تواند به شما کمک کند همه چیز درباره ساختن وب سایت های شما با CSS زیبا تر یاد بگیرند.
 
-Ready for the next chapter?! :)
+آماده برای فصل بعدی! :)
