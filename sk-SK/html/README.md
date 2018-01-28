@@ -8,9 +8,9 @@ Formát Django šablóny je popísaný v jazyku nazývanom HTML (to je to HTML, 
 
 ## Čo je HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML je kód, ktorý je interpretovaný tvojím webovým prehliadačom - ako napríklad Chrome, Firefox alebo Safari - aby tak zobrazil užívateľom webové stránky.
 
-HTML znamená "HyperText Markup Language". **HyperText** znamená, že sa jedná o typ textu, ktorý podporuje hypertextové odkazy medzi stránkami. **Markup** znamená, že sme vzali dokument a označili ho kódom aby sme niečomu povedali (v tomto prípade prehliadaču) ako interpretovať stránku. HTML kód je budovaný za pomoci **tagov**, ktoré začínajú znakom `<` a končia znakom `>`. Tieto tagy reprezentujú značkovacie (Markup) **elementy**.
+HTML znamená "HyperText Markup Language". **HyperText** znamená, že sa jedná o typ textu, ktorý podporuje hypertextové odkazy medzi stránkami. **Markup** znamená, že sme vzali dokument a označili ho kódom aby sme niečomu povedali (v tomto prípade prehliadaču) ako interpretovať stránku. HTML kód je budovaný pomocou **tagov**, ktoré začínajú znakom `<` a končia znakom `>`. Tieto tagy reprezentujú značkovacie (Markup) **elementy**.
 
 ## Tvoja prvá šablóna!
 
@@ -103,7 +103,7 @@ Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je 
 * `<p>Odsek textu</p>`
 * `<em>text</em>` zdôrazňuje tvoj text
 * `<strong>text</strong>` zvýrazňuje tvoj text o čosi viac
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` vkladá nový riadok (do br nemôžeš nič vložiť a nemá uzatvárací tag)
 * `<a href="https://djangogirls.org">link</a>` vytvára odkaz
 * `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam ako tento!
 * `<div></div>` definuje sekciu stránky
