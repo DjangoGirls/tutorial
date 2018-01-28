@@ -17,20 +17,20 @@
                     
                     حالا شما باید یک رابط با یک نوار کناری، یک پنجره اصلی بزرگ با برخی از آنها را ببینید متن و یک پنجره کوچک در پایین که به نظر می رسد چیزی شبیه به این است:
                     
-                    {% filename %}Cloud 9{% endfilename %}
+                    % filename %}}ابر9 و% endfilename %}}
                     
-                        yourusername:~/workspace $
+                        نام کاربری شما:~/فضای کاری $
                         
                     
-                    This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+                    این منطقه پایین * ترمینال </ 0> شما است، که در آن شما رایانه ابر9 را به شما ارائه می دهیم برای دستورالعمل های شما آماده شده است. شما می توانید این پنجره را تغییر دهید تا آن را کمی تغییر دهید بزرگتر.</p> 
                     
-                    ### Virtual Environment
+                    ### محیط مجازی
                     
-                    A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+                    محیط مجازی (همچنین مجازی نامیده می شود) مانند یک جعبه خصوصی است که می توانیم انجام دهیم برای کدام یک از پروژه هایی که در حال کار بر روی آنها هستیم، کد کامپیوتر مفیدی را وارد می کنیم. ما از آنها استفاده می کنیم بیت های مختلفی را که می خواهیم برای پروژه های مختلفمان بخواهیم جداگانه نگهداریم همه چیز بین پروژه ها مخلوط نیست.
                     
-                    In your terminal at the bottom of the Cloud 9 interface, run the following:
+                    در ترمینال شما در پایین رابط ابر9، موارد زیر را اجرا کنید:
                     
-                    {% filename %}Cloud 9{% endfilename %}
+                    % filename %}}ابر9 و% endfilename %}}
                     
                         sudo apt update
                         sudo apt install python3.6-venv
