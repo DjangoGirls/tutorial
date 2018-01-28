@@ -38,7 +38,7 @@ Vo Windowse spusti tento príkaz; **nezabudni pridať bodku `.` na konci**:
 
 > Bodka `.` je dôležitá, pretože hovorí skriptom, aby nainštalovali Django v tvojej aktuálnej zložke (pre ktorú je bodka `.` skratkou).
 > 
-> **Poznámka** Pri písaní predchádzajúceho príkazu nezabudni, že píšeš len časť, ktorá začína `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Poznámka** Pri písaní predchádzajúceho príkazu nezabudni, že píšeš len časť, ktorá začína `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` zobrazené tu je len príkladom cesty, kam budeš zadávať svoje príkazy.
 
 <!--endsec-->
 
