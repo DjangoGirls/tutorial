@@ -32,33 +32,33 @@
                     
                     % filename %}}ابر9 و% endfilename %}}
                     
-                        sudo apt update
-                        sudo apt install python3.6-venv
+                        سودا مناسب به روز رسانی 
+                        سودا مناسب پایتون ورژن 3.6 را نصب کنید
                         
                     
-                    If this still doesn't work, ask your coach for some help.
+                    اگر این هنوز کار نمی کند، از مربی خود بخواهید برای کمک به شما کمک کند.
                     
-                    Next, run:
+                    اجرای بعدی:
                     
-                    {% filename %}Cloud 9{% endfilename %}
+                    % filename %}Cloud 9{% endfilename %}}
                     
-                        mkdir djangogirls
-                        cd djangogirls
-                        python3.6 -mvenv myvenv
-                        source myvenv/bin/activate
-                        pip install django~=1.11.0
+                        نمایش ام کا دختر دیجانگو
+                        سی دی دختر دیجانگو 
+                        پایتون 3.6-mvenv myvenv
+                        منبع myvenv/bin/فعال 
+                        نصب پیپ دیجانگو ~=1.11.0
                         
                     
-                    (note that on the last line we use a tilde followed by an equal sign: ~=).
+                    (توجه داشته باشید که در آخرین خط ما از تیلدهایی استفاده می کنیم که علامت برابر است: ~ =).
                     
-                    ### Github
+                    ### گیت هاب
                     
-                    Make a [Github](https://github.com) account.
+                    یک حساب  گیت هاب </ 0> ایجاد کنید.</p> 
                     
-                    ### PythonAnywhere
+                    ### پایتون هرجا
                     
-                    The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+                    آموزش دختران جنگو شامل بخش هایی است که به نام "استقرار" که فرآیند گرفتن کد است که برنامه وب جدید شما را تأیید می کند و انتقال آن به رایانه قابل دسترسی (به نام سرور) و غیره مردم می توانند کار شما را ببینند.
                     
-                    This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+                    این بخش زمانی کمی در هنگام انجام آموزش در یک کتاب کروم از زمانیکه ما هست، کم است در حال حاضر با استفاده از یک کامپیوتر که در اینترنت است (به عنوان مخالف، می گویند، یک لپ تاپ). با این حال، هنوز هم مفید است، همانطور که می توانیم از فضای کاری ابر 9 به عنوان یک مکان فکر کنیم یا ما "در حال پیشرفت" و پایتون هرجا به عنوان مکان برای نشان دادن مسائل ما به عنوان کامل تر می شود.
                     
-                    Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+                    بنابراین، برای یک حساب جدید پایتون هرجا ثبت نام کنید [www.pythonanywhere.com](https://www.pythonanywhere.com).
