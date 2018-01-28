@@ -6,7 +6,7 @@ Je na čase zobraziť nejaké údaje! Na to nám Django ponúka užitočné vsta
 
 V HTML vlastne nemôžeš písať Pythonský kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Šablónové tagy v Djangu** nám umožňujú previesť Pythonovské veci do HTML, takže dynamické webové stránky môžeš vytvoriť rýchlejšie. Paráda!
 
 ## Zobraz šablónu so zoznamom príspevkov
 
