@@ -36,7 +36,7 @@ class PostForm(forms.ModelForm):
 
 Sırada Django'ya bu formu (`model = Post`) oluşturmak için hangi modelin kullanılması gerektiğini anlattığımız `class Meta` var).
 
-Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. Bu senaryoda sadece `başlık` ve `metin` ortaya çıkmasını istiyoruz – `yazar` şu anda giriş yapmış kişi olmalıdır (siz!) ve `oluşturulma_tarihi` bir gönderi oluşturduğumuzda otomatik olarak ayarlanmalıdır (örneğin kod), değil mi?
 
 Ve hepsi bu kadar! Şimdi tek yapmamız gereken formu bir *view* içinde kullanıp, template (şablon) içinde göstermek.
 
