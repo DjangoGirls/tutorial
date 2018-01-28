@@ -4,7 +4,7 @@ Pokiaľ robíš tento tutoriál doma, nie na jednej z [Django Girls akcií](http
 
 Je to preto, že tieto veci spomenieme počas tutoriálu a toto je len dodatočná stránka, ktorá zjednocuje všetky inštalačné inštrukcie na jednom mieste. Django Girls akcie obsahujú "Inštalačné večery", kde nainštalujeme všetko, aby sme sa s tým nemuseli trápiť počas workshopu, takže táto stránka je pre nás užitočná.
 
-If you find it useful, you can follow this chapter too. Ale pokiaľ sa chceš začať učiť predtým, ako si nainštaluješ množstvo vecí na svoj počítač, preskoč túto kapitolu a my ti vysvetlíme inštalačnú časť neskôr.
+Pokiaľ sa ti zdá táto kapitola užitočná, tiež si ju môžeš celú prejsť. Ale pokiaľ sa chceš začať učiť predtým, ako si nainštaluješ množstvo vecí na svoj počítač, preskoč túto kapitolu a my ti vysvetlíme inštalačnú časť neskôr.
 
 Veľa šťastia!
 
