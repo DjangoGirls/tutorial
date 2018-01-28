@@ -48,4 +48,4 @@
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+اگر زبان شما در [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new)ذکر نشده باشد، لطفا <1> یک مسئله جدید را باز کنید </ 1> به زبان ما اطلاع دهید تا ما بتوانیم آن را اضافه کنیم.
