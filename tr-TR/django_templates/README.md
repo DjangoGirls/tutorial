@@ -4,9 +4,9 @@ Bazı verileri gösterme zamanı! Django bunun için bize faydalı bazı yerleş
 
 ## Template etiketleri nedir?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Görüyorsunuz, HTML'de gerçek Python kodu yazamazsınız çünkü tarayıyıcılar bunu anlamazlar. Tarayıcılar sadece HTML kodlarını anlarlar. Bildiğimiz üzere Python çok daha dinamik bir dil iken, HTML de oldukça statiktir.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Django şablon etiketleri** Python benzeri şeyleri HTML'e aktarmamıza izin verir, böylece dinamik websitelerini daha hızlı bir şekilde oluşturabilirsiniz. Harika!
 
 ## Gönderi listesi template'ini göster
 
@@ -29,7 +29,7 @@ Gördüğümüz sadece bu:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
+<QuerySet [<Post: İkinci gönderim>, <Post: İlk gönderim>]>
 ```
 
 Yani Django bunu bir nesneler listesi olarak algılıyor. **Python'a giriş**'ten listelerin nasıl gösterildiğini hatırlıyor musun? Evet, döngülerle! Bir Django template ile bunu şöyle yaparsın:
