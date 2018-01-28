@@ -193,10 +193,10 @@ Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdı
 
 ![İşte çalışıyor!](images/it_worked2.png)
 
-Web sunucusu çaışırken ek komutlar girmek için yeni bir komut satır istemi göremezsiniz. The terminal will accept new text but will not execute new commands. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
+Web sunucusu çaışırken ek komutlar girmek için yeni bir komut satır istemi göremezsiniz. Terminal yeni metin kabul edecek ama yeni komutları çalıştırmayacaktır. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Web sunucuları nasıl çalışır **How the Internet works (İnternet Nasıl Çalışır)** bölümünde görmüştük.
 
-Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp virtualenv aktive etmeniz gerekmektedir. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp virtualenv aktive etmeniz gerekmektedir. Web sunucusunu durdurmak için, çalıştığı pencereye geri dönün ve CTRL+C ye basın -Control ve C tuşlarına birlikte. (Windows'ta Ctrl+Break tuşları olabilir.).
 
 Sonraki adım için hazır mısın? İçerikleri oluşturma zamanı!
