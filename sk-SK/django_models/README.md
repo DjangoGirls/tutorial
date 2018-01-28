@@ -172,11 +172,11 @@ Methods often `return` something. Príklad nájdeš napríklad v metóde `__str_
 
 Tiež si všimni, že `def publish(self):` a `def __str__(self):` sú odsadené vo vnútri našej triedy. Pretože Python je citlivý na medzery, musíme odsadiť naše metódy vo vnútri triedy. Inak metódy nebudú patriť do triedy, a môže dojsť k neočakávanému správaniu.
 
-Ak čokoľvek nie je jasné, neváhaj a spýtaj sa mentora/ku! Je nám jasné, že je to komplikované, najmä ak sa učíš, čo sú objekty a funkcie súčasne. But hopefully it looks slightly less magic for you now!
+Ak čokoľvek nie je jasné, neváhaj a spýtaj sa mentora/ku! Je nám jasné, že je to komplikované, najmä ak sa učíš, čo sú objekty a funkcie súčasne. Ale dúfame, že teraz už to vyzerá trochu menej magicky!
 
 ### Vytváranie tabuliek pre modely v databáze
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Posledným krokom je pridať náš nový model do databázy. Najprv musíme Djangu dať vedieť, že sme urobili nejaké zmeny v našom modeli. (Práve sme ho vytvorili!) Choď do konzoly a zadaj `python manage.py makemigrations blog`. Bude to vyzerať takto:
 
 {% filename %}command-line{% endfilename %}
 
