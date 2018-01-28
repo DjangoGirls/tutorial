@@ -48,4 +48,4 @@ V súčasnosti koordinujeme preklady cez platformu crowdin.com:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Ak tvoj jazyk nie je v zozname na [crowdin. com](https://crowdin.com/), [daj nám prosím vedieť](https://github.com/DjangoGirls/tutorial/issues/new) aký jazyk máme pridať.
