@@ -22,7 +22,7 @@
 
 ## Что ты узнаешь из этого руководства?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+После прохождения руководства у тебя будет простое работающее веб-приложение: свой собственный блог. Мы покажем, как разместить его онлайн, чтобы другие увидели твою работу!
 
 Он будет выглядеть следующим образом (более или менее):
 
@@ -34,7 +34,7 @@ Once you've finished the tutorial, you will have a small working web application
 > 
 > ## Выполняя задания дома
 > 
-> Замечательно, если ты примешь участие в воркшопе Django Girls, но мы понимаем, что это не всегда возможно. Поэтому мы рекомендуем тебе попробовать выполнить задания дома. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Скоро у нас будет YouTube канал [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed). А пока мы работаем над ним, прочитай это руководство :)
+> Замечательно, если ты примешь участие в воркшопе Django Girls, но мы понимаем, что это не всегда возможно. Поэтому мы рекомендуем тебе попробовать выполнить задания дома. Для тех, кто читает руководство дома, мы подготавливаем видео. Оно облегчит самостоятельное изучение руководства. Скоро у нас будет YouTube канал [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed). А пока мы работаем над ним, прочитай это руководство :)
 > 
 > В каждой главе, для которой видео уже снято, есть соответствующая ссылка.
 > 
@@ -42,10 +42,10 @@ Once you've finished the tutorial, you will have a small working web application
 > 
 > Это руководство поддерживается [DjangoGirls](https://djangogirls.org/). Если ты нашла ошибки или хочешь обновить информацию, пожалуйста, [следуй этим рекомендациям](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 > 
-> ## Would you like to help us translate the tutorial into other languages?
+> ## Хочешь помочь с переводом руководства на другие языки?
 > 
 > Перевод, в настоящее время, проводится на платформе crowdin.com:
 > 
 > https://crowdin.com/project/django-girls-tutorial
 > 
-> If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+> Если твоего языка нет в списке доступных на [crowdin](https://crowdin.com/), пожалуйста, [дай нам знать](https://github.com/DjangoGirls/tutorial/issues/new), чтобы мы могли добавить его.
