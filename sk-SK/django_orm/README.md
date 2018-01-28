@@ -49,7 +49,7 @@ Ups! Objavila sa chybová hláška! Hovorí nám, že nič také ako Post (prís
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Naimportujeme model `Post` z `blog.models`. Skúsme teda znova zobraziť všetky príspevky:
 
 {% filename %}command-line{% endfilename %}
 
