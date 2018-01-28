@@ -1,5 +1,5 @@
-# Chromebook setup
+# اجرای کتاب کروم
 
-> **Note** If you already worked through the Installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
-
-{% include "/chromebook_setup/instructions.md" %}
+> ** نکته </ 0> اگر قبلا از طریق مراحل نصب کار کردید، نیازی به انجام این کار دوباره نیست - شما می توانید به طور مستقیم به  معرفی به پایتون </ 1> رفته.</p> </blockquote> 
+> 
+> % include "/chromebook_setup/instructions.md" %}}
