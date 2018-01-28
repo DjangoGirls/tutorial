@@ -22,7 +22,7 @@ Henüz fazla bir şey yok.
 
 `#` ile başlayan satırların yorumlar olduğunu unutmayın - bu # ile başlayan satırların Python tarafından çalıştırılmayacağı anlamına geliyor.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Hadi yorumun önerdiği gibi bir *view* oluşturalım. Bunun için alttaki görünümü en alta ekleyin:
 
 {% filename %}blog/views.py{% endfilename %}
 
