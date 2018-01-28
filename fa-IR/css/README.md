@@ -175,17 +175,16 @@
 
 عالی!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+همانطور که در بالا ذکر شد CSS دارای مفهوم کلاس است. این به شما اجازه می دهد تا بخشی از کد HTML را نامگذاری کنید و تنها به این قسمت سبک بدهید، بدون اینکه به سایر قسمت ها آسیب برساند. این می تواند فوق العاده مفید باشد! شاید شما دو divs دارید که کاری متفاوت انجام می دهند (مانند هدر و پست شما). یک کلاس می تواند به شما کمک کند آنها را متفاوت نگاه کنید.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+برو جلو و نام بخش هایی از کد HTML را بنویسید. ` عنوان صفحه </ 0> را به <code> div </ 0> اضافه کنید که شامل هدر شما است، مانند این:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<div class="page-header">
+<pre><code class="html"><div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-```
+`</pre> 
 
 And now add a class `post` to your `div` containing a blog post.
 
