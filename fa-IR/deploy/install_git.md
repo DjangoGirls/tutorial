@@ -1,11 +1,11 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+گیت یک سیستم کنترل نسخه است که توسط بسیاری از برنامه نویسان مورد استفاده قرار می گیرد. این نرم افزار می تواند تغییرات در فایل ها را در طول زمان انجام دهد تا بتوانید نسخه های خاصی را بعدا فراخوانی کنید. کمی شبیه به ویژگی "تغییر مسیر" در مایکروسافت ورد، اما بسیار قدرتمند است.
 
-## Installing Git
+## نصب گیت
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
+شما می توانید Git را از  گیت اسکم.com </ 0> دانلود کنید. شما می توانید بر روی تمام مراحل به جای "یکی" ضربه بزنید؛ در گام پنجم تحت عنوان "تنظیم محیط مسیر خود"، "استفاده از گیت و ابزارهای اختیاری یونیکس از Command Prompt ویندوز" (گزینه پایین) را انتخاب کنید. در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.</p> 
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
