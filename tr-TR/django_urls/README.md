@@ -95,7 +95,7 @@ Python'da düzenli ifade yazarken her zaman string (dize)'den önce `r` eklenir.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+`blog` dizini içinde `urls.py` adında yeni bir boş dosya oluşturun. Tamam! Şu ilk iki satırı ekleyin:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -104,7 +104,7 @@ from django.conf.urls import url
 from . import views
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Burada `blog` uygulamasından Django'nun fonksiyonunu `url` ve bütün `views` için içe aktarıyoruz (import).(Şu an hiç urlmiz yok ama birazdan olacak!)
 
 Bundan sonra ilk URL kalıbımızı ekleyebiliriz:
 
@@ -116,7 +116,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
+Gördüğünüz üzere, şimdi `^$` URL'sine `post_list` denen bir `view` atıyoruz. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. Bu view'un adı ile aynı olabilir ama tamamen farklı bir şey de olabilir. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
