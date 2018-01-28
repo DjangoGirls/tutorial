@@ -34,7 +34,7 @@ Tvoj list ide na najbližšiu poštu. Potom ide na ďalšiu, ktorá je o čosi b
 
 ![Obrázok 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Áno, je to tak jednoduché. Pošleš správu a očakávaš nejakú odpoveď. Samozrejme, namiesto papiera a pera použijes byty dát, ale myšlienka je rovnaká!
 
 Namiesto adries s menom ulice, mesta, PSČ a krajinou používame IP adresy. Tvoj počítač sa najprv opýta DNS (Domain Name System) aby preložil djangogirls.org na IP adresu. Funguje to trocha ako staré dobré telefónne zoznamy, kde si môžeš vyhľadať meno osoby ktorú chceš kontaktovať a nájsť jej telefón a adresu.
 
