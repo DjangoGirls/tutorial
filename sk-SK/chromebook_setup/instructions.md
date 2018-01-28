@@ -2,11 +2,11 @@ Túto časť [môžeš preskočiť](http://tutorial.djangogirls.org/en/installat
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Počas tohto tutoriálu Cloud 9 sa bude tvariť ako tvoj *lokálny stroj*. Príkazy budeš zadávať do terminálového rozhrania, tak ako tvoji spolužiaci čo používajú OS X, Ubuntu, alebo Windows, ale tvoj temrinál bude pripojený na počítač, ktorý beží niekde inde a ktorý Cloud 9 pripraví pre teba.
+Cloud 9 je nástroj ktorý ti poskytne editor kódu a prístup na počítač, ktorý beží v cloude na internete, kde možeš inštalovať, písať a spúšťať softvér. Počas tohto tutoriálu Cloud 9 sa bude tváriť ako tvoj *lokálny stroj*. Príkazy budeš zadávať do terminálového rozhrania, tak ako tvoje spolužiačky čo používajú OS X, Ubuntu, alebo Windows, ale tvoj temrinál bude pripojený na počítač, ktorý beží niekde inde a ktorý Cloud 9 pripraví pre teba.
 
 1. Nainštaluj si Cloud 9 z [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Hoď na [c9.io](https://c9.io)
-3. Založ si učet
+3. Založ si účet
 4. Klikni na *Create a New Workspace*
 5. Pomenuj ho *django-girls*
 6. Zvoľ *Blank* (druhý sprava v dolnom riadku čo má oranžové logo)
@@ -18,7 +18,7 @@ Teraz by si mala vidieť rozhranie s bočnou lištou, veľké hlavné okno s tro
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Táto dolná časť je tvoj *terminál*, do ktorého budeš zadávať príkazy pre počítač, ktorý pre teba pripravil Cloud 9. Veľkosť okna môžeš meniť a keď potrebuješ tak si ho môžeš zväčšiť.
 
 ### Virtuálne prostredie
 
