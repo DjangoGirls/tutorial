@@ -78,15 +78,15 @@ h1 a {
 }
 ```
 
-`h1 a` انتخابگر CSS است. این به این معنی است که ما سبک های خود را به هر عنصر ` a </ 0> درون عنصر <code> h1 </ 0> اعمال می کنیم. بنابراین وقتی ما چیزی شبیه <code><h1><a href=""> لینک </a></h1>` داریم، سبک `اچ 1 آ`اعمال خواهد شد. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` انتخابگر CSS است. این به این معنی است که ما سبک های خود را به هر عنصر ` a </ 0> درون عنصر <code> h1 </ 0> اعمال می کنیم. بنابراین وقتی ما چیزی شبیه <code><h1><a href=""> لینک </a></h1>` داریم، سبک `اچ 1 آ`اعمال خواهد شد. در این مورد، ما می خواهیم رنگ آن را به `#FCA205ر`تغییر دهیم که رنگ نارنجی است. البته شما می توانید رنگ خود را در اینجا قرار دهید!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+در یک فایل CSS، سبک ها را برای عناصر در فایل HTML تعیین می کنیم. اولین روش شناسایی عناصر با نام عنصر است. شما ممکن است به عنوان برچسب از بخش HTML بخاطر داشته باشید. چیزهایی مانند ` a </ 0>، <code> h1 </ 0>، و <code> چهارچوب </ 0> همه نمونه هایی از نام عناصر هستند.
+ما همچنین عناصر را با ویژگی <code> کلاس </ 0> یا صفت <code> آیدی </ 0> شناسایی می کنیم. کلاس و شناسه نام شما را به عنصر خودتان می دهد. کلاس ها گروه های عناصر را تعریف می کنند و شناسه ها به عناصر خاص اشاره می کنند. برای مثال، می توانید برچسب زیر را با استفاده از نام تگ <code> آ </ 0>، کلاس <code> لینک خارجی </ 0> یا آیدی <code>پیوند به صفحه ویکی </ 0> شناسایی کنید:</p>
 
-```html
-<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```
+<pre><code class="html"><a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+`</pre> 
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+شما می توانید بیشتر در مورد اینها بخوانید[CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
 We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
