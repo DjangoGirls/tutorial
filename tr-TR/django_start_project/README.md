@@ -4,7 +4,7 @@
 > 
 > Bu bölümün [django-marcador tutorial](http://django-marcador.keimlink.de/)'a dayanan bazı kısımları Creative Commons Attribution-ShareAlike International License altında lisanslanmıştır. Django-marcador tutorial'ının hakları Markus Zapke-Gründemann'e aittir.
 
-We're going to create a small blog!
+Küçük bir blog oluşturacağız!
 
 İlk adım yeni bir Django projesi başlatmaktır. Aslında, bizim için bir Django projesinin iskeletini yaratacak Django tarafından sağlanan bazı komut dosyaları çalıştıracağız. Bu sadece daha sonra kullanacağımız dosyalar ve dizinler grubudur.
 
@@ -38,7 +38,7 @@ Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 > Nokta `.` bu durumda çok önemlidir çünkü; koda, Django'yu şu an bulunduğunuz dizine kurmasını söyler. (nokta `.` şu anki dizine bir kısayoldur).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Not** Yukarıdaki komutu yazarken, sadece `django-admin.exe` ile başlayan bölümü yazmanız gerektiğini unutmayın. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
