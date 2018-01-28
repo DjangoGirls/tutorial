@@ -116,14 +116,14 @@ urlpatterns = [
 ]
 ```
 
-Gördüğünüz üzere, şimdi `^$` URL'sine `post_list` denen bir `view` atıyoruz. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
+Gördüğünüz üzere, şimdi `^$` URL'sine `post_list` denen bir `view` atıyoruz. Bu düzenli ifade `^` ile başlayan ve `$` ile biten (yani sadece boş olan) stringlerle eşleşecek. Bu doğru çünkü Django URL çözücülerinde 'http://127.0.0.1:8000/' URL'nin parçası değildir. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. Bu view'un adı ile aynı olabilir ama tamamen farklı bir şey de olabilir. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Son kısım olan `name='post_list'` kısmı görünümü (view) tanımlamak için kullanılan URL'nin adıdır. Bu view'un adı ile aynı olabilir ama tamamen farklı bir şey de olabilir. Daha sonraki projelerde isimlendirilmiş URL'leri kullanıyor olacağız, bu yüzden uygulamadaki her URL'yi isimlendirmek önemli. Aynı zamanda URL'lerin isimlerini hatırlamak için eşsiz ve kolay yapmayı denemeliyiz.
 
 Eğer şimdi http://127.0.0.1:8000/'ine gitmeyi denerseniz, 'sayfanıza ulaşılamıyor' tarzında bir mesaj görürsünüz. Bunun nedeni sunucu (`runserver` yazdığınızı hatırlıyor musunuz?) artık çalışmıyor olacaktır. Sebebini bulmak için sunucunuzdaki komut penceresine bakın.
 
 ![Hata](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. At this stage your `/admin/` will also not work. Endişeye gerek yok - o noktaya ulaşacağız.
+Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlıdır: bu **'post_list' özelliği yok** demektir. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. Bu aşamada `/admin/` işlevi de çalışmayacaktır. Endişeye gerek yok - o noktaya ulaşacağız.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/urls/
