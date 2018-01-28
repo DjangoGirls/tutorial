@@ -38,7 +38,7 @@ Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 > Nokta `.` bu durumda çok önemlidir çünkü; koda, Django'yu şu an bulunduğunuz dizine kurmasını söyler. (nokta `.` şu anki dizine bir kısayoldur).
 > 
-> **Not** Yukarıdaki komutu yazarken, sadece `django-admin.exe` ile başlayan bölümü yazmanız gerektiğini unutmayın. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Not** Yukarıdaki komutu yazarken, sadece `django-admin.exe` ile başlayan bölümü yazmanız gerektiğini unutmayın. Burada gösterilmiş olan `(myvenv) C:\Users\Name\djangogirls>` kısmı komut satırına girdiğiniz davet edecek olan komut istemi örneğidir.
 
 <!--endsec-->
 
@@ -55,7 +55,7 @@ Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 > **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` siteyi yönetmenize yardımcı olan bir scripttir (komut). Bununla başka herhangi bir şey yüklemeden kendi bilgisayarımızda bir web sunucusu başlatabileceğiz.
 
 `settings.py` dosyası, web sitesinizin ayarlarını içerir.
 
