@@ -261,7 +261,7 @@ def post_new(request):
 
 Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `başlık` ve`metin` ekleyin, kaydedin... ve işte oldu! Yeni blog gönderisi eklenmiştir ve `post_detail` sayfasına yönlendirildik!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Gönderiyi kaydetmeden önce yayınlama tarihini ayarladığımızın farkına varabilirsiniz. Daha sonra *yayınlama butonu* **Django Girls Tutorial: Uzantılar içinde tanıtacağız.</p> 
 
 Süper!
 
