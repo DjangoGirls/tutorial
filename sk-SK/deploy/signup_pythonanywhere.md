@@ -1,5 +1,5 @@
-Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
+Je čas prihlásiť sa zdarma k účtu "Beginner" na PythonAnywhere.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> **Poznámka** Pri výbere používateľského mena, mysli na to, že URL tvojho blogu bude v tvare `tvojeuzivatelskemeno.pythonanywhere.com`, takže si vyber prezývku alebo názov o čom tvoj blog je.
