@@ -16,9 +16,9 @@
 
 ## زمانی که فردی یک درخواست از وب سایت به سرور شما می کند، چه اتفاقی می افتد؟
 
-هنگامی که درخواست به وب سرور فرستاده می شود آن درخواست به جنگو انتقال داده می شود در این هنگام جنگو در تلاش برای فهمیدن درخواست می باشد. در ابتدا آدرس وب پیج را میگیرد و سعی در فهمیدن عملکرد می کند. این بخش توسط **urlresolver** جنگو انجام میگیرد (توجه داشته باشید که website address یوآرال را صدا میزند – Uniform Resource Locator– به این دلیل *urlresolver* نامیده می شود). یک لیست از الگوها را میگیرد و سعی برای مطابقت با آدرس می کند (خیلی منطقی نیست). Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+هنگامی که درخواست به وب سرور فرستاده می شود آن درخواست به جنگو انتقال داده می شود در این هنگام جنگو در تلاش برای فهمیدن درخواست می باشد. در ابتدا آدرس وب پیج را میگیرد و سعی در فهمیدن عملکرد می کند. این بخش توسط **urlresolver** جنگو انجام میگیرد (توجه داشته باشید که website address یوآرال را صدا میزند – Uniform Resource Locator– به این دلیل *urlresolver* نامیده می شود). یک لیست از الگوها را میگیرد و سعی برای مطابقت با آدرس می کند (خیلی منطقی نیست). جانگو الگوها را از بالا به پایین بررسی می کند و اگر چیزی هماهنگ باشد، جانگو درخواست را به تابع مرتبط (که * نمایش </ 0> نامیده می شود) می گذارد.</p> 
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+تصور کنید یک حامل نامه با یک نامه. او در خیابان راه می رود و هر شماره خانه را در مقابل نامه ای قرار می دهد. اگر مطابقت داشته باشد، نامه را در آنجا می گذارد. این است که چگونه حل کننده آدرس اینترنتی کار می کند!
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
