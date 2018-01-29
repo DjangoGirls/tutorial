@@ -161,9 +161,9 @@ Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitl
 
 Çok zaman aldığından burada her bit kodunu açıklamayacağız. Model dosyalarından daha çok bilgi almak ve yukarıdaki açıklamalardan farklı tanımlamaları öğrenmek istiyorsanız Django'nun belgelerine daha çok bakmalısınız (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` means that this is a function/method and `publish` is the name of the method. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
 
-Yöntemler çoğu kez bir şeylere `return`. `__str__` yönteminde bunun bir örneği vardır. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Yöntemler çoğu kez bir şeylere `return`. `__str__` yönteminde bunun bir örneği vardır. Bu durumda `__str__()`'yi çağırdığımız zaman gönderi başlığı olan bir metin (**string**) elde ederiz.
 
 Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Çünkü Python boşlukta duyarlıdır, yöntemlerimizi sınıfın içine sokmalıyız. Aksi takdirde, yöntemler sınıfın üyesi olmaz, ve bazı beklenmedik davranışlar elde edebilirsiniz.
 
