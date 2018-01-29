@@ -52,6 +52,6 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+اگر می خواهید بیشتر در مورد مدیر جیانگو بدانید، باید مستندات جانگو را بررسی کنید: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+این احتمالا لحظه ای مناسب برای گرفتن یک قهوه (یا چای) یا چیزی برای خوردن است تا انرژی خود را دوباره تحریک کنید. شما اولین مدل جانگو را ایجاد کردید - شما شایسته یک استراحت کوتاه هستید!
