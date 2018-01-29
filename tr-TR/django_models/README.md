@@ -77,14 +77,14 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     └── mysite
@@ -144,7 +144,7 @@ class Post(models.Model):
 
 Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiğini açıklayacağız!
 
-Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitlerin eklendiği satırlardır. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`.
+Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitlerin eklendiği satırlardır. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`
 
 `class Post(models.Model):` - bu satır modelimizi tanımlar (bu bir `nesne`‘dir).
 
@@ -161,7 +161,7 @@ Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitl
 
 Çok zaman aldığından burada her bit kodunu açıklamayacağız. Model dosyalarından daha çok bilgi almak ve yukarıdaki açıklamalardan farklı tanımlamaları öğrenmek istiyorsanız Django'nun belgelerine daha çok bakmalısınız (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` means that this is a function/method and `publish` is the name of the method. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` means that this is a function/method and `publish` is the name of the method. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
 
 Yöntemler çoğu kez bir şeylere `return`. `__str__` yönteminde bunun bir örneği vardır. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
