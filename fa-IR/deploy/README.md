@@ -178,38 +178,38 @@ db.sqlite3
 >     
 >     در اینجا چیز دیگری است که بین کامپیوتر و سرور شما متفاوت است: از یک پایگاه داده متفاوت استفاده می کند. بنابراین حساب های کاربری و پست ها می توانند بر روی سرور و رایانه شما متفاوت باشند.
 >     
->     Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
+>     همانطور که ما در کامپیوتر خودمان انجام دادیم، گام را برای مقداردهی اولیه پایگاه داده در سرور با "migrate" و "createuperuser" تکرار می کنیم:
 >     
->     {% filename %}PythonAnywhere command-line{% endfilename %}
+>     {٪ filename٪}} خط فرمان هرکجا پایتون{٪ endfilename٪}}
 >     
 > 
-> (mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
+> (مای ون) $ پایتونمدیریت.py مهاجرت کنید عملیات انجام شده: [...]    اعمال بخشها.0001_initial... OK (مای ون) $ پایتون مدیریت.بدنبال ایجاد ناگهانی
 > 
->     <br />## Publishing our blog as a web app
+>     <br />## انتشار وبلاگ ما به عنوان یک برنامه وب
 >     
->     Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+>     حالا کد ما در هرکجا پایتون است، مجازی ما آماده است و پایگاه داده مقداردهی اولیه شده است. ما آماده انتشار آن به عنوان یک برنامه وب هستیم!
 >     
->     Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
+>     با کلیک بر روی آرم خود، به صفحه داشبورد هرکجا پایتون ، سپس روی برگه ** وب** کلیک کنید. در نهایت، ضربه ** اضافه کردن یک برنامه وب جدید **.
 >     
->     After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+>     پس از تایید نام دامنه خود، ** تنظیمات دستی ** را انتخاب کنید (N.B. - * نه * گزینه "جنگجو") در گفتگو. بعد ** پایتون 3.6 ** را انتخاب کنید و برای پایان دادن به جادوگر روی ادامه کلیک کنید.
 >     
->     &gt; **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
->     
->     
->     ### Setting the virtualenv
->     
->     You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
->     
->     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
->     
->     In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
->     
->     &gt; **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+>     & gt؛ ** توجه داشته باشید ** مطمئن شوید گزینه "پیکربندی دستی" را انتخاب کرده اید، نه "جنگجو". ما برای راه اندازی هرکجا پایتون جنگجو به طور پیش فرض خیلی خوشحالیم. ؛-)
 >     
 >     
->     ### Configuring the WSGI file
+>     ### تنظیم مجازی مجازی
 >     
->     Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+>     شما برای صفحه وب خود به صفحه پیکربندی هرکجا پایتون منتقل می شوید، که در آن شما باید هر زمان که بخواهید به برنامه در سرور تغییر دهید، بروید.
+>     
+>     <0 />
+>     
+>     در بخش "مجازی "، روی متن قرمز که می گوید "مسیر را به مجازی وارد کنید" را کلیک کنید، و وارد کنید "/ home / &lt;your-PythonAnywhere-username&gt; / اولین وبلاگ من / مای ون/`. قبل از حرکت به مسیر، مسیر جعبه آبی را با علامت گذاری کنید.
+>     
+>     & gt؛ ** توجه * نام کاربری هرکجا پایتون خود را به صورت مناسب جایگزین کنید. اگر اشتباهی کردید، هرکجا پایتون یک هشدار کوچک را به شما نشان می دهد.
+>     
+>     
+>     ### پیکربندی فایل WSGI
+>     
+>     جانگو با استفاده از پروتکل WSGI، یک استاندارد برای خدمت به وب سایت ها با استفاده از پایتون، که هرکجا پایتون پشتیبانی می کند، کار می کند. نحوه پیکربندی هرکجا پایتون ما برای شناسایی وبلاگ ما با استفاده از جنگجو با ویرایش یک فایل پیکربندی WSGI است.
 >     
 >     بر روی پیوند "فایل پیکربندی WSGI" (در بخش "کد" در بالای صفحه کلیک کنید - آن را به نام `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), نامگذاری کنید) و شما خواهید بود گرفته شده به یک ویرایشگر.
 >     
