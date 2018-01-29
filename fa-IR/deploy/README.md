@@ -105,9 +105,9 @@ db.sqlite3
 >     
 >     حالا ما باید مخزن Git را بر روی رایانه خود بسازیم تا در گیت هاب یکپارچه شود.
 >     
->     Type the following into your console (Replace `&lt;your-github-username&gt;` with the username you entered when you created your GitHub account, but without the angle-brackets):
+>     زیر را در کنسول خود بنویسید (با نام کاربری که در هنگام ایجاد حساب GitHub خود وارد کردید، جایگزین `&lt;your-github-username&gt; 'با نام کاربری خود وارد کنید، اما بدون زاویه مطابق):
 >     
->     {% filename %}command-line{% endfilename %}
+>     % filename %}}خط فرمان% endfilename %}}
 >     
 > 
 > $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
