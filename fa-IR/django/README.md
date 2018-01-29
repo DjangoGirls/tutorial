@@ -20,8 +20,8 @@
 
 تصور کنید یک حامل نامه با یک نامه. او در خیابان راه می رود و هر شماره خانه را در مقابل نامه ای قرار می دهد. اگر مطابقت داشته باشد، نامه را در آنجا می گذارد. این است که چگونه حل کننده آدرس اینترنتی کار می کند!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+در عملکرد * مشاهده </ 0>، تمام چیزهای جالب انجام می شود: ما می توانیم به یک پایگاه داده نگاه کنیم تا اطلاعاتی را جستجو کنیم. شاید کاربر درخواست تغییر در داده را داشته باشد? مثل یک نامه گفت: "لطفا توضیح کار من را تغییر دهید." * مشاهده </ 0> می توانید بررسی کنید که آیا شما مجاز به انجام این کار هستید، و سپس شرح شغل را برای شما به روز رسانی کرده و یک پیام را ارسال کنید: "انجام شد!" سپس نمایش * یک پاسخ ایجاد می کند و جنگجو می تواند آن را به مرورگر وب کاربر ارسال کند.</p> 
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+البته توضیح بالا کمی ساده شده است، اما نیازی به دانستن همه چیزهای فنی نیست. ایده کلی این است که کافی باشد.
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+بنابراین به جای غواصی بیش از حد به جزئیات، ما به سادگی شروع به ایجاد چیزی با جانگو و ما تمام بخش های مهم را در طول راه یاد بگیریم!
