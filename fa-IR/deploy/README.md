@@ -148,35 +148,35 @@ db.sqlite3
 > 
 > کلون $ گیت https://github.com/<your-github-username>/اولین وبلاگ من.گیت
 > 
->     <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+>     <br />این یک کپی از کد شما را در هرکجا پایتون کشف می کند. با تایپ کردن «درخت اول من-وبلاگ»، آن را چک کنید
 >     
->     {% filename %}PythonAnywhere command-line{% endfilename %}
->     
-> 
-> $ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
-> 
->     <br /><br />### Creating a virtualenv on PythonAnywhere
->     
->     Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
->     
->     {% filename %}PythonAnywhere command-line{% endfilename %}
+>     filename٪}} خط فرمان هرکجا پایتون% endfilename٪}}
 >     
 > 
-> $ cd my-first-blog
+> $ اولین وبلاگ من اولین وبلاگ من / ├── وبلاگ │ ├── ** اینت </ 0>.py │ ├── مدیر.py │ ├── مهاجرت │ │ ├── 0001_اولیه.py │ │ └── ** اینت </ 0>.py │ ├── مدل.py │ ├── تستها.py │ └──نمایشها.py ├── مدیریت.py └─────────────      ├── ** init </ 0>.py      ├── تنظیمات.py      ├── urls.py      └──wsgi.py</p> 
 > 
-> $ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
-> 
-> $ source myvenv/bin/activate
-> 
-> (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
-> 
->     <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+>     <br /><br />### ایجاد مجازی مجازی در هرکجا پایتون
 >     
->     &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
+>     درست همانطور که در رایانه خودتان انجام دادید، می توانید یک مجله مجازی در هرکجا پایتون ایجاد کنید. در کنسول باش تایپ کنید:
 >     
->     ### Creating the database on PythonAnywhere
+>     ٪ filename٪}}خط فرمان هرکجا پایتون٪ endfilename٪}}
 >     
->     Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
+> 
+> $ سی دی اولین وبلاگ من
+> 
+> $ مجازی--پایتون= پایتون3.6 myvenv virtualenv در حال اجرا با مترجم /usr/bin/پایتون3.6 [...] نصب ابزار نصب، pip... انجام شد.
+> 
+> $ myvenv / bin / فعال شد
+> 
+> (مای ون) $ pip نصب جنگجو~ = 1.11.0 جمع آوری جانگاو [...] موفق به نصب جنگجو -1.11.3 شد
+> 
+>     <br /><br />& gt؛ ** نکته ** مرحله `پیپ نصب` می تواند چند دقیقه طول بکشد.  صبر، صبر و شکیبایی!  اما اگر بیش از پنج دقیقه طول بکشد، چیزی اشتباه است.  از مربی خود بپرسید.
+>     
+>     & lt؛! - انجام دادن: فکر کردن در مورد استفاده از الزامات.متنی به جای نصب pip.-- & gt؛
+>     
+>     ### ایجاد پایگاه داده در هرکجا پاتیتون
+>     
+>     در اینجا چیز دیگری است که بین کامپیوتر و سرور شما متفاوت است: از یک پایگاه داده متفاوت استفاده می کند. بنابراین حساب های کاربری و پست ها می توانند بر روی سرور و رایانه شما متفاوت باشند.
 >     
 >     Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
 >     
