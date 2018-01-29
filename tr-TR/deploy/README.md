@@ -207,7 +207,7 @@ $ source myvenv/bin/activate
     
     "WSGI yapılandırma dosyası" bağlantısını tıkladıktan sonra (sayfanın üst kısmına yakın "kod" bölümünde `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py` gibi bir adlandırmaya sahip olacak) bir editöre yönlendirileceksin.
     
-    Delete all the contents and replace them with the following:
+    Tüm içeriği sil ve aşağıdakilerle değiştir:
     
     {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
     ```python
