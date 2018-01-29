@@ -44,14 +44,14 @@ Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi ku
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Hem Linux hem de OS X 'teyken `python3 -m venv myvenv` komutuyla bir `virtualenv` oluşturabiliriz. Şu şekilde gözükecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. It is also a good idea to keep the name short as you'll be referencing it a lot!
+Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. Ayrıca ismi çok fazla referans alacağınızdan kısa tutmak iyi bir fikir olacaktır!
 
 > **NOT:** Debian/Ubuntu'nun bazı sürümlerinde aşağıdaki hatayı alabilirsiniz:
 > 
@@ -175,7 +175,7 @@ Sonra `pip install django~=1.11.0` (eşittir işaretinden önce tilde işareti k
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, arkasından eskisini silin ve yukarıdaki komutu yeniden deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv mutlak yollar kullanır.)
+> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen projenizin isminin özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, arkasından eskisini silin ve yukarıdaki komutu yeniden deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv mutlak yollar kullanır.)
 
 <!--endsec-->
 
