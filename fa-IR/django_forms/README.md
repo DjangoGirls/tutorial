@@ -196,31 +196,29 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+وقت آن است که نقاط ` [...] </ 0> را پر کنید. اگر <code> method </ 0> <code> POST </ 0> باشد، ما می خواهیم که <code> PostForm </ 0> را با داده از فرم بسازیم، درست است? ما این کار را به صورت زیر انجام خواهیم داد:</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-form = PostForm(request.POST)
-```
+<pre><code class="python">form = PostForm(request.POST)
+`</pre> 
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+چیز بعدی این است که بررسی کنید که آیا فرم صحیح است (تمام فیلدهای لازم تنظیم شده و مقادیر نادرست ارائه شده است). ما این کار را با ` form.is_valid () </ 0> انجام می دهیم.</p>
 
-We check if the form is valid and if so, we can save it!
+<p>ما بررسی می کنیم که آیا فرم معتبر است و اگر چنین باشد، می توانیم آن را ذخیره کنیم!</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-if form.is_valid():
-    post = form.save(commit=False)
-    post.author = request.user
-    post.published_date = timezone.now()
-    post.save()
-```
+<pre><code class="python">اگر form.is_valid ():
+     post = form.save (commit = False)
+     post.author = request.user
+     post.published_date = timezone.now ()
+     post.save ()
+`</pre> 
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+اساسا، ما دو چیز در اینجا داریم: فرم را با ` form.save </ 0> ذخیره می کنیم و ما یک نویسنده می نویسیم (از آنجا که هیچ <code> نویسنده </ 0> در <code> PostForm </ 0> و این فیلد مورد نیاز است). <code> commit = False </ 0> بدین معنی است که ما نمی خواهیم مدل <code> پست </ 0> را ذخیره کنیم - ما می خواهیم ابتدا نویسنده را اضافه کنیم. در بیشتر موارد شما از <code> form.save () </ 0> بدون <code> commit = اشتباه</ 0> استفاده می کنید، اما در این مورد، ما باید آن را عرضه کنیم. <code> post.save () </ 0> تغییرات را حفظ (اضافه کردن نویسنده) و یک پست جدید بلاگ ایجاد می شود!</p>
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+<p>Finally, it would be awesome if we could immediately go to the <code>post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
