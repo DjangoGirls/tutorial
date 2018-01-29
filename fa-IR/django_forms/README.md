@@ -417,9 +417,9 @@ Change it to this:
 
 بیایید ببینیم آیا این همه در هرکجا پایتون کار می کند. زمان برای راه اندازی دیگر!
 
-* First, commit your new code, and push it up to Github:
+* ابتدا کد جدید خود را مرتب کنید و آن را به گیت هاب فشار دهید:
 
-{% filename %}command-line{% endfilename %}
+% filename %}}خط فرمان% endfilename %}}
 
     $ git status
     $ git add --all .
