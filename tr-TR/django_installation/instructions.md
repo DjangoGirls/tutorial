@@ -118,7 +118,7 @@ data-collapse=true ces-->
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>         The execution policy helps protect you from scripts that you do not trust. Uygulama politikasını değiştirmek http://go.microsoft.com/fwlink/?LinkID=135170 adresinde yardım kısmında yer alan about_Execution_Policies'teki gibi güvenlik risklerine neden olabilir. Uygulama politikasını değiştirmek istiyor musunuz? [Y] Yes/Evet [A] Yes to All/Hepsi için evet [N] No/Hayır [L] No to All/Hepsi için hayır [S] Suspend/Askıya al [?] Help/Yardım (varsayılan cevap "N")
 >     
 
 <!--endsec-->
