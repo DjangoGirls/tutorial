@@ -1,8 +1,8 @@
 # فرم در جنگو
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+آخرین چیزی که ما می خواهیم در وب سایت ما انجام دهیم ایجاد یک راه خوب برای اضافه کردن و ویرایش پست های وبلاگ است. <!> مدیر </ 0> جانگا سرد است، اما سخت است که سفارشی و زیبا انجام دهید. با ` فرم ها </ 0> ما قدرت مطلق بر روی رابط ما داشته باشد - ما می توانیم تقریبا هر چیزی که می توانیم تصور کنیم!</p>
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+<p>The nice thing about Django forms is that we can either define one from scratch or create a <code>ModelForm` which will save the result of the form to the model.
 
 This is exactly what we want to do: we will create a form for our `Post` model.
 
