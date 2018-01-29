@@ -1,115 +1,113 @@
-# CSS - güzelleştir!
+# CSS – sayfanı güzelleştir!
 
 Blogumuz hala epey çirkin gözüküyor, değil mi? Güzelleştirme zamanı! Bunun için CSS kullanacağız.
 
 ## CSS Nedir?
 
-Basamaklı Stil Sayfaları (Cascading Style Sheets - CSS) bir websayfasının görünüm ve biçimlendirmelerini tanımlamak için kullanılan bir işaretleme (markup) dilidir (HTML gibi). CSS'i websayfanızın makyajı olarak görebilirsiniz ;).
+Cascading Style Sheets (yani stil şablonu, kısaca CSS) bir işaretleme dili (örneğin HTML) ile yazılmış bir web sitesinin görünüm ve biçimini tanımlamakta kullanılan bir dildir. Bunu, web sayfamızın bir tür makyajı gibi düşünün ;)
 
-Fakat tekrar en baştan başlamak istemiyoruz, değil mi? Bir kez daha, programcılar tarafından önceden hazırlanmış ve internette ücretsiz olarak yayınlanmış bir şeyi kullanacağız. Bilirsiniz tekerleği yeniden icat etmek eğlenceli değildir.
+Fakat tekrar sıfırdan başlamak istemiyoruz, değil mi? Bir kez daha, programcıların internette ücretsiz sundukları bir şeyi kullanacağız. Bilirsiniz, tekerleği yeniden icat etmek pek eğlenceli değil.
 
-## Hadi Bootstrap kullanalım!
+## Haydi Bootstrap kullanalım!
 
-Bootstrap güzel websayfaları geliştirmek için kullanılan en popüler HTML ve CSS çerçevesidir(framework) : http://getbootstrap.com/
+Bootstrap HTML and CSS tabanlı çok güzel websiteleri geliştirmek için en yaygın olarak kullanılan çözümlerden biridir https://getbootstrap.com/
 
-Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir.
+Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir!
 
 ## Bootstrap kurulumu
 
-Bootstrap kurmak için `.html` dosyanızda `<head>` kısmına şunları eklemeniz gerekli (`blog/templates/blog/post_list.html`):
+Bootstrap'ı kurmak için alttakileri `.html` dosyasının `<head>` kısmına eklemelisiniz:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
-    
 
-Bu, projemize hiçbir yeni dosya eklemez. Yalnızca internet üzerinde var olan dosyalara işaret eder. Şimdi websitenizi açın ve sayfayı yenileyin. İşte oldu!
+Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara işaret eder. Haydi, tekrar websiteni tekrar aç ve yenile. İşte budur!
 
-![Şekil 14.1][1]
-
- [1]: images/bootstrap1.png
+![Şekil 14.1](images/bootstrap1.png)
 
 Şimdiden daha güzel gözüküyor!
 
 ## Django'da statik dosyalar
 
-Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakalım. Statik dosyalar, CSS ve resimlerindir -- dinamik olmayan, bu nedenle içerikleri istek bağlamından bağımsız ve her kullanıcı için aynı dosyalar.
+Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakalım. Statik dosyalar, tüm CSS dosyaları ve resimlerindir. İçerikleri istek bağlamından (request context) bağımsızdır ve her kullanıcı için aynıdır.
 
 ### Django'da statik dosyaları nereye koymalı
 
-Sunucuda `collectstatic` komutunu çalıştırdığımız zaman gördüğün gibi, Django dahili "admin" uygulaması için statik dosyaların nerede olduğunu biliyor. Şimdi de bizim kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
+Django dahili "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi sadece kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
 
-Bunu blog uygulamamızın içerisinde `static` isimli bir klasör oluşturarak yapacağız:
+Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapacağız:
 
-```
-djangogirls
-├── blog
-│   ├── migrations
-│   ├── static
-│   └── templates
-└── mysite
-```    
+    djangogirls 
+    ├── blog 
+    │ ├── geçişler
+    │ ├── statik 
+    │ └── şablonlar 
+    └── benimsitem
+    
 
-Django uygulama klasörlerinizin altındaki "static" isimli tüm klasörleri otomatik olarak bulacak ve içindekileri statik dosya olarak kullanabilecektir.
+Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bulur. Böylece bunların içerikleri statik dosya olarak kullanabilir.
 
 ## İlk CSS dosyanız!
 
-Şimdi web sayfamıza kendi stilimizi eklemek için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluşturalım. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
+Simdi web sayfana kendi stilini eklemen için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluştur. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
 
-```
-djangogirls
-└─── blog
-     └─── static
-          └─── css
-               └─── blog.css
-```    
+    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+    
 
 Şimdi CSS yazma zamanı! `blog/static/css/blog.css` dosyasını kod editöründe açın.
 
-Biz burada özelleştirme ve CSS'in detaylarına çok fazla girmeyeceğiz, çünkü gerçekten kolay ve workshop'tan sonra kendinizi bu konuda geliştirebilirsiniz. Web sitelerini CSS'le güzelleştirmek hakkında bilmen gerekenleri öğrenmek için, [Codeacademy HTML & CSS kursu][2]nu özellikle öneriyoruz.
+Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz CSS kursu için bir tavsiye var.
 
- [2]: http://www.codecademy.com/tracks/web
-
-Ancak az da olsa yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve arkasından 6 harf (A-F) ve numaralarda (0-9) gelir. Renk kodlarını örneğin burada bulabilirsin: http://www.colorpicker.com/. Ayrıca [önceden tanımlanmış renkler][3]i de kullanabilirsin, `red` (kırmızı) ve `green` (yeşil) gibi.
-
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
+Ama, biraz da yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsin, `red` (kırmızı) ve `green` (yeşil) gibi.
 
 `blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
     color: #FCA205;
 }
-```    
+```
 
-`h1 a` bir CSS Seçicisidir (Selector). Bu demek oluyor ki biz stilimizi, bir `h1` öğesi içerisinde olan tüm `a` öğelerine (örneğin kodumuzun içerisinde `<h1><a href="">link</a></h1>` gibi bir şey olduğunda) uyguluyoruz. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
+`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler, öğenin ismi (örn. `a`, `h1`, `body`), `sınıf` özniteliği (attribute) ya da `id` özniteliği ile tanımlanırlar. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
 ```html
-<a href="http://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-``` 
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```
 
-Daha fazla bilgi için [w3schools'da CSS seçicileri][4]ni okuyabilirsin.
+CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına bunlar ekleyelim:
 
-Sonrasında, ayrıca HTML şablonumuza (template) bir takım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açın ve en başına şu satırı ekleyin:
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
-```    
+```
 
-Burada yaptığımız yalnızca statik dosyaları yüklemek. :) Sonrasında, `<head>` ve `</head>`, tagları arasına, Bootstrap CSS dosyalarına yönelik bağlantılardan sonra (web tarayıcımız dosyaları yazıldıkları sırasıyla okuduğundan, bizim dosyamızdaki kodlar Bootstrap dosyasının içerisindekileri geçersiz kılabilir), şu satırı ekleyin:
+Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap linklerinde sonra, şu satırı ekleyelim:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```    
+```
 
-Az evvel şablonumuza (template) CSS dosyamızın nerede olduğunu söylemiş olduk.
+Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğundan emin olmalıyız. Aksi takdirde dosyadaki kod, Bootstrap dosyası tarafından üzerine yazılabilir. Az evvel şablonumuza (template) CSS dosyamızın nerede olduğunu söylemiş olduk.
 
-Dosyanız şu şekilde gözüküyor olmalı:
+Şimdi dosyanız şöyle olmalı:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -127,80 +125,85 @@ Dosyanız şu şekilde gözüküyor olmalı:
 
         {% for post in posts %}
             <div>
-                <p>yayınlanma tarihi: {{ post.yayinlanma_tarihi }}</p>
-                <h1><a href="">{{ post.baslik }}</a></h1>
-                <p>{{ post.yazi|linebreaks }}</p>
+                <p>Yayın tarihi: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
 </html>
-```    
+```
 
 Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
 
-![Şekil 14.2][5]
+![Şekil 14.2](images/color2.png)
 
- [5]: images/color2.png
+Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu arttırsak mı? Hadi deneyelim!
 
-Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu (margin'i) arttırsak mı? Hadi deneyelim!
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
     padding-left: 15px;
 }
 ```
-    
 
-Bunu CSS dosyanıza ekleyin, dosyayı kaydedin ve nasıl çalıştığını görelim!
+Bunu CSS ekleyip kaydet ve bak bakalım! Nasıl da oldu!
 
-![Şekil 14.3][6]
-
- [6]: images/margin2.png
+![Şekil 14.3](images/margin2.png)
 
 Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki satırı `blog/templates/blog/post_list.html` dosyasının içinde `<head>` bölümüne yapıştırın:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
-<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-```   
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
-Bu satır *Lobster* adlı bir fontu Google Fonts (https://www.google.com/fonts) sitesinden sayfamıza aktarır.
+Daha önce yaptığımız gibi, sıralamayı ve yerini kontrol edelim `blog/static/css/blog.css` den önce olmalı. Bu satır Google Fonts'tan *Lobster* adlı bir font yükler (https://www.google.com/fonts).
 
-Şimdi `blog/static/css/blog.css` dosyamızdaki `h1 a` deklarasyon bloğunun içine (`{` ve `}` kodları arasına) `font-family: 'Lobster';` satırını ekleyip sayfayı yenileyin:
+`blog/static/css/blog.css` CSS dosyasında `h1 isimli ` tanımlama bölümünü bulalım ( `{` ve `}` sembolleri arasındaki kod). `font-family: 'Lobster';` satırını parantezler arasına kopyalayıp sayfayı yenileyelim:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-```   
+```
 
-![Şekil 14.3][7]
-
- [7]: images/font.png
+![Şekil 14.3](images/font.png)
 
 Harika!
 
-Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir parçasına isim vermenize yarar ve yalnızca o parçanın stilini değiştirirken diğer parçaların etkilenmemesini sağlar. İki div'iniz var diyelim; fakat çok farklı şeyler yapıyorlarsa (örneğin biri başlık diğeri gönderinin metni) ve bu nedenle de aynı şekilde gözükmelerini istemiyorsanız, sınıflar müthiş yararlıdır.
+Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir kısmına isim vermenize yarar ve diğer kısımları stiline değiştirmeden yalnızca o kısmın stilini değiştirmenizi sağlar. Bu süper yararlı olabilir! Çok farklı şeyler yapan iki div'iniz var diyelim (örneğin biri başlık diğeri gönderinin metni). Class, farklı görünmelerini sağlamana yardımcı olur.
 
 Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-```    
+```
 
 Şimdi de gönderi metnini içeren `div`'e `post` isimli bir sınıf ekleyelim.
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <div class="post">
-    <p>yayınlanma tarihi: {{ post.yayinlanma_tarihi }}</p>
-    <h1><a href="">{{ post.baslik }}</a></h1>
-    <p>{{ post.yazi|linebreaks }}</p>
+    <p>Yayın tarihi: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
-```    
+```
 
 Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
@@ -209,64 +212,65 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
     padding: 20px 20px 20px 40px;
 }
 
-    
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
-    
+
 .content {
     margin-left: 40px;
 }
-    
+
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
-    
+
 .date {
-   float: right;
     color: #828282;
 }
-    
+
 .save {
     float: right;
 }
-    
+
 .post-form textarea, .post-form input {
     width: 100%;
 }
-    
+
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
 }
-    
+
 .post {
     margin-bottom: 70px;
 }
-    
+
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
 ```
-    
 
-Sonrasında blog postlarımızı gösteren HTML kodunun etrafını class deklarasyonları ile saralım. Aşağıdaki kodları değiştirin:
+Sonra, blog gönderilerini gösteren HTML kodunu, class bildirimleri içine alın. <0>blog/templates/blog/post_list.html</0> içindeki şu kısmı,
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>yayınlanma tarihi: {{ post.yayinlanma_tarihi }}</p>
-        <h1><a href="">{{ post.baslik }}</a></h1>
-        <p>{{ post.yazi|linebreaks }}</p>
+        <p>Yayın tarihi: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-```    
+```
 
 bununla değiştirelim:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="content container">
@@ -275,27 +279,25 @@ bununla değiştirelim:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.yayinlanma_tarihi }}
+                        <p>Yayın tarihi: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.baslik }}</a></h1>
-                    <p>{{ post.yazi|linebreaks }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>
     </div>
 </div>
-```    
+```
 
 Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
-![Şekil 14.4][8]
+![Şekil 14.4](images/final.png)
 
- [8]: images/final.png
+Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan ve HTML eklenmiş olan nesneleri bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirmen gerekir?
 
-Heyo! Harika görünüyor, değil mi? Yapıştırdığımız bu kodları anlamak pek de zor değil. Büyük bir kısmını sırf okuyarak anlayabilirsiniz.
+CSS ile biraz oynamaktan çekinme ve bir kaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
 
-CSS ile biraz oynamaktan korkmayın ve bazı şeyleri değiştirmeyi deneyin. Bir şeyi bozarsanız tasalanmayın, yaptığınızı her zaman geri alabilirsiniz!
+Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemeni gerçekten öneririz. Web sitelerini CSS'le güzelleştirmeyi iyice öğrenmene yardımcı olabilir.
 
-Her durumda atölye sonrası ödevi olarak ücretsiz [Codeacademy HTML & CSS Kursu][2]'nu, websayfanızı CSS ile güzelleştirmeyi öğrenmek için almanızı tavsiye ediyoruz.
-
-Sonraki bölüm için hazır mısınız? :)
+Sonraki bölüm için hazır mısın?! :)
