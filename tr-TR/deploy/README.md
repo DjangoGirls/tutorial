@@ -117,9 +117,9 @@ Username for 'https://github.com': zeynep Password for 'https://zeynep@github.co
 
 - [new branch] master -> master Branch master orijinal branch masterı uzaktan takip etmek için kuruldu.
 
-    <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
+    <br />&lt;!--TODO: belki kurulum bölümünde ssh anahtarları yüklenir ve bir uzantısı olmayan ppl'ye işaret eder--&gt;
     
-    Your code is now on GitHub. Siteye girin ve kontrol edin!  İleride kendini iyi bir şirkette bulacaksın – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) 'li ve bir çok büyük açık kaynak projesi kodlarını GitHub'da barındırır. :)
+    Kodunuz şu anda GitHub'ta. Siteye girin ve kontrol edin!  İleride kendini iyi bir şirkette bulacaksın – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) 'li ve bir çok büyük açık kaynak projesi kodlarını GitHub'da barındırır. :)
     
     
     # PythonAnywhere'de blog açma
@@ -203,7 +203,7 @@ $ source myvenv/bin/activate
     &gt; **Not** Gereken yerlere kendi PythonAnywhere kullanıcı adınızı girin. Eğer bir hata yaparsanız PythonAnywhere size küçük bir uyarı kutusunda gösterecektir.
     
     
-    Django, PythonAnywhere'in desteklediği Python'u kullanarak, web sitelerini sunmak için bir standart olan "WSGI" protokolüyle çalışır. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
+    Django, PythonAnywhere'in desteklediği Python'u kullanarak, web sitelerini sunmak için bir standart olan "WSGI" protokolüyle çalışır. PythonAnywhere'in Djano blogunuzu anlaması için yapılandırma şekli olarak WSGI yapılandırma dosyasını düzenliyoruz.
     
     "WSGI yapılandırma dosyası" bağlantısını tıkladıktan sonra (sayfanın üst kısmına yakın "kod" bölümünde `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py` gibi bir adlandırmaya sahip olacak) bir editöre yönlendirileceksin.
     
