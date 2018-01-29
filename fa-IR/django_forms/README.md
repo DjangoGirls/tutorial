@@ -51,14 +51,13 @@
 <pre><code class="html"><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 `</pre> 
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+توجه داشته باشید که ما می خواهیم با نمایش جدید ما ` post_new </ 0> تماس بگیریم. کلاس <code> "گلیفیکن گلیفیکن به علاوه" </ 0> توسط تم بوت استرپ ما استفاده می شود و علامت پلاس را برای ما نمایش می دهد.</p>
 
-After adding the line, your HTML file should now look like this:
+<p>After adding the line, your HTML file should now look like this:</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-```html
-{% load staticfiles %}
+<pre><code class="html">{% load staticfiles %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -82,7 +81,7 @@ After adding the line, your HTML file should now look like this:
         </div>
     </body>
 </html>
-```
+`</pre> 
 
 After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
 
