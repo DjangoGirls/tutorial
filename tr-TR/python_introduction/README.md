@@ -1057,8 +1057,8 @@ Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin. Yani `r
 
 İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Resmi ve tam python öğreticisi için https://docs.python.org/3/tutorial/ adresini ziyaret edin. Bu size dil hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Şerefe :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Sonraki bölüme geçmeden başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)
 
-![Cupcake](images/cupcake.png)
+![Cupcake (Kek)](images/cupcake.png)
