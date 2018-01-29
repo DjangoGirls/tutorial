@@ -69,7 +69,7 @@ Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:
 
 Stringler birbirlerine eklenebilir. Şunu dene:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut-satırı{% endfilename %}
 
 ```python
 >>> "Merhaba " + "Zeynep"
@@ -78,7 +78,7 @@ Stringler birbirlerine eklenebilir. Şunu dene:
 
 Ayrıca stringleri bir sayı ile çarpabilirsin:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Zeynep" * 3
@@ -89,7 +89,7 @@ Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için 
 
 Çift tırnak kullanarak:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Turgut Uyar'ın dizeleriyiz"
@@ -98,7 +98,7 @@ Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için 
 
 veya sola eğik çizgi (` \ `) kullanarak:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 'Turgut Uyar\'ın dizeleriyiz'
@@ -107,7 +107,7 @@ veya sola eğik çizgi (` \ `) kullanarak:
 
 Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazman yeterli:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Zeynep".upper()
@@ -118,7 +118,7 @@ String'in üzerinde `upper` **fonksiyon**unu kullandın! Bir fonksiyon (`upper()
 
 Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir **fonksiyon** var!
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len("Zeynep")
@@ -142,7 +142,7 @@ Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir ş
 
 Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için `len(304023)` yazıp `enter`a basalım:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -153,7 +153,7 @@ TypeError: object of type 'int' has no len()
 
 İlk hatamızı aldık! Nesne türü "int" (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(str(304023))
@@ -173,7 +173,7 @@ Programlamada en önemli konulardan biri değişkenlerdir. Değişken, daha sonr
 
 `name` adında bir değişken yaratmak istediğimizi varsayalım:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> name = "Ayşe"
@@ -183,7 +183,7 @@ Tip adı eşittir Ola.
 
 Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap vermedi. O zaman böyle bir değişkenin gerçekten tanımlı olduğunu nasıl bilebiliriz? Basitçe, `name` yazıp `enter` tuşuna basalım:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> name
@@ -192,7 +192,7 @@ Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap ver
 
 İşte bu sizin ilk değişkeniniz! :) Bu değişkeni işaret ettiği şeyi her zaman değiştirebilirsiniz:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> name = "Suzan"
@@ -202,7 +202,7 @@ Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap ver
 
 Bu değişkeni fonksiyonlar içinde de kullanabilirsiniz:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(name)
@@ -211,7 +211,7 @@ Bu değişkeni fonksiyonlar içinde de kullanabilirsiniz:
 
 Muhteşem değil mi? Tabikide değişkenler herhangi bir şey olabilir – sayılar da! Bunu deneyin:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> a = 4
@@ -222,7 +222,7 @@ Muhteşem değil mi? Tabikide değişkenler herhangi bir şey olabilir – sayı
 
 Peki ya değişkenin adını yanlış kullanırsak? Ne olacağını tahmin ediyor musunuz? Deneyelim! 
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -240,7 +240,7 @@ Bununla biraz oynayıp, neler yapabildiğinizi görün!
 
 Şunu deneyin:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> name = 'Merve'
@@ -260,7 +260,7 @@ Python, string ve integerın yanı sıra, çok değişik türlerde nesnelere sah
 
 Yeni bir liste yaratmakla devam edelim:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> []
@@ -269,7 +269,7 @@ Yeni bir liste yaratmakla devam edelim:
 
 Evet, liste boş. Çok kullanışlı sayılmaz, değil mi? Hadi loto numaralarıyla liste oluşturalım. Sürekli kendimizi tekrar etmek istemeyiz, o yüzden listeyi değişkene atayalım:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
@@ -277,7 +277,7 @@ Evet, liste boş. Çok kullanışlı sayılmaz, değil mi? Hadi loto numaraları
 
 Pekala, listeyi oluşturduk! Onunla ne yapabiliriz? Hadi listede kaç tane loto numarası olduğunu görelim. Hangi fonksiyonu kullanman gerektiği hakkında bir fikrin var mı? Zaten bildiğin bir fonksiyon!
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(lottery)
@@ -286,7 +286,7 @@ Pekala, listeyi oluşturduk! Onunla ne yapabiliriz? Hadi listede kaç tane loto 
 
 Evet! `len()` listedeki nesne sayısını verir. Kullanışlı, değil mi? Belki de şu an listeyi sıralarız:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> lottery.sort()
@@ -294,7 +294,7 @@ Evet! `len()` listedeki nesne sayısını verir. Kullanışlı, değil mi? Belki
 
 Bu hiçbir cevap vermez, sadece listedeki numaraların sırasını değiştirir. Şimdi listeyi yazdıralım ve ne olduğunu görelim:
 
-{% dosyaadı %}Komut-satırı{% sondosyaadı %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> print(lottery)
