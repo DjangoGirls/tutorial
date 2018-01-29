@@ -1,32 +1,34 @@
 # پنل مدیریت در جنگو
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+برای اضافه کردن، ویرایش و حذف پستهایی که ما فقط مدل کرده ایم، از مدیر جنگجو استفاده خواهیم کرد.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+بیایید فایل ` وبلاگ/ مدیریت.py </ 0> را باز کنیم و محتویات آن را با این قرار دهید:</p>
 
-{% filename %}blog/admin.py{% endfilename %}
+<p>{% filename %}}وبلاگ/مدیر.پی{% endfilename %}}</p>
 
-```python
-from django.contrib import admin
-from .models import Post
+<pre><code class="python">مشارکت جنگجو از وارد کردن مدیر 
+از .مدلها واردات پست
 
-admin.site.register(Post)
-```
+مدیر .سایت .ثبت (پست)
+مشارکت
+`</pre> 
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+همانطور که می بینید، مدل وارد شده (شامل) را که در فصل قبل تعریف شده وارد می کنیم. برای اینکه مدل ما در صفحه مدیریت نمایش داده شود، ما باید مدل را با ` admin.site.register (ارسال) </ 0> ثبت نام کنیم.</p>
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+<p>خوب، زمان برای نگاه کردن به مدل پست ما. به خاطر داشته باشید که <code> پایتونمدیریت با سرور درحال اجرا </ 0> را در کنسول اجرا کنید تا سرور وب را اجرا کنید. به مرورگر خود بروید و آدرس http://127.0.0.1:8000/admin/ را تایپ کنید. شما یک صفحه ورود به این صفحه را می بینید:</p>
 
-![Login page](images/login_page2.png)
+<p><img src="images/login_page2.png" alt="صفحه ورود" /></p>
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+<p>برای ورود به سیستم، باید یک کاربر <em> superuser </ 0> ایجاد کنید - یک حساب کاربری که بر روی همه چیز در سایت کنترل داشته باشد. بازگشت به خط فرمان، <code> پایتون مدیریت با ایجاد کاربر فوق العاده </ 0> را تایپ کنید و ورود را فشار دهید.</p>
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+<blockquote>
+  <p>به یاد داشته باشید، برای نوشتن دستورات جدید در حالی که وب سرور در حال اجرا است، یک پنجره ترمینال جدید را باز کرده و مجازی خود را فعال کنید. ما در مورد نحوه نوشتن دستورات جدید در بخش <b> اولین پروژه جانانو شما! </ 0> در بخش <b> شروع وب سرور </ 0> بررسی کردیم.</p>
+</blockquote>
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+<p>{% filename %}Mac OS X or Linux:{% endfilename %}</p>
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    
+<pre><code>(myvenv) ~/djangogirls$ python manage.py createsuperuser
+`</pre> 
 
 {% filename %}Windows:{% endfilename %}
 
