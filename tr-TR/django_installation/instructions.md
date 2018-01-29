@@ -8,9 +8,9 @@ Django'yu yüklemeden önce kod ortamınızı düzenli tutmak için son derece y
 
 Öyleyse bir **virtual environment**(diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
 
-Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. Windows'ta şöyle görünebilir: `C:\Users\Name` (`Name` yerine kullanıcı adınız gelir).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **NOTE:** Windows'ta bu dizinin özel karakterler içermediğinden emin olun; eğer kullanıcı adınız özel karakterler içeriyorsa, farklo bir dizin kullanın. Örneğin: `C:\djangogirls`.
 
 Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir klasör kullanacağız:
 
