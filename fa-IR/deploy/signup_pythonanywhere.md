@@ -1,5 +1,6 @@
-Next, it's time to sign up for a free "Beginner" account on PythonAnywhere.
+بعدا وقت آن رسیده است تا یک حساب کاربری «مبتدی» رایگان در هرکجا پایتون ثبت نام کنید.
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> ** نکته </ 0> هنگام انتخاب نام کاربری خود در اینجا، توجه داشته باشید که آدرس وبلاگ شما  yourusername.pythonanywhere.com شما </ 1> خواهد شد، بنابراین نام مستعار خود یا نام خود را برای آنچه که وبلاگ همه چیز است.</p>
+</blockquote>
