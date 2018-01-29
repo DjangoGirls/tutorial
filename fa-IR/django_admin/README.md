@@ -27,32 +27,32 @@
 
 <p>{% filename %}Mac OS X or Linux:{% endfilename %}</p>
 
-<pre><code>(myvenv) ~/djangogirls$ python manage.py createsuperuser
+<pre><code>(مای ونو (/ دختران جنگجو $ پایتون مدیریت.با ایجاد کاربر ویژه
 `</pre> 
 
-{% filename %}Windows:{% endfilename %}
+% filename %}}ویندوز% endfilename %}}
 
-    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
+    مای ونو C:\Users\Name\djangogirls&gt پایتون مدیریت.با ایجاد کاربر ویژه
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. ** نگران نباشید که شما نمیتوانید رمز عبوری را که تایپ میکنید را مشاهده کنید - این به این معناست که چطور باید باشد. </ 0> فقط آن را تایپ کنید و ` وارد کنید </ 1> برای ادامه کلیک کنید. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):</p>
 
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
+<pre><code>نام کاربری: admin
+آدرس ایمیل: admin@admin.com
+کلمه عبور:
+رمز عبور دوباره):
+کاربر ویژه با موفقیت ایجاد شد.
+`</pre> 
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+به مرورگر خود برگردید با اعتبار کاربری کاربر که انتخاب کرده اید وارد شوید شما باید داشبورد مدیر جنگجو را ببینید.
 
-![Django admin](images/django_admin3.png)
+![جنگجو مدیر](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+به پست ها بروید و کمی با آن آزمایش کنید. پنج یا شش پست وبلاگ اضافه کنید در مورد محتوا نگران نباشید - شما می توانید به سادگی یک متن را از این آموزش کپی کنید تا زمان صرفه جویی کنید. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+اطمینان حاصل کنید که حداقل دو یا سه پست (اما نه همه) تاریخ انتشار را تعیین کنید. بعدا مفید خواهد بود.
 
-![Django admin](images/edit_post3.png)
+![جنگجو مدیر](images/edit_post3.png)
 
 اگر می خواهید بیشتر در مورد مدیر جیانگو بدانید، باید مستندات جانگو را بررسی کنید: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
