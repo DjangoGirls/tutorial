@@ -4,7 +4,7 @@
 
 Şimdiye kadar web sitenize sadece kendi bilgisayarınızdan girilebiliyordu. Şimdi onu nasıl canlıya alacağınızı öğreneceksiniz! Yayına alma uygulamanızı internette yayınlama sürecidir, böylelikle insanlar sonunda gidip uygulamanızı görebilirler. :)
 
-Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette bir çok sunucu sağlayıcısı var, biz [PythonAnywhere](https://www.pythonanywhere.com/) kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu anlık sizin için kesinlikle yeterli olacaktır.
 
 Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github](https://www.github.com). Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
 
@@ -115,7 +115,7 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
 
 Username for 'https://github.com': zeynep Password for 'https://zeynep@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. https://github.com/hjwp/my-first-blog.git için toplam 3 (delta 0), yeniden 0 (delta 0)
 
-- [new branch] master -> master Branch master set up to track remote branch master from origin.
+- [new branch] master -> master Branch master orijinal branch masterı uzaktan takip etmek için kuruldu.
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
@@ -192,9 +192,9 @@ $ source myvenv/bin/activate
     &gt; **Not** "Manual configuration" seçeneğini seçtiğinize emin olun, "Django" olanı değil. Varsayılan PythonAnywhere Django kurlumu için çok iyiyiz. ;-)
     
     
-    ### Setting the virtualenv
+    ### virtualenv ayarlama
     
-    You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+    Sunucudaki uygulamada değişiklik yapmak istediğinizde web uygulamanızın PythonAnywhere config ekranına yönlendirileceksiniz.
     
     &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
     
