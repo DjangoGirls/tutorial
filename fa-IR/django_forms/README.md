@@ -218,68 +218,67 @@ else:
 
 اساسا، ما دو چیز در اینجا داریم: فرم را با ` form.save </ 0> ذخیره می کنیم و ما یک نویسنده می نویسیم (از آنجا که هیچ <code> نویسنده </ 0> در <code> PostForm </ 0> و این فیلد مورد نیاز است). <code> commit = False </ 0> بدین معنی است که ما نمی خواهیم مدل <code> پست </ 0> را ذخیره کنیم - ما می خواهیم ابتدا نویسنده را اضافه کنیم. در بیشتر موارد شما از <code> form.save () </ 0> بدون <code> commit = اشتباه</ 0> استفاده می کنید، اما در این مورد، ما باید آن را عرضه کنیم. <code> post.save () </ 0> تغییرات را حفظ (اضافه کردن نویسنده) و یک پست جدید بلاگ ایجاد می شود!</p>
 
-<p>Finally, it would be awesome if we could immediately go to the <code>post_detail` page for our newly created blog post, right? To do that we need one more import:
+<p>سرانجام، اگر می توانستیم بلافاصله به صفحه پست <code> post_detail </ 0> ما برای پست جدید بلاگ خودمان بپیوندیم، عالی خواهد بود، درست است؟ برای این کار ما نیاز به یک واردات دیگر داریم:</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-from django.shortcuts import redirect
-```
+<pre><code class="python">از جنگجو.میانبر واردات تغییر مسیر
+`</pre> 
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+آن را در ابتدای فایل خود اضافه کنید. و اکنون می توان گفت، "به صفحه پست ` post_detail </ 0> برای پست جدید ایجاد شده بروید":</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}}</p>
 
-```python
-return redirect('post_detail', pk=post.pk)
-```
+<pre><code class="python">برگشت تغییر مسیر ('post_detail'، pk = post.pk)
+`</pre> 
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+` post_detail </ 0> نام نمایش است که ما می خواهیم به آن برویم. به یاد داشته باشید که این نمایش <em> </ 0> نیاز به متغیر <code> pk </ 1> دارد? برای انتقال آن به نمایش ها، از <code> pk = post.pk </ 0> استفاده می کنیم، که <code> post </ 0> جدیدترین پست وبلاگ است!</p>
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+<p>خوب، ما خیلی صحبت کرده ایم، اما احتمالا می خواهیم ببینیم که کل <em> نمایش </ 0> به نظر می رسد، درست است?</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}}</p>
 
-```python
-def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
-    else:
-        form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+<pre><code class="python">def پست جدید (درخواست):
+     اگر request.method == "POST":
+         form = PostForm (request.POST)
+         اگر form.is_valid ():
+             post = form.save (commit = False)
+             post.author = request.user
+             post.published_date = timezone.now ()
+             post.save ()
+             return redirect ('post_detail'، pk = post.pk)
+     دیگر:
+         فرم = PostForm ()
+     بازگشت رندر (درخواست، 'blog / post_edit.html'، {'form': form})
+`</pre> 
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+بیایید ببینیم که آیا کار می کند. برو به صفحه http://127.0.0.1:8000/post/new/، اضافه کردن ` عنوان </ 0> و <code> متن </ 0>، ذخیره آن... و voilà! پست جدید وبلاگ اضافه شده است و ما به صفحه <code> post_detail </ 0> هدایت می شوید!</p>
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+<p>ممکن است متوجه شده باشید که قبل از ذخیره پست، تاریخ انتشار را تنظیم می کنید. بعدها، ما دکمه <em> انتشار </ 0> را در <strong> آموزش دختران جونگو: برنامه های افزودنی </ 1> معرفی می کنیم.</p>
 
-That is awesome!
+<p>این عالیه!</p>
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+<blockquote>
+  <p>همانطور که اخیرا رابط کاربری مدیر جنگجو را استفاده کردیم، سیستم در حال حاضر فکر می کند ما هنوز وارد سیستم نشده ایم. چند موقعیت وجود دارد که می تواند منجر به خروج از ما شود (بسته شدن مرورگر، راه اندازی مجدد DB و غیره). اگر در هنگام ایجاد یک پست متوجه شدید که خطایی در رابطه با عدم وجود یک کاربر وارد شده شده است، به صفحه مدیریت http://127.0.0.1:8000/admin بروید و دوباره وارد شوید. این مسئله به طور موقت حل خواهد شد. یک ثابت دائمی در انتظار شما در <strong> Homework: اضافه کردن امنیت به وب سایت شما! </ 0> فصل بعد از آموزش اصلی وجود دارد.</p>
+</blockquote>
 
-![Logged in error](images/post_create_error.png)
+<p><img src="images/post_create_error.png" alt="خطا ورود به سیستم" /></p>
 
-## Form validation
+<h2>اعتبار فرم</h2>
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+<p>در حال حاضر، ما به شما نشان می دهیم که چگونه شکل های جانسون سرد است. یک پست وبلاگ باید زمینه <code> عنوان </ 0> و <code> متن </ 0> داشته باشد. در مدل <code> پست </ 0> ما نگفتیم که این فیلدها (به غیر از <code> published_date </ 0>) مورد نیاز نیستند، بنابراین، دیوانه، به طور پیش فرض، انتظار می رود آنها را تنظیم کند.</p>
 
-Try to save the form without `title` and `text`. Guess what will happen!
+<p>سعی کنید فرم را بدون <code> عنوان </ 0> و <code> متن </ 0> ذخیره کنید. حدس بزن چه اتفاقی خواهد افتاد!</p>
 
-![Form validation](images/form_validation2.png)
+<p><img src="images/form_validation2.png" alt="اعتبار فرم" /></p>
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+<p>جنگجو معتقد است که تمام زمینه های موجود در فرم ما صحیح هستند. آیا این عالی نیست?</p>
 
-## Edit form
+<h2>ويرايش فرم</h2>
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+<p>حالا ما می دانیم که چگونه یک فرم جدید اضافه کنیم. اما اگر بخواهیم یک موجود را ویرایش کنیم، چه? این بسیار شبیه آنچه ما انجام دادیم. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نکنید، باید از مربی خود بپرسید یا در فصل های قبلی نگاه کنید، زیرا ما قبلا همه این مراحل را پوشش دادیم.)</p>
 
-Open `blog/templates/blog/post_detail.html` and add the line
+<p>Open <code>blog/templates/blog/post_detail.html` and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -412,11 +411,11 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+از آنجا که احتمالا وارد سیستم شوید، اگر صفحه را تازه سازی کنید، هیچ چیز دیگری را نمی بینید. هرچند صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس (با نام «محرمانه» در ویندوز لبه) بارگذاری کنید، و خواهید دید که پیوند نمایش داده نمیشود و نماد نیز نمایش داده نمیشود!
 
-## One more thing: deploy time!
+## یک چیز دیگر: استقرار زمان!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+بیایید ببینیم آیا این همه در هرکجا پایتون کار می کند. زمان برای راه اندازی دیگر!
 
 * First, commit your new code, and push it up to Github:
 
