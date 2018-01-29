@@ -110,43 +110,43 @@ db.sqlite3
 >     % filename %}}خط فرمان% endfilename %}}
 >     
 > 
-> $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
+> $ گیت از راه دور منشا اضافه کنیدhttps://github.com/<your-github-username>/اولین وبلاگ من.گیت $ فشار گیت -u اصلی استاد
 > 
->     <br />Enter your GitHub username and password and you should see something like this:
+>     <br />نام کاربری و رمز عبور GitHub خود را وارد کنید و باید چیزی شبیه به این را ببینید:
 >     
->     {% filename %}command-line{% endfilename %}
->     
-> 
-> Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
-> 
-> - [new branch] master -> master Branch master set up to track remote branch master from origin.
-> 
->     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
->     
->     Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
->     
->     
->     # Setting up our blog on PythonAnywhere
->     
->     &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
->     
->     {% include "/deploy/signup_pythonanywhere.md" %}
->     
->     
->     ## Pulling our code down on PythonAnywhere
->     
->     When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
->     
->     &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
->     
->     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
->     
->     Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
->     
->     {% filename %}PythonAnywhere command-line{% endfilename %}
+>     {٪ filename٪} خط فرمان {٪ endfilename٪}
 >     
 > 
-> $ git clone https://github.com/<your-github-username>/my-first-blog.git
+> نام کاربری برای 'https://github.com': hjwp رمز عبور برای 'https: //hjwp@github.com': شمارش اشیاء: 6، انجام شده است. نوشتن اشیاء: 100٪ (6/6)، 200 بایت | 0 بایت / ثانیه، انجام شده است. مجموع 3 (دلتا 0)، استفاده مجدد 0 (دلتا 0) برای https://github.com/hjwp/my-first-blog.git
+> 
+> - [شاخه جدید] استاد -> استاد کارشناسی ارشد برای راه انداختن استاد شاخه از راه دور از مبدأ تنظیم شده است.
+> 
+>     <br />& lt؛! - TODO: ممکن است کلیدهای SSH در حزب نصب نصب شود و نقطه PPL که آن را به یک پسوند نرسیده است - & gt؛
+>     
+>     کد شما در حال حاضر در GitHub است. برو و بررسیش کن!  شما این را در شرکت خوبی خواهید یافت - [جانگاو] (https://github.com/django/django)، [دختران آموزش یونانی] (https://github.com/DjangoGirls/tutorial) و بسیاری دیگر از بزرگ پروژه های نرم افزاری منبع باز نیز کد خود را در GitHub میزبانی می کنند. :)
+>     
+>     
+>     # راه اندازی وبلاگ ما در هرکجا پایتون
+>     
+>     & gt؛ ** توجه داشته باشید ** شما ممکن است قبلا یک حساب هرکجا پایتون قبل از مراحل نصب نصب کرده باشید - در صورت لزوم، نیازی به انجام آن دوباره نیست.
+>     
+>     {٪ include "/deploy/signup_pythonanywhere.md"٪}
+>     
+>     
+>     ## کشیدن کد ما را در هرکچا پایتون
+>     
+>     هنگامی که شما برای هرکچا پایتون ثبت نام کرده اید، به صفحه داشبورد یا صفحه کنسول خود منتقل خواهید شد. گزینه ای برای راه اندازی یک کنسول باش را انتخاب کنید - این نسخه هرکجا پایتون یک کنسول است، درست همانند یک رایانه.
+>     
+>     <0 />
+>     
+>     & gt؛ ** توجه داشته باشید ** هرکجا پایتون بر روی لینوکس است، بنابراین اگر شما در ویندوز هستید، کنسول کمی کمی متفاوت با رایانه شما خواهد بود.
+>     
+>     بیایید کد ما را از گیت هاب و به هرکجا پایتون بکشیم، با ایجاد "کلون" از مخزن ما. زیر را در console در هرکجا پایتون بنویسید (فراموش نکنید که از نام کاربری گیت هاب خود به جای `` 0> `استفاده کنید):
+>     
+>     ٪ filename٪}} خط فرمان هرکجا پایتون ٪ endfilename٪}}
+>     
+> 
+> کلون $ گیت https://github.com/<your-github-username>/اولین وبلاگ من.گیت
 > 
 >     <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
 >     
