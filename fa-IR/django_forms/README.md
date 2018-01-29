@@ -2,55 +2,54 @@
 
 آخرین چیزی که ما می خواهیم در وب سایت ما انجام دهیم ایجاد یک راه خوب برای اضافه کردن و ویرایش پست های وبلاگ است. <!> مدیر </ 0> جانگا سرد است، اما سخت است که سفارشی و زیبا انجام دهید. با ` فرم ها </ 0> ما قدرت مطلق بر روی رابط ما داشته باشد - ما می توانیم تقریبا هر چیزی که می توانیم تصور کنیم!</p>
 
-<p>The nice thing about Django forms is that we can either define one from scratch or create a <code>ModelForm` which will save the result of the form to the model.
+<p>چیز خوبی در مورد شکلگونو این است که ما می توانیم یکی را از ابتدا تعریف کنیم یا مدل فرم </ 0> <code> ایجاد کنیم که نتیجه فرم را به مدل ذخیره می کند.</p>
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+<p>این دقیقا همان چیزی است که ما می خواهیم انجام دهیم: ما یک فرم را برای مدل <code> پست </ 0> ما ایجاد خواهیم کرد.</p>
 
-Like every important part of Django, forms have their own file: `forms.py`.
+<p>مانند هر بخش مهمی از جانگو، فرم ها فایل خود را دارند: <code> شکلها.py </ 0>.</p>
 
-We need to create a file with this name in the `blog` directory.
+<p>ما باید یک فایل با این نام در <code> وبلاگ </ 0> ایجاد کنید.</p>
 
-    blog
-       └── forms.py
-    
+<pre><code>وبلاگ
+   └── شکلها.py
+`</pre> 
 
-OK, let's open it and type the following code:
+خوب، اجازه دهید آن را باز کنیم و کد زیر را تایپ کنیم:
 
-{% filename %}blog/forms.py{% endfilename %}
+{% filename %}}وبلاگ/شکلها.پی{% endfilename} %}
 
 ```python
-from django import forms
+از فرم های واردات جیانگو
 
-from .models import Post
+از .مدلها واردات پست
 
-class PostForm(forms.ModelForm):
+کلاس شکل ارسال(شکلها.نوع شکل):
 
-    class Meta:
-        model = Post
-        fields = ('title', 'text',)
+     کلاس متا:
+         مدل = پست
+         فیلدها= ('عنوان'، 'متن'،)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+ما باید ابتدا فرم های جانگو را وارد کنیم (` از فرم های واردات جانگا </ 0>) و، بدیهی است، ما <code> پست </ 0> مدل (<code> از .مدلها واردات پست </ 0>).</p>
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+<p><code> فرم ارسال</ 0>، همانطور که احتمالا مشکوک است، نام فرم ما است. ما باید به دوگانگو بگوییم که این فرم یک فرم ارسال </ 0> است (بنابراین جانگو برای ما جادویی خواهد کرد) - <code> شکلها.نوع شکل </ 0> مسئول آن است.</p>
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+<p>بعد، ما <code> کلاس متا </ 0> را داریم، جایی که ما به جنگو می گویم که کدام مدل باید برای ایجاد این فرم (<=> مدل = پست </ 0>) استفاده شود.</p>
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+<p>در نهایت می توانیم بگوییم که کدام زمینه (ها) باید در فرم ما باشد. در این سناریو ما تنها <code> عنوان </ 0> و <code> متن </ 0> را می خواهیم در معرض قرار دهیم - <code> نویسنده </ 0> باید فردی باشد که در حال حاضر وارد شده است (شما!) و < 0> ایجاد داده </ 0> باید زمانی که یک پست ایجاد کنیم (به عنوان مثال در کد) باید به طور خودکار تنظیم شود، درست است?</p>
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+<p>و همین! تمام مواردی که اکنون باید انجام دهیم، استفاده از فرم در نمایش <em> </ 0> و نمایش آن در قالب است.</p>
 
-So once again we will create a link to the page, a URL, a view and a template.
+<p>بنابراین یک بار دیگر یک پیوند به صفحه، یک آدرس سایت، یک نمایه و یک الگو ایجاد خواهیم کرد.</p>
 
-## Link to a page with the form
+<h2>پیوند به یک صفحه با فرم</h2>
 
-It's time to open `blog/templates/blog/base.html`. We will add a link in `div` named `page-header`:
+<p>وقت آن است که <code> blog / templates / blog / base.html </ 0> باز شود. <code> div </ 0> به نام <code> عنوان صفحه </ 0> لینک اضافه می کنیم:</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```
+<pre><code class="html"><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+`</pre> 
 
 Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
