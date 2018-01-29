@@ -49,7 +49,7 @@ Ahh! Bir hata meydana geldi. Bize hiç gönderi olmadığını söylüyor. Bu do
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+`blog.models`'ten `Post` modelini içe aktardık. Tekrar bütün gönderileri görüntülemeyi deneyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
