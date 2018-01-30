@@ -435,6 +435,6 @@ Change it to this:
         [...]
         
     
-    * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
-    
-    And that should be it! Congrats :)
+    * سرانجام، به برگه  برگه </ 0> بروید و روی ** بازنگری </ 1> ضربه بزنید.</li> </ul> 
+        
+        و این باید باشد! تبریک میگم :)
