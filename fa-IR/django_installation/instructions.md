@@ -1,12 +1,12 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> بخشی از این بخش بر اساس آموزش های هویج دخترک گیک (https://github.com/ggcarrots/django-carrots) است.
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> بخشي از اين بخش بر پايه <d> 0> جنگجو -مارکادوراستوار است    آموزش </ 0> تحت مجوز خلاقیت مارکادورمجاز می باشد    مجوز-اشتراک پسندیده 4.0 مجوز بین المللی. آموزش جودو مارکادور    توسط مارکوس_زاپک-گروندمن و همکاران کپی رایت شده است.
 
-## Virtual environment
+## محیط مجازی
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+قبل از اینکه ما جنگجو را نصب کنیم، شما را برای نصب یک ابزار فوق العاده مفید برای کمک به نگه داشتن محیط برنامه نویسی خود در رایانه خود می گیریم. این امکان وجود دارد که این مرحله را بگذرانید اما بسیار توصیه می شود. شروع با بهترین تنظیم ممکن است در آینده شما را از مشکلات زیادی صرفه جویی خواهد کرد!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+بنابراین، اجازه دهید یک محیط ** مجازی </ 0> ایجاد کنیم (همچنین یک * مجازی </ 1> نامیده می شود). مجازی راه اندازی پایتون / جانگو را بر اساس هر پروژه جدا خواهد کرد. این به این معنی است که هر گونه تغییری که شما به یک وبسایت انجام میدهید، بر روی دیگران که در حال توسعه هم نیستند تاثیر نخواهد گذاشت. خب، درست است?</p> 
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
