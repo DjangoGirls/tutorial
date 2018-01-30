@@ -87,22 +87,14 @@ Git будет отслеживать изменения всех файлов �
     
     <img src="images/new_github_repo.png" />Примечание: Имя репозитория my-first-blog имеет большое значение - ты, конечно, можешь придумать другое название, но оно будет встречаться множество раз в руководстве и тебе придется заменять его каждый раз на свое. Вероятно, проще просто придерживаться имени `my-first-blog`.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    На следующем экране вы увидите URL-клон вашего репозитория. Выберите "HTTP" версию, скопируйте ее, затем вставим ее в терминал:
     
-    <img src="images/github_get_repo_url_screenshot.png" />
-    
-    Now we need to hook up the Git repository on your computer to the one up on GitHub.
-    
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
-    
-    {% filename %}command-line{% endfilename %}
+    Напишите у себя в консоли следующую команду (замените <your-github-username> именем, указанным при создании аккаунта на GitHub, но без угловых скобок)
     
 
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-    <br />Enter your GitHub username and password and you should see something like this:
-    
-    {% filename %}command-line{% endfilename %}
+    <br />Введите ваше имя пользователя GitHub и пароль, далее вы должны увидеть что-то похожее на:
     
 
 Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
