@@ -53,60 +53,59 @@
 
 توجه داشته باشید که ما می خواهیم با نمایش جدید ما ` post_new </ 0> تماس بگیریم. کلاس <code> "گلیفیکن گلیفیکن به علاوه" </ 0> توسط تم بوت استرپ ما استفاده می شود و علامت پلاس را برای ما نمایش می دهد.</p>
 
-<p>After adding the line, your HTML file should now look like this:</p>
+<p>پس از اضافه کردن خط، فایل HTML شما باید اینگونه باشد:</p>
 
 <p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-<pre><code class="html">{% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<pre><code class="html">{٪ بارگذاری فایلهای استاتیک٪}
+&lt;html&gt;
+     &lt;head&gt;
+         &lt;title&gt; وبلاگ دختران جانگا </ 2>
+         &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+         &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt;
+         &lt;link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt;
+         &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt;
+     </ 1>
+     &lt;body&gt;
+         &lt;div class="page-header"&gt;
+             &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 9>
+             &lt;h1&gt;&lt;a href="/"&gt; وبلاگ دختران جانگا </ 10>
+         </ 8>
+         &lt;div class="content container"&gt;
+             &lt;div class="row"&gt;
+                 &lt;div class="col-md-8"&gt;
+                     {٪ محتوای بلوک٪}
+                     {٪ endblock٪}
+                 </ 13>
+             </ 12>
+         </ 11>
+     </ 7>
+</ 0>
 `</pre> 
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+پس از ذخیره و بازخوانی صفحه http://127.0.0.1:8000 شما آشکارا آشنا ` NoReverseMatch </ 0> را ببینید، درست است?</p>
 
-## URL
+<h2>آدرس اینترنتی</h2>
 
-We open `blog/urls.py` and add a line:
+<p><code> وبلاگ/ آدرسهای اینترنتی.py </ 0> باز کنید و یک خط اضافه کنید:</p>
+
+<p>{% filename %}blog/urls.py{% endfilename %}</p>
+
+<pre><code class="python">آدرس اینترنتی(r '^ پست / جدید / $'، نمایش.پست_جدید، نام = 'پست_جدید')،
+`</pre> 
+
+و کد نهایی مانند این خواهد بود:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
-```
+از آدرس وارد شده جنگجو.conf.آدرسهای اینترنتی 
+از جانب . نمایش های واردات
 
-And the final code will look like this:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-from django.conf.urls import url
-from . import views
-
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+الگوهای آدرس اینترنتی= [
+     آدرس اینترنتی (r '^ $'، نمایش.پست_لیست، نام = 'لیست_پست')،
+     آدرس اینترنتی (r '^ post / (؟ p <pk> \ d +) / $'،نمایش.پست_جزئیات، نام = 'جزئیات_پست')،
+     آدرس اینترنتی (r '^ پست / جدید / $'، نمایش.پست_جدید، نام = 'پست_جدید')،
 ]
 ```
 
