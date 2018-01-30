@@ -166,34 +166,33 @@
 
 اما یک دقیقه صبر کنید وقتی چیزی را در فیلدهای ` عنوان </ 0> و <code> متن </ 0> تایپ کنید و سعی کنید آن را ذخیره کنید، چه اتفاقی خواهد افتاد?</p>
 
-<p>Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?</p>
+<p>هیچ چی! ما یک بار دیگر در همان صفحه و متن ما رفته است... و هیچ پست جدید اضافه شده است. پس چه اتفاقی افتاد?</p>
 
-<p>The answer is: nothing. We need to do a little bit more work in our <em>view</em>.</p>
+<p>جواب این است: هیچ چیز. ما باید در کار <em> نمایش </ 0> کار کمی بیشتر انجام دهیم.</p>
 
-<h2>Saving the form</h2>
+<h2>ذخیره فرم</h2>
 
-<p>Open <code>blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+<p>باز <code> وبلاگ / نمایشها.پی</ 0> باز کنید. در حال حاضر همه ما در نمای <code> پست_جدید </ 0> زیر است:</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+<pre><code class="python">دفع پست_جدید (درخواست):
+     فرم = فرم پست()
+     بازگشت رندر
+(درخواست، 'وبلاگ/ویرایش_پست، {'فرم': فرم{)
+`</pre> 
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+هنگامی که فرم را ارسال می کنیم، ما به همان نمایش داده می شود، اما این بار ما در ` درخواست </ 0> داده های بیشتری داریم، به ویژه در <code> request.POST </ 0> (نامگذاری هیچ ارتباطی با "پست" وبلاگ نداشته باشد، این کار با این واقعیت است که ما "ارسال" داده ها). به یاد داشته باشید که چگونه در فایل HTML، تعریف <code><form>` دارای متغیر ` متد = "پست" </ 1> بود? تمام فیلدها از فرم اکنون در <code> درخواست.پست</ 0> قرار دارند. شما نباید <code> پست</ 0> را به هر چیز دیگری تغییر دهید (تنها مقدار معتبر دیگر برای روش <code> </ 0> <code> گرفتن</ 0> است، اما ما هیچ وقت برای توضیح تفاوت آن است).</p>
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+<p>بنابراین در نمای <em> ما </ 0> ما دو موقعیت جداگانه برای رسیدگی داریم: اول اینکه زمانی که ما برای اولین بار به صفحه می رویم و یک فرم خالی را می خواهیم، و دوم، وقتی برگشت به نمایش <em> </ 0> با تمام داده های فرم که ما تایپ کرده ایم. بنابراین ما نیاز به اضافه کردن یک شرط (ما برای استفاده از <code> اگر </ 0> استفاده کنیم):</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-if request.method == "POST":
+<pre><code class="python">if request.method == "POST":
     [...]
 else:
     form = PostForm()
-```
+`</pre> 
 
 وقت آن است که نقاط ` [...] </ 0> را پر کنید. اگر <code> method </ 0> <code> POST </ 0> باشد، ما می خواهیم که <code> PostForm </ 0> را با داده از فرم بسازیم، درست است? ما این کار را به صورت زیر انجام خواهیم داد:</p>
 
@@ -420,22 +419,22 @@ Change it to this:
 
 % filename %}}خط فرمان% endfilename %}}
 
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
+    وضعیت $ گیت
+    $ گیتاضافه --همه.
+    وضعیت $ گیت
+    $ گیت مرتکب شدن-m "اضافه شده دید برای ایجاد / ویرایش پست وبلاگ در داخل سایت."
+    $ گیتفشار
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd my-first-blog
-    $ git pull
-    [...]
+* سپس، در کنسول  هرکجا پایتون باش </ 0>:</li> </ul> 
     
-
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
-
-And that should be it! Congrats :)
+    % filename %}}خط فرمان% endfilename %}}
+    
+        $ سی دی اولین وبلاگ من
+        $ گیت کشیدن
+        [...]
+        
+    
+    * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+    
+    And that should be it! Congrats :)
