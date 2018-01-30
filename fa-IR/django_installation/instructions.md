@@ -8,34 +8,34 @@
 
 بنابراین، اجازه دهید یک محیط ** مجازی </ 0> ایجاد کنیم (همچنین یک * مجازی </ 1> نامیده می شود). مجازی راه اندازی پایتون / جانگو را بر اساس هر پروژه جدا خواهد کرد. این به این معنی است که هر گونه تغییری که شما به یک وبسایت انجام میدهید، بر روی دیگران که در حال توسعه هم نیستند تاثیر نخواهد گذاشت. خب، درست است?</p> 
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+همه شما باید انجام دهید این است که یک دایرکتوری را پیدا کنید که در آن می خواهید ` مجازی</ 0> را ایجاد کنید. برای مثال، دایرکتوری خانه شما. در ویندوز، ممکن است مانند <code> C:\Users\Name\ </ 0> درایو (که در آن <code> نام </ 0> نام ورود شما است) ظاهر می شود.</p>
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+<blockquote>
+  <p><strong> نکته: </ 0> در ویندوز اطمینان حاصل کنید که این پوشه حاوی کاراکترهای متمایز یا خاص نیست؛ اگر نام کاربری شما دارای کاراکترهای متمایز است، از یک دایرکتوری دیگر استفاده کنید، به عنوان مثال، <code> درایو سی: \ دختران جنگجو</ 1>.</p>
+</blockquote>
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+<p>برای این آموزش ما از یک دایرکتوری جدید <>> دختران جنگجو</ 0> از دایرکتوری اصلی شما استفاده خواهیم کرد:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>% filename %}}خط فرمان% endfilename %}}</p>
 
-    $ mkdir djangogirls
-    $ cd djangogirls
-    
+<pre><code>$ نمایش ام کا دختران جنگجو
+$ سی دی دختران جنگجو
+`</pre> 
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+ما مجازی را ` مای ون</ 0> ایجاد خواهیم کرد. فرمان کلی در قالب خواهد بود:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>% filename %}}خط فرمان %endfilename %}}</p>
 
-    $ python3 -m venv myvenv
-    
-
-<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
+<pre><code>$ پایتون3-ام ون مایون
+`</pre> <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+برای ایجاد یک <جدید> مجازی</ 0> جدید، باید دستور دستور را باز کنید و ` پایتون-ام ون مایون</ 0> را اجرا کنید. شبیه این خواهد شد:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>% filename %}}خط فرمان% endfilename %}}</p>
 
-    C:\Users\Name\djangogirls> python -m venv myvenv
-    
+<pre><code>C:\Users\Name\djangogirls> python -m venv myvenv
+`</pre> 
 
 Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
