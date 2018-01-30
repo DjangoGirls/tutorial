@@ -109,70 +109,70 @@
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+پس از طراوت سایت، ما یک ` صفت خطا </ 0> را مشاهده می کنیم، زیرا ما نمای <code> پست_جدید </ 0> را اجرا نکرده ایم. بگذارید آن را در حال حاضر اضافه کنید.</p>
 
-## post_new view
+<h2>دیدگاه پست_جدید</h2>
 
-Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
+<p>زمان باز کردن فایل <code> وبلاگ / نمایشها </ 0> را باز کنید و خطوط زیر را با بقیه <code> از </ 0> ردیف اضافه کنید:</p>
+
+<p>{% filename %}blog/views.py{% endfilename %}</p>
+
+<pre><code class="python">از واردات فرم ها فرم ارسال
+`</pre> 
+
+و سپس نمایش * ما </ 0>:</p> 
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from .forms import PostForm
+دفاعپست_جدید (درخواست):
+     فرم = فرم پست ()
+     بازگشت رندر (درخواست، 'وبلاگ/ ویرایش_پست.اچ تی ام ال'، {'فرم': فرم})
 ```
 
-And then our *view*:
+برای ایجاد فرم ` ارسال </ 0> جدید، ما باید <code> پست فرم() </ 0> را فراخوانی کنیم و آن را به قالب منتقل کنیم. ما به این <em> نمایش </ 0> بازگشت خواهیم کرد، اما در حال حاضر، بیایید به سرعت یک قالب برای فرم ایجاد کنیم.</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<h2>قالب</h2>
 
-```python
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-```
+<p>ما باید یک فایل <code> post_edit.html </ 0> در <code> وبلاگ / قالبها/ وبلاگ</ 0> ایجاد کنیم. برای ایجاد یک کار فرم، ما نیاز به چندین چیز دارد:</p>
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+<ul>
+<li>ما باید فرم را نمایش دهیم. ما می توانیم با (مثلا{% raw %}<code>{{ form.as_p }}`{% endraw %}. را انجام دهیم.</li> 
 
-## Template
+* خط بالا باید با یک تگ فرم HTML پیچیده شود: `&lt;form method="POST"&gt;... </ 0>.</li>
+<li>ما به یک دکمه <code> ذخیره </ 0> نیاز داریم. ما این کار را با یک دکمه HTML انجام می دهیم: <code>&lt;button type="submit"&gt; ذخیره </ 1>.</li>
+<li>و در نهایت، درست بعد از باز شدن تگ <code><form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. این بسیار مهم است، زیرا فرم های شما را امن می کند! اگر شما در مورد این بیت را فراموش کرده اید، جانگو هنگام تلاش برای ذخیره فرم شکایت می کند:</ul> 
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory. To make a form work we need several things:
+![CSRF صفحه ممنوع](images/csrf2.png)
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+خوب، بگذار ببینیم چگونه HTML در ` post_edit.html </ 0> باید نگاه کند:</p>
 
-![CSFR Forbidden page](images/csrf2.png)
+<p>{% filename %}blog/templates/blog/post_edit.html{% endfilename %}</p>
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+<pre><code class="html">{٪ گسترش وبلاگ / base.html٪}
 
-{% filename %}blog/templates/blog/post_edit.html{% endfilename %}
+{٪ محتوای بلوک٪}
+     &lt;h1&gt; پست جدید </ 0>
+     &lt;form method="POST" class="post-form"&gt; {٪ csrf_token٪}
+         {{form.as_p}}
+         &lt;button type="submit" class="save btn btn-default"&gt; ذخیره </ 2>
+     </ 1>
+{٪ پایان بلوک٪}
+`</pre> 
 
-```html
-{% extends 'blog/base.html' %}
+زمان برای تازه کردن! بله فرم شما نمایش داده می شود!
 
-{% block content %}
-    <h1>New post</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
-{% endblock %}
-```
+![فرم جدید](images/new_form2.png)
 
-Time to refresh! Yay! Your form is displayed!
+اما یک دقیقه صبر کنید وقتی چیزی را در فیلدهای ` عنوان </ 0> و <code> متن </ 0> تایپ کنید و سعی کنید آن را ذخیره کنید، چه اتفاقی خواهد افتاد?</p>
 
-![New form](images/new_form2.png)
+<p>Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?</p>
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+<p>The answer is: nothing. We need to do a little bit more work in our <em>view</em>.</p>
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+<h2>Saving the form</h2>
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
-
-## Saving the form
-
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+<p>Open <code>blog/views.py` once again. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
