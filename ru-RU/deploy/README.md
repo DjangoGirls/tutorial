@@ -128,18 +128,14 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
 
 $ git clone https://github.com/<your-github-username>/my-first-blog.git
 
-    <br />This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+    <br />Это добавит копию на PythonAnywhere. Проверь результат набрав`tree my-first-blog`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
 
-    <br /><br />### Creating a virtualenv on PythonAnywhere
-    
-    Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
-    
-    {% filename %}PythonAnywhere command-line{% endfilename %}
+    <br /><br />### Создание virtualenv на PythonAnywhere также, как вы сделали на вашем компьютере, вы можете создать virtualenv на PythonAnywhere. В Bash консоли, введите: {% filename %}PythonAnywhere команды line{% endfilename %}
     
 
 $ cd my-first-blog
@@ -150,7 +146,7 @@ $ source myvenv/bin/activate
 
 (myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
 
-    <br /><br />&gt; **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+    <br /><br />&gt; **Примечание** Установка шагов `pip install` может занять пару минут.  Терпение, терпение!  Но если это занимает больше 5 минут, значит что-то пошло не так.  Спроси своего наставника.
     
     &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
     
