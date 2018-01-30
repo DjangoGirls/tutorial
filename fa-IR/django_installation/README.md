@@ -1,7 +1,7 @@
 # نصب و راه اندازی جنگو
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> ** نکته </ 0> اگر از کاتاب کروم ستفاده میکنید، این فصل را پر کنید و مطمئن شوید که دستورالعمل  تنظیمات برپایی کتاب کروم </ 1> را دنبال کنید.</p> 
 > 
-> **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
-
-{% include "/django_installation/instructions.md" %}
+> ** توجه داشته باشید </ 0> اگر قبلا از طریق مراحل نصب کار کرده باشید، این کار را قبلا انجام داده اید - می توانید به فصل بعدی بروید!</p> </blockquote> 
+> 
+> {% include "/django_installation/instructions.md" %}
