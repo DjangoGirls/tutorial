@@ -79,9 +79,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. You will want to add this if you want the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for english or `de` for german, and the country code, e.g. `de` for germany or `ch` for switzerland. Akkor érdemes felvenni, ha azt szeretné, hogy az alapértelmezett gomb, értesítések a Django, hogy az ön nyelvén. Tehát a "Cancel" gombot a nyelvére lefordítva, hogy meghatározott itt. [Django jön egy csomó készített fordítások](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Change the language code by changing the following line:
+Változás a nyelv kód módosításával a következő sort:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Change the language code by changing the following line:
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Mi is kell hozzá egy utat a statikus fájlokat. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -175,14 +175,14 @@ Ha Windowst használsz, és `UnicodeDecodeError` hibaüzenetet kapsz, ezt a para
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Most már csak az kell, hogy ellenőrizze, hogy a weboldal fut. Nyissa meg a böngészővel (Firefox, Chrome, Safari, Internet Explorer vagy bármi használja), majd írja be ezt a címet:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Ha Chromebookot használ, akkor mindig látogatás a teszt szerver elérésével:
 
 {% filename %}browser{% endfilename %}
 
@@ -193,10 +193,10 @@ Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver
 
 ![It worked!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+While the web server is running, you won't see a new command-line prompt to enter additional commands. A terminál fogadja el az új szöveg, de nem teljesíti új parancsokat. This is because the web server continuously runs in order to listen for incoming requests.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Megnéztük, hogy milyen web szerver működik, a **Hogyan működik az Internet** fejezet.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+A típus további parancsokat, míg a web szerver fut, nyitva egy új terminál ablakban aktiváljuk a virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Készen állsz a következő lépésre? Itt az ideje, hogy létrehozzunk némi tartalmat!
