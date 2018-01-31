@@ -1,6 +1,6 @@
-# CSS – make it pretty!
+# CSS - deixa as coisas bonitas!
 
-O nosso blog continua bem feio, certo? Está na hora de o tornar bonito! Vamos usar CSS para isso.
+O nosso blog ainda parece muito feio, certo? Está na hora de o deixar melhor! Para isso, nós usaremos o CSS.
 
 ## O que é CSS?
 
