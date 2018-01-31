@@ -1,20 +1,20 @@
-O Git é um "sistema de controle de versão" usado por muitos programadores. Este software pode rastear as mudanças nos arquivos ao longo do tempo para que possas recuperar as versões específicas mais tarde. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+O Git é um "sistema de controle de versão" usado por muitos programadores. Este software pode rastrear as mudanças nos arquivos ao longo do tempo para que possas recuperar as versões específicas mais tarde. Um bocado parecido com o recurso "rastrear alterações" do Microsoft Word, mas muito mais poderoso.
 
-## Installing Git
+## Instalar o Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Podes descarregar o Git em [git-scm.com](https://git-scm.com/). Podes clicar em "next" em todos os passos, exceto um: no quinto passo, intitulado "Ajustando o PATH do teu ambiente", escolhe "Use Git e ferramentas Unix opcionais do Prompt de Comando do Windows", que é a opção mais abaixo. Tirando isso, as configurações padrão estão ótimas. Checkout Windows-style, commit Unix-style line endings is good.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Não te esqueças de reiniciar o prompt de comando ou o powershell depois que a instalação terminar com sucesso. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
+Descarrega o Git em [git-scm.com](https://git-scm.com/) e segue as instruções.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Nota** Se estiveres a executar o OS X 10.6, 10.7, ou 10.8, vais precisar de instalar a versão do git daqui: [Instalador Git para o OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
