@@ -59,7 +59,7 @@ Anything else in the URL definition will be taken literally.
 
 Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
-Minden egyes poszt számához új view-t írni nagyon idegesítő lenne. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
+Minden egyes poszt számához új view-t írni nagyon idegesítő lenne. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Törjük le darabonként látni, hogy mit csinálunk itt:
 
 * **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
 * A **(\d+)** azt jelenti, hogy ezután egy szám fog következni (egy vagy több számjegyű), és ezt a számot ki szeretnénk olvasni az URL-ből
@@ -120,7 +120,7 @@ As you can see, we're now assigning a `view` called `post_list` to the `^$` URL.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. Ez lehet ugyanaz, mint a view neve, de lehet teljesen más is. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Nézd meg a szerver konzol ablakot, hogy megtudja, miért.
 
 ![Hiba](images/error1.png)
 
