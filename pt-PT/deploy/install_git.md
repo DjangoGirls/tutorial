@@ -1,4 +1,4 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
+O Git é um "sistema de controle de versão" usado por muitos programadores. Este software pode rastear as mudanças nos arquivos ao longo do tempo para que possas recuperar as versões específicas mais tarde. A bit like the "track changes" feature in Microsoft Word, but much more powerful.
 
 ## Installing Git
 
