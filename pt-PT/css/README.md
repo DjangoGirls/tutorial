@@ -86,9 +86,9 @@ Num arquivo CSS nós determinamos estilos para os elementos do arquivo HTML. A p
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Podes ler mais sobre [Seletores CSS no w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+Nós também precisamos dizer ao nosso template HTML que adicionamos algum CSS. Abre o arquivo `blog/templates/blog/post_list.html` e adiciona esta linha bem no inicio dele:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Estamos apenas a carregar os arquivos estáticos aqui. :) Entre as tags `<head>` e `</head>`, depois dos links para os arquivos CSS do Bootstrap, adiciona esta linha:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+O navegador lê os arquivos na ordem em que são dados, então precisamos de ter a certeza de que isso está no sitio certo. Caso contrário, o código no nosso arquivo pode ser sobrescrito pelo código dos arquivos do Bootstrap. Acabamos de dizer ao nosso template onde se encontra o nosso arquivo CSS.
 
-Your file should now look like this:
+O teu arquivo deverá ficar parecido como isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,7 +135,7 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+OK, guarda o arquivo e atualiza o site!
 
 ![Figura 14.2](images/color2.png)
 
