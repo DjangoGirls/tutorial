@@ -8,7 +8,7 @@ Az URL egyszerűen csak egy webes cím. You can see a URL every time you visit a
 
 ![Url](images/url.png)
 
-Az interneten minden oldalnak szüksége van egy saját URL-re. This way your application knows what it should show to a user who opens that URL. A Django-ban egy `URLconf` nevű dolgot használunk (URL configuration, vagyis URL beállítások). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Az interneten minden oldalnak szüksége van egy saját URL-re. Így az alkalmazás tudja, mi kell mutatni, hogy egy felhasználó, aki megnyitja ezt az URL-címet. A Django-ban egy `URLconf` nevű dolgot használunk (URL configuration, vagyis URL beállítások). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
 
 ## Hogy működnek az URL-ek a Django-ban?
 
@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Mint látható, a Django már valamit nekünk.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
@@ -47,13 +47,13 @@ This line means that for every URL that starts with `admin/`, Django will find a
 
 Kíváncsi vagy, hogyan párosítja össze a Django az URL-eket és a view-kat? Na, ez a rész trükkös. A Django `regex`-et használ (a "regular expressions", vagyis reguláris kifejezések rövidítése). A regexnek nagyon (nagyon!) sok szabálya van arra, hogy hogyan épít fel egy keresési mintázatot. Mivel a regex egy magasabb szintű téma, most nem megyünk bele a részletekbe.
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
+Ha még mindig szeretnéd, hogy megértsük, hogyan hoztuk létre a mintákat, itt egy példa a folyamat – csak egy korlátozott részét a szabályokat, hogy kifejezze a minta keresünk, nevezetesen:
 
-* `^` for the beginning of the text
+* `^` az elején a szöveg
 * `$` for the end of the text
 * `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
+* `+` azt jelzi, hogy az előző tételt meg kell ismételni, legalább egyszer
+* `()` elfog a minta része
 
 Anything else in the URL definition will be taken literally.
 
