@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Então envolve o código HTML que exibe os posts com declarações de classes. Substitui isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -269,7 +269,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+no `blog/templates/blog/post_list.html` por isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,13 +291,13 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Guarda esses arquivos e atualiza o teu site.
 
 ![Figura 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Está incrível, certo? Olha para o código que acabamos de colar para encontrar os locais onde adicionamos as classes no HTML e as usamos no CSS. Onde é que farias a mudança se tu quisesses a data na cor turquesa?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Não tenhas medo de ajustar um pouco com este CSS e de tentar mudar algumas coisas. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
