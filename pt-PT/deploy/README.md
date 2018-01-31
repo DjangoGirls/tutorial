@@ -1,8 +1,8 @@
 # Implantar!
 
-> **Nota** O capítulo seguinte pode ser às vezes um bocado difícil de completar. Persiste e termina-o; A implantação é uma parte importante do processo de desenvolvimento do website. Colocar o teu website on-line é um bocado mais complicado, por isso este capítulo encontra-se no meio do tutorial para que o teu treinador te possa ajudar nesta tarefa. This means you can still finish the tutorial on your own if you run out of time.
+> **Nota** O capítulo seguinte pode ser às vezes um bocado difícil de completar. Persiste e termina-o; A implantação é uma parte importante do processo de desenvolvimento do website. Colocar o teu website on-line é um bocado mais complicado, por isso este capítulo encontra-se no meio do tutorial para que o teu treinador te possa ajudar nesta tarefa. Isto significa que ainda podes terminar o tutorial por conta própria se ficares sem tempo.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Até agora, o teu website só estava disponível no teu computador. Agora vais aprender como implantá-lo! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
 As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
