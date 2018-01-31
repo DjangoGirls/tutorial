@@ -178,9 +178,9 @@ h1 a {
 
 Excelente!
 
-Como mencionado acima, o CSS tem um conceito de classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Como mencionado acima, o CSS tem um conceito de classes. Estas permitem que nomeies uma parte do código HTML e apliques estilos apenas para esta parte, sem afetar outras partes. Isto pode ser super útil! Talvez tenhas duas divs que estão a fazer algo diferente (como o teu cabeçalho e o teu post). Uma classe pode ajudar-te a fazê-los parecer diferentes.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Vái em frente e o nomeia algumas partes do código HTML. Adiciona uma classe chamada `page-header` para o teu `div` que contém o cabeçalho, assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+E agora, adiciona uma classe `post` na tua `div` que contém um post de blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Agora iremos adicionar blocos de declaração a seletores diferentes. Seletores começando com `.` referem-se às classes. Existem vários manuais de instruções e explicações excelentes sobre CSS na Web que podem te ajudar a entender melhor o seguinte código. Por enquanto, basta copiar e colá-lo no teu arquivo `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
