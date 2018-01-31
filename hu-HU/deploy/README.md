@@ -229,7 +229,7 @@ $ source myvenv/bin/activate
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. A statikus fájlokról többet is tanulsz majd a tutorial során, amikor a CSS-t fogod szerkeszteni a honlapodhoz.
+The `StaticFilesHandler` is for dealing with our CSS. Ez gondoskodni automatikusan során a helyi fejlesztési által a `fussszerver` parancs. A statikus fájlokról többet is tanulsz majd a tutorial során, amikor a CSS-t fogod szerkeszteni a honlapodhoz.
 
 Nyomd meg a **Save** (Mentés) gombot, majd menj vissza a **Web** fülre.
 
@@ -239,11 +239,11 @@ Kész is vagyunk! Nyomd meg a nagy zöld **Reload** gombot, és máris meg fogod
 
 Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely, ahol információt kaphatsz a debuggoláshoz, az **error log**. Ehhez a PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/)-ján találod meg a linket. Nézd meg, hogy van-e benne bármilyen hibaüzenet; a legfrissebbek lesznek alul. Gyakran előforduló problémák:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+- Megfeledkezve egy lépést tettünk a konzol: creating a virtualenv, aktiválása, telepítése Django, vándorolnak az adatbázisban.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Hibát követ el az a virtualenv utat a Web lap – általában egy kis piros hibaüzenet jelenik meg, ha van egy probléma.
 
-- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
+- Hibát követ el az a WSGI konfigurációs fájl – volt az út, hogy az az-elso-blog mappát, igaz?
 
 - Ugyanazt a Python verziót választottad a virtualenved számára, mint az alkalmazásodhoz? Mindkettőnek a 3.6-esnek kell lennie.
 
@@ -253,8 +253,8 @@ There are also some [general debugging tips on the PythonAnywhere wiki](https://
 
 # Él a weboldalad!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Add hozzá az `/admin/`-t az URL végéhez, és az adminfelületre kerülsz. Jelentkezz be a felhasználóneveddel és a jelszavaddal, és látni fogod, hogy itt is tudsz új Postokat létrehozni.
+Az alapértelmezett oldal a webhelyen kell mondani, hogy "sikerült!", csak úgy, mint a helyi számítógépen. Add hozzá az `/admin/`-t az URL végéhez, és az adminfelületre kerülsz. Jelentkezz be a felhasználóneveddel és a jelszavaddal, és látni fogod, hogy itt is tudsz új Postokat létrehozni.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). Itt meg kell dolgozni a helyi beállítási változtatásokat. Ez egy közös munkafolyamat a webfejlesztés – módosításokat helyben, nyomja meg azok a változások, hogy a GitHub, majd húzza a módosítások le, hogy az élő Web-szerver. Ez lehetővé teszi, hogy a munka, kísérlet, anélkül, hogy elszakadna a live webhelyen. Pretty cool, huh?
 
 Megérdemelsz egy *HATALMAS* vállveregetést! A szerver deployment a webfejlesztés legbonyolultabb részei közé tartozik, és a fejlesztők gyakran napokat töltenek azzal, hogy mindent működésre bírjanak. De neked most komolyan van egy működő weboldalad, az Interneten, és nem is tartott sokáig megcsinálni!
