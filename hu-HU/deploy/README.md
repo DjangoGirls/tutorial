@@ -12,7 +12,7 @@ Ez a három helyen lesz fontos. A helyi számítógép lesz az a hely, ahol fejl
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **megjegyzés** Ha már a Telepítési lépéseket, nem kell ezt még egyszer – ugrás a következő részt, majd kezdeni a Git repository.
 
 {% include "/deploy/install_git.md" %}
 
@@ -30,7 +30,7 @@ A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Inicializálása a git repository-valamit tennünk kell, csak, ha egy projekt (nem kell újra adja meg a felhasználó nevét, e-mail soha többé).
 
 A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen a mappán belül. De vannak bizonyos fájlok, amiket nem szeretnénk figyelembe venni. Ezt úgy tehetjük meg, hogy létrehozunk egy fájlt `.gitignore` névvel a gyökérkönyvtárban. Nyisd meg a szövegszerkesztőt és hozz létre egy új fájlt, amibe az alábbi sorok kerülnek:
 
@@ -47,11 +47,11 @@ A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen 
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Megjegyzés** Nagyon fontos, hogy a fájl neve ponttal kezdődjön! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Megjegyzés** Nagyon fontos, hogy a fájl neve ponttal kezdődjön! Ha nehezen létrehozása (Mac nem tetszik, hogy hozzon létre fájlokat, hogy kezdődik egy dot keresztül a Finder, például), akkor használja a "Mentés másként" funkciót a szerkesztő; golyóálló.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Ez a fájl a helyi adatbázis, ahol az összes hozzászólás tárolja. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Akárhogy is, figyelmen kívül hagyva az SQLite adatbázis a GitHub példányt, ez azt jelenti, hogy az összes hozzászólás létrehozott olyan messze vannak, hogy csak akkor áll rendelkezésre, helyben, de azt kell, hogy vegye fel őket újra a termelés. Meg kell gondolni, a helyi adatbázis, mint egy jó játszótér, ahol ki lehet próbálni más dolgokat pedig ne félj, hogy akarsz törölni az igazi hozzászólás, a blogot.
 
-Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint ezen kívül még bármikor, ha tudni szeretnéd, hogy mi változott. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint ezen kívül még bármikor, ha tudni szeretnéd, hogy mi változott. Ez segít megelőzni semmilyen meglepetés történik, mint a rossz fájlokat, hogy ki vagy követett el. A `git állapota` parancs visszatér információt bármely untracked/módosított/megrendezett fájlokat, a fióktelep állapota, valamint sokkal több. A kimenet az alábbihoz hasonló:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,11 +89,11 @@ Végül mentsük le a változtatásokat. A konzolban futtasd le a következő pa
     
     Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Then, create a new repository, giving it the name "my-first-blog". Hagyja a "inicializálni egy README" jelölőnégyzetet bejelölve hagyja a .gitignore lehetőség üres (már megtettük kézzel), majd hagyja, hogy a Licenc Nem.
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. Talán könnyebb, hogy csak maradjon a neve `az-elso-blog`.
     
     On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
     
@@ -183,7 +183,7 @@ $ source myvenv/bin/activate
 
     <br />## Publishing our blog as a web app
     
-    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
+    Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. Készen állunk, hogy tegye közzé, mint egy web app!
     
     Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
     
