@@ -64,7 +64,7 @@ Stwórzmy teraz plik CSS, aby dodać nasze własne style do naszej strony www. S
 
 Czas, by napisać trochę styli CSS! Otwórz `blog/static/css/blog.css` w Twoim edytorze kodu.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Nie będziemy zbytnio zagłębiać się w dostosowywanie i uczenie się o CSS tutaj. Jeśli chcesz dowiedzieć się więcej, istnieje rekomendacja dotycząca darmowego kursu CSS na końcu tej strony.
 
 Jednak nauczmy się chociaż troszkę. Może moglibyśmy zmienić kolor naszego nagłówka? Do rozpoznawania kolorów komputery używają specjalnych kodów. Kody te zaczynają się od znaku `#`, po którym następuje 6 liter (A-F) lub cyfr (0-9). Na przykład kod dla koloru niebieskiego to `#0000FF`. Kody dla wielu kolorów możesz znaleźć na stronie: http://www.colorpicker.com/. Możesz również użyć uprzednio [zdefiniowanych kolorów](http://www.w3schools.com/colors/colors_names.asp), takich jak `red` (czerwony) czy `green ` (zielony).
 
