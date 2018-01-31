@@ -54,4 +54,4 @@ Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustaw
 
 Jeśli chcesz dowiedzieć się więcej o administratorze Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Jest to prawdopodobnie dobry moment, aby wziąć kawę (lub herbatę) lub coś do jedzenia, aby ponownie naładować się energią. Stworzyłaś swój pierwszy model Django - zasługujesz na małą przerwę!
