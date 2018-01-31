@@ -553,7 +553,7 @@ There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+De a Python, hogy ezt megértsük, meg kell, hogy mindig írni, hogy "Valódi" (első betű nagybetű, a többi betű kisbetűvel). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
 A Booleanok is lehetnek változók! Nézd:
 
@@ -809,9 +809,9 @@ A Python sorban mindegyik feltételt megnézi, és kiírja:
 
 ## Comments
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Hozzászólások vonalak kezdve `#`. te is írj, amit akarsz után `#` pedig Piton figyelmen kívül hagyja. Hozzászólások lehet, hogy a kód könnyebb a más emberek számára, hogy megértsék.
 
-Let's see how that looks:
+Lássuk, hogy néz ki:
 
 {% filename %}python_intro.py{% endfilename %}
 
