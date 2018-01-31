@@ -2,13 +2,13 @@
 
 > **Nota** O capítulo seguinte pode ser às vezes um bocado difícil de completar. Persiste e termina-o; A implantação é uma parte importante do processo de desenvolvimento do website. Colocar o teu website on-line é um bocado mais complicado, por isso este capítulo encontra-se no meio do tutorial para que o teu treinador te possa ajudar nesta tarefa. Isto significa que ainda podes terminar o tutorial por conta própria se ficares sem tempo.
 
-Até agora, o teu website só estava disponível no teu computador. Agora vais aprender como implantá-lo! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Até agora, o teu website só estava disponível no teu computador. Agora vais aprender como implantá-lo! A implantação é o processo de publicar o teu aplicativo na Internet para que as pessoas possam finalmente ir e ver o teu app. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Como aprendeste, um website tem de estar localizado num servidor. Existe na internet muitos fornecedores de servidor disponíveis, vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnyWhere é grátis para pequenas aplicações que não possuem muitos visitantes, então ele será por enquanto suficiente para ti.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora tu também!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Estes três locais serão importantes para ti. O teu computador local será o local onde tu fazes o desenvolvimento e os testes. Quando estiveres feliz com as mudanças, irás colocar uma cópia do teu programa no GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
