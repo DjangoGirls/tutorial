@@ -4,19 +4,19 @@ O nosso blog ainda parece muito feio, certo? Está na hora de o deixar melhor! P
 
 ## O que é CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Vê-la como uma maquilhagem para a nossa página web. :)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Mas nós não queremos começar novamente do zero, certo? Mais uma vez, vamos usar algo que outros programadores lançaram na Internet de gratuitamente. Tu sabes, que reinventar a roda não é divertido.
 
 ## Vamos usar o Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap é um dos frameworks HTML e CSS mais populares para desenvolver bonitos websites: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários espalhados por todo o mundo!
 
 ## Instalar o Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+Para instalares o Bootstrap, precisas de adicionar isto `<head>` no teu arquivo `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Isso não adiciona nenhum arquivo ao teu projeto. Isso apenas aponta para arquivos que existem na Internet. Vai em frente, abre o teu website e atualiza a página. Aqui está!
 
 ![Figura 14.1](images/bootstrap1.png)
 
