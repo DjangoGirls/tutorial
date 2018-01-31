@@ -1,6 +1,6 @@
-# Editor de texto
+# Editor de Código
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Para os leitores em casa: este capítulo é coberto no vídeo [Instalando Python & Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
 Estás prestes a escrever a tua primeira linha de código, pelo que está na hora de descarregares um editor!
 
