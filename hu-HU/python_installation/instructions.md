@@ -12,7 +12,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Ne felejtsd el hozzáadni a Pythont a Path-hoz](../python_installation/images/python-installation-options.png)
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+A közelgő lépéseket, akkor használja a Windows Parancssor (ami majd azt is elmesélem). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
@@ -103,4 +103,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Néha a dolgok nem mennek teljesen simán, és jobb megkérdezni valakit, akinek több tapasztalata van a témában.
+Ha kétségei vannak, vagy, ha valami rosszul sikerült, s fogalmad sincs, mi a következő teendő, kérjük, az edző! Néha a dolgok nem mennek teljesen simán, és jobb megkérdezni valakit, akinek több tapasztalata van a témában.
