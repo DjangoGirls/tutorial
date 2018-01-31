@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać kod do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby był nieco większy.
 
 ### Środowisko wirtualne
 
