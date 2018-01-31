@@ -4,7 +4,7 @@
 > 
 > Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. A django-marcador tutorial jogait, Markus Zapke-Gründemann és társai birtokolják.
 
-We're going to create a small blog!
+Létre fogunk hozni egy kis blog!
 
 Az első lépés, hogy indítsunk egy új Django projektet. Ez annyit jelent, hogy lefuttatunk néhány scriptet, amit a Django tartalmaz, ezzel létrehozzuk a projekt vázát. Ez tulajdonképpen néhány mappa és fájl, amit majd később fogunk használni.
 
@@ -67,7 +67,7 @@ Most ne foglalkozzunk a többi fájllal, mert azokat nem fogjuk módosítani. Az
 
 Változtassunk meg néhány dolgot a `mysite/settings.py` fájlban. Nyisd meg a fájlt a kódszerkesztővel, amit korábban telepítettél!
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Azt is megteheti, hogy nyissa meg a fájlt navigálva a djangogirls mappát az asztalon jobb egérgombbal kattintva. Ezután válassza ki a kódszerkesztő a listából. Kiválasztja a szerkesztő fontos lehet, hogy más programokat telepíteni, hogy nyissa meg a fájlt, de nem engedi szerkeszteni.
 
 Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
