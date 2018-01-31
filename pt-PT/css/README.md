@@ -139,7 +139,7 @@ OK, guarda o arquivo e atualiza o site!
 
 ![Figura 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Bom trabalho! Talvez nós também queiramos dar um pouco de ar ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Adiciona isto ao teu CSS, guarda o arquivo e vê como ele funciona!
 
 ![Figura 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Talvez nós possamos personalizar a fonte no nosso cabeçalho? Cola isto no teu `<head>` no `blog/templates/blog/post_list.html` arquivo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +161,9 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Assim como antes, verifica a ordem e coloca-a antes do link em `blog/static/css/blog.css`. Esta linha importará do Google Fonts (https://www.google.com/fonts) uma fonte chamada *Lobster*.
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Encontra o bloco de declaração `h1 a` (o código entre chaves `{` e `}`) no arquivo CSS `blog/static/css/blog.css`. Agora adiciona a linha `font-family: 'Lobster';` entre as chaves e atualiza a página:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -176,9 +176,9 @@ h1 a {
 
 ![Figura 14.3](images/font.png)
 
-Great!
+Excelente!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Como mencionado acima, o CSS tem um conceito de classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
