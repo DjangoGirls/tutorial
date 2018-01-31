@@ -64,9 +64,9 @@ Vamos criar agora um arquivo CSS, para adicionar o teu próprio estilo à tua p�
 
 Está na altura de escrever CSS! Abre o ficheiro `blog/static/css/blog.css` no teu editor de código.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Não vamos aprofundar muito a personalização e aprendizagem sobre CSS aqui. Existe no final desta página uma recomendação para um curso gratuito de CSS, caso pretendas aprender mais.
 
-Mas vamos fazer pelo menos um pouco disto. Talvez mudar a cor do cabeçalho? Para perceber cores, os computadores usam códigos especiais. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Também podes usar [cores pré-definidas](http://www.w3schools.com/colors/colors_names.asp), como `red` (vermelho), e `green` (verde.
+Mas vamos fazer pelo menos um pouco disto. Talvez mudar a cor do cabeçalho? Para perceber cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para a cor azul é `#0000FF`. Podes encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Também podes usar [cores pré-definidas](http://www.w3schools.com/colors/colors_names.asp), como `red` (vermelho), e `green` (verde.
 
 Adiciona o seguinte código ao ficheiro `blog/static/css/blog.css`:
 
@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` é um selector de CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` é um selector de CSS. Isto significa que estamos a aplicar os nossos estilos para qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos a dizer para mudar a cor para `#FCA205`, que é laranja. Mas é claro que tu podes colocar a cor que tu quiseres aqui!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Num arquivo CSS nós determinamos estilos para os elementos do arquivo HTML. A primeira forma de identificar elementos é pelo o nome do elemento. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
