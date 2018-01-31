@@ -8,19 +8,19 @@ Como aprendeste, um website tem de estar localizado num servidor. Existe na inte
 
 O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora tu também!
 
-Estes três locais serão importantes para ti. O teu computador local será o local onde tu fazes o desenvolvimento e os testes. Quando estiveres feliz com as mudanças, irás colocar uma cópia do teu programa no GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Estes três locais serão importantes para ti. O teu computador local será o local onde tu fazes o desenvolvimento e os testes. Quando estiveres feliz com as mudanças, irás colocar uma cópia do teu programa no GitHub. O teu website estará na PythonAnywhere e irás ter que o atualizar, ao obteres uma nova cópia do teu código do GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Nota** Se já fizeste todos os passos de instalação, não é necessário fazer isso novamente - Podes saltar para a próxima seção e começa a criar teu repositório no Git.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Iniciar o nosso repositório no Git
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+O Git controla as alterações para um determinado conjunto de arquivos que chamamos de repositório de código (ou "repo"). Vamos iniciar uma para nosso projeto. Abre o console e executa estes comandos, no diretório `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Nota**: Verifica o teu diretório de trabalho atual com um `pwd` (OSX/Linux) ou o comando `cd` (Windows) antes de inicializar o repositório. Deves estar na pasta `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
