@@ -64,7 +64,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo à sua pág
 
 Hora de escrever algum CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Não vamos aprofundar muito a personalização e aprendizagem sobre CSS aqui. Existe no final desta página uma recomendação para um curso gratuito de CSS, caso pretendas aprender mais.
 
 Mas vamos fazer pelo menos um pouco. Talvez possamos mudar a cor do nosso cabeçalho? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
 
