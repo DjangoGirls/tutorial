@@ -33,7 +33,7 @@ Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. ** Nie martw się, że nie widzisz hasła, które wpisujesz - tak powinno być. ** Po prostu wpisz je i naciśnij klawisz `Enter`, aby kontynuować. Dane wyjściowe powinny wyglądać tak (gdzie nazwa użytkownika i adres e-mail powinny być Twoje):
 
     Username: admin
     Email address: admin@admin.com
@@ -42,16 +42,16 @@ Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami,
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora, które wybrałaś; powinnaś zobaczyć panel administracyjny Django.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Przejdź do Postów i poeksperymentuj z nimi trochę. Dodaj pięć lub sześć wpisów na blogu. Nie przejmuj się zawartością - możesz po prostu skopiować i wkleić tekst z tego tutoriala, aby zaoszczędzić czas. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Jeśli chcesz dowiedzieć się więcej o administratorze Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
 This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
