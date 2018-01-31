@@ -33,11 +33,11 @@ Já está mais bonita!
 
 ## Ficheiros estáticos em Django
 
-Vamos finalmente ver em pormenor o que temos chamado **ficheiros estáticos**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Vamos finalmente ver em pormenor o que temos chamado **ficheiros estáticos**. Os arquivos estáticos são todos os teus CSS e imagens. O seu conteúdo não depende do contexto de requisição e será o mesmo para qualquer utilizador.
 
 ### Onde colocar os ficheiros estáticos no Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django, já sabe onde encontrar os arquivos estáticos para o app pré-instalado "admin". Agora só precisamos adicionar alguns arquivos estáticos para a nossa própria app, `blog`.
 
 Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
 
@@ -49,11 +49,11 @@ Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+O Django vai encontrar automaticamente quaisquer pastas chamadas "static" dentro de quaisquer pastas das tuas apps. Então ele será capaz de usar o seu conteúdo como arquivos estáticos.
 
 ## O teu primeiro ficheiro CSS!
 
-Let's create a CSS file now, to add your own style to your web page. Cria um novo directório chamado `css` dentro da tua pasta `static`. Depois cria um novo ficheiro chamado `blog.css` dentro da pasta `css`. Pronta?
+Vamos criar agora um arquivo CSS, para adicionar o teu próprio estilo à tua página web. Cria um novo directório chamado `css` dentro da tua pasta `static`. Depois cria um novo ficheiro chamado `blog.css` dentro da pasta `css`. Pronta?
 
     djangogirls
     └─── blog
