@@ -297,8 +297,8 @@ Guarda esses arquivos e atualiza o teu site.
 
 Woohoo! Está incrível, certo? Olha para o código que acabamos de colar para encontrar os locais onde adicionamos as classes no HTML e as usamos no CSS. Onde é que farias a mudança se tu quisesses a data na cor turquesa?
 
-Não tenhas medo de ajustar um pouco com este CSS e de tentar mudar algumas coisas. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Não tenhas medo de ajustar um pouco com este CSS e de tentar mudar algumas coisas. Brincar com o CSS pode ajudar-te a perceber quais as diferentes coisas se estão a fazer. Se partires alguma coisa, não te preocupes - tu podes sempre desfazê-lo!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+Nós realmente recomendamos a realização deste curso gratuito on-line: [Curso de HTML & CSS do Codeacademy](https://www.codecademy.com/tracks/web). Isso pode ajudar-te a aprender tudo sobre de como fazer os teus sites mais bonitos com CSS.
 
-Ready for the next chapter?! :)
+Pronto para o próximo capítulo?! :)
