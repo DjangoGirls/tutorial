@@ -822,7 +822,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Nem kell, hogy írj egy megjegyzést, hogy minden sor kód, de hasznos elmagyarázni, hogy miért a kódot csinál valamit, vagy amely egy összefoglaló, amikor csinál valamit összetett.
 
 ### Összefoglaló
 
@@ -873,7 +873,7 @@ Note: if it didn't work, don't panic! The output will help you to figure why:
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Építsünk az első függvény paramétereit. Fogjuk használni az előző példa egy függvény, amely azt mondja, hogy 'szia', hogy a futtató személy – a neve:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -940,16 +940,16 @@ Futtasd le:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Na, mit gondolsz, mi fog történni, ha írsz egy másik neve? (Nem Ola vagy Sonja.) Próbáld meg, hátha neked van igazad. Ez nyomtassa ki ezt:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-Ez fantasztikus, nem? Így nem kell állandóan ismételned magad, ha meg szeretnéd változtatni az ember nevét, akinek a függvény köszön. And that's exactly why we need functions – you never want to repeat your code!
+Ez fantasztikus, nem? Így nem kell állandóan ismételned magad, ha meg szeretnéd változtatni az ember nevét, akinek a függvény köszön. Pontosan ezért van szükségünk funkciók – nem akarom, hogy ismételje meg a kódot!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Csináljunk valami okosabb – több nevek, mint két írás egy olyan állapot, minden nehéz lenne, igaz?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -994,7 +994,7 @@ Mindegyiküket üdvözölni szeretnénk. Ehhez már megvan a `hi` függvényünk
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The ```for``` statement behaves similarly to the ```if``` nyilatkozat; alábbi kódot mindkét kell tagolt négy terek.
 
 Itt a teljes kód, ami a fájlban lesz:
 
@@ -1051,7 +1051,7 @@ Ezt kapjuk:
 
 A `range` függvény létrehoz egy egymás után következő számokból álló listát (ezeket a számokat te adod meg paraméterként).
 
-Figyeld meg, hogy a két szám közül a második már nincs benne a listában, amit a Python visszaad (vagyis a `range(1, 6)` 1-től 5-ig számol, de nem tartalmazza a 6-ot). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Figyeld meg, hogy a két szám közül a második már nincs benne a listában, amit a Python visszaad (vagyis a `range(1, 6)` 1-től 5-ig számol, de nem tartalmazza a 6-ot). Ez azért van, mert a "tartomány" a félig nyitott, ami azt jelenti, hogy magában foglalja az első érték, de nem az utolsó.
 
 ## Összefoglaló
 
@@ -1059,6 +1059,6 @@ Meg is vagyunk. **Szuper vagy!** Ez egy nehéz fejezet volt, büszke lehetsz mag
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Érdemes röviden valami mást – szakaszon, sétálni egy kicsit, pihentesse a szemét–, mielőtt a következő fejezet. :)
 
 ![Cupcake](images/cupcake.png)
