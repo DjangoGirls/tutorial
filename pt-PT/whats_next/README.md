@@ -18,8 +18,8 @@ Mais à frente, podes experimentar os recursos listados abaixo. São todos muito
 - [Tutoriais do New Coder](http://newcoder.io/tutorials/)
 - [Curso de Python do Code Academy](https://www.codecademy.com/en/tracks/python)
 - [Curso de HTML & CSS do Code Academy](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Tutorial do Django Carrots](https://github.com/ggcarrots/django-carrots)
+- [Aprenda com o livro Python da Forma Difícil](http://learnpythonthehardway.org/book/)
+- [Vídeo aulas Iniciando com Django](http://www.gettingstartedwithdjango.com/)
 - [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
