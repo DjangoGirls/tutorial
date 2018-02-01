@@ -4,11 +4,11 @@
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. 从[Chrome商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp) 安装Cloud 9
 2. Go to [c9.io](https://c9.io)
 3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
+4. 单击 * Create a New Workspace *
+5. 将其命名为*django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
@@ -20,11 +20,11 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### 虚拟环境
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+虚拟环境 (也称为 virtualenv) 就像一个私人的盒子, 我们可以为正在做的项目提供有用的计算机代码。 我们使用虚拟环境来分隔各种不同项目的代码的不同部分, 避免在项目之间混淆。
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+在Cloud 9 的底部的终端中，进行以下操作
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -49,7 +49,7 @@ Next, run:
 
 ### Github
 
-Make a [Github](https://github.com) account.
+创建一个[ Github](https://github.com)账户
 
 ### PythonAnywhere
 
