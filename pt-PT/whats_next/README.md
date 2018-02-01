@@ -2,22 +2,22 @@
 
 Parabéns! Tu és **demais**. Estamos orgulhosos! <3
 
-### What to do now?
+### O que fazer agora?
 
-Take a break and relax. You have just done something really huge.
+Faz um intervalo e relaxa. Tu acabaste de fazer algo realmente enorme.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Depois disso, confirma se estás a seguir o Django Girls no [Facebook](http://facebook.com/djangogirls) ou no [Twitter](https://twitter.com/djangogirls) para te manteres atualizado.
 
-### Can you recommend any further resources?
+### Podes recomendar outro tipo de recursos adicionais?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Sim! Primeiro, vai em frente e experimenta o nosso outro livro, chamado [Django Girls Tutorial: extensões](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
 
-Later on, you can try the resources listed below. They're all very recommended!
+Mais à frente, podes experimentar os recursos listados abaixo. São todos muito recomendados!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
+- [Tutorial oficial do Django](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Tutoriais do New Coder](http://newcoder.io/tutorials/)
+- [Curso de Python do Code Academy](https://www.codecademy.com/en/tracks/python)
+- [Curso de HTML & CSS do Code Academy](https://www.codecademy.com/tracks/web)
 - [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
