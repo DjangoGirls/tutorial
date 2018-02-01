@@ -12,11 +12,11 @@ Como todas as coisas desconhecidas, isto vai ser uma aventura - mas não te preo
 
 ## Introdução
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Já pensaste como criar um site, mas nunca tiveste motivação suficiente para começar? Alguma vez achaste que o mundo do software é demasiado complicado para tentares fazer alguma coisa autonomamente?
+Já alguma vez sentiste que o mundo é cada vez mais e mais sobre tecnológia para a qual (ainda) não te encontras familiarizado? Já pensaste como criar um site, mas nunca tiveste motivação suficiente para começar? Alguma vez achaste que o mundo do software é demasiado complicado para tentares fazer alguma coisa autonomamente?
 
 Bem, então temos boas notícias para ti! Programar não é tão difícil como parece e queremos mostrar-te como pode ser divertido.
 
-This tutorial will not magically turn you into a programmer. Se queres ser bom nisso, precisas de meses ou mesmo anos de aprendizagem e de prática. Mas queremos mostrar-te que programar ou criar websites não é tão complicado como parece. Vamos tentar explicar diferentes as diferentes partes tão bem quanto conseguirmos, de forma a que não te sintas intimidado pela tecnologia.
+Este tutorial não te irá transformar magicamente num programador. Se queres ser bom nisso, precisas de meses ou mesmo anos de aprendizagem e de prática. Mas queremos mostrar-te que programar ou criar websites não é tão complicado como parece. Vamos tentar explicar diferentes as diferentes partes tão bem quanto conseguirmos, de forma a que não te sintas intimidado pela tecnologia.
 
 Esperamos conseguir que gostes tanto de tecnologia como nós!
 
