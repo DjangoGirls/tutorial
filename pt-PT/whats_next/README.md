@@ -21,5 +21,5 @@ Mais à frente, podes experimentar os recursos listados abaixo. São todos muito
 - [Tutorial do Django Carrots](https://github.com/ggcarrots/django-carrots)
 - [Aprenda com o livro Python da Forma Difícil](http://learnpythonthehardway.org/book/)
 - [Vídeo aulas Iniciando com Django](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Livro Duas Colheres de Django 1.11: As Melhores Práticas para o Framework Web Django](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Aprenda Como Construir uma Aplicação Web ](https://hellowebapp.com/) - também podes solicitar uma licença de eBook gratuita entrando em contato com a autora Tracy Osborn em <tracy@limedaring.com>
