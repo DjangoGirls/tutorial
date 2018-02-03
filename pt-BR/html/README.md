@@ -2,13 +2,13 @@
 
 Você pode se perguntar: e o que é um template?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template é um arquivo que nós podemos reutilizar para apresentar diferentes informações em um formato consistente - por exemplo, você pode usar um template para te ajudar a escrever uma carta, pois mesmo que cada carta possa conter mensagens diferentes e ser endereçada a pessoas diferentes, elas estarão compartilhando o mesmo formato.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
 ## O que é HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML é um código interpretado pelo seu navegador - como Chromo, Firefox ou Safari - para exibir uma página web ao usuário.
 
 HTML significa "HyperText Markup Language". **HiperText** significa que é um tipo de texto que suporta hiperlinks entre páginas. **Marcação** nada mais é que marcar um documento com códigos que dizem para alguém (nesse caso, o navegador web) como a página deverá ser interpretada. Código em HTML é feito com **tags**, cada uma começando com `<` e terminando com `>`. Estas tags representam **elementos de marcação**.
 
