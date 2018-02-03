@@ -18,7 +18,7 @@ Agora a sua tela deve exibir uma interface com uma barra lateral, uma grande jan
     seunomedeusuário:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Esta área inferior é seu *terminal*, onde você vai dar as instruções para o computador que o Cloud 9 preparou para você. Você pode redimensionar a janela para torná-la um pouco maior.
 
 ### Ambiente Virtual
 
