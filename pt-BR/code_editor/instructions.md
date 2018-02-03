@@ -10,13 +10,13 @@ Gedit é um editor open-source, gratuito, disponível para todos os sistemas ope
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text 2 é um editor muito popular com um período de avaliação gratuita e está disponível em vários sistemas operacionais.
 
 [Baixe-o aqui](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+O Atom é um editor de código extremamente novo, criado pelo [GitHub](https://github.com/). Ele é gratuito, de código aberto e está disponível para Windows, OS X e Linux.
 
 [Baixe-o aqui](https://atom.io/)
 
