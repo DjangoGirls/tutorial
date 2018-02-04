@@ -26,7 +26,7 @@ Als je de Gids hebt doorlopen, zul je een kleine, maar echt werkende web-applica
 
 Het gaat er (ongeveer) zo uit zien:
 
-![Figure 0.1](images/application.png)
+![Figuur 0.1](images/application.png)
 
 > Als je de Gids in je eentje doorneemt en je geen coach bij de hand hebt die je kan helpen in geval van problemen, dan hebben we een chat systeem voor je:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We hebben onze coaches en eerdere deelnemers gevraagd om daar af en toe beschikbaar te zijn om anderen te helpen met de Gids! Aarzel niet om je vraag daar te stellen!
 
@@ -34,9 +34,9 @@ OK, [laten we bij het begin beginnen...](./how_the_internet_works/README.md)
 
 ## Thuis deze gids volgen
 
-Het is vet om deel te nemen aan een Django Girls workshop, maar we realiseren ons dat het niet altijd mogelijk is om er eentje bij te wonen. Daarom moedigen we je dan ook aan om te proberen deze Gids thuis te doorlopen. Voor de thuislezers zijn we momenteel bezig met het maken van videos die het gemakkelijker maken de Gids in je eentje door te werken. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Het is vet om deel te nemen aan een Django Girls workshop, maar we realiseren ons dat het niet altijd mogelijk is om er eentje bij te wonen. Daarom moedigen we je dan ook aan om te proberen deze Gids thuis te doorlopen. Voor de thuislezers zijn we momenteel bezig met het maken van videos die het gemakkelijker maken de Gids in je eentje door te werken. Het is nog niet helemaal klaar, maar binnenkort worden er steeds meer onderwerpen behandeld op het [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube kanaal.
 
-In every chapter already covered, there is a link that points to the correct video.
+In elk hoofdstuk waarvoor er een video is, staat er een link daarnaartoe.
 
 ## Gids-onderhoud en -bijdragen
 
@@ -48,4 +48,4 @@ Momenteel worden vertalingen gedaan op het crowdin.com platform op:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Als jouw taal [er](https://crowdin.com/) niet wordt genoemd, maak dan een [nieuwe melding](https://github.com/DjangoGirls/tutorial/issues/new) aan waarin je ons die taal meldt, dan voegen wij die toe.
+Als jouw taal niet wordt genoemd op [Crowdin](https://crowdin.com/), maak dan een [nieuwe melding](https://github.com/DjangoGirls/tutorial/issues/new) aan waarin je ons die taal meldt, dan voegen wij die toe.
