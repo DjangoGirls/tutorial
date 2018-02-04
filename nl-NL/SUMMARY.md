@@ -1,4 +1,4 @@
-# Summary
+# Overzicht
 
 * [Introductie](README.md)
 * [Installatie](installation/README.md)
@@ -23,5 +23,5 @@
 * [CSS - Maak het mooi](css/README.md)
 * [Sjabloonuitbreidingen](template_extending/README.md)
 * [Applicatie-uitbreidingen](extend_your_application/README.md)
-* [Django Forms](django_forms/README.md)
-* [What's next?](whats_next/README.md)
+* [Django formulieren](django_forms/README.md)
+* [En nu?](whats_next/README.md)
