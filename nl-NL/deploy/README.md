@@ -20,7 +20,7 @@ Deze drie diensten zijn belangrijk. Je eigen (lokale) computer is de plek waar j
 
 Git houdt wijzigingen in een bepaalde set bestanden bij in wat een code 'repository' (oftewel "repo" in het kort) als een soort bewaarplaats. Laten we er één creëren voor ons project. Open je console en draai de volgende commando's, in de `djangogirls` map:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Controleer of je in de goede map zit te werken met een `pwd` (Mac OS X/Linux) of `cd` (Windows) commando voordat je de repository creëert. Je zou in de `djangogirls` map moeten zitten.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,9 +30,9 @@ Git houdt wijzigingen in een bepaalde set bestanden bij in wat een code 'reposit
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Je hoeft slechts één keer per project een git repository te creëren (en je hoeft nooit meer je gebruikersnaam en e-mail in te vullen).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git houdt alle wijzigingen in alle bestanden en mappen in deze map bij, maar er zijn ook een paar bestanden die daarbij genegeerd mogen worden. We kunnen dit aangeven door een bestand genaamd `.gitignore` in de hoofdmap aan te maken. Open je editor en maak een nieuw bestand aan met de volgende inhoud:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -45,11 +45,11 @@ Git will track changes to all the files and folders in this directory, but there
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+En sla het op als `.gitignore` in de "djangogirls" map.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dat bestand is je lokale database, waar al je blogposts worden bewaard. We willen dit niet aan de repository toevoegen, omdat je website straks op PythonAnywhere een andere database zal gebruiken. Die database zou SQLite kunnen zijn, net als op je eigen laptop, maar normaal gesproken zul je MySQL gebruiken, wat veel meer bezoekers aankan dan SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
