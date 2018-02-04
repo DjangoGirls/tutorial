@@ -12,11 +12,11 @@ Zoals met alle onbekende dingen, gaat dit een ontdekkingsreis zijn - maar maak j
 
 ## Inleiding
 
-Heb je wel eens het gevoel gehad dat er in de wereld om je heen almaar meer technologie komt die je (nog) niet kunt bevatten? Heb je je wel eens afgevraagd hoe het zou zijn om een website te maken, maar toch niet genoeg motivatie om daarmee te beginnen? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Heb je wel eens het gevoel gehad dat er in de wereld om je heen almaar meer technologie komt die je (nog) niet kunt bevatten? Heb je je wel eens afgevraagd hoe het zou zijn om een website te maken, maar toch niet genoeg motivatie om daarmee te beginnen? Denk je soms wel eens dat computerprogramma's maken te moeilijk is voor jou, zodat je niet eens de puf hebt eens zelf te proberen?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Nou, hebben we goed nieuws voor je! Programmeren is helemaal niet zo moeilijk als het lijkt en wij willen je laten zien hoe leuk het kan zijn.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Deze gids zal je niet op slag veranderen in een programmeur. Als je er heel goed in wilt worden, heb je maanden, zo niet jaren, van leren en oefenen voor nodig. Maar wij willen je laten zien dat programmeren of het maken van websites niet zo lastig is als het lijkt. We zullen onze uiterste best doen om te proberen je de verschillende puzzelstukjes uit te leggen, zodat je je niet overwelmd hoeft te voelen door de technologie.
 
 We hope that we'll be able to make you love technology as much as we do!
 
