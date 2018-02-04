@@ -1,10 +1,10 @@
 # Uitrollen!
 
-> **Opmerking** Het volgende hoofdstuk kan soms een beetje moeilijk zijn om doorheen te komen. Zet door en maak het af. Software uitrollen is een belangrijk onderdeel van het ontwikkelingsprocess. Dit hoofdstuk staat in het midden van de tutorial zodat je je mentor om hulp kunt vragen met het online krijgen van je website, wat iets ingewikkelder is. Dit betekent dat je de tutorial later altijd nog zelf kunt afmaken als je tijd tekort komt.
+> **Opmerking** Het volgende hoofdstuk kan soms een beetje moeilijk zijn om doorheen te komen. Zet door en maak het af. Software uitrollen is een belangrijk onderdeel van het ontwikkelproces. Dit hoofdstuk staat in het midden van de tutorial zodat je je mentor om hulp kunt vragen met het online krijgen van je website, wat iets ingewikkelder is. Dit betekent dat je de tutorial later altijd nog zelf kunt afmaken als je tijd tekort komt.
 
 Tot nu toe was je website alleen maar beschikbaar op je eigen computer. Nu leer je hoe je je website kunt uitrollen! Uitrollen is het publiceren van jouw applicatie op het internet zodat mensen eindelijk jouw app kunnen zien. :)
 
-Zoals je geleerd hebt moet een website op een server geplaatst zijn. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Zoals je geleerd hebt moet een website op een server geplaatst zijn. Er zijn veel server providers beschikbaar op het internet. Wij zullen [PythonAnywhere](https://www.pythonanywhere.com/) gebruiken. PythonAnywhere is gratis voor kleine applicaties die niet zoveel bezoekers hebben, dus voor nu zal het voor jou voldoende zijn.
 
 De andere externe dienst die we zullen gebruiken is [GitHub](https://www.github.com), een code hosting dienst. Er zijn ook anderen beschikbaar, maar bijna alle programmeurs hebben tegenwoordig een GitHub account, en nu jij ook!
 
@@ -18,7 +18,7 @@ Deze drie diensten zijn belangrijk. Je eigen (lokale) computer is de plek waar j
 
 ## Het aanmaken van je Git repository
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git houdt wijzigingen in een bepaalde set bestanden bij in wat een code 'repository' (oftewel "repo" in het kort) als een soort bewaarplaats. Laten we er één creëren voor ons project. Open je console en draai de volgende commando's, in de `djangogirls` map:
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
