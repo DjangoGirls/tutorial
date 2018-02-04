@@ -22,13 +22,13 @@ We hopen dat het ons lukt om je net zo enthousiast over technologie te krijgen a
 
 ## Wat ga je leren in deze gids?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Als je de Gids hebt doorlopen, zul je een kleine, maar echt werkende web-applicatie hebben: je eigen blog. We zullen je laten zien hoe je die online zet zodat anderen je werk kunnen bewonderen!
 
-It will (more or less) look like this:
+Het gaat er (ongeveer) zo uit zien:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Als je de Gids in je eentje doorneemt en je geen coach bij de hand hebt die je kan helpen in geval van problemen, dan hebben we een chat systeem voor je:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
