@@ -18,9 +18,9 @@ Nou, hebben we goed nieuws voor je! Programmeren is helemaal niet zo moeilijk al
 
 Deze gids zal je niet op slag veranderen in een programmeur. Als je er heel goed in wilt worden, heb je maanden, zo niet jaren, van leren en oefenen voor nodig. Maar wij willen je laten zien dat programmeren of het maken van websites niet zo lastig is als het lijkt. We zullen onze uiterste best doen om te proberen je de verschillende puzzelstukjes uit te leggen, zodat je je niet overwelmd hoeft te voelen door de technologie.
 
-We hope that we'll be able to make you love technology as much as we do!
+We hopen dat het ons lukt om je net zo enthousiast over technologie te krijgen als wijzelf zijn!
 
-## What will you learn during the tutorial?
+## Wat ga je leren in deze gids?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
@@ -32,17 +32,17 @@ It will (more or less) look like this:
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Thuis deze gids volgen
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## About and contributing
+## Gids-onderhoud en -bijdragen
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Deze gids wordt bijgehouden door de [DjangoGirls](https://djangogirls.org/). Als je een foutje vindt of de gids wilt bijwerken, volg dan de richtlijnen om bij te dragen [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Zou je ons willen helpen om de gids te vertalen naar andere talen?
 
 Currently, translations are being kept on crowdin.com platform at:
 
