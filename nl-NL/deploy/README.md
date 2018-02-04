@@ -49,9 +49,9 @@ En sla het op als `.gitignore` in de "djangogirls" map.
 
 > **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan.
 > 
-> **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dat bestand is je lokale database, waar al je blogposts worden bewaard. We willen dit niet aan de repository toevoegen, omdat je website straks op PythonAnywhere een andere database zal gebruiken. Die database zou SQLite kunnen zijn, net als op je eigen laptop, maar normaal gesproken zul je MySQL gebruiken, wat veel meer bezoekers aankan dan SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dat bestand is je lokale database, waar al je blogposts worden bewaard. We willen dit niet aan de repository toevoegen, omdat je website straks op PythonAnywhere een andere database zal gebruiken. Die database zou SQLite kunnen zijn, net als op je eigen laptop, maar normaal gesproken zul je MySQL gebruiken, wat veel meer bezoekers aankan dan SQLite. Door de SQLite database te negeren voor de GitHub kopie zullen all blogposts die je tot nu toe geschreven hebt alleen maar lokaal beschikbaar zijn. Je zal ze voor de live website dus nog een keer moeten toevoegen. Zie je lokale database als een speeltuin waar je veel verschillende dingen kunt uitproberen, zonder dat je bang hoeft te zijn dat je al je echte posts perongeluk verwijdert van je blog.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Het is een goed idee om een `git status` commando te gebruiken voor `git add` of wanneer je niet meer helemaal zeker weet welke bestanden je ookalweer hebt gewijzigd. Dit voorkomt nare verrassingen, zoals het toevoegen en committen van verkeerde bestanden. Het `git status` commando weergeeft informatie over alle gewijzigde en klaargezette bestanden, de status van de 'tak' (branch) en nog veel meer. Het resultaat zou hierop moeten lijken:
 
 {% filename %}command-line{% endfilename %}
 
@@ -71,7 +71,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Als laatste stap slaan we onze wijzigingen op. Ga naar je console en draai de volgende commando's:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,21 +87,21 @@ And finally we save our changes. Go to your console and run these commands:
     
     ## Pushing your code to GitHub
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (Als je tijdens de workshop voorbereiding al een GitHub account hebt aangemaakt, super!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Vervolgens, creëer een nieuwe repository en geef het de naam "my-first-blog". Laat het vakje bij "initialize with a README" leeg, laat de .gitignore optie ook leeg (dat hebben we handmatig al gedaan) en laat de licentie staan op geen (None).
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Opmerking** De naam 'my-first-blog' is belangrijk. Je kunt natuurlijk iets anders kiezen, maar in de instructies hieronder zul je het vaak tegen komen, en je zou het dan elke keer moeten vervangen. Het is waarschijnlijk makkelijker om gewoon de naam 'my-first-blog' aan te houden.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    Op het volgende scherm zul je je repo's kloon URL vinden. Kies de "HTTPS" versie, kopiëer het, zodat je het straks in de terminal kunt plakken:
     
     <img src="images/github_get_repo_url_screenshot.png" />
     
-    Now we need to hook up the Git repository on your computer to the one up on GitHub.
+    Nu moeten we de GitHub repository op jouw computer nog koppelen aan die op GitHub.
     
-    Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+    Typ het volgende in op je console (vervang de '<your-github-username>' met de gebruikersnaam die je hebt gebruikt toen je je GitHub account aanmaakte, maar zonder de haakjes):
     
     {% filename %}command-line{% endfilename %}
     
