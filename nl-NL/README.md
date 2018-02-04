@@ -6,7 +6,7 @@
 
 ## Welkom
 
-Welkom bij de Django Girls Gids! We zijn blij je hier te zien :-) In deze gids nemen we je mee voor een kijkje achter de schermen van diverse webtechnologiën. We zullen een tipje van de sluier oplichten van alle dingen die er samen voor zorgen dat het web werkt zoals we het kennen.
+Welkom bij de Django Girls Gids! We zijn blij je hier te zien :-) In deze Gids nemen we je mee voor een kijkje achter de schermen van diverse webtechnologiën. We zullen een tipje van de sluier oplichten van alle dingen die er samen voor zorgen dat het web werkt zoals we het kennen.
 
 Zoals met alle onbekende dingen gaat dit een ontdekkingsreis zijn - maar maak je geen zorgen: aangezien je de moed al had om op dit punt te belanden, zal het je best lukken :-)
 
@@ -16,11 +16,11 @@ Heb je wel eens het gevoel gehad dat er in de wereld om je heen almaar meer tech
 
 Nou, hebben we goed nieuws voor je! Programmeren is helemaal niet zo moeilijk als het lijkt en wij willen je laten zien hoe leuk het kan zijn.
 
-Deze gids zal je niet op slag veranderen in een programmeur. Als je er heel goed in wilt worden, heb je maanden, zo niet jaren, van leren en oefenen voor nodig. Maar wij willen je laten zien dat programmeren of het maken van websites niet zo lastig is als het lijkt. We zullen onze uiterste best doen om te proberen je de verschillende puzzelstukjes uit te leggen, zodat je je niet overwelmd hoeft te voelen door de technologie.
+Deze Gids zal je niet op slag veranderen in een programmeur. Als je er heel goed in wilt worden, heb je maanden, zo niet jaren, van leren en oefenen voor nodig. Maar wij willen je laten zien dat programmeren of het maken van websites niet zo lastig is als het lijkt. We zullen onze uiterste best doen om te proberen je de verschillende puzzelstukjes uit te leggen, zodat je je niet overwelmd hoeft te voelen door de technologie.
 
 We hopen dat het ons lukt om je net zo enthousiast over technologie te krijgen als wijzelf zijn!
 
-## Wat ga je leren in deze gids?
+## Wat ga je leren in deze Gids?
 
 Als je de Gids hebt doorlopen, zul je een kleine, maar echt werkende web-applicatie hebben: je eigen blog. We zullen je laten zien hoe je die online zet zodat anderen je werk kunnen bewonderen!
 
@@ -28,13 +28,13 @@ Het gaat er (ongeveer) zo uit zien:
 
 ![Figure 0.1](images/application.png)
 
-> Als je de Gids in je eentje doorneemt en je geen coach bij de hand hebt die je kan helpen in geval van problemen, dan hebben we een chat systeem voor je:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Als je de Gids in je eentje doorneemt en je geen coach bij de hand hebt die je kan helpen in geval van problemen, dan hebben we een chat systeem voor je:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We hebben onze coaches en eerdere deelnemers gevraagd om daar af en toe beschikbaar te zijn om anderen te helpen met de Gids! Aarzel niet om je vraag daar te stellen!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK, [laten we bij het begin beginnen...](./how_the_internet_works/README.md)
 
 ## Thuis deze gids volgen
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Het is vet om deel te nemen aan een Django Girls workshop, maar we realiseren ons dat het niet altijd mogelijk is om er eentje bij te wonen. Daarom moedigen we je dan ook aan om te proberen deze Gids thuis te doorlopen. Voor de thuislezers zijn we momenteel bezig met het maken van videos die het gemakkelijker maken de Gids in je eentje door te werken. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
