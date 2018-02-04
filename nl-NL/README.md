@@ -8,7 +8,7 @@
 
 Welkom bij de Django Girls Gids! We zijn blij je hier te zien :-) In deze gids nemen we je mee voor een kijkje achter de schermen van diverse webtechnologiën. We zullen een tipje van de sluier oplichten van alle dingen die er samen voor zorgen dat het web werkt zoals we het kennen.
 
-Zoals met alle onbekende dingen, gaat dit een ontdekkingsreis zijn - maar maak je geen zorgen: aangezien je de moed al had om op dit punt te komen, zal het je best lukken :-)
+Zoals met alle onbekende dingen gaat dit een ontdekkingsreis zijn - maar maak je geen zorgen: aangezien je de moed al had om op dit punt te belanden, zal het je best lukken :-)
 
 ## Inleiding
 
@@ -40,12 +40,12 @@ In every chapter already covered, there is a link that points to the correct vid
 
 ## Gids-onderhoud en -bijdragen
 
-Deze gids wordt bijgehouden door de [DjangoGirls](https://djangogirls.org/). Als je een foutje vindt of de gids wilt bijwerken, volg dan de richtlijnen om bij te dragen [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Deze gids wordt bijgehouden door de [DjangoGirls](https://djangogirls.org/). Als je een foutje vindt of de gids wilt bijwerken, volg dan de [richtlijnen om bij te dragen](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Zou je ons willen helpen om de gids te vertalen naar andere talen?
 
-Currently, translations are being kept on crowdin.com platform at:
+Momenteel worden vertalingen gedaan op het crowdin.com platform op:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Als jouw taal [er](https://crowdin.com/) niet wordt genoemd, maak dan een [nieuwe melding](https://github.com/DjangoGirls/tutorial/issues/new) aan waarin je ons die taal meldt, dan voegen wij die toe.
