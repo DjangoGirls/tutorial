@@ -221,14 +221,14 @@ Now our code is on PythonAnywhere, our virtualenv is ready, and the database is 
 
 Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
 
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
+After confirming your domain name, choose the **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next, choose **Python 3.6**, and click Next to finish the wizard.
 
 > **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
 
 
 ### Setting the virtualenv
 
-You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
+You'll be taken to the PythonAnywhere config screen for your web app, which is where you'll need to go whenever you want to make changes to the app on the server.
 
 <img src="images/pythonanywhere_web_tab_virtualenv.png" />
 
@@ -263,7 +263,7 @@ application = StaticFilesHandler(get_wsgi_application())
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
+The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial when we edit the CSS for our site.
 
 Hit **Save** and then go back to the **Web** tab.
 
@@ -276,7 +276,7 @@ If you see an error when you try to visit your site, the first place to look for
 
 - Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there if there is a problem.
 
 - Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
