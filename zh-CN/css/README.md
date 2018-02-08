@@ -6,17 +6,17 @@
 
 层叠样式表 (Cascading Style Sheets) 是一种语言，用于描述使用标记语言 (如 HTML) 编写的网站的外观和格式。我们可以用它来给我们的网页“化妆” ;)。
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+但我们不会想要再重头来编写css的代码吧？我们将继续使用一些网上已有的免费资源。毕竟重造轮子并不好玩。
 
 ## 让我们用 Bootstrap 吧！
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的网站
 
 它最先是由 Twitter 的员工开发的。现在由来自世界各地的志愿者开发。
 
 ## 安装 Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+为了成功安装Bootstrap，你需要把以下代码写在你的`.html`文件的`<head>`部分中：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
