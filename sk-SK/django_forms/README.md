@@ -416,7 +416,7 @@ Zmeň ho na toto:
 {% endif %}
 ```
 
-Kede si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič. Načítaj stránku v inom prehliadači, alebo incognito okne (nazývané "InPrivate" vo Windows Edge) a uvidíš, že sa odkaz nezobrazuje a ikonka tiež nie!
+Kedže si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič. Načítaj stránku v inom prehliadači, alebo incognito okne (nazývané "InPrivate" vo Windows Edge) a uvidíš, že sa odkaz nezobrazuje a ikonka tiež nie!
 
 ## Ešte jedna vec: čas nasadiť aplikáciu!
 
