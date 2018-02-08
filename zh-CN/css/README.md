@@ -4,7 +4,7 @@
 
 ## 什么是 CSS？
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+层叠样式表 (Cascading Style Sheets) 是一种语言，用于描述使用标记语言 (如 HTML) 编写的网站的外观和格式。我们可以用它来给我们的网页“化妆” ;)。
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
