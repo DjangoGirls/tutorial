@@ -313,7 +313,7 @@ Chceli by sme otočiť poradie? Urobme to!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Ak chceš pridať niečo do svojho zoznamu, môžeš to urobiť zadaním tohto príkazu:
 
 {% filename %}command-line{% endfilename %}
 
