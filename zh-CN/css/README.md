@@ -161,7 +161,7 @@ body {
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+跟以前一样，我们需要确保代码的正确顺序。把这一行代码放在链接到`blog/static/css/blog.css`的代码之前。它会从 Google Fonts (https://www.google.com/fonts) 引入一个叫做 *Lobster* 的字体。
 
 Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
