@@ -1057,8 +1057,8 @@ Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda `range
 
 To je všetko. **Si úplne geniálna!** Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme rozhodne hrdí na teba, že si to zvládla až potiaľto!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Oficiálnu a plnú verziu tutoriálu najdeš na https://docs.python.org/3/tutorial/. Tam najdeš podrobnejšie a úplné informácie o jazyku. Nech sa darí :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Teraz na chvíľu si daj pauzu - natiahni sa trochu, poprechádzaj sa, nechaj svoje oči oddýchnuť si - a potom prejdeme na ďalšiu kapitolu. :)
 
 ![Koláčik](images/cupcake.png)
