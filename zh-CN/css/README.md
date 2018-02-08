@@ -64,9 +64,9 @@ Django会自动找出你项目文件夹中所有名为“static”的文件夹�
 
 是时候来写一些CSS了！首先用你的代码编辑器打开`blog/static/css/blog.css`。
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+在这里，我们不会太深入的去学习CSS的相关知识。如果你想了解更多内容，可以参考本页末尾提供的CSS免费课程的建议。
 
-但至少还是会有一点。 也许我们能够我们标题的颜色？ 首先计算机为了理解颜色使用了特殊的代码， These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
+但我们至少还会涉及到一些CSS的代码。 让我们试试改变网页标题的颜色？ 为了理解颜色，计算机使用了一些特殊的代码。 这些代码是由`#`开始，后面跟着六位A到F的字母或0到9的数字。 例如，蓝色的代码是`#0000FF`。 你可以在这个网站找到不同颜色的代码：http://www.colorpicker.com/。 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
 
 在你的`blog/static/css/blog.css`文件中添加下面的代码:
 
