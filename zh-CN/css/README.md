@@ -25,7 +25,7 @@ Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的�
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+这不会将任何文件添加到你的项目中。它只是指向在互联网上已经存在的文件。接着，你只需要打开你的网站并刷新页面。你瞧！
 
 ![图 14.1](images/bootstrap1.png)
 
@@ -49,11 +49,11 @@ Django 已经知道到哪儿为内置的 "admin" 应用找到静态文件。现�
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django会自动找出你项目文件夹中所有名为“static”的文件夹。它能够把里面的内容作为静态文件来使用。
 
 ## 你的第一个 CSS 文件！
 
-Let's create a CSS file now, to add your own style to your web page. 创建一个新的目录称为 `css` 里面你 `static` 的目录。 然后在`css`文件夹里新建一个文件命名为`blog.css`。 准备好了吗？
+为了给你的网页添加你自己的样式，我们先来创建一个CSS文件吧 创建一个新的目录称为 `css` 里面你 `static` 的目录。 然后在`css`文件夹里新建一个文件命名为`blog.css`。 准备好了吗？
 
     djangogirls
     └─── blog
