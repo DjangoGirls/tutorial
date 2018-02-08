@@ -8,7 +8,7 @@ Django je napísané v Pythone. Python potrebujeme aby sme urobili hocičo vv Dj
 
 Najprv si over, či tvoj počítač beží na 32-bitovej alebo 64-bitovej verzii Windows-u, stlačením Windows tlačidlo + Pause/Break tlačidlo, čo otvorí informácie o tvojom systéme. Pozri sa na riadok "Typ systému". Python pre Windows si môžeš stiahnuť z webstránky https://www.python.org/downloads/windows/. Klikni na "Latest Python 3 Release - Python x.x.x" link. Ak tvoj počítač beží na **64-bitovej** verzii Windows-u, stiahni si **Windows x86-64 executable installer**. Inak si stiahni **Windows x86 executable installer**. Po stiahnutí inštalačného súboru, spusti ho (dvojklikom) a postupuj podľa inštrukcií v ňom.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+Pozor na jednu vec: počas inštalácie si všimni okno označené "Setup". Uisti sa, že si označila "Add Python 3.6 to PATH" a klikni na "Install Now", ako je znázornené tu:
 
 ![Nezabudni pridať Python do Cesty](../python_installation/images/python-installation-options.png)
 
@@ -75,7 +75,7 @@ Použi v konzole tento príkaz:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+Ak používaš staršiu verziu Fedora, možno sa ti objaví chyba, že príkaz `dnf` neexistuje. V tomto prípade musíš použiť príkaz yum.
 
 <!--endsec-->
 
