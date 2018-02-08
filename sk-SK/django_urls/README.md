@@ -72,7 +72,7 @@ Je čas vytvoriť našu prvú URL! Chceme, aby 'http://127.0.0.1:8000/' bola dom
 
 Tiež chceme udržiavať súbor `mysite/urls.py` čistý, takže naimportujeme URL z našej aplikácie `blog` do hlavného súboru `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+Tak do toho, pridaj riadok čo importuje `blog.urls`. Všimni si, že používame funkciu `include` takže ju budeš musieť taktiež importovať.
 
 Súbor `mysite/urls.py` by mal teraz vyzerať takto:
 
