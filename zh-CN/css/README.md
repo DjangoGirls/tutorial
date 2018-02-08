@@ -96,7 +96,7 @@ h1 a {
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+我们只是在这里加载静态文件。:) 接下来，我们在`<head>`和`</head>`之间，把下面这一行写到Bootstrap的文件链接之后。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. 这样我们就告诉我们的模板我们CSS文件的位置。
+浏览器按照给定的顺序读取文件，所以我们需要确保这行代码写在正确的位置。 否则，我们在CSS文件中代码可能被Bootstrap文件中的代码覆盖。 这样，HTML文件就知道我们的CSS文件的位置了。
 
-这时你的文件看起来应该像这样:
+现在你的HTML文件应该看起来像这样：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+把它添加到你的CSS文件中，保存文件，然后看看你的网页发生了什么变化吧！
 
 ![图 14.3](images/margin2.png)
 
-也许我们可以在我们的头中自定义字体吗？粘贴到你的 `< head >` 在 `blog/templates/blog/post_list.html` 文件中：
+接着我们可以试试自定义标题中的字体。把这段代码粘贴到你 `blog/templates/blog/post_list.html`文件中的`<head>`部分：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
