@@ -80,15 +80,15 @@ h1 a {
 
 `h1 a`是CSS选择器。 这样，我们可以把样式应用到`h1`中的任意`a`元素中。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这段样式代码中我们把它的颜色设为`#FCA205`, 这代表着橙色。 当然，你可以改成你自己喜欢的颜色。
 
-在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 We also identify elements by the attribute `class` or the attribute `id`. class和id是你自己给该元素的命名。 class定义多个元素，而id则指定特定的元素。 For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 We also identify elements by the attribute `class` or the attribute `id`. class和id是你自己给该元素的命名。 class定义多个元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+你可以通过[w3schools的CSS选择器部分](http://www.w3schools.com/cssref/css_selectors.asp)了解更多内容。
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+然后，我们需要让HTML文件知道我们增加了一些CSS样式。打开文件`blog/templates/blog/post_list.html`并把这行代码放在HTML文件的开头。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
