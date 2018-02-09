@@ -178,7 +178,7 @@ h1 a {
 
 太棒了！
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+上文提到过，CSS能通过类(class) 来控制HTML页面的显示。 这样，你就可以给一部分HTML代码命名，然后为其增添样式。而且这并不会影响到其他部分的显示。 这功能超级有用！ 当你有两个不同的div代码块（例如：一个是标题，一个是文章）。 类(class) 的运用就能使这两个代码块拥有不同的样式。
 
 继续命名部分HTML 代码。添加一个称为 `page-header` 的类到您的 `div`中，其中包含您的标头，像这样：
 
