@@ -77,6 +77,7 @@ A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce p
 
     $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
+    ```
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
