@@ -180,7 +180,7 @@ h1 a {
 
 上文提到过，CSS能通过类(class) 来控制HTML页面的显示。 这样，你就可以给一部分HTML代码命名，然后为其增添样式。而且这并不会影响到其他部分的显示。 这功能超级有用！ 当你有两个不同的div代码块（例如：一个是标题，一个是文章）。 类(class) 的运用就能使这两个代码块拥有不同的样式。
 
-继续命名部分HTML 代码。添加一个称为 `page-header` 的类到您的 `div`中，其中包含您的标头，像这样：
+继续为你的HTML代码命名吧。在包含标题的`div`块中添加名为`page-header`的类，就像这样：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ h1 a {
 </div>
 ```
 
-和现在将包含一篇博客文章的类`post`添加到您的 `div` 。
+然后在包含文章的`div`块中添加名为`post`的类。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-现在，我们将向不同的选择器添加声明块。 选择器以 `.` 开始，关联到类。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 至于现在，就简单地复制粘贴到你的 `blog/static/css/blog.css` 文件中吧。
+现在，我们将把声明组代码放入不同的选择器中。 选择器以 `.` 开始，后面紧跟着类名。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 至于现在，就简单地把以下代码复制粘贴到你的 `blog/static/css/blog.css` 文件中吧。
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
