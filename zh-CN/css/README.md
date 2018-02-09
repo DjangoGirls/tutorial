@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a`是CSS选择器。 这样，我们可以把样式应用到`h1`中的任意`a`元素中。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这段样式代码中我们把它的颜色设为`#FCA205`, 这代表着橙色。 当然，你可以改成你自己喜欢的颜色。
 
-在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 We also identify elements by the attribute `class` or the attribute `id`. class和id是你自己给该元素的命名。 class定义多个元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
+在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 我们也可以用`class`属性和`id`属性来定义元素。 class和id是你自己给该元素定义的名称。 class定义一组元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -139,7 +139,7 @@ OK, 保存文件再刷新下网页吧！
 
 ![图 14.2](images/color2.png)
 
-哎呦不错哦，也许我们还可以给我们的网站一点空间，增加一下左边的边距？一起来试试吧！
+哎呦不错哦，也许我们还可以给我们的网页增加一点空白，比如增加一下左边的边距？来试试吧！
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
