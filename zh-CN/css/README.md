@@ -163,7 +163,7 @@ body {
 
 跟以前一样，我们需要确保代码的正确顺序。把这一行代码放在链接到`blog/static/css/blog.css`的代码之前。它会从 Google Fonts (https://www.google.com/fonts) 引入一个叫作 *Lobster* 的字体。
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+在CSS文件`blog/static/css/blog.css`中找到`h1 a`所声明的代码块（即`{`和`}`之间的代码）。 然后在大括号之间加上`font-family: 'Lobster';`。然后刷新页面看看效果吧：
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
