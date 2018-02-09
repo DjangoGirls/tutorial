@@ -295,9 +295,9 @@ h1, h2, h3, h4 {
 
 ![图 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+瞧！ 看起来很棒吧？ 看看我们刚刚复制的代码，然后分别找到我们在HTML中添加的类，和这些类在CSS中的声明组。 如果你想要把日期(data) 的颜色改为青绿色(turquoise)，需要修改哪里的代码呢？
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+不要害怕，试着去修改一点CSS代码吧。 编写CSS的代码会帮助你理解不同的事物都在做些什么。 如果你不小心破坏了一些东西，不要害怕，因为你总是可以撤销它的。
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
