@@ -301,4 +301,4 @@ h1, h2, h3, h4 {
 
 我们为你推荐这个免费的在线课程[Codeacademy HTML& CSS course](https://www.codecademy.com/tracks/web)。 它可以帮助您了解所有CSS的知识，来使你的网页更加美观。
 
-准备好下一章了吗？:)
+准备好进入下一章了吗？:)
