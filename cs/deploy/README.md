@@ -44,8 +44,8 @@ Git bude sledovat změny souborů a složek v tomto adresáři, ale jsou tam ně
 ```
 *.pyc
 __pycache__
- myvenv
- db.sqlite3
+myvenv
+db.sqlite3
 .DS_Store
 ```    
 
