@@ -2,7 +2,7 @@
 
 Mi az a template, kérdezhetnéd?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
@@ -29,7 +29,7 @@ Ezután hozd létre a `post_list.html` fájlt (egyelőre hagyd üresen) a `blog/
 
 Nézd meg, hogy néz ki most a weboldal: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![11.1 ábra](images/step1.png)
 
@@ -140,7 +140,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 Három `div` elemet hoztunk létre.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* A másik két `div` elem a blog posztjainkat tárolja a publikálás dátumával - egy `h2` van benne a poszt címével, ami kattintható, emellett `p` bekezdések a dátumnak, és a szövegnek.
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 Ennek kell megjelenni:
 
@@ -163,7 +163,7 @@ Először nézzük meg, hogy milyen fájlok változtak a legutóbbi deploy óta 
     $ git status
     
 
-A `djangogirls` mappában kell lenned, és a `git`-tel add hozzá az összes változtatást a könyvtáradon belül:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
