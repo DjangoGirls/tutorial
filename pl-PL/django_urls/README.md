@@ -8,7 +8,7 @@ Adres URL to po prostu adres w internecie. Możesz zobaczyć URLa za każdym raz
 
 ![Adres URL](images/url.png)
 
-Każda strona w internecie potrzebuje własnego adresu URL. W ten sposób aplikacja wie, co wyświetlić użytkownikowi, który otworzy dany URL. W Django używamy tak zwanego `URLconf` (konfiguracji URL). URLconf to zestaw wzorców, które Django spróbuje dopasować do żądanego adresu URL, aby znaleźć poprawny widok.
+Każda strona w internecie potrzebuje własnego adresu URL. W ten sposób aplikacja wie, co wyświetlić użytkownikowi, który otworzy dany URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Jak działają adresy URL w Django?
 
@@ -33,7 +33,7 @@ Jak zauważyłaś, Django coś nam już tu umieścił.
 
 Linie między potrójnymi cudzysłowami (` '''` lub `""" `) nazywa się docstrings - możesz zapisać je na górze pliku, klasy lub metody, aby opisać, co robi. Nie będą one uruchamiane przez Python.
 
-Adres URL panelu administracyjnego, który odwiedzałaś w poprzednim rozdziale, jest już tutaj dodany:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ Adres URL panelu administracyjnego, który odwiedzałaś w poprzednim rozdziale,
     url(r'^admin/', admin.site.urls),
 ```
 
-To znaczy, że dla każdego adresu zaczynającego się od `admin/` Django spróbuje dopasować odpowiedni *widok*. W tym przypadku używamy wielu adresów URL panelu administracyjnego, dlatego nie wypisujemy ich wszystkich w tym jednym małym pliku - tak jest czytelniej i bardziej estetycznie.
+To znaczy, że dla każdego adresu zaczynającego się od `admin/` Django spróbuje dopasować odpowiedni *widok*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex, czyli wyrażenia regularne
 
-Zastanawiałaś się, w jaki sposób Django kojarzy adresy URL z widokami? Cóż, ta część jest nieco bardziej złożona. Django wykorzystuje `regex`, czyli tzw. wyrażenia regularne. Regex posiada mnóstwo (naprawdę mnóstwo!) reguł, które tworzą wzorzec do wyszukania. To dość skomplikowany temat i nie będziemy tutaj wchodzić w szczegóły.
+Zastanawiałaś się, w jaki sposób Django kojarzy adresy URL z widokami? Cóż, ta część jest nieco bardziej złożona. Django wykorzystuje `regex`, czyli tzw. wyrażenia regularne. Regex posiada mnóstwo (naprawdę mnóstwo!) reguł, które tworzą wzorzec do wyszukania. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 Jeśli nadal chcesz zrozumieć, w jaki sposób stworzyliśmy wzorce, oto przykład tego procesu - będziemy potrzebować tylko ograniczonego podzbioru reguł, aby wyrazić wzorzec, którego szukamy, a mianowicie:
 
@@ -61,9 +61,9 @@ Teraz wyobraź sobie, że masz stronę z takim adresem `http://www.mysite.com/po
 
 Pisanie osobnych widoków dla każdego numeru z osobna byłoby frustrujące. Z wyrażeniami regularnymi możemy stworzyć wzorzec, który dopasuje URL i znajdzie dla nas numer posta: `^post/(\d+)/$`. Rozbijmy go na mniejsze części, by zrozumieć, co tu się dzieje:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** oznacza, że szukamy numeru (jedna lub więcej cyfr) i że chcemy go wyodrębnić
-* **/** mówi Django, że następny w kolejności powinien się pojawić znak `/`
+* **/** tells Django that another `/` character should follow
 * **$** informuje, że to jest koniec adresu URL, co oznacza, że Django będzie szukał adresów kończących się na `/`
 
 ## Twój pierwszy adres URL w Django!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django przekieruje wszystkie reguły z adresu 'http://127.0.0.1:8000/' do `blog.urls` i tam będzie szukał dalszych wskazówek.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Pisząc wyrażenia regularne w Pythonie, zawsze dajemy `r` na początku ciągu znaków. To jest podpowiedź dla Pythona, że w tym ciągu znaków mogą się znajdować znaki specjalne, które nie są przeznaczone dla niego, ponieważ oznaczają wyrażenie regularne.
 
@@ -124,6 +124,6 @@ Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz ko
 
 ![Błąd](images/error1.png)
 
-Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym.
+Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. At this stage, your `/admin/` will also not work. Nie martw się, zajmiemy się tym.
 
 > Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/1.11/topics/http/urls/
