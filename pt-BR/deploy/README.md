@@ -4,7 +4,7 @@
 
 Até agora, seu site só estava disponível no seu computador. Agora você aprenderá como implantá-lo (fazer o 'deploy')! O deploy é o processo de publicação do seu aplicativo na Internet de tal forma que as pessoas possam, finalmente, ver seu aplicativo. :)
 
-Como você aprendeu, um website precisa estar localizado num servidor. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Como você aprendeu, um website precisa estar localizado num servidor. Existe na internet muitos fornecedores de servidor disponíveis, vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnyWhere é grátis para pequenas aplicações que não possuem muitos visitantes, então ele será por enquanto suficiente para ti.
 
 O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora você também!
 
@@ -30,7 +30,7 @@ O Git controla as alterações para um determinado conjunto de arquivos no que c
     $ git config --global user.email voce@exemplo.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Só necessitamos de iniciar o repositório git apenas uma vez por projeto (e não será necessário colocar novamente o nome do utilizador e email).
 
 Git irá controlar as alterações para todos os arquivos e pastas neste diretório, mas existem alguns arquivos que queremos ignorar. Fazemos isso através da criação de um arquivo chamado `.gitignore` no diretório base. Abra seu editor e crie um novo arquivo com o seguinte conteúdo:
 
@@ -47,9 +47,9 @@ Git irá controlar as alterações para todos os arquivos e pastas neste diretó
 
 E salve-o como `.gitignore` na pasta "djangogirls".
 
-> **Nota** O ponto no início do nome do arquivo é importante! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Nota** O ponto no início do nome do arquivo é importante! Se estás com algum tipo de dificuldade em criá-lo (por exemplo, os Macs não gostam de criar arquivos que começam com um ponto através do Finder), usa o recurso "Guardar Como" no teu editor; que nunca irá falhar.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de que você vai apagar os posts reais do seu blog.
+> **Nota** Um dos arquivos que especificaste no teu `.gitignore` é `db.sqlite3`. Esse arquivo será a tua base de dados local, onde todos os teus posts estão armazenados. O teu website na PythonAnywhere irá utilizar um banco de dados diferente, assim não queremos adicionar isto ao teu repositório. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de que você vai apagar os posts reais do seu blog.
 
 É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
