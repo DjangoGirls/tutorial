@@ -2,7 +2,7 @@
 
 什么是模板，你可能会问？
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
@@ -29,7 +29,7 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 看看你的网站现在是什么样子： http://127.0.0.1:8000/ /
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![图 11.1](images/step1.png)
 
@@ -140,7 +140,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 我们已经创建了三个不同的 `div` 部分。
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* 另两个 `div` 元素包含我们博客文章发表的日期，`h2` 是可点击文章标题和两个 `p` （段落） 的文本、 日期和我们的博客。
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 它给了我们这种效果：
 
@@ -163,7 +163,7 @@ What we really want to do is display real posts added in our Django admin – an
     $ git status
     
 
-请确保你在 `djangogirls` 目录中，让我们告诉 `git` 包括此目录内的所有更改：
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
