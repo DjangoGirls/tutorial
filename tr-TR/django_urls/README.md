@@ -8,7 +8,7 @@ URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğin
 
 ![Url](images/url.png)
 
-Internetteki her sayfanın kendi URL'si olması gerekir. Bu yolla uygulama URl'yi açan kullanıcaya ne göstemesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
+Internetteki her sayfanın kendi URL'si olması gerekir. Bu yolla uygulama URl'yi açan kullanıcaya ne göstemesi gerektiğini bilir. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## URL'ler Django'da nasıl çalışır?
 
@@ -33,7 +33,7 @@ Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
 
 Üçlü tırnaklar (`'''` or `"""`) arasındaki satırlara docstrings denir - bunları bir dosyanın, sınıfın ya da metodun en üstüne ne yaptıklarını anlatmak için yazabilirsiniz. Python bunları çalıştırmaz.
 
-Önce ki bölümde ziyaret ettğiniz yönetici URL'si şimdiden burada:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
     url(r'^admin/', admin.site.urls),
 ```
 
-Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. Bu durumda bir sürü admin URLlerini dahil ediyoruz yani hepsi bu küçük dosyada sıkıştırılmış olarak durmuyor - bu şekil daha okunaklı ve düzenli.
+Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex (Kurallı İfade)
 
-Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Regexler ileri bir konu olduğu için nasıl çalıştığının detayına girmeyeceğiz.
+Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 Gene de kalıpları nasıl oluşturduğumuzu anlamak isterseniz, aşağıdaki bir örnek var - aradığımız kalıbı oluşturmak için kuralların sadece bir kısmına ihtiyacımız olacak, şöyle:
 
@@ -61,9 +61,9 @@ URL tanımındaki diğer her şey tamamen ele alınacaktır.
 
 Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. Düzeni ifadelerle, URL ile eşleşen ve bizim için gönderi numarasını çıkaran bir desen yaratabiliriz: `^post/(\d+)/$`. Şimdi bunu, burada ne yaptığımızı görebilmek için parçalarına ayıralım:
 
-* **^post/** Django'ya urldeki `post/` ile başlayan her şeyi almasını söylüyor. (`^` 'dan hemen sonra)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** ise bir sayı (birden fazla rakam) olduğunu ve bu sayıyı yakalamak ve çıkarmak istediğimizi belirtiyor
-* **/** ise Django'ya arkasından bir `/` karakteri gelmesi gerektiğini söylüyor
+* **/** tells Django that another `/` character should follow
 * **$** ise URL'nin sonuna işaret ediyor, yani sadece sonu `/` ile biten string'ler bu kalıpla eşleşecek
 
 ## İlk Django URL'niz!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Python'da düzenli ifade yazarken her zaman string (dize)'den önce `r` eklenir. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
 
@@ -124,6 +124,6 @@ Eğer şimdi http://127.0.0.1:8000/'ine gitmeyi denerseniz, 'sayfanıza ulaşıl
 
 ![Hata](images/error1.png)
 
-Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlıdır: bu **'post_list' özelliği yok** demektir. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. Bu aşamada `/admin/` işlevi de çalışmayacaktır. Endişeye gerek yok - o noktaya ulaşacağız.
+Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlıdır: bu **'post_list' özelliği yok** demektir. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. At this stage, your `/admin/` will also not work. Endişeye gerek yok - o noktaya ulaşacağız.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/urls/
