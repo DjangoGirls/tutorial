@@ -8,7 +8,7 @@ Ang URL ay isang web address lamang. Makikita mo ang URL sa bawat oras na bibisi
 
 ![Url](images/url.png)
 
-Bawat pahina na nasa Internet ay nangangailangan ng sariling URL. Sa ganitong paraan, malalaman ng iyong aplikasyon kung ano dapat ang ipakita niya sa user na nagbubukas ng URL na ito. Sa Django, gagamit tayo ng tinatawag na `URLconf` (kompigurasyon ng URL). Ang URLconf ay isang grupo ng mga pattern na susubukang itugma ni Django sa hiniling na URL para mahanap nito ang tamang view.
+Bawat pahina na nasa Internet ay nangangailangan ng sariling URL. Sa ganitong paraan, malalaman ng iyong aplikasyon kung ano dapat ang ipakita niya sa user na nagbubukas ng URL na ito. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Paano gumagana ang mga URL sa Django?
 
@@ -33,7 +33,7 @@ Makikita mo, may nilagay na si Django doon para sa atin.
 
 Ang mga linya sa pagitan ng tripleng mga panipi (`'''` or `"""`) ay tinatawag na mga docstrings - maari mo silang isulat sa taas ng file, class, o method para ilarawan kung ano ang ginagawa nito. Hindi sila papatakbuhin ni Python.
 
-Ang admin URL, na binisita natin sa nakaraang kabanata ay nandito na:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ Ang admin URL, na binisita natin sa nakaraang kabanata ay nandito na:
     url(r'^admin/', admin.site.urls),
 ```
 
-Ang ibig sabihin ng linyang ito ay bawat URL na nagsisimula sa `admin/`, si Django ay maghahanap ng katugmang *view*. Sa kasong ito, naglakip tayo ng napakaraming admin URLS kaya hindi ito lahat nakasiksik sa maliit na file na ito - mas madaling mabasa at malinis ito.
+Ang ibig sabihin ng linyang ito ay bawat URL na nagsisimula sa `admin/`, si Django ay maghahanap ng katugmang *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
-Naisip mo ba kung paano tinugma ni Django ang mga URL sa mga view? Buweno, ang parteng ito ay mahirap. Si Django ay gumagamit ng mga `regex`, pinaikli sa "regular expressions". Si regex ay mayroong napakaraming (napakarami!) mga patakaran na bumuo sa search pattern. Dahil ang mga regex ay malalim na paksa, hindi natin idetalye kung paano ito gumagana.
+Naisip mo ba kung paano tinugma ni Django ang mga URL sa mga view? Buweno, ang parteng ito ay mahirap. Si Django ay gumagamit ng mga `regex`, pinaikli sa "regular expressions". Si regex ay mayroong napakaraming (napakarami!) mga patakaran na bumuo sa search pattern. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 Kung gusto mo pa ring maintindihan kung paano natin nilikha ang mga pattern, heto ang isang halimbawa ng proseso - mangangailangan lang tayo ng makitid na kubtangkas ng mga patakara para ipahayag ang pattern na ating hinahanap:
 
@@ -61,9 +61,9 @@ Ngayon, isipin mo na may website ka na may address gaya ng `http://www.mysite.co
 
 Ang pagsulat ng hiwalay na mga view para sa lahat ng numero ng mga post ay sobrang nakakaasar. Gamit ang mga regular na ekspresyon, maari tayong maglikha ng pattern na magtugma sa ating URL at kukuha ng numero para sa atin: `^post/(\d+)/$`. Hahatiin natin ito sa pira-piraso para makita natin kung ano ang ginagawa natin dito:
 
-* Ang **^post/** ay nagsasabi kay Django na kunin ang lahat ng may `post` sa simula ng url (pagkatapos ng `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * Ibig sabihin ng **(\d+)** ay may mga numero (isa o higit pa na numero) at gusto nating hulihin at kukunin ang numero
-* ang **/** ay nagsasabi kay django na dapat may `/` na karakter na sumunod
+* **/** tells Django that another `/` character should follow
 * Ang **$** ay nagpapahiwatig sa katapusan ng URL, ibig sabihin na ang mga string lang na nagtatapos sa `/` ay tutugma sa pattern na ito
 
 ## Ang iyong kauna-unang URL ng Django!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Si Django ngayon ay mag-redirect sa lahat ng papasok sa 'http://127.0.0.1:8000/' sa `blog.urls` at maghanap ng karagdagang instruksyon doon.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Ang pagsulat nga mga regular expression sa Python ay parating ginagawa na may `r` sa harap ng string. Ito ay nakakatulong na palatandaan para sa Python na ang string ay maaring maglaman ng mga espesyal na karakter na hindi para sa Python, kundi sa halip ay para sa regular na expression.
 
@@ -124,6 +124,6 @@ Kung bibisitahin mo ang http://127.0.0.1:8000/ ngayon, makikita mo ang mensahe n
 
 ![Error](images/error1.png)
 
-Ang iyong console ay nagpapakita ng error, ngunit huwag mag-alala - ito ay talagang nakakatulog: sinasabi nito na mayroon kang **walang attribute na 'post_list'**. Iyan ang pangalan ng *view* na sinubukang hanapin at gamitin ni Django, ngunit hindi pa natin ito nalikha. Sa puntong ito ang `/admin/` ay hindi rin gagana. Huwag mag-alala - dadating din tayo diyan.
+Ang iyong console ay nagpapakita ng error, ngunit huwag mag-alala - ito ay talagang nakakatulog: sinasabi nito na mayroon kang **walang attribute na 'post_list'**. Iyan ang pangalan ng *view* na sinubukang hanapin at gamitin ni Django, ngunit hindi pa natin ito nalikha. At this stage, your `/admin/` will also not work. Huwag mag-alala - dadating din tayo diyan.
 
 > Kung gusto mong malaman ng masinsinan ang tungkol sa Django URLconfs, tingnan ang opisyal na dokumentasyon: https://docs.djangoproject.com/en/1.11/topics/http/urls/
