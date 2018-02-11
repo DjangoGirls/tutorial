@@ -8,7 +8,7 @@ URL은 단순히 웹 주소랍니다. You can see a URL every time you visit a w
 
 ![URL](images/url.png)
 
-인터넷에 있는 모든 페이지들은 자신만의 URL을 가지고 있어야 해요. This way your application knows what it should show to a user who opens that URL. 장고는 `URLconf` (URL configuration)를 사용합니다. URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+인터넷에 있는 모든 페이지들은 자신만의 URL을 가지고 있어야 해요. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Django에서 URL은 어떻게 작동할까요?
 
@@ -33,7 +33,7 @@ As you can see, Django has already put something here for us.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. 파이썬은 이 구문을 읽지 않아요.
 
-The admin URL, which you visited in previous chapter, is already here:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ The admin URL, which you visited in previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## 정규표현식(Regex)
 
-장고가 URL을 뷰에 매칭시키는 방법이 궁금하죠? 이 부분은 조금 까다로울 수 있어요. 장고는 `regex`를 사용하는데, "정규표현식(regular expressions)"의 줄임말입니다. 정규식은 정말 (아주!) 많은 검색 패턴의 규칙을 가지고 있어요. 정규식은 심화 내용이기 때문에, 자세한 내용은 다루지 않을 거에요.
+장고가 URL을 뷰에 매칭시키는 방법이 궁금하죠? 이 부분은 조금 까다로울 수 있어요. 장고는 `regex`를 사용하는데, "정규표현식(regular expressions)"의 줄임말입니다. 정규식은 정말 (아주!) 많은 검색 패턴의 규칙을 가지고 있어요. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -61,9 +61,9 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
 
 뷰마다 모든 글 번호을 작성하는 것은 정말 힘든 일이 될 거에요. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)**는 숫자(한 개 또는 여러개) 가 있다는 뜻입니다. 내가 뽑아내고자 글 번호가 되겠지요.
-* **/**는 장고에게 `/`뒤에 문자가 있음을 말해 줍니다.
+* **/** tells Django that another `/` character should follow
 * **$**는 URL의 끝이 방금 전에 있던 `/`로 끝나야 매칭될 수 있다는 것을 나타냅니다.
 
 ## Your first Django URL!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-지금 장고는 'http://127.0.0.1:8000/'로 들어오는 모든 접속 요청을 `blog.urls`로 전송하고 추가 명령을 찾을 거에요.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Writing regular expressions in Python is always done with `r` in front of the string. 이는 파이썬에게는 별 의미가 없지만, 파이썬에게 문자열에 특수 문자가 있다는 것을 알려줍니다.
 
@@ -124,6 +124,6 @@ The last part, `name='post_list'`, is the name of the URL that will be used to i
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. Django *뷰*가 계속해서 찾고 있지만, 우리는 아직 만들지 않았으니까요. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. Django *뷰*가 계속해서 찾고 있지만, 우리는 아직 만들지 않았으니까요. At this stage, your `/admin/` will also not work. No worries – we will get there.
 
 > 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.11/topics/http/urls/
