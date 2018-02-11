@@ -8,7 +8,7 @@ URL hanyalah sebuah alamat web. Anda dapat melihat URL setiap kali mengunjungi s
 
 ![Url](images/url.png)
 
-Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. Di Django kita menggunakan sesuatu yang disebut `URLconf` (URL configuration). URLconf adalah seperangkat pola yang akan dicoba Django untuk mencocokkan dengan URL yang diminta untuk menemukan tampilan yang benar.
+Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Bagaimana cara kerja URL di Django?
 
@@ -33,18 +33,18 @@ Seperti yang Anda lihat, Django telah meletakkan sesuatu di sini untuk kita.
 
 Baris antara tanda kutip tiga kali (` '' '</ 0> atau <code> "" "</ 0>) disebut docstrings - Anda dapat menuliskannya di bagian atas file, kelas atau metode untuk menjelaskan apa yang dilakukannya. Mereka tidak akan dijalankan oleh Python.</p>
 
-<p>URL admin, yang Anda kunjungi di bab sebelumnya, sudah ada di sini:</p>
+<p>The admin URL, which you visited in the previous chapter, is already here:</p>
 
 <p>{% filename%} mysite / urls.py {% endfilename%}</p>
 
 <pre><code class="python">    url(r'^admin/', admin.site.urls),
 `</pre> 
 
-Baris ini berarti bahwa untuk setiap URL yang dimulai dengan ` admin / </ 0>, Django akan menemukan tampilan <em> yang sesuai </ 1>. Dalam hal ini kami menyertakan banyak URL admin sehingga tidak semua dikemas ke dalam file kecil ini - ini lebih mudah dibaca dan bersih.</p>
+Baris ini berarti bahwa untuk setiap URL yang dimulai dengan ` admin / </ 0>, Django akan menemukan tampilan <em> yang sesuai </ 1>. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.</p>
 
 <h2>Regex</h2>
 
-<p>Apakah Anda bertanya-tanya bagaimana Django mencocokkan URL dengan tampilan? Nah, bagian ini memang rumit. Django menggunakan <code> regex </ 0>, singkatan dari "regular expressions". Regex memiliki banyak (banyak!) Aturan yang membentuk pola pencarian. Karena regex adalah topik lanjutan, kami tidak akan membahas secara terperinci bagaimana mereka bekerja.</p>
+<p>Apakah Anda bertanya-tanya bagaimana Django mencocokkan URL dengan tampilan? Nah, bagian ini memang rumit. Django menggunakan <code> regex </ 0>, singkatan dari "regular expressions". Regex memiliki banyak (banyak!) Aturan yang membentuk pola pencarian. Since regexes are an advanced topic, we will not go into detail over how they work.</p>
 
 <p>Jika Anda masih ingin memahami bagaimana kami menciptakan pola, berikut adalah contoh prosesnya - kami hanya memerlukan subset terbatas peraturan untuk mengungkapkan pola yang kami cari, yaitu:</p>
 
@@ -62,9 +62,9 @@ Sekarang bayangkan Anda memiliki situs web dengan alamat seperti `http://www.mys
 
 Menulis pandangan terpisah untuk semua nomor posting akan sangat menyebalkan. Dengan ekspresi reguler, kami dapat membuat pola yang sesuai dengan URL dan mengekstrak nomor untuk kami: `^post/(\d+)/$`. Mari kita turunkan sepotong demi sepotong untuk melihat apa yang sedang kita lakukan di sini:
 
-* **^post/** memberitahu Django untuk mengambil apapun yang dimilikinya `post/` di awal url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** berarti akan ada angka (satu atau lebih digit) dan kami ingin nomor yang diambil dan diekstraksi
-* **/** memberitahu Django bahwa karakter `/` yang lain harus diikuti
+* **/** tells Django that another `/` character should follow
 * **$** kemudian menunjukkan akhir dari URL yang berarti bahwa hanya string yang diakhiri dengan `/` akan cocok dengan pola ini
 
 ## URL Django pertama Anda!
@@ -89,9 +89,9 @@ urlpatterns = [
 ]
 `</pre> 
 
-Django sekarang akan mengarahkan semua yang masuk ke 'http://127.0.0.1:8000/' ke ` blog.urls </ 0> dan mencari petunjuk lebih lanjut di sana.</p>
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
-<p>Menulis ekspresi reguler dengan Python selalu dilakukan dengan <code> r </ 0> di depan string. Ini adalah petunjuk yang berguna untuk Python bahwa string mungkin berisi karakter khusus yang tidak dimaksudkan untuk Python itu sendiri, namun untuk ekspresi reguler.</p>
+Menulis ekspresi reguler dengan Python selalu dilakukan dengan ` r </ 0> di depan string. Ini adalah petunjuk yang berguna untuk Python bahwa string mungkin berisi karakter khusus yang tidak dimaksudkan untuk Python itu sendiri, namun untuk ekspresi reguler.</p>
 
 <h2>blog.urls</h2>
 
@@ -112,7 +112,7 @@ Di sini kita mengimpor fungsi Django ` url </ 0> dan semua <code> views </ 0> da
      url (r '^ $', views.post_list, name = 'post_list'),]
 `</pre> 
 
-Seperti yang Anda lihat, sekarang kami menetapkan sebuah  view </ 0> yang disebut <code> post_list </ 0> ke <code> ^ $ </ 0> URL. Ekspresi reguler ini akan cocok dengan <code> ^ </ 0> (awal) diikuti oleh <code> $ </ 0> (akhir) - jadi hanya string kosong yang akan cocok. Itu benar, karena di Django URL resolvers, 'http://127.0.0.1:8000/' bukan bagian dari URL. Pola ini akan memberi tahu Django bahwa <code> views.post_list </ 0> adalah tempat yang tepat untuk dikunjungi jika seseorang masuk ke situs Anda di alamat 'http://127.0.0.1:8000/'.</p>
+Seperti yang Anda lihat, sekarang kami menetapkan sebuah ` view </ 0> yang disebut <code> post_list </ 0> ke <code> ^ $ </ 0> URL. Ekspresi reguler ini akan cocok dengan <code> ^ </ 0> (awal) diikuti oleh <code> $ </ 0> (akhir) - jadi hanya string kosong yang akan cocok. Itu benar, karena di Django URL resolvers, 'http://127.0.0.1:8000/' bukan bagian dari URL. Pola ini akan memberi tahu Django bahwa <code> views.post_list </ 0> adalah tempat yang tepat untuk dikunjungi jika seseorang masuk ke situs Anda di alamat 'http://127.0.0.1:8000/'.</p>
 
 <p>Bagian terakhir, <code> name = 'post_list' </ 0> , adalah nama URL yang akan digunakan untuk mengidentifikasi tampilan. Ini bisa sama dengan nama tampilan tapi bisa juga sama sekali berbeda. Kami akan menggunakan URL yang disebutkan kemudian di proyek, jadi penting untuk memberi nama setiap URL di aplikasi. Kita juga harus berusaha agar nama URL tetap unik dan mudah diingat.</p>
 
@@ -120,8 +120,6 @@ Seperti yang Anda lihat, sekarang kami menetapkan sebuah  view </ 0> yang disebu
 
 <p><img src="images/error1.png" alt="Kesalahan" /></p>
 
-<p>Konsol Anda menunjukkan kesalahan, tapi jangan khawatir - itu sebenarnya cukup berguna: Ini memberitahu Anda bahwa ada <strong> tidak ada atribut 'post_list' </ 0> . Itulah nama <em> pandangan </ 0> yang Django sedang mencoba untuk menemukan dan menggunakan, tapi kami belum menciptakannya belum. Pada tahap ini <code> / admin / </ 0> Anda juga tidak akan bekerja. Jangan khawatir - kita akan sampai di sana.</p>
+<p>Konsol Anda menunjukkan kesalahan, tapi jangan khawatir - itu sebenarnya cukup berguna: Ini memberitahu Anda bahwa ada <strong> tidak ada atribut 'post_list' </ 0> . Itulah nama <em> pandangan </ 0> yang Django sedang mencoba untuk menemukan dan menggunakan, tapi kami belum menciptakannya belum. At this stage, your <code>/admin/` will also not work. Jangan khawatir - kita akan sampai di sana.
 
-<blockquote>
-  <p>Jika Anda ingin tahu lebih banyak tentang Django URLconfs, lihat dokumentasi resmi: https://docs.djangoproject.com/en/1.11/topics/http/urls/</p>
-</blockquote>
+> Jika Anda ingin tahu lebih banyak tentang Django URLconfs, lihat dokumentasi resmi: https://docs.djangoproject.com/en/1.11/topics/http/urls/
