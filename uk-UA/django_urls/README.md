@@ -8,7 +8,7 @@ URL - це просто веб-адреса. You can see a URL every time you vi
 
 ![Url](images/url.png)
 
-Кожна сторінка в Інтернеті потребує свого власного URL. This way your application knows what it should show to a user who opens that URL. В Django використовується така річ, яка називається `URLconf` (URL конфігурація). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Кожна сторінка в Інтернеті потребує свого власного URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Як працює URL в Django?
 
@@ -33,7 +33,7 @@ As you can see, Django has already put something here for us.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-The admin URL, which you visited in previous chapter, is already here:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ The admin URL, which you visited in previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
-Хіба вам не цікаво яким чином Django створює відповідності між URL і відображеннями? Гаразд, ця частина досить хитра. Django використовує `regex`, що є скороченням від "regular expressions". Regex має багато (багато!) правил, що формують шаблон пошуку. Оскільки регулярні вирази є продвинутою темою, ми не будемо вникати в деталі їх роботи.
+Хіба вам не цікаво яким чином Django створює відповідності між URL і відображеннями? Гаразд, ця частина досить хитра. Django використовує `regex`, що є скороченням від "regular expressions". Regex має багато (багато!) правил, що формують шаблон пошуку. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -61,9 +61,9 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
 
 Написання окремих відображень для усіх номерів постів було б дійсно нестерпним. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** означає, що буде число (одне або декілька цифр), і ми хочемо, щоб число захопилось і вибралось
-* **/** вказує Django, що наступним символом має бути `/`
+* **/** tells Django that another `/` character should follow
 * **$** далі позначає кінець URL-адреси, а це означає, що під шаблон підходять лише ті рядки, які закінчуються на `/`
 
 ## Your first Django URL!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django тепер перенаправлятиме усе, що надходить на 'http://127.0.0.1:8000/' до `blog.urls` і шукатиме там подальші інструкції.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Writing regular expressions in Python is always done with `r` in front of the string. Це підказка для інтерпретатора, що рядок може містити спеціальні символи, які використовуються в решулярних виразах.
 
@@ -124,6 +124,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
 
 > Якщо бажаєте дізнатися більше про Django URLconf, зверніться до офіційної документації: https://docs.djangoproject.com/en/1.11/topics/http/urls/
