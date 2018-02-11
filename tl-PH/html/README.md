@@ -2,7 +2,7 @@
 
 Ano ang template, maaring nakapagtanong ka?
 
-Ang template ay isang file na maari nating gamitin ulit para magpakita ng iba't ibang impormasyon sa isang matatag na format - halimbawa, maari kang gumamit ng template na makakatulong sa iyo sa pagsulat ng liham, dahil maaring bawat sulat ay maaring maglaman na iba't-ibang mensahe at naka-address sa ibang tao, sila ay mag-sishare ng parehong format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 Ang format ng Django template ay inilarawan sa wika na tinatawag na HTML (ito ang HTML na nabanggit natin sa unang kabanata, **Paano gumagana ang Internet**).
 
@@ -29,7 +29,7 @@ At ngayon, gumawa ng isang `post_list.html` na file (hayaan itong blangko sa nga
 
 Tingnan kung ano ang hitsura ng iyong website ngayon: http://127.0.0.1:8000/
 
-> Kung mayroon ka pang error na `TemplateDoesNotExist`, subukan mong i-restart ang iyong server. Pumunta sa command line, ihinto ang server sa pamamagitan ng pag-press ng Ctrl+C (Kontrol at C na mga key, nang sabay) at i-start itong muli sa pamamagitan ng pgpapatakbo ng isang `python manage.py runserver` na command.
+> Kung mayroon ka pang error na `TemplateDoesNotExist`, subukan mong i-restart ang iyong server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Tambilang 11.1](images/step1.png)
 
@@ -140,7 +140,7 @@ Nandito ang isang halimbawa ng isang buong template, kopyahin at ilagay ito sa `
 Gumawa tayo ng tatlong `div` na mga seksyon dito.
 
 * Ang unang `div` na elemento ay naglalaman sa pamagat ng ating blog - ito ay isang heading at isang link
-* Ang dalawa pang `div` na mga elemento ay naglalaman ng ating mga blogpost na mayroong petsa ng pag-publish, `h2` na mayroong isang pamagat ng post na maaaring i-click at dalawang `p`s (talata) ng teksto, isa para sa petsa at isa para sa ating blogpost.
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 Ito ay nagbibigay sa atin ng effect na ito:
 
@@ -163,7 +163,7 @@ Una sa lahat, tingnan natin kung anong mga file ang nagbago mula noong huli tayo
     $ git status
     
 
-Siguraduhin na ikaw ay nasa `djangogirls` na directory at sabihan natin si `git` para isama ang lahat ng mga pagbabago sa loob ng directory na ito:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
