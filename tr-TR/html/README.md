@@ -2,7 +2,7 @@
 
 Template nedir diye sorabilirsiniz.
 
-Şablon farklı bilgileri tutarlı bir formatta vermek için tekrar kullanabildiğimiz bir dosyadır - örnek olarak, bir harf yazmanıza yardım etmesi için bir şablon kullanabilirsiniz, çünkü her harfin başka bir mesaj içerebilmesi ve başka bir kişiye gönderilebilmesine rağmen aynı formatı paylaşacaklar.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk bölümde bahsettiğimiz HTML, **İnternet nasıl çalışır**).
 
@@ -29,7 +29,7 @@ Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü 
 
 Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
-> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve bir `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
+> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Şekil 11.1](images/step1.png)
 
@@ -140,7 +140,7 @@ html
 Burada üç tane `div` bölümü oluşturduk.
 
 * İlk `div` ögesi blogumuzun başlığını içerir - bu bir baş kısımdır ve bir bağlantıdır
-* Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi, tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 Bize yaşattığı duygu:
 
@@ -163,7 +163,7 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
     $ git status
     
 
-`djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}komut-satırı{% endfilename %}
 
