@@ -8,7 +8,7 @@ URL — это просто адрес в интернете. You can see a URL 
 
 ![URL-адрес](images/url.png)
 
-Любая страница в Интернете нуждается в собственном URL-адресе. This way your application knows what it should show to a user who opens that URL. В Django мы используем кое-что под названием `URLconf` (англ. URL configuration, конфигурация URL). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Любая страница в Интернете нуждается в собственном URL-адресе. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Как URL-адреса работают в Django?
 
@@ -33,7 +33,7 @@ As you can see, Django has already put something here for us.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. Интерпретатор Python пропустит их при выполнении скрипта.
 
-The admin URL, which you visited in previous chapter, is already here:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ The admin URL, which you visited in previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
-Спрашиваешь себя, как Django сопоставляет URL-адреса и представления? Ну, это не так просто. В Django используются так называемые регулярные выражения (англ. "regular expressions" — сокращённо `regex`). Регулярные выражения имеют множество (множество!) правил, которые формируют поисковый шаблон. Поскольку регулярные выражения являются довольно сложной темой, мы остановимся на них чуть подробнее.
+Спрашиваешь себя, как Django сопоставляет URL-адреса и представления? Ну, это не так просто. В Django используются так называемые регулярные выражения (англ. "regular expressions" — сокращённо `regex`). Регулярные выражения имеют множество (множество!) правил, которые формируют поисковый шаблон. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -61,9 +61,9 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
 
 Писать представления для всех номеров будет весьма утомительно. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** означает, что дальше должен присутствовать номер (одна или несколько цифр) и мы хотим извлечь его из url
-* **/** говорит Django об очередном символе `/` после номера
+* **/** tells Django that another `/` character should follow
 * **$** означает конец url, т.е. шаблону соответствуют только адреса с `/` на конце
 
 ## Your first Django URL!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django теперь будет перенаправлять все запросы 'http://127.0.0.1:8000/' к `blog.urls` и искать там дальнейшие инструкции.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Writing regular expressions in Python is always done with `r` in front of the string. Это полезный намек для Python, что строка может содержать специальные символы, предназначенные не для самого Python, а для регулярного выражения.
 
@@ -124,6 +124,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Ошибка](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
 
 > Если хочешь узнать больше о Django URLconfs, посмотри официальную документацию: https://docs.djangoproject.com/en/1.11/topics/http/urls/
