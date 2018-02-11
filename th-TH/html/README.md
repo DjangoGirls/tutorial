@@ -2,7 +2,7 @@
 
 อะไรคือ template คุณอาจสงสัย?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
@@ -29,7 +29,7 @@ template ทั้งหลายนั้นถูกบันทึกไว�
 
 มาดูกันว่าตอนนี้เว็บเราแสดงผลยังไง: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![รูปที่ 11.1](images/step1.png)
 
@@ -140,7 +140,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 เราได้สร้าง `div` ไว้เป็นสามส่วน
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* อีกสอง `div` คือส่วนที่แสดงเนื้อหาบล็อกและวันที่เผยแพร่ โดยใช้ `h2` สำหรับหัวข้อโพสต์ และใช้สอง `p` (ย่อหน้า) สำหรับวันที่และสำหรับบล็อกโพสต์ของเรา
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 โดยจะทำให้มีผลแบบนี้:
 
@@ -163,7 +163,7 @@ What we really want to do is display real posts added in our Django admin – an
     $ git status
     
 
-ตรวจสอบว่าอยู่ในไดเรกทอรี `djangogirls` หรือไม่ และใช้ `git` ในการรวมทุกไฟล์ที่เราแก้ไขภายในไดเรกทอรีเข้ามาด้วย:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
