@@ -2,7 +2,7 @@
 
 Vielleicht fragst du dich, was ein Template (Vorlage) ist?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
@@ -29,7 +29,7 @@ Als nächstes erstellen wir eine Datei `post_list.html` (erst mal ohne Inhalt) i
 
 Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Abbildung 11.1](images/step1.png)
 
@@ -142,7 +142,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 Wir haben hier drei verschiedene `div` Abschnitte erstellt.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
-* Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 Wir bekommen das Folgende:
 
@@ -165,7 +165,7 @@ Lass uns nachsehen, welche Dateien sich nach dem letzten Veröffentlichen (Deplo
     $ git status
     
 
-Überprüfe, ob du im `Djangogirls` Verzeichnis bist und sag `git`, dass alle Änderungen in diesem Verzeichnis hinzugefügt werden sollen:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
