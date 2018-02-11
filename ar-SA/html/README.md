@@ -2,7 +2,7 @@
 
 قد تسأل ما هو القالب؟
 
-القالب هو ملف يمكننا إعادة استخدامه لتقديم معلومات مختلفة بتنسيق ثابت - على سبيل المثال، يمكنك استخدام قالب لمساعدتك على كتابة حرف، لأنه على الرغم من أن كل حرف قد يحتوي على رسالة مختلفة ويتم توجيهها إلى شخص مختلف ، وسوف تشترك في نفس الشكل.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 تم وصف تنسيق قالب جانغو في لغة تسمى HTML (وهذا هو ال HTML التي ذكرناها في الفصل الأول،**How the Internet works**).
 
@@ -29,47 +29,47 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 انظر كيف يبدو موقع الويب الخاص بك الآن: http://127.0.0.1:8000/
 
-> إذا كان لا يزال لديك خطأ `TemplateDoesNotExist`,، حاول إعادة تشغيل الخادم الخاص بك. انتقل الى سطر الأوامر حاول ايقاف الخادم عبر (بالضغط على Ctrl+C - مفتاح التحكم و C معا) وإعادة تشغيله من خلال تشغيل الأمر ` python manage.py runserver </ 0>.</p>
-</blockquote>
+> إذا كان لا يزال لديك خطأ `TemplateDoesNotExist`,، حاول إعادة تشغيل الخادم الخاص بك. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-<p><img src="images/step1.png" alt="الرقم 11.1" /></p>
+![الرقم 11.1](images/step1.png)
 
-<p>لا يوجد خطأ بعد الآن! تهاني:) ومع ذلك، موقع الويب الخاص بك لم ينشر أي شيء ما عدا صفحة فارغة، نظراً لأن القالب فارغ . نحن بحاجة إلى إصلاح ذلك.</p>
+لا يوجد خطأ بعد الآن! تهاني:) ومع ذلك، موقع الويب الخاص بك لم ينشر أي شيء ما عدا صفحة فارغة، نظراً لأن القالب فارغ . نحن بحاجة إلى إصلاح ذلك.
 
-<p>أضف ما يلي إلى ملف القالب الخاص بك:</p>
+أضف ما يلي إلى ملف القالب الخاص بك:
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><html>
+```html
+<html>
     <p>Hi there!</p>
     <p>It works!</p>
 </html>
-`</pre> 
-> 
-> كيف يبدو موقعك الآن؟ يرجى زيارة الموقع لمعرفة ذالك: http://127.0.0.1:8000/
-> 
-> ![الرقم 11.2](images/step3.png)
-> 
-> إنه كان مجديًا! لقد قمت بعمل جيد هناك:)
-> 
-> * إن العلامة الأساسية، `<html>`، هي دائما بداية أي صفحة ويب و `</html>` هي دائما النهاية. كما ترون، يذهب كامل محتوى الموقع بين بداية الوسم `<html>`وعلامة إغلاق `</html>`
-> * `<p>`علامة لعناصر الفقرة؛ `</p>` يغلق كل فقرة
-> 
-> ## الرأس والجسم
-> 
-> كل صفحة HTML تنقسم إلى عنصرين هما **head** و **body**.
-> 
-> * **head** هو عنصر يحتوي على معلومات حول المستند الذي لا يتم عرضه على الشاشة.
-> 
-> * **body** هو عنصر يحتوي على كل شيء يتم عرضه كجزء من صفحة ويب.
-> 
-> نحن نستخدم `<head>` لإخبار المتصفح عن إعدادات الصفحة، و `<body>` ليقول ما هو موجود فعلا في الصفحة.
-> 
-> على سبيل المثال، يمكنك وضع عنصر عنوان صفحة ويب داخل `<head>`، مثل هذا:
-> 
-> {% filename %}blog/templates/blog/post_list.html{% endfilename %}
-> 
-> ```html
+```
+
+كيف يبدو موقعك الآن؟ يرجى زيارة الموقع لمعرفة ذالك: http://127.0.0.1:8000/
+
+![الرقم 11.2](images/step3.png)
+
+إنه كان مجديًا! لقد قمت بعمل جيد هناك:)
+
+* إن العلامة الأساسية، `<html>`، هي دائما بداية أي صفحة ويب و `</html>` هي دائما النهاية. كما ترون، يذهب كامل محتوى الموقع بين بداية الوسم `<html>`وعلامة إغلاق `</html>`
+* `<p>`علامة لعناصر الفقرة؛ `</p>` يغلق كل فقرة
+
+## الرأس والجسم
+
+كل صفحة HTML تنقسم إلى عنصرين هما **head** و **body**.
+
+* **head** هو عنصر يحتوي على معلومات حول المستند الذي لا يتم عرضه على الشاشة.
+
+* **body** هو عنصر يحتوي على كل شيء يتم عرضه كجزء من صفحة ويب.
+
+نحن نستخدم `<head>` لإخبار المتصفح عن إعدادات الصفحة، و `<body>` ليقول ما هو موجود فعلا في الصفحة.
+
+على سبيل المثال، يمكنك وضع عنصر عنوان صفحة ويب داخل `<head>`، مثل هذا:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
 <html>
     <head>
         <title>Ola's blog</title>
@@ -140,7 +140,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 لقد أنشأنا ثلاثة أقسام `div` هنا.
 
 * يحتوي العنصر `div` الأول على عنوان مدونتنا - إنه عنوان ورابط
-* هناك عنصرا `div` آخران يحتويان على مدوناتنا التي تحتوي على تاريخ منشور، `h2` مع عنوان مشاركة قابل للنقر واثنين من `p` (فقرة) ، أحدهما للتاريخ والآخر لمدونتنا.
+* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 هو يتيح لنا هذا التأثير:
 
@@ -163,7 +163,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
     $ git status
     
 
-تأكد من أنك في دليل `djangogirls` ودعنا نخبر `git` بتضمين جميع التغييرات ضمن هذا الدليل:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 
