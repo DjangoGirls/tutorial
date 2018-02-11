@@ -8,7 +8,7 @@ URL 只是一個 web 位址。 You can see a URL every time you visit a website 
 
 ![Url](images/url.png)
 
-在網際網路上每個網頁都需要有它自己的 URL。 This way your application knows what it should show to a user who opens that URL. 在 Django，我們使用叫做 `URLconf` (URL configuration)。 URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+在網際網路上每個網頁都需要有它自己的 URL。 This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## 在 Django 上 URLs 如何運作？
 
@@ -33,7 +33,7 @@ As you can see, Django has already put something here for us.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-The admin URL, which you visited in previous chapter, is already here:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ The admin URL, which you visited in previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
-你想知道 Django 如何將 URLs 匹配到 views 嗎？ 喔，這一部分比較棘手。 Django 使用 `regex`，是 "正規表示法" ("regular expressions") 的簡稱。 正規表示法有很多（很多！）的規則，這些規則形成一個搜尋模式。‘ 由於正規表示法是一個進階的主題，我們將不會在這裡詳細地討論它如何運行。
+你想知道 Django 如何將 URLs 匹配到 views 嗎？ 喔，這一部分比較棘手。 Django 使用 `regex`，是 "正規表示法" ("regular expressions") 的簡稱。 正規表示法有很多（很多！）的規則，這些規則形成一個搜尋模式。‘ Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -61,9 +61,9 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
 
 為所有個別編號的文章撰寫單獨的 views將會很令人惱火。 With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** 表示這是一個數字（個位數或多數位），且我們要提取這個數字。
-* **/** 告訴 django 另一個 `/` 字元緊跟在後。
+* **/** tells Django that another `/` character should follow
 * **$** 表示 URL 的末端，意味只有以 `/` 結束的字串將匹配這個模式。
 
 ## Your first Django URL!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django 現在將所有要瀏覽 'http://127.0.0.1:8000/' 請求，引導到 `blog.urls`，並注意看看有沒有進一步的指示。
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Writing regular expressions in Python is always done with `r` in front of the string. 對 Python 而言，這是一個有用的提示，它告訴 Python 這字串可能包含特殊字元，這些特殊字元不是給 Python 而是給正規表示法用的。
 
@@ -124,6 +124,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![錯誤 (Error)](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
 
 > 如果你想要知道更多有關於 Django URLconfs，可查看 Django 官方文件：https://docs.djangoproject.com/en/1.11/topics/http/urls/
