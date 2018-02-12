@@ -201,13 +201,15 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-A sleduj svůj kód jak se stahuje. Pokud si chceš zkontrolovat, že se kód opravdu nahrál, můžeš skočit do záložky **Files** a podívat se na svůj kód na PythonAnywhere.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * A konečně, skoč na záložku [Web](https://www.pythonanywhere.com/web_app_setup/) a klikni na **Reload** (Znovu načíst).
 
-Obnov svou stránku v prohlížeči. Měla bys vidět změny. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
