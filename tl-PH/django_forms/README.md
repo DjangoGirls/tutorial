@@ -433,11 +433,13 @@ Tingnan natin kung gagana ito sa PythonAnywhere. Oras na para gumawa ng isa pang
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Sa katapusan, puntahan ang iyong [Web tab](https://www.pythonanywhere.com/web_app_setup/) at pindutin ang **Reload**.
 
-Ay dyan na natapos! Binabati ko kayo! :)
+And that should be it! Congrats :)
