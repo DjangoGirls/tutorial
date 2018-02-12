@@ -201,13 +201,15 @@ Una vez hecho esto, subimos (push) los cambios a Github:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-Y mira cómo tu código se descarga. Si quieres comprobar que ya ha terminado, puedes ir a la pestaña **Files** y ver tu código en PythonAnywhere.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * Finalmente, dirígete a la pestaña [Web](https://www.pythonanywhere.com/web_app_setup/) y selecciona **Reload** en tu aplicación web.
 
-Tu actualización debería estar en línea! Actualiza tu sitio web en el navegador. Ahora deberías poder ver tus cambios. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
