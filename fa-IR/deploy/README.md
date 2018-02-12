@@ -126,138 +126,89 @@ db.sqlite3
 >     کد شما در حال حاضر در GitHub است. برو و بررسیش کن!  شما این را در شرکت خوبی خواهید یافت - [جانگاو] (https://github.com/django/django)، [دختران آموزش یونانی] (https://github.com/DjangoGirls/tutorial) و بسیاری دیگر از بزرگ پروژه های نرم افزاری منبع باز نیز کد خود را در GitHub میزبانی می کنند. :)
 >     
 >     
->     # راه اندازی وبلاگ ما در هرکجا پایتون
+>     # Setting up our blog on PythonAnywhere
 >     
->     & gt؛ ** توجه داشته باشید ** شما ممکن است قبلا یک حساب هرکجا پایتون قبل از مراحل نصب نصب کرده باشید - در صورت لزوم، نیازی به انجام آن دوباره نیست.
+>     ## Sign up for a PythonAnywhere account
 >     
->     {٪ include "/deploy/signup_pythonanywhere.md"٪}
+>     &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+>     
+>     {% include "/deploy/signup_pythonanywhere.md" %}
 >     
 >     
->     ## کشیدن کد ما را در هرکچا پایتون
+>     ## Configuring our site on PythonAnywhere
 >     
->     هنگامی که شما برای هرکچا پایتون ثبت نام کرده اید، به صفحه داشبورد یا صفحه کنسول خود منتقل خواهید شد. گزینه ای برای راه اندازی یک کنسول باش را انتخاب کنید - این نسخه هرکجا پایتون یک کنسول است، درست همانند یک رایانه.
+>     Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 >     
->     <0 />
+>     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
 >     
->     & gt؛ ** توجه داشته باشید ** هرکجا پایتون بر روی لینوکس است، بنابراین اگر شما در ویندوز هستید، کنسول کمی کمی متفاوت با رایانه شما خواهد بود.
+>     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 >     
->     بیایید کد ما را از گیت هاب و به هرکجا پایتون بکشیم، با ایجاد "کلون" از مخزن ما. زیر را در console در هرکجا پایتون بنویسید (فراموش نکنید که از نام کاربری گیت هاب خود به جای `` 0> `استفاده کنید):
+>     Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 >     
->     ٪ filename٪}} خط فرمان هرکجا پایتون ٪ endfilename٪}}
->     
-> 
-> کلون $ گیت https://github.com/<your-github-username>/اولین وبلاگ من.گیت
-> 
->     <br />این یک کپی از کد شما را در هرکجا پایتون کشف می کند. با تایپ کردن «درخت اول من-وبلاگ»، آن را چک کنید
->     
->     filename٪}} خط فرمان هرکجا پایتون% endfilename٪}}
+>     {% filename %}PythonAnywhere command-line{% endfilename %}
 >     
 > 
-> $ اولین وبلاگ من اولین وبلاگ من / ├── وبلاگ │ ├── ** اینت </ 0>.py │ ├── مدیر.py │ ├── مهاجرت │ │ ├── 0001_اولیه.py │ │ └── ** اینت </ 0>.py │ ├── مدل.py │ ├── تستها.py │ └──نمایشها.py ├── مدیریت.py └─────────────      ├── ** init </ 0>.py      ├── تنظیمات.py      ├── urls.py      └──wsgi.py</p> 
+> $ pip3.6 install --user pythonanywhere
 > 
->     <br /><br />### ایجاد مجازی مجازی در هرکجا پایتون
+>     <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 >     
->     درست همانطور که در رایانه خودتان انجام دادید، می توانید یک مجله مجازی در هرکجا پایتون ایجاد کنید. در کنسول باش تایپ کنید:
+>     Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
 >     
->     ٪ filename٪}}خط فرمان هرکجا پایتون٪ endfilename٪}}
->     
-> 
-> $ سی دی اولین وبلاگ من
-> 
-> $ مجازی--پایتون= پایتون3.6 myvenv virtualenv در حال اجرا با مترجم /usr/bin/پایتون3.6 [...] نصب ابزار نصب، pip... انجام شد.
-> 
-> $ myvenv / bin / فعال شد
-> 
-> (مای ون) $ pip نصب جنگجو~ = 1.11.0 جمع آوری جانگاو [...] موفق به نصب جنگجو -1.11.3 شد
-> 
->     <br /><br />& gt؛ ** نکته ** مرحله `پیپ نصب` می تواند چند دقیقه طول بکشد.  صبر، صبر و شکیبایی!  اما اگر بیش از پنج دقیقه طول بکشد، چیزی اشتباه است.  از مربی خود بپرسید.
->     
->     & lt؛! - انجام دادن: فکر کردن در مورد استفاده از الزامات.متنی به جای نصب pip.-- & gt؛
->     
->     ### ایجاد پایگاه داده در هرکجا پاتیتون
->     
->     در اینجا چیز دیگری است که بین کامپیوتر و سرور شما متفاوت است: از یک پایگاه داده متفاوت استفاده می کند. بنابراین حساب های کاربری و پست ها می توانند بر روی سرور و رایانه شما متفاوت باشند.
->     
->     همانطور که ما در کامپیوتر خودمان انجام دادیم، گام را برای مقداردهی اولیه پایگاه داده در سرور با "migrate" و "createuperuser" تکرار می کنیم:
->     
->     {٪ filename٪}} خط فرمان هرکجا پایتون{٪ endfilename٪}}
+>     {% filename %}PythonAnywhere command-line{% endfilename %}
 >     
 > 
-> (مای ون) $ پایتونمدیریت.py مهاجرت کنید عملیات انجام شده: [...]    اعمال بخشها.0001_initial... OK (مای ون) $ پایتون مدیریت.بدنبال ایجاد ناگهانی
+> $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 > 
->     <br />## انتشار وبلاگ ما به عنوان یک برنامه وب
+>     <br />As you watch that running, you'll be able to see what it's doing:
 >     
->     حالا کد ما در هرکجا پایتون است، مجازی ما آماده است و پایگاه داده مقداردهی اولیه شده است. ما آماده انتشار آن به عنوان یک برنامه وب هستیم!
+>     - Downloading your code from GitHub
+>     - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+>     - Updating your settings file with some deployment settings
+>     - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+>     - Setting up your static files (we'll learn about these later)
+>     - And configuring PythonAnywhere to serve your web app via its API
 >     
->     با کلیک بر روی آرم خود، به صفحه داشبورد هرکجا پایتون ، سپس روی برگه ** وب** کلیک کنید. در نهایت، ضربه ** اضافه کردن یک برنامه وب جدید **.
+>     On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 >     
->     پس از تایید نام دامنه خود، ** تنظیمات دستی ** را انتخاب کنید (N.B. - * نه * گزینه "جنگجو") در گفتگو. بعد ** پایتون 3.6 ** را انتخاب کنید و برای پایان دادن به جادوگر روی ادامه کلیک کنید.
+>     As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 >     
->     & gt؛ ** توجه داشته باشید ** مطمئن شوید گزینه "پیکربندی دستی" را انتخاب کرده اید، نه "جنگجو". ما برای راه اندازی هرکجا پایتون جنگجو به طور پیش فرض خیلی خوشحالیم. ؛-)
->     
->     
->     ### تنظیم مجازی مجازی
->     
->     شما برای صفحه وب خود به صفحه پیکربندی هرکجا پایتون منتقل می شوید، که در آن شما باید هر زمان که بخواهید به برنامه در سرور تغییر دهید، بروید.
->     
->     <0 />
->     
->     در بخش "مجازی "، روی متن قرمز که می گوید "مسیر را به مجازی وارد کنید" را کلیک کنید، و وارد کنید "/ home / &lt;your-PythonAnywhere-username&gt; / اولین وبلاگ من / مای ون/`. قبل از حرکت به مسیر، مسیر جعبه آبی را با علامت گذاری کنید.
->     
->     & gt؛ ** توجه * نام کاربری هرکجا پایتون خود را به صورت مناسب جایگزین کنید. اگر اشتباهی کردید، هرکجا پایتون یک هشدار کوچک را به شما نشان می دهد.
->     
->     
->     ### پیکربندی فایل WSGI
->     
->     جانگو با استفاده از پروتکل WSGI، یک استاندارد برای خدمت به وب سایت ها با استفاده از پایتون، که هرکجا پایتون پشتیبانی می کند، کار می کند. نحوه پیکربندی هرکجا پایتون ما برای شناسایی وبلاگ ما با استفاده از جنگجو با ویرایش یک فایل پیکربندی WSGI است.
->     
->     بر روی پیوند "فایل پیکربندی WSGI" (در بخش "کد" در بالای صفحه کلیک کنید - آن را به نام `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), نامگذاری کنید) و شما خواهید بود گرفته شده به یک ویرایشگر.
->     
->     تمام مطالب را حذف کنید و آنها را با موارد زیر جایگزین کنید:
->     
->     {٪ filename٪} & amp؛ lt؛ your-username & amp؛ gt؛ _pythonanywhere_com_wsgi.py {٪ endfilename٪}
->     `` `پایتون
->     واردات os
->     واردات سیستم
->     
->     مسیر = os.مسیر.فرستنده ('~ / my-first-blog')
->     اگر مسیر در sys.path نیست:
->          sys.مسیر.اضافه کردن (مسیر)
->     
->     os.environ ['DJANGO_SETTINGS_MODULE'] = 'سایت من.موقعیت'
->     
->     از جنگجو.هسته.wsgi وارد گرفتن _wsgi_ابزارها
->     از جنگجو.contrib.staticfiles.هندلر واردات فایل مدیریت استاتیک
->     ابزارها = فایل مدیریت استاتیک (get_wsgi_application ())
+>     {% filename %}PythonAnywhere command-line{% endfilename %}
 >     
 > 
-> این کار این است که هرکجا پایتون را در جایی که برنامه وب ما زندگی می کند و نام پرونده تنظیمات جنگو است، بفرستیم.
+> (ola.pythonanywhere.com) $ python manage.py createsuperuser
 > 
->  فایل مدیریت استاتیک </ 0> برای مقابله با CSS ما است. این فرمان <code> اجرا سرور </ 0> به طور خودکار برای شما در حین توسعه محلی مراقبت می شود. بعدا در مورد آموزش فایل های استاتیک کمی بیشتر توضیح خواهیم داد، وقتی CSS را برای سایت ما ویرایش میکنیم.</p>
-
-<p>هیت <strong> ذخیره </ 0> و سپس به برگه <strong> وب </ 0> بروید.</p>
-
-<p>همه ما انجام شده است! دکمه بزرگ سبز <strong> بارگیری مجدد </ 0> را فشار دهید و شما قادر به مشاهده برنامه خود خواهید بود. یک پیوند به آن در بالای صفحه پیدا خواهید کرد.</p>
-
-<h2>نکات اشکال زدایی</h2>
-
-<p>اگر هنگام تلاش برای بازدید از سایت خود خطایی را مشاهده کردید، اولین مکان برای جستجوی برخی از اطلاعات خطایابی در <strong> خطا در ورود </ 0> وجود دارد. پیوند این را در هرکجا پایتون <a href="https://www.pythonanywhere.com/web_app_setup/"> برگه وب </ 0> پیدا خواهید کرد. ببینید اگر پیام های خطا در آنجا وجود داشته باشد؛ آخرین آنها در پایین هستند. مشکلات رایج عبارتند از:</p>
-
-<ul>
-<li><p>فراموش کردن یکی از مراحل انجام شده در کنسول: ایجاد مجازی، فعال کردن آن، نصب کردن جانگو در آن، مهاجرت به پایگاه داده.</p></li>
-<li><p>اشتباه در مسیر مجازی در برگه وب - معمولا یک پیام خطای قرمز کوچک وجود دارد، اگر یک مشکل وجود دارد.</p></li>
-<li><p>اشتباه در فایل پیکربندی WSGI - آیا مسیر را به پوشه اولین وبلاگ من درست کردم؟</p></li>
-<li><p>آیا همان نسخه پایتون را برای مجازی خود انتخاب کردید همانطور که برای برنامه وب خود انجام دادید؟ هر دو باید 3.6 باشد.</p></li>
-</ul>
-
-<p>همچنین برخی از نکات اشکال زدائی کلی <a href="https://www.pythonanywhere.com/wiki/DebuggingImportError"> در ویکی هرکجا پایتون </ 0> وجود دارد.</p>
-
-<p>و به یاد داشته باشید، مربی شما برای کمک به اینجا است!</p>
-
-<h1>تو زندگی میکنی!</h1>
-
-<p>صفحه پیش فرض سایت شما باید بگوید "این کار کرده است!" درست همانطور که در رایانه محلی شماست. سعی کنید <code> / مدیر / </ 0> را به انتهای آدرس اینترنتی اضافه کنید و به سایت مدیریت برسید. با نام کاربری و رمز عبور وارد شوید و ببینید که می توانید پست های جدید را در سرور اضافه کنید.</p>
-
-<p>هنگامی که چند پست ایجاد شده دارید می توانید به تنظیم محلی خود (نه هرکجا پایتون) بازگردید. از اینجا باید تنظیمات محلی خود را انجام دهید تا تغییرات ایجاد کنید. این یک گردش کار مشترک در توسعه وب است - تغییرات را به صورت محلی انجام دهید، این تغییرات را به گیت هاب فشار دهید و تغییرات خود را به سرور وب زنده خود بکشید. این به شما اجازه می دهد بدون شکستن وب سایت زنده خود کار کنید و آزمایش کنید. خیلی خن؟</p>
-
-<p><em> بزرگ </ 0> خودت را در پشت بگذار! استقرار سرور یکی از پیچیده ترین قسمت های توسعه وب است و اغلب مردم چند روز قبل از اینکه کارشان را انجام دهند، آنها را می گیرد. اما شما سایت خود را در زندگی واقعی، در اینترنت واقعی، درست مثل این است!</p>
+>     <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+>     
+>     Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+>     
+>     {% filename %}PythonAnywhere command-line{% endfilename %}
+>     
+> 
+> (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
+> 
+> You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+> 
+> ## You are now live!
+> 
+> Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+> 
+> ## Debugging tips
+> 
+> If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
+> 
+> - Forgetting to create your API token.
+> - Making a mistake in your GitHub URL
+> 
+> If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+> 
+> There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+> 
+> And remember, your coach is here to help!
+> 
+> # تو زندگی میکنی!
+> 
+> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> 
+> Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> 
+> Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
