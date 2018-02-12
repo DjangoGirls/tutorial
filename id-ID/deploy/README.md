@@ -105,7 +105,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > >      {% filename%} command-line {% endfilename%}
 > >     
 > > 
-> > Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), digunakan kembali 0 (delta 0) Untuk https://github.com/hjwp/my-first-blog.git
+> > Username for 'https://github.com': ola Password for 'https://ola@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/ola/my-first-blog.git
 > > 
 > > - [cabang baru] master -> master master cabang diatur untuk melacak master cabang jarak jauh dari asal.
 > > 
