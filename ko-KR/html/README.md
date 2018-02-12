@@ -201,12 +201,14 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-그러면 코드가 다운되는 것을 볼 수 있어요. 다 되었는지 확인하고 싶으면 **파일 탭(Files tab)**에 가서 내 코드가 PythonAnywhere에 있는지 확인합니다.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * 마지막으로 [웹 탭(Web tab)](https://www.pythonanywhere.com/web_app_setup/)으로 가서 여러분의 웹 앱을 **다시 불러오기**를 하세요.
 
