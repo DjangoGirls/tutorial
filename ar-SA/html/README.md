@@ -201,13 +201,15 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-وشاهد تعليماتك البرمجية يتم تحميلها ،اذا اردت ان ترى ان كانت قد وصلت ، يمكنك الإنتقال الى **Files tab** ورؤية تعليماتك في PythonAnywhere.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
-يجب أن يكون التحديث مباشر! امضي قدما وحدث موقع الويب الخاص بك في المتصفح. يجب أن تكون التغييرات مرئية. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
