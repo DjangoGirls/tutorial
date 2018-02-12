@@ -437,11 +437,13 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Enfin, cliquez sur l'onglet [Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur **Reload**.
 
-Normalement, ça devrait suffire ! Encore bravo :)
+And that should be it! Congrats :)
