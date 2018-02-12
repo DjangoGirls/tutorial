@@ -117,7 +117,7 @@ db.sqlite3
 >     {٪ filename٪} خط فرمان {٪ endfilename٪}
 >     
 > 
-> نام کاربری برای 'https://github.com': hjwp رمز عبور برای 'https: //hjwp@github.com': شمارش اشیاء: 6، انجام شده است. نوشتن اشیاء: 100٪ (6/6)، 200 بایت | 0 بایت / ثانیه، انجام شده است. مجموع 3 (دلتا 0)، استفاده مجدد 0 (دلتا 0) برای https://github.com/hjwp/my-first-blog.git
+> Username for 'https://github.com': ola Password for 'https://ola@github.com': Counting objects: 6, done. نوشتن اشیاء: 100٪ (6/6)، 200 بایت | 0 بایت / ثانیه، انجام شده است. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/ola/my-first-blog.git
 > 
 > - [شاخه جدید] استاد -> استاد کارشناسی ارشد برای راه انداختن استاد شاخه از راه دور از مبدأ تنظیم شده است.
 > 
