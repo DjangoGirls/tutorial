@@ -122,140 +122,89 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     Ang iyong code ay nasa GitHub na. Puntahan at suriin ito!  Makikita mo na ito ay nasa magandang grupo – [Django](https://github.com/django/django), ang [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), at marami pang ibang magagandang mga open-source proyekto na mga software na nakahost din ang code sa Github. :)
     
     
-    # Sini-setup ang iyong blog sa PythonAnywhere
+    # Setting up our blog on PythonAnywhere
     
-    &gt; **Paalala** Maaring nakalikha ka na ng account sa PythonAnywhere sa pag-install na baitang - kung gayon, hindi mo na kalilangan itong ulitin.
+    ## Sign up for a PythonAnywhere account
+    
+    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## Pulling our code down on PythonAnywhere
+    ## Configuring our site on PythonAnywhere
     
-    Kung nakasign-up ka sa PythonAnywhere, dadalhin ka sa iyong dashboard o "Consoles" na pahina. Piliin ang opsyon para patakbuhin ang console na "Bash" - yan ang bersyon ng PythonAnywhere na console, gaya ng sa iyong kompyuter.
+    Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
     
-    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
-    &gt; **Paalala** Ang PythonAnywhere ay nakabatay sa Linux, kung ikaw ay nasa Windows, ang console ay medyo kakaiba sa console ng kompyuter mo.
+    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Ating hahatakin ang ating code galing sa Github papunta sa PythonAnywhere sa pamamagitan ng paglikha ng "clone" ng ating repo. I-type mo ang sumusunod sa iyong console sa PythonAnywhere (wag kalimot na gamiting ang iyong GitHub na bansag kapalit ng `&lt;your-github-username&gt;`):
-    
-    {% filename %}PythonAnywhere command-line{% endfilename %}
-    
-
-$ git clone https://github.com/<your-github-username>/my-first-blog.git
-
-    <br />Ito ay maghahatag ng kopya ng iyong code papunta sa PythonAnywhere. Suriin ito sa pamamagitan ng pag-type ng `tree my-first-blog`:
+    Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-$ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
+$ pip3.6 install --user pythonanywhere
 
-    <br /><br />### Creating a virtualenv on PythonAnywhere
+    <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
     
-    Tulad ng ginawa mo sa iyong sariling kompyuter, pwede kang maglikha ng virtualenv sa PythonAnywhere. Sa loob ng console ng Bash, i-type ang:
+    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-$ cd my-first-blog
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 
-$ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
-
-    <br /><br />&gt; **Paalala** Ang hakbang na `pip install` ay maaring tatagal ng ilang minuto.  Tiis, tiis!  Kung ito ay tatagal ng lampas na limang minuto, may problema.  Tanungin ang iyong coach.
+    <br />As you watch that running, you'll be able to see what it's doing:
     
-    &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
+    - Downloading your code from GitHub
+    - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+    - Updating your settings file with some deployment settings
+    - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+    - Setting up your static files (we'll learn about these later)
+    - And configuring PythonAnywhere to serve your web app via its API
     
-    ### Paglikha ng database sa PythonAnywhere
+    On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
     
-    Ito pa ang ibang bagay na kakaiba sa iyong kompyuter at server: ito ay gumagamit ng ibang database. Kaya ang mga user account at mga post ay maaring kakaiba sa iyong server at sa iyong kompyuter.
-    
-    Tulad ng ginawa natin sa iyong sariling kompyuter, uulitin natin ang hakbang sa pag-initialize ng database sa iyong server, gamit ang `migrate` at `createsuperuser`:
+    As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-(mvenv) $ python manage.py migrate Mga operasyon na kailangang gawin: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />## Paglathala ng ating blog isip isang web app
+    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
     
-    Ngayon ang ating code ay nasa PythonAnywhere na, ang ating virtualenv ay handa na, at na initialize na ang database. Handa na kaming ilathala ito isip isang web app!
+    Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
     
-    I-click pabalik sa PythonAnywhere na dashboard sa pamamagitan ng pag-click sa logo nito, and then i-click ang **Web** na tab. Sa wakas, pindutin ang **Add a new web app**.
-    
-    Pagkatapos ikompirma ang pangalan ng iyong domain, piliin ang **manual configuration** (N.B. - *not* the "Django" option) sa loob ng dialog. Kasunod, piliin ang **Python 3.6**, at i-click ang Next para tapusin ang wizard.
-    
-    &gt; **Paalala** Siguraduhing napili mo ang opsyon na "Manual configuration", hindi yung "Django". Masyado tayong cool para sa default na Django setup ng PythonAnywhere. ;-)
-    
-    
-    ### Setting the virtualenv
-    
-    Dadalhin ka sa config screen ng PythonAnywhere sa iyong webapp, kung saan ka kailangang pumunta sa tuwing gusto mong gumawa na pagbabago sa iyong app na nasa server.
-    
-    &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
-    
-    Sa loob ng "Virtualenv" na bahagi, i-click ang pulang teksto na nagsasabing "Enter the path to a virtualenv", at pumasok sa `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. I-click ang asul na kahon na may checkmark para i-save ang path bago magpatuloy.
-    
-    &gt; **Paalala** Palitan ang iyong bansa sa PythonAnywhere kung kinakailangan. Kung may mga mali, magpapakita ang PythonAnywhere ng mga konting babala.
-    
-    
-    ### Configuring the WSGI file
-    
-    Ang Django ay gumagana gamit ang "WSGI protocol", isang pamantayan sa pagpapatakbo ng mga website gamit ang Python, na sinusuportahan ni PythonAnywhere. Ang pamamaraan na ma-configure ang PythonAnywhere para makilala nya ang ating blog sa Django ay sa pamamagitan ng pag-edit ng WSGI na configuration file.
-    
-    I-click ang link ng "WSGI configuration file" (sa loob ng "Code" na seksiyon malapit sa taas ng pahina - tatawagin itong `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`), at dadalhin ka sa isang editor.
-    
-    Burahin ang lahat ng lamat at palitan ito nang sumusunod: 
-    
-    
-    {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
-    ```python
-    import os
-    import sys
-    
-    path = os.path.expanduser('~/my-first-blog')
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from django.contrib.staticfiles.handlers import StaticFilesHandler
-    application = StaticFilesHandler(get_wsgi_application())
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-Ang trabaho ng file na ito ay para sabihan si PythonAnywhere kung saan ang ating web app nakatira at kung ano ang pangalan ng file para sa setting ng Django.
+(ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-Ang `StaticFilesHandler` ay para sa pagbabahagi ng ating CSS. Ito ay awtomatikong nagawa para sayo habang nagdedevelop sa lokal sa pamamagitan ng pagpatakbo ng `runserver` na command. Malalaman natin ito nang masinsinan ang tungkol sa static na mga file sa huling parte ng tutorial, kung saan i-edit natin ang CSS para sa ating site.
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-Banatan ang **Save** na button at bumalik sa **Web** na tab.
+## You are now live!
 
-Tapos na tayo! Banatan ang malaking berdeng **Reload** na button at maari mo nang matingnan ang iyong application. Makikita mo ang link sa taas ng pahina.
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
-## Mga tip para sa pag-debug
+## Debugging tips
 
-Kung may nakita kang mga problema habang binista mo ang iyong website, ang una mong dapat tingnan ay ang mga debugging na impormasyon sa loob ng iyong **error log**. Makakakita ka ng link papunta dito sa [Web tab](https://www.pythonanywhere.com/web_app_setup/) ng PythonAnywhere. Tingnan kung may mga error na mga mensahe sa loob; ang pinakabago ay nasa ilalim. Ang mga karaniwang problema ay lakip nito:
+If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
 
-- Kung malimutan ang isa sa mga hakbang na ginawa natin sa console: paglikha ng virtualenv, pag-activate nito, pag-install ng Django sa loob nito, at paglipat ng database.
+- Forgetting to create your API token.
+- Making a mistake in your GitHub URL
 
-- Kung may nagawang mali sa path ng virtualenv sa loob ng Web tab - kadalasan ay mayroon itong mga maliliit na pulang error message sa loob, kung may problema.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-- May mga mali sa loob ng WSGI na configuration file - nakuha mo bang maayos ang daan papunta sa iyong my-first-blog na folder?
+There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-- Pinili mo ba ang parehang bersyon ng Python sa iyong virtualenv gaya ng ginawa mo sa web app? Ang dalawa ay dapat 3.6.
-
-Mayroon ding mga [karaniwang debugging na mga tip sa wiki ng PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
-
-At wag kalimutan, nandito ang iyong coach para tumulong!
+And remember, your coach is here to help!
 
 # Buhay ka pa!
 
-Ang default na pahina ng iyong website ay dapat nagsasabing "It worked!", gaya ng ginawa nito sa iyong lokal na kompyuter. Subukan mong magdagdag ng `/admin/` sa bandang huli ng URL, at dadalhin ka nito sa site ng admin. Maglog-in gamit ang iyong bansag at password, at makikita mo na maari kang magdagdag ng mga bagong Post sa server.
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-Kapay may nalikha ka nang mga posts, maari kang bumalik sa iyong lokal na setup (hindi sa PythonAnywhere). Mula dito, dapat kang magtrabaho sa iyong lokal na setup para sa mga pagbabago. Ito ay karaniwang pamamaraan sa web development - gumawa ng update sa lokal, i-push ang mga binago sa Github, at hatakin ang mga ito sa iyong live na Web server. Ito ay nagbibigay sa iyo ng pagkakataon na magtrabaho at mag-eksperimento na hindi nasisira ang iyong live na Web site. Galing, di ba?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-Bigyan mo ang sarili mo ng isang *NAPAKALAKING* tapik sa likod mo! Ang pag deploy sa server ay isa sa mga mahihirap ng parte ng web development at ito ay kadalasang aabot ng ilang araw bago nila mapatakbo ito. Pero ikaw ay nakapatakbo ng sa iyong site nang live, sa tunay na Internet nang ganon na lang!
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
