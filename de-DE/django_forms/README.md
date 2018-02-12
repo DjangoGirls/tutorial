@@ -437,11 +437,13 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
-    $ git pull 
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
-Und das war's! Glückwunsch :)
+And that should be it! Congrats :)
