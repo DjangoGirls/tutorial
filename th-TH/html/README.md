@@ -201,13 +201,15 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-โค้ดใหม่ได้ถูกดาวน์โหลดลงมาแล้ว หากต้องการตรวจสอบดู คุณสามารถไปยัง **Files tab** และดูโค้ดของคุณบน PythonAnywhere
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * สุดท้าย ไปยัง [Web tab](https://www.pythonanywhere.com/web_app_setup/) และกดปุ่ม **Reload** บนเว็บของคุณ
 
-เว็บที่ปรับปรุงใหม่ควรจะขึ้นแล้ว! ลองโหลดหน้าบนเบราว์เซอร์ของคุณ หน้าเว็บควรจะเปลี่ยนแล้ว. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
