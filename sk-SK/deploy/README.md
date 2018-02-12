@@ -121,137 +121,89 @@ Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': 
     Tvoj kód je na Githube. Kľudne si to over!  Zistíš, že sa nachádza vo vyberanej spoločnosti - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), a mnoho iných skvelých open source-ových softvérových projektov ukladá svoj kód na GitHube. :)
     
     
-    # Umiestnenie nášho blogu na PythonAnywhere
+    # Setting up our blog on PythonAnywhere
     
-    &gt; **Poznámka** Možno si si už vytvorila účet na PythonAnzwhere počas inštalácie - ak áno, tak nemusíš to robiť znova.
+    ## Sign up for a PythonAnywhere account
+    
+    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## Stiahnutie nášho kódu na PythonAnywhere
+    ## Configuring our site on PythonAnywhere
     
-    Keď si sa zaregistrovala do PythonAnywhere, budeš presmerovaná na dashboard alebo "Consoles" stránku. Vyber si možnosť spustiť "Bash" konzolu - to je PythonAnywhere konzola, podobná ako na tvojom počítači.
+    Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
     
-    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt;
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
-    &gt; **Poznámka** PythonAnywhere ja založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
+    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    Poďme teraz natiahnuť náš kód z GitHubu na PythonAnywhere vytvorením "klonu" nášho repozitára. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto &lt;your-github-username&gt;):
-    {% filename %}PythonAnywhere command-line{% endfilename %}
-    
-
-$ git clone https://github.com/<your-github-username>/my-first-blog.git
-
-    <br />Toto stiahne kópiu tvojho kódu na PythonAnywhere. Over si to zadaním príkazu `tree my-first-blog`:
+    Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-$ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
+$ pip3.6 install --user pythonanywhere
 
-    <br /><br />### Vytvorenie virtualenv na PythonAnywhere
+    <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
     
-    Presna tak ako na tvojom počítači, môžeš vytvoriť virtualenv na PythonAnywhere. V Bash konzole, zadaj príkaz:
+    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-$ cd my-first-blog
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 
-$ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
-
-    <br /><br />&gt; ** Poznámka ** "pip install" krok môže trvať niekoľko minút.  Trpezlivosť, trpezlivosť!  Ale ak trvá viac ako päť minút, niečo nie je v poriadku.  Opýtaj sa svojho mentora.
+    <br />As you watch that running, you'll be able to see what it's doing:
     
-    &lt;!--TODO: think about using requirements.txt instead of pip install.--&gt;
+    - Downloading your code from GitHub
+    - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+    - Updating your settings file with some deployment settings
+    - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+    - Setting up your static files (we'll learn about these later)
+    - And configuring PythonAnywhere to serve your web app via its API
     
-    ### Vytváranie databázy na PythonAnywhere
+    On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
     
-    Ďalšia vec, ktorá je iná na tvojom počítači a na serveri: používa sa iná databáza. Takže používateľské kontá a príspevky na serveri a v počítači sa môžu líšiť.
+    As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
     
-    Rovnako ako sme to urobili na tvojom počítači, zopakuj krok pri inicializácii databázy na serveri, s `migrate` a `createsuperuser`:
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-(mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />## Zverejnenie nášho blogu ako webovej aplikácie
+    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
     
-    Náš kód je teraz na PythonAnywhere, virtualenv je pripravené a databáza je inicializovaná. Sme pripravení publikovať webovú aplikáciu!
+    Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
     
-    Kliknutím na logo PythonAnywhere sa vráť na nástenku a tam klikni na kartu Web. Nakoniec, stlač **Add a new web app** (Pridaj novú aplikáciu).
-    
-    Po potvrdení názvu tvojej domény, vyber v dialógu **manual configuration** (pozor, nie "Django" možnosť). Ďalej vyber **Python 3.6** a kliknutím na tlačidlo Ďalej dokonči sprievodcu.
-    
-    &gt; **Poznámka** Uisti sa že si zvolila "Manual configuration", a nie "Django" možnosť. Sme príliš cool aby sme použili predvolené Django nastavenia PythonAnywhere. ;-)
-    
-    
-    ### Nastavenie virtualenv
-    
-    Budeš presmerovaná na PythonAnywhere konfiguračnú obrazovku pre tvoju aplikáciu. Sem budeš musieť chodiť vždy, keď budeš chcieť urobiť nejaké zmeny v tvojej aplikácii na serveri.
-    
-    &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
-    
-    V časti "Virtualenv", klikni na červený text "Enter the path to a virtualenv", a zadah `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. Klikni na modré políčko s fajočkou a ulož tak cestu predtým, ako budeš pokračovať ďalej.
-    
-    &gt; **Poznámka** Nahraď svoje PythonAnywhere uživateľské meno podľa potreby. Ak urobíš chybu, PythonAnywhere zobrazí malé upozornenie.
-    
-    
-    ### Konfigurácia WSGI súboru 
-    
-     Django funguje pomocou "protokolu WSGI", ktorý je štandardom pre obsluhu webových stránok pomocou Pythonu, a ktorý PythonAnywhere podporuje. Aby PythonAnywhere rozpoznal náš Django blog, musíme upraviť WSGI konfiguračný súbor.
-    
-    Klikni na link "WSGI configuration file" (v časti "Code" v hornej časti stránky -- bude sa volať nejako takto `/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py`) a dostaneš sa do editora.
-    
-    Zmaž celý obsah a nahraď ho nasledovným:
-    
-    {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
-    ```python
-    import os
-    import sys
-    
-    path = os.path.expanduser('~/my-first-blog')
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from django.contrib.staticfiles.handlers import StaticFilesHandler
-    application = StaticFilesHandler(get_wsgi_application())
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-Úlohou tohto súboru je oznámiť PythonAnywhere kde sa naša aplikácia nachádza a aký je názov súboru s Django nastaveniami.
+(ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-`StaticFilesHandler` sa stará o naše CSS. O toto sa stará automaticky príkaz `runserver`, počas vývoja na lokálnom počítači. O statických súboroch sa naučíme trochu viac neskôr, keď budeme upravovať CSS pre našu stránku.
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-Klikni na **Save** a vráť sa na kartu **Web**.
+## You are now live!
 
-Hotovo! Klikni na veľké zelené tlačidlo **Reload** a potom sa už môžeš pozrieť na svoju aplikáciu. Odkaz na ňu nájdeš navrchu stránky.
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
-## Tipy pre ladenie
+## Debugging tips
 
-Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [karte Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku. Najčastejšie problémy bývajú:
+If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
 
-- Vynechaný krok, ktorý sme robili v konzole: vytvorenie virtualenv, jeho aktivácia, inštalácia Djanga do virtualenvu, spustenie collectstatic, presun databázy.
+- Forgetting to create your API token.
+- Making a mistake in your GitHub URL
 
-- Chyba v ceste virtualenv v karte Web -- ak je nejaký problém, zvyčajne tam bude malá červená chybová hláška.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-- Chyba vo WSGI konfiguračnom súbore -- zadala si cestu do adresára my-first-blog správne?
+There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-- Vybrala si si rovnakú verziu Pythonu pre virtualenv ako pre webovú aplikáciu? Obidve by mali byť 3.6.
-
-Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
-
-A nezabudni, tvoj tréner je tu na to, aby ti pomohol!
+And remember, your coach is here to help!
 
 # Si online!
 
-Hlavná stránka tvojej aplikácie by ťa mala vítať nápisom "It worked!", tak ako na tvojom počítači. Skús pridať `/admin/` na koniec adresy URL, a budeš presmerovaná na stránky administrácie. Prihlás sa s užívateľským menom a heslom a uvidíš, že môžeš pridávať nové príspevky (posty) na server.
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-Keď vytvoríš niekolľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Na zmenách by si mala pracovať v lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. To ti umožní pracovať a experimentovať bez pokazenia živej webovej stránky. Docela cool, nie?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-*OHROMNE* sa potľapkaj po chrbte! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš teraz svoju stránku online, na skutočnom internete!
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
