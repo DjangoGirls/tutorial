@@ -5,9 +5,9 @@
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-برای نصب گیت می توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. شما می توانید بر روی تمام مراحل به جای "یکی" ضربه بزنید؛ در گام پنجم تحت عنوان "تنظیم محیط مسیر خود"، "استفاده از گیت و ابزارهای اختیاری یونیکس از Command Prompt ویندوز" (گزینه پایین) را انتخاب کنید. در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
+برای نصب گیت می توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. شما به راحتی میتوانید تمامی مراحل را " next next next" بزیند به جز یک مرحله; در مرحله پنجم که عنوانش هست " تعیین مسیر " باید گزینه " اجرا کردن گیت به همراه ابزارهای یونیکس از خط فرمان " (گزینه پایین) را انتخاب کنید. در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
 
-فراموش نکنید که بعد از اینکه نصب به پایان رسید، دستور سریع یا پوسته قدرت را مجددا راه اندازی کنید. <!--endsec-->
+فراموش نکنید که بعد از اینکه نصب به پایان رسید دوباره command prompt یا powershell را راه اندازی کنید. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
@@ -19,10 +19,10 @@ data-collapse=true ces-->
 > <!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 > 
-> % filename %}}خط فرمان% endfilename %}}
+> {% filename %}command-line{% endfilename %}
 > 
 > ```bash
-$ سودو مناسب دریافت گیت نصب کنید
+$ sudo apt-get install git
 ```
 
 <!--endsec-->
@@ -30,10 +30,10 @@ $ سودو مناسب دریافت گیت نصب کنید
 <!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
-% filename %}}خط فرمان% endfilename %}}
+{% filename %}command-line{% endfilename %}
 
 ```bash
-$ سودو Dnf نصب گیت
+$ sudo dnf install git
 ```
 
 <!--endsec-->
@@ -41,10 +41,10 @@ $ سودو Dnf نصب گیت
 <!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
-% filename %}}خط فرمان% endfilename %}}
+{% filename %}command-line{% endfilename %}
 
 ```bash
-$ سودو زیپرنصب گیت
+$ sudo zypper install git
 ```
 
 <!--endsec-->
