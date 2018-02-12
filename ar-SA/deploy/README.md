@@ -102,126 +102,92 @@ Username for 'https://github.com': votre-nom Password for 'https://votre-nom@git
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    تعليماتك البرمجية موجودة الأن على GitHub. الذهاب والتحقق من ذلك!  ستجد أنها في نهاية الشركة – [Django] (https://github.com/django/django) وفي [دروس جانغو الفتيات] (https://github.com/DjangoGirls/tutorial)، والعديد من مشاريع البرمجيات الكبيرة مفتوحة المصدر الأخرى أيضا تستضيف التعليمات البرمجية الخاصة بهم في GitHub. :) # إنشاء مدونتنا على بايثون في كل مكان &gt; * * ملاحظة * * قد تم إنشاء حساب ببايثون في كل مكان في وقت سابق أثناء خطوات التثبيت – إذا كان الأمر كذلك، لا حاجة للقيام بذلك مرة أخرى.
+    تعليماتك البرمجية موجودة الأن على GitHub. الذهاب والتحقق من ذلك!  ستجد أنها في نهاية الشركة – [Django] (https://github.com/django/django) وفي [دروس جانغو الفتيات] (https://github.com/DjangoGirls/tutorial)، والعديد من مشاريع البرمجيات الكبيرة مفتوحة المصدر الأخرى أيضا تستضيف التعليمات البرمجية الخاصة بهم في GitHub. :)
+    
+    
+    # Setting up our blog on PythonAnywhere
+    
+    ## Sign up for a PythonAnywhere account
+    
+    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## سحب التعليمات البرمجية لدينا من بايثون في كل مكان
+    ## Configuring our site on PythonAnywhere
     
-    عندما تسجل في بايثون في كل مكان سوف يتم اخدك للوحة التحكم. اختر هذا الخيار لتشغيل وحدة تحكم "Bash" – والذي هو اصدار من بايثون في كل مكان للوحة التحكم، تماما مثل الموجود على حاسوبك.
+    Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
     
-    &lt;img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" /&gt; &gt; * * ملاحظة * * "بايثون في كل مكان " يستند على لينكس، حتى إذا كنت على ويندوز، وحدة التحكم سوف تبدو مختلفة قليلاً من التي تتواجد على حاسوبك الخاص.
+    &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
-    دعونا نسحب تعليماتنا البرمجية من GitHub وعلى بايثون في كل مكان عن طريق إنشاء "استنساخ" لمستودعنا. اكتب الأمر التالي في وحدة التحكم على بايثون في كل مكان (لا تنسى أن استخدام اسم المستخدم الخاص بك في GitHub بدلاً من `&lt;your-github-username&gt;`):
+    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
     
-    {% filename %}PythonAnywhere command-line{% endfilename %}
-    
-
-$ git clone https://github.com/<your-github-username>/my-first-blog.git
-
-    <br />هذا سيستنسخ نسخة من تعليماتك البرمجية في بايثون في كل مكان ، يمكنك تفقد ذالك عبر كتابة `tree my-first-blog`:
+    Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-$ tree my-first-blog my-first-blog/ ├── blog │ ├── **init**.py │ ├── admin.py │ ├── migrations │ │ ├── 0001_initial.py │ │ └── **init**.py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── **init**.py ├── settings.py ├── urls.py └── wsgi.py
+$ pip3.6 install --user pythonanywhere
 
-    <br /><br />### إنشاء بيئة افتراضية على بايثون في كل مكان
-    فقط كما فعلت على حاسوبك ، يمكنك انشاء بيئة افتراضية على بايثون في كل مكان. في نافذة وحدة التحكم، اكتب
-    {% filename %}PythonAnywhere command-line{% endfilename %}
+    <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
     
-
-$ cd my-first-blog
-
-$ virtualenv --python=python3.6 myvenv Running virtualenv with interpreter /usr/bin/python3.6 [...] Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(myvenv) $ pip install django~=1.11.0 Collecting django [...] Successfully installed django-1.11.3
-
-    <br /><br />&gt; * * ملاحظة * * الخطوة 'pip install' يمكن أن تستغرق بضع دقائق.  الصبر والصبر!  ولكن إذا إستغرق الأمر أكثر من خمس دقائق، هناك خطأ ما.  اسأل المدرب الخاص بك.
-    
-    &lt;!-TODO: التفكير في استخدام requirements.txt بدلاً من pip install.--&gt; # # # إنشاء قاعدة بيانات بايثون في كل مكان
-     هنا شيء آخر مختلف بين الكمبيوتر الخاص بك والخادم: إنه يستخدم قاعدة بيانات مختلفة. حيث يمكن أن تكون حسابات المستخدم ومشاركاته مختلفة على الملقم وعلى الكمبيوتر الخاص بك.
-    
-    تماما كما فعلنا على جهاز الكمبيوتر الخاص بك، نحن سنكرر الخطوة لتهيئة قاعدة البيانات على الملقم، عبر `migrate` و `createsuperuser`:
+    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-(mvenv) $ python manage.py migrate Operations to perform: [...] Applying sessions.0001_initial... OK (mvenv) $ python manage.py createsuperuser
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 
-    <br /># # نشر مدونتنا كتطبيق ويب
+    <br />As you watch that running, you'll be able to see what it's doing:
     
-     الآن التعليمات البرمجية الخاصة بنا في PythonAnywhere,، وبيئتنا الإفتراضية على استعداد، وقاعدة البيانات مهيئة. نحن مستعدون لنشره كتطبيق ويب!
+    - Downloading your code from GitHub
+    - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+    - Updating your settings file with some deployment settings
+    - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+    - Setting up your static files (we'll learn about these later)
+    - And configuring PythonAnywhere to serve your web app via its API
     
-    انقر فوق العودة إلى لوحة معلومات PythonAnywhere عن طريق النقر على الشعار ومن ثم انقر فوق **Web**. وأخيراً، إضغط ***Add a new web app**.
+    On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
     
-    بعد التأكد من اسم النطاق الخاص بك، اختر ***manual configuration** (ملحوظة:-*not* الخيار "Django") في مربع الحوار. بعد اختيار **Python 3.6**، انقر فوق التالي لإنهاء المعالج.
+    As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
     
-    &gt; * *ملاحظة* * "تأكد من" اختيار الخيار "Manual configuration"، وليس "Django". نحن نحب جداً الإعداد الافتراضي لدجانغو بايثون في كل مكان. ;-)
-    ### تعيين البيئة الافتراضية
-    
-    سيتم نقلك لصفحة تعديل بايثون في كل مكان لتطبيقك ، والذي يمكنك من الذهاب لأي مكان والقيام بالتعديلا لتطبيقك على السيرفر.
-    
-    &lt;img src="images/pythonanywhere_web_tab_virtualenv.png" /&gt;
-     في المقطع "Virtualenv"، انقر فوق النص الأحمر الذي يقول "Enter the path to a virtualenv"، وأدخل `/home/&lt;your-PythonAnywhere-username&gt;/my-first-blog/myvenv/`. انقر فوق المربع الأزرق مع علامة اختيار لحفظ المسار قبل الانتقال.
-    
-    &gt; * *ملاحظة* * استبدال اسم المستخدم الخاص بك PythonAnywhere حسب الحاجة. إذا قمت بخطأ، PythonAnywhere سوف تظهر لك تحذير.
-    
-    
-    # # # تكوين الملف WSGI
-    
-     جانغو يعمل باستخدام "بروتوكول WSGI"، معياراً لخدمة مواقع الويب باستخدام بيثون، الذي يدعم بايثون في كل مكان. الطريقة التي يمكننا تتعديل PythonAnywhere بها للإعتراف بمدونتنا جانغو عن طريق تحرير ملف تعديل WSGI.
-    
-    انقر فوق "ملف التكوين WSGI" (في المقطع "تعليمات برمجية" بالقرب من أعلى الصفحة – فإنه سوف يكون المسمى شيئا مثل '/var/www/&lt;your-PythonAnywhere-username&gt;_pythonanywhere_com_wsgi.py')، وسوف يتم نقلك إلى المحرر.
-    
-    حدف كافة المحتويات وتغييرها ب
-    {% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
-    ```python
-    import os
-    import sys
-    
-    path = os.path.expanduser('~/my-first-blog')
-    if path not in sys.path:
-        sys.path.append(path)
-    
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-    
-    from django.core.wsgi import get_wsgi_application
-    from django.contrib.staticfiles.handlers import StaticFilesHandler
-    application = StaticFilesHandler(get_wsgi_application())
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
-عمل الملف هو اخبار بايثون في كل مكان اين يكون تطبيق الويب الخاص بنا ، وما هو اسم ملف اعدادات دجانغو.
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-`StaticFilesHandler` هو للتعامل مع CSS. هذا سيهتم بك تلقائيا اثناء التطوير المحلي بواسطة الأمر `runserver`. سنعرف المزيد عن الملفات الثابتة لاحقا في البرنامج التعليمي، عندما نقوم بتحرير CSS لموقعنا.
+    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+    
+    Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+    
+    {% filename %}PythonAnywhere command-line{% endfilename %}
+    
 
-إضغط **Save** وثم العودة إلى علامة التبويب **Web**.
+(ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-لقد انتهينا جميعا! اضغط على الزر الأخضر الكبير **Reload** وستتمكن من عرض تطبيقك. ستجد رابطا إليه أعلى الصفحة.
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-## نصائح لتصحيح الأخطاء
+## You are now live!
 
-إذا ضهرت لك اي اخطاء عندما تزور موقعك ، المكان الأول الذي يجب ان تبحث فيه عن معلومات الخطأ لتصحيحه هو **error log**. ستجد رابط لهذا في بايثون في كل مكان [علامة التبويب](https://www.pythonanywhere.com/web_app_setup/). انضر ان كان هناك اي رسائل اخطاء ، الأحدث ستجدهم في الأسفل. وتشمل المشاكل الشائعة:
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
-- نسيان واحدة من الخطوات التي قمنا بها في وحدة التحكم: إنشاء بيئة افتراضية، وتفعيلها، تثبيت جانغو فيها ، ونقل قاعدة بيانات.
+## Debugging tips
 
-- القيام بخطأ في البيئة الإفتراضية في علامة التبويب ويب – ستكون هناك عادة ما رسالة خطأ حمراء قليلاً هناك، إذا كان هناك مشكلة.
+If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
 
-- خطأ في ملف التكوين WSGI-هل حصلت على مسار مجلد my-first-blog folder الصحيح؟
+- Forgetting to create your API token.
+- Making a mistake in your GitHub URL
 
-- هل اخترت نفس نسخة بايثون لبيئتك الإفتراضية ، كما فعلت لتطبيق الويب الخاص بك؟ ينبغي أن يكون 3.6.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-وهناك أيضا بعض [النصائح العامة لتصحيح الأخطاء على ويكي PythonAnywhere](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-وتذكر أن المدرب هنا للمساعدة!
+And remember, your coach is here to help!
 
 # أنت على الهواء الأن!
 
-الصفحة الرئيسية لموقعك يجب ان تقول "لقد عمل" تماما كما تقول على حاسوبك الخاص. حاول إضافة `/admin/` إلى نهاية عنوان URL، وسوف يتم نقلك إلى موقع المشرف. سجل الدخول باستخدام اسم المستخدم وكلمة المرور، وسترى انه يمكنك إضافة منشورات جديدة على الملقم.
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-وبمجرد الانتهاء من إنشاء عدد قليل من المنشورات، يمكنك العودة إلى الإعدادات المحلية الخاصه بك (ليس بيثون في كل مكان). من هنا يجب أن تعمل على الإعدادات المحليه لإجراء التغييرات. هذا هو سير العمل المشترك في تطوير الإنترنت ـ إجراء تغييرات محليا، ودفع تلك التغييرات إلى GitHub، وسحب التغييرات الخاصة بك وصولا إلى خادم الويب الحي. هذا يسمح لك بالعمل والتجربة دون تحطيم موقع الويب الخاص بك. رائع! اليس كذالك؟
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-إعطي نفسك تربيت *كبير* على الظهر! النشر علي الملقم هو واحد من أصعب أجزاءتطوير الشبكة، وغالبا ما يستغرق الناس عدة أيام قبل أن يجعلوه يعمل. لكنك قد وضعت موقعك على الهواء ، بهذا النحو!
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
