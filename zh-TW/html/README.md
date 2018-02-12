@@ -203,13 +203,15 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-同時注視你的程式碼被下載，假如你想要確認程式碼已經下載，你可以跳到 **Files 選項** 並在 PythonAnywhere 上查看你的程式碼。
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * 最後，跳到 [Web 選項](https://www.pythonanywhere.com/web_app_setup/) 並在你的網站應用程式 (web app) 上，點選 **Reload** 。
 
-你的更新應該上線了！在瀏覽器重新載入 (refresh) 你的網頁，你應該可看到它改變了. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
