@@ -437,11 +437,13 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ cd ilk-blogum
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
 
-O kadar! Tebrikler :)
+And that should be it! Congrats :)
