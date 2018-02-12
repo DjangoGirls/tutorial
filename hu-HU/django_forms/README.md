@@ -437,11 +437,13 @@ Nézzük meg, hogy működik-e ez az egész a PythonAnywhere-en. Itt az ideje eg
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Végül menj a [Web tab](https://www.pythonanywhere.com/web_app_setup/)-ra, és nyomj **Reload**ot.
 
-Ennyi az egész. Gratulálunk :)
+And that should be it! Congrats :)
