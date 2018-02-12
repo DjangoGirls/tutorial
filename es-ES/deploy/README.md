@@ -110,7 +110,7 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
     {% filename %}command-line{% endfilename %}
     
 
-Username for 'https://github.com': hjwp Password for 'https://hjwp@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/hjwp/my-first-blog.git
+Username for 'https://github.com': ola Password for 'https://ola@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/ola/my-first-blog.git
 
 - [new branch] master -> master Branch master set up to track remote branch master from origin.
 
