@@ -437,11 +437,13 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Finalmente, pule para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload**.
 
-E deve ser isso! Parabéns :)
+And that should be it! Congrats :)
