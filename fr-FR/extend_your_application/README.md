@@ -170,9 +170,9 @@ Ok, vous pouvez maintenant rafraîchir votre page et voir si la page `Page not f
 
 Yay ! Ça marche!
 
-## Encore un petit effort : déployons !
+# Deploy time!
 
-Nous ferions bien de mettre à jour la version de notre site présente sur PythonAnywhere. On s'accroche et on déploie encore une fois :)
+It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
 
@@ -187,11 +187,28 @@ Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/co
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-Enfin, cliquez sur l'onglet [Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur **Reload**.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-Normalement, ça devrait suffire ! Encore bravo :)
+## Updating the static files on the server
+
+Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+
+Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+
+{% filename %}command-line{% endfilename %}
+
+    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
+    [...]
+    
+
+The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+
+In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+
+And that should be it! Congrats :)
