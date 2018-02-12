@@ -205,7 +205,7 @@ db.sqlite3
 > 
 > And remember, your coach is here to help!
 > 
-> # تو زندگی میکنی!
+> # Check out your site!
 > 
 > The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 > 
