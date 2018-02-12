@@ -437,11 +437,13 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * 最後に、Webタブに行って、リロードします.
 
-そしてdeployします! おめでとうございます :)
+And that should be it! Congrats :)
