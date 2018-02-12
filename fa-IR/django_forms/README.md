@@ -430,11 +430,13 @@ Change it to this:
     
     % filename %}}خط فرمان% endfilename %}}
     
-        $ سی دی اولین وبلاگ من
-        $ گیت کشیدن
+        $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+        $ git pull
         [...]
         
     
+    (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+    
     * سرانجام، به برگه  برگه </ 0> بروید و روی ** بازنگری </ 1> ضربه بزنید.</li> </ul> 
         
-        و این باید باشد! تبریک میگم :)
+        And that should be it! Congrats :)
