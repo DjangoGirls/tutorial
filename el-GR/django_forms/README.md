@@ -437,11 +437,13 @@ In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-Και αυτό είναι! Συγχαρητήρια :)
+And that should be it! Congrats :)
