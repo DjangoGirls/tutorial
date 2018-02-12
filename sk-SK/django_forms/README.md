@@ -437,11 +437,13 @@ Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasade
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
-A to by malo byť všetko! Gratulujeme :)
+And that should be it! Congrats :)
