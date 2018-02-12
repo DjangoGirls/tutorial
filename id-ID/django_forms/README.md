@@ -418,10 +418,13 @@ Mari kita lihat apakah itu semua dapat berjalan di PythonAnywhere. Saatnya melak
 
 {% filename%} baris perintah {% endfilename%}
 
-    $ cd my-first-blog $ git pull
-     [...]
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ git pull
+    [...]
     
+
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
 * Yang terakhir, cari [Web tab](https://www.pythonanywhere.com/web_app_setup/) dan klik **Reload**.
 
-Dan seharusnya dapa berjalan! Selamat :)
+And that should be it! Congrats :)
