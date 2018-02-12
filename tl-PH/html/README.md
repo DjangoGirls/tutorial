@@ -201,13 +201,15 @@ Sa sandaling nagawa na natin iyan, i-a-upload natin (ipasa) ang ating mga pagbab
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-At pagmasdan ang iyong code na dina-download. Kung gusto mong i-check na ito ay nakarating na, maaari kang pumunta sa **File tab** at tingnan ang iyong code sa PythonAnywhere.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * Sa wakas, pumunta sa [Web tab](https://www.pythonanywhere.com/web_app_setup/) at pindutin ang **Reload** sa iyong wep app.
 
-Ang iyong update ay dapat live! Magpatuloy at i-refresh ang iyong website sa browser. Ang mga pagbabago ay dapat makita. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
