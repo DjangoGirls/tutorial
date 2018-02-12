@@ -198,13 +198,15 @@ Setelah kami selesai melakukannya, kami mengupload (mendorong) perubahan kami ke
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
+
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
 And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
-Pembaruan Anda seharusnya hidup! Silakan dan segarkan situs Anda di browser. Perubahan harus terlihat. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
