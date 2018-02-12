@@ -111,116 +111,92 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > >     <br />& lt; - TODO: mungkin tombol ssh dipasang di pesta pemasangan, dan titik ppl yang tidak memilikinya ke ekstensi - & gt; 
 > >     
-> >     Kode Anda sekarang ada di GitHub. Silahkan anda cek!  Anda akan menemukannya di perusahaan yang bagus - [Django] (https://github.com/django/django), [Django Girls Tutorial] (https://github.com/DjangoGirls/tutorial), dan banyak lainnya hebat Proyek perangkat lunak sumber terbuka juga meng-host kode mereka di GitHub. :) # Menyiapkan blog kita di PythonAnywhere 
+> >     Kode Anda sekarang ada di GitHub. Silahkan anda cek!  Anda akan menemukannya di perusahaan yang bagus - [Django] (https://github.com/django/django), [Django Girls Tutorial] (https://github.com/DjangoGirls/tutorial), dan banyak lainnya hebat Proyek perangkat lunak sumber terbuka juga meng-host kode mereka di GitHub. :)
 > >     
-> >     & gt; ** Catatan ** Anda mungkin telah membuat akun PythonAnywhere sebelumnya selama langkah-langkah pemasangan - jika ya, tidak perlu melakukannya lagi.
 > >     
-> >     {% include "/ deploy / signup_ pythonanywhere .md"%} ## Menarik kode kita di PythonAnywhere 
+> >     # Setting up our blog on PythonAnywhere
 > >     
-> >     Bila Anda telah mendaftar ke PythonAnywhere , Anda akan dibawa ke halaman dasbor atau "Consoles". Pilih opsi untuk memulai konsol "Bash" - itu adalah versi konsol PythonAnywhere , seperti yang ada di komputer Anda.
+> >     ## Sign up for a PythonAnywhere account
 > >     
-> >     <0 /> 
+> >     &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 > >     
-> >     & gt; ** Catatan ** PythonAnywhere berbasis Linux, jadi jika Anda menggunakan Windows, konsol akan terlihat sedikit berbeda dari yang ada di komputer Anda.
+> >     {% include "/deploy/signup_pythonanywhere.md" %}
 > >     
-> >     Mari kita tarik kembali kode kita dari GitHub dan memasukkan ke PythonAnywhere dengan cara membuat "clone" dari repo kita. Ketik berikut ke konsol di PythonAnywhere (jangan lupa gunakan nama pengguna GitHub Anda sebagai ganti ` &lt;your-github-username&gt; `):
 > >     
-> >      {% filename%} PythonAnywhere  command-line {% endfilename%}
+> >     ## Configuring our site on PythonAnywhere
 > >     
-> > 
-> > $ git klon https://github.com/<your-github-username>/my-first-blog.git
-> > 
-> >     <br />Ini akan menarik salinan kode Anda ke PythonAnywhere . Check it out dengan mengetikkan `tree my-first-blog`:
+> >     Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 > >     
-> >      {% filename%} PythonAnywhere  command-line {% endfilename%}
+> >     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
 > >     
-> > 
-> > $ tree my-first-blog my-first-blog / ├── blog │ ├── ** init </ 0> .py │ ├── admin.py │ ├── migrasi │ │ ├── 0001_initial. py │ │ └── ** init </ 0> .py │ ├── models.py │ ├── tests.py │ └── views.py ├── manage.py └── mysite ├── ** init </ 0> .py ├── settings.py ├── urls.py └── wsgi.py</p> 
-> > 
-> >     <br /><br />### Membuat virtualenv di PythonAnywhere 
+> >     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 > >     
-> >     Sama seperti yang Anda lakukan di komputer Anda sendiri, Anda dapat membuat virtualenv di PythonAnywhere . Di konsol Bash, ketik:
+> >     Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 > >     
-> >      {% filename%} PythonAnywhere  command-line {% endfilename%}
+> >     {% filename %}PythonAnywhere command-line{% endfilename %}
 > >     
 > > 
-> > $ cd my-first-blog
+> > $ pip3.6 install --user pythonanywhere
 > > 
-> > $ virtualenv --python = python3.6 myvenv Menjalankan virtualenv dengan interpreter /usr/bin/python3.6 [...] Memasang setuptools, pip ... done.
-> > 
-> > $ source myvenv / bin / aktifkan
-> > 
-> > (myvenv) $ pip install django ~ = 1.11.0 Mengumpulkan Django [...] Berhasil menginstal Django-1.11.3
-> > 
-> >     <br /><br />& gt; ** Catatan ** Langkah `pip install` bisa memakan waktu beberapa menit.  Sabar, sabar!  Tapi kalau dibutuhkan lebih dari lima menit, ada yang salah.  Tanya pelatihmu
+> >     <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 > >     
-> >     & lt; ! - TODO: pikirkan tentang penggunaan requirements.txt daripada pemasangan pip .-- & gt; 
+> >     Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
 > >     
-> >     ### Membuat database di PythonAnywhere 
-> >     
-> >     Inilah hal lain yang berbeda antara komputer dan server Anda sendiri: menggunakan database yang berbeda. Jadi akun dan pos pengguna bisa berbeda di server dan di komputer Anda.
-> >     
-> >     Sama seperti yang kita lakukan di komputer Anda sendiri, kami mengulang langkah untuk menginisialisasi database di server, dengan `migrate` dan` createuperuser`:
-> >     
-> >      {% filename%} PythonAnywhere  command-line {% endfilename%}
+> >     {% filename %}PythonAnywhere command-line{% endfilename %}
 > >     
 > > 
-> > (mvenv) $ python manage.py bermigrasi Operasi untuk melakukan: [...] Menerapkan sesi.0001_initial ... OK (mvenv) $ python manage.py createuperuser
+> > $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 > > 
-> >     <br />## Mempublikasikan blog kita sebagai aplikasi web Sekarang kode kita ada di PythonAnywhere , virtualenv kita sudah siap, dan database diinisialisasi. Kami siap mempublikasikannya sebagai aplikasi web!
+> >     <br />As you watch that running, you'll be able to see what it's doing:
 > >     
-> >     Klik kembali ke dasbor PythonAnywhere dengan mengklik logo nya, dan kemudian klik pada ** Web ** tab. Akhirnya, tekan ** Tambahkan aplikasi web baru **.
+> >     - Downloading your code from GitHub
+> >     - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+> >     - Updating your settings file with some deployment settings
+> >     - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+> >     - Setting up your static files (we'll learn about these later)
+> >     - And configuring PythonAnywhere to serve your web app via its API
 > >     
-> >     Setelah mengkonfirmasikan nama domain Anda, pilih ** konfigurasi manual ** (NB - * bukan * opsi "Django") di dialog. Selanjutnya pilih ** Python 3.6 **, dan klik Next untuk menyelesaikan wizard.
+> >     On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 > >     
-> >     & gt; ** Catatan ** Pastikan Anda memilih opsi "Manual configuration", bukan "Django". Kami terlalu keren untuk setup Django default PythonAnywhere . ;-) ### Menetapkan virtualenv Anda akan dibawa ke layar config PythonAnywhere untuk webapp Anda, di situlah Anda harus pergi kapan pun Anda ingin melakukan perubahan pada aplikasi di server.
+> >     As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 > >     
-> >     </ / 
-> >     
-> >     Di bagian "Virtualenv", klik teks merah yang bertuliskan "Enter the path to an virtualenv", dan masukkan `/ home / &lt;your-PythonAnywhere-username&gt; / my-first-blog / myvenv /`. Klik kotak biru dengan tanda centang untuk menyimpan jalan sebelum pindah.
-> >     
-> >     & gt; ** Catatan ** Ganti nama pengguna PythonAnywhere Anda sendiri yang sesuai. Jika Anda membuat kesalahan, PythonAnywhere akan menunjukkan sedikit peringatan.
-> >     
-> >     
-> >     ### Mengkonfigurasi file WSGI Django bekerja dengan menggunakan "protokol WSGI", sebuah standar untuk melayani situs web menggunakan Python, yang didukung PythonAnywhere . Cara kita mengkonfigurasi PythonAnywhere untuk mengenali blog Django kita adalah dengan mengedit file konfigurasi WSGI.
-> >     
-> >     Klik pada link "file konfigurasi WSGI" (di bagian "Kode" di dekat bagian atas halaman - akan diberi nama seperti `/ var / www / &lt;your-PythonAnywhere-username&gt; _pythonanywhere_com_wsgi.py`), dan Anda akan menjadi dibawa ke editor
-> >     
-> >     Hapus semua isi dan ganti dengan yang berikut:
-> >     
-> >      {% filename%} & amp; lt; nama pengguna & amp; gt; _pythonanywhere_com_wsgi.py {% endfilename%} 
-> >     `` `python import os import sys path = os.path.expanduser ('~ / my-first-blog') jika path tidak di sys.path:
-> >          sys.path.append ( path) os.environ ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings' dari django.core.wsgi import get_wsgi_application dari django.contrib.staticfiles.handlers import StaticFilesHandler application = StaticFilesHandler (get_wsgi_application ())
+> >     {% filename %}PythonAnywhere command-line{% endfilename %}
 > >     
 > > 
-> > Tugas file ini adalah memberi tahu PythonAnywhere tempat aplikasi web kami tinggal dan apa nama file pengaturan Django.
+> > (ola.pythonanywhere.com) $ python manage.py createsuperuser
 > > 
-> > The ` StaticFilesHandler </ 0> adalah untuk menangani CSS kita. Ini diurus secara otomatis untuk Anda selama pengembangan lokal dengan perintah <code> runserver </ 0> . Kita akan lebih memahami lagi nanti tentang file statis
-Kita akan lebih paham lagi apa itu file statis pada tutorial berikutmya, yaitu ketika kita mengedit CSS untuk website kita.</p>
-
-<p>Klik <strong>Save</strong> dan kembalilah ke tab <strong>Web</strong>.</p>
-
-<p>Selesai! Klik tombol hijau besar dengan label <strong>Reload</strong> dan anda akan dapat melihat aplikasi anda. Nda akan menemukan sebuah link yang mengarah kepadanya di bagian atas halaman.</p>
-
-<h2>Tip Debugging (Mencari bug atau error)</h2>
-
-<p>Jika anda melihat ada error pada saat anda membuka website anda, lokasi pertama-tama untuk mencari informasi debugging adalah pada <strong>error log</strong>. Anda akan menemukan sebuah link yang mengarah ke sana pada tab <a href="https://www.pythonanywhere.com/web_app_setup/">Web tab</a> PythonAnywhere. Lihat apakah ada pesan error di sana, yang terbaru ada di bagian bawah. Masalah-masalah yang umum dijumpai meliputi:</p>
-
-<ul>
-<li><p>Melupakan salah satu langkah yang kami lakukan di konsol: membuat virtualenv, mengaktifkannya, menginstal Django ke dalamnya, memigrasikan database.</p></li>
-<li><p>Membuat kesalahan di jalur virtualenv di tab Web - biasanya akan ada pesan kesalahan kecil berwarna merah di sana, jika ada masalah.</p></li>
-<li><p>Membuat kesalahan dalam file konfigurasi WSGI - apakah Anda mendapatkan jalur ke folder blog pertama saya?</p></li>
-<li><p>Apakah anda memilih versi python yang sama untuk virtualenv dengan python apliksi web anda? Keduanya harus versi 3.6.</p></li>
-</ul>
-
-<p>Ada juga beberapa <a href="https://www.pythonanywhere.com/wiki/DebuggingImportError"> kiat debugging umum pada PythonAnywhere wiki </ 0> .</p>
-
-<p>Dan ingat, pendamping anda siap di sini untuk membantu ada!</p>
-
-<h1>Website anda kini hidup!</h1>
-
-<p>Halaman default untuk situs Anda harus mengatakan "It worked!", Seperti halnya pada komputer lokal Anda. Coba tambahkan <code>/admin/` di akhir URL, maka anda akan masuk pada admin website. Lakukan Log in dengan username dan password yang sesuai dan anda akan dapat membuat posting baru di server.
+> >     <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+> >     
+> >     Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+> >     
+> >     {% filename %}PythonAnywhere command-line{% endfilename %}
+> >     
 > > 
-> > Begitu Anda memiliki beberapa tulisan yang dibuat, Anda dapat kembali ke penyiapan lokal Anda (bukan PythonAnywhere ). Dari sini Anda harus mengerjakan setup lokal Anda untuk melakukan perubahan. Ini adalah alur kerja umum dalam pengembangan web - membuat perubahan secara lokal, mendorong perubahan tersebut ke GitHub, dan menarik perubahan Anda ke server Web langsung Anda. Ini memungkinkan Anda bekerja dan bereksperimen tanpa merusak situs web Anda. Cukup keren, ya?
+> > (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 > > 
-> > Tepuk tangan! Pada proses pengembangan website, proses deploy ke dalam server adalah sebuah proses yang perlu sedikit trik dan seseorang biasanya perlu beberapa hari usaha sampai berhasil. Tapi kini anda sudah berhasil membuat website anda hidup dalam Internet sesungguhnya, itu sangat bagus!
+> > You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+> > 
+> > ## You are now live!
+> > 
+> > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+> > 
+> > ## Debugging tips
+> > 
+> > If you see an error while running the `pa_autoconfigure_django.py` script, there are a couple of common causes:
+> > 
+> > - Forgetting to create your API token.
+> > - Making a mistake in your GitHub URL
+> > 
+> > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+> > 
+> > There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+> > 
+> > And remember, your coach is here to help!
+> > 
+> > # Website anda kini hidup!
+> > 
+> > The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> > 
+> > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> > 
+> > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
