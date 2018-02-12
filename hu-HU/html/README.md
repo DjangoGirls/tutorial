@@ -201,13 +201,15 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-A fájljaid már itt is vannak. Ha le akarod csekkolni, akkor menj át a **Files tab**-ra és nézd meg a kódodat PythonAnywhere-en.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 
 * Végül, kattints át a [Web tab](https://www.pythonanywhere.com/web_app_setup/)-ra, és nyomj egy **Reload**-ot a web alkalmazásodra.
 
-A frissítéseid kint vannak! Frissítsd az weboldalt a böngésződben, és a változtatások már látni fogod. :)
+Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
