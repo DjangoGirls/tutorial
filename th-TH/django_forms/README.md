@@ -437,11 +437,13 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
 * สุดท้าย เปิด [Web tab](https://www.pythonanywhere.com/web_app_setup/) และกด **Reload**.
 
-และนั่นควรเสร็จแล้ว! ยินดีด้วย :)
+And that should be it! Congrats :)
