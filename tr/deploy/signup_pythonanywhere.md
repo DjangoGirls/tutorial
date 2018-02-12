@@ -1,5 +1,5 @@
-Sırada PythonAnywhere sitesinde bedava bir "Beginner" ( yeni başlayan) hesabı açma işi var.
+Sırada, PythonAnywhere'de ücretsiz "Yeni" bir hesaba kaydolma işi var.
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Not** Burada kullanıcı isminizi seçerken bilin ki blogunuzun URL'si `kullanıcıadınız.pythonanywhere.com` şeklinde olacak. O yüzden ya kendi rumuzunuzu(nickname) seçin ya da blogunuzun konusu ile ilgili bir isim seçin.
+> **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle blogunuzun neyle ilgili olduğu için kendi takma adınızı veya bir adınızı seçin.
