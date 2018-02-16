@@ -6,7 +6,7 @@
 > 
 > We're going to create a small blog!
 > 
-> Langkah pertama adalah memulai dengan mebuat projek baru Django. Pada dasarnya, Kita akan menjalankan beberapa skrip yang disediakan oleh Django yang amana akan membuat skeleton projek Django untuk kita. Ini merupakan bagian direktori dan file yang akan kita gunakan nanti.
+> Langkah pertama adalah memulai dengan membuat projek baru Django. Pada dasarnya, Kita akan menjalankan beberapa skrip yang disediakan oleh Django yang mana akan membuat skeleton projek Django untuk kita. Ini merupakan bagian direktori dan file yang akan kita gunakan nanti.
 > 
 > Nama untuk beberapa file dan direktori sangat penting untuk Django. Kamu harus mengganti nama file yang akan kita buat. Memindahkan file tersebut ke tempat yang lain bukanlah ide yang bagus. Django perlu mempertahankan struktur tertentu agar bisa menemukan hal penting.
 > 
