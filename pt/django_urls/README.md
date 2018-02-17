@@ -121,4 +121,4 @@ Se você tentar visitar http://127.0.0.1:8000/ agora, então você verá uma men
 
 O seu console está exibindo um erro, mas não se preocupe – ele é bem útil: Ele está dizendo a você que existe um __no attribute 'post_list'__. Esse é o nome da *view* que o Django está tentando encontrar e usar, mas nós ainda não a criamos. Nesse momento sua `/admin/` também não funciona. Não se preocupe – nós chegaremos lá.
 
-> Se você quer saber mais sobre Django URLconfs, veja a documentação oficial: https://docs.djangoproject.com/en/1.9/topics/http/urls/
+> Se você quer saber mais sobre Django URLconfs, veja a documentação oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/

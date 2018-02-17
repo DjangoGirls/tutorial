@@ -112,6 +112,6 @@
         
 你会发现有一个 **no attribute 'post_list'** （没有 'post_list' 属性）的错误。 *post_list* 提醒你什么东西了吗？ 这是我们的 view 的名字！ 这表示其他的一切正常，但是我们还没创建这个 *view* 。 不要担心，我们将会抵达那里。
         
-> 如果你想知识更多关于 Django URLconf 的知识，去官方文档看一看：https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> 如果你想知识更多关于 Django URLconf 的知识，去官方文档看一看：https://docs.djangoproject.com/en/2.0/topics/http/urls/
 
  [2]: images/error1.png

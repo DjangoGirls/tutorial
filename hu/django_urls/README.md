@@ -123,4 +123,4 @@ Már nincs ott az "It works", igaz? Ne aggódj, ez csak egy hibaoldal, semmi fé
 
 Azt olvashatod, hogy **no attribute 'post_list'**, vagyis "nincs post_list nevű attribútum". Eszedbe jut valami a *post_list*-ről? Így neveztük el a view-t! Ez azt jelenti, hogy minden a megfelelő helyen van, csak még nem hoztuk létre a *view*-t. Ne aggódj, mindjárt eljutunk odáig.
 
-> Ha többet szeretnél megtudni a Django URLconf-ról, nézz bele a hivatalos dokumentációba: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+> Ha többet szeretnél megtudni a Django URLconf-ról, nézz bele a hivatalos dokumentációba: https://docs.djangoproject.com/en/2.0/topics/http/urls/

@@ -122,4 +122,4 @@ Non funziona, vero? Non ti preoccupare, è solo una pagina di errore, niente di 
 
 Leggerai che **non c'è un attributo 'post_list**. il *post_list* ti ricorda qualcosa? Abbiamo chiamato la nostra view proprio così! Questo significa che è tutto a posto. Semplicemente non abbiamo ancora creato la nostra *view*. Non ti preoccupare, ci arriveremo.
 
-> Se vuoi sapere di più sulla configurazione di URL Django, vai alla documentazione ufficiale: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Se vuoi sapere di più sulla configurazione di URL Django, vai alla documentazione ufficiale: https://docs.djangoproject.com/en/2.0/topics/http/urls/
