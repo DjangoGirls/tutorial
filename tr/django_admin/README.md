@@ -52,6 +52,6 @@ En az iki veya üç yazının (ama hepsinin değil) yayınlanma tarihinin ayarla
 
 ![Django admin](images/edit_post3.png)
 
-Django admin hakkında daha fazla bilgi edinmek isterseniz, Django'nun belgelerini kontrol etmelisiniz: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Django admin hakkında daha fazla bilgi edinmek isterseniz, Django'nun belgelerini kontrol etmelisiniz: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Bu, muhtemelen kendinize yeniden enerji vermek için bir kahve (veya çay) veya başka şeyler yemek için iyi bir an. İlk Django modelinizi yarattınız - küçük bir molayı hak ettiniz!

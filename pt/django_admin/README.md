@@ -45,6 +45,6 @@ Certifique-se que pelo menos duas ou três postagens (mas não todas) tenham a d
 
 ![Administração do Django](images/edit_post3.png)
 
-Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/1.9/ref/contrib/admin/
+Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Este é provavelmente um bom momento para tomar um café (ou chá) ou comer alguma coisa para repor as energias. Você criou seu primeiro modelo de Django - você merece um pouco de descanso!

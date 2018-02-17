@@ -44,6 +44,6 @@ Ujisti se, že alespoň dva nebo tři příspěvky (ale ne všechny) mají nasta
 
  [3]: images/edit_post3.png
 
-Pokud chceš vědět více o Django admin, koukni se do Django dokumentace: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Pokud chceš vědět více o Django admin, koukni se do Django dokumentace: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 V tuto chvíli je asi dobrý čas dát si pro trochu vzpruhy kávu, čaj nebo něco k jídlu. Vytvořila jsi svůj první model Django - zasloužíš si malý oddech!

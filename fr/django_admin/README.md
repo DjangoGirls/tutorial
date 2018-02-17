@@ -43,6 +43,6 @@ Sur vos 5 posts, faites en sorte qu'au moins 2 ou 3 posts possèdent une date de
 
  [3]: images/edit_post3.png
 
-Si jamais vous voulez en savoir un peu plus sur l'interface d'administration de Django, vous pouvez lire la documentation qui lui est associée : https://docs.djangoproject.com/fr/1.11/ref/contrib/admin/
+Si jamais vous voulez en savoir un peu plus sur l'interface d'administration de Django, vous pouvez lire la documentation qui lui est associée : https://docs.djangoproject.com/fr/2.0/ref/contrib/admin/
 
 Il est probablement temps d'aller recharger vos batteries avec un café, un thé ou un truc à grignoter. Vous venez de créer votre modèle Django : vous méritez bien une petite pause !
