@@ -35,7 +35,7 @@
 这个教程由[DjangoGirls][4]维护。 如果你发现本网有任何错误或想更新教程，请按照 [贡献指导][5]行动.
 
  [4]: https://djangogirls.org/
- [5]: https://github.com/DjangoGirls/tutorial/blob/master/Contributing.md
+ [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
 ## 中文版的项献者
 

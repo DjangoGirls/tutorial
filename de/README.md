@@ -32,7 +32,7 @@ Na klar ist es aufregend, bei einem Django Girls Workshop dabei zu sein, aber es
 
 ## Über uns und wie du mithelfen kannst
 
-Dieses Tutorial wird von [DjangoGirls](http://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+Dieses Tutorial wird von [DjangoGirls](http://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Möchtest du uns helfen, das Tutorial in andere Sprachen zu übersetzen?
 
