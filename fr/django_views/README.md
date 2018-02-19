@@ -39,4 +39,4 @@ Une autre erreur ! Voyons ce qu'elle nous dit :
 
 Celle-là est plutôt simple : *TemplateDoesNotExist*. Corrigeons ça en créant un template dans la section suivante !
 
-> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/fr/1.11/topics/http/views/
+> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/fr/2.0/topics/http/views/

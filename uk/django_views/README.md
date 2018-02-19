@@ -34,4 +34,4 @@ def post_list(request):
 
 Цього разу усе просто: *TemplateDoesNotExist*.Виправимо це і створимо шаблон в наступному розділі!
 
-> Дізнатися більше про Django відображення можна, звернувшись до офіційної документації: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Дізнатися більше про Django відображення можна, звернувшись до офіційної документації: https://docs.djangoproject.com/en/2.0/topics/http/views/

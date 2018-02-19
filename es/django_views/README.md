@@ -35,4 +35,4 @@ Guarda el archivo, dirígete a http://127.0.0.1:8000/ y veamos lo que tenemos ah
 
 Este es uno fácil: *TemplateDoesNotExist*. ¡Vamos a arreglar este error creando una plantilla en el siguiente capítulo!
 
-> Aprende más acerca de las views de Django leyendo la documentación oficial: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Aprende más acerca de las views de Django leyendo la documentación oficial: https://docs.djangoproject.com/en/2.0/topics/http/views/

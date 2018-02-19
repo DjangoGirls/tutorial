@@ -33,4 +33,4 @@ Einen anderen Fehler! Lies dir durch, was da steht:
 
 Logisch: *TemplateDoesNotExist*. Wir haben ja noch kein Template erstellt. Lass uns diesen Bug im nächsten Kapitel beheben!
 
-> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/1.10/topics/http/views/
+> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/views/

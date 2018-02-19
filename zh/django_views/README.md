@@ -33,4 +33,4 @@
 
 这个错误很直白：*TemplateDoesNotExist*。让我们修复这个bug，然后在下一个章节里创建一个模板！
 
-> 阅读更多关于 Django views 的内容请参阅官方文档： https://docs.djangoproject.com/en/1.8/topics/http/views/
+> 阅读更多关于 Django views 的内容请参阅官方文档： https://docs.djangoproject.com/en/2.0/topics/http/views/
