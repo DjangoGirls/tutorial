@@ -123,4 +123,4 @@ Est-ce que tout fonctionne toujours ? Ouvrez votre navigateur à l'adresse http:
 
 Sur cette page, vous pouvez lire le message **no attribute 'post_list'** (il manque un attribut "post_list"). Est-ce que *post_list* vous rappelle quelque chose ? Yep, c'est le nom que nous avons donné à notre vue ! Cela signifie que nous avons posé les fondations mais, que nous n'avons pas encore créé notre *vue*. Pas de problème, on y vient :).
 
-> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/1.11/topics/http/urls/
+> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/2.0/topics/http/urls/

@@ -340,7 +340,7 @@ Essayez de manipuler un peu ce que vous venez de créer : ajoutez du texte, chan
 
 Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalités !
 
-Si jamais vous voulez en savoir plus sur les formulaires dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/1.11/topics/forms/
+Si jamais vous voulez en savoir plus sur les formulaires dans Django, n'hésitez pas à lire la documentation associée : https://docs.djangoproject.com/fr/2.0/topics/forms/
 
 ## Sécurité
 

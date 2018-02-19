@@ -35,4 +35,4 @@ Un altro errore! Leggi cosa sta succedendo adesso:
 
 Questo è facile: *TemplateDoesNotExist*. Sistemiamo il bug e creiamo un template nel prossimo capitolo!
 
-> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/2.0/topics/http/views/

@@ -42,6 +42,6 @@ Assicurati che almeno due o tre post (ma non tutti) abbiano la data in cui sono 
 
  [3]: images/edit_post3.png
 
-Se vuoi sapere di più riguardo l'admin di Django, dovresti dare un'occhiata alla documentazione di Django: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Se vuoi sapere di più riguardo l'admin di Django, dovresti dare un'occhiata alla documentazione di Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Questo è un buon momento per andare a prendere un caffè (o tè) o qualcosa da mangiare per riprendere le forze. Hai creato il tuo primo modello Django - ti meriti una piccola pausa!

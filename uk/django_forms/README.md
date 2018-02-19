@@ -330,7 +330,7 @@ form = PostForm(instance=post)
 
 Вітаємо! Ваш додаток стає все більш і більш повним!
 
-Якщо бажаєте дізнатись більше інформації про форми Django, ознайомтесь із документацією: https://docs.djangoproject.com/en/1.11/topics/forms/
+Якщо бажаєте дізнатись більше інформації про форми Django, ознайомтесь із документацією: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Безпека
 

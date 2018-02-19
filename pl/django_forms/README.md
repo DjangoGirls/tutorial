@@ -340,7 +340,7 @@ Zmodyfikuj jego tytuł lub treść wedle uznania, a następnie zapisz zmiany!
 
 Gratulacje! Twoja aplikacja staje się coraz bardziej kompletna!
 
-Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokumentacji: https://docs.djangoproject.com/en/1.8/topics/forms/
+Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokumentacji: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Bezpieczeństwo
 

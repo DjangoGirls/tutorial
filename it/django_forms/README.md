@@ -340,7 +340,7 @@ Sentiti libero di cambiare il titolo o il testo e salva le modifiche!
 
 Complimenti! La tua application è sempre più completa!
 
-Se ti servono altre informazioni sui forms di Django dovresti leggere la documentazione: https://docs.djangoproject.com/en/1.8/topics/forms/
+Se ti servono altre informazioni sui forms di Django dovresti leggere la documentazione: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Sicurezza
 

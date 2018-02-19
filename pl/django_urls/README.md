@@ -122,4 +122,4 @@ Gdzieś zniknęło "It works", zgadza się? Spokojnie, to tylko strona błędu, 
 
 Jest napisane, iż **brakuje atrybutu 'post_list'**. Czy *post_list* czegoś Ci nie przypomina? Tak samo nazwaliśmy nasz widok! To oznacza, że wszystko jest w porządku, po prostu nie stworzyliśmy jeszcze naszego *widoku*. Nie martw się, zajmiemy się tym.
 
-> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/2.0/topics/http/urls/

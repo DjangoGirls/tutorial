@@ -75,4 +75,4 @@ def post_list(request):
 여기까지에요! 템플릿 파일로 돌아가 쿼리셋을 보이게 만들어 봅시다.
 
 쿼리셋에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. :
-https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+https://docs.djangoproject.com/en/2.0/ref/models/querysets/

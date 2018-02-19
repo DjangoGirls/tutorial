@@ -120,4 +120,4 @@ http://127.0.0.1:8000/ 접속했는데 '웹 페이지를 사용할 수 없음(we
 콘솔에서 에러가 발생했네요. 하지만 걱정하지 마세요. 에러는 해결할 방법을 알려준답니다. :   __no attribute 'post_list'__ 라는 메시지가 보일 텐데요. 이것은 장고가 찾고 사용하려고하는 *뷰*가 아직 없다는 거에요. 이 단계에서 `/admin/`로도 접속되지 않을 거에요. 앞으로 고쳐볼 테니 걱정하지 마세요.
 
 > 장고 URL 설정에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. :
-https://docs.djangoproject.com/en/1.11/topics/http/urls/
+https://docs.djangoproject.com/en/2.0/topics/http/urls/

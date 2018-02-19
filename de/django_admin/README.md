@@ -38,6 +38,6 @@ Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) da
 
 ![Django Administration](images/edit_post3.png)
 
-Wenn du mehr über Django Admin wissen willst, solltest du dir die Django Dokumentation ansehen: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Wenn du mehr über Django Admin wissen willst, solltest du dir die Django Dokumentation ansehen: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Jetzt ist wahrscheinlich ein guter Moment, um dir einen Kaffee (oder Tee) zu gönnen und neue Kraft tanken. Du hast dein erstes Django-Model erstellt - du hast dir eine kleine Pause verdient!

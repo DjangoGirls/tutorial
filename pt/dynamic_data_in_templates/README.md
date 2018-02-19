@@ -74,4 +74,4 @@ def post_list(request):
 
 Feito! Hora de voltar para o nosso template e exibir essa QuerySet!
 
-Se quiser ler mais sobre QuerySets no Django você deve dar uma olhada aqui: https://docs.djangoproject.com/en/1.9/ref/models/querysets/
+Se quiser ler mais sobre QuerySets no Django você deve dar uma olhada aqui: https://docs.djangoproject.com/en/2.0/ref/models/querysets/

@@ -70,4 +70,4 @@ def post_list(request):
 
 Das war's! Nun gehen wir zurück ins Template und zeigen das QuerySet an!
 
-Wenn du mehr über QuerySets in Djago erfahren willst, dann sieh unter diesem Link nach: https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+Wenn du mehr über QuerySets in Djago erfahren willst, dann sieh unter diesem Link nach: https://docs.djangoproject.com/en/2.0/ref/models/querysets/

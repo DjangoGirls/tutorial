@@ -120,4 +120,4 @@ No hay más un "It works", ¿verdad? No te preocupes, es solamente una página d
 
 Puedes leer que no hay ningún **atributo 'post_list'**. ¿*post_list* te recuerda algo? ¡Así es como llamamos a nuestra vista! Esto significa que todo está en su lugar, sólo que no creamos nuestra *view* todavía. No te preocupes, ya llegaremos a eso.
 
-> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/

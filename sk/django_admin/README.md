@@ -44,6 +44,6 @@ Uisti sa, že aspoň dva alebo tri posty (ale nie všetky) majú nastavený dát
 
  [3]: images/edit_post3.png
 
-Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Teraz je asi vhodný čas dať si kávu (alebo čaj), alebo niečo pod zub a nabrať trochu energie. Práve si vytvorila svoj prvý Django model - zaslúžiš si trochu oddychu!

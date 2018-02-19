@@ -35,4 +35,4 @@ Ulož súbor, prejdi na http://127.0.0.1:8000 / a pozri sa, čo sa udeje.
 
 To je jednoduché: *TemplateDoesNotExist*. Opravme túto chybu a v nasledujúcej kapitole vytvorme šablónu!
 
-> Viac informácií o Django views získaš v oficiálnej dokumentácii: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Viac informácií o Django views získaš v oficiálnej dokumentácii: https://docs.djangoproject.com/en/2.0/topics/http/views/

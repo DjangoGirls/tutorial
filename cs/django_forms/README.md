@@ -337,7 +337,7 @@ Neboj se změnit název nebo text a ulož změny!
 
 Blahopřejeme! Tvoje aplikace je skoro kompletní!
 
-Pokud potřebuješ více informací o Django formulářích, měla by sis přečíst dokumentaci: https://docs.djangoproject.com/en/1.8/topics/forms/
+Pokud potřebuješ více informací o Django formulářích, měla by sis přečíst dokumentaci: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Zabezpečení
 

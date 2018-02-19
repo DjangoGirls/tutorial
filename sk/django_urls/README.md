@@ -123,4 +123,4 @@ Všetko v poriadku? Otvor http://127.0.0.1:8000/ vo svojom prehliadači a pozri 
 
 Môžeš si prečítať, že neexistuje **žiadny atribút post_list**. Pripomína ti *post_list* niečo? Tak sme nazvali náš view! To znamená, že je všetko v poriadku, len sme ešte nevytvorili náš *view*. Žiadne obavy, aj k tomu sa dostaneme.
 
-> Ak chceš vedieť viac o Django URLconfs, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Ak chceš vedieť viac o Django URLconfs, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/2.0/topics/http/urls/

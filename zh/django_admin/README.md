@@ -43,6 +43,6 @@ OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python m
 
  [3]: images/edit_post3.png
 
-如果你想更多地了解Django admin模块，你可以查看Django 的官方文档:https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+如果你想更多地了解Django admin模块，你可以查看Django 的官方文档:https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 现在你可以来杯咖啡(或者是茶) 或吃点东西给自己充下电，你刚刚创建了你的第一个Django模型，你应该休息一下。

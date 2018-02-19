@@ -123,4 +123,4 @@ Stránka přestala fungovat, co? Neboj se, je to chyba, které se nemusíš obá
 
 Můžeš si v ní přečíst, že neexistuje **žádný atribut/no attribute "post_list"**. Připomíná ti *post_list* něco? Tak jsme nazvali naše view! Znamená to, že vše je na svém místě, ale prostě jsme ještě nevytvořili naše *view*. Žádný strach, vytvoříme ho za chvilku.
 
-> Pokud chceš vědět více o Django URLconfs, podívej se na oficiální dokumentaci: https://docs.djangoproject.com/en/1.8/topics/http/urls/
+> Pokud chceš vědět více o Django URLconfs, podívej se na oficiální dokumentaci: https://docs.djangoproject.com/en/2.0/topics/http/urls/

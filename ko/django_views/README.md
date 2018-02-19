@@ -36,5 +36,5 @@ def post_list(request):
 
 *TemplateDoesNotExist*는 쉽게 해결할 수 있습니다. 잘 따라왔다면 방금 에러가 보이는게 맞아요. 다음 장에서 버그를 해결하기 위해 템플릿 파일을 만들 거에요!
 
-> 장고 뷰에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.11/topics/http/views/
+> 장고 뷰에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/2.0/topics/http/views/
 

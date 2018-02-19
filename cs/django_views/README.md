@@ -35,4 +35,4 @@ Další chyba! Přečti si, co je špatně nyní:
 
 Je to jednoduché: *TemplateDoesNotExist*. Musíme opravit tuto chybu a v následující kapitole vytvořit šablonu!
 
-> Další informace ohledně Django views získáš v oficiální dokumentaci na: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Další informace ohledně Django views získáš v oficiální dokumentaci na: https://docs.djangoproject.com/en/2.0/topics/http/views/
