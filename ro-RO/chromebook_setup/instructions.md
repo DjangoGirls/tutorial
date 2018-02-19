@@ -2,14 +2,14 @@ Poți [sări peste această secțiune](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Cloud 9 este o unealtă care iți oferă un editor de cod și acces la un calculator care rulează pe internet unde tu poți instala, scrie și rula software-ul. Pentru durata acestui tutorial, Cloud 9 se va comporta ca și *calculatorul tău local *. Tu tot vei rula comenzi într-o interfață cu terminal la fel ca în Os X, Ubuntu, sau Windows, dar terminalul pe care îl folosești este conectat la un calculator care rulează din altă parte pe care Cloud 9 ți la configurat. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Instalează Cloud 9 din [magazinul de aplicații Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Acceasează [c9.io](https://c9.io)
+3. Creează-ți un cont
+4. Apasă pe *Create a New Workspace*
+5. Numeștel *django-girls*
+6. Selectează rândul *Blank* (al doilea rând din dreapta cel cu logoo-ul portocaliu)
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
