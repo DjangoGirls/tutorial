@@ -12,17 +12,17 @@
 
 ## 3
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? 5 6
+क्या आपको कभी ऐसा महसूस हुआ है कि दुनिया अधिकाधिक टैकनोलजी से जुड़ता जा रहा है, जिसको आप (अभी तक) सही से समझ नहीं पा रहे हैं? 5 6
 
 7
 
-This tutorial will not magically turn you into a programmer. 9 10 11
+यह ट्यूटोरियल आपको जादुई रूप से एक प्रोग्रामर में नहीं बदलेगा। 9 10 11
 
 12
 
 ## 13
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+एक बार ट्यूटोरियल समाप्त करने के बाद, आपके पास एक छोटा सा काम करता हुआ वेब एप्लीकेशन होगा: आपका अपना ब्लॉग। हम आपको दिखाएंगे कि इसे ऑनलाइन कैसे किया जाए, ताकि दूसरे आप के काम को देख सकें।
 
 15
 
@@ -42,7 +42,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). 23.
 
-## Would you like to help us translate the tutorial into other languages?
+## क्या आप हमें अन्य भाषाओं में ट्यूटोरियल अनुवाद करने में मदद करना चाहते हैं?
 
 Currently, translations are being kept on crowdin.com platform at:
 
