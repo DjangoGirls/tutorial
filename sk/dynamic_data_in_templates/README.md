@@ -72,4 +72,4 @@ def post_list(request):
 
 To je všetko! Čas prejsť na našu šablónu a zobraziť tento QuerySet!
 
-Pokiaľ si chceš prečítať niečo viac o QuerySets v Djangu mala by si sa pozrieť sem: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+Pokiaľ si chceš prečítať niečo viac o QuerySets v Djangu mala by si sa pozrieť sem: https://docs.djangoproject.com/en/2.0/ref/models/querysets/

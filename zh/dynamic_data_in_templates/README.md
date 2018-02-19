@@ -67,4 +67,4 @@
 
 就是它 ！现在回到我们的模板并显示此QuerySet查询集！
 
-如果你想了解更多关于QuerySert的内容，那么你可在这里得到帮助：https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+如果你想了解更多关于QuerySert的内容，那么你可在这里得到帮助：https://docs.djangoproject.com/en/2.0/ref/models/querysets/

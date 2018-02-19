@@ -70,6 +70,6 @@ def post_list(request):
 
 Et voilà, c'est bon ! Nous allons retourner du côté de notre template pour que notre QuerySet puisse s'afficher correctement !
 
-Si vous voulez en savoir plus sur les QuerySets, n'hésitez pas à consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/1.11/ref/models/querysets/
+Si vous voulez en savoir plus sur les QuerySets, n'hésitez pas à consulter la documentation officielle du framework : https://docs.djangoproject.com/fr/2.0/ref/models/querysets/
 
  [1]: ../django_orm/README.md

@@ -75,4 +75,4 @@ def post_list(request):
 
 Вот и всё! Теперь пришло время перейти к шаблону и отобразить QuerySet на странице!
 
-Подробнее о QuerySets в Django можно узнать в официальной документации: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Подробнее о QuerySets в Django можно узнать в официальной документации: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
