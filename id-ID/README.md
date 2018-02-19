@@ -22,7 +22,7 @@ Kami berharap bahwa kami akan dapat membuat anda mencintai teknologi sebagaimana
 
 ## Apa yang akan anda pelajari dalam tutorial ini?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Setelah selesai tutorial, Anda akan memiliki aplikasi web kerja kecil: blog Anda sendiri. Kami akan menunjukkan cara memasangnya secara online, sehingga orang lain akan melihat karya Anda!
 
 Hasilnya kurang lebih akan seperti ini:
 
@@ -34,7 +34,7 @@ Oke, [mari kita mulai dari awal…](./how_the_internet_works/README.md)
 
 ## Mengikuti tutorial di rumah
 
-Sungguh menakjubkan bisa ambil bagian dalam lokakarya Django Girls, tapi kami sadar bahwa tidak selalu mungkin untuk menghadiri acara tersebut. Inilah sebabnya kami mendorong Anda untuk mencoba mengikuti tutorial ini di rumah. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. Ini masih merupakan pekerjaan yang sedang berjalan, tapi semakin banyak hal akan segera ditutup di [Pengodean adalah untuk anak perempuan](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)kanal Youtube.
+Sungguh menakjubkan bisa ambil bagian dalam lokakarya Django Girls, tapi kami sadar bahwa tidak selalu mungkin untuk menghadiri acara tersebut. Inilah sebabnya kami mendorong Anda untuk mencoba mengikuti tutorial ini di rumah. Bagi pembaca di rumah, saat ini kami sedang mempersiapkan video yang akan memudahkan anda mengikuti tutorial sendiri. Ini masih merupakan pekerjaan yang sedang berjalan, tapi semakin banyak hal akan segera ditutup di [Pengodean adalah untuk anak perempuan](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)kanal Youtube.
 
 Di setiap bab yang sudah dibahas, ada tautan yang mengarah ke video yang benar.
 
@@ -42,7 +42,7 @@ Di setiap bab yang sudah dibahas, ada tautan yang mengarah ke video yang benar.
 
 Tutorial ini diselenggarakan oleh [DjangoGirls](https://djangogirls.org/). Jika Anda menemukan kesalahan atau ingin mengupdate tutorialnya silahkan [ikuti panduan kontribusi](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Apakah Anda ingin membantu kami menerjemahkan tutorial ke bahasa lain?
 
 Saat ini, terjemahan disimpan di platform crowdin.com di:
 
