@@ -363,7 +363,7 @@ def post_edit(request, pk):
 
 祝贺你！你的应用程序正在变得越来越完整！
 
-如果你需要更多关于Django表单的信息，你应该阅读文档： https://docs.djangoproject.com/en/1.8/topics/forms/
+如果你需要更多关于Django表单的信息，你应该阅读文档： https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## 安全性
 

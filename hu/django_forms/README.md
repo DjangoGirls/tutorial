@@ -340,7 +340,7 @@ Változtasd meg a címet vagy a szöveget, és mentsd el!
 
 Gratulálunk! Az alkalmazásod egyre és egyre jobb!
 
-Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/1.11/topics/forms/
+Ha szeretnél többet tudni a Django formokról, olvass róluk a dokumentációban: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Biztonság
 

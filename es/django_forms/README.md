@@ -346,7 +346,7 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/1.8/topics/forms/
+Si necesitas más información sobre los formularios de Django, debes leer la documentación: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Una cosa más: ¡Tiempo de implementación!
 

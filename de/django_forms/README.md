@@ -329,7 +329,7 @@ Probier doch einmal den Titel oder den Text zu ändern und die Änderungen zu sp
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt mehr Gestalt an!
 
-Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/1.8/topics/forms/
+Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Sicherheit
 

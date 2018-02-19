@@ -370,7 +370,7 @@ Başlık ya da metni değiştirmekten ve değişiklikleri kaydetmekten çekinmey
 
 Tebrikler! Uygulaman gittikçe tamamlanıyor!
 
-Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa,belgelendirmeyi okumalısın: https://docs.djangoproject.com/en/1.11/topics/forms/
+Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa,belgelendirmeyi okumalısın: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Güvenlik
 

@@ -363,7 +363,7 @@ form = PostForm(instance=post)
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
 장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요. :
-https://docs.djangoproject.com/en/1.11/topics/forms/
+https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## 보안
 
