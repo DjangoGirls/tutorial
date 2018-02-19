@@ -30,7 +30,7 @@
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 18 19
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+ठीक है, चलो शुरुआत से शुरू करें</ 0></p> 
 
 ## Following the tutorial at home
 
