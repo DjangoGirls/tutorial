@@ -91,7 +91,7 @@ Użyj następującego polecenia w konsoli:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz poleceń i uruchom polecenie `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,7 +99,7 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (without `3`) oraz sprawdź czy być może w taki sposób uruchomisz Pythona 3.6.
 
 * * *
 
