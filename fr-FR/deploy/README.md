@@ -206,6 +206,6 @@ Et rappelez-vous, votre coach est là pour vous aider!
 
 La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur votre ordinateur local. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Connectez-vous avec le nom d'utilisateur et le mot de passe, et vous verrez que vous pouvez ajouter de nouveaux Messages sur le serveur.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
