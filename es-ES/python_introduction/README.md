@@ -994,7 +994,7 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace 
 for name in girls:
 ```
 
-El ```for``` se comporta de manera similar al ```if``` el codigo debajo de ámbos tiene que estar identado cuatro espacios.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Aquí está el código completo que estará en el archivo:
 
