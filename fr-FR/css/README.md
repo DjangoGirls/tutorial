@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` est un sélecteur CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
 
-Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon dont nous permettent d'identifier des éléments est avec le nom de l'élément. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -297,7 +297,7 @@ Sauvegardez les fichiers modifiés et rafraîchissez votre site web.
 
 Woohoo! Looks awesome, right? Regarde le code que nous venons juste collé à trouver les endroits où nous avons ajouté des classes dans le code HTML et de les utiliser dans le CSS. Où souhaitez-vous faire le changement si vous vouliez la date turquoise?
 
-N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre quelles sont les différentes choses sont en train de faire. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours annuler!
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
