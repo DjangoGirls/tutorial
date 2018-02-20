@@ -1,10 +1,10 @@
 # Jeśli robisz ten kurs w domu
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa internet?](../how_the_internet_works/README.md).
 
-Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić, więc zebraliśmy wszystkie potrzebne informacje w jedno miejsce.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Jeśli chcesz, też możesz zainstalować wszystko od razu. Ale jeśli wolisz zacząć naukę już teraz bez instalowania najpierw kilku nowych rzeczy na swoim komputerze, pomiń ten rozdział. Wszystko wytłumaczymy później.
 
 Powodzenia!
 
@@ -43,7 +43,7 @@ Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto 
 
 # Zacznij czytać
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
 
 * [Jak działa internet](../how_the_internet_works/README.md)
 
@@ -53,6 +53,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Czym jest Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Ciesz się warsztatami!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Kiedy zaczniesz warsztaty, będziesz mogła przejść od razu do rozdziału [Twój pierwszy projekt w Django!](../django_start_project/README.md) ponieważ już przebrnęłaś przez materiał z wcześniejszych rozdziałów.
