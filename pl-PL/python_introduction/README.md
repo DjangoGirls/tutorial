@@ -336,7 +336,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
 
 {% filename %}command-line{% endfilename %}
 
@@ -359,7 +359,7 @@ Wykaz wszystkich metod dostępnych dla list znajdziesz w odpowiednim rozdziale d
 
 ## Słowniki
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Installing Python Code Editor](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
