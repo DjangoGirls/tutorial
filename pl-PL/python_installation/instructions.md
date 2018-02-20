@@ -12,16 +12,16 @@ Na jedną rzecz będziesz musiała uważać: Podczas instalacji zauważysz ekran
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
-W nadchodzących krokach, będziesz używać Wiersz polecenia Windowsa (o której też Ci zaraz opowiemy). Na teraz, jeżeli będziesz musiała wpisać jakiekolwiek polecenie, przejdź do menu Start → System → Wiersz polecenia. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+W nadchodzących krokach, będziesz używać Wiersz polecenia Windowsa (o której też Ci zaraz opowiemy). Na teraz, jeżeli będziesz musiała wpisać jakiekolwiek polecenie, przejdź do menu Start → System → Wiersz polecenia. Możesz też przytrzymać klawisz Windows i nacisnąć "R" - pojawi się Tobie okno "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie". (Na nowszych wersjach Windowsa możesz być zmuszona by wyszukać "Wiersz polecenia", ponieważ może być on ukryty.)
 
 ![Wpisz "cmd" w oknie "Uruchom""](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Uwaga: Jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. zainstalować wszystkie uaktualnienia systemu Windows a spróbować instalacji Pythona 3.6 jeszcze raz; lub
+2. zainstalować [starszą wersję Pythona](https://www.python.org/downloads/windows/), np. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Jeżeli zainstalujesz starszą wersję Pythona, ekrany instalatora mogą wyglądać nieznacznie inaczej niż pokazane wyżej. Upewnij się, że przewinęłaś do "Add python.ext to Path", kliknęłaś przycisk po lewej i wybrałaś "Will be installed on local hard drive":
 
 ![Dodawanie Pythona do zmiennej Path, starsze wersje](../python_installation/images/add_python_to_windows_path.png)
 
