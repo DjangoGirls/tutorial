@@ -6,7 +6,7 @@ Pora wyświetlić jakieś dane! Django udostępnia nam do tego celu przydatny zb
 
 W HTML-u nie można tak naprawdę napisać kodu Pythona, ponieważ przeglądarki go nie rozumieją. Znają tylko HTML. Wiemy, że HTML jest raczej statyczny, a Python jest znacznie bardziej dynamiczny.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Znaczniki szablonów Django** pozwalają przesyłać obiekty podobne do Pythona do HTML, dzięki czemu możesz budować dynamiczne strony internetowe szybciej. Super!
 
 ## Wyświetlamy szablon listy wpisów
 
