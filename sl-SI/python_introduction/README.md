@@ -994,7 +994,7 @@ Vsako izmed njih želimo pozdraviti po imenu. Uporabili bomo zanko, znotraj nje 
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Tole je celotna koda:
 
