@@ -140,7 +140,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog`. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
 * Potrzebny nam przycisk `Zapisz`. Tworzymy go jako przycisk w HTML: `<button type="submit">Save</button>`.
 * I na koniec jeszcze, zaraz po znaczniku otwierającym `<form ...>`musimy dodać {% raw %}`{% csrf_token %}`{% endraw %}. To bardzo ważne, gdyż ta linijka sprawia, że Twoje formularze są bezpieczne! Jeśli o tym zapomnisz i spróbujesz zapisać formularz, Django nie pozostawi tego bez komentarza:
@@ -206,7 +206,7 @@ To jest czas na uzupełnienie kropek `[...]`. Jeżeli zmienna `method` jest rów
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Następnie sprawdźmy, czy formularz jest wypełniony poprawnie (wszystkie wymagane pola są uzupełnione i żadna nieprawidłowa wartość nie zostanie zapisana). Użyjmy do tego `form.is_valid()`.
 
 Sprawdzamy, czy formularz jest wypełniony poprawnie. Jeśli tak, możemy go zapisać!
 
@@ -396,9 +396,9 @@ Dodamy kolejny tag `{% if %}`, który sprawi, że link będzie widoczny tylko dl
 
 Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wtedy, kiedy użytkownik chcący wyświetlić tę stronę jest zalogowany. To nie chroni tworzenia wpisów w 100%, ale jest to dobry pierwszy krok. Zagadnieniu bezpieczeństwa poświęcimy więcej miejsca w rozszerzeniu do tego kursu.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tą samą zmianę tutaj, tak by inne osoby nie były w stanie edytować istniejących postów.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Otwórz `blog/templates/blog/post_detail.html` i znajdź poniższą linijkę:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Zamień ją na:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę nie zobaczysz żadnej zmiany. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Jeszcze jedno: czas na wdrożenie!
 
@@ -442,8 +442,8 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-* Na koniec, przejdźmy do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wciśnijmy **Reload** (ang. odśwież.
+* Na koniec, przejdźmy do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wciśnijmy **Reload** (ang. odśwież).
 
-And that should be it! Congrats :)
+I to już wszystko! Gratulacje :)
