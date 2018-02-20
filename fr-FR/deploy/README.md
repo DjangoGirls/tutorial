@@ -49,9 +49,9 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 > **Attention** : le point au début du nom du fichier est important ! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. De toute façon, en ignorant votre base de données SQLite pour le GitHub de copie, cela signifie que tous les messages que vous avez créé jusqu'à présent vont y rester et ne sera disponible localement, mais vous allez avoir à ajouter de nouveau sur la production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de ce que vous allez supprimer votre réel les messages à partir de votre blog.
 
-Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. Cela aidera à prévenir toute surprise de se produire, tels que les mauvais fichiers ajoutés ou engagés. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. La sortie doit être semblable au suivant:
 
 {% filename %}command-line{% endfilename %}
 
@@ -148,7 +148,7 @@ $ pip3.6 install --user pythonanywhere
 
     <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
     
-    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    Maintenant, nous exécutez l'assistant pour configurer automatiquement votre application à partir de GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -173,7 +173,7 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+    <br />Saisissez les détails de votre compte d'utilisateur admin.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
     
     Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
     
