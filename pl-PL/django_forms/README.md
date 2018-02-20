@@ -416,7 +416,7 @@ Zamień ją na:
 {% endif %}
 ```
 
-Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę nie zobaczysz żadnej zmiany. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę nie zobaczysz żadnej zmiany. Podejrzyj stronę w innej przeglądarce lub chociaż w trybie incognito (nazywanym "InPrivate" w Windows Edge) i zobaczysz, że link ten i ikonka się nie pojawiają!
 
 ## Jeszcze jedno: czas na wdrożenie!
 
