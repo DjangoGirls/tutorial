@@ -994,7 +994,7 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-그리고 ```for``` 문은 ```if``` 문과 비슷한 일을 합니다; 4칸을 들여쓰기된 코드
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 아래 완성된 코드입니다. :
 
