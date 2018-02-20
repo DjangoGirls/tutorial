@@ -26,6 +26,6 @@ Vous vous demandez sûrement pourquoi nous vous faisons installer un éditeur sp
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La deuxième raison est que les éditeurs de code sont spécialisés pour l'édition de code, de sorte qu'ils peuvent fournir des fonctionnalités utiles telles que le surlignage du code avec la couleur en fonction de son sens, ou automatiquement les guillemets de fermeture pour vous.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Nous allons voir tout cela en action plus tard. Bientôt, vous allez venir à penser à votre bon vieux éditeur de code comme l'un de vos outils préférés. :)
