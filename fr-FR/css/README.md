@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Ce n'est pas ajouter des fichiers à votre projet. Il a juste des points pour les fichiers qui existent sur Internet, Juste aller de l'avant, ouvrez votre site web et refresh la page. Ici il est!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -49,7 +49,7 @@ Pour cela, nous allons créer un fichier appelé `static` à l'intérieur de not
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django va rechercher automatiquement les dossiers dite "statique" à l'intérieur de toutes vos applications' de dossiers. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
 
 ## Votre première CSS !
 
@@ -104,7 +104,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. Nous venons simplement de dire à notre template où nous avons rangé notre fichier CSS.
+Le navigateur lit les fichiers dans l'ordre où ils sont donnés, donc nous devons nous assurer que c'est dans le bon endroit. Sinon le code dans notre fichier peut être remplacé par du code dans des fichiers d'Amorçage. Nous venons simplement de dire à notre template où nous avons rangé notre fichier CSS.
 
 Maintenant, votre fichier doit ressembler à ceci :
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Ajoutez-le à votre CSS, enregistrez le fichier et voir comment cela fonctionne!
 
 ![Figure 14.3](images/margin2.png)
 
@@ -178,7 +178,7 @@ h1 a {
 
 Super !
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+As mentioned above, CSS has a concept of classes. Ceux-ci vous permettent de nommer une partie de code HTML et appliquer des styles que pour cette partie, sans affecter les autres parties. This can be super helpful! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre tête et de votre post). Une classe peut vous aider à leur donner un aspect différent.
 
 Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci :
 
@@ -202,7 +202,7 @@ Maintenant, ajoutez la classe `post` à votre `div` contenant votre blog post.
 </div>
 ```
 
-Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs. Les sélecteurs qui commencent par `.` sont reliés aux classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
+Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs. Les sélecteurs qui commencent par `.` sont reliés aux classes. Il y a de nombreux tutoriels et des explications à propos de CSS sur le Web qui peuvent vous aider à comprendre le code suivant. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -295,9 +295,9 @@ Sauvegardez les fichiers modifiés et rafraîchissez votre site web.
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Looks awesome, right? Regarde le code que nous venons juste collé à trouver les endroits où nous avons ajouté des classes dans le code HTML et de les utiliser dans le CSS. Où souhaitez-vous faire le changement si vous vouliez la date turquoise?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
