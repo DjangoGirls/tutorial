@@ -1051,14 +1051,14 @@ Co wypisze nam na ekranie:
 
 `range` jest funkcją, która tworzy listę liczb jedna po drugiej (liczby te podajesz jako parametry).
 
-Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej przez Pythona (to znaczy, że `range(1, 6)` liczy od 1 do 5, ale nie zawiera liczby 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej przez Pythona (to znaczy, że `range(1, 6)` liczy od 1 do 5, ale nie zawiera liczby 6). Dzieje się tak, bo "range" ma przedział jednostronnie otwarty, co oznacza, że zawiera pierwszą wartość z przedziału, ale nie zawiera ostatniej.
 
 ## Podsumowanie
 
 To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Oficjalny, kompletny tutorial Pythona znajdziesz pod adresem https://docs.python.org/3/tutorial/. Pozwoli on Tobie poznać język kompletnie i dogłębnie. Powodzenia! :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom zanim przejdziesz do kolejnego rozdziału. :)
 
 ![Babeczka](images/cupcake.png)
