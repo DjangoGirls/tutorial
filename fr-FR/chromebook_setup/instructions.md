@@ -11,7 +11,7 @@ Cloud 9 est un outil qui vous donne un éditeur de code et un accès à un ordin
 5. Appelez-le *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Maintenant, vous pouvez voir une interface avec une barre latérale, une grande fenêtre principale avec certains texte, et d'une petite fenêtre en bas qui ressemble à quelque chose comme ceci:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -22,9 +22,9 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### Environnement virtuel
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un environnement virtuel (également appelé un virtualenv) est comme un privé de la boîte, nous pouvons des trucs utiles code informatique dans un projet que nous travaillons. Nous les utilisons pour gardez les différents morceaux de code que nous voulons pour nos différents projets distincts pour les choses ne se mélangent entre les projets.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Dans votre terminal, au bas de la Cloud 9 interface, exécutez la commande suivante:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,7 +32,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Si cela ne fonctionne toujours pas, demandez à votre entraîneur de l'aide.
 
 Next, run:
 
@@ -53,7 +53,7 @@ Créez un compte [Github](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Le Django Filles didacticiel comprend une section sur ce qui est appelé le Déploiement, qui est le processus de la prise du code que les pouvoirs de votre application web et de le déplacer vers un ordinateur public (appelé serveur) afin que les autres les gens peuvent voir votre travail.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
