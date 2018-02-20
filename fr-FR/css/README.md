@@ -299,6 +299,6 @@ Woohoo! Looks awesome, right? Regarde le code que nous venons juste collé à tr
 
 N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre quelles sont les différentes choses sont en train de faire. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours annuler!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Il peut vous aider à apprendre tout au sujet de faire votre site web plus joli avec les CSS.
 
 Prête pour le chapitre suivant ? :)
