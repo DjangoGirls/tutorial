@@ -992,7 +992,7 @@ Wir wollen alle mit ihrem Namen grüßen. Wir besitzen bereits die `hi`-Funktion
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Hier ist der vollständige Code für die Datei:
 
