@@ -994,7 +994,7 @@ Nous voulons saluer chacune d'entre elles par son nom. Nous avons déjà la fonc
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Voilà le code complet à mettre dans votre fichier :
 
