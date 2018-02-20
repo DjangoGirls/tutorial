@@ -44,13 +44,13 @@ Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami,
 
 Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora, które wybrałaś; powinnaś zobaczyć panel administracyjny Django.
 
-![Django admin](images/django_admin3.png)
+![Admin Django](images/django_admin3.png)
 
 Przejdź do Postów i poeksperymentuj z nimi trochę. Dodaj pięć lub sześć wpisów na blogu. Nie przejmuj się zawartością - możesz po prostu skopiować i wkleić tekst z tego tutoriala, aby zaoszczędzić czas. :)
 
 Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 
-![Django admin](images/edit_post3.png)
+![Admin Django](images/edit_post3.png)
 
 Jeśli chcesz dowiedzieć się więcej o administratorze Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
