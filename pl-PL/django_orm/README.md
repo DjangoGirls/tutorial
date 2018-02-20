@@ -49,7 +49,7 @@ Ups! Wyskoczył błąd. Mówi on nam, że nie istnieje coś takiego jak 'Post'. 
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Importujemy model `Post` z `blog.models`. Spróbujmy jeszcze raz wyświetlić wszystkie wpisy:
 
 {% filename %}command-line{% endfilename %}
 
