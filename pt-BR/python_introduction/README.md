@@ -994,7 +994,7 @@ Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fa
 for name in girls:
 ```
 
-O ```for``` se comporta de forma semelhante ao ```if``` no código abaixo ambos precisam ser indentados quatro espaços.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Aqui está o código completo que será salvo no arquivo:
 
