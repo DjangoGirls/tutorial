@@ -196,15 +196,15 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 - Making a mistake in your GitHub URL
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). Voir si il y a des messages d'erreur tout en là; les plus récents sont en bas.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+Et rappelez-vous, votre coach est là pour vous aider!
 
 # Check out your site!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur votre ordinateur local. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Connectez-vous avec le nom d'utilisateur et le mot de passe, et vous verrez que vous pouvez ajouter de nouveaux Messages sur le serveur.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
