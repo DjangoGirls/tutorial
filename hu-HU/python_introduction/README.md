@@ -994,7 +994,7 @@ Mindegyiküket üdvözölni szeretnénk. Ehhez már megvan a `hi` függvényünk
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` nyilatkozat; alábbi kódot mindkét kell tagolt négy terek.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Itt a teljes kód, ami a fájlban lesz:
 
