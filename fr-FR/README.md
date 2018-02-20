@@ -6,13 +6,13 @@
 
 ## Bienvenue
 
-Bienvenue dans le tutoriel Django Girls ! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de te voir ici :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, vous offrant un aperçu de tous les pièces et de morceaux qui ont besoin de se réunir pour faire le travail web tel que nous le connaissons.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà travaillé le courage d'être ici, vous serez tout simplement beau :)
 
 ## Introduction
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
+Avez-vous jamais eu l'impression que le monde est de plus en plus sur la technologie pour laquelle vous ne pouvez pas (encore)? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
 
 Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
@@ -22,7 +22,7 @@ Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimo
 
 ## Qu'apprendrez-vous au cours de ce tutoriel ?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Une fois que vous avez terminé le tutoriel, vous aurez une petite application web: votre propre blog. Nous allons vous montrer comment le mettre en ligne, afin que les autres vont voir votre travail!
 
 Ça devrait ressembler plus ou moins à ça :
 
