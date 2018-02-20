@@ -991,7 +991,7 @@ Kami ingin menyapa mereka semua dengan nama mereka. Kami memiliki fungsi `hi` un
 untuk nama pada anak perempuan:
 ```
 
-Itu ```untuk``` pernyataan berperilaku serupa dengan ```jika``` pernyataan; kode di bawah kedua ini perlu indentasi empat spasi.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Berikut adalah kode lengkap yang akan ada di file:
 
