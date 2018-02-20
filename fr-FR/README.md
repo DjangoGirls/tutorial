@@ -42,9 +42,9 @@ Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspon
 
 Ce tutoriel est maintenu par [DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Voudriez-vous nous aider à traduire le tutoriel dans d'autres langues?
 
-Currently, translations are being kept on crowdin.com platform at:
+Actuellement, les traductions sont conservés sur crowdin.com plate-forme:
 
 https://crowdin.com/project/django-girls-tutorial
 
