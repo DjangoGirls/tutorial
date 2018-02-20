@@ -361,7 +361,7 @@ Wykaz wszystkich metod dostępnych dla list znajdziesz w odpowiednim rozdziale d
 
 > Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Installing Python Code Editor](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Słownik przypomina nieco listę, jednak różni się tym, że dostęp do wartości uzyskujemy za pomocą klucza, a nie liczbowego indeksu. Kluczem może być dowolny ciąg znaków lub liczba. Pusty słownik tworzymy tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -372,7 +372,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 
 To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
-Now, try writing the following command (try substituting your own information, too):
+A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
 
 {% filename %}command-line{% endfilename %}
 
@@ -380,7 +380,7 @@ Now, try writing the following command (try substituting your own information, t
 >>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Za pomocą tej instrukcji stworzyłaś właśnie zmienną o nazwie `uczestniczka` zawierającą trzy pary klucz-wartość:
 
 - Klucz `imie` wskazuje na wartość `'Ola'` (obiekt typu `string`),
 - `kraj` wskazuje na wartość `'Polska'` (kolejny `string`),
@@ -395,7 +395,7 @@ Za pomocą poniższej składni możesz sprawdzać wartości poszczególnych kluc
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Widzisz, zupełnie jak w liście. Ale nie trzeba pamiętać numeru indeksu, wystarczy nazwa klucza.
 
 A co się stanie, gdy poprosimy Pythona o wartość klucza, który nie istnieje? Masz pomysł? Spróbujmy tak zrobić i zobaczmy efekt!
 
@@ -415,7 +415,7 @@ Kiedy powinniśmy używać słownika, a kiedy listy? To bardzo dobre pytanie! Za
 - Potrzebujesz ułożyć elementy w określonej kolejności? Wybierz listę.
 - Potrzebujesz powiązać wartości z kluczami, żeby mieć później łatwiejszy dostęp do nich (używając klucza)? Użyj słownika.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Słowniki, podobnie jak listy, są *mutowalne*, co oznacza, że po ich utworzeniu można je nadal zmieniać. Możesz dodać do stworzonego już słownika nowe pary klucz-wartość, w taki sposób:
 
 {% filename %}command-line{% endfilename %}
 
@@ -423,7 +423,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> uczestniczka['ulubiony_jezyk'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość w danym słowniku. Śmiało, wpisz polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -432,9 +432,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-You can use the `pop()` method to delete an item in the dictionary. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
+Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
 
 {% filename %}command-line{% endfilename %}
 
