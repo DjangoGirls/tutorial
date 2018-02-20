@@ -994,7 +994,7 @@ Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, qui
 for name in girls:
 ```
 
-L'istruzione ```for``` ha un comportamento simile all'istruzione ```if``` il codice sotto entrambe deve essere indentato di quattro spazi.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Qua c'è l'intero codice che sarà nel file:
 
