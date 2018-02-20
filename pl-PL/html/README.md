@@ -46,16 +46,16 @@ Dodaj następującą treść w pliku z szablonem:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+I jak twoja strona wygląda teraz? Odwiedź stronę http://127.0.0.1:8000/, żeby się dowiedzieć.
 
 ![Rysunek 11.2](images/step3.png)
 
 Zadziałało! Dobra robota :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
+* Najbardziej podstawowy znacznik, `<html>`, jest zawsze na początku każdej strony internetowej, zaś `</html>` jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
 * `<p>` jest znacznikiem akapitów; `</p>` zamyka każdy akapit
 
-## Head and body
+## Head i body
 
 Każda strona HTML jest podzielona na dwie części: **head** i **body**.
 
@@ -65,7 +65,7 @@ Każda strona HTML jest podzielona na dwie części: **head** i **body**.
 
 Używamy znacznika `<head>`, aby poinformować przeglądarkę o konfiguracji strony oraz `<body>` do przekazania informacji o tym, co właściwie znajduje się na stronie.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Przykładowo, element tytułu strony możesz umieścić wewnątrz `<head>`, o tak:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -91,24 +91,24 @@ Zapewne zauważyłaś także, że każdy znacznik otwierający posiada *znacznik
 
 To trochę jak wkładanie rzeczy do pudełek. Masz jedno wielkie pudło, `<html></html>`; wewnątrz niego znajduje się `<body></body>`, a w środku tegoż są kolejne mniejsze pudełka: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Musisz przestrzegać zasad *zamykania* znaczników i *zagnieżdżania* elementów - przeciwnym razie przeglądarka może mieć problem z ich poprawnym zinterpretowaniem i Twoja strona będzie wyświetlać się niepoprawnie.
 
 ## Dostosowywanie szablonu
 
 Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczników, które nam się do tego przydadzą:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>Tytuł</h1>` dla twojego najbardziej znaczącego nagłówka
 * `<h2>Podtytuł</h2>` dla nagłówka niższego poziomu
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h3>pod-podtytuł</h3>` …i tak dalej aż do `<h6>`
+* `<p>akapit tekstu</p>`
 * `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
 * `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` to przejście do nowej linii (wewnątrz br nie wstawiamy niczego i nie ma też znacznika zamykającego)
 * `<a href="https://djangogirls.org">link</a>` tworzy link
 * `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
 * `<div></div>` tworzy sekcję na stronie
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Tutaj możesz zobaczyć przykład pełnego szablonu, skopiuj i wklej go do `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,16 +139,16 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 Stworzyliśmy tutaj trzy sekcje `div`.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Pierwszy `div` zawiera w sobie tytuł naszego bloga - jest to nagłówek i link
+* Kolejne dwa elementy `div` zawierają nasze wpisy wraz z opublikowaną datą, `h2` z klikalnym tytułem wpisu oraz dwa elementy `p` (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.
 
 Daje nam to taki efekt:
 
 ![Rysunek 11.4](images/step6.png)
 
-Hura! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tą samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.
 
 ## Jeszcze jedna rzecz: wdrożenie na serwer!
 
