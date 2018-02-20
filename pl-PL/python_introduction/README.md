@@ -648,7 +648,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+W wierszu polecań Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -659,7 +659,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+A w Windows Powershell będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -678,7 +678,7 @@ Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Uwaga: w Windowsie 'python3' nie będzie rozpoznawany jako polecenie. W takim wypadku użyj 'python' by wykonać ten plik:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,7 +692,7 @@ Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
 
 ## If…elif…else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zostaną spełnione określone warunki. Dlatego Python posiada coś, co nazywa się **instrukcjami warunkowymi**.
 
 Zastąp kod w pliku **python_intro.py** następującym:
 
@@ -702,7 +702,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
 
 {% filename %}command-line{% endfilename %}
 
@@ -732,7 +732,7 @@ $ python3 python_intro.py
 To dziala!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
@@ -755,7 +755,7 @@ Po uruchomieniu wyświetli się:
     5 jest jednak większe od 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -807,11 +807,11 @@ Python zbada każdy warunek i wyświetli:
     Idealnie, moge uslyszec wszystkie detale
     
 
-## Comments
+## Komentarze
 
 Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-Let's see how that looks:
+Zobaczmy, jak to wygląda:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -822,15 +822,15 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne by wytłumaczyć czemu program coś robi, lub by dodać podsumowanie gdy program robi coś skomplikowanego.
 
 ### Podsumowanie
 
-In the last few exercises you learned about:
+W ostatnich kilku ćwiczeniach nauczyłaś się:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
+- **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
+- **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
+- **zapisywać pliki** - przechowywać kod w plikach, co pozwala nam uruchamiać bardziej rozbudowane programy.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
