@@ -162,9 +162,9 @@ Efekt będzie wyglądał tak:
 
 Znów rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić datę opublikowania wpisu (o ile istnieje), tytuł oraz treść. Ale jest kilka ważnych rzeczy do omówienia, nieprawdaż?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` jest znacznikiem szablonu, którego możemy użyć do sprawdzenia jakiegoś warunku. (Pamiętasz `if ... else ..` z rodziału **Wprowadzenie do Pythona**?) W tym wypadku chcemy sprawdzić czy `published_date` posta nie jest pusta.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+OK, możemy teraz odświeżyć naszą stronę i sprawdzić, czy błąd `TemplateDoesNotExist` już zniknął.
 
 ![Strona ze szczegółami wpisu](images/post_detail2.png)
 
@@ -196,9 +196,9 @@ Potem, w konsoli [PythonAnywhere Bash](https://www.pythonanywhere.com/consoles/)
 
 ## Aktualizacja plików statycznych na serwerze
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Serwery takie jak PythonAnywhere wolą traktować "pliki statyczne" (jak np. pliki stylów CSS) inaczej niż pliki Pythona, ponieważ dzięki temu mogą one je optymalizować, dzięki czemu strona ładuje się szybciej. W wyniku takiej optymalizacji, kiedykolwiek zmienisz coś w naszych plikach CSS, będziemy musiały wykonać dodatkową komendę na serwerze, by wiedział że trzeba pliki statyczne uaktualnić. Komenda nazywa się `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on nadal aktywny (PythonAnywhere używa polecenia `workon` w celu aktywacji, dokładnie tak jak komenda `source myevn/bin/activate`, której użyłaś na swoim komputerze):
 
 {% filename %}command-line{% endfilename %}
 
@@ -207,7 +207,7 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Polecenie `manage.py collectstatic` jest trochę podobne do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zaaplikowało* te zmiany, albo w kolekcji plików statycznych na serwerze, albo w bazie danych.
 
 W każdym wypadku jesteśmy gotowe przejść do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wcisnąć **Reload** (ang. odśwież).
 
