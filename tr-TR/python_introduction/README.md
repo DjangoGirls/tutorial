@@ -994,7 +994,7 @@ Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiy
 kızlar içindeki isimler:
 ```
 
-Bu ```için``` ifade şunlara benzer davranış gösteriyor ```eğer``` ifade: aşağıdaki kodların ikiside girintili ve dört boşluk olması lazım.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Dosyada yer alacak tam kod aşağıdadır:
 
