@@ -994,7 +994,7 @@ Chceme ich pozdraviť všetky menom. Na to máme funkciu `hi`, tak ju použime v
 for meno in dievcata:
 ```
 
-    for sa správa podobne ako ```if``` príkaz. Kód v riadku pod nimi musí byť odsadený štyrmi medzerami.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Tu je plný kód, ktorý napíšeme do súboru:
 
