@@ -10,7 +10,7 @@ Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'expl
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text est un très populaire de l'éditeur avec une période d'évaluation gratuite et elle est disponible pour tous les systèmes d'exploitation.
 
 [Télécharger](https://www.sublimetext.com/3)
 
