@@ -170,7 +170,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 Hura! Działa!
 
-# Deploy time!
+# Czas na wdrożenie!
 
 Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć projekt.
 
@@ -192,9 +192,9 @@ Potem, w konsoli [PythonAnywhere Bash](https://www.pythonanywhere.com/consoles/)
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-## Updating the static files on the server
+## Aktualizacja plików statycznych na serwerze
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
