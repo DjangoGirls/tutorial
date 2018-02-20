@@ -38,7 +38,7 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
 
 > Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` są tutaj tylko po to, by pokazać Ci przykład znaku zachęty linii poleceń, który będzie Ciebie zapraszał, byś wpisała komendę.
 
 <!--endsec-->
 
@@ -108,7 +108,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > ** Uwaga **: jeśli używasz Chromebooka, dodaj ten wiersz u dołu pliku settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> Dodaj również `.c9users.io` do `ALLOWED_HOSTS` jeżeli używasz cloud9
 
 ## Inicjalizacja bazy danych
 
