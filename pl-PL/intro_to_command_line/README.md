@@ -20,21 +20,21 @@ Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz poleceń.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Przejdź do menu Start → System → Wiersz polecenia.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz polecenia.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Przejdź do Aplikacje → Narzędzia → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
+Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, po prostu zapytaj Google. :)
 
 <!--endsec-->
 
@@ -74,7 +74,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Twoja pierwsza komenda! 
 
-Let's start by typing this command:
+Zacznijmy od wpisania następującego polecenia:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -104,7 +104,7 @@ A następnie wciśnij `enter`. Oto rezultat:
 
 Jak widzisz, komputer właśnie wyświetlił Twoją nazwę użytkownika. Prawda, że sprytne? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Staraj się zawsze przepisywać polecenia zamiast je kopiować i wklejać. W ten sposób zapamiętasz więcej!
 
 ## Podstawy
 
@@ -134,7 +134,7 @@ Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpi
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Uwaga: 'cd' pochodzi od 'change directory' (po polsku 'zmień katalog'). W PowerShell możesz używać pwd dokładnie tak samo jak w Linuksie lub Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Uwaga: W PowerShell możesz również używać 'ls' tak jak w Linuksie lub Mac OS X.<!--endsec-->
 
 * * *
 
@@ -223,7 +223,7 @@ Sprawdźmy, czy coś się faktycznie zmieniło:
 
 Tak, to tutaj!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 
@@ -257,7 +257,7 @@ To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Mo�
 
 ### Ćwiczenie!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`.)
 
 #### Rozwiązanie:
 
@@ -313,7 +313,7 @@ Najpierw musimy wrócić do Pulpitu:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego, w którym znajduje się Twój aktualny katalog).
 
 Sprawdź, gdzie jesteś:
 
@@ -339,7 +339,7 @@ Sprawdź, gdzie jesteś:
 
 Teraz czas usunąć katalog `cwiczenie`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -402,23 +402,23 @@ To na razie tyle! Możesz teraz spokojnie zamknąć wiersz poleceń. To co, zrob
 
 <!--endsec-->
 
-Cool, huh? :)
+Fajnie, nie? :)
 
 ## Podsumowanie
 
 Oto podsumowanie przydatnych poleceń:
 
-| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                       | Przykład                                          |
-| ------------------- | -------------------------- | -------------------------- | ------------------------------------------------- |
-| wyjście             | wyjście                    | zamknięcie okna            | **wyjście**                                       |
-| cd                  | cd                         | zmiana katalogu            | **cd test**                                       |
-| cd                  | pwd                        | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir                 | ls                         | lista katalogów/plików     | **dir**                                           |
-| copy                | cp                         | kopiowanie pliku           | **copy c:\test\test.txt c:\windows\test.txt** |
-| move                | mv                         | przenoszenie pliku         | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir               | mkdir                      | tworzenie nowego katalogu  | **mkdir testdirectory**                           |
-| rmdir (lub del)     | rm                         | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S            | rm -r                      | delete a directory         | **rm -r testdirectory**                           |
+| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                          | Przykład                                          |
+| ------------------- | -------------------------- | ----------------------------- | ------------------------------------------------- |
+| wyjście             | wyjście                    | zamknięcie okna               | **wyjście**                                       |
+| cd                  | cd                         | zmiana katalogu               | **cd test**                                       |
+| cd                  | pwd                        | pokazywane bieżącego katalogu | **cd** (Windows) lub **pwd** (Mac OS / Linux)     |
+| dir                 | ls                         | lista katalogów/plików        | **dir**                                           |
+| copy                | cp                         | kopiowanie pliku              | **copy c:\test\test.txt c:\windows\test.txt** |
+| move                | mv                         | przenoszenie pliku            | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir               | mkdir                      | tworzenie nowego katalogu     | **mkdir testdirectory**                           |
+| rmdir (lub del)     | rm                         | usuwanie pliku                | **del c:\test\test.txt**                        |
+| rmdir /S            | rm -r                      | usuwanie katalogu             | **rm -r testdirectory**                           |
 
 To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
