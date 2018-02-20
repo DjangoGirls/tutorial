@@ -118,14 +118,11 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
 
     <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
     
-    Your code is now on GitHub. Możesz to sprawdzić!  Zauważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. :)
+    Twój kod jest już na Githubie. Możesz to sprawdzić!  Zauważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. # Konfiguracja twojego bloga na PythonAnywhere
     
+    ## Zakładanie konta na PythonAnywhere
     
-    # Setting up our blog on PythonAnywhere
-    
-    ## Sign up for a PythonAnywhere account
-    
-    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    &gt; **Uwaga** Mogłaś już wcześniej, podczas instalacji, założyć konto na PythonAnywhere – jeżeli tak się stało, nie ma potrzeby byś robiła to ponownie.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
