@@ -995,7 +995,7 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-الـ ```ﻷجل``` بيان يتصرف مثل ```if``` بيان؛ الكود أدناه كل من هذه تحتاج إلى أن تكون المسافة البادئة بأربع مسافات.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 هنا التعليمات البرمجية الكاملة التي سوف تكون في الملف:
 
