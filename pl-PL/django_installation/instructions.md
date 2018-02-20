@@ -8,9 +8,9 @@ Zanim zainstalujemy Django, zapoznamy się z niezwykle użytecznym narzędziem, 
 
 Stwórzmy zatem **środowisko wirtualne** (zwane też *virtualenv*). Jego zadaniem jest oddzielenie środowiska Pythona/Django dla każdego projektu z osobna. Oznacza to, że zmiany dokonane w obrębie jednej aplikacji nie wpłyną na działanie innych, nad którymi pracujesz. Sprytne, prawda?
 
-Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. Na Windowsie może on wyglądać jak `C:\Users\Name` (gdzie `Name` jest twoim loginem).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **UWAGA:** W Windowsie upewnij się, że katalog ten nie zawiera znaków akcentowanych lub specjalnych; Jeśli Twoja nazwa użytkownika zawiera znaki akcentowane, użyj innego katalogu, na przykład `C:\djangogirls`.
 
 Na potrzeby kursu będziemy stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
 
@@ -44,14 +44,14 @@ Gdzie `myvenv` to nazwa Twojego `virtualenv`'a. Nazwa może być dowolna, ale le
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Możemy stworzyć `virtualenv`'a w Linuksie i OS X poprzez użycie jedynie polecenia `python3 -m venv myvenv`. Przyjmie ono następującą postać:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` to nazwa Twojego `virtualenv`'a. Nazwa środowiska może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` to nazwa Twojego `virtualenv`'a. Nazwa środowiska może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. Dobrze jest też trzymać się krótkich nazw - będziesz do nich często wracała!
 
 > **UWAGA:** W niektórych wersjach Debiana/Ubuntu może pojawić się następujący komunikat o błędzie:
 > 
