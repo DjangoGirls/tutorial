@@ -993,7 +993,7 @@ Chceme pozdravit všechny s použitím jejich jména. Máme funkci `hi` která t
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Zde je celý kód, který umístíme do souboru:
 
