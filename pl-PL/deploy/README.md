@@ -84,7 +84,7 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
      create mode 100644 mysite/wsgi.py
      ```
     
-    ## Wypychanie kodu na GitHuba
+    ## Wypchnięcie kodu na GitHuba
     
     Przejdź na [GitHub.com](https://www.github.com) i załóż nowe, darmowe konto użytkonika. (Jeśli już to wcześniej zrobiłaś to super!). 
     
