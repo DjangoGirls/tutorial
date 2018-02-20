@@ -445,9 +445,9 @@ Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, �
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Jak widać z wyświetlonego rezultatu, para klucz-wartość odpowiadająca kluczowi 'ulubione_liczby' została usunięta.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Ponadto możesz także zmienić wartość odpowiadającą kluczowi, który już istnieje w słowniku. Napisz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -457,24 +457,24 @@ As well as this, you can also change a value associated with an already-created 
 {'kraj': 'Niemcy', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Jak widać, wartość klucza `'kraj'` została zmieniona z `'Polska'` na `'Niemcy'`. :) Ekscytujące? Hura! Właśnie nauczyłaś się kolejnej niesamowitej rzeczy.
 
 ### Podsumowanie
 
 Doskonale! Wiesz już sporo o programowaniu. W tej części nauczyłaś się o:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **błędach** - umiesz już czytać ze zrozumieniem błędy pojawiające się, gdy Python nie rozumie polecenia, które mu wydałaś
+- **zmiennych** - nazwach dla obiektów, dzięki którym programuje się łatwiej, a Twój kod jest czytelniejszy
+- **listach** - listach obiektów uporządkowanych w określonej kolejności
+- **słownikach** - zbiorach obiektów przechowywanych w postaci par klucz-wartość
 
 Gotowa na następną część? :)
 
 ## Porównywanie rzeczy
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
 
 {% filename %}command-line{% endfilename %}
 
@@ -491,9 +491,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
-Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
+Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
 
 Użyjmy Pythona do wykonania dwóch innych zadań:
 
@@ -506,7 +506,7 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>` i `<` są zrozumiałe, ale co oznaczają `>=` i `<=`? Czytamy je w ten sposób:
 
 - x `>` y oznacza: x jest większe od y
 - x `<` y oznacza: x jest mniejsze od y
@@ -528,8 +528,8 @@ True
 
 Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci Ci wynik! Prawda, że sprytne?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - gdy używasz operatora `and`, oba porównania muszą być prawdziwe (True), żeby całe wyrażenie było prawdziwe
+- **or** - gdy używasz operatora `or`, tylko jedno z obu porównań musi być prawdziwe, aby całe wyrażenie było prawdziwe
 
 Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego odpowiednik w Pythonie:
 
@@ -546,14 +546,14 @@ Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać licz
 
 ## Obiekt logiczny (Boolean)
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Przypadkiem się właśnie dowiedziałaś o istnieniu innego typu obiektów w Pythonie. Nazywa się on **Boolean**.
 
-There are only two Boolean objects:
+Są tylko dwa obiekty logiczne:- True (prawda)- False (fałsz):
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy False.)
 
 Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 
@@ -586,7 +586,7 @@ Gratulacje! Wartości logiczne są jedną z najfajniejszych możliwości w progr
 
 # Zapisujemy!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
 Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do pisania linijka po linijce. Prawdziwe programy są zapisywane w plikach i uruchamiane przez **interpreter** lub **kompilator** naszego języka programowania. Dotąd uruchamiałyśmy nasze programy w **interpreterze** Pythona, wprowadzając za każdym razem najwyżej jedną linijkę kodu. Ale w następnych zadaniach będziemy potrzebowały dodać więcej niż jeden wiersz kodu, więc musimy szybko:
 
@@ -595,7 +595,7 @@ Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do
 - Zapisać kod do nowego pliku Pythona
 - Uruchomić go!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -616,9 +616,9 @@ print('Hello, Django girls!')
 
 Oczywiście jesteś już całkiem kompetentną programistką Pythona, więc śmiało - dodaj tam więcej kodu, który poznałaś wcześniej.
 
-Teraz musimy zapisać plik i nadać mu wymowną nazwę. Nazwijmy go **python_intro.py** i zapiszmy na Pulpicie. Możemy nazwać plik jak tylko nam się podoba, ale jedna rzecz jest istotna: na końcu nazwy musi być **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Teraz musimy zapisać plik i nadać mu wymowną nazwę. Nazwijmy go **python_intro.py** i zapiszmy na Pulpicie. Możemy nazwać plik jak tylko nam się podoba, ale jedna rzecz jest istotna: na końcu nazwy musi być **.py**. Rozszerzenie **.py** informuje nasz komputer, że to jest **plik wykonywalny Pythona** i Python może go uruchomić.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Nazywa się to "podświetlanie składni" i jest naprawdę użyteczne podczas kodowania. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). To jeden z powodów, dla których używamy edytora kodu. :)
+> **Uwaga** Powinnaś zauważyć jedną z najfajniejszych rzeczy, jeśli chodzi o edytor kodu: kolory! Gdy pisałaś w konsoli Pythona, wszystko miało ten sam kolor. Teraz powinnaś zobaczyć, że funkcja `print` jest innego koloru niż string. Nazywa się to "podświetlanie składni" i jest naprawdę użyteczne podczas kodowania. Kolor wyrazów w edytorze będzie dla Ciebie wskazówką, np. łatwo rozpoznasz dzięki temu niezamknięty string albo literówkę w słowie kluczowym (tak jak `def` w funkcji). To jeden z powodów, dla których używamy edytora kodu. :)
 
 Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości poznane w sekcji poświęconej wierszowi poleceń, użyj terminala, aby **zmienić aktualny katalog** na katalog Pulpitu.
 
@@ -637,7 +637,7 @@ Na Macu polecenie będzie wyglądać mniej-więcej tak:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -1061,4 +1061,4 @@ For official and full python tutorial visit https://docs.python.org/3/tutorial/.
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Cupcake](images/cupcake.png)
+![Babeczka](images/cupcake.png)
