@@ -163,14 +163,14 @@ Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
+> **Uwaga:** `--all` (czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 
@@ -188,7 +188,7 @@ Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w histo
 
 > **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,10 +206,10 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i przeglądnąć swój kod na PythonAnywhere.
 
 * Na koniec przeskocz do zakładki [Web tab](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne. :)
