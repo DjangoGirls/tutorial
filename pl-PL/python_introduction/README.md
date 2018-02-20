@@ -940,16 +940,16 @@ I wykonajmy:
     Hej Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno się wyświetlić coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
     Hej nieznajoma!
     
 
-Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. And that's exactly why we need functions – you never want to repeat your code!
+Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i raczej ciężko byłoby pisać warunek dla każdego, co?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -972,7 +972,7 @@ Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
 
 ## Pętle
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 To już ostatnia cześć. Prawda, że szybko poszło? :)
 
