@@ -994,7 +994,7 @@ Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hej`, zatem u�
 for imie in dziewczyny:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Wyrażenie `for` zachowuje się podobnie jak `if`, a więc kod pod nimi musi być wcięty 4 spacjami.
 
 Oto kompletny kod, który umieścimy w pliku:
 
