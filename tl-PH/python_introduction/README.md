@@ -994,7 +994,7 @@ Gusto nating batiin silang lahat gamit ang kanilang pangalan. Tayo ay mayroong `
 para sa pangalan ng mga babae:
 ```
 
-Ang ```para``` ang pahayag ay kumikilos nang pareho sa ```kung``` pahayag; ang code sa baba ay parehong kailangan na i-indent nang apat na espasyo.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Narito ang kabuuang code na nasa loob ng file:
 
