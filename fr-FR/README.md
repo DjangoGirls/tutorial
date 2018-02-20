@@ -28,13 +28,13 @@ Une fois que vous avez terminé le tutoriel, vous aurez une petite application w
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur et allez poser vos questions !
+> Si vous travaillez avec le tutoriel sur votre propre et ne pas avoir un coach qui vous aidera en cas de problème, nous avons un système de chat pour vous: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur et allez poser vos questions !
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
 ## Suivre le tutoriel chez soi
 
-Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel à la maison. Pour les lecteurs à la maison, nous sommes actuellement en train de préparer des vidéos que vous, il sera plus facile de suivre le tutoriel sur votre propre. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
 
