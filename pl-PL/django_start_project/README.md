@@ -4,7 +4,7 @@
 > 
 > Fragmenty tego rozdziału są oparte o [tutorial django-marcador](http://django-marcador.keimlink.de/) na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 
-We're going to create a small blog!
+Mamy zamiar stworzyć prostego bloga!
 
 Pierwszy krok, który trzeba wykonać, to utworzenie nowego projektu Django. To oznacza, że skorzystamy z dostarczonych przez Django skryptów, które utworzą za nas szkielet projektu Django. Ten szkielet to zbiór katalogów i plików, których będziemy używać później.
 
