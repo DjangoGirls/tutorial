@@ -84,9 +84,9 @@ Pamiętasz, jaki jest następny krok? Oczywiście: dodanie widoku!
 
 ## Dodajmy widok dla poszczególnego wpisu
 
-This time our *view* is given an extra parameter, `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Zwróć uwagę, że musimy użyć dokładnie tej samej nazwy jak ta, której użyłyśmy w pliku urls (`pk`). Pominięcie tej zmiennej jest niepoprawne i spowoduje błąd!
+Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Zwróć uwagę, że musimy użyć dokładnie tej samej nazwy jak ta, której użyłyśmy w pliku urls (`pk`). Pominięcie tej zmiennej jest niepoprawne i spowoduje błąd!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Teraz chcemy wyświetlić jeden i tylko jeden wpis na blogu. Aby to zrobić, możemy użyć querysetów w następujący sposób:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -94,21 +94,21 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Ale jest jeden problem. Jeśli nie istnieje żaden wpis (`Post`) zawierający przekazany `klucz główny` (`pk`), to ujrzymy przepaskudny błąd!
 
 ![Błąd DoesNotExist](images/does_not_exist2.png)
 
-Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. W sytuacji, gdy nie istnieje żaden wpis (`Post`) z przekazaną wartością `pk`, wyświetli znacznie przyjemniejszą stronę (zwaną `Page Not Found 404` albo stroną błędu 404 - informującą, że dana strona nie została znaleziona.
 
 ![Nie znaleziono strony](images/404_2.png)
 
 Dobra wiadomość - możesz stworzyć własną stronę błędu 404 i upiększyć ją tak, jak tylko Ci się podoba. Ale teraz nie jest to super ważne, więc na razie pominiemy ten temat.
 
-OK, time to add a *view* to our `views.py` file!
+OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która wskazuje na widok nazwany `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+Powinnyśmy otworzyć `blog/views.py` i dodać poniższy kod nidaleko innych linii z `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Oraz na końcu tego pliku dodać nasz *widok*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -136,7 +136,7 @@ Działa! Ale co się stanie, gdy klikniesz na link w tytule wpisu?
 
 O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy dodać szablon!
 
-## Create a template for the post details
+## Stwórzmy szablon dla poszczególnego wpisu
 
 W folderze `blog/templates/blog` stwórzmy plik o nazwie `post_detail.html`.
 
@@ -172,7 +172,7 @@ Hura! Działa!
 
 # Deploy time!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Dobrze byłoby sprawdzić czy nasza strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć projekt.
 
 {% filename %}command-line{% endfilename %}
 
