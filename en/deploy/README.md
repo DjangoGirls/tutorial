@@ -82,7 +82,7 @@ $ git commit -m "My Django Girls app, first commit"
  create mode 100644 .gitignore
  [...]
  create mode 100644 mysite/wsgi.py
- ```
+```
 
 
 ## Pushing your code to GitHub
