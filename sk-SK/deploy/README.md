@@ -130,15 +130,15 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
     {% include "/deploy/signup_pythonanywhere.md" %}
     
     
-    ## Configuring our site on PythonAnywhere
+    ## Nastavenie našej stránky na PythonAnywhere
     
-    Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+    Choď do hlavneho [PythonAnywhere panelu](https://www.pythonanywhere.com/) kliknutím na logo a klikni na spustenie "Bash" konzoly – to je PythonAnywhere verzia príkazového riadku, presne ako ten na tvojom počítači.
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
     &gt; **Poznámka** PythonAnywhere ja založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
     
-    Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+    Nasadenie webovej aplikácie na PythonAnywhere znamená stiahnutie kódu z GitHubu, a nakonfigurovania PythonAnywhere aby ho rozpoznal a začal ho poskytovať ako webovú aplikáciu.  Sú manuálne spôsoby ako to urobiť, ale PythonAnywhere poskytuje pomocný nástroj, ktorý všetko urobí za teba. Nainštalujme ho najprv:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
@@ -147,8 +147,7 @@ $ pip3.6 install --user pythonanywhere
 
     <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
     
-    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
-    
+    Now we run the helper to automatically configure our app from GitHub. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto &lt;your-github-username&gt;):
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
@@ -183,11 +182,11 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 
 You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-## You are now live!
+## Si online!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
-## Debugging tips
+## Tipy pre ladenie
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
@@ -205,6 +204,6 @@ And remember, your coach is here to help!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Docela cool, nie?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Môžeš si *pogratulovať*! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš teraz svoju stránku online, na skutočnom internete!
