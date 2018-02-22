@@ -198,7 +198,7 @@ Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. Názov príkazu je `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz ktorý si použila na vlastnom počítači):
 
 {% filename %}command-line{% endfilename %}
 
@@ -211,4 +211,4 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
 
 In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-And that should be it! Congrats :)
+A to by malo byť všetko! Gratulujeme :)
