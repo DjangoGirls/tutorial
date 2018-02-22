@@ -145,24 +145,24 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
 
 $ pip3.6 install --user pythonanywhere
 
-    <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+    <br />Malo by to zobraziť niečo ako `Collecting pythonanywhere`, a ukončiť riadkom ktorý hovorí `Successfully installed (...) pythonanywhere- (...)`.
     
-    Now we run the helper to automatically configure our app from GitHub. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto &lt;your-github-username&gt;):
+    Teraz spustíme pomocníka, ktorý automaticky nakonfiguruje našu aplikáciu z GitHubu. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto &lt;your-github-username&gt;):
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 
-    <br />As you watch that running, you'll be able to see what it's doing:
+    <br />Kým sa pozerá ako to beží, uvidíš čo robí:
     
-    - Downloading your code from GitHub
-    - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-    - Updating your settings file with some deployment settings
-    - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-    - Setting up your static files (we'll learn about these later)
-    - And configuring PythonAnywhere to serve your web app via its API
+    - Sťahuje tvoj kód z GitHubu
+    - Vytvára virtualenv na PythonAnywhere, presne ako ten na tvojom PC
+    - Nastaví v sittings súbore niektoré nastavenia pre nasadenie
+    - Nastaví databázu na PythonAnywhere pomocou `manage.py migrate` príkazu
+    - Nastaví tvoje statické súbory (o nich si povieme neskôr)
+    - A nastaví PythonAnywhere aby ukazovalo tvoju webovú aplikáciu cez svoje API
     
-    On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+    Na PythonAnywhere všetky tie kroky sú automatizované, ale sú to tie isté kroky, ktoré by si musela urobiť u hociktorého poskytovateľa serverov.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
     
     As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
     
