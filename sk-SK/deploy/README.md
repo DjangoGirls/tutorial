@@ -121,11 +121,11 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
     Tvoj kód je na Githube. Kľudne si to over!  Zistíš, že sa nachádza vo vyberanej spoločnosti - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), a mnoho iných skvelých open source-ových softvérových projektov ukladá svoj kód na GitHube. :)
     
     
-    # Setting up our blog on PythonAnywhere
+    # Umiestnenie nášho blogu na PythonAnywhere
     
-    ## Sign up for a PythonAnywhere account
+    ## Vztvor si PythonAnywhere účet
     
-    &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+    &gt; **Poznámka** Možno si si už vytvorila účet na PythonAnzwhere počas inštalácie - ak áno, tak nemusíš to robiť znova.
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
@@ -136,7 +136,7 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
-    &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+    &gt; **Poznámka** PythonAnywhere ja založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
     
     Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
     
