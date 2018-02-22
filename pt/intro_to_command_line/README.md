@@ -172,7 +172,9 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
-<!--endsec-->* * *
+<!--endsec-->
+
+* * *
 
 ### Entrar em outra pasta
 
@@ -204,6 +206,7 @@ $ pwd
 /Users/seunome/Desktop
 ```
 <!--endsec-->
+
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -346,9 +349,10 @@ $ rm -r djangogirls
 djangogirls, Are you sure <Y/N>? Y
 ```
 <!--endsec-->
+
 Pronto! Para ter certeza que a pasta foi realmente excluída, vamos checar:
 
-OS X e Linux:
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
