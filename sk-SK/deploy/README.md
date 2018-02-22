@@ -184,14 +184,14 @@ Môžeš tiež ísť do záložky "Files" a pozrieť sa pomocou vbudovaného Pyt
 
 ## Si online!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Tvoja stránka by teraz mala by dostupná na verejnom internete. Preklikni sa do PythonAnywhere "Web" záložky aby si získala link na ňu. Môžeš to vyzielať s kýmkoľvek :)
 
 ## Tipy pre ladenie
 
 Ak uviídíš chybu počas behu `pa_autoconfigure_django.py` skriptu, toto sú najčastejšie dôvody:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
+- Zabuudla si vytvoriť PythonAnywhere API token.
+- Urobila si chybu v tvojej GitHub URL
 - Ak sa ti zobrazí chybové hlásenie, že *"Could not find your settings.py"*, pravdepodobne je to spôsobené tým že sa ti nepodarilo pridať všetky súbory do Git a/alebo sa ich nepodarilo úspešne pridať na GitHub. Znovu sa pozri na Git odstavec vyššie
 
 Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [záložke Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú dolu.
