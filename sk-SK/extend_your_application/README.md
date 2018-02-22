@@ -192,7 +192,7 @@ Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
 ## Updating the static files on the server
 
