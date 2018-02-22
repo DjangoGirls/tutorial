@@ -1,10 +1,6 @@
-# Editor de Código
-
-Você está prestes a escrever sua primeira linha de código, então é hora de baixar um editor de código!
-
 Existem muitos editores diferentes e em grande parte se resume a preferência pessoal. A maioria dos programadores Python usa as complexas, mas extremamente poderosas IDEs (Integrated Development Environments, ou em português, Ambiente de desenvolvimento Integrado), tais como PyCharm. Para um iniciante, entretanto, estas IDE's são menos convenientes; nossas recomendações são bem mais simples, porém, igualmente poderosas.
 
-Nossas sugestões estão abaixo, mas sinta-se livre para perguntar ao seu coach quais são as suas preferências - assim vai ser mais fácil obter a ajuda deles.
+Nossas sugestões estão abaixo, mas sinta-se livre para perguntar à sua treinadora ou treinador quais são as suas preferências - assim vai ser mais fácil obter a ajuda deles.
 
 ## Gedit
 

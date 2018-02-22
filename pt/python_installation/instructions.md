@@ -59,7 +59,7 @@ Se você tem uma 'micro versão' do Python diferente instalada, por exemplo 3.5.
 <!--sec data-title="Debian or Ubuntu" data-id="python_debian"
 data-collapse=true ces-->
 
-Type this command into your console:
+Use esse comando em seu console:
 
 {% filename %}command-line{% endfilename %}
 ```
