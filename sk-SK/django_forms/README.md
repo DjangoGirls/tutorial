@@ -442,8 +442,8 @@ Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasade
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
 * A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
-And that should be it! Congrats :)
+A to by malo byť všetko! Gratulujeme :)
