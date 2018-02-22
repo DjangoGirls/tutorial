@@ -163,7 +163,7 @@ Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto pr�
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Uisti sa, že si v zložke `djangogirls` a následne povedzme `gitu` nech zahrnie všetky zmeny v zložke:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,10 +206,10 @@ Po tom, čo sme to dokončili, nahráme (push) naše zmeny na Github:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
 
 * Nakoniec skoč do [záložky Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na tvojej webovej aplikácii.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Aktualizácia by mala prebehnuť a zmeny by mali byť dostupne v živej verzii! Obnov svoju stránku v prehliadači. Zmeny by mali byť viditeľné. :)
