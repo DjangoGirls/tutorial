@@ -170,9 +170,9 @@ Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist
 
 Jupí! Funguje to!
 
-# Deploy time!
+# Je čas nasadiť!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, že? Pokúsme sa ju znova nasadiť.
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 (Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
-## Updating the static files on the server
+## Aktualizovanie statických súborov na serveri
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. Názov príkazu je `collectstatic`.
 
