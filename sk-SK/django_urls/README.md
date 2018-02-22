@@ -61,7 +61,7 @@ Teraz si predstav, že máš webovú stránky s adresou napríklad `http://www.m
 
 Písať samostatné zobrazenia pre všetky čísla postov by bolo naozaj otravné. Pomocou regulárnych výrazov však vieme vytvoriť vzor, ktorý bude zodpovedať URL a vytiahnuť z nej číslo, ktoré potrebujeme: `^post/(\d+)/$`. Rozoberme si to na drobné, aby sme videli, čo sa tu vlastne deje:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
+* **^post/** hovorí Djangu, aby zobral čokoľvek, čo má na začiatku URL `post` (hneď po `^`)
 * **(\d+)** znamená, že tam bude číslo (jedna alebo viac číslic) a že chceme číslo zachytiť a vytiahnuť
 * **/** tells Django that another `/` character should follow
 * **$** potom označuje koniec adresy URL, čo znamená, že vzoru budú zodpovedať iba reťazce s `/` na konci
