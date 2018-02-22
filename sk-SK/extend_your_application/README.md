@@ -209,6 +209,6 @@ Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa 
 
 `manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
 A to by malo byť všetko! Gratulujeme :)
