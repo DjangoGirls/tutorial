@@ -2,7 +2,7 @@
 
 Môžno sa pýtaš, čo jej šablóna?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Šablóna je súbor, ktorý môžeme znova opakovane použiť, aby sme prezentovali nové informácie v konzistentnom formáte - šablónu môžeš použiť napríklad ako pomôcku pri písaní listu, pretože aj napriek tomu, že každý list môže obsahovať rozdielnu správu a byť adresovaný inej osobe, bude mať rovnaký formát.
 
 Formát Django šablóny je popísaný v jazyku nazývanom HTML (to je to HTML, ktoré sme spomenuli v prvej kapitole **Ako funguje Internet**).
 
@@ -29,7 +29,7 @@ A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v zložke 
 
 Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
-> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús vyreštartovať svoj server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús vyreštartovať svoj server. Choď do príkazového riadku, zastav server stlačením Ctrl+C (stlač naraz tlačidlá Control a C) a spusti ho znova pomocou príkazu `python manage.py runserver`.
 
 ![Obrázok 11.1](images/step1.png)
 
@@ -140,7 +140,7 @@ Tu je príklad úplnej šablóny, skopíruj ho do súboru `blog/templates/blog/p
 Vytvorili sme tri `div` sekcie.
 
 * Prvá `div` sekcia obsahuje titulok nášho blogu - je to nádpis a odkaz
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Ďalšie dva `div` elementy obsahujú príspevky blogu s časom publikovania, `h2` nádpisom príspevku, na ktorý sa dá kliknúť a dva `p` (odstavce) textu, jeden pre dátum a druhý pre náš príspevok.
 
 Výsledok je nasledovný:
 
