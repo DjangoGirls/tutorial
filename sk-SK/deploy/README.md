@@ -162,25 +162,25 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
     - Nastaví tvoje statické súbory (o nich si povieme neskôr)
     - A nastaví PythonAnywhere aby ukazovalo tvoju webovú aplikáciu cez svoje API
     
-    Na PythonAnywhere všetky tie kroky sú automatizované, ale sú to tie isté kroky, ktoré by si musela urobiť u hociktorého poskytovateľa serverov.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+    Na PythonAnywhere všetky tie kroky sú automatizované, ale sú to tie isté kroky, ktoré by si musela urobiť u hociktorého poskytovateľa serverov.  Dôležitá vec, ktorú si treba teraz všimnúť je, že tvoja databáza na PYthonAnywhere je vlastne úplne iná a oddelená od databázy ba tvojom PC - to znamená, že budeš mať iné príspevky a admin účet.
     
-    As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+    Kvôli tomu, presne ako sme to urobili na vlastnom počítači, musíme inicializovať admin účet pomocou `createsuperuser`. PythonAnywhere automaticky aktivoval tvoj virtualenv, takže celé čo potrebuješ urobiť, je spustiť:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+    <br />Zadaj detaily pre admin uživateľa.  Najlepšie je použiť tie isté, ako používaš na vlastnom počítači a predísť tak zmätku, pokiaľ nechceš lepším heslom zabezpečiť PythonAnywhere.
     
-    Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+    Teraz, ak chceš, možeš sa pozrieť na sovj kód na PythonAnywhere pomocou`ls`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Môžeš tiež ísť do záložky "Files" a pozrieť sa pomocou vbudovaného PythonAnywhere prehliadača súborov.
 
 ## Si online!
 
@@ -188,7 +188,7 @@ Your site should now be live on the public Internet! Click through to the Python
 
 ## Tipy pre ladenie
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Ak uviídíš chybu počas behu `pa_autoconfigure_django.py` skriptu, toto sú najčastejšie dôvody:
 
 - Forgetting to create your PythonAnywhere API token.
 - Making a mistake in your GitHub URL
