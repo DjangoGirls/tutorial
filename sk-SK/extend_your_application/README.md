@@ -196,7 +196,7 @@ Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 ## Aktualizovanie statických súborov na serveri
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. Názov príkazu je `collectstatic`.
+Servre ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správajú inak ako ku Python súborom, lebo ich môžu optimalizovať aby ich bolo možné rýchlejšie načítať. Kvôli tomu, keď meníme naše CSS súbory, musíme spustiť ďalší príkaz na servri aby ich akutalizoval. Názov príkazu je `collectstatic`.
 
 Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz ktorý si použila na vlastnom počítači):
 
@@ -207,7 +207,7 @@ Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa 
     [...]
     
 
-`manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+`manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. Robíme zmeny v našom kóde a potom povieme Django aby aplikoval (*apply*) tie zmeny, buď na statické súbory na servri, alebo do databázy.
 
 A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
