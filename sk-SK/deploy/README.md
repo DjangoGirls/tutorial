@@ -192,13 +192,13 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 
 - Forgetting to create your PythonAnywhere API token.
 - Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Ak sa ti zobrazí chybové hlásenie, že *"Could not find your settings.py"*, pravdepodobne je to spôsobené tým že sa ti nepodarilo pridať všetky súbory do Git a/alebo sa ich nepodarilo úspešne pridať na GitHub. Znovu sa pozri na Git odstavec vyššie
 
-Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [záložke Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú dolu.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere help stránke](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+A nezabudni, tvoj mentor je tu na to, aby ti pomohol!
 
 # Pozri sa na svoju stránku!
 
