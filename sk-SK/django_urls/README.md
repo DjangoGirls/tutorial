@@ -63,7 +63,7 @@ Písať samostatné zobrazenia pre všetky čísla postov by bolo naozaj otravn�
 
 * **^post/** hovorí Djangu, aby zobral čokoľvek, čo má na začiatku URL `post` (hneď po `^`)
 * **(\d+)** znamená, že tam bude číslo (jedna alebo viac číslic) a že chceme číslo zachytiť a vytiahnuť
-* **/** tells Django that another `/` character should follow
+* **/** povie Djangu, že bude nasledovať ďalší znak `/`
 * **$** potom označuje koniec adresy URL, čo znamená, že vzoru budú zodpovedať iba reťazce s `/` na konci
 
 ## Tvoja prvá Django URL!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django teraz presmeruje všetko, čo prichádza na 'http://127.0.0.1:8000/' do `blog.urls` a tam bude hľadať ďalšie inštrukcie.
 
 Pri písaní regulárnych výrazov je vždy dobré pridať pred reťazec `r`. To je užitočný tip pre Python, že reťazec môže obsahovať špeciálne znaky, ktoré nie sú urečené pre Python samotný, ale pre regulárny výraz.
 
@@ -124,6 +124,6 @@ Ak sa teraz pokúsiš navštiviť http://127.0.0.1:8000/ uvidíš správu, že s
 
 ![Chyba](images/error1.png)
 
-Konzola zobrazuje chybu, ale neboj sa - je to pomerne užitočné: hovorí ti, že neexistuje atribút post_list (**no attribute 'post_list'**). To je názov *view*, ktorý sa Django pokúša nájsť a použiť, ale sme ho ešte nevytvorili. At this stage, your `/admin/` will also not work. Žiadne obavy, aj k tomu sa dostaneme.
+Konzola zobrazuje chybu, ale neboj sa - je to pomerne užitočné: hovorí ti, že neexistuje atribút post_list (**no attribute 'post_list'**). To je názov *view*, ktorý sa Django pokúša nájsť a použiť, ale sme ho ešte nevytvorili. V tejto fáze `/admin/` tiež nefunguje. Žiadne obavy, aj k tomu sa dostaneme.
 
 > Ak chceš vedieť viac o Django URLconfs, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/1.11/topics/http/urls/
