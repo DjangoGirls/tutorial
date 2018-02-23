@@ -29,7 +29,7 @@ A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v zložke 
 
 Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
-> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús vyreštartovať svoj server. Choď dp príkazového riadku, zastav server stlačením Ctrl+C (stlač naraz tlačidlá Control a C) a spusti ho znova pomocou príkazu `python manage.py runserver`.
+> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús vyreštartovať svoj server. Choď do príkazového riadku, zastav server stlačením Ctrl+C (stlač naraz tlačidlá Control a C) a spusti ho znova pomocou príkazu `python manage.py runserver`.
 
 ![Obrázok 11.1](images/step1.png)
 
@@ -201,10 +201,12 @@ Po tom, čo sme to dokončili, nahráme (push) naše zmeny na Github:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
+
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
 A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
 

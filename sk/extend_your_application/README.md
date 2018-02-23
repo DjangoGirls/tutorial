@@ -170,7 +170,7 @@ Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist
 
 Jupí! Funguje to!
 
-## Ešte jedna vec: čas nasadiť aplikáciu!
+# Je čas nasadiť!
 
 Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, že? Pokúsme sa ju znova nasadiť.
 
@@ -187,10 +187,27 @@ Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
+
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
+
+## Aktualizovanie statických súborov na serveri
+
+Servre ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správajú inak ako ku Python súborom, lebo ich môžu optimalizovať aby ich bolo možné rýchlejšie načítať. Kvôli tomu, keď meníme naše CSS súbory, musíme spustiť ďalší príkaz na servri aby ich akutalizoval. Názov príkazu je `collectstatic`.
+
+Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz ktorý si použila na vlastnom počítači):
+
+{% filename %}command-line{% endfilename %}
+
+    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
+    [...]
+    
+
+`manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. Robíme zmeny v našom kóde a potom povieme Django aby aplikoval (*apply*) tie zmeny, buď na statické súbory na servri, alebo do databázy.
 
 A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
