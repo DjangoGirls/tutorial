@@ -113,12 +113,12 @@ Enter your GitHub username and password and you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-Username for 'https://github.com': hjwp
-Password for 'https://hjwp@github.com':
+Username for 'https://github.com': ola
+Password for 'https://ola@github.com':
 Counting objects: 6, done.
 Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/hjwp/my-first-blog.git
+To https://github.com/ola/my-first-blog.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ```
@@ -130,164 +130,94 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 # Setting up our blog on PythonAnywhere
 
+## Sign up for a PythonAnywhere account
+
 > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 
-## Pulling our code down on PythonAnywhere
+## Configuring our site on PythonAnywhere
 
-When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
+Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
-<img src="images/pythonanywhere_bash_console.png" alt="pointing at Other: Bash in Start a new Console" />
+<img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" />
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
-Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ git clone https://github.com/<your-github-username>/my-first-blog.git
+$ pip3.6 install --user pythonanywhere
 ```
 
-This will pull down a copy of your code onto PythonAnywhere. Check it out by typing `tree my-first-blog`:
+That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+
+Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ tree my-first-blog
-my-first-blog/
-├── blog
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 ```
 
+As you watch that running, you'll be able to see what it's doing:
 
-### Creating a virtualenv on PythonAnywhere
+- Downloading your code from GitHub
+- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+- Updating your settings file with some deployment settings
+- Setting up a database on PythonAnywhere using the `manage.py migrate` command
+- Setting up your static files (we'll learn about these later)
+- And configuring PythonAnywhere to serve your web app via its API
 
-Just like you did on your own computer, you can create a virtualenv on PythonAnywhere. In the Bash console, type:
+On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+
+As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd my-first-blog
-
-$ virtualenv --python=python3.6 myvenv
-Running virtualenv with interpreter /usr/bin/python3.6
-[...]
-Installing setuptools, pip...done.
-
-$ source myvenv/bin/activate
-
-(myvenv) $  pip install django~=1.11.0
-Collecting django
-[...]
-Successfully installed django-1.11.3
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
+Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
-> **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
-
-<!--TODO: think about using requirements.txt instead of pip install.-->
-
-### Creating the database on PythonAnywhere
-
-Here's another thing that's different between your own computer and the server: it uses a different database. So the user accounts and posts can be different on the server and on your computer.
-
-Just as we did on your own computer, we repeat the step to initialize the database on the server, with `migrate` and `createsuperuser`:
+Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-(mvenv) $ python manage.py migrate
-Operations to perform:
-[...]
-  Applying sessions.0001_initial... OK
-(mvenv) $ python manage.py createsuperuser
+(ola.pythonanywhere.com) $ ls
+blog  db.sqlite3  manage.py  mysite  static
+(ola.pythonanywhere.com) $ ls blog/
+__init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+templates  tests.py  urls.py  views.py
 ```
 
-## Publishing our blog as a web app
-
-Now our code is on PythonAnywhere, our virtualenv is ready, and the database is initialized. We're ready to publish it as a web app!
-
-Click back to the PythonAnywhere dashboard by clicking on its logo, and then click on the **Web** tab. Finally, hit **Add a new web app**.
-
-After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.6**, and click Next to finish the wizard.
-
-> **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
 
-### Setting the virtualenv
+## You are now live!
 
-You'll be taken to the PythonAnywhere config screen for your webapp, which is where you'll need to go whenever you want to make changes to the app on the server.
-
-<img src="images/pythonanywhere_web_tab_virtualenv.png" />
-
-In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/<your-PythonAnywhere-username>/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
-
-> **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
-
-
-### Configuring the WSGI file
-
-Django works using the "WSGI protocol", a standard for serving websites using Python, which PythonAnywhere supports. The way we configure PythonAnywhere to recognize our Django blog is by editing a WSGI configuration file.
-
-Click on the "WSGI configuration file" link (in the "Code" section near the top of the page – it'll be named something like `/var/www/<your-PythonAnywhere-username>_pythonanywhere_com_wsgi.py`), and you'll be taken to an editor.
-
-Delete all the contents and replace them with the following:
-
-{% filename %}&lt;your-username&gt;_pythonanywhere_com_wsgi.py{% endfilename %}
-```python
-import os
-import sys
-
-path = os.path.expanduser('~/my-first-blog')
-if path not in sys.path:
-    sys.path.append(path)
-
-os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
-
-from django.core.wsgi import get_wsgi_application
-from django.contrib.staticfiles.handlers import StaticFilesHandler
-application = StaticFilesHandler(get_wsgi_application())
-```
-
-This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
-
-The `StaticFilesHandler` is for dealing with our CSS. This is taken care of automatically for you during local development by the `runserver` command. We'll find out a bit more about static files later in the tutorial, when we edit the CSS for our site.
-
-Hit **Save** and then go back to the **Web** tab.
-
-We're all done! Hit the big green **Reload** button and you'll be able to go view your application. You'll find a link to it at the top of the page.
+Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" tab to get a link to it.  You can share this with anyone you want :)
 
 
 ## Debugging tips
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom. Common problems include:
 
-- Forgetting one of the steps we did in the console: creating the virtualenv, activating it, installing Django into it, migrating the database.
+If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
-- Making a mistake in the virtualenv path on the Web tab – there will usually be a little red error message on there, if there is a problem.
+- Forgetting to create your PythonAnywhere API token.
+- Making a mistake in your GitHub URL
+- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully.  Have another look at the Git section above
 
-- Making a mistake in the WSGI configuration file – did you get the path to your my-first-blog folder right?
 
-- Did you pick the same version of Python for your virtualenv as you did for your web app? Both should be 3.6.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-There are also some [general debugging tips on the PythonAnywhere wiki](https://www.pythonanywhere.com/wiki/DebuggingImportError).
+There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
 And remember, your coach is here to help!
 
 
-# You are live!
+# Check out your site!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
@@ -295,3 +225,4 @@ Once you have a few posts created, you can go back to your local setup (not Pyth
 
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+

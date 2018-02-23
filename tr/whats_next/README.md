@@ -6,35 +6,20 @@ Kendini tebrik et! **Kesinlikle harikasın**. Seninle gurur duyuyoruz! <3
 
 Bir ara ver ve rahatla. Gerçekten çok büyük bir şey yaptın.
 
-Bundan sonra şunları yaptığına emin ol:
-
-*   Güncel kalmak için Django Girls'ü [Facebook][1] ya da [Twitter][2] dan takip et
-
- [1]: http://facebook.com/djangogirls
- [2]: http://twitter.com/djangogirls
+Sonra, güncel kalmak için Django Girls'ü [Facebook](http://facebook.com/djangogirls) ya da [Twitter](https://twitter.com/djangogirls) da takip ettiğinizden emin olun.
 
 ### Daha geniş kapsamlı kaynaklar önerebilir misiniz?
 
-Evet! Öncelikle [Django Girls Tutorial: Extensions][3] isimli diğer kitabımızı dene.
+Evet! İlk olarak, devam et ve diğer kitabımız [Django Girls: Uzantılar](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/) kitabımızı dene.
 
- [3]: https://tutorial-extensions.djangogirls.org
+Daha sonra, aşağıdaki listedeki kaynakları deneyebilirsin. Hepsi birden çok önerilir!
 
-Sonra ise aşağıda listelenen diğer kaynakları deneyebilirsin. Hepsini öneriyoruz!
-
-- [Django'nun resmi eğitimi][4]
-- [Kodlamaya Yeni Başlayan (New Coder) eğitimi][5]
-- [Code Academy Python kursu][6]
-- [Code Academy HTML & CSS kursu][7]
-- [Django Carrots eğitimi][8]
-- [Learn Python The Hard Way kitabı][9]
-- [Getting Started With Django görünütülü dersleri][10]
-- [Two Scoops of Django: Best Practices for Django 1.8 kitabı][11]
-
- [4]: https://docs.djangoproject.com/en/1.11/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: http://www.codecademy.com/en/tracks/python
- [7]: http://www.codecademy.com/tracks/web
- [8]: http://django.carrots.pl/en/
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://www.gettingstartedwithdjango.com/
- [11]: http://twoscoopspress.com/products/two-scoops-of-django-1-8
+- [Resmi Django eğitimi](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Yeni başlayan eğitimleri](http://newcoder.io/tutorials/)
+- [Code Academy Python kursu](https://www.codecademy.com/en/tracks/python)
+- [Code Academy HTML & CSS kursu](https://www.codecademy.com/tracks/web)
+- [Django Carrots eğitimi](https://github.com/ggcarrots/django-carrots)
+- [Django'yu Zor Yoldan Öğren kitabı](http://learnpythonthehardway.org/book/)
+- [Django Video Dersleriyle Başlangıç](http://www.gettingstartedwithdjango.com/)
+- [2 Kaşık Django 1.11: Django Web Framework'ün En İyi Uygulamaları Kitabı](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Merhaba Web Uygulaması: Nasıl Web Uygulaması Yapılacağını Öğrenin](https://hellowebapp.com/) - aynı zamanda Tracy Osborn adlı yazarla <tracy@limedaring.com> adresinden iletişime geçerek ücretsiz eKitap lisansınızı isteyebilirsiniz
