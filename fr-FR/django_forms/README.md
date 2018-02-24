@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Sécurité
 
-C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau blog, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
 
 Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :
 
@@ -396,7 +396,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 
 This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Ce n’est pas une protection complète, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.
 
 Open `blog/templates/blog/post_detail.html` and find this line:
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Parce que vous pouvez être connecté, si vous êtes refresh page, vous ne verrez rien de différent. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Encore un petit effort : déployons !
 
