@@ -14,7 +14,7 @@ Nous allons devoir créer un fichier avec ce nom dans notre dossier `blog`.
        └── forms.py
     
 
-OK, let's open it and type the following code:
+Très bien, allons-y et tapez le code suivant:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -40,7 +40,7 @@ Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans not
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Donc, encore une fois, nous allons créer des liens vers des pages, des URL, des vues et des modèles.
 
 ## Lien vers une page contenant le formulaire
 
@@ -54,7 +54,7 @@ C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons
 
 Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
-After adding the line, your HTML file should now look like this:
+Après avoir ajouté une ligne, votre fichier HTML devrait maintenant ressembler à ceci:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -143,7 +143,7 @@ Pour cela, nous avons besoin de créer un fichier `post_edit.html` dans le dossi
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! If you forget about this bit, Django will complain when you try to save the form:
+* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! Si vous oubliez ce bit, Django se plaindra lorsque vous essaierez de sauvegarder le formulaire:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -265,7 +265,7 @@ You might have noticed that we are setting the publish date before saving the po
 
 Encore bravo !
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Cependant, vous devinez bien que cette solution n'est pas suffisante à long terme. Afin de corriger ce problème, n'hésitez pas à faire la partie **Devoir : ajouter de la sécurité à son site internet !** qui est située juste après la partie principale du tutoriel.
+> Puisque nous venons d'utiliser l'interface d'administration de Django, le système pense actuellement que nous sommes toujours connectés. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Cependant, vous devinez bien que cette solution n'est pas suffisante à long terme. Afin de corriger ce problème, n'hésitez pas à faire la partie **Devoir : ajouter de la sécurité à son site internet !** qui est située juste après la partie principale du tutoriel.
 
 ![Erreur de loggin](images/post_create_error.png)
 
@@ -277,11 +277,11 @@ Try to save the form without `title` and `text`. Guess what will happen!
 
 ![Validation de formulaire](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django tente de valider que tous les champs de notre formulaire sont corrects. N'est-ce pas incroyable?
 
 ## Éditer un formulaire
 
-Maintenant, nous savons comme ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Maintenant, nous savons comme ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Faisons des choses importantes rapidement. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` and add the line
 
