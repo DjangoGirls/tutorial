@@ -4,15 +4,15 @@
 
 Jusqu'à maintenant, votre site web est uniquement disponible sur votre ordinateur. Maintenant, vous allez apprendre à déployer! Déployer signifie mettre en ligne votre site pour que d'autres personnes puissent enfin voir votre app. :)
 
-Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de nombreux fournisseurs de serveurs disponibles sur Internet, nous les utiliserons [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere gratuit pour les petites applications qui n'ont pas trop de visiteurs, il sera certainement suffisant pour vous maintenant.
 
 Nous allons aussi utiliser les services [GitHub](https://www.github.com), ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
 
-These three places will be important to you. Votre ordinateur local est l'endroit où vous faites de développement et de test. Lorsque vous êtes heureux avec les changements, vous aurez une copie de votre programme sur GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endroit où vous faites de développement et de test. Lorsque vous êtes heureux avec les changements, vous aurez une copie de votre programme sur GitHub. Votre site sera en PythonAnywhere et vous le mettrez à jour en obtenant une copie de votre nouveau code de GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **noter** Si vous avez déjà effectué les étapes d'installation, vous n'avez plus besoin de le faire - vous pouvez passer à la section suivante et commencer à créer votre référentiel Git.
 
 {% include "/deploy/install_git.md" %}
 
@@ -30,7 +30,7 @@ Git conserve toutes les modifications apportées à un ensemble de fichiers dans
     $ git config --global user.email you@exemple.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+L'initialisation d'un dépôt git est quelque chose que nous avons besoin de faire une seule fois par projet (et vous n'avez pas besoin de ressaisir ce nom d'utilisateur et d'envoyer un nouveau courriel).
 
 Git va surveiller et conserver les modifications concernant l'ensemble des fichiers et dossiers présents dans ce répertoire, à l'exception de certains fichiers que nous aimerions exclure. Pour cela, nous allons créer un fichier appelé `.gitignore` dans le répertoire principal du projet. Ouvrez votre éditeur et créez un nouveau fichier en copiant le contenu suivant :
 
@@ -47,9 +47,9 @@ Git va surveiller et conserver les modifications concernant l'ensemble des fichi
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Attention** : le point au début du nom du fichier est important ! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (Mac n'aime pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; c'est à l'épreuve des balles.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. De toute façon, en ignorant votre base de données SQLite pour le GitHub de copie, cela signifie que tous les messages que vous avez créé jusqu'à présent vont y rester et ne sera disponible localement, mais vous allez avoir à ajouter de nouveau sur la production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de ce que vous allez supprimer votre réel les messages à partir de votre blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. Nous ne souhaitons pas l'ajouter à votre référentiel car votre site dans PythonAnywhere utilisera une base de données différente. La basis de données pourrait être SQLite, comme votre moteur de développement, mais vous utiliseriez généralement un MySQL qui pourrait gérer plus de visiteurs que SQLite. De toute façon, en ignorant votre base de données SQLite pour le GitHub de copie, cela signifie que tous les messages que vous avez créé jusqu'à présent vont y rester et ne sera disponible localement, mais vous allez avoir à ajouter de nouveau sur la production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de ce que vous allez supprimer votre réel les messages à partir de votre blog.
 
 Avant de taper la commande `git add` ou lorsque vous ne vous souvenez plus des changements que vous avez effectué dans votre projet, pensez à taper la commande `git status`. Cela aidera à prévenir toute surprise de se produire, tels que les mauvais fichiers ajoutés ou engagés. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. La sortie doit être semblable au suivant:
 
@@ -89,13 +89,13 @@ Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour en
     
     Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
     
-    Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+    Then, create a new repository, giving it the name "my-first-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
     
     <img src="images/new_github_repo.png" />
     
-    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+    > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. Il peut être plus facile de coller avec le nom `my-first-blog`.
     
-    On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+    Sur l'écran suivant, vous verrez l'URL de votre clone de repo. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
     
     <img src="images/github_get_repo_url_screenshot.png" />
     
