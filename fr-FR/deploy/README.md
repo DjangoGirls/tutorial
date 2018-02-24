@@ -182,19 +182,19 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 
 (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Vous pouvez également accéder à l'onglet "Fichiers" et naviguer à l'aide du navigateur de fichiers PythonAnywhere intégré.
 
-## You are now live!
+## Vous êtes en vie maintenant!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Votre site devrait maintenant rester sur Internet! Cliquez sur l'onglet "Web" de PythonAnywhere pour obtenir des liens. Vous pouvez partager ceci avec qui vous voulez :)
 
 ## Debugging tips
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Vous avez oublié de créer votre jeton d'API PythonAnywhere.
+- Faites une erreur dans votre URL GitHub
+- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Regardez à nouveau la section Git ci-dessus
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). Voir si il y a des messages d'erreur tout en là; les plus récents sont en bas.
 
@@ -206,6 +206,6 @@ Et rappelez-vous, votre coach est là pour vous aider!
 
 La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur votre ordinateur local. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Connectez-vous avec le nom d'utilisateur et le mot de passe, et vous verrez que vous pouvez ajouter de nouveaux Messages sur le serveur.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Une fois que vous avez créé des messages, vous pouvez revenir à votre configuration locale (pas PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. Il vous permet de travailler et d'expérimenter sans endommager votre site Web. Pretty cool, huh?
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
