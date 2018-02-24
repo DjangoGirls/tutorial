@@ -64,7 +64,7 @@ Let's create a CSS file now, to add your own style to your web page. Créez un n
 
 Et c'est parti pour un peu de CSS ! Ouvrez le fichier `static/css/blog.css` dans votre éditeur de texte.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Nous ne serons pas trop ajuster et apprendre CSS ici. Il y a une recommandation pour un cours CSS gratuit à la fin de cette page si vous voulez en savoir plus.
 
 Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme le `rouge` et le `vert`.
 
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` est un sélecteur CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
 
-Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon dont nous permettent d'identifier des éléments est avec le nom de l'élément. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon dont nous permettent d'identifier des éléments est avec le nom de l'élément. Vous pouvez vous souvenir de cela comme une balise de la section HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -178,7 +178,7 @@ h1 a {
 
 Super !
 
-As mentioned above, CSS has a concept of classes. Ceux-ci vous permettent de nommer une partie de code HTML et appliquer des styles que pour cette partie, sans affecter les autres parties. This can be super helpful! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre tête et de votre post). Une classe peut vous aider à leur donner un aspect différent.
+Comme mentionné ci-dessus, CSS a un concept de classe. Ceux-ci vous permettent de nommer une partie de code HTML et appliquer des styles que pour cette partie, sans affecter les autres parties. Cela peut être très utile! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre tête et de votre post). Une classe peut vous aider à leur donner un aspect différent.
 
 Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci :
 
