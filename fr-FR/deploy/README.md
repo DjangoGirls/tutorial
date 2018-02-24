@@ -208,4 +208,4 @@ La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur 
 
 Une fois que vous avez créé des messages, vous pouvez revenir à votre configuration locale (pas PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. Il vous permet de travailler et d'expérimenter sans endommager votre site Web. Pretty cool, huh?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Give yourself a *HUGE* pat on the back! Le déploiement de serveurs est l'une des parties les plus difficiles du développement Web et prend souvent quelques jours avant de le faire fonctionner. Mais vous avez votre site en vie, sur Internet, juste comme ça!
