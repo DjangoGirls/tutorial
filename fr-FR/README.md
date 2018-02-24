@@ -34,7 +34,7 @@ OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
 ## Suivre le tutoriel chez soi
 
-Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel à la maison. Pour les lecteurs à la maison, nous sommes actuellement en train de préparer des vidéos que vous, il sera plus facile de suivre le tutoriel sur votre propre. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel à la maison. Pour les lecteurs à la maison, nous sommes actuellement en train de préparer des vidéos que vous, il sera plus facile de suivre le tutoriel sur votre propre. C'est encore un travail en cours, mais de plus en plus de choses seront bientôt fermées [Le codage est pour les filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Chaînes YouTube.
 
 Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
 
