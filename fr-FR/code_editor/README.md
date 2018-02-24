@@ -1,6 +1,6 @@
 # L'éditeur de texte
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Pour les lecteurs à la maison: ce chapitre est couvert en [Installez Python & Éditeur de code](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s)vidéos.
 
 Vous allez bientôt écrire vos premières lignes de code : Il vous faut tout d'abord télécharger un éditeur de texte !
 
