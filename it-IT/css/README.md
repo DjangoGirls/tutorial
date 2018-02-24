@@ -64,9 +64,9 @@ Creiamo un file CSS, per aggiungere uno stile alla tua pagina web. Crea una nuov
 
 È il giunto il momento di scrivere un po' di CSS! Apri il file `static/css/blog.css` nel tuo editor di codice.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Non andremmo troppo a fondo nel modificare e imparare il CSS qui. Alla fine di questa pagina c'è una raccomandazione per un corso gratuito di CSS se ti piacerebbe conoscere di più.
 
-Facciamo comunque un esempio. Perchè non cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). Per esempio, questo è il codice per il blu `#0000FF`. Puoi trovare i codici per molti colori qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/colors/colors_names.asp) come ad esempio `red` e `green`.
+Facciamo comunque un esempio. Perchè non cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. Questi codici iniziano con `#` seguiti da 6 lettere (A–F) e numeri (0–9). Per esempio, questo è il codice per il blu `#0000FF`. Puoi trovare i codici per molti colori qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/colors/colors_names.asp) come ad esempio `red` e `green`.
 
 Aggiungi il seguente codice nel tuo file `static/css/blog.css`:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` è un esempio di selettore CSS. Questo significa che stiamo applicando il nostro stile a tutti gli elementi `a` contenuti in un elemento `h1`. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In questo caso, stiamo cercando di cambiare il colore con `#FCA205`, che corrisponde all'arancione. Ovviamente puoi mettere il codice di qualsiasi altro colore tu preferisca!
+`h1 a` è un esempio di selettore CSS. Questo significa che stiamo applicando il nostro stile a tutti gli elementi `a` contenuti in un elemento `h1`. Quindi quando si ha qualcosa come `<h1><a href="">link</a></h1>`, lo stile `h1 a` verrà applicato. In questo caso, stiamo cercando di cambiare il colore con `#FCA205`, che corrisponde all'arancione. Ovviamente puoi mettere il codice di qualsiasi altro colore tu preferisca!
 
 In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Per esempio puoi identificare il tag seguente usando il nome `a`, la classe `external_link` o l'id `link_to_wiki_page`:
 
