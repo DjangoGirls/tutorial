@@ -150,25 +150,25 @@ $ pip3.6 install --user pythonanywhere
 
 $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 
-    <br />As you watch that running, you'll be able to see what it's doing:
+    <br />Oglądając to, będziesz mógł zobaczyć, co jest robione:
     
-    - Downloading your code from GitHub
-    - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-    - Updating your settings file with some deployment settings
-    - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-    - Setting up your static files (we'll learn about these later)
-    - And configuring PythonAnywhere to serve your web app via its API
+    - Pobieranie kodu z GitHub
+    - Tworzenie virtualenv na PythonAnywhere, tak jak na Twoim własnym PC
+    - Aktualizowanie pliku ustawień za pomocą niektórych ustawień wdrażania
+    - Konfigurowanie bazy danych w PythonAnywhere za pomocą komendy `manage.py migrate`
+    - Konfigurowanie plików statycznych (dowiemy się o nich później)
+    - Konfigurowanie PythonAnywhere do obsługi aplikacji internetowej za pośrednictwem interfejsu API
     
-    On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+    W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.  Najważniejsze, aby zauważyć, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na własnym komputerze, co oznacza, że może mieć inne posty i konta administracyjne.
     
-    As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+    W rezultacie, tak jak zrobiłyśmy to na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował Twój virtualenv dla Ciebie, więc wszystko, co musisz zrobić, to uruchomić:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+    <br />Wpisz szczegóły dla swojego administratora.  Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
     
     Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
     
