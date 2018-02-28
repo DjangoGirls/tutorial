@@ -159,46 +159,46 @@ nothing added to commit but untracked files present (use "git add" to track)
 > >     
 > >     Pada PythonAnywhere semua langkah-langkah yang otomatis, tapi mereka langkah-langkah yang sama anda akan harus melalui dengan penyedia server lain.  Hal utama yang perlu diperhatikan sekarang adalah database anda di PythonAnywhere benar-benar terpisah dari database anda di PC anda sendiri-itu berarti dapat memiliki pos dan akun admin yang berbeda.
 > >     
-> >     As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> >     Akibatnya, seperti yang kita lakukan pada komputer anda sendiri, kita perlu menginisialisasi akun admin dengan `createsuperuser`. PythonAnywhere telah aktifkan virtualenv anda secara otomatis untuk anda, jadi yang perlu anda lakukan hanyalah menjalankan:
 > >     
-> >     {% filename %}PythonAnywhere command-line{% endfilename %}
+> >     {% filename %}PythonAnywhere baris perintahe{% endfilename %}
 > >     
 > > 
 > > (ola.pythonanywhere.com) $ python manage.py createsuperuser
 > > 
-> >     <br />Type in the details for your admin user.  Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+> >     <br />Ketik rincian untuk pengguna admin anda.  Sebaiknya gunakan yang sama seperti yang anda gunakan di komputer anda sendiri untuk menghindari kebingungan, kecuali jika anda ingin memasukkan kata sandi di PythonAnywhere lebih aman.
 > >     
-> >     Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+> >     Sekarang, jika anda suka, anda juga dapat melihat kode anda di PythonAnywhere menggunakan `ls`:
 > >     
-> >     {% filename %}PythonAnywhere command-line{% endfilename %}
+> >     {% filename %}PythonAnywhere baris perintah{% endfilename %}
 > >     
 > > 
 > > (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 > > 
-> > You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+> > Anda juga bisa masuk ke tab "Berkas" dan navigasikan menggunakan browser berkas PythonAnywhere built-in.
 > > 
-> > ## You are now live!
+> > ## Anda sekarang hidup!
 > > 
-> > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+> > Situs anda sekarang harus tinggal di Internet publik! Klik melalui tab "Web" PythonAnywhere untuk mendapatkan tautan ke sana. Anda bisa berbagi ini dengan siapapun yang anda inginkan :)
 > > 
 > > ## Debugging tips
 > > 
-> > If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+> > Jika anda melihat kesalahan saat menjalankan skrip `pa_autoconfigure_django.py`, berikut adalah beberapa penyebab umum:
 > > 
-> > - Forgetting to create your PythonAnywhere API token.
-> > - Making a mistake in your GitHub URL
-> > - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+> > - Lupa membuat token API PythonAnywhere anda.
+> > - Membuat kesalahan dalam URL GitHub anda
+> > - Jika anda melihat kesalahan yang mengatakan *"Tidak dapat menemukan settings.py anda"*, mungkin karena anda tidak berhasil menambahkan semua berkas anda ke Git, dan / atau anda tidak mendorongnya ke GitHub berhasil. Lihat lagi bagian Git di atas
 > > 
-> > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+> > Jika anda melihat kesalahan saat mencoba mengunjungi situs anda, tempat pertama untuk mencari beberapa info debug ada di log kesalahan **anda**. Anda akan menemukan link ke ini pada PythonAnywhere [Tab Web](https://www.pythonanywhere.com/web_app_setup/). Lihat apakah ada pesan kesalahan di sana; yang paling baru ada di bagian bawah.
 > > 
 > > There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 > > 
-> > And remember, your coach is here to help!
+> > Dan ingat, pelatih anda ada di sini untuk membantu!
 > > 
-> > # Check out your site!
+> > # Periksa situs anda!
 > > 
-> > The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> > Halaman bawaan untuk situs anda harus mengatakan "Ini berhasil!", Seperti halnya pada komputer lokal anda. Coba tambah `/admin/` ke akhir URL, dan anda akan dibawa ke situs admin. Masuk dengan nama pengguna dan kata sandi, dan anda akan melihat anda dapat menambahkan Pos baru di server.
 > > 
-> > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> > Begitu anda memiliki beberapa tulisan yang dibuat, anda dapat kembali ke penyiapan lokal anda (bukan PythonAnywhere). Dari sini anda harus mengerjakan setup lokal anda untuk melakukan perubahan. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > > 
 > > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
