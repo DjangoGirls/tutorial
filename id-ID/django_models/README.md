@@ -128,7 +128,7 @@ class Post(models.Model):
 
 Terlihat menakutkan bukan? Tapi jangan khawatir - kami akan menjelaskan arti garis-garis ini!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Semua baris yang dimulai dengan `dari` atau ` impor ` adalah baris yang menambahkan beberapa bit dari berkass lain. Jadi, alih-alih menyalin dan menempelkan hal yang sama di setiap berkas, kita dapat menyertakan beberapa bagian dengan ` dari ... impor ... ` .
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
@@ -147,15 +147,15 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 <p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. Anda harus melihat dokumen Django jika ngin mengetahui lebih banyak tentang bidang-bidang Model dan bagaimana menetapkan hal-hal selain yang dijelaskan di atas (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field -tipe).</p>
 
 <p>Bagaimana dengan <code>def publish(self):`? Ini merupakan metode `publish` yang kita bicarakan sebelumnya. `def` berarti bahwa ini merupakan sebuah fungsi/metode dan `publish` merupakan nama metode. Anda bisa mengganti nama metode tersebut jika anda mau. The naming rule is that we use lowercase and underscores instead of spaces. Misalnya, metode yang menghitung nilai rata-rata bisa dinamakan ` calculate_average_price`.</p> 
-        Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+        Methods often `return` something. Ada contoh bahwa dalam `__str__`metode. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
         
-        Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+        Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Karena Python sensitif terhadap spasi, kita perlu mengidentifikasi metode kita di dalam kelas. Jika tidak, metode tidak akan termasuk dalam kelas, dan anda bisa mendapatkan beberapa perilaku tak terduga.
         
-        If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+        Jika ada sesuatu yang masih belum jelas tentang model, jangan ragu untuk bertanya pada pelatih anda! Kami tahu ini rumit, terutama saat anda mempelajari benda dan fungsi apa yang ada pada waktu bersamaan. Tapi mudah-mudahan ini terlihat sedikit kurang ajaib untuk anda sekarang!
         
         ### Buat tabel untuk model di database Anda
         
-        The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. Ini akan terlihat seperti ini:
+        Langkah terakhirnya adalah menambahkan model baru ke database kami. Pertama kita harus membuat Django tahu bahwa kita memiliki beberapa perubahan dalam model kita. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. Ini akan terlihat seperti ini:
         
         {% filename %}command-line{% endfilename %}
         
@@ -166,9 +166,9 @@ All lines starting with `from` or `import` are lines that add some bits from oth
               - Create model Post
             
         
-        **Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+        **Catatan:** Ingatlah untuk menyimpan berkas yang anda sunting. Jika tidak, komputer anda akan menjalankan versi sebelumnya yang mungkin memberi anda pesan kesalahan yang tidak terduga.
         
-        Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+        Django menyiapkan berkas migrasi untuk kita yang sekarang harus kita terapkan ke database kita. Mengetik `python manage.py bermigrasi blog` dan hasilnya harus seperti berikut:
         
         {% filename %}command-line{% endfilename %}
         
@@ -180,4 +180,4 @@ All lines starting with `from` or `import` are lines that add some bits from oth
               Applying blog.0001_initial... OK
             
         
-        Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+        Hore! Model Post kami sekarang ada di database kami! Alangkah baiknya melihatnya, bukan? Langsung ke bab berikutnya untuk melihat seperti apa Post anda!
