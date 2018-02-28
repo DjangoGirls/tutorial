@@ -134,16 +134,16 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
     
     &gt; ** Uwaga ** PythonAnywhere jest oparty na systemie Linux, więc jeśli używasz systemu Windows, konsola będzie wyglądać trochę inaczej niż na Twoim komputerze.
     
-    Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+    Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu z GitHub, a następnie skonfigurowaniu PythonAnywhere w celu rozpoznania go i rozpoczęciu wyświetlania go jako aplikacji internetowej.  Istnieją manualne sposoby robienia tego, ale PythonAnywhere zapewnia narzędzie pomocnicze, które zrobi to wszystko za Ciebie. Najpierw zainstalujmy:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 $ pip3.6 install --user pythonanywhere
 
-    <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+    <br />To powinno wydrukować rzeczy, takie jak `Collecting pythonanywhere`, a kończy się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
     
-    Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+    Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHub. Wpisz następujące polecenie w konsoli na PythonAnywhere (nie zapomnij użyć swojej nazwy użytkownika GitHub w miejscu `&lt;your-github-username&gt;`):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
