@@ -114,49 +114,50 @@ nothing added to commit but untracked files present (use "git add" to track)
 > >     Kode Anda sekarang ada di GitHub. Silahkan anda cek!  Anda akan menemukannya di perusahaan yang bagus - [Django] (https://github.com/django/django), [Django Girls Tutorial] (https://github.com/DjangoGirls/tutorial), dan banyak lainnya hebat Proyek perangkat lunak sumber terbuka juga meng-host kode mereka di GitHub. :)
 > >     
 > >     
-> >     # Setting up our blog on PythonAnywhere
+> >     # Menyiapkan blog kita di PythonAnywhere
 > >     
-> >     ## Sign up for a PythonAnywhere account
+> >     ## Mendaftar akun PythonAnywhere
 > >     
-> >     &gt; **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> >     &gt; **Catatan**Anda mungkin sudah membuat akun PythonAnywhere sebelumnya saat instalasi langkah - jika demikian, tidak perlu melakukannya lagi.
 > >     
 > >     {% include "/deploy/signup_pythonanywhere.md" %}
 > >     
 > >     
-> >     ## Configuring our site on PythonAnywhere
+> >     ## Konfigurasi situs kami di PythonAnywhere
 > >     
-> >     Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+> >     Kembali ke utama [Dasbor PythonAnywhere]
+> >     (https://www.pythonanywhere.com/) dengan mengklik logo, dan pilih opsi untuk memulai konsol "Bash" - itu adalah versi PythonAnywhere dari sebuah baris perintah, seperti yang ada di komputer anda.
 > >     
 > >     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
 > >     
-> >     &gt; **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> >     &gt; **Catatan** PythonAnywhere berbasis Linux, jadi jika anda menggunakan Windows, konsol akan terlihat sedikit berbeda dari yang ada di komputer anda.
 > >     
-> >     Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+> >     Menerapkan aplikasi web pada PythonAnywhere melibatkan merobohkan kode anda dari GitHub, dan kemudian mengkonfigurasi PythonAnywhere untuk mengenalinya dan mulai melayani sebagai aplikasi web.  Ada cara manual untuk melakukannya, tapi PythonAnywhere menyediakan alat pembantu yang akan melakukan semuanya untuk anda. Let's install it first:
 > >     
 > >     {% filename %}PythonAnywhere command-line{% endfilename %}
 > >     
 > > 
 > > $ pip3.6 install --user pythonanywhere
 > > 
-> >     <br />That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+> >     <br />Itu harus dicetak beberapa hal seperti `Mengumpulkan pythonanywhere`, dan akhirnya diakhiri dengan sebuah garis yang mengatakan` Berhasil menginstal (...) pythonanywhere- (...) `.
 > >     
-> >     Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `&lt;your-github-username&gt;`):
+> >     Sekarang kita jalankan penolong untuk mengkonfigurasi aplikasi anda secara otomatis dari GitHub. Ketik berikut ke konsol di PythonAnywhere (jangan lupa gunakan nama pengguna GitHub Anda di tempat `&lt;your-github-username&gt;`):
 > >     
-> >     {% filename %}PythonAnywhere command-line{% endfilename %}
+> >     {% filename %}PythonAnywhere baris perintah{% endfilename %}
 > >     
 > > 
 > > $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 > > 
-> >     <br />As you watch that running, you'll be able to see what it's doing:
+> >     <br />Saat anda menyaksikannya berjalan, anda akan bisa melihat apa yang dilakukannya:
 > >     
-> >     - Downloading your code from GitHub
-> >     - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-> >     - Updating your settings file with some deployment settings
-> >     - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-> >     - Setting up your static files (we'll learn about these later)
-> >     - And configuring PythonAnywhere to serve your web app via its API
+> >     - Mengunduh kode anda dari GitHub
+> >     - Membuat virtualenv pada PythonAnywhere, seperti yang ada di PC anda sendiri
+> >     - Memperbarui berkas pengaturan anda dengan beberapa pengaturan penyebaran
+> >     - Menyiapkan database pada PythonAnywhere menggunakan perintah `migrate` manage.py
+> >     - Menyiapkan file statis anda (kita akan belajar tentang ini nanti)
+> >     - Dan mengonfigurasi PythonAnywhere untuk menayangkan aplikasi web anda melalui API-nya
 > >     
-> >     On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.  The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+> >     Pada PythonAnywhere semua langkah-langkah yang otomatis, tapi mereka langkah-langkah yang sama anda akan harus melalui dengan penyedia server lain.  Hal utama yang perlu diperhatikan sekarang adalah database anda di PythonAnywhere benar-benar terpisah dari database anda di PC anda sendiri-itu berarti dapat memiliki pos dan akun admin yang berbeda.
 > >     
 > >     As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 > >     
