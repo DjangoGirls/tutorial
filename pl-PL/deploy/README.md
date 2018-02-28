@@ -170,26 +170,26 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 
     <br />Wpisz szczegóły dla swojego administratora.  Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
     
-    Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+    Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod na PythonAnywhere używając `ls`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Możesz także przejść do zakładki "Pliki" i nawigować za pomocą wbudowanej przeglądarki plików PythonAnywhere.
 
 ## Jesteś na żywo!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz :)
 
 ## Porady dotyczące debugowania
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`, oto kilka typowych przyczyn:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Zapominasz utworzyć Twój PythonAnywhere API token.
+- Robisz błąd w GitHub URL
+- Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do GitHub pomyślnie. Have another look at the Git section above
 
 Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony.
 
