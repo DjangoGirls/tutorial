@@ -155,7 +155,7 @@ All lines starting with `from` or `import` are lines that add some bits from oth
         
         ### Buat tabel untuk model di database Anda
         
-        The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+        The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. Ini akan terlihat seperti ini:
         
         {% filename %}command-line{% endfilename %}
         
