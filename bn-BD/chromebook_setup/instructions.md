@@ -51,10 +51,10 @@ Next, run:
 
 Make a [Github](https://github.com) account.
 
-### PythonAnywhere
+### পাইথন সর্বত্র
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+মেয়েদের শিক্ষার জন্য জ্যাঙ্গো প্রোগ্রাম তথাকথিত প্রকাশনার উপর একটি অধ্যায়, যা সফ্টওয়্যার কোডটি ওয়েব অ্যাপ্লিকেশন এবং একটি কম্পিউটারে স্থানান্তর পরিচালনা সাধারণভাবে অ্যাক্সেস করা যেতে পারে (সার্ভার বলা হয়) গ্রহণ প্রক্রিয়া অন্তর্ভুক্ত যাতে মানুষ আপনার ব্যবসার Leroux থেকে অন্য কেউ।
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+এই অংশটি একটি বিরাট অদ্ভুত যখন আপনি একটি ChromeBook ডিভাইসে টিউটোরিয়ালটি বাস্তবায়িত করেন যেহেতু আমরা ইন্টারনেটে বিদ্যমান কম্পিউটার ব্যবহার করি (উদাহরণস্বরূপ, একটি ল্যাপটপ)। যাইহোক, এটি এখনও উপযোগী, যেমন আমরা ৯ ​​নং হিসাবে আমাদের কর্মক্ষেত্র বা কাজ বা পাইথনকে আমাদের স্থানগুলি দেখানোর জন্য স্থান হিসেবে অন্যতম হিসেবে বিবেচনা করতে পারি, যতটা তারা আরো সম্পূর্ণ হয়।
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+সুতরাং, একটি নতুন "Python" অ্যাকাউন্টের জন্য সাইন আপ করুন [www.pythonanywhere.com](https://www.pythonanywhere.com).
