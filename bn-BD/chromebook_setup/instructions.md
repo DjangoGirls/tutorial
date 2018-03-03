@@ -1,6 +1,6 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+আপনি পারবেন [ এই বিভাগ ছেরে যেতে ](http://tutorial.djangogirls.org/en/installation/#install-python) যদি আপনি chromebook না করেন। যদি আপনি হন, আপনার স্থাপন অভিজ্ঞতা কিছুটা ভিন্ন হবে। আপনি স্থাপন নির্দেশাবলী বাকি প্রত্যাখ্যান করতে পারেন।
 
-### Cloud 9
+### ক্লাউড ৯
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
