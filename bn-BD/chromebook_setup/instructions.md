@@ -2,7 +2,7 @@
 
 ### ক্লাউড ৯
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+ক্লাউড 9 একটি টুল যা আপনাকে কোডের জন্য সম্পাদক এবং ইন্টারনেটে চলমান একটি কম্পিউটারের অ্যাক্সেস প্রদান করে যেখানে আপনি প্রোগ্রামগুলি ইনস্টল, লিখতে এবং চালাতে পারেন। টিউটোরিয়ালের সময়, আপনার স্থানীয় * মেশিন হিসাবে ক্লাউড 9 পরিবেশন করবে * । আপনি এখনও ওএস এক্স, উবুন্টু, বা উইন্ডোতে আপনার সহকর্মীদের মত টার্মিনাল ইন্টারফেসে কমান্ড চালাবেন, তবে টার্মিনাল অন্য যে কোনও কম্পিউটারের সাথে সংযুক্ত থাকবে যা ক্লাউড 9 আপনার জন্য তৈরি করবে।
 
 1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Go to [c9.io](https://c9.io)
