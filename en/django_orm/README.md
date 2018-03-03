@@ -100,6 +100,7 @@ Now we can finally create our post:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Hurray! Wanna check if it worked?
@@ -125,7 +126,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
@@ -133,7 +134,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
@@ -144,7 +145,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
@@ -166,7 +167,7 @@ Now try to get list of published posts again (press the up arrow key three times
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 
@@ -177,7 +178,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 We can also reverse the ordering by adding `-` at the beginning:
@@ -185,7 +186,7 @@ We can also reverse the ordering by adding `-` at the beginning:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 
@@ -193,8 +194,9 @@ We can also reverse the ordering by adding `-` at the beginning:
 
 You can also combine QuerySets by **chaining** them together:
 
-```
+```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
 This is really powerful and lets you write quite complex queries.
