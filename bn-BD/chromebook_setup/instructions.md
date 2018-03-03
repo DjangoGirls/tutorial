@@ -4,9 +4,9 @@
 
 ক্লাউড 9 একটি টুল যা আপনাকে কোডের জন্য সম্পাদক এবং ইন্টারনেটে চলমান একটি কম্পিউটারের অ্যাক্সেস প্রদান করে যেখানে আপনি প্রোগ্রামগুলি ইনস্টল, লিখতে এবং চালাতে পারেন। টিউটোরিয়ালের সময়, আপনার স্থানীয় * মেশিন হিসাবে ক্লাউড 9 পরিবেশন করবে * । আপনি এখনও ওএস এক্স, উবুন্টু, বা উইন্ডোতে আপনার সহকর্মীদের মত টার্মিনাল ইন্টারফেসে কমান্ড চালাবেন, তবে টার্মিনাল অন্য যে কোনও কম্পিউটারের সাথে সংযুক্ত থাকবে যা ক্লাউড 9 আপনার জন্য তৈরি করবে।
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+1. </a>Chrome ওয়েব দোকান থেকে ক্লাউড ৯ ইনস্টল করুন</0>
+2. যান [c9.io](https://c9.io)
+3. একটি অ্যাকাউন্ট নিবন্ধন
 4. Click *Create a New Workspace*
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
