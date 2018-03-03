@@ -32,9 +32,9 @@
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+যদি এটা এখনো কাজ না করে,আপনার কোচকে সাহায্যের জন্য জিজ্ঞেস করুন।
 
-Next, run:
+তারপর যান
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(লক্ষ্য করুন যে শেষ লাইনে আমরা tild ব্যবহার করে একটি সমান চিহ্ন অনুসরণ করি: ~ =).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+একটি [Github](https://github.com) একাউন্ট তৈরি করুন।
 
 ### পাইথন সর্বত্র
 
