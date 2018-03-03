@@ -18,13 +18,13 @@
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+এই নীচের অংশটি আপনার *টার্মিনাল*, যেখানে আপনি আপনার দিকনির্দেশের সাথে ক্লাউড ৯ প্রস্তুত পাবেন। আপনি এটি সামান্য বড় করতে এই উইন্ডোটি পুনরায় আকার দিতে পারেন।
 
-### Virtual Environment
+### ভার্চুয়াল পরিবেশ
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+একটি ভার্চুয়াল পরিবেশ (ভার্চুয়ালওয়ালও বলা হয়) এমন একটি বিশেষ বাক্সের মতো যা দরকারী কাজে যেমন একটি প্রকল্প যা আমরা কাজ করি তার জন্য প্রোগ্রামিং কোডগুলি পূরণ করতে পারি। আমরা একটি প্রকল্প থেকে প্রোগ্রামিং কোড একটি সেট পেতে ভার্চুয়াল পরিবেশ ব্যবহার করি, তাই অন্যান্য প্রকল্পের সঙ্গে মিশ্রন হিসাবে না
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+ক্লাউড ৯ ইন্টারফেসের নীচে টার্মিনালে, নিম্নলিখিতটি চালিয়ে যান:
 
 {% filename %}Cloud 9{% endfilename %}
 
