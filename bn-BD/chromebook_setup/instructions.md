@@ -7,11 +7,11 @@
 1. </a>Chrome ওয়েব দোকান থেকে ক্লাউড ৯ ইনস্টল করুন</0>
 2. যান [c9.io](https://c9.io)
 3. একটি অ্যাকাউন্ট নিবন্ধন
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+4. একটি নতুন কর্মক্ষেত্র *তৈরি করুন ক্লিক*করুন
+5. নাম *django-girls*
+6. *ফাঁকা* নির্বাচন করুন (কমলা লোগোতে নিচের সারির ডান থেকে দ্বিতীয়)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+এখন আপনি কিছু টেক্সট দিয়ে একটি সাইডবার এবং একটি বড় মাস্টার উইন্ডোর সাথে একটি ইন্টারফেস দেখতে পাবেন, এবং নীচে এমন একটি ছোট উইন্ডো যা এটির মতো দেখতে পাবেন:
 
 {% filename %}Cloud 9{% endfilename %}
 
