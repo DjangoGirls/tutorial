@@ -211,4 +211,6 @@ And watch your code get downloaded. If you want to check that it's arrived, you 
 
 * Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
+![](/assets/Screen Shot 2018-03-03 at 5.01.33 PM.png)
+
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
