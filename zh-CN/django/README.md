@@ -6,7 +6,7 @@ Django是一个由python编写的，免费和开放的开源网站框架。 web�
 
 幸运的是，其他人很早就注意到web开发人员会面临一些共同的问题。所以他们联手创建了 web 框架 (Django 是其中一个) 来让你使用。
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+框架可以在你新建一个网站的时候帮你减轻一些相同组件带来的工作量，就像需要造一台车子的时候已经帮你发明了车轮。
 
 ## 你为什么需要一个框架？
 
