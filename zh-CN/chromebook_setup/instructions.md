@@ -45,7 +45,7 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(请注意, 在最后一行中, 我们使用一个波形符后跟等号: ~ =)。
 
 ### Github
 
