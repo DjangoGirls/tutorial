@@ -198,14 +198,14 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). Voir si il y a des messages d'erreur tout en là; les plus récents sont en bas.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Vous pourrez aussi trouver des astuces pour le débogage sur le site d'aide de[PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
 Et rappelez-vous, votre coach est là pour vous aider!
 
-# Check out your site!
+# Jetez un œil à votre site !
 
-La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur votre ordinateur local. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Connectez-vous avec le nom d'utilisateur et le mot de passe, et vous verrez que vous pouvez ajouter de nouveaux Messages sur le serveur.
+La page par défaut de votre site doit dire "Ça marche!", comme il le fait sur votre ordinateur local. Essayez d'ajouter`/admin/` à la fin de l'url. Vous devriez accéder à l'interface d'administration vue précédement. Connectez-vous avec le nom d'utilisateur et le mot de passe, et vous verrez que vous pouvez ajouter de nouveaux Messages sur le serveur.
 
-Une fois que vous avez créé des messages, vous pouvez revenir à votre configuration locale (pas PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. Il vous permet de travailler et d'expérimenter sans endommager votre site Web. Pretty cool, huh?
+Une fois que vous avez créé des messages, vous pouvez revenir à votre configuration locale (pas PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. Il s'agit d'un flux de travail dans le développement web – apporter des modifications localement, pousser ces modifications sur GitHub, et tirez vos modifications en bas de votre serveur Web. Il vous permet de travailler et d'expérimenter sans endommager votre site Web. Cool, non ?
 
 Give yourself a *HUGE* pat on the back! Le déploiement de serveurs est l'une des parties les plus difficiles du développement Web et prend souvent quelques jours avant de le faire fonctionner. Mais vous avez votre site en vie, sur Internet, juste comme ça!
