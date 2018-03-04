@@ -118,7 +118,7 @@ Hora de adicionar tags de bloco ("block") nesse arquivo!
 {% endblock %}
 ```
 
-Só falta uma coisa. Nós precisamos fazer a conexão entre esses dois templates.  É isso que "extendendo templates" significa! Nós iremos fazer isso adicionando uma tag de extender ("extends") ao início do arquivo. Dessa forma:
+Só falta uma coisa. Nós precisamos fazer a conexão entre esses dois templates.  É isso que "extendendo templates" significa! Nós iremos fazer isso adicionando uma tag de estender ("extends") ao início do arquivo. Dessa forma:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
@@ -139,4 +139,4 @@ Só falta uma coisa. Nós precisamos fazer a conexão entre esses dois templates
 
 É isso! Veja se o seu site ainda está funcionando direito :)
 
-> Se ocorrer um erro de `TemplateDoesNotExists`, que diz que não existe nenhum arquivo chamado `blog/base.html` e se você tiver o `runserver` executando no terminal, tenta interrompê-lo (precionando Ctrl+C - o botão Control mais o botão C juntos) e reinicie ele rodando o comando `python manage.py runserver`.
+> Se ocorrer um erro de `TemplateDoesNotExists`, que diz que não existe nenhum arquivo chamado `blog/base.html` e se você tiver o `runserver` executando no terminal, tente interrompê-lo (precionando Ctrl+C - o botão Control mais o botão C juntos) e reinicie ele rodando o comando `python manage.py runserver`.
