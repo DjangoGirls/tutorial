@@ -53,7 +53,7 @@ Next, run:
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls的教程有一节关于部署（Deployment）的内容。部署，是把实现页面新功能的代码移植到一个可公开访问的计算机（我们称之为服务器）使其他人可以看到和使用的一个过程。
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
