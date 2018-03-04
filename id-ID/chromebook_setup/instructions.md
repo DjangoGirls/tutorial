@@ -1,4 +1,4 @@
-Anda dapat  melewatkan hak atas bagian ini </ 0> jika Anda tidak menggunakan Chromebook. Jika ya, pengalaman instalasi Anda akan sedikit berbeda. Anda bisa mengabaikan sisa instruksi penginstalan.</p> 
+Anda bisa [lewati langsung bagian ini](http://tutorial.djangogirls.org/en/installation/#install-python) jika anda tidak menggunakan Chromebook. Jika ya, pengalaman instalasi Anda akan sedikit berbeda. Anda bisa mengabaikan sisa instruksi penginstalan.
 
 ### Awan 9
 
