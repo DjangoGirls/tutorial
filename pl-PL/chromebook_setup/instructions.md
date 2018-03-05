@@ -1,4 +1,4 @@
-Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/#install-python) jeżeli nie używasz Chromebooka. Jeżeli używasz, proces instalacji będzie wyglądał następująco. Możesz zignorować pozostałą cześć instrukcji.
+Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/#install-python) jeżeli nie używasz Chromebooka. W przeciwnym wypadku, proces instalacji będzie wyglądał nieco inaczej. Możesz zignorować pozostałe elementy instrukcji dotyczące instalacji.
 
 ### Cloud 9
 
