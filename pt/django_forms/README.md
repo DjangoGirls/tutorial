@@ -176,9 +176,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando nós enviamos o formulário, somos trazidos de volta para a mesma visão, mas desta vez temos mais alguns dados no `request`, mais especificamente em `request.POST` (o nome não tem nada com uma "postagem" de blog , tem a ver com o fato de que estamos "postando" dados). Você se lembra que no arquivo HTML nossa definição de ` <form> ` tem a variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Você não deveria renomear `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
+Quando nós enviamos o formulário, somos trazidos de volta para a mesma visão, mas desta vez temos mais alguns dados no `request`, mais especificamente em `request.POST` (o nome não tem nada com uma "postagem" de blog, tem a ver com o fato de que estamos "postando" dados). Você se lembra que no arquivo HTML nossa definição de ` <form> ` tem a variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Você não deveria renomear `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
 
-Então, na nossa *view*, nós temos duas situações separadas para lidar. A primeira é quanto acessamos a página pela primeira vez e queremos um formulário em branco. E a segunda, é quando nós temos que voltar para a *view* com todos os dados do formulário que nós digitamos. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso).
+Então, na nossa *view*, nós temos duas situações separadas para lidar. A primeira é quando acessamos a página pela primeira vez e queremos um formulário em branco. E a segunda, é quando nós temos que voltar para a *view* com todos os dados do formulário que nós digitamos. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso).
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -188,14 +188,14 @@ else:
     form = PostForm()
 ```
 
-Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que veem do formulário, certo? Nós iremos fazer assim:
+Está na hora de preencher os pontos`[...]`. Se `method` é `POST` então nós queremos construir o `PostForm` com os dados que vêm do formulário, certo? Nós iremos fazer assim:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 form = PostForm(request.POST)
 ```
 
-Fácil! A próxima coisa é verificar se o formulário está correto(todos os campos requeridos estão definidos e nenhum valor incorreto foi enviado). Fazemos isso com `form.is_valid()`.
+Fácil! A próxima coisa é verificar se o formulário está correto (todos os campos requeridos estão definidos e nenhum valor incorreto foi enviado). Fazemos isso com `form.is_valid()`.
 
 Verificamos se o formulário é válido e se estiver tudo certo, podemos salvá-lo!
 
@@ -208,7 +208,7 @@ if form.is_valid():
     post.save()
 ```
 
- Basicamente, temos duas coisas aqui: salvamos o formulário com `form.save` e adicionados um autor(já que não tinha o campo `author` em `PostForm`, e este campo é obrigatório!). `commit=False` significa que não queremos salvar o modelo `Post` ainda - queremos adicionar autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações (adicionando o autor) e será criada uma nova postagem no blog!
+ Basicamente, temos duas coisas aqui: salvamos o formulário com `form.save` e adicionados um autor (já que não tinha o campo `author` em `PostForm`, e este campo é obrigatório!). `commit=False` significa que não queremos salvar o modelo `Post` ainda - queremos adicionar autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações (adicionando o autor) e será criada uma nova postagem no blog!
 
 Finalmente, seria fantástico se nós pudéssemos imediatamente ir à página `post_detail` da nossa recém-criada postagem no blog, certo? Para fazer isso nós precisamos fazer mais um import:
 
