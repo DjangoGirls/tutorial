@@ -14,11 +14,11 @@ Za razumijevanje za što zapravo služi Django, moramo pobliže pogledati poslu�
 
 Zamisli npr. poštanski sandučić (port) kojeg nadzireš za nadolazeća pisma (zahtjeve). To radi web poslužitelj. Web poslužitelj pročita pismo i pošalje odgovor sa web stranicom. Ali, ako želiš poslati nešto, moraš imati sadržaj. Upravo je Django tu da ti pomogne stvoriti sadržaj.
 
-## What happens when someone requests a website from your server?
+## Što se događa kad netko zatraži web stranicu s tvog poslužitelja?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Čim zahtjev dođe na web poslužitelj, zahtjev se prosljeđuje Djangu koji zatim pokušava odgonetnuti što je zapravo zatraženo. Ono najprije uzme stranicu web adrese i pokuša odgonetnuti što treba učiniti. Taj dio radi Djangov **urlresolver** (imaj na umu da se adresa web stranice naziva još i URL - Uniform Resource Locator - stoga *urlresolver* razrješava url stranice). Nije baš najpametniji - ima listu obrazaca po kojoj sparuje adrese. Django provjerava obrasce od vrha prema dnu i ako nešto odgovara, tad Django proslijedi zahtjev pridruženoj funkciji (koja se naziva *view* - <1>pogled</1>).
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Zamisli poštara sa pismom. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
