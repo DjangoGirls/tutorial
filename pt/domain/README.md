@@ -46,7 +46,7 @@ Pode levar alguns minutos para o seu domínio funcionar, então seja paciente!
 
 ## Configure o domínio através de um web app na PythonAnywhere.
 
-Você também precisa dizer PythonAnywhere que você deseja usar o seu domínio personalizado.
+Você também precisa dizer para o PythonAnywhere que você deseja usar o seu domínio personalizado.
 
 Vá para a [página PythonAnywhere contas][7] e atualize sua conta. A opção mais barata (um plano de "Hacker") é bom para começar, você pode sempre atualizá-lo mais tarde quando você ficar super famosa e tiver milhões de acessos.
 
