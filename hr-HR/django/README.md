@@ -6,13 +6,13 @@ Kada stvaraš web stranicu, uvijek ćeš trebati slične komponente: autentikaci
 
 Srećom, davno su drugi ljudi primjetili da se većina web programera susreće sa sličnim problemima kad stvaraju novu stranicu, pa su se udružili i stvorili razne frameworke (tipa Django) koji ti daju gotove komponente na korištenje.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Frameworksi postoje da bi te spasili od potrebe izmišljanja "tople vode" i da ti smanje potrebu pisanja previše koda kada radiš novu stranicu.
 
-## Why do you need a framework?
+## Zašto ti treba framework?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Za razumijevanje za što zapravo služi Django, moramo pobliže pogledati poslužitelje. Prva stvar koju poslužitelji trebaju znati je da ti želiš da ti oni posluže web stranicu.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Zamisli npr. poštanski sandučić (port) kojeg nadzireš za nadolazeća pisma (zahtjeve). To radi web poslužitelj. Web poslužitelj pročita pismo i pošalje odgovor sa web stranicom. Ali, ako želiš poslati nešto, moraš imati sadržaj. Upravo je Django tu da ti pomogne stvoriti sadržaj.
 
 ## What happens when someone requests a website from your server?
 
