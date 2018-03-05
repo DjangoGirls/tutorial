@@ -2,7 +2,7 @@ Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud 9
 
-Cloud 9 jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud9 będzie działać jako *komputer lokalny*. Nadal będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera z systemem, który ustawia dla Ciebie Cloud 9.
+Cloud 9 jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud9 będzie działać jako *komputer lokalny*. Bbędziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud 9.
 
 1. Zainstaluj Cloud 9 ze [ sklepu Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Przejdź do [c9.io](https://c9.io)
@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać kod do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby był nieco większy.
+Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać komendy do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby był nieco większy.
 
 ### Środowisko wirtualne
 
@@ -55,6 +55,6 @@ Załóż konto na [GitHubie](https://github.com).
 
 Tutorial Django Girls zawiera sekcję dotycząca wdrożenia, tzn. procesu przenoszenia kodu programu, który odpowiada za działanie naszej nowej aplikacji internetowej na publicznie dostępny komputer (zwany serwerem) w taki sposób, by inne osoby były w stanie zobaczyć Twoje dzieło.
 
-Ta część może wydać się lekko niezrozumiała, gdy przechodzimy tutorial na Chromebooku, skoro w trakcie tutoriala używamy komputera, który już jest w Internecie (w odróżnieniu od chociażby naszego laptopa). Jednak, może ona być cały czas przydatna, byśmy traktowały nasze konto w Cloud9 jako miejsce, w którym postępuje nasz praca oraz PythonAnywhere jako miejsce, gdzie możemy pokazać światu nasze dzieło, jak tylko będzie ono bardziej dokończone.
+Ta część może wydać się lekko niezrozumiała, gdy przechodzimy tutorial na Chromebooku, skoro w trakcie tutoriala używamy komputera, który już jest w Internecie (w odróżnieniu od chociażby naszego laptopa). Jednak, może ona być cały czas przydatna, byśmy traktowały nasze konto w Cloud9 jako miejsce, w którym postępuje nasza praca oraz PythonAnywhere jako miejsce, gdzie możemy pokazać światu nasze dzieło, jak tylko będzie ono bardziej dokończone.
 
 Dlatego właśnie załóż nowe konto w PythonAnywhere pod adresem [www.pythonanywhere.com](https://www.pythonanywhere.com).
