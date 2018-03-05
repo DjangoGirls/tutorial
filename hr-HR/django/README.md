@@ -16,11 +16,11 @@ Zamisli npr. poštanski sandučić (port) kojeg nadzireš za nadolazeća pisma (
 
 ## Što se događa kad netko zatraži web stranicu s tvog poslužitelja?
 
-Čim zahtjev dođe na web poslužitelj, zahtjev se prosljeđuje Djangu koji zatim pokušava odgonetnuti što je zapravo zatraženo. Ono najprije uzme stranicu web adrese i pokuša odgonetnuti što treba učiniti. Taj dio radi Djangov **urlresolver** (imaj na umu da se adresa web stranice naziva još i URL - Uniform Resource Locator - stoga *urlresolver* razrješava url stranice). Nije baš najpametniji - ima listu obrazaca po kojoj sparuje adrese. Django provjerava obrasce od vrha prema dnu i ako nešto odgovara, tad Django proslijedi zahtjev pridruženoj funkciji (koja se naziva *view* - <1>pogled</1>).
+Čim zahtjev dođe na web poslužitelj, zahtjev se prosljeđuje Djangu koji zatim pokušava odgonetnuti što je zapravo zatraženo. Ono najprije uzme stranicu web adrese i pokuša odgonetnuti što treba učiniti. Taj dio radi Djangov **urlresolver** (imaj na umu da se adresa web stranice naziva još i URL - Uniform Resource Locator - stoga *urlresolver* razrješava url stranice). Nije baš najpametniji - ima listu obrazaca s kojom uspoređuje adrese. Django provjerava obrasce od vrha prema dnu i ako nešto odgovara, tad Django proslijedi zahtjev pridruženoj funkciji (koja se naziva *view* - *pogled*).
 
-Zamisli poštara sa pismom. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Zamisli poštara sa pismom. On hoda niz ulicu i uspoređuje svaki kućni broj sa brojem na pismu. Ako su isti, ostavi tamo pismo. Upravo na ovaj način radi urlresolver!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+U *view* funkciji događaju se sve zanimljive stvari: možemo potražiti neke informacije u bazi podataka. Možda je korisnik zatražio da mu promijenimo podatke? Poput pisma u kojem piše:"Molim promjeniti opis mog posla.". *View* će provjeriti je li ti dozvoljena ta radnja, zatim će za tebe promjeniti opis posla i vratiti poruku:"Gotovo!". Tada *view* stvara odgovor i Django ga potom šalje korisnikovom web pregledniku.
 
 Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
