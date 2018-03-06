@@ -1,16 +1,18 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Uygulamanı genişlet
 
-Websitemizi oluşturmak için gerekli adımların hepsini tamamladık: bir modelin, url'nin, view'ün ve template'in nasıl yazılacağını biliyoruz. Websitemizi nasıl güzelleştirebiliriz onu da biliyoruz.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Pratik zamanı!
+Time to practice!
 
-Blog'umuzda lazım olan ilk şey bir gönderiyi göstermek için bir sayfa, değil mi?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir şey eklememize gerek yok.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Bir gönderinin detayı için bir şablon linki oluşturun
 
-`blog/templates/blog/post_list.html` dosyasının içine bir bağlantı ekleyerek başlayacağız.Şimdiye kadar bunun gibi görünmesi gerek: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -28,33 +30,33 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 {% endblock %}
 ```
 
-{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir template etiketi kullanacağız!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-`post_detail` kısmı Django, `blog/urls.py` URL'si içinde name=post_detail 'ı bekliyor olacak demektir.
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-Ve `pk=post.pk`'a ne dersin? `pk` veritabanındaki her benzersiz isim için varolan birincil anahtarın kısaltmasıdır. Çünkü `Post` modelimizde birincil anahtar belirtmediysek Django bizim için bir tane yaratır (varsayılan olarak her kayıt için birer arttırır, mesela 1,2,3) ve her gönderimize `pk` adında bir alan ekler. Ana anahtara `post.pk` yazarak erişiriz, diğer alanlar içinde aynısı geçerlidir (`title`, `author`, vb.) `Post` objesi!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağızURL yada `içerik detayları`için bir*görüntü*'müz olmadığı için hatayı almamız normal)hata böyle görünecektir:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-![NoReverseMatch error (Tersi yok hatası)](images/no_reverse_match2.png)
+![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Bir gönderinin detayı için URL oluşturun
 
-`post_detail` *view*'ümüz için `urls.py`'un içinde bir URL oluşturalım!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına şu satırı ekleyin `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),`. Dosyanın şu hale gelmiş olması gerekiyor:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -66,7 +68,7 @@ urlpatterns = [
 ]
 ```
 
-`^post/(?P<pk>\d+)/$` kısmı korkunç görünüyor, ama endişe etmeyin - sizin için açıklayalım:
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
 - "başlangıç" yine `^` ile başlar.
 - başlangıçtan sonraki `post/` kısmı URL **post** ve bir tane **/** içermesi gerekir anlamına gelir. Şimdiye kadar her şey iyi.
@@ -74,41 +76,41 @@ urlpatterns = [
 - `/` - sonra yine **/**'a ihtiyacımız var.
 - `$`-"son"!
 
-Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000/ sayfasını yenileyelim.Boom! Sunucu çalıştırmayı tekrar durdurdu. Konsola göz at, beklendiği gibi bir hata daha var!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![AttributeError (Özellik hatası)](images/attribute_error2.png)
+![AttributeError](images/attribute_error2.png)
 
-Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: görünüm'ü eklemek!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ımıza `pk` ekstra parametresi verilir. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Ama bu kodda bir hata var. Eğer `birincil anahtar<code>verilmiş herhangi bir <code>gönderi`(<0>pk</code>) yoksa, Çok çirkin bir hata elde etmiş olacağız!
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
+![DoesNotExist error](images/does_not_exist2.png)
 
-Bunu istemeyiz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Bu durumda `pk` verilen bir `gönderi` bulunamazsa çok daha güzel bir sayfa gösterilecek: `Page Not Found 404` hatası.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Page not found (Sayfa bulunamadı)](images/404_2.png)
+![Page not found](images/404_2.png)
 
-İyi haber şu, kendi `Sayfa bulunamadı` sayfasını yapabilir ve istediğiniz kadar güzelleştirebilirsiniz. Ama şu anda çok önemli değil, o yüzden bu kısmı atlayacağız.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
+OK, time to add a *view* to our `views.py` file!
 
-`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bunun anlamı Django `blog/views.py` içindeki `post_detail` adlı bir görünüm fonksiyonunu bekliyor demektir.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-`blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +118,7 @@ Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 from django.shortcuts import render, get_object_or_404
 ```
 
-Ve dosyanın sonuna kendi *görünüm*'ümüzü ekliyeceğiz:
+And at the end of the file we will add our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
-![Post list view (Gönderi listesi görünümü)](images/post_list2.png)
+![Post list view](images/post_list2.png)
 
-Çalıştı! Fakat blog gönderisi başlığındaki bir bağlantıya tıkladığınızda ne oluyor?
+It worked! But what happens when you click a link in blog post title?
 
-![TemplateDoesNotExist error (Template yok hatası)](images/template_does_not_exist2.png)
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bir template eklememiz gerekiyor!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Gönderi detayları için bir şablon oluştur
 
-`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturacağız.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Şöyle görünmeli:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,21 +162,21 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 {% endblock %}
 ```
 
-Bir kere daha `base.html` dosyasını genişleteceğiz. `content` bloğunda bir gönderinin varsa yayınlama tarihini , başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. (Unutmayın `if... else ..` **Python'a Giriş** bölümünden?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-Tamam, şimdi sayfamızı yenileyerek `Şablonyok` kaybolmuşmu görebiliriz.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Post detail page (Gönderi detay sayfası)](images/post_detail2.png)
+![Post detail page](images/post_detail2.png)
 
-Heyo! Çalışıyor!
+Yay! It works!
 
 # Deploy time!
 
 It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ git status
     $ git add --all .
@@ -183,9 +185,9 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/) una gidip:
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
