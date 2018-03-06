@@ -102,7 +102,7 @@ Ale tento kód má problém. Pokiaľ tu nie je žiaden `Post` s daným `primárn
 
 To nechceme! Ale samozrejme Django prichádza s niečim, čo si s tým poradí: `get_object_or_404`. V príade, že neexistuje žiaden `Post` s daným `pk` zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
 
-![Page not found](images/404_2.png)
+![Stránka nenájdená](images/404_2.png)
 
 Dobrá správa je, že si môžeš vytvoriť svoju vlastnú `Page not found` stránku a spraviť ju tak peknú ako len chceš. Ale to nie je momentálne príliš dôležité, takže to preskočíme.
 
@@ -128,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Áno. Nastal čas obnoviť stránku: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Funguje to! Ale čo sa stane, keď klikneš na odkaz v názve príspevku blogu?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Ale nie! Ďalšia chyba! Ale už vieme, s čim mám dočinenia, že? Potrebujeme pridať šablónu!
 
 ## Vytvor šablónu pre detaily príspevku
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+Vytvoríme súbor v `blog/templates/blog` s názvom `post_detail.html`.
 
-It will look like this:
+Bude to vyzerať takto:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -162,19 +162,19 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Znova raz rozširujeme `base.html`. V bloku `content` chceme zobraziť published_date príspevku (pokiaľ existuje), titulok a text. Ale mali by sme prebrať pár dôležitých vecí, však?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` je tag šablóny, ktorý môžeme použiť ak chceme niečo skontrolovať. (Pamätáš si `if ... else ..` z **Úvodu do Pythonu**?) V tomto prípade chceme overiť či `published_date` príspevku nie je prázdny.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist` zmizlo.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Jupí! Funguje to!
 
 # Je čas nasadiť!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, však? Pokúsme sa ju znova nasadiť.
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,13 +194,13 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím užívateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
 ## Aktualizovanie statických súborov na serveri
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Servre ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správajú inak ako ku Python súborom, lebo ich môžu optimalizovať, aby ich bolo možné rýchlejšie načítať. Kvôli tomu, keď meníme naše CSS súbory, musíme spustiť ďalší príkaz na servri aby ich akutalizoval. Názov príkazu je `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Začni spustením virtualenvu, ak už nie je aktívny (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz, ktorý si použila na vlastnom počítači):
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,8 +209,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+`manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. Urobíme zmeny v našom kóde a potom povieme Django, aby aplikoval (*apply*) tie zmeny, buď na statické súbory na servri, alebo do databázy.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
 
-And that should be it! Congrats :)
+A to by malo byť všetko! Gratulujeme :)
