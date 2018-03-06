@@ -1,16 +1,18 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Patagalin pa ang iyong application
 
-Nakumpleto na natin ang lahat ng iba't ibang hakbang na kinakailangan para sa paglikha ng ating website: alam na natin kung paano ang pagsulat ng isang model, url, view at template. Alam na rin natin kung paano pagandahin ang ating website.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Oras na para mag-ensayo!
+Time to practice!
 
-Ang unang bagay na kailangan natin sa ating blog ay, malinaw naman na, isang page para ipakita ang isang post, hindi ba?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Mayroon na tayong isang `Post` na modelo, kaya hindi na natin kailangang magdagdag ng kahit ano pa sa `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Gumawa ng isang template sa detalye ng isang post
 
-Magsimula tayo sa pamamagitan ng pagdagdag ng link sa loob na `blog/templates/blog/post_list.html` na file. Dapat itong maging kagaya nito: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -28,33 +30,33 @@ Magsimula tayo sa pamamagitan ng pagdagdag ng link sa loob na `blog/templates/bl
 {% endblock %}
 ```
 
-{% raw %} Gusto natin magkaroon ng lnk mula sa pamagat ng post sa ating listahan ng mga post papunta sa detalye na pahina ng post. Baguhin natin ang `<h1><a href="">{{ post.title }}</a></h1>` para maglink ito sa detail page ng post: {% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %} Oras na para ipaliwanag ang misteryosong `{% url 'post_detail' pk=post.pk %}`. Gaya ng suspetsa mo, ang `{% %}` na notasyon na ang ibig sabihin ay gumagamit tayo ng template tags ni Django. Sa oras na ito gagamit tayo ng isa pa na maglikha ng url para sa atin!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-Ang `post_detail` na parte ay nangahulugang ang Django ay nag-antabay ng URL sa `blog/urls.py` na may pangalang=post_detail
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-At paano na ang tungkol sa `pk=post.pk`? Ang `pk` ay ang pinaikling anyo ng primary key, na isang bugtong na pangalan para sa bawat rekord na nasa database. Dahil hindi natin gustong magtakda ng primary key sa ating `Post` na model, si Django ay gagawa para sa atin (ang default, ay isang numero na lumalaki ng isa sa bawat rekord, i.e. 1, 2, 3) at magdagdag nito isip field na may pangalang `pk` para sa bawat post natin. Ma-access natin ang primary key sa pamamagitan ng pagsulat ng `post.pk`, katulad ng pag-access natin sa ibang mga field na (`title`,`author`, etc.) sa ating `Post` na object!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Ngayon, puntahan natin ang http://127.0.0.1:8000/ kung sa magkaroon tayo ng error (gaya ng iniasahan, dahil wala pa tayong URL o ang *view* para sa `post_detail`). Maging kagaya ito nito:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Maglikha ng URL para sa detalye ng post
 
-Maglikha tayo ng URL sa `urls.py` para sa ating `post_detail` na *view*!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-Gusto natin ang ating kaunaunahang detalye ng post na mapakita sa **URL** na ito: http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Gagawa tayo ng URL sa loob ng `blog/urls.py` na file na magtuturo kay Django sa *view* na pinangalanang `post_detail`, na magpapakita sa buong blog post. Idagdag ang linyang `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` sa `blog/urls.py` na file. Ang file ay dapat maging katulad nito:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -66,7 +68,7 @@ urlpatterns = [
 ]
 ```
 
-Ang parteng ito `^post/(?P<pk>\d+)/$` ay mukhang nakakatakot, ngunit huwag mag-alala - ipapaliwanag namin yan sa iyo:
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
 - ito ay nagsisimula sa `^` uulitin ko - "ang simula".
 - Ang `post` ay nangangahulugang pagkatapos ng simula, ang URL ay dapat naglalaman ng salitang **post** at ang **/**. Sa ngayon, mabuti naman.
@@ -74,41 +76,41 @@ Ang parteng ito `^post/(?P<pk>\d+)/$` ay mukhang nakakatakot, ngunit huwag mag-a
 - `/` - pagkatapos kailangan natin ng **/** uli.
 - `$` - "ang wakas"!
 
-Ibig sabihin nito, kung maglagay ka ng `http://127.0.0.1:8000/post/5/` sa iyong browser, maiintindihan ni Django na ikaw ay naghahanap ng *view* na tinatawag na `post_detail` at maglipat ng impormasyon na ang `pk` ay katumbas ng `5` sa *view* na iyan.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-OK, nagdagdag na tayo ng bagong URL pattern sa `blog/urls.py`! I-refresh natin ang pahina: http:://127.0.0.1:8000. Yun! Ang server ay huminto na naman. Tingnan ang console - gaya ng inaasahan, may ibang error na naman!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-Naalala mo ba kung ano ang sunod na hakbang nito? Siyempre: ang pagdagdag ng view!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Magdagdag ng view para sa detalye ng post
 
-Sa oras na ito, ang *view* natin ay binigyan pa ng isa pang parameter, `pk`. Ang *view* natin ay dapat sasalo nito, di ba? Kaya ating i-define ang ating function isip `def post_detail(request, pk):`. Tandaan na kailangan nating gamitin ang parehong pangalan na nilagay natin sa mga url (`pk`). Ang pagtanggal sa variable na ito ay mali at magresulta sa isang error!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-Ngayon, gusto nating kumuha ng isa at isa lang na blog post. Para gawin ito, maari tayong gumamit ng mga queryset, gaya nito:
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Ngunit ang code na ito ay may problema. Kung walang `Post` na may nakatugmang `primary key` (`pk`), magkakaroon ng tayo ng lubhang pangit na error!
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist na error](images/does_not_exist2.png)
+![DoesNotExist error](images/does_not_exist2.png)
 
-Hindi natin gusto ito! Pero, siyempre, kasama ng Django ang isang bagay na mag-aayos nito para sa atin: `get_object_or_404`. Kung walang `Post` na tugma sa `pk`, magpapakita ito na mas magandang pahina, ang `Page Not Found 404` na pahina.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Hindi mahanap ang pahina](images/404_2.png)
+![Page not found](images/404_2.png)
 
-Ang magandang balita ay maari tayong maglikha ng ating sariling `Page not found` na pahina at gawing maganda ito ayon sa gusto mo. Pero hindi ito lubhang importante sa ngayon, kaya lalaktawan lang natin ito.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-Sige, oras na para magdagdag ng *view* sa ating <0>views.py</code> na file!
+OK, time to add a *view* to our `views.py` file!
 
-Sa `blog/urls.py`, gumawa tayo ng URL na patakaran na pinangalanang `post_detail` na tumutukoy sa view na tinatawag na `views.post_detail`. Ibig sabihin na si Django ay umaasa na may view na function na tinatawag na `post_detail` sa loob ng `blog/views.py`.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-Dapat nating buksan ang `blog/views.py` at idagdag ang sumunod na mga code malapit sa ibang `from` na mga linya:
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +118,7 @@ Dapat nating buksan ang `blog/views.py` at idagdag ang sumunod na mga code malap
 from django.shortcuts import render, get_object_or_404
 ```
 
-At sa pinakadulo ng file, idadagdag natin ang ating *view*:
+And at the end of the file we will add our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Oo. Oras na para i-refresh ang pahina: http://127.0.0.1:8000/
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
-![View ng Post list](images/post_list2.png)
+![Post list view](images/post_list2.png)
 
-Gumana ito! Pero ano ang mangyari kapag nagclick ka sa link sa pamagat ng blog post?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Naku! Ibang error na naman! Pero alam na natin kung paano ayusin ito, di ba? Kailangan nating magdagdag ng template!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Gumawa ng template para sa mga detalye ng post
 
-Gagawa tayo ng file sa `blog/templates/blog` na tinatawag na `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Maging kagaya ito nito:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,15 +162,15 @@ Maging kagaya ito nito:
 {% endblock %}
 ```
 
-Sa makaisa pa, tayo ay nag-extend sa `base.html`. Sa loob ng `content` na block, gusto nating ipakita ang publish_date ng post (kung meron), pamagat at teksto. Pero dapat nating pag-usapan ang mga importanteng mga bagay, tama ba?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` ay isang template tag na magagamit natin kung may gusto tayong tingnan. (Tandaan na ang `if ... else ..` mula sa **Introduksyon sa Python** na kabanata?) Sa senaryong ito, gusto nating tingnan kung ang `published_date` ng post ay mayroon laman.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-Sige, maari nating i-refresh ang ating pahina at tingnan kung wala na ang `TemplateDoesNotExist`.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Pahina ng detalye ng post](images/post_detail2.png)
+![Post detail page](images/post_detail2.png)
 
-Yay! Gumana ito!
+Yay! It works!
 
 # Deploy time!
 
@@ -183,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Pagkatapos sa [PythonAnywhere na Bash console](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
