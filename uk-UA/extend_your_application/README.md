@@ -1,12 +1,14 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Розширте свою програму
 
-Ми вже завершили усі кроки необхідні для створення нашого сайту: знаємо як написати модель, url, відображення та шаблон. А також знаємо про те, як зробити наш сайт гарнішим.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Час попрактикуватись!
+Time to practice!
 
-Перша потрібна для нашого блогу річ це, очевидно, сторінка для відображення одного посту, чи не так?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-У нас вже є модель `Post`, отже не треба нічого додавати до `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Створюємо в шаблоні посилання на сторінку посту
 
@@ -28,15 +30,15 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}Ми хочемо, щоб в списку постів заголовок посилався на сторінку детальної інформації про пост. Давайте змінімо `< h1 >< href = "" > </a ><{{ post.title }} / h1 >` так, щоб вийшло посилання на пост:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-Саме час пояснити цей дивний запис `{% url 'post_detail' pk=post.pk %}`. Як можна було очікувати, `{% %}` означає, що ми використовуємо шаблонні теги Django. Цього разу ми використаєм один з них, який створить URL для нас!
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
@@ -48,13 +50,13 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ## Створюєм адресу URL для деталей запису
 
-Давайте створимо URL в `urls.py` для нашого відображення `post_detail`!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-Ми хочемо, щоб наш перший пост був доступний за такою **URL-адресою**: http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-У файлі `blog/urls.py`, давайте вкажемо Django, де взяти відображення для блогозапису, яке називається `post_detail`. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Це має виглядати якось так:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -74,21 +76,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-Це означає, що якщо ви введете `http://127.0.0.1:8000/post/5/`, Django зрозуміє, що ви шукаєте відображення із назвою `post_detail` і передає цьому відображенню інформацію, що `pk` дорівнює `5`.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-Пам'ятаєте яким є наступний крок? Звісно: треба додати відображення!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Додамо деталі відображення запису
 
-This time our *view* is given an extra parameter, `pk`. Наше відображення має вилучити його, правда ж? Отже, визначимо нашу функцію як `def post_detail(request, pk):`. Зауважте, що треба використовувати точно таке ж ім'я як ми визначили в urls (`pk`). Неправильно нехтувати цією змінною, це призведе до помилки!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
@@ -98,11 +100,11 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-Ми цього не хочемо! Але, звичайно, Django надає деякі інструменти, що будуть обробляти це для нас: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
-Хороші новини полягають в тому, що можна створити свою власну сторінку `Page not found` і зробити її настільки гарною, наскільки ви захочете. Однак, це не є надто важливим на даний момент, отже, пропустимо цей крок.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Так. Прийшла пора оновити сторінку: http://127.0.0.1:8000 /
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-Спрацювало! Але що ж трапиться коли ви клікните на посилання в заголовку поста?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-О ні! Інша помилка! Але ж ми вже знаємо як із цим поводитись, чи не так? Потрібно додати шаблон!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Create a template for the post details
 
-Створимо файл в `blog/templates/blog` і назвемо його `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Це буде виглядати так:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +162,7 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-Знову розширюємо `base.html`. Всередині блоку `content` ми хотіли б відобразити такі параметри як: published_date (якщо існує), title і text. Але, мусимо обговорити певні важливі речі, правда ж?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
@@ -168,7 +170,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-Йой! Працює!
+Yay! It works!
 
 # Deploy time!
 
@@ -183,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Тоді, в [bash консолі PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
