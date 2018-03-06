@@ -1,16 +1,18 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Melanjutkan permohonan anda
 
-Kita sudah siap semua yang berbeza langkah-langkah yang diperlukan untuk penciptaan kami web: kita tahu bagaimana untuk menulis model, url, paparan dan templat. Kita juga tahu bagaimana untuk membuat website kami cukup.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Masa untuk berlatih!
+Time to practice!
 
-Benda pertama yang kita perlukan di blog kita adalah, jelas sekali, halaman untuk menampilkan satu siaran, betul?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Kita sudah mempunyai yang `Post` model, jadi kita tidak perlu menambahkan apa-apa untuk `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Membuat template link ke pos detail
 
-Kita akan bermula dengan menambah link di dalam `blog/templates/blog/post_list.html` file. Setakat ini ia harus kelihatan seperti ini: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -28,21 +30,21 @@ Kita akan bermula dengan menambah link di dalam `blog/templates/blog/post_list.h
 {% endblock %}
 ```
 
-{% raw %}Kami ingin mempunyai link dari pos tajuk dalam senarai pos ke pos halaman butiran. Mari kita mengubah `<h1><a href="">{{ post.title }}</a></h1>` supaya ia menghubungkan ke pos halaman butiran:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. Seperti yang anda mungkin tersangka, yang `{% %}` notasi cara yang kami adalah menggunakan Django template tags. Kali ini kita akan menggunakan salah satu yang akan membuat URL untuk kita!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-Yang `post_detail` bahagian bermakna itu Django akan mengharapkan URL di `blog/urls.py` dengan nama=post_detail
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-And how about `pk=post.pk`? `pk` ini pendek untuk kunci utama, yang merupakan nama yang unik untuk setiap rekod dalam pangkalan data. Karena kita tidak menentukan kunci utama kami `Post` model, Django mewujudkan satu untuk kami (oleh lalai, beberapa yang meningkatkan oleh satu untuk setiap rekod, i.e. 1, 2, 3) dan menambah ia sebagai satu bidang yang dinamakan `pk` untuk setiap jawatan kami. Kita mengakses kunci utama dengan menulis `post.pk`, cara yang sama kami akses lain bidang (`tajuk`, `penulis`, dan lain-lain.) dalam kami `Post` objek!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Sekarang, ketika kita pergi ke http://127.0.0.1:8000/ kami akan mempunyai satu kesilapan (seperti yang dijangka, sejak kita tidak lagi mempunyai URL atau sesuatu *pandangan* bagi `post_detail`). Ia akan kelihatan seperti ini:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -52,9 +54,9 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Fail harus kelihatan seperti ini:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -74,21 +76,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-Itu berarti jika anda masuk `http://127.0.0.1:8000/post/5/` ke pelayar anda, Django akan mengerti bahwa anda sedang mencari *pandangan* dipanggil `post_detail` dan memindahkan maklumat itu `pk` sama dengan `5` untuk itu *pandangan*.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! Pelayan telah berhenti berjalan lagi. Have a look at the console – as expected, there's yet another error!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-Apakah anda ingat apa langkah berikutnya adalah? Tentu saja: menambah melihat!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Tambah post melihat butiran
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Catatan yang kita perlukan untuk menggunakan nama yang sama sebagai salah satu kita yang dinyatakan dalam urls (`pk`). Meninggalkan berubah-ubah ini adalah salah dan akan mengakibatkan satu kesilapan!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-Sekarang, kita mahu untuk mendapatkan salah satu dan hanya satu blog pos. Untuk melakukan ini, kita bisa menggunakan querysets, seperti ini:
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
@@ -102,11 +104,11 @@ We don't want that! But, of course, Django comes with something that will handle
 
 ![Page not found](images/404_2.png)
 
-Berita baik adalah bahwa anda benar-benar dapat membuat anda sendiri `Halaman tidak menemukan` halaman dan menjadikannya sebagai cantik seperti yang anda mahu. Tapi itu tidak penting super sekarang, jadi kami akan melewatkan itu.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. Ini bermakna bahawa Django akan mengharapkan lihat fungsi dipanggil `post_detail` di dalam `blog/views.py`.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
 We should open `blog/views.py` and add the following code near the other `from` lines:
 
@@ -128,13 +130,13 @@ def post_detail(request, pk):
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
-![Menghantar senarai melihat](images/post_list2.png)
+![Post list view](images/post_list2.png)
 
-Ia bekerja! Tetapi apa yang terjadi apabila anda klik link di blog pos tajuk?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh tidak! Satu lagi kesalahan! Tapi kami sudah tahu bagaimana untuk berurusan dengan itu, kan? Kita perlu untuk menambah template!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Create a template for the post details
 
@@ -160,15 +162,15 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. Dalam `content` blok kami mahu paparan yang post published_date (jika ia wujud), tajuk dan teks. Tetapi kita harus mendiskusikan beberapa hal penting, kan?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-OK, kita boleh menyegarkan kami halaman dan melihat jika `TemplateDoesNotExist` pergi sekarang.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Pos halaman terperinci](images/post_detail2.png)
+![Post detail page](images/post_detail2.png)
 
-Yay! Ia berfungsi!
+Yay! It works!
 
 # Deploy time!
 
