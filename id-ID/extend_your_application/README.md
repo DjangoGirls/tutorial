@@ -1,54 +1,56 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Perluas aplikasi Anda
 
-Kami telah menyelesaikan semua langkah berbeda yang diperlukan untuk pembuatan situs web kami: kami tahu cara menulis model, url, tampilan dan template. Kita juga tahu bagaimana membuat website kita cantik.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Waktunya berlatih!
+Time to practice!
 
-Hal pertama yang kita butuhkan di blog kita adalah, jelas, halaman untuk menampilkan satu posting, bukan?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Kita sudah memiliki model ` Post </ 0> , jadi kita tidak perlu menambahkan apapun ke <code> models.py </ 0> .</p>
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-<h2>Buat link template ke detail posting</h2>
+## Buat link template ke detail posting
 
-<p>Kita akan mulai dengan menambahkan link di dalam file <code> blog / template / blog / post_list.html </ 0> . Sejauh ini seharusnya terlihat seperti ini:
- {% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html">{% meluas 'blog/base.html' %}{% block content %} {% for post in posts %} <div class="post"><div class="date">{{ post.published_date }}</div> <h1><a href="">{{ post.title }}</a></h1> <p>{{ post.text|linebreaksbr }}</p></div> {% endfor %}{% endblock %}
-`</pre> 
+```html
+{% meluas 'blog/base.html' %}{% block content %} {% for post in posts %} <div class="post"><div class="date">{{ post.published_date }}</div> <h1><a href="">{{ post.title }}</a></h1> <p>{{ post.text|linebreaksbr }}</p></div> {% endfor %}{% endblock %}
+```
 
-{% raw %}Kami ingin memiliki tautan dari judul posting di daftar pos ke halaman detail post. Mari kita ubah `<h1><a href="">{{ post.title }}</a></h1>` sehingga link ke halaman detail posting:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog / template/ blog/post_list.html {% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %} saatnya untuk menjelaskan misterius `{% url 'post_detail' pk =post.pk%}`. Seperti yang Anda duga, notasi ` {% %}` berarti kita menggunakan tag template Django. Kali ini kita akan menggunakan satu yang akan membuat URL untuk Kita!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-Bagian `detail_post` berarti Django akan mengharapkan URL di `blog /urls.py` dengan nama = detail_post
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-Dan bagaimana dengan `pk=post.pk`? `pk` adalah singkatan dari primary key, yang merupakan nama unik untuk setiap record dalam database. Karena kita tidak menetapkan primary key dalam model `posting` kami, Django menciptakan satu untuk kita (secara default, nomor yang meningkat oleh satu untuk masing-masing rekaman, yaitu 1, 2, 3) dan menambah itu sebagai sebuah bidang yang bernama `pk` masing-masing posting kami. Kita mengakses primary key dengan menulis `post.pk`, dengan cara yang sama kita mengakses bidang lain (`judul`, `penulis`, dll) di objek `posting` kami!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Sekarang ketika kita pergi ke http://127.0.0.1:8000 / kita akan memiliki kesalahan (seperti yang diharapkan, karena kita belum memiliki URL atau *pemandangan* untuk `post_detail`). Ini akan terlihat seperti ini:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-![Kesalahan NoReverseMatch](images/no_reverse_match2.png)
+![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Membuat URL posting detail
 
-Mari kita membuat URL di `urls.py` untuk `post_detail` kita *Lihat*!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-Kami ingin posting pertama kami detail untuk ditampilkan di **URL**: http://127.0.0.1:8000/post/1 /
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Mari kita membuat URL dalam `blog/urls.py` file untuk Django titik *pemandangan* bernama `post_detail`, yang akan menunjukkan seluruh blog posting. Tambahkan baris `url (r'^ posting / (? P <pk>\d+)/$', views.post_detail, nama = 'post_detail'),` ke `blog/urls.py` file. File Anda seharusnya terlihat seperti ini:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/static/css/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 dari django.conf.urls impor url dari. Impor dilihat urlpatterns = [url (r'^ $', views.post_list, nama = 'post_list'), url (r'^ posting / (? P <pk>\d+)/$', views.post_detail, nama = 'post_detail'),]
 ```
 
-Bagian ini `^ posting / (? P <pk>\d+)/$` terlihat menakutkan, tetapi jangan khawatir-kami akan menjelaskan hal itu untuk Anda:
+This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
 
 - dimulai dengan `^ ^` lagi-"awal".
 - `posting /` hanya berarti bahwa setelah awal, URL harus berisi kata **posting** dan **/**. Sejauh ini baik-baik saja.
@@ -56,41 +58,41 @@ Bagian ini `^ posting / (? P <pk>\d+)/$` terlihat menakutkan, tetapi jangan khaw
 - `/`- maka kita perlu **/** lagi.
 - `$` – "akhir"!
 
-Itu berarti jika Anda memasukkan ` http://127.0.0.1:8000/post/5/ ` ke browser Anda, Django akan mengerti bahwa Anda mencari *Tampilan* yang disebut `detil_post` dan transfer informasi `pk ` sama dengan `5` ke *tampilan*.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
-Ok, kami sudah menambahkan pola URL baru ke `blog/url.py`! Mari segarkan halaman: http://127.0.0.1:80000/ Boom! Server berhenti berjalan lagi. Lihat konsol - seperti yang diharapkan, ada lagi kesalahan lain!
+OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![Atribut rusak](images/attribute_error2.png)
+![AttributeError](images/attribute_error2.png)
 
-Anda ingat apakah langkah selanjutnya? Tentu: Menambah tampilan!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Add a post's detail view
 
-Kali ini *view* diberikan parameter tambahan, `pk`. *view* kita perlu menangkapnya, bukan? Jadi kita akan mendefinisikan fungsi kita sebagai `def post_detail(request, pk):`. Perhatikan bahwa kita perlu menggunakan nama yang sama persis dengan yang kita tentukan dalam url (`pk`). Menghilangkan variabel ini tidak benar dan akan mengakibatkan kesalahan!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
-Sekarang, kita ingin mendapatkan satu dan hanya satu posting blog. Untuk melakukan ini, kita bisa menggunakan querysets, seperti ini:
+Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Tapi kode ini bermasalah. Jika tidak ada `Posting`dengan kunci utama` ` (`pk`), kita akan memiliki kesalahan yang sangat jelek!
+But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![Kesalahan DoesNotExist](images/does_not_exist2.png)
+![DoesNotExist error](images/does_not_exist2.png)
 
-Kami tidak menginginkan itu! Tapi, tentu saja, Django hadir dengan sesuatu yang akan menangani hal itu untuk kita: `get_object_or_404`. Jika tidak ada `Posting`dengan`pk` yang diberikan, halaman itu akan menampilkan halaman yang jauh lebih bagus, halaman `Halaman Tidak Ditemukan 404`.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Halaman tidak ditemukan](images/404_2.png)
+![Page not found](images/404_2.png)
 
-Kabar baiknya adalah Anda benar-benar dapat membuat laman `Halaman tidak ditemukan`dan membuatnya sama cantiknya dengan yang Anda inginkan. Tapi itu tidak terlalu penting saat ini, jadi kita akan melewatinya.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-OK, saatnya menambahkan *view* untuk kami `views.py` file!
+OK, time to add a *view* to our `views.py` file!
 
-Di `blog/urls.py` kami membuat aturan URL bernama `post_detail` yang mengacu pada tampilan yang disebut `views.post_detail`. Ini berarti bahwa Django akan mengharapkan fungsi tampilan yang disebut `post_detail` di dalam `blog/views.py`.
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-Kita harus membuka `blog/views.py` dan menambahkan kode berikut di dekat baris `dari` lainnya:
+We should open `blog/views.py` and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -98,7 +100,7 @@ Kita harus membuka `blog/views.py` dan menambahkan kode berikut di dekat baris `
 dari django.shortcuts import render, get_object_or_404
 ```
 
-Dan di akhir file kita akan menambahkan kita *view*:
+And at the end of the file we will add our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -110,19 +112,19 @@ def post_detail(request, pk):
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
-![Tampilan daftar pos](images/post_list2.png)
+![Post list view](images/post_list2.png)
 
-Ini berhasil! Tapi apa jadinya bila anda mengklik link di judul posting blog?
+It worked! But what happens when you click a link in blog post title?
 
-![TemplateDoesNotExist kesalahan](images/template_does_not_exist2.png)
+![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh tidak! Kesalahan lain Tapi kita sudah tahu bagaimana mengatasinya, kan? Kita perlu menambahkan template!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Buat template untuk detail posting
 
-Kami akan membuat file di `blog/template/blog` yang disebut `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Ini akan terlihat seperti ini:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -142,21 +144,21 @@ Ini akan terlihat seperti ini:
 {% endblock %}
 ```
 
-Sekali lagi kita memperluas `base.html`. Di blok `konten` kami ingin menampilkan publikasi post_date (jika ada), judul dan teks. Tapi kita harus membahas beberapa hal penting, bukan?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` adalah tag templat yang dapat kami gunakan saat kami ingin memeriksa sesuatu. (Ingat `jika ... lain ..`dari**Pengenalan bab Python**?) Dalam skenario ini, kami ingin memeriksa apakah `published_date` tidak kosong.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-Oke, kita bisa me-refresh halaman kita dan melihat apakah `TemplateDoesNotExist` hilang sekarang.
+OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! Berhasil!
+Yay! It works!
 
 # Deploy time!
 
 It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ git status
     $ git add --all .
@@ -165,9 +167,9 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
