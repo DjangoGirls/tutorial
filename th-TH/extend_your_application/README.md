@@ -1,12 +1,14 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # เพิ่มความสามารถให้เว็บคุณ
 
-เราได้เรียนรู้ขั้นตอนทั้งหมดในการสร้างเว็บไซต์แล้ว: เรารู้วิธีสร้าง โมเดล, url, view และ template รวมถึงการทำให้เว็บเราสวยงามขึ้น
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-ได้เวลาฝึกแล้ว!
+Time to practice!
 
-สิ่งแรกที่เราต้องการสำหรับบล็อกของเราคือ หน้าเว็บที่จะแสดงโพสต์หนึ่งโพสต์ของเรา ถูกไหม?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-ซึ่งเรามีโมเดล `Post` แล้ว ดังนั้น เราไม่จำเป็นต้องเพิ่มอะไรลงไปใน `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## สร้าง template ที่แสดงหน้ารายละเอียดของโพสต์
 
@@ -28,15 +30,15 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}เราต้องการที่จะมีลิงค์ที่ชื่อของโพสต์ในหน้ารายการโพสต์ เพื่อไปยังหน้ารายละเอียดของโพสต์ เปลี่ยนบรรทัด `<h1><a href="">{{ post.title }}</a></h1>` ให้เป็นแบบนี้:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}ได้เวลาอธิบายบรรทัดเหล่านี้แล้ว `{% url 'post_detail' pk=post.pk %}` คุณอาจสงสัยสัญลักษณ์ `{% %}` นี้ ซึ่งก็คือ เรากำลังใช้ template tag ของ Django ตอนนี้เราจะใช้เพื่อสร้าง URL ให้กับเรา!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
@@ -48,13 +50,13 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ## สร้าง URL สำหรับ รายละเอียดโพสต์
 
-สร้าง URL ไฟล์ `urls.py` สำหรับ `post_detail` *view* ของเรา!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-เราต้องการให้รายละเอียดของโพสต์แรกของเรา แสดงโดยการเข้าถึง **URL**: http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-เรามาสร้าง URL ในไฟล์ `blog/urls.py` ให้ชี้ Django ไปยัง *view* ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -74,21 +76,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-นั่นคือ ถ้าคุณป้อน `http://127.0.0.1:8000/post/5/` มายังเบราว์เซอร์ของคุณ Django จะเข้าใจว่าคุณกำลังมองหา *view* ชื่อ `post_detail` และส่งข้อมูลคือ `pk` ซึ่งมีค่าเท่ากับ `5` ไปยัง *view* นั้น.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-คุณยังจำขั้นตอนถัดไปได้ไหม? แน่นอน: เพิ่ม view ใหม่!
+Do you remember what the next step is? Of course: adding a view!
 
 ## เพิ่ม view รายละเอียดของโพสต์
 
-This time our *view* is given an extra parameter, `pk`. *view* ของเราต้องจับมันไว้ ใช่ไหม? ดังนั้นเราจะสร้างฟังก์ชันใหม่ โดยใช้ `def post_detail(request, pk):` สังเกตว่าเราต้องใช้ชื่อเดียวกันกับชื่อที่เรากำหนดไว้ใน url (`pk`) การละเว้นตัวแปรนี้ จะทำให้เกิดขึ้นผิดพลาด!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
@@ -98,11 +100,11 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-เราไม่ต้องการแบบนี้! แต่ แน่ล่ะ Django มาพร้อมกับสิ่งที่สามารถจัดการปัญหานี้ได้: `get_object_or_404` In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
-ข่าวดีคือ คุณสามารถสร้างหน้า `Page not found` เป็นของคุณเองได้ และทำให้สวยแค่ไหนก็ได้ตามแต่คุณต้องการ แต่ตอนนี้ยังไม่จำเป็นเท่าไหร่นัก เราจะขอข้ามไปก่อน
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-ได้เวลาโหลดหน้าเว็บนี้ใหม่: http://127.0.0.1:8000/
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-ใช้ได้แล้ว! แต่ เกิดอะไรขึ้นเมื่อคุณคลิกที่ลิงค์บนชื่อโพสต์?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-โอ้ ไม่นะ! ข้อผิดพลาดอีกแล้ว! แต่เรารู้วิธีรับมือปัญหานี้แล้ว ถูกไหม? เราต้องเพิ่ม template ไงล่ะ!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Create a template for the post details
 
-เราจะสร้างไฟล์ใน `blog/templates/blog` ชื่อ `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-ผลลัพธ์จะคล้ายนี้:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +162,7 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-เป็นอีกครั้งที่เรา extend ไฟล์ `base.html` ใน block `content` เราต้องการแสดง published_date ของโพสต์ (ถ้ามี), ชื่อโพสต์ และ เนื้อหา แต่เราควรจะมาคุยกันถึงเรื่องสำคัญอีกอย่างก่อน ดีไหม?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
@@ -168,7 +170,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-เย้! ใช้ได้แล้ว!
+Yay! It works!
 
 # Deploy time!
 
@@ -183,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-ต่อมา ในคอนโซล [PythonAnywhere Bash](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
