@@ -30,7 +30,7 @@ Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená, ž
 
 Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začnime tým, že skúsime matematiku, napr. ` 2 + 3 `a stlač `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +39,26 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Super! Vidíte ako vyskočilo riešenie? Python vie počítať! Môžete skúsiť aj ďalšie príkazy, ako:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Aby sme vypočítali mocninu, povedzme 2 na tretiu, zadáme: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Pobavte sa s tým trošku, potom sa vráťte späť . :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Ako vidíte, Python je dobrá kalkulačka. A ak ste zvedaví, čo všetko ešte vie…
 
-## Reťazce
+## Reťazce ("Stringy")
 
-How about your name? Type your first name in quotes like this:
+Čo tak tvoje meno? Napíš svoje meno v úvodzovkách:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 "Ola"
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Práve si vytvorila svoj prvý reťazec! Je postupnosť znakov, ktoré môžu byť spracované počítačom. Reťazec musí vždy začínať a končíť s rovnakým znakom. Sú to jednoduché (`'`) alebo dvojité (`"`) úvodzovky (nie je medzi nimi žiadny rozdiel!). Úvodzovky naznačujú, že to čo je medzi nimi je reťazec (string).
 
-Strings can be strung together. Try this:
+Reťazce možno spájať dohromady. Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
