@@ -136,7 +136,7 @@ Username for 'https://github.com': ola Password for 'https://ola@github.com': Co
     
     &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
     
-    &gt; **Poznámka** PythonAnywhere ja založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
+    &gt; **Poznámka** PythonAnywhere je založené na Linuxe, takže ak používaš Windows, konzola sa bude líšiť od tej na tvojom počítači.
     
     Nasadenie webovej aplikácie na PythonAnywhere znamená stiahnutie kódu z GitHubu, a nakonfigurovania PythonAnywhere aby ho rozpoznal a začal ho poskytovať ako webovú aplikáciu.  Sú manuálne spôsoby ako to urobiť, ale PythonAnywhere poskytuje pomocný nástroj, ktorý všetko urobí za teba. Nainštalujme ho najprv:
     
@@ -162,7 +162,7 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
     - Nastaví tvoje statické súbory (o nich si povieme neskôr)
     - A nastaví PythonAnywhere aby ukazovalo tvoju webovú aplikáciu cez svoje API
     
-    Na PythonAnywhere všetky tie kroky sú automatizované, ale sú to tie isté kroky, ktoré by si musela urobiť u hociktorého poskytovateľa serverov.  Dôležitá vec, ktorú si treba teraz všimnúť je, že tvoja databáza na PYthonAnywhere je vlastne úplne iná a oddelená od databázy ba tvojom PC - to znamená, že budeš mať iné príspevky a admin účet.
+    Na PythonAnywhere všetky tie kroky sú automatizované, ale sú to tie isté kroky, ktoré by si musela urobiť u hociktorého poskytovateľa serverov.  Dôležitá vec, ktorú si treba teraz všimnúť je, že tvoja databáza na PythonAnywhere je vlastne úplne iná a oddelená od databázy na tvojom PC - to znamená, že budeš mať iné príspevky a admin účet.
     
     Kvôli tomu, presne ako sme to urobili na vlastnom počítači, musíme inicializovať admin účet pomocou `createsuperuser`. PythonAnywhere automaticky aktivoval tvoj virtualenv, takže celé čo potrebuješ urobiť, je spustiť:
     
@@ -171,28 +171,28 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 
-    <br />Zadaj detaily pre admin uživateľa.  Najlepšie je použiť tie isté, ako používaš na vlastnom počítači a predísť tak zmätku, pokiaľ nechceš lepším heslom zabezpečiť PythonAnywhere.
+    <br />Zadaj detaily pre admin užívateľa.  Najlepšie je použiť tie isté, ako používaš na vlastnom počítači a predísť tak zmätku, pokiaľ nechceš lepším heslom zabezpečiť PythonAnywhere.
     
-    Teraz, ak chceš, možeš sa pozrieť na sovj kód na PythonAnywhere pomocou`ls`:
+    Teraz, ak chceš, možeš sa pozrieť na svoj kód na PythonAnywhere pomocou`ls`:
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     
 
 (ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
 
-Môžeš tiež ísť do záložky "Files" a pozrieť sa pomocou vbudovaného PythonAnywhere prehliadača súborov.
+Môžeš tiež ísť do záložky "Files" a pozrieť sa pomocou zabudovaného PythonAnywhere prehliadača súborov.
 
 ## Si online!
 
-Tvoja stránka by teraz mala by dostupná na verejnom internete. Preklikni sa do PythonAnywhere "Web" záložky aby si získala link na ňu. Môžeš to vyzielať s kýmkoľvek :)
+Tvoja stránka by teraz mala by dostupná na verejnom internete. Preklikni sa do PythonAnywhere "Web" záložky, aby si na ňu získala link . Môžeš to vyzdieľať s kýmkoľvek :)
 
 ## Tipy pre ladenie
 
-Ak uviídíš chybu počas behu `pa_autoconfigure_django.py` skriptu, toto sú najčastejšie dôvody:
+Ak uvídíš chybu počas behu `pa_autoconfigure_django.py` skriptu, toto sú najčastejšie dôvody:
 
-- Zabuudla si vytvoriť PythonAnywhere API token.
+- Zabudla si vytvoriť PythonAnywhere API token.
 - Urobila si chybu v tvojej GitHub URL
-- Ak sa ti zobrazí chybové hlásenie, že *"Could not find your settings.py"*, pravdepodobne je to spôsobené tým že sa ti nepodarilo pridať všetky súbory do Git a/alebo sa ich nepodarilo úspešne pridať na GitHub. Znovu sa pozri na Git odstavec vyššie
+- Ak sa ti zobrazí chybové hlásenie, že *"Could not find your settings.py"*, pravdepodobne je to spôsobené tým, že sa ti nepodarilo pridať všetky súbory do Git a/alebo sa ich nepodarilo úspešne pridať na GitHub. Znovu sa pozri na Git odstavec vyššie
 
 Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [záložke Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú dolu.
 
@@ -204,6 +204,6 @@ A nezabudni, tvoj mentor je tu na to, aby ti pomohol!
 
 Hlavná stránka tvojej aplikácie by ťa mala vítať nápisom "It worked!", tak ako na tvojom počítači. Skús pridať `/admin/` na koniec adresy URL, a budeš presmerovaná na stránky administrácie. Prihlás sa s užívateľským menom a heslom a uvidíš, že môžeš pridávať nové príspevky (posty) na server.
 
-Keď vytvoríš niekolľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Na zmenách by si mala pracovať v lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. To ti umožní pracovať a experimentovať bez pokazenia živej webovej stránky. Docela cool, nie?
+Keď vytvoríš niekoľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Na zmenách by si mala pracovať v lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. To ti umožní pracovať a experimentovať bez pokazenia živej webovej stránky. Celkom cool, nie?
 
 Môžeš si *pogratulovať*! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš teraz svoju stránku online, na skutočnom internete!
