@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Вступ до Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Давайте напишемо якийсь код!
+Let's write some code!
 
 ## Командний рядок Python
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Щоб розпочати роботу із Python нам необхідно відкрити *командний рядок*. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Так як ви готові, виконаємо наведені нижче інструкції.
+Once you're ready, follow the instructions below.
 
-Ми хочемо відкрити консоль Python, тому введіть `python` на Windows або `python3` на Mac OS/Linux та натисніть `Enter`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@
 
 ## Ваша перша команда на Python!
 
-Після запуску команди Python командний рядок зміниться на `>>>`. Для нас це означає, що відтепер ми можемо користуватися лише командами мови Python. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Якщо забажаєте вийти із консолі Python, просто наберіть `exit()` або використайте комбінацію `Ctrl + Z` для Windows і `Ctrl + D` для Mac/Linux. Після того ви більше не побачите `>>>`.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -50,13 +52,13 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-Поки що можете трохи побавитися із математикою, а далі повертайтесь назад. :)
+Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## Рядки
 
-Як щодо вашого імені? Наберіть ваше ім'я в лапках як тут:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +67,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Ola'
 ```
 
-Щойно ви створили свій перший рядок! Це послідовність символів, що може бути оброблена комп'ютером. Рядок має постійно починатися і закінчуватися одним і тим же символом. Це може бути одинарна (`'`) або подвійна (`"`) лапка (немає ніякої різниці)! Лапки вказують Python, що що всередині них рядок.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Рядки можна об'єднувати. Спробуйте:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +78,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Hi there Ola'
 ```
 
-Також можна множити рядки на число:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +87,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'OlaOlaOla'
 ```
 
-Якщо вам раптом треба поставити апостроф всередині рядка, то існує два шляхи це зробити.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Використавши подвійні лапки:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +98,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-або ж екранувати апостроф за допомогою зворотнього слеша (бекслеша) (``):
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +107,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-Гарно, еге ж? Щоб побачити своє ім'я написане великими літерами, просто наберіть:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +127,24 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Здивовані чому іноді ви викликаєте функції із `.` наприкінці рядка (на зразок `"Ola".upper()`), а іноді ви спочатку викликаєте функцію і вказуєте рядок у дужках? Що ж, в деяких випадках, функції належать об'єктам, як `upper()`, котра може бути виконана лише над рядком. У цьому випадку, ми називаємо функцію **методом**. Іншого разу, функції не належать до жодного об'єкту і можуть використовуватись стосовно різних типів об'єктів, як `len()`. Саме тому ви використовуємо `"Ola"` у якості параметра для функції `len`.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Зміст
 
-Гаразд, досить стосовно рядків. Отже, ви вже ознайомилися із такими поняттями як:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-Це є основи кожної мови програмування, яку ви вивчатимете. Готові приступити до чогось складнішого? Б'ємось об заклад, що так!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Помилки
 
-Спробуємо щось нове. Чи можемо ми отримати довжину числа тим же методом як ми це робили для нашого імені? Наберіть `len(304023)` та натисніть `Enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Ми отримали нашу першу помилку! Вона говорить про те, що об'єкт типу "int" (integers, цілі числа) не мають довжини. І що ж нам тепер робити? Можливо, можна записати наше число у формі рядка? Рядки ж мають довжину, правда?
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +164,7 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-Спрацювало! Ми використали функцію `str` всередині функції `len`. `str()` перетворює будь-що на рядки.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - Функція `str` перетворює речі на **рядки**
 - Функція `int` перетворює речі на **цілі числа**
@@ -169,9 +173,9 @@ TypeError: object of type 'int' has no len()
 
 ## Змінні
 
-Важливою концепцію в програмуванні є змінні. Змінна - це ніщо більше, ніж ім'я для чогось, що можна буде використовувати пізніше. Програмісти використовують ці змінні для збереження даних, щоб зробити свій код більш читабельним і, таким чином, їм не потрібно пам'ятати зайве.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Скажімо, ми хочемо створити змінну і назвати її `name`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +185,7 @@ TypeError: object of type 'int' has no len()
 
 We type name equals Ola.
 
-Як ви зауважили, ваша програма не повернула нічого як вона це робила до того. Отже, як ми можемо бути певні, що змінна насправді існує? Просто введіть `name` і натисніть `Enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-Також можна використовувати її у функціях:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,9 +224,9 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-Але що, якщо ми використали неправильне ім'я? Чи можете ви передбачити, що станеться? Спробуймо!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -232,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Помилка! Як бачите, Python має різні типи помилок і дана помилка називається **NameError**. Python виведе для вас цю помилку, якщо ви спробуєте використати досі не визначену змінну. Якщо ж ви зіткнетеся із цією помилкою пізніше, перевірте свій код щоб побачити чи не пропустили ви часом якоїсь змінної.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Поекспериментуйте із цим усім поки що і подивіться що можна робити!
+Play with this for a while and see what you can do!
 
 ## Функція print
 
-Спробуйте наступне:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +254,15 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-Коли ви просто набираєте `name`, Python інтерпретує відповіді за допомогою рядкового *представлення* змінної 'name', котра є набором літер M-a-r-i-a, взятим в одинарні лапки, ''. Коли ви повідомляєте `print(name)`, Python "надрукує" значення змінної на екран, без лапок, що є більш акуратним.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Як ми потім побачимо, `print()` є також корисним коли ми хочемо надрукувати речі з внутрішніх функцій, або ж коли хочемо надрукувати речі в декілька рядків.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## Списки
 
-Окрім рядків та чисел, Python має усі види різних типів об'єктів. Наразі ми збираємося представити вашій увазі один із них, що називається **список**. Списки є саме тим, про що ви й подумали: це є об'єкти, що є списками інших об'єктів. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Створимо список:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +271,7 @@ Maria
 []
 ```
 
-Так, цей список пустий. Не дуже корисно, чи не так? Створимо список лотерейних чисел. Ми не бажаємо увесь час повторюватись, то ж покладемо усе до змінної, також:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +279,7 @@ Maria
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Гаразд, маємо список! Що ми можемо із цим робити? Давайте глянемо скільки лотерейних номерів міститься у списку. Не маєте жодного уявлення яку функцію для цього можна використати? Ви вже це знаєте!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +288,7 @@ Maria
 6
 ```
 
-Так! `len()` може дати вам кількість об'єктів у списку. Зручно, правда ж? Може, тепер здійснимо сортування:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +296,7 @@ Maria
 >>> lottery.sort()
 ```
 
-Ця функція нічого не повертає, вона лише змінює порядок, в якому з'являються числа у списку. Давайте надрукуємо список знову і подивимось що ж трапилося:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +305,9 @@ Maria
 [3, 12, 19, 30, 42, 59]
 ```
 
-Як бачимо, числа у вашому списку тепер відсортовано починаючи з найменшого і закінчуючи найбільшим значенням. Вітаємо!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Можливо, ми хочемо відсортувати числа у зворотньому порядку? Давайте це зробимо!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Якщо захочете показати лише перше число, то можете зробити це використавши **індекси**. Індекс - це номер, що повідомляє про те, звідки у списку взято елемент. Програмісти вважають за краще рахувати з 0, таким чином, перший об'єкт у списку має індекс 0, наступний — 1 і так далі. Спробуйте наступне:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,7 +338,7 @@ If you want to add something to your list, you can do this by typing this comman
 42
 ```
 
-Як бачимо, ви можете отримати доступ до різних об'єктів списку використавши ім'я списку та індекс об'єкта всередині квадратних дужок.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,11 +355,11 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-Працює чудово!
+That worked like a charm!
 
-Для додаткового задоволення, спробуйте деякі індекси: 6, 7, 1000, -1, -6 або -1000. Подивіться чи здатні ви передбачити результат команди перед її застосуванням. Чи мають ці результати якийсь смисл?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Список усіх доступних методів для списку міститься у цьому розділі документації з Python: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Словники
 
@@ -370,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-Це показує, що ви просто створили пустий словник. Урра!
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -386,7 +390,7 @@ With this command, you just created a variable named `participant` with three ke
 - `country` вказує на `'Poland'` (інший об'єкт `string` - рядок),
 - і `favorite_numbers` вказує на `[7, 42, 92]` (об'єкт `list` - список з трьома числами всередині).
 
-Можна перевірити значення індивідуальних ключів, використовуючи наступний синтаксис:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -397,9 +401,9 @@ Ola
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-Що трапиться якщо запитати Python про значення ключа, що не існує? Не здогадуєтесь? Давайте спробуємо і подивимось!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -408,9 +412,9 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Погляньте, інша помилка! Цього разу - **KeyError**. Python допомагає і підказує вам про те, що ключа `'age'` не існує в даному словнику.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Коли ж варто використовувати словник, а коли список? Що ж, гарне питання. Просто вирішимо його подумки перед тим, як подивитися відповідь у наступному рядку.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - Вам необхідна лише впорядкована послідовність елементів? Користуйтеся списком.
 - Вам потрібні значення асоційовані із ключами, так що ви можете ефективно переглядати їх (за допомогою ключа) пізніше? Користуйтеся словником.
@@ -434,7 +438,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Скажімо, якщо ви бажаєте видалити значення, що відповідає ключу `'favorite_numbers'`, просто наберіть наступну команду:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,14 +465,14 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 ### Зміст
 
-Чудово! Тепер ви знаєте багато про програмування. У цій останній частині ви дізналися про такі поняття як:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-Не дочекаєтеся переходу до наступної частини? :)
+Excited for the next part? :)
 
 ## Порівняння
 
@@ -493,9 +497,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Цікаво чому ми використали два однакові знаки `==` щоб порівняти чи є рівними числа? Ми використовуємо `=` для присвоєння значень змінним. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. Ми також можемо перевіряти чи два об'єкта є нерівними. Для цього ми використовуємо символ `!=`, як показано в прикладі вище.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Задайте для Python ще дві задачі:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -513,7 +517,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - x `<=` y означає x менше або рівне y
 - x `>=` y означає x більше або рівне y
 
-Чудово! Хочете ще? Спробуйте це:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,14 +530,14 @@ False
 True
 ```
 
-Ви можете задавати для Python стільки чисел для порівння скільки заманеться, і він дасть вам результат! Дуже розумно, чи не так?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Чи чули ви про вираз "порівняння яблук і апельсинів"? Давайте спробуємо Python еквівалент:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -542,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Бачимо тут, що як і у виразі, Python не в змозі порівняти число (`int`) та рядок (`str`). Натомість, виводиться **TypeError** і повідомляє нас про те, що ці два типи не можна порівнювати між собою.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Логічні типи
 
@@ -555,7 +559,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Логічні значення також можуть бути змінними! Погляньте:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +569,7 @@ But for Python to understand this, you need to always write it as 'True' (first 
 True
 ```
 
-Можна також зробити теж саме по іншому:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,20 +579,20 @@ True
 False
 ```
 
-Практикуйте із логічними типами спробувавши запустити наступні команди:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Вітання! Логічні типи одна із найкрутіших властивостей програмування, і ви щойно освоїли, як їх застосовувати!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # Збережіть!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-Поки ми писали весь наш python код в інтерпритаторі, що обмежує нас написанням лише одного рядка за раз. Зазвичай програми зберігаються у файли і виконуються **інтерпритатором** або **компілятором** нашої мови програмування. Досі ми запускали наші програми одним рядком в Python **інтерпретаторі**. Для наступних задач нам знадобиться більше, ніж один рядок коду, отже нам потрібно:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Закрити Python інтепретатор
 - Відкрити наш текстовий редактор на вибір
@@ -604,9 +608,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-Ви повернетеся назад до командного рядка.
+This will put you back into the command prompt.
 
-Раніше, ми вже обрали для себе редактор коду, в секції [редактор коду](../code_editor/README.md). А тепер ми маємо відкрити цей редактор і написати якийсь код в новому файлі:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +618,18 @@ $
 print('Hello, Django girls!')
 ```
 
-Очевидно, ви тепер є досить досвідченим Python програмістом, отже, можете написати у ваш код усе, що ви до цього часу вивчили.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-А тепер треба зберегти файл і дати йому описове ім'я. Назвімо файл **python_intro.py** і збережемо його на вашому робочому столі. Ви можете називати файл як завгодно, тільки важливо щоб назва закінчувалась на **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Це називається "підсвіткою синтаксису", і це справді корисна для програміста функція. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Це одна з вагомих причин, чому ми використовуємо редактор коду. :)
 
-По тому як файл успішно збережено, час запустити його! Використовуючи навики отримані під час освоєння розділу, що стосувався командного рядка, скористайтеся терміналом, щоб **змінити директорію** на робочий стіл.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Для Mac, команда буде виглядати так:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-Якщо ви застрягли, просто попросіть допомогти.
+If you get stuck, just ask for help.
 
-Використовуйте Python, щоб виконати код у файлі, таким чином:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +690,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Гаразд! Ви щойно запустили вашу першу Python програму, яка була збережена у файлі. Чудові відчуття?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Тепер ви можете переходити до важливого інструменту у програмуванні:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Замініть код вашого файлу **python_intro.py** на наступне:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -704,7 +708,7 @@ if 3 > 2:
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -712,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python очікує від нас подальших інструкцій, які повинні бути виконані, якщо умова `3 > 2` виявляється істинною (тобто `True`). Спробуємо змусити Python надрукувати “It works!”. Змініть код у файлі **python_intro.py** на наступне:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Зауважили яким чином ми зробили відступ в 4 пробіли для наступного рядка коду? Це необхідно робити для того, щоб Python знав, який шматок коду запускати, якщо результати умови істинні. Можна зробити відступ і в один пробіл, але майже усі Python програмісти роблять відступ у 4 пробіли, щоб було акуратніше. Один `tab` також рахується як 4 пробіли.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-Збережіть і запустіть знову:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,7 +740,7 @@ Note: Remember that on Windows, 'python3' is not recognized as a command. From n
 
 ### А що, коли умова не істинна?
 
-У попередніх прикладах, код виконувався лише коли умови були істинними - True. Однак, Python також має умови `elif` та `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Коли запустимо це, буде виведено:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -769,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-і в результаті:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -777,9 +781,9 @@ else:
     Hey Sonja!
     
 
-Бачите що тут відбуваеться? `elif` вказує додаткові умови для перевірки, якщо результат попередніх невдалий.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Ви можете додати стільки виразів `elif`, скільки вам до вподоби, одразу після виразу `if`. Наприклад:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python послідовно виконує всі перевірки та друкує:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -834,7 +838,7 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-Час для останньої частини цього параграфу!
+Time for the last part of this chapter!
 
 ## Ваші власні функції!
 
@@ -842,7 +846,7 @@ In the last few exercises you learned about:
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Функція - це набір інструкцій, які Python повинен виконати. Кожна функція в Python починається із ключового слова `def`, отримує ім'я і може містити певні параметри. Let's give it a go. Перепишемо код в **python_intro.py** наступним чином:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,11 +858,11 @@ def hi():
 hi()
 ```
 
-Окей, наша перша функція готова!
+Okay, our first function is ready!
 
-Ви можете запитати для чого ми написали ім'я функції наприкінці файлу. Це тому, що Python зчитує файл і виконує його згори донизу. Отже, для того, щоб скористатися нашою функцією, ми повинні написати її знову унизу.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-А тепер запустимо і подивимось що станеться:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -881,7 +885,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-Як бачимо, зараз ми задали для нашої функції параметр, який назвали `name`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,9 +901,9 @@ def hi(name):
 hi()
 ```
 
-Пам'ятайте: функція `print` відділена відступами від команди `if` на чотири пробіли. Це тому, що функція запускається, коли виконується умова. Давайте подивимося, як це відбувається зараз:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -908,7 +912,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Ой, помилка. На щастя, Python надає нам дуже корисне повідомлення про помилку. Воно повідомляє нас про те, що функція `hi()` (та, яку ми визначили) має один необхідний аргумент (`name`) і що ми забули передати його коли здійснювали виклик функції. Виправимо це наприкінці файлу:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +920,7 @@ hi()
 hi("Ola")
 ```
 
-І запустимо знову:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -924,7 +928,7 @@ hi("Ola")
     Hi Ola!
     
 
-А якщо ми змінимо ім'я?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,7 +936,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-Запустіть:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -947,7 +951,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
     Hi anonymous!
     
 
-Чудово, чи не так? Таким чином вам не потрібно повторюватись кожного разу, коли ви захочете змінити ім'я особи, з якою має вітатися наша функція. And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -960,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-А тепер виконаємо програму:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -968,17 +972,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-Вітаємо! Ви щойно розібралися з тим як писати функції! :)
+Congratulations! You just learned how to write functions! :)
 
 ## Цикли
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-Це вже остання частина. Усе було швидко, чи не так? :)
+This is the last part already. That was quick, right? :)
 
-Програмісти не люблять повторюватись. Програмування - це процес автоматизації всього, тому ми не хочемо вітати кожну людину по імені вручну, правильно? Тут пригодяться цикли.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Ще пам'ятаєте про списки? Давайте створимо список дівчат:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +990,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Ми б хотіли привітатися із кожною з них персонально. Щоб це зробити у нас є функція `hi`, отже, використаємо її в циклі:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +1000,7 @@ for name in girls:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Тут наведено повну версію коду у файлі:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-А коли ми зАпустимо усе це:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1027,9 +1031,9 @@ for name in girls:
     Next girl
     
 
-Як бачимо, все, що міститься всередині виразу `for` із відступом буде повторюватися для кожного елементу зі списку `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Також можна використовувати `for` для чисел, використовуючи функцію `range`:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Що виведе на екран:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,13 +1053,13 @@ for i in range(1, 6):
     5
     
 
-`range` - це функція, що створює список чисел, що йдуть одне за одним ці числа задаються вами як параметри).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Зауважте, що друге з цих двох чисел, не входить до списку, що виводиться на екран Python (тобто `range(1, 6)` рахує від 1 до 5, але не включає число 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Зміст
 
-Ось і все. **Ви дали перцю!** Це був складнуватий розділ, тому ви можете пишатися собою. Ми ж безумовно пишаємося вами, адже ви вже багато чого досягли!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
