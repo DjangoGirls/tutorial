@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-さあ、コードを書いてみましょう！
+Let's write some code!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Pythonであそぶために、コマンドライン を開きましょう。 You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-準備ができたら、次の指示に従ってやってみましょう。
+Once you're ready, follow the instructions below.
 
-Pythonコンソールを開きましょう。Windowsならpython、Mac OSやLinuxならpython3とタイプして Enterキーをおしてください.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@ Pythonコンソールを開きましょう。Windowsならpython、Mac OSやLinu
 
 ## Your first Python command!
 
-Pythonのコマンドが走ると、プロンプト記号が >>>に変わりました。 これは、今Pythonの言語を実行できますという意味です。 You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Pythonコンソールを終わる時は、exit()　とタイプするか、ショートカットCtrl + Z （Windows）、 Ctrl + D（Mac/Linux）で終了です。 >>> は現れなくなりました。
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -50,13 +52,13 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-ちょっとの間楽しんであそんでみたら、またココに戻ってきてくださいね. :)
+Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## Strings
 
-あなたのお名前を次のようにクォーテーションをつけてタイプしてください。
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +67,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Ola'
 ```
 
-はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 シングルクォーテーション (') あるいは、ダブルクォーテーション (") で囲います。 - クォーテーションの中が文字列であることを意味しています。
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-複数の文字列を結合することもできます。次のように試してみましょう。
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +78,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Hi there Ola'
 ```
 
-文字列を繰り返すためには、演算子を使って繰り返し回数を指定することもできます。
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +87,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'OlaOlaOla'
 ```
 
-アポストロフィーを文字列の中に含めたい場合は、２通りの方法があります。
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-まずは、ダブルクォーテーションを使う方法です。
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +98,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-あるいは、バックスラッシュ (\)を使う方法もあります。
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +107,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください。
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +127,24 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-どうして、文字列の後に. をつけて関数を呼び出したり ("Ola".upper()のように)、あるいは、先に関数を呼び出してかっこの中に文字列をいれているのか、と疑問に思ったかもしれません。 そうですね。時に、オブジェクトに結びついた関数というのがあります。例えば、upper()は、文字列にのみ実行される関数です。 私たちはこれをメソッド (method)と呼びます。 それとは別に、特定のオブジェクトに関連せず、異なるタイプのオブジェクトに対して実行できる関数があります。例えばlen()ですね。 len 関数の引数として"Ola"をかっこの中にいれているのです。
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### 概要
 
-文字列はだいじょうぶですね。ここまでに学んだことをまとめましょう。
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-すべてのプログラミング言語に共通する基礎になります。 もう少し難易度の高いものに挑戦してみましょう。準備はいいですか？
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Errors
 
-さて、新しいことをやってみましょう。あなたの名前の文字数を数えたように、数字の文字列は数えれるでしょうか？ len(304023)と記述して、Enterキーを押してみましょう。
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-はじめてのエラーがでました！オブジェクトタイプ"int" (integers, 数値) は文字数がありませんと言っています。では、どうすればよいでしょうか？この数字を文字列として扱えれば、文字数を数えれるはずですよね？
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +164,7 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-うまく行きました！ `str` 関数を`Len`の中に記述しました。`str()` はその中身を文字列に変換します。
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - `Str` 関数 は**文字列** に変換します
 - `int` 関数 は**文字整数** に変換します
@@ -169,9 +173,9 @@ TypeError: object of type 'int' has no len()
 
 ## Variables
 
-変数（variables）は、プログラミングの重要なコンセプトです。 後で使うためにつける単なる名札ではありません。 プログラマーは変数を使ってデータを保管したり、 コードを読みやすくして、後でそれが何だったか覚えておかなくてもいいようにします。
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-変数`name`を新しくつくってみましょう。
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +185,7 @@ TypeError: object of type 'int' has no len()
 
 We type name equals Ola.
 
-見てのとおり、プログラムは、なにも返してくれませんね。では、変数がきちんとあるか、どうやって確かめたらいいのでしょうか？ `name`とタイプして、</code>0>Enterキー</0>をおしてください。
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-関数にも使えます。
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,9 +224,9 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-もしも、間違えた変数名を使ってしまったら、どうなるでしょうか？予想できますか？やってみましょう！
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -232,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-エラーになりました！ 前回とは違うエラータイプです。**NameError**という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 もし、このエラーに出くわしたら、記述したコードにタイプミスがないか確認してください。
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-ちょっと遊んで、何ができるか試してみてくださいね！
+Play with this for a while and see what you can do!
 
 ## The print function
 
-次に挑戦してみましょう。
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +254,15 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-単に`name`とタイプした時は、Pythonインタプリタが、変数'name'の *representation*を返します。 ここでは、 M-a-r-i-aという単なる文字の集まりで、シングルクォーテーション（''）に囲われています。 しかし、 print(name)と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-これからさらに詳しくみていきますが、`print()` は、関数から出力をする時や、複数行の出力を行うときにも便利です。
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## Lists
 
-数値と文字列の他にも、すべてのオブジェクトタイプを勉強しておきましょう。 **list**というものがあります。 リストは、その名のとおり、オブジェクトの並びをもつものですね. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-まずはリストを作りましょう
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +271,7 @@ Maria
 []
 ```
 
-はい、このリストは空っぽです。使いにくいですよね。では、くじ引きの番号のリストを作りましょう。 この番号を何度も繰り返し書きたくはないから、同時に変数に代入してしまいましょう。
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +279,7 @@ Maria
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-よし、これでリストができました！このリストで何をしましょうか？では、くじ引きの番号がいくつあるか、数えてみましょう。何の関数を使えばいいか、予想できますか？すでに知っていますよね！
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +288,7 @@ Maria
 6
 ```
 
-そうです！`len()` がリストにあるオブジェクトの数を取得できます。便利ですね。では、くじ引きの番号をソートしてみましょう。
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +296,7 @@ Maria
 >>> lottery.sort()
 ```
 
-これは何も返してきません。これはリストに表示される番号を、順番に並べ替えただけです。再度出力して、確かめてみましょう。
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +305,9 @@ Maria
 [3, 12, 19, 30, 42, 59]
 ```
 
-ご覧のとおり、小さい順に並び替えられましたね。おめでとう！
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-逆順に並び替えてみたくなりましたか？やってみましょう。
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-最初の数字だけを出力したいときは、インデックス**indexes**を使って指定することができます。 インデックスは、アイテムがリストのどこにあるかを指す番号です。次のとおり試してみてください。 インデックスは、リストの先頭の要素から順に「０」、次に「１」と割り当てられています。次のとおり試してみてください。 次に挑戦してみましょう。
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,7 +338,7 @@ If you want to add something to your list, you can do this by typing this comman
 42
 ```
 
-このように、リスト名と要素のインデックスを[]に記述することで、指定した要素を取り出すことができます。
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,11 +355,11 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-お見事！
+That worked like a charm!
 
-他のインデックスも試して遊んでみてください。例えば、 6, 7, 1000, -1, -6, -1000 などをインデックスに指定するとどうなるでしょうか。コマンドを実行する前に予測してみましょう。結果はどうですか？
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-ご参考に、こちらのドキュメントにリストメソッドがすべて記されています。 https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
@@ -370,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-これで中身が空っぽのディクショナリができましたね。やったね！
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -387,7 +391,7 @@ With this command, you just created a variable named `participant` with three ke
 - キー `favorite_numbers/0> は リスト <code>[7, 42, 92]/0>。 (数字を3つ持つlist).</li>
 </ul>
 
-<p>次の構文で各キーの値を確認できます。</p>
+<p>You can check the content of individual keys with this syntax:</p>
 
 <p>{% filename %}command-line{% endfilename %}</p>
 
@@ -396,9 +400,9 @@ Ola
 `</pre> 
     See, it's similar to a list. But you don't need to remember the index – just the name.
     
-    もし存在しないキーを参照しようとすると、どうなるでしょうか？予想できますか？実際にやってみましょう！
+    What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
     
-    {% filename %}command-line{% endfilename %}
+    {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
     ```python
 >>> participant['age']
@@ -407,9 +411,9 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-またエラーです。今回は **KeyError**.というエラーが出ました。Pythonは、このディクショナリにキー'age'は存在しませんよ、と教えてくれています。
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-ディクショナリとリストはどう使い分ければよいのでしょうか？そうですね、これはゆっくり考えてみるべきポイントですね！この後の解答を読むまえに、考えてみてください。
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - 必要なのは、順序付けられた一連のアイテムですか？　リストを使いましょう。
 - キーに対応する値が必要？キーから値を参照する？　ディクショナリを使いましょう。
@@ -433,7 +437,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. 例えば、 キー`'favorite_numbers'`の要素を削除するには、次のように記述してください。
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -460,14 +464,14 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 ### 概要
 
-素晴らしいです! これで、あなたはプログラミングについて沢山のことを学びました。ここまでのところをまとめましょう。
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-次に進む準備はいいですか？
+Excited for the next part? :)
 
 ## Compare things
 
@@ -492,9 +496,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-２つの数字がイコールであるかどうかを比べる時に、イコールの記号が２つ==並んでいます。 Pythonを記述する時、イコール１つ=は、変数に値を代入するときに使います。 You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. 等しくないものを求める事もできます。 その時は例のように `!=`と記述します。
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-次の２つはどうでしょうか
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -512,7 +516,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - x <= y : x は y　以下
 - x >= y : x は y　以上
 
-すばらしい! もう少しやってみましょう。
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -525,14 +529,14 @@ False
 True
 ```
 
-条件式が複数あって複雑になっても、その答えを出してくれます。とても賢いですね。
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-"comparing apples to oranges"という英語の表現を聞いたことはありますか？文字通り訳すと「リンゴとオレンジを比較する」となり、「比較にならないものを比較する」という意味です。Pythonでも同じようなことをやってみましょう。
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -541,7 +545,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Pythonは、数値(int)　と文字列(str)の比較はできません。 **TypeError** とエラーが表示され、２つのオブジェクトタイプが比較できないことを教えてくれています。
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
@@ -554,7 +558,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-ブール型は、次のように変数に代入することもできます。
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -564,7 +568,7 @@ But for Python to understand this, you need to always write it as 'True' (first 
 True
 ```
 
-このようなこともできます。
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -574,20 +578,20 @@ True
 False
 ```
 
-ブール型を使って、練習して遊んでみましょう。次のコマンドを試してみてください。
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-おめでとうございます！ブール型を理解することは、プログラミングでとても大事です。ここまでできましたね！
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # Save it!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-ここまでインタプリタでPythonのコードをかいてきました。つまり、コードを１行づつしか書くことができませんでした。 普通のプログラムはファイルに保存され、インタプリタ あるいは コンパイラでプログラミング言語を処理して実行します。 ここまで、私たちはプログラムを１行ごとにPython インタプリタで実行してきました。 ここかっらは、１行以上のコードを実行していきましょう。次のような流れになります。
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Pythonインタプリタを終了します。
 - お好きなエディタを起動します。
@@ -603,9 +607,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-これで、コマンドプロンプトに戻りました。
+This will put you back into the command prompt.
 
-前のチャプター [code editor](../code_editor/README.md) で、エディタを紹介しました。エディタを起動して、新しいファイルにコードを書いてみましょう。
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -613,18 +617,18 @@ $
 print('Hello, Django girls!')
 ```
 
-あなたは、すでにベテランのpython開発者です。今日学んだコードを自由に書いてみてください。
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-コードを書いたら、わかりやすい名前をつけて保存しましょう。 **python_intro.py**と名前をつけて、デスクトップに保存してください。 ファイル名は何でもかまいません。ここで重要なことは、拡張子を**py**とすることです。 The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. これは「構文」と呼ばれています「ハイライトする」こと、そして、コーディングとき、それは本当に役に立つ特徴です。 The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). これが私たちがコードエディタを使う理由の１つです. :)
 
-ファイルを保存したら、実行してみましょう！コマンドラインのセクションで学んだことを思い出して、ターミナルの **ディレクトリを変更**して、デスクトップにしましょう。
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Macでは、コマンドは次のようになります。
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -667,9 +671,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-うまくできない時は、質問してください。
+If you get stuck, just ask for help.
 
-次に、ファイルのコードを実行します。
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -685,15 +689,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-できました！これで、あなたはファイルに保存されたPythonプログラムを実行できましたね。いい気分ですね。
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-では、ここからプログラミングに不可欠のツールを学んでいきましょう
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-では、**python_intro.py** ファイルのコードを次のように書き換えてください。
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -703,7 +707,7 @@ if 3 > 2:
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -711,7 +715,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-条件式 3 > 2　がTrueの時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!”　と出力してもらいましょう。 **python_intro.py **ファイルの中身を、次のとおりに書き換えてください。
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -720,9 +724,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-２行目をスペース４つでインデントしていることに気が付きましたか？ if文がTrueの時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 タブ１つも、スペース４つと同じです。
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-保存して、もう一度実行してみましょう。
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -735,7 +739,7 @@ Note: Remember that on Windows, 'python3' is not recognized as a command. From n
 
 ### What if a condition isn't True?
 
-前述の例では、if文の条件式がTrueの時だけ、コードが実行されました。Pythonは、elif や else といった記述もできます。
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -746,7 +750,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-これを実行した場合、次のように出力されます。
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -768,7 +772,7 @@ else:
     print('Hey anonymous!')
 ```
 
-それを実行すると...
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -776,9 +780,9 @@ else:
     Hey Sonja!
     
 
-`elif`を追加する事で 、上記の条件が失敗した場合に実行する余分な条件を追加する事ができます。
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-最初の条件分岐の後に好きなように多くの`elif`を追加する事ができます。例えば...
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -798,7 +802,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Pythonは上から順番に各条件をテスト、実行し、出力します。
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -833,7 +837,7 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-では、このチャプターの最後のパートに挑戦していきましょう！
+Time for the last part of this chapter!
 
 ## Your own functions!
 
@@ -841,7 +845,7 @@ In the last few exercises you learned about:
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-実行する機能をひとまとめにしたものを関数といいます。 Pythonでは、functionは`def`というキーワードからはじまり、引数を含むことができます。 Let's give it a go. **python_intro.py** の中身を書きのコードに置き換えてください。:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -853,11 +857,11 @@ def hi():
 hi()
 ```
 
-あなたの最初の関数を実行する準備ができましたね!
+Okay, our first function is ready!
 
-ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを読み、上から下へ実行していくからです。 関数を定義したあとに、もう一度その関数を書いて呼び出します。
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-では実行して、どうなるか見てみましょう:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -880,7 +884,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-このとおり、関数に`name`という引数を足します。
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -896,9 +900,9 @@ def hi(name):
 hi()
 ```
 
-上記のように、`print`関数の前に、インデントを２ついれる必要があります。` if の条件式`が真の時に、なにをすべきかという処理はインデントの後に記述します。 実行して、どのように動くか見てみましょう。
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -907,7 +911,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-おっと、エラーがでてしまいました。 Pythonがエラーメッセージを表示してくれています。 定義した関数`hi()`は、`name`という引数が必要ですが、関数を呼び出す時に引数を忘れてしまっています。 最後の行を修正しましょう。:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -915,7 +919,7 @@ hi()
 hi("Ola")
 ```
 
-実行してください。:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -923,7 +927,7 @@ hi("Ola")
     Hi Ola!
     
 
-では、名前を変えてみたらどうなりますか？
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -931,7 +935,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-再度実行してください。:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,7 +950,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
     Hi anonymous!
     
 
-すばらしいですね。 挨拶をする人の名前を毎回何度も繰り返して書く必要がなくなりました。 And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -959,7 +963,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-では、実行してみましょう。：
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -967,17 +971,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-おめでとうございます！Functionsの書き方を学びましたね。:)!
+Congratulations! You just learned how to write functions! :)
 
 ## Loops
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-さぁ、もう最後のパートですよ。あっという間ですね。 :)
+This is the last part already. That was quick, right? :)
 
-先ほどお話したとおり、プログラマーはめんどくさがりで、同じことを繰り返すことは好きではありません。プログラミングはすべてを自動的に処理したい。私たちはすべての人の名前ひとつひとつに対して挨拶をしたくないですよね？こういう時にループが便利です。
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-リストを覚えていますか？女の子の名前をリストにしてみましょう。:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -985,7 +989,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-名前を呼んで、全員にあいさつをしてみましょう。` hi `関数が使えますね。ループの中でつかいましょう。:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -995,7 +999,7 @@ for name in girls:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-ファイルに書かれるコードはこのようになります。
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1009,7 +1013,7 @@ for name in girls:
     print('Next girl')
 ```
 
-実行してみましょう。:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1026,9 +1030,9 @@ for name in girls:
     Next girl
     
 
-ご覧のとおり、girlsリストのすべての要素に対して、`for `の中にインデントして書かれたことが繰り返されています.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-for 文では、range 関数をつかって指定した回数だけ繰り返すこともできます。:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1037,7 +1041,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-これを実行すると、次のように出力されます:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1048,13 +1052,13 @@ for i in range(1, 6):
     5
     
 
-range関数は、引数に指定した開始と終了の数値から連続する数値の値を要素として持つリスト型のオブジェクトを作成します。
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。 That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## 概要
 
-以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当に素晴らしいことです！
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
