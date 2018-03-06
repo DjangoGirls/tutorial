@@ -28,7 +28,7 @@ Chceme otvoriť Python konzolu, takže napíšte `python` na Windowse alebo `pyt
 
 Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená, že odteraz by sme mali písať príkazy iba v jazyku Python. Nemusíte písať `>>>` - Python to urobí pre Vás.
 
-Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Then you won't see `>>>` any longer.
+Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
