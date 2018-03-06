@@ -42,17 +42,17 @@ Začneme s pridaním odkazu v súbore `blog/templates/blog/post_list.html`. Zati
 
 `post_detail` časť znamená, že Django bude očakávať URL v `blog/urls.py` s name=post_detail
 
-A čo s `pk=post.pk`? `pk` je skratka pre primárny kľúč, ktorý jednoznačne určuje každý záznam v databáze. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+A čo s `pk=post.pk`? `pk` je skratka pre primárny kľúč, ktorý jednoznačne určuje každý záznam v databáze. Keďže sme neurčili primárny kľúč v našom `Post` modely, Django ho vytvorí namiesto nás (štandardne je to číslo ktoré sa zvýši o jedna pre každý záznam, t.j. 1, 2, 3) a pridá ho ako pole s názvom `pk` ku každému z našich príspevkov. K primárny kľúču môžeme pristupovať napísaním `post.pk`, rovnako ako pristupujeme iným poliam (`titul`, `autor`, atď) v našom `Post` objekte!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Teraz keď pôjdeme na: http://127.0.0.1:8000/ uvidíme chybu (ako sa dá očakávať, keďže ešte nemáme URL alebo *view* pre `post_detail`). Bude to vyzerať takto:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Vytvor URL na detail príspevku
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Chceme, aby sa detaily nášho prvého príspevku zobrazili na tomto **URL**: http://127.0.0.1:8000/post/1/
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
