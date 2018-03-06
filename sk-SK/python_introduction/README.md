@@ -4,17 +4,17 @@
 
 > Časť tejto kapitoly je založená na tutoriáli Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Poďme napísať nejaký kód!
 
 ## Python prompt
 
 > Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) videu.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Aby sme mohli začať s Pythonom, musíte otvoriť *príkazový riadok* (angl. command line) na svojom počítači. Už by ste mali vedieť ako sa to robí -- naučili ste sa to v [ Úvode do príkazového riadku](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Ak ste hotoví, pokračujte s inštrukciami nižšie.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Chceme otvoriť Python konzolu, takže napíšte `python` na Windowse alebo `python3` na Mac OS alebo Linux a stlačte `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## Váš prvý príkaz v Pythone!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená, že odteraz by sme mali písať príkazy iba v jazyku Python. Nemusíte písať `>>>` - Python to urobí pre Vás.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
