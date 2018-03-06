@@ -54,9 +54,9 @@ Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
 
 Chceme, aby sa detaily nášho prvého príspevku zobrazili na tomto **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Pridaj riadok `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` do súboru `blog/urls.py`. Súbor by mal vyzerať takto:
 
-{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -68,49 +68,49 @@ urlpatterns = [
 ]
 ```
 
-This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
+Táto časť `^post/(?P<pk>\d+)/$` vyzerá desivo, ale bez obáv - vysvetlíme si:
 
 - začína to opäť s `^` - "začiatok".
 - `post/` len znamená, že na začiatku, URL by mala obsahovať slovo **post** a **/**. Zatiaľ všetko v poriadku.
-- `(?P<pk>\d+)` - táto časť je zložitejšia. Znamená to, že Django vezme všetko, čo tu vložíš a premiestni to do premennej s názvom `pk`. (Všimni si, že to zodpovedá názvu ktorý sme dali primárnemu kľúču v `blog/templates/blog/post_list.html`!) `\d` nám hovorí, že to môže byť iba číslica, nie písmeno (takže všetko od 0 po 9). `+` znamená, že musíme mať aspoň jedno číslo. Takže niečo ako `http://127.0.0.1:8000/post//` nie je validné, ale `http://127.0.0.1:8000/post/1234567890/` je úplne v poriadku!
+- `(?P<pk>\d+)` - táto časť je zložitejšia. Znamená to, že Django vezme všetko, čo sem vložíš a premiestni to do premennej s názvom `pk`. (Všimni si, že to zodpovedá názvu ktorý sme dali primárnemu kľúču v `blog/templates/blog/post_list.html`!) `\d` nám hovorí, že to môže byť iba číslica, nie písmeno (takže všetko od 0 po 9). `+` znamená, že musíme mať aspoň jedno číslo. Takže niečo ako `http://127.0.0.1:8000/post//` nie je validné, ale `http://127.0.0.1:8000/post/1234567890/` je úplne v poriadku!
 - `/` – potom potrebujeme **/** ešte raz.
 - `$` – "koniec"!
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail` a prenesie informácie z `pk` rovné `5` do toho *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+OK, pridali sme nový URL vzor `blog/urls.py`! Poďme obnoviť stránku: http://127.0.0.1:8000 / Boom! Server znova prestal bežať. Pozri sa do konzoly - ako sa aj dalo očakávať je tam ďalšia chyba!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+Pamätáš si, čo je ďalší krok? Samozrejme: pridávanie view!
 
 ## Pridaj view do detailu príspevku
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Všimni si, že musíme použiť rovnaké meno, ako to, ktoré sme špecifikovali v Url (`pk`). Vynechanie tejto premennej je nesprávne a bude mať za následok chybu!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Teraz chceme aby sme dostali jeden a len jeden príspevok blogu. Na to môžeme použiť querysets takto:
 
-{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Ale tento kód má problém. Pokiaľ tu nie je žiaden `Post` s daným `primárnym kľúčom`(`pk`) budeme mať veľmi škaredú chybu!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+To nechceme! Ale samozrejme Django prichádza s niečim, čo si s tým poradí: `get_object_or_404`. V príade, že neexistuje žiaden `Post` s daným `pk` zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Dobrá správa je, že si môžeš vytvoriť svoju vlastnú `Page not found` stránku a spraviť ju tak peknú ako len chceš. Ale to nie je momentálne príliš dôležité, takže to preskočíme.
 
-OK, time to add a *view* to our `views.py` file!
+Dobre, čas pridať *view* do nášho `views.py` súboru!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+V `blog/urls.py` sme vytvorili URL pravidlo s názvom `post_detail`, ktoré odkazuje na zobrazenie s názvom `views.post_detail`. To znamená, že Django očakáva zobrazovaciu funkciu s názvom `post_detail` v súbore `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+Mali by sme otvoriť `blog/views.py` a pridať nasledovný kód ku ostatným `from` riadkom:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -118,7 +118,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+A na konci súboru pridáme náš *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
