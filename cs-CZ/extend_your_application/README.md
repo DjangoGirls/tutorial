@@ -1,12 +1,14 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Rozšíření tvé aplikace
 
-Dokončili jsme již všechny kroky potřebné k vytvoření našeho webu: víme, jak napsat model, url, view a šablonu. Víme také, jak udělat naše webové stránky pěkné.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Čas na procvičení!
+Time to practice!
 
-První věc, kterou potřebujeme v našem blogu je pochopitelně stránka, která zobrazí jeden příspěvek, že ano?
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-Již máme `Post` model, takže nebudeme muset přidávat nic k `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Vytvoření šablony odkazu na post detail
 
@@ -28,15 +30,15 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}Chceme mít odkaz ze seznamu příspěvků na stránku detail příspěvku. Změňme `< h1 >< href ="">{{ post.title }}< /a></h1>` tak, aby odkazoval na stránku detailu příspěvku:{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Čas k vysvětlení tajemného `{% url 'post_detail' pk=post.pk %}`. Jak asi tušíš, `{% %}` tato notace znamená, že používáme Django šablonovací značky. Tentokrát použijeme jednu, která pro nás vytvoří adresu URL!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
@@ -48,13 +50,13 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ## Vytváříme adresu URL na detail příspěvku
 
-Pojďme vytvořit adresu URL v `urls.py` pro náš `post_detail` *view*!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-Chceme, aby se detail našeho prvního příspěvku zobrazil na této **URL**: http://127.0.0.1:8000/post/1 /
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Pojďme vytvořit adresu URL v souboru `blog/urls.py` odkazující Django na *view* s názvem `post_detail`, který bude zobrazovat celý příspěvek blogu. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Tento soubor by měl vypadat takto:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -74,21 +76,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-Znamená to, že pokud zadáte `http://127.0.0.1:8000/post/5/` do prohlížeče, Django pochopí, že hledáte *view* s názvem `post_detail` a přenese informaci, že `pk` se rovná `5` do *view*.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-Pamatuješ si, jaký je další krok? Jistě: Přidat view!
+Do you remember what the next step is? Of course: adding a view!
 
 ## Přidání view pro detail příspěvku
 
-This time our *view* is given an extra parameter, `pk`. Náš *view* potřebuje tento parametr zachytit, že? Takže definujeme naši funkci jako `def post_detail (request, pk):`. Všimni si, že musíme použít přesně stejný název jako ten, který jsme určili v Url (`pk`). Vynechání této proměnné je nesprávné a bude mít za následek chybu!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
@@ -98,11 +100,11 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-A to my nechceme! Ale, samozřejmě, Django přichází s něčím, co nám to pomůže ošetřit za nás: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
-Dobrou zprávou je, že můžeš skutečně vytvořit vlastní stránku, `Page Not Found 404` a udělat jí tak krásnou, jak jen chceš. Ale to není nyní super důležité, takže to přeskočíme.
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
      return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Ano. Je na čase aktualizovat stránku: http://127.0.0.1:8000 /
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-Fungovalo to! Ale co se stane, když klepneš na odkaz v názvu příspěvku?
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Ach ne! Další chyba! Ale my už víme jak s tím naložit správně? Musíme přidat šablonu!
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Create a template for the post details
 
-Vytvoříme soubor `blog/templates/blog` s názvem `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-Celý příkaz bude vypadat takto:
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,15 +162,15 @@ Celý příkaz bude vypadat takto:
 {% endblock %}
 ```
 
-Opět rozšiřujeme `base.html`. V bloku `content` chceme zobrazit published_date příspěvku (pokud existuje), název a text. Ale měli bychom probrat, některé důležité věci, že?
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %} `{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-Hurá! Funguje to!
+Yay! It works!
 
 # Deploy time!
 
@@ -183,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Pak v [Bash konzoli PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
