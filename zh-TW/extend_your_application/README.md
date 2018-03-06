@@ -1,12 +1,14 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # 擴展你的應用程式 (Extend your application)
 
-我們已經完成了所有建立我們的網站所需的不同步驟︰我們知道如何編寫模型、url、view和範本，我們也知道如何讓我們的網站變漂亮。
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-現在來練習！
+Time to practice!
 
-很明顯，在我們的部落格我們需要的第一件事是一網頁顯示一篇文章，正確吧？
+The first thing we need in our blog is, obviously, a page to display one post, right?
 
-我們已經有 `Post` 模型，所以我們不需要增加任何東西到 `models.py`.
+We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## 建立一個範本連結到一篇文章內容 (Create a template link to a post's detail)
 
@@ -28,15 +30,15 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}我們想要一個從文章清單的文章標題到文章內容頁的連結。 讓我們修改 `<h1><a href="">{{ post.title }}</a></h1>`，如此它連結到文章的內容頁︰{% endraw %}
+{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}現在解釋這神秘的 `{% url 'post_detail' pk=post.pk %}`。 正如你可能猜想的，`{% %}` 符號表示我們正在使用 Django 範本標籤。 這次我們將使用一個能為我們建立 URL的！{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
@@ -48,13 +50,13 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ## 建立一個文章內容頁 URL (Create a URL to a post's detail)
 
-讓我們在 `urls.py` 為我們的 `post_detail` *view* 建立一個 URL!
+Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-我們希望顯示我們第一篇文章的內容在這個 **URL**：http://127.0.0.1:8000/post/1/
+We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-讓我們在 `blog/urls.py` 檔中增加一個 URL 來指示 Django 到名稱為 `post_detail` 的 *view* ，它將顯示整篇部落格文章。 Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. 檔案應該像這樣︰
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -74,21 +76,21 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-這表是如果你輸入 `http://127.0.0.1:8000/post/5/` 到你的瀏覽器，Django 將會理解你正在尋找一個叫做 `post_detail` 的 *view*，傳遞 `pk` 等於 `5` 的資訊到那個 *view*.
+That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-你記得下一步是什麼嗎？當然︰增加一個 view！
+Do you remember what the next step is? Of course: adding a view!
 
 ## 增加一個文章的內容 view
 
-This time our *view* is given an extra parameter, `pk`. 我們的 *view* 需要接住它，對吧？ 所以，我們將定義我們的函數為 `def post_detail(request, pk):`。 注意，我們需要使用我們在urls (`pk`) 中指定的名稱。 忽略這個變數是不正確，而且將會導致錯誤！
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
@@ -98,11 +100,11 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-我們不想要這樣！ 但是，當然，Django 會為我們處理這問題︰`get_object_or_404`。 In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
-好消息是你實際上可以建立你自己的 `Page not found` 網頁，並使它如你期望的友善；但現在這不是超級重要的，所以我們將跳過它。
+The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
 
@@ -126,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-是的。是時間來更新網頁︰http://127.0.0.1:8000/
+Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-成功了！但當你點選部落格文章標題的連結時，發生了什麼？
+It worked! But what happens when you click a link in blog post title?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-哦不！另一個錯誤！但我們已經知道如何處理它，對吧？我們需要增加一個範本 (template)！
+Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
 ## Create a template for the post details
 
-我們將在 `blog/templates/blog` 中，建立一個檔案名稱為 `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`.
 
-它將看起來像這樣：
+It will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +162,7 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-我們再一次擴展 `base.html`。 在 `content` 區段，我們想要顯示一篇文章的發佈日期（假如存在的話）、標題、和內容。 但我們應該討論一些重要的東西，對吧？
+Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
@@ -168,7 +170,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-耶！成功了！
+Yay! It works!
 
 # Deploy time!
 
@@ -183,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-然後，在 [PythonAnywhere Bash 主控台](https://www.pythonanywhere.com/consoles/)︰
+Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
