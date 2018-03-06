@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # مقدمة إلى بايثون
 
 > هذا القسم يستند على دورة تعليمية من فتيات الجزر المهووسات (https://github.com/ggcarrots/django-carrots).
 
-دعنا نكتب بعض التعليمات البرمجية!
+Let's write some code!
 
 ## موجه بايثون
 
 > للقراء في المنزل: تم تغطية هذا الجزء في فيديو [ أساسيات بايثون: عدد صحيح، سلاسل، قوائم، متغيرات وأخطاء ](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-لبدء العمل ببايثون، نحتاج إلى فتح *سطر الأوامر* على جهاز الكمبيوتر. يجب عليك ان تعرف كيف تفعل ذالك - لقد تعلمته في [مقدمة لسطر الأوامر](../intro_to_command_line/README.md).
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-عندما تكون مستعدا، اتبع الإرشادات أدناه.
+Once you're ready, follow the instructions below.
 
-نريد فتح وحدة تحكم بيثون، لذلك اكتب في `python` على ويندوز أو `python3` على نظام التشغيل ماك / لينوكس واضغط على `enter`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,11 +26,11 @@
 
 ## أمر بايثون الأول الخاص بك!
 
-بعد تشغيل الطلب في بايثون ، تغير الطلب إلى `>>>`. وهذا يعني بالنسبة لنا الآن انه يمكننا استخدام الأوامر في لغة بايثون فقط. ليس عليك الكتابة في `>>>` بايثون سيقوم بذالك.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-إذا كنت ترغب في إنهاء وحدة تحكم بايثون ، فقط اكتب `exit()` أو استخدام الاختصار `Ctrl + Z` ل Windows و `Ctrl + D` ماك/لينكس. فإنك لن ترى `>>>`أبدا.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-في الوقت الحالي، نحن لا نريد الخروج من وحدة تحكم بايثون. نريد أن نتعلم المزيد. دعونا نبدأ بكتابة بعض الرياضيات، مثل `2 + 3` و `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,26 +39,26 @@
 5
 ```
 
-لطيف! انظر كيف برز الجواب؟ بيثون يعرف الرياضيات! يمكنك محاولة الأوامر الأخرى مثل:
+Nice! See how the answer popped out? Python knows math! You could try other commands like:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-لإجراء حساب ، قل 2 إلى القوة 3، نكتب: {% filename %}command-line{% endfilename %}
+To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-استمتع لبعض الوقت مع هذا ، وعد إلى هنا 
+Have fun with this for a little while and then get back here. :)
 
-كما ترون، بايثون هي الة حاسبة عضيمة. إذا كنت تتساءل ماذا يمكنك أن تفعل…
+As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## سلسلة
 
-ماذا عن اسمك؟ اكتب الاسم الأول في علامات اقتباس مثل هذا:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +67,9 @@
 'Ola'
 ```
 
-لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. قد يكون هذا واحد(`'`)) أو الضعف (`"`)) اقتباس (لا فرق!) الإقتباس يقول لبايثون انه هناك سلسلة.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-السلاسل يمكن أن تكون مربوطة معا. جرب هذا:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +78,7 @@
 'Hi there Ola'
 ```
 
-يمكنك أيضا ضرب السلاسل مع عدد:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +87,9 @@
 'OlaOlaOla'
 ```
 
-إذا كنت بحاجة إلى وضع علامة اقتباس أحادية داخل السلسلة الخاصة بك, لديك طريقتين للقيام بذلك.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-استخدام علامات الاقتباس المزدوجة:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +98,7 @@
 "Runnin' down the hill"
 ```
 
-أو الهروب من الفاصلة بخط مائل (`` \):
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +107,7 @@
 "Runnin' down the hill"
 ```
 
-لطيف، هاه؟ لرؤية اسمك بالأحرف الكبيرة، اكتب:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,9 +116,9 @@
 'OLA'
 ```
 
-لقد استخدمت `upper` **method** للتو في السلسلة الخاصة بك! وهناك طريقة (مثل `upper()`) عبارة عن سلسلة من التعليمات التي يجب على بايثون تنفيذها على كائن معين (`"Ola"`) بمجرد استدعائه.
+You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-إذا كنت تريد أن تعرف عدد الحروف الواردة في اسمك، هناك **function** لذلك أيضا!
+If you want to know the number of letters contained in your name, there is a **function** for that too!
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +127,24 @@
 3
 ```
 
-أتساءل لماذا في بعض الأحيان أستدعي الدالات بواسطة `.` في نهاية سلسلة (مثل `"Ola".upper()`)، وفي بعض الأحيان يمكنك استدعاء دالة أولاً ووضع السلسلة في الأقواس؟ حسنا، في بعض الحالات، تنتمي المهام إلى أشياء، مثل `upper()`, ، والتي لا يمكن تنفيذها إلا على السلاسل. في هذه الحالة نسمي المهام ب **method**. مرات اخرى، المهام لا تنتمي إلى أي شيء محدد، ويمكن استخدامها على أنواع مختلفة من الكائنات، مثل `len()`. لهذا نحن نعطي `"Ola"` اعدادات الى المهمة `len`.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### مُلخّص
 
-طيب، يكفينا سلآسل ، حتى الأن لقد تعلمت:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** كتابة الأوامر (كودات) في موجه اوامر بايثون يعطينا اجابات في بايثون
 - **numbers and strings** - في بايثون تستخدم الأرقام للرياضيات والسلاسل للكائنات النصية
 - **operators** مثل `+` و `*`, تجمع بين القيم لتنتج واحدة جديدة
 - **functions** مثل `upper()` و `len()` تنفذ إجراأت على الكائنات.
 
-هذه هي الأساسيات لكل لغة برمجة تتعلمها. أنت مستعد لشيء أكثر صعوبة؟ ونحن نراهن على ذالك!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## أخطاء
 
-دعنا نجرب شيئا جديداً. يمكن أن نحصل على طول عدد بنفس الطريقة التي يمكن أن نجد بها طول اسمنا؟ اكتب في `len(304023)` واضغط `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
-حصلنا على الخطأ الأول! ويقول أن الكائنات من نوع "إنت" (الأعداد الصحيحة، أرقام كاملة) ليس لها طول. فماذا يمكننا أن نفعل الآن؟ ربما يمكننا كتابة رقمنا كسلسلة؟ سلاسل لها طول، أليس كذلك؟
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +164,7 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-لقد كان مجديًا! قمنا باستخدام الدالة `str` داخل الدالة `len`. `str ()` تحويل كل شيء إلى سلاسل.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - الدالة `str` تحول الأشياء إلى **strings</1 ></li> 
     
@@ -170,9 +174,9 @@ TypeError: object of type 'int' has no len()
     
     ## المتغيرات
     
-    مفهوم هام في البرمجة وهو المتغيرات. المتغير ليس أكثر من اسم لشيء يمكن استخدامه في وقت لاحق. يستخدم المبرمجون هذه المتغيرات لتخزين البيانات، وجعل التعليمات البرمجية الخاصة بهم أكثر قابلية للقراءة، لذالك هم ليسو بحاجة لتدكر كل شيء.
+    An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
     
-    لنفرض أننا نريد إنشاء متغير جديد يسمى `name`:
+    Let's say we want to create a new variable called `name`:
     
     {% filename %}command-line{% endfilename %}
     
@@ -180,9 +184,9 @@ TypeError: object of type 'int' has no len()
 >>> name = "Ola"
 ```
 
-اكتب اسم يساوي Ola.
+We type name equals Ola.
 
-كما لاحظت، فإن البرنامج لم يعد أي شيء كما فعل من قبل. فكيف نعرف أن المتغير موجود بالفعل؟ ما عليك سوى إدخال `name` واضغط على `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +195,7 @@ TypeError: object of type 'int' has no len()
 'Ola'
 ```
 
-يآآاي! المتغير الأول الخاص بك! :) يمكنك دائماً تغيير ما يشير إليه:
+Yippee! Your first variable! :) You can always change what it refers to:
 
 {% filename %}command-line{% endfilename %}
 
@@ -201,7 +205,7 @@ TypeError: object of type 'int' has no len()
 'Sonja'
 ```
 
-يمكنك استخدامه في وظائف ايضا:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -210,7 +214,7 @@ TypeError: object of type 'int' has no len()
 5
 ```
 
-رائع، أليس كذلك؟ بالطبع، المتغيرات يمكن أن تكون أي شيء أرقام أيضا! جرب هذا:
+Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -221,9 +225,9 @@ TypeError: object of type 'int' has no len()
 24
 ```
 
-ولكن ماذا لو استخدمنا اسم خاطئ؟ هل يمكنك تخمين ما يمكن أن يحدث؟ دعونا نحاول!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -233,13 +237,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-خطأ! كما ترون، بيثون لديه أنواع مختلفة من الأخطاء ويسمى هذا **NameError**. سيعطيك بايثون هذا الخطأ إذا حاولت استخدام متغير لم يتم تعريفه حتى الآن. إذا واجهت هذا الخطأ في وقت لاحق، تحقق من التعليمات البرمجية الخاصة بك لمعرفة إذا كنت أخطأت في أي أسماء.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-العب بهذه التعليمات لبعض الوقت، وانضر ما يمكن ان تفعله!
+Play with this for a while and see what you can do!
 
 ## وظيفة الطباعة
 
-جرب هذا:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -251,15 +255,15 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-عندما تكتب `name`, فقط، يستجيب مترجم بايثون مع*representation* المتغير 'نيم'، وهو الحرف M-a-r-i-a، المحاط بعلامات اقتباس مفردة، ''. عندما تقول `print(name)`, بايثون ستقوم ب "طباعة" محتويات المتغير إلى الشاشة، دون علامات الاقتباس، وهو أكثرإتقانا.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-وكما سنرى لاحقاً، `print()` مفيد أيضا عندما نريد طباعة الأشياء من داخل المهام، أو عندما نريد طباعة الأشياء في أسطر متعددة.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## القوائم
 
-بجانب السلاسل والأعداد الصحيحة، بايثون لديه كل الأنواع المختلفة من الكائنات. الآن نحن بصدد إدخال واحد يسمى **list**. القوائم هي بالضبط ما تعتقد: الكائنات التي هي قوائم لكائنات الأخرى. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-امضي قدما وأنشئ قائمة:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -268,7 +272,7 @@ Maria
 []
 ```
 
-نعم، هذه القائمة فارغة. ليست مفيدة جدا، أليس كذلك؟ دعونا ننشئ قائمة من أرقام اليانصيب. نحن لا نريد أن نكرر ذالك طوال الوقت، لذلك سنضعها في متغير أيضا:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -276,7 +280,7 @@ Maria
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-حسنا، لدينا قائمة! ماذا يمكننا أن نفعل حيال ذلك؟ دعونا نرى كم عدد اليانصيب هناك في القائمة. هل لديك أي فكرة عن أي وظيفة يجب عليك استخدامها لذلك؟ أنت تعرف هذا بالفعل!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -285,7 +289,7 @@ Maria
 6
 ```
 
-نعم! `len()` يمكن أن تعطيك عددا من الكائنات في قائمة. مفيد، أليس كذلك؟ ربما سنقوم بترتيبها الآن:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -293,7 +297,7 @@ Maria
 >>> lottery.sort()
 ```
 
-هذا لا يعيد أي شيء، انها مجرد تغييرات للترتيب الذي يظهر الأرقام في القائمة. دعونا نطبعه مرة أخرى ونرى ما يحدث:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -302,9 +306,9 @@ Maria
 [3, 12, 19, 30, 42, 59]
 ```
 
-كما ترون، يتم فرز الأرقام في القائمة الخاصة بك الآن من أدنى إلى أعلى القيمة. مبروك!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-ربما نريد عكس هذا الترتيب؟ دعونا نفعل ذلك!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -314,7 +318,7 @@ Maria
 [59, 42, 30, 19, 12, 3]
 ```
 
-إذا كنت ترغب في إضافة أي شيء إلى القائمة الخاصة بك، يمكنك القيام بذلك عن طريق كتابة هذا الأمر:
+If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -324,7 +328,7 @@ Maria
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-إذا كنت ترغب في إظهار الرقم الأول فقط، يمكنك القيام بذلك باستخدام **indexes**. الفهرس هو العدد الذي يقول أين يحدث عنصر في قائمة. المبرمجين يفضلون بدء العد من 0، وبالتالي فإن الكائن الأول في قائمتك هو في مؤشر 0، والكائن القادم هو في 1، وما إلى ذلك. جرب هذا:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -335,9 +339,9 @@ Maria
 42
 ```
 
-كما ترون، يمكنك الوصول إلى كائنات مختلفة في القائمة الخاصة بك باستخدام الاسم في قائمة الفهرس للكائن داخل أقواس معقوفة.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-لحذف شيء من القائمة الخاصة بك سوف تحتاج إلى استخدام **indexes** كما تعلمنا أعلاه وأسلوب `pop()`. دعونا احد الأمثلة ونعزز ما تعلمناه سابقا. سنقوم بحذف الرقم الأول من قائمتنا.
+To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,17 +356,17 @@ Maria
 [42, 30, 19, 12, 3, 199]
 ```
 
-انه يعمل كالحصان!
+That worked like a charm!
 
-للمتعة الإضافية، حاول بعض الفهارس الأخرى: 6، 7، 1000،-1 أو-6-1000. انظر إذا كان يمكنك التنبؤ بالنتيجة قبل محاولة الأمر. منطقي؟
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-يمكن أن تجد قائمة بجميع الأساليب القائمة المتوفرة في هذا الفصل من وثائق بايثون: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## القواميس
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-القاموس مماثل للقائمة، ولكن يمكنك الوصول إلى القيم عن طريق البحث عن المفتاح بدلا من الفهرس الرقمي. المفتاح يمكن أن يكون أي سلسلة أو رقم. تعريف جملة لبنآء قاموس فارغ:
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
 {% filename %}command-line{% endfilename %}
 
@@ -371,9 +375,9 @@ Maria
 {}
 ```
 
-هذا يدل على أنك قمت بإنشاء قاموس فارغ للتو. يآآاي!
+This shows that you just created an empty dictionary. Hurray!
 
-والآن، حاول كتابة الأمر التالي (محاولة استبدال المعلومات الخاصة بك، ايضا):
+Now, try writing the following command (try substituting your own information, too):
 
 {% filename %}command-line{% endfilename %}
 
@@ -381,13 +385,13 @@ Maria
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-مع هذا الأمر، الذي أنشأته للتو متغير يسمى `participant` مع ثثلاثة أزواج القيمة الرئيسية:
+With this command, you just created a variable named `participant` with three key–value pairs:
 
 - المفتاح `name` يشير إلى قيمة`'Ola'`(كائن `string`)،
 - `country` يشير إلى `'Poland'` (`string` أخرى)،
 - ويشير `favorite_numbers` إلى `[7، 42، 92]` (`list` بثلاثة أرقام).
 
-يمكنك التحقق من محتوى المفاتيح الفردية مع بناء الجملة التالي:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -396,11 +400,11 @@ Maria
 Ola
 ```
 
-انظر، انها مماثلة للقائمة. ولكن لا تحتاج إلى تذكر الفهرس - فقط الاسم.
+See, it's similar to a list. But you don't need to remember the index – just the name.
 
-ماذا يحدث إذا طلبنا من بايثون قيمة مفتاح غير موجود؟ هل يمكنك التخمين؟ دعونا نحاول ونرى!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -409,14 +413,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-انضر، خطأ آخر! هذا **KeyError**. بايثون مفيد ويخبرك بأن مفتاح `'age'` غير موجود في هذا القاموس.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-متى يجب استخدام قاموس أو قائمة؟ حسنا، هذه نقطة جيدة للتفكير. فقط فكر في حل قبل النظر في الجواب في السطر التالي.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - هل تحتاج فقط إلى تسلسل أمر من العناصر؟ انتقل إلى القائمة.
 - هل تحتاج إلى ربط القيم مع مفاتيح، حتى تتمكن من البحث عنها بكفاءة (عن طريق مفتاح) في وقت لاحق؟ إستخدم المعجم.
 
-القواميس، مثل القوائم، و *mutable*، بمعنى أنه يمكن تغييرها بعد إنشائها. يمكنك إضافة أزواج مفتاح – القيمة الجديدة إلى قاموس بعد إنشائه، هكذا:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -424,7 +428,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-مثل القوائم، باستخدام طريقة `len()` على القواميس ترجع عدد أزواج القيمة الرئيسية في القاموس. إمضي قدما واكتب هذا الأمر:
+Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -433,9 +437,9 @@ KeyError: 'age'
 4
 ```
 
-آمل أن يكون هذا منطقيا حتى الآن. :) هل انت على استعداد لمتعة أكثر مع القواميس؟ قراءة لبعض الأشياء المدهشة.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-يمكنك استخدام الأسلوب `pop()` لحدف عنصر من القاموس. لنفترض أنك تريد حذف المدخل المقابل للمفتاح `'favorite_numbers'`, ، اكتب فقط الأمر التالي:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -446,9 +450,9 @@ KeyError: 'age'
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-كما ترون من المخرج، تم حذف زوج مفتاح القيمة المقابلة لمفتاح 'favorite_numbers'.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-فضلا عن ذلك، يمكنك أيضا تغيير قيمة مرتبطة بمفتاح تم إنشاؤه مسبقاً في القاموس. اكتب هذا الأمر:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -458,24 +462,24 @@ KeyError: 'age'
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-كما ترون، تم تغيير قيمة المفتاح `'country'` من `'Poland'` إلى `'Germany'`. :) مثير؟ مرحى! لقد تعلمت للتو شيء آخر مدهش.
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
 ### الملخص
 
-مدهش! أنت تعرف الكثير عن البرمجة الآن. لقد تعلمت في هذا الجزء الأخير حول:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **أخطاء** – يمكنك الآن معرفة كيفية قراءة وفهم الأخطاء التي تظهر إذا كان بايثون لم يفهم امر اعطيته له
 - **المتغيرات** –أسماء الكائنات التي تسمح لك بتكويد أكثر سهولة وجعل التعليمات البرمجية الخاصة بك أكثر قابلية للقراءة
 - **قوائم** – قوائم الكائنات المخزنة في ترتيب معين
 - **قواميس** – الكائنات المخزنة كقيمة مفتاح-أزواج
 
-متحمس للجزء القادم؟ :)
+Excited for the next part? :)
 
 ## مقارنة الأشياء
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-جزء كبير من البرمجة ينطوي على مقارنة الأشياء. ما هو أسهل شيء للمقارنة؟ أرقام، بالطبع. دعونا نرى كيف يعمل:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -492,11 +496,11 @@ True
 True
 ```
 
-أعطينا بايثون بعض الأرقام للمقارنة. كما ترون،بايثون لا يمكنها مقارنة الأرقام فقط، ولكن يمكنها أيضا مقارنة نتائج الأسلوب. لطيف، هاه؟
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-هل تتساءل لماذا وضعنا اثنين من العلامات المتساوية `==` بجانب بعضها البعض للمقارنة إذا كانت الأرقام متساوية؟ ونحن نستخدم `=` واحد لتعيين القيم للمتغيرات. دائماً، تحتاج **دائماً** إلى وضع اثنين من--= = ``--إذا كنت ترغب في معرفة ما إذا كانت الأمور مساوية لبعضها البعض. يمكننا أن نقول أيضا أن الأمور غير متساوية مع بعضها البعض. لذالك نستخدم هذه الرموز `!=` كما هو مبين في المثال أعلاه.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-أعطي بايثون مهمتان اخرتان:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -507,14 +511,14 @@ True
 False
 ```
 
-لقد شهدنا `>` و `<`، ولكن ما فعله `> =` و `< =` يعني؟ اقرأهم بهذه الطريقة:
+We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 - `x_>` y يعني: x أكبر من y
 - `x_<` y يعني: x أقل من y
 - x `<=` y يعني: x أقل من أو يساوي y
 - x `> =` يعني y: x أكبر من أو يساوي y
 
-رائع! تريد القيام بذالك مرة اخرى؟ جرب هذا:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -527,14 +531,14 @@ False
 True
 ```
 
-يمكنك أن تعطي بايثون العديد من الأرقام للمقارنة كما تريد، وسوف تعطيك الجواب! ذكية جدا، أليس كذلك؟
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **و**-إذا قمت باستخدام عامل التشغيل `and`، كل المقارنات يجب أن تكون صحيحة في النظام لكي يكون الأمر كله صحيح
 - **أو** – إذا كنت تستخدم عامل التشغيل `or`، واحد فقط من المقارنات يجب أن يكون صحيحاً في النظام لكي يكون الأمر كله صحيح
 
-هل سمعت عبارة "مقارنة التفاح بالبرتقال"؟ دعونا نحاول ما يعادل بايثون:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -543,20 +547,20 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-هنا ترى أنه كما هو الحال في التعبير، بايثون غير قادرة على مقارنة عدد(`int`) وسلسلة (`str`). بدلاً من ذلك، فإنه يظهر **TypeError** ويقول لنا لا يمكن مقارنة هذين النوعين معا.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
-وبالمناسبة، لقد تعلمت للتو نوع جديد من الكائنات في بايثون. تسمى **Boolean**.
+Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-هناك اثنين فقط من كائنات Boolean :
+There are only two Boolean objects:
 
 - صحيح
 - خطأ
 
-لتفهم بايثون ذالك ، تحتاج الى كتابتها دائما ك "صحيح" (الحرف الأول كبير، مع بقية الحروف صغيرة). **true, TRUE,، وtRUE لن تنجح – الوحيدة التي ستنجح هي True.** (نفس الأمر ينطبق على 'False' كذلك، بطبيعة الحال.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-يمكن أن تكون Booleans متغيرات، أيضا! انظر هنا:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -566,7 +570,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 True
 ```
 
-يمكنك أيضا القيام بذلك بهذه الطريقة:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -576,27 +580,27 @@ True
 False
 ```
 
-تدرب واستمتع مع Booleans قبل محاولة تشغيل الأوامر التالية:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-مبروك! Booleans واحدة من أروع ملامح البرمجة، وانت تعلمت للتو كيفية استخدامها!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # احفظه!
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-حتى الآن كنا نكتب كل ما لدينا من تعليمات بايثون في المترجم، مما يحدنا من إدخال سطر واحد من التعليمات البرمجية في وقت واحد. يتم حفظ البرامج العادية في الملفات ويتم تنفيذها من قبل لغتنا البرمجية **interpreter** أو **compiler**. حتى الآن كنا نقوم بتشغيل برامجنا سطر واحد في كل مرة في بايثون **interpreter**. سنحتاج إلى أكثر من سطر واحد من التعليمات البرمجية للمهام القليلة التالية، لذلك سنحتاج بسرعة إلى:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - قم بإنهاء مترجم بايثون
 - فتح محرر التعليمات البرمجية لدينا الاختيار
 - حفظ بعض التعليمات البرمجية في ملف بايثون جديد
 - تشغيله!
 
-للخروج من مترجم بايثون كنا نستعمل، ببساطة اكتب دالة `exit()`
+To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -605,9 +609,9 @@ False
 $
 ```
 
-سيؤدي ذلك إلى إعادة توجيهك إلى موجه الأوامر.
+This will put you back into the command prompt.
 
-في وقت سابق، اخترنا محرر رموز من قسم [code editor](../code_editor/README.md). سنحتاج إلى فتح المحرر الآن وكتابة بعض الأكواد في ملف جديد:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -615,18 +619,18 @@ $
 print('Hello, Django girls!')
 ```
 
-ومن الواضح أنك مطور بايثون محنك جداً الآن، لذا لا تتردد في كتابة بعض التعليمات البرمجية التي تعلمتها اليوم.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-الآن نحن بحاجة إلى حفظ الملف وإعطائه اسماً وصفياً. دعونا نسمي الملف **python_intro.py** وحفظه إلى سطح المكتب الخاص بك. يمكننا تسمية الملف أي شيء نريده، ولكن الجزء المهم هنا هو التأكد من انتهاء الملف ب **.py**. ويقول امتداد **.py** لنظام التشغيل أن هذا **Python executable file</0 وبايثون يمكن ان يشغله.</p> 
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > يجب أن تلاحظ واحدة من أروع شيء عن المحررين الأكواد: الألوان! في وحدة تحكم بايثون، كان كل شيء بنفس اللون. الآن يجب أن ترى أن الدالة `print` هي لون مختلف عن السلسلة. وهذا ما يسمى "syntax highlighting"، وهي ميزة مفيدة حقاً عند الترميز. سيعطيك لون الأشياء تلميحات مثل السلاسل غير المغلقة أو الأخطاء المطبعية في اسم الكلمة الرئيسية (مثل `def` في إحدى الدالات، والتي سنراها أدناه). وهذا أحد الأسباب التي تجعلنا نستخدم محرر تعليمات برمجية. :)
 
-مع الملف المحفوظ، حان الوقت لتشغيله! استخدم المهارات التي كنت قد تعلمت في قسم سطر الأوامر، استخدام التيرمينال **change directories** إلى سطح المكتب.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-على نظام التشغيل ماك، سيبدو الأمر على هذا النحو:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -638,7 +642,7 @@ data-collapse=true ces-->
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-في لينكس، فإنه سيكون مثل هذا (كلمة "سطح المكتب" قد تترجم إلى اللغة المحلية الخاصة بك):
+On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
 {% filename %}command-line{% endfilename %}
 
@@ -649,7 +653,7 @@ data-collapse=true ces-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-في موجه أوامر Windows، فإنه سيكون مثل هذا:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -660,7 +664,7 @@ data-collapse=true ces-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-وفي Windows Powershell، فإنه سيكون مثل هذا:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -669,9 +673,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-إذا واجهتك مشكلة، فقط اطلب المساعدة.
+If you get stuck, just ask for help.
 
-الآن استخدم بايثون لتنفيذ التعليمات البرمجية في ملف مثل هذا:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -679,7 +683,7 @@ data-collapse=true ces-->
     Hello, Django girls!
     
 
-ملاحظة: في يندوز 'python3' غير معروف كأمر. بدلاً من ذلك، استخدم 'python' لتنفيذ الملف:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -687,15 +691,15 @@ data-collapse=true ces-->
 > python python_intro.py
 ```
 
-حسنا ، لقد شغلت للتو برنامجك الأول في بايثون والذي كان محفوضا في ملف ، هذا احساس رائع؟
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-يمكنك الآن الانتقال إلى أداة أساسية في البرمجة:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-يجب تنفيذ الكثير من الأشياء في التعليمات البرمجية فقط عند استيفاء شروط معينة. وهذا هو السبب في أن بايثون لديها ما يسمى **if statements**.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-استبدال التعليمات البرمجية في ملف **python_intro.py** بهذا:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -703,9 +707,9 @@ data-collapse=true ces-->
 if 3 > 2:
 ```
 
-إذا كان لنا أن نحفض ونشغل هذا، كنا لنرى خطأ مثل هذا:
+If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -713,7 +717,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-بيثون يتوقع منا إعطاءه مزيد من التعليمات ليتم تنفيذها إذا كان الشرط `3 > 2` يتحول إلى أن يكون صحيحاً (أو `True` لهذه المسألة). دعونا نحاول جعل بايثون تطبع "بايثون تطبع!". استبدال التعليمات البرمجية في ملف **python_intro.py** بهذا:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -722,9 +726,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-لاحظ كيف قمنا بفصل السطر التالي من التعليمات البرمجية ب 4 مسافات؟ نحن بحاجة إلى القيام بذلك حتى يعرف بايثون ما هي التعليمات البرمجية التي يجب عليه تشغيلها ، إذا كانت النتيجة صحيحة. يمكنك وضع مسافة واحدة لكن اغلب مبرمجي بايثون يستخدمون 4 مسافات ، لجعل الأمور اكثر اناقة. علامة تبويب `واحدة` ستعتبر أيضا 4 مسافات.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-احفضها وشغلها مرة اخرى:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -733,11 +737,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-ملاحظة: تذكر أن 'python3' في Windows، لا يعتبر كأمر. من الآن فصاعدا، غير 'python3' ب 'python' لتشغيل الملف.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### ماذا إذا كان الشرط غير صحيح؟
 
-في الأمثلة السابقة، تم تنفيذ التعليمات البرمجية فقط عندما كانت الظروف حقيقية. ولكن بايثون تحتوى ايضا على `elif` و `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -748,7 +752,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-عند تشغيل هذا سيتم طباعته:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -756,7 +760,7 @@ else:
     5 is indeed greater than 2
     
 
-إذا كان عدد 2 أكبر من 5، فسيتم تنفيذ الأمر الثاني. دعونا نرى كيف يعمل `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -770,7 +774,7 @@ else:
     print('Hey anonymous!')
 ```
 
-وتنفذ:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -778,9 +782,9 @@ else:
     Hey Sonja!
     
 
-اترى ما حدث هناك؟ `elif` يسمح لك بإضافة الشروط الإضافية التي يتم تشغيلها في حالة فشل الشروط السابقة.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-يمكنك إضافة العديد من بيانات `elif` كما تريد بعد العبارة الأولى `if` الخاص بك. على سبيل المثال:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -800,7 +804,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-بايثون يمر من خلال كل اختبار في تسلسل ويطبع:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -810,9 +814,9 @@ else:
 
 ## التعليقات
 
-التعليقات هي سطور تبدأ ب `#`. يمكنك كتابة ما تريد بعد `#` وسيتجاهل بايثون ذلك. يمكن للتعليقات ان تجعل تعليماتك البرمجية سهلة ليفهمها الأخرين.
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-دعونا نرى كيف يبدو ذالك:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -823,11 +827,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-لا تحتاج إلى كتابة تعليق لكل سطر من التعليمات البرمجية، ولكنها مفيدة لشرح سبب قيام الشفرة بعمل شيء ما، أو تقديم ملخص عندما تفعل شيئا معقدا.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### الملخص
 
-لقد تعلمت في التدريبات القليلة الماضية حول:
+In the last few exercises you learned about:
 
 - **مقارنة الأشياء** – في بايثون يمكنك مقارنة الأشياء باستخدام `>`، `> =`, `= =`، `< =`، `<` و `and` مشغلي `or`
 - **Boolean** نوع من العناصر التي لا يمكن أن تحتوي إلا على قيمتين: `True` أو `False`
@@ -835,15 +839,15 @@ if volume < 20 or volume > 80:
 - **if … elif … else** – البيانات التي تسمح لك بتنفيذ التعليمات البرمجية فقط عند استيفاء شروط معينة.
 - **التعليقات**-الأسطر التي لن تشغلها بايثون والتي تمكنك من توثيق التعليمات البرمجية الخاصة بك
 
-حان الوقت للجزء الأخير من هذا الفصل!
+Time for the last part of this chapter!
 
 ## الدالات الخاصة بك!
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-اتذكر الوضائف مثل `len()` التي يمكنك تنفيدها في بايثون؟ حسنا، الأخبار جيدة--سوف تتعلم كيفية كتابة الدالات الخاصة بك الآن!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-الدالة هي سلسلة من التعليمات التي يجب على بيثون تنفيذها. تبدأ كل وظيفة في بيثون بالكلمة الرئيسية `def`، وتعطى اسما، ويمكن أن تحتوي على بعض المعلمات. دعونا نعطيها انطلاقة. استبدال التعليمات البرمجية في ملف **python_intro.py** بهذا:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -855,11 +859,11 @@ def hi():
 hi()
 ```
 
-حسنا، الدالة الأولى جاهزة!
+Okay, our first function is ready!
 
-قد تتساءل لماذا نحن قد كتبنا اسم الدالة في الجزء السفلي من الملف. هذا لأن بايثون يقرأ الملف وينفذه من أعلى إلى أسفل. لذالك لكي نستخدم وضيفتنا ، يجب ان نعيد كتابته في الجزء السفلي.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-لنختبر و نرى ماذا يحدث:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -868,13 +872,13 @@ hi()
     How are you؟
     
 
-ملاحظة: إذا كان لا يعمل، لا داعي للذعر! المخارج سوف تساعدك على معرفة السبب:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - إذا حصلت على `NameError`، فهذا يعني أنك كتبت شيئا خاطئا، لذا يجب عليك التحقق من أنك استخدمت نفس الاسم عند إنشاء الدالة باستخدام `def hi():` وعند الاتصال به `hi()`.
 - إذا حصلت على `IndentationError`، تحقق من أن كلا من خطوط <`print` لها نفس المسافة البيضاء في بداية السطر: بايثون يريد أن تكون كل شفرة داخل الدالة محاذية بدقة.
 - إذا لم يكن هناك أي إخراج على الإطلاق، تحقق من أن آخر `hi()` *isn't* مسنن - إذا كان كذلك، فسيصبح هذا السطر جزءا من الوظيفة أيضا، ولن يتم تشغيله ابدا.
 
-دعونا نبني أول وظيفة لدينا مع المعلمات. سنستخدم المثال السابق - الدالة التي تقول "مرحبا" للشخص الذي يديرها - مع اسم:
+Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -882,7 +886,7 @@ hi()
 def hi(name):
 ```
 
-كما ترون، أعطينا الآن وظيفتنا معلمة قمنا بتسميتها `name`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -898,9 +902,9 @@ def hi(name):
 hi()
 ```
 
-تذكر: يتم وضع الدالة `print` على مسافة فاصلة ضمن المسافات `if`. وذلك لأن الدالة تعمل عندما يتم استيفاء الشرط. دعونا نرى كيف تعمل الآن:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -909,7 +913,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-عفوا، خطأ. لحسن الحظ، بايثون يعطينا رسالة إعلام خطأ مفيدة جداً. يخبرنا أن الدالة `hi()`(التي حددناها) تحتوي على وسيطة واحدة مطلوبة (تسمى `name`) ونسينا أن نمررها عند استدعاء الدالة. دعونا نصلحه في الجزء السفلي من الملف:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -917,7 +921,7 @@ hi()
 hi("Ola")
 ```
 
-وشغله مرة أخرى:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -925,7 +929,7 @@ hi("Ola")
     Hi Ola!
     
 
-وإذا قمنا بتغيير الاسم؟
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -933,7 +937,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-وتشغيله:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -941,16 +945,16 @@ hi("Sonja")
     Hi Sonja!
     
 
-والآن، ما رأيك سوف يحدث إذا قمت بكتابة اسم آخر هناك؟ (لا Ola أو Sonja). جرب وانظر إذا كنت على حق. يجب طباعة هذا:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-يبدو رائعا أليس كذالك؟ بهذه الطريقة ليس عليك تكرار نفسك في كل مرة تريد تغيير اسم الشخص الذي من المفترض أن تقوم الوضيفة بتحيته. وهذا هو بالضبط لماذا نحن بحاجة إلى وظائف--لا تريد ابدأ تكرار التعليمات البرمجية الخاصة بك!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-دعونا نفعل شيئا أكثر ذكاء - هناك أسماء أكثر من اثنين، وكتابة شرط لكل منهم سيكون صعبا، أليس كذلك؟
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -961,7 +965,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-دعونا نستدعي التعليمات البرمجية الآن:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -969,17 +973,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-مبروك ! لقد تعلمت للتو كيف تكتب الوضائف
+Congratulations! You just learned how to write functions! :)
 
 ## الحلقات
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-هذا هو الجزء الأخير . كان ذلك سريعا، أليس كذلك؟ :)
+This is the last part already. That was quick, right? :)
 
-المبرمجين لا يحبون تكرار أنفسهم. البرمجة هي جعل كل شيء يعمل أوتوماتيكيا، لذلك نحن لا نريد تحية كل شخص باسمه يدويا، أليس كذلك؟ هنا حيث تأتي الحلقات في متناول اليدين.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-لا تزال تذكر القوائم؟ دعونا ننشئ قائمة من الفتيات:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -987,7 +991,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-نحن نريد أن نحيي كل منهم باسمه. لدينا وظيفة `hi` للقيام بذلك، لذلك دعونا نستخدمها في حلقة:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -997,7 +1001,7 @@ for name in girls:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-هنا التعليمات البرمجية الكاملة التي سوف تكون في الملف:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1011,7 +1015,7 @@ for name in girls:
     print('Next girl')
 ```
 
-وعند تشغيله:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1028,9 +1032,9 @@ for name in girls:
     Next girl
     
 
-كما ترون، سيتم تكرار كل ما تضعه داخل بيان `for` مع مسافة بادئة لكل عنصر من القائمة `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-يمكنك أيضا استخدام `` بالأرقام باستخدام الدالة `range`:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1039,7 +1043,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-والتي ستطبع:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1050,16 +1054,16 @@ for i in range(1, 6):
     5
     
 
-`range` هو دالة تقوم بإنشاء قائمة أرقام متتالية واحداً تلو الآخر (هذه الأرقام هي التي تقدمها لك كمعلمات).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-لاحظ أن ثاني هذين الرقمين غير مدرجين في القائمة التي يتم إخراجها بواسطة بايثون (بمعنى `range(1, 6)` من 1 إلى 5، ولكن لا يشمل الرقم 6). وهذا لأن "range" نصف مفتوح، ونعني بذلك أنه يتضمن القيمة الأولى، ولكنها ليست الأخيرة.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## الملخص
 
-هذا كل شيء. **You totally rock!** كان هذا فصل صعب، لذلك يجب أن تشعر بالفخر من نفسك. لما وصلت اليه حتى الأن!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-لدروس بايثون الرسمية والكاملة زر https://docs.python.org/3/tutorial/. هذا سوف يعطيك دراسة أكثر شمولا وكاملة للغة. في صحتك:)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-قد ترغب في القيام بإيجاز شيء آخر - تمتد، تتجول قليلا، إراحة عينيك - قبل الذهاب إلى الفصل التالي. :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![كاب كيك](images/cupcake.png)
+![Cupcake](images/cupcake.png)
