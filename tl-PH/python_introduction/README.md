@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Introduksyon sa Python
 
 > Parte ng kabanatang ito ay nakabase sa tutorial ng Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Magsulat tayong code!
+Let's write some code!
 
 ## Prompt ng python
 
 > Para sa mga nagbabasa sa bahay: ang parteng ito ay nalakip sa [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) na video.
 
-Para magsimulang maglaro ng Python, kailangan nating buksan ang *command line* ng iyong kompyuter. Dapat alam mo na kung paano gawin ito - natutunan na natin ito sa [Intro sa Command Line](../intro_to_command_line/README.md) na kabanata.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Kapag handa ka na, sundin ang mga direksyon sa ibaba.
+Once you're ready, follow the instructions below.
 
-Gusto nating buksan ang Python na console, kaya magtype ng `python` sa Windows o `python3` sa Mac OS/Linux at pindutin ang `enter`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@ Gusto nating buksan ang Python na console, kaya magtype ng `python` sa Windows o
 
 ## Ang una mong Python na pag-uutos!
 
-Pagkatapos patakbuhin ang Python na command, ang prompt ay mabago sa `>>>`. Para sa atin, ibig nitong sabihin na sa ngayon maari lang tayong gumamit ng mga command sa Python na wika. Hindi mo na kailangang mag-type sa `>>>` - gagawin na iyan ng Python para sa iyo.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Kung gusto mong umalis sa Python na console sa kahit anung punto, magtype lang ng `exit()` para sa Windows at `Ctrl + D` para sa Mac/Linux. Kung gayon ay hindi mo na makikita pa ang `>>>`.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -37,26 +39,26 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Ayos! Nakita mo paano lumabas ang sagot? Alam ng Python ang matematika! Maaari mong subukan ang mga pag-uutos kagaya ng:
+Nice! See how the answer popped out? Python knows math! You could try other commands like:
 
 - `4 * 5`
 - `5 -1`
 - `40 / 2`
 
-Para magpagana ng exponential na mga kalkulasyon, sabihin nating 2 to the power 3, magtype tayo ng: {% filename %}command-line{% endfilename %}
+To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Magsaya muna dito ng mga ilang sandali at pagkatapos ay bumalik na dito. :)
+Have fun with this for a little while and then get back here. :)
 
-Gaya na nakikita mo, ang Python ay isang magandang calculator. Maaring nagtataka ka kung ano pa ang kayang gawin nito…
+As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## Mga String
 
-Paano na ang iyong pangalan? I type ang iyong unang pangalan sa loob ng panipi gaya nito:
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +67,9 @@ Paano na ang iyong pangalan? I type ang iyong unang pangalan sa loob ng panipi g
 'Ola'
 ```
 
-Ngayon ay nalikha mo na ang iyong kauna-unahang string! Ito ay isang pagkasunod-sunod ng mga karakter na maaring iprosesa sa pamamagitan ng kompyuter. Ang string ay dapat parang nagsimula at nagtapos sa parehong karakter. Ito ay maaring isang single (`'`') o double (`"`) na mga quote (walang kaibahan!) Ang mga quote ay magsasabi kay Python na ang laman nito ay isang string,.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Ang mga string ay maaring ikabit sa bawat isa. Subukan ito:
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +78,7 @@ Ang mga string ay maaring ikabit sa bawat isa. Subukan ito:
 'Hi there Ola'
 ```
 
-Maari ka ring mag-multiply sa mga string gamit ang mga number:
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +87,9 @@ Maari ka ring mag-multiply sa mga string gamit ang mga number:
 'OlaOlaOla'
 ```
 
-Kung kailangan mong maglagay ng kudlit sa loob ng iyong string, mayroon kang dalawang paraan para gawin ito.
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Gumamit ng double quotes:
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +98,7 @@ Gumamit ng double quotes:
 "Runnin' down the hill"
 ```
 
-o sa pag-escape sa kudlit gamit ang backslash (``):
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +107,7 @@ o sa pag-escape sa kudlit gamit ang backslash (``):
 "Runnin' down the hill"
 ```
 
-Maganda, di ba? Para makita ang iyong pangalan sa malaki ang letra, itype ang:
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,9 +116,9 @@ Maganda, di ba? Para makita ang iyong pangalan sa malaki ang letra, itype ang:
 'OLA'
 ```
 
-Kakagamit mo lang ng `upper` na **method</0> sa iyong string! Ang method (gaya ng `upper()`) ay isang sequence ng mga instruksyon na kailangang patakbuhin ni Python sa isang object (`"Ola"` pagkatapos mong tawagin ito.</p> 
+You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-Kung gusto mong malaman ang bilang ng mga letra na nilalaman ng iyong pangalan, may mga **function** para din dyan!
+If you want to know the number of letters contained in your name, there is a **function** for that too!
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +127,24 @@ Kung gusto mong malaman ang bilang ng mga letra na nilalaman ng iyong pangalan, 
 3
 ```
 
-Nagtataka ka ba kung bakit minsan tinatawag mo ang functions gamit ang `.` sa katapusan ng isang string (tulad ng `"Ola".upper()`) at minsan una mong tatawagin ang isang function at ilalagay ang string sa mga panaklong? Sa ibang mga kaso, ang mga function ay napapabilang sa mga bagay, tulad ng `upper()`, na magagawa lamang sa mga strings. Sa kasong ito, tinatawag natin ang function na isang **method**. Sa ibang oras, ang mga function ay hindi napapabilang sa kahit na ano at magagamit sa iba't ibang uri ng mga objects, tulad ng `len()`. Ito ang dahilan kung bakit kami ay nagbibigay ng `"Ola"` bilang parameter sa `len` na function.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Buod
 
-Ok, tama nang mga strings. Sa ngayon iyong natutunan ang tungkol sa:
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – ang pagta-type ng mga utos (code) patungo sa Python ay nagdudulot ng mga resulta ng mga kasagutan sa Python
 - **numbers and strings** –sa Python, ang mga numero ay ginagamit sa math at ang mga strings para sa text objects
 - **operators** – tulad ng `+` and `*`, pagsamahin ang mga value upang makagawa ng bago
 - **mga function** – tulad ng `upper()` at `len()`, ay nagsasagawa ng mga aksyon sa mga objects.
 
-Ito ang mga pangunahing kaalaman ng bawat wika ng programming na iyong matututunan. Handa ka na ba para sa mas mahirap? Sigurado kaming handa ka na!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Mga problema
 
-Sumubok tayo ng bago. Makukuha ba natin ang haba ng isang numero sa parehong paraan na makukuha natin ang haba ng ating pangalan? I-type ang `len(304023)` at pindutin ang `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Nakatanggap tayo ng una nating problema! Sinasabi nito na ang mga object na may uri na "int" (mga integer, mga buong numero) ay walang haba. So, anong magagawa natin ngayon? Siguro ay maaari nating isulat ang ating numero bilang isang string? Ang mga string ay may haba, tama?
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +164,7 @@ Nakatanggap tayo ng una nating problema! Sinasabi nito na ang mga object na may 
 6
 ```
 
-Gumana ito! Ginamit natin ang `str` na function sa loob ng `len` na function. Ang `str()` ang nagko-convert ng lahat sa mga string.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - Ang `str` na function ay nagko-convert ng mga bagay para maging **strings**
 - Ang `int` na function ay nagko-convert ng mga bagay para maging **integers**
@@ -169,9 +173,9 @@ Gumana ito! Ginamit natin ang `str` na function sa loob ng `len` na function. An
 
 ## Mga variable
 
-Isang mahalagang konsepto sa programming ang mga variable. Ang variable ay walang iba kundi isang pangalan para sa isang bagay upang ito ay iyong magamit mamaya. Ginagamit ng mga programmer ang mga variable na ito upang mag-imbak ng data, gawing nababasa ang kanilang code at upang hindi na nila kailanganing alalahanin kung ano ang mga bagay.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Sabihin natin na gusto nating gumawa ng isang bagong variable na tinatawag na `name`:
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,18 +185,18 @@ Sabihin natin na gusto nating gumawa ng isang bagong variable na tinatawag na `n
 
 We type name equals Ola.
 
-Tulad ng napansin mo, ang iyong program ay hindi naging kagaya ng dati. Kaya paano natin malalaman na ang variable ay talagang mayroon? I-enter lamang ang `name` at pindutin ang `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}commad-line{% endfilename %}
 
 ```python
 >>> name
 'Ola'
 ```
 
-Yehey! Ang iyong unang variable! :) Maaari mong baguhin kung anong tinutukoy nito:
+Yippee! Your first variable! :) You can always change what it refers to:
 
-{% filename %}commad-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -200,7 +204,7 @@ Yehey! Ang iyong unang variable! :) Maaari mong baguhin kung anong tinutukoy nit
 'Sonja'
 ```
 
-Maaari mo rin itong gamitin sa mga function:
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,7 +213,7 @@ Maaari mo rin itong gamitin sa mga function:
 5
 ```
 
-Ang galing, hindi ba? Syempre, ang mga variable ay maaaring maging kahit ano - mga numero rin! Subukan ito:
+Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,9 +224,9 @@ Ang galing, hindi ba? Syempre, ang mga variable ay maaaring maging kahit ano - m
 24
 ```
 
-Pero paano kung ginamit natin ang maling pangalan? Mahuhulaan mo ba kung ano ang mangyayari? Subukan natin!
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -232,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Isang pagkakamali! Kagaya ng nakikita mo, ang Python ay mayroong magkakaibang pagkakamali at itong isang ito ay tinatawag na isang **NameError**. Bibigyan ka ng Python ng pagkakamaling ito kung susubukan mong gumamit ng isang variable na hindi pa natutukoy. Kapag nakatagpo ka ng pagkakamaling ito sa susunod, suriin ang iyong code upang tingnan kung mayroon kang na mistype na kahit anong pangalan.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Paglaruan ito ng ilang sandali at alamin kung ano ang makakaya mong gawin!
+Play with this for a while and see what you can do!
 
 ## Ang print na function
 
-Subukan ito:
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +254,15 @@ Subukan ito:
 Maria
 ```
 
-Habang kaka-type mo lang ng `pangalan`, ang Python Interpreter ay sumasagot gamit ang string na *representasyon* ng variable na 'name', kung saan ang mga letra M-a-r-i-a, ay napalibutan ng single quotes, ". Kung sasabihin mong `print(name)`, si Python ay mag-print ng nilalaman ng mga variable sa screen, na walang mga quotes, na mas malinis.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-Gaya ng makikita natin maya-maya, ang `print()` ay nakakatulong kung gusto nating iprint ang mga bagay-bagay mula sa loob ng mga function, o kung gusto nating i-print ang napakaraming mga linya.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## Mga Lista
 
-Bukod sa mga string at mga integer, si Python ay mayroong iba't ibang tipo ng mga object. Ngayon, gusto naming ipakita sa iyo ang tinatawag nating **list**. Ang mga listahan ay eksaktong kung ano man ang sa tingin mo ang mga ito: ang mga bagay na mga listahan ng ibang mga bagay. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-Sige at gumawa ng isang listahan:
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +271,7 @@ Sige at gumawa ng isang listahan:
 []
 ```
 
-Oo, ang listahan na ito ay walang laman. Hindi kapaki-pakinabang, hindi ba? Gumawa tayo ng isang listahan ng mga numero sa lotto. Hindi natin gustong ulitin ang ating sarili sa lahat ng pagkakataon, kaya ilalagay din natin ito sa isang variable:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +279,7 @@ Oo, ang listahan na ito ay walang laman. Hindi kapaki-pakinabang, hindi ba? Guma
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Ang galing, mayroon na tayong isang listahan! Anong magagawa natin dito? Tingnan natin kung ilang mga numero sa lotto ang nasa listahan. Mayroon ka bang kahit anong ideya kung anong function ang gigimitin mo para diyan? Alam mo na ito!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +288,7 @@ Ang galing, mayroon na tayong isang listahan! Anong magagawa natin dito? Tingnan
 6
 ```
 
-Oo! Ang `len()` ay makapagbibigay sa iyo ng bilang ng mga bagay sa isang listahan. Madaling gamitin, hindi ba? Maaari na nating ayusin ito ngayon:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +296,7 @@ Oo! Ang `len()` ay makapagbibigay sa iyo ng bilang ng mga bagay sa isang listaha
 >>> lottery.sort()
 ```
 
-Hindi nito ibinabalik ang kahit na ano, binago lamang nito ang pagkakasunod-sunod ng paglabas ng mga numero sa listahan. I-print natin ulit ito at tingnan kung ano ang nangyari:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +305,9 @@ Hindi nito ibinabalik ang kahit na ano, binago lamang nito ang pagkakasunod-suno
 [3, 12, 19, 30, 42, 59]
 ```
 
-Kagaya ng nakikita mo, ang mga numero sa iyong listahan ay naka-ayos na simula sa pinaka-mababa hanggang pinaka-mataas na halaga. Congrats!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-Maaaring gusto nating baliktarin ang pagkakasunod-sunod? Gawin natin iyan!
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Kung gusto mong ipakita ang unang numero lamang, magagawa mo ito sa pamamagitan ng paggamit ng **indexes**. Ang index ay ang numero na nagsasabi kung saan sa listahan makikita ang isang bagay. Mas pinipili ng mga programmer ang magsimulang magbilang sa 0, upang ang unang bagay sa iyong listahan ay nasa index 0, ang sunod ay nasa 1, at iba pa. Subukan ito:
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,9 +338,9 @@ Kung gusto mong ipakita ang unang numero lamang, magagawa mo ito sa pamamagitan 
 42
 ```
 
-Gaya ng makikita mo, maaari kang mag-access ng iba-ibang objects sa iyong listahan sa pamamagitan ng paggamit sa pangalan ng listahan at nang index ng object na nasa loob ng square bracket.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-Para magbura mula sa iyong listahan, kailangan mong gumamit ng mga **indexes** gaya ng natutonan natin sa taas at ang `pop()` na method. Subukan natin ang isang halimbawa para madagdagan pa ang ating natutunan kanina: ibubura natin ang unang numero sa ating listahan.
+To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
@@ -351,17 +355,17 @@ Para magbura mula sa iyong listahan, kailangan mong gumamit ng mga **indexes** g
 [42, 30, 19, 12, 3, 199]
 ```
 
-Gumamo ito ng ganoon kadali lang!
+That worked like a charm!
 
-Para mas masaya, subukan ang ibang mga indexes: 6, 7, 1000, -1, -6 o -1000. Tingnan kung mahulaan mo ang resulta bago patakbuhin ang command. May kabuluhan ba ang mga resulta?
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-Makakakita ka ng lista sa lahat ng list.na mga methods sa kabanatang ito ng dokumentasyon ng Python: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Mga Diksyunaryo
 
 > Para sa mga nagbabasa sa bahay: ang parteng ito ay nakalakip sa [Basics sa Python: Mga Diksyonaryo](https://www.youtube.com/watch?v=ZX1CVvZLE6c) na video.
 
-Ang diksyonaryo ay pareha lang sa lista, pero maari mong makuha ang halaga sa pamamagitan ng paghanap gamit ang key sa halip na ang numeric na index. Ang syntax para mag-define ng diksyonaryong walang laman ay:
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
 {% filename %}command-line{% endfilename %}
 
@@ -370,9 +374,9 @@ Ang diksyonaryo ay pareha lang sa lista, pero maari mong makuha ang halaga sa pa
 {}
 ```
 
-Nagpapakita ito na kakalikha mo lang ng diksyonaryong walang laman. Hurray!
+This shows that you just created an empty dictionary. Hurray!
 
-Ngayon, subukang isulat ang sumunod na mga command (subukan ding magpalit na iyong sariling impormasyon):
+Now, try writing the following command (try substituting your own information, too):
 
 {% filename %}command-line{% endfilename %}
 
@@ -380,13 +384,13 @@ Ngayon, subukang isulat ang sumunod na mga command (subukan ding magpalit na iyo
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-Gamit ang command na ito, nakalikha ka ng variable na pinangalanang `participant` na may tatlong key-value na pares:
+With this command, you just created a variable named `participant` with three key–value pairs:
 
 - Ang key na `name` ay nagtuturo sa value na `'Ola'` (na isang `string` na object),
 - ang `country` ay nagtuturo sa `'Poland'` (isa na namang `string`),
 - at ang `favorite_numbers` nagtuturo sa `[7, 42, 92]` (isang `lista` na may tatlong numero sa loob nito).
 
-Maarii mong suriin ang mga nilalaman ng bawat indibidwal na mga keys gamit ang syntax na ito:
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,11 +399,11 @@ Maarii mong suriin ang mga nilalaman ng bawat indibidwal na mga keys gamit ang s
 Ola
 ```
 
-Kita mo, pareho lang ito sa list. Ngunit hindi mo na kailangang alahanin ang index - ang pangalan lang.
+See, it's similar to a list. But you don't need to remember the index – just the name.
 
-Ano ang mangyari kapag tatanungin natin si Python kung ano ang halaga ng isang key na hindi umiiral? Mahulaan mo ba? Subukan natin ito at tingnan!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -408,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Tingnan mo, isa na namang error! Ito ay isang **KeyError**. Si Python ay nakakatulong at nagsasabi na ang key na `'age'` ay hindi umiiral sa diksyonaryo.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-Kailan ka dapat gagamit ng diksyonaryo o lista? Isa itong magandang punto na dapat isipin. Gumawa ng solusyon sa isip mo bago tingnan ang sagot sa sunod na linya.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - Kailangan mo ba ng nakahanay na pagkakasunod ng mga aytems? Gumamit ng list.
 - Kailangan mo bang i-ugnay ang mga value sa mga key, upang mahusay mong mahanap ang mga ito (sa pamamagitan ng key) sa ibang pagkakataon? Gumamit ng diksyunaryo.
 
-Ang mga diksyunaryo, tulad ng mga listahan, ay *mutable*, ibig sabihin maari silang mabago pagkatapos silang likhain. Maaari kang magdagdag ng bagong pares ng key-value sa isang diskyunaryo pagkatapos itong malikha, katulad nito:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -423,7 +427,7 @@ Ang mga diksyunaryo, tulad ng mga listahan, ay *mutable*, ibig sabihin maari sil
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Katulad ng mga listahan, ang paggamit ng `len()` na method sa mga diksyunaryo ay nagbibigay ng numero ng pares ng key-value na nasa diksyunaryo. Magpatuloy at i-type ang command na ito:
+Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -432,9 +436,9 @@ Katulad ng mga listahan, ang paggamit ng `len()` na method sa mga diksyunaryo ay
 4
 ```
 
-Umaasa ako na ito ay may katuturan pa hanggang sa ngayon. :) Handa ka na ba para sa mas maraming saya gamit ang mga diksyunaryo? Patuloy na magbasa para sa mga kahanga-hangang mga bagay.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-Maaari mong gamitin ang `pop()` na method para burahin ang item sa diksyunaryo. Halimbawa, kung gusto mong burahin ang entry na tumutugma sa key `'favorite_numbers'`, i-type lamang ang sumusunod na command:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -445,9 +449,9 @@ Maaari mong gamitin ang `pop()` na method para burahin ang item sa diksyunaryo. 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-Gaya ng makikita mo sa output, ang key-value pair na nagtutukoy sa 'favorite_numbers' na key ay binura na.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-At ito din, maari mong baguhin ang halaga na nakaugnay sa nalikha na na key sa diksyonaryo. I-type ito:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -457,24 +461,24 @@ At ito din, maari mong baguhin ang halaga na nakaugnay sa nalikha na na key sa d
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-Gaya ng makikita mo, ang halaga ng key na `'country'` ay pinalitan ng >0>'Germany'</code> mula sa `'Poland'`. :) Nakaka-excite ba? Hurray! Natuto ka ng kahanga-hangang bagay.
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
 ### Buod
 
-Ang galing! Marami ka nang nalalaman tungkol sa programming ngayon. Sa huling parte na ito natutunan mo ang tungkol sa:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** - alam mo na paano magbasa at umintindi ng mga error na makikita kung si Python ay hindi nakaintindi sa command na binigay dito
 - **variables** - mga pangalan para sa object na makakatulong na madaling makagawa ng code at gawing madaling basahin ang iyong code
 - **lists** - mga lista ng mga object na nakahanay sa isang partikular na pagkakasunod
 - **dictionaries** - mga object na nakaimbak gamit ang key-value na mga pares
 
-Nasasabik ka na para sa sumunod na parte? :)
+Excited for the next part? :)
 
 ## Ihambing ang mga bagay
 
 > Para sa mga nababasaha sa bahay: ang parteng ito ay nakalakip sa [Basics ng Python: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) na video.
 
-Ang malaking parte ng programming ay may kinalaman sa paghambing ng mga bagay. Ano ang pinakamadaling bagay na mahambing? Numero, siyempre. Tingnan natin kung paano ito gumagana:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -491,11 +495,11 @@ True
 True
 ```
 
-Binigyan natin si Python ng ilang numero para ihambing. Gaya ng makikita mo, hindi lang numero ang maaaring ihambing ni Python, ngunit pati na rin ang mga resulta ng mga method. Maganda, di ba?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-Nagtaka ka ba kung bakit naglagay tayo ng dalawang equal na sign `==` na magkasunod para maghambing kung magkumbas ba ang mga numero? Tayo ay gagamit ng `=` para mag-assign ng mga values sa mga variable. Dapat parati, **parating** kailangan mong maglagay ng dalawa - `==` - kung gusto mong suriin ko magkatumbas ba ang bawat isa. Maari din nating sabihin na ang dalawang bagay ay hindi magkatugma. Para dito, gagamit tayo ng symbol na `!=`, gaya ng pinapakita sa halimbawa.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Bigyan si Python na dalawa pang mga gawain:
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -513,7 +517,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - ang ibig sabihin ng x `<=` y ay: si x maliit pa o katumbas ni y
 - ang ibig sabihin ng x `>=` y ay: si x ay mas malaki pa o katumbas ni y
 
-Magaling! Gusto mong gumawa pa ng isa? Subukan ito:
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,14 +530,14 @@ False
 True
 ```
 
-Maarin mong bigyan si Python ng maraming numero na gusto mong ihambing, at ito ay magbibigay sa iyo ng sagot! Matalino, di ba?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** - kung gagamit ka ng `and` na operator, ang inihambing ay dapat kailangang True para maging True ang buong command
 - **or** - kung gagamit ka ng `or` operator, isa lang sa inihambing ang dapat True para maging True ang buong command
 
-Nakakarinig ka na ba ng ekspresyon na "comparing apples to oranges"? Subukan natin ang katumbas nito sa Python:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -542,20 +546,20 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Dito makikita mo na gaya ng nasa ekspresyon, si Python ay hindi maaring maghambing ng numero (`int`) at isang string `str`). Sa halip, magpapakita ito ng **TypeError** at nagsasabi na ang magkaibang uri ay hindi maaaring ihambing.
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-May dalawang Boolean na mga objects lang:
+There are only two Boolean objects:
 
 - True
 - False
 
-Pero para maintindihan ito ni Python, kailangan mo itong isulat palagi isip 'True' (ang unang letra ay malaki ang titik, at ang iba pang mga letra ay nasa maliit na titik). **true, TRUE, and tRUE ay hindi gagana - ang True lang ang tama.** (Pareho din sa 'False', siyempre.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Ang mga Boolean ay maari ding gawing variable din! Tingnan ito:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +569,7 @@ Ang mga Boolean ay maari ding gawing variable din! Tingnan ito:
 True
 ```
 
-Maari mo ding gawin ito sa ganitong paraan:
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,27 +579,27 @@ Maari mo ding gawin ito sa ganitong paraan:
 False
 ```
 
-Magsanay at magkatuwaan sa mga Booleans sa pamamagitan ng pagpapatakbo sa mga sumunod na mga command:
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Maligayang bati! Ang boolean ay isa sa mga pinakamagandang katangian sa programming, at natutunan mo na kung paano gamitin ito!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # I-save ito!
 
 > Para sa mga nagbabasa sa bahay: ang parteng ito ay nakalakip na sa [Python Basics: Saving Files at "If" na mga statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) na video.
 
-Hanggang sa panahong ito sinulat natin lahat ng ating python na code sa interpreter, na naglimita sa atin na maglagay ng isang linyang code sa isang beses. Ang mga normal na mga programs ay naka-save sa mga file at pinapatakbo ng ating programming language na **interpreter** o **compiler**. Hanggang sa panahong ito, pinapatakbo natin ang ating mga program na paisa-isang linya sa Python na **interpreter**. Kakailanganin natin ng higit pa sa isang linya ng code para sa ating susunod na mga gagawin, kaya dapat madali natin itong gawin:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Lumabas sa Python na interpreter
 - Buksan ang iyong code editor na napili
 - Mag-save ng ilang code sa bagong python na file
 - Patakbuhin ito!
 
-Para lumabas mula sa interpreter ng Python na ginagamit natin, simpleng magtype lang ng `exit()` na function
+To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -604,9 +608,9 @@ Para lumabas mula sa interpreter ng Python na ginagamit natin, simpleng magtype 
 $
 ```
 
-Ito ay magbabalik sa iyo papunta sa command prompt.
+This will put you back into the command prompt.
 
-Kanina, pumili tayo ng code editor mula sa seksyon ng mga [code editor](../code_editor/README.md). Kailangan nating buksan ang editor ngayon at magsulat ng ilang code sa ating bagong file:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +618,18 @@ Kanina, pumili tayo ng code editor mula sa seksyon ng mga [code editor](../code_
 print('Hello, Django girls!')
 ```
 
-Maliwanag na ikaw ay isang magaling na Python developer na ngayon, kaya huwag mag-atubiling magsulat ng ilang code gamit ang mga natutunan mo ngayon.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Ngayon, kailangan nating i-save ang file at bigyan ito nang paglalarawan na pangalan. Tawagin natin ang file bilang **pythin_intro.py** at i-save ito sa iyong desktop. Maari natin itong pangalanan ng kahit na ano, ngunit ang importanteng parte lang dito ay dapat siguraduhin na ang file ay nagtatapos sa **.py**. Ang extension na **.py** ay nagsasabi sa ating operating system na ito ay isang **Python na executable file** at ang Python ay maaring magpatakbo nito.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Paalala** Dapat mapansin mo ang pinakamagandang bagay tungkol sa mga code editor: ang mga kulay! Sa Python na console, ang lahat ay may parehong kulay; ngayon dapat makita mo na ang `print` na function ay magkaiba ang kulay sa string. Ito ay tinatawag na "syntax highlighting", ay ito ay sobrang nakakatulong na feature habang gumagawa ng code. Ang mga kulay ng bagay-bagay ay magbibigay sa iyo ng mga mungkahi, gaya ng hindi nasara na mga strings o may typo sa pangalan ng keyword (tulad ng `def` sa isang function, na makikita natin sa baba). Ito ang isa sa mga rason kung bakit tayo gumagamit ng code editor. :)
 
-Kung na-save na ang file, oras na para patakbuhin ito! Gamit ang mga abilidad na natutunan natin sa command line na seksyon, gumamit ng terminal para **baguhin ang mga directory** sa desktop.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Sa Mac, ang command ay kaparehas nito:
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -637,7 +641,7 @@ Sa Mac, ang command ay kaparehas nito:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Sa Linux, maging kagaya ito nito (ang salitang "Desktop" ay maaring nakasalin sa iyong lokal na wika):
+On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
 {% filename %}command-line{% endfilename %}
 
@@ -648,7 +652,7 @@ Sa Linux, maging kagaya ito nito (ang salitang "Desktop" ay maaring nakasalin sa
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Sa Windows na Command Prompt, dapat ito ganito:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -659,7 +663,7 @@ Sa Windows na Command Prompt, dapat ito ganito:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-At sa Windows na Powershell, dapat ito kagaya nito:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +672,9 @@ At sa Windows na Powershell, dapat ito kagaya nito:
 
 <!--endsec-->
 
-Kung ikaw ay hindi nakausad, humingi lang ng tulong.
+If you get stuck, just ask for help.
 
-Ngayon, gumamit ng Python para magpatakbo ng code sa file gaya nito:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -678,7 +682,7 @@ Ngayon, gumamit ng Python para magpatakbo ng code sa file gaya nito:
     Hello, Django girls!
     
 
-Paalala: sa Windows ang 'Python3' ay hindi kinilala na isang command. Sa halip, gumamit ng 'python' para patakbuhin ang file:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +690,15 @@ Paalala: sa Windows ang 'Python3' ay hindi kinilala na isang command. Sa halip, 
 > python python_intro.py
 ```
 
-Sige! Napatakbo mo ang una mong Python na program naka-save sa file? Maganda sa pakiramdam?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Maari ka nang pumunta sa mga mahalagang kagamitan sa programming:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-Maraming mga bagay sa code ang dapat mapatakbo kung ang mga kondisyon ay naabot. Ito ang dahilan kung bakit ang Python ay may tinatawag na **if statements**.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Palitan ang code sa iyong **python_intro.py** na file nito:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -702,9 +706,9 @@ Palitan ang code sa iyong **python_intro.py** na file nito:
 if 3 > 2:
 ```
 
-Kung atin itong i-save at patakbuhin, makakakita tayo ng error gaya nito:
+If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -712,7 +716,7 @@ Kung atin itong i-save at patakbuhin, makakakita tayo ng error gaya nito:
     SyntaxError: unexpected EOF while parsing
     
 
-Umaasa si Python na magbibigay pa tayo ng karagdagan instruksyon sa kanya na papatakbuhin kung ang condition na `3 > 2` (o `True` para dito). Subukan natin na magprint si Python ng "It works!". Palitan ang code sa iyong **python_intro.py** na file nito:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Napansin mo kung paano natin iniindent ang sunod na linya ng code sa pamamagitan ng 4 na puwang? Kailangan nating gawin ito para malaman ni Python kung anong code ang papatakbuhin kung ang resulta ay true. Maari kang maglagay ng isang agwat, pero halos lahat ng mga programmer sa Python ay gumamit ng 4 para malinis itong tingnan. Ang single na `tab` ay bibilang din sa 4 na agwat.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-I-save ito at patakbuhin ito ulit:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -732,11 +736,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Paalala: Tandaan na sa Windows, ang 'python3' ay hindi kilalang command. Mula sa ngayon, palitan natin ang 'python3' ng 'python' para ma-execute ang file.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### Paano kung ang kondisyon ay hindi True?
 
-Sa huling mga halimbawa, ang code ay gumana lang kung ang kondisyon ay True. Ngunit si Python ay mayroon ding `elif` at `else` na mga statement:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Kung ito ay papatakbuhin, mag-print out ito ng:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -769,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-at pinapatakbo:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -777,9 +781,9 @@ at pinapatakbo:
     Hey Sonja!
     
 
-Kita mo kung ano ang nangyari dito? Ang `elif` ay binigyan ka ng karagdagang mga kondisyon na mapatakbo kung ang huling condition ay nakaligtaan.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Maari kang magdagdag nang maraming `elif` na mga statement kahit na ano ang gusto mo pagkatapos ng iyong pangunang `if` na statement. Halimbawa:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Si Python ay titingnan ang bawat test ayon sa pagkakasunod at magprint ng:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -809,9 +813,9 @@ Si Python ay titingnan ang bawat test ayon sa pagkakasunod at magprint ng:
 
 ## Mga Komento
 
-Ang mga komento ay mga linyang nagsisimula sa `#`. Maaring kang magsulat ng kahit na anong gusto mo pagkatapos ng `#` at ibalewala ito ni Python. Ang mga komento ay kailangan para madaling maintindihan ng ibang tao ang iyong code.
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-Tingnan natin kung paano ito:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -822,11 +826,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Hindi mo kailangang magsulat ng komento sa bawat linya ng iyong code, ngunit nakakatulong sila para magpaliwanag kung ano ang ginagawa ng iyong code, o magbigay ng buod kung ito ay gumawa ng komplikadong mga bagay.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### Buod
 
-Sa huling mga exercise natutunan mo ang tungkol sa:
+In the last few exercises you learned about:
 
 - **Paghambing ng mga bagay-bagay** - sa Python maari mong ihambing ang mga bagay-bagay gamit ang `>`, `>=`, `==`, `<=`, `<` at ang `and`, `or` na mga operators
 - **Boolean** - isang tipo ng object na maari lang magkaroon ng dalawang value: `True` o `False`
@@ -834,15 +838,15 @@ Sa huling mga exercise natutunan mo ang tungkol sa:
 - **if … elif … else** - mga statement na magbibigay sa atin ng kakayahan na magpatakbo ng code kung naabot ang iilang mga konsiyon lamang.
 - **mga comments** linya na hindi papatakbuhin ni Python na nagbibigay sa atin ng paraan na madokumento natin ang ating code
 
-Oras na para sa huling parte ng kabanatang ito!
+Time for the last part of this chapter!
 
 ## Ang iyong sariling mga function!
 
 > Para sa mga nagbabasa sa bahay: ang parteng ito ay nakalakip sa [Basics sa Python: Mga Functions](https://www.youtube.com/watch?v=5owr-6suOl0) na video.
 
-Natandaan mo ba ang mga functions gaya ng `len()` na maari mong patakbuhin sa Python? Magandang balita - matutunan mo ngayon kung paano magsulat ng sariling mong mga function!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Ang function ay isang sunod-sunod na mga instruksyon na dapat patakbuhin ni Python. Bawat function sa Python ay nagsisimula sa keyword na `def`, ay binagay na pangalan at maaring magkaroon ng ilang mga parameters. Let's give it a go. Palitan ang code sa **python_intro.py** ng sumusunod:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,11 +858,11 @@ def hi():
 hi()
 ```
 
-Sige, ang ating kauna-unahang function ay handa na!
+Okay, our first function is ready!
 
-Maaring nagtaka ka kung bagit natin isinulat ang pangalan ng function sa baba ng file. Ito ay dahil ang Python ay nagbabasa lang ng mga file at nag-execute ito mula sa taas papuntang pababa. Kaya para magamit ang function, dapat mo itong isulat ulit sa baba.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Patakbuhin natin ito ngayon at tingnan kung ano ang mangyari:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -867,13 +871,13 @@ Patakbuhin natin ito ngayon at tingnan kung ano ang mangyari:
     How are you?
     
 
-Paala: Kung ito ay hindi gumagana - huwag mag-alala! Ang output ay makakatulong sa iyo para malaman mo kung bakit:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - Kung nakakuha ka ng `NameError`, siguro ang ibig sabihin nito ay may na-type kang mali, kaya dapat suriin mo kung gumagamit ka ba ng parehong pangaan habang naglikha ng function gamit ang `def hi();` at habang tinatawag ito gamit ang `hi()`.
 - Kung nakakuha ka ng `IndentationError`, tingnan kung ang dalawang `print` na mga linya ay mayroong whitespace sa simula ng linya: gusto ni python na maganda ang pagkalinya ng mga code sa loob ng function.
 - Kung wala talagang output, tingnan kung ang huling `hi()` *ay hindi* naka-indent - kung naka-indent, ang linyang iyan ay magiging parte din ng function, at hindi ito mapatakbo kahit kailan.
 
-Gawin natin ang ating unang function na may mga parameter. Gagamitin natin ang ating huling halimbawa - isang function na nagsasabi ng 'hi' sa taong nagpapatakbo nito - na may pangalan:
+Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -881,7 +885,7 @@ Gawin natin ang ating unang function na may mga parameter. Gagamitin natin ang a
 def hi(name):
 ```
 
-Gaya ng makikita mo, binigyan natin ang ating function ng isang parameter na tinatawag na `name`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,9 +901,9 @@ def hi(name):
 hi()
 ```
 
-Tandaan: Ang `print` na function ay naka-indent ng apat na agwat sa loob ng `if` na statement. Ito ay dahil ang function ay tatakbo kung ang kondisyon ay tumugma. Tingnan natin kung paano ito gumana:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -908,7 +912,7 @@ Tandaan: Ang `print` na function ay naka-indent ng apat na agwat sa loob ng `if`
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, may problema. Buti nalang nagbibigay si Python ng sobrang nakakatulong na error na mensahe. Nagsasabi ito sa atin na ang function na `hi()` (ang nilikha natin) ay may kinakailangan na argumento (tinatawag na `name`) at nalimutan natin itong ipasa habang tinatawag natin ang function. Aayusin natin ito sa baba ng file:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +920,7 @@ Oops, may problema. Buti nalang nagbibigay si Python ng sobrang nakakatulong na 
 hi("Ola")
 ```
 
-At patakbuhin ito ulit:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -924,7 +928,7 @@ At patakbuhin ito ulit:
     Hi Ola!
     
 
-At paano kung babaguhin natin ang pangalan?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,7 +936,7 @@ At paano kung babaguhin natin ang pangalan?
 hi("Sonja")
 ```
 
-At patakbuhin ito:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -940,16 +944,16 @@ At patakbuhin ito:
     Hi Sonja!
     
 
-Ngayon, ano ang naisip mong mangyari kung magsulat tayo ng ibang pangalan dyan? (Hindi Ola o Sonja.) Subukan mo ito at tingnan kong tama ka. Dapat magprint ito ng ganito:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-Ang galing nito, di ba? Sa ganitong paraan hindi mo kailangang ulit-ulitin ang iyong sarili sa bawat oras na gusto mong baguhin ang pangalan ng tao na dapat batiin ng function. At ito talaga ang dahilan kung bakit kailangan natin ng mga function - hindi natin gusto na ulitin ang iyong code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Gagawa pa tayo ng mas matalino pa - mayroong mas higit pa sa dalawang pangalan, at ang pagsulat ng kondisyon sa bawat isa ay mahirap, di ba?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -960,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Tawagin natin ang code ngayon:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -968,17 +972,17 @@ Tawagin natin ang code ngayon:
     Hi Rachel!
     
 
-Maligayang bati! Natutunan mo na kung paano magsulat ng mga functions! :)
+Congratulations! You just learned how to write functions! :)
 
 ## Mga Loop
 
 > Para sa mga nagbabasa sa bahay: ang parteng ito ay nakalakip sa [Basics sa Python: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) na video.
 
-Ito na ang pinakahuling parte. Madaling lang, di ba? :)
+This is the last part already. That was quick, right? :)
 
-Hindi gusto ng mga programmer na ulitin ang kanilang mga sarili. Ang programming ay para ma-automate ang mga bagay-bagay, para hindi na natin babatiin ang bawat tao gamit ang kanilang pangalan nang mano-mano, di ba? Lubhang nakakatulong dito ang mga loops.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Naalala mo pa ang mga lista? Gagawa tayo ng lista ng mga babae:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +990,7 @@ Naalala mo pa ang mga lista? Gagawa tayo ng lista ng mga babae:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Gusto nating batiin silang lahat gamit ang kanilang pangalan. Tayo ay mayroong `hi` na function para gawin yan, kaya gamitin natin ito sa isang loop:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +1000,7 @@ para sa pangalan ng mga babae:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Narito ang kabuuang code na nasa loob ng file:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-At kapag pinatakbo natin ito:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1027,9 +1031,9 @@ At kapag pinatakbo natin ito:
     Sunod na babae
     
 
-Tulad ng nakikita mo, lahat ng inilagay mo sa loob ng isang `for` na pahayag na mayroong indent ay uulitin para sa bawat elemento ng listahan `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Maaari mo ring gamitin ang `for` sa mga numero gamit ang `range` na function:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1042,7 @@ para sa i sa range na (1, 6):
     print(i)
 ```
 
-Na magpi-print:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,13 +1053,13 @@ Na magpi-print:
     5
     
 
-`range` ay isang function na gumagawa ng isang listahan ng mga numero na sumusunod sa isa pagkatapos ng isa (ang mga numerong ito ay binibigay mo bilang mga parameter).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Tandaan na ang pangalawa sa mga numerong ito ay hindi kasama sa listahan na ini-output ng Python (nangangahulugan na ang `range(1, 6)` ay nagbibilang mula 1 hanggang 5, pero hindi kasama ang numerong 6). Ito ay dahil ang "range" ay kalahating nakabukas, at ibig sabihin nito ay kasama dito ang unang halaga, pero hindi ang huli.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Buod
 
-Iyan na yun.**You totally rock!** Ito ay isang nakakalitong kabanata, kaya dapat mong ipagmalaki ang iyong sarili. Ipinagmamalaki ka namin sa iyong narating!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
