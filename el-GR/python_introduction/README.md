@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Εισαγωγή στην Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Ας γράψουμε λίγο κώδικα!
+Let's write some code!
 
 ## Παράθυρο εντολών Python
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Για να αρχίσεις να παίζεις με την Python, πρέπει να ανοίξεις μια *γραμμή εντολών* στον υπολογιστή σου. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-Μόλις είσαι έτοιμη, ακολούθησε τις παρακάτω οδηγίες.
+Once you're ready, follow the instructions below.
 
-Θέλουμε να ανοίξουμε μια κονσόλα Python, έτσι πληκτρολόγησε `python` σε Windows ή `python3` σε Mac OS/Linux και πατήστε `enter`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@
 
 ## Η πρώτη σου Python εντολή!
 
-Αφού εκτέλεσες την εντολή Python, το παράθυρο εντολών άλλαξε σε `>>>`. Για εμάς αυτό σημαίνει ότι τώρα μπορούμε να χρησιμοποιούμε μόνο εντολές για τη γλώσσα Python. You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-Εάν θέλεις να τερματίσεις την κονσόλα Python σε οποιοδήποτε σημείο, απλά πληκτρολόγησε `exit()` ή `Ctrl + Z` για Windows και `Ctrl + D` για το Mac/Linux. Τότε δεν θα μπορείς να δείς το `>>>` πια.
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -50,7 +52,7 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-Διασκέδασε με αυτό για λίγο και στη συνέχεια έλα πίσω εδώ. :)
+Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
@@ -142,7 +144,7 @@ These are the basics of every programming language you learn. Ready for somethin
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -222,7 +226,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -399,7 +403,7 @@ See, it's similar to a list. But you don't need to remember the index – just t
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -533,7 +537,7 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -704,7 +708,7 @@ if 3 > 2:
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -899,7 +903,7 @@ hi()
 
 Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
