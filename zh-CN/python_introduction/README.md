@@ -1,18 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Python 简介
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-让我们现在就开始写代码 ！
+Let's write some code!
 
 ## Python 提示符
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-要玩转 Python，首先需要打开您的计算机上的 *命令行* 。 You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
-如果你准备好了，那么请按照以下说明进行操作。
+Once you're ready, follow the instructions below.
 
-在 Windows 下输入 `python` 或在 Mac OS/Linux 上输入`python3` 并敲下 `回车键`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@
 
 ## 第一条 Python 命令 ！
 
-完成运行 Python 命令后，提示符变为 `>>>`。 这就意味着，现在我们只能使用符合 Python 语法的命令。 You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-如果你想在任何时候退出 Python 控制台，只需要键入 `exit()` 或者在 Windows 下使用快捷键 `Ctrl+Z` ，在 Mac/Linux 下使用 `Ctrl+D` 快捷键。 这时候你就不会再看到 `>>>`。
+If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -50,13 +52,13 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-好好的玩一会儿，然后回到这里. :)
+Have fun with this for a little while and then get back here. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## 字符串
 
-比试试你的名字？把你的名字用引号括起来，就像这样：
+How about your name? Type your first name in quotes like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -65,9 +67,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Ola'
 ```
 
-现在你创建了第一个字符串！ 字符串是一个可以由计算机处理的字符序列。 该字符串的开始和结束位置必须用同一个字符标志。 可以由单引号（`'`） 或双引号（`"`）来 包裹（两者是没有区别的！），让 Python 知道，这中间是一个字符串。
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-字符串可以用加号连接在一起。像这样：
+Strings can be strung together. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -76,7 +78,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'Hi there Ola'
 ```
 
-你也可以将字符串与数字相乘：
+You can also multiply strings with a number:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +87,9 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 'OlaOlaOla'
 ```
 
-如果你的字符串中需要表示一个单引号，你有两种方法：
+If you need to put an apostrophe inside your string, you have two ways to do it.
 
-用双引号来包裹字符串：
+Using double quotes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +98,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-或者使用反斜杠（``）来转义单引号
+or escaping the apostrophe with a backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +107,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 "Runnin' down the hill"
 ```
 
-表现得不错，是吧？如果想把字符串变成大写，只需要输入：
+Nice, huh? To see your name in uppercase letters, simply type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +127,24 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-不知道为什么有时候你调用函数会在字符串尾部是用`.`（就像`"Ola".upper()`）而有时候你会在一开始就调用函数，然后将字符串置于括号中吗？ 好吧，在某些情况下，函数属于对象，就像 `upper()`，它只可以被应用于字符串上。 在这种情况下，我们将此函数称为**方法（method）**。 其他时候，函数不隶属于任何一个特定的对象，可以用在不同类型的对象上，例如 `len()` 。 这就是为什么我们使用`"Ola"`作为`len`函数的一个参数。
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### 摘要
 
-好的，关于字符串就学到这里。现在你已经学习到了以下这些内容：
+OK, enough of strings. So far you've learned about:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-这些都是学习每种编程语言中最基本的东西。想学点更难的东东了吗？我们敢打赌你想！
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## 错误
 
-让我们试试一些新东西，我们能够像得到名称长度一样的方式来得到一个数字的长度吗？输入 `len(304023)` 然后敲下 `回车键`：
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
-我们得到了第一个错误！它说"int"（整数）的对象类型没有长度。所以我们现在该做什么呢？或许我们能够把我们的数字写成字符串？字符串有长度，对吗？
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,7 +164,7 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-它成功了！我们将 `str` 函数插入到 `len` 函数内。`str` 将所有东西转换成字符串。
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - `str` 函数将对象转换成**字符串**
 - `int` 函数将对象转换为**整数**
@@ -169,9 +173,9 @@ TypeError: object of type 'int' has no len()
 
 ## 变量
 
-变量是编程中的一个重要概念。 变量只不过是一个待会儿你可以使用的一个东西的名称。 程序员是用这些变量去存储数据，让他们的代码变得更具可读性，所以他们不需要一直记住东西是什么。
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-假设我们想创建一个新变量，叫做 `name` ：
+Let's say we want to create a new variable called `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +185,7 @@ TypeError: object of type 'int' has no len()
 
 We type name equals Ola.
 
-正如你所注意到的，你的程序不会像以前那样返回任何东西。那么我们怎么知道这个变量确实存在？简单键入 `name` 然后按下`回车`。
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-你还可以这样使用函数：
+You can use it in functions too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,9 +224,9 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-但是如果我们使用了错误的名字？你能猜出来会发生什么吗？试试吧！
+But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -232,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-一个错误！ 正如你所见，Python有不同种类的错误，这一种称作**NameError**。 Python将会在你尝试使用未定义的变量时产生这种错误。 如果你以后再次遇到这种错误，检查你的代码，看看你是不是错误输入了任何名称。
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-玩一会儿，然后看看你能做什么！
+Play with this for a while and see what you can do!
 
 ## 打印功能
 
-试试这个：
+Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +254,15 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-当你键入 `name`，Python 解释器会打印变量'name'*表示*的字符串，单引号包裹的：'Maria'。 当你调用 `print(name)` 的时候，Python 将会“打印”内容到屏幕上，没有引号，更加整洁。
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
-我们稍后会看到的，当我们想打印一些东西，或者想打印一些多行的东西，`print()` 是一个对我们很有用的函数。
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## 列表
 
-除了字符串和整数，Python提供了各种不同类型的对象。 现在我们要介绍一个叫做**列表**的东西。 列表和你想的一样：一个容纳着其他对象的列表对象. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
-继续，创建一个列表：
+Go ahead and create a list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +271,7 @@ Maria
 []
 ```
 
-是的，这个列表是空的。并不是十分有用，对吗？让我们创建一个彩票号码的列表。我们不想总是重复我们的工作，所以我们也将它置于一个变量中：
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +279,7 @@ Maria
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-好吧，我们有了一个列表！我们能为它做什么呢？让我们看一看在列表中有多少个彩票数字。你知道什么方法什么函数你可以使用的吗？你已经知道了！
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +288,7 @@ Maria
 6
 ```
 
-是的！`len()`可以给你列表中对象的个数。很方便，对吗？也许我们可以将它排序：
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +296,7 @@ Maria
 >>> lottery.sort()
 ```
 
-这不会返回任何东西，它仅仅改变了数字出现在列表里的顺序。让我们再一次把它打印出来，看看发生了什么：
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +305,9 @@ Maria
 [3, 12, 19, 30, 42, 59]
 ```
 
-正如你所看到的，你的列表里的数字现在从最小到最大排序。祝贺！
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
-也许我们想要将顺序倒序呢？让我们开始做吧！
+Maybe we want to reverse that order? Let's do that!
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-如果你只想要显示第一个数字，你可以通过使用**索引**完成。 索引就是列表中出现一个项的位置。 程序员一般习惯从0开始计数，所以列表中的第一个对象的索引是0，下一个是1，依此类推。 试试这个：
+If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,7 +338,7 @@ If you want to add something to your list, you can do this by typing this comman
 42
 ```
 
-正如你所见，你可以通过使用列表名和置于方括号中的对象索引来访问列表中的不同元素。
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
@@ -351,11 +355,11 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-干得漂亮！
+That worked like a charm!
 
-出于额外的乐趣，试试其他的索引：6，7，1000，-1，-6或者-1000。看看你是否能预测出命令尝试的结果。这些结果有意义吗？
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
-你可以找到本章中所有关于列表的方法的Python文档：https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## 字典
 
@@ -370,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-这表明你刚创建了一个空字典。加油！
+This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -386,7 +390,7 @@ With this command, you just created a variable named `participant` with three ke
 - `country` 指向`'Poland'` (另一个 `字符串`),
 - 和`favorite_numbers` 指向`[7, 42, 92]` (一个有三个数字的 `列表` ).
 
-你可以通过下面的语法检查每个键的内容：
+You can check the content of individual keys with this syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -397,9 +401,9 @@ Ola
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-如果我们问Python一个不存在的键呢？能猜到吗？让我们试一试，看看！
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -408,9 +412,9 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-看，另一个错误！这是一个 **KeyError** 。Python 会告诉你键`'age'`并不存在于这个字典里。
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
 
-那么什么时候使用字典或者列表呢？好吧，这是一个值得思考的点。在查看下一行答案前先在脑子里面设想一个答案。
+When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
 - 你需要一个有序的元素排列吗？使用列表。
 - 你需要将键值相关联，这样你可以在后面更有效的查找他们？使用字典。
@@ -434,7 +438,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,14 +465,14 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 ### 摘要
 
-太棒了！你现在知道很多关于编程的东西了。在最后的部分你学习了：
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
-为接下来的部分感到兴奋吗？：）
+Excited for the next part? :)
 
 ## 比较事物
 
@@ -493,9 +497,9 @@ True
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
 
-你知道为什么我们在判断相等时要把两个等号 `==` 放在一起吗？ 我们使用一个等于符号 `=` 来给变量赋值。 You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. 如果我们认为两个东西是不相等的。 我们使用符号 `! =`，如上面的示例中所示。
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-给Python两个更多的任务：
+Give Python two more tasks:
 
 {% filename %}command-line{% endfilename %}
 
@@ -513,7 +517,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - x `< =` y 表示： x 小于或等于 y
 - x `>=` y 表示：x 大于或等于 y
 
-棒极了！想要做一次吗？试试这个：
+Awesome! Wanna do one more? Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,14 +530,14 @@ False
 True
 ```
 
-你可以给 Python 任意多的数字来比较，他会给你想要的答案！非常智能，对吗？
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-你听说过“驴唇不对马嘴”这种说法吗？让我们试试它的 Python 版：
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -542,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-在这里你看到就像在这表达式中，Python 是不能比较数字 （`int`） 和字符串 （`str`）。 相反，它显示一个 **TypeError**，并告诉我们两个类型不能相互比较。
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## 布尔逻辑
 
@@ -555,7 +559,7 @@ There are only two Boolean objects:
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-布尔也可以是变量！看这里：
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 
@@ -565,7 +569,7 @@ But for Python to understand this, you need to always write it as 'True' (first 
 True
 ```
 
-或者通过这种方式：
+You can also do it this way:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,20 +579,20 @@ True
 False
 ```
 
-练习有趣的布尔值，然后尝试下面的命令：
+Practice and have fun with Booleans by trying to run the following commands:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-祝贺你！布尔值是编程中最酷的功能，你刚刚学会了如何使用它们！
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # 保存它！
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-到目前为止，我们所写的所有 Python 代码都是在命令行中，这限制了我们每次只能写一行代码。 正常的程序是被保存在文件里，并通过对应程序语言的**解释器**或者**编译器**处理后执行。 目前为止，我们已经试过在 Python **解释器**中一行一行的运行我们的程序。 我们接下来的几个任务需要不止一行代码，所以我们很快就会需要：
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - 退出 Python 解释器
 - 打开我们选择的代码编辑器
@@ -604,9 +608,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-这将让你返回到命令提示符。
+This will put you back into the command prompt.
 
-早些时候，我们选择了一个代码编辑器在[代码编辑器](../code_editor/README.md)章节。我们现在需要打开一个编辑器，然后写一些代码进入新文件：
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
 {% filename %}editor{% endfilename %}
 
@@ -614,18 +618,18 @@ $
 print('Hello, Django girls!')
 ```
 
-显然，你现在是一个相当熟练的python开发者，所以随便写一些你今天学到的代码吧。
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-现在我们需要保存文件，然后给它一个描述性的名字。 让我们命名这个文件 **python_intro.py** 然后保存它到您的桌面。 我们可以随意给文件起名字，但是要确保 **.py** 在文件名结尾。 The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. 这就所谓的"语法高亮"，在编写代码时是非常有用的功能。 The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). 这是我们使用代码编辑器的原因之一. :)
 
-文件保存之后，就到了可以运行它的时候了！使用你在命令行章节学习到的技能，在终端**改变目录**到桌面。
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-在 Mac 上命令会看起来像这样：
+On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-如果你遇到麻烦了，尽管提问寻求帮助。
+If you get stuck, just ask for help.
 
-现在文件中输入这样的代码并使用 Python 执行：
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,15 +690,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-好吧！你刚刚运行了你保存在文件中的第一个 python 程序。感觉棒极了吗？
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-你可以继续去学习编程中一些重要的工具：
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-用以下代码替换 **python_intro.py** 中的内容：
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -704,7 +708,7 @@ if 3 > 2:
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -712,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-当条件 `3 > 2` 为真（或者 `True` ），Python 希望我们给它进一步的指示。 我们试着让 Python 打印 “it works!”。 更改您在 **python_intro.py** 文件中的代码变为这样：
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -721,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-注意我们已经为下一行缩进了4个空格了吗？ 这样做是为了让 Python 知道如果条件正确它将运行什么代码。 你可以使用一个空格，但是几乎所有的 Python 程序员都是用4个，使事情看上去很整洁。 单个 `tab` 也将算作 4 个空格。
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
 
-保存它，然后再次运行它：
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,7 +740,7 @@ Note: Remember that on Windows, 'python3' is not recognized as a command. From n
 
 ### 如果条件不为真呢？
 
-在之前的例子里，代码只会在条件被满足的时候被运行。但是 Python 同样有 `elif` 和 `else` 语句：
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -747,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-这段代码在运行后会打印：
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -769,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-然后运行：
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -777,9 +781,9 @@ else:
     Hey Sonja!
     
 
-看到发生什么了吗？如果前面的条件失败了，`elif` 允许你添加额外条件来判断接下来该怎么运行。
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-在 `if` 语句之后，你可以添加任意多的 `elif` 语句。例如：
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -799,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python 遍历判断每个测试的条件，并打印：
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -834,7 +838,7 @@ In the last few exercises you learned about:
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
-现在是本章的最后一个部分了！ 
+Time for the last part of this chapter!
 
 ## 你自己的函数！
 
@@ -842,7 +846,7 @@ In the last few exercises you learned about:
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-一个函数就是一些 Python 应该运行的指令集。 每个Python函数都是以关键词 `def` 开始的，我们可以给定一个名字并能指定若干个参数。 Let's give it a go. 使用下面的替换**python_intro.py**中的代码：
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -854,11 +858,11 @@ def hi():
 hi()
 ```
 
-好吧，我们的第一个函数已经准备好了！
+Okay, our first function is ready!
 
-你可以想知道为什么我们把函数的名称写在文件的底部。 这是因为Python读了文件，然后自顶向下的执行它。 所以为了使用我们的函数，我们必须要在底部重写它。
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-现在让我们运行这个，看看会发生什么：
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -881,7 +885,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-正如你所见的，我们给我们的函数一个叫`name`的参数：
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -897,9 +901,9 @@ def hi(name):
 hi()
 ```
 
-记住： `print` 函数是在 `if` 语句的缩进内的。这是因为我们要在仅满足条件时，才运行函数。让我们看看它是如何工作：
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -908,7 +912,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-哦！一个错误。 幸运的是，Python给我们一个有用的错误提示信息。 告诉我们函数 `hi()`（这是我们定义的）必须有一个参数（称之为`name`），我们调用函数的时候忘记传递它了。 让我们在文件的底部解决它：
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +920,7 @@ hi()
 hi("Ola")
 ```
 
-然后再次运行它：
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -924,7 +928,7 @@ hi("Ola")
     Hi Ola!
     
 
-那如果我们改变名字了呢？
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -932,7 +936,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-然后运行它：
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -947,7 +951,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
     Hi anonymous!
     
 
-这太棒了，对吗？ 这样我们不用在每次调用此方法跟不同的人打招呼的时候重复自己。 And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -960,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-现在让我们调用代码：
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -968,17 +972,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-祝贺你！你刚刚学习了如何写函数! :)
+Congratulations! You just learned how to write functions! :)
 
 ## 循环
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-这是最后一部分。这真快，对吗？:)
+This is the last part already. That was quick, right? :)
 
-程序员不喜欢重复劳动。编程的核心是自动化，所以我们不希望手动的一行一行去调用打招呼函数，是吧？这时候循环就能派上用场了。
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-还记得列表吗？让我们做一个女孩的列表：
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -986,7 +990,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-我们想要根据他们所有人的名字依次打招呼。我们有一个 `hi` 函数去实现这个，所以让我们在一个循环中使用它：
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,7 +1000,7 @@ for name in girls:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-这是文件中完整的代码：
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1010,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-然后当我们去运行它：
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1027,9 +1031,9 @@ for name in girls:
     Next girl
     
 
-正如你所看见的，所有你放在 `for` 中的语句都将会根据列表 `girls` 中的每个元素而重复执行.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-你同样可以使用 `for` 来遍历使用 `range` 函数生成的数字：
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1038,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-这将会打印：
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1049,13 +1053,13 @@ for i in range(1, 6):
     5
     
 
-`range` 函数产生一个列表的数字，一个挨着一个（这些数字是由您提供的参数而产生的）。
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-请注意第二个参数将不会被包括在Python输出列表中（意味着`range(1,6)`从1到5计数，但是不包括数字6）。 That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## 摘要
 
-就是这样，**你太厉害啦！** 这是一个棘手的章节，所以你应该为自己感到骄傲。我们为你取得这么多进展而感到骄傲！
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
