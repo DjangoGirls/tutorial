@@ -4,7 +4,7 @@ Zastanawiasz się czym jest szablon?
 
 Szablon to plik, którego używamy do prezentacji informacji w zwięzłej formie. Używając analogii - do pisania listów również możesz użyć szablonu. Każdy list ma inną treść i adres, ale każdy z nich ma taką samą strukturę.
 
-Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominaliśmy w rozdziale **Jak działa Internet**).
+Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominaliśmy w rozdziale **Jak działa internet**).
 
 ## Co to jest HTML?
 
@@ -21,7 +21,7 @@ Szablony są zapisywane w katalogu `blog/templates/blog`. Zacznij więc od stwor
     blog
     └───templates
         └───blog
-
+    
 
 (być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to po prostu użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
 
@@ -29,63 +29,61 @@ A teraz stwórz plik `post_list.html` (na razie niech będzie pusty) wewnątrz k
 
 Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
-> Jeżeli nadal otrzymujesz błąd `TemplateDoesNotExists`, spróbuj uruchomić serwer ponownie. Przejdź do wiersza poleceń, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
+> Jeżeli nadal otrzymujesz błąd `TemplateDoesNotExist`, spróbuj uruchomić serwer ponownie. Przejdź do wiersza poleceń, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
 
-![Rysunek 11.1][1]
-
- [1]: images/step1.png
+![Rysunek 11.1](images/step1.png)
 
 Nie ma błędu! Gratulacje :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
 
 Dodaj następującą treść w pliku z szablonem:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
-    <p>Hej!</p>
-    <p>Działa!</p>
+    <p>Hi there!</p>
+    <p>It works!</p>
 </html>
 ```
 
-I jak twoja strona wygląda teraz? Kliknij, żeby się dowiedzieć: http://127.0.0.1:8000/
+I jak twoja strona wygląda teraz? Odwiedź stronę http://127.0.0.1:8000/, żeby się dowiedzieć.
 
-![Rysunek 11.2][2]
-
- [2]: images/step3.png
+![Rysunek 11.2](images/step3.png)
 
 Zadziałało! Dobra robota :)
 
-*   Najbardziej podstawowy znacznik, `<html>`, jest zawsze na początku każdej strony internetowej, zaś `</html>` jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
-*   `<p>` jest znacznikiem akapitów; `</p>` zamyka każdy akapit
+* Najbardziej podstawowy znacznik, `<html>`, jest zawsze na początku każdej strony internetowej, zaś `</html>` jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
+* `<p>` jest znacznikiem akapitów; `</p>` zamyka każdy akapit
 
 ## Head i body
 
 Każda strona HTML jest podzielona na dwie części: **head** i **body**.
 
-*   **head** jest elementem zawierającym informacje o dokumencie, które nie są wyświetlane na ekranie.
+* **head** jest elementem zawierającym informacje o dokumencie, które nie są wyświetlane na ekranie.
 
-*   **body** zawiera wszystkie pozostałe elementy, które są częścią strony internetowej widoczną na ekranie.
+* **body** zawiera wszystkie pozostałe elementy, które są częścią strony internetowej widoczną na ekranie.
 
 Używamy znacznika `<head>`, aby poinformować przeglądarkę o konfiguracji strony oraz `<body>` do przekazania informacji o tym, co właściwie znajduje się na stronie.
 
 Przykładowo, element tytułu strony możesz umieścić wewnątrz `<head>`, o tak:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 <html>
     <head>
-        <title>Blog Oli</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Hej!</p>
-        <p>Działa!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
 
 Zapisz plik i odśwież swoją stronę.
 
-![Rysunek 11.3][3]
-
- [3]: images/step4.png
+![Rysunek 11.3](images/step4.png)
 
 Zauważyłaś, że przeglądarka zrozumiała, że "Ola's blog" jest tytułem Twojej strony? Zinterpretowała ona `<title>Ola's blog</title>` i umieściła tekst w pasku tytułu twojej przeglądarki (będzie on również używany m.in. w zakładkach).
 
@@ -99,17 +97,20 @@ Musisz przestrzegać zasad *zamykania* znaczników i *zagnieżdżania* elementó
 
 Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczników, które nam się do tego przydadzą:
 
-*   `<h1>Nagłówek</h1>` - dla najważniejszego nagłówka na Twojej stronie
-*   `<h2>Podtytuł</h2>` dla nagłówka niższego poziomu
-*   `<h3>Pod-podtytuł</h3>` ... i tak dalej, aż do `<h6>`
-*   `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
-*   `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
-*   `<br />` to przejście do nowej linii (wewnątrz br nie wstawiamy niczego)
-*   `<a href="https://djangogirls.org">link</a>` tworzy link
-*   `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
-*   `<div></div>` tworzy sekcję na stronie
+* `<h1>Tytuł</h1>` dla twojego najbardziej znaczącego nagłówka
+* `<h2>Podtytuł</h2>` dla nagłówka niższego poziomu
+* `<h3>pod-podtytuł</h3>` …i tak dalej aż do `<h6>`
+* `<p>akapit tekstu</p>`
+* `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
+* `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
+* `<br>` to przejście do nowej linii (wewnątrz br nie wstawiamy niczego i nie ma też znacznika zamykającego)
+* `<a href="https://djangogirls.org">link</a>` tworzy link
+* `<ul><li>pierwsza pozycja</li><li>druga pozycja</li></ul>` tworzy listę, taką samą jak ta!
+* `<div></div>` tworzy sekcję na stronie
 
-Poniżej przykład pełnego szablonu:
+Tutaj możesz zobaczyć przykład pełnego szablonu, skopiuj i wklej go do `blog/templates/blog/post_list.html`:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
@@ -118,7 +119,7 @@ Poniżej przykład pełnego szablonu:
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div>
@@ -138,16 +139,14 @@ Poniżej przykład pełnego szablonu:
 
 Stworzyliśmy tutaj trzy sekcje `div`.
 
-*   Pierwszy `div` zawiera w sobie tytuł naszego bloga - jest to nagłówek i link.
-*   Kolejne dwa elementy `div` zawierają nasze wpisy wraz z opublikowaną datą, `h2` z klikalnym tytułem wpisu oraz dwa elementy `p` (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.
+* Pierwszy `div` zawiera w sobie tytuł naszego bloga - jest to nagłówek i link
+* Kolejne dwa elementy `div` zawierają nasze wpisy wraz z opublikowaną datą, `h2` z klikalnym tytułem wpisu oraz dwa elementy `p` (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.
 
 Daje nam to taki efekt:
 
-![Rysunek 11.4][4]
+![Rysunek 11.4](images/step6.png)
 
- [4]: images/step6.png
-
-Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tę samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
+Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tą samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
 
 Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.
 
@@ -159,51 +158,58 @@ Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć "na żywo" w Internecie, a
 
 Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu poleceń, nie na PythonAnywhere):
 
-    $ git status
+{% filename %}command-line{% endfilename %}
 
+    $ git status
+    
 
 Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał wszystkie zmiany z aktualnego folderu:
 
+{% filename %}command-line{% endfilename %}
+
     $ git add --all .
+    
 
-
-> **Uwaga:** `--all` (czyli angielskie "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
+> **Uwaga:** `--all` (czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 
-    $ git status
+{% filename %}command-line{% endfilename %}
 
+    $ git status
+    
 
 Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w historii. Dodamy za moment informację o zmianach (ang. "commit message"), gdzie opiszemy, co zostało zmienione. Możesz w tym miejscu wpisać cokolwiek zechcesz, ale warto jednak wpisać kilka słów opisujących, co robiłaś. W ten sposób łatwiej Ci będzie w przyszłości przypomnieć sobie, czego dotyczyły zapisane zmiany.
 
-    $ git commit -m "Zmieniony kod HTML na stronie."
+{% filename %}command-line{% endfilename %}
 
+    $ git commit -m "Zmieniony kod HTML na stronie."
+    
 
 > **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
 
 Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
-    git push
+{% filename %}command-line{% endfilename %}
 
+    $ git push
+    
 
 ### Prześlij nową wersję kodu do PythonAnywhere i ponownie załaduj swoją stronę
 
-*   Otwórz [stronę konsol na PythonAnywhere][5] i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
+* Otwórz [stronę konsol na PythonAnywhere](https://www.pythonanywhere.com/consoles/) i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
 
- [5]: https://www.pythonanywhere.com/consoles/
+{% filename %}command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ git pull
     [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
+    
 
+(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
 I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i przeglądnąć swój kod na PythonAnywhere.
 
-*   Na koniec przeskocz do zakładki [Web tab][6] i naciśnij **Reload**.
+* Na koniec przeskocz do zakładki [Web tab](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
 
- [6]: https://www.pythonanywhere.com/web_app_setup/
-
-I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne :)
+I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne. :)
