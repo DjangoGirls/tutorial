@@ -27,7 +27,7 @@ Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>`. Bagi kit
 
 Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau pakai shortcut `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Untuk saat ini, kami tidak ingin untuk keluar dari konsol Python. Kami ingin belajar lebih banyak tentang hal itu. Mari kita mulai dengan mengetik beberapa matematika, seperti `2 + 3` dan memukul `masuk`.
 
 {% filename %}baris perintah{% endfilename %}
 
