@@ -174,7 +174,7 @@ Hura! Działa!
 
 # Czas na wdrożenie!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Dobrze byłoby sprawdzić czy Twoja strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć.
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Pamiętaj, aby zastąpić `<your-pythonanywhere-username>` aktualną nazwą użytkownika PythonAnywhere, bez ostrych nawiasów).
 
 ## Aktualizacja plików statycznych na serwerze
 
