@@ -100,15 +100,15 @@ Ale ten kod ma problem. Jeśli nie istnieje żaden wpis (`Post`) z podanym `kluc
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. W sytuacji, gdy nie istnieje żaden wpis (`Post`) z przekazaną wartością `pk`, wyświetli znacznie przyjemniejszą stronę zwaną `Page Not Found 404` albo stroną błędu 404 - informującą, że dana strona nie została znaleziona.
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Dobra wiadomość - możesz stworzyć własną stronę błędu 404 (`Page not found`) i upiększyć ją tak, jak tylko Ci się podoba. Ale teraz nie jest to super ważne, więc na razie pominiemy ten temat.
 
-OK, time to add a *view* to our `views.py` file!
+OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która odnosi się do widoku `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
 We should open `blog/views.py` and add the following code near the other `from` lines:
 
