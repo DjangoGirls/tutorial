@@ -29,7 +29,7 @@ Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit(
 
 Untuk saat ini, kami tidak ingin untuk keluar dari konsol Python. Kami ingin belajar lebih banyak tentang hal itu. Mari kita mulai dengan mengetik beberapa matematika, seperti `2 + 3` dan memukul `masuk`.
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 + 3
@@ -136,11 +136,11 @@ OK, cukup banyak senar. Sejauh ini Anda telah belajar tentang:
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **fungsi** - seperti `atas()` dan `len()`, lakukan tindakan pada objek.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Ini adalah dasar dari setiap bahasa pemrograman yang Anda pelajari. Siap untuk sesuatu yang lebih sulit? Kami yakin Anda!
 
 ## Kesalahan
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Mari kita coba sesuatu yang baru. Bisakah kita mendapatkan panjang sejumlah cara yang sama kita bisa mengetahui panjang nama kami? Ketik di `len(304023)` dan tekan `Masukkan`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
