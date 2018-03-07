@@ -142,7 +142,7 @@ Ini adalah dasar dari setiap bahasa pemrograman yang Anda pelajari. Siap untuk s
 
 Mari kita coba sesuatu yang baru. Bisakah kita mendapatkan panjang sejumlah cara yang sama kita bisa mengetahui panjang nama kami? Ketik di `len(304023)` dan tekan `Masukkan`:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }}{% endfilename %} baris perintah
 
 ```python
 & gt; & gt; & gt; len (304023) Traceback (panggilan terakhir terakhir):
@@ -150,9 +150,9 @@ Mari kita coba sesuatu yang baru. Bisakah kita mendapatkan panjang sejumlah cara
 TypeError: objek tipe 'int' tidak memiliki len ()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Kami punya kesalahan pertama kami! Ikon {{ warning_icon }} adalah cara kami memberi Anda kepala up yang Anda akan menjalankan kode tidak bekerja seperti yang diharapkan. Membuat kesalahan (bahkan disengaja yang) yang merupakan bagian penting dari belajar!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Dikatakan bahwa objek dari jenis "int" (bilangan bulat, bilangan bulat) memiliki panjang tidak. Jadi apa yang dapat kita lakukan sekarang? Mungkin kita dapat menulis nomor kami sebagai string? String memiliki panjang, kanan?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,28 +160,28 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 & gt; & gt; & gt; len (str (304023)) 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Itu berhasil! Kami menggunakan fungsi `str` dalam fungsi `len`. `Str()` mengkonversi segala sesuatu ke string.
 
-- Fungsi `str` mengubah sesuatu menjadi **string**
 - Fungsi `int` mengubah semuanya menjadi **bilangan bulat**
+- Fungsi `int` mengubah hal-hal menjadi **bilangan bulat**
 
 > Penting: kita bisa mengonversi bilangan menjadi teks, tapi kita tidak bisa mengubah teks menjadi angka - apa yang akan `int ('halo')` jadi?
 
 ## Variabel
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Konsep penting dalam pemrograman adalah variabel. Variabel adalah tidak lebih dari sebuah nama untuk sesuatu sehingga Anda dapat menggunakannya nanti. Programmer menggunakan variabel ini untuk menyimpan data, membuat kode mereka lebih mudah dibaca dan sehingga mereka tidak perlu tetap mengingat apa hal-hal yang.
 
-Let's say we want to create a new variable called `name`:
+Katakanlah kita ingin membuat sebuah variabel baru yang disebut `nama`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> nama = "Ola"
 ```
 
-We type name equals Ola.
+Kita ketik nama sama Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+Seperti yang Anda perhatikan, program Anda tidak kembali sesuatu seperti itu lakukan sebelumnya. Jadi bagaimana kita tahu bahwa variabel benar-benar ada? Cukup masukkan `nama` dan tekan `Masukkan`:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -190,7 +190,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Hura! Variabel pertama Anda! :) Anda selalu dapat mengubah apa yang ia merujuk kepada:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -200,7 +200,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Anda dapat menggunakannya dalam fungsi juga:
 
 {% filename %} baris perintah {% endfilename %}
 
@@ -220,7 +220,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Tapi bagaimana jika kita menggunakan nama yang salah? Dapatkah kamu menebak apa yang akan terjadi? Mari kita coba!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -232,13 +232,13 @@ Traceback (panggilan terakhir):
 NameError: nama 'ctiy' tidak didefinisikan
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Kesalahan! Seperti yang Anda lihat, Python memiliki berbagai jenis kesalahan dan satu ini disebut **NameError**. Python akan memberikan kesalahan ini jika Anda mencoba menggunakan sebuah variabel yang belum didefinisikan belum. Jika Anda mengalami kesalahan ini kemudian, memeriksa kode Anda untuk melihat jika Anda telah salah ketik nama.
 
-Play with this for a while and see what you can do!
+Bermain dengan ini untuk sementara waktu dan lihat apa yang dapat Anda lakukan!
 
 ## Fungsi cetak
 
-Try this:
+Coba ini:
 
 {% filename %}command-line{% endfilename %}
 
