@@ -2,9 +2,9 @@
 
 # Rozbudowa aplikacji
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Przeszłyśmy już wszystkie kroki niezbędne do uruchomienia naszej strony: wiemy, jak opisać nasze modele, widoki, adresy URL i szablony. Umiemy również sprawić, aby nasza strona wyglądała ładniej.
 
-Time to practice!
+Czas na odrobinę praktyki!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
