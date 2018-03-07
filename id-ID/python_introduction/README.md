@@ -4,35 +4,32 @@
 
 > Bagian dari bab ini didasarkan pada tutorial oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Mari kita tulis beberapa kode!
 
 ## Python prompt
 
 > Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-Dasar Python: Integer, String, Daftar, Variabel dan Kesalahan](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. Anda seharusnya sudah tahu bagaimana melakukan itu - Anda mempelajarinya di bagian [Intro to Command Line](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Ketika kamu sudah siap, Silakan ikuti instruksi dibawah ini.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau `python3` pada Mac OS/Linux dan tekan `Enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
-    $ python3
-    Python 3.6.1 (...)
-    Ketik "bantuan", "hak cipta", "kredit" atau "lisensi" untuk informasi lebih lanjut.
-    >>>
+    $ python3 Python 3.4.3 (...) Type "help", "copyright", "credits" or "license" for more information. >>>
     
 
-## Perintah Python pertama Anda!
+## Perintah Python Pertama!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>`. Bagi kita sekarang adalah kita harus menggunakan perintah pada bahasa Python saja. Kmau gak perlu mengetik pada perintah `>>>` - Python akan melakukannya untukmu.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau pakai shortcut `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris perintah{% endfilename %}
 
 ```python
 >>> 2 + 3
