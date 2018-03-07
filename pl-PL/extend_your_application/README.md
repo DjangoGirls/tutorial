@@ -198,7 +198,7 @@ Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.co
 
 ## Aktualizacja plików statycznych na serwerze
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Serwery takie jak PythonAnywhere lubią traktować "pliki statyczne" (takie jak pliki CSS) inaczej niż pliki Pythona, ponieważ dzięki temu mogą one je optymalizować, dzięki czemu strona ładuje się szybciej. W wyniku tego, ilekroć wprowadzamy zmiany do naszych plików CSS, musimy uruchomić dodatkowe polecenie na serwerze, by wiedział o konieczności ich aktualizacji. Komenda nazywa się `collectstatic`.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
