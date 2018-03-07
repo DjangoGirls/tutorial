@@ -118,7 +118,7 @@ Powinnyśmy otworzyć `blog/views.py` i dodać poniższy kod nidaleko innych lin
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Oraz na końcu tego pliku dodać nasz *widok*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -128,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Tak, to czas na odświeżenie strony: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Działa! Ale co się stanie, gdy klikniesz na link w tytule wpisu?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy dodać szablon!
 
 ## Stwórzmy szablon dla poszczególnego wpisu
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+Stwórzmy plik w `blog/templates/blog` o nazwie `post_detail.html`.
 
-It will look like this:
+Będzie to wyglądać tak:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
