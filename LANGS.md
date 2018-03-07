@@ -1,4 +1,5 @@
 * [🇺🇸 English](en/)
+* [🇦🇪 العربية (beta)](ar/)
 * [🇨🇿 Czech (beta)](cs/)
 * [🇩🇪 Deutsch (beta)](de/)
 * [🇪🇸 Español (beta)](es/)
