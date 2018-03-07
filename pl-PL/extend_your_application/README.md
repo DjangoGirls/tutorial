@@ -200,7 +200,7 @@ Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.co
 
 Serwery takie jak PythonAnywhere lubią traktować "pliki statyczne" (takie jak pliki CSS) inaczej niż pliki Pythona, ponieważ dzięki temu mogą one je optymalizować, dzięki czemu strona ładuje się szybciej. W wyniku tego, ilekroć wprowadzamy zmiany do naszych plików CSS, musimy uruchomić dodatkowe polecenie na serwerze, by wiedział o konieczności ich aktualizacji. Komenda nazywa się `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (PythonAnywhere używa polecenia `workon` w celu aktywacji, dokładnie tak jak komenda `source myenv/bin/activate`, której używasz na swoim komputerze):
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,7 +209,7 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze, albo w bazie danych.
 
 In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
