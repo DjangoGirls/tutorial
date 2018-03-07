@@ -250,9 +250,9 @@ Coba ini:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Ketika Anda cukup mengetikkan `nama`, Python interpreter merespon dengan *representasi* string variabel 'nama', yang huruf M-a-r-i-a, dikelilingi oleh tanda kutip tunggal, ''. Ketika Anda mengatakan `print(name)`, Python akan "cetak" isi dari variabel ke layar, tanpa tanda kutip, yang merupakan lebih rapi.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Seperti yang kita akan lihat nanti, `print()` ini juga berguna ketika kita ingin mencetak sesuatu dari di dalam fungsi, atau ketika kita ingin mencetak hal pada beberapa baris.
 
 ## Daftar
 
@@ -275,7 +275,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> undian = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Baiklah, kita punya daftar! Apa yang bisa kita lakukan dengan itu? Mari kita lihat berapa jumlah undian yang ada dalam daftar. Apakah Anda tahu fungsi mana yang harus Anda gunakan untuk itu? Anda sudah tahu ini!
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -284,7 +284,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Ya! `Len()` dapat memberikan sejumlah objek dalam daftar. Handy, kanan? Mungkin kita akan semacam itu sekarang:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -292,7 +292,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Ini tidak kembali apa-apa, ini hanya mengubah urutan di mana nomor muncul dalam daftar. Mari kita mencetak lagi dan melihat apa yang terjadi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +301,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Seperti yang Anda lihat, angka-angka dalam daftar diurutkan sekarang dari nilai terendah ke tertinggi. Congrats!
 
-Maybe we want to reverse that order? Let's do that!
+Mungkin kita ingin terbalik urutan itu? Mari kita lakukan!
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -313,7 +313,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Jika Anda ingin menambahkan sesuatu ke daftar Anda, Anda dapat melakukan ini dengan mengetik perintah ini:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -323,7 +323,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Jika Anda ingin menampilkan hanya nomor pertama, Anda dapat melakukan ini dengan menggunakan **indeks**. Sebuah indeks adalah angka yang mengatakan di mana dalam daftar sebuah item terjadi. Programmer lebih memilih untuk mulai menghitung 0, jadi obyek pertama dalam daftar Anda di indeks 0, berikutnya adalah 1, dan sebagainya. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,9 +334,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Seperti yang Anda lihat, Anda dapat mengakses objek yang berbeda dalam daftar Anda dengan menggunakan daftar nama dan indeks objek dalam kurung.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Untuk menghapus sesuatu dari daftar Anda Anda akan perlu menggunakan **indeks** seperti yang kita pelajari di atas dan metode `pop()`. Mari kita coba contoh dan memperkuat apa yang kita pelajari sebelumnya; kami akan menghapus nomor pertama dari daftar kami.
 
 {% filename %}command-line{% endfilename %}
 
