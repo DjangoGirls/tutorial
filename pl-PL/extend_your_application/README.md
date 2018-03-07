@@ -46,7 +46,7 @@ A co z `pk=post.pk`? `pk` jest skrótem od primary key (ang. klucz podstawowy), 
 
 Teraz, gdy wejdziemy na adres http://127.0.0.1:8000/ ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani widoku *view* dla `post_detail`). Będzie to wyglądać tak:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![Błąd NoReverseMatch](images/no_reverse_match2.png)
 
 ## Utwórzmy URL dla poszczególnego wpisu
 
@@ -98,11 +98,11 @@ Post.objects.get(pk=pk)
 
 Ale ten kod ma problem. Jeśli nie istnieje żaden wpis (`Post`) z podanym `kluczem podstawowym` (`pk`), to otrzymamy przepaskudny błąd!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![Błąd DoesNotExist](images/does_not_exist2.png)
 
 Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. W sytuacji, gdy nie istnieje żaden wpis (`Post`) z przekazaną wartością `pk`, wyświetli znacznie przyjemniejszą stronę zwaną `Page Not Found 404` albo stroną błędu 404 - informującą, że dana strona nie została znaleziona.
 
-![Page not found](images/404_2.png)
+![Nie znaleziono strony](images/404_2.png)
 
 Dobra wiadomość - możesz stworzyć własną stronę błędu 404 (`Page not found`) i upiększyć ją tak, jak tylko Ci się podoba. Ale teraz nie jest to super ważne, więc na razie pominiemy ten temat.
 
@@ -130,11 +130,11 @@ def post_detail(request, pk):
 
 Tak, to czas na odświeżenie strony: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![Widok listy wpisów](images/post_list2.png)
 
 Działa! Ale co się stanie, gdy klikniesz na link w tytule wpisu?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![Błąd TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy dodać szablon!
 
@@ -168,7 +168,7 @@ Po raz kolejny rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić da
 
 OK, możemy teraz odświeżyć naszą stronę i sprawdzić, czy `TemplateDoesNotExist` już zniknął.
 
-![Post detail page](images/post_detail2.png)
+![Strona ze szczegółami wpisu](images/post_detail2.png)
 
 Hura! Działa!
 
@@ -211,6 +211,6 @@ Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (P
 
 Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze, albo w bazie danych.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+W każdym wypadku jesteśmy gotowe przejść do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wcisnąć **Reload** (ang. odśwież).
 
-And that should be it! Congrats :)
+I to już wszystko! Gratulacje :)
