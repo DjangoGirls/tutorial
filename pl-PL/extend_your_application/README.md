@@ -110,7 +110,7 @@ OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
 W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która odnosi się do widoku `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+Powinnyśmy otworzyć `blog/views.py` i dodać poniższy kod nidaleko innych linii z `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
