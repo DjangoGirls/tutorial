@@ -13,8 +13,9 @@ Views توضع في الملف `views.py`. وسوف نضيف *views* الخاص�
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-من django.shortcuts استرد المحول
-إنشاء طرق العرض الخاصة بك هنا.
+from django.shortcuts import render
+
+# Create your views here.
 ```
 
 ليس هناك كثيرا من الأشياء هنا حتى الآن.
