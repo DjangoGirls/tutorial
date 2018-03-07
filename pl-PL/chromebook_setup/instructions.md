@@ -2,14 +2,14 @@ Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud 9
 
-Cloud 9 jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud9 będzie działać jako *komputer lokalny*. Bbędziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud 9.
+Cloud 9 jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud9 będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud 9.
 
 1. Zainstaluj Cloud 9 ze [ sklepu Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Przejdź do [c9.io](https://c9.io)
 3. Załóż konto
 4. Kliknij przycisk *Utwórz nowy obszar roboczy*
 5. Nadaj mu nazwę *django-girls*
-6. Wybierz *Puste* (drugi od prawej w dolnym rzędzie z pomarańczowym logo)
+6. Wybierz *Puste - blank* (drugi od prawej w dolnym rzędzie z pomarańczowym logo)
 
 Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tekstem i małe okno na dole, które wygląda następująco:
 
@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać komendy do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby był nieco większy.
+Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać komendy do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby było nieco większe.
 
 ### Środowisko wirtualne
 
