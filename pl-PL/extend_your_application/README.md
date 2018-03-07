@@ -162,7 +162,7 @@ Będzie to wyglądać tak:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Po raz kolejny rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić datę opublikowania wpisu (o ile istnieje), tytuł oraz treść. Ale powinnyśmy omówić kilka ważnych rzeczy, prawda?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
