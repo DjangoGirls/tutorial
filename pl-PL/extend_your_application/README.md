@@ -86,9 +86,9 @@ Pamiętasz, jaki jest następny krok? Oczywiście: dodanie widoku!
 
 ## Dodajmy widok dla poszczególnego wpisu
 
-Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Zwróć uwagę, że musimy użyć dokładnie tej samej nazwy jak ta, której użyłyśmy w urls (`pk`). Pominięcie tej zmiennej jest niepoprawne i spowoduje błąd!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Teraz chcemy wyświetlić jeden i tylko jeden wpis na blogu. Aby to zrobić, możemy użyć querysetów w następujący sposób:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -96,11 +96,11 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Ale ten kod ma problem. Jeśli nie istnieje żaden wpis (`Post`) z podanym `kluczem podstawowym` (`pk`), to otrzymamy przepaskudny błąd!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
