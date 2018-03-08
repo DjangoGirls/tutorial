@@ -5,7 +5,7 @@ Git - це "система контролю версій", яка викорис
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Ви можете завантажити Git з [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
+Ви можете завантажити Git з [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Крім цього, стандартні налаштування добрі. Вимкніть закінчення рядків в стилі Windows, ввімкніть в стилі Unix, вони кращі.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
