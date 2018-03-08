@@ -372,7 +372,7 @@ Kamus ini mirip dengan daftar, tapi Anda mengakses nilai dengan mencari kunci bu
 
 Ini menunjukkan bahwa Anda baru saja membuat kamus kosong. Hore!
 
-Now, try writing the following command (try substituting your own information, too):
+Sekarang, coba menulis perintah berikut (coba mengganti informasi Anda sendiri, terlalu):
 
 {% filename %}command-line{% endfilename %}
 
@@ -380,7 +380,7 @@ Now, try writing the following command (try substituting your own information, t
 >>> peserta = {'nama': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Dengan perintah ini, Anda hanya menciptakan variabel bernama `peserta` dengan tiga pasangan kunci-nilai:
 
 - Kunci `nama` menunjuk ke nilai `'Ola'` (a `string` objek),
 - `negara` menunjuk ke `'Polandia'` (string `lainnya`),
@@ -395,9 +395,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Lihat, mirip dengan daftar. Tetapi Anda tidak perlu mengingat indeks – hanya nama.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Apa yang terjadi jika kita bertanya Python nilai kunci yang tidak ada? Dapatkah Anda menebak? Mari kita mencoba dan melihat!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -408,14 +408,14 @@ Traceback (panggilan terakhir):
 KeyError: 'usia'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Tampilan, kesalahan lain! Ini adalah **KeyError**. Python membantu dan memberitahu Anda bahwa kunci `'usia'` tidak ada dalam Kamus ini.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Ketika Anda harus menggunakan kamus atau daftar? Yah, itu adalah titik yang baik untuk merenungkan. Hanya memiliki solusi dalam pikiran sebelum melihat jawaban dalam baris berikutnya.
 
-- Apakah Anda hanya butuh urutan barang yang dipesan? Pergi untuk daftar.
-- Apakah Anda perlu mengaitkan nilai dengan kunci, sehingga Anda dapat melihatnya secara efisien (dengan kunci) nanti? Gunakan kamus.
+- Anda hanya perlu memesan urutan item? Pergi untuk daftar.
+- Apakah Anda perlu menghubungkan nilai dengan tombol, sehingga Anda dapat mencarinya efisien (dengan kunci) kemudian? Menggunakan Kamus.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Kamus, seperti daftar, yang *bisa berubah*, berarti bahwa mereka dapat mengubah setelah mereka diciptakan. Anda dapat menambahkan baru pasangan kunci-nilai ke kamus setelah itu diciptakan, seperti ini:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -423,7 +423,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Seperti daftar, menggunakan metode `len()` pada kamus kembali jumlah pasangan kunci-nilai dalam kamus. Pergi ke depan dan ketik perintah ini:
 
 {% filename %}command-line{% endfilename %}
 
@@ -432,9 +432,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Saya harap ini masuk akal sampai sekarang. :) Siap untuk bersenang-senang dengan kamus? Baca terus untuk beberapa hal yang menakjubkan.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Anda dapat menggunakan metode ` pop () ` untuk menghapus item dalam kamus. Katakan, jika Anda ingin menghapus entri yang sesuai dengan tombol `'favorite_numbers'`, ketik saja perintah berikut:
 
 {% filename %}command-line{% endfilename %}
 
