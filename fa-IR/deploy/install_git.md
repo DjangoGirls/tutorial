@@ -5,7 +5,7 @@
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-برای نصب گیت می توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. شما به راحتی میتوانید تمامی مراحل را " next next next" بزیند به جز یک مرحله; در مرحله پنجم که عنوانش هست " تعیین مسیر " باید گزینه " اجرا کردن گیت به همراه ابزارهای یونیکس از خط فرمان " (گزینه پایین) را انتخاب کنید. در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
+برای نصب گیت می توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
 
 فراموش نکنید که بعد از اینکه نصب به پایان رسید دوباره command prompt یا powershell را راه اندازی کنید. <!--endsec-->
 
