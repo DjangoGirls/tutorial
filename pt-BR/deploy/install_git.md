@@ -5,7 +5,7 @@ O Git é um "sistema de controle de versão" usado por muitos programadores. Est
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Você pode baixar o Git em [git-scm.com](https://git-scm.com/). Você pode clicar em "Next" em todos os passos, exceto um: no quinto passo, intitulado "Ajustando o PATH do seu ambiente" (em inglês "Adjusting your PATH environment"), escolha "Use Git e ferramentas Unix opcionais do Prompt de Comando do Windows" (em inglês "Use Git and optional Unix tools from the Windows Command Prompt"), que é a opção mais abaixo. Fora disso, o as configurações padrão estão ótimas. "Checkout Windows-style, commit Unix-style line endings" está bom.
+Você pode baixar o Git em [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Fora disso, o as configurações padrão estão ótimas. "Checkout Windows-style, commit Unix-style line endings" está bom.
 
 Não se esqueça de reiniciar o prompt de comando ou o powershell depois que a instalação terminar com sucesso. <!--endsec-->
 
