@@ -5,7 +5,7 @@ Git adalah "sistem kawalan versi" yang digunakan oleh banyak pengaturcara. Peris
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Anda boleh memuat turun Git dari [git-scm.com](https://git-scm.com/). Anda boleh memukul "seterusnya" pada semua langkah kecuali satu; dalam langkah kelima yang bertajuk "Menyesuaikan persekitaran PATH anda", pilih "Gunakan Git dan alat Unix opsional dari Windows Command Prompt" (pilihan bawah). Selain itu, yang tertera adalah baik. Cuba lihat gaya-Windows, cara pengakhiran gaya-Unix adalah baik.
+Anda boleh memuat turun Git dari [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Selain itu, yang tertera adalah baik. Cuba lihat gaya-Windows, cara pengakhiran gaya-Unix adalah baik.
 
 Jangan lupa untuk memulakan semula command prompt atau powerhell selepas pemasangan selesai dengan jayanya. <!--endsec-->
 
