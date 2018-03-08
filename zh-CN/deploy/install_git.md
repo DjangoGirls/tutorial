@@ -5,7 +5,7 @@ Git是一个被大量程序员使用的"版本控制系统"。 此软件可以�
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-你可以从 [git-scm.com](https://git-scm.com/) 下载Git。 You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 除此之外，默认值都没有问题。 签出时使用 Windows 风格的换行符，提交时使用 Unix 风格的换行符，这样比较好。
+你可以从 [git-scm.com](https://git-scm.com/) 下载Git。 You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 除此之外，默认值都没有问题。 签出时使用 Windows 风格的换行符，提交时使用 Unix 风格的换行符，这样比较好。
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
