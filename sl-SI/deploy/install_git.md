@@ -5,7 +5,7 @@ Git je "sistem za porazdeljeno dokumentiranje sprememb in izdajanje različic da
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Sistem za porazdeljeno dokumentiranje sprememb in izdajanje različic datotek oz. Git lahko prenesete iz spletnega mesta [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Sicer pa so privzete nastavitve v redu. Ukaz checkout v Windows slogu in ukaz commit v Unix slogu je dobra izbira.
+Sistem za porazdeljeno dokumentiranje sprememb in izdajanje različic datotek oz. Git lahko prenesete iz spletnega mesta [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Sicer pa so privzete nastavitve v redu. Ukaz checkout v Windows slogu in ukaz commit v Unix slogu je dobra izbira.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
