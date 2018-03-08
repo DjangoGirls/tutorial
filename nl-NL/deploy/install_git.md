@@ -5,7 +5,7 @@ Git is een "version control system" ("versie controle systeem") dat door veel pr
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Je kunt Git downloaden van [git-scm.com](https://git-scm.com/). Je kunt bij alle stappen op "volgende" klikken, op één na; in de vijfde stap genaamd "Adjusting your PATH environment" kies je "Use Git and optional Unix tools from the Windows Command Prompt" (de laatste optie). Op die na zijn alle standaardinstellingen prima. "Checkout Windows-style, commit Unix-style line endings" is goed.
+Je kunt Git downloaden van [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Op die na zijn alle standaardinstellingen prima. "Checkout Windows-style, commit Unix-style line endings" is goed.
 
 Vergeet niet om de command prompt of powershell te herstarten nadat de installatie succesvol afgerond is. <!--endsec-->
 
