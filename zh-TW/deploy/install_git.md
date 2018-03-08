@@ -5,7 +5,7 @@ Git 是一個被很多程式設計師使用的 ”版本控制系統"(version co
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-你可以從 [git scm.com](https://git-scm.com/) 下載 Git。 You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 除此之外，預設值都是正確的。 點選 Windows-style, commit Unix-style line endings 選項。
+你可以從 [git scm.com](https://git-scm.com/) 下載 Git。 You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 除此之外，預設值都是正確的。 點選 Windows-style, commit Unix-style line endings 選項。
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
