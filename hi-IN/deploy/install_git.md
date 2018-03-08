@@ -5,7 +5,7 @@ Git is a "version control system" used by a lot of programmers. This software ca
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-आप Git [git-scm.com](https://git-scm.com/) से डाउनलोड कर सकते हैं। You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). उस के अलावा, चूक ठीक हैं। चेकआउट Windows-शैली, कमिट Unix-शैली लाइन समापनों को संशोधित अच्छा है।
+आप Git [git-scm.com](https://git-scm.com/) से डाउनलोड कर सकते हैं। You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). उस के अलावा, चूक ठीक हैं। चेकआउट Windows-शैली, कमिट Unix-शैली लाइन समापनों को संशोधित अच्छा है।
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
