@@ -5,7 +5,7 @@ Git este un "sistem de versionare" folosit de mulți programatori. Acest softwar
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Puteţi descărca Git aici [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). În afară de aceasta, valorile implicite sunt bune. Verificarea în stil Windows și sfârşiturile de linie de cod pentru commit-uri în stil Unix sunt bune.
+Puteţi descărca Git aici [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). În afară de aceasta, valorile implicite sunt bune. Verificarea în stil Windows și sfârşiturile de linie de cod pentru commit-uri în stil Unix sunt bune.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
