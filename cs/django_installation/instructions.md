@@ -50,7 +50,7 @@ Vytvoření `virtualenv` na Linux a OS X je stejně jednoduché - spusť`python3
 >
 > Chceš-li se tomuto vyhnout, použij tento příkaz `virtualenv`.
 >
->     ~/djangogirls$ sudo apt-get install python-virtualenv
+>     ~/djangogirls$ sudo apt install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
 

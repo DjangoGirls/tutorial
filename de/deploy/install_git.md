@@ -11,7 +11,7 @@ Git von [git-scm.com](http://git-scm.com/) herunterladen und dann den Anweisunge
 Falls es noch nicht installiert sein sollte, sollte git als Paket im Paketmanager enthalten sein. Versuche je nach Distribution:
 
 ```bash
-sudo apt-get install git
+sudo apt install git
 ```
     # oder
 ```bash

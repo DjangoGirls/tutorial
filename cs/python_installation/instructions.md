@@ -26,7 +26,7 @@ Pokud Python nemáš nainstalovaný nebo pokud chceš nainstalovat jinou verzi, 
 Použij tento příkaz v konzoli:
 
 ```
-sudo apt-get install python3.4
+sudo apt install python3.4
 ```
 
 #### Fedora

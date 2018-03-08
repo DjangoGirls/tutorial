@@ -46,7 +46,7 @@
 > 
 > 为了解决这个问题，请使用 `virtualenv` 命令。
 > 
->     ~/djangogirls$ sudo apt-get install python-virtualenv
+>     ~/djangogirls$ sudo apt install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
 

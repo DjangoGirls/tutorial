@@ -63,7 +63,7 @@ Use esse comando em seu console:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt-get install python3.5
+$ sudo apt install python3.5
 ```
 
 <!--endsec-->

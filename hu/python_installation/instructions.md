@@ -42,7 +42,7 @@ data-collapse=true ces-->
 
 Írd be az alábbi parancsot a konzolba:
 
-    $ sudo apt-get install python3.4
+    $ sudo apt install python3.4
     
 <!--endsec-->
 

@@ -55,14 +55,14 @@ $ python3 -m venv myvenv
 {% filename %}command-line{% endfilename %}
 ```
 The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
-    apt-get install python3-venv
+    apt install python3-venv
 You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 ```
 
 이 경우, 위의 지시에 따라 `python3-venv` 패키지를 설치하세요. :
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt-get install python3-venv
+$ sudo apt install python3-venv
 ```
 
 > **Note** Debian/Ubuntu의 일부 버전에서 이와 같이 가상 환경을 초기화하면 현재 다음과 같은 오류가 발생합니다. :
@@ -75,7 +75,7 @@ Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt-get install python-virtualenv
+$ sudo apt install python-virtualenv
 $ virtualenv --python=python3.6 myvenv
 ```
 

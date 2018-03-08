@@ -24,7 +24,7 @@ Si Python n'est pas installé ou que vous avez une version différente, vous pou
 
 Tapez cette commande dans votre terminal :
 
-    $ sudo apt-get install python3.4
+    $ sudo apt install python3.4
     
 
 #### Fedora

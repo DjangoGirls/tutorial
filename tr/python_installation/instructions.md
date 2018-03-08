@@ -60,7 +60,7 @@ Terminale bu komutu girin:
 
 {% filename %}komut satırı{% endfilename %}
 
-    $ sudo apt-get install python3.6
+    $ sudo apt install python3.6
     
 
 <!--endsec-->

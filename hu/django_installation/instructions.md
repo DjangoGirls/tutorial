@@ -50,14 +50,14 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 >{% filename %}parancssor{% endfilename %}
 >```
 >The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
->    apt-get install python3-venv
+>    apt install python3-venv
 >You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >```
 >
 > Ebben az esetben a fenti leírást követve telepítsd a `python3-venv` csomagot:
 >{% filename %}parancssor{% endfilename %}
 >```
->$ sudo apt-get install python3-venv
+>$ sudo apt install python3-venv
 >```
 
 > **MEGJEGYZÉS:** A virtuális környezetet létrehozó parancs Ubuntu 14.04 alatt ezt a hibát adja:
@@ -67,7 +67,7 @@ A `myvenv` a`virtualenv`-ed neve. Más nevet is használhatsz, de maradj a kisbe
 > 
 > Hogy ezt elkerüld, használd a `virtualenv` parancsot.
 > 
->     ~/djangogirls$ sudo apt-get install python-virtualenv
+>     ~/djangogirls$ sudo apt install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.6 myvenv
 >     
 

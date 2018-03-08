@@ -58,14 +58,14 @@ $ python3 -m venv myvenv
 >{% filename %}command-line{% endfilename %}
 >```
 >The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
->    apt-get install python3-venv
+>    apt install python3-venv
 >You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >```
 >
 > В таком случае следуй приведённым инструкциям и установи пакет `python3-venv`:
 >{% filename %}command-line{% endfilename %}
 >```
->$ sudo apt-get install python3-venv
+>$ sudo apt install python3-venv
 >```
 
 > __Примечание:__ В некоторых версиях of Debian/Ubuntu при таком способе создания виртуального окружения ты можешь получить такую ошибку:
@@ -79,7 +79,7 @@ $ python3 -m venv myvenv
 
 >{% filename %}command-line{% endfilename %}
 >```
->$ sudo apt-get install python-virtualenv
+>$ sudo apt install python-virtualenv
 >$ virtualenv --python=python3.6 myvenv
 >```
 

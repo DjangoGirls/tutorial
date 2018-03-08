@@ -10,7 +10,7 @@
 
 如果git还没有被安装的话，你可以从你的软件包管理器中下载git, 请试试下面命令:
 
-    sudo apt-get install git
+    sudo apt install git
     # or
     sudo yum install git
     # or
