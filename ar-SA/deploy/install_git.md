@@ -5,7 +5,7 @@ Git عباره عن "نظام تحكم إصدار" مستخدم من قبل ال
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-يمكنك تحميل Git من [ git-scm.com](https://git-scm.com/). يمكنك الضغط على "التالي" في جميع الخطوات باستثناء خطوة واحدة؛ في الخطوة الخامسة بعنوان "التكيف مع بيئة المسار الخاص بك"، اختر "تشغيل Git وأدوات يونيكس المرتبطة بها من سطر الأوامر في ويندوز" (الخيار الأسفل). بخلاف ذلك، الإعدادات الافتراضية كافيه. راجع نهايات السطور في نمط ويندوز ، و ارتكاب نمط يونكس.
+يمكنك تحميل Git من [ git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). بخلاف ذلك، الإعدادات الافتراضية كافيه. راجع نهايات السطور في نمط ويندوز ، و ارتكاب نمط يونكس.
 
 لا تنس إعادة تشغيل موجه الأوامر أو powershell بعد انتهاء عملية التثبيت بنجاح. <!--endsec-->
 
