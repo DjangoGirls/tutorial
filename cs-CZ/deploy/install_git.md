@@ -5,7 +5,7 @@ Git je "systém pro správu verzí" používaný spoustou programátorů. Tento 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Git si můžeš stáhnout z [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Ostatní výchozí hodnoty jsou v pořádku. Odškrtni Windows-style konce řádků, pro commit je Unixový styl konce řádků správný.
+Git si můžeš stáhnout z [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Ostatní výchozí hodnoty jsou v pořádku. Odškrtni Windows-style konce řádků, pro commit je Unixový styl konce řádků správný.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
