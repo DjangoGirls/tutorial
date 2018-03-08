@@ -5,7 +5,7 @@ Ang Git ay isang "version control system" na ginagamit ng napakaraming mga progr
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Maari kang mag-download ng Git mula sa [git-scm.com](https://git-scm.com/). Maari mong pindoting ang "next" sa lahat ng mga hakbang maliban sa isa: sa panglimang hakbang na may pamagat na "Adjusting your PATH environment", piliin ang "Use Git and optional Unix tools from the Windows Command Prompt" (ang opsyon sa baba). Maliban dyan, ang mga default na setting ay mainam na. Tingnan ang Windows-style, maganda ang pag-commit ng Unix-style na line endings.
+Maari kang mag-download ng Git mula sa [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Maliban dyan, ang mga default na setting ay mainam na. Tingnan ang Windows-style, maganda ang pag-commit ng Unix-style na line endings.
 
 Huwag kalimutan na i-restart ang command prompt o powershell pagkatapos nang matagumpay na pag-install. <!--endsec-->
 
