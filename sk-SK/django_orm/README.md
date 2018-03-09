@@ -105,6 +105,7 @@ Teraz už konečne môžeme vytvoriť náš prvý príspevok:
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Hurá! Chceš si overiť, či to fungovalo?
@@ -129,8 +130,8 @@ Dôležitou vlastnosťou QuerySetov je možnosť ich filtrovať. Povedzme, že c
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> Post.objects.filter(author=ja)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+>>> Post.objects.filter(author=me)
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Skúsme vyhľadať všetky príspevky, ktoré obsahujú slovo 'title' v políčku `title`?
@@ -139,7 +140,7 @@ Skúsme vyhľadať všetky príspevky, ktoré obsahujú slovo 'title' v políčk
 
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Poznámka** Medzi `title` a `contains` sú dva podčiarkovníky (`_`). Django ORM používa túto syntax, aby oddelil názvy polí ("title") a operácie či filtre ("contains"). Ak použiješ iba jeden podčiarkovník, dostaneš chybu "FieldError: Cannot resolve keyword title_contains".
@@ -151,7 +152,7 @@ Môžeš tiež získať zoznam všetkých publikovaných postov. To urobíme vyf
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Bohužiaľ, príspevok, ktorý sme pridali z konzoly Pythonu, ešte nie je publikovaný. To môžeme zmeniť! Najskôr získaj inštanciu postu, ktorý chceme publikovať:
@@ -176,7 +177,7 @@ Teraz skús získať zoznam publikovaných postov znova (stlač šípku hore tri
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### Zoradenie objektov
@@ -187,7 +188,7 @@ QuerySety tiež umožňujú zoradiť zoznamy objektov. Skúsme ich zoradiť pod�
 
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Poradie môžeme vymeniť pridaním `-` na začiatok:
@@ -196,15 +197,17 @@ Poradie môžeme vymeniť pridaním `-` na začiatok:
 
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### Reťazenie QuerySetov
 
 QuerySety môžeš dokonca kombinovať pomocou **reťazenia**:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 To je skutočne silný nástroj, ktorým môžeš písať pomerne komplexné požiadavky (queries).
 
