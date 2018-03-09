@@ -56,7 +56,7 @@ Prueba esto en tu plantilla.
 
 ![Figura 13.3](images/step3.png)
 
-¿Has notado que esta vez utilizamos una notación diferente (`{{ post.title }}` o `{{ post.text }})`? Estamos accediendo a los datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está pasando el texto de los post a través de un filtro para convertir saltos de línea en párrafos.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Estamos accediendo a los datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está pasando el texto de los post a través de un filtro para convertir saltos de línea en párrafos.
 
 ## Una cosa más
 
