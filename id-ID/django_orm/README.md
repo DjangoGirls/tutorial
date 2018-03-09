@@ -102,7 +102,8 @@ Seperti yang Anda lihat, sekarang kita ` mendapatkan </ 0> a <code> Pengguna </ 
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.create (author = me, title = 'Contoh judul', teks = 'Uji')
+<pre><code class="python">>>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 `</pre> 
 
 Hore! Ingin memeriksa apakah berhasil?
@@ -126,14 +127,16 @@ Sebagian besar QuerySets adalah kemampuan untuk memfilternya. Katakanlah kita in
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (penulis = saya) [ <Post: Sample title> , <Post: Post number 2> , <Post: My 3rd post!> , <Post: 4th title of post> ]
+<pre><code class="python">>>> Post.objects.filter(author=me)
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 `</pre> 
 
 Atau mungkin kita ingin melihat semua tulisan yang berisi kata 'title' di bidang ` title </ 0> ?</p>
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (title__contains = 'title') [ <Post: Sample title> , <Post: 4th title of post> ]
+<pre><code class="python">>>> Post.objects.filter(title__contains='title')
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 `</pre> 
 
 > ** Catatan </ 0> Ada dua karakter garis bawah ( ` _ </ 1> ) antara <code> judul </ 1> dan <code> berisi </ 1> . ORM Django menggunakan aturan ini untuk memisahkan nama field ("judul") dan operasi atau filter ("contains"). Jika Anda hanya menggunakan satu garis bawah, Anda akan mendapatkan pesan kesalahan seperti "FieldError: Tidak dapat menyelesaikan judul kata kunci_contains".</p>
@@ -143,8 +146,9 @@ Atau mungkin kita ingin melihat semua tulisan yang berisi kata 'title' di bidang
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; dari django.utils import timezone
- & gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) []
+<pre><code class="python">>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+<QuerySet []>
 `</pre> 
 > 
 > Sayangnya, posting yang kami tambahkan dari konsol Python belum dipublikasikan. Tapi kita bisa mengubah itu! Pertama dapatkan sebuah instance dari sebuah postingan yang ingin kita publikasikan:
@@ -166,7 +170,8 @@ Sekarang cobalah untuk mendapatkan daftar posting yang dipublikasikan lagi (teka
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) [ <Post: Sample title> ]
+<pre><code class="python">>>> Post.objects.filter(published_date__lte=timezone.now())
+<QuerySet [<Post: Sample title>]>
 `</pre> 
 
 ### Memesan benda
@@ -175,22 +180,26 @@ QuerySets juga memungkinkan Anda untuk memesan daftar objek. Mari kita coba untu
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.order_by ('created_date') [ <Post: Sample title> , <Post: Post number 2> , <Post: My 3rd post!> , <Post: 4th title of post> ]
+<pre><code class="python">>>> Post.objects.order_by('created_date')
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 `</pre> 
 
 Kita juga bisa membalik pemesanan dengan menambahkan ` - </ 0> di awal:</p>
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code class="python">& gt; & gt; & gt; Post.objects.order_by ('- created_date') [ <Post: 4th title of post> ,   <Post: My 3rd post!> , <Post: Post number 2> , <Post: Sample title> ]
+<pre><code class="python">>>> Post.objects.order_by('-created_date')
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 `</pre> 
 
 ### Chaining QuerySets
 
 Anda juga dapat menggabungkan QuerySets dengan ** chaining </ 0> bersama-sama:</p> 
 
-    & gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) order_by ('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 Ini benar-benar hebat dan memungkinkan Anda menulis kueri yang cukup rumit.
 
