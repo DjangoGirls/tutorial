@@ -67,7 +67,7 @@ Berhasil! Tapi kami ingin posting ditampilkan seperti tulisan statis yang kami b
 
 <p><img src="images/step3.png" alt="Gambar 13.3" /></p>
 
-<p>Pernahkah Anda memperhatikan bahwa kami menggunakan notasi yang sedikit berbeda kali ini ( <code> {{post.title}} </ 0> atau <code> {{post.text}} ) </ 0> ? Kami mengakses data di masing-masing bidang yang didefinisikan dalam model <code> Post </ 0> kami . Juga, <code> | linebreaksbr </ 0> sedang menyalurkan teks posting melalui filter untuk mengubah jeda baris menjadi paragraf.</p>
+<p>Have you noticed that we used a slightly different notation this time (<code>{{ post.title }}` or `{{ post.text }}`)? Kami mengakses data di masing-masing bidang yang didefinisikan dalam model ` Post </ 0> kami . Juga, <code> | linebreaksbr </ 0> sedang menyalurkan teks posting melalui filter untuk mengubah jeda baris menjadi paragraf.</p>
 
 <h2>Satu hal lagi</h2>
 
