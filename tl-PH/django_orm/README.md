@@ -105,6 +105,7 @@ Ngayon makakalikha na tayo ng post sa wakas:
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Yay! Gusto mong tingnan kung gumana ba ito?
@@ -130,7 +131,7 @@ Ang malaking parte ng QuerySet ay ang abilidad na pagfilter nito. Sabihin natin 
 
 ```python
 >>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 O maari din na gusto nating makita ang mga post na naglalaman ng salitang 'title' sa ating `title` na field?
@@ -139,7 +140,7 @@ O maari din na gusto nating makita ang mga post na naglalaman ng salitang 'title
 
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Paalala** May dalawang salungguhit na letra (`_`) sa pagitan ng `title` at ang `contains`. Ang ORM ni Django ay gumagamit ng mga tuntunin para ihiwalay ang mga field name na ("title") at ang mga operasyon o mga filter na ("contains"). Kung gagamit ka lang ng isang salungguhit, makakuha ka ng error gaya ng "FieldError: Cannot resolve keyword title_contains".
@@ -151,7 +152,7 @@ Maaring ding makuha mo ang lahat ng nalathala na mga post. Magagawa natin ito sa
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Sa kasamaang palad, ang post na ating nadagdag mula sa console ng Python ay hindi pa nalathala. Pero mababago natin ito! Una, kukuha tayo ng instance ng post na gusto nating ilathala:
@@ -176,7 +177,7 @@ Ngayon, subukan mong kumuha ng mga nailathala na mga post ulit (pindutin ang up 
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### Pagkakaayos ng mga Object
@@ -187,7 +188,7 @@ Ang QuerySet ay magtutulot sa iyo na ayusin ang lista ng mga object. Subukan nat
 
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Maari din nating ibaligtad ang pagkakasunod sa pamamagitan ng pagdagdag ng `-` sa simula:
@@ -196,15 +197,17 @@ Maari din nating ibaligtad ang pagkakasunod sa pamamagitan ng pagdagdag ng `-` s
 
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### Pag-chain ng mga QuerySet
 
 Maari mo ding pagsamahin ang mga QuerySet sa pamamagitan ng **pag-chain** nila ng sabay-sabay:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 Ito ay tunay na makapangyarihan at sa pamamagitan nito maari kang gumawa ng mga komplekado na mga query.
 
