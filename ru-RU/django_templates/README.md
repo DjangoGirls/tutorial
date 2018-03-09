@@ -68,7 +68,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 ![Рисунок 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Мы обращаемся к различным полям нашей модели `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Мы обращаемся к различным полям нашей модели `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Еще один момент
 
