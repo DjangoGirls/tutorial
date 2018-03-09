@@ -71,7 +71,7 @@ Djangoはオブジェクトのリストと認識します。 Introduction to Pyt
 
 ![図 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Post モデルで定義したそれぞれのフィールドにアクセスしています。 Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Post モデルで定義したそれぞれのフィールドにアクセスしています。 Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## もう一つ...
 
