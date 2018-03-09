@@ -104,7 +104,8 @@ Teď můžeme konečně vytvořit příspěvek:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> Post.objects.create(author=ja, title='titulek', text='Test')
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Hurá! Chceš se podívat jestli to fungovalo?
@@ -129,8 +130,8 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> Post.objects.filter(author=ja)
-[<Post: titulek>, <Post: Příspěvek číslo 2>, <Post: Můj 3. příspěvek!>, <Post: 4. titulek příspěvku>]
+>>> Post.objects.filter(author=me)
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
@@ -138,8 +139,8 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> Post.objects.filter(title__contains='titulek')
-[<Post: titulek>, <Post: 4. titulek příspěvku>]
+>>> Post.objects.filter(title__contains='title')
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Poznámka** Mezi `title` a `contains` jsou dvě podtržítka (`_`). Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
@@ -151,7 +152,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
@@ -176,7 +177,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### Řazení objektů
@@ -187,7 +188,7 @@ QuerySety ti také umožňují seřadit seznam objektů. Pojďme je zkusit seřa
 
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: titulek>, <Post: Příspěvek číslo 2>, <Post: Můj 3. příspěvek!>, <Post: 4. titulek příspěvku>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Můžeme je také seřadit obráceně přidáním `-` na začátek:
@@ -196,15 +197,17 @@ Můžeme je také seřadit obráceně přidáním `-` na začátek:
 
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4. titulek příspěvku>,  <Post: Můj 3. příspěvek!>, <Post: Příspěvek číslo 2>, <Post: titulek>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### Řetězení QuerySetů
 
 QuerySety můžeš také kombinovat dohromady pomocí **řetězení**:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 Je to mocný nástroj který ti umožňuje psát docela komplexní query.
 
