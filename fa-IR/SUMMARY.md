@@ -1,14 +1,14 @@
-# سرفصل ها
+# چکیده
 
 * [معرفی](README.md)
 * [نصب و راه‌اندازی](installation/README.md)
-* [نصب و راه اندازی (chromebook)](chromebook_setup/README.md)
+* [نصب و راه اندازی (کروم بوک)](chromebook_setup/README.md)
 * [اینترنت چگونه کار می‌کند](how_the_internet_works/README.md)
 * [آشنایی با خط فرمان](intro_to_command_line/README.md)
 * [نصب و راه اندازی پایتون](python_installation/README.md)
 * [ویرایشگر کد](code_editor/README.md)
 * [آشنایی با پایتون](python_introduction/README.md)
-* [جنگو چیست؟](django/README.md)
+* [جنگو چیست?](django/README.md)
 * [نصب و راه اندازی جنگو](django_installation/README.md)
 * [اولین پروژه جانگا شما!](django_start_project/README.md)
 * [مدل در جنگو](django_models/README.md)
