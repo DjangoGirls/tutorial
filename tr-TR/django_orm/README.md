@@ -104,7 +104,8 @@ Gönderimizi artık kaydedebiliriz:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.create(yazar=ben, baslik='Harika bir gönderi', yazi='Ne desem bilemedim')
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
@@ -129,8 +130,8 @@ QuerySet'lerin büyük bir bölümü onları filtreleme yeteneğidir. Diyelim ki
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(yazar=ben)
-[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>, <Post: Nefis bir gönderi>]
+>>> Post.objects.filter(author=me)
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Yada belkide içinde 'Başlık' kelimesi olan bütün gönderileri `başlık`alanında görmek istiyoruzdur?
@@ -138,8 +139,8 @@ Yada belkide içinde 'Başlık' kelimesi olan bütün gönderileri `başlık`ala
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(baslik__contains='Nefis')
-[<Post: Nefis bir gönderi>]
+>>> Post.objects.filter(title__contains='title')
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Not** `baslik` ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" şeklinde bir hata alacaksınız.
@@ -149,9 +150,9 @@ Ayrıca yayınlananmış olan tüm gönderilerin bir listesini de alabilirsiniz.
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> django.utils'ten zaman dilimlerini içe aktar
+>>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Maalesef python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Fakat bunu değiştirebiliriz! Önce yayınlamak istediğimiz bir gönderinin örneğini bulalım:
@@ -175,8 +176,8 @@ Ardından `yayinla` methodu ile gönderiyi yayınlayalım:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now())
-[<Post: Harika bir gönderi>]
+>>> Post.objects.filter(published_date__lte=timezone.now())
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### Nesneleri Sıralama
@@ -186,8 +187,8 @@ QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `yaratil
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.order_by('yaratilma_tarihi')
-[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>, <Post: Nefis bir gönderi>]
+>>> Post.objects.order_by('created_date')
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
@@ -195,16 +196,18 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.order_by('-yaratilma_tarihi')
-[<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]
+>>> Post.objects.order_by('-created_date')
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### Sorgu Setlerini Zincirlemek
 
 Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
-    >>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 Zincirleme gerçekten çok güçlüdür ve oldukça karmaşık sorgular yazmanıza imkan sağlar.
 
