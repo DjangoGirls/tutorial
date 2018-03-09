@@ -68,7 +68,7 @@ Essayez ceci dans votre template.
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Une dernière chose
 
