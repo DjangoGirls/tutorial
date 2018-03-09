@@ -68,7 +68,7 @@ Funguje to! Ale my chceme, aby sa príspevky zobrazili ako tie statické, ktoré
 
 ![Obrázok 13.3](images/step3.png)
 
-Všimla si si, že sme tentokrát použili trochu iný zápis `{{ post.title }}` alebo `{{ post.text }}`? Pristupujeme k údajom v každom z polí definovanom v našom `Post` modeli. Okrem toho `|linebreaks` preposiela texty príspevkov cez filter, ktorý konvertuje zalomenie riadkov na odstavce.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Pristupujeme k údajom v každom z polí definovanom v našom `Post` modeli. Okrem toho `|linebreaks` preposiela texty príspevkov cez filter, ktorý konvertuje zalomenie riadkov na odstavce.
 
 ## Ešte jedna vec
 
