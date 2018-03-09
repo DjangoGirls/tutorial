@@ -68,7 +68,7 @@ Próbáld ki a template-edben.
 
 ![13.3 ábra](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Az adatokat a `Post` modelben meghatározott mezők szerint érjük el. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Az adatokat a `Post` modelben meghatározott mezők szerint érjük el. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Még valami
 
