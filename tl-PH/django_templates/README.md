@@ -68,7 +68,7 @@ Gumana ito! Pero gusto nating i-display ang mga post gaya ng mga static na post 
 
 ![Tambilang 13.3](images/step3.png)
 
-Napansin mo ba na gumagamit tayo ng kakaibang notasyon ngayon (`{{ post.title }}` or `{{ post.text }})`? Tayo ay kukuha ng mga datos sa bawat field na nakalarawan sa ating `Post` na model. At, ang `|linebreaksbr` ay nagpipe nga mga teskto ng post sa filter para i-convert ang mga line-break sa mga talata.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Tayo ay kukuha ng mga datos sa bawat field na nakalarawan sa ating `Post` na model. At, ang `|linebreaksbr` ay nagpipe nga mga teskto ng post sa filter para i-convert ang mga line-break sa mga talata.
 
 ## Isa pang bagay
 
