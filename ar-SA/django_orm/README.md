@@ -105,6 +105,7 @@ NameError: name 'Post' is not defined
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 يا هلا! هل تريد التحقق من ما إذا كان يعمل؟
@@ -130,7 +131,7 @@ NameError: name 'Post' is not defined
 
 ```python
 >>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 أو ربما نريد أن نرى جميع المشاركات التي تحتوي على كلمة 'title' في الحقل `title`؟
@@ -139,7 +140,7 @@ NameError: name 'Post' is not defined
 
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **ملاحظة** هناك حرفان أسفل السطر (`_`) بين `title` و `contains`. يستخدم ORM دجانغو هذه القاعدة لفصل أسماء الحقول ("title") والعمليات أو الفلاتر ("contains"). إذا قمت باستخدام تسطير واحد فقط، سوف تحصل على خطأ مثل "FieldError: Cannot resolve keyword title_contains".
@@ -151,7 +152,7 @@ NameError: name 'Post' is not defined
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 للأسف، لم يتم نشر المشاركة التي أضفناها من وحدة تحكم بايثون بعد. ولكن يمكننا تغيير ذلك! احصل أولا على مثال لمشاركة نريد نشرها:
@@ -176,7 +177,7 @@ NameError: name 'Post' is not defined
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### العناصر الصادرة
@@ -187,7 +188,7 @@ QuerySets تسمح لك أيضا بترتيب قائمة الكائنات. دع�
 
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 يمكننا أيضا عكس الترتيب بإضافة `-` في البداية:
@@ -196,15 +197,17 @@ QuerySets تسمح لك أيضا بترتيب قائمة الكائنات. دع�
 
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### مجموعات الاستعلام المتسلسلة
 
 يمكنك أيضا دمج QuerySets من خلال **chaining** معا:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 هذا حقا قوي ويتيح لك كتابة استفسارات معقدة جدا.
 
