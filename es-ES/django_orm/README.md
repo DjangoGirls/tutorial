@@ -105,6 +105,7 @@ Ahora, finalmente, podemos crear nuestra entrada:
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 ¡Hurra! ¿Quieres probar si funcionó?
@@ -130,7 +131,7 @@ Una parte importante de los QuerySets es la habilidad para filtrar los resultado
 
 ```python
 >>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 ¿O quizá queremos ver todas las entradas que contengan la palabra 'title' en el campo `title`?
@@ -139,7 +140,7 @@ Una parte importante de los QuerySets es la habilidad para filtrar los resultado
 
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Nota** Hay dos guiones bajos (`_`) entre `title` y `contains`. El ORM de Django utiliza esta sintaxis para separar los nombres de los campos ("title") de las operaciones o filtros ("contains"). Si sólo utilizas un guión bajo, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
@@ -151,7 +152,7 @@ También puedes obtener una lista de todos los post publicados. Lo hacemos filtr
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 Por desgracia, el post que hemos añadido desde la consola de Python aùn no está publicado. Pero lo podemos cambiar! Primero obtèn una instancia de la entrada que queremos publicar:
@@ -176,7 +177,7 @@ Ahora vuelve a intentar obtener la lista de posts publicados (pulsa la tecla de 
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 ### Ordenar objetos
@@ -187,7 +188,7 @@ Los QuerySets también te permiten ordenar la lista de objetos. Intentemos orden
 
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 También podemos invertir el orden agregando `-` al principio:
@@ -196,15 +197,17 @@ También podemos invertir el orden agregando `-` al principio:
 
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 ### Encadenar QuerySets
 
 También puedes combinar QuerySets **encadenando** uno con otro:
 
-    >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    
+```python
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+```
 
 Es muy potente y te permite escribir consultas bastante complejas.
 
