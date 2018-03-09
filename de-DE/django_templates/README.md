@@ -68,7 +68,7 @@ Es funktioniert! But we want the posts to be displayed like the static posts we 
 
 ![Abbildung 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Und zum Schluss
 
