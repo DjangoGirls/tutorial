@@ -4,8 +4,8 @@ PythonAnywhere ile ücretsiz bir "Yeni Başlayan" hesabı için kaydolun:
 
 > **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle blogunuzun neyle ilgili olduğu için kendi takma adınızı veya bir adınızı seçin.
 
-## Creating a PythonAnywhere API token
+## PythonAnywhere API belirteci oluşturma
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
+Bu sadece bir kez yapmanız gereken bir şey. PythonAnywhere'e kaydolduğunuzda, ana ekranınıza götürüleceksiniz. "Hesaplar" sayfanızın sağ üstüne yakın link'i bulun ve "API belirteci" isimli sekmeyi seçerek "Yeni API belirteci oluştur" butonuna basın.
 
 ![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
