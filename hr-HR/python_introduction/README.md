@@ -2,7 +2,7 @@
 
 # Uvod u Python
 
-> Dio ovoga poglavlja temelji se na tutorialima Geek Girls Carrots-a (https://github.com/ggcarrots/django-carrots).
+> Dio ovoga poglavlja temelji se na tutorijalima Geek Girls Carrots-a (https://github.com/ggcarrots/django-carrots).
 
 Idemo nešto kodirati!
 
@@ -10,11 +10,11 @@ Idemo nešto kodirati!
 
 > Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) videu.
 
-Kako bismo se počeli igrati s Pythonom, moramo otvoriti *naredbeni redak*. To bi već trebala znati - učili smo to u poglavlju [Uvod u naredbeni redak](../intro_to_command_line/README.md).
+Kako bismo se počeli igrati s Pythonom, moramo otvoriti *naredbeni redak*. To ne bi trebao biti problem - učili smo to u poglavlju [Uvod u naredbeni redak](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Kada si spremna, prati sljedeće upute.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Želimo otvoriti Python konzolu. Upiši `python` ako si na Windowsima, a `python3` na Mac OS/Linuxu i pritisni `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +24,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Tvoja prva Python naredba!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Nakon što smo pokrenuli naredbu Python, prompt se promijenio u `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
