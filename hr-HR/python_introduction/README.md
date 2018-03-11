@@ -412,12 +412,12 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Vidi, još jedna greška! Ova je **KeyError**- Python je koristan i kaže ti da ključ `'age'` ne postoji u ovom rječniku.
+Vidi, još jedna greška! Ova je **KeyError** - Python je koristan i kaže ti da ključ `'age'` ne postoji u ovom rječniku.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Kada bi se trebao koristiti rječnik, a kada lista? To je dobro pitanje za promišljanje. Imaj nekakvo rješenje na umu prije nego što pogledaš odgovor u sljedećem retku.
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Trebaš li samo poredani niz stvari? Odaberi listu.
+- Trebaš li povezati vrijednosti sa ključevima kako bi se poslije efikasno moglo pretraživati pomoću ključa? Odaberi rječnik.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
@@ -463,7 +463,7 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Summary
+### Sažetak
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
@@ -474,7 +474,7 @@ Awesome! You know a lot about programming now. In this last part you learned abo
 
 Excited for the next part? :)
 
-## Compare things
+## Uspoređivanje stvari
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
@@ -579,7 +579,7 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Vježbaj i zabavi se s Booleanima tako da pokušaš izvesti iduće naredbe:
 
 - `True and True`
 - `False and True`
