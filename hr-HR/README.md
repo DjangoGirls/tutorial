@@ -12,11 +12,11 @@ Kao i sa svim nepoznatim stvarima, ovo će biti avantura - ali bez brige, buduć
 
 ## Uvod
 
-Jesi li se ikada osjećala kako je u svijetu sve više i više tehnologije koju (još) ne možeš shvatiti? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Jesi li se ikada osjećala kako je u svijetu sve više i više tehnologije koju (još) ne možeš shvatiti? Jesi li se ikada pitala kako stvoriti web stranicu ali nisi imala dovoljno motivacije započeti? Jesi li ikad mislila da je svijet softvera presložen za tebe da uopće pokušaš raditi nešto na svoju ruku?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+E pa, imamo odlične vijesti za tebe! Programiranje uopće nije tako teško kao što se čini i želimo ti pokazati koliko može biti zabavno.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Ovaj tutorijal te neće čarobno pretvoriti u programera. Ako želiš biti odlična u tome, trebat će ti mjeseci ili čak godine učenja i vježbe. Ali mi ti želimo pokazati kako programiranje i stvaranje web stranica ne mora biti teško kao što se čini. Pokušat ćemo ti objasniti različite dijelove što bolje možemo, da se ne osjećaš zastrašeno tehnologijom.
 
 We hope that we'll be able to make you love technology as much as we do!
 
