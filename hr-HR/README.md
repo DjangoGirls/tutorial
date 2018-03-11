@@ -28,13 +28,13 @@ Blog će (više-manje) izgledati ovako:
 
 ![Figure 0.1](images/application.png)
 
-> Ako samostalno prolaziš tutorijal i nemaš učitelja koji će ti pomoći s bilo kakvim problemom, imamo *chat* sustav za tebe: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Ako samostalno prolaziš tutorijal i nemaš učitelja koji će ti pomoći s bilo kakvim problemom, imamo *chat* sustav za tebe: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Zamolili smo naše učitelje i prošle pohađatelje da budu tamo s vremena na vrijeme i pomognu drugima s tutorijalom! Ne boj se postavljanja pitanja!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK,[krenimo od početka...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Praćenje tutorijala kod kuće
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Nevjerojatno je biti dio Django Girls radionica, ali svjesni smo da to nije uvijek moguće. Zato te potičemo da pokušaš pratiti ovaj tutorijal i kod kuće. Za čitatelje doma, trenutno pripremamo videe s kojim će ti biti lakše pratiti tutorijale na svoju ruku. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
