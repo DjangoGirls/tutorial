@@ -173,9 +173,9 @@ Radi! Iskoristili smo `str()` funkciju unutar `len()` funkcije. `str()` pretvara
 
 ## Varijable
 
-Bitan koncept u programiranju su varijable. Varijabla nije ništa više nego ime za nešto pomoću kojega to nešto možeš poslije koristiti. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Bitan koncept u programiranju su varijable. Varijabla nije ništa više nego ime za nešto pomoću kojega to nešto možeš poslije koristiti. Programeri koriste varijable za spremanje podataka, osiguranje čitljivosti koda te kako ne bi morali stalno pamtiti koja im vrijednost sljedeća treba.
 
-Let's say we want to create a new variable called `name`:
+Recimo da želimo stvoriti novu varijablu nazvanu `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Utipkamo name jednako Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+Kao što si primijetila, tvoj program nije ništa vratio kao što je to prije činio. Kako onda znamo da varijabla zaista postoji? Jednostavno upiši `name` i pritisni `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Jupii! Tvoja prva varijabla! :) Uvijek možeš promijeniti na što se ona odnosi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Možeš ju također koristiti u funkcijama:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Super, zar ne? Naravno, varijable mogu bili bilo što - pa i brojevi! Pokušaj ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Ali što ako smo iskoristili krivo ime? Možeš li pogoditi što bi se dogodilo? Isprobajmo!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Greška! Ko što vidiš, Python ima različite vrste grešaka, a ova se zove **NameError**. Python će ti javiti ovu grešku ako pokušaš koristiti varijablu koja još nije definirana. Ako se kasnije susretneš s ovom greškom, provjeri svoj kod da vidiš imaš li krivo napisanih imena.
 
-Play with this for a while and see what you can do!
+Igraj se s ovime neko vrijeme i vidi što sve možeš raditi!
 
-## The print function
+## Funkcija print
 
-Try this:
+Isprobaj ovo:
 
 {% filename %}command-line{% endfilename %}
 
