@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Extend your application
 
 We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
@@ -25,23 +27,23 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
 {% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
 {% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-`blog.views.post_detail` is a path to a `post_detail` *view* we want to create. Please note: `blog` is the name of our application (the directory `blog`), `views` is from the name of the `views.py` file and the last bit – `post_detail` – is the name of the *view*.
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
 And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we don't have a URL or a *view* for `post_detail`). It will look like this:
+Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -53,7 +55,7 @@ We want our first post's detail to be displayed at this **URL**: http://127.0.0.
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 ```python
 from django.conf.urls import url
 from . import views
@@ -85,7 +87,7 @@ This time our *view* is given an extra parameter, `pk`. Our *view* needs to catc
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 ```python
 Post.objects.get(pk=pk)
 ```
@@ -101,6 +103,8 @@ We don't want that! But, of course, Django comes with something that will handle
 The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
 OK, time to add a *view* to our `views.py` file!
+
+In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called  `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
 We should open `blog/views.py` and add the following code near the other `from` lines:
 
@@ -161,9 +165,10 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 Yay! It works!
 
-## One more thing: deploy time!
 
-It'd be good to see if your website will still be working on PythonAnywhere, right? Let's try deploying again.
+# Deploy time!
+
+It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -178,11 +183,29 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd my-first-blog
+$ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull
 [...]
 ```
 
-Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+
+
+## Updating the static files on the server
+
+Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster.  As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them.  The command is called `collectstatic`.
+
+Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+
+{% filename %}command-line{% endfilename %}
+```
+$ workon <your-pythonanywhere-username>.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
+[...]
+```
+
+The `manage.py collectstatic` command is a bit like `manage.py migrate`.  We make some changes to our code, and then we tell Django to _apply_ those changes, either to the server's collection of static files, or to the database.
+
+In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
 And that should be it! Congrats :)

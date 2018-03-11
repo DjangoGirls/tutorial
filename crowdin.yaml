@@ -1,19 +1,3 @@
-project_identifier: django-girls-tutorial
-api_key: 2be4b1707d0745bc96e9a5c9ffb4ca9b
-base_path: /Users/olasitarska/Desktop/Events/Django Girls/tutorial
-
 files:
-  -
-    source: "/en/**/*.md"
-    translation: "/%two_letters_code%/%original_path%/%original_file_name%"
-    ignore:
-      - /_book
-      - /node_modules
-      - /CONTRIBUTING.md
-  -
-    source: "/en/*.md"
-    translation: "/%two_letters_code%/%original_file_name%"
-    ignore:
-      - /_book
-      - /node_modules
-      - /CONTRIBUTING.md
+  - source: /en/**/*.md
+    translation: '/%locale%/**/%original_file_name%'

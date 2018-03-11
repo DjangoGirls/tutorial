@@ -444,7 +444,7 @@ Už jsi někdy slyšela výraz "srovnávat jablka a hrušky"? Zkusme v Pythonu e
 >>> 1 > 'django'
 Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Zde vidíš, že stejně jako nelze srovnávat "jablka a hrušky", Python není schopen porovnávat řetězce (`str`) a čísla (`int`). Místo toho zobrazí **TypeError** a říká nám, že tyto dva typy nelze srovnávat společně.

@@ -8,7 +8,7 @@ A URL is simply a web address. You can see a URL every time you visit a website 
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match with the requested URL to find the correct view.
+Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## How do URLs work in Django?
 
@@ -33,18 +33,18 @@ As you can see, Django has already put something here for us.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
-The admin URL, which you visited in previous chapter, is already here:
+The admin URL, which you visited in the previous chapter, is already here:
 
 {% filename %}mysite/urls.py{% endfilename %}
 ```python
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
-Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go in detail over how they work.
+Do you wonder how Django matches URLs to views? Well, this part is tricky. Django uses `regex`, short for "regular expressions". Regex has a lot (a lot!) of rules that form a search pattern. Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
@@ -60,9 +60,9 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
 
 Writing separate views for all the post numbers would be really annoying. With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the url (right after `^`)
+* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** means that there will be a number (one or more digits) and that we want the number captured and extracted
-* **/** tells django that another `/` character should follow
+* **/** tells Django that another `/` character should follow
 * **$** then indicates the end of the URL meaning that only strings ending with the `/` will match this pattern
 
 
@@ -72,13 +72,14 @@ Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home pa
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so **you will need** to add that to the import on the first line of the file.
+Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
 
 Your `mysite/urls.py` file should now look like this:
 
 {% filename %}mysite/urls.py{% endfilename %}
 ```python
-from django.conf.urls import include, url
+from django.conf.urls import include
+from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
@@ -87,14 +88,14 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and look for further instructions there.
+Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
 
 Writing regular expressions in Python is always done with `r` in front of the string. This is a helpful hint for Python that the string may contain special characters that are not meant for Python itself, but for the regular expression instead.
 
 
 ## blog.urls
 
-Create a new empty file named `blog/urls.py`. All right! Add these first two lines:
+Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
@@ -121,6 +122,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage your `/admin/` will also not work. No worries – we will get there.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.10/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/1.11/topics/http/urls/

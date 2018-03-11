@@ -6,7 +6,7 @@ Time to display some data! Django gives us some helpful built-in __template tags
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
-__Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster and easier. Cool!
+__Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
 ## Display post list template
 
@@ -27,7 +27,7 @@ As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-[<Post: My second post>, <Post: My first post>]
+<QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template you do them like this:
@@ -64,7 +64,7 @@ It works! But we want the posts to be displayed like the static posts we created
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }})`? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 
 ## One more thing
@@ -87,7 +87,7 @@ $ git push
 
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ cd my-first-blog
 $ git pull

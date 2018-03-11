@@ -12,7 +12,7 @@
 
 ### Чи можете ви порекомендувати інші джерела?
 
-Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/).
+Так! Спершу, спробуйте нашу іншу книгу [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org).
 
 Пізніше, ви можете спробувати джерела, перелічені нижче. Дуже рекомендуємо!
 - [Django's official tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
@@ -21,6 +21,6 @@
 - [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
 - [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://gettingstartedwithdjango.com/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 - [Two Scoops of Django: Best Practices for Django 1.8 book](https://twoscoopspress.com/products/two-scoops-of-django-1-8)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/)

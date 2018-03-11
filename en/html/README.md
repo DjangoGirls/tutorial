@@ -2,13 +2,13 @@
 
 What's a template, you may ask?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter, because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, __How the Internet works__).
 
 ## What is HTML?
 
-HTML is a simple code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
 HTML stands for "HyperText Markup Language". __HyperText__ means it's a type of text that supports hyperlinks between pages. __Markup__ means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with __tags__, each one starting with `<` and ending with `>`. These tags represent markup __elements__.
 
@@ -30,7 +30,7 @@ And now create a `post_list.html` file (just leave it blank for now) inside the 
 
 See how your website looks now: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
+> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
 
@@ -104,7 +104,7 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<p>A paragraph of text</p>`
 - `<em>text</em>` emphasizes your text
 - `<strong>text</strong>` strongly emphasizes your text
-- `<br />` goes to another line (you can't put anything inside br)
+- `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
 - `<a href="https://djangogirls.org">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
@@ -119,7 +119,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div>
@@ -140,7 +140,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 We've created three `div` sections here.
 
 - The first `div` element contains the title of our blog – it's a heading and a link
-- Another two `div` elements contain our blogposts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blogpost.
+- Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 It gives us this effect:
 
@@ -163,7 +163,7 @@ First off, let's see what files have changed since we last deployed (run these c
 $ git status
 ```
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes within this directory:
+Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -201,10 +201,12 @@ $ git push
 
 {% filename %}command-line{% endfilename %}
 ```
-$ cd ~/my-first-blog
+$ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull
 [...]
 ```
+
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
 And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
 

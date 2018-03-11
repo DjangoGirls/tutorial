@@ -99,7 +99,7 @@ Y ahora agrega esta línea al inicio del archivo:
     {% extends 'blog/base.html' %}
 ``` 
 
-Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_list.html`. Sólo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block content %}` y `{% endblock content %}`. Como esto:
+Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_list.html`. Sólo nos falta una cosa: poner todo (excepto la línea que acabamos de agregar) entre `{% block content %}` y `{% endblock %}`. Como esto:
 
 ``` html
     {% extends 'blog/base.html' %}
@@ -114,7 +114,7 @@ Significa que ahora estamos extendiendo de la plantilla `base.html` en `post_lis
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    {% endblock content %}
+    {% endblock %}
 ```
 
 ¡Eso es todo! Verifica que tu sitio web aún funcione apropiadamente :)

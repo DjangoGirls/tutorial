@@ -45,7 +45,8 @@ Uděláš to tak, že vytvoříš složku s názvem `static` uvnitř aplikace bl
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```    
 

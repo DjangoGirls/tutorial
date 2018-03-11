@@ -44,7 +44,8 @@ Esto lo conseguimos creando una carpeta llamada `static` dentro de la aplicació
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
     
 

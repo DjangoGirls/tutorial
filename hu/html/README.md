@@ -102,6 +102,7 @@ Most szórakozásképpen próbáld módosítani a template-edet! Itt van néhán
 *   `<h1>A heading</h1>` - a legfontosabb címedhez
 *   `<h2>A sub-heading</h2>` cím a következő szintre
 *   `<h3>A sub-sub-heading</h3>` ... és így tovább, egészen `<h6>`-ig
+*   `<p>Egy bekezdésnyi szöveg</p>`
 *   `<em>text</em>` dőlt szöveghez
 *   `<strong>text</strong>` a szöveg kiemeléséhez
 *   `<br />` új sor kezdéséhez (nem mindenhová rakhatsz br-t)
@@ -109,7 +110,7 @@ Most szórakozásképpen próbáld módosítani a template-edet! Itt van néhán
 *   `<ul><li>first item</li><li>second item</li></ul>` létrehoz egy listát, akárcsak ezt itt!
 *   `<div></div>` az oldal szakaszainak megadásához
 
-Itt a példa egy teljes template-re:
+Itt a példa egy teljes template-re, másold be a `blog/templates/blog/post_list.html` file-ba:
 
 ```html
 <html>
@@ -167,7 +168,7 @@ A `djangogirls` mappában kell lenned, és a `git`-tel add hozzá az összes vá
     $ git add --all .
     
 
-> **Megjegytés** `-A` (az "all" rövidítése) azt jelenti, hogy a `git` felismeri, ha fájlokat törölsz (alapból csak az új, és módosított fájlokat ismeri fel). Korábban már volt róla szó (a 3. fejezetben), hogy a `.` az aktuális mappát jelenti.
+> **Megjegyzés** `-a` (az "all" rövidítése) azt jelenti, hogy a `git` felismeri, ha fájlokat törölsz (alapból csak az új, és módosított fájlokat ismeri fel). Korábban már volt róla szó (a 3. fejezetben), hogy a `.` az aktuális mappát jelenti.
 
 Mielőtt továbbmegyünk ellenőrizzük, hogy a `git` mit szeretne feltölteni (zölddel jelennek meg azok a fájlok, amiket a `git` fel akar tölteni):
 
@@ -196,9 +197,6 @@ Miután ezzel megvagy, töltsd fel (push) a változtatásaidat Github-ra:
     $ source myvenv/bin/activate
     (myvenv)$ git pull
     [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-    
 
 A fájljaid már itt is vannak. Ha le akarod csekkolni, akkor menj át a **Files tab**-ra és nézd meg a kódodat PythonAnywhere-en.
 

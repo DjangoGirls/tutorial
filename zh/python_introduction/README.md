@@ -322,7 +322,7 @@
 
 我希望你能觉得到目前为止这些都合情合理。:)准备享受更多字典的乐趣吗？跳到下一行去做一些更有趣的事情。
 
-你可以使用`del`命令去删除字典里的元素。 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
+你可以使用`pop() `语句去删除字典里的元素。 比如，如果你想删除键`'favorite_numbers'`所对应的项，只需要键入如下命令：
 
     >>> participant.pop('favorite_numbers')
     >>> participant
@@ -406,7 +406,7 @@
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
     
 
 在这里你看到就像在这表达式中，Python 是不能比较数字 （`int`） 和字符串 （`str`）。 相反，它显示一个 **TypeError**，并告诉我们两个类型不能相互比较。

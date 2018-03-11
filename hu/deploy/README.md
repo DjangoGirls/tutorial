@@ -6,19 +6,16 @@ Ezidáig a honlapod csak a saját számítógépeden volt elérhető - most tanu
 
 Ahogyan azt már tudod, a honlapot egy szerveren kell elhelyezni. Több szerver szolgáltató is elérhető az interneten. Mi egy olyat fogunk használni, amit viszonylag egyszerű kezelni: [PythonAnywhere][1]. A PythonAnywhere ingyenes olyan kisebb alkalmazások számára, amelyeknek nincs sok látogatójuk, tehát a mi esetünkben ez pont megfelelő lesz.
 
- [1]: https://pythonanywhere.com/
+ [1]: https://www.pythonanywhere.com/
 
 A másik külső szolgáltatás, amit igénybe fogunk venni a [GitHub][2], ami egy ún. code hosting service (forráskód tárolására és megosztására alkalmas online tárhely). Vannak más hozzá hasonló szolgáltatók is, de szinte minden programozó ezt használja manapság, és nemsokára te is közéjük tartozhatsz!
 
  [2]: https://www.github.com
 
-A GitHubról fogjuk a forráskódunkat áthelyezni a PythonAnywhere-be, és fordítva.
+Ez a három hely lesz fontos. A saját számítógéped lesz az a hely, ahol fejlesztesz és tesztelsz. Amikor elégedett vagy a módosításaiddal, felmásolod a programodat GitHub-ra. A website-od a PythonAnywhere-en lesz, és a GitHub-ról fogod frissíteni.
+
 
 # Git
-
-A Git egy "version control system" (VCS, magyarul verziókezelő rendszer), amit sok programozó használ. Ez a szoftver nyomon követ minden változást a fájlokban, így a későbbiekben is visszatérhetünk egy bizonyos régebbi verzióhoz. Valamelyest hasonlít a "változások nyomon követése" funkcióhoz a Microsoft Wordben, de ez jóval hatékonyabb.
-
-## Git telepítése
 
 > **Megjegyzés** Ha már követted a korábbi telepítési utasításokat, ezt a pontot átugorhatod és kezdheted kialakítani a saját Git csomagtáradat!
 
@@ -40,16 +37,23 @@ A git csomagtár inicializálása olyasvalami, amit minden projekt esetében csa
 
 A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen a mappán belül. De vannak bizonyos fájlok, amiket nem szeretnénk figyelembe venni. Ezt úgy tehetjük meg, hogy létrehozunk egy fájlt `.gitignore` névvel a gyökérkönyvtárban. Nyisd meg a szövegszerkesztőt és hozz létre egy új fájlt, amibe az alábbi sorok kerülnek:
 
-    *.pyc 
-    __pycache__ 
-    myvenv 
-    db.sqlite3 
-    .DS_Store
+{% filename %}.gitignore{% endfilename %}
+```
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+```
     
 
 Majd mentsd le `.gitignore` néven a "djangogirls" legfelsőbb mappájában.
 
 > **Megjegyzés** Nagyon fontos, hogy a fájl neve ponttal kezdődjön! Ha bármi gond adódna a fájl létrehozásánál (pl. Mac számítógépeken a Finder alapvetően nem engedi, hogy a fájlnév ponttal kezdődjön), akkor használd a "Save as" lehetőséget.
+
+> **Megjegyzés** A `.gitignore` file-ban megadott file-ok egyike a `db.sqlite3`. Ez a file a lokális adatbázisod, ez tárolja az összes blogposztodat. Nem akarjuk hozzáadni a repository-hoz, mert a PythonAnywhere-en lévő weboldal egy másik adatbázist fog használni. Az az adatbázis lehet SQLite, mint a fejlesztői gépeden, de többnyire egy MySQL nevűt fogsz használni, amely jóval több látogatót tud kiszolgálni mint az SQLite. Akármelyiket választod, azzal hogy az SQLite adatbázisod kihagyjuk a GitHub másolatból, az összes blogpost amelyet eddig létrehoztál csak lokálisan lesz elérhető, a publikus weboldalon újra létre kell majd ezeket hozni. Gondolj úgy a lokális adatbázisodra, mint egy  játszótérrel, ahol kipróbálhatsz különböző dolgokat és nem kell attól tartanod, hogy valódi posztokat fogsz törölni a blogodról.
 
 Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint ezen kívül még bármikor, ha tudni szeretnéd, hogy mi változott. Ez majd segít elkerülni olyan szituációkat, mint például rossz fájlok hozzáadása ill. feltöltése a csomagtárba. A `git status` parancs információt szolgáltat minden nem követett (not tracked) / megváltozott (modified) /feltöltésre felkészített fájlról (staged files) stb. A kimenet ehhez hasonló lesz:
 
@@ -167,20 +171,21 @@ Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizhete
 
 Ugyanúgy, ahogy a saját gépeden csináltad, a PythonAnywhere-en is létrehozhatsz virtualenvet. Írd be a Bash konzolba:
 
+{% filename %}PythonAnywhere parancssor{% endfilename %}
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.4 myvenv
-Running virtualenv with interpreter /usr/bin/python3.4
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
 [...]
 Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(mvenv) $  pip install django whitenoise
+(myvenv) $  pip install django~=1.11.0
 Collecting django
 [...]
-Successfully installed django-1.8.2 whitenoise-2.0
+Successfully installed django-1.11.3
 ```
 
 
@@ -188,40 +193,19 @@ Successfully installed django-1.8.2 whitenoise-2.0
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
-### Statikus fájlok összegyűjtése.
+## Tegyük közzé a blogot a weben!
 
-Kíváncsi vagy, mi ez a "whitenoise" nevű dolog? Egy eszköz az úgynevezett "statikus fájlok" kiszolgálására. A statikus fájlok olyan fájlok, amelyek nem változnak meg rendszeresen, vagy nem futtatnak programkódot - mint például a HTML vagy a CSS fájlok. A szervereken ezek másképp működnek, mint a saját gépünkön, ezért szükségünk van egy olyan eszközre, mint a "whitenoise", hogy kiszolgáljuk őket.
+Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!
 
-A statikus fájlokról többet is tanulsz majd a tutorial során, amikor a CSS-t fogod szerkeszteni a honlapodhoz.
+Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a **Web** tabra. Végül nyomd meg a **Add a new web app** gombot.
 
-Egyelőre csak egy `collectstatic` parancsot kell lefuttatnod a szerveren. Ez megmondja a Django-nak, hogy gyűjtse össze a szerveren az összes statikus fájlt, amire szüksége lesz. Ezek most többnyire olyan fájlok, amik az adminfelület kinézetét adják.
+Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi konfiguráció - vigyázz, *ne* a "Django" opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a **Python 3.4**-et, majd nyomd meg a Nextet.
 
-    (mvenv) $ python manage.py collectstatic
-    
-    You have requested to collect static files at the destination
-    location as specified in your settings:
-    
-        /home/edith/my-first-blog/static
-    
-    This will overwrite existing files!
-    Are you sure you want to do this?
-    
-    Type 'yes' to continue, or 'no' to cancel: yes
-    
-
-Írd be, hogy "yes", és el is tűnik! Te is imádod, ha kiírathatsz a gépeddel egy csomó érthetetlen szöveget? Én mindig fura hangokat adok ki ilyenkor, nagyon jól illik hozzá. Brp, brp, brp...
-
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js'
-    [...]
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css'
-    Copying '/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css'
-    62 static files copied to '/home/edith/my-first-blog/static'.
-    
+> **Megjegyzés** Fontos, hogy a "Manual configuration" lehetőséget válaszd, ne a "Django"-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)
 
 ### Adatbázis létrehozása PythonAnywhere-en
 
-Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző szervert használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.
+Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző adatbázist használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.
 
 A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, a `migrate` és `createsuperuser` parancsokkal:
 
@@ -233,16 +217,6 @@ A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, 
     
     (mvenv) $ python manage.py createsuperuser
     
-
-## Tegyük közzé a blogot a weben!
-
-Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!
-
-Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a **Web** tabra. Végül nyomd meg a **Add a new web app** gombot.
-
-Miután leokéztad a domainnevedet, válaszd a **manual configuration**-t (kézi konfiguráció - vigyázz, *ne* a "Django" opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a **Python 3.4**-et, majd nyomd meg a Nextet.
-
-> **Megjegyzés** Fontos, hogy a "Manual configuration" lehetőséget válaszd, ne a "Django"-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)
 
 ### Virtuális környezet beállítása
 
@@ -275,13 +249,16 @@ if path not in sys.path:
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(get_wsgi_application())
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
 ```
 
 > **Megjegyzés** Ne felejtsd el a saját felhasználóneveddel helyettesíteni a `<your-username>`-et!
+> **Megjegyzés** A negyedik sorban gondoskodunk arról, hogy Python megtalálja a programunkat. Fontos, hogy ez az elérési út helyes legyen, és különösen hogy ne legyenek benne fölösleges szóközök. Különben "ImportError" hibát fogsz találni a logfile-ban.
 
-Ennek a fájlnak az a dolga, hogy megmondja a PythonAnywhere-nek, hol lakik a webes alkalmazásunk, és mi annak a fájlnak a neve, ahol a Django beállításai vannak. Ezenkívül a "whitenoise"-t is beállítja, ami a statikus fájlok kiszolgálásában segít.
+Ennek a fájlnak az a dolga, hogy megmondja a PythonAnywhere-nek, hol lakik a webes alkalmazásunk, és mi annak a fájlnak a neve, ahol a Django beállításai vannak.
+
+A `StaticFilesHandler` a CSS-ünkről gondoskodik. Helyi fejlesztéskor a `runserver` parancs látja el ezt a feladatot. Kicsivel később behatóbban megismerkedünk a statikus file-okkal, amikor a weboldalunk CSS-ét szerkesztjük.
 
 Nyomd meg a **Save** (Mentés) gombot, majd menj vissza a **Web** fülre.
 
@@ -310,5 +287,7 @@ Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely
 # Él a weboldalad!
 
 A honlapod alapértelmezett oldala a "Welcome to Django", ugyanúgy, mint a saját gépeden. Add hozzá az `/admin/`-t az URL végéhez, és az adminfelületre kerülsz. Jelentkezz be a felhasználóneveddel és a jelszavaddal, és látni fogod, hogy itt is tudsz új Postokat létrehozni.
+
+Ha már létrehoztál pár blogpostot, válts vissza a helyi gépedre (nem PythonAnywhere). Ezután a helyi gépeden érdemes dolgoznod. Ez gyakori munkafolyamat webfejlesztéskor - lokális fejlesztés, a változtatások feltöltése GitHub-ra, majd letöltése az éles webszerverre. Ez lehetővé teszi, hogy kisérletezz a éles webszervered elrontása nélkül. Vagány, mi?
 
 Megérdemelsz egy *HATALMAS* vállveregetést! A szerver deployment a webfejlesztés legbonyolultabb részei közé tartozik, és a fejlesztők gyakran napokat töltenek azzal, hogy mindent működésre bírjanak. De neked most komolyan van egy működő weboldalad, az Interneten, és nem is tartott sokáig megcsinálni!

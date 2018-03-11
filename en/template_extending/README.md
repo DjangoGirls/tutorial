@@ -102,7 +102,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again.
 We want to use this as part of our template for all the content blocks.
 Time to add block tags to this file!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock content %}`. Like this:{% endraw %}
+{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html

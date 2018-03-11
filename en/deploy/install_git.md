@@ -2,14 +2,15 @@ Git is a "version control system" used by a lot of programmers. This software ca
 
 ## Installing Git
 
-<!--sec data-title="Windows" data-id="git_install_windows"
+<!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the fifth step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
+Do not forget to restart the command prompt or powershell after the installation finished successfully.
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Download Git from [git-scm.com](https://git-scm.com/) and just follow the instructions.
@@ -18,7 +19,7 @@ Download Git from [git-scm.com](https://git-scm.com/) and just follow the instru
 
 <!--endsec-->
 
-<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+<!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -28,17 +29,7 @@ $ sudo apt-get install git
 
 <!--endsec-->
 
-<!--sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21"
-data-collapse=true ces-->
-
-{% filename %}command-line{% endfilename %}
-```bash
-$ sudo yum install git
-```
-
-<!--endsec-->
-
-<!--sec data-title="Fedora 22+" data-id="git_install_fedora_22"
+<!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -48,7 +39,7 @@ $ sudo dnf install git
 
 <!--endsec-->
 
-<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+<!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}

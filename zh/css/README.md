@@ -6,7 +6,7 @@
 
 层叠样式表(Cascading Style Sheets)是一种语言，用来描述使用标记语言(如HTML)写成的网站的外观和格式。把它当做我们网站的化妆 ;)。
 
-但我们不想总是从零开始，对吧？ 我们将会再一次采用程序们编写并发布到互联网上的免费玩意。 重新发明轮子十分无趣，你懂的。
+但我们不想总是从零开始，对吧？ 我们将会再一次采用程序员们编写并发布到互联网上的免费玩意。 重新发明轮子十分无趣，你懂的。
 
 ## 让我们用 Bootstrap 吧！
 
@@ -47,7 +47,8 @@ Django已经知道到何处找到内建“admin”应用的静态文件。现在
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 ```
 
@@ -169,7 +170,7 @@ Django会自动找到你应用文件夹目录下所有名字叫“static”的�
 ```
 
 
-这行将从谷歌的字体 （https://www.google.com/fonts） 中导入称为 *龙虾*的字体 。
+这行将从谷歌的字体 （ https://www.google.com/fonts ） 中导入称为 *龙虾*的字体 。
 
 现在添加一行 `font-family: 'Lobster';` 到CSS文件 `blog/static/css/blog.css` 的 `h1 a` 声明块中(花括弧 `{` 与 `}` 之间的代码)，然后刷新页面：
 

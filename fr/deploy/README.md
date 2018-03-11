@@ -6,7 +6,7 @@ Jusqu'à présent, votre site web n'était seulement disponible que sur votre or
 
 Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de très nombreux fournisseurs de serveurs sur Internet. Nous allons en utiliser un qui dispose d'un système de déploiement relativement simple : [PythonAnywhere][1]. PythonAnywhere est gratuit pour les petites applications qui n'ont pas beaucoup de visiteurs : cela correspond parfaitement à ce dont nous avons besoin pour le moment.
 
- [1]: https://pythonanywhere.com/
+ [1]: https://www.pythonanywhere.com/
 
 Nous allons aussi utiliser les services [GitHub][2], ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
 
@@ -181,10 +181,10 @@ Tout comme sur votre ordinateur, vous allez devoir créer un environnement virtu
     $ source myvenv/bin/activate
 
 
-    (mvenv) $  pip install django~=1.10.0
+    (mvenv) $  pip install django~=1.11.0
     Collecting django
     [...]
-    Successfully installed django-1.10
+    Successfully installed django-1.11
 
 
 > **Note** : L'étape `pip install` peut prendre quelques minutes. Patience, patience ! Cependant, si cela prend plus de 5 minutes, c'est que quelque chose ne va pas. N'hésitez pas à solliciter votre coach.
@@ -210,7 +210,7 @@ Pour créer une base de données sur PythonAnywhere, nous allons taper les même
 
 ## Faire de votre blog une application web
 
-Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt, les fichiers statiques sont recueillis et la base de données est initialisée. Nous sommes prêts à le publier comme une application web !
+Maintenant, notre code est sur PythonAnywhere, notre virtualenv est prêt et la base de données est initialisée. Nous sommes prêts à le publier comme une application web !
 
 Retourner sur la page d'accueil de PythonAnywhere en cliquant sur le logo en haut à gauche. Ensuite, cliquez sur l'onglet **Web** et **Add a new web app**.
 
@@ -270,7 +270,7 @@ Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-*   Oublier une étape lors du passage dans la console. Vous devriez avoir fait toutes les étapes suivantes : créer un environnement virtuel, l'activer, installer Django, lancer la commande "collectstatic" et enfin créer la base de données.
+*   Oublier une étape lors du passage dans la console. Vous devriez avoir fait toutes les étapes suivantes : créer un environnement virtuel, l'activer, installer Django et enfin créer la base de données.
 
 *   Se tromper dans le chemin d'accès à l'environnement virtuel : si c'est le cas, vous trouverez un petit message d'erreur en rouge dans l'onglet "web", section virtualenv.
 

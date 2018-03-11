@@ -71,4 +71,4 @@ def post_list(request):
 
 És megvan! Itt az idő visszatérni a template-hez és megjeleníteni ezt a QuerySet-et!
 
-Ha utána szeretnél olvasni a QuerySet-nek, itt megteheted: https://docs.djangoproject.com/en/1.8/ref/models/querysets/
+Ha utána szeretnél olvasni a QuerySet-nek, itt megteheted: https://docs.djangoproject.com/en/1.11/ref/models/querysets/

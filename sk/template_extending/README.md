@@ -1,24 +1,25 @@
 # Rozširovanie šablón
 
-Ďalšou milou vecou, ktorú ti Django ponúka je **rozširovanie šablón**. Znamená to, že môžeš použiť rovnaké časti HTML kódu na rôznych stránkach svojho webu.
+Ďalšia super možnosť, ktorú ti Django ponúka je **rozširovanie šablón**. Znamená to, že môžeš použiť rovnaké časti HTML kódu na rôznych stránkach svojho webu.
 
-Vďaka tomu nemusíš všetko opakovať v každom súbore, ak chceš použiť rovnakú informáciu alebo layout. A ak chceš niečo zmeniť, nemusíš to robiť v každej šablóne zvlášť, ale iba raz!
+Šablóny ti pomôžu, keď chceš použiť rovnaké informácie alebo zobrazenie na viac ako jednom mieste. Nemusíš dokola opakovať to isté. A ak chceš niečo zmeniť, nemusíš to urobiť v každej šablóne, len v jednej!
 
 ## Vytvorenie základnej šablóny
 
-Základná šablóna je jednoducho šablóna, ktorú rozširuješ na každej stránke svojej web stránky.
+Základná šablóna je najzákladnejšia šablóna, ktorú rozširuješ na každej stránke svojej web stránky.
 
 Vytvorme súbor `base.html` v `blog/templates/blog/`:
 
-```
-blog
-└───templates
-    └───blog
-            base.html
-            post_list.html
-```
+    blog
+    └───templates
+        └───blog
+                base.html
+                post_list.html
+    
 
 Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
@@ -56,6 +57,8 @@ Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
 
 Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) týmto:
 
+{% filename %}blog/templates/blog/base.html{% endfilename %}
+
 ```html
 <body>
     <div class="page-header">
@@ -72,16 +75,20 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 </body>
 ```
 
-V podstate sme nahradili všetko medzi `{% for post in posts %}{% endfor %}` týmto:
+{% raw %}Možno si si všimla, že toto nahradilo všetko od `{% for post in posts %}` po `{% endfor %}` s: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% block content %}
 {% endblock %}
 ```
 
-Čo to znamená? Práve si vytvorila `block` (blok), čo je vlastne šablóna tagov, ktorá ti umožní vkladať HTML v tomto bloku do ďalších šablón, ktoré rozširujú `base.html`. Hneď ti ukážeme, ako sa to robí.
+Ale prečo? Práve si vytvorila `block`! Použila si šablónový tag `{% block %}` aby si vytvoila časť, do ktorej bude vložené HTML. To HTML bude pochádzať z inej šablóny, ktorá rozšíri túto šablónu (`base.html`). Hneď ti ukážeme, ako sa to robí.
 
-Teraz to ulož a znova otvor `blog/templates/blog/post_list.html`. Zmaž všetko, okrem toho, čo je vnútri body a tiež zmaž `<div class="page-header"></div>`, takže súbor bude vyzerať takto:
+Teraz ulož `base.html` a znova otvor `blog/templates/blog/post_list.html`. {% raw %}Odstrániš všetko nad `{% for post in posts %}` a pod `{% endfor %}`. Keď skončíš, súbor bude vyzerať nasledovne:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -95,13 +102,29 @@ Teraz to ulož a znova otvor `blog/templates/blog/post_list.html`. Zmaž všetko
 {% endfor %}
 ```
 
-A teraz pridaj tento riadok na začiatok súboru:
+Chceme toto použiť ako súčasť našej šablóny pre všetky bloky. Je čas pridať blokové tagy do tohto súboru!
+
+{% raw %}Blokový tag by sa mal zhodovať s tagom v `base.html` súbore. Taktiež by mal obsahovať celý kód, čo patrí do tvojích obsahových blokov. Aby si to urobila, vlož všetko medzi `{% block content %}` a `{% endblock %}`. Takto:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
 ```
 
-{% raw %}To znamená, že rozširujeme šablónu `base.html` v `post_list.html`. Už ostáva len jedna vec: daj všetko (teda okrem riadku, ktorý sme práve pridali) medzi `{% block content %}` a `{% endblock content %}`. Takto:{% endraw %}
+Ešte zostála len jediná vec. Potrebujeme prepojiť tieto dve šablóny. O tomto je rozširovanie šablón! Urobíme to pridaním extends tagu na začiatku súboru. Nasledovne:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -116,9 +139,9 @@ A teraz pridaj tento riadok na začiatok súboru:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```
 
-A je to! Skontroluj či tvoja web stránka funguje tak, ako má :)
+A je to! Skontroluj či tvoja web stránka funguje tak, ako má. :)
 
-> Ak sa ti zobrazí chyba `TemplateDoesNotExists`, ktorá hovorí, že súbor `blog/base.html` neexistuje a v konzole ti beží `runserver`, skús ho zastaviť (stlačením Ctrl + C) a reštartuj ho spustením príkazu `python manage.py runserver`.
+> Ak sa ti zobrazí chyba `TemplateDoesNotExist`, to znamená, že neexistuje `blog/base.html` súbor a `runserver` beží v konzole. Skús ho zastaviť (stlačením Ctrl+C – Control a C tlačidiel spolu) a spusti ho znova pomocou príkazu `python manage.py runserver`.

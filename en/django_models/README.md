@@ -66,9 +66,14 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Mac OS X and Linux:{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
+```
+
+{% filename %}Windows:{% endfilename %}
+```
+(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
 ```
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
@@ -121,7 +126,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -155,7 +160,7 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example,  a method that calculates average price could be called `calculate_average_price`.
 

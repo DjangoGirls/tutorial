@@ -17,7 +17,7 @@ Después de eso, asegúrate de:
 
 ¡Sí! En primer lugar, sigue adelante y prueba nuestro libro llamado [Django Girls Tutorial: Extensiones][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Más adelante, puedes intentar los recursos listados a continuación. ¡Son todos muy recomendables! 
 
@@ -36,5 +36,5 @@ Más adelante, puedes intentar los recursos listados a continuación. ¡Son todo
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.org/products/two-scoops-of-django-1-6

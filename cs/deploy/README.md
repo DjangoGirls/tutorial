@@ -6,7 +6,7 @@ Až dosud byly tvoje webové stránky k dispozici pouze ve tvém počítači, ny
 
 Jak jsi se dozvěděla, webové stránky musí být umístěny na serveru. Na internetu existuje mnoho poskytovatelů serverů. My budeme používat jednoho, který má relativně jednoduchý proces nasazení: [PythonAnywhere][1]. PythonAnywhere je zdarma pro malé aplikace, které nemají příliš mnoho návštěvníků, takže to pro tebe bude teď stačit.
 
- [1]: https://pythonanywhere.com/
+ [1]: https://www.pythonanywhere.com/
 
 Další externí službu, kterou budeme používat, je [GitHub][2], což je hostingová služba pro zdrojové kódy. Na internetu existují i jiné služby, ale téměř všichni programátoři mají účet na GitHubu. Nyní ho budeš mít také!
 
@@ -44,8 +44,8 @@ Git bude sledovat změny souborů a složek v tomto adresáři, ale jsou tam ně
 ```
 *.pyc
 __pycache__
- myvenv
- db.sqlite3
+myvenv
+db.sqlite3
 .DS_Store
 ```    
 

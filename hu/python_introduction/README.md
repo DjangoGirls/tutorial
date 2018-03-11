@@ -32,7 +32,11 @@ Most épp nem szeretnénk kilépni a Python konzolból. Inkább többet szeretn�
     5
     
 
-Szuper! Láttad, ahogy előugrott a válasz? A Python tud matekozni! Kipróbálhatsz más parancsokat is, mint például: - `4 * 5` - `5 - 1` - `40 / 2`
+Szuper! Láttad, ahogy előugrott a válasz? A Python tud matekozni! Kipróbálhatsz más parancsokat is, mint például:
+
+- `4 * 5`
+- `5 - 1`
+- `40 / 2`
 
 Szórakozz egy kicsit ezzel aztán gyere vissza ide :).
 
@@ -267,7 +271,7 @@ Ebben a Python dokumentációban megtalálod a listákra értelmezett összes me
 
 ## Szótárak
 
-A szótár hasonló a listához, de a szótár elemeit nem indexekkel hanem kulcsokkal (key) érjük el. A kulcs lehet bármilyen string vagy szám. Az üres szótár létrehozására szolgáló utasítás a következő:
+A szótár (dictionary) hasonló a listához, de a szótár elemeit nem indexekkel hanem kulcsokkal (key) érjük el. A kulcs lehet bármilyen string vagy szám. Az üres szótár létrehozására szolgáló utasítás a következő:
 
     >>> {}
     {}
@@ -406,7 +410,7 @@ Hallottad már azt a kifejezést hogy "almákat narancsokkal összehasonlítani"
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
     
 
 Láthatod, hogy ugyanúgy, mint a kifejezéseknél, a Python nem tudja összehasonlítani a számot (`int`) a stringgel (`str`). Ehelyett **TypeError** típusú hibát dob, azaz megmondja, hogy két különböző típust nem lehet egymással összehasonlítani.
@@ -451,7 +455,7 @@ Egész mostanig a python interpreterbe írkáltuk a parancsokat, ami arra korlá
 *   Mensünk el benne valami kódot egy python fájlba
 *   És futtassuk!
 
-Ahhoz hogy kilépjünk a Python interpreterből, egyszerűen írjuk be, hogy ~~~ exit()~~~:
+Ahhoz hogy kilépjünk a Python interpreterből, egyszerűen írjuk be, hogy `exit()`:
 
     >>> exit()
     $
@@ -467,36 +471,65 @@ Egy előző részben már kiválasztottuk a kedvenc [kódszerkesztő][2]nket. Mo
     print('Hello, Django girls!')
 ```
 
-> **Megj.** Vegyük észre a kód editorok legnagyszerűbb tulajdonságát: a színeket! A Python konzolban minden egyszínű volt, most a `print` függvény más színű, mint a string. Ezt úgy hívják: "syntax highlighting" (szintaxis-kiemelés), és kódoláshoz nagyon hasznos. A kód színe mindenféle utalásokat hordoz magában, pl. egy lezáratlan string vagy egy elírás egy kulcsszó nevében (pl. a `def` a függvényeknél, amint látni fogjuk mindjárt). Ez az egyik oka annak, hogy kódszerkesztőt használuk :)
-
 Mostanra már tapasztalt Python programozó lettél, úgyhogy írj valami kódot, amit ma tanultál.
 
 Most mentsük el a fájlt, és adjunk neki valami jellemző nevet. Nevezzünk **python_intro.py**-nak, és mentsük el a desktopra. Bárhogy nevezhetjük a fájlt, de a kiterjesztés fontos, hogy **.py** legyen. A **.py** kiterjesztés megmondja az operációs rendszerünknek, hogy **python futtatható programfájl**-lal van dolga.
 
+> **Megj.** Vegyük észre a kód editorok legnagyszerűbb tulajdonságát: a színeket! A Python konzolban minden egyszínű volt, most a `print` függvény más színű, mint a string. Ezt úgy hívják: "syntax highlighting" (szintaxis-kiemelés), és kódoláshoz nagyon hasznos. A kód színe mindenféle utalásokat hordoz magában, pl. egy lezáratlan string vagy egy elírás egy kulcsszó nevében (pl. a `def` a függvényeknél, amint látni fogjuk mindjárt). Ez az egyik oka annak, hogy kódszerkesztőt használuk :)
+
 Most hogy a fájl el van mentve, itt az ideje, hogy lefuttassuk. Felhaszálva a tudásodat a parancssoros részből, navigálj a terminálban a desktopra a **könyvtárváltás** parancs segítségével.
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
 
 Mac-en a parancs valahogy így néz ki:
 
-    $ cd ~/Desktop
-    
+{% filename %}parancssor{% endfilename %}
+```
+$ cd ~/Desktop
+```
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 Linuxon így (A "Desktop" lehet, hogy le van fordítva a te nyelvedre):
 
-    $ cd ~/Desktop
-    
+{% filename %}parancssor{% endfilename %}
+```
+$ cd ~/Desktop
+```
 
-És Windowson így néz ki:
+<!--endsec-->
 
-    > cd %HomePath%\Desktop
-    
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+
+Windowson így néz ki:
+
+{% filename %}parancssor{% endfilename %}
+```
+> cd %HomePath%\Desktop
+```
+<!--endsec-->
+
+
 
 Ha megakadtál volna, kérj nyugodtan segítséget.
 
 Most pedig futtasd le a Python kódot, így:
 
-    $ python3 python_intro.py
-    Hello, Django girls!
+{% filename %}parancssor{% endfilename %}
+```
+$ python3 python_intro.py
+Hello, Django girls!
+```
     
+Note: Windows-on 'python3' néven nem található parancs. Helyette használd a 'python' néven:
+
+{% filename %}parancssor{% endfilename %}
+```python
+> python python_intro.py
+```
 
 Rendben! Épp lefuttattad az első Python programodat fájlból. Jó érzés, ugye?
 
@@ -534,6 +567,7 @@ Mentsd el, és futtasd le még egyszer:
     $ python3 python_intro.py
     It works!
     
+Note: Emlékezz arra, hogy Windows-on, 'python3' néven nem található parancs. Ha nálad is ez a helyzet, mostantól helyettesítsd 'python3'-t 'python'-al a file-ok futtatásához.
 
 ### Mi történik, ha egy feltétel nem teljesül (vagyis nem True)? 
 
@@ -596,14 +630,31 @@ A Python sorban mindegyik feltételt megnézi, és kiírja:
     Perfect, I can hear all the details
     
 
+## Megjegyzések
+
+A megjegyzések olyan sorok amelyek `#`-el kezdődnek. Bármit beírhatsz a `#` után, és Python figyelmen kívül fogja hagyni. Megjegyzések segíthetnek abban hogy a kódod mások számára érthető legyen.
+
+Lássuk, hogyan néz ki:
+
+{% filename %}python_intro.py{% endfilename %}
+```python
+# Hangerő beállítása, ha túl hangos vagy túl halk
+if volume < 20 or volume > 80:
+    volume = 50
+    print("That's better!")
+```
+
+Nem kell minden sorhoz megjegyzést írnod, de nagyon hasznosak annak elmagyarázásához hogy miért csinál valamit a kódod, vagy hogy összefoglalót nyújtson amikor valami bonyolult feladatot végez.
+
 ### Összefoglaló
 
 Az előző három feladatban ezekről tanultál:
 
-*   **dolgok összehasonlítása** - Pythonban a `>`, `>=`, `==`, `<=`, `<` jelekkel, és az `and`, `or` operátorokkal hasonlíthatsz össze dolgokat
-*   **Boolean** - egy olyan fajta objektum, ami csak két értéket vehet fel: `True` vagy `False`
-*   **Fájlok elmentése** - a kódot fájlokban is tárolhatod, így hosszabb programokat is lefuttathatsz.
-*   **if...elif...else** - állítások, amik arra jók, hogy a kód csak bizonyos feltételek teljesülése esetén fusson le.
+* __dolgok összehasonlítása__ - Pythonban a `>`, `>=`, `==`, `<=`, `<` jelekkel, és az `and`, `or` operátorokkal hasonlíthatsz össze dolgokat
+* __Boolean__ - egy olyan fajta objektum, ami csak két értéket vehet fel: `True` vagy `False`
+* __Fájlok elmentése__ - a kódot fájlokban is tárolhatod, így hosszabb programokat is lefuttathatsz.
+* __if...elif...else__ - állítások, amik arra jók, hogy a kód csak bizonyos feltételek teljesülése esetén fusson le.
+- __comments__ - sorok, amelyeket Python nem futtat le, amelyekkel dokumentálni tudod a kódodat.
 
 Elérkeztünk a fejezet utolsó részéhez!
 
@@ -631,8 +682,12 @@ Futtassuk le, és nézzük meg, mi történik:
     Hi there!
     How are you?
     
+Megjegyzés: ha nem működött, ne ess pánikba! A hibaüzenet segít kitalálni, hogy mi a baj:
+- Ha `NameError`-t kapsz, valószinűleg valamit elgépeltél, ellenőrizd, hogy ugyan azt a nevet használtad amikor létrehoztad a függvényt `def hi():`-al és amikor meghívtad `hi()`-al.
+- Ha `IndentationError` hibát kapsz, ellenőrizd, hogz mind a két `print` sor elején azonos mennyiségű üres hely (szóköz karakter) van: python számára a függvényen bellüli összes kódnak szépen illesztve kell lennie.
+- Ha nincs egyáltalán semmilyen kimenet, ellenőrizd hogy az utolsó `hi()` *nincs* indentálva - ha így lenne, az a sor is a függvény része lesz és ezért soha nem fog lefutni.
 
-Ez könnyű volt! Most írjuk meg az első olyan függvényt, aminek vannak paraméterei. Az előző példát fogjuk használni - egy függvény, ami köszön annak, aki futtatja, de most nevet is adunk hozzá:
+Most írjuk meg az első olyan függvényt, aminek vannak paraméterei. Az előző példát fogjuk használni - egy függvény, ami köszön annak, aki futtatja, de most nevet is adunk hozzá:
 
 ```python
     def hi(name):
@@ -727,7 +782,7 @@ Mindegyiküket üdvözölni szeretnénk. Ehhez már megvan a `hi` függvényünk
     for name in girls:
 ```
 
-A ~~~for~~~ statement hasonlóan működik, mint az ~~~if~~~statement; mindkettő alatt 4 szóközzel kell indentálni a következő sort.
+A ```for``` statement hasonlóan működik, mint az ```if``` statement; mindkettő alatt 4 szóközzel kell indentálni a következő sort.
 
 Itt a teljes kód, ami a fájlban lesz:
 

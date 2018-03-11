@@ -8,84 +8,143 @@ Zanim zainstalujemy Django, zapoznamy się z niezwykle użytecznym narzędziem, 
 
 Stwórzmy zatem **środowisko wirtualne** (zwane też *virtualenv*). Jego zadaniem jest oddzielenie środowiska Pythona/Django dla każdego projektu z osobna. Oznacza to, że zmiany dokonane w obrębie jednej aplikacji nie wpłyną na działanie innych, nad którymi pracujesz. Sprytne, prawda?
 
-Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. W systemie Windows może on wyglądać tak: `C:\Użytkownicy\Nazwa` (gdzie `Nazwa` to twoja nazwa użytkownika, której używasz przy logowaniu się do komputera).
+Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć `virtualenv`; na przykład Twój katalog domowy. Na Windowsie może on wyglądać jak `C:\Users\Name` (gdzie `Name` jest twoim loginem).
 
-Na potrzeby kursu stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
+> **UWAGA:** W Windowsie upewnij się, że katalog ten nie zawiera znaków akcentowanych lub specjalnych; Jeśli Twoja nazwa użytkownika zawiera znaki akcentowane, użyj innego katalogu, na przykład `C:\djangogirls`.
 
-    mkdir djangogirls
-    cd djangogirls
+Na potrzeby kursu będziemy stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
+
+{% filename %}command-line{% endfilename %}
+
+    $ mkdir djangogirls
+    $ cd djangogirls
     
 
 Stwórzmy nowe środowisko wirtualne o nazwie `myvenv`. Polecenie ma następujący format:
 
-    python3 -m venv myvenv
+{% filename %}command-line{% endfilename %}
+
+    $ python3 -m venv myvenv
     
 
-### Windows
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
+data-collapse=true ces-->
 
-Aby stworzyć nowego `virtualenv`'a, musisz otworzyć konsolę (wspominaliśmy o tym parę rozdziałów temu, pamiętasz?) i uruchom `C:\ Python34\python -m venv venv`. Efekt będzie wyglądał tak:
+Aby utworzyć nowego `virtualenv`'a, musisz otworzyć okno wiersza poleceń i wykonać polecenie `python -m venv myvenv`. Będzie to wyglądać tak:
 
-    C:\Użytkownicy\Nazwa\djangogirls> C:\Python34\python -m venv myvenv
+{% filename %}command-line{% endfilename %}
+
+    C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-gdzie `C:\Python34\python` to katalog, w którym zainstalowałaś wcześniej Pythona, zaś `myvenv` to nazwa Twojego `virtualenv`'a. Nazwa może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. Dobrze jest też trzymać się krótkich nazw - będziesz do nich często wracała!
+Gdzie `myvenv` to nazwa Twojego `virtualenv`'a. Nazwa może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. Dobrze jest też trzymać się krótkich nazw - będziesz do nich często wracała!
 
-### Linux i OS X
+<!--endsec-->
 
-Stworzenie `virtualenv`'a w Linuksie i OS X ogranicza się jedynie do użycia polecenia `python3 -m venv myvenv`. Przyjmie ono następującą postać:
+<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+data-collapse=true ces-->
 
-    ~/djangogirls$ python3 -m venv myvenv
+Możemy stworzyć `virtualenv`'a w Linuksie i OS X poprzez użycie jedynie polecenia `python3 -m venv myvenv`. Przyjmie ono następującą postać:
+
+{% filename %}command-line{% endfilename %}
+
+    $ python3 -m venv myvenv
     
 
 `myvenv` to nazwa Twojego `virtualenv`'a. Nazwa środowiska może być dowolna, ale lepiej używać tylko małych liter, bez spacji i polskich znaków. Dobrze jest też trzymać się krótkich nazw - będziesz do nich często wracała!
 
-> **UWAGA:** Próba utworzenia w ten sposób środowiska wirtualnego w Ubuntu 14.04 skutkuje następującym błędem:
+> **UWAGA:** W niektórych wersjach Debiana/Ubuntu może pojawić się następujący komunikat o błędzie:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>        apt-get install python3-venv
+>     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     
+> 
+> W tym przypadku, wykonaj powyższe instrukcje i zainstaluj pakiet `python3-venv`: {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python3-venv
+>     
+> 
+> **UWAGA:** W niektórych wersjach Debiana/Ubuntu inicjowanie środowiska wirtualnego w ten sposób daje obecnie następujący błąd:
+> 
+> {% filename %}command-line{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
 > Aby uniknąć tego problemu, użyj polecenia `virtualenv`.
 > 
->     ~/djangogirls$ sudo apt-get install python-virtualenv
->     ~/djangogirls$ virtualenv --python=python3.4 myvenv
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ sudo apt-get install python-virtualenv
+>     $ virtualenv --python=python3.6 myvenv
 >     
+> 
+> **UWAGA:** Jeśli wystąpi błąd taki jak
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     E: Unable to locate package python3-venv
+>     
+> 
+> to zamiast tego wykonaj:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     sudo apt install python3.6-venv
+>     
+
+<!--endsec-->
 
 ## Praca z virtualenv
 
 Powyższa instrukcja utworzy katalog o nazwie `myvenv` (albo o nazwie, którą wybrałaś) zawierający nasze środowisko wirtualne (czyli w zasadzie zbiór katalogów i plików).
 
-#### Windows
+<!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
+data-collapse=true ces-->
 
 Uruchom wirtualne środowisko za pomocą polecenia:
+
+{% filename %}command-line{% endfilename %}
 
     C:\Użytkownicy\Nazwa\djangogirls> myvenv\Scripts\activate
     
 
-#### Linux i OS X
+> **Uwaga:** W systemie Windows 10 możesz otrzymać błąd w programie Windows PowerShell, który mówi, `wykonywanie skryptów jest wyłączone w tym systemie`. W tym przypadku, otwórz inny Windows PowerShell z opcją "Uruchom jako Administrator". Następnie spróbuj, wpisując następujące polecenie przed rozpoczęciem środowiska wirtualnego:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+>         Execution Policy Change
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>     
+
+<!--endsec-->
+
+<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+data-collapse=true ces-->
 
 Uruchom wirtualne środowisko za pomocą polecenia:
 
-    ~/djangogirls$ source myvenv/bin/activate
+{% filename %}command-line{% endfilename %}
+
+    $ source myvenv/bin/activate
     
 
 Nie zapomnij zastąpić `myvenv` nazwą, którą wybrałaś dla Twojego `virtualenv`!
 
 > **UWAGA:** może się zdarzyć, że polecenie `source` nie będzie dostępne. W takim przypadku spróbuj użyć poniższego:
 > 
->     ~/djangogirls$ . myvenv/bin/activate
+> {% filename %}command-line{% endfilename %}
+> 
+>     $ . myvenv/bin/activate
 >     
 
-O tym, że Twój `virtualenv` jest uruchomiony, dowiesz się, gdy zobaczysz w swojej konsoli prompt podobny do tego:
+<!--endsec-->
 
-    (myvenv) C:\Użytkownicy\Nazwa\djangogirls>
-    
-
-lub:
-
-    (myvenv) ~/djangogirls$
-    
-
-Zwróć uwagę, że pojawił się tam prefix `(myvenv)`!
+O tym, że Twój `virtualenv` jest uruchomiony, dowiesz się, gdy zobaczysz w swojej konsoli prompt poprzedzony przedrostkiem `(myvenv)`.
 
 W trakcie pracy ze środowiskiem wirtualnym `python` będzie automatycznie odnosił się do właściwej wersji, dzięki czemu możesz używać polecenia `python` zamiast `python3`.
 
@@ -93,21 +152,50 @@ W trakcie pracy ze środowiskiem wirtualnym `python` będzie automatycznie odnos
 
 ## Instalowanie Django
 
-Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować Django za pomocą narzędzia `pip`. W konsoli uruchom polecenie `pip install django==1.8` (zwróć uwagę, że używamy podwójnego znaku równości: `==`).
+Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować Django.
 
-    (myvenv) ~$ pip install django==1.8
-    Downloading/unpacking django==1.8
-    Installing collected packages: django
-    Successfully installed django
-    Cleaning up...
+Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję `pip`, oprogramowania, które używamy do zainstalowania Django:
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) ~$ pip install --upgrade pip
     
 
-w systemie Windows
+Następnie uruchom polecenie `pip install django~=1.11.0 `(zwróć uwagę, że używamy tyldy przed znakiem równości: `~=`) do instalacji Django.
 
-> Jeżeli w trakcie wywoływania polecenia pip otrzymasz błąd, sprawdź czy ścieżka Twojego projektu nie zawiera spacji (np. `C:\Users\Imie Nazwisko\djangogirls`). Jeżeli tak, sugerujemy przeniesienie projektu do innego katalogu bez spacji w nazwie (proponujemy `C:\djangogirls`). Gdy już to zrobisz, spróbuj wykonać powyższe polecenie jeszcze raz.
+{% filename %}command-line{% endfilename %}
 
-w systemie Linux
+    (myvenv) ~$ pip install django~=1.11.0
+    Collecting django~=1.11.0
+      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+    Installing collected packages: django
+    Successfully installed django-1.11.3
+    
+
+<!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
+data-collapse=true ces-->
+
+> Jeżeli w trakcie wywoływania polecenia pip w Windows otrzymasz błąd, sprawdź czy ścieżka Twojego projektu nie zawiera spacji, kresek lub znaków specjalnych (np. `C:\Users\User Name\djangogirls`). Jeżeli tak, sugerujemy przeniesienie projektu do innego katalogu bez spacji, kresek i znaków specjalnych (propnujemy `C:\djangogirls`). Utwórz nowy virtualenv w nowym katalogu, następnie usuń stary i spróbuj ponownie wykonać powyższe polecenie. (Przenoszenie katalogu virtualenv nie będzie działać ponieważ virtualenv używa ścieżek bezwzględnych.)
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
+data-collapse=true ces-->
+
+> Twoja linia poleceń może się zamrozić po próbie zainstalowania Django. Jeśli tak się stanie, zamiast powyższego polecenia użyj:
+> 
+> {% filename %}command-line{% endfilename %}
+> 
+>     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     
+
+<!--endsec-->
+
+<!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
+data-collapse=true ces-->
 
 > Jeśli po użyciu polecenia pip w Ubuntu 12.04 otrzymasz błąd, użyj polecenia `python -m pip install -U --force-reinstall pip`, aby naprawić instalacją pip'a w środowisku wirtualnym.
+
+<!--endsec-->
 
 To wszystko! Teraz (nareszcie) jesteś gotowa do stworzenia aplikacji w Django!

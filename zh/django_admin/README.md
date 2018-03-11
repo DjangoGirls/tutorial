@@ -13,13 +13,13 @@ admin.site.register(Post)
 
 如你所见，我们导入（包括）了前一章定义的Post模型。 为了让我们的模型在admin页面上可见，我们需要使用`admin.site.register(Post)`来注册模型.
 
-OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python manage.py runserver`启动服务器。 然后打开浏览器，输入地址http://127.0.0.1:8000/admin/你会看到登录界面像这样:
+OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python manage.py runserver`启动服务器。 然后打开浏览器，输入地址 http://127.0.0.1:8000/admin/ 你会看到登录界面像这样:
 
 ![登录页面][1]
 
  [1]: images/login_page2.png
 
-为了登录, 你需要创建一个掌控整个网站所有东西的*超级用户*。 回到刚才的命令行，输入`python manage.py createsuperuser`，按下Enter。 然后输入你的用户名(英文小写，不保护空格), 邮箱和密码。 你输密码的时候看不见输入？别担心，它就是这样的。 你就输入要输得到然后按`Enter`继续就好了。 输出应该长得像这样（用户名和邮箱应该是你自己的）：
+为了登录, 你需要创建一个掌控整个网站所有东西的*超级用户*。 回到刚才的命令行，输入`python manage.py createsuperuser`，按下Enter。 然后输入你的用户名(英文小写，不包括空格), 邮箱和密码。 你输密码的时候看不见输入？别担心，它就是这样的。 你就输入要输得到然后按`Enter`继续就好了。 输出应该长得像这样（用户名和邮箱应该是你自己的）：
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     Username: admin

@@ -80,10 +80,10 @@ Azt fogod látni, hogy egy új `blog` könyvtár keletkezett, és már most van 
         └── views.py
     
 
-Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A `mysite/settings.py` tehetjük meg. Keresd meg az `INSTALLED_APPS` részt, és adj hozzá egy sort a `)` fölött, amiben ez áll: `'blog'`. Így kell kinéznie ennek a résznek:
+Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A `mysite/settings.py` tehetjük meg. Keresd meg az `INSTALLED_APPS` részt, és adj hozzá egy sort a `]` fölött, amiben ez áll: `'blog'`. Így kell kinéznie ennek a résznek:
 
 ```python
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -91,7 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-)
+]
 ```
 
 ### Hozzuk létre a blogposzt modelljét
@@ -106,7 +106,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -134,18 +134,20 @@ Azok a sorok, amik úgy kezdődnek, hogy `from` vagy `import`, más fájlokban l
 *   a `Post` a modellünk neve. Más nevet is adhatnál neki (de kerüld el a speciális karaktereket - pl ékezetes karakterek - és a szóközt). Az osztályok (classok) nevét mindig nagybetűvel kezdjük.
 *   a `models.Model` azt jelenti, hogy a Post egy Django Model, így a Django tudni fogja, hogy el kell menteni az adatbázisba.
 
-Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:`title` (cím), `text` (szöveg), `created_date` (létrehozás dátuma), `published_date` (közzététel dátuma) és `author` (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog tartozni, például egy User-hez (felhasználó)?).
+Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:`title` (cím), `text` (szöveg), `created_date` (létrehozás dátuma), `published_date` (közzététel dátuma) és `author` (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog kapcsolni, például egy User-hez (felhasználó)?).
 
 *   `models.CharField` - így definiálsz olyan szövegmezőt, ami meghatározott számú karaktert tartalmazhat.
 *   `models.TextField` - ez hosszú szövegekhez van, korlátozás nélkül. Pont jó egy blogbejegyzéshez, igaz?
 *   `models.DateTimeField` - ez dátumot és időt tartalmaz.
 *   `models.ForeignKey` - ez egy másik modellel való kapcsolatot jelent.
 
-Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.8/ref/models/fields/#field-types).
+Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 És mi a helyzet a `def publish(self):` résszel? Ez pontosan az a `publish` (közzététel) method, amiről korábban beszéltünk. A `def` azt jelenti, hogy ez egy függvény (function) / method, és a `publish` ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: `calculate_average_price`.
 
 A methodok gyakran `return`-ölnek (visszaadnak) valamit. Erre van is egy példa a `__str__` methodban. Ebben az esetben amikor meghívjuk a `__str__()`-t, egy szöveget kapunk vissza (**string**), ami a Post címe.
+
+Vedd észre azt is, hogy mind `def publish(self):` mind `def __str__(self):` indentálva van a class-on bellül. Python számára fontosak a szóközök, ezért a method-okat indentálni kell az osztályokon bellül. Ha ez elmarad, akkor a method nem az adott osztályhoz fog tartozni, és furcsán fog viselkedni a program.
 
 Ha valami még nem teljesen világos a modellekkel kapcsolatban, nyugodtan kérdezd meg a coachodat! Tudjuk, hogy bonyolult, főleg, ha egyszerre tanulsz az objektumokról és a függvényekről. De reméljük, már sokkal kevésbé tűnik varázslatnak az egész!
 
@@ -158,6 +160,7 @@ Az utolsó lépés, hogy hozzáadjuk az új modellünket az adatbázishoz. Elős
       0001_initial.py:
       - Create model Post
     
+**Megjegyzés** Ne felejtsd el elmenteni a módosított file-okat. Különben a számítógéped az előző változatot futtatja le, amely váratlan hibaüzeneteket eredményezhet.
 
 A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk az adatbázison. Írd be, hogy `python manage.py migrate blog`, és ezt az outputot kell kapnod:
 

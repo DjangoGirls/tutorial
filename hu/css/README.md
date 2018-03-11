@@ -37,15 +37,16 @@ Most nézzük meg kicsit közelebbről ezeket a "**statikus fájl**"-nak nevezet
 
 ### Hová pakoljuk a statikus fájlokat?
 
-Amikor -- kicsit korábban -- a `collectstatic` parancsot futtattuk a szerveren, Django már tudta, hol találja a statikus fájlokat a beépíttett "admin" alkalmazáshoz. Most csak annyit kell tennünk, hogy a saját, `blog` alkalmazásunkhoz hozzáadunk néhány statikus fájlt.
+Django már tudja, hol találja a statikus fájlokat a beépíttett "admin" alkalmazáshoz. Most csak annyit kell tennünk, hogy a saját, `blog` alkalmazásunkhoz hozzáadunk néhány statikus fájlt.
 
 Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog applikáción belül:
 
     djangogirls
-     ├── blog
-     │ ├── migrations
-     │ └── static 
-     └── mysite
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
     
 
 A Django automatikusan megtalál minden "static" nevű mappát az alkalmazásaid könyvtárain belül, és képes lesz használni azok tartalmát statikus fájlokként.
@@ -56,16 +57,14 @@ A Django automatikusan megtalál minden "static" nevű mappát az alkalmazásaid
 
     djangogirls
      └─── blog
-         └─── statikus
+         └─── static
              └─── css
                  └─── blog.css
     
 
 Itt az ideje, hogy a CSS fájlunkba írjunk is valamit! Nyisd meg a `blog/static/css/blog.css` fájlt a kódszerkesztődben.
 
-Most nem fogunk túlságosan belemélyedni a CSS-be, mert nem bonyolult, és magadtól is meg tudod majd tanulni a workshop után. Szerintünk a [Codeacademy][2] HTML & CSS kurzusából mindent megtanulhatsz arról, hogyan teheted széppé a weboldalaidat CSS segítségével.
-
- [2]: https://www.codecademy.com/tracks/web
+Most nem fogunk túlságosan belemélyedni a CSS-be, mert nem bonyolult, és magadtól is meg tudod majd tanulni a workshop után. Ennek a fejezetnek a végén ajánlunk egy ingyenes kurzust, ahol többet tudhatsz meg a CSS-ről.
 
 De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a header színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. `#` jellel kezdődnek, majd 6 betű (A-F) és szám (0-9) következik. Színkódokat például itt találhatsz: http://www.colorpicker.com/. [Előre meghatározott színeket][3] is használhatsz, mint a `red` vagy a `green`.
 
@@ -286,7 +285,7 @@ Mentsd el a fájlokat és frissítsd az oldalad.
 
  [8]: images/final.png
 
-Nahát! Fantaszikus nem? A kódot, amit beillesztettünk, nem túl nehéz megérteni és a nagyja már csak átolvasva is érthető kell, hogy legyen.
+Nahát! Fantaszikus nem? A kódot, amit beillesztettünk, nem túl nehéz megérteni és a nagyja már csak átolvasva is érthető kell, hogy legyen. Mit változtatnál ahhoz, hogy a dátum türkízkék színű legyen?
 
 Ne félj kicsit megbuherálni ezt a CSS-t és megváltoztatni pár dolgot. Ha valamit elrontasz, ne aggódj, vissza tudod csinálni!
 

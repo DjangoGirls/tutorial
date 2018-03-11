@@ -44,7 +44,8 @@ Lo facciamo creando una cartella denominata `static` all'interno dela nostra app
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 
 

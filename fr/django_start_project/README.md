@@ -70,6 +70,12 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
+Quand `DEBUG` est à `True` et `ALLOWED_HOSTS` est vide, les ordinateurs qui sont autorisés à servir notre site web sont ceux de la liste `['localhost', '127.0.0.1', '[::1]']`. Plus loin dans ce tutorial, nous allons déployer le site web sur PythonAnywhere, donc nous allons anticiper un peu et ajouter le nom de domaine correspondant :
+
+```python
+ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+```
+
 ## Configuration de la base de données
 
 Il existe tout un tas de systèmes de gestion de bases de données qu'il est possible d'utiliser pour stocker les données de votre site. Nous allons utiliser celui par défaut : `sqlite3`.

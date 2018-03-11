@@ -35,4 +35,4 @@ Mentsd el a fájlt, menj a http://127.0.0.1:8000/ címre és lássuk, mink van.
 
 Ez egyszerű: *TemplateDoesNotExist*. Javítsuk ki ezt a hibát, és hozzunk létre egy template-et a következő fejezetben!
 
-> Tanulj meg többet a Django nézetekről a hivatalos dokumentációból: https://docs.djangoproject.com/en/1.8/topics/http/views/
+> Tanulj meg többet a Django nézetekről a hivatalos dokumentációból: https://docs.djangoproject.com/en/1.11/topics/http/views/

@@ -1,6 +1,6 @@
 # Pokud děláš tutoriál doma
 
-Pokud děláš tento tutorial doma, ne na jedné z [Django girls akcí](https://djangogirls.org/events/), můžeš zcela vynechat tuto kapitolu a jít rovnou na kapitolu [jak funguje Internet?](../how_the_internet_works/README.md).
+Pokud děláš tento tutorial doma, ne na jedné z [Django girls akcí](https://djangogirls.org/events/), můžeš zcela vynechat tuto kapitolu a jít rovnou na kapitolu [jak funguje Internet](../how_the_internet_works/README.md).
 
 To proto, že zde uvedené věci stejně vysvětlíme v průběhu celého kurzu a tato stránka pouze shromažďuje všechny pokyny pro instalaci na jednom místě. Jedna z Django Girls událostí "Instalační večer" se zaobírá instalováním všeho, co budeme potřebovat, což nás už nebude zdržovat během samotného worshopu. To je pro nás užitečná úspora času.
 
@@ -44,6 +44,6 @@ Gratulujeme, právě sis zřídila všechny účty a nastavila vše, co potřebu
 
   * [Úvod do příkazového řádku](../intro_to_command_line/README.md)
 
-  * [Úvod do Pythonu](../intro_to_command_line/README.md)
+  * [Úvod do Pythonu](../python_introduction/README.md)
 
   * [Co je Django?](../django/README.md)

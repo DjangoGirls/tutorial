@@ -107,7 +107,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(
@@ -142,7 +142,7 @@ class Post(models.Model):
 - `models.DateTimeField` - дата та час.
 - `models.ForeignKey` - зв'язок із іншою моделлю.
 
-Не будемо пояснювати кожне слово в коді, оскільки це може зайняти надто багато часу. Якщо хочете дізнатися більше про поля моделей, а також як визначати речі відмінні від вище описаних, то дивіться документацію Django (https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types).
+Не будемо пояснювати кожне слово в коді, оскільки це може зайняти надто багато часу. Якщо хочете дізнатися більше про поля моделей, а також як визначати речі відмінні від вище описаних, то дивіться документацію Django (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 А як щодо `def publish(self):`? Це і є наш метод `publish`, про який ми говорили раніше. `def` означає, що це функція/метод, а `publish` - ім'я методу. Ви можете змінити ім'я методу, якщо захочете. Правило іменування: треба використовувати рядкові букви, а пробіли замінювати підкресленнями. Наприклад, метод для розрахунку середньої ціни може бути названий `calculate_average_price`.
 

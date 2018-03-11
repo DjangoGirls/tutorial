@@ -43,7 +43,7 @@ Tipea este comando en tu consola:
 
 Usa este comando en tu consola:
 
-    sudo yum install python3.4
+    sudo dnf install python3.4
     
 
 #### openSUSE

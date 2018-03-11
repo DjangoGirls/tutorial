@@ -1,6 +1,6 @@
 # O que vem depois?
 
-Parabéns! Você é **demais**. Estamos orgulhosos! <3
+Parabéns! Você é **demais**. Estamos orgulhosas! <3
 
 ### O que fazer agora?
 
@@ -17,7 +17,7 @@ Depois disso:
 
 Sim! Primeiro, vá em frente e tente nosso outro livro, chamado [Django Girls Tutorial: Extensions][3].
 
- [3]: http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/
+ [3]: https://tutorial-extensions.djangogirls.org
 
 Depois você pode tentar as fontes listadas abaixo. Todas elas são recomendadas! 
 - [Django's official tutorial][4]
@@ -35,5 +35,5 @@ Depois você pode tentar as fontes listadas abaixo. Todas elas são recomendadas
  [7]: https://www.codecademy.com/tracks/web
  [8]: https://github.com/ggcarrots/django-carrots/
  [9]: http://learnpythonthehardway.org/book/
- [10]: http://gettingstartedwithdjango.com/
+ [10]: http://www.gettingstartedwithdjango.com/
  [11]: https://twoscoopspress.org/products/two-scoops-of-django-1-6

@@ -26,7 +26,7 @@ Prova questo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci 
 
 Come vedi, quello che abbiamo è:
 
-    [<Post: My second post>, <Post: My first post>]
+    <QuerySet [<Post: My second post>, <Post: My first post>]>
     
 
 Significa che Django lo vede come una lista di oggetti. Ricordi dalla **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con for loops! In un template Django si fanno così:

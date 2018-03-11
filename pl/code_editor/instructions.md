@@ -1,6 +1,6 @@
 Tylko który wybrać? To nie takie proste, bo wybór zależy w dużej mierze od tego, czego oczekujesz od swojego edytora. Większość programistów Pythona używa bardzo skomplikowanych i niezwykle bogatych w różne funkcjonalności IDE (z ang. Integrated Development Environments - zintegrowane środowisko deweloperskie), takich jak: PyCharm. Jako osoba początkująca nie potrzebujesz jednak aż tak skomplikowanego edytora. Wystarczy coś prostszego, ale nadal dostatecznie użytecznego.
 
-Poniżej znajdziesz nasze propozycje, ale jeżeli masz taką możliwość, możesz poprosić o rekomendację Twojego coacha -- będzie mu łatwiej pomagać Ci podczas warsztatów.
+Nasze sugestie prezentujemy poniżej, ale w razie czego spytaj o sugestię swojego mentora - w takiej sytuacji będzie mu łatwiej Tobie pomóc.
 
 ## Gedit
 
@@ -10,13 +10,13 @@ Gedit to open source'owy i darmowy edytor dostępny dla wszystkich systemów ope
 
 ## Sublime Text 3
 
-Sublime Text to bardzo popularny edytor z darmowym okresem testowania. Jest bardzo prosty do zainstalowania i używania, dostępny na wszystkie systemy operacyjne.
+Sublime Text jest bardzo popularnym edytorem z bezpłatnym okresem testowania i jest dostępny dla wszystkich systemów operacyjnych.
 
 [Pobierz tutaj](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom to nowy edytor kodu stworzony przez [GitHuba](https://github.com/). Jest darmowy, ma otwarte źródła, jest łatwy do zainstalowania i używania. Dostępny na Windowsa, OS X i Linuxa.
+Atom jest bardzo nowym edytorem tekstu stworzonym przez [GitHub](https://github.com/). Jest bezpłatny, open-source i dostępny dla systemów Windows, OS X i Linux.
 
 [Pobierz tutaj](https://atom.io/)
 
@@ -24,8 +24,8 @@ Atom to nowy edytor kodu stworzony przez [GitHuba](https://github.com/). Jest da
 
 Może się zastanawiasz dlaczego instalujemy specjalny edytor kodu zamiast używać Notatnika albo Notepada.
 
-Po pierwsze kod musi być napisany **zwykłym tekstem** (ang. "plain text"), a programy takie jak Word albo Textedit sprawiają, że wyrazy nie są tak naprawdę tylko tekstem - możesz zmieniać ich wielkość, czcionkę czy kolor. Jest to tak zwany sformatowany tekst (ang. rich text), używający różnych formatów, takich jak [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Podstawowym powodem jest to, że kod musi być **zwykłym, niesformatowanym tekstem**, co powoduje że nie możemy tutaj użyć programów takich jak Word czy Textedit, ponieważ to co one produkują to nie jest zwykły tekst, tylko tekst sformatowany (z informacją odnośnie użytej czcionki, sposobu formatowania), używająć specjalnych formatów danych, jak na przykład [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Po drugie, edytory kodu zostały specjalnie stworzone do tego, by pisać w nich kod, więc mają wiele przydatnych opcji, takich jak podświetlanie różnych elementów składni języka programowania czy automatyczne dodawanie zamykającego cudzysłowu.
+Drugim powodem jest specjalizacja edytorów kodu - dzięki temu mogą one dostarczać bardzo użytecznych funkcjonalności, jak kolorowanie składni zgodnie z jej przeznaczeniem lub automatyczne zamykanie cudzysłowów zamiast Ciebie.
 
-Wszystko to zobaczymy w akcji. Niedługo zaczniesz myśleć o swoim edytorze kodu jako o starym, dobrym przyjacielu :)
+Za chwilę przetestujemy wybrany edytor w akcji. Nim się obejrzysz będziesz uważać swój edytor tekstu jako jedno z ulubionych narzędzi. :)

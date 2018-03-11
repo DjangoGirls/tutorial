@@ -114,7 +114,7 @@ Running migrations:
 
 A máme hotovo! Čas spustit webový server a měla bys vidět naše fungující webové stránky!
 
-Pro spuštění musíš být v adresáři, který obsahuje soubor `manage.py` (adresář `djangogirls`). V konzoli spustíš webový server zadáním `pythonu manage.py runserver`:
+Pro spuštění musíš být v adresáři, který obsahuje soubor `manage.py` (adresář `djangogirls`). V konzoli spustíš webový server zadáním `python manage.py runserver`:
 
 ```
 (myvenv) ~/djangogirls$ python manage.py runserver

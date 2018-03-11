@@ -11,30 +11,30 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 ## Crea un enlace en la plantilla
 
 Vamos a empezar añadiendo un enlace dentro del archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así:
-``` html
-    {% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
             </div>
-        {% endfor %}
-    {% endblock content %}
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
 ```
 
 Queremos tener un enlace a una página de detalle sobre el título del post. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` dentro del enlace:
 ```
-    <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-```    
+<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+```
 
-Es hora de explicar el misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como probablemente sospeches, la notación `{% %}` significa que estamos utilizando Django template tags. ¡Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!
+Es hora de explicar el misterioso `{% url 'post_detail' pk=post.pk %}`. Como probablemente sospeches, la notación `{% %}` significa que estamos utilizando Django template tags. ¡Esta vez vamos a utilizar uno que va a crear una dirección URL para nosotros!
 
-`blog.views.post_detail` es una ruta hacia `post_detail` *view* que queremos crear. Por favor nota: `blog` es el nombre de nuestra aplicación (el `blog` de directorio), `views` es el nombre del archivo `views.py` y `post_detail` es el nombre de la *view*.
+`post_detail` es el nombre de la *view* que queremos crear.
 
 Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de esperar, ya que no tenemos una dirección URL o una *view* para `post_detail`). Se verá así:
 
@@ -48,13 +48,13 @@ Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de e
 
 Queremos crear una URL que apunte a Django a una *view* denominada `post_detail`, que mostrará una entrada del blog. Agrega la línea `url (r'^post/(?P<pk>[0-9]+)/$', views.post_detail),` al archivo `blog/urls.py`. Debería tener este aspecto:
 
-``` python
+```python
 from django.conf.urls import url
 from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
 ]
 ```
 
@@ -68,7 +68,7 @@ ti:
 
 Eso significa que si entras en `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *view* denominada `post_detail` y transferirá la información de `pk` que es igual a `5` a esa *view*.
 
-`pk` es la abreviación de `primary key`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variables como te guste (recuerda: ¡minúsculas y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?.¿P<pk>[0-9]+)` podríamos tener la variable `post_id`, así que esto lo verías como: `(?P <post_id>[0-9]+)`.
+`pk` es la abreviación de `primary key`. Este nombre se utiliza a menudo en proyectos de Django. Pero puedes nombrar tus variables como te guste (recuerda: ¡minúsculas y `_` en lugar de espacios en blanco!). Por ejemplo en lugar de `(?P<pk>[0-9]+)` podríamos tener la variable `post_id`, así que esto lo verías como: `(?P<post_id>[0-9]+)`.
 
 ¡Bien! ¡Actualiza la página: http://127.0.0.1:8000/ ¡Boom! ¡Sin embargo vemos otro error! Como era de esperarse.
 
@@ -84,10 +84,8 @@ Esta vez nuestra *view* tomará un parámetro adicional `pk`. Nuestra *view* nec
 
 Ahora, queremos sólo un post del blog. Para ello podemos usar querysets como este:
 
-``` python
-
-    Post.objects.get(pk=pk)
-
+```python
+Post.objects.get(pk=pk)
 ```
 
 Pero este código tiene un problema. Si no hay ningún `Post` con `llave primaria` (`pk`) tendremos un error muy feo.
@@ -109,19 +107,16 @@ La buena noticia es que puedes crear tu propia página `Page Not Found` y diseñ
 Deberíamos abrir `blog/views.py` y agregar el siguiente código:
 
 ```python
-
-    from django.shortcuts import render, get_object_or_404
-
+from django.shortcuts import render, get_object_or_404
 ```
 
 Cerca de otras líneas `from`. Y en el final del archivo añadimos nuestra *view*:
 
 ```python
 def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-
-```    
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+```
 
 Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
@@ -142,19 +137,19 @@ Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
 Se verá así:
 
 ```html
-    {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endblock %}
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
 ```
 
 Una vez más estamos extendiendo `base.html`. En el bloque `content` queremos mostrar la fecha de publicación (si existe), título y texto de nuestros posts. Pero deberíamos discutir algunas cosas importantes, ¿cierto?
@@ -174,20 +169,18 @@ Bien, podemos actualizar nuestra página y ver si `Page Not Found` se ha ido.
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
 
 ```
-
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
-
-```    
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git push
+```
 
 *   Luego, en una [consola Bash de PythonAnywhere][8]
 
 ```
-    $ cd my-first-blog
-    $ git pull [...]
+$ cd my-first-blog
+$ git pull [...]
 ```
 
 *   Finalmente, ve a la pestaña [Web][9] y haz click en **Reload**.

@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Introduction to Python
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
@@ -17,7 +19,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.5.1 (...)
+Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -28,7 +30,7 @@ After running the Python command, the prompt changed to `>>>`. For us this means
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start with something really simple. For example, try typing some math, like `2 + 3` and hit `enter`.
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -134,7 +136,7 @@ These are the basics of every programming language you learn. Ready for somethin
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> len(304023)
 Traceback (most recent call last):
@@ -142,7 +144,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+
+ It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -168,7 +172,7 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-You see? It's easy! It's simply: name equals Ola.
+We type name equals Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
@@ -207,7 +211,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> city = "Tokyo"
 >>> ctiy
@@ -292,7 +296,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Easy, right? If you want to add something to your list, you can do this by typing this command:
+If you want to add something to your list, you can do this by typing this command:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -322,6 +326,7 @@ To delete something from your list you will need to use __indexes__ as we learne
 >>> print(lottery[0])
 59
 >>> lottery.pop(0)
+59
 >>> print(lottery)
 [42, 30, 19, 12, 3, 199]
 ```
@@ -371,7 +376,7 @@ See, it's similar to a list. But you don't need to remember the index – just t
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> participant['age']
 Traceback (most recent call last):
@@ -408,6 +413,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant.pop('favorite_numbers')
+[7, 42, 92]
 >>> participant
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
@@ -470,7 +476,7 @@ True
 False
 ```
 
-`>` and `<` are easy, but what do `>=` and `<=` mean? Read them like this:
+We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 - x `>` y means: x is greater than y
 - x `<` y means: x is less than y
@@ -496,12 +502,12 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> 1 > 'django'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: unorderable types: int() > str()
+TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
 Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`).
@@ -509,7 +515,7 @@ Instead, it shows a **TypeError** and tells us the two types can't be compared t
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called __Boolean__,  and it is probably the easiest type there is.
+Incidentally, you just learned about a new type of object in Python. It's called __Boolean__.
 
 There are only two Boolean objects:
 - True
@@ -582,7 +588,7 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
@@ -593,7 +599,7 @@ $ cd ~/Desktop
 ```
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="python_linux"
+<!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
@@ -605,15 +611,27 @@ $ cd ~/Desktop
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+<!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-And on Windows, it will be like this:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
 <!--endsec-->
+
+
+<!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+And on Windows Powershell, it will be like this:
+
+{% filename %}command-line{% endfilename %}
+```
+> cd $Home\Desktop
+```
+<!--endsec-->
+
 
 If you get stuck, just ask for help.
 
@@ -649,7 +667,7 @@ if 3 > 2:
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 File "python_intro.py", line 2
@@ -697,7 +715,7 @@ $ python3 python_intro.py
 5 is indeed greater than 2
 ```
 
-If 2 were a greater number than 5, then the second command would be executed. Easy, right? Let's see how `elif` works:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -782,7 +800,7 @@ Time for the last part of this chapter!
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's start with an easy one. Replace the code in **python_intro.py** with the following:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -835,7 +853,7 @@ hi()
 
 Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 Traceback (most recent call last):
@@ -927,7 +945,7 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The ```for``` statement behaves similarly to the ```if``` statement; code below both of these need to be indented four spaces.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
 Here is the full code that will be in the file:
 
@@ -988,6 +1006,9 @@ Note that the second of these two numbers is not included in the list that is ou
 
 That's it. __You totally rock!__ This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+
 
 ![Cupcake](images/cupcake.png)

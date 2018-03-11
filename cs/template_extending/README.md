@@ -100,7 +100,7 @@ A teď přidej na začátek souboru tento řádek:
 {% extends 'blog/base.html' %}
 ```    
 
-{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock content %}`. Takto: {% endraw %}
+{% raw %} to znamená, že nyní rozšiřujeme šablonu `base.html` v `post_list.html`. Jen jedna věc zbývá: vše dát (kromě řádku, který jsme právě přidaly) mezi `{% block content %}` a `{% endblock %}`. Takto: {% endraw %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -115,7 +115,7 @@ A teď přidej na začátek souboru tento řádek:
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
 ```  
 
 To je ono! Zkontroluj, zda tvoje stránky stále správně fungují :)

@@ -46,7 +46,8 @@ We do that by creating a folder called `static` inside the blog app:
 djangogirls
 ├── blog
 │   ├── migrations
-│   └── static
+│   ├── static
+│   └── templates
 └── mysite
 ```
 
@@ -67,7 +68,7 @@ djangogirls
 
 Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-We won't be going too deep into customizing and learning about CSS here. It's pretty easy and you can learn it on your own after this workshop. There is a recommendation for a free course to learn more at the end of this page.
+We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more. 
 
 But let's do at least a little. Maybe we could change the color of our header?
 To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
@@ -106,7 +107,7 @@ Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS fi
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may override code in Bootstrap files.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files.
 We just told our template where our CSS file is located.
 
 Your file should now look like this:

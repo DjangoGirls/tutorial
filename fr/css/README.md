@@ -44,7 +44,8 @@ Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de not
     djangogirls
     ├── blog
     │   ├── migrations
-    │   └── static
+    │   ├── static
+    │   └── templates
     └── mysite
 
 

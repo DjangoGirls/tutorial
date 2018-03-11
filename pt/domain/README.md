@@ -1,8 +1,8 @@
 # Domínio
 
-PythonAnywhere te deu um domínio gratuito, mas talvez você não queira ter ". pythonanywhere.com" no final da URL do seu blog. Talvez você queira seu blog apenas "www.infinite-kitten-pictures.org" ou "www.3d-printed-steam-engine-parts.com" ou "www.antique-buttons.com" ou "www.mutant-unicornz.net", ou seja o que vai ser.
+PythonAnywhere te deu um domínio gratuito, mas talvez você não queira ter ". pythonanywhere.com" no final da URL do seu blog. Talvez você queira que o endereço seja algo como "www.fotos-infinitas-de-gatinhos.org" ou "www.pecas-de-maquinas-a-vapor-em-3D.com" ou "www.colecionando-antiguidades.com" ou "www.unicornioz-mutantez.net" ou qualquer outro nome que você quiser.
 
-Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se você está realmente comprometido!
+Aqui vamos falar um pouco sobre onde obter um domínio e como ligá-lo a seu aplicativo da web em PythonAnywhere. No entanto, você deve saber que a maioria dos domínios custam dinheiro e PythonAnywere também cobra uma taxa mensal para usar seu próprio nome de domínio -- não é muito dinheiro, no total, mas isso provavelmente é algo que você só quer fazer se estiver realmente comprometida!
 
 ## Onde registrar um domínio?
 
@@ -14,7 +14,7 @@ O nosso favorito é o [I want my name][2] (eu quero meu nome). Eles anunciam seu
 
  [2]: https://iwantmyname.com/
 
-Você também pode obter domínios gratuitamente. [dot.tk][3] é um lugar para pegar um, mas você deve estar ciente de que domínios grátis às vezes parecem muito baratos -- se seu site vai ser para um profissional de negócios, você deve pensar em pagar por um domínio "correto" que termina em `.com`.
+Você também pode obter domínios gratuitamente. [dot.tk][3] é um lugar para obter um, mas você deve estar ciente de que domínios grátis às vezes parecem muito baratos -- se seu site vai ser para uma profissional de negócios, você deve pensar em pagar por um domínio "correto" que termina em `.com`.
 
  [3]: http://www.dot.tk
 
@@ -42,35 +42,35 @@ Clique no botão Adicionar e salve as mudanças na parte de baixo.
 
 > **Nota** Se você usou um provedor de domínio diferente, o UI exata para encontrar o seu DNS / configurações de CNAME será diferente, mas seu objetivo é o mesmo: para configurar um CNAME que aponta seu novo domínio no `yourusername.pythonanywhere.com`.
 
-Pode levar alguns minutos para o seu domínio começar a trabalhar, então seja paciente!
+Pode levar alguns minutos para o seu domínio funcionar, então seja paciente!
 
 ## Configure o domínio através de um web app na PythonAnywhere.
 
 Você também precisa dizer PythonAnywhere que você deseja usar o seu domínio personalizado.
 
-Vá para a [página PythonAnywhere contas][7] e upgrade sua conta. A opção mais barata (um plano de "Hacker") é bom para começar, você pode sempre atualizá-lo mais tarde quando você ficar super famoso e tiver milhões de acessos.
+Vá para a [página PythonAnywhere contas][7] e atualize sua conta. A opção mais barata (um plano de "Hacker") é bom para começar, você pode sempre atualizá-lo mais tarde quando você ficar super famosa e tiver milhões de acessos.
 
  [7]: https://www.pythonanywhere.com/account/
 
-Em seguida,vá na [Web tab][8] e anote algumas coisas:
+Em seguida, vá na [Web tab][8] e anote algumas coisas:
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
 *   Copie o **caminho para seu virtualenv** e coloque em um lugar seguro
-*   Clique para seu **arquivo de configuração do wsgi**, copie o conteúdo e cole em um lugar seguro.
+*   Clique para seu **arquivo de configuração do wsgi**, copie o conteúdo e cole em um lugar seguro
 
 Em seguida, **exclua** seu antigo web app. Não se preocupe, isso não vai excluir nada do seu código, ele apenas irá se desligar do domínio *yourusername.pythonanywhere.com*. Em seguida, crie um novo aplicativo web e siga estes passos:
 
 *   Digite seu nome de domínio novo
 *   Escolha "manual configuration"
-*   Escolha Python 3.4
+*   Escolha Python 3.5
 *   E é isso!
 
-Quando você tiver voltado para a web tab.
+Quando você tiver voltado para a web tab:
 
 *   Colar o caminho virtualenv que você salvou antes
 *   Clicar no arquivo de configuração wsgi e colar o conteúdo do seu arquivo de configuração antigo
 
 Clique em reload web app e você deve encontrar seu site live no novo domínio!
 
-Se você tiver qualquer problema, clique no link "Enviar feedback" no site PythonAnywhere, e um dos seus administradores amigáveis vai estar lá para ajudá-lo.
+Se você tiver qualquer problema, clique no link "Enviar feedback" no site PythonAnywhere, e um dos seus administradores amigáveis vai estar lá para ajudá-la.

@@ -45,7 +45,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 Es hora de abrir `blog/templates/blog/base.html`. Vamos a añadir un enlace en `div` llamado `page-header`:
 
 ```html
-    <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```    
 
 Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`.
@@ -64,7 +64,7 @@ Después de agregar la línea, tu archivo html debería tener este aspecto:
         </head>
         <body>
             <div class="page-header">
-                <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
             <div class="content container">
@@ -210,10 +210,20 @@ Por último, sería genial si podemos inmediatamente ir a la página `post_detai
 Agrégalo al principio del archivo. Y ahora podemos decir: vé a la página `post_detail` del post recién creado.
 
 ```python
-    return redirect('blog.views.post_detail', pk=post.pk)
+    return redirect('post_detail', pk=post.pk)
 ```    
+Si este paso te da un error "NoReverseMatch", es debido a que la url no ha sido nombrada.
 
-`blog.views.post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado.
+En el archivo `blog/urls.py` Cambia lo siguiente:
+```python
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail)
+```
+por
+```python
+    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail,  name='post_detail')
+```
+
+`post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado.
 
 Bien, hablamos mucho, pero probablemente queremos ver como se ve ahora la *vista*, ¿verdad?
 
@@ -226,7 +236,7 @@ Bien, hablamos mucho, pero probablemente queremos ver como se ve ahora la *vista
                 post.author = request.user
                 post.published_date = timezone.now()
                 post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
+                return redirect('post_detail', pk=post.pk)
         else:
             form = PostForm()
         return render(request, 'blog/post_edit.html', {'form': form})
@@ -302,7 +312,7 @@ Abramos el archivo `blog/views.py` y añadamos al final esta línea:
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return redirect('blog.views.post_detail', pk=post.pk)
+                return redirect('post_detail', pk=post.pk)
         else:
             form = PostForm(instance=post)
         return render(request, 'blog/post_edit.html', {'form': form})

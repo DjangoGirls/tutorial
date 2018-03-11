@@ -373,7 +373,7 @@
     >>> 1 > 'django'
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
+    TypeError: '>' not supported between instances of 'int' and 'str'
 
 Бачимо тут, що як і у виразі, Python не в змозі порівняти число (`int`) та рядок (`str`).
 Натомість, виводиться **TypeError** і повідомляє нас про те, що ці два типи не можна порівнювати між собою.
