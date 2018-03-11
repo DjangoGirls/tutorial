@@ -254,13 +254,13 @@ Isprobaj ovo:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Kada upišeš samo `name`, Pythonov prevoditelj odgovara sa stringovskom *reprezentacijom* varijable 'name', a ona je slova M-a-r-i-a omeđena jednostrukim navodnicima, '. Kada napišeš `print(name)`, Python ispiše ("printa") sadržaj varijable na zaslon, ali bez navodnika, što je urednije.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Kao što ćemo kasnije vidjeti, `print()` je također koristan kada želimo ispisati stvari iz funkcija ili kada želimo ispis u više linija.
 
-## Lists
+## Liste
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Osim stringova i cijelih brojeva, Python ima svakakve razne vrste objekata. Sada ćemo predstaviti jednu zvanu **lista**. Liste su točno ono što misliš da jesu: objekti koji su liste drugih objekata. :)
 
 Go ahead and create a list:
 
