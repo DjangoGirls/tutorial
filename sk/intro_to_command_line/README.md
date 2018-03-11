@@ -410,7 +410,7 @@ Tu je prehľad niektorých užitočných príkazov:
 
 | Príkaz (Windows) | Príkaz (Mac OS / Linux) | Popis                           | Príklad                                           |
 | ---------------- | ----------------------- | ------------------------------- | ------------------------------------------------- |
-| ukončenie        | ukončenie               | zatvorí okno                    | **ukončenie**                                     |
+| exit             | exit                    | zatvorí okno                    | **ukončenie**                                     |
 | cd               | cd                      | zmení adresár                   | **cd test**                                       |
 | cd               | pwd                     | ukáž akutuálny adresár          | **cd** (Windows) alebo **pwd** (Mac OS / Linux)   |
 | dir              | ls                      | vypíše zoznam adresárov/súborov | **dir**                                           |
