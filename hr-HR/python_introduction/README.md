@@ -262,7 +262,7 @@ Kao što ćemo kasnije vidjeti, `print()` je također koristan kada želimo ispi
 
 Osim stringova i cijelih brojeva, Python ima svakakve razne vrste objekata. Sada ćemo predstaviti jednu zvanu **lista**. Liste su točno ono što misliš da jesu: objekti koji su liste drugih objekata. :)
 
-Go ahead and create a list:
+Hajde napravi listu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Da, ova je lista prazna. Nije baš korisno, zar ne? Idemo napraviti listu brojeva lota. Ne želimo se cijelo vrijeme ponavljati pa ćemo listu staviti u varijablu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Uredu, imamo listu! Što možemo raditi s njom? Idemo vidjeti koliko loto brojeva ima u listi. Imaš li ikakvu ideju koju bi funkciju trebalo iskoristiti za to? Znaš to već!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Da! `len()` ti može dati broj objekata u listi. Korisno, zar ne? Možda ćemo ju sada sortirati:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Ovo ništa ne vraća, samo je promijenilo redoslijed u kojem se brojevi pojavljuju u listi. Idemo ju opet ispisati i vidjeti što se dogodilo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Kao što možeš vidjeti, brojevi u tvojoj listi sada su sortirani od najniže prema najvišoj vrijednosti. Čestitamo!
 
-Maybe we want to reverse that order? Let's do that!
+Možda želimo obrnuti taj redoslijed? Idemo to napraviti!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Ako želiš nešto dodati u svoju listu, možeš to upisivanjem iduće naredbe:
 
 {% filename %}command-line{% endfilename %}
 
