@@ -357,15 +357,15 @@ Za brisanje nečega iz svoje liste morat ćeš koristiti **indekse** o kojima sm
 
 That worked like a charm!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Za dodatnu zabavu, isprobajte neke druge indekse: 6, 7, 1000, -1, -6 ili -1000. Vidi možeš li predvidjeti rezultat prije isprobavanja naredbe. Imaju li ti rezultati smisla?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Popis svih metoda za liste koje su na raspolaganju možeš pronaći u ovom poglavlju Pythonove dokumentacije: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Rječnici
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) videu.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Rječnik je sličan listi, ali vrijednosti dohvaćaš tražeći ključ umjesto numeričkog indeksa. Ključ može biti bilokoji string ili broj. Sintaksa za definiranje praznoga rječnika je:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+To pokazuje da je upravo stvoren prazan rječnik. Hura!
 
 Now, try writing the following command (try substituting your own information, too):
 
