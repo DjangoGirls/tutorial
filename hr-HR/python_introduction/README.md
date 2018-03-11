@@ -58,7 +58,7 @@ Kao što vidiš, Python je odličan kalkulator. Ako se pitaš što još možeš 
 
 ## Stringovi
 
-How about your name? Type your first name in quotes like this:
+Što kažeš na svoje ime? Upiši svoje ime ovako u navodne znakove:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Sada je stvoren tvoj prvi string! It's a sequence of characters that can be processed by a computer. On uvijek mora započeti i završiti istim znakom. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
