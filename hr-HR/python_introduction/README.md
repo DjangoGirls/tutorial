@@ -419,7 +419,7 @@ Kada bi se trebao koristiti rječnik, a kada lista? To je dobro pitanje za promi
 - Trebaš li samo poredani niz stvari? Odaberi listu.
 - Trebaš li povezati vrijednosti sa ključevima kako bi se poslije efikasno moglo pretraživati pomoću ključa? Odaberi rječnik.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Rječnici, poput list, su *promjenjivi*, što znači da ih se može promijeniti nakon što su stvoreni. Možeš dodati novi ključ-vrijednost par u rječnik poslije stvaranja, i to ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Kao kod listi, korištenje `len()` metode na rječnicima vraća broj ključ-vrijednost parova u rječniku. Hajde utipkaj iduću naredbu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,7 +738,7 @@ It works!
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
-### What if a condition isn't True?
+### Što ako uvjet nije istinit?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
@@ -974,7 +974,7 @@ Let's call the code now:
 
 Congratulations! You just learned how to write functions! :)
 
-## Loops
+## Petlje
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
@@ -1057,7 +1057,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Summary
+## Sažetak
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
