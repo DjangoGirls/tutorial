@@ -376,7 +376,7 @@ Rječnik je sličan listi, ali vrijednosti dohvaćaš tražeći ključ umjesto n
 
 To pokazuje da je upravo stvoren prazan rječnik. Hura!
 
-Now, try writing the following command (try substituting your own information, too):
+Sada pokušaj napisati iduću naredbu (također pokušaj zamijeniti svojim informacijama):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Ovom naredbom stvorena je varijabla `participant` s tri para ključ-vrijednost:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- Ključ `name` pokazuje na vrijednost `'Ola'` (`string` objekt),
+- `country` pokazuje na `'Poland'` (još jedan `string`),
+- a `favorite_numbers` pokazuje na `[7, 42, 92]` (`lista` s tri broja).
 
-You can check the content of individual keys with this syntax:
+Možeš provjeriti sadržaj individualnih ključeva idućom sintaksom:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Vidiš, slično je listi. Ali ne moraš pamtiti indeks - samo ključ.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Što se dogodi ako pitamo Python vrijednost nepostojećega ključa? Možeš li pogoditi? Idemo probati i vidjeti!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,7 +412,7 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Vidi, još jedna greška! Ova je **KeyError**- Python je koristan i kaže ti da ključ `'age'` ne postoji u ovom rječniku.
 
 When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
