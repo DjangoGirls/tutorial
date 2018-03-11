@@ -127,9 +127,9 @@ Ako želiš znati koliko slova ima tvoje ime, i za to postoji **funkcija** za to
 3
 ```
 
-Pitaš se zašto ponekad zoveš funkcije s `.` na kraju stringa (`"Ola".upper()`), a ponekad prvo pozoveš funkciju i staviš string u zagrade? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Pitaš se zašto ponekad zoveš funkcije s `.` na kraju stringa (`"Ola".upper()`), a ponekad prvo pozoveš funkciju i staviš string u zagrade? Pa, u nekim slučajevima funkcije pripadaju objektima, poput `upper()` koja se može izvesti samo nad stringovima. U tom slučaju, funkcije nazivamo **metodama**. U drugim trenutcima funkcije ne pripadaju ničemu određenom te mogu biti korištene s različitim vrstama objekata kao, na primjer, `len()`. Zbog toga funkciji `len()` prosljeđujemo `"Ola"` kao parametar.
 
-### Summary
+### Sažetak
 
 OK, enough of strings. So far you've learned about:
 
