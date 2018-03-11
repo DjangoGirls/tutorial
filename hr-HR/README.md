@@ -34,13 +34,13 @@ OK,[krenimo od početka...](./how_the_internet_works/README.md)
 
 ## Praćenje tutorijala kod kuće
 
-Nevjerojatno je biti dio Django Girls radionica, ali svjesni smo da to nije uvijek moguće. Zato te potičemo da pokušaš pratiti ovaj tutorijal i kod kuće. Za čitatelje doma, trenutno pripremamo videe s kojim će ti biti lakše pratiti tutorijale na svoju ruku. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Nevjerojatno je biti dio Django Girls radionica, ali svjesni smo da to nije uvijek moguće. Zato te potičemo da pokušaš pratiti ovaj tutorijal i kod kuće. Za čitatelje doma, trenutno pripremamo videe s kojim će ti biti lakše pratiti tutorijale na svoju ruku. To je sve još uvijek u nastajanju, ali sve više i više stvari bit će pokrivene na YouToube kanalu [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+U svakom poglavlju koje je pokriveno, postoji link koji vodi na odgovarajući video.
 
-## About and contributing
+## O tutorijalu i doprinosima
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Ovaj tutorijal održavaju [DjangoGirls](https://djangogirls.org/). Ako nađete bilo kakve greške ili želite ažurirati tutorijal, molim.
 
 ## Would you like to help us translate the tutorial into other languages?
 
