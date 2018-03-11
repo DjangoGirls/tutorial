@@ -67,9 +67,9 @@ Kao što vidiš, Python je odličan kalkulator. Ako se pitaš što još možeš 
 'Ola'
 ```
 
-Sada je stvoren tvoj prvi string! It's a sequence of characters that can be processed by a computer. On uvijek mora započeti i završiti istim znakom. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Sada je stvoren tvoj prvi string! It's a sequence of characters that can be processed by a computer. On uvijek mora započeti i završiti istim znakom. Taj znak može biti ili jednostruki (`'`) ili dvostruki (`"`) navodni znak (nema razlike!). Navodnici govore Pythonu da je ono između njih string.
 
-Strings can be strung together. Try this:
+Stringovi mogu biti nanizani zajedno. Isprobaj ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Također možeš množiti stringove brojem:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Ako moraš staviti apostrof u svoj string, postoje dva načina na koja to možeš učiniti.
 
-Using double quotes:
+Koristeći dvostruke navodnike:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+ili zanemarujući taj apostrof kosom crtom unazad (`"`):
 
 {% filename %}command-line{% endfilename %}
 
