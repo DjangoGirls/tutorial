@@ -39,24 +39,24 @@ Za sada ne želimo izaći iz Pythonove konzole, već želimo naučiti više o nj
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Super! Vidiš kako je odgovor iskočio? Python zna matematiku! Možeš isprobati druge naredbe poput:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Za izvođenje eksponencijalnog računa, recimo 2 na eksponent 3, pišemo: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Prvo se malo zabavljaj s ovime, a onda se vrati ovdje. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Kao što vidiš, Python je odličan kalkulator. Ako se pitaš što još možeš raditi…
 
-## Strings
+## Stringovi
 
 How about your name? Type your first name in quotes like this:
 
