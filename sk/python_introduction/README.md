@@ -439,10 +439,10 @@ Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Naprík
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant.pop('favorite_numbers')
+>>> ucastnicka.pop('oblubene_cisla')
 [7, 42, 92]
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> ucastnicka
+{'meno': 'Ola', 'krajina': 'Slovensko', 'oblubeny_jazyk': 'Python'}
 ```
 
 Ako vidíš z výstupu, pár kľúč-hodnota zodpovedajúci kľúču 'oblubene_cisla' bol vymazaný.
