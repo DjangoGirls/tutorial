@@ -56,7 +56,7 @@ Prvo se malo zabavljaj s ovime, a onda se vrati ovdje. :)
 
 Kao što vidiš, Python je odličan kalkulator. Ako se pitaš što još možeš raditi…
 
-## Stringovi
+## Stringovi (znakovni nizovi)
 
 Što kažeš na svoje ime? Upiši svoje ime ovako u navodne znakove:
 
@@ -131,18 +131,18 @@ Pitaš se zašto ponekad zoveš funkcije s `.` na kraju stringa (`"Ola".upper()`
 
 ### Sažetak
 
-OK, enough of strings. So far you've learned about:
+OK, dosta stringova. Do sad je naučeno:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **prompt** - tipkanje naredaba (koda) u Pythonov prompt rezultira odgovorima u Pythonu
+- **brojevi i stringovi** - u Pythonu brojevi se koriste za matematiku, a stringovi za tekstualne objekte
+- **operatori** - poput `+` i `*`, kombiniraju vrijednosti radi stvaranja nove
+- **funkcije** - poput `upper()` i `len()`, izvode radnje na objektima.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Ovo su osnove svakog programskog jezika koji učiš. Spremna za nešto teže? Kladimo se da jesi!
 
-## Errors
+## Greške
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Idemo isprobati nešto novo. Možemo li dobiti duljinu broja na jednak način na koji smo mogli saznali duljinu našega imena? Utipkaj `len(304023)` i pritisni `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
