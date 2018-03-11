@@ -1,16 +1,16 @@
 # Što je Django?
 
-Django (*Džan-go*) je web aplikacija koja je besplatna i otvorenog je koda. Web framework je skup komponenti koje ti pomažu brže i lakše razvijati web stranice.
+Django (*Džan-go*) je web framework koji je besplatan i otvorenog koda. Web framework je skup komponenti koje ti pomažu brže i lakše razvijati web stranice.
 
 Kada stvaraš web stranicu, uvijek ćeš trebati slične komponente: autentikacija korisnika (prijava, odjava), način upravljanja svoje stranice, formulari, učitavanje datoteka itd.
 
-Srećom, davno su drugi ljudi primjetili da se većina web programera susreće sa sličnim problemima kad stvaraju novu stranicu, pa su se udružili i stvorili razne frameworke (tipa Django) koji ti daju gotove komponente na korištenje.
+Srećom, drugi ljudi su davno primjetili da se većina web programera susreće sa istim problemima kad stvaraju novu stranicu, pa su se udružili i stvorili razne frameworke (tipa Django) koji ti daju gotove komponente na korištenje.
 
-Frameworksi postoje da bi te spasili od potrebe izmišljanja "tople vode" i da ti smanje potrebu pisanja previše koda kada stvaraš novu stranicu.
+Frameworksi postoje da bi te spasili od potrebe "izmišljanja tople vode" i da ti smanje potrebu pisanja previše koda kada stvaraš novu stranicu.
 
 ## Zašto ti treba framework?
 
-Za razumijevanje za što zapravo služi Django, moramo pobliže pogledati poslužitelje. Prva stvar koju poslužitelji trebaju znati je da ti želiš da ti oni posluže web stranicu.
+Za razumijevanje za što zapravo služi Django moramo pobliže pogledati poslužitelje. Prva stvar koju poslužitelji trebaju znati je da ti želiš da ti oni posluže web stranicu.
 
 Zamisli npr. poštanski sandučić (port) kojeg nadzireš za nadolazeća pisma (zahtjeve). To radi web poslužitelj. Web poslužitelj pročita pismo i pošalje odgovor sa web stranicom. Ali, ako želiš poslati nešto, moraš imati sadržaj. Upravo je Django tu da ti pomogne stvoriti sadržaj.
 
