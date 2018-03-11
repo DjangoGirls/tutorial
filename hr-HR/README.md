@@ -18,17 +18,17 @@ E pa, imamo odlične vijesti za tebe! Programiranje uopće nije tako teško kao 
 
 Ovaj tutorijal te neće čarobno pretvoriti u programera. Ako želiš biti odlična u tome, trebat će ti mjeseci ili čak godine učenja i vježbe. Ali mi ti želimo pokazati kako programiranje i stvaranje web stranica ne mora biti teško kao što se čini. Pokušat ćemo ti objasniti različite dijelove što bolje možemo, da se ne osjećaš zastrašeno tehnologijom.
 
-We hope that we'll be able to make you love technology as much as we do!
+Nadamo se da ćemo ti moći prenesti našu ljubav prema tehnologiji!
 
-## What will you learn during the tutorial?
+## Što ćeš naučiti tijekom tutorijala?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Jednom kad završiš ovaj tutorijal, imat ćeš jednu malu web aplikaciju koja radi: vlastiti blog. Pokazat ćemo ti kako da to staviš online, tako da drugi mogu vidjeti tvoj rad!
 
-It will (more or less) look like this:
+Blog će (više-manje) izgledati ovako:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Ako samostalno prolaziš tutorijal i nemaš učitelja koji će ti pomoći s bilo kakvim problemom, imamo *chat* sustav za tebe: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
