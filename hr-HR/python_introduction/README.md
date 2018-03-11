@@ -8,9 +8,9 @@ Idemo nešto kodirati!
 
 ## Pythonov prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) videu.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Kako bismo se počeli igrati s Pythonom, moramo otvoriti *naredbeni redak*. To bi već trebala znati - učili smo to u poglavlju [Uvod u naredbeni redak](../intro_to_command_line/README.md).
 
 Once you're ready, follow the instructions below.
 
