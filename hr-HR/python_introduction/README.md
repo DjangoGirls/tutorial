@@ -107,7 +107,7 @@ ili zanemarujući taj apostrof kosom crtom unazad (`"`):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Fora, zar ne? Da vidiš svoje ime napisano velikim slovima, jednostavno utipkaj:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Upravo si pozvala `upper` **metodu** na svom stringu! Metoda (poput `upper()`) je niz instrukcija koje Python mora izvesti nad danim objektom (`"Ola"`) kada ju pozoveš.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Ako želiš znati koliko slova ima tvoje ime, i za to postoji **funkcija** za to!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Pitaš se zašto ponekad zoveš funkcije s `.` na kraju stringa (`"Ola".upper()`), a ponekad prvo pozoveš funkciju i staviš string u zagrade? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
