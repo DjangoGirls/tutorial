@@ -327,7 +327,7 @@ Ako želiš nešto dodati u svoju listu, možeš to upisivanjem iduće naredbe:
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Ako želiš prikazati samo prvi broj, možeš to učiniti korištenjem **indeksa**. Indeks je broj koji govori gdje se u listi nalazi neki objekt. Programeri radije započinju brojanje krenuvši od 0, tako da je prvi objekt u tvojoj listi na indeksu 0, sljedeći je na 1, itd. Isprobaj ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -338,9 +338,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Kao što možeš vidjeti, možeš pristupiti različitim objektima u svojoj listi korištenjem imena liste i indeksa traženog objekta unutar uglatih zagrada.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Za brisanje nečega iz svoje liste morat ćeš koristiti **indekse** o kojima smo gore naučili te `pop()` metodu. Idemo isprobati jedan primjer i učvrstiti prethodno stečeno znanje; brisat ćemo prvi broj iz naše liste.
 
 {% filename %}command-line{% endfilename %}
 
