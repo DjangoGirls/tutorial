@@ -436,9 +436,9 @@ Kao kod listi, korištenje `len()` metode na rječnicima vraća broj ključ-vrij
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Nadam se da sve do sada ima smisla. :) Spremna za još malo zabave s rječnicima? Čitaj dalje za neke nevjerojatne stvari.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Možeš koristiti `pop()` metodu za brisanje stvari iz rječnika. Recimo da želiš pobrisati unos koji odgovara ključu `'favorite_numbers'`. Samo upišeš sljedeću naredbu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,7 +449,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Kao što možeš vidjeti iz ispisa, par ključ-vrijednost koji pripada 'favorite_numbers' ključu je pobrisan.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
