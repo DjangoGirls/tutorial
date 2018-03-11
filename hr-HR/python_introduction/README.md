@@ -164,16 +164,16 @@ Piše da objekti tipa "int" (integers, cijeli brojevi) nemaju duljinu. I što sa
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Radi! Iskoristili smo `str()` funkciju unutar `len()` funkcije. `str()` pretvara sve u stringove.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- `str()` funkcija pretvara stvari u **stringove**
+- `int()` funkcija pretvara stvari u **cijele brojeve (integers)**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Bitno: brojeve možemo pretvoriti u tekst, no ne moramo nužno moći pretvoriti tekst u brojeve - što bi `int("hello")` uopće bilo?
 
-## Variables
+## Varijable
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Bitan koncept u programiranju su varijable. Varijabla nije ništa više nego ime za nešto pomoću kojega to nešto možeš poslije koristiti. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 Let's say we want to create a new variable called `name`:
 
