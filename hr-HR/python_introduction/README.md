@@ -552,14 +552,14 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-There are only two Boolean objects:
+Postoje samo dva Boolean objekta:
 
 - True
 - False
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
-Booleans can be variables, too! See here:
+Booleani također mogu biti varijable! Vidi ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+To također možeš napraviti ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -588,7 +588,7 @@ Vježbaj i zabavi se s Booleanima tako da pokušaš izvesti iduće naredbe:
 
 Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
-# Save it!
+# Spremi ga!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
@@ -629,7 +629,7 @@ With the file saved, it's time to run it! Using the skills you've learned in the
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Na Macu, naredba će izgledati ovako nekako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Na Linuxu, bit će ovako (riječ "Desktop" može biti prevedena na tvoj lokalni jezik):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+U Windowsovoj konzoli (Command Prompt, cmd), bit će ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+A u Windowsovom Powershellu izgledat će ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Ako zapneš, samo pitaj za pomoć.
 
-Now use Python to execute the code in the file like this:
+Sada iskoristi Python za pokretanje koda u datoteci:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +682,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Napomena: na Windowsima 'python3' nije prepoznato kao naredba. Umjesto toga, iskoristi 'python' za pokretanje datoteke:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,9 +690,9 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Uredu! Upravo si pokrenula svoj prvi Python program koji je spremljen u datoteku. Osjećaš li se super?
 
-You can now move on to an essential tool in programming:
+Sada možeš krenuti dalje na osnovni alat u programiranju:
 
 ## If … elif … else
 
@@ -811,7 +811,7 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Komentari
 
 Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
@@ -828,7 +828,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### Summary
+### Sažetak
 
 In the last few exercises you learned about:
 
@@ -840,7 +840,7 @@ In the last few exercises you learned about:
 
 Time for the last part of this chapter!
 
-## Your own functions!
+## Tvoje vlastite funkcije!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
