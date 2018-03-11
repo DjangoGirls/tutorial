@@ -26,9 +26,9 @@ Kada si spremna, prati sljedeće upute.
 
 ## Tvoja prva Python naredba!
 
-Nakon što smo pokrenuli naredbu Python, prompt se promijenio u `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Nakon što smo pokrenuli naredbu Python, prompt se promijenio u `>>>`. Nama to znači da za sada smijemo koristiti samo naredbe jezika Python. Ne moraš utipkati `>>>` - Python će to činiti za tebe.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Ako u bilokojem trenutku poželiš izaći iz Pythonove konzole, samo utipkaj `exit()` ili iskoristi prečac `Ctrl + Z` na Windowsima, tj. `Ctrl + D` na Macu/Linuxu. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
