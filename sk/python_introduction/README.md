@@ -341,13 +341,13 @@ Aby ste odstránili niečo zo svojho zoznamu, budete potrebovať **indexy**, ako
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> print(loteria)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> print(loteria[0])
 59
->>> lottery.pop(0)
+>>> loteria.pop(0)
 59
->>> print(lottery)
+>>> print(loteria)
 [42, 30, 19, 12, 3, 199]
 ```
 
