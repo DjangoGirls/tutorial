@@ -118,7 +118,7 @@ Fora, zar ne? Da vidiš svoje ime napisano velikim slovima, jednostavno utipkaj:
 
 Upravo si pozvala `upper` **metodu** na svom stringu! Metoda (poput `upper()`) je niz instrukcija koje Python mora izvesti nad danim objektom (`"Ola"`) kada ju pozoveš.
 
-Ako želiš znati koliko slova ima tvoje ime, i za to postoji **funkcija** za to!
+Ako želiš znati koliko slova ima tvoje ime, postoji **funkcija** i za to!
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Dobili smo našu prvu grešku! Ikona {{ warning_icon }} je naš način najavljivanja tebi da kod koji se spremaš pokrenuti neće raditi kako očekuješ. Pravljenje grešaka (čak i namjernih) bitan je dio učenja!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Piše da objekti tipa "int" (integers, cijeli brojevi) nemaju duljinu. I što sada? Možda možemo napisati naš broj kao string; stringovi imaju duljinu, zar ne?
 
 {% filename %}command-line{% endfilename %}
 
