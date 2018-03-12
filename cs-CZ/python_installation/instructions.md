@@ -60,7 +60,7 @@ Zadej tento příkaz do konzole:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt-get install python3.6
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
