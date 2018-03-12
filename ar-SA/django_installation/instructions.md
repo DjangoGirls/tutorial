@@ -58,13 +58,13 @@ data-collapse=true ces-->
 > {% filename %}command-line{% endfilename %}
 > 
 >     لم يتم إنشاء بالبيئة الإفتراضية بنجاح لأن ensurepip غير متوفر.  على أنظمة ديبيان/أوبونتو، تحتاج إلى تثبيت حزمة python3-venv باستخدام الأمر التالي.
->        apt-get install python3-venv
+>        apt install python3-venv
 >     You may need to use sudo with that command.  بعد تثبيت حزمة python3-venv، قم بإعادة إنشاء البيئة الإفتراضية الخاصة بك.
 >     
 > 
 > في هذه الحالة اتبع التعليمات تحت وثبت حزمة `python3-venv` {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python3-venv
+>     $ sudo apt install python3-venv
 >     
 > 
 > **ملاحظة:** في بعض الإصدارات من ديبيان/أوبونتو اعداد البيئة الإفتراضية بهذه الطريقة قد يعطي هذا الخطأ:
@@ -78,7 +78,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python-virtualenv
+>     $ sudo apt install python-virtualenv
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
