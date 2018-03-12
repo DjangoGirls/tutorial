@@ -6,11 +6,11 @@
 
 CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때 사용하는 HTML와 같은 마크업 언어에요. 우리 웹페이지를 예쁘게 메이크업 하는 것과 같아요. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+하지만, 처음부터 다시 시작하고 싶지는 않죠? 한 번 더, 인터넷에서 다른 개발자가 만든 무료로 배포된 코드를 사용할 거에요. (자동차를 만들기 위해) 바퀴를 다시 발명하는 건 재미있지 않죠.
 
 ## Bootstrap을 사용해봐요!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+부트스트랩(Bootstrap)은 예쁜 웹사이트를 개발하기 위해 사용되는 유명한 HTML과 CSS 프레임워크 중 하나에요: https://getbootstrap.com/
 
 부트스트랩은 트위터 개발자들에 의해 만들어졌고 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요.
 
