@@ -60,7 +60,7 @@ data-collapse=true ces-->
 
 {% filename %} baris perintah {% endfilename %}
 
-    $ sudo apt-get install python3.6
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
