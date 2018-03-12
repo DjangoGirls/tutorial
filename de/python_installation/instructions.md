@@ -48,7 +48,7 @@ Wenn Python bei dir nicht installiert ist, oder du eine andere Version willst, k
 Gib diesen Befehl in die Konsole ein:
 
 ```bash
-$ sudo apt-get install python3.5
+$ sudo apt install python3.5
 ```
 
 #### Fedora (bis zu 21)

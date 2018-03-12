@@ -34,7 +34,7 @@ Descarga Git de [git-scm.com][3] y sigue las instrucciones.
 
 Si no lo tienes ya instalado, git debería estar disponible a través del administrador de paquetes, prueba con:
 
-    sudo apt-get install git
+    sudo apt install git
     # o
     sudo yum install git
     

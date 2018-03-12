@@ -36,7 +36,7 @@ Si no tienes Python instalado o si quieres una versión diferente, puedes instal
 
 Tipea este comando en tu consola:
 
-    sudo apt-get install python3.4
+    sudo apt install python3.4
     
 
 #### Fedora

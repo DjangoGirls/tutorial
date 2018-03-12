@@ -46,7 +46,7 @@ Pour créer un `virtualenv` sous Linux ou OS X, tapez simplement la commande `py
 >
 > Pour résoudre ce problème, utilisez plutôt la commande `virtualenv`.
 >
->     ~/djangogirls$ sudo apt-get install python-virtualenv
+>     ~/djangogirls$ sudo apt install python-virtualenv
 >     ~/djangogirls$ virtualenv --python=python3.4 myvenv
 >     
 

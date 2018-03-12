@@ -15,7 +15,7 @@ Git можна завантажити з [git-scm.com](https://git-scm.com/). В
 
 #### Debian або Ubuntu
 
-    $ sudo apt-get install git
+    $ sudo apt install git
 
 
 #### Fedora

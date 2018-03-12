@@ -23,7 +23,7 @@ data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```bash
-$ sudo apt-get install git
+$ sudo apt install git
 ```
 
 <!--endsec-->

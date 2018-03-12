@@ -26,7 +26,7 @@ Python для Windows можна завантажити з сайту https://ww
 
 Наберіть наступну команду в консолі:
 
-    $ sudo apt-get install python3.4
+    $ sudo apt install python3.4
 
 
 #### Fedora

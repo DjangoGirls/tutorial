@@ -46,7 +46,7 @@
 
 > Щоб обійти цю проблему, використовуйте натомість команду `virtualenv`.
 
->     $ sudo apt-get install python-virtualenv
+>     $ sudo apt install python-virtualenv
 >     $ virtualenv --python=python3.4 myvenv
 
 

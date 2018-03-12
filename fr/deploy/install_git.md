@@ -10,7 +10,7 @@ Vous pouvez télécharger Git sur [git-scm.com](https://git-scm.com/). Pour le r
 
 Git est probablement déjà installé mais, si ce n'est pas le cas, voici les instructions à suivre :
 
-    sudo apt-get install git
+    sudo apt install git
      # ou
     sudo yum install git
      # ou

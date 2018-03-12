@@ -58,7 +58,7 @@ Eine `virtualenv` auf Linux oder macOS X anzulegen, heißt lediglich `python3 -m
 > 
 > Das zu umgehen, kannst du den `virtualenv`-Befehl verwenden.
 >```bash
->~/djangogirls$ sudo apt-get install python-virtualenv
+>~/djangogirls$ sudo apt install python-virtualenv
 >~/djangogirls$ virtualenv --python=python3.4 myvenv
 >```
 
