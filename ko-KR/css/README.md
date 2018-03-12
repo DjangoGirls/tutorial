@@ -4,7 +4,7 @@
 
 ## CSS는 무엇인가요?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때 사용하는 HTML와 같은 마크업 언어에요. 우리 웹페이지를 예쁘게 메이크업 하는 것과 같아요. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
