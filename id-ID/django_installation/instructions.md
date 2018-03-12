@@ -61,13 +61,14 @@ data-collapse=true ces-->
 > > {% filename%} baris perintah {% endfilename%}
 > > 
 > >     Lingkungan virtual tidak berhasil dibuat karena ensurepip tidak tersedia.  Pada sistem Debian / Ubuntu, Anda perlu menginstal paket python3-venv menggunakan perintah berikut.
-> >        apt-get install python3-venv Anda mungkin perlu menggunakan sudo dengan perintah itu.  Setelah menginstal paket python3-venv, buat ulang lingkungan virtual Anda.
+> >        apt install python3-venv
+> >     You may need to use sudo with that command.  Setelah menginstal paket python3-venv, buat ulang lingkungan virtual Anda.
 > >     
 > > 
 > > Dalam kasus ini, ikuti petunjuk di atas dan pasang paket ` python3-venv </ 0> :
  {% filename%} command-line {% endfilename%}  </p>
 
-<pre><code>$ sudo apt-get install python3-venv
+<pre><code>$ sudo apt install python3-venv
 `</pre> 
 > > 
 > > ** CATATAN: </ 0> Pada beberapa versi Debian / Ubuntu yang memulai lingkungan virtual seperti saat ini memberikan error berikut:</p> 
@@ -81,7 +82,8 @@ data-collapse=true ces-->
 > > 
 > > {% filename%} baris perintah {% endfilename%}
 > > 
-> >     $ sudo apt-get install python-virtualenv $ virtualenv --python = python3.6 myvenv
+> >     $ sudo apt install python-virtualenv
+> >     $ virtualenv --python=python3.6 myvenv
 > >     
 > > 
 > > ** CATATAN: </ 0> Jika Anda mengalami error seperti</p> 
