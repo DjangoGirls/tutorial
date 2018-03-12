@@ -2,7 +2,7 @@
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. 이 튜토리얼에서는, Cloud 9가 당신의 *로컬 컴퓨터* 역할을 합니다. 이번에도 OS X, Ubuntu, Windows 등에서 했던 것과 같이 터미널 화면에 명령어를 입력할 것입니다. 그러나 이번에는 터미널이, Cloud 9에서 당신을 위해 어디선가 돌리고 있는 가상의 컴퓨터에 연결됩니다.
+Cloud 9는 코드 편집기를 제공하며, 인터넷상에서 작동하는 가상의 컴퓨터를 사용할 수 있도록 도와줍니다. 이러한 컴퓨터에서 소프트웨어를 설치하고, 만들고, 작동시킬 수 있습니다. 이 튜토리얼에서는, Cloud 9가 당신의 *로컬 컴퓨터* 역할을 합니다. 이번에도 OS X, Ubuntu, Windows 등에서 했던 것과 같이 터미널 화면에 명령어를 입력할 것입니다. 그러나 이번에는 터미널이, Cloud 9에서 당신을 위해 어디선가 돌리고 있는 가상의 컴퓨터에 연결됩니다.
 
 1. [크롬 웹 스토어](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)에서 Cloud 9 설치하기
 2. [c9.io](https://c9.io)로 들어가기
@@ -18,7 +18,7 @@ Cloud 9 is a tool that gives you a code editor and access to a computer running 
     유저이름:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+하단의 영역은 Cloud 9가 당신을 위해 준비한 컴퓨터에게 명령을 내리는 *터미널*입니다. 크기를 좀 더 키우려면 창의 크기를 조절할 수 있습니다.
 
 ### 가상 환경
 
