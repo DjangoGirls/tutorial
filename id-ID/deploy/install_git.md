@@ -22,7 +22,7 @@ data-collapse=true ces-->
 > {% filename%} baris perintah {% endfilename%}
 > 
 > ```bash
-$ sudo apt-get install git
+$ sudo apt install git
 ```
 
 <!--endsec-->
