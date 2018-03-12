@@ -58,13 +58,13 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > {% filename %}command-line{% endfilename %}
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  데비안/우분투 시스템에는, 다음 명령을 사용 하여 python3 venv 패키지를 설치 해야 합니다.
->        apt-get install python3-venv
+>        apt install python3-venv
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
 > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python3-venv
+>     $ sudo apt install python3-venv
 >     
 > 
 > **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
@@ -78,7 +78,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python-virtualenv
+>     $ sudo apt install python-virtualenv
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
