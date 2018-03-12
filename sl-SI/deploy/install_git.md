@@ -24,7 +24,7 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 
 ```bash
-$ sudo apt-get install git
+$ sudo apt install git
 ```
 
 <!--endsec-->
