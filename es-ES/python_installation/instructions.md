@@ -60,7 +60,7 @@ Escribe este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt-get install python3.6
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
