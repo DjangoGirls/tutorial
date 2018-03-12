@@ -6,6 +6,6 @@
 
 > **Note** 만약 크롬북을 사용한다면, 이번 장을 생략하고 [크롬 북 설정](../chromebook_setup/README.md)을 정확하게 따르세요.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Note** 사전에 이번 장을 진행했다면 - 다음 장으로 바로 건너뛸 수 있습니다.
 
 {% include "/code_editor/instructions.md" %}
