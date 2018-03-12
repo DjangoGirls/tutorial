@@ -24,7 +24,7 @@ data-collapse=true ces-->
 {% filename %}komut-satırı{% endfilename %}
 
 ```bash
-$ sudo apt-get install git
+$ sudo apt install git
 ```
 
 <!--endsec-->
