@@ -60,7 +60,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt-get install python3.6
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
