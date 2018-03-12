@@ -10,13 +10,13 @@ Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text는 인기있는 에디터이면서 무료로 사용할 수 있어요. 그리고 설치나 사용이 편리하며 모든 운영체제에서 쓸 수 있어요.
 
-[이 곳에서 다운받을 수 있어요.](https://www.sublimetext.com/3)
+[이 곳에서 설치할 수 있어요.](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom은 아주 최근에 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
 
 [이 곳에서 다운받을 수 있어요.](https://atom.io/)
 
@@ -28,4 +28,4 @@ Atom is an extremely new code editor created by [GitHub](https://github.com/). I
 
 두 번째 이유는 코드 에디터가 여러분이 개발을 할 때 도움이 되는 여러 기능들을 제공하기 때문이에요. 대표적인 예로, 코드를 해석해서 색으로 문법을 하이라이팅해주는 기능이라든가 쌍따옴표("") 를 자동으로 닫아주는 등과 같은 기능들이지요.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+우리는 앞으로 어떻게 작동하는지 확인할 거에요. 그러면 곧, 여러분은 자신이 선택한 코드 에디터를 제일 좋아한다고 생각하기 시작할 거에요.
