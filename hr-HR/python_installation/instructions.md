@@ -16,12 +16,12 @@ U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo t
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Napomena: ako koristiš starije inačice Windowsa (7, Vista ili starije), i instalacija Pythona 3.6.x ti dojavi grešku, možeš pokušati ili:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. instalirati sva ažuriranja pa pokušati ponovno; ili
+2. instalirati [stariju inačicu Pythona](https://www.python.org/downloads/windows/), npr. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Ako ćeš instalirati stariju inačicu Pythona, ekran instalacije može može izgledati drukčije nego na slici gore. Provjeri je li označeno "Add python.exe to Path", zatim klikni na gumb lijevo i odaberi "Will be installed on a local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -30,7 +30,7 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Note** Prije instalacije Pythona na OS X, trebalo bi provjeriti dozvoljavaju li ti postavke Maca instaliranje paketa koji nisu sa App Storea. Idi na System Preferences (u mapi Aplikacija), stisni na "Securty & Privacy", a zatim na tab "General". Ako ti pod "Allow apps downloaded from:" piše "Mac App Store", promjeni to u "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
