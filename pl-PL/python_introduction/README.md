@@ -30,7 +30,7 @@ Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla
 
 Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Nieźle! Widzisz, jak pojawiła się odpowiedź? Python zna się na matematyce! Powinnaś spróbować innych działań, np.:
 
 - `4 * 5`
 - `5 - 1`
@@ -376,7 +376,7 @@ Słownik przypomina nieco listę, jednak różni się tym, że dostęp do warto�
 
 To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
-Now, try writing the following command (try substituting your own information, too):
+A teraz spróbuj wpisać poniższą instrukcję (spróbuj użyć własnych danych):
 
 {% filename %}command-line{% endfilename %}
 
@@ -517,7 +517,7 @@ False
 - x `<=` y oznacza: x jest mniejsze lub równe y
 - x `>=` y oznacza: x jest większe lub równe y
 
-Awesome! Wanna do one more? Try this:
+Świetnie! A chcesz zrobić coś jeszcze? Spróbuj tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ Po uruchomieniu wyświetli się:
     5 jest jednak większe od 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -958,13 +958,13 @@ Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i racze
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Hej ' + name + '!')
+def hi(imie):
+    print('Hej ' + imie + '!')
 
 hi("Rachel")
 ```
 
-Let's call the code now:
+Teraz wywołajmy ten kod:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Hej Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
 ## Pętle
 
 > Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+To już ostatnia cześć. Prawda, że szybko poszło? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
 
-Still remember lists? Let's do a list of girls:
+Pamiętasz jeszcze listy? Zróbmy listę dziewczyn:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +990,7 @@ Still remember lists? Let's do a list of girls:
 dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hi`, zatem użyjmy jej wewnątrz pętli:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,15 +998,15 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for imie in dziewczyny:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Wyrażenie `for` zachowuje się podobnie jak `if`, a więc kod pod nimi musi być wcięty 4 spacjami.
 
-Here is the full code that will be in the file:
+Oto kompletny kod, który umieścimy w pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Witaj ' + name + '!')
+def hi(imie):
+    print('Witaj ' + imie + '!')
 
 dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
 for imie in dziewczyny:
@@ -1014,7 +1014,7 @@ for imie in dziewczyny:
     print('Kolejna dziewczyna')
 ```
 
-And when we run it:
+A gdy go uruchomimy:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1031,9 @@ And when we run it:
     Kolejna dziewczyna
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
-You can also use `for` on numbers using the `range` function:
+Możesz także użyć `for` na liczbach, używając funkcji `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Co wypisze nam na ekranie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1053,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` jest funkcją, która tworzy listę liczb jedna po drugiej (liczby te podajesz jako parametry).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej przez Pythona (to znaczy, że `range(1, 6)` liczy od 1 do 5, ale nie zawiera liczby 6). Dzieje się tak, bo "range" ma przedział jednostronnie otwarty, co oznacza, że zawiera pierwszą wartość z przedziału, ale nie zawiera ostatniej.
 
 ## Podsumowanie
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Oficjalny, kompletny tutorial Pythona znajdziesz pod adresem https://docs.python.org/3/tutorial/. Pozwoli on Tobie poznać język kompletnie i dogłębnie. Powodzenia! :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom zanim przejdziesz do kolejnego rozdziału. :)
 
-![Cupcake](images/cupcake.png)
+![Babeczka](images/cupcake.png)
