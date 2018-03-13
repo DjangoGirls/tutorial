@@ -161,18 +161,17 @@ body {
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+이전과 마찬가지로, `blog/static/css/blog.css`를 연결 하기 전에 위치와 명령을 확인하세요. 이제 구글 폰트(https://www.google.com/fonts)에서 *랍스터* 라는 폰트를 가져오는 작업을 진행할 거에요.
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+우선 `blog/static/css/blog.css`파일 내에서 `h1 a` 블록( h1 a {...} 사이의 코드)을 찾아보세요. 그리고 괄호 사이에 `font-family: 'Lobster';<0>을 추가하고 페이지 새로고침을 해보세요:</p>
 
-{% filename %}blog/templates/blog/post_blog.css{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_blog.css{% endfilename %}</p>
 
-```css
-h1 a {
+<pre><code class="css">h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-```
+`</pre> 
 
 ![그림 14.3](images/font.png)
 
@@ -297,7 +296,7 @@ h1, h2, h3, h4 {
 
 와! 멋지지 않나요? 붙여넣기한 HTML 클래스와 CSS 코드를 보세요. 초록색으로 날짜를 바꾸려면 어느 곳을 고쳐야할까요?
 
-CSS를 고치는 것을 두려워하지 말고, 편하게 고치고 싶은 것을 수정해보세요. 이것저것 고쳐보면서 CSS와 놀아보면 금방 이해할 수 있게 된답니다. If you break something, don't worry – you can always undo it!
+CSS를 고치는 것을 두려워하지 말고, 편하게 고치고 싶은 것을 수정해보세요. 이것저것 고쳐보면서 CSS와 놀아보면 금방 이해할 수 있게 된답니다. 만약 무엇인가 깨져보이면, 걱정하지마세요 - 항상 되돌릴 수 있어요!
 
 [Codeacademy HTML & CSS 강좌](https://www.codecademy.com/tracks/web)를 수강하는 것을 강력히 추천합니다. CSS로 근사한 웹 사이트를 만들 수 있는 모든 방법을 배울 수 있답니다.
 
