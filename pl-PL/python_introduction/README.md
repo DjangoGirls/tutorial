@@ -783,7 +783,7 @@ i uruchommy go:
 
 Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko Ci się podoba. Na przykład:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python zbada każdy warunek i wyświetli:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +813,9 @@ Python runs through each test in sequence and prints:
 
 ## Komentarze
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą uczyć twój kod łatwiejszym do zrozumienia przez innych.
 
-Let's see how that looks:
+Zobaczmy, jak to wygląda:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +826,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne by wytłumaczyć czemu program coś robi, lub by dodać podsumowanie gdy program robi coś skomplikowanego.
 
 ### Podsumowanie
 
-In the last few exercises you learned about:
+W ostatnich kilku ćwiczeniach nauczyłaś się:
 
 - **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
 - **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
@@ -838,15 +838,15 @@ In the last few exercises you learned about:
 - **if...elif...else** - wyrażenia, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
 - **komentarze** - linie, których Python nie wykona, a które pozwalają Ci dokumentować kod programu
 
-Time for the last part of this chapter!
+Czas na ostatnią część tego rozdziału!
 
 ## Twoje własne funkcje!
 
 > Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +858,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+OK, nasza pierwsza funkcja gotowa!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Być może zastanawiasz się, czemu napisałyśmy nazwę funkcji na końcu pliku. Zrobiłyśmy tak, ponieważ Python odczytuje plik i wykonuje go od góry do dołu. Zatem w celu użycia naszej funkcji, musimy ponownie wpisać ją na dole.
 
-Let's run this now and see what happens:
+Uruchommy to teraz i sprawdźmy, co się stanie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,48 +871,48 @@ Let's run this now and see what happens:
     Jak się masz?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Uwaga: Jeżeli to nie zadziała, nie ma powodu panikować! Wynik działania pozwoli Ci ustalić czemu:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
 - Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tą samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
 - Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji, i nigdy nie zostanie wykonana. 
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def hi(imie):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    if name == 'Ola':
+def hi(imie):
+    if imie == 'Ola':
         print('Hej Ola!')
-    elif name == 'Sonja':
+    elif imie == 'Sonja':
         print('Hej Sonja!')
     else:
-        print('Hej anonimie!')
+        print('Hej nieznajoma!')
 
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hej()
-    TypeError: hej() missing 1 required positional argument: 'imie'
+      hi()
+    TypeError: hi() missing 1 required positional argument: 'imie'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+I wykonajmy ponownie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +928,7 @@ And run it again:
     Hej Ola!
     
 
-And if we change the name?
+A gdybyśmy zmieniły imię?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +936,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+I wykonajmy:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,16 +944,16 @@ And run it:
     Hej Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno się wyświetlić coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
     Hej nieznajoma!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i raczej ciężko byłoby pisać warunek dla każdego, co?
 
 {% filename %}python_intro.py{% endfilename %}
 
