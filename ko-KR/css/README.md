@@ -204,7 +204,7 @@ h1 a {
 
 다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 이제 `blog/static/css/blog.css`파일안에 아래 코드를 복사, 붙여넣기 하세요:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
 ```css
 .page-header {
