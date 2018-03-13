@@ -45,7 +45,7 @@ blog앱 안에 `static`폴더를 만드세요:
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+이 코드를 CSS에 붙여넣고, 파일을 저장하고 어떻게 바뀌었는지 확인해봐요!
 
 ![그림 14.3](images/margin2.png)
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 이제 `blog/static/css/blog.css`파일안에 아래 코드를 복사, 붙여넣기 하세요:
+다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. 아래의 코드(클래스 선택자) 를 이해하기 위해서 CSS에 대한 튜토리얼이나 설명을 참고하면 큰 도움이 될 거에요. 이제 `blog/static/css/blog.css`파일안에 아래 코드를 복사, 붙여넣기 하세요:
 
 {% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
