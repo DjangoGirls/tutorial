@@ -5,7 +5,7 @@ Git jest "systemem kontroli wersji", którego używa wielu programistów. Progra
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Poza tym domyślne ustawienia są w porządku. Upewnij się jeszcze, że w kroku "Configuring the line ending conversions" wybrana jest opcja "Checkout Windows-style, commit Unix-style line endings".
+Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). Możesz klikać "next" we wszystkich krokach instalacji prócz jednego, w kroku nazwanym "Adjusting your PATH environment", wybierz "Use Git and optional Unix tools from the Windows Command Prompt" (dolna opcja). Poza tym domyślne ustawienia są w porządku. Upewnij się jeszcze, że w kroku "Configuring the line ending conversions" wybrana jest opcja "Checkout Windows-style, commit Unix-style line endings".
 
 Nie zapomnij zrestartować terminal linii poleceń lub powershell po instalacji zakończonej sukcesem. <!--endsec-->
 
@@ -24,7 +24,7 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 
 ```bash
-$ sudo apt install git
+sudo apt install git
 ```
 
 <!--endsec-->
