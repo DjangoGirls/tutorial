@@ -16,7 +16,7 @@ CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때
 
 ## Bootstrap 설치하기
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+부트스트랩(Bootstrap)을 설치하려면, 부트스트랩을 적용하려는 html 확장자(*.html)을 가진 파일의 `<head>`에 다음과 같은 문장을 추가해야 해요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+이 링크는 프로젝트에 파일을 새로 추가하는 게 아니에요. 인터넷에 있는 파일을 연결하는 거에요. 따라해보고, 웹사이트를 열어 새로고침 버튼을 눌러보세요. 짜자자잔!
 
 ![그림 14.1](images/bootstrap1.png)
 
@@ -49,11 +49,11 @@ blog앱 안에 `static`폴더를 만드세요:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django는 app폴더 안에 있는 "static" 폴더를 자동으로 찾아 안에 있는 내용을 불러내요. 그러면 컨텐츠를 정적 파일로 사용할 수 있어요.
 
 ## 나의 첫 번째 CSS 파일!
 
-Let's create a CSS file now, to add your own style to your web page. `static` 디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
+CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어 봐요. `static` 디렉토리 안에 `css`라고 새로운 디렉토리를 만드세요. 그리고 `css`디렉토리 안에 `blog.css`라는 파일을 만드세요. 준비되셨나요?
 
     djangogirls
     └─── blog
@@ -66,11 +66,11 @@ CSS를 쓸 차례에요! 여러분이 사용하고 있는 코드에디터에서 
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ 그리고 [미리 정의 된 색](http://www.w3schools.com/colors/colors_names.asp), 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있어요.
 
 `blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
 ```css
 h1 a {
