@@ -6,17 +6,17 @@ Nasz blog nadal wygląda dość surowo, prawda? Czas, aby to zmienić! Użyjemy 
 
 Kaskadowe arkusze stylów (ang. Cascading Style Sheets, CSS) to język używany do określania wyglądu i formatowania strony internetowej napisanej w języku znaczników (np. HTML). Traktuj go jak make-up dla naszej strony. ;)
 
-Ale nie chcemy zaczynać od nowa, prawda? Raz jeszcze będziemy używać czegoś, co programiści wydali w Internecie za darmo. Odkrywanie Ameryki na nowo nie jest zabawne, wiesz.
+Ale nie chcemy zaczynać od nowa, prawda? Raz jeszcze będziemy używać czegoś, co programiści opublikowali w Internecie za darmo. Odkrywanie Ameryki na nowo nie jest zabawne.
 
 ## Użyjmy biblioteki Bootstrap!
 
 Bootstrap jest jednym z najpopularniejszych frameworków HTML i CSS do budowania pięknych stron: https://getbootstrap.com/
 
-Został stworzony przez programistów, którzy pracowali dla Twitter-a. Obecnie jest rozwijany przez ochotników z całego świata!
+Został stworzony przez programistów, którzy pracowali dla Twittera. Obecnie jest rozwijany przez kontrybutorów z całego świata!
 
 ## Zainstaluj Bootstrapa
 
-Aby zainstalować Bootstrap musisz dodać poniższe linijki `<head>` w Twoim pliku `.html`:
+Aby zainstalować bibliotekę Bootstrap, musisz dodać poniższe linijki `<head>` w Twoim pliku `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
