@@ -64,9 +64,9 @@ CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어 �
 
 CSS를 쓸 차례에요! 여러분이 사용하고 있는 코드에디터에서 `blog/static/css/blog.css`파일을 불러오세요.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+우리는 여기서 CSS에 대해 깊게 배우거나 다루지않을 거에요. 만약 더 많이 배우고 싶다면, 페이지 마지막 부분에 무료 CSS 코스에 대한 추천을 참고하세요.
 
-하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ 그리고 [미리 정의 된 색](http://www.w3schools.com/colors/colors_names.asp), 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있어요.
+하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. `#`으로 시작해 알파벳(A-F) 와 숫자(0-9) 중 6개를 조합해 나타내요(16진수로 말이에요). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ 그리고 [미리 정의 된 색](http://www.w3schools.com/colors/colors_names.asp), 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있어요.
 
 `blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
