@@ -67,9 +67,9 @@ A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłow
 'Ola'
 ```
 
-Właśnie stworzyłaś swój pierwszy string! Jest to ciąg znaków, który może być przetwarzany przez komputer. String musi zawsze zaczynać się i kończyć tym samym znakiem. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Właśnie stworzyłaś swój pierwszy string! Jest to ciąg znaków, który może być przetwarzany przez komputer. String musi zawsze zaczynać się i kończyć tym samym znakiem. Może to być apostrof (`'`) lub cudzysłów (`"`) - nie ma różnicy! Sygnalizują one Pythonowi, że wszystko, co znajduje się pomiędzy nimi, jest stringiem.
 
-Strings can be strung together. Try this:
+Stringi mogą być łączone. Spróbuj tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Czesc Ola'
 ```
 
-You can also multiply strings with a number:
+Da się również mnożyć stringi za pomocą liczb:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Jeśli chciałabyś użyć apostrofu wewnątrz stringu, możesz to zrobić na dwa sposoby.
 
-Using double quotes:
+Za pomocą cudzysłowu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+lub poprzedzając apostrof odwróconym ukośnikiem (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz po prostu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Właśnie użyłaś **metody** `upper` na swoim stringu! Metoda (jak `upper()`) to sekwencja instrukcji, które Python wykonuje na podanym obiekcie (`"Ola"`) jak tylko ją wywołasz.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Jeżeli chcesz poznać liczbę liter, którą zawiera twoje imię, istnieje **funkcja** również do tego!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,18 +127,18 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu (jak tutaj: `"Ola".upper()`), a czasami najpierw wywołujemy funkcję, a dopiero potem umieszczamy string w nawiasach? Ano, w niektórych przypadkach funkcje są związane z obiektami. Tak jak `upper()`, która może być użyta wyłącznie na stringach. Taką funkcję nazywamy wówczas **metodą**. Są również funkcje, które nie są powiązane z niczym konkretnym i mogą być używane na różnych typach obiektów, jak na przykład `len()`. Dlatego przekazujemy `"Ola"` jako parametr dla funkcji `len`.
 
 ### Podsumowanie
 
-OK, enough of strings. So far you've learned about:
+OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
 - **wiersza poleceń** - wpisywanie komend (kodu) w wiersz poleceń Pythona powoduje, że Python zwraca wyniki
 - **liczby i stringi** - w Pythonie liczb używamy do działań matematycznych, a stringów do obiektów tekstowych
 - **operatory** - takie jak `+` i `*`, łączą wartości produkując nowe
 - ** funkcje** - takie jak `upper()` i `len()`, wykonują działania na obiektach.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć. Gotowa na coś trudniejszego? Mamy nadzieję, że tak!
 
 ## Błędy
 
