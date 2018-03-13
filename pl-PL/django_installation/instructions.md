@@ -64,7 +64,7 @@ Możemy stworzyć `virtualenv`'a w Linuksie i OS X poprzez użycie jedynie polec
 > 
 > W tym przypadku, wykonaj powyższe instrukcje i zainstaluj pakiet `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt install python3-venv
+>     sudo apt install python3-venv
 >     
 > 
 > **UWAGA:** W niektórych wersjach Debiana/Ubuntu inicjowanie środowiska wirtualnego w ten sposób daje obecnie następujący błąd:
