@@ -165,7 +165,7 @@ As before, check the order and place before the link to `blog/static/css/blog.cs
 
 Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
 ```css
 h1 a {
