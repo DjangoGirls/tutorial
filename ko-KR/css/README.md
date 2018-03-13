@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a`가 CSS 셀렉터(Selector)에요. `h1`대신 `a`스타일을 적용하라는 뜻입니다. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. 예를 들어, 오랜지 색상은 `#FCA205`입니다. 물론, 색상을 직접 선택할 수도 있어요!
+`h1 a`가 CSS 셀렉터(Selector)에요. `h1`대신 `a`스타일을 적용하라는 뜻입니다. 예를 들어 `<h1><a href="">link</a></h1>`은 `h1 a` {...} 을 통해 스타일이 적용됩니다. 위 예에서, `#FCA205`은 오렌지 색상으로 바꾸는 것을 나타내요. 물론, 색상을 직접 선택할 수도 있어요!
 
 CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 요소를 식별하는 첫 번째 방법은 이름을 붙이는 겁니다. HTML에서 태그 이름으로 찾을 수 있겠죠. `a`, `h1`, `body`요소도 그 예입니다. 상속 `class` 또는 상속 `id`로 요소를 식별합니다. Class와 id는 여러분들이 붙인 이름을 갖게 되지요. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 css에서 태그 이름 `a`, 클래스 `external_link`, id `link_to_wiki_page`을 사용해서 식별해요.
 
@@ -86,7 +86,7 @@ CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+W3Schools에서 [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)에 대해 더 읽을 수 있어요.
 
 We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
@@ -96,7 +96,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+드디어 정적파일을 실행시켰어요 :) `<head>`와 `</head>`사이에, 아래 코드를 추가해 부트스트랩 CSS 파일과 연결시키세요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-브라우저는 순서대로 차례차례 파일을 읽기 때문에, 올바른 곳에 배치해야해요. Otherwise the code in our file may be overriden by code in Bootstrap files. 이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.
+브라우저는 순서대로 차례차례 파일을 읽기 때문에, 올바른 곳에 배치해야해요. 그렇지 않으면, 파일의 부트스트랩 코드를 재정의해야 할 수도 있어요. 이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.
 
 여러분이 만든 파일은 아래와 같아야해요.
 
