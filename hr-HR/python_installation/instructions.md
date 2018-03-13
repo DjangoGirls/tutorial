@@ -32,17 +32,17 @@ data-collapse=true ces-->
 
 > **Note** Prije instalacije Pythona na OS X, trebalo bi provjeriti dozvoljavaju li ti postavke Maca instaliranje paketa koji nisu sa App Storea. Idi na System Preferences (u mapi Aplikacija), stisni na "Securty & Privacy", a zatim na tab "General". Ako ti pod "Allow apps downloaded from:" piše "Mac App Store", promjeni to u "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Moraš otići na web stranicu https://www.python.org/downloads/release/python-361/ i preuzeti Python instalaciju:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Preuzmi *Mac OS X 64-bit732-bit installer*,
+* Dvaput stisni *python-3.6.1-macosx10.6.pkg* da pokreneš instalaciju.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Vrlo je vjerojatno da već imaš predinstaliran Python još iz trgovine. Ako želiš provjeriti imaš li ga instaliranog (i koju inačicu), otvori konzolu i upiši sljedeću naredbu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +50,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+Ako imaš imaš instaliranu neku drugu 'mikro inačicu' Pythona, npr. 3.6.0, onda ne moraš ažurirati. Ako nemaš instaliran Python, ili želiš drugu inačicu, možeš ju instalirati na slijedeći način:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Upiši ovu naredbu u svoju konzolu:
 
 {% filename %}command-line{% endfilename %}
 
