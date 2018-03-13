@@ -6,13 +6,13 @@ Django je pisan u Pythonu. Trebat ćemo Python ako želimo išta napraviti u Dja
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Prva provjeri imaš li na računalu 32-bitnu inačicu ili 64-bitnu inačicu Windowsa, pritiskanjem Windows + Pause/Break kombinacije, koja će otvoriti Sustav info, pa pogledaj na liniju u kojoj piše "Tip sustava". Možeš preuzeti Python za Windows sa stranice https://www.python.org/downloads/windows/. Klikni na link "Latest Python 3 Release - Python x.x.x". If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Prva provjeri imaš li na računalu 32-bitnu inačicu ili 64-bitnu inačicu Windowsa, pritiskanjem Windows + Pause/Break kombinacije, koja će otvoriti Sustav info, pa pogledaj na liniju u kojoj piše "Tip sustava". Možeš preuzeti Python za Windows sa stranice https://www.python.org/downloads/windows/. Klikni na link "Latest Python 3 Release - Python x.x.x". Ako na računalu imaš **64-bitnu** inačicu Windowsa, preuzmi **Windows x86-64 executable installer**. Ako imaš 32-bitnu, preuzmi **Windows x86 executable installer**. Nakon što se datoteka preuzme, pokreni ju (dvostrukim klikom) i prati te upute.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+Pripazi na jednu stvar: tijekom instalacije, u prozoru na kojem piše "Setup" mora biti kvačica pored opcije "Add Python 3.6 to PATH". Ako je nema, stavi ju, a zatim klikni na "Install Now", kao što možeš vidjeti:
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
