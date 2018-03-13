@@ -68,21 +68,21 @@ Upiši ovu naredbu u svoju konzolu:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Koristi ovu naredbu u svojoj konzoli:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+Ako imaš stariju inačicu Fedora operacijskog sustava, možda dobiješ grešku da nema naredbe `dnf`. U tom slučaju moraš koristiti yum.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Koristi ovu naredbu u svojoj konzoli:
 
 {% filename %}command-line{% endfilename %}
 
