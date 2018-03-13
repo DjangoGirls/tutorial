@@ -355,17 +355,17 @@ By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczył
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Wszystko zadziałało zgodnie z planem!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Żeby było zabawniej, sprawdź inne indeksy: 6, 7, 1000, -1, -6 czy -1000. Sprawdż, czy jesteś w stanie przewidzieć rezultat przed użyciem instrukcji. Czy otrzymane rezultaty mają sens?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Wykaz wszystkich metod dostępnych dla list znajdziesz w odpowiednim rozdziale dokumentacji Pythona: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Słowniki
 
 > Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Installing Python Code Editor](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Słownik przypomina nieco listę, jednak różni się tym, że dostęp do wartości uzyskujemy za pomocą klucza, a nie liczbowego indeksu. Kluczem może być dowolny ciąg znaków lub liczba. Pusty słownik tworzymy tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+To pokazuje, że właśnie stworzyłaś pusty słownik. Hura!
 
 Now, try writing the following command (try substituting your own information, too):
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> uczestniczka = {'imie' : 'Ola', 'kraj' : 'Polska', 'ulubione_liczby' : [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Za pomocą tej instrukcji stworzyłaś właśnie zmienną o nazwie `uczestniczka` zawierającą trzy pary klucz-wartość:
 
 - Klucz `imie` wskazuje na wartość `'Ola'` (obiekt typu `string`),
 - `kraj` wskazuje na wartość `'Polska'` (kolejny `string`),
 - zaś `ulubione_liczby` odnoszą się do `[7, 42, 92]` (obiekt typu `list` zawierający trzy liczby).
 
-You can check the content of individual keys with this syntax:
+Za pomocą poniższej składni możesz sprawdzać wartości poszczególnych kluczy:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Widzisz, zupełnie jak w liście. Ale nie trzeba pamiętać numeru indeksu, wystarczy nazwa klucza.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+A co się stanie, gdy poprosimy Pythona o wartość klucza, który nie istnieje? Masz pomysł? Spróbujmy tak zrobić i zobaczmy efekt!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'wiek'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Spójrz, kolejny błąd! Tym razem **KeyError**. Python próbuje Ci pomóc i wskazuje, że klucz `'wiek'` nie istnieje w tym słowniku.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Kiedy powinniśmy używać słownika, a kiedy listy? To bardzo dobre pytanie! Zastanów się nad rozwiązaniem, zanim spojrzysz na odpowiedź poniżej.
 
 - Potrzebujesz ułożyć elementy w określonej kolejności? Wybierz listę.
 - Potrzebujesz powiązać wartości z kluczami, żeby mieć później łatwiejszy dostęp do nich (używając klucza)? Użyj słownika.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Słowniki, podobnie jak listy, są *mutowalne*, co oznacza, że po ich utworzeniu można je nadal zmieniać. Możesz dodać do stworzonego już słownika nowe pary klucz-wartość, w taki sposób:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> uczestniczka['ulubiony_jezyk'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość w danym słowniku. Śmiało, wpisz polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,22 +436,22 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant.pop('favorite_numbers')
+>>> uczestniczka.pop('ulubione_liczby')
 [7, 42, 92]
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> uczestniczka
+{'kraj': 'Polska', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Jak widać z wyświetlonego rezultatu, para klucz-wartość odpowiadająca kluczowi 'ulubione_liczby' została usunięta.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Ponadto możesz także zmienić wartość odpowiadającą kluczowi, który już istnieje w słowniku. Napisz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,24 +461,24 @@ As well as this, you can also change a value associated with an already-created 
 {'kraj': 'Niemcy', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Jak widać, wartość klucza `'kraj'` została zmieniona z `'Polska'` na `'Niemcy'`. :) Ekscytujące? Hura! Właśnie nauczyłaś się kolejnej niesamowitej rzeczy.
 
 ### Podsumowanie
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Doskonale! Wiesz już sporo o programowaniu. W tej części nauczyłaś się o:
 
 - **błędach** - umiesz już czytać ze zrozumieniem błędy pojawiające się, gdy Python nie rozumie polecenia, które mu wydałaś
 - **zmiennych** - nazwach dla obiektów, dzięki którym programuje się łatwiej, a Twój kod jest czytelniejszy
 - **listach** - listach obiektów uporządkowanych w określonej kolejności
 - **słownikach** - zbiorach obiektów przechowywanych w postaci par klucz-wartość
 
-Excited for the next part? :)
+Gotowa na następną część? :)
 
 ## Porównywanie rzeczy
 
 > Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,9 +495,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. Zawsze, ale to **zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
