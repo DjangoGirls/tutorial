@@ -736,11 +736,11 @@ $ python3 python_intro.py
 To dziala!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+W poprzednich przykładach kod był wykonywany wtedy, gdy warunki okazywały się prawdziwe (True). Ale Python posiada również wyrażenia `elif` i `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 nie jest większe od 2')
 ```
 
-When this is run it will print out:
+Po uruchomieniu wyświetli się:
 
 {% filename %}command-line{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hej anonimie!')
 ```
 
-and executed:
+i uruchommy go:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,7 +781,7 @@ and executed:
     Hej Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
 You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
