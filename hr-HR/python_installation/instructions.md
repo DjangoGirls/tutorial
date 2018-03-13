@@ -1,12 +1,12 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Za čitatelje kod kuće: ovo poglavlje je pokriveno u videu [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Ovaj odjeljak je napisan prema tutorijalu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django je pisan u Pythonu. Trebat ćemo Python ako želimo išta napraviti u Djangu. Počnimo sa instaliranjem! Želimo da instaliraš Python 3.6, pa ako imaš bilo kakvu raniju inačicu, nadogradi ju.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Prva provjeri imaš li na računalu 32-bitnu inačicu ili 64-bitnu inačicu Windowsa, pritiskanjem Windows + Pause/Break kombinacije, koja će otvoriti Sustav info, pa pogledaj na liniju u kojoj piše "Tip sustava". Možeš preuzeti Python za Windows sa stranice https://www.python.org/downloads/windows/. Klikni na link "Latest Python 3 Release - Python x.x.x". If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
