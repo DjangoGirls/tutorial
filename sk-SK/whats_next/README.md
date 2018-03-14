@@ -10,7 +10,7 @@ Potom začni sledovať Django Girls na [Facebooku](http://facebook.com/djangogir
 
 ### Viete odporučiť ďalšie zdroje?
 
-Áno! Ako prvé, neváhaj a vyskúšaj našu ďalšiu knihu [Django Girls Tutorial: Rozšírenie](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky sú veľmi odporúčané!
 
