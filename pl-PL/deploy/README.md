@@ -127,11 +127,11 @@ Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć
 
 Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. :)
 
-# Setting up our blog on PythonAnywhere
+# Wdrażanie bloga na PythonAnywhere
 
 ## Sign up for a PythonAnywhere account
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Uwaga** Możliwe, że już wcześniej utworzyłaś konto na PythonAnywhere, jeśli przeszłaś przez wszystkie kroki w rozdziale instalacyjnym - nie ma potrzeby, byś robiła to drugi raz.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
