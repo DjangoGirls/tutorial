@@ -461,22 +461,22 @@ Osim toga, možeš i promijeniti vrijednost povezanu s već postojećim ključem
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Kao što vidiš, vrijednost ključa `'country'` je promijenjena iz `'Poland'` u `'Germany'` . :) Uzbudljivo? Hura! Upravo si naučila još jednu nevjerojatnu stvar.
 
 ### Sažetak
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Odlično! Sada znaš mnogo o programiranju. U ovom je zadnjem dijelu naučeno:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **greške** - sada znaš kako čitati i razumjeti greške koje se pojavljuju ako Python ne razumije dobivenu naredbu
+- **varijable** - imena za objekte, omogućuju ti lakše kodiranje i da ti kod bude što čitljiviji
+- **liste** - liste objekata spremljene u određenom redoslijedu
+- **rječnici** - objekti spremljeni kao parovi ključ-vrijednost
 
-Excited for the next part? :)
+Uzbuđena za nastavak? :)
 
 ## Uspoređivanje stvari
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videu.
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
