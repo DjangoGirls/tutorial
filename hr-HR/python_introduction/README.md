@@ -592,14 +592,14 @@ Vježbaj i zabavi se s Booleanima tako da pokušaš izvesti iduće naredbe:
 
 > Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) videu.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Do sada smo sav svoj Python kod pisali u prevoditelj, što nas ograničava na unošenje jedne po jedne linije koda. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- Izađi iz Pythonovog prevoditelja
+- Otvori naš izbor uređivača koda
+- Spremi neki kod u novu Python datoteku
+- Pokreni ga!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+Da izađeš iz prevoditelja koji smo koristili, jednostavno upiši `exit()` funkciju
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,7 +608,7 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-This will put you back into the command prompt.
+To će te vratiti u naredbeni redak.
 
 Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
 
@@ -698,7 +698,7 @@ Sada možeš krenuti dalje na osnovni alat u programiranju:
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+Zamijeni kod u svojoj **python_intro.py** datoteci ovime:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Da ovo spremimo i pokrenemo, vidjeli bismo ovakvu grešku:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Kada se to pokrene, ispisat će:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Da je 2 broj veći od 5, onda bi se izvela druga naredba. Idemo vidjeti kako `elif` radi:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+i pokrenut:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +781,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Vidiš što se dogodilo? `elif` ti dopušta dodavanje dodatnih uvjeta koji se izvedu ako prethodni ne prođu.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Možeš dodati koliko god `elif` izraza želiš poslije početnog `if` izraza. Na primjer:
 
 {% filename %}python_intro.py{% endfilename %}
 
