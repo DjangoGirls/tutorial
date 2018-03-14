@@ -68,7 +68,7 @@ Działa! Ale chcemy, aby posty były wyświetlane jak statyczne posty, które st
 
 ![Rysunek 13.3](images/step3.png)
 
-Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: ` ({{ post.title }}` or `{{ post.text }})`? W ten sposób uzyskujemy dostęp do danych zawartych w poszczególnych polach naszego modelu `Post`. Z kolei `|linebreaksbr` przepuszcza wpisy przez filtr, który zamienia znaczniki nowej linii na akapity.
+Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: (`{{ post.title }}` lub `{{ post.text }}`)? W ten sposób uzyskujemy dostęp do danych zawartych w poszczególnych polach naszego modelu `Post`. Z kolei `|linebreaksbr` przepuszcza wpisy przez filtr, który zamienia znaczniki nowej linii na akapity.
 
 ## Jeszcze jedno
 

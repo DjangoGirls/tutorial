@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Wprowadzenie do Pythona
 
 > Fragmenty tego rozdziału oparte są na tutorialu Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
@@ -12,7 +14,7 @@ Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na s
 
 Gdy już będziesz gotowa, postępuj według instrukcji poniżej.
 
-Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie. Wciśnij `enter`.
+Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie, lub `python3`, jeśli pracujesz na MacOS/Linuxie i wciśnij `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,9 +26,9 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
 
 ## Twoje pierwsze polecenie w Pythonie!
 
-Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz wpisać `>>>` - Python zrobi to dla ciebie.
+Po uruchomieniu Pythona wiersz poleceń wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz wpisywać `>>>` - Python zrobi to za Ciebie.
 
-Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Nie będziesz już więcej widzieć promptu `>>>`.
+Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
 
 Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
 
@@ -142,7 +144,7 @@ Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć
 
 Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Nasz pierwszy błąd! Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
+Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
+
+Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
 
 {% filename %}command-line{% endfilename %}
 
@@ -222,7 +226,7 @@ Super, co? Oczywiście zmienne mogą być czymkolwiek - liczbami również! Spr�
 
 Ale co by było, gdybyśmy użyły złej nazwy? Masz pomysł, co mogłoby się stać? Sprawdźmy!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> miasto = "Tokyo"
@@ -399,7 +403,7 @@ Widzisz, zupełnie jak w liście. Ale nie trzeba pamiętać numeru indeksu, wyst
 
 A co się stanie, gdy poprosimy Pythona o wartość klucza, który nie istnieje? Masz pomysł? Spróbujmy tak zrobić i zobaczmy efekt!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> uczestniczka['wiek']
@@ -439,10 +443,10 @@ Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, �
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant.pop('favorite_numbers')
+>>> uczestniczka.pop('ulubione_liczby')
 [7, 42, 92]
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> uczestniczka
+{'kraj': 'Polska', 'ulubiony_jezyk': 'Python', 'imie': 'Ola'}
 ```
 
 Jak widać z wyświetlonego rezultatu, para klucz-wartość odpowiadająca kluczowi 'ulubione_liczby' została usunięta.
@@ -493,7 +497,7 @@ True
 
 Dałyśmy Pythonowi różne liczby do porównania. Jak widać, potrafi on nie tylko porównywać liczby, ale również wyniki działań. Fajnie, nie?
 
-Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. **Zawsze, ale to zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
+Zastanawiasz się, dlaczego stawiamy dwa znaki równości `==` obok siebie, gdy sprawdzamy, czy liczby są równe? Pojedynczego znaku równości `=` używamy do nadawania wartości zmiennym. Zawsze, ale to **zawsze** musisz używać dwóch znaków równości `==`, gdy chcesz sprawdzić, czy dane elementy są równe. Możemy również stwierdzić, że dwie rzeczy nie są sobie równe. Aby to zrobić, używamy symbolu `!=`, tak jak to zostało pokazane na przykładzie powyżej.
 
 Użyjmy Pythona do wykonania dwóch innych zadań:
 
@@ -533,7 +537,7 @@ Możesz przekazać Pythonowi tyle liczb, ile Ci się podoba, a on zawsze zwróci
 
 Znasz powiedzenie "porównywać jabłka z gruszkami"? Zobaczmy, jak działa jego odpowiednik w Pythonie:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -548,12 +552,12 @@ Widać, że podobnie jak w powiedzeniu, Python nie jest w stanie porównać licz
 
 Przypadkiem się właśnie dowiedziałaś o istnieniu innego typu obiektów w Pythonie. Nazywa się on **Boolean**.
 
-Są tylko dwa obiekty logiczne:- True (prawda)- False (fałsz):
+Są tylko dwa obiekty logiczne:
 
-- True
-- False
+- True - prawda
+- False - fałsz
 
-Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy False.)
+Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy 'False'.)
 
 Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 
@@ -704,7 +708,7 @@ if 3 > 2:
 
 Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -712,7 +716,7 @@ Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poni
     SyntaxError: unexpected EOF while parsing
     
 
-Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!”. Zmień kod w pliku **python_intro.py** na poniższy:
+Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -878,7 +882,7 @@ Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszy
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def hi(imie):
 ```
 
 Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
@@ -886,29 +890,29 @@ Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    if name == 'Ola':
+def hi(imie):
+    if imie == 'Ola':
         print('Hej Ola!')
-    elif name == 'Sonja':
+    elif imie == 'Sonja':
         print('Hej Sonja!')
     else:
-        print('Hej anonimie!')
+        print('Hej nieznajoma!')
 
 hi()
 ```
 
 Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hej()
-    TypeError: hej() missing 1 required positional argument: 'imie'
+      hi()
+    TypeError: hi() missing 1 required positional argument: 'imie'
     
 
-Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hej()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -916,7 +920,7 @@ Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mó
 hi("Ola")
 ```
 
-I wykonajmy ponownIe:
+I wykonajmy ponownie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -954,8 +958,8 @@ Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i racze
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Hej ' + name + '!')
+def hi(imie):
+    print('Hej ' + imie + '!')
 
 hi("Rachel")
 ```
@@ -968,7 +972,7 @@ Teraz wywołajmy ten kod:
     Hej Rachel!
     
 
-Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
+Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
 ## Pętle
 
@@ -986,7 +990,7 @@ Pamiętasz jeszcze listy? Zróbmy listę dziewczyn:
 dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
 ```
 
-Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hej`, zatem użyjmy jej wewnątrz pętli:
+Chcemy powitać po imieniu każdą z nich. Mamy do tego funkcję `hi`, zatem użyjmy jej wewnątrz pętli:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1001,8 +1005,8 @@ Oto kompletny kod, który umieścimy w pliku:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Witaj ' + name + '!')
+def hi(imie):
+    print('Witaj ' + imie + '!')
 
 dziewczyny = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Ty']
 for imie in dziewczyny:
@@ -1029,7 +1033,7 @@ A gdy go uruchomimy:
 
 Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
-Możesz także użyć `for` na liczbach, używając metody `range`:
+Możesz także użyć `for` na liczbach, używając funkcji `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
