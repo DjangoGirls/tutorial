@@ -82,125 +82,138 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-     ```
-    
-    ## Wypchnięcie kodu na GitHuba
-    
-    Przejdź na [GitHub.com](https://www.github.com) i załóż nowe, darmowe konto użytkonika. (Jeśli już to wcześniej zrobiłaś to super!). 
-    
-    Potem utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "mój pierwszy blog"). Nie zaznaczaj opcji "initialize with a README", nie zmieniaj nic przy polach .gitignore (powinno być None, same załatwiliśmy tę sprawę wcześniej) i licencja też powinna być ustawiona jako None.
-    
-    &lt;img src="images/new_github_repo.png" /&gt;
-    
-    &gt; **Uwaga** Nazwa my-first-blog jest ważna - mogłabyś wybrać jakąś inną, ale będziemy tej nazwy używać wiele razy i za każdym razem musiałabyś pamiętać, żeby zastępować "my-first-blog" swoją wybraną nazwą. Z tego powodu najłatwiej będzie jak użyjesz nazwy 'my-first-blog'.
-    
-    Na następnej stronie wyświetli Ci się adres URL do klonowania Twojego repozytorium. Wybierz wersję "HTTPS" i skopiuj ją. Niedługo będziemy tego adresu potrzebować.
-    
-    &lt;img src="images/github_get_repo_url_screenshot.png" /&gt;
-    
-    Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
-    
-    Wpisz następujące polecenie do konsoli (Zamień '&lt;your-github-username&gt;' na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie, ale bez nawiasów ostrokątnych, czyli "<" i ">"):
-    
-    {% filename %}command-line{% endfilename %}
     
 
-$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
+## Pushing your code to GitHub
 
-    <br />Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć coś takiego:
-    
-    {% filename %}command-line{% endfilename %}
-    
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
 
-Username for 'https://github.com': ola Password for 'https://ola@github.com': Counting objects: 6, done. Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done. Total 3 (delta 0), reused 0 (delta 0) To https://github.com/ola/my-first-blog.git
+Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
-- [new branch] master -> master Branch master set up to track remote branch master from origin.
+![](images/new_github_repo.png)
 
-    <br />&lt;!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension --&gt;
-    
-    Twój kod jest już na Githubie. Możesz to sprawdzić!  Zauważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. # Konfiguracja twojego bloga na PythonAnywhere
-    
-    ## Zakładanie konta na PythonAnywhere
-    
-    &gt; **Uwaga** Mogłaś już wcześniej, podczas instalacji, założyć konto na PythonAnywhere – jeżeli tak się stało, nie ma potrzeby byś robiła to ponownie.
-    
-    {% include "/deploy/signup_pythonanywhere.md" %}
-    
-    ## Konfigurowanie naszej strony w PythonAnywhere
-    
-    Wróć do głównego panelu [PythonAnywhere Dashboard] (https://www.pythonanywhere.com/), klikając logo, i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza poleceń PythonAnywhere, podobnie jak ta na Twoim komputerze.
-    
-    &lt;img src="images/pythonanywhere_bash_console.png" alt="Pointing at Bash in the New Console section" /&gt;
-    
-    &gt; ** Uwaga ** PythonAnywhere jest oparty na systemie Linux, więc jeśli używasz systemu Windows, konsola będzie wyglądać trochę inaczej niż na Twoim komputerze.
-    
-    Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu z GitHub, a następnie skonfigurowaniu PythonAnywhere w celu rozpoznania go i rozpoczęciu wyświetlania go jako aplikacji internetowej.  Istnieją manualne sposoby robienia tego, ale PythonAnywhere zapewnia narzędzie pomocnicze, które zrobi to wszystko za Ciebie. Najpierw zainstalujmy:
-    
-    {% filename %}PythonAnywhere command-line{% endfilename %}
+> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+
+On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+
+![](images/github_get_repo_url_screenshot.png)
+
+Now we need to hook up the Git repository on your computer to the one up on GitHub.
+
+Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+
+{% filename %}command-line{% endfilename %}
+
+    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+    $ git push -u origin master
     
 
-$ pip3.6 install --user pythonanywhere
+Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć coś takiego:
 
-    <br />To powinno wydrukować rzeczy, takie jak `Collecting pythonanywhere`, a kończy się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
-    
-    Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHub. Wpisz następujące polecenie w konsoli na PythonAnywhere (nie zapomnij użyć swojej nazwy użytkownika GitHub w miejscu `&lt;your-github-username&gt;`):
-    
-    {% filename %}PythonAnywhere command-line{% endfilename %}
-    
+{% filename %}command-line{% endfilename %}
 
-$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
-
-    <br />Oglądając to, będziesz mógł zobaczyć, co jest robione:
+    Username for 'https://github.com': ola
+    Password for 'https://ola@github.com':
+    Counting objects: 6, done.
+    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
     
-    - Pobieranie kodu z GitHub
-    - Tworzenie virtualenv na PythonAnywhere, tak jak na Twoim własnym PC
-    - Aktualizowanie pliku ustawień za pomocą niektórych ustawień wdrażania
-    - Konfigurowanie bazy danych w PythonAnywhere za pomocą komendy `manage.py migrate`
-    - Konfigurowanie plików statycznych (dowiemy się o nich później)
-    - Konfigurowanie PythonAnywhere do obsługi aplikacji internetowej za pośrednictwem interfejsu API
-    
-    W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.  Najważniejsze, aby zauważyć, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na własnym komputerze, co oznacza, że może mieć inne posty i konta administracyjne.
-    
-    W rezultacie, tak jak zrobiłyśmy to na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował Twój virtualenv dla Ciebie, więc wszystko, co musisz zrobić, to uruchomić:
-    
-    {% filename %}PythonAnywhere command-line{% endfilename %}
+    To https://github.com/ola/my-first-blog.git
+     * [new branch]      master -> master
+    Branch master set up to track remote branch master from origin.
     
 
-(ola.pythonanywhere.com) $ python manage.py createsuperuser
+<!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-    <br />Wpisz szczegóły dla swojego administratora.  Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
+Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. :)
+
+# Setting up our blog on PythonAnywhere
+
+## Sign up for a PythonAnywhere account
+
+> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+
+{% include "/deploy/signup_pythonanywhere.md" %}
+
+## Configuring our site on PythonAnywhere
+
+Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+
+![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
+
+> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+
+Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ pip3.6 install --user pythonanywhere
     
-    Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod na PythonAnywhere używając `ls`:
+
+That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+
+Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
-    {% filename %}PythonAnywhere command-line{% endfilename %}
+
+As you watch that running, you'll be able to see what it's doing:
+
+- Downloading your code from GitHub
+- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+- Updating your settings file with some deployment settings
+- Setting up a database on PythonAnywhere using the `manage.py migrate` command
+- Setting up your static files (we'll learn about these later)
+- And configuring PythonAnywhere to serve your web app via its API
+
+On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+
+As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-(ola.pythonanywhere.com) $ ls blog db.sqlite3 manage.py mysite static (ola.pythonanywhere.com) $ ls blog/ **init**.py **pycache** admin.py forms.py migrations models.py static templates tests.py urls.py views.py ```
+Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
-Możesz także przejść do zakładki "Pliki" i nawigować za pomocą wbudowanej przeglądarki plików PythonAnywhere.
+Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
-## Jesteś na żywo!
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz :)
+    (ola.pythonanywhere.com) $ ls
+    blog  db.sqlite3  manage.py  mysite  static
+    (ola.pythonanywhere.com) $ ls blog/
+    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+    templates  tests.py  urls.py  views.py
+    
 
-## Porady dotyczące debugowania
+You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`, oto kilka typowych przyczyn:
+## You are now live!
+
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+
+## Debugging tips
+
+If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
 - Zapominasz utworzyć Twój PythonAnywhere API token.
 - Robisz błąd w GitHub URL
 - Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do GitHub pomyślnie. Jeszcze raz spójrz na sekcję Git powyżej
 
-Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole strony.
+If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
-Są tam też dostępne [generalne porady odnośnie debugowania na stronie pomocy PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
+There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
+And remember, your coach is here to help!
 
-# Sprawdź swoją stronę!
+# Check out your site!
 
-Standardowa strona dla twojej witryny powinna brzmieć "It worked!", tak jak na twoim komputerze lokalnym. Jeśli dodasz `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się swoim loginem i hasłem, a wtedy zobaczysz, że jesteś w stanie dodawać nowe posty na serwerze.
+The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
 
-Jak już stworzysz kilka artykułów, możesz wrócić do swojego lokalnego środowiska (nie do PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron www - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer www. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-*Przybij piątkę!* Wdrażanie to jedna z najtrudniejszych i najbardziej skomplikowanych części projektowania stron internetowych. Często całemu zespołowi ludzi zajmuje to kilka dni zanim wszystko zacznie działać. Ale Tobie tak szybko udało się wdrożyć swoją stronę, jest ona w prawdziwym internecie!
+Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
