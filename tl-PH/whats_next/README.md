@@ -10,7 +10,7 @@ Pagkatapos niyan, siguraduhin na sundan ang Django Girls sa [Facebook](http://fa
 
 ### Maaari ka bang magrekomenda ng karagdagan na resources?
 
-Ayos! Una, sige at subukan ang aming ibang libro, na tinatawag na [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 Sa ibang pagkakataon, maaari mong subukan ang mga resources na nakalista sa ibaba. Ang lahat ng ito ay napaka-rekomendado!
 
