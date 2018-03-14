@@ -622,9 +622,9 @@ Očito, sada si već poprilično iskusna Python developerica, pa slobodno napiš
 
 Sada moramo spremiti datoteku i dati joj opisno ime. Idemo ju nazvati **python_intro.py** i spremiti ju na tvoj zaslon. Datoteku možemo nazvati kako želimo, ali bitno je da osiguramo da datoteka završava s **.py**. **.py** ekstenzija govori našem operacijskom sustavu da je to **izvršna Python datoteka** i da ju Python može pokrenuti.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Napomena:** Trebala bi primijetiti jednu od prefora stvari kod uređivača koda: boje! U Python konzoli, sve je bilo iste boje; sada bi trebala vidjeti da je `print` funkcija drugačije boje nego string. To se zove "sintaksno isticanje" i jako je korisna značajka kod kodiranja. Boja stvari dat će ti migove (hintove) poput nezatvorenih stringova ili grešaka u pisanju ključnih riječi (kao `def` u funkciji koju ćemo vidjeti dolje). To je jedan od razloga zašto koristimo uređivač koda. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Kada je datoteka spremljena, vrijeme je da ju se pokrene! Koristeći vještine koje si naučila u sekciji naredbenog retka, iskoristi terminal da **promijeniš direktorij** u zaslon.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
