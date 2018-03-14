@@ -10,7 +10,7 @@
 
 ### هل يمكنك التوصية بأي موارد إضافية؟
 
-نعم! أولا، أمضي قدما وحاول تجربة هذا الكتاب [ Django Girls Tutorial: Extensions ](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 لاحقا، يمكنك تجربة الموارد المدرجة أدناه. نحن نوصي بها كلها!
 
