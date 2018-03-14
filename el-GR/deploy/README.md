@@ -191,6 +191,8 @@ You can also go to the "Files" tab and navigate around using PythonAnywhere's bu
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
+> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+
 ## Debugging tips
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
