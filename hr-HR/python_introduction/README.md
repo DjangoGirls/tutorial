@@ -592,7 +592,7 @@ Vježbaj i zabavi se s Booleanima tako da pokušaš izvesti iduće naredbe:
 
 > Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) videu.
 
-Do sada smo sav svoj Python kod pisali u prevoditelj, što nas ograničava na unošenje jedne po jedne linije koda. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Do sada smo sav svoj Python kod pisali u prevoditelj, što nas ograničava na unošenje jedne po jedne linije koda. Normalni su programi spremljeni u datoteke i izvode ih **prevoditelj** ili **kompajler (compiler)** našega programskog jezika. Do sada smo pokretali naše programe liniju po liniju u Pythonovom **prevoditelju**. Trebat će nam više od jedne linije koda za sljedećih par zadataka, pa ćemo brzo morati:
 
 - Izađi iz Pythonovog prevoditelja
 - Otvori naš izbor uređivača koda
@@ -610,7 +610,7 @@ $
 
 To će te vratiti u naredbeni redak.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+Ranije, izabrali smo uređivač koda iz sekcije [uređivača koda](../code_editor/README.md). Sada moramo otvoriti uređivač i napsati neki kod u novu datoteku:
 
 {% filename %}editor{% endfilename %}
 
@@ -618,9 +618,9 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Očito, sada si već poprilično iskusna Python developerica, pa slobodno napiši nešto koda što si danas naučila.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Sada moramo spremiti datoteku i dati joj opisno ime. Idemo ju nazvati **python_intro.py** i spremiti ju na tvoj zaslon. Datoteku možemo nazvati kako želimo, ali bitno je da osiguramo da datoteka završava s **.py**. **.py** ekstenzija govori našem operacijskom sustavu da je to **izvršna Python datoteka** i da ju Python može pokrenuti.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
