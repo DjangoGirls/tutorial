@@ -67,7 +67,7 @@ Kao što vidiš, Python je odličan kalkulator. Ako se pitaš što još možeš 
 'Ola'
 ```
 
-Sada je stvoren tvoj prvi string! It's a sequence of characters that can be processed by a computer. On uvijek mora započeti i završiti istim znakom. Taj znak može biti ili jednostruki (`'`) ili dvostruki (`"`) navodni znak (nema razlike!). Navodnici govore Pythonu da je ono između njih string.
+Sada je stvoren tvoj prvi string! String je slijed znakova koji računalo može obraditi. On uvijek mora započeti i završiti istim znakom. Taj znak može biti ili jednostruki (`'`) ili dvostruki (`"`) navodni znak (nema razlike!). Navodnici govore Pythonu da je ono između njih string.
 
 Stringovi mogu biti nanizani zajedno. Isprobaj ovo:
 
@@ -451,7 +451,7 @@ Možeš koristiti `pop()` metodu za brisanje stvari iz rječnika. Recimo da žel
 
 Kao što možeš vidjeti iz ispisa, par ključ-vrijednost koji pripada 'favorite_numbers' ključu je pobrisan.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Osim toga, možeš i promijeniti vrijednost povezanu s već postojećim ključem u rječniku. Napiši ovo:
 
 {% filename %}command-line{% endfilename %}
 
