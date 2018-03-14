@@ -497,9 +497,9 @@ True
 
 Dali smo Pythonu neke brojeve za usporedbu. Kao što vidiš, Python ne samo da može usporediti brojeve, već može uspoređivati i rezultate metoda. Super, zar ne?
 
-Pitaš li se zašto smo stavili dva znaka jednakosti `==` jedan pored drugog za usporedbu jednakosti brojeva? Koristimo jednostruki `=` za dodijeljivanje vrijednosti varijablama. Uvijek, **uvijek** moraš staviti dva znaka - `==` - ako želiš provjeriti jesu li dvije stvari jednake. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Pitaš li se zašto smo stavili dva znaka jednakosti `==` jedan pored drugog za usporedbu jednakosti brojeva? Koristimo jednostruki `=` za dodijeljivanje vrijednosti varijablama. Uvijek, **uvijek** moraš staviti dva znaka - `==` - ako želiš provjeriti jesu li dvije stvari jednake. Također možemo reći da su stvari različite. Za to koristimo simbol `!=` kao što je prikazano u gornjem primjeru.
 
-Give Python two more tasks:
+Daj Pythonu još dva zadatka:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Vidjeli smo `>` i `<`, ali što znače `>=` i `<=`? Čitaj ih ovako:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y znači: x je veći od y
+- x `<` y znači: x je manji od y
+- x `<=` y znači: x je manji od ili jednak y
+- x `>=` y znači: x je veći od ili jednak y
 
-Awesome! Wanna do one more? Try this:
+Odlično! Želiš li još jedan zadatak? Probaj ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,10 +530,10 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Pythonu možeš dati koliko god brojeva želiš za usporedbu i on će ti dati odgovor! Poprilično pametno, zar ne?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – ako koristiš `and` operator, obje usporedbe moraju biti istinite (True) kako bi cijela naredba bila istinita
+- **or** – ako koristiš `or` operator, samo jedna usporedba mora biti True kako bit cijela naredba bila True
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
