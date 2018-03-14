@@ -10,7 +10,7 @@ After that, make sure to follow Django Girls on [Facebook](http://facebook.com/d
 
 ### 你能推薦任何進階的資源嗎？
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/).
+Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 Later on, you can try the resources listed below. They're all very recommended!
 
