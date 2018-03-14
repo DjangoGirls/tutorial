@@ -478,7 +478,7 @@ Uzbuđena za nastavak? :)
 
 > Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videu.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Velik dio programiranja uključuje uspoređivanje stvari. Što je najjednostavnije za usporediti? Brojevi, naravno. Idemo vidjeti kako to funkcionira:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,9 +495,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Dali smo Pythonu neke brojeve za usporedbu. Kao što vidiš, Python ne samo da može usporediti brojeve, već može uspoređivati i rezultate metoda. Super, zar ne?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Pitaš li se zašto smo stavili dva znaka jednakosti `==` jedan pored drugog za usporedbu jednakosti brojeva? Koristimo jednostruki `=` za dodijeljivanje vrijednosti varijablama. Uvijek, **uvijek** moraš staviti dva znaka - `==` - ako želiš provjeriti jesu li dvije stvari jednake. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
