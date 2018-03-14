@@ -535,7 +535,7 @@ Pythonu možeš dati koliko god brojeva želiš za usporedbu i on će ti dati od
 - **and** – ako koristiš `and` operator, obje usporedbe moraju biti istinite (True) kako bi cijela naredba bila istinita
 - **or** – ako koristiš `or` operator, samo jedna usporedba mora biti True kako bit cijela naredba bila True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Je li ti poznat izraz "uspoređivati kruške s jabukama"? Idemo isprobati Pythonov ekvivalent:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,18 +546,18 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Ovdje vidiš da, kao i u izrazu, Python ne može uspoređivati broj (`int`) i string (`str`). Umjesto toga pokazuje **TypeError** i govori nam da ta dva tipa ne mogu biti uspoređena.
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Slučajno si upravo naučila o novom tipu objekta u Pythonu. Zove se **Boolean**.
 
 Postoje samo dva Boolean objekta:
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Ali kako bi Python to razumio, uvijek to moraš pisati kao 'True' (prvo slovo veliko, ostala mala). **true, TRUE, and tRUE neće raditi – samo je True ispravno.** (Naravno, isto se odnosi i na 'False'.)
 
 Booleani također mogu biti varijable! Vidi ovo:
 
@@ -586,11 +586,11 @@ Vježbaj i zabavi se s Booleanima tako da pokušaš izvesti iduće naredbe:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Čestitamo! Booleani su jedna od najkul značajki programiranja, a ti si upravo naučila kako ih koristiti!
 
 # Spremi ga!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) videu.
 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
