@@ -22,9 +22,9 @@ To donje područje je tvoj *terminal* u kojem ćeš davati naredbe računalu koj
 
 ### Virutalno okruženje
 
-Virtualno okruženje (eng. virtual environment, virutalenv) je poput privatne kutije u koju možemo natrpati koristan računalni kod za projekt na kojem radimo. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtualno okruženje (eng. virtual environment, virutalenv) je poput privatne kutije u koju možemo natrpati koristan računalni kod za projekt na kojem radimo. Koristimo ih kako bismo zadržali razne komadiće koda za naše razne projekte odvojene kako nam se ništa između projekata ne bi pomiješalo.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+U svom terminalu na dnu Cloud 9 sučelja pokreni sljedeće:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Ako ovo i dalje ne radi, pitaj svoj učitelja za pomoć.
 
-Next, run:
+Nadalje, pokreni:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +45,16 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(Primijeti da smo u zadnjoj liniji koristili tildu popraćenu znakom jednakosti: ~=)
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Napravi [Github](https://github.com) račun.
 
-### PythonAnywhere
+### Python Anywhere
 
 The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
