@@ -2,27 +2,27 @@ Možeš [odmah preskočiti ovaj dio](http://tutorial.djangogirls.org/en/installa
 
 ### Cloud 9
 
-Cloud 9 je alat koji ti daje uređivač koda i pristup računalu pokrenutom na Internetu gdje možeš instalirati, pisati i pokretati programsku potporu (eng. software). Za vrijeme tutorijala, Cloud 9 služit će kao tvoj *lokalni stroj*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 je alat koji ti daje uređivač koda i pristup računalu pokrenutom na Internetu gdje možeš instalirati, pisati i pokretati programsku potporu (eng. software). Za vrijeme tutorijala, Cloud 9 služit će kao tvoj *lokalni stroj*. I dalje ćeš pokretati naredbe u terminalu kao i tvoji kolege iz razreda na OS X, Ubuntu ili Windowsima, ali tvoj će terminal biti povezan na računalo pokrenuto negdje drugdje gdje ga Cloud 9 postavi za tebe.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Instaliraj Cloud 9 iz [Chrome web store-a](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Odi na [c9.io](https://c9.io)
+3. Napravi račun
+4. Pritisni *Create a New Workspace*
+5. Imenuj ga *django-girls*
+6. Odaberi *Blank* (donji red, narančasti logo, drugo zdesna)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Sada bi trebala vidjeti sučelje s alatnom trakom sa strane, veliki glavni prozor s nekim tekstom i mali prozor na dnu koji izgleda ovako nekako:
 
 {% filename %}Cloud 9{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+To donje područje je tvoj *terminal* u kojem ćeš davati naredbe računalu koje je Cloud 9 pripremio za tebe. Možeš promijeniti veličinu tog prozora da bude malo veći.
 
-### Virtual Environment
+### Virutalno okruženje
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtualno okruženje (eng. virtual environment, virutalenv) je poput privatne kutije u koju možemo natrpati koristan računalni kod za projekt na kojem radimo. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
