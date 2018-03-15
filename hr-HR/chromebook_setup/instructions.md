@@ -55,6 +55,6 @@ Napravi [Github](https://github.com) račun.
 
 The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). Međutim, i dalje je korisno, jer možemo razmišljati o našem Cloud 9 radnom prostoru kao mjestu našeg "u tijeku" rada i Python Anywhere-a kao mjestu gdje možemo pokazivati naš rad kako dolazi sve bliže dovršetku.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Tako da, prijavi se za novi Python Anywhere račun na: [www.pythonanywhere.com](https://www.pythonanywhere.com).
