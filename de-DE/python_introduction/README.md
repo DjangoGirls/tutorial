@@ -384,13 +384,13 @@ Nun gib einmal Folgendes ein (verwende statt 'Ola' usw. deine eigenen Informatio
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Du hast nun soeben die Variable mit dem Namen `participant` angelegt, die ein Dictionary mit drei key-value Paaren enthält (values, also Werte - aber auch hier bleiben wir beim englischen Begriff - sind die Objekte in einem Dictionary):
 
 - Der key `name` verweist auf den value `'Ola'` (welches ein `string` Objekt ist),
 - `country` verweist auf `'Poland'` (ebenfalls ein `string` Objekt),
-- und `favorite_numbers` schließlich verweist auf `[7, 42, 92]` (eine `Liste` mit drei Zahlen drin).
+- und `favorite_numbers` schließlich verweist auf `[7, 42, 92]` (eine `Liste` mit drei Zahlen).
 
-You can check the content of individual keys with this syntax:
+Auf die einzelnen Objekte in einem Dictionary kannst du wie folgt zugreifen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Also ganz ähnlich wie bei einer Liste. Aber statt dir einen Index merken zu müssen, benutzt du bei einem Dictionary einfach einen Namen (hier: den String 'name').
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Was aber geschieht, wenn wir Python nach dem Wert eines keys fragen, den es gar nicht gibt? Errätst du es schon? Probieren wir es einfach aus und schauen was passiert!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Ah, wieder ein Fehler! Diesmal ein **KeyError**. Python hilft uns auch hier und sagt uns, dass es den key `'age'` in diesem Dictionary garnicht gibt.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Wenn du zwischen Dictionaries und Listen wählen kannst, wann sollte welche Datenstruktur verwendet werden? Das ist eine gute Frage, über die es sich nachzudenken lohnt; und vielleicht möchtest du dies kurz tun, bevor du weiterliest.
 
 - Du brauchst nur eine geordnete Folge von Elementen? Dann wähle eine Liste.
 - Du brauchst eine Sammlung von Elementen, auf die du später einzeln, gezielt und effizient mit Hilfe eines Namens (d.h. keys) zugreifen kannst? Dann wähle ein Dictionary.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Dictionaries sind, so wie auch Listen, *mutable*, d. h. nachträglich veränderbar. So kannst du bei Dictionaries später noch weitere key-value Paare hinzufügen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Wie bei Listen können wir auch bei Dictionaries die `len()`-Funktion verwenden, um die Zahl der enthaltenen Einträge (das sind die key-value Paare) zu ermitteln: Probier es gleich aus und tippe dieses Kommando ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Wir hoffen, dass das Alles für dich bisher Sinn ergibt. :) Bist du bereit für mehr Spaß mit Dictionaries? Machen wir weiter.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Zum Löschen von Elementen kannst du den `pop()`-Befehl (oder im Englischen: statement) verwenden. Nehmen wir an, du möchtest den Eintrag mit dem key `'favorite_numbers'` entfernen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Wie du an der Ausgabe erkennst, ist nun das key-value Paar von 'favorite_numbers' gelöscht.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Ebenso kannst du auch den Wert eines bestehenden Eintrages ändern:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,24 +461,24 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Wie du siehst, hast du nun im key-value Paar mit dem key `'country'` den Wert von `'Poland'` nach `'Germany'` geändert. :) Hurra! Schon wieder was gelernt.
 
 ### Zusammenfassung
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Großartig! Inzwischen hast du schon einiges über Programmierung gelernt und die folgenden Dinge sind dir vertraut:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **Errors** - Du weißt wie sie zu lesen sind und dass Python sie dann ausgibt, wenn es eine Anweisung von dir nicht ausführen kann
+- **Variablen** - sind Namen für Objekte, die dir dabei helfen, deinen Code leichter zu schreiben und ihn dabei auch gut lesbar zu halten
+- **Listen** - können Objekte in einer geordneten Reihenfolge speichern
+- **Dictionaries** - speichern Objekte als key-value Paare
 
-Excited for the next part? :)
+Schon gespannt auf den nächsten Teil? :)
 
 ## Vergleichen
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) behandelt.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Ein wichtiger Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich leicht vergleichen? Zahlen sicherlich. Schauen wir uns mal an, wie das funktioniert:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Hier haben wir Python einige Zahlen zum Vergleichen gegeben. Wie du siehst, kann Python nicht nur die Zahlen vergleichen, sondern auch die Ergebnisse von Berechnungen. Cool, nicht wahr?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Womöglich wunderst du dich aber über die beiden `==` Gleichheitszeichen zum Vergleich, ob zwei Zahlen den selben Wert haben? Ein einfaches Gleichheitszeichen `=` verwenden wir bereits, um Werte Variablen zuzuweisen. Da beim Programmieren alle Anweisungen eindeutig sein müssen, benötigst du in Python daher **stets** zwei `==` Zeichen, um Dinge auf Gleichheit zu testen. Wir können auch feststellen, ob Werte unterschiedlich sind. Dafür verwenden wir das Symbol `!=`, wie in obigen Beispiel.
 
-Give Python two more tasks:
+Nun noch zwei weitere Vergleiche:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>` und `<` sind klar, was aber sollen `>=` und `<=` bedeuten? Vergleiche liest du folgendermaßen:
 
 - x `>` y bedeutet: x ist größer als y
 - x `<` y bedeutet: x ist kleiner als y
 - x `<=` y bedeutet: x ist kleiner oder gleich y
 - x `>=` y bedeutet: x ist größer oder gleich y
 
-Awesome! Wanna do one more? Try this:
+Sensationell! Lust auf mehr? Dann probier das:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,12 +530,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Du kannst Python beliebig viele Vergleiche vornehmen lassen und wirst ein Ergebnis erhalten. Das ist wirklich cool, oder?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - wenn Du den `and`-Operator verwendest, müssen beide Vergleiche True (d.h. wahr) ergeben, damit das Gesamtergebnis auch True ist
+- **or** - wenn Du den `or`-Operator verwendest, genügt es, wenn einer der beiden Vergleiche True ergibt, damit das Gesamtergebnis True ergibt
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Die Redewendung "Äpfel mit Birnen zu vergleichen" hast du bestimmt schon einmal gehört. Machen wir dies doch einmal in Python:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
