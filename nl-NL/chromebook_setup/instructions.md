@@ -53,8 +53,8 @@ Maak een [Github](https://github.com)account aan.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+De Django Girls Gids bevat een sectie over iets wat we Deployment noemen; dit is het proces om de code van je nieuwe webapplicatie over te zetten naar een publiek toegankelijke computer (een zogenaamde server) waar andere mensen je werk kunnen zien.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Dat gedeelte is een tikkeltje vreemd als je de Gids door neemt op een Chromebook omdat we al gebruik maken van een computer op het Internet (in tegenstelling tot bijvoorbeeld op een laptop). Desondanks is het een bruikbare sectie omdat we onze Cloud 9 omgeving (environment) kunnen zien als een plek met ons "onderhanden" werk, en PythonAnywhere als een plek waar we met ons werk kunnen pronken naarmate het vordert.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Meld je daarom aan voor een nieuw PythonAnywhere account op [www.pythonanywhere.com](https://www.pythonanywhere.com).
