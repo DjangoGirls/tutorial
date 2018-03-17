@@ -42,10 +42,10 @@ U svakom poglavlju koje je pokriveno, postoji link koji vodi na odgovarajući vi
 
 Ovaj tutorijal održavaju [DjangoGirls](https://djangogirls.org/). Ako nađete bilo kakve greške ili želite ažurirati tutorijal, molim.
 
-## Would you like to help us translate the tutorial into other languages?
+## Želiš li nam pomoći prevesti tutorijal na druge jezike?
 
-Currently, translations are being kept on crowdin.com platform at:
+Trenutno, prijevodi se drže na platforni crowdin.com na adresi:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Ako tvoj jezik nije na popisu na [crowdinu](https://crowdin.com/), molimo [otvori novi issue](https://github.com/DjangoGirls/tutorial/issues/new) tako nas informirajući o jeziku kojeg želiš dodati. (Preveli: Amalija Ramljak i Marijan Smetko)
