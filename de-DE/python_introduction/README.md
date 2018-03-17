@@ -98,7 +98,7 @@ Du kannst für den String doppelte Anführungszeichen verwenden:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+oder du kannst den Apostroph mit einem Backslash (``) markieren:
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib einfach folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Hier hast du die `upper`-**Methode** auf den String verwendet! Eine Funktion (wie `upper()`) ist eine Abfolge von Anweisungen, die Python ausführt, wenn die Funktion bei einem gegebenen Objekt (hier `"Ola"`) aufgerufen wird.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Nehmen wir an, du möchtest die Zahl der Buchstaben in deinem Namen wissen. Auch dafür gibt es eine Methode!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,22 +127,22 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Nun fragst du dich sicher, warum du manchmal eine Funktion mit einem `.` am Ende des Strings (wie bei `"Ola".upper()`) schreibst und manchmal eine Funktion direkt aufrufst und den String dahinter in Klammern setzt? Im ersten Fall gehören solche Funktionen, wie `upper()`, zu Objekten (hier: ein String) und funktionieren auch nur bei diesen. In solchen Fällen bezeichnen wir eine Funktion als **Methode**. Andere Funktionen sind dagegen allgemeiner und können auf unterschiedliche Datentypen angewendet werden, wie beispielsweise `len()`. Daher übergeben wir `"Ola"` als Parameter an die `len` Funktion.
 
 ### Zusammenfassung
 
-OK, enough of strings. So far you've learned about:
+Ok, genug über Strings. Bisher haben wir Folgendes kennengelernt:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **Der Prompt** - Wenn wir beim Python-Prompt Anweisungen (oder Programm-Code) in Python eingeben, dann erhalten wir auch Ergebnisse in Python. Wir befinden uns in der Python Shell
+- **Zahlen und Strings** - In Python nutzen wir Zahlen für Berechnungen und Strings für Text-Objekte
+- **Operatoren** - wie + und &#42;, verarbeiten mehrere Werte und erzeugen als Ergebnis einen neuen Wert
+- **Funktionen** - wie upper() und len(), tun etwas mit Objekten (in unserem Beispiel ändern sie diese, wie bei upper(), oder sie geben eine Eigenschaft zurück, wie bei len()).
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Das sind Grundlagen jeder Programmiersprache, die Du lernen wirst. Bist Du bereit für mehr? Bestimmt!
 
 ## Fehler
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Probieren wir etwas Neues: Errors. Können wir die Länge einer Zahl auf die gleiche Weise ermitteln, wie die Länge eines Namens? Gib dazu `len(304023)` ein und drücke auf Enter:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Wir haben unsere erste Fehlermeldung (Error) erhalten! Das {{ warning_icon }} Icon ist das Zeichen von Python, dass der eingegebene Code nicht den Programmierregeln von Python entspricht und damit nicht das tut, was wir erwarten würden. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil um zu Lernen!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Unser erster Fehler sagt, dass Objekte vom Typ "int" (Integers, das sind ganze Zahlen) keine Länge haben. Was also nun? Vielleicht sollten wir unsere Zahl als String schreiben? Denn bei Strings funktioniert es ja, wie wir wissen.
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,28 +164,28 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Ja, das funktioniert! Hier haben wir die `str`-Funktion innerhalb der Funktion `len` aufgerufen. `str()` konvertiert alles zu einem String.
 
 - Die `str`-Funktion wandelt den übergebenen Wert in einen **String** um
 - Die `int`-Funktion wandelt den übergebenen Wert in einen **Integer** um
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Wichtig: Zwar können wir Zahlen in Text umwandeln, aber nicht immer auch Text in Zahlen - was beispielsweise sollte `int('hello')` ergeben?
 
 ## Variablen
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Ein wichtiger Bestandteil beim Programmieren sind Variablen. Eine Variable ist einfach ein Name für etwas, das wir später unter genau diesem Namen wieder verwenden können. Programmiererinnen nutzen Variablen, um Daten zu speichern, den Code lesbar zu halten und um sich nicht immer alles merken zu müssen.
 
-Let's say we want to create a new variable called `name`:
+Lasst uns eine eine Variable mit der Bezeichnung `name` anlegen:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}cloud 9{% endfilename %}
 
 ```python
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Wir geben ein: name ist gleich "Ola".
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+Du hast sicher schon bemerkt, dass Python diesmal kein Ergebnis zurückgegeben hat. Woher sollen wir nun wissen, dass es die Variable jetzt auch tatsächlich gibt? Zum Test geben wir `name` ein und drücken wieder auf Enter:
 
 {% filename %}command-line{% endfilename %}
 
