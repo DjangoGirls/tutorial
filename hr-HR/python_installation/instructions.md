@@ -14,7 +14,7 @@ Pripazi na jednu stvar: tijekom instalacije, u prozoru na kojem piše "Setup" mo
 
 U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). Za sada, ako trebaš upisati neke naredbe, idi na Start → Windows System → Command Prompt. Također možeš pritisnuti Windows tipku zajedno sa tipkom "R" sve dok se ne pojavi prozorčić "Run". Da bi se otvorio naredbeni redak, upiši "cmd" i pritisni enter u "Run" prozorčiću. (Na novijim Windowsima, možda ćeš morati potražiti "Command Prompt" pošto je ponekad skriveno.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Upiši "cmd" u "Run" prozor](../python_installation/images/windows-plus-r.png)
 
 Napomena: ako koristiš starije inačice Windowsa (7, Vista ili starije), i instalacija Pythona 3.6.x ti dojavi grešku, možeš pokušati ili:
 
@@ -23,7 +23,7 @@ Napomena: ako koristiš starije inačice Windowsa (7, Vista ili starije), i inst
 
 Ako ćeš instalirati stariju inačicu Pythona, ekran instalacije može može izgledati drukčije nego na slici gore. Provjeri je li označeno "Add python.exe to Path", zatim klikni na gumb lijevo i odaberi "Will be installed on a local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Dodaj Python u Path, starije inačice](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
