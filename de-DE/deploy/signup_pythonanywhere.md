@@ -1,11 +1,11 @@
-Sign up for a free "Beginner" account on PythonAnywhere:
+Erstelle dir einen kostenfreien "Beginner"-Account auf PythonAnywhere:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> **Hinweis** Wenn du dort deinen Benutzernamen aussuchst, dann denke daran, dass sich die URL zu deinem Blog aus deinem Benutzernamen und pythonanywhere zusammensetzt zu: `deinBenutzerName.pythonanywhere.com.` Deshalb solltest du einen sinnvollen Nutzernamen wählen.
 
-## Creating a PythonAnywhere API token
+## Erstellen eines PythonAnywhere API-Tokens
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
+Das musst du nur einmal durchführen. Sobald du dich für PythonAnywhere angemeldet hast, wirst du zu deinem Dashboard bzw. deiner "Konsole" weitergeleitet. Finde den Link zu deiner "Accounts"-Seite rechts oben und wähle den Reiter mit den Namen "API token" aus. Dann musst du den Button mit den Titel "Create new API token" auswählen.
 
-![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
+![Der API token Reiter auf der "Accounts" Seite](images/pythonanywhere_create_api_token.png)
