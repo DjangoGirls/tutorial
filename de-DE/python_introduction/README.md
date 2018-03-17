@@ -8,15 +8,15 @@ Fangen wir an, schreiben wir Code!
 
 ## Der Python-Prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Für Leser die sich bereits mit Python auskennen: Dieser Teil findet sich im [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Um Python zu starten, musst du an die *Kommandozeile* deines Computers. Wie das geht, weißt du bereits - denn du hast es im Kapitel [Einführung in die Kommandozeile](../intro_to_command_line/README.md) gelernt.
 
-Once you're ready, follow the instructions below.
+Also öffne die Konsole, dann fangen wir an.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Wir wollen eine Python Konsole öffnen, also tippe in Windows cmd `python` ein oder in Mac OS/Linux terminal `python3` und drücke `Enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}cloud 9{% endfilename %}
 
     $ python3
     Python 3.6.1 (...)
@@ -26,39 +26,39 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## Dein erster Python-Befehl!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Nach Eingabe von python3 in der Konsole ändert sich das Prompt-Zeichen zu `>>>`. Für uns bedeutet das, dass wir ab nun nur noch Python-Code eingeben können. Den Python-Prompt `>>>` musst du nicht jedesmal eingeben - dies macht Python für dich.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Wenn du die Python-Konsole wieder verlassen möchtest, gib einfach `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist Du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Last uns Anfangen mit ein wenig Mathematik, gebt `2 + 3` ein und drückt `enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}cloud 9{% endfilename %}
 
 ```python
 >>> 2 + 3 
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Cool! Schon ist das Ergebnis da. Python kann rechnen! Probier einfach einige andere Befehle aus, wie z.B.: 
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Um Potenzen zu berechnen, sagen wir mal 2 hoch 3, müssen wir folgende eingeben: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Spiel ein wenig herum, dann machen wir weiter. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Wie du siehst, kann Python richtig toll rechnen. Aber Python kann noch viel mehr ...
 
 ## Strings
 
-How about your name? Type your first name in quotes like this:
+Strings sind Zeichenketten. Das ist eine Folge von Buchstaben, die von Anführungszeichen umgeben sind. Gib einfach mal deinen Namen ein (bei mir "Ola"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Nun hast du deinen ersten String erzeugt! Dies ist eine Folge von Zeichen (also nicht nur Buchstaben, wie ich oben schrieb, sondern Zeichen aller Art), die von einem Computer verarbeitet werden können. Ein String muss stets mit dem gleichen Zeichen beginnen und enden. Dies kann entweder ein einzelnes Gänsefüßchen sein (`'`) oder ein doppeltes (`"`) (da gibt es keinen Unterschied!). Die Anführungszeichen zeigen Python nur an, dass alles dazwischen ein String ist.
 
-Strings can be strung together. Try this:
+Strings können zusammengesetzt werden. Versuch es einmal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Du kannst Strings auch vervielfältigen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Brauchst du ein Apostroph in einem String, so hast du zwei Möglichkeiten.
 
-Using double quotes:
+Du kannst für den String doppelte Anführungszeichen verwenden:
 
 {% filename %}command-line{% endfilename %}
 
