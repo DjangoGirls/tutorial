@@ -4,7 +4,7 @@ Als je deze tutorial thuis volgt en niet op een van de [Django Girls evenementen
 
 Je kan dit eventueel overslaan omdat we alle informatie die hier staat dekken in de gehele tutorial. Dit is gewoon een extra pagina die alle installatie instructies verzameld op één plek. Het Django Girls evenement omvat ook een "Installatie-avond" waar we alles installeren zodat we daar ons tijdens de workshop geen zorgen meer om hoeven te maken. Dit is dus handig als je naar een workshop gaat.
 
-If you find it useful, you can follow this chapter too. Maar als je liever dingen leert dan een aantal dingen op je computer te installeren, sla dan dit hoofdstuk over en ga aan de slag! We leggen alle installatie stappen later aan je uit.
+Als het je nuttig lijkt, kun je dit hoofdstuk ook doornemen. Maar als je liever dingen leert dan een aantal dingen op je computer te installeren, sla dan dit hoofdstuk over en ga aan de slag! We leggen alle installatie stappen later aan je uit.
 
 Succes!
 
