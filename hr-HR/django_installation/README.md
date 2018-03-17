@@ -1,7 +1,7 @@
 # Instalacija Djanga
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Napomena:** Ako koristiš chromebook, preskoči ovo poglavlje i prati upute [Postavljanje Chromebooka](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
+> **Note** Ako si već prošla kroz korake instalacije, onda si ovo već napravila - možeš ići izravno na slijedeće poglavlje!
 
 {% include "/django_installation/instructions.md" %}
