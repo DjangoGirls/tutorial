@@ -20,10 +20,9 @@ Um Bootstrap zu installieren, müssen Sie das hinzufügen, um Ihre `<head>`in Ih
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
-```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<pre><code class="html"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-```
+</code></pre>
 
 Dies fügt deinem Projekt keine Dateien hinzu. Es verweist nur auf Dateien, die im Internet vorhanden sind. Öffne und aktualisiere deine Webseite. Da ist sie!
 
@@ -64,7 +63,7 @@ Lassen Sie uns jetzt eine CSS-Datei erstellen, um einen eigenen Stil zu Ihrer We
 
 Zeit ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Wir gehen nicht zu sehr auf die Details von CSS ein. Wir haben am Ende der Seite einen Link auf eine Empfehlung für einen frei zugänglichen CSS Kurs angefügt, für diejenigen, die mehr über CSS lernen möchten.
 
 Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes beginnen mit `#` gefolgt von 6 Buchstaben (A-F) und nummern (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
@@ -88,23 +87,23 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die folgende Datei öffnen: `blog/templates/blog/post_list.html` 
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+und in dieser Datei folgende Zeile am Anfang einfügen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Wir laden hier nur statische Dateien. :-) Zwischen den Tags , direkt nach den Links zu den Bootstrap CSS Dateien, füge noch diese Zeile ein: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-```
+<pre><code class="html"><link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
-Der Browser liest die Dateien in der Reihenfolge in der sie im File stehen. Darum müssen wir sicherstellen, dass die Zeile am richtigen Ort steht. Otherwise the code in our file may be overriden by code in Bootstrap files. Wir haben unserer Vorlage gerade gesagt, wo sich die CSS-Datei befindet.
+</code></pre>
+
+Der Browser liest die Dateien in der Reihenfolge in der sie im File stehen. Darum müssen wir sicherstellen, dass die Zeile am richtigen Ort steht. Sonst könnte der Code in unserer Datei den Code in den Bootstrap Dateien überschreiben. Wir haben unserer Vorlage gerade gesagt, wo sich die CSS-Datei befindet.
 
 Deine Datei sollte jetzt so aussehen:
 
@@ -135,7 +134,7 @@ Deine Datei sollte jetzt so aussehen:
 </html>
 ```
 
-OK, speicher die Datei und lade die Seite neu!
+OK, speichere die Datei und lade die Seite neu!
 
 ![Abbildung 14.2](images/color2.png)
 
@@ -149,7 +148,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Füge dies zu deinem CSS hinzu, speichere die Datei und schau dir an, was passiert.
 
 ![Abbildung 14.3](images/margin2.png)
 
@@ -161,48 +160,45 @@ Vielleicht können wir auch die Schrift in unserem HTML-Kopf anpassen? Füge die
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Wie eben bereits gemacht, prüfe die Reihenfolge der Anweisungen vor dem Link `blog/static/css/blog.css`. Diese Anweisung importiert einen Font (Zeichensatz) mit Namen *Lobster* von Google Fonts (https://www.google.com/fonts). 
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `{` und `}`) in der CSS Datei `blog/static/css/blog.css`. Nun füge die Zeile``font-family: 'Lobster';` zwischen den geschweiften Klammern hinzu und aktualisiere die Seite:</p>
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
 
-```css
-h1 a {
+<pre><code class="css">h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-```
+``</pre> 
 
 ![Abbildung 14.3](images/font.png)
 
 Super!
 
-Wie oben erwähnt basiert CSS auf dem Konzept von Klassen. Dies erlaubt Dir einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Stil hinzuzufügen ohne Auswirkungen auf andere Teile des Codes. Dies kann sehr hilfreich sein! Eventuell hast Du zwei divs die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir sie unterschiedlich aussehen zu lassen.
+Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Dies erlaubt Dir, einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Stil hinzuzufügen ohne Auswirkungen auf andere Teile des Codes. Dies kann sehr hilfreich sein! Eventuell hast Du zwei divs die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir sie unterschiedlich aussehen zu lassen.
 
 Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (class) names `page-header` dem `div` hinzu, der die Kopfzeilen (header) enthalten soll:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-```html
-<div class="page-header">
+```html<div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 ```
 
 Jetzt fügen wir noch eine Klasse `post` für den Blog-Inhalt (Post) dem `div` hinzu.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list{% endfilename %}
 
-```html
-<div class="post">
+```html<div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
-Gemäß der Änderungen im HTML erweitern wir unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
+Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
