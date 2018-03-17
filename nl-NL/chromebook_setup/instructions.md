@@ -7,7 +7,7 @@ Cloud 9 is een hulpmiddel dat je een code editor aanbiedt en toegang tot een com
 1. Installeer Cloud 9 uit de [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Ga naar [c9.io](https://c9.io)
 3. Meld je aan voor een account
-4. Click *Create a New Workspace*
+4. Klik op *Create environment*
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
